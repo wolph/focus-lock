@@ -723,9 +723,17 @@ async function assertRenderedStatsVisualState(
   }
   const longDomain: string =
     'a-very-long-research-subdomain-for-layout-boundary-verification.example.org';
+  /**
+   * The count is rendered through `Intl.NumberFormat`, so its group separator belongs to whichever
+   * locale the browser is running in: `1,234,567` in English, `1.234.567` in German, and a narrow
+   * no-break space in French. Matching the digits with an optional separator between each group
+   * keeps this assertion about the number being on the page rather than about one locale's
+   * typography, which is what it was always trying to say.
+   */
+  const boundaryCount: RegExp = /^1[\s.,]?234[\s.,]?567$/;
   if (
     (await page.getByText(longDomain, { exact: true }).count()) < 1 ||
-    (await page.getByText('1234567', { exact: true }).count()) < 1 ||
+    (await page.getByText(boundaryCount).count()) < 1 ||
     (await page.getByText('Completed', { exact: true }).count()) < 1 ||
     (await page.getByText('Ended early', { exact: true }).count()) < 1
   ) {
