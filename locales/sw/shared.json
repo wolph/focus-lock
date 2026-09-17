@@ -1,0 +1,193 @@
+{
+  "shared_start_until_stopped": {
+    "message": "Anza until stopped"
+  },
+  "shared_end_session": {
+    "message": "Malizia session"
+  },
+  "shared_mode_blacklist": {
+    "message": "Zuia selected sites"
+  },
+  "shared_mode_whitelist": {
+    "message": "Ruhusu selected sites only"
+  },
+  "shared_focus_time_label": {
+    "message": "Fokasi time"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_starting": {
+    "message": "Fokasi Lock is starting. Applying your selected rules."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Kikao ended. Finishing browser cleanup."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Fokasi Lock could not start. Finishing browser cleanup."
+  },
+  "shared_popup_transition_error": {
+    "message": "Fokasi Lock could not clean up an incomplete start."
+  },
+  "shared_popup_closure_error": {
+    "message": "Fokasi Lock could not finish browser cleanup."
+  },
+  "shared_retry_cleanup": {
+    "message": "Jaribu Tena cleanup"
+  },
+  "shared_data_clear_pending": {
+    "message": "Deleting Fokasi Lock data. Finishing cleanup."
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Anzas on schedule and runs until you stop it: Malizia session for Flexible, Unlock through the deliberation gate for Friction. Cycles off."
+  },
+  "shared_schedule_started_title": {
+    "message": "Fokasi schedule started"
+  },
+  "shared_settings_starting": {
+    "message": "Fokasi Lock is starting. Checking website access and applying your rules."
+  },
+  "shared_settings_error": {
+    "message": "Fokasi Lock could not finish browser cleanup. Fungua the popup and retry."
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Maliziaed early"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Maliziaed: website access lost"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Maliziaed: blocking setup failed"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Maliziaed: timer setup failed"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Maliziaed: page enforcement failed"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Maliziaed: recovery failed"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Less than a dakika"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Alama earning resumes during focus"
+  },
+  "shared_credit_off": {
+    "message": "Alama earning is turned off"
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Zuiaed by $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Zuiaed by your block list"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Zuiaed by this session"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Ruhusued by this session"
+  },
+  "shared_synced_settings": {
+    "message": "Mipango"
+  },
+  "shared_synced_lists": {
+    "message": "Zuia and allow lists"
+  },
+  "shared_local_intentions": {
+    "message": "Fokasi intentions"
+  },
+  "shared_all_data_clear_running": {
+    "message": "Malizia the running session before deleting all data."
+  },
+  "shared_nav_brand": {
+    "message": "Fokasi Lock"
+  },
+  "shared_nav_settings": {
+    "message": "Mipango"
+  },
+  "shared_section_blocking": {
+    "message": "Zuiaing"
+  },
+  "shared_section_behavior": {
+    "message": "Kikao behavior"
+  },
+  "shared_host_partial": {
+    "message": "Onyeshaing $SHOWN$ of $MATCHED$ sites. Search to narrow the list.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Onyeshaing $MATCHED$ of $TOTAL$ sites.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Onyeshaing all $TOTAL$ sites.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Malizia the session"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Fokasi Lock is starting"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Nyuma to work"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Fokasi Lock could not update this action. Try again."
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Endelea your current task"
+  },
+  "shared_gate_end_title": {
+    "message": "Malizia this session"
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

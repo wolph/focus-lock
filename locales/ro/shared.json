@@ -1,0 +1,580 @@
+{
+  "shared_until_stopped": {
+    "message": "Până la oprire"
+  },
+  "shared_preset_short": {
+    "message": "scurt"
+  },
+  "shared_preset_focus": {
+    "message": "concentrare"
+  },
+  "shared_preset_deep_work": {
+    "message": "lucru profund"
+  },
+  "shared_deep_work_note": {
+    "message": "O preferință, nu știință: un singur bloc lung și neîntrerupt, fără pauze automate."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ min în total, cu blocuri de concentrare de $FOCUS$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min de concentrare neîntreruptă",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Pornește până la oprire"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Blochează până la deblocarea manuală"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Sesiunile până la oprire rămân Flexibil sau Fricțiune și nu pot folosi cicluri de concentrare și pauză."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Blocarea strictă nu este disponibilă pentru sesiunile până la oprire: fără cronometru și fără încheiere manuală, sesiunea nu s-ar încheia niciodată."
+  },
+  "shared_end_session": {
+    "message": "Încheie sesiunea"
+  },
+  "shared_unlock": {
+    "message": "Deblochează"
+  },
+  "shared_gate_wait_none": {
+    "message": "fără așteptare"
+  },
+  "shared_gate_wait": {
+    "message": "o așteptare de $SECONDS$ secunde",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ și o frază tastată",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Rulează până o închei cu $LABEL$. Fără cicluri.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Rulează până o deblochezi: $REQUIREMENT$, apoi $LABEL$. Fără cicluri.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Cicluri impuse de Până la oprire"
+  },
+  "shared_mode_blacklist": {
+    "message": "Blochează site-urile selectate"
+  },
+  "shared_mode_whitelist": {
+    "message": "Permite doar site-urile selectate"
+  },
+  "shared_focus_time_label": {
+    "message": "Timp de concentrare"
+  },
+  "shared_clock_focus_phase": {
+    "message": "faza de concentrare"
+  },
+  "shared_clock_total_session": {
+    "message": "sesiune totală"
+  },
+  "shared_clock_pause": {
+    "message": "pauză"
+  },
+  "shared_clock_break": {
+    "message": "pauză de relaxare"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock pornește. Se aplică regulile selectate de tine."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Sesiunea s-a încheiat. Se finalizează curățarea browserului."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock nu a putut porni. Se finalizează curățarea browserului."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock nu a putut curăța o pornire incompletă."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock nu a putut finaliza curățarea browserului."
+  },
+  "shared_retry_cleanup": {
+    "message": "Reia curățarea"
+  },
+  "shared_end_failed": {
+    "message": "Sesiunea nu a putut fi încheiată. Încearcă din nou."
+  },
+  "shared_retry_failed": {
+    "message": "Curățarea nu a putut fi reluată. Încearcă din nou."
+  },
+  "shared_action_failed": {
+    "message": "Acțiunea nu a putut fi solicitată. Încearcă din nou."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Nu s-a putut reveni la lucru. Încearcă din nou."
+  },
+  "shared_data_clear_pending": {
+    "message": "Se șterg datele Focus Lock. Se finalizează curățarea."
+  },
+  "shared_data_clear_error": {
+    "message": "Datele nu au putut fi șterse. Încearcă din nou."
+  },
+  "shared_schedule_window_label": {
+    "message": "Până se încheie intervalul"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Pornește conform programului și rulează până o oprești: Încheie sesiunea pentru Flexibil, Deblochează prin pauza de reflecție pentru Fricțiune. Fără cicluri."
+  },
+  "shared_schedule_started_title": {
+    "message": "Programul de concentrare a început"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Activă până o oprești."
+  },
+  "shared_settings_indefinite": {
+    "message": "O sesiune până la oprire este activă. Folosește fereastra din bara de instrumente pentru a o vedea sau a o încheia."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock pornește. Se verifică accesul la site-uri web și se aplică regulile tale."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock nu a putut finaliza curățarea browserului. Deschide fereastra și încearcă din nou."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Controalele sesiunii se află în fereastra din bara de instrumente. Sesiunea activă păstrează regulile preluate la pornirea ei."
+  },
+  "shared_settings_timed": {
+    "message": "Sesiune cronometrată activă până la $TIME$. Se încheie automat. Folosește fereastra din bara de instrumente pentru starea în timp real.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Finalizată"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Finalizată manual"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Încheiată devreme"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Încheiată: acces la site-uri web pierdut"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Încheiată: configurarea blocării a eșuat"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Încheiată: configurarea cronometrului a eșuat"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Încheiată: aplicarea pe pagini a eșuat"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Încheiată: recuperarea a eșuat"
+  },
+  "shared_updating_session": {
+    "message": "Se actualizează sesiunea"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Mai puțin de un minut"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ până la pauza ta",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ rămase în această sesiune",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Costul depășește plafonul de credit"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Creditul se câștigă din nou în timpul concentrării"
+  },
+  "shared_credit_off": {
+    "message": "Câștigarea de credit este dezactivată"
+  },
+  "shared_not_enough_time": {
+    "message": "Timp insuficient în acest bloc de concentrare"
+  },
+  "shared_ready_in": {
+    "message": "Gata în $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Blocat de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Blocat de lista ta de blocare"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Nu este pe lista ta de permise"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Blocat de această sesiune"
+  },
+  "shared_verdict_allow_list": {
+    "message": "Este pe lista ta de permise"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Permis întotdeauna"
+  },
+  "shared_verdict_unlock": {
+    "message": "Deblocat temporar"
+  },
+  "shared_verdict_excluded": {
+    "message": "Exclus dintr-o categorie selectată"
+  },
+  "shared_verdict_no_session": {
+    "message": "Nicio sesiune de concentrare activă"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Permis de această sesiune"
+  },
+  "shared_category_social": {
+    "message": "Rețele sociale"
+  },
+  "shared_category_video": {
+    "message": "Video și streaming"
+  },
+  "shared_category_news": {
+    "message": "Știri"
+  },
+  "shared_category_mail": {
+    "message": "E-mail"
+  },
+  "shared_category_shopping": {
+    "message": "Cumpărături"
+  },
+  "shared_category_gaming": {
+    "message": "Jocuri"
+  },
+  "shared_category_forums": {
+    "message": "Forumuri și plictiseală"
+  },
+  "shared_synced_settings": {
+    "message": "Setări"
+  },
+  "shared_synced_lists": {
+    "message": "Liste de blocare și de permise"
+  },
+  "shared_synced_credit": {
+    "message": "Credit de acces la site-uri"
+  },
+  "shared_synced_streaks": {
+    "message": "Serii"
+  },
+  "shared_synced_aggregates": {
+    "message": "Totaluri ale încercărilor blocate pe domeniu"
+  },
+  "shared_local_full_urls": {
+    "message": "Adrese URL complete"
+  },
+  "shared_local_intentions": {
+    "message": "Intenții de concentrare"
+  },
+  "shared_local_events": {
+    "message": "Evenimente detaliate ale sesiunii"
+  },
+  "shared_local_runtime": {
+    "message": "Sesiune activă în execuție"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Unele date sincronizate dintr-o versiune mai veche nu au putut fi citite și au fost resetate."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Încheie sesiunea în curs înainte de a șterge toate datele."
+  },
+  "shared_nav_product": {
+    "message": "Navigare în produs"
+  },
+  "shared_nav_overview": {
+    "message": "Prezentare generală"
+  },
+  "shared_nav_settings": {
+    "message": "Setări"
+  },
+  "shared_section_blocking": {
+    "message": "Blocare"
+  },
+  "shared_section_schedule": {
+    "message": "Program"
+  },
+  "shared_section_behavior": {
+    "message": "Comportamentul sesiunii"
+  },
+  "shared_section_budget": {
+    "message": "Credit de acces la site-uri"
+  },
+  "shared_section_notifications": {
+    "message": "Notificări"
+  },
+  "shared_section_privacy": {
+    "message": "Confidențialitate și date"
+  },
+  "shared_theme_auto": {
+    "message": "Automată"
+  },
+  "shared_theme_light": {
+    "message": "Luminoasă"
+  },
+  "shared_theme_dark": {
+    "message": "Întunecată"
+  },
+  "shared_theme_button": {
+    "message": "Temă: $CURRENT$. Comută la $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Tema nu a putut fi salvată. Reîncarcă pagina și încearcă din nou."
+  },
+  "shared_host_search_label": {
+    "message": "Caută site-uri din $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Niciun site din $TITLE$ nu se potrivește cu căutarea ta.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Se afișează $SHOWN$ din $MATCHED$ site-uri. Caută pentru a restrânge lista.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Se afișează $MATCHED$ din $TOTAL$ site-uri.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Se afișează toate cele $TOTAL$ site-uri.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Încheie sesiunea"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock pornește"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Se aplică regulile selectate de tine."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Această pagină nu s-a încărcat. Se va încărca singură când se încheie sesiunea."
+  },
+  "shared_overlay_next_step": {
+    "message": "Următorul tău pas"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Înapoi la lucru"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Alege o filă de lucru"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Schimbă fila de lucru"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Ai nevoie de o pauză sau de acces la site-uri?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Te poți opri oricând. Accesul la site-uri consumă credit."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Ignoră așteptarea și încheie oricum"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock nu a putut actualiza această acțiune. Încearcă din nou."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ credit de acces la site-uri",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Continuă sarcina curentă"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Deblochează toate site-urile"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Deblochează acest site"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - costă $COST$ credit",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Blocat până la $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Ai spus: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Deblochează $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Rămâi concentrat"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Tastează asta pentru a confirma:"
+  },
+  "shared_gate_end_title": {
+    "message": "Încheie această sesiune"
+  },
+  "shared_minutes_few": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

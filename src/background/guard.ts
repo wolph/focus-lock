@@ -1,3 +1,4 @@
+import { t } from '../shared/i18n';
 import type {
   ListsConfig,
   Rule,
@@ -50,10 +51,10 @@ export function listsChangeAllowed(
 ): string | null {
   if (!isHard(session)) return null;
   if (mode === 'blacklist' && removedAny(current.custom, incoming.custom)) {
-    return 'a hard session is running: removing blocked sites unlocks when it ends';
+    return t('notify_guard_lists_remove_blocked');
   }
   if (mode === 'whitelist' && addedAny(current.whitelist, incoming.whitelist)) {
-    return 'a hard session is running: new whitelist entries unlock when it ends';
+    return t('notify_guard_lists_add_whitelist');
   }
   for (const [id, enabled] of Object.entries(current.categories)) {
     if (
@@ -61,7 +62,7 @@ export function listsChangeAllowed(
       enabled &&
       incoming.categories[id as keyof ListsConfig['categories']] === false
     ) {
-      return 'a hard session is running: disabling categories unlocks when it ends';
+      return t('notify_guard_lists_disable_category');
     }
   }
   for (const [id, hosts] of Object.entries(incoming.exclusions)) {
@@ -69,7 +70,7 @@ export function listsChangeAllowed(
       current.exclusions[id as keyof ListsConfig['categories']] ?? [],
     );
     if (mode === 'blacklist' && (hosts ?? []).some((h: string): boolean => !before.has(h))) {
-      return 'a hard session is running: new exclusions unlock when it ends';
+      return t('notify_guard_lists_add_exclusion');
     }
   }
   return null;
@@ -102,25 +103,25 @@ export function settingsChangeAllowed(
 ): string | null {
   if (!isHard(session)) return null;
   if (strictnessWeakened(current.defaultStrictness, incoming.defaultStrictness)) {
-    return 'a hard session is running: weakening the default strictness waits until it ends';
+    return t('notify_guard_settings_weaken_strictness');
   }
   if (incoming.gate.delayMs < current.gate.delayMs) {
-    return 'a hard session is running: shortening the deliberation delay weakens the gate';
+    return t('notify_guard_settings_shorten_delay');
   }
   if (current.gate.requireTypedPhrase && !incoming.gate.requireTypedPhrase) {
-    return 'a hard session is running: dropping the typed phrase weakens the gate';
+    return t('notify_guard_settings_drop_phrase');
   }
   if (incoming.pause.earnRatio > current.pause.earnRatio) {
-    return 'a hard session is running: raising the pause earn rate funds more escapes';
+    return t('notify_guard_settings_raise_earn_rate');
   }
   if (incoming.pause.capMs > current.pause.capMs) {
-    return 'a hard session is running: raising the pause cap funds more escapes';
+    return t('notify_guard_settings_raise_cap');
   }
   if (incoming.pause.pauseMs < current.pause.pauseMs) {
-    return 'a hard session is running: shortening pauses lowers their cost';
+    return t('notify_guard_settings_shorten_pause');
   }
   if (incoming.pause.unlockMs < current.pause.unlockMs) {
-    return 'a hard session is running: shortening unlocks lowers their cost';
+    return t('notify_guard_settings_shorten_unlock');
   }
   if (
     scheduleWeakened(
@@ -129,7 +130,7 @@ export function settingsChangeAllowed(
       incoming.schedule,
     )
   ) {
-    return 'a hard session is running: its schedule entry cannot be weakened until it ends';
+    return t('notify_guard_settings_schedule_weakened');
   }
   return null;
 }

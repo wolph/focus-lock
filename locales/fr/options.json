@@ -1,0 +1,849 @@
+{
+  "options_page_title": {
+    "message": "Options de Focus Lock"
+  },
+  "options_heading": {
+    "message": "Réglages de Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "Chargement des réglages"
+  },
+  "options_privacy_loading": {
+    "message": "Chargement des réglages de confidentialité"
+  },
+  "options_save_failed": {
+    "message": "Impossible d'enregistrer. Réessaie."
+  },
+  "options_blocking_heading": {
+    "message": "Blocage"
+  },
+  "options_blocking_help": {
+    "message": "Les règles personnalisées bloquent pendant les sessions en liste de blocage. La liste d'autorisation est ce qui reste accessible pendant les sessions en liste d'autorisation. Les catégories fournies bloquent les pièges à temps les plus courants."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Liste de blocage personnalisée"
+  },
+  "options_whitelist_title": {
+    "message": "Liste d'autorisation"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Catégories fournies"
+  },
+  "options_bundled_categories_help": {
+    "message": "Listes toutes faites de pièges à temps courants. Active une catégorie entière, puis ouvre-la pour garder certains sites accessibles."
+  },
+  "options_schedule_heading": {
+    "message": "Planification"
+  },
+  "options_schedule_help": {
+    "message": "Les sessions démarrent d'elles-mêmes dans ces créneaux. La rigueur définie ici vaut pour tout le créneau."
+  },
+  "options_behavior_heading": {
+    "message": "Comportement des sessions"
+  },
+  "options_budget_heading": {
+    "message": "Crédit d'accès aux sites"
+  },
+  "options_privacy_heading": {
+    "message": "Confidentialité et données"
+  },
+  "options_load_error_retry": {
+    "message": "Réessayer"
+  },
+  "options_load_error_delete_all": {
+    "message": "Tout supprimer et recommencer"
+  },
+  "options_load_error_keep_data": {
+    "message": "Garder mes données"
+  },
+  "options_delete_all_data": {
+    "message": "Supprimer toutes les données Focus Lock"
+  },
+  "options_dirty_saving": {
+    "message": "Enregistrement des modifications"
+  },
+  "options_dirty_unsaved": {
+    "message": "Modifications non enregistrées"
+  },
+  "options_dirty_clean": {
+    "message": "Aucune modification non enregistrée"
+  },
+  "options_dirty_discard": {
+    "message": "Annuler les modifications"
+  },
+  "options_dirty_save": {
+    "message": "Enregistrer les modifications"
+  },
+  "options_session_status_label": {
+    "message": "État de la session"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domaine"
+  },
+  "options_rule_remove": {
+    "message": "Retirer"
+  },
+  "options_rule_remove_aria": {
+    "message": "Retirer $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Aucune règle pour l'instant."
+  },
+  "options_rule_kind_aria": {
+    "message": "Type de règle"
+  },
+  "options_rule_kind_host_option": {
+    "message": "domaine ou sous-domaine"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (URL complète)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Motif"
+  },
+  "options_rule_add": {
+    "message": "Ajouter la règle"
+  },
+  "options_rules_help": {
+    "message": "facebook.com couvre ce domaine et tous ses sous-domaines. news.ycombinator.com couvre ce sous-domaine et tout ce qui est en dessous. /youtube\\.com\\/shorts/ compare l'URL complète comme expression régulière."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ doit être un nombre entier positif.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ doit être un nombre entier supérieur ou égal à zéro.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ doit être supérieur ou égal à zéro.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ doit rester dans la plage de minutes prise en charge.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ doit rester dans la plage de jours prise en charge.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Valeurs par défaut des sessions"
+  },
+  "options_session_defaults_help": {
+    "message": "Le mode et la rigueur sont figés au démarrage d'une session. Ce sont les valeurs avec lesquelles le formulaire de démarrage s'ouvre."
+  },
+  "options_preset_short_label": {
+    "message": "Préréglage de session courte (minutes)"
+  },
+  "options_preset_default_label": {
+    "message": "Préréglage de session par défaut (minutes)"
+  },
+  "options_preset_deep_label": {
+    "message": "Préréglage de session longue (minutes)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Liste de blocage : bloquer les sites listés"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Liste d'autorisation : n'autoriser que les sites listés"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Souple : termine la session quand tu veux"
+  },
+  "options_strictness_friction_label": {
+    "message": "Friction : l'arrêt anticipé passe par le sas de réflexion configuré"
+  },
+  "options_strictness_hard_label": {
+    "message": "Strict : aucun arrêt anticipé, seulement des accès temporaires"
+  },
+  "options_cycle_heading": {
+    "message": "Cycle concentration et pause"
+  },
+  "options_cycle_help": {
+    "message": "Par défaut : 25 minutes de concentration, 5 minutes de pause, 15 minutes de longue pause tous les 4 cycles. Dans les études, des pauses planifiées valent mieux pour l'humeur et la concentration que des pauses prises à l'envie. Les minutes exactes sont une convention, pas une science."
+  },
+  "options_cycle_default_label": {
+    "message": "Alterner concentration et pauses par défaut"
+  },
+  "options_focus_minutes_label": {
+    "message": "Minutes de concentration"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Minutes de pause courte"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Minutes de longue pause"
+  },
+  "options_long_every_label": {
+    "message": "Longue pause tous les N cycles"
+  },
+  "options_gate_heading": {
+    "message": "Sas de réflexion"
+  },
+  "options_gate_help": {
+    "message": "Une attente de 10 secondes avec un bouton explicite de retour au travail réduit nettement les visites impulsives (étude de terrain, PNAS 2023). Une attente plus longue et une phrase à saisir doublent à peu près l'effet."
+  },
+  "options_gate_wait_one": {
+    "message": "Attendre $COUNT$ seconde",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Attendre $COUNT$ secondes",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Personnalisé"
+  },
+  "options_custom_delay_label": {
+    "message": "Délai personnalisé (secondes)"
+  },
+  "options_custom_delay_error": {
+    "message": "Le délai personnalisé doit être un nombre entier de secondes supérieur à zéro."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Demander aussi de saisir une phrase"
+  },
+  "options_gate_force_end_label": {
+    "message": "Activer le bouton « Ignorer le délai et terminer quand même »"
+  },
+  "options_credit_help": {
+    "message": "Le crédit d'accès aux sites s'accumule pendant que tu te concentres. L'accès à tous les sites et le déverrouillage d'un seul site puisent dans le même solde. Tu peux t'éloigner à tout moment sans dépenser de crédit."
+  },
+  "options_earn_rate_label": {
+    "message": "Minutes d'accès par 30 minutes de concentration"
+  },
+  "options_credit_cap_label": {
+    "message": "Limite de crédit d'accès (minutes)"
+  },
+  "options_pause_length_label": {
+    "message": "Durée d'accès à tous les sites (minutes)"
+  },
+  "options_unlock_length_label": {
+    "message": "Durée de déverrouillage d'un site (minutes)"
+  },
+  "options_streak_heading": {
+    "message": "Série et conservation"
+  },
+  "options_streak_help": {
+    "message": "La série compte les jours qui atteignent l'objectif. Une session par défaut suffit à garder la chaîne, et un jeton de gel répare un jour manqué."
+  },
+  "options_streak_goal_label": {
+    "message": "Objectif quotidien de série (minutes de concentration)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Intervalle des jetons de gel (jours)"
+  },
+  "options_retention_label": {
+    "message": "Conserver les statistiques quotidiennes (jours)"
+  },
+  "options_category_on_announcement": {
+    "message": "Catégorie $CATEGORY$ activée.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Catégorie $CATEGORY$ désactivée.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Toutes les catégories activées."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Toutes les catégories désactivées."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ inclus.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ reste accessible.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Tous les sites $CATEGORY$ inclus.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Tous les sites $CATEGORY$ restent accessibles.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Actions groupées sur les catégories"
+  },
+  "options_selected_count": {
+    "message": "$COUNT$ sélectionnés",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "$COUNT$ désélectionnés",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Tout sélectionner"
+  },
+  "options_deselect_all": {
+    "message": "Tout désélectionner"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Sélectionner toutes les catégories"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Désélectionner toutes les catégories"
+  },
+  "options_show_category_sites": {
+    "message": "Afficher les sites $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Masquer les sites $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ site inclus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ sites inclus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Catégorie désactivée"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ inclus une fois activée",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ inclus une fois activée",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Décoche un site pour le garder accessible pendant que le reste de la catégorie est bloqué."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Actions groupées sur les sites $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Sélectionner tous les sites $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Désélectionner tous les sites $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Sites $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "dim"
+  },
+  "options_day_mon": {
+    "message": "lun"
+  },
+  "options_day_tue": {
+    "message": "mar"
+  },
+  "options_day_wed": {
+    "message": "mer"
+  },
+  "options_day_thu": {
+    "message": "jeu"
+  },
+  "options_day_fri": {
+    "message": "ven"
+  },
+  "options_day_sat": {
+    "message": "sam"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Alterner concentration et pauses"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Chevauche un autre créneau actif le $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Type de session"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Créneau planifié"
+  },
+  "options_schedule_start_label": {
+    "message": "Début"
+  },
+  "options_schedule_end_label": {
+    "message": "Fin"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Durée"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "à quoi sert ce créneau"
+  },
+  "options_schedule_save_entry": {
+    "message": "Enregistrer le créneau"
+  },
+  "options_cancel": {
+    "message": "Annuler"
+  },
+  "options_schedule_empty": {
+    "message": "Aucune session planifiée pour l'instant."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Jours sélectionnés"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ à $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "liste de blocage"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "liste d'autorisation"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "souple"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "strict"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Activé"
+  },
+  "options_schedule_edit": {
+    "message": "Modifier"
+  },
+  "options_schedule_delete": {
+    "message": "Supprimer"
+  },
+  "options_schedule_add": {
+    "message": "Ajouter un créneau"
+  },
+  "options_sounds_heading": {
+    "message": "Sons"
+  },
+  "options_master_volume": {
+    "message": "Volume général"
+  },
+  "options_sound_session_complete": {
+    "message": "Session terminée"
+  },
+  "options_sound_break_start": {
+    "message": "Début de pause"
+  },
+  "options_sound_break_end": {
+    "message": "Fin de pause"
+  },
+  "options_sound_schedule_start": {
+    "message": "Démarrage planifié"
+  },
+  "options_sound_preview_aria": {
+    "message": "Écouter $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Écouter"
+  },
+  "options_sound_preview_error": {
+    "message": "Impossible d'écouter le son. Réessaie."
+  },
+  "options_session_complete_notification": {
+    "message": "Afficher une notification système à la fin d'une session"
+  },
+  "options_badge_countdown": {
+    "message": "Afficher le temps restant sur l'icône de la barre d'outils"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Accès aux sites"
+  },
+  "options_privacy_website_off_title": {
+    "message": "L'accès aux sites est désactivé"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock ne peut pas bloquer de sites tant que tu n'as pas accordé l'accès."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Activer le blocage des sites"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "L'accès aux sites est accordé, mais le blocage n'est pas actif"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome a accordé l'accès, mais Focus Lock n'a pas pu enregistrer son script de blocage."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Relancer le blocage des sites"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Le blocage des sites est activé"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock peut appliquer tes règles de blocage actives sur les pages web ordinaires."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Supprimer l'historique local ?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Confirmer la suppression de l'historique local"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Historique local supprimé."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Cette action supprime définitivement de cet appareil les URL complètes, les intentions de concentration et les événements détaillés de session. Elle n'efface pas une session en cours, qui garde son intention et l'adresse de chaque onglet qu'elle bloque. Terminer la session efface l'intention et lance un nettoyage qui rétablit chaque onglet web ouvert, et ce nettoyage supprime toutes les adresses stockées quand il se termine."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Cette action supprime définitivement de cet appareil les URL complètes, les intentions de concentration et les événements détaillés de session, ainsi que les statistiques agrégées qui n'existent qu'en local. Elle n'efface pas une session en cours, qui garde son intention et l'adresse de chaque onglet qu'elle bloque. Terminer la session efface l'intention et lance un nettoyage qui rétablit chaque onglet web ouvert, et ce nettoyage supprime toutes les adresses stockées quand il se termine."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Supprimer les données distantes de Sync ?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Confirmer la suppression des données distantes de Sync"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Données distantes de Chrome Sync supprimées."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Cette action supprime définitivement de Chrome Sync les réglages distants, les listes de blocage et d'autorisation, le crédit d'accès aux sites, les séries et les totaux de tentatives bloquées par domaine. Les réglages et les statistiques locaux restent sur cet appareil."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Supprimer toutes les données Focus Lock ?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Confirmer la suppression de toutes les données Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Toutes les données Focus Lock ont été supprimées."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Cette action supprime définitivement toutes les données Focus Lock de cet appareil et toutes les copies Focus Lock restées dans Chrome Sync :"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "La suppression totale n'est possible que si aucune session ne tourne. Focus Lock revient ensuite à la configuration."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "L'historique local n'a pas pu être supprimé. Réessaie."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Les données distantes de Chrome Sync n'ont pas pu être supprimées. Réessaie."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Toutes les données Focus Lock n'ont pas pu être supprimées. Réessaie."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync n'a pas pu enregistrer tes dernières modifications. Ton enregistrement local est intact."
+  },
+  "options_privacy_error_request": {
+    "message": "La demande n'a pas pu aboutir. Réessaie."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Accès aux sites mis à jour."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "L'accès aux sites n'a pas été accordé."
+  },
+  "options_privacy_error_website_access": {
+    "message": "L'accès aux sites n'a pas pu être mis à jour. Réessaie."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Blocage des sites activé."
+  },
+  "options_privacy_error_export": {
+    "message": "Impossible d'exporter le journal d'événements."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Impossible d'exporter le journal d'événements. Réessaie."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Impossible d'ouvrir les réglages d'autorisations de Chrome. Réessaie."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Réglages d'autorisations de Chrome ouverts."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Ouvrir les réglages d'autorisations de Chrome"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Synchroniser les données Focus Lock entre les appareils Chrome"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync activé."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync désactivé."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync enregistre encore tes dernières modifications."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync est activé."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync est désactivé."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Modifications enregistrées dans Chrome Sync."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Réessayer d'activer Chrome Sync"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Relancer Chrome Sync"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Synchronisé"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Local uniquement"
+  },
+  "options_privacy_developer_note": {
+    "message": "Rien n'est envoyé au développeur de Focus Lock."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Journal d'événements local"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Exporte le journal local détaillé ou supprime l'historique local de navigation et de sessions."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Exporter le journal local"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Journal d'événements local exporté."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Supprimer l'historique local"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Données distantes de Sync"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Supprime les copies Focus Lock restées dans Chrome Sync sans toucher à cet appareil."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Supprimer les données distantes de Sync"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Toutes les données Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Supprime toutes les données Focus Lock de cet appareil et toutes les copies Focus Lock restées dans Chrome Sync, puis repart de la configuration. Possible seulement si aucune session ne tourne."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Reprise de la suppression de toutes les données Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Relancer la suppression de l'historique local"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Relancer la suppression des données distantes de Sync"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Relancer la suppression de toutes les données"
+  },
+  "options_error_load": {
+    "message": "Impossible de charger les réglages. Recharge la page pour réessayer."
+  },
+  "options_error_retry_boot": {
+    "message": "Impossible de relancer Focus Lock. Réessaie."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Impossible d'actualiser les réglages de confidentialité. Recharge la page."
+  },
+  "options_error_website_blocking": {
+    "message": "Impossible de mettre à jour le blocage des sites. Réessaie."
+  },
+  "options_error_change_sync": {
+    "message": "Impossible de modifier Chrome Sync. Réessaie."
+  },
+  "options_error_retry_sync": {
+    "message": "Impossible de relancer Chrome Sync. Réessaie."
+  },
+  "options_error_save_settings": {
+    "message": "Impossible d'enregistrer les réglages. Recharge la page et réessaie."
+  },
+  "options_error_save_lists": {
+    "message": "Impossible d'enregistrer les listes. Recharge la page et réessaie."
+  },
+  "options_gate_wait_many": {
+    "message": "Attendre $COUNT$ secondes",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_many": {
+    "message": "$COUNT$ sites inclus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_many": {
+    "message": "$COUNT$ inclus une fois activée",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

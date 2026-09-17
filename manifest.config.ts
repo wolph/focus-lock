@@ -7,9 +7,10 @@ type Manifest = Extract<Parameters<typeof defineManifest>[0], { manifest_version
 export default defineManifest(
   ({ mode }: ConfigEnv): Manifest => ({
     manifest_version: 3,
-    name: 'Focus Lock',
+    name: '__MSG_app_name__',
     version: '0.1.1',
-    description: 'Focus sessions that lock distracting sites, with earned site access credit.',
+    description: '__MSG_app_description__',
+    default_locale: 'en',
     ...(mode === 'store' ? {} : { key: MANIFEST_KEY }),
     icons: {
       16: 'assets/icons/idle-16.png',

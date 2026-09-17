@@ -2,15 +2,12 @@ import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useState } from 'preact/hooks';
 import { ALL_CATEGORIES } from '../core/categories';
 import { HostBrowser } from '../shared/HostBrowser';
+import { formatNumber, t, tPlural } from '../shared/i18n';
 import type { CategoryId, CategoryList, ListsConfig } from '../shared/types';
 
 export interface CategoriesProps {
   lists: ListsConfig;
   onChange: (next: ListsConfig) => void;
-}
-
-function siteCountLabel(count: number): string {
-  return count === 1 ? '1 site' : `${count} sites`;
 }
 
 /**
@@ -31,7 +28,11 @@ export function Categories(props: CategoriesProps): VNode {
   ): void => {
     const title: string =
       ALL_CATEGORIES.find((category: CategoryList): boolean => category.id === id)?.title ?? id;
-    setAnnouncement(`${title} category ${on ? 'on' : 'off'}.`);
+    setAnnouncement(
+      on
+        ? t('options_category_on_announcement', { CATEGORY: title })
+        : t('options_category_off_announcement', { CATEGORY: title }),
+    );
     props.onChange({
       ...props.lists,
       categories: { ...props.lists.categories, [id]: on },
@@ -43,7 +44,11 @@ export function Categories(props: CategoriesProps): VNode {
     ALL_CATEGORIES.forEach((category: CategoryList): void => {
       categories[category.id] = enabled;
     });
-    setAnnouncement(`All categories ${enabled ? 'on' : 'off'}.`);
+    setAnnouncement(
+      enabled
+        ? t('options_all_categories_on_announcement')
+        : t('options_all_categories_off_announcement'),
+    );
     props.onChange({ ...props.lists, categories });
   };
 
@@ -56,7 +61,11 @@ export function Categories(props: CategoriesProps): VNode {
     const next: string[] = active
       ? current.filter((h: string): boolean => h !== host)
       : [...current, host];
-    setAnnouncement(`${host} ${active ? 'included' : 'kept available'}.`);
+    setAnnouncement(
+      active
+        ? t('options_host_included_announcement', { HOST: host })
+        : t('options_host_kept_available_announcement', { HOST: host }),
+    );
     props.onChange({
       ...props.lists,
       exclusions: { ...props.lists.exclusions, [id]: next },
@@ -72,7 +81,11 @@ export function Categories(props: CategoriesProps): VNode {
     const next: string[] = active
       ? [...new Set(current.filter((host: string): boolean => !bundledHosts.has(host)))]
       : [...new Set([...current, ...category.hosts])];
-    setAnnouncement(`All ${category.title} sites ${active ? 'included' : 'kept available'}.`);
+    setAnnouncement(
+      active
+        ? t('options_all_sites_included_announcement', { CATEGORY: category.title })
+        : t('options_all_sites_kept_available_announcement', { CATEGORY: category.title }),
+    );
     props.onChange({
       ...props.lists,
       exclusions: { ...props.lists.exclusions, [category.id]: next },
@@ -105,31 +118,35 @@ export function Categories(props: CategoriesProps): VNode {
       <p class="visually-hidden" role="status" aria-live="polite" aria-atomic="true">
         {announcement}
       </p>
-      <fieldset class="cat-bulk-actions" aria-label="Category bulk actions">
-        <span class="selection-count selected">Selected {selectedCategoryCount}</span>
-        <span class="selection-count deselected">Deselected {deselectedCategoryCount}</span>
+      <fieldset class="cat-bulk-actions" aria-label={t('options_category_bulk_actions_aria')}>
+        <span class="selection-count selected">
+          {t('options_selected_count', { COUNT: formatNumber(selectedCategoryCount) })}
+        </span>
+        <span class="selection-count deselected">
+          {t('options_deselected_count', { COUNT: formatNumber(deselectedCategoryCount) })}
+        </span>
         <span class="spacer" />
         <button
           type="button"
           class="ghost"
-          aria-label="Select all categories"
+          aria-label={t('options_select_all_categories_aria')}
           disabled={allCategoriesSelected}
           onClick={(): void => {
             setAllCategories(true);
           }}
         >
-          Select all
+          {t('options_select_all')}
         </button>
         <button
           type="button"
           class="ghost"
-          aria-label="Deselect all categories"
+          aria-label={t('options_deselect_all_categories_aria')}
           disabled={allCategoriesDeselected}
           onClick={(): void => {
             setAllCategories(false);
           }}
         >
-          Deselect all
+          {t('options_deselect_all')}
         </button>
       </fieldset>
 
@@ -161,8 +178,12 @@ export function Categories(props: CategoriesProps): VNode {
                 />
                 {category.title}
               </label>
-              <span class="selection-count selected">Selected {selectedHostCount}</span>
-              <span class="selection-count deselected">Deselected {deselectedHostCount}</span>
+              <span class="selection-count selected">
+                {t('options_selected_count', { COUNT: formatNumber(selectedHostCount) })}
+              </span>
+              <span class="selection-count deselected">
+                {t('options_deselected_count', { COUNT: formatNumber(deselectedHostCount) })}
+              </span>
               <span class="spacer" />
               <button
                 type="button"
@@ -172,55 +193,63 @@ export function Categories(props: CategoriesProps): VNode {
                   toggleExpanded(category.id);
                 }}
               >
-                {open ? `Hide ${category.title} sites` : `Show ${category.title} sites`}
+                {open
+                  ? t('options_hide_category_sites', { CATEGORY: category.title })
+                  : t('options_show_category_sites', { CATEGORY: category.title })}
               </button>
             </div>
             <p class="category-state">
               {enabled ? (
-                <>{siteCountLabel(selectedHostCount)} included</>
+                tPlural('options_category_sites_included', selectedHostCount)
               ) : (
                 <>
-                  <strong>Category off</strong>
-                  <span>{selectedHostCount} included when enabled</span>
+                  <strong>{t('options_category_off')}</strong>
+                  <span>{tPlural('options_included_when_enabled', selectedHostCount)}</span>
                 </>
               )}
             </p>
             {open ? (
               <div>
-                <p class="help">
-                  Uncheck a site to keep it available while the rest of the category is blocked.
-                </p>
+                <p class="help">{t('options_category_uncheck_help')}</p>
                 <fieldset
                   class="cat-bulk-actions cat-site-actions"
-                  aria-label={`${category.title} site bulk actions`}
+                  aria-label={t('options_category_site_bulk_actions_aria', {
+                    CATEGORY: category.title,
+                  })}
                 >
                   <button
                     type="button"
                     class="ghost"
-                    aria-label={`Select all ${category.title} sites`}
+                    aria-label={t('options_select_all_category_sites_aria', {
+                      CATEGORY: category.title,
+                    })}
                     disabled={allHostsSelected}
                     onClick={(): void => {
                       setAllHosts(category, true);
                     }}
                   >
-                    Select all
+                    {t('options_select_all')}
                   </button>
                   <button
                     type="button"
                     class="ghost"
-                    aria-label={`Deselect all ${category.title} sites`}
+                    aria-label={t('options_deselect_all_category_sites_aria', {
+                      CATEGORY: category.title,
+                    })}
                     disabled={allHostsDeselected}
                     onClick={(): void => {
                       setAllHosts(category, false);
                     }}
                   >
-                    Deselect all
+                    {t('options_deselect_all')}
                   </button>
                 </fieldset>
                 <HostBrowser
                   hosts={category.hosts}
                   title={category.title}
-                  regionLabel={`${category.title} sites`}
+                  regionLabel={t('options_category_sites_region_aria', {
+                    CATEGORY: category.title,
+                  })}
                   regionClass="cat-hosts-scroll"
                   listClass="cat-hosts"
                   renderHost={(host: string): VNode => {

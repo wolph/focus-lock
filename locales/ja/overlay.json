@@ -1,0 +1,91 @@
+{
+  "overlay_stopped_title": {
+    "message": "ロック中 - Focus Lock"
+  },
+  "overlay_target_checking": {
+    "message": "利用可能なワークタブを確認中..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "タスクを続行するには、開いているタブを選択します。"
+  },
+  "overlay_target_session_unavailable": {
+    "message": "フォーカスセッションが利用できません。もう一度試すか、このページをリロードしてください。"
+  },
+  "overlay_target_lookup_failed": {
+    "message": "ワークタブを読み込めませんでした。もう一度試すか、このページをリロードしてください。"
+  },
+  "overlay_target_reconnect": {
+    "message": "このページをリロードして Focus Lock に再度接続してください。"
+  },
+  "overlay_target_page_changed": {
+    "message": "リクエストしたページが変更されました。ページをリロードしてください。"
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock に接続できません。もう一度試してください。"
+  },
+  "overlay_picker_heading": {
+    "message": "ワークタブを選択"
+  },
+  "overlay_picker_cancel": {
+    "message": "キャンセル"
+  },
+  "overlay_picker_search_label": {
+    "message": "ワークタブを検索"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "タイトルまたはウェブサイトで検索"
+  },
+  "overlay_picker_clear_search": {
+    "message": "検索をクリア"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "タブをリフレッシュ"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "利用可能なワークタブ"
+  },
+  "overlay_picker_finding": {
+    "message": "利用可能なタブを検索中..."
+  },
+  "overlay_picker_searching": {
+    "message": "ワークタブを検索中..."
+  },
+  "overlay_picker_saving": {
+    "message": "ワークタブを保存中..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "利用可能なワークタブがありません。このセッションで許可されているサイトを開き、タブをリフレッシュしてください。"
+  },
+  "overlay_picker_no_matches": {
+    "message": "一致するタブがありません。別の検索を試すか、検索をクリアしてください。"
+  },
+  "overlay_picker_load_failed": {
+    "message": "ワークタブを読み込めませんでした。もう一度試してください。"
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ (全 $COUNT$ タブ)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ (全 $COUNT$ タブ)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

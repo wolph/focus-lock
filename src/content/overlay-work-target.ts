@@ -4,6 +4,7 @@
  * lookup is a renderer-owned round trip and its results are lookup labels, not session state:
  * the session id every request carries is the frozen view's.
  */
+import { t } from '../shared/i18n';
 import { sendRequest } from '../shared/messages';
 import { ackError } from '../shared/runtime-validation';
 import { parseWorkTargetResult, type WorkTargetResult } from '../shared/work-target';
@@ -37,7 +38,7 @@ export function buildWorkTarget(
   change.type = 'button';
   change.className = 'change-work';
   change.dataset.focus = 'change-work';
-  change.textContent = view.copy.changeWorkTab;
+  change.textContent = t('shared_overlay_change_work_tab');
   change.addEventListener('click', (): void => openWorkPicker(overlay, change));
   panel.append(button, status, change);
   overlay.work = { button, status, change };
@@ -98,6 +99,22 @@ export function updateTarget(overlay: MountedOverlay): void {
   controls.change.hidden = !ready;
 }
 
+/** The action and its destination in one sentence, naming the website when the title hides it. */
+function returnLabel(
+  view: ActiveOverlayView,
+  destination: string,
+  hostname: string | undefined,
+): string {
+  const action: string = t('shared_overlay_back_to_work');
+  return hostname === undefined || hostname === destination
+    ? t('overlay_return_label', { ACTION: action, DESTINATION: destination })
+    : t('overlay_return_label_host', {
+        ACTION: action,
+        DESTINATION: destination,
+        HOSTNAME: hostname,
+      });
+}
+
 /** The destination lives on the button itself, and the whole of it in its accessible name. */
 function updateReturnButton(
   button: HTMLButtonElement,
@@ -108,15 +125,16 @@ function updateReturnButton(
   const destination: string = title?.trim() || hostname || '';
   const label: string =
     destination === ''
-      ? view.copy.chooseWorkTab
-      : `${view.copy.backToWork}: ${destination}${hostname !== undefined && hostname !== destination ? ` (${hostname})` : ''}`;
+      ? t('shared_overlay_choose_work_tab')
+      : returnLabel(view, destination, hostname);
   if (button.getAttribute('aria-label') === label) return;
   button.setAttribute('aria-label', label);
   button.title = label;
   button.replaceChildren();
   const action: HTMLElement = document.createElement('span');
   action.className = 'work-action-label';
-  action.textContent = destination === '' ? view.copy.chooseWorkTab : view.copy.backToWork;
+  action.textContent =
+    destination === '' ? t('shared_overlay_choose_work_tab') : t('shared_overlay_back_to_work');
   button.append(action);
   if (destination === '') return;
   const text: HTMLElement = document.createElement('span');
@@ -187,6 +205,10 @@ export async function loadWorkTarget(
   if (usableTarget(view, target)) openWorkPicker(overlay, trigger);
 }
 
+/**
+ * The worker's own refusal is shown verbatim only for the one case both sides word identically,
+ * so the two sides must stay on the same message key for the match to hold in every language.
+ */
 function lookupError(error: string | undefined): string {
   if (error === WORK_TARGET_COPY.pageChanged) return error;
   if (error?.includes('Extension context invalidated')) return WORK_TARGET_COPY.reconnect;

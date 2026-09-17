@@ -1,3 +1,4 @@
+import { t, tPlural } from './i18n';
 import { UNTIL_STOPPED_LABEL } from './session-copy';
 import { minToMs } from './time';
 import type { CycleConfig, SessionSnapshotV2 } from './types';
@@ -8,7 +9,7 @@ export interface FocusDisplay {
   progress: number;
 }
 
-const UPDATING_TEXT: string = 'Updating session';
+const UPDATING_TEXT: string = t('shared_updating_session');
 
 function hasUpcomingBreak(
   snapshot: SessionSnapshotV2,
@@ -47,10 +48,13 @@ export function focusDisplay(snapshot: SessionSnapshotV2, now: number): FocusDis
   const progress: number =
     span <= 0 ? 1 : Math.min(1, Math.max(0, (now - snapshot.phaseStartedAt) / span));
   if (remaining === 0) return { text: UPDATING_TEXT, endsAt, progress };
+  const minutes: number = Math.ceil(remaining / 60_000);
   const duration: string =
-    remaining < 60_000 ? 'Less than a minute' : `${Math.ceil(remaining / 60_000)} min`;
+    remaining < 60_000 ? t('shared_less_than_a_minute') : tPlural('shared_minutes', minutes);
   const upcomingBreak: boolean =
     phaseEnd !== null && sessionEnd !== null && hasUpcomingBreak(snapshot, phaseEnd, sessionEnd);
-  const suffix: string = upcomingBreak ? 'until your break' : 'left in this session';
-  return { text: `${duration} ${suffix}`, endsAt, progress };
+  const text: string = upcomingBreak
+    ? t('shared_focus_remaining_break', { DURATION: duration })
+    : t('shared_focus_remaining_session', { DURATION: duration });
+  return { text, endsAt, progress };
 }

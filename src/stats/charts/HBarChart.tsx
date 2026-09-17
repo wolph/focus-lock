@@ -1,5 +1,6 @@
 import type { JSX } from 'preact';
 import { useId } from 'preact/hooks';
+import { t } from '../../shared/i18n';
 import type { ChartDatum } from './BarChart';
 import { niceMax } from './BarChart';
 import { ChartTable } from './ChartTable';
@@ -20,8 +21,7 @@ const ROW_H: number = 22;
 const BAR_H: number = 12;
 const PAD_Y: number = 4;
 const BAR_MAX_W: number = W - LABEL_W - VALUE_W;
-const CHART_DESCRIPTION: string =
-  'Horizontal bar chart. Use the keyboard to move through data points, or open View as table for the same values.';
+const CHART_DESCRIPTION: string = t('stats_chart_description_hbar');
 
 function truncate(label: string): string {
   return label.length > 18 ? `${label.slice(0, 15)}...` : label;
@@ -47,7 +47,7 @@ export function HBarChart(props: HBarChartProps): JSX.Element {
   const titleId: string = useId();
   const descriptionId: string = useId();
   const data: ChartDatum[] = props.data;
-  const emptyLine: string = props.emptyLine ?? 'No data yet.';
+  const emptyLine: string = props.emptyLine ?? t('stats_chart_empty_default');
   if (data.length === 0 || data.every((d: ChartDatum): boolean => d.value <= 0)) {
     return <p class="empty-line">{emptyLine}</p>;
   }
@@ -62,21 +62,20 @@ export function HBarChart(props: HBarChartProps): JSX.Element {
         aria-labelledby={titleId}
         aria-describedby={descriptionId}
       >
-        <title id={titleId}>{props.label ?? 'Horizontal bar chart'}</title>
+        <title id={titleId}>{props.label ?? t('stats_chart_name_hbar')}</title>
         <desc id={descriptionId}>{CHART_DESCRIPTION}</desc>
         <line class="baseline" x1={LABEL_W} x2={LABEL_W} y1={PAD_Y} y2={height - PAD_Y} />
         {data.map((d: ChartDatum, i: number): JSX.Element => {
+          const pointLabel: string = t('stats_chart_point', {
+            LABEL: d.label,
+            VALUE: props.format(d.value),
+          });
           const rowY: number = PAD_Y + i * ROW_H;
           const barY: number = rowY + (ROW_H - BAR_H) / 2;
           const barW: number = (d.value / max) * BAR_MAX_W;
           return (
-            <g
-              key={d.label}
-              class="hbar-row"
-              tabindex={0}
-              aria-label={`${d.label}: ${props.format(d.value)}`}
-            >
-              <title>{`${d.label}: ${props.format(d.value)}`}</title>
+            <g key={d.label} class="hbar-row" tabindex={0} aria-label={pointLabel}>
+              <title>{pointLabel}</title>
               <rect
                 class="hbar-focus-ring"
                 x={1}

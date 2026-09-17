@@ -1,4 +1,5 @@
 import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import { type Request, sendRequest } from '../shared/messages';
 import type { SessionMode, SessionRuleSnapshot, SessionSnapshotV2 } from '../shared/types';
 import {
@@ -25,8 +26,7 @@ export interface WorkTabsState {
 
 export type WorkTabsRequest = Extract<Request, { type: 'getWorkTabs'; mode: SessionMode }>;
 
-const WORK_TABS_UNAVAILABLE_ERROR: string =
-  'Could not load work tabs. Reopen the popup to try again.';
+const WORK_TABS_UNAVAILABLE_ERROR: string = t('popup_work_tabs_unavailable');
 
 export async function currentContext(): Promise<WorkContext> {
   const tabs: chrome.tabs.Tab[] = await chrome.tabs.query({ active: true, currentWindow: true });

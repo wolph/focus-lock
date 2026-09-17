@@ -1,0 +1,136 @@
+{
+  "stats_loading": {
+    "message": "Nag-load your stats."
+  },
+  "stats_scope_retry": {
+    "message": "Subukan Muli scope check"
+  },
+  "stats_tile_focus_today": {
+    "message": "Focus toaraw"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Focus in the last 7 araws"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Attempts blocked toaraw"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Gate requests dismissed toaraw"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Site access credit spent toaraw"
+  },
+  "stats_streak_empty": {
+    "message": "Your streak starts with your first focus araw."
+  },
+  "stats_streak_unit_one": {
+    "message": "araw"
+  },
+  "stats_streak_unit_other": {
+    "message": "araws"
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Streak freeze: one missed araw, covered"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ active araw this month ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ active araws this month ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Focus, last 14 araws"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Focus minutos appear after your first session."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Hadlanged attempts, last 14 araws"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Hadlanged attempts show up here once a session catches one."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Top blocked sites, last 30 araws"
+  },
+  "stats_chart_hours_heading": {
+    "message": "Attempts by oras, this machine only"
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ haried",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ haried",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_table_category": {
+    "message": "Kategorya"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-oras blocked-attempt heat strip"
+  },
+  "stats_sessions_col_start": {
+    "message": "Magsimula"
+  },
+  "stats_session_article_label": {
+    "message": "Sesyon: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_outcome_ended_early": {
+    "message": "Tapusined early"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ freeze token banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ freeze tokens banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

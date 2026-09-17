@@ -2,6 +2,7 @@
 import { cleanup, fireEvent, render, waitFor } from '@testing-library/preact';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { DEFAULT_SETTINGS, DEFAULT_SETUP } from '../../../src/shared/constants';
+import { t } from '../../../src/shared/i18n';
 import type { Request, StatsBundle } from '../../../src/shared/messages';
 import type { StorageMode } from '../../../src/shared/types';
 import { App, requestSetupScope } from '../../../src/stats/App';
@@ -76,9 +77,9 @@ describe('Stats request errors', (): void => {
     const { getByRole, queryByText } = render(<App />);
 
     await waitFor((): void => {
-      expect(getByRole('alert').textContent).toBe('Could not load stats. Reload to try again.');
+      expect(getByRole('alert').textContent).toBe(t('stats_load_error'));
     });
-    expect(queryByText('Loading your stats.')).toBeNull();
+    expect(queryByText(t('stats_loading'))).toBeNull();
     expect(consoleError).not.toHaveBeenCalled();
   });
 
@@ -93,7 +94,7 @@ describe('Stats request errors', (): void => {
     const { getByRole, getByText } = render(<App />);
 
     await waitFor((): void => {
-      expect(getByText('Stats appear after your first session.')).toBeTruthy();
+      expect(getByText(t('stats_empty'))).toBeTruthy();
       expect(getByRole('alert').textContent).toBe(
         'Hourly attempts and site access credit settings are unavailable.',
       );
@@ -148,9 +149,7 @@ describe('Stats request errors', (): void => {
     });
     const { getByRole, getByText, queryByText } = render(<App />);
 
-    await waitFor((): void =>
-      expect(getByText('Stats appear after your first session.')).toBeTruthy(),
-    );
+    await waitFor((): void => expect(getByText(t('stats_empty'))).toBeTruthy());
     const scopeRegion: HTMLElement = getByRole('status');
     expect(scopeRegion.textContent).toBe(SCOPE_LOADING);
     expect(queryByText(SYNC_SCOPE)).toBeNull();
@@ -179,9 +178,9 @@ describe('Stats request errors', (): void => {
     const { getByRole, getByText } = render(<App />);
 
     await waitFor((): void => expect(getByRole('status').textContent).toContain(SCOPE_UNAVAILABLE));
-    expect(getByText('Stats appear after your first session.')).toBeTruthy();
+    expect(getByText(t('stats_empty'))).toBeTruthy();
     const scopeRegion: HTMLElement = getByRole('status');
-    fireEvent.click(getByRole('button', { name: 'Retry scope check' }));
+    fireEvent.click(getByRole('button', { name: t('stats_scope_retry') }));
     expect(getByRole('status')).toBe(scopeRegion);
     expect(scopeRegion.textContent).toBe(SCOPE_LOADING);
     await waitFor((): void => expect(getByText(LOCAL_SCOPE)).toBeTruthy());
@@ -208,7 +207,7 @@ describe('Stats request errors', (): void => {
       await waitFor((): void =>
         expect(getByRole('status').textContent).toContain(SCOPE_UNAVAILABLE),
       );
-      expect(getByText('Stats appear after your first session.')).toBeTruthy();
+      expect(getByText(t('stats_empty'))).toBeTruthy();
       expect(queryByText(SYNC_SCOPE)).toBeNull();
       expect(queryByText(LOCAL_SCOPE)).toBeNull();
     },

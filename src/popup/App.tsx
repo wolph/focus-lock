@@ -9,6 +9,7 @@ import {
   useState,
 } from 'preact/hooks';
 import { DEFAULT_LISTS, DEFAULT_SETTINGS } from '../shared/constants';
+import { t, uiLanguage } from '../shared/i18n';
 import { sendRequest } from '../shared/messages';
 import { WEBSITE_ORIGINS } from '../shared/permissions';
 import {
@@ -37,14 +38,24 @@ import { CATEGORIES_LOCKED_COPY } from './RuleSummary';
 import { type StartFeedback, StartForm } from './StartForm';
 import { useSnapshot } from './use-snapshot';
 
-const DAY_NAMES: readonly string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+/**
+ * The short weekday name in the UI language. Intl carries every locale's own abbreviations, so
+ * the footer needs no weekday messages, and a locale Intl refuses leaves the day out entirely,
+ * exactly as an out-of-range index did before.
+ */
+function weekdayName(date: Date): string {
+  try {
+    return new Intl.DateTimeFormat(uiLanguage(), { weekday: 'short' }).format(date);
+  } catch {
+    return '';
+  }
+}
 
 function formatNextSchedule(startsAt: number): string {
   const d: Date = new Date(startsAt);
-  const day: string = DAY_NAMES[d.getDay()] ?? '';
   const hh: string = String(d.getHours()).padStart(2, '0');
   const mm: string = String(d.getMinutes()).padStart(2, '0');
-  return `next: ${day} ${hh}:${mm}`;
+  return t('popup_next_schedule', { DAY: weekdayName(d), TIME: `${hh}:${mm}` });
 }
 
 function PadlockGlyph(): VNode {
@@ -63,38 +74,35 @@ function PadlockGlyph(): VNode {
 }
 
 function Header(): VNode {
-  const [pending, setPending]: [string | null, Dispatch<StateUpdater<string | null>>] = useState<
-    string | null
-  >(null);
+  const [pending, setPending]: [boolean, Dispatch<StateUpdater<boolean>>] =
+    useState<boolean>(false);
   const [error, setError]: [string | null, Dispatch<StateUpdater<string | null>>] = useState<
     string | null
   >(null);
 
-  const openPage: (destination: 'Settings') => Promise<void> = async (
-    destination: 'Settings',
-  ): Promise<void> => {
+  const openSettings: () => Promise<void> = async (): Promise<void> => {
     setError(null);
-    setPending(destination);
+    setPending(true);
     try {
       await chrome.runtime.openOptionsPage();
     } catch {
-      setError(`Could not open ${destination}. Try again.`);
+      setError(t('popup_open_settings_failed'));
     } finally {
-      setPending(null);
+      setPending(false);
     }
   };
   return (
     <>
       <header class="header">
         <PadlockGlyph />
-        <h1 class="title">Focus Lock</h1>
+        <h1 class="title">{t('app_name')}</h1>
         <span class="spacer" />
         <button
           type="button"
           class="icon-button"
-          aria-label="Settings"
-          disabled={pending !== null}
-          onClick={(): void => void openPage('Settings')}
+          aria-label={t('popup_settings_button_label')}
+          disabled={pending}
+          onClick={(): void => void openSettings()}
         >
           <svg
             class="settings-cog"
@@ -184,7 +192,7 @@ function IdleView({ onStartFeedback }: { onStartFeedback: StartFeedback }): VNod
       />
       {loadError ? (
         <p class="form-error" role="alert">
-          Could not load session settings. Reload the popup to try again. Defaults are shown.
+          {t('popup_settings_load_failed')}
           {!listsEditable ? ` ${CATEGORIES_LOCKED_COPY}` : ''}
         </p>
       ) : null}
@@ -245,22 +253,22 @@ function SetupRequired(): VNode {
       if (!isAck(response)) throw new Error('invalid setup response');
       if (!response.ok) throw new Error(response.error);
     } catch {
-      setError('Could not open setup. Try again.');
+      setError(t('popup_open_setup_failed'));
     } finally {
       setPending(false);
     }
   };
   return (
     <section class="view setup-required" aria-labelledby="setup-required-heading">
-      <h2 id="setup-required-heading">Finish setting up Focus Lock</h2>
-      <p>Choose your starting lists, website access, and storage mode before starting a session.</p>
+      <h2 id="setup-required-heading">{t('popup_setup_required_heading')}</h2>
+      <p>{t('popup_setup_required_body')}</p>
       <button
         type="button"
         class="start-button"
         disabled={pending}
         onClick={(): void => void openSetup()}
       >
-        Open setup
+        {t('popup_open_setup_button')}
       </button>
       {error !== null ? (
         <p role="alert" class="form-error">
@@ -309,7 +317,7 @@ function WebsiteBlockingOff(props: {
       await chrome.permissions.request({ origins: [...WEBSITE_ORIGINS] });
       const response: unknown = await sendRequest({ type: 'reconcileWebsiteAccess' });
       if (!isWebsiteAccessReconciliation(response)) {
-        setError('Could not confirm website blocking. Try again.');
+        setError(t('popup_blocking_confirm_failed'));
         return;
       }
       const outcome: WebsiteAccessOutcome = websiteAccessOutcome(response);
@@ -342,7 +350,7 @@ function WebsiteBlockingOff(props: {
       }
       setError(outcome.error);
     } catch {
-      setError('Could not enable website blocking. Try again.');
+      setError(t('popup_blocking_enable_failed'));
     } finally {
       actionInFlight.current = false;
       setPending(false);
@@ -354,20 +362,10 @@ function WebsiteBlockingOff(props: {
       class="view setup-required website-blocking-off"
       aria-labelledby="blocking-off-heading"
     >
-      <h2 id="blocking-off-heading">Website blocking is off</h2>
-      <p>
-        Focus Lock cannot start a session until Chrome grants website access and blocking is
-        enabled.
-      </p>
-      {denied ? (
-        <p role="status">Chrome did not grant website access. Website blocking is still off.</p>
-      ) : null}
-      {registrationError ? (
-        <p role="status">
-          Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload
-          the extension.
-        </p>
-      ) : null}
+      <h2 id="blocking-off-heading">{t('popup_blocking_off_heading')}</h2>
+      <p>{t('popup_blocking_off_body')}</p>
+      {denied ? <p role="status">{t('popup_blocking_off_denied')}</p> : null}
+      {registrationError ? <p role="status">{t('popup_blocking_off_registration_error')}</p> : null}
       <button
         ref={enableButton}
         type="button"
@@ -375,7 +373,7 @@ function WebsiteBlockingOff(props: {
         disabled={pending}
         onClick={(): void => void enable()}
       >
-        {attempted ? 'Retry' : 'Enable website blocking'}
+        {attempted ? t('popup_retry_button') : t('popup_enable_blocking_button')}
       </button>
       {error !== null ? (
         <p role="alert" class="form-error">
@@ -397,15 +395,15 @@ function WebsiteAccessNotice(props: {
   >(null);
   const message: string =
     props.notice === 'revoked-during-session'
-      ? 'Your session ended because website access was removed.'
-      : 'Your session ended because Focus Lock could not enable website blocking.';
+      ? t('popup_notice_access_revoked')
+      : t('popup_notice_blocking_failed');
   const dismiss: () => Promise<void> = async (): Promise<void> => {
     setPending(true);
     setError(null);
     try {
       const response: unknown = await sendRequest({ type: 'dismissWebsiteAccessNotice' });
       if (!isAck(response)) {
-        setError('Could not dismiss this notice. Try again.');
+        setError(t('popup_dismiss_notice_failed'));
         return;
       }
       if (!response.ok) {
@@ -414,7 +412,7 @@ function WebsiteAccessNotice(props: {
       }
       props.onDismissed();
     } catch {
-      setError('Could not dismiss this notice. Try again.');
+      setError(t('popup_dismiss_notice_failed'));
     } finally {
       setPending(false);
     }
@@ -424,11 +422,11 @@ function WebsiteAccessNotice(props: {
       <span>{message}</span>
       <button
         type="button"
-        aria-label="Dismiss website access notice"
+        aria-label={t('popup_dismiss_notice_label')}
         disabled={pending}
         onClick={(): void => void dismiss()}
       >
-        Dismiss
+        {t('popup_dismiss_button')}
       </button>
       {error !== null ? <span role="alert">{error}</span> : null}
     </aside>
@@ -500,7 +498,7 @@ function BootFailed(props: { setup: SetupState; onRecovered: () => void }): VNod
       try {
         const response: unknown = await sendRequest(request);
         if (!isAck(response)) {
-          setError('Could not restart Focus Lock. Try again.');
+          setError(t('popup_restart_failed'));
           return;
         }
         if (!response.ok) {
@@ -509,7 +507,7 @@ function BootFailed(props: { setup: SetupState; onRecovered: () => void }): VNod
         }
         props.onRecovered();
       } catch {
-        setError('Could not restart Focus Lock. Try again.');
+        setError(t('popup_restart_failed'));
       } finally {
         actionInFlight.current = false;
         setPending(false);
@@ -544,11 +542,11 @@ function BootFailed(props: { setup: SetupState; onRecovered: () => void }): VNod
 
   return (
     <section class="view setup-required boot-failed" aria-labelledby="boot-failed-heading">
-      <h2 id="boot-failed-heading">Focus Lock could not start</h2>
+      <h2 id="boot-failed-heading">{t('popup_boot_failed_heading')}</h2>
       {failure !== null ? (
         <p role="status">{failure.message}</p>
       ) : reasonUnavailable ? (
-        <p role="status">The reason could not be read.</p>
+        <p role="status">{t('popup_boot_reason_unavailable')}</p>
       ) : null}
       <button
         type="button"
@@ -556,7 +554,7 @@ function BootFailed(props: { setup: SetupState; onRecovered: () => void }): VNod
         disabled={pending}
         onClick={(): void => void recover({ type: 'retryBoot' })}
       >
-        Retry
+        {t('popup_retry_button')}
       </button>
       {runtimeStage ? (
         <>
@@ -566,9 +564,9 @@ function BootFailed(props: { setup: SetupState; onRecovered: () => void }): VNod
             disabled={pending}
             onClick={(): void => void recover({ type: 'resetLocalRuntime' })}
           >
-            Reset local runtime
+            {t('popup_reset_runtime_button')}
           </button>
-          <p>Keeps your settings, lists, and statistics. Clears the current session state.</p>
+          <p>{t('popup_reset_runtime_note')}</p>
         </>
       ) : null}
       {confirmingDelete ? (
@@ -579,7 +577,7 @@ function BootFailed(props: { setup: SetupState; onRecovered: () => void }): VNod
             disabled={pending}
             onClick={(): void => void deleteAll()}
           >
-            Delete everything and start over
+            {t('popup_delete_all_confirm_button')}
           </button>
           <button
             type="button"
@@ -587,7 +585,7 @@ function BootFailed(props: { setup: SetupState; onRecovered: () => void }): VNod
             disabled={pending}
             onClick={(): void => setConfirmingDelete(false)}
           >
-            Keep my data
+            {t('popup_keep_data_button')}
           </button>
         </div>
       ) : (
@@ -597,7 +595,7 @@ function BootFailed(props: { setup: SetupState; onRecovered: () => void }): VNod
           disabled={pending}
           onClick={(): void => setConfirmingDelete(true)}
         >
-          Delete all Focus Lock data
+          {t('popup_delete_all_button')}
         </button>
       )}
       {error !== null ? (
@@ -711,9 +709,9 @@ export function App(): VNode {
       <Header />
       {setupError ? (
         <section class="view snapshot-status snapshot-status--retry" role="alert">
-          <span>Setup status unavailable. Reload Focus Lock to try again.</span>
+          <span>{t('popup_setup_status_unavailable')}</span>
           <button type="button" class="secondary-button" onClick={readSetup}>
-            Retry
+            {t('popup_retry_button')}
           </button>
         </section>
       ) : setup === null ? (
@@ -730,7 +728,7 @@ export function App(): VNode {
         <WebsiteBlockingOff setup={setup} onReconciled={setSetup} />
       ) : error ? (
         <section class="view snapshot-status" role="status">
-          Focus status unavailable
+          {t('popup_snapshot_unavailable')}
         </section>
       ) : snapshot === null ? (
         <section class="view" aria-busy="true" />

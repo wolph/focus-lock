@@ -1,0 +1,834 @@
+{
+  "options_page_title": {
+    "message": "Opcions de Focus Lock"
+  },
+  "options_heading": {
+    "message": "Configuració de Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "S'està carregant la configuració"
+  },
+  "options_privacy_loading": {
+    "message": "S'està carregant la configuració de privadesa"
+  },
+  "options_save_failed": {
+    "message": "No s'ha pogut desar. Torna-ho a provar."
+  },
+  "options_blocking_heading": {
+    "message": "Bloqueig"
+  },
+  "options_blocking_help": {
+    "message": "Les regles personalitzades bloquegen durant les sessions de llista negra. La llista blanca és el que continua accessible durant les sessions de llista blanca. Les categories incloses bloquegen els lladres de temps més habituals."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Llista negra personalitzada"
+  },
+  "options_whitelist_title": {
+    "message": "Llista blanca"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Categories incloses"
+  },
+  "options_bundled_categories_help": {
+    "message": "Llistes incloses de lladres de temps habituals. Activa una categoria sencera i després obre-la per mantenir disponibles alguns llocs concrets."
+  },
+  "options_schedule_heading": {
+    "message": "Horari"
+  },
+  "options_schedule_help": {
+    "message": "Les sessions comencen soles dins d'aquestes franges. El rigor que hi definexis s'aplica a tota la franja."
+  },
+  "options_behavior_heading": {
+    "message": "Comportament de la sessió"
+  },
+  "options_budget_heading": {
+    "message": "Crèdit d'accés a llocs"
+  },
+  "options_notifications_heading": {
+    "message": "Notificacions"
+  },
+  "options_privacy_heading": {
+    "message": "Privadesa i dades"
+  },
+  "options_load_error_retry": {
+    "message": "Torna-ho a provar"
+  },
+  "options_load_error_delete_all": {
+    "message": "Suprimeix-ho tot i torna a començar"
+  },
+  "options_load_error_keep_data": {
+    "message": "Conserva les meves dades"
+  },
+  "options_delete_all_data": {
+    "message": "Suprimeix totes les dades de Focus Lock"
+  },
+  "options_dirty_saving": {
+    "message": "S'estan desant els canvis"
+  },
+  "options_dirty_unsaved": {
+    "message": "Canvis sense desar"
+  },
+  "options_dirty_clean": {
+    "message": "Cap canvi sense desar"
+  },
+  "options_dirty_discard": {
+    "message": "Descarta els canvis"
+  },
+  "options_dirty_save": {
+    "message": "Desa els canvis"
+  },
+  "options_session_status_label": {
+    "message": "Estat de la sessió"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domini"
+  },
+  "options_rule_remove": {
+    "message": "Elimina"
+  },
+  "options_rule_remove_aria": {
+    "message": "Elimina $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Encara no hi ha cap regla."
+  },
+  "options_rule_kind_aria": {
+    "message": "Tipus de regla"
+  },
+  "options_rule_kind_host_option": {
+    "message": "domini o subdomini"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (URL completa)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Patró"
+  },
+  "options_rule_add": {
+    "message": "Afegeix una regla"
+  },
+  "options_rules_help": {
+    "message": "facebook.com cobreix aquest domini i tots els subdominis. news.ycombinator.com cobreix aquest subdomini i tot el que en depengui. /youtube\\.com\\/shorts/ coincideix amb l'URL completa com a expressió regular."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ ha de ser un nombre enter positiu.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ ha de ser un nombre enter igual o superior a zero.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ ha de ser igual o superior a zero.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ ha d'estar dins del rang de minuts admès.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ ha d'estar dins del rang de dies admès.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Valors predeterminats de la sessió"
+  },
+  "options_session_defaults_help": {
+    "message": "El mode i el rigor queden fixats quan comença una sessió. Aquests són els valors amb què s'obre el formulari d'inici."
+  },
+  "options_preset_short_label": {
+    "message": "Sessió curta predefinida (minuts)"
+  },
+  "options_preset_default_label": {
+    "message": "Sessió predefinida per defecte (minuts)"
+  },
+  "options_preset_deep_label": {
+    "message": "Sessió profunda predefinida (minuts)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Llista negra: bloqueja els llocs de la llista"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Llista blanca: permet només els llocs de la llista"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Flexible: acaba la sessió quan vulguis"
+  },
+  "options_strictness_friction_label": {
+    "message": "Fricció: acabar abans d'hora passa per la pausa de reflexió configurada"
+  },
+  "options_strictness_hard_label": {
+    "message": "Estricte: sense final anticipat, només accés temporal als llocs"
+  },
+  "options_cycle_heading": {
+    "message": "Cicle de concentració i descans"
+  },
+  "options_cycle_help": {
+    "message": "Valors predeterminats: 25 minuts de concentració, 5 minuts de descans, 15 minuts de descans llarg cada 4t cicle. En mostres d'estudi, els descansos programats superen els descansos quan et ve de gust pel que fa a l'ànim i la concentració. Els minuts exactes són convenció, no ciència."
+  },
+  "options_cycle_default_label": {
+    "message": "Alterna concentració i descansos per defecte"
+  },
+  "options_focus_minutes_label": {
+    "message": "Minuts de concentració"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Minuts de descans curt"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Minuts de descans llarg"
+  },
+  "options_long_every_label": {
+    "message": "Descans llarg cada Nè cicle"
+  },
+  "options_gate_heading": {
+    "message": "Pausa de reflexió"
+  },
+  "options_gate_help": {
+    "message": "Una espera de 10 segons amb un botó explícit per tornar a la feina redueix de manera mesurable les visites impulsives (estudi de camp, PNAS 2023). Una espera més llarga i una frase escrita en dupliquen l'efecte aproximadament."
+  },
+  "options_gate_wait_one": {
+    "message": "Espera $COUNT$ segon",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Espera $COUNT$ segons",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Personalitzat"
+  },
+  "options_custom_delay_label": {
+    "message": "Espera personalitzada (segons)"
+  },
+  "options_custom_delay_error": {
+    "message": "L'espera personalitzada ha de ser un nombre enter positiu de segons."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Demana també escriure una frase"
+  },
+  "options_gate_force_end_label": {
+    "message": "Activa el botó «Ignora l'espera i acaba igualment»"
+  },
+  "options_credit_help": {
+    "message": "El crèdit d'accés a llocs s'acumula mentre et concentres. Tant l'accés a tots els llocs com el desbloqueig d'un sol lloc es paguen del mateix saldo. Pots fer una pausa quan vulguis sense gastar crèdit."
+  },
+  "options_earn_rate_label": {
+    "message": "Minuts d'accés a llocs per cada 30 minuts de concentració"
+  },
+  "options_credit_cap_label": {
+    "message": "Límit de crèdit d'accés a llocs (minuts)"
+  },
+  "options_pause_length_label": {
+    "message": "Durada de l'accés a tots els llocs (minuts)"
+  },
+  "options_unlock_length_label": {
+    "message": "Durada del desbloqueig d'un lloc (minuts)"
+  },
+  "options_streak_heading": {
+    "message": "Ratxa i retenció"
+  },
+  "options_streak_help": {
+    "message": "La ratxa compta els dies que arriben a l'objectiu. Una sessió predeterminada manté viva la cadena, i una fitxa de congelació repara un dia perdut."
+  },
+  "options_streak_goal_label": {
+    "message": "Objectiu diari de ratxa (minuts de concentració)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Interval de fitxes de congelació (dies)"
+  },
+  "options_retention_label": {
+    "message": "Conserva les estadístiques diàries (dies)"
+  },
+  "options_category_on_announcement": {
+    "message": "Categoria $CATEGORY$ activada.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Categoria $CATEGORY$ desactivada.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Totes les categories activades."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Totes les categories desactivades."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ inclòs.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ es manté disponible.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Tots els llocs de $CATEGORY$ inclosos.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Tots els llocs de $CATEGORY$ es mantenen disponibles.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Accions massives de categories"
+  },
+  "options_selected_count": {
+    "message": "Seleccionats $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Desseleccionats $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Selecciona-ho tot"
+  },
+  "options_deselect_all": {
+    "message": "Desselecciona-ho tot"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Selecciona totes les categories"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Desselecciona totes les categories"
+  },
+  "options_show_category_sites": {
+    "message": "Mostra els llocs de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Amaga els llocs de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ lloc inclòs",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ llocs inclosos",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Categoria desactivada"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ inclòs quan s'activi",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ inclosos quan s'activi",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Desmarca un lloc per mantenir-lo disponible mentre la resta de la categoria queda bloquejada."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Accions massives dels llocs de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Selecciona tots els llocs de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Desselecciona tots els llocs de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Llocs de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "dg"
+  },
+  "options_day_mon": {
+    "message": "dl"
+  },
+  "options_day_tue": {
+    "message": "dt"
+  },
+  "options_day_wed": {
+    "message": "dc"
+  },
+  "options_day_thu": {
+    "message": "dj"
+  },
+  "options_day_fri": {
+    "message": "dv"
+  },
+  "options_day_sat": {
+    "message": "ds"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Alterna concentració i descansos"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Se solapa amb una altra entrada activada de $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Tipus de sessió"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Entrada d'horari"
+  },
+  "options_schedule_start_label": {
+    "message": "Inici"
+  },
+  "options_schedule_end_label": {
+    "message": "Final"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Durada"
+  },
+  "options_schedule_intention_label": {
+    "message": "Intenció"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "per a què és aquesta estona"
+  },
+  "options_schedule_save_entry": {
+    "message": "Desa l'entrada"
+  },
+  "options_cancel": {
+    "message": "Cancel·la"
+  },
+  "options_schedule_empty": {
+    "message": "Encara no hi ha cap sessió programada."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Dies seleccionats"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ a $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "llista negra"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "llista blanca"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "fricció"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "estricte"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Activada"
+  },
+  "options_schedule_edit": {
+    "message": "Edita"
+  },
+  "options_schedule_delete": {
+    "message": "Suprimeix"
+  },
+  "options_schedule_add": {
+    "message": "Afegeix una entrada d'horari"
+  },
+  "options_sounds_heading": {
+    "message": "Sons"
+  },
+  "options_master_volume": {
+    "message": "Volum general"
+  },
+  "options_sound_session_complete": {
+    "message": "Sessió completada"
+  },
+  "options_sound_break_start": {
+    "message": "Inici del descans"
+  },
+  "options_sound_break_end": {
+    "message": "Final del descans"
+  },
+  "options_sound_schedule_start": {
+    "message": "Inici automàtic per horari"
+  },
+  "options_sound_preview_aria": {
+    "message": "Escolta $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Reprodueix"
+  },
+  "options_sound_preview_error": {
+    "message": "No s'ha pogut reproduir el so. Torna-ho a provar."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Notificacions"
+  },
+  "options_session_complete_notification": {
+    "message": "Mostra una notificació del sistema quan acabi una sessió"
+  },
+  "options_badge_heading": {
+    "message": "Distintiu"
+  },
+  "options_badge_countdown": {
+    "message": "Mostra el temps restant a la icona de la barra d'eines"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Accés als llocs web"
+  },
+  "options_privacy_website_off_title": {
+    "message": "L'accés als llocs web està desactivat"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock no pot bloquejar llocs web fins que hi concedeixis accés."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Activa el bloqueig de llocs web"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "L'accés als llocs web està concedit, però el bloqueig no està actiu"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome ha concedit l'accés, però Focus Lock no ha pogut registrar el seu script de bloqueig."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Torna a provar el bloqueig de llocs web"
+  },
+  "options_privacy_website_on_title": {
+    "message": "El bloqueig de llocs web està activat"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock pot aplicar les teves regles de bloqueig actives a les pàgines web normals."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Vols suprimir l'historial local?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Confirma la supressió de l'historial local"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Historial local suprimit."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Això suprimeix permanentment d'aquest dispositiu les URL completes, les intencions de concentració i els esdeveniments detallats de les sessions. No esborra cap sessió en curs, que conserva la seva intenció i l'adreça de cada pestanya que bloqueja. Acabar la sessió esborra la intenció i inicia una neteja que buida totes les pestanyes web obertes, i la neteja elimina totes les adreces desades quan acaba."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Això suprimeix permanentment d'aquest dispositiu les URL completes, les intencions de concentració i els esdeveniments detallats de les sessions, a més de les estadístiques agregades només locals. No esborra cap sessió en curs, que conserva la seva intenció i l'adreça de cada pestanya que bloqueja. Acabar la sessió esborra la intenció i inicia una neteja que buida totes les pestanyes web obertes, i la neteja elimina totes les adreces desades quan acaba."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Vols suprimir les dades remotes de Sync?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Confirma la supressió de les dades remotes de Sync"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Dades remotes de Chrome Sync suprimides."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Això suprimeix permanentment de Chrome Sync la configuració remota, les llistes de bloqueig i de permesos, el crèdit d'accés a llocs, les ratxes i els agregats d'intents bloquejats per domini. La configuració i les estadístiques locals es queden en aquest dispositiu."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Vols suprimir totes les dades de Focus Lock?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Confirma la supressió de totes les dades de Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Totes les dades de Focus Lock s'han suprimit."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Això suprimeix permanentment totes les dades de Focus Lock d'aquest dispositiu i qualsevol còpia de Focus Lock que quedi a Chrome Sync:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Suprimir-ho tot només és possible mentre no hi hagi cap sessió en curs. Focus Lock torna llavors a la configuració inicial."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "No s'ha pogut suprimir l'historial local. Torna-ho a provar."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "No s'han pogut suprimir les dades remotes de Chrome Sync. Torna-ho a provar."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "No s'han pogut suprimir totes les dades de Focus Lock. Torna-ho a provar."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync no ha pogut desar els teus últims canvis. La còpia local està segura."
+  },
+  "options_privacy_error_request": {
+    "message": "No s'ha pogut completar la sol·licitud. Torna-ho a provar."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Accés als llocs web actualitzat."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "No s'ha concedit l'accés als llocs web."
+  },
+  "options_privacy_error_website_access": {
+    "message": "No s'ha pogut actualitzar l'accés als llocs web. Torna-ho a provar."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Bloqueig de llocs web activat."
+  },
+  "options_privacy_error_export": {
+    "message": "No s'ha pogut exportar el registre d'esdeveniments."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "No s'ha pogut exportar el registre d'esdeveniments. Torna-ho a provar."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "No s'ha pogut obrir la configuració de permisos de Chrome. Torna-ho a provar."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "S'ha obert la configuració de permisos de Chrome."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Obre la configuració de permisos de Chrome"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Sincronitza les dades de Focus Lock entre dispositius de Chrome"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync activat."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync desactivat."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync encara està desant els teus últims canvis."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync està activat."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync està desactivat."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Canvis de Chrome Sync desats."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Torna a provar d'activar Chrome Sync"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Torna a provar Chrome Sync"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Sincronitzat"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Només local"
+  },
+  "options_privacy_developer_note": {
+    "message": "No s'envia res al desenvolupador de Focus Lock."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Registre d'esdeveniments local"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Exporta el registre local detallat o suprimeix l'historial local de navegació i de sessions."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Exporta el registre d'esdeveniments local"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Registre d'esdeveniments local exportat."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Suprimeix l'historial local"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Dades remotes de Sync"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Suprimeix les còpies de Focus Lock que queden a Chrome Sync sense canviar aquest dispositiu."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Suprimeix les dades remotes de Sync"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Totes les dades de Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Suprimeix tots els registres de Focus Lock d'aquest dispositiu i qualsevol còpia de Focus Lock que quedi a Chrome Sync, i torna a començar des de la configuració inicial. Disponible mentre no hi hagi cap sessió en curs."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Es reprèn la supressió de totes les dades de Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Torna a provar la supressió de l'historial local"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Torna a provar la supressió remota de Sync"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Torna a provar la supressió de totes les dades"
+  },
+  "options_error_load": {
+    "message": "No s'ha pogut carregar la configuració. Recarrega la pàgina per tornar-ho a provar."
+  },
+  "options_error_retry_boot": {
+    "message": "No s'ha pogut reiniciar Focus Lock. Torna-ho a provar."
+  },
+  "options_error_refresh_privacy": {
+    "message": "No s'ha pogut actualitzar la configuració de privadesa. Recarrega la pàgina."
+  },
+  "options_error_website_blocking": {
+    "message": "No s'ha pogut actualitzar el bloqueig de llocs web. Torna-ho a provar."
+  },
+  "options_error_change_sync": {
+    "message": "No s'ha pogut canviar Chrome Sync. Torna-ho a provar."
+  },
+  "options_error_retry_sync": {
+    "message": "No s'ha pogut tornar a provar Chrome Sync. Torna-ho a provar."
+  },
+  "options_error_save_settings": {
+    "message": "No s'ha pogut desar la configuració. Recarrega la pàgina i torna-ho a provar."
+  },
+  "options_error_save_lists": {
+    "message": "No s'han pogut desar les llistes. Recarrega la pàgina i torna-ho a provar."
+  }
+}

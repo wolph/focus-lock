@@ -317,7 +317,7 @@ button.danger:disabled {
 
 .privacy-data-scope ul {
   margin: 6px 0 0;
-  padding-left: 20px;
+  padding-inline-start: 20px;
 }
 
 .privacy-developer-note {
@@ -415,7 +415,7 @@ table.rules {
 
 table.rules td,
 table.rules th {
-  text-align: left;
+  text-align: start;
   padding: 6px 8px;
   border-bottom: 1px solid var(--border);
 }
@@ -521,7 +521,7 @@ table.rules th {
 }
 
 .cat-site-actions {
-  margin-left: 28px;
+  margin-inline-start: 28px;
 }
 
 .cat-hosts {

@@ -1,0 +1,930 @@
+{
+  "options_page_title": {
+    "message": "Focus Lock options",
+    "description": "Browser tab title of the Settings page."
+  },
+  "options_heading": {
+    "message": "Focus Lock settings",
+    "description": "Main heading at the top of the Settings page."
+  },
+  "options_loading_settings": {
+    "message": "Loading settings",
+    "description": "Placeholder shown on the Settings page while the stored settings are being read."
+  },
+  "options_privacy_loading": {
+    "message": "Loading privacy settings",
+    "description": "Placeholder in the Privacy and data section while the privacy state is being read."
+  },
+  "options_save_failed": {
+    "message": "Could not save. Try again.",
+    "description": "Error under the save bar when saving the current Settings section failed."
+  },
+  "options_blocking_heading": {
+    "message": "Blocking",
+    "description": "Heading of the Settings section that holds the block and allow lists."
+  },
+  "options_blocking_help": {
+    "message": "Custom rules block during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories block common time sinks.",
+    "description": "Introduction under the Blocking heading in Settings."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Custom blacklist",
+    "description": "Heading of the rules table holding the sites the person added themselves."
+  },
+  "options_whitelist_title": {
+    "message": "Whitelist",
+    "description": "Heading of the rules table holding the sites that stay reachable in a whitelist session."
+  },
+  "options_bundled_categories_heading": {
+    "message": "Bundled categories",
+    "description": "Heading of the ready-made site category lists shipped with the extension."
+  },
+  "options_bundled_categories_help": {
+    "message": "Bundled lists of common time sinks. Toggle a whole category, then open it to keep single sites available.",
+    "description": "Introduction under the Bundled categories heading in Settings."
+  },
+  "options_schedule_heading": {
+    "message": "Schedule",
+    "description": "Heading of the Settings section holding the recurring session windows."
+  },
+  "options_schedule_help": {
+    "message": "Sessions start on their own inside these windows. Strictness set here applies for the whole window.",
+    "description": "Introduction under the Schedule heading in Settings."
+  },
+  "options_behavior_heading": {
+    "message": "Session behavior",
+    "description": "Heading of the Settings section holding the defaults a new session opens with."
+  },
+  "options_budget_heading": {
+    "message": "Site access credit",
+    "description": "Heading of the Settings section holding the earned credit that buys access to blocked sites."
+  },
+  "options_notifications_heading": {
+    "message": "Notifications",
+    "description": "Heading of the Settings section holding sounds, notifications, and the toolbar badge."
+  },
+  "options_privacy_heading": {
+    "message": "Privacy and data",
+    "description": "Heading of the Settings section holding storage, export, and deletion controls."
+  },
+  "options_load_error_retry": {
+    "message": "Retry",
+    "description": "Button that starts the background worker again after Settings failed to load."
+  },
+  "options_load_error_delete_all": {
+    "message": "Delete everything and start over",
+    "description": "Button that confirms deleting all data when no retry fixes the broken profile."
+  },
+  "options_load_error_keep_data": {
+    "message": "Keep my data",
+    "description": "Button that cancels the delete-everything confirmation on the Settings load error."
+  },
+  "options_delete_all_data": {
+    "message": "Delete all Focus Lock data",
+    "description": "Button that opens the confirmation for deleting every piece of extension data."
+  },
+  "options_dirty_saving": {
+    "message": "Saving changes",
+    "description": "Status in the save bar while the current section is being written."
+  },
+  "options_dirty_unsaved": {
+    "message": "Unsaved changes",
+    "description": "Status in the save bar when the current section has edits that are not written yet."
+  },
+  "options_dirty_clean": {
+    "message": "No unsaved changes",
+    "description": "Status in the save bar when the current section matches what is stored."
+  },
+  "options_dirty_discard": {
+    "message": "Discard changes",
+    "description": "Button in the save bar that throws away the edits of the current section."
+  },
+  "options_dirty_save": {
+    "message": "Save changes",
+    "description": "Button in the save bar that writes the edits of the current section."
+  },
+  "options_session_status_label": {
+    "message": "Session status",
+    "description": "Label of the read-only running-session line at the top of Settings."
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domain",
+    "description": "Badge on a rules table row whose pattern is a domain name."
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex",
+    "description": "Badge on a rules table row whose pattern is a regular expression."
+  },
+  "options_rule_remove": {
+    "message": "Remove",
+    "description": "Button that deletes one row from a rules table."
+  },
+  "options_rule_remove_aria": {
+    "message": "Remove $PATTERN$",
+    "description": "Screen reader label of the button that deletes one rule. PATTERN holds the rule as it is shown, for example facebook.com.",
+    "placeholders": { "PATTERN": { "content": "$1", "example": "facebook.com" } }
+  },
+  "options_rules_empty": {
+    "message": "No rules yet.",
+    "description": "Placeholder shown in place of a rules table that holds no rules."
+  },
+  "options_rule_kind_aria": {
+    "message": "Rule kind",
+    "description": "Screen reader label of the dropdown that picks between a domain rule and a regex rule."
+  },
+  "options_rule_kind_host_option": {
+    "message": "domain or subdomain",
+    "description": "Dropdown option for a rule that matches a domain name and everything under it."
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (full URL)",
+    "description": "Dropdown option for a rule that matches the whole address as a regular expression."
+  },
+  "options_rule_pattern_aria": {
+    "message": "Pattern",
+    "description": "Screen reader label of the text field that takes a new rule."
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com",
+    "description": "Greyed-out example in the rule field while a domain rule is selected. Replace it with a site that is a common distraction in your language if that reads better."
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/",
+    "description": "Greyed-out example in the rule field while a regex rule is selected. It is a regular expression and should stay as it is."
+  },
+  "options_rule_add": {
+    "message": "Add rule",
+    "description": "Button that adds the typed pattern to the rules table above it."
+  },
+  "options_rules_help": {
+    "message": "facebook.com covers that domain and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/shorts/ matches the full URL as a regular expression.",
+    "description": "Explanation under a rules table. The three examples are literal patterns and stay as they are."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ must be a positive whole number.",
+    "description": "Error under a number field that takes only whole numbers above zero. LABEL holds that field's own label, for example Focus minutes.",
+    "placeholders": { "LABEL": { "content": "$1", "example": "Focus minutes" } }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ must be a whole number of zero or greater.",
+    "description": "Error under a number field that takes whole numbers including zero. LABEL holds that field's own label.",
+    "placeholders": {
+      "LABEL": { "content": "$1", "example": "Site access credit limit (minutes)" }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ must be zero or greater.",
+    "description": "Error under a number field that takes fractions including zero. LABEL holds that field's own label.",
+    "placeholders": {
+      "LABEL": { "content": "$1", "example": "Minutes of site access per 30 minutes of focus" }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ must be within the supported minute range.",
+    "description": "Error under a duration field whose value is outside the minutes the extension supports. LABEL holds that field's own label.",
+    "placeholders": { "LABEL": { "content": "$1", "example": "Short session preset (minutes)" } }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ must be within the supported day range.",
+    "description": "Error under a field counting days whose value is outside the days the extension supports. LABEL holds that field's own label.",
+    "placeholders": { "LABEL": { "content": "$1", "example": "Keep daily stats (days)" } }
+  },
+  "options_session_defaults_heading": {
+    "message": "Session defaults",
+    "description": "Heading of the group holding the values the start form opens with."
+  },
+  "options_session_defaults_help": {
+    "message": "Mode and strictness are fixed when a session starts. These are the values the start form opens with.",
+    "description": "Explanation under the Session defaults heading."
+  },
+  "options_preset_short_label": {
+    "message": "Short session preset (minutes)",
+    "description": "Label of the field holding the first of three duration buttons on the start form."
+  },
+  "options_preset_default_label": {
+    "message": "Default session preset (minutes)",
+    "description": "Label of the field holding the middle of three duration buttons on the start form."
+  },
+  "options_preset_deep_label": {
+    "message": "Deep session preset (minutes)",
+    "description": "Label of the field holding the longest of three duration buttons on the start form."
+  },
+  "options_mode_blacklist_label": {
+    "message": "Blacklist: block listed sites",
+    "description": "Radio label for the session mode that blocks the listed sites and allows the rest."
+  },
+  "options_mode_whitelist_label": {
+    "message": "Whitelist: allow only listed sites",
+    "description": "Radio label for the session mode that allows only the listed sites and blocks the rest."
+  },
+  "options_strictness_flexible_label": {
+    "message": "Flexible: end the session whenever you choose",
+    "description": "Radio label for the session type that can be stopped at any moment."
+  },
+  "options_strictness_friction_label": {
+    "message": "Friction: stopping early uses the configured deliberation gate",
+    "description": "Radio label for the session type that puts a waiting step in front of an early stop."
+  },
+  "options_strictness_hard_label": {
+    "message": "Hard: no early end, temporary site access only",
+    "description": "Radio label for the session type that cannot be stopped before its end."
+  },
+  "options_cycle_heading": {
+    "message": "Focus and break cycle",
+    "description": "Heading of the group holding the focus and break lengths."
+  },
+  "options_cycle_help": {
+    "message": "Defaults: 25 minute focus, 5 minute break, 15 minute long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact minutes are convention, not science.",
+    "description": "Explanation under the Focus and break cycle heading."
+  },
+  "options_cycle_default_label": {
+    "message": "Cycle focus and breaks by default",
+    "description": "Checkbox that turns the focus and break cycle on for every new session."
+  },
+  "options_focus_minutes_label": {
+    "message": "Focus minutes",
+    "description": "Label of the field holding the length of one focus block."
+  },
+  "options_short_break_minutes_label": {
+    "message": "Short break minutes",
+    "description": "Label of the field holding the length of the break between focus blocks."
+  },
+  "options_long_break_minutes_label": {
+    "message": "Long break minutes",
+    "description": "Label of the field holding the length of the longer break taken every few cycles."
+  },
+  "options_long_every_label": {
+    "message": "Long break every Nth cycle",
+    "description": "Label of the field holding how many cycles pass between long breaks. N stands for that number."
+  },
+  "options_gate_heading": {
+    "message": "Deliberation gate",
+    "description": "Heading of the group holding the waiting step in front of stopping a session early."
+  },
+  "options_gate_help": {
+    "message": "A 10 second wait with an explicit back-to-work button measurably reduces impulse visits (field study, PNAS 2023). The longer wait and the typed sentence roughly double the effect.",
+    "description": "Explanation under the Deliberation gate heading. PNAS is the name of a journal and stays as it is."
+  },
+  "options_gate_wait_one": {
+    "message": "Wait $COUNT$ second",
+    "description": "Radio label for one of the fixed waiting times of the deliberation gate. Singular. COUNT holds the number of seconds.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "1" } }
+  },
+  "options_gate_wait_other": {
+    "message": "Wait $COUNT$ seconds",
+    "description": "Radio label for one of the fixed waiting times of the deliberation gate. Plural, used for 0, 10, and 30. COUNT holds the number of seconds.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "10" } }
+  },
+  "options_gate_wait_custom": {
+    "message": "Custom",
+    "description": "Radio label that selects a waiting time typed into the field below it."
+  },
+  "options_custom_delay_label": {
+    "message": "Custom delay (seconds)",
+    "description": "Label of the field holding a waiting time of the person's own choosing."
+  },
+  "options_custom_delay_error": {
+    "message": "Custom delay must be a positive whole number of seconds.",
+    "description": "Error under the custom waiting time field when the typed value is not a whole number above zero."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Also require typing a sentence",
+    "description": "Checkbox that adds a sentence the person must type before a session can be stopped early."
+  },
+  "options_gate_force_end_label": {
+    "message": "Enable \"Ignore timeout and end anyway\" button",
+    "description": "Checkbox that shows an escape button on the waiting step. The quoted text is the label of that button."
+  },
+  "options_credit_help": {
+    "message": "Site access credit accrues while you focus. Both access to all sites and a single-site unlock spend from the same balance. You can step away at any time without spending credit.",
+    "description": "Explanation at the top of the Site access credit section."
+  },
+  "options_earn_rate_label": {
+    "message": "Minutes of site access per 30 minutes of focus",
+    "description": "Label of the field holding how much credit half an hour of focus earns."
+  },
+  "options_credit_cap_label": {
+    "message": "Site access credit limit (minutes)",
+    "description": "Label of the field holding the largest credit balance that can be saved up."
+  },
+  "options_pause_length_label": {
+    "message": "All-site access length (minutes)",
+    "description": "Label of the field holding how long one purchase of access to every site lasts."
+  },
+  "options_unlock_length_label": {
+    "message": "Site unlock length (minutes)",
+    "description": "Label of the field holding how long one purchase of access to a single site lasts."
+  },
+  "options_streak_heading": {
+    "message": "Streak and retention",
+    "description": "Heading of the group holding the daily goal and how long statistics are kept."
+  },
+  "options_streak_help": {
+    "message": "The streak counts days that reach the goal. One default session keeps the chain alive, and a freeze token repairs a missed day.",
+    "description": "Explanation under the Streak and retention heading."
+  },
+  "options_streak_goal_label": {
+    "message": "Daily streak goal (focus minutes)",
+    "description": "Label of the field holding how many focused minutes a day must reach to count."
+  },
+  "options_freeze_interval_label": {
+    "message": "Freeze token interval (days)",
+    "description": "Label of the field holding how often a token that repairs a missed day is granted."
+  },
+  "options_retention_label": {
+    "message": "Keep daily stats (days)",
+    "description": "Label of the field holding how many days of statistics are kept before deletion."
+  },
+  "options_category_on_announcement": {
+    "message": "$CATEGORY$ category on.",
+    "description": "Screen reader announcement after a bundled category is switched on. CATEGORY holds the category name, for example Social.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_category_off_announcement": {
+    "message": "$CATEGORY$ category off.",
+    "description": "Screen reader announcement after a bundled category is switched off. CATEGORY holds the category name, for example Social.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "All categories on.",
+    "description": "Screen reader announcement after every bundled category is switched on at once."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "All categories off.",
+    "description": "Screen reader announcement after every bundled category is switched off at once."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ included.",
+    "description": "Screen reader announcement after one site is put back under its blocking category. HOST holds the site address.",
+    "placeholders": { "HOST": { "content": "$1", "example": "reddit.com" } }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ kept available.",
+    "description": "Screen reader announcement after one site is excused from its blocking category. HOST holds the site address.",
+    "placeholders": { "HOST": { "content": "$1", "example": "reddit.com" } }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "All $CATEGORY$ sites included.",
+    "description": "Screen reader announcement after every site of one category is put back under blocking. CATEGORY holds the category name.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "All $CATEGORY$ sites kept available.",
+    "description": "Screen reader announcement after every site of one category is excused from blocking. CATEGORY holds the category name.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Category bulk actions",
+    "description": "Screen reader label of the row of buttons that select or deselect every bundled category."
+  },
+  "options_selected_count": {
+    "message": "Selected $COUNT$",
+    "description": "Counter of how many categories or sites are currently selected. COUNT holds the number.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "7" } }
+  },
+  "options_deselected_count": {
+    "message": "Deselected $COUNT$",
+    "description": "Counter of how many categories or sites are currently deselected. COUNT holds the number.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "3" } }
+  },
+  "options_select_all": {
+    "message": "Select all",
+    "description": "Button that selects every category, or every site of one category."
+  },
+  "options_deselect_all": {
+    "message": "Deselect all",
+    "description": "Button that deselects every category, or every site of one category."
+  },
+  "options_select_all_categories_aria": {
+    "message": "Select all categories",
+    "description": "Screen reader label of the Select all button above the bundled categories."
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Deselect all categories",
+    "description": "Screen reader label of the Deselect all button above the bundled categories."
+  },
+  "options_show_category_sites": {
+    "message": "Show $CATEGORY$ sites",
+    "description": "Button that opens one bundled category to show the sites in it. CATEGORY holds the category name.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_hide_category_sites": {
+    "message": "Hide $CATEGORY$ sites",
+    "description": "Button that closes one bundled category again. CATEGORY holds the category name.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ site included",
+    "description": "State line under an enabled category. Singular. COUNT holds how many of its sites are blocked.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "1" } }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ sites included",
+    "description": "State line under an enabled category. Plural. COUNT holds how many of its sites are blocked.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "12" } }
+  },
+  "options_category_off": {
+    "message": "Category off",
+    "description": "State line under a bundled category that is switched off."
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ included when enabled",
+    "description": "State line under a switched-off category. Singular. COUNT holds how many of its sites would be blocked.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "1" } }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ included when enabled",
+    "description": "State line under a switched-off category. Plural. COUNT holds how many of its sites would be blocked.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "12" } }
+  },
+  "options_category_uncheck_help": {
+    "message": "Uncheck a site to keep it available while the rest of the category is blocked.",
+    "description": "Explanation shown when a bundled category is opened to show its sites."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ site bulk actions",
+    "description": "Screen reader label of the buttons that select or deselect every site of one open category. CATEGORY holds the category name.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Select all $CATEGORY$ sites",
+    "description": "Screen reader label of the Select all button inside one open category. CATEGORY holds the category name.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Deselect all $CATEGORY$ sites",
+    "description": "Screen reader label of the Deselect all button inside one open category. CATEGORY holds the category name.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$ sites",
+    "description": "Screen reader label of the scrolling list of sites inside one open category. CATEGORY holds the category name.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+  },
+  "options_day_sun": {
+    "message": "Sun",
+    "description": "Sunday, abbreviated to fit a small day button in the schedule."
+  },
+  "options_day_mon": {
+    "message": "Mon",
+    "description": "Monday, abbreviated to fit a small day button in the schedule."
+  },
+  "options_day_tue": {
+    "message": "Tue",
+    "description": "Tuesday, abbreviated to fit a small day button in the schedule."
+  },
+  "options_day_wed": {
+    "message": "Wed",
+    "description": "Wednesday, abbreviated to fit a small day button in the schedule."
+  },
+  "options_day_thu": {
+    "message": "Thu",
+    "description": "Thursday, abbreviated to fit a small day button in the schedule."
+  },
+  "options_day_fri": {
+    "message": "Fri",
+    "description": "Friday, abbreviated to fit a small day button in the schedule."
+  },
+  "options_day_sat": {
+    "message": "Sat",
+    "description": "Saturday, abbreviated to fit a small day button in the schedule."
+  },
+  "options_schedule_cycles_label": {
+    "message": "Cycle focus and breaks",
+    "description": "Checkbox in the schedule entry form that turns the focus and break cycle on for that entry."
+  },
+  "options_schedule_overlap_error": {
+    "message": "Overlaps another enabled entry on $DAY$.",
+    "description": "Error when a schedule entry shares a time with another one. DAY holds the abbreviated weekday, for example Mon.",
+    "placeholders": { "DAY": { "content": "$1", "example": "Mon" } }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Session type",
+    "description": "Screen reader label of the strictness radio group in the schedule entry form."
+  },
+  "options_schedule_entry_legend": {
+    "message": "Schedule entry",
+    "description": "Caption of the form that adds or edits one recurring session window."
+  },
+  "options_schedule_start_label": {
+    "message": "Start",
+    "description": "Label of the clock time a scheduled window opens at."
+  },
+  "options_schedule_end_label": {
+    "message": "End",
+    "description": "Label of the clock time a scheduled window closes at."
+  },
+  "options_schedule_duration_legend": {
+    "message": "Duration",
+    "description": "Caption of the radio group choosing how long a scheduled session runs."
+  },
+  "options_schedule_intention_label": {
+    "message": "Intention",
+    "description": "Label of the field holding what the scheduled time is meant for."
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "what this time is for",
+    "description": "Greyed-out example in the intention field of a schedule entry."
+  },
+  "options_schedule_save_entry": {
+    "message": "Save entry",
+    "description": "Button that keeps the schedule entry being edited."
+  },
+  "options_cancel": {
+    "message": "Cancel",
+    "description": "Button that closes a form or a dialog without doing anything."
+  },
+  "options_schedule_empty": {
+    "message": "No scheduled sessions yet.",
+    "description": "Placeholder shown in place of the schedule list when nothing is scheduled."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Selected days",
+    "description": "Screen reader label of the weekday badges on a saved schedule entry."
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ to $END$",
+    "description": "The clock times of a saved schedule entry. START and END hold the times as the browser formats them.",
+    "placeholders": {
+      "START": { "content": "$1", "example": "09:00" },
+      "END": { "content": "$2", "example": "12:00" }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "blacklist",
+    "description": "Mode shown on a saved schedule entry: the listed sites are blocked. Lower case, it sits in a row of short values."
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "whitelist",
+    "description": "Mode shown on a saved schedule entry: only the listed sites are allowed. Lower case, it sits in a row of short values."
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "flexible",
+    "description": "Session type shown on a saved schedule entry: it can be stopped at any moment. Lower case, it sits in a row of short values."
+  },
+  "options_schedule_strictness_friction": {
+    "message": "friction",
+    "description": "Session type shown on a saved schedule entry: stopping early goes through a waiting step. Lower case, it sits in a row of short values."
+  },
+  "options_schedule_strictness_hard": {
+    "message": "hard",
+    "description": "Session type shown on a saved schedule entry: it cannot be stopped early. Lower case, it sits in a row of short values."
+  },
+  "options_schedule_enabled_label": {
+    "message": "Enabled",
+    "description": "Checkbox that decides whether one saved schedule entry runs."
+  },
+  "options_schedule_edit": {
+    "message": "Edit",
+    "description": "Button that opens one saved schedule entry for editing."
+  },
+  "options_schedule_delete": {
+    "message": "Delete",
+    "description": "Button that removes one saved schedule entry."
+  },
+  "options_schedule_add": {
+    "message": "Add schedule entry",
+    "description": "Button that opens an empty form for a new recurring session window."
+  },
+  "options_sounds_heading": {
+    "message": "Sounds",
+    "description": "Heading of the group holding the volume and the per-event sound switches."
+  },
+  "options_master_volume": {
+    "message": "Master volume",
+    "description": "Label of the slider setting the volume of every sound the extension plays."
+  },
+  "options_sound_session_complete": {
+    "message": "Session complete",
+    "description": "Name of the sound played when a focus session reaches its end."
+  },
+  "options_sound_break_start": {
+    "message": "Break start",
+    "description": "Name of the sound played when a break begins."
+  },
+  "options_sound_break_end": {
+    "message": "Break end",
+    "description": "Name of the sound played when a break ends."
+  },
+  "options_sound_schedule_start": {
+    "message": "Schedule auto-start",
+    "description": "Name of the sound played when the schedule starts a session on its own."
+  },
+  "options_sound_preview_aria": {
+    "message": "Preview $SOUND$",
+    "description": "Screen reader label of the button that plays one sound once. SOUND holds that sound's name, for example Break start.",
+    "placeholders": { "SOUND": { "content": "$1", "example": "Break start" } }
+  },
+  "options_sound_play": {
+    "message": "Play",
+    "description": "Button that plays one sound once so it can be heard."
+  },
+  "options_sound_preview_error": {
+    "message": "Could not preview the sound. Try again.",
+    "description": "Error shown when playing a sound once failed."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Notifications",
+    "description": "Heading of the group holding the system notification switch, inside the Notifications section."
+  },
+  "options_session_complete_notification": {
+    "message": "Show a system notification when a session completes",
+    "description": "Checkbox that turns on the operating system notification at the end of a session."
+  },
+  "options_badge_heading": {
+    "message": "Badge",
+    "description": "Heading of the group holding the small label drawn on the toolbar icon."
+  },
+  "options_badge_countdown": {
+    "message": "Show the remaining time on the toolbar icon",
+    "description": "Checkbox that draws the time left in the session on the toolbar icon."
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Website access",
+    "description": "Heading of the privacy card holding the browser permission that lets the extension block sites."
+  },
+  "options_privacy_website_off_title": {
+    "message": "Website access is off",
+    "description": "State line of the website access card when the browser permission was not granted."
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock cannot block websites until you grant access.",
+    "description": "Explanation under the website access state when the permission is missing."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Enable website blocking",
+    "description": "Button that asks the browser for the permission that lets the extension block sites."
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Website access is granted, but blocking is not active",
+    "description": "State line of the website access card when the permission is there but blocking did not start."
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome granted access, but Focus Lock could not register its blocking script.",
+    "description": "Explanation under the website access state when the permission is there but blocking did not start."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Retry website blocking",
+    "description": "Button that tries to start blocking again after the permission was already granted."
+  },
+  "options_privacy_website_on_title": {
+    "message": "Website blocking is enabled",
+    "description": "State line of the website access card when everything is in place."
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock can apply your active blocking rules on regular website pages.",
+    "description": "Explanation under the website access state when everything is in place."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Delete local history?",
+    "description": "Title of the dialog confirming deletion of the detailed history kept on this device."
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Confirm delete local history",
+    "description": "Button in the dialog that carries out the deletion of the local history."
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Local history deleted.",
+    "description": "Announcement after the local history was deleted."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Ending the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes.",
+    "description": "Body of the local history deletion dialog while statistics are also stored elsewhere."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device, plus local-only aggregate statistics. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Ending the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes.",
+    "description": "Body of the local history deletion dialog while the summary statistics live only on this device, so they go too."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Delete remote Sync data?",
+    "description": "Title of the dialog confirming deletion of the copies left in Chrome Sync."
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Confirm delete remote Sync data",
+    "description": "Button in the dialog that carries out the deletion of the Chrome Sync copies."
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Remote Chrome Sync data deleted.",
+    "description": "Announcement after the copies in Chrome Sync were deleted."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "This permanently deletes remote settings, block and allow lists, site access credit, streaks, and domain-level blocked-attempt aggregates from Chrome Sync. Local settings and statistics stay on this device.",
+    "description": "Body of the dialog confirming deletion of the copies left in Chrome Sync."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Delete all Focus Lock data?",
+    "description": "Title of the dialog confirming deletion of every piece of extension data."
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Confirm delete all Focus Lock data",
+    "description": "Button in the dialog that carries out the deletion of every piece of extension data."
+  },
+  "options_privacy_all_deleted": {
+    "message": "All Focus Lock data deleted.",
+    "description": "Announcement after every piece of extension data was deleted."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "This permanently deletes every piece of Focus Lock data on this device and any Focus Lock copies left in Chrome Sync:",
+    "description": "First paragraph of the delete-everything dialog, introducing the list of what goes."
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Deleting everything is available only while no session is running. Focus Lock then returns to setup.",
+    "description": "Last paragraph of the delete-everything dialog, under the list of what goes."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Local history could not be deleted. Try again.",
+    "description": "Error shown when deleting the local history failed."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Remote Chrome Sync data could not be deleted. Try again.",
+    "description": "Error shown when deleting the copies in Chrome Sync failed."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "All Focus Lock data could not be deleted. Try again.",
+    "description": "Error shown when deleting every piece of extension data failed."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync could not save your latest changes. Your local save is safe.",
+    "description": "Error shown when Chrome Sync refused a write while the copy on this device went through."
+  },
+  "options_privacy_error_request": {
+    "message": "The request could not be completed. Try again.",
+    "description": "Error shown when a privacy action could not reach the background worker."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Website access updated.",
+    "description": "Announcement after the browser granted the permission that lets the extension block sites."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Website access was not granted.",
+    "description": "Announcement after the browser permission request was turned down."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Website access could not be updated. Try again.",
+    "description": "Error shown when asking the browser for the blocking permission failed."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Website blocking enabled.",
+    "description": "Announcement after blocking started on a second attempt."
+  },
+  "options_privacy_error_export": {
+    "message": "Could not export the event log.",
+    "description": "Error shown when the background worker returned no usable event log."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Could not export the event log. Try again.",
+    "description": "Error shown when saving the exported event log to a file failed."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Could not open Chrome permission settings. Try again.",
+    "description": "Error shown when the browser's own permission page could not be opened."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome permission settings opened.",
+    "description": "Announcement after the browser's own permission page opened in a new tab."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Open Chrome permission settings",
+    "description": "Button that opens the browser's own permission page for this extension."
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync",
+    "description": "Heading of the privacy card holding the switch that copies data between devices."
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Sync Focus Lock data across Chrome devices",
+    "description": "Label of the switch that copies extension data between the person's Chrome installations."
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync enabled.",
+    "description": "Announcement after copying data between devices was turned on."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync disabled.",
+    "description": "Announcement after copying data between devices was turned off."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync is still saving your latest changes.",
+    "description": "State line while a write to Chrome Sync is still on its way."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync is on.",
+    "description": "State line of the Chrome Sync card while copying between devices is on."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync is off.",
+    "description": "State line of the Chrome Sync card while copying between devices is off."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome Sync changes saved.",
+    "description": "Announcement after a retried write to Chrome Sync went through."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Retry enabling Chrome Sync",
+    "description": "Button shown when the very first attempt to turn on Chrome Sync failed."
+  },
+  "options_privacy_retry_sync": {
+    "message": "Retry Chrome Sync",
+    "description": "Button that sends the pending changes to Chrome Sync again."
+  },
+  "options_privacy_scope_synced": {
+    "message": "Synced",
+    "description": "Heading of the list of data that is copied between devices."
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Local only",
+    "description": "Heading of the list of data that never leaves this device."
+  },
+  "options_privacy_developer_note": {
+    "message": "Nothing is sent to the Focus Lock developer.",
+    "description": "Reassurance at the bottom of the Chrome Sync card."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Local event log",
+    "description": "Heading of the privacy card holding the export and the local history deletion."
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Export the detailed local log or delete local browsing and session history.",
+    "description": "Explanation under the Local event log heading."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Export local event log",
+    "description": "Button that saves the detailed local log to a file."
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Local event log exported.",
+    "description": "Announcement after the detailed local log was saved to a file."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Delete local history",
+    "description": "Button that opens the confirmation for deleting the detailed history kept on this device."
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Remote Sync data",
+    "description": "Heading of the privacy card holding the deletion of the copies left in Chrome Sync."
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Delete the Focus Lock copies left in Chrome Sync without changing this device.",
+    "description": "Explanation under the Remote Sync data heading."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Delete remote Sync data",
+    "description": "Button that opens the confirmation for deleting the copies left in Chrome Sync."
+  },
+  "options_privacy_all_data_heading": {
+    "message": "All Focus Lock data",
+    "description": "Heading of the privacy card holding the deletion of every piece of extension data."
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Delete every Focus Lock record on this device and any Focus Lock copies left in Chrome Sync, then start again from setup. Available while no session is running.",
+    "description": "Explanation under the All Focus Lock data heading."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Resuming deletion of all Focus Lock data.",
+    "description": "Announcement after a stuck delete-everything was picked up again."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Retry local history deletion",
+    "description": "Button that tries the failed deletion of the local history again."
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Retry remote Sync deletion",
+    "description": "Button that tries the failed deletion of the Chrome Sync copies again."
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Retry all data deletion",
+    "description": "Button that tries the failed deletion of every piece of extension data again."
+  },
+  "options_error_load": {
+    "message": "Could not load settings. Reload the page to try again.",
+    "description": "Error shown in place of the Settings page when the stored settings could not be read."
+  },
+  "options_error_retry_boot": {
+    "message": "Could not restart Focus Lock. Try again.",
+    "description": "Error shown when starting the background worker again failed."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Could not refresh privacy settings. Reload the page.",
+    "description": "Error shown when the privacy state could not be read again after an action."
+  },
+  "options_error_website_blocking": {
+    "message": "Could not update website blocking. Try again.",
+    "description": "Error shown when the background worker did not answer a website blocking change."
+  },
+  "options_error_change_sync": {
+    "message": "Could not change Chrome Sync. Try again.",
+    "description": "Error shown when the background worker did not answer a Chrome Sync switch."
+  },
+  "options_error_retry_sync": {
+    "message": "Could not retry Chrome Sync. Try again.",
+    "description": "Error shown when the background worker did not answer a second attempt at Chrome Sync."
+  },
+  "options_error_save_settings": {
+    "message": "Could not save settings. Reload the page and try again.",
+    "description": "Error shown when a settings write was refused."
+  },
+  "options_error_save_lists": {
+    "message": "Could not save lists. Reload the page and try again.",
+    "description": "Error shown when a write of the block and allow lists was refused."
+  }
+}

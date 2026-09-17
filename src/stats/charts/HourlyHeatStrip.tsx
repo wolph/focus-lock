@@ -1,4 +1,5 @@
 import type { JSX } from 'preact';
+import { t, tPlural } from '../../shared/i18n';
 import type { ChartDatum } from './BarChart';
 import { ChartTable } from './ChartTable';
 
@@ -7,7 +8,7 @@ export interface HourlyHeatStripProps {
 }
 
 const HOURS_PER_DAY: number = 24;
-const ACCESSIBLE_NAME: string = '24-hour blocked-attempt heat strip';
+const ACCESSIBLE_NAME: string = t('stats_heat_strip_label');
 /** The width the bar charts open their tables at, so every chart agrees. */
 const AUTO_OPEN_BELOW_PX: number = 560;
 
@@ -50,7 +51,7 @@ export function HourlyHeatStrip(props: HourlyHeatStripProps): JSX.Element {
         data={values.map(
           (value: number, hour: number): ChartDatum => ({ label: hourLabel(hour), value }),
         )}
-        format={(value: number): string => `${value} blocked`}
+        format={(value: number): string => tPlural('stats_blocked_count', value)}
       />
     </div>
   );

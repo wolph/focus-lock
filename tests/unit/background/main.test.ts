@@ -31,6 +31,7 @@ import {
   DEFAULT_SETUP,
   rulesFromLists,
 } from '../../../src/shared/constants';
+import { t } from '../../../src/shared/i18n';
 import type { Request } from '../../../src/shared/messages';
 import { isSetupState } from '../../../src/shared/runtime-validation';
 import {
@@ -3773,7 +3774,7 @@ describe('background boot failure channel', (): void => {
     });
     await expect(dispatchRuntime({ type: 'getSettings' })).resolves.toEqual({
       ok: false,
-      error: 'Focus Lock did not finish starting: invalid local setup state',
+      error: t('notify_boot_not_finished', { REASON: 'invalid local setup state' }),
     });
     expect(routeMessage).not.toHaveBeenCalled();
     // The failure is reported when the boot settles, not once per request that hits it.
@@ -3856,7 +3857,7 @@ describe('background boot failure channel', (): void => {
     main();
     await expect(dispatchRuntime({ type: 'getSnapshot' })).resolves.toEqual({
       ok: false,
-      error: 'Focus Lock did not finish starting: recovery journal unreadable',
+      error: t('notify_boot_not_finished', { REASON: 'recovery journal unreadable' }),
     });
     const first: unknown[] | null = mocks.engineArguments;
     expect(first).not.toBeNull();
@@ -3867,7 +3868,7 @@ describe('background boot failure channel', (): void => {
     // The same fault again: the retry answers the reason rather than a false success.
     await expect(dispatchRuntime({ type: 'retryBoot' })).resolves.toEqual({
       ok: false,
-      error: 'Focus Lock did not finish starting: recovery journal unreadable',
+      error: t('notify_boot_not_finished', { REASON: 'recovery journal unreadable' }),
     });
     expect(mocks.recoverCalls).toBe(2);
 
@@ -3959,7 +3960,7 @@ describe('background boot failure channel', (): void => {
     main();
     await expect(dispatchRuntime({ type: 'resetLocalRuntime' })).resolves.toEqual({
       ok: false,
-      error: 'Focus Lock did not finish starting: invalid local setup state',
+      error: t('notify_boot_not_finished', { REASON: 'invalid local setup state' }),
     });
 
     expect(chrome.storage.local.remove).not.toHaveBeenCalledWith(
@@ -3983,7 +3984,7 @@ describe('background boot failure channel', (): void => {
     await expect(dispatchRuntime({ type: 'retryDataClear' })).resolves.toEqual({
       ok: false,
       code: 'retry-not-available',
-      error: 'Data clear retry is not available.',
+      error: t('notify_data_clear_retry_unavailable'),
     });
 
     mocks.localRemoveDropKeys = [];

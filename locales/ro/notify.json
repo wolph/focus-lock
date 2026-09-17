@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Sesiune de concentrare încheiată"
+  },
+  "notify_session_complete_body": {
+    "message": "Sesiunea ta de concentrare s-a încheiat."
+  },
+  "notify_schedule_window_body": {
+    "message": "Blocat până la $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Programul de concentrare nu a putut porni"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Blocarea site-urilor web nu este activată. Finalizează configurarea sau acordă accesul la site-uri web, apoi încearcă din nou."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Configurarea a fost finalizată în altă filă."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Configurarea s-a schimbat în altă filă. Cele mai recente opțiuni au fost reîncărcate."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Configurarea s-a schimbat în altă filă. Reîncarcă configurarea înainte de a o finaliza."
+  },
+  "notify_setup_not_complete": {
+    "message": "Configurarea nu este completă."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Configurarea nu poate fi finalizată încă."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Opțiunea de stocare a configurării s-a schimbat. Reîncarcă configurarea înainte de a o finaliza."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Operațiunea de stocare a configurării inițiale a eșuat."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Operațiunea de configurare inițială a eșuat."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock nu a putut verifica accesul la site-uri web. Reia configurarea sau reîncarcă extensia."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Accesul la site-uri web este acordat, dar Focus Lock nu a putut activa blocarea. Reia configurarea sau reîncarcă extensia."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Accesul la site-uri web nu este disponibil, iar Focus Lock nu a putut finaliza curățarea blocării. Reia configurarea sau reîncarcă extensia."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock a primit o stare inconsecventă a accesului la site-uri web. Reia configurarea sau reîncarcă extensia."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock nu a terminat pornirea: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "eroare necunoscută"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock funcționează, nu este nimic de resetat"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock nu poate reseta o stare de execuție care este încă salvată într-o generație de setări"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Reluarea ștergerii datelor nu este disponibilă."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Dezactivează sincronizarea înainte de a șterge datele sincronizate"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock încă finalizează o modificare anterioară. Încearcă din nou peste un moment."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Pauza de reflecție deschisă nu a putut fi închisă. Încearcă din nou."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Fila de lucru nu este disponibilă."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Setările depășesc limita de 8 KB a Chrome Sync. Elimină intrări din program sau scurtează intențiile, apoi încearcă din nou."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Listele depășesc limita de 8 KB a Chrome Sync. Elimină reguli personalizate sau din lista de permise, apoi încearcă din nou."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "o sesiune strictă este în curs: site-urile blocate pot fi eliminate când se încheie"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "o sesiune strictă este în curs: intrările noi din lista de permise se activează când se încheie"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "o sesiune strictă este în curs: categoriile pot fi dezactivate când se încheie"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "o sesiune strictă este în curs: excluderile noi se activează când se încheie"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "o sesiune strictă este în curs: reducerea stricteții implicite așteaptă până se încheie"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "o sesiune strictă este în curs: scurtarea așteptării de reflecție slăbește pauza"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "o sesiune strictă este în curs: eliminarea frazei tastate slăbește pauza"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "o sesiune strictă este în curs: creșterea ritmului de câștig finanțează mai multe evadări"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "o sesiune strictă este în curs: creșterea plafonului de credit finanțează mai multe evadări"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "o sesiune strictă este în curs: scurtarea pauzelor le reduce costul"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "o sesiune strictă este în curs: scurtarea deblocărilor le reduce costul"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "o sesiune strictă este în curs: intrarea sa din program nu poate fi slăbită până se încheie"
+  }
+}

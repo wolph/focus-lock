@@ -7,6 +7,7 @@
  * state, a verdict, or a view.
  */
 
+import { bidiDir, t } from '../shared/i18n';
 import { OVERLAY_STYLES } from './overlay-styles';
 
 const RING_RADIUS: number = 28;
@@ -71,8 +72,9 @@ export function padlockSvg(): SVGSVGElement {
 
 /** The shared closed-shadow host: overlay styles, dialog backdrop, and interaction trap. */
 export function mountOverlayHost(hooks: OverlayHostHooks = {}): OverlayHostElements {
+  const direction: 'ltr' | 'rtl' = bidiDir();
   const host: HTMLElement = document.createElement('focus-lock-overlay');
-  applyHostStyle(host);
+  applyHostStyle(host, direction);
   const root: ShadowRoot = host.attachShadow({ mode: 'closed' });
   const style: HTMLStyleElement = document.createElement('style');
   style.textContent = OVERLAY_STYLES;
@@ -80,7 +82,8 @@ export function mountOverlayHost(hooks: OverlayHostHooks = {}): OverlayHostEleme
   container.className = 'backdrop';
   container.setAttribute('role', 'dialog');
   container.setAttribute('aria-modal', 'true');
-  container.setAttribute('aria-label', 'Focus Lock');
+  container.setAttribute('aria-label', t('overlay_dialog_label'));
+  container.dir = direction;
   container.tabIndex = -1;
   root.append(style, container);
   trapInteraction(root, hooks);
@@ -99,13 +102,17 @@ export function unmountOverlayHost(host: HTMLElement): void {
   }
 }
 
-function applyHostStyle(host: HTMLElement): void {
+/**
+ * The overlay reads in the browser's UI language, never the blocked page's: the direction is the
+ * one Chrome reports for that language and `unicode-bidi: isolate` keeps the page from bending it.
+ */
+function applyHostStyle(host: HTMLElement, direction: 'ltr' | 'rtl'): void {
   host.style.setProperty('all', 'initial', 'important');
   host.style.setProperty('position', 'fixed', 'important');
   host.style.setProperty('inset', '0', 'important');
   host.style.setProperty('z-index', '2147483647', 'important');
   host.style.setProperty('display', 'block', 'important');
-  host.style.setProperty('direction', 'ltr', 'important');
+  host.style.setProperty('direction', direction, 'important');
   host.style.setProperty('unicode-bidi', 'isolate', 'important');
 }
 

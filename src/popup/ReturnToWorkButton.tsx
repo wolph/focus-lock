@@ -1,12 +1,13 @@
 import type { VNode } from 'preact';
+import { t } from '../shared/i18n';
 
 export interface WorkDestination {
   title: string | null;
   hostname?: string;
 }
 
-const BACK_TO_WORK_LABEL: string = 'Back to work';
-const DESTINATION_UNAVAILABLE_COPY: string = 'Destination unavailable';
+const BACK_TO_WORK_LABEL: string = t('popup_back_to_work');
+const DESTINATION_UNAVAILABLE_COPY: string = t('popup_destination_unavailable');
 
 /**
  * Styled like the start button, and named after where it goes: the accessible name reads
@@ -26,9 +27,11 @@ export function ReturnToWorkButton({
   const title: string = destination.title?.trim() ?? '';
   const hostname: string = destination.hostname ?? '';
   const known: boolean = title !== '' || hostname !== '';
-  const name: string = `${BACK_TO_WORK_LABEL}: ${title || hostname || DESTINATION_UNAVAILABLE_COPY}${
-    title !== '' && hostname !== '' ? ` (${hostname})` : ''
-  }`;
+  const destinationName: string = title || hostname || DESTINATION_UNAVAILABLE_COPY;
+  const name: string =
+    title !== '' && hostname !== ''
+      ? t('popup_back_to_work_name_host', { DESTINATION: destinationName, HOSTNAME: hostname })
+      : t('popup_back_to_work_name', { DESTINATION: destinationName });
   return (
     <button
       type="button"
@@ -40,7 +43,7 @@ export function ReturnToWorkButton({
     >
       <span>{BACK_TO_WORK_LABEL}</span>
       <span class="return-work-destination">
-        <span class="return-work-title">{title || hostname || DESTINATION_UNAVAILABLE_COPY}</span>
+        <span class="return-work-title">{destinationName}</span>
         {title !== '' && hostname !== '' ? (
           <span class="return-work-hostname"> ({hostname})</span>
         ) : null}

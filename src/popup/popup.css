@@ -157,8 +157,8 @@ body {
 }
 
 .popup-theme .theme-error {
-  left: auto;
-  right: 0;
+  inset-inline-start: auto;
+  inset-inline-end: 0;
   top: 32px;
 }
 
@@ -369,7 +369,7 @@ body {
   border-radius: 8px;
   background: var(--surface);
   color: var(--text);
-  text-align: left;
+  text-align: start;
   cursor: pointer;
 }
 
@@ -571,7 +571,7 @@ body {
   border-radius: 7px;
   background: var(--surface);
   color: var(--text);
-  text-align: left;
+  text-align: start;
   cursor: pointer;
 }
 
@@ -657,7 +657,7 @@ body {
   background: transparent;
   color: var(--text);
   font-weight: 500;
-  text-align: left;
+  text-align: start;
   cursor: pointer;
 }
 

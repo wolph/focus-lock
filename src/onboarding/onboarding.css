@@ -190,7 +190,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 4px 18px;
   margin: 0;
-  padding-left: 20px;
+  padding-inline-start: 20px;
 }
 
 .category-domains-scroll li {
@@ -232,7 +232,7 @@ p {
 
 .storage-data-list ul {
   margin: 0;
-  padding-left: 20px;
+  padding-inline-start: 20px;
 }
 
 .storage-data-list li {

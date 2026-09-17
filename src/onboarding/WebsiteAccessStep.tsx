@@ -1,5 +1,6 @@
 import type { VNode } from 'preact';
 import { useLayoutEffect, useRef } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import type { WebsiteAccessChoice } from '../shared/types';
 
 export interface WebsiteAccessStepProps {
@@ -30,28 +31,16 @@ export function WebsiteAccessStep(props: WebsiteAccessStepProps): VNode {
   return (
     <section aria-labelledby="website-access-heading">
       <h1 id="website-access-heading" tabIndex={-1}>
-        Enable website blocking
+        {t('onboarding_access_heading')}
       </h1>
-      <p>
-        Focus Lock checks page addresses locally so it can match your selected categories and sites.
-        It uses website access to show its blocking screen and restore affected pages when your
-        session ends.
-      </p>
-      <p>
-        Categories and custom domains can include any website. Chrome will therefore request this
-        capability:
-      </p>
+      <p>{t('onboarding_access_local_matching')}</p>
+      <p>{t('onboarding_access_capability_intro')}</p>
       <p class="permission-capability">
-        <strong>Read and change all your data on all websites</strong>
+        <strong>{t('onboarding_access_capability')}</strong>
       </p>
-      <p>Focus Lock uses that access only while applying your blocking rules.</p>
-      {denied ? <p role="status">Chrome did not grant website access. You can retry.</p> : null}
-      {registrationError ? (
-        <p role="status">
-          Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload
-          the extension.
-        </p>
-      ) : null}
+      <p>{t('onboarding_access_scope_note')}</p>
+      {denied ? <p role="status">{t('onboarding_access_denied')}</p> : null}
+      {registrationError ? <p role="status">{t('onboarding_access_registration_error')}</p> : null}
       {props.error !== null ? <p role="alert">{props.error}</p> : null}
       <div class="button-row">
         <button
@@ -61,7 +50,7 @@ export function WebsiteAccessStep(props: WebsiteAccessStepProps): VNode {
           disabled={props.pending}
           onClick={enable}
         >
-          {retry ? 'Retry' : 'Enable website blocking'}
+          {retry ? t('onboarding_retry_button') : t('onboarding_access_enable_button')}
         </button>
         <button
           type="button"
@@ -69,7 +58,7 @@ export function WebsiteAccessStep(props: WebsiteAccessStepProps): VNode {
           disabled={props.pending}
           onClick={(): void => void props.onDefer()}
         >
-          Not now
+          {t('onboarding_access_defer_button')}
         </button>
       </div>
     </section>

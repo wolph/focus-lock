@@ -1,0 +1,20 @@
+{
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ 个網站",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ 个網站",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

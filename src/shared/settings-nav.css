@@ -35,7 +35,7 @@
   color: var(--text, var(--ink));
   font-size: 15px;
   padding: 8px 10px;
-  text-align: left;
+  text-align: start;
   text-decoration: none;
 }
 
@@ -55,10 +55,10 @@
 }
 
 .settings-nav .theme-error {
-  left: auto;
+  inset-inline-start: auto;
   max-width: min(18rem, calc(100vw - 32px));
   overflow-wrap: anywhere;
-  right: 0;
+  inset-inline-end: 0;
   white-space: normal;
 }
 

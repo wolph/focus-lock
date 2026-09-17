@@ -19,6 +19,7 @@ import {
 } from '../../../src/core/schedule-v2';
 import { DEFAULT_LISTS, DEFAULT_SETTINGS, rulesFromLists } from '../../../src/shared/constants';
 import { CoreError } from '../../../src/shared/errors';
+import { t } from '../../../src/shared/i18n';
 import {
   SCHEDULE_STARTED_TITLE,
   SCHEDULE_UNTIL_STOPPED_BODY,
@@ -71,7 +72,7 @@ const LOCAL_DATE: string = '2026-09-03';
 const WINDOW_STARTS_AT: number = new Date(2026, 8, 3, 9, 0, 0, 0).getTime();
 const WINDOW_ENDS_AT: number = new Date(2026, 8, 3, 17, 0, 0, 0).getTime();
 const TOKEN: string = `${ENTRY_ID}@${LOCAL_DATE}`;
-const UNAVAILABLE_TITLE: string = 'Focus schedule could not start';
+const UNAVAILABLE_TITLE: string = t('notify_schedule_unavailable_title');
 
 function everyDay(): number[] {
   return [0, 1, 2, 3, 4, 5, 6];

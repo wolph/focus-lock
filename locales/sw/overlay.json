@@ -1,0 +1,49 @@
+{
+  "overlay_dialog_label": {
+    "message": "Fokasi Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "Locked - Fokasi Lock"
+  },
+  "overlay_target_reconnect": {
+    "message": "Reload this page to reconnect to Fokasi Lock."
+  },
+  "overlay_target_transport_error": {
+    "message": "Could not reach Fokasi Lock. Try again."
+  },
+  "overlay_picker_cancel": {
+    "message": "Ghairi"
+  },
+  "overlay_picker_search_label": {
+    "message": "Tafuta work kichupos"
+  },
+  "overlay_picker_no_tabs": {
+    "message": "No available work tabs. Fungua a site allowed by this session, then refresh tabs."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ of $COUNT$ tab",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ of $COUNT$ tabs",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

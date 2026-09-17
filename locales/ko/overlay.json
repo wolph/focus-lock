@@ -1,0 +1,91 @@
+{
+  "overlay_stopped_title": {
+    "message": "잠금됨 - Focus Lock"
+  },
+  "overlay_target_checking": {
+    "message": "사용 가능한 작업 탭을 확인 중입니다..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "열린 탭을 선택하여 작업을 계속하세요."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "포커스 세션을 사용할 수 없습니다। 다시 시도하거나 이 페이지를 새로 고치세요."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "작업 탭을 로드할 수 없습니다। 다시 시도하거나 이 페이지를 새로 고치세요."
+  },
+  "overlay_target_reconnect": {
+    "message": "이 페이지를 새로 고쳐서 Focus Lock에 다시 연결하세요."
+  },
+  "overlay_target_page_changed": {
+    "message": "요청한 페이지가 변경되었습니다। 페이지를 새로 고치세요。"
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock에 연결할 수 없습니다। 다시 시도하세요।"
+  },
+  "overlay_picker_heading": {
+    "message": "작업 탭 선택"
+  },
+  "overlay_picker_cancel": {
+    "message": "취소"
+  },
+  "overlay_picker_search_label": {
+    "message": "작업 탭 검색"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "제목 또는 웹사이트로 검색"
+  },
+  "overlay_picker_clear_search": {
+    "message": "검색 지우기"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "탭 새로 고침"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "사용 가능한 작업 탭"
+  },
+  "overlay_picker_finding": {
+    "message": "사용 가능한 탭을 찾는 중입니다..."
+  },
+  "overlay_picker_searching": {
+    "message": "작업 탭을 검색 중입니다..."
+  },
+  "overlay_picker_saving": {
+    "message": "작업 탭을 저장 중입니다..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "사용 가능한 작업 탭이 없습니다। 이 세션에서 허용하는 사이트를 열고 탭을 새로 고치세요।"
+  },
+  "overlay_picker_no_matches": {
+    "message": "일치하는 탭이 없습니다। 다른 검색을 시도하거나 검색을 지우세요।"
+  },
+  "overlay_picker_load_failed": {
+    "message": "작업 탭을 로드할 수 없습니다। 다시 시도하세요।"
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ (전체 $COUNT$ 탭)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ (전체 $COUNT$ 탭)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

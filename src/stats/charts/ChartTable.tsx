@@ -1,5 +1,6 @@
 import type { JSX, RefObject } from 'preact';
 import { useEffect, useRef } from 'preact/hooks';
+import { t } from '../../shared/i18n';
 import type { ChartDatum } from './BarChart';
 
 export interface ChartTableProps {
@@ -50,12 +51,12 @@ export function ChartTable(props: ChartTableProps): JSX.Element {
 
   return (
     <details class={props.className} ref={detailsRef}>
-      <summary>View as table</summary>
+      <summary>{t('stats_chart_table_summary')}</summary>
       <table>
         <thead>
           <tr>
-            <th scope="col">Category</th>
-            <th scope="col">Value</th>
+            <th scope="col">{t('stats_chart_table_category')}</th>
+            <th scope="col">{t('stats_chart_table_value')}</th>
           </tr>
         </thead>
         <tbody>

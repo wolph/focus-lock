@@ -1,0 +1,41 @@
+{
+  "notify_setup_completed_elsewhere": {
+    "message": "I-set up was completed in another tab."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "I-set up changed in another tab. The latest choices were reloaded."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "I-set up changed in another tab. Reload setup before finishing."
+  },
+  "notify_setup_not_complete": {
+    "message": "I-set up is not complete."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "I-set up is not ready to finish."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "I-set up storage choice changed. Reload setup before finishing."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock could not check website access. Subukan Muli setup or reload the extension."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Website access is unavailable, and Focus Lock could not finish blocking cleanup. Subukan Muli setup or reload the extension."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock received an inconsistent website access state. Subukan Muli setup or reload the extension."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "I-disable Sync before deleting synced data"
+  },
+  "notify_settings_sync_limit": {
+    "message": "Mga setting exceed the 8 KB Chrome Sync limit. Alisin schedule entries or shorten intentions, then try again."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Alisin custom or whitelist rules, then try again."
+  }
+}

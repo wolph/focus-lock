@@ -17,6 +17,7 @@ import {
 } from '../../../src/content/overlay-host';
 import { OVERLAY_STYLES, OVERLAY_TICK_MS } from '../../../src/content/overlay-styles';
 import { WORK_PICKER_CSS } from '../../../src/content/work-tab-picker-view';
+import { t } from '../../../src/shared/i18n';
 
 function shadowHandle(): ShadowRoot | undefined {
   return (globalThis as { __focusLockShadow?: ShadowRoot }).__focusLockShadow;
@@ -81,18 +82,36 @@ describe('overlay host', (): void => {
   it('does not inherit right-to-left text direction from the blocked page', (): void => {
     document.documentElement.dir = 'rtl';
 
-    const { host }: OverlayHostElements = mountOverlayHost();
+    const { host, container }: OverlayHostElements = mountOverlayHost();
 
     expect(host.style.getPropertyValue('direction')).toBe('ltr');
     expect(host.style.getPropertyPriority('direction')).toBe('important');
     expect(host.style.getPropertyValue('unicode-bidi')).toBe('isolate');
     expect(host.style.getPropertyPriority('unicode-bidi')).toBe('important');
+    expect(container.dir).toBe('ltr');
+  });
+
+  it('reads right to left when the browser UI language does, whatever the page does', (): void => {
+    document.documentElement.dir = 'ltr';
+    vi.stubGlobal('chrome', {
+      i18n: {
+        getMessage: (key: string): string => (key === '@@bidi_dir' ? 'rtl' : ''),
+        getUILanguage: (): string => 'he',
+      },
+    });
+
+    const { host, container }: OverlayHostElements = mountOverlayHost();
+
+    expect(host.style.getPropertyValue('direction')).toBe('rtl');
+    expect(host.style.getPropertyPriority('direction')).toBe('important');
+    expect(container.dir).toBe('rtl');
   });
 
   it('gives the dialog an accessible name', (): void => {
     const { root }: OverlayHostElements = mountOverlayHost();
     const dialog: HTMLElement = root.querySelector('[role="dialog"]') as HTMLElement;
 
+    expect(dialog.getAttribute('aria-label')).toBe(t('overlay_dialog_label'));
     expect(dialog.getAttribute('aria-label')).toBe('Focus Lock');
     expect(dialog.getAttribute('aria-modal')).toBe('true');
     expect(dialog.classList.contains('backdrop')).toBe(true);

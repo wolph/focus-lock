@@ -1,0 +1,104 @@
+{
+  "overlay_stopped_title": {
+    "message": "Blocat - Focus Lock"
+  },
+  "overlay_target_checking": {
+    "message": "Se verifică filele de lucru disponibile..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Alege o filă deschisă pentru a-ți continua sarcina."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Sesiunea ta de concentrare nu este disponibilă. Încearcă din nou sau reîncarcă această pagină."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Fila ta de lucru nu a putut fi încărcată. Încearcă din nou sau reîncarcă această pagină."
+  },
+  "overlay_target_reconnect": {
+    "message": "Reîncarcă această pagină pentru a te reconecta la Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "Pagina solicitantă s-a schimbat. Reîncarcă pagina."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock nu a putut fi contactat. Încearcă din nou."
+  },
+  "overlay_picker_heading": {
+    "message": "Alege o filă de lucru"
+  },
+  "overlay_picker_cancel": {
+    "message": "Anulează"
+  },
+  "overlay_picker_search_label": {
+    "message": "Caută file de lucru"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Caută după titlu sau site"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Șterge căutarea"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Reîmprospătează filele"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "File de lucru disponibile"
+  },
+  "overlay_picker_finding": {
+    "message": "Se caută filele disponibile..."
+  },
+  "overlay_picker_searching": {
+    "message": "Se caută file de lucru..."
+  },
+  "overlay_picker_saving": {
+    "message": "Se salvează fila de lucru..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Nu există file de lucru disponibile. Deschide un site permis de această sesiune, apoi reîmprospătează filele."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Nicio filă nu se potrivește. Încearcă altă căutare sau șterge-o."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Filele de lucru nu au putut fi încărcate. Încearcă din nou."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ din $COUNT$ filă",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ din $COUNT$ de file",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_few": {
+    "message": "$MATCHES$ din $COUNT$ file",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

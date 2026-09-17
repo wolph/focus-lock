@@ -1,0 +1,864 @@
+{
+  "options_page_title": {
+    "message": "Opțiuni Focus Lock"
+  },
+  "options_heading": {
+    "message": "Setări Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "Se încarcă setările"
+  },
+  "options_privacy_loading": {
+    "message": "Se încarcă setările de confidențialitate"
+  },
+  "options_save_failed": {
+    "message": "Salvarea nu a reușit. Încearcă din nou."
+  },
+  "options_blocking_heading": {
+    "message": "Blocare"
+  },
+  "options_blocking_help": {
+    "message": "Regulile personalizate blochează în sesiunile cu listă neagră. Lista albă este ceea ce rămâne accesibil în sesiunile cu listă albă. Categoriile incluse blochează cei mai obișnuiți consumatori de timp."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Listă neagră personalizată"
+  },
+  "options_whitelist_title": {
+    "message": "Listă albă"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Categorii incluse"
+  },
+  "options_bundled_categories_help": {
+    "message": "Liste incluse cu cei mai obișnuiți consumatori de timp. Activează o categorie întreagă, apoi deschide-o pentru a păstra disponibile anumite site-uri."
+  },
+  "options_schedule_heading": {
+    "message": "Program"
+  },
+  "options_schedule_help": {
+    "message": "Sesiunile pornesc singure în aceste intervale. Strictețea stabilită aici se aplică întregului interval."
+  },
+  "options_behavior_heading": {
+    "message": "Comportamentul sesiunii"
+  },
+  "options_budget_heading": {
+    "message": "Credit de acces la site-uri"
+  },
+  "options_notifications_heading": {
+    "message": "Notificări"
+  },
+  "options_privacy_heading": {
+    "message": "Confidențialitate și date"
+  },
+  "options_load_error_retry": {
+    "message": "Reîncearcă"
+  },
+  "options_load_error_delete_all": {
+    "message": "Șterge tot și ia-o de la capăt"
+  },
+  "options_load_error_keep_data": {
+    "message": "Păstrează-mi datele"
+  },
+  "options_delete_all_data": {
+    "message": "Șterge toate datele Focus Lock"
+  },
+  "options_dirty_saving": {
+    "message": "Se salvează modificările"
+  },
+  "options_dirty_unsaved": {
+    "message": "Modificări nesalvate"
+  },
+  "options_dirty_clean": {
+    "message": "Nicio modificare nesalvată"
+  },
+  "options_dirty_discard": {
+    "message": "Renunță la modificări"
+  },
+  "options_dirty_save": {
+    "message": "Salvează modificările"
+  },
+  "options_session_status_label": {
+    "message": "Starea sesiunii"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domeniu"
+  },
+  "options_rule_remove": {
+    "message": "Elimină"
+  },
+  "options_rule_remove_aria": {
+    "message": "Elimină $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Încă nu există reguli."
+  },
+  "options_rule_kind_aria": {
+    "message": "Tipul regulii"
+  },
+  "options_rule_kind_host_option": {
+    "message": "domeniu sau subdomeniu"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (adresă URL completă)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Tipar"
+  },
+  "options_rule_add": {
+    "message": "Adaugă regulă"
+  },
+  "options_rules_help": {
+    "message": "facebook.com acoperă acel domeniu și toate subdomeniile. news.ycombinator.com acoperă acel subdomeniu și tot ce se află sub el. /youtube\\.com\\/shorts/ se potrivește cu adresa URL completă ca expresie regulată."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ trebuie să fie un număr întreg pozitiv.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ trebuie să fie un număr întreg mai mare sau egal cu zero.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ trebuie să fie mai mare sau egal cu zero.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ trebuie să se încadreze în intervalul de minute acceptat.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ trebuie să se încadreze în intervalul de zile acceptat.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Valori implicite ale sesiunii"
+  },
+  "options_session_defaults_help": {
+    "message": "Modul și strictețea se fixează la pornirea unei sesiuni. Acestea sunt valorile cu care se deschide formularul de pornire."
+  },
+  "options_preset_short_label": {
+    "message": "Presetare sesiune scurtă (minute)"
+  },
+  "options_preset_default_label": {
+    "message": "Presetare sesiune implicită (minute)"
+  },
+  "options_preset_deep_label": {
+    "message": "Presetare sesiune profundă (minute)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Listă neagră: blochează site-urile din listă"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Listă albă: permite doar site-urile din listă"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Flexibil: încheie sesiunea oricând vrei"
+  },
+  "options_strictness_friction_label": {
+    "message": "Fricțiune: oprirea mai devreme trece prin pauza de reflecție configurată"
+  },
+  "options_strictness_hard_label": {
+    "message": "Strict: fără încheiere anticipată, doar acces temporar la site-uri"
+  },
+  "options_cycle_heading": {
+    "message": "Ciclul de concentrare și pauză"
+  },
+  "options_cycle_help": {
+    "message": "Valori implicite: 25 de minute de concentrare, 5 minute de pauză, 15 minute de pauză lungă la fiecare al 4-lea ciclu. În eșantioanele studiate, pauzele programate se descurcă mai bine decât pauzele luate după cum ai chef, atât pentru dispoziție, cât și pentru concentrare. Minutele exacte sunt convenție, nu știință."
+  },
+  "options_cycle_default_label": {
+    "message": "Alternează implicit concentrarea și pauzele"
+  },
+  "options_focus_minutes_label": {
+    "message": "Minute de concentrare"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Minute de pauză scurtă"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Minute de pauză lungă"
+  },
+  "options_long_every_label": {
+    "message": "Pauză lungă la fiecare al N-lea ciclu"
+  },
+  "options_gate_heading": {
+    "message": "Pauză de reflecție"
+  },
+  "options_gate_help": {
+    "message": "O așteptare de 10 secunde cu un buton explicit de întoarcere la lucru reduce măsurabil vizitele impulsive (studiu de teren, PNAS 2023). O așteptare mai lungă și o frază tastată dublează aproximativ efectul."
+  },
+  "options_gate_wait_one": {
+    "message": "Așteaptă $COUNT$ secundă",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Așteaptă $COUNT$ de secunde",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Personalizat"
+  },
+  "options_custom_delay_label": {
+    "message": "Așteptare personalizată (secunde)"
+  },
+  "options_custom_delay_error": {
+    "message": "Așteptarea personalizată trebuie să fie un număr întreg pozitiv de secunde."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Cere și tastarea unei fraze"
+  },
+  "options_gate_force_end_label": {
+    "message": "Activează butonul „Ignoră așteptarea și încheie oricum”"
+  },
+  "options_credit_help": {
+    "message": "Creditul de acces la site-uri se acumulează cât timp te concentrezi. Atât accesul la toate site-urile, cât și deblocarea unui singur site se plătesc din același sold. Te poți opri oricând fără să cheltuiești credit."
+  },
+  "options_earn_rate_label": {
+    "message": "Minute de acces la site-uri la fiecare 30 de minute de concentrare"
+  },
+  "options_credit_cap_label": {
+    "message": "Plafonul creditului de acces la site-uri (minute)"
+  },
+  "options_pause_length_label": {
+    "message": "Durata accesului la toate site-urile (minute)"
+  },
+  "options_unlock_length_label": {
+    "message": "Durata deblocării unui site (minute)"
+  },
+  "options_streak_heading": {
+    "message": "Serie și păstrare"
+  },
+  "options_streak_help": {
+    "message": "Seria numără zilele care ating obiectivul. O singură sesiune implicită menține lanțul viu, iar un jeton de înghețare repară o zi pierdută."
+  },
+  "options_streak_goal_label": {
+    "message": "Obiectiv zilnic al seriei (minute de concentrare)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Intervalul jetoanelor de înghețare (zile)"
+  },
+  "options_retention_label": {
+    "message": "Păstrează statisticile zilnice (zile)"
+  },
+  "options_category_on_announcement": {
+    "message": "Categoria $CATEGORY$ activată.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Categoria $CATEGORY$ dezactivată.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Toate categoriile activate."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Toate categoriile dezactivate."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ inclus.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ păstrat disponibil.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Toate site-urile din $CATEGORY$ incluse.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Toate site-urile din $CATEGORY$ păstrate disponibile.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Acțiuni în masă pentru categorii"
+  },
+  "options_selected_count": {
+    "message": "Selectate $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Deselectate $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Selectează tot"
+  },
+  "options_deselect_all": {
+    "message": "Deselectează tot"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Selectează toate categoriile"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Deselectează toate categoriile"
+  },
+  "options_show_category_sites": {
+    "message": "Arată site-urile din $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Ascunde site-urile din $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ site inclus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ de site-uri incluse",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Categorie dezactivată"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ inclus când e activată",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ incluse când e activată",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Debifează un site pentru a-l păstra disponibil în timp ce restul categoriei este blocat."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Acțiuni în masă pentru site-urile din $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Selectează toate site-urile din $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Deselectează toate site-urile din $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Site-uri din $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "Dum"
+  },
+  "options_day_mon": {
+    "message": "Lun"
+  },
+  "options_day_tue": {
+    "message": "Mar"
+  },
+  "options_day_wed": {
+    "message": "Mie"
+  },
+  "options_day_thu": {
+    "message": "Joi"
+  },
+  "options_day_fri": {
+    "message": "Vin"
+  },
+  "options_day_sat": {
+    "message": "Sâm"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Alternează concentrarea și pauzele"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Se suprapune cu altă intrare activată de $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Tipul sesiunii"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Intrare de program"
+  },
+  "options_schedule_start_label": {
+    "message": "Început"
+  },
+  "options_schedule_end_label": {
+    "message": "Sfârșit"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Durată"
+  },
+  "options_schedule_intention_label": {
+    "message": "Intenție"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "pentru ce este acest timp"
+  },
+  "options_schedule_save_entry": {
+    "message": "Salvează intrarea"
+  },
+  "options_cancel": {
+    "message": "Anulează"
+  },
+  "options_schedule_empty": {
+    "message": "Încă nu există sesiuni programate."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Zile selectate"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ până la $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "listă neagră"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "listă albă"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "flexibil"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "fricțiune"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "strict"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Activată"
+  },
+  "options_schedule_edit": {
+    "message": "Editează"
+  },
+  "options_schedule_delete": {
+    "message": "Șterge"
+  },
+  "options_schedule_add": {
+    "message": "Adaugă o intrare de program"
+  },
+  "options_sounds_heading": {
+    "message": "Sunete"
+  },
+  "options_master_volume": {
+    "message": "Volum general"
+  },
+  "options_sound_session_complete": {
+    "message": "Sesiune finalizată"
+  },
+  "options_sound_break_start": {
+    "message": "Început de pauză"
+  },
+  "options_sound_break_end": {
+    "message": "Sfârșit de pauză"
+  },
+  "options_sound_schedule_start": {
+    "message": "Pornire automată din program"
+  },
+  "options_sound_preview_aria": {
+    "message": "Ascultă $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Redă"
+  },
+  "options_sound_preview_error": {
+    "message": "Sunetul nu a putut fi redat. Încearcă din nou."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Notificări"
+  },
+  "options_session_complete_notification": {
+    "message": "Arată o notificare de sistem când se încheie o sesiune"
+  },
+  "options_badge_heading": {
+    "message": "Insignă"
+  },
+  "options_badge_countdown": {
+    "message": "Arată timpul rămas pe pictograma din bara de instrumente"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Acces la site-uri web"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Accesul la site-uri web este dezactivat"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock nu poate bloca site-uri web până nu acorzi accesul."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Activează blocarea site-urilor web"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Accesul la site-uri web este acordat, dar blocarea nu este activă"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome a acordat accesul, dar Focus Lock nu a putut înregistra scriptul său de blocare."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Reia blocarea site-urilor web"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Blocarea site-urilor web este activată"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock poate aplica regulile tale de blocare active pe paginile web obișnuite."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Ștergi istoricul local?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Confirmă ștergerea istoricului local"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Istoric local șters."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Aceasta șterge definitiv de pe acest dispozitiv adresele URL complete, intențiile de concentrare și evenimentele detaliate ale sesiunilor. Nu golește o sesiune în curs, care își păstrează intenția și adresa fiecărei file pe care o blochează. Încheierea sesiunii șterge intenția și pornește o curățare care golește fiecare filă web deschisă, iar curățarea elimină toate adresele stocate când se finalizează."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Aceasta șterge definitiv de pe acest dispozitiv adresele URL complete, intențiile de concentrare și evenimentele detaliate ale sesiunilor, plus statisticile agregate doar locale. Nu golește o sesiune în curs, care își păstrează intenția și adresa fiecărei file pe care o blochează. Încheierea sesiunii șterge intenția și pornește o curățare care golește fiecare filă web deschisă, iar curățarea elimină toate adresele stocate când se finalizează."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Ștergi datele Sync de la distanță?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Confirmă ștergerea datelor Sync de la distanță"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Datele Chrome Sync de la distanță au fost șterse."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Aceasta șterge definitiv din Chrome Sync setările de la distanță, listele de blocare și de permise, creditul de acces la site-uri, seriile și totalurile încercărilor blocate pe domeniu. Setările și statisticile locale rămân pe acest dispozitiv."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Ștergi toate datele Focus Lock?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Confirmă ștergerea tuturor datelor Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Toate datele Focus Lock au fost șterse."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Aceasta șterge definitiv toate datele Focus Lock de pe acest dispozitiv și orice copie Focus Lock rămasă în Chrome Sync:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Ștergerea completă este disponibilă doar cât timp nu rulează nicio sesiune. Focus Lock revine apoi la configurare."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Istoricul local nu a putut fi șters. Încearcă din nou."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Datele Chrome Sync de la distanță nu au putut fi șterse. Încearcă din nou."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Toate datele Focus Lock nu au putut fi șterse. Încearcă din nou."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync nu a putut salva ultimele tale modificări. Copia locală este în siguranță."
+  },
+  "options_privacy_error_request": {
+    "message": "Cererea nu a putut fi finalizată. Încearcă din nou."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Accesul la site-uri web a fost actualizat."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Accesul la site-uri web nu a fost acordat."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Accesul la site-uri web nu a putut fi actualizat. Încearcă din nou."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Blocarea site-urilor web a fost activată."
+  },
+  "options_privacy_error_export": {
+    "message": "Jurnalul de evenimente nu a putut fi exportat."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Jurnalul de evenimente nu a putut fi exportat. Încearcă din nou."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Setările de permisiuni Chrome nu au putut fi deschise. Încearcă din nou."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Setările de permisiuni Chrome au fost deschise."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Deschide setările de permisiuni Chrome"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Sincronizează datele Focus Lock între dispozitivele Chrome"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync activat."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync dezactivat."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync încă salvează ultimele tale modificări."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync este activat."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync este dezactivat."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Modificările Chrome Sync au fost salvate."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Reia activarea Chrome Sync"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Reia Chrome Sync"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Sincronizat"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Doar local"
+  },
+  "options_privacy_developer_note": {
+    "message": "Nu se trimite nimic către dezvoltatorul Focus Lock."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Jurnal local de evenimente"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Exportă jurnalul local detaliat sau șterge istoricul local de navigare și de sesiuni."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Exportă jurnalul local de evenimente"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Jurnalul local de evenimente a fost exportat."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Șterge istoricul local"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Date Sync de la distanță"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Șterge copiile Focus Lock rămase în Chrome Sync fără a modifica acest dispozitiv."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Șterge datele Sync de la distanță"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Toate datele Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Șterge fiecare înregistrare Focus Lock de pe acest dispozitiv și orice copie Focus Lock rămasă în Chrome Sync, apoi ia-o de la capăt de la configurare. Disponibilă cât timp nu rulează nicio sesiune."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Se reia ștergerea tuturor datelor Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Reia ștergerea istoricului local"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Reia ștergerea datelor Sync de la distanță"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Reia ștergerea tuturor datelor"
+  },
+  "options_error_load": {
+    "message": "Setările nu au putut fi încărcate. Reîncarcă pagina pentru a încerca din nou."
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lock nu a putut fi repornit. Încearcă din nou."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Setările de confidențialitate nu au putut fi reîmprospătate. Reîncarcă pagina."
+  },
+  "options_error_website_blocking": {
+    "message": "Blocarea site-urilor web nu a putut fi actualizată. Încearcă din nou."
+  },
+  "options_error_change_sync": {
+    "message": "Chrome Sync nu a putut fi modificat. Încearcă din nou."
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome Sync nu a putut fi reluat. Încearcă din nou."
+  },
+  "options_error_save_settings": {
+    "message": "Setările nu au putut fi salvate. Reîncarcă pagina și încearcă din nou."
+  },
+  "options_error_save_lists": {
+    "message": "Listele nu au putut fi salvate. Reîncarcă pagina și încearcă din nou."
+  },
+  "options_gate_wait_few": {
+    "message": "Așteaptă $COUNT$ secunde",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_few": {
+    "message": "$COUNT$ site-uri incluse",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_few": {
+    "message": "$COUNT$ incluse când e activată",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import { DEFAULT_SETTINGS, DEFAULT_SETUP } from '../shared/constants';
 import type { DocumentContentCommand } from '../shared/enforcement-v2';
 import { CoreError } from '../shared/errors';
 import { exactDataEqual } from '../shared/exact-data';
+import { t } from '../shared/i18n';
 import type { Ack, Rejection, Request, SoundId } from '../shared/messages';
 import { WEBSITE_ORIGINS } from '../shared/permissions';
 import {
@@ -201,7 +202,7 @@ type BootStage = BootFailure['stage'];
 
 function errorMessage(error: unknown): string {
   const message: string = error instanceof Error ? error.message : String(error);
-  return message.trim().length > 0 ? message : 'unknown error';
+  return message.trim().length > 0 ? message : t('notify_unknown_error');
 }
 
 /** Tags the error that escaped one boot stage. The cause keeps its own stack and message. */
@@ -242,7 +243,7 @@ function bootFailureOf(error: unknown, at: number): BootFailure {
 
 /** The one answer every request gets from a worker that did not start, with the reason attached. */
 function bootFailureRejection(failure: BootFailure): Rejection {
-  return { ok: false, error: `Focus Lock did not finish starting: ${failure.message}` };
+  return { ok: false, error: t('notify_boot_not_finished', { REASON: failure.message }) };
 }
 
 function requiresWorkerControl(request: Request): boolean {
@@ -1717,7 +1718,7 @@ export function main(): void {
           return {
             ok: false,
             code: 'retry-not-available',
-            error: 'Data clear retry is not available.',
+            error: t('notify_data_clear_retry_unavailable'),
           };
         } catch (error: unknown) {
           return { ok: false, code: 'retry-not-available', error: errorMessage(error) };
@@ -1786,7 +1787,7 @@ export function main(): void {
   const resetLocalRuntime = (): Promise<Ack> =>
     runWorkerControl(async (): Promise<Ack> => {
       const failure: BootFailure | null = bootFailure;
-      if (failure === null) return { ok: false, error: 'Focus Lock is running, nothing to reset' };
+      if (failure === null) return { ok: false, error: t('notify_nothing_to_reset') };
       if (failure.stage !== 'runtime') return bootFailureRejection(failure);
       const stored: Record<string, unknown> = await chrome.storage.local.get([
         LOCAL_POLICY_COMMIT,
@@ -1797,8 +1798,7 @@ export function main(): void {
       if (isRecord(pointer) && pointer.source === 'generation') {
         return {
           ok: false,
-          error:
-            'Focus Lock cannot reset a runtime that is still committed inside a policy generation',
+          error: t('notify_runtime_committed_in_generation'),
         };
       }
       const parked: RejectedRuntimeDiagnosticV1 = {

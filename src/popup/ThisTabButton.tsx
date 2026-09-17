@@ -1,16 +1,16 @@
 import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import { sendRequest } from '../shared/messages';
 import type { SessionMode, SessionRuleSnapshot } from '../shared/types';
 import { parseWorkTabsResult, type WorkTab, type WorkTabsResult } from '../shared/work-target';
 import { type WorkTabsState, workTabsRequest } from './use-work-tabs';
 
-export const USE_THIS_TAB_LABEL: string = 'Use this tab';
-export const CURRENT_TAB_UNAVAILABLE_HINT: string =
-  'This tab is not available for work. Choose another open tab.';
-const CHECKING_CURRENT_TAB_HINT: string = 'Checking current tab...';
-const FINDING_CURRENT_TAB_HINT: string = 'Finding your current tab...';
-const CURRENT_TAB_LOAD_ERROR: string = 'Could not load your current tab. Try again.';
+export const USE_THIS_TAB_LABEL: string = t('popup_use_this_tab');
+export const CURRENT_TAB_UNAVAILABLE_HINT: string = t('popup_current_tab_unavailable');
+const CHECKING_CURRENT_TAB_HINT: string = t('popup_checking_current_tab');
+const FINDING_CURRENT_TAB_HINT: string = t('popup_finding_current_tab');
+const CURRENT_TAB_LOAD_ERROR: string = t('popup_current_tab_load_failed');
 
 export interface ThisTabButtonProps {
   work: WorkTabsState;

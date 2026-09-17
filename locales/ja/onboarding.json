@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock のセットアップ"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock のセットアップ"
+  },
+  "onboarding_progress": {
+    "message": "ステップ $STEP$ / $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "保存されたセットアップ進度を復元できませんでした。現在のデフォルト設定で再開始します。"
+  },
+  "onboarding_complete_heading": {
+    "message": "セットアップ完了"
+  },
+  "onboarding_complete_body": {
+    "message": "選択内容が保存されました。Chrome ツールバーから Focus Lock を開いてセッションを開始します。"
+  },
+  "onboarding_error_heading": {
+    "message": "セットアップを使用できません"
+  },
+  "onboarding_error_body": {
+    "message": "セットアップを読み込めませんでした。もう一度試してください。"
+  },
+  "onboarding_retry_button": {
+    "message": "再試行"
+  },
+  "onboarding_save_error": {
+    "message": "セットアップ進度を保存できませんでした。もう一度試してください。"
+  },
+  "onboarding_enable_error": {
+    "message": "ウェブサイトブロッキングを有効にできませんでした。もう一度試してください。"
+  },
+  "onboarding_finish_error": {
+    "message": "セットアップを完了できませんでした。選択内容は保存されています。もう一度試してください。"
+  },
+  "onboarding_lists_heading": {
+    "message": "最初のブロックリストを選択"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "$MODE$ では、有効なカテゴリと追加ブロック対象サイトは利用できません。",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$ では、ホワイトリスト以外のすべてのサイトが利用できません。",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "これらの選択肢は将来のセッションのデフォルトになります。後で編集できます。"
+  },
+  "onboarding_lists_legend": {
+    "message": "推奨ウェブサイトカテゴリ"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ サイト",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ サイト",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "$CATEGORY$ サイトを表示",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "$CATEGORY$ サイトを非表示",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ ドメイン",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "続行"
+  },
+  "onboarding_access_heading": {
+    "message": "ウェブサイトブロッキングを有効化"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock はページアドレスをローカルで確認して、カテゴリとサイトを照合します。ウェブサイトアクセスは、ブロッキング画面を表示し、セッション終了時に影響を受けたページを復元するために使用されます。"
+  },
+  "onboarding_access_capability_intro": {
+    "message": "カテゴリとカスタムドメインは任意のウェブサイトを含むことができます。したがって、Chrome は次の機能をリクエストします:"
+  },
+  "onboarding_access_capability": {
+    "message": "すべてのウェブサイト上のすべてのデータの読み取りと変更"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock はブロッキングルール適用時のみそのアクセスを使用します。"
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome がウェブサイトアクセスを許可しませんでした。もう一度試すことができます。"
+  },
+  "onboarding_access_registration_error": {
+    "message": "ウェブサイトアクセスは許可されていますが、Focus Lock がブロッキングを有効にできません。セットアップをやり直すか、拡張機能をリロードしてください。"
+  },
+  "onboarding_access_enable_button": {
+    "message": "ウェブサイトブロッキングを有効化"
+  },
+  "onboarding_access_defer_button": {
+    "message": "後で"
+  },
+  "onboarding_sync_heading": {
+    "message": "設定の保存場所を選択"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Chrome デバイス全体で同期"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "下記の承認されたデータは、セットアップ完了後に Chrome Sync を使用します。"
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "すべての Focus Lock データはこの Chrome プロフィールに残ります。"
+  },
+  "onboarding_sync_synced_title": {
+    "message": "同期中"
+  },
+  "onboarding_sync_local_title": {
+    "message": "ローカルのみ"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock 開発者には何も送信されません。"
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "同期を有効にしてセットアップを完了"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "同期せずセットアップを完了"
+  }
+}

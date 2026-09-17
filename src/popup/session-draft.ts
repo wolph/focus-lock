@@ -1,5 +1,6 @@
 import { normalizeSessionHostInput } from '../core/matcher';
 import { CATEGORY_IDS, rulesFromLists } from '../shared/constants';
+import { t } from '../shared/i18n';
 import type {
   CategoryId,
   CycleConfig,
@@ -87,7 +88,7 @@ export function addDraftAllowHost<const T extends { rules: SessionRuleSnapshot }
   if (host === null) {
     return {
       draft,
-      error: 'Enter a valid domain such as docs.example.com.',
+      error: t('popup_invalid_domain_error'),
     };
   }
 

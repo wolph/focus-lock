@@ -7,6 +7,7 @@ import {
   useRef,
   useState,
 } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import { sendRequest } from '../shared/messages';
 import { ackError } from '../shared/runtime-validation';
 import type { SessionMode, SessionSnapshotV2 } from '../shared/types';
@@ -14,10 +15,10 @@ import type { WorkTab } from '../shared/work-target';
 import { ThisTabButton } from './ThisTabButton';
 import { useWorkTabs, type WorkTabsState, type WorkTargetState } from './use-work-tabs';
 
-const CHOOSE_WORK_TAB_COPY: string = 'Choose or replace your work tab.';
-const SAVING_WORK_TAB_COPY: string = 'Saving work tab...';
-const SAVE_WORK_TAB_FAILED_COPY: string = 'Could not save the work tab. Try again.';
-const CHOOSE_OPEN_TAB_OPTION: string = 'Choose an open tab';
+const CHOOSE_WORK_TAB_COPY: string = t('popup_choose_work_tab_copy');
+const SAVING_WORK_TAB_COPY: string = t('popup_saving_work_tab');
+const SAVE_WORK_TAB_FAILED_COPY: string = t('popup_save_work_tab_failed');
+const CHOOSE_OPEN_TAB_OPTION: string = t('popup_choose_open_tab_option');
 
 export interface WorkTabControlProps {
   snapshot: SessionSnapshotV2;
@@ -110,7 +111,7 @@ export function WorkTabControl({
     <div class="work-tab-control">
       <p class="work-target">
         {work.target?.ok && work.target.state === 'ready'
-          ? `Work tab: ${work.target.title}`
+          ? t('popup_work_tab_named', { TITLE: work.target.title ?? '' })
           : CHOOSE_WORK_TAB_COPY}
       </p>
       <ThisTabButton
@@ -126,10 +127,10 @@ export function WorkTabControl({
         }}
       />
       <label class="work-tab-label">
-        Or choose another tab
+        {t('popup_or_choose_another_tab')}
         <select
           ref={selectRef}
-          aria-label="Work tab"
+          aria-label={t('popup_work_tab_select_label')}
           value=""
           disabled={
             disabled ||

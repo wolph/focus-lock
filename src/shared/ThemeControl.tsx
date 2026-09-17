@@ -1,5 +1,6 @@
 import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useState } from 'preact/hooks';
+import { t } from './i18n';
 import { nextTheme } from './theme';
 import type { ThemeMode } from './types';
 
@@ -10,9 +11,9 @@ interface ThemeControlProps {
 }
 
 const MODE_LABELS: Readonly<Record<ThemeMode, string>> = {
-  auto: 'Auto',
-  light: 'Light',
-  dark: 'Dark',
+  auto: t('shared_theme_auto'),
+  light: t('shared_theme_light'),
+  dark: t('shared_theme_dark'),
 };
 
 function ThemeIcon({ mode }: { mode: ThemeMode }): VNode {
@@ -71,7 +72,7 @@ export function ThemeControl(props: ThemeControlProps): VNode {
     try {
       setError(await props.onChange(next));
     } catch {
-      setError('Could not save theme. Reload page and try again.');
+      setError(t('shared_theme_error'));
     } finally {
       setPending(false);
     }
@@ -82,7 +83,10 @@ export function ThemeControl(props: ThemeControlProps): VNode {
       <button
         type="button"
         class="theme-button"
-        aria-label={`Theme: ${MODE_LABELS[current]}. Switch to ${MODE_LABELS[next]}`}
+        aria-label={t('shared_theme_button', {
+          CURRENT: MODE_LABELS[current],
+          NEXT: MODE_LABELS[next],
+        })}
         disabled={props.mode === null || pending}
         onClick={(): void => {
           void changeTheme();

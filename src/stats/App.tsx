@@ -1,5 +1,6 @@
 import type { JSX } from 'preact';
 import { type Dispatch, type StateUpdater, useEffect, useState } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import { type StatsBundle, sendRequest } from '../shared/messages';
 import { isSetupState } from '../shared/runtime-validation';
 import { SettingsNav } from '../shared/SettingsNav';
@@ -19,10 +20,9 @@ import {
 } from './use-stats';
 
 function partialLoadError(attempts: boolean, economy: boolean): string | null {
-  if (attempts && economy)
-    return 'Hourly attempts and site access credit settings are unavailable.';
-  if (attempts) return 'Hourly attempts are unavailable.';
-  if (economy) return 'Site access credit settings are unavailable.';
+  if (attempts && economy) return t('stats_partial_error_both');
+  if (attempts) return t('stats_partial_error_attempts');
+  if (economy) return t('stats_partial_error_economy');
   return null;
 }
 
@@ -75,9 +75,7 @@ function useSetupScope(): SetupScopeState {
 }
 
 function pageScope(storageMode: StorageMode): string {
-  return storageMode === 'sync'
-    ? 'Synced totals from this Chrome account. Local-only panels are labeled.'
-    : 'Totals from this machine. Focus Lock statistics are not synced.';
+  return storageMode === 'sync' ? t('stats_scope_synced') : t('stats_scope_local');
 }
 
 function ScopeDisclosure(props: SetupScopeState): JSX.Element {
@@ -88,12 +86,12 @@ function ScopeDisclosure(props: SetupScopeState): JSX.Element {
         {props.load.status === 'ready'
           ? pageScope(props.load.storageMode)
           : props.load.status === 'loading'
-            ? 'Checking whether these totals are synced.'
-            : 'Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from this machine.'}
+            ? t('stats_scope_checking')
+            : t('stats_scope_unavailable')}
       </span>
       {error ? (
         <button type="button" class="scope-retry" onClick={props.retry}>
-          Retry scope check
+          {t('stats_scope_retry')}
         </button>
       ) : null}
     </div>
@@ -120,15 +118,15 @@ export function App(): JSX.Element {
       <SettingsNav page="stats" theme={economyState.theme} onThemeChange={economyState.saveTheme} />
       <main class="stats-page">
         <header class="page-header">
-          <h1>Your focus record</h1>
+          <h1>{t('stats_page_title')}</h1>
           <ScopeDisclosure {...setupScope} />
         </header>
         {stats.error ? (
           <p class="empty-line" role="alert">
-            Could not load stats. Reload to try again.
+            {t('stats_load_error')}
           </p>
         ) : bundle === null ? (
-          <p class="empty-line">Loading your stats.</p>
+          <p class="empty-line">{t('stats_loading')}</p>
         ) : (
           <>
             {partialError === null ? null : (

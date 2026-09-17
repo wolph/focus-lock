@@ -1,5 +1,6 @@
 import type { JSX } from 'preact';
 import { formatMinutes } from '../shared/format';
+import { formatNumber, t, tPlural } from '../shared/i18n';
 import type { StatsBundle } from '../shared/messages';
 import { localDateStr } from '../shared/time';
 import type { DailyAgg, EventRecord } from '../shared/types';
@@ -64,7 +65,7 @@ export function topSites(bundle: StatsBundle): ChartDatum[] {
     .slice(0, TOP_SITES)
     .map(([label, value]: [string, number]): ChartDatum => ({ label, value }));
   for (const [, value] of sorted.slice(TOP_SITES)) other += value;
-  if (other > 0) rows.push({ label: 'other', value: other });
+  if (other > 0) rows.push({ label: t('stats_chart_other_site'), value: other });
   return rows;
 }
 
@@ -89,38 +90,40 @@ export function Charts(props: ChartsProps): JSX.Element {
   return (
     <div class="charts">
       <section class="card">
-        <h2>Focus, last 14 days</h2>
+        <h2>{t('stats_chart_focus_heading')}</h2>
         <BarChart
           data={focus}
           format={formatMinutes}
-          label="Focus, last 14 days"
-          tickFormat={(v: number): string => `${v}m`}
+          label={t('stats_chart_focus_heading')}
+          tickFormat={(v: number): string =>
+            t('stats_chart_minutes_tick', { MINUTES: formatNumber(v) })
+          }
           color="var(--focus-series)"
-          emptyLine="Focus minutes appear after your first session."
+          emptyLine={t('stats_chart_focus_empty')}
         />
       </section>
       <section class="card">
-        <h2>Blocked attempts, last 14 days</h2>
+        <h2>{t('stats_chart_attempts_heading')}</h2>
         <BarChart
           data={attempts}
-          format={(v: number): string => `${v} blocked`}
-          label="Blocked attempts, last 14 days"
+          format={(v: number): string => tPlural('stats_blocked_count', v)}
+          label={t('stats_chart_attempts_heading')}
           color="var(--attempts-series)"
-          emptyLine="Blocked attempts show up here once a session catches one."
+          emptyLine={t('stats_chart_attempts_empty')}
         />
       </section>
       <section class="card">
-        <h2>Top blocked sites, last 30 days</h2>
+        <h2>{t('stats_chart_sites_heading')}</h2>
         <HBarChart
           data={sites}
-          format={(v: number): string => String(v)}
-          label="Top blocked sites, last 30 days"
+          format={(v: number): string => formatNumber(v)}
+          label={t('stats_chart_sites_heading')}
           color="var(--attempts-series)"
-          emptyLine="Nothing blocked yet. That is a fine start."
+          emptyLine={t('stats_chart_sites_empty')}
         />
       </section>
       <section class="card">
-        <h2>Attempts by hour, this machine only</h2>
+        <h2>{t('stats_chart_hours_heading')}</h2>
         <HourlyHeatStrip values={hours} />
       </section>
     </div>

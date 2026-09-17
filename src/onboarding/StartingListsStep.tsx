@@ -2,6 +2,7 @@ import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useState } from 'preact/hooks';
 import { ALL_CATEGORIES } from '../core/categories';
 import { HostBrowser } from '../shared/HostBrowser';
+import { t, tPlural } from '../shared/i18n';
 import { MODE_LABELS } from '../shared/session-copy';
 import type { CategoryId, CategoryList, ListsConfig } from '../shared/types';
 
@@ -10,6 +11,19 @@ export interface StartingListsStepProps {
   pending: boolean;
   onListsChange: (lists: ListsConfig) => void | Promise<void>;
   onContinue: () => void | Promise<void>;
+}
+
+/** The sentence with its mode name in bold, wherever the translation places that name. */
+function modeRule(text: string, label: string): VNode {
+  const start: number = text.indexOf(label);
+  if (start < 0) return <>{text}</>;
+  return (
+    <>
+      {text.slice(0, start)}
+      <strong>{label}</strong>
+      {text.slice(start + label.length)}
+    </>
+  );
 }
 
 export function StartingListsStep(props: StartingListsStepProps): VNode {
@@ -39,16 +53,21 @@ export function StartingListsStep(props: StartingListsStepProps): VNode {
   return (
     <section aria-labelledby="starting-lists-heading">
       <h1 id="starting-lists-heading" tabIndex={-1}>
-        Choose your starting block list
+        {t('onboarding_lists_heading')}
       </h1>
       <p>
-        In <strong>{MODE_LABELS.blacklist}</strong>, enabled categories and extra blocked sites are
-        unavailable. In <strong>{MODE_LABELS.whitelist}</strong>, every site is unavailable except
-        your allow list.
+        {modeRule(
+          t('onboarding_lists_blacklist_rule', { MODE: MODE_LABELS.blacklist }),
+          MODE_LABELS.blacklist,
+        )}{' '}
+        {modeRule(
+          t('onboarding_lists_whitelist_rule', { MODE: MODE_LABELS.whitelist }),
+          MODE_LABELS.whitelist,
+        )}
       </p>
-      <p>These choices become defaults for future sessions. You can edit them later.</p>
+      <p>{t('onboarding_lists_defaults_note')}</p>
       <fieldset class="category-list" disabled={props.pending}>
-        <legend>Recommended website categories</legend>
+        <legend>{t('onboarding_lists_legend')}</legend>
         {ALL_CATEGORIES.map((category: CategoryList): VNode => {
           const open: boolean = expanded.has(category.id);
           const regionId: string = `category-domains-${category.id}`;
@@ -63,7 +82,9 @@ export function StartingListsStep(props: StartingListsStepProps): VNode {
                   />
                   <span>{category.title}</span>
                 </label>
-                <span class="category-site-count">{category.hosts.length} sites</span>
+                <span class="category-site-count">
+                  {tPlural('onboarding_site_count', category.hosts.length)}
+                </span>
                 <button
                   type="button"
                   class="disclosure-button"
@@ -71,7 +92,9 @@ export function StartingListsStep(props: StartingListsStepProps): VNode {
                   aria-controls={regionId}
                   onClick={(): void => toggleExpanded(category.id)}
                 >
-                  {open ? `Hide ${category.title} sites` : `Show ${category.title} sites`}
+                  {open
+                    ? t('onboarding_hide_category_sites', { CATEGORY: category.title })
+                    : t('onboarding_show_category_sites', { CATEGORY: category.title })}
                 </button>
               </div>
               {open ? (
@@ -79,7 +102,9 @@ export function StartingListsStep(props: StartingListsStepProps): VNode {
                   hosts={category.hosts}
                   title={category.title}
                   regionId={regionId}
-                  regionLabel={`${category.title} domains`}
+                  regionLabel={t('onboarding_category_domains_label', {
+                    CATEGORY: category.title,
+                  })}
                   regionClass="category-domains-scroll"
                   listClass="category-domains"
                   renderHost={(host: string): VNode => <li key={host}>{host}</li>}
@@ -95,7 +120,7 @@ export function StartingListsStep(props: StartingListsStepProps): VNode {
         disabled={props.pending}
         onClick={(): void => void props.onContinue()}
       >
-        Continue
+        {t('onboarding_continue_button')}
       </button>
     </section>
   );

@@ -2,6 +2,7 @@
 import { cleanup, render } from '@testing-library/preact';
 import { afterEach, describe, expect, it } from 'vitest';
 import { formatDuration } from '../../../src/shared/format';
+import { t, tPlural } from '../../../src/shared/i18n';
 import type { StatsBundle } from '../../../src/shared/messages';
 import type { DailyAgg, MonthlyAgg, PauseEconomy, StreakState } from '../../../src/shared/types';
 import { Streak } from '../../../src/stats/Streak';
@@ -157,13 +158,17 @@ describe('formatDuration', () => {
 describe('Tiles', () => {
   it('renders exact period labels, totals, and separate pause and unlock spending', () => {
     const { container } = render(<Tiles bundle={BUNDLE} economy={ECONOMY} now={NOW} />);
-    expect(tileValue(container, 'Focus today')).toBe('1 h 05 m');
-    expect(tileValue(container, 'Focus in the last 7 days')).toBe('1 h 55 m');
-    expect(tileValue(container, 'Attempts blocked today')).toBe('6');
-    expect(tileValue(container, 'Gate requests dismissed today')).toBe('2');
-    expect(tileValue(container, 'Site access credit spent today')).toBe('7 m');
-    expect(tileSubline(container, 'Site access credit spent today')).toBe(
-      'All sites 5 m, one site 2 m, 17 m earned',
+    expect(tileValue(container, t('stats_tile_focus_today'))).toBe('1 h 05 m');
+    expect(tileValue(container, t('stats_tile_focus_last_7_days'))).toBe('1 h 55 m');
+    expect(tileValue(container, t('stats_tile_attempts_today'))).toBe('6');
+    expect(tileValue(container, t('stats_tile_gate_dismissed_today'))).toBe('2');
+    expect(tileValue(container, t('stats_tile_credit_spent_today'))).toBe('7 m');
+    expect(tileSubline(container, t('stats_tile_credit_spent_today'))).toBe(
+      t('stats_tile_credit_subline_spent', {
+        ALL_SITES: '5 m',
+        ONE_SITE: '2 m',
+        EARNED: '17 m',
+      }),
     );
     expect(container.textContent).not.toContain('Current streak');
     expect(container.textContent).not.toContain('2 freezes banked');
@@ -173,7 +178,7 @@ describe('Tiles', () => {
 
   it('renders the quiet zero-state line for an empty bundle', () => {
     const { container } = render(<Tiles bundle={EMPTY} economy={ECONOMY} now={NOW} />);
-    expect(container.textContent).toContain('Stats appear after your first session.');
+    expect(container.textContent).toContain(t('stats_empty'));
     expect(container.querySelectorAll('.tile').length).toBe(0);
   });
 
@@ -195,8 +200,12 @@ describe('Tiles', () => {
 
       const { container } = render(<Tiles bundle={bundle} economy={ECONOMY} now={NOW} />);
 
-      expect(tileSubline(container, 'Site access credit spent today')).toBe(
-        `All sites ${formatDuration(pauseMs)}, one site ${formatDuration(unlockMs)}, 0 m earned`,
+      expect(tileSubline(container, t('stats_tile_credit_spent_today'))).toBe(
+        t('stats_tile_credit_subline_spent', {
+          ALL_SITES: formatDuration(pauseMs),
+          ONE_SITE: formatDuration(unlockMs),
+          EARNED: '0 m',
+        }),
       );
     },
   );
@@ -209,7 +218,7 @@ describe('Tiles', () => {
 
     const { container } = render(<Tiles bundle={liveFirstRun} economy={ECONOMY} now={NOW} />);
 
-    expect(container.textContent).toContain('Stats appear after your first session.');
+    expect(container.textContent).toContain(t('stats_empty'));
     expect(container.querySelectorAll('.tile')).toHaveLength(0);
   });
 
@@ -225,7 +234,7 @@ describe('Tiles', () => {
       const { container } = render(<Tiles bundle={bundle} economy={ECONOMY} now={NOW} />);
 
       expect(container.querySelectorAll('.tile')).toHaveLength(5);
-      expect(container.textContent).not.toContain('Stats appear after your first session.');
+      expect(container.textContent).not.toContain(t('stats_empty'));
     },
   );
 });
@@ -240,9 +249,11 @@ describe('Streak', () => {
     expect(container.querySelectorAll('.cal-day.active').length).toBe(4);
     // August has 31 day cells regardless of activity
     expect(container.querySelectorAll('.cal-day').length).toBe(31);
-    expect(container.textContent).toContain('4 active days this month');
+    expect(container.textContent).toContain(
+      tPlural('stats_streak_active_days', 4, { MONTH: 'August 2026' }),
+    );
     expect(container.querySelector('.cal-grid')?.getAttribute('aria-label')).toBe(
-      'Active dates in August 2026: 25, 26, 27, 28.',
+      t('stats_streak_active_dates', { MONTH: 'August 2026', DAYS: '25, 26, 27, 28' }),
     );
   });
 
@@ -250,13 +261,13 @@ describe('Streak', () => {
     const { container } = render(<Streak streak={{ ...STREAK, activeDays: [] }} now={NOW} />);
 
     expect(container.querySelector('.cal-grid')?.getAttribute('aria-label')).toBe(
-      'No active dates in August 2026.',
+      t('stats_streak_no_active_dates', { MONTH: 'August 2026' }),
     );
     expect(container.querySelectorAll('.cal-day[aria-label]')).toHaveLength(0);
   });
 
   it('renders a quiet first-run line when there is no streak yet', () => {
     const { container } = render(<Streak streak={EMPTY.streak} now={NOW} />);
-    expect(container.textContent).toContain('Your streak starts with your first focus day.');
+    expect(container.textContent).toContain(t('stats_streak_empty'));
   });
 });

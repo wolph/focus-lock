@@ -86,7 +86,7 @@ describe('icon generation', () => {
       scripts: Record<string, string>;
     };
     expect(packageJson.scripts['gen-icons']).toBe('node scripts/gen-icons.mjs');
-    expect(packageJson.scripts.build).toBe('npm run gen-icons && vite build');
+    expect(packageJson.scripts.build).toBe('npm run gen-icons && npm run gen-locales && vite build');
     expect(packageJson.scripts.check).toContain('npm run build');
     expect(packageJson.engines.node).toBe('^22.22.2 || ^24.15.0 || >=26.0.0');
   });

@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Configura Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Configuració de Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Pas $STEP$ de $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "No s'ha pogut restaurar el progrés de configuració desat. Es torna a començar amb els valors predeterminats actuals."
+  },
+  "onboarding_complete_heading": {
+    "message": "Configuració completada"
+  },
+  "onboarding_complete_body": {
+    "message": "Les teves opcions s'han desat. Obre Focus Lock des de la barra d'eines de Chrome per iniciar una sessió."
+  },
+  "onboarding_error_heading": {
+    "message": "Configuració no disponible"
+  },
+  "onboarding_error_body": {
+    "message": "No s'ha pogut carregar la configuració. Torna-ho a provar."
+  },
+  "onboarding_retry_button": {
+    "message": "Torna-ho a provar"
+  },
+  "onboarding_save_error": {
+    "message": "No s'ha pogut desar el progrés de la configuració. Torna-ho a provar."
+  },
+  "onboarding_enable_error": {
+    "message": "No s'ha pogut activar el bloqueig de llocs web. Torna-ho a provar."
+  },
+  "onboarding_finish_error": {
+    "message": "No s'ha pogut completar la configuració. Les teves opcions s'han desat igualment. Torna-ho a provar."
+  },
+  "onboarding_lists_heading": {
+    "message": "Tria la teva llista de bloqueig inicial"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "A $MODE$, les categories activades i els llocs bloquejats addicionals no estan disponibles.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "A $MODE$, tots els llocs no estan disponibles excepte els de la teva llista de permesos.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Aquestes opcions passen a ser les predeterminades per a sessions futures. Les pots editar més endavant."
+  },
+  "onboarding_lists_legend": {
+    "message": "Categories de llocs web recomanades"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ lloc",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ llocs",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Mostra els llocs de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Amaga els llocs de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Dominis de $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Continua"
+  },
+  "onboarding_access_heading": {
+    "message": "Activa el bloqueig de llocs web"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock comprova les adreces de les pàgines localment per poder-les comparar amb les categories i els llocs que has seleccionat. Utilitza l'accés als llocs web per mostrar la pantalla de bloqueig i restaurar les pàgines afectades quan acabi la sessió."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Les categories i els dominis personalitzats poden incloure qualsevol lloc web. Per això Chrome demanarà aquest permís:"
+  },
+  "onboarding_access_capability": {
+    "message": "Llegir i canviar totes les teves dades en tots els llocs web"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock només utilitza aquest accés mentre aplica les teves regles de bloqueig."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome no ha concedit l'accés als llocs web. Ho pots tornar a provar."
+  },
+  "onboarding_access_registration_error": {
+    "message": "L'accés als llocs web està concedit, però Focus Lock no ha pogut activar el bloqueig. Torna a provar la configuració o recarrega l'extensió."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Activa el bloqueig de llocs web"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Ara no"
+  },
+  "onboarding_sync_heading": {
+    "message": "Tria on es desa la teva configuració"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Sincronitza entre dispositius de Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Les dades aprovades de sota faran servir Chrome Sync quan acabis la configuració."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Totes les dades de Focus Lock es queden en aquest perfil de Chrome."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Sincronitzat"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Només local"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "No s'envia res al desenvolupador de Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Acaba la configuració amb la sincronització activada"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Acaba la configuració sense sincronització"
+  }
+}

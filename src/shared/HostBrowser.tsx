@@ -2,6 +2,7 @@ import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useId, useMemo, useState } from 'preact/hooks';
 import { filterHosts, HOST_PAGE_SIZE } from '../core/host-search';
 import './host-browser.css';
+import { formatNumber, t } from './i18n';
 
 export interface HostBrowserProps {
   /** Every host in the category, in list order. */
@@ -18,10 +19,14 @@ export interface HostBrowserProps {
 }
 
 function statusText(title: string, total: number, matched: number, shown: number): string {
-  if (matched === 0) return `No ${title} site matches your search.`;
-  if (shown < matched) return `Showing ${shown} of ${matched} sites. Search to narrow the list.`;
-  if (matched < total) return `Showing ${matched} of ${total} sites.`;
-  return `Showing all ${total} sites.`;
+  if (matched === 0) return t('shared_host_none', { TITLE: title });
+  if (shown < matched) {
+    return t('shared_host_partial', { SHOWN: formatNumber(shown), MATCHED: formatNumber(matched) });
+  }
+  if (matched < total) {
+    return t('shared_host_matched', { MATCHED: formatNumber(matched), TOTAL: formatNumber(total) });
+  }
+  return t('shared_host_all', { TOTAL: formatNumber(total) });
 }
 
 /**
@@ -41,12 +46,12 @@ export function HostBrowser(props: HostBrowserProps): VNode {
   return (
     <div class="host-browser">
       <label class="host-browser__field" for={searchId}>
-        <span class="visually-hidden">Search {props.title} sites</span>
+        <span class="visually-hidden">{t('shared_host_search_label', { TITLE: props.title })}</span>
         <input
           id={searchId}
           type="search"
           class="host-browser__search"
-          placeholder={`Search ${props.title} sites`}
+          placeholder={t('shared_host_search_label', { TITLE: props.title })}
           value={query}
           onInput={(event: Event): void => {
             setQuery((event.currentTarget as HTMLInputElement).value);

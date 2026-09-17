@@ -1,0 +1,164 @@
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock",
+    "description": "Accessible name of the blocked page dialog that covers a distracting site. This is the extension name, so keep it untranslated."
+  },
+  "overlay_stopped_title": {
+    "message": "Locked - Focus Lock",
+    "description": "Browser tab title of a blocked page whose loading was stopped. The word before the dash says the page is locked, the part after it is the extension name."
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "description": "Accessible name and tooltip of the main button on the blocked page when the chosen work tab has no separate website name. ACTION holds wording such as Back to work, DESTINATION holds the title of the chosen tab.",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "description": "Accessible name and tooltip of the main button on the blocked page when the chosen work tab also has a website name. ACTION holds wording such as Back to work, DESTINATION holds the tab title, HOSTNAME holds the website the tab is on.",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Checking available work tabs...",
+    "description": "Status line under the main button on the blocked page while the extension looks up which tabs can be worked in."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Pick an open tab to continue your task.",
+    "description": "Status line under the main button on the blocked page when no work tab has been chosen yet."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Your focus session is not available. Try again, or reload this page.",
+    "description": "Status line on the blocked page when the extension cannot find the focus session this page was locked for."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Could not load your work tab. Try again, or reload this page.",
+    "description": "Status line on the blocked page when looking up the chosen work tab failed for an unknown reason."
+  },
+  "overlay_target_reconnect": {
+    "message": "Reload this page to reconnect to Focus Lock.",
+    "description": "Status line on the blocked page after the extension was updated or reloaded, so this page lost its connection to it. Focus Lock is the extension name."
+  },
+  "overlay_target_page_changed": {
+    "message": "The requesting page has changed. Reload the page.",
+    "description": "Status line on the blocked page when the page navigated away while the extension was answering it. This sentence must match the refusal the extension worker sends for the same case."
+  },
+  "overlay_target_transport_error": {
+    "message": "Could not reach Focus Lock. Try again.",
+    "description": "Message inside the work tab chooser when saving the chosen tab could not reach the extension. Focus Lock is the extension name."
+  },
+  "overlay_picker_heading": {
+    "message": "Choose a work tab",
+    "description": "Heading and accessible name of the panel that lists the open tabs a person may return to from the blocked page."
+  },
+  "overlay_picker_cancel": {
+    "message": "Cancel",
+    "description": "Label of the button that closes the work tab chooser without choosing a tab."
+  },
+  "overlay_picker_search_label": {
+    "message": "Search work tabs",
+    "description": "Label and accessible name of the search box at the top of the work tab chooser."
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Search by title or website",
+    "description": "Placeholder text inside the search box of the work tab chooser, naming what a query is matched against."
+  },
+  "overlay_picker_clear_search": {
+    "message": "Clear search",
+    "description": "Label of the button that empties the search box of the work tab chooser."
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Refresh tabs",
+    "description": "Label of the button that lists the open tabs again in the work tab chooser."
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Available work tabs",
+    "description": "Accessible name of the scrolling list of tabs inside the work tab chooser."
+  },
+  "overlay_picker_finding": {
+    "message": "Finding available tabs...",
+    "description": "Message inside the work tab chooser while the list of open tabs is being read."
+  },
+  "overlay_picker_searching": {
+    "message": "Searching work tabs...",
+    "description": "Message inside the work tab chooser while a long list of tabs is being filtered by the typed query."
+  },
+  "overlay_picker_saving": {
+    "message": "Saving work tab...",
+    "description": "Message inside the work tab chooser while the chosen tab is being saved."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "No available work tabs. Open a site allowed by this session, then refresh tabs.",
+    "description": "Message inside the work tab chooser when the session allows no currently open tab. Refresh tabs names the button beside it."
+  },
+  "overlay_picker_no_matches": {
+    "message": "No matching tabs. Try another search or clear the search.",
+    "description": "Message inside the work tab chooser when the typed query matches none of the available tabs."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Could not load work tabs. Try again.",
+    "description": "Message inside the work tab chooser when listing the open tabs failed and no reason was given."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ of $COUNT$ tab",
+    "description": "How many of the available tabs the search matches, shown above the list in the work tab chooser. MATCHES holds the number shown, COUNT holds the number available. Singular form of COUNT.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ of $COUNT$ tabs",
+    "description": "How many of the available tabs the search matches, shown above the list in the work tab chooser. MATCHES holds the number shown, COUNT holds the number available. Plural form of COUNT.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "description": "Accessible name and tooltip of one row in the work tab chooser when the tab has a website name. TITLE holds the tab title, HOSTNAME holds the website it is on.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  }
+}

@@ -26,6 +26,7 @@ import {
 import type { DocumentContentCommand } from '../shared/enforcement-v2';
 import { CoreError } from '../shared/errors';
 import { exactDataEqual } from '../shared/exact-data';
+import { t } from '../shared/i18n';
 import type {
   Ack,
   CommandResponseV2,
@@ -1440,8 +1441,7 @@ export class Engine {
         if (!(error instanceof SyncQuotaError)) throw error;
         return {
           ok: false,
-          error:
-            'Settings exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again.',
+          error: t('notify_settings_sync_limit'),
         };
       }
     }
@@ -1455,8 +1455,7 @@ export class Engine {
       if (!(error instanceof SyncQuotaError)) throw error;
       return {
         ok: false,
-        error:
-          'Settings exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again.',
+        error: t('notify_settings_sync_limit'),
       };
     }
     this.setSettingsAndClampBank(s);
@@ -1486,8 +1485,7 @@ export class Engine {
           if (!(error instanceof SyncQuotaError)) throw error;
           return {
             ok: false,
-            error:
-              'Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.',
+            error: t('notify_lists_sync_limit'),
           };
         }
       }
@@ -1518,8 +1516,7 @@ export class Engine {
         if (!(error instanceof SyncQuotaError)) throw error;
         return {
           ok: false,
-          error:
-            'Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.',
+          error: t('notify_lists_sync_limit'),
         };
       }
     }
@@ -1561,8 +1558,7 @@ export class Engine {
         if (!(error instanceof SyncQuotaError)) throw error;
         return {
           ok: false,
-          error:
-            'Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.',
+          error: t('notify_lists_sync_limit'),
         };
       }
       return this.updateListsNow(
@@ -1632,8 +1628,7 @@ export class Engine {
         if (!(error instanceof SyncQuotaError)) throw error;
         return {
           ok: false,
-          error:
-            'Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.',
+          error: t('notify_lists_sync_limit'),
         };
       }
     }

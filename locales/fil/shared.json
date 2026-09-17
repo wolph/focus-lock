@@ -1,0 +1,151 @@
+{
+  "shared_start_until_stopped": {
+    "message": "Magsimula until stopped"
+  },
+  "shared_end_session": {
+    "message": "Tapusin session"
+  },
+  "shared_mode_blacklist": {
+    "message": "Hadlang selected sites"
+  },
+  "shared_mode_whitelist": {
+    "message": "Payagan selected sites only"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Sesyon ended. Finishing browser cleanup."
+  },
+  "shared_retry_cleanup": {
+    "message": "Subukan Muli cleanup"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Magsimulas on schedule and runs until you stop it: Tapusin session for Flexible, Unlock through the deliberation gate for Friction. Cycles off."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock could not finish browser cleanup. Buksan the popup and retry."
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Tapusined early"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Tapusined: website access lost"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Tapusined: blocking setup failed"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Tapusined: timer setup failed"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Tapusined: page enforcement failed"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Tapusined: recovery failed"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Less than a minuto"
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Hadlanged by $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Hadlanged by your block list"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Hadlanged by this session"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Payaganed by this session"
+  },
+  "shared_synced_settings": {
+    "message": "Mga setting"
+  },
+  "shared_synced_lists": {
+    "message": "Hadlang and allow lists"
+  },
+  "shared_all_data_clear_running": {
+    "message": "Tapusin the running session before deleting all data."
+  },
+  "shared_nav_settings": {
+    "message": "Mga setting"
+  },
+  "shared_section_blocking": {
+    "message": "Hadlanging"
+  },
+  "shared_section_behavior": {
+    "message": "Sesyon behavior"
+  },
+  "shared_host_partial": {
+    "message": "Ipakitaing $SHOWN$ of $MATCHED$ sites. Search to narrow the list.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Ipakitaing $MATCHED$ of $TOTAL$ sites.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Ipakitaing all $TOTAL$ sites.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Tapusin the session"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Bumalik to work"
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Magpatuloy your current task"
+  },
+  "shared_gate_end_title": {
+    "message": "Tapusin this session"
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

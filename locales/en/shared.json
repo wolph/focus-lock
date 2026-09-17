@@ -1,0 +1,768 @@
+{
+  "shared_until_stopped": {
+    "message": "Until stopped",
+    "description": "Name of the session length that has no timer and ends only when the user ends it."
+  },
+  "shared_preset_short": {
+    "message": "short",
+    "description": "Name of the shortest duration preset, read after the minutes: '25 short'. Lower case."
+  },
+  "shared_preset_focus": {
+    "message": "focus",
+    "description": "Name of the middle duration preset, read after the minutes: '50 focus'. Lower case."
+  },
+  "shared_preset_deep_work": {
+    "message": "deep work",
+    "description": "Name of the longest duration preset, read after the minutes: '90 deep work'. Lower case."
+  },
+  "shared_deep_work_note": {
+    "message": "A preference, not science: one long uninterrupted block, with no automatic breaks.",
+    "description": "Hover explanation of the deep work duration preset."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ min total, with $FOCUS$ min focus blocks",
+    "description": "Hint under the duration presets when focus and break cycles interrupt the session.",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min uninterrupted focus",
+    "description": "Hint under the duration presets when nothing interrupts the session.",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Start until stopped",
+    "description": "Start button of a Flexible session that runs until the user ends it."
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Lock until manual unlock",
+    "description": "Start button of a Friction session that ends only through its deliberation gate."
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Until stopped sessions keep Flexible or Friction and cannot use focus and break cycles.",
+    "description": "Disclosure under the duration control while Until stopped is selected."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Hard lock is not available for Until stopped: with no timer and no manual end, the session could never end.",
+    "description": "Why the Hard lock strictness is disabled while Until stopped is selected."
+  },
+  "shared_end_session": {
+    "message": "End session",
+    "description": "Button that ends a running Flexible session."
+  },
+  "shared_unlock": {
+    "message": "Unlock",
+    "description": "Button that confirms the deliberation gate and ends a Friction session."
+  },
+  "shared_gate_wait_none": {
+    "message": "no wait",
+    "description": "The deliberation wait as a phrase when the gate has no delay. Used inside a sentence."
+  },
+  "shared_gate_wait": {
+    "message": "a $SECONDS$-second wait",
+    "description": "The deliberation wait as a phrase, used inside a sentence.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ and a typed sentence",
+    "description": "What the deliberation gate demands when it also asks for a typed phrase. WAIT is the wait phrase, for example 'a 10-second wait'.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Runs until you end it with $LABEL$. Cycles off.",
+    "description": "Hint under the duration control for a Flexible until-stopped session. LABEL is the End session button label.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Runs until you unlock it: $REQUIREMENT$, then $LABEL$. Cycles off.",
+    "description": "Hint under the duration control for a Friction until-stopped session. REQUIREMENT is what the gate demands, LABEL is the Unlock button label.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Cycles forced by Until stopped",
+    "description": "Accessible name of the disabled focus and break cycle group. Heard by screen readers only."
+  },
+  "shared_mode_blacklist": {
+    "message": "Block selected sites",
+    "description": "Blocking mode where the chosen categories and rules are blocked and other sites stay available."
+  },
+  "shared_mode_whitelist": {
+    "message": "Allow selected sites only",
+    "description": "Blocking mode where only the chosen sites stay available and everything else is blocked."
+  },
+  "shared_focus_time_label": {
+    "message": "Focus time",
+    "description": "Label of the clock showing wall-clock time spent in the focus phase."
+  },
+  "shared_clock_focus_phase": {
+    "message": "focus phase",
+    "description": "Name of the clock counting the current focus block. Lower case, read after a time."
+  },
+  "shared_clock_total_session": {
+    "message": "total session",
+    "description": "Name of the clock counting the whole session. Lower case, read after a time."
+  },
+  "shared_clock_pause": {
+    "message": "pause",
+    "description": "Name of the clock counting a pause. Lower case, read after a time."
+  },
+  "shared_clock_break": {
+    "message": "break",
+    "description": "Name of the clock counting a break between focus blocks. Lower case, read after a time."
+  },
+  "shared_badge_indefinite": {
+    "message": "ON",
+    "description": "Toolbar badge text while a session runs with no end time. At most four characters."
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock is starting. Applying your selected rules.",
+    "description": "Popup status while the session is starting. Focus Lock is the product name, keep untranslated."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Session ended. Finishing browser cleanup.",
+    "description": "Popup and settings status after a session ended, while cleanup finishes."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock could not start. Finishing browser cleanup.",
+    "description": "Popup status after a failed start, while cleanup finishes."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock could not clean up an incomplete start.",
+    "description": "Popup error when cleanup after a failed start did not finish."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock could not finish browser cleanup.",
+    "description": "Popup error when cleanup after a session did not finish."
+  },
+  "shared_retry_cleanup": {
+    "message": "Retry cleanup",
+    "description": "Button that runs the failed browser cleanup again."
+  },
+  "shared_end_failed": {
+    "message": "Could not end session. Try again.",
+    "description": "Error shown when ending the session failed."
+  },
+  "shared_retry_failed": {
+    "message": "Could not retry cleanup. Try again.",
+    "description": "Error shown when retrying cleanup failed."
+  },
+  "shared_action_failed": {
+    "message": "Could not request that action. Try again.",
+    "description": "Error shown when a request to the extension worker failed."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Could not return to work. Try again.",
+    "description": "Error shown when switching back to the work tab failed."
+  },
+  "shared_data_clear_pending": {
+    "message": "Deleting Focus Lock data. Finishing cleanup.",
+    "description": "Status while the extension deletes its stored data."
+  },
+  "shared_data_clear_error": {
+    "message": "Could not delete data. Try again.",
+    "description": "Error shown when deleting stored data failed."
+  },
+  "shared_schedule_window_label": {
+    "message": "Until window ends",
+    "description": "Session length option that runs until the scheduled window closes."
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Starts on schedule and runs until you stop it: End session for Flexible, Unlock through the deliberation gate for Friction. Cycles off.",
+    "description": "Schedule editor explanation of an until-stopped scheduled session. End session and Unlock are button labels."
+  },
+  "shared_schedule_started_title": {
+    "message": "Focus schedule started",
+    "description": "Notification title when a scheduled session starts."
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Active until you stop it.",
+    "description": "Notification body for a scheduled session with no end time."
+  },
+  "shared_settings_indefinite": {
+    "message": "Until stopped session active. Use the toolbar popup to view or end it.",
+    "description": "Settings page status while an until-stopped session runs."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock is starting. Checking website access and applying your rules.",
+    "description": "Settings page status while a session is starting."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock could not finish browser cleanup. Open the popup and retry.",
+    "description": "Settings page error when cleanup did not finish."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "The toolbar popup owns session controls. The active session keeps the rules captured when it started.",
+    "description": "Settings page note explaining that a running session cannot be edited here."
+  },
+  "shared_settings_timed": {
+    "message": "Timed session active until $TIME$. It ends automatically. Use the toolbar popup for live status.",
+    "description": "Settings page status for a running timed session. TIME is a local clock time.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Completed",
+    "description": "Session log outcome: the session ran to the end of its timer."
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Completed manually",
+    "description": "Session log outcome: the user ended the session after it had finished its work."
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Ended early",
+    "description": "Session log outcome: the user ended the session before its planned end."
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Ended: website access lost",
+    "description": "Session log outcome: the browser withdrew the site access permission."
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Ended: blocking setup failed",
+    "description": "Session log outcome: the blocking script could not be registered."
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Ended: timer setup failed",
+    "description": "Session log outcome: the session timer could not be created."
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Ended: page enforcement failed",
+    "description": "Session log outcome: blocking could not be applied to open pages."
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Ended: recovery failed",
+    "description": "Session log outcome: the stored session state could not be restored."
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ m",
+    "description": "A duration of an hour or more, in compact unit abbreviations. MINUTES is zero padded.",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ m",
+    "description": "A duration under an hour, in a compact unit abbreviation.",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "description": "A whole number of minutes, abbreviated. Singular form.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "description": "A whole number of minutes, abbreviated. Plural form.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Updating session",
+    "description": "Placeholder shown while the session state is being recalculated."
+  },
+  "shared_less_than_a_minute": {
+    "message": "Less than a minute",
+    "description": "Remaining time when under one minute is left."
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ until your break",
+    "description": "Time left in the current focus block before a break. DURATION is a time such as '5 min'.",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ left in this session",
+    "description": "Time left in the session. DURATION is a time such as '5 min'.",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Cost exceeds the credit limit",
+    "description": "Why a site cannot be unlocked: it costs more than the credit cap allows."
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Credit earning resumes during focus",
+    "description": "Why credit is not growing: the session is not in a focus phase."
+  },
+  "shared_credit_off": {
+    "message": "Credit earning is turned off",
+    "description": "Why credit is not growing: the setting is disabled."
+  },
+  "shared_not_enough_time": {
+    "message": "Not enough time in this focus block",
+    "description": "Why a site cannot be unlocked: the focus block ends before enough credit is earned."
+  },
+  "shared_ready_in": {
+    "message": "Ready in $CLOCK$",
+    "description": "Countdown until enough credit is earned. CLOCK is a time such as '1:30'.",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "description": "A blocking verdict followed by the rule that matched. PATTERN is a domain or pattern.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Blocked by $CATEGORY$",
+    "description": "The site is blocked because it belongs to a selected category.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Blocked by your block list",
+    "description": "The site is blocked by a rule the user added."
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Not on your allow list",
+    "description": "The site is blocked because only listed sites are allowed."
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Blocked by this session",
+    "description": "The site is blocked, with no more specific reason."
+  },
+  "shared_verdict_allow_list": {
+    "message": "On your allow list",
+    "description": "The site is available because the user listed it."
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Always allowed",
+    "description": "The site is never blocked, such as the browser's own pages."
+  },
+  "shared_verdict_unlock": {
+    "message": "Temporarily unlocked",
+    "description": "The site is available because the user spent credit on it."
+  },
+  "shared_verdict_excluded": {
+    "message": "Excluded from a selected category",
+    "description": "The site belongs to a blocked category but the user excluded it."
+  },
+  "shared_verdict_no_session": {
+    "message": "No active focus session",
+    "description": "Nothing is blocked because no session is running."
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Allowed by this session",
+    "description": "The site is available, with no more specific reason."
+  },
+  "shared_category_social": {
+    "message": "Social media",
+    "description": "Name of the blocking category holding social networks."
+  },
+  "shared_category_video": {
+    "message": "Video and streaming",
+    "description": "Name of the blocking category holding video and streaming sites."
+  },
+  "shared_category_news": {
+    "message": "News",
+    "description": "Name of the blocking category holding news sites."
+  },
+  "shared_category_mail": {
+    "message": "Mail",
+    "description": "Name of the blocking category holding webmail sites."
+  },
+  "shared_category_shopping": {
+    "message": "Shopping",
+    "description": "Name of the blocking category holding shopping sites."
+  },
+  "shared_category_gaming": {
+    "message": "Gaming",
+    "description": "Name of the blocking category holding gaming sites."
+  },
+  "shared_category_forums": {
+    "message": "Forums and boredom",
+    "description": "Name of the blocking category holding forums and time-sink sites."
+  },
+  "shared_synced_settings": {
+    "message": "Settings",
+    "description": "Item in the list of data synced across browsers: the user's preferences."
+  },
+  "shared_synced_lists": {
+    "message": "Block and allow lists",
+    "description": "Item in the list of data synced across browsers."
+  },
+  "shared_synced_credit": {
+    "message": "Site access credit",
+    "description": "Item in the list of data synced across browsers: earned unlock credit."
+  },
+  "shared_synced_streaks": {
+    "message": "Streaks",
+    "description": "Item in the list of data synced across browsers: consecutive focus days."
+  },
+  "shared_synced_aggregates": {
+    "message": "Domain-level blocked-attempt aggregates",
+    "description": "Item in the list of data synced across browsers: counts of blocked visits per domain."
+  },
+  "shared_local_full_urls": {
+    "message": "Full URLs",
+    "description": "Item in the list of data that never leaves the device."
+  },
+  "shared_local_intentions": {
+    "message": "Focus intentions",
+    "description": "Item in the list of data that never leaves the device: what the user wrote they would work on."
+  },
+  "shared_local_events": {
+    "message": "Detailed session events",
+    "description": "Item in the list of data that never leaves the device."
+  },
+  "shared_local_runtime": {
+    "message": "Active runtime session",
+    "description": "Item in the list of data that never leaves the device: the session in progress."
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Some synced data from an older version could not be read and was reset.",
+    "description": "Warning shown when settings from an older release could not be migrated."
+  },
+  "shared_all_data_clear_running": {
+    "message": "End the running session before deleting all data.",
+    "description": "Why the delete-all-data control is disabled while a session runs."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock",
+    "description": "Product name in the settings sidebar. Keep untranslated."
+  },
+  "shared_nav_product": {
+    "message": "Product navigation",
+    "description": "Accessible name of the settings sidebar. Heard by screen readers only."
+  },
+  "shared_nav_overview": {
+    "message": "Overview",
+    "description": "Sidebar link to the statistics page."
+  },
+  "shared_nav_settings": {
+    "message": "Settings",
+    "description": "Sidebar heading above the settings sections."
+  },
+  "shared_section_blocking": {
+    "message": "Blocking",
+    "description": "Settings section for categories and rules."
+  },
+  "shared_section_schedule": {
+    "message": "Schedule",
+    "description": "Settings section for automatic session start times."
+  },
+  "shared_section_behavior": {
+    "message": "Session behavior",
+    "description": "Settings section for strictness and cycles."
+  },
+  "shared_section_budget": {
+    "message": "Site access credit",
+    "description": "Settings section for earned unlock credit."
+  },
+  "shared_section_notifications": {
+    "message": "Notifications",
+    "description": "Settings section for sounds and notifications."
+  },
+  "shared_section_privacy": {
+    "message": "Privacy and data",
+    "description": "Settings section for stored data and deletion."
+  },
+  "shared_theme_auto": {
+    "message": "Auto",
+    "description": "Theme that follows the operating system setting."
+  },
+  "shared_theme_light": {
+    "message": "Light",
+    "description": "Light colour theme."
+  },
+  "shared_theme_dark": {
+    "message": "Dark",
+    "description": "Dark colour theme."
+  },
+  "shared_theme_button": {
+    "message": "Theme: $CURRENT$. Switch to $NEXT$",
+    "description": "Accessible name of the theme button. CURRENT and NEXT are theme names such as Auto, Light, Dark.",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Could not save theme. Reload page and try again.",
+    "description": "Error shown when the theme choice could not be stored."
+  },
+  "shared_host_search_label": {
+    "message": "Search $TITLE$ sites",
+    "description": "Label and placeholder of the search box over one category's sites. TITLE is a category name.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "No $TITLE$ site matches your search.",
+    "description": "Status when a site search has no results. TITLE is a category name.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Showing $SHOWN$ of $MATCHED$ sites. Search to narrow the list.",
+    "description": "Status when only the first page of matching sites is rendered.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Showing $MATCHED$ of $TOTAL$ sites.",
+    "description": "Status when a search narrowed the list of sites.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Showing all $TOTAL$ sites.",
+    "description": "Status when every site in the category is listed.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "End the session",
+    "description": "Label on the confirm button of the gate that ends a session."
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock is starting",
+    "description": "Heading on the block page while the session starts. Focus Lock is the product name, keep untranslated."
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Applying your selected rules.",
+    "description": "Line under the starting heading on the block page."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "This page did not load. It will load by itself when the session ends.",
+    "description": "Note on a blocked page whose loading was stopped."
+  },
+  "shared_overlay_next_step": {
+    "message": "Your next step",
+    "description": "Heading over the intention the user wrote when starting the session."
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Back to work",
+    "description": "Button on the block page that switches to the chosen work tab."
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Choose a work tab",
+    "description": "Button on the block page shown when no work tab has been chosen yet."
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Change work tab",
+    "description": "Button on the block page that picks a different work tab."
+  },
+  "shared_overlay_access_summary": {
+    "message": "Need a break or site access?",
+    "description": "Label of the collapsed drawer holding the break and unlock actions."
+  },
+  "shared_overlay_access_note": {
+    "message": "You can step away at any time. Site access uses credit.",
+    "description": "Note inside the access drawer on the block page."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Ignore timeout and end anyway",
+    "description": "Button that skips the remaining deliberation wait."
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock could not update this action. Try again.",
+    "description": "Error on the block page when a request to the extension worker failed."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ site access credit",
+    "description": "The earned credit balance on the block page. AMOUNT is a clock value such as 5:00.",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Continue your current task",
+    "description": "The intention line on the block page when the session was started without one."
+  },
+  "shared_overlay_pause_action": {
+    "message": "Unlock all sites",
+    "description": "Action on the block page that unlocks every site for a while, paying with credit."
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Unlock this site",
+    "description": "Action on the block page that unlocks only the blocked site, paying with credit."
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - costs $COST$ credit",
+    "description": "One spend action with how long it lasts and what it costs. LABEL is the action name, LENGTH and COST are clock values.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Locked until $TIME$",
+    "description": "Status line of a timed session on the block page. TIME is a local clock time.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "You said: $INTENTION$",
+    "description": "Quotes back the intention the user wrote, on the deliberation gate.",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Unlock $HOST$ $CLOCK$",
+    "description": "Gate heading for unlocking one site. HOST is a domain, CLOCK is how long the unlock lasts.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Keep focusing",
+    "description": "Button that closes the deliberation gate and keeps the session running."
+  },
+  "shared_gate_phrase_label": {
+    "message": "Type this to confirm:",
+    "description": "Label over the box where the user retypes a phrase to confirm."
+  },
+  "shared_gate_end_title": {
+    "message": "End this session",
+    "description": "Heading of the gate that confirms ending the running session, in the popup and on the block page."
+  }
+}

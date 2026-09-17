@@ -1,4 +1,5 @@
 import type { VNode } from 'preact';
+import { t } from '../shared/i18n';
 import type { SessionRequestV2 } from '../shared/messages';
 import {
   DATA_CLEAR_ERROR_COPY,
@@ -128,7 +129,7 @@ function endGateView(
   if (authority.kind !== 'friction-gate' || authority.gate === null) return null;
   return {
     gate: authority.gate,
-    title: authority.copy.title,
+    title: t('shared_gate_end_title'),
     phraseLabel: gatePhraseLabel(authority, authority.gate),
     confirmLabel: gateConfirmLabel(authority, authority.gate),
     intention: gateIntention(authority, authority.gate, config),

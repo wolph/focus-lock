@@ -3,6 +3,7 @@
  * eligible tabs, filters them locally, and hands one chosen tab id back to the lock screen.
  * Every label here is a lookup result, from the one constants block in the view module.
  */
+import { formatNumber, tPlural } from '../shared/i18n';
 import { sendRequest } from '../shared/messages';
 import { parseWorkTabsResult, type WorkTab, type WorkTabsResult } from '../shared/work-target';
 import { WorkTabList } from './work-tab-list';
@@ -112,7 +113,9 @@ export function createWorkTabPicker(
         if (state.closed || state.saving) return;
         state.filtering = false;
         body.setAttribute('aria-busy', 'false');
-        count.textContent = `${matches.length} of ${state.tabs.length} ${state.tabs.length === 1 ? 'tab' : 'tabs'}`;
+        count.textContent = tPlural('overlay_picker_count', state.tabs.length, {
+          MATCHES: formatNumber(matches.length),
+        });
         message(
           matches.length > 0
             ? null

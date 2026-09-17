@@ -1,0 +1,255 @@
+{
+  "popup_settings_button_label": {
+    "message": "Mga setting"
+  },
+  "popup_open_settings_failed": {
+    "message": "Could not open Mga setting. Try again."
+  },
+  "popup_open_setup_button": {
+    "message": "Buksan setup"
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Paganahin website blocking"
+  },
+  "popup_retry_button": {
+    "message": "Subukan Muli"
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Alisin everything and start over"
+  },
+  "popup_delete_all_button": {
+    "message": "Alisin all Focus Lock data"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "I-set up status unavailable. Reload Focus Lock to try again."
+  },
+  "popup_active_site_unsupported": {
+    "message": "Buksan a regular website to unlock it"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Magsimula next focus early"
+  },
+  "popup_session_actions_summary": {
+    "message": "Sesyon actions"
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Magdagdag an allowed domain"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Magdagdag allowed domain"
+  },
+  "popup_add_button": {
+    "message": "Magdagdag"
+  },
+  "popup_draft_stop_friction": {
+    "message": "Tapusin after a $SECONDS$s wait.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Tapusin after a $SECONDS$s wait and confirmation phrase.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Sesyon length"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Custom minutos"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_back_to_work": {
+    "message": "Bumalik to work"
+  },
+  "popup_back_to_work_name": {
+    "message": "Bumalik to work: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Bumalik to work: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Kategorya editing is disabled until blocked-site lists reload."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Hadlanged categories"
+  },
+  "popup_show_full_domain": {
+    "message": "Ipakita full domain: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Ipakita full regular expression: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Payaganed exceptions"
+  },
+  "popup_allowed_heading": {
+    "message": "Payaganed sites and rules"
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ extra blocked panuntunan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ extra blocked panuntunans",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ allowed panuntunan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ allowed panuntunans",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Payaganed-site and rule changes here apply only to this session. Everything else is blocked."
+  },
+  "popup_scope_blacklist": {
+    "message": "Kategorya and rule changes here apply only to this session."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Buksan Mga setting for permanent defaults"
+  },
+  "popup_rule_details_label": {
+    "message": "Sesyon rule details"
+  },
+  "popup_session_type_legend": {
+    "message": "Sesyon type"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Tapusin the session immediately whenever you choose."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Tapusining early requires $WAIT$. No typing is required.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Tapusining early requires $WAIT$ and typed confirmation.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_invalid_duration_error": {
+    "message": "Enter a session length greater than zero minutos."
+  },
+  "popup_session_settings_summary": {
+    "message": "Sesyon settings"
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Hadlanging mode"
+  },
+  "popup_start_focus_label": {
+    "message": "Magsimula $DURATION$ focus",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "and $COUNT$ more site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "and $COUNT$ more sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  }
+}

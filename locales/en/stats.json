@@ -1,0 +1,317 @@
+{
+  "stats_document_title": {
+    "message": "Focus Lock stats",
+    "description": "Browser tab title of the statistics page. Focus Lock is the product name and stays untranslated."
+  },
+  "stats_page_title": {
+    "message": "Your focus record",
+    "description": "Main heading at the top of the statistics page."
+  },
+  "stats_loading": {
+    "message": "Loading your stats.",
+    "description": "Quiet line shown while the statistics page waits for its data."
+  },
+  "stats_load_error": {
+    "message": "Could not load stats. Reload to try again.",
+    "description": "Error line replacing the whole statistics page when its data cannot be read."
+  },
+  "stats_partial_error_both": {
+    "message": "Hourly attempts and site access credit settings are unavailable.",
+    "description": "Warning above the panels when both the hourly attempt log and the site access credit settings failed to load."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Hourly attempts are unavailable.",
+    "description": "Warning above the panels when only the hourly attempt log failed to load."
+  },
+  "stats_partial_error_economy": {
+    "message": "Site access credit settings are unavailable.",
+    "description": "Warning above the panels when only the site access credit settings failed to load."
+  },
+  "stats_scope_synced": {
+    "message": "Synced totals from this Chrome account. Local-only panels are labeled.",
+    "description": "Line under the page heading when the totals come from Chrome account sync."
+  },
+  "stats_scope_local": {
+    "message": "Totals from this machine. Focus Lock statistics are not synced.",
+    "description": "Line under the page heading when the totals come from this computer only. Focus Lock is the product name."
+  },
+  "stats_scope_checking": {
+    "message": "Checking whether these totals are synced.",
+    "description": "Line under the page heading while the page is still finding out where its totals come from."
+  },
+  "stats_scope_unavailable": {
+    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from this machine.",
+    "description": "Line under the page heading when the page cannot find out whether its totals are synced."
+  },
+  "stats_scope_retry": {
+    "message": "Retry scope check",
+    "description": "Button next to the heading line that asks again where the totals come from."
+  },
+  "stats_empty": {
+    "message": "Stats appear after your first session.",
+    "description": "Quiet first-run line replacing the row of summary tiles when nothing has been recorded yet."
+  },
+  "stats_tile_focus_today": {
+    "message": "Focus today",
+    "description": "Label of the summary tile holding today's focused time."
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Focus in the last 7 days",
+    "description": "Label of the summary tile holding focused time over the last seven days."
+  },
+  "stats_tile_attempts_today": {
+    "message": "Attempts blocked today",
+    "description": "Label of the summary tile counting today's blocked visits to distracting sites."
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Gate requests dismissed today",
+    "description": "Label of the summary tile counting the times the user opened the unlock gate today and then walked away from it."
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Site access credit spent today",
+    "description": "Label of the summary tile holding the earned browsing time spent today."
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "All sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
+    "description": "Breakdown under the site access credit tile on a day with spending. All three values are durations such as 5 m or 1 h 05 m. ALL_SITES is credit spent on a pause that unblocks everything, ONE_SITE credit spent to unblock a single site, EARNED the credit earned that day.",
+    "placeholders": {
+      "ALL_SITES": { "content": "$1", "example": "5 m" },
+      "ONE_SITE": { "content": "$2", "example": "2 m" },
+      "EARNED": { "content": "$3", "example": "17 m" }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ earned",
+    "description": "Breakdown under the site access credit tile on a day with no spending. EARNED is a duration such as 17 m.",
+    "placeholders": {
+      "EARNED": { "content": "$1", "example": "17 m" }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Streak",
+    "description": "Heading of the panel showing consecutive focus days."
+  },
+  "stats_streak_empty": {
+    "message": "Your streak starts with your first focus day.",
+    "description": "Quiet first-run line inside the streak panel when no focus day has been recorded yet."
+  },
+  "stats_streak_unit_one": {
+    "message": "day",
+    "description": "Unit next to the streak number, singular. The number itself is rendered separately."
+  },
+  "stats_streak_unit_other": {
+    "message": "days",
+    "description": "Unit next to the streak number, plural. The number itself is rendered separately."
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ freeze token banked",
+    "description": "Screen reader name of the row of freeze chips, singular. A freeze token covers one missed day without breaking the streak. COUNT is how many are banked.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "1" } }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ freeze tokens banked",
+    "description": "Screen reader name of the row of freeze chips, plural. A freeze token covers one missed day without breaking the streak. COUNT is how many are banked.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "2" } }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Streak freeze: one missed day, covered",
+    "description": "Hover text of a single freeze chip, explaining what one banked token buys."
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ active day this month ($MONTH$)",
+    "description": "Caption above the streak calendar, singular. COUNT is how many days of this month had a focus session, MONTH the month and year in the reader's locale.",
+    "placeholders": {
+      "COUNT": { "content": "$1", "example": "1" },
+      "MONTH": { "content": "$2", "example": "August 2026" }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ active days this month ($MONTH$)",
+    "description": "Caption above the streak calendar, plural. COUNT is how many days of this month had a focus session, MONTH the month and year in the reader's locale.",
+    "placeholders": {
+      "COUNT": { "content": "$1", "example": "4" },
+      "MONTH": { "content": "$2", "example": "August 2026" }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Active dates in $MONTH$: $DAYS$.",
+    "description": "Screen reader name of the streak calendar grid. MONTH is the month and year, DAYS the day numbers of that month that had a focus session, already joined with commas.",
+    "placeholders": {
+      "MONTH": { "content": "$1", "example": "August 2026" },
+      "DAYS": { "content": "$2", "example": "25, 26, 27, 28" }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "No active dates in $MONTH$.",
+    "description": "Screen reader name of the streak calendar grid when the month has no focus day yet. MONTH is the month and year.",
+    "placeholders": { "MONTH": { "content": "$1", "example": "August 2026" } }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Focus, last 14 days",
+    "description": "Heading and accessible name of the daily focus time bar chart."
+  },
+  "stats_chart_focus_empty": {
+    "message": "Focus minutes appear after your first session.",
+    "description": "Quiet first-run line replacing the daily focus time chart when there is nothing to plot."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Blocked attempts, last 14 days",
+    "description": "Heading and accessible name of the daily blocked attempts bar chart."
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Blocked attempts show up here once a session catches one.",
+    "description": "Quiet first-run line replacing the daily blocked attempts chart when there is nothing to plot."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Top blocked sites, last 30 days",
+    "description": "Heading and accessible name of the chart ranking the most blocked websites."
+  },
+  "stats_chart_sites_empty": {
+    "message": "Nothing blocked yet. That is a fine start.",
+    "description": "Quiet first-run line replacing the top blocked sites chart when nothing has been blocked."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Attempts by hour, this machine only",
+    "description": "Heading of the panel showing blocked attempts by hour of the day."
+  },
+  "stats_chart_other_site": {
+    "message": "other",
+    "description": "Row label of the top blocked sites chart gathering every site outside the top ten."
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$m",
+    "description": "Axis tick of the focus chart, minutes abbreviated to a single letter to fit the axis. MINUTES is the number.",
+    "placeholders": { "MINUTES": { "content": "$1", "example": "30" } }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blocked",
+    "description": "Value read out for one bar or table row of a blocked attempts chart, singular. COUNT is how many attempts were blocked.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "1" } }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blocked",
+    "description": "Value read out for one bar or table row of a blocked attempts chart, plural. COUNT is how many attempts were blocked.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "12" } }
+  },
+  "stats_chart_name_bar": {
+    "message": "Bar chart",
+    "description": "Fallback accessible name of a vertical bar chart that was given no name of its own."
+  },
+  "stats_chart_name_hbar": {
+    "message": "Horizontal bar chart",
+    "description": "Fallback accessible name of a horizontal bar chart that was given no name of its own."
+  },
+  "stats_chart_description_bar": {
+    "message": "Bar chart. Use the keyboard to move through data points, or open View as table for the same values.",
+    "description": "Screen reader description of a vertical bar chart. View as table is the label of the disclosure below the chart, so keep both spellings the same."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Horizontal bar chart. Use the keyboard to move through data points, or open View as table for the same values.",
+    "description": "Screen reader description of a horizontal bar chart. View as table is the label of the disclosure below the chart, so keep both spellings the same."
+  },
+  "stats_chart_empty_default": {
+    "message": "No data yet.",
+    "description": "Fallback quiet line replacing a chart that was given no first-run line of its own."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "description": "Screen reader name of one data point. LABEL is the category, such as a date or a website, and VALUE the already formatted measurement.",
+    "placeholders": {
+      "LABEL": { "content": "$1", "example": "28 Aug" },
+      "VALUE": { "content": "$2", "example": "10 m" }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "View as table",
+    "description": "Label of the disclosure under each chart that opens the same values as a table."
+  },
+  "stats_chart_table_category": {
+    "message": "Category",
+    "description": "First column header of the table under a chart, holding the date, hour, or website of each row."
+  },
+  "stats_chart_table_value": {
+    "message": "Value",
+    "description": "Second column header of the table under a chart, holding the measurement of each row."
+  },
+  "stats_heat_strip_label": {
+    "message": "24-hour blocked-attempt heat strip",
+    "description": "Screen reader name of the strip of 24 cells whose shading shows how many attempts each hour of the day blocked."
+  },
+  "stats_sessions_heading": {
+    "message": "Recent sessions on this machine",
+    "description": "Heading of the panel listing the most recent focus sessions."
+  },
+  "stats_sessions_empty": {
+    "message": "Your first session will appear here.",
+    "description": "Quiet first-run line inside the recent sessions panel when no session has been recorded yet."
+  },
+  "stats_sessions_col_date": {
+    "message": "Date",
+    "description": "Session table column header, and the same field label on the narrow-screen card: the day the session started."
+  },
+  "stats_sessions_col_start": {
+    "message": "Start",
+    "description": "Session table column header, and the same field label on the narrow-screen card: the time of day the session started."
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planned",
+    "description": "Session table column header, and the same field label on the narrow-screen card: the length the session was started for."
+  },
+  "stats_sessions_col_focused": {
+    "message": "Focused",
+    "description": "Session table column header, and the same field label on the narrow-screen card: the time actually spent focused."
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "All sites",
+    "description": "Session table column header, and the same field label on the narrow-screen card: credit spent on pauses that unblocked every site."
+  },
+  "stats_sessions_col_one_site": {
+    "message": "One site",
+    "description": "Session table column header, and the same field label on the narrow-screen card: credit spent unblocking a single site."
+  },
+  "stats_sessions_col_intention": {
+    "message": "Intention",
+    "description": "Session table column header: the note the user wrote about what the session was for."
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Outcome",
+    "description": "Session table column header: how the session finished."
+  },
+  "stats_sessions_col_source": {
+    "message": "Source",
+    "description": "Session table column header, hidden from sight and read only by screen readers, and the same field label on the narrow-screen card: whether the session was started by hand or by a schedule."
+  },
+  "stats_session_no_intention": {
+    "message": "No intention",
+    "description": "Stands in for the intention of a session the user started without writing one."
+  },
+  "stats_session_article_label": {
+    "message": "Session: $INTENTION$",
+    "description": "Screen reader name of one session card on a narrow screen. INTENTION is the note the user wrote, or the stand-in for a session started without one.",
+    "placeholders": { "INTENTION": { "content": "$1", "example": "thesis chapter" } }
+  },
+  "stats_session_source_manual": {
+    "message": "manual",
+    "description": "Says a session was started by hand. Shown on the narrow-screen card and read out for the dot glyph in the table. Lower case, because it sits inside a row rather than opening a sentence."
+  },
+  "stats_session_source_schedule": {
+    "message": "schedule",
+    "description": "Says a session was started by a schedule. Shown on the narrow-screen card. Lower case, because it sits inside a row rather than opening a sentence."
+  },
+  "stats_session_source_scheduled": {
+    "message": "scheduled",
+    "description": "Read out for the clock glyph in the session table, saying the session was started by a schedule. Lower case, because it sits inside a row rather than opening a sentence."
+  },
+  "stats_outcome_completed": {
+    "message": "Completed",
+    "description": "Outcome of a session that ran to its end, recorded before the extension stored a reason for it."
+  },
+  "stats_outcome_ended_early": {
+    "message": "Ended early",
+    "description": "Outcome of a session that stopped before its planned end, including one the extension never saw finish."
+  },
+  "stats_outcome_running": {
+    "message": "Running",
+    "description": "Outcome of the session that is still going right now."
+  }
+}

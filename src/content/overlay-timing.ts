@@ -1,10 +1,13 @@
 /**
  * The numbers the blocked page may work out on its own from a frozen active view: how much of
- * this focus block is left, how far along it is, and how the bank has grown since capture. Every
- * word around those numbers comes from the view's copy. Nothing here reads the public snapshot.
+ * this focus block is left, how far along it is, and how the bank has grown since capture. The
+ * words around those numbers come from the message catalogue, in the browser's own language.
+ * Nothing here reads the public snapshot.
  */
-import type { DocumentOverlayView } from '../shared/enforcement-v2';
+import type { DocumentOverlayView, RemainingSuffix } from '../shared/enforcement-v2';
+import { t, tPlural } from '../shared/i18n';
 import { growBank } from '../shared/live';
+import type { EndActionLabelV2 } from '../shared/types';
 
 export type ActiveOverlayView = Extract<DocumentOverlayView, { presentation: 'active' }>;
 
@@ -39,15 +42,20 @@ export function focusProgress(view: ActiveOverlayView, now: number): number {
  * view has not yet arrived. The words are the view's, the number is this module's.
  */
 export function remainingLabel(view: ActiveOverlayView, now: number): string {
-  const suffix: string | null = view.copy.remainingSuffix;
+  const suffix: RemainingSuffix | null = view.copy.remainingSuffix;
   const remaining: number | null = remainingFocusMs(view, now);
-  if (suffix === null || remaining === null) return view.copy.status.text;
-  if (remaining === 0) return view.copy.updatingLabel;
-  const amount: string =
+  // A timed status line is composed by the worker, which has already translated it.
+  if (suffix === null || remaining === null) {
+    return view.copy.status.kind === 'timed' ? view.copy.status.text : t('shared_until_stopped');
+  }
+  if (remaining === 0) return t('shared_updating_session');
+  const duration: string =
     remaining < 60_000
-      ? view.copy.underMinuteLabel
-      : `${Math.ceil(remaining / 60_000)} ${view.copy.minuteLabel}`;
-  return `${amount} ${suffix}`;
+      ? t('shared_less_than_a_minute')
+      : tPlural('shared_minutes', Math.ceil(remaining / 60_000));
+  return suffix === 'until your break'
+    ? t('shared_focus_remaining_break', { DURATION: duration })
+    : t('shared_focus_remaining_session', { DURATION: duration });
 }
 
 /** Grows the frozen bank forward from the capture time, through the shared rule. */
@@ -99,4 +107,9 @@ export function accessWait(view: ActiveOverlayView, now: number, costMs: number)
   }
   const waitMs: number = Math.ceil(rawWait / 1_000) * 1_000;
   return { affordable: false, waitMs, reason: 'ready-in' };
+}
+
+/** The End control's label, translated from the tag the worker published. */
+export function endActionLabel(tag: EndActionLabelV2): string {
+  return tag === 'Unlock' ? t('shared_unlock') : t('shared_end_session');
 }

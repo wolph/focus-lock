@@ -10,6 +10,7 @@ import {
 import { getDomain } from 'tldts';
 import { type AccessAvailability, accessAvailability } from '../shared/budget-display';
 import { MIN_BREAK_BEFORE_EARLY_MS } from '../shared/constants';
+import { t } from '../shared/i18n';
 import { growBank } from '../shared/live';
 import { ACTION_FAILED_COPY, RETURN_TO_WORK_FAILED_COPY } from '../shared/session-copy';
 import { formatClock } from '../shared/time';
@@ -131,6 +132,8 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
     snapshot.at,
     now,
   );
+  const unlockCost: string = formatClock(snapshot.unlockCostMs);
+  const pauseCost: string = formatClock(snapshot.pauseCostMs);
   const intention: string = snapshot.config?.intention ?? '';
   const authority: EndAuthorityV2 = snapshot.lifecycle.endAuthority;
   const activeGate: GateState | null = snapshot.gate ?? endGateOf(authority);
@@ -171,14 +174,14 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
   };
   const unlockAvailability: string | null = availabilityReason(snapshot.unlockCostMs);
   const pauseAvailability: string | null = availabilityReason(snapshot.pauseCostMs);
-  const pendingReason: string | null = command.pending ? 'Action in progress' : null;
+  const pendingReason: string | null = command.pending ? t('popup_action_in_progress') : null;
   const activeSiteReason: string | null =
     activeSite.status === 'loading'
-      ? 'Checking the active site'
+      ? t('popup_active_site_checking')
       : activeSite.status === 'unsupported'
-        ? 'Open a regular website to unlock it'
+        ? t('popup_active_site_unsupported')
         : activeSite.status === 'error'
-          ? 'Could not identify the active site'
+          ? t('popup_active_site_unknown')
           : null;
   const unlockDisabledReason: string | null =
     pendingReason ?? activeSiteReason ?? unlockAvailability;
@@ -213,7 +216,7 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
         disabled={command.pending}
         onClick={(): void => void command.run({ type: 'resumeFromPause' }, ACTION_FAILED_COPY)}
       >
-        Resume now
+        {t('popup_resume_now')}
       </button>
     ) : snapshot.phase === 'break' ? (
       breakEarlyVisible ? (
@@ -225,14 +228,22 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
             void command.run({ type: 'startNextFocusEarly' }, ACTION_FAILED_COPY)
           }
         >
-          Start next focus early
+          {t('popup_start_next_focus_early')}
         </button>
       ) : null
     ) : (
       <>
         <SpendButton
-          label="Unlock this site"
-          sub={`${formatClock(snapshot.unlockCostMs)} access, ${formatClock(snapshot.unlockCostMs)} credit${activeHost === null ? '' : ` - ${activeHost}`}`}
+          label={t('popup_unlock_this_site')}
+          sub={
+            activeHost === null
+              ? t('popup_spend_cost', { ACCESS: unlockCost, CREDIT: unlockCost })
+              : t('popup_spend_cost_host', {
+                  ACCESS: unlockCost,
+                  CREDIT: unlockCost,
+                  HOST: activeHost,
+                })
+          }
           disabledReason={unlockDisabledReason}
           onClick={(): void =>
             void command.run(
@@ -242,8 +253,8 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
           }
         />
         <SpendButton
-          label="Unlock all sites"
-          sub={`${formatClock(snapshot.pauseCostMs)} access, ${formatClock(snapshot.pauseCostMs)} credit`}
+          label={t('popup_unlock_all_sites')}
+          sub={t('popup_spend_cost', { ACCESS: pauseCost, CREDIT: pauseCost })}
           disabledReason={pauseDisabledReason}
           onClick={(): void =>
             void command.run({ type: 'openGate', gate: 'pause', host: null }, ACTION_FAILED_COPY)
@@ -274,7 +285,7 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
             disabled={command.pending}
             onClick={chooseWorkTab}
           >
-            Choose work tab
+            {t('popup_choose_work_tab_button')}
           </button>
         ) : null}
         {returnDestination !== null ? (
@@ -284,20 +295,22 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
             disabled={command.pending}
             onClick={chooseWorkTab}
           >
-            Change work tab
+            {t('popup_change_work_tab_button')}
           </button>
         ) : null}
       </div>
       {activeSite.status === 'error' ? (
         <p class="form-error" role="alert">
-          Could not identify the active site.
+          {t('popup_active_site_error')}
         </p>
       ) : null}
 
       <details class="session-disclosure session-actions" ref={actionsRef}>
-        <summary>Session actions</summary>
+        <summary>{t('popup_session_actions_summary')}</summary>
         <div class="session-disclosure__content">
-          <span class="meter-label">{formatClock(bankMs)} site access credit</span>
+          <span class="meter-label">
+            {t('popup_site_access_credit', { CREDIT: formatClock(bankMs) })}
+          </span>
           {activeGate === null ? (
             <div class="actions">
               {snapshot.phase === 'focus' ? phaseControls : null}

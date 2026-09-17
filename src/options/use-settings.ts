@@ -1,4 +1,5 @@
 import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import type { Ack, ClearFocusLockDataResponse } from '../shared/messages';
 import { sendRequest } from '../shared/messages';
 import {
@@ -29,8 +30,8 @@ import type {
   ThemeMode,
 } from '../shared/types';
 
-const LOAD_ERROR: string = 'Could not load settings. Reload the page to try again.';
-const RETRY_BOOT_ERROR: string = 'Could not restart Focus Lock. Try again.';
+const LOAD_ERROR: string = t('options_error_load');
+const RETRY_BOOT_ERROR: string = t('options_error_retry_boot');
 
 /**
  * The failure that stopped the worker, or null. Asked only after a load failed: a running worker
@@ -317,11 +318,11 @@ export function useSettingsStore(): SettingsStore {
   const refreshSetup: () => Promise<string | null> = async (): Promise<string | null> => {
     try {
       const response: unknown = await sendRequest({ type: 'getSetupState' });
-      if (!isSetupState(response)) return 'Could not refresh privacy settings. Reload the page.';
+      if (!isSetupState(response)) return t('options_error_refresh_privacy');
       setSetup(response);
       return null;
     } catch {
-      return 'Could not refresh privacy settings. Reload the page.';
+      return t('options_error_refresh_privacy');
     }
   };
 
@@ -334,9 +335,9 @@ export function useSettingsStore(): SettingsStore {
           ? response.ok
             ? null
             : response.error
-          : 'Could not update website blocking. Try again.';
+          : t('options_error_website_blocking');
       } catch {
-        error = 'Could not update website blocking. Try again.';
+        error = t('options_error_website_blocking');
       }
       const refreshError: string | null = await refreshSetup();
       return error ?? refreshError;
@@ -354,9 +355,9 @@ export function useSettingsStore(): SettingsStore {
           storageMode: next,
           deleteRemote: false,
         });
-        error = ackError(response, 'Could not change Chrome Sync. Try again.');
+        error = ackError(response, t('options_error_change_sync'));
       } catch {
-        error = 'Could not change Chrome Sync. Try again.';
+        error = t('options_error_change_sync');
       }
       const refreshError: string | null = await refreshSetup();
       return error ?? refreshError;
@@ -372,9 +373,9 @@ export function useSettingsStore(): SettingsStore {
           ? response.ok
             ? null
             : response.error
-          : 'Could not retry Chrome Sync. Try again.';
+          : t('options_error_retry_sync');
       } catch {
-        error = 'Could not retry Chrome Sync. Try again.';
+        error = t('options_error_retry_sync');
       }
       const refreshError: string | null = await refreshSetup();
       return error ?? refreshError;
@@ -432,13 +433,10 @@ export function useSettingsStore(): SettingsStore {
   ): Promise<string | null> => {
     return enqueueWrite(settingsWrites, async (): Promise<string | null> => {
       const current: Settings | null = settingsRef.current;
-      if (current === null) return 'Could not save settings. Reload the page and try again.';
+      if (current === null) return t('options_error_save_settings');
       const requestSettings: Settings = applySettingsMutation(current, mutation);
       const ack: Ack = await sendRequest({ type: 'updateSettings', settings: requestSettings });
-      const responseError: string | null = ackError(
-        ack,
-        'Could not save settings. Reload the page and try again.',
-      );
+      const responseError: string | null = ackError(ack, t('options_error_save_settings'));
       if (responseError !== null) return responseError;
       setSettings((latest: Settings | null): Settings => {
         const accepted: Settings = {
@@ -457,10 +455,7 @@ export function useSettingsStore(): SettingsStore {
   ): Promise<string | null> => {
     return enqueueWrite(listWrites, async (): Promise<string | null> => {
       const ack: Ack = await sendRequest({ type: 'updateLists', lists: next });
-      const responseError: string | null = ackError(
-        ack,
-        'Could not save lists. Reload the page and try again.',
-      );
+      const responseError: string | null = ackError(ack, t('options_error_save_lists'));
       if (responseError !== null) return responseError;
       setLists(next);
       return null;

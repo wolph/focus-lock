@@ -3,8 +3,12 @@
  * lookup labels and picker chrome, never session state: the worker's frozen view carries every
  * word that depends on the session, and this block carries the rest in one place.
  */
+import { t } from '../shared/i18n';
 
-/** Every label the lock screen and its picker author locally, in one block. */
+/**
+ * Every label the lock screen and its picker author locally, in one block. The content script
+ * runs after `chrome.i18n` is available, so reading the catalogue once at module load is enough.
+ */
 export const WORK_TARGET_COPY: Readonly<{
   pickerHeading: string;
   cancel: string;
@@ -27,26 +31,26 @@ export const WORK_TARGET_COPY: Readonly<{
   pageChanged: string;
   transportError: string;
 }> = {
-  pickerHeading: 'Choose a work tab',
-  cancel: 'Cancel',
-  searchLabel: 'Search work tabs',
-  searchPlaceholder: 'Search by title or website',
-  clearSearch: 'Clear search',
-  refreshTabs: 'Refresh tabs',
-  availableTabs: 'Available work tabs',
-  finding: 'Finding available tabs...',
-  searching: 'Searching work tabs...',
-  saving: 'Saving work tab...',
-  noTabs: 'No available work tabs. Open a site allowed by this session, then refresh tabs.',
-  noMatches: 'No matching tabs. Try another search or clear the search.',
-  loadFailed: 'Could not load work tabs. Try again.',
-  checking: 'Checking available work tabs...',
-  pickOne: 'Pick an open tab to continue your task.',
-  sessionUnavailable: 'Your focus session is not available. Try again, or reload this page.',
-  lookupFailed: 'Could not load your work tab. Try again, or reload this page.',
-  reconnect: 'Reload this page to reconnect to Focus Lock.',
-  pageChanged: 'The requesting page has changed. Reload the page.',
-  transportError: 'Could not reach Focus Lock. Try again.',
+  pickerHeading: t('overlay_picker_heading'),
+  cancel: t('overlay_picker_cancel'),
+  searchLabel: t('overlay_picker_search_label'),
+  searchPlaceholder: t('overlay_picker_search_placeholder'),
+  clearSearch: t('overlay_picker_clear_search'),
+  refreshTabs: t('overlay_picker_refresh_tabs'),
+  availableTabs: t('overlay_picker_available_tabs'),
+  finding: t('overlay_picker_finding'),
+  searching: t('overlay_picker_searching'),
+  saving: t('overlay_picker_saving'),
+  noTabs: t('overlay_picker_no_tabs'),
+  noMatches: t('overlay_picker_no_matches'),
+  loadFailed: t('overlay_picker_load_failed'),
+  checking: t('overlay_target_checking'),
+  pickOne: t('overlay_target_pick_tab'),
+  sessionUnavailable: t('overlay_target_session_unavailable'),
+  lookupFailed: t('overlay_target_lookup_failed'),
+  reconnect: t('overlay_target_reconnect'),
+  pageChanged: t('overlay_target_page_changed'),
+  transportError: t('overlay_target_transport_error'),
 };
 
 export interface PickerControls {

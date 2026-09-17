@@ -4,6 +4,8 @@
  * the next view. A dead channel and a refused session action read the same on screen, from the
  * view's transport copy. A refused work target action shows the worker's own sentence.
  */
+
+import { t } from '../shared/i18n';
 import type { Ack, Request } from '../shared/messages';
 import { sendRequest } from '../shared/messages';
 import { type MountedOverlay, mountedOverlay } from './overlay-state';
@@ -90,7 +92,7 @@ export function clearActionError(overlay: MountedOverlay): void {
 /** Only an active view carries transport copy, and only an active view renders an action. */
 export function showTransportError(overlay: MountedOverlay): void {
   if (overlay.view.presentation !== 'active') return;
-  showActionError(overlay, overlay.view.copy.transportError);
+  showActionError(overlay, t('shared_overlay_transport_error'));
 }
 
 export function showActionError(overlay: MountedOverlay, message: string): void {

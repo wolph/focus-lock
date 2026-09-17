@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { cleanup, render } from '@testing-library/preact';
 import { afterEach, describe, expect, it } from 'vitest';
+import { t } from '../../../src/shared/i18n';
 import type { EventRecord } from '../../../src/shared/types';
 import { SessionLog } from '../../../src/stats/SessionLog';
 
@@ -45,15 +46,15 @@ const EVENTS: EventRecord[] = [
 describe('SessionLog', () => {
   it('renders a row per session with outcome chips', () => {
     const { container, getByRole } = render(<SessionLog events={EVENTS} />);
-    expect(getByRole('heading', { level: 2 }).textContent).toBe('Recent sessions on this machine');
+    expect(getByRole('heading', { level: 2 }).textContent).toBe(t('stats_sessions_heading'));
     expect(container.querySelectorAll('tbody tr').length).toBe(3);
     expect(container.querySelectorAll('.session-table .chip.completed').length).toBe(1);
     expect(container.querySelectorAll('.session-table .chip.neutral').length).toBe(1);
     expect(container.querySelectorAll('.session-table .chip.running').length).toBe(1);
     expect(container.textContent).toContain('thesis chapter');
     expect(container.textContent).toContain('Ended early');
-    expect(container.textContent).toContain('All sites');
-    expect(container.textContent).toContain('One site');
+    expect(container.textContent).toContain(t('stats_sessions_col_all_sites'));
+    expect(container.textContent).toContain(t('stats_sessions_col_one_site'));
   });
 
   it('renders a v2 row with the shared outcome wording', () => {
@@ -136,8 +137,8 @@ describe('SessionLog', () => {
 
   it('renders the quiet first-run line with no sessions', () => {
     const { container, getByRole } = render(<SessionLog events={[]} />);
-    expect(getByRole('heading', { level: 2 }).textContent).toBe('Recent sessions on this machine');
-    expect(container.textContent).toContain('Your first session will appear here.');
+    expect(getByRole('heading', { level: 2 }).textContent).toBe(t('stats_sessions_heading'));
+    expect(container.textContent).toContain(t('stats_sessions_empty'));
   });
 
   it('renders mobile article records from the same session rows', () => {

@@ -23,6 +23,7 @@ import {
 import { rulesFromLists } from '../shared/constants';
 import { CoreError } from '../shared/errors';
 import { exactDataEqual } from '../shared/exact-data';
+import { t } from '../shared/i18n';
 import { SCHEDULE_STARTED_TITLE, SCHEDULE_UNTIL_STOPPED_BODY } from '../shared/session-copy';
 import type {
   HandledScheduleOccurrence,
@@ -58,16 +59,8 @@ export interface NextScheduleInfoV2 {
   startsAt: number;
 }
 
-/**
- * The shipped v1 notification for an occurrence that could not lock anything, repeated here
- * verbatim. It belongs in `session-copy.ts` once the cutover slice owns the notification port.
- */
-const UNAVAILABLE_TITLE: string = 'Focus schedule could not start';
-const UNAVAILABLE_BODY: string =
-  'Website blocking is not enabled. Finish setup or grant website access, then try again.';
-
 export function scheduleWindowBody(entry: ScheduleEntryV2): string {
-  return `Locked until ${entry.end}.`;
+  return t('notify_schedule_window_body', { END: entry.end });
 }
 
 /**
@@ -225,7 +218,7 @@ async function reportUnavailable(
   const token: string = candidate.occurrence.token;
   if (runtime.scheduleUnavailableNoticeToken === token) return runtime;
   const next: RuntimeStateV2 = await withNoticeToken(ports, runtime, token);
-  schedule.notify(UNAVAILABLE_TITLE, UNAVAILABLE_BODY);
+  schedule.notify(t('notify_schedule_unavailable_title'), t('notify_schedule_unavailable_body'));
   return next;
 }
 

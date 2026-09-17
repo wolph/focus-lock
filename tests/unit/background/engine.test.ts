@@ -21,6 +21,7 @@ import {
   rulesFromLists,
   TOP_SITES_DAILY,
 } from '../../../src/shared/constants';
+import { t } from '../../../src/shared/i18n';
 import type { Ack } from '../../../src/shared/messages';
 import {
   LOCAL_EVENTS,
@@ -943,8 +944,7 @@ describe('Engine', () => {
 
     await expect(h.engine.updateSettings(oversized)).resolves.toEqual({
       ok: false,
-      error:
-        'Settings exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again.',
+      error: t('notify_settings_sync_limit'),
     });
 
     expect(h.engine.getSettings()).toEqual(DEFAULT_SETTINGS);
@@ -981,8 +981,7 @@ describe('Engine', () => {
 
     await expect(h.engine.updateLists(oversized)).resolves.toEqual({
       ok: false,
-      error:
-        'Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.',
+      error: t('notify_lists_sync_limit'),
     });
 
     expect(h.engine.getLists()).toEqual({
@@ -1089,8 +1088,7 @@ describe('Engine', () => {
 
     await expect(h.engine.applySyncedLists(oversized)).resolves.toEqual({
       ok: false,
-      error:
-        'Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.',
+      error: t('notify_lists_sync_limit'),
     });
 
     expect(h.ports.now).not.toHaveBeenCalled();
@@ -2040,8 +2038,7 @@ describe('Engine', () => {
 
     await expect(h.engine.updateSettings(oversizedSettings())).resolves.toEqual({
       ok: false,
-      error:
-        'Settings exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again.',
+      error: t('notify_settings_sync_limit'),
     });
 
     expect(h.ports.now).not.toHaveBeenCalled();
@@ -2066,8 +2063,7 @@ describe('Engine', () => {
 
     await expect(h.engine.updateLists(oversized)).resolves.toEqual({
       ok: false,
-      error:
-        'Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.',
+      error: t('notify_lists_sync_limit'),
     });
 
     expect(h.ports.now).not.toHaveBeenCalled();
@@ -2093,8 +2089,7 @@ describe('Engine', () => {
 
     await expect(h.engine.updateSettings(oversized)).resolves.toEqual({
       ok: false,
-      error:
-        'Settings exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again.',
+      error: t('notify_settings_sync_limit'),
     });
 
     expect(h.engine.getSettings()).toEqual(DEFAULT_SETTINGS);
@@ -2115,8 +2110,7 @@ describe('Engine', () => {
 
     await expect(h.engine.updateLists(oversized)).resolves.toEqual({
       ok: false,
-      error:
-        'Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.',
+      error: t('notify_lists_sync_limit'),
     });
 
     expect(h.engine.getLists()).toEqual({

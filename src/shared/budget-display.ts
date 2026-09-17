@@ -1,3 +1,4 @@
+import { t } from './i18n';
 import { growBank } from './live';
 import { formatClock } from './time';
 import type { SessionSnapshotV2 } from './types';
@@ -31,7 +32,7 @@ export function accessAvailability(
   costMs: number,
 ): AccessAvailability {
   const endsAt: number | null = focusBoundary(snapshot);
-  if (endsAt !== null && now >= endsAt) return unavailable('Updating session');
+  if (endsAt !== null && now >= endsAt) return unavailable(t('shared_updating_session'));
   const bank: number = growBank(
     snapshot.bankMs,
     snapshot.bankAccrualPerMs,
@@ -40,15 +41,19 @@ export function accessAvailability(
     now,
   );
   if (bank >= costMs) return { affordable: true, waitMs: 0, message: null };
-  if (costMs > snapshot.bankCapMs) return unavailable('Cost exceeds the credit limit');
-  if (snapshot.phase !== 'focus') return unavailable('Credit earning resumes during focus');
-  if (snapshot.bankAccrualPerMs <= 0) return unavailable('Credit earning is turned off');
+  if (costMs > snapshot.bankCapMs) return unavailable(t('shared_cost_exceeds_limit'));
+  if (snapshot.phase !== 'focus') return unavailable(t('shared_credit_resumes_focus'));
+  if (snapshot.bankAccrualPerMs <= 0) return unavailable(t('shared_credit_off'));
   const rawWait: number = (costMs - bank) / snapshot.bankAccrualPerMs;
   if (!Number.isFinite(rawWait) || (endsAt !== null && rawWait >= endsAt - now)) {
-    return unavailable('Not enough time in this focus block');
+    return unavailable(t('shared_not_enough_time'));
   }
   const waitMs: number = Math.ceil(rawWait / 1_000) * 1_000;
-  return { affordable: false, waitMs, message: `Ready in ${formatClock(waitMs)}` };
+  return {
+    affordable: false,
+    waitMs,
+    message: t('shared_ready_in', { CLOCK: formatClock(waitMs) }),
+  };
 }
 
 /** Focus time needed for the bank to reach its next whole credit minute. */

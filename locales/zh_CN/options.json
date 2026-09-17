@@ -1,0 +1,83 @@
+{
+  "options_rule_pattern_placeholder_host": {
+    "message": "weibo.com"
+  },
+  "options_gate_wait_one": {
+    "message": "等待 $COUNT$ 秒",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "等待 $COUNT$ 秒",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "已包含 $COUNT$ 个网站",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "已包含 $COUNT$ 个网站",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_one": {
+    "message": "启用时包含 $COUNT$ 个",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "启用时包含 $COUNT$ 个",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "Sun"
+  },
+  "options_day_mon": {
+    "message": "Mon"
+  },
+  "options_day_tue": {
+    "message": "Tue"
+  },
+  "options_day_wed": {
+    "message": "Wed"
+  },
+  "options_day_thu": {
+    "message": "Thu"
+  },
+  "options_day_fri": {
+    "message": "Fri"
+  },
+  "options_day_sat": {
+    "message": "Sat"
+  },
+  "options_schedule_end_label": {
+    "message": "End"
+  }
+}

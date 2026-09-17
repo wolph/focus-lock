@@ -1,5 +1,6 @@
 import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useState } from 'preact/hooks';
+import { t, tPlural } from '../shared/i18n';
 import {
   isRelativeMinuteDuration,
   isSafeDayCount,
@@ -37,10 +38,10 @@ function NumberField(props: NumberFieldProps): VNode {
   const errorMessage: string =
     props.errorMessage ??
     (allowFraction
-      ? `${props.label} must be zero or greater.`
+      ? t('options_number_error_nonnegative', { LABEL: props.label })
       : allowZero
-        ? `${props.label} must be a whole number of zero or greater.`
-        : `${props.label} must be a positive whole number.`);
+        ? t('options_number_error_whole', { LABEL: props.label })
+        : t('options_number_error_positive', { LABEL: props.label }));
   return (
     <label class="field">
       {props.label}
@@ -85,43 +86,46 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
     useState<number>(delayIsPreset ? 60 : s.gate.delayMs / 1_000);
   return (
     <div>
-      <h3>Session defaults</h3>
-      <p class="help">
-        Mode and strictness are fixed when a session starts. These are the values the start form
-        opens with.
-      </p>
+      <h3>{t('options_session_defaults_heading')}</h3>
+      <p class="help">{t('options_session_defaults_help')}</p>
       <NumberField
-        label="Short session preset (minutes)"
+        label={t('options_preset_short_label')}
         value={s.presetsMin[0]}
         allowFraction
         min={MIN_RELATIVE_MINUTES}
         max={MAX_RELATIVE_MINUTES}
         isValid={isRelativeMinuteDuration}
-        errorMessage="Short session preset (minutes) must be within the supported minute range."
+        errorMessage={t('options_number_error_minute_range', {
+          LABEL: t('options_preset_short_label'),
+        })}
         onValue={(value: number): void => {
           props.onChange({ ...s, presetsMin: [value, s.presetsMin[1], s.presetsMin[2]] });
         }}
       />
       <NumberField
-        label="Default session preset (minutes)"
+        label={t('options_preset_default_label')}
         value={s.presetsMin[1]}
         allowFraction
         min={MIN_RELATIVE_MINUTES}
         max={MAX_RELATIVE_MINUTES}
         isValid={isRelativeMinuteDuration}
-        errorMessage="Default session preset (minutes) must be within the supported minute range."
+        errorMessage={t('options_number_error_minute_range', {
+          LABEL: t('options_preset_default_label'),
+        })}
         onValue={(value: number): void => {
           props.onChange({ ...s, presetsMin: [s.presetsMin[0], value, s.presetsMin[2]] });
         }}
       />
       <NumberField
-        label="Deep session preset (minutes)"
+        label={t('options_preset_deep_label')}
         value={s.presetsMin[2]}
         allowFraction
         min={MIN_RELATIVE_MINUTES}
         max={MAX_RELATIVE_MINUTES}
         isValid={isRelativeMinuteDuration}
-        errorMessage="Deep session preset (minutes) must be within the supported minute range."
+        errorMessage={t('options_number_error_minute_range', {
+          LABEL: t('options_preset_deep_label'),
+        })}
         onValue={(value: number): void => {
           props.onChange({ ...s, presetsMin: [s.presetsMin[0], s.presetsMin[1], value] });
         }}
@@ -136,7 +140,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               props.onChange({ ...s, defaultMode: 'blacklist' });
             }}
           />
-          Blacklist: block listed sites
+          {t('options_mode_blacklist_label')}
         </label>
         <label class="check">
           <input
@@ -147,7 +151,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               props.onChange({ ...s, defaultMode: 'whitelist' });
             }}
           />
-          Whitelist: allow only listed sites
+          {t('options_mode_whitelist_label')}
         </label>
       </div>
       <div class="field">
@@ -160,7 +164,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               props.onChange({ ...s, defaultStrictness: 'friction' });
             }}
           />
-          Friction: stopping early uses the configured deliberation gate
+          {t('options_strictness_friction_label')}
         </label>
         <label class="check">
           <input
@@ -171,15 +175,11 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               props.onChange({ ...s, defaultStrictness: 'hard' });
             }}
           />
-          Hard: no early end, temporary site access only
+          {t('options_strictness_hard_label')}
         </label>
       </div>
-      <h3>Focus and break cycle</h3>
-      <p class="help">
-        Defaults: 25 minute focus, 5 minute break, 15 minute long break every 4th cycle. Breaks on a
-        schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact
-        minutes are convention, not science.
-      </p>
+      <h3>{t('options_cycle_heading')}</h3>
+      <p class="help">{t('options_cycle_help')}</p>
       <label class="check">
         <input
           type="checkbox"
@@ -188,41 +188,38 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
             props.onChange({ ...s, cyclingOnByDefault: !s.cyclingOnByDefault });
           }}
         />
-        Cycle focus and breaks by default
+        {t('options_cycle_default_label')}
       </label>
       <NumberField
-        label="Focus minutes"
+        label={t('options_focus_minutes_label')}
         value={s.defaultCycling.focusMin}
         onValue={(value: number): void => {
           props.onChange({ ...s, defaultCycling: { ...s.defaultCycling, focusMin: value } });
         }}
       />
       <NumberField
-        label="Short break minutes"
+        label={t('options_short_break_minutes_label')}
         value={s.defaultCycling.shortBreakMin}
         onValue={(value: number): void => {
           props.onChange({ ...s, defaultCycling: { ...s.defaultCycling, shortBreakMin: value } });
         }}
       />
       <NumberField
-        label="Long break minutes"
+        label={t('options_long_break_minutes_label')}
         value={s.defaultCycling.longBreakMin}
         onValue={(value: number): void => {
           props.onChange({ ...s, defaultCycling: { ...s.defaultCycling, longBreakMin: value } });
         }}
       />
       <NumberField
-        label="Long break every Nth cycle"
+        label={t('options_long_every_label')}
         value={s.defaultCycling.longEvery}
         onValue={(value: number): void => {
           props.onChange({ ...s, defaultCycling: { ...s.defaultCycling, longEvery: value } });
         }}
       />
-      <h3>Deliberation gate</h3>
-      <p class="help">
-        A 10 second wait with an explicit back-to-work button measurably reduces impulse visits
-        (field study, PNAS 2023). The longer wait and the typed sentence roughly double the effect.
-      </p>
+      <h3>{t('options_gate_heading')}</h3>
+      <p class="help">{t('options_gate_help')}</p>
       <div class="field">
         <label class="check">
           <input
@@ -233,7 +230,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               props.onChange({ ...s, gate: { ...s.gate, delayMs: 0 } });
             }}
           />
-          Wait 0 seconds
+          {tPlural('options_gate_wait', 0)}
         </label>
         <label class="check">
           <input
@@ -244,7 +241,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               props.onChange({ ...s, gate: { ...s.gate, delayMs: 10_000 } });
             }}
           />
-          Wait 10 seconds
+          {tPlural('options_gate_wait', 10)}
         </label>
         <label class="check">
           <input
@@ -255,7 +252,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               props.onChange({ ...s, gate: { ...s.gate, delayMs: 30_000 } });
             }}
           />
-          Wait 30 seconds
+          {tPlural('options_gate_wait', 30)}
         </label>
         <label class="check">
           <input
@@ -269,15 +266,15 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               });
             }}
           />
-          Custom
+          {t('options_gate_wait_custom')}
         </label>
       </div>
       <NumberField
-        label="Custom delay (seconds)"
+        label={t('options_custom_delay_label')}
         value={customDelaySeconds}
         max={MAX_RELATIVE_DURATION_MS / 1_000}
         isValid={(value: number): boolean => Number.isSafeInteger(value * 1_000)}
-        errorMessage="Custom delay must be a positive whole number of seconds."
+        errorMessage={t('options_custom_delay_error')}
         onValue={(value: number): void => {
           setCustomDelaySeconds(value);
           props.onChange({ ...s, gate: { ...s.gate, delayMs: value * 1_000 } });
@@ -294,7 +291,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
             });
           }}
         />
-        Also require typing a sentence
+        {t('options_gate_typed_phrase_label')}
       </label>
       <label class="check">
         <input
@@ -307,7 +304,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
             });
           }}
         />
-        Enable "Ignore timeout and end anyway" button
+        {t('options_gate_force_end_label')}
       </label>
     </div>
   );
@@ -319,12 +316,9 @@ export function PauseEconomy(props: BehaviorProps): VNode {
   const earnPer30: number = Math.round(s.pause.earnRatio * 30 * 100) / 100;
   return (
     <div>
-      <p class="help">
-        Site access credit accrues while you focus. Both access to all sites and a single-site
-        unlock spend from the same balance. You can step away at any time without spending credit.
-      </p>
+      <p class="help">{t('options_credit_help')}</p>
       <NumberField
-        label="Minutes of site access per 30 minutes of focus"
+        label={t('options_earn_rate_label')}
         value={earnPer30}
         allowZero
         allowFraction
@@ -333,7 +327,7 @@ export function PauseEconomy(props: BehaviorProps): VNode {
         }}
       />
       <NumberField
-        label="Site access credit limit (minutes)"
+        label={t('options_credit_cap_label')}
         value={s.pause.capMs / 60_000}
         allowZero
         onValue={(value: number): void => {
@@ -341,47 +335,46 @@ export function PauseEconomy(props: BehaviorProps): VNode {
         }}
       />
       <NumberField
-        label="All-site access length (minutes)"
+        label={t('options_pause_length_label')}
         value={s.pause.pauseMs / 60_000}
         onValue={(value: number): void => {
           props.onChange({ ...s, pause: { ...s.pause, pauseMs: minToMs(value) } });
         }}
       />
       <NumberField
-        label="Site unlock length (minutes)"
+        label={t('options_unlock_length_label')}
         value={s.pause.unlockMs / 60_000}
         onValue={(value: number): void => {
           props.onChange({ ...s, pause: { ...s.pause, unlockMs: minToMs(value) } });
         }}
       />
-      <h3>Streak and retention</h3>
-      <p class="help">
-        The streak counts days that reach the goal. One default session keeps the chain alive, and a
-        freeze token repairs a missed day.
-      </p>
+      <h3>{t('options_streak_heading')}</h3>
+      <p class="help">{t('options_streak_help')}</p>
       <NumberField
-        label="Daily streak goal (focus minutes)"
+        label={t('options_streak_goal_label')}
         value={s.streakGoalMin}
         onValue={(value: number): void => {
           props.onChange({ ...s, streakGoalMin: value });
         }}
       />
       <NumberField
-        label="Freeze token interval (days)"
+        label={t('options_freeze_interval_label')}
         value={s.streakFreezeIntervalDays}
         max={MAX_SAFE_DAY_COUNT}
         isValid={isSafeDayCount}
-        errorMessage="Freeze token interval (days) must be within the supported day range."
+        errorMessage={t('options_number_error_day_range', {
+          LABEL: t('options_freeze_interval_label'),
+        })}
         onValue={(value: number): void => {
           props.onChange({ ...s, streakFreezeIntervalDays: value });
         }}
       />
       <NumberField
-        label="Keep daily stats (days)"
+        label={t('options_retention_label')}
         value={s.retentionDays}
         max={MAX_SAFE_DAY_COUNT}
         isValid={isSafeDayCount}
-        errorMessage="Keep daily stats (days) must be within the supported day range."
+        errorMessage={t('options_number_error_day_range', { LABEL: t('options_retention_label') })}
         onValue={(value: number): void => {
           props.onChange({ ...s, retentionDays: value });
         }}

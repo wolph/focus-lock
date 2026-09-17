@@ -1,0 +1,326 @@
+{
+  "stats_document_title": {
+    "message": "Statistici Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Istoricul tău de concentrare"
+  },
+  "stats_loading": {
+    "message": "Se încarcă statisticile tale."
+  },
+  "stats_load_error": {
+    "message": "Statisticile nu au putut fi încărcate. Reîncarcă pagina pentru a încerca din nou."
+  },
+  "stats_partial_error_both": {
+    "message": "Încercările pe oră și setările creditului de acces la site-uri nu sunt disponibile."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Încercările pe oră nu sunt disponibile."
+  },
+  "stats_partial_error_economy": {
+    "message": "Setările creditului de acces la site-uri nu sunt disponibile."
+  },
+  "stats_scope_synced": {
+    "message": "Totaluri sincronizate din acest cont Chrome. Panourile doar locale sunt marcate."
+  },
+  "stats_scope_local": {
+    "message": "Totaluri de pe acest computer. Statisticile Focus Lock nu se sincronizează."
+  },
+  "stats_scope_checking": {
+    "message": "Se verifică dacă aceste totaluri sunt sincronizate."
+  },
+  "stats_scope_unavailable": {
+    "message": "Domeniul statisticilor nu este disponibil. Totalurile pot include date sincronizate. Încercările pe oră și sesiunile recente sunt de pe acest computer."
+  },
+  "stats_scope_retry": {
+    "message": "Reverifică domeniul"
+  },
+  "stats_empty": {
+    "message": "Statisticile apar după prima ta sesiune."
+  },
+  "stats_tile_focus_today": {
+    "message": "Concentrare azi"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Concentrare în ultimele 7 zile"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Încercări blocate azi"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Cereri de deblocare abandonate azi"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Credit de acces la site-uri cheltuit azi"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Toate site-urile $ALL_SITES$, un singur site $ONE_SITE$, $EARNED$ câștigat",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ câștigat",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Serie"
+  },
+  "stats_streak_empty": {
+    "message": "Seria ta începe cu prima zi de concentrare."
+  },
+  "stats_streak_unit_one": {
+    "message": "zi"
+  },
+  "stats_streak_unit_other": {
+    "message": "de zile"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ jeton de înghețare păstrat",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ de jetoane de înghețare păstrate",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Înghețarea seriei: o zi pierdută, acoperită"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ zi activă luna aceasta ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ de zile active luna aceasta ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Zile active în $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Nicio zi activă în $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Concentrare, ultimele 14 zile"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Minutele de concentrare apar după prima ta sesiune."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Încercări blocate, ultimele 14 zile"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Încercările blocate apar aici după ce o sesiune prinde una."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Cele mai blocate site-uri, ultimele 30 de zile"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Nimic blocat încă. E un început bun."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Încercări pe oră, doar de pe acest computer"
+  },
+  "stats_chart_other_site": {
+    "message": "altele"
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blocată",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blocate",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Diagramă cu bare"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Diagramă cu bare orizontale"
+  },
+  "stats_chart_description_bar": {
+    "message": "Diagramă cu bare. Folosește tastatura pentru a parcurge punctele de date sau deschide Vezi ca tabel pentru aceleași valori."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Diagramă cu bare orizontale. Folosește tastatura pentru a parcurge punctele de date sau deschide Vezi ca tabel pentru aceleași valori."
+  },
+  "stats_chart_empty_default": {
+    "message": "Încă nu există date."
+  },
+  "stats_chart_table_summary": {
+    "message": "Vezi ca tabel"
+  },
+  "stats_chart_table_category": {
+    "message": "Categorie"
+  },
+  "stats_chart_table_value": {
+    "message": "Valoare"
+  },
+  "stats_heat_strip_label": {
+    "message": "Bandă termică a încercărilor blocate pe 24 de ore"
+  },
+  "stats_sessions_heading": {
+    "message": "Sesiuni recente pe acest computer"
+  },
+  "stats_sessions_empty": {
+    "message": "Prima ta sesiune va apărea aici."
+  },
+  "stats_sessions_col_date": {
+    "message": "Dată"
+  },
+  "stats_sessions_col_start": {
+    "message": "Început"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planificat"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Concentrat"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Toate site-urile"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Un singur site"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Intenție"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Rezultat"
+  },
+  "stats_sessions_col_source": {
+    "message": "Sursă"
+  },
+  "stats_session_no_intention": {
+    "message": "Fără intenție"
+  },
+  "stats_session_article_label": {
+    "message": "Sesiune: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_schedule": {
+    "message": "program"
+  },
+  "stats_session_source_scheduled": {
+    "message": "programată"
+  },
+  "stats_outcome_completed": {
+    "message": "Finalizată"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Încheiată devreme"
+  },
+  "stats_outcome_running": {
+    "message": "În curs"
+  },
+  "stats_streak_unit_few": {
+    "message": "zile"
+  },
+  "stats_streak_freeze_tokens_few": {
+    "message": "$COUNT$ jetoane de înghețare păstrate",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_active_days_few": {
+    "message": "$COUNT$ zile active luna aceasta ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_blocked_count_few": {
+    "message": "$COUNT$ blocate",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

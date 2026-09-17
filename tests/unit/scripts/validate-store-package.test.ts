@@ -1134,10 +1134,10 @@ describe('package creation and repository integration', (): void => {
       readFileSync(resolve('package.json'), 'utf8'),
     ) as Record<string, unknown>;
     const scripts: Record<string, unknown> = packageJson.scripts as Record<string, unknown>;
-    expect(scripts.build).toBe('npm run gen-icons && vite build');
-    expect(scripts['build:store']).toBe('npm run gen-icons && vite build --mode store');
+    expect(scripts.build).toBe('npm run gen-icons && npm run gen-locales && vite build');
+    expect(scripts['build:store']).toBe('npm run gen-icons && npm run gen-locales && vite build --mode store');
     expect(scripts.check).toBe(
-      'biome check . && tsc --noEmit && vitest run && npm run build:store',
+      'biome check . && tsc --noEmit && npm run check-locales && vitest run && npm run build:store',
     );
     expect(scripts['store:validate']).toBe('node scripts/validate-store-package.mjs');
     expect(scripts['store:package']).toBe(

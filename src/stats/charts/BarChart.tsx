@@ -1,5 +1,6 @@
 import type { JSX } from 'preact';
 import { type Dispatch, type StateUpdater, useId, useState } from 'preact/hooks';
+import { t } from '../../shared/i18n';
 import { ChartTable } from './ChartTable';
 
 export interface ChartDatum {
@@ -30,8 +31,7 @@ const LABEL_BAND: number = 28;
 const BASELINE_Y: number = H - LABEL_BAND;
 const PLOT_H: number = BASELINE_Y - PAD_TOP;
 const PLOT_W: number = W - PAD_LEFT - PAD_RIGHT;
-const CHART_DESCRIPTION: string =
-  'Bar chart. Use the keyboard to move through data points, or open View as table for the same values.';
+const CHART_DESCRIPTION: string = t('stats_chart_description_bar');
 
 /** Smallest clean number at or above the max, for a calm axis. */
 export function niceMax(maxValue: number): number {
@@ -67,7 +67,7 @@ export function BarChart(props: BarChartProps): JSX.Element {
   const titleId: string = useId();
   const descriptionId: string = useId();
   const data: ChartDatum[] = props.data;
-  const emptyLine: string = props.emptyLine ?? 'No data yet.';
+  const emptyLine: string = props.emptyLine ?? t('stats_chart_empty_default');
   if (data.length === 0 || data.every((d: ChartDatum): boolean => d.value <= 0)) {
     return <p class="empty-line">{emptyLine}</p>;
   }
@@ -98,7 +98,7 @@ export function BarChart(props: BarChartProps): JSX.Element {
         aria-labelledby={titleId}
         aria-describedby={descriptionId}
       >
-        <title id={titleId}>{props.label ?? 'Bar chart'}</title>
+        <title id={titleId}>{props.label ?? t('stats_chart_name_bar')}</title>
         <desc id={descriptionId}>{CHART_DESCRIPTION}</desc>
         {ticks.map(
           (t: number): JSX.Element => (
@@ -167,7 +167,7 @@ export function BarChart(props: BarChartProps): JSX.Element {
               height={PLOT_H}
               fill="transparent"
               tabindex={0}
-              aria-label={`${d.label}: ${props.format(d.value)}`}
+              aria-label={t('stats_chart_point', { LABEL: d.label, VALUE: props.format(d.value) })}
               onMouseEnter={(): void => setHovered(i)}
               onMouseLeave={(): void => setHovered(null)}
               onFocus={(): void => setHovered(i)}

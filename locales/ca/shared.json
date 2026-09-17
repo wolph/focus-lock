@@ -1,0 +1,571 @@
+{
+  "shared_until_stopped": {
+    "message": "Fins que l'aturis"
+  },
+  "shared_preset_short": {
+    "message": "curt"
+  },
+  "shared_preset_focus": {
+    "message": "concentració"
+  },
+  "shared_preset_deep_work": {
+    "message": "treball profund"
+  },
+  "shared_deep_work_note": {
+    "message": "Una preferència, no ciència: un bloc llarg i ininterromput, sense descansos automàtics."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ min en total, amb blocs de concentració de $FOCUS$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min de concentració ininterrompuda",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Comença fins que l'aturis"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Bloqueja fins al desbloqueig manual"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Les sessions fins que l'aturis es mantenen en Flexible o Fricció i no poden fer servir cicles de concentració i descans."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "El bloqueig estricte no està disponible per a les sessions fins que l'aturis: sense temporitzador ni final manual, la sessió no acabaria mai."
+  },
+  "shared_end_session": {
+    "message": "Acaba la sessió"
+  },
+  "shared_unlock": {
+    "message": "Desbloqueja"
+  },
+  "shared_gate_wait_none": {
+    "message": "sense espera"
+  },
+  "shared_gate_wait": {
+    "message": "una espera de $SECONDS$ segons",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ i una frase escrita",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Funciona fins que l'acabis amb $LABEL$. Sense cicles.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Funciona fins que el desbloquegis: $REQUIREMENT$ i després $LABEL$. Sense cicles.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Cicles forçats per Fins que l'aturis"
+  },
+  "shared_mode_blacklist": {
+    "message": "Bloqueja els llocs seleccionats"
+  },
+  "shared_mode_whitelist": {
+    "message": "Permet només els llocs seleccionats"
+  },
+  "shared_focus_time_label": {
+    "message": "Temps de concentració"
+  },
+  "shared_clock_focus_phase": {
+    "message": "fase de concentració"
+  },
+  "shared_clock_total_session": {
+    "message": "sessió total"
+  },
+  "shared_clock_pause": {
+    "message": "pausa"
+  },
+  "shared_clock_break": {
+    "message": "descans"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock s'està iniciant. S'apliquen les regles que has seleccionat."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "La sessió ha acabat. S'està acabant la neteja del navegador."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock no s'ha pogut iniciar. S'està acabant la neteja del navegador."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock no ha pogut netejar un inici incomplet."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock no ha pogut acabar la neteja del navegador."
+  },
+  "shared_retry_cleanup": {
+    "message": "Torna a provar la neteja"
+  },
+  "shared_end_failed": {
+    "message": "No s'ha pogut acabar la sessió. Torna-ho a provar."
+  },
+  "shared_retry_failed": {
+    "message": "No s'ha pogut tornar a provar la neteja. Torna-ho a provar."
+  },
+  "shared_action_failed": {
+    "message": "No s'ha pogut sol·licitar aquesta acció. Torna-ho a provar."
+  },
+  "shared_return_to_work_failed": {
+    "message": "No s'ha pogut tornar a la feina. Torna-ho a provar."
+  },
+  "shared_data_clear_pending": {
+    "message": "S'estan suprimint les dades de Focus Lock. S'està acabant la neteja."
+  },
+  "shared_data_clear_error": {
+    "message": "No s'han pogut suprimir les dades. Torna-ho a provar."
+  },
+  "shared_schedule_window_label": {
+    "message": "Fins que acabi la franja"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Comença segons l'horari i funciona fins que l'aturis: Acaba la sessió per a Flexible, Desbloqueja a través de la pausa de reflexió per a Fricció. Sense cicles."
+  },
+  "shared_schedule_started_title": {
+    "message": "L'horari de concentració ha començat"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Actiu fins que l'aturis."
+  },
+  "shared_settings_indefinite": {
+    "message": "Hi ha una sessió fins que l'aturis activa. Fes servir la finestra de la barra d'eines per veure-la o acabar-la."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock s'està iniciant. Es comprova l'accés als llocs web i s'apliquen les teves regles."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock no ha pogut acabar la neteja del navegador. Obre la finestra i torna-ho a provar."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Els controls de la sessió són a la finestra de la barra d'eines. La sessió activa manté les regles capturades quan va començar."
+  },
+  "shared_settings_timed": {
+    "message": "Sessió cronometrada activa fins a les $TIME$. Acaba automàticament. Fes servir la finestra de la barra d'eines per veure'n l'estat en directe.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Completada"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Completada manualment"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Acabada abans d'hora"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Acabada: s'ha perdut l'accés als llocs web"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Acabada: ha fallat la configuració del bloqueig"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Acabada: ha fallat la configuració del temporitzador"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Acabada: ha fallat l'aplicació a les pàgines"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Acabada: ha fallat la recuperació"
+  },
+  "shared_updating_session": {
+    "message": "S'està actualitzant la sessió"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Menys d'un minut"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ fins al teu descans",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ en aquesta sessió",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "El cost supera el límit de crèdit"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "El crèdit es torna a guanyar durant la concentració"
+  },
+  "shared_credit_off": {
+    "message": "El guany de crèdit està desactivat"
+  },
+  "shared_not_enough_time": {
+    "message": "No hi ha prou temps en aquest bloc de concentració"
+  },
+  "shared_ready_in": {
+    "message": "A punt d'aquí a $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Bloquejat per $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Bloquejat per la teva llista de bloqueig"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "No és a la teva llista de permesos"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Bloquejat per aquesta sessió"
+  },
+  "shared_verdict_allow_list": {
+    "message": "És a la teva llista de permesos"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Sempre permès"
+  },
+  "shared_verdict_unlock": {
+    "message": "Desbloquejat temporalment"
+  },
+  "shared_verdict_excluded": {
+    "message": "Exclòs d'una categoria seleccionada"
+  },
+  "shared_verdict_no_session": {
+    "message": "Cap sessió de concentració activa"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Permès per aquesta sessió"
+  },
+  "shared_category_social": {
+    "message": "Xarxes socials"
+  },
+  "shared_category_video": {
+    "message": "Vídeo i reproducció en línia"
+  },
+  "shared_category_news": {
+    "message": "Notícies"
+  },
+  "shared_category_mail": {
+    "message": "Correu"
+  },
+  "shared_category_shopping": {
+    "message": "Compres"
+  },
+  "shared_category_gaming": {
+    "message": "Jocs"
+  },
+  "shared_category_forums": {
+    "message": "Fòrums i avorriment"
+  },
+  "shared_synced_settings": {
+    "message": "Configuració"
+  },
+  "shared_synced_lists": {
+    "message": "Llistes de bloqueig i de permesos"
+  },
+  "shared_synced_credit": {
+    "message": "Crèdit d'accés a llocs"
+  },
+  "shared_synced_streaks": {
+    "message": "Ratxes"
+  },
+  "shared_synced_aggregates": {
+    "message": "Agregats d'intents bloquejats per domini"
+  },
+  "shared_local_full_urls": {
+    "message": "URL completes"
+  },
+  "shared_local_intentions": {
+    "message": "Intencions de concentració"
+  },
+  "shared_local_events": {
+    "message": "Esdeveniments detallats de la sessió"
+  },
+  "shared_local_runtime": {
+    "message": "Sessió activa en execució"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "No s'han pogut llegir algunes dades sincronitzades d'una versió anterior i s'han restablert."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Acaba la sessió en curs abans de suprimir totes les dades."
+  },
+  "shared_nav_product": {
+    "message": "Navegació del producte"
+  },
+  "shared_nav_overview": {
+    "message": "Resum"
+  },
+  "shared_nav_settings": {
+    "message": "Configuració"
+  },
+  "shared_section_blocking": {
+    "message": "Bloqueig"
+  },
+  "shared_section_schedule": {
+    "message": "Horari"
+  },
+  "shared_section_behavior": {
+    "message": "Comportament de la sessió"
+  },
+  "shared_section_budget": {
+    "message": "Crèdit d'accés a llocs"
+  },
+  "shared_section_notifications": {
+    "message": "Notificacions"
+  },
+  "shared_section_privacy": {
+    "message": "Privadesa i dades"
+  },
+  "shared_theme_auto": {
+    "message": "Automàtic"
+  },
+  "shared_theme_light": {
+    "message": "Clar"
+  },
+  "shared_theme_dark": {
+    "message": "Fosc"
+  },
+  "shared_theme_button": {
+    "message": "Tema: $CURRENT$. Canvia a $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "No s'ha pogut desar el tema. Recarrega la pàgina i torna-ho a provar."
+  },
+  "shared_host_search_label": {
+    "message": "Cerca llocs de $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Cap lloc de $TITLE$ coincideix amb la teva cerca.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Es mostren $SHOWN$ de $MATCHED$ llocs. Cerca per reduir la llista.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Es mostren $MATCHED$ de $TOTAL$ llocs.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Es mostren tots els $TOTAL$ llocs.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Acaba la sessió"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock s'està iniciant"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "S'apliquen les regles que has seleccionat."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Aquesta pàgina no s'ha carregat. Es carregarà sola quan acabi la sessió."
+  },
+  "shared_overlay_next_step": {
+    "message": "El teu pas següent"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Torna a la feina"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Tria una pestanya de treball"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Canvia la pestanya de treball"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Necessites un descans o accés a llocs?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Pots fer una pausa quan vulguis. L'accés als llocs gasta crèdit."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Ignora l'espera i acaba igualment"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock no ha pogut actualitzar aquesta acció. Torna-ho a provar."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ de crèdit d'accés a llocs",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Continua la teva tasca actual"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Desbloqueja tots els llocs"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Desbloqueja aquest lloc"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - costa $COST$ de crèdit",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Bloquejat fins a les $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Vas dir: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Desbloqueja $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Continua concentrat"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Escriu això per confirmar:"
+  },
+  "shared_gate_end_title": {
+    "message": "Acaba aquesta sessió"
+  }
+}

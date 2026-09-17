@@ -1,5 +1,6 @@
 import type { VNode } from 'preact';
 import { HelpPopover } from '../shared/HelpPopover';
+import { t } from '../shared/i18n';
 import { formatGateWait } from '../shared/session-copy';
 import type { Strictness } from '../shared/types';
 
@@ -27,8 +28,8 @@ export interface SessionTypeControlProps {
 function frictionConsequence(delayMs: number, requireTypedPhrase: boolean): string {
   const wait: string = formatGateWait(delayMs);
   return requireTypedPhrase
-    ? `Ending early requires ${wait} and typed confirmation.`
-    : `Ending early requires ${wait}. No typing is required.`;
+    ? t('popup_session_type_friction_hint_phrase', { WAIT: wait })
+    : t('popup_session_type_friction_hint', { WAIT: wait });
 }
 
 export function SessionTypeControl({
@@ -41,26 +42,26 @@ export function SessionTypeControl({
   const choices: readonly SessionTypeChoice[] = [
     {
       value: 'flexible',
-      label: 'Flexible',
-      consequence: 'End the session immediately whenever you choose.',
+      label: t('popup_session_type_flexible'),
+      consequence: t('popup_session_type_flexible_hint'),
       unavailableReason: null,
     },
     {
       value: 'friction',
-      label: 'Friction',
+      label: t('popup_session_type_friction'),
       consequence: frictionConsequence(frictionDelayMs, requireTypedPhrase),
       unavailableReason: null,
     },
     {
       value: 'hard',
-      label: 'Hard lock',
-      consequence: 'The session cannot end early. Site access credit still works.',
+      label: t('popup_session_type_hard'),
+      consequence: t('popup_session_type_hard_hint'),
       unavailableReason: hardUnavailableReason ?? null,
     },
   ];
   return (
-    <fieldset class="session-type-control" aria-label="Session type">
-      <legend>Session type</legend>
+    <fieldset class="session-type-control" aria-label={t('popup_session_type_legend')}>
+      <legend>{t('popup_session_type_legend')}</legend>
       <div class="session-type-choices">
         {choices.map((choice: SessionTypeChoice): VNode => {
           const disabled: boolean = choice.unavailableReason !== null;

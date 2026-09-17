@@ -1,0 +1,104 @@
+{
+  "overlay_stopped_title": {
+    "message": "Bloccato - Focus Lock"
+  },
+  "overlay_target_checking": {
+    "message": "Controllo delle schede di lavoro disponibili..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Scegli una scheda aperta per continuare il tuo lavoro."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "La tua sessione di concentrazione non è disponibile. Riprova o ricarica questa pagina."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Non è stato possibile caricare la tua scheda di lavoro. Riprova o ricarica questa pagina."
+  },
+  "overlay_target_reconnect": {
+    "message": "Ricarica questa pagina per riconnetterti a Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "La pagina richiedente è cambiata. Ricarica la pagina."
+  },
+  "overlay_target_transport_error": {
+    "message": "Non è stato possibile raggiungere Focus Lock. Riprova."
+  },
+  "overlay_picker_heading": {
+    "message": "Scegli una scheda di lavoro"
+  },
+  "overlay_picker_cancel": {
+    "message": "Annulla"
+  },
+  "overlay_picker_search_label": {
+    "message": "Cerca tra le schede di lavoro"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Cerca per titolo o sito"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Cancella la ricerca"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Aggiorna le schede"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Schede di lavoro disponibili"
+  },
+  "overlay_picker_finding": {
+    "message": "Ricerca delle schede disponibili..."
+  },
+  "overlay_picker_searching": {
+    "message": "Ricerca tra le schede di lavoro..."
+  },
+  "overlay_picker_saving": {
+    "message": "Salvataggio della scheda di lavoro..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Nessuna scheda di lavoro disponibile. Apri un sito consentito da questa sessione, poi aggiorna le schede."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Nessuna scheda corrispondente. Prova un'altra ricerca o cancella la ricerca."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Non è stato possibile caricare le schede di lavoro. Riprova."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ di $COUNT$ scheda",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ di $COUNT$ schede",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_many": {
+    "message": "$MATCHES$ di $COUNT$ schede",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

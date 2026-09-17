@@ -1,5 +1,6 @@
 import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useEffect, useState } from 'preact/hooks';
+import { t } from '../shared/i18n';
 
 export interface DomainInputProps {
   onError?: (error: string | null) => void;
@@ -24,7 +25,7 @@ export function DomainInput({ onAdd, onError }: DomainInputProps): VNode {
   return (
     <div class="domain-input-control">
       <label class="field-label" for="session-allow-domain">
-        Add an allowed domain
+        {t('popup_add_allowed_domain_label')}
       </label>
       <div class="domain-input-row">
         <input
@@ -32,7 +33,7 @@ export function DomainInput({ onAdd, onError }: DomainInputProps): VNode {
           type="text"
           inputMode="url"
           autocomplete="url"
-          placeholder="docs.example.com"
+          placeholder={t('popup_allowed_domain_placeholder')}
           value={value}
           aria-invalid={error !== null}
           aria-describedby={error === null ? undefined : 'session-allow-domain-error'}
@@ -45,9 +46,9 @@ export function DomainInput({ onAdd, onError }: DomainInputProps): VNode {
             submit();
           }}
         />
-        <button type="button" onClick={submit} aria-label="Add allowed domain">
+        <button type="button" onClick={submit} aria-label={t('popup_add_allowed_domain_button')}>
           <span aria-hidden="true">+</span>
-          <span>Add</span>
+          <span>{t('popup_add_button')}</span>
         </button>
       </div>
       {onError === undefined && error !== null ? (

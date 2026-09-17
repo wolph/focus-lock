@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Sessió de concentració completada"
+  },
+  "notify_session_complete_body": {
+    "message": "La teva sessió de concentració ha acabat."
+  },
+  "notify_schedule_window_body": {
+    "message": "Bloquejat fins a les $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "L'horari de concentració no s'ha pogut iniciar"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "El bloqueig de llocs web no està activat. Acaba la configuració o concedeix l'accés als llocs web i torna-ho a provar."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "La configuració s'ha completat en una altra pestanya."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "La configuració ha canviat en una altra pestanya. S'han tornat a carregar les opcions més recents."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "La configuració ha canviat en una altra pestanya. Torna a carregar-la abans d'acabar."
+  },
+  "notify_setup_not_complete": {
+    "message": "La configuració no està completa."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "La configuració encara no es pot acabar."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "L'opció d'emmagatzematge de la configuració ha canviat. Torna a carregar la configuració abans d'acabar."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Ha fallat l'operació d'emmagatzematge de la configuració inicial."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Ha fallat l'operació de configuració inicial."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock no ha pogut comprovar l'accés als llocs web. Torna a provar la configuració o recarrega l'extensió."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "L'accés als llocs web està concedit, però Focus Lock no ha pogut activar el bloqueig. Torna a provar la configuració o recarrega l'extensió."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "L'accés als llocs web no està disponible i Focus Lock no ha pogut acabar la neteja del bloqueig. Torna a provar la configuració o recarrega l'extensió."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock ha rebut un estat d'accés als llocs web incoherent. Torna a provar la configuració o recarrega l'extensió."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock no ha acabat d'iniciar-se: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "error desconegut"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock funciona correctament, no hi ha res per restablir"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock no pot restablir un estat d'execució que encara està desat dins d'una generació de la configuració"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "No es pot tornar a provar la supressió de dades."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Desactiva la sincronització abans de suprimir les dades sincronitzades"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock encara està acabant un canvi anterior. Torna-ho a provar d'aquí a un moment."
+  },
+  "notify_work_gate_stuck": {
+    "message": "No s'ha pogut tancar la pausa de reflexió oberta. Torna-ho a provar."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "La pestanya de treball no està disponible."
+  },
+  "notify_settings_sync_limit": {
+    "message": "La configuració supera el límit de 8 KB de Chrome Sync. Elimina entrades de l'horari o escurça les intencions i torna-ho a provar."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Les llistes superen el límit de 8 KB de Chrome Sync. Elimina regles personalitzades o de la llista de permesos i torna-ho a provar."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "hi ha una sessió estricta en curs: els llocs bloquejats es podran eliminar quan acabi"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "hi ha una sessió estricta en curs: les entrades noves a la llista de permesos s'activaran quan acabi"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "hi ha una sessió estricta en curs: les categories es podran desactivar quan acabi"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "hi ha una sessió estricta en curs: les exclusions noves s'activaran quan acabi"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "hi ha una sessió estricta en curs: rebaixar el rigor predeterminat espera fins que acabi"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "hi ha una sessió estricta en curs: escurçar l'espera de reflexió debilita la pausa"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "hi ha una sessió estricta en curs: eliminar la frase escrita debilita la pausa"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "hi ha una sessió estricta en curs: apujar el ritme de guany finança més escapades"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "hi ha una sessió estricta en curs: apujar el límit de crèdit finança més escapades"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "hi ha una sessió estricta en curs: escurçar les pauses en rebaixa el cost"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "hi ha una sessió estricta en curs: escurçar els desbloquejos en rebaixa el cost"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "hi ha una sessió estricta en curs: la seva entrada d'horari no es pot debilitar fins que acabi"
+  }
+}

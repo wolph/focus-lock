@@ -12,6 +12,7 @@ import {
 } from '../../../src/background/work-target';
 import { DEFAULT_LISTS, DEFAULT_SETTINGS, rulesFromLists } from '../../../src/shared/constants';
 import { exactDataEqual } from '../../../src/shared/exact-data';
+import { t } from '../../../src/shared/i18n';
 import type {
   Ack,
   CommandResponseV2,
@@ -380,7 +381,7 @@ describe('work targets', (): void => {
     });
     expect(await service.returnToWork(SESSION_ID, 1, popup)).toEqual({
       ok: false,
-      error: 'Focus Lock is still finishing an earlier change. Try again in a moment.',
+      error: t('notify_work_gate_busy'),
     });
     expect(calls).toEqual([]);
   });

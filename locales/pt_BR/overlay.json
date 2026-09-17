@@ -1,0 +1,104 @@
+{
+  "overlay_stopped_title": {
+    "message": "Bloqueado - Focus Lock"
+  },
+  "overlay_target_checking": {
+    "message": "Verificando as abas de trabalho disponíveis..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Escolha uma aba aberta para continuar sua tarefa."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Sua sessão de foco não está disponível. Tente de novo ou recarregue esta página."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Não foi possível carregar sua aba de trabalho. Tente de novo ou recarregue esta página."
+  },
+  "overlay_target_reconnect": {
+    "message": "Recarregue esta página para reconectar ao Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "A página que fez o pedido mudou. Recarregue a página."
+  },
+  "overlay_target_transport_error": {
+    "message": "Não foi possível falar com o Focus Lock. Tente de novo."
+  },
+  "overlay_picker_heading": {
+    "message": "Escolha uma aba de trabalho"
+  },
+  "overlay_picker_cancel": {
+    "message": "Cancelar"
+  },
+  "overlay_picker_search_label": {
+    "message": "Pesquisar abas de trabalho"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Pesquise por título ou site"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Limpar a pesquisa"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Atualizar abas"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Abas de trabalho disponíveis"
+  },
+  "overlay_picker_finding": {
+    "message": "Procurando abas disponíveis..."
+  },
+  "overlay_picker_searching": {
+    "message": "Pesquisando abas de trabalho..."
+  },
+  "overlay_picker_saving": {
+    "message": "Salvando a aba de trabalho..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Nenhuma aba de trabalho disponível. Abra um site permitido por esta sessão e atualize as abas."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Nenhuma aba corresponde. Tente outra pesquisa ou limpe a pesquisa."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Não foi possível carregar as abas de trabalho. Tente de novo."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ de $COUNT$ aba",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ de $COUNT$ abas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_many": {
+    "message": "$MATCHES$ de $COUNT$ abas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

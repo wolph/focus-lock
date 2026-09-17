@@ -1,3 +1,4 @@
+import { t } from '../shared/i18n';
 import { statsOutcomeLabelV2, statsPlanLabelV2 } from '../shared/session-copy';
 import type {
   LegacyEventRecord,
@@ -13,15 +14,15 @@ const MAX_ROWS: number = 20;
  * reason, so it claims none, but it lands in the same Outcome column as the v2 rows and takes
  * that column's casing: one column, one spelling per outcome.
  */
-const LEGACY_COMPLETED_OUTCOME: string = 'Completed';
-const LEGACY_ENDED_EARLY_OUTCOME: string = 'Ended early';
+const LEGACY_COMPLETED_OUTCOME: string = t('stats_outcome_completed');
+const LEGACY_ENDED_EARLY_OUTCOME: string = t('stats_outcome_ended_early');
 
 /**
  * A row closed without any end event has no reason either, but it sits in the same
  * column as the v2 reason table, so it takes that table's casing.
  */
-const ENDED_EARLY_OUTCOME: string = 'Ended early';
-const RUNNING_OUTCOME: string = 'Running';
+const ENDED_EARLY_OUTCOME: string = t('stats_outcome_ended_early');
+const RUNNING_OUTCOME: string = t('stats_outcome_running');
 
 export interface SessionRowV2 {
   startedAt: number;

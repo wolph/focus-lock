@@ -1,3 +1,4 @@
+import { t } from '../shared/i18n';
 import type { WorkTab } from '../shared/work-target';
 import { WorkTabIcons } from './work-tab-icons';
 import { WORK_TARGET_COPY } from './work-tab-picker-view';
@@ -166,7 +167,10 @@ function tabRow(tab: WorkTab, index: number): RenderedRow {
   button.className = 'work-tab-option';
   button.dataset.rowIndex = String(index);
   button.style.top = `${index * ROW_HEIGHT + 8}px`;
-  const label: string = tab.hostname === undefined ? tab.title : `${tab.title} (${tab.hostname})`;
+  const label: string =
+    tab.hostname === undefined
+      ? tab.title
+      : t('overlay_picker_tab_label', { TITLE: tab.title, HOSTNAME: tab.hostname });
   button.setAttribute('aria-label', label);
   button.title = label;
   button.style.setProperty('--tab-colour', domainColour(tab.hostname ?? ''));

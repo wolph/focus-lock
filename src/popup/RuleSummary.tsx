@@ -2,6 +2,7 @@ import type { VNode } from 'preact';
 import { ALL_CATEGORIES } from '../core/categories';
 import { hostRuleCoversHost } from '../core/matcher';
 import { HelpPopover } from '../shared/HelpPopover';
+import { formatNumber, t, tPlural } from '../shared/i18n';
 import type {
   CategoryId,
   CategoryList,
@@ -42,13 +43,8 @@ export interface RuleSummaryProps {
  * whole form, so a screen reader reading a disabled button was told nothing about it. Named here,
  * beside the buttons it describes, and pointed at by `aria-describedby`.
  */
-export const CATEGORIES_LOCKED_COPY: string =
-  'Category editing is disabled until blocked-site lists reload.';
+export const CATEGORIES_LOCKED_COPY: string = t('popup_categories_locked');
 const CATEGORIES_LOCKED_ID: string = 'draft-categories-locked';
-
-function plural(count: number, singular: string, pluralValue: string): string {
-  return count === 1 ? singular : pluralValue;
-}
 
 /**
  * Category membership rows rendered in the popup. A bundled category holds hundreds of hosts and
@@ -57,16 +53,14 @@ function plural(count: number, singular: string, pluralValue: string): string {
  */
 const MEMBERSHIP_PREVIEW: number = 8;
 
-function RuleDetail({
-  kind,
-  pattern,
-}: {
-  kind: 'domain' | 'regular expression';
-  pattern: string;
-}): VNode {
+function RuleDetail({ kind, pattern }: { kind: 'domain' | 'regex'; pattern: string }): VNode {
   return (
     <HelpPopover
-      label={`Show full ${kind}: ${pattern}`}
+      label={
+        kind === 'regex'
+          ? t('popup_show_full_regex', { PATTERN: pattern })
+          : t('popup_show_full_domain', { PATTERN: pattern })
+      }
       triggerClassName="rule-detail"
       triggerContent={<span class="rule-value">{pattern}</span>}
     >
@@ -76,11 +70,12 @@ function RuleDetail({
 }
 
 function RuleValue({ rule }: { rule: Rule }): VNode {
-  const kind: 'domain' | 'regular expression' =
-    rule.kind === 'regex' ? 'regular expression' : 'domain';
+  const kind: 'domain' | 'regex' = rule.kind === 'regex' ? 'regex' : 'domain';
   return (
     <li class="rule-item">
-      <span class="rule-kind">{rule.kind === 'regex' ? 'Regular expression' : 'Domain'}</span>
+      <span class="rule-kind">
+        {kind === 'regex' ? t('popup_rule_kind_regex') : t('popup_rule_kind_domain')}
+      </span>
       <RuleDetail kind={kind} pattern={rule.pattern} />
     </li>
   );
@@ -121,7 +116,7 @@ function BlockRules({
   return (
     <div class="rule-sections">
       <section class="rule-section" aria-labelledby="draft-categories-heading">
-        <h3 id="draft-categories-heading">Blocked categories</h3>
+        <h3 id="draft-categories-heading">{t('popup_blocked_categories_heading')}</h3>
         {categoriesEditable ? null : (
           <p id={CATEGORIES_LOCKED_ID} class="radio-hint">
             {CATEGORIES_LOCKED_COPY}
@@ -151,12 +146,15 @@ function BlockRules({
                 >
                   <span>{category.title}</span>
                   <span class="draft-category__count" aria-hidden="true">
-                    {effectiveHosts.length} {plural(effectiveHosts.length, 'site', 'sites')}
+                    {tPlural('popup_sites', effectiveHosts.length)}
                   </span>
                 </button>
                 {enabled ? (
                   <>
-                    <ul class="rule-membership" aria-label={`${category.title} sites`}>
+                    <ul
+                      class="rule-membership"
+                      aria-label={t('popup_category_sites_label', { CATEGORY: category.title })}
+                    >
                       {effectiveHosts.slice(0, MEMBERSHIP_PREVIEW).map(
                         (host: string): VNode => (
                           <li key={host}>
@@ -167,8 +165,7 @@ function BlockRules({
                     </ul>
                     {effectiveHosts.length > MEMBERSHIP_PREVIEW ? (
                       <p class="rule-membership__more">
-                        and {effectiveHosts.length - MEMBERSHIP_PREVIEW} more{' '}
-                        {plural(effectiveHosts.length - MEMBERSHIP_PREVIEW, 'site', 'sites')}
+                        {tPlural('popup_more_sites', effectiveHosts.length - MEMBERSHIP_PREVIEW)}
                       </p>
                     ) : null}
                   </>
@@ -181,7 +178,7 @@ function BlockRules({
 
       {exclusionRows.length > 0 ? (
         <section class="rule-section" aria-labelledby="draft-exclusions-heading">
-          <h3 id="draft-exclusions-heading">Allowed exceptions</h3>
+          <h3 id="draft-exclusions-heading">{t('popup_allowed_exceptions_heading')}</h3>
           <ul class="rule-list">
             {exclusionRows.map(
               ({ category, host }: { category: CategoryList; host: string }): VNode => (
@@ -196,9 +193,9 @@ function BlockRules({
       ) : null}
 
       <section class="rule-section" aria-labelledby="draft-extra-blocked-heading">
-        <h3 id="draft-extra-blocked-heading">Extra blocked rules</h3>
+        <h3 id="draft-extra-blocked-heading">{t('popup_extra_blocked_heading')}</h3>
         {extraRules.length === 0 ? (
-          <p class="rule-empty">No extra blocked rules.</p>
+          <p class="rule-empty">{t('popup_no_extra_blocked')}</p>
         ) : (
           <ul class="rule-list">
             {extraRules.map(
@@ -217,9 +214,9 @@ function AllowRules({ draft, lists }: Pick<RuleSummaryProps, 'draft' | 'lists'>)
   const allowedRules: Rule[] = [...lists.whitelist, ...draft.rules.sessionAllowlist];
   return (
     <section class="rule-section" aria-labelledby="draft-allowed-heading">
-      <h3 id="draft-allowed-heading">Allowed sites and rules</h3>
+      <h3 id="draft-allowed-heading">{t('popup_allowed_heading')}</h3>
       {allowedRules.length === 0 ? (
-        <p class="rule-empty">No sites are allowed yet.</p>
+        <p class="rule-empty">{t('popup_no_allowed_sites')}</p>
       ) : (
         <ul class="rule-list">
           {allowedRules.map(
@@ -246,36 +243,37 @@ export function RuleSummary(props: RuleSummaryProps): VNode {
     <section class="rule-summary" aria-labelledby="rule-summary-heading">
       <div class="rule-summary__heading">
         <h2 id="rule-summary-heading">
-          {props.draft.mode === 'blacklist' ? 'What will be blocked' : 'What will be allowed'}
+          {props.draft.mode === 'blacklist'
+            ? t('popup_what_will_be_blocked')
+            : t('popup_what_will_be_allowed')}
         </h2>
         {props.draft.mode === 'blacklist' ? (
           <p>
             <span>
-              {enabledCount} of {ALL_CATEGORIES.length} categories selected
+              {t('popup_categories_selected', {
+                SELECTED: formatNumber(enabledCount),
+                TOTAL: formatNumber(ALL_CATEGORIES.length),
+              })}
             </span>
-            <span>
-              {extraBlockedCount} extra blocked {plural(extraBlockedCount, 'rule', 'rules')}
-            </span>
+            <span>{tPlural('popup_extra_blocked_rules', extraBlockedCount)}</span>
           </p>
         ) : (
-          <p>
-            {allowedCount} allowed {plural(allowedCount, 'rule', 'rules')}
-          </p>
+          <p>{tPlural('popup_allowed_rules', allowedCount)}</p>
         )}
         <div class="rule-summary__scope">
           <span>
             {props.draft.mode === 'whitelist'
-              ? 'Allowed-site and rule changes here apply only to this session. Everything else is blocked.'
-              : 'Category and rule changes here apply only to this session.'}
+              ? t('popup_scope_whitelist')
+              : t('popup_scope_blacklist')}
           </span>
           <button type="button" onClick={props.onOpenSettings}>
-            Open Settings for permanent defaults
+            {t('popup_open_settings_defaults')}
           </button>
         </div>
       </div>
       <section
         class="rule-summary__scroll"
-        aria-label="Session rule details"
+        aria-label={t('popup_rule_details_label')}
         // biome-ignore lint/a11y/noNoninteractiveTabindex: The scroll region must receive keyboard scroll commands.
         tabIndex={0}
         onKeyDown={scrollRuleList}

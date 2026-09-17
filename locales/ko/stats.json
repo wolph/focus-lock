@@ -1,0 +1,295 @@
+{
+  "stats_document_title": {
+    "message": "Focus Lock 통계"
+  },
+  "stats_page_title": {
+    "message": "포커스 기록"
+  },
+  "stats_loading": {
+    "message": "통계를 로드 중입니다."
+  },
+  "stats_load_error": {
+    "message": "통계를 로드할 수 없습니다. 새로 고쳐보세요。"
+  },
+  "stats_partial_error_both": {
+    "message": "시간별 시도 및 사이트 접근 크레딧 설정을 사용할 수 없습니다。"
+  },
+  "stats_partial_error_attempts": {
+    "message": "시간별 시도를 사용할 수 없습니다।"
+  },
+  "stats_partial_error_economy": {
+    "message": "사이트 접근 크레딧 설정을 사용할 수 없습니다।"
+  },
+  "stats_scope_synced": {
+    "message": "이 Chrome 계정에서 동기화된 합계입니다। 로컬 전용 패널은 라벨이 지정되어 있습니다।"
+  },
+  "stats_scope_local": {
+    "message": "이 기계의 합계입니다। Focus Lock 통계는 동기화되지 않습니다।"
+  },
+  "stats_scope_checking": {
+    "message": "이 합계가 동기화되는지 확인 중입니다।"
+  },
+  "stats_scope_unavailable": {
+    "message": "통계 범위를 사용할 수 없습니다। 합계에 동기화된 데이터가 포함될 수 있습니다। 시간별 시도 및 최근 세션은 이 기계의 것입니다।"
+  },
+  "stats_scope_retry": {
+    "message": "범위 확인 재시도"
+  },
+  "stats_empty": {
+    "message": "첫 세션 후 통계가 표시됩니다।"
+  },
+  "stats_tile_focus_today": {
+    "message": "오늘 포커스"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "지난 7 일간 포커스"
+  },
+  "stats_tile_attempts_today": {
+    "message": "오늘 차단된 시도"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "오늘 거부된 게이트 요청"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "오늘 사용한 사이트 접근 크레딧"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "모든 사이트 $ALL_SITES$, 한 사이트 $ONE_SITE$, $EARNED$ 획득",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ 획득",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "연속 기록"
+  },
+  "stats_streak_empty": {
+    "message": "연속 기록은 첫 포커스 일부터 시작됩니다।"
+  },
+  "stats_streak_unit_one": {
+    "message": "day"
+  },
+  "stats_streak_unit_other": {
+    "message": "일"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ 동결 토큰이 은행에 예치되었습니다",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ 동결 토큰이 은행에 예치되었습니다",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "연속 기록 동결: 하나의 놓친 날, 커버됨"
+  },
+  "stats_streak_active_days_one": {
+    "message": "이 달 ($MONTH$)의 $COUNT$ 활동 일",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "이 달 ($MONTH$)의 $COUNT$ 활동 일",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "$MONTH$의 활동 날짜: $DAYS$।",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "$MONTH$에 활동 날짜가 없습니다।",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "포커스, 지난 14 일"
+  },
+  "stats_chart_focus_empty": {
+    "message": "포커스 분은 첫 세션 후에 표시됩니다।"
+  },
+  "stats_chart_attempts_heading": {
+    "message": "차단된 시도, 지난 14 일"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "세션이 1 개를 포착하면 차단된 시도가 여기에 표시됩니다।"
+  },
+  "stats_chart_sites_heading": {
+    "message": "상위 차단 사이트, 지난 30 일"
+  },
+  "stats_chart_sites_empty": {
+    "message": "아직 아무것도 차단되지 않았습니다। 그것은 좋은 시작입니다।"
+  },
+  "stats_chart_hours_heading": {
+    "message": "시간별 시도, 이 기계만"
+  },
+  "stats_chart_other_site": {
+    "message": "기타"
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ 차단",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ 차단",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "막대 차트"
+  },
+  "stats_chart_name_hbar": {
+    "message": "가로 막대 차트"
+  },
+  "stats_chart_description_bar": {
+    "message": "막대 차트입니다। 키보드를 사용하여 데이터 포인트를 이동하거나 표로 보기를 열어 동일한 값을 확인합니다।"
+  },
+  "stats_chart_description_hbar": {
+    "message": "가로 막대 차트입니다। 키보드를 사용하여 데이터 포인트를 이동하거나 표로 보기를 열어 동일한 값을 확인합니다।"
+  },
+  "stats_chart_empty_default": {
+    "message": "아직 데이터가 없습니다।"
+  },
+  "stats_chart_table_summary": {
+    "message": "표로 보기"
+  },
+  "stats_chart_table_category": {
+    "message": "카테고리"
+  },
+  "stats_chart_table_value": {
+    "message": "값"
+  },
+  "stats_heat_strip_label": {
+    "message": "24 시간 차단 시도 열 스트립"
+  },
+  "stats_sessions_heading": {
+    "message": "이 기계의 최근 세션"
+  },
+  "stats_sessions_empty": {
+    "message": "첫 세션이 여기에 표시됩니다।"
+  },
+  "stats_sessions_col_date": {
+    "message": "날짜"
+  },
+  "stats_sessions_col_start": {
+    "message": "시작"
+  },
+  "stats_sessions_col_planned": {
+    "message": "계획"
+  },
+  "stats_sessions_col_focused": {
+    "message": "포커스됨"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "모든 사이트"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "한 사이트"
+  },
+  "stats_sessions_col_intention": {
+    "message": "의도"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "결과"
+  },
+  "stats_sessions_col_source": {
+    "message": "소스"
+  },
+  "stats_session_no_intention": {
+    "message": "의도 없음"
+  },
+  "stats_session_article_label": {
+    "message": "세션: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "수동"
+  },
+  "stats_session_source_schedule": {
+    "message": "스케줄"
+  },
+  "stats_session_source_scheduled": {
+    "message": "스케줄됨"
+  },
+  "stats_outcome_completed": {
+    "message": "완료됨"
+  },
+  "stats_outcome_ended_early": {
+    "message": "조기 종료"
+  },
+  "stats_outcome_running": {
+    "message": "실행 중"
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "stats_document_title": {
+    "message": "Statistiche di Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Il tuo bilancio di concentrazione"
+  },
+  "stats_loading": {
+    "message": "Caricamento delle statistiche."
+  },
+  "stats_load_error": {
+    "message": "Impossibile caricare le statistiche. Ricarica per riprovare."
+  },
+  "stats_partial_error_both": {
+    "message": "I tentativi per ora e le impostazioni del credito di accesso ai siti non sono disponibili."
+  },
+  "stats_partial_error_attempts": {
+    "message": "I tentativi per ora non sono disponibili."
+  },
+  "stats_partial_error_economy": {
+    "message": "Le impostazioni del credito di accesso ai siti non sono disponibili."
+  },
+  "stats_scope_synced": {
+    "message": "Totali sincronizzati da questo account Chrome. I riquadri solo locali sono contrassegnati."
+  },
+  "stats_scope_local": {
+    "message": "Totali di questo computer. Le statistiche di Focus Lock non vengono sincronizzate."
+  },
+  "stats_scope_checking": {
+    "message": "Controllo se questi totali sono sincronizzati."
+  },
+  "stats_scope_unavailable": {
+    "message": "L'ambito delle statistiche non è disponibile. I totali potrebbero includere dati sincronizzati. I tentativi per ora e le sessioni recenti vengono da questo computer."
+  },
+  "stats_scope_retry": {
+    "message": "Ricontrolla l'ambito"
+  },
+  "stats_empty": {
+    "message": "Le statistiche compaiono dopo la tua prima sessione."
+  },
+  "stats_tile_focus_today": {
+    "message": "Concentrazione oggi"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Concentrazione negli ultimi 7 giorni"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Tentativi bloccati oggi"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Richieste di sblocco abbandonate oggi"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Credito di accesso speso oggi"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Tutti i siti $ALL_SITES$, un sito $ONE_SITE$, $EARNED$ guadagnati",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ guadagnati",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Serie"
+  },
+  "stats_streak_empty": {
+    "message": "La tua serie comincia con il tuo primo giorno di concentrazione."
+  },
+  "stats_streak_unit_one": {
+    "message": "giorno"
+  },
+  "stats_streak_unit_other": {
+    "message": "giorni"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ congelamento in banca",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ congelamenti in banca",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Congelamento della serie: un giorno saltato, coperto"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ giorno attivo questo mese ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ giorni attivi questo mese ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Giorni attivi di $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Nessun giorno attivo a $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Concentrazione, ultimi 14 giorni"
+  },
+  "stats_chart_focus_empty": {
+    "message": "I minuti di concentrazione compaiono dopo la tua prima sessione."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Tentativi bloccati, ultimi 14 giorni"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "I tentativi bloccati compaiono qui appena una sessione ne intercetta uno."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Siti più bloccati, ultimi 30 giorni"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Ancora niente di bloccato. È un ottimo inizio."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Tentativi per ora, solo questo computer"
+  },
+  "stats_chart_other_site": {
+    "message": "altri"
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ bloccato",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ bloccati",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Grafico a barre"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Grafico a barre orizzontali"
+  },
+  "stats_chart_description_bar": {
+    "message": "Grafico a barre. Usa la tastiera per scorrere i dati, oppure apri Mostra come tabella per gli stessi valori."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Grafico a barre orizzontali. Usa la tastiera per scorrere i dati, oppure apri Mostra come tabella per gli stessi valori."
+  },
+  "stats_chart_empty_default": {
+    "message": "Ancora nessun dato."
+  },
+  "stats_chart_table_summary": {
+    "message": "Mostra come tabella"
+  },
+  "stats_chart_table_category": {
+    "message": "Categoria"
+  },
+  "stats_chart_table_value": {
+    "message": "Valore"
+  },
+  "stats_heat_strip_label": {
+    "message": "Striscia di intensità dei tentativi bloccati sulle 24 ore"
+  },
+  "stats_sessions_heading": {
+    "message": "Sessioni recenti su questo computer"
+  },
+  "stats_sessions_empty": {
+    "message": "La tua prima sessione comparirà qui."
+  },
+  "stats_sessions_col_date": {
+    "message": "Data"
+  },
+  "stats_sessions_col_start": {
+    "message": "Inizio"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Prevista"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Concentrato"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Tutti i siti"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Un sito"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Intenzione"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Esito"
+  },
+  "stats_sessions_col_source": {
+    "message": "Origine"
+  },
+  "stats_session_no_intention": {
+    "message": "Nessuna intenzione"
+  },
+  "stats_session_article_label": {
+    "message": "Sessione: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "manuale"
+  },
+  "stats_session_source_schedule": {
+    "message": "programmata"
+  },
+  "stats_session_source_scheduled": {
+    "message": "avviata dalla programmazione"
+  },
+  "stats_outcome_completed": {
+    "message": "Completata"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Terminata prima"
+  },
+  "stats_outcome_running": {
+    "message": "In corso"
+  },
+  "stats_streak_unit_many": {
+    "message": "giorni"
+  },
+  "stats_streak_freeze_tokens_many": {
+    "message": "$COUNT$ congelamenti in banca",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_active_days_many": {
+    "message": "$COUNT$ giorni attivi questo mese ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_blocked_count_many": {
+    "message": "$COUNT$ bloccati",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

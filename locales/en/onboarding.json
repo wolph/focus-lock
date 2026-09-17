@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Set up Focus Lock",
+    "description": "Browser tab title of the first-run setup page."
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock setup",
+    "description": "Small label above the heading on every step of the first-run setup page."
+  },
+  "onboarding_progress": {
+    "message": "Step $STEP$ of $TOTAL$",
+    "description": "Progress line above each setup step. STEP is the current step number and TOTAL the number of steps, both formatted numbers.",
+    "placeholders": {
+      "STEP": { "content": "$1", "example": "2" },
+      "TOTAL": { "content": "$2", "example": "3" }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Your saved setup progress could not be restored. Starting again with your current defaults.",
+    "description": "Status message on the setup page when the stored draft was unreadable and setup restarted from the current defaults."
+  },
+  "onboarding_complete_heading": {
+    "message": "Setup complete",
+    "description": "Heading of the final setup screen, shown once the user has finished setup."
+  },
+  "onboarding_complete_body": {
+    "message": "Your choices are saved. Open Focus Lock from the Chrome toolbar to start a session.",
+    "description": "Body text of the final setup screen. Focus Lock is the product name and stays untranslated."
+  },
+  "onboarding_error_heading": {
+    "message": "Setup unavailable",
+    "description": "Heading shown when the setup page could not load its state from the extension."
+  },
+  "onboarding_error_body": {
+    "message": "Could not load setup. Try again.",
+    "description": "Alert text shown when the setup page could not load its state from the extension."
+  },
+  "onboarding_retry_button": {
+    "message": "Retry",
+    "description": "Button that repeats the failed action, on the setup load error screen and on the website access step after a refused permission."
+  },
+  "onboarding_save_error": {
+    "message": "Could not save setup progress. Try again.",
+    "description": "Alert text on the setup page when saving the user's choices failed."
+  },
+  "onboarding_enable_error": {
+    "message": "Could not enable website blocking. Try again.",
+    "description": "Alert text on the website access step when the permission request or the rule registration failed."
+  },
+  "onboarding_finish_error": {
+    "message": "Could not complete setup. Your choices are still saved. Try again.",
+    "description": "Alert text on the last setup step when finishing setup failed."
+  },
+  "onboarding_lists_heading": {
+    "message": "Choose your starting block list",
+    "description": "Heading of setup step 1, where the user picks which website categories to block."
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "In $MODE$, enabled categories and extra blocked sites are unavailable.",
+    "description": "Sentence on setup step 1 explaining the block list mode. MODE is the name of that mode, shown in bold.",
+    "placeholders": { "MODE": { "content": "$1", "example": "Block list" } }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "In $MODE$, every site is unavailable except your allow list.",
+    "description": "Sentence on setup step 1 explaining the allow list mode. MODE is the name of that mode, shown in bold.",
+    "placeholders": { "MODE": { "content": "$1", "example": "Allow list" } }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "These choices become defaults for future sessions. You can edit them later.",
+    "description": "Note under the mode explanation on setup step 1."
+  },
+  "onboarding_lists_legend": {
+    "message": "Recommended website categories",
+    "description": "Legend of the category checkbox group on setup step 1."
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ site",
+    "description": "Number of websites in a category, shown next to its checkbox on setup step 1. Singular.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "1" } }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ sites",
+    "description": "Number of websites in a category, shown next to its checkbox on setup step 1. Plural.",
+    "placeholders": { "COUNT": { "content": "$1", "example": "52" } }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Show $CATEGORY$ sites",
+    "description": "Button on setup step 1 that reveals the domains of one category. CATEGORY is the category name, such as Social media.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social media" } }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Hide $CATEGORY$ sites",
+    "description": "Button on setup step 1 that hides the domains of one category again. CATEGORY is the category name, such as Social media.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social media" } }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ domains",
+    "description": "Accessible name of the scrolling domain list of one expanded category on setup step 1. CATEGORY is the category name.",
+    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social media" } }
+  },
+  "onboarding_continue_button": {
+    "message": "Continue",
+    "description": "Button at the end of setup step 1 that moves on to the website access step."
+  },
+  "onboarding_access_heading": {
+    "message": "Enable website blocking",
+    "description": "Heading of setup step 2, where Chrome is asked for access to all websites."
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your session ends.",
+    "description": "First paragraph of setup step 2, explaining what the extension does with website access."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Categories and custom domains can include any website. Chrome will therefore request this capability:",
+    "description": "Paragraph on setup step 2 introducing the permission warning Chrome shows, which follows on the next line."
+  },
+  "onboarding_access_capability": {
+    "message": "Read and change all your data on all websites",
+    "description": "Chrome's own wording for the all-sites permission, quoted on setup step 2. Use the exact wording Chrome shows in this language."
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock uses that access only while applying your blocking rules.",
+    "description": "Reassurance under the quoted permission warning on setup step 2."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome did not grant website access. You can retry.",
+    "description": "Status message on setup step 2 after the user refused the permission prompt."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload the extension.",
+    "description": "Status message on setup step 2 when the permission was granted but the blocking rules could not be registered."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Enable website blocking",
+    "description": "Primary button on setup step 2 that opens Chrome's permission prompt."
+  },
+  "onboarding_access_defer_button": {
+    "message": "Not now",
+    "description": "Secondary button on setup step 2 that skips the permission and moves on to the next step."
+  },
+  "onboarding_sync_heading": {
+    "message": "Choose where your settings are stored",
+    "description": "Heading of setup step 3, where the user picks between Chrome Sync and this profile only."
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Sync across Chrome devices",
+    "description": "Label of the sync switch on setup step 3, used as its accessible name and as its visible title."
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "The approved data below will use Chrome Sync after you finish setup.",
+    "description": "Text under the sync switch on setup step 3 while sync is on. The data it refers to is listed below it."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "All Focus Lock data stays in this Chrome profile.",
+    "description": "Text under the sync switch on setup step 3 while sync is off."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Synced",
+    "description": "Heading of the list of data that Chrome Sync carries, on setup step 3."
+  },
+  "onboarding_sync_local_title": {
+    "message": "Local only",
+    "description": "Heading of the list of data that never leaves this Chrome profile, on setup step 3."
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Nothing is sent to the Focus Lock developer.",
+    "description": "Note under the two data lists on setup step 3."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Finish setup with sync enabled",
+    "description": "Button that finishes setup on step 3 while the sync switch is on."
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Finish setup without sync",
+    "description": "Button that finishes setup on step 3 while the sync switch is off."
+  }
+}

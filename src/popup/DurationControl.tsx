@@ -1,4 +1,5 @@
 import type { VNode } from 'preact';
+import { t, tPlural } from '../shared/i18n';
 import { DEEP_WORK_NOTE, UNTIL_STOPPED_LABEL } from '../shared/session-copy';
 import { Chip } from './form-controls';
 import { type DraftDuration, type TimedDurationDraft, timedDurationOf } from './start-draft';
@@ -23,12 +24,12 @@ export function DurationControl({ presets, value, onChange }: DurationControlPro
     !indefinite && timed.customMin.trim() === '' && timed.presetMin === min;
 
   return (
-    <fieldset class="duration-control" aria-label="Session length">
+    <fieldset class="duration-control" aria-label={t('popup_session_length_label')}>
       {presets.map(
         (min: number, index: number): VNode => (
           <Chip
             key={min}
-            label={`${min} min`}
+            label={tPlural('shared_minutes', min)}
             hint={index === DEEP_WORK_INDEX ? DEEP_WORK_NOTE : undefined}
             selected={presetSelected(min)}
             onClick={(): void => onChange({ kind: 'timed', presetMin: min, customMin: '' })}
@@ -48,8 +49,8 @@ export function DurationControl({ presets, value, onChange }: DurationControlPro
         type="number"
         min="1"
         inputMode="numeric"
-        aria-label="Custom minutes"
-        placeholder="min"
+        aria-label={t('popup_custom_minutes_label')}
+        placeholder={t('popup_custom_minutes_placeholder')}
         value={timed.customMin}
         onInput={(event: Event): void =>
           onChange({

@@ -1,0 +1,279 @@
+{
+  "popup_settings_button_label": {
+    "message": "Mipango"
+  },
+  "popup_open_settings_failed": {
+    "message": "Could not open Mipango. Try again."
+  },
+  "popup_setup_required_heading": {
+    "message": "Finish setting up Fokasi Lock"
+  },
+  "popup_open_setup_button": {
+    "message": "Fungua setup"
+  },
+  "popup_blocking_off_heading": {
+    "message": "Tovuti blocking is off"
+  },
+  "popup_blocking_off_body": {
+    "message": "Fokasi Lock cannot start a session until Chrome grants website access and blocking is enabled."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome did not grant website access. Tovuti blocking is still off."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Tovuti access is granted, but Fokasi Lock could not enable blocking. Jaribu Tena setup or reload the extension."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Wezesha website blocking"
+  },
+  "popup_retry_button": {
+    "message": "Jaribu Tena"
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Your session ended because Fokasi Lock could not enable website blocking."
+  },
+  "popup_restart_failed": {
+    "message": "Could not restart Fokasi Lock. Try again."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Fokasi Lock could not start"
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Futa everything and start over"
+  },
+  "popup_delete_all_button": {
+    "message": "Futa all Fokasi Lock data"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Kuanzisha status unavailable. Reload Fokasi Lock to try again."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Fokasi status unavailable"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Fungua a regular website to unlock it"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Anza next focus early"
+  },
+  "popup_session_actions_summary": {
+    "message": "Kikao actions"
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Ongeza an allowed domain"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Ongeza allowed domain"
+  },
+  "popup_add_button": {
+    "message": "Ongeza"
+  },
+  "popup_draft_stop_friction": {
+    "message": "Malizia after a $SECONDS$s wait.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Malizia after a $SECONDS$s wait and confirmation phrase.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Kikao length"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Custom dakikas"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_back_to_work": {
+    "message": "Nyuma to work"
+  },
+  "popup_back_to_work_name": {
+    "message": "Nyuma to work: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Nyuma to work: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Kategoriya editing is disabled until blocked-site lists reload."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Zuiaed categories"
+  },
+  "popup_show_full_domain": {
+    "message": "Onyesha full domain: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Onyesha full regular expression: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ tovuti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ tovutis",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "and $COUNT$ more tovuti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "and $COUNT$ more tovutis",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Ruhusued exceptions"
+  },
+  "popup_allowed_heading": {
+    "message": "Ruhusued sites and rules"
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ extra blocked kanuni",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ extra blocked kanunis",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ allowed kanuni",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ allowed kanunis",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Ruhusued-site and rule changes here apply only to this session. Everything else is blocked."
+  },
+  "popup_scope_blacklist": {
+    "message": "Kategoriya and rule changes here apply only to this session."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Fungua Mipango for permanent defaults"
+  },
+  "popup_rule_details_label": {
+    "message": "Kikao rule details"
+  },
+  "popup_session_type_legend": {
+    "message": "Kikao type"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Malizia the session immediately whenever you choose."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Maliziaing early requires $WAIT$. No typing is required.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Maliziaing early requires $WAIT$ and typed confirmation.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_invalid_duration_error": {
+    "message": "Enter a session length greater than zero dakikas."
+  },
+  "popup_session_settings_summary": {
+    "message": "Kikao settings"
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Zuiaing mode"
+  },
+  "popup_start_focus_label": {
+    "message": "Anza $DURATION$ focus",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  }
+}

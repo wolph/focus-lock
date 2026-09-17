@@ -1,5 +1,6 @@
 import type { JSX } from 'preact';
 import { type Dispatch, type StateUpdater, useRef, useState } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import type {
   CommandResponseV2,
   Request,
@@ -10,7 +11,13 @@ import type {
 import { sendRequest } from '../shared/messages';
 import { ackError } from '../shared/runtime-validation';
 import { END_FAILED_COPY } from '../shared/session-copy';
-import type { EndAuthorityV2, GateState, SessionConfigV2 } from '../shared/types';
+import type {
+  EndActionLabelV2,
+  EndAuthorityV2,
+  EndGateConfirmLabelV2,
+  GateState,
+  SessionConfigV2,
+} from '../shared/types';
 import { commandErrorMessage } from './command-errors';
 import type { GateCommandErrorMapper, GateRequest } from './GatePanel';
 
@@ -71,12 +78,13 @@ export const mapGateError: GateCommandErrorMapper = (
 ): string | null => commandErrorMessage(response, fallback);
 
 /**
- * Only an open friction End authority publishes exact cancel-gate copy. A pause or
- * unlock gate keeps the panel's own default label.
+ * Only an open friction End authority publishes exact cancel-gate copy. A pause or unlock gate
+ * keeps the panel's own default label. The published label is pinned English that the runtime
+ * contract validates word for word, so the cancel gate reads the same message from the catalogue.
  */
 export function gatePhraseLabel(authority: EndAuthorityV2, gate: GateState): string | undefined {
   return authority.kind === 'friction-gate' && authority.gate !== null && gate.kind === 'cancel'
-    ? authority.copy.phraseLabel
+    ? t('shared_gate_phrase_label')
     : undefined;
 }
 
@@ -87,15 +95,27 @@ export function gatePhraseLabel(authority: EndAuthorityV2, gate: GateState): str
  */
 export function gateConfirmLabel(authority: EndAuthorityV2, gate: GateState): string | undefined {
   return authority.kind === 'friction-gate' && authority.gate !== null && gate.kind === 'cancel'
-    ? authority.copy.confirm
+    ? confirmLabelText(authority.copy.confirm)
     : undefined;
+}
+
+/**
+ * The worker publishes these two labels as fixed English, which the runtime contract validates
+ * word for word. They are tags rather than copy, so the popup reads each one's own message.
+ */
+function confirmLabelText(tag: EndGateConfirmLabelV2): string {
+  return tag === 'Unlock' ? t('shared_unlock') : t('shared_end_the_session');
+}
+
+function actionLabelText(tag: EndActionLabelV2): string {
+  return tag === 'Unlock' ? t('shared_unlock') : t('shared_end_session');
 }
 
 /** The label on the visible End control, published by the worker with the authority. */
 export function endActionLabel(authority: EndAuthorityV2): string | null {
-  if (authority.kind === 'immediate') return authority.actionLabel;
+  if (authority.kind === 'immediate') return actionLabelText(authority.actionLabel);
   if (authority.kind === 'friction-gate' && authority.gate === null) {
-    return authority.copy.actionLabel;
+    return actionLabelText(authority.copy.actionLabel);
   }
   return null;
 }

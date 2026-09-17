@@ -22,6 +22,7 @@ import { cancelPhrase, GATE_EXPIRY_MS, pausePhrase, unlockSitePhrase } from '../
 import type { DocumentContentCommand } from '../shared/enforcement-v2';
 import { CoreError } from '../shared/errors';
 import { exactDataEqual } from '../shared/exact-data';
+import { t } from '../shared/i18n';
 import type {
   CommandResponseV2,
   RetryCleanupResultCodeV2,
@@ -1311,7 +1312,7 @@ export class SessionControllerV2 {
     const settings: SettingsV2 = this.schedule.settings();
     if (settings.sounds.sessionComplete) this.effects.playSound('sessionComplete');
     if (settings.sessionCompleteNotification) {
-      this.effects.notify('Focus session complete', 'Your focus session finished.');
+      this.effects.notify(t('notify_session_complete_title'), t('notify_session_complete_body'));
     }
     this.publish();
   }

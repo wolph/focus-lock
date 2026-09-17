@@ -1,0 +1,345 @@
+{
+  "stats_document_title": {
+    "message": "Statistiques Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Ton bilan de concentration"
+  },
+  "stats_loading": {
+    "message": "Chargement de tes statistiques."
+  },
+  "stats_load_error": {
+    "message": "Impossible de charger les statistiques. Recharge la page pour réessayer."
+  },
+  "stats_partial_error_both": {
+    "message": "Les tentatives par heure et les réglages du crédit d'accès aux sites sont indisponibles."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Les tentatives par heure sont indisponibles."
+  },
+  "stats_partial_error_economy": {
+    "message": "Les réglages du crédit d'accès aux sites sont indisponibles."
+  },
+  "stats_scope_synced": {
+    "message": "Totaux synchronisés depuis ce compte Chrome. Les panneaux locaux sont signalés."
+  },
+  "stats_scope_local": {
+    "message": "Totaux de cette machine. Les statistiques Focus Lock ne sont pas synchronisées."
+  },
+  "stats_scope_checking": {
+    "message": "Vérification de l'origine synchronisée ou non de ces totaux."
+  },
+  "stats_scope_unavailable": {
+    "message": "L'origine des statistiques est indisponible. Les totaux peuvent inclure des données synchronisées. Les tentatives par heure et les sessions récentes viennent de cette machine."
+  },
+  "stats_scope_retry": {
+    "message": "Revérifier l'origine"
+  },
+  "stats_empty": {
+    "message": "Les statistiques apparaissent après ta première session."
+  },
+  "stats_tile_focus_today": {
+    "message": "Concentration aujourd'hui"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Concentration sur 7 jours"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Tentatives bloquées aujourd'hui"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Demandes de sas abandonnées aujourd'hui"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Crédit d'accès dépensé aujourd'hui"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Tous les sites $ALL_SITES$, un site $ONE_SITE$, $EARNED$ gagnés",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ gagnés",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Série"
+  },
+  "stats_streak_empty": {
+    "message": "Ta série commence avec ton premier jour de concentration."
+  },
+  "stats_streak_unit_one": {
+    "message": "jour"
+  },
+  "stats_streak_unit_other": {
+    "message": "jours"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ jeton de gel en réserve",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ jetons de gel en réserve",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Gel de série : un jour manqué, couvert"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ jour actif ce mois-ci ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ jours actifs ce mois-ci ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Jours actifs en $MONTH$ : $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Aucun jour actif en $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Concentration, 14 derniers jours"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Les minutes de concentration apparaissent après ta première session."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Tentatives bloquées, 14 derniers jours"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Les tentatives bloquées apparaissent ici dès qu'une session en attrape une."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Sites les plus bloqués, 30 derniers jours"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Rien de bloqué pour l'instant. Voilà un bon début."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Tentatives par heure, cette machine uniquement"
+  },
+  "stats_chart_other_site": {
+    "message": "autres"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ bloquée",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ bloquées",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Diagramme en barres"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Diagramme en barres horizontales"
+  },
+  "stats_chart_description_bar": {
+    "message": "Diagramme en barres. Utilise le clavier pour parcourir les points, ou ouvre Afficher en tableau pour les mêmes valeurs."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Diagramme en barres horizontales. Utilise le clavier pour parcourir les points, ou ouvre Afficher en tableau pour les mêmes valeurs."
+  },
+  "stats_chart_empty_default": {
+    "message": "Pas encore de données."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$ : $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "Afficher en tableau"
+  },
+  "stats_chart_table_category": {
+    "message": "Catégorie"
+  },
+  "stats_chart_table_value": {
+    "message": "Valeur"
+  },
+  "stats_heat_strip_label": {
+    "message": "Bande thermique des tentatives bloquées sur 24 heures"
+  },
+  "stats_sessions_heading": {
+    "message": "Sessions récentes sur cette machine"
+  },
+  "stats_sessions_empty": {
+    "message": "Ta première session apparaîtra ici."
+  },
+  "stats_sessions_col_start": {
+    "message": "Début"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Prévu"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Concentré"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Tous les sites"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Un site"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Issue"
+  },
+  "stats_sessions_col_source": {
+    "message": "Origine"
+  },
+  "stats_session_no_intention": {
+    "message": "Aucune intention"
+  },
+  "stats_session_article_label": {
+    "message": "Session : $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "manuelle"
+  },
+  "stats_session_source_schedule": {
+    "message": "planification"
+  },
+  "stats_session_source_scheduled": {
+    "message": "planifiée"
+  },
+  "stats_outcome_completed": {
+    "message": "Terminée"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Arrêtée avant la fin"
+  },
+  "stats_outcome_running": {
+    "message": "En cours"
+  },
+  "stats_streak_unit_many": {
+    "message": "jours"
+  },
+  "stats_streak_freeze_tokens_many": {
+    "message": "$COUNT$ jetons de gel en réserve",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_active_days_many": {
+    "message": "$COUNT$ jours actifs ce mois-ci ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_blocked_count_many": {
+    "message": "$COUNT$ bloquées",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

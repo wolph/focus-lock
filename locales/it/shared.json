@@ -1,0 +1,571 @@
+{
+  "shared_until_stopped": {
+    "message": "Fino allo stop"
+  },
+  "shared_preset_short": {
+    "message": "breve"
+  },
+  "shared_preset_deep_work": {
+    "message": "lavoro profondo"
+  },
+  "shared_deep_work_note": {
+    "message": "Una preferenza, non scienza: un unico blocco lungo e ininterrotto, senza intervalli automatici."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ min in tutto, con blocchi di concentrazione da $FOCUS$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min di concentrazione ininterrotta",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Avvia fino allo stop"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Blocca fino allo sblocco manuale"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Le sessioni fino allo stop restano Flessibili o ad Attrito e non possono usare i cicli di concentrazione e intervallo."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Il Blocco totale non è disponibile per le sessioni fino allo stop: senza timer e senza fine manuale, la sessione non potrebbe mai finire."
+  },
+  "shared_end_session": {
+    "message": "Termina la sessione"
+  },
+  "shared_unlock": {
+    "message": "Sblocca"
+  },
+  "shared_gate_wait_none": {
+    "message": "nessuna attesa"
+  },
+  "shared_gate_wait": {
+    "message": "un'attesa di $SECONDS$ secondi",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ e una frase da digitare",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Va avanti finché non la fermi con $LABEL$. Cicli disattivati.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Va avanti finché non la sblocchi: $REQUIREMENT$, poi $LABEL$. Cicli disattivati.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Cicli imposti dalla modalità fino allo stop"
+  },
+  "shared_mode_blacklist": {
+    "message": "Blocca i siti selezionati"
+  },
+  "shared_mode_whitelist": {
+    "message": "Consenti solo i siti selezionati"
+  },
+  "shared_focus_time_label": {
+    "message": "Tempo di concentrazione"
+  },
+  "shared_clock_focus_phase": {
+    "message": "fase di concentrazione"
+  },
+  "shared_clock_total_session": {
+    "message": "sessione totale"
+  },
+  "shared_clock_pause": {
+    "message": "pausa"
+  },
+  "shared_clock_break": {
+    "message": "intervallo"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock sta partendo. Applicazione delle regole scelte."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Sessione finita. Completamento della pulizia del browser."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock non è riuscito a partire. Completamento della pulizia del browser."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock non ha potuto ripulire un avvio incompleto."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock non ha potuto completare la pulizia del browser."
+  },
+  "shared_retry_cleanup": {
+    "message": "Riprova la pulizia"
+  },
+  "shared_end_failed": {
+    "message": "Impossibile terminare la sessione. Riprova."
+  },
+  "shared_retry_failed": {
+    "message": "Impossibile riprovare la pulizia. Riprova."
+  },
+  "shared_action_failed": {
+    "message": "Impossibile richiedere quell'azione. Riprova."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Impossibile tornare al lavoro. Riprova."
+  },
+  "shared_data_clear_pending": {
+    "message": "Eliminazione dei dati di Focus Lock. Completamento della pulizia."
+  },
+  "shared_data_clear_error": {
+    "message": "Impossibile eliminare i dati. Riprova."
+  },
+  "shared_schedule_window_label": {
+    "message": "Fino alla fine della finestra"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Parte come programmato e va avanti finché non la fermi: Termina la sessione per Flessibile, Sblocca attraverso il controllo di conferma per Attrito. Cicli disattivati."
+  },
+  "shared_schedule_started_title": {
+    "message": "Sessione programmata avviata"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Attiva finché non la fermi."
+  },
+  "shared_settings_indefinite": {
+    "message": "Sessione fino allo stop attiva. Usa il popup della barra degli strumenti per vederla o terminarla."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock sta partendo. Controllo dell'accesso ai siti e applicazione delle tue regole."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock non ha potuto completare la pulizia del browser. Apri il popup e riprova."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "I comandi della sessione stanno nel popup della barra degli strumenti. La sessione attiva mantiene le regole registrate al suo avvio."
+  },
+  "shared_settings_timed": {
+    "message": "Sessione a tempo attiva fino alle $TIME$. Finisce da sola. Usa il popup della barra degli strumenti per lo stato in tempo reale.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Completata"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Completata manualmente"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Terminata prima"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Terminata: accesso ai siti perso"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Terminata: attivazione del blocco non riuscita"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Terminata: creazione del timer non riuscita"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Terminata: blocco delle pagine non riuscito"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Terminata: ripristino non riuscito"
+  },
+  "shared_updating_session": {
+    "message": "Aggiornamento della sessione"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Meno di un minuto"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ all'intervallo",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ alla fine della sessione",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Il costo supera il limite di credito"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Il credito riprende a maturare durante la concentrazione"
+  },
+  "shared_credit_off": {
+    "message": "La maturazione del credito è disattivata"
+  },
+  "shared_not_enough_time": {
+    "message": "Non c'è abbastanza tempo in questo blocco di concentrazione"
+  },
+  "shared_ready_in": {
+    "message": "Pronto tra $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Bloccato da $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Bloccato dal tuo elenco dei siti bloccati"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Non è nel tuo elenco dei consentiti"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Bloccato da questa sessione"
+  },
+  "shared_verdict_allow_list": {
+    "message": "È nel tuo elenco dei consentiti"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Sempre consentito"
+  },
+  "shared_verdict_unlock": {
+    "message": "Sbloccato temporaneamente"
+  },
+  "shared_verdict_excluded": {
+    "message": "Escluso da una categoria selezionata"
+  },
+  "shared_verdict_no_session": {
+    "message": "Nessuna sessione di concentrazione attiva"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Consentito da questa sessione"
+  },
+  "shared_category_video": {
+    "message": "Video e streaming"
+  },
+  "shared_category_news": {
+    "message": "Notizie"
+  },
+  "shared_category_mail": {
+    "message": "Posta"
+  },
+  "shared_category_shopping": {
+    "message": "Acquisti"
+  },
+  "shared_category_gaming": {
+    "message": "Videogiochi"
+  },
+  "shared_category_forums": {
+    "message": "Forum e noia"
+  },
+  "shared_synced_settings": {
+    "message": "Impostazioni"
+  },
+  "shared_synced_lists": {
+    "message": "Elenchi dei siti bloccati e consentiti"
+  },
+  "shared_synced_credit": {
+    "message": "Credito di accesso ai siti"
+  },
+  "shared_synced_streaks": {
+    "message": "Serie"
+  },
+  "shared_synced_aggregates": {
+    "message": "Totali dei tentativi bloccati per dominio"
+  },
+  "shared_local_full_urls": {
+    "message": "URL completi"
+  },
+  "shared_local_intentions": {
+    "message": "Intenzioni di concentrazione"
+  },
+  "shared_local_events": {
+    "message": "Eventi dettagliati delle sessioni"
+  },
+  "shared_local_runtime": {
+    "message": "Sessione attiva in corso"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Alcuni dati sincronizzati di una versione precedente non sono leggibili e sono stati azzerati."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Termina la sessione in corso prima di eliminare tutti i dati."
+  },
+  "shared_nav_product": {
+    "message": "Navigazione del prodotto"
+  },
+  "shared_nav_overview": {
+    "message": "Panoramica"
+  },
+  "shared_nav_settings": {
+    "message": "Impostazioni"
+  },
+  "shared_section_blocking": {
+    "message": "Blocco"
+  },
+  "shared_section_schedule": {
+    "message": "Programmazione"
+  },
+  "shared_section_behavior": {
+    "message": "Comportamento della sessione"
+  },
+  "shared_section_budget": {
+    "message": "Credito di accesso ai siti"
+  },
+  "shared_section_notifications": {
+    "message": "Notifiche"
+  },
+  "shared_section_privacy": {
+    "message": "Privacy e dati"
+  },
+  "shared_theme_light": {
+    "message": "Chiaro"
+  },
+  "shared_theme_dark": {
+    "message": "Scuro"
+  },
+  "shared_theme_button": {
+    "message": "Tema: $CURRENT$. Passa a $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Impossibile salvare il tema. Ricarica la pagina e riprova."
+  },
+  "shared_host_search_label": {
+    "message": "Cerca nei siti di $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Nessun sito di $TITLE$ corrisponde alla tua ricerca.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Mostrati $SHOWN$ siti su $MATCHED$. Cerca per restringere l'elenco.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Mostrati $MATCHED$ siti su $TOTAL$.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Mostrati tutti i $TOTAL$ siti.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Termina la sessione"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock sta partendo"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Applicazione delle regole scelte."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Questa pagina non si è caricata. Si caricherà da sola quando la sessione finisce."
+  },
+  "shared_overlay_next_step": {
+    "message": "Il tuo prossimo passo"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Torna al lavoro"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Scegli una scheda di lavoro"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Cambia scheda di lavoro"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Ti serve una pausa o l'accesso a un sito?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Puoi allontanarti quando vuoi. L'accesso ai siti consuma credito."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Ignora l'attesa e termina comunque"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock non ha potuto aggiornare questa azione. Riprova."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ di credito di accesso ai siti",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Continua il lavoro che stavi facendo"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Sblocca tutti i siti"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Sblocca questo sito"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - costa $COST$ di credito",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Bloccato fino alle $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Hai scritto: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Sblocca $HOST$ per $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Continua a concentrarti"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Digita questo per confermare:"
+  },
+  "shared_gate_end_title": {
+    "message": "Termina questa sessione"
+  },
+  "shared_minutes_many": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "stats_document_title": {
+    "message": "Fokus Lock stats"
+  },
+  "stats_loading": {
+    "message": "Memuat your stats."
+  },
+  "stats_scope_local": {
+    "message": "Totals from this machine. Fokus Lock statistics are not synced."
+  },
+  "stats_scope_retry": {
+    "message": "Coba Ulang scope check"
+  },
+  "stats_tile_focus_today": {
+    "message": "Fokus tohari"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Fokus in the last 7 haris"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Attempts blocked tohari"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Gate requests dismissed tohari"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Site access credit spent tohari"
+  },
+  "stats_streak_empty": {
+    "message": "Your streak starts with your first focus hari."
+  },
+  "stats_streak_unit_one": {
+    "message": "hari"
+  },
+  "stats_streak_unit_other": {
+    "message": "haris"
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Streak freeze: one missed hari, covered"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ active hari this month ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ active haris this month ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Fokus, last 14 haris"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Fokus menits appear after your first session."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Blokired attempts, last 14 haris"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Blokired attempts show up here once a session catches one."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Top blocked sites, last 30 haris"
+  },
+  "stats_chart_hours_heading": {
+    "message": "Attempts by jam, this machine only"
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blokired",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blokired",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_table_category": {
+    "message": "Kategori"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-jam blocked-attempt heat strip"
+  },
+  "stats_sessions_col_start": {
+    "message": "Mulai"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Fokused"
+  },
+  "stats_session_article_label": {
+    "message": "Sesi: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_outcome_ended_early": {
+    "message": "Akhired early"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ freeze token banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ freeze tokens banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "onboarding_page_title": {
+    "message": "Set up Fokus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Fokus Lock setup"
+  },
+  "onboarding_recovery_notice": {
+    "message": "Your saved setup progress could not be restored. Mulaiing again with your current defaults."
+  },
+  "onboarding_complete_heading": {
+    "message": "Penyiapan complete"
+  },
+  "onboarding_complete_body": {
+    "message": "Your choices are saved. Buka Fokus Lock from the Chrome toolbar to start a session."
+  },
+  "onboarding_error_heading": {
+    "message": "Penyiapan unavailable"
+  },
+  "onboarding_retry_button": {
+    "message": "Coba Ulang"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ situs",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ situss",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Tampilkan $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Sembunyikan $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Lanjutkan"
+  },
+  "onboarding_access_heading": {
+    "message": "Aktifkan website blocking"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Fokus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your session ends."
+  },
+  "onboarding_access_scope_note": {
+    "message": "Fokus Lock uses that access only while applying your blocking rules."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Aktifkan website blocking"
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "All Fokus Lock data stays in this Chrome profile."
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Nothing is sent to the Fokus Lock developer."
+  }
+}

@@ -3,12 +3,19 @@
  * explanation, the End control, and the deliberation gate. Every word comes from the view, the
  * countdowns and the gate ring are this module's arithmetic on the frozen timing rows.
  */
+import { formatNumber, t } from '../shared/i18n';
 import { formatClock } from '../shared/time';
 import type { GateState } from '../shared/types';
 import type { ActionSender } from './overlay-actions';
 import { buildRing, RING_CIRCUMFERENCE } from './overlay-host';
 import type { GateControls, MountedOverlay, SpendControl } from './overlay-state';
-import { type AccessWait, type ActiveOverlayView, accessWait, bankAt } from './overlay-timing';
+import {
+  type AccessWait,
+  type ActiveOverlayView,
+  accessWait,
+  bankAt,
+  endActionLabel,
+} from './overlay-timing';
 
 /** Ids inside the overlay's own shadow root, where `aria-describedby` resolves. */
 const GATE_WAIT_ID: string = 'focus-lock-gate-wait';
@@ -29,7 +36,7 @@ export function buildAccessDrawer(
   details.className = 'access';
   details.open = view.gate !== null || accessOpen;
   const summary: HTMLElement = document.createElement('summary');
-  summary.textContent = view.copy.accessSummary;
+  summary.textContent = t('shared_overlay_access_summary');
   summary.dataset.focus = 'summary';
   details.appendChild(summary);
   const label: HTMLElement = document.createElement('div');
@@ -44,7 +51,7 @@ export function buildAccessDrawer(
   );
   const note: HTMLElement = document.createElement('p');
   note.className = 'access-note';
-  note.textContent = view.copy.accessNote;
+  note.textContent = t('shared_overlay_access_note');
   details.appendChild(note);
   overlay.access = details;
   return details;
@@ -59,7 +66,9 @@ export function updateAccess(overlay: MountedOverlay, view: ActiveOverlayView, n
 
 function updateBank(overlay: MountedOverlay, view: ActiveOverlayView, now: number): void {
   if (overlay.bankLabel === null) return;
-  overlay.bankLabel.textContent = `${formatClock(bankAt(view, now))} ${view.copy.bankUnit}`;
+  overlay.bankLabel.textContent = t('shared_overlay_bank_amount', {
+    AMOUNT: formatClock(bankAt(view, now)),
+  });
 }
 
 function buildButtons(
@@ -89,7 +98,7 @@ function buildButtons(
   overlay.spends = [unlock, pause];
   row.append(unlock.button, pause.button);
   if (view.actions.end !== 'hidden') {
-    row.appendChild(endButton(view.copy.endAction, view.actions.end, act));
+    row.appendChild(endButton(endActionLabel(view.copy.endAction), view.actions.end, act));
   }
   for (const control of overlay.spends) updateSpend(control, view, now);
   return row;
@@ -147,15 +156,15 @@ function updateSpend(control: SpendControl, view: ActiveOverlayView, now: number
 function accessWaitText(view: ActiveOverlayView, wait: AccessWait): string {
   switch (wait.reason) {
     case 'ready-in':
-      return `${view.copy.bankWaitPrefix} ${formatClock(wait.waitMs ?? 0)}`;
+      return t('shared_ready_in', { CLOCK: formatClock(wait.waitMs ?? 0) });
     case 'updating':
-      return view.copy.updatingLabel;
+      return t('shared_updating_session');
     case 'above-limit':
-      return view.copy.costAboveLimit;
+      return t('shared_cost_exceeds_limit');
     case 'earning-off':
-      return view.copy.earningOff;
+      return t('shared_credit_off');
     case 'not-enough-time':
-      return view.copy.notEnoughFocus;
+      return t('shared_not_enough_time');
     default:
       return '';
   }
@@ -184,7 +193,7 @@ function buildGate(
   keep.className = 'keep-focusing pill';
   keep.type = 'button';
   keep.dataset.focus = 'gate-keep';
-  keep.textContent = view.copy.gateBack;
+  keep.textContent = t('shared_gate_back');
   keep.addEventListener('click', (): void => {
     act({ type: 'abandonGate', expectedGate: gate });
   });
@@ -213,7 +222,7 @@ function buildGate(
     forceEnd.className = 'force-end';
     forceEnd.type = 'button';
     forceEnd.dataset.focus = 'gate-force-end';
-    forceEnd.textContent = view.copy.gateForceEnd;
+    forceEnd.textContent = t('shared_overlay_gate_force_end');
     forceEnd.addEventListener('click', (): void => {
       act({ type: 'forceEndGate' });
     });
@@ -237,12 +246,12 @@ function appendPhrase(
   gate: GateState,
 ): HTMLInputElement | null {
   if (gate.requiredPhrase === null) return null;
-  appendLine(wrap, 'phrase-label', view.copy.gatePhraseLabel);
+  appendLine(wrap, 'phrase-label', t('shared_gate_phrase_label'));
   appendLine(wrap, 'phrase-text', gate.requiredPhrase).id = PHRASE_TEXT_ID;
   const input: HTMLInputElement = document.createElement('input');
   input.className = 'phrase';
   input.type = 'text';
-  input.setAttribute('aria-label', view.copy.gatePhraseLabel);
+  input.setAttribute('aria-label', t('shared_gate_phrase_label'));
   input.addEventListener('input', (): void => {
     if (overlay.view.presentation === 'active') updateGate(overlay, overlay.view, Date.now());
   });
@@ -257,7 +266,7 @@ export function updateGate(overlay: MountedOverlay, view: ActiveOverlayView, now
   const span: number = gate.readyAt - gate.openedAt;
   const progress: number = span <= 0 ? 1 : Math.min(1, Math.max(0, (now - gate.openedAt) / span));
   controls.ringFill.style.strokeDashoffset = String(RING_CIRCUMFERENCE * (1 - progress));
-  controls.count.textContent = String(Math.max(0, Math.ceil((gate.readyAt - now) / 1000)));
+  controls.count.textContent = formatNumber(Math.max(0, Math.ceil((gate.readyAt - now) / 1000)));
   const ready: boolean = now >= gate.readyAt;
   controls.waitWrap.hidden = ready;
   controls.confirm.hidden = !ready;

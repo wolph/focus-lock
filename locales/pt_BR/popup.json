@@ -1,0 +1,645 @@
+{
+  "popup_next_schedule": {
+    "message": "próxima: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Configurações"
+  },
+  "popup_open_settings_failed": {
+    "message": "Não foi possível abrir as Configurações. Tente de novo."
+  },
+  "popup_settings_load_failed": {
+    "message": "Não foi possível carregar as configurações da sessão. Recarregue o popup para tentar de novo. Os valores padrão estão sendo exibidos."
+  },
+  "popup_open_setup_failed": {
+    "message": "Não foi possível abrir a configuração inicial. Tente de novo."
+  },
+  "popup_setup_required_heading": {
+    "message": "Conclua a configuração do Focus Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "Escolha suas listas iniciais, o acesso aos sites e o modo de armazenamento antes de começar uma sessão."
+  },
+  "popup_open_setup_button": {
+    "message": "Abrir a configuração"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Não foi possível confirmar o bloqueio de sites. Tente de novo."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Não foi possível ativar o bloqueio de sites. Tente de novo."
+  },
+  "popup_blocking_off_heading": {
+    "message": "O bloqueio de sites está desligado"
+  },
+  "popup_blocking_off_body": {
+    "message": "O Focus Lock não pode começar uma sessão enquanto o Chrome não conceder acesso aos sites e o bloqueio não estiver ativado."
+  },
+  "popup_blocking_off_denied": {
+    "message": "O Chrome não concedeu acesso aos sites. O bloqueio continua desligado."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "O acesso aos sites foi concedido, mas o Focus Lock não conseguiu ativar o bloqueio. Refaça a configuração ou recarregue a extensão."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Ativar o bloqueio de sites"
+  },
+  "popup_retry_button": {
+    "message": "Tentar de novo"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Sua sessão terminou porque o acesso aos sites foi removido."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Sua sessão terminou porque o Focus Lock não conseguiu ativar o bloqueio de sites."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Não foi possível dispensar este aviso. Tente de novo."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Dispensar o aviso de acesso aos sites"
+  },
+  "popup_dismiss_button": {
+    "message": "Dispensar"
+  },
+  "popup_restart_failed": {
+    "message": "Não foi possível reiniciar o Focus Lock. Tente de novo."
+  },
+  "popup_boot_failed_heading": {
+    "message": "O Focus Lock não conseguiu iniciar"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Não foi possível ler o motivo."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Redefinir o estado local"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Mantém suas configurações, listas e estatísticas. Limpa o estado da sessão atual."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Excluir tudo e recomeçar"
+  },
+  "popup_keep_data_button": {
+    "message": "Manter meus dados"
+  },
+  "popup_delete_all_button": {
+    "message": "Excluir todos os dados do Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Status da configuração indisponível. Recarregue o Focus Lock para tentar de novo."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Status do foco indisponível"
+  },
+  "popup_action_in_progress": {
+    "message": "Ação em andamento"
+  },
+  "popup_active_site_checking": {
+    "message": "Verificando o site ativo"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Abra um site comum para desbloqueá-lo"
+  },
+  "popup_active_site_unknown": {
+    "message": "Não foi possível identificar o site ativo"
+  },
+  "popup_active_site_error": {
+    "message": "Não foi possível identificar o site ativo."
+  },
+  "popup_resume_now": {
+    "message": "Retomar agora"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Adiantar o próximo foco"
+  },
+  "popup_unlock_this_site": {
+    "message": "Desbloquear este site"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Desbloquear todos os sites"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ de acesso, $CREDIT$ de crédito",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ de acesso, $CREDIT$ de crédito - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Escolher a aba de trabalho"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Trocar a aba de trabalho"
+  },
+  "popup_session_actions_summary": {
+    "message": "Ações da sessão"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ de crédito de acesso a sites",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Adicionar um domínio permitido"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Adicionar domínio permitido"
+  },
+  "popup_add_button": {
+    "message": "Adicionar"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Apenas $COUNT$ regras de sites permitidos. Os outros sites ficam bloqueados.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ categorias bloqueadas, $RULES$ regras extras.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Bloqueio total. Não dá para encerrar antes."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Dá para encerrar a qualquer momento."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Encerra após uma espera de $SECONDS$ s.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Encerra após uma espera de $SECONDS$ s e uma frase de confirmação.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Duração da sessão"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Minutos personalizados"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_gate_force_end": {
+    "message": "Ignorar a espera e encerrar mesmo assim"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Continuar focado"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Digite:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Não foi possível atualizar a confirmação. Tente de novo."
+  },
+  "popup_gate_intention": {
+    "message": "Você escreveu: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Um momento para decidir:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "de $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Voltar ao trabalho"
+  },
+  "popup_destination_unavailable": {
+    "message": "Destino indisponível"
+  },
+  "popup_back_to_work_name": {
+    "message": "Voltar ao trabalho: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Voltar ao trabalho: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Não dá para editar categorias enquanto as listas de sites bloqueados não recarregarem."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Categorias bloqueadas"
+  },
+  "popup_show_full_domain": {
+    "message": "Mostrar o domínio completo: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Mostrar a expressão regular completa: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domínio"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Expressão regular"
+  },
+  "popup_category_sites_label": {
+    "message": "Sites da categoria $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "e mais $COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "e mais $COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Exceções permitidas"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Regras bloqueadas extras"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Nenhuma regra bloqueada extra."
+  },
+  "popup_allowed_heading": {
+    "message": "Sites e regras permitidos"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Nenhum site permitido ainda."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "O que será bloqueado"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "O que será permitido"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ de $TOTAL$ categorias selecionadas",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ regra bloqueada extra",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ regras bloqueadas extras",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ regra permitida",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ regras permitidas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "As mudanças de sites permitidos e de regras feitas aqui valem só para esta sessão. Todo o resto fica bloqueado."
+  },
+  "popup_scope_blacklist": {
+    "message": "As mudanças de categorias e de regras feitas aqui valem só para esta sessão."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Abrir as Configurações para os padrões permanentes"
+  },
+  "popup_rule_details_label": {
+    "message": "Detalhes das regras da sessão"
+  },
+  "popup_session_type_legend": {
+    "message": "Tipo de sessão"
+  },
+  "popup_session_type_flexible": {
+    "message": "Flexível"
+  },
+  "popup_session_type_friction": {
+    "message": "Atrito"
+  },
+  "popup_session_type_hard": {
+    "message": "Bloqueio total"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Encerre a sessão na hora, quando você quiser."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Encerrar antes exige $WAIT$. Não precisa digitar nada.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Encerrar antes exige $WAIT$ e uma confirmação digitada.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "A sessão não pode ser encerrada antes. O crédito de acesso a sites continua funcionando."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "As categorias selecionadas e as regras extras ficam bloqueadas. Os outros sites continuam disponíveis."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Só os sites da lista ficam disponíveis. Todos os outros são bloqueados."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Informe uma duração maior que zero minutos."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Os padrões mudaram, mas não foi possível carregar as listas atuais. Recarregue o popup."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Sem aba de trabalho (opcional)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Aba escolhida indisponível - escolha outra"
+  },
+  "popup_cycles_label": {
+    "message": "Ciclos: $FOCUS$ min de foco, $SHORT_BREAK$ min de intervalo, $LONG_BREAK$ min de intervalo longo a cada $LONG_EVERY$",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Intenção"
+  },
+  "popup_intention_placeholder": {
+    "message": "No que você está trabalhando?"
+  },
+  "popup_work_tab_named": {
+    "message": "Aba de trabalho: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Trocar"
+  },
+  "popup_session_settings_summary": {
+    "message": "Configurações da sessão"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Escolha uma aba de trabalho"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Aba de trabalho"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (atual)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Modo de bloqueio"
+  },
+  "popup_invalid_time_label": {
+    "message": "duração inválida"
+  },
+  "popup_start_focus_label": {
+    "message": "Começar $DURATION$ de foco",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Informe um domínio válido, como docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Não foi possível carregar as abas de trabalho. Reabra o popup para tentar de novo."
+  },
+  "popup_use_this_tab": {
+    "message": "Usar esta aba"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "Esta aba não serve para trabalhar. Escolha outra aba aberta."
+  },
+  "popup_checking_current_tab": {
+    "message": "Verificando a aba atual..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Procurando sua aba atual..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Não foi possível carregar sua aba atual. Tente de novo."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Escolha ou troque sua aba de trabalho."
+  },
+  "popup_saving_work_tab": {
+    "message": "Salvando a aba de trabalho..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Não foi possível salvar a aba de trabalho. Tente de novo."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Escolha uma aba aberta"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Ou escolha outra aba"
+  },
+  "popup_start_failed": {
+    "message": "Não foi possível começar a sessão. Tente de novo."
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_many": {
+    "message": "e mais $COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ regras bloqueadas extras",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
+    "message": "$COUNT$ regras permitidas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  }
+}

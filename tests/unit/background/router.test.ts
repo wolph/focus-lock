@@ -17,6 +17,7 @@ import type {
   DocumentContentCommand,
   DocumentEnforcementCommand,
 } from '../../../src/shared/enforcement-v2';
+import { t } from '../../../src/shared/i18n';
 import type { StatsBundle } from '../../../src/shared/messages';
 import { isWebsiteAccessReconciliation } from '../../../src/shared/runtime-validation';
 import type {
@@ -324,7 +325,7 @@ describe('routeMessage onboarding wiring', (): void => {
       ),
     ).resolves.toEqual({
       ok: false,
-      error: 'Setup changed in another tab. Reload setup before finishing.',
+      error: t('notify_setup_changed_reload_before_finishing'),
       conflict: true,
       completed: false,
       draft: authoritative,
@@ -413,7 +414,7 @@ describe('routeMessage onboarding wiring', (): void => {
     ).resolves.toEqual({
       ok: false,
       code: 'retry-not-available',
-      error: 'Data clear retry is not available.',
+      error: t('notify_data_clear_retry_unavailable'),
     });
   });
 
@@ -423,7 +424,7 @@ describe('routeMessage onboarding wiring', (): void => {
     ).resolves.toEqual({
       ok: false,
       code: 'retry-not-available',
-      error: 'Data clear retry is not available.',
+      error: t('notify_data_clear_retry_unavailable'),
     });
   });
 
@@ -441,7 +442,7 @@ describe('routeMessage onboarding wiring', (): void => {
     ).resolves.toEqual({ ok: true });
     await expect(
       routeMessage(engine, { type: 'resetLocalRuntime' }, sender, onboardingStorage()),
-    ).resolves.toEqual({ ok: false, error: 'Focus Lock is running, nothing to reset' });
+    ).resolves.toEqual({ ok: false, error: t('notify_nothing_to_reset') });
   });
 
   it('returns setup state without exposing a broad setup writer', async (): Promise<void> => {
@@ -462,8 +463,7 @@ describe('routeMessage onboarding wiring', (): void => {
       'unavailable',
       {
         ok: false,
-        error:
-          'Focus Lock received an inconsistent website access state. Retry setup or reload the extension.',
+        error: t('notify_website_access_inconsistent'),
       },
     ],
     [
@@ -471,8 +471,7 @@ describe('routeMessage onboarding wiring', (): void => {
       'error',
       {
         ok: false,
-        error:
-          'Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload the extension.',
+        error: t('notify_website_access_granted_blocking_failed'),
         granted: true,
         registration: 'error',
       },
@@ -482,8 +481,7 @@ describe('routeMessage onboarding wiring', (): void => {
       'ready',
       {
         ok: false,
-        error:
-          'Focus Lock received an inconsistent website access state. Retry setup or reload the extension.',
+        error: t('notify_website_access_inconsistent'),
       },
     ],
     ['denied', 'unavailable', { ok: true, granted: false, registration: 'unavailable' }],
@@ -492,8 +490,7 @@ describe('routeMessage onboarding wiring', (): void => {
       'error',
       {
         ok: false,
-        error:
-          'Website access is unavailable, and Focus Lock could not finish blocking cleanup. Retry setup or reload the extension.',
+        error: t('notify_website_access_unavailable_cleanup_failed'),
         granted: false,
         registration: 'error',
       },
@@ -503,7 +500,7 @@ describe('routeMessage onboarding wiring', (): void => {
       'ready',
       {
         ok: false,
-        error: 'Focus Lock could not check website access. Retry setup or reload the extension.',
+        error: t('notify_website_access_check_failed'),
       },
     ],
     [
@@ -511,7 +508,7 @@ describe('routeMessage onboarding wiring', (): void => {
       'unavailable',
       {
         ok: false,
-        error: 'Focus Lock could not check website access. Retry setup or reload the extension.',
+        error: t('notify_website_access_check_failed'),
       },
     ],
     [
@@ -519,7 +516,7 @@ describe('routeMessage onboarding wiring', (): void => {
       'error',
       {
         ok: false,
-        error: 'Focus Lock could not check website access. Retry setup or reload the extension.',
+        error: t('notify_website_access_check_failed'),
         registration: 'error',
       },
     ],
@@ -1034,7 +1031,7 @@ describe('routeMessage onboarding wiring', (): void => {
       routeMessage(engine, { type: 'clearFocusLockData', scope: 'synced-policy' }, sender, storage),
     ).resolves.toEqual({
       ok: false,
-      error: 'Disable Sync before deleting synced data',
+      error: t('notify_disable_sync_before_delete'),
       scope: 'synced-policy',
       status: 'pending',
     });

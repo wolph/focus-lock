@@ -7,6 +7,7 @@ import {
   useRef,
   useState,
 } from 'preact/hooks';
+import { formatNumber, t } from '../shared/i18n';
 import type { CommandResponseV2, SessionCommandResultCodeV2 } from '../shared/messages';
 import type { EndAuthorityV2, GateKind, GateState } from '../shared/types';
 
@@ -16,7 +17,7 @@ export type GateRequest =
   | { type: 'forceEndGate' };
 
 /** The opt-in bypass, worded exactly as the Options checkbox names it. */
-const FORCE_END_LABEL: string = 'Ignore timeout and end anyway';
+const FORCE_END_LABEL: string = t('popup_gate_force_end');
 
 /** The transport this panel sends through. Every surface answers with a coded v2 result. */
 export type GateCommandSender = (
@@ -34,16 +35,22 @@ export type GateCommandErrorMapper = (response: unknown, fallback: string) => st
 type PublishedCancelGateCopy = Extract<EndAuthorityV2, { copy: { confirm: string } }>['copy'];
 
 const CANCEL_CONFIRM_LABEL: PublishedCancelGateCopy['confirm'] = 'End the session';
-const KEEP_FOCUSING_LABEL: PublishedCancelGateCopy['back'] = 'Keep focusing';
 
+/**
+ * The default confirm of each gate kind. An open End authority publishes its own cancel-gate
+ * copy, which the panel prefers, so the cancel row is only the fallback for a gate without it.
+ */
 const CONFIRM_LABELS: Record<GateKind, string> = {
-  pause: 'Unlock all sites',
-  unlockSite: 'Unlock this site',
+  pause: t('popup_unlock_all_sites'),
+  unlockSite: t('popup_unlock_this_site'),
   cancel: CANCEL_CONFIRM_LABEL,
 };
 
 /** The wording a pause or unlock gate uses. An End authority publishes its own instead. */
-const DEFAULT_PHRASE_LABEL: string = 'Type:';
+const DEFAULT_PHRASE_LABEL: string = t('popup_gate_phrase_label');
+
+/** Shown when the worker refused a gate command without naming a reason of its own. */
+const GATE_UPDATE_FAILED_COPY: string = t('popup_gate_update_failed');
 
 /**
  * Deliberation gate. The worker owns the timing: this panel only renders
@@ -102,13 +109,10 @@ export function GatePanel({
     setPending(true);
     try {
       const response: CommandResponseV2<SessionCommandResultCodeV2> = await sendCommand(request);
-      const responseError: string | null = commandError(
-        response,
-        'Could not update the gate. Try again.',
-      );
+      const responseError: string | null = commandError(response, GATE_UPDATE_FAILED_COPY);
       if (responseError !== null) setError(responseError);
     } catch {
-      setError('Could not update the gate. Try again.');
+      setError(GATE_UPDATE_FAILED_COPY);
     } finally {
       requestInFlight.current = false;
       setPending(false);
@@ -157,10 +161,13 @@ export function GatePanel({
 
   return (
     <div class="gate-panel">
-      {intention !== '' ? <p class="gate-intention">You said: {intention}</p> : null}
+      {intention !== '' ? (
+        <p class="gate-intention">{t('popup_gate_intention', { INTENTION: intention })}</p>
+      ) : null}
       {!ready ? (
         <p class="gate-wait" id={waitId}>
-          A moment to decide: <span class="time">{elapsedS}</span> of {totalS} s
+          {t('popup_gate_wait_prefix')} <span class="time">{formatNumber(elapsedS)}</span>{' '}
+          {t('popup_gate_wait_remaining', { TOTAL: formatNumber(totalS) })}
         </p>
       ) : null}
       <button
@@ -170,7 +177,7 @@ export function GatePanel({
         disabled={pending}
         onClick={abandon}
       >
-        {KEEP_FOCUSING_LABEL}
+        {t('popup_gate_keep_focusing')}
       </button>
       {gate.requiredPhrase !== null ? (
         <label class="gate-phrase">

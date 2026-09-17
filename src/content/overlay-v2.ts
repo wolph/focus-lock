@@ -7,6 +7,7 @@
  */
 import type { DocumentOverlayView } from '../shared/enforcement-v2';
 import { exactDataEqual } from '../shared/exact-data';
+import { t } from '../shared/i18n';
 import { applyTheme } from '../shared/theme';
 import type { GateState, Verdict } from '../shared/types';
 import { appendLine, buildAccessDrawer, updateAccess, updateGate } from './overlay-access';
@@ -268,10 +269,12 @@ function renderPanel(overlay: MountedOverlay, accessOpen: boolean): void {
 
 /** The starting page borrows the strong and muted type scales. It owns no clock and no control. */
 function appendStartingPage(panel: HTMLElement, view: StartingOverlayView): void {
-  appendLine(panel, 'intention', view.copy.title);
-  appendLine(panel, 'until', view.copy.detail);
+  appendLine(panel, 'intention', t('shared_overlay_starting_title'));
+  appendLine(panel, 'until', t('shared_overlay_starting_detail'));
   appendLine(panel, 'provenance', view.copy.verdictProvenance);
-  if (view.copy.stoppedPage !== null) appendLine(panel, 'notloaded', view.copy.stoppedPage);
+  if (view.copy.stoppedPage !== null) {
+    appendLine(panel, 'notloaded', t('shared_overlay_stopped_page'));
+  }
 }
 
 /**
@@ -290,13 +293,15 @@ function appendActivePage(
   now: number,
   accessOpen: boolean,
 ): void {
-  appendLine(panel, 'next-step', view.copy.nextStep);
+  appendLine(panel, 'next-step', t('shared_overlay_next_step'));
   appendHeading(panel, view.copy.intention);
   appendLine(panel, 'provenance', view.copy.verdictProvenance);
   appendTimeLine(overlay, panel, view, now);
   appendProgress(overlay, panel, view, now);
   buildWorkTarget(overlay, view, panel);
-  if (view.copy.stoppedPage !== null) appendLine(panel, 'notloaded', view.copy.stoppedPage);
+  if (view.copy.stoppedPage !== null) {
+    appendLine(panel, 'notloaded', t('shared_overlay_stopped_page'));
+  }
   panel.appendChild(buildAccessDrawer(overlay, view, now, accessOpen, requestAction));
 }
 

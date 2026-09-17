@@ -1,4 +1,5 @@
 import type { JSX } from 'preact';
+import { formatNumber, t, tPlural } from '../shared/i18n';
 import type { StreakState } from '../shared/types';
 
 export interface StreakProps {
@@ -24,8 +25,8 @@ function activeDatesLabel(activeMonth: string, activeDays: number[]): string {
   const days: number[] = [...new Set(activeDays)].sort(
     (left: number, right: number): number => left - right,
   );
-  if (days.length === 0) return `No active dates in ${month}.`;
-  return `Active dates in ${month}: ${days.join(', ')}.`;
+  if (days.length === 0) return t('stats_streak_no_active_dates', { MONTH: month });
+  return t('stats_streak_active_dates', { MONTH: month, DAYS: days.join(', ') });
 }
 
 function SnowflakeGlyph(): JSX.Element {
@@ -48,8 +49,8 @@ export function Streak(props: StreakProps): JSX.Element {
   if (!hasHistory) {
     return (
       <section class="card streak-card">
-        <h2>Streak</h2>
-        <p class="empty-line">Your streak starts with your first focus day.</p>
+        <h2>{t('stats_streak_heading')}</h2>
+        <p class="empty-line">{t('stats_streak_empty')}</p>
       </section>
     );
   }
@@ -65,20 +66,20 @@ export function Streak(props: StreakProps): JSX.Element {
   );
   return (
     <section class="card streak-card">
-      <h2>Streak</h2>
+      <h2>{t('stats_streak_heading')}</h2>
       <div class="streak-top">
         <div class="streak-chain">
-          <span class="streak-number">{streak.current}</span>
-          <span class="streak-unit">{streak.current === 1 ? 'day' : 'days'}</span>
+          <span class="streak-number">{formatNumber(streak.current)}</span>
+          <span class="streak-unit">{tPlural('stats_streak_unit', streak.current)}</span>
         </div>
         <div
           class="freeze-chips"
           role="img"
-          aria-label={`${streak.freezeTokens} freeze tokens banked`}
+          aria-label={tPlural('stats_streak_freeze_tokens', streak.freezeTokens)}
         >
           {freezeChips.map(
             (i: number): JSX.Element => (
-              <span class="freeze-chip" key={i} title="Streak freeze: one missed day, covered">
+              <span class="freeze-chip" key={i} title={t('stats_streak_freeze_chip_title')}>
                 <SnowflakeGlyph />
               </span>
             ),
@@ -87,7 +88,9 @@ export function Streak(props: StreakProps): JSX.Element {
       </div>
       <div class="streak-calendar">
         <p class="cal-title">
-          {streak.activeDays.length} active days this month ({monthTitle(streak.activeMonth)})
+          {tPlural('stats_streak_active_days', streak.activeDays.length, {
+            MONTH: monthTitle(streak.activeMonth),
+          })}
         </p>
         <div
           class="cal-grid"

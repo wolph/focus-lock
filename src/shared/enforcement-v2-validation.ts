@@ -11,6 +11,7 @@ import type {
   StartingOverlayCopy,
 } from './enforcement-v2';
 import { exactDataEqual, isDenseArray, snapshotExactData } from './exact-data';
+import { t } from './i18n';
 import { isRelativeMillisecondDuration } from './numeric-validation';
 import type { SessionDuration, Strictness, ThemeMode, Verdict } from './types';
 import {
@@ -744,7 +745,9 @@ function validateDetachedActiveCopy(
 
 /** An open gate quotes the intention word for word, or quotes nothing at all. */
 function hasGateSaidCopy(value: unknown, intention: unknown): boolean {
-  return value === null || (isNonBlankString(intention) && value === `You said: ${intention}`);
+  if (value === null) return true;
+  if (!isNonBlankString(intention)) return false;
+  return value === t('shared_overlay_gate_said', { INTENTION: intention });
 }
 
 function hasFixedActiveCopy(copy: UnknownRecord): boolean {

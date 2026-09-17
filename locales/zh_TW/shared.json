@@ -1,0 +1,23 @@
+{
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ 分鐘",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ 分鐘",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

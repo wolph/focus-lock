@@ -1,0 +1,174 @@
+{
+  "notify_session_complete_title": {
+    "message": "Focus session complete",
+    "description": "Title of the desktop notification the background worker posts when a timed focus session reaches its end."
+  },
+  "notify_session_complete_body": {
+    "message": "Your focus session finished.",
+    "description": "Body of the desktop notification the background worker posts when a timed focus session reaches its end."
+  },
+  "notify_schedule_window_body": {
+    "message": "Locked until $END$.",
+    "description": "Body of the desktop notification posted when a scheduled session starts and runs to the end of its window. END is the window end as a local 24-hour wall clock, such as 17:30.",
+    "placeholders": {
+      "END": { "content": "$1", "example": "17:30" }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Focus schedule could not start",
+    "description": "Title of the desktop notification posted when a scheduled session was due but website blocking was not available."
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Website blocking is not enabled. Finish setup or grant website access, then try again.",
+    "description": "Body of the desktop notification posted when a scheduled session was due but website blocking was not available. It names the two ways the user can fix it."
+  },
+
+  "notify_setup_completed_elsewhere": {
+    "message": "Setup was completed in another tab.",
+    "description": "Error shown on the setup page when it tries to save or finish but setup was already completed in a different tab."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Setup changed in another tab. The latest choices were reloaded.",
+    "description": "Error shown on the setup page when a save is refused because another tab changed the draft, and this page has just reloaded the newer choices."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Setup changed in another tab. Reload setup before finishing.",
+    "description": "Error shown on the setup page when finishing is refused because another tab changed the draft, and the user has to reload the page first."
+  },
+  "notify_setup_not_complete": {
+    "message": "Setup is not complete.",
+    "description": "Error returned when the setup page asks to clean up its draft before setup has actually been completed."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Setup is not ready to finish.",
+    "description": "Error shown on the setup page when finishing is requested before the user has reached the last step."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Setup storage choice changed. Reload setup before finishing.",
+    "description": "Error shown on the setup page when the stored sync choice no longer matches the one the page is finishing with."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Onboarding storage operation failed.",
+    "description": "Fallback error shown on the setup page when reading or writing the setup draft failed and the underlying error carried no message of its own."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Onboarding operation failed.",
+    "description": "Fallback error shown on the setup page when a setup request failed and the underlying error carried no message of its own."
+  },
+
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock could not check website access. Retry setup or reload the extension.",
+    "description": "Error shown on the setup page when the extension could not determine whether it has permission to read websites."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload the extension.",
+    "description": "Error shown on the setup page when the website permission is held but blocking could not be switched on."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Website access is unavailable, and Focus Lock could not finish blocking cleanup. Retry setup or reload the extension.",
+    "description": "Error shown on the setup page when the website permission is missing and the extension also failed to tear its blocking back down."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock received an inconsistent website access state. Retry setup or reload the extension.",
+    "description": "Error shown on the setup page when the reported permission and the reported blocking state contradict each other."
+  },
+
+  "notify_boot_not_finished": {
+    "message": "Focus Lock did not finish starting: $REASON$",
+    "description": "The answer the background worker gives every request after it failed to start. REASON is the underlying failure message, which is not translated.",
+    "placeholders": {
+      "REASON": { "content": "$1", "example": "storage is unavailable" }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "unknown error",
+    "description": "Stands in for a failure reason when the underlying error carried no message. It is read inside a longer sentence, so it starts with a lower-case letter."
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock is running, nothing to reset",
+    "description": "Error shown when the user asks to reset the stored session state while the extension started normally and has nothing broken to reset."
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock cannot reset a runtime that is still committed inside a policy generation",
+    "description": "Error shown when the stored session state cannot be reset because it is held inside a settings record rather than on its own."
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Data clear retry is not available.",
+    "description": "Error shown when the user presses Retry on a data deletion that has nothing left to retry."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Disable Sync before deleting synced data",
+    "description": "Error shown on the privacy settings page when the user asks to delete synced data while Chrome Sync is still switched on."
+  },
+
+  "notify_work_gate_busy": {
+    "message": "Focus Lock is still finishing an earlier change. Try again in a moment.",
+    "description": "Error shown when choosing or changing the work tab is refused because the extension is still finishing a previous session change."
+  },
+  "notify_work_gate_stuck": {
+    "message": "The open gate could not be closed. Try again.",
+    "description": "Error shown when choosing or changing the work tab is refused because the open confirmation gate could not be closed."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "The work tab is unavailable.",
+    "description": "Fallback error shown when switching to the chosen work tab failed and the underlying error carried no message of its own."
+  },
+
+  "notify_settings_sync_limit": {
+    "message": "Settings exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again.",
+    "description": "Error shown on the settings page when the settings are too large for Chrome Sync. It names the two fields that usually cause it."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.",
+    "description": "Error shown on the settings page when the block and allow lists are too large for Chrome Sync."
+  },
+
+  "notify_guard_lists_remove_blocked": {
+    "message": "a hard session is running: removing blocked sites unlocks when it ends",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to remove a blocked site."
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "a hard session is running: new whitelist entries unlock when it ends",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to add a site to the allow list."
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "a hard session is running: disabling categories unlocks when it ends",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to switch off a blocked category."
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "a hard session is running: new exclusions unlock when it ends",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to exclude a host from a blocked category."
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "a hard session is running: weakening the default strictness waits until it ends",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to lower the default session strictness."
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "a hard session is running: shortening the deliberation delay weakens the gate",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to shorten the wait before a session can be ended."
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "a hard session is running: dropping the typed phrase weakens the gate",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to switch off the sentence that has to be typed to end a session."
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "a hard session is running: raising the pause earn rate funds more escapes",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to earn break credit faster."
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "a hard session is running: raising the pause cap funds more escapes",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to raise the maximum break credit that can be held."
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "a hard session is running: shortening pauses lowers their cost",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to make each pause shorter, which would make it cheaper."
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "a hard session is running: shortening unlocks lowers their cost",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to make each site unlock shorter, which would make it cheaper."
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "a hard session is running: its schedule entry cannot be weakened until it ends",
+    "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to edit the schedule entry that started the running session."
+  }
+}

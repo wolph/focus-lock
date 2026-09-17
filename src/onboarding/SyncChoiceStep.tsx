@@ -1,5 +1,6 @@
 import type { TargetedEvent, VNode } from 'preact';
 import { useLayoutEffect, useRef } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import { LOCAL_ONLY_DATA_ITEMS, SYNCED_DATA_ITEMS } from '../shared/privacy-copy';
 
 export interface SyncChoiceStepProps {
@@ -28,8 +29,8 @@ function DataList(props: { id: string; title: string; items: readonly string[] }
 
 export function SyncChoiceStep(props: SyncChoiceStepProps): VNode {
   const completionLabel: string = props.syncEnabled
-    ? 'Finish setup with sync enabled'
-    : 'Finish setup without sync';
+    ? t('onboarding_sync_finish_enabled')
+    : t('onboarding_sync_finish_disabled');
   const syncControl: { current: HTMLInputElement | null } = useRef<HTMLInputElement>(null);
   const restoreSyncFocus: { current: boolean } = useRef<boolean>(false);
   useLayoutEffect((): void => {
@@ -48,33 +49,41 @@ export function SyncChoiceStep(props: SyncChoiceStepProps): VNode {
   return (
     <section aria-labelledby="sync-choice-heading">
       <h1 id="sync-choice-heading" tabIndex={-1}>
-        Choose where your settings are stored
+        {t('onboarding_sync_heading')}
       </h1>
       <label class="sync-choice">
         <input
           ref={syncControl}
           type="checkbox"
           role="switch"
-          aria-label="Sync across Chrome devices"
+          aria-label={t('onboarding_sync_switch_label')}
           aria-checked={props.syncEnabled}
           checked={props.syncEnabled}
           disabled={props.pending}
           onChange={changeSync}
         />
         <span>
-          <strong>Sync across Chrome devices</strong>
+          <strong>{t('onboarding_sync_switch_label')}</strong>
           <small>
             {props.syncEnabled
-              ? 'The approved data below will use Chrome Sync after you finish setup.'
-              : 'All Focus Lock data stays in this Chrome profile.'}
+              ? t('onboarding_sync_enabled_note')
+              : t('onboarding_sync_disabled_note')}
           </small>
         </span>
       </label>
       <div class="storage-data-grid">
-        <DataList id="synced-data" title="Synced" items={SYNCED_DATA_ITEMS} />
-        <DataList id="local-data" title="Local only" items={LOCAL_ONLY_DATA_ITEMS} />
+        <DataList
+          id="synced-data"
+          title={t('onboarding_sync_synced_title')}
+          items={SYNCED_DATA_ITEMS}
+        />
+        <DataList
+          id="local-data"
+          title={t('onboarding_sync_local_title')}
+          items={LOCAL_ONLY_DATA_ITEMS}
+        />
       </div>
-      <p class="developer-data-note">Nothing is sent to the Focus Lock developer.</p>
+      <p class="developer-data-note">{t('onboarding_sync_developer_note')}</p>
       {props.error !== null ? <p role="alert">{props.error}</p> : null}
       <button
         type="button"

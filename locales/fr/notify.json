@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Session de concentration terminée"
+  },
+  "notify_session_complete_body": {
+    "message": "Ta session de concentration est terminée."
+  },
+  "notify_schedule_window_body": {
+    "message": "Verrouillé jusqu'à $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "La session planifiée n'a pas pu démarrer"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Le blocage des sites n'est pas activé. Termine la configuration ou accorde l'accès aux sites, puis réessaie."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "La configuration a été terminée dans un autre onglet."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "La configuration a changé dans un autre onglet. Les choix les plus récents ont été rechargés."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "La configuration a changé dans un autre onglet. Recharge-la avant de terminer."
+  },
+  "notify_setup_not_complete": {
+    "message": "La configuration n'est pas terminée."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "La configuration n'est pas prête à être terminée."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Le choix de stockage a changé. Recharge la configuration avant de terminer."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "L'opération de stockage de la configuration a échoué."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "L'opération de configuration a échoué."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock n'a pas pu vérifier l'accès aux sites. Relance la configuration ou recharge l'extension."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "L'accès aux sites est accordé, mais Focus Lock n'a pas pu activer le blocage. Relance la configuration ou recharge l'extension."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "L'accès aux sites est indisponible et Focus Lock n'a pas pu terminer le nettoyage du blocage. Relance la configuration ou recharge l'extension."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock a reçu un état d'accès aux sites incohérent. Relance la configuration ou recharge l'extension."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock n'a pas terminé son démarrage : $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "erreur inconnue"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock fonctionne, rien à réinitialiser"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock ne peut pas réinitialiser un état encore enregistré dans une génération de réglages"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Aucune suppression de données à relancer."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Désactive la synchronisation avant de supprimer les données synchronisées"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock termine encore une modification précédente. Réessaie dans un instant."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Le sas ouvert n'a pas pu être fermé. Réessaie."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "L'onglet de travail est indisponible."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Les réglages dépassent la limite de 8 Ko de Chrome Sync. Supprime des créneaux planifiés ou raccourcis tes intentions, puis réessaie."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Les listes dépassent la limite de 8 Ko de Chrome Sync. Supprime des règles personnalisées ou d'autorisation, puis réessaie."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "une session stricte est en cours : retirer des sites bloqués ne prendra effet qu'à la fin"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "une session stricte est en cours : les nouvelles entrées autorisées ne prendront effet qu'à la fin"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "une session stricte est en cours : désactiver des catégories ne prendra effet qu'à la fin"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "une session stricte est en cours : les nouvelles exclusions ne prendront effet qu'à la fin"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "une session stricte est en cours : affaiblir la rigueur par défaut attendra la fin"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "une session stricte est en cours : raccourcir le délai de réflexion affaiblit le sas"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "une session stricte est en cours : retirer la phrase à saisir affaiblit le sas"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "une session stricte est en cours : augmenter le gain de crédit finance plus d'échappatoires"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "une session stricte est en cours : relever le plafond de crédit finance plus d'échappatoires"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "une session stricte est en cours : raccourcir les pauses en diminue le coût"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "une session stricte est en cours : raccourcir les déverrouillages en diminue le coût"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "une session stricte est en cours : son créneau planifié ne peut pas être affaibli avant la fin"
+  }
+}

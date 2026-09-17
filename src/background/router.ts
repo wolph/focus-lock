@@ -1,4 +1,5 @@
 import type { DocumentContentCommand } from '../shared/enforcement-v2';
+import { t } from '../shared/i18n';
 import type {
   Ack,
   OnboardingDraftConflict,
@@ -107,8 +108,8 @@ function onboardingDraftConflict(
   return {
     ok: false,
     error: completed
-      ? 'Setup was completed in another tab.'
-      : 'Setup changed in another tab. Reload setup before finishing.',
+      ? t('notify_setup_completed_elsewhere')
+      : t('notify_setup_changed_reload_before_finishing'),
     conflict: true,
     completed,
     draft,
@@ -119,7 +120,7 @@ function onboardingOperationalFailure(error: unknown): OnboardingOperationalFail
   const message: string = error instanceof Error ? error.message : String(error);
   return {
     ok: false,
-    error: message.trim().length > 0 ? message : 'Onboarding operation failed.',
+    error: message.trim().length > 0 ? message : t('notify_onboarding_operation_failed'),
   };
 }
 
@@ -184,7 +185,7 @@ export async function routeMessage(
       try {
         const storage: PolicyStorage = requirePolicyStorage(policyStorage);
         if (!(await storage.loadSetup()).completed) {
-          return { ok: false, error: 'Setup is not complete.' };
+          return { ok: false, error: t('notify_setup_not_complete') };
         }
         await requireOnboardingServices(onboardingServices).removeOnboardingDraft();
         return { ok: true };
@@ -212,12 +213,12 @@ export async function routeMessage(
         if (draft === null || draft.revision !== msg.revision) {
           return onboardingDraftConflict(draft, false);
         }
-        if (draft.step !== 3) return { ok: false, error: 'Setup is not ready to finish.' };
+        if (draft.step !== 3) return { ok: false, error: t('notify_setup_not_ready_to_finish') };
         const selectedMode: StorageMode = draft.syncEnabled ? 'sync' : 'local';
         if (msg.storageMode !== selectedMode) {
           return {
             ok: false,
-            error: 'Setup storage choice changed. Reload setup before finishing.',
+            error: t('notify_setup_storage_choice_changed'),
           };
         }
         return await completeSetupPolicy(
@@ -240,16 +241,15 @@ export async function routeMessage(
         if (capability.permission === 'unknown') {
           return {
             ok: false,
-            error:
-              'Focus Lock could not check website access. Retry setup or reload the extension.',
+            error: t('notify_website_access_check_failed'),
             registration: 'error',
           };
         }
         return {
           ok: false,
           error: granted
-            ? 'Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload the extension.'
-            : 'Website access is unavailable, and Focus Lock could not finish blocking cleanup. Retry setup or reload the extension.',
+            ? t('notify_website_access_granted_blocking_failed')
+            : t('notify_website_access_unavailable_cleanup_failed'),
           granted,
           registration: 'error',
         };
@@ -257,7 +257,7 @@ export async function routeMessage(
       if (capability.permission === 'unknown') {
         return {
           ok: false,
-          error: 'Focus Lock could not check website access. Retry setup or reload the extension.',
+          error: t('notify_website_access_check_failed'),
         };
       }
       if (
@@ -266,8 +266,7 @@ export async function routeMessage(
       ) {
         return {
           ok: false,
-          error:
-            'Focus Lock received an inconsistent website access state. Retry setup or reload the extension.',
+          error: t('notify_website_access_inconsistent'),
         };
       }
       return { ok: true, granted, registration: capability.status };
@@ -314,7 +313,7 @@ export async function routeMessage(
     case 'retryBoot':
       return { ok: true };
     case 'resetLocalRuntime':
-      return { ok: false, error: 'Focus Lock is running, nothing to reset' };
+      return { ok: false, error: t('notify_nothing_to_reset') };
     case 'clearFocusLockData': {
       const storage: PolicyStorage = requirePolicyStorage(policyStorage);
       if (msg.scope === 'local-history') {
@@ -338,7 +337,7 @@ export async function routeMessage(
           if ((await storage.storageMode()) !== 'local') {
             return {
               ok: false,
-              error: 'Disable Sync before deleting synced data',
+              error: t('notify_disable_sync_before_delete'),
               scope: msg.scope,
               status: 'pending',
             };
@@ -472,7 +471,7 @@ export async function routeMessage(
         return {
           ok: false,
           code: 'retry-not-available',
-          error: 'Data clear retry is not available.',
+          error: t('notify_data_clear_retry_unavailable'),
         };
       }
       return { ok: true, code: 'ok' };

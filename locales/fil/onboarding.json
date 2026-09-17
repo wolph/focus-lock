@@ -1,0 +1,65 @@
+{
+  "onboarding_recovery_notice": {
+    "message": "Your saved setup progress could not be restored. Magsimulaing again with your current defaults."
+  },
+  "onboarding_complete_heading": {
+    "message": "I-set up complete"
+  },
+  "onboarding_complete_body": {
+    "message": "Your choices are saved. Buksan Focus Lock from the Chrome toolbar to start a session."
+  },
+  "onboarding_error_heading": {
+    "message": "I-set up unavailable"
+  },
+  "onboarding_retry_button": {
+    "message": "Subukan Muli"
+  },
+  "onboarding_show_category_sites": {
+    "message": "Ipakita $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Itago $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Magpatuloy"
+  },
+  "onboarding_access_heading": {
+    "message": "Paganahin website blocking"
+  },
+  "onboarding_access_registration_error": {
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Paganahin website blocking"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

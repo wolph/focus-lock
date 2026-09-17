@@ -8,6 +8,7 @@ import {
   useState,
 } from 'preact/hooks';
 import { ForcedControl } from '../shared/ForcedControl';
+import { formatNumber, t } from '../shared/i18n';
 import {
   STALE_SESSION_RULES_ERROR,
   type StartSessionResponseV2,
@@ -73,23 +74,28 @@ const MODE_CHOICES: readonly ModeChoice[] = [
   {
     value: 'blacklist',
     label: MODE_LABELS.blacklist,
-    hint: 'The selected categories and extra rules are blocked. Other sites remain available.',
+    hint: t('popup_mode_blacklist_hint'),
   },
   {
     value: 'whitelist',
     label: MODE_LABELS.whitelist,
-    hint: 'Only the listed sites are available. Every other website is blocked.',
+    hint: t('popup_mode_whitelist_hint'),
   },
 ];
-const INVALID_DURATION_ERROR: string = 'Enter a session length greater than zero minutes.';
-const STALE_LISTS_UNAVAILABLE_COPY: string =
-  'Defaults changed, but current lists could not be loaded. Reload the popup.';
+const INVALID_DURATION_ERROR: string = t('popup_invalid_duration_error');
+const STALE_LISTS_UNAVAILABLE_COPY: string = t('popup_stale_lists_unavailable');
 
 /** Receives a start message that must outlive the form, or null when a new start begins. */
 export type StartFeedback = (message: string | null) => void;
 
-const NO_WORK_TAB_OPTION: string = 'No work tab (optional)';
-const WORK_TAB_UNAVAILABLE_OPTION: string = 'Selected tab unavailable - choose another';
+const NO_WORK_TAB_OPTION: string = t('popup_no_work_tab_option');
+const WORK_TAB_UNAVAILABLE_OPTION: string = t('popup_work_tab_unavailable_option');
+const WORK_TAB_SELECT_LABEL: string = t('popup_work_tab_select_label');
+/**
+ * The work tab picker is revealed by its accessible name, which is translated, so the selector
+ * is built from the same message and its quotes are escaped for the attribute matcher.
+ */
+const WORK_TAB_SELECTOR: string = `[aria-label="${WORK_TAB_SELECT_LABEL.replace(/["\\]/g, '\\$&')}"]`;
 
 export interface StartFormProps {
   settings: SettingsV2;
@@ -190,7 +196,12 @@ export function StartForm({
       ? null
       : timedDurationHint(timedMinutes, effectiveCycling(draft));
   const cycle: CycleConfig = settings.defaultCycling;
-  const cyclingLabel: string = `Cycles: ${cycle.focusMin} min focus, ${cycle.shortBreakMin} min break, ${cycle.longBreakMin} min long break every ${cycle.longEvery}th`;
+  const cyclingLabel: string = t('popup_cycles_label', {
+    FOCUS: formatNumber(cycle.focusMin),
+    SHORT_BREAK: formatNumber(cycle.shortBreakMin),
+    LONG_BREAK: formatNumber(cycle.longBreakMin),
+    LONG_EVERY: formatNumber(cycle.longEvery),
+  });
 
   const rebaseFromWorker: () => Promise<void> = async (): Promise<void> => {
     const refreshed: unknown = await sendRequest({ type: 'getLists' });
@@ -260,7 +271,7 @@ export function StartForm({
     try {
       await chrome.runtime.openOptionsPage();
     } catch {
-      setError('Could not open Settings. Try again.');
+      setError(t('popup_open_settings_failed'));
     }
   };
 
@@ -318,7 +329,7 @@ export function StartForm({
       </div>
       <div class="start-form__scroll">
         <div class="field-control">
-          <span class="field-label">Session length</span>
+          <span class="field-label">{t('popup_session_length_label')}</span>
           <DurationControl
             presets={settings.presetsMin}
             value={draft.duration}
@@ -329,13 +340,13 @@ export function StartForm({
         </div>
         <div class="field-control">
           <label class="field-label" for="session-intention">
-            Intention
+            {t('popup_intention_label')}
           </label>
           <input
             id="session-intention"
             class="intention-input"
             type="text"
-            placeholder="What are you working on?"
+            placeholder={t('popup_intention_placeholder')}
             value={draft.intention}
             onInput={(event: Event): void =>
               setDraft({ ...draft, intention: (event.currentTarget as HTMLInputElement).value })
@@ -345,26 +356,28 @@ export function StartForm({
 
         <div class="selected-work-tab">
           <p class="work-target">
-            Work tab:{' '}
-            {work.tabs.find((tab: WorkTab): boolean => String(tab.tabId) === workTabId)?.title ??
-              (workTabId === '' ? NO_WORK_TAB_OPTION : WORK_TAB_UNAVAILABLE_OPTION)}
+            {t('popup_work_tab_named', {
+              TITLE:
+                work.tabs.find((tab: WorkTab): boolean => String(tab.tabId) === workTabId)?.title ??
+                (workTabId === '' ? NO_WORK_TAB_OPTION : WORK_TAB_UNAVAILABLE_OPTION),
+            })}
           </p>
           <button
             type="button"
             class="text-button"
             disabled={starting}
-            onClick={(): void => revealField('[aria-label="Work tab"]')}
+            onClick={(): void => revealField(WORK_TAB_SELECTOR)}
           >
-            Change
+            {t('popup_change_button')}
           </button>
         </div>
         <details class="session-disclosure" ref={settingsRef}>
-          <summary>Session settings</summary>
+          <summary>{t('popup_session_settings_summary')}</summary>
           <div class="session-disclosure__content">
             <label class="work-tab-label">
-              Choose a work tab
+              {t('popup_choose_work_tab_label')}
               <select
-                aria-label="Work tab"
+                aria-label={WORK_TAB_SELECT_LABEL}
                 value={workTabId}
                 disabled={work.context === null || starting || work.loading}
                 onChange={(event: Event): void => {
@@ -373,7 +386,9 @@ export function StartForm({
                 }}
               >
                 {currentTab !== undefined ? (
-                  <option value={currentTab.tabId}>{currentTab.title} (Current)</option>
+                  <option value={currentTab.tabId}>
+                    {t('popup_work_tab_current_option', { TITLE: currentTab.title })}
+                  </option>
                 ) : null}
                 <option value="">{NO_WORK_TAB_OPTION}</option>
                 {workTabId !== '' &&
@@ -394,8 +409,8 @@ export function StartForm({
 
             {sessionType}
 
-            <fieldset class="mode-control" aria-label="Blocking mode">
-              <legend>Blocking mode</legend>
+            <fieldset class="mode-control" aria-label={t('popup_blocking_mode_legend')}>
+              <legend>{t('popup_blocking_mode_legend')}</legend>
               {MODE_CHOICES.map(
                 (choice: ModeChoice): VNode => (
                   <RadioRow

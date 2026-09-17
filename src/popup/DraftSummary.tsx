@@ -1,4 +1,5 @@
 import type { VNode } from 'preact';
+import { formatNumber, t } from '../shared/i18n';
 import type { Strictness } from '../shared/types';
 import { effectiveStrictness, type StartDraft } from './start-draft';
 
@@ -17,17 +18,23 @@ export function DraftSummary({
     draft.rules.permanentAllowlist.length + draft.rules.sessionAllowlist.length;
   const blocking: string =
     draft.mode === 'whitelist'
-      ? `Only ${allowed} allowed site rules. Other websites blocked.`
-      : `${categories} blocked categories, ${blocked} extra rules.`;
+      ? t('popup_draft_allowed_only', { COUNT: formatNumber(allowed) })
+      : t('popup_draft_blocked_summary', {
+          CATEGORIES: formatNumber(categories),
+          RULES: formatNumber(blocked),
+        });
   const strictness: Strictness = effectiveStrictness(draft);
+  const waitSeconds: string = formatNumber(draft.frictionGate.delayMs / 1000);
   const stop: string =
     strictness === 'hard'
-      ? 'Hard lock. Cannot end early.'
+      ? t('popup_draft_stop_hard')
       : draft.duration.kind === 'until-stopped'
         ? ''
         : strictness === 'flexible'
-          ? 'Can end at any time.'
-          : `End after a ${draft.frictionGate.delayMs / 1000}s wait${draft.frictionGate.requireTypedPhrase ? ' and confirmation phrase' : ''}.`;
+          ? t('popup_draft_stop_flexible')
+          : draft.frictionGate.requireTypedPhrase
+            ? t('popup_draft_stop_friction_phrase', { SECONDS: waitSeconds })
+            : t('popup_draft_stop_friction', { SECONDS: waitSeconds });
   return (
     <p class="draft-summary">
       <span>{blocking}</span>

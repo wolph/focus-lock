@@ -3,6 +3,7 @@
 import { afterEach, expect, it, type Mock, vi } from 'vitest';
 import { clearDocumentOverlay, renderDocumentOverlay } from '../../../src/content/overlay-v2';
 import { WORK_PICKER_CSS } from '../../../src/content/work-tab-picker';
+import { formatNumber, tPlural } from '../../../src/shared/i18n';
 import type { WorkTab } from '../../../src/shared/work-target';
 import { activeView, root, SESSION_ID, VERDICT } from './overlay-v2-fixtures';
 
@@ -16,6 +17,10 @@ function key(element: Element, value: string): void {
   element.dispatchEvent(
     new KeyboardEvent('keydown', { key: value, bubbles: true, composed: true, cancelable: true }),
   );
+}
+/** The count line the chooser writes, so a wording change is not a test change. */
+function countLine(matches: number, total: number): string {
+  return tPlural('overlay_picker_count', total, { MATCHES: formatNumber(matches) });
 }
 function query(value: string): void {
   search().value = value;
@@ -62,7 +67,7 @@ afterEach((): void => {
 it('keeps ten thousand candidates bounded to the viewport and reaches unrendered rows by keyboard', async (): Promise<void> => {
   await open(10000);
   expect(rows().length).toBeLessThan(30);
-  expect(root().querySelector('.work-picker-count')?.textContent).toBe('10000 of 10000 tabs');
+  expect(root().querySelector('.work-picker-count')?.textContent).toBe(countLine(10000, 10000));
   key(search(), 'ArrowDown');
   key(root().activeElement as Element, 'End');
   expect(root().activeElement?.textContent).toContain('Report 9999');
@@ -76,12 +81,12 @@ it('cancels obsolete large searches and preserves focus when scrolling removes t
   query('9999');
   query('report 3333');
   await vi.waitFor((): void =>
-    expect(root().querySelector('.work-picker-count')?.textContent).toBe('1 of 10000 tabs'),
+    expect(root().querySelector('.work-picker-count')?.textContent).toBe(countLine(1, 10000)),
   );
   expect(rows()[0]?.textContent).toContain('Report 3333');
   query('');
   await vi.waitFor((): void =>
-    expect(root().querySelector('.work-picker-count')?.textContent).toBe('10000 of 10000 tabs'),
+    expect(root().querySelector('.work-picker-count')?.textContent).toBe(countLine(10000, 10000)),
   );
   key(search(), 'ArrowDown');
   const viewport: HTMLElement = root().querySelector('.work-picker-list') as HTMLElement;

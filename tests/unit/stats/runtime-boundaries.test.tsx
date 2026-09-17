@@ -3,6 +3,7 @@
 import { cleanup, render, waitFor } from '@testing-library/preact';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { DEFAULT_SETTINGS, DEFAULT_SETUP } from '../../../src/shared/constants';
+import { t } from '../../../src/shared/i18n';
 import type { Request, StatsBundle } from '../../../src/shared/messages';
 import { App } from '../../../src/stats/App';
 
@@ -96,7 +97,7 @@ describe('Stats runtime response boundaries', (): void => {
       const { getByRole } = render(<App />);
 
       await waitFor((): void => {
-        expect(getByRole('alert').textContent).toBe('Could not load stats. Reload to try again.');
+        expect(getByRole('alert').textContent).toBe(t('stats_load_error'));
       });
     },
   );
@@ -119,7 +120,7 @@ describe('Stats runtime response boundaries', (): void => {
       const { getByRole } = render(<App />);
 
       await waitFor((): void => {
-        expect(getByRole('alert').textContent).toBe('Hourly attempts are unavailable.');
+        expect(getByRole('alert').textContent).toBe(t('stats_partial_error_attempts'));
       });
     },
   );

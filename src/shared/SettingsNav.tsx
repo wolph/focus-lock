@@ -1,4 +1,5 @@
 import type { JSX, VNode } from 'preact';
+import { t } from './i18n';
 import { ThemeControl } from './ThemeControl';
 import type { ThemeMode } from './types';
 
@@ -11,12 +12,12 @@ export type SettingsSectionId =
   | 'privacy';
 
 export const SETTINGS_SECTIONS: ReadonlyArray<{ id: SettingsSectionId; label: string }> = [
-  { id: 'blocking', label: 'Blocking' },
-  { id: 'schedule', label: 'Schedule' },
-  { id: 'behavior', label: 'Session behavior' },
-  { id: 'budget', label: 'Site access credit' },
-  { id: 'notifications', label: 'Notifications' },
-  { id: 'privacy', label: 'Privacy and data' },
+  { id: 'blocking', label: t('shared_section_blocking') },
+  { id: 'schedule', label: t('shared_section_schedule') },
+  { id: 'behavior', label: t('shared_section_behavior') },
+  { id: 'budget', label: t('shared_section_budget') },
+  { id: 'notifications', label: t('shared_section_notifications') },
+  { id: 'privacy', label: t('shared_section_privacy') },
 ];
 
 const SETTINGS_SECTION_ALIASES: Readonly<Record<string, SettingsSectionId>> = {
@@ -47,9 +48,9 @@ interface SettingsNavProps {
 
 export function SettingsNav(props: SettingsNavProps): VNode {
   return (
-    <nav class="settings-nav" aria-label="Product navigation">
+    <nav class="settings-nav" aria-label={t('shared_nav_product')}>
       <div class="settings-nav-heading">
-        <span class="settings-nav-brand">Focus Lock</span>
+        <span class="settings-nav-brand">{t('shared_nav_brand')}</span>
         <ThemeControl mode={props.theme} onChange={props.onThemeChange} />
       </div>
       <a
@@ -57,9 +58,9 @@ export function SettingsNav(props: SettingsNavProps): VNode {
         href="../stats/stats.html"
         aria-current={props.page === 'stats' ? 'page' : undefined}
       >
-        Overview
+        {t('shared_nav_overview')}
       </a>
-      <div class="settings-nav-group-label">Settings</div>
+      <div class="settings-nav-group-label">{t('shared_nav_settings')}</div>
       {SETTINGS_SECTIONS.map(({ id, label }: { id: SettingsSectionId; label: string }): VNode => {
         const current: boolean = props.page === 'options' && props.section === id;
         return (

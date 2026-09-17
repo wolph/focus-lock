@@ -1,5 +1,6 @@
 import type { JSX } from 'preact';
 import { formatDuration, formatTimeOfDay } from '../shared/format';
+import { t } from '../shared/i18n';
 import type { EventRecord } from '../shared/types';
 import { pairSessionRowsV2, type SessionRowV2 } from './session-rows-v2';
 
@@ -10,10 +11,22 @@ function chipClass(outcomeKind: SessionRowV2['outcomeKind']): string {
   return 'chip neutral';
 }
 
+/** How a session was started, spelled for the narrow-screen card. */
+function sourceLabel(source: 'manual' | 'schedule'): string {
+  return source === 'schedule'
+    ? t('stats_session_source_schedule')
+    : t('stats_session_source_manual');
+}
+
 function SourceGlyph(props: { source: 'manual' | 'schedule' }): JSX.Element {
   if (props.source === 'schedule') {
     return (
-      <svg class="glyph source" viewBox="0 0 16 16" aria-label="scheduled" role="img">
+      <svg
+        class="glyph source"
+        viewBox="0 0 16 16"
+        aria-label={t('stats_session_source_scheduled')}
+        role="img"
+      >
         <circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.4" />
         <path
           d="M8 4.5V8l2.4 1.6"
@@ -26,7 +39,12 @@ function SourceGlyph(props: { source: 'manual' | 'schedule' }): JSX.Element {
     );
   }
   return (
-    <svg class="glyph source" viewBox="0 0 16 16" aria-label="manual" role="img">
+    <svg
+      class="glyph source"
+      viewBox="0 0 16 16"
+      aria-label={t('stats_session_source_manual')}
+      role="img"
+    >
       <circle cx="8" cy="8" r="2.6" fill="currentColor" />
     </svg>
   );
@@ -37,28 +55,28 @@ export function SessionLog(props: { events: EventRecord[] }): JSX.Element {
   if (rows.length === 0) {
     return (
       <section class="card">
-        <h2>Recent sessions on this machine</h2>
-        <p class="empty-line">Your first session will appear here.</p>
+        <h2>{t('stats_sessions_heading')}</h2>
+        <p class="empty-line">{t('stats_sessions_empty')}</p>
       </section>
     );
   }
   return (
     <section class="card">
-      <h2>Recent sessions on this machine</h2>
+      <h2>{t('stats_sessions_heading')}</h2>
       <div class="session-table-wrap">
         <table class="session-table">
           <thead>
             <tr>
-              <th>Date</th>
-              <th>Start</th>
-              <th>Planned</th>
-              <th>Focused</th>
-              <th>All sites</th>
-              <th>One site</th>
-              <th>Intention</th>
-              <th>Outcome</th>
+              <th>{t('stats_sessions_col_date')}</th>
+              <th>{t('stats_sessions_col_start')}</th>
+              <th>{t('stats_sessions_col_planned')}</th>
+              <th>{t('stats_sessions_col_focused')}</th>
+              <th>{t('stats_sessions_col_all_sites')}</th>
+              <th>{t('stats_sessions_col_one_site')}</th>
+              <th>{t('stats_sessions_col_intention')}</th>
+              <th>{t('stats_sessions_col_outcome')}</th>
               <th>
-                <span class="visually-hidden">Source</span>
+                <span class="visually-hidden">{t('stats_sessions_col_source')}</span>
               </th>
             </tr>
           </thead>
@@ -90,43 +108,45 @@ export function SessionLog(props: { events: EventRecord[] }): JSX.Element {
           (row: SessionRowV2): JSX.Element => (
             <article
               class="session-article"
-              aria-label={`Session: ${row.intention || 'No intention'}`}
+              aria-label={t('stats_session_article_label', {
+                INTENTION: row.intention || t('stats_session_no_intention'),
+              })}
               key={row.startedAt}
             >
               <div class="session-article-heading">
-                <strong>{row.intention || 'No intention'}</strong>
+                <strong>{row.intention || t('stats_session_no_intention')}</strong>
                 <span class={chipClass(row.outcomeKind)}>{row.outcome}</span>
               </div>
               <dl class="session-fields">
                 <div>
-                  <dt>Date</dt>
+                  <dt>{t('stats_sessions_col_date')}</dt>
                   <dd>{new Date(row.startedAt).toLocaleDateString()}</dd>
                 </div>
                 <div>
-                  <dt>Start</dt>
+                  <dt>{t('stats_sessions_col_start')}</dt>
                   <dd>{formatTimeOfDay(row.startedAt)}</dd>
                 </div>
                 <div>
-                  <dt>Planned</dt>
+                  <dt>{t('stats_sessions_col_planned')}</dt>
                   <dd>{row.plan}</dd>
                 </div>
                 <div>
-                  <dt>Focused</dt>
+                  <dt>{t('stats_sessions_col_focused')}</dt>
                   <dd>{row.focusedMs === null ? '-' : formatDuration(row.focusedMs)}</dd>
                 </div>
                 <div>
-                  <dt>All sites</dt>
+                  <dt>{t('stats_sessions_col_all_sites')}</dt>
                   <dd>{formatDuration(row.pauseMs)}</dd>
                 </div>
                 <div>
-                  <dt>One site</dt>
+                  <dt>{t('stats_sessions_col_one_site')}</dt>
                   <dd>{formatDuration(row.unlockMs)}</dd>
                 </div>
                 <div>
-                  <dt>Source</dt>
+                  <dt>{t('stats_sessions_col_source')}</dt>
                   <dd class="session-source">
                     <SourceGlyph source={row.source} />
-                    {row.source}
+                    {sourceLabel(row.source)}
                   </dd>
                 </div>
               </dl>

@@ -1,3 +1,4 @@
+import { t, tPlural } from '../shared/i18n';
 import { isRelativeMinuteDuration } from '../shared/numeric-validation';
 import { LOCK_UNTIL_MANUAL_UNLOCK_LABEL, START_UNTIL_STOPPED_LABEL } from '../shared/session-copy';
 import type {
@@ -37,7 +38,7 @@ export interface StartDraft {
   rules: SessionRuleSnapshot;
 }
 
-const INVALID_DURATION_LABEL: string = 'invalid time';
+const INVALID_DURATION_LABEL: string = t('popup_invalid_time_label');
 
 export function createStartDraft(settings: SettingsV2, lists: ListsConfig): StartDraft {
   const base: SessionDraft = createSessionDraft(settings, lists);
@@ -137,8 +138,9 @@ export function startLabel(draft: StartDraft): string {
       : START_UNTIL_STOPPED_LABEL;
   }
   const minutes: number | null = effectiveTimedMinutes(draft);
-  const durationLabel: string = minutes === null ? INVALID_DURATION_LABEL : `${minutes} min`;
-  return `Start ${durationLabel} focus`;
+  const durationLabel: string =
+    minutes === null ? INVALID_DURATION_LABEL : tPlural('shared_minutes', minutes);
+  return t('popup_start_focus_label', { DURATION: durationLabel });
 }
 
 /** null when the timed draft has no usable length. Until stopped always submits. */

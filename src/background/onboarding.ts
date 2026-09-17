@@ -1,3 +1,4 @@
+import { t } from '../shared/i18n';
 import type {
   OnboardingDraftLoadResponse,
   OnboardingDraftWriteResponse,
@@ -31,16 +32,14 @@ function operationalFailure(error: unknown): OnboardingOperationalFailure {
   const message: string = error instanceof Error ? error.message : String(error);
   return {
     ok: false,
-    error: message.trim().length > 0 ? message : 'Onboarding storage operation failed.',
+    error: message.trim().length > 0 ? message : t('notify_onboarding_storage_failed'),
   };
 }
 
 function conflict(draft: OnboardingDraft | null, completed: boolean): OnboardingDraftWriteResult {
   return {
     ok: false,
-    error: completed
-      ? 'Setup was completed in another tab.'
-      : 'Setup changed in another tab. The latest choices were reloaded.',
+    error: completed ? t('notify_setup_completed_elsewhere') : t('notify_setup_changed_reloaded'),
     conflict: true,
     completed,
     draft,

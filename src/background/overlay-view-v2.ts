@@ -19,6 +19,7 @@ import {
 } from '../shared/enforcement-v2-validation';
 import { CoreError } from '../shared/errors';
 import { snapshotExactData } from '../shared/exact-data';
+import { t } from '../shared/i18n';
 import { formatClock, minToMs } from '../shared/time';
 import type {
   CycleConfig,
@@ -57,10 +58,10 @@ const STOPPED_PAGE_COPY: NonNullable<StartingOverlayCopy['stoppedPage']> =
 const UNTIL_STOPPED_STATUS: Extract<ActiveStatusCopy, { kind: 'until-stopped' }>['text'] =
   'Until stopped';
 /** What the intention line says when the session was started without one. */
-const NEXT_STEP_FALLBACK: string = 'Continue your current task';
+const NEXT_STEP_FALLBACK: string = t('shared_overlay_next_step_fallback');
 /** The End control and the cancel gate's confirm on a timed page. */
 const END_ACTION_LABEL: EndActionLabelV2 = 'End session';
-const END_GATE_CONFIRM: string = 'End the session';
+const END_GATE_CONFIRM: string = t('shared_end_the_session');
 /** The same control and confirm on a Friction until-stopped page, which the popup also uses. */
 const UNLOCK_ACTION_LABEL: EndActionLabelV2 = 'Unlock';
 
@@ -109,11 +110,12 @@ const FIXED_ACTIVE_COPY: Readonly<
 };
 
 /** The two spend actions, and the confirm each one's gate ends with. */
-const PAUSE_ACTION_LABEL: string = 'Unlock all sites';
+const PAUSE_ACTION_LABEL: string = t('shared_overlay_pause_action');
 const UNLOCK_ACTION_LABEL_PREFIX: string = 'Unlock';
+const UNLOCK_SITE_ACTION_LABEL: string = t('shared_overlay_unlock_site_action');
 const GATE_CONFIRM_COPY: Readonly<Record<Exclude<GateKind, 'cancel'>, string>> = {
   pause: PAUSE_ACTION_LABEL,
-  unlockSite: 'Unlock this site',
+  unlockSite: UNLOCK_SITE_ACTION_LABEL,
 };
 
 export interface StartingViewInputV2 {
@@ -354,9 +356,10 @@ function activeCopy(
     verdictProvenance: verdictLabel(input.verdict),
     stoppedPage: stoppedPageCopy(input.stoppedPage),
     pauseAction: spendActionCopy(PAUSE_ACTION_LABEL, input.economy.pauseCostMs),
-    unlockAction: spendActionCopy('Unlock this site', input.economy.unlockCostMs),
+    unlockAction: spendActionCopy(UNLOCK_SITE_ACTION_LABEL, input.economy.unlockCostMs),
     gateTitle: gate === null ? null : gateTitleCopy(gate, input.economy, endAction),
-    gateSaid: gate === null || goal === '' ? null : `You said: ${goal}`,
+    gateSaid:
+      gate === null || goal === '' ? null : t('shared_overlay_gate_said', { INTENTION: goal }),
     gateConfirm: gate === null ? null : gateConfirmCopy(gate.kind, endAction),
   };
 }
@@ -364,13 +367,13 @@ function activeCopy(
 /** `Unlock all sites 5:00 - costs 5:00 credit`: the length and the cost are the same clock. */
 function spendActionCopy(label: string, costMs: number): string {
   const clock: string = formatClock(costMs);
-  return `${label} ${clock} - costs ${clock} credit`;
+  return t('shared_overlay_spend_action', { LABEL: label, LENGTH: clock, COST: clock });
 }
 
 /** The cancel gate confirms with the End label's own word, so Unlock stays Unlock inside the gate. */
 function gateConfirmCopy(kind: GateKind, endAction: EndActionLabelV2): string {
   if (kind !== 'cancel') return GATE_CONFIRM_COPY[kind];
-  return endAction === UNLOCK_ACTION_LABEL ? UNLOCK_ACTION_LABEL : END_GATE_CONFIRM;
+  return endAction === UNLOCK_ACTION_LABEL ? t('shared_unlock') : END_GATE_CONFIRM;
 }
 
 /**
@@ -382,7 +385,10 @@ function leadCopy(duration: SessionDuration, sessionEndsAt: number | null): Acti
     return { status: { kind: 'until-stopped', text: UNTIL_STOPPED_STATUS }, lockedUntil: null };
   }
   const lockedUntil: string = formatLockedUntilV2(sessionEndsAt ?? Number.NaN);
-  return { status: { kind: 'timed', text: `Locked until ${lockedUntil}` }, lockedUntil };
+  return {
+    status: { kind: 'timed', text: t('shared_overlay_locked_until', { TIME: lockedUntil }) },
+    lockedUntil,
+  };
 }
 
 /** A spend gate repeats its action's own sentence, a cancel gate names what it ends. */
@@ -397,9 +403,14 @@ function gateTitleCopy(
     // detached predicate the runtime uses, so borrowing "this site" would paper over a gate no
     // validator produced. This module raises for an unrenderable input rather than inventing copy.
     if (!isNonBlankString(gate.host)) invalidView('an unlock gate names the host it unlocks');
-    return `${UNLOCK_ACTION_LABEL_PREFIX} ${gate.host} ${formatClock(economy.unlockCostMs)}`;
+    return t('shared_overlay_unlock_host', {
+      HOST: gate.host,
+      CLOCK: formatClock(economy.unlockCostMs),
+    });
   }
-  return endAction === UNLOCK_ACTION_LABEL ? UNLOCK_ACTION_LABEL : 'End this session';
+  return endAction === UNLOCK_ACTION_LABEL
+    ? t('shared_unlock')
+    : t('shared_gate_end_title');
 }
 
 /**

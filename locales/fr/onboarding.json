@@ -1,0 +1,168 @@
+{
+  "onboarding_page_title": {
+    "message": "Configurer Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Configuration de Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Étape $STEP$ sur $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Ta configuration enregistrée n'a pas pu être restaurée. On repart de tes valeurs par défaut actuelles."
+  },
+  "onboarding_complete_heading": {
+    "message": "Configuration terminée"
+  },
+  "onboarding_complete_body": {
+    "message": "Tes choix sont enregistrés. Ouvre Focus Lock depuis la barre d'outils de Chrome pour démarrer une session."
+  },
+  "onboarding_error_heading": {
+    "message": "Configuration indisponible"
+  },
+  "onboarding_error_body": {
+    "message": "Impossible de charger la configuration. Réessaie."
+  },
+  "onboarding_retry_button": {
+    "message": "Réessayer"
+  },
+  "onboarding_save_error": {
+    "message": "Impossible d'enregistrer la progression de la configuration. Réessaie."
+  },
+  "onboarding_enable_error": {
+    "message": "Impossible d'activer le blocage des sites. Réessaie."
+  },
+  "onboarding_finish_error": {
+    "message": "Impossible de terminer la configuration. Tes choix sont toujours enregistrés. Réessaie."
+  },
+  "onboarding_lists_heading": {
+    "message": "Choisis ta liste de blocage de départ"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "En $MODE$, les catégories activées et les sites bloqués en plus sont inaccessibles.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "En $MODE$, tous les sites sont inaccessibles sauf ta liste d'autorisation.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Ces choix deviennent les valeurs par défaut des prochaines sessions. Tu pourras les modifier plus tard."
+  },
+  "onboarding_lists_legend": {
+    "message": "Catégories de sites recommandées"
+  },
+  "onboarding_show_category_sites": {
+    "message": "Afficher les sites $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Masquer les sites $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Domaines $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Continuer"
+  },
+  "onboarding_access_heading": {
+    "message": "Activer le blocage des sites"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock vérifie les adresses des pages en local pour les comparer aux catégories et aux sites que tu as choisis. Il utilise l'accès aux sites pour afficher son écran de blocage et rétablir les pages concernées à la fin de ta session."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Les catégories et les domaines personnalisés peuvent viser n'importe quel site. Chrome demandera donc cette autorisation :"
+  },
+  "onboarding_access_capability": {
+    "message": "Lire et modifier toutes vos données sur tous les sites Web"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock n'utilise cet accès que pour appliquer tes règles de blocage."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome n'a pas donné l'accès aux sites. Tu peux réessayer."
+  },
+  "onboarding_access_registration_error": {
+    "message": "L'accès aux sites est accordé, mais Focus Lock n'a pas pu activer le blocage. Relance la configuration ou recharge l'extension."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Activer le blocage des sites"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Plus tard"
+  },
+  "onboarding_sync_heading": {
+    "message": "Choisis où tes réglages sont stockés"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Synchroniser entre les appareils Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Les données approuvées ci-dessous passeront par Chrome Sync une fois la configuration terminée."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Toutes les données Focus Lock restent dans ce profil Chrome."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Synchronisé"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Local uniquement"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Rien n'est envoyé au développeur de Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Terminer avec la synchronisation activée"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Terminer sans synchronisation"
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

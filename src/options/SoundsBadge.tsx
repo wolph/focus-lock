@@ -1,5 +1,6 @@
 import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useState } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import type { Ack, SoundId } from '../shared/messages';
 import { sendRequest } from '../shared/messages';
 import { ackError } from '../shared/runtime-validation';
@@ -10,11 +11,28 @@ export interface SoundsBadgeProps {
   onChange: (next: Settings) => void;
 }
 
-const SOUND_EVENTS: ReadonlyArray<{ id: SoundId; key: keyof SoundSettings; label: string }> = [
-  { id: 'sessionComplete', key: 'sessionComplete', label: 'Session complete' },
-  { id: 'breakStart', key: 'breakStart', label: 'Break start' },
-  { id: 'breakEnd', key: 'breakEnd', label: 'Break end' },
-  { id: 'scheduleStart', key: 'scheduleStart', label: 'Schedule auto-start' },
+/** The catalogue keys naming the sounds, none of which takes a placeholder. */
+type SoundLabelKey =
+  | 'options_sound_session_complete'
+  | 'options_sound_break_start'
+  | 'options_sound_break_end'
+  | 'options_sound_schedule_start';
+
+interface SoundEvent {
+  id: SoundId;
+  key: keyof SoundSettings;
+  labelKey: SoundLabelKey;
+}
+
+const SOUND_EVENTS: readonly SoundEvent[] = [
+  {
+    id: 'sessionComplete',
+    key: 'sessionComplete',
+    labelKey: 'options_sound_session_complete',
+  },
+  { id: 'breakStart', key: 'breakStart', labelKey: 'options_sound_break_start' },
+  { id: 'breakEnd', key: 'breakEnd', labelKey: 'options_sound_break_end' },
+  { id: 'scheduleStart', key: 'scheduleStart', labelKey: 'options_sound_schedule_start' },
 ];
 
 /** Master volume, per-event sound toggles with previews, badge countdown. */
@@ -30,19 +48,19 @@ export function SoundsBadge(props: SoundsBadgeProps): VNode {
     setPendingSound(sound);
     try {
       const ack: Ack = await sendRequest({ type: 'previewSound', sound });
-      const responseError: string | null = ackError(ack, 'Could not preview the sound. Try again.');
+      const responseError: string | null = ackError(ack, t('options_sound_preview_error'));
       if (responseError !== null) setPreviewError(responseError);
     } catch {
-      setPreviewError('Could not preview the sound. Try again.');
+      setPreviewError(t('options_sound_preview_error'));
     } finally {
       setPendingSound(null);
     }
   };
   return (
     <div>
-      <h3>Sounds</h3>
+      <h3>{t('options_sounds_heading')}</h3>
       <label class="field">
-        Master volume
+        {t('options_master_volume')}
         <input
           type="range"
           min="0"
@@ -54,8 +72,9 @@ export function SoundsBadge(props: SoundsBadgeProps): VNode {
           }}
         />
       </label>
-      {SOUND_EVENTS.map(
-        (sound: { id: SoundId; key: keyof SoundSettings; label: string }): VNode => (
+      {SOUND_EVENTS.map((sound: SoundEvent): VNode => {
+        const label: string = t(sound.labelKey);
+        return (
           <div class="field" key={sound.id}>
             <label class="check">
               <input
@@ -68,28 +87,28 @@ export function SoundsBadge(props: SoundsBadgeProps): VNode {
                   });
                 }}
               />
-              {sound.label}
+              {label}
             </label>
             <button
               type="button"
               class="ghost"
-              aria-label={`Preview ${sound.label}`}
+              aria-label={t('options_sound_preview_aria', { SOUND: label })}
               disabled={pendingSound !== null}
               onClick={(): void => {
                 void preview(sound.id);
               }}
             >
-              Play
+              {t('options_sound_play')}
             </button>
           </div>
-        ),
-      )}
+        );
+      })}
       {previewError !== null ? (
         <p class="save-error" role="alert">
           {previewError}
         </p>
       ) : null}
-      <h3>Notifications</h3>
+      <h3>{t('options_sounds_notifications_heading')}</h3>
       <label class="check">
         <input
           type="checkbox"
@@ -101,9 +120,9 @@ export function SoundsBadge(props: SoundsBadgeProps): VNode {
             });
           }}
         />
-        Show a system notification when a session completes
+        {t('options_session_complete_notification')}
       </label>
-      <h3>Badge</h3>
+      <h3>{t('options_badge_heading')}</h3>
       <label class="check">
         <input
           type="checkbox"
@@ -112,7 +131,7 @@ export function SoundsBadge(props: SoundsBadgeProps): VNode {
             props.onChange({ ...s, badgeCountdown: !s.badgeCountdown });
           }}
         />
-        Show the remaining time on the toolbar icon
+        {t('options_badge_countdown')}
       </label>
     </div>
   );

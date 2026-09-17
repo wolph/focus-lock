@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Focus session complete"
+  },
+  "notify_session_complete_body": {
+    "message": "Your focus session finished."
+  },
+  "notify_schedule_window_body": {
+    "message": "Locked until $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Focus schedule could not start"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Website blocking is not enabled. Finish setup or grant website access, then try again."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Setup was completed in another tab."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Setup changed in another tab. The latest choices were reloaded."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Setup changed in another tab. Reload setup before finishing."
+  },
+  "notify_setup_not_complete": {
+    "message": "Setup is not complete."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Setup is not ready to finish."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Setup storage choice changed. Reload setup before finishing."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Onboarding storage operation failed."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Onboarding operation failed."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock could not check website access. Retry setup or reload the extension."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload the extension."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Website access is unavailable, and Focus Lock could not finish blocking cleanup. Retry setup or reload the extension."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock received an inconsistent website access state. Retry setup or reload the extension."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock did not finish starting: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "unknown error"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock is running, nothing to reset"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock cannot reset a runtime that is still committed inside a policy generation"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Data clear retry is not available."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Disable Sync before deleting synced data"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock is still finishing an earlier change. Try again in a moment."
+  },
+  "notify_work_gate_stuck": {
+    "message": "The open gate could not be closed. Try again."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "The work tab is unavailable."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Settings exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "a hard session is running: removing blocked sites unlocks when it ends"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "a hard session is running: new whitelist entries unlock when it ends"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "a hard session is running: disabling categories unlocks when it ends"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "a hard session is running: new exclusions unlock when it ends"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "a hard session is running: weakening the default strictness waits until it ends"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "a hard session is running: shortening the deliberation delay weakens the gate"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "a hard session is running: dropping the typed phrase weakens the gate"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "a hard session is running: raising the pause earn rate funds more escapes"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "a hard session is running: raising the pause cap funds more escapes"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "a hard session is running: shortening pauses lowers their cost"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "a hard session is running: shortening unlocks lowers their cost"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "a hard session is running: its schedule entry cannot be weakened until it ends"
+  }
+}

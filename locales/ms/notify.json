@@ -1,0 +1,68 @@
+{
+  "notify_session_complete_title": {
+    "message": "Fokus session complete"
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Fokus schedule could not start"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Situs web blocking is not enabled. Finish setup or grant website access, then try again."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Penyiapan was completed in another tab."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Penyiapan changed in another tab. The latest choices were reloaded."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Penyiapan changed in another tab. Reload setup before finishing."
+  },
+  "notify_setup_not_complete": {
+    "message": "Penyiapan is not complete."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Penyiapan is not ready to finish."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Penyiapan storage choice changed. Reload setup before finishing."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Fokus Lock could not check website access. Coba Ulang setup or reload the extension."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Situs web access is unavailable, and Fokus Lock could not finish blocking cleanup. Coba Ulang setup or reload the extension."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Fokus Lock received an inconsistent website access state. Coba Ulang setup or reload the extension."
+  },
+  "notify_boot_not_finished": {
+    "message": "Fokus Lock did not finish starting: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_nothing_to_reset": {
+    "message": "Fokus Lock is running, nothing to reset"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Fokus Lock cannot reset a runtime that is still committed inside a policy generation"
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Nonaktifkan Sync before deleting synced data"
+  },
+  "notify_work_gate_busy": {
+    "message": "Fokus Lock is still finishing an earlier change. Try again in a moment."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Pengaturan exceed the 8 KB Chrome Sync limit. Hapus schedule entries or shorten intentions, then try again."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Hapus custom or whitelist rules, then try again."
+  }
+}

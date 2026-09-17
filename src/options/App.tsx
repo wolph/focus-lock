@@ -1,5 +1,6 @@
 import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import {
   parseSettingsSectionHash,
   SETTINGS_SECTIONS,
@@ -31,31 +32,25 @@ interface SectionProps {
 function BlockingSection(props: SectionProps): VNode {
   return (
     <section>
-      <h2>Blocking</h2>
-      <p class="help">
-        Custom rules block during blacklist sessions. The whitelist is what stays reachable during
-        whitelist sessions. Bundled categories block common time sinks.
-      </p>
+      <h2>{t('options_blocking_heading')}</h2>
+      <p class="help">{t('options_blocking_help')}</p>
       <RulesEditor
-        title="Custom blacklist"
+        title={t('options_custom_blacklist_title')}
         rules={props.lists.custom}
         onChange={(next: Rule[]): void => {
           props.onLists({ ...props.lists, custom: next });
         }}
       />
       <RulesEditor
-        title="Whitelist"
+        title={t('options_whitelist_title')}
         rules={props.lists.whitelist}
         onChange={(next: Rule[]): void => {
           props.onLists({ ...props.lists, whitelist: next });
         }}
       />
       <div class="lists-categories-section">
-        <h3>Bundled categories</h3>
-        <p class="help">
-          Bundled lists of common time sinks. Toggle a whole category, then open it to keep single
-          sites available.
-        </p>
+        <h3>{t('options_bundled_categories_heading')}</h3>
+        <p class="help">{t('options_bundled_categories_help')}</p>
         <Categories lists={props.lists} onChange={props.onLists} />
       </div>
     </section>
@@ -65,11 +60,8 @@ function BlockingSection(props: SectionProps): VNode {
 function ScheduleSection(props: SectionProps): VNode {
   return (
     <section>
-      <h2>Schedule</h2>
-      <p class="help">
-        Sessions start on their own inside these windows. Strictness set here applies for the whole
-        window.
-      </p>
+      <h2>{t('options_schedule_heading')}</h2>
+      <p class="help">{t('options_schedule_help')}</p>
       <Schedule
         entries={props.settings.schedule}
         defaults={props.settings}
@@ -84,7 +76,7 @@ function ScheduleSection(props: SectionProps): VNode {
 function BehaviorSection(props: SectionProps): VNode {
   return (
     <section>
-      <h2>Session behavior</h2>
+      <h2>{t('options_behavior_heading')}</h2>
       <BehaviorDefaults settings={props.settings} onChange={props.onSettings} />
     </section>
   );
@@ -93,7 +85,7 @@ function BehaviorSection(props: SectionProps): VNode {
 function BudgetSection(props: SectionProps): VNode {
   return (
     <section>
-      <h2>Site access credit</h2>
+      <h2>{t('options_budget_heading')}</h2>
       <PauseEconomy settings={props.settings} onChange={props.onSettings} />
     </section>
   );
@@ -102,7 +94,7 @@ function BudgetSection(props: SectionProps): VNode {
 function NotificationsSection(props: SectionProps): VNode {
   return (
     <section>
-      <h2>Notifications</h2>
+      <h2>{t('options_notifications_heading')}</h2>
       <SoundsBadge settings={props.settings} onChange={props.onSettings} />
     </section>
   );
@@ -162,7 +154,7 @@ function LoadError({ store }: { store: SettingsStore }): VNode {
               void retry();
             }}
           >
-            Retry
+            {t('options_load_error_retry')}
           </button>
           {confirmingDelete ? (
             <>
@@ -174,7 +166,7 @@ function LoadError({ store }: { store: SettingsStore }): VNode {
                   void deleteAll();
                 }}
               >
-                Delete everything and start over
+                {t('options_load_error_delete_all')}
               </button>
               <button
                 type="button"
@@ -182,7 +174,7 @@ function LoadError({ store }: { store: SettingsStore }): VNode {
                 disabled={pending}
                 onClick={(): void => setConfirmingDelete(false)}
               >
-                Keep my data
+                {t('options_load_error_keep_data')}
               </button>
             </>
           ) : (
@@ -192,7 +184,7 @@ function LoadError({ store }: { store: SettingsStore }): VNode {
               disabled={pending}
               onClick={(): void => setConfirmingDelete(true)}
             >
-              Delete all Focus Lock data
+              {t('options_delete_all_data')}
             </button>
           )}
         </div>
@@ -204,9 +196,9 @@ function LoadError({ store }: { store: SettingsStore }): VNode {
 function PrivacySection(props: SectionProps): VNode {
   return (
     <section>
-      <h2>Privacy and data</h2>
+      <h2>{t('options_privacy_heading')}</h2>
       {props.store.setup === null ? (
-        <p>Loading privacy settings</p>
+        <p>{t('options_privacy_loading')}</p>
       ) : (
         <PrivacyData
           setup={props.store.setup}
@@ -507,12 +499,11 @@ export function App(): VNode {
         result = await store.saveLists(draftLists);
       } else {
         const mutation: SettingsMutation | null = settingsMutationFromDraft(source, draftSettings);
-        result =
-          mutation === null ? 'Could not save. Try again.' : await store.saveSettings(mutation);
+        result = mutation === null ? t('options_save_failed') : await store.saveSettings(mutation);
       }
       error = result;
     } catch {
-      error = 'Could not save. Try again.';
+      error = t('options_save_failed');
     } finally {
       if (pendingTransactions.current.get(source) === transactionId) {
         pendingTransactions.current.delete(source);
@@ -563,12 +554,12 @@ export function App(): VNode {
       />
       <main class="content">
         <div class="content-body">
-          <h1>Focus Lock settings</h1>
+          <h1>{t('options_heading')}</h1>
           {store.snapshot === null ? null : <SessionStatus snapshot={store.snapshot} />}
           {store.loadError !== null ? (
             <LoadError store={store} />
           ) : draftSettings === null || draftLists === null ? (
-            <p>Loading settings</p>
+            <p>{t('options_loading_settings')}</p>
           ) : (
             <SectionPanels
               section={section}

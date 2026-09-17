@@ -1,5 +1,6 @@
 import type { JSX } from 'preact';
 import { formatDuration } from '../shared/format';
+import { formatNumber, t } from '../shared/i18n';
 import type { StatsBundle } from '../shared/messages';
 import { localDateStr } from '../shared/time';
 import type { DailyAgg, MonthlyAgg, PauseEconomy } from '../shared/types';
@@ -53,23 +54,35 @@ function buildTiles(bundle: StatsBundle, now: number): TileSpec[] {
   const earnedMs: number = today?.pauseMsEarned ?? 0;
   const spendingSubline: string =
     spentMs > 0
-      ? `All sites ${formatDuration(pauseMs)}, one site ${formatDuration(unlockMs)}, ${formatDuration(earnedMs)} earned`
-      : `${formatDuration(earnedMs)} earned`;
+      ? t('stats_tile_credit_subline_spent', {
+          ALL_SITES: formatDuration(pauseMs),
+          ONE_SITE: formatDuration(unlockMs),
+          EARNED: formatDuration(earnedMs),
+        })
+      : t('stats_tile_credit_subline_earned', { EARNED: formatDuration(earnedMs) });
   return [
-    { label: 'Focus today', value: formatDuration(bundle.totals.focusMsToday), subline: null },
     {
-      label: 'Focus in the last 7 days',
+      label: t('stats_tile_focus_today'),
+      value: formatDuration(bundle.totals.focusMsToday),
+      subline: null,
+    },
+    {
+      label: t('stats_tile_focus_last_7_days'),
       value: formatDuration(bundle.totals.focusMsLast7Days),
       subline: null,
     },
-    { label: 'Attempts blocked today', value: String(bundle.totals.attemptsToday), subline: null },
     {
-      label: 'Gate requests dismissed today',
-      value: String(bundle.totals.resistedToday),
+      label: t('stats_tile_attempts_today'),
+      value: formatNumber(bundle.totals.attemptsToday),
       subline: null,
     },
     {
-      label: 'Site access credit spent today',
+      label: t('stats_tile_gate_dismissed_today'),
+      value: formatNumber(bundle.totals.resistedToday),
+      subline: null,
+    },
+    {
+      label: t('stats_tile_credit_spent_today'),
       value: formatDuration(spentMs),
       subline: spendingSubline,
     },
@@ -78,7 +91,7 @@ function buildTiles(bundle: StatsBundle, now: number): TileSpec[] {
 
 export function Tiles(props: TilesProps): JSX.Element {
   if (isEmptyBundle(props.bundle)) {
-    return <p class="empty-line">Stats appear after your first session.</p>;
+    return <p class="empty-line">{t('stats_empty')}</p>;
   }
   const tiles: TileSpec[] = buildTiles(props.bundle, props.now);
   return (

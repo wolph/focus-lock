@@ -2,6 +2,7 @@ import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useId, useState } from 'preact/hooks';
 import { scheduleEntriesOverlap, validateEntry } from '../core/schedule';
 import { ForcedControl } from '../shared/ForcedControl';
+import { t } from '../shared/i18n';
 import {
   FORCED_CYCLES_LABEL,
   HARD_UNAVAILABLE_REASON,
@@ -20,21 +21,66 @@ export interface ScheduleProps {
 }
 
 /** Date.getDay convention: 0 = Sunday. Rendered Monday first. */
-const DAY_LABELS: readonly string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+type DayKey =
+  | 'options_day_sun'
+  | 'options_day_mon'
+  | 'options_day_tue'
+  | 'options_day_wed'
+  | 'options_day_thu'
+  | 'options_day_fri'
+  | 'options_day_sat';
+
+const DAY_KEYS: readonly DayKey[] = [
+  'options_day_sun',
+  'options_day_mon',
+  'options_day_tue',
+  'options_day_wed',
+  'options_day_thu',
+  'options_day_fri',
+  'options_day_sat',
+];
 const DAY_ORDER: readonly number[] = [1, 2, 3, 4, 5, 6, 0];
 
-const CYCLES_LABEL: string = 'Cycle focus and breaks';
+/** The abbreviated weekday for a `Date.getDay` index, or the empty string outside the week. */
+function dayLabel(day: number): string {
+  const key: DayKey | undefined = DAY_KEYS[day];
+  return key === undefined ? '' : t(key);
+}
+
+type StrictnessLabelKey =
+  | 'options_strictness_flexible_label'
+  | 'options_strictness_friction_label'
+  | 'options_strictness_hard_label';
 
 interface StrictnessChoice {
   value: Strictness;
-  label: string;
+  labelKey: StrictnessLabelKey;
 }
 
 const STRICTNESS_CHOICES: readonly StrictnessChoice[] = [
-  { value: 'flexible', label: 'Flexible: end the session whenever you choose' },
-  { value: 'friction', label: 'Friction: stopping early uses the configured deliberation gate' },
-  { value: 'hard', label: 'Hard: no early end, temporary site access only' },
+  { value: 'flexible', labelKey: 'options_strictness_flexible_label' },
+  { value: 'friction', labelKey: 'options_strictness_friction_label' },
+  { value: 'hard', labelKey: 'options_strictness_hard_label' },
 ];
+
+/** The lower-case mode and session type a saved entry shows in its summary row. */
+type ModeKey = 'options_schedule_mode_blacklist' | 'options_schedule_mode_whitelist';
+
+const MODE_KEYS: Readonly<Record<ScheduleEntryV2['mode'], ModeKey>> = {
+  blacklist: 'options_schedule_mode_blacklist',
+  whitelist: 'options_schedule_mode_whitelist',
+};
+
+type StrictnessValueKey =
+  | 'options_schedule_strictness_flexible'
+  | 'options_schedule_strictness_friction'
+  | 'options_schedule_strictness_hard';
+
+const STRICTNESS_KEYS: Readonly<Record<Strictness, StrictnessValueKey>> = {
+  flexible: 'options_schedule_strictness_flexible',
+  friction: 'options_schedule_strictness_friction',
+  hard: 'options_schedule_strictness_hard',
+};
 
 /**
  * The choices a window entry submits and an indefinite entry holds back: cycling always, and the
@@ -152,7 +198,9 @@ function overlapError(candidate: ScheduleEntryV2, entries: ScheduleEntryV2[]): s
     const day: number | undefined = DAY_ORDER.find(
       (value: number): boolean => candidate.days.includes(value) && entry.days.includes(value),
     );
-    if (day !== undefined) return `Overlaps another enabled entry on ${DAY_LABELS[day]}.`;
+    if (day !== undefined) {
+      return t('options_schedule_overlap_error', { DAY: dayLabel(day) });
+    }
   }
   return null;
 }
@@ -182,7 +230,7 @@ function DayPicker(props: DayPickerProps): VNode {
               toggle(day);
             }}
           >
-            {DAY_LABELS[day]}
+            {dayLabel(day)}
           </button>
         ),
       )}
@@ -205,7 +253,7 @@ function EntryForm(props: EntryFormProps): VNode {
   const hardReasonId: string = `schedule-hard-reason-${useId()}`;
 
   const strictnessField: VNode = (
-    <fieldset class="field" aria-label="Session type">
+    <fieldset class="field" aria-label={t('options_schedule_session_type_aria')}>
       {STRICTNESS_CHOICES.map((choice: StrictnessChoice): VNode => {
         const unavailable: boolean = indefinite && choice.value === 'hard';
         return (
@@ -220,7 +268,7 @@ function EntryForm(props: EntryFormProps): VNode {
                 props.onDraft(setStrictness(props.draft, choice.value));
               }}
             />
-            {choice.label}
+            {t(choice.labelKey)}
           </label>
         );
       })}
@@ -246,13 +294,13 @@ function EntryForm(props: EntryFormProps): VNode {
           );
         }}
       />
-      {CYCLES_LABEL}
+      {t('options_schedule_cycles_label')}
     </label>
   );
 
   return (
     <fieldset>
-      <legend>Schedule entry</legend>
+      <legend>{t('options_schedule_entry_legend')}</legend>
       <DayPicker
         days={entry.days}
         onChange={(days: number[]): void => {
@@ -260,7 +308,7 @@ function EntryForm(props: EntryFormProps): VNode {
         }}
       />
       <label class="field">
-        Start
+        {t('options_schedule_start_label')}
         <input
           type="time"
           value={entry.start}
@@ -273,7 +321,7 @@ function EntryForm(props: EntryFormProps): VNode {
         />
       </label>
       <label class="field">
-        End
+        {t('options_schedule_end_label')}
         <input
           type="time"
           value={entry.end}
@@ -286,7 +334,7 @@ function EntryForm(props: EntryFormProps): VNode {
         />
       </label>
       <fieldset class="schedule-duration">
-        <legend>Duration</legend>
+        <legend>{t('options_schedule_duration_legend')}</legend>
         <label class="check">
           <input
             type="radio"
@@ -321,7 +369,7 @@ function EntryForm(props: EntryFormProps): VNode {
               props.onDraft({ ...props.draft, entry: { ...entry, mode: 'blacklist' } });
             }}
           />
-          Blacklist: block listed sites
+          {t('options_mode_blacklist_label')}
         </label>
         <label class="check">
           <input
@@ -332,7 +380,7 @@ function EntryForm(props: EntryFormProps): VNode {
               props.onDraft({ ...props.draft, entry: { ...entry, mode: 'whitelist' } });
             }}
           />
-          Whitelist: allow only listed sites
+          {t('options_mode_whitelist_label')}
         </label>
       </div>
       {strictnessField}
@@ -344,11 +392,11 @@ function EntryForm(props: EntryFormProps): VNode {
         cyclingField
       )}
       <label class="field">
-        Intention
+        {t('options_schedule_intention_label')}
         <input
           type="text"
           value={entry.intention}
-          placeholder="what this time is for"
+          placeholder={t('options_schedule_intention_placeholder')}
           onInput={(event: Event): void => {
             props.onDraft({
               ...props.draft,
@@ -364,10 +412,10 @@ function EntryForm(props: EntryFormProps): VNode {
       ) : null}
       <div class="save-row">
         <button type="button" class="primary" onClick={props.onSave}>
-          Save entry
+          {t('options_schedule_save_entry')}
         </button>
         <button type="button" class="secondary" onClick={props.onCancel}>
-          Cancel
+          {t('options_cancel')}
         </button>
       </div>
     </fieldset>
@@ -446,30 +494,28 @@ export function Schedule(props: ScheduleProps): VNode {
   return (
     <div class="schedule">
       {props.entries.length === 0 && draft === null ? (
-        <p class="help">No scheduled sessions yet.</p>
+        <p class="help">{t('options_schedule_empty')}</p>
       ) : null}
       {props.entries.map(
         (entry: ScheduleEntryV2): VNode => (
           <div class="entry-row" key={entry.id}>
-            <fieldset class="entry-days" aria-label="Selected days">
+            <fieldset class="entry-days" aria-label={t('options_schedule_selected_days_aria')}>
               {DAY_ORDER.filter((day: number): boolean => entry.days.includes(day)).map(
                 (day: number): VNode => (
                   <span class="entry-day-pill" key={day}>
-                    {DAY_LABELS[day]}
+                    {dayLabel(day)}
                   </span>
                 ),
               )}
             </fieldset>
-            <span>
-              {entry.start} to {entry.end}
-            </span>
+            <span>{t('options_schedule_time_range', { START: entry.start, END: entry.end })}</span>
             <span class="schedule-duration-note">
               {entry.duration.kind === 'until-stopped'
                 ? SCHEDULE_UNTIL_STOPPED_COPY
                 : SCHEDULE_WINDOW_LABEL}
             </span>
-            <span>{entry.mode}</span>
-            <span>{entry.strictness}</span>
+            <span>{t(MODE_KEYS[entry.mode])}</span>
+            <span>{t(STRICTNESS_KEYS[entry.strictness])}</span>
             {entry.intention !== '' ? <span class="entry-intention">{entry.intention}</span> : null}
             <span class="spacer" />
             <label class="check">
@@ -482,7 +528,7 @@ export function Schedule(props: ScheduleProps): VNode {
                   setEnabled(entry.id, !entry.enabled);
                 }}
               />
-              Enabled
+              {t('options_schedule_enabled_label')}
             </label>
             <button
               type="button"
@@ -492,7 +538,7 @@ export function Schedule(props: ScheduleProps): VNode {
                 setDraft(draftOf(entry, props.defaults));
               }}
             >
-              Edit
+              {t('options_schedule_edit')}
             </button>
             <button
               type="button"
@@ -501,7 +547,7 @@ export function Schedule(props: ScheduleProps): VNode {
                 remove(entry.id);
               }}
             >
-              Delete
+              {t('options_schedule_delete')}
             </button>
           </div>
         ),
@@ -533,7 +579,7 @@ export function Schedule(props: ScheduleProps): VNode {
               setDraft(draftOf(newEntry(props.defaults), props.defaults));
             }}
           >
-            Add schedule entry
+            {t('options_schedule_add')}
           </button>
         </div>
       )}

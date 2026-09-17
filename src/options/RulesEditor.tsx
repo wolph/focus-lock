@@ -1,6 +1,7 @@
 import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useState } from 'preact/hooks';
 import { validateRule } from '../core/matcher';
+import { t } from '../shared/i18n';
 import type { Rule, RuleKind } from '../shared/types';
 
 export interface RulesEditorProps {
@@ -9,10 +10,9 @@ export interface RulesEditorProps {
   onChange: (next: Rule[]) => void;
 }
 
-const KIND_LABELS: Record<RuleKind, string> = {
-  host: 'domain',
-  regex: 'regex',
-};
+function kindLabel(kind: RuleKind): string {
+  return kind === 'regex' ? t('options_rule_kind_regex_badge') : t('options_rule_kind_host_badge');
+}
 
 function displayPattern(rule: Rule): string {
   return rule.kind === 'regex' ? `/${rule.pattern}/` : rule.pattern;
@@ -71,19 +71,21 @@ export function RulesEditor(props: RulesEditorProps): VNode {
               (rule: Rule, index: number): VNode => (
                 <tr key={`${rule.kind}:${rule.pattern}`}>
                   <td>
-                    <span class="kind-badge">{KIND_LABELS[rule.kind]}</span>
+                    <span class="kind-badge">{kindLabel(rule.kind)}</span>
                   </td>
                   <td class="mono">{displayPattern(rule)}</td>
                   <td>
                     <button
                       type="button"
                       class="ghost"
-                      aria-label={`Remove ${displayPattern(rule)}`}
+                      aria-label={t('options_rule_remove_aria', {
+                        PATTERN: displayPattern(rule),
+                      })}
                       onClick={(): void => {
                         remove(index);
                       }}
                     >
-                      Remove
+                      {t('options_rule_remove')}
                     </button>
                   </td>
                 </tr>
@@ -92,30 +94,34 @@ export function RulesEditor(props: RulesEditorProps): VNode {
           </tbody>
         </table>
       ) : (
-        <p class="help">No rules yet.</p>
+        <p class="help">{t('options_rules_empty')}</p>
       )}
       <div class="add-row">
         <select
-          aria-label="Rule kind"
+          aria-label={t('options_rule_kind_aria')}
           value={kind}
           onChange={(event: Event): void => {
             setKind((event.currentTarget as HTMLSelectElement).value as RuleKind);
           }}
         >
-          <option value="host">domain or subdomain</option>
-          <option value="regex">regex (full URL)</option>
+          <option value="host">{t('options_rule_kind_host_option')}</option>
+          <option value="regex">{t('options_rule_kind_regex_option')}</option>
         </select>
         <input
           type="text"
-          aria-label="Pattern"
-          placeholder={kind === 'host' ? 'facebook.com' : '/youtube\\.com\\/shorts/'}
+          aria-label={t('options_rule_pattern_aria')}
+          placeholder={
+            kind === 'host'
+              ? t('options_rule_pattern_placeholder_host')
+              : t('options_rule_pattern_placeholder_regex')
+          }
           value={pattern}
           onInput={(event: Event): void => {
             setPattern((event.currentTarget as HTMLInputElement).value);
           }}
         />
         <button type="button" class="secondary" onClick={add}>
-          Add rule
+          {t('options_rule_add')}
         </button>
       </div>
       {error !== null ? (
@@ -123,11 +129,7 @@ export function RulesEditor(props: RulesEditorProps): VNode {
           {error}
         </p>
       ) : null}
-      <p class="help">
-        facebook.com covers that domain and every subdomain. news.ycombinator.com covers that
-        subdomain and anything under it. /youtube\.com\/shorts/ matches the full URL as a regular
-        expression.
-      </p>
+      <p class="help">{t('options_rules_help')}</p>
     </div>
   );
 }

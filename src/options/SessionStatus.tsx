@@ -1,6 +1,7 @@
 import type { VNode } from 'preact';
 import { ForcedControl } from '../shared/ForcedControl';
 import { formatTimeOfDay } from '../shared/format';
+import { t } from '../shared/i18n';
 import {
   SETTINGS_CLEANUP_COPY,
   SETTINGS_ERROR_COPY,
@@ -10,8 +11,6 @@ import {
   settingsTimedCopy,
 } from '../shared/session-copy';
 import type { SessionLifecycleV2, SessionSnapshotV2 } from '../shared/types';
-
-const STATUS_LABEL: string = 'Session status';
 
 type FixedLifecycleKind = Exclude<SessionLifecycleV2['kind'], 'active'>;
 
@@ -54,7 +53,10 @@ export function SessionStatus({ snapshot }: SessionStatusProps): VNode | null {
   const copy: string | null = statusCopy(snapshot);
   if (copy === null) return null;
   return (
-    <ForcedControl label={STATUS_LABEL} explanation={SETTINGS_SESSION_DISCLOSURE}>
+    <ForcedControl
+      label={t('options_session_status_label')}
+      explanation={SETTINGS_SESSION_DISCLOSURE}
+    >
       <p class="session-status" role="status">
         {copy}
       </p>

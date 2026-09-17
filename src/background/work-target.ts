@@ -1,3 +1,4 @@
+import { t } from '../shared/i18n';
 import type {
   Ack,
   CommandResponseV2,
@@ -79,9 +80,6 @@ export interface WorkTargetPorts {
 }
 
 const SESSION_WORK_TARGET: string = 'workTarget';
-const GATE_BUSY_ERROR: string =
-  'Focus Lock is still finishing an earlier change. Try again in a moment.';
-const GATE_STUCK_ERROR: string = 'The open gate could not be closed. Try again.';
 
 function failure(error: string): Ack & { ok: false } {
   return { ok: false, error };
@@ -99,9 +97,9 @@ function gateFailureMessage(code: Exclude<SessionCommandResultCodeV2, 'ok'>): st
     case 'transition-cleanup-pending':
     case 'closure-cleanup-pending':
     case 'data-clear-pending':
-      return GATE_BUSY_ERROR;
+      return t('notify_work_gate_busy');
     default:
-      return GATE_STUCK_ERROR;
+      return t('notify_work_gate_stuck');
   }
 }
 
@@ -428,7 +426,7 @@ export class WorkTargetService {
   }
 
   private error(error: unknown): string {
-    return error instanceof Error ? error.message : 'The work tab is unavailable.';
+    return error instanceof Error ? error.message : t('notify_work_tab_unavailable');
   }
 }
 

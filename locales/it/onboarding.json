@@ -1,0 +1,186 @@
+{
+  "onboarding_page_title": {
+    "message": "Configura Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Configurazione di Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Passaggio $STEP$ di $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Non è stato possibile ripristinare la configurazione salvata. Si riparte dai tuoi valori predefiniti attuali."
+  },
+  "onboarding_complete_heading": {
+    "message": "Configurazione completata"
+  },
+  "onboarding_complete_body": {
+    "message": "Le tue scelte sono salvate. Apri Focus Lock dalla barra degli strumenti di Chrome per avviare una sessione."
+  },
+  "onboarding_error_heading": {
+    "message": "Configurazione non disponibile"
+  },
+  "onboarding_error_body": {
+    "message": "Impossibile caricare la configurazione. Riprova."
+  },
+  "onboarding_retry_button": {
+    "message": "Riprova"
+  },
+  "onboarding_save_error": {
+    "message": "Impossibile salvare la configurazione. Riprova."
+  },
+  "onboarding_enable_error": {
+    "message": "Impossibile attivare il blocco dei siti. Riprova."
+  },
+  "onboarding_finish_error": {
+    "message": "Impossibile completare la configurazione. Le tue scelte restano salvate. Riprova."
+  },
+  "onboarding_lists_heading": {
+    "message": "Scegli il tuo elenco iniziale di siti bloccati"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Con $MODE$, le categorie attive e i siti bloccati extra non sono raggiungibili.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Con $MODE$, nessun sito è raggiungibile tranne quelli del tuo elenco dei consentiti.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Queste scelte diventano i valori predefiniti delle sessioni future. Puoi modificarle più avanti."
+  },
+  "onboarding_lists_legend": {
+    "message": "Categorie di siti consigliate"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ sito",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ siti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Mostra i siti di $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Nascondi i siti di $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Domini di $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Continua"
+  },
+  "onboarding_access_heading": {
+    "message": "Attiva il blocco dei siti"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock controlla gli indirizzi delle pagine in locale, per confrontarli con le categorie e i siti che hai scelto. Usa l'accesso ai siti per mostrare la sua schermata di blocco e per ripristinare le pagine coinvolte quando la sessione finisce."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Le categorie e i domini personalizzati possono comprendere qualsiasi sito. Chrome chiederà quindi questa autorizzazione:"
+  },
+  "onboarding_access_capability": {
+    "message": "Leggere e modificare tutti i tuoi dati su tutti i siti web"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock usa quell'accesso solo mentre applica le tue regole di blocco."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome non ha concesso l'accesso ai siti. Puoi riprovare."
+  },
+  "onboarding_access_registration_error": {
+    "message": "L'accesso ai siti è concesso, ma Focus Lock non ha potuto attivare il blocco. Riprova la configurazione o ricarica l'estensione."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Attiva il blocco dei siti"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Non ora"
+  },
+  "onboarding_sync_heading": {
+    "message": "Scegli dove salvare le tue impostazioni"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Sincronizza tra i dispositivi Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "I dati approvati qui sotto useranno Chrome Sync quando avrai completato la configurazione."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Tutti i dati di Focus Lock restano in questo profilo di Chrome."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Sincronizzati"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Solo in locale"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Non viene inviato nulla allo sviluppatore di Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Completa la configurazione con la sincronizzazione attiva"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Completa la configurazione senza sincronizzazione"
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ siti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

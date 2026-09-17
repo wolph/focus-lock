@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Configurează Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Configurare Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Pasul $STEP$ din $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Progresul salvat al configurării nu a putut fi restaurat. Se reîncepe cu valorile implicite actuale."
+  },
+  "onboarding_complete_heading": {
+    "message": "Configurare finalizată"
+  },
+  "onboarding_complete_body": {
+    "message": "Opțiunile tale au fost salvate. Deschide Focus Lock din bara de instrumente Chrome pentru a porni o sesiune."
+  },
+  "onboarding_error_heading": {
+    "message": "Configurare indisponibilă"
+  },
+  "onboarding_error_body": {
+    "message": "Configurarea nu a putut fi încărcată. Încearcă din nou."
+  },
+  "onboarding_retry_button": {
+    "message": "Reîncearcă"
+  },
+  "onboarding_save_error": {
+    "message": "Progresul configurării nu a putut fi salvat. Încearcă din nou."
+  },
+  "onboarding_enable_error": {
+    "message": "Blocarea site-urilor web nu a putut fi activată. Încearcă din nou."
+  },
+  "onboarding_finish_error": {
+    "message": "Configurarea nu a putut fi finalizată. Opțiunile tale sunt salvate. Încearcă din nou."
+  },
+  "onboarding_lists_heading": {
+    "message": "Alege lista de blocare de pornire"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "În $MODE$, categoriile activate și site-urile blocate suplimentare sunt indisponibile.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "În $MODE$, toate site-urile sunt indisponibile, cu excepția listei tale de permise.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Aceste opțiuni devin implicite pentru sesiunile viitoare. Le poți edita mai târziu."
+  },
+  "onboarding_lists_legend": {
+    "message": "Categorii de site-uri recomandate"
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ de site-uri",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Arată site-urile din $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Ascunde site-urile din $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Domenii din $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Continuă"
+  },
+  "onboarding_access_heading": {
+    "message": "Activează blocarea site-urilor web"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock verifică adresele paginilor local, ca să le poată potrivi cu categoriile și site-urile selectate de tine. Folosește accesul la site-uri web pentru a-și afișa ecranul de blocare și pentru a restaura paginile afectate când sesiunea ta se încheie."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Categoriile și domeniile personalizate pot include orice site web. De aceea Chrome va cere această permisiune:"
+  },
+  "onboarding_access_capability": {
+    "message": "Să citească și să modifice toate datele tale de pe toate site-urile web"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock folosește acest acces doar cât timp aplică regulile tale de blocare."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome nu a acordat accesul la site-uri web. Poți încerca din nou."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Accesul la site-uri web este acordat, dar Focus Lock nu a putut activa blocarea. Reia configurarea sau reîncarcă extensia."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Activează blocarea site-urilor web"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Nu acum"
+  },
+  "onboarding_sync_heading": {
+    "message": "Alege unde se stochează setările tale"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Sincronizează între dispozitivele Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Datele aprobate de mai jos vor folosi Chrome Sync după ce finalizezi configurarea."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Toate datele Focus Lock rămân în acest profil Chrome."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Sincronizat"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Doar local"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Nu se trimite nimic către dezvoltatorul Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Finalizează configurarea cu sincronizarea activată"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Finalizează configurarea fără sincronizare"
+  },
+  "onboarding_site_count_few": {
+    "message": "$COUNT$ site-uri",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

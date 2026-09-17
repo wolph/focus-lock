@@ -1,4 +1,5 @@
 import { render } from 'preact';
+import { applyDocumentLocale, t } from '../shared/i18n';
 import { sendRequest } from '../shared/messages';
 import { isSessionSnapshot, isSettings } from '../shared/runtime-validation';
 import { applyTheme } from '../shared/theme';
@@ -30,5 +31,8 @@ void sendRequest({ type: 'getSettings' })
     }
   })
   .catch((): void => undefined);
+
+applyDocumentLocale(document);
+document.title = t('onboarding_page_title');
 
 render(<App />, document.getElementById('app') as HTMLElement);

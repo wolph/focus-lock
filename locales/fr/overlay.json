@@ -1,0 +1,134 @@
+{
+  "overlay_stopped_title": {
+    "message": "Verrouillé - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$ : $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$ : $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Recherche des onglets de travail disponibles..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Choisis un onglet ouvert pour poursuivre ta tâche."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Ta session de concentration est indisponible. Réessaie ou recharge cette page."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Impossible de charger ton onglet de travail. Réessaie ou recharge cette page."
+  },
+  "overlay_target_reconnect": {
+    "message": "Recharge cette page pour te reconnecter à Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "La page demandeuse a changé. Recharge la page."
+  },
+  "overlay_target_transport_error": {
+    "message": "Impossible de joindre Focus Lock. Réessaie."
+  },
+  "overlay_picker_heading": {
+    "message": "Choisir un onglet de travail"
+  },
+  "overlay_picker_cancel": {
+    "message": "Annuler"
+  },
+  "overlay_picker_search_label": {
+    "message": "Rechercher des onglets de travail"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Rechercher par titre ou par site"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Effacer la recherche"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Actualiser les onglets"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Onglets de travail disponibles"
+  },
+  "overlay_picker_finding": {
+    "message": "Recherche des onglets disponibles..."
+  },
+  "overlay_picker_searching": {
+    "message": "Recherche dans les onglets de travail..."
+  },
+  "overlay_picker_saving": {
+    "message": "Enregistrement de l'onglet de travail..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Aucun onglet de travail disponible. Ouvre un site autorisé par cette session, puis actualise les onglets."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Aucun onglet correspondant. Essaie une autre recherche ou efface-la."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Impossible de charger les onglets de travail. Réessaie."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ sur $COUNT$ onglet",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ sur $COUNT$ onglets",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_many": {
+    "message": "$MATCHES$ sur $COUNT$ onglets",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "popup_settings_button_label": {
+    "message": "Pengaturan"
+  },
+  "popup_open_settings_failed": {
+    "message": "Could not open Pengaturan. Try again."
+  },
+  "popup_setup_required_heading": {
+    "message": "Finish setting up Fokus Lock"
+  },
+  "popup_open_setup_button": {
+    "message": "Buka setup"
+  },
+  "popup_blocking_off_heading": {
+    "message": "Situs web blocking is off"
+  },
+  "popup_blocking_off_body": {
+    "message": "Fokus Lock cannot start a session until Chrome grants website access and blocking is enabled."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome did not grant website access. Situs web blocking is still off."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Aktifkan website blocking"
+  },
+  "popup_retry_button": {
+    "message": "Coba Ulang"
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Your session ended because Fokus Lock could not enable website blocking."
+  },
+  "popup_restart_failed": {
+    "message": "Could not restart Fokus Lock. Try again."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Fokus Lock could not start"
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Hapus everything and start over"
+  },
+  "popup_delete_all_button": {
+    "message": "Hapus all Fokus Lock data"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Penyiapan status unavailable. Reload Fokus Lock to try again."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Fokus status unavailable"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Buka a regular website to unlock it"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Mulai next focus early"
+  },
+  "popup_session_actions_summary": {
+    "message": "Sesi actions"
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Tambah an allowed domain"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Tambah allowed domain"
+  },
+  "popup_add_button": {
+    "message": "Tambah"
+  },
+  "popup_draft_stop_friction": {
+    "message": "Akhir after a $SECONDS$s wait.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Akhir after a $SECONDS$s wait and confirmation phrase.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Sesi length"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Custom menits"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_back_to_work": {
+    "message": "Kembali to work"
+  },
+  "popup_back_to_work_name": {
+    "message": "Kembali to work: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Kembali to work: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Kategori editing is disabled until blocked-site lists reload."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blokired categories"
+  },
+  "popup_show_full_domain": {
+    "message": "Tampilkan full domain: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Tampilkan full regular expression: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ situs",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ situss",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "and $COUNT$ more situs",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "and $COUNT$ more situss",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Izinkaned exceptions"
+  },
+  "popup_allowed_heading": {
+    "message": "Izinkaned sites and rules"
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ extra blocked aturan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ extra blocked aturans",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ allowed aturan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ allowed aturans",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Izinkaned-site and rule changes here apply only to this session. Everything else is blocked."
+  },
+  "popup_scope_blacklist": {
+    "message": "Kategori and rule changes here apply only to this session."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Buka Pengaturan for permanent defaults"
+  },
+  "popup_rule_details_label": {
+    "message": "Sesi rule details"
+  },
+  "popup_session_type_legend": {
+    "message": "Sesi type"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Akhir the session immediately whenever you choose."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Akhiring early requires $WAIT$. No typing is required.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Akhiring early requires $WAIT$ and typed confirmation.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_invalid_duration_error": {
+    "message": "Enter a session length greater than zero menits."
+  },
+  "popup_session_settings_summary": {
+    "message": "Sesi settings"
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Blokiring mode"
+  },
+  "popup_start_focus_label": {
+    "message": "Mulai $DURATION$ focus",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  }
+}

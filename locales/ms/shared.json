@@ -1,0 +1,193 @@
+{
+  "shared_start_until_stopped": {
+    "message": "Mulai until stopped"
+  },
+  "shared_end_session": {
+    "message": "Akhir session"
+  },
+  "shared_mode_blacklist": {
+    "message": "Blokir selected sites"
+  },
+  "shared_mode_whitelist": {
+    "message": "Izinkan selected sites only"
+  },
+  "shared_focus_time_label": {
+    "message": "Fokus time"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_starting": {
+    "message": "Fokus Lock is starting. Applying your selected rules."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Sesi ended. Finishing browser cleanup."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Fokus Lock could not start. Finishing browser cleanup."
+  },
+  "shared_popup_transition_error": {
+    "message": "Fokus Lock could not clean up an incomplete start."
+  },
+  "shared_popup_closure_error": {
+    "message": "Fokus Lock could not finish browser cleanup."
+  },
+  "shared_retry_cleanup": {
+    "message": "Coba Ulang cleanup"
+  },
+  "shared_data_clear_pending": {
+    "message": "Deleting Fokus Lock data. Finishing cleanup."
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Mulais on schedule and runs until you stop it: Akhir session for Flexible, Unlock through the deliberation gate for Friction. Cycles off."
+  },
+  "shared_schedule_started_title": {
+    "message": "Fokus schedule started"
+  },
+  "shared_settings_starting": {
+    "message": "Fokus Lock is starting. Checking website access and applying your rules."
+  },
+  "shared_settings_error": {
+    "message": "Fokus Lock could not finish browser cleanup. Buka the popup and retry."
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Akhired early"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Akhired: website access lost"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Akhired: blocking setup failed"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Akhired: timer setup failed"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Akhired: page enforcement failed"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Akhired: recovery failed"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Less than a menit"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Kredit earning resumes during focus"
+  },
+  "shared_credit_off": {
+    "message": "Kredit earning is turned off"
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Blokired by $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Blokired by your block list"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Blokired by this session"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Izinkaned by this session"
+  },
+  "shared_synced_settings": {
+    "message": "Pengaturan"
+  },
+  "shared_synced_lists": {
+    "message": "Blokir and allow lists"
+  },
+  "shared_local_intentions": {
+    "message": "Fokus intentions"
+  },
+  "shared_all_data_clear_running": {
+    "message": "Akhir the running session before deleting all data."
+  },
+  "shared_nav_brand": {
+    "message": "Fokus Lock"
+  },
+  "shared_nav_settings": {
+    "message": "Pengaturan"
+  },
+  "shared_section_blocking": {
+    "message": "Blokiring"
+  },
+  "shared_section_behavior": {
+    "message": "Sesi behavior"
+  },
+  "shared_host_partial": {
+    "message": "Tampilkaning $SHOWN$ of $MATCHED$ sites. Search to narrow the list.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Tampilkaning $MATCHED$ of $TOTAL$ sites.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Tampilkaning all $TOTAL$ sites.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Akhir the session"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Fokus Lock is starting"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Kembali to work"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Fokus Lock could not update this action. Try again."
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Lanjutkan your current task"
+  },
+  "shared_gate_end_title": {
+    "message": "Akhir this session"
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

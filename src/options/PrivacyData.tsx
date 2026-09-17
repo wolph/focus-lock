@@ -1,5 +1,6 @@
 import type { TargetedEvent, TargetedMouseEvent, VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
+import { t } from '../shared/i18n';
 import { sendRequest } from '../shared/messages';
 import { WEBSITE_ORIGINS } from '../shared/permissions';
 import {
@@ -36,24 +37,24 @@ function websiteAccessPresentation(setup: SetupState): WebsiteAccessPresentation
   if (setup.websiteAccess !== 'granted') {
     return {
       action: 'enable',
-      actionLabel: 'Enable website blocking',
-      title: 'Website access is off',
-      detail: 'Focus Lock cannot block websites until you grant access.',
+      actionLabel: t('options_privacy_website_enable_action'),
+      title: t('options_privacy_website_off_title'),
+      detail: t('options_privacy_website_off_detail'),
     };
   }
   if (setup.blockingRegistration !== 'ready') {
     return {
       action: 'retry',
-      actionLabel: 'Retry website blocking',
-      title: 'Website access is granted, but blocking is not active',
-      detail: 'Chrome granted access, but Focus Lock could not register its blocking script.',
+      actionLabel: t('options_privacy_website_retry_action'),
+      title: t('options_privacy_website_unregistered_title'),
+      detail: t('options_privacy_website_unregistered_detail'),
     };
   }
   return {
     action: null,
     actionLabel: null,
-    title: 'Website blocking is enabled',
-    detail: 'Focus Lock can apply your active blocking rules on regular website pages.',
+    title: t('options_privacy_website_on_title'),
+    detail: t('options_privacy_website_on_detail'),
   };
 }
 
@@ -72,26 +73,34 @@ function DataScope(props: { items: readonly string[]; title: string }): VNode {
   );
 }
 
-const CONFIRMATION_COPY: Record<
-  Exclude<Confirmation, null>,
-  { title: string; confirmLabel: string; success: string }
-> = {
-  'local-history': {
-    title: 'Delete local history?',
-    confirmLabel: 'Confirm delete local history',
-    success: 'Local history deleted.',
-  },
-  'synced-policy': {
-    title: 'Delete remote Sync data?',
-    confirmLabel: 'Confirm delete remote Sync data',
-    success: 'Remote Chrome Sync data deleted.',
-  },
-  all: {
-    title: 'Delete all Focus Lock data?',
-    confirmLabel: 'Confirm delete all Focus Lock data',
-    success: 'All Focus Lock data deleted.',
-  },
-};
+interface ConfirmationCopy {
+  title: string;
+  confirmLabel: string;
+  success: string;
+}
+
+/** Read at call time so the dialog copy follows the browser's UI language. */
+function confirmationCopy(kind: Exclude<Confirmation, null>): ConfirmationCopy {
+  if (kind === 'local-history') {
+    return {
+      title: t('options_privacy_confirm_local_history_title'),
+      confirmLabel: t('options_privacy_confirm_local_history_action'),
+      success: t('options_privacy_local_history_deleted'),
+    };
+  }
+  if (kind === 'synced-policy') {
+    return {
+      title: t('options_privacy_confirm_synced_policy_title'),
+      confirmLabel: t('options_privacy_confirm_synced_policy_action'),
+      success: t('options_privacy_synced_policy_deleted'),
+    };
+  }
+  return {
+    title: t('options_privacy_confirm_all_title'),
+    confirmLabel: t('options_privacy_confirm_all_action'),
+    success: t('options_privacy_all_deleted'),
+  };
+}
 
 /**
  * True while the worker would refuse an all-data clear: its stopped-runtime rule wants no session,
@@ -111,10 +120,7 @@ function runtimeHoldsSession(snapshot: SessionSnapshot | null): boolean {
 function AllDataBody(): VNode {
   return (
     <>
-      <p>
-        This permanently deletes every piece of Focus Lock data on this device and any Focus Lock
-        copies left in Chrome Sync:
-      </p>
+      <p>{t('options_privacy_all_body_intro')}</p>
       <ul>
         {[...SYNCED_DATA_ITEMS, ...LOCAL_ONLY_DATA_ITEMS].map(
           (item: string): VNode => (
@@ -122,10 +128,7 @@ function AllDataBody(): VNode {
           ),
         )}
       </ul>
-      <p>
-        Deleting everything is available only while no session is running. Focus Lock then returns
-        to setup.
-      </p>
+      <p>{t('options_privacy_all_body_outro')}</p>
     </>
   );
 }
@@ -194,8 +197,9 @@ function ConfirmationDialog(props: {
       document.removeEventListener('click', blockBackgroundClick, true);
     };
   }, [props.onCancel, props.pending]);
-  const title: string = CONFIRMATION_COPY[props.kind].title;
-  const confirmLabel: string = CONFIRMATION_COPY[props.kind].confirmLabel;
+  const copy: ConfirmationCopy = confirmationCopy(props.kind);
+  const title: string = copy.title;
+  const confirmLabel: string = copy.confirmLabel;
   return (
     <dialog
       ref={dialog}
@@ -211,19 +215,12 @@ function ConfirmationDialog(props: {
       <h4>{title}</h4>
       {props.kind === 'local-history' ? (
         <p>
-          This permanently deletes full URLs, focus intentions, and detailed session events from
-          this device
-          {props.localOnlyAggregates ? ', plus local-only aggregate statistics' : ''}. It does not
-          clear a running session, which keeps its intention and the address of each tab it is
-          blocking. Ending the session clears the intention and starts a cleanup that clears every
-          open website tab, and the cleanup removes every stored address when it completes.
+          {props.localOnlyAggregates
+            ? t('options_privacy_confirm_local_history_body_aggregates')
+            : t('options_privacy_confirm_local_history_body')}
         </p>
       ) : props.kind === 'synced-policy' ? (
-        <p>
-          This permanently deletes remote settings, block and allow lists, site access credit,
-          streaks, and domain-level blocked-attempt aggregates from Chrome Sync. Local settings and
-          statistics stay on this device.
-        </p>
+        <p>{t('options_privacy_confirm_synced_policy_body')}</p>
       ) : (
         <AllDataBody />
       )}
@@ -235,7 +232,7 @@ function ConfirmationDialog(props: {
           disabled={props.pending}
           onClick={props.onCancel}
         >
-          Cancel
+          {t('options_cancel')}
         </button>
         <button type="button" class="danger" disabled={props.pending} onClick={props.onConfirm}>
           {confirmLabel}
@@ -248,15 +245,15 @@ function ConfirmationDialog(props: {
 function durableError(setup: SetupState): string | null {
   if (setup.dataClear.status === 'error') {
     if (setup.dataClear.scope === 'local-history') {
-      return 'Local history could not be deleted. Try again.';
+      return t('options_privacy_error_local_history_clear');
     }
     if (setup.dataClear.scope === 'synced-policy') {
-      return 'Remote Chrome Sync data could not be deleted. Try again.';
+      return t('options_privacy_error_synced_policy_clear');
     }
-    return 'All Focus Lock data could not be deleted. Try again.';
+    return t('options_privacy_error_all_clear');
   }
   if (setup.syncWriteStatus === 'error') {
-    return 'Chrome Sync could not save your latest changes. Your local save is safe.';
+    return t('options_privacy_error_sync_write');
   }
   if (setup.storageError === 'legacy-remote-policy-dropped') {
     return LEGACY_REMOTE_POLICY_DROPPED_COPY;
@@ -298,7 +295,7 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
         if (error === null) setStatus(success);
         else setActionError(error);
       } catch {
-        setActionError('The request could not be completed. Try again.');
+        setActionError(t('options_privacy_error_request'));
       } finally {
         actionLocked.current = false;
         setPending(false);
@@ -315,10 +312,14 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
       const granted: boolean = await chrome.permissions.request({ origins: [...WEBSITE_ORIGINS] });
       const error: string | null = await props.onReconcileWebsiteAccess();
       if (error === null) {
-        setStatus(granted ? 'Website access updated.' : 'Website access was not granted.');
+        setStatus(
+          granted
+            ? t('options_privacy_website_access_updated')
+            : t('options_privacy_website_access_denied'),
+        );
       } else setActionError(error);
     } catch {
-      setActionError('Website access could not be updated. Try again.');
+      setActionError(t('options_privacy_error_website_access'));
     } finally {
       actionLocked.current = false;
       setPending(false);
@@ -328,7 +329,7 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
   const exportLocalEvents: () => Promise<string | null> = async (): Promise<string | null> => {
     try {
       const response: unknown = await sendRequest({ type: 'exportEvents' });
-      if (parseEventExportResponse(response) === null) return 'Could not export the event log.';
+      if (parseEventExportResponse(response) === null) return t('options_privacy_error_export');
       const exportResponse: { json: string } = response as { json: string };
       const blob: Blob = new Blob([exportResponse.json], { type: 'application/json' });
       const url: string = URL.createObjectURL(blob);
@@ -339,7 +340,7 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
       URL.revokeObjectURL(url);
       return null;
     } catch {
-      return 'Could not export the event log. Try again.';
+      return t('options_privacy_error_export_retry');
     }
   };
 
@@ -350,7 +351,7 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
       const error: string | null = await props.onClearData(scope);
       if (error === null) setConfirmation(null);
       return error;
-    }, CONFIRMATION_COPY[scope].success);
+    }, confirmationCopy(scope).success);
   };
 
   const openConfirmation: (kind: Exclude<Confirmation, null>, origin: HTMLButtonElement) => void = (
@@ -379,7 +380,7 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
   return (
     <div class="privacy-data">
       <section class="privacy-card" aria-labelledby="website-access-heading">
-        <h3 id="website-access-heading">Website access</h3>
+        <h3 id="website-access-heading">{t('options_privacy_website_access_heading')}</h3>
         <strong class="privacy-card-status">{website.title}</strong>
         <p>{website.detail}</p>
         <div class="privacy-actions">
@@ -390,7 +391,11 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
               disabled={pending}
               onClick={(): void => {
                 if (website.action === 'enable') void enableWebsiteBlocking();
-                else void runAction(props.onReconcileWebsiteAccess, 'Website blocking enabled.');
+                else
+                  void runAction(
+                    props.onReconcileWebsiteAccess,
+                    t('options_privacy_website_blocking_enabled'),
+                  );
               }}
             >
               {website.actionLabel}
@@ -408,18 +413,18 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
                   });
                   return null;
                 } catch {
-                  return 'Could not open Chrome permission settings. Try again.';
+                  return t('options_privacy_error_open_chrome_settings');
                 }
-              }, 'Chrome permission settings opened.');
+              }, t('options_privacy_chrome_settings_opened'));
             }}
           >
-            Open Chrome permission settings
+            {t('options_privacy_open_chrome_settings')}
           </button>
         </div>
       </section>
 
       <section class="privacy-card" aria-labelledby="chrome-sync-heading">
-        <h3 id="chrome-sync-heading">Chrome Sync</h3>
+        <h3 id="chrome-sync-heading">{t('options_privacy_sync_heading')}</h3>
         <label class="privacy-switch">
           <input
             type="checkbox"
@@ -431,16 +436,18 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
               const next: StorageMode = event.currentTarget.checked ? 'sync' : 'local';
               void runAction(
                 (): Promise<string | null> => props.onStorageModeChange(next),
-                next === 'sync' ? 'Chrome Sync enabled.' : 'Chrome Sync disabled.',
+                next === 'sync'
+                  ? t('options_privacy_sync_enabled')
+                  : t('options_privacy_sync_disabled'),
               );
             }}
           />
-          <span>Sync Focus Lock data across Chrome devices</span>
+          <span>{t('options_privacy_sync_switch_label')}</span>
         </label>
         {syncPending ? (
-          <p>Chrome Sync is still saving your latest changes.</p>
+          <p>{t('options_privacy_sync_saving')}</p>
         ) : syncFailure ? null : (
-          <p>{syncing ? 'Chrome Sync is on.' : 'Chrome Sync is off.'}</p>
+          <p>{syncing ? t('options_privacy_sync_on') : t('options_privacy_sync_off')}</p>
         )}
         {syncFailure ? (
           <button
@@ -452,33 +459,37 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
                 firstSyncFailure
                   ? (): Promise<string | null> => props.onStorageModeChange('sync')
                   : props.onRetrySync,
-                firstSyncFailure ? 'Chrome Sync enabled.' : 'Chrome Sync changes saved.',
+                firstSyncFailure
+                  ? t('options_privacy_sync_enabled')
+                  : t('options_privacy_sync_changes_saved'),
               );
             }}
           >
-            {firstSyncFailure ? 'Retry enabling Chrome Sync' : 'Retry Chrome Sync'}
+            {firstSyncFailure
+              ? t('options_privacy_retry_enable_sync')
+              : t('options_privacy_retry_sync')}
           </button>
         ) : null}
         <div class="privacy-data-grid">
-          <DataScope title="Synced" items={SYNCED_DATA_ITEMS} />
-          <DataScope title="Local only" items={LOCAL_ONLY_DATA_ITEMS} />
+          <DataScope title={t('options_privacy_scope_synced')} items={SYNCED_DATA_ITEMS} />
+          <DataScope title={t('options_privacy_scope_local_only')} items={LOCAL_ONLY_DATA_ITEMS} />
         </div>
-        <p class="privacy-developer-note">Nothing is sent to the Focus Lock developer.</p>
+        <p class="privacy-developer-note">{t('options_privacy_developer_note')}</p>
       </section>
 
       <section class="privacy-card" aria-labelledby="local-log-heading">
-        <h3 id="local-log-heading">Local event log</h3>
-        <p>Export the detailed local log or delete local browsing and session history.</p>
+        <h3 id="local-log-heading">{t('options_privacy_local_log_heading')}</h3>
+        <p>{t('options_privacy_local_log_detail')}</p>
         <div class="privacy-actions">
           <button
             type="button"
             class="secondary"
             disabled={pending}
             onClick={(): void => {
-              void runAction(exportLocalEvents, 'Local event log exported.');
+              void runAction(exportLocalEvents, t('options_privacy_local_log_exported'));
             }}
           >
-            Export local event log
+            {t('options_privacy_export_local_log')}
           </button>
           <button
             type="button"
@@ -488,15 +499,15 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
               openConfirmation('local-history', event.currentTarget)
             }
           >
-            Delete local history
+            {t('options_privacy_delete_local_history')}
           </button>
         </div>
       </section>
 
       {!localMode ? null : (
         <section class="privacy-card" aria-labelledby="remote-data-heading">
-          <h3 id="remote-data-heading">Remote Sync data</h3>
-          <p>Delete the Focus Lock copies left in Chrome Sync without changing this device.</p>
+          <h3 id="remote-data-heading">{t('options_privacy_remote_data_heading')}</h3>
+          <p>{t('options_privacy_remote_data_detail')}</p>
           <button
             type="button"
             class="danger"
@@ -505,17 +516,14 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
               openConfirmation('synced-policy', event.currentTarget)
             }
           >
-            Delete remote Sync data
+            {t('options_privacy_delete_remote_data')}
           </button>
         </section>
       )}
 
       <section class="privacy-card privacy-card-destructive" aria-labelledby="all-data-heading">
-        <h3 id="all-data-heading">All Focus Lock data</h3>
-        <p>
-          Delete every Focus Lock record on this device and any Focus Lock copies left in Chrome
-          Sync, then start again from setup. Available while no session is running.
-        </p>
+        <h3 id="all-data-heading">{t('options_privacy_all_data_heading')}</h3>
+        <p>{t('options_privacy_all_data_detail')}</p>
         <button
           type="button"
           class="danger"
@@ -524,7 +532,7 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
             openConfirmation('all', event.currentTarget)
           }
         >
-          Delete all Focus Lock data
+          {t('options_delete_all_data')}
         </button>
         {sessionRunning ? (
           <p class="privacy-card-reason">{ALL_DATA_CLEAR_RUNNING_SESSION_COPY}</p>
@@ -554,13 +562,13 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
             // An all-data deletion in progress is retried, never started again. Asking for a new
             // deletion runs no phase of the one that is already stuck and answers success for it.
             if (dataClearFailure === 'all') {
-              void runAction(props.onRetryDataClear, 'Resuming deletion of all Focus Lock data.');
+              void runAction(props.onRetryDataClear, t('options_privacy_resuming_all_clear'));
               return;
             }
             const success: string =
               dataClearFailure === 'local-history'
-                ? 'Local history deleted.'
-                : 'Remote Chrome Sync data deleted.';
+                ? t('options_privacy_local_history_deleted')
+                : t('options_privacy_synced_policy_deleted');
             void runAction(
               (): Promise<string | null> => props.onClearData(dataClearFailure),
               success,
@@ -568,10 +576,10 @@ export function PrivacyData(props: PrivacyDataProps): VNode {
           }}
         >
           {dataClearFailure === 'local-history'
-            ? 'Retry local history deletion'
+            ? t('options_privacy_retry_local_history')
             : dataClearFailure === 'synced-policy'
-              ? 'Retry remote Sync deletion'
-              : 'Retry all data deletion'}
+              ? t('options_privacy_retry_remote_sync')
+              : t('options_privacy_retry_all_data')}
         </button>
       )}
       <p class="privacy-live-region" role="status" aria-live="polite">

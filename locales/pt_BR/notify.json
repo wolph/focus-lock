@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Sessão de foco concluída"
+  },
+  "notify_session_complete_body": {
+    "message": "Sua sessão de foco terminou."
+  },
+  "notify_schedule_window_body": {
+    "message": "Bloqueado até $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "A sessão agendada não começou"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "O bloqueio de sites não está ativado. Conclua a configuração ou conceda acesso aos sites e tente de novo."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "A configuração foi concluída em outra aba."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "A configuração mudou em outra aba. As escolhas mais recentes foram recarregadas."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "A configuração mudou em outra aba. Recarregue a configuração antes de concluir."
+  },
+  "notify_setup_not_complete": {
+    "message": "A configuração não está completa."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "A configuração ainda não pode ser concluída."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "A escolha de armazenamento mudou. Recarregue a configuração antes de concluir."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "A operação de armazenamento da configuração falhou."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "A operação de configuração falhou."
+  },
+  "notify_website_access_check_failed": {
+    "message": "O Focus Lock não conseguiu verificar o acesso aos sites. Refaça a configuração ou recarregue a extensão."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "O acesso aos sites foi concedido, mas o Focus Lock não conseguiu ativar o bloqueio. Refaça a configuração ou recarregue a extensão."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "O acesso aos sites não está disponível e o Focus Lock não conseguiu desfazer o bloqueio. Refaça a configuração ou recarregue a extensão."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "O Focus Lock recebeu um estado inconsistente do acesso aos sites. Refaça a configuração ou recarregue a extensão."
+  },
+  "notify_boot_not_finished": {
+    "message": "O Focus Lock não terminou de iniciar: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "erro desconhecido"
+  },
+  "notify_nothing_to_reset": {
+    "message": "o Focus Lock está funcionando, não há nada para redefinir"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "o Focus Lock não pode redefinir um estado que ainda está dentro de uma geração de configurações"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Não há exclusão de dados para tentar de novo."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Desative a sincronização antes de excluir os dados sincronizados"
+  },
+  "notify_work_gate_busy": {
+    "message": "O Focus Lock ainda está concluindo uma mudança anterior. Tente de novo em instantes."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Não foi possível fechar a confirmação aberta. Tente de novo."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "A aba de trabalho não está disponível."
+  },
+  "notify_settings_sync_limit": {
+    "message": "As configurações passaram do limite de 8 KB do Chrome Sync. Remova entradas da agenda ou encurte as intenções e tente de novo."
+  },
+  "notify_lists_sync_limit": {
+    "message": "As listas passaram do limite de 8 KB do Chrome Sync. Remova regras personalizadas ou permitidas e tente de novo."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "há uma sessão de bloqueio total em andamento: os sites removidos são desbloqueados quando ela terminar"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "há uma sessão de bloqueio total em andamento: as novas entradas permitidas são liberadas quando ela terminar"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "há uma sessão de bloqueio total em andamento: as categorias desativadas são liberadas quando ela terminar"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "há uma sessão de bloqueio total em andamento: as novas exclusões são liberadas quando ela terminar"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "há uma sessão de bloqueio total em andamento: afrouxar o rigor padrão só vale quando ela terminar"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "há uma sessão de bloqueio total em andamento: encurtar a espera enfraquece a confirmação"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "há uma sessão de bloqueio total em andamento: tirar a frase digitada enfraquece a confirmação"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "há uma sessão de bloqueio total em andamento: acelerar o ganho financia mais fugas"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "há uma sessão de bloqueio total em andamento: aumentar o teto do crédito financia mais fugas"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "há uma sessão de bloqueio total em andamento: pausas mais curtas custam menos"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "há uma sessão de bloqueio total em andamento: desbloqueios mais curtos custam menos"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "há uma sessão de bloqueio total em andamento: a entrada da agenda dela não pode ser afrouxada até o fim"
+  }
+}

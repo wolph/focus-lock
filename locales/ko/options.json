@@ -1,0 +1,611 @@
+{
+  "options_page_title": {
+    "message": "포커스 Lock 옵션"
+  },
+  "options_heading": {
+    "message": "포커스 Lock 설정"
+  },
+  "options_loading_settings": {
+    "message": "로드 중 설정"
+  },
+  "options_privacy_loading": {
+    "message": "로드 중 개인 정보 보호 설정"
+  },
+  "options_save_failed": {
+    "message": "Could not 저장. 다시 시도하세요.."
+  },
+  "options_blocking_help": {
+    "message": "Custom 규칙 block during 차단 목록 sessions. The 허용 목록 is what stays reachable during 허용 목록 sessions. Bundled 카테고리 block common time sinks."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Custom 차단 목록"
+  },
+  "options_whitelist_title": {
+    "message": "허용 목록"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Bundled 카테고리"
+  },
+  "options_bundled_categories_help": {
+    "message": "Bundled lists of common time sinks. Toggle a whole 카테고리, then open it to keep single sites available."
+  },
+  "options_schedule_heading": {
+    "message": "일정"
+  },
+  "options_behavior_heading": {
+    "message": "세션 behavior"
+  },
+  "options_budget_heading": {
+    "message": "사이트 접근 크레딧"
+  },
+  "options_privacy_heading": {
+    "message": "개인 정보 보호 and 데이터"
+  },
+  "options_load_error_retry": {
+    "message": "재시도"
+  },
+  "options_load_error_delete_all": {
+    "message": "삭제 everything and start over"
+  },
+  "options_load_error_keep_data": {
+    "message": "Keep my 데이터"
+  },
+  "options_delete_all_data": {
+    "message": "삭제 all 포커스 Lock 데이터"
+  },
+  "options_dirty_save": {
+    "message": "저장 changes"
+  },
+  "options_session_status_label": {
+    "message": "세션 status"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "도메인"
+  },
+  "options_rule_remove": {
+    "message": "제거"
+  },
+  "options_rule_remove_aria": {
+    "message": "제거 $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "No 규칙 yet."
+  },
+  "options_rule_kind_aria": {
+    "message": "규칙 kind"
+  },
+  "options_rule_kind_host_option": {
+    "message": "도메인 or subdomain"
+  },
+  "options_rule_add": {
+    "message": "추가 규칙"
+  },
+  "options_rules_help": {
+    "message": "facebook.com covers that 도메인 and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/shorts/ matches the full URL as a regular expression."
+  },
+  "options_session_defaults_heading": {
+    "message": "세션 defaults"
+  },
+  "options_session_defaults_help": {
+    "message": "Mode and strictness are fixed when a 세션 starts. These are the values the start form opens with."
+  },
+  "options_preset_short_label": {
+    "message": "Short 세션 preset (minutes)"
+  },
+  "options_preset_default_label": {
+    "message": "Default 세션 preset (minutes)"
+  },
+  "options_preset_deep_label": {
+    "message": "Deep 세션 preset (minutes)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "차단 목록: block listed sites"
+  },
+  "options_mode_whitelist_label": {
+    "message": "허용 목록: allow only listed sites"
+  },
+  "options_strictness_flexible_label": {
+    "message": "유연: end the 세션 whenever you choose"
+  },
+  "options_strictness_friction_label": {
+    "message": "마찰: stopping early uses the configured deliberation gate"
+  },
+  "options_strictness_hard_label": {
+    "message": "하드: no early end, temporary 사이트 접근 only"
+  },
+  "options_cycle_heading": {
+    "message": "포커스 and 휴식 cycle"
+  },
+  "options_cycle_help": {
+    "message": "Defaults: 25 minute 포커스, 5 minute 휴식, 15 minute long 휴식 every 4th cycle. Breaks on a 일정 beat 휴식-when-you-feel-like-it for mood and 포커스 in study samples. The exact minutes are convention, not science."
+  },
+  "options_cycle_default_label": {
+    "message": "Cycle 포커스 and breaks by default"
+  },
+  "options_focus_minutes_label": {
+    "message": "포커스 minutes"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Short 휴식 minutes"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Long 휴식 minutes"
+  },
+  "options_long_every_label": {
+    "message": "Long 휴식 every Nth cycle"
+  },
+  "options_gate_force_end_label": {
+    "message": "활성화 \"Ignore timeout and end anyway\" button"
+  },
+  "options_credit_help": {
+    "message": "사이트 접근 크레딧 accrues while you 포커스. Both 접근 to all sites and a single-site 잠금 해제 spend from the same balance. You can step away at any time without spending credit."
+  },
+  "options_earn_rate_label": {
+    "message": "Minutes of 사이트 접근 per 30 minutes of 포커스"
+  },
+  "options_credit_cap_label": {
+    "message": "사이트 접근 크레딧 limit (minutes)"
+  },
+  "options_pause_length_label": {
+    "message": "All-사이트 접근 length (minutes)"
+  },
+  "options_unlock_length_label": {
+    "message": "Site 잠금 해제 length (minutes)"
+  },
+  "options_streak_heading": {
+    "message": "연속 기록 and retention"
+  },
+  "options_streak_help": {
+    "message": "The 연속 기록 counts days that reach the goal. One default 세션 keeps the chain alive, and a freeze token repairs a missed day."
+  },
+  "options_streak_goal_label": {
+    "message": "Daily 연속 기록 goal (포커스 minutes)"
+  },
+  "options_category_on_announcement": {
+    "message": "$카테고리$ 카테고리 on.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "$카테고리$ 카테고리 off.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "All 카테고리 on."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "All 카테고리 off."
+  },
+  "options_all_sites_included_announcement": {
+    "message": "All $카테고리$ sites included.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "All $카테고리$ sites kept available.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "카테고리 bulk actions"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Select all 카테고리"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Deselect all 카테고리"
+  },
+  "options_show_category_sites": {
+    "message": "Show $카테고리$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Hide $카테고리$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "카테고리 off"
+  },
+  "options_category_uncheck_help": {
+    "message": "Uncheck a site to keep it available while the rest of the 카테고리 is blocked."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$카테고리$ site bulk actions",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Select all $카테고리$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Deselect all $카테고리$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$카테고리$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "Sun"
+  },
+  "options_day_mon": {
+    "message": "Mon"
+  },
+  "options_day_tue": {
+    "message": "Tue"
+  },
+  "options_day_wed": {
+    "message": "Wed"
+  },
+  "options_day_thu": {
+    "message": "Thu"
+  },
+  "options_day_fri": {
+    "message": "Fri"
+  },
+  "options_day_sat": {
+    "message": "Sat"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Cycle 포커스 and breaks"
+  },
+  "options_schedule_session_type_aria": {
+    "message": "세션 type"
+  },
+  "options_schedule_entry_legend": {
+    "message": "일정 entry"
+  },
+  "options_schedule_end_label": {
+    "message": "End"
+  },
+  "options_schedule_save_entry": {
+    "message": "저장 entry"
+  },
+  "options_cancel": {
+    "message": "취소"
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "차단 목록"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "허용 목록"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "유연"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "마찰"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "하드"
+  },
+  "options_schedule_edit": {
+    "message": "편집"
+  },
+  "options_schedule_delete": {
+    "message": "삭제"
+  },
+  "options_schedule_add": {
+    "message": "추가 일정 entry"
+  },
+  "options_sound_session_complete": {
+    "message": "세션 complete"
+  },
+  "options_sound_break_start": {
+    "message": "휴식 start"
+  },
+  "options_sound_break_end": {
+    "message": "휴식 end"
+  },
+  "options_sound_schedule_start": {
+    "message": "일정 auto-start"
+  },
+  "options_sound_preview_error": {
+    "message": "Could not preview the sound. 다시 시도하세요.."
+  },
+  "options_session_complete_notification": {
+    "message": "Show a system 알림 when a 세션 completes"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "웹사이트 접근"
+  },
+  "options_privacy_website_off_title": {
+    "message": "웹사이트 접근 is off"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "포커스 Lock cannot block 웹사이트 until you grant 접근."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "활성화 웹사이트 차단"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "웹사이트 접근 is granted, but blocking is not active"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome granted 접근, but 포커스 Lock could not register its blocking script."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "재시도 웹사이트 차단"
+  },
+  "options_privacy_website_on_title": {
+    "message": "웹사이트 차단 is enabled"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "포커스 Lock can apply your active blocking 규칙 on regular 웹사이트 페이지."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "삭제 local history?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Confirm 삭제 local history"
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "This permanently deletes full URLs, 포커스 intentions, and detailed 세션 events from this device. It does not clear a running 세션, which keeps its intention and the address of each 탭 it is blocking. Ending the 세션 clears the intention and starts a cleanup that clears every open 웹사이트 탭, and the cleanup removes every stored address when it completes."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "This permanently deletes full URLs, 포커스 intentions, and detailed 세션 events from this device, plus local-only aggregate statistics. It does not clear a running 세션, which keeps its intention and the address of each 탭 it is blocking. Ending the 세션 clears the intention and starts a cleanup that clears every open 웹사이트 탭, and the cleanup removes every stored address when it completes."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "삭제 remote 동기화 데이터?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Confirm 삭제 remote 동기화 데이터"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Remote Chrome 동기화 데이터 deleted."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "This permanently deletes remote 설정, block and allow lists, 사이트 접근 크레딧, streaks, and 도메인-level blocked-attempt aggregates from Chrome 동기화. Local 설정 and statistics stay on this device."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "삭제 all 포커스 Lock 데이터?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Confirm 삭제 all 포커스 Lock 데이터"
+  },
+  "options_privacy_all_deleted": {
+    "message": "All 포커스 Lock 데이터 deleted."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "This permanently deletes every piece of 포커스 Lock 데이터 on this device and any 포커스 Lock copies left in Chrome 동기화:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Deleting everything is available only while no 세션 is running. 포커스 Lock then returns to 설정."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Local history could not be deleted. 다시 시도하세요.."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Remote Chrome 동기화 데이터 could not be deleted. 다시 시도하세요.."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "All 포커스 Lock 데이터 could not be deleted. 다시 시도하세요.."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome 동기화 could not 저장 your latest changes. Your local 저장 is safe."
+  },
+  "options_privacy_error_request": {
+    "message": "The request could not be completed. 다시 시도하세요.."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "웹사이트 접근 updated."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "웹사이트 접근 was not granted."
+  },
+  "options_privacy_error_website_access": {
+    "message": "웹사이트 접근 could not be updated. 다시 시도하세요.."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "웹사이트 차단 enabled."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Could not export the event log. 다시 시도하세요.."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Could not open Chrome permission 설정. 다시 시도하세요.."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome permission 설정 opened."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Open Chrome permission 설정"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome 동기화"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "동기화 포커스 Lock 데이터 across Chrome devices"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome 동기화 enabled."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome 동기화 disabled."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome 동기화 is still saving your latest changes."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome 동기화 is on."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome 동기화 is off."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome 동기화 changes saved."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "재시도 enabling Chrome 동기화"
+  },
+  "options_privacy_retry_sync": {
+    "message": "재시도 Chrome 동기화"
+  },
+  "options_privacy_developer_note": {
+    "message": "Nothing is sent to the 포커스 Lock developer."
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Export the detailed local log or 삭제 local browsing and 세션 history."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "삭제 local history"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Remote 동기화 데이터"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "삭제 the 포커스 Lock copies left in Chrome 동기화 without changing this device."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "삭제 remote 동기화 데이터"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "All 포커스 Lock 데이터"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "삭제 every 포커스 Lock record on this device and any 포커스 Lock copies left in Chrome 동기화, then start again from 설정. Available while no 세션 is running."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Resuming deletion of all 포커스 Lock 데이터."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "재시도 local history deletion"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "재시도 remote 동기화 deletion"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "재시도 all 데이터 deletion"
+  },
+  "options_error_load": {
+    "message": "Could not load 설정. Reload the 페이지 to 다시 시도하세요.."
+  },
+  "options_error_retry_boot": {
+    "message": "Could not restart 포커스 Lock. 다시 시도하세요.."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Could not refresh 개인 정보 보호 설정. Reload the 페이지."
+  },
+  "options_error_website_blocking": {
+    "message": "Could not update 웹사이트 차단. 다시 시도하세요.."
+  },
+  "options_error_change_sync": {
+    "message": "Could not change Chrome 동기화. 다시 시도하세요.."
+  },
+  "options_error_retry_sync": {
+    "message": "Could not 재시도 Chrome 동기화. 다시 시도하세요.."
+  },
+  "options_error_save_settings": {
+    "message": "Could not 저장 설정. Reload the 페이지 and 다시 시도하세요.."
+  },
+  "options_error_save_lists": {
+    "message": "Could not 저장 lists. Reload the 페이지 and 다시 시도하세요.."
+  },
+  "options_gate_wait_one": {
+    "message": "Wait $COUNT$ second",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Wait $COUNT$ seconds",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ site included",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ sites included",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ included when enabled",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ included when enabled",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

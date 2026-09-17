@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { cleanup, render, within } from '@testing-library/preact';
 import { afterEach, describe, expect, it } from 'vitest';
+import { t } from '../../../src/shared/i18n';
 import type { StatsBundle } from '../../../src/shared/messages';
 import type { DailyAgg, EventRecord } from '../../../src/shared/types';
 import { attemptsByHour, Charts, topSites } from '../../../src/stats/Charts';
@@ -144,7 +145,7 @@ describe('BarChart', () => {
 
   it('renders the quiet empty line for empty and all-zero data', () => {
     const empty = render(<BarChart data={[]} format={(v: number): string => String(v)} />);
-    expect(empty.container.textContent).toContain('No data yet.');
+    expect(empty.container.textContent).toContain(t('stats_chart_empty_default'));
     const zeros = render(
       <BarChart
         data={[
@@ -155,7 +156,7 @@ describe('BarChart', () => {
       />,
     );
     expect(zeros.container.querySelectorAll('.bar-mark').length).toBe(0);
-    expect(zeros.container.textContent).toContain('No data yet.');
+    expect(zeros.container.textContent).toContain(t('stats_chart_empty_default'));
   });
 
   it('exposes keyboard data points and a headed data table', () => {
@@ -179,14 +180,16 @@ describe('BarChart', () => {
     expect(chart?.getAttribute('aria-describedby')).toBe(description?.id);
     const points: Element[] = Array.from(chart?.querySelectorAll('[tabindex="0"]') ?? []);
     expect(points).toHaveLength(2);
-    expect(points[0]?.getAttribute('aria-label')).toBe('28 Aug: 10 m');
+    expect(points[0]?.getAttribute('aria-label')).toBe(
+      t('stats_chart_point', { LABEL: '28 Aug', VALUE: '10 m' }),
+    );
 
     const columnHeaders: Element[] = Array.from(
       container.querySelectorAll('.chart-table thead th[scope="col"]'),
     );
     expect(columnHeaders.map((header: Element): string | null => header.textContent)).toEqual([
-      'Category',
-      'Value',
+      t('stats_chart_table_category'),
+      t('stats_chart_table_value'),
     ]);
     expect(container.querySelectorAll('.chart-table tbody th[scope="row"]')).toHaveLength(2);
     expect(container.querySelectorAll('.chart-table summary')).toHaveLength(1);
@@ -211,7 +214,7 @@ describe('HBarChart', () => {
 
   it('renders the quiet empty line with no data', () => {
     const { container } = render(<HBarChart data={[]} format={(v: number): string => String(v)} />);
-    expect(container.textContent).toContain('No data yet.');
+    expect(container.textContent).toContain(t('stats_chart_empty_default'));
   });
 
   it('exposes keyboard data points and a headed data table', () => {
@@ -235,7 +238,9 @@ describe('HBarChart', () => {
     expect(chart?.getAttribute('aria-describedby')).toBe(description?.id);
     const points: Element[] = Array.from(chart?.querySelectorAll('[tabindex="0"]') ?? []);
     expect(points).toHaveLength(2);
-    expect(points[0]?.getAttribute('aria-label')).toBe('facebook.com: 12');
+    expect(points[0]?.getAttribute('aria-label')).toBe(
+      t('stats_chart_point', { LABEL: 'facebook.com', VALUE: '12' }),
+    );
 
     expect(container.querySelectorAll('.chart-table thead th[scope="col"]')).toHaveLength(2);
     expect(container.querySelectorAll('.chart-table tbody th[scope="row"]')).toHaveLength(2);
@@ -278,7 +283,7 @@ describe('HourlyHeatStrip', () => {
     );
     const { container, getByRole, getByText } = render(<HourlyHeatStrip values={values} />);
 
-    expect(getByRole('img', { name: '24-hour blocked-attempt heat strip' })).toBeTruthy();
+    expect(getByRole('img', { name: t('stats_heat_strip_label') })).toBeTruthy();
     expect(container.querySelectorAll('[role="img"]')).toHaveLength(1);
     expect(container.querySelectorAll('.heat-cell')).toHaveLength(24);
     expect(container.querySelectorAll('.heat-cell[role]')).toHaveLength(0);
@@ -292,7 +297,7 @@ describe('HourlyHeatStrip', () => {
     expect(cells[9]?.getAttribute('style')).toContain('--intensity: 1');
     expect(cells[14]?.getAttribute('style')).toContain('--intensity: 0.5');
     expect(cells[0]?.getAttribute('style')).toContain('--intensity: 0');
-    expect(getByText('View as table')).toBeTruthy();
+    expect(getByText(t('stats_chart_table_summary'))).toBeTruthy();
     expect(container.querySelectorAll('.chart-table tbody tr')).toHaveLength(24);
     expect(container.querySelector('.chart-table table')).toBeTruthy();
   });
@@ -388,10 +393,10 @@ describe('Charts', () => {
     const { getAllByRole } = render(<Charts bundle={bundle} events={[hourlyAttempt]} now={NOW} />);
     const headings: HTMLElement[] = getAllByRole('heading', { level: 2 });
     expect(headings.map((heading: HTMLElement): string => heading.textContent ?? '')).toEqual([
-      'Focus, last 14 days',
-      'Blocked attempts, last 14 days',
-      'Top blocked sites, last 30 days',
-      'Attempts by hour, this machine only',
+      t('stats_chart_focus_heading'),
+      t('stats_chart_attempts_heading'),
+      t('stats_chart_sites_heading'),
+      t('stats_chart_hours_heading'),
     ]);
 
     const sections: HTMLElement[] = headings.map((heading: HTMLElement): HTMLElement => {
@@ -400,13 +405,13 @@ describe('Charts', () => {
       return section;
     });
     for (const section of sections) {
-      expect(within(section).getByText('View as table')).toBeTruthy();
+      expect(within(section).getByText(t('stats_chart_table_summary'))).toBeTruthy();
     }
     expect(sections[0]?.querySelectorAll('.chart-table tbody tr')).toHaveLength(14);
     expect(sections[1]?.querySelectorAll('.chart-table tbody tr')).toHaveLength(14);
     expect(sections[2]?.textContent).toContain('old.example');
     expect(sections[3]?.querySelector('[role="img"]')?.getAttribute('aria-label')).toBe(
-      '24-hour blocked-attempt heat strip',
+      t('stats_heat_strip_label'),
     );
     expect(sections[3]?.querySelectorAll('.heat-cell')).toHaveLength(24);
     expect(sections[3]?.querySelector('svg')).toBeNull();

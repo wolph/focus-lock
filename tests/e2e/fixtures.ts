@@ -52,6 +52,8 @@ interface ExtFixtures {
    * differently between runs, which is enough to fail a comparison that has to stay exact.
    */
   extensionDeterministicPaint: boolean;
+  /** The browser UI language the extension renders in. Defaults to English for every other spec. */
+  extensionUiLanguage: string;
   context: BrowserContext;
   worker: Worker;
   extensionId: string;
@@ -119,12 +121,21 @@ export interface RestartableExtension {
 interface LaunchEnvironmentV2 {
   timezoneId?: string | undefined;
   deterministicPaint?: boolean;
+  /**
+   * The browser UI language, which is what `chrome.i18n` reads. Every other spec pins `en` so a
+   * developer machine set to another language does not change what `getByText` sees.
+   */
+  uiLanguage?: string | undefined;
 }
 
-function extensionArgs(dist: string): string[] {
+/** The UI language every spec runs under unless it asks for another one. */
+export const DEFAULT_UI_LANGUAGE: string = 'en-US';
+
+function extensionArgs(dist: string, uiLanguage: string): string[] {
   return [
     `--disable-extensions-except=${dist}`,
     `--load-extension=${dist}`,
+    `--lang=${uiLanguage}`,
     '--host-resolver-rules=MAP blocked.example 127.0.0.1, MAP *.blocked.example 127.0.0.1, MAP other.example 127.0.0.1',
   ];
 }
@@ -138,7 +149,7 @@ async function extensionLaunch(
 ): Promise<ExtensionLaunch> {
   const timezoneId: string | undefined = environment.timezoneId;
   const dist: string = resolveExtensionDist(distOverride);
-  const args: string[] = extensionArgs(dist);
+  const args: string[] = extensionArgs(dist, environment.uiLanguage ?? DEFAULT_UI_LANGUAGE);
   // `deterministicPaint` is the honest half of this condition: a caller that needs a stable paint
   // says so. The environment-variable arm beside it is a coupling worth knowing about, because a
   // variable named for where evidence is written also decides how the browser draws, and it does so
@@ -168,6 +179,7 @@ async function extensionLaunch(
     channel: 'chromium',
     args,
     env: browserEnvironment,
+    locale: environment.uiLanguage ?? DEFAULT_UI_LANGUAGE,
     timezoneId,
   });
   monitorBrowserContext(context, diagnostics);
@@ -392,7 +404,12 @@ async function completedExtensionLaunch(
 export const test = base.extend<ExtFixtures>({
   extensionTimezone: [undefined, { option: true }],
   extensionDeterministicPaint: [false, { option: true }],
-  context: async ({ extensionTimezone, extensionDeterministicPaint }, use, testInfo) => {
+  extensionUiLanguage: [DEFAULT_UI_LANGUAGE, { option: true }],
+  context: async (
+    { extensionTimezone, extensionDeterministicPaint, extensionUiLanguage },
+    use,
+    testInfo,
+  ) => {
     const diagnostics: BrowserDiagnostics = createBrowserDiagnostics();
     const profileDir: string = testInfo.outputPath('default-profile');
     const baseDist: string = await createIsolatedExtensionDist(
@@ -403,7 +420,11 @@ export const test = base.extend<ExtFixtures>({
       profileDir,
       baseDist,
       diagnostics,
-      { timezoneId: extensionTimezone, deterministicPaint: extensionDeterministicPaint },
+      {
+        timezoneId: extensionTimezone,
+        deterministicPaint: extensionDeterministicPaint,
+        uiLanguage: extensionUiLanguage,
+      },
     );
     fixtureDiagnostics.set(launch.context, diagnostics);
     try {
@@ -442,7 +463,7 @@ export const test = base.extend<ExtFixtures>({
     await server.close();
   },
   restartableExtension: async (
-    { extensionTimezone, extensionDeterministicPaint },
+    { extensionTimezone, extensionDeterministicPaint, extensionUiLanguage },
     use,
     testInfo,
   ) => {
@@ -455,6 +476,7 @@ export const test = base.extend<ExtFixtures>({
     const environment: LaunchEnvironmentV2 = {
       timezoneId: extensionTimezone,
       deterministicPaint: extensionDeterministicPaint,
+      uiLanguage: extensionUiLanguage,
     };
     const prepared: ExtensionLaunch = await completedExtensionLaunch(
       profileDir,
@@ -483,7 +505,7 @@ export const test = base.extend<ExtFixtures>({
     }
   },
   freshInstallExtension: async (
-    { extensionTimezone, extensionDeterministicPaint },
+    { extensionTimezone, extensionDeterministicPaint, extensionUiLanguage },
     use,
     testInfo,
   ) => {
@@ -511,7 +533,11 @@ export const test = base.extend<ExtFixtures>({
         true,
         baseDist,
         diagnostics,
-        { timezoneId: extensionTimezone, deterministicPaint: extensionDeterministicPaint },
+        {
+          timezoneId: extensionTimezone,
+          deterministicPaint: extensionDeterministicPaint,
+          uiLanguage: extensionUiLanguage,
+        },
       );
       const onboardingPage: Page = await baseLaunch.context.newPage();
       await onboardingPage.goto(
@@ -553,6 +579,7 @@ export const test = base.extend<ExtFixtures>({
       await grantProfileWebsiteAccess(profileDir, baseDist, diagnostics, {
         timezoneId: extensionTimezone,
         deterministicPaint: extensionDeterministicPaint,
+        uiLanguage: extensionUiLanguage,
       });
       return await launch();
     };

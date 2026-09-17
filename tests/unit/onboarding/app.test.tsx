@@ -4,6 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { App } from '../../../src/onboarding/App';
 import type { OnboardingDraft } from '../../../src/onboarding/draft-storage';
 import { DEFAULT_LISTS, DEFAULT_SETTINGS, DEFAULT_SETUP } from '../../../src/shared/constants';
+import { t } from '../../../src/shared/i18n';
 import type { Request } from '../../../src/shared/messages';
 import { isOnboardingDraft } from '../../../src/shared/runtime-validation';
 import { LOCAL_ONBOARDING_DRAFT } from '../../../src/shared/storage-keys';
@@ -140,8 +141,10 @@ afterEach((): void => {
 describe('onboarding page state', (): void => {
   it('persists Step 1 choices before navigating and restores Step 2 on reload', async (): Promise<void> => {
     const first = render(<App />);
-    expect(await first.findByText('Step 1 of 3')).toBeTruthy();
-    expect(first.getByRole('heading', { name: 'Choose your starting block list' })).toBeTruthy();
+    expect(
+      await first.findByText(t('onboarding_progress', { STEP: '1', TOTAL: '3' })),
+    ).toBeTruthy();
+    expect(first.getByRole('heading', { name: t('onboarding_lists_heading') })).toBeTruthy();
 
     fireEvent.click(first.getByRole('checkbox', { name: 'Social media' }));
     await waitFor((): void => {
@@ -149,8 +152,10 @@ describe('onboarding page state', (): void => {
         true,
       );
     });
-    fireEvent.click(first.getByRole('button', { name: 'Continue' }));
-    expect(await first.findByText('Step 2 of 3')).toBeTruthy();
+    fireEvent.click(first.getByRole('button', { name: t('onboarding_continue_button') }));
+    expect(
+      await first.findByText(t('onboarding_progress', { STEP: '2', TOTAL: '3' })),
+    ).toBeTruthy();
     const draft: OnboardingDraft = await persistedDraft();
     expect(draft.step).toBe(2);
     expect(draft.lists.categories.social).toBe(true);
@@ -160,8 +165,10 @@ describe('onboarding page state', (): void => {
 
     first.unmount();
     const reloaded = render(<App />);
-    expect(await reloaded.findByRole('heading', { name: 'Enable website blocking' })).toBeTruthy();
-    expect(reloaded.getByText('Step 2 of 3')).toBeTruthy();
+    expect(
+      await reloaded.findByRole('heading', { name: t('onboarding_access_heading') }),
+    ).toBeTruthy();
+    expect(reloaded.getByText(t('onboarding_progress', { STEP: '2', TOTAL: '3' }))).toBeTruthy();
     expect(permissionRequestMock).not.toHaveBeenCalled();
   });
 
@@ -178,7 +185,7 @@ describe('onboarding page state', (): void => {
 
     const view = render(<App />);
     const enable: HTMLElement = await view.findByRole('button', {
-      name: 'Enable website blocking',
+      name: t('onboarding_access_enable_button'),
     });
     fireEvent.click(enable);
 
@@ -189,7 +196,7 @@ describe('onboarding page state', (): void => {
     });
     expect(permissionRequestMock).toHaveBeenCalledOnce();
     expect(sendMessageMock).toHaveBeenCalledWith({ type: 'reconcileWebsiteAccess' });
-    expect(view.getByText('Step 2 of 3')).toBeTruthy();
+    expect(view.getByText(t('onboarding_progress', { STEP: '2', TOTAL: '3' }))).toBeTruthy();
   });
 
   it('focuses Retry after a denied permission action settles', async (): Promise<void> => {
@@ -216,7 +223,7 @@ describe('onboarding page state', (): void => {
 
     const view = render(<App />);
     const enable: HTMLButtonElement = (await view.findByRole('button', {
-      name: 'Enable website blocking',
+      name: t('onboarding_access_enable_button'),
     })) as HTMLButtonElement;
     enable.focus();
     fireEvent.click(enable);
@@ -227,7 +234,7 @@ describe('onboarding page state', (): void => {
     if (resolveReconciliation === null) throw new Error('reconciliation request did not start');
     resolveReconciliation();
     const retry: HTMLButtonElement = (await view.findByRole('button', {
-      name: 'Retry',
+      name: t('onboarding_retry_button'),
     })) as HTMLButtonElement;
     await waitFor((): void => expect(document.activeElement).toBe(retry));
   });
@@ -235,19 +242,19 @@ describe('onboarding page state', (): void => {
   it('focuses the heading after each onboarding step change', async (): Promise<void> => {
     const view = render(<App />);
     const firstHeading: HTMLElement = await view.findByRole('heading', {
-      name: 'Choose your starting block list',
+      name: t('onboarding_lists_heading'),
     });
     await waitFor((): void => expect(document.activeElement).toBe(firstHeading));
 
-    fireEvent.click(view.getByRole('button', { name: 'Continue' }));
+    fireEvent.click(view.getByRole('button', { name: t('onboarding_continue_button') }));
     const secondHeading: HTMLElement = await view.findByRole('heading', {
-      name: 'Enable website blocking',
+      name: t('onboarding_access_heading'),
     });
     await waitFor((): void => expect(document.activeElement).toBe(secondHeading));
 
-    fireEvent.click(view.getByRole('button', { name: 'Not now' }));
+    fireEvent.click(view.getByRole('button', { name: t('onboarding_access_defer_button') }));
     const thirdHeading: HTMLElement = await view.findByRole('heading', {
-      name: 'Choose where your settings are stored',
+      name: t('onboarding_sync_heading'),
     });
     await waitFor((): void => expect(document.activeElement).toBe(thirdHeading));
   });
@@ -275,7 +282,7 @@ describe('onboarding page state', (): void => {
     });
     const view = render(<App />);
     const finish: HTMLButtonElement = (await view.findByRole('button', {
-      name: 'Finish setup without sync',
+      name: t('onboarding_sync_finish_disabled'),
     })) as HTMLButtonElement;
 
     fireEvent.click(finish);
@@ -292,7 +299,9 @@ describe('onboarding page state', (): void => {
     const finishRequest: (() => void) | null = finishGate.resolve;
     if (finishRequest === null) throw new Error('completion request did not start');
     finishRequest();
-    expect(await view.findByRole('heading', { name: 'Setup complete' })).toBeTruthy();
+    expect(
+      await view.findByRole('heading', { name: t('onboarding_complete_heading') }),
+    ).toBeTruthy();
   });
 
   it('treats denied reconciliation after a granted prompt as denied across reload', async (): Promise<void> => {
@@ -308,20 +317,24 @@ describe('onboarding page state', (): void => {
     permissionRequestMock.mockResolvedValue(true);
 
     const first = render(<App />);
-    fireEvent.click(await first.findByRole('button', { name: 'Enable website blocking' }));
+    fireEvent.click(
+      await first.findByRole('button', { name: t('onboarding_access_enable_button') }),
+    );
 
     await waitFor((): void => {
       const draft: OnboardingDraft = localState[LOCAL_ONBOARDING_DRAFT] as OnboardingDraft;
       expect(draft.step).toBe(2);
       expect(draft.websiteAccessChoice).toBe('denied');
     });
-    expect(first.getByText('Chrome did not grant website access. You can retry.')).toBeTruthy();
+    expect(first.getByText(t('onboarding_access_denied'))).toBeTruthy();
     expect(first.queryByText(/Website access is available/)).toBeNull();
 
     first.unmount();
     const reloaded = render(<App />);
-    expect(await reloaded.findByText('Step 2 of 3')).toBeTruthy();
-    expect(reloaded.getByText('Chrome did not grant website access. You can retry.')).toBeTruthy();
+    expect(
+      await reloaded.findByText(t('onboarding_progress', { STEP: '2', TOTAL: '3' })),
+    ).toBeTruthy();
+    expect(reloaded.getByText(t('onboarding_access_denied'))).toBeTruthy();
   });
 
   it.each([
@@ -334,9 +347,8 @@ describe('onboarding page state', (): void => {
         registration: 'error',
       },
       expectedChoice: 'denied' as const,
-      expectedCopy: 'Chrome did not grant website access. You can retry.',
-      absentCopy:
-        'Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload the extension.',
+      expectedCopy: t('onboarding_access_denied'),
+      absentCopy: t('onboarding_access_registration_error'),
     },
     {
       promptGranted: false,
@@ -347,9 +359,8 @@ describe('onboarding page state', (): void => {
         registration: 'error',
       },
       expectedChoice: 'registration-error' as const,
-      expectedCopy:
-        'Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload the extension.',
-      absentCopy: 'Chrome did not grant website access. You can retry.',
+      expectedCopy: t('onboarding_access_registration_error'),
+      absentCopy: t('onboarding_access_denied'),
     },
   ])(
     'uses authoritative reconciliation instead of prompt result %#',
@@ -383,7 +394,9 @@ describe('onboarding page state', (): void => {
       );
       const first = render(<App />);
 
-      fireEvent.click(await first.findByRole('button', { name: 'Enable website blocking' }));
+      fireEvent.click(
+        await first.findByRole('button', { name: t('onboarding_access_enable_button') }),
+      );
 
       await waitFor((): void => {
         const draft: OnboardingDraft = localState[LOCAL_ONBOARDING_DRAFT] as OnboardingDraft;
@@ -437,12 +450,12 @@ describe('onboarding page state', (): void => {
       );
       const view = render(<App />);
 
-      fireEvent.click(await view.findByRole('button', { name: 'Enable website blocking' }));
-
-      expect((await view.findByRole('alert')).textContent).toBe(
-        'Could not enable website blocking. Try again.',
+      fireEvent.click(
+        await view.findByRole('button', { name: t('onboarding_access_enable_button') }),
       );
-      expect(view.getByText('Step 2 of 3')).toBeTruthy();
+
+      expect((await view.findByRole('alert')).textContent).toBe(t('onboarding_enable_error'));
+      expect(view.getByText(t('onboarding_progress', { STEP: '2', TOTAL: '3' }))).toBeTruthy();
       const current: OnboardingDraft = localState[LOCAL_ONBOARDING_DRAFT] as OnboardingDraft;
       expect(current.revision).toBe(2);
       expect(current.websiteAccessChoice).toBe('pending');
@@ -461,9 +474,9 @@ describe('onboarding page state', (): void => {
     } satisfies OnboardingDraft;
 
     const view = render(<App />);
-    fireEvent.click(await view.findByRole('button', { name: 'Not now' }));
+    fireEvent.click(await view.findByRole('button', { name: t('onboarding_access_defer_button') }));
 
-    expect(await view.findByText('Step 3 of 3')).toBeTruthy();
+    expect(await view.findByText(t('onboarding_progress', { STEP: '3', TOTAL: '3' }))).toBeTruthy();
     const draft: OnboardingDraft = await persistedDraft();
     expect(draft.step).toBe(3);
     expect(draft.websiteAccessChoice).toBe('deferred');
@@ -496,7 +509,7 @@ describe('onboarding page state', (): void => {
 
     const view = render(<App />);
     const sync: HTMLInputElement = (await view.findByRole('switch', {
-      name: 'Sync across Chrome devices',
+      name: t('onboarding_sync_switch_label'),
     })) as HTMLInputElement;
     sync.focus();
     fireEvent.click(sync);
@@ -506,7 +519,9 @@ describe('onboarding page state', (): void => {
     const resolveSave: (() => void) | null = saveGate.resolve;
     if (resolveSave === null) throw new Error('draft save did not start');
     resolveSave();
-    expect(await view.findByRole('button', { name: 'Finish setup without sync' })).toBeTruthy();
+    expect(
+      await view.findByRole('button', { name: t('onboarding_sync_finish_disabled') }),
+    ).toBeTruthy();
     await waitFor((): void => expect(document.activeElement).toBe(sync));
   });
 
@@ -522,9 +537,13 @@ describe('onboarding page state', (): void => {
     } satisfies OnboardingDraft;
 
     const view = render(<App />);
-    fireEvent.click(await view.findByRole('button', { name: 'Finish setup without sync' }));
+    fireEvent.click(
+      await view.findByRole('button', { name: t('onboarding_sync_finish_disabled') }),
+    );
 
-    expect(await view.findByRole('heading', { name: 'Setup complete' })).toBeTruthy();
+    expect(
+      await view.findByRole('heading', { name: t('onboarding_complete_heading') }),
+    ).toBeTruthy();
     expect(sendMessageMock).toHaveBeenCalledWith({
       type: 'completeOnboarding',
       revision: 4,
@@ -547,7 +566,9 @@ describe('onboarding page state', (): void => {
 
     const view = render(<App />);
 
-    expect(await view.findByRole('heading', { name: 'Setup complete' })).toBeTruthy();
+    expect(
+      await view.findByRole('heading', { name: t('onboarding_complete_heading') }),
+    ).toBeTruthy();
     await waitFor((): void => expect(localState[LOCAL_ONBOARDING_DRAFT]).toBeUndefined());
   });
 
@@ -565,7 +586,9 @@ describe('onboarding page state', (): void => {
 
     const view = render(<App />);
 
-    expect(await view.findByRole('heading', { name: 'Setup complete' })).toBeTruthy();
+    expect(
+      await view.findByRole('heading', { name: t('onboarding_complete_heading') }),
+    ).toBeTruthy();
     await waitFor((): void => expect(localState[LOCAL_ONBOARDING_DRAFT]).toBeUndefined());
   });
 
@@ -577,7 +600,7 @@ describe('onboarding page state', (): void => {
     expect((await view.findByRole('status')).textContent).toBe(
       'Your saved setup progress could not be restored. Starting again with your current defaults.',
     );
-    expect(view.getByText('Step 1 of 3')).toBeTruthy();
+    expect(view.getByText(t('onboarding_progress', { STEP: '1', TOTAL: '3' }))).toBeTruthy();
     const draft: OnboardingDraft = await persistedDraft();
     expect(draft.step).toBe(1);
     expect(draft.settings).toEqual(DEFAULT_SETTINGS);
@@ -590,7 +613,7 @@ describe('onboarding page state', (): void => {
     const view = render(<App />);
 
     expect((await view.findByRole('alert')).textContent).toBe('Could not load setup. Try again.');
-    expect(view.getByRole('button', { name: 'Retry' })).toBeTruthy();
+    expect(view.getByRole('button', { name: t('onboarding_retry_button') })).toBeTruthy();
     expect(view.queryByText(/Step \d of 3/)).toBeNull();
   });
 
@@ -609,7 +632,7 @@ describe('onboarding page state', (): void => {
     const view = render(<App />);
 
     expect((await view.findByRole('alert')).textContent).toBe('Could not load setup. Try again.');
-    expect(view.getByRole('button', { name: 'Retry' })).toBeTruthy();
+    expect(view.getByRole('button', { name: t('onboarding_retry_button') })).toBeTruthy();
     expect(view.queryByText(/Step \d of 3/)).toBeNull();
   });
 
@@ -637,10 +660,8 @@ describe('onboarding page state', (): void => {
 
     fireEvent.click(social);
 
-    expect((await view.findByRole('alert')).textContent).toBe(
-      'Could not save setup progress. Try again.',
-    );
-    expect(view.getByText('Step 1 of 3')).toBeTruthy();
+    expect((await view.findByRole('alert')).textContent).toBe(t('onboarding_save_error'));
+    expect(view.getByText(t('onboarding_progress', { STEP: '1', TOTAL: '3' }))).toBeTruthy();
     expect((view.getByRole('checkbox', { name: 'Social media' }) as HTMLInputElement).checked).toBe(
       false,
     );
@@ -684,7 +705,7 @@ describe('onboarding page state', (): void => {
       expect(current.revision).toBe(1);
       expect(current.lists.categories.social).toBe(false);
     });
-    expect(view.getByText('Step 1 of 3')).toBeTruthy();
+    expect(view.getByText(t('onboarding_progress', { STEP: '1', TOTAL: '3' }))).toBeTruthy();
   });
 
   it('confirms completed setup after a save conflict has no authoritative draft', async (): Promise<void> => {
@@ -718,7 +739,9 @@ describe('onboarding page state', (): void => {
 
     fireEvent.click(await view.findByRole('checkbox', { name: 'Social media' }));
 
-    expect(await view.findByRole('heading', { name: 'Setup complete' })).toBeTruthy();
+    expect(
+      await view.findByRole('heading', { name: t('onboarding_complete_heading') }),
+    ).toBeTruthy();
   });
 
   it('makes a failed reload retryable after a completion conflict has no draft', async (): Promise<void> => {
@@ -755,13 +778,15 @@ describe('onboarding page state', (): void => {
     });
     const view = render(<App />);
 
-    fireEvent.click(await view.findByRole('button', { name: 'Finish setup without sync' }));
+    fireEvent.click(
+      await view.findByRole('button', { name: t('onboarding_sync_finish_disabled') }),
+    );
 
     expect((await view.findByRole('alert')).textContent).toBe('Could not load setup. Try again.');
-    fireEvent.click(view.getByRole('button', { name: 'Retry' }));
+    fireEvent.click(view.getByRole('button', { name: t('onboarding_retry_button') }));
     await waitFor((): void => {
       expect((localState[LOCAL_ONBOARDING_DRAFT] as OnboardingDraft).revision).toBe(1);
     });
-    expect(await view.findByText('Step 1 of 3')).toBeTruthy();
+    expect(await view.findByText(t('onboarding_progress', { STEP: '1', TOTAL: '3' }))).toBeTruthy();
   });
 });

@@ -1,5 +1,6 @@
 import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
+import { formatNumber, t } from '../shared/i18n';
 import { sendRequest } from '../shared/messages';
 import { WEBSITE_ORIGINS } from '../shared/permissions';
 import {
@@ -34,9 +35,9 @@ type PageState =
 function SetupComplete(): VNode {
   return (
     <main class="onboarding-card onboarding-complete">
-      <p class="eyebrow">Focus Lock</p>
-      <h1>Setup complete</h1>
-      <p>Your choices are saved. Open Focus Lock from the Chrome toolbar to start a session.</p>
+      <p class="eyebrow">{t('app_name')}</p>
+      <h1>{t('onboarding_complete_heading')}</h1>
+      <p>{t('onboarding_complete_body')}</p>
     </main>
   );
 }
@@ -44,18 +45,25 @@ function SetupComplete(): VNode {
 function LoadError({ onRetry }: { onRetry: () => void }): VNode {
   return (
     <main class="onboarding-card onboarding-error">
-      <p class="eyebrow">Focus Lock</p>
-      <h1>Setup unavailable</h1>
-      <p role="alert">Could not load setup. Try again.</p>
+      <p class="eyebrow">{t('app_name')}</p>
+      <h1>{t('onboarding_error_heading')}</h1>
+      <p role="alert">{t('onboarding_error_body')}</p>
       <button type="button" class="primary-button" onClick={onRetry}>
-        Retry
+        {t('onboarding_retry_button')}
       </button>
     </main>
   );
 }
 
+/** The number of steps the setup page walks through, which the progress line reads out. */
+const STEP_COUNT: number = 3;
+
 function Progress({ step }: { step: OnboardingStep }): VNode {
-  return <p class="progress">Step {step} of 3</p>;
+  return (
+    <p class="progress">
+      {t('onboarding_progress', { STEP: formatNumber(step), TOTAL: formatNumber(STEP_COUNT) })}
+    </p>
+  );
 }
 
 export function App(): VNode {
@@ -177,7 +185,7 @@ export function App(): VNode {
         }
         setActionError(error.message);
       } else {
-        setActionError('Could not save setup progress. Try again.');
+        setActionError(t('onboarding_save_error'));
       }
       return false;
     }
@@ -225,7 +233,7 @@ export function App(): VNode {
         type: 'reconcileWebsiteAccess',
       });
       if (!isWebsiteAccessReconciliation(response)) {
-        setActionError('Could not enable website blocking. Try again.');
+        setActionError(t('onboarding_enable_error'));
         return;
       }
       const outcome: WebsiteAccessOutcome = websiteAccessOutcome(response);
@@ -254,7 +262,7 @@ export function App(): VNode {
       };
       await commitDraft(next);
     } catch {
-      setActionError('Could not enable website blocking. Try again.');
+      setActionError(t('onboarding_enable_error'));
     } finally {
       endAction();
     }
@@ -286,7 +294,7 @@ export function App(): VNode {
         }
         setActionError(error.message);
       } else {
-        setActionError('Could not complete setup. Your choices are still saved. Try again.');
+        setActionError(t('onboarding_finish_error'));
       }
     } finally {
       endAction();
@@ -295,12 +303,11 @@ export function App(): VNode {
 
   return (
     <main class="onboarding-card">
-      <p class="eyebrow">Focus Lock setup</p>
+      <p class="eyebrow">{t('onboarding_eyebrow')}</p>
       <Progress step={page.draft.step} />
       {page.recovered ? (
         <p class="recovery-notice" role="status">
-          Your saved setup progress could not be restored. Starting again with your current
-          defaults.
+          {t('onboarding_recovery_notice')}
         </p>
       ) : null}
       {page.draft.step === 1 ? (

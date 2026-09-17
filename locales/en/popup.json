@@ -1,0 +1,766 @@
+{
+  "popup_next_schedule": {
+    "message": "next: $DAY$ $TIME$",
+    "description": "Footer line of the toolbar popup naming when the next scheduled session starts. DAY is a short weekday name, TIME is a 24 hour clock time.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Settings",
+    "description": "Accessible name of the cog button in the popup header. It opens the extension's Settings page."
+  },
+  "popup_open_settings_failed": {
+    "message": "Could not open Settings. Try again.",
+    "description": "Error shown in the popup when the browser refused to open the Settings page."
+  },
+  "popup_settings_load_failed": {
+    "message": "Could not load session settings. Reload the popup to try again. Defaults are shown.",
+    "description": "Error above the start form when the worker did not answer with usable settings, so the form shows its built-in defaults."
+  },
+  "popup_open_setup_failed": {
+    "message": "Could not open setup. Try again.",
+    "description": "Error in the popup when the first-run setup page could not be opened."
+  },
+  "popup_setup_required_heading": {
+    "message": "Finish setting up Focus Lock",
+    "description": "Heading of the popup screen shown while first-run setup is unfinished. Focus Lock is the product name and stays untranslated."
+  },
+  "popup_setup_required_body": {
+    "message": "Choose your starting lists, website access, and storage mode before starting a session.",
+    "description": "Body of the popup screen shown while first-run setup is unfinished."
+  },
+  "popup_open_setup_button": {
+    "message": "Open setup",
+    "description": "Button in the popup that opens the first-run setup page."
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Could not confirm website blocking. Try again.",
+    "description": "Error in the popup when the worker's answer about website blocking could not be read."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Could not enable website blocking. Try again.",
+    "description": "Error in the popup when turning website blocking on failed."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Website blocking is off",
+    "description": "Heading of the popup screen shown when the extension has no website access, so no session can start."
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock cannot start a session until Chrome grants website access and blocking is enabled.",
+    "description": "Body of the popup screen shown when website blocking is off. Focus Lock is the product name and Chrome is the browser name."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome did not grant website access. Website blocking is still off.",
+    "description": "Status line in the popup after the browser's permission prompt was declined."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Retry setup or reload the extension.",
+    "description": "Status line in the popup when the permission exists but the blocking rules could not be registered."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Enable website blocking",
+    "description": "Button in the popup that asks the browser for website access and turns blocking on."
+  },
+  "popup_retry_button": {
+    "message": "Retry",
+    "description": "Button that runs the failed step again. Used on the website blocking, boot failure, and setup status screens of the popup."
+  },
+  "popup_notice_access_revoked": {
+    "message": "Your session ended because website access was removed.",
+    "description": "Notice in the popup explaining why a running session stopped."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Your session ended because Focus Lock could not enable website blocking.",
+    "description": "Notice in the popup explaining why a running session stopped. Focus Lock is the product name."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Could not dismiss this notice. Try again.",
+    "description": "Error shown when dismissing the website access notice in the popup failed."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Dismiss website access notice",
+    "description": "Accessible name of the button that hides the website access notice in the popup."
+  },
+  "popup_dismiss_button": {
+    "message": "Dismiss",
+    "description": "Visible label of the button that hides the website access notice in the popup."
+  },
+  "popup_restart_failed": {
+    "message": "Could not restart Focus Lock. Try again.",
+    "description": "Error on the popup's recovery screen when a retry or a runtime reset failed. Focus Lock is the product name."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock could not start",
+    "description": "Heading of the popup's recovery screen, shown when the background worker failed to start. Focus Lock is the product name."
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "The reason could not be read.",
+    "description": "Shown on the popup's recovery screen when the worker could not report why it failed to start."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Reset local runtime",
+    "description": "Button on the popup's recovery screen that clears the stored session state and keeps everything else."
+  },
+  "popup_reset_runtime_note": {
+    "message": "Keeps your settings, lists, and statistics. Clears the current session state.",
+    "description": "Explanation under the Reset local runtime button on the popup's recovery screen."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Delete everything and start over",
+    "description": "Confirmation button on the popup's recovery screen that deletes all stored extension data."
+  },
+  "popup_keep_data_button": {
+    "message": "Keep my data",
+    "description": "Button on the popup's recovery screen that cancels the delete-everything confirmation."
+  },
+  "popup_delete_all_button": {
+    "message": "Delete all Focus Lock data",
+    "description": "Button on the popup's recovery screen that asks to confirm deleting all stored data. Focus Lock is the product name."
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Setup status unavailable. Reload Focus Lock to try again.",
+    "description": "Alert in the popup when the stored setup record could not be read. Focus Lock is the product name."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Focus status unavailable",
+    "description": "Shown in the popup when the live session status could not be read from the worker."
+  },
+  "popup_action_in_progress": {
+    "message": "Action in progress",
+    "description": "Reason a button in the active session view is disabled: an earlier command has not answered yet."
+  },
+  "popup_active_site_checking": {
+    "message": "Checking the active site",
+    "description": "Reason the unlock button is disabled while the popup is still reading the current tab's address."
+  },
+  "popup_active_site_unsupported": {
+    "message": "Open a regular website to unlock it",
+    "description": "Reason the unlock button is disabled because the current tab is not an ordinary web page."
+  },
+  "popup_active_site_unknown": {
+    "message": "Could not identify the active site",
+    "description": "Reason the unlock button is disabled after reading the current tab failed. Shown inside the button, without a full stop."
+  },
+  "popup_active_site_error": {
+    "message": "Could not identify the active site.",
+    "description": "Alert under the active session view after reading the current tab failed. A sentence, unlike the shorter reason inside the button."
+  },
+  "popup_resume_now": {
+    "message": "Resume now",
+    "description": "Button in the active session view that ends a pause and returns to focus."
+  },
+  "popup_start_next_focus_early": {
+    "message": "Start next focus early",
+    "description": "Button in the active session view that ends a break before its timer runs out."
+  },
+  "popup_unlock_this_site": {
+    "message": "Unlock this site",
+    "description": "Label of the button that spends earned credit to open the current site, and of the matching confirm button in the deliberation panel."
+  },
+  "popup_unlock_all_sites": {
+    "message": "Unlock all sites",
+    "description": "Label of the button that spends earned credit to pause blocking entirely, and of the matching confirm button in the deliberation panel."
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ access, $CREDIT$ credit",
+    "description": "Second line of an unlock button: how long the unlock lasts and how much earned credit it costs. Both are clock durations such as 5:00.",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ access, $CREDIT$ credit - $HOST$",
+    "description": "Second line of the unlock button for one site: the length, the cost, and the site it applies to. ACCESS and CREDIT are clock durations, HOST is a domain name.",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Choose work tab",
+    "description": "Button in the active session view that opens the work tab picker when no work tab is set."
+  },
+  "popup_change_work_tab_button": {
+    "message": "Change work tab",
+    "description": "Button in the active session view that opens the work tab picker when a work tab is already set."
+  },
+  "popup_session_actions_summary": {
+    "message": "Session actions",
+    "description": "Label of the collapsed disclosure in the active session view holding the end, unlock, and work tab controls."
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ site access credit",
+    "description": "How much earned credit is available, shown above the session actions. CREDIT is a clock duration.",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Add an allowed domain",
+    "description": "Label of the text field for adding a site to this session's allowed list."
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com",
+    "description": "Placeholder text in the allowed domain field. An example domain, so keep a domain that reads as an example in the target language."
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Add allowed domain",
+    "description": "Accessible name of the plus button beside the allowed domain field."
+  },
+  "popup_add_button": {
+    "message": "Add",
+    "description": "Visible label of the plus button beside the allowed domain field."
+  },
+  "popup_draft_allowed_only": {
+    "message": "Only $COUNT$ allowed site rules. Other websites blocked.",
+    "description": "Summary beside the start button for a session that allows only the listed sites. COUNT is how many allow rules the session carries.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ blocked categories, $RULES$ extra rules.",
+    "description": "Summary beside the start button for a session that blocks the selected categories. CATEGORIES is how many categories are on, RULES is how many extra rules were added.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Hard lock. Cannot end early.",
+    "description": "Summary beside the start button saying the session cannot be ended before its timer runs out."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Can end at any time.",
+    "description": "Summary beside the start button saying the session can be ended whenever the user chooses."
+  },
+  "popup_draft_stop_friction": {
+    "message": "End after a $SECONDS$s wait.",
+    "description": "Summary beside the start button for a session that can be ended after a deliberation wait. SECONDS is that wait in seconds, and s is the abbreviation for seconds.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "End after a $SECONDS$s wait and confirmation phrase.",
+    "description": "Summary beside the start button for a session that can be ended after a deliberation wait and a typed sentence. SECONDS is that wait in seconds.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Session length",
+    "description": "Label above the duration presets in the start form, and the accessible name of the group holding them."
+  },
+  "popup_custom_minutes_label": {
+    "message": "Custom minutes",
+    "description": "Accessible name of the number field for typing a session length the presets do not offer."
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min",
+    "description": "Placeholder in the custom session length field, abbreviating minutes. Keep it short enough for a narrow field."
+  },
+  "popup_gate_force_end": {
+    "message": "Ignore timeout and end anyway",
+    "description": "Button in the deliberation panel that skips the wait. Worded exactly as the matching Settings checkbox names it."
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Keep focusing",
+    "description": "Button in the deliberation panel that closes it and leaves the session running."
+  },
+  "popup_gate_phrase_label": {
+    "message": "Type:",
+    "description": "Label before the sentence the user has to type to confirm. The sentence itself follows it."
+  },
+  "popup_gate_update_failed": {
+    "message": "Could not update the gate. Try again.",
+    "description": "Error in the deliberation panel when confirming or closing it failed."
+  },
+  "popup_gate_intention": {
+    "message": "You said: $INTENTION$",
+    "description": "Reminder in the deliberation panel of what the user wrote they were working on. INTENTION is their own sentence.",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "A moment to decide:",
+    "description": "Start of the countdown line in the deliberation panel. The elapsed seconds follow it, then popup_gate_wait_remaining, forming one sentence."
+  },
+  "popup_gate_wait_remaining": {
+    "message": "of $TOTAL$ s",
+    "description": "End of the countdown line in the deliberation panel, after popup_gate_wait_prefix and the elapsed seconds. TOTAL is the whole wait in seconds, and s abbreviates seconds.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Back to work",
+    "description": "Visible label of the button that switches to the tab chosen as the work tab."
+  },
+  "popup_destination_unavailable": {
+    "message": "Destination unavailable",
+    "description": "Shown in place of the work tab's name when that tab can no longer be named."
+  },
+  "popup_back_to_work_name": {
+    "message": "Back to work: $DESTINATION$",
+    "description": "Accessible name of the work tab button when only the tab's title or host is known. DESTINATION is that title or host.",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Back to work: $DESTINATION$ ($HOSTNAME$)",
+    "description": "Accessible name of the work tab button when both are known. DESTINATION is the tab's title, HOSTNAME is its domain.",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Category editing is disabled until blocked-site lists reload.",
+    "description": "Why the category toggles in the start form refuse to change, shown beside them."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blocked categories",
+    "description": "Heading above the category toggles in the start form's rule summary."
+  },
+  "popup_show_full_domain": {
+    "message": "Show full domain: $PATTERN$",
+    "description": "Accessible name of a rule row in the start form, which opens a popover with the whole domain. PATTERN is that domain.",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Show full regular expression: $PATTERN$",
+    "description": "Accessible name of a rule row in the start form, which opens a popover with the whole pattern. PATTERN is that regular expression.",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domain",
+    "description": "Kind label on a rule row that matches a domain name."
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regular expression",
+    "description": "Kind label on a rule row that matches with a regular expression."
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ sites",
+    "description": "Accessible name of the site list under one category in the start form. CATEGORY is the category's own title, such as Social.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ site",
+    "description": "How many sites one category blocks, shown on its toggle. Singular.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ sites",
+    "description": "How many sites one category blocks, shown on its toggle. Plural.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "and $COUNT$ more site",
+    "description": "Follows the first few sites of a category in the start form, counting the ones not listed. Singular.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "and $COUNT$ more sites",
+    "description": "Follows the first few sites of a category in the start form, counting the ones not listed. Plural.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Allowed exceptions",
+    "description": "Heading above the sites that stay reachable even though their category is blocked."
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Extra blocked rules",
+    "description": "Heading above the rules blocked beyond the selected categories."
+  },
+  "popup_no_extra_blocked": {
+    "message": "No extra blocked rules.",
+    "description": "Shown under the Extra blocked rules heading when the session adds none."
+  },
+  "popup_allowed_heading": {
+    "message": "Allowed sites and rules",
+    "description": "Heading above the allow list of a session that blocks everything else."
+  },
+  "popup_no_allowed_sites": {
+    "message": "No sites are allowed yet.",
+    "description": "Shown under the Allowed sites and rules heading when the allow list is empty."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "What will be blocked",
+    "description": "Heading of the rule summary for a session that blocks the selected categories."
+  },
+  "popup_what_will_be_allowed": {
+    "message": "What will be allowed",
+    "description": "Heading of the rule summary for a session that allows only the listed sites."
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ of $TOTAL$ categories selected",
+    "description": "How many blocked categories are on, in the rule summary. SELECTED is the number chosen, TOTAL is how many exist.",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ extra blocked rule",
+    "description": "How many rules are blocked beyond the selected categories, in the rule summary. Singular.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ extra blocked rules",
+    "description": "How many rules are blocked beyond the selected categories, in the rule summary. Plural.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ allowed rule",
+    "description": "How many allow rules a session carries, in the rule summary. Singular.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ allowed rules",
+    "description": "How many allow rules a session carries, in the rule summary. Plural.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Allowed-site and rule changes here apply only to this session. Everything else is blocked.",
+    "description": "Explains that edits in the start form's rule summary do not change the permanent lists, for a session that allows only the listed sites."
+  },
+  "popup_scope_blacklist": {
+    "message": "Category and rule changes here apply only to this session.",
+    "description": "Explains that edits in the start form's rule summary do not change the permanent lists."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Open Settings for permanent defaults",
+    "description": "Button in the start form's rule summary that opens the Settings page, where the permanent lists live."
+  },
+  "popup_rule_details_label": {
+    "message": "Session rule details",
+    "description": "Accessible name of the scrolling region holding the rule lists in the start form."
+  },
+  "popup_session_type_legend": {
+    "message": "Session type",
+    "description": "Label of the group of choices deciding how hard the session is to end."
+  },
+  "popup_session_type_flexible": {
+    "message": "Flexible",
+    "description": "Session type that can be ended at any moment."
+  },
+  "popup_session_type_friction": {
+    "message": "Friction",
+    "description": "Session type that can be ended only after a deliberation wait."
+  },
+  "popup_session_type_hard": {
+    "message": "Hard lock",
+    "description": "Session type that cannot be ended before its timer runs out."
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "End the session immediately whenever you choose.",
+    "description": "What choosing the Flexible session type means."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Ending early requires $WAIT$. No typing is required.",
+    "description": "What choosing the Friction session type means when no sentence has to be typed. WAIT is a phrase such as a 10-second wait or no wait.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Ending early requires $WAIT$ and typed confirmation.",
+    "description": "What choosing the Friction session type means when a sentence has to be typed. WAIT is a phrase such as a 10-second wait or no wait.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "The session cannot end early. Site access credit still works.",
+    "description": "What choosing the Hard lock session type means."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "The selected categories and extra rules are blocked. Other sites remain available.",
+    "description": "Hint under the blocking mode that blocks only what the user selected."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Only the listed sites are available. Every other website is blocked.",
+    "description": "Hint under the blocking mode that allows only what the user listed."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Enter a session length greater than zero minutes.",
+    "description": "Error when the start button was pressed with an unusable custom session length."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Defaults changed, but current lists could not be loaded. Reload the popup.",
+    "description": "Error when the permanent lists changed while the start form was open and the new ones could not be read."
+  },
+  "popup_no_work_tab_option": {
+    "message": "No work tab (optional)",
+    "description": "Option in the work tab picker meaning the session runs without a work tab."
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Selected tab unavailable - choose another",
+    "description": "Option in the work tab picker standing for a chosen tab that has since closed or become ineligible."
+  },
+  "popup_cycles_label": {
+    "message": "Cycles: $FOCUS$ min focus, $SHORT_BREAK$ min break, $LONG_BREAK$ min long break every $LONG_EVERY$th",
+    "description": "Label of the checkbox that breaks a session into focus and break blocks. The first three values are lengths in minutes, LONG_EVERY is which break is the long one, read as an ordinal.",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Intention",
+    "description": "Label of the field where the user writes what this session is for."
+  },
+  "popup_intention_placeholder": {
+    "message": "What are you working on?",
+    "description": "Placeholder in the intention field of the start form."
+  },
+  "popup_work_tab_named": {
+    "message": "Work tab: $TITLE$",
+    "description": "Names the tab the session returns to. TITLE is that tab's own title, or a stand-in such as No work tab (optional).",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Change",
+    "description": "Text button beside the chosen work tab in the start form. It opens the work tab picker."
+  },
+  "popup_session_settings_summary": {
+    "message": "Session settings",
+    "description": "Label of the collapsed disclosure in the start form holding every setting for this session."
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Choose a work tab",
+    "description": "Label above the work tab dropdown in the start form."
+  },
+  "popup_work_tab_select_label": {
+    "message": "Work tab",
+    "description": "Accessible name of the dropdown listing the tabs that can be the work tab."
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (Current)",
+    "description": "Option for the tab the user is on right now. TITLE is that tab's own title, and the parenthesis marks it as the current one.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Blocking mode",
+    "description": "Label of the group choosing between blocking the selected sites and allowing only the listed ones."
+  },
+  "popup_invalid_time_label": {
+    "message": "invalid time",
+    "description": "Stands in for the session length on the start button while the typed length cannot be used. Reads inside a sentence, so it is lower case."
+  },
+  "popup_start_focus_label": {
+    "message": "Start $DURATION$ focus",
+    "description": "The start button of a timed session. DURATION is a length such as 50 min, or the invalid time stand-in.",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Enter a valid domain such as docs.example.com.",
+    "description": "Error under the allowed domain field when what was typed is not a domain."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Could not load work tabs. Reopen the popup to try again.",
+    "description": "Error when the list of tabs that can be the work tab could not be read."
+  },
+  "popup_use_this_tab": {
+    "message": "Use this tab",
+    "description": "Button that makes the tab the user is on right now the work tab."
+  },
+  "popup_current_tab_unavailable": {
+    "message": "This tab is not available for work. Choose another open tab.",
+    "description": "Hint under Use this tab when the current tab cannot be the work tab, because the session's own rules block it."
+  },
+  "popup_checking_current_tab": {
+    "message": "Checking current tab...",
+    "description": "Hint under Use this tab while the current tab is being re-read after the button was pressed."
+  },
+  "popup_finding_current_tab": {
+    "message": "Finding your current tab...",
+    "description": "Hint under Use this tab while the eligible tabs are still loading."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Could not load your current tab. Try again.",
+    "description": "Hint under Use this tab after reading the current tab failed."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Choose or replace your work tab.",
+    "description": "Line above the work tab controls in the active session view while no work tab is set."
+  },
+  "popup_saving_work_tab": {
+    "message": "Saving work tab...",
+    "description": "Status while the chosen work tab is being saved to the running session."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Could not save the work tab. Try again.",
+    "description": "Error when saving the chosen work tab to the running session failed."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Choose an open tab",
+    "description": "First option of the work tab dropdown in the active session view, standing for no choice made yet."
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Or choose another tab",
+    "description": "Label above the work tab dropdown in the active session view, offered next to Use this tab."
+  },
+  "popup_start_failed": {
+    "message": "Could not start session. Try again.",
+    "description": "Error when the worker's answer to a start request could not be read."
+  }
+}

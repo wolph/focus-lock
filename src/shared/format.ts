@@ -1,12 +1,17 @@
+import { formatNumber, t } from './i18n';
+
 /** Human duration for tiles and tables: "2 h 05 m", "45 m", never "125 min". */
 export function formatDuration(ms: number): string {
   const totalMin: number = Math.max(0, Math.round(ms / 60_000));
   if (totalMin >= 60) {
     const h: number = Math.floor(totalMin / 60);
     const m: number = totalMin % 60;
-    return `${h} h ${String(m).padStart(2, '0')} m`;
+    return t('shared_duration_hours_minutes', {
+      HOURS: formatNumber(h),
+      MINUTES: String(m).padStart(2, '0'),
+    });
   }
-  return `${totalMin} m`;
+  return t('shared_duration_minutes', { MINUTES: formatNumber(totalMin) });
 }
 
 /** Minutes as a compact chart value: "1 h 05 m" above an hour, "45 m" below. */

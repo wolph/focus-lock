@@ -1,4 +1,5 @@
 import { type ExactDataSnapshot, snapshotExactData } from '../shared/exact-data';
+import { t } from '../shared/i18n';
 import type {
   RetryCleanupResultCodeV2,
   SessionCommandResultCodeV2,
@@ -8,7 +9,7 @@ import type {
 import { hasExactKeys, isRecord } from '../shared/v2-domain-intrinsics';
 
 /** Shown when the worker's start answer is not an exact data response. */
-export const START_FAILED_COPY: string = 'Could not start session. Try again.';
+export const START_FAILED_COPY: string = t('popup_start_failed');
 
 type UnknownRecord = Record<string, unknown>;
 type CodeSet = Readonly<Record<string, true>>;

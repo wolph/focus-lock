@@ -9,6 +9,7 @@ import { StartingListsStep } from '../../../src/onboarding/StartingListsStep';
 import { SyncChoiceStep } from '../../../src/onboarding/SyncChoiceStep';
 import { WebsiteAccessStep } from '../../../src/onboarding/WebsiteAccessStep';
 import { DEFAULT_LISTS } from '../../../src/shared/constants';
+import { t, tPlural } from '../../../src/shared/i18n';
 import type { CategoryList, ListsConfig, WebsiteAccessChoice } from '../../../src/shared/types';
 
 afterEach((): void => cleanup());
@@ -27,14 +28,22 @@ describe('StartingListsStep', (): void => {
     expect(view.getAllByRole('checkbox')).toHaveLength(7);
     for (const category of ALL_CATEGORIES) {
       expect(view.getByRole('checkbox', { name: category.title })).toBeTruthy();
-      expect(view.getAllByText(`${category.hosts.length} sites`).length).toBeGreaterThan(0);
+      expect(
+        view.getAllByText(tPlural('onboarding_site_count', category.hosts.length)).length,
+      ).toBeGreaterThan(0);
     }
 
     const social: CategoryList = ALL_CATEGORIES.find(
       (category: CategoryList): boolean => category.id === 'social',
     ) as CategoryList;
-    fireEvent.click(view.getByRole('button', { name: 'Show Social media sites' }));
-    const domains: HTMLElement = view.getByRole('region', { name: 'Social media domains' });
+    fireEvent.click(
+      view.getByRole('button', {
+        name: t('onboarding_show_category_sites', { CATEGORY: 'Social media' }),
+      }),
+    );
+    const domains: HTMLElement = view.getByRole('region', {
+      name: t('onboarding_category_domains_label', { CATEGORY: 'Social media' }),
+    });
     expect(
       Array.from(
         domains.querySelectorAll('li'),
@@ -62,13 +71,19 @@ describe('StartingListsStep', (): void => {
       />,
     );
 
-    fireEvent.click(view.getByRole('button', { name: 'Show Social media sites' }));
+    fireEvent.click(
+      view.getByRole('button', {
+        name: t('onboarding_show_category_sites', { CATEGORY: 'Social media' }),
+      }),
+    );
     expect(view.queryByText(beyondFirstPage)).toBeNull();
     fireEvent.input(view.getByLabelText('Search Social media sites'), {
       target: { value: beyondFirstPage },
     });
 
-    const domains: HTMLElement = view.getByRole('region', { name: 'Social media domains' });
+    const domains: HTMLElement = view.getByRole('region', {
+      name: t('onboarding_category_domains_label', { CATEGORY: 'Social media' }),
+    });
     expect(
       Array.from(
         domains.querySelectorAll('li'),
@@ -88,14 +103,22 @@ describe('StartingListsStep', (): void => {
       />,
     );
 
-    fireEvent.click(view.getByRole('button', { name: 'Show Social media sites' }));
+    fireEvent.click(
+      view.getByRole('button', {
+        name: t('onboarding_show_category_sites', { CATEGORY: 'Social media' }),
+      }),
+    );
     fireEvent.input(view.getByLabelText('Search Social media sites'), {
       target: { value: 'no-such-site.example' },
     });
 
     expect(view.getByRole('status').textContent).toBe('No Social media site matches your search.');
     expect(
-      view.getByRole('region', { name: 'Social media domains' }).querySelectorAll('li'),
+      view
+        .getByRole('region', {
+          name: t('onboarding_category_domains_label', { CATEGORY: 'Social media' }),
+        })
+        .querySelectorAll('li'),
     ).toHaveLength(0);
   });
 
@@ -145,10 +168,10 @@ describe('WebsiteAccessStep', (): void => {
     );
 
     expect(view.getByText(/checks page addresses locally/i)).toBeTruthy();
-    expect(view.getByText('Read and change all your data on all websites')).toBeTruthy();
+    expect(view.getByText(t('onboarding_access_capability'))).toBeTruthy();
     expect(view.getByText(/restore affected pages/i)).toBeTruthy();
-    expect(view.getByRole('button', { name: 'Enable website blocking' })).toBeTruthy();
-    expect(view.getByRole('button', { name: 'Not now' })).toBeTruthy();
+    expect(view.getByRole('button', { name: t('onboarding_access_enable_button') })).toBeTruthy();
+    expect(view.getByRole('button', { name: t('onboarding_access_defer_button') })).toBeTruthy();
   });
 
   it('shows denial status and an explicit retry action', (): void => {
@@ -164,7 +187,7 @@ describe('WebsiteAccessStep', (): void => {
     );
 
     expect(view.getByRole('status').textContent).toContain('Chrome did not grant website access');
-    fireEvent.click(view.getByRole('button', { name: 'Retry' }));
+    fireEvent.click(view.getByRole('button', { name: t('onboarding_retry_button') }));
     expect(onEnable).toHaveBeenCalledOnce();
   });
 });
@@ -183,7 +206,7 @@ describe('SyncChoiceStep', (): void => {
 
     expect(view.getAllByRole('switch')).toHaveLength(1);
     expect(
-      (view.getByRole('switch', { name: 'Sync across Chrome devices' }) as HTMLInputElement)
+      (view.getByRole('switch', { name: t('onboarding_sync_switch_label') }) as HTMLInputElement)
         .checked,
     ).toBe(true);
     for (const label of [
@@ -199,10 +222,10 @@ describe('SyncChoiceStep', (): void => {
     ]) {
       expect(view.getByText(label)).toBeTruthy();
     }
-    expect(view.getByRole('region', { name: 'Synced' })).toBeTruthy();
-    expect(view.getByRole('region', { name: 'Local only' })).toBeTruthy();
-    expect(view.getByText('Nothing is sent to the Focus Lock developer.')).toBeTruthy();
-    expect(view.getByRole('button', { name: 'Finish setup with sync enabled' })).toBeTruthy();
+    expect(view.getByRole('region', { name: t('onboarding_sync_synced_title') })).toBeTruthy();
+    expect(view.getByRole('region', { name: t('onboarding_sync_local_title') })).toBeTruthy();
+    expect(view.getByText(t('onboarding_sync_developer_note'))).toBeTruthy();
+    expect(view.getByRole('button', { name: t('onboarding_sync_finish_enabled') })).toBeTruthy();
   });
 
   it('changes the explanation and finish label when sync is turned off', (): void => {
@@ -217,9 +240,9 @@ describe('SyncChoiceStep', (): void => {
       />,
     );
 
-    fireEvent.click(view.getByRole('switch', { name: 'Sync across Chrome devices' }));
+    fireEvent.click(view.getByRole('switch', { name: t('onboarding_sync_switch_label') }));
     expect(onSyncChange).toHaveBeenCalledWith(true);
     expect(view.getByText(/stays in this Chrome profile/i)).toBeTruthy();
-    expect(view.getByRole('button', { name: 'Finish setup without sync' })).toBeTruthy();
+    expect(view.getByRole('button', { name: t('onboarding_sync_finish_disabled') })).toBeTruthy();
   });
 });
