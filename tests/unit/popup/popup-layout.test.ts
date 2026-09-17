@@ -37,13 +37,14 @@ describe('popup.css sizing', (): void => {
     expect(app).not.toMatch(/100vw/);
   });
 
-  it('lets the active view scroll inside the fixed popup height', (): void => {
-    // The work tab picker and the return button push the spend and End controls past 600 px,
-    // and the body clips its overflow, so the view itself has to be the scroll container.
-    const view: string = block('.active-view');
-    expect(view).toMatch(/overflow-y:\s*auto/);
-    expect(view).toMatch(/min-block-size:\s*0/);
-    expect(view).toMatch(/flex:\s*1 1 auto/);
+  it('never makes the active view or the session actions a scroll container', (): void => {
+    // This was a scroller twice and was rejected twice. Content that does not fit is compacted,
+    // not scrolled: docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
+    for (const selector of ['.active-view', '.session-actions']) {
+      expect(block(selector)).not.toMatch(/overflow-y:\s*(auto|scroll)/);
+    }
+    expect(block('.active-view')).toMatch(/min-block-size:\s*0/);
+    expect(block('.active-view')).toMatch(/flex:\s*1 1 auto/);
   });
 
   it('paints Use this tab with the primary tokens, so the light theme shows one green', (): void => {

@@ -138,7 +138,6 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
   const authority: EndAuthorityV2 = snapshot.lifecycle.endAuthority;
   const activeGate: GateState | null = snapshot.gate ?? endGateOf(authority);
 
-  const actionsRef: { current: HTMLDetailsElement | null } = useRef<HTMLDetailsElement>(null);
   const [focusRequest, setFocusRequest]: [number, Dispatch<StateUpdater<number>>] =
     useState<number>(0);
   const [workLoadError, setWorkLoadError]: [string | null, Dispatch<StateUpdater<string | null>>] =
@@ -146,9 +145,6 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
   const [workError, setWorkError]: [string | null, Dispatch<StateUpdater<string | null>>] =
     useState<string | null>(null);
   const previousGate: { current: GateState | null } = useRef<GateState | null>(activeGate);
-  useLayoutEffect((): void => {
-    if (actionsRef.current !== null) actionsRef.current.open = false;
-  }, [snapshot.startedAt]);
   useLayoutEffect((): void => {
     if (
       previousGate.current !== null &&
@@ -160,7 +156,6 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
     previousGate.current = activeGate;
   }, [activeGate]);
   const chooseWorkTab: () => void = (): void => {
-    if (actionsRef.current !== null) actionsRef.current.open = true;
     setFocusRequest((previous: number): number => previous + 1);
   };
 
@@ -305,28 +300,26 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
         </p>
       ) : null}
 
-      <details class="session-disclosure session-actions" ref={actionsRef}>
-        <summary>{t('popup_session_actions_summary')}</summary>
-        <div class="session-disclosure__content">
-          <span class="meter-label">
-            {t('popup_site_access_credit', { CREDIT: formatClock(bankMs) })}
-          </span>
-          {activeGate === null ? (
-            <div class="actions">
-              {snapshot.phase === 'focus' ? phaseControls : null}
-              {endAction}
-            </div>
-          ) : null}
-          <WorkTabControl
-            snapshot={snapshot}
-            work={work}
-            disabled={command.pending || activeGate !== null}
-            onError={setWorkError}
-            onLoadError={setWorkLoadError}
-            focusRequest={focusRequest}
-          />
-        </div>
-      </details>
+      {/* Always visible, never behind a disclosure: see docs/superpowers/specs/2026-09-17-popup-visibility-rules.md */}
+      <section class="session-actions" aria-label={t('popup_session_actions_summary')}>
+        <span class="meter-label">
+          {t('popup_site_access_credit', { CREDIT: formatClock(bankMs) })}
+        </span>
+        {activeGate === null ? (
+          <div class="actions">
+            {snapshot.phase === 'focus' ? phaseControls : null}
+            {endAction}
+          </div>
+        ) : null}
+        <WorkTabControl
+          snapshot={snapshot}
+          work={work}
+          disabled={command.pending || activeGate !== null}
+          onError={setWorkError}
+          onLoadError={setWorkLoadError}
+          focusRequest={focusRequest}
+        />
+      </section>
       {workLoadError !== null ? <p class="form-error">{workLoadError}</p> : null}
       {workError !== null ? (
         <p class="form-error" role="alert">

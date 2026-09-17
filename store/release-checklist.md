@@ -1,6 +1,6 @@
 # Chrome Web Store release candidate 0.2.0
 
-Candidate source: `43a4c98`, which is the tree the package was built from. Verified on 17 September
+Candidate source: `be6c3c4`, which is the tree the package was built from. Verified on 17 September
 2026 with Node.js 24.18.0 and Chrome for Testing 151.0.7922.34.
 
 This candidate ships the interface in 53 languages. Chrome selects the catalogue from the browser's
@@ -43,7 +43,7 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
 
 - **Three scenarios still fail, all of them the screenshot gap.** `store-screenshots.spec.ts`
   refuses this build: the tracked images record build `4e99bfe76718` captured at
-  `2026-09-12T12:38:33.853Z`, and this build is `93236ba8deab`. One scenario fails on that
+  `2026-09-12T12:38:33.853Z`, and this build is `138afc94221a`. One scenario fails on that
   provenance check, one on `04-stats.png` differing from the tracked canonical PNG, and the third
   runs the same capture under a Pago Pago timezone and inherits the difference. The spec is correct
   to fail. Clearing it means recapturing the five images and having a person review them, which
@@ -71,8 +71,8 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
 ## Package
 
 - Archive: `release/focus-lock-0.2.0.zip`
-- SHA-256: `1999f0734b943f5c4fc1e14fdb988c2fb1f4c46649f33a7b921391221dcfd4b3`
-- Build tree SHA-256: `f0a2f1ac987e433981eeffdffd05bda254debd2de28d555bcf4bceb5e7807c47`, over the 94
+- SHA-256: `b6c509e07f2ce49d8a22defec58360b01e578acfdda0b88e89c625447e45f9b8`
+- Build tree SHA-256: `138afc94221ab28481d7509a431a6863d73084f7543cd50bf2c880352cfe0477`, over the 94
   files in `dist`, by the digest `store-screenshots.spec.ts` uses to decide whether a capture came
   from the build in front of it.
 - The archive contains 94 files. That is 53 more than 0.1.1, and all 53 are message catalogues, so
@@ -81,6 +81,23 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
   both from the catalogue, and the package validator resolves them the same way before comparing the
   manifest against the submission manifest.
 - The store manifest omits the development key.
+
+## Icons
+
+The toolbar icon is a green padlock drawn as large as the canvas allows, shut while a focus phase is
+blocking sites and open the rest of the time. It replaces a line-art glyph that never got the green
+treatment the store icon received in 0.1.1, so the product looked like two different things
+depending on where you saw it.
+
+The drawn icon and the static `idle-16.png` and `idle-32.png` now share one geometry, and the site's
+mark in `docs/site/brand-icon.ts` opens its shackle the same way, so all three read as one lock. The
+install and store icon at 48 and 128 keeps the brand tile from `brand.svg`, which is unchanged.
+
+Two things the icon used to say and no longer does: the phase colour and the progress ring. Neither
+survived at 16 pixels once the lock filled the frame, and both still exist on the badge, which shows
+the phase colour and counts the session down. The shackle now follows whether sites are actually
+blocked rather than whether a session exists, so a break and a pause draw it open. That matches
+`isLocked` on the site, and it is the honest reading: nothing is blocked during a break.
 
 ## Screenshots
 
@@ -116,12 +133,13 @@ and every other check applies unchanged.
 Not yet submitted. This candidate is built and verified, and the upload itself is a dashboard action
 on the publisher account.
 
-- 0.1.1 was submitted for review on 15 September 2026 and recorded as Pending review against
-  published version 0.1.0. Uploading 0.2.0 replaces that pending draft rather than queueing behind
-  it, so 0.1.1 will not reach the store.
+- 0.1.1 has since been approved and is live. The dashboard shows it as Published, public, for both
+  the draft and the published version, which corrects this file's earlier record of it sitting in
+  Pending review against a published 0.1.0. Uploading 0.2.0 therefore replaces a published version
+  rather than a pending draft, and 0.1.0 is no longer the fallback.
 - Upload `release/focus-lock-0.2.0.zip` on the package tab, then submit. Leave "Publish
   automatically after it has passed review" checked to match how 0.1.1 was submitted.
 - The store icon in the listing is already the 128 pixel build output from the 0.1.1 submission and
   does not need replacing.
 - Google's own dialog warns that review can take up to several weeks, so the published version stays
-  0.1.0 until this passes. Nothing here represents approval by Google.
+  0.1.1 until this passes. Nothing here represents approval by Google.

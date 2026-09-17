@@ -727,15 +727,16 @@ describe('ActiveView disabled reasons', (): void => {
   });
 });
 
-describe('quiet session actions', (): void => {
-  it('keeps actions collapsed and gates outside the disclosure', (): void => {
+describe('always visible session actions', (): void => {
+  it('renders the actions with no disclosure to open', (): void => {
     const view: ReturnType<typeof render> = render(
       <ActiveView snapshot={focusSnap(openFriction())} now={NOW} />,
     );
-    const details: HTMLDetailsElement = view.getByText('Session actions')
-      .parentElement as HTMLDetailsElement;
-    expect(details.open).toBe(false);
-    expect(view.getByRole('button', { name: 'Keep focusing' }).closest('details')).toBeNull();
+
+    // No <details> anywhere: the actions are on screen the moment the popup opens.
+    // docs/superpowers/specs/2026-09-17-popup-visibility-rules.md
+    expect(view.container.querySelector('details')).toBeNull();
+    expect(view.getByRole('button', { name: 'Keep focusing' })).toBeTruthy();
     expect(
       sendMessageMock.mock.calls.some(
         ([request]: unknown[]): boolean => (request as AnyRequest).type === 'getStats',
@@ -743,9 +744,25 @@ describe('quiet session actions', (): void => {
     ).toBe(false);
   });
 
+  it('shows the credit and the spend controls without any interaction', (): void => {
+    const view: ReturnType<typeof render> = render(<ActiveView snapshot={focusSnap()} now={NOW} />);
+
+    expect(view.container.querySelector('.session-actions')).toBeTruthy();
+    expect(view.container.querySelector('.session-actions .actions')).toBeTruthy();
+    expect(view.container.querySelector('.session-actions .meter-label')).toBeTruthy();
+  });
+
   it('offers a chooser for a missing work target', (): void => {
     const view: ReturnType<typeof render> = render(<ActiveView snapshot={focusSnap()} now={NOW} />);
     fireEvent.click(view.getByRole('button', { name: 'Choose work tab' }));
-    expect((view.getByText('Session actions').parentElement as HTMLDetailsElement).open).toBe(true);
+
+    // The chooser is already rendered, so the click focuses it rather than revealing it.
+    expect(view.container.querySelector('.work-tab-control')).toBeTruthy();
+  });
+
+  it('offers no work tab dropdown', (): void => {
+    const view: ReturnType<typeof render> = render(<ActiveView snapshot={focusSnap()} now={NOW} />);
+
+    expect(view.container.querySelector('select')).toBeNull();
   });
 });

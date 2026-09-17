@@ -18,7 +18,6 @@ import { useWorkTabs, type WorkTabsState, type WorkTargetState } from './use-wor
 const CHOOSE_WORK_TAB_COPY: string = t('popup_choose_work_tab_copy');
 const SAVING_WORK_TAB_COPY: string = t('popup_saving_work_tab');
 const SAVE_WORK_TAB_FAILED_COPY: string = t('popup_save_work_tab_failed');
-const CHOOSE_OPEN_TAB_OPTION: string = t('popup_choose_open_tab_option');
 
 export interface WorkTabControlProps {
   snapshot: SessionSnapshotV2;
@@ -43,7 +42,7 @@ export function WorkTabControl({
   onLoadError,
   focusRequest = 0,
 }: WorkTabControlProps): VNode {
-  const selectRef: { current: HTMLSelectElement | null } = useRef<HTMLSelectElement>(null);
+  const rootRef: { current: HTMLDivElement | null } = useRef<HTMLDivElement>(null);
   const lastFocusRequest: { current: number } = useRef<number>(0);
   const mode: SessionMode = snapshot.config?.mode ?? 'blacklist';
   const candidates: WorkTabsState = useWorkTabs(mode, snapshot.config?.rules);
@@ -101,14 +100,23 @@ export function WorkTabControl({
   useEffect((): void => {
     onLoadError?.(candidates.error);
   }, [candidates.error, onLoadError]);
+  /**
+   * A change-work-tab request moves focus to the button that starts the in-page picker. It used to
+   * move focus into a dropdown of open tabs; that dropdown is gone by product rule, so the button
+   * is the only in-popup way to reach the picker. See
+   * docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
+   */
   useLayoutEffect((): void => {
-    if (focusRequest === lastFocusRequest.current || selectRef.current?.disabled !== false) return;
+    if (focusRequest === lastFocusRequest.current) return;
+    const button: HTMLButtonElement | null | undefined =
+      rootRef.current?.querySelector<HTMLButtonElement>('button:enabled');
+    if (button === null || button === undefined) return;
     lastFocusRequest.current = focusRequest;
-    selectRef.current.focus();
-    selectRef.current.scrollIntoView?.({ block: 'nearest' });
+    button.focus();
+    button.scrollIntoView?.({ block: 'nearest' });
   }, [focusRequest, disabled, pending, sessionId, candidates.loading, candidates.context]);
   return (
-    <div class="work-tab-control">
+    <div class="work-tab-control" ref={rootRef}>
       <p class="work-target">
         {work.target?.ok && work.target.state === 'ready'
           ? t('popup_work_tab_named', { TITLE: work.target.title ?? '' })
@@ -126,34 +134,6 @@ export function WorkTabControl({
           void select(tabId);
         }}
       />
-      <label class="work-tab-label">
-        {t('popup_or_choose_another_tab')}
-        <select
-          ref={selectRef}
-          aria-label={t('popup_work_tab_select_label')}
-          value=""
-          disabled={
-            disabled ||
-            pending ||
-            sessionId === null ||
-            candidates.context === null ||
-            candidates.loading
-          }
-          onChange={(event: Event): void => {
-            const value: string = (event.currentTarget as HTMLSelectElement).value;
-            if (value !== '') void select(Number(value));
-          }}
-        >
-          <option value="">{CHOOSE_OPEN_TAB_OPTION}</option>
-          {candidates.tabs.map(
-            (tab: WorkTab): VNode => (
-              <option key={tab.tabId} value={tab.tabId}>
-                {tab.title}
-              </option>
-            ),
-          )}
-        </select>
-      </label>
       {onError === undefined && error !== null ? (
         <p class="form-error" role="alert">
           {error}

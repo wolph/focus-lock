@@ -751,14 +751,6 @@
     "message": "Could not save the work tab. Try again.",
     "description": "Error when saving the chosen work tab to the running session failed."
   },
-  "popup_choose_open_tab_option": {
-    "message": "Choose an open tab",
-    "description": "First option of the work tab dropdown in the active session view, standing for no choice made yet."
-  },
-  "popup_or_choose_another_tab": {
-    "message": "Or choose another tab",
-    "description": "Label above the work tab dropdown in the active session view, offered next to Use this tab."
-  },
   "popup_start_failed": {
     "message": "Could not start session. Try again.",
     "description": "Error when the worker's answer to a start request could not be read."

@@ -380,10 +380,17 @@ describe('WorkTabControl', (): void => {
     );
 
     expect(view.getByText('Work tab: Report')).toBeDefined();
-    await waitFor((): void =>
-      expect((workTabSelect(view) as HTMLSelectElement).disabled).toBe(false),
-    );
-    fireEvent.change(workTabSelect(view), { target: { value: '14' } });
+    // The dropdown is gone by product rule, so the save runs through the Use this tab control.
+    // docs/superpowers/specs/2026-09-17-popup-visibility-rules.md
+    expect(view.container.querySelector('select')).toBeNull();
+    const useThisTab: HTMLButtonElement = await waitFor((): HTMLButtonElement => {
+      const button: HTMLButtonElement | null = view.container.querySelector(
+        '.this-tab-button',
+      ) as HTMLButtonElement | null;
+      if (button === null || button.disabled) throw new Error('the control is not ready');
+      return button;
+    });
+    fireEvent.click(useThisTab);
 
     expect(await view.findByText('That tab is gone.')).toBeDefined();
   });
@@ -523,7 +530,7 @@ describe('quiet work tab disclosures', (): void => {
     expect(view.getByRole('button', { name: 'Start 37 min focus' })).toBeTruthy();
   });
 
-  it('opens and focuses the active chooser and keeps save errors outside collapsed actions', async (): Promise<void> => {
+  it('focuses the chooser and shows a save error without hiding it', async (): Promise<void> => {
     answerWith({
       getWorkTarget: readyTarget,
       setWorkTarget: (): unknown => ({ ok: false, error: 'Cannot save tab' }),
@@ -531,26 +538,37 @@ describe('quiet work tab disclosures', (): void => {
     const view: ReturnType<typeof render> = render(
       <ActiveView snapshot={activeSnap()} now={NOW} />,
     );
-    await waitFor((): void => expect(workTabSelect(view).disabled).toBe(false));
+    const useThisTab: HTMLButtonElement = await waitFor((): HTMLButtonElement => {
+      const button: HTMLButtonElement | null = view.container.querySelector(
+        '.this-tab-button',
+      ) as HTMLButtonElement | null;
+      if (button === null || button.disabled) throw new Error('the control is not ready');
+      return button;
+    });
+
+    // Change work tab focuses the chooser rather than revealing it, because it is already on screen.
     fireEvent.click(view.getByRole('button', { name: 'Change work tab' }));
-    expect(document.activeElement).toBe(workTabSelect(view));
-    fireEvent.change(workTabSelect(view), { target: { value: '14' } });
+    expect(document.activeElement).toBe(useThisTab);
+
+    fireEvent.click(useThisTab);
     await waitFor((): void => expect(view.getByRole('alert').textContent).toBe('Cannot save tab'));
-    (view.getByText('Session actions').parentElement as HTMLDetailsElement).open = false;
     expect(view.getByRole('alert').closest('details')).toBeNull();
   });
 
-  it('retains an open disclosure on ticks and closes it for a new session', async (): Promise<void> => {
+  it('keeps the actions on screen across ticks and across a new session', async (): Promise<void> => {
     answerWith({ getWorkTarget: readyTarget });
     const snapshot: SessionSnapshotV2 = activeSnap();
     const view: ReturnType<typeof render> = render(<ActiveView snapshot={snapshot} now={NOW} />);
-    const details: HTMLDetailsElement = view.getByText('Session actions')
-      .parentElement as HTMLDetailsElement;
-    details.open = true;
+    const visible = (): boolean =>
+      view.container.querySelector('.session-actions .actions') !== null;
+
+    expect(visible()).toBe(true);
     view.rerender(<ActiveView snapshot={{ ...snapshot, at: NOW + 1000 }} now={NOW + 1000} />);
-    expect(details.open).toBe(true);
+    expect(visible()).toBe(true);
+    // A new session used to close the disclosure. There is nothing left to close.
     view.rerender(<ActiveView snapshot={{ ...snapshot, startedAt: NOW }} now={NOW + 1000} />);
-    expect(details.open).toBe(false);
+    expect(visible()).toBe(true);
+    expect(view.container.querySelector('details')).toBeNull();
   });
 
   it('makes phase recovery primary and returning to work secondary', async (): Promise<void> => {

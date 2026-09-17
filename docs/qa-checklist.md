@@ -30,7 +30,7 @@ Unit suite: **184 files** matching `tests/unit/**/*.test.{ts,tsx}`, the pattern
 deriving it means collecting every file, which is the expensive half of a run, and a number
 that needs a run to verify is exactly the kind that went stale here four times.
 
-End-to-end suite: **133 scenarios in 30 spec files**, as Playwright itself
+End-to-end suite: **136 scenarios in 31 spec files**, as Playwright itself
 lists them. Asking the runner rather than counting `test(` in the sources is not pedantry: a
 grep undercounts `test.skip`, which is listed and reported, and misses a spec file added
 since the grep was written. Both mistakes were present when this section was first drafted.
@@ -163,9 +163,15 @@ since the grep was written. Both mistakes were present when this section was fir
 
 ### popup-sizing.spec.ts (3)
 
-- the active view scrolls its controls into the real toolbar popup
+- the active view fits the real toolbar popup without scrolling
 - the popup page still fits a narrow tab viewport
 - the toolbar popup opens at its intended size without viewport emulation
+
+### popup-visibility.spec.ts (3)
+
+- the popup needs no scrollbar during a session
+- the popup offers no work tab dropdown
+- the session actions are visible without opening anything
 
 ### popup-work-tab.spec.ts (1)
 
