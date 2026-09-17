@@ -1,7 +1,9 @@
 # Chrome Web Store release candidate 0.2.0
 
-Candidate source: `33e4933f5a10a2f2fd55bc7c86d9da657e8c84f9`. Verified on 17 September 2026 with
-Node.js 24.18.0 and Chrome for Testing 151.0.7922.34.
+Candidate source: `33e4933f5a10a2f2fd55bc7c86d9da657e8c84f9`, which is the tree the package was
+built from. Verification finished at `517e753`, one commit later, which changes a test assertion
+only and leaves the built output identical. Verified on 17 September 2026 with Node.js 24.18.0 and
+Chrome for Testing 151.0.7922.34.
 
 This candidate ships the interface in 53 languages. Chrome selects the catalogue from the browser's
 UI language, so there is no picker and nothing for the user to configure. English stays the default
@@ -19,30 +21,44 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
   its English length in Catalan, Greek, Filipino, Croatian, European Portuguese or Slovenian. A
   length warning is a layout hint, not a defect.
 - The 53 catalogues carry 36,778 messages against 686 English keys.
+- The full browser suite was run: 133 scenarios on one worker in 14.7 minutes, 109 passed, 20
+  skipped and 4 failed. One failure was a stale assertion this release made stale, fixed in
+  `517e753` and re-run green. The other three are the screenshot gap described below.
+- The five scenarios recorded as red against 0.1.1 all pass now. `indefinite-recovery.spec.ts` and
+  `system.spec.ts` are green throughout, at 6 passed and 0 failed each, and the two `qa-flows`
+  scenarios named there pass as well. Their recorded line numbers had drifted with this release, so
+  they are named by file here rather than by line.
 - The packaged-installation scenario passed against the archive recorded below. The release ZIP
   extracts under the archive safety rules and is the only loaded build, and the packaged artefact
   installs, onboards, blocks and survives a browser restart.
+- The archive was rebuilt from a clean tree and came out byte-identical, which is what the recorded
+  digest is worth: the same sources produce the same package.
 - Right-to-left rendering was reviewed by hand in Arabic against a locale-pinned build, covering the
   popup, the options page, onboarding, stats and the block overlay.
 - The store icon is the 128 pixel build output byte for byte, which the package validator enforces.
 
 ## What this candidate does not certify
 
-- **The full browser suite was not run.** The five scenarios recorded against 0.1.1 failed on a
-  clean baseline build of committed master at that time: `indefinite-recovery.spec.ts` at lines 297
-  and 538, `qa-flows.spec.ts` at lines 1392 and 1942, and `system.spec.ts` at line 319. They were
-  not re-run for this candidate, so their current state is unknown rather than known good.
+- **Three scenarios still fail, all of them the screenshot gap.** `store-screenshots.spec.ts`
+  refuses this build: the tracked images record build `4e99bfe76718` captured at
+  `2026-09-12T12:38:33.853Z`, and this build is `93236ba8deab`. One scenario fails on that
+  provenance check, one on `04-stats.png` differing from the tracked canonical PNG, and the third
+  runs the same capture under a Pago Pago timezone and inherits the difference. The spec is correct
+  to fail. Clearing it means recapturing the five images and having a person review them, which
+  step 5 of the release gate requires and which has not been done.
 - **The locale layout spec does not run on this machine.** macOS takes the extension UI language
   from the operating system and ignores Chrome's `--lang` flag, so `locale-layout.spec.ts` skips
-  with that reason instead of passing on a build that is still English underneath. Long-word and
-  right-to-left layout was checked against locale-pinned builds by hand, using
+  with that reason instead of passing on a build that is still English underneath. That is 16 of
+  the 20 skips in the run above, being the two layout scenarios across the eight stress locales.
+  Long-word and right-to-left layout was checked against locale-pinned builds by hand, using
   `npm run locale-preview`. On a platform where `--lang` works, the spec runs the stress set
   unchanged.
 - **The five store screenshots were not recaptured.** They are still the 0.1.0 captures and their
   digests are unchanged, so the caveats recorded for 0.1.1 still stand: the popup summary in
   `01-start-session.png` is collapsed, and `03-onboarding.png` shows the permission step rather than
   the starting-lists step. They are also English, so nothing in the listing's images shows the new
-  languages.
+  languages. For `04-stats.png` this is no longer a suspicion: a fresh capture from this build
+  differs from the tracked file, so that image shows an interface the product no longer has.
 - **Human review of all five screenshots remains outstanding**, as it was for 0.1.0 and 0.1.1.
   [Release gate step 5](../docs/release-candidate-gate.md#step-5-recapture-the-five-canonical-screenshots)
   requires a person to look at them.
@@ -54,6 +70,9 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
 
 - Archive: `release/focus-lock-0.2.0.zip`
 - SHA-256: `484f8c0c9b0d1827f8dd9f41733537998411b84fd91cade2098f4c62261c3d29`
+- Build tree SHA-256: `93236ba8deabd8dee9749d605b1d828f0ff78f64994d295a3a43c999526df278`, over the 94
+  files in `dist`, by the digest `store-screenshots.spec.ts` uses to decide whether a capture came
+  from the build in front of it.
 - The archive contains 94 files. That is 53 more than 0.1.1, and all 53 are message catalogues, so
   the shipped code is the same 41 files as the previous release.
 - `name` and `description` ship as `__MSG_app_name__` and `__MSG_app_description__`. Chrome resolves
