@@ -91,7 +91,7 @@
     "message": "Xóa tất cả và bắt đầu lại"
   },
   "popup_keep_data_button": {
-    "message": "Giữ lại dữ liệu của tôi"
+    "message": "Giữ dữ liệu"
   },
   "popup_delete_all_button": {
     "message": "Xóa toàn bộ dữ liệu Focus Lock"
@@ -508,7 +508,7 @@
     "message": "Mặc định đã thay đổi, nhưng không thể tải danh sách hiện tại. Hãy đóng rồi mở lại popup."
   },
   "popup_no_work_tab_option": {
-    "message": "Không có tab công việc (không bắt buộc)"
+    "message": "Không có tab công việc (tùy chọn)"
   },
   "popup_work_tab_unavailable_option": {
     "message": "Tab đã chọn không khả dụng - hãy chọn tab khác"
@@ -574,7 +574,7 @@
     "message": "Chế độ chặn"
   },
   "popup_invalid_time_label": {
-    "message": "thời gian không hợp lệ"
+    "message": "giờ không hợp lệ"
   },
   "popup_start_focus_label": {
     "message": "Bắt đầu tập trung $DURATION$",

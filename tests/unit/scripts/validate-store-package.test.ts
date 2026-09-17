@@ -3,6 +3,7 @@ import {
   existsSync,
   linkSync,
   lstatSync,
+  mkdirSync,
   mkdtempSync,
   readFileSync,
   rmSync,
@@ -298,6 +299,32 @@ describe('built manifest and transport policy', (): void => {
       submission.version = '../outside';
     });
     expectValidationFailure(root, /version.*numeric|Chrome.*version/i);
+  });
+
+  it('resolves a localised description through the default locale catalogue', (): void => {
+    const root: string = fixture();
+    const description: string = validManifest().description as string;
+    mutateManifest(root, (manifest: Record<string, unknown>): void => {
+      manifest.description = '__MSG_app_description__';
+      manifest.default_locale = 'en';
+    });
+    mkdirSync(join(root, 'dist', '_locales', 'en'), { recursive: true });
+    writeJson(join(root, 'dist', '_locales', 'en', 'messages.json'), {
+      app_description: { message: description },
+    });
+    const result: ReturnType<typeof runValidator> = validate(root);
+    expect(output(result)).not.toMatch(/shortDescription/u);
+  });
+
+  it('rejects a localised description the default locale does not define', (): void => {
+    const root: string = fixture();
+    mutateManifest(root, (manifest: Record<string, unknown>): void => {
+      manifest.description = '__MSG_app_description__';
+      manifest.default_locale = 'en';
+    });
+    mkdirSync(join(root, 'dist', '_locales', 'en'), { recursive: true });
+    writeJson(join(root, 'dist', '_locales', 'en', 'messages.json'), {});
+    expectValidationFailure(root, /app_description/u);
   });
 
   it('rejects a short-description mismatch', (): void => {

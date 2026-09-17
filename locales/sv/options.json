@@ -84,7 +84,7 @@
     "message": "domän"
   },
   "options_rule_kind_regex_badge": {
-    "message": "regex"
+    "message": "uttryck"
   },
   "options_rule_remove": {
     "message": "Ta bort"
@@ -673,16 +673,16 @@
     "message": "Detta raderar permanent fullständiga URL:er, fokusavsikter och detaljerade passhändelser från den här enheten, plus enbart lokal sammanställd statistik. Det avslutar inte ett pågående pass, som behåller sin avsikt och adressen till varje flik det blockerar. När passet avslutas rensas avsikten och en städning startar som rensar varje öppen webbflik, och städningen tar bort varje lagrad adress när den blir klar."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Radera fjärrdata i Sync?"
+    "message": "Radera fjärrdata i synkroniseringen?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Bekräfta radering av fjärrdata i Sync"
+    "message": "Bekräfta radering av fjärrdata i synkroniseringen"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Fjärrdata i Chrome Sync raderade."
+    "message": "Fjärrdata i Chrome-synkroniseringen raderade."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "Detta raderar permanent fjärrinställningar, block- och tillåtlistor, åtkomstkredit, svit och sammanställda blockerade försök på domännivå från Chrome Sync. Lokala inställningar och lokal statistik stannar på den här enheten."
+    "message": "Detta raderar permanent fjärrinställningar, block- och tillåtlistor, åtkomstkredit, svit och sammanställda blockerade försök på domännivå från Chrome-synkroniseringen. Lokala inställningar och lokal statistik stannar på den här enheten."
   },
   "options_privacy_confirm_all_title": {
     "message": "Radera all data i Focus Lock?"
@@ -694,7 +694,7 @@
     "message": "All data i Focus Lock raderad."
   },
   "options_privacy_all_body_intro": {
-    "message": "Detta raderar permanent varje bit data i Focus Lock på den här enheten och alla Focus Lock-kopior som ligger kvar i Chrome Sync:"
+    "message": "Detta raderar permanent varje bit data i Focus Lock på den här enheten och alla Focus Lock-kopior som ligger kvar i Chrome-synkroniseringen:"
   },
   "options_privacy_all_body_outro": {
     "message": "Att radera allt går bara när inget pass pågår. Focus Lock återgår sedan till installationen."
@@ -703,13 +703,13 @@
     "message": "Den lokala historiken kunde inte raderas. Försök igen."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Fjärrdata i Chrome Sync kunde inte raderas. Försök igen."
+    "message": "Fjärrdata i Chrome-synkroniseringen kunde inte raderas. Försök igen."
   },
   "options_privacy_error_all_clear": {
     "message": "All data i Focus Lock kunde inte raderas. Försök igen."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync kunde inte spara dina senaste ändringar. Din lokala sparning är i behåll."
+    "message": "Chrome-synkroniseringen kunde inte spara dina senaste ändringar. Din lokala sparning är i behåll."
   },
   "options_privacy_error_request": {
     "message": "Begäran kunde inte slutföras. Försök igen."
@@ -742,34 +742,34 @@
     "message": "Öppna Chromes behörighetsinställningar"
   },
   "options_privacy_sync_heading": {
-    "message": "Chrome Sync"
+    "message": "Chrome-synkronisering"
   },
   "options_privacy_sync_switch_label": {
     "message": "Synka Focus Lock-data mellan Chrome-enheter"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync aktiverat."
+    "message": "Chrome-synkroniseringen aktiverad."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync avstängt."
+    "message": "Chrome-synkroniseringen avstängd."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sync sparar fortfarande dina senaste ändringar."
+    "message": "Chrome-synkroniseringen sparar fortfarande dina senaste ändringar."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync är på."
+    "message": "Chrome-synkroniseringen är på."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync är av."
+    "message": "Chrome-synkroniseringen är av."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Ändringarna sparade i Chrome Sync."
+    "message": "Ändringarna sparade i Chrome-synkroniseringen."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Försök aktivera Chrome Sync igen"
+    "message": "Försök aktivera Chrome-synkroniseringen igen"
   },
   "options_privacy_retry_sync": {
-    "message": "Försök med Chrome Sync igen"
+    "message": "Försök med Chrome-synkroniseringen igen"
   },
   "options_privacy_scope_synced": {
     "message": "Synkroniserat"
@@ -796,19 +796,19 @@
     "message": "Radera lokal historik"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Fjärrdata i Sync"
+    "message": "Fjärrdata i synkroniseringen"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Radera de Focus Lock-kopior som ligger kvar i Chrome Sync utan att ändra den här enheten."
+    "message": "Radera de Focus Lock-kopior som ligger kvar i Chrome-synkroniseringen utan att ändra den här enheten."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Radera fjärrdata i Sync"
+    "message": "Radera fjärrdata i synkroniseringen"
   },
   "options_privacy_all_data_heading": {
     "message": "All data i Focus Lock"
   },
   "options_privacy_all_data_detail": {
-    "message": "Radera varje Focus Lock-post på den här enheten och alla Focus Lock-kopior som ligger kvar i Chrome Sync, och börja sedan om från installationen. Tillgängligt när inget pass pågår."
+    "message": "Radera varje Focus Lock-post på den här enheten och alla Focus Lock-kopior som ligger kvar i Chrome-synkroniseringen, och börja sedan om från installationen. Tillgängligt när inget pass pågår."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Återupptar raderingen av all data i Focus Lock."
@@ -817,7 +817,7 @@
     "message": "Försök radera lokal historik igen"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Försök radera fjärrdata i Sync igen"
+    "message": "Försök radera fjärrdata i synkroniseringen igen"
   },
   "options_privacy_retry_all_data": {
     "message": "Försök radera all data igen"
@@ -835,10 +835,10 @@
     "message": "Kunde inte uppdatera webbplatsblockeringen. Försök igen."
   },
   "options_error_change_sync": {
-    "message": "Kunde inte ändra Chrome Sync. Försök igen."
+    "message": "Kunde inte ändra Chrome-synkroniseringen. Försök igen."
   },
   "options_error_retry_sync": {
-    "message": "Kunde inte försöka med Chrome Sync igen. Försök igen."
+    "message": "Kunde inte försöka med Chrome-synkroniseringen igen. Försök igen."
   },
   "options_error_save_settings": {
     "message": "Kunde inte spara inställningarna. Läs in sidan på nytt och försök igen."

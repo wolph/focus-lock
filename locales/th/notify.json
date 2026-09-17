@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "เซสชันโฟกัสเสร็จสิ้น"
+  },
+  "notify_session_complete_body": {
+    "message": "เซสชันโฟกัสจบแล้ว"
+  },
+  "notify_schedule_window_body": {
+    "message": "ล็อกจนถึง $END$",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "กำหนดการโฟกัสเริ่มไม่ได้"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "ยังไม่ได้เปิดใช้งานการบล็อกเว็บไซต์ ทำการตั้งค่าให้เสร็จหรืออนุญาตการเข้าถึงเว็บไซต์ก่อน แล้วลองอีกครั้ง"
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "การตั้งค่าเสร็จสิ้นในแท็บอื่นแล้ว"
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "การตั้งค่าถูกเปลี่ยนในแท็บอื่น โหลดตัวเลือกล่าสุดใหม่แล้ว"
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "การตั้งค่าถูกเปลี่ยนในแท็บอื่น โหลดหน้าตั้งค่าใหม่ก่อนดำเนินการต่อให้เสร็จ"
+  },
+  "notify_setup_not_complete": {
+    "message": "การตั้งค่ายังไม่เสร็จสมบูรณ์"
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "การตั้งค่ายังไม่พร้อมที่จะเสร็จสิ้น"
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "ตัวเลือกที่จัดเก็บข้อมูลของการตั้งค่าถูกเปลี่ยน โหลดหน้าตั้งค่าใหม่ก่อนดำเนินการต่อให้เสร็จ"
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "การดำเนินการจัดเก็บข้อมูลระหว่างตั้งค่าล้มเหลว"
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "การดำเนินการระหว่างตั้งค่าล้มเหลว"
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock ตรวจสอบการเข้าถึงเว็บไซต์ไม่สำเร็จ ลองตั้งค่าใหม่หรือโหลดส่วนขยายใหม่"
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "ได้รับอนุญาตให้เข้าถึงเว็บไซต์แล้ว แต่ Focus Lock เปิดใช้งานการบล็อกไม่สำเร็จ ลองตั้งค่าใหม่หรือโหลดส่วนขยายใหม่"
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "ไม่มีการเข้าถึงเว็บไซต์ และ Focus Lock ล้างค่าการบล็อกไม่สำเร็จ ลองตั้งค่าใหม่หรือโหลดส่วนขยายใหม่"
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock ได้รับสถานะการเข้าถึงเว็บไซต์ที่ไม่สอดคล้องกัน ลองตั้งค่าใหม่หรือโหลดส่วนขยายใหม่"
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock เริ่มทำงานไม่สำเร็จ: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "ข้อผิดพลาดที่ไม่ทราบสาเหตุ"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock กำลังทำงานอยู่ ไม่มีอะไรต้องรีเซ็ต"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock รีเซ็ตรันไทม์ที่ยังผูกอยู่กับรุ่นนโยบายไม่ได้"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "ไม่สามารถลองล้างข้อมูลอีกครั้งได้"
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "ปิดการซิงก์ก่อนลบข้อมูลที่ซิงก์ไว้"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock กำลังดำเนินการเปลี่ยนแปลงก่อนหน้าให้เสร็จ ลองใหม่อีกครั้งในอีกสักครู่"
+  },
+  "notify_work_gate_stuck": {
+    "message": "ปิดด่านที่เปิดค้างอยู่ไม่สำเร็จ ลองใหม่อีกครั้ง"
+  },
+  "notify_work_tab_unavailable": {
+    "message": "ไม่มีแท็บงานให้ใช้งาน"
+  },
+  "notify_settings_sync_limit": {
+    "message": "การตั้งค่าเกินขีดจำกัด 8 KB ของ Chrome Sync ลบรายการกำหนดการหรือย่อข้อความเจตนาให้สั้นลง แล้วลองอีกครั้ง"
+  },
+  "notify_lists_sync_limit": {
+    "message": "รายการเกินขีดจำกัด 8 KB ของ Chrome Sync ลบกฎที่กำหนดเองหรือกฎในรายการอนุญาต แล้วลองอีกครั้ง"
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: การลบเว็บไซต์ที่ถูกบล็อกจะปลดล็อกได้เมื่อเซสชันสิ้นสุด"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: รายการใหม่ในรายการอนุญาตจะปลดล็อกได้เมื่อเซสชันสิ้นสุด"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: การปิดหมวดหมู่จะปลดล็อกได้เมื่อเซสชันสิ้นสุด"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: ข้อยกเว้นใหม่จะปลดล็อกได้เมื่อเซสชันสิ้นสุด"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: การลดระดับความเข้มงวดเริ่มต้นต้องรอจนกว่าเซสชันจะสิ้นสุด"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: การย่นเวลาหน่วงของด่านพิจารณาทำให้ด่านอ่อนลง"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: การยกเลิกประโยคที่ต้องพิมพ์ทำให้ด่านอ่อนลง"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: การเพิ่มอัตราสะสมเครดิตพักจะเพิ่มช่องทางหลบเลี่ยง"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: การเพิ่มเพดานเครดิตพักจะเพิ่มช่องทางหลบเลี่ยง"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: การย่นเวลาพักจะลดต้นทุนของการพัก"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: การย่นเวลาปลดล็อกจะลดต้นทุนของการปลดล็อก"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "เซสชันแบบเข้มงวดกำลังทำงานอยู่: แก้ไขรายการกำหนดการนี้ให้อ่อนลงไม่ได้จนกว่าเซสชันจะสิ้นสุด"
+  }
+}

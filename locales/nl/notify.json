@@ -78,7 +78,7 @@
     "message": "Opnieuw proberen is niet beschikbaar voor het wissen van gegevens."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Schakel Sync uit voordat je gesynchroniseerde gegevens verwijdert"
+    "message": "Schakel synchronisatie uit voordat je gesynchroniseerde gegevens verwijdert"
   },
   "notify_work_gate_busy": {
     "message": "Focus Lock is nog bezig met een eerdere wijziging. Probeer het zo meteen opnieuw."
@@ -90,10 +90,10 @@
     "message": "Het werktabblad is niet beschikbaar."
   },
   "notify_settings_sync_limit": {
-    "message": "Instellingen overschrijden de Chrome Sync-limiet van 8 kB. Verwijder schema-items of maak intenties korter en probeer het dan opnieuw."
+    "message": "Instellingen overschrijden de limiet van 8 kB voor Chrome-synchronisatie. Verwijder schema-items of maak intenties korter en probeer het dan opnieuw."
   },
   "notify_lists_sync_limit": {
-    "message": "Lijsten overschrijden de Chrome Sync-limiet van 8 kB. Verwijder eigen of toegestane regels en probeer het dan opnieuw."
+    "message": "Lijsten overschrijden de limiet van 8 kB voor Chrome-synchronisatie. Verwijder eigen of toegestane regels en probeer het dan opnieuw."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "er loopt een sessie op slot: geblokkeerde sites verwijderen kan pas als die eindigt"

@@ -78,7 +78,7 @@
     "message": "Für das Löschen der Daten gibt es nichts zu wiederholen."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Deaktiviere Sync, bevor du synchronisierte Daten löschst"
+    "message": "Deaktiviere die Synchronisierung, bevor du synchronisierte Daten löschst"
   },
   "notify_work_gate_busy": {
     "message": "Focus Lock schließt noch eine frühere Änderung ab. Versuch es gleich erneut."
@@ -90,10 +90,10 @@
     "message": "Der Arbeits-Tab ist nicht verfügbar."
   },
   "notify_settings_sync_limit": {
-    "message": "Die Einstellungen überschreiten das Chrome-Sync-Limit von 8 KB. Entferne Zeitplan-Einträge oder kürze Vorhaben und versuch es dann erneut."
+    "message": "Die Einstellungen überschreiten das 8-KB-Limit der Chrome-Synchronisierung. Entferne Zeitplan-Einträge oder kürze Vorhaben und versuch es dann erneut."
   },
   "notify_lists_sync_limit": {
-    "message": "Die Listen überschreiten das Chrome-Sync-Limit von 8 KB. Entferne eigene oder erlaubte Regeln und versuch es dann erneut."
+    "message": "Die Listen überschreiten das 8-KB-Limit der Chrome-Synchronisierung. Entferne eigene oder erlaubte Regeln und versuch es dann erneut."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "eine Sitzung mit harter Sperre läuft: gesperrte Seiten lassen sich erst nach ihrem Ende entfernen"

@@ -185,7 +185,7 @@
     "message": "annet"
   },
   "stats_chart_minutes_tick": {
-    "message": "$MINUTES$m",
+    "message": "$MINUTES$min",
     "placeholders": {
       "MINUTES": {
         "content": "$1",

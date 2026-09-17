@@ -78,7 +78,7 @@
     "message": "Tietojen poiston uudelleenyritys ei ole käytettävissä."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Poista Sync käytöstä ennen synkronoitujen tietojen poistamista"
+    "message": "Poista synkronointi käytöstä ennen synkronoitujen tietojen poistamista"
   },
   "notify_work_gate_busy": {
     "message": "Focus Lock viimeistelee yhä aiempaa muutosta. Yritä hetken kuluttua uudelleen."
@@ -90,10 +90,10 @@
     "message": "Työvälilehti ei ole käytettävissä."
   },
   "notify_settings_sync_limit": {
-    "message": "Asetukset ylittävät Chrome Syncin 8 kt:n rajan. Poista aikataulumerkintöjä tai lyhennä aikomuksia ja yritä uudelleen."
+    "message": "Asetukset ylittävät Chrome-synkronoinnin 8 kt:n rajan. Poista aikataulumerkintöjä tai lyhennä aikomuksia ja yritä uudelleen."
   },
   "notify_lists_sync_limit": {
-    "message": "Listat ylittävät Chrome Syncin 8 kt:n rajan. Poista omia sääntöjä tai sallittujen listan sääntöjä ja yritä uudelleen."
+    "message": "Listat ylittävät Chrome-synkronoinnin 8 kt:n rajan. Poista omia sääntöjä tai sallittujen listan sääntöjä ja yritä uudelleen."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "tiukasti lukittu jakso on käynnissä: estettyjen sivustojen poisto avautuu, kun jakso päättyy"

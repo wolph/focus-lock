@@ -1,0 +1,304 @@
+{
+  "stats_document_title": {
+    "message": "สถิติ Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "บันทึกการโฟกัสของคุณ"
+  },
+  "stats_loading": {
+    "message": "กำลังโหลดสถิติของคุณ"
+  },
+  "stats_load_error": {
+    "message": "โหลดสถิติไม่สำเร็จ โหลดใหม่เพื่อลองอีกครั้ง"
+  },
+  "stats_partial_error_both": {
+    "message": "ไม่มีข้อมูลความพยายามรายชั่วโมงและการตั้งค่าเครดิตเข้าถึงเว็บไซต์"
+  },
+  "stats_partial_error_attempts": {
+    "message": "ไม่มีข้อมูลความพยายามรายชั่วโมง"
+  },
+  "stats_partial_error_economy": {
+    "message": "ไม่มีข้อมูลการตั้งค่าเครดิตเข้าถึงเว็บไซต์"
+  },
+  "stats_scope_synced": {
+    "message": "ยอดรวมซิงก์จากบัญชี Chrome นี้ ส่วนที่แสดงเฉพาะข้อมูลในเครื่องจะมีป้ายกำกับไว้"
+  },
+  "stats_scope_local": {
+    "message": "ยอดรวมจากเครื่องนี้ สถิติของ Focus Lock ไม่ได้ซิงก์"
+  },
+  "stats_scope_checking": {
+    "message": "กำลังตรวจสอบว่ายอดรวมเหล่านี้ซิงก์อยู่หรือไม่"
+  },
+  "stats_scope_unavailable": {
+    "message": "ไม่ทราบขอบเขตของสถิติ ยอดรวมอาจรวมข้อมูลที่ซิงก์ไว้ด้วย ส่วนความพยายามรายชั่วโมงและเซสชันล่าสุดมาจากเครื่องนี้"
+  },
+  "stats_scope_retry": {
+    "message": "ลองตรวจสอบขอบเขตอีกครั้ง"
+  },
+  "stats_empty": {
+    "message": "สถิติจะปรากฏหลังจบเซสชันแรก"
+  },
+  "stats_tile_focus_today": {
+    "message": "โฟกัสวันนี้"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "โฟกัสใน 7 วันที่ผ่านมา"
+  },
+  "stats_tile_attempts_today": {
+    "message": "ความพยายามที่ถูกบล็อกวันนี้"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "คำขอด่านพิจารณาที่ถูกยกเลิกวันนี้"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "เครดิตเข้าถึงเว็บไซต์ที่ใช้วันนี้"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "ทุกเว็บไซต์ $ALL_SITES$ เว็บไซต์เดียว $ONE_SITE$ สะสมได้ $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "สะสมได้ $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "สตรีค"
+  },
+  "stats_streak_empty": {
+    "message": "สตรีคจะเริ่มนับจากวันโฟกัสวันแรกของคุณ"
+  },
+  "stats_streak_unit_one": {
+    "message": "วัน"
+  },
+  "stats_streak_unit_other": {
+    "message": "วัน"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "สะสมโทเคนแช่แข็งไว้ $COUNT$ อัน",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "สะสมโทเคนแช่แข็งไว้ $COUNT$ อัน",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "แช่แข็งสตรีค: ครอบคลุมวันที่พลาดไป 1 วัน"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ วันที่มีการโฟกัสในเดือนนี้ ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ วันที่มีการโฟกัสในเดือนนี้ ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "วันที่มีการโฟกัสในเดือน $MONTH$: $DAYS$",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "ไม่มีวันที่มีการโฟกัสในเดือน $MONTH$",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "การโฟกัส ใน 14 วันที่ผ่านมา"
+  },
+  "stats_chart_focus_empty": {
+    "message": "นาทีโฟกัสจะปรากฏหลังจบเซสชันแรก"
+  },
+  "stats_chart_attempts_heading": {
+    "message": "ความพยายามที่ถูกบล็อก ใน 14 วันที่ผ่านมา"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "ความพยายามที่ถูกบล็อกจะปรากฏที่นี่เมื่อเซสชันตรวจพบครั้งแรก"
+  },
+  "stats_chart_sites_heading": {
+    "message": "เว็บไซต์ที่ถูกบล็อกมากที่สุด ใน 30 วันที่ผ่านมา"
+  },
+  "stats_chart_sites_empty": {
+    "message": "ยังไม่มีอะไรถูกบล็อก ก็ถือเป็นการเริ่มต้นที่ดี"
+  },
+  "stats_chart_hours_heading": {
+    "message": "ความพยายามแยกตามชั่วโมง เฉพาะเครื่องนี้"
+  },
+  "stats_chart_other_site": {
+    "message": "อื่นๆ"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$น",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "บล็อกแล้ว $COUNT$ ครั้ง",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "บล็อกแล้ว $COUNT$ ครั้ง",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "แผนภูมิแท่ง"
+  },
+  "stats_chart_name_hbar": {
+    "message": "แผนภูมิแท่งแนวนอน"
+  },
+  "stats_chart_description_bar": {
+    "message": "แผนภูมิแท่ง ใช้แป้นพิมพ์เพื่อเลื่อนดูจุดข้อมูล หรือเปิด \"ดูแบบตาราง\" เพื่อดูค่าเดียวกัน"
+  },
+  "stats_chart_description_hbar": {
+    "message": "แผนภูมิแท่งแนวนอน ใช้แป้นพิมพ์เพื่อเลื่อนดูจุดข้อมูล หรือเปิด \"ดูแบบตาราง\" เพื่อดูค่าเดียวกัน"
+  },
+  "stats_chart_empty_default": {
+    "message": "ยังไม่มีข้อมูล"
+  },
+  "stats_chart_table_summary": {
+    "message": "ดูแบบตาราง"
+  },
+  "stats_chart_table_category": {
+    "message": "หมวดหมู่"
+  },
+  "stats_chart_table_value": {
+    "message": "ค่า"
+  },
+  "stats_heat_strip_label": {
+    "message": "แถบความเข้มข้นความพยายามที่ถูกบล็อกใน 24 ชั่วโมง"
+  },
+  "stats_sessions_heading": {
+    "message": "เซสชันล่าสุดบนเครื่องนี้"
+  },
+  "stats_sessions_empty": {
+    "message": "เซสชันแรกของคุณจะปรากฏที่นี่"
+  },
+  "stats_sessions_col_date": {
+    "message": "วันที่"
+  },
+  "stats_sessions_col_start": {
+    "message": "เริ่ม"
+  },
+  "stats_sessions_col_planned": {
+    "message": "ตามแผน"
+  },
+  "stats_sessions_col_focused": {
+    "message": "โฟกัสแล้ว"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "ทุกเว็บไซต์"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "เว็บไซต์เดียว"
+  },
+  "stats_sessions_col_intention": {
+    "message": "เจตนา"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "ผลลัพธ์"
+  },
+  "stats_sessions_col_source": {
+    "message": "แหล่งที่มา"
+  },
+  "stats_session_no_intention": {
+    "message": "ไม่ได้ระบุเจตนา"
+  },
+  "stats_session_article_label": {
+    "message": "เซสชัน: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "ด้วยตนเอง"
+  },
+  "stats_session_source_schedule": {
+    "message": "กำหนดการ"
+  },
+  "stats_session_source_scheduled": {
+    "message": "ตามกำหนดการ"
+  },
+  "stats_outcome_completed": {
+    "message": "เสร็จสมบูรณ์"
+  },
+  "stats_outcome_ended_early": {
+    "message": "จบก่อนกำหนด"
+  },
+  "stats_outcome_running": {
+    "message": "กำลังทำงาน"
+  }
+}

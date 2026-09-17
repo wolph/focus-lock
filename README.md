@@ -87,6 +87,8 @@ Blocking covers whole tabs. It does not block embedded widgets on otherwise allo
 
 Hard lock prevents ending a timed session through Focus Lock's controls. It cannot stop you disabling the extension. The defaults draw on published research. Its findings and limits are collected below.
 
+Focus Lock speaks the language Chrome itself is set to. It ships every language the Chrome Web Store supports, so the popup, the block page, settings and stats all follow your browser without a setting to change. A language Chrome does not have a translation for falls back to English.
+
 ## More details
 
 <details>

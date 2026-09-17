@@ -113,6 +113,9 @@
   "options_rule_pattern_aria": {
     "message": "Muster"
   },
+  "options_rule_pattern_placeholder_host": {
+    "message": "bild.de"
+  },
   "options_rule_add": {
     "message": "Regel hinzufügen"
   },
@@ -667,16 +670,16 @@
     "message": "Damit werden vollständige URLs, Fokus-Vorhaben und detaillierte Sitzungsereignisse dauerhaft von diesem Gerät gelöscht, dazu die nur lokal geführten Summen. Eine laufende Sitzung wird nicht geleert: sie behält ihr Vorhaben und die Adresse jedes Tabs, den sie sperrt. Wenn du die Sitzung beendest, wird das Vorhaben gelöscht und ein Aufräumen beginnt, das jeden offenen Website-Tab freigibt; dieses Aufräumen entfernt zum Abschluss jede gespeicherte Adresse."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Daten aus Sync löschen?"
+    "message": "Synchronisierte Daten löschen?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Löschen der Sync-Daten bestätigen"
+    "message": "Löschen der synchronisierten Daten bestätigen"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Daten in Chrome Sync gelöscht."
+    "message": "Synchronisierte Daten gelöscht."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "Damit werden Einstellungen, Sperr- und Erlaubnislisten, Zugriffsguthaben, Serien und Summen gesperrter Versuche je Domain dauerhaft aus Chrome Sync gelöscht. Lokale Einstellungen und Statistiken bleiben auf diesem Gerät."
+    "message": "Damit werden Einstellungen, Sperr- und Erlaubnislisten, Zugriffsguthaben, Serien und Summen gesperrter Versuche je Domain dauerhaft aus der Chrome-Synchronisierung gelöscht. Lokale Einstellungen und Statistiken bleiben auf diesem Gerät."
   },
   "options_privacy_confirm_all_title": {
     "message": "Alle Focus-Lock-Daten löschen?"
@@ -688,7 +691,7 @@
     "message": "Alle Focus-Lock-Daten gelöscht."
   },
   "options_privacy_all_body_intro": {
-    "message": "Damit wird jedes Stück Focus-Lock-Daten auf diesem Gerät und jede Focus-Lock-Kopie in Chrome Sync dauerhaft gelöscht:"
+    "message": "Damit wird jedes Stück Focus-Lock-Daten auf diesem Gerät und jede Focus-Lock-Kopie in der Chrome-Synchronisierung dauerhaft gelöscht:"
   },
   "options_privacy_all_body_outro": {
     "message": "Alles zu löschen geht nur, solange keine Sitzung läuft. Focus Lock kehrt danach zur Einrichtung zurück."
@@ -697,13 +700,13 @@
     "message": "Der lokale Verlauf konnte nicht gelöscht werden. Versuch es erneut."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Die Daten in Chrome Sync konnten nicht gelöscht werden. Versuch es erneut."
+    "message": "Die synchronisierten Daten konnten nicht gelöscht werden. Versuch es erneut."
   },
   "options_privacy_error_all_clear": {
     "message": "Es konnten nicht alle Focus-Lock-Daten gelöscht werden. Versuch es erneut."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync konnte deine letzten Änderungen nicht speichern. Deine lokale Speicherung ist sicher."
+    "message": "Die Chrome-Synchronisierung konnte deine letzten Änderungen nicht speichern. Deine lokale Speicherung ist sicher."
   },
   "options_privacy_error_request": {
     "message": "Die Anfrage konnte nicht abgeschlossen werden. Versuch es erneut."
@@ -735,32 +738,35 @@
   "options_privacy_open_chrome_settings": {
     "message": "Chrome-Berechtigungseinstellungen öffnen"
   },
+  "options_privacy_sync_heading": {
+    "message": "Chrome-Synchronisierung"
+  },
   "options_privacy_sync_switch_label": {
     "message": "Focus-Lock-Daten über Chrome-Geräte synchronisieren"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync aktiviert."
+    "message": "Chrome-Synchronisierung aktiviert."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync deaktiviert."
+    "message": "Chrome-Synchronisierung deaktiviert."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sync speichert deine letzten Änderungen noch."
+    "message": "Die Chrome-Synchronisierung speichert deine letzten Änderungen noch."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync ist an."
+    "message": "Die Chrome-Synchronisierung ist an."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync ist aus."
+    "message": "Die Chrome-Synchronisierung ist aus."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Änderungen in Chrome Sync gespeichert."
+    "message": "Änderungen in der Chrome-Synchronisierung gespeichert."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Chrome Sync erneut aktivieren"
+    "message": "Chrome-Synchronisierung erneut aktivieren"
   },
   "options_privacy_retry_sync": {
-    "message": "Chrome Sync erneut versuchen"
+    "message": "Chrome-Synchronisierung erneut versuchen"
   },
   "options_privacy_scope_synced": {
     "message": "Synchronisiert"
@@ -787,19 +793,19 @@
     "message": "Lokalen Verlauf löschen"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Daten in Sync"
+    "message": "Synchronisierte Daten"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Lösche die Focus-Lock-Kopien in Chrome Sync, ohne dieses Gerät zu ändern."
+    "message": "Lösche die Focus-Lock-Kopien in der Chrome-Synchronisierung, ohne dieses Gerät zu ändern."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Sync-Daten löschen"
+    "message": "Synchronisierte Daten löschen"
   },
   "options_privacy_all_data_heading": {
     "message": "Alle Focus-Lock-Daten"
   },
   "options_privacy_all_data_detail": {
-    "message": "Lösche jeden Focus-Lock-Eintrag auf diesem Gerät und jede Focus-Lock-Kopie in Chrome Sync und beginne wieder bei der Einrichtung. Verfügbar, solange keine Sitzung läuft."
+    "message": "Lösche jeden Focus-Lock-Eintrag auf diesem Gerät und jede Focus-Lock-Kopie in der Chrome-Synchronisierung und beginne wieder bei der Einrichtung. Verfügbar, solange keine Sitzung läuft."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Das Löschen aller Focus-Lock-Daten wird fortgesetzt."
@@ -808,7 +814,7 @@
     "message": "Löschen des lokalen Verlaufs erneut versuchen"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Löschen der Sync-Daten erneut versuchen"
+    "message": "Löschen der synchronisierten Daten erneut versuchen"
   },
   "options_privacy_retry_all_data": {
     "message": "Löschen aller Daten erneut versuchen"
@@ -826,10 +832,10 @@
     "message": "Website-Sperren konnte nicht aktualisiert werden. Versuch es erneut."
   },
   "options_error_change_sync": {
-    "message": "Chrome Sync konnte nicht geändert werden. Versuch es erneut."
+    "message": "Die Chrome-Synchronisierung konnte nicht geändert werden. Versuch es erneut."
   },
   "options_error_retry_sync": {
-    "message": "Chrome Sync konnte nicht erneut versucht werden. Versuch es erneut."
+    "message": "Die Chrome-Synchronisierung konnte nicht erneut versucht werden. Versuch es erneut."
   },
   "options_error_save_settings": {
     "message": "Die Einstellungen konnten nicht gespeichert werden. Lade die Seite neu und versuch es erneut."

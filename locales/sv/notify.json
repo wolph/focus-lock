@@ -78,7 +78,7 @@
     "message": "Det finns inget nytt försök för datarensningen."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Stäng av Sync innan du raderar synkroniserade data"
+    "message": "Stäng av synkroniseringen innan du raderar synkroniserade data"
   },
   "notify_work_gate_busy": {
     "message": "Focus Lock håller fortfarande på med en tidigare ändring. Försök igen om en stund."
@@ -90,10 +90,10 @@
     "message": "Arbetsfliken är inte tillgänglig."
   },
   "notify_settings_sync_limit": {
-    "message": "Inställningarna överskrider gränsen på 8 kB i Chrome Sync. Ta bort schemaposter eller korta ned avsikter och försök igen."
+    "message": "Inställningarna överskrider gränsen på 8 kB i Chrome-synkroniseringen. Ta bort schemaposter eller korta ned avsikter och försök igen."
   },
   "notify_lists_sync_limit": {
-    "message": "Listorna överskrider gränsen på 8 kB i Chrome Sync. Ta bort egna regler eller regler i tillåtlistan och försök igen."
+    "message": "Listorna överskrider gränsen på 8 kB i Chrome-synkroniseringen. Ta bort egna regler eller regler i tillåtlistan och försök igen."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "ett pass med hårt lås pågår: borttagning av blockerade webbplatser låses upp när det tar slut"

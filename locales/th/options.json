@@ -1,0 +1,837 @@
+{
+  "options_page_title": {
+    "message": "ตัวเลือก Focus Lock"
+  },
+  "options_heading": {
+    "message": "การตั้งค่า Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "กำลังโหลดการตั้งค่า"
+  },
+  "options_privacy_loading": {
+    "message": "กำลังโหลดการตั้งค่าความเป็นส่วนตัว"
+  },
+  "options_save_failed": {
+    "message": "บันทึกไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_blocking_heading": {
+    "message": "การบล็อก"
+  },
+  "options_blocking_help": {
+    "message": "กฎที่กำหนดเองจะบล็อกในเซสชันแบบรายการบล็อก รายการอนุญาตคือสิ่งที่ยังเข้าถึงได้ในเซสชันแบบรายการอนุญาต หมวดหมู่สำเร็จรูปจะบล็อกเว็บไซต์ที่มักเสียเวลา"
+  },
+  "options_custom_blacklist_title": {
+    "message": "รายการบล็อกที่กำหนดเอง"
+  },
+  "options_whitelist_title": {
+    "message": "รายการอนุญาต"
+  },
+  "options_bundled_categories_heading": {
+    "message": "หมวดหมู่สำเร็จรูป"
+  },
+  "options_bundled_categories_help": {
+    "message": "รายการสำเร็จรูปของเว็บไซต์ที่มักเสียเวลา สลับเปิดปิดทั้งหมวดหมู่ได้ แล้วเปิดดูเพื่อเลือกเว็บไซต์เดี่ยวๆ ที่ต้องการให้ใช้งานได้"
+  },
+  "options_schedule_heading": {
+    "message": "กำหนดการ"
+  },
+  "options_schedule_help": {
+    "message": "เซสชันจะเริ่มเองภายในช่วงเวลาเหล่านี้ ระดับความเข้มงวดที่ตั้งไว้ที่นี่จะใช้ตลอดทั้งช่วงเวลา"
+  },
+  "options_behavior_heading": {
+    "message": "พฤติกรรมเซสชัน"
+  },
+  "options_budget_heading": {
+    "message": "เครดิตเข้าถึงเว็บไซต์"
+  },
+  "options_notifications_heading": {
+    "message": "การแจ้งเตือน"
+  },
+  "options_privacy_heading": {
+    "message": "ความเป็นส่วนตัวและข้อมูล"
+  },
+  "options_load_error_retry": {
+    "message": "ลองอีกครั้ง"
+  },
+  "options_load_error_delete_all": {
+    "message": "ลบทั้งหมดแล้วเริ่มใหม่"
+  },
+  "options_load_error_keep_data": {
+    "message": "เก็บข้อมูลไว้"
+  },
+  "options_delete_all_data": {
+    "message": "ลบข้อมูล Focus Lock ทั้งหมด"
+  },
+  "options_dirty_saving": {
+    "message": "กำลังบันทึกการเปลี่ยนแปลง"
+  },
+  "options_dirty_unsaved": {
+    "message": "มีการเปลี่ยนแปลงที่ยังไม่บันทึก"
+  },
+  "options_dirty_clean": {
+    "message": "ไม่มีการเปลี่ยนแปลงที่ยังไม่บันทึก"
+  },
+  "options_dirty_discard": {
+    "message": "ละทิ้งการเปลี่ยนแปลง"
+  },
+  "options_dirty_save": {
+    "message": "บันทึกการเปลี่ยนแปลง"
+  },
+  "options_session_status_label": {
+    "message": "สถานะเซสชัน"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "โดเมน"
+  },
+  "options_rule_remove": {
+    "message": "ลบ"
+  },
+  "options_rule_remove_aria": {
+    "message": "ลบ $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "ยังไม่มีกฎ"
+  },
+  "options_rule_kind_aria": {
+    "message": "ประเภทกฎ"
+  },
+  "options_rule_kind_host_option": {
+    "message": "โดเมนหรือโดเมนย่อย"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (URL แบบเต็ม)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "รูปแบบ"
+  },
+  "options_rule_add": {
+    "message": "เพิ่มกฎ"
+  },
+  "options_rules_help": {
+    "message": "facebook.com ครอบคลุมโดเมนนั้นและโดเมนย่อยทั้งหมด news.ycombinator.com ครอบคลุมโดเมนย่อยนั้นและทุกอย่างที่อยู่ภายใต้มัน /youtube\\.com\\/shorts/ จับคู่กับ URL แบบเต็มในรูปแบบนิพจน์ปกติ"
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ ต้องเป็นจำนวนเต็มบวก",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ ต้องเป็นจำนวนเต็มตั้งแต่ 0 ขึ้นไป",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ ต้องมีค่าตั้งแต่ 0 ขึ้นไป",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ ต้องอยู่ในช่วงนาทีที่รองรับ",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ ต้องอยู่ในช่วงวันที่รองรับ",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "ค่าเริ่มต้นของเซสชัน"
+  },
+  "options_session_defaults_help": {
+    "message": "โหมดและระดับความเข้มงวดจะถูกกำหนดตายตัวเมื่อเซสชันเริ่ม นี่คือค่าที่ฟอร์มเริ่มเซสชันแสดงเป็นค่าเริ่มต้น"
+  },
+  "options_preset_short_label": {
+    "message": "ค่าตั้งล่วงหน้าเซสชันสั้น (นาที)"
+  },
+  "options_preset_default_label": {
+    "message": "ค่าตั้งล่วงหน้าเซสชันปกติ (นาที)"
+  },
+  "options_preset_deep_label": {
+    "message": "ค่าตั้งล่วงหน้าเซสชันเจาะลึก (นาที)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "รายการบล็อก: บล็อกเว็บไซต์ที่อยู่ในรายการ"
+  },
+  "options_mode_whitelist_label": {
+    "message": "รายการอนุญาต: อนุญาตเฉพาะเว็บไซต์ที่อยู่ในรายการ"
+  },
+  "options_strictness_flexible_label": {
+    "message": "ยืดหยุ่น: จบเซสชันได้ทุกเมื่อที่ต้องการ"
+  },
+  "options_strictness_friction_label": {
+    "message": "หน่วงเวลา: การหยุดก่อนกำหนดต้องผ่านด่านพิจารณาที่ตั้งค่าไว้"
+  },
+  "options_strictness_hard_label": {
+    "message": "เข้มงวด: ไม่สามารถจบก่อนกำหนดได้ มีเพียงการเข้าถึงเว็บไซต์ชั่วคราวเท่านั้น"
+  },
+  "options_cycle_heading": {
+    "message": "รอบช่วงโฟกัสและช่วงพัก"
+  },
+  "options_cycle_help": {
+    "message": "ค่าเริ่มต้น: ช่วงโฟกัส 25 นาที ช่วงพัก 5 นาที ช่วงพักยาว 15 นาทีทุกรอบที่ 4 การพักตามตารางเวลาให้ผลดีกว่าการพักตามอำเภอใจ ทั้งด้านอารมณ์และสมาธิในกลุ่มตัวอย่างงานวิจัย ตัวเลขนาทีที่แน่นอนเป็นเพียงข้อตกลงทั่วไป ไม่ใช่ผลจากหลักวิทยาศาสตร์"
+  },
+  "options_cycle_default_label": {
+    "message": "สลับช่วงโฟกัสและช่วงพักเป็นค่าเริ่มต้น"
+  },
+  "options_focus_minutes_label": {
+    "message": "นาทีช่วงโฟกัส"
+  },
+  "options_short_break_minutes_label": {
+    "message": "นาทีช่วงพักสั้น"
+  },
+  "options_long_break_minutes_label": {
+    "message": "นาทีช่วงพักยาว"
+  },
+  "options_long_every_label": {
+    "message": "ช่วงพักยาวทุกรอบที่ N"
+  },
+  "options_gate_heading": {
+    "message": "ด่านพิจารณา"
+  },
+  "options_gate_help": {
+    "message": "การรอ 10 วินาทีพร้อมปุ่มกลับไปทำงานที่ชัดเจนช่วยลดการเข้าเว็บไซต์แบบหุนหันได้อย่างวัดผลได้ (การศึกษาภาคสนาม PNAS 2023) การรอที่นานขึ้นและการพิมพ์ประโยคยืนยันจะเพิ่มผลลัพธ์ขึ้นราวสองเท่า"
+  },
+  "options_gate_wait_one": {
+    "message": "รอ $COUNT$ วินาที",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "รอ $COUNT$ วินาที",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "กำหนดเอง"
+  },
+  "options_custom_delay_label": {
+    "message": "เวลาหน่วงที่กำหนดเอง (วินาที)"
+  },
+  "options_custom_delay_error": {
+    "message": "เวลาหน่วงที่กำหนดเองต้องเป็นจำนวนเต็มบวก มีหน่วยเป็นวินาที"
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "ต้องพิมพ์ประโยคยืนยันด้วย"
+  },
+  "options_gate_force_end_label": {
+    "message": "เปิดใช้งานปุ่ม \"ข้ามเวลารอและจบเซสชัน\""
+  },
+  "options_credit_help": {
+    "message": "เครดิตเข้าถึงเว็บไซต์จะสะสมขึ้นขณะโฟกัส ทั้งการเข้าถึงทุกเว็บไซต์และการปลดล็อกเว็บไซต์เดียวใช้เครดิตจากยอดเดียวกัน คุณสามารถพักได้ทุกเมื่อโดยไม่ต้องใช้เครดิต"
+  },
+  "options_earn_rate_label": {
+    "message": "นาทีของการเข้าถึงเว็บไซต์ต่อการโฟกัส 30 นาที"
+  },
+  "options_credit_cap_label": {
+    "message": "ขีดจำกัดเครดิตเข้าถึงเว็บไซต์ (นาที)"
+  },
+  "options_pause_length_label": {
+    "message": "ระยะเวลาการเข้าถึงทุกเว็บไซต์ (นาที)"
+  },
+  "options_unlock_length_label": {
+    "message": "ระยะเวลาการปลดล็อกเว็บไซต์ (นาที)"
+  },
+  "options_streak_heading": {
+    "message": "สตรีคและการเก็บข้อมูล"
+  },
+  "options_streak_help": {
+    "message": "สตรีคนับวันที่ทำได้ถึงเป้าหมาย เซสชันเดียวตามค่าเริ่มต้นก็ทำให้สตรีคต่อเนื่อง และโทเคนแช่แข็งช่วยซ่อมแซมวันที่พลาดไป"
+  },
+  "options_streak_goal_label": {
+    "message": "เป้าหมายสตรีครายวัน (นาทีโฟกัส)"
+  },
+  "options_freeze_interval_label": {
+    "message": "ช่วงเวลาการได้รับโทเคนแช่แข็ง (วัน)"
+  },
+  "options_retention_label": {
+    "message": "เก็บสถิติรายวัน (วัน)"
+  },
+  "options_category_on_announcement": {
+    "message": "เปิดหมวด $CATEGORY$ แล้ว",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "ปิดหมวด $CATEGORY$ แล้ว",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "เปิดทุกหมวดหมู่แล้ว"
+  },
+  "options_all_categories_off_announcement": {
+    "message": "ปิดทุกหมวดหมู่แล้ว"
+  },
+  "options_host_included_announcement": {
+    "message": "รวม $HOST$ แล้ว",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ ยังใช้งานได้",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "รวมเว็บไซต์ทั้งหมดในหมวด $CATEGORY$ แล้ว",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "เว็บไซต์ทั้งหมดในหมวด $CATEGORY$ ยังใช้งานได้",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "การดำเนินการหมวดหมู่แบบกลุ่ม"
+  },
+  "options_selected_count": {
+    "message": "เลือกแล้ว $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "ยกเลิกเลือกแล้ว $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "เลือกทั้งหมด"
+  },
+  "options_deselect_all": {
+    "message": "ยกเลิกเลือกทั้งหมด"
+  },
+  "options_select_all_categories_aria": {
+    "message": "เลือกหมวดหมู่ทั้งหมด"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "ยกเลิกเลือกหมวดหมู่ทั้งหมด"
+  },
+  "options_show_category_sites": {
+    "message": "แสดงเว็บไซต์ในหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "ซ่อนเว็บไซต์ในหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "รวม $COUNT$ เว็บไซต์",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "รวม $COUNT$ เว็บไซต์",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "ปิดหมวดหมู่"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ รายการจะรวมเมื่อเปิดใช้งาน",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ รายการจะรวมเมื่อเปิดใช้งาน",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "ยกเลิกทำเครื่องหมายเว็บไซต์เพื่อให้ใช้งานได้ ขณะที่เว็บไซต์อื่นในหมวดหมู่ยังถูกบล็อก"
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "การดำเนินการเว็บไซต์แบบกลุ่มในหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "เลือกเว็บไซต์ทั้งหมดในหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "ยกเลิกเลือกเว็บไซต์ทั้งหมดในหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "เว็บไซต์ในหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "อา"
+  },
+  "options_day_mon": {
+    "message": "จ"
+  },
+  "options_day_tue": {
+    "message": "อ"
+  },
+  "options_day_wed": {
+    "message": "พ"
+  },
+  "options_day_thu": {
+    "message": "พฤ"
+  },
+  "options_day_fri": {
+    "message": "ศ"
+  },
+  "options_day_sat": {
+    "message": "ส"
+  },
+  "options_schedule_cycles_label": {
+    "message": "สลับช่วงโฟกัสและช่วงพัก"
+  },
+  "options_schedule_overlap_error": {
+    "message": "ทับซ้อนกับรายการอื่นที่เปิดใช้งานอยู่ในวัน $DAY$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "ประเภทเซสชัน"
+  },
+  "options_schedule_entry_legend": {
+    "message": "รายการกำหนดการ"
+  },
+  "options_schedule_start_label": {
+    "message": "เริ่ม"
+  },
+  "options_schedule_end_label": {
+    "message": "สิ้นสุด"
+  },
+  "options_schedule_duration_legend": {
+    "message": "ระยะเวลา"
+  },
+  "options_schedule_intention_label": {
+    "message": "เจตนา"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "ช่วงเวลานี้ใช้ทำอะไร"
+  },
+  "options_schedule_save_entry": {
+    "message": "บันทึกรายการ"
+  },
+  "options_cancel": {
+    "message": "ยกเลิก"
+  },
+  "options_schedule_empty": {
+    "message": "ยังไม่มีเซสชันตามกำหนดการ"
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "วันที่เลือก"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ ถึง $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "รายการบล็อก"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "รายการอนุญาต"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "ยืดหยุ่น"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "หน่วงเวลา"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "เข้มงวด"
+  },
+  "options_schedule_enabled_label": {
+    "message": "เปิดใช้งาน"
+  },
+  "options_schedule_edit": {
+    "message": "แก้ไข"
+  },
+  "options_schedule_delete": {
+    "message": "ลบ"
+  },
+  "options_schedule_add": {
+    "message": "เพิ่มรายการกำหนดการ"
+  },
+  "options_sounds_heading": {
+    "message": "เสียง"
+  },
+  "options_master_volume": {
+    "message": "ระดับเสียงหลัก"
+  },
+  "options_sound_session_complete": {
+    "message": "เซสชันเสร็จสิ้น"
+  },
+  "options_sound_break_start": {
+    "message": "เริ่มช่วงพัก"
+  },
+  "options_sound_break_end": {
+    "message": "จบช่วงพัก"
+  },
+  "options_sound_schedule_start": {
+    "message": "เริ่มอัตโนมัติตามกำหนดการ"
+  },
+  "options_sound_preview_aria": {
+    "message": "ฟังตัวอย่างเสียง $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "เล่น"
+  },
+  "options_sound_preview_error": {
+    "message": "เล่นตัวอย่างเสียงไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_sounds_notifications_heading": {
+    "message": "การแจ้งเตือน"
+  },
+  "options_session_complete_notification": {
+    "message": "แสดงการแจ้งเตือนของระบบเมื่อเซสชันเสร็จสิ้น"
+  },
+  "options_badge_heading": {
+    "message": "แบดจ์"
+  },
+  "options_badge_countdown": {
+    "message": "แสดงเวลาที่เหลือบนไอคอนแถบเครื่องมือ"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "การเข้าถึงเว็บไซต์"
+  },
+  "options_privacy_website_off_title": {
+    "message": "ปิดการเข้าถึงเว็บไซต์อยู่"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock บล็อกเว็บไซต์ไม่ได้จนกว่าคุณจะอนุญาตการเข้าถึง"
+  },
+  "options_privacy_website_enable_action": {
+    "message": "เปิดใช้งานการบล็อกเว็บไซต์"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "อนุญาตการเข้าถึงเว็บไซต์แล้ว แต่การบล็อกยังไม่ทำงาน"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome อนุญาตการเข้าถึงแล้ว แต่ Focus Lock ลงทะเบียนสคริปต์การบล็อกไม่สำเร็จ"
+  },
+  "options_privacy_website_retry_action": {
+    "message": "ลองเปิดการบล็อกเว็บไซต์อีกครั้ง"
+  },
+  "options_privacy_website_on_title": {
+    "message": "เปิดใช้งานการบล็อกเว็บไซต์แล้ว"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock สามารถใช้กฎการบล็อกที่ใช้งานอยู่กับหน้าเว็บไซต์ทั่วไปได้"
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "ลบประวัติในเครื่องหรือไม่"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "ยืนยันการลบประวัติในเครื่อง"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "ลบประวัติในเครื่องแล้ว"
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "การดำเนินการนี้จะลบ URL แบบเต็ม เจตนาการโฟกัส และเหตุการณ์ของเซสชันแบบละเอียดออกจากอุปกรณ์นี้อย่างถาวร แต่จะไม่ล้างเซสชันที่กำลังทำงานอยู่ ซึ่งยังคงเก็บเจตนาและที่อยู่ของแต่ละแท็บที่กำลังบล็อกไว้ การจบเซสชันจะล้างเจตนาและเริ่มการล้างข้อมูลที่ปิดแท็บเว็บไซต์ที่เปิดอยู่ทั้งหมด และเมื่อเสร็จสิ้นจะลบที่อยู่ที่จัดเก็บไว้ทั้งหมด"
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "การดำเนินการนี้จะลบ URL แบบเต็ม เจตนาการโฟกัส เหตุการณ์ของเซสชันแบบละเอียด และสถิติสรุปที่มีอยู่เฉพาะในเครื่องนี้ออกจากอุปกรณ์นี้อย่างถาวร แต่จะไม่ล้างเซสชันที่กำลังทำงานอยู่ ซึ่งยังคงเก็บเจตนาและที่อยู่ของแต่ละแท็บที่กำลังบล็อกไว้ การจบเซสชันจะล้างเจตนาและเริ่มการล้างข้อมูลที่ปิดแท็บเว็บไซต์ที่เปิดอยู่ทั้งหมด และเมื่อเสร็จสิ้นจะลบที่อยู่ที่จัดเก็บไว้ทั้งหมด"
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "ลบข้อมูล Sync ระยะไกลหรือไม่"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "ยืนยันการลบข้อมูล Sync ระยะไกล"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "ลบข้อมูล Chrome Sync ระยะไกลแล้ว"
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "การดำเนินการนี้จะลบการตั้งค่าระยะไกล รายการบล็อกและรายการอนุญาต เครดิตเข้าถึงเว็บไซต์ สตรีค และสถิติสรุปการพยายามเข้าเว็บไซต์ที่ถูกบล็อกแยกตามโดเมนออกจาก Chrome Sync อย่างถาวร ส่วนการตั้งค่าและสถิติในเครื่องจะยังอยู่บนอุปกรณ์นี้"
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "ลบข้อมูล Focus Lock ทั้งหมดหรือไม่"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "ยืนยันการลบข้อมูล Focus Lock ทั้งหมด"
+  },
+  "options_privacy_all_deleted": {
+    "message": "ลบข้อมูล Focus Lock ทั้งหมดแล้ว"
+  },
+  "options_privacy_all_body_intro": {
+    "message": "การดำเนินการนี้จะลบข้อมูล Focus Lock ทุกส่วนบนอุปกรณ์นี้และสำเนาที่เหลืออยู่ใน Chrome Sync อย่างถาวร:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "ลบทั้งหมดได้เฉพาะตอนที่ไม่มีเซสชันทำงานอยู่ จากนั้น Focus Lock จะกลับไปที่หน้าตั้งค่า"
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "ลบประวัติในเครื่องไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "ลบข้อมูล Chrome Sync ระยะไกลไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_privacy_error_all_clear": {
+    "message": "ลบข้อมูล Focus Lock ทั้งหมดไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync บันทึกการเปลี่ยนแปลงล่าสุดไม่สำเร็จ แต่การบันทึกในเครื่องปลอดภัยดี"
+  },
+  "options_privacy_error_request": {
+    "message": "คำขอไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_privacy_website_access_updated": {
+    "message": "อัปเดตการเข้าถึงเว็บไซต์แล้ว"
+  },
+  "options_privacy_website_access_denied": {
+    "message": "ไม่ได้รับอนุญาตให้เข้าถึงเว็บไซต์"
+  },
+  "options_privacy_error_website_access": {
+    "message": "อัปเดตการเข้าถึงเว็บไซต์ไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "เปิดใช้งานการบล็อกเว็บไซต์แล้ว"
+  },
+  "options_privacy_error_export": {
+    "message": "ส่งออกบันทึกเหตุการณ์ไม่สำเร็จ"
+  },
+  "options_privacy_error_export_retry": {
+    "message": "ส่งออกบันทึกเหตุการณ์ไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "เปิดการตั้งค่าสิทธิ์ของ Chrome ไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "เปิดการตั้งค่าสิทธิ์ของ Chrome แล้ว"
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "เปิดการตั้งค่าสิทธิ์ของ Chrome"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "ซิงก์ข้อมูล Focus Lock ข้ามอุปกรณ์ Chrome"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "เปิดใช้งาน Chrome Sync แล้ว"
+  },
+  "options_privacy_sync_disabled": {
+    "message": "ปิดใช้งาน Chrome Sync แล้ว"
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync กำลังบันทึกการเปลี่ยนแปลงล่าสุด"
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync เปิดอยู่"
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync ปิดอยู่"
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "บันทึกการเปลี่ยนแปลงใน Chrome Sync แล้ว"
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "ลองเปิดใช้งาน Chrome Sync อีกครั้ง"
+  },
+  "options_privacy_retry_sync": {
+    "message": "ลอง Chrome Sync อีกครั้ง"
+  },
+  "options_privacy_scope_synced": {
+    "message": "ซิงก์แล้ว"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "ในเครื่องเท่านั้น"
+  },
+  "options_privacy_developer_note": {
+    "message": "ไม่มีข้อมูลใดถูกส่งไปยังผู้พัฒนา Focus Lock"
+  },
+  "options_privacy_local_log_heading": {
+    "message": "บันทึกเหตุการณ์ในเครื่อง"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "ส่งออกบันทึกละเอียดในเครื่อง หรือลบประวัติการท่องเว็บและเซสชันในเครื่อง"
+  },
+  "options_privacy_export_local_log": {
+    "message": "ส่งออกบันทึกเหตุการณ์ในเครื่อง"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "ส่งออกบันทึกเหตุการณ์ในเครื่องแล้ว"
+  },
+  "options_privacy_delete_local_history": {
+    "message": "ลบประวัติในเครื่อง"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "ข้อมูล Sync ระยะไกล"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "ลบสำเนา Focus Lock ที่เหลืออยู่ใน Chrome Sync โดยไม่เปลี่ยนแปลงอุปกรณ์นี้"
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "ลบข้อมูล Sync ระยะไกล"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "ข้อมูล Focus Lock ทั้งหมด"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "ลบข้อมูล Focus Lock ทุกรายการบนอุปกรณ์นี้และสำเนาที่เหลืออยู่ใน Chrome Sync แล้วเริ่มตั้งค่าใหม่อีกครั้ง ใช้งานได้เฉพาะตอนที่ไม่มีเซสชันทำงานอยู่"
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "กำลังลบข้อมูล Focus Lock ทั้งหมดต่อ"
+  },
+  "options_privacy_retry_local_history": {
+    "message": "ลองลบประวัติในเครื่องอีกครั้ง"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "ลองลบข้อมูล Sync ระยะไกลอีกครั้ง"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "ลองลบข้อมูลทั้งหมดอีกครั้ง"
+  },
+  "options_error_load": {
+    "message": "โหลดการตั้งค่าไม่สำเร็จ โหลดหน้าใหม่เพื่อลองอีกครั้ง"
+  },
+  "options_error_retry_boot": {
+    "message": "รีสตาร์ท Focus Lock ไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_error_refresh_privacy": {
+    "message": "รีเฟรชการตั้งค่าความเป็นส่วนตัวไม่สำเร็จ โหลดหน้าใหม่"
+  },
+  "options_error_website_blocking": {
+    "message": "อัปเดตการบล็อกเว็บไซต์ไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_error_change_sync": {
+    "message": "เปลี่ยน Chrome Sync ไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_error_retry_sync": {
+    "message": "ลอง Chrome Sync อีกครั้งไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "options_error_save_settings": {
+    "message": "บันทึกการตั้งค่าไม่สำเร็จ โหลดหน้าใหม่แล้วลองอีกครั้ง"
+  },
+  "options_error_save_lists": {
+    "message": "บันทึกรายการไม่สำเร็จ โหลดหน้าใหม่แล้วลองอีกครั้ง"
+  }
+}

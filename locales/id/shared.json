@@ -161,7 +161,7 @@
     "message": "Tidak dapat menghapus data. Coba lagi."
   },
   "shared_schedule_window_label": {
-    "message": "Sampai rentang waktu berakhir"
+    "message": "Sampai rentang waktu usai"
   },
   "shared_schedule_until_stopped": {
     "message": "Dimulai sesuai jadwal dan berjalan sampai kamu menghentikannya: Akhiri sesi untuk Fleksibel, Buka melalui gerbang pertimbangan untuk Tunda. Siklus nonaktif."
@@ -200,7 +200,7 @@
     "message": "Diselesaikan manual"
   },
   "shared_outcome_manual_canceled": {
-    "message": "Diakhiri lebih awal"
+    "message": "Diakhiri dini"
   },
   "shared_outcome_website_access_lost": {
     "message": "Berakhir: akses situs web hilang"
@@ -227,6 +227,15 @@
       "MINUTES": {
         "content": "$2",
         "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
       }
     }
   },
@@ -290,6 +299,19 @@
       "CLOCK": {
         "content": "$1",
         "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
       }
     }
   },
@@ -382,6 +404,9 @@
   },
   "shared_all_data_clear_running": {
     "message": "Akhiri sesi yang sedang berjalan sebelum menghapus semua data."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
   },
   "shared_nav_product": {
     "message": "Navigasi produk"

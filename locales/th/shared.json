@@ -1,0 +1,611 @@
+{
+  "shared_until_stopped": {
+    "message": "จนกว่าจะหยุด"
+  },
+  "shared_preset_short": {
+    "message": "สั้น"
+  },
+  "shared_preset_focus": {
+    "message": "โฟกัส"
+  },
+  "shared_preset_deep_work": {
+    "message": "เจาะลึก"
+  },
+  "shared_deep_work_note": {
+    "message": "เป็นความชอบส่วนตัว ไม่ใช่หลักวิทยาศาสตร์: ช่วงเวลายาวต่อเนื่องช่วงเดียว ไม่มีช่วงพักอัตโนมัติ"
+  },
+  "shared_timed_hint_cycles": {
+    "message": "รวม $MINUTES$ นาที มีช่วงโฟกัส $FOCUS$ นาที",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "โฟกัสต่อเนื่อง $MINUTES$ นาที",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "เริ่มจนกว่าจะหยุด"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "ล็อกจนกว่าจะปลดล็อกเอง"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "เซสชันแบบจนกว่าจะหยุดใช้ได้เฉพาะยืดหยุ่นหรือหน่วงเวลา และใช้รอบช่วงโฟกัสกับช่วงพักไม่ได้"
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "ล็อกเข้มงวดใช้กับจนกว่าจะหยุดไม่ได้: เพราะไม่มีตัวจับเวลาและไม่มีการจบเอง เซสชันจะไม่มีวันจบ"
+  },
+  "shared_end_session": {
+    "message": "จบเซสชัน"
+  },
+  "shared_unlock": {
+    "message": "ปลดล็อก"
+  },
+  "shared_gate_wait_none": {
+    "message": "ไม่ต้องรอ"
+  },
+  "shared_gate_wait": {
+    "message": "การรอ $SECONDS$ วินาที",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ และการพิมพ์ประโยคยืนยัน",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "ทำงานจนกว่าจะจบด้วย $LABEL$ ปิดรอบโฟกัส-พัก",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "ทำงานจนกว่าจะปลดล็อก: $REQUIREMENT$ แล้วกด $LABEL$ ปิดรอบโฟกัส-พัก",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "รอบช่วงโฟกัสและช่วงพักถูกบังคับปิดโดยจนกว่าจะหยุด"
+  },
+  "shared_mode_blacklist": {
+    "message": "บล็อกเว็บไซต์ที่เลือก"
+  },
+  "shared_mode_whitelist": {
+    "message": "อนุญาตเฉพาะเว็บไซต์ที่เลือก"
+  },
+  "shared_focus_time_label": {
+    "message": "เวลาโฟกัส"
+  },
+  "shared_clock_focus_phase": {
+    "message": "ช่วงโฟกัส"
+  },
+  "shared_clock_total_session": {
+    "message": "เซสชันทั้งหมด"
+  },
+  "shared_clock_pause": {
+    "message": "พัก"
+  },
+  "shared_clock_break": {
+    "message": "ช่วงพัก"
+  },
+  "shared_badge_indefinite": {
+    "message": "เปิด"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock กำลังเริ่มทำงาน กำลังใช้กฎที่คุณเลือกไว้"
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "เซสชันจบแล้ว กำลังล้างข้อมูลเบราว์เซอร์ให้เสร็จ"
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock เริ่มทำงานไม่สำเร็จ กำลังล้างข้อมูลเบราว์เซอร์ให้เสร็จ"
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock ล้างข้อมูลจากการเริ่มที่ไม่สมบูรณ์ไม่สำเร็จ"
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock ล้างข้อมูลเบราว์เซอร์ไม่สำเร็จ"
+  },
+  "shared_retry_cleanup": {
+    "message": "ลองล้างข้อมูลอีกครั้ง"
+  },
+  "shared_end_failed": {
+    "message": "จบเซสชันไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "shared_retry_failed": {
+    "message": "ลองล้างข้อมูลอีกครั้งไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "shared_action_failed": {
+    "message": "ส่งคำขอดำเนินการไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "shared_return_to_work_failed": {
+    "message": "กลับไปทำงานไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "shared_data_clear_pending": {
+    "message": "กำลังลบข้อมูล Focus Lock กำลังล้างข้อมูลให้เสร็จ"
+  },
+  "shared_data_clear_error": {
+    "message": "ลบข้อมูลไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "shared_schedule_window_label": {
+    "message": "จนกว่าช่วงเวลาจะสิ้นสุด"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "เริ่มตามกำหนดการและทำงานจนกว่าจะหยุด: จบเซสชันสำหรับยืดหยุ่น ปลดล็อกผ่านด่านพิจารณาสำหรับหน่วงเวลา ปิดรอบโฟกัส-พัก"
+  },
+  "shared_schedule_started_title": {
+    "message": "เริ่มกำหนดการโฟกัสแล้ว"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "ทำงานอยู่จนกว่าจะหยุด"
+  },
+  "shared_settings_indefinite": {
+    "message": "เซสชันแบบจนกว่าจะหยุดกำลังทำงานอยู่ ใช้ป๊อปอัปแถบเครื่องมือเพื่อดูหรือจบเซสชัน"
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock กำลังเริ่มทำงาน กำลังตรวจสอบการเข้าถึงเว็บไซต์และใช้กฎของคุณ"
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock ล้างข้อมูลเบราว์เซอร์ไม่สำเร็จ เปิดป๊อปอัปแล้วลองอีกครั้ง"
+  },
+  "shared_settings_session_disclosure": {
+    "message": "ป๊อปอัปแถบเครื่องมือควบคุมเซสชันโดยตรง เซสชันที่กำลังทำงานจะยังใช้กฎที่บันทึกไว้ตอนเริ่มเซสชัน"
+  },
+  "shared_settings_timed": {
+    "message": "เซสชันตั้งเวลาทำงานอยู่จนถึง $TIME$ จะจบโดยอัตโนมัติ ดูสถานะล่าสุดได้ที่ป๊อปอัปแถบเครื่องมือ",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "เสร็จสมบูรณ์"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "เสร็จสมบูรณ์ด้วยตนเอง"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "จบก่อนกำหนด"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "จบแล้ว: การเข้าถึงเว็บไซต์ถูกยกเลิก"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "จบแล้ว: ตั้งค่าการบล็อกไม่สำเร็จ"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "จบแล้ว: ตั้งค่าตัวจับเวลาไม่สำเร็จ"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "จบแล้ว: บังคับใช้กฎกับหน้าเว็บไม่สำเร็จ"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "จบแล้ว: กู้คืนสถานะไม่สำเร็จ"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ชม. $MINUTES$ น.",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ น.",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ น.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ น.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "กำลังอัปเดตเซสชัน"
+  },
+  "shared_less_than_a_minute": {
+    "message": "น้อยกว่า 1 นาที"
+  },
+  "shared_focus_remaining_break": {
+    "message": "อีก $DURATION$ ถึงช่วงพัก",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "เหลืออีก $DURATION$ ในเซสชันนี้",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "ค่าใช้จ่ายเกินขีดจำกัดเครดิต"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "การสะสมเครดิตจะกลับมาเมื่ออยู่ในช่วงโฟกัส"
+  },
+  "shared_credit_off": {
+    "message": "ปิดการสะสมเครดิตอยู่"
+  },
+  "shared_not_enough_time": {
+    "message": "เวลาช่วงโฟกัสนี้ไม่พอ"
+  },
+  "shared_ready_in": {
+    "message": "พร้อมในอีก $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "ถูกบล็อกโดยหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "ถูกบล็อกโดยรายการบล็อกของคุณ"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "ไม่อยู่ในรายการอนุญาตของคุณ"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "ถูกบล็อกโดยเซสชันนี้"
+  },
+  "shared_verdict_allow_list": {
+    "message": "อยู่ในรายการอนุญาตของคุณ"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "ได้รับอนุญาตเสมอ"
+  },
+  "shared_verdict_unlock": {
+    "message": "ปลดล็อกชั่วคราว"
+  },
+  "shared_verdict_excluded": {
+    "message": "ถูกยกเว้นจากหมวดหมู่ที่เลือก"
+  },
+  "shared_verdict_no_session": {
+    "message": "ไม่มีเซสชันโฟกัสที่กำลังทำงาน"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "ได้รับอนุญาตโดยเซสชันนี้"
+  },
+  "shared_category_social": {
+    "message": "โซเชียลมีเดีย"
+  },
+  "shared_category_video": {
+    "message": "วิดีโอและสตรีมมิง"
+  },
+  "shared_category_news": {
+    "message": "ข่าว"
+  },
+  "shared_category_mail": {
+    "message": "อีเมล"
+  },
+  "shared_category_shopping": {
+    "message": "ช้อปปิ้ง"
+  },
+  "shared_category_gaming": {
+    "message": "เกม"
+  },
+  "shared_category_forums": {
+    "message": "ฟอรัมและเว็บฆ่าเวลา"
+  },
+  "shared_synced_settings": {
+    "message": "การตั้งค่า"
+  },
+  "shared_synced_lists": {
+    "message": "รายการบล็อกและรายการอนุญาต"
+  },
+  "shared_synced_credit": {
+    "message": "เครดิตเข้าถึงเว็บไซต์"
+  },
+  "shared_synced_streaks": {
+    "message": "สตรีค"
+  },
+  "shared_synced_aggregates": {
+    "message": "สถิติสรุปการพยายามเข้าเว็บไซต์ที่ถูกบล็อกแยกตามโดเมน"
+  },
+  "shared_local_full_urls": {
+    "message": "URL แบบเต็ม"
+  },
+  "shared_local_intentions": {
+    "message": "เจตนาการโฟกัส"
+  },
+  "shared_local_events": {
+    "message": "เหตุการณ์ของเซสชันแบบละเอียด"
+  },
+  "shared_local_runtime": {
+    "message": "เซสชันที่กำลังทำงานอยู่"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "ข้อมูลที่ซิงก์บางส่วนจากเวอร์ชันเก่าอ่านไม่ได้และถูกรีเซ็ต"
+  },
+  "shared_all_data_clear_running": {
+    "message": "จบเซสชันที่กำลังทำงานก่อนลบข้อมูลทั้งหมด"
+  },
+  "shared_nav_product": {
+    "message": "การนำทางผลิตภัณฑ์"
+  },
+  "shared_nav_overview": {
+    "message": "ภาพรวม"
+  },
+  "shared_nav_settings": {
+    "message": "การตั้งค่า"
+  },
+  "shared_section_blocking": {
+    "message": "การบล็อก"
+  },
+  "shared_section_schedule": {
+    "message": "กำหนดการ"
+  },
+  "shared_section_behavior": {
+    "message": "พฤติกรรมเซสชัน"
+  },
+  "shared_section_budget": {
+    "message": "เครดิตเข้าถึงเว็บไซต์"
+  },
+  "shared_section_notifications": {
+    "message": "การแจ้งเตือน"
+  },
+  "shared_section_privacy": {
+    "message": "ความเป็นส่วนตัวและข้อมูล"
+  },
+  "shared_theme_auto": {
+    "message": "อัตโนมัติ"
+  },
+  "shared_theme_light": {
+    "message": "สว่าง"
+  },
+  "shared_theme_dark": {
+    "message": "มืด"
+  },
+  "shared_theme_button": {
+    "message": "ธีม: $CURRENT$ เปลี่ยนเป็น $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "บันทึกธีมไม่สำเร็จ โหลดหน้าใหม่แล้วลองอีกครั้ง"
+  },
+  "shared_host_search_label": {
+    "message": "ค้นหาเว็บไซต์ในหมวด $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "ไม่พบเว็บไซต์ในหมวด $TITLE$ ที่ตรงกับการค้นหา",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "แสดง $SHOWN$ จาก $MATCHED$ เว็บไซต์ ค้นหาเพื่อจำกัดรายการให้แคบลง",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "แสดง $MATCHED$ จาก $TOTAL$ เว็บไซต์",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "แสดงเว็บไซต์ทั้งหมด $TOTAL$ รายการ",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "จบเซสชัน"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock กำลังเริ่มทำงาน"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "กำลังใช้กฎที่คุณเลือกไว้"
+  },
+  "shared_overlay_stopped_page": {
+    "message": "หน้านี้ไม่ได้โหลด และจะโหลดเองเมื่อเซสชันสิ้นสุด"
+  },
+  "shared_overlay_next_step": {
+    "message": "ขั้นตอนถัดไป"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "กลับไปทำงาน"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "เลือกแท็บงาน"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "เปลี่ยนแท็บงาน"
+  },
+  "shared_overlay_access_summary": {
+    "message": "ต้องการพักหรือเข้าถึงเว็บไซต์ไหม"
+  },
+  "shared_overlay_access_note": {
+    "message": "พักได้ทุกเมื่อ การเข้าถึงเว็บไซต์ใช้เครดิต"
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "ข้ามเวลารอและจบเซสชัน"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock อัปเดตการดำเนินการนี้ไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "shared_overlay_bank_amount": {
+    "message": "เครดิตเข้าถึงเว็บไซต์ $AMOUNT$",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "ทำงานที่ค้างอยู่ต่อ"
+  },
+  "shared_overlay_pause_action": {
+    "message": "ปลดล็อกทุกเว็บไซต์"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "ปลดล็อกเว็บไซต์นี้"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - ใช้เครดิต $COST$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "ล็อกจนถึง $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "ที่บอกไว้: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "ปลดล็อก $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "โฟกัสต่อ"
+  },
+  "shared_gate_phrase_label": {
+    "message": "พิมพ์ข้อความนี้เพื่อยืนยัน:"
+  },
+  "shared_gate_end_title": {
+    "message": "จบเซสชันนี้"
+  }
+}

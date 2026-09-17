@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "ഫോക്കസ് സെഷൻ പൂർത്തിയായി"
+  },
+  "notify_session_complete_body": {
+    "message": "നിന്റെ ഫോക്കസ് സെഷൻ പൂർത്തിയായി."
+  },
+  "notify_schedule_window_body": {
+    "message": "$END$ വരെ പൂട്ടിയിരിക്കുന്നു.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "ഫോക്കസ് ഷെഡ്യൂൾ തുടങ്ങാനായില്ല"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമല്ല. സെറ്റപ്പ് പൂർത്തിയാക്കുക അല്ലെങ്കിൽ വെബ്സൈറ്റ് ആക്സസ് അനുവദിക്കുക, എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "സെറ്റപ്പ് മറ്റൊരു ടാബിൽ പൂർത്തിയാക്കിക്കഴിഞ്ഞു."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "സെറ്റപ്പ് മറ്റൊരു ടാബിൽ മാറ്റി. ഏറ്റവും പുതിയ തിരഞ്ഞെടുപ്പുകൾ വീണ്ടും ലോഡ് ചെയ്തു."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "സെറ്റപ്പ് മറ്റൊരു ടാബിൽ മാറ്റി. പൂർത്തിയാക്കുന്നതിന് മുൻപ് സെറ്റപ്പ് വീണ്ടും ലോഡ് ചെയ്യുക."
+  },
+  "notify_setup_not_complete": {
+    "message": "സെറ്റപ്പ് പൂർത്തിയായിട്ടില്ല."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "സെറ്റപ്പ് പൂർത്തിയാക്കാൻ തയ്യാറായിട്ടില്ല."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "സെറ്റപ്പ് സ്റ്റോറേജ് തിരഞ്ഞെടുപ്പ് മാറി. പൂർത്തിയാക്കുന്നതിന് മുൻപ് സെറ്റപ്പ് വീണ്ടും ലോഡ് ചെയ്യുക."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "ഓൺബോർഡിംഗ് സ്റ്റോറേജ് പ്രവർത്തനം പരാജയപ്പെട്ടു."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "ഓൺബോർഡിംഗ് പ്രവർത്തനം പരാജയപ്പെട്ടു."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock-ന് വെബ്സൈറ്റ് ആക്സസ് പരിശോധിക്കാനായില്ല. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "വെബ്സൈറ്റ് ആക്സസ് അനുവദിച്ചു, പക്ഷേ Focus Lock-ന് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാനായില്ല. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "വെബ്സൈറ്റ് ആക്സസ് ലഭ്യമല്ല, കൂടാതെ Focus Lock-ന് ബ്ലോക്കിംഗ് ക്ലീൻഅപ്പ് പൂർത്തിയാക്കാനുമായില്ല. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock-ന് പൊരുത്തക്കേടുള്ള വെബ്സൈറ്റ് ആക്സസ് സ്ഥിതി ലഭിച്ചു. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock തുടങ്ങൽ പൂർത്തിയാക്കിയില്ല: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "അജ്ഞാത പിശക്"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock പ്രവർത്തിക്കുന്നു, റീസെറ്റ് ചെയ്യാൻ ഒന്നുമില്ല"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "പോളിസി ജനറേഷനുള്ളിൽ ഇപ്പോഴും ഉൾപ്പെട്ടിരിക്കുന്ന റൺടൈം Focus Lock-ന് റീസെറ്റ് ചെയ്യാനാവില്ല"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "ഡാറ്റ ക്ലിയർ വീണ്ടും ശ്രമിക്കൽ ലഭ്യമല്ല."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "സിങ്ക് ചെയ്ത ഡാറ്റ ഇല്ലാതാക്കുന്നതിന് മുൻപ് Sync പ്രവർത്തനരഹിതമാക്കുക"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock ഇപ്പോഴും മുൻപത്തെ മാറ്റം പൂർത്തിയാക്കുകയാണ്. അല്പസമയത്തിനുള്ളിൽ വീണ്ടും ശ്രമിക്കുക."
+  },
+  "notify_work_gate_stuck": {
+    "message": "തുറന്ന ഗേറ്റ് അടയ്ക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "വർക്ക് ടാബ് ലഭ്യമല്ല."
+  },
+  "notify_settings_sync_limit": {
+    "message": "സെറ്റിംഗ്സ് 8 KB Chrome Sync പരിധി കവിയുന്നു. ഷെഡ്യൂൾ എൻട്രികൾ നീക്കം ചെയ്യുക അല്ലെങ്കിൽ ഇന്റൻഷനുകൾ ചെറുതാക്കുക, എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക."
+  },
+  "notify_lists_sync_limit": {
+    "message": "ലിസ്റ്റുകൾ 8 KB Chrome Sync പരിധി കവിയുന്നു. കസ്റ്റം അല്ലെങ്കിൽ അനുവദന പട്ടിക നിയമങ്ങൾ നീക്കം ചെയ്യുക, എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: തടഞ്ഞ സൈറ്റുകൾ നീക്കം ചെയ്യുന്നത് അത് അവസാനിക്കുമ്പോൾ അൺലോക്ക് ആകും"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: പുതിയ അനുവദന പട്ടിക എൻട്രികൾ അത് അവസാനിക്കുമ്പോൾ അൺലോക്ക് ആകും"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: കാറ്റഗറികൾ പ്രവർത്തനരഹിതമാക്കുന്നത് അത് അവസാനിക്കുമ്പോൾ അൺലോക്ക് ആകും"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: പുതിയ ഒഴിവാക്കലുകൾ അത് അവസാനിക്കുമ്പോൾ അൺലോക്ക് ആകും"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: സ്ഥിരം കാഠിന്യം കുറയ്ക്കുന്നത് അത് അവസാനിക്കുന്നത് വരെ കാത്തിരിക്കണം"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: ചിന്താ കവാടത്തിന്റെ കാലതാമസം കുറയ്ക്കുന്നത് ഗേറ്റിനെ ദുർബലമാക്കും"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: ടൈപ്പ് ചെയ്യേണ്ട വാചകം ഒഴിവാക്കുന്നത് ഗേറ്റിനെ ദുർബലമാക്കും"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: പോസ് സമ്പാദന നിരക്ക് കൂട്ടുന്നത് കൂടുതൽ രക്ഷപ്പെടലുകൾക്ക് പണം നൽകും"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: പോസ് പരിധി കൂട്ടുന്നത് കൂടുതൽ രക്ഷപ്പെടലുകൾക്ക് പണം നൽകും"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: പോസുകൾ ചെറുതാക്കുന്നത് അവയുടെ ചെലവ് കുറയ്ക്കും"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: അൺലോക്കുകൾ ചെറുതാക്കുന്നത് അവയുടെ ചെലവ് കുറയ്ക്കും"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "ഒരു കടുത്ത ലോക്ക് സെഷൻ പ്രവർത്തിക്കുന്നു: അതിന്റെ ഷെഡ്യൂൾ എൻട്രി അത് അവസാനിക്കുന്നത് വരെ ദുർബലമാക്കാനാവില്ല"
+  }
+}

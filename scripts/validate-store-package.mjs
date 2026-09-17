@@ -18,7 +18,7 @@ function loadBaseInputs(rootDirectory) {
   );
   const manifest = readJson(rootDirectory, 'dist/manifest.json', 'built manifest');
   const distFiles = walkRegularFiles(rootDirectory, 'dist', forbiddenDistPath);
-  validateBuiltManifest(manifest, submission);
+  validateBuiltManifest(manifest, submission, rootDirectory);
   validateManifestExecutablePaths(manifest);
   validateAssets(rootDirectory, manifest, submission);
   validateTransportPolicy(rootDirectory, submission);

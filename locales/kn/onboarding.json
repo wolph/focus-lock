@@ -1,1 +1,177 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock ಸೆಟಪ್ ಮಾಡಿ"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock ಸೆಟಪ್"
+  },
+  "onboarding_progress": {
+    "message": "ಹಂತ $STEP$ / $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "ನಿನ್ನ ಉಳಿಸಿದ ಸೆಟಪ್ ಪ್ರಗತಿಯನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿನ್ನ ಪ್ರಸ್ತುತ ಡೀಫಾಲ್ಟ್‌ಗಳೊಂದಿಗೆ ಮತ್ತೆ ಪ್ರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ."
+  },
+  "onboarding_complete_heading": {
+    "message": "ಸೆಟಪ್ ಪೂರ್ಣಗೊಂಡಿದೆ"
+  },
+  "onboarding_complete_body": {
+    "message": "ನಿನ್ನ ಆಯ್ಕೆಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ. ಸೆಷನ್ ಪ್ರಾರಂಭಿಸಲು Chrome ಟೂಲ್‌ಬಾರ್‌ನಿಂದ Focus Lock ಅನ್ನು ತೆರೆ."
+  },
+  "onboarding_error_heading": {
+    "message": "ಸೆಟಪ್ ಲಭ್ಯವಿಲ್ಲ"
+  },
+  "onboarding_error_body": {
+    "message": "ಸೆಟಪ್ ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "onboarding_retry_button": {
+    "message": "ಮರುಪ್ರಯತ್ನಿಸಿ"
+  },
+  "onboarding_save_error": {
+    "message": "ಸೆಟಪ್ ಪ್ರಗತಿಯನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "onboarding_enable_error": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "onboarding_finish_error": {
+    "message": "ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿನ್ನ ಆಯ್ಕೆಗಳು ಇನ್ನೂ ಉಳಿದಿವೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "onboarding_lists_heading": {
+    "message": "ನಿನ್ನ ಆರಂಭಿಕ ಬ್ಲಾಕ್ ಪಟ್ಟಿಯನ್ನು ಆರಿಸು"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "$MODE$ ನಲ್ಲಿ, ಸಕ್ರಿಯಗೊಳಿಸಿದ ವರ್ಗಗಳು ಮತ್ತು ಹೆಚ್ಚುವರಿ ಬ್ಲಾಕ್ ಮಾಡಿದ ಸೈಟ್‌ಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$ ನಲ್ಲಿ, ನಿನ್ನ ಅನುಮತಿ ಪಟ್ಟಿಯ ಹೊರತು ಎಲ್ಲಾ ಸೈಟ್‌ಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "ಈ ಆಯ್ಕೆಗಳು ಮುಂದಿನ ಸೆಷನ್‌ಗಳಿಗೆ ಡೀಫಾಲ್ಟ್ ಆಗುತ್ತವೆ. ನೀನು ಅವುಗಳನ್ನು ನಂತರ ಬದಲಾಯಿಸಬಹುದು."
+  },
+  "onboarding_lists_legend": {
+    "message": "ಶಿಫಾರಸು ಮಾಡಿದ ವೆಬ್‌ಸೈಟ್ ವರ್ಗಗಳು"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ ಸೈಟ್",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ ಸೈಟ್‌ಗಳು",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸು",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಮರೆಮಾಡು",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ ಡೊಮೇನ್‌ಗಳು",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "ಮುಂದುವರಿಸು"
+  },
+  "onboarding_access_heading": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸು"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock ನಿನ್ನ ಆಯ್ಕೆ ಮಾಡಿದ ವರ್ಗಗಳು ಮತ್ತು ಸೈಟ್‌ಗಳಿಗೆ ಹೊಂದಿಸಲು ಪುಟದ ವಿಳಾಸಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಪರಿಶೀಲಿಸುತ್ತದೆ. ಅದರ ಬ್ಲಾಕಿಂಗ್ ಪರದೆಯನ್ನು ತೋರಿಸಲು ಮತ್ತು ನಿನ್ನ ಸೆಷನ್ ಮುಗಿದಾಗ ಪರಿಣಾಮ ಬೀರಿದ ಪುಟಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ಅದು ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶವನ್ನು ಬಳಸುತ್ತದೆ."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "ವರ್ಗಗಳು ಮತ್ತು ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗಳು ಯಾವುದೇ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಒಳಗೊಂಡಿರಬಹುದು. ಆದ್ದರಿಂದ Chrome ಈ ಸಾಮರ್ಥ್ಯವನ್ನು ಕೋರುತ್ತದೆ:"
+  },
+  "onboarding_access_capability": {
+    "message": "ಎಲ್ಲಾ ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ನಿಮ್ಮ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಓದಿ ಮತ್ತು ಬದಲಾಯಿಸಿ"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock ಆ ಪ್ರವೇಶವನ್ನು ನಿನ್ನ ಬ್ಲಾಕಿಂಗ್ ನಿಯಮಗಳನ್ನು ಅನ್ವಯಿಸುವಾಗ ಮಾತ್ರ ಬಳಸುತ್ತದೆ."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಿಲ್ಲ. ನೀನು ಮರುಪ್ರಯತ್ನಿಸಬಹುದು."
+  },
+  "onboarding_access_registration_error": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಾಗಿದೆ, ಆದರೆ Focus Lock ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಸೆಟಪ್ ಅನ್ನು ಮರುಪ್ರಯತ್ನಿಸು ಅಥವಾ ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+  },
+  "onboarding_access_enable_button": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸು"
+  },
+  "onboarding_access_defer_button": {
+    "message": "ಈಗ ಬೇಡ"
+  },
+  "onboarding_sync_heading": {
+    "message": "ನಿನ್ನ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಎಲ್ಲಿ ಸಂಗ್ರಹವಾಗಬೇಕೆಂದು ಆರಿಸು"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Chrome ಸಾಧನಗಳಾದ್ಯಂತ ಸಿಂಕ್ ಮಾಡು"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸಿದ ನಂತರ ಕೆಳಗಿನ ಅನುಮೋದಿತ ಡೇಟಾ Chrome Sync ಬಳಸುತ್ತದೆ."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಈ Chrome ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಉಳಿಯುತ್ತದೆ."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "ಸಿಂಕ್ ಆಗಿದೆ"
+  },
+  "onboarding_sync_local_title": {
+    "message": "ಸ್ಥಳೀಯ ಮಾತ್ರ"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock ಡೆವಲಪರ್‌ಗೆ ಏನೂ ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "ಸಿಂಕ್ ಸಕ್ರಿಯಗೊಳಿಸಿ ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸು"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "ಸಿಂಕ್ ಇಲ್ಲದೆ ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸು"
+  }
+}

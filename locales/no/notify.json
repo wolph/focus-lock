@@ -78,7 +78,7 @@
     "message": "Det finnes ikke noe nytt forsøk for datasletting."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Slå av Sync før du sletter synkroniserte data"
+    "message": "Slå av synkroniseringen før du sletter synkroniserte data"
   },
   "notify_work_gate_busy": {
     "message": "Focus Lock holder fortsatt på med en tidligere endring. Prøv igjen om et øyeblikk."
@@ -90,10 +90,10 @@
     "message": "Arbeidsfanen er utilgjengelig."
   },
   "notify_settings_sync_limit": {
-    "message": "Innstillingene overskrider grensen på 8 kB i Chrome Sync. Fjern planposter eller forkort intensjoner, og prøv igjen."
+    "message": "Innstillingene overskrider grensen på 8 kB i Chrome-synkroniseringen. Fjern planposter eller forkort intensjoner, og prøv igjen."
   },
   "notify_lists_sync_limit": {
-    "message": "Listene overskrider grensen på 8 kB i Chrome Sync. Fjern egne regler eller regler i tillatelseslisten, og prøv igjen."
+    "message": "Listene overskrider grensen på 8 kB i Chrome-synkroniseringen. Fjern egne regler eller regler i tillatelseslisten, og prøv igjen."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "en økt med hard lås pågår: fjerning av blokkerte nettsteder låses opp når den er over"

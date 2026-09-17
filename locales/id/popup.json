@@ -55,7 +55,7 @@
     "message": "Aktifkan pemblokiran situs web"
   },
   "popup_retry_button": {
-    "message": "Coba lagi"
+    "message": "Ulangi"
   },
   "popup_notice_access_revoked": {
     "message": "Sesimu berakhir karena akses situs web dicabut."
@@ -118,7 +118,7 @@
     "message": "Tidak dapat mengenali situs aktif."
   },
   "popup_resume_now": {
-    "message": "Lanjutkan sekarang"
+    "message": "Lanjut sekarang"
   },
   "popup_start_next_focus_early": {
     "message": "Mulai fokus berikutnya lebih awal"
@@ -179,6 +179,9 @@
   },
   "popup_add_allowed_domain_label": {
     "message": "Tambah domain yang diizinkan"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
     "message": "Tambah domain yang diizinkan"
@@ -325,6 +328,9 @@
         "example": "^https://example\\.com/feed"
       }
     }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domain"
   },
   "popup_rule_kind_regex": {
     "message": "Ekspresi reguler"

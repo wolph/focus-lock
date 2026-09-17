@@ -107,10 +107,10 @@
     "message": "Chỉ cho phép các trang đã chọn"
   },
   "shared_focus_time_label": {
-    "message": "Thời gian tập trung"
+    "message": "Giờ tập trung"
   },
   "shared_clock_focus_phase": {
-    "message": "giai đoạn tập trung"
+    "message": "đoạn tập trung"
   },
   "shared_clock_total_session": {
     "message": "tổng phiên"
@@ -315,13 +315,13 @@
     "message": "Bị chặn bởi danh sách chặn của bạn"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "Không có trong danh sách cho phép của bạn"
+    "message": "Không có trong danh sách cho phép"
   },
   "shared_verdict_blocked_session": {
     "message": "Bị chặn bởi phiên này"
   },
   "shared_verdict_allow_list": {
-    "message": "Có trong danh sách cho phép của bạn"
+    "message": "Có trong danh sách cho phép"
   },
   "shared_verdict_always_allowed": {
     "message": "Luôn được cho phép"
@@ -333,7 +333,7 @@
     "message": "Được loại trừ khỏi một danh mục đã chọn"
   },
   "shared_verdict_no_session": {
-    "message": "Không có phiên tập trung nào đang hoạt động"
+    "message": "Không có phiên tập trung nào"
   },
   "shared_verdict_allowed_session": {
     "message": "Được cho phép bởi phiên này"
@@ -345,7 +345,7 @@
     "message": "Video và phát trực tuyến"
   },
   "shared_category_news": {
-    "message": "Tin tức"
+    "message": "Tin"
   },
   "shared_category_mail": {
     "message": "Email"

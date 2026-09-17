@@ -34,6 +34,26 @@ async function expectFits(page: Page, locale: string, surface: string): Promise<
   expect(findings, describeOverflow(locale, surface, findings)).toEqual([]);
 }
 
+/**
+ * Chrome picks the catalogue for an extension from its own UI locale, which follows `--lang` on
+ * Linux and Windows and the operating system on macOS, where the flag, the `intl.app_locale`
+ * preference and the LANGUAGE environment variable are all ignored. A run that cannot switch the
+ * language would otherwise test English eight times over and report eight passes, so each
+ * scenario asks the extension which locale its messages came from and skips itself, with the
+ * reason, when the request did not take.
+ */
+async function requireUiLanguage(page: Page, locale: string): Promise<void> {
+  // `@@ui_locale` is the locale Chrome resolved the catalogue from, which is what decides the
+  // words on screen. `getUILanguage` only reports the browser's language preference and can say
+  // fr while every message still comes from en, so it is the wrong thing to gate on.
+  const actual: string = await page.evaluate((): string => chrome.i18n.getMessage('@@ui_locale'));
+  const wanted: string = locale.split('-')[0] ?? locale;
+  test.skip(
+    !actual.toLowerCase().replace('_', '-').startsWith(wanted.toLowerCase()),
+    `the extension resolved its messages from ${actual}, not ${locale}: this platform ignores the UI language flag`,
+  );
+}
+
 async function expectDirection(page: Page, locale: string): Promise<void> {
   const direction: string = await page.evaluate(
     (): string => document.documentElement.dir || 'ltr',
@@ -60,6 +80,7 @@ for (const locale of STRESS_LOCALES) {
       await popup.setViewportSize(POPUP_VIEWPORT);
       await popup.goto(`chrome-extension://${extensionId}/src/popup/popup.html`);
       await expect(popup.locator('.start-form')).toBeVisible();
+      await requireUiLanguage(popup, locale);
       await expectDirection(popup, locale);
       await expectFits(popup, locale, 'popup idle');
 
@@ -94,6 +115,7 @@ for (const locale of STRESS_LOCALES) {
       await popup.setViewportSize(POPUP_VIEWPORT);
       await popup.goto(`chrome-extension://${extensionId}/src/popup/popup.html`);
       await expect(popup.locator('.active-view')).toBeVisible();
+      await requireUiLanguage(popup, locale);
       await expectFits(popup, locale, 'popup active');
 
       const blocked: Page = await context.newPage();

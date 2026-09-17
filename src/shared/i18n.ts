@@ -112,12 +112,24 @@ export function t<K extends MessageKey>(key: K, ...params: Params<K>): string {
   return lookup(key, (params as readonly [Record<string, string>?])[0] ?? {});
 }
 
-/** The BCP 47 tag of the UI language, from Chrome when available and the navigator otherwise. */
+/**
+ * The BCP 47 tag of the language the messages are actually in.
+ *
+ * `@@ui_locale` is the locale Chrome resolved the catalogue from, which is the one the text on
+ * screen is written in. `getUILanguage` can differ from it: it follows the browser's language
+ * preference, which a profile can set without a matching catalogue existing. Plural rules and
+ * number formatting have to agree with the words around them, so the catalogue's own locale wins
+ * and the preference is only a fallback.
+ */
 export function uiLanguage(): string {
   const api: I18nApi | null = chromeI18n();
-  if (api !== null && typeof api.getUILanguage === 'function') {
-    const language: string = api.getUILanguage();
-    if (language !== '') return language;
+  if (api !== null) {
+    const messageLocale: string = api.getMessage('@@ui_locale');
+    if (messageLocale !== '') return messageLocale.replace('_', '-');
+    if (typeof api.getUILanguage === 'function') {
+      const preference: string = api.getUILanguage();
+      if (preference !== '') return preference;
+    }
   }
   const navigatorLanguage: unknown = (globalThis as { navigator?: { language?: unknown } })
     .navigator?.language;

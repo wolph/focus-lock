@@ -1,1 +1,167 @@
-{}
+{
+  "options_page_title": {
+    "message": "Focus Lock ಆಯ್ಕೆಗಳು"
+  },
+  "options_heading": {
+    "message": "Focus Lock ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+  },
+  "options_loading_settings": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
+  },
+  "options_privacy_loading": {
+    "message": "ಗೌಪ್ಯತಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
+  },
+  "options_save_failed": {
+    "message": "ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_blocking_heading": {
+    "message": "ಬ್ಲಾಕಿಂಗ್"
+  },
+  "options_blocking_help": {
+    "message": "ಬ್ಲಾಕ್ ಪಟ್ಟಿ ಸೆಷನ್‌ಗಳಲ್ಲಿ ಕಸ್ಟಮ್ ನಿಯಮಗಳು ಬ್ಲಾಕ್ ಮಾಡುತ್ತವೆ. ಅನುಮತಿ ಪಟ್ಟಿ ಸೆಷನ್‌ಗಳಲ್ಲಿ ತಲುಪಬಹುದಾಗಿ ಉಳಿಯುವುದೇ ಅನುಮತಿ ಪಟ್ಟಿ. ಬಂಡಲ್ ವರ್ಗಗಳು ಸಾಮಾನ್ಯ ಸಮಯ ಹಾಳುಮಾಡುವ ಸೈಟ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡುತ್ತವೆ."
+  },
+  "options_custom_blacklist_title": {
+    "message": "ಕಸ್ಟಮ್ ಬ್ಲಾಕ್ ಪಟ್ಟಿ"
+  },
+  "options_whitelist_title": {
+    "message": "ಅನುಮತಿ ಪಟ್ಟಿ"
+  },
+  "options_bundled_categories_heading": {
+    "message": "ಬಂಡಲ್ ವರ್ಗಗಳು"
+  },
+  "options_bundled_categories_help": {
+    "message": "ಸಾಮಾನ್ಯ ಸಮಯ ಹಾಳುಮಾಡುವ ಸೈಟ್‌ಗಳ ಬಂಡಲ್ ಪಟ್ಟಿಗಳು. ಇಡೀ ವರ್ಗವನ್ನು ಟಾಗಲ್ ಮಾಡು, ನಂತರ ಒಂಟಿ ಸೈಟ್‌ಗಳನ್ನು ಲಭ್ಯವಾಗಿಡಲು ಅದನ್ನು ತೆರೆ."
+  },
+  "options_schedule_heading": {
+    "message": "ವೇಳಾಪಟ್ಟಿ"
+  },
+  "options_schedule_help": {
+    "message": "ಈ ಅವಧಿಗಳ ಒಳಗೆ ಸೆಷನ್‌ಗಳು ತಾವಾಗಿಯೇ ಪ್ರಾರಂಭವಾಗುತ್ತವೆ. ಇಲ್ಲಿ ಹೊಂದಿಸಿದ ಕಠಿಣತೆ ಇಡೀ ಅವಧಿಗೆ ಅನ್ವಯಿಸುತ್ತದೆ."
+  },
+  "options_behavior_heading": {
+    "message": "ಸೆಷನ್ ವರ್ತನೆ"
+  },
+  "options_budget_heading": {
+    "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್"
+  },
+  "options_notifications_heading": {
+    "message": "ಅಧಿಸೂಚನೆಗಳು"
+  },
+  "options_privacy_heading": {
+    "message": "ಗೌಪ್ಯತೆ ಮತ್ತು ಡೇಟಾ"
+  },
+  "options_load_error_retry": {
+    "message": "ಮರುಪ್ರಯತ್ನಿಸಿ"
+  },
+  "options_load_error_delete_all": {
+    "message": "ಎಲ್ಲವನ್ನೂ ಅಳಿಸಿ ಮತ್ತೆ ಪ್ರಾರಂಭಿಸಿ"
+  },
+  "options_load_error_keep_data": {
+    "message": "ನನ್ನ ಡೇಟಾ ಉಳಿಸಿಕೊ"
+  },
+  "options_delete_all_data": {
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾವನ್ನು ಅಳಿಸಿ"
+  },
+  "options_dirty_saving": {
+    "message": "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲಾಗುತ್ತಿದೆ"
+  },
+  "options_dirty_unsaved": {
+    "message": "ಉಳಿಸದ ಬದಲಾವಣೆಗಳು"
+  },
+  "options_dirty_clean": {
+    "message": "ಉಳಿಸದ ಬದಲಾವಣೆಗಳಿಲ್ಲ"
+  },
+  "options_dirty_discard": {
+    "message": "ಬದಲಾವಣೆಗಳನ್ನು ಕೈಬಿಡಿ"
+  },
+  "options_dirty_save": {
+    "message": "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ"
+  },
+  "options_session_status_label": {
+    "message": "ಸೆಷನ್ ಸ್ಥಿತಿ"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "ಡೊಮೇನ್"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "ರೀಜೆಕ್ಸ್"
+  },
+  "options_rule_remove": {
+    "message": "ತೆಗೆದುಹಾಕಿ"
+  },
+  "options_rule_remove_aria": {
+    "message": "$PATTERN$ ಅನ್ನು ತೆಗೆದುಹಾಕಿ",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "ಇನ್ನೂ ನಿಯಮಗಳಿಲ್ಲ."
+  },
+  "options_rule_kind_aria": {
+    "message": "ನಿಯಮದ ವಿಧ"
+  },
+  "options_rule_kind_host_option": {
+    "message": "ಡೊಮೇನ್ ಅಥವಾ ಸಬ್‌ಡೊಮೇನ್"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "ರೀಜೆಕ್ಸ್ (ಪೂರ್ಣ URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "ಪ್ಯಾಟರ್ನ್"
+  },
+  "options_rule_add": {
+    "message": "ನಿಯಮ ಸೇರಿಸಿ"
+  },
+  "options_rules_help": {
+    "message": "facebook.com ಆ ಡೊಮೇನ್ ಮತ್ತು ಪ್ರತಿಯೊಂದು ಸಬ್‌ಡೊಮೇನ್ ಅನ್ನು ಒಳಗೊಳ್ಳುತ್ತದೆ. news.ycombinator.com ಆ ಸಬ್‌ಡೊಮೇನ್ ಮತ್ತು ಅದರ ಅಡಿಯಲ್ಲಿರುವ ಎಲ್ಲವನ್ನೂ ಒಳಗೊಳ್ಳುತ್ತದೆ. /youtube\\.com\\/shorts/ ಪೂರ್ಣ URL ಅನ್ನು ರೆಗ್ಯುಲರ್ ಎಕ್ಸ್‌ಪ್ರೆಶನ್ ಆಗಿ ಹೊಂದಿಸುತ್ತದೆ."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ ಧನಾತ್ಮಕ ಪೂರ್ಣಾಂಕವಾಗಿರಬೇಕು.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ ಸೊನ್ನೆ ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಪೂರ್ಣಾಂಕವಾಗಿರಬೇಕು.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ ಸೊನ್ನೆ ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿರಬೇಕು.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ ಬೆಂಬಲಿತ ನಿಮಿಷಗಳ ವ್ಯಾಪ್ತಿಯೊಳಗೆ ಇರಬೇಕು.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ ಬೆಂಬಲಿತ ದಿನಗಳ ವ್ಯಾಪ್ತಿಯೊಳಗೆ ಇರಬೇಕು.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  }
+}

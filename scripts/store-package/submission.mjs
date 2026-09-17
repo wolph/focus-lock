@@ -6,6 +6,7 @@ import {
   assertStringArray,
   isObject,
   objectKeysAre,
+  readJson,
   readRequiredFile,
   walkRegularFiles,
 } from './files.mjs';
@@ -110,7 +111,32 @@ function validateChromeVersion(version) {
   );
 }
 
-export function validateBuiltManifest(manifest, submission) {
+const MESSAGE_REFERENCE = /^__MSG_([A-Za-z0-9_@]+)__$/u;
+
+/**
+ * The manifest declares its name and description as message keys so the store listing is localised
+ * with the rest of the UI. The store compares its own English text against what the default locale
+ * says, so a key is resolved through that catalogue before the comparison rather than skipped.
+ */
+export function resolveManifestMessage(rootDirectory, manifest, value, label) {
+  const reference = MESSAGE_REFERENCE.exec(value);
+  if (reference === null) return value;
+  const key = reference[1];
+  assertString(manifest.default_locale, 'Built manifest default_locale');
+  const messages = readJson(
+    rootDirectory,
+    `dist/_locales/${manifest.default_locale}/messages.json`,
+    'default locale catalogue',
+  );
+  const entry = messages[key];
+  assert(
+    isObject(entry) && typeof entry.message === 'string' && entry.message !== '',
+    `${label} names ${key}, which the ${manifest.default_locale} catalogue does not define`,
+  );
+  return entry.message;
+}
+
+export function validateBuiltManifest(manifest, submission, rootDirectory) {
   assert(isObject(manifest), 'Built manifest must be an object');
   assert(
     !Object.hasOwn(manifest, 'key'),
@@ -139,7 +165,13 @@ export function validateBuiltManifest(manifest, submission) {
     'Submission version must match built manifest version',
   );
   assert(
-    submission.shortDescription === manifest.description,
+    submission.shortDescription ===
+      resolveManifestMessage(
+        rootDirectory,
+        manifest,
+        manifest.description,
+        'Built manifest description',
+      ),
     'Submission shortDescription must match built manifest description',
   );
   assert(

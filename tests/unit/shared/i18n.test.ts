@@ -17,6 +17,7 @@ function stubChrome(language: string, translations: Record<string, string>): Chr
     i18n: {
       getMessage: (key: string, subs: string[] = []): string => {
         if (key === '@@bidi_dir') return ['ar', 'he', 'fa'].includes(language) ? 'rtl' : 'ltr';
+        if (key === '@@ui_locale') return language.replace('-', '_');
         const text: string | undefined = translations[key];
         return text === undefined
           ? ''
@@ -66,6 +67,28 @@ describe('t with chrome.i18n', () => {
     applyDocumentLocale(doc);
     expect(doc.documentElement.lang).toBe('ar');
     expect(doc.documentElement.dir).toBe('rtl');
+  });
+});
+
+describe('uiLanguage', () => {
+  it('prefers the locale the catalogue was resolved from over the browser preference', () => {
+    vi.stubGlobal('chrome', {
+      i18n: {
+        getMessage: (key: string): string => (key === '@@ui_locale' ? 'en_US' : ''),
+        getUILanguage: (): string => 'fr',
+      },
+    });
+    expect(uiLanguage()).toBe('en-US');
+  });
+
+  it('falls back to the browser preference when no catalogue locale is reported', () => {
+    vi.stubGlobal('chrome', {
+      i18n: {
+        getMessage: (): string => '',
+        getUILanguage: (): string => 'fr',
+      },
+    });
+    expect(uiLanguage()).toBe('fr');
   });
 });
 

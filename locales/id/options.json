@@ -80,6 +80,12 @@
   "options_session_status_label": {
     "message": "Status sesi"
   },
+  "options_rule_kind_host_badge": {
+    "message": "domain"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
   "options_rule_remove": {
     "message": "Hapus"
   },
@@ -109,6 +115,9 @@
   },
   "options_rule_pattern_placeholder_host": {
     "message": "detik.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
     "message": "Tambah aturan"
@@ -731,6 +740,9 @@
   },
   "options_privacy_open_chrome_settings": {
     "message": "Buka pengaturan izin Chrome"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
   },
   "options_privacy_sync_switch_label": {
     "message": "Sinkronkan data Focus Lock di semua perangkat Chrome"

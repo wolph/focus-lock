@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "ตั้งค่า Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "การตั้งค่า Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "ขั้นตอนที่ $STEP$ จาก $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "กู้คืนความคืบหน้าการตั้งค่าที่บันทึกไว้ไม่ได้ เริ่มใหม่ด้วยค่าเริ่มต้นปัจจุบัน"
+  },
+  "onboarding_complete_heading": {
+    "message": "ตั้งค่าเสร็จสิ้น"
+  },
+  "onboarding_complete_body": {
+    "message": "บันทึกตัวเลือกของคุณแล้ว เปิด Focus Lock จากแถบเครื่องมือของ Chrome เพื่อเริ่มเซสชัน"
+  },
+  "onboarding_error_heading": {
+    "message": "ใช้งานหน้าตั้งค่าไม่ได้"
+  },
+  "onboarding_error_body": {
+    "message": "โหลดหน้าตั้งค่าไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "onboarding_retry_button": {
+    "message": "ลองอีกครั้ง"
+  },
+  "onboarding_save_error": {
+    "message": "บันทึกความคืบหน้าการตั้งค่าไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "onboarding_enable_error": {
+    "message": "เปิดใช้งานการบล็อกเว็บไซต์ไม่สำเร็จ ลองอีกครั้ง"
+  },
+  "onboarding_finish_error": {
+    "message": "ตั้งค่าให้เสร็จสมบูรณ์ไม่สำเร็จ แต่ตัวเลือกของคุณยังถูกบันทึกไว้ ลองอีกครั้ง"
+  },
+  "onboarding_lists_heading": {
+    "message": "เลือกรายการบล็อกเริ่มต้นของคุณ"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "ใน $MODE$ หมวดหมู่ที่เปิดใช้งานและเว็บไซต์ที่บล็อกเพิ่มเติมจะใช้งานไม่ได้",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "ใน $MODE$ ทุกเว็บไซต์จะใช้งานไม่ได้ ยกเว้นเว็บไซต์ในรายการอนุญาตของคุณ",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "ตัวเลือกเหล่านี้จะเป็นค่าเริ่มต้นของเซสชันในอนาคต แก้ไขได้ภายหลัง"
+  },
+  "onboarding_lists_legend": {
+    "message": "หมวดหมู่เว็บไซต์ที่แนะนำ"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ เว็บไซต์",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ เว็บไซต์",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "แสดงเว็บไซต์ในหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "ซ่อนเว็บไซต์ในหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "โดเมนในหมวด $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "ดำเนินการต่อ"
+  },
+  "onboarding_access_heading": {
+    "message": "เปิดใช้งานการบล็อกเว็บไซต์"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock ตรวจสอบที่อยู่หน้าเว็บในเครื่องเพื่อจับคู่กับหมวดหมู่และเว็บไซต์ที่คุณเลือกไว้ และใช้สิทธิ์เข้าถึงเว็บไซต์เพื่อแสดงหน้าจอบล็อกและคืนค่าหน้าที่ได้รับผลกระทบเมื่อเซสชันสิ้นสุด"
+  },
+  "onboarding_access_capability_intro": {
+    "message": "หมวดหมู่และโดเมนที่กำหนดเองอาจครอบคลุมเว็บไซต์ใดก็ได้ Chrome จึงจะขอสิทธิ์ต่อไปนี้:"
+  },
+  "onboarding_access_capability": {
+    "message": "อ่านและเปลี่ยนแปลงข้อมูลทั้งหมดของคุณในเว็บไซต์ทั้งหมด"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock ใช้สิทธิ์นี้เฉพาะตอนใช้งานกฎการบล็อกของคุณเท่านั้น"
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome ไม่อนุญาตให้เข้าถึงเว็บไซต์ ลองอีกครั้งได้"
+  },
+  "onboarding_access_registration_error": {
+    "message": "ได้รับอนุญาตให้เข้าถึงเว็บไซต์แล้ว แต่ Focus Lock เปิดใช้งานการบล็อกไม่สำเร็จ ลองตั้งค่าใหม่หรือโหลดส่วนขยายใหม่"
+  },
+  "onboarding_access_enable_button": {
+    "message": "เปิดใช้งานการบล็อกเว็บไซต์"
+  },
+  "onboarding_access_defer_button": {
+    "message": "ไว้ทีหลัง"
+  },
+  "onboarding_sync_heading": {
+    "message": "เลือกที่จัดเก็บการตั้งค่าของคุณ"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "ซิงก์ข้ามอุปกรณ์ Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "ข้อมูลที่อนุญาตด้านล่างจะใช้ Chrome Sync หลังจากตั้งค่าเสร็จสิ้น"
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "ข้อมูล Focus Lock ทั้งหมดจะอยู่ในโปรไฟล์ Chrome นี้เท่านั้น"
+  },
+  "onboarding_sync_synced_title": {
+    "message": "ซิงก์แล้ว"
+  },
+  "onboarding_sync_local_title": {
+    "message": "ในเครื่องเท่านั้น"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "ไม่มีข้อมูลใดถูกส่งไปยังผู้พัฒนา Focus Lock"
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "เสร็จสิ้นการตั้งค่าพร้อมเปิดใช้ซิงก์"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "เสร็จสิ้นการตั้งค่าโดยไม่ใช้ซิงก์"
+  }
+}

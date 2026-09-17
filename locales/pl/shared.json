@@ -239,6 +239,24 @@
       }
     }
   },
+  "shared_minutes_one": {
+    "message": "$COUNT$ minuta",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ minuty",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
   "shared_updating_session": {
     "message": "Aktualizujemy sesję"
   },
@@ -591,7 +609,7 @@
     "message": "Zakończ tę sesję"
   },
   "shared_minutes_few": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ minuty",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -600,7 +618,7 @@
     }
   },
   "shared_minutes_many": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ minut",
     "placeholders": {
       "COUNT": {
         "content": "$1",
