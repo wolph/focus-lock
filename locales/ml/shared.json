@@ -128,7 +128,7 @@
     "message": "Focus Lock ആരംഭിക്കുന്നു. നിങ്ങളുടെ തിരഞ്ഞെടുത്ത നിയമങ്ങൾ പ്രയോഗിക്കുന്നു."
   },
   "shared_popup_closure_cleanup": {
-    "message": "സെഷൻ ended. Finishing browser cleanup."
+    "message": "സെഷൻ അവസാനിച്ചു. ബ്രൗസർ ക്ലീനപ്പ് പൂർത്തിയാക്കുന്നു."
   },
   "shared_popup_transition_cleanup": {
     "message": "Focus Lock ആരംഭിക്കാൻ കഴിഞ്ഞില്ല. ബ്രൗസർ ക്ലീനআപ് പൂർത്തിയാക്കുന്നു."
@@ -140,7 +140,7 @@
     "message": "Focus Lock ബ്രൗസർ ക്ലീനആപ് പൂർത്തിയാക്കാൻ കഴിഞ്ഞില്ല."
   },
   "shared_retry_cleanup": {
-    "message": "ക്ലീനআപ് വീണ്ടും ശ്രമിക്കുക"
+    "message": "ക്ലീനപ്പ് ആവർത്തിക്കുക"
   },
   "shared_end_failed": {
     "message": "സെഷൻ അവസാനിപ്പിക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
@@ -364,7 +364,7 @@
     "message": "മെയിൽ"
   },
   "shared_category_shopping": {
-    "message": "കരി വാങ്ങൽ"
+    "message": "ഷോപ്പിംഗ്"
   },
   "shared_category_gaming": {
     "message": "ഗെയിമിംഗ്"
@@ -376,7 +376,7 @@
     "message": "സെറ്റിംഗുകൾ"
   },
   "shared_synced_lists": {
-    "message": "തടയുക and allow lists"
+    "message": "ബ്ലോക്കും അനുവാദ ലിസ്റ്റുകളും"
   },
   "shared_synced_credit": {
     "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ്"
@@ -424,7 +424,7 @@
     "message": "ഷെഡ്യൂൾ"
   },
   "shared_section_behavior": {
-    "message": "സെഷൻ behavior"
+    "message": "സെഷൻ പെരുമാറ്റം"
   },
   "shared_section_budget": {
     "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ്"
@@ -529,7 +529,7 @@
     "message": "നിങ്ങളുടെ അടുത്ത ഘട്ടം"
   },
   "shared_overlay_back_to_work": {
-    "message": "പ്രവർത്തനത്തിലേക്ക് മടങ്ങുക"
+    "message": "ജോലിയിലേക്ക് മടങ്ങുക"
   },
   "shared_overlay_choose_work_tab": {
     "message": "ഒരു പ്രവർത്തന ടാബ് തിരഞ്ഞെടുക്കുക"
@@ -562,7 +562,7 @@
     "message": "നിങ്ങളുടെ നിലവിലെ ജോലി തുടരുക"
   },
   "shared_overlay_pause_action": {
-    "message": "എല്ലാ സൈറ്റുകൾ അണ്‍ലോക്ക് ചെയ്യുക"
+    "message": "എല്ലാ സൈറ്റും അൺലോക്ക് ചെയ്യുക"
   },
   "shared_overlay_unlock_site_action": {
     "message": "ഈ സൈറ്റ് അണ്‍ലോക്ക് ചെയ്യുക"

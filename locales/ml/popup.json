@@ -16,7 +16,7 @@
     "message": "സെറ്റിംഗുകൾ"
   },
   "popup_open_settings_failed": {
-    "message": "Could not open സെറ്റിംഗുകൾ. Try again."
+    "message": "സെറ്റിംഗുകൾ തുറക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "popup_settings_load_failed": {
     "message": "സെഷൻ ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. പോപ്പപ്പ് വീണ്ടും ലോഡ് ചെയ്ത് ശ്രമിക്കുക. സ്ഥിരതകൾ കാണിച്ചിരിക്കുന്നു."
@@ -52,7 +52,7 @@
     "message": "വെബ്സൈറ്റ് ആക്സസ്സ് നൽകിയിരിക്കുന്നു എന്നാൽ Focus Lock ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാൻ കഴിഞ്ഞില്ല. സെറ്റാപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ വീണ്ടും ലോഡ് ചെയ്യുക."
   },
   "popup_enable_blocking_button": {
-    "message": "സജീവം website blocking"
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് സജീവമാക്കുക"
   },
   "popup_retry_button": {
     "message": "വീണ്ടും ശ്രമിക്കുക"
@@ -88,13 +88,13 @@
     "message": "നിങ്ങളുടെ ക്രമീകരണങ്ങൾ, പട്ടികകൾ, സ്ഥിതിവിവരം സൂക്ഷിക്കുക. നിലവിലെ സെഷൻ അവസ്ഥ മായ്ച്ചുകളയുക."
   },
   "popup_delete_all_confirm_button": {
-    "message": "കണ്ടെത്തുക everything and start over"
+    "message": "എല്ലാം ഇല്ലാതാക്കി വീണ്ടും തുടങ്ങുക"
   },
   "popup_keep_data_button": {
     "message": "എന്റെ ഡാറ്റ സൂക്ഷിക്കുക"
   },
   "popup_delete_all_button": {
-    "message": "കണ്ടെത്തുക all Focus Lock data"
+    "message": "എല്ലാ Focus Lock ഡാറ്റയും ഇല്ലാതാക്കുക"
   },
   "popup_setup_status_unavailable": {
     "message": "സെറ്റാപ്പ് അവസ്ഥ ലഭ്യമല്ല. Focus Lock വീണ്ടും ലോഡ് ചെയ്ത് ശ്രമിക്കുക."
@@ -166,7 +166,7 @@
     "message": "വർക്ക് ടാബ് മാറ്റുക"
   },
   "popup_session_actions_summary": {
-    "message": "സെഷൻ actions"
+    "message": "സെഷൻ പ്രവർത്തനങ്ങൾ"
   },
   "popup_site_access_credit": {
     "message": "$CREDIT$ സൈറ്റ് ആക്സസ്സ് ക്രെഡിറ്റ്",
@@ -278,7 +278,7 @@
     }
   },
   "popup_back_to_work": {
-    "message": "വർക്കിലേക്ക് തിരിച്ചുപോകുക"
+    "message": "ജോലിയിലേക്ക് മടങ്ങുക"
   },
   "popup_destination_unavailable": {
     "message": "ലക്ഷ്യ ലഭ്യമല്ല"
@@ -457,13 +457,13 @@
     "message": "ഈ സെഷനിനേക്കുറിച്ച് വിഭാഗ കൂടാതെ നിയമ മാറ്റങ്ങൾ."
   },
   "popup_open_settings_defaults": {
-    "message": "Open സെറ്റിംഗുകൾ for permanent defaults"
+    "message": "സ്ഥിരമായ സ്ഥിരസ്ഥിതികൾക്കായി സെറ്റിംഗുകൾ തുറക്കുക"
   },
   "popup_rule_details_label": {
-    "message": "സെഷൻ rule details"
+    "message": "സെഷൻ നിയമ വിശദാംശങ്ങൾ"
   },
   "popup_session_type_legend": {
-    "message": "സെഷൻ type"
+    "message": "സെഷൻ തരം"
   },
   "popup_session_type_flexible": {
     "message": "വഴക്കമുള്ള"
@@ -556,7 +556,7 @@
     "message": "മാറ്റുക"
   },
   "popup_session_settings_summary": {
-    "message": "സെഷൻ settings"
+    "message": "സെഷൻ സെറ്റിംഗുകൾ"
   },
   "popup_choose_work_tab_label": {
     "message": "വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക"
@@ -610,7 +610,7 @@
     "message": "നിങ്ങളുടെ നിലവിലെ ടാബ് ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "popup_choose_work_tab_copy": {
-    "message": "നിങ്ങളുടെ വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക അല്ലെങ്കിൽ മാറ്റിസ്ഥാപിക്കുക."
+    "message": "ജോലി ടാബ് തിരഞ്ഞെടുക്കുക അല്ലെങ്കിൽ മാറ്റുക."
   },
   "popup_saving_work_tab": {
     "message": "വർക്ക് ടാബ് സംരക്ഷിക്കുന്നു..."

@@ -1,9 +1,9 @@
 {
   "notify_session_complete_title": {
-    "message": "Focus സെഷൻ complete"
+    "message": "ഫോക്കസ് സെഷൻ പൂർത്തിയായി"
   },
   "notify_session_complete_body": {
-    "message": "Your focus സെഷൻ finished."
+    "message": "നിന്റെ ഫോക്കസ് സെഷൻ അവസാനിച്ചു."
   },
   "notify_schedule_window_body": {
     "message": "$END$ വരെ പൂട്ടിയിരിക്കുന്നു.",
@@ -15,7 +15,7 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Focus schedule could not ആരംഭിക്കുക"
+    "message": "ഫോക്കസ് ഷെഡ്യൂൾ ആരംഭിക്കാൻ കഴിഞ്ഞില്ല"
   },
   "notify_schedule_unavailable_body": {
     "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമല്ല. സെറ്റപ്പ് പൂർത്തിയാക്കുക അല്ലെങ്കിൽ വെബ്സൈറ്റ് ആക്സസ് അനുവദിക്കുക, എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക."
@@ -48,7 +48,7 @@
     "message": "Focus Lock-ന് വെബ്സൈറ്റ് ആക്സസ് പരിശോധിക്കാനായില്ല. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Website access is granted, but Focus Lock could not സജീവമാക്കുക blocking. Retry setup or reload the extension."
+    "message": "വെബ്സൈറ്റ് ആക്സസ് അനുവദിച്ചു, പക്ഷേ Focus Lock-ന് ബ്ലോക്കിംഗ് സജീവമാക്കാൻ കഴിഞ്ഞില്ല. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
   },
   "notify_website_access_unavailable_cleanup_failed": {
     "message": "വെബ്സൈറ്റ് ആക്സസ് ലഭ്യമല്ല, കൂടാതെ Focus Lock-ന് ബ്ലോക്കിംഗ് ക്ലീൻഅപ്പ് പൂർത്തിയാക്കാനുമായില്ല. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
@@ -57,7 +57,7 @@
     "message": "Focus Lock-ന് പൊരുത്തക്കേടുള്ള വെബ്സൈറ്റ് ആക്സസ് സ്ഥിതി ലഭിച്ചു. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
   },
   "notify_boot_not_finished": {
-    "message": "Focus Lock തുടങ്ങൽ പൂർത്തിയാക്കിയില്ല: $REASON$",
+    "message": "Focus Lock ആരംഭം പൂർത്തിയാക്കിയില്ല: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -78,7 +78,7 @@
     "message": "ഡാറ്റ ക്ലിയർ വീണ്ടും ശ്രമിക്കൽ ലഭ്യമല്ല."
   },
   "notify_disable_sync_before_delete": {
-    "message": "നിഷ്ക്രിയം Sync before deleting synced data"
+    "message": "സിങ്ക് ചെയ്ത ഡാറ്റ ഇല്ലാതാക്കുന്നതിന് മുമ്പ് Sync നിർജ്ജീവമാക്കുക"
   },
   "notify_work_gate_busy": {
     "message": "Focus Lock ഇപ്പോഴും മുൻപത്തെ മാറ്റം പൂർത്തിയാക്കുകയാണ്. അല്പസമയത്തിനുള്ളിൽ വീണ്ടും ശ്രമിക്കുക."
@@ -90,45 +90,45 @@
     "message": "വർക്ക് ടാബ് ലഭ്യമല്ല."
   },
   "notify_settings_sync_limit": {
-    "message": "സെറ്റിംഗുകൾ exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again."
+    "message": "സെറ്റിംഗുകൾ 8 KB Chrome Sync പരിധി കവിയുന്നു. ഷെഡ്യൂൾ എൻട്രികൾ നീക്കം ചെയ്യുക അല്ലെങ്കിൽ ഉദ്ദേശ്യങ്ങൾ ചെറുതാക്കുക, പിന്നെ വീണ്ടും ശ്രമിക്കുക."
   },
   "notify_lists_sync_limit": {
     "message": "ലിസ്റ്റുകൾ 8 KB Chrome Sync പരിധി കവിയുന്നു. കസ്റ്റം അല്ലെങ്കിൽ അനുവദന പട്ടിക നിയമങ്ങൾ നീക്കം ചെയ്യുക, എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "a hard സെഷൻ is running: removing തടഞ്ഞിരിക്കുന്നു sites unlocks when it ends"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: ബ്ലോക്ക് ചെയ്ത സൈറ്റുകൾ നീക്കം ചെയ്യുന്നത് അത് അവസാനിക്കുമ്പോൾ അൺലോക്ക് ആകും"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a hard സെഷൻ is running: new whitelist entries unlock when it ends"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: പുതിയ വൈറ്റ്‌ലിസ്റ്റ് എൻട്രികൾ അത് അവസാനിക്കുമ്പോൾ അൺലോക്ക് ആകും"
   },
   "notify_guard_lists_disable_category": {
-    "message": "a hard സെഷൻ is running: disabling categories unlocks when it ends"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: വിഭാഗങ്ങൾ നിർജ്ജീവമാക്കുന്നത് അത് അവസാനിക്കുമ്പോൾ അൺലോക്ക് ആകും"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "a hard സെഷൻ is running: new exclusions unlock when it ends"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: പുതിയ ഒഴിവാക്കലുകൾ അത് അവസാനിക്കുമ്പോൾ അൺലോക്ക് ആകും"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a hard സെഷൻ is running: weakening the default strictness waits until it ends"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: സ്ഥിരസ്ഥിതി കടുപ്പം കുറയ്ക്കുന്നത് അത് അവസാനിക്കുന്നത് വരെ കാത്തിരിക്കും"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "a hard സെഷൻ is running: shortening the deliberation delay weakens the gate"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: വിചിന്തന കാലതാമസം ചെറുതാക്കുന്നത് ഗേറ്റിനെ ദുർബലമാക്കും"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "a hard സെഷൻ is running: dropping the typed phrase weakens the gate"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: ടൈപ്പ് ചെയ്യേണ്ട വാക്യം ഒഴിവാക്കുന്നത് ഗേറ്റിനെ ദുർബലമാക്കും"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "a hard സെഷൻ is running: raising the pause earn rate funds more escapes"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: പോസ് സമ്പാദന നിരക്ക് കൂട്ടുന്നത് കൂടുതൽ രക്ഷപ്പെടലുകൾക്ക് ഫണ്ട് നൽകും"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "a hard സെഷൻ is running: raising the pause cap funds more escapes"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: പോസ് പരിധി കൂട്ടുന്നത് കൂടുതൽ രക്ഷപ്പെടലുകൾക്ക് ഫണ്ട് നൽകും"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "a hard സെഷൻ is running: shortening pauses lowers their cost"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: പോസുകൾ ചെറുതാക്കുന്നത് അവയുടെ ചെലവ് കുറയ്ക്കും"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "a hard സെഷൻ is running: shortening unlocks lowers their cost"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: അൺലോക്കുകൾ ചെറുതാക്കുന്നത് അവയുടെ ചെലവ് കുറയ്ക്കും"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a hard സെഷൻ is running: its schedule entry cannot be weakened until it ends"
+    "message": "ഒരു ഹാർഡ് സെഷൻ പ്രവർത്തിക്കുന്നു: അത് അവസാനിക്കുന്നത് വരെ അതിന്റെ ഷെഡ്യൂൾ എൻട്രി ദുർബലമാക്കാൻ കഴിയില്ല"
   }
 }

@@ -92,7 +92,7 @@
     "message": "dienas"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "sakrāts $COUNT$ iesaldēšanas marķieris",
+    "message": "sakrāts $COUNT$ iesaldēšanas žetons",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "sakrāti $COUNT$ iesaldēšanas marķieri",
+    "message": "sakrāti $COUNT$ iesaldēšanas žetoni",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -318,7 +318,7 @@
     "message": "dienu"
   },
   "stats_streak_freeze_tokens_zero": {
-    "message": "sakrāts $COUNT$ iesaldēšanas marķieru",
+    "message": "sakrāts $COUNT$ iesaldēšanas žetonu",
     "placeholders": {
       "COUNT": {
         "content": "$1",
