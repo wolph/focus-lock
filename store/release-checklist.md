@@ -1,6 +1,6 @@
 # Chrome Web Store release candidate 0.2.0
 
-Candidate source: `be6c3c4`, which is the tree the package was built from. Verified on 17 September
+Candidate source: `HEAD` after the popup work, which is the tree the package was built from. Verified on 17 September
 2026 with Node.js 24.18.0 and Chrome for Testing 151.0.7922.34.
 
 This candidate ships the interface in 53 languages. Chrome selects the catalogue from the browser's
@@ -43,7 +43,7 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
 
 - **Three scenarios still fail, all of them the screenshot gap.** `store-screenshots.spec.ts`
   refuses this build: the tracked images record build `4e99bfe76718` captured at
-  `2026-09-12T12:38:33.853Z`, and this build is `138afc94221a`. One scenario fails on that
+  `2026-09-12T12:38:33.853Z`, and this build is `4ff505ffb345`. One scenario fails on that
   provenance check, one on `04-stats.png` differing from the tracked canonical PNG, and the third
   runs the same capture under a Pago Pago timezone and inherits the difference. The spec is correct
   to fail. Clearing it means recapturing the five images and having a person review them, which
@@ -71,8 +71,8 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
 ## Package
 
 - Archive: `release/focus-lock-0.2.0.zip`
-- SHA-256: `b6c509e07f2ce49d8a22defec58360b01e578acfdda0b88e89c625447e45f9b8`
-- Build tree SHA-256: `138afc94221ab28481d7509a431a6863d73084f7543cd50bf2c880352cfe0477`, over the 94
+- SHA-256: `d00d4c0a7f468e648538fdb5662592710d760233aa1acf3f0df147e39bb1ec7a`
+- Build tree SHA-256: `4ff505ffb345ffb821791ecae41ed256eb8a1a58372e14c9413c5621d28173e6`, over the 94
   files in `dist`, by the digest `store-screenshots.spec.ts` uses to decide whether a capture came
   from the build in front of it.
 - The archive contains 94 files. That is 53 more than 0.1.1, and all 53 are message catalogues, so

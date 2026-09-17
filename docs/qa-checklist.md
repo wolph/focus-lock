@@ -194,7 +194,7 @@ since the grep was written. Both mistakes were present when this section was fir
 
 ### quiet-popup.spec.ts (3)
 
-- a gate opened elsewhere is visible while session actions are closed
+- a gate opened elsewhere is visible alongside the session actions
 - an invalid custom duration reveals and focuses its field
 - the compact start form preserves edited settings and submits the visible plan
 

@@ -149,7 +149,10 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
       activeGate === null &&
       document.activeElement === document.body
     ) {
-      viewRef.current?.querySelector<HTMLElement>('.active-core button:enabled')?.focus();
+      // Anywhere in the view, not just its core: the core's only always-enabled button was one of
+      // the two that existed to reveal the chooser, and both are gone. The first enabled control
+      // is now whichever of the chooser, the spend actions or End comes first.
+      viewRef.current?.querySelector<HTMLElement>('button:enabled')?.focus();
     }
     previousGate.current = activeGate;
   }, [activeGate]);

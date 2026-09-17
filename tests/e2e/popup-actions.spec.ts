@@ -1,7 +1,6 @@
 import type { Locator, Page } from '@playwright/test';
 import type { Settings } from '../../src/shared/types';
 import { expect, sendExtensionRequest, startTestSession, test } from './fixtures';
-import { revealSessionActions } from './popup-disclosures';
 
 test('popup shows an unlock confirmation and a red End session control', async ({
   context,
@@ -21,8 +20,8 @@ test('popup shows an unlock confirmation and a red End session control', async (
   await site.goto(siteUrl('/plain.html'));
   await startTestSession(extPage, { duration: { kind: 'timed', minutes: 5 } });
   await expect(site.locator('focus-lock-overlay')).toBeAttached();
-  await expect(extPage.getByRole('button', { name: 'End session', exact: true })).toBeHidden();
-  await revealSessionActions(extPage);
+  // End session is on screen from the moment the popup opens, by product rule.
+  // See docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
   await expect(extPage.getByRole('button', { name: 'End session', exact: true })).toBeVisible();
   for (const theme of ['light', 'dark']) {
     await extPage.evaluate((value: string): void => {

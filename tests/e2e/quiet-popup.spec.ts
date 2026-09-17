@@ -33,8 +33,8 @@ test('the compact start form preserves edited settings and submits the visible p
   const snapshot: SessionSnapshotV2 = await sendExtensionRequest(extPage, { type: 'getSnapshot' });
   expect(snapshot.config?.duration).toEqual({ kind: 'timed', minutes: 37 });
   expect(snapshot.config?.intention).toBe('Review the release notes');
-  await expect(extPage.getByRole('button', { name: 'End session', exact: true })).toBeHidden();
-  await openPopupSection(extPage, 'Session actions');
+  // End session is on screen from the moment the popup opens, by product rule.
+  // See docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
   await expect(extPage.getByRole('button', { name: 'End session', exact: true })).toBeVisible();
 });
 
@@ -53,10 +53,11 @@ test('an invalid custom duration reveals and focuses its field', async ({ extPag
   await expect(extPage.getByRole('alert')).toContainText('greater than zero');
 });
 
-test('a gate opened elsewhere is visible while session actions are closed', async ({ extPage }) => {
+test('a gate opened elsewhere is visible alongside the session actions', async ({ extPage }) => {
   await startTestSession(extPage, { strictness: 'friction' });
-  await expect(extPage.locator('summary').filter({ hasText: /^Session actions$/ })).toBeVisible();
-  await expect(extPage.getByRole('button', { name: 'End session', exact: true })).toBeHidden();
+  // End session is on screen from the moment the popup opens, by product rule.
+  // See docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
+  await expect(extPage.getByRole('button', { name: 'End session', exact: true })).toBeVisible();
   const response: CommandResponseV2<SessionCommandResultCodeV2> = await sendExtensionRequest(
     extPage,
     { type: 'openEndGate' },
