@@ -1,12 +1,12 @@
 {
   "onboarding_page_title": {
-    "message": "Focus Lock'u ayarla"
+    "message": "Focus Lock'u kur"
   },
   "onboarding_eyebrow": {
     "message": "Focus Lock kurulumu"
   },
   "onboarding_progress": {
-    "message": "$STEP$ / $TOTAL$ adım",
+    "message": "$TOTAL$ adımdan $STEP$. adım",
     "placeholders": {
       "STEP": {
         "content": "$1",
@@ -19,37 +19,37 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Kurulum verileri tarayıcıda depolanıyor. Tarayıcı verilerini temizlerseniz kurulumu yeniden tamamlamanız gerekecek."
+    "message": "Kayıtlı kurulum ilerlemen geri getirilemedi. Şu anki varsayılanlarınla baştan başlıyoruz."
   },
   "onboarding_complete_heading": {
-    "message": "Kurulum tamamlandı!"
+    "message": "Kurulum tamam"
   },
   "onboarding_complete_body": {
-    "message": "Focus Lock artık web sitelerini engellemeye hazır."
+    "message": "Seçimlerin kaydedildi. Bir seans başlatmak için Chrome araç çubuğundan Focus Lock'u aç."
   },
   "onboarding_error_heading": {
-    "message": "Kurulum hatası"
+    "message": "Kurulum kullanılamıyor"
   },
   "onboarding_error_body": {
-    "message": "Kurulum yüklenemedi. Yeniden dene."
+    "message": "Kurulum yüklenemedi. Tekrar dene."
   },
   "onboarding_retry_button": {
-    "message": "Yeniden dene"
+    "message": "Tekrar dene"
   },
   "onboarding_save_error": {
-    "message": "Kurulum ilerleme kaydedilemedi. Yeniden dene."
+    "message": "Kurulum ilerlemesi kaydedilemedi. Tekrar dene."
   },
   "onboarding_enable_error": {
-    "message": "Website engelleme etkinleştirilemiyor. Yeniden dene."
+    "message": "Site engelleme açılamadı. Tekrar dene."
   },
   "onboarding_finish_error": {
-    "message": "Kurulum tamamlanamadı. Seçimleriniz hala kaydedildi. Yeniden dene."
+    "message": "Kurulum tamamlanamadı. Seçimlerin kayıtlı kaldı. Tekrar dene."
   },
   "onboarding_lists_heading": {
-    "message": "Başlangıç engelleme listesini seç"
+    "message": "Başlangıç engelleme listeni seç"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "$MODE$ modunda, etkinleştirilen kategoriler ve ek engellenen siteler kullanılamaz.",
+    "message": "$MODE$ modunda, açık kategoriler ve ayrıca engellenen siteler kullanılamaz.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "$MODE$ modunda, izin listenizde olanlar dışında tüm siteler kullanılamaz.",
+    "message": "$MODE$ modunda, izin listendekiler dışında hiçbir site kullanılamaz.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,10 +67,10 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "Bu seçimler gelecek seanslar için varsayılan olur. Daha sonra düzenleyebilirsin."
+    "message": "Bu seçimler sonraki seansların varsayılanı olur. Daha sonra değiştirebilirsin."
   },
   "onboarding_lists_legend": {
-    "message": "Önerilen web sitesi kategorileri"
+    "message": "Önerilen site kategorileri"
   },
   "onboarding_site_count_one": {
     "message": "$COUNT$ sitesi",
@@ -82,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ siteler",
+    "message": "$COUNT$ site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "onboarding_category_domains_label": {
-    "message": "$CATEGORY$ alanları",
+    "message": "$CATEGORY$ alan adları",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -118,60 +118,60 @@
     }
   },
   "onboarding_continue_button": {
-    "message": "Devam et"
+    "message": "Devam"
   },
   "onboarding_access_heading": {
-    "message": "Website engellemeyi etkinleştir"
+    "message": "Site engellemeyi aç"
   },
   "onboarding_access_local_matching": {
-    "message": "Focus Lock, seçilen kategorilerin ve sitelerin eşleştirilmesi için sayfa adreslerini yerel olarak kontrol eder. Engelleme ekranını göstermek ve seansın bittiğinde etkilenen sayfaları geri yüklemek için website erişimini kullanır."
+    "message": "Focus Lock, seçtiğin kategori ve sitelerle eşleştirebilmek için sayfa adreslerini cihazında denetler. Site erişimini, engelleme ekranını göstermek ve seans bittiğinde etkilenen sayfaları geri yüklemek için kullanır."
   },
   "onboarding_access_capability_intro": {
-    "message": "Kategoriler ve özel alanlar herhangi bir web sitesini içerebilir. Chrome bu nedenle bu özelliği isteyecektir:"
+    "message": "Kategoriler ve özel alan adları herhangi bir siteyi kapsayabilir. Bu yüzden Chrome şu yetkiyi isteyecek:"
   },
   "onboarding_access_capability": {
-    "message": "Tüm web sitelerinde tüm verilerinizi oku ve değiştir"
+    "message": "Tüm web sitelerindeki verilerinizin tümünü okuma ve değiştirme"
   },
   "onboarding_access_scope_note": {
     "message": "Focus Lock bu erişimi yalnızca engelleme kurallarını uygularken kullanır."
   },
   "onboarding_access_denied": {
-    "message": "Chrome website erişim vermedi. Yeniden deneyebilirsin."
+    "message": "Chrome site erişimi vermedi. Yeniden deneyebilirsin."
   },
   "onboarding_access_registration_error": {
-    "message": "Website engelleme kuralı kaydedilemedi."
+    "message": "Site erişimi verildi ama Focus Lock engellemeyi açamadı. Kurulumu yinele ya da uzantıyı yeniden yükle."
   },
   "onboarding_access_enable_button": {
-    "message": "Website engellemeyi etkinleştir"
+    "message": "Site engellemeyi aç"
   },
   "onboarding_access_defer_button": {
     "message": "Şimdi değil"
   },
   "onboarding_sync_heading": {
-    "message": "Ayarlarının nerede depolanacağını seç"
+    "message": "Ayarlarının nerede saklanacağını seç"
   },
   "onboarding_sync_switch_label": {
-    "message": "Chrome cihazları arasında senkronize et"
+    "message": "Chrome cihazları arasında eşitle"
   },
   "onboarding_sync_enabled_note": {
-    "message": "Aşağıdaki onaylanan veriler kurulumu bitirdikten sonra Chrome Sync'i kullanacak."
+    "message": "Aşağıda onaylanan veriler, kurulumu bitirdikten sonra Chrome eşitlemesini kullanacak."
   },
   "onboarding_sync_disabled_note": {
     "message": "Tüm Focus Lock verileri bu Chrome profilinde kalır."
   },
   "onboarding_sync_synced_title": {
-    "message": "Senkronize edilmiş"
+    "message": "Eşitlenen"
   },
   "onboarding_sync_local_title": {
     "message": "Yalnızca yerel"
   },
   "onboarding_sync_developer_note": {
-    "message": "Focus Lock geliştirmecisine hiçbir şey gönderilmez."
+    "message": "Focus Lock geliştiricisine hiçbir şey gönderilmez."
   },
   "onboarding_sync_finish_enabled": {
-    "message": "Kurulumu senkronizasyon etkin olarak bitir"
+    "message": "Kurulumu eşitleme açıkken bitir"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "Kurulumu senkronizasyon olmadan bitir"
+    "message": "Kurulumu eşitleme olmadan bitir"
   }
 }

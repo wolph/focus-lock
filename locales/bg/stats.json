@@ -1,1 +1,317 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Focus Lock статистика"
+  },
+  "stats_page_title": {
+    "message": "Твоят резултат по фокус"
+  },
+  "stats_loading": {
+    "message": "Зареждане на статистиката ти."
+  },
+  "stats_load_error": {
+    "message": "Статистиката не можа да се зареди. Презареди, за да опиташ отново."
+  },
+  "stats_partial_error_both": {
+    "message": "Блокираните опити по часове и настройките за кредит за достъп не са налични."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Блокираните опити по часове не са налични."
+  },
+  "stats_partial_error_economy": {
+    "message": "Настройките за кредит за достъп не са налични."
+  },
+  "stats_scope_synced": {
+    "message": "Синхронизирани суми от този профил в Chrome. Панелите само с локални данни са отбелязани."
+  },
+  "stats_scope_local": {
+    "message": "Суми от този компютър. Статистиката на Focus Lock не се синхронизира."
+  },
+  "stats_scope_checking": {
+    "message": "Проверява се дали тези суми са синхронизирани."
+  },
+  "stats_scope_unavailable": {
+    "message": "Обхватът на статистиката не е известен. Сумите може да включват синхронизирани данни. Блокираните опити по часове и последните сесии са от този компютър."
+  },
+  "stats_scope_retry": {
+    "message": "Провери обхвата отново"
+  },
+  "stats_empty": {
+    "message": "Статистиката се появява след първата ти сесия."
+  },
+  "stats_tile_focus_today": {
+    "message": "Фокус днес"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Фокус през последните 7 дни"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Блокирани опити днес"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Отхвърлени заявки към бариерата днес"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Изразходван кредит за достъп днес"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Всички сайтове $ALL_SITES$, един сайт $ONE_SITE$, спечелени $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "спечелени $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Серия"
+  },
+  "stats_streak_empty": {
+    "message": "Серията ти започва с първия ти ден на фокус."
+  },
+  "stats_streak_unit_one": {
+    "message": "ден"
+  },
+  "stats_streak_unit_other": {
+    "message": "дни"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ жетон за замразяване в банката",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ жетона за замразяване в банката",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Замразяване на серията: един пропуснат ден, покрит"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ активен ден този месец ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ активни дни този месец ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Активни дати през $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Няма активни дати през $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Фокус, последните 14 дни"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Минутите фокус се появяват след първата ти сесия."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Блокирани опити, последните 14 дни"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Блокираните опити се появяват тук, щом сесия улови такъв."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Най-блокирани сайтове, последните 30 дни"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Още нищо не е блокирано. Това е добро начало."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Опити по часове, само този компютър"
+  },
+  "stats_chart_other_site": {
+    "message": "други"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$мин",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ блокиран",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ блокирани",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Стълбовидна диаграма"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Хоризонтална стълбовидна диаграма"
+  },
+  "stats_chart_description_bar": {
+    "message": "Стълбовидна диаграма. Използвай клавиатурата, за да минеш през данните, или отвори Покажи като таблица за същите стойности."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Хоризонтална стълбовидна диаграма. Използвай клавиатурата, за да минеш през данните, или отвори Покажи като таблица за същите стойности."
+  },
+  "stats_chart_empty_default": {
+    "message": "Още няма данни."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "Покажи като таблица"
+  },
+  "stats_chart_table_category": {
+    "message": "Категория"
+  },
+  "stats_chart_table_value": {
+    "message": "Стойност"
+  },
+  "stats_heat_strip_label": {
+    "message": "Топлинна лента на блокираните опити по часове от денонощието"
+  },
+  "stats_sessions_heading": {
+    "message": "Скорошни сесии на този компютър"
+  },
+  "stats_sessions_empty": {
+    "message": "Първата ти сесия ще се появи тук."
+  },
+  "stats_sessions_col_date": {
+    "message": "Дата"
+  },
+  "stats_sessions_col_start": {
+    "message": "Начало"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Планирано"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Фокусирано"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Всички сайтове"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Един сайт"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Намерение"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Резултат"
+  },
+  "stats_sessions_col_source": {
+    "message": "Източник"
+  },
+  "stats_session_no_intention": {
+    "message": "Без намерение"
+  },
+  "stats_session_article_label": {
+    "message": "Сесия: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "ръчно"
+  },
+  "stats_session_source_schedule": {
+    "message": "график"
+  },
+  "stats_session_source_scheduled": {
+    "message": "планирана"
+  },
+  "stats_outcome_completed": {
+    "message": "Завършена"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Прекратена по-рано"
+  },
+  "stats_outcome_running": {
+    "message": "Тече"
+  }
+}

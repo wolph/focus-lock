@@ -62,6 +62,19 @@
   "stats_streak_unit_other": {
     "message": "દિવસો"
   },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ active દિવસ this month ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
   "stats_streak_active_days_other": {
     "message": "$COUNT$ active દિવસો this month ($MONTH$)",
     "placeholders": {

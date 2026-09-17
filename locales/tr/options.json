@@ -3,40 +3,40 @@
     "message": "Focus Lock seçenekleri"
   },
   "options_heading": {
-    "message": "Focus Lock Ayarlar"
+    "message": "Focus Lock ayarları"
   },
   "options_loading_settings": {
-    "message": "Loading Ayarlar"
+    "message": "Ayarlar yükleniyor"
   },
   "options_privacy_loading": {
-    "message": "Loading privacy Ayarlar"
+    "message": "Gizlilik ayarları yükleniyor"
   },
   "options_save_failed": {
-    "message": "Could not Kaydet. Try again."
+    "message": "Kaydedilemedi. Tekrar dene."
   },
   "options_blocking_heading": {
     "message": "Engelleme"
   },
   "options_blocking_help": {
-    "message": "Özel kurallar kara liste seansları sırasında engeller. Beyaz liste, beyaz liste seansları sırasında ulaşılabilir olarak kalır. Paket kategoriler yaygın zaman tuzaklarını engeller."
+    "message": "Özel kurallar, engelleme listesi seanslarında engeller. İzin listesi ise izin listesi seanslarında erişilebilir kalan şeydir. Hazır kategoriler yaygın zaman tuzaklarını engeller."
   },
   "options_custom_blacklist_title": {
-    "message": "Özel kara liste"
+    "message": "Özel engelleme listesi"
   },
   "options_whitelist_title": {
-    "message": "Beyaz liste"
+    "message": "İzin listesi"
   },
   "options_bundled_categories_heading": {
-    "message": "Paket kategoriler"
+    "message": "Hazır kategoriler"
   },
   "options_bundled_categories_help": {
-    "message": "Yaygın zaman tuzaklarının paket listeleri. Tüm kategoriyi aç, sonra tek siteleri kullanılabilir tutmak için aç."
+    "message": "Yaygın zaman tuzaklarının hazır listeleri. Bütün bir kategoriyi aç, sonra tek tek siteleri erişilebilir bırakmak için kategoriyi genişlet."
   },
   "options_schedule_heading": {
-    "message": "Zaman çizelgesi"
+    "message": "Zamanlama"
   },
   "options_schedule_help": {
-    "message": "Hergün öğleden sonra odaklanma sesanları başlat."
+    "message": "Seanslar bu zaman aralıklarında kendiliğinden başlar. Burada seçtiğin sıkılık, aralığın tamamı için geçerlidir."
   },
   "options_behavior_heading": {
     "message": "Seans davranışı"
@@ -48,37 +48,37 @@
     "message": "Bildirimler"
   },
   "options_privacy_heading": {
-    "message": "Gizlilik"
+    "message": "Gizlilik ve veriler"
   },
   "options_load_error_retry": {
-    "message": "Yeniden dene"
+    "message": "Tekrar dene"
   },
   "options_load_error_delete_all": {
-    "message": "Sil everything and start over"
+    "message": "Her şeyi sil ve baştan başla"
   },
   "options_load_error_keep_data": {
     "message": "Verilerimi tut"
   },
   "options_delete_all_data": {
-    "message": "Sil all Focus Lock data"
+    "message": "Tüm Focus Lock verilerini sil"
   },
   "options_dirty_saving": {
     "message": "Değişiklikler kaydediliyor"
   },
   "options_dirty_unsaved": {
-    "message": "UnKaydetd changes"
+    "message": "Kaydedilmemiş değişiklikler"
   },
   "options_dirty_clean": {
-    "message": "No unKaydetd changes"
+    "message": "Kaydedilmemiş değişiklik yok"
   },
   "options_dirty_discard": {
     "message": "Değişiklikleri at"
   },
   "options_dirty_save": {
-    "message": "Kaydet changes"
+    "message": "Değişiklikleri kaydet"
   },
   "options_session_status_label": {
-    "message": "Seans status"
+    "message": "Seans durumu"
   },
   "options_rule_kind_host_badge": {
     "message": "alan adı"
@@ -90,7 +90,7 @@
     "message": "Kaldır"
   },
   "options_rule_remove_aria": {
-    "message": "$PATTERN$ kaldır",
+    "message": "$PATTERN$ kuralını kaldır",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -105,7 +105,7 @@
     "message": "Kural türü"
   },
   "options_rule_kind_host_option": {
-    "message": "alan adı veya alt alan adı"
+    "message": "alan adı ya da alt alan adı"
   },
   "options_rule_kind_regex_option": {
     "message": "regex (tam URL)"
@@ -123,10 +123,10 @@
     "message": "Kural ekle"
   },
   "options_rules_help": {
-    "message": "facebook.com bu alan adını ve her alt alanını kapsar. news.ycombinator.com bu alt alanını ve altındaki her şeyi kapsar. /youtube\\.com\\/shorts/ tam URL'yi düzenli ifade olarak eşleştirir."
+    "message": "facebook.com o alan adını ve tüm alt alan adlarını kapsar. news.ycombinator.com o alt alan adını ve altındaki her şeyi kapsar. /youtube\\.com\\/shorts/ ise tam URL'yi düzenli ifade olarak eşleştirir."
   },
   "options_number_error_positive": {
-    "message": "$LABEL$ pozitif bir tam sayı olmalıdır.",
+    "message": "$LABEL$ sıfırdan büyük bir tam sayı olmalı.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -135,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "$LABEL$ sıfırdan büyük veya sıfıra eşit bir tam sayı olmalıdır.",
+    "message": "$LABEL$ sıfır ya da daha büyük bir tam sayı olmalı.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -144,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "$LABEL$ sıfırdan büyük veya sıfıra eşit olmalıdır.",
+    "message": "$LABEL$ sıfırdan küçük olamaz.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -153,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$ desteklenen dakika aralığında olmalıdır.",
+    "message": "$LABEL$ desteklenen dakika aralığının dışında.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -162,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$ desteklenen gün aralığında olmalıdır.",
+    "message": "$LABEL$ desteklenen gün aralığının dışında.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -171,61 +171,61 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "Seans defaults"
+    "message": "Seans varsayılanları"
   },
   "options_session_defaults_help": {
-    "message": "Mode and strictness are fixed when a Seans starts. These are the values the start form opens with."
+    "message": "Mod ve sıkılık, seans başladığında sabitlenir. Başlatma formu bu değerlerle açılır."
   },
   "options_preset_short_label": {
-    "message": "Short Seans pSıfırla (minutes)"
+    "message": "Kısa seans hazır ayarı (dakika)"
   },
   "options_preset_default_label": {
-    "message": "Default Seans pSıfırla (minutes)"
+    "message": "Varsayılan seans hazır ayarı (dakika)"
   },
   "options_preset_deep_label": {
-    "message": "Deep Seans pSıfırla (minutes)"
+    "message": "Derin seans hazır ayarı (dakika)"
   },
   "options_mode_blacklist_label": {
-    "message": "Kara liste: listelenmiş siteleri engelle"
+    "message": "Engelleme listesi: listedeki siteleri engelle"
   },
   "options_mode_whitelist_label": {
-    "message": "Beyaz liste: sadece listelenmiş siteleri izin ver"
+    "message": "İzin listesi: yalnızca listedeki sitelere izin ver"
   },
   "options_strictness_flexible_label": {
-    "message": "Esnek: seansı istediğin zaman bitir"
+    "message": "Esnek: seansı istediğin an bitirirsin"
   },
   "options_strictness_friction_label": {
-    "message": "Engel: erken durdurmak yapılandırılan düşünme saatini kullanır"
+    "message": "Sürtünme: erken durdurma, ayarladığın onay beklemesinden geçer"
   },
   "options_strictness_hard_label": {
-    "message": "Sert Kilit: seansı başladıktan sonra bitiremezsin"
+    "message": "Tam kilit: erken bitiş yok, yalnızca geçici site erişimi"
   },
   "options_cycle_heading": {
-    "message": "Odak ve ara döngüsü"
+    "message": "Odak ve mola döngüsü"
   },
   "options_cycle_help": {
-    "message": "Varsayılanlar: 25 dakika odak, 5 dakika ara, her 4. döngüde 15 dakika uzun ara. Aralıklar, çalışma örneklerinde ruh hali ve odağı iyileştirir. Tam dakikalar kural değil, geleneğin sonucudur."
+    "message": "Varsayılanlar: 25 dakika odak, 5 dakika mola, her 4. döngüde 15 dakika uzun mola. Çalışmalarda planlı molalar, canın istediğinde verilen molalara göre hem ruh hâli hem odak açısından daha iyi çıkıyor. Dakikaların tam değeri bilimsel değil, yerleşik alışkanlık."
   },
   "options_cycle_default_label": {
-    "message": "Varsayılan olarak odak ve araları döngüye al"
+    "message": "Odak ve molaları varsayılan olarak döndür"
   },
   "options_focus_minutes_label": {
-    "message": "Odak dakikaları"
+    "message": "Odak dakikası"
   },
   "options_short_break_minutes_label": {
-    "message": "Short ara minutes"
+    "message": "Kısa mola dakikası"
   },
   "options_long_break_minutes_label": {
-    "message": "Long ara minutes"
+    "message": "Uzun mola dakikası"
   },
   "options_long_every_label": {
-    "message": "Long ara every Nth döngü"
+    "message": "Her N. döngüde uzun mola"
   },
   "options_gate_heading": {
-    "message": "düşünme saati"
+    "message": "Onay beklemesi"
   },
   "options_gate_help": {
-    "message": "Açık bir 'geri dönüş' düğmesiyle 10 saniyelik bekleme, dürtüsel ziyaretleri ölçülü şekilde azaltır (alan çalışması, PNAS 2023). Daha uzun bekleme ve yazılı cümle etkiyi kabaca iki katına çıkarır."
+    "message": "İşe dönmek için ayrı bir düğmeyle birlikte 10 saniyelik bir bekleme, dürtüsel ziyaretleri ölçülebilir biçimde azaltıyor (saha çalışması, PNAS 2023). Daha uzun bekleme ve yazılan cümle etkiyi kabaca ikiye katlıyor."
   },
   "options_gate_wait_one": {
     "message": "$COUNT$ saniye bekle",
@@ -249,49 +249,49 @@
     "message": "Özel"
   },
   "options_custom_delay_label": {
-    "message": "Özel gecikme (saniye)"
+    "message": "Özel bekleme (saniye)"
   },
   "options_custom_delay_error": {
-    "message": "Özel gecikme pozitif saniye cinsinden bir tam sayı olmalıdır."
+    "message": "Özel bekleme, sıfırdan büyük bir tam saniye sayısı olmalı."
   },
   "options_gate_typed_phrase_label": {
-    "message": "Ayrıca bir cümle yazılması gerekli"
+    "message": "Ayrıca bir cümle yazılmasını iste"
   },
   "options_gate_force_end_label": {
-    "message": "Etkinleştir \"Ignore timeout and end anyway\" button"
+    "message": "“Beklemeyi atla ve yine de bitir” düğmesini aç"
   },
   "options_credit_help": {
-    "message": "Krediler, bütün sitelere erişim veya tek site kilit açma harcamalarından çıkarılır. Kalan kredi, sonraki seansta devam eder."
+    "message": "Site erişim kredisi sen odaklandıkça birikir. Hem tüm sitelere erişim hem de tek bir siteyi açma aynı bakiyeden düşer. Kredi harcamadan istediğin an masadan kalkabilirsin."
   },
   "options_earn_rate_label": {
-    "message": "Odaklanma başına 30 dakika başına site erişim dakikası"
+    "message": "Her 30 dakika odak için site erişim dakikası"
   },
   "options_credit_cap_label": {
-    "message": "site erişim kredisi limit (minutes)"
+    "message": "Site erişim kredisi üst sınırı (dakika)"
   },
   "options_pause_length_label": {
-    "message": "Tüm siteler erişim uzunluğu (dakika)"
+    "message": "Tüm sitelere erişim süresi (dakika)"
   },
   "options_unlock_length_label": {
-    "message": "Site kilit açma uzunluğu (dakika)"
+    "message": "Tek site açma süresi (dakika)"
   },
   "options_streak_heading": {
-    "message": "Seri ve bekletme"
+    "message": "Seri ve saklama"
   },
   "options_streak_help": {
-    "message": "Seri, hedefi ulaşan günleri sayar. Tek bir varsayılan seans zinciri canlı tutar ve bir dondurma jetonu kaçırılan günü tamir eder."
+    "message": "Seri, hedefe ulaşan günleri sayar. Varsayılan bir seans zinciri canlı tutar, bir dondurma hakkı da kaçırdığın bir günü onarır."
   },
   "options_streak_goal_label": {
-    "message": "Günlük seri hedefi (odak dakikaları)"
+    "message": "Günlük seri hedefi (odak dakikası)"
   },
   "options_freeze_interval_label": {
-    "message": "Dondurma jetonu aralığı (gün)"
+    "message": "Dondurma hakkı aralığı (gün)"
   },
   "options_retention_label": {
-    "message": "Günlük istatistikleri sakla (gün)"
+    "message": "Günlük istatistikleri saklama (gün)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ kategorisi açık.",
+    "message": "$CATEGORY$ kategorisi açıldı.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -300,7 +300,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ kategorisi kapalı.",
+    "message": "$CATEGORY$ kategorisi kapatıldı.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -309,13 +309,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "Tüm kategoriler açık."
+    "message": "Tüm kategoriler açıldı."
   },
   "options_all_categories_off_announcement": {
-    "message": "Tüm kategoriler kapalı."
+    "message": "Tüm kategoriler kapatıldı."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ dahil edildi.",
+    "message": "$HOST$ kapsama alındı.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -324,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ kullanılabilir tutuldu.",
+    "message": "$HOST$ erişilebilir bırakıldı.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -333,7 +333,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "Tüm $CATEGORY$ siteleri dahil edildi.",
+    "message": "$CATEGORY$ kategorisindeki tüm siteler kapsama alındı.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -342,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "Tüm $CATEGORY$ siteleri kullanılabilir tutuldu.",
+    "message": "$CATEGORY$ kategorisindeki tüm siteler erişilebilir bırakıldı.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -351,10 +351,10 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "Kategori toplu işlemler"
+    "message": "Kategori toplu işlemleri"
   },
   "options_selected_count": {
-    "message": "Seçilen $COUNT$",
+    "message": "Seçili: $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Seçimi kaldırılan $COUNT$",
+    "message": "Seçimi kaldırılan: $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -375,7 +375,7 @@
     "message": "Tümünü seç"
   },
   "options_deselect_all": {
-    "message": "Tümünün seçimini kaldır"
+    "message": "Tüm seçimi kaldır"
   },
   "options_select_all_categories_aria": {
     "message": "Tüm kategorileri seç"
@@ -402,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ site dahil edildi",
+    "message": "$COUNT$ site kapsamda",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -411,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ siteler dahil edildi",
+    "message": "$COUNT$ site kapsamda",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -423,7 +423,7 @@
     "message": "Kategori kapalı"
   },
   "options_included_when_enabled_one": {
-    "message": "$COUNT$ included when Etkinleştird",
+    "message": "Açılınca $COUNT$ site kapsama girer",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -432,7 +432,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ included when Etkinleştird",
+    "message": "Açılınca $COUNT$ site kapsama girer",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -441,10 +441,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "Kategorinin geri kalanı engellenirken bir siteyi açık tutmak için seçimini kaldır."
+    "message": "Kategorinin geri kalanı engelliyken bir siteyi erişilebilir bırakmak için işaretini kaldır."
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "$CATEGORY$ site toplu işlemler",
+    "message": "$CATEGORY$ siteleri için toplu işlemler",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "options_select_all_category_sites_aria": {
-    "message": "Tüm $CATEGORY$ sitelerini seç",
+    "message": "$CATEGORY$ sitelerinin tümünü seç",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -462,7 +462,7 @@
     }
   },
   "options_deselect_all_category_sites_aria": {
-    "message": "Tüm $CATEGORY$ sitelerinin seçimini kaldır",
+    "message": "$CATEGORY$ sitelerinin tüm seçimini kaldır",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -483,7 +483,7 @@
     "message": "Paz"
   },
   "options_day_mon": {
-    "message": "Pts"
+    "message": "Pzt"
   },
   "options_day_tue": {
     "message": "Sal"
@@ -501,10 +501,10 @@
     "message": "Cmt"
   },
   "options_schedule_cycles_label": {
-    "message": "döngü focus and breaks"
+    "message": "Odak ve molaları döndür"
   },
   "options_schedule_overlap_error": {
-    "message": "Overlaps another Etkinleştird entry on $DAY$.",
+    "message": "$DAY$ günü açık olan başka bir kayıtla çakışıyor.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -513,16 +513,16 @@
     }
   },
   "options_schedule_session_type_aria": {
-    "message": "Seans type"
+    "message": "Seans türü"
   },
   "options_schedule_entry_legend": {
-    "message": "Zaman çizelgesi girdisi"
+    "message": "Zamanlama kaydı"
   },
   "options_schedule_start_label": {
-    "message": "Başlangıç saati"
+    "message": "Başlangıç"
   },
   "options_schedule_end_label": {
-    "message": "Bitiş saati"
+    "message": "Bitiş"
   },
   "options_schedule_duration_legend": {
     "message": "Süre"
@@ -531,22 +531,22 @@
     "message": "Niyet"
   },
   "options_schedule_intention_placeholder": {
-    "message": "bu zamanın ne için olduğu"
+    "message": "bu zaman ne için"
   },
   "options_schedule_save_entry": {
-    "message": "Kaydet entry"
+    "message": "Kaydı kaydet"
   },
   "options_cancel": {
-    "message": "İptal"
+    "message": "Vazgeç"
   },
   "options_schedule_empty": {
-    "message": "Zaman çizelgesi boş. Hergün seanslar için yeni bir kural ekle."
+    "message": "Henüz zamanlanmış seans yok."
   },
   "options_schedule_selected_days_aria": {
-    "message": "Seçilen günler"
+    "message": "Seçili günler"
   },
   "options_schedule_time_range": {
-    "message": "$START$ - $END$",
+    "message": "$START$ - $END$ arası",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -559,22 +559,22 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "kara liste"
+    "message": "engelleme"
   },
   "options_schedule_mode_whitelist": {
-    "message": "beyaz liste"
+    "message": "izin"
   },
   "options_schedule_strictness_flexible": {
     "message": "esnek"
   },
   "options_schedule_strictness_friction": {
-    "message": "engel"
+    "message": "sürtünme"
   },
   "options_schedule_strictness_hard": {
-    "message": "sert kilit"
+    "message": "tam"
   },
   "options_schedule_enabled_label": {
-    "message": "Etkinleştird"
+    "message": "Açık"
   },
   "options_schedule_edit": {
     "message": "Düzenle"
@@ -583,7 +583,7 @@
     "message": "Sil"
   },
   "options_schedule_add": {
-    "message": "Zaman çizelgesi girişi ekle"
+    "message": "Zamanlama kaydı ekle"
   },
   "options_sounds_heading": {
     "message": "Sesler"
@@ -592,19 +592,19 @@
     "message": "Ana ses düzeyi"
   },
   "options_sound_session_complete": {
-    "message": "Seans complete"
+    "message": "Seans bitti"
   },
   "options_sound_break_start": {
-    "message": "ara start"
+    "message": "Mola başlangıcı"
   },
   "options_sound_break_end": {
-    "message": "ara end"
+    "message": "Mola bitişi"
   },
   "options_sound_schedule_start": {
-    "message": "Zaman çizelgesi otomatik başlat"
+    "message": "Zamanlamayla kendiliğinden başlama"
   },
   "options_sound_preview_aria": {
-    "message": "$SOUND$ önizlemesi",
+    "message": "$SOUND$ sesini dinle",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -613,237 +613,237 @@
     }
   },
   "options_sound_play": {
-    "message": "Oynat"
+    "message": "Çal"
   },
   "options_sound_preview_error": {
-    "message": "Ses önizlemesi yapılamadı. Yeniden dene."
+    "message": "Ses çalınamadı. Tekrar dene."
   },
   "options_sounds_notifications_heading": {
     "message": "Bildirimler"
   },
   "options_session_complete_notification": {
-    "message": "Show a system notification when a Seans completes"
+    "message": "Bir seans bittiğinde sistem bildirimi göster"
   },
   "options_badge_heading": {
-    "message": "Gösterge"
+    "message": "Rozet"
   },
   "options_badge_countdown": {
-    "message": "Araç çubuğu simgesinde kalan zamanı göster"
+    "message": "Kalan süreyi araç çubuğu simgesinde göster"
   },
   "options_privacy_website_access_heading": {
-    "message": "Website erişimi"
+    "message": "Site erişimi"
   },
   "options_privacy_website_off_title": {
-    "message": "Website erişimi kapalı"
+    "message": "Site erişimi kapalı"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock, erişim izni verene kadar web sitelerini engel leyemez."
+    "message": "Sen erişim vermeden Focus Lock siteleri engelleyemez."
   },
   "options_privacy_website_enable_action": {
-    "message": "Etkinleştir website blocking"
+    "message": "Site engellemeyi aç"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "Website erişimi verildi, ancak engelleme etkin değil"
+    "message": "Site erişimi verildi ama engelleme etkin değil"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome erişim verdi, ancak Focus Lock engelleme komut dosyasını kaydedemiyor."
+    "message": "Chrome erişimi verdi ama Focus Lock engelleme betiğini kaydedemedi."
   },
   "options_privacy_website_retry_action": {
-    "message": "Website engellemeyi yeniden dene"
+    "message": "Site engellemeyi yeniden dene"
   },
   "options_privacy_website_on_title": {
-    "message": "Website blocking is Etkinleştird"
+    "message": "Site engelleme açık"
   },
   "options_privacy_website_on_detail": {
-    "message": "Focus Lock, normal web sayfalarında aktif engelleme kurallarını uygulayabilir."
+    "message": "Focus Lock, etkin engelleme kurallarını normal web sayfalarında uygulayabilir."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "Sil local history?"
+    "message": "Yerel geçmiş silinsin mi?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "Confirm Sil local history"
+    "message": "Yerel geçmişi silmeyi onayla"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Local history Sild."
+    "message": "Yerel geçmiş silindi."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently Sils full URLs, focus intentions, and detailed Seans events from this device. It does not clear a running Seans, which keeps its intention and the address of each tab it is blocking. Ending the Seans clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "Bu işlem, tam URL'leri, odak niyetlerini ve ayrıntılı seans olaylarını bu cihazdan kalıcı olarak siler. Süren bir seansı temizlemez; o seans niyetini ve engellediği her sekmenin adresini tutmayı sürdürür. Seansı bitirmek niyeti siler ve açık olan her site sekmesini serbest bırakan bir temizlik başlatır; temizlik bittiğinde saklanan tüm adresler kaldırılır."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently Sils full URLs, focus intentions, and detailed Seans events from this device, plus local-only aggregate statistics. It does not clear a running Seans, which keeps its intention and the address of each tab it is blocking. Ending the Seans clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "Bu işlem, tam URL'leri, odak niyetlerini, ayrıntılı seans olaylarını ve yalnızca yerelde duran toplu istatistikleri bu cihazdan kalıcı olarak siler. Süren bir seansı temizlemez; o seans niyetini ve engellediği her sekmenin adresini tutmayı sürdürür. Seansı bitirmek niyeti siler ve açık olan her site sekmesini serbest bırakan bir temizlik başlatır; temizlik bittiğinde saklanan tüm adresler kaldırılır."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Sil remote Sync data?"
+    "message": "Uzaktaki eşitleme verileri silinsin mi?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Confirm Sil remote Sync data"
+    "message": "Uzaktaki eşitleme verilerini silmeyi onayla"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Remote Chrome Sync data Sild."
+    "message": "Uzaktaki Chrome eşitleme verileri silindi."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently Sils remote Ayarlar, block and izin listesis, site erişim kredisi, streaks, and domain-level blocked-attempt aggregates from Chrome Sync. Local Ayarlar and statistics stay on this device."
+    "message": "Bu işlem, uzaktaki ayarları, engelleme ve izin listelerini, site erişim kredisini, serileri ve alan adı düzeyindeki engellenen deneme toplamlarını Chrome eşitlemesinden kalıcı olarak siler. Yerel ayarlar ve istatistikler bu cihazda kalır."
   },
   "options_privacy_confirm_all_title": {
-    "message": "Sil all Focus Lock data?"
+    "message": "Tüm Focus Lock verileri silinsin mi?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "Confirm Sil all Focus Lock data"
+    "message": "Tüm Focus Lock verilerini silmeyi onayla"
   },
   "options_privacy_all_deleted": {
-    "message": "All Focus Lock data Sild."
+    "message": "Tüm Focus Lock verileri silindi."
   },
   "options_privacy_all_body_intro": {
-    "message": "This permanently Sils every piece of Focus Lock data on this device and any Focus Lock copies left in Chrome Sync:"
+    "message": "Bu işlem, bu cihazdaki her Focus Lock verisini ve Chrome eşitlemesinde kalan her Focus Lock kopyasını kalıcı olarak siler:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Deleting everything is available only while no Seans is running. Focus Lock then returns to setup."
+    "message": "Her şeyi silmek yalnızca hiçbir seans sürmezken yapılabilir. Focus Lock sonrasında kuruluma geri döner."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Local history could not be Sild. Try again."
+    "message": "Yerel geçmiş silinemedi. Tekrar dene."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Remote Chrome Sync data could not be Sild. Try again."
+    "message": "Uzaktaki Chrome eşitleme verileri silinemedi. Tekrar dene."
   },
   "options_privacy_error_all_clear": {
-    "message": "All Focus Lock data could not be Sild. Try again."
+    "message": "Tüm Focus Lock verileri silinemedi. Tekrar dene."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync could not Kaydet your latest changes. Your local Kaydet is safe."
+    "message": "Chrome eşitlemesi son değişikliklerini kaydedemedi. Yerel kaydın güvende."
   },
   "options_privacy_error_request": {
-    "message": "İstek tamamlanamadı. Yeniden dene."
+    "message": "İstek tamamlanamadı. Tekrar dene."
   },
   "options_privacy_website_access_updated": {
-    "message": "Website erişimi güncellendi."
+    "message": "Site erişimi güncellendi."
   },
   "options_privacy_website_access_denied": {
-    "message": "Website erişimi verilmedi."
+    "message": "Site erişimi verilmedi."
   },
   "options_privacy_error_website_access": {
-    "message": "Website erişimi güncellenemedi. Yeniden dene."
+    "message": "Site erişimi güncellenemedi. Tekrar dene."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Website blocking Etkinleştird."
+    "message": "Site engelleme açıldı."
   },
   "options_privacy_error_export": {
-    "message": "Could not Dışa aktar the event log."
+    "message": "Olay günlüğü dışa aktarılamadı."
   },
   "options_privacy_error_export_retry": {
-    "message": "Could not Dışa aktar the event log. Try again."
+    "message": "Olay günlüğü dışa aktarılamadı. Tekrar dene."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Could not open Chrome permission Ayarlar. Try again."
+    "message": "Chrome izin ayarları açılamadı. Tekrar dene."
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "Chrome permission Ayarlar opened."
+    "message": "Chrome izin ayarları açıldı."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Open Chrome permission Ayarlar"
+    "message": "Chrome izin ayarlarını aç"
   },
   "options_privacy_sync_heading": {
-    "message": "Chrome Senkronizasyonu"
+    "message": "Chrome eşitlemesi"
   },
   "options_privacy_sync_switch_label": {
-    "message": "Focus Lock verilerini Chrome cihazları arasında senkronize et"
+    "message": "Focus Lock verilerini Chrome cihazları arasında eşitle"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync Etkinleştird."
+    "message": "Chrome eşitlemesi açıldı."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync Devre dışı bırakd."
+    "message": "Chrome eşitlemesi kapatıldı."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sync hala en son değişiklikleri kaydediyor."
+    "message": "Chrome eşitlemesi son değişikliklerini hâlâ kaydediyor."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync açık."
+    "message": "Chrome eşitlemesi açık."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync kapalı."
+    "message": "Chrome eşitlemesi kapalı."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Chrome Sync changes Kaydetd."
+    "message": "Değişiklikler Chrome eşitlemesine kaydedildi."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Chrome Senkronizasyonunu etkinleştirmeyi yeniden dene"
+    "message": "Chrome eşitlemesini açmayı yeniden dene"
   },
   "options_privacy_retry_sync": {
-    "message": "Chrome Senkronizasyonunu yeniden dene"
+    "message": "Chrome eşitlemesini yeniden dene"
   },
   "options_privacy_scope_synced": {
-    "message": "Senkronize edilmiş"
+    "message": "Eşitlenen"
   },
   "options_privacy_scope_local_only": {
-    "message": "Sadece yerel"
+    "message": "Yalnızca yerel"
   },
   "options_privacy_developer_note": {
-    "message": "Focus Lock geliştirmecisine hiçbir şey gönderilmez."
+    "message": "Focus Lock geliştiricisine hiçbir şey gönderilmez."
   },
   "options_privacy_local_log_heading": {
     "message": "Yerel olay günlüğü"
   },
   "options_privacy_local_log_detail": {
-    "message": "Dışa aktar the detailed local log or Sil local browsing and Seans history."
+    "message": "Ayrıntılı yerel günlüğü dışa aktar ya da yerel gezinme ve seans geçmişini sil."
   },
   "options_privacy_export_local_log": {
-    "message": "Dışa aktar local event log"
+    "message": "Yerel olay günlüğünü dışa aktar"
   },
   "options_privacy_local_log_exported": {
-    "message": "Local event log Dışa aktared."
+    "message": "Yerel olay günlüğü dışa aktarıldı."
   },
   "options_privacy_delete_local_history": {
-    "message": "Sil local history"
+    "message": "Yerel geçmişi sil"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Uzak Senkronizasyon verileri"
+    "message": "Uzaktaki eşitleme verileri"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Sil the Focus Lock copies left in Chrome Sync without changing this device."
+    "message": "Chrome eşitlemesinde kalan Focus Lock kopyalarını, bu cihazda hiçbir şeyi değiştirmeden sil."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Sil remote Sync data"
+    "message": "Uzaktaki eşitleme verilerini sil"
   },
   "options_privacy_all_data_heading": {
     "message": "Tüm Focus Lock verileri"
   },
   "options_privacy_all_data_detail": {
-    "message": "Sil every Focus Lock record on this device and any Focus Lock copies left in Chrome Sync, then start again from setup. Available while no Seans is running."
+    "message": "Bu cihazdaki her Focus Lock kaydını ve Chrome eşitlemesinde kalan her kopyayı sil, sonra kurulumdan yeniden başla. Yalnızca hiçbir seans sürmezken kullanılabilir."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "Tüm Focus Lock verilerinin silinmesi devam ediyor."
+    "message": "Tüm Focus Lock verilerinin silinmesi sürdürülüyor."
   },
   "options_privacy_retry_local_history": {
-    "message": "Yerel geçmiş silme işlemini yeniden dene"
+    "message": "Yerel geçmişi silmeyi yeniden dene"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Uzak Senkronizasyon silme işlemini yeniden dene"
+    "message": "Uzaktaki eşitleme verilerini silmeyi yeniden dene"
   },
   "options_privacy_retry_all_data": {
-    "message": "Tüm veri silme işlemini yeniden dene"
+    "message": "Tüm verileri silmeyi yeniden dene"
   },
   "options_error_load": {
-    "message": "Could not load Ayarlar. Reload the page to try again."
+    "message": "Ayarlar yüklenemedi. Sayfayı yeniden yükleyip tekrar dene."
   },
   "options_error_retry_boot": {
-    "message": "Focus Lock yeniden başlatılamadı. Yeniden dene."
+    "message": "Focus Lock yeniden başlatılamadı. Tekrar dene."
   },
   "options_error_refresh_privacy": {
-    "message": "Could not refresh privacy Ayarlar. Reload the page."
+    "message": "Gizlilik ayarları yenilenemedi. Sayfayı yeniden yükle."
   },
   "options_error_website_blocking": {
-    "message": "Website engelleme güncellenemedi. Yeniden dene."
+    "message": "Site engelleme güncellenemedi. Tekrar dene."
   },
   "options_error_change_sync": {
-    "message": "Chrome Senkronizasyonu değiştirilemedi. Yeniden dene."
+    "message": "Chrome eşitlemesi değiştirilemedi. Tekrar dene."
   },
   "options_error_retry_sync": {
-    "message": "Chrome Senkronizasyonu yeniden denemesi yapılamadı. Yeniden dene."
+    "message": "Chrome eşitlemesi yeniden denenemedi. Tekrar dene."
   },
   "options_error_save_settings": {
-    "message": "Could not Kaydet Ayarlar. Reload the page and try again."
+    "message": "Ayarlar kaydedilemedi. Sayfayı yeniden yükleyip tekrar dene."
   },
   "options_error_save_lists": {
-    "message": "Could not Kaydet lists. Reload the page and try again."
+    "message": "Listeler kaydedilemedi. Sayfayı yeniden yükleyip tekrar dene."
   }
 }

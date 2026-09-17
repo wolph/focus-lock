@@ -181,7 +181,7 @@
     "message": "Lisa lubatud domeen"
   },
   "popup_allowed_domain_placeholder": {
-    "message": "docs.example.com"
+    "message": "dokumendid.example.com"
   },
   "popup_add_allowed_domain_button": {
     "message": "Lisa lubatud domeen"
@@ -478,7 +478,7 @@
     "message": "Lõpeta seanss kohe, millal iganes soovid."
   },
   "popup_session_type_friction_hint": {
-    "message": "Enneaegne lõpetamine nõuab $WAIT$. Tippimist ei nõuta.",
+    "message": "Enneaegne lõpetamine: $WAIT$. Tippimist ei nõuta.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -487,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Enneaegne lõpetamine nõuab $WAIT$ ja tipitud kinnitust.",
+    "message": "Enneaegne lõpetamine: $WAIT$ ja tipitud kinnitus.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -580,7 +580,7 @@
     "message": "sobimatu aeg"
   },
   "popup_start_focus_label": {
-    "message": "Alusta $DURATION$ keskendumist",
+    "message": "Alusta fookust ($DURATION$)",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -589,7 +589,7 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "Sisesta kehtiv domeen, näiteks docs.example.com."
+    "message": "Sisesta kehtiv domeen, näiteks dokumendid.example.com."
   },
   "popup_work_tabs_unavailable": {
     "message": "Töö vahekaartide laadimine ebaõnnestus. Ava hüpikaken uuesti, et proovida uuesti."

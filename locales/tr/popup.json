@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "sonraki: $DAY$ $TIME$",
+    "message": "sıradaki: $DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -16,118 +16,118 @@
     "message": "Ayarlar"
   },
   "popup_open_settings_failed": {
-    "message": "Could not aç Ayarlar. Try again."
+    "message": "Ayarlar açılamadı. Tekrar dene."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load seans ayarlar. Reload the popup to try again. Defaults are shown."
+    "message": "Seans ayarları yüklenemedi. Yeniden denemek için pencereyi yenile. Varsayılanlar gösteriliyor."
   },
   "popup_open_setup_failed": {
-    "message": "Could not aç setup. Try again."
+    "message": "Kurulum açılamadı. Tekrar dene."
   },
   "popup_setup_required_heading": {
     "message": "Focus Lock kurulumunu tamamla"
   },
   "popup_setup_required_body": {
-    "message": "Choose your starting lists, website access, and storage mod before starting a seans."
+    "message": "Bir seans başlatmadan önce başlangıç listelerini, site erişimini ve depolama modunu seç."
   },
   "popup_open_setup_button": {
-    "message": "Aç setup"
+    "message": "Kurulumu aç"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Website engelleme doğrulanamadı. Yeniden dene."
+    "message": "Site engelleme doğrulanamadı. Tekrar dene."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not etkinleştir website blocking. Try again."
+    "message": "Site engelleme açılamadı. Tekrar dene."
   },
   "popup_blocking_off_heading": {
-    "message": "Website engelleme kapalı"
+    "message": "Site engelleme kapalı"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock cannot başlat a seans until Chrome grants website access and blocking is enabled."
+    "message": "Chrome site erişimi vermeden ve engelleme açılmadan Focus Lock seans başlatamaz."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome website erişim vermedi. Website engelleme hala kapalı."
+    "message": "Chrome site erişimi vermedi. Site engelleme hâlâ kapalı."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but Focus Lock could not etkinleştir blocking. Retry setup or reload the extension."
+    "message": "Site erişimi verildi ama Focus Lock engellemeyi açamadı. Kurulumu yinele ya da uzantıyı yeniden yükle."
   },
   "popup_enable_blocking_button": {
-    "message": "Etkinleştir website blocking"
+    "message": "Site engellemeyi aç"
   },
   "popup_retry_button": {
-    "message": "Yeniden dene"
+    "message": "Tekrar dene"
   },
   "popup_notice_access_revoked": {
-    "message": "Your seans ended because website access was removed."
+    "message": "Seansın bitti, çünkü site erişimi geri alındı."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your seans ended because Focus Lock could not etkinleştir website blocking."
+    "message": "Seansın bitti, çünkü Focus Lock site engellemeyi açamadı."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Bu bildirim kapatılamadı. Yeniden dene."
+    "message": "Bu bildirim kapatılamadı. Tekrar dene."
   },
   "popup_dismiss_notice_label": {
-    "message": "Website erişim bildirimini kapat"
+    "message": "Site erişimi bildirimini kapat"
   },
   "popup_dismiss_button": {
     "message": "Kapat"
   },
   "popup_restart_failed": {
-    "message": "Focus Lock yeniden başlatılamadı. Yeniden dene."
+    "message": "Focus Lock yeniden başlatılamadı. Tekrar dene."
   },
   "popup_boot_failed_heading": {
-    "message": "Focus Lock could not başlat"
+    "message": "Focus Lock başlayamadı"
   },
   "popup_boot_reason_unavailable": {
-    "message": "Sebep okunamadı."
+    "message": "Nedeni okunamadı."
   },
   "popup_reset_runtime_button": {
-    "message": "Sıfırla local runtime"
+    "message": "Yerel çalışma durumunu sıfırla"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your ayarlar, lists, and istatistikler. Clears the current seans state."
+    "message": "Ayarlarını, listelerini ve istatistiklerini korur. Şu anki seans durumunu temizler."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Sil everything and başlat over"
+    "message": "Her şeyi sil ve baştan başla"
   },
   "popup_keep_data_button": {
     "message": "Verilerimi tut"
   },
   "popup_delete_all_button": {
-    "message": "Sil all Focus Lock data"
+    "message": "Tüm Focus Lock verilerini sil"
   },
   "popup_setup_status_unavailable": {
-    "message": "Kurulum durumu kullanılamıyor. Focus Lock'u yeniden yükle."
+    "message": "Kurulum durumu okunamıyor. Yeniden denemek için Focus Lock'u yeniden yükle."
   },
   "popup_snapshot_unavailable": {
-    "message": "Odak durumu kullanılamıyor"
+    "message": "Odak durumu okunamıyor"
   },
   "popup_action_in_progress": {
-    "message": "İşlem devam ediyor"
+    "message": "İşlem sürüyor"
   },
   "popup_active_site_checking": {
-    "message": "Etkin site kontrol ediliyor"
+    "message": "Etkin site denetleniyor"
   },
   "popup_active_site_unsupported": {
-    "message": "Aç a regular website to unlock it"
+    "message": "Açmak için normal bir site aç"
   },
   "popup_active_site_unknown": {
-    "message": "Etkin site tanımlanamadı"
+    "message": "Etkin site tanınamadı"
   },
   "popup_active_site_error": {
-    "message": "Etkin site tanımlanamadı."
+    "message": "Etkin site tanınamadı."
   },
   "popup_resume_now": {
-    "message": "Şimdi devam et"
+    "message": "Şimdi sürdür"
   },
   "popup_start_next_focus_early": {
-    "message": "Başlat next focus early"
+    "message": "Sıradaki odağı erken başlat"
   },
   "popup_unlock_this_site": {
-    "message": "Bu siteyi aç"
+    "message": "Bu sitenin kilidini aç"
   },
   "popup_unlock_all_sites": {
-    "message": "Unlock all siteler"
+    "message": "Tüm sitelerin kilidini aç"
   },
   "popup_spend_cost": {
     "message": "$ACCESS$ erişim, $CREDIT$ kredi",
@@ -160,13 +160,13 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "İş sekmesi seç"
+    "message": "Çalışma sekmesi seç"
   },
   "popup_change_work_tab_button": {
-    "message": "İş sekmesi değiştir"
+    "message": "Çalışma sekmesini değiştir"
   },
   "popup_session_actions_summary": {
-    "message": "Seans actions"
+    "message": "Seans işlemleri"
   },
   "popup_site_access_credit": {
     "message": "$CREDIT$ site erişim kredisi",
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Ekle an allowed domain"
+    "message": "İzinli alan adı ekle"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Ekle allowed domain"
+    "message": "İzinli alan adı ekle"
   },
   "popup_add_button": {
     "message": "Ekle"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed site kurallar. Other websites engellendi.",
+    "message": "Yalnızca $COUNT$ izinli site kuralı. Diğer siteler engelli.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -199,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ engellendi kategoriler, $RULES$ extra kurallar.",
+    "message": "$CATEGORIES$ engelli kategori, $RULES$ ek kural.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -212,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Sert Kilit. Erken bitiremezsin."
+    "message": "Tam kilit. Erken bitirilemez."
   },
   "popup_draft_stop_flexible": {
-    "message": "Can end at any zaman."
+    "message": "İstediğin an bitirilebilir."
   },
   "popup_draft_stop_friction": {
-    "message": "Bekleme süresi sonra ($SECONDS$s) bitir.",
+    "message": "$SECONDS$ sn bekledikten sonra biter.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -227,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "$SECONDS$s bekle ve doğrulama cümlesi sonra bitir.",
+    "message": "$SECONDS$ sn bekleme ve bir onay cümlesinden sonra biter.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -236,28 +236,28 @@
     }
   },
   "popup_session_length_label": {
-    "message": "Seans length"
+    "message": "Seans süresi"
   },
   "popup_custom_minutes_label": {
-    "message": "Custom dakika"
+    "message": "Özel dakika"
   },
   "popup_custom_minutes_placeholder": {
     "message": "dk"
   },
   "popup_gate_force_end": {
-    "message": "Zaman aşımını göz ardı et ve bitir"
+    "message": "Beklemeyi atla ve yine de bitir"
   },
   "popup_gate_keep_focusing": {
-    "message": "Odaklanmaya devam et"
+    "message": "Odakta kal"
   },
   "popup_gate_phrase_label": {
-    "message": "Yaz:"
+    "message": "Şunu yaz:"
   },
   "popup_gate_update_failed": {
-    "message": "Kapı güncellenemedi. Yeniden dene."
+    "message": "Onay güncellenemedi. Tekrar dene."
   },
   "popup_gate_intention": {
-    "message": "Söyledin: $INTENTION$",
+    "message": "Şunu yazmıştın: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -269,7 +269,7 @@
     "message": "Karar vermek için bir an:"
   },
   "popup_gate_wait_remaining": {
-    "message": "/ $TOTAL$ s",
+    "message": "/ $TOTAL$ sn",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -278,13 +278,13 @@
     }
   },
   "popup_back_to_work": {
-    "message": "İşe geri dön"
+    "message": "İşe dön"
   },
   "popup_destination_unavailable": {
     "message": "Hedef kullanılamıyor"
   },
   "popup_back_to_work_name": {
-    "message": "İşe geri dön: $DESTINATION$",
+    "message": "İşe dön: $DESTINATION$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -293,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "İşe geri dön: $DESTINATION$ ($HOSTNAME$)",
+    "message": "İşe dön: $DESTINATION$ ($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -306,13 +306,13 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Kategori editing is disabled until engellendi-site lists reload."
+    "message": "Engellenen site listeleri yeniden yüklenene kadar kategoriler düzenlenemez."
   },
   "popup_blocked_categories_heading": {
-    "message": "Engellendi kategoriler"
+    "message": "Engelli kategoriler"
   },
   "popup_show_full_domain": {
-    "message": "Göster full domain: $PATTERN$",
+    "message": "Tam alan adını göster: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -321,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "Göster full regular expression: $PATTERN$",
+    "message": "Tam düzenli ifadeyi göster: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -336,7 +336,7 @@
     "message": "Düzenli ifade"
   },
   "popup_category_sites_label": {
-    "message": "$CATEGORY$ siteler",
+    "message": "$CATEGORY$ siteleri",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -354,7 +354,7 @@
     }
   },
   "popup_sites_other": {
-    "message": "$COUNT$ siteler",
+    "message": "$COUNT$ site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "ve $COUNT$ daha fazla site",
+    "message": "ve $COUNT$ site daha",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "and $COUNT$ more siteler",
+    "message": "ve $COUNT$ site daha",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -381,28 +381,28 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "İzin verilen istisnalar"
+    "message": "İzinli ayrıklar"
   },
   "popup_extra_blocked_heading": {
-    "message": "Extra engellendi kurallar"
+    "message": "Ek engelleme kuralları"
   },
   "popup_no_extra_blocked": {
-    "message": "No extra engellendi kurallar."
+    "message": "Ek engelleme kuralı yok."
   },
   "popup_allowed_heading": {
-    "message": "Allowed siteler and kurallar"
+    "message": "İzinli siteler ve kurallar"
   },
   "popup_no_allowed_sites": {
-    "message": "No siteler are allowed yet."
+    "message": "Henüz izinli site yok."
   },
   "popup_what_will_be_blocked": {
-    "message": "What will be engellendi"
+    "message": "Neler engellenecek"
   },
   "popup_what_will_be_allowed": {
-    "message": "İzin verilecek"
+    "message": "Nelere izin verilecek"
   },
   "popup_categories_selected": {
-    "message": "$SELECTED$ of $TOTAL$ kategoriler selected",
+    "message": "$TOTAL$ kategoriden $SELECTED$ tanesi seçili",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -415,7 +415,7 @@
     }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$ extra engellendi kural",
+    "message": "$COUNT$ ek engelleme kuralı",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -424,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$ extra engellendi kurallar",
+    "message": "$COUNT$ ek engelleme kuralı",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -433,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed kural",
+    "message": "$COUNT$ izin kuralı",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -442,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed kurallar",
+    "message": "$COUNT$ izin kuralı",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,34 +451,34 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Allowed-site and kural changes here apply only to this seans. Everything else is engellendi."
+    "message": "Buradaki izinli site ve kural değişiklikleri yalnızca bu seans için geçerlidir. Geri kalan her şey engellidir."
   },
   "popup_scope_blacklist": {
-    "message": "Kategori and kural changes here apply only to this seans."
+    "message": "Buradaki kategori ve kural değişiklikleri yalnızca bu seans için geçerlidir."
   },
   "popup_open_settings_defaults": {
-    "message": "Aç Ayarlar for permanent defaults"
+    "message": "Kalıcı varsayılanlar için Ayarlar'ı aç"
   },
   "popup_rule_details_label": {
-    "message": "Seans kural details"
+    "message": "Seans kurallarının ayrıntıları"
   },
   "popup_session_type_legend": {
-    "message": "Seans type"
+    "message": "Seans türü"
   },
   "popup_session_type_flexible": {
     "message": "Esnek"
   },
   "popup_session_type_friction": {
-    "message": "Engel"
+    "message": "Sürtünme"
   },
   "popup_session_type_hard": {
-    "message": "Sert Kilit"
+    "message": "Tam kilit"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the seans immediately whenever you choose."
+    "message": "Seansı istediğin an anında bitirirsin."
   },
   "popup_session_type_friction_hint": {
-    "message": "Erken bitirmek $WAIT$ gerektirir. Yazı gerekli değildir.",
+    "message": "Erken bitirmek için $WAIT$ gerekir. Bir şey yazman gerekmez.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -487,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Erken bitirmek $WAIT$ ve yazılı doğrulama gerektirir.",
+    "message": "Erken bitirmek için $WAIT$ ve yazılan bir onay gerekir.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -496,28 +496,28 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The seans cannot end early. Site access credit still works."
+    "message": "Seans erken bitirilemez. Site erişim kredisi yine de çalışır."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected kategoriler and extra kurallar are engellendi. Other siteler remain available."
+    "message": "Seçili kategoriler ve ek kurallar engellidir. Diğer siteler açık kalır."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed siteler are available. Every other website is engellendi."
+    "message": "Yalnızca listedeki siteler açıktır. Diğer her site engellidir."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a seans length greater than zero dakika."
+    "message": "Sıfır dakikadan uzun bir seans süresi gir."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Varsayılanlar değişti, ancak geçerli listeler yüklenemedi. Popup'u yeniden yükle."
+    "message": "Varsayılanlar değişti ama güncel listeler yüklenemedi. Pencereyi yenile."
   },
   "popup_no_work_tab_option": {
-    "message": "İş sekmesi yok (isteğe bağlı)"
+    "message": "Çalışma sekmesi yok (isteğe bağlı)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Seçilen sekme kullanılamıyor - başkasını seç"
+    "message": "Seçilen sekme kullanılamıyor - başka birini seç"
   },
   "popup_cycles_label": {
-    "message": "Döngüler: $FOCUS$ dk odak, $SHORT_BREAK$ dk ara, her $LONG_EVERY$. döngüde $LONG_BREAK$ dk uzun ara",
+    "message": "Döngüler: $FOCUS$ dk odak, $SHORT_BREAK$ dk mola, her $LONG_EVERY$. döngüde $LONG_BREAK$ dk uzun mola",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -541,10 +541,10 @@
     "message": "Niyet"
   },
   "popup_intention_placeholder": {
-    "message": "Neyde çalışıyorsun?"
+    "message": "Ne üzerinde çalışıyorsun?"
   },
   "popup_work_tab_named": {
-    "message": "İş sekmesi: $TITLE$",
+    "message": "Çalışma sekmesi: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -556,16 +556,16 @@
     "message": "Değiştir"
   },
   "popup_session_settings_summary": {
-    "message": "Seans ayarlar"
+    "message": "Seans ayarları"
   },
   "popup_choose_work_tab_label": {
-    "message": "İş sekmesi seç"
+    "message": "Bir çalışma sekmesi seç"
   },
   "popup_work_tab_select_label": {
-    "message": "İş sekmesi"
+    "message": "Çalışma sekmesi"
   },
   "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Geçerli)",
+    "message": "$TITLE$ (şu anki)",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -574,13 +574,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Blocking mod"
+    "message": "Engelleme modu"
   },
   "popup_invalid_time_label": {
-    "message": "invalid zaman"
+    "message": "geçersiz süre"
   },
   "popup_start_focus_label": {
-    "message": "Başlat $DURATION$ focus",
+    "message": "$DURATION$ odak başlat",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -592,39 +592,39 @@
     "message": "docs.example.com gibi geçerli bir alan adı gir."
   },
   "popup_work_tabs_unavailable": {
-    "message": "İş sekmeler yüklenemedi. Tekrar denemek için popup'u aç."
+    "message": "Çalışma sekmeleri yüklenemedi. Yeniden denemek için pencereyi tekrar aç."
   },
   "popup_use_this_tab": {
     "message": "Bu sekmeyi kullan"
   },
   "popup_current_tab_unavailable": {
-    "message": "This tab is not available for work. Choose another aç tab."
+    "message": "Bu sekme çalışmak için uygun değil. Açık başka bir sekme seç."
   },
   "popup_checking_current_tab": {
-    "message": "Geçerli sekme kontrol ediliyor..."
+    "message": "Şu anki sekme denetleniyor..."
   },
   "popup_finding_current_tab": {
-    "message": "Geçerli sekmen bulunuyor..."
+    "message": "Şu anki sekmen aranıyor..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Geçerli sekmen yüklenemedi. Yeniden dene."
+    "message": "Şu anki sekmen yüklenemedi. Tekrar dene."
   },
   "popup_choose_work_tab_copy": {
-    "message": "İş sekmesini seç veya değiştir."
+    "message": "Çalışma sekmeni seç ya da değiştir."
   },
   "popup_saving_work_tab": {
-    "message": "İş sekmesi kaydediliyor..."
+    "message": "Çalışma sekmesi kaydediliyor..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not kaydet the work tab. Try again."
+    "message": "Çalışma sekmesi kaydedilemedi. Tekrar dene."
   },
   "popup_choose_open_tab_option": {
-    "message": "Choose an aç tab"
+    "message": "Açık bir sekme seç"
   },
   "popup_or_choose_another_tab": {
-    "message": "Veya başka bir sekme seç"
+    "message": "Ya da başka bir sekme seç"
   },
   "popup_start_failed": {
-    "message": "Could not başlat seans. Try again."
+    "message": "Seans başlatılamadı. Tekrar dene."
   }
 }

@@ -55,7 +55,7 @@
     "message": "Ava lukk"
   },
   "shared_gate_wait_none": {
-    "message": "ooteajata"
+    "message": "ilma ooteajata"
   },
   "shared_gate_wait": {
     "message": "$SECONDS$ s ooteaeg",
@@ -240,7 +240,7 @@
     }
   },
   "shared_minutes_one": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ min.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -249,7 +249,7 @@
     }
   },
   "shared_minutes_other": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ min.",
     "placeholders": {
       "COUNT": {
         "content": "$1",

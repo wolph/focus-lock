@@ -1,12 +1,12 @@
 {
   "onboarding_page_title": {
-    "message": "Set up Focus Lock"
+    "message": "Focus Lock સેટ કરો"
   },
   "onboarding_eyebrow": {
-    "message": "Focus Lock setup"
+    "message": "Focus Lock સેટઅપ"
   },
   "onboarding_progress": {
-    "message": "Step $STEP$ of $TOTAL$",
+    "message": "$TOTAL$ માંથી પગલું $STEP$",
     "placeholders": {
       "STEP": {
         "content": "$1",
@@ -18,29 +18,38 @@
       }
     }
   },
+  "onboarding_recovery_notice": {
+    "message": "તારી સાચવેલી સેટઅપ પ્રગતિ પુનઃસ્થાપિત કરી શકાઈ નહીં. તારા હાલના ડિફૉલ્ટ સાથે ફરીથી શરૂ કરી રહ્યાં છીએ."
+  },
   "onboarding_complete_heading": {
-    "message": "Setup complete"
+    "message": "સેટઅપ પૂર્ણ"
   },
   "onboarding_complete_body": {
-    "message": "Your choices are saved. Open Focus Lock from the Chrome toolbar to શરુ a સેશન."
+    "message": "તારી પસંદગીઓ સચવાઈ ગઈ છે. સેશન શરૂ કરવા Chrome ટૂલબારમાંથી Focus Lock ખોલ."
   },
   "onboarding_error_heading": {
-    "message": "Setup unavailable"
+    "message": "સેટઅપ ઉપલબ્ધ નથી"
+  },
+  "onboarding_error_body": {
+    "message": "સેટઅપ લોડ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "onboarding_retry_button": {
-    "message": "Retry"
+    "message": "ફરી પ્રયાસ કરો"
   },
   "onboarding_save_error": {
-    "message": "Could not સાચવો setup progress. Try again."
+    "message": "સેટઅપ પ્રગતિ સાચવી શકાઈ નહીં. ફરી પ્રયાસ કરો."
   },
   "onboarding_enable_error": {
-    "message": "Could not સક્ષમ website blocking. Try again."
+    "message": "વેબસાઇટ બ્લોકિંગ ચાલુ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
+  },
+  "onboarding_finish_error": {
+    "message": "સેટઅપ પૂર્ણ કરી શકાયું નહીં. તારી પસંદગીઓ હજુ પણ સચવાયેલી છે. ફરી પ્રયાસ કરો."
   },
   "onboarding_lists_heading": {
-    "message": "Choose your starting બ્લોક list"
+    "message": "તારી શરૂઆતની બ્લોક લિસ્ટ પસંદ કર"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "In $MODE$, enabled categories and extra બ્લોક્ડ sites are unavailable.",
+    "message": "$MODE$ માં, ચાલુ કરેલી કેટેગરીઓ અને વધારાની બ્લોક કરેલી સાઇટ્સ ઉપલબ્ધ નથી.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -48,8 +57,23 @@
       }
     }
   },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$ માં, તારી એલાઉ લિસ્ટ સિવાયની દરેક સાઇટ ઉપલબ્ધ નથી.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "આ પસંદગીઓ ભવિષ્યના સેશન માટે ડિફૉલ્ટ બની જાય છે. તું તેમને પછીથી સંપાદિત કરી શકે છે."
+  },
+  "onboarding_lists_legend": {
+    "message": "ભલામણ કરેલી વેબસાઇટ કેટેગરીઓ"
+  },
   "onboarding_site_count_one": {
-    "message": "$COUNT$ site",
+    "message": "$COUNT$ સાઇટ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -58,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ sites",
+    "message": "$COUNT$ સાઇટ્સ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -67,7 +91,7 @@
     }
   },
   "onboarding_show_category_sites": {
-    "message": "Show $CATEGORY$ sites",
+    "message": "$CATEGORY$ સાઇટ્સ બતાવો",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -76,7 +100,7 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "Hide $CATEGORY$ sites",
+    "message": "$CATEGORY$ સાઇટ્સ છુપાવો",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -85,7 +109,7 @@
     }
   },
   "onboarding_category_domains_label": {
-    "message": "$CATEGORY$ domains",
+    "message": "$CATEGORY$ ડોમેન",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -94,33 +118,60 @@
     }
   },
   "onboarding_continue_button": {
-    "message": "Continue"
+    "message": "ચાલુ રાખો"
   },
   "onboarding_access_heading": {
     "message": "સક્ષમ website blocking"
   },
   "onboarding_access_local_matching": {
-    "message": "Focus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your સેશન ends."
+    "message": "Focus Lock પેજ સરનામાં લોકલી તપાસે છે જેથી તે તારી પસંદ કરેલી કેટેગરીઓ અને સાઇટ્સ સાથે મેચ કરી શકે. તે તેની બ્લોકિંગ સ્ક્રીન બતાવવા અને તારું સેશન સમાપ્ત થાય ત્યારે અસરગ્રસ્ત પેજ પુનઃસ્થાપિત કરવા વેબસાઇટ ઍક્સેસનો ઉપયોગ કરે છે."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "કેટેગરીઓ અને કસ્ટમ ડોમેન કોઈપણ વેબસાઇટનો સમાવેશ કરી શકે છે. તેથી Chrome આ ક્ષમતાની વિનંતી કરશે:"
+  },
+  "onboarding_access_capability": {
+    "message": "તમારો બધો ડેટા બધી વેબસાઇટ પર વાંચો અને બદલો"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock ફક્ત તારા બ્લોકિંગ નિયમો લાગુ કરતી વખતે જ તે ઍક્સેસનો ઉપયોગ કરે છે."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome એ વેબસાઇટ ઍક્સેસ આપી નહીં. તું ફરી પ્રયાસ કરી શકે છે."
   },
   "onboarding_access_registration_error": {
-    "message": "Website access is granted, but Focus Lock could not સક્ષમ blocking. Retry setup or reload the extension."
+    "message": "વેબસાઇટ ઍક્સેસ આપવામાં આવી છે, પણ Focus Lock બ્લોકિંગ ચાલુ કરી શક્યું નહીં. સેટઅપ ફરી પ્રયાસ કરો અથવા એક્સટેન્શન રિલોડ કરો."
   },
   "onboarding_access_enable_button": {
     "message": "સક્ષમ website blocking"
   },
   "onboarding_access_defer_button": {
-    "message": "Not now"
+    "message": "હમણાં નહીં"
   },
   "onboarding_sync_heading": {
-    "message": "Choose where your સેટિંગ્સ are stored"
+    "message": "તારી સેટિંગ્સ ક્યાં સંગ્રહાય તે પસંદ કર"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Chrome ડિવાઇસ પર Sync કરો"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "તું સેટઅપ પૂર્ણ કરે પછી નીચે દર્શાવેલો મંજૂર ડેટા Chrome Sync નો ઉપયોગ કરશે."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "બધો Focus Lock ડેટા આ Chrome પ્રોફાઇલમાં જ રહે છે."
   },
   "onboarding_sync_synced_title": {
-    "message": "Synced"
+    "message": "સિંક થયેલ"
   },
   "onboarding_sync_local_title": {
-    "message": "Local only"
+    "message": "ફક્ત લોકલ"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock ડેવલપરને કંઈ મોકલવામાં આવતું નથી."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Sync ચાલુ રાખીને સેટઅપ પૂર્ણ કરો"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "Finish setup without sync"
+    "message": "Sync વગર સેટઅપ પૂર્ણ કરો"
   }
 }

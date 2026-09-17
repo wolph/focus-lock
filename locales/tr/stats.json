@@ -3,13 +3,13 @@
     "message": "Focus Lock istatistikleri"
   },
   "stats_page_title": {
-    "message": "Odak kaydın"
+    "message": "Odak karnen"
   },
   "stats_loading": {
     "message": "İstatistiklerin yükleniyor."
   },
   "stats_load_error": {
-    "message": "İstatistikler yüklenemedi. Yeniden yükle deneneyin."
+    "message": "İstatistikler yüklenemedi. Sayfayı yeniden yükle."
   },
   "stats_partial_error_both": {
     "message": "Saatlik denemeler ve site erişim kredisi ayarları kullanılamıyor."
@@ -21,40 +21,40 @@
     "message": "Site erişim kredisi ayarları kullanılamıyor."
   },
   "stats_scope_synced": {
-    "message": "Bu Chrome hesabından senkronize edilmiş toplamlar. Sadece yerel paneller etiketlenmiştir."
+    "message": "Bu Chrome hesabından eşitlenen toplamlar. Yalnızca yerel olan paneller işaretlidir."
   },
   "stats_scope_local": {
-    "message": "Bu makineden toplamlar. Focus Lock istatistikleri senkronize edilmemiştir."
+    "message": "Bu makinedeki toplamlar. Focus Lock istatistikleri eşitlenmez."
   },
   "stats_scope_checking": {
-    "message": "Bu toplamlar senkronize edilip edilmediğini kontrol etme."
+    "message": "Bu toplamların eşitlenip eşitlenmediği denetleniyor."
   },
   "stats_scope_unavailable": {
-    "message": "İstatistik kapsamı kullanılamıyor. Toplamlar senkronize edilen verileri içerebilir. Saatlik denemeler ve son seanslar bu makineden."
+    "message": "İstatistiklerin kapsamı belirlenemiyor. Toplamlar eşitlenen verileri de içerebilir. Saatlik denemeler ve son seanslar bu makineden."
   },
   "stats_scope_retry": {
-    "message": "Kapsam kontrolünü yeniden dene"
+    "message": "Kapsamı yeniden denetle"
   },
   "stats_empty": {
     "message": "İstatistikler ilk seansından sonra görünür."
   },
   "stats_tile_focus_today": {
-    "message": "Bugün odak"
+    "message": "Bugünkü odak"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Son 7 günde odak"
+    "message": "Son 7 gündeki odak"
   },
   "stats_tile_attempts_today": {
     "message": "Bugün engellenen denemeler"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Bugün düşünme saati kapalı"
+    "message": "Bugün vazgeçilen açma istekleri"
   },
   "stats_tile_credit_spent_today": {
     "message": "Bugün harcanan site erişim kredisi"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "Tüm siteler $ALL_SITES$, bir site $ONE_SITE$, $EARNED$ kazanıldı",
+    "message": "Tüm siteler $ALL_SITES$, tek site $ONE_SITE$, $EARNED$ kazanıldı",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -83,7 +83,7 @@
     "message": "Seri"
   },
   "stats_streak_empty": {
-    "message": "Seriniz ilk odak gününüzle başlıyor."
+    "message": "Serin ilk odak gününle başlar."
   },
   "stats_streak_unit_one": {
     "message": "gün"
@@ -92,7 +92,7 @@
     "message": "gün"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$ dondurma jetonu bankalanmış",
+    "message": "$COUNT$ dondurma hakkı kenarda",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$ dondurma jetonları bankalanmıştır",
+    "message": "$COUNT$ dondurma hakkı kenarda",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "Seri dondurma: bir kaçırılmış gün, kapalı"
+    "message": "Seri dondurma: kaçırılan bir gün karşılanır"
   },
   "stats_streak_active_days_one": {
-    "message": "Bu ay $MONTH$ ($COUNT$) etkin gün",
+    "message": "Bu ay $COUNT$ etkin gün ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "Bu ay $MONTH$ ($COUNT$) etkin gün",
+    "message": "Bu ay $COUNT$ etkin gün ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "$MONTH$ içinde etkin tarihleri: $DAYS$.",
+    "message": "$MONTH$ ayındaki etkin günler: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -152,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "$MONTH$ içinde etkin tarih yok.",
+    "message": "$MONTH$ ayında etkin gün yok.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -170,7 +170,7 @@
     "message": "Engellenen denemeler, son 14 gün"
   },
   "stats_chart_attempts_empty": {
-    "message": "Engellenen denemeler bir seansın bir denemesini yakaladıktan sonra burada gösterilir."
+    "message": "Engellenen denemeler, bir seans ilkini yakaladığında burada görünür."
   },
   "stats_chart_sites_heading": {
     "message": "En çok engellenen siteler, son 30 gün"
@@ -179,13 +179,13 @@
     "message": "Henüz hiçbir şey engellenmedi. Güzel bir başlangıç."
   },
   "stats_chart_hours_heading": {
-    "message": "Saate göre denemeler, bu makine yalnızca"
+    "message": "Saate göre denemeler, yalnızca bu makine"
   },
   "stats_chart_other_site": {
     "message": "diğer"
   },
   "stats_chart_minutes_tick": {
-    "message": "$MINUTES$d",
+    "message": "$MINUTES$ dk",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -212,22 +212,22 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "Bar grafik"
+    "message": "Sütun grafiği"
   },
   "stats_chart_name_hbar": {
-    "message": "Yatay bar grafik"
+    "message": "Yatay sütun grafiği"
   },
   "stats_chart_description_bar": {
-    "message": "Bar grafik. Veri noktaları arasında hareket etmek için klavyeyi kullan veya \"Tablo olarak görüntüle\" seçeneğini aç."
+    "message": "Sütun grafiği. Veri noktaları arasında gezinmek için klavyeyi kullan ya da aynı değerler için Tablo olarak gör bölümünü aç."
   },
   "stats_chart_description_hbar": {
-    "message": "Yatay bar grafik. Veri noktaları arasında hareket etmek için klavyeyi kullan veya \"Tablo olarak görüntüle\" seçeneğini aç."
+    "message": "Yatay sütun grafiği. Veri noktaları arasında gezinmek için klavyeyi kullan ya da aynı değerler için Tablo olarak gör bölümünü aç."
   },
   "stats_chart_empty_default": {
     "message": "Henüz veri yok."
   },
   "stats_chart_point": {
-    "message": "$LABEL$: $VALUE$",
+    "message": "$LABEL$, $VALUE$",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -240,7 +240,7 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "Tablo olarak görüntüle"
+    "message": "Tablo olarak gör"
   },
   "stats_chart_table_category": {
     "message": "Kategori"
@@ -249,31 +249,31 @@
     "message": "Değer"
   },
   "stats_heat_strip_label": {
-    "message": "24-hour engellendi-attempt heat strip"
+    "message": "Engellenen denemelerin 24 saatlik yoğunluk şeridi"
   },
   "stats_sessions_heading": {
-    "message": "Son seanslar bu makinede"
+    "message": "Bu makinedeki son seanslar"
   },
   "stats_sessions_empty": {
-    "message": "Your first seans will appear here."
+    "message": "İlk seansın burada görünecek."
   },
   "stats_sessions_col_date": {
     "message": "Tarih"
   },
   "stats_sessions_col_start": {
-    "message": "Başlat"
+    "message": "Başlangıç"
   },
   "stats_sessions_col_planned": {
-    "message": "Planlandı"
+    "message": "Planlanan"
   },
   "stats_sessions_col_focused": {
-    "message": "Odaklandı"
+    "message": "Odakta geçen"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All siteler"
+    "message": "Tüm siteler"
   },
   "stats_sessions_col_one_site": {
-    "message": "Bir site"
+    "message": "Tek site"
   },
   "stats_sessions_col_intention": {
     "message": "Niyet"
@@ -297,13 +297,13 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "manuel"
+    "message": "elle"
   },
   "stats_session_source_schedule": {
-    "message": "program"
+    "message": "zamanlama"
   },
   "stats_session_source_scheduled": {
-    "message": "programlı"
+    "message": "zamanlamayla başladı"
   },
   "stats_outcome_completed": {
     "message": "Tamamlandı"
@@ -312,6 +312,6 @@
     "message": "Erken bitti"
   },
   "stats_outcome_running": {
-    "message": "Çalışıyor"
+    "message": "Sürüyor"
   }
 }
