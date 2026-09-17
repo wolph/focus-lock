@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Ennek a menetnek a befejezése"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Válassz egy elérhető munkafület."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Ez a fül már nem érhető el. Válassz másik munkafület."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "A menet elindult, de a munkafület nem sikerült elmenteni. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "A fókuszmenet megváltozott. Válaszd ki újra a munkafüledet."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "A fókuszmenet megváltozott. Nyisd meg újra az előugró ablakot."
   }
 }

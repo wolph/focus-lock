@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Τερματισμός αυτής της συνεδρίας"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Διάλεξε μια διαθέσιμη καρτέλα εργασίας."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Αυτή η καρτέλα δεν είναι πια διαθέσιμη. Διάλεξε άλλη καρτέλα εργασίας."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Η συνεδρία ξεκίνησε, αλλά η καρτέλα εργασίας δεν αποθηκεύτηκε. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Η συνεδρία συγκέντρωσης άλλαξε. Διάλεξε ξανά την καρτέλα εργασίας σου."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Η συνεδρία συγκέντρωσης άλλαξε. Άνοιξε ξανά το αναδυόμενο παράθυρο."
   }
 }

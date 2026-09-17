@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "結束此工作階段"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "請選擇一個可用的工作頁籤。"
+  },
+  "shared_work_tab_closed_error": {
+    "message": "該頁籤已無法使用。請選擇另一個工作頁籤。"
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "工作階段已開始，但無法儲存工作頁籤。$CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "專注工作階段已變更。請重新選擇工作頁籤。"
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "專注工作階段已變更。請重新開啟彈出式視窗。"
   }
 }

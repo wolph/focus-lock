@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "このセッションを終了"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "利用できるワークタブを選択してください。"
+  },
+  "shared_work_tab_closed_error": {
+    "message": "そのタブは利用できなくなりました。別のワークタブを選択してください。"
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "セッションは開始しましたが、ワークタブを保存できませんでした。$CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "フォーカスセッションが変わりました。ワークタブをもう一度選択してください。"
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "フォーカスセッションが変わりました。ポップアップを開き直してください。"
   }
 }

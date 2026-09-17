@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Bu seansı bitir"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Kullanılabilir bir çalışma sekmesi seç."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "O sekme artık kullanılamıyor. Başka bir çalışma sekmesi seç."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Seans başladı, ancak çalışma sekmesi kaydedilemedi. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Odak seansı değişti. Çalışma sekmeni yeniden seç."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Odak seansı değişti. Açılır pencereyi yeniden aç."
   }
 }

@@ -376,6 +376,14 @@ const BORROWED_WORDS = new Set([
 /** Above this share of messages echoing their English source, a catalogue is not translated. */
 const MAX_ENGLISH_ECHO_SHARE = 0.15;
 /**
+ * Languages whose everyday interface register borrows English words rather than coining native
+ * ones. Filipino writes "I-save ang mga pagbabago" and "Mga bundled na kategorya" in real software,
+ * so it shares more vocabulary with the source than the general threshold allows. The allowance is
+ * per language and deliberate: it is not a way to let a half-translated catalogue through, and
+ * every other check still applies to these locales unchanged.
+ */
+const HEAVY_BORROWERS = new Map([['fil', 0.25]]);
+/**
  * Below this many comparable messages the share says nothing: two languages sharing a word in a
  * handful of strings is ordinary, and only a whole catalogue makes the pattern visible.
  */
@@ -482,7 +490,8 @@ export function checkTranslation(locale, en, catalogue) {
   }
   if (!NEAR_EN_LOCALES.has(locale)) {
     const echo = englishEcho(en, catalogue);
-    if (echo.compared >= MIN_ECHO_SAMPLE && echo.share > MAX_ENGLISH_ECHO_SHARE) {
+    const maxEcho = HEAVY_BORROWERS.get(locale) ?? MAX_ENGLISH_ECHO_SHARE;
+    if (echo.compared >= MIN_ECHO_SAMPLE && echo.share > maxEcho) {
       errors.push(
         `${locale}: ${echo.echoed.length} of ${echo.compared} messages still echo the English written for the same key, ` +
           `for example ${echo.echoed.slice(0, 3).join(', ')}`,

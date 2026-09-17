@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "结束此会话"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "请选择一个可用的工作标签页。"
+  },
+  "shared_work_tab_closed_error": {
+    "message": "该标签页已不可用。请选择另一个工作标签页。"
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "会话已开始，但无法保存工作标签页。$CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "专注会话已更改。请重新选择工作标签页。"
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "专注会话已更改。请重新打开弹出窗口。"
   }
 }

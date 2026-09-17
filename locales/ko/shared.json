@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "이 세션 종료"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "사용 가능한 작업 탭을 선택하십시오."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "해당 탭은 더 이상 사용할 수 없습니다. 다른 작업 탭을 선택하십시오."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "세션이 시작되었지만 작업 탭을 저장할 수 없습니다. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "집중 세션이 변경되었습니다. 작업 탭을 다시 선택하십시오."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "집중 세션이 변경되었습니다. 팝업을 다시 여십시오."
   }
 }

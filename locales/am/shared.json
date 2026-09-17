@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "ይህን ክፍለ ጊዜ ጨርስ"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "የሚገኝ የስራ ትር ይምረጡ።"
+  },
+  "shared_work_tab_closed_error": {
+    "message": "ያ ትር ከእንግዲህ አይገኝም። ሌላ የስራ ትር ይምረጡ።"
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "ክፍለ ጊዜው ተጀምሯል፣ ነገር ግን የስራ ትሩ ሊቀመጥ አልቻለም። $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "የትኩረት ክፍለ ጊዜው ተቀይሯል። የስራ ትርዎን እንደገና ይምረጡ።"
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "የትኩረት ክፍለ ጊዜው ተቀይሯል። ብቅ-ባዩን እንደገና ይክፈቱ።"
   }
 }

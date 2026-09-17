@@ -6,10 +6,10 @@
     "message": "Mga setting ng Focus Lock"
   },
   "options_loading_settings": {
-    "message": "Kinakarga ang mga setting"
+    "message": "Nilo-load ang mga setting"
   },
   "options_privacy_loading": {
-    "message": "Kinakarga ang mga setting ng privacy"
+    "message": "Nilo-load ang mga setting ng privacy"
   },
   "options_save_failed": {
     "message": "Hindi maaaring i-save ang mga setting. I-reload ang page at subukan ulit."
@@ -18,58 +18,58 @@
     "message": "Hadlanging"
   },
   "options_blocking_help": {
-    "message": "Humaharang ang mga sariling panuntunan sa mga sesyong blacklist. Ang whitelist ang nananatiling maaabot sa mga sesyong whitelist. Hinaharangan ng mga nakabalot na kategorya ang karaniwang sayang-oras."
+    "message": "Ang mga custom na panuntunan ay humaharang sa mga sesyon ng itim na listahan. Ang puting listahan ang nananatiling naa-akses sa mga sesyon ng puting listahan. Hinaharangan ng mga bundled na kategorya ang mga karaniwang site na nagsasayang ng oras."
   },
   "options_custom_blacklist_title": {
-    "message": "Sariling blacklist"
+    "message": "Custom na itim na listahan"
   },
   "options_whitelist_title": {
     "message": "Puting listahan"
   },
   "options_bundled_categories_heading": {
-    "message": "Mga nakabalot na kategorya"
+    "message": "Mga bundled na kategorya"
   },
   "options_bundled_categories_help": {
-    "message": "Mga nakabalot na listahan ng karaniwang sayang-oras. I-toggle ang buong kategorya, pagkatapos ay buksan ito upang panatilihing available ang ilang site."
+    "message": "Mga bundled na listahan ng mga karaniwang site na nagsasayang ng oras. I-toggle ang buong kategorya, pagkatapos ay buksan ito upang panatilihing available ang mga indibidwal na site."
   },
   "options_schedule_heading": {
     "message": "Iskedyul"
   },
   "options_schedule_help": {
-    "message": "Kusang nagsisimula ang mga sesyon sa loob ng mga bintanang ito. Ang higpit na itinakda dito ay nalalapat sa buong bintana."
+    "message": "Nagsisimula ang mga sesyon nang mag-isa sa loob ng mga window na ito. Ang strictness na naka-set dito ay applicable sa buong window."
   },
   "options_behavior_heading": {
-    "message": "Asal ng sesyon"
+    "message": "Pag-uugali ng sesyon"
   },
   "options_budget_heading": {
-    "message": "Kreditong access sa site"
+    "message": "Kredito sa Pag-akses ng Site"
   },
   "options_notifications_heading": {
     "message": "Notificatisas"
   },
   "options_privacy_heading": {
-    "message": "Privacy at datos"
+    "message": "Privacy at Data"
   },
   "options_load_error_retry": {
     "message": "Subukan Muli"
   },
   "options_load_error_delete_all": {
-    "message": "Burahin ang lahat at magsimula muli"
+    "message": "Burahin lahat at magsimula ulit"
   },
   "options_load_error_keep_data": {
     "message": "Panatilihin ang aking data"
   },
   "options_delete_all_data": {
-    "message": "Burahin ang lahat ng datos ng Focus Lock"
+    "message": "Burahin lahat ng data ng Focus Lock"
   },
   "options_dirty_saving": {
-    "message": "Sini-save ang mga pagbabago"
+    "message": "Sine-save ang mga pagbabago"
   },
   "options_dirty_unsaved": {
-    "message": "May hindi naka-save na pagbabago"
+    "message": "Mga pagbabagong hindi pa na-save"
   },
   "options_dirty_clean": {
-    "message": "Walang hindi naka-save na pagbabago"
+    "message": "Walang pagbabagong hindi pa na-save"
   },
   "options_dirty_discard": {
     "message": "Burahin ang mga pagbabago"
@@ -99,7 +99,7 @@
     }
   },
   "options_rules_empty": {
-    "message": "Wala pang panuntunan."
+    "message": "Wala pang mga panuntunan."
   },
   "options_rule_kind_aria": {
     "message": "Uri ng panuntunan"
@@ -123,7 +123,7 @@
     "message": "Magdagdag ng panuntunan"
   },
   "options_rules_help": {
-    "message": "Sakop ng facebook.com ang domain na iyon at bawat subdomain. Sakop ng news.ycombinator.com ang subdomain na iyon at lahat ng nasa ilalim nito. Tumutugma ang /youtube\\.com\\/shorts/ sa buong URL bilang regular na ekspresyon."
+    "message": "Sinasaklaw ng facebook.com ang domain na iyon at bawat subdomain. Sinasaklaw ng news.ycombinator.com ang subdomain na iyon at anumang nasa ilalim nito. Tinutugma ng /youtube\\.com\\/shorts/ ang buong URL bilang regular expression."
   },
   "options_number_error_positive": {
     "message": "Ang $LABEL$ ay dapat na positibong buong numero.",
@@ -135,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "Ang $LABEL$ ay dapat buong bilang na sero o higit pa.",
+    "message": "Dapat na buong numero na zero o mas mataas ang $LABEL$.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -144,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "Ang $LABEL$ ay dapat sero o higit pa.",
+    "message": "Dapat na zero o mas mataas ang $LABEL$.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -153,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "Ang $LABEL$ ay dapat nasa loob ng saklaw ng minutong suportado.",
+    "message": "Dapat nasa loob ng suportadong minute range ang $LABEL$.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -162,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "Ang $LABEL$ ay dapat nasa loob ng saklaw ng araw na suportado.",
+    "message": "Dapat nasa loob ng suportadong day range ang $LABEL$.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -174,37 +174,37 @@
     "message": "Mga default ng sesyon"
   },
   "options_session_defaults_help": {
-    "message": "Nakatakda ang paraan at higpit kapag nagsimula ang sesyon. Ito ang mga halagang binubuksan ng pormularyo ng pagsisimula."
+    "message": "Naka-fix ang mode at strictness kapag nagsimula ang sesyon. Ito ang mga value na binubuksan ng start form."
   },
   "options_preset_short_label": {
     "message": "Preset ng maikling sesyon (minuto)"
   },
   "options_preset_default_label": {
-    "message": "Preset ng default na sesyon (minuto)"
+    "message": "Default na preset ng sesyon (minuto)"
   },
   "options_preset_deep_label": {
     "message": "Preset ng malalim na sesyon (minuto)"
   },
   "options_mode_blacklist_label": {
-    "message": "Blacklist: harangin ang mga nakalistang site"
+    "message": "Itim na listahan: harangin ang mga nakalistang site"
   },
   "options_mode_whitelist_label": {
-    "message": "Whitelist: payagan lamang ang mga nakalistang site"
+    "message": "Puting listahan: payagan lamang ang mga nakalistang site"
   },
   "options_strictness_flexible_label": {
-    "message": "Nababaluktot: tapusin ang sesyon kahit kailan mo gusto"
+    "message": "Flexible: tapusin ang sesyon anumang oras na gusto mo"
   },
   "options_strictness_friction_label": {
-    "message": "Alitan: ang paghinto nang maaga ay dumadaan sa nakatakdang tarangkahan ng pagninilay"
+    "message": "Friction: ginagamit ng maagang paghinto ang naka-configure na gate ng pag-iisip"
   },
   "options_strictness_hard_label": {
-    "message": "Mahigpit: walang maagang pagtatapos, pansamantalang access sa site lamang"
+    "message": "Mahirap: walang maagang pagtatapos, pansamantalang site akses lamang"
   },
   "options_cycle_heading": {
     "message": "Pokus at pahsaga siklus"
   },
   "options_cycle_help": {
-    "message": "Mga default: 25 minutong pokus, 5 minutong pahinga, 15 minutong mahabang pahinga tuwing ika-4 na siklo. Ang mga pahingang nakaiskedyul ay nakahihigit sa pahinga-kapag-gusto para sa kalooban at pokus sa mga pag-aaral. Kasunduan ang eksaktong minuto, hindi agham."
+    "message": "Mga default: 25 minutong focus, 5 minutong break, 15 minutong mahabang break tuwing ika-4 na cycle. Sa mga pag-aaral, mas mabuti ang mga break na naka-schedule kaysa sa pagpapahinga kung kailan mo lang gusto, para sa mood at focus. Ang eksaktong minuto ay convention lang, hindi siyensya."
   },
   "options_cycle_default_label": {
     "message": "Siklus pokus at pahsagas by default"
@@ -213,19 +213,19 @@
     "message": "Focus minutos"
   },
   "options_short_break_minutes_label": {
-    "message": "Minuto ng maikling pahinga"
+    "message": "Minuto ng maikling break"
   },
   "options_long_break_minutes_label": {
-    "message": "Minuto ng mahabang pahinga"
+    "message": "Minuto ng mahabang break"
   },
   "options_long_every_label": {
-    "message": "Mahabang pahinga tuwing ika-N na siklo"
+    "message": "Mahabang break tuwing ika-N na cycle"
   },
   "options_gate_heading": {
-    "message": "Tarangkahan ng pagninilay"
+    "message": "Gate ng Pag-iisip"
   },
   "options_gate_help": {
-    "message": "Ang 10 segundong paghihintay na may tahasang pindutang balik-sa-trabaho ay nakababawas nang masusukat sa mga biglaang pagbisita (pag-aaral sa larangan, PNAS 2023). Halos dinodoble ng mas mahabang paghihintay at ng nakasulat na pangungusap ang bisa."
+    "message": "Ang paghihintay na 10 segundo na may malinaw na back-to-work button ay nakakabawas nang may sukat sa mga impulsibong pagbisita (field study, PNAS 2023). Ang mas mahabang paghihintay at ang pagta-type ng sentence ay halos dinodoble ang epekto."
   },
   "options_gate_wait_one": {
     "message": "Maghintay ng $COUNT$ segundo",
@@ -237,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "Maghintay ng $COUNT$ na segundo",
+    "message": "Maghintay ng $COUNT$ segundo",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -249,46 +249,46 @@
     "message": "Cussam"
   },
   "options_custom_delay_label": {
-    "message": "Sariling pagkaantala (segundo)"
+    "message": "Custom na delay (segundo)"
   },
   "options_custom_delay_error": {
-    "message": "Ang sariling pagkaantala ay dapat positibong buong bilang ng segundo."
+    "message": "Dapat na positibong buong numero ng segundo ang custom na delay."
   },
   "options_gate_typed_phrase_label": {
-    "message": "Hilingin ding mag-type ng pangungusap"
+    "message": "Kailanganin din ang pag-type ng isang sentence"
   },
   "options_gate_force_end_label": {
-    "message": "I-enable ang pindutang \"Huwag pansinin ang paghihintay at tapusin pa rin\""
+    "message": "Paganahin ang button na \"Balewalain ang timeout at tapusin pa rin\""
   },
   "options_credit_help": {
-    "message": "Naiipon ang kreditong access sa site habang nakapokus ka. Parehong kumukuha sa iisang balanse ang access sa lahat ng site at ang pagbubukas ng isang site. Maaari kang lumayo anumang oras nang hindi gumagastos ng kredito."
+    "message": "Naiipon ang site akses kredito habang nagfo-focus ka. Ang akses sa lahat ng site at ang pag-unlock ng iisang site ay parehong gumagastos mula sa parehong balance. Maaari kang lumayo anumang oras nang hindi gumagastos ng kredito."
   },
   "options_earn_rate_label": {
-    "message": "Minuto ng access sa site kada 30 minutong pokus"
+    "message": "Minuto ng site akses bawat 30 minuto ng focus"
   },
   "options_credit_cap_label": {
-    "message": "Limitasyon ng kreditong access sa site (minuto)"
+    "message": "Limitasyon ng site akses kredito (minuto)"
   },
   "options_pause_length_label": {
-    "message": "Haba ng access sa lahat ng site (minuto)"
+    "message": "Haba ng akses sa lahat ng site (minuto)"
   },
   "options_unlock_length_label": {
-    "message": "Haba ng pagbubukas ng site (minuto)"
+    "message": "Haba ng pag-unlock ng site (minuto)"
   },
   "options_streak_heading": {
     "message": "Sunod-sunod at retentisa"
   },
   "options_streak_help": {
-    "message": "Binibilang ng sunod-sunod ang mga araw na umaabot sa layunin. Isang default na sesyon ang nagpapanatili ng kadena, at inaayos ng token ng pagyeyelo ang araw na nalaktawan."
+    "message": "Binibilang ng streak ang mga araw na umaabot sa goal. Pinapanatiling buhay ng isang default na sesyon ang chain, at inaayos ng freeze token ang isang nakaligtaang araw."
   },
   "options_streak_goal_label": {
-    "message": "Pang-araw-araw na layunin ng sunod-sunod (minuto ng pokus)"
+    "message": "Pang-araw-araw na goal ng streak (minuto ng focus)"
   },
   "options_freeze_interval_label": {
-    "message": "Agwat ng token ng pagyeyelo (araw)"
+    "message": "Interval ng freeze token (araw)"
   },
   "options_retention_label": {
-    "message": "Panatilihin ang pang-araw-araw na estadistika (araw)"
+    "message": "Panatilihin ang pang-araw-araw na stats (araw)"
   },
   "options_category_on_announcement": {
     "message": "$CATEGORY$ kategoya sa.",
@@ -333,7 +333,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "Kasama ang lahat ng site na $CATEGORY$.",
+    "message": "Naisama ang lahat ng $CATEGORY$ site.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -351,7 +351,7 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "Maramihang aksyon sa kategorya"
+    "message": "Mga bulk action ng kategorya"
   },
   "options_selected_count": {
     "message": "Napili $COUNT$",
@@ -375,13 +375,13 @@
     "message": "Piliin lahat"
   },
   "options_deselect_all": {
-    "message": "Alisin lahat"
+    "message": "Alisin ang pagpili sa lahat"
   },
   "options_select_all_categories_aria": {
     "message": "Piliin ang lahat ng kategorya"
   },
   "options_deselect_all_categories_aria": {
-    "message": "Alisin ang lahat ng kategorya"
+    "message": "Alisin ang pagpili sa lahat ng kategorya"
   },
   "options_show_category_sites": {
     "message": "Ipakita $CATEGORY$ sites",
@@ -441,10 +441,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "Alisin ang tsek sa isang site upang manatili itong available habang hinaharang ang iba pang bahagi ng kategorya."
+    "message": "I-uncheck ang isang site upang manatili itong available habang naka-block ang ibang bahagi ng kategorya."
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "Maramihang aksyon sa site na $CATEGORY$",
+    "message": "Mga bulk action ng site sa $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "options_select_all_category_sites_aria": {
-    "message": "Piliin ang lahat ng site na $CATEGORY$",
+    "message": "Piliin ang lahat ng $CATEGORY$ site",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -462,7 +462,7 @@
     }
   },
   "options_deselect_all_category_sites_aria": {
-    "message": "Alisin ang lahat ng site na $CATEGORY$",
+    "message": "Alisin ang pagpili sa lahat ng $CATEGORY$ site",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -504,7 +504,7 @@
     "message": "Siklus pokus at pahsagas"
   },
   "options_schedule_overlap_error": {
-    "message": "Nagsasapawan sa ibang naka-enable na entry sa $DAY$.",
+    "message": "Nag-o-overlap sa ibang naka-enable na entry sa $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -540,10 +540,10 @@
     "message": "Kanselahin"
   },
   "options_schedule_empty": {
-    "message": "Wala pang nakaiskedyul na sesyon."
+    "message": "Wala pang naka-schedule na sesyon."
   },
   "options_schedule_selected_days_aria": {
-    "message": "Mga piniling araw"
+    "message": "Mga napiling araw"
   },
   "options_schedule_time_range": {
     "message": "$START$ sa $END$",
@@ -559,10 +559,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blacklist"
+    "message": "itim na listahan"
   },
   "options_schedule_mode_whitelist": {
-    "message": "whitelist"
+    "message": "puting listahan"
   },
   "options_schedule_strictness_flexible": {
     "message": "nababaluktot"
@@ -583,7 +583,7 @@
     "message": "Alisin"
   },
   "options_schedule_add": {
-    "message": "Magdagdag ng entry sa iskedyul"
+    "message": "Magdagdag ng schedule entry"
   },
   "options_sounds_heading": {
     "message": "Mga tunog"
@@ -592,16 +592,16 @@
     "message": "Pangunahing tunog"
   },
   "options_sound_session_complete": {
-    "message": "Tapos ang sesyon"
+    "message": "Tapos na ang sesyon"
   },
   "options_sound_break_start": {
     "message": "Pahsaga simulan"
   },
   "options_sound_break_end": {
-    "message": "Katapusan ng pahinga"
+    "message": "Katapusan ng break"
   },
   "options_sound_schedule_start": {
-    "message": "Kusang pagsisimula ayon sa iskedyul"
+    "message": "Auto-start ng schedule"
   },
   "options_sound_preview_aria": {
     "message": "Pakinggan ang $SOUND$",
@@ -613,139 +613,139 @@
     }
   },
   "options_sound_play": {
-    "message": "Patugtugin"
+    "message": "I-play"
   },
   "options_sound_preview_error": {
-    "message": "Hindi mapakinggan ang tunog. Subukan muli."
+    "message": "Hindi ma-preview ang sound. Subukan muli."
   },
   "options_sounds_notifications_heading": {
     "message": "Notificatisas"
   },
   "options_session_complete_notification": {
-    "message": "Magpakita ng abiso ng sistema kapag natapos ang sesyon"
+    "message": "Ipakita ang system notification kapag natapos ang sesyon"
   },
   "options_badge_heading": {
     "message": "Lencana"
   },
   "options_badge_countdown": {
-    "message": "Ipakita ang natitirang oras sa icon ng toolbar"
+    "message": "Ipakita ang natitirang oras sa toolbar icon"
   },
   "options_privacy_website_access_heading": {
-    "message": "Access sa website"
+    "message": "Pag-akses sa Website"
   },
   "options_privacy_website_off_title": {
-    "message": "Naka-off ang access sa website"
+    "message": "Naka-off ang pag-akses sa website"
   },
   "options_privacy_website_off_detail": {
-    "message": "Hindi makakaharang ang Focus Lock ng mga website hangga't hindi ka nagbibigay ng access."
+    "message": "Hindi maaaring i-block ng Focus Lock ang mga website hangga't hindi mo binibigyan ng akses."
   },
   "options_privacy_website_enable_action": {
-    "message": "I-enable ang pagharang sa website"
+    "message": "Paganahin ang pag-block sa website"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "Naibigay ang access sa website, ngunit hindi aktibo ang pagharang"
+    "message": "Naibigay na ang pag-akses sa website, pero hindi pa aktibo ang pag-block"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Nagbigay ng access ang Chrome, ngunit hindi nairehistro ng Focus Lock ang script nito sa pagharang."
+    "message": "Nagbigay ng akses ang Chrome, pero hindi na-register ng Focus Lock ang blocking script nito."
   },
   "options_privacy_website_retry_action": {
-    "message": "Subukan muli ang pagharang sa website"
+    "message": "Subukan Muli ang pag-block sa website"
   },
   "options_privacy_website_on_title": {
     "message": "Naka-enable ang pagharang sa website"
   },
   "options_privacy_website_on_detail": {
-    "message": "Maaaring ilapat ng Focus Lock ang iyong aktibong panuntunan sa pagharang sa karaniwang pahina ng website."
+    "message": "Maaaring i-apply ng Focus Lock ang iyong mga aktibong blocking rule sa mga regular na website page."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "Burahin ang lokal na kasaysayan?"
+    "message": "Burahin ang local history?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "Kumpirmahin ang pagbura ng lokal na kasaysayan"
+    "message": "Kumpirmahin ang pagbura ng local history"
   },
   "options_privacy_local_history_deleted": {
     "message": "Local hissay burahsad."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "Permanenteng binubura nito ang buong URL, mga layunin ng pokus, at detalyadong kaganapan ng sesyon mula sa device na ito. Hindi nito nililinis ang tumatakbong sesyon, na pinananatili ang layunin nito at ang address ng bawat tab na hinaharangan. Ang pagtatapos ng sesyon ay naglilinis sa layunin at nagsisimula ng paglilinis na naglilinis sa bawat bukas na tab ng website, at inaalis ng paglilinis ang bawat naka-imbak na address kapag natapos ito."
+    "message": "Permanenteng buburahin nito ang mga buong URL, layunin sa focus, at detalyadong session event mula sa device na ito. Hindi nito buburahin ang isang tumatakbong sesyon, na pinapanatili ang layunin nito at ang address ng bawat tab na hina-block nito. Ang pagtatapos ng sesyon ay bubura sa layunin at magsisimula ng cleanup na bubura sa bawat bukas na website tab, at aalisin ng cleanup na iyon ang bawat naka-store na address kapag natapos ito."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "Permanenteng binubura nito ang buong URL, mga layunin ng pokus, at detalyadong kaganapan ng sesyon mula sa device na ito, kasama ang lokal na pinagsama-samang estadistika. Hindi nito nililinis ang tumatakbong sesyon, na pinananatili ang layunin nito at ang address ng bawat tab na hinaharangan. Ang pagtatapos ng sesyon ay naglilinis sa layunin at nagsisimula ng paglilinis na naglilinis sa bawat bukas na tab ng website, at inaalis ng paglilinis ang bawat naka-imbak na address kapag natapos ito."
+    "message": "Permanenteng buburahin nito ang mga buong URL, layunin sa focus, detalyadong session event, kasama na ang local-only na aggregate statistics mula sa device na ito. Hindi nito buburahin ang isang tumatakbong sesyon, na pinapanatili ang layunin nito at ang address ng bawat tab na hina-block nito. Ang pagtatapos ng sesyon ay bubura sa layunin at magsisimula ng cleanup na bubura sa bawat bukas na website tab, at aalisin ng cleanup na iyon ang bawat naka-store na address kapag natapos ito."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Burahin ang malayong datos ng Sync?"
+    "message": "Burahin ang remote Sync data?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Kumpirmahin ang pagbura ng malayong datos ng Sync"
+    "message": "Kumpirmahin ang pagbura ng remote Sync data"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Nabura ang malayong datos ng Chrome Sync."
+    "message": "Nabura na ang remote Chrome Sync data."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "Permanenteng binubura nito ang malayong setting, mga listahan ng pagharang at pagpayag, kreditong access sa site, sunod-sunod, at kabuuan ng hinarang na pagtatangka sa antas ng domain mula sa Chrome Sync. Nananatili sa device na ito ang lokal na setting at estadistika."
+    "message": "Permanenteng buburahin nito ang mga remote na setting, block at allow list, site akses kredito, streak, at domain-level na blocked-attempt aggregate mula sa Chrome Sync. Mananatili sa device na ito ang mga local na setting at statistics."
   },
   "options_privacy_confirm_all_title": {
-    "message": "Burahin ang lahat ng datos ng Focus Lock?"
+    "message": "Burahin ang lahat ng Focus Lock data?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "Kumpirmahin ang pagbura ng lahat ng datos ng Focus Lock"
+    "message": "Kumpirmahin ang pagbura ng lahat ng Focus Lock data"
   },
   "options_privacy_all_deleted": {
-    "message": "Nabura ang lahat ng datos ng Focus Lock."
+    "message": "Nabura na ang lahat ng Focus Lock data."
   },
   "options_privacy_all_body_intro": {
-    "message": "Permanenteng binubura nito ang bawat piraso ng datos ng Focus Lock sa device na ito at anumang kopyang naiwan sa Chrome Sync:"
+    "message": "Permanenteng buburahin nito ang bawat piraso ng Focus Lock data sa device na ito at anumang Focus Lock copies na naiwan sa Chrome Sync:"
   },
   "options_privacy_all_body_outro": {
     "message": "Ang pag-delete ng lahat ay makukuha lamang habang walang tumatakbong session. Focus Lock ay bumabalik sa setup."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Hindi nabura ang lokal na kasaysayan. Subukan muli."
+    "message": "Hindi mabura ang local history. Subukan muli."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Hindi nabura ang malayong datos ng Chrome Sync. Subukan muli."
+    "message": "Hindi mabura ang remote Chrome Sync data. Subukan muli."
   },
   "options_privacy_error_all_clear": {
-    "message": "Hindi nabura ang lahat ng datos ng Focus Lock. Subukan muli."
+    "message": "Hindi mabura ang lahat ng Focus Lock data. Subukan muli."
   },
   "options_privacy_error_sync_write": {
-    "message": "Hindi na-save ng Chrome Sync ang iyong pinakabagong pagbabago. Ligtas ang iyong lokal na naka-save."
+    "message": "Hindi na-save ng Chrome Sync ang iyong pinakabagong pagbabago. Ligtas ang iyong local save."
   },
   "options_privacy_error_request": {
-    "message": "Hindi natapos ang kahilingan. Subukan muli."
+    "message": "Hindi na-complete ang request. Subukan muli."
   },
   "options_privacy_website_access_updated": {
-    "message": "Na-update ang access sa website."
+    "message": "Na-update na ang pag-akses sa website."
   },
   "options_privacy_website_access_denied": {
-    "message": "Hindi naibigay ang access sa website."
+    "message": "Hindi naibigay ang pag-akses sa website."
   },
   "options_privacy_error_website_access": {
-    "message": "Hindi na-update ang access sa website. Subukan muli."
+    "message": "Hindi ma-update ang pag-akses sa website. Subukan muli."
   },
   "options_privacy_website_blocking_enabled": {
     "message": "Na-enable ang pagharang sa website."
   },
   "options_privacy_error_export": {
-    "message": "Hindi mai-export ang talaan ng kaganapan."
+    "message": "Hindi ma-export ang event log."
   },
   "options_privacy_error_export_retry": {
-    "message": "Hindi mai-export ang talaan ng kaganapan. Subukan muli."
+    "message": "Hindi ma-export ang event log. Subukan muli."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Hindi mabuksan ang setting ng pahintulot ng Chrome. Subukan muli."
+    "message": "Hindi mabuksan ang Chrome permission settings. Subukan muli."
   },
   "options_privacy_chrome_settings_opened": {
     "message": "Nabuksan ang setting ng pahintulot ng Chrome."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Buksan ang setting ng pahintulot ng Chrome"
+    "message": "Buksan ang Chrome permission settings"
   },
   "options_privacy_sync_heading": {
     "message": "Chrome I-i-sync"
   },
   "options_privacy_sync_switch_label": {
-    "message": "I-sync ang datos ng Focus Lock sa mga device na Chrome"
+    "message": "I-sync ang Focus Lock data sa mga Chrome device"
   },
   "options_privacy_sync_enabled": {
     "message": "Chrome Sync gawsad."
@@ -754,7 +754,7 @@
     "message": "Chrome Sync huwagd."
   },
   "options_privacy_sync_saving": {
-    "message": "Sini-save pa ng Chrome Sync ang iyong pinakabagong pagbabago."
+    "message": "Sine-save pa rin ng Chrome Sync ang iyong pinakabagong pagbabago."
   },
   "options_privacy_sync_on": {
     "message": "Chrome Sync is sa."
@@ -763,10 +763,10 @@
     "message": "Chrome Sync is ngf."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Na-save ang mga pagbabago sa Chrome Sync."
+    "message": "Na-save na ang mga pagbabago sa Chrome Sync."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Subukan muling i-enable ang Chrome Sync"
+    "message": "Subukan Muli ang pag-enable ng Chrome Sync"
   },
   "options_privacy_retry_sync": {
     "message": "Subukan Muli Chrome Sync"
@@ -778,72 +778,72 @@
     "message": "Local saly"
   },
   "options_privacy_developer_note": {
-    "message": "Walang ipinapadala sa nagpaunlad ng Focus Lock."
+    "message": "Walang ipinapadala sa developer ng Focus Lock."
   },
   "options_privacy_local_log_heading": {
-    "message": "Lokal na talaan ng kaganapan"
+    "message": "Lokal na Event Log"
   },
   "options_privacy_local_log_detail": {
-    "message": "I-export ang detalyadong lokal na talaan o burahin ang lokal na kasaysayan ng pagba-browse at sesyon."
+    "message": "I-export ang detalyadong lokal na log o burahin ang lokal na browsing at session history."
   },
   "options_privacy_export_local_log": {
-    "message": "I-export ang lokal na talaan ng kaganapan"
+    "message": "I-export ang lokal na event log"
   },
   "options_privacy_local_log_exported": {
-    "message": "Na-export ang lokal na talaan ng kaganapan."
+    "message": "Na-export na ang lokal na event log."
   },
   "options_privacy_delete_local_history": {
-    "message": "Burahin ang lokal na kasaysayan"
+    "message": "Burahin ang local history"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Malayong datos ng Sync"
+    "message": "Remote Sync Data"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Burahin ang mga kopya ng Focus Lock na naiwan sa Chrome Sync nang hindi binabago ang device na ito."
+    "message": "Burahin ang mga Focus Lock copies na naiwan sa Chrome Sync nang hindi binabago ang device na ito."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Burahin ang malayong datos ng Sync"
+    "message": "Burahin ang remote Sync data"
   },
   "options_privacy_all_data_heading": {
-    "message": "Lahat ng datos ng Focus Lock"
+    "message": "Lahat ng Focus Lock Data"
   },
   "options_privacy_all_data_detail": {
-    "message": "Burahin ang bawat talaan ng Focus Lock sa device na ito at anumang kopyang naiwan sa Chrome Sync, pagkatapos ay magsimula muli mula sa setup. Available habang walang tumatakbong sesyon."
+    "message": "Burahin ang bawat Focus Lock record sa device na ito at ang anumang Focus Lock copies sa Chrome Sync, pagkatapos magsimula ulit mula sa setup. Makukuha habang walang tumatakbong session."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Ipinagpapatuloy ang pagbura ng lahat ng datos ng Focus Lock."
   },
   "options_privacy_retry_local_history": {
-    "message": "Subukan muli ang pagbura ng lokal na kasaysayan"
+    "message": "Subukan Muli ang pagbura ng local history"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Subukan muli ang pagbura ng malayong Sync"
+    "message": "Subukan Muli ang pagbura ng remote Sync"
   },
   "options_privacy_retry_all_data": {
-    "message": "Subukan muli ang pagbura ng lahat ng datos"
+    "message": "Subukan Muli ang pagbura ng lahat ng data"
   },
   "options_error_load": {
-    "message": "Hindi makarga ang mga setting. I-reload ang pahina upang subukan muli."
+    "message": "Hindi ma-load ang mga setting. I-reload ang page para subukan muli."
   },
   "options_error_retry_boot": {
     "message": "Hindi ma-restart ang Focus Lock. Subukan muli."
   },
   "options_error_refresh_privacy": {
-    "message": "Hindi ma-refresh ang mga setting ng privacy. I-reload ang pahina."
+    "message": "Hindi ma-refresh ang mga privacy setting. I-reload ang page."
   },
   "options_error_website_blocking": {
-    "message": "Hindi ma-update ang pagharang sa website. Subukan muli."
+    "message": "Hindi ma-update ang pag-block sa website. Subukan muli."
   },
   "options_error_change_sync": {
     "message": "Hindi mabago ang Chrome Sync. Subukan muli."
   },
   "options_error_retry_sync": {
-    "message": "Hindi masubukan muli ang Chrome Sync. Subukan muli."
+    "message": "Hindi ma-retry ang Chrome Sync. Subukan muli."
   },
   "options_error_save_settings": {
-    "message": "Hindi ma-save ang mga setting. I-reload ang pahina at subukan muli."
+    "message": "Hindi ma-save ang mga setting. I-reload ang page at subukan muli."
   },
   "options_error_save_lists": {
-    "message": "Hindi ma-save ang mga listahan. I-reload ang pahina at subukan muli."
+    "message": "Hindi ma-save ang mga listahan. I-reload ang page at subukan muli."
   }
 }
