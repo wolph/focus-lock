@@ -274,7 +274,9 @@ function checkEntry(locale, key, source, entry, errors, warnings) {
     const length = [...entry.message].length;
     const ratio = length / [...source.message].length;
     if (length >= LENGTH_WARN_MIN_CHARS && ratio > LENGTH_WARN_RATIO) {
-      warnings.push(`${locale}: ${key} is ${ratio.toFixed(2)}x the en length (${length} characters)`);
+      warnings.push(
+        `${locale}: ${key} is ${ratio.toFixed(2)}x the en length (${length} characters)`,
+      );
     }
   }
 }

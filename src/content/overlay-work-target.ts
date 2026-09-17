@@ -79,7 +79,7 @@ export function updateTarget(overlay: MountedOverlay): void {
   const usable: boolean = usableTarget(view, target);
   const title: string | null = ready && target?.ok ? target.title : null;
   const hostname: string | undefined = ready && target?.ok ? target.hostname : undefined;
-  updateReturnButton(controls.button, view, title, hostname);
+  updateReturnButton(controls.button, title, hostname);
   controls.button.disabled = overlay.actionPending || (overlay.targetPending && !usable);
   controls.button.setAttribute('aria-busy', String(overlay.targetPending));
   if (ready && overlay.initialFocus && overlay.root.activeElement === overlay.container) {
@@ -100,11 +100,7 @@ export function updateTarget(overlay: MountedOverlay): void {
 }
 
 /** The action and its destination in one sentence, naming the website when the title hides it. */
-function returnLabel(
-  view: ActiveOverlayView,
-  destination: string,
-  hostname: string | undefined,
-): string {
+function returnLabel(destination: string, hostname: string | undefined): string {
   const action: string = t('shared_overlay_back_to_work');
   return hostname === undefined || hostname === destination
     ? t('overlay_return_label', { ACTION: action, DESTINATION: destination })
@@ -118,15 +114,12 @@ function returnLabel(
 /** The destination lives on the button itself, and the whole of it in its accessible name. */
 function updateReturnButton(
   button: HTMLButtonElement,
-  view: ActiveOverlayView,
   title: string | null,
   hostname: string | undefined,
 ): void {
   const destination: string = title?.trim() || hostname || '';
   const label: string =
-    destination === ''
-      ? t('shared_overlay_choose_work_tab')
-      : returnLabel(view, destination, hostname);
+    destination === '' ? t('shared_overlay_choose_work_tab') : returnLabel(destination, hostname);
   if (button.getAttribute('aria-label') === label) return;
   button.setAttribute('aria-label', label);
   button.title = label;

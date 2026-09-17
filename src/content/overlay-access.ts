@@ -149,11 +149,11 @@ function updateSpend(control: SpendControl, view: ActiveOverlayView, now: number
   const wait: AccessWait = accessWait(view, now, control.costMs);
   control.button.disabled = !wait.affordable;
   control.ready.hidden = wait.affordable;
-  control.ready.textContent = wait.affordable ? '' : accessWaitText(view, wait);
+  control.ready.textContent = wait.affordable ? '' : accessWaitText(wait);
 }
 
-/** The countdown is this module's number, every other line under an action is the view's. */
-function accessWaitText(view: ActiveOverlayView, wait: AccessWait): string {
+/** The countdown is this module's number and every other word under an action is the catalogue's. */
+function accessWaitText(wait: AccessWait): string {
   switch (wait.reason) {
     case 'ready-in':
       return t('shared_ready_in', { CLOCK: formatClock(wait.waitMs ?? 0) });
@@ -204,7 +204,7 @@ function buildGate(
     buildRing();
   ring.waitWrap.id = GATE_WAIT_ID;
   wrap.appendChild(ring.waitWrap);
-  const phrase: HTMLInputElement | null = appendPhrase(overlay, wrap, view, gate);
+  const phrase: HTMLInputElement | null = appendPhrase(overlay, wrap, gate);
   const confirm: HTMLButtonElement = document.createElement('button');
   confirm.className = 'pill';
   confirm.type = 'button';
@@ -242,7 +242,6 @@ function buildGate(
 function appendPhrase(
   overlay: MountedOverlay,
   wrap: HTMLElement,
-  view: ActiveOverlayView,
   gate: GateState,
 ): HTMLInputElement | null {
   if (gate.requiredPhrase === null) return null;

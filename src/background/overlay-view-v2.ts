@@ -111,7 +111,6 @@ const FIXED_ACTIVE_COPY: Readonly<
 
 /** The two spend actions, and the confirm each one's gate ends with. */
 const PAUSE_ACTION_LABEL: string = t('shared_overlay_pause_action');
-const UNLOCK_ACTION_LABEL_PREFIX: string = 'Unlock';
 const UNLOCK_SITE_ACTION_LABEL: string = t('shared_overlay_unlock_site_action');
 const GATE_CONFIRM_COPY: Readonly<Record<Exclude<GateKind, 'cancel'>, string>> = {
   pause: PAUSE_ACTION_LABEL,
@@ -408,9 +407,7 @@ function gateTitleCopy(
       CLOCK: formatClock(economy.unlockCostMs),
     });
   }
-  return endAction === UNLOCK_ACTION_LABEL
-    ? t('shared_unlock')
-    : t('shared_gate_end_title');
+  return endAction === UNLOCK_ACTION_LABEL ? t('shared_unlock') : t('shared_gate_end_title');
 }
 
 /**

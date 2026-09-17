@@ -9,7 +9,7 @@ import {
 } from 'preact/hooks';
 import { formatNumber, t } from '../shared/i18n';
 import type { CommandResponseV2, SessionCommandResultCodeV2 } from '../shared/messages';
-import type { EndAuthorityV2, GateKind, GateState } from '../shared/types';
+import type { GateKind, GateState } from '../shared/types';
 
 export type GateRequest =
   | { type: 'abandonGate'; expectedGate: GateState }

@@ -1162,7 +1162,9 @@ describe('package creation and repository integration', (): void => {
     ) as Record<string, unknown>;
     const scripts: Record<string, unknown> = packageJson.scripts as Record<string, unknown>;
     expect(scripts.build).toBe('npm run gen-icons && npm run gen-locales && vite build');
-    expect(scripts['build:store']).toBe('npm run gen-icons && npm run gen-locales && vite build --mode store');
+    expect(scripts['build:store']).toBe(
+      'npm run gen-icons && npm run gen-locales && vite build --mode store',
+    );
     expect(scripts.check).toBe(
       'biome check . && tsc --noEmit && npm run check-locales && vitest run && npm run build:store',
     );

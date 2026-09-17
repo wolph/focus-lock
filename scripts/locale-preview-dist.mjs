@@ -44,5 +44,6 @@ writeFileSync(messagesPath(locale), `${JSON.stringify(preview, null, 2)}\n`);
 for (const present of readdirSync(localesDirectory)) {
   if (present !== locale) rmSync(join(localesDirectory, present), { recursive: true, force: true });
 }
-if (filled > 0) console.log(`${filled} message(s) filled in from ${DEFAULT_LOCALE} for the preview`);
+if (filled > 0)
+  console.log(`${filled} message(s) filled in from ${DEFAULT_LOCALE} for the preview`);
 console.log(`${output}: ${locale} is now the only catalogue, and the default locale`);
