@@ -58,7 +58,9 @@ test('the popup defaults to the current work tab and can replace a closed target
   const workTab = extPage.getByLabel('Work tab', { exact: true });
   await expect(workTab).toHaveValue(String(work.tabId));
   await workTab.selectOption('');
-  await expect(extPage.getByRole('button', { name: 'Use this tab', exact: true })).toHaveCount(0);
+  await expect(
+    extPage.getByRole('button', { name: 'Make this my work tab', exact: true }),
+  ).toHaveCount(0);
   await expect(workTab.locator('option').first()).toHaveText(
     'Write the generator example (Current)',
   );
@@ -83,11 +85,11 @@ test('the popup defaults to the current work tab and can replace a closed target
   await replacement.bringToFront();
   await extPage.reload();
 
-  await extPage.getByRole('button', { name: 'Choose work tab', exact: true }).click();
-  // The running session has no work tab dropdown, so the request focuses the chooser itself.
-  // See docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
-  await expect(extPage.getByRole('button', { name: 'Use this tab', exact: true })).toBeFocused();
-  await extPage.getByRole('button', { name: 'Use this tab', exact: true }).click();
+  // The chooser is the green control at the top of the running session. Nothing has to be opened
+  // or focused first: docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
+  const chooser = extPage.getByRole('button', { name: 'Make this my work tab', exact: true });
+  await expect(chooser).toBeEnabled();
+  await chooser.click();
   await expect
     .poll(async (): Promise<string | null> => {
       const current: WorkTargetResult = await target(extPage, work.windowId);

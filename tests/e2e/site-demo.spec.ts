@@ -142,10 +142,8 @@ test('a visitor locks the site they are on, returns to the draft, and ends the s
 
   // Beat 3: end the session through the popup's Friction gate.
   await icon.click();
-  await popup
-    .locator('summary')
-    .filter({ hasText: /^Session actions$/ })
-    .click();
+  // The session actions are on screen as soon as the popup opens, with nothing to unfold first.
+  // See docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
   await popup.getByRole('button', { name: 'End session' }).click();
   const confirm: Locator = popup.getByRole('button', { name: 'End the session' });
   await expect(confirm).toBeEnabled({ timeout: 10_000 });
