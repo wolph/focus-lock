@@ -625,13 +625,13 @@
     "message": "Deze sessie beëindigen"
   },
   "shared_work_choose_tab_error": {
-    "message": "Kies een beschikbaar werktabblad."
+    "message": "Kies een beschikbaar werkblad."
   },
   "shared_work_tab_closed_error": {
-    "message": "Dit tabblad is niet meer beschikbaar. Kies een ander werktabblad."
+    "message": "Dat tabblad is niet meer beschikbaar. Kies een ander werkblad."
   },
   "shared_work_target_not_saved_error": {
-    "message": "Sessie gestart, maar het werktabblad kon niet worden opgeslagen. $CHOOSE$",
+    "message": "Sessie gestart, maar werkblad kon niet opgeslagen worden. $CHOOSE$",
     "placeholders": {
       "CHOOSE": {
         "content": "$1",
@@ -640,9 +640,9 @@
     }
   },
   "shared_work_session_changed_error": {
-    "message": "De focussessie is gewijzigd. Kies uw werktabblad opnieuw."
+    "message": "Focussessie is gewijzigd. Kies je werkblad opnieuw."
   },
   "shared_work_target_action_stale_error": {
-    "message": "De focussessie is gewijzigd. Open het popup opnieuw."
+    "message": "Focussessie is gewijzigd. Open het venster opnieuw."
   }
 }

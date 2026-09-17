@@ -628,10 +628,10 @@
     "message": "Velg en tilgjengelig arbeidsfane."
   },
   "shared_work_tab_closed_error": {
-    "message": "Denne fanen er ikke lenger tilgjengelig. Velg en annen arbeidsfane."
+    "message": "Den fanen er ikke lenger tilgjengelig. Velg en annen arbeidsfane."
   },
   "shared_work_target_not_saved_error": {
-    "message": "Sesjonen startet, men arbeidsfanen kunne ikke lagres. $CHOOSE$",
+    "message": "Økten startet, men arbeidsfanen kunne ikke lagres. $CHOOSE$",
     "placeholders": {
       "CHOOSE": {
         "content": "$1",
@@ -640,9 +640,9 @@
     }
   },
   "shared_work_session_changed_error": {
-    "message": "Fokussesjonen har endret seg. Velg arbeidsfanen din igjen."
+    "message": "Fokusøkten har endret seg. Velg arbeidsfanen din på nytt."
   },
   "shared_work_target_action_stale_error": {
-    "message": "Fokussesjonen har endret seg. Åpne popup igjen."
+    "message": "Fokusøkten har endret seg. Åpne popup-vinduet på nytt."
   }
 }

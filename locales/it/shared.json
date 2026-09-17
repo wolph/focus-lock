@@ -631,7 +631,7 @@
     "message": "Quella scheda non è più disponibile. Scegli un'altra scheda di lavoro."
   },
   "shared_work_target_not_saved_error": {
-    "message": "Sessione avviata, ma la scheda di lavoro non ha potuto essere salvata. $CHOOSE$",
+    "message": "Sessione avviata, ma la scheda di lavoro non poteva essere salvata. $CHOOSE$",
     "placeholders": {
       "CHOOSE": {
         "content": "$1",
@@ -640,10 +640,10 @@
     }
   },
   "shared_work_session_changed_error": {
-    "message": "La sessione di focus è cambiata. Scegli di nuovo la tua scheda di lavoro."
+    "message": "La sessione di concentrazione è cambiata. Scegli di nuovo la tua scheda di lavoro."
   },
   "shared_work_target_action_stale_error": {
-    "message": "La sessione di focus è cambiata. Riapri il popup."
+    "message": "La sessione di concentrazione è cambiata. Riapri il popup."
   },
   "shared_minutes_many": {
     "message": "$COUNT$ minuti",

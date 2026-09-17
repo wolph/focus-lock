@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "In $MODE$, every site is unavailable except ang iyong allow list.",
+    "message": "Mga site na available lamang sa whitelist session.",
     "placeholders": {
       "MODE": {
         "content": "$1",

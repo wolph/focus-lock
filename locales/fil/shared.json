@@ -628,10 +628,10 @@
     "message": "Pumili ng available na work tab."
   },
   "shared_work_tab_closed_error": {
-    "message": "Ang tab na ito ay hindi na available. Pumili ng iba pang work tab."
+    "message": "Ang tab na iyan ay hindi na available. Pumili ng iba pang work tab."
   },
   "shared_work_target_not_saved_error": {
-    "message": "Nagsimula ang sesyon, ngunit ang trabaho tab ay hindi naipundar. $CHOOSE$",
+    "message": "Ang session ay nagsimula, ngunit ang work tab ay hindi maaaring i-save. $CHOOSE$",
     "placeholders": {
       "CHOOSE": {
         "content": "$1",
@@ -640,9 +640,9 @@
     }
   },
   "shared_work_session_changed_error": {
-    "message": "Nagbago ang focus session. Pumili ng iyong trabaho tab ulit."
+    "message": "Ang focus session ay nagbago. Piliin ang iyong work tab ulit."
   },
   "shared_work_target_action_stale_error": {
-    "message": "Nagbago ang focus session. Bubuksan ang popup ulit."
+    "message": "Ang focus session ay nagbago. Buksan muli ang popup."
   }
 }

@@ -625,13 +625,13 @@
     "message": "Lopeta tämä jakso"
   },
   "shared_work_choose_tab_error": {
-    "message": "Valitse käytettävissä oleva työvälilehti."
+    "message": "Valitse käytettävissä oleva työvälinepilari."
   },
   "shared_work_tab_closed_error": {
-    "message": "Välilehti ei ole enää käytettävissä. Valitse toinen työvälilehti."
+    "message": "Että välilehti ei ole enää käytettävissä. Valitse toinen työvälinepilari."
   },
   "shared_work_target_not_saved_error": {
-    "message": "Istunto alkoi, mutta työvälilehteä ei voitu tallentaa. $CHOOSE$",
+    "message": "Istunto alkoi, mutta työvälinepilaaria ei voitu tallentaa. $CHOOSE$",
     "placeholders": {
       "CHOOSE": {
         "content": "$1",
@@ -640,9 +640,9 @@
     }
   },
   "shared_work_session_changed_error": {
-    "message": "Fokussesjio on muuttunut. Valitse työvälilehti uudelleen."
+    "message": "Fokussistunto on muuttunut. Valitse työvälinepilari uudelleen."
   },
   "shared_work_target_action_stale_error": {
-    "message": "Fokussesjio on muuttunut. Avaa ponnahdusikkuna uudelleen."
+    "message": "Fokussistunto on muuttunut. Avaa ponnahdusikkuna uudelleen."
   }
 }

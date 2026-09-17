@@ -24,6 +24,12 @@ export function readCatalogue(root: string, locale: string): Catalogue | null;
 export function checkDefault(en: Catalogue): string[];
 export function checkTranslation(locale: string, en: Catalogue, catalogue: Catalogue): CheckResult;
 export function repairPlaceholders(source: MessageEntry, text: string): string;
+export interface EnglishEcho {
+  echoed: string[];
+  compared: number;
+  share: number;
+}
+export function englishEcho(en: Catalogue, catalogue: Catalogue): EnglishEcho;
 export function simplifiedInTraditional(locale: string, message: string): string[];
 export function strayEnglish(locale: string, message: string): string[];
 export function strayLatin(locale: string, message: string): string[];

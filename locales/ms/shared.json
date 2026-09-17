@@ -625,13 +625,13 @@
     "message": "Akhir this session"
   },
   "shared_work_choose_tab_error": {
-    "message": "Pilih kerja tab yang tersedia."
+    "message": "Pilih tab kerja yang tersedia."
   },
   "shared_work_tab_closed_error": {
-    "message": "Tab itu tidak lagi tersedia. Pilih kerja tab lain."
+    "message": "Tab itu tidak lagi tersedia. Pilih tab kerja lain."
   },
   "shared_work_target_not_saved_error": {
-    "message": "Sesi dimulai, tetapi kerja tab tidak dapat disimpan. $CHOOSE$",
+    "message": "Sesi dimulai, tetapi tab kerja tidak dapat disimpan. $CHOOSE$",
     "placeholders": {
       "CHOOSE": {
         "content": "$1",
@@ -640,9 +640,9 @@
     }
   },
   "shared_work_session_changed_error": {
-    "message": "Sesi fokus telah berubah. Pilih kerja tab Anda lagi."
+    "message": "Sesi fokus telah berubah. Pilih tab kerja Anda lagi."
   },
   "shared_work_target_action_stale_error": {
-    "message": "Sesi fokus telah berubah. Buka popup kembali."
+    "message": "Sesi fokus telah berubah. Buka kembali popup."
   }
 }

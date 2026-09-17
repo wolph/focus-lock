@@ -6,6 +6,7 @@ import {
   checkDefault,
   checkLocales,
   checkTranslation,
+  englishEcho,
   generateLocales,
   isPadding,
   LOCALES,
@@ -474,5 +475,40 @@ describe('simplifiedInTraditional', () => {
   it('says nothing about any other locale, Simplified included', () => {
     expect(simplifiedInTraditional('zh_CN', '已经过期')).toEqual([]);
     expect(simplifiedInTraditional('ja', '設定を開く')).toEqual([]);
+  });
+});
+
+describe('englishEcho', () => {
+  const source: Catalogue = {
+    a: { message: 'Block selected sites', description: 'd' },
+    b: { message: 'Your focus session finished.', description: 'd' },
+    c: { message: 'Could not save. Try again.', description: 'd' },
+  };
+
+  it('counts a message that keeps its source words', () => {
+    const result = englishEcho(source, {
+      a: { message: 'Zuia selected sites' },
+      b: { message: 'Kikao chako kimekamilika.' },
+      c: { message: 'Haikuweza kuhifadhi. Jaribu tena.' },
+    });
+    expect(result.echoed).toEqual(['a']);
+    expect(result.compared).toBe(3);
+  });
+
+  it('does not count a word both languages happen to share', () => {
+    const result = englishEcho(
+      { a: { message: 'Local data only', description: 'd' } },
+      { a: { message: 'Local uniquement' } },
+    );
+    expect(result.echoed).toEqual([]);
+  });
+
+  it('reports nothing for a catalogue that is genuinely translated', () => {
+    const result = englishEcho(source, {
+      a: { message: 'Ausgewahlte Seiten sperren' },
+      b: { message: 'Deine Fokussitzung ist beendet.' },
+      c: { message: 'Speichern fehlgeschlagen. Versuche es erneut.' },
+    });
+    expect(result.share).toBe(0);
   });
 });

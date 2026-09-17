@@ -307,6 +307,109 @@ export function simplifiedInTraditional(locale, message) {
   return [...message].filter((character) => SIMPLIFIED_ONLY.test(character));
 }
 
+/**
+ * Words that travel into other languages unchanged often enough that sharing one with the English
+ * says nothing about whether a message was translated.
+ */
+const BORROWED_WORDS = new Set([
+  'focus',
+  'lock',
+  'session',
+  'sessions',
+  'chrome',
+  'sync',
+  'url',
+  'urls',
+  'regex',
+  'web',
+  'internet',
+  'email',
+  'blog',
+  'video',
+  'online',
+  'app',
+  'browser',
+  'site',
+  'sites',
+  'domain',
+  'domains',
+  'server',
+  'client',
+  'cookie',
+  'test',
+  'pause',
+  'stop',
+  'start',
+  'reset',
+  'import',
+  'export',
+  'status',
+  'profile',
+  'timer',
+  'tab',
+  'tabs',
+  'streak',
+  'badge',
+  'social',
+  'media',
+  'mail',
+  'sport',
+  'data',
+  'local',
+  'option',
+  'options',
+  'error',
+  'credit',
+  'setup',
+  'minute',
+  'minutes',
+  'second',
+  'seconds',
+  'total',
+  'active',
+  'normal',
+  'manual',
+  'auto',
+  'block',
+]);
+
+/** Above this share of messages echoing their English source, a catalogue is not translated. */
+const MAX_ENGLISH_ECHO_SHARE = 0.15;
+
+function contentWords(message) {
+  return (
+    message
+      .replace(/\$[A-Za-z0-9_]+\$/g, ' ')
+      .replace(/\/[^\s]*\//g, ' ')
+      .replace(/(?:[A-Za-z0-9-]+\\?\.)+[A-Za-z]{2,}(?:\/[^\s]*)?/g, ' ')
+      .toLowerCase()
+      .match(/[a-z]{3,}/g) ?? []
+  );
+}
+
+/**
+ * Messages that still echo the English written for the same key. A translation sharing two or more
+ * of its source's own words is usually the English sentence with a word or two swapped in, which
+ * every byte comparison passes. One such message proves nothing, because languages share words, so
+ * this is measured as a share of the catalogue and reported per locale rather than per key.
+ */
+export function englishEcho(en, catalogue) {
+  const echoed = [];
+  let compared = 0;
+  for (const [key, source] of Object.entries(en)) {
+    const entry = catalogue[key];
+    if (entry === undefined || typeof entry.message !== 'string') continue;
+    const sourceWords = new Set(
+      contentWords(source.message).filter((word) => !BORROWED_WORDS.has(word)),
+    );
+    if (sourceWords.size === 0) continue;
+    compared += 1;
+    const shared = new Set(contentWords(entry.message).filter((word) => sourceWords.has(word)));
+    if (shared.size >= 2 || shared.size / sourceWords.size >= 0.5) echoed.push(key);
+  }
+  return { echoed, compared, share: compared === 0 ? 0 : echoed.length / compared };
+}
+
 /** Validate one translated catalogue against en. */
 export function checkTranslation(locale, en, catalogue) {
   const errors = [];
@@ -369,6 +472,15 @@ export function checkTranslation(locale, en, catalogue) {
     if (simplified.length > 0) {
       errors.push(
         `${locale}: ${key} is written in Simplified characters: ${[...new Set(simplified)].slice(0, 6).join('')}`,
+      );
+    }
+  }
+  if (!NEAR_EN_LOCALES.has(locale)) {
+    const echo = englishEcho(en, catalogue);
+    if (echo.share > MAX_ENGLISH_ECHO_SHARE) {
+      errors.push(
+        `${locale}: ${echo.echoed.length} of ${echo.compared} messages still echo the English written for the same key, ` +
+          `for example ${echo.echoed.slice(0, 3).join(', ')}`,
       );
     }
   }

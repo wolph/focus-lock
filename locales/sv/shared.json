@@ -625,13 +625,13 @@
     "message": "Avsluta det här passet"
   },
   "shared_work_choose_tab_error": {
-    "message": "Välj en tillgänglig arbetsfliken."
+    "message": "Välj en tillgänglig arbetsflik."
   },
   "shared_work_tab_closed_error": {
-    "message": "Den fliken är inte längre tillgänglig. Välj en annan arbetsfliken."
+    "message": "Den fliken är inte längre tillgänglig. Välj en annan arbetsflik."
   },
   "shared_work_target_not_saved_error": {
-    "message": "Sessionen startade, men arbetsfliken kunde inte sparas. $CHOOSE$",
+    "message": "Sessionen startade, men arbetfliken kunde inte sparas. $CHOOSE$",
     "placeholders": {
       "CHOOSE": {
         "content": "$1",
@@ -640,9 +640,9 @@
     }
   },
   "shared_work_session_changed_error": {
-    "message": "Fokussessionen har ändrats. Välj din arbetsfliken igen."
+    "message": "Fokussessionen har ändrats. Välj din arbetsflik igen."
   },
   "shared_work_target_action_stale_error": {
-    "message": "Fokussessionen har ändrats. Öppna popup igen."
+    "message": "Fokussessionen har ändrats. Öppna popup-fönstret igen."
   }
 }
