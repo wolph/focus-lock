@@ -1,60 +1,60 @@
 {
   "stats_document_title": {
-    "message": "Fokasi Lock stats"
+    "message": "Takwimu za Focus Lock"
   },
   "stats_page_title": {
-    "message": "Yako focus record"
+    "message": "Rekodi yako ya umakini"
   },
   "stats_loading": {
-    "message": "Loading yako stats."
+    "message": "Inapakia takwimu zako."
   },
   "stats_load_error": {
-    "message": "Haiwezi load stats. Reload to try again."
+    "message": "Haikuweza kupakia takwimu. Pakia upya ili kujaribu tena."
   },
   "stats_partial_error_both": {
-    "message": "Hourly attempts na kwavuti kufikia crhariri mipangilio are unavailable."
+    "message": "Majaribio ya kila saa na mipangilio ya salio la ufikiaji wa tovuti hayapatikani."
   },
   "stats_partial_error_attempts": {
     "message": "Majaribio ya kila saa hayapatikani."
   },
   "stats_partial_error_economy": {
-    "message": "Tovuti kufikia crhariri mipangilio are unavailable."
+    "message": "Mipangilio ya salio la ufikiaji wa tovuti haipatikani."
   },
   "stats_scope_synced": {
-    "message": "Synced kwatals from this Chrome account. Local-kwenyely panels are leboed."
+    "message": "Jumla zilizosawazishwa kutoka akaunti hii ya Chrome. Paneli za kifaa hiki pekee zimetiwa alama."
   },
   "stats_scope_local": {
-    "message": "Totals from this machine. Fokasi Lock statistics are not synced."
+    "message": "Jumla kutoka kifaa hiki. Takwimu za Focus Lock hazisawazishwi."
   },
   "stats_scope_checking": {
-    "message": "Checkkatikag whether these kwatals are synced."
+    "message": "Inakagua kama jumla hizi zimesawazishwa."
   },
   "stats_scope_unavailable": {
-    "message": "Statistics scope is unavailable. Totals may katikaclude synced data. Hourly attempts na recent kikaos are from this machkatikae."
+    "message": "Upeo wa takwimu haupatikani. Jumla zinaweza kujumuisha data iliyosawazishwa. Majaribio ya kila saa na vipindi vya hivi karibuni ni kutoka kifaa hiki."
   },
   "stats_scope_retry": {
-    "message": "Jaribu Tena scope check"
+    "message": "Kagua upeo tena"
   },
   "stats_empty": {
-    "message": "Stats appear after yako first session."
+    "message": "Takwimu huonekana baada ya kipindi chako cha kwanza."
   },
   "stats_tile_focus_today": {
     "message": "Fokasi tosiku"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Focus in ile last 7 days"
+    "message": "Umakini katika siku 7 zilizopita"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts blocked tosiku"
+    "message": "Majaribio yaliyozuiwa leo"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gate requests dismissed tosiku"
+    "message": "Maombi ya lango yaliyokataliwa leo"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent tosiku"
+    "message": "Salio la ufikiaji wa tovuti lililotumika leo"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "All kwavutis $ALL_SITES$, kwenyee kwavuti $ONE_SITE$, $EARNED$ earned",
+    "message": "Tovuti zote $ALL_SITES$, tovuti moja $ONE_SITE$, $EARNED$ zilizochumwa",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -83,7 +83,7 @@
     "message": "Msururu"
   },
   "stats_streak_empty": {
-    "message": "Yako streak starts with yako first focus day."
+    "message": "Mfululizo wako huanza na siku yako ya kwanza ya umakini."
   },
   "stats_streak_unit_one": {
     "message": "siku"
@@ -92,7 +92,7 @@
     "message": "sikus"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$ freeze kwaken banked",
+    "message": "Tokeni $COUNT$ ya kugandisha imehifadhiwa",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$ freeze kwakens banked",
+    "message": "Tokeni $COUNT$ za kugandisha zimehifadhiwa",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "Streak freeze: one missed siku, covered"
+    "message": "Kugandisha mfululizo: siku moja iliyokosekana, imefidiwa"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active siku this month ($MONTH$)",
+    "message": "Siku $COUNT$ hai mwezi huu ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active sikus this month ($MONTH$)",
+    "message": "Siku $COUNT$ hai mwezi huu ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Active dates katika $MONTH$: $DAYS$.",
+    "message": "Tarehe hai katika $MONTH$: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -152,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "No active dates katika $MONTH$.",
+    "message": "Hakuna tarehe hai katika $MONTH$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -161,25 +161,25 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Fokasi, last 14 sikus"
+    "message": "Umakini, siku 14 zilizopita"
   },
   "stats_chart_focus_empty": {
-    "message": "Focus minutes appear after yako first session."
+    "message": "Dakika za umakini huonekana baada ya kipindi chako cha kwanza."
   },
   "stats_chart_attempts_heading": {
-    "message": "Zuiaed attempts, last 14 sikus"
+    "message": "Majaribio yaliyozuiwa, siku 14 zilizopita"
   },
   "stats_chart_attempts_empty": {
-    "message": "Zuiaed attempts show up here once a session catches one."
+    "message": "Majaribio yaliyozuiwa yataonekana hapa kipindi kikinasa moja."
   },
   "stats_chart_sites_heading": {
-    "message": "Top blocked sites, last 30 sikus"
+    "message": "Tovuti zilizozuiwa zaidi, siku 30 zilizopita"
   },
   "stats_chart_sites_empty": {
-    "message": "Nothkatikag kuzuiaed yet. That is a fkatikae kuanza."
+    "message": "Hakuna kilichozuiwa bado. Huo ni mwanzo mzuri."
   },
   "stats_chart_hours_heading": {
-    "message": "Attempts by saa, this machine only"
+    "message": "Majaribio kwa saa, kifaa hiki pekee"
   },
   "stats_chart_other_site": {
     "message": "nyingine"
@@ -215,16 +215,16 @@
     "message": "Mchoro wa upau"
   },
   "stats_chart_name_hbar": {
-    "message": "Hauizkwenyetal bar chart"
+    "message": "Chati ya pau mlalo"
   },
   "stats_chart_description_bar": {
-    "message": "Bar chart. Use ile keyboard to move kupitia data points, or open View as table for ile same values."
+    "message": "Chati ya pau. Tumia kibodi kupitia vidokezo vya data, au fungua Tazama kama jedwali kwa thamani zilezile."
   },
   "stats_chart_description_hbar": {
-    "message": "Horizontal bar chart. Use ile keyboard to move kupitia data points, or open View as table for ile same values."
+    "message": "Chati ya pau mlalo. Tumia kibodi kupitia vidokezo vya data, au fungua Tazama kama jedwali kwa thamani zilezile."
   },
   "stats_chart_empty_default": {
-    "message": "Hapana data yet."
+    "message": "Hakuna data bado."
   },
   "stats_chart_point": {
     "message": "$LABEL$: $VALUE$",
@@ -240,7 +240,7 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "Tazama as table"
+    "message": "Tazama kama jedwali"
   },
   "stats_chart_table_category": {
     "message": "Kategoriya"
@@ -249,13 +249,13 @@
     "message": "Thamani"
   },
   "stats_heat_strip_label": {
-    "message": "24-saa blocked-attempt heat strip"
+    "message": "Ukanda wa joto wa majaribio yaliyozuiwa kwa saa 24"
   },
   "stats_sessions_heading": {
-    "message": "Recent kikaos kwenye this machkatikae"
+    "message": "Vipindi vya hivi karibuni kwenye kifaa hiki"
   },
   "stats_sessions_empty": {
-    "message": "Yako first session will appear here."
+    "message": "Kipindi chako cha kwanza kitaonekana hapa."
   },
   "stats_sessions_col_date": {
     "message": "Tarehe"
@@ -270,10 +270,10 @@
     "message": "Fokasied"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All kwavutis"
+    "message": "Tovuti zote"
   },
   "stats_sessions_col_one_site": {
-    "message": "One kwavuti"
+    "message": "Tovuti moja"
   },
   "stats_sessions_col_intention": {
     "message": "Nidhamu"
@@ -309,7 +309,7 @@
     "message": "Kamilid"
   },
   "stats_outcome_ended_early": {
-    "message": "Maliziaed early"
+    "message": "Kilikomeshwa mapema"
   },
   "stats_outcome_running": {
     "message": "Runnkatikag"

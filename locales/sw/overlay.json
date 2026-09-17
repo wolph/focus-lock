@@ -3,7 +3,7 @@
     "message": "Fokasi Lock"
   },
   "overlay_stopped_title": {
-    "message": "Locked - Fokasi Lock"
+    "message": "Imefungwa - Focus Lock"
   },
   "overlay_return_label": {
     "message": "$ACTION$: $DESTINATION$",
@@ -36,49 +36,49 @@
     }
   },
   "overlay_target_checking": {
-    "message": "Checking inayopatikana work tabs..."
+    "message": "Inakagua vichupo vya kazi vinavyopatikana..."
   },
   "overlay_target_pick_tab": {
-    "message": "Pick an open tab to continue yako task."
+    "message": "Chagua kichupo kilichofunguliwa ili kuendelea na kazi yako."
   },
   "overlay_target_session_unavailable": {
-    "message": "Yako focus session is not inayopatikana. Try again, or reload this page."
+    "message": "Kipindi chako cha umakini hakipatikani. Jaribu tena, au pakia upya ukurasa huu."
   },
   "overlay_target_lookup_failed": {
-    "message": "Haiwezi load yako work tab. Try again, or reload this page."
+    "message": "Haikuweza kupakia kichupo chako cha kazi. Jaribu tena, au pakia upya ukurasa huu."
   },
   "overlay_target_reconnect": {
-    "message": "Reload this page to reconnect to Fokasi Lock."
+    "message": "Pakia upya ukurasa huu ili kuunganishwa tena na Focus Lock."
   },
   "overlay_target_page_changed": {
-    "message": "Ile requesting page has changed. Reload ile page."
+    "message": "Ukurasa ulioomba umebadilika. Pakia upya ukurasa."
   },
   "overlay_target_transport_error": {
-    "message": "Haiwezi reach Focus Lock. Try again."
+    "message": "Haikuweza kufikia Focus Lock. Jaribu tena."
   },
   "overlay_picker_heading": {
-    "message": "Choose a kazi tab"
+    "message": "Chagua kichupo cha kazi"
   },
   "overlay_picker_cancel": {
     "message": "Ghairi"
   },
   "overlay_picker_search_label": {
-    "message": "Search kazi tabs"
+    "message": "Tafuta vichupo vya kazi"
   },
   "overlay_picker_search_placeholder": {
-    "message": "Search by title au webkwavuti"
+    "message": "Tafuta kwa kichwa au tovuti"
   },
   "overlay_picker_clear_search": {
-    "message": "Futa search"
+    "message": "Futa utafutaji"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "Refresh kichupos"
+    "message": "Onyesha upya vichupo"
   },
   "overlay_picker_available_tabs": {
-    "message": "Inayopatikana work tabs"
+    "message": "Vichupo vya kazi vinavyopatikana"
   },
   "overlay_picker_finding": {
-    "message": "Finding inayopatikana tabs..."
+    "message": "Inatafuta vichupo vinavyopatikana..."
   },
   "overlay_picker_searching": {
     "message": "Searchkatikag kazi tabs..."
@@ -87,13 +87,13 @@
     "message": "Savkatikag kazi tab..."
   },
   "overlay_picker_no_tabs": {
-    "message": "No inayopatikana work tabs. Open a site allowed by this session, ilen refresh tabs."
+    "message": "Hakuna vichupo vya kazi vinavyopatikana. Fungua tovuti inayoruhusiwa na kipindi hiki, kisha uonyeshe upya vichupo."
   },
   "overlay_picker_no_matches": {
-    "message": "No matching tabs. Try anoiler search or clear ile search."
+    "message": "Hakuna vichupo vinavyolingana. Jaribu utafutaji mwingine au futa utafutaji."
   },
   "overlay_picker_load_failed": {
-    "message": "Haiwezi load work tabs. Try again."
+    "message": "Haikuweza kupakia vichupo vya kazi. Jaribu tena."
   },
   "overlay_picker_count_one": {
     "message": "$MATCHES$ wa $COUNT$ tab",

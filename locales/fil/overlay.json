@@ -1,9 +1,9 @@
 {
   "overlay_dialog_label": {
-    "message": "Pokus Lock"
+    "message": "Focus Lock"
   },
   "overlay_stopped_title": {
-    "message": "Locked - Pokus Lock"
+    "message": "Naka-lock - Focus Lock"
   },
   "overlay_return_label": {
     "message": "$ACTION$: $DESTINATION$",
@@ -36,67 +36,67 @@
     }
   },
   "overlay_target_checking": {
-    "message": "Sinusuri ang makukuhang work tabs..."
+    "message": "Sinusuri ang mga magagamit na tab ng trabaho..."
   },
   "overlay_target_pick_tab": {
-    "message": "Piliin ang iyong work tab"
+    "message": "Pumili ng bukas na tab para ipagpatuloy ang iyong gawain."
   },
   "overlay_target_session_unavailable": {
-    "message": "Ang iyong focus session ay hindi makukuha. Subukan ulit, o i-reload ang page na ito."
+    "message": "Hindi magagamit ang iyong sesyon ng Focus. Subukan ulit, o i-reload ang page na ito."
   },
   "overlay_target_lookup_failed": {
-    "message": "Hindi maaaring load ang iyong work tab. Try again, or reload this page."
+    "message": "Hindi na-load ang iyong tab ng trabaho. Subukan ulit, o i-reload ang page na ito."
   },
   "overlay_target_reconnect": {
-    "message": "Reload this page sa recsanect sa Pokus Lock."
+    "message": "I-reload ang page na ito para muling kumonekta sa Focus Lock."
   },
   "overlay_target_page_changed": {
-    "message": "Ang requesting page has changed. Reload ang page."
+    "message": "Nagbago na ang page na humiling. I-reload ang page."
   },
   "overlay_target_transport_error": {
-    "message": "Hindi maaaring reach Focus Lock. Try again."
+    "message": "Hindi maabot ang Focus Lock. Subukan ulit."
   },
   "overlay_picker_heading": {
-    "message": "Choose a trabaho tab"
+    "message": "Pumili ng tab ng trabaho"
   },
   "overlay_picker_cancel": {
     "message": "Kanselahin"
   },
   "overlay_picker_search_label": {
-    "message": "Search trabaho tabs"
+    "message": "Maghanap ng tab ng trabaho"
   },
   "overlay_picker_search_placeholder": {
-    "message": "Search by title o website"
+    "message": "Maghanap ayon sa pamagat o site"
   },
   "overlay_picker_clear_search": {
-    "message": "Linisin search"
+    "message": "Burahin ang paghahanap"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "Refresh mga tab"
+    "message": "I-refresh ang mga tab"
   },
   "overlay_picker_available_tabs": {
-    "message": "Makukuhang work tabs"
+    "message": "Mga magagamit na tab ng trabaho"
   },
   "overlay_picker_finding": {
-    "message": "Naghahanap ng makukuhang tabs..."
+    "message": "Naghahanap ng mga magagamit na tab..."
   },
   "overlay_picker_searching": {
-    "message": "Searchsag trabaho tabs..."
+    "message": "Hinahanap ang mga tab ng trabaho..."
   },
   "overlay_picker_saving": {
-    "message": "Savsag trabaho tab..."
+    "message": "Sine-save ang tab ng trabaho..."
   },
   "overlay_picker_no_tabs": {
-    "message": "Walang makukuhang work tabs. Buksan ang site na pinapayagan ng session na ito, pagkatapos i-refresh ang tabs."
+    "message": "Walang magagamit na tab ng trabaho. Buksan ang site na pinapayagan ng sesyon na ito, pagkatapos ay i-refresh ang mga tab."
   },
   "overlay_picker_no_matches": {
-    "message": "No matching tabs. Try anoangr search or clear ang search."
+    "message": "Walang tugmang tab. Subukan ang ibang paghahanap o burahin ang paghahanap."
   },
   "overlay_picker_load_failed": {
-    "message": "Hindi maaaring load work tabs. Try again."
+    "message": "Hindi na-load ang mga tab ng trabaho. Subukan ulit."
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ ng $COUNT$ tab",
+    "message": "$MATCHES$ sa $COUNT$ tab",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ ng $COUNT$ tabs",
+    "message": "$MATCHES$ sa $COUNT$ mga tab",
     "placeholders": {
       "COUNT": {
         "content": "$1",

@@ -1,12 +1,12 @@
 {
   "onboarding_page_title": {
-    "message": "Set up Fokasi Lock"
+    "message": "Sanidi Focus Lock"
   },
   "onboarding_eyebrow": {
     "message": "Fokasi Lock setup"
   },
   "onboarding_progress": {
-    "message": "Step $STEP$ wa $TOTAL$",
+    "message": "Hatua ya $STEP$ kati ya $TOTAL$",
     "placeholders": {
       "STEP": {
         "content": "$1",
@@ -19,37 +19,37 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Yako saved setup progress haiwezi be restored. Starting again with yako current defaults."
+    "message": "Maendeleo ya usanidi uliohifadhiwa hayakuweza kurejeshwa. Tunaanza upya kwa chaguo-msingi zako za sasa."
   },
   "onboarding_complete_heading": {
-    "message": "Kuanzisha complete"
+    "message": "Usanidi umekamilika"
   },
   "onboarding_complete_body": {
-    "message": "Yako choices are saved. Open Focus Lock from ile Chrome toolbar to start a session."
+    "message": "Machaguo yako yamehifadhiwa. Fungua Focus Lock kutoka kwenye upau wa vidhibiti wa Chrome ili kuanza kipindi."
   },
   "onboarding_error_heading": {
-    "message": "Kuanzisha unavailable"
+    "message": "Usanidi haupatikani"
   },
   "onboarding_error_body": {
-    "message": "Haiwezi load setup. Try again."
+    "message": "Haikuweza kupakia usanidi. Jaribu tena."
   },
   "onboarding_retry_button": {
     "message": "Jaribu Tena"
   },
   "onboarding_save_error": {
-    "message": "Haiwezi save setup progress. Try again."
+    "message": "Haikuweza kuhifadhi maendeleo ya usanidi. Jaribu tena."
   },
   "onboarding_enable_error": {
-    "message": "Haiwezi enable website blocking. Try again."
+    "message": "Haikuweza kuwasha uzuiaji wa tovuti. Jaribu tena."
   },
   "onboarding_finish_error": {
-    "message": "Haiwezi complete setup. Yako choices are still saved. Try again."
+    "message": "Haikuweza kukamilisha usanidi. Machaguo yako bado yamehifadhiwa. Jaribu tena."
   },
   "onboarding_lists_heading": {
-    "message": "Choose yako starting block list"
+    "message": "Chagua orodha yako ya awali ya kuzuia"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "In $MODE$, kuwekad categauies na extra kuzuiaed kwavutis are unavailable.",
+    "message": "Katika $MODE$, makundi yaliyowashwa na tovuti za ziada zilizozuiwa hazipatikani.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "In $MODE$, every site is uninayopatikana except yako allow list.",
+    "message": "Katika $MODE$, kila tovuti haipatikani isipokuwa orodha yako ya kuruhusu.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,7 +67,7 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "Ilese choices become defaults for future sessions. Unaweza edit ilem later."
+    "message": "Machaguo haya yanakuwa chaguo-msingi kwa vipindi vijavyo. Unaweza kuyahariri baadaye."
   },
   "onboarding_lists_legend": {
     "message": "Recommended webkwavuti categauies"
@@ -121,43 +121,43 @@
     "message": "Endelea"
   },
   "onboarding_access_heading": {
-    "message": "Wezesha website blocking"
+    "message": "Washa uzuiaji wa tovuti"
   },
   "onboarding_access_local_matching": {
-    "message": "Focus Lock checks page addresses locally so it can match yako selected categories and sites. It uses website access to show its blocking screen and restore affected pages when yako session ends."
+    "message": "Focus Lock hukagua anwani za kurasa kwenye kifaa chako ili ilinganishe makundi na tovuti ulizochagua. Hutumia ufikiaji wa tovuti kuonyesha skrini yake ya kuzuia na kurejesha kurasa zilizoathirika kipindi chako kinapoisha."
   },
   "onboarding_access_capability_intro": {
-    "message": "Categauies na cuskwam domakatikas can katikaclude any webkwavuti. Chrome will therekwae request this capability:"
+    "message": "Makundi na vikoa maalum vinaweza kujumuisha tovuti yoyote. Kwa hiyo Chrome itaomba uwezo huu:"
   },
   "onboarding_access_capability": {
-    "message": "Read and change all yako data on all websites"
+    "message": "Kusoma na kubadilisha data yako yote kwenye tovuti zote"
   },
   "onboarding_access_scope_note": {
-    "message": "Focus Lock uses that access only while applying yako blocking rules."
+    "message": "Focus Lock hutumia ufikiaji huo tu wakati wa kutekeleza kanuni zako za kuzuia."
   },
   "onboarding_access_denied": {
-    "message": "Chrome did not grant website access. Unaweza retry."
+    "message": "Chrome haikutoa ufikiaji wa tovuti. Unaweza kujaribu tena."
   },
   "onboarding_access_registration_error": {
-    "message": "Website access is granted, but Focus Lock haiwezi enable blocking. Retry setup or reload ile extension."
+    "message": "Ufikiaji wa tovuti umetolewa, lakini Focus Lock haikuweza kuwasha uzuiaji. Jaribu usanidi tena au pakia upya kiendelezi."
   },
   "onboarding_access_enable_button": {
-    "message": "Wezesha website blocking"
+    "message": "Washa uzuiaji wa tovuti"
   },
   "onboarding_access_defer_button": {
     "message": "Hapanat hapanaw"
   },
   "onboarding_sync_heading": {
-    "message": "Choose where yako settings are stored"
+    "message": "Chagua mahali mipangilio yako itahifadhiwa"
   },
   "onboarding_sync_switch_label": {
-    "message": "Panga across Chrome devices"
+    "message": "Sawazisha kwenye vifaa vya Chrome"
   },
   "onboarding_sync_enabled_note": {
     "message": "下方經核准的資料會在您完成設定後使用 Chrome 同步。"
   },
   "onboarding_sync_disabled_note": {
-    "message": "All Fokasi Lock data stays in this Chrome profile."
+    "message": "Data yote ya Focus Lock inabaki katika wasifu huu wa Chrome."
   },
   "onboarding_sync_synced_title": {
     "message": "Pangaed"
@@ -166,7 +166,7 @@
     "message": "Local kwenyely"
   },
   "onboarding_sync_developer_note": {
-    "message": "Nothing is sent to ile Focus Lock developer."
+    "message": "Hakuna kinachotumwa kwa msanidi wa Focus Lock."
   },
   "onboarding_sync_finish_enabled": {
     "message": "Fkatikaish setup na sync kuwekad"
