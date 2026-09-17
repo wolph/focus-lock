@@ -129,6 +129,11 @@ export function WorkTabControl({
         mode={mode}
         rules={snapshot.config?.rules}
         work={candidates}
+        currentTarget={
+          work.target?.ok && work.target.state === 'ready'
+            ? { title: work.target.title, hostname: work.target.hostname }
+            : null
+        }
         disabled={disabled || pending || sessionId === null}
         onSelect={(tabId: number): void => {
           void select(tabId);

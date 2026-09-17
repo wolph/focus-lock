@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "选择工作标签页"
-  },
-  "popup_change_work_tab_button": {
-    "message": "更改工作标签页"
-  },
   "popup_session_actions_summary": {
     "message": "会话操作"
   },
@@ -595,7 +589,8 @@
     "message": "无法加载工作标签页。重新打开弹出窗口以重试。"
   },
   "popup_use_this_tab": {
-    "message": "使用此标签页"
+    "message": "设为我的工作标签页",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "此标签页不可用于工作。选择另一个打开的标签页。"
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "无法启动会话。请重试。"
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "这已经是你的工作标签页了。",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

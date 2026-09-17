@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Scegli scheda di lavoro"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Cambia scheda di lavoro"
-  },
   "popup_session_actions_summary": {
     "message": "Azioni della sessione"
   },
@@ -595,7 +589,8 @@
     "message": "Impossibile caricare le schede di lavoro. Riapri il popup per riprovare."
   },
   "popup_use_this_tab": {
-    "message": "Usa questa scheda"
+    "message": "Rendi questa la mia scheda di lavoro",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Questa scheda non è utilizzabile per lavorare. Scegline un'altra aperta."
@@ -656,5 +651,9 @@
         "example": "3"
       }
     }
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "È già la tua scheda di lavoro.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

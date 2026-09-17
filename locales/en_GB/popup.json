@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Choose work tab"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Change work tab"
-  },
   "popup_session_actions_summary": {
     "message": "Session actions"
   },
@@ -595,7 +589,8 @@
     "message": "Could not load work tabs. Reopen the popup to try again."
   },
   "popup_use_this_tab": {
-    "message": "Use this tab"
+    "message": "Make this my work tab",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "This tab is not available for work. Choose another open tab."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "Could not start session. Try again."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "This is already your work tab.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

@@ -232,7 +232,7 @@ describe('StartForm work tab', (): void => {
     );
     await waitFor((): void => expect(workTabSelect(view).value).toBe('14'));
     expect(workTabSelect(view).options[0]?.textContent).toBe('Notes (Current)');
-    expect(view.queryByRole('button', { name: 'Use this tab' })).toBeNull();
+    expect(view.queryByRole('button', { name: 'Make this my work tab' })).toBeNull();
     fireEvent.change(workTabSelect(view), { target: { value: '12' } });
     emitMessage({ type: 'workTargetChanged' });
     await waitFor((): void => expect(workTabSelect(view).disabled).toBe(false));
@@ -327,7 +327,7 @@ describe('WorkTabControl', (): void => {
     );
     await waitFor((): void =>
       expect(
-        (view.getByRole('button', { name: 'Use this tab' }) as HTMLButtonElement).disabled,
+        (view.getByRole('button', { name: 'Make this my work tab' }) as HTMLButtonElement).disabled,
       ).toBe(false),
     );
     expect(requestsOf('getWorkTabs')[0]).toEqual({
@@ -338,7 +338,7 @@ describe('WorkTabControl', (): void => {
     });
     expect(view.getByText('Choose or replace your work tab.')).toBeDefined();
 
-    fireEvent.click(view.getByRole('button', { name: 'Use this tab' }));
+    fireEvent.click(view.getByRole('button', { name: 'Make this my work tab' }));
     await waitFor((): void =>
       expect(requestsOf('setWorkTarget')[0]).toEqual({
         type: 'setWorkTarget',
@@ -380,7 +380,7 @@ describe('WorkTabControl', (): void => {
     );
 
     expect(view.getByText('Work tab: Report')).toBeDefined();
-    // The dropdown is gone by product rule, so the save runs through the Use this tab control.
+    // The dropdown is gone by product rule, so the save runs through the chooser button.
     // docs/superpowers/specs/2026-09-17-popup-visibility-rules.md
     expect(view.container.querySelector('select')).toBeNull();
     const useThisTab: HTMLButtonElement = await waitFor((): HTMLButtonElement => {
@@ -528,31 +528,6 @@ describe('quiet work tab disclosures', (): void => {
     );
     expect((view.getByLabelText('Intention') as HTMLInputElement).value).toBe('Finish notes');
     expect(view.getByRole('button', { name: 'Start 37 min focus' })).toBeTruthy();
-  });
-
-  it('focuses the chooser and shows a save error without hiding it', async (): Promise<void> => {
-    answerWith({
-      getWorkTarget: readyTarget,
-      setWorkTarget: (): unknown => ({ ok: false, error: 'Cannot save tab' }),
-    });
-    const view: ReturnType<typeof render> = render(
-      <ActiveView snapshot={activeSnap()} now={NOW} />,
-    );
-    const useThisTab: HTMLButtonElement = await waitFor((): HTMLButtonElement => {
-      const button: HTMLButtonElement | null = view.container.querySelector(
-        '.this-tab-button',
-      ) as HTMLButtonElement | null;
-      if (button === null || button.disabled) throw new Error('the control is not ready');
-      return button;
-    });
-
-    // Change work tab focuses the chooser rather than revealing it, because it is already on screen.
-    fireEvent.click(view.getByRole('button', { name: 'Change work tab' }));
-    expect(document.activeElement).toBe(useThisTab);
-
-    fireEvent.click(useThisTab);
-    await waitFor((): void => expect(view.getByRole('alert').textContent).toBe('Cannot save tab'));
-    expect(view.getByRole('alert').closest('details')).toBeNull();
   });
 
   it('keeps the actions on screen across ticks and across a new session', async (): Promise<void> => {

@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಆರಿಸಿ"
-  },
-  "popup_change_work_tab_button": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಬದಲಾಯಿಸಿ"
-  },
   "popup_session_actions_summary": {
     "message": "ಸೆಷನ್ ಕ್ರಿಯೆಗಳು"
   },
@@ -595,7 +589,8 @@
     "message": "ಕೆಲಸದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಪಾಪ್‌ಅಪ್ ಅನ್ನು ಮತ್ತೆ ತೆರೆಯಿರಿ."
   },
   "popup_use_this_tab": {
-    "message": "ಈ ಟ್ಯಾಬ್ ಬಳಸಿ"
+    "message": "ಇದನ್ನು ನನ್ನ ಕೆಲಸದ ಟ್ಯಾಬ್ ಮಾಡಿ",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "ಈ ಟ್ಯಾಬ್ ಕೆಲಸಕ್ಕೆ ಲಭ್ಯವಿಲ್ಲ. ಬೇರೆ ತೆರೆದ ಟ್ಯಾಬ್ ಆರಿಸಿ."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "ಸೆಷನ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "ಇದು ಈಗಾಗಲೇ ನಿಮ್ಮ ಕೆಲಸದ ಟ್ಯಾಬ್ ಆಗಿದೆ.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

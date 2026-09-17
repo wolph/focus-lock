@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Pilih tab kerja"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Ubah kerja tab"
-  },
   "popup_session_actions_summary": {
     "message": "Tindakan sesi"
   },
@@ -595,7 +589,8 @@
     "message": "Gagal memuatkan tab kerja. Buka semula tetingkap timbul untuk cuba lagi."
   },
   "popup_use_this_tab": {
-    "message": "Guna tab ini"
+    "message": "Jadikan ini tab kerja saya",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Tab ini tidak tersedia untuk bekerja. Pilih tab terbuka lain."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "Tidak dapat memulai sesi. Coba lagi."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Ini sudah tab kerja anda.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

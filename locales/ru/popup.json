@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Выбрать рабочую вкладку"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Сменить рабочую вкладку"
-  },
   "popup_session_actions_summary": {
     "message": "Действия сессии"
   },
@@ -595,7 +589,8 @@
     "message": "Не удалось загрузить рабочие вкладки. Открой окно заново и повтори."
   },
   "popup_use_this_tab": {
-    "message": "Использовать эту вкладку"
+    "message": "Сделать её рабочей вкладкой",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Эта вкладка не подходит для работы. Выбери другую открытую вкладку."
@@ -692,5 +687,9 @@
         "example": "3"
       }
     }
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Это уже твоя рабочая вкладка.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

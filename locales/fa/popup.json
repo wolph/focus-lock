@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "انتخاب زبانه کار"
-  },
-  "popup_change_work_tab_button": {
-    "message": "تغییر زبانه کار"
-  },
   "popup_session_actions_summary": {
     "message": "کنش‌های جلسه"
   },
@@ -595,7 +589,8 @@
     "message": "زبانه‌های کار بارگذاری نشدند. برای تلاش دوباره پنجره را دوباره باز کنید."
   },
   "popup_use_this_tab": {
-    "message": "استفاده از این زبانه"
+    "message": "این را زبانه کار من کن",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "این زبانه برای کار در دسترس نیست. زبانه باز دیگری را انتخاب کنید."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "جلسه شروع نشد. دوباره تلاش کنید."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "این همین حالا زبانه کار شماست.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

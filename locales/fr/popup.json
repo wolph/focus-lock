@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Choisir un onglet"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Changer d'onglet"
-  },
   "popup_session_actions_summary": {
     "message": "Actions de session"
   },
@@ -595,7 +589,8 @@
     "message": "Impossible de charger les onglets de travail. Rouvre la fenêtre pour réessayer."
   },
   "popup_use_this_tab": {
-    "message": "Utiliser cet onglet"
+    "message": "En faire mon onglet de travail",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Cet onglet ne peut pas servir au travail. Choisis un autre onglet ouvert."
@@ -656,5 +651,9 @@
         "example": "3"
       }
     }
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "C'est déjà ton onglet de travail.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

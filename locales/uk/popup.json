@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Вибрати робочу вкладку"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Змінити робочу вкладку"
-  },
   "popup_session_actions_summary": {
     "message": "Дії сесії"
   },
@@ -595,7 +589,8 @@
     "message": "Не вдалося завантажити робочі вкладки. Відкрий вікно знову і повтори."
   },
   "popup_use_this_tab": {
-    "message": "Використати цю вкладку"
+    "message": "Зробити її робочою вкладкою",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Ця вкладка не підходить для роботи. Вибери іншу відкриту вкладку."
@@ -692,5 +687,9 @@
         "example": "3"
       }
     }
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Це вже твоя робоча вкладка.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

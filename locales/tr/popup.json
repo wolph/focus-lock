@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Çalışma sekmesi seç"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Çalışma sekmesini değiştir"
-  },
   "popup_session_actions_summary": {
     "message": "Seans işlemleri"
   },
@@ -595,7 +589,8 @@
     "message": "Çalışma sekmeleri yüklenemedi. Yeniden denemek için pencereyi tekrar aç."
   },
   "popup_use_this_tab": {
-    "message": "Bu sekmeyi kullan"
+    "message": "Bunu çalışma sekmem yap",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Bu sekme çalışmak için uygun değil. Açık başka bir sekme seç."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "Seans başlatılamadı. Tekrar dene."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Bu zaten çalışma sekmen.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

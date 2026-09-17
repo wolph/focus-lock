@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "పని ట్యాబ్‌ను ఎంచుకో"
-  },
-  "popup_change_work_tab_button": {
-    "message": "పని ట్యాబ్‌ను మార్చు"
-  },
   "popup_session_actions_summary": {
     "message": "సెషన్ చర్యలు"
   },
@@ -595,7 +589,8 @@
     "message": "పని ట్యాబ్‌లను లోడ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించడానికి పాప్అప్‌ను తిరిగి తెరవండి."
   },
   "popup_use_this_tab": {
-    "message": "ఈ ట్యాబ్‌ను ఉపయోగించు"
+    "message": "దీన్ని నా పని ట్యాబ్‌గా చేయి",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "ఈ ట్యాబ్ పని కోసం అందుబాటులో లేదు. వేరే తెరిచిన ట్యాబ్‌ను ఎంచుకోండి."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "సెషన్‌ను ప్రారంభించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "ఇది ఇప్పటికే మీ పని ట్యాబ్.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "選擇工作頁籤"
-  },
-  "popup_change_work_tab_button": {
-    "message": "更改工作頁籤"
-  },
   "popup_session_actions_summary": {
     "message": "工作階段動作"
   },
@@ -595,7 +589,8 @@
     "message": "無法載入工作標籤。重新開啟快顯視窗再試一次。"
   },
   "popup_use_this_tab": {
-    "message": "使用此頁籤"
+    "message": "設為我的工作頁籤",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "這個索引標籤無法用於工作。選擇另一個開啟的索引標籤。"
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "無法啟動工作階段。請重試。"
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "這已經是你的工作頁籤了。",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

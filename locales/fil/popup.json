@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Piliin ang tab ng trabaho"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Baguhin ang tab ng trabaho"
-  },
   "popup_session_actions_summary": {
     "message": "Mga aksyon ng sesyon"
   },
@@ -595,7 +589,8 @@
     "message": "Hindi makarga ang mga tab na pantrabaho. Buksan muli ang popup upang subukan muli."
   },
   "popup_use_this_tab": {
-    "message": "Gamitin ang tab na ito"
+    "message": "Gawin itong tab ng trabaho",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Hindi magagamit ang tab na ito para sa trabaho. Pumili ng ibang bukas na tab."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "Hindi nakapagsimula ng sesyon. Subukan ulit."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Ito na ang tab mo ng trabaho.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

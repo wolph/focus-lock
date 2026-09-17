@@ -1053,13 +1053,14 @@ body {
 
 .this-tab-button {
   width: 100%;
-  padding: 0.35rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: 0.65rem;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
   background: var(--primary-bg);
   color: var(--primary-text);
   font: inherit;
-  font-weight: 650;
+  font-size: 15px;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -1068,28 +1069,13 @@ body {
 }
 
 .this-tab-button:disabled {
-  background: var(--surface);
-  color: var(--text-soft);
   cursor: default;
+  opacity: 0.65;
 }
 
 .this-tab-button:focus-visible {
   outline: 2px solid var(--focus-color);
   outline-offset: 3px;
-}
-
-/* In the active view the picker sits under the clock, so its button reads as a quiet choice. */
-.work-tab-control .this-tab-button {
-  background: var(--surface);
-  color: var(--text);
-}
-
-.work-tab-control .this-tab-button:hover:enabled {
-  background: var(--bg);
-}
-
-.work-tab-control .this-tab-button:disabled {
-  color: var(--text-soft);
 }
 
 /* The return control: the start button's shape, naming its destination on two more lines. */

@@ -8,6 +8,7 @@ import { type WorkTabsState, workTabsRequest } from './use-work-tabs';
 
 export const USE_THIS_TAB_LABEL: string = t('popup_use_this_tab');
 export const CURRENT_TAB_UNAVAILABLE_HINT: string = t('popup_current_tab_unavailable');
+export const CURRENT_TAB_IS_WORK_TAB_HINT: string = t('popup_current_tab_is_work_tab');
 const CHECKING_CURRENT_TAB_HINT: string = t('popup_checking_current_tab');
 const FINDING_CURRENT_TAB_HINT: string = t('popup_finding_current_tab');
 const CURRENT_TAB_LOAD_ERROR: string = t('popup_current_tab_load_failed');
@@ -20,6 +21,8 @@ export interface ThisTabButtonProps {
   rules?: SessionRuleSnapshot;
   /** Changes whenever the owner's choice changes, so a stale lookup cannot overrule a newer one. */
   choiceKey: string;
+  /** The work target as the popup knows it, so the button can say when there is nothing to do. */
+  currentTarget?: { title: string | null; hostname?: string } | null;
   onError?: (error: string | null) => void;
   onSelect: (tabId: number) => void;
 }
@@ -34,12 +37,25 @@ export function ThisTabButton({
   mode,
   rules,
   choiceKey,
+  currentTarget = null,
   onSelect,
   onError,
 }: ThisTabButtonProps): VNode {
   const current: WorkTab | undefined = work.tabs.find(
     (tab: WorkTab): boolean => tab.tabId === work.context?.activeTabId,
   );
+  /**
+   * Pressing the button when this tab is already the target re-saves what is already saved, so the
+   * control says so and stops rather than offering a no-op.
+   *
+   * The stored target carries no tab id, only what it showed, so identity is the title and host
+   * together. Two tabs of the same page on the same site are genuinely interchangeable here.
+   */
+  const alreadyTarget: boolean =
+    currentTarget !== null &&
+    current !== undefined &&
+    currentTarget.title === current.title &&
+    (currentTarget.hostname ?? null) === (current.hostname ?? null);
   const [pending, setPending]: [boolean, Dispatch<StateUpdater<boolean>>] =
     useState<boolean>(false);
   const [error, setError]: [string | null, Dispatch<StateUpdater<string | null>>] = useState<
@@ -94,13 +110,15 @@ export function ThisTabButton({
     : (error ??
       (work.loading
         ? FINDING_CURRENT_TAB_HINT
-        : (work.error ?? current?.title ?? CURRENT_TAB_UNAVAILABLE_HINT)));
+        : alreadyTarget
+          ? CURRENT_TAB_IS_WORK_TAB_HINT
+          : (work.error ?? current?.title ?? CURRENT_TAB_UNAVAILABLE_HINT)));
   return (
     <div class="this-tab-choice">
       <button
         type="button"
         class="this-tab-button"
-        disabled={disabled || current === undefined || work.loading || pending}
+        disabled={disabled || current === undefined || work.loading || pending || alreadyTarget}
         aria-describedby="this-tab-hint"
         onClick={(): void => {
           void choose();

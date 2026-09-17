@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക"
-  },
-  "popup_change_work_tab_button": {
-    "message": "വർക്ക് ടാബ് മാറ്റുക"
-  },
   "popup_session_actions_summary": {
     "message": "സെഷൻ പ്രവർത്തനങ്ങൾ"
   },
@@ -595,7 +589,8 @@
     "message": "വർക്ക് ടാബുകൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. പോപ്പപ്പ് പുനരാരംഭിക്കുക ശ്രമിക്കാൻ."
   },
   "popup_use_this_tab": {
-    "message": "ഈ ടാബ് ഉപയോഗിക്കുക"
+    "message": "ഇത് എന്റെ ജോലി ടാബ് ആക്കുക",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "ഈ ടാബ് വർക്കിനേക്കുറിച്ച് ലഭ്യമല്ല. മറ്റൊരു തുറന്ന ടാബ് തിരഞ്ഞെടുക്കുക."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "സെഷൻ ആരംഭിക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "ഇത് ഇപ്പോൾ തന്നെ നിങ്ങളുടെ ജോലി ടാബാണ്.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

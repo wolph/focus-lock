@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Valitse työvälilehti"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Vaihda työvälilehti"
-  },
   "popup_session_actions_summary": {
     "message": "Jakson toiminnot"
   },
@@ -595,7 +589,8 @@
     "message": "Työvälilehtiä ei voitu ladata. Avaa ponnahdusikkuna uudelleen ja yritä uudestaan."
   },
   "popup_use_this_tab": {
-    "message": "Käytä tätä välilehteä"
+    "message": "Tee tästä työvälilehteni",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Tässä välilehdessä ei voi työskennellä. Valitse toinen avoin välilehti."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "Jaksoa ei voitu aloittaa. Yritä uudelleen."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Tämä on jo työvälilehtesi.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

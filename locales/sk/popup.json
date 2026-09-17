@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Vybrať pracovnú kartu"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Zmeniť pracovnú kartu"
-  },
   "popup_session_actions_summary": {
     "message": "Akcie relácie"
   },
@@ -595,7 +589,8 @@
     "message": "Pracovné karty sa nepodarilo načítať. Otvor okno znova."
   },
   "popup_use_this_tab": {
-    "message": "Použiť túto kartu"
+    "message": "Nastaviť ako pracovnú kartu",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Táto karta sa na prácu nehodí. Vyber inú otvorenú kartu."
@@ -692,5 +687,9 @@
         "example": "3"
       }
     }
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Toto je už tvoja pracovná karta.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

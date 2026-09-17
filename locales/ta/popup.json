@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "பணி தாவலைத் தேர்வுசெய்"
-  },
-  "popup_change_work_tab_button": {
-    "message": "பணி தாவலை மாற்று"
-  },
   "popup_session_actions_summary": {
     "message": "அமர்வு செயல்கள்"
   },
@@ -595,7 +589,8 @@
     "message": "பணி தாவல்களை ஏற்ற முடியவில்லை. மீண்டும் முயற்சிக்க பாப்அப்பை மீண்டும் திறக்கவும்."
   },
   "popup_use_this_tab": {
-    "message": "இதைப் பயன்படுத்து"
+    "message": "இதை என் பணி தாவலாக்கு",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "இந்தத் தாவல் பணிக்குக் கிடைக்கவில்லை. வேறு திறந்த தாவலைத் தேர்வுசெய்யவும்."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "அமர்வைத் தொடங்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "இது ஏற்கனவே உங்கள் பணி தாவல்.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

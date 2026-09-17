@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Chagua kichupo cha kazi"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Badilisha kichupo cha kazi"
-  },
   "popup_session_actions_summary": {
     "message": "Vitendo vya kikao"
   },
@@ -595,7 +589,8 @@
     "message": "Imeshindwa kupakia vichupo vya kazi. Fungua tena dirisha ibukizi ili kujaribu tena."
   },
   "popup_use_this_tab": {
-    "message": "Tumia kichupo hiki"
+    "message": "Fanya hiki kuwa kichupo changu cha kazi",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Kichupo hiki hakipatikani kwa kazi. Chagua kichupo kingine kilichofunguliwa."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "Imeshindwa kuanza kikao. Jaribu tena."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Hiki tayari ni kichupo chako cha kazi.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

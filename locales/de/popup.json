@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Arbeits-Tab wählen"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Arbeits-Tab ändern"
-  },
   "popup_session_actions_summary": {
     "message": "Sitzungsaktionen"
   },
@@ -595,7 +589,8 @@
     "message": "Arbeits-Tabs konnten nicht geladen werden. Öffne das Pop-up erneut."
   },
   "popup_use_this_tab": {
-    "message": "Dieser Tab"
+    "message": "Zu meinem Arbeits-Tab machen",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Dieser Tab eignet sich nicht zum Arbeiten. Wähle einen anderen offenen Tab."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "Sitzung konnte nicht gestartet werden. Versuch es erneut."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Das ist schon dein Arbeits-Tab.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

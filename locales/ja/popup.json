@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "ワークタブを選択"
-  },
-  "popup_change_work_tab_button": {
-    "message": "ワークタブを変更"
-  },
   "popup_session_actions_summary": {
     "message": "セッションアクション"
   },
@@ -595,7 +589,8 @@
     "message": "ワークタブを読み込めませんでした。ポップアップを再度開いてもう一度試してください。"
   },
   "popup_use_this_tab": {
-    "message": "このタブを使用"
+    "message": "このタブをワークタブにする",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "このタブは仕事に利用できません。別のオープンタブを選択してください。"
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "セッションを開始できませんでした。もう一度試してください。"
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "これはすでにワークタブです。",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

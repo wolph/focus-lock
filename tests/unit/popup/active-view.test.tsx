@@ -752,12 +752,13 @@ describe('always visible session actions', (): void => {
     expect(view.container.querySelector('.session-actions .meter-label')).toBeTruthy();
   });
 
-  it('offers a chooser for a missing work target', (): void => {
+  it('offers the chooser itself, with no button that only reveals it', (): void => {
     const view: ReturnType<typeof render> = render(<ActiveView snapshot={focusSnap()} now={NOW} />);
-    fireEvent.click(view.getByRole('button', { name: 'Choose work tab' }));
 
-    // The chooser is already rendered, so the click focuses it rather than revealing it.
+    // Two controls used to exist only to move focus here. They are gone with the disclosure.
     expect(view.container.querySelector('.work-tab-control')).toBeTruthy();
+    expect(view.queryByRole('button', { name: 'Choose work tab' })).toBeNull();
+    expect(view.queryByRole('button', { name: 'Change work tab' })).toBeNull();
   });
 
   it('offers no work tab dropdown', (): void => {

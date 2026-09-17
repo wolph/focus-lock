@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Chọn tab công việc"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Đổi tab công việc"
-  },
   "popup_session_actions_summary": {
     "message": "Thao tác phiên"
   },
@@ -595,7 +589,8 @@
     "message": "Không thể tải tab công việc. Hãy mở lại popup để thử lại."
   },
   "popup_use_this_tab": {
-    "message": "Dùng tab này"
+    "message": "Đặt tab này làm tab công việc",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Không thể dùng tab này làm việc. Hãy chọn một tab khác đang mở."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "Không thể bắt đầu phiên. Hãy thử lại."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Đây đã là tab công việc của bạn.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

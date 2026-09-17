@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "작업 탭 선택"
-  },
-  "popup_change_work_tab_button": {
-    "message": "작업 탭 변경"
-  },
   "popup_session_actions_summary": {
     "message": "세션 작업"
   },
@@ -595,7 +589,8 @@
     "message": "작업 탭을 로드할 수 없습니다. 팝업을 다시 열고 다시 시도하십시오."
   },
   "popup_use_this_tab": {
-    "message": "이 탭 사용"
+    "message": "이 탭을 작업 탭으로",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "이 탭은 작업에 사용할 수 없습니다. 다른 열린 탭을 선택하십시오."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "세션을 시작할 수 없습니다. 다시 시도하십시오."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "이미 작업 탭입니다.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

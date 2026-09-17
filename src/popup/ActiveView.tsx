@@ -138,8 +138,6 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
   const authority: EndAuthorityV2 = snapshot.lifecycle.endAuthority;
   const activeGate: GateState | null = snapshot.gate ?? endGateOf(authority);
 
-  const [focusRequest, setFocusRequest]: [number, Dispatch<StateUpdater<number>>] =
-    useState<number>(0);
   const [workLoadError, setWorkLoadError]: [string | null, Dispatch<StateUpdater<string | null>>] =
     useState<string | null>(null);
   const [workError, setWorkError]: [string | null, Dispatch<StateUpdater<string | null>>] =
@@ -155,10 +153,6 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
     }
     previousGate.current = activeGate;
   }, [activeGate]);
-  const chooseWorkTab: () => void = (): void => {
-    setFocusRequest((previous: number): number => previous + 1);
-  };
-
   /**
    * Each spend control counts to its own cost within the current focus block, or explains why
    * that credit cannot be reached. An affordable spend has no message, so the reason is null.
@@ -271,28 +265,19 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
             disabled={command.pending}
             onClick={(): void => void returnToWork()}
           />
-        ) : activeGate === null ? (
-          <button
-            type="button"
-            class={
-              snapshot.phase === 'paused' || breakEarlyVisible ? 'secondary-button' : 'start-button'
-            }
-            disabled={command.pending}
-            onClick={chooseWorkTab}
-          >
-            {t('popup_choose_work_tab_button')}
-          </button>
         ) : null}
-        {returnDestination !== null ? (
-          <button
-            type="button"
-            class="text-button"
-            disabled={command.pending}
-            onClick={chooseWorkTab}
-          >
-            {t('popup_change_work_tab_button')}
-          </button>
-        ) : null}
+        {/*
+         * The chooser itself sits here, where a button that merely focused it used to. Two controls
+         * existed only to move focus to this one, which made them useless once it stopped hiding
+         * behind a disclosure. See docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
+         */}
+        <WorkTabControl
+          snapshot={snapshot}
+          work={work}
+          disabled={command.pending || activeGate !== null}
+          onError={setWorkError}
+          onLoadError={setWorkLoadError}
+        />
       </div>
       {activeSite.status === 'error' ? (
         <p class="form-error" role="alert">
@@ -311,14 +296,6 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
             {endAction}
           </div>
         ) : null}
-        <WorkTabControl
-          snapshot={snapshot}
-          work={work}
-          disabled={command.pending || activeGate !== null}
-          onError={setWorkError}
-          onLoadError={setWorkLoadError}
-          focusRequest={focusRequest}
-        />
       </section>
       {workLoadError !== null ? <p class="form-error">{workLoadError}</p> : null}
       {workError !== null ? (

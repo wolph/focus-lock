@@ -47,7 +47,7 @@ describe('popup.css sizing', (): void => {
     expect(block('.active-view')).toMatch(/flex:\s*1 1 auto/);
   });
 
-  it('paints Use this tab with the primary tokens, so the light theme shows one green', (): void => {
+  it('paints the work tab chooser with the primary tokens, so it reads as the green action', (): void => {
     for (const selector of [
       '.this-tab-button',
       '.this-tab-button:hover:enabled',

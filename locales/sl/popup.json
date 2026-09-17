@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Izberi delovni zavihek"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Zamenjaj delovni zavihek"
-  },
   "popup_session_actions_summary": {
     "message": "Dejanja seje"
   },
@@ -595,7 +589,8 @@
     "message": "Delovnih zavihkov ni bilo mogoče naložiti. Znova odpri okno."
   },
   "popup_use_this_tab": {
-    "message": "Uporabi ta zavihek"
+    "message": "Nastavi kot delovni zavihek",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Ta zavihek ni primeren za delo. Izberi drug odprt zavihek."
@@ -692,5 +687,9 @@
         "example": "3"
       }
     }
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "To je že tvoj delovni zavihek.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

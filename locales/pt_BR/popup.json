@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Escolher a aba de trabalho"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Trocar a aba de trabalho"
-  },
   "popup_session_actions_summary": {
     "message": "Ações da sessão"
   },
@@ -595,7 +589,8 @@
     "message": "Não foi possível carregar as abas de trabalho. Reabra o popup para tentar de novo."
   },
   "popup_use_this_tab": {
-    "message": "Usar esta aba"
+    "message": "Tornar esta minha aba de trabalho",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Esta aba não serve para trabalhar. Escolha outra aba aberta."
@@ -656,5 +651,9 @@
         "example": "3"
       }
     }
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Esta já é sua aba de trabalho.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

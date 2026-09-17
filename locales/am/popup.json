@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "የስራ ትር ምረጥ"
-  },
-  "popup_change_work_tab_button": {
-    "message": "የስራ ትር ቀይር"
-  },
   "popup_session_actions_summary": {
     "message": "የክፍለ ጊዜ ተግባራት"
   },
@@ -595,7 +589,8 @@
     "message": "የስራ ትሮችን መጫን አልተቻለም። ደግመው ለመሞከር ብቅ-ባዩን ዳግም ይክፈቱ።"
   },
   "popup_use_this_tab": {
-    "message": "ይህን ትር ተጠቀም"
+    "message": "ይህን ትር የስራ ትሬ አድርግ",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "ይህ ትር ለስራ አይገኝም። ሌላ ክፍት ትር ይምረጡ።"
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "ክፍለ ጊዜውን መጀመር አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "ይህ አስቀድሞ የስራ ትርዎ ነው።",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

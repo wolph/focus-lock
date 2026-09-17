@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "વર્ક ટૅબ પસંદ કરો"
-  },
-  "popup_change_work_tab_button": {
-    "message": "વર્ક ટૅબ બદલો"
-  },
   "popup_session_actions_summary": {
     "message": "સેશન ક્રિયાઓ"
   },
@@ -595,7 +589,8 @@
     "message": "વર્ક ટૅબ લોડ કરી શકાઈ નહીં. ફરી પ્રયાસ કરવા પોપઅપ ફરી ખોલો."
   },
   "popup_use_this_tab": {
-    "message": "આ ટૅબનો ઉપયોગ કરો"
+    "message": "આને મારી વર્ક ટૅબ બનાવો",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "આ ટૅબ કામ માટે ઉપલબ્ધ નથી. બીજી ખુલ્લી ટૅબ પસંદ કરો."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "સેશન શરૂ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "આ પહેલેથી જ તારી વર્ક ટૅબ છે.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

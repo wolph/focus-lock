@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "Velg arbeidsfane"
-  },
-  "popup_change_work_tab_button": {
-    "message": "Bytt arbeidsfane"
-  },
   "popup_session_actions_summary": {
     "message": "Økthandlinger"
   },
@@ -595,7 +589,8 @@
     "message": "Kunne ikke laste arbeidsfaner. Åpne popupen på nytt for å prøve igjen."
   },
   "popup_use_this_tab": {
-    "message": "Bruk denne fanen"
+    "message": "Gjør denne til arbeidsfanen min",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "Denne fanen kan ikke brukes til arbeid. Velg en annen åpen fane."
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "Kunne ikke starte økten. Prøv igjen."
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "Dette er allerede arbeidsfanen din.",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }

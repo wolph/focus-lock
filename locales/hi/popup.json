@@ -159,12 +159,6 @@
       }
     }
   },
-  "popup_choose_work_tab_button": {
-    "message": "काम का टैब चुनें"
-  },
-  "popup_change_work_tab_button": {
-    "message": "काम का टैब बदलें"
-  },
   "popup_session_actions_summary": {
     "message": "सेशन की कार्रवाइयाँ"
   },
@@ -595,7 +589,8 @@
     "message": "काम के टैब लोड नहीं हो सके। दोबारा कोशिश करने के लिए पॉपअप फिर से खोलें।"
   },
   "popup_use_this_tab": {
-    "message": "यही टैब चुनें"
+    "message": "इसे मेरा काम का टैब बनाएँ",
+    "description": "Primary button in the active session view that makes the tab the user is on right now the work tab, which is where Back to work returns them."
   },
   "popup_current_tab_unavailable": {
     "message": "यह टैब काम के लिए उपलब्ध नहीं है। कोई दूसरा खुला टैब चुनें।"
@@ -620,5 +615,9 @@
   },
   "popup_start_failed": {
     "message": "सेशन शुरू नहीं हो सका। दोबारा कोशिश करें।"
+  },
+  "popup_current_tab_is_work_tab": {
+    "message": "यह पहले से ही आपका काम का टैब है।",
+    "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
   }
 }
