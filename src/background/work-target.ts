@@ -155,7 +155,10 @@ export class WorkTargetService {
       source.incognito !== sender.tab.incognito ||
       !this.http(source.url)
     )
-      throw new Error('The requesting page has changed. Reload the page.');
+      // The blocked page shows this sentence verbatim when it recognises it, and recognises it by
+      // comparing against the same message. Both sides must therefore read the same key, or the
+      // match fails in every language but English and the page falls back to a generic error.
+      throw new Error(t('overlay_target_page_changed'));
     return source.incognito;
   }
 
