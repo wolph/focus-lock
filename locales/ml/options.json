@@ -3,91 +3,94 @@
     "message": "Focus Lock ഓപ്ഷനുകൾ"
   },
   "options_heading": {
-    "message": "Focus Lock സെറ്റിംഗുകൾ"
+    "message": "Focus Lock സെറ്റിംഗ്‌സ്"
   },
   "options_loading_settings": {
-    "message": "Loading സെറ്റിംഗുകൾ"
+    "message": "സെറ്റിംഗ്‌സ് ലോഡ് ചെയ്യുന്നു"
   },
   "options_privacy_loading": {
-    "message": "Loading privacy സെറ്റിംഗുകൾ"
+    "message": "സ്വകാര്യതാ സെറ്റിംഗ്‌സ് ലോഡ് ചെയ്യുന്നു"
   },
   "options_save_failed": {
-    "message": "Could not സംരക്ഷിക്കുക. Try again."
+    "message": "സംരക്ഷിക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "options_blocking_heading": {
-    "message": "തടയൽ"
+    "message": "ബ്ലോക്കിംഗ്"
   },
   "options_blocking_help": {
-    "message": "Custom rules തടയുക during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories തടയുക common time sinks."
+    "message": "കസ്റ്റം നിയമങ്ങൾ ബ്ലാക്കലിസ്റ്റ് സെഷനുകളിൽ ബ്ലോക്ക് ചെയ്യുന്നു. വൈറ്റലിസ്റ്റ് വൈറ്റലിസ്റ്റ് സെഷനുകളിൽ എത്താനാകുന്നത്. ബണ്ടിൽ ചെയ്ത വിഭാഗങ്ങൾ സാധാരണ സമയ ചിലവ് ബ്ലോക്ക് ചെയ്യുന്നു."
   },
   "options_custom_blacklist_title": {
-    "message": "Custom blacklist"
+    "message": "കസ്റ്റം ബ്ലാക്കലിസ്റ്റ്"
   },
   "options_whitelist_title": {
-    "message": "Whitelist"
+    "message": "വൈറ്റലിസ്റ്റ്"
   },
   "options_bundled_categories_heading": {
-    "message": "പൊതു വർഗ്ഗങ്ങൾ"
+    "message": "ബണ്ടിൽ ചെയ്ത വിഭാഗങ്ങൾ"
+  },
+  "options_bundled_categories_help": {
+    "message": "സാധാരണ സമയ ചിലവ് ബണ്ടിൾ ചെയ്യുന്നു. പൂർണ്ണ വിഭാഗം ടോഗിൾ ചെയ്യുന്നു, തുടർന്ന് തുറന്നു ഒരു സൈറ്റ് ലഭ്യമായി വയ്ക്കുന്നു."
   },
   "options_schedule_heading": {
     "message": "ഷെഡ്യൂൾ"
   },
   "options_schedule_help": {
-    "message": "Sessions ആരംഭിക്കുക on their own inside these windows. Strictness set here applies for the whole window."
+    "message": "സെഷനുകൾ ഈ വിൻഡോകളിൽ സ്വയമേ ആരംഭിക്കുന്നു. കർശനത ഇവിടെ സെറ്റ് ചെയ്തത് പൂർണ്ണ വിൻഡോയ്ക്കായി ബാധകമാണ്."
   },
   "options_behavior_heading": {
-    "message": "സെഷൻ behavior"
+    "message": "സെഷൻ സ്വഭാവം"
   },
   "options_budget_heading": {
     "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ്"
   },
   "options_notifications_heading": {
-    "message": "Notifications"
+    "message": "അറിയിപ്പുകൾ"
   },
   "options_privacy_heading": {
-    "message": "പ്രൈവസി"
+    "message": "സ്വകാര്യത പരിപാലന ഡാറ്റ"
   },
   "options_load_error_retry": {
-    "message": "Retry"
+    "message": "വീണ്ടും ശ്രമിക്കുക"
   },
   "options_load_error_delete_all": {
-    "message": "കണ്ടെത്തുക everything and start over"
+    "message": "എല്ലാ കാര്യം ഇല്ലാതാക്കുക തുടക്കം മുതൽ"
   },
   "options_load_error_keep_data": {
-    "message": "Keep my data"
+    "message": "എന്റെ ഡാറ്റ നിലനിർത്തുക"
   },
   "options_delete_all_data": {
-    "message": "കണ്ടെത്തുക all Focus Lock data"
+    "message": "എല്ലാ Focus Lock ഡാറ്റ ഇല്ലാതാക്കുക"
   },
   "options_dirty_saving": {
-    "message": "Saving changes"
+    "message": "മാറ്റങ്ങൾ സംരക്ഷിക്കുന്നു"
   },
   "options_dirty_unsaved": {
-    "message": "Unsaved changes"
+    "message": "സംരക്ഷിക്കാത്ത മാറ്റങ്ങൾ"
   },
   "options_dirty_clean": {
-    "message": "No unsaved changes"
+    "message": "സംരക്ഷിക്കാത്ത മാറ്റങ്ങൾ ഇല്ല"
   },
   "options_dirty_discard": {
-    "message": "Discard changes"
+    "message": "മാറ്റങ്ങൾ നിരസിക്കുക"
   },
   "options_dirty_save": {
-    "message": "സംരക്ഷിക്കുക changes"
+    "message": "മാറ്റങ്ങൾ സംരക്ഷിക്കുക"
   },
   "options_session_status_label": {
-    "message": "സെഷൻ status"
+    "message": "സെഷൻ നില"
   },
   "options_rule_kind_host_badge": {
-    "message": "domain"
+    "message": "ഡോമെയ്ൻ"
   },
   "options_rule_kind_regex_badge": {
     "message": "regex"
   },
   "options_rule_remove": {
-    "message": "Remove"
+    "message": "നീക്കം ചെയ്യുക"
   },
   "options_rule_remove_aria": {
-    "message": "Remove $PATTERN$",
+    "message": "$PATTERN$ നീക്കം ചെയ്യുക",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -96,19 +99,19 @@
     }
   },
   "options_rules_empty": {
-    "message": "No rules yet."
+    "message": "ഇതുവരെ നിയമങ്ങൾ ഇല്ല."
   },
   "options_rule_kind_aria": {
-    "message": "Rule kind"
+    "message": "നിയമത്തിന്റെ തരം"
   },
   "options_rule_kind_host_option": {
-    "message": "domain or subdomain"
+    "message": "ഡോമെയ്ൻ അല്ലെങ്കിൽ സബ്‌ഡോമെയ്ൻ"
   },
   "options_rule_kind_regex_option": {
-    "message": "regex (full URL)"
+    "message": "regex (പൂർണ്ണ URL)"
   },
   "options_rule_pattern_aria": {
-    "message": "Pattern"
+    "message": "പാറ്റേൺ"
   },
   "options_rule_pattern_placeholder_host": {
     "message": "facebook.com"
@@ -117,46 +120,115 @@
     "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
-    "message": "ചേർക്കുക rule"
+    "message": "നിയമം ചേർക്കുക"
+  },
+  "options_rules_help": {
+    "message": "facebook.com ആ ഡോമെയ്നും എല്ലാ സബ്‌ഡോമെയ്നും കവർ ചെയ്യുന്നു. news.ycombinator.com ആ സബ്‌ഡോമെയ്നും അതിനടിയിലുള്ള എന്തും കവർ ചെയ്യുന്നു. /youtube\\.com\\/shorts/ പൂർണ്ണ URL ഒരു സാധാരണ പദപ്രയോഗമായി പൊരുത്തപ്പെടുത്തുന്നു."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ ഒരു പോസിറ്റീവ് പൂർണ്ണ സംഖ്യ ആയിരിക്കണം.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ പൂജ്യം അല്ലെങ്കിൽ അതിലും വലിയ ഒരു പൂർണ്ണ സംഖ്യ ആയിരിക്കണം.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ പൂജ്യം അല്ലെങ്കിൽ അതിലും വലിയ ആയിരിക്കണം.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ പിന്തുണയ്ക്കുന്ന മിനിറ്റ് ശ്രേണിയിൽ ഉണ്ടായിരിക്കണം.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ പിന്തുണയ്ക്കുന്ന ദിന ശ്രേണിയിൽ ഉണ്ടായിരിക്കണം.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
   },
   "options_session_defaults_heading": {
-    "message": "സെഷൻ defaults"
+    "message": "സെഷൻ ഡിഫാൾട്ട്സ്"
   },
   "options_session_defaults_help": {
-    "message": "Mode and strictness are fixed when a സെഷൻ starts. These are the values the ആരംഭിക്കുക form opens with."
+    "message": "ഒരു സെഷൻ ആരംഭിക്കുമ്പോൾ മോഡും കർശനതയും നിശ്ചിതമാണ്. ഈ മൂല്യങ്ങൾ ആരംഭ ഫോമിൽ തുറക്കുന്നു."
   },
   "options_preset_short_label": {
-    "message": "Short സെഷൻ preset (minutes)"
+    "message": "ഷോർട്ട് സെഷൻ പ്രിസെറ്റ് (മിനിറ്റ്)"
   },
   "options_preset_default_label": {
-    "message": "Default സെഷൻ preset (minutes)"
+    "message": "ഡിഫാൾട്ട് സെഷൻ പ്രിസെറ്റ് (മിനിറ്റ്)"
   },
   "options_preset_deep_label": {
-    "message": "Deep സെഷൻ preset (minutes)"
+    "message": "ഗാഢമായ സെഷൻ പ്രിസെറ്റ് (മിനിറ്റ്)"
   },
   "options_mode_blacklist_label": {
-    "message": "Blacklist: തടയുക listed sites"
+    "message": "ബ്ലാക്കലിസ്റ്റ്: സൂചിപ്പിച്ച സൈറ്റുകൾ ബ്ലോക്ക് ചെയ്യുക"
+  },
+  "options_mode_whitelist_label": {
+    "message": "വൈറ്റലിസ്റ്റ്: സൂചിപ്പിച്ച സൈറ്റുകൾ മാത്രം അനുവദിക്കുക"
   },
   "options_strictness_flexible_label": {
-    "message": "Flexible: end the സെഷൻ whenever you choose"
+    "message": "ഫ്ലെക്സിബിൾ: നിങ്ങൾ ഉണ്ടായ് എപ്പോൾ സെഷൻ അവസാനിപ്പിക്കുക"
+  },
+  "options_strictness_friction_label": {
+    "message": "ഘർഷണ: പ്രാരംഭിക തലരുകൃത്യം നിർത്തുന്നത് കോൺഫിഗൈൻ ഡിലിബെരെഷൻ കവാടം ഉപയോഗിക്കുന്നു"
+  },
+  "options_strictness_hard_label": {
+    "message": "ഹാർഡ്: നിങ്ങൾ സേവനം അവസാനിപ്പിക്കാൻ പാടില്ല, താൽക്കാലിക സൈറ്റ് ആക്സസ് മാത്രം"
   },
   "options_cycle_heading": {
-    "message": "ഫോക്കസ് ഒപ്പം ബ്രേക് സൈക്കിൾ"
+    "message": "ഫോകസ് വിശ്രാമ ചക്ര"
+  },
+  "options_cycle_help": {
+    "message": "ഡിഫാൾട്ട്: 25 മിനിറ്റ് ഫോകസ്, 5 മിനിറ്റ് വിശ്രാമം, ഓരോ 4 വിപ്ലവത്തിനും 15 മിനിറ്റ് നീണ്ട വിശ്രാമം. ഡെസ്ക് സ്ഥിതിവിവരണത്ത് വിശ്രാമം നിങ്ങൾ അനുഭവിക്കുമ്പോൾ പോലെ തോന്നലിനെയാണ് തോൽക്കുന്നത്. കൃത്യ മിനിറ്റുകൾ സമ്മത്തം അല്ല."
+  },
+  "options_cycle_default_label": {
+    "message": "ഡിഫാൾട്ടായി ഫോകസും വിശ്രാമവും സൈക്കിൾ ചെയ്യുക"
   },
   "options_focus_minutes_label": {
-    "message": "Focus minutes"
+    "message": "ഫോകസ് മിനിറ്റ്"
   },
   "options_short_break_minutes_label": {
-    "message": "Short break minutes"
+    "message": "ഷോർട്ട് ബ്രേക് മിനിറ്റ്"
   },
   "options_long_break_minutes_label": {
-    "message": "Long break minutes"
+    "message": "നീണ്ട ബ്രേക് മിനിറ്റ്"
+  },
+  "options_long_every_label": {
+    "message": "നീണ്ട ബ്രേക് എൻ ചക്രത്തിൽ എല്ലാ"
   },
   "options_gate_heading": {
-    "message": "Deliberation gate"
+    "message": "ഡിലിബെരെഷൻ ഗേറ്റ്"
+  },
+  "options_gate_help": {
+    "message": "10 സെക്കൻഡ് കാത്തിരിപ്പിന്റെ തുലനം നിങ്ങൾ പ്രവർത്തനത്തിലേയ്ക്കു മടങ്ങുന്ന ബട്ടൺ നിരോധിത സന്ദർശനം കുറയ്ക്കുന്നു. നീണ്ട കാത്ത് വാചകം പ്രത്യാശ ഇരട്ടിയാക്കുന്നു."
   },
   "options_gate_wait_one": {
-    "message": "Wait $COUNT$ second",
+    "message": "$COUNT$ സെക്കൻഡ് കാത്തിരിക്കുക",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -165,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "Wait $COUNT$ seconds",
+    "message": "$COUNT$ സെക്കൻഡ് കാത്തിരിക്കുക",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -174,28 +246,52 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "Custom"
+    "message": "കസ്റ്റം"
   },
   "options_custom_delay_label": {
-    "message": "Custom delay (seconds)"
+    "message": "കസ്റ്റം താമസം (സെക്കൻഡ്)"
+  },
+  "options_custom_delay_error": {
+    "message": "കസ്റ്റം താമസം പോസിറ്റീവ് പൂർണ്ണ സെക്കൻഡ് സംഖ്യ ആയിരിക്കണം."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "വാചകം ടൈപ്പ് ചെയ്യാൻ നിർബന്ധിതരാകുക"
   },
   "options_gate_force_end_label": {
-    "message": "സജീവം \"Ignore timeout and end anyway\" button"
+    "message": "\"ടൈംআപ്പ് അവഗണിച്ച് ഏതായിരിക്കുന്നത്\" ബട്ടൺ പ്രവർത്തനം"
+  },
+  "options_credit_help": {
+    "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ് നിങ്ങൾ ഫോകസ് ചെയ്യുമ്പോൾ കലർന്നുകൊണ്ടിരിക്കുന്നു. എല്ലാ സൈറ്റുകളിലേയ്ക്കുള്ള ആക്സസും ഒരു സിംഗിൾ-സൈറ്റ് അൺലോക്കും ഒരേ ശേഷിയിൽനിന്ന് വിനിയോഗം ചെയ്യുന്നു. നിങ്ങൾ എപ്പോൾ വേണമെന്നാൽ വെതിപോകാം."
+  },
+  "options_earn_rate_label": {
+    "message": "30 മിനിറ്റ് ഫോകസിനോടിതര സൈറ്റ് ആക്സസ് മിനിറ്റ്"
+  },
+  "options_credit_cap_label": {
+    "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ് പരിധി (മിനിറ്റ്)"
+  },
+  "options_pause_length_label": {
+    "message": "എല്ലാ-സൈറ്റ് ആക്സസ് നീളം (മിനിറ്റ്)"
+  },
+  "options_unlock_length_label": {
+    "message": "സൈറ്റ് അൺലോക്ക് നീളം (മിനിറ്റ്)"
   },
   "options_streak_heading": {
-    "message": "സ്ട്രീക് കൂടാതെ സംരക്ഷണം"
+    "message": "സ്ട്രീക് സംരക്ഷണ"
   },
   "options_streak_help": {
-    "message": "The streak counts ദിവസങ്ങൾ that reach the goal. One default സെഷൻ keeps the chain alive, and a freeze token repairs a missed day."
+    "message": "സ്ട്രീക് ലക്ഷ്യത്തിൽ എത്തുന്ന ദിനങ്ങൾ കണ്ടെത്തുന്നു. ഒരു ഡിഫാൾട്ട് സെഷൻ വിപ്ലവ ജീവിതത്ത് കാത്തിരിക്കുന്നു, തിരുകണിപ്പ് ടോകൻ ഒരു മിസ്റ്റ് ദിവസം ശോധനതന്റെ സംരക്ഷണ."
+  },
+  "options_streak_goal_label": {
+    "message": "ദൈനിക സ്ട്രീക്ക് ലക്ഷ്യം (ഫോകസ് മിനിറ്റ്)"
   },
   "options_freeze_interval_label": {
-    "message": "Freeze token interval (ദിവസങ്ങൾ)"
+    "message": "തിരുകണിപ്പ് ടോകൻ ഇന്റർവാൾ (ദിനം)"
   },
   "options_retention_label": {
-    "message": "Keep daily stats (ദിവസങ്ങൾ)"
+    "message": "ദൈനിക സ്ഥിതിവിവരണ സംരക്ഷണ (ദിനം)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ category on.",
+    "message": "$CATEGORY$ വിഭാഗം സജീവം.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -204,7 +300,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ category off.",
+    "message": "$CATEGORY$ വിഭാഗം നിർത്തി.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -213,13 +309,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "All categories on."
+    "message": "എല്ലാ വിഭാഗങ്ങൾ സജീവം."
   },
   "options_all_categories_off_announcement": {
-    "message": "All categories off."
+    "message": "എല്ലാ വിഭാഗങ്ങൾ നിർത്തി."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ included.",
+    "message": "$HOST$ അൻതർഭാവമാകി.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -228,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ kept available.",
+    "message": "$HOST$ ലഭ്യമാകെ നിലനിർത്തി.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -236,11 +332,29 @@
       }
     }
   },
+  "options_all_sites_included_announcement": {
+    "message": "എല്ലാ $CATEGORY$ സൈറ്റുകൾ അൻതർഭാവമാകി.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "എല്ലാ $CATEGORY$ സൈറ്റുകൾ ലഭ്യമാകെ നിലനിർത്തി.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
   "options_category_bulk_actions_aria": {
-    "message": "Category bulk actions"
+    "message": "വിഭാഗ വളരെ പ്രവർത്തനങ്ങൾ"
   },
   "options_selected_count": {
-    "message": "Selected $COUNT$",
+    "message": "തിരഞ്ഞെടുത്ത $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -249,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Deselected $COUNT$",
+    "message": "തിരഞ്ഞെടുത്തുമാറ്റിയ $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -258,19 +372,19 @@
     }
   },
   "options_select_all": {
-    "message": "Select all"
+    "message": "എല്ലാ തിരഞ്ഞെടുക്കുക"
   },
   "options_deselect_all": {
-    "message": "Deselect all"
+    "message": "എല്ലാ തിരഞ്ഞെടുത്തുമാറ്റുക"
   },
   "options_select_all_categories_aria": {
-    "message": "Select all categories"
+    "message": "എല്ലാ വിഭാഗങ്ങൾ തിരഞ്ഞെടുക്കുക"
   },
   "options_deselect_all_categories_aria": {
-    "message": "Deselect all categories"
+    "message": "എല്ലാ വിഭാഗങ്ങൾ തിരഞ്ഞെടുത്തുമാറ്റുക"
   },
   "options_show_category_sites": {
-    "message": "Show $CATEGORY$ sites",
+    "message": "$CATEGORY$ സൈറ്റുകൾ കാണിക്കുക",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -279,7 +393,7 @@
     }
   },
   "options_hide_category_sites": {
-    "message": "Hide $CATEGORY$ sites",
+    "message": "$CATEGORY$ സൈറ്റുകൾ മറയ്ക്കുക",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -288,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ site included",
+    "message": "$COUNT$ സൈറ്റ് അൻതർഭാവമാകി",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -297,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ sites included",
+    "message": "$COUNT$ സൈറ്റുകൾ അൻതർഭാവമാകി",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -306,13 +420,58 @@
     }
   },
   "options_category_off": {
-    "message": "Category off"
+    "message": "വിഭാഗം നിർത്തി"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ സജീവമാകുമ്പോൾ അൻതർഭാവമാകി",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ സജീവമാകുമ്പോൾ അൻതർഭാവമാകി",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
   },
   "options_category_uncheck_help": {
-    "message": "Uncheck a site to keep it available while the rest of the category is തടഞ്ഞിരിക്കുന്നു."
+    "message": "ഒരു സൈറ്റ് അൻചെക്ക് ചെയ്യുക ബാക്കി വിഭാഗം ബ്ലോക്ക് ചെയ്യപ്പെടുമ്പോൾ ലഭ്യമായി വയ്ക്കുന്നു."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ സൈറ്റ് വളരെ പ്രവർത്തനങ്ങൾ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "എല്ലാ $CATEGORY$ സൈറ്റുകൾ തിരഞ്ഞെടുക്കുക",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "എല്ലാ $CATEGORY$ സൈറ്റുകൾ തിരഞ്ഞെടുത്തുമാറ്റുക",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_category_sites_region_aria": {
-    "message": "$CATEGORY$ sites",
+    "message": "$CATEGORY$ സൈറ്റുകൾ",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -321,61 +480,73 @@
     }
   },
   "options_day_sun": {
-    "message": "Sun"
+    "message": "അ"
   },
   "options_day_mon": {
-    "message": "Mon"
+    "message": "സോ"
   },
   "options_day_tue": {
-    "message": "Tue"
+    "message": "ചൊ"
   },
   "options_day_wed": {
-    "message": "Wed"
+    "message": "ബു"
   },
   "options_day_thu": {
-    "message": "Thu"
+    "message": "വ്യാ"
   },
   "options_day_fri": {
-    "message": "Fri"
+    "message": "വെ"
   },
   "options_day_sat": {
-    "message": "Sat"
+    "message": "ശ"
   },
   "options_schedule_cycles_label": {
-    "message": "Cycle focus and breaks"
+    "message": "ഫോകസും വിശ്രാമവും സൈക്കിൾ ചെയ്യുക"
+  },
+  "options_schedule_overlap_error": {
+    "message": "$DAY$ മറ്റ് സജീവമായ എൻട്രി ഓവർലാപ്പ് ചെയ്യുന്നു.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
   },
   "options_schedule_session_type_aria": {
-    "message": "സെഷൻ type"
+    "message": "സെഷൻ തരം"
   },
   "options_schedule_entry_legend": {
-    "message": "Schedule entry"
+    "message": "ഷെഡ്യൂൾ എൻട്രി"
   },
   "options_schedule_start_label": {
     "message": "ആരംഭിക്കുക"
   },
   "options_schedule_end_label": {
-    "message": "End"
+    "message": "അവസാനം"
   },
   "options_schedule_duration_legend": {
-    "message": "Duration"
+    "message": "കാലയളവ്"
   },
   "options_schedule_intention_label": {
-    "message": "Intention"
+    "message": "ഉദ്ദേശ്യ"
   },
   "options_schedule_intention_placeholder": {
-    "message": "what this time is for"
+    "message": "ഈ സമയത്തേൻ എന്താണ്"
   },
   "options_schedule_save_entry": {
-    "message": "സംരക്ഷിക്കുക entry"
+    "message": "എൻട്രി സംരക്ഷിക്കുക"
   },
   "options_cancel": {
-    "message": "റദ്ദുചെയ്യുക"
+    "message": "റദ്ദാക്കുക"
+  },
+  "options_schedule_empty": {
+    "message": "ഇതുവരെ സമയക്ഷണ്ഡം സെഷനുകൾ ഇല്ല."
   },
   "options_schedule_selected_days_aria": {
-    "message": "Selected ദിവസങ്ങൾ"
+    "message": "തിരഞ്ഞെടുത്ത ദിനങ്ങൾ"
   },
   "options_schedule_time_range": {
-    "message": "$START$ to $END$",
+    "message": "$START$ ത്തി $END$",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -388,52 +559,52 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blacklist"
+    "message": "ബ്ലാക്കലിസ്റ്റ്"
   },
   "options_schedule_mode_whitelist": {
-    "message": "whitelist"
+    "message": "വൈറ്റലിസ്റ്റ്"
   },
   "options_schedule_strictness_flexible": {
-    "message": "flexible"
+    "message": "ഫ്ലെക്സിബിൾ"
   },
   "options_schedule_strictness_friction": {
-    "message": "friction"
+    "message": "ഘർഷണ"
   },
   "options_schedule_strictness_hard": {
-    "message": "hard"
+    "message": "ഹാർഡ്"
   },
   "options_schedule_enabled_label": {
-    "message": "Enabled"
+    "message": "സജീവം"
   },
   "options_schedule_edit": {
-    "message": "Edit"
+    "message": "എഡിറ്റ് ചെയ്യുക"
   },
   "options_schedule_delete": {
-    "message": "കണ്ടെത്തുക"
+    "message": "ഇല്ലാതാക്കുക"
   },
   "options_schedule_add": {
-    "message": "ചേർക്കുക schedule entry"
+    "message": "ഷെഡ്യൂൾ എൻട്രി ചേർക്കുക"
   },
   "options_sounds_heading": {
-    "message": "Sounds"
+    "message": "സൗണ്ടുകൾ"
   },
   "options_master_volume": {
-    "message": "Master volume"
+    "message": "മാസ്റ്റർ വോളിയം"
   },
   "options_sound_session_complete": {
-    "message": "സെഷൻ complete"
+    "message": "സെഷൻ സമ്പൂർണ്ണ"
   },
   "options_sound_break_start": {
-    "message": "Break ആരംഭിക്കുക"
+    "message": "ബ്രേക് ആരംഭിക്കുക"
   },
   "options_sound_break_end": {
-    "message": "Break end"
+    "message": "ബ്രേക് അവസാനം"
   },
   "options_sound_schedule_start": {
-    "message": "Schedule auto-ആരംഭിക്കുക"
+    "message": "ഷെഡ്യൂൾ സ്വയം-ആരംഭിക്കുക"
   },
   "options_sound_preview_aria": {
-    "message": "Preview $SOUND$",
+    "message": "$SOUND$ പ്രിവ്യൂ",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -442,150 +613,237 @@
     }
   },
   "options_sound_play": {
-    "message": "Play"
+    "message": "പ്ലേ"
+  },
+  "options_sound_preview_error": {
+    "message": "സൗണ്ട് പ്രിവ്യൂ ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "options_sounds_notifications_heading": {
-    "message": "Notifications"
+    "message": "അറിയിപ്പുകൾ"
   },
   "options_session_complete_notification": {
-    "message": "Show a system notification when a സെഷൻ completes"
+    "message": "സെഷൻ സമ്പൂർണ്ണമാകുമ്പോൾ സിസ്റ്റം അറിയിപ്പ് കാണിക്കുക"
   },
   "options_badge_heading": {
-    "message": "Badge"
+    "message": "ബാജ്"
+  },
+  "options_badge_countdown": {
+    "message": "ടൂൾബാരിൽ ശേഷിക്കുന്ന സമയം കാണിക്കുക ചിഹ്നം"
   },
   "options_privacy_website_access_heading": {
-    "message": "Website access"
+    "message": "വെബ്സൈറ്റ് ആക്സസ്"
   },
   "options_privacy_website_off_title": {
-    "message": "Website access is off"
+    "message": "വെബ്സൈറ്റ് ആക്സസ് നിർത്തി"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock cannot തടയുക websites until you grant access."
+    "message": "Focus Lock നിങ്ങൾ ആക്സസ് നൽകുന്നതുവരെ സൈറ്റുകൾ ബ്ലോക്ക് ചെയ്യാൻ കഴിയില്ല."
   },
   "options_privacy_website_enable_action": {
-    "message": "സജീവം website blocking"
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് സജീവം"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "വെബ്സൈറ്റ് ആക്സസ് നൽകി, എന്നാൽ ബ്ലോക്കിംഗ് സജീവമല്ല"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome ആക്സസ് നൽകി, എന്നാൽ Focus Lock അതിന്റെ ബ്ലോക്കിംഗ് സ്ക്രിപ്റ്റ് രജിസ്റ്റർ ചെയ്യാൻ കഴിഞ്ഞില്ല."
   },
   "options_privacy_website_retry_action": {
-    "message": "Retry website blocking"
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് വീണ്ടും ശ്രമിക്കുക"
+  },
+  "options_privacy_website_on_title": {
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് സജീവം"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock സാധാരണ വെബ്സൈറ്റ് പേജുകളിൽ നിങ്ങളുടെ സജീവ ബ്ലോക്കിംഗ് നിയമങ്ങൾ പ്രയോഗം ചെയ്യാൻ കഴിയുന്നു."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "കണ്ടെത്തുക local history?"
+    "message": "പ്രാദേശിക ചരിത്രം ഇല്ലാതാക്കേണ്ടതുണ്ടോ?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "Confirm കണ്ടെത്തുക local history"
+    "message": "പ്രാദേശിക ചരിത്രം ഇല്ലാതാക്കുക സ്ഥിരീകരിക്കുക"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Local history deleted."
+    "message": "പ്രാദേശിക ചരിത്രം ഇല്ലാതാകി."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed സെഷൻ events from this device. It does not clear a running സെഷൻ, which keeps its intention and the address of each tab it is blocking. Ending the സെഷൻ clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "ഇത് സ്ഥായിയായി പൂർണ്ണ URL, ഫോകസ് ഉദ്ദേശ്യ, വിപ്ലവ സെഷൻ സംഭവങ്ങൾ ഈ ഉപകരണത്തിൽനിന്ന് ഇല്ലാതാക്കുന്നു. ഇത് നിരുത്സാഹ സെഷൻ വെടിപോകായില്ല, ഉദ്ദേശ്യ സംരക്ഷിത നിരുത്സാഹ സെഷൻ ബ്ലോക്കിംഗ് ടാബിനെ കോൾ പതിനാലാമ് അംഗീകരിക്കുന്നു. സെഷൻ അവസാനിപ്പിക്കുന്നത് ഉദ്ദേശ്യ വെടിപോകിയും ഞന്ദത് എല്ലാ വെബ് ടാബ് വെടിപോകി വെളിപ്പാടും സെഷൻ ബ്ലോക്കിംഗ് ടാബിനെ കോൾ പതിനാലാമ് അംഗീകരിക്കുന്നു എൻ സ്നിപ്പെറ്റ് സെഷൻ അവസാനിപ്പിക്കുന്നത് നിരാപദ്യം കാൻ ബ്ലോക്കിംഗ് നിരാപദ്യത്ത് ഡെലിവർ ത്തിരിയിൽ വെളിപ്പാടും എതുപോകിയും."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed സെഷൻ events from this device, plus local-only aggregate statistics. It does not clear a running സെഷൻ, which keeps its intention and the address of each tab it is blocking. Ending the സെഷൻ clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "ഇത് സ്ഥായിയായി പൂർണ്ണ URL, ഫോകസ് ഉദ്ദേശ്യ, വിപ്ലവ സെഷൻ സംഭവങ്ങൾ, പ്ലസ് പ്ലാസ് സ്ഥിതിയിൽ നിരകെ സംഖ്യ ഈ ഉപകരണത്തിൽനിന്ന് ഇല്ലാതാക്കുന്നു. ഇത് നിരുത്സാഹ സെഷൻ വെടിപോകായില്ല, ഉദ്ദേശ്യ സംരക്ഷിത നിരുത്സാഹ സെഷൻ ബ്ലോക്കിംഗ് ടാബിനെ കോൾ പതിനാലാമ് അംഗീകരിക്കുന്നു. സെഷൻ അവസാനിപ്പിക്കുന്നത് ഉദ്ദേശ്യ വെടിപോകിയും ഞന്ദത് എല്ലാ വെബ് ടാബ് വെടിപോകി വെളിപ്പാടും സെഷൻ ബ്ലോക്കിംഗ് ടാബിനെ കോൾ പതിനാലാമ് അംഗീകരിക്കുന്നു എൻ സ്നിപ്പെറ്റ് സെഷൻ അവസാനിപ്പിക്കുന്നത് നിരാപദ്യം കാൻ ബ്ലോക്കിംഗ് നിരാപദ്യത്ത് ഡെലിവർ ത്തിരിയിൽ വെളിപ്പാടും എതുപോകിയും."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "കണ്ടെത്തുക remote Sync data?"
+    "message": "സിങ്ക് ഡാറ്റ ഇല്ലാതാക്കേണ്ടതുണ്ടോ?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Confirm കണ്ടെത്തുക remote Sync data"
+    "message": "സിങ്ക് ഡാറ്റ ഇല്ലാതാക്കുക സ്ഥിരീകരിക്കുക"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "സിങ്ക് ഡാറ്റ ഇല്ലാതാകി."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently deletes remote സെറ്റിംഗുകൾ, തടയുക and allow lists, site access credit, streaks, and domain-level തടഞ്ഞിരിക്കുന്നു-attempt aggregates from Chrome Sync. Local സെറ്റിംഗുകൾ and statistics stay on this device."
+    "message": "ഇത് സ്ഥായിയായി സിങ്ക് സെറ്റിംഗ്‌സ്, ബ്ലോക്ക് അനുവാദ ലിസ്റ്റ്, സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ്, സ്ട്രീക്കുകൾ, ഡോമെയ്ൻ തലത്ത് ബ്ലോക്കേഡ് ശ്രദ്ധ നിരകെ സംഖ്യ സിങ്ക് ഇല്ലാതാക്കുന്നു. പ്രാദേശിക സെറ്റിംഗ്‌സ് സ്ഥിതിയിൽ ഈ കമ്പ്യൂട്ടെ നിരുത്സാഹ കാണുന്നു."
   },
   "options_privacy_confirm_all_title": {
-    "message": "കണ്ടെത്തുക all Focus Lock data?"
+    "message": "എല്ലാ Focus Lock ഡാറ്റ ഇല്ലാതാക്കേണ്ടതുണ്ടോ?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "Confirm കണ്ടെത്തുക all Focus Lock data"
+    "message": "എല്ലാ Focus Lock ഡാറ്റ ഇല്ലാതാക്കുക സ്ഥിരീകരിക്കുക"
+  },
+  "options_privacy_all_deleted": {
+    "message": "എല്ലാ Focus Lock ഡാറ്റ ഇല്ലാതാകി."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "ഇത് സ്ഥായിയായി ഈ ഉപകരണയിലെ Focus Lock ഡാറ്റ പരമാവധി ഞന്ദത് സിങ്ക് കുണ്ടി ഇല്ലാതാക്കുന്നു:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Deleting everything is available only while no സെഷൻ is running. Focus Lock then returns to setup."
+    "message": "എല്ലാ കാര്യം ഇല്ലാതാക്കുന്നത് കേവലം സെഷൻ സ്റ്റാര്ട്ടിംഗ് നിരുത്സാഹ കേവലം. Focus Lock തുടർന്ന് സെറ്റअപ്പ് വെതിപോകി."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "പ്രാദേശിക ചരിത്രം ഇല്ലാതാകാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "സിങ്ക് ഡാറ്റ ഇല്ലാതാകാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "എല്ലാ Focus Lock ഡാറ്റ ഇല്ലാതാകാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync could not സംരക്ഷിക്കുക your latest changes. Your local സംരക്ഷിക്കുക is safe."
+    "message": "Chrome സിങ്ക് നിങ്ങളുടെ ഏറ്റവും പുതിയ മാറ്റങ്ങൾ സംരക്ഷിക്കാൻ കഴിഞ്ഞില്ല. നിങ്ങളുടെ പ്രാദേശിക സംരക്ഷണ സുരക്ഷിത."
+  },
+  "options_privacy_error_request": {
+    "message": "അഭ്യർത്ഥന പൂർണ്ണ ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "options_privacy_website_access_updated": {
-    "message": "Website access updated."
+    "message": "വെബ്സൈറ്റ് ആക്സസ് അപ്ഡേറ്റ് ചെയ്യപ്പെട്ടു."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "വെബ്സൈറ്റ് ആക്സസ് നൽകിയിട്ടില്ല."
+  },
+  "options_privacy_error_website_access": {
+    "message": "വെബ്സൈറ്റ് ആക്സസ് അപ്ഡേറ്റ് ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Website blocking enabled."
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് സജീവം."
+  },
+  "options_privacy_error_export": {
+    "message": "ഇവേന്ട്‌ ലോഗ് എക്‌സ്‌പോർ്റ്റ് ചെയ്യാൻ കഴിഞ്ഞില്ല."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "ഇവേന്ട്‌ ലോഗ് എക്‌സ്‌പോർ്റ്റ് ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Could not open Chrome permission സെറ്റിംഗുകൾ. Try again."
+    "message": "Chrome അനുമതി സെറ്റിംഗ് തുറക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "Chrome permission സെറ്റിംഗുകൾ opened."
+    "message": "Chrome അനുമതി സെറ്റിംഗ് തുറന്നു."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Open Chrome permission സെറ്റിംഗുകൾ"
+    "message": "Chrome അനുമതി സെറ്റിംഗ് തുറക്കുക"
   },
   "options_privacy_sync_heading": {
-    "message": "Chrome Sync"
+    "message": "Chrome സിങ്ക്"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Chrome ഉപകരണ്ങ്ങിലുടനീളം Focus Lock ഡാറ്റ സിങ്ക് ചെയ്യുക"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync enabled."
+    "message": "Chrome സിങ്ക് സജീവം."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync disabled."
+    "message": "Chrome സിങ്ക് നിർത്തി."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome സിങ്ക് ഇപ്പോഴും നിങ്ങളുടെ ഏറ്റവും പുതിയ മാറ്റങ്ങൾ സംരക്ഷിച്ചുകൊണ്ടിരിക്കുന്നു."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync is on."
+    "message": "Chrome സിങ്ക് സജീവമാണ്."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync is off."
+    "message": "Chrome സിങ്ക് നിർത്തി."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome സിങ്ക് മാറ്റങ്ങൾ സംരക്ഷിച്ചു."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome സിങ്ക് സജീവം വീണ്ടും ശ്രമിക്കുക"
   },
   "options_privacy_retry_sync": {
-    "message": "Retry Chrome Sync"
+    "message": "Chrome സിങ്ക് വീണ്ടും ശ്രമിക്കുക"
   },
   "options_privacy_scope_synced": {
-    "message": "Synced"
+    "message": "സിങ്ക് ചെയ്തത്"
   },
   "options_privacy_scope_local_only": {
-    "message": "Local only"
+    "message": "കേവലം പ്രാദേശിക"
+  },
+  "options_privacy_developer_note": {
+    "message": "Focus Lock ഡെവലപ്പറിനോട് ഒന്നും അയയ്കുന്നില്ല."
   },
   "options_privacy_local_log_heading": {
-    "message": "Local event log"
+    "message": "പ്രാദേശിക ഇവേന്ട്‌ ലോഗ്"
   },
   "options_privacy_local_log_detail": {
-    "message": "Export the detailed local log or കണ്ടെത്തുക local browsing and സെഷൻ history."
+    "message": "വിപ്ലവ പ്രാദേശിക ലോഗ് എക്‌സ്‌പോർ്റ്റ് അഥവാ പ്രാദേശിക ബ്രൗസിംഗ് സെഷൻ ചരിത്രം ഇല്ലാതാക്കുക."
   },
   "options_privacy_export_local_log": {
-    "message": "Export local event log"
+    "message": "പ്രാദേശിക ഇവേന്ട്‌ ലോഗ് എക്‌സ്‌പോർ്റ്റ് ചെയ്യുക"
   },
   "options_privacy_local_log_exported": {
-    "message": "Local event log exported."
+    "message": "പ്രാദേശിക ഇവേന്ട്‌ ലോഗ് എക്‌സ്‌പോർ്റ്റ് ചെയ്യപ്പെട്ടു."
   },
   "options_privacy_delete_local_history": {
-    "message": "കണ്ടെത്തുക local history"
+    "message": "പ്രാദേശിക ചരിത്രം ഇല്ലാതാക്കുക"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Remote Sync data"
+    "message": "സിങ്ക് ഡാറ്റ"
   },
   "options_privacy_remote_data_detail": {
-    "message": "കണ്ടെത്തുക the Focus Lock copies left in Chrome Sync without changing this device."
+    "message": "ഈ ഉപകരണ മാറ്റം ഇല്ലാതെ Chrome സിങ്ക് കുണ്ടി Focus Lock നീക്കം ഇല്ലാതാക്കുക."
   },
   "options_privacy_delete_remote_data": {
-    "message": "കണ്ടെത്തുക remote Sync data"
+    "message": "സിങ്ക് ഡാറ്റ ഇല്ലാതാക്കുക"
   },
   "options_privacy_all_data_heading": {
-    "message": "All Focus Lock data"
+    "message": "എല്ലാ Focus Lock ഡാറ്റ"
   },
   "options_privacy_all_data_detail": {
-    "message": "കണ്ടെത്തുക every Focus Lock record on this device and any Focus Lock copies left in Chrome Sync, then start again from setup. Available while no session is running."
+    "message": "ഈ ഉപകരണയിലെ Focus Lock ഓരോ രേഖ സെഷൻ സ്റ്റാര്ട്ടിംഗ് നിരുത്സാഹ കുണ്ടി Chrome സിങ്ക് കുണ്ടി നിരുത്സാഹ ഇല്ലാതാക്കുക, പിന്നെ സെറ്റअപ് നിന്ന് വീണ്ടും ആരംഭിക്കുക. സെഷൻ നിരുത്സാഹ വെതിപോകി."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "എല്ലാ Focus Lock ഡാറ്റ സെഷൻ സ്റ്റാര്ട്ടിംഗ് നിരുത്സാഹ കുണ്ടി ഇല്ലാതാകൽ വീണ്ടും ആരംഭിക്കുന്നു."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "പ്രാദേശിക ചരിത്രം ഇല്ലാതാകൽ വീണ്ടും ശ്രമിക്കുക"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "സിങ്ക് ഇല്ലാതാകൽ വീണ്ടും ശ്രമിക്കുക"
   },
   "options_privacy_retry_all_data": {
-    "message": "Retry all data deletion"
+    "message": "എല്ലാ ഡാറ്റ ഇല്ലാതാകൽ വീണ്ടും ശ്രമിക്കുക"
   },
   "options_error_load": {
-    "message": "Could not load സെറ്റിംഗുകൾ. Reload the page to try again."
+    "message": "സെറ്റിംഗ്‌സ് ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുന്നതിന് പേജ് റീലോഡ് ചെയ്യുക."
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lock വീണ്ടും ആരംഭിക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "options_error_refresh_privacy": {
-    "message": "Could not refresh privacy സെറ്റിംഗുകൾ. Reload the page."
+    "message": "സ്വകാര്യതാ സെറ്റിംഗ്‌സ് റിഫ്രെഷ് ചെയ്യാൻ കഴിഞ്ഞില്ല. പേജ് റീലോഡ് ചെയ്യുക."
+  },
+  "options_error_website_blocking": {
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് അപ്ഡേറ്റ് ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "options_error_change_sync": {
+    "message": "Chrome സിങ്ക് മാറ്റാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome സിങ്ക് വീണ്ടും ശ്രമിക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "options_error_save_settings": {
-    "message": "Could not സംരക്ഷിക്കുക സെറ്റിംഗുകൾ. Reload the page and try again."
+    "message": "സെറ്റിംഗ്‌സ് സംരക്ഷിക്കാൻ കഴിഞ്ഞില്ല. പേജ് റീലോഡ് ചെയ്യുക വീണ്ടും ശ്രമിക്കുക."
   },
   "options_error_save_lists": {
-    "message": "Could not സംരക്ഷിക്കുക lists. Reload the page and try again."
+    "message": "ലിസ്റ്റുകൾ സംരക്ഷിക്കാൻ കഴിഞ്ഞില്ല. പേജ് റീലോഡ് ചെയ്യുക വീണ്ടും ശ്രമിക്കുക."
   }
 }

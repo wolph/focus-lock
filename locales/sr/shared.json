@@ -1,18 +1,18 @@
 {
   "shared_until_stopped": {
-    "message": "Док не зауставиш"
+    "message": "До заустављања"
   },
   "shared_preset_short": {
-    "message": "кратко"
+    "message": "кратка"
   },
   "shared_preset_focus": {
     "message": "фокус"
   },
   "shared_preset_deep_work": {
-    "message": "дубок рад"
+    "message": "дубински рад"
   },
   "shared_deep_work_note": {
-    "message": "Склоност, а не наука: један дуг непрекинут блок, без аутоматских пауза."
+    "message": "Ствар личног укуса, а не науке: један дуг непрекинути блок, без аутоматских пауза."
   },
   "shared_timed_hint_cycles": {
     "message": "$MINUTES$ мин укупно, са блоковима фокуса од $FOCUS$ мин",
@@ -28,7 +28,7 @@
     }
   },
   "shared_timed_hint_plain": {
-    "message": "$MINUTES$ мин непрекидног фокуса",
+    "message": "$MINUTES$ мин непрекинутог фокуса",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -37,16 +37,16 @@
     }
   },
   "shared_start_until_stopped": {
-    "message": "Покрени док не зауставиш"
+    "message": "Покрени до заустављања"
   },
   "shared_lock_until_manual_unlock": {
-    "message": "Закључај док ручно не откључаш"
+    "message": "Закључај до ручног откључавања"
   },
   "shared_until_stopped_disclosure": {
-    "message": "Сесије које трају док их не зауставиш задржавају Флексибилно или Отпор и не могу да користе циклусе фокуса и паузе."
+    "message": "Сесије до заустављања задржавају Флексибилно или Отпор и не могу да користе циклусе фокуса и паузе."
   },
   "shared_hard_unavailable_reason": {
-    "message": "Чврсто закључавање није доступно уз Док не зауставиш: без мерача времена и без ручног краја сесија никада не би могла да се заврши."
+    "message": "Чврсто закључавање није доступно за До заустављања: без тајмера и без ручног завршетка, сесија никада не би могла да се заврши."
   },
   "shared_end_session": {
     "message": "Заврши сесију"
@@ -76,7 +76,7 @@
     }
   },
   "shared_until_stopped_hint_flexible": {
-    "message": "Траје док је не завршиш помоћу $LABEL$. Циклуси искључени.",
+    "message": "Траје док је не завршиш дугметом „$LABEL$“. Циклуси су искључени.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -85,7 +85,7 @@
     }
   },
   "shared_until_stopped_hint_friction": {
-    "message": "Траје док је не откључаш: $REQUIREMENT$, затим $LABEL$. Циклуси искључени.",
+    "message": "Траје док је не откључаш: $REQUIREMENT$, затим дугме „$LABEL$“. Циклуси су искључени.",
     "placeholders": {
       "REQUIREMENT": {
         "content": "$1",
@@ -98,7 +98,7 @@
     }
   },
   "shared_forced_cycles_label": {
-    "message": "Циклуси искључени због режима Док не зауставиш"
+    "message": "Циклуси онемогућени избором „До заустављања“"
   },
   "shared_mode_blacklist": {
     "message": "Блокирај изабране сајтове"
@@ -110,13 +110,13 @@
     "message": "Време фокуса"
   },
   "shared_clock_focus_phase": {
-    "message": "фаза фокуса"
+    "message": "период фокуса"
   },
   "shared_clock_total_session": {
-    "message": "цела сесија"
+    "message": "укупна сесија"
   },
   "shared_clock_pause": {
-    "message": "застој"
+    "message": "приступ"
   },
   "shared_clock_break": {
     "message": "пауза"
@@ -128,25 +128,25 @@
     "message": "Focus Lock се покреће. Примењују се твоја изабрана правила."
   },
   "shared_popup_closure_cleanup": {
-    "message": "Сесија је завршена. Завршава се чишћење прегледача."
+    "message": "Сесија је завршена. Довршава се чишћење прегледача."
   },
   "shared_popup_transition_cleanup": {
-    "message": "Focus Lock није могао да се покрене. Завршава се чишћење прегледача."
+    "message": "Focus Lock није могао да се покрене. Довршава се чишћење прегледача."
   },
   "shared_popup_transition_error": {
     "message": "Focus Lock није могао да очисти недовршено покретање."
   },
   "shared_popup_closure_error": {
-    "message": "Focus Lock није могао да заврши чишћење прегледача."
+    "message": "Focus Lock није могао да доврши чишћење прегледача."
   },
   "shared_retry_cleanup": {
-    "message": "Покушај чишћење поново"
+    "message": "Понови чишћење"
   },
   "shared_end_failed": {
     "message": "Сесија није могла да се заврши. Покушај поново."
   },
   "shared_retry_failed": {
-    "message": "Чишћење није могло поново да се покуша. Покушај поново."
+    "message": "Чишћење није могло поново да се покрене. Покушај поново."
   },
   "shared_action_failed": {
     "message": "Та радња није могла да се затражи. Покушај поново."
@@ -155,16 +155,16 @@
     "message": "Повратак на посао није успео. Покушај поново."
   },
   "shared_data_clear_pending": {
-    "message": "Бришу се Focus Lock подаци. Завршава се чишћење."
+    "message": "Бришу се Focus Lock подаци. Довршава се чишћење."
   },
   "shared_data_clear_error": {
     "message": "Подаци нису могли да се обришу. Покушај поново."
   },
   "shared_schedule_window_label": {
-    "message": "Док се прозор не заврши"
+    "message": "До краја прозора"
   },
   "shared_schedule_until_stopped": {
-    "message": "Покреће се по распореду и траје док је не зауставиш: Заврши сесију за Флексибилно, Откључај кроз препреку промишљања за Отпор. Циклуси искључени."
+    "message": "Покреће се по распореду и траје док је не зауставиш: Заврши сесију за Флексибилно, Откључај кроз Препреку промишљања за Отпор. Циклуси су искључени."
   },
   "shared_schedule_started_title": {
     "message": "Распоред фокуса је покренут"
@@ -173,19 +173,19 @@
     "message": "Активно док га не зауставиш."
   },
   "shared_settings_indefinite": {
-    "message": "Активна је сесија која траје док је не зауставиш. Користи искачући прозор у траци са алаткама да је видиш или завршиш."
+    "message": "Активна је сесија до заустављања. Користи искачући прозор да је прегледаш или завршиш."
   },
   "shared_settings_starting": {
-    "message": "Focus Lock се покреће. Проверава се приступ сајтовима и примењују се твоја правила."
+    "message": "Focus Lock се покреће. Проверава се приступ сајтовима и примењују твоја правила."
   },
   "shared_settings_error": {
-    "message": "Focus Lock није могао да заврши чишћење прегледача. Отвори искачући прозор и покушај поново."
+    "message": "Focus Lock није могао да доврши чишћење прегледача. Отвори искачући прозор и покушај поново."
   },
   "shared_settings_session_disclosure": {
-    "message": "Искачући прозор у траци са алаткама управља сесијом. Активна сесија задржава правила забележена при покретању."
+    "message": "Искачући прозор управља контролама сесије. Активна сесија задржава правила забележена при покретању."
   },
   "shared_settings_timed": {
-    "message": "Временски ограничена сесија је активна до $TIME$. Завршава се сама. За стање уживо користи искачући прозор у траци са алаткама.",
+    "message": "Временски ограничена сесија активна до $TIME$. Завршава се аутоматски. Користи искачући прозор за тренутни статус.",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -197,25 +197,25 @@
     "message": "Завршено"
   },
   "shared_outcome_manual_completed": {
-    "message": "Завршено ручно"
+    "message": "Ручно завршено"
   },
   "shared_outcome_manual_canceled": {
     "message": "Прекинуто раније"
   },
   "shared_outcome_website_access_lost": {
-    "message": "Прекинуто: изгубљен приступ сајтовима"
+    "message": "Завршено: изгубљен приступ сајтовима"
   },
   "shared_outcome_content_registration_failed": {
-    "message": "Прекинуто: подешавање блокирања није успело"
+    "message": "Завршено: подешавање блокирања није успело"
   },
   "shared_outcome_alarm_failed": {
-    "message": "Прекинуто: мерач времена није направљен"
+    "message": "Завршено: подешавање тајмера није успело"
   },
   "shared_outcome_tab_enforcement_failed": {
-    "message": "Прекинуто: блокирање није допрло до страница"
+    "message": "Завршено: примена блокирања на страници није успела"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "Прекинуто: опоравак није успео"
+    "message": "Завршено: опоравак није успео"
   },
   "shared_duration_hours_minutes": {
     "message": "$HOURS$ ч $MINUTES$ мин",
@@ -240,7 +240,7 @@
     }
   },
   "shared_minutes_one": {
-    "message": "$COUNT$ мин",
+    "message": "$COUNT$ минут",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -249,7 +249,7 @@
     }
   },
   "shared_minutes_other": {
-    "message": "$COUNT$ мин",
+    "message": "$COUNT$ минута",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -285,13 +285,13 @@
     "message": "Цена премашује ограничење кредита"
   },
   "shared_credit_resumes_focus": {
-    "message": "Кредит се поново зарађује током фокуса"
+    "message": "Зарада кредита се наставља током фокуса"
   },
   "shared_credit_off": {
-    "message": "Зарађивање кредита је искључено"
+    "message": "Зарада кредита је искључена"
   },
   "shared_not_enough_time": {
-    "message": "Нема довољно времена у овом блоку фокуса"
+    "message": "Недовољно времена у овом периоду фокуса"
   },
   "shared_ready_in": {
     "message": "Спремно за $CLOCK$",
@@ -316,7 +316,7 @@
     }
   },
   "shared_verdict_blocked_category": {
-    "message": "Блокира категорија $CATEGORY$",
+    "message": "Блокирано категоријом „$CATEGORY$“",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -325,13 +325,13 @@
     }
   },
   "shared_verdict_blocked_custom": {
-    "message": "Блокира твој списак блокираних"
+    "message": "Блокирано твојим списком блокираних"
   },
   "shared_verdict_whitelist_miss": {
     "message": "Није на твом списку дозвољених"
   },
   "shared_verdict_blocked_session": {
-    "message": "Блокира ова сесија"
+    "message": "Блокирано овом сесијом"
   },
   "shared_verdict_allow_list": {
     "message": "На твом списку дозвољених"
@@ -349,7 +349,7 @@
     "message": "Нема активне сесије фокуса"
   },
   "shared_verdict_allowed_session": {
-    "message": "Дозвољава ова сесија"
+    "message": "Дозвољено овом сесијом"
   },
   "shared_category_social": {
     "message": "Друштвене мреже"
@@ -361,7 +361,7 @@
     "message": "Вести"
   },
   "shared_category_mail": {
-    "message": "Е-пошта"
+    "message": "Пошта"
   },
   "shared_category_shopping": {
     "message": "Куповина"
@@ -385,7 +385,7 @@
     "message": "Низови"
   },
   "shared_synced_aggregates": {
-    "message": "Збирни блокирани покушаји на нивоу домена"
+    "message": "Збирни подаци о блокираним покушајима на нивоу домена"
   },
   "shared_local_full_urls": {
     "message": "Потпуне URL адресе"
@@ -400,10 +400,10 @@
     "message": "Активна сесија у току"
   },
   "shared_legacy_policy_dropped": {
-    "message": "Неки синхронизовани подаци из старије верзије нису могли да се прочитају и враћени су на подразумевано."
+    "message": "Неки синхронизовани подаци из старије верзије нису могли да се прочитају, па су враћени на подразумевано."
   },
   "shared_all_data_clear_running": {
-    "message": "Заврши сесију која траје пре брисања свих података."
+    "message": "Заврши сесију у току пре брисања свих података."
   },
   "shared_nav_brand": {
     "message": "Focus Lock"
@@ -439,13 +439,13 @@
     "message": "Аутоматски"
   },
   "shared_theme_light": {
-    "message": "Светло"
+    "message": "Светла"
   },
   "shared_theme_dark": {
-    "message": "Тамно"
+    "message": "Тамна"
   },
   "shared_theme_button": {
-    "message": "Тема: $CURRENT$. Пребаци на $NEXT$",
+    "message": "Тема: $CURRENT$. Пређи на $NEXT$",
     "placeholders": {
       "CURRENT": {
         "content": "$1",
@@ -461,7 +461,7 @@
     "message": "Тема није могла да се сачува. Поново учитај страницу и покушај опет."
   },
   "shared_host_search_label": {
-    "message": "Претражи сајтове у категорији $TITLE$",
+    "message": "Претражи $TITLE$ сајтове",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -470,7 +470,7 @@
     }
   },
   "shared_host_none": {
-    "message": "Ниједан сајт у категорији $TITLE$ не одговара твојој претрази.",
+    "message": "Ниједан $TITLE$ сајт се не поклапа са претрагом.",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -479,7 +479,7 @@
     }
   },
   "shared_host_partial": {
-    "message": "Приказано $SHOWN$ од $MATCHED$ сајтова. Претражи да сузиш списак.",
+    "message": "Приказано $SHOWN$ од $MATCHED$ сајтова. Претражи да сузиш листу.",
     "placeholders": {
       "SHOWN": {
         "content": "$1",
@@ -505,7 +505,7 @@
     }
   },
   "shared_host_all": {
-    "message": "Приказани сви $TOTAL$ сајтови.",
+    "message": "Приказано свих $TOTAL$ сајтова.",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -523,7 +523,7 @@
     "message": "Примењују се твоја изабрана правила."
   },
   "shared_overlay_stopped_page": {
-    "message": "Ова страница се није учитала. Учитаће се сама када се сесија заврши."
+    "message": "Ова страница није учитана. Учитаће се сама када се сесија заврши."
   },
   "shared_overlay_next_step": {
     "message": "Твој следећи корак"
@@ -541,7 +541,7 @@
     "message": "Треба ти пауза или приступ сајту?"
   },
   "shared_overlay_access_note": {
-    "message": "Можеш се удаљити у било ком тренутку. Приступ сајтовима троши кредит."
+    "message": "Можеш се удаљити у било ком тренутку. Приступ сајту троши кредит."
   },
   "shared_overlay_gate_force_end": {
     "message": "Занемари чекање и ипак заврши"
@@ -559,7 +559,7 @@
     }
   },
   "shared_overlay_next_step_fallback": {
-    "message": "Настави са својим тренутним задатком"
+    "message": "Настави свој тренутни задатак"
   },
   "shared_overlay_pause_action": {
     "message": "Откључај све сајтове"
@@ -603,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "Откључај $HOST$ на $CLOCK$",
+    "message": "Откључај $HOST$ $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -619,13 +619,13 @@
     "message": "Настави са фокусом"
   },
   "shared_gate_phrase_label": {
-    "message": "Упиши ово за потврду:"
+    "message": "Упиши ово да потврдиш:"
   },
   "shared_gate_end_title": {
     "message": "Заврши ову сесију"
   },
   "shared_minutes_few": {
-    "message": "$COUNT$ мин",
+    "message": "$COUNT$ минута",
     "placeholders": {
       "COUNT": {
         "content": "$1",

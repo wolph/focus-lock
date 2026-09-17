@@ -79,7 +79,7 @@
     "message": "Радне картице нису могле да се учитају. Покушај поново."
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ од $COUNT$ картице",
+    "message": "$MATCHES$ / $COUNT$ картица",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -92,7 +92,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ од $COUNT$ картица",
+    "message": "$MATCHES$ / $COUNT$ картица",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -118,7 +118,7 @@
     }
   },
   "overlay_picker_count_few": {
-    "message": "$MATCHES$ од $COUNT$ картице",
+    "message": "$MATCHES$ / $COUNT$ картице",
     "placeholders": {
       "COUNT": {
         "content": "$1",

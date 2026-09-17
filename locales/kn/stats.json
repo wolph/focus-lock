@@ -71,7 +71,7 @@
     }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ earned",
+    "message": "$EARNED$ ಸಾಧಿಸಲಾಗಿದೆ",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -86,10 +86,10 @@
     "message": "Your streak starts ಜೊತೆ your first focus day."
   },
   "stats_streak_unit_one": {
-    "message": "day"
+    "message": "ದಿನ"
   },
   "stats_streak_unit_other": {
-    "message": "days"
+    "message": "ದಿನ"
   },
   "stats_streak_freeze_tokens_one": {
     "message": "$COUNT$ freeze ಕಿken banked",
@@ -182,7 +182,7 @@
     "message": "Attempts ಮೂಲಕ hour, this machರಲ್ಲಿe ಮೇಲೆly"
   },
   "stats_chart_other_site": {
-    "message": "other"
+    "message": "ಇತರ"
   },
   "stats_chart_minutes_tick": {
     "message": "$MINUTES$m",
@@ -212,7 +212,7 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "Bar chart"
+    "message": "ಬಾರ್ ಚಾರ್ಟ್"
   },
   "stats_chart_name_hbar": {
     "message": "Hಅಥವಾizಮೇಲೆtal bar chart"
@@ -240,7 +240,7 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "View as table"
+    "message": "ಟೇಬಿಲ್ ಆಗಿ ವೀಕ್ಷಿಸಿ"
   },
   "stats_chart_table_category": {
     "message": "ವರ್ಗ"
@@ -258,13 +258,13 @@
     "message": "Your first sessiಮೇಲೆ will appear here."
   },
   "stats_sessions_col_date": {
-    "message": "Dನಲ್ಲಿe"
+    "message": "ದಿನಾಂಕ"
   },
   "stats_sessions_col_start": {
     "message": "ಪ್ರಾರಂಭಿಸಿ"
   },
   "stats_sessions_col_planned": {
-    "message": "Planned"
+    "message": "ಯೋಜನೆ"
   },
   "stats_sessions_col_focused": {
     "message": "ಫೋಕಸ್ed"
@@ -273,16 +273,16 @@
     "message": "ಎಲ್ಲಾ sites"
   },
   "stats_sessions_col_one_site": {
-    "message": "One site"
+    "message": "ಒಂದು ಸೈಟ್"
   },
   "stats_sessions_col_intention": {
     "message": "ಉದ್ದೇಶ"
   },
   "stats_sessions_col_outcome": {
-    "message": "Outcome"
+    "message": "ಫಲಿತಾಂಶ"
   },
   "stats_sessions_col_source": {
-    "message": "Source"
+    "message": "ಮೂಲ"
   },
   "stats_session_no_intention": {
     "message": "No ರಲ್ಲಿtentiಮೇಲೆ"
@@ -297,19 +297,19 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "manual"
+    "message": "ಹಸ್ತ"
   },
   "stats_session_source_schedule": {
-    "message": "schedule"
+    "message": "ವೇಳಾಸೂಚಿ"
   },
   "stats_session_source_scheduled": {
-    "message": "scheduled"
+    "message": "ನಿರ್ಧಾರಿತ"
   },
   "stats_outcome_completed": {
-    "message": "Completed"
+    "message": "ಪೂರ್ಣಗೊಂಡಿದೆ"
   },
   "stats_outcome_ended_early": {
-    "message": "Ended early"
+    "message": "ಮೊದಲೇ ಕೊನೆಗೊಂಡಿದೆ"
   },
   "stats_outcome_running": {
     "message": "Runnರಲ್ಲಿg"

@@ -40,7 +40,7 @@
     "message": "ಪ್ರಾರಂಭಿಸಿ until sಕಿpped"
   },
   "shared_lock_until_manual_unlock": {
-    "message": "Lock until manual unlock"
+    "message": "ಹಸ್ತ ಅನ್‌ಲಾಕ್ ಆಗುವವರೆಗೆ ಲಾಕ್"
   },
   "shared_until_stopped_disclosure": {
     "message": "Until sಕಿpped sessiಮೇಲೆs keep ನಮ್ಯ ಅಥವಾ ರಕ್ಷಣೆ ಮತ್ತು cannot use focus ಮತ್ತು break cycles."
@@ -55,7 +55,7 @@
     "message": "ಅನ್‌ಲಾಕ್"
   },
   "shared_gate_wait_none": {
-    "message": "no wait"
+    "message": "ಕಾಯ್ಹಿಲ್ಲ"
   },
   "shared_gate_wait": {
     "message": "a $SECONDS$-secಮೇಲೆd wait",
@@ -116,13 +116,13 @@
     "message": "ಕಿtal sessiಮೇಲೆ"
   },
   "shared_clock_pause": {
-    "message": "pause"
+    "message": "ವಿರಾಮ"
   },
   "shared_clock_break": {
     "message": "ವಿರತಿ"
   },
   "shared_badge_indefinite": {
-    "message": "ON"
+    "message": "ಆನ್"
   },
   "shared_popup_starting": {
     "message": "ಫೋಕಸ್ Lock is startರಲ್ಲಿg. Applyರಲ್ಲಿg your selected rules."
@@ -194,13 +194,13 @@
     }
   },
   "shared_outcome_timer_completed": {
-    "message": "Completed"
+    "message": "ಪೂರ್ಣಗೊಂಡಿದೆ"
   },
   "shared_outcome_manual_completed": {
-    "message": "Completed manually"
+    "message": "ಹಸ್ತದಿಂದ ಪೂರ್ಣಗೊಂಡಿದೆ"
   },
   "shared_outcome_manual_canceled": {
-    "message": "Ended early"
+    "message": "ಮೊದಲೇ ಕೊನೆಗೊಂಡಿದೆ"
   },
   "shared_outcome_website_access_lost": {
     "message": "Ended: webಸೈಟ್ ಪ್ರವೇಶ lost"
@@ -215,10 +215,10 @@
     "message": "Ended: page enಸಾಕಾಂಶcement failed"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "Ended: recovery failed"
+    "message": "ಕೊನೆಗೊಂಡಿದೆ: ಮರುಸ್ಥಾಪನೆ ವೈಫಲ್ಯ"
   },
   "shared_duration_hours_minutes": {
-    "message": "$HOURS$ h $MINUTES$ m",
+    "message": "$HOURS$ ಗಂ $MINUTES$ ನಿ",
     "placeholders": {
       "HOURS": {
         "content": "$1",
@@ -231,7 +231,7 @@
     }
   },
   "shared_duration_minutes": {
-    "message": "$MINUTES$ m",
+    "message": "$MINUTES$ ನಿ",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -334,10 +334,10 @@
     "message": "ನಿರ್ಬಂಧಿತ ಮೂಲಕ this sessiಮೇಲೆ"
   },
   "shared_verdict_allow_list": {
-    "message": "On your allow list"
+    "message": "ನಿಮ್ಮ ಅನುಮತಿ ಪಟ್ಟಿಯಲ್ಲಿ"
   },
   "shared_verdict_always_allowed": {
-    "message": "Always allowed"
+    "message": "ಯಾವಾಗಲೂ ಅನುಮತಿ"
   },
   "shared_verdict_unlock": {
     "message": "Tempಅಥವಾarily unlocked"
@@ -352,16 +352,16 @@
     "message": "ಎಲ್ಲಾowed by this session"
   },
   "shared_category_social": {
-    "message": "Social media"
+    "message": "ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ"
   },
   "shared_category_video": {
     "message": "Video ಮತ್ತು streamರಲ್ಲಿg"
   },
   "shared_category_news": {
-    "message": "News"
+    "message": "ಸುದ್ದಿ"
   },
   "shared_category_mail": {
-    "message": "Mail"
+    "message": "ಪತ್ರ"
   },
   "shared_category_shopping": {
     "message": "Shoppರಲ್ಲಿg"
@@ -388,7 +388,7 @@
     "message": "Domaರಲ್ಲಿ-level blocked-ನಲ್ಲಿtempt aggregನಲ್ಲಿes"
   },
   "shared_local_full_urls": {
-    "message": "Full URLs"
+    "message": "ಸಂಪೂರ್ಣ URL"
   },
   "shared_local_intentions": {
     "message": "ಫೋಕಸ್ ರಲ್ಲಿtentiಮೇಲೆs"
@@ -412,7 +412,7 @@
     "message": "Product navigನಲ್ಲಿiಮೇಲೆ"
   },
   "shared_nav_overview": {
-    "message": "Overview"
+    "message": "ಅವಲೋಕನ"
   },
   "shared_nav_settings": {
     "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
@@ -421,7 +421,7 @@
     "message": "ನಿರ್ಬಂಧ"
   },
   "shared_section_schedule": {
-    "message": "Schedule"
+    "message": "ವೇಳಾಸೂಚಿ"
   },
   "shared_section_behavior": {
     "message": "ಸೆಷ್ಟ ವರ್ತನೆ"
@@ -439,10 +439,10 @@
     "message": "Auಕಿ"
   },
   "shared_theme_light": {
-    "message": "Light"
+    "message": "ಬೆಳಕು"
   },
   "shared_theme_dark": {
-    "message": "Dark"
+    "message": "ಕರುಣೆ"
   },
   "shared_theme_button": {
     "message": "Theme: $CURRENT$. ಸ್ವಿಚ್ to $NEXT$",
@@ -461,7 +461,7 @@
     "message": "Could not save theme. Reload page ಮತ್ತು try agaರಲ್ಲಿ."
   },
   "shared_host_search_label": {
-    "message": "Search $TITLE$ ಸೈಟ್s",
+    "message": "ಅನ್ವೇಷಣೆ $TITLE$ ಸೈಟ್",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -526,7 +526,7 @@
     "message": "This page did not load. It will load ಮೂಲಕ itself ಯಾವಾಗ the sessiಮೇಲೆ ends."
   },
   "shared_overlay_next_step": {
-    "message": "Your next step"
+    "message": "ನಿಮ್ಮ ಮುಂದಿನ ಹಂತ"
   },
   "shared_overlay_back_to_work": {
     "message": "Back ಕಿ wಅಥವಾk"
@@ -585,7 +585,7 @@
     }
   },
   "shared_overlay_locked_until": {
-    "message": "Locked until $TIME$",
+    "message": "$TIME$ ವರೆಗೆ ಲಾಕ್",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -594,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "You said: $INTENTION$",
+    "message": "ನೀವು ಹೇಳಿದ್ದು: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -603,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "ಅನ್‌ಲಾಕ್ $HOST$ $CLOCK$",
+    "message": "$HOST$ ಅನ್‌ಲಾಕ್ $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",

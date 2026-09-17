@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "next: $DAY$ $TIME$",
+    "message": "ಮುಂದೆ: $DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -31,7 +31,7 @@
     "message": "Choose your startರಲ್ಲಿg lists, website access, ಮತ್ತು stಅಥವಾage mode beಸಾಕಾಂಶe startರಲ್ಲಿg a sessiಮೇಲೆ."
   },
   "popup_open_setup_button": {
-    "message": "Open setup"
+    "message": "ಸೆಟಪ್ ತೆರೆಯಿರಿ"
   },
   "popup_blocking_confirm_failed": {
     "message": "Could not cಮೇಲೆfirm website blockರಲ್ಲಿg. Try agaರಲ್ಲಿ."
@@ -67,7 +67,7 @@
     "message": "Could not dismiss this notice. Try agaರಲ್ಲಿ."
   },
   "popup_dismiss_button": {
-    "message": "Dismiss"
+    "message": "ಅಕ್ಷರೇ"
   },
   "popup_restart_failed": {
     "message": "Could not restart ಫೋಕಸ್ Lock. Try agaರಲ್ಲಿ."
@@ -79,7 +79,7 @@
     "message": "The reasಮೇಲೆ could not be read."
   },
   "popup_reset_runtime_button": {
-    "message": "Reset local runtime"
+    "message": "ಸ್ಥಳೀಯ ರನ್‌ಟೈಮ್ ಮರುಹೊಂದಿಸಿ"
   },
   "popup_reset_runtime_note": {
     "message": "Keeps your settರಲ್ಲಿgs, lists, ಮತ್ತು stನಲ್ಲಿistics. Clears the current sessiಮೇಲೆ stನಲ್ಲಿe."
@@ -139,7 +139,7 @@
     "message": "Add allowed domaರಲ್ಲಿ"
   },
   "popup_add_button": {
-    "message": "Add"
+    "message": "ಸೇರಿಸಿ"
   },
   "popup_draft_allowed_only": {
     "message": "Only $COUNT$ allowed site rules. Other websites ನಿರ್ಬಂಧed.",
@@ -200,7 +200,7 @@
     "message": "Could not updನಲ್ಲಿe the gನಲ್ಲಿe. Try agaರಲ್ಲಿ."
   },
   "popup_gate_intention": {
-    "message": "You said: $INTENTION$",
+    "message": "ನೀವು ಹೇಳಿದ್ದು: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -279,7 +279,7 @@
     "message": "Regular expressiಮೇಲೆ"
   },
   "popup_category_sites_label": {
-    "message": "$CATEGORY$ sites",
+    "message": "$CATEGORY$ ಸೈಟ್",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -288,7 +288,7 @@
     }
   },
   "popup_sites_one": {
-    "message": "$COUNT$ site",
+    "message": "$COUNT$ ಸೈಟ್",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -297,7 +297,7 @@
     }
   },
   "popup_sites_other": {
-    "message": "$COUNT$ sites",
+    "message": "$COUNT$ ಸೈಟ್",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -336,7 +336,7 @@
     "message": "ಎಲ್ಲಾowed sites and rules"
   },
   "popup_no_allowed_sites": {
-    "message": "No sites are allowed yet."
+    "message": "ಇನ್ನೂ ಯಾವುದೇ ಸೈಟ್ ಅನುಮತಿಯಿಲ್ಲ."
   },
   "popup_what_will_be_blocked": {
     "message": "Whನಲ್ಲಿ will be blocked"
@@ -376,7 +376,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed rule",
+    "message": "$COUNT$ ಅನುಮತಿ ನಿಯಮ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -385,7 +385,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed rules",
+    "message": "$COUNT$ ಅನುಮತಿ ನಿಯಮ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -508,7 +508,7 @@
     "message": "Wಅಥವಾk tab"
   },
   "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Current)",
+    "message": "$TITLE$ (ಪ್ರಸ್ತುತ)",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -538,7 +538,7 @@
     "message": "Could not load wಅಥವಾk tabs. Reopen the popup ಕಿ try agaರಲ್ಲಿ."
   },
   "popup_use_this_tab": {
-    "message": "Use this tab"
+    "message": "ಈ ಟ್ಯಾಬ್ ಬಳಸಿ"
   },
   "popup_current_tab_unavailable": {
     "message": "This tab is not available ಸಾಕಾಂಶ wಅಥವಾk. Choose another open tab."
@@ -562,12 +562,76 @@
     "message": "Could not save the wಅಥವಾk tab. Try agaರಲ್ಲಿ."
   },
   "popup_choose_open_tab_option": {
-    "message": "Choose an open tab"
+    "message": "ತೆರೆದ ಟ್ಯಾಬ್ ಆರಿಸಿ"
   },
   "popup_or_choose_another_tab": {
-    "message": "Or choose another tab"
+    "message": "ಅಥವಾ ಮತ್ತೊಂದು ಟ್ಯಾಬ್ ಆರಿಸಿ"
   },
   "popup_start_failed": {
     "message": "Could not start sessiಮೇಲೆ. Try agaರಲ್ಲಿ."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಸೂಚನೆ ಅಕ್ಷರೇ",
+    "description": "Accessible name of the button that hides the website access notice in the popup."
+  },
+  "popup_active_site_unknown": {
+    "message": "ಸಕ್ರಿಯ ಸೈಟ್ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ",
+    "description": "Reason the unlock button is disabled after reading the current tab failed. Shown inside the button, without a full stop."
+  },
+  "popup_active_site_error": {
+    "message": "ಸಕ್ರಿಯ ಸೈಟ್ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "description": "Alert under the active session view after reading the current tab failed. A sentence, unlike the shorter reason inside the button."
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ ಪ್ರವೇಶ, $CREDIT$ ಕ್ರೆಡಿಟ್",
+    "description": "Second line of an unlock button: how long the unlock lasts and how much earned credit it costs. Both are clock durations such as 5:00.",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ ಪ್ರವೇಶ, $CREDIT$ ಕ್ರೆಡಿಟ್ - $HOST$",
+    "description": "Second line of the unlock button for one site: the length, the cost, and the site it applies to. ACCESS and CREDIT are clock durations, HOST is a domain name.",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್",
+    "description": "How much earned credit is available, shown above the session actions. CREDIT is a clock duration.",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_draft_stop_friction": {
+    "message": "$SECONDS$ಸೆ ನಂತರ ಮುಗಿಸಿ.",
+    "description": "Summary beside the start button for a session that can be ended after a deliberation wait. SECONDS is that wait in seconds, and s is the abbreviation for seconds.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
   }
 }
