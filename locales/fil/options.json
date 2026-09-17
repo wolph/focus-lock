@@ -1,9 +1,9 @@
 {
   "options_page_title": {
-    "message": "Pokus Lock opsysas"
+    "message": "Mga opsyon ng Focus Lock"
   },
   "options_heading": {
-    "message": "Pokus Lock mga settsag"
+    "message": "Mga setting ng Focus Lock"
   },
   "options_loading_settings": {
     "message": "Kinakarga ang mga setting"
@@ -604,7 +604,7 @@
     "message": "Kusang pagsisimula ayon sa iskedyul"
   },
   "options_sound_preview_aria": {
-    "message": "Pretsagnan $SOUND$",
+    "message": "Pakinggan ang $SOUND$",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -652,7 +652,7 @@
     "message": "Subukan muli ang pagharang sa website"
   },
   "options_privacy_website_on_title": {
-    "message": "Website hadlangsag is gawsad"
+    "message": "Naka-enable ang pagharang sa website"
   },
   "options_privacy_website_on_detail": {
     "message": "Maaaring ilapat ng Focus Lock ang iyong aktibong panuntunan sa pagharang sa karaniwang pahina ng website."
@@ -724,7 +724,7 @@
     "message": "Hindi na-update ang access sa website. Subukan muli."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Website hadlangsag gawsad."
+    "message": "Na-enable ang pagharang sa website."
   },
   "options_privacy_error_export": {
     "message": "Hindi mai-export ang talaan ng kaganapan."
@@ -736,7 +736,7 @@
     "message": "Hindi mabuksan ang setting ng pahintulot ng Chrome. Subukan muli."
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "Chrome permissisa mga settsag buksaned."
+    "message": "Nabuksan ang setting ng pahintulot ng Chrome."
   },
   "options_privacy_open_chrome_settings": {
     "message": "Buksan ang setting ng pahintulot ng Chrome"
@@ -811,7 +811,7 @@
     "message": "Burahin ang bawat talaan ng Focus Lock sa device na ito at anumang kopyang naiwan sa Chrome Sync, pagkatapos ay magsimula muli mula sa setup. Available habang walang tumatakbong sesyon."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "Resumsag deletisa ng all Pokus Lock data."
+    "message": "Ipinagpapatuloy ang pagbura ng lahat ng datos ng Focus Lock."
   },
   "options_privacy_retry_local_history": {
     "message": "Subukan muli ang pagbura ng lokal na kasaysayan"
