@@ -6,10 +6,10 @@
     "message": "Pokus Lock mga settsag"
   },
   "options_loading_settings": {
-    "message": "Nag-load settings"
+    "message": "Kinakarga ang mga setting"
   },
   "options_privacy_loading": {
-    "message": "Nag-load privacy settings"
+    "message": "Kinakarga ang mga setting ng privacy"
   },
   "options_save_failed": {
     "message": "Hindi maaaring i-save ang mga setting. I-reload ang page at subukan ulit."
@@ -18,64 +18,64 @@
     "message": "Hadlanging"
   },
   "options_blocking_help": {
-    "message": "Custom rules block during blacklist sessions. Ang whitelist is what stays reachable during whitelist sessions. Bundled categories block common time sinks."
+    "message": "Humaharang ang mga sariling panuntunan sa mga sesyong blacklist. Ang whitelist ang nananatiling maaabot sa mga sesyong whitelist. Hinaharangan ng mga nakabalot na kategorya ang karaniwang sayang-oras."
   },
   "options_custom_blacklist_title": {
-    "message": "Cussam blacklist"
+    "message": "Sariling blacklist"
   },
   "options_whitelist_title": {
     "message": "Puting listahan"
   },
   "options_bundled_categories_heading": {
-    "message": "Bundled categoies"
+    "message": "Mga nakabalot na kategorya"
   },
   "options_bundled_categories_help": {
-    "message": "Ang bundled categories ay pre-built na groupings ng mga sikat na time-wasting sites."
+    "message": "Mga nakabalot na listahan ng karaniwang sayang-oras. I-toggle ang buong kategorya, pagkatapos ay buksan ito upang panatilihing available ang ilang site."
   },
   "options_schedule_heading": {
     "message": "Iskedyul"
   },
   "options_schedule_help": {
-    "message": "Sessions start on angir own inside angse windows. Strictness set here applies for ang whole window."
+    "message": "Kusang nagsisimula ang mga sesyon sa loob ng mga bintanang ito. Ang higpit na itinakda dito ay nalalapat sa buong bintana."
   },
   "options_behavior_heading": {
-    "message": "Sesyon behavior"
+    "message": "Asal ng sesyon"
   },
   "options_budget_heading": {
-    "message": "Site pag-access cri-edit"
+    "message": "Kreditong access sa site"
   },
   "options_notifications_heading": {
     "message": "Notificatisas"
   },
   "options_privacy_heading": {
-    "message": "Privacy at data"
+    "message": "Privacy at datos"
   },
   "options_load_error_retry": {
     "message": "Subukan Muli"
   },
   "options_load_error_delete_all": {
-    "message": "Alisin everything and start over"
+    "message": "Burahin ang lahat at magsimula muli"
   },
   "options_load_error_keep_data": {
     "message": "Panatilihin ang aking data"
   },
   "options_delete_all_data": {
-    "message": "Alisin all Focus Lock data"
+    "message": "Burahin ang lahat ng datos ng Focus Lock"
   },
   "options_dirty_saving": {
-    "message": "Savsag changes"
+    "message": "Sini-save ang mga pagbabago"
   },
   "options_dirty_unsaved": {
-    "message": "Unmagsaved changes"
+    "message": "May hindi naka-save na pagbabago"
   },
   "options_dirty_clean": {
-    "message": "No unmagsaved changes"
+    "message": "Walang hindi naka-save na pagbabago"
   },
   "options_dirty_discard": {
     "message": "Burahin ang mga pagbabago"
   },
   "options_dirty_save": {
-    "message": "Makatipid changes"
+    "message": "I-save ang mga pagbabago"
   },
   "options_session_status_label": {
     "message": "Sesyon status"
@@ -99,10 +99,10 @@
     }
   },
   "options_rules_empty": {
-    "message": "No panuntunans yet."
+    "message": "Wala pang panuntunan."
   },
   "options_rule_kind_aria": {
-    "message": "Panuntunan kind"
+    "message": "Uri ng panuntunan"
   },
   "options_rule_kind_host_option": {
     "message": "domasa o subdomasa"
@@ -111,7 +111,7 @@
     "message": "regex (puhindi URL)"
   },
   "options_rule_pattern_aria": {
-    "message": "Pattern"
+    "message": "Padron"
   },
   "options_rule_pattern_placeholder_host": {
     "message": "facebook.com"
@@ -120,10 +120,10 @@
     "message": "/youtube\\.com\\/shots/"
   },
   "options_rule_add": {
-    "message": "Magdagdag rule"
+    "message": "Magdagdag ng panuntunan"
   },
   "options_rules_help": {
-    "message": "facebook.com covers that domain and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/shorts/ matches ang full URL as a regular expression."
+    "message": "Sakop ng facebook.com ang domain na iyon at bawat subdomain. Sakop ng news.ycombinator.com ang subdomain na iyon at lahat ng nasa ilalim nito. Tumutugma ang /youtube\\.com\\/shorts/ sa buong URL bilang regular na ekspresyon."
   },
   "options_number_error_positive": {
     "message": "Ang $LABEL$ ay dapat na positibong buong numero.",
@@ -135,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "$LABEL$ must be a whole number ng zero o greater.",
+    "message": "Ang $LABEL$ ay dapat buong bilang na sero o higit pa.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -144,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "$LABEL$ must be zero o greater.",
+    "message": "Ang $LABEL$ ay dapat sero o higit pa.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -153,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$ must be within ang supported minute range.",
+    "message": "Ang $LABEL$ ay dapat nasa loob ng saklaw ng minutong suportado.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -162,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$ must be within ang supported day range.",
+    "message": "Ang $LABEL$ ay dapat nasa loob ng saklaw ng araw na suportado.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -171,40 +171,40 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "Sesyon defaults"
+    "message": "Mga default ng sesyon"
   },
   "options_session_defaults_help": {
-    "message": "Mode and strictness are fixed when a session starts. Angse are ang values ang start form opens with."
+    "message": "Nakatakda ang paraan at higpit kapag nagsimula ang sesyon. Ito ang mga halagang binubuksan ng pormularyo ng pagsisimula."
   },
   "options_preset_short_label": {
-    "message": "Short session preset (minutos)"
+    "message": "Preset ng maikling sesyon (minuto)"
   },
   "options_preset_default_label": {
-    "message": "Default session preset (minutos)"
+    "message": "Preset ng default na sesyon (minuto)"
   },
   "options_preset_deep_label": {
-    "message": "Deep session preset (minutos)"
+    "message": "Preset ng malalim na sesyon (minuto)"
   },
   "options_mode_blacklist_label": {
-    "message": "Blacklist: hadlang listed sites"
+    "message": "Blacklist: harangin ang mga nakalistang site"
   },
   "options_mode_whitelist_label": {
-    "message": "Whitelist: allow saly listed sites"
+    "message": "Whitelist: payagan lamang ang mga nakalistang site"
   },
   "options_strictness_flexible_label": {
-    "message": "Flexible: end ang session whenever you choose"
+    "message": "Nababaluktot: tapusin ang sesyon kahit kailan mo gusto"
   },
   "options_strictness_friction_label": {
-    "message": "Friction: stopping early uses ang configured deliberation gate"
+    "message": "Alitan: ang paghinto nang maaga ay dumadaan sa nakatakdang tarangkahan ng pagninilay"
   },
   "options_strictness_hard_label": {
-    "message": "Mahirap: no early end, tempoary site pag-access saly"
+    "message": "Mahigpit: walang maagang pagtatapos, pansamantalang access sa site lamang"
   },
   "options_cycle_heading": {
     "message": "Pokus at pahsaga siklus"
   },
   "options_cycle_help": {
-    "message": "Defaults: 25 minute focus, 5 minute break, 15 minute long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. Ang exact minutes are convention, not science."
+    "message": "Mga default: 25 minutong pokus, 5 minutong pahinga, 15 minutong mahabang pahinga tuwing ika-4 na siklo. Ang mga pahingang nakaiskedyul ay nakahihigit sa pahinga-kapag-gusto para sa kalooban at pokus sa mga pag-aaral. Kasunduan ang eksaktong minuto, hindi agham."
   },
   "options_cycle_default_label": {
     "message": "Siklus pokus at pahsagas by default"
@@ -213,22 +213,22 @@
     "message": "Focus minutos"
   },
   "options_short_break_minutes_label": {
-    "message": "Short break minutos"
+    "message": "Minuto ng maikling pahinga"
   },
   "options_long_break_minutes_label": {
-    "message": "Long break minutos"
+    "message": "Minuto ng mahabang pahinga"
   },
   "options_long_every_label": {
-    "message": "Lsag pahsaga every Nth siklus"
+    "message": "Mahabang pahinga tuwing ika-N na siklo"
   },
   "options_gate_heading": {
-    "message": "Pag-isip gate"
+    "message": "Tarangkahan ng pagninilay"
   },
   "options_gate_help": {
-    "message": "A 10 second wait with an explicit back-to-work button measurably reduces impulse visits (field study, PNAS 2023). Ang longer wait and ang typed sentence roughly double ang effect."
+    "message": "Ang 10 segundong paghihintay na may tahasang pindutang balik-sa-trabaho ay nakababawas nang masusukat sa mga biglaang pagbisita (pag-aaral sa larangan, PNAS 2023). Halos dinodoble ng mas mahabang paghihintay at ng nakasulat na pangungusap ang bisa."
   },
   "options_gate_wait_one": {
-    "message": "Wait $COUNT$ secsad",
+    "message": "Maghintay ng $COUNT$ segundo",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -237,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "Wait $COUNT$ secsads",
+    "message": "Maghintay ng $COUNT$ na segundo",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -249,46 +249,46 @@
     "message": "Cussam"
   },
   "options_custom_delay_label": {
-    "message": "Cussam delay (secsads)"
+    "message": "Sariling pagkaantala (segundo)"
   },
   "options_custom_delay_error": {
-    "message": "Cussam delay must be a positive whole number ng secsads."
+    "message": "Ang sariling pagkaantala ay dapat positibong buong bilang ng segundo."
   },
   "options_gate_typed_phrase_label": {
-    "message": "Also require typsag a sentence"
+    "message": "Hilingin ding mag-type ng pangungusap"
   },
   "options_gate_force_end_label": {
-    "message": "Paganahin \"Ignore timeout and end anyway\" button"
+    "message": "I-enable ang pindutang \"Huwag pansinin ang paghihintay at tapusin pa rin\""
   },
   "options_credit_help": {
-    "message": "Site access credit accrues while you focus. Both access to all sites and a single-site unlock spend from ang same balance. Maaari kang step away at any time nang walang spending credit."
+    "message": "Naiipon ang kreditong access sa site habang nakapokus ka. Parehong kumukuha sa iisang balanse ang access sa lahat ng site at ang pagbubukas ng isang site. Maaari kang lumayo anumang oras nang hindi gumagastos ng kredito."
   },
   "options_earn_rate_label": {
-    "message": "Minutes of site access per 30 minutos of focus"
+    "message": "Minuto ng access sa site kada 30 minutong pokus"
   },
   "options_credit_cap_label": {
-    "message": "Site access credit limit (minutos)"
+    "message": "Limitasyon ng kreditong access sa site (minuto)"
   },
   "options_pause_length_label": {
-    "message": "All-site access length (minutos)"
+    "message": "Haba ng access sa lahat ng site (minuto)"
   },
   "options_unlock_length_label": {
-    "message": "Site unlock length (minutos)"
+    "message": "Haba ng pagbubukas ng site (minuto)"
   },
   "options_streak_heading": {
     "message": "Sunod-sunod at retentisa"
   },
   "options_streak_help": {
-    "message": "Ang streak counts days that reach ang goal. One default session keeps ang chain alive, and a freeze token repairs a missed day."
+    "message": "Binibilang ng sunod-sunod ang mga araw na umaabot sa layunin. Isang default na sesyon ang nagpapanatili ng kadena, at inaayos ng token ng pagyeyelo ang araw na nalaktawan."
   },
   "options_streak_goal_label": {
-    "message": "Daily streak goal (focus minutos)"
+    "message": "Pang-araw-araw na layunin ng sunod-sunod (minuto ng pokus)"
   },
   "options_freeze_interval_label": {
-    "message": "Freeze token interval (araws)"
+    "message": "Agwat ng token ng pagyeyelo (araw)"
   },
   "options_retention_label": {
-    "message": "Keep daily stats (araws)"
+    "message": "Panatilihin ang pang-araw-araw na estadistika (araw)"
   },
   "options_category_on_announcement": {
     "message": "$CATEGORY$ kategoya sa.",
@@ -309,7 +309,7 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "All categoies sa."
+    "message": "Naka-on ang lahat ng kategorya."
   },
   "options_all_categories_off_announcement": {
     "message": "All categoies ngf."
@@ -333,7 +333,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "All $CATEGORY$ sites sacluded.",
+    "message": "Kasama ang lahat ng site na $CATEGORY$.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -351,7 +351,7 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "Kategorya bulk actions"
+    "message": "Maramihang aksyon sa kategorya"
   },
   "options_selected_count": {
     "message": "Napili $COUNT$",
@@ -372,16 +372,16 @@
     }
   },
   "options_select_all": {
-    "message": "Select lahat"
+    "message": "Piliin lahat"
   },
   "options_deselect_all": {
-    "message": "Deselect lahat"
+    "message": "Alisin lahat"
   },
   "options_select_all_categories_aria": {
-    "message": "Select all categoies"
+    "message": "Piliin ang lahat ng kategorya"
   },
   "options_deselect_all_categories_aria": {
-    "message": "Deselect all categoies"
+    "message": "Alisin ang lahat ng kategorya"
   },
   "options_show_category_sites": {
     "message": "Ipakita $CATEGORY$ sites",
@@ -420,7 +420,7 @@
     }
   },
   "options_category_off": {
-    "message": "Kategorya off"
+    "message": "Naka-off ang kategorya"
   },
   "options_included_when_enabled_one": {
     "message": "$COUNT$ sacluded kung kailan gawsad",
@@ -441,10 +441,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "I-uncheck ang site upang manatiling makukuha habang ang ibang bahagi ng category ay nablok."
+    "message": "Alisin ang tsek sa isang site upang manatili itong available habang hinaharang ang iba pang bahagi ng kategorya."
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "$CATEGORY$ site bulk actisas",
+    "message": "Maramihang aksyon sa site na $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "options_select_all_category_sites_aria": {
-    "message": "Select lahat $CATEGORY$ sites",
+    "message": "Piliin ang lahat ng site na $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -462,7 +462,7 @@
     }
   },
   "options_deselect_all_category_sites_aria": {
-    "message": "Deselect lahat $CATEGORY$ sites",
+    "message": "Alisin ang lahat ng site na $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -504,7 +504,7 @@
     "message": "Siklus pokus at pahsagas"
   },
   "options_schedule_overlap_error": {
-    "message": "Overlaps anoangr enabled entry on $DAY$.",
+    "message": "Nagsasapawan sa ibang naka-enable na entry sa $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -513,7 +513,7 @@
     }
   },
   "options_schedule_session_type_aria": {
-    "message": "Sesyon type"
+    "message": "Uri ng sesyon"
   },
   "options_schedule_entry_legend": {
     "message": "Pagpasok ng oras"
@@ -531,10 +531,10 @@
     "message": "Layunsa"
   },
   "options_schedule_intention_placeholder": {
-    "message": "what this oas is para"
+    "message": "para saan ang oras na ito"
   },
   "options_schedule_save_entry": {
-    "message": "Makatipid entry"
+    "message": "I-save ang entry"
   },
   "options_cancel": {
     "message": "Kanselahin"
