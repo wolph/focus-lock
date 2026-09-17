@@ -28,7 +28,7 @@
     "message": "Lõpeta Focus Locki seadistamine"
   },
   "popup_setup_required_body": {
-    "message": "Vali oma esialgsed nimekirjad, veebisaidi juurdepääs ja salvestusrežiim enne seansi alustamist."
+    "message": "Vali oma esialgsed loendid, veebisaidi juurdepääs ja salvestusrežiim enne seansi alustamist."
   },
   "popup_open_setup_button": {
     "message": "Ava seadistus"
@@ -85,7 +85,7 @@
     "message": "Lähtesta kohalik käitusaeg"
   },
   "popup_reset_runtime_note": {
-    "message": "Säilitab sinu seaded, nimekirjad ja statistika. Kustutab praeguse seansi oleku."
+    "message": "Säilitab sinu seaded, loendid ja statistika. Kustutab praeguse seansi oleku."
   },
   "popup_delete_all_confirm_button": {
     "message": "Kustuta kõik ja alusta otsast"
@@ -100,7 +100,7 @@
     "message": "Seadistuse olek pole saadaval. Uuesti proovimiseks laadi Focus Lock uuesti."
   },
   "popup_snapshot_unavailable": {
-    "message": "Fookuse olek pole saadaval"
+    "message": "Keskendumise olek pole saadaval"
   },
   "popup_action_in_progress": {
     "message": "Toiming käib"
@@ -121,7 +121,7 @@
     "message": "Jätka kohe"
   },
   "popup_start_next_focus_early": {
-    "message": "Alusta järgmist fookust ennetähtaegselt"
+    "message": "Alusta järgmist keskendumist ennetähtaegselt"
   },
   "popup_unlock_this_site": {
     "message": "Ava see sait"
@@ -160,10 +160,10 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Vali töösakk"
+    "message": "Vali töö vahekaart"
   },
   "popup_change_work_tab_button": {
-    "message": "Muuda töösakki"
+    "message": "Muuda töö vahekaarti"
   },
   "popup_session_actions_summary": {
     "message": "Seansi toimingud"
@@ -306,7 +306,7 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Kategooriate muutmine on keelatud, kuni blokeeritud saitide nimekirjad taaslaaditakse."
+    "message": "Kategooriate muutmine on keelatud, kuni blokeeritud saitide loendid taaslaaditakse."
   },
   "popup_blocked_categories_heading": {
     "message": "Blokeeritud kategooriad"
@@ -469,7 +469,7 @@
     "message": "Paindlik"
   },
   "popup_session_type_friction": {
-    "message": "Takistus"
+    "message": "Hõõrdumine"
   },
   "popup_session_type_hard": {
     "message": "Range lukk"
@@ -508,16 +508,16 @@
     "message": "Sisesta seansi kestus, mis on suurem kui null minutit."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Vaikeväärtused muutusid, kuid praeguste nimekirjade laadimine ebaõnnestus. Värskenda hüpikakent."
+    "message": "Vaikeväärtused muutusid, kuid praeguste loendite laadimine ebaõnnestus. Värskenda hüpikakent."
   },
   "popup_no_work_tab_option": {
-    "message": "Töösakk puudub (valikuline)"
+    "message": "Töö vahekaart puudub (valikuline)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Valitud sakk pole saadaval - vali mõni teine"
+    "message": "Valitud vahekaart pole saadaval - vali mõni teine"
   },
   "popup_cycles_label": {
-    "message": "Tsüklid: $FOCUS$ min fookust, $SHORT_BREAK$ min pausi, $LONG_BREAK$ min pikk paus iga $LONG_EVERY$.",
+    "message": "Tsüklid: $FOCUS$ min keskendumist, $SHORT_BREAK$ min vaheaega, $LONG_BREAK$ min pikk vaheaeg iga $LONG_EVERY$.",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -544,7 +544,7 @@
     "message": "Millega sa tegeled?"
   },
   "popup_work_tab_named": {
-    "message": "Töösakk: $TITLE$",
+    "message": "Töö vahekaart: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -559,10 +559,10 @@
     "message": "Seansi seaded"
   },
   "popup_choose_work_tab_label": {
-    "message": "Vali töösakk"
+    "message": "Vali töö vahekaart"
   },
   "popup_work_tab_select_label": {
-    "message": "Töösakk"
+    "message": "Töö vahekaart"
   },
   "popup_work_tab_current_option": {
     "message": "$TITLE$ (praegune)",
@@ -580,7 +580,7 @@
     "message": "sobimatu aeg"
   },
   "popup_start_focus_label": {
-    "message": "Alusta $DURATION$ fookust",
+    "message": "Alusta $DURATION$ keskendumist",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -592,37 +592,37 @@
     "message": "Sisesta kehtiv domeen, näiteks docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Töösakkide laadimine ebaõnnestus. Ava hüpikaken uuesti, et proovida uuesti."
+    "message": "Töö vahekaartide laadimine ebaõnnestus. Ava hüpikaken uuesti, et proovida uuesti."
   },
   "popup_use_this_tab": {
-    "message": "Kasuta seda sakki"
+    "message": "Kasuta seda vahekaarti"
   },
   "popup_current_tab_unavailable": {
-    "message": "See sakk pole töö jaoks saadaval. Vali mõni teine avatud sakk."
+    "message": "See vahekaart pole töö jaoks saadaval. Vali mõni teine avatud vahekaart."
   },
   "popup_checking_current_tab": {
-    "message": "Praeguse saki kontrollimine..."
+    "message": "Praeguse vahekaardi kontrollimine..."
   },
   "popup_finding_current_tab": {
-    "message": "Sinu praeguse saki otsimine..."
+    "message": "Sinu praeguse vahekaardi otsimine..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Sinu praeguse saki laadimine ebaõnnestus. Proovi uuesti."
+    "message": "Sinu praeguse vahekaardi laadimine ebaõnnestus. Proovi uuesti."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Vali või asenda oma töösakk."
+    "message": "Vali või asenda oma töö vahekaart."
   },
   "popup_saving_work_tab": {
-    "message": "Töösaki salvestamine..."
+    "message": "Töö vahekaardi salvestamine..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Töösaki salvestamine ebaõnnestus. Proovi uuesti."
+    "message": "Töö vahekaardi salvestamine ebaõnnestus. Proovi uuesti."
   },
   "popup_choose_open_tab_option": {
-    "message": "Vali avatud sakk"
+    "message": "Vali avatud vahekaart"
   },
   "popup_or_choose_another_tab": {
-    "message": "Või vali mõni teine sakk"
+    "message": "Või vali mõni teine vahekaart"
   },
   "popup_start_failed": {
     "message": "Seansi alustamine ebaõnnestus. Proovi uuesti."

@@ -12,7 +12,7 @@
     "message": "Nalaganje nastavitev zasebnosti"
   },
   "options_save_failed": {
-    "message": "Shranjevanje ni uspelo. Poskusite znova."
+    "message": "Shranjevanje ni uspelo. Poskusi znova."
   },
   "options_blocking_heading": {
     "message": "Blokiranje"
@@ -42,7 +42,7 @@
     "message": "Vedenje seans"
   },
   "options_budget_heading": {
-    "message": "Dovoljenost dostopa do spletnih mest"
+    "message": "Kredit za dostop"
   },
   "options_notifications_heading": {
     "message": "Obvestila"
@@ -84,7 +84,7 @@
     "message": "domena"
   },
   "options_rule_kind_regex_badge": {
-    "message": "regex"
+    "message": "reg. izraz"
   },
   "options_rule_remove": {
     "message": "Odstrani"
@@ -114,7 +114,7 @@
     "message": "Vzorec"
   },
   "options_rule_pattern_placeholder_host": {
-    "message": "facebook.com"
+    "message": "24ur.com"
   },
   "options_rule_pattern_placeholder_regex": {
     "message": "/youtube\\.com\\/shorts/"
@@ -123,7 +123,7 @@
     "message": "Dodaj pravilo"
   },
   "options_rules_help": {
-    "message": "facebook.com zajema to domeno in vsako podomeno. news.ycombinator.com zajema to podomeno in vse pod njo. /youtube\\.com\\/shorts/ se ujema s polnim URL-jem kot regularni izraz."
+    "message": "facebook.com zajema to domeno in vsako poddomeno. news.ycombinator.com zajema to poddomeno in vse pod njo. /youtube\\.com\\/shorts/ se kot regularni izraz ujema s celotnim URL-jem."
   },
   "options_number_error_positive": {
     "message": "$LABEL$ mora biti pozitivno celo število.",
@@ -192,19 +192,19 @@
     "message": "Bela lista: dovoli samo navedena spletna mesta"
   },
   "options_strictness_flexible_label": {
-    "message": "Prosta: končaj seanso, kadar koli izbereš"
+    "message": "Prilagodljiva: končaj sejo, kadar koli želiš"
   },
   "options_strictness_friction_label": {
-    "message": "Trenja: zgodnje ustavljanje uporablja nastavljeno vrata za premislek"
+    "message": "Trenje: predčasen konec gre skozi nastavljen čas za premislek"
   },
   "options_strictness_hard_label": {
-    "message": "Trdna: brez zgodnjega konca, začasen dostop samo do spletnih mest"
+    "message": "Trdo zaklepanje: brez predčasnega konca, samo začasen dostop do spletnega mesta"
   },
   "options_cycle_heading": {
     "message": "Cikel osredotočenosti in premorka"
   },
   "options_cycle_help": {
-    "message": "Privzeto: 25-minutni fokus, 5-minutni premor, 15-minutni dolgi premor vsak 4. cikel. Premori po urniku so boljši za razpoloženje in osredotočenost kot premori, kadar se počutiš dobro, pri študijskih vzorcih. Točne minute so dogovor, ne znanost."
+    "message": "Privzeto: 25 minut osredotočenosti, 5 minut odmora, 15 minut dolgega odmora vsak 4. cikel. Odmori po urniku se v študijah odrežejo bolje od odmorov po občutku, tako pri razpoloženju kot pri osredotočenosti. Natančne minute so dogovor, ne znanost."
   },
   "options_cycle_default_label": {
     "message": "Privzeto ciklira osredotočenost in premor"
@@ -222,7 +222,7 @@
     "message": "Dolgi premor vsak N-ti cikel"
   },
   "options_gate_heading": {
-    "message": "Vrata za premislek"
+    "message": "Čas za premislek"
   },
   "options_gate_help": {
     "message": "10-sekundni premor s izrecnim gumbom za vrnitev k delu merjljivo zmanjša impulzivne obiske (študija na terenu, PNAS 2023). Daljši premor in tipkana povedi grubо podvojita učinek."
@@ -261,7 +261,7 @@
     "message": "Omogući \"Prezri časovno mejo in končaj vseeno\" gumb"
   },
   "options_credit_help": {
-    "message": "Dovoljenost dostopa do spletnih mest se nagromadi med osredotočenostjo. Tako dostop do vseh spletnih mest kot tudi razblokiranje enega samega spletnega mesta porablja iz istega stanja. Lahko se udiš kadar koli brez porabe dovoljenosti."
+    "message": "Kredit za dostop se nabira, medtem ko si osredotočen. Tako dostop do vseh spletnih mest kot odklep enega spletnega mesta se plačata z istega stanja. Kadar koli lahko odideš, ne da bi porabil kredit."
   },
   "options_earn_rate_label": {
     "message": "Minute dostopa do spletnih mest na 30 minut osredotočenosti"
@@ -279,13 +279,13 @@
     "message": "Niz in zadrževanje"
   },
   "options_streak_help": {
-    "message": "Niz šteje dni, ki dosežejo cilja. Ena privzeta seansa ohrani niz živega, in a žeton zamrznitve popravi zamujeni dan."
+    "message": "Niz šteje dneve, ki dosežejo cilj. Ena privzeta seja ohranja verigo pri življenju, zaščitni dan pa popravi zamujen dan."
   },
   "options_streak_goal_label": {
     "message": "Dnevni cilj niza (minute osredotočenosti)"
   },
   "options_freeze_interval_label": {
-    "message": "Interval žetona zamrznitve (dnevi)"
+    "message": "Interval zaščitnih dni (dnevi)"
   },
   "options_retention_label": {
     "message": "Ohrani dnevne statistike (dnevi)"
@@ -571,7 +571,7 @@
     "message": "trenja"
   },
   "options_schedule_strictness_hard": {
-    "message": "trdna"
+    "message": "trdo zaklepanje"
   },
   "options_schedule_enabled_label": {
     "message": "Omogočeno"
@@ -616,7 +616,7 @@
     "message": "Predvajaj"
   },
   "options_sound_preview_error": {
-    "message": "Predogleda zvoka ni bilo mogoče. Poskusite znova."
+    "message": "Zvoka ni bilo mogoče predvajati. Poskusi znova."
   },
   "options_sounds_notifications_heading": {
     "message": "Obvestila"
@@ -673,16 +673,16 @@
     "message": "To trajno izbriše polne URL-je, namene osredotočenosti in podrobne dogodke seans s te naprave, kot tudi samo-lokalne agregirane statistike. Ne čisti trenutne seans, ki hrani svojo nameravo in naslov vsake zavihka, ki jo blokira. Zaključitev seans počisti namen in začne čiščenje, ki očisti vsak odprten zavihek spletnega mesta, in čiščenje izbriše vsak shranjen naslov po zaključku."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Izbriši oddaljene podatke Sync?"
+    "message": "Izbrišem sinhronizirane podatke?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Potrdi izbris oddaljenih podatkov Sync"
+    "message": "Potrdi izbris sinhroniziranih podatkov"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Oddaljeni podatki Chrome Sync izbrisani."
+    "message": "Sinhronizirani podatki izbrisani."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "To trajno izbriše oddaljene nastavitve, črne in bele liste, dovoljenost dostopa do spletnih mest, nize in skupne poskuse blokiranega dostopa po domenah iz Chrome Sync. Lokalne nastavitve in statistike ostanejo na tej napravi."
+    "message": "To iz sinhronizacije Chroma trajno izbriše nastavitve, seznama blokiranih in dovoljenih, kredit za dostop, nize in seštevke blokiranih poskusov po domenah. Lokalne nastavitve in statistika ostanejo na tej napravi."
   },
   "options_privacy_confirm_all_title": {
     "message": "Izbriši vse podatke Focus Lock?"
@@ -694,25 +694,25 @@
     "message": "Vsi podatki Focus Lock izbrisani."
   },
   "options_privacy_all_body_intro": {
-    "message": "To trajno izbriše vsak del podatkov Focus Lock na tej napravi in kateri koli kopijo Focus Lock, ki ostane v Chrome Sync:"
+    "message": "To trajno izbriše vsak del podatkov Focus Lock na tej napravi in vsako kopijo Focus Lock v sinhronizaciji Chroma:"
   },
   "options_privacy_all_body_outro": {
     "message": "Brisanje vsega je dostopno samo, medtem ko se ni nobena seansa. Focus Lock se nato vrne na nastavitve."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Lokalne zgodovine ni bilo mogoče izbrisati. Poskusite znova."
+    "message": "Lokalne zgodovine ni bilo mogoče izbrisati. Poskusi znova."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Oddaljenih podatkov Sync ni bilo mogoče izbrisati. Poskusite znova."
+    "message": "Sinhroniziranih podatkov ni bilo mogoče izbrisati. Poskusi znova."
   },
   "options_privacy_error_all_clear": {
-    "message": "Vseh podatkov Focus Lock ni bilo mogoče izbrisati. Poskusite znova."
+    "message": "Vseh podatkov Focus Lock ni bilo mogoče izbrisati. Poskusi znova."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync ni mogel shraniti vaših zadnjih sprememb. Vaše lokalno shranjevanje je varno."
+    "message": "Sinhronizacija Chroma ni mogla shraniti tvojih zadnjih sprememb. Lokalno shranjevanje je varno."
   },
   "options_privacy_error_request": {
-    "message": "Zahtevka ni bilo mogoče dokončati. Poskusite znova."
+    "message": "Zahteve ni bilo mogoče dokončati. Poskusi znova."
   },
   "options_privacy_website_access_updated": {
     "message": "Dostop do spletnih mest posodobljen."
@@ -721,7 +721,7 @@
     "message": "Dostop do spletnih mest ni bil odobren."
   },
   "options_privacy_error_website_access": {
-    "message": "Dostopa do spletnih mest ni bilo mogoče posodobiti. Poskusite znova."
+    "message": "Dostopa do spletnih mest ni bilo mogoče posodobiti. Poskusi znova."
   },
   "options_privacy_website_blocking_enabled": {
     "message": "Blokiranje spletnih mest omogočeno."
@@ -730,10 +730,10 @@
     "message": "Dnevnika dogodkov ni bilo mogoče izvoziti."
   },
   "options_privacy_error_export_retry": {
-    "message": "Dnevnika dogodkov ni bilo mogoče izvoziti. Poskusite znova."
+    "message": "Dnevnika dogodkov ni bilo mogoče izvoziti. Poskusi znova."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Nastavitev dovoljenj Chrome ni bilo mogoče odpreti. Poskusite znova."
+    "message": "Nastavitev dovoljenj Chroma ni bilo mogoče odpreti. Poskusi znova."
   },
   "options_privacy_chrome_settings_opened": {
     "message": "Nastavitve dovoljenj Chrome odprte."
@@ -742,34 +742,34 @@
     "message": "Odpri nastavitve dovoljenj Chrome"
   },
   "options_privacy_sync_heading": {
-    "message": "Chrome Sync"
+    "message": "Sinhronizacija Chroma"
   },
   "options_privacy_sync_switch_label": {
-    "message": "Sinhroniziraj podatke Focus Lock med napravami Chrome"
+    "message": "Sinhroniziraj podatke Focus Lock med napravami s Chromom"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync omogočen."
+    "message": "Sinhronizacija Chroma vklopljena."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync onemogočen."
+    "message": "Sinhronizacija Chroma izklopljena."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sync še vedno hrani vaše zadnje spremembe."
+    "message": "Sinhronizacija Chroma še shranjuje tvoje zadnje spremembe."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync je vklopljen."
+    "message": "Sinhronizacija Chroma je vklopljena."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync je izklopljen."
+    "message": "Sinhronizacija Chroma je izklopljena."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Spremembe Chrome Sync shranjene."
+    "message": "Spremembe v sinhronizaciji Chroma shranjene."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Ponovno poskusi omogočiti Chrome Sync"
+    "message": "Znova poskusi vklopiti sinhronizacijo Chroma"
   },
   "options_privacy_retry_sync": {
-    "message": "Ponovno poskusi Chrome Sync"
+    "message": "Znova poskusi sinhronizacijo Chroma"
   },
   "options_privacy_scope_synced": {
     "message": "Sinhronizirano"
@@ -796,19 +796,19 @@
     "message": "Izbriši lokalno zgodovino"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Oddaljeni podatki Sync"
+    "message": "Sinhronizirani podatki"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Izbriši kopije Focus Lock v Chrome Sync brez spremembe te naprave."
+    "message": "Izbriši kopije Focus Lock, ki ostajajo v sinhronizaciji Chroma, brez spreminjanja te naprave."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Izbriši oddaljene podatke Sync"
+    "message": "Izbriši sinhronizirane podatke"
   },
   "options_privacy_all_data_heading": {
     "message": "Vsi podatki Focus Lock"
   },
   "options_privacy_all_data_detail": {
-    "message": "Izbriši vsak zapis Focus Lock na tej napravi in kako koli kopijo Focus Lock v Chrome Sync, nato začni znova od nastavitev. Dostopno samo, medtem ko se ni nobena seansa."
+    "message": "Izbriši vsak zapis Focus Lock na tej napravi in vsako kopijo Focus Lock v sinhronizaciji Chroma, nato začni znova pri nastavitvi. Na voljo, dokler ne teče nobena seja."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Nadaljevanje brisanja vseh podatkov Focus Lock."
@@ -817,34 +817,34 @@
     "message": "Ponovno poskusi brisanje lokalne zgodovine"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Ponovno poskusi brisanje remote Sync"
+    "message": "Znova poskusi izbris sinhroniziranih podatkov"
   },
   "options_privacy_retry_all_data": {
     "message": "Ponovno poskusi brisanje vseh podatkov"
   },
   "options_error_load": {
-    "message": "Nastavitev ni bilo mogoče naložiti. Osvežite stran za ponovno poskus."
+    "message": "Nastavitev ni bilo mogoče naložiti. Znova naloži stran in poskusi znova."
   },
   "options_error_retry_boot": {
-    "message": "Focus Lock ni bilo mogoče znova zagnati. Poskusite znova."
+    "message": "Focus Lock ni bilo mogoče znova zagnati. Poskusi znova."
   },
   "options_error_refresh_privacy": {
-    "message": "Nastavitev zasebnosti ni bilo mogoče osvežiti. Osvežite stran."
+    "message": "Nastavitev zasebnosti ni bilo mogoče osvežiti. Znova naloži stran."
   },
   "options_error_website_blocking": {
-    "message": "Blokiranje spletnih mest ni bilo mogoče posodobiti. Poskusite znova."
+    "message": "Blokiranja spletnih mest ni bilo mogoče posodobiti. Poskusi znova."
   },
   "options_error_change_sync": {
-    "message": "Chrome Sync ni bilo mogoče spremeniti. Poskusite znova."
+    "message": "Sinhronizacije Chroma ni bilo mogoče spremeniti. Poskusi znova."
   },
   "options_error_retry_sync": {
-    "message": "Chrome Sync ni bilo mogoče znova poskusiti. Poskusite znova."
+    "message": "Sinhronizacije Chroma ni bilo mogoče znova poskusiti. Poskusi znova."
   },
   "options_error_save_settings": {
-    "message": "Nastavitev ni bilo mogoče shraniti. Osvežite stran in poskusite znova."
+    "message": "Nastavitev ni bilo mogoče shraniti. Znova naloži stran in poskusi znova."
   },
   "options_error_save_lists": {
-    "message": "Seznamov ni bilo mogoče shraniti. Osvežite stran in poskusite znova."
+    "message": "Seznamov ni bilo mogoče shraniti. Znova naloži stran in poskusi znova."
   },
   "options_gate_wait_two": {
     "message": "Čakaj $COUNT$ sekundi",

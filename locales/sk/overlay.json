@@ -3,7 +3,7 @@
     "message": "Focus Lock"
   },
   "overlay_stopped_title": {
-    "message": "Zablokovaná - Focus Lock"
+    "message": "Zamknuté - Focus Lock"
   },
   "overlay_return_label": {
     "message": "$ACTION$: $DESTINATION$",
@@ -19,64 +19,64 @@
     }
   },
   "overlay_target_checking": {
-    "message": "Kontrola dostupných pracovných záložiek..."
+    "message": "Kontrolujem dostupné pracovné karty..."
   },
   "overlay_target_pick_tab": {
-    "message": "Vyberte si otvorenú záložku, aby ste mohli pokračovať v svojej úlohe."
+    "message": "Vyber otvorenú kartu a pokračuj v práci."
   },
   "overlay_target_session_unavailable": {
-    "message": "Vaša relácia zameraná na prácu nie je dostupná. Skúste znova alebo znova načítajte túto stránku."
+    "message": "Tvoja relácia sústredenia nie je dostupná. Skús to znova alebo znova načítaj túto stránku."
   },
   "overlay_target_lookup_failed": {
-    "message": "Nepodarilo sa načítať vašu pracovnú záložku. Skúste znova alebo znova načítajte túto stránku."
+    "message": "Pracovnú kartu sa nepodarilo načítať. Skús to znova alebo znova načítaj túto stránku."
   },
   "overlay_target_reconnect": {
-    "message": "Znova načítajte túto stránku, aby ste sa pripojili k Focus Lock."
+    "message": "Znova načítaj túto stránku, aby sa obnovilo spojenie s Focus Lock."
   },
   "overlay_target_page_changed": {
-    "message": "Požadovaná stránka sa zmenila. Znova načítajte stránku."
+    "message": "Žiadajúca stránka sa zmenila. Znova načítaj stránku."
   },
   "overlay_target_transport_error": {
-    "message": "Nepodarilo sa dosiahnuť Focus Lock. Skúste znova."
+    "message": "Focus Lock nie je dostupný. Skús to znova."
   },
   "overlay_picker_heading": {
-    "message": "Vyberte pracovnú záložku"
+    "message": "Vyber pracovnú kartu"
   },
   "overlay_picker_cancel": {
     "message": "Zrušiť"
   },
   "overlay_picker_search_label": {
-    "message": "Hľadať pracovné záložky"
+    "message": "Hľadať v pracovných kartách"
   },
   "overlay_picker_search_placeholder": {
-    "message": "Hľadať podľa názvu alebo webovej stránky"
+    "message": "Hľadaj podľa názvu alebo webu"
   },
   "overlay_picker_clear_search": {
-    "message": "Vyčistiť vyhľadávanie"
+    "message": "Vymazať hľadanie"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "Obnoviť záložky"
+    "message": "Obnoviť karty"
   },
   "overlay_picker_available_tabs": {
-    "message": "Dostupné pracovné záložky"
+    "message": "Dostupné pracovné karty"
   },
   "overlay_picker_finding": {
-    "message": "Hľadám dostupné záložky..."
+    "message": "Hľadám dostupné karty..."
   },
   "overlay_picker_searching": {
-    "message": "Hľadám pracovné záložky..."
+    "message": "Prehľadávam pracovné karty..."
   },
   "overlay_picker_saving": {
-    "message": "Ukladám pracovnú záložku..."
+    "message": "Ukladám pracovnú kartu..."
   },
   "overlay_picker_no_tabs": {
-    "message": "Žiadne dostupné pracovné záložky. Otvorte webovú stránku povolenú touto reláciou a potom obnovte záložky."
+    "message": "Žiadne dostupné pracovné karty. Otvor web, ktorý táto relácia povoľuje, a potom obnov karty."
   },
   "overlay_picker_no_matches": {
-    "message": "Žiadne sa zhodujúce záložky. Skúste ďalšie vyhľadávanie alebo vyčistite vyhľadávanie."
+    "message": "Žiadne zodpovedajúce karty. Skús iné hľadanie alebo hľadanie vymaž."
   },
   "overlay_picker_load_failed": {
-    "message": "Nepodarilo sa načítať pracovné záložky. Skúste znova."
+    "message": "Pracovné karty sa nepodarilo načítať. Skús to znova."
   },
   "overlay_picker_count_one": {
     "message": "$MATCHES$ z $COUNT$ karty",

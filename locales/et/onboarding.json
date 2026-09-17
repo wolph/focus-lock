@@ -46,7 +46,7 @@
     "message": "Seadistamise lõpetamine ebaõnnestus. Sinu valikud on endiselt salvestatud. Proovi uuesti."
   },
   "onboarding_lists_heading": {
-    "message": "Vali oma esialgne blokeerimisnimekiri"
+    "message": "Vali oma esialgne blokeerimisloend"
   },
   "onboarding_lists_blacklist_rule": {
     "message": "Režiimis $MODE$ pole lubatud kategooriad ja lisatud blokeeritud saidid saadaval.",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "Režiimis $MODE$ pole ükski sait saadaval, välja arvatud sinu lubamisnimekiri.",
+    "message": "Režiimis $MODE$ pole ükski sait saadaval, välja arvatud sinu lubamisloend.",
     "placeholders": {
       "MODE": {
         "content": "$1",

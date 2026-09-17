@@ -18,19 +18,19 @@
     "message": "Blokeerimine"
   },
   "options_blocking_help": {
-    "message": "Kohandatud reeglid blokeerivad blokeerimisnimekirja seansside ajal. Lubamisnimekiri on see, mis jääb ligipääsetavaks lubamisnimekirja seansside ajal. Komplekteeritud kategooriad blokeerivad levinud ajaraiskajad."
+    "message": "Kohandatud reeglid blokeerivad blokeerimisloendi seansside ajal. Lubamisloend on see, mis jääb ligipääsetavaks lubamisloendi seansside ajal. Komplekteeritud kategooriad blokeerivad levinud ajaraiskajad."
   },
   "options_custom_blacklist_title": {
-    "message": "Kohandatud blokeerimisnimekiri"
+    "message": "Kohandatud blokeerimisloend"
   },
   "options_whitelist_title": {
-    "message": "Lubamisnimekiri"
+    "message": "Lubamisloend"
   },
   "options_bundled_categories_heading": {
     "message": "Komplekteeritud kategooriad"
   },
   "options_bundled_categories_help": {
-    "message": "Levinud ajaraiskajate komplekteeritud nimekirjad. Lülita terve kategooria sisse või välja, seejärel ava see, et hoida üksikud saidid saadaval."
+    "message": "Levinud ajaraiskajate komplekteeritud loendid. Lülita terve kategooria sisse või välja, seejärel ava see, et hoida üksikud saidid saadaval."
   },
   "options_schedule_heading": {
     "message": "Ajakava"
@@ -186,40 +186,40 @@
     "message": "Süvaseansi eelseadistus (minutites)"
   },
   "options_mode_blacklist_label": {
-    "message": "Blokeerimisnimekiri: blokeeri loetletud saidid"
+    "message": "Blokeerimisloend: blokeeri loetletud saidid"
   },
   "options_mode_whitelist_label": {
-    "message": "Lubamisnimekiri: luba ainult loetletud saidid"
+    "message": "Lubamisloend: luba ainult loetletud saidid"
   },
   "options_strictness_flexible_label": {
     "message": "Paindlik: lõpeta seanss millal iganes soovid"
   },
   "options_strictness_friction_label": {
-    "message": "Takistus: enneaegne lõpetamine kasutab seadistatud järelemõtlemisväravat"
+    "message": "Hõõrdumine: enneaegne lõpetamine kasutab seadistatud järelemõtlemisväravat"
   },
   "options_strictness_hard_label": {
     "message": "Range: enneaegne lõpetamine pole võimalik, ainult ajutine saidijuurdepääs"
   },
   "options_cycle_heading": {
-    "message": "Fookuse ja pausi tsükkel"
+    "message": "Keskendumise ja vaheaja tsükkel"
   },
   "options_cycle_help": {
-    "message": "Vaikeväärtused: 25 minutit fookust, 5 minutit pausi, 15 minutit pikk paus iga 4. tsükli järel. Uuringutes on ajakava järgi peetavad pausid tuju ja fookuse jaoks paremad kui pausid siis, kui parasjagu tahes. Täpsed minutid on kokkulepe, mitte teadus."
+    "message": "Vaikeväärtused: 25 minutit keskendumist, 5 minutit vaheaega, 15 minutit pikk vaheaeg iga 4. tsükli järel. Uuringutes on ajakava järgi peetavad vaheajad tuju ja keskendumise jaoks paremad kui vaheajad siis, kui parasjagu tahes. Täpsed minutid on kokkulepe, mitte teadus."
   },
   "options_cycle_default_label": {
-    "message": "Lülita fookuse ja pauside tsükkel vaikimisi sisse"
+    "message": "Lülita keskendumise ja vaheaegade tsükkel vaikimisi sisse"
   },
   "options_focus_minutes_label": {
-    "message": "Fookuse minutid"
+    "message": "Keskendumise minutid"
   },
   "options_short_break_minutes_label": {
-    "message": "Lühikese pausi minutid"
+    "message": "Lühikese vaheaja minutid"
   },
   "options_long_break_minutes_label": {
-    "message": "Pika pausi minutid"
+    "message": "Pika vaheaja minutid"
   },
   "options_long_every_label": {
-    "message": "Pikk paus iga N. tsükli järel"
+    "message": "Pikk vaheaeg iga N. tsükli järel"
   },
   "options_gate_heading": {
     "message": "Järelemõtlemisvärav"
@@ -264,7 +264,7 @@
     "message": "Saidi juurdepääsu krediiti koguneb, kui keskendud. Nii ligipääs kõigile saitidele kui ka ühe saidi avamine kuluvad samalt kontolt. Võid igal ajal eemale astuda ilma krediiti kulutamata."
   },
   "options_earn_rate_label": {
-    "message": "Saidijuurdepääsu minutid iga 30 fookuseminuti kohta"
+    "message": "Saidijuurdepääsu minutid iga 30 keskendumisminuti kohta"
   },
   "options_credit_cap_label": {
     "message": "Saidi juurdepääsu krediidi piirmäär (minutites)"
@@ -282,7 +282,7 @@
     "message": "Seeria loeb päevi, mis saavutavad eesmärgi. Üks vaikeseanss hoiab ahela elus ja külmutuslunastus parandab vahelejäänud päeva."
   },
   "options_streak_goal_label": {
-    "message": "Päevane seeria eesmärk (fookuseminutid)"
+    "message": "Päevane seeria eesmärk (keskendumisminutid)"
   },
   "options_freeze_interval_label": {
     "message": "Külmutuslunastuse intervall (päevades)"
@@ -501,7 +501,7 @@
     "message": "L"
   },
   "options_schedule_cycles_label": {
-    "message": "Tsükli fookus ja pausid"
+    "message": "Tsükli keskendumine ja vaheajad"
   },
   "options_schedule_overlap_error": {
     "message": "Kattub teise $DAY$ päeval lubatud kirjega.",
@@ -559,16 +559,16 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blokeerimisnimekiri"
+    "message": "blokeerimisloend"
   },
   "options_schedule_mode_whitelist": {
-    "message": "lubamisnimekiri"
+    "message": "lubamisloend"
   },
   "options_schedule_strictness_flexible": {
     "message": "paindlik"
   },
   "options_schedule_strictness_friction": {
-    "message": "takistus"
+    "message": "hõõrdumine"
   },
   "options_schedule_strictness_hard": {
     "message": "range"
@@ -595,10 +595,10 @@
     "message": "Seanss lõpetatud"
   },
   "options_sound_break_start": {
-    "message": "Pausi algus"
+    "message": "Vaheaja algus"
   },
   "options_sound_break_end": {
-    "message": "Pausi lõpp"
+    "message": "Vaheaja lõpp"
   },
   "options_sound_schedule_start": {
     "message": "Ajakava automaatkäivitus"
@@ -667,10 +667,10 @@
     "message": "Kohalik ajalugu kustutatud."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "See kustutab jäädavalt selle seadme täielikud URL-id, fookuse kavatsused ja üksikasjalikud seansisündmused. See ei kustuta töötavat seanssi, mis säilitab oma kavatsuse ja iga blokeeritava saki aadressi. Seansi lõpetamine kustutab kavatsuse ja käivitab koristuse, mis puhastab iga avatud veebisaidi saki, ning koristus eemaldab lõpetamisel iga salvestatud aadressi."
+    "message": "See kustutab jäädavalt selle seadme täielikud URL-id, keskendumise kavatsused ja üksikasjalikud seansisündmused. See ei kustuta töötavat seanssi, mis säilitab oma kavatsuse ja iga blokeeritava vahekaardi aadressi. Seansi lõpetamine kustutab kavatsuse ja käivitab koristuse, mis puhastab iga avatud veebisaidi vahekaardi, ning koristus eemaldab lõpetamisel iga salvestatud aadressi."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "See kustutab jäädavalt selle seadme täielikud URL-id, fookuse kavatsused, üksikasjalikud seansisündmused ning ainult kohalikud koondstatistikad. See ei kustuta töötavat seanssi, mis säilitab oma kavatsuse ja iga blokeeritava saki aadressi. Seansi lõpetamine kustutab kavatsuse ja käivitab koristuse, mis puhastab iga avatud veebisaidi saki, ning koristus eemaldab lõpetamisel iga salvestatud aadressi."
+    "message": "See kustutab jäädavalt selle seadme täielikud URL-id, keskendumise kavatsused, üksikasjalikud seansisündmused ning ainult kohalikud koondstatistikad. See ei kustuta töötavat seanssi, mis säilitab oma kavatsuse ja iga blokeeritava vahekaardi aadressi. Seansi lõpetamine kustutab kavatsuse ja käivitab koristuse, mis puhastab iga avatud veebisaidi vahekaardi, ning koristus eemaldab lõpetamisel iga salvestatud aadressi."
   },
   "options_privacy_confirm_synced_policy_title": {
     "message": "Kustutada kauge Sync andmed?"
@@ -679,10 +679,10 @@
     "message": "Kinnita kauge Sync andmete kustutamine"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Chrome'i sünkroonimise kauged andmed kustutatud."
+    "message": "Kauge Chrome Sync andmed kustutatud."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "See kustutab jäädavalt kauged seaded, blokeerimis- ja lubamisnimekirjad, saidi juurdepääsu krediidi, seeriad ja domeenipõhised blokeeritud katsete koondandmed Chrome'i sünkroonimisest. Kohalikud seaded ja statistika jäävad sellesse seadmesse."
+    "message": "See kustutab jäädavalt kauged seaded, blokeerimis- ja lubamisloendid, saidi juurdepääsu krediidi, seeriad ja domeenipõhised blokeeritud katsete koondandmed Chrome Syncist. Kohalikud seaded ja statistika jäävad sellesse seadmesse."
   },
   "options_privacy_confirm_all_title": {
     "message": "Kustutada kõik Focus Locki andmed?"
@@ -694,7 +694,7 @@
     "message": "Kõik Focus Locki andmed kustutatud."
   },
   "options_privacy_all_body_intro": {
-    "message": "See kustutab jäädavalt iga Focus Locki andme sellest seadmest ja kõik Focus Locki koopiad, mis on jäänud Chrome'i sünkroonimisse:"
+    "message": "See kustutab jäädavalt iga Focus Locki andme sellest seadmest ja kõik Focus Locki koopiad, mis on jäänud Chrome Synci:"
   },
   "options_privacy_all_body_outro": {
     "message": "Kõige kustutamine on saadaval ainult siis, kui ükski seanss ei tööta. Focus Lock naaseb seejärel seadistuse juurde."
@@ -703,13 +703,13 @@
     "message": "Kohaliku ajaloo kustutamine ebaõnnestus. Proovi uuesti."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Chrome'i sünkroonimise kaugete andmete kustutamine ebaõnnestus. Proovi uuesti."
+    "message": "Kauge Chrome Sync andmete kustutamine ebaõnnestus. Proovi uuesti."
   },
   "options_privacy_error_all_clear": {
     "message": "Kõigi Focus Locki andmete kustutamine ebaõnnestus. Proovi uuesti."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome'i sünkroonimine ei suutnud su viimaseid muudatusi salvestada. Sinu kohalik salvestus on turvaline."
+    "message": "Chrome Sync ei suutnud su viimaseid muudatusi salvestada. Sinu kohalik salvestus on turvaline."
   },
   "options_privacy_error_request": {
     "message": "Päringut ei õnnestunud täita. Proovi uuesti."
@@ -748,28 +748,28 @@
     "message": "Sünkrooni Focus Locki andmeid Chrome'i seadmete vahel"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome'i sünkroonimine lubatud."
+    "message": "Chrome Sync lubatud."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome'i sünkroonimine keelatud."
+    "message": "Chrome Sync keelatud."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome'i sünkroonimine salvestab endiselt su viimaseid muudatusi."
+    "message": "Chrome Sync salvestab endiselt su viimaseid muudatusi."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome'i sünkroonimine on sees."
+    "message": "Chrome Sync on sees."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome'i sünkroonimine on väljas."
+    "message": "Chrome Sync on väljas."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Chrome'i sünkroonimise muudatused salvestatud."
+    "message": "Chrome Sync muudatused salvestatud."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Proovi Chrome'i sünkroonimise lubamist uuesti"
+    "message": "Proovi Chrome Synci lubamist uuesti"
   },
   "options_privacy_retry_sync": {
-    "message": "Proovi Chrome'i sünkroonimist uuesti"
+    "message": "Proovi Chrome Synci uuesti"
   },
   "options_privacy_scope_synced": {
     "message": "Sünkroonitud"
@@ -799,7 +799,7 @@
     "message": "Kauged Sync andmed"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Kustuta Chrome'i sünkroonimises olevad Focus Locki koopiad seda seadet muutmata."
+    "message": "Kustuta Chrome Syncis olevad Focus Locki koopiad seda seadet muutmata."
   },
   "options_privacy_delete_remote_data": {
     "message": "Kustuta kauged Sync andmed"
@@ -808,7 +808,7 @@
     "message": "Kõik Focus Locki andmed"
   },
   "options_privacy_all_data_detail": {
-    "message": "Kustuta iga Focus Locki kirje sellest seadmest ja kõik Focus Locki koopiad Chrome'i sünkroonimisest ning alusta seejärel seadistusest uuesti. Saadaval, kui ükski seanss ei tööta."
+    "message": "Kustuta iga Focus Locki kirje sellest seadmest ja kõik Focus Locki koopiad Chrome Syncist ning alusta seejärel seadistusest uuesti. Saadaval, kui ükski seanss ei tööta."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Jätkatakse kõigi Focus Locki andmete kustutamist."
@@ -835,10 +835,10 @@
     "message": "Veebisaitide blokeerimise uuendamine ebaõnnestus. Proovi uuesti."
   },
   "options_error_change_sync": {
-    "message": "Chrome'i sünkroonimise muutmine ebaõnnestus. Proovi uuesti."
+    "message": "Chrome Synci muutmine ebaõnnestus. Proovi uuesti."
   },
   "options_error_retry_sync": {
-    "message": "Chrome'i sünkroonimise uuesti proovimine ebaõnnestus. Proovi uuesti."
+    "message": "Chrome Synci uuesti proovimine ebaõnnestus. Proovi uuesti."
   },
   "options_error_save_settings": {
     "message": "Seadete salvestamine ebaõnnestus. Värskenda lehte ja proovi uuesti."

@@ -68,7 +68,7 @@
     }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ earned",
+    "message": "$EARNED$ natuklasan",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -179,7 +179,7 @@
     "message": "Attempts by oras, this machine only"
   },
   "stats_chart_other_site": {
-    "message": "other"
+    "message": "iba"
   },
   "stats_chart_minutes_tick": {
     "message": "$MINUTES$m",

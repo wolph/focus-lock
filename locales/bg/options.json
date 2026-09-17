@@ -1,9 +1,9 @@
 {
   "options_page_title": {
-    "message": "Focus Lock опции"
+    "message": "Настройки на Focus Lock"
   },
   "options_heading": {
-    "message": "Focus Lock настройки"
+    "message": "Настройки на Focus Lock"
   },
   "options_loading_settings": {
     "message": "Зареждане на настройките"
@@ -12,37 +12,37 @@
     "message": "Зареждане на настройките за поверителност"
   },
   "options_save_failed": {
-    "message": "Запазването не успя. Опитай отново."
+    "message": "Неуспешен запис. Опитай отново."
   },
   "options_blocking_heading": {
     "message": "Блокиране"
   },
   "options_blocking_help": {
-    "message": "Собствените правила блокират по време на сесии със списък с блокирани. Списъкът с разрешени е това, което остава достъпно по време на сесии със списък с разрешени. Вградените категории блокират обичайните крадци на време."
+    "message": "Персонализираните правила блокират по време на сесии със списък за блокиране. Списъкът с разрешени е това, което остава достъпно по време на сесии със списък с разрешени. Готовите категории блокират честите разсейвания."
   },
   "options_custom_blacklist_title": {
-    "message": "Собствен списък с блокирани"
+    "message": "Персонализиран списък за блокиране"
   },
   "options_whitelist_title": {
     "message": "Списък с разрешени"
   },
   "options_bundled_categories_heading": {
-    "message": "Вградени категории"
+    "message": "Готови категории"
   },
   "options_bundled_categories_help": {
-    "message": "Вградени списъци с обичайни крадци на време. Включи или изключи цяла категория, после я отвори, за да останат достъпни отделни сайтове."
+    "message": "Готови списъци с чести разсейвания. Превключи цяла категория, после я отвори, за да оставиш отделни сайтове достъпни."
   },
   "options_schedule_heading": {
     "message": "График"
   },
   "options_schedule_help": {
-    "message": "Сесиите тръгват сами в рамките на тези прозорци. Строгостта, зададена тук, важи за целия прозорец."
+    "message": "Сесиите стартират сами в тези интервали. Зададената тук строгост важи за целия интервал."
   },
   "options_behavior_heading": {
     "message": "Поведение на сесията"
   },
   "options_budget_heading": {
-    "message": "Кредит за достъп"
+    "message": "Кредит за достъп до сайт"
   },
   "options_notifications_heading": {
     "message": "Известия"
@@ -78,7 +78,7 @@
     "message": "Запази промените"
   },
   "options_session_status_label": {
-    "message": "Състояние на сесията"
+    "message": "Статус на сесията"
   },
   "options_rule_kind_host_badge": {
     "message": "домейн"
@@ -99,7 +99,7 @@
     }
   },
   "options_rules_empty": {
-    "message": "Още няма правила."
+    "message": "Все още няма правила."
   },
   "options_rule_kind_aria": {
     "message": "Вид правило"
@@ -108,7 +108,7 @@
     "message": "домейн или поддомейн"
   },
   "options_rule_kind_regex_option": {
-    "message": "регулярен израз (целият URL)"
+    "message": "regex (пълен URL)"
   },
   "options_rule_pattern_aria": {
     "message": "Шаблон"
@@ -123,7 +123,7 @@
     "message": "Добави правило"
   },
   "options_rules_help": {
-    "message": "facebook.com покрива този домейн и всеки поддомейн. news.ycombinator.com покрива този поддомейн и всичко под него. /youtube\\.com\\/shorts/ съвпада с целия URL адрес като регулярен израз."
+    "message": "facebook.com обхваща този домейн и всеки негов поддомейн. news.ycombinator.com обхваща този поддомейн и всичко под него. /youtube\\.com\\/shorts/ съвпада с целия URL адрес като регулярен израз."
   },
   "options_number_error_positive": {
     "message": "$LABEL$ трябва да е положително цяло число.",
@@ -135,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "$LABEL$ трябва да е цяло число, нула или по-голямо.",
+    "message": "$LABEL$ трябва да е цяло число, равно на нула или по-голямо.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -144,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "$LABEL$ трябва да е нула или повече.",
+    "message": "$LABEL$ трябва да е нула или по-голямо.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -171,43 +171,43 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "Стойности по подразбиране за сесията"
+    "message": "Настройки по подразбиране за сесията"
   },
   "options_session_defaults_help": {
-    "message": "Режимът и строгостта се заключват, когато сесията започне. Това са стойностите, с които се отваря формата за стартиране."
+    "message": "Режимът и строгостта се фиксират при стартиране на сесията. Това са стойностите, с които се отваря формулярът за стартиране."
   },
   "options_preset_short_label": {
-    "message": "Шаблон за кратка сесия (минути)"
+    "message": "Готова стойност за кратка сесия (минути)"
   },
   "options_preset_default_label": {
-    "message": "Шаблон за обичайна сесия (минути)"
+    "message": "Готова стойност за сесия по подразбиране (минути)"
   },
   "options_preset_deep_label": {
-    "message": "Шаблон за дълбока сесия (минути)"
+    "message": "Готова стойност за задълбочена сесия (минути)"
   },
   "options_mode_blacklist_label": {
-    "message": "Списък с блокирани: блокирай изброените сайтове"
+    "message": "Списък за блокиране: блокира изброените сайтове"
   },
   "options_mode_whitelist_label": {
-    "message": "Списък с разрешени: разреши само изброените сайтове"
+    "message": "Списък с разрешени: разрешава само изброените сайтове"
   },
   "options_strictness_flexible_label": {
-    "message": "Гъвкаво: завърши сесията когато поискаш"
+    "message": "Гъвкав: приключваш сесията, когато поискаш"
   },
   "options_strictness_friction_label": {
-    "message": "Съпротива: ранното спиране минава през зададената бариера за размисъл"
+    "message": "Отлагане: предсрочното спиране минава през зададената порта за обмисляне"
   },
   "options_strictness_hard_label": {
-    "message": "Твърдо заключване: няма ранен край, само временен достъп до сайтове"
+    "message": "Твърдо: без предсрочен край, само временен достъп до сайтове"
   },
   "options_cycle_heading": {
     "message": "Цикъл на фокус и почивка"
   },
   "options_cycle_help": {
-    "message": "По подразбиране: 25 минути фокус, 5 минути почивка, 15 минути дълга почивка на всеки четвърти цикъл. Почивките по график превъзхождат почивките по усещане за настроение и фокус в извадките от изследвания. Точните минути са условност, а не наука."
+    "message": "По подразбиране: 25 минути фокус, 5 минути почивка, 15 минути дълга почивка на всеки 4-ти цикъл. Почивките по график се справят по-добре от почивките „когато ти дойде” за настроение и концентрация в изследвания. Точните минути са конвенция, не наука."
   },
   "options_cycle_default_label": {
-    "message": "Редувай фокус и почивки по подразбиране"
+    "message": "Цикли на фокус и почивка по подразбиране"
   },
   "options_focus_minutes_label": {
     "message": "Минути фокус"
@@ -222,10 +222,10 @@
     "message": "Дълга почивка на всеки N-ти цикъл"
   },
   "options_gate_heading": {
-    "message": "Бариера за размисъл"
+    "message": "Порта за обмисляне"
   },
   "options_gate_help": {
-    "message": "Изчакване от 10 секунди с изричен бутон за връщане към работата измеримо намалява импулсивните посещения (теренно изследване, PNAS 2023). По-дългото изчакване и въвежданото изречение приблизително удвояват ефекта."
+    "message": "10-секундно изчакване с изричен бутон „обратно към работа” измеримо намалява импулсивните посещения (полево изследване, PNAS, 2023). По-дългото изчакване и въведеното изречение приблизително удвояват ефекта."
   },
   "options_gate_wait_one": {
     "message": "Изчакай $COUNT$ секунда",
@@ -246,28 +246,28 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "По избор"
+    "message": "Персонализирано"
   },
   "options_custom_delay_label": {
-    "message": "Забавяне по избор (секунди)"
+    "message": "Персонализирано изчакване (секунди)"
   },
   "options_custom_delay_error": {
-    "message": "Забавянето по избор трябва да е положително цяло число секунди."
+    "message": "Персонализираното изчакване трябва да е положително цяло число секунди."
   },
   "options_gate_typed_phrase_label": {
     "message": "Изисквай и въвеждане на изречение"
   },
   "options_gate_force_end_label": {
-    "message": "Включи бутона „Пренебрегни изчакването и завърши“"
+    "message": "Активирай бутона „Игнорирай изчакването и приключи въпреки това”"
   },
   "options_credit_help": {
-    "message": "Кредитът за достъп се натрупва, докато се фокусираш. И достъпът до всички сайтове, и отключването на един се плащат от същия баланс. Можеш да се отдалечиш по всяко време, без да харчиш кредит."
+    "message": "Кредитът за достъп до сайт се натрупва, докато си фокусиран. И достъпът до всички сайтове, и отключването на един сайт се плащат от един и същ баланс. Можеш да прекъснеш по всяко време, без да харчиш кредит."
   },
   "options_earn_rate_label": {
-    "message": "Минути достъп до сайтове на 30 минути фокус"
+    "message": "Минути достъп до сайт на 30 минути фокус"
   },
   "options_credit_cap_label": {
-    "message": "Ограничение на кредита за достъп (минути)"
+    "message": "Лимит на кредита за достъп до сайт (минути)"
   },
   "options_pause_length_label": {
     "message": "Продължителност на достъпа до всички сайтове (минути)"
@@ -279,16 +279,16 @@
     "message": "Серия и съхранение"
   },
   "options_streak_help": {
-    "message": "Серията брои дните, които достигат целта. Една обичайна сесия поддържа веригата жива, а жетон за замразяване поправя пропуснат ден."
+    "message": "Серията брои дните, достигнали целта. Една сесия по подразбиране поддържа веригата жива, а жетон за замразяване поправя пропуснат ден."
   },
   "options_streak_goal_label": {
     "message": "Дневна цел за серията (минути фокус)"
   },
   "options_freeze_interval_label": {
-    "message": "Интервал на жетоните за замразяване (дни)"
+    "message": "Интервал за жетон за замразяване (дни)"
   },
   "options_retention_label": {
-    "message": "Пази дневната статистика (дни)"
+    "message": "Съхранявай дневната статистика (дни)"
   },
   "options_category_on_announcement": {
     "message": "Категория $CATEGORY$ включена.",
@@ -315,7 +315,7 @@
     "message": "Всички категории изключени."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ е включен.",
+    "message": "$HOST$ включен.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -333,7 +333,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "Всички сайтове в категория $CATEGORY$ са включени.",
+    "message": "Всички сайтове от $CATEGORY$ включени.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -342,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "Всички сайтове в категория $CATEGORY$ остават достъпни.",
+    "message": "Всички сайтове от $CATEGORY$ остават достъпни.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -351,10 +351,10 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "Групови действия за категориите"
+    "message": "Групови действия за категории"
   },
   "options_selected_count": {
-    "message": "Избрани $COUNT$",
+    "message": "Избрани: $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Неизбрани $COUNT$",
+    "message": "Неизбрани: $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -375,16 +375,16 @@
     "message": "Избери всички"
   },
   "options_deselect_all": {
-    "message": "Отмени избора на всички"
+    "message": "Премахни избора от всички"
   },
   "options_select_all_categories_aria": {
     "message": "Избери всички категории"
   },
   "options_deselect_all_categories_aria": {
-    "message": "Отмени избора на всички категории"
+    "message": "Премахни избора от всички категории"
   },
   "options_show_category_sites": {
-    "message": "Покажи сайтовете в категория $CATEGORY$",
+    "message": "Покажи сайтовете от $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -393,7 +393,7 @@
     }
   },
   "options_hide_category_sites": {
-    "message": "Скрий сайтовете в категория $CATEGORY$",
+    "message": "Скрий сайтовете от $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -402,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ сайт е включен",
+    "message": "$COUNT$ включен сайт",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -411,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ сайта са включени",
+    "message": "$COUNT$ включени сайта",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -423,7 +423,7 @@
     "message": "Категорията е изключена"
   },
   "options_included_when_enabled_one": {
-    "message": "$COUNT$ включен при включване",
+    "message": "$COUNT$ включен сайт при активиране",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -432,7 +432,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ включени при включване",
+    "message": "$COUNT$ включени сайта при активиране",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -441,10 +441,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "Махни отметката на сайт, за да остане достъпен, докато останалата част от категорията е блокирана."
+    "message": "Премахни отметката на сайт, за да остане достъпен, докато останалата част от категорията е блокирана."
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "Групови действия за сайтовете в категория $CATEGORY$",
+    "message": "Групови действия за сайтовете от $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "options_select_all_category_sites_aria": {
-    "message": "Избери всички сайтове в категория $CATEGORY$",
+    "message": "Избери всички сайтове от $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -462,7 +462,7 @@
     }
   },
   "options_deselect_all_category_sites_aria": {
-    "message": "Отмени избора на всички сайтове в категория $CATEGORY$",
+    "message": "Премахни избора от всички сайтове от $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -471,7 +471,7 @@
     }
   },
   "options_category_sites_region_aria": {
-    "message": "Сайтове в категория $CATEGORY$",
+    "message": "Сайтове от $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -480,31 +480,31 @@
     }
   },
   "options_day_sun": {
-    "message": "нд"
+    "message": "Нд"
   },
   "options_day_mon": {
-    "message": "пн"
+    "message": "Пн"
   },
   "options_day_tue": {
-    "message": "вт"
+    "message": "Вт"
   },
   "options_day_wed": {
-    "message": "ср"
+    "message": "Ср"
   },
   "options_day_thu": {
-    "message": "чт"
+    "message": "Чт"
   },
   "options_day_fri": {
-    "message": "пт"
+    "message": "Пт"
   },
   "options_day_sat": {
-    "message": "сб"
+    "message": "Сб"
   },
   "options_schedule_cycles_label": {
-    "message": "Редувай фокус и почивки"
+    "message": "Цикли на фокус и почивка"
   },
   "options_schedule_overlap_error": {
-    "message": "Припокрива се с друг включен запис в $DAY$.",
+    "message": "Припокрива друг активен запис в $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -513,7 +513,7 @@
     }
   },
   "options_schedule_session_type_aria": {
-    "message": "Вид сесия"
+    "message": "Тип сесия"
   },
   "options_schedule_entry_legend": {
     "message": "Запис в графика"
@@ -540,7 +540,7 @@
     "message": "Отказ"
   },
   "options_schedule_empty": {
-    "message": "Още няма планирани сесии."
+    "message": "Все още няма планирани сесии."
   },
   "options_schedule_selected_days_aria": {
     "message": "Избрани дни"
@@ -559,22 +559,22 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "списък с блокирани"
+    "message": "списък за блокиране"
   },
   "options_schedule_mode_whitelist": {
     "message": "списък с разрешени"
   },
   "options_schedule_strictness_flexible": {
-    "message": "гъвкаво"
+    "message": "гъвкав"
   },
   "options_schedule_strictness_friction": {
-    "message": "съпротива"
+    "message": "отлагане"
   },
   "options_schedule_strictness_hard": {
-    "message": "твърдо заключване"
+    "message": "твърдо"
   },
   "options_schedule_enabled_label": {
-    "message": "Включено"
+    "message": "Активен"
   },
   "options_schedule_edit": {
     "message": "Редактирай"
@@ -592,7 +592,7 @@
     "message": "Обща сила на звука"
   },
   "options_sound_session_complete": {
-    "message": "Сесията завърши"
+    "message": "Сесията приключи"
   },
   "options_sound_break_start": {
     "message": "Начало на почивка"
@@ -604,7 +604,7 @@
     "message": "Автоматично стартиране по график"
   },
   "options_sound_preview_aria": {
-    "message": "Чуй звука $SOUND$",
+    "message": "Прослушай $SOUND$",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -616,46 +616,46 @@
     "message": "Пусни"
   },
   "options_sound_preview_error": {
-    "message": "Звукът не можа да се пусне. Опитай отново."
+    "message": "Неуспешно прослушване на звука. Опитай отново."
   },
   "options_sounds_notifications_heading": {
     "message": "Известия"
   },
   "options_session_complete_notification": {
-    "message": "Показвай системно известие, когато сесията завърши"
+    "message": "Показвай системно известие при приключване на сесия"
   },
   "options_badge_heading": {
     "message": "Значка"
   },
   "options_badge_countdown": {
-    "message": "Показвай оставащото време върху иконата в лентата"
+    "message": "Показвай оставащото време върху иконата в лентата с инструменти"
   },
   "options_privacy_website_access_heading": {
-    "message": "Достъп до сайтове"
+    "message": "Достъп до уебсайтове"
   },
   "options_privacy_website_off_title": {
-    "message": "Достъпът до сайтове е изключен"
+    "message": "Достъпът до уебсайтове е изключен"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock не може да блокира сайтове, докато не разрешиш достъп."
+    "message": "Focus Lock не може да блокира уебсайтове, докато не предоставиш достъп."
   },
   "options_privacy_website_enable_action": {
-    "message": "Включи блокирането на сайтове"
+    "message": "Активирай блокирането на уебсайтове"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "Достъпът до сайтове е разрешен, но блокирането не е активно"
+    "message": "Достъпът до уебсайтове е предоставен, но блокирането не е активно"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome разреши достъпа, но Focus Lock не можа да регистрира скрипта си за блокиране."
+    "message": "Chrome предостави достъп, но Focus Lock не успя да регистрира скрипта си за блокиране."
   },
   "options_privacy_website_retry_action": {
-    "message": "Опитай блокирането на сайтове отново"
+    "message": "Опитай отново блокирането на уебсайтове"
   },
   "options_privacy_website_on_title": {
-    "message": "Блокирането на сайтове е включено"
+    "message": "Блокирането на уебсайтове е активирано"
   },
   "options_privacy_website_on_detail": {
-    "message": "Focus Lock може да прилага активните ти правила за блокиране върху обикновени уеб страници."
+    "message": "Focus Lock може да прилага активните ти правила за блокиране върху обикновени уебстраници."
   },
   "options_privacy_confirm_local_history_title": {
     "message": "Да се изтрие ли локалната история?"
@@ -667,22 +667,22 @@
     "message": "Локалната история е изтрита."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "Това изтрива завинаги пълните URL адреси, намеренията за фокус и подробните събития от сесиите на това устройство. Не прекъсва текуща сесия, която запазва своето намерение и адреса на всеки раздел, който блокира. Завършването на сесията изчиства намерението и стартира почистване, което изчиства всеки отворен уеб раздел, а почистването премахва всеки запазен адрес, когато приключи."
+    "message": "Това окончателно изтрива пълните URL адреси, намеренията за фокус и подробните събития от сесиите на това устройство. Не изчиства текуща сесия, която запазва своето намерение и адреса на всеки раздел, който блокира. Приключването на сесията изчиства намерението и стартира почистване, което изчиства всеки отворен уебсайт раздел, а почистването премахва всеки съхранен адрес, щом завърши."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "Това изтрива завинаги пълните URL адреси, намеренията за фокус и подробните събития от сесиите на това устройство, както и обобщената статистика, която съществува само локално. Не прекъсва текуща сесия, която запазва своето намерение и адреса на всеки раздел, който блокира. Завършването на сесията изчиства намерението и стартира почистване, което изчиства всеки отворен уеб раздел, а почистването премахва всеки запазен адрес, когато приключи."
+    "message": "Това окончателно изтрива пълните URL адреси, намеренията за фокус и подробните събития от сесиите на това устройство, както и обобщената статистика, съхранявана само локално. Не изчиства текуща сесия, която запазва своето намерение и адреса на всеки раздел, който блокира. Приключването на сесията изчиства намерението и стартира почистване, което изчиства всеки отворен уебсайт раздел, а почистването премахва всеки съхранен адрес, щом завърши."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Да се изтрият ли отдалечените данни от синхронизацията?"
+    "message": "Да се изтрият ли отдалечените данни от Sync?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Потвърди изтриването на отдалечените данни от синхронизацията"
+    "message": "Потвърди изтриването на отдалечените данни от Sync"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Отдалечените данни от синхронизацията на Chrome са изтрити."
+    "message": "Отдалечените данни в Chrome Sync са изтрити."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "Това изтрива завинаги отдалечените настройки, списъците с блокирани и разрешени, кредита за достъп, сериите и обобщените блокирани опити на ниво домейн от синхронизацията на Chrome. Локалните настройки и локалната статистика остават на това устройство."
+    "message": "Това окончателно изтрива отдалечените настройки, списъците за блокиране и разрешени, кредита за достъп до сайт, сериите и обобщените данни за блокирани опити по домейни от Chrome Sync. Локалните настройки и статистика остават на това устройство."
   },
   "options_privacy_confirm_all_title": {
     "message": "Да се изтрият ли всички данни на Focus Lock?"
@@ -694,46 +694,46 @@
     "message": "Всички данни на Focus Lock са изтрити."
   },
   "options_privacy_all_body_intro": {
-    "message": "Това изтрива завинаги всяка частица данни на Focus Lock на това устройство и всички копия на Focus Lock, останали в синхронизацията на Chrome:"
+    "message": "Това окончателно изтрива всички данни на Focus Lock на това устройство и всички негови копия, останали в Chrome Sync:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Изтриването на всичко е възможно само когато не тече сесия. След това Focus Lock се връща към настройката."
+    "message": "Изтриването на всичко е налично само докато не тече сесия. След това Focus Lock се връща към първоначалната настройка."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Локалната история не можа да се изтрие. Опитай отново."
+    "message": "Локалната история не можа да бъде изтрита. Опитай отново."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Отдалечените данни от синхронизацията на Chrome не можаха да се изтрият. Опитай отново."
+    "message": "Отдалечените данни в Chrome Sync не можаха да бъдат изтрити. Опитай отново."
   },
   "options_privacy_error_all_clear": {
-    "message": "Всички данни на Focus Lock не можаха да се изтрият. Опитай отново."
+    "message": "Всички данни на Focus Lock не можаха да бъдат изтрити. Опитай отново."
   },
   "options_privacy_error_sync_write": {
-    "message": "Синхронизацията на Chrome не можа да запази последните ти промени. Локалното запазване е в безопасност."
+    "message": "Chrome Sync не успя да запази последните ти промени. Локалният запис е в безопасност."
   },
   "options_privacy_error_request": {
-    "message": "Заявката не можа да се изпълни. Опитай отново."
+    "message": "Заявката не можа да бъде изпълнена. Опитай отново."
   },
   "options_privacy_website_access_updated": {
-    "message": "Достъпът до сайтове е обновен."
+    "message": "Достъпът до уебсайтове е обновен."
   },
   "options_privacy_website_access_denied": {
-    "message": "Достъпът до сайтове не беше разрешен."
+    "message": "Достъпът до уебсайтове не бе предоставен."
   },
   "options_privacy_error_website_access": {
-    "message": "Достъпът до сайтове не можа да се обнови. Опитай отново."
+    "message": "Достъпът до уебсайтове не можа да бъде обновен. Опитай отново."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Блокирането на сайтове е включено."
+    "message": "Блокирането на уебсайтове е активирано."
   },
   "options_privacy_error_export": {
-    "message": "Дневникът със събития не можа да се изнесе."
+    "message": "Неуспешен експорт на журнала със събития."
   },
   "options_privacy_error_export_retry": {
-    "message": "Дневникът със събития не можа да се изнесе. Опитай отново."
+    "message": "Неуспешен експорт на журнала със събития. Опитай отново."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Настройките за разрешения на Chrome не можаха да се отворят. Опитай отново."
+    "message": "Неуспешно отваряне на настройките за разрешения на Chrome. Опитай отново."
   },
   "options_privacy_chrome_settings_opened": {
     "message": "Настройките за разрешения на Chrome са отворени."
@@ -748,102 +748,102 @@
     "message": "Синхронизирай данните на Focus Lock между устройства с Chrome"
   },
   "options_privacy_sync_enabled": {
-    "message": "Синхронизацията на Chrome е включена."
+    "message": "Chrome Sync е активиран."
   },
   "options_privacy_sync_disabled": {
-    "message": "Синхронизацията на Chrome е изключена."
+    "message": "Chrome Sync е изключен."
   },
   "options_privacy_sync_saving": {
-    "message": "Синхронизацията на Chrome още запазва последните ти промени."
+    "message": "Chrome Sync все още запазва последните ти промени."
   },
   "options_privacy_sync_on": {
-    "message": "Синхронизацията на Chrome е включена."
+    "message": "Chrome Sync е включен."
   },
   "options_privacy_sync_off": {
-    "message": "Синхронизацията на Chrome е изключена."
+    "message": "Chrome Sync е изключен."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Промените са запазени в синхронизацията на Chrome."
+    "message": "Промените в Chrome Sync са запазени."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Опитай отново да включиш синхронизацията на Chrome"
+    "message": "Опитай отново да активираш Chrome Sync"
   },
   "options_privacy_retry_sync": {
-    "message": "Опитай синхронизацията на Chrome отново"
+    "message": "Опитай отново Chrome Sync"
   },
   "options_privacy_scope_synced": {
-    "message": "Синхронизирано"
+    "message": "Синхронизирани"
   },
   "options_privacy_scope_local_only": {
     "message": "Само локално"
   },
   "options_privacy_developer_note": {
-    "message": "Нищо не се изпраща до разработчика на Focus Lock."
+    "message": "Нищо не се изпраща на разработчика на Focus Lock."
   },
   "options_privacy_local_log_heading": {
-    "message": "Локален дневник със събития"
+    "message": "Локален журнал със събития"
   },
   "options_privacy_local_log_detail": {
-    "message": "Изнеси подробния локален дневник или изтрий локалната история на сърфиране и сесии."
+    "message": "Експортирай подробния локален журнал или изтрий локалната история на браузването и сесиите."
   },
   "options_privacy_export_local_log": {
-    "message": "Изнеси локалния дневник със събития"
+    "message": "Експортирай локалния журнал със събития"
   },
   "options_privacy_local_log_exported": {
-    "message": "Локалният дневник със събития е изнесен."
+    "message": "Локалният журнал със събития е експортиран."
   },
   "options_privacy_delete_local_history": {
     "message": "Изтрий локалната история"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Отдалечени данни в синхронизацията"
+    "message": "Отдалечени данни в Sync"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Изтрий копията на Focus Lock, останали в синхронизацията на Chrome, без да променяш това устройство."
+    "message": "Изтрий копията на Focus Lock, останали в Chrome Sync, без да променяш това устройство."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Изтрий отдалечените данни от синхронизацията"
+    "message": "Изтрий отдалечените данни в Sync"
   },
   "options_privacy_all_data_heading": {
     "message": "Всички данни на Focus Lock"
   },
   "options_privacy_all_data_detail": {
-    "message": "Изтрий всеки запис на Focus Lock на това устройство и всички копия на Focus Lock, останали в синхронизацията на Chrome, после започни отначало от настройката. Достъпно, докато не тече сесия."
+    "message": "Изтрий всеки запис на Focus Lock на това устройство и всички негови копия, останали в Chrome Sync, след което започни отново от първоначалната настройка. Налично, докато не тече сесия."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "Изтриването на всички данни на Focus Lock продължава."
+    "message": "Продължаване на изтриването на всички данни на Focus Lock."
   },
   "options_privacy_retry_local_history": {
-    "message": "Опитай отново да изтриеш локалната история"
+    "message": "Опитай отново изтриването на локалната история"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Опитай отново да изтриеш отдалечените данни от синхронизацията"
+    "message": "Опитай отново изтриването на отдалечените данни в Sync"
   },
   "options_privacy_retry_all_data": {
-    "message": "Опитай отново да изтриеш всички данни"
+    "message": "Опитай отново изтриването на всички данни"
   },
   "options_error_load": {
-    "message": "Настройките не можаха да се заредят. Презареди страницата, за да опиташ отново."
+    "message": "Неуспешно зареждане на настройките. Презареди страницата, за да опиташ отново."
   },
   "options_error_retry_boot": {
-    "message": "Focus Lock не можа да се стартира отново. Опитай отново."
+    "message": "Focus Lock не можа да се рестартира. Опитай отново."
   },
   "options_error_refresh_privacy": {
-    "message": "Настройките за поверителност не можаха да се обновят. Презареди страницата."
+    "message": "Неуспешно опресняване на настройките за поверителност. Презареди страницата."
   },
   "options_error_website_blocking": {
-    "message": "Блокирането на сайтове не можа да се обнови. Опитай отново."
+    "message": "Неуспешно обновяване на блокирането на уебсайтове. Опитай отново."
   },
   "options_error_change_sync": {
-    "message": "Синхронизацията на Chrome не можа да се промени. Опитай отново."
+    "message": "Неуспешна промяна на Chrome Sync. Опитай отново."
   },
   "options_error_retry_sync": {
-    "message": "Синхронизацията на Chrome не можа да се опита отново. Опитай отново."
+    "message": "Неуспешен повторен опит за Chrome Sync. Опитай отново."
   },
   "options_error_save_settings": {
-    "message": "Настройките не можаха да се запазят. Презареди страницата и опитай отново."
+    "message": "Неуспешен запис на настройките. Презареди страницата и опитай отново."
   },
   "options_error_save_lists": {
-    "message": "Списъците не можаха да се запазят. Презареди страницата и опитай отново."
+    "message": "Неуспешен запис на списъците. Презареди страницата и опитай отново."
   }
 }

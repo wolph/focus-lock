@@ -1,1 +1,630 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "بعدی: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "تنظیمات"
+  },
+  "popup_open_settings_failed": {
+    "message": "تنظیمات باز نشد. دوباره تلاش کنید."
+  },
+  "popup_settings_load_failed": {
+    "message": "تنظیمات جلسه بارگذاری نشد. برای تلاش دوباره پنجره را دوباره باز کنید. پیش‌فرض‌ها نمایش داده می‌شوند."
+  },
+  "popup_open_setup_failed": {
+    "message": "راه‌اندازی باز نشد. دوباره تلاش کنید."
+  },
+  "popup_setup_required_heading": {
+    "message": "راه‌اندازی Focus Lock را کامل کنید"
+  },
+  "popup_setup_required_body": {
+    "message": "پیش از شروع جلسه، فهرست‌های آغازین، دسترسی به سایت‌ها و حالت ذخیره‌سازی را انتخاب کنید."
+  },
+  "popup_open_setup_button": {
+    "message": "باز کردن راه‌اندازی"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "مسدودسازی سایت‌ها تأیید نشد. دوباره تلاش کنید."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "مسدودسازی سایت‌ها فعال نشد. دوباره تلاش کنید."
+  },
+  "popup_blocking_off_heading": {
+    "message": "مسدودسازی سایت‌ها خاموش است"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock تا وقتی Chrome دسترسی به سایت‌ها را ندهد و مسدودسازی فعال نشود نمی‌تواند جلسه‌ای را آغاز کند."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome دسترسی به سایت‌ها را نداد. مسدودسازی سایت‌ها همچنان خاموش است."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "دسترسی به سایت‌ها داده شد، اما Focus Lock نتوانست مسدودسازی را فعال کند. راه‌اندازی را دوباره انجام دهید یا افزونه را بارگذاری مجدد کنید."
+  },
+  "popup_enable_blocking_button": {
+    "message": "فعال کردن مسدودسازی سایت‌ها"
+  },
+  "popup_retry_button": {
+    "message": "تلاش دوباره"
+  },
+  "popup_notice_access_revoked": {
+    "message": "جلسه شما پایان یافت چون دسترسی به سایت‌ها برداشته شد."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "جلسه شما پایان یافت چون Focus Lock نتوانست مسدودسازی سایت‌ها را فعال کند."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "این اعلان بسته نشد. دوباره تلاش کنید."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "بستن اعلان دسترسی به سایت‌ها"
+  },
+  "popup_dismiss_button": {
+    "message": "بستن"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lock دوباره راه‌اندازی نشد. دوباره تلاش کنید."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock شروع نشد"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "دلیل آن خوانده نشد."
+  },
+  "popup_reset_runtime_button": {
+    "message": "بازنشانی اجرای محلی"
+  },
+  "popup_reset_runtime_note": {
+    "message": "تنظیمات، فهرست‌ها و آمار شما را نگه می‌دارد. وضعیت جلسه فعلی را پاک می‌کند."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "حذف همه چیز و شروع دوباره"
+  },
+  "popup_keep_data_button": {
+    "message": "داده‌هایم را نگه دار"
+  },
+  "popup_delete_all_button": {
+    "message": "حذف همه داده‌های Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "وضعیت راه‌اندازی در دسترس نیست. برای تلاش دوباره Focus Lock را بارگذاری مجدد کنید."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "وضعیت تمرکز در دسترس نیست"
+  },
+  "popup_action_in_progress": {
+    "message": "کنش در حال انجام"
+  },
+  "popup_active_site_checking": {
+    "message": "در حال بررسی سایت فعال"
+  },
+  "popup_active_site_unsupported": {
+    "message": "برای بازگشایی، یک سایت معمولی باز کنید"
+  },
+  "popup_active_site_unknown": {
+    "message": "سایت فعال شناسایی نشد"
+  },
+  "popup_active_site_error": {
+    "message": "سایت فعال شناسایی نشد."
+  },
+  "popup_resume_now": {
+    "message": "ازسرگیری اکنون"
+  },
+  "popup_start_next_focus_early": {
+    "message": "شروع زودتر تمرکز بعدی"
+  },
+  "popup_unlock_this_site": {
+    "message": "بازگشایی این سایت"
+  },
+  "popup_unlock_all_sites": {
+    "message": "بازگشایی همه سایت‌ها"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ دسترسی، $CREDIT$ اعتبار",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ دسترسی، $CREDIT$ اعتبار - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "انتخاب زبانه کار"
+  },
+  "popup_change_work_tab_button": {
+    "message": "تغییر زبانه کار"
+  },
+  "popup_session_actions_summary": {
+    "message": "کنش‌های جلسه"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ اعتبار دسترسی به سایت",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "افزودن دامنه مجاز"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "افزودن دامنه مجاز"
+  },
+  "popup_add_button": {
+    "message": "افزودن"
+  },
+  "popup_draft_allowed_only": {
+    "message": "فقط $COUNT$ قانون سایت مجاز. سایر سایت‌ها مسدودند.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ دسته مسدود، $RULES$ قانون اضافی.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "قفل سخت‌گیرانه. پایان زودهنگام ممکن نیست."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "هر زمان می‌توان پایان داد."
+  },
+  "popup_draft_stop_friction": {
+    "message": "پایان پس از $SECONDS$ ثانیه انتظار.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "پایان پس از $SECONDS$ ثانیه انتظار و یک عبارت تأیید.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "طول جلسه"
+  },
+  "popup_custom_minutes_label": {
+    "message": "دقیقه سفارشی"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "دقیقه"
+  },
+  "popup_gate_force_end": {
+    "message": "نادیده گرفتن انتظار و پایان دادن"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "تمرکز را ادامه دهید"
+  },
+  "popup_gate_phrase_label": {
+    "message": "تایپ کنید:"
+  },
+  "popup_gate_update_failed": {
+    "message": "دروازه به‌روز نشد. دوباره تلاش کنید."
+  },
+  "popup_gate_intention": {
+    "message": "شما گفتید: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "لحظه‌ای برای تصمیم:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "از $TOTAL$ ث",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "بازگشت به کار"
+  },
+  "popup_destination_unavailable": {
+    "message": "مقصد در دسترس نیست"
+  },
+  "popup_back_to_work_name": {
+    "message": "بازگشت به کار: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "بازگشت به کار: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "ویرایش دسته‌ها تا بارگذاری دوباره فهرست‌های سایت‌های مسدود غیرفعال است."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "دسته‌های مسدود"
+  },
+  "popup_show_full_domain": {
+    "message": "نمایش دامنه کامل: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "نمایش عبارت باقاعده کامل: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "دامنه"
+  },
+  "popup_rule_kind_regex": {
+    "message": "عبارت باقاعده"
+  },
+  "popup_category_sites_label": {
+    "message": "سایت‌های $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ سایت",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ سایت",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "و $COUNT$ سایت دیگر",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "و $COUNT$ سایت دیگر",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "استثناهای مجاز"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "قوانین مسدودسازی اضافی"
+  },
+  "popup_no_extra_blocked": {
+    "message": "قانون مسدودسازی اضافی وجود ندارد."
+  },
+  "popup_allowed_heading": {
+    "message": "سایت‌ها و قوانین مجاز"
+  },
+  "popup_no_allowed_sites": {
+    "message": "هنوز هیچ سایتی مجاز نیست."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "چه چیزی مسدود می‌شود"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "چه چیزی مجاز می‌شود"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ از $TOTAL$ دسته انتخاب شد",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ قانون مسدودسازی اضافی",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ قانون مسدودسازی اضافی",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ قانون مجاز",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ قانون مجاز",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "تغییر سایت‌های مجاز و قوانین در اینجا فقط بر همین جلسه اثر می‌گذارد. باقی همه مسدودند."
+  },
+  "popup_scope_blacklist": {
+    "message": "تغییر دسته‌ها و قوانین در اینجا فقط بر همین جلسه اثر می‌گذارد."
+  },
+  "popup_open_settings_defaults": {
+    "message": "باز کردن تنظیمات برای پیش‌فرض‌های دائمی"
+  },
+  "popup_rule_details_label": {
+    "message": "جزئیات قوانین جلسه"
+  },
+  "popup_session_type_legend": {
+    "message": "نوع جلسه"
+  },
+  "popup_session_type_flexible": {
+    "message": "انعطاف‌پذیر"
+  },
+  "popup_session_type_friction": {
+    "message": "اصطکاک"
+  },
+  "popup_session_type_hard": {
+    "message": "قفل سخت‌گیرانه"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "هر وقت خواستید جلسه را فوراً پایان دهید."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "پایان زودهنگام به $WAIT$ نیاز دارد. نیازی به تایپ نیست.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "پایان زودهنگام به $WAIT$ و تأیید تایپی نیاز دارد.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "جلسه را نمی‌توان زودتر پایان داد. اعتبار دسترسی به سایت همچنان کار می‌کند."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "دسته‌های انتخابی و قوانین اضافی مسدودند. سایر سایت‌ها در دسترس می‌مانند."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "فقط سایت‌های فهرست‌شده در دسترس‌اند. هر سایت دیگری مسدود است."
+  },
+  "popup_invalid_duration_error": {
+    "message": "طول جلسه‌ای بزرگ‌تر از صفر دقیقه وارد کنید."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "پیش‌فرض‌ها تغییر کردند، اما فهرست‌های فعلی بارگذاری نشدند. پنجره را دوباره باز کنید."
+  },
+  "popup_no_work_tab_option": {
+    "message": "بدون زبانه کار (اختیاری)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "زبانه انتخابی در دسترس نیست - دیگری را انتخاب کنید"
+  },
+  "popup_cycles_label": {
+    "message": "چرخه‌ها: $FOCUS$ دقیقه تمرکز، $SHORT_BREAK$ دقیقه استراحت، $LONG_BREAK$ دقیقه استراحت بلند در هر چرخه $LONG_EVERY$",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "قصد"
+  },
+  "popup_intention_placeholder": {
+    "message": "روی چه کاری کار می‌کنید؟"
+  },
+  "popup_work_tab_named": {
+    "message": "زبانه کار: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "تغییر"
+  },
+  "popup_session_settings_summary": {
+    "message": "تنظیمات جلسه"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "یک زبانه کار انتخاب کنید"
+  },
+  "popup_work_tab_select_label": {
+    "message": "زبانه کار"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (فعلی)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "حالت مسدودسازی"
+  },
+  "popup_invalid_time_label": {
+    "message": "زمان نامعتبر"
+  },
+  "popup_start_focus_label": {
+    "message": "شروع تمرکز $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "دامنه معتبری مانند docs.example.com وارد کنید."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "زبانه‌های کار بارگذاری نشدند. برای تلاش دوباره پنجره را دوباره باز کنید."
+  },
+  "popup_use_this_tab": {
+    "message": "استفاده از این زبانه"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "این زبانه برای کار در دسترس نیست. زبانه باز دیگری را انتخاب کنید."
+  },
+  "popup_checking_current_tab": {
+    "message": "در حال بررسی زبانه فعلی..."
+  },
+  "popup_finding_current_tab": {
+    "message": "در حال یافتن زبانه فعلی شما..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "زبانه فعلی شما بارگذاری نشد. دوباره تلاش کنید."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "زبانه کار خود را انتخاب یا جایگزین کنید."
+  },
+  "popup_saving_work_tab": {
+    "message": "در حال ذخیره زبانه کار..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "زبانه کار ذخیره نشد. دوباره تلاش کنید."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "یک زبانه باز انتخاب کنید"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "یا زبانه دیگری انتخاب کنید"
+  },
+  "popup_start_failed": {
+    "message": "جلسه شروع نشد. دوباره تلاش کنید."
+  }
+}

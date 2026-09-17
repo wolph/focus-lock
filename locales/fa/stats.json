@@ -1,1 +1,317 @@
-{}
+{
+  "stats_document_title": {
+    "message": "آمار Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "کارنامه تمرکز شما"
+  },
+  "stats_loading": {
+    "message": "در حال بارگذاری آمار شما."
+  },
+  "stats_load_error": {
+    "message": "آمار بارگذاری نشد. برای تلاش دوباره صفحه را بارگذاری مجدد کنید."
+  },
+  "stats_partial_error_both": {
+    "message": "تلاش‌های ساعتی و تنظیمات اعتبار دسترسی به سایت در دسترس نیستند."
+  },
+  "stats_partial_error_attempts": {
+    "message": "تلاش‌های ساعتی در دسترس نیستند."
+  },
+  "stats_partial_error_economy": {
+    "message": "تنظیمات اعتبار دسترسی به سایت در دسترس نیست."
+  },
+  "stats_scope_synced": {
+    "message": "مجموع‌های همگام‌شده از این حساب Chrome. پنل‌های فقط محلی نشان‌دار شده‌اند."
+  },
+  "stats_scope_local": {
+    "message": "مجموع‌ها از این رایانه. آمار Focus Lock همگام نمی‌شود."
+  },
+  "stats_scope_checking": {
+    "message": "در حال بررسی اینکه آیا این مجموع‌ها همگام شده‌اند."
+  },
+  "stats_scope_unavailable": {
+    "message": "دامنه آمار در دسترس نیست. مجموع‌ها ممکن است شامل داده‌های همگام‌شده باشند. تلاش‌های ساعتی و جلسه‌های اخیر از این رایانه‌اند."
+  },
+  "stats_scope_retry": {
+    "message": "بررسی دوباره دامنه"
+  },
+  "stats_empty": {
+    "message": "آمار پس از نخستین جلسه شما نمایان می‌شود."
+  },
+  "stats_tile_focus_today": {
+    "message": "تمرکز امروز"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "تمرکز در ۷ روز گذشته"
+  },
+  "stats_tile_attempts_today": {
+    "message": "تلاش‌های مسدودشده امروز"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "درخواست‌های دروازه که امروز رها شدند"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "اعتبار دسترسی خرج‌شده امروز"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "همه سایت‌ها $ALL_SITES$، یک سایت $ONE_SITE$، $EARNED$ کسب‌شده",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ کسب‌شده",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "زنجیره"
+  },
+  "stats_streak_empty": {
+    "message": "زنجیره شما با نخستین روز تمرکزتان آغاز می‌شود."
+  },
+  "stats_streak_unit_one": {
+    "message": "روز"
+  },
+  "stats_streak_unit_other": {
+    "message": "روز"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ ژتون انجماد ذخیره شده",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ ژتون انجماد ذخیره شده",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "انجماد زنجیره: یک روز از دست رفته، جبران شد"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ روز فعال در این ماه ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ روز فعال در این ماه ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "روزهای فعال در $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "هیچ روز فعالی در $MONTH$ نیست.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "تمرکز، ۱۴ روز گذشته"
+  },
+  "stats_chart_focus_empty": {
+    "message": "دقایق تمرکز پس از نخستین جلسه شما نمایان می‌شود."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "تلاش‌های مسدودشده، ۱۴ روز گذشته"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "تلاش‌های مسدودشده به‌محض آنکه جلسه‌ای یکی را بگیرد اینجا نمایان می‌شوند."
+  },
+  "stats_chart_sites_heading": {
+    "message": "بیشترین سایت‌های مسدودشده، ۳۰ روز گذشته"
+  },
+  "stats_chart_sites_empty": {
+    "message": "هنوز چیزی مسدود نشده است. آغاز خوبی است."
+  },
+  "stats_chart_hours_heading": {
+    "message": "تلاش‌ها بر حسب ساعت، فقط این رایانه"
+  },
+  "stats_chart_other_site": {
+    "message": "سایر"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$د",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ مسدودشده",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ مسدودشده",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "نمودار میله‌ای"
+  },
+  "stats_chart_name_hbar": {
+    "message": "نمودار میله‌ای افقی"
+  },
+  "stats_chart_description_bar": {
+    "message": "نمودار میله‌ای. برای حرکت میان نقاط داده از صفحه‌کلید استفاده کنید، یا نمایش به‌صورت جدول را برای همان مقادیر باز کنید."
+  },
+  "stats_chart_description_hbar": {
+    "message": "نمودار میله‌ای افقی. برای حرکت میان نقاط داده از صفحه‌کلید استفاده کنید، یا نمایش به‌صورت جدول را برای همان مقادیر باز کنید."
+  },
+  "stats_chart_empty_default": {
+    "message": "هنوز داده‌ای نیست."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "نمایش به‌صورت جدول"
+  },
+  "stats_chart_table_category": {
+    "message": "دسته"
+  },
+  "stats_chart_table_value": {
+    "message": "مقدار"
+  },
+  "stats_heat_strip_label": {
+    "message": "نوار حرارتی تلاش‌های مسدودشده در ۲۴ ساعت"
+  },
+  "stats_sessions_heading": {
+    "message": "جلسه‌های اخیر روی این رایانه"
+  },
+  "stats_sessions_empty": {
+    "message": "نخستین جلسه شما اینجا نمایان می‌شود."
+  },
+  "stats_sessions_col_date": {
+    "message": "تاریخ"
+  },
+  "stats_sessions_col_start": {
+    "message": "شروع"
+  },
+  "stats_sessions_col_planned": {
+    "message": "برنامه‌ریزی‌شده"
+  },
+  "stats_sessions_col_focused": {
+    "message": "متمرکز"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "همه سایت‌ها"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "یک سایت"
+  },
+  "stats_sessions_col_intention": {
+    "message": "قصد"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "نتیجه"
+  },
+  "stats_sessions_col_source": {
+    "message": "منبع"
+  },
+  "stats_session_no_intention": {
+    "message": "بدون قصد"
+  },
+  "stats_session_article_label": {
+    "message": "جلسه: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "دستی"
+  },
+  "stats_session_source_schedule": {
+    "message": "زمان‌بندی"
+  },
+  "stats_session_source_scheduled": {
+    "message": "زمان‌بندی‌شده"
+  },
+  "stats_outcome_completed": {
+    "message": "کامل‌شده"
+  },
+  "stats_outcome_ended_early": {
+    "message": "زودتر پایان یافت"
+  },
+  "stats_outcome_running": {
+    "message": "در حال اجرا"
+  }
+}

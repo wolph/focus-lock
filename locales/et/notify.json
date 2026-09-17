@@ -1,9 +1,9 @@
 {
   "notify_session_complete_title": {
-    "message": "Fookusseanss lõppenud"
+    "message": "Keskendumisseanss lõppenud"
   },
   "notify_session_complete_body": {
-    "message": "Sinu fookusseanss lõppes."
+    "message": "Sinu keskendumisseanss lõppes."
   },
   "notify_schedule_window_body": {
     "message": "Lukustatud kuni $END$.",
@@ -15,19 +15,19 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Ajakava seanss ei saanud alata"
+    "message": "Keskendumise ajakava ei saanud alata"
   },
   "notify_schedule_unavailable_body": {
     "message": "Veebisaitide blokeerimine ei ole lubatud. Lõpeta seadistamine või anna veebisaidi juurdepääs, seejärel proovi uuesti."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Seadistamine lõpetati teises sakis."
+    "message": "Seadistamine lõpetati teisel vahekaardil."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Seadistus muutus teises sakis. Uusimad valikud laaditi uuesti."
+    "message": "Seadistus muutus teisel vahekaardil. Uusimad valikud laaditi uuesti."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Seadistus muutus teises sakis. Värskenda seadistust enne lõpetamist."
+    "message": "Seadistus muutus teisel vahekaardil. Värskenda seadistust enne lõpetamist."
   },
   "notify_setup_not_complete": {
     "message": "Seadistamine pole lõpetatud."
@@ -87,19 +87,19 @@
     "message": "Avatud väravat ei õnnestunud sulgeda. Proovi uuesti."
   },
   "notify_work_tab_unavailable": {
-    "message": "Töösakk pole saadaval."
+    "message": "Töö vahekaart pole saadaval."
   },
   "notify_settings_sync_limit": {
     "message": "Seaded ületavad Chrome'i sünkroonimise 8 KB piirmäära. Eemalda ajakava kirjeid või lühenda kavatsusi, seejärel proovi uuesti."
   },
   "notify_lists_sync_limit": {
-    "message": "Nimekirjad ületavad Chrome'i sünkroonimise 8 KB piirmäära. Eemalda kohandatud või lubamisnimekirja reegleid, seejärel proovi uuesti."
+    "message": "Loendid ületavad Chrome'i sünkroonimise 8 KB piirmäära. Eemalda kohandatud või lubamisloendi reegleid, seejärel proovi uuesti."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "range seanss käib: blokeeritud saitide eemaldamine vabaneb, kui see lõpeb"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "range seanss käib: uued lubamisnimekirja kirjed vabanevad, kui see lõpeb"
+    "message": "range seanss käib: uued lubamisloendi kirjed vabanevad, kui see lõpeb"
   },
   "notify_guard_lists_disable_category": {
     "message": "range seanss käib: kategooriate väljalülitamine vabaneb, kui see lõpeb"

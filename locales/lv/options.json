@@ -1,6 +1,6 @@
 {
   "options_page_title": {
-    "message": "Focus Lock opcijas"
+    "message": "Focus Lock parametri"
   },
   "options_heading": {
     "message": "Focus Lock iestatījumi"
@@ -18,31 +18,31 @@
     "message": "Bloķēšana"
   },
   "options_blocking_help": {
-    "message": "Tavi noteikumi bloķē bloķēšanas saraksta sesijās. Atļauto saraksts ir tas, kas paliek sasniedzams atļauto saraksta sesijās. Iekļautās kategorijas bloķē biežākos laika zagļus."
+    "message": "Pielāgotie noteikumi bloķē bloķēšanas saraksta sesijās. Atļauju saraksts ir tas, kas paliek pieejams atļauju saraksta sesijās. Pievienotās kategorijas bloķē biežākos laika izšķērdētājus."
   },
   "options_custom_blacklist_title": {
-    "message": "Paša bloķēšanas saraksts"
+    "message": "Pielāgots bloķēšanas saraksts"
   },
   "options_whitelist_title": {
-    "message": "Atļauto saraksts"
+    "message": "Atļauju saraksts"
   },
   "options_bundled_categories_heading": {
-    "message": "Iekļautās kategorijas"
+    "message": "Pievienotās kategorijas"
   },
   "options_bundled_categories_help": {
-    "message": "Gatavi biežāko laika zagļu saraksti. Ieslēdz veselu kategoriju, tad atver to un atstāj sasniedzamas atsevišķas vietnes."
+    "message": "Sagatavoti biežāko laika izšķērdētāju saraksti. Pārslēdz visu kategoriju, tad atver to, lai atsevišķas vietnes paliktu pieejamas."
   },
   "options_schedule_heading": {
     "message": "Grafiks"
   },
   "options_schedule_help": {
-    "message": "Šajos logos sesijas sākas pašas. Šeit uzstādītais stingrums attiecas uz visu logu."
+    "message": "Šajos laika logos sesijas sākas pašas. Šeit iestatītais stingrības līmenis attiecas uz visu laika logu."
   },
   "options_behavior_heading": {
     "message": "Sesijas uzvedība"
   },
   "options_budget_heading": {
-    "message": "Vietņu piekļuves kredīts"
+    "message": "Vietnes piekļuves kredīts"
   },
   "options_notifications_heading": {
     "message": "Paziņojumi"
@@ -63,13 +63,13 @@
     "message": "Dzēst visus Focus Lock datus"
   },
   "options_dirty_saving": {
-    "message": "Saglabā izmaiņas"
+    "message": "Izmaiņas tiek saglabātas"
   },
   "options_dirty_unsaved": {
     "message": "Nesaglabātas izmaiņas"
   },
   "options_dirty_clean": {
-    "message": "Nesaglabātu izmaiņu nav"
+    "message": "Nav nesaglabātu izmaiņu"
   },
   "options_dirty_discard": {
     "message": "Atmest izmaiņas"
@@ -78,7 +78,7 @@
     "message": "Saglabāt izmaiņas"
   },
   "options_session_status_label": {
-    "message": "Sesijas stāvoklis"
+    "message": "Sesijas statuss"
   },
   "options_rule_kind_host_badge": {
     "message": "domēns"
@@ -99,7 +99,7 @@
     }
   },
   "options_rules_empty": {
-    "message": "Noteikumu vēl nav."
+    "message": "Vēl nav neviena noteikuma."
   },
   "options_rule_kind_aria": {
     "message": "Noteikuma veids"
@@ -111,7 +111,7 @@
     "message": "regex (pilns URL)"
   },
   "options_rule_pattern_aria": {
-    "message": "Šablons"
+    "message": "Paraugs"
   },
   "options_rule_pattern_placeholder_host": {
     "message": "facebook.com"
@@ -123,10 +123,10 @@
     "message": "Pievienot noteikumu"
   },
   "options_rules_help": {
-    "message": "facebook.com aptver šo domēnu un visus tā apakšdomēnus. news.ycombinator.com aptver šo apakšdomēnu un visu zem tā. /youtube\\.com\\/shorts/ salīdzina pilnu URL kā regulāro izteiksmi."
+    "message": "facebook.com aptver šo domēnu un visus apakšdomēnus. news.ycombinator.com aptver šo apakšdomēnu un visu, kas zem tā. /youtube\\.com\\/shorts/ atbilst pilnajam URL kā regulārā izteiksme."
   },
   "options_number_error_positive": {
-    "message": "„$LABEL$” jābūt pozitīvam veselam skaitlim.",
+    "message": "$LABEL$ jābūt pozitīvam veselam skaitlim.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -135,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "„$LABEL$” jābūt veselam skaitlim, kas nav mazāks par nulli.",
+    "message": "$LABEL$ jābūt veselam skaitlim, kas ir nulle vai lielāks.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -144,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "„$LABEL$” nedrīkst būt mazāks par nulli.",
+    "message": "$LABEL$ jābūt nullei vai lielākam skaitlim.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -153,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "„$LABEL$” jāiekļaujas atbalstītajā minūšu diapazonā.",
+    "message": "$LABEL$ jābūt atbalstītajā minūšu diapazonā.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -162,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "„$LABEL$” jāiekļaujas atbalstītajā dienu diapazonā.",
+    "message": "$LABEL$ jābūt atbalstītajā dienu diapazonā.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -174,43 +174,43 @@
     "message": "Sesijas noklusējumi"
   },
   "options_session_defaults_help": {
-    "message": "Režīms un stingrums tiek fiksēti sesijas sākumā. Ar šīm vērtībām atveras sākšanas forma."
+    "message": "Režīms un stingrības līmenis tiek nofiksēti, sesijai sākoties. Šīs ir vērtības, ar kurām atveras sākuma forma."
   },
   "options_preset_short_label": {
-    "message": "Īsās sesijas sagatave (minūtēs)"
+    "message": "Īsās sesijas veidne (minūtēs)"
   },
   "options_preset_default_label": {
-    "message": "Noklusētās sesijas sagatave (minūtēs)"
+    "message": "Noklusējuma sesijas veidne (minūtēs)"
   },
   "options_preset_deep_label": {
-    "message": "Garās sesijas sagatave (minūtēs)"
+    "message": "Padziļinātās sesijas veidne (minūtēs)"
   },
   "options_mode_blacklist_label": {
-    "message": "Bloķēšanas saraksts: bloķēt uzskaitītās vietnes"
+    "message": "Bloķēšanas saraksts: bloķē sarakstā iekļautās vietnes"
   },
   "options_mode_whitelist_label": {
-    "message": "Atļauto saraksts: atļaut tikai uzskaitītās vietnes"
+    "message": "Atļauju saraksts: atļauj tikai sarakstā iekļautās vietnes"
   },
   "options_strictness_flexible_label": {
-    "message": "Elastīga: beidz sesiju, kad vēlies"
+    "message": "Elastīgs: beidz sesiju, kad vien vēlies"
   },
   "options_strictness_friction_label": {
-    "message": "Berze: beigšana pirms laika iet caur uzstādītajiem apdomāšanās vārtiem"
+    "message": "Aizkave: priekšlaicīgai beigšanai jāiziet iestatītie pārdomu vārti"
   },
   "options_strictness_hard_label": {
-    "message": "Stingra: beigt pirms laika nevar, tikai pagaidu vietņu piekļuve"
+    "message": "Stingrs: nav priekšlaicīgas beigšanas, iespējama tikai īslaicīga vietņu piekļuve"
   },
   "options_cycle_heading": {
-    "message": "Koncentrēšanās un pārtraukumu cikls"
+    "message": "Fokusa posmu un pārtraukumu cikls"
   },
   "options_cycle_help": {
-    "message": "Noklusējumi: 25 minūtes koncentrēšanās, 5 minūšu pārtraukums, 15 minūšu garais pārtraukums ik pēc 4. cikla. Pētījumos plānoti pārtraukumi noskaņojumam un koncentrēšanās spējai palīdz vairāk nekā pārtraukumi pēc izjūtas. Precīzas minūtes ir vienošanās, nevis zinātne."
+    "message": "Noklusējums: 25 minūšu fokuss, 5 minūšu pārtraukums, 15 minūšu garais pārtraukums ik pēc 4. cikla. Pētījumu izlasēs plānoti pārtraukumi pārspēj pārtraukumus pēc pašsajūtas gan noskaņojumam, gan koncentrēšanās spējai. Precīzās minūtes ir vienošanās, nevis zinātne."
   },
   "options_cycle_default_label": {
-    "message": "Pēc noklusējuma dalīt koncentrēšanās un pārtraukumu ciklos"
+    "message": "Pēc noklusējuma cikliski mainīt fokusa posmus un pārtraukumus"
   },
   "options_focus_minutes_label": {
-    "message": "Koncentrēšanās minūtes"
+    "message": "Fokusa minūtes"
   },
   "options_short_break_minutes_label": {
     "message": "Īsā pārtraukuma minūtes"
@@ -219,13 +219,13 @@
     "message": "Garā pārtraukuma minūtes"
   },
   "options_long_every_label": {
-    "message": "Garais pārtraukums ik pēc N cikla"
+    "message": "Garais pārtraukums ik pēc N. cikla"
   },
   "options_gate_heading": {
-    "message": "Apdomāšanās vārti"
+    "message": "Pārdomu vārti"
   },
   "options_gate_help": {
-    "message": "10 sekunžu gaidīšana ar skaidru atgriešanās pie darba pogu jūtami samazina impulsīvus apmeklējumus (lauka pētījums, PNAS 2023). Garāka gaidīšana un ierakstīts teikums šo efektu aptuveni dubulto."
+    "message": "10 sekunžu gaidīšana ar nepārprotamu pogu darba atsākšanai izmērāmi samazina impulsīvus apmeklējumus (lauka pētījums, PNAS, 2023). Garāks gaidīšanas laiks un teikuma pierakstīšana efektu aptuveni dubulto."
   },
   "options_gate_wait_one": {
     "message": "Gaidīt $COUNT$ sekundi",
@@ -249,46 +249,46 @@
     "message": "Pielāgots"
   },
   "options_custom_delay_label": {
-    "message": "Pielāgota gaidīšana (sekundēs)"
+    "message": "Pielāgota aizkave (sekundēs)"
   },
   "options_custom_delay_error": {
-    "message": "Pielāgotai gaidīšanai jābūt veselam sekunžu skaitam, kas lielāks par nulli."
+    "message": "Pielāgotajai aizkavei jābūt pozitīvam veselam sekunžu skaitam."
   },
   "options_gate_typed_phrase_label": {
-    "message": "Prasīt arī ierakstīt teikumu"
+    "message": "Papildus pieprasīt teikuma pierakstīšanu"
   },
   "options_gate_force_end_label": {
-    "message": "Ieslēgt pogu „Neņemt vērā gaidīšanu un tomēr beigt”"
+    "message": "Iespējot pogu \"Ignorēt gaidīšanu un tomēr beigt\""
   },
   "options_credit_help": {
-    "message": "Vietņu piekļuves kredīts krājas, kamēr koncentrējies. Gan piekļuve visām vietnēm, gan vienas vietnes atbloķēšana tērē no viena atlikuma. Aiziet vari jebkurā brīdī, un kredītu tas netērē."
+    "message": "Vietnes piekļuves kredīts krājas, kamēr tu fokusējies. Gan piekļuve visām vietnēm, gan vienas vietnes atslēgšana tiek tērēta no tā paša krājuma. Tu vari jebkurā brīdī atkāpties, netērējot kredītu."
   },
   "options_earn_rate_label": {
-    "message": "Piekļuves minūtes uz 30 koncentrēšanās minūtēm"
+    "message": "Vietņu piekļuves minūtes par katrām 30 fokusēšanās minūtēm"
   },
   "options_credit_cap_label": {
-    "message": "Piekļuves kredīta ierobežojums (minūtēs)"
+    "message": "Vietnes piekļuves kredīta limits (minūtēs)"
   },
   "options_pause_length_label": {
-    "message": "Visu vietņu piekļuves ilgums (minūtēs)"
+    "message": "Piekļuves visām vietnēm ilgums (minūtēs)"
   },
   "options_unlock_length_label": {
-    "message": "Vienas vietnes atbloķēšanas ilgums (minūtēs)"
+    "message": "Vietnes atslēgšanas ilgums (minūtēs)"
   },
   "options_streak_heading": {
-    "message": "Sērija un glabāšana"
+    "message": "Sērija un datu glabāšana"
   },
   "options_streak_help": {
-    "message": "Sērija skaita dienas, kurās sasniedz mērķi. Ķēdi notur viena noklusētā sesija, un iesaldēšanas marķieris salabo nokavētu dienu."
+    "message": "Sērijā tiek skaitītas dienas, kurās sasniegts mērķis. Viena noklusējuma sesija saglabā ķēdi nepārtrauktu, un iesaldēšanas žetons labo izlaistu dienu."
   },
   "options_streak_goal_label": {
-    "message": "Dienas sērijas mērķis (koncentrēšanās minūtes)"
+    "message": "Dienas sērijas mērķis (fokusa minūtes)"
   },
   "options_freeze_interval_label": {
-    "message": "Iesaldēšanas marķieru intervāls (dienās)"
+    "message": "Iesaldēšanas žetona intervāls (dienās)"
   },
   "options_retention_label": {
-    "message": "Glabāt dienas statistiku (dienās)"
+    "message": "Saglabāt dienas statistiku (dienās)"
   },
   "options_category_on_announcement": {
     "message": "Kategorija $CATEGORY$ ieslēgta.",
@@ -324,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ atstāta sasniedzama.",
+    "message": "$HOST$ atstāta pieejama.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -342,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "Visas $CATEGORY$ vietnes atstātas sasniedzamas.",
+    "message": "Visas $CATEGORY$ vietnes atstātas pieejamas.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -351,10 +351,10 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "Kategoriju masveida darbības"
+    "message": "Kategoriju kopīgās darbības"
   },
   "options_selected_count": {
-    "message": "Atlasīts $COUNT$",
+    "message": "Atlasīti: $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Neatlasīts $COUNT$",
+    "message": "Neatlasīti: $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,10 +372,10 @@
     }
   },
   "options_select_all": {
-    "message": "Atlasīt visas"
+    "message": "Atlasīt visu"
   },
   "options_deselect_all": {
-    "message": "Noņemt atlasi visām"
+    "message": "Noņemt atlasi"
   },
   "options_select_all_categories_aria": {
     "message": "Atlasīt visas kategorijas"
@@ -384,7 +384,7 @@
     "message": "Noņemt atlasi visām kategorijām"
   },
   "options_show_category_sites": {
-    "message": "Rādīt $CATEGORY$ vietnes",
+    "message": "Rādīt kategorijas $CATEGORY$ vietnes",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -393,7 +393,7 @@
     }
   },
   "options_hide_category_sites": {
-    "message": "Slēpt $CATEGORY$ vietnes",
+    "message": "Paslēpt kategorijas $CATEGORY$ vietnes",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -402,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "iekļauta $COUNT$ vietne",
+    "message": "$COUNT$ vietne iekļauta",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -411,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "iekļautas $COUNT$ vietnes",
+    "message": "$COUNT$ vietnes iekļautas",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -423,7 +423,7 @@
     "message": "Kategorija izslēgta"
   },
   "options_included_when_enabled_one": {
-    "message": "ieslēdzot tiks iekļauta $COUNT$ vietne",
+    "message": "$COUNT$ vietne iekļaujas, ieslēdzot",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -432,7 +432,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "ieslēdzot tiks iekļautas $COUNT$ vietnes",
+    "message": "$COUNT$ vietnes iekļaujas, ieslēdzot",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -441,10 +441,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "Noņem atzīmi vietnei, lai tā paliktu sasniedzama, kamēr pārējā kategorija ir bloķēta."
+    "message": "Noņem atzīmi vietnei, lai tā paliktu pieejama, kamēr pārējā kategorija ir bloķēta."
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "$CATEGORY$ vietņu masveida darbības",
+    "message": "Kategorijas $CATEGORY$ vietņu kopīgās darbības",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "options_select_all_category_sites_aria": {
-    "message": "Atlasīt visas $CATEGORY$ vietnes",
+    "message": "Atlasīt visas kategorijas $CATEGORY$ vietnes",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -462,7 +462,7 @@
     }
   },
   "options_deselect_all_category_sites_aria": {
-    "message": "Noņemt atlasi visām $CATEGORY$ vietnēm",
+    "message": "Noņemt atlasi visām kategorijas $CATEGORY$ vietnēm",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -471,7 +471,7 @@
     }
   },
   "options_category_sites_region_aria": {
-    "message": "$CATEGORY$ vietnes",
+    "message": "Kategorijas $CATEGORY$ vietnes",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -501,10 +501,10 @@
     "message": "Se"
   },
   "options_schedule_cycles_label": {
-    "message": "Dalīt koncentrēšanās un pārtraukumu ciklos"
+    "message": "Cikliski mainīt fokusu un pārtraukumus"
   },
   "options_schedule_overlap_error": {
-    "message": "Pārklājas ar citu ieslēgtu ierakstu $DAY$ dienā.",
+    "message": "Pārklājas ar citu ieslēgtu ierakstu dienā $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -528,10 +528,10 @@
     "message": "Ilgums"
   },
   "options_schedule_intention_label": {
-    "message": "Nodoms"
+    "message": "Nolūks"
   },
   "options_schedule_intention_placeholder": {
-    "message": "kam paredzēts šis laiks"
+    "message": "kam šis laiks paredzēts"
   },
   "options_schedule_save_entry": {
     "message": "Saglabāt ierakstu"
@@ -540,13 +540,13 @@
     "message": "Atcelt"
   },
   "options_schedule_empty": {
-    "message": "Plānotu sesiju vēl nav."
+    "message": "Vēl nav ieplānotu sesiju."
   },
   "options_schedule_selected_days_aria": {
     "message": "Atlasītās dienas"
   },
   "options_schedule_time_range": {
-    "message": "no $START$ līdz $END$",
+    "message": "$START$ līdz $END$",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -562,16 +562,16 @@
     "message": "bloķēšanas saraksts"
   },
   "options_schedule_mode_whitelist": {
-    "message": "atļauto saraksts"
+    "message": "atļauju saraksts"
   },
   "options_schedule_strictness_flexible": {
-    "message": "elastīga"
+    "message": "elastīgs"
   },
   "options_schedule_strictness_friction": {
-    "message": "berze"
+    "message": "aizkave"
   },
   "options_schedule_strictness_hard": {
-    "message": "stingra"
+    "message": "stingrs"
   },
   "options_schedule_enabled_label": {
     "message": "Ieslēgts"
@@ -589,7 +589,7 @@
     "message": "Skaņas"
   },
   "options_master_volume": {
-    "message": "Kopējais skaļums"
+    "message": "Galvenais skaļums"
   },
   "options_sound_session_complete": {
     "message": "Sesija pabeigta"
@@ -601,7 +601,7 @@
     "message": "Pārtraukuma beigas"
   },
   "options_sound_schedule_start": {
-    "message": "Automātisks grafika sākums"
+    "message": "Grafika automātiskais sākums"
   },
   "options_sound_preview_aria": {
     "message": "Noklausīties $SOUND$",
@@ -616,19 +616,19 @@
     "message": "Atskaņot"
   },
   "options_sound_preview_error": {
-    "message": "Neizdevās atskaņot skaņu. Mēģini vēlreiz."
+    "message": "Neizdevās noklausīties skaņu. Mēģini vēlreiz."
   },
   "options_sounds_notifications_heading": {
     "message": "Paziņojumi"
   },
   "options_session_complete_notification": {
-    "message": "Rādīt sistēmas paziņojumu, kad sesija beidzas"
+    "message": "Rādīt sistēmas paziņojumu, kad sesija ir pabeigta"
   },
   "options_badge_heading": {
     "message": "Emblēma"
   },
   "options_badge_countdown": {
-    "message": "Rādīt atlikušo laiku uz rīkjoslas ikonas"
+    "message": "Rādīt atlikušo laiku rīkjoslas ikonā"
   },
   "options_privacy_website_access_heading": {
     "message": "Vietņu piekļuve"
@@ -637,25 +637,25 @@
     "message": "Vietņu piekļuve ir izslēgta"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock nevar bloķēt vietnes, kamēr nepiešķir piekļuvi."
+    "message": "Focus Lock nevar bloķēt vietnes, kamēr tu nepiešķir piekļuvi."
   },
   "options_privacy_website_enable_action": {
     "message": "Ieslēgt vietņu bloķēšanu"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "Vietņu piekļuve ir piešķirta, bet bloķēšana nedarbojas"
+    "message": "Vietņu piekļuve ir piešķirta, bet bloķēšana nav aktīva"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome piešķīra piekļuvi, bet Focus Lock neizdevās reģistrēt savu bloķēšanas skriptu."
+    "message": "Chrome piešķīra piekļuvi, bet Focus Lock neizdevās reģistrēt bloķēšanas skriptu."
   },
   "options_privacy_website_retry_action": {
-    "message": "Atkārtot vietņu bloķēšanu"
+    "message": "Mēģināt vēlreiz ieslēgt vietņu bloķēšanu"
   },
   "options_privacy_website_on_title": {
     "message": "Vietņu bloķēšana ir ieslēgta"
   },
   "options_privacy_website_on_detail": {
-    "message": "Focus Lock var piemērot tavus aktīvos bloķēšanas noteikumus parastās vietņu lapās."
+    "message": "Focus Lock var piemērot tavus aktīvos bloķēšanas noteikumus parastajās vietņu lapās."
   },
   "options_privacy_confirm_local_history_title": {
     "message": "Dzēst vietējo vēsturi?"
@@ -664,13 +664,13 @@
     "message": "Apstiprināt vietējās vēstures dzēšanu"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Vietējā vēsture izdzēsta."
+    "message": "Vietējā vēsture dzēsta."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "Tas neatgriezeniski dzēš no šīs ierīces pilnas URL adreses, koncentrēšanās nodomus un detalizētus sesijas notikumus. Tas neizdzēš aktīvu sesiju, kas patur savu nodomu un katras bloķētās cilnes adresi. Sesijas beigšana izdzēš nodomu un sāk sakārtošanu, kas atjauno visas atvērtās vietņu cilnes un beidzoties noņem visas saglabātās adreses."
+    "message": "Šī darbība neatgriezeniski dzēš pilnas URL adreses, fokusa nolūkus un detalizētus sesijas notikumus no šīs ierīces. Tā neskar aktīvu sesiju, kas saglabā savu nolūku un katras bloķētās cilnes adresi. Sesijas beigšana notīra nolūku un sāk tīrīšanu, kas aizver katru atvērto vietnes cilni, un tīrīšanas beigās tiek noņemta katra saglabātā adrese."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "Tas neatgriezeniski dzēš no šīs ierīces pilnas URL adreses, koncentrēšanās nodomus un detalizētus sesijas notikumus, kā arī tikai vietēji glabāto kopsavilkuma statistiku. Tas neizdzēš aktīvu sesiju, kas patur savu nodomu un katras bloķētās cilnes adresi. Sesijas beigšana izdzēš nodomu un sāk sakārtošanu, kas atjauno visas atvērtās vietņu cilnes un beidzoties noņem visas saglabātās adreses."
+    "message": "Šī darbība neatgriezeniski dzēš pilnas URL adreses, fokusa nolūkus, detalizētus sesijas notikumus un vietējos kopsavilkuma statistikas datus no šīs ierīces. Tā neskar aktīvu sesiju, kas saglabā savu nolūku un katras bloķētās cilnes adresi. Sesijas beigšana notīra nolūku un sāk tīrīšanu, kas aizver katru atvērto vietnes cilni, un tīrīšanas beigās tiek noņemta katra saglabātā adrese."
   },
   "options_privacy_confirm_synced_policy_title": {
     "message": "Dzēst attālos sinhronizācijas datus?"
@@ -679,10 +679,10 @@
     "message": "Apstiprināt attālo sinhronizācijas datu dzēšanu"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Attālie Chrome sinhronizācijas dati izdzēsti."
+    "message": "Attālie Chrome sinhronizācijas dati dzēsti."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "Tas neatgriezeniski dzēš no Chrome sinhronizācijas attālos iestatījumus, bloķēšanas un atļauto sarakstus, vietņu piekļuves kredītu, sērijas un bloķēto mēģinājumu kopsavilkumus pa domēniem. Vietējie iestatījumi un statistika paliek šajā ierīcē."
+    "message": "Šī darbība neatgriezeniski dzēš attālos iestatījumus, bloķēšanas un atļauju sarakstus, vietnes piekļuves kredītu, sērijas un domēnu līmeņa bloķēto mēģinājumu kopsavilkumus no Chrome sinhronizācijas. Vietējie iestatījumi un statistika paliek šajā ierīcē."
   },
   "options_privacy_confirm_all_title": {
     "message": "Dzēst visus Focus Lock datus?"
@@ -691,28 +691,28 @@
     "message": "Apstiprināt visu Focus Lock datu dzēšanu"
   },
   "options_privacy_all_deleted": {
-    "message": "Visi Focus Lock dati izdzēsti."
+    "message": "Visi Focus Lock dati dzēsti."
   },
   "options_privacy_all_body_intro": {
-    "message": "Tas neatgriezeniski dzēš visus Focus Lock datus šajā ierīcē un visas Focus Lock kopijas, kas palikušas Chrome sinhronizācijā:"
+    "message": "Šī darbība neatgriezeniski dzēš visus Focus Lock datus šajā ierīcē un jebkādas Focus Lock kopijas, kas palikušas Chrome sinhronizācijā:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Dzēst visu var tikai tad, kad nenotiek neviena sesija. Pēc tam Focus Lock atgriežas pie sākotnējās uzstādīšanas."
+    "message": "Visa dzēšana ir pieejama tikai tad, kad nenotiek neviena sesija. Pēc tam Focus Lock atgriežas pie sākotnējās iestatīšanas."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Neizdevās izdzēst vietējo vēsturi. Mēģini vēlreiz."
+    "message": "Neizdevās dzēst vietējo vēsturi. Mēģini vēlreiz."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Neizdevās izdzēst attālos Chrome sinhronizācijas datus. Mēģini vēlreiz."
+    "message": "Neizdevās dzēst attālos Chrome sinhronizācijas datus. Mēģini vēlreiz."
   },
   "options_privacy_error_all_clear": {
-    "message": "Neizdevās izdzēst visus Focus Lock datus. Mēģini vēlreiz."
+    "message": "Neizdevās dzēst visus Focus Lock datus. Mēģini vēlreiz."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome sinhronizācija nevarēja saglabāt tavas jaunākās izmaiņas. Vietējais saglabājums ir drošībā."
+    "message": "Chrome sinhronizācijai neizdevās saglabāt tavas jaunākās izmaiņas. Tavs vietējais saglabājums ir drošībā."
   },
   "options_privacy_error_request": {
-    "message": "Pieprasījumu neizdevās izpildīt. Mēģini vēlreiz."
+    "message": "Neizdevās izpildīt pieprasījumu. Mēģini vēlreiz."
   },
   "options_privacy_website_access_updated": {
     "message": "Vietņu piekļuve atjaunināta."
@@ -754,7 +754,7 @@
     "message": "Chrome sinhronizācija izslēgta."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome sinhronizācija vēl saglabā tavas jaunākās izmaiņas."
+    "message": "Chrome sinhronizācija joprojām saglabā tavas jaunākās izmaiņas."
   },
   "options_privacy_sync_on": {
     "message": "Chrome sinhronizācija ir ieslēgta."
@@ -766,10 +766,10 @@
     "message": "Chrome sinhronizācijas izmaiņas saglabātas."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Atkārtot Chrome sinhronizācijas ieslēgšanu"
+    "message": "Mēģināt vēlreiz ieslēgt Chrome sinhronizāciju"
   },
   "options_privacy_retry_sync": {
-    "message": "Atkārtot Chrome sinhronizāciju"
+    "message": "Mēģināt vēlreiz Chrome sinhronizāciju"
   },
   "options_privacy_scope_synced": {
     "message": "Sinhronizēts"
@@ -799,7 +799,7 @@
     "message": "Attālie sinhronizācijas dati"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Dzēs Focus Lock kopijas, kas palikušas Chrome sinhronizācijā, neskarot šo ierīci."
+    "message": "Dzēst Focus Lock kopijas, kas palikušas Chrome sinhronizācijā, nemainot šo ierīci."
   },
   "options_privacy_delete_remote_data": {
     "message": "Dzēst attālos sinhronizācijas datus"
@@ -808,25 +808,25 @@
     "message": "Visi Focus Lock dati"
   },
   "options_privacy_all_data_detail": {
-    "message": "Dzēs visus Focus Lock ierakstus šajā ierīcē un visas Focus Lock kopijas Chrome sinhronizācijā, tad sāc no sākotnējās uzstādīšanas. Pieejams, kamēr nenotiek neviena sesija."
+    "message": "Dzēst katru Focus Lock ierakstu šajā ierīcē un jebkādas Focus Lock kopijas, kas palikušas Chrome sinhronizācijā, un sākt no jauna ar sākotnējo iestatīšanu. Pieejams, kamēr nenotiek neviena sesija."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "Turpinās visu Focus Lock datu dzēšana."
+    "message": "Turpina visu Focus Lock datu dzēšanu."
   },
   "options_privacy_retry_local_history": {
-    "message": "Atkārtot vietējās vēstures dzēšanu"
+    "message": "Mēģināt vēlreiz dzēst vietējo vēsturi"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Atkārtot attālo sinhronizācijas datu dzēšanu"
+    "message": "Mēģināt vēlreiz dzēst attālos sinhronizācijas datus"
   },
   "options_privacy_retry_all_data": {
-    "message": "Atkārtot visu datu dzēšanu"
+    "message": "Mēģināt vēlreiz dzēst visus datus"
   },
   "options_error_load": {
-    "message": "Neizdevās ielādēt iestatījumus. Pārlādē lapu un mēģini vēlreiz."
+    "message": "Neizdevās ielādēt iestatījumus. Pārlādē lapu, lai mēģinātu vēlreiz."
   },
   "options_error_retry_boot": {
-    "message": "Neizdevās atkārtoti startēt Focus Lock. Mēģini vēlreiz."
+    "message": "Neizdevās restartēt Focus Lock. Mēģini vēlreiz."
   },
   "options_error_refresh_privacy": {
     "message": "Neizdevās atsvaidzināt privātuma iestatījumus. Pārlādē lapu."
@@ -846,6 +846,15 @@
   "options_error_save_lists": {
     "message": "Neizdevās saglabāt sarakstus. Pārlādē lapu un mēģini vēlreiz."
   },
+  "options_category_sites_included_zero": {
+    "message": "$COUNT$ vietņu iekļautas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
   "options_gate_wait_zero": {
     "message": "Gaidīt $COUNT$ sekunžu",
     "placeholders": {
@@ -855,17 +864,8 @@
       }
     }
   },
-  "options_category_sites_included_zero": {
-    "message": "iekļauts $COUNT$ vietņu",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "12"
-      }
-    }
-  },
   "options_included_when_enabled_zero": {
-    "message": "ieslēdzot tiks iekļauts $COUNT$ vietņu",
+    "message": "$COUNT$ vietņu iekļaujas, ieslēdzot",
     "placeholders": {
       "COUNT": {
         "content": "$1",

@@ -1,1 +1,627 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "Докато не спреш"
+  },
+  "shared_preset_short": {
+    "message": "кратко"
+  },
+  "shared_preset_focus": {
+    "message": "фокус"
+  },
+  "shared_preset_deep_work": {
+    "message": "дълбока работа"
+  },
+  "shared_deep_work_note": {
+    "message": "Предпочитание, не наука: един дълъг непрекъснат блок, без автоматични почивки."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ мин общо, с блокове фокус от $FOCUS$ мин",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ мин непрекъснат фокус",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Започни, докато не спреш"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Заключи, докато не отключиш ръчно"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Сесиите, които текат докато не ги спреш, запазват Гъвкаво или Съпротива и не могат да използват цикли на фокус и почивка."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Твърдото заключване не е достъпно с Докато не спреш: без таймер и без ръчен край сесията никога не би могла да приключи."
+  },
+  "shared_end_session": {
+    "message": "Завърши сесията"
+  },
+  "shared_unlock": {
+    "message": "Отключи"
+  },
+  "shared_gate_wait_none": {
+    "message": "без изчакване"
+  },
+  "shared_gate_wait": {
+    "message": "изчакване от $SECONDS$ секунди",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ и написано изречение",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Тече, докато не я завършиш с $LABEL$. Циклите са изключени.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Тече, докато не я отключиш: $REQUIREMENT$, после $LABEL$. Циклите са изключени.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Циклите са изключени заради Докато не спреш"
+  },
+  "shared_mode_blacklist": {
+    "message": "Блокирай избраните сайтове"
+  },
+  "shared_mode_whitelist": {
+    "message": "Разреши само избраните сайтове"
+  },
+  "shared_focus_time_label": {
+    "message": "Време на фокус"
+  },
+  "shared_clock_focus_phase": {
+    "message": "фаза на фокус"
+  },
+  "shared_clock_total_session": {
+    "message": "цяла сесия"
+  },
+  "shared_clock_pause": {
+    "message": "прекъсване"
+  },
+  "shared_clock_break": {
+    "message": "почивка"
+  },
+  "shared_badge_indefinite": {
+    "message": "ВКЛ"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock стартира. Прилагат се избраните от теб правила."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Сесията приключи. Завършва почистването на браузъра."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock не можа да стартира. Завършва почистването на браузъра."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock не можа да почисти след незавършено стартиране."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock не можа да завърши почистването на браузъра."
+  },
+  "shared_retry_cleanup": {
+    "message": "Опитай почистването отново"
+  },
+  "shared_end_failed": {
+    "message": "Сесията не можа да приключи. Опитай отново."
+  },
+  "shared_retry_failed": {
+    "message": "Почистването не можа да се опита отново. Опитай отново."
+  },
+  "shared_action_failed": {
+    "message": "Това действие не можа да бъде заявено. Опитай отново."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Връщането към работата не успя. Опитай отново."
+  },
+  "shared_data_clear_pending": {
+    "message": "Данните на Focus Lock се изтриват. Завършва почистването."
+  },
+  "shared_data_clear_error": {
+    "message": "Данните не можаха да се изтрият. Опитай отново."
+  },
+  "shared_schedule_window_label": {
+    "message": "Докато прозорецът не свърши"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Започва по график и тече, докато не я спреш: Завърши сесията за Гъвкаво, Отключи през бариерата за размисъл за Съпротива. Циклите са изключени."
+  },
+  "shared_schedule_started_title": {
+    "message": "Графикът за фокус започна"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Активно, докато не го спреш."
+  },
+  "shared_settings_indefinite": {
+    "message": "Активна е сесия, която тече докато не я спреш. Използвай изскачащия прозорец в лентата, за да я видиш или завършиш."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock стартира. Проверява се достъпът до сайтове и се прилагат правилата ти."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock не можа да завърши почистването на браузъра. Отвори изскачащия прозорец и опитай отново."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Изскачащият прозорец в лентата управлява сесията. Активната сесия запазва правилата, записани при стартирането ѝ."
+  },
+  "shared_settings_timed": {
+    "message": "Сесия с таймер е активна до $TIME$. Приключва сама. За състояние на живо използвай изскачащия прозорец в лентата.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Завършена"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Завършена ръчно"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Прекратена по-рано"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Прекратена: изгубен достъп до сайтове"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Прекратена: настройката на блокирането не успя"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Прекратена: таймерът не беше създаден"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Прекратена: блокирането не стигна до страниците"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Прекратена: възстановяването не успя"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ч $MINUTES$ мин",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ мин",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ мин",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ мин",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Обновяване на сесията"
+  },
+  "shared_less_than_a_minute": {
+    "message": "По-малко от минута"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ до почивката ти",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ остават в тази сесия",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Цената надхвърля ограничението на кредита"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Кредитът се натрупва отново по време на фокус"
+  },
+  "shared_credit_off": {
+    "message": "Натрупването на кредит е изключено"
+  },
+  "shared_not_enough_time": {
+    "message": "Няма достатъчно време в този блок фокус"
+  },
+  "shared_ready_in": {
+    "message": "Готово след $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Блокира категория $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Блокира списъкът ти с блокирани"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Не е в списъка ти с разрешени"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Блокира тази сесия"
+  },
+  "shared_verdict_allow_list": {
+    "message": "В списъка ти с разрешени"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Винаги разрешено"
+  },
+  "shared_verdict_unlock": {
+    "message": "Временно отключено"
+  },
+  "shared_verdict_excluded": {
+    "message": "Изключено от избрана категория"
+  },
+  "shared_verdict_no_session": {
+    "message": "Няма активна сесия на фокус"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Разрешава тази сесия"
+  },
+  "shared_category_social": {
+    "message": "Социални мрежи"
+  },
+  "shared_category_video": {
+    "message": "Видео и стрийминг"
+  },
+  "shared_category_news": {
+    "message": "Новини"
+  },
+  "shared_category_mail": {
+    "message": "Поща"
+  },
+  "shared_category_shopping": {
+    "message": "Пазаруване"
+  },
+  "shared_category_gaming": {
+    "message": "Игри"
+  },
+  "shared_category_forums": {
+    "message": "Форуми и скука"
+  },
+  "shared_synced_settings": {
+    "message": "Настройки"
+  },
+  "shared_synced_lists": {
+    "message": "Списъци с блокирани и разрешени"
+  },
+  "shared_synced_credit": {
+    "message": "Кредит за достъп"
+  },
+  "shared_synced_streaks": {
+    "message": "Серии"
+  },
+  "shared_synced_aggregates": {
+    "message": "Обобщени блокирани опити на ниво домейн"
+  },
+  "shared_local_full_urls": {
+    "message": "Пълни URL адреси"
+  },
+  "shared_local_intentions": {
+    "message": "Намерения за фокус"
+  },
+  "shared_local_events": {
+    "message": "Подробни събития от сесиите"
+  },
+  "shared_local_runtime": {
+    "message": "Активна текуща сесия"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Някои синхронизирани данни от по-стара версия не можаха да се прочетат и бяха нулирани."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Завърши текущата сесия, преди да изтриеш всички данни."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "Навигация на продукта"
+  },
+  "shared_nav_overview": {
+    "message": "Преглед"
+  },
+  "shared_nav_settings": {
+    "message": "Настройки"
+  },
+  "shared_section_blocking": {
+    "message": "Блокиране"
+  },
+  "shared_section_schedule": {
+    "message": "График"
+  },
+  "shared_section_behavior": {
+    "message": "Поведение на сесията"
+  },
+  "shared_section_budget": {
+    "message": "Кредит за достъп"
+  },
+  "shared_section_notifications": {
+    "message": "Известия"
+  },
+  "shared_section_privacy": {
+    "message": "Поверителност и данни"
+  },
+  "shared_theme_auto": {
+    "message": "Автоматично"
+  },
+  "shared_theme_light": {
+    "message": "Светла"
+  },
+  "shared_theme_dark": {
+    "message": "Тъмна"
+  },
+  "shared_theme_button": {
+    "message": "Тема: $CURRENT$. Превключи на $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Темата не можа да се запази. Презареди страницата и опитай отново."
+  },
+  "shared_host_search_label": {
+    "message": "Търси сайтове в категория $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Никой сайт в категория $TITLE$ не отговаря на търсенето ти.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Показани $SHOWN$ от $MATCHED$ сайта. Търси, за да стесниш списъка.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Показани $MATCHED$ от $TOTAL$ сайта.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Показани всички $TOTAL$ сайта.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Завърши сесията"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock стартира"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Прилагат се избраните от теб правила."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Тази страница не се зареди. Ще се зареди сама, когато сесията приключи."
+  },
+  "shared_overlay_next_step": {
+    "message": "Следващата ти стъпка"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Обратно към работата"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Избери работен раздел"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Смени работния раздел"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Трябва ти почивка или достъп до сайт?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Можеш да се отдалечиш по всяко време. Достъпът до сайтове харчи кредит."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Пренебрегни изчакването и завърши"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock не можа да обнови това действие. Опитай отново."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ кредит за достъп",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Продължи с текущата си задача"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Отключи всички сайтове"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Отключи този сайт"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - струва $COST$ кредит",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Заключено до $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Ти написа: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Отключи $HOST$ за $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Продължи с фокуса"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Напиши това за потвърждение:"
+  },
+  "shared_gate_end_title": {
+    "message": "Завърши тази сесия"
+  }
+}
