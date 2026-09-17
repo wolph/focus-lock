@@ -460,9 +460,17 @@ export function mergeTranslation(root, locale, flat, write) {
       }
       let candidate = added === 'fresh' ? translatedEntry(source, text) : previous[key];
       const isEnglish = (value) => isPadding(locale, source.message, value.message);
+      const readsAsEnglish = (value) =>
+        !NEAR_EN_LOCALES.has(locale) && value.message === source.message;
       // A later submission that re-sends the English text must never overwrite a translation the
-      // locale already had: the earlier work wins, and only a genuinely new translation replaces it.
-      if (added === 'fresh' && isEnglish(candidate) && previous[key] !== undefined) {
+      // locale already had, however short the message is: the earlier work wins, and only a
+      // genuinely different translation replaces it.
+      if (
+        added === 'fresh' &&
+        readsAsEnglish(candidate) &&
+        previous[key] !== undefined &&
+        !readsAsEnglish(previous[key])
+      ) {
         candidate = previous[key];
         added = 'carried';
       }

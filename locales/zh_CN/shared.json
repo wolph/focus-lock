@@ -1,15 +1,15 @@
 {
   "shared_until_stopped": {
-    "message": "Until stopped"
+    "message": "直到停止"
   },
   "shared_preset_short": {
-    "message": "short"
+    "message": "短"
   },
   "shared_preset_focus": {
-    "message": "focus"
+    "message": "专注"
   },
   "shared_preset_deep_work": {
-    "message": "deep work"
+    "message": "深度工作"
   },
   "shared_deep_work_note": {
     "message": "一个偏好，不是科学：一个长的不间断块，没有自动休息。"
@@ -37,10 +37,10 @@
     }
   },
   "shared_start_until_stopped": {
-    "message": "Start until stopped"
+    "message": "启动直到停止"
   },
   "shared_lock_until_manual_unlock": {
-    "message": "Lock until manual unlock"
+    "message": "锁定直到手动解锁"
   },
   "shared_until_stopped_disclosure": {
     "message": "直到停止会话保持灵活或缓冲，无法使用专注和休息周期。"
@@ -49,16 +49,16 @@
     "message": "强制锁定不可用于直到停止：没有计时器和没有手动结束，会话永远无法结束。"
   },
   "shared_end_session": {
-    "message": "End session"
+    "message": "结束会话"
   },
   "shared_unlock": {
-    "message": "Unlock"
+    "message": "解锁"
   },
   "shared_gate_wait_none": {
-    "message": "no wait"
+    "message": "无等待"
   },
   "shared_gate_wait": {
-    "message": "a $SECONDS$-second wait",
+    "message": "$SECONDS$ 秒等待",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -101,28 +101,28 @@
     "message": "强制周期，直到停止"
   },
   "shared_mode_blacklist": {
-    "message": "Block selected sites"
+    "message": "阻止选定网站"
   },
   "shared_mode_whitelist": {
-    "message": "Allow selected sites only"
+    "message": "仅允许选定网站"
   },
   "shared_focus_time_label": {
-    "message": "Focus time"
+    "message": "专注时间"
   },
   "shared_clock_focus_phase": {
-    "message": "focus phase"
+    "message": "专注阶段"
   },
   "shared_clock_total_session": {
-    "message": "total session"
+    "message": "总会话"
   },
   "shared_clock_pause": {
-    "message": "pause"
+    "message": "休息"
   },
   "shared_clock_break": {
-    "message": "break"
+    "message": "休息"
   },
   "shared_badge_indefinite": {
-    "message": "ON"
+    "message": "开启"
   },
   "shared_popup_starting": {
     "message": "Focus Lock 正在启动。应用您选择的规则。"
@@ -140,7 +140,7 @@
     "message": "Focus Lock 无法完成浏览器清理。"
   },
   "shared_retry_cleanup": {
-    "message": "Retry cleanup"
+    "message": "重试清理"
   },
   "shared_end_failed": {
     "message": "无法结束会话。请重试。"
@@ -161,16 +161,16 @@
     "message": "无法删除数据。请重试。"
   },
   "shared_schedule_window_label": {
-    "message": "Until window ends"
+    "message": "直到窗口结束"
   },
   "shared_schedule_until_stopped": {
     "message": "按日程启动并运行直到您停止它：灵活的结束会话，通过确认门槛为缓冲解锁。周期关闭。"
   },
   "shared_schedule_started_title": {
-    "message": "Focus schedule started"
+    "message": "专注日程已启动"
   },
   "shared_schedule_until_stopped_body": {
-    "message": "Active until you stop it."
+    "message": "活跃直到您停止它。"
   },
   "shared_settings_indefinite": {
     "message": "直到停止会话处于活跃。使用工具栏弹出窗口查看或结束它。"
@@ -194,13 +194,13 @@
     }
   },
   "shared_outcome_timer_completed": {
-    "message": "Completed"
+    "message": "已完成"
   },
   "shared_outcome_manual_completed": {
-    "message": "Completed manually"
+    "message": "手动完成"
   },
   "shared_outcome_manual_canceled": {
-    "message": "Ended early"
+    "message": "提前结束"
   },
   "shared_outcome_website_access_lost": {
     "message": "已结束：网站访问已丢失"
@@ -209,16 +209,16 @@
     "message": "已结束：阻止设置失败"
   },
   "shared_outcome_alarm_failed": {
-    "message": "Ended: timer setup failed"
+    "message": "已结束：计时器设置失败"
   },
   "shared_outcome_tab_enforcement_failed": {
     "message": "已结束：页面强制执行失败"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "Ended: recovery failed"
+    "message": "已结束：恢复失败"
   },
   "shared_duration_hours_minutes": {
-    "message": "$HOURS$ h $MINUTES$ m",
+    "message": "$HOURS$ 小时 $MINUTES$ 分钟",
     "placeholders": {
       "HOURS": {
         "content": "$1",
@@ -231,7 +231,7 @@
     }
   },
   "shared_duration_minutes": {
-    "message": "$MINUTES$ m",
+    "message": "$MINUTES$ 分钟",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -240,7 +240,7 @@
     }
   },
   "shared_minutes_one": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ 分钟",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -249,7 +249,7 @@
     }
   },
   "shared_minutes_other": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ 分钟",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -258,10 +258,10 @@
     }
   },
   "shared_updating_session": {
-    "message": "Updating session"
+    "message": "更新会话中"
   },
   "shared_less_than_a_minute": {
-    "message": "Less than a minute"
+    "message": "少于一分钟"
   },
   "shared_focus_remaining_break": {
     "message": "直到您休息还有 $DURATION$",
@@ -294,7 +294,7 @@
     "message": "此专注阶段中时间不足"
   },
   "shared_ready_in": {
-    "message": "Ready in $CLOCK$",
+    "message": "准备好于 $CLOCK$",
     "placeholders": {
       "CLOCK": {
         "content": "$1",
@@ -303,7 +303,7 @@
     }
   },
   "shared_verdict_with_pattern": {
-    "message": "$LABEL$: $PATTERN$",
+    "message": "$LABEL$：$PATTERN$",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -316,7 +316,7 @@
     }
   },
   "shared_verdict_blocked_category": {
-    "message": "Blocked by $CATEGORY$",
+    "message": "被 $CATEGORY$ 阻止",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -328,76 +328,76 @@
     "message": "被您的阻止列表阻止"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "Not on your allow list"
+    "message": "不在您的允许列表中"
   },
   "shared_verdict_blocked_session": {
-    "message": "Blocked by this session"
+    "message": "被此会话阻止"
   },
   "shared_verdict_allow_list": {
-    "message": "On your allow list"
+    "message": "在您的允许列表中"
   },
   "shared_verdict_always_allowed": {
-    "message": "Always allowed"
+    "message": "始终允许"
   },
   "shared_verdict_unlock": {
-    "message": "Temporarily unlocked"
+    "message": "临时解锁"
   },
   "shared_verdict_excluded": {
     "message": "从选定分类中排除"
   },
   "shared_verdict_no_session": {
-    "message": "No active focus session"
+    "message": "没有活跃专注会话"
   },
   "shared_verdict_allowed_session": {
-    "message": "Allowed by this session"
+    "message": "由此会话允许"
   },
   "shared_category_social": {
-    "message": "Social media"
+    "message": "社交媒体"
   },
   "shared_category_video": {
-    "message": "Video and streaming"
+    "message": "视频和流媒体"
   },
   "shared_category_news": {
-    "message": "News"
+    "message": "新闻"
   },
   "shared_category_mail": {
-    "message": "Mail"
+    "message": "邮件"
   },
   "shared_category_shopping": {
-    "message": "Shopping"
+    "message": "购物"
   },
   "shared_category_gaming": {
-    "message": "Gaming"
+    "message": "游戏"
   },
   "shared_category_forums": {
-    "message": "Forums and boredom"
+    "message": "论坛和无聊"
   },
   "shared_synced_settings": {
-    "message": "Settings"
+    "message": "设置"
   },
   "shared_synced_lists": {
-    "message": "Block and allow lists"
+    "message": "阻止和允许列表"
   },
   "shared_synced_credit": {
-    "message": "Site access credit"
+    "message": "网站访问额度"
   },
   "shared_synced_streaks": {
-    "message": "Streaks"
+    "message": "连续记录"
   },
   "shared_synced_aggregates": {
     "message": "域名级已阻止尝试聚合"
   },
   "shared_local_full_urls": {
-    "message": "Full URLs"
+    "message": "完整 URL"
   },
   "shared_local_intentions": {
-    "message": "Focus intentions"
+    "message": "专注意图"
   },
   "shared_local_events": {
-    "message": "Detailed session events"
+    "message": "详细会话事件"
   },
   "shared_local_runtime": {
-    "message": "Active runtime session"
+    "message": "活跃运行时会话"
   },
   "shared_legacy_policy_dropped": {
     "message": "来自较旧版本的某些同步数据无法读取并已重置。"
@@ -409,40 +409,40 @@
     "message": "Focus Lock"
   },
   "shared_nav_product": {
-    "message": "Product navigation"
+    "message": "产品导航"
   },
   "shared_nav_overview": {
-    "message": "Overview"
+    "message": "概览"
   },
   "shared_nav_settings": {
-    "message": "Settings"
+    "message": "设置"
   },
   "shared_section_blocking": {
-    "message": "Blocking"
+    "message": "阻止"
   },
   "shared_section_schedule": {
-    "message": "Schedule"
+    "message": "日程"
   },
   "shared_section_behavior": {
-    "message": "Session behavior"
+    "message": "会话行为"
   },
   "shared_section_budget": {
-    "message": "Site access credit"
+    "message": "网站访问额度"
   },
   "shared_section_notifications": {
-    "message": "Notifications"
+    "message": "通知"
   },
   "shared_section_privacy": {
-    "message": "Privacy and data"
+    "message": "隐私和数据"
   },
   "shared_theme_auto": {
-    "message": "Auto"
+    "message": "自动"
   },
   "shared_theme_light": {
-    "message": "Light"
+    "message": "浅色"
   },
   "shared_theme_dark": {
-    "message": "Dark"
+    "message": "深色"
   },
   "shared_theme_button": {
     "message": "主题：$CURRENT$。切换至 $NEXT$",
@@ -461,7 +461,7 @@
     "message": "无法保存主题。重新加载页面并重试。"
   },
   "shared_host_search_label": {
-    "message": "Search $TITLE$ sites",
+    "message": "搜索 $TITLE$ 网站",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -514,10 +514,10 @@
     }
   },
   "shared_end_the_session": {
-    "message": "End the session"
+    "message": "结束会话"
   },
   "shared_overlay_starting_title": {
-    "message": "Focus Lock is starting"
+    "message": "Focus Lock 正在启动"
   },
   "shared_overlay_starting_detail": {
     "message": "应用您选择的规则。"
@@ -526,16 +526,16 @@
     "message": "此页面未加载。会话结束时它将自行加载。"
   },
   "shared_overlay_next_step": {
-    "message": "Your next step"
+    "message": "您的下一步"
   },
   "shared_overlay_back_to_work": {
-    "message": "Back to work"
+    "message": "回到工作"
   },
   "shared_overlay_choose_work_tab": {
-    "message": "Choose a work tab"
+    "message": "选择工作标签页"
   },
   "shared_overlay_change_work_tab": {
-    "message": "Change work tab"
+    "message": "更改工作标签页"
   },
   "shared_overlay_access_summary": {
     "message": "需要休息或网站访问？"
@@ -562,10 +562,10 @@
     "message": "继续您的当前任务"
   },
   "shared_overlay_pause_action": {
-    "message": "Unlock all sites"
+    "message": "解锁所有网站"
   },
   "shared_overlay_unlock_site_action": {
-    "message": "Unlock this site"
+    "message": "解锁此网站"
   },
   "shared_overlay_spend_action": {
     "message": "$LABEL$ $LENGTH$ - 成本 $COST$ 额度",
@@ -585,7 +585,7 @@
     }
   },
   "shared_overlay_locked_until": {
-    "message": "Locked until $TIME$",
+    "message": "已锁定直到 $TIME$",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -594,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "You said: $INTENTION$",
+    "message": "您说：$INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -603,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "Unlock $HOST$ $CLOCK$",
+    "message": "解锁 $HOST$ $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -616,12 +616,12 @@
     }
   },
   "shared_gate_back": {
-    "message": "Keep focusing"
+    "message": "继续专注"
   },
   "shared_gate_phrase_label": {
-    "message": "Type this to confirm:"
+    "message": "输入此内容以确认："
   },
   "shared_gate_end_title": {
-    "message": "End this session"
+    "message": "结束此会话"
   }
 }

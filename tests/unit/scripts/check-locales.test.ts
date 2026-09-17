@@ -340,3 +340,25 @@ describe('repairPlaceholders', () => {
     expect(repairPlaceholders({ message: 'Start' }, 'Comenca')).toBe('Comenca');
   });
 });
+
+describe('mergeTranslation never regresses a translation', () => {
+  it('keeps a short translation when a later file re-sends the English word', () => {
+    const root: string = mkdtempSync(join(tmpdir(), 'regress-'));
+    const src: string = join(root, 'locales');
+    mkdirSync(join(src, 'en'), { recursive: true });
+    writeFileSync(join(src, 'en', 'popup.json'), JSON.stringify({ popup_start: EN.popup_start }));
+    const write = (flat: Record<string, string>): Catalogue => {
+      const written: Catalogue = {};
+      mergeTranslation(src, 'nl', flat, (surface: string, messages: Catalogue): void => {
+        mkdirSync(join(src, 'nl'), { recursive: true });
+        writeFileSync(join(src, 'nl', `${surface}.json`), JSON.stringify(messages));
+        Object.assign(written, messages);
+      });
+      return written;
+    };
+    write({ popup_start: 'Starten' });
+    // 'Start' is short enough to be a legitimate shared word, but it must not replace one that
+    // was already translated.
+    expect(write({ popup_start: 'Start' }).popup_start?.message).toBe('Starten');
+  });
+});

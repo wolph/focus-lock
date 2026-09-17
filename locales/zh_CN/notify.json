@@ -3,10 +3,10 @@
     "message": "专注会话完成"
   },
   "notify_session_complete_body": {
-    "message": "您的专注会话已完成。"
+    "message": "您的专注会话已结束。"
   },
   "notify_schedule_window_body": {
-    "message": "锁定至$END$。",
+    "message": "已锁定直到 $END$。",
     "placeholders": {
       "END": {
         "content": "$1",
@@ -15,10 +15,10 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "无法启动专注计划"
+    "message": "专注日程无法启动"
   },
   "notify_schedule_unavailable_body": {
-    "message": "未启用网站阻止。完成设置或授予网站访问权限，然后重试。"
+    "message": "未启用网站阻止。请完成设置或授予网站访问权限，然后重试。"
   },
   "notify_setup_completed_elsewhere": {
     "message": "设置已在另一个标签页中完成。"
@@ -36,28 +36,28 @@
     "message": "设置未准备好完成。"
   },
   "notify_setup_storage_choice_changed": {
-    "message": "设置存储选择已更改。完成前请重新加载设置。"
+    "message": "设置存储选项已更改。完成前请重新加载设置。"
   },
   "notify_onboarding_storage_failed": {
-    "message": "配置存储操作失败。"
+    "message": "加入流程的存储操作失败。"
   },
   "notify_onboarding_operation_failed": {
-    "message": "配置操作失败。"
+    "message": "加入流程的操作失败。"
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lock无法检查网站访问权限。重试设置或重新加载扩展程序。"
+    "message": "Focus Lock 无法检查网站访问。请重试设置或重新加载扩展程序。"
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "已授予网站访问权限，但Focus Lock无法启用阻止。重试设置或重新加载扩展程序。"
+    "message": "已授予网站访问权限，但 Focus Lock 无法启用阻止。请重试设置或重新加载扩展程序。"
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "网站访问不可用，Focus Lock无法完成阻止清理。重试设置或重新加载扩展程序。"
+    "message": "网站访问不可用，且 Focus Lock 无法完成阻止清理。请重试设置或重新加载扩展程序。"
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lock收到不一致的网站访问状态。重试设置或重新加载扩展程序。"
+    "message": "Focus Lock 收到不一致的网站访问状态。请重试设置或重新加载扩展程序。"
   },
   "notify_boot_not_finished": {
-    "message": "Focus Lock未完成启动：$REASON$",
+    "message": "Focus Lock 未完成启动：$REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -69,66 +69,66 @@
     "message": "未知错误"
   },
   "notify_nothing_to_reset": {
-    "message": "Focus Lock正在运行，无需重置"
+    "message": "Focus Lock 正在运行，无需重置"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Focus Lock无法重置仍在策略生成中提交的运行时"
+    "message": "Focus Lock 无法重置在策略生成中仍在使用的运行时"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "无法重试数据清除。"
+    "message": "数据清除重试不可用。"
   },
   "notify_disable_sync_before_delete": {
     "message": "删除已同步数据前请禁用同步"
   },
   "notify_work_gate_busy": {
-    "message": "Focus Lock仍在完成之前的更改。稍后重试。"
+    "message": "Focus Lock 仍在完成之前的更改。请稍后重试。"
   },
   "notify_work_gate_stuck": {
-    "message": "打开的门槛无法关闭。重试。"
+    "message": "无法关闭打开的门槛。请重试。"
   },
   "notify_work_tab_unavailable": {
     "message": "工作标签页不可用。"
   },
   "notify_settings_sync_limit": {
-    "message": "设置超过8 KB Chrome同步限制。删除计划项或缩短意图，然后重试。"
+    "message": "设置超过 8 KB Chrome 同步限制。请移除日程条目或缩短意图，然后重试。"
   },
   "notify_lists_sync_limit": {
-    "message": "列表超过8 KB Chrome同步限制。删除自定义或允许列表规则，然后重试。"
+    "message": "列表超过 8 KB Chrome 同步限制。请移除自定义规则或允许列表规则，然后重试。"
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "强制会话正在运行：删除阻止网站会在会话结束时解锁"
+    "message": "正在运行强制锁定会话：移除已阻止网站将在会话结束时解锁"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "强制会话正在运行：新的允许列表条目在会话结束时解锁"
+    "message": "正在运行强制锁定会话：新的允许列表条目将在会话结束时解锁"
   },
   "notify_guard_lists_disable_category": {
-    "message": "强制会话正在运行：禁用分类会在会话结束时解锁"
+    "message": "正在运行强制锁定会话：禁用分类将在会话结束时解锁"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "强制会话正在运行：新的排除项在会话结束时解锁"
+    "message": "正在运行强制锁定会话：新的排除项将在会话结束时解锁"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "强制会话正在运行：削弱默认严格性需等待会话结束"
+    "message": "正在运行强制锁定会话：降低默认严格性需要等待会话结束"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "强制会话正在运行：缩短确认延迟会削弱门槛"
+    "message": "正在运行强制锁定会话：缩短确认延迟会削弱门槛"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "强制会话正在运行：删除输入的短语会削弱门槛"
+    "message": "正在运行强制锁定会话：移除输入短语会削弱门槛"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "强制会话正在运行：提高休息赚取率会资助更多逃脱"
+    "message": "正在运行强制锁定会话：提高休息获得速率会资助更多逃脱"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "强制会话正在运行：提高休息上限会资助更多逃脱"
+    "message": "正在运行强制锁定会话：提高休息上限会资助更多逃脱"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "强制会话正在运行：缩短休息会降低其成本"
+    "message": "正在运行强制锁定会话：缩短休息会降低其成本"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "强制会话正在运行：缩短解锁会降低其成本"
+    "message": "正在运行强制锁定会话：缩短解锁会降低其成本"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "强制会话正在运行：其计划项在会话结束前无法削弱"
+    "message": "正在运行强制锁定会话：其日程条目在会话结束前无法削弱"
   }
 }

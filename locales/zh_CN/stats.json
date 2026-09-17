@@ -1,12 +1,12 @@
 {
   "stats_document_title": {
-    "message": "Focus Lock stats"
+    "message": "Focus Lock 统计"
   },
   "stats_page_title": {
-    "message": "Your focus record"
+    "message": "您的专注记录"
   },
   "stats_loading": {
-    "message": "Loading your stats."
+    "message": "加载您的统计中。"
   },
   "stats_load_error": {
     "message": "无法加载统计。重新加载以重试。"
@@ -33,19 +33,19 @@
     "message": "统计范围不可用。总计可能包括同步数据。每小时尝试和最近会话来自此计算机。"
   },
   "stats_scope_retry": {
-    "message": "Retry scope check"
+    "message": "重试范围检查"
   },
   "stats_empty": {
     "message": "统计在您的第一个会话后出现。"
   },
   "stats_tile_focus_today": {
-    "message": "Focus today"
+    "message": "今天的专注"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Focus in the last 7 days"
+    "message": "过去 7 天的专注"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts blocked today"
+    "message": "今天已阻止的尝试"
   },
   "stats_tile_gate_dismissed_today": {
     "message": "今天关闭的门槛请求"
@@ -71,7 +71,7 @@
     }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ earned",
+    "message": "$EARNED$ 获得",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -80,16 +80,16 @@
     }
   },
   "stats_streak_heading": {
-    "message": "Streak"
+    "message": "连续记录"
   },
   "stats_streak_empty": {
     "message": "您的连续记录从您的第一个专注日期开始。"
   },
   "stats_streak_unit_one": {
-    "message": "day"
+    "message": "天"
   },
   "stats_streak_unit_other": {
-    "message": "days"
+    "message": "天"
   },
   "stats_streak_freeze_tokens_one": {
     "message": "已存储 $COUNT$ 个冻结令牌",
@@ -161,7 +161,7 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Focus, last 14 days"
+    "message": "专注，过去 14 天"
   },
   "stats_chart_focus_empty": {
     "message": "在您的第一个会话后会出现专注分钟数。"
@@ -182,10 +182,10 @@
     "message": "按小时的尝试，仅此计算机"
   },
   "stats_chart_other_site": {
-    "message": "other"
+    "message": "其他"
   },
   "stats_chart_minutes_tick": {
-    "message": "$MINUTES$m",
+    "message": "$MINUTES$ 分钟",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -194,7 +194,7 @@
     }
   },
   "stats_blocked_count_one": {
-    "message": "$COUNT$ blocked",
+    "message": "$COUNT$ 个已阻止",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -203,7 +203,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "$COUNT$ blocked",
+    "message": "$COUNT$ 个已阻止",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -212,10 +212,10 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "Bar chart"
+    "message": "条形图"
   },
   "stats_chart_name_hbar": {
-    "message": "Horizontal bar chart"
+    "message": "水平条形图"
   },
   "stats_chart_description_bar": {
     "message": "条形图。使用键盘在数据点之间移动，或打开\"以表格形式查看\"以获取相同的值。"
@@ -224,10 +224,10 @@
     "message": "水平条形图。使用键盘在数据点之间移动，或打开\"以表格形式查看\"以获取相同的值。"
   },
   "stats_chart_empty_default": {
-    "message": "No data yet."
+    "message": "尚无数据。"
   },
   "stats_chart_point": {
-    "message": "$LABEL$: $VALUE$",
+    "message": "$LABEL$：$VALUE$",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -240,13 +240,13 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "View as table"
+    "message": "以表格形式查看"
   },
   "stats_chart_table_category": {
-    "message": "Category"
+    "message": "分类"
   },
   "stats_chart_table_value": {
-    "message": "Value"
+    "message": "值"
   },
   "stats_heat_strip_label": {
     "message": "24 小时已阻止尝试热条"
@@ -258,37 +258,37 @@
     "message": "您的第一个会话将显示在此处。"
   },
   "stats_sessions_col_date": {
-    "message": "Date"
+    "message": "日期"
   },
   "stats_sessions_col_start": {
-    "message": "Start"
+    "message": "开始"
   },
   "stats_sessions_col_planned": {
-    "message": "Planned"
+    "message": "计划"
   },
   "stats_sessions_col_focused": {
-    "message": "Focused"
+    "message": "专注"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All sites"
+    "message": "所有网站"
   },
   "stats_sessions_col_one_site": {
-    "message": "One site"
+    "message": "一个网站"
   },
   "stats_sessions_col_intention": {
-    "message": "Intention"
+    "message": "意图"
   },
   "stats_sessions_col_outcome": {
-    "message": "Outcome"
+    "message": "结果"
   },
   "stats_sessions_col_source": {
-    "message": "Source"
+    "message": "来源"
   },
   "stats_session_no_intention": {
-    "message": "No intention"
+    "message": "无意图"
   },
   "stats_session_article_label": {
-    "message": "Session: $INTENTION$",
+    "message": "会话：$INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -297,21 +297,21 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "manual"
+    "message": "手动"
   },
   "stats_session_source_schedule": {
-    "message": "schedule"
+    "message": "日程"
   },
   "stats_session_source_scheduled": {
-    "message": "scheduled"
+    "message": "已计划"
   },
   "stats_outcome_completed": {
-    "message": "Completed"
+    "message": "已完成"
   },
   "stats_outcome_ended_early": {
-    "message": "Ended early"
+    "message": "提前结束"
   },
   "stats_outcome_running": {
-    "message": "Running"
+    "message": "运行中"
   }
 }
