@@ -36,10 +36,10 @@
     "message": "Hindi pa handang tapusin ang setup."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Nagbago ang pinili sa storage ng setup. I-reload ang setup bago tapusin."
+    "message": "Nagbago ang piniling imbakan ng setup. I-reload ang setup bago tapusin."
   },
   "notify_onboarding_storage_failed": {
-    "message": "Nabigo ang operasyon sa storage ng onboarding."
+    "message": "Nabigo ang operasyon ng imbakan ng setup."
   },
   "notify_onboarding_operation_failed": {
     "message": "Nabigo ang operasyon ng onboarding."
@@ -48,7 +48,7 @@
     "message": "Hindi masuri ng Focus Lock ang pagpapahintulot sa site. Ulitin ang setup o i-reload ang ekstensyon."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Naibigay na ang pagpapahintulot sa site, pero hindi ma-enable ng Focus Lock ang pag-block. Ulitin ang setup o i-reload ang ekstensyon."
+    "message": "Naibigay ang access sa website, ngunit hindi na-enable ng Focus Lock ang pagharang. Subukan muli ang setup o i-reload ang extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
     "message": "Wala pang pagpapahintulot sa site, at hindi natapos ng Focus Lock ang paglilinis ng pag-block. Ulitin ang setup o i-reload ang ekstensyon."
@@ -72,10 +72,10 @@
     "message": "Tumatakbo ang Focus Lock, walang ire-reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Hindi mare-reset ng Focus Lock ang runtime dahil nakapaloob pa ito sa isang policy generation"
+    "message": "Hindi maaaring i-reset ng Focus Lock ang runtime na nakatali pa sa isang henerasyon ng patakaran"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "Ang retry ng pag-clear ng data ay hindi makukuha."
+    "message": "Hindi available ang muling pagsubok na magbura ng datos."
   },
   "notify_disable_sync_before_delete": {
     "message": "I-disable ang Sync bago burahin ang mga naka-sync na data"

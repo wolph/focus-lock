@@ -124,7 +124,7 @@
     "message": "Paganahin ang pag-block sa site"
   },
   "onboarding_access_local_matching": {
-    "message": "Sinusuri ng Focus Lock ang mga address ng page nang lokal upang matugma ang iyong mga piniling kategorya at site. Ginagamit nito ang pahintulot sa site upang ipakita ang screen ng pag-block at ibalik ang mga apektadong pahina kapag natapos na ang iyong sesyon."
+    "message": "Sinusuri ng Focus Lock ang mga address ng pahina sa iyong device upang itugma ang mga piniling kategorya at site. Ginagamit nito ang access sa website upang ipakita ang screen ng pagharang at ibalik ang mga apektadong pahina kapag natapos ang iyong sesyon."
   },
   "onboarding_access_capability_intro": {
     "message": "Ang mga kategorya at custom na domain ay maaaring magsama ng anumang site. Samakatuwid, hihiling ang Chrome ng kakayahang ito:"
@@ -139,7 +139,7 @@
     "message": "Hindi nagbigay ang Chrome ng pahintulot sa site. Maaari kang subukang muli."
   },
   "onboarding_access_registration_error": {
-    "message": "Naibigay na ang pahintulot sa site, pero hindi ma-enable ng Focus Lock ang pag-block. Ulitin ang setup o i-reload ang ekstensyon."
+    "message": "Naibigay ang access sa website, ngunit hindi na-enable ng Focus Lock ang pagharang. Subukan muli ang setup o i-reload ang extension."
   },
   "onboarding_access_enable_button": {
     "message": "Paganahin ang pag-block sa site"

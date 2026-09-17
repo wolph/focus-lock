@@ -1,60 +1,60 @@
 {
   "stats_document_title": {
-    "message": "Pokus Lock stats"
+    "message": "Estadistika ng Focus Lock"
   },
   "stats_page_title": {
-    "message": "Ang iyong focus record"
+    "message": "Ang iyong talaan ng pokus"
   },
   "stats_loading": {
-    "message": "Loading ang iyong stats."
+    "message": "Kinakarga ang iyong estadistika."
   },
   "stats_load_error": {
-    "message": "Hindi maaaring load stats. Reload to try again."
+    "message": "Hindi makarga ang estadistika. I-reload upang subukan muli."
   },
   "stats_partial_error_both": {
-    "message": "Hourly attempts at site pag-access cri-edit mga settsag are unavailable."
+    "message": "Hindi available ang oras-oras na pagtatangka at ang mga setting ng kredito sa access ng site."
   },
   "stats_partial_error_attempts": {
     "message": "Hindi makukuha para sa unang pagkakataon na gawing makukuha ang data."
   },
   "stats_partial_error_economy": {
-    "message": "Site pag-access cri-edit mga settsag are unavailable."
+    "message": "Hindi available ang mga setting ng kredito sa access ng site."
   },
   "stats_scope_synced": {
-    "message": "Synced satals from this Chrome account. Local-saly panels are labeled."
+    "message": "Kabuuang naka-sync mula sa Chrome account na ito. May tatak ang mga panel na lokal lamang."
   },
   "stats_scope_local": {
-    "message": "Totals from this machsae. Pokus Lock statistics are not synced."
+    "message": "Kabuuan mula sa makinang ito. Hindi naka-sync ang estadistika ng Focus Lock."
   },
   "stats_scope_checking": {
-    "message": "Checksag whether these satals are synced."
+    "message": "Sinusuri kung naka-sync ang mga kabuuang ito."
   },
   "stats_scope_unavailable": {
-    "message": "Statistics scope is unavailable. Totals may saclude synced data. Hourly attempts at recent sesysas are from this machsae."
+    "message": "Hindi available ang saklaw ng estadistika. Maaaring kasama sa kabuuan ang naka-sync na datos. Ang oras-oras na pagtatangka at kamakailang sesyon ay mula sa makinang ito."
   },
   "stats_scope_retry": {
-    "message": "Subukan Muli scope check"
+    "message": "Suriin muli ang saklaw"
   },
   "stats_empty": {
-    "message": "Stats appear after ang iyong first session."
+    "message": "Lilitaw ang estadistika pagkatapos ng iyong unang sesyon."
   },
   "stats_tile_focus_today": {
     "message": "Focus toaraw"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Focus in ang last 7 days"
+    "message": "Pokus sa nakaraang 7 araw"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts blocked toaraw"
+    "message": "Mga pagtatangkang hinarang ngayong araw"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gate requests dismissed toaraw"
+    "message": "Mga hiling sa tarangkahan na tinanggihan ngayong araw"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent toaraw"
+    "message": "Kreditong access sa site na nagastos ngayong araw"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "All sites $ALL_SITES$, sae site $ONE_SITE$, $EARNED$ earned",
+    "message": "Lahat ng site $ALL_SITES$, isang site $ONE_SITE$, $EARNED$ ang kinita",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -83,7 +83,7 @@
     "message": "Sunod-sunod"
   },
   "stats_streak_empty": {
-    "message": "Ang iyong streak starts with ang iyong first focus day."
+    "message": "Nagsisimula ang iyong sunod-sunod sa iyong unang araw ng pokus."
   },
   "stats_streak_unit_one": {
     "message": "araw"
@@ -92,7 +92,7 @@
     "message": "araws"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$ freeze saken banked",
+    "message": "$COUNT$ token ng pagyeyelo ang naipon",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$ freeze sakens banked",
+    "message": "$COUNT$ na token ng pagyeyelo ang naipon",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "Streak freeze: one missed araw, covered"
+    "message": "Pagyeyelo ng sunod-sunod: isang araw na nalaktawan, natakpan"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active araw this month ($MONTH$)",
+    "message": "$COUNT$ aktibong araw ngayong buwan ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active araws this month ($MONTH$)",
+    "message": "$COUNT$ na aktibong araw ngayong buwan ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Active dates sa $MONTH$: $DAYS$.",
+    "message": "Mga aktibong petsa sa $MONTH$: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -152,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "No active dates sa $MONTH$.",
+    "message": "Walang aktibong petsa sa $MONTH$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -161,25 +161,25 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Focus, last 14 araws"
+    "message": "Pokus, nakaraang 14 na araw"
   },
   "stats_chart_focus_empty": {
-    "message": "Focus minutes appear after ang iyong first session."
+    "message": "Lilitaw ang mga minuto ng pokus pagkatapos ng iyong unang sesyon."
   },
   "stats_chart_attempts_heading": {
-    "message": "Hadlanged attempts, last 14 araws"
+    "message": "Mga hinarang na pagtatangka, nakaraang 14 na araw"
   },
   "stats_chart_attempts_empty": {
-    "message": "Hadlanged attempts show up here once a session catches one."
+    "message": "Lilitaw dito ang mga hinarang na pagtatangka kapag may nahuli ang isang sesyon."
   },
   "stats_chart_sites_heading": {
-    "message": "Top blocked sites, last 30 araws"
+    "message": "Mga site na pinakamadalas harangin, nakaraang 30 araw"
   },
   "stats_chart_sites_empty": {
-    "message": "Nothsag hadlanged yet. That is a fsae simulan."
+    "message": "Wala pang hinarang. Magandang simula iyan."
   },
   "stats_chart_hours_heading": {
-    "message": "Attempts by oras, this machine only"
+    "message": "Mga pagtatangka kada oras, makinang ito lamang"
   },
   "stats_chart_other_site": {
     "message": "iba"
@@ -215,16 +215,16 @@
     "message": "Tsart ng haligi"
   },
   "stats_chart_name_hbar": {
-    "message": "Hoizsatal bar chart"
+    "message": "Pahigang bar chart"
   },
   "stats_chart_description_bar": {
-    "message": "Bar chart. Use ang keyboard to move sa pamamagitan ng data points, or open View as table for ang same values."
+    "message": "Bar chart. Gamitin ang keyboard upang dumaan sa mga punto ng datos, o buksan ang Tingnan bilang talahanayan para sa parehong halaga."
   },
   "stats_chart_description_hbar": {
-    "message": "Horizontal bar chart. Use ang keyboard to move sa pamamagitan ng data points, or open View as table for ang same values."
+    "message": "Pahigang bar chart. Gamitin ang keyboard upang dumaan sa mga punto ng datos, o buksan ang Tingnan bilang talahanayan para sa parehong halaga."
   },
   "stats_chart_empty_default": {
-    "message": "Hindi data yet."
+    "message": "Wala pang datos."
   },
   "stats_chart_point": {
     "message": "$LABEL$: $VALUE$",
@@ -240,7 +240,7 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "Tsagnan as table"
+    "message": "Tingnan bilang talahanayan"
   },
   "stats_chart_table_category": {
     "message": "Kategorya"
@@ -249,13 +249,13 @@
     "message": "Halaga"
   },
   "stats_heat_strip_label": {
-    "message": "24-oras blocked-attempt heat strip"
+    "message": "24-oras na heat strip ng mga hinarang na pagtatangka"
   },
   "stats_sessions_heading": {
-    "message": "Recent sesysas sa this machsae"
+    "message": "Kamakailang sesyon sa makinang ito"
   },
   "stats_sessions_empty": {
-    "message": "Ang iyong first session will appear here."
+    "message": "Lilitaw dito ang iyong unang sesyon."
   },
   "stats_sessions_col_date": {
     "message": "Petsa"
@@ -309,7 +309,7 @@
     "message": "Kumpletod"
   },
   "stats_outcome_ended_early": {
-    "message": "Tapusined early"
+    "message": "Natapos nang maaga"
   },
   "stats_outcome_running": {
     "message": "Runnsag"

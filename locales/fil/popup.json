@@ -16,121 +16,121 @@
     "message": "Mga setting"
   },
   "popup_open_settings_failed": {
-    "message": "Hindi maaaring open Settings. Try again."
+    "message": "Hindi mabuksan ang Settings. Subukan ulit."
   },
   "popup_settings_load_failed": {
-    "message": "Hindi maaaring load session settings. Reload ang popup to try again. Defaults are shown."
+    "message": "Hindi na-load ang mga setting ng sesyon. I-reload ang popup para subukan ulit. Ipinapakita ang mga default."
   },
   "popup_open_setup_failed": {
-    "message": "Hindi maaaring open setup. Try again."
+    "message": "Hindi mabuksan ang setup. Subukan ulit."
   },
   "popup_setup_required_heading": {
-    "message": "Fsaish settsag up Pokus Lock"
+    "message": "Tapusin ang pag-set up ng Focus Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose ang iyong starting lists, website access, and storage mode before starting a session."
+    "message": "Piliin ang iyong mga panimulang listahan, pahintulot sa site, at storage mode bago magsimula ng sesyon."
   },
   "popup_open_setup_button": {
-    "message": "Buksan setup"
+    "message": "Buksan ang setup"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Hindi maaaring confirm website blocking. Try again."
+    "message": "Hindi makumpirma ang pag-block sa site. Subukan ulit."
   },
   "popup_blocking_enable_failed": {
-    "message": "Hindi maaaring enable website blocking. Try again."
+    "message": "Hindi mapagana ang pag-block sa site. Subukan ulit."
   },
   "popup_blocking_off_heading": {
-    "message": "Website hadlangsag is ngf"
+    "message": "Naka-off ang pag-block sa site"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock hindi maaaring start a session until Chrome grants website access and blocking is enabled."
+    "message": "Hindi makapagsimula ng sesyon ang Focus Lock hangga't hindi nagbibigay ng pahintulot sa site ang Chrome at naka-enable ang pag-block."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant website pag-access. Website hadlangsag is still ngf."
+    "message": "Hindi nagbigay ang Chrome ng pahintulot sa site. Naka-off pa rin ang pag-block sa site."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but Focus Lock hindi maaaring enable blocking. Retry setup or reload ang extension."
+    "message": "Naibigay na ang pahintulot sa site, pero hindi ma-enable ng Focus Lock ang pag-block. Ulitin ang setup o i-reload ang ekstensyon."
   },
   "popup_enable_blocking_button": {
-    "message": "Paganahin website blocking"
+    "message": "Paganahin ang pag-block sa site"
   },
   "popup_retry_button": {
     "message": "Subukan Muli"
   },
   "popup_notice_access_revoked": {
-    "message": "Ang iyong session ended because website access was removed."
+    "message": "Natapos ang iyong sesyon dahil inalis ang pahintulot sa site."
   },
   "popup_notice_blocking_failed": {
-    "message": "Ang iyong session ended because Focus Lock hindi maaaring enable website blocking."
+    "message": "Natapos ang iyong sesyon dahil hindi napagana ng Focus Lock ang pag-block sa site."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Hindi maaaring dismiss this notice. Try again."
+    "message": "Hindi maisara ang paalalang ito. Subukan ulit."
   },
   "popup_dismiss_notice_label": {
-    "message": "Dismiss website pag-access notice"
+    "message": "Isara ang paalala ng pahintulot sa site"
   },
   "popup_dismiss_button": {
-    "message": "Palampasin"
+    "message": "Isara"
   },
   "popup_restart_failed": {
-    "message": "Hindi maaaring restart Focus Lock. Try again."
+    "message": "Hindi ma-restart ang Focus Lock. Subukan ulit."
   },
   "popup_boot_failed_heading": {
-    "message": "Focus Lock hindi maaaring start"
+    "message": "Hindi nakapagsimula ang Focus Lock"
   },
   "popup_boot_reason_unavailable": {
-    "message": "Ang reason hindi maaaring be read."
+    "message": "Hindi mabasa ang dahilan."
   },
   "popup_reset_runtime_button": {
-    "message": "Reset local runoas"
+    "message": "I-reset ang lokal na runtime"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps ang iyong settings, lists, and statistics. Clears ang current session state."
+    "message": "Pinapanatili ang iyong mga setting, listahan, at estadistika. Binubura ang kasalukuyang estado ng sesyon."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Alisin everything and start over"
+    "message": "Alisin lahat at magsimula ulit"
   },
   "popup_keep_data_button": {
     "message": "Panatilihin ang aking data"
   },
   "popup_delete_all_button": {
-    "message": "Alisin all Focus Lock data"
+    "message": "Alisin ang lahat ng data ng Focus Lock"
   },
   "popup_setup_status_unavailable": {
-    "message": "I-set up status unavailable. Reload Focus Lock to try again."
+    "message": "Hindi magagamit ang status ng setup. I-reload ang Focus Lock para subukan ulit."
   },
   "popup_snapshot_unavailable": {
-    "message": "Pokus status unavailable"
+    "message": "Hindi magagamit ang status ng Focus"
   },
   "popup_action_in_progress": {
-    "message": "Actisa sa progress"
+    "message": "Ginagawa pa ang aksyon"
   },
   "popup_active_site_checking": {
-    "message": "Checking ang active site"
+    "message": "Sinusuri ang aktibong site"
   },
   "popup_active_site_unsupported": {
-    "message": "Buksan a regular website to unlock it"
+    "message": "Buksan ang isang regular na site para ma-unlock ito"
   },
   "popup_active_site_unknown": {
-    "message": "Hindi maaaring identify ang active site"
+    "message": "Hindi matukoy ang aktibong site"
   },
   "popup_active_site_error": {
-    "message": "Hindi maaaring identify ang active site."
+    "message": "Hindi matukoy ang aktibong site."
   },
   "popup_resume_now": {
-    "message": "Ipagpatuloy now"
+    "message": "Ipagpatuloy ngayon"
   },
   "popup_start_next_focus_early": {
-    "message": "Magsimula next focus early"
+    "message": "Simulan nang maaga ang susunod na Focus"
   },
   "popup_unlock_this_site": {
-    "message": "Unlock ito site"
+    "message": "I-unlock ang site na ito"
   },
   "popup_unlock_all_sites": {
-    "message": "Unlock lahat sites"
+    "message": "I-unlock ang lahat ng site"
   },
   "popup_spend_cost": {
-    "message": "$ACCESS$ pag-access, $CREDIT$ cri-edit",
+    "message": "$ACCESS$ na pag-access, $CREDIT$ na kredito",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -143,7 +143,7 @@
     }
   },
   "popup_spend_cost_host": {
-    "message": "$ACCESS$ pag-access, $CREDIT$ cri-edit - $HOST$",
+    "message": "$ACCESS$ na pag-access, $CREDIT$ na kredito - $HOST$",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -160,16 +160,16 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Choose trabaho tab"
+    "message": "Piliin ang tab ng trabaho"
   },
   "popup_change_work_tab_button": {
-    "message": "Change trabaho tab"
+    "message": "Baguhin ang tab ng trabaho"
   },
   "popup_session_actions_summary": {
-    "message": "Sesyon actions"
+    "message": "Mga aksyon ng sesyon"
   },
   "popup_site_access_credit": {
-    "message": "$CREDIT$ site pag-access cri-edit",
+    "message": "$CREDIT$ na kredito sa pagpapahintulot ng site",
     "placeholders": {
       "CREDIT": {
         "content": "$1",
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Magdagdag an allowed domain"
+    "message": "Magdagdag ng pinapayagang domain"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Magdagdag allowed domain"
+    "message": "Magdagdag ng pinapayagang domain"
   },
   "popup_add_button": {
     "message": "Magdagdag"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed site panuntunans. Other websites hadlanged.",
+    "message": "Tanging $COUNT$ na pinapayagang panuntunan ng site. Naka-block ang ibang mga site.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -199,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ hadlanged categoies, $RULES$ extra panuntunans.",
+    "message": "$CATEGORIES$ na naka-block na kategorya, $RULES$ na karagdagang panuntunan.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -212,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Hard lock. Hindi maaaring end early."
+    "message": "Mahigpit na lock. Hindi maaaring tapusin nang maaga."
   },
   "popup_draft_stop_flexible": {
-    "message": "Can end at any oas."
+    "message": "Puwedeng tapusin anumang oras."
   },
   "popup_draft_stop_friction": {
-    "message": "Tapusin after a $SECONDS$s wait.",
+    "message": "Matatapos pagkalipas ng $SECONDS$s na paghihintay.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -227,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "Tapusin after a $SECONDS$s wait and confirmation phrase.",
+    "message": "Matatapos pagkalipas ng $SECONDS$s na paghihintay at pagkumpirmang parirala.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -236,22 +236,25 @@
     }
   },
   "popup_session_length_label": {
-    "message": "Sesyon length"
+    "message": "Haba ng sesyon"
   },
   "popup_custom_minutes_label": {
     "message": "Custom minutos"
   },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
   "popup_gate_force_end": {
-    "message": "Ignoe oasout at end anyway"
+    "message": "Balewalain ang paghihintay at tapusin pa rin"
   },
   "popup_gate_keep_focusing": {
-    "message": "Keep pokussag"
+    "message": "Ipagpatuloy ang Focus"
   },
   "popup_gate_phrase_label": {
-    "message": "Uri:"
+    "message": "I-type:"
   },
   "popup_gate_update_failed": {
-    "message": "Hindi maaaring update ang gate. Try again."
+    "message": "Hindi na-update ang gate. Subukan ulit."
   },
   "popup_gate_intention": {
     "message": "Sinabi mo: $INTENTION$",
@@ -263,7 +266,7 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "A moment sa decide:"
+    "message": "Isang sandali para magpasya:"
   },
   "popup_gate_wait_remaining": {
     "message": "ng $TOTAL$ s",
@@ -275,13 +278,13 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Bumalik to work"
+    "message": "Bumalik sa trabaho"
   },
   "popup_destination_unavailable": {
-    "message": "Destsaatisa unavailable"
+    "message": "Hindi magagamit ang patutunguhan"
   },
   "popup_back_to_work_name": {
-    "message": "Bumalik to work: $DESTINATION$",
+    "message": "Bumalik sa trabaho: $DESTINATION$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -290,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "Bumalik to work: $DESTINATION$ ($HOSTNAME$)",
+    "message": "Bumalik sa trabaho: $DESTINATION$ ($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -303,13 +306,13 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Kategorya editing is disabled until blocked-site lists reload."
+    "message": "Naka-disable ang pag-edit ng kategorya hanggang mag-reload ang mga listahan ng naka-block na site."
   },
   "popup_blocked_categories_heading": {
-    "message": "Hadlanged categories"
+    "message": "Mga naka-block na kategorya"
   },
   "popup_show_full_domain": {
-    "message": "Ipakita full domain: $PATTERN$",
+    "message": "Ipakita ang buong domain: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -318,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "Ipakita full regular expression: $PATTERN$",
+    "message": "Ipakita ang buong regular expression: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -326,8 +329,14 @@
       }
     }
   },
+  "popup_rule_kind_domain": {
+    "message": "Domain"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regular expression"
+  },
   "popup_category_sites_label": {
-    "message": "$CATEGORY$ laman",
+    "message": "Mga site ng $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -345,7 +354,7 @@
     }
   },
   "popup_sites_other": {
-    "message": "$COUNT$ laman",
+    "message": "$COUNT$ mga site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -354,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "at $COUNT$ moe site",
+    "message": "at $COUNT$ pang site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "at $COUNT$ moe sites",
+    "message": "at $COUNT$ pang mga site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,28 +381,28 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Payaganed exceptions"
+    "message": "Mga pinapayagang pagbubukod"
   },
   "popup_extra_blocked_heading": {
-    "message": "Extra hadlanged panuntunans"
+    "message": "Mga karagdagang naka-block na panuntunan"
   },
   "popup_no_extra_blocked": {
-    "message": "No extra hadlanged panuntunans."
+    "message": "Walang karagdagang naka-block na panuntunan."
   },
   "popup_allowed_heading": {
-    "message": "Payaganed sites and rules"
+    "message": "Mga pinapayagang site at panuntunan"
   },
   "popup_no_allowed_sites": {
-    "message": "No sites are hayaaned yet."
+    "message": "Wala pang pinapayagang site."
   },
   "popup_what_will_be_blocked": {
-    "message": "What will be hadlanged"
+    "message": "Ano ang haharangin"
   },
   "popup_what_will_be_allowed": {
-    "message": "What will be hayaaned"
+    "message": "Ano ang papayagan"
   },
   "popup_categories_selected": {
-    "message": "$SELECTED$ ng $TOTAL$ categoies selected",
+    "message": "$SELECTED$ sa $TOTAL$ na kategorya ang napili",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -406,7 +415,7 @@
     }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$ extra hadlanged panuntunan",
+    "message": "$COUNT$ karagdagang naka-block na panuntunan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -415,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$ extra hadlanged panuntunans",
+    "message": "$COUNT$ mga karagdagang naka-block na panuntunan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -424,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed panuntunan",
+    "message": "$COUNT$ pinapayagang panuntunan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -433,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed panuntunans",
+    "message": "$COUNT$ mga pinapayagang panuntunan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -442,34 +451,34 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Payaganed-site and rule changes here apply only to this session. Everything else is blocked."
+    "message": "Ang mga pagbabago sa pinapayagang site at panuntunan dito ay para sa sesyong ito lamang. Naka-block ang lahat ng iba pa."
   },
   "popup_scope_blacklist": {
-    "message": "Kategorya and rule changes here apply only to this session."
+    "message": "Ang mga pagbabago sa kategorya at panuntunan dito ay para sa sesyong ito lamang."
   },
   "popup_open_settings_defaults": {
-    "message": "Buksan Mga setting for permanent defaults"
+    "message": "Buksan ang mga setting para sa permanenteng default"
   },
   "popup_rule_details_label": {
-    "message": "Sesyon rule details"
+    "message": "Detalye ng panuntunan ng sesyon"
   },
   "popup_session_type_legend": {
-    "message": "Sesyon type"
+    "message": "Uri ng sesyon"
   },
   "popup_session_type_flexible": {
-    "message": "Naabot"
+    "message": "Nababaluktot"
   },
   "popup_session_type_friction": {
-    "message": "Alitan"
+    "message": "Pagkaantala"
   },
   "popup_session_type_hard": {
-    "message": "Mahirap lock"
+    "message": "Mahigpit na lock"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End ang session immediately whenever you choose."
+    "message": "Tapusin agad ang sesyon anumang oras na gusto mo."
   },
   "popup_session_type_friction_hint": {
-    "message": "Tapusining early requires $WAIT$. No typing is required.",
+    "message": "Kailangan ng $WAIT$ para tapusin nang maaga. Walang kailangang i-type.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -478,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Tapusining early requires $WAIT$ and typed confirmation.",
+    "message": "Kailangan ng $WAIT$ at nakasulat na kumpirmasyon para tapusin nang maaga.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -487,28 +496,28 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "Ang session hindi maaaring end early. Site access credit still works."
+    "message": "Hindi puwedeng tapusin nang maaga ang sesyon. Gumagana pa rin ang kredito sa pagpapahintulot ng site."
   },
   "popup_mode_blacklist_hint": {
-    "message": "Ang mga napiling category at dagdag na rules ay nablok. Ang ibang sites ay nanatiling makukuha."
+    "message": "Naka-block ang mga napiling kategorya at karagdagang panuntunan. Nananatiling magagamit ang ibang site."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Lamang ang mga listed sites ay makukuha. Bawat ibang website ay nablok."
+    "message": "Magagamit lamang ang mga nakalistang site. Naka-block ang bawat ibang site."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a session length greater than zero minutos."
+    "message": "Maglagay ng haba ng sesyon na higit sa zero minuto."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Defaults changed, but current lists hindi maaaring be loaded. Reload ang popup."
+    "message": "Nagbago ang mga default, pero hindi na-load ang kasalukuyang mga listahan. I-reload ang popup."
   },
   "popup_no_work_tab_option": {
-    "message": "No trabaho tab (opsysaal)"
+    "message": "Walang tab ng trabaho (opsyonal)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Selected tab unavailable - choose anoangr"
+    "message": "Hindi magagamit ang napiling tab - pumili ng iba"
   },
   "popup_cycles_label": {
-    "message": "Sikluss: $FOCUS$ msa pokus, $SHORT_BREAK$ msa pahsaga, $LONG_BREAK$ msa lsag pahsaga every $LONG_EVERY$th",
+    "message": "Siklo: $FOCUS$ min na Focus, $SHORT_BREAK$ min na pahinga, $LONG_BREAK$ min na mahabang pahinga tuwing ika-$LONG_EVERY$",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -529,13 +538,13 @@
     }
   },
   "popup_intention_label": {
-    "message": "Layunsa"
+    "message": "Layunin"
   },
   "popup_intention_placeholder": {
-    "message": "What are you trabahosag sa?"
+    "message": "Ano ang ginagawa mo?"
   },
   "popup_work_tab_named": {
-    "message": "Trabaho tab: $TITLE$",
+    "message": "Tab ng trabaho: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -547,13 +556,13 @@
     "message": "Baguhin"
   },
   "popup_session_settings_summary": {
-    "message": "Sesyon settings"
+    "message": "Mga setting ng sesyon"
   },
   "popup_choose_work_tab_label": {
-    "message": "Choose a trabaho tab"
+    "message": "Pumili ng tab ng trabaho"
   },
   "popup_work_tab_select_label": {
-    "message": "Trabaho tab"
+    "message": "Tab ng trabaho"
   },
   "popup_work_tab_current_option": {
     "message": "$TITLE$ (Kasalukuyan)",
@@ -565,13 +574,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Hadlanging mode"
+    "message": "Mode ng pag-block"
   },
   "popup_invalid_time_label": {
-    "message": "savalid oas"
+    "message": "hindi wastong oras"
   },
   "popup_start_focus_label": {
-    "message": "Magsimula $DURATION$ focus",
+    "message": "Magsimula ng $DURATION$ na Focus",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -580,42 +589,42 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "Enter a valid domasa such as docs.example.com."
+    "message": "Maglagay ng wastong domain tulad ng docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Hindi maaaring load work tabs. Reopen ang popup to try again."
+    "message": "Hindi na-load ang mga tab ng trabaho. Buksan muli ang popup para subukan ulit."
   },
   "popup_use_this_tab": {
-    "message": "Use ito tab"
+    "message": "Gamitin ang tab na ito"
   },
   "popup_current_tab_unavailable": {
-    "message": "Ang tab na ito ay hindi makukuha para sa trabaho. Pumili ng iba pang open tab."
+    "message": "Hindi magagamit ang tab na ito para sa trabaho. Pumili ng ibang bukas na tab."
   },
   "popup_checking_current_tab": {
-    "message": "Checksag current tab..."
+    "message": "Sinusuri ang kasalukuyang tab..."
   },
   "popup_finding_current_tab": {
-    "message": "Tinitingnan ang iyong kasalukuyang tab..."
+    "message": "Hinahanap ang iyong kasalukuyang tab..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Hindi maaaring load ang iyong current tab. Try again."
+    "message": "Hindi na-load ang iyong kasalukuyang tab. Subukan ulit."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Piliin ang tab na gusto mong gamitin para sa iyong focus session."
+    "message": "Piliin o palitan ang iyong tab ng trabaho."
   },
   "popup_saving_work_tab": {
-    "message": "Savsag trabaho tab..."
+    "message": "Sine-save ang tab ng trabaho..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Hindi maaaring save ang work tab. Try again."
+    "message": "Hindi na-save ang tab ng trabaho. Subukan ulit."
   },
   "popup_choose_open_tab_option": {
-    "message": "Choose an buksan tab"
+    "message": "Pumili ng bukas na tab"
   },
   "popup_or_choose_another_tab": {
     "message": "o pumili ng iba pang tab"
   },
   "popup_start_failed": {
-    "message": "Hindi maaaring start session. Try again."
+    "message": "Hindi nakapagsimula ng sesyon. Subukan ulit."
   }
 }
