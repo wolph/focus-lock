@@ -16,6 +16,11 @@ const IDLE_COLOR: string = '#9ca3af';
 const FOCUS_COLOR: string = '#22c55e';
 const BREAK_COLOR: string = '#14b8a6';
 const PAUSE_COLOR: string = '#f59e0b';
+// The ring is drawn on the green tile, so it uses the lightened palette rather than the badge's.
+const IDLE_RING: string = '#e5e7eb';
+const FOCUS_RING: string = '#a7f3a9';
+const BREAK_RING: string = '#5eead4';
+const PAUSE_RING: string = '#fcd34d';
 
 const ACTIVE: SessionLifecycleV2 = {
   kind: 'active',
@@ -155,9 +160,9 @@ describe('badgeForV2', (): void => {
 });
 
 describe('iconSpecV2', (): void => {
-  it('is a gray open padlock when idle', (): void => {
+  it('is an open padlock with no ring when idle', (): void => {
     expect(iconSpecV2(emptySnapshotV2(NOW))).toEqual({
-      color: IDLE_COLOR,
+      color: IDLE_RING,
       open: true,
       progress: 0,
       glyph: 'lock',
@@ -168,7 +173,7 @@ describe('iconSpecV2', (): void => {
   it('draws the phase ring for a timed focus phase', (): void => {
     const spec: IconSpec = iconSpecV2(timedFocus());
 
-    expect(spec.color).toBe(FOCUS_COLOR);
+    expect(spec.color).toBe(FOCUS_RING);
     expect(spec.open).toBe(false);
     expect(spec.glyph).toBe('lock');
     expect(spec.ring).toBe(true);
@@ -184,13 +189,13 @@ describe('iconSpecV2', (): void => {
     };
 
     expect(iconSpecV2(onBreak).glyph).toBe('cup');
-    expect(iconSpecV2(onBreak).color).toBe(BREAK_COLOR);
-    expect(iconSpecV2(indefinitePause()).color).toBe(PAUSE_COLOR);
+    expect(iconSpecV2(onBreak).color).toBe(BREAK_RING);
+    expect(iconSpecV2(indefinitePause()).color).toBe(PAUSE_RING);
   });
 
   it('draws no ring for indefinite focus, which has no phase end', (): void => {
     expect(iconSpecV2(indefiniteFocus())).toEqual({
-      color: FOCUS_COLOR,
+      color: FOCUS_RING,
       open: false,
       progress: 0,
       glyph: 'lock',
@@ -211,7 +216,7 @@ describe('iconSpecV2', (): void => {
 
     expect(spec.ring).toBe(false);
     expect(spec.progress).toBe(0);
-    expect(spec.color).toBe(FOCUS_COLOR);
+    expect(spec.color).toBe(FOCUS_RING);
   });
 
   it('clamps the ring progress into zero through one', (): void => {

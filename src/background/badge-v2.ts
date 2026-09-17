@@ -15,6 +15,20 @@ const STATE_COLORS: Record<Phase, string> = {
 };
 
 /**
+ * The same phases again, lightened for the ring that is drawn on the green tile.
+ *
+ * The badge sits on the browser's own background and can use the palette above. The ring cannot:
+ * focus green on tile green is the most common state of all and it vanished, so each phase gets a
+ * tint chosen to read against `#2ebf58` while staying recognisably the same colour.
+ */
+const RING_COLORS: Record<Phase, string> = {
+  idle: '#e5e7eb',
+  focus: '#a7f3a9',
+  break: '#5eead4',
+  paused: '#fcd34d',
+};
+
+/**
  * Only an active session has clocks to report. Starting, cleanup, and error hide a
  * durable session behind a journal, so nothing about it may reach the toolbar.
  */
@@ -42,7 +56,7 @@ export function badgeForV2(
  * pause does have one, so its pause ring still fills toward the pause end.
  */
 export function iconSpecV2(snapshot: SessionSnapshotV2): IconSpec {
-  const color: string = STATE_COLORS[snapshot.phase];
+  const color: string = RING_COLORS[snapshot.phase];
   if (
     !projectsActiveClocks(snapshot) ||
     snapshot.phaseStartedAt === null ||
