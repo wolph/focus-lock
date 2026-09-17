@@ -274,6 +274,25 @@ export function strayLatin(locale, message) {
   return [...rest.matchAll(/[A-Za-z]{2,}/g)].map((match) => match[0]);
 }
 
+/**
+ * English words common enough that a translation containing one is almost certainly a sentence
+ * that was only half translated. They are matched after the placeholders are removed, because a
+ * placeholder name like $SELECTED$ is not a word on screen.
+ */
+const ENGLISH_WORDS =
+  /\b(?:the|could not|cannot|your|you can|please|instead|already|between|available|another|through|without|finished|running)\b/gi;
+
+/**
+ * English words left in a translated message. This is the Latin-script half of `strayLatin`: in a
+ * language written in Latin letters, a half-translated sentence cannot be spotted by script alone,
+ * so it is spotted by the English words still standing in it.
+ */
+export function strayEnglish(locale, message) {
+  if (NEAR_EN_LOCALES.has(locale) || locale === DEFAULT_LOCALE) return [];
+  const withoutPlaceholders = message.replace(/\$[A-Za-z0-9_]+\$/g, ' ');
+  return [...withoutPlaceholders.matchAll(ENGLISH_WORDS)].map((match) => match[0]);
+}
+
 /** Validate one translated catalogue against en. */
 export function checkTranslation(locale, en, catalogue) {
   const errors = [];
@@ -322,6 +341,13 @@ export function checkTranslation(locale, en, catalogue) {
     if (stray.length > 0) {
       errors.push(
         `${locale}: ${key} still carries Latin text in a non-Latin script: ${stray.slice(0, 4).join(', ')}`,
+      );
+      continue;
+    }
+    const english = strayEnglish(locale, entry.message);
+    if (english.length > 0) {
+      errors.push(
+        `${locale}: ${key} still carries English words: ${english.slice(0, 4).join(', ')}`,
       );
     }
   }

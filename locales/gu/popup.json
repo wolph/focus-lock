@@ -16,10 +16,10 @@
     "message": "સેટિંગ્સ"
   },
   "popup_open_settings_failed": {
-    "message": "Could not open સેટિંગ્સ. Try again."
+    "message": "સેટિંગ્સ ખોલી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load સેશન સેટિંગ્સ. Reload the popup to try again. Defaults are shown."
+    "message": "સેશન સેટિંગ્સ લોડ કરી શકાયું નહીં. ફરી પ્રયાસ કરવા પોપઅપ રિલોડ કરો. ડિફૉલ્ટ મૂલ્યો બતાવવામાં આવ્યા છે."
   },
   "popup_open_setup_failed": {
     "message": "સેટઅપ ખોલી શકાયું નહીં. ફરી પ્રયાસ કરો."
@@ -28,7 +28,7 @@
     "message": "Focus Lock નું સેટઅપ પૂર્ણ કરો"
   },
   "popup_setup_required_body": {
-    "message": "Choose your starting lists, website access, and storage mode before starting a સેશન."
+    "message": "સેશન શરૂ કરતાં પહેલાં તમારી શરૂઆતની યાદીઓ, વેબસાઇટ ઍક્સેસ અને સ્ટોરેજ મોડ પસંદ કરો."
   },
   "popup_open_setup_button": {
     "message": "સેટઅપ ખોલો"
@@ -37,31 +37,31 @@
     "message": "વેબસાઇટ બ્લોકિંગની પુષ્ટિ કરી શકાઈ નહીં. ફરી પ્રયાસ કરો."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not સક્ષમ website blocking. Try again."
+    "message": "વેબસાઇટ બ્લોકિંગ સક્ષમ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "popup_blocking_off_heading": {
     "message": "વેબસાઇટ બ્લોકિંગ બંધ છે"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock cannot શરુ a સેશન until Chrome grants website access and blocking is enabled."
+    "message": "Chrome વેબસાઇટ ઍક્સેસ આપે અને બ્લોકિંગ સક્ષમ ન થાય ત્યાં સુધી Focus Lock સેશન શરૂ કરી શકતું નથી."
   },
   "popup_blocking_off_denied": {
     "message": "Chrome એ વેબસાઇટ ઍક્સેસ આપી નહીં. વેબસાઇટ બ્લોકિંગ હજુ પણ બંધ છે."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but Focus Lock could not સક્ષમ blocking. Retry setup or reload the extension."
+    "message": "વેબસાઇટ ઍક્સેસ આપવામાં આવ્યું છે, પણ Focus Lock બ્લોકિંગ સક્ષમ કરી શક્યું નહીં. સેટઅપ ફરી પ્રયાસ કરો અથવા એક્સ્ટેન્શન રિલોડ કરો."
   },
   "popup_enable_blocking_button": {
-    "message": "સક્ષમ website blocking"
+    "message": "વેબસાઇટ બ્લોકિંગ સક્ષમ કરો"
   },
   "popup_retry_button": {
     "message": "ફરી પ્રયાસ કરો"
   },
   "popup_notice_access_revoked": {
-    "message": "Your સેશન ended because website access was removed."
+    "message": "વેબસાઇટ ઍક્સેસ દૂર કરવામાં આવ્યું હોવાથી તમારું સેશન સમાપ્ત થયું."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your સેશન ended because Focus Lock could not સક્ષમ website blocking."
+    "message": "Focus Lock વેબસાઇટ બ્લોકિંગ સક્ષમ કરી શક્યું ન હોવાથી તમારું સેશન સમાપ્ત થયું."
   },
   "popup_dismiss_notice_failed": {
     "message": "આ સૂચના કાઢી શકાઈ નહીં. ફરી પ્રયાસ કરો."
@@ -76,7 +76,7 @@
     "message": "Focus Lock ફરી શરૂ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "popup_boot_failed_heading": {
-    "message": "Focus Lock could not શરુ"
+    "message": "Focus Lock શરૂ થઈ શક્યું નહીં"
   },
   "popup_boot_reason_unavailable": {
     "message": "કારણ વાંચી શકાયું નહીં."
@@ -85,16 +85,16 @@
     "message": "લોકલ રનટાઇમ રીસેટ કરો"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your સેટિંગ્સ, lists, and statistics. Clears the current સેશન state."
+    "message": "તમારા સેટિંગ્સ, યાદીઓ અને આંકડા જાળવી રાખે છે. વર્તમાન સેશનની સ્થિતિ સાફ કરે છે."
   },
   "popup_delete_all_confirm_button": {
-    "message": "કાઢી નાખો everything and start over"
+    "message": "બધું કાઢી નાખો અને ફરીથી શરૂ કરો"
   },
   "popup_keep_data_button": {
     "message": "મારો ડેટા રાખો"
   },
   "popup_delete_all_button": {
-    "message": "કાઢી નાખો all Focus Lock data"
+    "message": "બધો Focus Lock ડેટા કાઢી નાખો"
   },
   "popup_setup_status_unavailable": {
     "message": "સેટઅપ સ્થિતિ ઉપલબ્ધ નથી. ફરી પ્રયાસ કરવા Focus Lock રિલોડ કરો."
@@ -121,7 +121,7 @@
     "message": "હમણાં ફરી શરૂ કરો"
   },
   "popup_start_next_focus_early": {
-    "message": "શરુ next focus early"
+    "message": "આગલું ફોકસ વહેલું શરૂ કરો"
   },
   "popup_unlock_this_site": {
     "message": "આ સાઇટ અનલૉક કરો"
@@ -166,7 +166,7 @@
     "message": "વર્ક ટૅબ બદલો"
   },
   "popup_session_actions_summary": {
-    "message": "સેશન actions"
+    "message": "સેશન ક્રિયાઓ"
   },
   "popup_site_access_credit": {
     "message": "$CREDIT$ સાઇટ ઍક્સેસ ક્રેડિટ",
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "ઉમેરો an allowed domain"
+    "message": "મંજૂર ડોમેન ઉમેરો"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "ઉમેરો allowed domain"
+    "message": "મંજૂર ડોમેન ઉમેરો"
   },
   "popup_add_button": {
     "message": "ઉમેરો"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed site rules. Other websites બ્લોક્ડ.",
+    "message": "ફક્ત $COUNT$ મંજૂર સાઇટ નિયમો. બીજી વેબસાઇટ્સ બ્લોક કરેલી છે.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -199,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ બ્લોક્ડ categories, $RULES$ extra rules.",
+    "message": "$CATEGORIES$ બ્લોક કરેલી શ્રેણીઓ, $RULES$ વધારાના નિયમો.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -236,7 +236,7 @@
     }
   },
   "popup_session_length_label": {
-    "message": "સેશન length"
+    "message": "સેશનની લંબાઈ"
   },
   "popup_custom_minutes_label": {
     "message": "કસ્ટમ મિનિટ"
@@ -306,10 +306,10 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Category editing is disabled until બ્લોક્ડ-site lists reload."
+    "message": "બ્લોક કરેલી સાઇટની યાદીઓ ફરી લોડ ન થાય ત્યાં સુધી શ્રેણી સંપાદન અક્ષમ છે."
   },
   "popup_blocked_categories_heading": {
-    "message": "બ્લોક્ડ categories"
+    "message": "બ્લોક કરેલી શ્રેણીઓ"
   },
   "popup_show_full_domain": {
     "message": "સંપૂર્ણ ડોમેન બતાવો: $PATTERN$",
@@ -384,10 +384,10 @@
     "message": "મંજૂર અપવાદો"
   },
   "popup_extra_blocked_heading": {
-    "message": "Extra બ્લોક્ડ rules"
+    "message": "વધારાના બ્લોક કરેલા નિયમો"
   },
   "popup_no_extra_blocked": {
-    "message": "No extra બ્લોક્ડ rules."
+    "message": "કોઈ વધારાના બ્લોક કરેલા નિયમો નથી."
   },
   "popup_allowed_heading": {
     "message": "મંજૂર સાઇટ્સ અને નિયમો"
@@ -396,7 +396,7 @@
     "message": "હજુ સુધી કોઈ સાઇટ મંજૂર નથી."
   },
   "popup_what_will_be_blocked": {
-    "message": "What will be બ્લોક્ડ"
+    "message": "શું બ્લોક કરવામાં આવશે"
   },
   "popup_what_will_be_allowed": {
     "message": "શું મંજૂર કરવામાં આવશે"
@@ -415,7 +415,7 @@
     }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$ extra બ્લોક્ડ rule",
+    "message": "$COUNT$ વધારાનો બ્લોક કરેલો નિયમ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -424,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$ extra બ્લોક્ડ rules",
+    "message": "$COUNT$ વધારાના બ્લોક કરેલા નિયમો",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,19 +451,19 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Allowed-site and rule changes here apply only to this સેશન. Everything else is બ્લોક્ડ."
+    "message": "અહીં કરેલા મંજૂર-સાઇટ અને નિયમના ફેરફારો ફક્ત આ સેશન માટે જ લાગુ પડે છે. બાકી બધું બ્લોક કરેલું છે."
   },
   "popup_scope_blacklist": {
-    "message": "Category and rule changes here apply only to this સેશન."
+    "message": "અહીં કરેલા શ્રેણી અને નિયમના ફેરફારો ફક્ત આ સેશન માટે જ લાગુ પડે છે."
   },
   "popup_open_settings_defaults": {
-    "message": "Open સેટિંગ્સ for permanent defaults"
+    "message": "કાયમી ડિફૉલ્ટ માટે સેટિંગ્સ ખોલો"
   },
   "popup_rule_details_label": {
-    "message": "સેશન rule details"
+    "message": "સેશન નિયમની વિગતો"
   },
   "popup_session_type_legend": {
-    "message": "સેશન type"
+    "message": "સેશન પ્રકાર"
   },
   "popup_session_type_flexible": {
     "message": "લવચીક"
@@ -475,7 +475,7 @@
     "message": "સખત લૉક"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the સેશન immediately whenever you choose."
+    "message": "તમે જ્યારે ઇચ્છો ત્યારે તરત જ સેશન સમાપ્ત કરો."
   },
   "popup_session_type_friction_hint": {
     "message": "વહેલા સમાપ્ત કરવા માટે $WAIT$ જરૂરી છે. ટાઇપ કરવાની જરૂર નથી.",
@@ -496,16 +496,16 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The સેશન cannot end early. Site access credit still works."
+    "message": "સેશન વહેલું સમાપ્ત કરી શકાતું નથી. સાઇટ ઍક્સેસ ક્રેડિટ હજુ પણ કામ કરે છે."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected categories and extra rules are બ્લોક્ડ. Other sites remain available."
+    "message": "પસંદ કરેલી શ્રેણીઓ અને વધારાના નિયમો બ્લોક કરેલા છે. બીજી સાઇટ્સ ઉપલબ્ધ રહે છે."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. Every other website is બ્લોક્ડ."
+    "message": "ફક્ત યાદીમાં આપેલી સાઇટ્સ જ ઉપલબ્ધ છે. બીજી દરેક વેબસાઇટ બ્લોક કરેલી છે."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a સેશન length greater than zero minutes."
+    "message": "શૂન્ય મિનિટ કરતાં વધુ સેશન લંબાઈ દાખલ કરો."
   },
   "popup_stale_lists_unavailable": {
     "message": "ડિફૉલ્ટ બદલાયા, પણ હાલની લિસ્ટ લોડ કરી શકાઈ નહીં. પોપઅપ રિલોડ કરો."
@@ -556,7 +556,7 @@
     "message": "બદલો"
   },
   "popup_session_settings_summary": {
-    "message": "સેશન settings"
+    "message": "સેશન સેટિંગ્સ"
   },
   "popup_choose_work_tab_label": {
     "message": "એક વર્ક ટૅબ પસંદ કરો"
@@ -580,7 +580,7 @@
     "message": "અમાન્ય સમય"
   },
   "popup_start_focus_label": {
-    "message": "શરુ $DURATION$ focus",
+    "message": "$DURATION$ ફોકસ શરૂ કરો",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -616,7 +616,7 @@
     "message": "વર્ક ટૅબ સાચવી રહ્યાં છીએ..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not સાચવો the work tab. Try again."
+    "message": "વર્ક ટૅબ સાચવી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "popup_choose_open_tab_option": {
     "message": "એક ખુલ્લી ટૅબ પસંદ કરો"
@@ -625,6 +625,6 @@
     "message": "અથવા બીજી ટૅબ પસંદ કરો"
   },
   "popup_start_failed": {
-    "message": "Could not શરુ સેશન. Try again."
+    "message": "સેશન શરૂ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
   }
 }

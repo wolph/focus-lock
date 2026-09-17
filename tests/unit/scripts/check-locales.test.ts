@@ -12,6 +12,7 @@ import {
   mergeSurfaces,
   mergeTranslation,
   repairPlaceholders,
+  strayEnglish,
   strayLatin,
   translationProgress,
   unusedKeys,
@@ -436,5 +437,26 @@ describe('strayLatin', () => {
   it('says nothing about a locale written in Latin script', () => {
     expect(strayLatin('de', 'Sitzung beenden')).toEqual([]);
     expect(strayLatin('en_GB', 'End session')).toEqual([]);
+  });
+});
+
+describe('strayEnglish', () => {
+  it('catches a sentence only half translated', () => {
+    expect(strayEnglish('ms', 'Fokus schedule could not start')).toEqual(['could not']);
+    expect(strayEnglish('sw', 'Your mtazamo kikao fkatikaished.')).toEqual(['Your']);
+  });
+
+  it('ignores a placeholder whose name reads like an English word', () => {
+    expect(strayEnglish('de', '$SELECTED$ von $TOTAL$ Kategorien ausgewählt')).toEqual([]);
+  });
+
+  it('accepts a genuine translation', () => {
+    expect(strayEnglish('nl', 'Sessie beeindigen')).toEqual([]);
+    expect(strayEnglish('fr', 'La session de concentration a change.')).toEqual([]);
+  });
+
+  it('says nothing about English itself', () => {
+    expect(strayEnglish('en', 'Could not save. Try again.')).toEqual([]);
+    expect(strayEnglish('en_GB', 'Could not save. Try again.')).toEqual([]);
   });
 });
