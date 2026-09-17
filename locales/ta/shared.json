@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "இந்த அமர்வை முடி"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "கிடைக்கும் பணி தாவலைத் தேர்வுசெய்யவும்."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "அந்த தாவல் இனி கிடைக்கவில்லை. வேறு பணி தாவலைத் தேர்வுசெய்யவும்."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "அமர்வு தொடங்கியது, ஆனால் பணி தாவலைச் சேமிக்க முடியவில்லை. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "கவன அமர்வு மாறிவிட்டது. உங்கள் பணி தாவலை மீண்டும் தேர்வுசெய்யவும்."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "கவன அமர்வு மாறிவிட்டது. பாப்அப்பை மீண்டும் திறக்கவும்."
   }
 }

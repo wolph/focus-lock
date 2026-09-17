@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "پایان دادن به این جلسه"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "یک زبانه کار در دسترس را انتخاب کنید."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "آن زبانه دیگر در دسترس نیست. زبانه کار دیگری را انتخاب کنید."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "جلسه شروع شد، اما زبانه کار ذخیره نشد. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "جلسه تمرکز تغییر کرده است. زبانه کار خود را دوباره انتخاب کنید."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "جلسه تمرکز تغییر کرده است. پنجره را دوباره باز کنید."
   }
 }

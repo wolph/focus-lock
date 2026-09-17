@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "ഈ സെഷൻ അവസാനിപ്പിക്കുക"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "ലഭ്യമായ ഒരു പ്രവർത്തന ടാബ് തിരഞ്ഞെടുക്കുക."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "ആ ടാബ് ഇനി ലഭ്യമല്ല. മറ്റൊരു പ്രവർത്തന ടാബ് തിരഞ്ഞെടുക്കുക."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "സെഷൻ ആരംഭിച്ചു, പക്ഷേ പ്രവർത്തന ടാബ് സേവ് ചെയ്യാനായില്ല. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "ഫോക്കസ് സെഷൻ മാറിയിരിക്കുന്നു. നിങ്ങളുടെ പ്രവർത്തന ടാബ് വീണ്ടും തിരഞ്ഞെടുക്കുക."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "ഫോക്കസ് സെഷൻ മാറിയിരിക്കുന്നു. പോപ്പപ്പ് വീണ്ടും തുറക്കുക."
   }
 }

@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "यह सेशन समाप्त करें"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "उपलब्ध काम का टैब चुनें."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "वह टैब अब उपलब्ध नहीं है। कोई दूसरा काम का टैब चुनें।"
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "सेशन शुरू हुआ, लेकिन काम का टैब सेव नहीं हो सका। $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "फोकस सेशन बदल गया है। अपना काम का टैब फिर से चुनें।"
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "फोकस सेशन बदल गया है। पॉपअप फिर से खोलें।"
   }
 }

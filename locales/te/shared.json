@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "ఈ సెషన్‌ను ముగించు"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "అందుబాటులో ఉన్న పని ట్యాబ్‌ను ఎంచుకోండి."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "ఆ ట్యాబ్ ఇక అందుబాటులో లేదు. వేరే పని ట్యాబ్‌ను ఎంచుకోండి."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "సెషన్ ప్రారంభమైంది, కానీ పని ట్యాబ్‌ను సేవ్ చేయలేకపోయాం. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "ఫోకస్ సెషన్ మారింది. మీ పని ట్యాబ్‌ను మళ్లీ ఎంచుకోండి."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "ఫోకస్ సెషన్ మారింది. పాప్అప్‌ను మళ్లీ తెరవండి."
   }
 }

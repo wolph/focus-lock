@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "ಈ ಸೆಷನ್ ಅನ್ನು ಮುಂದುವರಿಸಿ"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "ಲಭ್ಯವಿರುವ ಕೆಲಸದ ಟ್ಯಾಬ್ ಆರಿಸಿ."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "ಆ ಟ್ಯಾಬ್ ಇನ್ನು ಲಭ್ಯವಿಲ್ಲ. ಬೇರೆ ಕೆಲಸದ ಟ್ಯಾಬ್ ಆರಿಸಿ."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "ಸೆಷನ್ ಪ್ರಾರಂಭವಾಯಿತು, ಆದರೆ ಕೆಲಸದ ಟ್ಯಾಬ್ ಅನ್ನು ಉಳಿಸಲಾಗಲಿಲ್ಲ. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "ಫೋಕಸ್ ಸೆಷನ್ ಬದಲಾಗಿದೆ. ನಿಮ್ಮ ಕೆಲಸದ ಟ್ಯಾಬ್ ಅನ್ನು ಮತ್ತೆ ಆರಿಸಿ."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "ಫೋಕಸ್ ಸೆಷನ್ ಬದಲಾಗಿದೆ. ಪಾಪ್‌ಅಪ್ ಅನ್ನು ಮತ್ತೆ ತೆರೆಯಿರಿ."
   }
 }

@@ -12,10 +12,10 @@
     "message": "deep kerja"
   },
   "shared_deep_work_note": {
-    "message": "A preference, not science: one long uninterrupted blokir, with no automatic istirahats."
+    "message": "A preference, not science: one long uninterrupted blok, with no automatic breaks."
   },
   "shared_timed_hint_cycles": {
-    "message": "$MINUTES$ min total, with $FOCUS$ min fokus blokirs",
+    "message": "$MINUTES$ min total, with $FOCUS$ min fokus bloks",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -76,7 +76,7 @@
     }
   },
   "shared_until_stopped_hint_flexible": {
-    "message": "Runs until you end it with $LABEL$. Sikluss off.",
+    "message": "Runs until anda end it with $LABEL$. Cycles off.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -85,7 +85,7 @@
     }
   },
   "shared_until_stopped_hint_friction": {
-    "message": "Runs until you unlock it: $REQUIREMENT$, then $LABEL$. Sikluss off.",
+    "message": "Runs until anda unlock it: $REQUIREMENT$, then $LABEL$. Cycles off.",
     "placeholders": {
       "REQUIREMENT": {
         "content": "$1",
@@ -125,7 +125,7 @@
     "message": "HIDUP"
   },
   "shared_popup_starting": {
-    "message": "Focus Lock is starting. Applying andar selected rules."
+    "message": "Focus Lock is starting. Applying anda selected rules."
   },
   "shared_popup_closure_cleanup": {
     "message": "Sesi ended. Finishing browser cleanup."
@@ -170,13 +170,13 @@
     "message": "Fokus schedule started"
   },
   "shared_schedule_until_stopped_body": {
-    "message": "Active until you hentikan it."
+    "message": "Active until anda stop it."
   },
   "shared_settings_indefinite": {
     "message": "Sesi berhenti sampai aktif. Gunakan popup bilah alat untuk melihat atau mengakhirinya."
   },
   "shared_settings_starting": {
-    "message": "Focus Lock is starting. Checking websitus access and applying andar rules."
+    "message": "Focus Lock is starting. Checking situs web akses and applying anda rules."
   },
   "shared_settings_error": {
     "message": "Focus Lock tidak dapat menyelesaikan pembersihan peramban. Buka popup dan coba lagi."
@@ -203,10 +203,10 @@
     "message": "Akhired early"
   },
   "shared_outcome_website_access_lost": {
-    "message": "Akhired: website access lost"
+    "message": "Ended: situs web akses lost"
   },
   "shared_outcome_content_registration_failed": {
-    "message": "Akhired: blocking setup failed"
+    "message": "Ended: pemblokiran setup failed"
   },
   "shared_outcome_alarm_failed": {
     "message": "Akhired: timer setup failed"
@@ -285,13 +285,13 @@
     "message": "Biaya melebihi batas kredit"
   },
   "shared_credit_resumes_focus": {
-    "message": "Kredit earning resumes during focus"
+    "message": "Credit earning resumes during fokus"
   },
   "shared_credit_off": {
     "message": "Kredit earning is turned off"
   },
   "shared_not_enough_time": {
-    "message": "Not enough time in this fokus blokir"
+    "message": "Not enough time in this fokus blok"
   },
   "shared_ready_in": {
     "message": "Ready dalam $CLOCK$",
@@ -325,13 +325,13 @@
     }
   },
   "shared_verdict_blocked_custom": {
-    "message": "Blocked by andar blok list"
+    "message": "Blocked by anda blok list"
   },
   "shared_verdict_whitelist_miss": {
     "message": "Not on andar daftar izinkan"
   },
   "shared_verdict_blocked_session": {
-    "message": "Blokired by this session"
+    "message": "Blocked by this sesi"
   },
   "shared_verdict_allow_list": {
     "message": "On andar daftar izinkan"
@@ -349,7 +349,7 @@
     "message": "No active fokus sesi"
   },
   "shared_verdict_allowed_session": {
-    "message": "Izinkaned by this session"
+    "message": "Allowed by this sesi"
   },
   "shared_category_social": {
     "message": "Media sosial"
@@ -385,7 +385,7 @@
     "message": "Gariss"
   },
   "shared_synced_aggregates": {
-    "message": "Domain-level blokired-attempt aggregates"
+    "message": "Domain-level bloked-attempt aggregates"
   },
   "shared_local_full_urls": {
     "message": "Penuh URLs"
@@ -470,7 +470,7 @@
     }
   },
   "shared_host_none": {
-    "message": "No $TITLE$ situs matches andar search.",
+    "message": "No $TITLE$ site matches anda search.",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -520,7 +520,7 @@
     "message": "Fokus Lock is starting"
   },
   "shared_overlay_starting_detail": {
-    "message": "Applying andar selected rules."
+    "message": "Applying anda selected rules."
   },
   "shared_overlay_stopped_page": {
     "message": "Halaman ini tidak dimuat. Halaman akan dimuat sendiri saat sesi berakhir."
@@ -538,10 +538,10 @@
     "message": "Change kerja tab"
   },
   "shared_overlay_access_summary": {
-    "message": "Need a istirahat or site akses?"
+    "message": "Need a break or site akses?"
   },
   "shared_overlay_access_note": {
-    "message": "Anda can step away at any time. Site access uses credit."
+    "message": "You can step away at any time. Site akses uses kredit."
   },
   "shared_overlay_gate_force_end": {
     "message": "Ignore waktuout and end anyway"
@@ -559,7 +559,7 @@
     }
   },
   "shared_overlay_next_step_fallback": {
-    "message": "Continue andar current task"
+    "message": "Continue anda current task"
   },
   "shared_overlay_pause_action": {
     "message": "Unlock all situss"
@@ -622,7 +622,7 @@
     "message": "Tipe this ke cpadafirm:"
   },
   "shared_gate_end_title": {
-    "message": "Akhir this session"
+    "message": "End this sesi"
   },
   "shared_work_choose_tab_error": {
     "message": "Pilih tab kerja yang tersedia."

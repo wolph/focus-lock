@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "এই সেশন শেষ করুন"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "একটি উপলভ্য কাজের ট্যাব বেছে নিন।"
+  },
+  "shared_work_tab_closed_error": {
+    "message": "সেই ট্যাবটি আর উপলভ্য নেই। অন্য একটি কাজের ট্যাব বেছে নিন।"
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "সেশন শুরু হয়েছে, কিন্তু কাজের ট্যাব সেভ করা যায়নি। $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "ফোকাস সেশন বদলে গেছে। আপনার কাজের ট্যাব আবার বেছে নিন।"
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "ফোকাস সেশন বদলে গেছে। পপআপ আবার খুলুন।"
   }
 }

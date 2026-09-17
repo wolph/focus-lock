@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Lõpeta see seanss"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Vali saadaolev töösakk."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "See sakk pole enam saadaval. Vali mõni teine töösakk."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Seanss algas, kuid töösakki ei õnnestunud salvestada. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Fookusseanss on muutunud. Vali oma töösakk uuesti."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Fookusseanss on muutunud. Ava hüpikaken uuesti."
   }
 }

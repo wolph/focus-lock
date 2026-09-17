@@ -1,12 +1,12 @@
 {
   "notify_session_complete_title": {
-    "message": "Fokus session complete"
+    "message": "Sesi fokus selesai"
   },
   "notify_session_complete_body": {
     "message": "Sesi fokus anda selesai."
   },
   "notify_schedule_window_body": {
-    "message": "Locked sampai $END$.",
+    "message": "Terkunci hingga $END$.",
     "placeholders": {
       "END": {
         "content": "$1",
@@ -18,7 +18,7 @@
     "message": "Jadwal fokus tidak dapat dimulai"
   },
   "notify_schedule_unavailable_body": {
-    "message": "Situs web blocking is not enabled. Finish setup or grant website access, then try again."
+    "message": "Pemblokiran situs web tidak diaktifkan. Selesaikan penyiapan atau berikan akses situs web, lalu coba lagi."
   },
   "notify_setup_completed_elsewhere": {
     "message": "Penyiapan diselesaikan di tab lain."
@@ -30,13 +30,13 @@
     "message": "Penyiapan berubah di tab lain. Muat ulang penyiapan sebelum menyelesaikan."
   },
   "notify_setup_not_complete": {
-    "message": "Penyiapan is not complete."
+    "message": "Penyiapan tidak selesai."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "Penyiapan is not ready to finish."
+    "message": "Penyiapan tidak siap untuk diselesaikan."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Penyiapan storage choice changed. Reload setup before finishing."
+    "message": "Pilihan penyimpanan penyiapan telah berubah. Muat ulang penyiapan sebelum menyelesaikan."
   },
   "notify_onboarding_storage_failed": {
     "message": "Onboarddalamg stpadaauage operpadaipada gagal."
@@ -57,7 +57,7 @@
     "message": "Focus Lock menerima status akses situs web yang tidak konsisten. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "notify_boot_not_finished": {
-    "message": "Fokus Lock did not finish starting: $REASON$",
+    "message": "Focus Lock tidak selesai memulai: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -78,10 +78,10 @@
     "message": "Percobaan pembersihan data tidak tersedia."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Nonaktifkan Sync before deleting synced data"
+    "message": "Nonaktifkan Chrome Sync sebelum menghapus data yang disinkronkan"
   },
   "notify_work_gate_busy": {
-    "message": "Fokus Lock is still finishing an earlier change. Try again in a moment."
+    "message": "Focus Lock masih menyelesaikan perubahan sebelumnya. Coba lagi dalam hitungan detik."
   },
   "notify_work_gate_stuck": {
     "message": "Gerbang yang terbuka tidak dapat ditutup. Coba lagi."
@@ -99,13 +99,13 @@
     "message": "a keras sesi is runndalamg: removdalamg blokired situss unlocks ketika it ends"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a keras sesi is runndalamg: new whitelist entries unlock ketika it ends"
+    "message": "sesi keras sedang berlangsung: entri daftar putih baru membuka kunci saat"
   },
   "notify_guard_lists_disable_category": {
     "message": "a keras sesi is runndalamg: disabldalamg cpadaegpadaauies unlocks ketika it ends"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "a keras sesi is runndalamg: new exclusipadas unlock ketika it ends"
+    "message": "sesi keras sedang berlangsung: pengecualian baru membuka kunci saat berakhir"
   },
   "notify_guard_settings_weaken_strictness": {
     "message": "sesi keras sedang berjalan: melemahkan ketataan default menunggu sampai berakhir"
@@ -126,7 +126,7 @@
     "message": "a keras sesi is runndalamg: shpadaautendalamg jedas lowers their cost"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "a keras sesi is runndalamg: shpadaautendalamg unlocks lowers their cost"
+    "message": "sesi keras sedang berlangsung: memperpendek pembukaan kunci menurunkan kreditnya"
   },
   "notify_guard_settings_schedule_weakened": {
     "message": "sesi keras sedang berjalan: entri jadwalnya tidak dapat dilemahkan sampai berakhir"

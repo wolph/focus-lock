@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "סיים את המפגש הזה"
   },
+  "shared_work_choose_tab_error": {
+    "message": "בחר לשונית עבודה זמינה."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "הלשונית הזו כבר לא זמינה. בחר לשונית עבודה אחרת."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "המפגש התחיל, אך לא ניתן היה לשמור את לשונית העבודה. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "מפגש הריכוז השתנה. בחר שוב את לשונית העבודה שלך."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "מפגש הריכוז השתנה. פתח מחדש את החלון."
+  },
   "shared_minutes_two": {
     "message": "$COUNT$ דק'",
     "placeholders": {

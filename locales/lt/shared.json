@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Baigti šią sesiją"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Pasirink galimą darbo kortelę."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Ta kortelė nebeprieinama. Pasirink kitą darbo kortelę."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Sesija prasidėjo, bet nepavyko išsaugoti darbo kortelės. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Susikaupimo sesija pasikeitė. Pasirink darbo kortelę iš naujo."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Susikaupimo sesija pasikeitė. Atverk langą iš naujo."
+  },
   "shared_minutes_few": {
     "message": "$COUNT$ min.",
     "placeholders": {

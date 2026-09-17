@@ -28,7 +28,7 @@
     "message": "Finish setting up Fokus Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose andar starting lists, websitus access, and storage mode before starting a session."
+    "message": "Choose anda starting lists, situs web akses, and storage mode before starting a sesi."
   },
   "popup_open_setup_button": {
     "message": "Buka setup"
@@ -40,25 +40,25 @@
     "message": "Tidak dapat mengaktifkan pemblokiran situs web. Coba lagi."
   },
   "popup_blocking_off_heading": {
-    "message": "Situs web blocking is off"
+    "message": "Website pemblokiran is off"
   },
   "popup_blocking_off_body": {
     "message": "Focus Lock tidak dapat memulai sesi sampai Chrome memberi akses situs web dan pemblokiran diaktifkan."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant website access. Situs web blocking is still off."
+    "message": "Chrome did not grant situs web akses. Website pemblokiran is still off."
   },
   "popup_blocking_off_registration_error": {
     "message": "Akses situs web diberikan, tetapi Focus Lock tidak dapat mengaktifkan pemblokiran. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "popup_enable_blocking_button": {
-    "message": "Aktifkan website blocking"
+    "message": "Enable situs web pemblokiran"
   },
   "popup_retry_button": {
     "message": "Coba Ulang"
   },
   "popup_notice_access_revoked": {
-    "message": "Andar session berakhir because websitus access was removed."
+    "message": "Your sesi ended because situs web akses was removed."
   },
   "popup_notice_blocking_failed": {
     "message": "Sesi Anda berakhir karena Focus Lock tidak dapat mengaktifkan pemblokiran situs web."
@@ -97,10 +97,10 @@
     "message": "Hapus all Fokus Lock data"
   },
   "popup_setup_status_unavailable": {
-    "message": "Penyiapan status unavailable. Reload Fokus Lock to try again."
+    "message": "Setup status untersedia. Reload Focus Lock to coba lagi."
   },
   "popup_snapshot_unavailable": {
-    "message": "Fokus status unavailable"
+    "message": "Focus status untersedia"
   },
   "popup_action_in_progress": {
     "message": "Tindakan in progress"
@@ -109,7 +109,7 @@
     "message": "Memeriksa situs aktif"
   },
   "popup_active_site_unsupported": {
-    "message": "Buka a regular website to unlock it"
+    "message": "Open a regular situs web to unlock it"
   },
   "popup_active_site_unknown": {
     "message": "Tidak dapat mengidentifikasi situs aktif"
@@ -121,7 +121,7 @@
     "message": "Lanjutkan now"
   },
   "popup_start_next_focus_early": {
-    "message": "Mulai next focus early"
+    "message": "Start next fokus early"
   },
   "popup_unlock_this_site": {
     "message": "Buka kunci this situs"
@@ -306,7 +306,7 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Kategori editing is disabled until blocked-site lists reload."
+    "message": "Category editing is disabled until bloked-site lists reload."
   },
   "popup_blocked_categories_heading": {
     "message": "Blokired categories"
@@ -396,7 +396,7 @@
     "message": "No situss are allowed yet."
   },
   "popup_what_will_be_blocked": {
-    "message": "What will be diblokir"
+    "message": "What will be bloked"
   },
   "popup_what_will_be_allowed": {
     "message": "Whpada will be allowed"
@@ -451,10 +451,10 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Izinkaned-site and rule changes here apply only to this session. Everything else is blocked."
+    "message": "Allowed-site and rule changes here apply only to this sesi. Everything else is bloked."
   },
   "popup_scope_blacklist": {
-    "message": "Kategori and rule changes here apply only to this session."
+    "message": "Category and rule changes here apply only to this sesi."
   },
   "popup_open_settings_defaults": {
     "message": "Buka Pengaturan for permanent defaults"
@@ -505,7 +505,7 @@
     "message": "Hanya situs yang terdaftar yang tersedia. Setiap situs web lain diblokir."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a session length greater than zero menits."
+    "message": "Enter a sesi length greater than zero minutes."
   },
   "popup_stale_lists_unavailable": {
     "message": "Default berubah, tetapi daftar saat ini tidak dapat dimuat. Muat ulang popup."
@@ -517,7 +517,7 @@
     "message": "Tab yang dipilih tidak tersedia - pilih yang lain"
   },
   "popup_cycles_label": {
-    "message": "Sikluss: $FOCUS$ min fokus, $SHORT_BREAK$ min istirahat, $LONG_BREAK$ min long istirahat every $LONG_EVERY$th",
+    "message": "Cycles: $FOCUS$ min fokus, $SHORT_BREAK$ min break, $LONG_BREAK$ min long break every $LONG_EVERY$th",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -541,7 +541,7 @@
     "message": "Niat"
   },
   "popup_intention_placeholder": {
-    "message": "What are you bekerja on?"
+    "message": "What are anda working on?"
   },
   "popup_work_tab_named": {
     "message": "Kerja tab: $TITLE$",
@@ -580,7 +580,7 @@
     "message": "dalamvalid waktu"
   },
   "popup_start_focus_label": {
-    "message": "Mulai $DURATION$ focus",
+    "message": "Start $DURATION$ fokus",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -604,7 +604,7 @@
     "message": "Memeriksa current tab..."
   },
   "popup_finding_current_tab": {
-    "message": "Finding andar current tab..."
+    "message": "Finding anda current tab..."
   },
   "popup_current_tab_load_failed": {
     "message": "Tidak dapat memuat tab saat ini Anda. Coba lagi."
