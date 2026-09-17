@@ -73,7 +73,7 @@
     "message": "Inirerekomendang kategorya ng website"
   },
   "onboarding_site_count_one": {
-    "message": "$COUNT$ site",
+    "message": "$COUNT$ sitio",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -82,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ mga site",
+    "message": "$COUNT$ mga sitio",
     "placeholders": {
       "COUNT": {
         "content": "$1",

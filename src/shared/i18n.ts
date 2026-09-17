@@ -113,13 +113,13 @@ export function t<K extends MessageKey>(key: K, ...params: Params<K>): string {
 }
 
 /**
- * The BCP 47 tag of the language the messages are actually in.
+ * The BCP 47 tag to format numbers and choose plural forms with.
  *
- * `@@ui_locale` is the locale Chrome resolved the catalogue from, which is the one the text on
- * screen is written in. `getUILanguage` can differ from it: it follows the browser's language
- * preference, which a profile can set without a matching catalogue existing. Plural rules and
- * number formatting have to agree with the words around them, so the catalogue's own locale wins
- * and the preference is only a fallback.
+ * `@@ui_locale` is the browser's own interface locale, which is also what Chrome picks the message
+ * catalogue by, so it is the tag the words on screen were written for. `getUILanguage` reports the
+ * language preference instead, and the two can disagree: a profile can prefer French while the
+ * interface, and therefore the catalogue, stays English. Formatting has to agree with the words
+ * around it, so the interface locale wins and the preference is only a fallback.
  */
 export function uiLanguage(): string {
   const api: I18nApi | null = chromeI18n();

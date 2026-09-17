@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "फोकस सेशन पूरा हुआ"
+  },
+  "notify_session_complete_body": {
+    "message": "आपका फोकस सेशन समाप्त हो गया।"
+  },
+  "notify_schedule_window_body": {
+    "message": "$END$ तक लॉक है।",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "शेड्यूल किया गया सेशन शुरू नहीं हो सका"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "वेबसाइट ब्लॉकिंग चालू नहीं है। सेटअप पूरा करें या वेबसाइट एक्सेस दें, फिर दोबारा कोशिश करें।"
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "सेटअप दूसरे टैब में पूरा हो चुका था।"
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "सेटअप दूसरे टैब में बदल गया। नवीनतम विकल्प फिर से लोड कर दिए गए।"
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "सेटअप दूसरे टैब में बदल गया। पूरा करने से पहले इसे फिर से लोड करें।"
+  },
+  "notify_setup_not_complete": {
+    "message": "सेटअप पूरा नहीं हुआ है।"
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "सेटअप अभी पूरा करने के लिए तैयार नहीं है।"
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "स्टोरेज का विकल्प बदल गया। पूरा करने से पहले सेटअप फिर से लोड करें।"
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "सेटअप स्टोरेज पर की गई कार्रवाई विफल रही।"
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "सेटअप की कार्रवाई विफल रही।"
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock वेबसाइट एक्सेस जाँच नहीं सका। सेटअप दोहराएँ या एक्सटेंशन फिर से लोड करें।"
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "वेबसाइट एक्सेस मिल गया, लेकिन Focus Lock ब्लॉकिंग चालू नहीं कर सका। सेटअप दोहराएँ या एक्सटेंशन फिर से लोड करें।"
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "वेबसाइट एक्सेस उपलब्ध नहीं है, और Focus Lock ब्लॉकिंग हटाने का काम पूरा नहीं कर सका। सेटअप दोहराएँ या एक्सटेंशन फिर से लोड करें।"
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock को वेबसाइट एक्सेस की परस्पर विरोधी स्थिति मिली। सेटअप दोहराएँ या एक्सटेंशन फिर से लोड करें।"
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock शुरू नहीं हो पाया: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "अज्ञात त्रुटि"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock चल रहा है, रीसेट करने के लिए कुछ नहीं है"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock ऐसी स्थिति रीसेट नहीं कर सकता जो अब भी सेटिंग्स रिकॉर्ड के अंदर दर्ज है"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "डेटा हटाने की दोबारा कोशिश उपलब्ध नहीं है।"
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "सिंक किया गया डेटा हटाने से पहले सिंक बंद करें"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock अभी पिछला बदलाव पूरा कर रहा है। थोड़ी देर में दोबारा कोशिश करें।"
+  },
+  "notify_work_gate_stuck": {
+    "message": "खुली पुष्टि स्क्रीन बंद नहीं हो सकी। दोबारा कोशिश करें।"
+  },
+  "notify_work_tab_unavailable": {
+    "message": "काम का टैब उपलब्ध नहीं है।"
+  },
+  "notify_settings_sync_limit": {
+    "message": "सेटिंग्स Chrome सिंक की 8 KB सीमा से ज़्यादा हैं। शेड्यूल प्रविष्टियाँ हटाएँ या इरादे छोटे करें, फिर दोबारा कोशिश करें।"
+  },
+  "notify_lists_sync_limit": {
+    "message": "सूचियाँ Chrome सिंक की 8 KB सीमा से ज़्यादा हैं। अपने नियम या अनुमति सूची के नियम हटाएँ, फिर दोबारा कोशिश करें।"
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "सख्त सेशन चल रहा है: ब्लॉक की गई साइटें हटाने पर वे सेशन खत्म होते ही खुल जाएँगी"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "सख्त सेशन चल रहा है: अनुमति सूची में नई प्रविष्टियाँ सेशन खत्म होते ही एक्सेस खोल देंगी"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "सख्त सेशन चल रहा है: श्रेणियाँ बंद करने पर वे सेशन खत्म होते ही खुल जाएँगी"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "सख्त सेशन चल रहा है: नए अपवाद सेशन खत्म होते ही एक्सेस खोल देंगे"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "सख्त सेशन चल रहा है: डिफ़ॉल्ट सख्ती कम करना सेशन खत्म होने तक रुकेगा"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "सख्त सेशन चल रहा है: सोचने का समय घटाने से पुष्टि स्क्रीन कमज़ोर होती है"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "सख्त सेशन चल रहा है: टाइप किया जाने वाला वाक्य हटाने से पुष्टि स्क्रीन कमज़ोर होती है"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "सख्त सेशन चल रहा है: क्रेडिट कमाने की दर बढ़ाने से और ज़्यादा छूट मिल जाती है"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "सख्त सेशन चल रहा है: क्रेडिट की सीमा बढ़ाने से और ज़्यादा छूट मिल जाती है"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "सख्त सेशन चल रहा है: पॉज़ छोटे करने से उनकी लागत घट जाती है"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "सख्त सेशन चल रहा है: अनलॉक छोटे करने से उनकी लागत घट जाती है"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "सख्त सेशन चल रहा है: इसकी शेड्यूल प्रविष्टि सेशन खत्म होने तक कमज़ोर नहीं की जा सकती"
+  }
+}

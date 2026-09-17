@@ -1,1 +1,134 @@
-{}
+{
+  "notify_session_complete_title": {
+    "message": "Relace soustředění dokončena"
+  },
+  "notify_session_complete_body": {
+    "message": "Tvoje relace soustředění skončila."
+  },
+  "notify_schedule_window_body": {
+    "message": "Zamčeno do $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Plán soustředění se nepodařilo spustit"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Blokování webů není zapnuté. Dokonči nastavení nebo povol přístup k webům a pak to zkus znovu."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Nastavení bylo dokončeno na jiné kartě."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Nastavení se změnilo na jiné kartě. Nejnovější volby byly znovu načteny."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Nastavení se změnilo na jiné kartě. Před dokončením nastavení znovu načti."
+  },
+  "notify_setup_not_complete": {
+    "message": "Nastavení není dokončené."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Nastavení zatím nelze dokončit."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Volba úložiště v nastavení se změnila. Před dokončením nastavení znovu načti."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Operace s úložištěm nastavení selhala."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Operace nastavení selhala."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock nemohl ověřit přístup k webům. Zopakuj nastavení nebo znovu načti rozšíření."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Přístup k webům je povolen, ale Focus Lock nemohl zapnout blokování. Zopakuj nastavení nebo znovu načti rozšíření."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Přístup k webům není dostupný a Focus Lock nemohl dokončit úklid blokování. Zopakuj nastavení nebo znovu načti rozšíření."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock obdržel rozporuplný stav přístupu k webům. Zopakuj nastavení nebo znovu načti rozšíření."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock nedokončil spuštění: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "neznámá chyba"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock běží, není co resetovat"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock nemůže resetovat běhové prostředí, které je stále zapsané uvnitř generace pravidel"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Opakování mazání dat není k dispozici."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Před smazáním synchronizovaných dat vypni synchronizaci"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock ještě dokončuje dřívější změnu. Zkus to za chvíli znovu."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Otevřené rozmyšlení se nepodařilo zavřít. Zkus to znovu."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Pracovní karta není dostupná."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Nastavení překračuje limit 8 kB pro synchronizaci Chromu. Odeber položky plánu nebo zkrať předsevzetí a pak to zkus znovu."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Seznamy překračují limit 8 kB pro synchronizaci Chromu. Odeber vlastní nebo povolená pravidla a pak to zkus znovu."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "běží relace s tvrdým zámkem: blokované weby půjde odebrat až po jejím skončení"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "běží relace s tvrdým zámkem: nové povolené položky začnou platit až po jejím skončení"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "běží relace s tvrdým zámkem: kategorie půjde vypnout až po jejím skončení"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "běží relace s tvrdým zámkem: nové výjimky začnou platit až po jejím skončení"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "běží relace s tvrdým zámkem: výchozí přísnost půjde snížit až po jejím skončení"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "běží relace s tvrdým zámkem: kratší čas na rozmyšlenou oslabuje překážku"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "běží relace s tvrdým zámkem: vynechání psané věty oslabuje překážku"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "běží relace s tvrdým zámkem: rychlejší získávání kreditu na pauzy financuje více úniků"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "běží relace s tvrdým zámkem: vyšší strop pauz financuje více úniků"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "běží relace s tvrdým zámkem: kratší pauzy snižují jejich cenu"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "běží relace s tvrdým zámkem: kratší odemčení snižují jejich cenu"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "běží relace s tvrdým zámkem: její položku v plánu půjde oslabit až po jejím skončení"
+  }
+}

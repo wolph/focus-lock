@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "ফোকাস সেশন সম্পূর্ণ"
+  },
+  "notify_session_complete_body": {
+    "message": "আপনার ফোকাস সেশন শেষ হয়েছে।"
+  },
+  "notify_schedule_window_body": {
+    "message": "$END$ পর্যন্ত লক করা।",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "সময়সূচির সেশন শুরু করা যায়নি"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "ওয়েবসাইট ব্লকিং চালু নেই। সেটআপ শেষ করুন বা ওয়েবসাইট অ্যাক্সেস দিন, তারপর আবার চেষ্টা করুন।"
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "সেটআপ অন্য ট্যাবে সম্পূর্ণ হয়ে গিয়েছিল।"
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "সেটআপ অন্য ট্যাবে বদলে গেছে। সর্বশেষ পছন্দগুলি আবার লোড করা হয়েছে।"
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "সেটআপ অন্য ট্যাবে বদলে গেছে। শেষ করার আগে এটি আবার লোড করুন।"
+  },
+  "notify_setup_not_complete": {
+    "message": "সেটআপ সম্পূর্ণ হয়নি।"
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "সেটআপ এখনও শেষ করার জন্য প্রস্তুত নয়।"
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "স্টোরেজের পছন্দ বদলে গেছে। শেষ করার আগে সেটআপ আবার লোড করুন।"
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "সেটআপ স্টোরেজের কাজটি ব্যর্থ হয়েছে।"
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "সেটআপের কাজটি ব্যর্থ হয়েছে।"
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock ওয়েবসাইট অ্যাক্সেস যাচাই করতে পারেনি। সেটআপ আবার করুন বা এক্সটেনশন রিলোড করুন।"
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "ওয়েবসাইট অ্যাক্সেস দেওয়া হয়েছে, কিন্তু Focus Lock ব্লকিং চালু করতে পারেনি। সেটআপ আবার করুন বা এক্সটেনশন রিলোড করুন।"
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "ওয়েবসাইট অ্যাক্সেস নেই, আর Focus Lock ব্লকিং সরানোর কাজও শেষ করতে পারেনি। সেটআপ আবার করুন বা এক্সটেনশন রিলোড করুন।"
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock ওয়েবসাইট অ্যাক্সেসের পরস্পরবিরোধী অবস্থা পেয়েছে। সেটআপ আবার করুন বা এক্সটেনশন রিলোড করুন।"
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock চালু হতে পারেনি: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "অজানা ত্রুটি"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock চলছে, রিসেট করার কিছু নেই"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock এমন অবস্থা রিসেট করতে পারে না যা এখনও সেটিংস রেকর্ডের ভিতরে রাখা আছে"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "ডেটা মোছার পুনরায় চেষ্টা উপলব্ধ নয়।"
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "সিঙ্ক করা ডেটা মোছার আগে সিঙ্ক বন্ধ করুন"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock এখনও আগের পরিবর্তন শেষ করছে। একটু পরে আবার চেষ্টা করুন।"
+  },
+  "notify_work_gate_stuck": {
+    "message": "খোলা নিশ্চিতকরণ স্ক্রিন বন্ধ করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "notify_work_tab_unavailable": {
+    "message": "কাজের ট্যাব উপলব্ধ নয়।"
+  },
+  "notify_settings_sync_limit": {
+    "message": "সেটিংস Chrome সিঙ্কের 8 KB সীমা ছাড়িয়ে গেছে। সময়সূচির এন্ট্রি মুছুন বা উদ্দেশ্য ছোট করুন, তারপর আবার চেষ্টা করুন।"
+  },
+  "notify_lists_sync_limit": {
+    "message": "তালিকা Chrome সিঙ্কের 8 KB সীমা ছাড়িয়ে গেছে। নিজের নিয়ম বা অনুমতি তালিকার নিয়ম মুছুন, তারপর আবার চেষ্টা করুন।"
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "কঠোর সেশন চলছে: ব্লক করা সাইট সরালে সেশন শেষ হওয়ামাত্র সেগুলি খুলে যাবে"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "কঠোর সেশন চলছে: অনুমতি তালিকায় নতুন এন্ট্রি সেশন শেষ হওয়ামাত্র অ্যাক্সেস খুলে দেবে"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "কঠোর সেশন চলছে: বিভাগ বন্ধ করলে সেশন শেষ হওয়ামাত্র সেগুলি খুলে যাবে"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "কঠোর সেশন চলছে: নতুন ব্যতিক্রম সেশন শেষ হওয়ামাত্র অ্যাক্সেস খুলে দেবে"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "কঠোর সেশন চলছে: ডিফল্ট কঠোরতা কমানো সেশন শেষ হওয়া পর্যন্ত অপেক্ষা করবে"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "কঠোর সেশন চলছে: ভাবার সময় কমালে নিশ্চিতকরণ স্ক্রিন দুর্বল হয়"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "কঠোর সেশন চলছে: টাইপ করার বাক্য বাদ দিলে নিশ্চিতকরণ স্ক্রিন দুর্বল হয়"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "কঠোর সেশন চলছে: ক্রেডিট অর্জনের হার বাড়ালে আরও বেশি ছাড় মেলে"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "কঠোর সেশন চলছে: ক্রেডিটের সীমা বাড়ালে আরও বেশি ছাড় মেলে"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "কঠোর সেশন চলছে: বিরতি ছোট করলে তার খরচ কমে যায়"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "কঠোর সেশন চলছে: আনলক ছোট করলে তার খরচ কমে যায়"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "কঠোর সেশন চলছে: সেশন শেষ না হওয়া পর্যন্ত এর সময়সূচির এন্ট্রি দুর্বল করা যাবে না"
+  }
+}

@@ -1,1 +1,213 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "إعداد Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "إعداد Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "الخطوة $STEP$ من $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "تعذّرت استعادة تقدّم الإعداد المحفوظ. سنبدأ من جديد بإعداداتك الافتراضية الحالية."
+  },
+  "onboarding_complete_heading": {
+    "message": "اكتمل الإعداد"
+  },
+  "onboarding_complete_body": {
+    "message": "حُفظت خياراتك. افتح Focus Lock من شريط أدوات Chrome لبدء جلسة."
+  },
+  "onboarding_error_heading": {
+    "message": "الإعداد غير متاح"
+  },
+  "onboarding_error_body": {
+    "message": "تعذّر تحميل الإعداد. أعد المحاولة."
+  },
+  "onboarding_retry_button": {
+    "message": "إعادة المحاولة"
+  },
+  "onboarding_save_error": {
+    "message": "تعذّر حفظ تقدّم الإعداد. أعد المحاولة."
+  },
+  "onboarding_enable_error": {
+    "message": "تعذّر تفعيل حظر المواقع. أعد المحاولة."
+  },
+  "onboarding_finish_error": {
+    "message": "تعذّر إكمال الإعداد. خياراتك ما زالت محفوظة. أعد المحاولة."
+  },
+  "onboarding_lists_heading": {
+    "message": "اختر قائمة الحظر التي تبدأ بها"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "في $MODE$، تكون الفئات المفعّلة والمواقع المحظورة الإضافية غير متاحة.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "في $MODE$، تكون جميع المواقع غير متاحة باستثناء قائمة السماح لديك.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "تصبح هذه الخيارات افتراضية للجلسات القادمة. يمكنك تعديلها لاحقًا."
+  },
+  "onboarding_lists_legend": {
+    "message": "فئات المواقع الموصى بها"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ موقع",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ موقع",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "عرض مواقع $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "إخفاء مواقع $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "نطاقات $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "متابعة"
+  },
+  "onboarding_access_heading": {
+    "message": "تفعيل حظر المواقع"
+  },
+  "onboarding_access_local_matching": {
+    "message": "يتحقق Focus Lock من عناوين الصفحات محليًا ليطابقها مع الفئات والمواقع التي اخترتها. ويستخدم الوصول إلى المواقع لعرض شاشة الحظر واستعادة الصفحات المتأثرة عند انتهاء جلستك."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "قد تشمل الفئات والنطاقات المخصصة أي موقع إلكتروني. لذلك سيطلب Chrome هذه الصلاحية:"
+  },
+  "onboarding_access_capability": {
+    "message": "قراءة جميع بياناتك على جميع المواقع الإلكترونية وتغييرها"
+  },
+  "onboarding_access_scope_note": {
+    "message": "لا يستخدم Focus Lock هذا الوصول إلا أثناء تطبيق قواعد الحظر لديك."
+  },
+  "onboarding_access_denied": {
+    "message": "لم يمنح Chrome الوصول إلى المواقع. يمكنك إعادة المحاولة."
+  },
+  "onboarding_access_registration_error": {
+    "message": "مُنح الوصول إلى المواقع، لكن تعذّر على Focus Lock تفعيل الحظر. أعد الإعداد أو أعد تحميل الإضافة."
+  },
+  "onboarding_access_enable_button": {
+    "message": "تفعيل حظر المواقع"
+  },
+  "onboarding_access_defer_button": {
+    "message": "ليس الآن"
+  },
+  "onboarding_sync_heading": {
+    "message": "اختر مكان تخزين إعداداتك"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "المزامنة بين أجهزة Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "ستستخدم البيانات المعتمدة أدناه Chrome Sync بعد إنهاء الإعداد."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "تبقى جميع بيانات Focus Lock في ملف Chrome الشخصي هذا."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "مزامَن"
+  },
+  "onboarding_sync_local_title": {
+    "message": "محلي فقط"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "لا يُرسل أي شيء إلى مطوّر Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "إنهاء الإعداد مع تفعيل المزامنة"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "إنهاء الإعداد بدون مزامنة"
+  },
+  "onboarding_site_count_zero": {
+    "message": "$COUNT$ موقع",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_site_count_two": {
+    "message": "$COUNT$ موقعين",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_site_count_few": {
+    "message": "$COUNT$ مواقع",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ موقعًا",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

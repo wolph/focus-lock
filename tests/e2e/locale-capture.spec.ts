@@ -7,6 +7,12 @@ import { expect, startTestSession, test, waitForActiveSession } from './fixtures
  */
 const OUTPUT: string | undefined = process.env.LOCALE_SHOTS;
 const LOCALE: string = process.env.LOCALE_SHOTS_LANG ?? 'fr';
+/**
+ * Force the document direction rather than waiting for Chrome to report it. Chrome takes the
+ * direction from the browser's own interface locale, which macOS will not let a test change, so
+ * this is how the right-to-left stylesheet gets looked at on a development machine.
+ */
+const FORCE_DIR: string | undefined = process.env.LOCALE_SHOTS_DIR;
 const WIDTHS: ReadonlyArray<{ name: string; width: number; height: number }> = [
   { name: 'desktop', width: 1280, height: 900 },
   { name: 'tablet', width: 768, height: 1000 },
@@ -18,6 +24,11 @@ test.use({ extensionUiLanguage: LOCALE });
 
 test('capture every surface for review', async ({ context, extPage, extensionId, siteUrl }) => {
   const shot = async (page: Page, name: string, fullPage: boolean = true): Promise<void> => {
+    if (FORCE_DIR !== undefined) {
+      await page.evaluate((dir: string): void => {
+        document.documentElement.dir = dir;
+      }, FORCE_DIR);
+    }
     await page.screenshot({ path: `${OUTPUT}/${LOCALE}-${name}.png`, fullPage });
   };
 

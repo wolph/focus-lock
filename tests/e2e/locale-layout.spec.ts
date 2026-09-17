@@ -43,9 +43,9 @@ async function expectFits(page: Page, locale: string, surface: string): Promise<
  * reason, when the request did not take.
  */
 async function requireUiLanguage(page: Page, locale: string): Promise<void> {
-  // `@@ui_locale` is the locale Chrome resolved the catalogue from, which is what decides the
-  // words on screen. `getUILanguage` only reports the browser's language preference and can say
-  // fr while every message still comes from en, so it is the wrong thing to gate on.
+  // `@@ui_locale` is the browser's interface locale, which is what Chrome picks the catalogue by.
+  // `getUILanguage` reports the language preference instead and can say fr while every message
+  // still comes from en, so it is the wrong thing to gate on.
   const actual: string = await page.evaluate((): string => chrome.i18n.getMessage('@@ui_locale'));
   const wanted: string = locale.split('-')[0] ?? locale;
   test.skip(

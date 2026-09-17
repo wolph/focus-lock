@@ -1,1 +1,134 @@
-{}
+{
+  "notify_session_complete_title": {
+    "message": "Seja osredotočenosti je končana"
+  },
+  "notify_session_complete_body": {
+    "message": "Tvoja seja osredotočenosti se je končala."
+  },
+  "notify_schedule_window_body": {
+    "message": "Zaklenjeno do $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Urnika osredotočenosti ni bilo mogoče zagnati"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Blokiranje spletnih mest ni vklopljeno. Dokončaj nastavitev ali dovoli dostop do spletnih mest in nato poskusi znova."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Nastavitev je bila dokončana v drugem zavihku."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Nastavitev se je spremenila v drugem zavihku. Najnovejše izbire so bile znova naložene."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Nastavitev se je spremenila v drugem zavihku. Pred dokončanjem znova naloži nastavitev."
+  },
+  "notify_setup_not_complete": {
+    "message": "Nastavitev ni dokončana."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Nastavitve še ni mogoče dokončati."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Izbira shrambe v nastavitvi se je spremenila. Pred dokončanjem znova naloži nastavitev."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Operacija s shrambo nastavitve ni uspela."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Operacija nastavitve ni uspela."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock ni mogel preveriti dostopa do spletnih mest. Ponovi nastavitev ali znova naloži razširitev."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Dostop do spletnih mest je dovoljen, vendar Focus Lock ni mogel vklopiti blokiranja. Ponovi nastavitev ali znova naloži razširitev."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Dostop do spletnih mest ni na voljo in Focus Lock ni mogel dokončati čiščenja blokiranja. Ponovi nastavitev ali znova naloži razširitev."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock je prejel protisloven stanje dostopa do spletnih mest. Ponovi nastavitev ali znova naloži razširitev."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock ni dokončal zagona: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "neznana napaka"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock teče, ni česa ponastaviti"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock ne more ponastaviti izvajalnega okolja, ki je še vedno zapisano znotraj generacije pravil"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Ponovni poskus brisanja podatkov ni na voljo."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Pred brisanjem sinhroniziranih podatkov izklopi sinhronizacijo"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock še dokončuje prejšnjo spremembo. Poskusi znova čez trenutek."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Odprtega premisleka ni bilo mogoče zapreti. Poskusi znova."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Delovni zavihek ni na voljo."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Nastavitve presegajo omejitev 8 kB za sinhronizacijo Chroma. Odstrani vnose urnika ali skrajšaj namere in nato poskusi znova."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Seznami presegajo omejitev 8 kB za sinhronizacijo Chroma. Odstrani lastna ali dovoljena pravila in nato poskusi znova."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "poteka seja s trdim zaklepanjem: blokirana spletna mesta bo mogoče odstraniti šele, ko se konča"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "poteka seja s trdim zaklepanjem: novi dovoljeni vnosi bodo veljali šele, ko se konča"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "poteka seja s trdim zaklepanjem: kategorije bo mogoče izklopiti šele, ko se konča"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "poteka seja s trdim zaklepanjem: nove izjeme bodo veljale šele, ko se konča"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "poteka seja s trdim zaklepanjem: privzeto strogost bo mogoče znižati šele, ko se konča"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "poteka seja s trdim zaklepanjem: krajši čas za premislek oslabi oviro"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "poteka seja s trdim zaklepanjem: izpust vtipkanega stavka oslabi oviro"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "poteka seja s trdim zaklepanjem: hitrejše pridobivanje kredita za premore financira več pobegov"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "poteka seja s trdim zaklepanjem: višja zgornja meja premorov financira več pobegov"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "poteka seja s trdim zaklepanjem: krajši premori znižajo njihovo ceno"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "poteka seja s trdim zaklepanjem: krajša odklepanja znižajo njihovo ceno"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "poteka seja s trdim zaklepanjem: njen vnos v urniku bo mogoče oslabiti šele, ko se konča"
+  }
+}
