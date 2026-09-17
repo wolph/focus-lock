@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Заврши ову сесију"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Изабери доступну радну картицу."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Та картица више није доступна. Изабери другу радну картицу."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Сесија је почела, али радна картица није могла да се сачува. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Фокус сесија се променила. Поново изабери своју радну картицу."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Фокус сесија се променила. Поново отвори искачући прозор."
+  },
   "shared_minutes_few": {
     "message": "$COUNT$ минута",
     "placeholders": {

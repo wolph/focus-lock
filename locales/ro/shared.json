@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Încheie această sesiune"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Alege o filă de lucru disponibilă."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Acea filă nu mai este disponibilă. Alege o altă filă de lucru."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Sesiunea a început, dar fila de lucru nu a putut fi salvată. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Sesiunea ta de concentrare s-a schimbat. Alege-ți fila de lucru din nou."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Sesiunea ta de concentrare s-a schimbat. Redeschide ferestra."
+  },
   "shared_minutes_few": {
     "message": "$COUNT$ min",
     "placeholders": {

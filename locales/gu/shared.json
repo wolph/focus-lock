@@ -12,7 +12,7 @@
     "message": "ઊંડું કામ"
   },
   "shared_deep_work_note": {
-    "message": "A preference, not science: one long uninterrupted બ્લોક, with no automatic breaks."
+    "message": "એક પસંદગી છે, વિજ્ઞાન નહીં: કોઈ સ્વયંસંચાલિત બ્રેક વગરનો એક લાંબો સતત બ્લોક."
   },
   "shared_timed_hint_cycles": {
     "message": "કુલ $MINUTES$ મિનિટ, $FOCUS$ મિનિટના ફોકસ બ્લોક સાથે",
@@ -37,7 +37,7 @@
     }
   },
   "shared_start_until_stopped": {
-    "message": "શરુ until stopped"
+    "message": "બંધ થાય ત્યાં સુધી શરૂ કરો"
   },
   "shared_lock_until_manual_unlock": {
     "message": "મેન્યુઅલ અનલૉક સુધી લૉક કરો"
@@ -46,10 +46,10 @@
     "message": "'બંધ થાય ત્યાં સુધી' સેશન લવચીક અથવા ઘર્ષણ રાખે છે અને ફોકસ અને બ્રેક ચક્રનો ઉપયોગ કરી શકતા નથી."
   },
   "shared_hard_unavailable_reason": {
-    "message": "Hard lock is not available for Until stopped: with no timer and no manual end, the સેશન could never end."
+    "message": "બંધ થાય ત્યાં સુધી માટે સખત લૉક ઉપલબ્ધ નથી: કોઈ ટાઈમર અને કોઈ મેન્યુઅલ સમાપ્તિ વગર, સેશન ક્યારેય સમાપ્ત થઈ શકે નહીં."
   },
   "shared_end_session": {
-    "message": "End સેશન"
+    "message": "સેશન સમાપ્ત કરો"
   },
   "shared_unlock": {
     "message": "અનલૉક કરો"
@@ -101,7 +101,7 @@
     "message": "'બંધ થાય ત્યાં સુધી' દ્વારા ફરજિયાત બનાવેલા ચક્ર"
   },
   "shared_mode_blacklist": {
-    "message": "બ્લોક selected sites"
+    "message": "પસંદ કરેલી સાઇટ્સ બ્લોક કરો"
   },
   "shared_mode_whitelist": {
     "message": "ફક્ત પસંદ કરેલી સાઇટ્સને જ મંજૂરી આપો"
@@ -113,7 +113,7 @@
     "message": "ફોકસ તબક્કો"
   },
   "shared_clock_total_session": {
-    "message": "total સેશન"
+    "message": "કુલ સેશન"
   },
   "shared_clock_pause": {
     "message": "પૉઝ"
@@ -128,13 +128,13 @@
     "message": "Focus Lock શરૂ થઈ રહ્યું છે. તારા પસંદ કરેલા નિયમો લાગુ કરી રહ્યાં છીએ."
   },
   "shared_popup_closure_cleanup": {
-    "message": "સેશન ended. Finishing browser cleanup."
+    "message": "સેશન સમાપ્ત થયું. બ્રાઉઝર ક્લિનઅપ પૂર્ણ કરી રહ્યાં છીએ."
   },
   "shared_popup_transition_cleanup": {
-    "message": "Focus Lock could not શરુ. Finishing browser cleanup."
+    "message": "Focus Lock શરૂ થઈ શક્યું નહીં. બ્રાઉઝર ક્લિનઅપ પૂર્ણ કરી રહ્યાં છીએ."
   },
   "shared_popup_transition_error": {
-    "message": "Focus Lock could not clean up an incomplete શરુ."
+    "message": "Focus Lock અધૂરી શરૂઆતને સાફ કરી શક્યું નહીં."
   },
   "shared_popup_closure_error": {
     "message": "Focus Lock બ્રાઉઝર ક્લીનઅપ પૂર્ણ કરી શક્યું નહીં."
@@ -143,7 +143,7 @@
     "message": "ક્લીનઅપ ફરી પ્રયાસ કરો"
   },
   "shared_end_failed": {
-    "message": "Could not end સેશન. Try again."
+    "message": "સેશન સમાપ્ત કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "shared_retry_failed": {
     "message": "ક્લીનઅપનો ફરી પ્રયાસ કરી શકાયો નહીં. ફરી પ્રયાસ કરો."
@@ -158,22 +158,22 @@
     "message": "Focus Lock ડેટા ડિલીટ થઈ રહ્યો છે. ક્લીનઅપ પૂર્ણ કરી રહ્યાં છીએ."
   },
   "shared_data_clear_error": {
-    "message": "Could not કાઢી નાખો data. Try again."
+    "message": "ડેટા કાઢી શકાયો નહીં. ફરી પ્રયાસ કરો."
   },
   "shared_schedule_window_label": {
     "message": "સમયગાળો પૂર્ણ થાય ત્યાં સુધી"
   },
   "shared_schedule_until_stopped": {
-    "message": "Starts on schedule and runs until you બંધ it: End સેશન for Flexible, Unlock through the deliberation gate for Friction. Cycles off."
+    "message": "શેડ્યૂલ પ્રમાણે શરૂ થાય છે અને તમે બંધ ન કરો ત્યાં સુધી ચાલે છે: લવચીક માટે સેશન સમાપ્ત કરો, ઘર્ષણ માટે વિચારણા દ્વાર દ્વારા અનલૉક કરો. સાયકલ બંધ છે."
   },
   "shared_schedule_started_title": {
     "message": "ફોકસ શેડ્યૂલ શરૂ થયું"
   },
   "shared_schedule_until_stopped_body": {
-    "message": "Active until you બંધ it."
+    "message": "તમે બંધ ન કરો ત્યાં સુધી સક્રિય."
   },
   "shared_settings_indefinite": {
-    "message": "Until stopped સેશન active. Use the toolbar popup to view or end it."
+    "message": "બંધ થાય ત્યાં સુધીનું સેશન સક્રિય છે. તેને જોવા અથવા સમાપ્ત કરવા ટૂલબાર પોપઅપનો ઉપયોગ કરો."
   },
   "shared_settings_starting": {
     "message": "Focus Lock શરૂ થઈ રહ્યું છે. વેબસાઇટ ઍક્સેસ તપાસી રહ્યાં છીએ અને તારા નિયમો લાગુ કરી રહ્યાં છીએ."
@@ -182,10 +182,10 @@
     "message": "Focus Lock બ્રાઉઝર ક્લીનઅપ પૂર્ણ કરી શક્યું નહીં. પોપઅપ ખોલો અને ફરી પ્રયાસ કરો."
   },
   "shared_settings_session_disclosure": {
-    "message": "The toolbar popup owns સેશન controls. The active સેશન keeps the rules captured when it started."
+    "message": "ટૂલબાર પોપઅપ સેશન નિયંત્રણો ધરાવે છે. સક્રિય સેશન તે શરૂ થયું ત્યારે નક્કી થયેલા નિયમો જાળવી રાખે છે."
   },
   "shared_settings_timed": {
-    "message": "Timed સેશન active until $TIME$. It ends automatically. Use the toolbar popup for live status.",
+    "message": "$TIME$ સુધીનું સમય-આધારિત સેશન સક્રિય છે. તે આપમેળે સમાપ્ત થાય છે. જીવંત સ્થિતિ માટે ટૂલબાર પોપઅપનો ઉપયોગ કરો.",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -258,7 +258,7 @@
     }
   },
   "shared_updating_session": {
-    "message": "Updating સેશન"
+    "message": "સેશન અપડેટ કરી રહ્યાં છીએ"
   },
   "shared_less_than_a_minute": {
     "message": "એક મિનિટથી ઓછું"
@@ -273,7 +273,7 @@
     }
   },
   "shared_focus_remaining_session": {
-    "message": "$DURATION$ left in this સેશન",
+    "message": "આ સેશનમાં $DURATION$ બાકી",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -291,7 +291,7 @@
     "message": "ક્રેડિટ કમાણી બંધ છે"
   },
   "shared_not_enough_time": {
-    "message": "Not enough time in this focus બ્લોક"
+    "message": "આ ફોકસ બ્લોકમાં પૂરતો સમય નથી"
   },
   "shared_ready_in": {
     "message": "$CLOCK$ માં તૈયાર",
@@ -316,7 +316,7 @@
     }
   },
   "shared_verdict_blocked_category": {
-    "message": "બ્લોક્ડ by $CATEGORY$",
+    "message": "$CATEGORY$ દ્વારા બ્લોક કરેલું",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -325,13 +325,13 @@
     }
   },
   "shared_verdict_blocked_custom": {
-    "message": "બ્લોક્ડ by your બ્લોક list"
+    "message": "તારી બ્લોક લિસ્ટ દ્વારા બ્લોક કરેલું"
   },
   "shared_verdict_whitelist_miss": {
     "message": "તારી એલાઉ લિસ્ટ પર નથી"
   },
   "shared_verdict_blocked_session": {
-    "message": "બ્લોક્ડ by this સેશન"
+    "message": "આ સેશન દ્વારા બ્લોક કરેલું"
   },
   "shared_verdict_allow_list": {
     "message": "તારી એલાઉ લિસ્ટ પર છે"
@@ -346,10 +346,10 @@
     "message": "પસંદ કરેલી કેટેગરીમાંથી બાકાત"
   },
   "shared_verdict_no_session": {
-    "message": "No active focus સેશન"
+    "message": "કોઈ સક્રિય ફોકસ સેશન નથી"
   },
   "shared_verdict_allowed_session": {
-    "message": "Allowed by this સેશન"
+    "message": "આ સેશન દ્વારા મંજૂર"
   },
   "shared_category_social": {
     "message": "સામાજિક"
@@ -376,7 +376,7 @@
     "message": "સેટિંગ્સ"
   },
   "shared_synced_lists": {
-    "message": "બ્લોક and allow lists"
+    "message": "બ્લોક અને એલાઉ લિસ્ટ"
   },
   "shared_synced_credit": {
     "message": "સાઇટ ઍક્સેસ ક્રેડિટ"
@@ -385,7 +385,7 @@
     "message": "સ્ટ્રીક"
   },
   "shared_synced_aggregates": {
-    "message": "Domain-level બ્લોક્ડ-attempt aggregates"
+    "message": "ડોમેન-સ્તરના બ્લોક કરેલા પ્રયાસોના સરવાળા"
   },
   "shared_local_full_urls": {
     "message": "સંપૂર્ણ URL"
@@ -394,16 +394,16 @@
     "message": "ફોકસ ઉદ્દેશો"
   },
   "shared_local_events": {
-    "message": "Detailed સેશન events"
+    "message": "વિગતવાર સેશન ઘટનાઓ"
   },
   "shared_local_runtime": {
-    "message": "Active runtime સેશન"
+    "message": "સક્રિય રનટાઇમ સેશન"
   },
   "shared_legacy_policy_dropped": {
     "message": "જૂના વર્ઝનનો કેટલોક સિંક કરેલો ડેટા વાંચી શકાયો નહીં અને રીસેટ કરવામાં આવ્યો."
   },
   "shared_all_data_clear_running": {
-    "message": "End the running સેશન before deleting all data."
+    "message": "બધો ડેટા કાઢી નાખતાં પહેલાં ચાલી રહેલું સેશન સમાપ્ત કરો."
   },
   "shared_nav_brand": {
     "message": "Focus Lock"
@@ -424,7 +424,7 @@
     "message": "શેડ્યૂલ"
   },
   "shared_section_behavior": {
-    "message": "સેશન behavior"
+    "message": "સેશન વર્તન"
   },
   "shared_section_budget": {
     "message": "સાઇટ ઍક્સેસ ક્રેડિટ"
@@ -458,7 +458,7 @@
     }
   },
   "shared_theme_error": {
-    "message": "Could not સાચવો theme. Reload page and try again."
+    "message": "થીમ સાચવી શકાઈ નહીં. પેજ રિલોડ કરો અને ફરી પ્રયાસ કરો."
   },
   "shared_host_search_label": {
     "message": "$TITLE$ સાઇટ્સ શોધો",
@@ -514,7 +514,7 @@
     }
   },
   "shared_end_the_session": {
-    "message": "End the સેશન"
+    "message": "સેશન સમાપ્ત કરો"
   },
   "shared_overlay_starting_title": {
     "message": "Focus Lock શરૂ થઈ રહ્યું છે"
@@ -523,7 +523,7 @@
     "message": "તારા પસંદ કરેલા નિયમો લાગુ કરી રહ્યાં છીએ."
   },
   "shared_overlay_stopped_page": {
-    "message": "This page did not load. It will load by itself when the સેશન ends."
+    "message": "આ પેજ લોડ થયું નહીં. સેશન સમાપ્ત થાય ત્યારે તે આપમેળે લોડ થશે."
   },
   "shared_overlay_next_step": {
     "message": "તારું આગલું પગલું"
@@ -622,6 +622,6 @@
     "message": "પુષ્ટિ કરવા આ ટાઇપ કરો:"
   },
   "shared_gate_end_title": {
-    "message": "End this સેશન"
+    "message": "આ સેશન સમાપ્ત કરો"
   }
 }

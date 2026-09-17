@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Ukončit tuto relaci"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Vyber dostupnou pracovní kartu."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Tato karta už není dostupná. Vyber jinou pracovní kartu."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Relace začala, ale pracovní kartu se nepodařilo uložit. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Relace soustředění se změnila. Vyber pracovní kartu znovu."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Relace soustředění se změnila. Otevři okno znovu."
+  },
   "shared_minutes_few": {
     "message": "$COUNT$ min.",
     "placeholders": {

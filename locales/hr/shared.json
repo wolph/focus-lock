@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Završi ovu sesiju"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Odaberi dostupnu radnu karticu."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Ta kartica više nije dostupna. Odaberi drugu radnu karticu."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Sesija je počela, ali radnu karticu nije bilo moguće spremiti. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Sesija fokusa se promijenila. Ponovno odaberi radnu karticu."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Sesija fokusa se promijenila. Ponovno otvori skočni prozor."
+  },
   "shared_minutes_few": {
     "message": "$COUNT$ min",
     "placeholders": {

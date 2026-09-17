@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Terminer cette session"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Choisir un onglet de travail disponible."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Cet onglet n'est plus disponible. Choisir un autre onglet de travail."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "La session a démarré, mais l'onglet de travail n'a pas pu être enregistré. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "La session de concentration a changé. Choisir ton onglet de travail à nouveau."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "La session de concentration a changé. Rouvre la fenêtre."
+  },
   "shared_minutes_many": {
     "message": "$COUNT$ min",
     "placeholders": {

@@ -293,6 +293,20 @@ export function strayEnglish(locale, message) {
   return [...withoutPlaceholders.matchAll(ENGLISH_WORDS)].map((match) => match[0]);
 }
 
+/**
+ * Characters written only in Simplified Chinese, whose Traditional form is a different character.
+ * A Traditional catalogue containing one of these is Simplified text that was filed under the
+ * wrong locale, which reads as a foreign spelling to a Taiwanese or Hong Kong reader.
+ */
+const SIMPLIFIED_ONLY =
+  /[国见业务选单页设备资讯网络记录钟统计间时开关闭历这个来样点击线灭应该问题维护继续显图标签规则还经过运动启结执访链买卖读写语书换确认设项数据库网处择条]/u;
+
+/** Simplified characters found in a Traditional Chinese message. */
+export function simplifiedInTraditional(locale, message) {
+  if (locale !== 'zh_TW') return [];
+  return [...message].filter((character) => SIMPLIFIED_ONLY.test(character));
+}
+
 /** Validate one translated catalogue against en. */
 export function checkTranslation(locale, en, catalogue) {
   const errors = [];
@@ -348,6 +362,13 @@ export function checkTranslation(locale, en, catalogue) {
     if (english.length > 0) {
       errors.push(
         `${locale}: ${key} still carries English words: ${english.slice(0, 4).join(', ')}`,
+      );
+      continue;
+    }
+    const simplified = simplifiedInTraditional(locale, entry.message);
+    if (simplified.length > 0) {
+      errors.push(
+        `${locale}: ${key} is written in Simplified characters: ${[...new Set(simplified)].slice(0, 6).join('')}`,
       );
     }
   }

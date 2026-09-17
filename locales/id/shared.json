@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Akhiri sesi ini"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Pilih tab kerja yang tersedia."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Tab itu sudah tidak tersedia. Pilih tab kerja lain."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Sesi sudah dimulai, tapi tab kerja tidak bisa disimpan. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Sesi fokus telah berubah. Pilih lagi tab kerjamu."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Sesi fokus telah berubah. Buka ulang popup."
   }
 }

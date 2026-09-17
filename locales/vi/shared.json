@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Kết thúc phiên này"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Hãy chọn một tab công việc khả dụng."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Tab đó không còn khả dụng. Hãy chọn tab công việc khác."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Đã bắt đầu phiên, nhưng không thể lưu tab công việc. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Phiên tập trung đã thay đổi. Hãy chọn lại tab công việc."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Phiên tập trung đã thay đổi. Hãy mở lại popup."
   }
 }

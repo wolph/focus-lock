@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Zakończ tę sesję"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Wybierz dostępną kartę roboczą."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Ta karta nie jest już dostępna. Wybierz inną kartę roboczą."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Sesja się rozpoczęła, ale nie udało się zapisać karty roboczej. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Sesja skupienia się zmieniła. Wybierz ponownie kartę roboczą."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Sesja skupienia się zmieniła. Otwórz okienko ponownie."
+  },
   "shared_minutes_few": {
     "message": "$COUNT$ minuty",
     "placeholders": {

@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "จบเซสชันนี้"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "เลือกแท็บงานที่ใช้ได้"
+  },
+  "shared_work_tab_closed_error": {
+    "message": "แท็บนั้นใช้ไม่ได้แล้ว เลือกแท็บงานอื่น"
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "เริ่มเซสชันแล้ว แต่บันทึกแท็บงานไม่สำเร็จ $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "เซสชันโฟกัสมีการเปลี่ยนแปลง เลือกแท็บงานอีกครั้ง"
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "เซสชันโฟกัสมีการเปลี่ยนแปลง เปิดป๊อปอัปใหม่"
   }
 }

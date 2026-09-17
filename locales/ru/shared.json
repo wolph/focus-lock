@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Завершить эту сессию"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Выбери доступную рабочую вкладку."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Эта вкладка больше не доступна. Выбери другую рабочую вкладку."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Сессия началась, но не удалось сохранить рабочую вкладку. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Фокус-сессия изменилась. Выбери рабочую вкладку заново."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Фокус-сессия изменилась. Открой всплывающее окно заново."
+  },
   "shared_minutes_few": {
     "message": "$COUNT$ мин",
     "placeholders": {

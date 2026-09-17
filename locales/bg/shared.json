@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Завърши тази сесия"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Избери наличен работен раздел."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Този раздел вече не е наличен. Избери друг работен раздел."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Сесията започна, но работният раздел не можа да се запази. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Фокус сесията се промени. Избери отново работния раздел."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Фокус сесията се промени. Отвори изскачащия прозорец отново."
   }
 }

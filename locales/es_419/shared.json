@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Terminar esta sesión"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Elige una pestaña de trabajo disponible."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Esa pestaña ya no está disponible. Elige otra pestaña de trabajo."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "La sesión comenzó, pero no se pudo guardar la pestaña de trabajo. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "La sesión de concentración ha cambiado. Elige tu pestaña de trabajo nuevamente."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "La sesión de concentración ha cambiado. Vuelve a abrir la ventana."
+  },
   "shared_minutes_many": {
     "message": "$COUNT$ min",
     "placeholders": {

@@ -12,6 +12,7 @@ import {
   mergeSurfaces,
   mergeTranslation,
   repairPlaceholders,
+  simplifiedInTraditional,
   strayEnglish,
   strayLatin,
   translationProgress,
@@ -458,5 +459,20 @@ describe('strayEnglish', () => {
   it('says nothing about English itself', () => {
     expect(strayEnglish('en', 'Could not save. Try again.')).toEqual([]);
     expect(strayEnglish('en_GB', 'Could not save. Try again.')).toEqual([]);
+  });
+});
+
+describe('simplifiedInTraditional', () => {
+  it('catches Simplified characters filed as Traditional', () => {
+    expect(simplifiedInTraditional('zh_TW', '已经过期')).toEqual(['经', '过']);
+  });
+
+  it('accepts genuine Traditional text', () => {
+    expect(simplifiedInTraditional('zh_TW', '已經過期')).toEqual([]);
+  });
+
+  it('says nothing about any other locale, Simplified included', () => {
+    expect(simplifiedInTraditional('zh_CN', '已经过期')).toEqual([]);
+    expect(simplifiedInTraditional('ja', '設定を開く')).toEqual([]);
   });
 });

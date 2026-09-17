@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Končaj to sejo"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Izberi razpoložljiv delovni zavihek."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Ta zavihek ni več na voljo. Izberi drug delovni zavihek."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Seja se je začela, vendar delovnega zavihka ni bilo mogoče shraniti. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Seja osredotočenosti se je spremenila. Znova izberi delovni zavihek."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Seja osredotočenosti se je spremenila. Znova odpri okno."
+  },
   "shared_minutes_two": {
     "message": "$COUNT$ min.",
     "placeholders": {
