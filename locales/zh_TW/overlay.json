@@ -39,19 +39,19 @@
     "message": "正在檢查可用的工作頁籤..."
   },
   "overlay_target_pick_tab": {
-    "message": "選擇打開的頁籤以繼續您的任务。"
+    "message": "挑選一個開啟的索引標籤以繼續您的工作。"
   },
   "overlay_target_session_unavailable": {
-    "message": "您的專注工作階段不可用。請重試或重新載入此页面。"
+    "message": "您的專注工作階段不可用。再試一次，或重新載入此頁面。"
   },
   "overlay_target_lookup_failed": {
-    "message": "无法載入您的工作頁籤。請重試或重新載入此页面。"
+    "message": "無法載入您的工作索引標籤。再試一次，或重新載入此頁面。"
   },
   "overlay_target_reconnect": {
-    "message": "重新載入此页面以重新连接到 Focus Lock。"
+    "message": "重新載入此頁面以重新連接到 Focus Lock。"
   },
   "overlay_target_page_changed": {
-    "message": "請求的页面已更改。請重新載入页面。"
+    "message": "要求的頁面已變更。重新載入頁面。"
   },
   "overlay_target_transport_error": {
     "message": "无法联系 Focus Lock。請重試。"
@@ -90,13 +90,13 @@
     "message": "没有可用的工作頁籤。打開此会话允许的網站，然後刷新頁籤。"
   },
   "overlay_picker_no_matches": {
-    "message": "没有匹配的頁籤。尝试另一个搜尋或清除搜尋。"
+    "message": "沒有符合的索引標籤。試試另一個搜尋或清除搜尋。"
   },
   "overlay_picker_load_failed": {
     "message": "无法載入工作頁籤。請重試。"
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ 个匹配，共 $COUNT$ 个頁籤",
+    "message": "$MATCHES$ 個 $COUNT$ 個索引標籤",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ 个匹配，共 $COUNT$ 个頁籤",
+    "message": "$MATCHES$ 個 $COUNT$ 個索引標籤",
     "placeholders": {
       "COUNT": {
         "content": "$1",

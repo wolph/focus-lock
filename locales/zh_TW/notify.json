@@ -21,19 +21,19 @@
     "message": "未啟用網站封鎖。請完成設定或授予網站存取權限，然後重試。"
   },
   "notify_setup_completed_elsewhere": {
-    "message": "設定已在另一个頁籤中完成。"
+    "message": "設定在另一個索引標籤中已完成。"
   },
   "notify_setup_changed_reloaded": {
-    "message": "設定在另一个頁籤中更改。最新選擇已重新載入。"
+    "message": "設定在另一個索引標籤中變更。已重新載入最新選擇。"
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "設定在另一个頁籤中更改。完成前請重新載入設定。"
+    "message": "設定在另一個索引標籤中變更。重新載入設定後再完成。"
   },
   "notify_setup_not_complete": {
     "message": "設定未完成。"
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "設定未准备好完成。"
+    "message": "設定尚未準備好完成。"
   },
   "notify_setup_storage_choice_changed": {
     "message": "設定儲存選項已更改。完成前請重新載入設定。"
@@ -90,7 +90,7 @@
     "message": "工作頁籤不可用。"
   },
   "notify_settings_sync_limit": {
-    "message": "設定超過 8 KB Chrome 同步限制。請移除日程条目或缩短意圖，然後重試。"
+    "message": "設定超過 8 KB Chrome 同步限制。移除排程項目或縮短意圖，然後再試一次。"
   },
   "notify_lists_sync_limit": {
     "message": "清單超過 8 KB Chrome 同步限制。請移除自訂規則或允許清單規則，然後重試。"
@@ -99,13 +99,13 @@
     "message": "正在執欄強制鎖定会话：移除已封鎖網站将在会话結束時解鎖"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "正在執欄強制鎖定会话：新的允許清單条目将在会话結束時解鎖"
+    "message": "有硬性工作階段執行中：新增允許清單項目需要等到工作階段結束為止"
   },
   "notify_guard_lists_disable_category": {
     "message": "正在執欄強制鎖定会话：停用分類将在会话結束時解鎖"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "正在執欄強制鎖定会话：新的排除项将在会话結束時解鎖"
+    "message": "有硬性工作階段執行中：新增除外項目需要等到工作階段結束為止"
   },
   "notify_guard_settings_weaken_strictness": {
     "message": "正在執欄強制鎖定会话：降低預設严格性需要等待会话結束"
@@ -117,10 +117,10 @@
     "message": "正在執欄強制鎖定会话：移除輸入短語会削弱门槛"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "正在執欄強制鎖定会话：提高休息获得速率会资助更多逃脫"
+    "message": "有硬性工作階段執行中：提高暫停賺取率會資助更多逃脫"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "正在執欄強制鎖定会话：提高休息上限会资助更多逃脫"
+    "message": "有硬性工作階段執行中：提高暫停上限會資助更多逃脫"
   },
   "notify_guard_settings_shorten_pause": {
     "message": "正在執欄強制鎖定会话：缩短休息会降低其成本"
@@ -129,6 +129,6 @@
     "message": "正在執欄強制鎖定会话：缩短解鎖会降低其成本"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "正在執欄強制鎖定会话：其日程条目在会话結束前无法削弱"
+    "message": "有硬性工作階段執行中：其排程項目直到工作階段結束為止無法減弱"
   }
 }

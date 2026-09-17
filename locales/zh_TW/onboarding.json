@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "在 $MODE$ 中，每个網站都不可用，除了您的允許清單。",
+    "message": "在 $MODE$ 中，每個網站都無法使用，除了您的允許清單。",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,13 +67,13 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "这些選擇成为未来会话的預設值。您稍後可以編輯它们。"
+    "message": "這些選擇將成為未來工作階段的預設值。您稍後可以編輯它們。"
   },
   "onboarding_lists_legend": {
     "message": "推荐的網站分類"
   },
   "onboarding_site_count_one": {
-    "message": "$COUNT$ 个網站",
+    "message": "$COUNT$ 個網站",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -82,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ 个網站",
+    "message": "$COUNT$ 個網站",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -124,7 +124,7 @@
     "message": "啟用網站封鎖"
   },
   "onboarding_access_local_matching": {
-    "message": "Focus Lock 在本地檢查页面地址，以便能够匹配您選擇的分類和網站。它使用網站存取来顯示其封鎖屏幕并在您的会话結束時恢复受影响的页面。"
+    "message": "Focus Lock 在本機檢查頁面位址，以便符合您選定的類別和網站。它使用網路存取來顯示其封鎖畫面，並在您的工作階段結束時恢復受影響的頁面。"
   },
   "onboarding_access_capability_intro": {
     "message": "分類和自訂網域可以包括任何網站。因此 Chrome 将請求此功能："
@@ -133,7 +133,7 @@
     "message": "讀取并更改您在所有網站上的所有資料"
   },
   "onboarding_access_scope_note": {
-    "message": "Focus Lock 仅在应用您的封鎖規則時使用该存取權限。"
+    "message": "Focus Lock 只在套用您的封鎖規則時使用該存取。"
   },
   "onboarding_access_denied": {
     "message": "Chrome 未授予網站存取權限。您可以重試。"
@@ -151,7 +151,7 @@
     "message": "選擇您的設定儲存位置"
   },
   "onboarding_sync_switch_label": {
-    "message": "在 Chrome 设备间同步"
+    "message": "跨 Chrome 裝置同步"
   },
   "onboarding_sync_enabled_note": {
     "message": "下面的已批准資料将在您完成設定後使用 Chrome 同步。"

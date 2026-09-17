@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "下一个：$DAY$ $TIME$",
+    "message": "下一個：$DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -109,7 +109,7 @@
     "message": "正在檢查活跃網站"
   },
   "popup_active_site_unsupported": {
-    "message": "打開常规網站以解鎖"
+    "message": "開啟定期網站以解鎖它"
   },
   "popup_active_site_unknown": {
     "message": "无法识别活跃網站"
@@ -121,7 +121,7 @@
     "message": "立即恢复"
   },
   "popup_start_next_focus_early": {
-    "message": "提前開始下一个专注"
+    "message": "提前開始下一個專注"
   },
   "popup_unlock_this_site": {
     "message": "解鎖此網站"
@@ -190,7 +190,7 @@
     "message": "添加"
   },
   "popup_draft_allowed_only": {
-    "message": "仅 $COUNT$ 个允许網站規則。其他網站已封鎖。",
+    "message": "僅 $COUNT$ 個允許的網站規則。其他網站被封鎖。",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -199,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ 个被封鎖的分類，$RULES$ 个额外規則。",
+    "message": "$CATEGORIES$ 個被封鎖的類別，$RULES$ 個額外的規則。",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -239,7 +239,7 @@
     "message": "会话长度"
   },
   "popup_custom_minutes_label": {
-    "message": "自訂分鐘数"
+    "message": "自訂分鐘數"
   },
   "popup_custom_minutes_placeholder": {
     "message": "分鐘"
@@ -281,7 +281,7 @@
     "message": "回到工作"
   },
   "popup_destination_unavailable": {
-    "message": "目标不可用"
+    "message": "目的地無法使用"
   },
   "popup_back_to_work_name": {
     "message": "回到工作：$DESTINATION$",
@@ -321,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "顯示完整正则表达式：$PATTERN$",
+    "message": "顯示完整正規表達式：$PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -333,7 +333,7 @@
     "message": "網域"
   },
   "popup_rule_kind_regex": {
-    "message": "正则表达式"
+    "message": "正規表達式"
   },
   "popup_category_sites_label": {
     "message": "$CATEGORY$ 網站",
@@ -345,7 +345,7 @@
     }
   },
   "popup_sites_one": {
-    "message": "$COUNT$ 个網站",
+    "message": "$COUNT$ 個網站",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -354,7 +354,7 @@
     }
   },
   "popup_sites_other": {
-    "message": "$COUNT$ 个網站",
+    "message": "$COUNT$ 個網站",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "和 $COUNT$ 个更多網站",
+    "message": "和 $COUNT$ 個更多網站",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "和 $COUNT$ 个更多網站",
+    "message": "和 $COUNT$ 個更多網站",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -402,7 +402,7 @@
     "message": "将被允许的内容"
   },
   "popup_categories_selected": {
-    "message": "选定 $SELECTED$ 个，共 $TOTAL$ 个分類",
+    "message": "選擇了 $SELECTED$ 個 $TOTAL$ 個類別",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -415,7 +415,7 @@
     }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$ 个额外封鎖規則",
+    "message": "$COUNT$ 個額外的被封鎖規則",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -424,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$ 个额外封鎖規則",
+    "message": "$COUNT$ 個額外的被封鎖規則",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -433,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ 个允许規則",
+    "message": "$COUNT$ 個允許規則",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -442,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ 个允许規則",
+    "message": "$COUNT$ 個允許規則",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,10 +451,10 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "这里的允许網站和規則更改仅适用于此会话。其他一切都被封鎖。"
+    "message": "這裡的允許網站和規則變更僅適用於這個工作階段。其他所有內容都被封鎖。"
   },
   "popup_scope_blacklist": {
-    "message": "这里的分類和規則更改仅适用于此会话。"
+    "message": "這裡的類別和規則變更僅適用於這個工作階段。"
   },
   "popup_open_settings_defaults": {
     "message": "打開設定以获得永久預設值"
@@ -499,7 +499,7 @@
     "message": "会话无法提前結束。網站存取點數仍然有效。"
   },
   "popup_mode_blacklist_hint": {
-    "message": "选定的分類和额外規則被封鎖。其他網站保持可用。"
+    "message": "選定的類別和額外規則被封鎖。其他網站保持可用。"
   },
   "popup_mode_whitelist_hint": {
     "message": "仅欄出的網站可用。所有其他網站被封鎖。"
@@ -511,13 +511,13 @@
     "message": "預設值已更改，但无法載入目前清單。重新載入弹出窗口。"
   },
   "popup_no_work_tab_option": {
-    "message": "无工作頁籤（可选）"
+    "message": "無工作索引標籤（可選）"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "选定的頁籤不可用 - 選擇另一个"
+    "message": "選定的索引標籤無法使用 - 選擇另一個"
   },
   "popup_cycles_label": {
-    "message": "週期：$FOCUS$ 分鐘专注，$SHORT_BREAK$ 分鐘休息，每 $LONG_EVERY$ 个週期有 $LONG_BREAK$ 分鐘长休息",
+    "message": "循環：$FOCUS$ 分鐘專注、$SHORT_BREAK$ 分鐘休息、每第 $LONG_EVERY$ 個 $LONG_BREAK$ 分鐘長休息",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -598,7 +598,7 @@
     "message": "使用此頁籤"
   },
   "popup_current_tab_unavailable": {
-    "message": "此頁籤不可用于工作。選擇另一个打開的頁籤。"
+    "message": "這個索引標籤無法用於工作。選擇另一個開啟的索引標籤。"
   },
   "popup_checking_current_tab": {
     "message": "正在檢查目前頁籤..."
@@ -610,7 +610,7 @@
     "message": "无法載入您的目前頁籤。請重試。"
   },
   "popup_choose_work_tab_copy": {
-    "message": "選擇或更换您的工作頁籤。"
+    "message": "選擇或取代您的工作索引標籤。"
   },
   "popup_saving_work_tab": {
     "message": "正在保存工作頁籤..."
@@ -622,7 +622,7 @@
     "message": "選擇打開的頁籤"
   },
   "popup_or_choose_another_tab": {
-    "message": "或選擇另一个頁籤"
+    "message": "或選擇另一個索引標籤"
   },
   "popup_start_failed": {
     "message": "无法啟動会话。請重試。"

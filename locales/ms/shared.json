@@ -43,10 +43,10 @@
     "message": "Lock sampai manual buka kunci"
   },
   "shared_until_stopped_disclosure": {
-    "message": "Until stopped sesis keep Flexible or Friction and cannot use fokus and istirahat sikluss."
+    "message": "Sesi berhenti sampai menyimpan Fleksibel atau Gesekan dan tidak dapat menggunakan siklus fokus dan istirahat."
   },
   "shared_hard_unavailable_reason": {
-    "message": "Hard lock is not available for Until stopped: with no pengatur waktu and no manual end, the sesi could never end."
+    "message": "Kunci keras tidak tersedia untuk Berhenti sampai: tanpa penghitung waktu dan tanpa akhir manual, sesi tidak akan pernah berakhir."
   },
   "shared_end_session": {
     "message": "Akhir session"
@@ -125,46 +125,46 @@
     "message": "HIDUP"
   },
   "shared_popup_starting": {
-    "message": "Fokus Lock is starting. Applying your selected rules."
+    "message": "Focus Lock is starting. Applying andar selected rules."
   },
   "shared_popup_closure_cleanup": {
     "message": "Sesi ended. Finishing browser cleanup."
   },
   "shared_popup_transition_cleanup": {
-    "message": "Fokus Lock could not start. Finishing browser cleanup."
+    "message": "Focus Lock tidak dapat dimulai. Menyelesaikan pembersihan peramban."
   },
   "shared_popup_transition_error": {
-    "message": "Fokus Lock could not clean up an incomplete start."
+    "message": "Focus Lock tidak dapat membersihkan awal yang tidak selesai."
   },
   "shared_popup_closure_error": {
-    "message": "Fokus Lock could not finish browser cleanup."
+    "message": "Focus Lock tidak dapat menyelesaikan pembersihan peramban."
   },
   "shared_retry_cleanup": {
     "message": "Coba Ulang cleanup"
   },
   "shared_end_failed": {
-    "message": "Could not end sesi. Try again."
+    "message": "Tidak dapat mengakhiri sesi. Coba lagi."
   },
   "shared_retry_failed": {
-    "message": "Could not retry cleanup. Try agadalam."
+    "message": "Tidak dapat mencoba ulang pembersihan. Coba lagi."
   },
   "shared_action_failed": {
-    "message": "Could not request that tindakan. Try again."
+    "message": "Tidak dapat meminta tindakan itu. Coba lagi."
   },
   "shared_return_to_work_failed": {
-    "message": "Could not return ke kerja. Try agadalam."
+    "message": "Tidak dapat kembali bekerja. Coba lagi."
   },
   "shared_data_clear_pending": {
     "message": "Deleting Fokus Lock data. Finishing cleanup."
   },
   "shared_data_clear_error": {
-    "message": "Could not hapus dpadaa. Try agadalam."
+    "message": "Tidak dapat menghapus data. Coba lagi."
   },
   "shared_schedule_window_label": {
     "message": "Until wdalamdow ends"
   },
   "shared_schedule_until_stopped": {
-    "message": "Mulais on schedule and runs until you stop it: Akhir session for Flexible, Unlock through the deliberation gate for Friction. Cycles off."
+    "message": "Dimulai sesuai jadwal dan berjalan sampai Anda menghentikannya: Akhiri sesi untuk Fleksibel, Buka kunci melalui gerbang deliberasi untuk Gesekan. Siklus mati."
   },
   "shared_schedule_started_title": {
     "message": "Fokus schedule started"
@@ -173,19 +173,19 @@
     "message": "Active until you hentikan it."
   },
   "shared_settings_indefinite": {
-    "message": "Until stopped sesi active. Use the toolbar popup to view or end it."
+    "message": "Sesi berhenti sampai aktif. Gunakan popup bilah alat untuk melihat atau mengakhirinya."
   },
   "shared_settings_starting": {
-    "message": "Fokus Lock is starting. Checking website access and applying your rules."
+    "message": "Focus Lock is starting. Checking websitus access and applying andar rules."
   },
   "shared_settings_error": {
-    "message": "Fokus Lock could not finish browser cleanup. Buka the popup and retry."
+    "message": "Focus Lock tidak dapat menyelesaikan pembersihan peramban. Buka popup dan coba lagi."
   },
   "shared_settings_session_disclosure": {
-    "message": "The toolbar popup owns sesi controls. The active sesi keeps the aturans captured when it started."
+    "message": "Popup bilah alat memiliki kontrol sesi. Sesi aktif menyimpan aturan yang ditangkap saat dimulai."
   },
   "shared_settings_timed": {
-    "message": "Timed sesi active until $TIME$. It ends automatically. Use the toolbar popup for live status.",
+    "message": "Sesi berjangka waktu aktif sampai $TIME$. Berakhir secara otomatis. Gunakan popup bilah alat untuk status langsung.",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -264,7 +264,7 @@
     "message": "Less than a menit"
   },
   "shared_focus_remaining_break": {
-    "message": "$DURATION$ until your istirahat",
+    "message": "$DURATION$ until andar istirahat",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -282,7 +282,7 @@
     }
   },
   "shared_cost_exceeds_limit": {
-    "message": "Cost exceeds the kredit limit"
+    "message": "Biaya melebihi batas kredit"
   },
   "shared_credit_resumes_focus": {
     "message": "Kredit earning resumes during focus"
@@ -325,16 +325,16 @@
     }
   },
   "shared_verdict_blocked_custom": {
-    "message": "Blokired by your block list"
+    "message": "Blocked by andar blok list"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "Not pada your allow list"
+    "message": "Not on andar daftar izinkan"
   },
   "shared_verdict_blocked_session": {
     "message": "Blokired by this session"
   },
   "shared_verdict_allow_list": {
-    "message": "On your izinkan list"
+    "message": "On andar daftar izinkan"
   },
   "shared_verdict_always_allowed": {
     "message": "Always izinkaned"
@@ -400,10 +400,10 @@
     "message": "Active runtime sesi"
   },
   "shared_legacy_policy_dropped": {
-    "message": "Some synced dpadaa from an older versipada could not be read dan was reset."
+    "message": "Beberapa data yang disinkronkan dari versi lama tidak dapat dibaca dan direset."
   },
   "shared_all_data_clear_running": {
-    "message": "Akhir the running session before deleting all data."
+    "message": "Akhiri sesi yang sedang berjalan sebelum menghapus semua data."
   },
   "shared_nav_brand": {
     "message": "Fokus Lock"
@@ -458,7 +458,7 @@
     }
   },
   "shared_theme_error": {
-    "message": "Could not simpan theme. Reload page dan try agadalam."
+    "message": "Tidak dapat menyimpan tema. Muat ulang halaman dan coba lagi."
   },
   "shared_host_search_label": {
     "message": "Search $TITLE$ situss",
@@ -470,7 +470,7 @@
     }
   },
   "shared_host_none": {
-    "message": "No $TITLE$ situs matches your search.",
+    "message": "No $TITLE$ situs matches andar search.",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -479,7 +479,7 @@
     }
   },
   "shared_host_partial": {
-    "message": "Tampilkaning $SHOWN$ of $MATCHED$ sites. Search to narrow the list.",
+    "message": "Menampilkan $SHOWN$ dari $MATCHED$ situs. Cari untuk mempersempit daftar.",
     "placeholders": {
       "SHOWN": {
         "content": "$1",
@@ -514,19 +514,19 @@
     }
   },
   "shared_end_the_session": {
-    "message": "Akhir the session"
+    "message": "Akhiri sesi"
   },
   "shared_overlay_starting_title": {
     "message": "Fokus Lock is starting"
   },
   "shared_overlay_starting_detail": {
-    "message": "Applying your selected aturans."
+    "message": "Applying andar selected rules."
   },
   "shared_overlay_stopped_page": {
-    "message": "This page did not load. It will load by itself when the sesi ends."
+    "message": "Halaman ini tidak dimuat. Halaman akan dimuat sendiri saat sesi berakhir."
   },
   "shared_overlay_next_step": {
-    "message": "Your berikutnya step"
+    "message": "Andar next step"
   },
   "shared_overlay_back_to_work": {
     "message": "Kembali to work"
@@ -541,13 +541,13 @@
     "message": "Need a istirahat or site akses?"
   },
   "shared_overlay_access_note": {
-    "message": "You can step away at any time. Site akses uses credit."
+    "message": "Anda can step away at any time. Site access uses credit."
   },
   "shared_overlay_gate_force_end": {
     "message": "Ignore waktuout and end anyway"
   },
   "shared_overlay_transport_error": {
-    "message": "Fokus Lock could not update this action. Try again."
+    "message": "Focus Lock tidak dapat memperbarui tindakan ini. Coba lagi."
   },
   "shared_overlay_bank_amount": {
     "message": "$AMOUNT$ kredit akses laman",
@@ -559,7 +559,7 @@
     }
   },
   "shared_overlay_next_step_fallback": {
-    "message": "Lanjutkan your current task"
+    "message": "Continue andar current task"
   },
   "shared_overlay_pause_action": {
     "message": "Unlock all situss"

@@ -1,9 +1,9 @@
 {
   "notify_session_complete_title": {
-    "message": "Focus સેશન complete"
+    "message": "ફોકસ સેશન પૂર્ણ"
   },
   "notify_session_complete_body": {
-    "message": "Your focus સેશન finished."
+    "message": "તમારું ફોકસ સેશન સમાપ્ત થયું."
   },
   "notify_schedule_window_body": {
     "message": "$END$ સુધી લોક.",
@@ -15,7 +15,7 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Focus schedule could not શરુ"
+    "message": "ફોકસ શેડ્યૂલ શરૂ થઈ શક્યું નહીં"
   },
   "notify_schedule_unavailable_body": {
     "message": "વેબસાઇટ બ્લોકિંગ ચાલુ નથી. સેટઅપ પૂર્ણ કરો અથવા વેબસાઇટ ઍક્સેસ આપો, પછી ફરી પ્રયત્ન કરો."
@@ -48,7 +48,7 @@
     "message": "Focus Lock વેબસાઇટ ઍક્સેસ ચકાસી શક્યું નહીં. સેટઅપ ફરી પ્રયત્ન કરો અથવા એક્સટેન્શન ફરી લોડ કરો."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Website access is granted, but Focus Lock could not સક્ષમ blocking. Retry setup or reload the extension."
+    "message": "વેબસાઇટ ઍક્સેસ આપવામાં આવ્યું છે, પણ Focus Lock બ્લોકિંગ સક્ષમ કરી શક્યું નહીં. સેટઅપ ફરી પ્રયાસ કરો અથવા એક્સ્ટેન્શન રિલોડ કરો."
   },
   "notify_website_access_unavailable_cleanup_failed": {
     "message": "વેબસાઇટ ઍક્સેસ ઉપલબ્ધ નથી, અને Focus Lock બ્લોકિંગ ક્લીનઅપ પૂર્ણ કરી શક્યું નહીં. સેટઅપ ફરી પ્રયત્ન કરો અથવા એક્સટેન્શન ફરી લોડ કરો."
@@ -78,7 +78,7 @@
     "message": "ડેટા ક્લિયર ફરી પ્રયત્ન ઉપલબ્ધ નથી."
   },
   "notify_disable_sync_before_delete": {
-    "message": "અક્ષમ Sync before deleting synced data"
+    "message": "સિંક કરેલો ડેટા કાઢી નાખતાં પહેલાં Sync બંધ કરો"
   },
   "notify_work_gate_busy": {
     "message": "Focus Lock હજુ અગાઉનો ફેરફાર પૂર્ણ કરી રહ્યું છે. થોડી વારમાં ફરી પ્રયત્ન કરો."
@@ -90,45 +90,45 @@
     "message": "કાર્ય ટૅબ ઉપલબ્ધ નથી."
   },
   "notify_settings_sync_limit": {
-    "message": "સેટિંગ્સ exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again."
+    "message": "સેટિંગ્સ 8 KB Chrome Sync મર્યાદા કરતાં વધી ગયા છે. શેડ્યૂલ એન્ટ્રીઓ કાઢી નાખો અથવા ઉદ્દેશો ટૂંકા કરો, પછી ફરી પ્રયાસ કરો."
   },
   "notify_lists_sync_limit": {
     "message": "લિસ્ટ 8 KB Chrome Sync મર્યાદા કરતાં વધારે છે. કસ્ટમ અથવા અલાઉ લિસ્ટ નિયમો દૂર કરો, પછી ફરી પ્રયત્ન કરો."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "a hard સેશન is running: removing બ્લોક્ડ sites unlocks when it ends"
+    "message": "સખત સેશન ચાલી રહ્યું છે: બ્લોક કરેલી સાઇટ્સ દૂર કરવાનું તે સમાપ્ત થાય ત્યારે અનલૉક થશે"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a hard સેશન is running: new whitelist entries unlock when it ends"
+    "message": "સખત સેશન ચાલી રહ્યું છે: નવી વ્હાઇટલિસ્ટ એન્ટ્રીઓ તે સમાપ્ત થાય ત્યારે અનલૉક થશે"
   },
   "notify_guard_lists_disable_category": {
-    "message": "a hard સેશન is running: disabling categories unlocks when it ends"
+    "message": "સખત સેશન ચાલી રહ્યું છે: શ્રેણીઓ અક્ષમ કરવાનું તે સમાપ્ત થાય ત્યારે અનલૉક થશે"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "a hard સેશન is running: new exclusions unlock when it ends"
+    "message": "સખત સેશન ચાલી રહ્યું છે: નવા બાકાત તે સમાપ્ત થાય ત્યારે અનલૉક થશે"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a hard સેશન is running: weakening the default strictness waits until it ends"
+    "message": "સખત સેશન ચાલી રહ્યું છે: ડિફૉલ્ટ કડકાઈ નબળી પાડવાનું તે સમાપ્ત ન થાય ત્યાં સુધી રાહ જુએ છે"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "a hard સેશન is running: shortening the deliberation delay weakens the gate"
+    "message": "સખત સેશન ચાલી રહ્યું છે: વિચારણા વિલંબ ટૂંકો કરવાથી દ્વાર નબળું પડે છે"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "a hard સેશન is running: dropping the typed phrase weakens the gate"
+    "message": "સખત સેશન ચાલી રહ્યું છે: ટાઈપ કરેલો શબ્દસમૂહ કાઢી નાખવાથી દ્વાર નબળું પડે છે"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "a hard સેશન is running: raising the pause earn rate funds more escapes"
+    "message": "સખત સેશન ચાલી રહ્યું છે: પૉઝ કમાણી દર વધારવાથી વધુ છટકબારીઓને ભંડોળ મળે છે"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "a hard સેશન is running: raising the pause cap funds more escapes"
+    "message": "સખત સેશન ચાલી રહ્યું છે: પૉઝ મર્યાદા વધારવાથી વધુ છટકબારીઓને ભંડોળ મળે છે"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "a hard સેશન is running: shortening pauses lowers their cost"
+    "message": "સખત સેશન ચાલી રહ્યું છે: પૉઝ ટૂંકા કરવાથી તેમની કિંમત ઘટે છે"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "a hard સેશન is running: shortening unlocks lowers their cost"
+    "message": "સખત સેશન ચાલી રહ્યું છે: અનલૉક ટૂંકા કરવાથી તેમની કિંમત ઘટે છે"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a hard સેશન is running: its schedule entry cannot be weakened until it ends"
+    "message": "સખત સેશન ચાલી રહ્યું છે: તે સમાપ્ત ન થાય ત્યાં સુધી તેની શેડ્યૂલ એન્ટ્રી નબળી પાડી શકાતી નથી"
   }
 }

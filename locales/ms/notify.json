@@ -3,7 +3,7 @@
     "message": "Fokus session complete"
   },
   "notify_session_complete_body": {
-    "message": "Your focus sesi selesai."
+    "message": "Sesi fokus anda selesai."
   },
   "notify_schedule_window_body": {
     "message": "Locked sampai $END$.",
@@ -15,19 +15,19 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Fokus schedule could not start"
+    "message": "Jadwal fokus tidak dapat dimulai"
   },
   "notify_schedule_unavailable_body": {
     "message": "Situs web blocking is not enabled. Finish setup or grant website access, then try again."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Penyiapan was completed in another tab."
+    "message": "Penyiapan diselesaikan di tab lain."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Penyiapan changed in another tab. The latest choices were reloaded."
+    "message": "Penyiapan berubah di tab lain. Pilihan terbaru telah dimuat ulang."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Penyiapan changed in another tab. Reload setup before finishing."
+    "message": "Penyiapan berubah di tab lain. Muat ulang penyiapan sebelum menyelesaikan."
   },
   "notify_setup_not_complete": {
     "message": "Penyiapan is not complete."
@@ -45,16 +45,16 @@
     "message": "Onboarddalamg operpadaipada gagal."
   },
   "notify_website_access_check_failed": {
-    "message": "Fokus Lock could not check website access. Coba Ulang setup or reload the extension."
+    "message": "Focus Lock tidak dapat memeriksa akses situs web. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+    "message": "Akses situs web diberikan, tetapi Focus Lock tidak dapat mengaktifkan pemblokiran. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Situs web access is unavailable, and Fokus Lock could not finish blocking cleanup. Coba Ulang setup or reload the extension."
+    "message": "Akses situs web tidak tersedia, dan Focus Lock tidak dapat menyelesaikan pembersihan pemblokiran. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "notify_website_access_inconsistent": {
-    "message": "Fokus Lock received an inconsistent website access state. Coba Ulang setup or reload the extension."
+    "message": "Focus Lock menerima status akses situs web yang tidak konsisten. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "notify_boot_not_finished": {
     "message": "Fokus Lock did not finish starting: $REASON$",
@@ -69,13 +69,13 @@
     "message": "unknown kesalahan"
   },
   "notify_nothing_to_reset": {
-    "message": "Fokus Lock is running, nothing to reset"
+    "message": "Focus Lock sedang berjalan, tidak ada yang perlu direset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Fokus Lock cannot reset a runtime that is still committed inside a policy generation"
+    "message": "Focus Lock tidak dapat mereset runtime yang masih berkomitmen dalam pembuatan kebijakan"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "Dpadaa clear retry is not available."
+    "message": "Percobaan pembersihan data tidak tersedia."
   },
   "notify_disable_sync_before_delete": {
     "message": "Nonaktifkan Sync before deleting synced data"
@@ -84,16 +84,16 @@
     "message": "Fokus Lock is still finishing an earlier change. Try again in a moment."
   },
   "notify_work_gate_stuck": {
-    "message": "The buka gpadae could not be tutupd. Try agadalam."
+    "message": "Gerbang yang terbuka tidak dapat ditutup. Coba lagi."
   },
   "notify_work_tab_unavailable": {
-    "message": "The kerja tab is unavailable."
+    "message": "Tab kerja tidak tersedia."
   },
   "notify_settings_sync_limit": {
-    "message": "Pengaturan exceed the 8 KB Chrome Sync limit. Hapus schedule entries or shorten intentions, then try again."
+    "message": "Pengaturan melebihi batas Chrome Sync 8 KB. Hapus entri jadwal atau persingkat niat, lalu coba lagi."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sync limit. Hapus custom or whitelist rules, then try again."
+    "message": "Daftar melebihi batas Chrome Sync 8 KB. Hapus aturan khusus atau daftar putih, lalu coba lagi."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "a keras sesi is runndalamg: removdalamg blokired situss unlocks ketika it ends"
@@ -108,19 +108,19 @@
     "message": "a keras sesi is runndalamg: new exclusipadas unlock ketika it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a keras sesi is runndalamg: weakendalamg the default strictness waits until it ends"
+    "message": "sesi keras sedang berjalan: melemahkan ketataan default menunggu sampai berakhir"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "a keras sesi is runndalamg: shpadaautendalamg the deliberasi delay weakens the gpadae"
+    "message": "sesi keras sedang berjalan: mempersingkat penundaan deliberasi melemahkan gerbang"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "a keras sesi is runndalamg: droppdalamg the tiped phrase weakens the gpadae"
+    "message": "sesi keras sedang berjalan: menghapus frasa yang diketik melemahkan gerbang"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "a keras sesi is runndalamg: raisdalamg the jeda earn rpadae funds mpadaaue escapes"
+    "message": "sesi keras sedang berjalan: menaikkan tingkat pendapatan jeda mendanai lebih banyak jalan keluar"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "a keras sesi is runndalamg: raisdalamg the jeda cap funds mpadaaue escapes"
+    "message": "sesi keras sedang berjalan: menaikkan batas jeda mendanai lebih banyak jalan keluar"
   },
   "notify_guard_settings_shorten_pause": {
     "message": "a keras sesi is runndalamg: shpadaautendalamg jedas lowers their cost"
@@ -129,6 +129,6 @@
     "message": "a keras sesi is runndalamg: shpadaautendalamg unlocks lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a keras sesi is runndalamg: its schedule entry cannot be weakened until it ends"
+    "message": "sesi keras sedang berjalan: entri jadwalnya tidak dapat dilemahkan sampai berakhir"
   }
 }

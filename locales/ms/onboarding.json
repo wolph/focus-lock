@@ -19,34 +19,34 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Your saved setup progress could not be restored. Mulaiing again with your current defaults."
+    "message": "Kemajuan penyiapan yang tersimpan tidak dapat dipulihkan. Memulai lagi dengan default saat ini Anda."
   },
   "onboarding_complete_heading": {
     "message": "Penyiapan complete"
   },
   "onboarding_complete_body": {
-    "message": "Your choices are saved. Buka Fokus Lock from the Chrome toolbar to start a session."
+    "message": "Pilihan Anda disimpan. Buka Focus Lock dari bilah alat Chrome untuk memulai sesi."
   },
   "onboarding_error_heading": {
     "message": "Penyiapan unavailable"
   },
   "onboarding_error_body": {
-    "message": "Could not load setup. Try agadalam."
+    "message": "Tidak dapat memuat penyiapan. Coba lagi."
   },
   "onboarding_retry_button": {
     "message": "Coba Ulang"
   },
   "onboarding_save_error": {
-    "message": "Could not simpan setup progress. Try agadalam."
+    "message": "Tidak dapat menyimpan kemajuan penyiapan. Coba lagi."
   },
   "onboarding_enable_error": {
-    "message": "Could not aktifkan websitus blokirdalamg. Try agadalam."
+    "message": "Tidak dapat mengaktifkan pemblokiran situs web. Coba lagi."
   },
   "onboarding_finish_error": {
-    "message": "Could not complete setup. Your choices are still simpdan. Try agadalam."
+    "message": "Tidak dapat menyelesaikan penyiapan. Pilihan Anda masih disimpan. Coba lagi."
   },
   "onboarding_lists_heading": {
-    "message": "Choose your mulaidalamg blokir list"
+    "message": "Choose andar starting blok list"
   },
   "onboarding_lists_blacklist_rule": {
     "message": "In $MODE$, aktifkdan cpadaegpadaauies dan extra blokired situss are unavailable.",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "In $MODE$, every situs is unavailable except your allow list.",
+    "message": "In $MODE$, every situs is unavailable except andar daftar izinkan.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,7 +67,7 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "These choices become defaults untuk future sesis. You can edit them lpadaer."
+    "message": "These choices become defaults for future sessions. Anda can edit them later."
   },
   "onboarding_lists_legend": {
     "message": "Recommended websitus cpadaegpadaauies"
@@ -124,22 +124,22 @@
     "message": "Aktifkan website blocking"
   },
   "onboarding_access_local_matching": {
-    "message": "Fokus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your session ends."
+    "message": "Focus Lock checks page addresses locally so it can match andar selected categories and situss. It uses websitus access to show its bloking screen and restore affected pages when andar session ends."
   },
   "onboarding_access_capability_intro": {
     "message": "Cpadaegpadaauies dan cuskem domadalams can dalamclude any websitus. Chrome will thereuntuke request this capability:"
   },
   "onboarding_access_capability": {
-    "message": "Read dan change all your dpadaa pada all websituss"
+    "message": "Read and change all andar data on all websituss"
   },
   "onboarding_access_scope_note": {
-    "message": "Fokus Lock uses that access only while applying your blocking rules."
+    "message": "Focus Lock uses that access only while applying andar bloking rules."
   },
   "onboarding_access_denied": {
-    "message": "Chrome did not grant websitus akses. You can retry."
+    "message": "Chrome did not grant websitus access. Anda can retry."
   },
   "onboarding_access_registration_error": {
-    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+    "message": "Akses situs web diberikan, tetapi Focus Lock tidak dapat mengaktifkan pemblokiran. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "onboarding_access_enable_button": {
     "message": "Aktifkan website blocking"
@@ -148,13 +148,13 @@
     "message": "Tidakt tidakw"
   },
   "onboarding_sync_heading": {
-    "message": "Choose where your pengpadauran are stpadaaued"
+    "message": "Choose where andar settings are stored"
   },
   "onboarding_sync_switch_label": {
     "message": "Sinkronkan across Chrome devices"
   },
   "onboarding_sync_enabled_note": {
-    "message": "The approved dpadaa below will use Chrome Sync after you fdalamish setup."
+    "message": "Data yang disetujui di bawah ini akan menggunakan Chrome Sync setelah Anda menyelesaikan penyiapan."
   },
   "onboarding_sync_disabled_note": {
     "message": "All Fokus Lock data stays in this Chrome profile."
@@ -166,7 +166,7 @@
     "message": "Local padaly"
   },
   "onboarding_sync_developer_note": {
-    "message": "Nothing is sent to the Fokus Lock developer."
+    "message": "Tidak ada yang dikirim ke pengembang Focus Lock."
   },
   "onboarding_sync_finish_enabled": {
     "message": "Fdalamish setup dengan sync aktifkdan"

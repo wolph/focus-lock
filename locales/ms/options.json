@@ -18,7 +18,7 @@
     "message": "Blokiring"
   },
   "options_blocking_help": {
-    "message": "Aturan khusus blokir during daftar hitam sesis. The daftar putih is what stays reachable during daftar putih sesis. Kategori bundel blokir common time sinks."
+    "message": "Aturan khusus memblokir selama sesi daftar hitam. Daftar putih adalah apa yang tetap dapat diakses selama sesi daftar putih. Kategori bundel memblokir penyerap waktu umum."
   },
   "options_custom_blacklist_title": {
     "message": "Daftar hitam khusus"
@@ -36,7 +36,7 @@
     "message": "Jadwal"
   },
   "options_schedule_help": {
-    "message": "Sesis start on their own inside these windows. Strictness set here applies for the whole window."
+    "message": "Sesi dimulai sendiri di dalam jendela ini. Ketataan yang ditetapkan di sini berlaku untuk seluruh jendela."
   },
   "options_behavior_heading": {
     "message": "Sesi behavior"
@@ -123,7 +123,7 @@
     "message": "Tambah rule"
   },
   "options_rules_help": {
-    "message": "facebook.com covers that domain and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/pakhireks/ matches the full URL as a regular expression."
+    "message": "facebook.com mencakup domain itu dan setiap subdomain. news.ycombinator.com mencakup subdomain itu dan apa pun di bawahnya. /youtube\\.com\\/shorts/ mencocokkan URL lengkap sebagai ekspresi reguler."
   },
   "options_number_error_positive": {
     "message": "$LABEL$ mesti menjadi bilangan bulat positif.",
@@ -153,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$ must be within the supported menit range.",
+    "message": "$LABEL$ harus berada dalam rentang menit yang didukung.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -162,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$ must be within the supported hari range.",
+    "message": "$LABEL$ harus berada dalam rentang hari yang didukung.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -174,7 +174,7 @@
     "message": "Sesi defaults"
   },
   "options_session_defaults_help": {
-    "message": "Mode and strictness are fixed ketika a sesi mulais. These are the values the mulai form bukas with."
+    "message": "Mode dan ketataan diperbaiki saat sesi dimulai. Ini adalah nilai yang dibuka formulir awal dengan."
   },
   "options_preset_short_label": {
     "message": "Short session preset (menits)"
@@ -192,10 +192,10 @@
     "message": "Daftar putih: semuaow only listed situss"
   },
   "options_strictness_flexible_label": {
-    "message": "Fleksibel: akhir the sesi ketikaever you choose"
+    "message": "Fleksibel: akhiri sesi kapan saja pilihan Anda"
   },
   "options_strictness_friction_label": {
-    "message": "Gesekan: stopping early uses the configured deliberasi gerbang"
+    "message": "Gesekan: berhenti lebih awal menggunakan gerbang deliberasi yang dikonfigurasi"
   },
   "options_strictness_hard_label": {
     "message": "Keras: no early akhir, temporary situs akses only"
@@ -204,7 +204,7 @@
     "message": "Fokus and break cycle"
   },
   "options_cycle_help": {
-    "message": "Defaults: 25 menit focus, 5 menit break, 15 menit long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact menits are convention, not science."
+    "message": "Default: fokus 25 menit, istirahat 5 menit, istirahat panjang 15 menit setiap siklus ke-4. Istirahat sesuai jadwal mengalahkan istirahat-saat-Anda-merasa untuk suasana hati dan fokus dalam sampel studi. Menit yang tepat adalah konvensi, bukan sains."
   },
   "options_cycle_default_label": {
     "message": "Siklus fokus and istirahats by default"
@@ -225,7 +225,7 @@
     "message": "Deliberasi gerbang"
   },
   "options_gate_help": {
-    "message": "A 10 detik wait with an explicit back-to-kerja tombol measurably reduces impulse visits (kolom study, PNAS 2023). The longer wait and the typed sentence roughly double the effect."
+    "message": "Tunggu 10 detik dengan tombol kembali-ke-kerja eksplisit secara terukur mengurangi kunjungan impulsif (studi lapangan, PNAS 2023). Tunggu yang lebih lama dan frasa yang diketik kira-kira menggandakan efeknya."
   },
   "options_gate_wait_one": {
     "message": "Wait $COUNT$ detik",
@@ -261,7 +261,7 @@
     "message": "Aktifkan \"Ignore timeout and end anyway\" button"
   },
   "options_credit_help": {
-    "message": "Kredit akses laman accrues while you fokus. Both akses to semua situss and a single-situs unlock spakhir from the same balance. You can step away at any time without spakhiring credit."
+    "message": "Kredit akses situs terkumpul saat Anda fokus. Kedua akses ke semua situs dan buka kunci situs tunggal menghabiskan dari saldo yang sama. Anda dapat mundur kapan saja tanpa menghabiskan kredit."
   },
   "options_earn_rate_label": {
     "message": "Minutes of site access per 30 menits of focus"
@@ -279,7 +279,7 @@
     "message": "Garis and retensi"
   },
   "options_streak_help": {
-    "message": "The streak counts haris that reach the goal. One default session keeps the chain alive, and a freeze token repairs a missed hari."
+    "message": "Sengitan menghitung hari yang mencapai tujuan. Satu sesi default menjaga rantai tetap hidup, dan token pembekuan memperbaiki hari yang terlewat."
   },
   "options_streak_goal_label": {
     "message": "Daily streak goal (focus menits)"
@@ -441,7 +441,7 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "Uncheck a situs to keep it tersedia while the rest of the kategori is blokired."
+    "message": "Hapus centang situs untuk tetap tersedia saat bagian kategori lainnya diblokir."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ situs bulk actions",
@@ -504,7 +504,7 @@
     "message": "Siklus fokus and istirahats"
   },
   "options_schedule_overlap_error": {
-    "message": "Overlaps another aktifkand entry on $DAY$.",
+    "message": "Tumpang tindih dengan entri lain yang diaktifkan di $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -616,7 +616,7 @@
     "message": "Mainkan"
   },
   "options_sound_preview_error": {
-    "message": "Could not preview the suara. Try again."
+    "message": "Tidak dapat mempratinjau suara. Coba lagi."
   },
   "options_sounds_notifications_heading": {
     "message": "Pemberitahuan"
@@ -628,7 +628,7 @@
     "message": "Lencana"
   },
   "options_badge_countdown": {
-    "message": "Tampilkan the remaining time on the toolbar icon"
+    "message": "Tampilkan waktu tersisa di ikon bilah alat"
   },
   "options_privacy_website_access_heading": {
     "message": "Situs web access"
@@ -637,7 +637,7 @@
     "message": "Situs web access is off"
   },
   "options_privacy_website_off_detail": {
-    "message": "Fokus Lock cannot block websites until you grant access."
+    "message": "Focus Lock tidak dapat memblokir situs web hingga Anda memberi akses."
   },
   "options_privacy_website_enable_action": {
     "message": "Aktifkan website blocking"
@@ -646,7 +646,7 @@
     "message": "Situs web access is granted, but blocking is not active"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome granted access, but Fokus Lock could not register its blocking script."
+    "message": "Chrome memberi akses, tetapi Focus Lock tidak dapat mendaftarkan skrip pemblokirannya."
   },
   "options_privacy_website_retry_action": {
     "message": "Coba Ulang website blocking"
@@ -655,7 +655,7 @@
     "message": "Situs web blocking is enabled"
   },
   "options_privacy_website_on_detail": {
-    "message": "Fokus Lock can apply your active blocking rules on regular website pages."
+    "message": "Focus Lock can apply andar active bloking rules on regular websitus pages."
   },
   "options_privacy_confirm_local_history_title": {
     "message": "Hapus local history?"
@@ -667,10 +667,10 @@
     "message": "Lokal history hapusd."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Akhiring the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "Ini secara permanen menghapus URL lengkap, niat fokus, dan acara sesi terperinci dari perangkat ini. Ini tidak menghapus sesi yang sedang berjalan, yang menyimpan niat dan alamat setiap tab yang diblokir. Mengakhiri sesi menghapus niat dan memulai pembersihan yang menghapus setiap tab situs web yang terbuka, dan pembersihan menghapus setiap alamat yang disimpan saat selesai."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device, plus local-only aggregate statistics. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Akhiring the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "Ini secara permanen menghapus URL lengkap, niat fokus, dan acara sesi terperinci dari perangkat ini, ditambah statistik agregat lokal saja. Ini tidak menghapus sesi yang sedang berjalan, yang menyimpan niat dan alamat setiap tab yang diblokir. Mengakhiri sesi menghapus niat dan memulai pembersihan yang menghapus setiap tab situs web yang terbuka, dan pembersihan menghapus setiap alamat yang disimpan saat selesai."
   },
   "options_privacy_confirm_synced_policy_title": {
     "message": "Hapus remote Sync data?"
@@ -697,22 +697,22 @@
     "message": "This permanently deletes every piece of Fokus Lock data on this device and any Fokus Lock copies left in Chrome Sync:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Deleting everything is available only while no session is running. Fokus Lock then returns to setup."
+    "message": "Menghapus semuanya hanya tersedia saat tidak ada sesi yang berjalan. Focus Lock kemudian kembali ke penyiapan."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Lokal history could not be hapusd. Try again."
+    "message": "Riwayat lokal tidak dapat dihapus. Coba lagi."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Remote Chrome Sinkronisasi data could not be hapusd. Try again."
+    "message": "Data Chrome Sync jarak jauh tidak dapat dihapus. Coba lagi."
   },
   "options_privacy_error_all_clear": {
-    "message": "All Fokus Lock data could not be deleted. Try again."
+    "message": "Semua data Focus Lock tidak dapat dihapus. Coba lagi."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sinkronisasi tidak dapat menyimpan your latest changes. Your lokal simpan is safe."
+    "message": "Chrome Sync tidak dapat menyimpan perubahan terbaru Anda. Penyimpanan lokal Anda aman."
   },
   "options_privacy_error_request": {
-    "message": "The request could not be completed. Try agadalam."
+    "message": "Permintaan tidak dapat diselesaikan. Coba lagi."
   },
   "options_privacy_website_access_updated": {
     "message": "Situs web access updated."
@@ -721,19 +721,19 @@
     "message": "Situs web access was not granted."
   },
   "options_privacy_error_website_access": {
-    "message": "Situs web access could not be updated. Try again."
+    "message": "Akses situs web tidak dapat diperbarui. Coba lagi."
   },
   "options_privacy_website_blocking_enabled": {
     "message": "Situs web blocking enabled."
   },
   "options_privacy_error_export": {
-    "message": "Could not ekspor the event log."
+    "message": "Tidak dapat mengekspor log acara."
   },
   "options_privacy_error_export_retry": {
-    "message": "Could not ekspor the event log. Try again."
+    "message": "Tidak dapat mengekspor log acara. Coba lagi."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Could not buka Chrome izin pengaturan. Try again."
+    "message": "Tidak dapat membuka pengaturan izin Chrome. Coba lagi."
   },
   "options_privacy_chrome_settings_opened": {
     "message": "Chrome izin pengaturan bukaed."
@@ -754,7 +754,7 @@
     "message": "Chrome Sinkronisasi nonaktifkand."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sinkronisasi is still saving your latest changes."
+    "message": "Chrome Sync is still saving andar latest changes."
   },
   "options_privacy_sync_on": {
     "message": "Chrome Sinkronisasi is on."
@@ -778,13 +778,13 @@
     "message": "Lokal only"
   },
   "options_privacy_developer_note": {
-    "message": "Nothing is sent to the Fokus Lock developer."
+    "message": "Tidak ada yang dikirim ke pengembang Focus Lock."
   },
   "options_privacy_local_log_heading": {
     "message": "Lokal event log"
   },
   "options_privacy_local_log_detail": {
-    "message": "Ekspor the detailed lokal log or hapus lokal browsing and sesi history."
+    "message": "Ekspor log lokal terperinci atau hapus peramban dan riwayat sesi lokal."
   },
   "options_privacy_export_local_log": {
     "message": "Ekspor lokal event log"
@@ -799,7 +799,7 @@
     "message": "Remote Sinkronisasi data"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Hapus the Fokus Lock copies left in Chrome Sync without changing this device."
+    "message": "Hapus salinan Focus Lock yang tersisa di Chrome Sync tanpa mengubah perangkat ini."
   },
   "options_privacy_delete_remote_data": {
     "message": "Hapus remote Sync data"
@@ -808,7 +808,7 @@
     "message": "All Fokus Lock data"
   },
   "options_privacy_all_data_detail": {
-    "message": "Hapus every Fokus Lock record on this device and any Fokus Lock copies left in Chrome Sync, then start again from setup. Available while no session is running."
+    "message": "Hapus setiap catatan Focus Lock di perangkat ini dan salinan Focus Lock apa pun yang tersisa di Chrome Sync, lalu mulai lagi dari penyiapan. Tersedia saat tidak ada sesi yang berjalan."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Resuming deletion of all Fokus Lock data."
@@ -823,27 +823,27 @@
     "message": "Coba Ulang all data deletion"
   },
   "options_error_load": {
-    "message": "Could not load pengaturan. Reload the page to try again."
+    "message": "Tidak dapat memuat pengaturan. Muat ulang halaman untuk coba lagi."
   },
   "options_error_retry_boot": {
-    "message": "Could not restart Fokus Lock. Try again."
+    "message": "Tidak dapat memulai ulang Focus Lock. Coba lagi."
   },
   "options_error_refresh_privacy": {
-    "message": "Could not refresh privacy pengaturan. Reload the page."
+    "message": "Tidak dapat menyegarkan pengaturan privasi. Muat ulang halaman."
   },
   "options_error_website_blocking": {
-    "message": "Could not update websitus penyekatan. Try again."
+    "message": "Tidak dapat memperbarui pemblokiran situs web. Coba lagi."
   },
   "options_error_change_sync": {
-    "message": "Could not change Chrome Sinkronisasi. Try again."
+    "message": "Tidak dapat mengubah Chrome Sync. Coba lagi."
   },
   "options_error_retry_sync": {
-    "message": "Could not coba ulang Chrome Sinkronisasi. Try again."
+    "message": "Tidak dapat mencoba ulang Chrome Sync. Coba lagi."
   },
   "options_error_save_settings": {
-    "message": "Tidak dapat menyimpan pengaturan. Reload the page and try again."
+    "message": "Tidak dapat menyimpan pengaturan. Muat ulang halaman dan coba lagi."
   },
   "options_error_save_lists": {
-    "message": "Tidak dapat menyimpan lists. Reload the page and try again."
+    "message": "Tidak dapat menyimpan daftar. Muat ulang halaman dan coba lagi."
   }
 }

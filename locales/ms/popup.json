@@ -16,10 +16,10 @@
     "message": "Pengaturan"
   },
   "popup_open_settings_failed": {
-    "message": "Could not open Pengaturan. Try again."
+    "message": "Tidak dapat membuka Pengaturan. Coba lagi."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load sesi pengaturan. Reload the popup to try again. Defaults are shown."
+    "message": "Tidak dapat memuat pengaturan sesi. Muat ulang popup untuk coba lagi. Default ditampilkan."
   },
   "popup_open_setup_failed": {
     "message": "Tidak dapat membuka penyiapan. Try again."
@@ -28,28 +28,28 @@
     "message": "Finish setting up Fokus Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose your mulaiing lists, websitus akses, and storage mode before mulaiing a sesi."
+    "message": "Choose andar starting lists, websitus access, and storage mode before starting a session."
   },
   "popup_open_setup_button": {
     "message": "Buka setup"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Could not confirm websitus blocking. Try again."
+    "message": "Tidak dapat mengonfirmasi pemblokiran situs web. Coba lagi."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not enable websitus blocking. Try again."
+    "message": "Tidak dapat mengaktifkan pemblokiran situs web. Coba lagi."
   },
   "popup_blocking_off_heading": {
     "message": "Situs web blocking is off"
   },
   "popup_blocking_off_body": {
-    "message": "Fokus Lock cannot start a session until Chrome grants website access and blocking is enabled."
+    "message": "Focus Lock tidak dapat memulai sesi sampai Chrome memberi akses situs web dan pemblokiran diaktifkan."
   },
   "popup_blocking_off_denied": {
     "message": "Chrome did not grant website access. Situs web blocking is still off."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+    "message": "Akses situs web diberikan, tetapi Focus Lock tidak dapat mengaktifkan pemblokiran. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "popup_enable_blocking_button": {
     "message": "Aktifkan website blocking"
@@ -58,13 +58,13 @@
     "message": "Coba Ulang"
   },
   "popup_notice_access_revoked": {
-    "message": "Your sesi ended because websitus akses was removed."
+    "message": "Andar session berakhir because websitus access was removed."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your session ended because Fokus Lock could not enable website blocking."
+    "message": "Sesi Anda berakhir karena Focus Lock tidak dapat mengaktifkan pemblokiran situs web."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Could not dismiss this notice. Try agadalam."
+    "message": "Tidak dapat menolak pemberitahuan ini. Coba lagi."
   },
   "popup_dismiss_notice_label": {
     "message": "Dismiss websitus akses notice"
@@ -73,19 +73,19 @@
     "message": "Tutnaik"
   },
   "popup_restart_failed": {
-    "message": "Could not restart Fokus Lock. Try again."
+    "message": "Tidak dapat memulai ulang Focus Lock. Coba lagi."
   },
   "popup_boot_failed_heading": {
-    "message": "Fokus Lock could not start"
+    "message": "Focus Lock tidak dapat dimulai"
   },
   "popup_boot_reason_unavailable": {
-    "message": "The reason tidak dapat be read."
+    "message": "Alasannya tidak dapat dibaca."
   },
   "popup_reset_runtime_button": {
     "message": "Reset local runwaktu"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your pengaturan, lists, and statistics. Clears the current sesi state."
+    "message": "Menyimpan pengaturan, daftar, dan statistik Anda. Menghapus status sesi saat ini."
   },
   "popup_delete_all_confirm_button": {
     "message": "Hapus everything and start over"
@@ -106,16 +106,16 @@
     "message": "Tindakan in progress"
   },
   "popup_active_site_checking": {
-    "message": "Memeriksa the active situs"
+    "message": "Memeriksa situs aktif"
   },
   "popup_active_site_unsupported": {
     "message": "Buka a regular website to unlock it"
   },
   "popup_active_site_unknown": {
-    "message": "Could not identify the active situs"
+    "message": "Tidak dapat mengidentifikasi situs aktif"
   },
   "popup_active_site_error": {
-    "message": "Could not identify the active situs."
+    "message": "Tidak dapat mengidentifikasi situs aktif."
   },
   "popup_resume_now": {
     "message": "Lanjutkan now"
@@ -212,7 +212,7 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Kunci keras. Cannot end early."
+    "message": "Kunci keras. Tidak dapat mengakhiri lebih awal."
   },
   "popup_draft_stop_flexible": {
     "message": "Can end pada any waktu."
@@ -254,7 +254,7 @@
     "message": "Tipe:"
   },
   "popup_gate_update_failed": {
-    "message": "Could not updpadae the gpadae. Try agadalam."
+    "message": "Tidak dapat memperbarui gerbang. Coba lagi."
   },
   "popup_gate_intention": {
     "message": "Anda berkata: $INTENTION$",
@@ -475,7 +475,7 @@
     "message": "Kunci keras"
   },
   "popup_session_type_flexible_hint": {
-    "message": "Akhir the session immediately whenever you choose."
+    "message": "Akhiri sesi segera kapan pun Anda memilih."
   },
   "popup_session_type_friction_hint": {
     "message": "Akhiring early requires $WAIT$. No typing is required.",
@@ -496,25 +496,25 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The sesi cannot end early. Situs akses kredit still kerjas."
+    "message": "Sesi tidak dapat berakhir lebih awal. Kredit akses situs masih berfungsi."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected kategori and extra aturans are diblokir. Other situss remain tersedia."
+    "message": "Kategori yang dipilih dan aturan tambahan diblokir. Situs lain tetap tersedia."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed situss are tersedia. Every other websitus is diblokir."
+    "message": "Hanya situs yang terdaftar yang tersedia. Setiap situs web lain diblokir."
   },
   "popup_invalid_duration_error": {
     "message": "Enter a session length greater than zero menits."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Defaults ubahd, but current lists tidak dapat be loaded. Reload the popup."
+    "message": "Default berubah, tetapi daftar saat ini tidak dapat dimuat. Muat ulang popup."
   },
   "popup_no_work_tab_option": {
     "message": "No kerja tab (pilihanal)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Selected tab untersedia - choose another"
+    "message": "Tab yang dipilih tidak tersedia - pilih yang lain"
   },
   "popup_cycles_label": {
     "message": "Sikluss: $FOCUS$ min fokus, $SHORT_BREAK$ min istirahat, $LONG_BREAK$ min long istirahat every $LONG_EVERY$th",
@@ -592,31 +592,31 @@
     "message": "Enter a valid domadalam such as docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Could not load kerja tabs. Reopen the popup to try again."
+    "message": "Tidak dapat memuat tab kerja. Buka kembali popup untuk coba lagi."
   },
   "popup_use_this_tab": {
     "message": "Use ini tab"
   },
   "popup_current_tab_unavailable": {
-    "message": "This tab is not tersedia for kerja. Choose another open tab."
+    "message": "Tab ini tidak tersedia untuk bekerja. Pilih tab terbuka lain."
   },
   "popup_checking_current_tab": {
     "message": "Memeriksa current tab..."
   },
   "popup_finding_current_tab": {
-    "message": "Fdalamddalamg your current tab..."
+    "message": "Finding andar current tab..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Could not load your current tab. Try agadalam."
+    "message": "Tidak dapat memuat tab saat ini Anda. Coba lagi."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Choose or replace your kerja tab."
+    "message": "Choose or replace andar tab kerja."
   },
   "popup_saving_work_tab": {
     "message": "Saving kerja tab..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not save the kerja tab. Try again."
+    "message": "Tidak dapat menyimpan tab kerja. Coba lagi."
   },
   "popup_choose_open_tab_option": {
     "message": "Choose an buka tab"
@@ -625,6 +625,6 @@
     "message": "Or choose atidakther tab"
   },
   "popup_start_failed": {
-    "message": "Could not mulai sesi. Try again."
+    "message": "Tidak dapat memulai sesi. Coba lagi."
   }
 }

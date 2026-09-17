@@ -3,7 +3,7 @@
     "message": "Focus Lock 統計"
   },
   "stats_page_title": {
-    "message": "您的专注记录"
+    "message": "您的專注記錄"
   },
   "stats_loading": {
     "message": "載入您的統計中。"
@@ -21,22 +21,22 @@
     "message": "網站存取點數設定不可用。"
   },
   "stats_scope_synced": {
-    "message": "来自此 Chrome 账户的同步总计。仅限本地面板已标记。"
+    "message": "從這個 Chrome 帳戶同步的總計。本機專用面板已標示。"
   },
   "stats_scope_local": {
-    "message": "来自此計算机的总计。Focus Lock 統計不同步。"
+    "message": "這個機器上的總計。Focus Lock 統計資料未同步。"
   },
   "stats_scope_checking": {
-    "message": "檢查这些总计是否同步中。"
+    "message": "檢查這些總計是否同步。"
   },
   "stats_scope_unavailable": {
-    "message": "統計范围不可用。总计可能包括同步資料。每小時尝试和最近会话来自此計算机。"
+    "message": "統計資料範圍無法使用。總計可能包括同步資料。每小時嘗試和最近的工作階段來自這個機器。"
   },
   "stats_scope_retry": {
     "message": "重試范围檢查"
   },
   "stats_empty": {
-    "message": "統計在您的第一个会话後出现。"
+    "message": "統計資料在您的第一個工作階段之後出現。"
   },
   "stats_tile_focus_today": {
     "message": "今天的专注"
@@ -54,7 +54,7 @@
     "message": "今天花费的網站存取點數"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "所有網站 $ALL_SITES$，一个網站 $ONE_SITE$，$EARNED$ 获得",
+    "message": "所有網站 $ALL_SITES$，一個網站 $ONE_SITE$，$EARNED$ 已賺取",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -83,7 +83,7 @@
     "message": "連續記錄"
   },
   "stats_streak_empty": {
-    "message": "您的連續記錄从您的第一个专注日期開始。"
+    "message": "您的連勝從您的第一個專注日開始。"
   },
   "stats_streak_unit_one": {
     "message": "天"
@@ -92,7 +92,7 @@
     "message": "天"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "已儲存 $COUNT$ 个冻结令牌",
+    "message": "$COUNT$ 個凍結權杖銀行",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "已儲存 $COUNT$ 个冻结令牌",
+    "message": "$COUNT$ 個凍結權杖銀行",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "連續記錄冻结：一个错过的日期，已覆盖"
+    "message": "連勝凍結：一個錯過的日期，已覆蓋"
   },
   "stats_streak_active_days_one": {
-    "message": "本月有 $COUNT$ 个活跃日期（$MONTH$）",
+    "message": "這個月有 $COUNT$ 個活躍日期（$MONTH$）",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "本月有 $COUNT$ 个活跃日期（$MONTH$）",
+    "message": "這個月有 $COUNT$ 個活躍日期（$MONTH$）",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -161,22 +161,22 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "专注，过去 14 天"
+    "message": "專注，過去 14 天"
   },
   "stats_chart_focus_empty": {
-    "message": "在您的第一个会话後会出现专注分鐘数。"
+    "message": "第一個工作階段後，專注分鐘會出現。"
   },
   "stats_chart_attempts_heading": {
-    "message": "已封鎖的尝试，过去 14 天"
+    "message": "被封鎖的嘗試，過去 14 天"
   },
   "stats_chart_attempts_empty": {
-    "message": "一旦会话捕获尝试，已封鎖的尝试就会出现在此处。"
+    "message": "工作階段捕捉一次後，被封鎖嘗試會出現在這裡。"
   },
   "stats_chart_sites_heading": {
-    "message": "排名最靠前的封鎖網站，过去 30 天"
+    "message": "最高被封鎖的網站，過去 30 天"
   },
   "stats_chart_sites_empty": {
-    "message": "没有被封鎖的内容。这是一个不错的開始。"
+    "message": "還沒有任何封鎖。那是個很好的開始。"
   },
   "stats_chart_hours_heading": {
     "message": "按小時的尝试，仅此計算机"
@@ -194,7 +194,7 @@
     }
   },
   "stats_blocked_count_one": {
-    "message": "$COUNT$ 个已封鎖",
+    "message": "$COUNT$ 個被封鎖",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -203,7 +203,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "$COUNT$ 个已封鎖",
+    "message": "$COUNT$ 個被封鎖",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -212,16 +212,16 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "条形图"
+    "message": "長條圖"
   },
   "stats_chart_name_hbar": {
-    "message": "水平条形图"
+    "message": "水平長條圖"
   },
   "stats_chart_description_bar": {
-    "message": "条形图。使用鍵盘在資料点之间移动，或打開\"以表格形式查看\"以获取相同的值。"
+    "message": "長條圖。使用鍵盤移動通過資料點，或開啟「以表格檢視」以取得相同的值。"
   },
   "stats_chart_description_hbar": {
-    "message": "水平条形图。使用鍵盘在資料点之间移动，或打開\"以表格形式查看\"以获取相同的值。"
+    "message": "水平長條圖。使用鍵盤移動通過資料點，或開啟「以表格檢視」以取得相同的值。"
   },
   "stats_chart_empty_default": {
     "message": "尚无資料。"
@@ -249,13 +249,13 @@
     "message": "值"
   },
   "stats_heat_strip_label": {
-    "message": "24 小時已封鎖尝试热条"
+    "message": "24 小時被封鎖嘗試熱帶"
   },
   "stats_sessions_heading": {
     "message": "此計算机上的最近会话"
   },
   "stats_sessions_empty": {
-    "message": "您的第一个会话将顯示在此处。"
+    "message": "您的第一個工作階段將出現在這裡。"
   },
   "stats_sessions_col_date": {
     "message": "日期"
@@ -273,16 +273,16 @@
     "message": "所有網站"
   },
   "stats_sessions_col_one_site": {
-    "message": "一个網站"
+    "message": "一個網站"
   },
   "stats_sessions_col_intention": {
     "message": "意圖"
   },
   "stats_sessions_col_outcome": {
-    "message": "结果"
+    "message": "結果"
   },
   "stats_sessions_col_source": {
-    "message": "来源"
+    "message": "來源"
   },
   "stats_session_no_intention": {
     "message": "无意圖"
@@ -297,7 +297,7 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "手动"
+    "message": "手動"
   },
   "stats_session_source_schedule": {
     "message": "日程"

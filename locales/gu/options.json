@@ -39,7 +39,7 @@
     "message": "આ સમયગાળામાં સેશન આપમેળે શરૂ થાય છે. અહીં સેટ કરેલી કડકાઈ આખા સમયગાળા માટે લાગુ પડે છે."
   },
   "options_behavior_heading": {
-    "message": "સેશન behavior"
+    "message": "સેશન વર્તન"
   },
   "options_budget_heading": {
     "message": "સાઇટ ઍક્સેસ ક્રેડિટ"
@@ -54,13 +54,13 @@
     "message": "ફરી પ્રયાસ કરો"
   },
   "options_load_error_delete_all": {
-    "message": "કાઢી નાખો everything and start over"
+    "message": "બધું કાઢી નાખો અને ફરીથી શરૂ કરો"
   },
   "options_load_error_keep_data": {
     "message": "મારો ડેટા રાખો"
   },
   "options_delete_all_data": {
-    "message": "કાઢી નાખો all Focus Lock data"
+    "message": "બધો Focus Lock ડેટા કાઢી નાખો"
   },
   "options_dirty_saving": {
     "message": "ફેરફારો સચવાઈ રહ્યા છે"
@@ -75,10 +75,10 @@
     "message": "ફેરફારો કાઢી નાખો"
   },
   "options_dirty_save": {
-    "message": "સાચવો changes"
+    "message": "ફેરફારો સાચવો"
   },
   "options_session_status_label": {
-    "message": "સેશન status"
+    "message": "સેશન સ્થિતિ"
   },
   "options_rule_kind_host_badge": {
     "message": "ડોમેન"
@@ -171,7 +171,7 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "સેશન defaults"
+    "message": "સેશન ડિફૉલ્ટ"
   },
   "options_session_defaults_help": {
     "message": "સેશન શરૂ થાય ત્યારે મોડ અને કડકાઈ નક્કી થઈ જાય છે. આ એ મૂલ્યો છે જેની સાથે સ્ટાર્ટ ફોર્મ ખૂલે છે."
@@ -258,7 +258,7 @@
     "message": "એક વાક્ય ટાઇપ કરવું પણ ફરજિયાત બનાવો"
   },
   "options_gate_force_end_label": {
-    "message": "સક્ષમ \"Ignore timeout and end anyway\" button"
+    "message": "\"ટાઈમઆઉટ અવગણો અને છતાં સમાપ્ત કરો\" બટન સક્ષમ કરો"
   },
   "options_credit_help": {
     "message": "તું ફોકસ કરે ત્યારે સાઇટ ઍક્સેસ ક્રેડિટ જમા થાય છે. બધી સાઇટ્સની ઍક્સેસ અને એક જ સાઇટનું અનલૉક બંને એક જ બેલેન્સમાંથી ખર્ચાય છે. તું ક્રેડિટ ખર્ચ્યા વિના ગમે ત્યારે દૂર જઈ શકે છે."
@@ -513,7 +513,7 @@
     }
   },
   "options_schedule_session_type_aria": {
-    "message": "સેશન type"
+    "message": "સેશન પ્રકાર"
   },
   "options_schedule_entry_legend": {
     "message": "શેડ્યૂલ એન્ટ્રી"
@@ -534,7 +534,7 @@
     "message": "આ સમય શેના માટે છે"
   },
   "options_schedule_save_entry": {
-    "message": "સાચવો entry"
+    "message": "એન્ટ્રી સાચવો"
   },
   "options_cancel": {
     "message": "રદ કરો"
@@ -592,7 +592,7 @@
     "message": "મુખ્ય વૉલ્યુમ"
   },
   "options_sound_session_complete": {
-    "message": "સેશન complete"
+    "message": "સેશન પૂર્ણ"
   },
   "options_sound_break_start": {
     "message": "બ્રેક શરૂ"
@@ -640,7 +640,7 @@
     "message": "તું ઍક્સેસ ન આપે ત્યાં સુધી Focus Lock વેબસાઇટ્સ બ્લોક કરી શકતું નથી."
   },
   "options_privacy_website_enable_action": {
-    "message": "સક્ષમ website blocking"
+    "message": "વેબસાઇટ બ્લોકિંગ સક્ષમ કરો"
   },
   "options_privacy_website_unregistered_title": {
     "message": "વેબસાઇટ ઍક્સેસ આપવામાં આવી છે, પણ બ્લોકિંગ સક્રિય નથી"
@@ -658,7 +658,7 @@
     "message": "Focus Lock તારા સક્રિય બ્લોકિંગ નિયમો સામાન્ય વેબસાઇટ પેજ પર લાગુ કરી શકે છે."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "કાઢી નાખો local history?"
+    "message": "લોકલ ઇતિહાસ કાઢી નાખવો છે?"
   },
   "options_privacy_confirm_local_history_action": {
     "message": "લોકલ હિસ્ટ્રી ડિલીટ કરવાની પુષ્ટિ કરો"
@@ -673,7 +673,7 @@
     "message": "આ, સંપૂર્ણ URL, ફોકસ ઉદ્દેશો, વિગતવાર સેશન ઇવેન્ટ્સ અને ફક્ત-લોકલ સરવાળા આંકડાઓને આ ડિવાઇસ પરથી કાયમ માટે ડિલીટ કરે છે. તે ચાલુ સેશનને સાફ કરતું નથી, જે પોતાનો ઉદ્દેશ અને તે જે દરેક ટૅબને બ્લોક કરી રહ્યું છે તેનું સરનામું જાળવી રાખે છે. સેશન સમાપ્ત કરવાથી ઉદ્દેશ સાફ થાય છે અને એક ક્લીનઅપ શરૂ થાય છે જે દરેક ખુલ્લી વેબસાઇટ ટૅબને સાફ કરે છે, અને એ ક્લીનઅપ પૂર્ણ થાય ત્યારે દરેક સંગ્રહિત સરનામું દૂર કરે છે."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "કાઢી નાખો remote Sync data?"
+    "message": "રિમોટ Sync ડેટા કાઢી નાખવો છે?"
   },
   "options_privacy_confirm_synced_policy_action": {
     "message": "રિમોટ Sync ડેટા ડિલીટ કરવાની પુષ્ટિ કરો"
@@ -685,7 +685,7 @@
     "message": "આ Chrome Sync માંથી રિમોટ સેટિંગ્સ, બ્લોક અને એલાઉ લિસ્ટ, સાઇટ ઍક્સેસ ક્રેડિટ, સ્ટ્રીક અને ડોમેન-સ્તરના બ્લોક-પ્રયાસ સરવાળા આંકડાઓને કાયમ માટે ડિલીટ કરે છે. લોકલ સેટિંગ્સ અને આંકડા આ ડિવાઇસ પર જ રહે છે."
   },
   "options_privacy_confirm_all_title": {
-    "message": "કાઢી નાખો all Focus Lock data?"
+    "message": "બધો Focus Lock ડેટા કાઢી નાખવો છે?"
   },
   "options_privacy_confirm_all_action": {
     "message": "બધો Focus Lock ડેટા ડિલીટ કરવાની પુષ્ટિ કરો"
@@ -793,22 +793,22 @@
     "message": "લોકલ ઇવેન્ટ લોગ એક્સપોર્ટ થયો."
   },
   "options_privacy_delete_local_history": {
-    "message": "કાઢી નાખો local history"
+    "message": "લોકલ ઇતિહાસ કાઢી નાખો"
   },
   "options_privacy_remote_data_heading": {
     "message": "રિમોટ Sync ડેટા"
   },
   "options_privacy_remote_data_detail": {
-    "message": "કાઢી નાખો the Focus Lock copies left in Chrome Sync without changing this device."
+    "message": "આ ડિવાઇસમાં ફેરફાર કર્યા વગર Chrome Sync માં રહેલી Focus Lock કૉપીઓ કાઢી નાખો."
   },
   "options_privacy_delete_remote_data": {
-    "message": "કાઢી નાખો remote Sync data"
+    "message": "રિમોટ Sync ડેટા કાઢી નાખો"
   },
   "options_privacy_all_data_heading": {
     "message": "બધો Focus Lock ડેટા"
   },
   "options_privacy_all_data_detail": {
-    "message": "કાઢી નાખો every Focus Lock record on this device and any Focus Lock copies left in Chrome Sync, then start again from setup. Available while no session is running."
+    "message": "આ ડિવાઇસ પરનો દરેક Focus Lock રેકોર્ડ અને Chrome Sync માં રહેલી કોઈપણ Focus Lock કૉપી કાઢી નાખો, પછી સેટઅપથી ફરી શરૂ કરો. જ્યારે કોઈ સેશન ચાલતું ન હોય ત્યારે ઉપલબ્ધ."
   },
   "options_privacy_resuming_all_clear": {
     "message": "બધા Focus Lock ડેટાની ડિલીટ ફરીથી શરૂ થઈ રહી છે."
