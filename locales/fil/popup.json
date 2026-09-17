@@ -499,10 +499,10 @@
     "message": "Ang session hindi maaaring end early. Site access credit still works."
   },
   "popup_mode_blacklist_hint": {
-    "message": "Ang selected categories and extra rules are blocked. Oangr sites remain available."
+    "message": "Ang mga napiling category at dagdag na rules ay nablok. Ang ibang sites ay nanatiling available."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only ang listed sites are available. Every oangr website is blocked."
+    "message": "Lamang ang mga listed sites ay available. Bawat ibang website ay nablok."
   },
   "popup_invalid_duration_error": {
     "message": "Enter a session length greater than zero minutos."
@@ -598,7 +598,7 @@
     "message": "Use ito tab"
   },
   "popup_current_tab_unavailable": {
-    "message": "This tab is hindi available for work. Choose anoangr open tab."
+    "message": "Ang tab na ito ay hindi available para sa trabaho. Pumili ng iba pang open tab."
   },
   "popup_checking_current_tab": {
     "message": "Checksag current tab..."
