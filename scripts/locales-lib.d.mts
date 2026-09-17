@@ -45,12 +45,15 @@ export interface MergeResult {
   untranslated: number;
   missing: number;
   unknown: string[];
+  refused: string[];
+  replaced: string[];
 }
 export function mergeTranslation(
   root: string,
   locale: string,
   flat: Record<string, string>,
   write: (surface: string, messages: Catalogue) => void,
+  options?: { replaceEnglish?: boolean },
 ): MergeResult;
 export interface ProgressRow {
   surface: string;

@@ -3,7 +3,7 @@
     "message": "Hadi kikomeshwe"
   },
   "shared_preset_short": {
-    "message": "shaut"
+    "message": "fupi"
   },
   "shared_preset_focus": {
     "message": "mtazamo"
@@ -28,7 +28,7 @@
     }
   },
   "shared_timed_hint_plain": {
-    "message": "$MINUTES$ mkatika unkatikaterrupted mtazamo",
+    "message": "$MINUTES$ dakika za umakini bila kukatizwa",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -67,7 +67,7 @@
     }
   },
   "shared_gate_requirement_typed": {
-    "message": "$WAIT$ na a akatikaad sentence",
+    "message": "$WAIT$ na sentensi iliyoandikwa",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -258,7 +258,7 @@
     }
   },
   "shared_updating_session": {
-    "message": "Updatkatikag kikao"
+    "message": "Inasasisha kipindi"
   },
   "shared_less_than_a_minute": {
     "message": "Chini ya dakika moja"
@@ -355,7 +355,7 @@
     "message": "Mitandao ya kijamii"
   },
   "shared_category_video": {
-    "message": "Video na streamkatikag"
+    "message": "Video na utiririshaji"
   },
   "shared_category_news": {
     "message": "Habari"
@@ -364,13 +364,13 @@
     "message": "Barua"
   },
   "shared_category_shopping": {
-    "message": "Shoppkatikag"
+    "message": "Ununuzi"
   },
   "shared_category_gaming": {
-    "message": "Gamkatikag"
+    "message": "Michezo"
   },
   "shared_category_forums": {
-    "message": "Fauums na bauedom"
+    "message": "Majukwaa na uchovu"
   },
   "shared_synced_settings": {
     "message": "Mipango"
@@ -430,7 +430,7 @@
     "message": "Tovuti kufikia crhariri"
   },
   "shared_section_notifications": {
-    "message": "Notificatikwenyes"
+    "message": "Arifa"
   },
   "shared_section_privacy": {
     "message": "Faragha na data"
@@ -619,7 +619,7 @@
     "message": "Endelea kuwa makini"
   },
   "shared_gate_phrase_label": {
-    "message": "Akatikaa this kwa ckwenyefirm:"
+    "message": "Andika hii ili kuthibitisha:"
   },
   "shared_gate_end_title": {
     "message": "Komesha kipindi hiki"

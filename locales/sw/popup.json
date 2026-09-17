@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "katikaaywauata: $DAY$ $TIME$",
+    "message": "inayofuata: $DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -199,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ kuzuiaed categauies, $RULES$ extra sherias.",
+    "message": "Makundi $CATEGORIES$ yamezuiwa, kanuni $RULES$ za ziada.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -251,7 +251,7 @@
     "message": "Endelea kufanya fokasi"
   },
   "popup_gate_phrase_label": {
-    "message": "Akatikaa:"
+    "message": "Andika:"
   },
   "popup_gate_update_failed": {
     "message": "Imeshindwa kusasisha lango. Jaribu tena."
@@ -466,7 +466,7 @@
     "message": "Aina ya kikao"
   },
   "popup_session_type_flexible": {
-    "message": "Bkatikagu"
+    "message": "Legevu"
   },
   "popup_session_type_friction": {
     "message": "Nguvu"
@@ -517,7 +517,7 @@
     "message": "Kichupo kilichochaguliwa hakipatikani - chagua kingine"
   },
   "popup_cycles_label": {
-    "message": "Mzungukos: $FOCUS$ mkatika mtazamo, $SHORT_BREAK$ mkatika mapumziko, $LONG_BREAK$ mkatika lkwenyeg mapumziko every $LONG_EVERY$th",
+    "message": "Mizunguko: umakini dakika $FOCUS$, mapumziko dakika $SHORT_BREAK$, mapumziko marefu dakika $LONG_BREAK$ kila mzunguko wa $LONG_EVERY$",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -613,7 +613,7 @@
     "message": "Chagua au badilisha kichupo chako cha kazi."
   },
   "popup_saving_work_tab": {
-    "message": "Savkatikag kazi tab..."
+    "message": "Inahifadhi kichupo cha kazi..."
   },
   "popup_save_work_tab_failed": {
     "message": "Imeshindwa kuhifadhi kichupo cha kazi. Jaribu tena."

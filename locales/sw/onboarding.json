@@ -70,7 +70,7 @@
     "message": "Machaguo haya yanakuwa chaguo-msingi kwa vipindi vijavyo. Unaweza kuyahariri baadaye."
   },
   "onboarding_lists_legend": {
-    "message": "Recommended webkwavuti categauies"
+    "message": "Makundi ya tovuti yanayopendekezwa"
   },
   "onboarding_site_count_one": {
     "message": "$COUNT$ kwavuti",
@@ -109,7 +109,7 @@
     }
   },
   "onboarding_category_domains_label": {
-    "message": "$CATEGORY$ domakatikas",
+    "message": "Vikoa vya $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -169,9 +169,9 @@
     "message": "Hakuna kinachotumwa kwa msanidi wa Focus Lock."
   },
   "onboarding_sync_finish_enabled": {
-    "message": "Fkatikaish setup na sync kuwekad"
+    "message": "Maliza usanidi na usawazishaji umewashwa"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "Fkatikaish setup naout sync"
+    "message": "Maliza usanidi bila usawazishaji"
   }
 }

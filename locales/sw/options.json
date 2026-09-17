@@ -45,7 +45,7 @@
     "message": "Tovuti kufikia crhariri"
   },
   "options_notifications_heading": {
-    "message": "Notificatikwenyes"
+    "message": "Arifa"
   },
   "options_privacy_heading": {
     "message": "Faragha na data"
@@ -207,7 +207,7 @@
     "message": "Chaguomsingi: dakika 25 za fokasi, dakika 5 za mapumziko, mapumziko marefu ya dakika 15 kila mzunguko wa 4. Katika sampuli za utafiti, mapumziko yaliyopangwa huwa bora kuliko kupumzika unapohisi tu, kwa hali ya moyo na fokasi. Dakika hasa ni desturi, si sayansi."
   },
   "options_cycle_default_label": {
-    "message": "Mzunguko mtazamo na mapumzikos by default"
+    "message": "Zungusha umakini na mapumziko kwa chaguo-msingi"
   },
   "options_focus_minutes_label": {
     "message": "Fokasi dakikas"
@@ -291,7 +291,7 @@
     "message": "Weka takwimu za kila siku (siku)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ akatikaa kwenye.",
+    "message": "Kundi la $CATEGORY$ limewashwa.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -300,7 +300,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ akatikaa waf.",
+    "message": "Kundi la $CATEGORY$ limezimwa.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -312,7 +312,7 @@
     "message": "Aina zote zimewashwa."
   },
   "options_all_categories_off_announcement": {
-    "message": "All categauies waf."
+    "message": "Makundi yote yamezimwa."
   },
   "options_host_included_announcement": {
     "message": "$HOST$ katikacluded.",
@@ -565,7 +565,7 @@
     "message": "orodha nyeupe"
   },
   "options_schedule_strictness_flexible": {
-    "message": "bkatikagu"
+    "message": "legevu"
   },
   "options_schedule_strictness_friction": {
     "message": "nguvu"
@@ -619,7 +619,7 @@
     "message": "Imeshindwa kuonyesha sauti kwa muhtasari. Jaribu tena."
   },
   "options_sounds_notifications_heading": {
-    "message": "Notificatikwenyes"
+    "message": "Arifa"
   },
   "options_session_complete_notification": {
     "message": "Onyesha arifa ya mfumo wakati kikao kinapokamilika"
@@ -664,7 +664,7 @@
     "message": "Thibitisha kufuta historia ya ndani"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Local histauy kufutad."
+    "message": "Historia ya kifaa imefutwa."
   },
   "options_privacy_confirm_local_history_body": {
     "message": "Hii hufuta kabisa URL kamili, nia za fokasi, na matukio ya kina ya kikao kutoka kwa kifaa hiki. Haifutii kikao kinachoendelea, ambacho huweka nia yake na anwani ya kila kichupo kinachozuia. Kumaliza kikao hufuta nia na kuanzisha usafishaji unaofuta kila kichupo cha tovuti kilichofunguliwa, na usafishaji huo huondoa kila anwani iliyohifadhiwa unapokamilika."

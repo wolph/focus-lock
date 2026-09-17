@@ -709,14 +709,22 @@ function translatedEntry(source, text) {
  * replace a translation the locale already had: that is how a later pass of padding used to undo
  * earlier work. Wholesale padding is caught by share, in `checkTranslation`, rather than per key.
  */
-export function mergeTranslation(root, locale, flat, write) {
+export function mergeTranslation(root, locale, flat, write, { replaceEnglish = false } = {}) {
   const english = readSurfaceFiles(root, 'en');
   if (english === null) throw new Error('en catalogue missing');
   const existing = new Map(
     (readSurfaceFiles(root, locale) ?? []).map(({ surface, messages }) => [surface, messages]),
   );
   const unknown = new Set(Object.keys(flat));
-  const result = { fresh: 0, carried: 0, untranslated: 0, missing: 0, unknown: [] };
+  const result = {
+    fresh: 0,
+    carried: 0,
+    untranslated: 0,
+    missing: 0,
+    unknown: [],
+    refused: [],
+    replaced: [],
+  };
 
   for (const { surface, messages } of english) {
     const previous = existing.get(surface) ?? {};
@@ -740,17 +748,28 @@ export function mergeTranslation(root, locale, flat, write) {
       const isEnglish = (value) => isPadding(locale, source.message, value.message);
       const readsAsEnglish = (value) =>
         !NEAR_EN_LOCALES.has(locale) && value.message === source.message;
-      // A later submission that re-sends the English text must never overwrite a translation the
-      // locale already had, however short the message is: the earlier work wins, and only a
-      // genuinely different translation replaces it.
+      // A later submission that re-sends the English text must not overwrite a translation the
+      // locale already had: the earlier work wins, and only a genuinely different translation
+      // replaces it. The exception is a message short enough to be a word two languages share,
+      // such as domain or regex. There a translator resubmitting the English spelling is making a
+      // correct choice, and refusing it would strand whatever is already stored, including text a
+      // find and replace had mangled into something that is no longer English.
       if (
         added === 'fresh' &&
         readsAsEnglish(candidate) &&
         previous[key] !== undefined &&
         !readsAsEnglish(previous[key])
       ) {
-        candidate = previous[key];
-        added = 'carried';
+        if (replaceEnglish) {
+          // The caller has said the stored value is wrong, which is the case when a find and
+          // replace mangled it into something that is no longer English and no longer the
+          // language either. Only then does the English spelling win.
+          result.replaced.push(key);
+        } else {
+          candidate = previous[key];
+          added = 'carried';
+          result.refused.push(key);
+        }
       }
       // Padding is not stored. Chrome falls back to the default locale for a key the catalogue
       // does not carry, which renders the same words without claiming they were translated.

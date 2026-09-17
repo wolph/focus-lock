@@ -15,7 +15,7 @@
     "message": "Hindi maaaring i-save ang mga setting. I-reload ang page at subukan ulit."
   },
   "options_blocking_heading": {
-    "message": "Hadlanging"
+    "message": "Pagharang"
   },
   "options_blocking_help": {
     "message": "Ang mga custom na panuntunan ay humaharang sa mga sesyon ng itim na listahan. Ang puting listahan ang nananatiling naa-akses sa mga sesyon ng puting listahan. Hinaharangan ng mga bundled na kategorya ang mga karaniwang site na nagsasayang ng oras."
@@ -45,7 +45,7 @@
     "message": "Kredito sa Pag-akses ng Site"
   },
   "options_notifications_heading": {
-    "message": "Notificatisas"
+    "message": "Mga abiso"
   },
   "options_privacy_heading": {
     "message": "Privacy at Data"
@@ -81,7 +81,7 @@
     "message": "Sesyon status"
   },
   "options_rule_kind_host_badge": {
-    "message": "domasa"
+    "message": "domain"
   },
   "options_rule_kind_regex_badge": {
     "message": "regex"
@@ -105,10 +105,10 @@
     "message": "Uri ng panuntunan"
   },
   "options_rule_kind_host_option": {
-    "message": "domasa o subdomasa"
+    "message": "domain o subdomain"
   },
   "options_rule_kind_regex_option": {
-    "message": "regex (puhindi URL)"
+    "message": "regex (buong URL)"
   },
   "options_rule_pattern_aria": {
     "message": "Padron"
@@ -117,7 +117,7 @@
     "message": "facebook.com"
   },
   "options_rule_pattern_placeholder_regex": {
-    "message": "/youtube\\.com\\/shots/"
+    "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
     "message": "Magdagdag ng panuntunan"
@@ -201,13 +201,13 @@
     "message": "Mahirap: walang maagang pagtatapos, pansamantalang site akses lamang"
   },
   "options_cycle_heading": {
-    "message": "Pokus at pahsaga siklus"
+    "message": "Siklo ng pokus at pahinga"
   },
   "options_cycle_help": {
     "message": "Mga default: 25 minutong focus, 5 minutong break, 15 minutong mahabang break tuwing ika-4 na cycle. Sa mga pag-aaral, mas mabuti ang mga break na naka-schedule kaysa sa pagpapahinga kung kailan mo lang gusto, para sa mood at focus. Ang eksaktong minuto ay convention lang, hindi siyensya."
   },
   "options_cycle_default_label": {
-    "message": "Siklus pokus at pahsagas by default"
+    "message": "Iikot ang pokus at pahinga bilang default"
   },
   "options_focus_minutes_label": {
     "message": "Focus minutos"
@@ -246,7 +246,7 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "Cussam"
+    "message": "Pasadya"
   },
   "options_custom_delay_label": {
     "message": "Custom na delay (segundo)"
@@ -276,7 +276,7 @@
     "message": "Haba ng pag-unlock ng site (minuto)"
   },
   "options_streak_heading": {
-    "message": "Sunod-sunod at retentisa"
+    "message": "Sunod-sunod at pagpapanatili"
   },
   "options_streak_help": {
     "message": "Binibilang ng streak ang mga araw na umaabot sa goal. Pinapanatiling buhay ng isang default na sesyon ang chain, at inaayos ng freeze token ang isang nakaligtaang araw."
@@ -315,7 +315,7 @@
     "message": "All categoies ngf."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ sacluded.",
+    "message": "Kasama ang $HOST$.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -402,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ site sacluded",
+    "message": "$COUNT$ site ang kasama",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -411,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ sites sacluded",
+    "message": "$COUNT$ na site ang kasama",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -423,7 +423,7 @@
     "message": "Naka-off ang kategorya"
   },
   "options_included_when_enabled_one": {
-    "message": "$COUNT$ sacluded kung kailan gawsad",
+    "message": "$COUNT$ ang kasama kapag naka-enable",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -432,7 +432,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ sacluded kung kailan gawsad",
+    "message": "$COUNT$ ang kasama kapag naka-enable",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -501,7 +501,7 @@
     "message": "Sab"
   },
   "options_schedule_cycles_label": {
-    "message": "Siklus pokus at pahsagas"
+    "message": "Iikot ang pokus at pahinga"
   },
   "options_schedule_overlap_error": {
     "message": "Nag-o-overlap sa ibang naka-enable na entry sa $DAY$.",
@@ -525,7 +525,7 @@
     "message": "Tapusin"
   },
   "options_schedule_duration_legend": {
-    "message": "Duratisa"
+    "message": "Tagal"
   },
   "options_schedule_intention_label": {
     "message": "Layunsa"
@@ -595,7 +595,7 @@
     "message": "Tapos na ang sesyon"
   },
   "options_sound_break_start": {
-    "message": "Pahsaga simulan"
+    "message": "Simula ng pahinga"
   },
   "options_sound_break_end": {
     "message": "Katapusan ng break"
@@ -619,7 +619,7 @@
     "message": "Hindi ma-preview ang sound. Subukan muli."
   },
   "options_sounds_notifications_heading": {
-    "message": "Notificatisas"
+    "message": "Mga abiso"
   },
   "options_session_complete_notification": {
     "message": "Ipakita ang system notification kapag natapos ang sesyon"
@@ -775,7 +775,7 @@
     "message": "Naka-sync"
   },
   "options_privacy_scope_local_only": {
-    "message": "Local saly"
+    "message": "Lokal lamang"
   },
   "options_privacy_developer_note": {
     "message": "Walang ipinapadala sa developer ng Focus Lock."

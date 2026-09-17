@@ -512,3 +512,66 @@ describe('englishEcho', () => {
     expect(result.share).toBe(0);
   });
 });
+
+describe('mergeTranslation reports what it refuses', () => {
+  it('keeps the stored text by default, and names the key it refused', () => {
+    const root: string = mkdtempSync(join(tmpdir(), 'shared-word-'));
+    const src: string = join(root, 'locales');
+    mkdirSync(join(src, 'en'), { recursive: true });
+    writeFileSync(
+      join(src, 'en', 'options.json'),
+      JSON.stringify({ options_badge: { message: 'domain', description: 'A badge.' } }),
+    );
+    const write = (
+      flat: Record<string, string>,
+      replaceEnglish = false,
+    ): { written: Catalogue; refused: string[] } => {
+      const written: Catalogue = {};
+      const result = mergeTranslation(
+        src,
+        'fil',
+        flat,
+        (surface: string, messages: Catalogue): void => {
+          mkdirSync(join(src, 'fil'), { recursive: true });
+          writeFileSync(join(src, 'fil', `${surface}.json`), JSON.stringify(messages));
+          Object.assign(written, messages);
+        },
+        { replaceEnglish },
+      );
+      return { written, refused: result.refused };
+    };
+    // "domasa" is what a find and replace left behind. It is not English, so the guard against
+    // losing a translation keeps it, but the refusal is reported rather than silent.
+    write({ options_badge: 'domasa' });
+    const refusal = write({ options_badge: 'domain' });
+    expect(refusal.written.options_badge?.message).toBe('domasa');
+    expect(refusal.refused).toEqual(['options_badge']);
+  });
+
+  it('replaces the stored text when the caller says it is the wrong one', () => {
+    const root: string = mkdtempSync(join(tmpdir(), 'shared-word-force-'));
+    const src: string = join(root, 'locales');
+    mkdirSync(join(src, 'en'), { recursive: true });
+    writeFileSync(
+      join(src, 'en', 'options.json'),
+      JSON.stringify({ options_badge: { message: 'domain', description: 'A badge.' } }),
+    );
+    const write = (flat: Record<string, string>, replaceEnglish = false): Catalogue => {
+      const written: Catalogue = {};
+      mergeTranslation(
+        src,
+        'fil',
+        flat,
+        (surface: string, messages: Catalogue): void => {
+          mkdirSync(join(src, 'fil'), { recursive: true });
+          writeFileSync(join(src, 'fil', `${surface}.json`), JSON.stringify(messages));
+          Object.assign(written, messages);
+        },
+        { replaceEnglish },
+      );
+      return written;
+    };
+    write({ options_badge: 'domasa' });
+    expect(write({ options_badge: 'domain' }, true).options_badge?.message).toBe('domain');
+  });
+});
