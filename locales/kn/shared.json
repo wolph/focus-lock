@@ -1,21 +1,21 @@
 {
   "shared_until_stopped": {
-    "message": "ಸೆಷನ್ ನುಡಿಬುಕ್ಕ ವರೆಗೆ"
+    "message": "ನಿಲ್ಲಿಸುವವರೆಗೆ"
   },
   "shared_preset_short": {
-    "message": "ಹೊಸ"
+    "message": "ಚಿಕ್ಕ"
   },
   "shared_preset_focus": {
     "message": "ಫೋಕಸ್"
   },
   "shared_preset_deep_work": {
-    "message": "ಗಭೀರ ಕಾರ್ಯ"
+    "message": "ಆಳವಾದ ಕೆಲಸ"
   },
   "shared_deep_work_note": {
-    "message": "ಆದ್ಯತೆ, ವಿಜ್ಞಾನ ಅಲ್ಲ: ಒಂದು ದೀರ್ಘ ಅಡಚಣೆ ರಹಿತ ಬ್ಲಾಕ್, ಸ್ವಯಂಚಾಲಿತ ವಿರತಿ ಇಲ್ಲ."
+    "message": "ಇಷ್ಟ, ವಿಜ್ಞಾನವಲ್ಲ: ಒಂದು ದೀರ್ಘ ಅಡೆತಡೆಯಿಲ್ಲದ ಬ್ಲಾಕ್, ಯಾವುದೇ ಸ್ವಯಂಚಾಲಿತ ಬ್ರೇಕ್ ಇಲ್ಲದೆ."
   },
   "shared_timed_hint_cycles": {
-    "message": "$MINUTES$ ನಿಮಿ ಒಟ್ಟು, $FOCUS$ ನಿಮಿ ಫೋಕಸ್ ಬ್ಲಾಕ್ ಜೊತೆ",
+    "message": "ಒಟ್ಟು $MINUTES$ ನಿಮಿಷ, $FOCUS$ ನಿಮಿಷದ ಫೋಕಸ್ ಬ್ಲಾಕ್‌ಗಳೊಂದಿಗೆ",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -28,7 +28,7 @@
     }
   },
   "shared_timed_hint_plain": {
-    "message": "$MINUTES$ ನಿಮಿ ಅಡಚಣೆ ರಹಿತ ಫೋಕಸ್",
+    "message": "$MINUTES$ ನಿಮಿಷದ ಅಡೆತಡೆಯಿಲ್ಲದ ಫೋಕಸ್",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -37,28 +37,28 @@
     }
   },
   "shared_start_until_stopped": {
-    "message": "ಸೆಷನ್ ನುಡಿಬುಕ್ಕ ಆರಂಭ ಮಾಡಿ"
+    "message": "ನಿಲ್ಲಿಸುವವರೆಗೆ ಪ್ರಾರಂಭಿಸಿ"
   },
   "shared_lock_until_manual_unlock": {
-    "message": "ಹಸ್ತ ಅನ್‌ಲಾಕ್ ಆಗುವವರೆಗೆ ಲಾಕ್"
+    "message": "ಮ್ಯಾನುವಲ್ ಅನ್‌ಲಾಕ್ ವರೆಗೆ ಲಾಕ್ ಮಾಡಿ"
   },
   "shared_until_stopped_disclosure": {
-    "message": "ಸೆಷನ್ ನುಡಿಬುಕ್ಕ ಸೆಷನ್ ಹೊಂದಿಕೊಳ್ಳುವ ಅಥವಾ ಘರ್ಷಣೆ ಹಿಡಿದುಕೊಳ್ಳುತ್ತವೆ ಮತ್ತು ಫೋಕಸ್ ಬ್ರೇಕ್ ಚಕ್ರ ಬಳಸಿಕೊಳ್ಳಬಹುದು."
+    "message": "'ನಿಲ್ಲಿಸುವವರೆಗೆ' ಸೆಷನ್‌ಗಳು ಫ್ಲೆಕ್ಸಿಬಲ್ ಅಥವಾ ಘರ್ಷಣೆ ಆಗಿ ಉಳಿಯುತ್ತವೆ ಮತ್ತು ಫೋಕಸ್ ಮತ್ತು ಬ್ರೇಕ್ ಚಕ್ರ ಬಳಸಲಾಗುವುದಿಲ್ಲ."
   },
   "shared_hard_unavailable_reason": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ನುಡಿಬುಕ್ಕಕ್ಕೆ ಲಭ್ಯವಿಲ್ಲ: ಸಮಯ ಹೊಂದಿಸುವಿಕೆ ಮತ್ತು ಯಾವುದೇ ಹಸ್ತನಿರ್ಮಿತ ಅಂತ್ಯ ಇಲ್ಲದೆ, ಸೆಷನ್ ಎಂದಿಗೂ ಮುಂದುವರಿಯಬಹುದು."
+    "message": "'ನಿಲ್ಲಿಸುವವರೆಗೆ' ಗೆ ಕಠಿಣ ಲಾಕ್ ಲಭ್ಯವಿಲ್ಲ: ಟೈಮರ್ ಇಲ್ಲದೆ ಮತ್ತು ಮ್ಯಾನುವಲ್ ಅಂತ್ಯ ಇಲ್ಲದೆ, ಸೆಷನ್ ಎಂದಿಗೂ ಕೊನೆಗೊಳ್ಳುವುದಿಲ್ಲ."
   },
   "shared_end_session": {
-    "message": "ಸೆಷನ್ ಅನ್ನು ಮುಂದುವರಿಸಿ"
+    "message": "ಸೆಷನ್ ಕೊನೆಗೊಳಿಸಿ"
   },
   "shared_unlock": {
-    "message": "ಅನ್‌ಲಾಕ್"
+    "message": "ಅನ್‌ಲಾಕ್ ಮಾಡಿ"
   },
   "shared_gate_wait_none": {
-    "message": "ಕಾಯ್ಹಿಲ್ಲ"
+    "message": "ಯಾವುದೇ ಕಾಯುವಿಕೆ ಇಲ್ಲ"
   },
   "shared_gate_wait": {
-    "message": "ಒಂದು $SECONDS$-ಸೆಕೆಂಡ್ ಕಾಯುವುದು",
+    "message": "$SECONDS$ ಸೆಕೆಂಡ್ ಕಾಯುವಿಕೆ",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -67,7 +67,7 @@
     }
   },
   "shared_gate_requirement_typed": {
-    "message": "$WAIT$ ಮತ್ತು ಬರೆದ ವಾಕ್ಯ",
+    "message": "$WAIT$ ಮತ್ತು ಟೈಪ್ ಮಾಡಿದ ವಾಕ್ಯ",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -76,7 +76,7 @@
     }
   },
   "shared_until_stopped_hint_flexible": {
-    "message": "$LABEL$ ಜೊತೆ ಅದನ್ನು ಪೂರ್ಣ ಮಾಡುವವರೆಗೆ ಚಲಿಸುತ್ತದೆ. ಚಕ್ರ ಆಫ್.",
+    "message": "ನೀನು $LABEL$ ಮೂಲಕ ಕೊನೆಗೊಳಿಸುವವರೆಗೆ ಚಾಲನೆಯಲ್ಲಿರುತ್ತದೆ. ಚಕ್ರಗಳು ಆಫ್.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -85,7 +85,7 @@
     }
   },
   "shared_until_stopped_hint_friction": {
-    "message": "ನೀವು ಅನ್‍ಲಾಕ್ ಮಾಡುವವರೆಗೆ ಚಲಿಸುತ್ತದೆ: $REQUIREMENT$, ನಂತರ $LABEL$. ಚಕ್ರ ಆಫ್.",
+    "message": "ನೀನು ಅದನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡುವವರೆಗೆ ಚಾಲನೆಯಲ್ಲಿರುತ್ತದೆ: $REQUIREMENT$, ನಂತರ $LABEL$. ಚಕ್ರಗಳು ಆಫ್.",
     "placeholders": {
       "REQUIREMENT": {
         "content": "$1",
@@ -98,55 +98,55 @@
     }
   },
   "shared_forced_cycles_label": {
-    "message": "ಸೆಷನ್ ನುಡಿಬುಕ್ಕದ ಮೂಲಕ ಒತ್ತಿ ಹೇಳಿದ ಚಕ್ರ"
+    "message": "'ನಿಲ್ಲಿಸುವವರೆಗೆ' ಯಿಂದ ಕಡ್ಡಾಯಗೊಳಿಸಲಾದ ಚಕ್ರಗಳು"
   },
   "shared_mode_blacklist": {
-    "message": "ಆಯ್ದ ಸೈಟ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ"
+    "message": "ಆಯ್ಕೆಮಾಡಿದ ಸೈಟ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ"
   },
   "shared_mode_whitelist": {
-    "message": "ಆಯ್ದ ಸೈಟ್‌ಗಳನ್ನು ಮಾತ್ರ ಅನುಮತಿ ಮಾಡಿ"
+    "message": "ಆಯ್ಕೆಮಾಡಿದ ಸೈಟ್‌ಗಳಿಗೆ ಮಾತ್ರ ಅನುಮತಿಸಿ"
   },
   "shared_focus_time_label": {
     "message": "ಫೋಕಸ್ ಸಮಯ"
   },
   "shared_clock_focus_phase": {
-    "message": "ಫೋಕಸ್ ಫೇಜ್"
+    "message": "ಫೋಕಸ್ ಹಂತ"
   },
   "shared_clock_total_session": {
     "message": "ಒಟ್ಟು ಸೆಷನ್"
   },
   "shared_clock_pause": {
-    "message": "ವಿರಾಮ"
+    "message": "ಪಾಸ್"
   },
   "shared_clock_break": {
-    "message": "ವಿರತಿ"
+    "message": "ಬ್ರೇಕ್"
   },
   "shared_badge_indefinite": {
-    "message": "ಆನ್"
+    "message": "ON"
   },
   "shared_popup_starting": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್ ಆರಂಭವಾಗುತ್ತಿದೆ. ನಿಮ್ಮ ಆಯ್ದ ನಿಯಮಗಳನ್ನು ಅನ್ವಯ ಮಾಡುತ್ತಿದೆ."
+    "message": "Focus Lock ಪ್ರಾರಂಭವಾಗುತ್ತಿದೆ. ನಿನ್ನ ಆಯ್ಕೆಮಾಡಿದ ನಿಯಮಗಳನ್ನು ಅನ್ವಯಿಸುತ್ತಿದೆ."
   },
   "shared_popup_closure_cleanup": {
-    "message": "ಸೆಷನ್ ಪೂರ್ಣವಾಯಿತು. ಸ್ವಚ್ಛತೆ ಮುಗ್ಗರಣೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲಾಗುತ್ತಿದೆ."
+    "message": "ಸೆಷನ್ ಕೊನೆಗೊಂಡಿತು. ಬ್ರೌಸರ್ ಕ್ಲೀನಪ್ ಪೂರ್ಣಗೊಳಿಸುತ್ತಿದೆ."
   },
   "shared_popup_transition_cleanup": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್ ಆರಂಭ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಸ್ವಚ್ಛತೆ ಮುಗ್ಗರಣೆ ಪೂರ್ಣಗೊಳಿಸಲಾಗುತ್ತಿದೆ."
+    "message": "Focus Lock ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಬ್ರೌಸರ್ ಕ್ಲೀನಪ್ ಪೂರ್ಣಗೊಳಿಸುತ್ತಿದೆ."
   },
   "shared_popup_transition_error": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್ ಅಪೂರ್ಣ ಆರಂಭವನ್ನು ಸ್ವಚ್ಛ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+    "message": "Focus Lock ಅಪೂರ್ಣ ಪ್ರಾರಂಭವನ್ನು ಕ್ಲೀನಪ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
   },
   "shared_popup_closure_error": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್ ಸ್ವಚ್ಛತೆ ಮುಗ್ಗರಣೆ ಪೂರ್ಣ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+    "message": "Focus Lock ಬ್ರೌಸರ್ ಕ್ಲೀನಪ್ ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
   },
   "shared_retry_cleanup": {
-    "message": "ಸ್ವಚ್ಛತೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+    "message": "ಕ್ಲೀನಪ್ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
   },
   "shared_end_failed": {
-    "message": "ಸೆಷನ್ ಅನ್ನು ಮುಂದುವರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+    "message": "ಸೆಷನ್ ಕೊನೆಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "shared_retry_failed": {
-    "message": "ಸ್ವಚ್ಛತೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+    "message": "ಕ್ಲೀನಪ್ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "shared_action_failed": {
     "message": "ಆ ಕ್ರಿಯೆಯನ್ನು ವಿನಂತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
@@ -155,37 +155,37 @@
     "message": "ಕೆಲಸಕ್ಕೆ ಹಿಂತಿರುಗಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "shared_data_clear_pending": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್ ಡೇಟಾ ಅಳಿಸಲಾಗುತ್ತಿದೆ. ಸ್ವಚ್ಛತೆ ಪೂರ್ಣವಾಗುತ್ತಿದೆ."
+    "message": "Focus Lock ಡೇಟಾ ಅಳಿಸುತ್ತಿದೆ. ಕ್ಲೀನಪ್ ಪೂರ್ಣಗೊಳಿಸುತ್ತಿದೆ."
   },
   "shared_data_clear_error": {
     "message": "ಡೇಟಾ ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "shared_schedule_window_label": {
-    "message": "ಕಿಟಕಿ ಪೂರ್ಣವಾಗುವವರೆಗೆ"
+    "message": "ಸಮಯಾವಧಿ ಮುಗಿಯುವವರೆಗೆ"
   },
   "shared_schedule_until_stopped": {
-    "message": "ಅನುಸೂಚಿಯಲ್ಲಿ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ ಮತ್ತು ನೀವು ಅದನ್ನು ನಿಲ್ಲಿಸುವವರೆಗೆ ಚಲಿಸುತ್ತದೆ: ಹೊಂದಿಕೊಳ್ಳುವಕ್ಕೆ ಸೆಷನ್ ಮುಂದುವರಿಸಿ, ಘರ್ಷಣೆಗೆ ವಿಚಾರಣೆ ಗೇಟ್ ಮೂಲಕ ಅನ್‍ಲಾಕ್ ಮಾಡಿ. ಚಕ್ರ ಆಫ್."
+    "message": "ಶೆಡ್ಯೂಲ್‌ನಲ್ಲಿ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ ಮತ್ತು ನೀನು ನಿಲ್ಲಿಸುವವರೆಗೆ ಚಾಲನೆಯಲ್ಲಿರುತ್ತದೆ: ಫ್ಲೆಕ್ಸಿಬಲ್‌ಗೆ ಸೆಷನ್ ಕೊನೆಗೊಳಿಸಿ, ಘರ್ಷಣೆಗೆ ವಿಚಾರಣಾ ಗೇಟ್ ಮೂಲಕ ಅನ್‌ಲಾಕ್ ಮಾಡಿ. ಚಕ್ರಗಳು ಆಫ್."
   },
   "shared_schedule_started_title": {
-    "message": "ಫೋಕಸ್ ಅನುಸೂಚಿ ಪ್ರಾರಂಭವಾಯಿತು"
+    "message": "ಫೋಕಸ್ ಶೆಡ್ಯೂಲ್ ಪ್ರಾರಂಭವಾಯಿತು"
   },
   "shared_schedule_until_stopped_body": {
-    "message": "ನೀವು ಅದನ್ನು ನಿಲ್ಲಿಸುವವರೆಗೆ ಸಕ್ರಿಯ."
+    "message": "ನೀನು ನಿಲ್ಲಿಸುವವರೆಗೆ ಸಕ್ರಿಯ."
   },
   "shared_settings_indefinite": {
-    "message": "ಸೆಷನ್ ನುಡಿಬುಕ್ಕ ಸಕ್ರಿಯವಾಗಿದೆ. ಟೂಲ್‌ಬಾರ್ ಪಾಪ್‌ಅಪ್ ಬಳಸಿ ನೋಡಲು ಅಥವಾ ಸಾಕ್ಷ್ಯವೇಕರಣ ಸಮಾಪ್ತ ಮಾಡಲು."
+    "message": "'ನಿಲ್ಲಿಸುವವರೆಗೆ' ಸೆಷನ್ ಸಕ್ರಿಯವಾಗಿದೆ. ಅದನ್ನು ವೀಕ್ಷಿಸಲು ಅಥವಾ ಕೊನೆಗೊಳಿಸಲು ಟೂಲ್‌ಬಾರ್ ಪಾಪ್‌ಅಪ್ ಬಳಸಿ."
   },
   "shared_settings_starting": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್ ಆರಂಭವಾಗುತ್ತಿದೆ. ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಪರಿಶೀಲನೆ ಮತ್ತು ನಿಮ್ಮ ನಿಯಮಗಳನ್ನು ಅನ್ವಯ ಮಾಡಲಾಗುತ್ತಿದೆ."
+    "message": "Focus Lock ಪ್ರಾರಂಭವಾಗುತ್ತಿದೆ. ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಪರಿಶೀಲಿಸುತ್ತಿದೆ ಮತ್ತು ನಿನ್ನ ನಿಯಮಗಳನ್ನು ಅನ್ವಯಿಸುತ್ತಿದೆ."
   },
   "shared_settings_error": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್ ಸ್ವಚ್ಛತೆ ಪೂರ್ಣವಾಗಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪಾಪ್‌ಅಪ್ ತೆರೆಯಿರಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+    "message": "Focus Lock ಬ್ರೌಸರ್ ಕ್ಲೀನಪ್ ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪಾಪ್‌ಅಪ್ ತೆರೆದು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "shared_settings_session_disclosure": {
-    "message": "ಟೂಲ್‌ಬಾರ್ ಪಾಪ್‌ಅಪ್ ಸೆಷನ್ ನಿಯಂತ್ರಣದ ಒಡೆತನೆ. ಸಕ್ರಿಯ ಸೆಷನ್ ಸಂಪೂರ್ಣವಾದ ಪ್ರಚ್ಛನ್ನ ನಿಯಮವನ್ನು ಸಾಕ್ಷ್ಯವೇಕರಿಸುತ್ತದೆ."
+    "message": "ಟೂಲ್‌ಬಾರ್ ಪಾಪ್‌ಅಪ್ ಸೆಷನ್ ನಿಯಂತ್ರಣಗಳನ್ನು ಹೊಂದಿದೆ. ಸಕ್ರಿಯ ಸೆಷನ್ ಅದು ಪ್ರಾರಂಭವಾದಾಗ ಸೆರೆಹಿಡಿದ ನಿಯಮಗಳನ್ನು ಉಳಿಸಿಕೊಳ್ಳುತ್ತದೆ."
   },
   "shared_settings_timed": {
-    "message": "ನಿಶ್ಚಿತ ಸೆಷನ್ $TIME$ ವರೆಗೆ ಸಕ್ರಿಯವಾಗಿದೆ. ಇದು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪೂರ್ಣವಾಗುತ್ತದೆ. ಲೈವ್ ಸ್ಥಿತಿಗಾಗಿ ಟೂಲ್‌ಬಾರ್ ಪಾಪ್‌ಅಪ್ ಬಳಸಿ.",
+    "message": "$TIME$ ವರೆಗೆ ಟೈಮ್ಡ್ ಸೆಷನ್ ಸಕ್ರಿಯ. ಅದು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ. ಲೈವ್ ಸ್ಥಿತಿಗಾಗಿ ಟೂಲ್‌ಬಾರ್ ಪಾಪ್‌ಅಪ್ ಬಳಸಿ.",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -197,25 +197,25 @@
     "message": "ಪೂರ್ಣಗೊಂಡಿದೆ"
   },
   "shared_outcome_manual_completed": {
-    "message": "ಹಸ್ತದಿಂದ ಪೂರ್ಣಗೊಂಡಿದೆ"
+    "message": "ಮ್ಯಾನುವಲ್ ಆಗಿ ಪೂರ್ಣಗೊಂಡಿದೆ"
   },
   "shared_outcome_manual_canceled": {
-    "message": "ಮೊದಲೇ ಕೊನೆಗೊಂಡಿದೆ"
+    "message": "ಬೇಗ ಕೊನೆಗೊಂಡಿತು"
   },
   "shared_outcome_website_access_lost": {
-    "message": "ಪೂರ್ಣ: ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನಷ್ಟವಾಯಿತು"
+    "message": "ಕೊನೆಗೊಂಡಿತು: ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಕಳೆದುಹೋಯಿತು"
   },
   "shared_outcome_content_registration_failed": {
-    "message": "ಪೂರ್ಣ: ಸಾಕ್ಷ್ಯವೇಕರಣ ಸೆಟಅಪ್ ವಿಫಲವಾಗಿದೆ"
+    "message": "ಕೊನೆಗೊಂಡಿತು: ಬ್ಲಾಕಿಂಗ್ ಸೆಟಪ್ ವಿಫಲವಾಯಿತು"
   },
   "shared_outcome_alarm_failed": {
-    "message": "ಪೂರ್ಣ: ಸಿದ್ಧ ಹೊಂದಾಣಿಕೆ ವಿಫಲವಾಗಿದೆ"
+    "message": "ಕೊನೆಗೊಂಡಿತು: ಟೈಮರ್ ಸೆಟಪ್ ವಿಫಲವಾಯಿತು"
   },
   "shared_outcome_tab_enforcement_failed": {
-    "message": "ಪೂರ್ಣ: ಪುಟ ಅನ್ವಯ ವಿಫಲವಾಗಿದೆ"
+    "message": "ಕೊನೆಗೊಂಡಿತು: ಪೇಜ್ ಜಾರಿ ವಿಫಲವಾಯಿತು"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "ಕೊನೆಗೊಂಡಿದೆ: ಮರುಸ್ಥಾಪನೆ ವೈಫಲ್ಯ"
+    "message": "ಕೊನೆಗೊಂಡಿತು: ಮರುಪಡೆಯುವಿಕೆ ವಿಫಲವಾಯಿತು"
   },
   "shared_duration_hours_minutes": {
     "message": "$HOURS$ ಗಂ $MINUTES$ ನಿ",
@@ -240,7 +240,7 @@
     }
   },
   "shared_minutes_one": {
-    "message": "$COUNT$ mರಲ್ಲಿ",
+    "message": "$COUNT$ ನಿ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -249,7 +249,7 @@
     }
   },
   "shared_minutes_other": {
-    "message": "$COUNT$ mರಲ್ಲಿ",
+    "message": "$COUNT$ ನಿ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -258,13 +258,13 @@
     }
   },
   "shared_updating_session": {
-    "message": "ಸೆಷನ್ ನವೀಕರಣ"
+    "message": "ಸೆಷನ್ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತಿದೆ"
   },
   "shared_less_than_a_minute": {
     "message": "ಒಂದು ನಿಮಿಷಕ್ಕಿಂತ ಕಡಿಮೆ"
   },
   "shared_focus_remaining_break": {
-    "message": "$DURATION$ ನಿಮ್ಮ ವಿರತಿ ಹೊರೆ",
+    "message": "ನಿನ್ನ ಬ್ರೇಕ್ ವರೆಗೆ $DURATION$",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -282,19 +282,19 @@
     }
   },
   "shared_cost_exceeds_limit": {
-    "message": "ವೆಚ್ಚವು ಕ್ರೆಡಿಟ್ ಮಿತಿಯನ್ನು ಮೀರುತ್ತದೆ"
+    "message": "ವೆಚ್ಚ ಕ್ರೆಡಿಟ್ ಮಿತಿಯನ್ನು ಮೀರುತ್ತದೆ"
   },
   "shared_credit_resumes_focus": {
-    "message": "ಫೋಕಸ್ ಸಮಯದಲ್ಲಿ ಕ್ರೆಡಿಟ್ ಗಳಿಸುವಿಕೆ ಪುನರಾರಂಭವಾಗುತ್ತದೆ"
+    "message": "ಫೋಕಸ್ ಸಮಯದಲ್ಲಿ ಕ್ರೆಡಿಟ್ ಗಳಿಕೆ ಮತ್ತೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ"
   },
   "shared_credit_off": {
-    "message": "ಕ್ರೆಡಿಟ್ ಗಳಿಸುವಿಕೆ ಆಫ್ ಆಗಿದೆ"
+    "message": "ಕ್ರೆಡಿಟ್ ಗಳಿಕೆ ಆಫ್ ಆಗಿದೆ"
   },
   "shared_not_enough_time": {
-    "message": "ಈ ಫೋಕಸ್ ಬ್ಲಾಕ್‌ನಲ್ಲಿ ಸಾಕಷ್ಟು ಸಮಯ ಇಲ್ಲ"
+    "message": "ಈ ಫೋಕಸ್ ಬ್ಲಾಕ್‌ನಲ್ಲಿ ಸಾಕಷ್ಟು ಸಮಯವಿಲ್ಲ"
   },
   "shared_ready_in": {
-    "message": "$CLOCK$ ರಲ್ಲಿ ಸಿದ್ಧವಾಗಿದೆ",
+    "message": "$CLOCK$ ನಲ್ಲಿ ಸಿದ್ಧ",
     "placeholders": {
       "CLOCK": {
         "content": "$1",
@@ -316,7 +316,7 @@
     }
   },
   "shared_verdict_blocked_category": {
-    "message": "$CATEGORY$ ಮೂಲಕ ಬ್ಲಾಕ್ ಮಾಡಲಾಗಿದೆ",
+    "message": "$CATEGORY$ ಯಿಂದ ಬ್ಲಾಕ್ ಆಗಿದೆ",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -325,73 +325,73 @@
     }
   },
   "shared_verdict_blocked_custom": {
-    "message": "ನಿಮ್ಮ ಬ್ಲಾಕ್ ಪಟ್ಟಿಯಿಂದ ಬ್ಲಾಕ್ ಮಾಡಲಾಗಿದೆ"
+    "message": "ನಿನ್ನ ಬ್ಲಾಕ್ ಲಿಸ್ಟ್‌ನಿಂದ ಬ್ಲಾಕ್ ಆಗಿದೆ"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "ನಿಮ್ಮ ಅನುಮತಿ ಪಟ್ಟಿಯಲ್ಲಿಲ್ಲ"
+    "message": "ನಿನ್ನ ಅಲೋ ಲಿಸ್ಟ್‌ನಲ್ಲಿಲ್ಲ"
   },
   "shared_verdict_blocked_session": {
-    "message": "ಈ ಸೆಷನ್ ಮೂಲಕ ಬ್ಲಾಕ್ ಮಾಡಲಾಗಿದೆ"
+    "message": "ಈ ಸೆಷನ್‌ನಿಂದ ಬ್ಲಾಕ್ ಆಗಿದೆ"
   },
   "shared_verdict_allow_list": {
-    "message": "ನಿಮ್ಮ ಅನುಮತಿ ಪಟ್ಟಿಯಲ್ಲಿ"
+    "message": "ನಿನ್ನ ಅಲೋ ಲಿಸ್ಟ್‌ನಲ್ಲಿದೆ"
   },
   "shared_verdict_always_allowed": {
     "message": "ಯಾವಾಗಲೂ ಅನುಮತಿ"
   },
   "shared_verdict_unlock": {
-    "message": "ತಾತ್ಕಾಲಿಕವಾಗಿ ಅನ್‍ಲಾಕ್ ಮಾಡಲಾಗಿದೆ"
+    "message": "ತಾತ್ಕಾಲಿಕವಾಗಿ ಅನ್‌ಲಾಕ್ ಆಗಿದೆ"
   },
   "shared_verdict_excluded": {
-    "message": "ಆಯ್ದ ವಿಭಾಗದಿಂದ ಬಿಟ್ಟುಹೋಗಿದೆ"
+    "message": "ಆಯ್ಕೆಮಾಡಿದ ವಿಭಾಗದಿಂದ ಹೊರಗಿಡಲಾಗಿದೆ"
   },
   "shared_verdict_no_session": {
-    "message": "ಸಕ್ರಿಯ ಫೋಕಸ್ ಸೆಷನ್ ಇಲ್ಲ"
+    "message": "ಯಾವುದೇ ಸಕ್ರಿಯ ಫೋಕಸ್ ಸೆಷನ್ ಇಲ್ಲ"
   },
   "shared_verdict_allowed_session": {
-    "message": "ಈ ಸೆಷನ್ ಮೂಲಕ ಅನುಮತಿಸಲಾಗಿದೆ"
+    "message": "ಈ ಸೆಷನ್‌ನಿಂದ ಅನುಮತಿಸಲಾಗಿದೆ"
   },
   "shared_category_social": {
     "message": "ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ"
   },
   "shared_category_video": {
-    "message": "ವೀಡಿಯೋ ಮತ್ತು ಸ್ಟ್ರೀಮಿಂಗ್"
+    "message": "ವಿಡಿಯೋ ಮತ್ತು ಸ್ಟ್ರೀಮಿಂಗ್"
   },
   "shared_category_news": {
     "message": "ಸುದ್ದಿ"
   },
   "shared_category_mail": {
-    "message": "ಪತ್ರ"
+    "message": "ಮೇಲ್"
   },
   "shared_category_shopping": {
     "message": "ಶಾಪಿಂಗ್"
   },
   "shared_category_gaming": {
-    "message": "ಆಟ"
+    "message": "ಗೇಮಿಂಗ್"
   },
   "shared_category_forums": {
-    "message": "ವೇದಿಕೆ ಮತ್ತು ನೀರಸತೆ"
+    "message": "ಫೋರಂಗಳು ಮತ್ತು ಬೇಸರ"
   },
   "shared_synced_settings": {
     "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
   "shared_synced_lists": {
-    "message": "ಬ್ಲಾಕ್ ಮತ್ತು ಅನುಮತಿ ಪಟ್ಟಿ"
+    "message": "ಬ್ಲಾಕ್ ಮತ್ತು ಅಲೋ ಲಿಸ್ಟ್‌ಗಳು"
   },
   "shared_synced_credit": {
     "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್"
   },
   "shared_synced_streaks": {
-    "message": "ಧಾರೆs"
+    "message": "ಸ್ಟ್ರೀಕ್‌ಗಳು"
   },
   "shared_synced_aggregates": {
-    "message": "ಡೊಮೇನ್-ಸ್ತರ ಬ್ಲಾಕ್ಡ-ಪ್ರಯತ್ನ ಒಟ್ಟುಗೆ"
+    "message": "ಡೊಮೇನ್-ಮಟ್ಟದ ಬ್ಲಾಕ್-ಪ್ರಯತ್ನ ಒಟ್ಟು ಅಂಕಿಅಂಶಗಳು"
   },
   "shared_local_full_urls": {
-    "message": "ಸಂಪೂರ್ಣ URL"
+    "message": "ಪೂರ್ಣ URL"
   },
   "shared_local_intentions": {
-    "message": "ಫೋಕಸ್ ಉದ್ದೇಶs"
+    "message": "ಫೋಕಸ್ ಉದ್ದೇಶಗಳು"
   },
   "shared_local_events": {
     "message": "ವಿವರವಾದ ಸೆಷನ್ ಘಟನೆಗಳು"
@@ -400,13 +400,13 @@
     "message": "ಸಕ್ರಿಯ ರನ್‌ಟೈಮ್ ಸೆಷನ್"
   },
   "shared_legacy_policy_dropped": {
-    "message": "ಹಳೆಯ ಆವೃತ್ತಿಯ ಕೆಲವು ಸಿಂಕ್ರೋನೈಜ್ ಡೇಟಾ ಓದಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ ಮತ್ತು ಮರುಹೊಂದಿಸಲಾಯಿತು."
+    "message": "ಹಳೆಯ ಆವೃತ್ತಿಯ ಕೆಲವು ಸಿಂಕ್ ಮಾಡಿದ ಡೇಟಾವನ್ನು ಓದಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ ಮತ್ತು ಮರುಹೊಂದಿಸಲಾಗಿದೆ."
   },
   "shared_all_data_clear_running": {
-    "message": "ಎಲ್ಲಾ ಡೇಟಾ ಅಳಿಸುವುದಕ್ಕೆ ಮೊದಲು ಚಲಿಸುವ ಸೆಷನ್ ಅನ್ನು ಮುಂದುವರಿಸಿ."
+    "message": "ಎಲ್ಲಾ ಡೇಟಾ ಅಳಿಸುವ ಮೊದಲು ಚಾಲನೆಯಲ್ಲಿರುವ ಸೆಷನ್ ಕೊನೆಗೊಳಿಸಿ."
   },
   "shared_nav_brand": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್"
+    "message": "Focus Lock"
   },
   "shared_nav_product": {
     "message": "ಉತ್ಪನ್ನ ನ್ಯಾವಿಗೇಶನ್"
@@ -418,34 +418,34 @@
     "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
   "shared_section_blocking": {
-    "message": "ನಿರ್ಬಂಧ"
+    "message": "ಬ್ಲಾಕಿಂಗ್"
   },
   "shared_section_schedule": {
-    "message": "ವೇಳಾಸೂಚಿ"
+    "message": "ಶೆಡ್ಯೂಲ್"
   },
   "shared_section_behavior": {
-    "message": "ಸೆಷನ್ ನಡವಳಿಕೆ"
+    "message": "ಸೆಷನ್ ವರ್ತನೆ"
   },
   "shared_section_budget": {
     "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್"
   },
   "shared_section_notifications": {
-    "message": "ಸೂಚನೆಗಳು"
+    "message": "ಅಧಿಸೂಚನೆಗಳು"
   },
   "shared_section_privacy": {
     "message": "ಗೌಪ್ಯತೆ ಮತ್ತು ಡೇಟಾ"
   },
   "shared_theme_auto": {
-    "message": "[MISSING TRANSLATION: Auto]"
+    "message": "ಸ್ವಯಂ"
   },
   "shared_theme_light": {
-    "message": "ಬೆಳಕು"
+    "message": "ಲೈಟ್"
   },
   "shared_theme_dark": {
-    "message": "ಕರುಣೆ"
+    "message": "ಡಾರ್ಕ್"
   },
   "shared_theme_button": {
-    "message": "ಶೈಲಿ: $CURRENT$. $NEXT$ ಗೆ ಬದಲಿಸಿ",
+    "message": "ಥೀಮ್: $CURRENT$. $NEXT$ ಗೆ ಬದಲಾಯಿಸಿ",
     "placeholders": {
       "CURRENT": {
         "content": "$1",
@@ -458,7 +458,7 @@
     }
   },
   "shared_theme_error": {
-    "message": "ಶೈಲಿ ಸಂರಕ್ಷಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+    "message": "ಥೀಮ್ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪೇಜ್ ಮರುಲೋಡ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "shared_host_search_label": {
     "message": "$TITLE$ ಸೈಟ್‌ಗಳನ್ನು ಹುಡುಕಿ",
@@ -470,7 +470,7 @@
     }
   },
   "shared_host_none": {
-    "message": "ಯಾವುದೇ $TITLE$ ಸೈಟ್ ನಿಮ್ಮ ಹುಡುಕಾಟಗೆ ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ.",
+    "message": "ನಿನ್ನ ಹುಡುಕಾಟಕ್ಕೆ ಯಾವುದೇ $TITLE$ ಸೈಟ್ ಹೊಂದಾಣಿಕೆಯಾಗುವುದಿಲ್ಲ.",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -479,7 +479,7 @@
     }
   },
   "shared_host_partial": {
-    "message": "$SHOWN$ ಬಿಂದು $MATCHED$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸುತ್ತಿದೆ. ಪಟ್ಟಿಯನ್ನು ಕಿರಿದುಗೊಳಿಸಲು ಹುಡುಕಿ.",
+    "message": "$MATCHED$ ರಲ್ಲಿ $SHOWN$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸುತ್ತಿದೆ. ಲಿಸ್ಟ್ ಅನ್ನು ಕಿರಿದಾಗಿಸಲು ಹುಡುಕಿ.",
     "placeholders": {
       "SHOWN": {
         "content": "$1",
@@ -492,7 +492,7 @@
     }
   },
   "shared_host_matched": {
-    "message": "$MATCHED$ ಬಿಂದು $TOTAL$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸುತ್ತಿದೆ.",
+    "message": "$TOTAL$ ರಲ್ಲಿ $MATCHED$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸುತ್ತಿದೆ.",
     "placeholders": {
       "MATCHED": {
         "content": "$1",
@@ -505,7 +505,7 @@
     }
   },
   "shared_host_all": {
-    "message": "$TOTAL$ ಸೈಟ್‌ಗಳನ್ನೆಲ್ಲ ತೋರಿಸುತ್ತಿದೆ.",
+    "message": "ಎಲ್ಲಾ $TOTAL$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸುತ್ತಿದೆ.",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -514,40 +514,40 @@
     }
   },
   "shared_end_the_session": {
-    "message": "ಸೆಷನ್ ಅನ್ನು ಮುಂದುವರಿಸಿ"
+    "message": "ಸೆಷನ್ ಕೊನೆಗೊಳಿಸಿ"
   },
   "shared_overlay_starting_title": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್ ಆರಂಭವಾಗುತ್ತಿದೆ"
+    "message": "Focus Lock ಪ್ರಾರಂಭವಾಗುತ್ತಿದೆ"
   },
   "shared_overlay_starting_detail": {
-    "message": "ನಿಮ್ಮ ಆಯ್ದ ನಿಯಮಗಳನ್ನು ಅನ್ವಯ ಮಾಡುತ್ತಿದೆ."
+    "message": "ನಿನ್ನ ಆಯ್ಕೆಮಾಡಿದ ನಿಯಮಗಳನ್ನು ಅನ್ವಯಿಸುತ್ತಿದೆ."
   },
   "shared_overlay_stopped_page": {
-    "message": "ಈ ಪುಟವು ಲೋಡ್ ಆಗಲಿಲ್ಲ. ಸೆಷನ್ ಪೂರ್ಣವಾದಾಗ ಇದು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಲೋಡ್ ಆಗುತ್ತದೆ."
+    "message": "ಈ ಪೇಜ್ ಲೋಡ್ ಆಗಲಿಲ್ಲ. ಸೆಷನ್ ಕೊನೆಗೊಂಡಾಗ ಅದು ತಾನಾಗಿಯೇ ಲೋಡ್ ಆಗುತ್ತದೆ."
   },
   "shared_overlay_next_step": {
-    "message": "ನಿಮ್ಮ ಮುಂದಿನ ಹಂತ"
+    "message": "ನಿನ್ನ ಮುಂದಿನ ಹೆಜ್ಜೆ"
   },
   "shared_overlay_back_to_work": {
     "message": "ಕೆಲಸಕ್ಕೆ ಹಿಂತಿರುಗಿ"
   },
   "shared_overlay_choose_work_tab": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಆರಿಸಿ"
+    "message": "ಒಂದು ವರ್ಕ್ ಟ್ಯಾಬ್ ಆಯ್ಕೆಮಾಡಿ"
   },
   "shared_overlay_change_work_tab": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಬದಲಿಸಿ"
+    "message": "ವರ್ಕ್ ಟ್ಯಾಬ್ ಬದಲಾಯಿಸಿ"
   },
   "shared_overlay_access_summary": {
-    "message": "ವಿರತಿ ಅಥವಾ ಸೈಟ್ ಪ್ರವೇಶ ಅಗತ್ಯವೇ?"
+    "message": "ಬ್ರೇಕ್ ಅಥವಾ ಸೈಟ್ ಪ್ರವೇಶ ಬೇಕೇ?"
   },
   "shared_overlay_access_note": {
-    "message": "ನೀವು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ದೂರ ಹೋಗಬಹುದು. ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ ಬಳಸುತ್ತದೆ."
+    "message": "ನೀನು ಯಾವಾಗ ಬೇಕಾದರೂ ದೂರ ಹೋಗಬಹುದು. ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ ಬಳಸುತ್ತದೆ."
   },
   "shared_overlay_gate_force_end": {
-    "message": "ವಿಜಯ ಅವಧಿ ಹೋಲಿಸಿ ಮತ್ತೇ ಪೂರ್ಣ ಮಾಡಿ"
+    "message": "ಟೈಮ್‌ಔಟ್ ಅನ್ನು ನಿರ್ಲಕ್ಷಿಸಿ ಮತ್ತು ಎಂತಾದರೂ ಕೊನೆಗೊಳಿಸಿ"
   },
   "shared_overlay_transport_error": {
-    "message": "ಫೋಕಸ್ ಲಾಕ್ ಈ ಕ್ರಿಯೆ ನವೀಕರಣ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+    "message": "Focus Lock ಈ ಕ್ರಿಯೆ ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "shared_overlay_bank_amount": {
     "message": "$AMOUNT$ ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್",
@@ -559,16 +559,16 @@
     }
   },
   "shared_overlay_next_step_fallback": {
-    "message": "ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಕೆಲಸ ಮುಂದುವರಿಸಿ"
+    "message": "ನಿನ್ನ ಪ್ರಸ್ತುತ ಕೆಲಸ ಮುಂದುವರಿಸಿ"
   },
   "shared_overlay_pause_action": {
-    "message": "ಎಲ್ಲಾ ಸೈಟ್‌ಗಳನ್ನು ಅನ್‍ಲಾಕ್ ಮಾಡಿ"
+    "message": "ಎಲ್ಲಾ ಸೈಟ್‌ಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ"
   },
   "shared_overlay_unlock_site_action": {
-    "message": "ಈ ಸೈಟ್ ಅನ್‍ಲಾಕ್ ಮಾಡಿ"
+    "message": "ಈ ಸೈಟ್ ಅನ್‌ಲಾಕ್ ಮಾಡಿ"
   },
   "shared_overlay_spend_action": {
-    "message": "$LABEL$ $LENGTH$ - ವೆಚ್ಚ $COST$ ಕ್ರೆಡಿಟ್",
+    "message": "$LABEL$ $LENGTH$ - $COST$ ಕ್ರೆಡಿಟ್ ವೆಚ್ಚ",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -594,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "ನೀವು ಹೇಳಿದ್ದು: $INTENTION$",
+    "message": "ನೀನು ಹೇಳಿದೆ: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -603,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "ಅನ್‌ಲಾಕ್ $HOST$ $CLOCK$",
+    "message": "$HOST$ ಅನ್‌ಲಾಕ್ ಮಾಡಿ $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -616,13 +616,13 @@
     }
   },
   "shared_gate_back": {
-    "message": "ಫೋಕಸ್ ಆರಿಸುವುದನ್ನು ಮುಂದುವರಿಸಿ"
+    "message": "ಫೋಕಸ್ ಮುಂದುವರಿಸಿ"
   },
   "shared_gate_phrase_label": {
-    "message": "ಮೂಲಾಂಶವನ್ನು ದೃಢಪಡಿಸಲು ಇದನ್ನು ಬರೆಯಿರಿ:"
+    "message": "ಖಚಿತಪಡಿಸಲು ಇದನ್ನು ಟೈಪ್ ಮಾಡಿ:"
   },
   "shared_gate_end_title": {
-    "message": "ಈ ಸೆಷನ್ ಅನ್ನು ಮುಂದುವರಿಸಿ"
+    "message": "ಈ ಸೆಷನ್ ಕೊನೆಗೊಳಿಸಿ"
   },
   "shared_work_choose_tab_error": {
     "message": "ಲಭ್ಯವಿರುವ ಕೆಲಸದ ಟ್ಯಾಬ್ ಆರಿಸಿ."

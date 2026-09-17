@@ -1,60 +1,60 @@
 {
   "stats_document_title": {
-    "message": "ಫೋಕಸ್ Lock stats"
+    "message": "Focus Lock ಅಂಕಿಅಂಶಗಳು"
   },
   "stats_page_title": {
-    "message": "Your ಫೋಕಸ್ record"
+    "message": "ನಿನ್ನ ಫೋಕಸ್ ದಾಖಲೆ"
   },
   "stats_loading": {
-    "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ your stats."
+    "message": "ನಿನ್ನ ಅಂಕಿಅಂಶಗಳು ಲೋಡ್ ಆಗುತ್ತಿವೆ."
   },
   "stats_load_error": {
-    "message": "Could not load stನಲ್ಲಿs. Reload ಕಿ try agaರಲ್ಲಿ."
+    "message": "ಅಂಕಿಅಂಶಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಮರುಲೋಡ್ ಮಾಡಿ."
   },
   "stats_partial_error_both": {
-    "message": "Hourly attempts and site access credit ಸೆಟ್ಟಿಂಗ್‌ಗಳು are unavailable."
+    "message": "ಗಂಟೆಗೊಮ್ಮೆಯ ಪ್ರಯತ್ನಗಳು ಮತ್ತು ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ."
   },
   "stats_partial_error_attempts": {
-    "message": "ಗಂಟೆly ನಲ್ಲಿtempts are unavailable."
+    "message": "ಗಂಟೆಗೊಮ್ಮೆಯ ಪ್ರಯತ್ನಗಳು ಲಭ್ಯವಿಲ್ಲ."
   },
   "stats_partial_error_economy": {
-    "message": "Site access credit ಸೆಟ್ಟಿಂಗ್‌ಗಳು are unavailable."
+    "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ."
   },
   "stats_scope_synced": {
-    "message": "ಸಿಂಕ್ರೊನೈಜ್ed ಕಿtals from this Chrome account. Local-ಮೇಲೆly panels are labeled."
+    "message": "ಈ Chrome ಖಾತೆಯಿಂದ ಸಿಂಕ್ ಮಾಡಿದ ಒಟ್ಟು ಮೊತ್ತಗಳು. ಸ್ಥಳೀಯ-ಮಾತ್ರ ಪ್ಯಾನೆಲ್‌ಗಳನ್ನು ಲೇಬಲ್ ಮಾಡಲಾಗಿದೆ."
   },
   "stats_scope_local": {
-    "message": "Totals from this machine. ಫೋಕಸ್ Lock statistics are not synced."
+    "message": "ಈ ಮಶಿನ್‌ನಿಂದ ಒಟ್ಟು ಮೊತ್ತಗಳು. Focus Lock ಅಂಕಿಅಂಶಗಳು ಸಿಂಕ್ ಆಗುವುದಿಲ್ಲ."
   },
   "stats_scope_checking": {
-    "message": "ಪರೀಕ್ಷೆ whether these totals are synced."
+    "message": "ಈ ಒಟ್ಟು ಮೊತ್ತಗಳು ಸಿಂಕ್ ಆಗಿವೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸುತ್ತಿದೆ."
   },
   "stats_scope_unavailable": {
-    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent ಸೆಷ್ಟs are from this machine."
+    "message": "ಅಂಕಿಅಂಶಗಳ ವ್ಯಾಪ್ತಿ ಲಭ್ಯವಿಲ್ಲ. ಒಟ್ಟು ಮೊತ್ತಗಳು ಸಿಂಕ್ ಮಾಡಿದ ಡೇಟಾವನ್ನು ಒಳಗೊಂಡಿರಬಹುದು. ಗಂಟೆಗೊಮ್ಮೆಯ ಪ್ರಯತ್ನಗಳು ಮತ್ತು ಇತ್ತೀಚಿನ ಸೆಷನ್‌ಗಳು ಈ ಮಶಿನ್‌ನಿಂದ."
   },
   "stats_scope_retry": {
-    "message": "ಮರುಪ್ರಯತ್ನ scope check"
+    "message": "ವ್ಯಾಪ್ತಿ ಪರಿಶೀಲನೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
   },
   "stats_empty": {
-    "message": "Stats appear after your first ಸೆಷ್ಟ."
+    "message": "ನಿನ್ನ ಮೊದಲ ಸೆಷನ್ ನಂತರ ಅಂಕಿಅಂಶಗಳು ಕಾಣಿಸುತ್ತವೆ."
   },
   "stats_tile_focus_today": {
-    "message": "ಫೋಕಸ್ today"
+    "message": "ಇಂದಿನ ಫೋಕಸ್"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "ಫೋಕಸ್ in the last 7 days"
+    "message": "ಕಳೆದ 7 ದಿನಗಳ ಫೋಕಸ್"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts ನಿರ್ಬಂಧed today"
+    "message": "ಇಂದು ಬ್ಲಾಕ್ ಮಾಡಿದ ಪ್ರಯತ್ನಗಳು"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gನಲ್ಲಿe requests dismissed ಕಿday"
+    "message": "ಇಂದು ವಜಾಗೊಳಿಸಿದ ಗೇಟ್ ವಿನಂತಿಗಳು"
   },
   "stats_tile_credit_spent_today": {
-    "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ spent ಕಿday"
+    "message": "ಇಂದು ಖರ್ಚಾದ ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "All sites $ALL_SITES$, ಮೇಲೆe site $ONE_SITE$, $EARNED$ earned",
+    "message": "ಎಲ್ಲಾ ಸೈಟ್‌ಗಳು $ALL_SITES$, ಒಂದು ಸೈಟ್ $ONE_SITE$, $EARNED$ ಗಳಿಸಿದೆ",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -71,7 +71,7 @@
     }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ ಸಾಧಿಸಲಾಗಿದೆ",
+    "message": "$EARNED$ ಗಳಿಸಿದೆ",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -80,19 +80,19 @@
     }
   },
   "stats_streak_heading": {
-    "message": "ಧಾರೆ"
+    "message": "ಸ್ಟ್ರೀಕ್"
   },
   "stats_streak_empty": {
-    "message": "Your streak starts with your first ಫೋಕಸ್ day."
+    "message": "ನಿನ್ನ ಸ್ಟ್ರೀಕ್ ನಿನ್ನ ಮೊದಲ ಫೋಕಸ್ ದಿನದಿಂದ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ."
   },
   "stats_streak_unit_one": {
     "message": "ದಿನ"
   },
   "stats_streak_unit_other": {
-    "message": "ದಿನ"
+    "message": "ದಿನಗಳು"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$ freeze ಕಿken banked",
+    "message": "$COUNT$ ಫ್ರೀಜ್ ಟೋಕನ್ ಸಂಗ್ರಹವಾಗಿದೆ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$ freeze ಕಿkens banked",
+    "message": "$COUNT$ ಫ್ರೀಜ್ ಟೋಕನ್‌ಗಳು ಸಂಗ್ರಹವಾಗಿವೆ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "ಧಾರೆ freeze: ಮೇಲೆe missed day, covered"
+    "message": "ಸ್ಟ್ರೀಕ್ ಫ್ರೀಜ್: ಒಂದು ತಪ್ಪಿದ ದಿನ, ಆವರಿಸಲಾಗಿದೆ"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active day this mಮೇಲೆth ($MONTH$)",
+    "message": "ಈ ತಿಂಗಳು $COUNT$ ಸಕ್ರಿಯ ದಿನ ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active days this mಮೇಲೆth ($MONTH$)",
+    "message": "ಈ ತಿಂಗಳು $COUNT$ ಸಕ್ರಿಯ ದಿನಗಳು ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Active dನಲ್ಲಿes ರಲ್ಲಿ $MONTH$: $DAYS$.",
+    "message": "$MONTH$ ನಲ್ಲಿ ಸಕ್ರಿಯ ತಾರೀಖುಗಳು: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -152,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "No active dನಲ್ಲಿes ರಲ್ಲಿ $MONTH$.",
+    "message": "$MONTH$ ನಲ್ಲಿ ಯಾವುದೇ ಸಕ್ರಿಯ ತಾರೀಖು ಇಲ್ಲ.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -161,31 +161,31 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "ಫೋಕಸ್, last 14 days"
+    "message": "ಫೋಕಸ್, ಕಳೆದ 14 ದಿನಗಳು"
   },
   "stats_chart_focus_empty": {
-    "message": "ಫೋಕಸ್ minutes appear after your first ಸೆಷ್ಟ."
+    "message": "ನಿನ್ನ ಮೊದಲ ಸೆಷನ್ ನಂತರ ಫೋಕಸ್ ನಿಮಿಷಗಳು ಕಾಣಿಸುತ್ತವೆ."
   },
   "stats_chart_attempts_heading": {
-    "message": "ನಿರ್ಬಂಧed attempts, last 14 days"
+    "message": "ಬ್ಲಾಕ್ ಮಾಡಿದ ಪ್ರಯತ್ನಗಳು, ಕಳೆದ 14 ದಿನಗಳು"
   },
   "stats_chart_attempts_empty": {
-    "message": "ನಿರ್ಬಂಧed attempts show up here once a ಸೆಷ್ಟ catches one."
+    "message": "ಒಂದು ಸೆಷನ್ ಒಂದನ್ನು ಹಿಡಿದ ನಂತರ ಬ್ಲಾಕ್ ಮಾಡಿದ ಪ್ರಯತ್ನಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ."
   },
   "stats_chart_sites_heading": {
-    "message": "Top ನಿರ್ಬಂಧed sites, last 30 days"
+    "message": "ಟಾಪ್ ಬ್ಲಾಕ್ ಮಾಡಿದ ಸೈಟ್‌ಗಳು, ಕಳೆದ 30 ದಿನಗಳು"
   },
   "stats_chart_sites_empty": {
-    "message": "Nothing ನಿರ್ಬಂಧed yet. That is a fine start."
+    "message": "ಇನ್ನೂ ಏನೂ ಬ್ಲಾಕ್ ಆಗಿಲ್ಲ. ಅದು ಒಳ್ಳೆಯ ಆರಂಭ."
   },
   "stats_chart_hours_heading": {
-    "message": "Attempts ಮೂಲಕ hour, this machರಲ್ಲಿe ಮೇಲೆly"
+    "message": "ಗಂಟೆ ಪ್ರಕಾರ ಪ್ರಯತ್ನಗಳು, ಕೇವಲ ಈ ಮಶಿನ್"
   },
   "stats_chart_other_site": {
     "message": "ಇತರ"
   },
   "stats_chart_minutes_tick": {
-    "message": "$MINUTES$m",
+    "message": "$MINUTES$ನಿ",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -194,7 +194,7 @@
     }
   },
   "stats_blocked_count_one": {
-    "message": "$COUNT$ ನಿರ್ಬಂಧed",
+    "message": "$COUNT$ ಬ್ಲಾಕ್ ಆಗಿದೆ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -203,7 +203,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "$COUNT$ ನಿರ್ಬಂಧed",
+    "message": "$COUNT$ ಬ್ಲಾಕ್ ಆಗಿದೆ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -215,16 +215,16 @@
     "message": "ಬಾರ್ ಚಾರ್ಟ್"
   },
   "stats_chart_name_hbar": {
-    "message": "Hಅಥವಾizಮೇಲೆtal bar chart"
+    "message": "ಅಡ್ಡ ಬಾರ್ ಚಾರ್ಟ್"
   },
   "stats_chart_description_bar": {
-    "message": "Bar chart. Use the keyboard ಕಿ move through dನಲ್ಲಿa poರಲ್ಲಿts, ಅಥವಾ open View as table ಸಾಕಾಂಶ the same values."
+    "message": "ಬಾರ್ ಚಾರ್ಟ್. ಡೇಟಾ ಪಾಯಿಂಟ್‌ಗಳ ಮೂಲಕ ಚಲಿಸಲು ಕೀಬೋರ್ಡ್ ಬಳಸಿ, ಅಥವಾ ಅದೇ ಮೌಲ್ಯಗಳಿಗಾಗಿ 'ಟೇಬಲ್ ಆಗಿ ವೀಕ್ಷಿಸಿ' ತೆರೆಯಿರಿ."
   },
   "stats_chart_description_hbar": {
-    "message": "Hಅಥವಾizಮೇಲೆtal bar chart. Use the keyboard ಕಿ move through dನಲ್ಲಿa poರಲ್ಲಿts, ಅಥವಾ open View as table ಸಾಕಾಂಶ the same values."
+    "message": "ಅಡ್ಡ ಬಾರ್ ಚಾರ್ಟ್. ಡೇಟಾ ಪಾಯಿಂಟ್‌ಗಳ ಮೂಲಕ ಚಲಿಸಲು ಕೀಬೋರ್ಡ್ ಬಳಸಿ, ಅಥವಾ ಅದೇ ಮೌಲ್ಯಗಳಿಗಾಗಿ 'ಟೇಬಲ್ ಆಗಿ ವೀಕ್ಷಿಸಿ' ತೆರೆಯಿರಿ."
   },
   "stats_chart_empty_default": {
-    "message": "No dನಲ್ಲಿa yet."
+    "message": "ಇನ್ನೂ ಯಾವುದೇ ಡೇಟಾ ಇಲ್ಲ."
   },
   "stats_chart_point": {
     "message": "$LABEL$: $VALUE$",
@@ -240,37 +240,37 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "ಟೇಬಿಲ್ ಆಗಿ ವೀಕ್ಷಿಸಿ"
+    "message": "ಟೇಬಲ್ ಆಗಿ ವೀಕ್ಷಿಸಿ"
   },
   "stats_chart_table_category": {
-    "message": "ವರ್ಗ"
+    "message": "ವಿಭಾಗ"
   },
   "stats_chart_table_value": {
     "message": "ಮೌಲ್ಯ"
   },
   "stats_heat_strip_label": {
-    "message": "24-hour ನಿರ್ಬಂಧed-attempt heat strip"
+    "message": "24-ಗಂಟೆಯ ಬ್ಲಾಕ್-ಪ್ರಯತ್ನ ಹೀಟ್ ಸ್ಟ್ರಿಪ್"
   },
   "stats_sessions_heading": {
-    "message": "Recent ಸೆಷ್ಟs on this machine"
+    "message": "ಈ ಮಶಿನ್‌ನಲ್ಲಿ ಇತ್ತೀಚಿನ ಸೆಷನ್‌ಗಳು"
   },
   "stats_sessions_empty": {
-    "message": "Your first ಸೆಷ್ಟ will appear here."
+    "message": "ನಿನ್ನ ಮೊದಲ ಸೆಷನ್ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ."
   },
   "stats_sessions_col_date": {
-    "message": "Dನಲ್ಲಿe"
+    "message": "ತಾರೀಖು"
   },
   "stats_sessions_col_start": {
-    "message": "ಪ್ರಾರಂಭಿಸಿ"
+    "message": "ಪ್ರಾರಂಭ"
   },
   "stats_sessions_col_planned": {
-    "message": "ಯೋಜನೆ"
+    "message": "ಯೋಜಿತ"
   },
   "stats_sessions_col_focused": {
-    "message": "ಫೋಕಸ್ed"
+    "message": "ಫೋಕಸ್ ಮಾಡಿದ"
   },
   "stats_sessions_col_all_sites": {
-    "message": "ಎಲ್ಲಾ sites"
+    "message": "ಎಲ್ಲಾ ಸೈಟ್‌ಗಳು"
   },
   "stats_sessions_col_one_site": {
     "message": "ಒಂದು ಸೈಟ್"
@@ -285,10 +285,10 @@
     "message": "ಮೂಲ"
   },
   "stats_session_no_intention": {
-    "message": "No ರಲ್ಲಿtentiಮೇಲೆ"
+    "message": "ಯಾವುದೇ ಉದ್ದೇಶವಿಲ್ಲ"
   },
   "stats_session_article_label": {
-    "message": "ಸೆಷ್ಟ: $INTENTION$",
+    "message": "ಸೆಷನ್: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -297,21 +297,21 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "ಹಸ್ತ"
+    "message": "ಮ್ಯಾನುವಲ್"
   },
   "stats_session_source_schedule": {
-    "message": "ವೇಳಾಸೂಚಿ"
+    "message": "ಶೆಡ್ಯೂಲ್"
   },
   "stats_session_source_scheduled": {
-    "message": "ನಿರ್ಧಾರಿತ"
+    "message": "ಶೆಡ್ಯೂಲ್ ಮಾಡಿದ"
   },
   "stats_outcome_completed": {
     "message": "ಪೂರ್ಣಗೊಂಡಿದೆ"
   },
   "stats_outcome_ended_early": {
-    "message": "ಮೊದಲೇ ಕೊನೆಗೊಂಡಿದೆ"
+    "message": "ಬೇಗ ಕೊನೆಗೊಂಡಿತು"
   },
   "stats_outcome_running": {
-    "message": "Runnರಲ್ಲಿg"
+    "message": "ಚಾಲನೆಯಲ್ಲಿದೆ"
   }
 }

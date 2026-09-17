@@ -1,42 +1,42 @@
 {
   "stats_document_title": {
-    "message": "Fokus Lock stats"
+    "message": "Statistik Focus Lock"
   },
   "stats_page_title": {
-    "message": "Anda focus record"
+    "message": "Rekod fokus anda"
   },
   "stats_loading": {
-    "message": "Loading anda stats."
+    "message": "Memuatkan statistik anda."
   },
   "stats_load_error": {
-    "message": "Tidak dapat memuat stats. Muat ulang untuk coba lagi."
+    "message": "Gagal memuatkan statistik. Muat semula untuk cuba lagi."
   },
   "stats_partial_error_both": {
-    "message": "Hourly attempts and site akses credit settings are unavailable."
+    "message": "Percubaan mengikut jam dan tetapan kredit akses tapak tidak tersedia."
   },
   "stats_partial_error_attempts": {
-    "message": "Jamly attempts are unavailable."
+    "message": "Percubaan mengikut jam tidak tersedia."
   },
   "stats_partial_error_economy": {
-    "message": "Situs akses kredit pengpadauran are unavailable."
+    "message": "Tetapan kredit akses tapak tidak tersedia."
   },
   "stats_scope_synced": {
-    "message": "Synced ketals from this Chrome account. Local-padaly panels are labeled."
+    "message": "Jumlah yang disegerakkan daripada akaun Chrome ini. Panel setempat sahaja ditandakan."
   },
   "stats_scope_local": {
-    "message": "Totals from this machine. Fokus Lock statistics are not synced."
+    "message": "Jumlah daripada mesin ini. Statistik Focus Lock tidak disegerakkan."
   },
   "stats_scope_checking": {
-    "message": "Checkdalamg whether these ketals are synced."
+    "message": "Menyemak sama ada jumlah ini disegerakkan."
   },
   "stats_scope_unavailable": {
-    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent sesis are from this machine."
+    "message": "Skop statistik tidak tersedia. Jumlah mungkin termasuk data yang disegerakkan. Percubaan mengikut jam dan sesi terkini adalah daripada mesin ini."
   },
   "stats_scope_retry": {
-    "message": "Coba Ulang scope check"
+    "message": "Semak skop sekali lagi"
   },
   "stats_empty": {
-    "message": "Stats appear after anda first sesi."
+    "message": "Statistik muncul selepas sesi pertama anda."
   },
   "stats_tile_focus_today": {
     "message": "Fokus tohari"
@@ -45,16 +45,16 @@
     "message": "Fokus dalam 7 hari terakhir"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts blocked tohari"
+    "message": "Percubaan disekat hari ini"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gate requests dismissed tohari"
+    "message": "Permintaan pintu ditolak hari ini"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site akses credit spent today"
+    "message": "Kredit akses tapak dibelanjakan hari ini"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "All situss $ALL_SITES$, padae situs $ONE_SITE$, $EARNED$ earned",
+    "message": "Semua tapak $ALL_SITES$, satu tapak $ONE_SITE$, $EARNED$ diperoleh",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -83,7 +83,7 @@
     "message": "Garis"
   },
   "stats_streak_empty": {
-    "message": "Andar sengit starts with andar first focus hari."
+    "message": "Rentetan anda bermula dengan hari fokus pertama anda."
   },
   "stats_streak_unit_one": {
     "message": "hari"
@@ -92,7 +92,7 @@
     "message": "haris"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$ freeze keken banked",
+    "message": "$COUNT$ token beku disimpan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$ freeze kekens banked",
+    "message": "$COUNT$ token beku disimpan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "Streak freeze: one missed hari, covered"
+    "message": "Pembekuan rentetan: satu hari terlepas, dilindungi"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active hari this month ($MONTH$)",
+    "message": "$COUNT$ hari aktif bulan ini ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active haris this month ($MONTH$)",
+    "message": "$COUNT$ hari aktif bulan ini ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Active dpadaes dalam $MONTH$: $DAYS$.",
+    "message": "Tarikh aktif dalam $MONTH$: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -152,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "No active dpadaes dalam $MONTH$.",
+    "message": "Tiada tarikh aktif dalam $MONTH$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -161,25 +161,25 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Fokus, last 14 haris"
+    "message": "Fokus, 14 hari lepas"
   },
   "stats_chart_focus_empty": {
-    "message": "Focus minutes appear after anda first sesi."
+    "message": "Minit fokus muncul selepas sesi pertama anda."
   },
   "stats_chart_attempts_heading": {
-    "message": "Blokired attempts, last 14 haris"
+    "message": "Percubaan disekat, 14 hari lepas"
   },
   "stats_chart_attempts_empty": {
-    "message": "Blocked attempts show up here once a sesi catches one."
+    "message": "Percubaan yang disekat akan muncul di sini apabila sesi menangkap satu."
   },
   "stats_chart_sites_heading": {
-    "message": "Top blocked sites, last 30 haris"
+    "message": "Tapak paling kerap disekat, 30 hari lepas"
   },
   "stats_chart_sites_empty": {
-    "message": "Nothdalamg blokired yet. Thpada is a fdalame mulai."
+    "message": "Belum ada yang disekat. Itu permulaan yang baik."
   },
   "stats_chart_hours_heading": {
-    "message": "Attempts by jam, this machine only"
+    "message": "Percubaan mengikut jam, mesin ini sahaja"
   },
   "stats_chart_other_site": {
     "message": "lain-lain"
@@ -215,16 +215,16 @@
     "message": "Carta bar"
   },
   "stats_chart_name_hbar": {
-    "message": "Horizontal batang bagan"
+    "message": "Carta bar mendatar"
   },
   "stats_chart_description_bar": {
-    "message": "Bagan batang. Gunakan keyboard untuk bergerak melalui titik data, atau buka Lihat sebagai tabel untuk nilai yang sama."
+    "message": "Carta bar. Gunakan papan kekunci untuk bergerak melalui titik data, atau buka Lihat sebagai jadual untuk nilai yang sama."
   },
   "stats_chart_description_hbar": {
-    "message": "Bagan batang horizontal. Gunakan keyboard untuk bergerak melalui titik data, atau buka Lihat sebagai tabel untuk nilai yang sama."
+    "message": "Carta bar mendatar. Gunakan papan kekunci untuk bergerak melalui titik data, atau buka Lihat sebagai jadual untuk nilai yang sama."
   },
   "stats_chart_empty_default": {
-    "message": "No dpadaa yet."
+    "message": "Tiada data lagi."
   },
   "stats_chart_point": {
     "message": "$LABEL$: $VALUE$",
@@ -240,7 +240,7 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "View as tabel"
+    "message": "Lihat sebagai jadual"
   },
   "stats_chart_table_category": {
     "message": "Kategori"
@@ -249,13 +249,13 @@
     "message": "Nilai"
   },
   "stats_heat_strip_label": {
-    "message": "24-jam blocked-attempt heat strip"
+    "message": "Jalur haba percubaan disekat 24 jam"
   },
   "stats_sessions_heading": {
-    "message": "Recent sesis on this machine"
+    "message": "Sesi terkini pada mesin ini"
   },
   "stats_sessions_empty": {
-    "message": "Anda first session will appear here."
+    "message": "Sesi pertama anda akan muncul di sini."
   },
   "stats_sessions_col_date": {
     "message": "Dpadae"
@@ -270,10 +270,10 @@
     "message": "Fokused"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All situss"
+    "message": "Semua tapak"
   },
   "stats_sessions_col_one_site": {
-    "message": "One situs"
+    "message": "Satu tapak"
   },
   "stats_sessions_col_intention": {
     "message": "Nipada"
@@ -309,7 +309,7 @@
     "message": "Selesaid"
   },
   "stats_outcome_ended_early": {
-    "message": "Akhired early"
+    "message": "Ditamatkan awal"
   },
   "stats_outcome_running": {
     "message": "Runndalamg"

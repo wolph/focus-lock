@@ -3,7 +3,7 @@
     "message": "Fokus Lock"
   },
   "overlay_stopped_title": {
-    "message": "Locked - Fokus Lock"
+    "message": "Dikunci - Focus Lock"
   },
   "overlay_return_label": {
     "message": "$ACTION$: $DESTINATION$",
@@ -39,7 +39,7 @@
     "message": "Memeriksa tab kerja yang tersedia..."
   },
   "overlay_target_pick_tab": {
-    "message": "Pick an open tab to continue anda task."
+    "message": "Pilih tab yang terbuka untuk meneruskan tugas anda."
   },
   "overlay_target_session_unavailable": {
     "message": "Sesi fokus Anda tidak tersedia. Coba lagi, atau muat ulang halaman ini."
@@ -48,7 +48,7 @@
     "message": "Tidak dapat memuat tab kerja Anda. Coba lagi, atau muat ulang halaman ini."
   },
   "overlay_target_reconnect": {
-    "message": "Reload this page to reconnect to Fokus Lock."
+    "message": "Muat semula halaman ini untuk menyambung semula ke Focus Lock."
   },
   "overlay_target_page_changed": {
     "message": "Halaman yang meminta telah berubah. Muat ulang halaman."
@@ -57,22 +57,22 @@
     "message": "Tidak dapat menjangkau Focus Lock. Coba lagi."
   },
   "overlay_picker_heading": {
-    "message": "Choose a kerja tab"
+    "message": "Pilih tab kerja"
   },
   "overlay_picker_cancel": {
     "message": "Batal"
   },
   "overlay_picker_search_label": {
-    "message": "Search kerja tabs"
+    "message": "Cari tab kerja"
   },
   "overlay_picker_search_placeholder": {
-    "message": "Search oleh title padaau websitus"
+    "message": "Cari mengikut tajuk atau tapak web"
   },
   "overlay_picker_clear_search": {
-    "message": "Bersihkan search"
+    "message": "Kosongkan carian"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "Refresh tab"
+    "message": "Muat semula tab"
   },
   "overlay_picker_available_tabs": {
     "message": "Tab kerja yang tersedia"
@@ -81,7 +81,7 @@
     "message": "Menemukan tab yang tersedia..."
   },
   "overlay_picker_searching": {
-    "message": "Searchdalamg kerja tabs..."
+    "message": "Mencari tab kerja..."
   },
   "overlay_picker_saving": {
     "message": "Savdalamg kerja tab..."
@@ -109,7 +109,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ dari $COUNT$ tabs",
+    "message": "$MATCHES$ daripada $COUNT$ tab",
     "placeholders": {
       "COUNT": {
         "content": "$1",

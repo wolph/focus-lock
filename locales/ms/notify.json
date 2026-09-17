@@ -39,10 +39,10 @@
     "message": "Pilihan penyimpanan penyiapan telah berubah. Muat ulang penyiapan sebelum menyelesaikan."
   },
   "notify_onboarding_storage_failed": {
-    "message": "Onboarddalamg stpadaauage operpadaipada gagal."
+    "message": "Operasi storan persediaan gagal."
   },
   "notify_onboarding_operation_failed": {
-    "message": "Onboarddalamg operpadaipada gagal."
+    "message": "Operasi persediaan gagal."
   },
   "notify_website_access_check_failed": {
     "message": "Focus Lock tidak dapat memeriksa akses situs web. Coba ulang penyiapan atau muat ulang ekstensi."
@@ -66,13 +66,13 @@
     }
   },
   "notify_unknown_error": {
-    "message": "unknown kesalahan"
+    "message": "ralat tidak diketahui"
   },
   "notify_nothing_to_reset": {
     "message": "Focus Lock sedang berjalan, tidak ada yang perlu direset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Focus Lock tidak dapat mereset runtime yang masih berkomitmen dalam pembuatan kebijakan"
+    "message": "Focus Lock tidak boleh menetapkan semula masa jalan yang masih terikat dalam satu generasi dasar"
   },
   "notify_data_clear_retry_unavailable": {
     "message": "Percobaan pembersihan data tidak tersedia."
@@ -96,19 +96,19 @@
     "message": "Daftar melebihi batas Chrome Sync 8 KB. Hapus aturan khusus atau daftar putih, lalu coba lagi."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "a keras sesi is runndalamg: removdalamg blokired situss unlocks ketika it ends"
+    "message": "sesi kunci keras sedang berjalan: membuang tapak yang disekat hanya berkuat kuasa apabila sesi tamat"
   },
   "notify_guard_lists_add_whitelist": {
     "message": "sesi keras sedang berlangsung: entri daftar putih baru membuka kunci saat"
   },
   "notify_guard_lists_disable_category": {
-    "message": "a keras sesi is runndalamg: disabldalamg cpadaegpadaauies unlocks ketika it ends"
+    "message": "sesi kunci keras sedang berjalan: mematikan kategori hanya berkuat kuasa apabila sesi tamat"
   },
   "notify_guard_lists_add_exclusion": {
     "message": "sesi keras sedang berlangsung: pengecualian baru membuka kunci saat berakhir"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "sesi keras sedang berjalan: melemahkan ketataan default menunggu sampai berakhir"
+    "message": "sesi kunci keras sedang berjalan: melonggarkan ketegasan lalai akan menunggu sehingga sesi tamat"
   },
   "notify_guard_settings_shorten_delay": {
     "message": "sesi keras sedang berjalan: mempersingkat penundaan deliberasi melemahkan gerbang"
@@ -123,7 +123,7 @@
     "message": "sesi keras sedang berjalan: menaikkan batas jeda mendanai lebih banyak jalan keluar"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "a keras sesi is runndalamg: shpadaautendalamg jedas lowers their cost"
+    "message": "sesi kunci keras sedang berjalan: memendekkan jeda akan merendahkan kosnya"
   },
   "notify_guard_settings_shorten_unlock": {
     "message": "sesi keras sedang berlangsung: memperpendek pembukaan kunci menurunkan kreditnya"
