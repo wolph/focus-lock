@@ -262,6 +262,23 @@ const ALLOWED_LATIN = [
 ];
 
 /**
+ * True when the whole English message is one term the project never translates, in any language.
+ *
+ * This is a narrower claim than "a word two languages might share". There is no valid translated
+ * alternative to a message that is only the product name, or only `regex`, so a submission
+ * matching it cannot be a translator regressing real work. Anything else, including a sentence
+ * that merely contains one of these terms, is not covered.
+ */
+export function isNeverTranslated(message) {
+  const bare = message.trim();
+  if (bare === '') return false;
+  return ALLOWED_LATIN.some((pattern) => {
+    const whole = new RegExp(`^(?:${pattern.source})$`, pattern.flags.replace('g', ''));
+    return whole.test(bare);
+  });
+}
+
+/**
  * Latin words left in a message whose language is not written in Latin script. This is the one
  * defect the other checks cannot see: a message half-translated by substituting words, or wrecked
  * by a find and replace that spliced letters into the middle of English words, differs from the
@@ -785,7 +802,7 @@ export function mergeTranslation(root, locale, flat, write, { replaceEnglish = f
         previous[key] !== undefined &&
         !readsAsEnglish(previous[key])
       ) {
-        if (replaceEnglish) {
+        if (replaceEnglish || isNeverTranslated(source.message)) {
           // The caller has said the stored value is wrong, which is the case when a find and
           // replace mangled it into something that is no longer English and no longer the
           // language either. Only then does the English spelling win.

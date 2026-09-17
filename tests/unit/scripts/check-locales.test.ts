@@ -9,6 +9,7 @@ import {
   checkTranslation,
   englishEcho,
   generateLocales,
+  isNeverTranslated,
   isPadding,
   LOCALES,
   mergeSurfaces,
@@ -594,5 +595,56 @@ describe('brokenPattern', () => {
 
   it('says nothing about an ordinary key', () => {
     expect(brokenPattern('popup_start', 'not a pattern')).toBe(false);
+  });
+});
+
+describe('isNeverTranslated', () => {
+  it('recognises a message that is only a never-translated term', () => {
+    expect(isNeverTranslated('Focus Lock')).toBe(true);
+    expect(isNeverTranslated('regex')).toBe(true);
+    expect(isNeverTranslated('ON')).toBe(true);
+  });
+
+  it('does not extend to a sentence that merely contains one', () => {
+    expect(isNeverTranslated('Focus Lock settings')).toBe(false);
+    expect(isNeverTranslated('Delete all Focus Lock data')).toBe(false);
+    expect(isNeverTranslated('Start')).toBe(false);
+  });
+});
+
+describe('mergeTranslation and the never-translated terms', () => {
+  function seededAt(message: string): string {
+    const root: string = mkdtempSync(join(tmpdir(), 'never-'));
+    const src: string = join(root, 'locales');
+    mkdirSync(join(src, 'en'), { recursive: true });
+    writeFileSync(
+      join(src, 'en', 'app.json'),
+      JSON.stringify({ app_name: { message, description: 'A name.' } }),
+    );
+    return src;
+  }
+
+  function write(src: string, flat: Record<string, string>): Catalogue {
+    const written: Catalogue = {};
+    mergeTranslation(src, 'kn', flat, (surface: string, messages: Catalogue): void => {
+      mkdirSync(join(src, 'kn'), { recursive: true });
+      writeFileSync(join(src, 'kn', `${surface}.json`), JSON.stringify(messages));
+      Object.assign(written, messages);
+    });
+    return written;
+  }
+
+  it('accepts the product name over text a find and replace mangled', () => {
+    const src: string = seededAt('Focus Lock');
+    // A find and replace left a half-localised brand behind. There is no valid translation of a
+    // product name, so the correct spelling wins without anyone passing a flag.
+    write(src, { app_name: 'ಫೋಕಸ್ Lock' });
+    expect(write(src, { app_name: 'Focus Lock' }).app_name?.message).toBe('Focus Lock');
+  });
+
+  it('still protects a real translation of an ordinary message', () => {
+    const src: string = seededAt('Start');
+    write(src, { app_name: 'Starten' });
+    expect(write(src, { app_name: 'Start' }).app_name?.message).toBe('Starten');
   });
 });
