@@ -1,0 +1,608 @@
+{
+  "shared_until_stopped": {
+    "message": "Tot je stopt"
+  },
+  "shared_preset_short": {
+    "message": "kort"
+  },
+  "shared_preset_deep_work": {
+    "message": "diep werk"
+  },
+  "shared_deep_work_note": {
+    "message": "Een voorkeur, geen wetenschap: één lang blok zonder onderbreking en zonder automatische pauzes."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ min totaal, met focusblokken van $FOCUS$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min focus zonder onderbreking",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Start tot je stopt"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Op slot tot je ontgrendelt"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Sessies tot je stopt blijven Flexibel of Wrijving en kunnen geen focus- en pauzecycli gebruiken."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Op slot is niet beschikbaar voor Tot je stopt: zonder timer en zonder handmatig einde zou de sessie nooit eindigen."
+  },
+  "shared_end_session": {
+    "message": "Sessie beëindigen"
+  },
+  "shared_unlock": {
+    "message": "Ontgrendel"
+  },
+  "shared_gate_wait_none": {
+    "message": "geen wachttijd"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ seconden wachttijd",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ en een getypte zin",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Loopt tot je het beëindigt met $LABEL$. Cycli uit.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Loopt tot je het ontgrendelt: $REQUIREMENT$, dan $LABEL$. Cycli uit.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Cycli afgedwongen door Tot je stopt"
+  },
+  "shared_mode_blacklist": {
+    "message": "Geselecteerde sites blokkeren"
+  },
+  "shared_mode_whitelist": {
+    "message": "Alleen geselecteerde sites toestaan"
+  },
+  "shared_focus_time_label": {
+    "message": "Focustijd"
+  },
+  "shared_clock_focus_phase": {
+    "message": "focusfase"
+  },
+  "shared_clock_total_session": {
+    "message": "hele sessie"
+  },
+  "shared_clock_pause": {
+    "message": "gepauzeerd"
+  },
+  "shared_clock_break": {
+    "message": "pauze"
+  },
+  "shared_badge_indefinite": {
+    "message": "AAN"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock start op. Je geselecteerde regels worden toegepast."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Sessie beëindigd. Browseropruiming wordt afgerond."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock kon niet starten. Browseropruiming wordt afgerond."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock kon een onvolledige start niet opruimen."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock kon de browseropruiming niet afronden."
+  },
+  "shared_retry_cleanup": {
+    "message": "Opruimen opnieuw"
+  },
+  "shared_end_failed": {
+    "message": "Sessie beëindigen mislukt. Probeer opnieuw."
+  },
+  "shared_retry_failed": {
+    "message": "Opnieuw opruimen mislukt. Probeer opnieuw."
+  },
+  "shared_action_failed": {
+    "message": "Die actie kon niet worden aangevraagd. Probeer opnieuw."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Terugkeren naar werk mislukt. Probeer opnieuw."
+  },
+  "shared_data_clear_pending": {
+    "message": "Focus Lock-gegevens worden verwijderd. Opruimen wordt afgerond."
+  },
+  "shared_data_clear_error": {
+    "message": "Gegevens verwijderen mislukt. Probeer opnieuw."
+  },
+  "shared_schedule_window_label": {
+    "message": "Tot venster eindigt"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Start volgens schema en loopt tot je stopt: Sessie beëindigen bij Flexibel, Ontgrendel via de bedenktijd bij Wrijving. Cycli uit."
+  },
+  "shared_schedule_started_title": {
+    "message": "Focusschema gestart"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Actief tot je stopt."
+  },
+  "shared_settings_indefinite": {
+    "message": "Sessie tot je stopt is actief. Gebruik de pop-up in de werkbalk om die te bekijken of te beëindigen."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock start op. Websitetoegang wordt gecontroleerd en je regels worden toegepast."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock kon de browseropruiming niet afronden. Open de pop-up en probeer opnieuw."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "De pop-up in de werkbalk bevat de sessieknoppen. De actieve sessie houdt de regels van het moment waarop die startte."
+  },
+  "shared_settings_timed": {
+    "message": "Sessie met timer actief tot $TIME$. Die eindigt vanzelf. Gebruik de pop-up in de werkbalk voor de actuele status.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Voltooid"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Handmatig voltooid"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Vroeg beëindigd"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Beëindigd: websitetoegang verloren"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Beëindigd: blokkering instellen mislukt"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Beëindigd: timer instellen mislukt"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Beëindigd: toepassen op pagina's mislukt"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Beëindigd: herstel mislukt"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ u $MINUTES$ min",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Sessie bijwerken"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Minder dan een minuut"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ tot je pauze",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ over in deze sessie",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Kosten hoger dan de tegoedlimiet"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Tegoed groeit weer tijdens focus"
+  },
+  "shared_credit_off": {
+    "message": "Tegoed verdienen staat uit"
+  },
+  "shared_not_enough_time": {
+    "message": "Niet genoeg tijd in dit focusblok"
+  },
+  "shared_ready_in": {
+    "message": "Klaar over $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Geblokkeerd door $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Geblokkeerd door je blokkeerlijst"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Staat niet op je toelatingslijst"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Geblokkeerd door deze sessie"
+  },
+  "shared_verdict_allow_list": {
+    "message": "Staat op je toelatingslijst"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Altijd toegestaan"
+  },
+  "shared_verdict_unlock": {
+    "message": "Tijdelijk ontgrendeld"
+  },
+  "shared_verdict_excluded": {
+    "message": "Uitgesloten van een geselecteerde categorie"
+  },
+  "shared_verdict_no_session": {
+    "message": "Geen actieve focussessie"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Toegestaan door deze sessie"
+  },
+  "shared_category_social": {
+    "message": "Sociale media"
+  },
+  "shared_category_video": {
+    "message": "Video en streaming"
+  },
+  "shared_category_news": {
+    "message": "Nieuws"
+  },
+  "shared_category_mail": {
+    "message": "E-mail"
+  },
+  "shared_category_shopping": {
+    "message": "Winkelen"
+  },
+  "shared_category_gaming": {
+    "message": "Gamen"
+  },
+  "shared_category_forums": {
+    "message": "Forums en verveling"
+  },
+  "shared_synced_settings": {
+    "message": "Instellingen"
+  },
+  "shared_synced_lists": {
+    "message": "Blokkeer- en toelatingslijsten"
+  },
+  "shared_synced_credit": {
+    "message": "Toegangstegoed"
+  },
+  "shared_synced_streaks": {
+    "message": "Reeksen"
+  },
+  "shared_synced_aggregates": {
+    "message": "Totalen van geblokkeerde pogingen per domein"
+  },
+  "shared_local_full_urls": {
+    "message": "Volledige URL's"
+  },
+  "shared_local_intentions": {
+    "message": "Focusintenties"
+  },
+  "shared_local_events": {
+    "message": "Gedetailleerde sessiegebeurtenissen"
+  },
+  "shared_local_runtime": {
+    "message": "Actieve lopende sessie"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Sommige gesynchroniseerde gegevens van een oudere versie konden niet worden gelezen en zijn gereset."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Beëindig de lopende sessie voordat je alle gegevens verwijdert."
+  },
+  "shared_nav_product": {
+    "message": "Productnavigatie"
+  },
+  "shared_nav_overview": {
+    "message": "Overzicht"
+  },
+  "shared_nav_settings": {
+    "message": "Instellingen"
+  },
+  "shared_section_blocking": {
+    "message": "Blokkeren"
+  },
+  "shared_section_schedule": {
+    "message": "Schema"
+  },
+  "shared_section_behavior": {
+    "message": "Sessiegedrag"
+  },
+  "shared_section_budget": {
+    "message": "Toegangstegoed"
+  },
+  "shared_section_notifications": {
+    "message": "Meldingen"
+  },
+  "shared_section_privacy": {
+    "message": "Privacy en gegevens"
+  },
+  "shared_theme_auto": {
+    "message": "Systeem"
+  },
+  "shared_theme_light": {
+    "message": "Licht"
+  },
+  "shared_theme_dark": {
+    "message": "Donker"
+  },
+  "shared_theme_button": {
+    "message": "Thema: $CURRENT$. Schakel naar $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Thema opslaan mislukt. Herlaad de pagina en probeer opnieuw."
+  },
+  "shared_host_search_label": {
+    "message": "Zoek in $TITLE$-sites",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Geen $TITLE$-site komt overeen met je zoekopdracht.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "$SHOWN$ van $MATCHED$ sites getoond. Zoek om de lijst te verkleinen.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "$MATCHED$ van $TOTAL$ sites getoond.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Alle $TOTAL$ sites getoond.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Sessie beëindigen"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock start op"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Je geselecteerde regels worden toegepast."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Deze pagina is niet geladen. Die laadt vanzelf als de sessie eindigt."
+  },
+  "shared_overlay_next_step": {
+    "message": "Je volgende stap"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Terug naar werk"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Kies een werktabblad"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Werktabblad wijzigen"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Pauze of toegang tot een site nodig?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Je kunt op elk moment even weg. Toegang tot een site kost tegoed."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Wachttijd negeren en toch stoppen"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock kon deze actie niet bijwerken. Probeer opnieuw."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ toegangstegoed",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Ga verder met je huidige taak"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Alle sites ontgrendelen"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Deze site ontgrendelen"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - kost $COST$ tegoed",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Op slot tot $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Je zei: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "$HOST$ ontgrendelen $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Blijf focussen"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Typ dit om te bevestigen:"
+  },
+  "shared_gate_end_title": {
+    "message": "Deze sessie beëindigen"
+  }
+}

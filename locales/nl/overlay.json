@@ -1,0 +1,91 @@
+{
+  "overlay_stopped_title": {
+    "message": "Op slot - Focus Lock"
+  },
+  "overlay_target_checking": {
+    "message": "Beschikbare werktabbladen controleren..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Kies een open tabblad om verder te werken."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Je focussessie is niet beschikbaar. Probeer opnieuw of herlaad deze pagina."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Je werktabblad laden mislukt. Probeer opnieuw of herlaad deze pagina."
+  },
+  "overlay_target_reconnect": {
+    "message": "Herlaad deze pagina om opnieuw verbinding te maken met Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "De aanvragende pagina is gewijzigd. Herlaad de pagina."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock is niet bereikbaar. Probeer opnieuw."
+  },
+  "overlay_picker_heading": {
+    "message": "Kies een werktabblad"
+  },
+  "overlay_picker_cancel": {
+    "message": "Annuleren"
+  },
+  "overlay_picker_search_label": {
+    "message": "Werktabbladen zoeken"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Zoek op titel of website"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Zoekopdracht wissen"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Tabbladen vernieuwen"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Beschikbare werktabbladen"
+  },
+  "overlay_picker_finding": {
+    "message": "Beschikbare tabbladen zoeken..."
+  },
+  "overlay_picker_searching": {
+    "message": "Werktabbladen doorzoeken..."
+  },
+  "overlay_picker_saving": {
+    "message": "Werktabblad opslaan..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Geen beschikbare werktabbladen. Open een site die deze sessie toestaat en vernieuw daarna de tabbladen."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Geen overeenkomende tabbladen. Zoek anders of wis de zoekopdracht."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Werktabbladen laden mislukt. Probeer opnieuw."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ van $COUNT$ tabblad",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ van $COUNT$ tabbladen",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

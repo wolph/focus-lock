@@ -1,0 +1,702 @@
+{
+  "popup_next_schedule": {
+    "message": "далі: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Налаштування"
+  },
+  "popup_open_settings_failed": {
+    "message": "Не вдалося відкрити налаштування. Спробуй ще раз."
+  },
+  "popup_settings_load_failed": {
+    "message": "Не вдалося завантажити налаштування сесії. Перезавантаж вікно і повтори. Показано значення за замовчуванням."
+  },
+  "popup_open_setup_failed": {
+    "message": "Не вдалося відкрити налаштування. Спробуй ще раз."
+  },
+  "popup_setup_required_heading": {
+    "message": "Заверши налаштування Focus Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "Вибери стартові списки, доступ до сайтів і режим зберігання, перш ніж починати сесію."
+  },
+  "popup_open_setup_button": {
+    "message": "Відкрити налаштування"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Не вдалося підтвердити блокування сайтів. Спробуй ще раз."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Не вдалося увімкнути блокування сайтів. Спробуй ще раз."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Блокування сайтів вимкнено"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock не може почати сесію, доки Chrome не надасть доступ до сайтів і не буде увімкнено блокування."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome не надав доступ до сайтів. Блокування досі вимкнено."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Доступ до сайтів надано, але Focus Lock не зміг увімкнути блокування. Повтори налаштування або перезавантаж розширення."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Увімкнути блокування сайтів"
+  },
+  "popup_retry_button": {
+    "message": "Повторити"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Твоя сесія завершилася, бо доступ до сайтів було відкликано."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Твоя сесія завершилася, бо Focus Lock не зміг увімкнути блокування сайтів."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Не вдалося сховати це сповіщення. Спробуй ще раз."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Сховати сповіщення про доступ до сайтів"
+  },
+  "popup_dismiss_button": {
+    "message": "Сховати"
+  },
+  "popup_restart_failed": {
+    "message": "Не вдалося перезапустити Focus Lock. Спробуй ще раз."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock не зміг запуститися"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Причину прочитати не вдалося."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Скинути локальний стан"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Зберігає налаштування, списки та статистику. Очищає стан поточної сесії."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Видалити все і почати заново"
+  },
+  "popup_keep_data_button": {
+    "message": "Залишити мої дані"
+  },
+  "popup_delete_all_button": {
+    "message": "Видалити всі дані Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Стан налаштування недоступний. Перезавантаж Focus Lock і повтори."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Стан фокусу недоступний"
+  },
+  "popup_action_in_progress": {
+    "message": "Дія виконується"
+  },
+  "popup_active_site_checking": {
+    "message": "Перевіряємо активний сайт"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Відкрий звичайний сайт, щоб розблокувати його"
+  },
+  "popup_active_site_unknown": {
+    "message": "Не вдалося визначити активний сайт"
+  },
+  "popup_active_site_error": {
+    "message": "Не вдалося визначити активний сайт."
+  },
+  "popup_resume_now": {
+    "message": "Продовжити зараз"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Почати фокус достроково"
+  },
+  "popup_unlock_this_site": {
+    "message": "Розблокувати цей сайт"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Розблокувати всі сайти"
+  },
+  "popup_spend_cost": {
+    "message": "доступ $ACCESS$, кредит $CREDIT$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "доступ $ACCESS$, кредит $CREDIT$ - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Вибрати робочу вкладку"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Змінити робочу вкладку"
+  },
+  "popup_session_actions_summary": {
+    "message": "Дії сесії"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ кредиту доступу",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Додати дозволений домен"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "wiki.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Додати дозволений домен"
+  },
+  "popup_add_button": {
+    "message": "Додати"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Лише $COUNT$ дозвільних правил. Інші сайти заблоковано.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ заблокованих категорій, $RULES$ додаткових правил.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Жорстке блокування. Не можна завершити достроково."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Можна завершити будь-коли."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Завершення після очікування $SECONDS$ с.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Завершення після очікування $SECONDS$ с і введення фрази.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Тривалість сесії"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Свої хвилини"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "хв"
+  },
+  "popup_gate_force_end": {
+    "message": "Пропустити очікування і завершити"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Продовжити фокус"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Введи:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Не вдалося оновити екран підтвердження. Спробуй ще раз."
+  },
+  "popup_gate_intention": {
+    "message": "Ти написав: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Час подумати:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "з $TOTAL$ с",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Назад до роботи"
+  },
+  "popup_destination_unavailable": {
+    "message": "Ціль недоступна"
+  },
+  "popup_back_to_work_name": {
+    "message": "Назад до роботи: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Назад до роботи: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Категорії не можна змінювати, доки не перезавантажаться списки заблокованих сайтів."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Заблоковані категорії"
+  },
+  "popup_show_full_domain": {
+    "message": "Показати домен повністю: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Показати регулярний вираз повністю: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Домен"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Регулярний вираз"
+  },
+  "popup_category_sites_label": {
+    "message": "Сайти категорії $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ сайт",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ сайта",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "і ще $COUNT$ сайт",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "і ще $COUNT$ сайта",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Дозволені винятки"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Додаткові правила блокування"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Додаткових правил блокування немає."
+  },
+  "popup_allowed_heading": {
+    "message": "Дозволені сайти та правила"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Поки немає дозволених сайтів."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "Що буде заблоковано"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "Що буде дозволено"
+  },
+  "popup_categories_selected": {
+    "message": "Вибрано категорій: $SELECTED$ з $TOTAL$",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ додаткове правило",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ додаткового правила",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ дозвільне правило",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ дозвільного правила",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Зміни дозволених сайтів і правил тут діють лише для цієї сесії. Усе інше заблоковано."
+  },
+  "popup_scope_blacklist": {
+    "message": "Зміни категорій і правил тут діють лише для цієї сесії."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Відкрити налаштування для постійних значень"
+  },
+  "popup_rule_details_label": {
+    "message": "Подробиці правил сесії"
+  },
+  "popup_session_type_legend": {
+    "message": "Тип сесії"
+  },
+  "popup_session_type_flexible": {
+    "message": "Гнучка"
+  },
+  "popup_session_type_friction": {
+    "message": "Із затримкою"
+  },
+  "popup_session_type_hard": {
+    "message": "Жорстке блокування"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Завершуй сесію одразу, коли захочеш."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Дострокове завершення потребує: $WAIT$. Вводити нічого не треба.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Дострокове завершення потребує: $WAIT$ і введення підтвердження.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "Сесію не можна завершити достроково. Кредит доступу далі працює."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "Вибрані категорії та додаткові правила заблоковано. Інші сайти доступні."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Доступні лише перелічені сайти. Усі інші заблоковано."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Вкажи тривалість сесії більшу за нуль хвилин."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Значення за замовчуванням змінилися, але поточні списки не завантажилися. Перезавантаж вікно."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Без робочої вкладки (необов'язково)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Вибрана вкладка недоступна - вибери іншу"
+  },
+  "popup_cycles_label": {
+    "message": "Цикли: фокус $FOCUS$ хв, перерва $SHORT_BREAK$ хв, довга перерва $LONG_BREAK$ хв кожен $LONG_EVERY$-й",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Намір"
+  },
+  "popup_intention_placeholder": {
+    "message": "Над чим ти працюєш?"
+  },
+  "popup_work_tab_named": {
+    "message": "Робоча вкладка: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Змінити"
+  },
+  "popup_session_settings_summary": {
+    "message": "Налаштування сесії"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Вибери робочу вкладку"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Робоча вкладка"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (поточна)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Режим блокування"
+  },
+  "popup_invalid_time_label": {
+    "message": "хибний час"
+  },
+  "popup_start_focus_label": {
+    "message": "Почати фокус $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Вкажи коректний домен, наприклад docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Не вдалося завантажити робочі вкладки. Відкрий вікно знову і повтори."
+  },
+  "popup_use_this_tab": {
+    "message": "Використати цю вкладку"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "Ця вкладка не підходить для роботи. Вибери іншу відкриту вкладку."
+  },
+  "popup_checking_current_tab": {
+    "message": "Перевіряємо поточну вкладку..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Шукаємо твою поточну вкладку..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Не вдалося завантажити поточну вкладку. Спробуй ще раз."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Вибери або заміни робочу вкладку."
+  },
+  "popup_saving_work_tab": {
+    "message": "Зберігаємо робочу вкладку..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Не вдалося зберегти робочу вкладку. Спробуй ще раз."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Вибери відкриту вкладку"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Або вибери іншу вкладку"
+  },
+  "popup_start_failed": {
+    "message": "Не вдалося почати сесію. Спробуй ще раз."
+  },
+  "popup_sites_few": {
+    "message": "$COUNT$ сайти",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ сайтів",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_few": {
+    "message": "і ще $COUNT$ сайти",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_many": {
+    "message": "і ще $COUNT$ сайтів",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_few": {
+    "message": "$COUNT$ додаткові правила",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ додаткових правил",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_few": {
+    "message": "$COUNT$ дозвільні правила",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
+    "message": "$COUNT$ дозвільних правил",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  }
+}

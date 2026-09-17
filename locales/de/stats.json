@@ -1,0 +1,304 @@
+{
+  "stats_document_title": {
+    "message": "Focus Lock-Statistik"
+  },
+  "stats_page_title": {
+    "message": "Deine Fokusbilanz"
+  },
+  "stats_loading": {
+    "message": "Deine Statistik wird geladen."
+  },
+  "stats_load_error": {
+    "message": "Statistik konnte nicht geladen werden. Lade neu, um es erneut zu versuchen."
+  },
+  "stats_partial_error_both": {
+    "message": "Versuche pro Stunde und die Einstellungen zum Zugriffsguthaben sind nicht verfügbar."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Versuche pro Stunde sind nicht verfügbar."
+  },
+  "stats_partial_error_economy": {
+    "message": "Die Einstellungen zum Zugriffsguthaben sind nicht verfügbar."
+  },
+  "stats_scope_synced": {
+    "message": "Synchronisierte Summen aus diesem Chrome-Konto. Nur lokale Bereiche sind gekennzeichnet."
+  },
+  "stats_scope_local": {
+    "message": "Summen von diesem Rechner. Die Statistik von Focus Lock wird nicht synchronisiert."
+  },
+  "stats_scope_checking": {
+    "message": "Es wird geprüft, ob diese Summen synchronisiert sind."
+  },
+  "stats_scope_unavailable": {
+    "message": "Der Bereich der Statistik ist nicht verfügbar. Die Summen können synchronisierte Daten enthalten. Versuche pro Stunde und neueste Sitzungen stammen von diesem Rechner."
+  },
+  "stats_scope_retry": {
+    "message": "Bereich erneut prüfen"
+  },
+  "stats_empty": {
+    "message": "Die Statistik erscheint nach deiner ersten Sitzung."
+  },
+  "stats_tile_focus_today": {
+    "message": "Fokus heute"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Fokus in den letzten 7 Tagen"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Heute gesperrte Versuche"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Heute abgebrochene Entsperrungen"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Heute ausgegebenes Zugriffsguthaben"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Alle Seiten $ALL_SITES$, eine Seite $ONE_SITE$, $EARNED$ verdient",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ verdient",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Serie"
+  },
+  "stats_streak_empty": {
+    "message": "Deine Serie beginnt mit deinem ersten Fokustag."
+  },
+  "stats_streak_unit_one": {
+    "message": "Tag"
+  },
+  "stats_streak_unit_other": {
+    "message": "Tage"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ Schutztag gespart",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ Schutztage gespart",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Schutztag: ein verpasster Tag ist gedeckt"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktiver Tag in diesem Monat ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktive Tage in diesem Monat ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktive Tage in $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Keine aktiven Tage in $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Fokus, letzte 14 Tage"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Fokusminuten erscheinen nach deiner ersten Sitzung."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Gesperrte Versuche, letzte 14 Tage"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Gesperrte Versuche erscheinen hier, sobald eine Sitzung einen abfängt."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Meistgesperrte Seiten, letzte 30 Tage"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Noch nichts gesperrt. Das ist ein guter Anfang."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Versuche nach Stunde, nur dieser Rechner"
+  },
+  "stats_chart_other_site": {
+    "message": "sonstige"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ gesperrt",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ gesperrt",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Balkendiagramm"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Liegendes Balkendiagramm"
+  },
+  "stats_chart_description_bar": {
+    "message": "Balkendiagramm. Bewege dich mit der Tastatur durch die Datenpunkte oder öffne Als Tabelle ansehen für dieselben Werte."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Liegendes Balkendiagramm. Bewege dich mit der Tastatur durch die Datenpunkte oder öffne Als Tabelle ansehen für dieselben Werte."
+  },
+  "stats_chart_empty_default": {
+    "message": "Noch keine Daten."
+  },
+  "stats_chart_table_summary": {
+    "message": "Als Tabelle ansehen"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategorie"
+  },
+  "stats_chart_table_value": {
+    "message": "Wert"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-Stunden-Hitzestreifen gesperrter Versuche"
+  },
+  "stats_sessions_heading": {
+    "message": "Neueste Sitzungen auf diesem Rechner"
+  },
+  "stats_sessions_empty": {
+    "message": "Deine erste Sitzung erscheint hier."
+  },
+  "stats_sessions_col_date": {
+    "message": "Datum"
+  },
+  "stats_sessions_col_start": {
+    "message": "Beginn"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Geplant"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Fokussiert"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Alle Seiten"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Eine Seite"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Vorhaben"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Ergebnis"
+  },
+  "stats_sessions_col_source": {
+    "message": "Quelle"
+  },
+  "stats_session_no_intention": {
+    "message": "Kein Vorhaben"
+  },
+  "stats_session_article_label": {
+    "message": "Sitzung: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "manuell"
+  },
+  "stats_session_source_schedule": {
+    "message": "Zeitplan"
+  },
+  "stats_session_source_scheduled": {
+    "message": "geplant"
+  },
+  "stats_outcome_completed": {
+    "message": "Abgeschlossen"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Vorzeitig beendet"
+  },
+  "stats_outcome_running": {
+    "message": "Läuft"
+  }
+}

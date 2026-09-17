@@ -31,7 +31,7 @@
     "message": "Scegli gli elenchi iniziali, l'accesso ai siti e la modalità di archiviazione prima di avviare una sessione."
   },
   "popup_open_setup_button": {
-    "message": "Apri la configurazione"
+    "message": "Apri configurazione"
   },
   "popup_blocking_confirm_failed": {
     "message": "Impossibile confermare il blocco dei siti. Riprova."
@@ -160,7 +160,7 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Scegli la scheda di lavoro"
+    "message": "Scegli scheda di lavoro"
   },
   "popup_change_work_tab_button": {
     "message": "Cambia scheda di lavoro"
@@ -179,6 +179,9 @@
   },
   "popup_add_allowed_domain_label": {
     "message": "Aggiungi un dominio consentito"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "documenti.example.com"
   },
   "popup_add_allowed_domain_button": {
     "message": "Aggiungi dominio consentito"
@@ -457,7 +460,7 @@
     "message": "Apri le Impostazioni per i valori permanenti"
   },
   "popup_rule_details_label": {
-    "message": "Dettagli delle regole della sessione"
+    "message": "Dettagli regole della sessione"
   },
   "popup_session_type_legend": {
     "message": "Tipo di sessione"
@@ -586,7 +589,7 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "Inserisci un dominio valido, come docs.example.com."
+    "message": "Inserisci un dominio valido, come documenti.example.com."
   },
   "popup_work_tabs_unavailable": {
     "message": "Impossibile caricare le schede di lavoro. Riapri il popup per riprovare."
@@ -610,7 +613,7 @@
     "message": "Scegli o sostituisci la tua scheda di lavoro."
   },
   "popup_saving_work_tab": {
-    "message": "Salvataggio della scheda di lavoro..."
+    "message": "Salvataggio scheda di lavoro..."
   },
   "popup_save_work_tab_failed": {
     "message": "Impossibile salvare la scheda di lavoro. Riprova."

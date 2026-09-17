@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Thiết lập Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Thiết lập Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Bước $STEP$/$TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Không thể khôi phục tiến trình thiết lập đã lưu. Bắt đầu lại với các giá trị mặc định hiện tại."
+  },
+  "onboarding_complete_heading": {
+    "message": "Thiết lập hoàn tất"
+  },
+  "onboarding_complete_body": {
+    "message": "Các lựa chọn của bạn đã được lưu. Mở Focus Lock từ thanh công cụ Chrome để bắt đầu một phiên tập trung."
+  },
+  "onboarding_error_heading": {
+    "message": "Không thể thiết lập"
+  },
+  "onboarding_error_body": {
+    "message": "Không thể tải thiết lập. Hãy thử lại."
+  },
+  "onboarding_retry_button": {
+    "message": "Thử lại"
+  },
+  "onboarding_save_error": {
+    "message": "Không thể lưu tiến trình thiết lập. Hãy thử lại."
+  },
+  "onboarding_enable_error": {
+    "message": "Không thể bật tính năng chặn trang web. Hãy thử lại."
+  },
+  "onboarding_finish_error": {
+    "message": "Không thể hoàn tất thiết lập. Các lựa chọn của bạn vẫn được lưu. Hãy thử lại."
+  },
+  "onboarding_lists_heading": {
+    "message": "Chọn danh sách chặn ban đầu"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Trong $MODE$, các danh mục đã bật và trang web bị chặn thêm sẽ không thể truy cập.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Trong $MODE$, mọi trang web đều không thể truy cập trừ danh sách cho phép của bạn.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Các lựa chọn này sẽ trở thành mặc định cho các phiên sau. Bạn có thể chỉnh sửa sau."
+  },
+  "onboarding_lists_legend": {
+    "message": "Danh mục trang web được đề xuất"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ trang web",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ trang web",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Hiện trang web của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Ẩn trang web của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Tên miền của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Tiếp tục"
+  },
+  "onboarding_access_heading": {
+    "message": "Bật tính năng chặn trang web"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock kiểm tra địa chỉ trang cục bộ để đối chiếu với danh mục và trang web bạn đã chọn. Focus Lock dùng quyền truy cập trang web để hiển thị màn hình chặn và khôi phục các trang bị ảnh hưởng khi phiên của bạn kết thúc."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Danh mục và tên miền tùy chỉnh có thể bao gồm bất kỳ trang web nào. Vì vậy Chrome sẽ yêu cầu quyền sau:"
+  },
+  "onboarding_access_capability": {
+    "message": "Đọc và thay đổi tất cả dữ liệu của bạn trên tất cả các trang web"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock chỉ sử dụng quyền đó khi áp dụng các quy tắc chặn của bạn."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome đã không cấp quyền truy cập trang web. Bạn có thể thử lại."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Quyền truy cập trang web đã được cấp, nhưng Focus Lock không thể bật tính năng chặn. Hãy thử lại thiết lập hoặc tải lại tiện ích."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Bật tính năng chặn trang web"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Để sau"
+  },
+  "onboarding_sync_heading": {
+    "message": "Chọn nơi lưu trữ cài đặt của bạn"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Đồng bộ hóa giữa các thiết bị Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Dữ liệu được duyệt bên dưới sẽ dùng Đồng bộ hóa Chrome sau khi bạn hoàn tất thiết lập."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Toàn bộ dữ liệu Focus Lock sẽ ở lại trong hồ sơ Chrome này."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Đã đồng bộ hóa"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Chỉ cục bộ"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Không có gì được gửi đến nhà phát triển Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Hoàn tất thiết lập với đồng bộ hóa được bật"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Hoàn tất thiết lập không đồng bộ hóa"
+  }
+}

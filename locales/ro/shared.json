@@ -116,10 +116,10 @@
     "message": "sesiune totală"
   },
   "shared_clock_pause": {
-    "message": "pauză"
+    "message": "răgaz"
   },
   "shared_clock_break": {
-    "message": "pauză de relaxare"
+    "message": "pauză"
   },
   "shared_badge_indefinite": {
     "message": "ON"
@@ -217,6 +217,46 @@
   "shared_outcome_invalid_active_state": {
     "message": "Încheiată: recuperarea a eșuat"
   },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ min",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
   "shared_updating_session": {
     "message": "Se actualizează sesiunea"
   },
@@ -259,6 +299,19 @@
       "CLOCK": {
         "content": "$1",
         "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
       }
     }
   },
@@ -335,7 +388,7 @@
     "message": "Totaluri ale încercărilor blocate pe domeniu"
   },
   "shared_local_full_urls": {
-    "message": "Adrese URL complete"
+    "message": "URL-uri complete"
   },
   "shared_local_intentions": {
     "message": "Intenții de concentrare"
@@ -352,11 +405,14 @@
   "shared_all_data_clear_running": {
     "message": "Încheie sesiunea în curs înainte de a șterge toate datele."
   },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
   "shared_nav_product": {
     "message": "Navigare în produs"
   },
   "shared_nav_overview": {
-    "message": "Prezentare generală"
+    "message": "Sumar"
   },
   "shared_nav_settings": {
     "message": "Setări"
@@ -383,10 +439,10 @@
     "message": "Automată"
   },
   "shared_theme_light": {
-    "message": "Luminoasă"
+    "message": "Deschis"
   },
   "shared_theme_dark": {
-    "message": "Întunecată"
+    "message": "Închis"
   },
   "shared_theme_button": {
     "message": "Temă: $CURRENT$. Comută la $NEXT$",

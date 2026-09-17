@@ -1,0 +1,91 @@
+{
+  "overlay_stopped_title": {
+    "message": "Låst - Focus Lock"
+  },
+  "overlay_target_checking": {
+    "message": "Tjekker tilgængelige arbejdsfaner..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Vælg en åben fane for at fortsætte din opgave."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Din fokussession er ikke tilgængelig. Prøv igen, eller genindlæs denne side."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Din arbejdsfane kunne ikke indlæses. Prøv igen, eller genindlæs denne side."
+  },
+  "overlay_target_reconnect": {
+    "message": "Genindlæs denne side for at oprette forbindelse til Focus Lock igen."
+  },
+  "overlay_target_page_changed": {
+    "message": "Den anmodende side er ændret. Genindlæs siden."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock kunne ikke nås. Prøv igen."
+  },
+  "overlay_picker_heading": {
+    "message": "Vælg en arbejdsfane"
+  },
+  "overlay_picker_cancel": {
+    "message": "Annuller"
+  },
+  "overlay_picker_search_label": {
+    "message": "Søg i arbejdsfaner"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Søg på titel eller websted"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Ryd søgning"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Opdater faner"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Tilgængelige arbejdsfaner"
+  },
+  "overlay_picker_finding": {
+    "message": "Finder tilgængelige faner..."
+  },
+  "overlay_picker_searching": {
+    "message": "Søger i arbejdsfaner..."
+  },
+  "overlay_picker_saving": {
+    "message": "Gemmer arbejdsfane..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Ingen tilgængelige arbejdsfaner. Åbn en site, denne session tillader, og opdater så fanerne."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Ingen matchende faner. Prøv en anden søgning, eller ryd søgningen."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Arbejdsfaner kunne ikke indlæses. Prøv igen."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ af $COUNT$ fane",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ af $COUNT$ faner",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

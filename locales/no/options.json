@@ -1,0 +1,849 @@
+{
+  "options_page_title": {
+    "message": "Focus Lock-innstillinger"
+  },
+  "options_heading": {
+    "message": "Innstillinger for Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "Laster innstillinger"
+  },
+  "options_privacy_loading": {
+    "message": "Laster personverninnstillinger"
+  },
+  "options_save_failed": {
+    "message": "Kunne ikke lagre. Prøv igjen."
+  },
+  "options_blocking_heading": {
+    "message": "Blokkering"
+  },
+  "options_blocking_help": {
+    "message": "Egne regler blokkerer under økter med blokkeringsliste. Tillatelseslisten er det som forblir tilgjengelig under økter med tillatelsesliste. Ferdige kategorier blokkerer vanlige tidstyver."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Egen blokkeringsliste"
+  },
+  "options_whitelist_title": {
+    "message": "Tillatelsesliste"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Ferdige kategorier"
+  },
+  "options_bundled_categories_help": {
+    "message": "Ferdige lister over vanlige tidstyver. Slå en hel kategori av eller på, og åpne den deretter for å holde enkeltnettsteder tilgjengelige."
+  },
+  "options_schedule_heading": {
+    "message": "Plan"
+  },
+  "options_schedule_help": {
+    "message": "Økter starter av seg selv innenfor disse tidsvinduene. Strengheten du velger her gjelder hele vinduet."
+  },
+  "options_behavior_heading": {
+    "message": "Øktatferd"
+  },
+  "options_budget_heading": {
+    "message": "Tilgangskreditt"
+  },
+  "options_notifications_heading": {
+    "message": "Varsler"
+  },
+  "options_privacy_heading": {
+    "message": "Personvern og data"
+  },
+  "options_load_error_retry": {
+    "message": "Prøv igjen"
+  },
+  "options_load_error_delete_all": {
+    "message": "Slett alt og begynn på nytt"
+  },
+  "options_load_error_keep_data": {
+    "message": "Behold dataene mine"
+  },
+  "options_delete_all_data": {
+    "message": "Slett alle Focus Lock-data"
+  },
+  "options_dirty_saving": {
+    "message": "Lagrer endringer"
+  },
+  "options_dirty_unsaved": {
+    "message": "Ulagrede endringer"
+  },
+  "options_dirty_clean": {
+    "message": "Ingen ulagrede endringer"
+  },
+  "options_dirty_discard": {
+    "message": "Forkast endringer"
+  },
+  "options_dirty_save": {
+    "message": "Lagre endringer"
+  },
+  "options_session_status_label": {
+    "message": "Øktstatus"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domene"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
+  "options_rule_remove": {
+    "message": "Fjern"
+  },
+  "options_rule_remove_aria": {
+    "message": "Fjern $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Ingen regler ennå."
+  },
+  "options_rule_kind_aria": {
+    "message": "Regeltype"
+  },
+  "options_rule_kind_host_option": {
+    "message": "domene eller underdomene"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (hele URL-en)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Mønster"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "Legg til regel"
+  },
+  "options_rules_help": {
+    "message": "facebook.com dekker det domenet og alle underdomener. news.ycombinator.com dekker det underdomenet og alt under det. /youtube\\.com\\/shorts/ matcher hele URL-en som et regulært uttrykk."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ må være et positivt heltall.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ må være et heltall som er null eller større.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ må være null eller større.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ må ligge innenfor minuttområdet som støttes.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ må ligge innenfor dagsområdet som støttes.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Standardverdier for økter"
+  },
+  "options_session_defaults_help": {
+    "message": "Modus og strenghet låses når en økt starter. Dette er verdiene startskjemaet åpnes med."
+  },
+  "options_preset_short_label": {
+    "message": "Forvalg for kort økt (minutter)"
+  },
+  "options_preset_default_label": {
+    "message": "Forvalg for vanlig økt (minutter)"
+  },
+  "options_preset_deep_label": {
+    "message": "Forvalg for dyp økt (minutter)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Blokkeringsliste: blokker oppførte nettsteder"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Tillatelsesliste: tillat bare oppførte nettsteder"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Fleksibel: avslutt økten når du vil"
+  },
+  "options_strictness_friction_label": {
+    "message": "Friksjon: å slutte tidlig går via den innstilte betenkningssperren"
+  },
+  "options_strictness_hard_label": {
+    "message": "Hard lås: ingen tidlig slutt, bare midlertidig nettstedstilgang"
+  },
+  "options_cycle_heading": {
+    "message": "Syklus med fokus og pause"
+  },
+  "options_cycle_help": {
+    "message": "Standard: 25 minutters fokus, 5 minutters pause, 15 minutters lang pause hver fjerde syklus. Pauser etter plan slår pause-når-du-føler-for-det for humør og fokus i studieutvalg. De nøyaktige minuttene er konvensjon, ikke vitenskap."
+  },
+  "options_cycle_default_label": {
+    "message": "Veksle mellom fokus og pauser som standard"
+  },
+  "options_focus_minutes_label": {
+    "message": "Fokusminutter"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Minutter for kort pause"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Minutter for lang pause"
+  },
+  "options_long_every_label": {
+    "message": "Lang pause hver N-te syklus"
+  },
+  "options_gate_heading": {
+    "message": "Betenkningssperre"
+  },
+  "options_gate_help": {
+    "message": "En venting på 10 sekunder med en uttrykkelig tilbake-til-arbeidet-knapp reduserer impulsbesøk målbart (feltstudie, PNAS 2023). Den lengre ventingen og den innskrevne setningen omtrent dobler effekten."
+  },
+  "options_gate_wait_one": {
+    "message": "Vent $COUNT$ sekund",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Vent $COUNT$ sekunder",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Egen verdi"
+  },
+  "options_custom_delay_label": {
+    "message": "Egen forsinkelse (sekunder)"
+  },
+  "options_custom_delay_error": {
+    "message": "Egen forsinkelse må være et positivt heltall sekunder."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Krev også at en setning skrives inn"
+  },
+  "options_gate_force_end_label": {
+    "message": "Slå på knappen «Ignorer ventetiden og avslutt likevel»"
+  },
+  "options_credit_help": {
+    "message": "Tilgangskreditt bygges opp mens du fokuserer. Både tilgang til alle nettsteder og opplåsing av ett enkelt nettsted trekkes fra samme saldo. Du kan gå fra skjermen når som helst uten å bruke kreditt."
+  },
+  "options_earn_rate_label": {
+    "message": "Minutter nettstedstilgang per 30 minutter fokus"
+  },
+  "options_credit_cap_label": {
+    "message": "Grense for tilgangskreditt (minutter)"
+  },
+  "options_pause_length_label": {
+    "message": "Lengde på tilgang til alle nettsteder (minutter)"
+  },
+  "options_unlock_length_label": {
+    "message": "Lengde på opplåsing av nettsted (minutter)"
+  },
+  "options_streak_heading": {
+    "message": "Rekke og lagringstid"
+  },
+  "options_streak_help": {
+    "message": "Rekken teller dager som når målet. Én vanlig økt holder kjeden i live, og et frysemerke reparerer en tapt dag."
+  },
+  "options_streak_goal_label": {
+    "message": "Daglig rekkemål (fokusminutter)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Intervall for frysemerke (dager)"
+  },
+  "options_retention_label": {
+    "message": "Behold daglig statistikk (dager)"
+  },
+  "options_category_on_announcement": {
+    "message": "Kategorien $CATEGORY$ på.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Kategorien $CATEGORY$ av.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Alle kategorier på."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Alle kategorier av."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ er omfattet.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ holdes tilgjengelig.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Alle nettsteder i $CATEGORY$ er omfattet.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Alle nettsteder i $CATEGORY$ holdes tilgjengelige.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Massehandlinger for kategorier"
+  },
+  "options_selected_count": {
+    "message": "Valgt $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Fravalgt $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Velg alle"
+  },
+  "options_deselect_all": {
+    "message": "Fravelg alle"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Velg alle kategorier"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Fravelg alle kategorier"
+  },
+  "options_show_category_sites": {
+    "message": "Vis nettsteder i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Skjul nettsteder i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ nettsted er omfattet",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ nettsteder er omfattet",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Kategorien er av"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ omfattes når den er på",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ omfattes når den er på",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Fjern avkrysningen for et nettsted for å holde det tilgjengelig mens resten av kategorien blokkeres."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Massehandlinger for nettsteder i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Velg alle nettsteder i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Fravelg alle nettsteder i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Nettsteder i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "søn"
+  },
+  "options_day_mon": {
+    "message": "man"
+  },
+  "options_day_tue": {
+    "message": "tir"
+  },
+  "options_day_wed": {
+    "message": "ons"
+  },
+  "options_day_thu": {
+    "message": "tor"
+  },
+  "options_day_fri": {
+    "message": "fre"
+  },
+  "options_day_sat": {
+    "message": "lør"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Veksle mellom fokus og pauser"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Overlapper en annen aktiv oppføring på $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Økttype"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Planpost"
+  },
+  "options_schedule_start_label": {
+    "message": "Starttid"
+  },
+  "options_schedule_end_label": {
+    "message": "Sluttid"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Varighet"
+  },
+  "options_schedule_intention_label": {
+    "message": "Intensjon"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "hva denne tiden er til for"
+  },
+  "options_schedule_save_entry": {
+    "message": "Lagre post"
+  },
+  "options_cancel": {
+    "message": "Avbryt"
+  },
+  "options_schedule_empty": {
+    "message": "Ingen planlagte økter ennå."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Valgte dager"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ til $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "blokkeringsliste"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "tillatelsesliste"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "fleksibel"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "friksjon"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "hard lås"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Aktiv"
+  },
+  "options_schedule_edit": {
+    "message": "Rediger"
+  },
+  "options_schedule_delete": {
+    "message": "Slett"
+  },
+  "options_schedule_add": {
+    "message": "Legg til planpost"
+  },
+  "options_sounds_heading": {
+    "message": "Lyder"
+  },
+  "options_master_volume": {
+    "message": "Hovedvolum"
+  },
+  "options_sound_session_complete": {
+    "message": "Økten ferdig"
+  },
+  "options_sound_break_start": {
+    "message": "Pause starter"
+  },
+  "options_sound_break_end": {
+    "message": "Pause slutter"
+  },
+  "options_sound_schedule_start": {
+    "message": "Automatisk start fra plan"
+  },
+  "options_sound_preview_aria": {
+    "message": "Forhåndslytt på $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Spill"
+  },
+  "options_sound_preview_error": {
+    "message": "Kunne ikke spille av lyden. Prøv igjen."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Varsler"
+  },
+  "options_session_complete_notification": {
+    "message": "Vis et systemvarsel når en økt blir ferdig"
+  },
+  "options_badge_heading": {
+    "message": "Merke"
+  },
+  "options_badge_countdown": {
+    "message": "Vis gjenstående tid på verktøylinjeikonet"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Nettstedstilgang"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Nettstedstilgangen er av"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock kan ikke blokkere nettsteder før du gir tilgang."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Aktiver nettstedsblokkering"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Nettstedstilgang er gitt, men blokkeringen er ikke aktiv"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome ga tilgang, men Focus Lock kunne ikke registrere blokkeringsskriptet sitt."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Prøv nettstedsblokkering på nytt"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Nettstedsblokkering er aktivert"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock kan bruke de aktive blokkeringsreglene dine på vanlige nettsider."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Slette lokal historikk?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Bekreft sletting av lokal historikk"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Lokal historikk slettet."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Dette sletter permanent fullstendige URL-er, fokusintensjoner og detaljerte økthendelser fra denne enheten. Det avslutter ikke en pågående økt, som beholder intensjonen sin og adressen til hver fane den blokkerer. Når økten avsluttes, tømmes intensjonen og en opprydding starter som tømmer hver åpne nettfane, og oppryddingen fjerner hver lagrede adresse når den er ferdig."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Dette sletter permanent fullstendige URL-er, fokusintensjoner og detaljerte økthendelser fra denne enheten, pluss statistikk som bare finnes lokalt. Det avslutter ikke en pågående økt, som beholder intensjonen sin og adressen til hver fane den blokkerer. Når økten avsluttes, tømmes intensjonen og en opprydding starter som tømmer hver åpne nettfane, og oppryddingen fjerner hver lagrede adresse når den er ferdig."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Slette eksterne Sync-data?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Bekreft sletting av eksterne Sync-data"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Eksterne Chrome Sync-data slettet."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Dette sletter permanent eksterne innstillinger, blokkerings- og tillatelseslister, tilgangskreditt, rekker og aggregerte blokkerte forsøk på domenenivå fra Chrome Sync. Lokale innstillinger og lokal statistikk blir værende på denne enheten."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Slette alle Focus Lock-data?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Bekreft sletting av alle Focus Lock-data"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Alle Focus Lock-data slettet."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Dette sletter permanent hver bit Focus Lock-data på denne enheten og alle Focus Lock-kopier som ligger igjen i Chrome Sync:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Å slette alt er bare mulig når ingen økt pågår. Focus Lock går deretter tilbake til oppsettet."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Den lokale historikken kunne ikke slettes. Prøv igjen."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Eksterne Chrome Sync-data kunne ikke slettes. Prøv igjen."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Alle Focus Lock-data kunne ikke slettes. Prøv igjen."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync kunne ikke lagre de siste endringene dine. Den lokale lagringen er trygg."
+  },
+  "options_privacy_error_request": {
+    "message": "Forespørselen kunne ikke fullføres. Prøv igjen."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Nettstedstilgangen er oppdatert."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Nettstedstilgang ble ikke gitt."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Nettstedstilgangen kunne ikke oppdateres. Prøv igjen."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Nettstedsblokkering aktivert."
+  },
+  "options_privacy_error_export": {
+    "message": "Kunne ikke eksportere hendelsesloggen."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Kunne ikke eksportere hendelsesloggen. Prøv igjen."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Kunne ikke åpne Chromes tillatelsesinnstillinger. Prøv igjen."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chromes tillatelsesinnstillinger er åpnet."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Åpne Chromes tillatelsesinnstillinger"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Synkroniser Focus Lock-data på tvers av Chrome-enheter"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync aktivert."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync slått av."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync lagrer fortsatt de siste endringene dine."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync er på."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync er av."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Endringene er lagret i Chrome Sync."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Prøv å aktivere Chrome Sync på nytt"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Prøv Chrome Sync på nytt"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Synkronisert"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Bare lokalt"
+  },
+  "options_privacy_developer_note": {
+    "message": "Ingenting sendes til utvikleren av Focus Lock."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Lokal hendelseslogg"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Eksporter den detaljerte lokale loggen eller slett lokal surfe- og økthistorikk."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Eksporter lokal hendelseslogg"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Lokal hendelseslogg eksportert."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Slett lokal historikk"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Eksterne Sync-data"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Slett Focus Lock-kopiene som ligger igjen i Chrome Sync, uten å endre denne enheten."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Slett eksterne Sync-data"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Alle Focus Lock-data"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Slett hver Focus Lock-oppføring på denne enheten og alle Focus Lock-kopier som ligger igjen i Chrome Sync, og begynn deretter på nytt fra oppsettet. Tilgjengelig når ingen økt pågår."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Gjenopptar sletting av alle Focus Lock-data."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Prøv å slette lokal historikk på nytt"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Prøv å slette eksterne Sync-data på nytt"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Prøv å slette alle data på nytt"
+  },
+  "options_error_load": {
+    "message": "Kunne ikke laste innstillingene. Last siden på nytt for å prøve igjen."
+  },
+  "options_error_retry_boot": {
+    "message": "Kunne ikke starte Focus Lock på nytt. Prøv igjen."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Kunne ikke oppdatere personverninnstillingene. Last siden på nytt."
+  },
+  "options_error_website_blocking": {
+    "message": "Kunne ikke oppdatere nettstedsblokkeringen. Prøv igjen."
+  },
+  "options_error_change_sync": {
+    "message": "Kunne ikke endre Chrome Sync. Prøv igjen."
+  },
+  "options_error_retry_sync": {
+    "message": "Kunne ikke prøve Chrome Sync på nytt. Prøv igjen."
+  },
+  "options_error_save_settings": {
+    "message": "Kunne ikke lagre innstillingene. Last siden på nytt og prøv igjen."
+  },
+  "options_error_save_lists": {
+    "message": "Kunne ikke lagre listene. Last siden på nytt og prøv igjen."
+  }
+}

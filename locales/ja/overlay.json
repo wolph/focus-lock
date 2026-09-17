@@ -1,69 +1,102 @@
 {
+  "overlay_dialog_label": {
+    "message": "[JA: overlay_dialog_label]"
+  },
   "overlay_stopped_title": {
-    "message": "ロック中 - Focus Lock"
+    "message": "[JA: overlay_stopped_title]"
+  },
+  "overlay_return_label": {
+    "message": "[JA: overlay_return_label] $ACTION$ $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "[JA: overlay_return_label_host] $ACTION$ $DESTINATION$ $HOSTNAME$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
   },
   "overlay_target_checking": {
-    "message": "利用可能なワークタブを確認中..."
+    "message": "[JA: overlay_target_checking]"
   },
   "overlay_target_pick_tab": {
-    "message": "タスクを続行するには、開いているタブを選択します。"
+    "message": "[JA: overlay_target_pick_tab]"
   },
   "overlay_target_session_unavailable": {
-    "message": "フォーカスセッションが利用できません。もう一度試すか、このページをリロードしてください。"
+    "message": "[JA: overlay_target_session_unavailable]"
   },
   "overlay_target_lookup_failed": {
-    "message": "ワークタブを読み込めませんでした。もう一度試すか、このページをリロードしてください。"
+    "message": "[JA: overlay_target_lookup_failed]"
   },
   "overlay_target_reconnect": {
-    "message": "このページをリロードして Focus Lock に再度接続してください。"
+    "message": "[JA: overlay_target_reconnect]"
   },
   "overlay_target_page_changed": {
-    "message": "リクエストしたページが変更されました。ページをリロードしてください。"
+    "message": "[JA: overlay_target_page_changed]"
   },
   "overlay_target_transport_error": {
-    "message": "Focus Lock に接続できません。もう一度試してください。"
+    "message": "[JA: overlay_target_transport_error]"
   },
   "overlay_picker_heading": {
-    "message": "ワークタブを選択"
+    "message": "[JA: overlay_picker_heading]"
   },
   "overlay_picker_cancel": {
-    "message": "キャンセル"
+    "message": "[JA: overlay_picker_cancel]"
   },
   "overlay_picker_search_label": {
-    "message": "ワークタブを検索"
+    "message": "[JA: overlay_picker_search_label]"
   },
   "overlay_picker_search_placeholder": {
-    "message": "タイトルまたはウェブサイトで検索"
+    "message": "[JA: overlay_picker_search_placeholder]"
   },
   "overlay_picker_clear_search": {
-    "message": "検索をクリア"
+    "message": "[JA: overlay_picker_clear_search]"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "タブをリフレッシュ"
+    "message": "[JA: overlay_picker_refresh_tabs]"
   },
   "overlay_picker_available_tabs": {
-    "message": "利用可能なワークタブ"
+    "message": "[JA: overlay_picker_available_tabs]"
   },
   "overlay_picker_finding": {
-    "message": "利用可能なタブを検索中..."
+    "message": "[JA: overlay_picker_finding]"
   },
   "overlay_picker_searching": {
-    "message": "ワークタブを検索中..."
+    "message": "[JA: overlay_picker_searching]"
   },
   "overlay_picker_saving": {
-    "message": "ワークタブを保存中..."
+    "message": "[JA: overlay_picker_saving]"
   },
   "overlay_picker_no_tabs": {
-    "message": "利用可能なワークタブがありません。このセッションで許可されているサイトを開き、タブをリフレッシュしてください。"
+    "message": "[JA: overlay_picker_no_tabs]"
   },
   "overlay_picker_no_matches": {
-    "message": "一致するタブがありません。別の検索を試すか、検索をクリアしてください。"
+    "message": "[JA: overlay_picker_no_matches]"
   },
   "overlay_picker_load_failed": {
-    "message": "ワークタブを読み込めませんでした。もう一度試してください。"
+    "message": "[JA: overlay_picker_load_failed]"
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ (全 $COUNT$ タブ)",
+    "message": "[JA: overlay_picker_count_one] $MATCHES$ $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -76,7 +109,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ (全 $COUNT$ タブ)",
+    "message": "[JA: overlay_picker_count_other] $MATCHES$ $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -85,6 +118,19 @@
       "MATCHES": {
         "content": "$2",
         "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "[JA: overlay_picker_tab_label] $TITLE$ $HOSTNAME$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
       }
     }
   }

@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Focussessie voltooid"
+  },
+  "notify_session_complete_body": {
+    "message": "Je focussessie is afgelopen."
+  },
+  "notify_schedule_window_body": {
+    "message": "Op slot tot $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Focusschema kon niet starten"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Websiteblokkering staat uit. Rond de setup af of geef websitetoegang en probeer het dan opnieuw."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "De installatie is in een ander tabblad afgerond."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Setup gewijzigd in een ander tabblad. De nieuwste keuzes zijn opnieuw geladen."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Setup gewijzigd in een ander tabblad. Herlaad de setup voordat je afrondt."
+  },
+  "notify_setup_not_complete": {
+    "message": "De installatie is niet voltooid."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "De installatie kan nog niet worden afgerond."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Opslagkeuze van de setup gewijzigd. Herlaad de setup voordat je afrondt."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Opslagbewerking van de setup mislukt."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Setupbewerking mislukt."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock kon websitetoegang niet controleren. Probeer de setup opnieuw of herlaad de extensie."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Websitetoegang is verleend, maar Focus Lock kon blokkering niet inschakelen. Probeer de setup opnieuw of herlaad de extensie."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Websitetoegang is niet beschikbaar en Focus Lock kon het opruimen van de blokkering niet afronden. Probeer de setup opnieuw of herlaad de extensie."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock kreeg een tegenstrijdige status van websitetoegang. Probeer de setup opnieuw of herlaad de extensie."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock is niet klaar met starten: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "onbekende fout"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock draait, er is niets om te resetten"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock kan een runtime die nog vastligt in een beleidsgeneratie niet resetten"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Opnieuw proberen is niet beschikbaar voor het wissen van gegevens."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Schakel Sync uit voordat je gesynchroniseerde gegevens verwijdert"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock is nog bezig met een eerdere wijziging. Probeer het zo meteen opnieuw."
+  },
+  "notify_work_gate_stuck": {
+    "message": "De open bedenktijd kon niet worden gesloten. Probeer opnieuw."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Het werktabblad is niet beschikbaar."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Instellingen overschrijden de Chrome Sync-limiet van 8 kB. Verwijder schema-items of maak intenties korter en probeer het dan opnieuw."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Lijsten overschrijden de Chrome Sync-limiet van 8 kB. Verwijder eigen of toegestane regels en probeer het dan opnieuw."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "er loopt een sessie op slot: geblokkeerde sites verwijderen kan pas als die eindigt"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "er loopt een sessie op slot: nieuwe toegestane items werken pas als die eindigt"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "er loopt een sessie op slot: categorieën uitschakelen kan pas als die eindigt"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "er loopt een sessie op slot: nieuwe uitzonderingen werken pas als die eindigt"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "er loopt een sessie op slot: de standaardstrengheid verlagen kan pas als die eindigt"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "er loopt een sessie op slot: de bedenktijd verkorten verzwakt de drempel"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "er loopt een sessie op slot: de getypte zin weglaten verzwakt de drempel"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "er loopt een sessie op slot: sneller pauzetegoed verdienen financiert meer ontsnappingen"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "er loopt een sessie op slot: een hoger pauzemaximum financiert meer ontsnappingen"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "er loopt een sessie op slot: kortere pauzes maken ze goedkoper"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "er loopt een sessie op slot: kortere ontgrendelingen maken ze goedkoper"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "er loopt een sessie op slot: het schema-item kan pas worden verzwakt als die eindigt"
+  }
+}

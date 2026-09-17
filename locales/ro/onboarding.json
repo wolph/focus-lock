@@ -173,5 +173,14 @@
         "example": "52"
       }
     }
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
   }
 }

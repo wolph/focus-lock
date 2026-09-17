@@ -1,4 +1,7 @@
 {
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
   "overlay_stopped_title": {
     "message": "Verrouillé - Focus Lock"
   },
@@ -60,7 +63,7 @@
     "message": "Annuler"
   },
   "overlay_picker_search_label": {
-    "message": "Rechercher des onglets de travail"
+    "message": "Rechercher un onglet"
   },
   "overlay_picker_search_placeholder": {
     "message": "Rechercher par titre ou par site"
@@ -69,7 +72,7 @@
     "message": "Effacer la recherche"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "Actualiser les onglets"
+    "message": "Actualiser"
   },
   "overlay_picker_available_tabs": {
     "message": "Onglets de travail disponibles"
@@ -78,10 +81,10 @@
     "message": "Recherche des onglets disponibles..."
   },
   "overlay_picker_searching": {
-    "message": "Recherche dans les onglets de travail..."
+    "message": "Recherche en cours..."
   },
   "overlay_picker_saving": {
-    "message": "Enregistrement de l'onglet de travail..."
+    "message": "Enregistrement de l'onglet..."
   },
   "overlay_picker_no_tabs": {
     "message": "Aucun onglet de travail disponible. Ouvre un site autorisé par cette session, puis actualise les onglets."
@@ -128,6 +131,19 @@
       "MATCHES": {
         "content": "$2",
         "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
       }
     }
   }

@@ -1,0 +1,627 @@
+{
+  "popup_next_schedule": {
+    "message": "tiếp theo: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Cài đặt"
+  },
+  "popup_open_settings_failed": {
+    "message": "Không thể mở Cài đặt. Hãy thử lại."
+  },
+  "popup_settings_load_failed": {
+    "message": "Không thể tải cài đặt phiên. Hãy đóng rồi mở lại popup để thử lại. Đang hiển thị giá trị mặc định."
+  },
+  "popup_open_setup_failed": {
+    "message": "Không thể mở thiết lập. Hãy thử lại."
+  },
+  "popup_setup_required_heading": {
+    "message": "Hoàn tất thiết lập Focus Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "Chọn danh sách ban đầu, quyền truy cập trang web, và chế độ lưu trữ trước khi bắt đầu một phiên."
+  },
+  "popup_open_setup_button": {
+    "message": "Mở thiết lập"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Không thể xác nhận tính năng chặn trang web. Hãy thử lại."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Không thể bật tính năng chặn trang web. Hãy thử lại."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Tính năng chặn trang web đang tắt"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock không thể bắt đầu phiên cho đến khi Chrome cấp quyền truy cập trang web và tính năng chặn được bật."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome đã không cấp quyền truy cập trang web. Tính năng chặn trang web vẫn đang tắt."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Quyền truy cập trang web đã được cấp, nhưng Focus Lock không thể bật tính năng chặn. Hãy thử lại thiết lập hoặc tải lại tiện ích."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Bật tính năng chặn trang web"
+  },
+  "popup_retry_button": {
+    "message": "Thử lại"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Phiên của bạn đã kết thúc vì quyền truy cập trang web đã bị thu hồi."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Phiên của bạn đã kết thúc vì Focus Lock không thể bật tính năng chặn trang web."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Không thể bỏ qua thông báo này. Hãy thử lại."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Bỏ qua thông báo quyền truy cập trang web"
+  },
+  "popup_dismiss_button": {
+    "message": "Bỏ qua"
+  },
+  "popup_restart_failed": {
+    "message": "Không thể khởi động lại Focus Lock. Hãy thử lại."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock không thể khởi động"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Không thể đọc được nguyên nhân."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Đặt lại trạng thái phiên cục bộ"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Giữ nguyên cài đặt, danh sách, và số liệu thống kê của bạn. Xóa trạng thái phiên hiện tại."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Xóa tất cả và bắt đầu lại"
+  },
+  "popup_keep_data_button": {
+    "message": "Giữ lại dữ liệu của tôi"
+  },
+  "popup_delete_all_button": {
+    "message": "Xóa toàn bộ dữ liệu Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Không thể xem trạng thái thiết lập. Hãy tải lại Focus Lock để thử lại."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Không thể xem trạng thái tập trung"
+  },
+  "popup_action_in_progress": {
+    "message": "Đang xử lý thao tác"
+  },
+  "popup_active_site_checking": {
+    "message": "Đang kiểm tra trang đang mở"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Mở một trang web thông thường để mở khóa"
+  },
+  "popup_active_site_unknown": {
+    "message": "Không thể xác định trang đang mở"
+  },
+  "popup_active_site_error": {
+    "message": "Không thể xác định trang đang mở."
+  },
+  "popup_resume_now": {
+    "message": "Tiếp tục ngay"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Bắt đầu sớm khối tập trung tiếp theo"
+  },
+  "popup_unlock_this_site": {
+    "message": "Mở khóa trang này"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Mở khóa tất cả trang web"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ truy cập, $CREDIT$ tín dụng",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ truy cập, $CREDIT$ tín dụng - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Chọn tab công việc"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Đổi tab công việc"
+  },
+  "popup_session_actions_summary": {
+    "message": "Thao tác phiên"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ tín dụng truy cập trang web",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Thêm tên miền được cho phép"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Thêm tên miền được cho phép"
+  },
+  "popup_add_button": {
+    "message": "Thêm"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Chỉ có $COUNT$ quy tắc trang được cho phép. Các trang web khác đều bị chặn.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ danh mục bị chặn, $RULES$ quy tắc thêm.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Khóa cứng. Không thể kết thúc sớm."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Có thể kết thúc bất cứ lúc nào."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Kết thúc sau khi chờ $SECONDS$ giây.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Kết thúc sau khi chờ $SECONDS$ giây và gõ câu xác nhận.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Thời lượng phiên"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Số phút tùy chỉnh"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "phút"
+  },
+  "popup_gate_force_end": {
+    "message": "Bỏ qua thời gian chờ và vẫn kết thúc"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Tiếp tục tập trung"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Gõ:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Không thể cập nhật cổng cân nhắc. Hãy thử lại."
+  },
+  "popup_gate_intention": {
+    "message": "Bạn đã viết: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Một chút để cân nhắc:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "trên $TOTAL$ giây",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Quay lại làm việc"
+  },
+  "popup_destination_unavailable": {
+    "message": "Không có điểm đến"
+  },
+  "popup_back_to_work_name": {
+    "message": "Quay lại làm việc: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Quay lại làm việc: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Không thể chỉnh sửa danh mục cho đến khi danh sách trang bị chặn tải lại xong."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Danh mục bị chặn"
+  },
+  "popup_show_full_domain": {
+    "message": "Hiện toàn bộ tên miền: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Hiện toàn bộ biểu thức chính quy: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Tên miền"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Biểu thức chính quy"
+  },
+  "popup_category_sites_label": {
+    "message": "Trang web của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ trang web",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ trang web",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "và $COUNT$ trang khác",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "và $COUNT$ trang khác",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Ngoại lệ được cho phép"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Quy tắc chặn thêm"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Không có quy tắc chặn thêm."
+  },
+  "popup_allowed_heading": {
+    "message": "Trang web và quy tắc được cho phép"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Chưa có trang web nào được cho phép."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "Những gì sẽ bị chặn"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "Những gì sẽ được cho phép"
+  },
+  "popup_categories_selected": {
+    "message": "Đã chọn $SELECTED$/$TOTAL$ danh mục",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ quy tắc chặn thêm",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ quy tắc chặn thêm",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ quy tắc cho phép",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ quy tắc cho phép",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Thay đổi trang được cho phép và quy tắc ở đây chỉ áp dụng cho phiên này. Mọi thứ khác đều bị chặn."
+  },
+  "popup_scope_blacklist": {
+    "message": "Thay đổi danh mục và quy tắc ở đây chỉ áp dụng cho phiên này."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Mở Cài đặt để thay đổi mặc định cố định"
+  },
+  "popup_rule_details_label": {
+    "message": "Chi tiết quy tắc phiên"
+  },
+  "popup_session_type_legend": {
+    "message": "Loại phiên"
+  },
+  "popup_session_type_flexible": {
+    "message": "Linh hoạt"
+  },
+  "popup_session_type_friction": {
+    "message": "Trì hoãn"
+  },
+  "popup_session_type_hard": {
+    "message": "Khóa cứng"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Kết thúc phiên ngay khi bạn muốn."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Kết thúc sớm cần $WAIT$. Không cần gõ xác nhận.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Kết thúc sớm cần $WAIT$ và gõ câu xác nhận.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "Phiên không thể kết thúc sớm. Tín dụng truy cập trang web vẫn hoạt động."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "Các danh mục đã chọn và quy tắc thêm sẽ bị chặn. Các trang khác vẫn truy cập được."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Chỉ các trang trong danh sách mới truy cập được. Mọi trang web khác đều bị chặn."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Nhập thời lượng phiên lớn hơn 0 phút."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Mặc định đã thay đổi, nhưng không thể tải danh sách hiện tại. Hãy đóng rồi mở lại popup."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Không có tab công việc (không bắt buộc)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Tab đã chọn không khả dụng - hãy chọn tab khác"
+  },
+  "popup_cycles_label": {
+    "message": "Chu kỳ: $FOCUS$ phút tập trung, $SHORT_BREAK$ phút nghỉ, $LONG_BREAK$ phút nghỉ dài sau mỗi $LONG_EVERY$ lần",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Ý định"
+  },
+  "popup_intention_placeholder": {
+    "message": "Bạn đang làm việc gì?"
+  },
+  "popup_work_tab_named": {
+    "message": "Tab công việc: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Đổi"
+  },
+  "popup_session_settings_summary": {
+    "message": "Cài đặt phiên"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Chọn một tab công việc"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Tab công việc"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (Hiện tại)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Chế độ chặn"
+  },
+  "popup_invalid_time_label": {
+    "message": "thời gian không hợp lệ"
+  },
+  "popup_start_focus_label": {
+    "message": "Bắt đầu tập trung $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Nhập một tên miền hợp lệ, ví dụ docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Không thể tải tab công việc. Hãy mở lại popup để thử lại."
+  },
+  "popup_use_this_tab": {
+    "message": "Dùng tab này"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "Không thể dùng tab này làm việc. Hãy chọn một tab khác đang mở."
+  },
+  "popup_checking_current_tab": {
+    "message": "Đang kiểm tra tab hiện tại..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Đang tìm tab hiện tại của bạn..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Không thể tải tab hiện tại của bạn. Hãy thử lại."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Chọn hoặc đổi tab công việc của bạn."
+  },
+  "popup_saving_work_tab": {
+    "message": "Đang lưu tab công việc..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Không thể lưu tab công việc. Hãy thử lại."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Chọn một tab đang mở"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Hoặc chọn tab khác"
+  },
+  "popup_start_failed": {
+    "message": "Không thể bắt đầu phiên. Hãy thử lại."
+  }
+}

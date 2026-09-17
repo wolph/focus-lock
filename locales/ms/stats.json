@@ -5,17 +5,23 @@
   "stats_loading": {
     "message": "Memuat your stats."
   },
+  "stats_partial_error_economy": {
+    "message": "Situs access credit settings are unavailable."
+  },
   "stats_scope_local": {
     "message": "Totals from this machine. Fokus Lock statistics are not synced."
+  },
+  "stats_scope_unavailable": {
+    "message": "Statistik scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from this machine."
   },
   "stats_scope_retry": {
     "message": "Coba Ulang scope check"
   },
   "stats_tile_focus_today": {
-    "message": "Fokus tohari"
+    "message": "Fokus today"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Fokus in the last 7 haris"
+    "message": "Fokus in the last 7 days"
   },
   "stats_tile_attempts_today": {
     "message": "Attempts blocked tohari"
@@ -24,13 +30,13 @@
     "message": "Gate requests dismissed tohari"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent tohari"
+    "message": "Situs access credit spent today"
   },
   "stats_streak_empty": {
     "message": "Your streak starts with your first focus hari."
   },
   "stats_streak_unit_one": {
-    "message": "hari"
+    "message": "day"
   },
   "stats_streak_unit_other": {
     "message": "haris"
@@ -65,16 +71,16 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Fokus, last 14 haris"
+    "message": "Fokus, last 14 days"
   },
   "stats_chart_focus_empty": {
-    "message": "Fokus menits appear after your first session."
+    "message": "Fokus minutes appear after your first session."
   },
   "stats_chart_attempts_heading": {
-    "message": "Blokired attempts, last 14 haris"
+    "message": "Diblokir attempts, last 14 days"
   },
   "stats_chart_attempts_empty": {
-    "message": "Blokired attempts show up here once a session catches one."
+    "message": "Diblokir attempts show up here once a session catches one."
   },
   "stats_chart_sites_heading": {
     "message": "Top blocked sites, last 30 haris"
@@ -120,6 +126,9 @@
         "example": "thesis chapter"
       }
     }
+  },
+  "stats_outcome_completed": {
+    "message": "Diselesaikan"
   },
   "stats_outcome_ended_early": {
     "message": "Akhired early"

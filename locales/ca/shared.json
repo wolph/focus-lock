@@ -140,7 +140,7 @@
     "message": "Focus Lock no ha pogut acabar la neteja del navegador."
   },
   "shared_retry_cleanup": {
-    "message": "Torna a provar la neteja"
+    "message": "Reintenta la neteja"
   },
   "shared_end_failed": {
     "message": "No s'ha pogut acabar la sessió. Torna-ho a provar."
@@ -217,8 +217,48 @@
   "shared_outcome_invalid_active_state": {
     "message": "Acabada: ha fallat la recuperació"
   },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ min",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
   "shared_updating_session": {
-    "message": "S'està actualitzant la sessió"
+    "message": "Actualitzant la sessió"
   },
   "shared_less_than_a_minute": {
     "message": "Menys d'un minut"
@@ -259,6 +299,19 @@
       "CLOCK": {
         "content": "$1",
         "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
       }
     }
   },
@@ -351,6 +404,9 @@
   },
   "shared_all_data_clear_running": {
     "message": "Acaba la sessió en curs abans de suprimir totes les dades."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
   },
   "shared_nav_product": {
     "message": "Navegació del producte"
@@ -479,7 +535,7 @@
     "message": "Tria una pestanya de treball"
   },
   "shared_overlay_change_work_tab": {
-    "message": "Canvia la pestanya de treball"
+    "message": "Canvia pestanya de treball"
   },
   "shared_overlay_access_summary": {
     "message": "Necessites un descans o accés a llocs?"
@@ -567,5 +623,14 @@
   },
   "shared_gate_end_title": {
     "message": "Acaba aquesta sessió"
+  },
+  "shared_minutes_many": {
+    "message": "$COUNT$ de min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
   }
 }

@@ -1,0 +1,91 @@
+{
+  "overlay_stopped_title": {
+    "message": "Gesperrt - Focus Lock"
+  },
+  "overlay_target_checking": {
+    "message": "Verfügbare Arbeits-Tabs werden geprüft..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Wähle einen offenen Tab, um weiterzuarbeiten."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Deine Fokussitzung ist nicht verfügbar. Versuch es erneut oder lade diese Seite neu."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Dein Arbeits-Tab konnte nicht geladen werden. Versuch es erneut oder lade diese Seite neu."
+  },
+  "overlay_target_reconnect": {
+    "message": "Lade diese Seite neu, um dich wieder mit Focus Lock zu verbinden."
+  },
+  "overlay_target_page_changed": {
+    "message": "Die anfragende Seite hat sich geändert. Lade die Seite neu."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock ist nicht erreichbar. Versuch es erneut."
+  },
+  "overlay_picker_heading": {
+    "message": "Arbeits-Tab wählen"
+  },
+  "overlay_picker_cancel": {
+    "message": "Abbrechen"
+  },
+  "overlay_picker_search_label": {
+    "message": "Arbeits-Tabs durchsuchen"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Nach Titel oder Website suchen"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Suche löschen"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Tabs aktualisieren"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Verfügbare Arbeits-Tabs"
+  },
+  "overlay_picker_finding": {
+    "message": "Verfügbare Tabs werden gesucht..."
+  },
+  "overlay_picker_searching": {
+    "message": "Arbeits-Tabs werden durchsucht..."
+  },
+  "overlay_picker_saving": {
+    "message": "Speichere Arbeits-Tab..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Keine verfügbaren Arbeits-Tabs. Öffne eine von dieser Sitzung erlaubte Seite und aktualisiere dann die Tabs."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Keine passenden Tabs. Suche anders oder lösche die Suche."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Arbeits-Tabs konnten nicht geladen werden. Versuch es erneut."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ von $COUNT$ Tab",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ von $COUNT$ Tabs",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

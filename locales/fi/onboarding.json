@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Ota Focus Lock käyttöön"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lockin käyttöönotto"
+  },
+  "onboarding_progress": {
+    "message": "Vaihe $STEP$/$TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Tallennettua käyttöönoton edistymistä ei voitu palauttaa. Aloitetaan alusta nykyisillä oletusarvoilla."
+  },
+  "onboarding_complete_heading": {
+    "message": "Käyttöönotto valmis"
+  },
+  "onboarding_complete_body": {
+    "message": "Valintasi on tallennettu. Avaa Focus Lock Chromen työkalupalkista aloittaaksesi jakson."
+  },
+  "onboarding_error_heading": {
+    "message": "Käyttöönotto ei ole käytettävissä"
+  },
+  "onboarding_error_body": {
+    "message": "Käyttöönottoa ei voitu ladata. Yritä uudelleen."
+  },
+  "onboarding_retry_button": {
+    "message": "Yritä uudelleen"
+  },
+  "onboarding_save_error": {
+    "message": "Käyttöönoton edistymistä ei voitu tallentaa. Yritä uudelleen."
+  },
+  "onboarding_enable_error": {
+    "message": "Sivustojen estoa ei voitu ottaa käyttöön. Yritä uudelleen."
+  },
+  "onboarding_finish_error": {
+    "message": "Käyttöönottoa ei voitu viimeistellä. Valintasi ovat yhä tallessa. Yritä uudelleen."
+  },
+  "onboarding_lists_heading": {
+    "message": "Valitse aloitusestolistasi"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Tilassa $MODE$ käytössä olevat kategoriat ja erikseen estetyt sivustot eivät ole käytettävissä.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Tilassa $MODE$ mikään sivusto ei ole käytettävissä sallittujen listaasi lukuun ottamatta.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Näistä valinnoista tulee oletukset tuleville jaksoille. Voit muuttaa niitä myöhemmin."
+  },
+  "onboarding_lists_legend": {
+    "message": "Suositellut sivustokategoriat"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ sivusto",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ sivustoa",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Näytä kategorian $CATEGORY$ sivustot",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Piilota kategorian $CATEGORY$ sivustot",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Kategorian $CATEGORY$ verkkotunnukset",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Jatka"
+  },
+  "onboarding_access_heading": {
+    "message": "Ota sivustojen esto käyttöön"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock tarkistaa sivujen osoitteet paikallisesti, jotta se voi tunnistaa valitsemasi kategoriat ja sivustot. Sivusto-oikeuksia käytetään estonäkymän näyttämiseen ja sivujen palauttamiseen, kun jaksosi päättyy."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategoriat ja omat verkkotunnukset voivat kattaa minkä tahansa sivuston. Siksi Chrome pyytää tätä oikeutta:"
+  },
+  "onboarding_access_capability": {
+    "message": "Lue ja muuta kaikkia tietojasi kaikilla sivustoilla"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock käyttää tätä oikeutta vain estosääntöjesi soveltamiseen."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome ei myöntänyt sivusto-oikeuksia. Voit yrittää uudelleen."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Sivusto-oikeudet on myönnetty, mutta Focus Lock ei voinut ottaa estoa käyttöön. Yritä käyttöönottoa uudelleen tai lataa laajennus uudelleen."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Ota sivustojen esto käyttöön"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Ei nyt"
+  },
+  "onboarding_sync_heading": {
+    "message": "Valitse, mihin asetuksesi tallennetaan"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Synkronoi Chrome-laitteiden välillä"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Alla hyväksytyt tiedot käyttävät Chrome Synciä, kun viimeistelet käyttöönoton."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Kaikki Focus Lockin tiedot pysyvät tässä Chrome-profiilissa."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Synkronoitu"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Vain paikallinen"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Mitään ei lähetetä Focus Lockin kehittäjälle."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Viimeistele käyttöönotto synkronointi päällä"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Viimeistele käyttöönotto ilman synkronointia"
+  }
+}

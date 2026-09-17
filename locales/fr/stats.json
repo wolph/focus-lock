@@ -91,6 +91,9 @@
   "stats_streak_unit_other": {
     "message": "jours"
   },
+  "stats_streak_unit_many": {
+    "message": "jours"
+  },
   "stats_streak_freeze_tokens_one": {
     "message": "$COUNT$ jeton de gel en réserve",
     "placeholders": {
@@ -101,6 +104,15 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ jetons de gel en réserve",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_many": {
     "message": "$COUNT$ jetons de gel en réserve",
     "placeholders": {
       "COUNT": {
@@ -126,6 +138,19 @@
     }
   },
   "stats_streak_active_days_other": {
+    "message": "$COUNT$ jours actifs ce mois-ci ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_many": {
     "message": "$COUNT$ jours actifs ce mois-ci ($MONTH$)",
     "placeholders": {
       "COUNT": {
@@ -211,6 +236,15 @@
       }
     }
   },
+  "stats_blocked_count_many": {
+    "message": "$COUNT$ bloquées",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
   "stats_chart_name_bar": {
     "message": "Diagramme en barres"
   },
@@ -257,6 +291,9 @@
   "stats_sessions_empty": {
     "message": "Ta première session apparaîtra ici."
   },
+  "stats_sessions_col_date": {
+    "message": "Date"
+  },
   "stats_sessions_col_start": {
     "message": "Début"
   },
@@ -271,6 +308,9 @@
   },
   "stats_sessions_col_one_site": {
     "message": "Un site"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Intention"
   },
   "stats_sessions_col_outcome": {
     "message": "Issue"
@@ -307,39 +347,5 @@
   },
   "stats_outcome_running": {
     "message": "En cours"
-  },
-  "stats_streak_unit_many": {
-    "message": "jours"
-  },
-  "stats_streak_freeze_tokens_many": {
-    "message": "$COUNT$ jetons de gel en réserve",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "2"
-      }
-    }
-  },
-  "stats_streak_active_days_many": {
-    "message": "$COUNT$ jours actifs ce mois-ci ($MONTH$)",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "4"
-      },
-      "MONTH": {
-        "content": "$2",
-        "example": "August 2026"
-      }
-    }
-  },
-  "stats_blocked_count_many": {
-    "message": "$COUNT$ bloquées",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "12"
-      }
-    }
   }
 }

@@ -1,0 +1,372 @@
+{
+  "stats_document_title": {
+    "message": "Статистика Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Твои результаты фокуса"
+  },
+  "stats_loading": {
+    "message": "Загружаем твою статистику."
+  },
+  "stats_load_error": {
+    "message": "Не удалось загрузить статистику. Перезагрузи страницу и повтори."
+  },
+  "stats_partial_error_both": {
+    "message": "Почасовые попытки и настройки кредита доступа недоступны."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Почасовые попытки недоступны."
+  },
+  "stats_partial_error_economy": {
+    "message": "Настройки кредита доступа недоступны."
+  },
+  "stats_scope_synced": {
+    "message": "Синхронизированные итоги из этого аккаунта Chrome. Локальные панели отмечены."
+  },
+  "stats_scope_local": {
+    "message": "Итоги с этого компьютера. Статистика Focus Lock не синхронизируется."
+  },
+  "stats_scope_checking": {
+    "message": "Проверяем, синхронизированы ли эти итоги."
+  },
+  "stats_scope_unavailable": {
+    "message": "Область статистики недоступна. Итоги могут включать синхронизированные данные. Почасовые попытки и недавние сессии взяты с этого компьютера."
+  },
+  "stats_scope_retry": {
+    "message": "Проверить область снова"
+  },
+  "stats_empty": {
+    "message": "Статистика появится после первой сессии."
+  },
+  "stats_tile_focus_today": {
+    "message": "Фокус сегодня"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Фокус за последние 7 дней"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Попыток заблокировано сегодня"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Запросов на разблокировку отклонено сегодня"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Кредита доступа потрачено сегодня"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Все сайты $ALL_SITES$, один сайт $ONE_SITE$, начислено $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "начислено $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Серия"
+  },
+  "stats_streak_empty": {
+    "message": "Твоя серия начнётся с первого дня фокуса."
+  },
+  "stats_streak_unit_one": {
+    "message": "день"
+  },
+  "stats_streak_unit_other": {
+    "message": "дня"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ заморозка в запасе",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ заморозки в запасе",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Заморозка серии: один пропущенный день покрыт"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ активный день в этом месяце ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ активных дня в этом месяце ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Активные даты в $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Активных дат в $MONTH$ нет.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Фокус, последние 14 дней"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Минуты фокуса появятся после первой сессии."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Заблокированные попытки, последние 14 дней"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Заблокированные попытки появятся здесь, когда сессия поймает первую."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Самые блокируемые сайты, последние 30 дней"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Пока ничего не заблокировано. Хорошее начало."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Попытки по часам, только этот компьютер"
+  },
+  "stats_chart_other_site": {
+    "message": "прочее"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$м",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ заблокировано",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ заблокировано",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Столбчатая диаграмма"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Горизонтальная столбчатая диаграмма"
+  },
+  "stats_chart_description_bar": {
+    "message": "Столбчатая диаграмма. Перемещайся по точкам с клавиатуры или открой Показать таблицей, чтобы увидеть те же значения."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Горизонтальная столбчатая диаграмма. Перемещайся по точкам с клавиатуры или открой Показать таблицей, чтобы увидеть те же значения."
+  },
+  "stats_chart_empty_default": {
+    "message": "Пока нет данных."
+  },
+  "stats_chart_table_summary": {
+    "message": "Показать таблицей"
+  },
+  "stats_chart_table_category": {
+    "message": "Категория"
+  },
+  "stats_chart_table_value": {
+    "message": "Значение"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-часовая полоса плотности заблокированных попыток"
+  },
+  "stats_sessions_heading": {
+    "message": "Недавние сессии на этом компьютере"
+  },
+  "stats_sessions_empty": {
+    "message": "Твоя первая сессия появится здесь."
+  },
+  "stats_sessions_col_date": {
+    "message": "Дата"
+  },
+  "stats_sessions_col_start": {
+    "message": "Начало"
+  },
+  "stats_sessions_col_planned": {
+    "message": "План"
+  },
+  "stats_sessions_col_focused": {
+    "message": "В фокусе"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Все сайты"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Один сайт"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Намерение"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Итог"
+  },
+  "stats_sessions_col_source": {
+    "message": "Источник"
+  },
+  "stats_session_no_intention": {
+    "message": "Без намерения"
+  },
+  "stats_session_article_label": {
+    "message": "Сессия: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "вручную"
+  },
+  "stats_session_source_schedule": {
+    "message": "расписание"
+  },
+  "stats_session_source_scheduled": {
+    "message": "по расписанию"
+  },
+  "stats_outcome_completed": {
+    "message": "Завершена"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Завершена досрочно"
+  },
+  "stats_outcome_running": {
+    "message": "Идёт"
+  },
+  "stats_streak_unit_few": {
+    "message": "дня"
+  },
+  "stats_streak_unit_many": {
+    "message": "дней"
+  },
+  "stats_streak_freeze_tokens_few": {
+    "message": "$COUNT$ заморозки в запасе",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_many": {
+    "message": "$COUNT$ заморозок в запасе",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_active_days_few": {
+    "message": "$COUNT$ активных дня в этом месяце ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_many": {
+    "message": "$COUNT$ активных дней в этом месяце ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_blocked_count_few": {
+    "message": "$COUNT$ заблокировано",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_blocked_count_many": {
+    "message": "$COUNT$ заблокировано",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

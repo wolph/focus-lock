@@ -31,7 +31,7 @@
     "message": "Choisis tes listes de départ, l'accès aux sites et le mode de stockage avant de démarrer une session."
   },
   "popup_open_setup_button": {
-    "message": "Ouvrir la configuration"
+    "message": "Configurer"
   },
   "popup_blocking_confirm_failed": {
     "message": "Impossible de confirmer le blocage des sites. Réessaie."
@@ -127,7 +127,7 @@
     "message": "Déverrouiller ce site"
   },
   "popup_unlock_all_sites": {
-    "message": "Déverrouiller tous les sites"
+    "message": "Tout déverrouiller"
   },
   "popup_spend_cost": {
     "message": "$ACCESS$ d'accès, $CREDIT$ de crédit",
@@ -160,10 +160,10 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Choisir l'onglet de travail"
+    "message": "Choisir un onglet"
   },
   "popup_change_work_tab_button": {
-    "message": "Changer d'onglet de travail"
+    "message": "Changer d'onglet"
   },
   "popup_session_actions_summary": {
     "message": "Actions de session"
@@ -179,6 +179,9 @@
   },
   "popup_add_allowed_domain_label": {
     "message": "Ajouter un domaine autorisé"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
     "message": "Ajouter le domaine autorisé"
@@ -341,6 +344,33 @@
       }
     }
   },
+  "popup_sites_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
   "popup_more_sites_one": {
     "message": "et $COUNT$ site de plus",
     "placeholders": {
@@ -351,6 +381,15 @@
     }
   },
   "popup_more_sites_other": {
+    "message": "et $COUNT$ sites de plus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_many": {
     "message": "et $COUNT$ sites de plus",
     "placeholders": {
       "COUNT": {
@@ -381,7 +420,7 @@
     "message": "Ce qui sera autorisé"
   },
   "popup_categories_selected": {
-    "message": "$SELECTED$ catégories sur $TOTAL$ sélectionnées",
+    "message": "$SELECTED$ sur $TOTAL$ catégories sélectionnées",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -411,6 +450,15 @@
       }
     }
   },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ règles bloquées en plus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "popup_allowed_rules_one": {
     "message": "$COUNT$ règle autorisée",
     "placeholders": {
@@ -421,6 +469,15 @@
     }
   },
   "popup_allowed_rules_other": {
+    "message": "$COUNT$ règles autorisées",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
     "message": "$COUNT$ règles autorisées",
     "placeholders": {
       "COUNT": {
@@ -447,6 +504,9 @@
   "popup_session_type_flexible": {
     "message": "Souple"
   },
+  "popup_session_type_friction": {
+    "message": "Friction"
+  },
   "popup_session_type_hard": {
     "message": "Verrouillage strict"
   },
@@ -454,7 +514,7 @@
     "message": "Termine la session immédiatement quand tu veux."
   },
   "popup_session_type_friction_hint": {
-    "message": "L'arrêt anticipé demande $WAIT$. Rien à saisir.",
+    "message": "Arrêt anticipé : $WAIT$. Rien à saisir.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -463,7 +523,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "L'arrêt anticipé demande $WAIT$ et une confirmation saisie.",
+    "message": "Arrêt anticipé : $WAIT$ et une confirmation saisie.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -513,6 +573,9 @@
       }
     }
   },
+  "popup_intention_label": {
+    "message": "Intention"
+  },
   "popup_intention_placeholder": {
     "message": "Sur quoi travailles-tu ?"
   },
@@ -553,7 +616,7 @@
     "message": "durée invalide"
   },
   "popup_start_focus_label": {
-    "message": "Démarrer $DURATION$ de concentration",
+    "message": "Lancer la concentration ($DURATION$)",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -586,7 +649,7 @@
     "message": "Choisis ou remplace ton onglet de travail."
   },
   "popup_saving_work_tab": {
-    "message": "Enregistrement de l'onglet de travail..."
+    "message": "Enregistrement de l'onglet..."
   },
   "popup_save_work_tab_failed": {
     "message": "Impossible d'enregistrer l'onglet de travail. Réessaie."
@@ -599,41 +662,5 @@
   },
   "popup_start_failed": {
     "message": "Impossible de démarrer la session. Réessaie."
-  },
-  "popup_sites_many": {
-    "message": "$COUNT$ sites",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "42"
-      }
-    }
-  },
-  "popup_more_sites_many": {
-    "message": "et $COUNT$ sites de plus",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "34"
-      }
-    }
-  },
-  "popup_extra_blocked_rules_many": {
-    "message": "$COUNT$ règles bloquées en plus",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "2"
-      }
-    }
-  },
-  "popup_allowed_rules_many": {
-    "message": "$COUNT$ règles autorisées",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   }
 }

@@ -22,7 +22,7 @@
     "message": "No se pudieron cargar los ajustes de sesión. Recarga la ventana para reintentarlo. Se muestran los valores por defecto."
   },
   "popup_open_setup_failed": {
-    "message": "No se pudo abrir la configuración inicial. Inténtalo de nuevo."
+    "message": "No se pudo abrir la configuración. Inténtalo de nuevo."
   },
   "popup_setup_required_heading": {
     "message": "Termina de configurar Focus Lock"
@@ -31,7 +31,7 @@
     "message": "Elige tus listas iniciales, el acceso a los sitios y el modo de almacenamiento antes de iniciar una sesión."
   },
   "popup_open_setup_button": {
-    "message": "Abrir configuración"
+    "message": "Configurar"
   },
   "popup_blocking_confirm_failed": {
     "message": "No se pudo confirmar el bloqueo de sitios. Inténtalo de nuevo."
@@ -127,7 +127,7 @@
     "message": "Desbloquear este sitio"
   },
   "popup_unlock_all_sites": {
-    "message": "Desbloquear todos los sitios"
+    "message": "Desbloquear todo"
   },
   "popup_spend_cost": {
     "message": "$ACCESS$ de acceso, $CREDIT$ de crédito",
@@ -160,10 +160,10 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Elegir pestaña de trabajo"
+    "message": "Elegir pestaña"
   },
   "popup_change_work_tab_button": {
-    "message": "Cambiar de pestaña de trabajo"
+    "message": "Cambiar de pestaña"
   },
   "popup_session_actions_summary": {
     "message": "Acciones de la sesión"
@@ -179,6 +179,9 @@
   },
   "popup_add_allowed_domain_label": {
     "message": "Añadir un dominio permitido"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
     "message": "Añadir dominio permitido"
@@ -359,6 +362,15 @@
       }
     }
   },
+  "popup_sites_many": {
+    "message": "$COUNT$ sitios",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
   "popup_more_sites_one": {
     "message": "y $COUNT$ sitio más",
     "placeholders": {
@@ -369,6 +381,15 @@
     }
   },
   "popup_more_sites_other": {
+    "message": "y $COUNT$ sitios más",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_many": {
     "message": "y $COUNT$ sitios más",
     "placeholders": {
       "COUNT": {
@@ -429,6 +450,15 @@
       }
     }
   },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ reglas bloqueadas extra",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "popup_allowed_rules_one": {
     "message": "$COUNT$ regla permitida",
     "placeholders": {
@@ -439,6 +469,15 @@
     }
   },
   "popup_allowed_rules_other": {
+    "message": "$COUNT$ reglas permitidas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
     "message": "$COUNT$ reglas permitidas",
     "placeholders": {
       "COUNT": {
@@ -462,6 +501,9 @@
   "popup_session_type_legend": {
     "message": "Tipo de sesión"
   },
+  "popup_session_type_flexible": {
+    "message": "Flexible"
+  },
   "popup_session_type_friction": {
     "message": "Fricción"
   },
@@ -472,7 +514,7 @@
     "message": "Termina la sesión al instante cuando quieras."
   },
   "popup_session_type_friction_hint": {
-    "message": "Terminar antes exige $WAIT$. No hay que escribir nada.",
+    "message": "Terminar antes: $WAIT$. No hay que escribir nada.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -481,7 +523,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Terminar antes exige $WAIT$ y una confirmación escrita.",
+    "message": "Terminar antes: $WAIT$ y una confirmación escrita.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -574,7 +616,7 @@
     "message": "duración no válida"
   },
   "popup_start_focus_label": {
-    "message": "Iniciar $DURATION$ de concentración",
+    "message": "Iniciar concentración ($DURATION$)",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -607,7 +649,7 @@
     "message": "Elige o cambia tu pestaña de trabajo."
   },
   "popup_saving_work_tab": {
-    "message": "Guardando la pestaña de trabajo..."
+    "message": "Guardando la pestaña..."
   },
   "popup_save_work_tab_failed": {
     "message": "No se pudo guardar la pestaña de trabajo. Inténtalo de nuevo."
@@ -620,41 +662,5 @@
   },
   "popup_start_failed": {
     "message": "No se pudo iniciar la sesión. Inténtalo de nuevo."
-  },
-  "popup_sites_many": {
-    "message": "$COUNT$ sitios",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "42"
-      }
-    }
-  },
-  "popup_more_sites_many": {
-    "message": "y $COUNT$ sitios más",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "34"
-      }
-    }
-  },
-  "popup_extra_blocked_rules_many": {
-    "message": "$COUNT$ reglas bloqueadas extra",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "2"
-      }
-    }
-  },
-  "popup_allowed_rules_many": {
-    "message": "$COUNT$ reglas permitidas",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
   }
 }

@@ -1,0 +1,304 @@
+{
+  "stats_document_title": {
+    "message": "Focus Lock-statistieken"
+  },
+  "stats_page_title": {
+    "message": "Je focusgeschiedenis"
+  },
+  "stats_loading": {
+    "message": "Je statistieken worden geladen."
+  },
+  "stats_load_error": {
+    "message": "Statistieken laden mislukt. Herlaad om het opnieuw te proberen."
+  },
+  "stats_partial_error_both": {
+    "message": "Pogingen per uur en de instellingen voor toegangstegoed zijn niet beschikbaar."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Pogingen per uur zijn niet beschikbaar."
+  },
+  "stats_partial_error_economy": {
+    "message": "De instellingen voor toegangstegoed zijn niet beschikbaar."
+  },
+  "stats_scope_synced": {
+    "message": "Gesynchroniseerde totalen van dit Chrome-account. Panelen die alleen lokaal zijn, staan aangegeven."
+  },
+  "stats_scope_local": {
+    "message": "Totalen van deze computer. Statistieken van Focus Lock worden niet gesynchroniseerd."
+  },
+  "stats_scope_checking": {
+    "message": "Controleren of deze totalen gesynchroniseerd zijn."
+  },
+  "stats_scope_unavailable": {
+    "message": "Het bereik van de statistieken is niet beschikbaar. Totalen kunnen gesynchroniseerde gegevens bevatten. Pogingen per uur en recente sessies komen van deze computer."
+  },
+  "stats_scope_retry": {
+    "message": "Bereik opnieuw controleren"
+  },
+  "stats_empty": {
+    "message": "Statistieken verschijnen na je eerste sessie."
+  },
+  "stats_tile_focus_today": {
+    "message": "Focus vandaag"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Focus in de laatste 7 dagen"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Vandaag geblokkeerde pogingen"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Vandaag afgebroken ontgrendelingen"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Vandaag besteed toegangstegoed"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Alle sites $ALL_SITES$, één site $ONE_SITE$, $EARNED$ verdiend",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ verdiend",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Reeks"
+  },
+  "stats_streak_empty": {
+    "message": "Je reeks begint met je eerste focusdag."
+  },
+  "stats_streak_unit_one": {
+    "message": "dag"
+  },
+  "stats_streak_unit_other": {
+    "message": "dagen"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ beschermdag gespaard",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ beschermdagen gespaard",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Reeksbescherming: één gemiste dag gedekt"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ actieve dag deze maand ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ actieve dagen deze maand ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Actieve dagen in $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Geen actieve dagen in $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Focus, laatste 14 dagen"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Focusminuten verschijnen na je eerste sessie."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Geblokkeerde pogingen, laatste 14 dagen"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Geblokkeerde pogingen verschijnen hier zodra een sessie er een tegenhoudt."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Meest geblokkeerde sites, laatste 30 dagen"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Nog niets geblokkeerd. Dat is een mooi begin."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Pogingen per uur, alleen deze computer"
+  },
+  "stats_chart_other_site": {
+    "message": "overig"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ geblokkeerd",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ geblokkeerd",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Staafdiagram"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Horizontaal staafdiagram"
+  },
+  "stats_chart_description_bar": {
+    "message": "Staafdiagram. Gebruik het toetsenbord om door de datapunten te gaan of open Als tabel bekijken voor dezelfde waarden."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Horizontaal staafdiagram. Gebruik het toetsenbord om door de datapunten te gaan of open Als tabel bekijken voor dezelfde waarden."
+  },
+  "stats_chart_empty_default": {
+    "message": "Nog geen gegevens."
+  },
+  "stats_chart_table_summary": {
+    "message": "Als tabel bekijken"
+  },
+  "stats_chart_table_category": {
+    "message": "Categorie"
+  },
+  "stats_chart_table_value": {
+    "message": "Waarde"
+  },
+  "stats_heat_strip_label": {
+    "message": "Warmtestrook van geblokkeerde pogingen over 24 uur"
+  },
+  "stats_sessions_heading": {
+    "message": "Recente sessies op deze computer"
+  },
+  "stats_sessions_empty": {
+    "message": "Je eerste sessie verschijnt hier."
+  },
+  "stats_sessions_col_date": {
+    "message": "Datum"
+  },
+  "stats_sessions_col_start": {
+    "message": "Begin"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Gepland"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Gefocust"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Alle sites"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Eén site"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Intentie"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Resultaat"
+  },
+  "stats_sessions_col_source": {
+    "message": "Bron"
+  },
+  "stats_session_no_intention": {
+    "message": "Geen intentie"
+  },
+  "stats_session_article_label": {
+    "message": "Sessie: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "handmatig"
+  },
+  "stats_session_source_schedule": {
+    "message": "schema"
+  },
+  "stats_session_source_scheduled": {
+    "message": "ingepland"
+  },
+  "stats_outcome_completed": {
+    "message": "Voltooid"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Vroeg beëindigd"
+  },
+  "stats_outcome_running": {
+    "message": "Bezig"
+  }
+}

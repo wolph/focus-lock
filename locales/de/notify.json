@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Fokussitzung abgeschlossen"
+  },
+  "notify_session_complete_body": {
+    "message": "Deine Fokussitzung ist beendet."
+  },
+  "notify_schedule_window_body": {
+    "message": "Gesperrt bis $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Fokus-Zeitplan konnte nicht starten"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Website-Sperren ist nicht aktiv. Schließe die Einrichtung ab oder gewähre Website-Zugriff und versuch es dann erneut."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Die Einrichtung wurde in einem anderen Tab abgeschlossen."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Einrichtung in einem anderen Tab geändert. Die neuesten Angaben wurden neu geladen."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Einrichtung in einem anderen Tab geändert. Lade die Einrichtung neu, bevor du abschließt."
+  },
+  "notify_setup_not_complete": {
+    "message": "Die Einrichtung ist nicht abgeschlossen."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Die Einrichtung lässt sich noch nicht abschließen."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Speicherwahl der Einrichtung geändert. Lade die Einrichtung neu, bevor du abschließt."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Speichervorgang der Einrichtung fehlgeschlagen."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Einrichtungsvorgang fehlgeschlagen."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock konnte den Website-Zugriff nicht prüfen. Wiederhole die Einrichtung oder lade die Erweiterung neu."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Website-Zugriff ist gewährt, aber Focus Lock konnte das Sperren nicht aktivieren. Wiederhole die Einrichtung oder lade die Erweiterung neu."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Website-Zugriff ist nicht verfügbar, und Focus Lock konnte das Aufräumen der Sperren nicht abschließen. Wiederhole die Einrichtung oder lade die Erweiterung neu."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock hat einen widersprüchlichen Stand des Website-Zugriffs erhalten. Wiederhole die Einrichtung oder lade die Erweiterung neu."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock hat den Start nicht abgeschlossen: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "unbekannter Fehler"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock läuft, nichts zurückzusetzen"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock kann eine Laufzeit nicht zurücksetzen, die noch in einer Richtliniengeneration festgeschrieben ist"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Für das Löschen der Daten gibt es nichts zu wiederholen."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Deaktiviere Sync, bevor du synchronisierte Daten löschst"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock schließt noch eine frühere Änderung ab. Versuch es gleich erneut."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Die offene Bedenkzeit konnte nicht geschlossen werden. Versuch es erneut."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Der Arbeits-Tab ist nicht verfügbar."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Die Einstellungen überschreiten das Chrome-Sync-Limit von 8 KB. Entferne Zeitplan-Einträge oder kürze Vorhaben und versuch es dann erneut."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Die Listen überschreiten das Chrome-Sync-Limit von 8 KB. Entferne eigene oder erlaubte Regeln und versuch es dann erneut."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "eine Sitzung mit harter Sperre läuft: gesperrte Seiten lassen sich erst nach ihrem Ende entfernen"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "eine Sitzung mit harter Sperre läuft: neue Erlaubnis-Einträge greifen erst nach ihrem Ende"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "eine Sitzung mit harter Sperre läuft: Kategorien lassen sich erst nach ihrem Ende abschalten"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "eine Sitzung mit harter Sperre läuft: neue Ausnahmen greifen erst nach ihrem Ende"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "eine Sitzung mit harter Sperre läuft: die Standardstrenge lässt sich erst nach ihrem Ende senken"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "eine Sitzung mit harter Sperre läuft: eine kürzere Bedenkzeit schwächt die Hürde"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "eine Sitzung mit harter Sperre läuft: ohne getippten Satz wird die Hürde schwächer"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "eine Sitzung mit harter Sperre läuft: schnelleres Pausenguthaben finanziert mehr Ausreden"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "eine Sitzung mit harter Sperre läuft: ein höheres Pausenlimit finanziert mehr Ausreden"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "eine Sitzung mit harter Sperre läuft: kürzere Pausen senken ihren Preis"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "eine Sitzung mit harter Sperre läuft: kürzere Entsperrungen senken ihren Preis"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "eine Sitzung mit harter Sperre läuft: ihr Zeitplan-Eintrag lässt sich erst nach ihrem Ende abschwächen"
+  }
+}

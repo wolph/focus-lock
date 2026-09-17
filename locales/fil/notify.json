@@ -1,41 +1,134 @@
 {
+  "notify_session_complete_title": {
+    "message": "Tapos na ang sesyon ng focus"
+  },
+  "notify_session_complete_body": {
+    "message": "Tapos na ang iyong sesyon ng focus."
+  },
+  "notify_schedule_window_body": {
+    "message": "Naka-lock hanggang $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Hindi makapagsimula ang iskedyul ng focus"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Hindi na-enable ang pagharang sa website. Tapusin ang setup o magbigay ng access sa website, pagkatapos ay subukan muli."
+  },
   "notify_setup_completed_elsewhere": {
-    "message": "I-set up was completed in another tab."
+    "message": "Nakumpleto ang setup sa ibang tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "I-set up changed in another tab. The latest choices were reloaded."
+    "message": "Nagbago ang setup sa ibang tab. Ang pinakabagong pagpipilian ay nag-reload."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "I-set up changed in another tab. Reload setup before finishing."
+    "message": "Nagbago ang setup sa ibang tab. I-reload ang setup bago makumpleto."
   },
   "notify_setup_not_complete": {
-    "message": "I-set up is not complete."
+    "message": "Ang setup ay hindi kumpleto."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "I-set up is not ready to finish."
+    "message": "Ang setup ay hindi handa na para makumpleto."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "I-set up storage choice changed. Reload setup before finishing."
+    "message": "Nagbago ang pagpipilian ng pag-iimbak ng setup. I-reload ang setup bago makumpleto."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Nabigong operasyon sa pag-iimbak ng onboarding."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Nabigong operasyon sa onboarding."
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lock could not check website access. Subukan Muli setup or reload the extension."
+    "message": "Hindi makakasuri ng access sa website ang Focus Lock. Subukan muli ang setup o i-reload ang extension."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
+    "message": "Binigyan ng access sa website, ngunit hindi makapagsimula ng pagharang ang Focus Lock. Subukan muli ang setup o i-reload ang extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Website access is unavailable, and Focus Lock could not finish blocking cleanup. Subukan Muli setup or reload the extension."
+    "message": "Hindi available ang access sa website, at hindi matatapos ang pagharang-buhay ng Focus Lock. Subukan muli ang setup o i-reload ang extension."
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lock received an inconsistent website access state. Subukan Muli setup or reload the extension."
+    "message": "Nakatanggap ang Focus Lock ng hindi tugmang estado ng access sa website. Subukan muli ang setup o i-reload ang extension."
+  },
+  "notify_boot_not_finished": {
+    "message": "Hindi natatapos ang pagsisimula ng Focus Lock: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "hindi kilalang error"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Tumatakbo ang Focus Lock, walang i-reset"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Hindi makakapag-reset ng runtime na nakatuon pa rin sa henerasyon ng patakaran ang Focus Lock"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Ang pagsubok muli sa pag-clear ng data ay hindi available."
   },
   "notify_disable_sync_before_delete": {
-    "message": "I-disable Sync before deleting synced data"
+    "message": "I-disable ang Sync bago i-delete ang data na naka-sync"
+  },
+  "notify_work_gate_busy": {
+    "message": "Gumagawa pa rin ng pagbabago ang Focus Lock. Subukan muli sa sandali."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Hindi maiwan ang bukas na tarangkad. Subukan muli."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Hindi available ang tab ng trabaho."
   },
   "notify_settings_sync_limit": {
-    "message": "Mga setting exceed the 8 KB Chrome Sync limit. Alisin schedule entries or shorten intentions, then try again."
+    "message": "Lampas ang mga setting sa 8 KB limit ng Chrome Sync. Alisin ang mga entry ng iskedyul o pahabain ang mga hangarin, pagkatapos ay subukan muli."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sync limit. Alisin custom or whitelist rules, then try again."
+    "message": "Lampas ang mga listahan sa 8 KB limit ng Chrome Sync. Alisin ang custom o whitelist rules, pagkatapos ay subukan muli."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "tumatakbo ang hard session: ang pag-alisin ng blocked sites ay nag-unlock kapag nagtatapos"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "tumatakbo ang hard session: ang mga bagong entry sa whitelist ay nag-unlock kapag nagtatapos"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "tumatakbo ang hard session: ang paghihigpit ng mga kategorya ay nag-unlock kapag nagtatapos"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "tumatakbo ang hard session: ang mga bagong eksklusyon ay nag-unlock kapag nagtatapos"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "tumatakbo ang hard session: ang pagpapahina ng default na higpit ay naghihintay hanggang nagtatapos"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "tumatakbo ang hard session: ang pagpapaikling ng delay ng deliberation ay pumapahina ng tarangkad"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "tumatakbo ang hard session: ang pagbubuo ng na-type na parirala ay pumapahina ng tarangkad"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "tumatakbo ang hard session: ang pagtaas ng rate ng kinikita ng pahinga ay nagmomula ng higit pang paglipad"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "tumatakbo ang hard session: ang pagtaas ng pahinga cap ay nagmomula ng higit pang paglipad"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "tumatakbo ang hard session: ang pagpapaikling ng mga paghinto ay nagpapababa ng kanilang gastos"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "tumatakbo ang hard session: ang pagpapaikling ng mga pag-unlock ay nagpapababa ng kanilang gastos"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "tumatakbo ang hard session: ang entry ng iskedyul nito ay hindi mapapahina hanggang nagtatapos"
   }
 }

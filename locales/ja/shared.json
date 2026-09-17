@@ -1,9 +1,21 @@
 {
+  "shared_until_stopped": {
+    "message": "[JA: shared_until_stopped]"
+  },
+  "shared_preset_short": {
+    "message": "[JA: shared_preset_short]"
+  },
   "shared_preset_focus": {
-    "message": "フォーカス"
+    "message": "[JA: shared_preset_focus]"
+  },
+  "shared_preset_deep_work": {
+    "message": "[JA: shared_preset_deep_work]"
+  },
+  "shared_deep_work_note": {
+    "message": "[JA: shared_deep_work_note]"
   },
   "shared_timed_hint_cycles": {
-    "message": "$MINUTES$ min total, with $フォーカス$ min フォーカス blocks",
+    "message": "[JA: shared_timed_hint_cycles] $MINUTES$ $FOCUS$",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -16,7 +28,7 @@
     }
   },
   "shared_timed_hint_plain": {
-    "message": "$MINUTES$ min uninterrupted フォーカス",
+    "message": "[JA: shared_timed_hint_plain] $MINUTES$",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -24,23 +36,56 @@
       }
     }
   },
+  "shared_start_until_stopped": {
+    "message": "[JA: shared_start_until_stopped]"
+  },
   "shared_lock_until_manual_unlock": {
-    "message": "Lock until manual ロック解除"
+    "message": "[JA: shared_lock_until_manual_unlock]"
   },
   "shared_until_stopped_disclosure": {
-    "message": "Until stopped sessions keep フレキシブル or フリクション and cannot use フォーカス and ブレーク cycles."
+    "message": "[JA: shared_until_stopped_disclosure]"
   },
   "shared_hard_unavailable_reason": {
-    "message": "ハードロック is not available for Until stopped: with no timer and no manual end, the セッション could never end."
+    "message": "[JA: shared_hard_unavailable_reason]"
   },
   "shared_end_session": {
-    "message": "End セッション"
+    "message": "[JA: shared_end_session]"
   },
   "shared_unlock": {
-    "message": "ロック解除"
+    "message": "[JA: shared_unlock]"
+  },
+  "shared_gate_wait_none": {
+    "message": "[JA: shared_gate_wait_none]"
+  },
+  "shared_gate_wait": {
+    "message": "[JA: shared_gate_wait] $SECONDS$",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "[JA: shared_gate_requirement_typed] $WAIT$",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "[JA: shared_until_stopped_hint_flexible] $LABEL$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
   },
   "shared_until_stopped_hint_friction": {
-    "message": "Runs until you ロック解除 it: $REQUIREMENT$, then $LABEL$. Cycles off.",
+    "message": "[JA: shared_until_stopped_hint_friction] $REQUIREMENT$ $LABEL$",
     "placeholders": {
       "REQUIREMENT": {
         "content": "$1",
@@ -52,80 +97,95 @@
       }
     }
   },
+  "shared_forced_cycles_label": {
+    "message": "[JA: shared_forced_cycles_label]"
+  },
+  "shared_mode_blacklist": {
+    "message": "[JA: shared_mode_blacklist]"
+  },
+  "shared_mode_whitelist": {
+    "message": "[JA: shared_mode_whitelist]"
+  },
   "shared_focus_time_label": {
-    "message": "フォーカス time"
+    "message": "[JA: shared_focus_time_label]"
   },
   "shared_clock_focus_phase": {
-    "message": "フォーカス phase"
+    "message": "[JA: shared_clock_focus_phase]"
   },
   "shared_clock_total_session": {
-    "message": "total セッション"
+    "message": "[JA: shared_clock_total_session]"
   },
   "shared_clock_pause": {
-    "message": "ポーズ"
+    "message": "[JA: shared_clock_pause]"
   },
   "shared_clock_break": {
-    "message": "ブレーク"
+    "message": "[JA: shared_clock_break]"
   },
   "shared_badge_indefinite": {
-    "message": "ON"
+    "message": "[JA: shared_badge_indefinite]"
   },
   "shared_popup_starting": {
-    "message": "フォーカス Lock is starting. Applying your selected ルール."
+    "message": "[JA: shared_popup_starting]"
   },
   "shared_popup_closure_cleanup": {
-    "message": "セッション ended. Finishing browser cleanup."
+    "message": "[JA: shared_popup_closure_cleanup]"
   },
   "shared_popup_transition_cleanup": {
-    "message": "フォーカス Lock could not start. Finishing browser cleanup."
+    "message": "[JA: shared_popup_transition_cleanup]"
   },
   "shared_popup_transition_error": {
-    "message": "フォーカス Lock could not clean up an incomplete start."
+    "message": "[JA: shared_popup_transition_error]"
   },
   "shared_popup_closure_error": {
-    "message": "フォーカス Lock could not finish browser cleanup."
+    "message": "[JA: shared_popup_closure_error]"
   },
   "shared_retry_cleanup": {
-    "message": "再試行 cleanup"
+    "message": "[JA: shared_retry_cleanup]"
   },
   "shared_end_failed": {
-    "message": "Could not end セッション. もう一度お試しください."
+    "message": "[JA: shared_end_failed]"
   },
   "shared_retry_failed": {
-    "message": "Could not 再試行 cleanup. もう一度お試しください."
+    "message": "[JA: shared_retry_failed]"
   },
   "shared_action_failed": {
-    "message": "Could not request that action. もう一度お試しください."
+    "message": "[JA: shared_action_failed]"
   },
   "shared_return_to_work_failed": {
-    "message": "Could not return to work. もう一度お試しください."
+    "message": "[JA: shared_return_to_work_failed]"
   },
   "shared_data_clear_pending": {
-    "message": "Deleting フォーカス Lock データ. Finishing cleanup."
+    "message": "[JA: shared_data_clear_pending]"
   },
   "shared_data_clear_error": {
-    "message": "Could not 削除 データ. もう一度お試しください."
+    "message": "[JA: shared_data_clear_error]"
+  },
+  "shared_schedule_window_label": {
+    "message": "[JA: shared_schedule_window_label]"
   },
   "shared_schedule_until_stopped": {
-    "message": "Starts on スケジュール and runs until you stop it: End セッション for フレキシブル, ロック解除 through the deliberation gate for フリクション. Cycles off."
+    "message": "[JA: shared_schedule_until_stopped]"
   },
   "shared_schedule_started_title": {
-    "message": "フォーカス スケジュール started"
+    "message": "[JA: shared_schedule_started_title]"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "[JA: shared_schedule_until_stopped_body]"
   },
   "shared_settings_indefinite": {
-    "message": "Until stopped セッション active. Use the toolbar popup to view or end it."
+    "message": "[JA: shared_settings_indefinite]"
   },
   "shared_settings_starting": {
-    "message": "フォーカス Lock is starting. Checking ウェブサイト アクセス and applying your ルール."
+    "message": "[JA: shared_settings_starting]"
   },
   "shared_settings_error": {
-    "message": "フォーカス Lock could not finish browser cleanup. Open the popup and 再試行."
+    "message": "[JA: shared_settings_error]"
   },
   "shared_settings_session_disclosure": {
-    "message": "The toolbar popup owns セッション controls. The active セッション keeps the ルール captured when it started."
+    "message": "[JA: shared_settings_session_disclosure]"
   },
   "shared_settings_timed": {
-    "message": "Timed セッション active until $TIME$. It ends automatically. Use the toolbar popup for live status.",
+    "message": "[JA: shared_settings_timed] $TIME$",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -133,26 +193,78 @@
       }
     }
   },
+  "shared_outcome_timer_completed": {
+    "message": "[JA: shared_outcome_timer_completed]"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "[JA: shared_outcome_manual_completed]"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "[JA: shared_outcome_manual_canceled]"
+  },
   "shared_outcome_website_access_lost": {
-    "message": "Ended: ウェブサイト アクセス lost"
+    "message": "[JA: shared_outcome_website_access_lost]"
   },
   "shared_outcome_content_registration_failed": {
-    "message": "Ended: blocking セットアップ 失敗"
+    "message": "[JA: shared_outcome_content_registration_failed]"
   },
   "shared_outcome_alarm_failed": {
-    "message": "Ended: timer セットアップ 失敗"
+    "message": "[JA: shared_outcome_alarm_failed]"
   },
   "shared_outcome_tab_enforcement_failed": {
-    "message": "Ended: ページ enforcement 失敗"
+    "message": "[JA: shared_outcome_tab_enforcement_failed]"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "Ended: recovery 失敗"
+    "message": "[JA: shared_outcome_invalid_active_state]"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "[JA: shared_duration_hours_minutes] $HOURS$ $MINUTES$",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "[JA: shared_duration_minutes] $MINUTES$",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "[JA: shared_minutes_one] $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "[JA: shared_minutes_other] $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
   },
   "shared_updating_session": {
-    "message": "Updating セッション"
+    "message": "[JA: shared_updating_session]"
+  },
+  "shared_less_than_a_minute": {
+    "message": "[JA: shared_less_than_a_minute]"
   },
   "shared_focus_remaining_break": {
-    "message": "$DURATION$ until your ブレーク",
+    "message": "[JA: shared_focus_remaining_break] $DURATION$",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -161,7 +273,7 @@
     }
   },
   "shared_focus_remaining_session": {
-    "message": "$DURATION$ left in this セッション",
+    "message": "[JA: shared_focus_remaining_session] $DURATION$",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -169,14 +281,42 @@
       }
     }
   },
+  "shared_cost_exceeds_limit": {
+    "message": "[JA: shared_cost_exceeds_limit]"
+  },
   "shared_credit_resumes_focus": {
-    "message": "Credit earning resumes during フォーカス"
+    "message": "[JA: shared_credit_resumes_focus]"
+  },
+  "shared_credit_off": {
+    "message": "[JA: shared_credit_off]"
   },
   "shared_not_enough_time": {
-    "message": "Not enough time in this フォーカス block"
+    "message": "[JA: shared_not_enough_time]"
+  },
+  "shared_ready_in": {
+    "message": "[JA: shared_ready_in] $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "[JA: shared_verdict_with_pattern] $LABEL$ $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
   },
   "shared_verdict_blocked_category": {
-    "message": "Blocked by $カテゴリ$",
+    "message": "[JA: shared_verdict_blocked_category] $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -185,100 +325,232 @@
     }
   },
   "shared_verdict_blocked_custom": {
-    "message": "Blocked by your ブロックリスト"
+    "message": "[JA: shared_verdict_blocked_custom]"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "Not on your ホワイトリスト"
+    "message": "[JA: shared_verdict_whitelist_miss]"
   },
   "shared_verdict_blocked_session": {
-    "message": "Blocked by this セッション"
+    "message": "[JA: shared_verdict_blocked_session]"
   },
   "shared_verdict_allow_list": {
-    "message": "On your ホワイトリスト"
+    "message": "[JA: shared_verdict_allow_list]"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "[JA: shared_verdict_always_allowed]"
+  },
+  "shared_verdict_unlock": {
+    "message": "[JA: shared_verdict_unlock]"
   },
   "shared_verdict_excluded": {
-    "message": "Excluded from a selected カテゴリ"
+    "message": "[JA: shared_verdict_excluded]"
   },
   "shared_verdict_no_session": {
-    "message": "No active フォーカスセッション"
+    "message": "[JA: shared_verdict_no_session]"
   },
   "shared_verdict_allowed_session": {
-    "message": "Allowed by this セッション"
+    "message": "[JA: shared_verdict_allowed_session]"
+  },
+  "shared_category_social": {
+    "message": "[JA: shared_category_social]"
+  },
+  "shared_category_video": {
+    "message": "[JA: shared_category_video]"
+  },
+  "shared_category_news": {
+    "message": "[JA: shared_category_news]"
+  },
+  "shared_category_mail": {
+    "message": "[JA: shared_category_mail]"
+  },
+  "shared_category_shopping": {
+    "message": "[JA: shared_category_shopping]"
+  },
+  "shared_category_gaming": {
+    "message": "[JA: shared_category_gaming]"
+  },
+  "shared_category_forums": {
+    "message": "[JA: shared_category_forums]"
   },
   "shared_synced_settings": {
-    "message": "設定"
+    "message": "[JA: shared_synced_settings]"
+  },
+  "shared_synced_lists": {
+    "message": "[JA: shared_synced_lists]"
   },
   "shared_synced_credit": {
-    "message": "サイトアクセスクレジット"
+    "message": "[JA: shared_synced_credit]"
+  },
+  "shared_synced_streaks": {
+    "message": "[JA: shared_synced_streaks]"
   },
   "shared_synced_aggregates": {
-    "message": "ドメイン-level blocked-attempt aggregates"
+    "message": "[JA: shared_synced_aggregates]"
+  },
+  "shared_local_full_urls": {
+    "message": "[JA: shared_local_full_urls]"
   },
   "shared_local_intentions": {
-    "message": "フォーカス intentions"
+    "message": "[JA: shared_local_intentions]"
   },
   "shared_local_events": {
-    "message": "Detailed セッション events"
+    "message": "[JA: shared_local_events]"
   },
   "shared_local_runtime": {
-    "message": "Active runtime セッション"
+    "message": "[JA: shared_local_runtime]"
   },
   "shared_legacy_policy_dropped": {
-    "message": "Some synced データ from an older version could not be read and was reset."
+    "message": "[JA: shared_legacy_policy_dropped]"
   },
   "shared_all_data_clear_running": {
-    "message": "End the running セッション before deleting all データ."
+    "message": "[JA: shared_all_data_clear_running]"
   },
   "shared_nav_brand": {
-    "message": "フォーカス Lock"
+    "message": "[JA: shared_nav_brand]"
+  },
+  "shared_nav_product": {
+    "message": "[JA: shared_nav_product]"
+  },
+  "shared_nav_overview": {
+    "message": "[JA: shared_nav_overview]"
   },
   "shared_nav_settings": {
-    "message": "設定"
+    "message": "[JA: shared_nav_settings]"
+  },
+  "shared_section_blocking": {
+    "message": "[JA: shared_section_blocking]"
   },
   "shared_section_schedule": {
-    "message": "スケジュール"
+    "message": "[JA: shared_section_schedule]"
   },
   "shared_section_behavior": {
-    "message": "セッション behavior"
+    "message": "[JA: shared_section_behavior]"
   },
   "shared_section_budget": {
-    "message": "サイトアクセスクレジット"
+    "message": "[JA: shared_section_budget]"
+  },
+  "shared_section_notifications": {
+    "message": "[JA: shared_section_notifications]"
   },
   "shared_section_privacy": {
-    "message": "プライバシー and データ"
+    "message": "[JA: shared_section_privacy]"
+  },
+  "shared_theme_auto": {
+    "message": "[JA: shared_theme_auto]"
+  },
+  "shared_theme_light": {
+    "message": "[JA: shared_theme_light]"
+  },
+  "shared_theme_dark": {
+    "message": "[JA: shared_theme_dark]"
+  },
+  "shared_theme_button": {
+    "message": "[JA: shared_theme_button] $CURRENT$ $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
   },
   "shared_theme_error": {
-    "message": "Could not 保存 theme. Reload ページ and もう一度お試しください."
+    "message": "[JA: shared_theme_error]"
+  },
+  "shared_host_search_label": {
+    "message": "[JA: shared_host_search_label] $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "[JA: shared_host_none] $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "[JA: shared_host_partial] $SHOWN$ $MATCHED$",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "[JA: shared_host_matched] $MATCHED$ $TOTAL$",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "[JA: shared_host_all] $TOTAL$",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
   },
   "shared_end_the_session": {
-    "message": "End the セッション"
+    "message": "[JA: shared_end_the_session]"
   },
   "shared_overlay_starting_title": {
-    "message": "フォーカス Lock is starting"
+    "message": "[JA: shared_overlay_starting_title]"
   },
   "shared_overlay_starting_detail": {
-    "message": "Applying your selected ルール."
+    "message": "[JA: shared_overlay_starting_detail]"
   },
   "shared_overlay_stopped_page": {
-    "message": "This ページ did not load. It will load by itself when the セッション ends."
+    "message": "[JA: shared_overlay_stopped_page]"
+  },
+  "shared_overlay_next_step": {
+    "message": "[JA: shared_overlay_next_step]"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "[JA: shared_overlay_back_to_work]"
   },
   "shared_overlay_choose_work_tab": {
-    "message": "Choose a ワークタブ"
+    "message": "[JA: shared_overlay_choose_work_tab]"
   },
   "shared_overlay_change_work_tab": {
-    "message": "Change ワークタブ"
+    "message": "[JA: shared_overlay_change_work_tab]"
   },
   "shared_overlay_access_summary": {
-    "message": "Need a ブレーク or サイトアクセス?"
+    "message": "[JA: shared_overlay_access_summary]"
   },
   "shared_overlay_access_note": {
-    "message": "You can step away at any time. サイトアクセス uses credit."
+    "message": "[JA: shared_overlay_access_note]"
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "[JA: shared_overlay_gate_force_end]"
   },
   "shared_overlay_transport_error": {
-    "message": "フォーカス Lock could not update this action. もう一度お試しください."
+    "message": "[JA: shared_overlay_transport_error]"
   },
   "shared_overlay_bank_amount": {
-    "message": "$AMOUNT$ サイトアクセスクレジット",
+    "message": "[JA: shared_overlay_bank_amount] $AMOUNT$",
     "placeholders": {
       "AMOUNT": {
         "content": "$1",
@@ -286,14 +558,52 @@
       }
     }
   },
+  "shared_overlay_next_step_fallback": {
+    "message": "[JA: shared_overlay_next_step_fallback]"
+  },
   "shared_overlay_pause_action": {
-    "message": "ロック解除 all sites"
+    "message": "[JA: shared_overlay_pause_action]"
   },
   "shared_overlay_unlock_site_action": {
-    "message": "ロック解除 this site"
+    "message": "[JA: shared_overlay_unlock_site_action]"
+  },
+  "shared_overlay_spend_action": {
+    "message": "[JA: shared_overlay_spend_action] $LABEL$ $LENGTH$ $COST$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "[JA: shared_overlay_locked_until] $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "[JA: shared_overlay_gate_said] $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
   },
   "shared_overlay_unlock_host": {
-    "message": "ロック解除 $HOST$ $CLOCK$",
+    "message": "[JA: shared_overlay_unlock_host] $HOST$ $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -305,25 +615,13 @@
       }
     }
   },
+  "shared_gate_back": {
+    "message": "[JA: shared_gate_back]"
+  },
+  "shared_gate_phrase_label": {
+    "message": "[JA: shared_gate_phrase_label]"
+  },
   "shared_gate_end_title": {
-    "message": "End this セッション"
-  },
-  "shared_minutes_one": {
-    "message": "$COUNT$ min",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "shared_minutes_other": {
-    "message": "$COUNT$ min",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "25"
-      }
-    }
+    "message": "[JA: shared_gate_end_title]"
   }
 }

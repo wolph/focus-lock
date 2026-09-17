@@ -217,6 +217,46 @@
   "shared_outcome_invalid_active_state": {
     "message": "Encerrada: falha na recuperação"
   },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ min",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ minuto",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ minutos",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
   "shared_updating_session": {
     "message": "Atualizando a sessão"
   },
@@ -259,6 +299,19 @@
       "CLOCK": {
         "content": "$1",
         "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: “$PATTERN$”",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
       }
     }
   },
@@ -351,6 +404,9 @@
   },
   "shared_all_data_clear_running": {
     "message": "Encerre a sessão em andamento antes de excluir todos os dados."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
   },
   "shared_nav_product": {
     "message": "Navegação do produto"
@@ -569,7 +625,7 @@
     "message": "Encerrar esta sessão"
   },
   "shared_minutes_many": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ minutos",
     "placeholders": {
       "COUNT": {
         "content": "$1",

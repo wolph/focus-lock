@@ -1,0 +1,137 @@
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "Lukittu - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Tarkistetaan käytettävissä olevia työvälilehtiä..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Valitse avoin välilehti jatkaaksesi tehtävääsi."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Keskittymisjaksosi ei ole käytettävissä. Yritä uudelleen tai lataa tämä sivu uudelleen."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Työvälilehteäsi ei voitu ladata. Yritä uudelleen tai lataa tämä sivu uudelleen."
+  },
+  "overlay_target_reconnect": {
+    "message": "Lataa tämä sivu uudelleen yhdistääksesi Focus Lockiin."
+  },
+  "overlay_target_page_changed": {
+    "message": "Pyytänyt sivu on muuttunut. Lataa sivu uudelleen."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lockia ei tavoitettu. Yritä uudelleen."
+  },
+  "overlay_picker_heading": {
+    "message": "Valitse työvälilehti"
+  },
+  "overlay_picker_cancel": {
+    "message": "Peruuta"
+  },
+  "overlay_picker_search_label": {
+    "message": "Hae työvälilehtiä"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Hae otsikolla tai sivustolla"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Tyhjennä haku"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Päivitä välilehdet"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Vapaat työvälilehdet"
+  },
+  "overlay_picker_finding": {
+    "message": "Etsitään käytettäviä välilehtiä..."
+  },
+  "overlay_picker_searching": {
+    "message": "Haetaan työvälilehtiä..."
+  },
+  "overlay_picker_saving": {
+    "message": "Tallennetaan työvälilehteä..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Ei käytettäviä työvälilehtiä. Avaa jakson sallima sivusto ja päivitä välilehdet."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Ei osumia. Kokeile toista hakua tai tyhjennä haku."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Työvälilehtiä ei voitu ladata. Yritä uudelleen."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$/$COUNT$ välilehti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$/$COUNT$ välilehteä",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  }
+}

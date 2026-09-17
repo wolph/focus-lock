@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Konfigurera Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock-installation"
+  },
+  "onboarding_progress": {
+    "message": "Steg $STEP$ av $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Din sparade installationsprogress kunde inte återställas. Börjar om med dina nuvarande standardvärden."
+  },
+  "onboarding_complete_heading": {
+    "message": "Installationen är klar"
+  },
+  "onboarding_complete_body": {
+    "message": "Dina val är sparade. Öppna Focus Lock i Chromes verktygsfält för att starta ett pass."
+  },
+  "onboarding_error_heading": {
+    "message": "Installationen är inte tillgänglig"
+  },
+  "onboarding_error_body": {
+    "message": "Kunde inte läsa in installationen. Försök igen."
+  },
+  "onboarding_retry_button": {
+    "message": "Försök igen"
+  },
+  "onboarding_save_error": {
+    "message": "Kunde inte spara installationsprogressen. Försök igen."
+  },
+  "onboarding_enable_error": {
+    "message": "Kunde inte aktivera webbplatsblockering. Försök igen."
+  },
+  "onboarding_finish_error": {
+    "message": "Kunde inte slutföra installationen. Dina val är fortfarande sparade. Försök igen."
+  },
+  "onboarding_lists_heading": {
+    "message": "Välj din första blocklista"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "I $MODE$ är aktiverade kategorier och extra blockerade webbplatser otillgängliga.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "I $MODE$ är alla webbplatser otillgängliga utom de i din tillåtlista.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Dessa val blir standard för framtida pass. Du kan ändra dem senare."
+  },
+  "onboarding_lists_legend": {
+    "message": "Rekommenderade webbplatskategorier"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ webbplats",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ webbplatser",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Visa webbplatser i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Dölj webbplatser i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Domäner i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Fortsätt"
+  },
+  "onboarding_access_heading": {
+    "message": "Aktivera webbplatsblockering"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock kontrollerar sidadresser lokalt för att kunna matcha dina valda kategorier och webbplatser. Webbplatsåtkomsten används för att visa blockeringsskärmen och återställa berörda sidor när ditt pass tar slut."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategorier och egna domäner kan omfatta vilken webbplats som helst. Chrome begär därför den här behörigheten:"
+  },
+  "onboarding_access_capability": {
+    "message": "Läsa och ändra alla dina data på alla webbplatser"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock använder den åtkomsten bara när dina blockeringsregler tillämpas."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome gav inte webbplatsåtkomst. Du kan försöka igen."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Webbplatsåtkomst är beviljad, men Focus Lock kunde inte aktivera blockeringen. Gör om installationen eller läs in tillägget på nytt."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Aktivera webbplatsblockering"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Inte nu"
+  },
+  "onboarding_sync_heading": {
+    "message": "Välj var dina inställningar lagras"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Synka mellan Chrome-enheter"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "De godkända uppgifterna nedan använder Chrome Sync när du har slutfört installationen."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "All data i Focus Lock stannar i den här Chrome-profilen."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Synkroniserat"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Endast lokalt"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Ingenting skickas till utvecklaren av Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Slutför installationen med synk på"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Slutför installationen utan synk"
+  }
+}

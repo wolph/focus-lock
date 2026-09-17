@@ -6,7 +6,7 @@
     "message": "breve"
   },
   "shared_preset_focus": {
-    "message": "concentración"
+    "message": "enfoque"
   },
   "shared_preset_deep_work": {
     "message": "trabajo profundo"
@@ -85,7 +85,7 @@
     }
   },
   "shared_until_stopped_hint_friction": {
-    "message": "Sigue hasta que la desbloquees: $REQUIREMENT$ y luego $LABEL$. Ciclos desactivados.",
+    "message": "Sigue hasta que la desbloquees: $REQUIREMENT$, y luego $LABEL$. Ciclos desactivados.",
     "placeholders": {
       "REQUIREMENT": {
         "content": "$1",
@@ -107,7 +107,7 @@
     "message": "Permitir solo los sitios seleccionados"
   },
   "shared_focus_time_label": {
-    "message": "Tiempo de concentración"
+    "message": "Concentración"
   },
   "shared_clock_focus_phase": {
     "message": "fase de concentración"
@@ -200,7 +200,7 @@
     "message": "Completada manualmente"
   },
   "shared_outcome_manual_canceled": {
-    "message": "Terminada antes de tiempo"
+    "message": "Terminada antes"
   },
   "shared_outcome_website_access_lost": {
     "message": "Terminada: se perdió el acceso a los sitios"
@@ -216,6 +216,55 @@
   },
   "shared_outcome_invalid_active_state": {
     "message": "Terminada: falló la recuperación"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ m",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_many": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
   },
   "shared_updating_session": {
     "message": "Actualizando la sesión"
@@ -233,7 +282,7 @@
     }
   },
   "shared_focus_remaining_session": {
-    "message": "$DURATION$ restantes en esta sesión",
+    "message": "$DURATION$ de sesión restante",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -259,6 +308,19 @@
       "CLOCK": {
         "content": "$1",
         "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
       }
     }
   },
@@ -293,7 +355,7 @@
     "message": "Excluido de una categoría seleccionada"
   },
   "shared_verdict_no_session": {
-    "message": "No hay ninguna sesión de concentración activa"
+    "message": "Sin sesión de concentración activa"
   },
   "shared_verdict_allowed_session": {
     "message": "Permitido por esta sesión"
@@ -352,6 +414,9 @@
   "shared_all_data_clear_running": {
     "message": "Termina la sesión en curso antes de eliminar todos los datos."
   },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
   "shared_nav_product": {
     "message": "Navegación del producto"
   },
@@ -378,6 +443,9 @@
   },
   "shared_section_privacy": {
     "message": "Privacidad y datos"
+  },
+  "shared_theme_auto": {
+    "message": "Automático"
   },
   "shared_theme_light": {
     "message": "Claro"
@@ -473,10 +541,10 @@
     "message": "Volver al trabajo"
   },
   "shared_overlay_choose_work_tab": {
-    "message": "Elegir pestaña de trabajo"
+    "message": "Elegir pestaña"
   },
   "shared_overlay_change_work_tab": {
-    "message": "Cambiar de pestaña de trabajo"
+    "message": "Cambiar de pestaña"
   },
   "shared_overlay_access_summary": {
     "message": "¿Necesitas un descanso o acceso?"
@@ -503,7 +571,7 @@
     "message": "Sigue con tu tarea actual"
   },
   "shared_overlay_pause_action": {
-    "message": "Desbloquear todos los sitios"
+    "message": "Desbloquear todo"
   },
   "shared_overlay_unlock_site_action": {
     "message": "Desbloquear este sitio"
@@ -564,14 +632,5 @@
   },
   "shared_gate_end_title": {
     "message": "Terminar esta sesión"
-  },
-  "shared_minutes_many": {
-    "message": "$COUNT$ min",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "25"
-      }
-    }
   }
 }

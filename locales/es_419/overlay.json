@@ -1,6 +1,39 @@
 {
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
   "overlay_stopped_title": {
     "message": "Bloqueado - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
   },
   "overlay_target_checking": {
     "message": "Revisando las pestañas de trabajo disponibles..."
@@ -30,7 +63,7 @@
     "message": "Cancelar"
   },
   "overlay_picker_search_label": {
-    "message": "Buscar pestañas de trabajo"
+    "message": "Buscar pestañas"
   },
   "overlay_picker_search_placeholder": {
     "message": "Buscar por título o sitio"
@@ -48,10 +81,10 @@
     "message": "Revisando las pestañas disponibles..."
   },
   "overlay_picker_searching": {
-    "message": "Buscando entre las pestañas de trabajo..."
+    "message": "Buscando pestañas..."
   },
   "overlay_picker_saving": {
-    "message": "Guardando la pestaña de trabajo..."
+    "message": "Guardando la pestaña..."
   },
   "overlay_picker_no_tabs": {
     "message": "No hay pestañas de trabajo disponibles. Abre un sitio permitido por esta sesión y actualiza las pestañas."
@@ -60,7 +93,7 @@
     "message": "Ninguna pestaña coincide. Prueba otra búsqueda o bórrala."
   },
   "overlay_picker_load_failed": {
-    "message": "No se pudieron cargar las pestañas de trabajo. Intenta de nuevo."
+    "message": "No se pudieron cargar las pestañas. Intenta de nuevo."
   },
   "overlay_picker_count_one": {
     "message": "$MATCHES$ de $COUNT$ pestaña",
@@ -98,6 +131,19 @@
       "MATCHES": {
         "content": "$2",
         "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
       }
     }
   }

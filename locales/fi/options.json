@@ -1,0 +1,849 @@
+{
+  "options_page_title": {
+    "message": "Focus Lockin asetukset"
+  },
+  "options_heading": {
+    "message": "Focus Lockin asetukset"
+  },
+  "options_loading_settings": {
+    "message": "Ladataan asetuksia"
+  },
+  "options_privacy_loading": {
+    "message": "Ladataan tietosuoja-asetuksia"
+  },
+  "options_save_failed": {
+    "message": "Tallennus ei onnistunut. Yritä uudelleen."
+  },
+  "options_blocking_heading": {
+    "message": "Esto"
+  },
+  "options_blocking_help": {
+    "message": "Omat säännöt estävät estolistajaksojen aikana. Sallittujen lista on se, mikä pysyy käytettävissä sallittujen listan jaksoissa. Valmiit kategoriat estävät tavalliset ajanviejät."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Oma estolista"
+  },
+  "options_whitelist_title": {
+    "message": "Sallittujen lista"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Valmiit kategoriat"
+  },
+  "options_bundled_categories_help": {
+    "message": "Valmiita listoja tavallisista ajanviejistä. Kytke koko kategoria päälle tai pois ja avaa se sitten pitääksesi yksittäiset sivustot käytettävissä."
+  },
+  "options_schedule_heading": {
+    "message": "Aikataulu"
+  },
+  "options_schedule_help": {
+    "message": "Jaksot käynnistyvät itsestään näiden aikaikkunoiden sisällä. Tässä valittu tiukkuus koskee koko ikkunaa."
+  },
+  "options_behavior_heading": {
+    "message": "Jakson toiminta"
+  },
+  "options_budget_heading": {
+    "message": "Käyttökrediitti"
+  },
+  "options_notifications_heading": {
+    "message": "Ilmoitukset"
+  },
+  "options_privacy_heading": {
+    "message": "Tietosuoja ja tiedot"
+  },
+  "options_load_error_retry": {
+    "message": "Yritä uudelleen"
+  },
+  "options_load_error_delete_all": {
+    "message": "Poista kaikki ja aloita alusta"
+  },
+  "options_load_error_keep_data": {
+    "message": "Säilytä tietoni"
+  },
+  "options_delete_all_data": {
+    "message": "Poista kaikki Focus Lockin tiedot"
+  },
+  "options_dirty_saving": {
+    "message": "Tallennetaan muutoksia"
+  },
+  "options_dirty_unsaved": {
+    "message": "Tallentamattomia muutoksia"
+  },
+  "options_dirty_clean": {
+    "message": "Ei tallentamattomia muutoksia"
+  },
+  "options_dirty_discard": {
+    "message": "Hylkää muutokset"
+  },
+  "options_dirty_save": {
+    "message": "Tallenna muutokset"
+  },
+  "options_session_status_label": {
+    "message": "Jakson tila"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "verkkotunnus"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
+  "options_rule_remove": {
+    "message": "Poista"
+  },
+  "options_rule_remove_aria": {
+    "message": "Poista $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Ei vielä sääntöjä."
+  },
+  "options_rule_kind_aria": {
+    "message": "Säännön tyyppi"
+  },
+  "options_rule_kind_host_option": {
+    "message": "verkkotunnus tai aliverkkotunnus"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (koko URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Kuvio"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "Lisää sääntö"
+  },
+  "options_rules_help": {
+    "message": "facebook.com kattaa kyseisen verkkotunnuksen ja kaikki aliverkkotunnukset. news.ycombinator.com kattaa kyseisen aliverkkotunnuksen ja kaiken sen alla. /youtube\\.com\\/shorts/ vastaa koko URL-osoitetta säännöllisenä lausekkeena."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ on oltava positiivinen kokonaisluku.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ on oltava kokonaisluku, joka on nolla tai suurempi.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ on oltava nolla tai suurempi.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ on oltava tuetulla minuuttivälillä.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ on oltava tuetulla päivävälillä.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Jakson oletukset"
+  },
+  "options_session_defaults_help": {
+    "message": "Tila ja tiukkuus lukitaan, kun jakso alkaa. Nämä ovat arvot, joilla aloituslomake avautuu."
+  },
+  "options_preset_short_label": {
+    "message": "Lyhyen jakson esiasetus (minuuttia)"
+  },
+  "options_preset_default_label": {
+    "message": "Tavallisen jakson esiasetus (minuuttia)"
+  },
+  "options_preset_deep_label": {
+    "message": "Syvän jakson esiasetus (minuuttia)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Estolista: estä listatut sivustot"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Sallittujen lista: salli vain listatut sivustot"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Joustava: lopeta jakso milloin haluat"
+  },
+  "options_strictness_friction_label": {
+    "message": "Kitka: aikainen lopetus kulkee asetetun harkintaportin kautta"
+  },
+  "options_strictness_hard_label": {
+    "message": "Tiukka lukitus: ei aikaista lopetusta, vain tilapäinen sivuston käyttö"
+  },
+  "options_cycle_heading": {
+    "message": "Keskittymisen ja tauon sykli"
+  },
+  "options_cycle_help": {
+    "message": "Oletukset: 25 minuutin keskittyminen, 5 minuutin tauko, 15 minuutin pitkä tauko joka neljännellä syklillä. Aikataulutetut tauot voittavat tauko-kun-siltä-tuntuu -tavan mielialassa ja keskittymisessä tutkimusotoksissa. Tarkat minuutit ovat sopimus, eivät tiedettä."
+  },
+  "options_cycle_default_label": {
+    "message": "Vuorottele keskittymistä ja taukoja oletuksena"
+  },
+  "options_focus_minutes_label": {
+    "message": "Keskittymisminuutit"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Lyhyen tauon minuutit"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Pitkän tauon minuutit"
+  },
+  "options_long_every_label": {
+    "message": "Pitkä tauko joka N. syklillä"
+  },
+  "options_gate_heading": {
+    "message": "Harkintaportti"
+  },
+  "options_gate_help": {
+    "message": "10 sekunnin odotus ja selkeä paluu töihin -painike vähentävät mitattavasti impulssikäyntejä (kenttätutkimus, PNAS 2023). Pidempi odotus ja kirjoitettava lause suunnilleen kaksinkertaistavat vaikutuksen."
+  },
+  "options_gate_wait_one": {
+    "message": "Odota $COUNT$ sekunti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Odota $COUNT$ sekuntia",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Oma arvo"
+  },
+  "options_custom_delay_label": {
+    "message": "Oma viive (sekuntia)"
+  },
+  "options_custom_delay_error": {
+    "message": "Oman viiveen on oltava positiivinen kokonaisluku sekunteja."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Vaadi myös lauseen kirjoittamista"
+  },
+  "options_gate_force_end_label": {
+    "message": "Ota käyttöön painike ”Ohita odotus ja lopeta silti”"
+  },
+  "options_credit_help": {
+    "message": "Käyttökrediittiä kertyy, kun keskityt. Sekä kaikkien sivustojen käyttö että yhden sivuston avaus veloitetaan samasta saldosta. Voit pitää taukoa milloin tahansa ilman krediitin kulutusta."
+  },
+  "options_earn_rate_label": {
+    "message": "Sivustojen käyttöminuutteja 30 keskittymisminuuttia kohden"
+  },
+  "options_credit_cap_label": {
+    "message": "Käyttökrediitin yläraja (minuuttia)"
+  },
+  "options_pause_length_label": {
+    "message": "Kaikkien sivustojen käytön kesto (minuuttia)"
+  },
+  "options_unlock_length_label": {
+    "message": "Sivuston avauksen kesto (minuuttia)"
+  },
+  "options_streak_heading": {
+    "message": "Putki ja säilytys"
+  },
+  "options_streak_help": {
+    "message": "Putki laskee päivät, jotka yltävät tavoitteeseen. Yksi tavallinen jakso pitää ketjun elossa, ja jäädytysmerkki korjaa väliin jääneen päivän."
+  },
+  "options_streak_goal_label": {
+    "message": "Päivittäinen putkitavoite (keskittymisminuuttia)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Jäädytysmerkin väli (päivää)"
+  },
+  "options_retention_label": {
+    "message": "Säilytä päivätilastot (päivää)"
+  },
+  "options_category_on_announcement": {
+    "message": "Kategoria $CATEGORY$ päällä.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Kategoria $CATEGORY$ pois.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Kaikki kategoriat päällä."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Kaikki kategoriat pois."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ on mukana.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ pidetään käytettävissä.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Kaikki kategorian $CATEGORY$ sivustot ovat mukana.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Kaikki kategorian $CATEGORY$ sivustot pidetään käytettävissä.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Kategorioiden massatoiminnot"
+  },
+  "options_selected_count": {
+    "message": "Valittu $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Valitsematta $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Valitse kaikki"
+  },
+  "options_deselect_all": {
+    "message": "Poista kaikki valinnat"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Valitse kaikki kategoriat"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Poista kaikkien kategorioiden valinnat"
+  },
+  "options_show_category_sites": {
+    "message": "Näytä kategorian $CATEGORY$ sivustot",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Piilota kategorian $CATEGORY$ sivustot",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ sivusto mukana",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ sivustoa mukana",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Kategoria pois päältä"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ mukana, kun käytössä",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ mukana, kun käytössä",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Poista sivuston valinta pitääksesi sen käytettävissä, vaikka muu kategoria estetään."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Kategorian $CATEGORY$ sivustojen massatoiminnot",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Valitse kaikki kategorian $CATEGORY$ sivustot",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Poista kaikkien kategorian $CATEGORY$ sivustojen valinnat",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Kategorian $CATEGORY$ sivustot",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "su"
+  },
+  "options_day_mon": {
+    "message": "ma"
+  },
+  "options_day_tue": {
+    "message": "ti"
+  },
+  "options_day_wed": {
+    "message": "ke"
+  },
+  "options_day_thu": {
+    "message": "to"
+  },
+  "options_day_fri": {
+    "message": "pe"
+  },
+  "options_day_sat": {
+    "message": "la"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Vuorottele keskittymistä ja taukoja"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Menee päällekkäin toisen käytössä olevan merkinnän kanssa päivänä $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Jakson tyyppi"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Aikataulumerkintä"
+  },
+  "options_schedule_start_label": {
+    "message": "Alkaa"
+  },
+  "options_schedule_end_label": {
+    "message": "Päättyy"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Kesto"
+  },
+  "options_schedule_intention_label": {
+    "message": "Aikomus"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "mihin tämä aika on tarkoitettu"
+  },
+  "options_schedule_save_entry": {
+    "message": "Tallenna merkintä"
+  },
+  "options_cancel": {
+    "message": "Peruuta"
+  },
+  "options_schedule_empty": {
+    "message": "Ei vielä aikataulutettuja jaksoja."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Valitut päivät"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$–$END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "estolista"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "sallittujen lista"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "joustava"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "kitka"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "tiukka lukitus"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Käytössä"
+  },
+  "options_schedule_edit": {
+    "message": "Muokkaa"
+  },
+  "options_schedule_delete": {
+    "message": "Poista"
+  },
+  "options_schedule_add": {
+    "message": "Lisää aikataulumerkintä"
+  },
+  "options_sounds_heading": {
+    "message": "Äänet"
+  },
+  "options_master_volume": {
+    "message": "Pää-äänenvoimakkuus"
+  },
+  "options_sound_session_complete": {
+    "message": "Jakso valmis"
+  },
+  "options_sound_break_start": {
+    "message": "Tauko alkaa"
+  },
+  "options_sound_break_end": {
+    "message": "Tauko päättyy"
+  },
+  "options_sound_schedule_start": {
+    "message": "Aikataulun automaattinen käynnistys"
+  },
+  "options_sound_preview_aria": {
+    "message": "Esikuuntele ääni $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Toista"
+  },
+  "options_sound_preview_error": {
+    "message": "Ääntä ei voitu toistaa. Yritä uudelleen."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Ilmoitukset"
+  },
+  "options_session_complete_notification": {
+    "message": "Näytä järjestelmäilmoitus, kun jakso valmistuu"
+  },
+  "options_badge_heading": {
+    "message": "Merkki"
+  },
+  "options_badge_countdown": {
+    "message": "Näytä jäljellä oleva aika työkalupalkin kuvakkeessa"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Sivusto-oikeudet"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Sivusto-oikeudet ovat pois päältä"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock ei voi estää sivustoja, ennen kuin myönnät oikeudet."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Ota sivustojen esto käyttöön"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Sivusto-oikeudet on myönnetty, mutta esto ei ole aktiivinen"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome myönsi oikeudet, mutta Focus Lock ei voinut rekisteröidä estoskriptiään."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Yritä sivustojen estoa uudelleen"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Sivustojen esto on käytössä"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock voi soveltaa aktiivisia estosääntöjäsi tavallisilla verkkosivuilla."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Poistetaanko paikallinen historia?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Vahvista paikallisen historian poisto"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Paikallinen historia poistettu."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Tämä poistaa pysyvästi täydelliset URL-osoitteet, keskittymisaikomukset ja yksityiskohtaiset jaksotapahtumat tältä laitteelta. Se ei lopeta käynnissä olevaa jaksoa, joka säilyttää aikomuksensa ja jokaisen estämänsä välilehden osoitteen. Jakson lopettaminen tyhjentää aikomuksen ja käynnistää siivouksen, joka tyhjentää jokaisen avoimen verkkovälilehden, ja siivous poistaa valmistuessaan jokaisen tallennetun osoitteen."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Tämä poistaa pysyvästi täydelliset URL-osoitteet, keskittymisaikomukset ja yksityiskohtaiset jaksotapahtumat tältä laitteelta sekä vain paikallisesti säilytetyt koostetilastot. Se ei lopeta käynnissä olevaa jaksoa, joka säilyttää aikomuksensa ja jokaisen estämänsä välilehden osoitteen. Jakson lopettaminen tyhjentää aikomuksen ja käynnistää siivouksen, joka tyhjentää jokaisen avoimen verkkovälilehden, ja siivous poistaa valmistuessaan jokaisen tallennetun osoitteen."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Poistetaanko etäkopiot Syncistä?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Vahvista Syncin etätietojen poisto"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Chrome Syncin etätiedot poistettu."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Tämä poistaa Chrome Syncistä pysyvästi etäasetukset, esto- ja sallittujen listat, käyttökrediitin, putket sekä verkkotunnustason koosteet estetyistä yrityksistä. Paikalliset asetukset ja tilastot jäävät tälle laitteelle."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Poistetaanko kaikki Focus Lockin tiedot?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Vahvista kaikkien Focus Lockin tietojen poisto"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Kaikki Focus Lockin tiedot poistettu."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Tämä poistaa pysyvästi jokaisen Focus Lockin tiedon tältä laitteelta sekä kaikki Chrome Synciin jääneet Focus Lock -kopiot:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Kaiken poistaminen onnistuu vain, kun mikään jakso ei ole käynnissä. Focus Lock palaa sen jälkeen käyttöönottoon."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Paikallista historiaa ei voitu poistaa. Yritä uudelleen."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Chrome Syncin etätietoja ei voitu poistaa. Yritä uudelleen."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Kaikkia Focus Lockin tietoja ei voitu poistaa. Yritä uudelleen."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync ei voinut tallentaa viimeisimpiä muutoksiasi. Paikallinen tallennus on tallessa."
+  },
+  "options_privacy_error_request": {
+    "message": "Pyyntöä ei voitu suorittaa loppuun. Yritä uudelleen."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Sivusto-oikeudet päivitetty."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Sivusto-oikeuksia ei myönnetty."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Sivusto-oikeuksia ei voitu päivittää. Yritä uudelleen."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Sivustojen esto otettu käyttöön."
+  },
+  "options_privacy_error_export": {
+    "message": "Tapahtumalokia ei voitu viedä."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Tapahtumalokia ei voitu viedä. Yritä uudelleen."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Chromen oikeusasetuksia ei voitu avata. Yritä uudelleen."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chromen oikeusasetukset avattu."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Avaa Chromen oikeusasetukset"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Synkronoi Focus Lockin tiedot Chrome-laitteiden välillä"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync otettu käyttöön."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync poistettu käytöstä."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync tallentaa yhä viimeisimpiä muutoksiasi."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync on päällä."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync on pois päältä."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Muutokset tallennettu Chrome Synciin."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Yritä ottaa Chrome Sync käyttöön uudelleen"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Yritä Chrome Synciä uudelleen"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Synkronoitu"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Vain paikallinen"
+  },
+  "options_privacy_developer_note": {
+    "message": "Mitään ei lähetetä Focus Lockin kehittäjälle."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Paikallinen tapahtumaloki"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Vie yksityiskohtainen paikallinen loki tai poista paikallinen selaus- ja jaksohistoria."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Vie paikallinen tapahtumaloki"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Paikallinen tapahtumaloki viety."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Poista paikallinen historia"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Syncin etätiedot"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Poista Chrome Synciin jääneet Focus Lock -kopiot muuttamatta tätä laitetta."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Poista Syncin etätiedot"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Kaikki Focus Lockin tiedot"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Poista jokainen Focus Lockin tietue tältä laitteelta sekä kaikki Chrome Synciin jääneet Focus Lock -kopiot ja aloita sitten alusta käyttöönotosta. Käytettävissä, kun mikään jakso ei ole käynnissä."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Jatketaan kaikkien Focus Lockin tietojen poistoa."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Yritä paikallisen historian poistoa uudelleen"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Yritä Syncin etätietojen poistoa uudelleen"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Yritä kaikkien tietojen poistoa uudelleen"
+  },
+  "options_error_load": {
+    "message": "Asetuksia ei voitu ladata. Lataa sivu uudelleen yrittääksesi uudestaan."
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lockia ei voitu käynnistää uudelleen. Yritä uudelleen."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Tietosuoja-asetuksia ei voitu päivittää. Lataa sivu uudelleen."
+  },
+  "options_error_website_blocking": {
+    "message": "Sivustojen estoa ei voitu päivittää. Yritä uudelleen."
+  },
+  "options_error_change_sync": {
+    "message": "Chrome Synciä ei voitu muuttaa. Yritä uudelleen."
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome Synciä ei voitu yrittää uudelleen. Yritä uudelleen."
+  },
+  "options_error_save_settings": {
+    "message": "Asetuksia ei voitu tallentaa. Lataa sivu uudelleen ja yritä uudestaan."
+  },
+  "options_error_save_lists": {
+    "message": "Listoja ei voitu tallentaa. Lataa sivu uudelleen ja yritä uudestaan."
+  }
+}

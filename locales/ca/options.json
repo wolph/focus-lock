@@ -36,7 +36,7 @@
     "message": "Horari"
   },
   "options_schedule_help": {
-    "message": "Les sessions comencen soles dins d'aquestes franges. El rigor que hi definexis s'aplica a tota la franja."
+    "message": "Les sessions comencen soles dins d'aquestes franges. El rigor que hi defineixis s'aplica a tota la franja."
   },
   "options_behavior_heading": {
     "message": "Comportament de la sessió"
@@ -83,6 +83,9 @@
   "options_rule_kind_host_badge": {
     "message": "domini"
   },
+  "options_rule_kind_regex_badge": {
+    "message": "expr. reg."
+  },
   "options_rule_remove": {
     "message": "Elimina"
   },
@@ -109,6 +112,12 @@
   },
   "options_rule_pattern_aria": {
     "message": "Patró"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
     "message": "Afegeix una regla"
@@ -555,6 +564,9 @@
   "options_schedule_mode_whitelist": {
     "message": "llista blanca"
   },
+  "options_schedule_strictness_flexible": {
+    "message": "flexible"
+  },
   "options_schedule_strictness_friction": {
     "message": "fricció"
   },
@@ -729,6 +741,9 @@
   "options_privacy_open_chrome_settings": {
     "message": "Obre la configuració de permisos de Chrome"
   },
+  "options_privacy_sync_heading": {
+    "message": "Sincronització de Chrome"
+  },
   "options_privacy_sync_switch_label": {
     "message": "Sincronitza les dades de Focus Lock entre dispositius de Chrome"
   },
@@ -830,5 +845,32 @@
   },
   "options_error_save_lists": {
     "message": "No s'han pogut desar les llistes. Recarrega la pàgina i torna-ho a provar."
+  },
+  "options_gate_wait_many": {
+    "message": "Espera $COUNT$ de segons",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_many": {
+    "message": "$COUNT$ de llocs inclosos",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_many": {
+    "message": "$COUNT$ d'inclosos quan s'activi",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
   }
 }

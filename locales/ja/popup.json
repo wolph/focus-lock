@@ -1,99 +1,136 @@
 {
+  "popup_next_schedule": {
+    "message": "[JA: popup_next_schedule] $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
   "popup_settings_button_label": {
-    "message": "設定"
+    "message": "[JA: popup_settings_button_label]"
   },
   "popup_open_settings_failed": {
-    "message": "Could not open 設定. もう一度お試しください."
+    "message": "[JA: popup_open_settings_failed]"
   },
   "popup_settings_load_failed": {
-    "message": "Could not load セッション 設定. Reload the popup to もう一度お試しください. Defaults are shown."
+    "message": "[JA: popup_settings_load_failed]"
   },
   "popup_open_setup_failed": {
-    "message": "Could not open セットアップ. もう一度お試しください."
+    "message": "[JA: popup_open_setup_failed]"
   },
   "popup_setup_required_heading": {
-    "message": "Finish setting up フォーカス Lock"
+    "message": "[JA: popup_setup_required_heading]"
   },
   "popup_setup_required_body": {
-    "message": "Choose your starting lists, ウェブサイト アクセス, and storage mode before starting a セッション."
+    "message": "[JA: popup_setup_required_body]"
   },
   "popup_open_setup_button": {
-    "message": "Open セットアップ"
+    "message": "[JA: popup_open_setup_button]"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Could not confirm ウェブサイトブロッキング. もう一度お試しください."
+    "message": "[JA: popup_blocking_confirm_failed]"
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not 有効にする ウェブサイトブロッキング. もう一度お試しください."
+    "message": "[JA: popup_blocking_enable_failed]"
   },
   "popup_blocking_off_heading": {
-    "message": "ウェブサイトブロッキング is off"
+    "message": "[JA: popup_blocking_off_heading]"
   },
   "popup_blocking_off_body": {
-    "message": "フォーカス Lock cannot start a セッション until Chrome grants ウェブサイト アクセス and blocking is enabled."
+    "message": "[JA: popup_blocking_off_body]"
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant ウェブサイト アクセス. ウェブサイトブロッキング is still off."
+    "message": "[JA: popup_blocking_off_denied]"
   },
   "popup_blocking_off_registration_error": {
-    "message": "ウェブサイト アクセス is granted, but フォーカス Lock could not 有効にする blocking. 再試行 セットアップ or reload the extension."
+    "message": "[JA: popup_blocking_off_registration_error]"
   },
   "popup_enable_blocking_button": {
-    "message": "有効にする ウェブサイトブロッキング"
+    "message": "[JA: popup_enable_blocking_button]"
   },
   "popup_retry_button": {
-    "message": "再試行"
+    "message": "[JA: popup_retry_button]"
   },
   "popup_notice_access_revoked": {
-    "message": "Your セッション ended because ウェブサイト アクセス was removed."
+    "message": "[JA: popup_notice_access_revoked]"
   },
   "popup_notice_blocking_failed": {
-    "message": "Your セッション ended because フォーカス Lock could not 有効にする ウェブサイトブロッキング."
+    "message": "[JA: popup_notice_blocking_failed]"
   },
   "popup_dismiss_notice_failed": {
-    "message": "Could not dismiss this notice. もう一度お試しください."
+    "message": "[JA: popup_dismiss_notice_failed]"
   },
   "popup_dismiss_notice_label": {
-    "message": "Dismiss ウェブサイト アクセス notice"
+    "message": "[JA: popup_dismiss_notice_label]"
+  },
+  "popup_dismiss_button": {
+    "message": "[JA: popup_dismiss_button]"
   },
   "popup_restart_failed": {
-    "message": "Could not restart フォーカス Lock. もう一度お試しください."
+    "message": "[JA: popup_restart_failed]"
   },
   "popup_boot_failed_heading": {
-    "message": "フォーカス Lock could not start"
+    "message": "[JA: popup_boot_failed_heading]"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "[JA: popup_boot_reason_unavailable]"
+  },
+  "popup_reset_runtime_button": {
+    "message": "[JA: popup_reset_runtime_button]"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your 設定, lists, and statistics. Clears the current セッション state."
+    "message": "[JA: popup_reset_runtime_note]"
   },
   "popup_delete_all_confirm_button": {
-    "message": "削除 everything and start over"
+    "message": "[JA: popup_delete_all_confirm_button]"
   },
   "popup_keep_data_button": {
-    "message": "Keep my データ"
+    "message": "[JA: popup_keep_data_button]"
   },
   "popup_delete_all_button": {
-    "message": "削除 all フォーカス Lock データ"
+    "message": "[JA: popup_delete_all_button]"
   },
   "popup_setup_status_unavailable": {
-    "message": "セットアップ status unavailable. Reload フォーカス Lock to もう一度お試しください."
+    "message": "[JA: popup_setup_status_unavailable]"
   },
   "popup_snapshot_unavailable": {
-    "message": "フォーカス status unavailable"
+    "message": "[JA: popup_snapshot_unavailable]"
+  },
+  "popup_action_in_progress": {
+    "message": "[JA: popup_action_in_progress]"
+  },
+  "popup_active_site_checking": {
+    "message": "[JA: popup_active_site_checking]"
   },
   "popup_active_site_unsupported": {
-    "message": "Open a regular ウェブサイト to ロック解除 it"
+    "message": "[JA: popup_active_site_unsupported]"
+  },
+  "popup_active_site_unknown": {
+    "message": "[JA: popup_active_site_unknown]"
+  },
+  "popup_active_site_error": {
+    "message": "[JA: popup_active_site_error]"
+  },
+  "popup_resume_now": {
+    "message": "[JA: popup_resume_now]"
   },
   "popup_start_next_focus_early": {
-    "message": "Start next フォーカス early"
+    "message": "[JA: popup_start_next_focus_early]"
   },
   "popup_unlock_this_site": {
-    "message": "ロック解除 this site"
+    "message": "[JA: popup_unlock_this_site]"
   },
   "popup_unlock_all_sites": {
-    "message": "ロック解除 all sites"
+    "message": "[JA: popup_unlock_all_sites]"
   },
   "popup_spend_cost": {
-    "message": "$アクセス$ アクセス, $CREDIT$ credit",
+    "message": "[JA: popup_spend_cost] $ACCESS$ $CREDIT$",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -106,7 +143,7 @@
     }
   },
   "popup_spend_cost_host": {
-    "message": "$アクセス$ アクセス, $CREDIT$ credit - $HOST$",
+    "message": "[JA: popup_spend_cost_host] $ACCESS$ $CREDIT$ $HOST$",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -123,16 +160,16 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Choose ワークタブ"
+    "message": "[JA: popup_choose_work_tab_button]"
   },
   "popup_change_work_tab_button": {
-    "message": "Change ワークタブ"
+    "message": "[JA: popup_change_work_tab_button]"
   },
   "popup_session_actions_summary": {
-    "message": "セッション actions"
+    "message": "[JA: popup_session_actions_summary]"
   },
   "popup_site_access_credit": {
-    "message": "$CREDIT$ サイトアクセスクレジット",
+    "message": "[JA: popup_site_access_credit] $CREDIT$",
     "placeholders": {
       "CREDIT": {
         "content": "$1",
@@ -141,16 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "追加 an allowed ドメイン"
+    "message": "[JA: popup_add_allowed_domain_label]"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "[JA: popup_allowed_domain_placeholder]"
   },
   "popup_add_allowed_domain_button": {
-    "message": "追加 allowed ドメイン"
+    "message": "[JA: popup_add_allowed_domain_button]"
   },
   "popup_add_button": {
-    "message": "Add"
+    "message": "[JA: popup_add_button]"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed site ルール. Other ウェブサイト blocked.",
+    "message": "[JA: popup_draft_allowed_only] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -159,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$カテゴリ$ blocked カテゴリ, $ルール$ extra ルール.",
+    "message": "[JA: popup_draft_blocked_summary] $CATEGORIES$ $RULES$",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -172,25 +212,107 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "ハードロック. Cannot end early."
+    "message": "[JA: popup_draft_stop_hard]"
+  },
+  "popup_draft_stop_flexible": {
+    "message": "[JA: popup_draft_stop_flexible]"
+  },
+  "popup_draft_stop_friction": {
+    "message": "[JA: popup_draft_stop_friction] $SECONDS$",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "[JA: popup_draft_stop_friction_phrase] $SECONDS$",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
   },
   "popup_session_length_label": {
-    "message": "セッション length"
+    "message": "[JA: popup_session_length_label]"
+  },
+  "popup_custom_minutes_label": {
+    "message": "[JA: popup_custom_minutes_label]"
   },
   "popup_custom_minutes_placeholder": {
-    "message": "min"
+    "message": "[JA: popup_custom_minutes_placeholder]"
+  },
+  "popup_gate_force_end": {
+    "message": "[JA: popup_gate_force_end]"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "[JA: popup_gate_keep_focusing]"
+  },
+  "popup_gate_phrase_label": {
+    "message": "[JA: popup_gate_phrase_label]"
   },
   "popup_gate_update_failed": {
-    "message": "Could not update the gate. もう一度お試しください."
+    "message": "[JA: popup_gate_update_failed]"
+  },
+  "popup_gate_intention": {
+    "message": "[JA: popup_gate_intention] $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "[JA: popup_gate_wait_prefix]"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "[JA: popup_gate_wait_remaining] $TOTAL$",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "[JA: popup_back_to_work]"
+  },
+  "popup_destination_unavailable": {
+    "message": "[JA: popup_destination_unavailable]"
+  },
+  "popup_back_to_work_name": {
+    "message": "[JA: popup_back_to_work_name] $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "[JA: popup_back_to_work_name_host] $DESTINATION$ $HOSTNAME$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
   },
   "popup_categories_locked": {
-    "message": "カテゴリ editing is disabled until blocked-site lists reload."
+    "message": "[JA: popup_categories_locked]"
   },
   "popup_blocked_categories_heading": {
-    "message": "Blocked カテゴリ"
+    "message": "[JA: popup_blocked_categories_heading]"
   },
   "popup_show_full_domain": {
-    "message": "Show full ドメイン: $PATTERN$",
+    "message": "[JA: popup_show_full_domain] $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -198,11 +320,23 @@
       }
     }
   },
+  "popup_show_full_regex": {
+    "message": "[JA: popup_show_full_regex] $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
   "popup_rule_kind_domain": {
-    "message": "ドメイン"
+    "message": "[JA: popup_rule_kind_domain]"
+  },
+  "popup_rule_kind_regex": {
+    "message": "[JA: popup_rule_kind_regex]"
   },
   "popup_category_sites_label": {
-    "message": "$カテゴリ$ sites",
+    "message": "[JA: popup_category_sites_label] $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -210,17 +344,65 @@
       }
     }
   },
+  "popup_sites_one": {
+    "message": "[JA: popup_sites_one] $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "[JA: popup_sites_other] $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "[JA: popup_more_sites_one] $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "[JA: popup_more_sites_other] $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "[JA: popup_allowed_exceptions_heading]"
+  },
   "popup_extra_blocked_heading": {
-    "message": "Extra blocked ルール"
+    "message": "[JA: popup_extra_blocked_heading]"
   },
   "popup_no_extra_blocked": {
-    "message": "No extra blocked ルール."
+    "message": "[JA: popup_no_extra_blocked]"
   },
   "popup_allowed_heading": {
-    "message": "Allowed sites and ルール"
+    "message": "[JA: popup_allowed_heading]"
+  },
+  "popup_no_allowed_sites": {
+    "message": "[JA: popup_no_allowed_sites]"
+  },
+  "popup_what_will_be_blocked": {
+    "message": "[JA: popup_what_will_be_blocked]"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "[JA: popup_what_will_be_allowed]"
   },
   "popup_categories_selected": {
-    "message": "$SELECTED$ of $TOTAL$ カテゴリ selected",
+    "message": "[JA: popup_categories_selected] $SELECTED$ $TOTAL$",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -233,7 +415,7 @@
     }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$ extra blocked ルール",
+    "message": "[JA: popup_extra_blocked_rules_one] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -242,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$ extra blocked ルール",
+    "message": "[JA: popup_extra_blocked_rules_other] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -251,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed ルール",
+    "message": "[JA: popup_allowed_rules_one] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -260,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed ルール",
+    "message": "[JA: popup_allowed_rules_other] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -269,52 +451,73 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Allowed-site and ルール changes here apply only to this セッション. Everything else is blocked."
+    "message": "[JA: popup_scope_whitelist]"
   },
   "popup_scope_blacklist": {
-    "message": "カテゴリ and ルール changes here apply only to this セッション."
+    "message": "[JA: popup_scope_blacklist]"
   },
   "popup_open_settings_defaults": {
-    "message": "Open 設定 for permanent defaults"
+    "message": "[JA: popup_open_settings_defaults]"
   },
   "popup_rule_details_label": {
-    "message": "セッション ルール details"
+    "message": "[JA: popup_rule_details_label]"
   },
   "popup_session_type_legend": {
-    "message": "セッション type"
+    "message": "[JA: popup_session_type_legend]"
   },
   "popup_session_type_flexible": {
-    "message": "フレキシブル"
+    "message": "[JA: popup_session_type_flexible]"
   },
   "popup_session_type_friction": {
-    "message": "フリクション"
+    "message": "[JA: popup_session_type_friction]"
   },
   "popup_session_type_hard": {
-    "message": "ハードロック"
+    "message": "[JA: popup_session_type_hard]"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the セッション immediately whenever you choose."
+    "message": "[JA: popup_session_type_flexible_hint]"
+  },
+  "popup_session_type_friction_hint": {
+    "message": "[JA: popup_session_type_friction_hint] $WAIT$",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "[JA: popup_session_type_friction_hint_phrase] $WAIT$",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
   },
   "popup_session_type_hard_hint": {
-    "message": "The セッション cannot end early. サイトアクセスクレジット still works."
+    "message": "[JA: popup_session_type_hard_hint]"
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected カテゴリ and extra ルール are blocked. Other sites remain available."
+    "message": "[JA: popup_mode_blacklist_hint]"
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. Every other ウェブサイト is blocked."
+    "message": "[JA: popup_mode_whitelist_hint]"
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a セッション length greater than zero minutes."
+    "message": "[JA: popup_invalid_duration_error]"
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "[JA: popup_stale_lists_unavailable]"
   },
   "popup_no_work_tab_option": {
-    "message": "No ワークタブ (optional)"
+    "message": "[JA: popup_no_work_tab_option]"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Selected タブ unavailable - choose another"
+    "message": "[JA: popup_work_tab_unavailable_option]"
   },
   "popup_cycles_label": {
-    "message": "Cycles: $フォーカス$ min フォーカス, $SHORT_BREAK$ min ブレーク, $LONG_BREAK$ min long ブレーク every $LONG_EVERY$th",
+    "message": "[JA: popup_cycles_label] $FOCUS$ $SHORT_BREAK$ $LONG_BREAK$ $LONG_EVERY$",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -334,8 +537,14 @@
       }
     }
   },
+  "popup_intention_label": {
+    "message": "[JA: popup_intention_label]"
+  },
+  "popup_intention_placeholder": {
+    "message": "[JA: popup_intention_placeholder]"
+  },
   "popup_work_tab_named": {
-    "message": "ワークタブ: $TITLE$",
+    "message": "[JA: popup_work_tab_named] $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -343,17 +552,35 @@
       }
     }
   },
+  "popup_change_button": {
+    "message": "[JA: popup_change_button]"
+  },
   "popup_session_settings_summary": {
-    "message": "セッション 設定"
+    "message": "[JA: popup_session_settings_summary]"
   },
   "popup_choose_work_tab_label": {
-    "message": "Choose a ワークタブ"
+    "message": "[JA: popup_choose_work_tab_label]"
   },
   "popup_work_tab_select_label": {
-    "message": "ワークタブ"
+    "message": "[JA: popup_work_tab_select_label]"
+  },
+  "popup_work_tab_current_option": {
+    "message": "[JA: popup_work_tab_current_option] $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "[JA: popup_blocking_mode_legend]"
+  },
+  "popup_invalid_time_label": {
+    "message": "[JA: popup_invalid_time_label]"
   },
   "popup_start_focus_label": {
-    "message": "Start $DURATION$ フォーカス",
+    "message": "[JA: popup_start_focus_label] $DURATION$",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -362,78 +589,42 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "Enter a valid ドメイン such as docs.example.com."
+    "message": "[JA: popup_invalid_domain_error]"
   },
   "popup_work_tabs_unavailable": {
-    "message": "Could not load work tabs. Reopen the popup to もう一度お試しください."
+    "message": "[JA: popup_work_tabs_unavailable]"
   },
   "popup_use_this_tab": {
-    "message": "Use this タブ"
+    "message": "[JA: popup_use_this_tab]"
   },
   "popup_current_tab_unavailable": {
-    "message": "This タブ is not available for work. Choose another open タブ."
+    "message": "[JA: popup_current_tab_unavailable]"
   },
   "popup_checking_current_tab": {
-    "message": "Checking current タブ..."
+    "message": "[JA: popup_checking_current_tab]"
   },
   "popup_finding_current_tab": {
-    "message": "Finding your current タブ..."
+    "message": "[JA: popup_finding_current_tab]"
   },
   "popup_current_tab_load_failed": {
-    "message": "Could not load your current タブ. もう一度お試しください."
+    "message": "[JA: popup_current_tab_load_failed]"
   },
   "popup_choose_work_tab_copy": {
-    "message": "Choose or replace your ワークタブ."
+    "message": "[JA: popup_choose_work_tab_copy]"
   },
   "popup_saving_work_tab": {
-    "message": "Saving ワークタブ..."
+    "message": "[JA: popup_saving_work_tab]"
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not 保存 the ワークタブ. もう一度お試しください."
+    "message": "[JA: popup_save_work_tab_failed]"
   },
   "popup_choose_open_tab_option": {
-    "message": "Choose an open タブ"
+    "message": "[JA: popup_choose_open_tab_option]"
   },
   "popup_or_choose_another_tab": {
-    "message": "Or choose another タブ"
+    "message": "[JA: popup_or_choose_another_tab]"
   },
   "popup_start_failed": {
-    "message": "Could not start セッション. もう一度お試しください."
-  },
-  "popup_sites_one": {
-    "message": "$COUNT$ site",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_sites_other": {
-    "message": "$COUNT$ sites",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "42"
-      }
-    }
-  },
-  "popup_more_sites_one": {
-    "message": "and $COUNT$ more site",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_more_sites_other": {
-    "message": "and $COUNT$ more sites",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "34"
-      }
-    }
+    "message": "[JA: popup_start_failed]"
   }
 }

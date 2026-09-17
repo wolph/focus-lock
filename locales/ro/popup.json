@@ -180,6 +180,9 @@
   "popup_add_allowed_domain_label": {
     "message": "Adaugă un domeniu permis"
   },
+  "popup_allowed_domain_placeholder": {
+    "message": "documente.example.com"
+  },
   "popup_add_allowed_domain_button": {
     "message": "Adaugă domeniul permis"
   },
@@ -648,6 +651,15 @@
       "COUNT": {
         "content": "$1",
         "example": "3"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
       }
     }
   }

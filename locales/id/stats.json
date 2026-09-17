@@ -1,0 +1,292 @@
+{
+  "stats_document_title": {
+    "message": "Statistik Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Catatan fokusmu"
+  },
+  "stats_loading": {
+    "message": "Memuat statistikmu."
+  },
+  "stats_load_error": {
+    "message": "Tidak dapat memuat statistik. Muat ulang untuk mencoba lagi."
+  },
+  "stats_partial_error_both": {
+    "message": "Percobaan per jam dan pengaturan kredit akses situs tidak tersedia."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Percobaan per jam tidak tersedia."
+  },
+  "stats_partial_error_economy": {
+    "message": "Pengaturan kredit akses situs tidak tersedia."
+  },
+  "stats_scope_synced": {
+    "message": "Total yang disinkronkan dari akun Chrome ini. Panel yang hanya lokal diberi label."
+  },
+  "stats_scope_local": {
+    "message": "Total dari perangkat ini. Statistik Focus Lock tidak disinkronkan."
+  },
+  "stats_scope_checking": {
+    "message": "Memeriksa apakah total ini disinkronkan."
+  },
+  "stats_scope_unavailable": {
+    "message": "Cakupan statistik tidak tersedia. Total mungkin menyertakan data yang disinkronkan. Percobaan per jam dan sesi terbaru berasal dari perangkat ini."
+  },
+  "stats_scope_retry": {
+    "message": "Coba lagi pemeriksaan cakupan"
+  },
+  "stats_empty": {
+    "message": "Statistik muncul setelah sesi pertamamu."
+  },
+  "stats_tile_focus_today": {
+    "message": "Fokus hari ini"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Fokus dalam 7 hari terakhir"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Percobaan diblokir hari ini"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Permintaan gerbang diabaikan hari ini"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Kredit akses situs terpakai hari ini"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Semua situs $ALL_SITES$, satu situs $ONE_SITE$, $EARNED$ diperoleh",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ diperoleh",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Rentetan"
+  },
+  "stats_streak_empty": {
+    "message": "Rentetanmu dimulai dari hari fokus pertamamu."
+  },
+  "stats_streak_unit_one": {
+    "message": "hari"
+  },
+  "stats_streak_unit_other": {
+    "message": "hari"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ token pembeku tersimpan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ token pembeku tersimpan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Pembekuan rentetan: satu hari terlewat, tertutupi"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ hari aktif bulan ini ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ hari aktif bulan ini ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Tanggal aktif di $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Tidak ada tanggal aktif di $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Fokus, 14 hari terakhir"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Menit fokus muncul setelah sesi pertamamu."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Percobaan diblokir, 14 hari terakhir"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Percobaan yang diblokir akan muncul di sini setelah sebuah sesi menangkap satu."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Situs paling banyak diblokir, 30 hari terakhir"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Belum ada yang diblokir. Awal yang bagus."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Percobaan per jam, hanya perangkat ini"
+  },
+  "stats_chart_other_site": {
+    "message": "lainnya"
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ diblokir",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ diblokir",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Diagram batang"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Diagram batang horizontal"
+  },
+  "stats_chart_description_bar": {
+    "message": "Diagram batang. Gunakan keyboard untuk berpindah antar titik data, atau buka Lihat sebagai tabel untuk nilai yang sama."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Diagram batang horizontal. Gunakan keyboard untuk berpindah antar titik data, atau buka Lihat sebagai tabel untuk nilai yang sama."
+  },
+  "stats_chart_empty_default": {
+    "message": "Belum ada data."
+  },
+  "stats_chart_table_summary": {
+    "message": "Lihat sebagai tabel"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategori"
+  },
+  "stats_chart_table_value": {
+    "message": "Nilai"
+  },
+  "stats_heat_strip_label": {
+    "message": "Strip panas percobaan diblokir per 24 jam"
+  },
+  "stats_sessions_heading": {
+    "message": "Sesi terbaru di perangkat ini"
+  },
+  "stats_sessions_empty": {
+    "message": "Sesi pertamamu akan muncul di sini."
+  },
+  "stats_sessions_col_date": {
+    "message": "Tanggal"
+  },
+  "stats_sessions_col_start": {
+    "message": "Mulai"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Direncanakan"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Terfokus"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Semua situs"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Satu situs"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Niat"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Hasil"
+  },
+  "stats_sessions_col_source": {
+    "message": "Sumber"
+  },
+  "stats_session_no_intention": {
+    "message": "Tanpa niat"
+  },
+  "stats_session_article_label": {
+    "message": "Sesi: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_schedule": {
+    "message": "jadwal"
+  },
+  "stats_session_source_scheduled": {
+    "message": "terjadwal"
+  },
+  "stats_outcome_completed": {
+    "message": "Selesai"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Diakhiri lebih awal"
+  },
+  "stats_outcome_running": {
+    "message": "Berjalan"
+  }
+}

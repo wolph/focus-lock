@@ -31,7 +31,7 @@
     "message": "Tria les teves llistes inicials, l'accés als llocs web i el mode d'emmagatzematge abans d'iniciar una sessió."
   },
   "popup_open_setup_button": {
-    "message": "Obre la configuració inicial"
+    "message": "Obre la configuració"
   },
   "popup_blocking_confirm_failed": {
     "message": "No s'ha pogut confirmar el bloqueig de llocs web. Torna-ho a provar."
@@ -55,7 +55,7 @@
     "message": "Activa el bloqueig de llocs web"
   },
   "popup_retry_button": {
-    "message": "Torna-ho a provar"
+    "message": "Reintenta"
   },
   "popup_notice_access_revoked": {
     "message": "La teva sessió ha acabat perquè s'ha retirat l'accés als llocs web."
@@ -91,7 +91,7 @@
     "message": "Suprimeix-ho tot i torna a començar"
   },
   "popup_keep_data_button": {
-    "message": "Conserva les meves dades"
+    "message": "Conserva les dades"
   },
   "popup_delete_all_button": {
     "message": "Suprimeix totes les dades de Focus Lock"
@@ -160,10 +160,10 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Tria una pestanya de treball"
+    "message": "Tria pestanya de treball"
   },
   "popup_change_work_tab_button": {
-    "message": "Canvia la pestanya de treball"
+    "message": "Canvia pestanya de treball"
   },
   "popup_session_actions_summary": {
     "message": "Accions de la sessió"
@@ -179,6 +179,9 @@
   },
   "popup_add_allowed_domain_label": {
     "message": "Afegeix un domini permès"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "documents.example.com"
   },
   "popup_add_allowed_domain_button": {
     "message": "Afegeix un domini permès"
@@ -462,6 +465,9 @@
   "popup_session_type_legend": {
     "message": "Tipus de sessió"
   },
+  "popup_session_type_flexible": {
+    "message": "Flexible"
+  },
   "popup_session_type_friction": {
     "message": "Fricció"
   },
@@ -589,7 +595,7 @@
     "message": "No s'han pogut carregar les pestanyes de treball. Torna a obrir la finestra per provar-ho de nou."
   },
   "popup_use_this_tab": {
-    "message": "Fes servir aquesta pestanya"
+    "message": "Usa aquesta pestanya"
   },
   "popup_current_tab_unavailable": {
     "message": "Aquesta pestanya no està disponible per treballar. Tria una altra pestanya oberta."
@@ -607,7 +613,7 @@
     "message": "Tria o canvia la teva pestanya de treball."
   },
   "popup_saving_work_tab": {
-    "message": "S'està desant la pestanya de treball..."
+    "message": "Desant la pestanya de treball..."
   },
   "popup_save_work_tab_failed": {
     "message": "No s'ha pogut desar la pestanya de treball. Torna-ho a provar."
@@ -620,5 +626,41 @@
   },
   "popup_start_failed": {
     "message": "No s'ha pogut iniciar la sessió. Torna-ho a provar."
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ de llocs",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_many": {
+    "message": "i $COUNT$ de llocs més",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ de regles de bloqueig addicionals",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
+    "message": "$COUNT$ de regles permeses",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
   }
 }

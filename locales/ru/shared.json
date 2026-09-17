@@ -1,0 +1,629 @@
+{
+  "shared_until_stopped": {
+    "message": "До остановки"
+  },
+  "shared_preset_short": {
+    "message": "коротко"
+  },
+  "shared_preset_focus": {
+    "message": "фокус"
+  },
+  "shared_preset_deep_work": {
+    "message": "глубокая работа"
+  },
+  "shared_deep_work_note": {
+    "message": "Предпочтение, а не наука: один длинный непрерывный блок без автоматических перерывов."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ мин всего, блоки фокуса по $FOCUS$ мин",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ мин непрерывного фокуса",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Запустить до остановки"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Заблокировать до ручной разблокировки"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Сессии до остановки сохраняют режим Гибкая или С задержкой и не используют циклы фокуса и перерывов."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Жёсткая блокировка недоступна для режима до остановки: без таймера и без ручного завершения сессия никогда не закончится."
+  },
+  "shared_end_session": {
+    "message": "Завершить сессию"
+  },
+  "shared_unlock": {
+    "message": "Разблокировать"
+  },
+  "shared_gate_wait_none": {
+    "message": "без ожидания"
+  },
+  "shared_gate_wait": {
+    "message": "ожидание $SECONDS$ с",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ и ввод фразы",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Идёт, пока ты не нажмёшь $LABEL$. Циклы выключены.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Идёт, пока ты не разблокируешь: $REQUIREMENT$, затем $LABEL$. Циклы выключены.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Циклы отключены режимом до остановки"
+  },
+  "shared_mode_blacklist": {
+    "message": "Блокировать выбранные сайты"
+  },
+  "shared_mode_whitelist": {
+    "message": "Разрешить только выбранные сайты"
+  },
+  "shared_focus_time_label": {
+    "message": "Время фокуса"
+  },
+  "shared_clock_focus_phase": {
+    "message": "фаза фокуса"
+  },
+  "shared_clock_total_session": {
+    "message": "вся сессия"
+  },
+  "shared_clock_pause": {
+    "message": "пауза"
+  },
+  "shared_clock_break": {
+    "message": "перерыв"
+  },
+  "shared_badge_indefinite": {
+    "message": "ВКЛ"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock запускается. Применяем выбранные правила."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Сессия завершена. Завершаем очистку браузера."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock не смог запуститься. Завершаем очистку браузера."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock не смог очистить незавершённый запуск."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock не смог завершить очистку браузера."
+  },
+  "shared_retry_cleanup": {
+    "message": "Повторить очистку"
+  },
+  "shared_end_failed": {
+    "message": "Не удалось завершить сессию. Повтори попытку."
+  },
+  "shared_retry_failed": {
+    "message": "Не удалось повторить очистку. Повтори попытку."
+  },
+  "shared_action_failed": {
+    "message": "Не удалось выполнить действие. Повтори попытку."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Не удалось вернуться к работе. Повтори попытку."
+  },
+  "shared_data_clear_pending": {
+    "message": "Удаляем данные Focus Lock. Завершаем очистку."
+  },
+  "shared_data_clear_error": {
+    "message": "Не удалось удалить данные. Повтори попытку."
+  },
+  "shared_schedule_window_label": {
+    "message": "До конца окна"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Запускается по расписанию и идёт, пока ты её не остановишь: Завершить сессию для Гибкой, Разблокировать через экран подтверждения для режима С задержкой. Циклы выключены."
+  },
+  "shared_schedule_started_title": {
+    "message": "Сессия по расписанию началась"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Активна, пока ты её не остановишь."
+  },
+  "shared_settings_indefinite": {
+    "message": "Активна сессия до остановки. Открой всплывающее окно на панели, чтобы посмотреть или завершить её."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock запускается. Проверяем доступ к сайтам и применяем твои правила."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock не смог завершить очистку браузера. Открой всплывающее окно и повтори."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Управление сессией находится во всплывающем окне на панели. Активная сессия сохраняет правила, зафиксированные при её запуске."
+  },
+  "shared_settings_timed": {
+    "message": "Активна сессия по таймеру до $TIME$. Она завершится автоматически. Текущий статус смотри во всплывающем окне.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Завершена"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Завершена вручную"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Завершена досрочно"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Завершена: потерян доступ к сайтам"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Завершена: не удалось настроить блокировку"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Завершена: не удалось настроить таймер"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Завершена: не удалось применить блокировку к страницам"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Завершена: не удалось восстановить состояние"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ч $MINUTES$ м",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ м",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ мин",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ мин",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Обновляем сессию"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Меньше минуты"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ до перерыва",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ до конца сессии",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Стоимость выше лимита кредита"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Начисление кредита возобновится в фокусе"
+  },
+  "shared_credit_off": {
+    "message": "Начисление кредита отключено"
+  },
+  "shared_not_enough_time": {
+    "message": "В этом блоке фокуса не хватит времени"
+  },
+  "shared_ready_in": {
+    "message": "Готово через $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Заблокировано категорией $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Заблокировано твоим списком блокировки"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Нет в твоём списке разрешений"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Заблокировано этой сессией"
+  },
+  "shared_verdict_allow_list": {
+    "message": "В твоём списке разрешений"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Всегда разрешено"
+  },
+  "shared_verdict_unlock": {
+    "message": "Временно разблокировано"
+  },
+  "shared_verdict_excluded": {
+    "message": "Исключено из выбранной категории"
+  },
+  "shared_verdict_no_session": {
+    "message": "Нет активной фокус-сессии"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Разрешено этой сессией"
+  },
+  "shared_category_social": {
+    "message": "Соцсети"
+  },
+  "shared_category_video": {
+    "message": "Видео и стриминг"
+  },
+  "shared_category_news": {
+    "message": "Новости"
+  },
+  "shared_category_mail": {
+    "message": "Почта"
+  },
+  "shared_category_shopping": {
+    "message": "Покупки"
+  },
+  "shared_category_gaming": {
+    "message": "Игры"
+  },
+  "shared_category_forums": {
+    "message": "Форумы и скука"
+  },
+  "shared_synced_settings": {
+    "message": "Настройки"
+  },
+  "shared_synced_lists": {
+    "message": "Списки блокировки и разрешений"
+  },
+  "shared_synced_credit": {
+    "message": "Кредит доступа к сайтам"
+  },
+  "shared_synced_streaks": {
+    "message": "Серии"
+  },
+  "shared_synced_aggregates": {
+    "message": "Сводки заблокированных попыток по доменам"
+  },
+  "shared_local_full_urls": {
+    "message": "Полные URL"
+  },
+  "shared_local_intentions": {
+    "message": "Намерения для фокуса"
+  },
+  "shared_local_events": {
+    "message": "Подробные события сессий"
+  },
+  "shared_local_runtime": {
+    "message": "Активная сессия"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Часть синхронизированных данных из старой версии не удалось прочитать, и они были сброшены."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Заверши текущую сессию перед удалением всех данных."
+  },
+  "shared_nav_product": {
+    "message": "Навигация по продукту"
+  },
+  "shared_nav_overview": {
+    "message": "Обзор"
+  },
+  "shared_nav_settings": {
+    "message": "Настройки"
+  },
+  "shared_section_blocking": {
+    "message": "Блокировка"
+  },
+  "shared_section_schedule": {
+    "message": "Расписание"
+  },
+  "shared_section_behavior": {
+    "message": "Поведение сессии"
+  },
+  "shared_section_budget": {
+    "message": "Кредит доступа к сайтам"
+  },
+  "shared_section_notifications": {
+    "message": "Уведомления"
+  },
+  "shared_section_privacy": {
+    "message": "Конфиденциальность и данные"
+  },
+  "shared_theme_auto": {
+    "message": "Авто"
+  },
+  "shared_theme_light": {
+    "message": "Светлая"
+  },
+  "shared_theme_dark": {
+    "message": "Тёмная"
+  },
+  "shared_theme_button": {
+    "message": "Тема: $CURRENT$. Переключить на $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Не удалось сохранить тему. Перезагрузи страницу и повтори."
+  },
+  "shared_host_search_label": {
+    "message": "Поиск сайтов категории $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Ни один сайт категории $TITLE$ не подходит под запрос.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Показано $SHOWN$ из $MATCHED$ сайтов. Уточни поиск, чтобы сузить список.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Показано $MATCHED$ из $TOTAL$ сайтов.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Показаны все сайты: $TOTAL$.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Завершить сессию"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock запускается"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Применяем выбранные правила."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Эта страница не загрузилась. Она загрузится сама, когда сессия закончится."
+  },
+  "shared_overlay_next_step": {
+    "message": "Твой следующий шаг"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Назад к работе"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Выбрать рабочую вкладку"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Сменить рабочую вкладку"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Нужен перерыв или доступ к сайту?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Ты можешь отойти в любой момент. Доступ к сайтам тратит кредит."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Пропустить ожидание и завершить"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock не смог обновить это действие. Повтори попытку."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ кредита доступа",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Продолжай текущую задачу"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Разблокировать все сайты"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Разблокировать этот сайт"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ на $LENGTH$ - стоит $COST$ кредита",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Заблокировано до $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Ты написал: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Разблокировать $HOST$ на $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Продолжить фокус"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Введи это для подтверждения:"
+  },
+  "shared_gate_end_title": {
+    "message": "Завершить эту сессию"
+  },
+  "shared_minutes_few": {
+    "message": "$COUNT$ мин",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_minutes_many": {
+    "message": "$COUNT$ мин",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

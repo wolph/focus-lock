@@ -1,6 +1,39 @@
 {
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
   "overlay_stopped_title": {
     "message": "Bloccato - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: «$DESTINATION$»",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: «$DESTINATION$» ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
   },
   "overlay_target_checking": {
     "message": "Controllo delle schede di lavoro disponibili..."
@@ -30,7 +63,7 @@
     "message": "Annulla"
   },
   "overlay_picker_search_label": {
-    "message": "Cerca tra le schede di lavoro"
+    "message": "Cerca schede di lavoro"
   },
   "overlay_picker_search_placeholder": {
     "message": "Cerca per titolo o sito"
@@ -51,7 +84,7 @@
     "message": "Ricerca tra le schede di lavoro..."
   },
   "overlay_picker_saving": {
-    "message": "Salvataggio della scheda di lavoro..."
+    "message": "Salvataggio scheda di lavoro..."
   },
   "overlay_picker_no_tabs": {
     "message": "Nessuna scheda di lavoro disponibile. Apri un sito consentito da questa sessione, poi aggiorna le schede."
@@ -85,6 +118,19 @@
       "MATCHES": {
         "content": "$2",
         "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "«$TITLE$» ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
       }
     }
   },

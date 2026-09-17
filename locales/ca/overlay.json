@@ -1,9 +1,42 @@
 {
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
   "overlay_stopped_title": {
     "message": "Bloquejat - Focus Lock"
   },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
   "overlay_target_checking": {
-    "message": "S'estan comprovant les pestanyes de treball disponibles..."
+    "message": "Comprovant pestanyes de treball..."
   },
   "overlay_target_pick_tab": {
     "message": "Tria una pestanya oberta per continuar la teva tasca."
@@ -39,19 +72,19 @@
     "message": "Esborra la cerca"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "Actualitza les pestanyes"
+    "message": "Actualitza pestanyes"
   },
   "overlay_picker_available_tabs": {
     "message": "Pestanyes de treball disponibles"
   },
   "overlay_picker_finding": {
-    "message": "S'estan cercant les pestanyes disponibles..."
+    "message": "Cercant pestanyes disponibles..."
   },
   "overlay_picker_searching": {
-    "message": "S'estan cercant pestanyes de treball..."
+    "message": "Cercant pestanyes de treball..."
   },
   "overlay_picker_saving": {
-    "message": "S'està desant la pestanya de treball..."
+    "message": "Desant la pestanya de treball..."
   },
   "overlay_picker_no_tabs": {
     "message": "No hi ha pestanyes de treball disponibles. Obre un lloc permès per aquesta sessió i actualitza les pestanyes."
@@ -77,6 +110,32 @@
   },
   "overlay_picker_count_other": {
     "message": "$MATCHES$ de $COUNT$ pestanyes",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_picker_count_many": {
+    "message": "$MATCHES$ de $COUNT$ de pestanyes",
     "placeholders": {
       "COUNT": {
         "content": "$1",

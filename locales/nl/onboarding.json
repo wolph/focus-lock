@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock instellen"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock-setup"
+  },
+  "onboarding_progress": {
+    "message": "Stap $STEP$ van $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Je opgeslagen voortgang kon niet worden hersteld. We beginnen opnieuw met je huidige standaardwaarden."
+  },
+  "onboarding_complete_heading": {
+    "message": "Setup voltooid"
+  },
+  "onboarding_complete_body": {
+    "message": "Je keuzes zijn opgeslagen. Open Focus Lock in de Chrome-werkbalk om een sessie te starten."
+  },
+  "onboarding_error_heading": {
+    "message": "Setup niet beschikbaar"
+  },
+  "onboarding_error_body": {
+    "message": "Setup laden mislukt. Probeer opnieuw."
+  },
+  "onboarding_retry_button": {
+    "message": "Opnieuw"
+  },
+  "onboarding_save_error": {
+    "message": "Voortgang opslaan mislukt. Probeer opnieuw."
+  },
+  "onboarding_enable_error": {
+    "message": "Websiteblokkering inschakelen mislukt. Probeer opnieuw."
+  },
+  "onboarding_finish_error": {
+    "message": "Setup voltooien mislukt. Je keuzes zijn wel bewaard. Probeer opnieuw."
+  },
+  "onboarding_lists_heading": {
+    "message": "Kies je eerste blokkeerlijst"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Bij $MODE$ zijn ingeschakelde categorieën en extra geblokkeerde sites niet bereikbaar.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Bij $MODE$ is elke site onbereikbaar behalve je toelatingslijst.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Deze keuzes worden standaard voor volgende sessies. Je kunt ze later aanpassen."
+  },
+  "onboarding_lists_legend": {
+    "message": "Aanbevolen websitecategorieën"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ website",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ websites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "$CATEGORY$-sites tonen",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "$CATEGORY$-sites verbergen",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$-domeinen",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Doorgaan"
+  },
+  "onboarding_access_heading": {
+    "message": "Websiteblokkering inschakelen"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock controleert pagina-adressen lokaal om ze te vergelijken met je geselecteerde categorieën en sites. Websitetoegang wordt gebruikt om het blokkeerscherm te tonen en getroffen pagina's te herstellen als je sessie eindigt."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Categorieën en eigen domeinen kunnen elke website bevatten. Chrome vraagt daarom om deze bevoegdheid:"
+  },
+  "onboarding_access_capability": {
+    "message": "Al je gegevens op alle websites lezen en wijzigen"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock gebruikt die toegang alleen tijdens het toepassen van je blokkeerregels."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome heeft geen websitetoegang gegeven. Je kunt het opnieuw proberen."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Websitetoegang is verleend, maar Focus Lock kon blokkering niet inschakelen. Probeer de setup opnieuw of herlaad de extensie."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Websiteblokkering inschakelen"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Niet nu"
+  },
+  "onboarding_sync_heading": {
+    "message": "Kies waar je instellingen worden bewaard"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Synchroniseren tussen Chrome-apparaten"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "De goedgekeurde gegevens hieronder gebruiken Chrome Sync zodra je de setup afrondt."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Alle Focus Lock-gegevens blijven in dit Chrome-profiel."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Gesynchroniseerd"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Alleen lokaal"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Er wordt niets naar de ontwikkelaar van Focus Lock gestuurd."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Afronden met synchronisatie aan"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Afronden zonder synchronisatie"
+  }
+}

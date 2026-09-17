@@ -44,6 +44,9 @@
   "options_budget_heading": {
     "message": "Crédit d'accès aux sites"
   },
+  "options_notifications_heading": {
+    "message": "Notifications"
+  },
   "options_privacy_heading": {
     "message": "Confidentialité et données"
   },
@@ -80,6 +83,9 @@
   "options_rule_kind_host_badge": {
     "message": "domaine"
   },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
   "options_rule_remove": {
     "message": "Retirer"
   },
@@ -107,6 +113,12 @@
   "options_rule_pattern_aria": {
     "message": "Motif"
   },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
   "options_rule_add": {
     "message": "Ajouter la règle"
   },
@@ -114,7 +126,7 @@
     "message": "facebook.com couvre ce domaine et tous ses sous-domaines. news.ycombinator.com couvre ce sous-domaine et tout ce qui est en dessous. /youtube\\.com\\/shorts/ compare l'URL complète comme expression régulière."
   },
   "options_number_error_positive": {
-    "message": "$LABEL$ doit être un nombre entier positif.",
+    "message": "« $LABEL$ » doit être un nombre entier positif.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -123,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "$LABEL$ doit être un nombre entier supérieur ou égal à zéro.",
+    "message": "« $LABEL$ » doit être un nombre entier supérieur ou égal à zéro.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -132,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "$LABEL$ doit être supérieur ou égal à zéro.",
+    "message": "« $LABEL$ » doit être supérieur ou égal à zéro.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -141,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$ doit rester dans la plage de minutes prise en charge.",
+    "message": "« $LABEL$ » doit rester dans la plage de minutes prise en charge.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -150,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$ doit rester dans la plage de jours prise en charge.",
+    "message": "« $LABEL$ » doit rester dans la plage de jours prise en charge.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -225,6 +237,15 @@
     }
   },
   "options_gate_wait_other": {
+    "message": "Attendre $COUNT$ secondes",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_many": {
     "message": "Attendre $COUNT$ secondes",
     "placeholders": {
       "COUNT": {
@@ -407,6 +428,15 @@
       }
     }
   },
+  "options_category_sites_included_many": {
+    "message": "$COUNT$ sites inclus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
   "options_category_off": {
     "message": "Catégorie désactivée"
   },
@@ -420,6 +450,15 @@
     }
   },
   "options_included_when_enabled_other": {
+    "message": "$COUNT$ inclus une fois activée",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_many": {
     "message": "$COUNT$ inclus une fois activée",
     "placeholders": {
       "COUNT": {
@@ -515,6 +554,9 @@
   "options_schedule_duration_legend": {
     "message": "Durée"
   },
+  "options_schedule_intention_label": {
+    "message": "Intention"
+  },
   "options_schedule_intention_placeholder": {
     "message": "à quoi sert ce créneau"
   },
@@ -551,6 +593,9 @@
   },
   "options_schedule_strictness_flexible": {
     "message": "souple"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "friction"
   },
   "options_schedule_strictness_hard": {
     "message": "strict"
@@ -600,8 +645,14 @@
   "options_sound_preview_error": {
     "message": "Impossible d'écouter le son. Réessaie."
   },
+  "options_sounds_notifications_heading": {
+    "message": "Notifications"
+  },
   "options_session_complete_notification": {
     "message": "Afficher une notification système à la fin d'une session"
+  },
+  "options_badge_heading": {
+    "message": "Badge"
   },
   "options_badge_countdown": {
     "message": "Afficher le temps restant sur l'icône de la barre d'outils"
@@ -655,10 +706,10 @@
     "message": "Confirmer la suppression des données distantes de Sync"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Données distantes de Chrome Sync supprimées."
+    "message": "Données distantes de la synchronisation Chrome supprimées."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "Cette action supprime définitivement de Chrome Sync les réglages distants, les listes de blocage et d'autorisation, le crédit d'accès aux sites, les séries et les totaux de tentatives bloquées par domaine. Les réglages et les statistiques locaux restent sur cet appareil."
+    "message": "Cette action supprime définitivement de la synchronisation Chrome les réglages distants, les listes de blocage et d'autorisation, le crédit d'accès aux sites, les séries et les totaux de tentatives bloquées par domaine. Les réglages et les statistiques locaux restent sur cet appareil."
   },
   "options_privacy_confirm_all_title": {
     "message": "Supprimer toutes les données Focus Lock ?"
@@ -670,7 +721,7 @@
     "message": "Toutes les données Focus Lock ont été supprimées."
   },
   "options_privacy_all_body_intro": {
-    "message": "Cette action supprime définitivement toutes les données Focus Lock de cet appareil et toutes les copies Focus Lock restées dans Chrome Sync :"
+    "message": "Cette action supprime définitivement toutes les données Focus Lock de cet appareil et toutes les copies Focus Lock restées dans la synchronisation Chrome :"
   },
   "options_privacy_all_body_outro": {
     "message": "La suppression totale n'est possible que si aucune session ne tourne. Focus Lock revient ensuite à la configuration."
@@ -679,13 +730,13 @@
     "message": "L'historique local n'a pas pu être supprimé. Réessaie."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Les données distantes de Chrome Sync n'ont pas pu être supprimées. Réessaie."
+    "message": "Les données distantes de la synchronisation Chrome n'ont pas pu être supprimées. Réessaie."
   },
   "options_privacy_error_all_clear": {
     "message": "Toutes les données Focus Lock n'ont pas pu être supprimées. Réessaie."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync n'a pas pu enregistrer tes dernières modifications. Ton enregistrement local est intact."
+    "message": "La synchronisation Chrome n'a pas pu enregistrer tes dernières modifications. Ton enregistrement local est intact."
   },
   "options_privacy_error_request": {
     "message": "La demande n'a pas pu aboutir. Réessaie."
@@ -717,32 +768,35 @@
   "options_privacy_open_chrome_settings": {
     "message": "Ouvrir les réglages d'autorisations de Chrome"
   },
+  "options_privacy_sync_heading": {
+    "message": "Synchronisation Chrome"
+  },
   "options_privacy_sync_switch_label": {
     "message": "Synchroniser les données Focus Lock entre les appareils Chrome"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync activé."
+    "message": "Synchronisation Chrome activée."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync désactivé."
+    "message": "Synchronisation Chrome désactivée."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sync enregistre encore tes dernières modifications."
+    "message": "La synchronisation Chrome enregistre encore tes dernières modifications."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync est activé."
+    "message": "La synchronisation Chrome est activée."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync est désactivé."
+    "message": "La synchronisation Chrome est désactivée."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Modifications enregistrées dans Chrome Sync."
+    "message": "Modifications enregistrées dans la synchronisation Chrome."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Réessayer d'activer Chrome Sync"
+    "message": "Réessayer d'activer la synchronisation Chrome"
   },
   "options_privacy_retry_sync": {
-    "message": "Relancer Chrome Sync"
+    "message": "Relancer la synchronisation Chrome"
   },
   "options_privacy_scope_synced": {
     "message": "Synchronisé"
@@ -772,7 +826,7 @@
     "message": "Données distantes de Sync"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Supprime les copies Focus Lock restées dans Chrome Sync sans toucher à cet appareil."
+    "message": "Supprime les copies Focus Lock restées dans la synchronisation Chrome sans toucher à cet appareil."
   },
   "options_privacy_delete_remote_data": {
     "message": "Supprimer les données distantes de Sync"
@@ -781,7 +835,7 @@
     "message": "Toutes les données Focus Lock"
   },
   "options_privacy_all_data_detail": {
-    "message": "Supprime toutes les données Focus Lock de cet appareil et toutes les copies Focus Lock restées dans Chrome Sync, puis repart de la configuration. Possible seulement si aucune session ne tourne."
+    "message": "Supprime toutes les données Focus Lock de cet appareil et toutes les copies Focus Lock restées dans la synchronisation Chrome, puis repart de la configuration. Possible seulement si aucune session ne tourne."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Reprise de la suppression de toutes les données Focus Lock."
@@ -808,42 +862,15 @@
     "message": "Impossible de mettre à jour le blocage des sites. Réessaie."
   },
   "options_error_change_sync": {
-    "message": "Impossible de modifier Chrome Sync. Réessaie."
+    "message": "Impossible de modifier la synchronisation Chrome. Réessaie."
   },
   "options_error_retry_sync": {
-    "message": "Impossible de relancer Chrome Sync. Réessaie."
+    "message": "Impossible de relancer la synchronisation Chrome. Réessaie."
   },
   "options_error_save_settings": {
     "message": "Impossible d'enregistrer les réglages. Recharge la page et réessaie."
   },
   "options_error_save_lists": {
     "message": "Impossible d'enregistrer les listes. Recharge la page et réessaie."
-  },
-  "options_gate_wait_many": {
-    "message": "Attendre $COUNT$ secondes",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "10"
-      }
-    }
-  },
-  "options_category_sites_included_many": {
-    "message": "$COUNT$ sites inclus",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "12"
-      }
-    }
-  },
-  "options_included_when_enabled_many": {
-    "message": "$COUNT$ inclus une fois activée",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "12"
-      }
-    }
   }
 }

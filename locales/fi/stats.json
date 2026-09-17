@@ -1,0 +1,317 @@
+{
+  "stats_document_title": {
+    "message": "Focus Lockin tilastot"
+  },
+  "stats_page_title": {
+    "message": "Keskittymistuloksesi"
+  },
+  "stats_loading": {
+    "message": "Ladataan tilastojasi."
+  },
+  "stats_load_error": {
+    "message": "Tilastoja ei voitu ladata. Lataa sivu uudelleen ja yritä uudestaan."
+  },
+  "stats_partial_error_both": {
+    "message": "Tuntikohtaiset estot ja käyttökrediitin asetukset eivät ole saatavilla."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Tuntikohtaiset estot eivät ole saatavilla."
+  },
+  "stats_partial_error_economy": {
+    "message": "Käyttökrediitin asetukset eivät ole saatavilla."
+  },
+  "stats_scope_synced": {
+    "message": "Synkronoidut summat tältä Chrome-tililtä. Vain paikalliset paneelit on merkitty."
+  },
+  "stats_scope_local": {
+    "message": "Summat tältä koneelta. Focus Lockin tilastoja ei synkronoida."
+  },
+  "stats_scope_checking": {
+    "message": "Tarkistetaan, ovatko nämä summat synkronoituja."
+  },
+  "stats_scope_unavailable": {
+    "message": "Tilastojen laajuus ei ole tiedossa. Summat voivat sisältää synkronoituja tietoja. Tuntikohtaiset estot ja viimeisimmät jaksot ovat tältä koneelta."
+  },
+  "stats_scope_retry": {
+    "message": "Tarkista laajuus uudelleen"
+  },
+  "stats_empty": {
+    "message": "Tilastot ilmestyvät ensimmäisen jaksosi jälkeen."
+  },
+  "stats_tile_focus_today": {
+    "message": "Keskittyminen tänään"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Keskittyminen viimeiset 7 päivää"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Estetyt yritykset tänään"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Hylätyt porttipyynnöt tänään"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Käyttökrediittiä kulutettu tänään"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Kaikki sivustot $ALL_SITES$, yksi sivusto $ONE_SITE$, $EARNED$ ansaittu",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ ansaittu",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Putki"
+  },
+  "stats_streak_empty": {
+    "message": "Putkesi alkaa ensimmäisestä keskittymispäivästäsi."
+  },
+  "stats_streak_unit_one": {
+    "message": "päivä"
+  },
+  "stats_streak_unit_other": {
+    "message": "päivää"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ jäädytysmerkki pankissa",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ jäädytysmerkkiä pankissa",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Putken jäädytys: yksi väliin jäänyt päivä katettu"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktiivinen päivä tässä kuussa ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktiivista päivää tässä kuussa ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktiiviset päivät kuussa $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Ei aktiivisia päiviä kuussa $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Keskittyminen, viimeiset 14 päivää"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Keskittymisminuutit näkyvät ensimmäisen jaksosi jälkeen."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Estetyt yritykset, viimeiset 14 päivää"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Estetyt yritykset ilmestyvät tähän, kun jakso nappaa yhden."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Estetyimmät sivustot, viimeiset 30 päivää"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Mitään ei ole vielä estetty. Se on hyvä alku."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Yritykset tunneittain, vain tämä kone"
+  },
+  "stats_chart_other_site": {
+    "message": "muut"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ estetty",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ estetty",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Pylväskaavio"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Vaakapylväskaavio"
+  },
+  "stats_chart_description_bar": {
+    "message": "Pylväskaavio. Selaa datapisteitä näppäimistöllä tai avaa Näytä taulukkona, niin saat samat arvot."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Vaakapylväskaavio. Selaa datapisteitä näppäimistöllä tai avaa Näytä taulukkona, niin saat samat arvot."
+  },
+  "stats_chart_empty_default": {
+    "message": "Ei vielä tietoja."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "Näytä taulukkona"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategoria"
+  },
+  "stats_chart_table_value": {
+    "message": "Arvo"
+  },
+  "stats_heat_strip_label": {
+    "message": "Estettyjen yritysten lämpönauha vuorokauden tunneittain"
+  },
+  "stats_sessions_heading": {
+    "message": "Viimeisimmät jaksot tällä koneella"
+  },
+  "stats_sessions_empty": {
+    "message": "Ensimmäinen jaksosi ilmestyy tähän."
+  },
+  "stats_sessions_col_date": {
+    "message": "Päivä"
+  },
+  "stats_sessions_col_start": {
+    "message": "Alkoi"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Suunniteltu"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Keskitytty"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Kaikki sivustot"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Yksi sivusto"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Aikomus"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Lopputulos"
+  },
+  "stats_sessions_col_source": {
+    "message": "Lähde"
+  },
+  "stats_session_no_intention": {
+    "message": "Ei aikomusta"
+  },
+  "stats_session_article_label": {
+    "message": "Jakso: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "käsin"
+  },
+  "stats_session_source_schedule": {
+    "message": "aikataulu"
+  },
+  "stats_session_source_scheduled": {
+    "message": "aikataulutettu"
+  },
+  "stats_outcome_completed": {
+    "message": "Valmis"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Lopetettu aikaisin"
+  },
+  "stats_outcome_running": {
+    "message": "Käynnissä"
+  }
+}

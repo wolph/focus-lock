@@ -1,0 +1,195 @@
+{
+  "onboarding_page_title": {
+    "message": "Настройка Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Настройка Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Шаг $STEP$ из $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Не удалось восстановить сохранённый прогресс настройки. Начинаем заново с текущими значениями по умолчанию."
+  },
+  "onboarding_complete_heading": {
+    "message": "Настройка завершена"
+  },
+  "onboarding_complete_body": {
+    "message": "Твои выборы сохранены. Открой Focus Lock на панели инструментов Chrome, чтобы начать сессию."
+  },
+  "onboarding_error_heading": {
+    "message": "Настройка недоступна"
+  },
+  "onboarding_error_body": {
+    "message": "Не удалось загрузить настройку. Повтори попытку."
+  },
+  "onboarding_retry_button": {
+    "message": "Повторить"
+  },
+  "onboarding_save_error": {
+    "message": "Не удалось сохранить прогресс настройки. Повтори попытку."
+  },
+  "onboarding_enable_error": {
+    "message": "Не удалось включить блокировку сайтов. Повтори попытку."
+  },
+  "onboarding_finish_error": {
+    "message": "Не удалось завершить настройку. Твои выборы сохранены. Повтори попытку."
+  },
+  "onboarding_lists_heading": {
+    "message": "Выбери стартовый список блокировки"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "В режиме $MODE$ включённые категории и дополнительно заблокированные сайты недоступны.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "В режиме $MODE$ недоступны все сайты, кроме твоего списка разрешений.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Эти выборы станут значениями по умолчанию для будущих сессий. Позже их можно изменить."
+  },
+  "onboarding_lists_legend": {
+    "message": "Рекомендуемые категории сайтов"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ сайт",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ сайта",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Показать сайты категории $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Скрыть сайты категории $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Домены категории $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Продолжить"
+  },
+  "onboarding_access_heading": {
+    "message": "Включить блокировку сайтов"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock проверяет адреса страниц локально, чтобы сопоставить их с выбранными тобой категориями и сайтами. Доступ к сайтам нужен, чтобы показывать экран блокировки и восстанавливать затронутые страницы после окончания сессии."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Категории и свои домены могут включать любой сайт. Поэтому Chrome запросит следующее разрешение:"
+  },
+  "onboarding_access_capability": {
+    "message": "Просмотр и изменение всех ваших данных на всех сайтах"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock использует этот доступ только при применении твоих правил блокировки."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome не предоставил доступ к сайтам. Можно повторить попытку."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Доступ к сайтам предоставлен, но Focus Lock не смог включить блокировку. Повтори настройку или перезагрузи расширение."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Включить блокировку сайтов"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Не сейчас"
+  },
+  "onboarding_sync_heading": {
+    "message": "Выбери, где хранятся твои настройки"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Синхронизировать между устройствами Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Указанные ниже данные будут использовать Chrome Sync после завершения настройки."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Все данные Focus Lock остаются в этом профиле Chrome."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Синхронизируется"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Только локально"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Разработчику Focus Lock ничего не отправляется."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Завершить настройку с синхронизацией"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Завершить настройку без синхронизации"
+  },
+  "onboarding_site_count_few": {
+    "message": "$COUNT$ сайта",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ сайтов",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

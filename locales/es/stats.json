@@ -91,6 +91,9 @@
   "stats_streak_unit_other": {
     "message": "días"
   },
+  "stats_streak_unit_many": {
+    "message": "días"
+  },
   "stats_streak_freeze_tokens_one": {
     "message": "$COUNT$ ficha de congelación guardada",
     "placeholders": {
@@ -101,6 +104,15 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ fichas de congelación guardadas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_many": {
     "message": "$COUNT$ fichas de congelación guardadas",
     "placeholders": {
       "COUNT": {
@@ -126,6 +138,19 @@
     }
   },
   "stats_streak_active_days_other": {
+    "message": "$COUNT$ días activos este mes ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_many": {
     "message": "$COUNT$ días activos este mes ($MONTH$)",
     "placeholders": {
       "COUNT": {
@@ -211,6 +236,15 @@
       }
     }
   },
+  "stats_blocked_count_many": {
+    "message": "$COUNT$ bloqueados",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
   "stats_chart_name_bar": {
     "message": "Gráfico de barras"
   },
@@ -225,6 +259,19 @@
   },
   "stats_chart_empty_default": {
     "message": "Aún no hay datos."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
   },
   "stats_chart_table_summary": {
     "message": "Ver como tabla"
@@ -283,6 +330,9 @@
       }
     }
   },
+  "stats_session_source_manual": {
+    "message": "manual"
+  },
   "stats_session_source_schedule": {
     "message": "programación"
   },
@@ -297,39 +347,5 @@
   },
   "stats_outcome_running": {
     "message": "En curso"
-  },
-  "stats_streak_unit_many": {
-    "message": "días"
-  },
-  "stats_streak_freeze_tokens_many": {
-    "message": "$COUNT$ fichas de congelación guardadas",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "2"
-      }
-    }
-  },
-  "stats_streak_active_days_many": {
-    "message": "$COUNT$ días activos este mes ($MONTH$)",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "4"
-      },
-      "MONTH": {
-        "content": "$2",
-        "example": "August 2026"
-      }
-    }
-  },
-  "stats_blocked_count_many": {
-    "message": "$COUNT$ bloqueados",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "12"
-      }
-    }
   }
 }

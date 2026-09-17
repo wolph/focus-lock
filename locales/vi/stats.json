@@ -1,0 +1,304 @@
+{
+  "stats_document_title": {
+    "message": "Số liệu thống kê Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Hồ sơ tập trung của bạn"
+  },
+  "stats_loading": {
+    "message": "Đang tải số liệu thống kê của bạn."
+  },
+  "stats_load_error": {
+    "message": "Không thể tải số liệu thống kê. Hãy tải lại để thử lại."
+  },
+  "stats_partial_error_both": {
+    "message": "Không thể xem số lượt bị chặn theo giờ và cài đặt tín dụng truy cập trang web."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Không thể xem số lượt bị chặn theo giờ."
+  },
+  "stats_partial_error_economy": {
+    "message": "Không thể xem cài đặt tín dụng truy cập trang web."
+  },
+  "stats_scope_synced": {
+    "message": "Tổng số đã đồng bộ hóa từ tài khoản Chrome này. Các bảng chỉ cục bộ đều được ghi chú."
+  },
+  "stats_scope_local": {
+    "message": "Tổng số từ máy này. Số liệu thống kê Focus Lock chưa được đồng bộ hóa."
+  },
+  "stats_scope_checking": {
+    "message": "Đang kiểm tra xem các tổng số này có được đồng bộ hóa hay không."
+  },
+  "stats_scope_unavailable": {
+    "message": "Không thể xác định phạm vi số liệu thống kê. Tổng số có thể bao gồm dữ liệu đã đồng bộ hóa. Số lượt bị chặn theo giờ và các phiên gần đây là từ máy này."
+  },
+  "stats_scope_retry": {
+    "message": "Thử kiểm tra lại phạm vi"
+  },
+  "stats_empty": {
+    "message": "Số liệu thống kê sẽ xuất hiện sau phiên đầu tiên của bạn."
+  },
+  "stats_tile_focus_today": {
+    "message": "Tập trung hôm nay"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Tập trung trong 7 ngày qua"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Lượt bị chặn hôm nay"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Số lần bỏ dở cổng cân nhắc hôm nay"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Tín dụng truy cập trang web đã dùng hôm nay"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Tất cả trang $ALL_SITES$, một trang $ONE_SITE$, đã kiếm $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "Đã kiếm $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Chuỗi ngày"
+  },
+  "stats_streak_empty": {
+    "message": "Chuỗi ngày của bạn bắt đầu từ ngày tập trung đầu tiên."
+  },
+  "stats_streak_unit_one": {
+    "message": "ngày"
+  },
+  "stats_streak_unit_other": {
+    "message": "ngày"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "Đã tích $COUNT$ thẻ đóng băng",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "Đã tích $COUNT$ thẻ đóng băng",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Đóng băng chuỗi ngày: bù một ngày bị bỏ lỡ"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ ngày hoạt động trong tháng này ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ ngày hoạt động trong tháng này ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Các ngày hoạt động trong $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Không có ngày hoạt động nào trong $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Tập trung, 14 ngày qua"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Số phút tập trung sẽ xuất hiện sau phiên đầu tiên của bạn."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Lượt bị chặn, 14 ngày qua"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Lượt bị chặn sẽ hiện ở đây khi một phiên ghi nhận được lượt đầu tiên."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Trang web bị chặn nhiều nhất, 30 ngày qua"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Chưa có gì bị chặn. Đó là một khởi đầu tốt."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Lượt bị chặn theo giờ, chỉ trên máy này"
+  },
+  "stats_chart_other_site": {
+    "message": "khác"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ph",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ lượt bị chặn",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ lượt bị chặn",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Biểu đồ cột"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Biểu đồ cột ngang"
+  },
+  "stats_chart_description_bar": {
+    "message": "Biểu đồ cột. Dùng bàn phím để di chuyển qua các điểm dữ liệu, hoặc mở Xem dạng bảng để xem cùng giá trị đó."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Biểu đồ cột ngang. Dùng bàn phím để di chuyển qua các điểm dữ liệu, hoặc mở Xem dạng bảng để xem cùng giá trị đó."
+  },
+  "stats_chart_empty_default": {
+    "message": "Chưa có dữ liệu."
+  },
+  "stats_chart_table_summary": {
+    "message": "Xem dạng bảng"
+  },
+  "stats_chart_table_category": {
+    "message": "Danh mục"
+  },
+  "stats_chart_table_value": {
+    "message": "Giá trị"
+  },
+  "stats_heat_strip_label": {
+    "message": "Dải nhiệt lượt bị chặn theo 24 giờ"
+  },
+  "stats_sessions_heading": {
+    "message": "Phiên gần đây trên máy này"
+  },
+  "stats_sessions_empty": {
+    "message": "Phiên đầu tiên của bạn sẽ xuất hiện ở đây."
+  },
+  "stats_sessions_col_date": {
+    "message": "Ngày"
+  },
+  "stats_sessions_col_start": {
+    "message": "Bắt đầu"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Dự kiến"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Đã tập trung"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Tất cả trang"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Một trang"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Ý định"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Kết quả"
+  },
+  "stats_sessions_col_source": {
+    "message": "Nguồn"
+  },
+  "stats_session_no_intention": {
+    "message": "Không có ý định"
+  },
+  "stats_session_article_label": {
+    "message": "Phiên: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "thủ công"
+  },
+  "stats_session_source_schedule": {
+    "message": "lịch trình"
+  },
+  "stats_session_source_scheduled": {
+    "message": "theo lịch trình"
+  },
+  "stats_outcome_completed": {
+    "message": "Đã hoàn tất"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Kết thúc sớm"
+  },
+  "stats_outcome_running": {
+    "message": "Đang chạy"
+  }
+}

@@ -1,0 +1,840 @@
+{
+  "options_page_title": {
+    "message": "Focus Lock-opties"
+  },
+  "options_heading": {
+    "message": "Focus Lock-instellingen"
+  },
+  "options_loading_settings": {
+    "message": "Instellingen laden"
+  },
+  "options_privacy_loading": {
+    "message": "Privacyinstellingen laden"
+  },
+  "options_save_failed": {
+    "message": "Opslaan mislukt. Probeer opnieuw."
+  },
+  "options_blocking_heading": {
+    "message": "Blokkeren"
+  },
+  "options_blocking_help": {
+    "message": "Eigen regels blokkeren tijdens blokkeerlijstsessies. De toelatingslijst is wat bereikbaar blijft tijdens toelatingslijstsessies. Meegeleverde categorieën blokkeren veelvoorkomende tijdvreters."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Eigen blokkeerlijst"
+  },
+  "options_whitelist_title": {
+    "message": "Toelatingslijst"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Meegeleverde categorieën"
+  },
+  "options_bundled_categories_help": {
+    "message": "Meegeleverde lijsten met veelvoorkomende tijdvreters. Zet een hele categorie aan en open die daarna om losse sites bereikbaar te houden."
+  },
+  "options_schedule_heading": {
+    "message": "Schema"
+  },
+  "options_schedule_help": {
+    "message": "Sessies starten vanzelf binnen deze vensters. De strengheid die je hier kiest, geldt voor het hele venster."
+  },
+  "options_behavior_heading": {
+    "message": "Sessiegedrag"
+  },
+  "options_budget_heading": {
+    "message": "Toegangstegoed"
+  },
+  "options_notifications_heading": {
+    "message": "Meldingen"
+  },
+  "options_privacy_heading": {
+    "message": "Privacy en gegevens"
+  },
+  "options_load_error_retry": {
+    "message": "Opnieuw"
+  },
+  "options_load_error_delete_all": {
+    "message": "Alles verwijderen en opnieuw beginnen"
+  },
+  "options_load_error_keep_data": {
+    "message": "Gegevens behouden"
+  },
+  "options_delete_all_data": {
+    "message": "Alle Focus Lock-gegevens verwijderen"
+  },
+  "options_dirty_saving": {
+    "message": "Wijzigingen opslaan"
+  },
+  "options_dirty_unsaved": {
+    "message": "Niet-opgeslagen wijzigingen"
+  },
+  "options_dirty_clean": {
+    "message": "Geen niet-opgeslagen wijzigingen"
+  },
+  "options_dirty_discard": {
+    "message": "Wijzigingen verwerpen"
+  },
+  "options_dirty_save": {
+    "message": "Wijzigingen opslaan"
+  },
+  "options_session_status_label": {
+    "message": "Sessiestatus"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domein"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "reg. expr."
+  },
+  "options_rule_remove": {
+    "message": "Verwijderen"
+  },
+  "options_rule_remove_aria": {
+    "message": "$PATTERN$ verwijderen",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Nog geen regels."
+  },
+  "options_rule_kind_aria": {
+    "message": "Soort regel"
+  },
+  "options_rule_kind_host_option": {
+    "message": "domein of subdomein"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (volledige URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Patroon"
+  },
+  "options_rule_add": {
+    "message": "Regel toevoegen"
+  },
+  "options_rules_help": {
+    "message": "facebook.com dekt dat domein en elk subdomein. news.ycombinator.com dekt dat subdomein en alles eronder. /youtube\\.com\\/shorts/ komt als reguliere expressie overeen met de volledige URL."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ moet een positief geheel getal zijn.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ moet een geheel getal van nul of hoger zijn.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ moet nul of hoger zijn.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ moet binnen het ondersteunde minutenbereik vallen.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ moet binnen het ondersteunde dagenbereik vallen.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Standaardwaarden voor sessies"
+  },
+  "options_session_defaults_help": {
+    "message": "Modus en strengheid liggen vast zodra een sessie start. Dit zijn de waarden waarmee het startformulier opent."
+  },
+  "options_preset_short_label": {
+    "message": "Korte sessie (minuten)"
+  },
+  "options_preset_default_label": {
+    "message": "Standaardsessie (minuten)"
+  },
+  "options_preset_deep_label": {
+    "message": "Lange sessie (minuten)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Blokkeerlijst: vermelde sites blokkeren"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Toelatingslijst: alleen vermelde sites toestaan"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Flexibel: stop de sessie wanneer je wilt"
+  },
+  "options_strictness_friction_label": {
+    "message": "Wrijving: vroeg stoppen gaat via de ingestelde bedenktijd"
+  },
+  "options_strictness_hard_label": {
+    "message": "Op slot: geen vroeg einde, alleen tijdelijke sitetoegang"
+  },
+  "options_cycle_heading": {
+    "message": "Focus- en pauzecyclus"
+  },
+  "options_cycle_help": {
+    "message": "Standaard: 25 minuten focus, 5 minuten pauze, 15 minuten lange pauze elke 4e cyclus. Pauzes volgens schema doen het in studies beter voor stemming en focus dan pauzeren wanneer je er zin in hebt. De precieze minuten zijn conventie, geen wetenschap."
+  },
+  "options_cycle_default_label": {
+    "message": "Standaard focus- en pauzecyclus gebruiken"
+  },
+  "options_focus_minutes_label": {
+    "message": "Focusminuten"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Minuten korte pauze"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Minuten lange pauze"
+  },
+  "options_long_every_label": {
+    "message": "Lange pauze elke Ne cyclus"
+  },
+  "options_gate_heading": {
+    "message": "Bedenktijd"
+  },
+  "options_gate_help": {
+    "message": "Een wachttijd van 10 seconden met een expliciete knop om terug te gaan naar je werk vermindert impulsbezoeken meetbaar (veldstudie, PNAS 2023). Een langere wachttijd en een getypte zin verdubbelen het effect ongeveer."
+  },
+  "options_gate_wait_one": {
+    "message": "$COUNT$ seconde wachten",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "$COUNT$ seconden wachten",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Eigen keuze"
+  },
+  "options_custom_delay_label": {
+    "message": "Eigen wachttijd (seconden)"
+  },
+  "options_custom_delay_error": {
+    "message": "Eigen wachttijd moet een positief geheel aantal seconden zijn."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Ook een zin laten typen"
+  },
+  "options_gate_force_end_label": {
+    "message": "Knop “Wachttijd negeren en toch stoppen” inschakelen"
+  },
+  "options_credit_help": {
+    "message": "Toegangstegoed groeit terwijl je focust. Zowel toegang tot alle sites als het ontgrendelen van één site gaat van hetzelfde saldo af. Je kunt altijd even weglopen zonder tegoed te besteden."
+  },
+  "options_earn_rate_label": {
+    "message": "Minuten sitetoegang per 30 minuten focus"
+  },
+  "options_credit_cap_label": {
+    "message": "Limiet toegangstegoed (minuten)"
+  },
+  "options_pause_length_label": {
+    "message": "Duur toegang tot alle sites (minuten)"
+  },
+  "options_unlock_length_label": {
+    "message": "Duur ontgrendeling van één site (minuten)"
+  },
+  "options_streak_heading": {
+    "message": "Reeks en bewaartermijn"
+  },
+  "options_streak_help": {
+    "message": "De reeks telt dagen die het doel halen. Eén standaardsessie houdt de keten in leven en een beschermdag repareert een gemiste dag."
+  },
+  "options_streak_goal_label": {
+    "message": "Dagdoel voor de reeks (focusminuten)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Interval beschermdagen (dagen)"
+  },
+  "options_retention_label": {
+    "message": "Dagstatistieken bewaren (dagen)"
+  },
+  "options_category_on_announcement": {
+    "message": "Categorie $CATEGORY$ aan.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Categorie $CATEGORY$ uit.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Alle categorieën aan."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Alle categorieën uit."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ meegenomen.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ blijft bereikbaar.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Alle $CATEGORY$-sites meegenomen.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Alle $CATEGORY$-sites blijven bereikbaar.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Bulkacties voor categorieën"
+  },
+  "options_selected_count": {
+    "message": "$COUNT$ geselecteerd",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "$COUNT$ gedeselecteerd",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Alles selecteren"
+  },
+  "options_deselect_all": {
+    "message": "Alles deselecteren"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Alle categorieën selecteren"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Alle categorieën deselecteren"
+  },
+  "options_show_category_sites": {
+    "message": "$CATEGORY$-sites tonen",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "$CATEGORY$-sites verbergen",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ website meegenomen",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ websites meegenomen",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Categorie uit"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ meegenomen indien aan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ meegenomen indien aan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Vink een site uit om die bereikbaar te houden terwijl de rest van de categorie geblokkeerd is."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Bulkacties voor $CATEGORY$-sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Alle $CATEGORY$-sites selecteren",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Alle $CATEGORY$-sites deselecteren",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$-sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "Zo"
+  },
+  "options_day_mon": {
+    "message": "Ma"
+  },
+  "options_day_tue": {
+    "message": "Di"
+  },
+  "options_day_wed": {
+    "message": "Wo"
+  },
+  "options_day_thu": {
+    "message": "Do"
+  },
+  "options_day_fri": {
+    "message": "Vr"
+  },
+  "options_day_sat": {
+    "message": "Za"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Focus en pauzes afwisselen"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Overlapt een ander ingeschakeld item op $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Sessietype"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Schema-item"
+  },
+  "options_schedule_start_label": {
+    "message": "Begin"
+  },
+  "options_schedule_end_label": {
+    "message": "Einde"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Duur"
+  },
+  "options_schedule_intention_label": {
+    "message": "Intentie"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "waar deze tijd voor is"
+  },
+  "options_schedule_save_entry": {
+    "message": "Item opslaan"
+  },
+  "options_cancel": {
+    "message": "Annuleren"
+  },
+  "options_schedule_empty": {
+    "message": "Nog geen geplande sessies."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Geselecteerde dagen"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ tot $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "blokkeerlijst"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "toelatingslijst"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "flexibel"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "wrijving"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "op slot"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Ingeschakeld"
+  },
+  "options_schedule_edit": {
+    "message": "Bewerken"
+  },
+  "options_schedule_delete": {
+    "message": "Verwijderen"
+  },
+  "options_schedule_add": {
+    "message": "Schema-item toevoegen"
+  },
+  "options_sounds_heading": {
+    "message": "Geluiden"
+  },
+  "options_master_volume": {
+    "message": "Hoofdvolume"
+  },
+  "options_sound_session_complete": {
+    "message": "Sessie voltooid"
+  },
+  "options_sound_break_start": {
+    "message": "Pauze begint"
+  },
+  "options_sound_break_end": {
+    "message": "Pauze eindigt"
+  },
+  "options_sound_schedule_start": {
+    "message": "Automatische start via schema"
+  },
+  "options_sound_preview_aria": {
+    "message": "$SOUND$ beluisteren",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Afspelen"
+  },
+  "options_sound_preview_error": {
+    "message": "Het geluid kon niet worden afgespeeld. Probeer opnieuw."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Meldingen"
+  },
+  "options_session_complete_notification": {
+    "message": "Een systeemmelding tonen als een sessie voltooid is"
+  },
+  "options_badge_heading": {
+    "message": "Pictogramlabel"
+  },
+  "options_badge_countdown": {
+    "message": "De resterende tijd op het werkbalkpictogram tonen"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Websitetoegang"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Websitetoegang staat uit"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock kan geen websites blokkeren totdat je toegang geeft."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Websiteblokkering inschakelen"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Websitetoegang is verleend, maar blokkering is niet actief"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome heeft toegang gegeven, maar Focus Lock kon zijn blokkeerscript niet registreren."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Websiteblokkering opnieuw proberen"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Websiteblokkering staat aan"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock kan je actieve blokkeerregels toepassen op gewone websitepagina's."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Lokale geschiedenis verwijderen?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Verwijderen van lokale geschiedenis bevestigen"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Lokale geschiedenis verwijderd."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Hiermee verwijder je volledige URL's, focusintenties en gedetailleerde sessiegebeurtenissen definitief van dit apparaat. Een lopende sessie wordt niet gewist; die houdt haar intentie en het adres van elk tabblad dat ze blokkeert. Als je de sessie beëindigt, wordt de intentie gewist en begint een opruiming die elk open websitetabblad vrijgeeft; die opruiming verwijdert bij het afronden elk opgeslagen adres."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Hiermee verwijder je volledige URL's, focusintenties en gedetailleerde sessiegebeurtenissen definitief van dit apparaat, plus de totalen die alleen lokaal staan. Een lopende sessie wordt niet gewist; die houdt haar intentie en het adres van elk tabblad dat ze blokkeert. Als je de sessie beëindigt, wordt de intentie gewist en begint een opruiming die elk open websitetabblad vrijgeeft; die opruiming verwijdert bij het afronden elk opgeslagen adres."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Gegevens uit Sync verwijderen?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Verwijderen van Sync-gegevens bevestigen"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Gegevens in Chrome Sync verwijderd."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Hiermee verwijder je instellingen, blokkeer- en toelatingslijsten, toegangstegoed, reeksen en totalen van geblokkeerde pogingen per domein definitief uit Chrome Sync. Lokale instellingen en statistieken blijven op dit apparaat staan."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Alle Focus Lock-gegevens verwijderen?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Verwijderen van alle Focus Lock-gegevens bevestigen"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Alle Focus Lock-gegevens verwijderd."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Hiermee verwijder je definitief elk stuk Focus Lock-gegevens op dit apparaat en elke kopie van Focus Lock in Chrome Sync:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Alles verwijderen kan alleen als er geen sessie loopt. Focus Lock keert daarna terug naar de setup."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Lokale geschiedenis kon niet worden verwijderd. Probeer opnieuw."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Gegevens in Chrome Sync konden niet worden verwijderd. Probeer opnieuw."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Niet alle Focus Lock-gegevens konden worden verwijderd. Probeer opnieuw."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync kon je laatste wijzigingen niet opslaan. Je lokale opslag is veilig."
+  },
+  "options_privacy_error_request": {
+    "message": "Het verzoek kon niet worden voltooid. Probeer opnieuw."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Websitetoegang bijgewerkt."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Websitetoegang is niet verleend."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Websitetoegang kon niet worden bijgewerkt. Probeer opnieuw."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Websiteblokkering ingeschakeld."
+  },
+  "options_privacy_error_export": {
+    "message": "Het gebeurtenissenlogboek kon niet worden geëxporteerd."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Het gebeurtenissenlogboek kon niet worden geëxporteerd. Probeer opnieuw."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "De Chrome-instellingen voor rechten konden niet worden geopend. Probeer opnieuw."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome-instellingen voor rechten geopend."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Chrome-instellingen voor rechten openen"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Focus Lock-gegevens synchroniseren tussen Chrome-apparaten"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync ingeschakeld."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync uitgeschakeld."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync is je laatste wijzigingen nog aan het opslaan."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync staat aan."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync staat uit."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Wijzigingen in Chrome Sync opgeslagen."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome Sync opnieuw proberen in te schakelen"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Chrome Sync opnieuw proberen"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Gesynchroniseerd"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Alleen lokaal"
+  },
+  "options_privacy_developer_note": {
+    "message": "Er wordt niets naar de ontwikkelaar van Focus Lock gestuurd."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Lokaal gebeurtenissenlogboek"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Exporteer het gedetailleerde lokale logboek of verwijder lokale browse- en sessiegeschiedenis."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Lokaal logboek exporteren"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Lokaal gebeurtenissenlogboek geëxporteerd."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Lokale geschiedenis verwijderen"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Gegevens in Sync"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Verwijder de kopieën van Focus Lock in Chrome Sync zonder dit apparaat te wijzigen."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Sync-gegevens verwijderen"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Alle Focus Lock-gegevens"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Verwijder elk Focus Lock-record op dit apparaat en elke kopie van Focus Lock in Chrome Sync en begin daarna opnieuw bij de setup. Beschikbaar zolang er geen sessie loopt."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Verwijderen van alle Focus Lock-gegevens wordt hervat."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Verwijderen van lokale geschiedenis opnieuw proberen"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Verwijderen van Sync-gegevens opnieuw proberen"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Verwijderen van alle gegevens opnieuw proberen"
+  },
+  "options_error_load": {
+    "message": "Instellingen laden mislukt. Herlaad de pagina om het opnieuw te proberen."
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lock herstarten mislukt. Probeer opnieuw."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Privacyinstellingen vernieuwen mislukt. Herlaad de pagina."
+  },
+  "options_error_website_blocking": {
+    "message": "Websiteblokkering bijwerken mislukt. Probeer opnieuw."
+  },
+  "options_error_change_sync": {
+    "message": "Chrome Sync wijzigen mislukt. Probeer opnieuw."
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome Sync opnieuw proberen mislukt. Probeer opnieuw."
+  },
+  "options_error_save_settings": {
+    "message": "Instellingen opslaan mislukt. Herlaad de pagina en probeer opnieuw."
+  },
+  "options_error_save_lists": {
+    "message": "Lijsten opslaan mislukt. Herlaad de pagina en probeer opnieuw."
+  }
+}

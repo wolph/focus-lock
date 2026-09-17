@@ -83,6 +83,9 @@
   "options_rule_kind_host_badge": {
     "message": "domeniu"
   },
+  "options_rule_kind_regex_badge": {
+    "message": "expr. reg."
+  },
   "options_rule_remove": {
     "message": "Elimină"
   },
@@ -109,6 +112,12 @@
   },
   "options_rule_pattern_aria": {
     "message": "Tipar"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
     "message": "Adaugă regulă"
@@ -731,6 +740,9 @@
   },
   "options_privacy_open_chrome_settings": {
     "message": "Deschide setările de permisiuni Chrome"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Sincronizare Chrome"
   },
   "options_privacy_sync_switch_label": {
     "message": "Sincronizează datele Focus Lock între dispozitivele Chrome"

@@ -1,0 +1,195 @@
+{
+  "onboarding_page_title": {
+    "message": "Konfiguracja Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Konfiguracja Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Krok $STEP$ z $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Nie udało się przywrócić zapisanego postępu konfiguracji. Zaczynamy od nowa z bieżącymi ustawieniami domyślnymi."
+  },
+  "onboarding_complete_heading": {
+    "message": "Konfiguracja ukończona"
+  },
+  "onboarding_complete_body": {
+    "message": "Twoje wybory są zapisane. Otwórz Focus Lock z paska narzędzi Chrome, aby rozpocząć sesję."
+  },
+  "onboarding_error_heading": {
+    "message": "Konfiguracja niedostępna"
+  },
+  "onboarding_error_body": {
+    "message": "Nie udało się wczytać konfiguracji. Spróbuj ponownie."
+  },
+  "onboarding_retry_button": {
+    "message": "Ponów"
+  },
+  "onboarding_save_error": {
+    "message": "Nie udało się zapisać postępu konfiguracji. Spróbuj ponownie."
+  },
+  "onboarding_enable_error": {
+    "message": "Nie udało się włączyć blokowania stron. Spróbuj ponownie."
+  },
+  "onboarding_finish_error": {
+    "message": "Nie udało się ukończyć konfiguracji. Twoje wybory są nadal zapisane. Spróbuj ponownie."
+  },
+  "onboarding_lists_heading": {
+    "message": "Wybierz startową listę blokowanych"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "W trybie $MODE$ włączone kategorie i dodatkowo zablokowane strony są niedostępne.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "W trybie $MODE$ niedostępne są wszystkie strony poza Twoją listą dozwolonych.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Te wybory staną się domyślne dla przyszłych sesji. Możesz je później zmienić."
+  },
+  "onboarding_lists_legend": {
+    "message": "Zalecane kategorie stron"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ strona",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ strony",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Pokaż strony kategorii $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Ukryj strony kategorii $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Domeny kategorii $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Dalej"
+  },
+  "onboarding_access_heading": {
+    "message": "Włącz blokowanie stron"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock sprawdza adresy stron lokalnie, aby dopasować je do wybranych przez Ciebie kategorii i stron. Dostępu do stron używa, aby pokazać ekran blokowania i przywrócić zmienione strony po zakończeniu sesji."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategorie i własne domeny mogą obejmować każdą stronę. Dlatego Chrome poprosi o takie uprawnienie:"
+  },
+  "onboarding_access_capability": {
+    "message": "Odczytywanie i zmienianie wszystkich Twoich danych na wszystkich stronach"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock używa tego dostępu tylko podczas stosowania Twoich reguł blokowania."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome nie przyznał dostępu do stron. Możesz spróbować ponownie."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Dostęp do stron jest przyznany, ale Focus Lock nie mógł włączyć blokowania. Powtórz konfigurację lub przeładuj rozszerzenie."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Włącz blokowanie stron"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Nie teraz"
+  },
+  "onboarding_sync_heading": {
+    "message": "Wybierz, gdzie przechowywane są Twoje ustawienia"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Synchronizuj między urządzeniami Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Zatwierdzone dane poniżej będą korzystać z Chrome Sync po zakończeniu konfiguracji."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Wszystkie dane Focus Lock zostają w tym profilu Chrome."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Synchronizowane"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Tylko lokalnie"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Nic nie jest wysyłane do dewelopera Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Zakończ konfigurację z synchronizacją"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Zakończ konfigurację bez synchronizacji"
+  },
+  "onboarding_site_count_few": {
+    "message": "$COUNT$ strony",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ stron",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

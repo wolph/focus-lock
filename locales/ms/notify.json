@@ -1,45 +1,63 @@
 {
   "notify_session_complete_title": {
-    "message": "Fokus session complete"
+    "message": "Sesi fokus selesai"
+  },
+  "notify_session_complete_body": {
+    "message": "Sesi fokus Anda selesai."
+  },
+  "notify_schedule_window_body": {
+    "message": "Dikunci hingga $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Fokus schedule could not start"
+    "message": "Jadwal fokus tidak dapat dimulai"
   },
   "notify_schedule_unavailable_body": {
-    "message": "Situs web blocking is not enabled. Finish setup or grant website access, then try again."
+    "message": "Penyekatan laman web tidak diaktifkan. Selesaikan penyiapan atau berikan akses laman web, kemudian coba lagi."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Penyiapan was completed in another tab."
+    "message": "Penyiapan diselesaikan di tab lain."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Penyiapan changed in another tab. The latest choices were reloaded."
+    "message": "Penyiapan berubah di tab lain. Pilihan terbaru telah dimuat ulang."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Penyiapan changed in another tab. Reload setup before finishing."
+    "message": "Penyiapan berubah di tab lain. Muat ulang penyiapan sebelum menyelesaikan."
   },
   "notify_setup_not_complete": {
-    "message": "Penyiapan is not complete."
+    "message": "Penyiapan tidak lengkap."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "Penyiapan is not ready to finish."
+    "message": "Penyiapan tidak siap untuk diselesaikan."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Penyiapan storage choice changed. Reload setup before finishing."
+    "message": "Pilihan penyimpanan penyiapan berubah. Muat ulang penyiapan sebelum menyelesaikan."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Operasi penyimpanan penyiapan gagal."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Operasi penyiapan gagal."
   },
   "notify_website_access_check_failed": {
-    "message": "Fokus Lock could not check website access. Coba Ulang setup or reload the extension."
+    "message": "Focus Lock tidak dapat memeriksa akses laman web. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+    "message": "Akses laman web diberikan, tetapi Focus Lock tidak dapat mengaktifkan penyekatan. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Situs web access is unavailable, and Fokus Lock could not finish blocking cleanup. Coba Ulang setup or reload the extension."
+    "message": "Akses laman web tidak tersedia, dan Focus Lock tidak dapat menyelesaikan pembersihan penyekatan. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "notify_website_access_inconsistent": {
-    "message": "Fokus Lock received an inconsistent website access state. Coba Ulang setup or reload the extension."
+    "message": "Focus Lock menerima status akses laman web yang tidak konsisten. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "notify_boot_not_finished": {
-    "message": "Fokus Lock did not finish starting: $REASON$",
+    "message": "Focus Lock tidak selesai dimulai: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -47,22 +65,70 @@
       }
     }
   },
+  "notify_unknown_error": {
+    "message": "kesalahan tidak dikenal"
+  },
   "notify_nothing_to_reset": {
-    "message": "Fokus Lock is running, nothing to reset"
+    "message": "Focus Lock sedang berjalan, tidak ada yang perlu direset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Fokus Lock cannot reset a runtime that is still committed inside a policy generation"
+    "message": "Focus Lock tidak dapat mereset waktu aktif yang masih berkomitmen dalam pembuatan kebijakan"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Pengulangan pembersihan data tidak tersedia."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Nonaktifkan Sync before deleting synced data"
+    "message": "Nonaktifkan Sinkronisasi sebelum menghapus data yang disinkronkan"
   },
   "notify_work_gate_busy": {
-    "message": "Fokus Lock is still finishing an earlier change. Try again in a moment."
+    "message": "Focus Lock masih menyelesaikan perubahan sebelumnya. Coba lagi sebentar."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Gerbang terbuka tidak dapat ditutup. Coba lagi."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Tab kerja tidak tersedia."
   },
   "notify_settings_sync_limit": {
-    "message": "Pengaturan exceed the 8 KB Chrome Sync limit. Hapus schedule entries or shorten intentions, then try again."
+    "message": "Pengaturan melebihi batas Sinkronisasi Chrome 8 KB. Hapus entri jadwal atau perpendek niat, kemudian coba lagi."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sync limit. Hapus custom or whitelist rules, then try again."
+    "message": "Daftar melebihi batas Sinkronisasi Chrome 8 KB. Hapus aturan khusus atau daftar putih, kemudian coba lagi."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "sesi keras berjalan: menghapus situs yang diblokir membuka kunci saat berakhir"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "sesi keras berjalan: entri daftar putih baru membuka kunci saat berakhir"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "sesi keras berjalan: menonaktifkan kategori membuka kunci saat berakhir"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "sesi keras berjalan: pengecualian baru membuka kunci saat berakhir"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "sesi keras berjalan: melemahkan ketat default menunggu sampai berakhir"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "sesi keras berjalan: mempersingkat penundaan deliberasi melemahkan gerbang"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "sesi keras berjalan: menghilangkan frasa yang diketik melemahkan gerbang"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "sesi keras berjalan: menaikkan tingkat pendapatan jeda mendanai lebih banyak pelarian"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "sesi keras berjalan: menaikkan batas jeda mendanai lebih banyak pelarian"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "sesi keras berjalan: mempersingkat jeda menurunkan biayanya"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "sesi keras berjalan: mempersingkat pembukaan kunci menurunkan biayanya"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "sesi keras berjalan: entri jadwalnya tidak dapat dilemahkan sampai berakhir"
   }
 }

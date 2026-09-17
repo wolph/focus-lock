@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Fokusøkten er ferdig"
+  },
+  "notify_session_complete_body": {
+    "message": "Fokusøkten din er slutt."
+  },
+  "notify_schedule_window_body": {
+    "message": "Låst til $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Fokusplanen kunne ikke starte"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Nettstedsblokkering er ikke aktivert. Fullfør oppsettet eller gi nettstedstilgang, og prøv igjen."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Oppsettet ble fullført i en annen fane."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Oppsettet ble endret i en annen fane. De nyeste valgene ble lastet inn på nytt."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Oppsettet ble endret i en annen fane. Last oppsettet på nytt før du fullfører."
+  },
+  "notify_setup_not_complete": {
+    "message": "Oppsettet er ikke fullført."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Oppsettet er ikke klart til å fullføres."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Lagringsvalget i oppsettet ble endret. Last oppsettet på nytt før du fullfører."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Lagringsoperasjonen under oppsettet mislyktes."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Oppsettsoperasjonen mislyktes."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock kunne ikke kontrollere nettstedstilgangen. Prøv oppsettet på nytt eller last utvidelsen på nytt."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Nettstedstilgang er gitt, men Focus Lock kunne ikke aktivere blokkeringen. Prøv oppsettet på nytt eller last utvidelsen på nytt."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Nettstedstilgang er utilgjengelig, og Focus Lock kunne ikke fullføre oppryddingen av blokkeringen. Prøv oppsettet på nytt eller last utvidelsen på nytt."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock mottok en motstridende tilstand for nettstedstilgang. Prøv oppsettet på nytt eller last utvidelsen på nytt."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock ble ikke ferdig med å starte: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "ukjent feil"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock kjører, ingenting å tilbakestille"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock kan ikke tilbakestille en kjøring som fortsatt ligger inne i en policygenerasjon"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Det finnes ikke noe nytt forsøk for datasletting."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Slå av Sync før du sletter synkroniserte data"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock holder fortsatt på med en tidligere endring. Prøv igjen om et øyeblikk."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Den åpne sperren kunne ikke lukkes. Prøv igjen."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Arbeidsfanen er utilgjengelig."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Innstillingene overskrider grensen på 8 kB i Chrome Sync. Fjern planposter eller forkort intensjoner, og prøv igjen."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Listene overskrider grensen på 8 kB i Chrome Sync. Fjern egne regler eller regler i tillatelseslisten, og prøv igjen."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "en økt med hard lås pågår: fjerning av blokkerte nettsteder låses opp når den er over"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "en økt med hard lås pågår: nye oppføringer i tillatelseslisten låses opp når den er over"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "en økt med hard lås pågår: å slå av kategorier låses opp når den er over"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "en økt med hard lås pågår: nye unntak låses opp når den er over"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "en økt med hard lås pågår: å svekke standardstrengheten venter til den er over"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "en økt med hard lås pågår: å forkorte betenkningstiden svekker sperren"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "en økt med hard lås pågår: å fjerne den innskrevne frasen svekker sperren"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "en økt med hard lås pågår: å øke opptjeningsraten for pauser finansierer flere rømninger"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "en økt med hard lås pågår: å heve pausegrensen finansierer flere rømninger"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "en økt med hard lås pågår: å forkorte pauser senker kostnaden deres"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "en økt med hard lås pågår: å forkorte opplåsninger senker kostnaden deres"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "en økt med hard lås pågår: planposten kan ikke svekkes før den er over"
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "stats_document_title": {
+    "message": "Statystyki Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Twoje wyniki skupienia"
+  },
+  "stats_loading": {
+    "message": "Wczytujemy Twoje statystyki."
+  },
+  "stats_load_error": {
+    "message": "Nie udało się wczytać statystyk. Odśwież stronę i spróbuj ponownie."
+  },
+  "stats_partial_error_both": {
+    "message": "Próby godzinowe i ustawienia kredytu dostępu są niedostępne."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Próby godzinowe są niedostępne."
+  },
+  "stats_partial_error_economy": {
+    "message": "Ustawienia kredytu dostępu są niedostępne."
+  },
+  "stats_scope_synced": {
+    "message": "Zsynchronizowane sumy z tego konta Chrome. Panele lokalne są oznaczone."
+  },
+  "stats_scope_local": {
+    "message": "Sumy z tego komputera. Statystyki Focus Lock nie są synchronizowane."
+  },
+  "stats_scope_checking": {
+    "message": "Sprawdzamy, czy te sumy są synchronizowane."
+  },
+  "stats_scope_unavailable": {
+    "message": "Zakres statystyk jest niedostępny. Sumy mogą zawierać zsynchronizowane dane. Próby godzinowe i ostatnie sesje pochodzą z tego komputera."
+  },
+  "stats_scope_retry": {
+    "message": "Sprawdź zakres ponownie"
+  },
+  "stats_empty": {
+    "message": "Statystyki pojawią się po pierwszej sesji."
+  },
+  "stats_tile_focus_today": {
+    "message": "Skupienie dzisiaj"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Skupienie przez ostatnie 7 dni"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Prób zablokowanych dzisiaj"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Próśb o odblokowanie porzuconych dzisiaj"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Kredytu dostępu wydanego dzisiaj"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Wszystkie strony $ALL_SITES$, jedna strona $ONE_SITE$, zarobione $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "zarobione $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Seria"
+  },
+  "stats_streak_empty": {
+    "message": "Twoja seria zacznie się od pierwszego dnia skupienia."
+  },
+  "stats_streak_unit_one": {
+    "message": "dzień"
+  },
+  "stats_streak_unit_other": {
+    "message": "dnia"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ zamrożenie w zapasie",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ zamrożenia w zapasie",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Zamrożenie serii: jeden opuszczony dzień pokryty"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktywny dzień w tym miesiącu ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktywnego dnia w tym miesiącu ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktywne dni w $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Brak aktywnych dni w $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Skupienie, ostatnie 14 dni"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Minuty skupienia pojawią się po pierwszej sesji."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Zablokowane próby, ostatnie 14 dni"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Zablokowane próby pojawią się tutaj, gdy sesja złapie pierwszą."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Najczęściej blokowane strony, ostatnie 30 dni"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Nic jeszcze nie zablokowano. To dobry początek."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Próby wg godzin, tylko ten komputer"
+  },
+  "stats_chart_other_site": {
+    "message": "inne"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ zablokowana",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ zablokowanych",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Wykres słupkowy"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Poziomy wykres słupkowy"
+  },
+  "stats_chart_description_bar": {
+    "message": "Wykres słupkowy. Przechodź między punktami klawiaturą albo otwórz Pokaż jako tabelę, aby zobaczyć te same wartości."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Poziomy wykres słupkowy. Przechodź między punktami klawiaturą albo otwórz Pokaż jako tabelę, aby zobaczyć te same wartości."
+  },
+  "stats_chart_empty_default": {
+    "message": "Brak danych."
+  },
+  "stats_chart_table_summary": {
+    "message": "Pokaż jako tabelę"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategoria"
+  },
+  "stats_chart_table_value": {
+    "message": "Wartość"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-godzinny pasek natężenia zablokowanych prób"
+  },
+  "stats_sessions_heading": {
+    "message": "Ostatnie sesje na tym komputerze"
+  },
+  "stats_sessions_empty": {
+    "message": "Twoja pierwsza sesja pojawi się tutaj."
+  },
+  "stats_sessions_col_date": {
+    "message": "Data"
+  },
+  "stats_sessions_col_start": {
+    "message": "Początek"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Plan"
+  },
+  "stats_sessions_col_focused": {
+    "message": "W skupieniu"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Wszystkie strony"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Jedna strona"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Zamiar"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Wynik"
+  },
+  "stats_sessions_col_source": {
+    "message": "Źródło"
+  },
+  "stats_session_no_intention": {
+    "message": "Bez zamiaru"
+  },
+  "stats_session_article_label": {
+    "message": "Sesja: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "ręcznie"
+  },
+  "stats_session_source_schedule": {
+    "message": "harmonogram"
+  },
+  "stats_session_source_scheduled": {
+    "message": "z harmonogramu"
+  },
+  "stats_outcome_completed": {
+    "message": "Ukończona"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Zakończona wcześniej"
+  },
+  "stats_outcome_running": {
+    "message": "Trwa"
+  },
+  "stats_streak_unit_few": {
+    "message": "dni"
+  },
+  "stats_streak_unit_many": {
+    "message": "dni"
+  },
+  "stats_streak_freeze_tokens_few": {
+    "message": "$COUNT$ zamrożenia w zapasie",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_many": {
+    "message": "$COUNT$ zamrożeń w zapasie",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_active_days_few": {
+    "message": "$COUNT$ aktywne dni w tym miesiącu ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_many": {
+    "message": "$COUNT$ aktywnych dni w tym miesiącu ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_blocked_count_few": {
+    "message": "$COUNT$ zablokowane",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_blocked_count_many": {
+    "message": "$COUNT$ zablokowanych",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

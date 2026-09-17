@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Keskittymisjakso valmis"
+  },
+  "notify_session_complete_body": {
+    "message": "Keskittymisjaksosi päättyi."
+  },
+  "notify_schedule_window_body": {
+    "message": "Lukittu klo $END$ asti.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Keskittymisaikataulua ei voitu käynnistää"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Sivustojen esto ei ole käytössä. Viimeistele käyttöönotto tai myönnä sivusto-oikeudet ja yritä uudelleen."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Käyttöönotto viimeisteltiin toisessa välilehdessä."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Käyttöönotto muuttui toisessa välilehdessä. Uusimmat valinnat ladattiin uudelleen."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Käyttöönotto muuttui toisessa välilehdessä. Lataa käyttöönotto uudelleen ennen viimeistelyä."
+  },
+  "notify_setup_not_complete": {
+    "message": "Käyttöönotto ei ole valmis."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Käyttöönotto ei ole valmis viimeisteltäväksi."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Käyttöönoton tallennusvalinta muuttui. Lataa käyttöönotto uudelleen ennen viimeistelyä."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Käyttöönoton tallennustoiminto epäonnistui."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Käyttöönoton toiminto epäonnistui."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock ei voinut tarkistaa sivusto-oikeuksia. Yritä käyttöönottoa uudelleen tai lataa laajennus uudelleen."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Sivusto-oikeudet on myönnetty, mutta Focus Lock ei voinut ottaa estoa käyttöön. Yritä käyttöönottoa uudelleen tai lataa laajennus uudelleen."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Sivusto-oikeudet eivät ole käytettävissä, eikä Focus Lock voinut viimeistellä eston siivousta. Yritä käyttöönottoa uudelleen tai lataa laajennus uudelleen."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock sai ristiriitaisen sivusto-oikeuksien tilan. Yritä käyttöönottoa uudelleen tai lataa laajennus uudelleen."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock ei käynnistynyt loppuun asti: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "tuntematon virhe"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock on käynnissä, ei mitään palautettavaa"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock ei voi palauttaa ajoa, joka on yhä kiinnitetty käytäntösukupolveen"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Tietojen poiston uudelleenyritys ei ole käytettävissä."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Poista Sync käytöstä ennen synkronoitujen tietojen poistamista"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock viimeistelee yhä aiempaa muutosta. Yritä hetken kuluttua uudelleen."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Avointa porttia ei voitu sulkea. Yritä uudelleen."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Työvälilehti ei ole käytettävissä."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Asetukset ylittävät Chrome Syncin 8 kt:n rajan. Poista aikataulumerkintöjä tai lyhennä aikomuksia ja yritä uudelleen."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Listat ylittävät Chrome Syncin 8 kt:n rajan. Poista omia sääntöjä tai sallittujen listan sääntöjä ja yritä uudelleen."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "tiukasti lukittu jakso on käynnissä: estettyjen sivustojen poisto avautuu, kun jakso päättyy"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "tiukasti lukittu jakso on käynnissä: uudet sallittujen listan merkinnät avautuvat, kun jakso päättyy"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "tiukasti lukittu jakso on käynnissä: kategorioiden poisto käytöstä avautuu, kun jakso päättyy"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "tiukasti lukittu jakso on käynnissä: uudet poikkeukset avautuvat, kun jakso päättyy"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "tiukasti lukittu jakso on käynnissä: oletustiukkuuden löysentäminen odottaa jakson päättymistä"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "tiukasti lukittu jakso on käynnissä: harkinta-ajan lyhentäminen heikentää porttia"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "tiukasti lukittu jakso on käynnissä: kirjoitettavan lauseen poisto heikentää porttia"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "tiukasti lukittu jakso on käynnissä: taukokertymän nostaminen rahoittaa useampia pakoja"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "tiukasti lukittu jakso on käynnissä: taukokaton nostaminen rahoittaa useampia pakoja"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "tiukasti lukittu jakso on käynnissä: taukojen lyhentäminen alentaa niiden hintaa"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "tiukasti lukittu jakso on käynnissä: avausten lyhentäminen alentaa niiden hintaa"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "tiukasti lukittu jakso on käynnissä: sen aikataulumerkintää ei voi löysentää ennen jakson päättymistä"
+  }
+}

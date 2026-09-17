@@ -184,6 +184,15 @@
   "stats_chart_other_site": {
     "message": "altele"
   },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
   "stats_blocked_count_one": {
     "message": "$COUNT$ blocată",
     "placeholders": {
@@ -216,6 +225,19 @@
   },
   "stats_chart_empty_default": {
     "message": "Încă nu există date."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
   },
   "stats_chart_table_summary": {
     "message": "Vezi ca tabel"
@@ -273,6 +295,9 @@
         "example": "thesis chapter"
       }
     }
+  },
+  "stats_session_source_manual": {
+    "message": "manual"
   },
   "stats_session_source_schedule": {
     "message": "program"

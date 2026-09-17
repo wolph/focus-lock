@@ -1,0 +1,849 @@
+{
+  "options_page_title": {
+    "message": "Focus Lock-alternativ"
+  },
+  "options_heading": {
+    "message": "Inställningar för Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "Läser in inställningar"
+  },
+  "options_privacy_loading": {
+    "message": "Läser in integritetsinställningar"
+  },
+  "options_save_failed": {
+    "message": "Kunde inte spara. Försök igen."
+  },
+  "options_blocking_heading": {
+    "message": "Blockering"
+  },
+  "options_blocking_help": {
+    "message": "Egna regler blockerar under pass med blocklista. Tillåtlistan är det som förblir nåbart under pass med tillåtlista. Färdiga kategorier blockerar vanliga tidstjuvar."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Egen blocklista"
+  },
+  "options_whitelist_title": {
+    "message": "Tillåtlista"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Färdiga kategorier"
+  },
+  "options_bundled_categories_help": {
+    "message": "Färdiga listor över vanliga tidstjuvar. Slå på eller av en hel kategori och öppna den sedan för att hålla enskilda webbplatser tillgängliga."
+  },
+  "options_schedule_heading": {
+    "message": "Schema"
+  },
+  "options_schedule_help": {
+    "message": "Pass startar av sig själva inom de här tidsfönstren. Striktheten som ställs in här gäller hela fönstret."
+  },
+  "options_behavior_heading": {
+    "message": "Passets beteende"
+  },
+  "options_budget_heading": {
+    "message": "Åtkomstkredit"
+  },
+  "options_notifications_heading": {
+    "message": "Aviseringar"
+  },
+  "options_privacy_heading": {
+    "message": "Integritet och data"
+  },
+  "options_load_error_retry": {
+    "message": "Försök igen"
+  },
+  "options_load_error_delete_all": {
+    "message": "Radera allt och börja om"
+  },
+  "options_load_error_keep_data": {
+    "message": "Behåll mina data"
+  },
+  "options_delete_all_data": {
+    "message": "Radera all data i Focus Lock"
+  },
+  "options_dirty_saving": {
+    "message": "Sparar ändringar"
+  },
+  "options_dirty_unsaved": {
+    "message": "Osparade ändringar"
+  },
+  "options_dirty_clean": {
+    "message": "Inga osparade ändringar"
+  },
+  "options_dirty_discard": {
+    "message": "Kasta ändringar"
+  },
+  "options_dirty_save": {
+    "message": "Spara ändringar"
+  },
+  "options_session_status_label": {
+    "message": "Passets status"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domän"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
+  "options_rule_remove": {
+    "message": "Ta bort"
+  },
+  "options_rule_remove_aria": {
+    "message": "Ta bort $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Inga regler ännu."
+  },
+  "options_rule_kind_aria": {
+    "message": "Regeltyp"
+  },
+  "options_rule_kind_host_option": {
+    "message": "domän eller underdomän"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (hela URL:en)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Mönster"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "Lägg till regel"
+  },
+  "options_rules_help": {
+    "message": "facebook.com täcker den domänen och alla underdomäner. news.ycombinator.com täcker den underdomänen och allt under den. /youtube\\.com\\/shorts/ matchar hela URL:en som ett reguljärt uttryck."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ måste vara ett positivt heltal.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ måste vara ett heltal som är noll eller större.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ måste vara noll eller större.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ måste ligga inom det minutintervall som stöds.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ måste ligga inom det dagsintervall som stöds.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Standardvärden för pass"
+  },
+  "options_session_defaults_help": {
+    "message": "Läge och strikthet låses fast när ett pass startar. Det här är värdena som startformuläret öppnas med."
+  },
+  "options_preset_short_label": {
+    "message": "Förval för kort pass (minuter)"
+  },
+  "options_preset_default_label": {
+    "message": "Förval för vanligt pass (minuter)"
+  },
+  "options_preset_deep_label": {
+    "message": "Förval för djupt pass (minuter)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Blocklista: blockera listade webbplatser"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Tillåtlista: tillåt endast listade webbplatser"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Flexibel: avsluta passet när du vill"
+  },
+  "options_strictness_friction_label": {
+    "message": "Friktion: att sluta i förtid går via den inställda betänketidsspärren"
+  },
+  "options_strictness_hard_label": {
+    "message": "Hårt lås: inget tidigt slut, endast tillfällig webbplatsåtkomst"
+  },
+  "options_cycle_heading": {
+    "message": "Cykel med fokus och paus"
+  },
+  "options_cycle_help": {
+    "message": "Standard: 25 minuters fokus, 5 minuters paus, 15 minuters lång paus var fjärde cykel. Pauser enligt schema slår paus-när-du-känner-för-det för humör och fokus i studieurval. De exakta minuterna är konvention, inte vetenskap."
+  },
+  "options_cycle_default_label": {
+    "message": "Växla mellan fokus och pauser som standard"
+  },
+  "options_focus_minutes_label": {
+    "message": "Fokusminuter"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Minuter för kort paus"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Minuter för lång paus"
+  },
+  "options_long_every_label": {
+    "message": "Lång paus var N:e cykel"
+  },
+  "options_gate_heading": {
+    "message": "Betänketidsspärr"
+  },
+  "options_gate_help": {
+    "message": "En väntan på 10 sekunder med en uttrycklig tillbaka-till-arbetet-knapp minskar impulsbesök mätbart (fältstudie, PNAS 2023). Den längre väntan och den inskrivna meningen fördubblar ungefär effekten."
+  },
+  "options_gate_wait_one": {
+    "message": "Vänta $COUNT$ sekund",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Vänta $COUNT$ sekunder",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Eget värde"
+  },
+  "options_custom_delay_label": {
+    "message": "Egen fördröjning (sekunder)"
+  },
+  "options_custom_delay_error": {
+    "message": "Egen fördröjning måste vara ett positivt heltal sekunder."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Kräv också att en mening skrivs in"
+  },
+  "options_gate_force_end_label": {
+    "message": "Aktivera knappen ”Strunta i väntetiden och avsluta ändå”"
+  },
+  "options_credit_help": {
+    "message": "Åtkomstkredit byggs upp medan du fokuserar. Både åtkomst till alla webbplatser och upplåsning av en enda webbplats dras från samma saldo. Du kan kliva undan när som helst utan att förbruka kredit."
+  },
+  "options_earn_rate_label": {
+    "message": "Minuter webbplatsåtkomst per 30 minuters fokus"
+  },
+  "options_credit_cap_label": {
+    "message": "Gräns för åtkomstkredit (minuter)"
+  },
+  "options_pause_length_label": {
+    "message": "Längd för åtkomst till alla webbplatser (minuter)"
+  },
+  "options_unlock_length_label": {
+    "message": "Längd för upplåsning av webbplats (minuter)"
+  },
+  "options_streak_heading": {
+    "message": "Svit och lagringstid"
+  },
+  "options_streak_help": {
+    "message": "Sviten räknar dagar som når målet. Ett vanligt pass håller kedjan vid liv, och en frysmarker reparerar en missad dag."
+  },
+  "options_streak_goal_label": {
+    "message": "Dagligt svitmål (fokusminuter)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Intervall för frysmarker (dagar)"
+  },
+  "options_retention_label": {
+    "message": "Spara daglig statistik (dagar)"
+  },
+  "options_category_on_announcement": {
+    "message": "Kategorin $CATEGORY$ på.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Kategorin $CATEGORY$ av.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Alla kategorier på."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Alla kategorier av."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ omfattas.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ hålls tillgänglig.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Alla webbplatser i $CATEGORY$ omfattas.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Alla webbplatser i $CATEGORY$ hålls tillgängliga.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Massåtgärder för kategorier"
+  },
+  "options_selected_count": {
+    "message": "Valda $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Bortvalda $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Välj alla"
+  },
+  "options_deselect_all": {
+    "message": "Välj bort alla"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Välj alla kategorier"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Välj bort alla kategorier"
+  },
+  "options_show_category_sites": {
+    "message": "Visa webbplatser i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Dölj webbplatser i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ webbplats omfattas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ webbplatser omfattas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Kategorin är av"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ omfattas när den är på",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ omfattas när den är på",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Avmarkera en webbplats för att hålla den tillgänglig medan resten av kategorin blockeras."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Massåtgärder för webbplatser i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Välj alla webbplatser i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Välj bort alla webbplatser i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Webbplatser i $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "sön"
+  },
+  "options_day_mon": {
+    "message": "mån"
+  },
+  "options_day_tue": {
+    "message": "tis"
+  },
+  "options_day_wed": {
+    "message": "ons"
+  },
+  "options_day_thu": {
+    "message": "tors"
+  },
+  "options_day_fri": {
+    "message": "fre"
+  },
+  "options_day_sat": {
+    "message": "lör"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Växla mellan fokus och pauser"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Överlappar en annan aktiv post på $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Passtyp"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Schemapost"
+  },
+  "options_schedule_start_label": {
+    "message": "Början"
+  },
+  "options_schedule_end_label": {
+    "message": "Slut"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Längd"
+  },
+  "options_schedule_intention_label": {
+    "message": "Avsikt"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "vad den här tiden är till för"
+  },
+  "options_schedule_save_entry": {
+    "message": "Spara post"
+  },
+  "options_cancel": {
+    "message": "Avbryt"
+  },
+  "options_schedule_empty": {
+    "message": "Inga schemalagda pass ännu."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Valda dagar"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ till $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "blocklista"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "tillåtlista"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "flexibel"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "friktion"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "hårt lås"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Aktiv"
+  },
+  "options_schedule_edit": {
+    "message": "Redigera"
+  },
+  "options_schedule_delete": {
+    "message": "Ta bort"
+  },
+  "options_schedule_add": {
+    "message": "Lägg till schemapost"
+  },
+  "options_sounds_heading": {
+    "message": "Ljud"
+  },
+  "options_master_volume": {
+    "message": "Huvudvolym"
+  },
+  "options_sound_session_complete": {
+    "message": "Passet klart"
+  },
+  "options_sound_break_start": {
+    "message": "Paus börjar"
+  },
+  "options_sound_break_end": {
+    "message": "Paus slutar"
+  },
+  "options_sound_schedule_start": {
+    "message": "Automatisk start från schema"
+  },
+  "options_sound_preview_aria": {
+    "message": "Förhandslyssna på $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Spela"
+  },
+  "options_sound_preview_error": {
+    "message": "Kunde inte spela upp ljudet. Försök igen."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Aviseringar"
+  },
+  "options_session_complete_notification": {
+    "message": "Visa en systemavisering när ett pass blir klart"
+  },
+  "options_badge_heading": {
+    "message": "Bricka"
+  },
+  "options_badge_countdown": {
+    "message": "Visa återstående tid på verktygsfältets ikon"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Webbplatsåtkomst"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Webbplatsåtkomsten är av"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock kan inte blockera webbplatser förrän du ger åtkomst."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Aktivera webbplatsblockering"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Webbplatsåtkomst är beviljad, men blockeringen är inte aktiv"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome gav åtkomst, men Focus Lock kunde inte registrera sitt blockeringsskript."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Försök med webbplatsblockering igen"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Webbplatsblockering är aktiverad"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock kan tillämpa dina aktiva blockeringsregler på vanliga webbsidor."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Radera lokal historik?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Bekräfta radering av lokal historik"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Lokal historik raderad."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Detta raderar permanent fullständiga URL:er, fokusavsikter och detaljerade passhändelser från den här enheten. Det avslutar inte ett pågående pass, som behåller sin avsikt och adressen till varje flik det blockerar. När passet avslutas rensas avsikten och en städning startar som rensar varje öppen webbflik, och städningen tar bort varje lagrad adress när den blir klar."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Detta raderar permanent fullständiga URL:er, fokusavsikter och detaljerade passhändelser från den här enheten, plus enbart lokal sammanställd statistik. Det avslutar inte ett pågående pass, som behåller sin avsikt och adressen till varje flik det blockerar. När passet avslutas rensas avsikten och en städning startar som rensar varje öppen webbflik, och städningen tar bort varje lagrad adress när den blir klar."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Radera fjärrdata i Sync?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Bekräfta radering av fjärrdata i Sync"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Fjärrdata i Chrome Sync raderade."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Detta raderar permanent fjärrinställningar, block- och tillåtlistor, åtkomstkredit, svit och sammanställda blockerade försök på domännivå från Chrome Sync. Lokala inställningar och lokal statistik stannar på den här enheten."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Radera all data i Focus Lock?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Bekräfta radering av all data i Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "All data i Focus Lock raderad."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Detta raderar permanent varje bit data i Focus Lock på den här enheten och alla Focus Lock-kopior som ligger kvar i Chrome Sync:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Att radera allt går bara när inget pass pågår. Focus Lock återgår sedan till installationen."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Den lokala historiken kunde inte raderas. Försök igen."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Fjärrdata i Chrome Sync kunde inte raderas. Försök igen."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "All data i Focus Lock kunde inte raderas. Försök igen."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync kunde inte spara dina senaste ändringar. Din lokala sparning är i behåll."
+  },
+  "options_privacy_error_request": {
+    "message": "Begäran kunde inte slutföras. Försök igen."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Webbplatsåtkomsten uppdaterad."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Webbplatsåtkomst beviljades inte."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Webbplatsåtkomsten kunde inte uppdateras. Försök igen."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Webbplatsblockering aktiverad."
+  },
+  "options_privacy_error_export": {
+    "message": "Kunde inte exportera händelseloggen."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Kunde inte exportera händelseloggen. Försök igen."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Kunde inte öppna Chromes behörighetsinställningar. Försök igen."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chromes behörighetsinställningar öppnade."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Öppna Chromes behörighetsinställningar"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Synka Focus Lock-data mellan Chrome-enheter"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync aktiverat."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync avstängt."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync sparar fortfarande dina senaste ändringar."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync är på."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync är av."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Ändringarna sparade i Chrome Sync."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Försök aktivera Chrome Sync igen"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Försök med Chrome Sync igen"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Synkroniserat"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Endast lokalt"
+  },
+  "options_privacy_developer_note": {
+    "message": "Ingenting skickas till utvecklaren av Focus Lock."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Lokal händelselogg"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Exportera den detaljerade lokala loggen eller radera lokal surf- och passhistorik."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Exportera lokal händelselogg"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Lokal händelselogg exporterad."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Radera lokal historik"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Fjärrdata i Sync"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Radera de Focus Lock-kopior som ligger kvar i Chrome Sync utan att ändra den här enheten."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Radera fjärrdata i Sync"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "All data i Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Radera varje Focus Lock-post på den här enheten och alla Focus Lock-kopior som ligger kvar i Chrome Sync, och börja sedan om från installationen. Tillgängligt när inget pass pågår."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Återupptar raderingen av all data i Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Försök radera lokal historik igen"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Försök radera fjärrdata i Sync igen"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Försök radera all data igen"
+  },
+  "options_error_load": {
+    "message": "Kunde inte läsa in inställningarna. Läs in sidan på nytt för att försöka igen."
+  },
+  "options_error_retry_boot": {
+    "message": "Kunde inte starta om Focus Lock. Försök igen."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Kunde inte uppdatera integritetsinställningarna. Läs in sidan på nytt."
+  },
+  "options_error_website_blocking": {
+    "message": "Kunde inte uppdatera webbplatsblockeringen. Försök igen."
+  },
+  "options_error_change_sync": {
+    "message": "Kunde inte ändra Chrome Sync. Försök igen."
+  },
+  "options_error_retry_sync": {
+    "message": "Kunde inte försöka med Chrome Sync igen. Försök igen."
+  },
+  "options_error_save_settings": {
+    "message": "Kunde inte spara inställningarna. Läs in sidan på nytt och försök igen."
+  },
+  "options_error_save_lists": {
+    "message": "Kunde inte spara listorna. Läs in sidan på nytt och försök igen."
+  }
+}

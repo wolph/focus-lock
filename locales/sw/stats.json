@@ -5,17 +5,23 @@
   "stats_loading": {
     "message": "Kupakia your stats."
   },
+  "stats_partial_error_economy": {
+    "message": "Tovuti access credit settings are unavailable."
+  },
   "stats_scope_local": {
     "message": "Totals from this machine. Fokasi Lock statistics are not synced."
+  },
+  "stats_scope_unavailable": {
+    "message": "Takwimu scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from this machine."
   },
   "stats_scope_retry": {
     "message": "Jaribu Tena scope check"
   },
   "stats_tile_focus_today": {
-    "message": "Fokasi tosiku"
+    "message": "Fokasi today"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Fokasi in the last 7 sikus"
+    "message": "Fokasi in the last 7 days"
   },
   "stats_tile_attempts_today": {
     "message": "Attempts blocked tosiku"
@@ -24,13 +30,13 @@
     "message": "Gate requests dismissed tosiku"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent tosiku"
+    "message": "Tovuti access credit spent today"
   },
   "stats_streak_empty": {
     "message": "Your streak starts with your first focus siku."
   },
   "stats_streak_unit_one": {
-    "message": "siku"
+    "message": "day"
   },
   "stats_streak_unit_other": {
     "message": "sikus"
@@ -65,16 +71,16 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Fokasi, last 14 sikus"
+    "message": "Fokasi, last 14 days"
   },
   "stats_chart_focus_empty": {
-    "message": "Fokasi dakikas appear after your first session."
+    "message": "Fokasi minutes appear after your first session."
   },
   "stats_chart_attempts_heading": {
-    "message": "Zuiaed attempts, last 14 sikus"
+    "message": "Zimezuiwa attempts, last 14 days"
   },
   "stats_chart_attempts_empty": {
-    "message": "Zuiaed attempts show up here once a session catches one."
+    "message": "Zimezuiwa attempts show up here once a session catches one."
   },
   "stats_chart_sites_heading": {
     "message": "Top blocked sites, last 30 sikus"
@@ -120,6 +126,9 @@
         "example": "thesis chapter"
       }
     }
+  },
+  "stats_outcome_completed": {
+    "message": "Kamili"
   },
   "stats_outcome_ended_early": {
     "message": "Maliziaed early"

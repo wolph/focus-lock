@@ -173,5 +173,14 @@
   },
   "onboarding_sync_finish_disabled": {
     "message": "Acaba la configuració sense sincronització"
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ de llocs",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
   }
 }

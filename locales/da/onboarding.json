@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Konfigurer Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock-opsætning"
+  },
+  "onboarding_progress": {
+    "message": "Trin $STEP$ af $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Din gemte fremgang kunne ikke gendannes. Vi begynder forfra med dine nuværende standardværdier."
+  },
+  "onboarding_complete_heading": {
+    "message": "Opsætning fuldført"
+  },
+  "onboarding_complete_body": {
+    "message": "Dine valg er gemt. Åbn Focus Lock fra Chrome-værktøjslinjen for at starte en session."
+  },
+  "onboarding_error_heading": {
+    "message": "Opsætning utilgængelig"
+  },
+  "onboarding_error_body": {
+    "message": "Opsætningen kunne ikke indlæses. Prøv igen."
+  },
+  "onboarding_retry_button": {
+    "message": "Prøv igen"
+  },
+  "onboarding_save_error": {
+    "message": "Fremgangen kunne ikke gemmes. Prøv igen."
+  },
+  "onboarding_enable_error": {
+    "message": "Webstedsblokering kunne ikke slås til. Prøv igen."
+  },
+  "onboarding_finish_error": {
+    "message": "Opsætningen kunne ikke fuldføres. Dine valg er stadig gemt. Prøv igen."
+  },
+  "onboarding_lists_heading": {
+    "message": "Vælg din første blokeringsliste"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Ved $MODE$ er valgte kategorier og ekstra blokerede sites utilgængelige.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Ved $MODE$ er alle sites utilgængelige undtagen din tilladelsesliste.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Disse valg bliver standard for fremtidige sessioner. Du kan ændre dem senere."
+  },
+  "onboarding_lists_legend": {
+    "message": "Anbefalede webstedskategorier"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ websted",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ websteder",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Vis $CATEGORY$-sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Skjul $CATEGORY$-sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$-domæner",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Fortsæt"
+  },
+  "onboarding_access_heading": {
+    "message": "Slå webstedsblokering til"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock tjekker sideadresser lokalt for at matche dem med dine valgte kategorier og sites. Webstedsadgang bruges til at vise blokeringsskærmen og gendanne berørte sider, når din session slutter."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategorier og egne domæner kan omfatte ethvert websted. Chrome beder derfor om denne tilladelse:"
+  },
+  "onboarding_access_capability": {
+    "message": "Læse og ændre alle dine data på alle websteder"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock bruger kun den adgang, mens dine blokeringsregler anvendes."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome gav ikke webstedsadgang. Du kan prøve igen."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Webstedsadgang er givet, men Focus Lock kunne ikke slå blokering til. Prøv opsætningen igen, eller genindlæs udvidelsen."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Slå webstedsblokering til"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Ikke nu"
+  },
+  "onboarding_sync_heading": {
+    "message": "Vælg, hvor dine indstillinger gemmes"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Synkroniser på tværs af Chrome-enheder"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "De godkendte data nedenfor bruger Chrome Sync, når du har fuldført opsætningen."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Alle Focus Lock-data bliver i denne Chrome-profil."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Synkroniseret"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Kun lokalt"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Intet sendes til udvikleren af Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Fuldfør med synkronisering"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Fuldfør uden synkronisering"
+  }
+}

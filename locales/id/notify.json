@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Sesi fokus selesai"
+  },
+  "notify_session_complete_body": {
+    "message": "Sesi fokusmu selesai."
+  },
+  "notify_schedule_window_body": {
+    "message": "Terkunci sampai $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Jadwal fokus tidak dapat dimulai"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Pemblokiran situs web belum diaktifkan. Selesaikan penyiapan atau berikan akses situs web, lalu coba lagi."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Penyiapan telah diselesaikan di tab lain."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Penyiapan berubah di tab lain. Pilihan terbaru telah dimuat ulang."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Penyiapan berubah di tab lain. Muat ulang penyiapan sebelum menyelesaikannya."
+  },
+  "notify_setup_not_complete": {
+    "message": "Penyiapan belum selesai."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Penyiapan belum siap diselesaikan."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Pilihan penyimpanan penyiapan berubah. Muat ulang penyiapan sebelum menyelesaikannya."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Operasi penyimpanan penyiapan gagal."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Operasi penyiapan gagal."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock tidak dapat memeriksa akses situs web. Coba lagi penyiapan atau muat ulang ekstensi."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Akses situs web telah diberikan, tetapi Focus Lock tidak dapat mengaktifkan pemblokiran. Coba lagi penyiapan atau muat ulang ekstensi."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Akses situs web tidak tersedia, dan Focus Lock tidak dapat menyelesaikan pembersihan pemblokiran. Coba lagi penyiapan atau muat ulang ekstensi."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock menerima status akses situs web yang tidak konsisten. Coba lagi penyiapan atau muat ulang ekstensi."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock belum selesai memulai: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "kesalahan tidak diketahui"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock sedang berjalan, tidak ada yang perlu direset"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock tidak dapat mereset runtime yang masih terikat dalam generasi kebijakan"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Percobaan ulang penghapusan data tidak tersedia."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Nonaktifkan Chrome Sync sebelum menghapus data yang disinkronkan"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock masih menyelesaikan perubahan sebelumnya. Coba lagi sebentar lagi."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Gerbang konfirmasi yang terbuka tidak dapat ditutup. Coba lagi."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Tab kerja tidak tersedia."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Pengaturan melebihi batas 8 KB Chrome Sync. Hapus entri jadwal atau perpendek niat, lalu coba lagi."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Daftar melebihi batas 8 KB Chrome Sync. Hapus aturan khusus atau daftar izin, lalu coba lagi."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "sesi kunci Keras sedang berjalan: menghapus situs yang diblokir baru terbuka setelah sesi berakhir"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "sesi kunci Keras sedang berjalan: entri daftar izin baru terbuka setelah sesi berakhir"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "sesi kunci Keras sedang berjalan: menonaktifkan kategori baru terbuka setelah sesi berakhir"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "sesi kunci Keras sedang berjalan: pengecualian baru terbuka setelah sesi berakhir"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "sesi kunci Keras sedang berjalan: melemahkan ketegasan default menunggu sampai sesi berakhir"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "sesi kunci Keras sedang berjalan: mempersingkat jeda pertimbangan melemahkan gerbang"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "sesi kunci Keras sedang berjalan: menghapus kalimat yang harus diketik melemahkan gerbang"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "sesi kunci Keras sedang berjalan: menaikkan laju perolehan kredit membiayai lebih banyak jalan keluar"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "sesi kunci Keras sedang berjalan: menaikkan batas kredit membiayai lebih banyak jalan keluar"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "sesi kunci Keras sedang berjalan: mempersingkat jeda menurunkan biayanya"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "sesi kunci Keras sedang berjalan: mempersingkat pembukaan situs menurunkan biayanya"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "sesi kunci Keras sedang berjalan: entri jadwalnya tidak dapat dilemahkan sampai sesi berakhir"
+  }
+}

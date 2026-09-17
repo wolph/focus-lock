@@ -1,0 +1,627 @@
+{
+  "shared_until_stopped": {
+    "message": "Til du stopper"
+  },
+  "shared_preset_short": {
+    "message": "kort"
+  },
+  "shared_preset_focus": {
+    "message": "fokus"
+  },
+  "shared_preset_deep_work": {
+    "message": "dypt arbeid"
+  },
+  "shared_deep_work_note": {
+    "message": "En preferanse, ikke vitenskap: én lang uavbrutt blokk, uten automatiske pauser."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ min totalt, med fokusblokker på $FOCUS$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min uavbrutt fokus",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Start til du stopper"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Lås til du låser opp manuelt"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Økter som kjører til du stopper, beholder Fleksibel eller Friksjon og kan ikke bruke sykluser med fokus og pause."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Hard lås kan ikke brukes med Til du stopper: uten tidtaker og uten manuell slutt ville økten aldri kunne ta slutt."
+  },
+  "shared_end_session": {
+    "message": "Avslutt økten"
+  },
+  "shared_unlock": {
+    "message": "Lås opp"
+  },
+  "shared_gate_wait_none": {
+    "message": "ingen venting"
+  },
+  "shared_gate_wait": {
+    "message": "en venting på $SECONDS$ sekunder",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ og en innskrevet setning",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Kjører til du avslutter den med $LABEL$. Sykluser av.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Kjører til du låser den opp: $REQUIREMENT$, deretter $LABEL$. Sykluser av.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Sykluser slått av av Til du stopper"
+  },
+  "shared_mode_blacklist": {
+    "message": "Blokker valgte nettsteder"
+  },
+  "shared_mode_whitelist": {
+    "message": "Tillat bare valgte nettsteder"
+  },
+  "shared_focus_time_label": {
+    "message": "Fokustid"
+  },
+  "shared_clock_focus_phase": {
+    "message": "fokusfase"
+  },
+  "shared_clock_total_session": {
+    "message": "hele økten"
+  },
+  "shared_clock_pause": {
+    "message": "opphold"
+  },
+  "shared_clock_break": {
+    "message": "pause"
+  },
+  "shared_badge_indefinite": {
+    "message": "PÅ"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock starter. Bruker reglene du har valgt."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Økten er avsluttet. Fullfører nettleseropprydding."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock kunne ikke starte. Fullfører nettleseropprydding."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock kunne ikke rydde opp etter en ufullstendig start."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock kunne ikke fullføre nettleseroppryddingen."
+  },
+  "shared_retry_cleanup": {
+    "message": "Rydd opp igjen"
+  },
+  "shared_end_failed": {
+    "message": "Kunne ikke avslutte økten. Prøv igjen."
+  },
+  "shared_retry_failed": {
+    "message": "Kunne ikke prøve opprydding på nytt. Prøv igjen."
+  },
+  "shared_action_failed": {
+    "message": "Kunne ikke be om den handlingen. Prøv igjen."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Kunne ikke gå tilbake til arbeidet. Prøv igjen."
+  },
+  "shared_data_clear_pending": {
+    "message": "Sletter Focus Lock-data. Fullfører oppryddingen."
+  },
+  "shared_data_clear_error": {
+    "message": "Kunne ikke slette data. Prøv igjen."
+  },
+  "shared_schedule_window_label": {
+    "message": "Til vinduet slutter"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Starter etter plan og kjører til du stopper den: Avslutt økten for Fleksibel, Lås opp via betenkningssperren for Friksjon. Sykluser av."
+  },
+  "shared_schedule_started_title": {
+    "message": "Fokusplanen har startet"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Aktiv til du stopper den."
+  },
+  "shared_settings_indefinite": {
+    "message": "En økt som kjører til du stopper, er aktiv. Bruk popupen på verktøylinjen for å se eller avslutte den."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock starter. Sjekker nettstedstilgang og bruker reglene dine."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock kunne ikke fullføre nettleseroppryddingen. Åpne popupen og prøv igjen."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Øktkontrollene hører hjemme i popupen på verktøylinjen. Den aktive økten beholder reglene som ble fanget da den startet."
+  },
+  "shared_settings_timed": {
+    "message": "En tidsstyrt økt er aktiv til $TIME$. Den avsluttes automatisk. Bruk popupen på verktøylinjen for direktestatus.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Fullført"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Fullført manuelt"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Avsluttet tidlig"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Avsluttet: nettstedstilgangen gikk tapt"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Avsluttet: blokkeringen kunne ikke settes opp"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Avsluttet: tidtakeren kunne ikke opprettes"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Avsluttet: blokkeringen nådde ikke sidene"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Avsluttet: gjenopprettingen mislyktes"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ t $MINUTES$ min",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Oppdaterer økten"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Mindre enn ett minutt"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ til pausen din",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ igjen av økten",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Kostnaden overskrider kredittgrensen"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Kreditt tjenes opp igjen under fokus"
+  },
+  "shared_credit_off": {
+    "message": "Opptjening av kreditt er slått av"
+  },
+  "shared_not_enough_time": {
+    "message": "Ikke nok tid i denne fokusblokken"
+  },
+  "shared_ready_in": {
+    "message": "Klar om $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Blokkert av $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Blokkert av blokkeringslisten din"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Ikke på tillatelseslisten din"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Blokkert av denne økten"
+  },
+  "shared_verdict_allow_list": {
+    "message": "På tillatelseslisten din"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Alltid tillatt"
+  },
+  "shared_verdict_unlock": {
+    "message": "Midlertidig låst opp"
+  },
+  "shared_verdict_excluded": {
+    "message": "Unntatt fra en valgt kategori"
+  },
+  "shared_verdict_no_session": {
+    "message": "Ingen aktiv fokusøkt"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Tillatt av denne økten"
+  },
+  "shared_category_social": {
+    "message": "Sosiale medier"
+  },
+  "shared_category_video": {
+    "message": "Video og strømming"
+  },
+  "shared_category_news": {
+    "message": "Nyheter"
+  },
+  "shared_category_mail": {
+    "message": "E-post"
+  },
+  "shared_category_shopping": {
+    "message": "Netthandel"
+  },
+  "shared_category_gaming": {
+    "message": "Spill"
+  },
+  "shared_category_forums": {
+    "message": "Forum og kjedsomhet"
+  },
+  "shared_synced_settings": {
+    "message": "Innstillinger"
+  },
+  "shared_synced_lists": {
+    "message": "Blokkerings- og tillatelseslister"
+  },
+  "shared_synced_credit": {
+    "message": "Tilgangskreditt"
+  },
+  "shared_synced_streaks": {
+    "message": "Rekker"
+  },
+  "shared_synced_aggregates": {
+    "message": "Aggregerte blokkerte forsøk på domenenivå"
+  },
+  "shared_local_full_urls": {
+    "message": "Hele URL-er"
+  },
+  "shared_local_intentions": {
+    "message": "Fokusintensjoner"
+  },
+  "shared_local_events": {
+    "message": "Detaljerte økthendelser"
+  },
+  "shared_local_runtime": {
+    "message": "Aktiv kjørende økt"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Noen synkroniserte data fra en eldre versjon kunne ikke leses og ble tilbakestilt."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Avslutt den pågående økten før du sletter alle data."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "Produktnavigasjon"
+  },
+  "shared_nav_overview": {
+    "message": "Oversikt"
+  },
+  "shared_nav_settings": {
+    "message": "Innstillinger"
+  },
+  "shared_section_blocking": {
+    "message": "Blokkering"
+  },
+  "shared_section_schedule": {
+    "message": "Plan"
+  },
+  "shared_section_behavior": {
+    "message": "Øktatferd"
+  },
+  "shared_section_budget": {
+    "message": "Tilgangskreditt"
+  },
+  "shared_section_notifications": {
+    "message": "Varsler"
+  },
+  "shared_section_privacy": {
+    "message": "Personvern og data"
+  },
+  "shared_theme_auto": {
+    "message": "Automatisk"
+  },
+  "shared_theme_light": {
+    "message": "Lyst"
+  },
+  "shared_theme_dark": {
+    "message": "Mørkt"
+  },
+  "shared_theme_button": {
+    "message": "Tema: $CURRENT$. Bytt til $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Kunne ikke lagre temaet. Last siden på nytt og prøv igjen."
+  },
+  "shared_host_search_label": {
+    "message": "Søk blant nettsteder i $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Ingen nettsteder i $TITLE$ passer søket ditt.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Viser $SHOWN$ av $MATCHED$ nettsteder. Søk for å snevre inn listen.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Viser $MATCHED$ av $TOTAL$ nettsteder.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Viser alle $TOTAL$ nettsteder.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Avslutt økten"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock starter"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Bruker reglene du har valgt."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Denne siden ble ikke lastet. Den lastes av seg selv når økten er over."
+  },
+  "shared_overlay_next_step": {
+    "message": "Ditt neste steg"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Tilbake til arbeidet"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Velg en arbeidsfane"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Bytt arbeidsfane"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Trenger du en pause eller nettstedstilgang?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Du kan gå fra skjermen når som helst. Nettstedstilgang koster kreditt."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Ignorer ventetiden og avslutt likevel"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock kunne ikke oppdatere denne handlingen. Prøv igjen."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ tilgangskreditt",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Fortsett med den nåværende oppgaven din"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Lås opp alle nettsteder"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Lås opp dette nettstedet"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - koster $COST$ kreditt",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Låst til $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Du skrev: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Lås opp $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Fortsett å fokusere"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Skriv dette for å bekrefte:"
+  },
+  "shared_gate_end_title": {
+    "message": "Avslutt denne økten"
+  }
+}

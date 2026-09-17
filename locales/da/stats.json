@@ -1,0 +1,304 @@
+{
+  "stats_document_title": {
+    "message": "Focus Lock-statistik"
+  },
+  "stats_page_title": {
+    "message": "Din fokusoversigt"
+  },
+  "stats_loading": {
+    "message": "Dine statistikker indlæses."
+  },
+  "stats_load_error": {
+    "message": "Statistikkerne kunne ikke indlæses. Genindlæs for at prøve igen."
+  },
+  "stats_partial_error_both": {
+    "message": "Forsøg pr. time og indstillinger for adgangskredit er utilgængelige."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Forsøg pr. time er utilgængelige."
+  },
+  "stats_partial_error_economy": {
+    "message": "Indstillinger for adgangskredit er utilgængelige."
+  },
+  "stats_scope_synced": {
+    "message": "Synkroniserede totaler fra denne Chrome-konto. Paneler, der kun er lokale, er markeret."
+  },
+  "stats_scope_local": {
+    "message": "Totaler fra denne maskine. Focus Locks statistikker synkroniseres ikke."
+  },
+  "stats_scope_checking": {
+    "message": "Tjekker, om disse totaler er synkroniseret."
+  },
+  "stats_scope_unavailable": {
+    "message": "Statistikkernes omfang er utilgængeligt. Totalerne kan indeholde synkroniserede data. Forsøg pr. time og seneste sessioner stammer fra denne maskine."
+  },
+  "stats_scope_retry": {
+    "message": "Tjek omfang igen"
+  },
+  "stats_empty": {
+    "message": "Statistikker vises efter din første session."
+  },
+  "stats_tile_focus_today": {
+    "message": "Fokus i dag"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Fokus de seneste 7 dage"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Blokerede forsøg i dag"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Afbrudte oplåsninger i dag"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Brugt adgangskredit i dag"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Alle sites $ALL_SITES$, én site $ONE_SITE$, $EARNED$ optjent",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ optjent",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Dage i træk"
+  },
+  "stats_streak_empty": {
+    "message": "Dine dage i træk begynder med din første fokusdag."
+  },
+  "stats_streak_unit_one": {
+    "message": "dag"
+  },
+  "stats_streak_unit_other": {
+    "message": "dage"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ beskyttelsesdag opsparet",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ beskyttelsesdage opsparet",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Beskyttelsesdag: én misset dag er dækket"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktiv dag denne måned ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktive dage denne måned ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktive dage i $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Ingen aktive dage i $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Fokus, seneste 14 dage"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Fokusminutter vises efter din første session."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Blokerede forsøg, seneste 14 dage"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Blokerede forsøg vises her, så snart en session fanger et."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Mest blokerede sites, seneste 30 dage"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Intet blokeret endnu. Det er en fin start."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Forsøg pr. time, kun denne maskine"
+  },
+  "stats_chart_other_site": {
+    "message": "andre"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blokeret",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blokeret",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Søjlediagram"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Liggende søjlediagram"
+  },
+  "stats_chart_description_bar": {
+    "message": "Søjlediagram. Brug tastaturet til at gå gennem datapunkterne, eller åbn Vis som tabel for de samme værdier."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Liggende søjlediagram. Brug tastaturet til at gå gennem datapunkterne, eller åbn Vis som tabel for de samme værdier."
+  },
+  "stats_chart_empty_default": {
+    "message": "Ingen data endnu."
+  },
+  "stats_chart_table_summary": {
+    "message": "Vis som tabel"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategori"
+  },
+  "stats_chart_table_value": {
+    "message": "Værdi"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-timers varmestribe over blokerede forsøg"
+  },
+  "stats_sessions_heading": {
+    "message": "Seneste sessioner på denne maskine"
+  },
+  "stats_sessions_empty": {
+    "message": "Din første session vises her."
+  },
+  "stats_sessions_col_date": {
+    "message": "Dato"
+  },
+  "stats_sessions_col_start": {
+    "message": "Starttid"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planlagt"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Fokuseret"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Alle sites"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Én site"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Hensigt"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Resultat"
+  },
+  "stats_sessions_col_source": {
+    "message": "Kilde"
+  },
+  "stats_session_no_intention": {
+    "message": "Ingen hensigt"
+  },
+  "stats_session_article_label": {
+    "message": "Fokussession: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "manuel"
+  },
+  "stats_session_source_schedule": {
+    "message": "tidsplan"
+  },
+  "stats_session_source_scheduled": {
+    "message": "planlagt"
+  },
+  "stats_outcome_completed": {
+    "message": "Gennemført"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Afsluttet tidligt"
+  },
+  "stats_outcome_running": {
+    "message": "Kører"
+  }
+}

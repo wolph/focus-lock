@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Phiên tập trung hoàn tất"
+  },
+  "notify_session_complete_body": {
+    "message": "Phiên tập trung của bạn đã kết thúc."
+  },
+  "notify_schedule_window_body": {
+    "message": "Khóa đến $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Lịch tập trung không thể bắt đầu"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Chặn trang web chưa được bật. Hãy hoàn tất thiết lập hoặc cấp quyền truy cập trang web, sau đó thử lại."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Thiết lập đã hoàn tất ở một tab khác."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Thiết lập đã thay đổi ở một tab khác. Các lựa chọn mới nhất đã được tải lại."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Thiết lập đã thay đổi ở một tab khác. Hãy tải lại thiết lập trước khi hoàn tất."
+  },
+  "notify_setup_not_complete": {
+    "message": "Thiết lập chưa hoàn tất."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Thiết lập chưa sẵn sàng để hoàn tất."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Lựa chọn lưu trữ thiết lập đã thay đổi. Hãy tải lại thiết lập trước khi hoàn tất."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Thao tác lưu trữ thiết lập ban đầu thất bại."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Thao tác thiết lập ban đầu thất bại."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock không thể kiểm tra quyền truy cập trang web. Hãy thử lại thiết lập hoặc tải lại tiện ích."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Quyền truy cập trang web đã được cấp, nhưng Focus Lock không thể bật tính năng chặn. Hãy thử lại thiết lập hoặc tải lại tiện ích."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Không có quyền truy cập trang web, và Focus Lock không thể hoàn tất việc dọn dẹp chặn. Hãy thử lại thiết lập hoặc tải lại tiện ích."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock nhận được trạng thái quyền truy cập trang web không nhất quán. Hãy thử lại thiết lập hoặc tải lại tiện ích."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock chưa khởi động xong: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "lỗi không xác định"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock đang chạy, không có gì để đặt lại"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock không thể đặt lại trạng thái phiên vì trạng thái đó vẫn đang được lưu trong một phiên bản chính sách"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Không thể thử lại việc xóa dữ liệu."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Tắt Đồng bộ hóa Chrome trước khi xóa dữ liệu đã đồng bộ hóa"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock vẫn đang hoàn tất một thay đổi trước đó. Hãy thử lại sau giây lát."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Không thể đóng cổng xác nhận đang mở. Hãy thử lại."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Tab công việc không khả dụng."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Cài đặt vượt quá giới hạn 8 KB của Đồng bộ hóa Chrome. Hãy xóa bớt mục lịch trình hoặc rút ngắn nội dung ý định, sau đó thử lại."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Danh sách vượt quá giới hạn 8 KB của Đồng bộ hóa Chrome. Hãy xóa bớt quy tắc tùy chỉnh hoặc danh sách cho phép, sau đó thử lại."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "một phiên khóa cứng đang chạy: việc xóa trang web bị chặn sẽ mở khóa khi phiên kết thúc"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "một phiên khóa cứng đang chạy: mục mới trong danh sách cho phép sẽ mở khóa khi phiên kết thúc"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "một phiên khóa cứng đang chạy: việc tắt danh mục sẽ mở khóa khi phiên kết thúc"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "một phiên khóa cứng đang chạy: ngoại lệ mới sẽ mở khóa khi phiên kết thúc"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "một phiên khóa cứng đang chạy: việc giảm mức độ nghiêm ngặt mặc định phải chờ đến khi phiên kết thúc"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "một phiên khóa cứng đang chạy: rút ngắn thời gian cân nhắc sẽ làm yếu cổng cân nhắc"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "một phiên khóa cứng đang chạy: bỏ yêu cầu gõ câu xác nhận sẽ làm yếu cổng cân nhắc"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "một phiên khóa cứng đang chạy: tăng tốc độ kiếm tín dụng tạm dừng sẽ tài trợ cho nhiều lần trốn tránh hơn"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "một phiên khóa cứng đang chạy: tăng giới hạn tín dụng tạm dừng sẽ tài trợ cho nhiều lần trốn tránh hơn"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "một phiên khóa cứng đang chạy: rút ngắn thời lượng tạm dừng sẽ giảm chi phí của nó"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "một phiên khóa cứng đang chạy: rút ngắn thời lượng mở khóa sẽ giảm chi phí của nó"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "một phiên khóa cứng đang chạy: không thể làm yếu mục lịch trình của phiên cho đến khi phiên kết thúc"
+  }
+}

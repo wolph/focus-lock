@@ -72,6 +72,24 @@
   "onboarding_lists_legend": {
     "message": "Categorias de sites recomendadas"
   },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ site listado",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ sites listados",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
   "onboarding_show_category_sites": {
     "message": "Mostrar os sites de $CATEGORY$",
     "placeholders": {
@@ -136,7 +154,7 @@
     "message": "Sincronizar entre dispositivos com o Chrome"
   },
   "onboarding_sync_enabled_note": {
-    "message": "Os dados aprovados abaixo vão usar o Chrome Sync depois que você concluir a configuração."
+    "message": "Os dados aprovados abaixo vão usar a Sincronização do Chrome depois que você concluir a configuração."
   },
   "onboarding_sync_disabled_note": {
     "message": "Todos os dados do Focus Lock ficam neste perfil do Chrome."
@@ -157,7 +175,7 @@
     "message": "Concluir a configuração sem sincronização"
   },
   "onboarding_site_count_many": {
-    "message": "$COUNT$ sites",
+    "message": "$COUNT$ sites listados",
     "placeholders": {
       "COUNT": {
         "content": "$1",

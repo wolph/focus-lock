@@ -1,0 +1,630 @@
+{
+  "popup_next_schedule": {
+    "message": "næste: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Indstillinger"
+  },
+  "popup_open_settings_failed": {
+    "message": "Indstillinger kunne ikke åbnes. Prøv igen."
+  },
+  "popup_settings_load_failed": {
+    "message": "Sessionsindstillinger kunne ikke indlæses. Genindlæs pop op-vinduet. Standardværdier vises."
+  },
+  "popup_open_setup_failed": {
+    "message": "Opsætningen kunne ikke åbnes. Prøv igen."
+  },
+  "popup_setup_required_heading": {
+    "message": "Gør opsætningen af Focus Lock færdig"
+  },
+  "popup_setup_required_body": {
+    "message": "Vælg dine startlister, webstedsadgang og lagringstilstand, før du starter en session."
+  },
+  "popup_open_setup_button": {
+    "message": "Åbn opsætning"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Webstedsblokering kunne ikke bekræftes. Prøv igen."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Webstedsblokering kunne ikke slås til. Prøv igen."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Webstedsblokering er slået fra"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock kan ikke starte en session, før Chrome giver webstedsadgang, og blokering er slået til."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome gav ikke webstedsadgang. Webstedsblokering er stadig slået fra."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Webstedsadgang er givet, men Focus Lock kunne ikke slå blokering til. Prøv opsætningen igen, eller genindlæs udvidelsen."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Slå webstedsblokering til"
+  },
+  "popup_retry_button": {
+    "message": "Prøv igen"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Din session sluttede, fordi webstedsadgangen blev fjernet."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Din session sluttede, fordi Focus Lock ikke kunne slå webstedsblokering til."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Beskeden kunne ikke lukkes. Prøv igen."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Luk besked om webstedsadgang"
+  },
+  "popup_dismiss_button": {
+    "message": "Luk"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lock kunne ikke genstartes. Prøv igen."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock kunne ikke starte"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Årsagen kunne ikke læses."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Nulstil lokal runtime"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Bevarer dine indstillinger, lister og statistikker. Rydder den aktuelle sessionstilstand."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Slet alt, og start forfra"
+  },
+  "popup_keep_data_button": {
+    "message": "Behold mine data"
+  },
+  "popup_delete_all_button": {
+    "message": "Slet alle Focus Lock-data"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Opsætningsstatus er utilgængelig. Genindlæs Focus Lock, og prøv igen."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Fokusstatus utilgængelig"
+  },
+  "popup_action_in_progress": {
+    "message": "Handling i gang"
+  },
+  "popup_active_site_checking": {
+    "message": "Tjekker det aktive site"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Åbn et almindeligt websted for at låse det op"
+  },
+  "popup_active_site_unknown": {
+    "message": "Kunne ikke genkende sitet"
+  },
+  "popup_active_site_error": {
+    "message": "Kunne ikke genkende sitet."
+  },
+  "popup_resume_now": {
+    "message": "Fortsæt nu"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Start næste fokus tidligt"
+  },
+  "popup_unlock_this_site": {
+    "message": "Lås denne site op"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Lås alle sites op"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ adgang, $CREDIT$ kredit",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ adgang, $CREDIT$ kredit - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Vælg arbejdsfane"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Skift arbejdsfane"
+  },
+  "popup_session_actions_summary": {
+    "message": "Sessionshandlinger"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ adgangskredit",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Tilføj et tilladt domæne"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "dokumenter.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Tilføj tilladt domæne"
+  },
+  "popup_add_button": {
+    "message": "Tilføj"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Kun $COUNT$ tilladte siteregler. Andre websteder blokeret.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ blokerede kategorier, $RULES$ ekstra regler.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Hård lås. Kan ikke afsluttes tidligt."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Kan afsluttes når som helst."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Afslut efter $SECONDS$s ventetid.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Afslut efter $SECONDS$s ventetid og bekræftelsessætning.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Sessionslængde"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Egne minutter"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_gate_force_end": {
+    "message": "Ignorer ventetid, og afslut alligevel"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Fortsæt fokus"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Skriv:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Betænkningstiden kunne ikke opdateres. Prøv igen."
+  },
+  "popup_gate_intention": {
+    "message": "Du sagde: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Lige et øjeblik:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "af $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Tilbage til arbejdet"
+  },
+  "popup_destination_unavailable": {
+    "message": "Ukendt destination"
+  },
+  "popup_back_to_work_name": {
+    "message": "Tilbage til arbejdet: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Tilbage til arbejdet: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Kategorier kan først redigeres, når blokeringslisterne er indlæst igen."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blokerede kategorier"
+  },
+  "popup_show_full_domain": {
+    "message": "Vis hele domænet: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Vis hele det regulære udtryk: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domæne"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regulært udtryk"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$-sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ websted",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ websteder",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "og $COUNT$ websted mere",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "og $COUNT$ websteder mere",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Tilladte undtagelser"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Ekstra blokeringsregler"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Ingen ekstra blokeringsregler."
+  },
+  "popup_allowed_heading": {
+    "message": "Tilladte sites og regler"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Ingen sites er tilladt endnu."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "Hvad bliver blokeret"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "Hvad bliver tilladt"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ af $TOTAL$ kategorier valgt",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ ekstra blokeringsregel",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ ekstra blokeringsregler",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ tilladt regel",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ tilladte regler",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Ændringer af tilladte sites og regler gælder kun denne session. Alt andet er blokeret."
+  },
+  "popup_scope_blacklist": {
+    "message": "Ændringer af kategorier og regler gælder kun denne session."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Åbn Indstillinger for faste standarder"
+  },
+  "popup_rule_details_label": {
+    "message": "Detaljer om sessionsregler"
+  },
+  "popup_session_type_legend": {
+    "message": "Sessionstype"
+  },
+  "popup_session_type_flexible": {
+    "message": "Fleksibel"
+  },
+  "popup_session_type_friction": {
+    "message": "Friktion"
+  },
+  "popup_session_type_hard": {
+    "message": "Hård lås"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Afslut sessionen med det samme, når du vil."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Tidlig afslutning kræver $WAIT$. Du skal ikke skrive noget.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Tidlig afslutning kræver $WAIT$ og en indtastet bekræftelse.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "Sessionen kan ikke afsluttes tidligt. Adgangskredit virker stadig."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "De valgte kategorier og ekstra regler er blokeret. Andre sites er stadig tilgængelige."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Kun de anførte sites er tilgængelige. Alle andre websteder er blokeret."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Angiv en sessionslængde på mere end nul minutter."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Standarderne blev ændret, men de aktuelle lister kunne ikke indlæses. Genindlæs pop op-vinduet."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Ingen arbejdsfane (valgfrit)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Valgt fane er utilgængelig - vælg en anden"
+  },
+  "popup_cycles_label": {
+    "message": "Cyklusser: $FOCUS$ min fokus, $SHORT_BREAK$ min pause, $LONG_BREAK$ min lang pause hver $LONG_EVERY$.",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Hensigt"
+  },
+  "popup_intention_placeholder": {
+    "message": "Hvad arbejder du på?"
+  },
+  "popup_work_tab_named": {
+    "message": "Arbejdsfane: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Skift"
+  },
+  "popup_session_settings_summary": {
+    "message": "Sessionsindstillinger"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Vælg en arbejdsfane"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Arbejdsfane"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (aktuel)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Blokeringstilstand"
+  },
+  "popup_invalid_time_label": {
+    "message": "ugyldig tid"
+  },
+  "popup_start_focus_label": {
+    "message": "Start $DURATION$ fokus",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Angiv et gyldigt domæne, for eksempel dokumenter.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Arbejdsfaner kunne ikke indlæses. Åbn pop op-vinduet igen."
+  },
+  "popup_use_this_tab": {
+    "message": "Brug denne fane"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "Denne fane kan ikke bruges til arbejde. Vælg en anden åben fane."
+  },
+  "popup_checking_current_tab": {
+    "message": "Tjekker aktuel fane..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Finder din aktuelle fane..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Din aktuelle fane kunne ikke indlæses. Prøv igen."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Vælg eller udskift din arbejdsfane."
+  },
+  "popup_saving_work_tab": {
+    "message": "Gemmer arbejdsfane..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Arbejdsfanen kunne ikke gemmes. Prøv igen."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Vælg en åben fane"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Eller vælg en anden fane"
+  },
+  "popup_start_failed": {
+    "message": "Sessionen kunne ikke startes. Prøv igen."
+  }
+}

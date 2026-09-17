@@ -1,0 +1,91 @@
+{
+  "overlay_stopped_title": {
+    "message": "Đã khóa - Focus Lock"
+  },
+  "overlay_target_checking": {
+    "message": "Đang kiểm tra các tab công việc khả dụng..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Chọn một tab đang mở để tiếp tục công việc của bạn."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Phiên tập trung của bạn không khả dụng. Hãy thử lại hoặc tải lại trang này."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Không thể tải tab công việc của bạn. Hãy thử lại hoặc tải lại trang này."
+  },
+  "overlay_target_reconnect": {
+    "message": "Tải lại trang này để kết nối lại với Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "Trang yêu cầu đã thay đổi. Hãy tải lại trang."
+  },
+  "overlay_target_transport_error": {
+    "message": "Không thể kết nối với Focus Lock. Hãy thử lại."
+  },
+  "overlay_picker_heading": {
+    "message": "Chọn một tab công việc"
+  },
+  "overlay_picker_cancel": {
+    "message": "Hủy"
+  },
+  "overlay_picker_search_label": {
+    "message": "Tìm tab công việc"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Tìm theo tiêu đề hoặc trang web"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Xóa tìm kiếm"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Làm mới tab"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Tab công việc khả dụng"
+  },
+  "overlay_picker_finding": {
+    "message": "Đang tìm các tab khả dụng..."
+  },
+  "overlay_picker_searching": {
+    "message": "Đang tìm tab công việc..."
+  },
+  "overlay_picker_saving": {
+    "message": "Đang lưu tab công việc..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Không có tab công việc khả dụng. Hãy mở một trang được phiên này cho phép, sau đó làm mới tab."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Không có tab nào khớp. Hãy thử tìm kiếm khác hoặc xóa tìm kiếm."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Không thể tải tab công việc. Hãy thử lại."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$/$COUNT$ tab",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$/$COUNT$ tab",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "shared_until_stopped": {
+    "message": "Sampai dihentikan"
+  },
+  "shared_preset_short": {
+    "message": "singkat"
+  },
+  "shared_preset_focus": {
+    "message": "fokus"
+  },
+  "shared_preset_deep_work": {
+    "message": "kerja dalam"
+  },
+  "shared_deep_work_note": {
+    "message": "Preferensi, bukan sains: satu blok panjang tanpa gangguan, tanpa istirahat otomatis."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ mnt total, dengan blok fokus $FOCUS$ mnt",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ mnt fokus tanpa gangguan",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Mulai sampai dihentikan"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Kunci sampai dibuka manual"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Sesi sampai dihentikan tetap memakai Fleksibel atau Tunda dan tidak dapat memakai siklus fokus dan istirahat."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Kunci Keras tidak tersedia untuk Sampai dihentikan: tanpa timer dan tanpa akhir manual, sesi tidak akan pernah berakhir."
+  },
+  "shared_end_session": {
+    "message": "Akhiri sesi"
+  },
+  "shared_unlock": {
+    "message": "Buka"
+  },
+  "shared_gate_wait_none": {
+    "message": "tanpa jeda"
+  },
+  "shared_gate_wait": {
+    "message": "jeda $SECONDS$ detik",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ dan kalimat yang diketik",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Berjalan sampai kamu mengakhirinya dengan $LABEL$. Siklus nonaktif.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Berjalan sampai kamu membukanya: $REQUIREMENT$, lalu $LABEL$. Siklus nonaktif.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Siklus dipaksa nonaktif oleh Sampai dihentikan"
+  },
+  "shared_mode_blacklist": {
+    "message": "Blokir situs yang dipilih"
+  },
+  "shared_mode_whitelist": {
+    "message": "Hanya izinkan situs yang dipilih"
+  },
+  "shared_focus_time_label": {
+    "message": "Waktu fokus"
+  },
+  "shared_clock_focus_phase": {
+    "message": "fase fokus"
+  },
+  "shared_clock_total_session": {
+    "message": "total sesi"
+  },
+  "shared_clock_pause": {
+    "message": "jeda"
+  },
+  "shared_clock_break": {
+    "message": "istirahat"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock sedang dimulai. Menerapkan aturan pilihanmu."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Sesi berakhir. Menyelesaikan pembersihan browser."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock tidak dapat dimulai. Menyelesaikan pembersihan browser."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock tidak dapat membersihkan permulaan yang tidak selesai."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock tidak dapat menyelesaikan pembersihan browser."
+  },
+  "shared_retry_cleanup": {
+    "message": "Coba lagi pembersihan"
+  },
+  "shared_end_failed": {
+    "message": "Tidak dapat mengakhiri sesi. Coba lagi."
+  },
+  "shared_retry_failed": {
+    "message": "Tidak dapat mencoba lagi pembersihan. Coba lagi."
+  },
+  "shared_action_failed": {
+    "message": "Tidak dapat meminta aksi tersebut. Coba lagi."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Tidak dapat kembali bekerja. Coba lagi."
+  },
+  "shared_data_clear_pending": {
+    "message": "Menghapus data Focus Lock. Menyelesaikan pembersihan."
+  },
+  "shared_data_clear_error": {
+    "message": "Tidak dapat menghapus data. Coba lagi."
+  },
+  "shared_schedule_window_label": {
+    "message": "Sampai rentang waktu berakhir"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Dimulai sesuai jadwal dan berjalan sampai kamu menghentikannya: Akhiri sesi untuk Fleksibel, Buka melalui gerbang pertimbangan untuk Tunda. Siklus nonaktif."
+  },
+  "shared_schedule_started_title": {
+    "message": "Jadwal fokus dimulai"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Aktif sampai kamu menghentikannya."
+  },
+  "shared_settings_indefinite": {
+    "message": "Sesi sampai dihentikan aktif. Gunakan popup toolbar untuk melihat atau mengakhirinya."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock sedang dimulai. Memeriksa akses situs web dan menerapkan aturanmu."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock tidak dapat menyelesaikan pembersihan browser. Buka popup dan coba lagi."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Popup toolbar mengelola kontrol sesi. Sesi aktif menyimpan aturan yang berlaku saat dimulai."
+  },
+  "shared_settings_timed": {
+    "message": "Sesi berwaktu aktif sampai $TIME$. Sesi berakhir otomatis. Gunakan popup toolbar untuk status langsung.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Selesai"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Diselesaikan manual"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Diakhiri lebih awal"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Berakhir: akses situs web hilang"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Berakhir: penyiapan pemblokiran gagal"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Berakhir: penyiapan timer gagal"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Berakhir: penerapan halaman gagal"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Berakhir: pemulihan gagal"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ j $MINUTES$ m",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ mnt",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ mnt",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Memperbarui sesi"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Kurang dari satu menit"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ sampai istirahatmu",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ tersisa dalam sesi ini",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Biaya melebihi batas kredit"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Perolehan kredit dilanjutkan saat fokus"
+  },
+  "shared_credit_off": {
+    "message": "Perolehan kredit dinonaktifkan"
+  },
+  "shared_not_enough_time": {
+    "message": "Waktu tidak cukup dalam blok fokus ini"
+  },
+  "shared_ready_in": {
+    "message": "Siap dalam $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Diblokir oleh $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Diblokir oleh daftar blokirmu"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Tidak ada di daftar izinmu"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Diblokir oleh sesi ini"
+  },
+  "shared_verdict_allow_list": {
+    "message": "Ada di daftar izinmu"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Selalu diizinkan"
+  },
+  "shared_verdict_unlock": {
+    "message": "Dibuka sementara"
+  },
+  "shared_verdict_excluded": {
+    "message": "Dikecualikan dari kategori yang dipilih"
+  },
+  "shared_verdict_no_session": {
+    "message": "Tidak ada sesi fokus aktif"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Diizinkan oleh sesi ini"
+  },
+  "shared_category_social": {
+    "message": "Media sosial"
+  },
+  "shared_category_video": {
+    "message": "Video dan streaming"
+  },
+  "shared_category_news": {
+    "message": "Berita"
+  },
+  "shared_category_mail": {
+    "message": "Email"
+  },
+  "shared_category_shopping": {
+    "message": "Belanja"
+  },
+  "shared_category_gaming": {
+    "message": "Gim"
+  },
+  "shared_category_forums": {
+    "message": "Forum dan rasa bosan"
+  },
+  "shared_synced_settings": {
+    "message": "Pengaturan"
+  },
+  "shared_synced_lists": {
+    "message": "Daftar blokir dan izin"
+  },
+  "shared_synced_credit": {
+    "message": "Kredit akses situs"
+  },
+  "shared_synced_streaks": {
+    "message": "Rentetan"
+  },
+  "shared_synced_aggregates": {
+    "message": "Agregat percobaan blokir per domain"
+  },
+  "shared_local_full_urls": {
+    "message": "URL lengkap"
+  },
+  "shared_local_intentions": {
+    "message": "Niat fokus"
+  },
+  "shared_local_events": {
+    "message": "Detail peristiwa sesi"
+  },
+  "shared_local_runtime": {
+    "message": "Sesi runtime aktif"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Sebagian data yang disinkronkan dari versi lama tidak dapat dibaca dan telah direset."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Akhiri sesi yang sedang berjalan sebelum menghapus semua data."
+  },
+  "shared_nav_product": {
+    "message": "Navigasi produk"
+  },
+  "shared_nav_overview": {
+    "message": "Ringkasan"
+  },
+  "shared_nav_settings": {
+    "message": "Pengaturan"
+  },
+  "shared_section_blocking": {
+    "message": "Pemblokiran"
+  },
+  "shared_section_schedule": {
+    "message": "Jadwal"
+  },
+  "shared_section_behavior": {
+    "message": "Perilaku sesi"
+  },
+  "shared_section_budget": {
+    "message": "Kredit akses situs"
+  },
+  "shared_section_notifications": {
+    "message": "Notifikasi"
+  },
+  "shared_section_privacy": {
+    "message": "Privasi dan data"
+  },
+  "shared_theme_auto": {
+    "message": "Otomatis"
+  },
+  "shared_theme_light": {
+    "message": "Terang"
+  },
+  "shared_theme_dark": {
+    "message": "Gelap"
+  },
+  "shared_theme_button": {
+    "message": "Tema: $CURRENT$. Ganti ke $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Tidak dapat menyimpan tema. Muat ulang halaman dan coba lagi."
+  },
+  "shared_host_search_label": {
+    "message": "Cari situs $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Tidak ada situs $TITLE$ yang cocok dengan pencarianmu.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Menampilkan $SHOWN$ dari $MATCHED$ situs. Cari untuk mempersempit daftar.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Menampilkan $MATCHED$ dari $TOTAL$ situs.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Menampilkan semua $TOTAL$ situs.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Akhiri sesi"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock sedang dimulai"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Menerapkan aturan pilihanmu."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Halaman ini tidak dimuat. Halaman akan dimuat sendiri saat sesi berakhir."
+  },
+  "shared_overlay_next_step": {
+    "message": "Langkah berikutnya"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Kembali bekerja"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Pilih tab kerja"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Ganti tab kerja"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Butuh istirahat atau akses situs?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Kamu bisa beristirahat kapan saja. Akses situs menggunakan kredit."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Abaikan waktu tunggu dan tetap akhiri"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock tidak dapat memperbarui aksi ini. Coba lagi."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ kredit akses situs",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Lanjutkan tugasmu saat ini"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Buka semua situs"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Buka situs ini"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - biaya $COST$ kredit",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Terkunci sampai $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Kamu bilang: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Buka $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Tetap fokus"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Ketik ini untuk konfirmasi:"
+  },
+  "shared_gate_end_title": {
+    "message": "Akhiri sesi ini"
+  }
+}

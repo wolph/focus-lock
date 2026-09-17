@@ -1,27 +1,79 @@
 {
   "onboarding_page_title": {
-    "message": "Set up Fokasi Lock"
+    "message": "Sanidi Focus Lock"
   },
   "onboarding_eyebrow": {
-    "message": "Fokasi Lock setup"
+    "message": "Kuanzisha Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Hatua $STEP$ ya $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
   },
   "onboarding_recovery_notice": {
-    "message": "Your saved setup progress could not be restored. Anzaing again with your current defaults."
+    "message": "Maendeleo yaliyohifadhiwa ya kuanzisha hayawezi kurudishwa. Kuanza tena na chaguo-msingi yako ya sasa."
   },
   "onboarding_complete_heading": {
-    "message": "Kuanzisha complete"
+    "message": "Kuanzisha kumekamilika"
   },
   "onboarding_complete_body": {
-    "message": "Your choices are saved. Fungua Fokasi Lock from the Chrome toolbar to start a session."
+    "message": "Chaguzi zako zimehifadhiwa. Fungua Focus Lock kutoka kwa upau wa Chrome ili kuanza kikao."
   },
   "onboarding_error_heading": {
-    "message": "Kuanzisha unavailable"
+    "message": "Kuanzisha hakipo"
+  },
+  "onboarding_error_body": {
+    "message": "Haiwezi kupakia kuanzisha. Jaribu tena."
   },
   "onboarding_retry_button": {
     "message": "Jaribu Tena"
   },
+  "onboarding_save_error": {
+    "message": "Haiwezi kuhifadhi maendeleo ya kuanzisha. Jaribu tena."
+  },
+  "onboarding_enable_error": {
+    "message": "Haiwezi kuwezesha kuzuia tovuti. Jaribu tena."
+  },
+  "onboarding_finish_error": {
+    "message": "Haiwezi kumaliza kuanzisha. Chaguzi zako bado zimehifadhiwa. Jaribu tena."
+  },
+  "onboarding_lists_heading": {
+    "message": "Chagua orodha yako ya kuzuia mwanzo"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Katika $MODE$, kategori zilizowezwa na tovuti za kuzuia ziada hazipo.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Katika $MODE$, kila tovuti si ya kupatikana isipokuwa orodha yako ya kuruhusu.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Chaguzi hizi zinakuwa chaguo-msingi kwa vikao vya baadaye. Unaweza kuzibadilisha baadaye."
+  },
+  "onboarding_lists_legend": {
+    "message": "Kategori za tovuti zilizorekomendwa"
+  },
   "onboarding_site_count_one": {
-    "message": "$COUNT$ tovuti",
+    "message": "Tovuti $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -30,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ tovutis",
+    "message": "Tovuti $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -39,7 +91,7 @@
     }
   },
   "onboarding_show_category_sites": {
-    "message": "Onyesha $CATEGORY$ sites",
+    "message": "Onyesha tovuti za $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -48,7 +100,16 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "Ficha $CATEGORY$ sites",
+    "message": "Ficha tovuti za $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Vikoa vya $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -60,24 +121,57 @@
     "message": "Endelea"
   },
   "onboarding_access_heading": {
-    "message": "Wezesha website blocking"
+    "message": "Wezesha kuzuia tovuti"
   },
   "onboarding_access_local_matching": {
-    "message": "Fokasi Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your session ends."
+    "message": "Focus Lock inakagua anwani za ukurasa ndani ya ndani ili iweze kulingana na kategori zilizochaguliwa na tovuti. Inatumia upatikanaji wa tovuti kuonyesha skrini ya kuzuia na kurudisha kurasa zilizothakisiwa wakati kikao chako kinapoishia."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategori na vikoa vya kawaida vinaweza kuwa na tovuti yoyote. Chrome itaomba kwa hiyo uwezo huu:"
+  },
+  "onboarding_access_capability": {
+    "message": "Soma na badilisha data yako yote kwenye tovuti zote"
   },
   "onboarding_access_scope_note": {
-    "message": "Fokasi Lock uses that access only while applying your blocking rules."
+    "message": "Focus Lock inatumia upatikanaji huo wakati tu wa kutumia kanuni zako za kuzuia."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome haikutoa upatikanaji wa tovuti. Unaweza kujaribu tena."
   },
   "onboarding_access_registration_error": {
-    "message": "Tovuti access is granted, but Fokasi Lock could not enable blocking. Jaribu Tena setup or reload the extension."
+    "message": "Upatikanaji wa tovuti umeitolewa, lakini Focus Lock haiwezi kuwezesha kuzuia. Jaribu kuanzisha tena au upya mkakati wa kieneza."
   },
   "onboarding_access_enable_button": {
-    "message": "Wezesha website blocking"
+    "message": "Wezesha kuzuia tovuti"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Sio sasa"
+  },
+  "onboarding_sync_heading": {
+    "message": "Chagua mahali ambapo mipango yako inahifadhiwa"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Lingana katika vifaa vya Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Data iliyokubali hapa chini itakuwa ikitumia Chrome Sync baada ya kumaliza kuanzisha."
   },
   "onboarding_sync_disabled_note": {
-    "message": "All Fokasi Lock data stays in this Chrome profile."
+    "message": "Data yote ya Focus Lock inabaki katika wasifu huu wa Chrome."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Lingana"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Ndani ya ndani tu"
   },
   "onboarding_sync_developer_note": {
-    "message": "Nothing is sent to the Fokasi Lock developer."
+    "message": "Hakuna kinachaorodheshwa kwa msanidi wa Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Malizia kuanzisha na ulinganifu unawezesha"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Malizia kuanzisha bila ulinganifu"
   }
 }

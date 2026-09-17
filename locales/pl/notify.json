@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Sesja skupienia zakończona"
+  },
+  "notify_session_complete_body": {
+    "message": "Twoja sesja skupienia dobiegła końca."
+  },
+  "notify_schedule_window_body": {
+    "message": "Zablokowane do $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Nie udało się uruchomić sesji z harmonogramu"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Blokowanie stron nie jest włączone. Dokończ konfigurację lub przyznaj dostęp do stron, a potem spróbuj ponownie."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Konfiguracja została ukończona w innej karcie."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Konfiguracja zmieniła się w innej karcie. Najnowsze wybory zostały wczytane ponownie."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Konfiguracja zmieniła się w innej karcie. Odśwież ją przed zakończeniem."
+  },
+  "notify_setup_not_complete": {
+    "message": "Konfiguracja nie jest ukończona."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Konfiguracja nie jest gotowa do zakończenia."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Wybór magazynu się zmienił. Odśwież konfigurację przed zakończeniem."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Operacja na magazynie konfiguracji nie powiodła się."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Operacja konfiguracji nie powiodła się."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock nie mógł sprawdzić dostępu do stron. Powtórz konfigurację lub przeładuj rozszerzenie."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Dostęp do stron jest przyznany, ale Focus Lock nie mógł włączyć blokowania. Powtórz konfigurację lub przeładuj rozszerzenie."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Dostęp do stron jest niedostępny, a Focus Lock nie mógł dokończyć wyłączania blokowania. Powtórz konfigurację lub przeładuj rozszerzenie."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock otrzymał niespójny stan dostępu do stron. Powtórz konfigurację lub przeładuj rozszerzenie."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock nie dokończył uruchamiania: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "nieznany błąd"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock działa, nie ma czego resetować"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock nie może zresetować stanu, który wciąż jest zapisany wewnątrz generacji ustawień"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Ponowienie usuwania danych jest niedostępne."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Wyłącz synchronizację przed usunięciem zsynchronizowanych danych"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock wciąż kończy poprzednią zmianę. Spróbuj za chwilę."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Nie udało się zamknąć otwartego ekranu potwierdzenia. Spróbuj ponownie."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Karta robocza jest niedostępna."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Ustawienia przekraczają limit 8 KB Chrome Sync. Usuń wpisy harmonogramu lub skróć zamiary, a potem spróbuj ponownie."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Listy przekraczają limit 8 KB Chrome Sync. Usuń własne reguły lub reguły listy dozwolonych, a potem spróbuj ponownie."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "trwa twarda sesja: usunięcie zablokowanych stron odblokuje je po jej zakończeniu"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "trwa twarda sesja: nowe wpisy listy dozwolonych odblokują dostęp po jej zakończeniu"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "trwa twarda sesja: wyłączenie kategorii odblokuje je po jej zakończeniu"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "trwa twarda sesja: nowe wyjątki odblokują dostęp po jej zakończeniu"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "trwa twarda sesja: osłabienie domyślnej surowości poczeka do jej zakończenia"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "trwa twarda sesja: skrócenie zwłoki na namysł osłabia ekran potwierdzenia"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "trwa twarda sesja: rezygnacja z wpisywania frazy osłabia ekran potwierdzenia"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "trwa twarda sesja: podniesienie tempa naliczania kredytu finansuje więcej ucieczek"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "trwa twarda sesja: podniesienie limitu kredytu finansuje więcej ucieczek"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "trwa twarda sesja: skrócenie przerw obniża ich koszt"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "trwa twarda sesja: skrócenie odblokowań obniża ich koszt"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "trwa twarda sesja: jej wpisu harmonogramu nie można osłabić do zakończenia"
+  }
+}

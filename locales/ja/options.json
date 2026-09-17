@@ -1,72 +1,96 @@
 {
   "options_page_title": {
-    "message": "フォーカス Lock オプション"
+    "message": "[JA: options_page_title]"
   },
   "options_heading": {
-    "message": "フォーカス Lock 設定"
+    "message": "[JA: options_heading]"
   },
   "options_loading_settings": {
-    "message": "読み込み中 設定"
+    "message": "[JA: options_loading_settings]"
   },
   "options_privacy_loading": {
-    "message": "読み込み中 プライバシー 設定"
+    "message": "[JA: options_privacy_loading]"
   },
   "options_save_failed": {
-    "message": "Could not 保存. もう一度お試しください."
+    "message": "[JA: options_save_failed]"
+  },
+  "options_blocking_heading": {
+    "message": "[JA: options_blocking_heading]"
   },
   "options_blocking_help": {
-    "message": "Custom ルール block during ブロックリスト sessions. The ホワイトリスト is what stays reachable during ホワイトリスト sessions. Bundled カテゴリ block common time sinks."
+    "message": "[JA: options_blocking_help]"
   },
   "options_custom_blacklist_title": {
-    "message": "Custom ブロックリスト"
+    "message": "[JA: options_custom_blacklist_title]"
   },
   "options_whitelist_title": {
-    "message": "ホワイトリスト"
+    "message": "[JA: options_whitelist_title]"
   },
   "options_bundled_categories_heading": {
-    "message": "Bundled カテゴリ"
+    "message": "[JA: options_bundled_categories_heading]"
   },
   "options_bundled_categories_help": {
-    "message": "Bundled lists of common time sinks. Toggle a whole カテゴリ, then open it to keep single sites available."
+    "message": "[JA: options_bundled_categories_help]"
   },
   "options_schedule_heading": {
-    "message": "スケジュール"
+    "message": "[JA: options_schedule_heading]"
+  },
+  "options_schedule_help": {
+    "message": "[JA: options_schedule_help]"
   },
   "options_behavior_heading": {
-    "message": "セッション behavior"
+    "message": "[JA: options_behavior_heading]"
   },
   "options_budget_heading": {
-    "message": "サイトアクセスクレジット"
+    "message": "[JA: options_budget_heading]"
+  },
+  "options_notifications_heading": {
+    "message": "[JA: options_notifications_heading]"
   },
   "options_privacy_heading": {
-    "message": "プライバシー and データ"
+    "message": "[JA: options_privacy_heading]"
   },
   "options_load_error_retry": {
-    "message": "再試行"
+    "message": "[JA: options_load_error_retry]"
   },
   "options_load_error_delete_all": {
-    "message": "削除 everything and start over"
+    "message": "[JA: options_load_error_delete_all]"
   },
   "options_load_error_keep_data": {
-    "message": "Keep my データ"
+    "message": "[JA: options_load_error_keep_data]"
   },
   "options_delete_all_data": {
-    "message": "削除 all フォーカス Lock データ"
+    "message": "[JA: options_delete_all_data]"
+  },
+  "options_dirty_saving": {
+    "message": "[JA: options_dirty_saving]"
+  },
+  "options_dirty_unsaved": {
+    "message": "[JA: options_dirty_unsaved]"
+  },
+  "options_dirty_clean": {
+    "message": "[JA: options_dirty_clean]"
+  },
+  "options_dirty_discard": {
+    "message": "[JA: options_dirty_discard]"
   },
   "options_dirty_save": {
-    "message": "保存 changes"
+    "message": "[JA: options_dirty_save]"
   },
   "options_session_status_label": {
-    "message": "セッション status"
+    "message": "[JA: options_session_status_label]"
   },
   "options_rule_kind_host_badge": {
-    "message": "ドメイン"
+    "message": "[JA: options_rule_kind_host_badge]"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "[JA: options_rule_kind_regex_badge]"
   },
   "options_rule_remove": {
-    "message": "削除"
+    "message": "[JA: options_rule_remove]"
   },
   "options_rule_remove_aria": {
-    "message": "削除 $PATTERN$",
+    "message": "[JA: options_rule_remove_aria] $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -75,487 +99,136 @@
     }
   },
   "options_rules_empty": {
-    "message": "No ルール yet."
+    "message": "[JA: options_rules_empty]"
   },
   "options_rule_kind_aria": {
-    "message": "ルール kind"
+    "message": "[JA: options_rule_kind_aria]"
   },
   "options_rule_kind_host_option": {
-    "message": "ドメイン or subdomain"
+    "message": "[JA: options_rule_kind_host_option]"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "[JA: options_rule_kind_regex_option]"
+  },
+  "options_rule_pattern_aria": {
+    "message": "[JA: options_rule_pattern_aria]"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "[JA: options_rule_pattern_placeholder_host]"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "[JA: options_rule_pattern_placeholder_regex]"
   },
   "options_rule_add": {
-    "message": "追加 ルール"
+    "message": "[JA: options_rule_add]"
   },
   "options_rules_help": {
-    "message": "facebook.com covers that ドメイン and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/shorts/ matches the full URL as a regular expression."
+    "message": "[JA: options_rules_help]"
+  },
+  "options_number_error_positive": {
+    "message": "[JA: options_number_error_positive] $LABEL$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "[JA: options_number_error_whole] $LABEL$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "[JA: options_number_error_nonnegative] $LABEL$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "[JA: options_number_error_minute_range] $LABEL$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "[JA: options_number_error_day_range] $LABEL$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
   },
   "options_session_defaults_heading": {
-    "message": "セッション defaults"
+    "message": "[JA: options_session_defaults_heading]"
   },
   "options_session_defaults_help": {
-    "message": "Mode and strictness are fixed when a セッション starts. These are the values the start form opens with."
+    "message": "[JA: options_session_defaults_help]"
   },
   "options_preset_short_label": {
-    "message": "Short セッション preset (minutes)"
+    "message": "[JA: options_preset_short_label]"
   },
   "options_preset_default_label": {
-    "message": "Default セッション preset (minutes)"
+    "message": "[JA: options_preset_default_label]"
   },
   "options_preset_deep_label": {
-    "message": "Deep セッション preset (minutes)"
+    "message": "[JA: options_preset_deep_label]"
   },
   "options_mode_blacklist_label": {
-    "message": "ブロックリスト: block listed sites"
+    "message": "[JA: options_mode_blacklist_label]"
   },
   "options_mode_whitelist_label": {
-    "message": "ホワイトリスト: allow only listed sites"
+    "message": "[JA: options_mode_whitelist_label]"
   },
   "options_strictness_flexible_label": {
-    "message": "フレキシブル: end the セッション whenever you choose"
+    "message": "[JA: options_strictness_flexible_label]"
   },
   "options_strictness_friction_label": {
-    "message": "フリクション: stopping early uses the configured deliberation gate"
+    "message": "[JA: options_strictness_friction_label]"
   },
   "options_strictness_hard_label": {
-    "message": "ハード: no early end, temporary サイトアクセス only"
+    "message": "[JA: options_strictness_hard_label]"
   },
   "options_cycle_heading": {
-    "message": "フォーカス and ブレーク cycle"
+    "message": "[JA: options_cycle_heading]"
   },
   "options_cycle_help": {
-    "message": "Defaults: 25 minute フォーカス, 5 minute ブレーク, 15 minute long ブレーク every 4th cycle. Breaks on a スケジュール beat ブレーク-when-you-feel-like-it for mood and フォーカス in study samples. The exact minutes are convention, not science."
+    "message": "[JA: options_cycle_help]"
   },
   "options_cycle_default_label": {
-    "message": "Cycle フォーカス and breaks by default"
+    "message": "[JA: options_cycle_default_label]"
   },
   "options_focus_minutes_label": {
-    "message": "フォーカス minutes"
+    "message": "[JA: options_focus_minutes_label]"
   },
   "options_short_break_minutes_label": {
-    "message": "Short ブレーク minutes"
+    "message": "[JA: options_short_break_minutes_label]"
   },
   "options_long_break_minutes_label": {
-    "message": "Long ブレーク minutes"
+    "message": "[JA: options_long_break_minutes_label]"
   },
   "options_long_every_label": {
-    "message": "Long ブレーク every Nth cycle"
+    "message": "[JA: options_long_every_label]"
   },
-  "options_gate_force_end_label": {
-    "message": "有効にする \"Ignore timeout and end anyway\" button"
+  "options_gate_heading": {
+    "message": "[JA: options_gate_heading]"
   },
-  "options_credit_help": {
-    "message": "サイトアクセスクレジット accrues while you フォーカス. Both アクセス to all sites and a single-site ロック解除 spend from the same balance. You can step away at any time without spending credit."
-  },
-  "options_earn_rate_label": {
-    "message": "Minutes of サイトアクセス per 30 minutes of フォーカス"
-  },
-  "options_credit_cap_label": {
-    "message": "サイトアクセスクレジット limit (minutes)"
-  },
-  "options_pause_length_label": {
-    "message": "All-サイトアクセス length (minutes)"
-  },
-  "options_unlock_length_label": {
-    "message": "Site ロック解除 length (minutes)"
-  },
-  "options_streak_heading": {
-    "message": "ストリーク and retention"
-  },
-  "options_streak_help": {
-    "message": "The ストリーク counts days that reach the goal. One default セッション keeps the chain alive, and a freeze token repairs a missed day."
-  },
-  "options_streak_goal_label": {
-    "message": "Daily ストリーク goal (フォーカス minutes)"
-  },
-  "options_category_on_announcement": {
-    "message": "$カテゴリ$ カテゴリ on.",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_category_off_announcement": {
-    "message": "$カテゴリ$ カテゴリ off.",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_all_categories_on_announcement": {
-    "message": "All カテゴリ on."
-  },
-  "options_all_categories_off_announcement": {
-    "message": "All カテゴリ off."
-  },
-  "options_all_sites_included_announcement": {
-    "message": "All $カテゴリ$ sites included.",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_all_sites_kept_available_announcement": {
-    "message": "All $カテゴリ$ sites kept available.",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_category_bulk_actions_aria": {
-    "message": "カテゴリ bulk actions"
-  },
-  "options_select_all_categories_aria": {
-    "message": "Select all カテゴリ"
-  },
-  "options_deselect_all_categories_aria": {
-    "message": "Deselect all カテゴリ"
-  },
-  "options_show_category_sites": {
-    "message": "Show $カテゴリ$ sites",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_hide_category_sites": {
-    "message": "Hide $カテゴリ$ sites",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_category_off": {
-    "message": "カテゴリ off"
-  },
-  "options_category_uncheck_help": {
-    "message": "Uncheck a site to keep it available while the rest of the カテゴリ is blocked."
-  },
-  "options_category_site_bulk_actions_aria": {
-    "message": "$カテゴリ$ site bulk actions",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_select_all_category_sites_aria": {
-    "message": "Select all $カテゴリ$ sites",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_deselect_all_category_sites_aria": {
-    "message": "Deselect all $カテゴリ$ sites",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_category_sites_region_aria": {
-    "message": "$カテゴリ$ sites",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_day_sun": {
-    "message": "Sun"
-  },
-  "options_day_mon": {
-    "message": "Mon"
-  },
-  "options_day_tue": {
-    "message": "Tue"
-  },
-  "options_day_wed": {
-    "message": "Wed"
-  },
-  "options_day_thu": {
-    "message": "Thu"
-  },
-  "options_day_fri": {
-    "message": "Fri"
-  },
-  "options_day_sat": {
-    "message": "Sat"
-  },
-  "options_schedule_cycles_label": {
-    "message": "Cycle フォーカス and breaks"
-  },
-  "options_schedule_session_type_aria": {
-    "message": "セッション type"
-  },
-  "options_schedule_entry_legend": {
-    "message": "スケジュール entry"
-  },
-  "options_schedule_end_label": {
-    "message": "End"
-  },
-  "options_schedule_save_entry": {
-    "message": "保存 entry"
-  },
-  "options_cancel": {
-    "message": "キャンセル"
-  },
-  "options_schedule_mode_blacklist": {
-    "message": "ブロックリスト"
-  },
-  "options_schedule_mode_whitelist": {
-    "message": "ホワイトリスト"
-  },
-  "options_schedule_strictness_flexible": {
-    "message": "フレキシブル"
-  },
-  "options_schedule_strictness_friction": {
-    "message": "フリクション"
-  },
-  "options_schedule_strictness_hard": {
-    "message": "ハード"
-  },
-  "options_schedule_edit": {
-    "message": "編集"
-  },
-  "options_schedule_delete": {
-    "message": "削除"
-  },
-  "options_schedule_add": {
-    "message": "追加 スケジュール entry"
-  },
-  "options_sound_session_complete": {
-    "message": "セッション complete"
-  },
-  "options_sound_break_start": {
-    "message": "ブレーク start"
-  },
-  "options_sound_break_end": {
-    "message": "ブレーク end"
-  },
-  "options_sound_schedule_start": {
-    "message": "スケジュール auto-start"
-  },
-  "options_sound_preview_error": {
-    "message": "Could not preview the sound. もう一度お試しください."
-  },
-  "options_session_complete_notification": {
-    "message": "Show a system 通知 when a セッション completes"
-  },
-  "options_privacy_website_access_heading": {
-    "message": "ウェブサイト アクセス"
-  },
-  "options_privacy_website_off_title": {
-    "message": "ウェブサイト アクセス is off"
-  },
-  "options_privacy_website_off_detail": {
-    "message": "フォーカス Lock cannot block ウェブサイト until you grant アクセス."
-  },
-  "options_privacy_website_enable_action": {
-    "message": "有効にする ウェブサイトブロッキング"
-  },
-  "options_privacy_website_unregistered_title": {
-    "message": "ウェブサイト アクセス is granted, but blocking is not active"
-  },
-  "options_privacy_website_unregistered_detail": {
-    "message": "Chrome granted アクセス, but フォーカス Lock could not register its blocking script."
-  },
-  "options_privacy_website_retry_action": {
-    "message": "再試行 ウェブサイトブロッキング"
-  },
-  "options_privacy_website_on_title": {
-    "message": "ウェブサイトブロッキング is enabled"
-  },
-  "options_privacy_website_on_detail": {
-    "message": "フォーカス Lock can apply your active blocking ルール on regular ウェブサイト ページ."
-  },
-  "options_privacy_confirm_local_history_title": {
-    "message": "削除 local history?"
-  },
-  "options_privacy_confirm_local_history_action": {
-    "message": "Confirm 削除 local history"
-  },
-  "options_privacy_confirm_local_history_body": {
-    "message": "This permanently deletes full URLs, フォーカス intentions, and detailed セッション events from this device. It does not clear a running セッション, which keeps its intention and the address of each タブ it is blocking. Ending the セッション clears the intention and starts a cleanup that clears every open ウェブサイト タブ, and the cleanup removes every stored address when it completes."
-  },
-  "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently deletes full URLs, フォーカス intentions, and detailed セッション events from this device, plus local-only aggregate statistics. It does not clear a running セッション, which keeps its intention and the address of each タブ it is blocking. Ending the セッション clears the intention and starts a cleanup that clears every open ウェブサイト タブ, and the cleanup removes every stored address when it completes."
-  },
-  "options_privacy_confirm_synced_policy_title": {
-    "message": "削除 remote 同期 データ?"
-  },
-  "options_privacy_confirm_synced_policy_action": {
-    "message": "Confirm 削除 remote 同期 データ"
-  },
-  "options_privacy_synced_policy_deleted": {
-    "message": "Remote Chrome 同期 データ deleted."
-  },
-  "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently deletes remote 設定, block and allow lists, サイトアクセスクレジット, streaks, and ドメイン-level blocked-attempt aggregates from Chrome 同期. Local 設定 and statistics stay on this device."
-  },
-  "options_privacy_confirm_all_title": {
-    "message": "削除 all フォーカス Lock データ?"
-  },
-  "options_privacy_confirm_all_action": {
-    "message": "Confirm 削除 all フォーカス Lock データ"
-  },
-  "options_privacy_all_deleted": {
-    "message": "All フォーカス Lock データ deleted."
-  },
-  "options_privacy_all_body_intro": {
-    "message": "This permanently deletes every piece of フォーカス Lock データ on this device and any フォーカス Lock copies left in Chrome 同期:"
-  },
-  "options_privacy_all_body_outro": {
-    "message": "Deleting everything is available only while no セッション is running. フォーカス Lock then returns to セットアップ."
-  },
-  "options_privacy_error_local_history_clear": {
-    "message": "Local history could not be deleted. もう一度お試しください."
-  },
-  "options_privacy_error_synced_policy_clear": {
-    "message": "Remote Chrome 同期 データ could not be deleted. もう一度お試しください."
-  },
-  "options_privacy_error_all_clear": {
-    "message": "All フォーカス Lock データ could not be deleted. もう一度お試しください."
-  },
-  "options_privacy_error_sync_write": {
-    "message": "Chrome 同期 could not 保存 your latest changes. Your local 保存 is safe."
-  },
-  "options_privacy_error_request": {
-    "message": "The request could not be completed. もう一度お試しください."
-  },
-  "options_privacy_website_access_updated": {
-    "message": "ウェブサイト アクセス updated."
-  },
-  "options_privacy_website_access_denied": {
-    "message": "ウェブサイト アクセス was not granted."
-  },
-  "options_privacy_error_website_access": {
-    "message": "ウェブサイト アクセス could not be updated. もう一度お試しください."
-  },
-  "options_privacy_website_blocking_enabled": {
-    "message": "ウェブサイトブロッキング enabled."
-  },
-  "options_privacy_error_export_retry": {
-    "message": "Could not export the event log. もう一度お試しください."
-  },
-  "options_privacy_error_open_chrome_settings": {
-    "message": "Could not open Chrome permission 設定. もう一度お試しください."
-  },
-  "options_privacy_chrome_settings_opened": {
-    "message": "Chrome permission 設定 opened."
-  },
-  "options_privacy_open_chrome_settings": {
-    "message": "Open Chrome permission 設定"
-  },
-  "options_privacy_sync_heading": {
-    "message": "Chrome 同期"
-  },
-  "options_privacy_sync_switch_label": {
-    "message": "同期 フォーカス Lock データ across Chrome devices"
-  },
-  "options_privacy_sync_enabled": {
-    "message": "Chrome 同期 enabled."
-  },
-  "options_privacy_sync_disabled": {
-    "message": "Chrome 同期 disabled."
-  },
-  "options_privacy_sync_saving": {
-    "message": "Chrome 同期 is still saving your latest changes."
-  },
-  "options_privacy_sync_on": {
-    "message": "Chrome 同期 is on."
-  },
-  "options_privacy_sync_off": {
-    "message": "Chrome 同期 is off."
-  },
-  "options_privacy_sync_changes_saved": {
-    "message": "Chrome 同期 changes saved."
-  },
-  "options_privacy_retry_enable_sync": {
-    "message": "再試行 enabling Chrome 同期"
-  },
-  "options_privacy_retry_sync": {
-    "message": "再試行 Chrome 同期"
-  },
-  "options_privacy_developer_note": {
-    "message": "Nothing is sent to the フォーカス Lock developer."
-  },
-  "options_privacy_local_log_detail": {
-    "message": "Export the detailed local log or 削除 local browsing and セッション history."
-  },
-  "options_privacy_delete_local_history": {
-    "message": "削除 local history"
-  },
-  "options_privacy_remote_data_heading": {
-    "message": "Remote 同期 データ"
-  },
-  "options_privacy_remote_data_detail": {
-    "message": "削除 the フォーカス Lock copies left in Chrome 同期 without changing this device."
-  },
-  "options_privacy_delete_remote_data": {
-    "message": "削除 remote 同期 データ"
-  },
-  "options_privacy_all_data_heading": {
-    "message": "All フォーカス Lock データ"
-  },
-  "options_privacy_all_data_detail": {
-    "message": "削除 every フォーカス Lock record on this device and any フォーカス Lock copies left in Chrome 同期, then start again from セットアップ. Available while no セッション is running."
-  },
-  "options_privacy_resuming_all_clear": {
-    "message": "Resuming deletion of all フォーカス Lock データ."
-  },
-  "options_privacy_retry_local_history": {
-    "message": "再試行 local history deletion"
-  },
-  "options_privacy_retry_remote_sync": {
-    "message": "再試行 remote 同期 deletion"
-  },
-  "options_privacy_retry_all_data": {
-    "message": "再試行 all データ deletion"
-  },
-  "options_error_load": {
-    "message": "Could not load 設定. Reload the ページ to もう一度お試しください."
-  },
-  "options_error_retry_boot": {
-    "message": "Could not restart フォーカス Lock. もう一度お試しください."
-  },
-  "options_error_refresh_privacy": {
-    "message": "Could not refresh プライバシー 設定. Reload the ページ."
-  },
-  "options_error_website_blocking": {
-    "message": "Could not update ウェブサイトブロッキング. もう一度お試しください."
-  },
-  "options_error_change_sync": {
-    "message": "Could not change Chrome 同期. もう一度お試しください."
-  },
-  "options_error_retry_sync": {
-    "message": "Could not 再試行 Chrome 同期. もう一度お試しください."
-  },
-  "options_error_save_settings": {
-    "message": "Could not 保存 設定. Reload the ページ and もう一度お試しください."
-  },
-  "options_error_save_lists": {
-    "message": "Could not 保存 lists. Reload the ページ and もう一度お試しください."
+  "options_gate_help": {
+    "message": "[JA: options_gate_help]"
   },
   "options_gate_wait_one": {
-    "message": "Wait $COUNT$ second",
+    "message": "[JA: options_gate_wait_one] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -564,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "Wait $COUNT$ seconds",
+    "message": "[JA: options_gate_wait_other] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -572,8 +245,164 @@
       }
     }
   },
+  "options_gate_wait_custom": {
+    "message": "[JA: options_gate_wait_custom]"
+  },
+  "options_custom_delay_label": {
+    "message": "[JA: options_custom_delay_label]"
+  },
+  "options_custom_delay_error": {
+    "message": "[JA: options_custom_delay_error]"
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "[JA: options_gate_typed_phrase_label]"
+  },
+  "options_gate_force_end_label": {
+    "message": "[JA: options_gate_force_end_label]"
+  },
+  "options_credit_help": {
+    "message": "[JA: options_credit_help]"
+  },
+  "options_earn_rate_label": {
+    "message": "[JA: options_earn_rate_label]"
+  },
+  "options_credit_cap_label": {
+    "message": "[JA: options_credit_cap_label]"
+  },
+  "options_pause_length_label": {
+    "message": "[JA: options_pause_length_label]"
+  },
+  "options_unlock_length_label": {
+    "message": "[JA: options_unlock_length_label]"
+  },
+  "options_streak_heading": {
+    "message": "[JA: options_streak_heading]"
+  },
+  "options_streak_help": {
+    "message": "[JA: options_streak_help]"
+  },
+  "options_streak_goal_label": {
+    "message": "[JA: options_streak_goal_label]"
+  },
+  "options_freeze_interval_label": {
+    "message": "[JA: options_freeze_interval_label]"
+  },
+  "options_retention_label": {
+    "message": "[JA: options_retention_label]"
+  },
+  "options_category_on_announcement": {
+    "message": "[JA: options_category_on_announcement] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "[JA: options_category_off_announcement] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "[JA: options_all_categories_on_announcement]"
+  },
+  "options_all_categories_off_announcement": {
+    "message": "[JA: options_all_categories_off_announcement]"
+  },
+  "options_host_included_announcement": {
+    "message": "[JA: options_host_included_announcement] $HOST$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "[JA: options_host_kept_available_announcement] $HOST$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "[JA: options_all_sites_included_announcement] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "[JA: options_all_sites_kept_available_announcement] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "[JA: options_category_bulk_actions_aria]"
+  },
+  "options_selected_count": {
+    "message": "[JA: options_selected_count] $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "[JA: options_deselected_count] $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "[JA: options_select_all]"
+  },
+  "options_deselect_all": {
+    "message": "[JA: options_deselect_all]"
+  },
+  "options_select_all_categories_aria": {
+    "message": "[JA: options_select_all_categories_aria]"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "[JA: options_deselect_all_categories_aria]"
+  },
+  "options_show_category_sites": {
+    "message": "[JA: options_show_category_sites] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "[JA: options_hide_category_sites] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ site included",
+    "message": "[JA: options_category_sites_included_one] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -582,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ sites included",
+    "message": "[JA: options_category_sites_included_other] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -590,8 +419,11 @@
       }
     }
   },
+  "options_category_off": {
+    "message": "[JA: options_category_off]"
+  },
   "options_included_when_enabled_one": {
-    "message": "$COUNT$ included when enabled",
+    "message": "[JA: options_included_when_enabled_one] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -600,12 +432,418 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ included when enabled",
+    "message": "[JA: options_included_when_enabled_other] $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
         "example": "12"
       }
     }
+  },
+  "options_category_uncheck_help": {
+    "message": "[JA: options_category_uncheck_help]"
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "[JA: options_category_site_bulk_actions_aria] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "[JA: options_select_all_category_sites_aria] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "[JA: options_deselect_all_category_sites_aria] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "[JA: options_category_sites_region_aria] $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "[JA: options_day_sun]"
+  },
+  "options_day_mon": {
+    "message": "[JA: options_day_mon]"
+  },
+  "options_day_tue": {
+    "message": "[JA: options_day_tue]"
+  },
+  "options_day_wed": {
+    "message": "[JA: options_day_wed]"
+  },
+  "options_day_thu": {
+    "message": "[JA: options_day_thu]"
+  },
+  "options_day_fri": {
+    "message": "[JA: options_day_fri]"
+  },
+  "options_day_sat": {
+    "message": "[JA: options_day_sat]"
+  },
+  "options_schedule_cycles_label": {
+    "message": "[JA: options_schedule_cycles_label]"
+  },
+  "options_schedule_overlap_error": {
+    "message": "[JA: options_schedule_overlap_error] $DAY$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "[JA: options_schedule_session_type_aria]"
+  },
+  "options_schedule_entry_legend": {
+    "message": "[JA: options_schedule_entry_legend]"
+  },
+  "options_schedule_start_label": {
+    "message": "[JA: options_schedule_start_label]"
+  },
+  "options_schedule_end_label": {
+    "message": "[JA: options_schedule_end_label]"
+  },
+  "options_schedule_duration_legend": {
+    "message": "[JA: options_schedule_duration_legend]"
+  },
+  "options_schedule_intention_label": {
+    "message": "[JA: options_schedule_intention_label]"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "[JA: options_schedule_intention_placeholder]"
+  },
+  "options_schedule_save_entry": {
+    "message": "[JA: options_schedule_save_entry]"
+  },
+  "options_cancel": {
+    "message": "[JA: options_cancel]"
+  },
+  "options_schedule_empty": {
+    "message": "[JA: options_schedule_empty]"
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "[JA: options_schedule_selected_days_aria]"
+  },
+  "options_schedule_time_range": {
+    "message": "[JA: options_schedule_time_range] $START$ $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "[JA: options_schedule_mode_blacklist]"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "[JA: options_schedule_mode_whitelist]"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "[JA: options_schedule_strictness_flexible]"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "[JA: options_schedule_strictness_friction]"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "[JA: options_schedule_strictness_hard]"
+  },
+  "options_schedule_enabled_label": {
+    "message": "[JA: options_schedule_enabled_label]"
+  },
+  "options_schedule_edit": {
+    "message": "[JA: options_schedule_edit]"
+  },
+  "options_schedule_delete": {
+    "message": "[JA: options_schedule_delete]"
+  },
+  "options_schedule_add": {
+    "message": "[JA: options_schedule_add]"
+  },
+  "options_sounds_heading": {
+    "message": "[JA: options_sounds_heading]"
+  },
+  "options_master_volume": {
+    "message": "[JA: options_master_volume]"
+  },
+  "options_sound_session_complete": {
+    "message": "[JA: options_sound_session_complete]"
+  },
+  "options_sound_break_start": {
+    "message": "[JA: options_sound_break_start]"
+  },
+  "options_sound_break_end": {
+    "message": "[JA: options_sound_break_end]"
+  },
+  "options_sound_schedule_start": {
+    "message": "[JA: options_sound_schedule_start]"
+  },
+  "options_sound_preview_aria": {
+    "message": "[JA: options_sound_preview_aria] $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "[JA: options_sound_play]"
+  },
+  "options_sound_preview_error": {
+    "message": "[JA: options_sound_preview_error]"
+  },
+  "options_sounds_notifications_heading": {
+    "message": "[JA: options_sounds_notifications_heading]"
+  },
+  "options_session_complete_notification": {
+    "message": "[JA: options_session_complete_notification]"
+  },
+  "options_badge_heading": {
+    "message": "[JA: options_badge_heading]"
+  },
+  "options_badge_countdown": {
+    "message": "[JA: options_badge_countdown]"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "[JA: options_privacy_website_access_heading]"
+  },
+  "options_privacy_website_off_title": {
+    "message": "[JA: options_privacy_website_off_title]"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "[JA: options_privacy_website_off_detail]"
+  },
+  "options_privacy_website_enable_action": {
+    "message": "[JA: options_privacy_website_enable_action]"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "[JA: options_privacy_website_unregistered_title]"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "[JA: options_privacy_website_unregistered_detail]"
+  },
+  "options_privacy_website_retry_action": {
+    "message": "[JA: options_privacy_website_retry_action]"
+  },
+  "options_privacy_website_on_title": {
+    "message": "[JA: options_privacy_website_on_title]"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "[JA: options_privacy_website_on_detail]"
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "[JA: options_privacy_confirm_local_history_title]"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "[JA: options_privacy_confirm_local_history_action]"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "[JA: options_privacy_local_history_deleted]"
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "[JA: options_privacy_confirm_local_history_body]"
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "[JA: options_privacy_confirm_local_history_body_aggregates]"
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "[JA: options_privacy_confirm_synced_policy_title]"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "[JA: options_privacy_confirm_synced_policy_action]"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "[JA: options_privacy_synced_policy_deleted]"
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "[JA: options_privacy_confirm_synced_policy_body]"
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "[JA: options_privacy_confirm_all_title]"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "[JA: options_privacy_confirm_all_action]"
+  },
+  "options_privacy_all_deleted": {
+    "message": "[JA: options_privacy_all_deleted]"
+  },
+  "options_privacy_all_body_intro": {
+    "message": "[JA: options_privacy_all_body_intro]"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "[JA: options_privacy_all_body_outro]"
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "[JA: options_privacy_error_local_history_clear]"
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "[JA: options_privacy_error_synced_policy_clear]"
+  },
+  "options_privacy_error_all_clear": {
+    "message": "[JA: options_privacy_error_all_clear]"
+  },
+  "options_privacy_error_sync_write": {
+    "message": "[JA: options_privacy_error_sync_write]"
+  },
+  "options_privacy_error_request": {
+    "message": "[JA: options_privacy_error_request]"
+  },
+  "options_privacy_website_access_updated": {
+    "message": "[JA: options_privacy_website_access_updated]"
+  },
+  "options_privacy_website_access_denied": {
+    "message": "[JA: options_privacy_website_access_denied]"
+  },
+  "options_privacy_error_website_access": {
+    "message": "[JA: options_privacy_error_website_access]"
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "[JA: options_privacy_website_blocking_enabled]"
+  },
+  "options_privacy_error_export": {
+    "message": "[JA: options_privacy_error_export]"
+  },
+  "options_privacy_error_export_retry": {
+    "message": "[JA: options_privacy_error_export_retry]"
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "[JA: options_privacy_error_open_chrome_settings]"
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "[JA: options_privacy_chrome_settings_opened]"
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "[JA: options_privacy_open_chrome_settings]"
+  },
+  "options_privacy_sync_heading": {
+    "message": "[JA: options_privacy_sync_heading]"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "[JA: options_privacy_sync_switch_label]"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "[JA: options_privacy_sync_enabled]"
+  },
+  "options_privacy_sync_disabled": {
+    "message": "[JA: options_privacy_sync_disabled]"
+  },
+  "options_privacy_sync_saving": {
+    "message": "[JA: options_privacy_sync_saving]"
+  },
+  "options_privacy_sync_on": {
+    "message": "[JA: options_privacy_sync_on]"
+  },
+  "options_privacy_sync_off": {
+    "message": "[JA: options_privacy_sync_off]"
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "[JA: options_privacy_sync_changes_saved]"
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "[JA: options_privacy_retry_enable_sync]"
+  },
+  "options_privacy_retry_sync": {
+    "message": "[JA: options_privacy_retry_sync]"
+  },
+  "options_privacy_scope_synced": {
+    "message": "[JA: options_privacy_scope_synced]"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "[JA: options_privacy_scope_local_only]"
+  },
+  "options_privacy_developer_note": {
+    "message": "[JA: options_privacy_developer_note]"
+  },
+  "options_privacy_local_log_heading": {
+    "message": "[JA: options_privacy_local_log_heading]"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "[JA: options_privacy_local_log_detail]"
+  },
+  "options_privacy_export_local_log": {
+    "message": "[JA: options_privacy_export_local_log]"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "[JA: options_privacy_local_log_exported]"
+  },
+  "options_privacy_delete_local_history": {
+    "message": "[JA: options_privacy_delete_local_history]"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "[JA: options_privacy_remote_data_heading]"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "[JA: options_privacy_remote_data_detail]"
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "[JA: options_privacy_delete_remote_data]"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "[JA: options_privacy_all_data_heading]"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "[JA: options_privacy_all_data_detail]"
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "[JA: options_privacy_resuming_all_clear]"
+  },
+  "options_privacy_retry_local_history": {
+    "message": "[JA: options_privacy_retry_local_history]"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "[JA: options_privacy_retry_remote_sync]"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "[JA: options_privacy_retry_all_data]"
+  },
+  "options_error_load": {
+    "message": "[JA: options_error_load]"
+  },
+  "options_error_retry_boot": {
+    "message": "[JA: options_error_retry_boot]"
+  },
+  "options_error_refresh_privacy": {
+    "message": "[JA: options_error_refresh_privacy]"
+  },
+  "options_error_website_blocking": {
+    "message": "[JA: options_error_website_blocking]"
+  },
+  "options_error_change_sync": {
+    "message": "[JA: options_error_change_sync]"
+  },
+  "options_error_retry_sync": {
+    "message": "[JA: options_error_retry_sync]"
+  },
+  "options_error_save_settings": {
+    "message": "[JA: options_error_save_settings]"
+  },
+  "options_error_save_lists": {
+    "message": "[JA: options_error_save_lists]"
   }
 }

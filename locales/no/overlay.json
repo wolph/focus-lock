@@ -1,0 +1,137 @@
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "Låst - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Sjekker tilgjengelige arbeidsfaner..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Velg en åpen fane for å fortsette oppgaven din."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Fokusøkten din er ikke tilgjengelig. Prøv igjen, eller last siden på nytt."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Kunne ikke laste arbeidsfanen din. Prøv igjen, eller last siden på nytt."
+  },
+  "overlay_target_reconnect": {
+    "message": "Last siden på nytt for å koble til Focus Lock igjen."
+  },
+  "overlay_target_page_changed": {
+    "message": "Siden som spurte, er endret. Last siden på nytt."
+  },
+  "overlay_target_transport_error": {
+    "message": "Kunne ikke nå Focus Lock. Prøv igjen."
+  },
+  "overlay_picker_heading": {
+    "message": "Velg en arbeidsfane"
+  },
+  "overlay_picker_cancel": {
+    "message": "Avbryt"
+  },
+  "overlay_picker_search_label": {
+    "message": "Søk i arbeidsfaner"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Søk på tittel eller nettsted"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Tøm søket"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Oppdater faner"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Tilgjengelige arbeidsfaner"
+  },
+  "overlay_picker_finding": {
+    "message": "Finner tilgjengelige faner..."
+  },
+  "overlay_picker_searching": {
+    "message": "Søker i arbeidsfaner..."
+  },
+  "overlay_picker_saving": {
+    "message": "Lagrer arbeidsfane..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Ingen tilgjengelige arbeidsfaner. Åpne et nettsted økten tillater, og oppdater faner."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Ingen faner passer. Prøv et annet søk eller tøm søket."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Kunne ikke laste arbeidsfaner. Prøv igjen."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ av $COUNT$ fane",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ av $COUNT$ faner",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  }
+}

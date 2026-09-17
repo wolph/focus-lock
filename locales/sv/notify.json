@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Fokuspasset är klart"
+  },
+  "notify_session_complete_body": {
+    "message": "Ditt fokuspass är slut."
+  },
+  "notify_schedule_window_body": {
+    "message": "Låst till $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Fokusschemat kunde inte starta"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Webbplatsblockering är inte aktiverad. Slutför installationen eller ge webbplatsåtkomst och försök igen."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Installationen slutfördes i en annan flik."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Installationen ändrades i en annan flik. De senaste valen lästes in på nytt."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Installationen ändrades i en annan flik. Läs in installationen på nytt innan du slutför."
+  },
+  "notify_setup_not_complete": {
+    "message": "Installationen är inte slutförd."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Installationen är inte redo att slutföras."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Lagringsvalet i installationen ändrades. Läs in installationen på nytt innan du slutför."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Lagringsåtgärden under installationen misslyckades."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Installationsåtgärden misslyckades."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock kunde inte kontrollera webbplatsåtkomsten. Gör om installationen eller läs in tillägget på nytt."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Webbplatsåtkomst är beviljad, men Focus Lock kunde inte aktivera blockeringen. Gör om installationen eller läs in tillägget på nytt."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Webbplatsåtkomst är inte tillgänglig, och Focus Lock kunde inte städa upp blockeringen. Gör om installationen eller läs in tillägget på nytt."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock fick ett motstridigt tillstånd för webbplatsåtkomst. Gör om installationen eller läs in tillägget på nytt."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock startade inte färdigt: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "okänt fel"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock körs, ingenting att återställa"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock kan inte återställa en körning som fortfarande ligger inne i en policygeneration"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Det finns inget nytt försök för datarensningen."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Stäng av Sync innan du raderar synkroniserade data"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock håller fortfarande på med en tidigare ändring. Försök igen om en stund."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Den öppna spärren kunde inte stängas. Försök igen."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Arbetsfliken är inte tillgänglig."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Inställningarna överskrider gränsen på 8 kB i Chrome Sync. Ta bort schemaposter eller korta ned avsikter och försök igen."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Listorna överskrider gränsen på 8 kB i Chrome Sync. Ta bort egna regler eller regler i tillåtlistan och försök igen."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "ett pass med hårt lås pågår: borttagning av blockerade webbplatser låses upp när det tar slut"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "ett pass med hårt lås pågår: nya poster i tillåtlistan låses upp när det tar slut"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "ett pass med hårt lås pågår: att stänga av kategorier låses upp när det tar slut"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "ett pass med hårt lås pågår: nya undantag låses upp när det tar slut"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "ett pass med hårt lås pågår: att försvaga standardstriktheten väntar tills det tar slut"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "ett pass med hårt lås pågår: att korta ned betänketiden försvagar spärren"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "ett pass med hårt lås pågår: att ta bort den inskrivna frasen försvagar spärren"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "ett pass med hårt lås pågår: att höja intjäningstakten för pauser finansierar fler flykter"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "ett pass med hårt lås pågår: att höja pausgränsen finansierar fler flykter"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "ett pass med hårt lås pågår: att korta ned pauser sänker deras kostnad"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "ett pass med hårt lås pågår: att korta ned upplåsningar sänker deras kostnad"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "ett pass med hårt lås pågår: dess schemapost kan inte försvagas förrän det tar slut"
+  }
+}

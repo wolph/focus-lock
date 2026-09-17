@@ -1,0 +1,897 @@
+{
+  "options_page_title": {
+    "message": "Параметры Focus Lock"
+  },
+  "options_heading": {
+    "message": "Настройки Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "Загружаем настройки"
+  },
+  "options_privacy_loading": {
+    "message": "Загружаем настройки конфиденциальности"
+  },
+  "options_save_failed": {
+    "message": "Не удалось сохранить. Повтори попытку."
+  },
+  "options_blocking_heading": {
+    "message": "Блокировка"
+  },
+  "options_blocking_help": {
+    "message": "Свои правила блокируют в сессиях по чёрному списку. Белый список - это то, что остаётся доступным в сессиях по белому списку. Готовые категории блокируют частые пожиратели времени."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Свой чёрный список"
+  },
+  "options_whitelist_title": {
+    "message": "Белый список"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Готовые категории"
+  },
+  "options_bundled_categories_help": {
+    "message": "Готовые списки частых пожирателей времени. Переключи категорию целиком, затем открой её, чтобы оставить отдельные сайты доступными."
+  },
+  "options_schedule_heading": {
+    "message": "Расписание"
+  },
+  "options_schedule_help": {
+    "message": "Сессии начинаются сами внутри этих окон. Заданная здесь строгость действует на всё окно."
+  },
+  "options_behavior_heading": {
+    "message": "Поведение сессии"
+  },
+  "options_budget_heading": {
+    "message": "Кредит доступа к сайтам"
+  },
+  "options_notifications_heading": {
+    "message": "Уведомления"
+  },
+  "options_privacy_heading": {
+    "message": "Конфиденциальность и данные"
+  },
+  "options_load_error_retry": {
+    "message": "Повторить"
+  },
+  "options_load_error_delete_all": {
+    "message": "Удалить всё и начать заново"
+  },
+  "options_load_error_keep_data": {
+    "message": "Оставить мои данные"
+  },
+  "options_delete_all_data": {
+    "message": "Удалить все данные Focus Lock"
+  },
+  "options_dirty_saving": {
+    "message": "Сохраняем изменения"
+  },
+  "options_dirty_unsaved": {
+    "message": "Несохранённые изменения"
+  },
+  "options_dirty_clean": {
+    "message": "Несохранённых изменений нет"
+  },
+  "options_dirty_discard": {
+    "message": "Отменить изменения"
+  },
+  "options_dirty_save": {
+    "message": "Сохранить изменения"
+  },
+  "options_session_status_label": {
+    "message": "Статус сессии"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "домен"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "регэксп"
+  },
+  "options_rule_remove": {
+    "message": "Удалить"
+  },
+  "options_rule_remove_aria": {
+    "message": "Удалить $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Правил пока нет."
+  },
+  "options_rule_kind_aria": {
+    "message": "Тип правила"
+  },
+  "options_rule_kind_host_option": {
+    "message": "домен или поддомен"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "регэксп (полный URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Шаблон"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "vk.com"
+  },
+  "options_rule_add": {
+    "message": "Добавить правило"
+  },
+  "options_rules_help": {
+    "message": "facebook.com покрывает этот домен и все его поддомены. news.ycombinator.com покрывает этот поддомен и всё под ним. /youtube\\.com\\/shorts/ сопоставляется с полным URL как регулярное выражение."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$: нужно целое число больше нуля.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$: нужно целое число, ноль или больше.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$: нужно значение ноль или больше.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$: значение вне поддерживаемого диапазона минут.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$: значение вне поддерживаемого диапазона дней.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Значения по умолчанию"
+  },
+  "options_session_defaults_help": {
+    "message": "Режим и строгость фиксируются при запуске сессии. Это значения, с которыми открывается форма запуска."
+  },
+  "options_preset_short_label": {
+    "message": "Короткая сессия (минуты)"
+  },
+  "options_preset_default_label": {
+    "message": "Сессия по умолчанию (минуты)"
+  },
+  "options_preset_deep_label": {
+    "message": "Глубокая сессия (минуты)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Чёрный список: блокировать перечисленные сайты"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Белый список: разрешать только перечисленные сайты"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Гибкая: завершай сессию когда захочешь"
+  },
+  "options_strictness_friction_label": {
+    "message": "С задержкой: досрочная остановка проходит через настроенный экран подтверждения"
+  },
+  "options_strictness_hard_label": {
+    "message": "Жёсткая: без досрочного завершения, только временный доступ к сайтам"
+  },
+  "options_cycle_heading": {
+    "message": "Цикл фокуса и перерывов"
+  },
+  "options_cycle_help": {
+    "message": "По умолчанию: фокус 25 минут, перерыв 5 минут, длинный перерыв 15 минут каждый 4-й цикл. В исследованиях на студентах перерывы по расписанию дают лучшее настроение и фокус, чем перерывы по настроению. Точные минуты - это соглашение, а не наука."
+  },
+  "options_cycle_default_label": {
+    "message": "Делить сессию на фокус и перерывы по умолчанию"
+  },
+  "options_focus_minutes_label": {
+    "message": "Минуты фокуса"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Минуты короткого перерыва"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Минуты длинного перерыва"
+  },
+  "options_long_every_label": {
+    "message": "Длинный перерыв каждый N-й цикл"
+  },
+  "options_gate_heading": {
+    "message": "Экран подтверждения"
+  },
+  "options_gate_help": {
+    "message": "Ожидание в 10 секунд с явной кнопкой возврата к работе заметно сокращает импульсивные заходы (полевое исследование, PNAS 2023). Более долгое ожидание и ввод фразы примерно удваивают эффект."
+  },
+  "options_gate_wait_one": {
+    "message": "Ждать $COUNT$ секунду",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Ждать $COUNT$ секунды",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Своё значение"
+  },
+  "options_custom_delay_label": {
+    "message": "Своя задержка (секунды)"
+  },
+  "options_custom_delay_error": {
+    "message": "Своя задержка должна быть целым числом секунд больше нуля."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Также требовать ввод фразы"
+  },
+  "options_gate_force_end_label": {
+    "message": "Показывать кнопку «Пропустить ожидание и завершить»"
+  },
+  "options_credit_help": {
+    "message": "Кредит доступа к сайтам накапливается, пока ты в фокусе. И доступ ко всем сайтам, и разблокировка одного сайта тратят один и тот же баланс. Отойти можно в любой момент, не тратя кредит."
+  },
+  "options_earn_rate_label": {
+    "message": "Минут доступа к сайтам за 30 минут фокуса"
+  },
+  "options_credit_cap_label": {
+    "message": "Лимит кредита доступа (минуты)"
+  },
+  "options_pause_length_label": {
+    "message": "Длительность доступа ко всем сайтам (минуты)"
+  },
+  "options_unlock_length_label": {
+    "message": "Длительность разблокировки сайта (минуты)"
+  },
+  "options_streak_heading": {
+    "message": "Серия и хранение данных"
+  },
+  "options_streak_help": {
+    "message": "Серия считает дни, в которые достигнута цель. Одна обычная сессия сохраняет цепочку, а заморозка чинит пропущенный день."
+  },
+  "options_streak_goal_label": {
+    "message": "Дневная цель серии (минуты фокуса)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Интервал выдачи заморозок (дни)"
+  },
+  "options_retention_label": {
+    "message": "Хранить дневную статистику (дни)"
+  },
+  "options_category_on_announcement": {
+    "message": "Категория $CATEGORY$ включена.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Категория $CATEGORY$ выключена.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Все категории включены."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Все категории выключены."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ включён.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ оставлен доступным.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Все сайты категории $CATEGORY$ включены.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Все сайты категории $CATEGORY$ оставлены доступными.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Массовые действия с категориями"
+  },
+  "options_selected_count": {
+    "message": "Выбрано $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Снято $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Выбрать все"
+  },
+  "options_deselect_all": {
+    "message": "Снять все"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Выбрать все категории"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Снять все категории"
+  },
+  "options_show_category_sites": {
+    "message": "Показать сайты категории $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Скрыть сайты категории $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ сайт включён",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ сайта включено",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Категория выключена"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ сайт при включении",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ сайта при включении",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Сними галочку с сайта, чтобы он остался доступным, пока остальная категория заблокирована."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Массовые действия с сайтами категории $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Выбрать все сайты категории $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Снять все сайты категории $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Сайты категории $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "Вс"
+  },
+  "options_day_mon": {
+    "message": "Пн"
+  },
+  "options_day_tue": {
+    "message": "Вт"
+  },
+  "options_day_wed": {
+    "message": "Ср"
+  },
+  "options_day_thu": {
+    "message": "Чт"
+  },
+  "options_day_fri": {
+    "message": "Пт"
+  },
+  "options_day_sat": {
+    "message": "Сб"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Делить на фокус и перерывы"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Пересекается с другой включённой записью в $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Тип сессии"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Запись расписания"
+  },
+  "options_schedule_start_label": {
+    "message": "Начало"
+  },
+  "options_schedule_end_label": {
+    "message": "Конец"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Длительность"
+  },
+  "options_schedule_intention_label": {
+    "message": "Намерение"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "для чего это время"
+  },
+  "options_schedule_save_entry": {
+    "message": "Сохранить запись"
+  },
+  "options_cancel": {
+    "message": "Отмена"
+  },
+  "options_schedule_empty": {
+    "message": "Запланированных сессий пока нет."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Выбранные дни"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ - $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "чёрный список"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "белый список"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "гибкая"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "с задержкой"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "жёсткая"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Включено"
+  },
+  "options_schedule_edit": {
+    "message": "Изменить"
+  },
+  "options_schedule_delete": {
+    "message": "Удалить"
+  },
+  "options_schedule_add": {
+    "message": "Добавить запись расписания"
+  },
+  "options_sounds_heading": {
+    "message": "Звуки"
+  },
+  "options_master_volume": {
+    "message": "Общая громкость"
+  },
+  "options_sound_session_complete": {
+    "message": "Сессия завершена"
+  },
+  "options_sound_break_start": {
+    "message": "Начало перерыва"
+  },
+  "options_sound_break_end": {
+    "message": "Конец перерыва"
+  },
+  "options_sound_schedule_start": {
+    "message": "Автозапуск по расписанию"
+  },
+  "options_sound_preview_aria": {
+    "message": "Прослушать: $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Играть"
+  },
+  "options_sound_preview_error": {
+    "message": "Не удалось проиграть звук. Повтори попытку."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Уведомления"
+  },
+  "options_session_complete_notification": {
+    "message": "Показывать системное уведомление в конце сессии"
+  },
+  "options_badge_heading": {
+    "message": "Значок"
+  },
+  "options_badge_countdown": {
+    "message": "Показывать оставшееся время на значке панели"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Доступ к сайтам"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Доступ к сайтам выключен"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock не может блокировать сайты, пока ты не дашь доступ."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Включить блокировку сайтов"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Доступ к сайтам предоставлен, но блокировка не активна"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome предоставил доступ, но Focus Lock не смог зарегистрировать свой скрипт блокировки."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Повторить блокировку сайтов"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Блокировка сайтов включена"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock может применять твои активные правила блокировки на обычных страницах сайтов."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Удалить локальную историю?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Подтвердить удаление локальной истории"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Локальная история удалена."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Это навсегда удалит с этого устройства полные URL, намерения для фокуса и подробные события сессий. Это не завершает текущую сессию, которая сохраняет своё намерение и адрес каждой блокируемой вкладки. Завершение сессии очищает намерение и запускает очистку всех открытых вкладок сайтов, а по её завершении удаляются все сохранённые адреса."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Это навсегда удалит с этого устройства полные URL, намерения для фокуса и подробные события сессий, а также локальную сводную статистику. Это не завершает текущую сессию, которая сохраняет своё намерение и адрес каждой блокируемой вкладки. Завершение сессии очищает намерение и запускает очистку всех открытых вкладок сайтов, а по её завершении удаляются все сохранённые адреса."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Удалить данные из Chrome Sync?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Подтвердить удаление данных из Chrome Sync"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Данные из Chrome Sync удалены."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Это навсегда удалит из Chrome Sync настройки, списки блокировки и разрешений, кредит доступа к сайтам, серии и сводки заблокированных попыток по доменам. Локальные настройки и статистика останутся на этом устройстве."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Удалить все данные Focus Lock?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Подтвердить удаление всех данных Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Все данные Focus Lock удалены."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Это навсегда удалит все данные Focus Lock на этом устройстве и все копии Focus Lock, оставшиеся в Chrome Sync:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Удаление всего доступно, только когда не идёт сессия. После этого Focus Lock вернётся к настройке."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Не удалось удалить локальную историю. Повтори попытку."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Не удалось удалить данные из Chrome Sync. Повтори попытку."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Не удалось удалить все данные Focus Lock. Повтори попытку."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync не смог сохранить твои последние изменения. Локальное сохранение в порядке."
+  },
+  "options_privacy_error_request": {
+    "message": "Не удалось выполнить запрос. Повтори попытку."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Доступ к сайтам обновлён."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Доступ к сайтам не предоставлен."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Не удалось обновить доступ к сайтам. Повтори попытку."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Блокировка сайтов включена."
+  },
+  "options_privacy_error_export": {
+    "message": "Не удалось экспортировать журнал событий."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Не удалось экспортировать журнал событий. Повтори попытку."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Не удалось открыть настройки разрешений Chrome. Повтори попытку."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Настройки разрешений Chrome открыты."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Открыть настройки разрешений Chrome"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Синхронизировать данные Focus Lock между устройствами Chrome"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync включён."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync выключен."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync ещё сохраняет твои последние изменения."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync включён."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync выключен."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Изменения сохранены в Chrome Sync."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Повторить включение Chrome Sync"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Повторить Chrome Sync"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Синхронизируется"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Только локально"
+  },
+  "options_privacy_developer_note": {
+    "message": "Разработчику Focus Lock ничего не отправляется."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Локальный журнал событий"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Экспортируй подробный локальный журнал или удали локальную историю просмотров и сессий."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Экспортировать локальный журнал"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Локальный журнал событий экспортирован."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Удалить локальную историю"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Данные в Chrome Sync"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Удали копии Focus Lock, оставшиеся в Chrome Sync, не меняя это устройство."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Удалить данные из Chrome Sync"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Все данные Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Удали все записи Focus Lock на этом устройстве и все копии Focus Lock, оставшиеся в Chrome Sync, затем начни заново с настройки. Доступно, когда не идёт сессия."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Возобновляем удаление всех данных Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Повторить удаление локальной истории"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Повторить удаление данных из Chrome Sync"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Повторить удаление всех данных"
+  },
+  "options_error_load": {
+    "message": "Не удалось загрузить настройки. Перезагрузи страницу и повтори."
+  },
+  "options_error_retry_boot": {
+    "message": "Не удалось перезапустить Focus Lock. Повтори попытку."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Не удалось обновить настройки конфиденциальности. Перезагрузи страницу."
+  },
+  "options_error_website_blocking": {
+    "message": "Не удалось обновить блокировку сайтов. Повтори попытку."
+  },
+  "options_error_change_sync": {
+    "message": "Не удалось изменить Chrome Sync. Повтори попытку."
+  },
+  "options_error_retry_sync": {
+    "message": "Не удалось повторить Chrome Sync. Повтори попытку."
+  },
+  "options_error_save_settings": {
+    "message": "Не удалось сохранить настройки. Перезагрузи страницу и повтори."
+  },
+  "options_error_save_lists": {
+    "message": "Не удалось сохранить списки. Перезагрузи страницу и повтори."
+  },
+  "options_gate_wait_few": {
+    "message": "Ждать $COUNT$ секунды",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_many": {
+    "message": "Ждать $COUNT$ секунд",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_few": {
+    "message": "$COUNT$ сайта включено",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_sites_included_many": {
+    "message": "$COUNT$ сайтов включено",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_few": {
+    "message": "$COUNT$ сайта при включении",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_many": {
+    "message": "$COUNT$ сайтов при включении",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

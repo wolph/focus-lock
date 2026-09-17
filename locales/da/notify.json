@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Fokussession fuldført"
+  },
+  "notify_session_complete_body": {
+    "message": "Din fokussession er slut."
+  },
+  "notify_schedule_window_body": {
+    "message": "Låst indtil $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Fokusplanen kunne ikke starte"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Webstedsblokering er ikke slået til. Fuldfør opsætningen, eller giv webstedsadgang, og prøv så igen."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Opsætningen blev fuldført i en anden fane."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Opsætningen blev ændret i en anden fane. De nyeste valg er indlæst igen."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Opsætningen blev ændret i en anden fane. Genindlæs opsætningen, før du fuldfører."
+  },
+  "notify_setup_not_complete": {
+    "message": "Opsætningen er ikke fuldført."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Opsætningen er ikke klar til at blive fuldført."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Opsætningens lagringsvalg blev ændret. Genindlæs opsætningen, før du fuldfører."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Opsætningens lagringshandling mislykkedes."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Opsætningshandlingen mislykkedes."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock kunne ikke tjekke webstedsadgangen. Prøv opsætningen igen, eller genindlæs udvidelsen."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Webstedsadgang er givet, men Focus Lock kunne ikke slå blokering til. Prøv opsætningen igen, eller genindlæs udvidelsen."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Webstedsadgang er utilgængelig, og Focus Lock kunne ikke afslutte oprydningen af blokeringen. Prøv opsætningen igen, eller genindlæs udvidelsen."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock modtog en modstridende tilstand for webstedsadgang. Prøv opsætningen igen, eller genindlæs udvidelsen."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock blev ikke færdig med at starte: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "ukendt fejl"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock kører, der er intet at nulstille"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock kan ikke nulstille en runtime, der stadig er bundet i en politikgeneration"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Der er intet at prøve igen for sletning af data."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Slå Sync fra, før du sletter synkroniserede data"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock er stadig ved at afslutte en tidligere ændring. Prøv igen om et øjeblik."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Den åbne betænkningstid kunne ikke lukkes. Prøv igen."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Arbejdsfanen er utilgængelig."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Indstillingerne overskrider Chrome Syncs grænse på 8 kB. Fjern poster i tidsplanen, eller forkort hensigter, og prøv så igen."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Listerne overskrider Chrome Syncs grænse på 8 kB. Fjern egne eller tilladte regler, og prøv så igen."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "en session med hård lås kører: blokerede sites kan først fjernes, når den slutter"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "en session med hård lås kører: nye tilladte poster virker først, når den slutter"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "en session med hård lås kører: kategorier kan først slås fra, når den slutter"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "en session med hård lås kører: nye undtagelser virker først, når den slutter"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "en session med hård lås kører: standardstrengheden kan først sænkes, når den slutter"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "en session med hård lås kører: en kortere betænkningstid svækker spærren"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "en session med hård lås kører: uden den indtastede sætning bliver spærren svagere"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "en session med hård lås kører: hurtigere optjent pausekredit finansierer flere undvigelser"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "en session med hård lås kører: en højere pausegrænse finansierer flere undvigelser"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "en session med hård lås kører: kortere pauser gør dem billigere"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "en session med hård lås kører: kortere oplåsninger gør dem billigere"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "en session med hård lås kører: dens post i tidsplanen kan først svækkes, når den slutter"
+  }
+}

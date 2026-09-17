@@ -1,0 +1,611 @@
+{
+  "shared_until_stopped": {
+    "message": "Đến khi dừng"
+  },
+  "shared_preset_short": {
+    "message": "ngắn"
+  },
+  "shared_preset_focus": {
+    "message": "tập trung"
+  },
+  "shared_preset_deep_work": {
+    "message": "chuyên sâu"
+  },
+  "shared_deep_work_note": {
+    "message": "Một sở thích, không phải khoa học: một khối dài liên tục, không có giờ nghỉ tự động."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "Tổng $MINUTES$ phút, với các khối tập trung $FOCUS$ phút",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ phút tập trung liên tục",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Bắt đầu đến khi dừng"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Khóa đến khi tự mở khóa"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Phiên đến khi dừng chỉ giữ mức Linh hoạt hoặc Trì hoãn và không thể dùng chu kỳ tập trung và nghỉ."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Khóa cứng không khả dụng cho phiên đến khi dừng: không có bộ đếm giờ và không thể tự kết thúc, phiên sẽ không bao giờ kết thúc được."
+  },
+  "shared_end_session": {
+    "message": "Kết thúc phiên"
+  },
+  "shared_unlock": {
+    "message": "Mở khóa"
+  },
+  "shared_gate_wait_none": {
+    "message": "không chờ"
+  },
+  "shared_gate_wait": {
+    "message": "thời gian chờ $SECONDS$ giây",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ và một câu gõ xác nhận",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Chạy đến khi bạn kết thúc bằng $LABEL$. Chu kỳ tắt.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Chạy đến khi bạn mở khóa: $REQUIREMENT$, sau đó $LABEL$. Chu kỳ tắt.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Chu kỳ bị vô hiệu do phiên đến khi dừng"
+  },
+  "shared_mode_blacklist": {
+    "message": "Chặn các trang đã chọn"
+  },
+  "shared_mode_whitelist": {
+    "message": "Chỉ cho phép các trang đã chọn"
+  },
+  "shared_focus_time_label": {
+    "message": "Thời gian tập trung"
+  },
+  "shared_clock_focus_phase": {
+    "message": "giai đoạn tập trung"
+  },
+  "shared_clock_total_session": {
+    "message": "tổng phiên"
+  },
+  "shared_clock_pause": {
+    "message": "tạm dừng"
+  },
+  "shared_clock_break": {
+    "message": "giờ nghỉ"
+  },
+  "shared_badge_indefinite": {
+    "message": "BẬT"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock đang khởi động. Đang áp dụng các quy tắc bạn đã chọn."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Phiên đã kết thúc. Đang hoàn tất dọn dẹp trình duyệt."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock không thể khởi động. Đang hoàn tất dọn dẹp trình duyệt."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock không thể dọn dẹp một lần khởi động chưa hoàn tất."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock không thể hoàn tất dọn dẹp trình duyệt."
+  },
+  "shared_retry_cleanup": {
+    "message": "Thử dọn dẹp lại"
+  },
+  "shared_end_failed": {
+    "message": "Không thể kết thúc phiên. Hãy thử lại."
+  },
+  "shared_retry_failed": {
+    "message": "Không thể thử dọn dẹp lại. Hãy thử lại."
+  },
+  "shared_action_failed": {
+    "message": "Không thể yêu cầu thao tác đó. Hãy thử lại."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Không thể quay lại làm việc. Hãy thử lại."
+  },
+  "shared_data_clear_pending": {
+    "message": "Đang xóa dữ liệu Focus Lock. Đang hoàn tất dọn dẹp."
+  },
+  "shared_data_clear_error": {
+    "message": "Không thể xóa dữ liệu. Hãy thử lại."
+  },
+  "shared_schedule_window_label": {
+    "message": "Đến khi hết khung giờ"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Bắt đầu theo lịch và chạy đến khi bạn dừng: Kết thúc phiên cho mức Linh hoạt, Mở khóa qua cổng cân nhắc cho mức Trì hoãn. Chu kỳ tắt."
+  },
+  "shared_schedule_started_title": {
+    "message": "Lịch tập trung đã bắt đầu"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Đang hoạt động đến khi bạn dừng."
+  },
+  "shared_settings_indefinite": {
+    "message": "Phiên đến khi dừng đang hoạt động. Hãy dùng popup trên thanh công cụ để xem hoặc kết thúc phiên."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock đang khởi động. Đang kiểm tra quyền truy cập trang web và áp dụng các quy tắc của bạn."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock không thể hoàn tất dọn dẹp trình duyệt. Hãy mở popup và thử lại."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Popup trên thanh công cụ quản lý các điều khiển phiên. Phiên đang hoạt động giữ nguyên các quy tắc đã ghi nhận khi bắt đầu."
+  },
+  "shared_settings_timed": {
+    "message": "Phiên có hẹn giờ đang hoạt động đến $TIME$. Phiên sẽ tự động kết thúc. Hãy dùng popup trên thanh công cụ để xem trạng thái trực tiếp.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Đã hoàn tất"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Đã hoàn tất thủ công"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Kết thúc sớm"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Kết thúc: mất quyền truy cập trang web"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Kết thúc: thiết lập chặn thất bại"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Kết thúc: thiết lập hẹn giờ thất bại"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Kết thúc: áp dụng chặn trên trang thất bại"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Kết thúc: khôi phục thất bại"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ ph",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ ph",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ ph",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ ph",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Đang cập nhật phiên"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Dưới một phút"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ nữa đến giờ nghỉ",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ còn lại trong phiên này",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Chi phí vượt quá giới hạn tín dụng"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Việc tích lũy tín dụng tiếp tục khi tập trung"
+  },
+  "shared_credit_off": {
+    "message": "Tích lũy tín dụng đang tắt"
+  },
+  "shared_not_enough_time": {
+    "message": "Không đủ thời gian trong khối tập trung này"
+  },
+  "shared_ready_in": {
+    "message": "Sẵn sàng sau $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Bị chặn bởi $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Bị chặn bởi danh sách chặn của bạn"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Không có trong danh sách cho phép của bạn"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Bị chặn bởi phiên này"
+  },
+  "shared_verdict_allow_list": {
+    "message": "Có trong danh sách cho phép của bạn"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Luôn được cho phép"
+  },
+  "shared_verdict_unlock": {
+    "message": "Đã mở khóa tạm thời"
+  },
+  "shared_verdict_excluded": {
+    "message": "Được loại trừ khỏi một danh mục đã chọn"
+  },
+  "shared_verdict_no_session": {
+    "message": "Không có phiên tập trung nào đang hoạt động"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Được cho phép bởi phiên này"
+  },
+  "shared_category_social": {
+    "message": "Mạng xã hội"
+  },
+  "shared_category_video": {
+    "message": "Video và phát trực tuyến"
+  },
+  "shared_category_news": {
+    "message": "Tin tức"
+  },
+  "shared_category_mail": {
+    "message": "Email"
+  },
+  "shared_category_shopping": {
+    "message": "Mua sắm"
+  },
+  "shared_category_gaming": {
+    "message": "Trò chơi"
+  },
+  "shared_category_forums": {
+    "message": "Diễn đàn và tiêu khiển"
+  },
+  "shared_synced_settings": {
+    "message": "Cài đặt"
+  },
+  "shared_synced_lists": {
+    "message": "Danh sách chặn và cho phép"
+  },
+  "shared_synced_credit": {
+    "message": "Tín dụng truy cập trang web"
+  },
+  "shared_synced_streaks": {
+    "message": "Chuỗi ngày"
+  },
+  "shared_synced_aggregates": {
+    "message": "Số liệu tổng hợp lượt bị chặn theo tên miền"
+  },
+  "shared_local_full_urls": {
+    "message": "URL đầy đủ"
+  },
+  "shared_local_intentions": {
+    "message": "Ý định tập trung"
+  },
+  "shared_local_events": {
+    "message": "Sự kiện phiên chi tiết"
+  },
+  "shared_local_runtime": {
+    "message": "Trạng thái phiên đang hoạt động"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Một số dữ liệu đồng bộ hóa từ phiên bản cũ hơn không thể đọc được và đã được đặt lại."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Hãy kết thúc phiên đang chạy trước khi xóa toàn bộ dữ liệu."
+  },
+  "shared_nav_product": {
+    "message": "Điều hướng sản phẩm"
+  },
+  "shared_nav_overview": {
+    "message": "Tổng quan"
+  },
+  "shared_nav_settings": {
+    "message": "Cài đặt"
+  },
+  "shared_section_blocking": {
+    "message": "Chặn"
+  },
+  "shared_section_schedule": {
+    "message": "Lịch trình"
+  },
+  "shared_section_behavior": {
+    "message": "Hành vi phiên"
+  },
+  "shared_section_budget": {
+    "message": "Tín dụng truy cập trang web"
+  },
+  "shared_section_notifications": {
+    "message": "Thông báo"
+  },
+  "shared_section_privacy": {
+    "message": "Quyền riêng tư và dữ liệu"
+  },
+  "shared_theme_auto": {
+    "message": "Tự động"
+  },
+  "shared_theme_light": {
+    "message": "Sáng"
+  },
+  "shared_theme_dark": {
+    "message": "Tối"
+  },
+  "shared_theme_button": {
+    "message": "Giao diện: $CURRENT$. Chuyển sang $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Không thể lưu giao diện. Hãy tải lại trang rồi thử lại."
+  },
+  "shared_host_search_label": {
+    "message": "Tìm trang web của $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Không có trang web nào của $TITLE$ khớp với tìm kiếm của bạn.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Đang hiện $SHOWN$/$MATCHED$ trang web. Hãy tìm kiếm để thu hẹp danh sách.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Đang hiện $MATCHED$/$TOTAL$ trang web.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Đang hiện tất cả $TOTAL$ trang web.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Kết thúc phiên"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock đang khởi động"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Đang áp dụng các quy tắc bạn đã chọn."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Trang này chưa tải. Trang sẽ tự tải lại khi phiên kết thúc."
+  },
+  "shared_overlay_next_step": {
+    "message": "Bước tiếp theo của bạn"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Quay lại làm việc"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Chọn một tab công việc"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Đổi tab công việc"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Cần nghỉ hay truy cập trang web?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Bạn có thể tạm rời đi bất cứ lúc nào. Truy cập trang web sẽ dùng tín dụng."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Bỏ qua thời gian chờ và vẫn kết thúc"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock không thể cập nhật thao tác này. Hãy thử lại."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ tín dụng truy cập trang web",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Tiếp tục công việc hiện tại của bạn"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Mở khóa tất cả trang web"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Mở khóa trang này"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - tốn $COST$ tín dụng",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Khóa đến $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Bạn đã viết: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Mở khóa $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Tiếp tục tập trung"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Gõ câu này để xác nhận:"
+  },
+  "shared_gate_end_title": {
+    "message": "Kết thúc phiên này"
+  }
+}

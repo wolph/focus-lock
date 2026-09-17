@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Фокус-сессия завершена"
+  },
+  "notify_session_complete_body": {
+    "message": "Твоя фокус-сессия закончилась."
+  },
+  "notify_schedule_window_body": {
+    "message": "Заблокировано до $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Не удалось запустить сессию по расписанию"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Блокировка сайтов не включена. Заверши настройку или предоставь доступ к сайтам, затем повтори попытку."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Настройка была завершена в другой вкладке."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Настройка изменилась в другой вкладке. Последние варианты перезагружены."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Настройка изменилась в другой вкладке. Перезагрузи её перед завершением."
+  },
+  "notify_setup_not_complete": {
+    "message": "Настройка не завершена."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Настройка ещё не готова к завершению."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Выбор хранилища изменился. Перезагрузи настройку перед завершением."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Не удалось выполнить операцию с хранилищем настройки."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Не удалось выполнить операцию настройки."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock не смог проверить доступ к сайтам. Повтори настройку или перезагрузи расширение."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Доступ к сайтам предоставлен, но Focus Lock не смог включить блокировку. Повтори настройку или перезагрузи расширение."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Доступ к сайтам недоступен, и Focus Lock не смог завершить снятие блокировки. Повтори настройку или перезагрузи расширение."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock получил противоречивое состояние доступа к сайтам. Повтори настройку или перезагрузи расширение."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock не завершил запуск: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "неизвестная ошибка"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock работает, сбрасывать нечего"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock не может сбросить состояние, которое всё ещё записано внутри поколения настроек"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Повтор удаления данных недоступен."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Отключи синхронизацию перед удалением синхронизированных данных"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock ещё завершает предыдущее изменение. Повтори попытку через мгновение."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Не удалось закрыть открытый экран подтверждения. Повтори попытку."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Рабочая вкладка недоступна."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Настройки превышают лимит Chrome Sync в 8 КБ. Удали записи расписания или сократи намерения, затем повтори попытку."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Списки превышают лимит Chrome Sync в 8 КБ. Удали свои правила или правила списка разрешений, затем повтори попытку."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "идёт жёсткая сессия: удаление заблокированных сайтов разблокирует их после её окончания"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "идёт жёсткая сессия: новые записи списка разрешений разблокируют доступ после её окончания"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "идёт жёсткая сессия: отключение категорий разблокирует их после её окончания"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "идёт жёсткая сессия: новые исключения разблокируют доступ после её окончания"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "идёт жёсткая сессия: ослабление строгости по умолчанию подождёт до её окончания"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "идёт жёсткая сессия: сокращение задержки на обдумывание ослабляет экран подтверждения"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "идёт жёсткая сессия: отказ от ввода фразы ослабляет экран подтверждения"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "идёт жёсткая сессия: повышение скорости начисления кредита финансирует больше побегов"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "идёт жёсткая сессия: повышение лимита кредита финансирует больше побегов"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "идёт жёсткая сессия: сокращение пауз снижает их стоимость"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "идёт жёсткая сессия: сокращение разблокировок снижает их стоимость"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "идёт жёсткая сессия: её запись расписания нельзя ослабить до окончания"
+  }
+}

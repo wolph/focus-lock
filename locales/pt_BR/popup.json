@@ -22,7 +22,7 @@
     "message": "Não foi possível carregar as configurações da sessão. Recarregue o popup para tentar de novo. Os valores padrão estão sendo exibidos."
   },
   "popup_open_setup_failed": {
-    "message": "Não foi possível abrir a configuração inicial. Tente de novo."
+    "message": "Não foi possível abrir a configuração. Tente de novo."
   },
   "popup_setup_required_heading": {
     "message": "Conclua a configuração do Focus Lock"
@@ -179,6 +179,9 @@
   },
   "popup_add_allowed_domain_label": {
     "message": "Adicionar um domínio permitido"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "documentos.example.com"
   },
   "popup_add_allowed_domain_button": {
     "message": "Adicionar domínio permitido"
@@ -338,6 +341,24 @@
       "CATEGORY": {
         "content": "$1",
         "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ site bloqueado",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ sites bloqueados",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
       }
     }
   },
@@ -568,7 +589,7 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "Informe um domínio válido, como docs.example.com."
+    "message": "Informe um domínio válido, como documentos.example.com."
   },
   "popup_work_tabs_unavailable": {
     "message": "Não foi possível carregar as abas de trabalho. Reabra o popup para tentar de novo."
@@ -607,7 +628,7 @@
     "message": "Não foi possível começar a sessão. Tente de novo."
   },
   "popup_sites_many": {
-    "message": "$COUNT$ sites",
+    "message": "$COUNT$ sites bloqueados",
     "placeholders": {
       "COUNT": {
         "content": "$1",

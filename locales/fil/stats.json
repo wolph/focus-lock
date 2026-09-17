@@ -2,6 +2,9 @@
   "stats_loading": {
     "message": "Nag-load your stats."
   },
+  "stats_scope_unavailable": {
+    "message": "Mga Istatistika scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from this machine."
+  },
   "stats_scope_retry": {
     "message": "Subukan Muli scope check"
   },
@@ -24,7 +27,7 @@
     "message": "Your streak starts with your first focus araw."
   },
   "stats_streak_unit_one": {
-    "message": "araw"
+    "message": "day"
   },
   "stats_streak_unit_other": {
     "message": "araws"
@@ -65,10 +68,10 @@
     "message": "Focus minutos appear after your first session."
   },
   "stats_chart_attempts_heading": {
-    "message": "Hadlanged attempts, last 14 araws"
+    "message": "Nahanggang attempts, last 14 days"
   },
   "stats_chart_attempts_empty": {
-    "message": "Hadlanged attempts show up here once a session catches one."
+    "message": "Nahanggang attempts show up here once a session catches one."
   },
   "stats_chart_sites_heading": {
     "message": "Top blocked sites, last 30 araws"
@@ -111,6 +114,9 @@
         "example": "thesis chapter"
       }
     }
+  },
+  "stats_outcome_completed": {
+    "message": "Nakumpleto"
   },
   "stats_outcome_ended_early": {
     "message": "Tapusined early"

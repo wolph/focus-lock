@@ -1,24 +1,76 @@
 {
   "onboarding_page_title": {
-    "message": "Set up Fokus Lock"
+    "message": "Siapkan Focus Lock"
   },
   "onboarding_eyebrow": {
-    "message": "Fokus Lock setup"
+    "message": "Penyiapan Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Langkah $STEP$ dari $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
   },
   "onboarding_recovery_notice": {
-    "message": "Your saved setup progress could not be restored. Mulaiing again with your current defaults."
+    "message": "Kemajuan penyiapan yang tersimpan tidak dapat dipulihkan. Memulai lagi dengan default saat ini."
   },
   "onboarding_complete_heading": {
-    "message": "Penyiapan complete"
+    "message": "Penyiapan selesai"
   },
   "onboarding_complete_body": {
-    "message": "Your choices are saved. Buka Fokus Lock from the Chrome toolbar to start a session."
+    "message": "Pilihan Anda disimpan. Buka Focus Lock dari toolbar Chrome untuk memulai sesi."
   },
   "onboarding_error_heading": {
-    "message": "Penyiapan unavailable"
+    "message": "Penyiapan tidak tersedia"
+  },
+  "onboarding_error_body": {
+    "message": "Tidak dapat memuat penyiapan. Coba lagi."
   },
   "onboarding_retry_button": {
     "message": "Coba Ulang"
+  },
+  "onboarding_save_error": {
+    "message": "Tidak dapat menyimpan kemajuan penyiapan. Coba lagi."
+  },
+  "onboarding_enable_error": {
+    "message": "Tidak dapat mengaktifkan penyekatan laman web. Coba lagi."
+  },
+  "onboarding_finish_error": {
+    "message": "Tidak dapat menyelesaikan penyiapan. Pilihan Anda masih disimpan. Coba lagi."
+  },
+  "onboarding_lists_heading": {
+    "message": "Pilih daftar blokir awal Anda"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Di $MODE$, kategori yang diaktifkan dan situs yang diblokir tambahan tidak tersedia.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Di $MODE$, setiap situs tidak tersedia kecuali daftar izin Anda.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Pilihan ini menjadi default untuk sesi masa depan. Anda dapat mengeditnya nanti."
+  },
+  "onboarding_lists_legend": {
+    "message": "Kategori laman web yang direkomendasikan"
   },
   "onboarding_site_count_one": {
     "message": "$COUNT$ situs",
@@ -30,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ situss",
+    "message": "$COUNT$ situs",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -39,7 +91,7 @@
     }
   },
   "onboarding_show_category_sites": {
-    "message": "Tampilkan $CATEGORY$ sites",
+    "message": "Tampilkan situs $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -48,7 +100,16 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "Sembunyikan $CATEGORY$ sites",
+    "message": "Sembunyikan situs $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Domain $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -60,24 +121,57 @@
     "message": "Lanjutkan"
   },
   "onboarding_access_heading": {
-    "message": "Aktifkan website blocking"
+    "message": "Aktifkan penyekatan laman web"
   },
   "onboarding_access_local_matching": {
-    "message": "Fokus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your session ends."
+    "message": "Focus Lock memeriksa alamat halaman secara lokal sehingga dapat mencocokkan kategori pilihan Anda dan situs. Ini menggunakan akses laman web untuk menampilkan layar penyekatan dan memulihkan halaman yang terkena dampak saat sesi Anda berakhir."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategori dan domain khusus dapat menyertakan situs web apa pun. Chrome karena itu akan meminta kemampuan ini:"
+  },
+  "onboarding_access_capability": {
+    "message": "Baca dan ubah semua data Anda di semua situs web"
   },
   "onboarding_access_scope_note": {
-    "message": "Fokus Lock uses that access only while applying your blocking rules."
+    "message": "Focus Lock menggunakan akses itu hanya saat menerapkan aturan penyekatan Anda."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome tidak memberikan akses laman web. Anda dapat mencoba lagi."
   },
   "onboarding_access_registration_error": {
-    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+    "message": "Akses laman web diberikan, tetapi Focus Lock tidak dapat mengaktifkan penyekatan. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "onboarding_access_enable_button": {
-    "message": "Aktifkan website blocking"
+    "message": "Aktifkan penyekatan laman web"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Bukan sekarang"
+  },
+  "onboarding_sync_heading": {
+    "message": "Pilih di mana pengaturan Anda disimpan"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Sinkronisasi di seluruh perangkat Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Data yang disetujui di bawah akan menggunakan Sinkronisasi Chrome setelah Anda menyelesaikan penyiapan."
   },
   "onboarding_sync_disabled_note": {
-    "message": "All Fokus Lock data stays in this Chrome profile."
+    "message": "Semua data Focus Lock tetap berada di profil Chrome ini."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Disinkronkan"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Hanya lokal"
   },
   "onboarding_sync_developer_note": {
-    "message": "Nothing is sent to the Fokus Lock developer."
+    "message": "Tidak ada yang dikirim ke pengembang Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Selesaikan penyiapan dengan sinkronisasi diaktifkan"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Selesaikan penyiapan tanpa sinkronisasi"
   }
 }

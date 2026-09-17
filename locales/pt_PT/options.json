@@ -83,6 +83,9 @@
   "options_rule_kind_host_badge": {
     "message": "domínio"
   },
+  "options_rule_kind_regex_badge": {
+    "message": "expr. reg."
+  },
   "options_rule_remove": {
     "message": "Remover"
   },
@@ -105,10 +108,16 @@
     "message": "domínio ou subdomínio"
   },
   "options_rule_kind_regex_option": {
-    "message": "regex (URL completo)"
+    "message": "expressão regular (URL completo)"
   },
   "options_rule_pattern_aria": {
     "message": "Padrão"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "instagram.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/instagram\\.com\\/reels/"
   },
   "options_rule_add": {
     "message": "Adicionar regra"
@@ -670,10 +679,10 @@
     "message": "Confirmar a eliminação dos dados remotos do Sync"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Dados remotos do Chrome Sync eliminados."
+    "message": "Dados remotos da Sincronização do Chrome eliminados."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "Isto elimina definitivamente do Chrome Sync as definições remotas, as listas de bloqueio e de permitidos, o crédito de acesso a sites, as sequências e os totais de tentativas bloqueadas por domínio. As definições e as estatísticas locais ficam neste dispositivo."
+    "message": "Isto elimina definitivamente da Sincronização do Chrome as definições remotas, as listas de bloqueio e de permitidos, o crédito de acesso a sites, as sequências e os totais de tentativas bloqueadas por domínio. As definições e as estatísticas locais ficam neste dispositivo."
   },
   "options_privacy_confirm_all_title": {
     "message": "Eliminar todos os dados do Focus Lock?"
@@ -685,7 +694,7 @@
     "message": "Todos os dados do Focus Lock foram eliminados."
   },
   "options_privacy_all_body_intro": {
-    "message": "Isto elimina definitivamente todos os dados do Focus Lock neste dispositivo e qualquer cópia do Focus Lock deixada no Chrome Sync:"
+    "message": "Isto elimina definitivamente todos os dados do Focus Lock neste dispositivo e qualquer cópia do Focus Lock deixada na Sincronização do Chrome:"
   },
   "options_privacy_all_body_outro": {
     "message": "Eliminar tudo só está disponível enquanto não houver nenhuma sessão a decorrer. Depois disso, o Focus Lock volta à configuração inicial."
@@ -694,13 +703,13 @@
     "message": "Não foi possível eliminar o histórico local. Tenta novamente."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Não foi possível eliminar os dados remotos do Chrome Sync. Tenta novamente."
+    "message": "Não foi possível eliminar os dados remotos da Sincronização do Chrome. Tenta novamente."
   },
   "options_privacy_error_all_clear": {
     "message": "Não foi possível eliminar todos os dados do Focus Lock. Tenta novamente."
   },
   "options_privacy_error_sync_write": {
-    "message": "O Chrome Sync não conseguiu guardar as tuas últimas alterações. A tua cópia local está segura."
+    "message": "A Sincronização do Chrome não conseguiu guardar as tuas últimas alterações. A tua cópia local está segura."
   },
   "options_privacy_error_request": {
     "message": "Não foi possível concluir o pedido. Tenta novamente."
@@ -732,32 +741,35 @@
   "options_privacy_open_chrome_settings": {
     "message": "Abrir as definições de autorizações do Chrome"
   },
+  "options_privacy_sync_heading": {
+    "message": "Sincronização do Chrome"
+  },
   "options_privacy_sync_switch_label": {
     "message": "Sincronizar os dados do Focus Lock entre dispositivos com o Chrome"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync ativado."
+    "message": "Sincronização do Chrome ativada."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync desativado."
+    "message": "Sincronização do Chrome desativada."
   },
   "options_privacy_sync_saving": {
-    "message": "O Chrome Sync ainda está a guardar as tuas últimas alterações."
+    "message": "A Sincronização do Chrome ainda está a guardar as tuas últimas alterações."
   },
   "options_privacy_sync_on": {
-    "message": "O Chrome Sync está ligado."
+    "message": "A Sincronização do Chrome está ligada."
   },
   "options_privacy_sync_off": {
-    "message": "O Chrome Sync está desligado."
+    "message": "A Sincronização do Chrome está desligada."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Alterações guardadas no Chrome Sync."
+    "message": "Alterações guardadas na Sincronização do Chrome."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Repetir a ativação do Chrome Sync"
+    "message": "Repetir a ativação da Sincronização do Chrome"
   },
   "options_privacy_retry_sync": {
-    "message": "Repetir o Chrome Sync"
+    "message": "Repetir a Sincronização do Chrome"
   },
   "options_privacy_scope_synced": {
     "message": "Sincronizados"
@@ -787,7 +799,7 @@
     "message": "Dados remotos do Sync"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Elimina as cópias do Focus Lock deixadas no Chrome Sync sem mexer neste dispositivo."
+    "message": "Elimina as cópias do Focus Lock deixadas na Sincronização do Chrome sem mexer neste dispositivo."
   },
   "options_privacy_delete_remote_data": {
     "message": "Eliminar os dados remotos do Sync"
@@ -796,7 +808,7 @@
     "message": "Todos os dados do Focus Lock"
   },
   "options_privacy_all_data_detail": {
-    "message": "Elimina todos os registos do Focus Lock neste dispositivo e qualquer cópia deixada no Chrome Sync, e recomeça a partir da configuração. Disponível enquanto não houver nenhuma sessão a decorrer."
+    "message": "Elimina todos os registos do Focus Lock neste dispositivo e qualquer cópia deixada na Sincronização do Chrome, e recomeça a partir da configuração. Disponível enquanto não houver nenhuma sessão a decorrer."
   },
   "options_privacy_resuming_all_clear": {
     "message": "A retomar a eliminação de todos os dados do Focus Lock."
@@ -823,10 +835,10 @@
     "message": "Não foi possível atualizar o bloqueio de sites. Tenta novamente."
   },
   "options_error_change_sync": {
-    "message": "Não foi possível alterar o Chrome Sync. Tenta novamente."
+    "message": "Não foi possível alterar a Sincronização do Chrome. Tenta novamente."
   },
   "options_error_retry_sync": {
-    "message": "Não foi possível repetir o Chrome Sync. Tenta novamente."
+    "message": "Não foi possível repetir a Sincronização do Chrome. Tenta novamente."
   },
   "options_error_save_settings": {
     "message": "Não foi possível guardar as definições. Recarrega a página e tenta novamente."

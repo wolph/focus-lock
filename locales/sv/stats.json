@@ -1,0 +1,317 @@
+{
+  "stats_document_title": {
+    "message": "Focus Lock-statistik"
+  },
+  "stats_page_title": {
+    "message": "Ditt fokusresultat"
+  },
+  "stats_loading": {
+    "message": "Läser in din statistik."
+  },
+  "stats_load_error": {
+    "message": "Kunde inte läsa in statistiken. Läs in sidan på nytt för att försöka igen."
+  },
+  "stats_partial_error_both": {
+    "message": "Blockerade försök per timme och inställningar för åtkomstkredit är inte tillgängliga."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Blockerade försök per timme är inte tillgängliga."
+  },
+  "stats_partial_error_economy": {
+    "message": "Inställningarna för åtkomstkredit är inte tillgängliga."
+  },
+  "stats_scope_synced": {
+    "message": "Synkroniserade totaler från det här Chrome-kontot. Paneler som bara är lokala är märkta."
+  },
+  "stats_scope_local": {
+    "message": "Totaler från den här datorn. Statistiken i Focus Lock synkroniseras inte."
+  },
+  "stats_scope_checking": {
+    "message": "Kontrollerar om de här totalerna är synkroniserade."
+  },
+  "stats_scope_unavailable": {
+    "message": "Statistikens omfattning är okänd. Totalerna kan innehålla synkroniserade data. Blockerade försök per timme och senaste pass kommer från den här datorn."
+  },
+  "stats_scope_retry": {
+    "message": "Kontrollera omfattningen igen"
+  },
+  "stats_empty": {
+    "message": "Statistiken visas efter ditt första pass."
+  },
+  "stats_tile_focus_today": {
+    "message": "Fokus i dag"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Fokus de senaste 7 dagarna"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Blockerade försök i dag"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Avfärdade spärrförfrågningar i dag"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Åtkomstkredit spenderad i dag"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Alla webbplatser $ALL_SITES$, en webbplats $ONE_SITE$, $EARNED$ intjänat",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ intjänat",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Svit"
+  },
+  "stats_streak_empty": {
+    "message": "Din svit börjar med din första fokusdag."
+  },
+  "stats_streak_unit_one": {
+    "message": "dag"
+  },
+  "stats_streak_unit_other": {
+    "message": "dagar"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ frysmarker i banken",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ frysmarker i banken",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Svitfrysning: en missad dag, täckt"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktiv dag den här månaden ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktiva dagar den här månaden ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktiva datum i $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Inga aktiva datum i $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Fokus, senaste 14 dagarna"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Fokusminuter visas efter ditt första pass."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Blockerade försök, senaste 14 dagarna"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Blockerade försök dyker upp här när ett pass fångar ett."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Mest blockerade webbplatser, senaste 30 dagarna"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Inget blockerat ännu. Det är en fin början."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Försök per timme, bara den här datorn"
+  },
+  "stats_chart_other_site": {
+    "message": "övrigt"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blockerat",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blockerade",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Stapeldiagram"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Liggande stapeldiagram"
+  },
+  "stats_chart_description_bar": {
+    "message": "Stapeldiagram. Använd tangentbordet för att stega genom datapunkterna, eller öppna Visa som tabell för samma värden."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Liggande stapeldiagram. Använd tangentbordet för att stega genom datapunkterna, eller öppna Visa som tabell för samma värden."
+  },
+  "stats_chart_empty_default": {
+    "message": "Inga data ännu."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "Visa som tabell"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategori"
+  },
+  "stats_chart_table_value": {
+    "message": "Värde"
+  },
+  "stats_heat_strip_label": {
+    "message": "Värmeremsa över blockerade försök per dygnstimme"
+  },
+  "stats_sessions_heading": {
+    "message": "Senaste passen på den här datorn"
+  },
+  "stats_sessions_empty": {
+    "message": "Ditt första pass dyker upp här."
+  },
+  "stats_sessions_col_date": {
+    "message": "Datum"
+  },
+  "stats_sessions_col_start": {
+    "message": "Början"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planerat"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Fokuserat"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Alla webbplatser"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "En webbplats"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Avsikt"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Utfall"
+  },
+  "stats_sessions_col_source": {
+    "message": "Källa"
+  },
+  "stats_session_no_intention": {
+    "message": "Ingen avsikt"
+  },
+  "stats_session_article_label": {
+    "message": "Pass: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "manuellt"
+  },
+  "stats_session_source_schedule": {
+    "message": "schema"
+  },
+  "stats_session_source_scheduled": {
+    "message": "schemalagt"
+  },
+  "stats_outcome_completed": {
+    "message": "Slutfört"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Avslutat i förtid"
+  },
+  "stats_outcome_running": {
+    "message": "Pågår"
+  }
+}

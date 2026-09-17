@@ -1,0 +1,840 @@
+{
+  "options_page_title": {
+    "message": "Tùy chọn Focus Lock"
+  },
+  "options_heading": {
+    "message": "Cài đặt Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "Đang tải cài đặt"
+  },
+  "options_privacy_loading": {
+    "message": "Đang tải cài đặt quyền riêng tư"
+  },
+  "options_save_failed": {
+    "message": "Không thể lưu. Hãy thử lại."
+  },
+  "options_blocking_heading": {
+    "message": "Chặn"
+  },
+  "options_blocking_help": {
+    "message": "Quy tắc tùy chỉnh chặn trong phiên danh sách chặn. Danh sách cho phép là những gì vẫn truy cập được trong phiên danh sách cho phép. Danh mục có sẵn chặn các trang web gây mất thời gian phổ biến."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Danh sách chặn tùy chỉnh"
+  },
+  "options_whitelist_title": {
+    "message": "Danh sách cho phép"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Danh mục có sẵn"
+  },
+  "options_bundled_categories_help": {
+    "message": "Danh sách có sẵn cho các trang gây mất thời gian phổ biến. Bật/tắt cả danh mục, sau đó mở ra để giữ một số trang riêng lẻ vẫn truy cập được."
+  },
+  "options_schedule_heading": {
+    "message": "Lịch trình"
+  },
+  "options_schedule_help": {
+    "message": "Các phiên sẽ tự động bắt đầu trong những khung giờ này. Mức độ nghiêm ngặt đặt ở đây áp dụng cho toàn bộ khung giờ."
+  },
+  "options_behavior_heading": {
+    "message": "Hành vi phiên"
+  },
+  "options_budget_heading": {
+    "message": "Tín dụng truy cập trang web"
+  },
+  "options_notifications_heading": {
+    "message": "Thông báo"
+  },
+  "options_privacy_heading": {
+    "message": "Quyền riêng tư và dữ liệu"
+  },
+  "options_load_error_retry": {
+    "message": "Thử lại"
+  },
+  "options_load_error_delete_all": {
+    "message": "Xóa tất cả và bắt đầu lại"
+  },
+  "options_load_error_keep_data": {
+    "message": "Giữ lại dữ liệu của tôi"
+  },
+  "options_delete_all_data": {
+    "message": "Xóa toàn bộ dữ liệu Focus Lock"
+  },
+  "options_dirty_saving": {
+    "message": "Đang lưu thay đổi"
+  },
+  "options_dirty_unsaved": {
+    "message": "Có thay đổi chưa lưu"
+  },
+  "options_dirty_clean": {
+    "message": "Không có thay đổi chưa lưu"
+  },
+  "options_dirty_discard": {
+    "message": "Hủy thay đổi"
+  },
+  "options_dirty_save": {
+    "message": "Lưu thay đổi"
+  },
+  "options_session_status_label": {
+    "message": "Trạng thái phiên"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "tên miền"
+  },
+  "options_rule_remove": {
+    "message": "Xóa"
+  },
+  "options_rule_remove_aria": {
+    "message": "Xóa $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Chưa có quy tắc nào."
+  },
+  "options_rule_kind_aria": {
+    "message": "Loại quy tắc"
+  },
+  "options_rule_kind_host_option": {
+    "message": "tên miền hoặc miền con"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (toàn bộ URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Mẫu"
+  },
+  "options_rule_add": {
+    "message": "Thêm quy tắc"
+  },
+  "options_rules_help": {
+    "message": "facebook.com bao gồm tên miền đó và mọi miền con. news.ycombinator.com bao gồm miền con đó và mọi thứ bên dưới nó. /youtube\\.com\\/shorts/ khớp với toàn bộ URL dưới dạng biểu thức chính quy."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ phải là số nguyên dương.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ phải là số nguyên từ 0 trở lên.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ phải từ 0 trở lên.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ phải nằm trong phạm vi số phút được hỗ trợ.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ phải nằm trong phạm vi số ngày được hỗ trợ.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Mặc định phiên"
+  },
+  "options_session_defaults_help": {
+    "message": "Chế độ và mức độ nghiêm ngặt được cố định khi phiên bắt đầu. Đây là các giá trị mà biểu mẫu bắt đầu sẽ mở với."
+  },
+  "options_preset_short_label": {
+    "message": "Mốc phiên ngắn (phút)"
+  },
+  "options_preset_default_label": {
+    "message": "Mốc phiên mặc định (phút)"
+  },
+  "options_preset_deep_label": {
+    "message": "Mốc phiên chuyên sâu (phút)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Danh sách chặn: chặn các trang trong danh sách"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Danh sách cho phép: chỉ cho phép các trang trong danh sách"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Linh hoạt: kết thúc phiên bất cứ khi nào bạn muốn"
+  },
+  "options_strictness_friction_label": {
+    "message": "Trì hoãn: dừng sớm sẽ phải qua cổng cân nhắc đã cấu hình"
+  },
+  "options_strictness_hard_label": {
+    "message": "Cứng: không thể kết thúc sớm, chỉ có quyền truy cập trang web tạm thời"
+  },
+  "options_cycle_heading": {
+    "message": "Chu kỳ tập trung và nghỉ"
+  },
+  "options_cycle_help": {
+    "message": "Mặc định: 25 phút tập trung, 5 phút nghỉ, 15 phút nghỉ dài sau mỗi 4 chu kỳ. Nghỉ theo lịch cố định giúp tâm trạng và khả năng tập trung tốt hơn so với nghỉ tùy hứng trong các mẫu nghiên cứu. Số phút cụ thể chỉ là quy ước, không phải khoa học."
+  },
+  "options_cycle_default_label": {
+    "message": "Mặc định dùng chu kỳ tập trung và nghỉ"
+  },
+  "options_focus_minutes_label": {
+    "message": "Số phút tập trung"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Số phút nghỉ ngắn"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Số phút nghỉ dài"
+  },
+  "options_long_every_label": {
+    "message": "Nghỉ dài sau mỗi N chu kỳ"
+  },
+  "options_gate_heading": {
+    "message": "Cổng cân nhắc"
+  },
+  "options_gate_help": {
+    "message": "Thời gian chờ 10 giây kèm nút quay lại làm việc rõ ràng giúp giảm đáng kể các lượt truy cập bốc đồng (nghiên cứu thực địa, PNAS 2023). Thời gian chờ dài hơn và câu gõ xác nhận làm tăng hiệu quả lên gần gấp đôi."
+  },
+  "options_gate_wait_one": {
+    "message": "Chờ $COUNT$ giây",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Chờ $COUNT$ giây",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Tùy chỉnh"
+  },
+  "options_custom_delay_label": {
+    "message": "Thời gian chờ tùy chỉnh (giây)"
+  },
+  "options_custom_delay_error": {
+    "message": "Thời gian chờ tùy chỉnh phải là số nguyên dương giây."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Yêu cầu gõ thêm một câu xác nhận"
+  },
+  "options_gate_force_end_label": {
+    "message": "Bật nút \"Bỏ qua thời gian chờ và vẫn kết thúc\""
+  },
+  "options_credit_help": {
+    "message": "Tín dụng truy cập trang web tích lũy khi bạn tập trung. Cả việc mở toàn bộ trang web lẫn mở khóa một trang riêng lẻ đều trừ vào cùng một số dư. Bạn có thể tạm rời đi bất cứ lúc nào mà không cần tốn tín dụng."
+  },
+  "options_earn_rate_label": {
+    "message": "Số phút truy cập trang web trên mỗi 30 phút tập trung"
+  },
+  "options_credit_cap_label": {
+    "message": "Giới hạn tín dụng truy cập trang web (phút)"
+  },
+  "options_pause_length_label": {
+    "message": "Thời lượng truy cập toàn bộ trang web (phút)"
+  },
+  "options_unlock_length_label": {
+    "message": "Thời lượng mở khóa một trang web (phút)"
+  },
+  "options_streak_heading": {
+    "message": "Chuỗi ngày và lưu trữ dữ liệu"
+  },
+  "options_streak_help": {
+    "message": "Chuỗi ngày đếm số ngày đạt được mục tiêu. Một phiên mặc định đủ để duy trì chuỗi, và một thẻ đóng băng sẽ bù lại một ngày bị bỏ lỡ."
+  },
+  "options_streak_goal_label": {
+    "message": "Mục tiêu chuỗi ngày hằng ngày (phút tập trung)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Chu kỳ cấp thẻ đóng băng (ngày)"
+  },
+  "options_retention_label": {
+    "message": "Giữ số liệu thống kê hằng ngày (ngày)"
+  },
+  "options_category_on_announcement": {
+    "message": "Đã bật danh mục $CATEGORY$.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Đã tắt danh mục $CATEGORY$.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Đã bật tất cả danh mục."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Đã tắt tất cả danh mục."
+  },
+  "options_host_included_announcement": {
+    "message": "Đã đưa $HOST$ vào chặn.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "Đã giữ $HOST$ có thể truy cập.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Đã đưa tất cả trang web của $CATEGORY$ vào chặn.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Đã giữ tất cả trang web của $CATEGORY$ có thể truy cập.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Thao tác hàng loạt cho danh mục"
+  },
+  "options_selected_count": {
+    "message": "Đã chọn $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Đã bỏ chọn $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Chọn tất cả"
+  },
+  "options_deselect_all": {
+    "message": "Bỏ chọn tất cả"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Chọn tất cả danh mục"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Bỏ chọn tất cả danh mục"
+  },
+  "options_show_category_sites": {
+    "message": "Hiện trang web của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Ẩn trang web của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ trang web bị chặn",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ trang web bị chặn",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Danh mục đang tắt"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ trang web sẽ bị chặn nếu bật",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ trang web sẽ bị chặn nếu bật",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Bỏ chọn một trang web để giữ trang đó truy cập được trong khi phần còn lại của danh mục vẫn bị chặn."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Thao tác hàng loạt cho trang web của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Chọn tất cả trang web của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Bỏ chọn tất cả trang web của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Trang web của $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "CN"
+  },
+  "options_day_mon": {
+    "message": "T2"
+  },
+  "options_day_tue": {
+    "message": "T3"
+  },
+  "options_day_wed": {
+    "message": "T4"
+  },
+  "options_day_thu": {
+    "message": "T5"
+  },
+  "options_day_fri": {
+    "message": "T6"
+  },
+  "options_day_sat": {
+    "message": "T7"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Chu kỳ tập trung và nghỉ"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Trùng với một mục đã bật khác vào $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Loại phiên"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Mục lịch trình"
+  },
+  "options_schedule_start_label": {
+    "message": "Bắt đầu"
+  },
+  "options_schedule_end_label": {
+    "message": "Kết thúc"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Thời lượng"
+  },
+  "options_schedule_intention_label": {
+    "message": "Ý định"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "khoảng thời gian này dùng để làm gì"
+  },
+  "options_schedule_save_entry": {
+    "message": "Lưu mục"
+  },
+  "options_cancel": {
+    "message": "Hủy"
+  },
+  "options_schedule_empty": {
+    "message": "Chưa có phiên nào được lên lịch."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Các ngày đã chọn"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ đến $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "danh sách chặn"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "danh sách cho phép"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "linh hoạt"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "trì hoãn"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "cứng"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Đã bật"
+  },
+  "options_schedule_edit": {
+    "message": "Sửa"
+  },
+  "options_schedule_delete": {
+    "message": "Xóa"
+  },
+  "options_schedule_add": {
+    "message": "Thêm mục lịch trình"
+  },
+  "options_sounds_heading": {
+    "message": "Âm thanh"
+  },
+  "options_master_volume": {
+    "message": "Âm lượng chính"
+  },
+  "options_sound_session_complete": {
+    "message": "Phiên hoàn tất"
+  },
+  "options_sound_break_start": {
+    "message": "Bắt đầu giờ nghỉ"
+  },
+  "options_sound_break_end": {
+    "message": "Kết thúc giờ nghỉ"
+  },
+  "options_sound_schedule_start": {
+    "message": "Tự động bắt đầu theo lịch"
+  },
+  "options_sound_preview_aria": {
+    "message": "Nghe thử $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Phát"
+  },
+  "options_sound_preview_error": {
+    "message": "Không thể nghe thử âm thanh. Hãy thử lại."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Thông báo"
+  },
+  "options_session_complete_notification": {
+    "message": "Hiện thông báo hệ thống khi phiên hoàn tất"
+  },
+  "options_badge_heading": {
+    "message": "Huy hiệu"
+  },
+  "options_badge_countdown": {
+    "message": "Hiện thời gian còn lại trên biểu tượng thanh công cụ"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Quyền truy cập trang web"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Quyền truy cập trang web đang tắt"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock không thể chặn trang web cho đến khi bạn cấp quyền."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Bật tính năng chặn trang web"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Quyền truy cập trang web đã được cấp, nhưng tính năng chặn chưa hoạt động"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome đã cấp quyền, nhưng Focus Lock không thể đăng ký tập lệnh chặn của mình."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Thử lại tính năng chặn trang web"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Tính năng chặn trang web đã được bật"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock có thể áp dụng các quy tắc chặn đang hoạt động của bạn trên các trang web thông thường."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Xóa lịch sử cục bộ?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Xác nhận xóa lịch sử cục bộ"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Đã xóa lịch sử cục bộ."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Thao tác này xóa vĩnh viễn toàn bộ URL, ý định tập trung, và các sự kiện phiên chi tiết khỏi thiết bị này. Thao tác này không xóa một phiên đang chạy, vì phiên đó vẫn giữ ý định và địa chỉ của từng tab mà nó đang chặn. Kết thúc phiên sẽ xóa ý định và bắt đầu dọn dẹp mọi tab trang web đang mở, quá trình dọn dẹp sẽ xóa mọi địa chỉ đã lưu khi hoàn tất."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Thao tác này xóa vĩnh viễn toàn bộ URL, ý định tập trung, và các sự kiện phiên chi tiết khỏi thiết bị này, cùng với số liệu thống kê tổng hợp chỉ lưu cục bộ. Thao tác này không xóa một phiên đang chạy, vì phiên đó vẫn giữ ý định và địa chỉ của từng tab mà nó đang chặn. Kết thúc phiên sẽ xóa ý định và bắt đầu dọn dẹp mọi tab trang web đang mở, quá trình dọn dẹp sẽ xóa mọi địa chỉ đã lưu khi hoàn tất."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Xóa dữ liệu Đồng bộ hóa từ xa?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Xác nhận xóa dữ liệu Đồng bộ hóa từ xa"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Đã xóa dữ liệu Đồng bộ hóa Chrome từ xa."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Thao tác này xóa vĩnh viễn cài đặt từ xa, danh sách chặn và danh sách cho phép, tín dụng truy cập trang web, chuỗi ngày, và số liệu tổng hợp lượt bị chặn theo tên miền khỏi Đồng bộ hóa Chrome. Cài đặt và số liệu thống kê cục bộ vẫn được giữ trên thiết bị này."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Xóa toàn bộ dữ liệu Focus Lock?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Xác nhận xóa toàn bộ dữ liệu Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Đã xóa toàn bộ dữ liệu Focus Lock."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Thao tác này xóa vĩnh viễn mọi dữ liệu Focus Lock trên thiết bị này và mọi bản sao Focus Lock còn lại trong Đồng bộ hóa Chrome:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Chỉ có thể xóa toàn bộ khi không có phiên nào đang chạy. Sau đó Focus Lock sẽ quay lại màn hình thiết lập."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Không thể xóa lịch sử cục bộ. Hãy thử lại."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Không thể xóa dữ liệu Đồng bộ hóa Chrome từ xa. Hãy thử lại."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Không thể xóa toàn bộ dữ liệu Focus Lock. Hãy thử lại."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Đồng bộ hóa Chrome không thể lưu các thay đổi mới nhất của bạn. Bản lưu cục bộ của bạn vẫn an toàn."
+  },
+  "options_privacy_error_request": {
+    "message": "Không thể hoàn tất yêu cầu. Hãy thử lại."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Đã cập nhật quyền truy cập trang web."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Quyền truy cập trang web đã không được cấp."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Không thể cập nhật quyền truy cập trang web. Hãy thử lại."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Đã bật tính năng chặn trang web."
+  },
+  "options_privacy_error_export": {
+    "message": "Không thể xuất nhật ký sự kiện."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Không thể xuất nhật ký sự kiện. Hãy thử lại."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Không thể mở cài đặt quyền của Chrome. Hãy thử lại."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Đã mở cài đặt quyền của Chrome."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Mở cài đặt quyền của Chrome"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Đồng bộ hóa Chrome"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Đồng bộ hóa dữ liệu Focus Lock giữa các thiết bị Chrome"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Đã bật Đồng bộ hóa Chrome."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Đã tắt Đồng bộ hóa Chrome."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Đồng bộ hóa Chrome vẫn đang lưu các thay đổi mới nhất của bạn."
+  },
+  "options_privacy_sync_on": {
+    "message": "Đồng bộ hóa Chrome đang bật."
+  },
+  "options_privacy_sync_off": {
+    "message": "Đồng bộ hóa Chrome đang tắt."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Đã lưu các thay đổi Đồng bộ hóa Chrome."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Thử bật lại Đồng bộ hóa Chrome"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Thử lại Đồng bộ hóa Chrome"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Đã đồng bộ hóa"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Chỉ cục bộ"
+  },
+  "options_privacy_developer_note": {
+    "message": "Không có gì được gửi đến nhà phát triển Focus Lock."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Nhật ký sự kiện cục bộ"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Xuất nhật ký cục bộ chi tiết hoặc xóa lịch sử duyệt web và phiên cục bộ."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Xuất nhật ký sự kiện cục bộ"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Đã xuất nhật ký sự kiện cục bộ."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Xóa lịch sử cục bộ"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Dữ liệu Đồng bộ hóa từ xa"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Xóa các bản sao Focus Lock còn lại trong Đồng bộ hóa Chrome mà không thay đổi thiết bị này."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Xóa dữ liệu Đồng bộ hóa từ xa"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Toàn bộ dữ liệu Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Xóa mọi bản ghi Focus Lock trên thiết bị này và mọi bản sao Focus Lock còn lại trong Đồng bộ hóa Chrome, sau đó bắt đầu lại từ thiết lập. Chỉ khả dụng khi không có phiên nào đang chạy."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Đang tiếp tục xóa toàn bộ dữ liệu Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Thử lại việc xóa lịch sử cục bộ"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Thử lại việc xóa dữ liệu Đồng bộ hóa từ xa"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Thử lại việc xóa toàn bộ dữ liệu"
+  },
+  "options_error_load": {
+    "message": "Không thể tải cài đặt. Hãy tải lại trang để thử lại."
+  },
+  "options_error_retry_boot": {
+    "message": "Không thể khởi động lại Focus Lock. Hãy thử lại."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Không thể làm mới cài đặt quyền riêng tư. Hãy tải lại trang."
+  },
+  "options_error_website_blocking": {
+    "message": "Không thể cập nhật tính năng chặn trang web. Hãy thử lại."
+  },
+  "options_error_change_sync": {
+    "message": "Không thể thay đổi Đồng bộ hóa Chrome. Hãy thử lại."
+  },
+  "options_error_retry_sync": {
+    "message": "Không thể thử lại Đồng bộ hóa Chrome. Hãy thử lại."
+  },
+  "options_error_save_settings": {
+    "message": "Không thể lưu cài đặt. Hãy tải lại trang rồi thử lại."
+  },
+  "options_error_save_lists": {
+    "message": "Không thể lưu danh sách. Hãy tải lại trang rồi thử lại."
+  }
+}
