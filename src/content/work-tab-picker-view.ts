@@ -115,7 +115,7 @@ export function status(text: string): HTMLElement {
 }
 
 export const WORK_PICKER_CSS: string = `
-.work-picker { position: fixed; inset: clamp(8px, 2vw, 24px); z-index: 1; padding: clamp(12px, 2vw, 24px); border: 1px solid var(--overlay-input-border); border-radius: 1rem; background: var(--overlay-opaque); color: var(--overlay-text); text-align: left; display: flex; flex-direction: column; min-height: 0; box-shadow: 0 16px 60px #0003; }
+.work-picker { position: fixed; inset: clamp(8px, 2vw, 24px); z-index: 1; padding: clamp(12px, 2vw, 24px); border: 1px solid var(--overlay-input-border); border-radius: 1rem; background: var(--overlay-opaque); color: var(--overlay-text); text-align: start; display: flex; flex-direction: column; min-height: 0; box-shadow: 0 16px 60px #0003; }
 .work-picker-header { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-shrink: 0; }
 .work-picker h2 { font-size: 1.2rem; font-weight: 650; }
 .work-picker-search-label { display: grid; gap: 0.45rem; margin-top: 0.8rem; font-size: 0.85rem; color: var(--overlay-muted); flex-shrink: 0; }
@@ -132,7 +132,7 @@ export const WORK_PICKER_CSS: string = `
 .work-picker-feedback[hidden] { display: none; }
 .work-picker-list { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
 .work-picker-space { position: relative; min-width: 0; }
-.work-tab-option { position: absolute; left: 8px; right: 8px; height: 72px; display: flex; align-items: center; gap: 0.85rem; padding: 0.55rem 0.8rem; border: 1px solid var(--overlay-meter); border-left: 3px solid var(--tab-colour); border-radius: 0.7rem; background: var(--overlay-pill); color: var(--overlay-text); text-align: left; }
+.work-tab-option { position: absolute; inset-inline: 8px; height: 72px; display: flex; align-items: center; gap: 0.85rem; padding: 0.55rem 0.8rem; border: 1px solid var(--overlay-meter); border-inline-start: 3px solid var(--tab-colour); border-radius: 0.7rem; background: var(--overlay-pill); color: var(--overlay-text); text-align: start; }
 .work-tab-option:hover:enabled { background: var(--overlay-pill-hover); border-color: var(--tab-colour); }
 .work-tab-option:disabled { opacity: 0.55; }
 .work-tab-text { flex: 1; min-width: 0; display: grid; gap: 0.1rem; }
