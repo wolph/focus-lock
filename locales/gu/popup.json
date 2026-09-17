@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "next: $DAY$ $TIME$",
+    "message": "આગળ: $DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -21,20 +21,32 @@
   "popup_settings_load_failed": {
     "message": "Could not load સેશન સેટિંગ્સ. Reload the popup to try again. Defaults are shown."
   },
+  "popup_open_setup_failed": {
+    "message": "સેટઅપ ખોલી શકાયું નહીં. ફરી પ્રયાસ કરો."
+  },
+  "popup_setup_required_heading": {
+    "message": "Focus Lock નું સેટઅપ પૂર્ણ કરો"
+  },
   "popup_setup_required_body": {
     "message": "Choose your starting lists, website access, and storage mode before starting a સેશન."
   },
   "popup_open_setup_button": {
-    "message": "Open setup"
+    "message": "સેટઅપ ખોલો"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "વેબસાઇટ બ્લોકિંગની પુષ્ટિ કરી શકાઈ નહીં. ફરી પ્રયાસ કરો."
   },
   "popup_blocking_enable_failed": {
     "message": "Could not સક્ષમ website blocking. Try again."
   },
   "popup_blocking_off_heading": {
-    "message": "Website blocking is off"
+    "message": "વેબસાઇટ બ્લોકિંગ બંધ છે"
   },
   "popup_blocking_off_body": {
     "message": "Focus Lock cannot શરુ a સેશન until Chrome grants website access and blocking is enabled."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome એ વેબસાઇટ ઍક્સેસ આપી નહીં. વેબસાઇટ બ્લોકિંગ હજુ પણ બંધ છે."
   },
   "popup_blocking_off_registration_error": {
     "message": "Website access is granted, but Focus Lock could not સક્ષમ blocking. Retry setup or reload the extension."
@@ -43,7 +55,7 @@
     "message": "સક્ષમ website blocking"
   },
   "popup_retry_button": {
-    "message": "Retry"
+    "message": "ફરી પ્રયાસ કરો"
   },
   "popup_notice_access_revoked": {
     "message": "Your સેશન ended because website access was removed."
@@ -51,14 +63,26 @@
   "popup_notice_blocking_failed": {
     "message": "Your સેશન ended because Focus Lock could not સક્ષમ website blocking."
   },
+  "popup_dismiss_notice_failed": {
+    "message": "આ સૂચના કાઢી શકાઈ નહીં. ફરી પ્રયાસ કરો."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "વેબસાઇટ ઍક્સેસ સૂચના કાઢી નાખો"
+  },
   "popup_dismiss_button": {
-    "message": "Dismiss"
+    "message": "કાઢી નાખો"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lock ફરી શરૂ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "popup_boot_failed_heading": {
     "message": "Focus Lock could not શરુ"
   },
+  "popup_boot_reason_unavailable": {
+    "message": "કારણ વાંચી શકાયું નહીં."
+  },
   "popup_reset_runtime_button": {
-    "message": "Reset local runtime"
+    "message": "લોકલ રનટાઇમ રીસેટ કરો"
   },
   "popup_reset_runtime_note": {
     "message": "Keeps your સેટિંગ્સ, lists, and statistics. Clears the current સેશન state."
@@ -67,40 +91,91 @@
     "message": "કાઢી નાખો everything and start over"
   },
   "popup_keep_data_button": {
-    "message": "Keep my data"
+    "message": "મારો ડેટા રાખો"
   },
   "popup_delete_all_button": {
     "message": "કાઢી નાખો all Focus Lock data"
   },
+  "popup_setup_status_unavailable": {
+    "message": "સેટઅપ સ્થિતિ ઉપલબ્ધ નથી. ફરી પ્રયાસ કરવા Focus Lock રિલોડ કરો."
+  },
   "popup_snapshot_unavailable": {
-    "message": "Focus status unavailable"
+    "message": "ફોકસ સ્થિતિ ઉપલબ્ધ નથી"
   },
   "popup_action_in_progress": {
-    "message": "Action in progress"
+    "message": "ક્રિયા ચાલુ છે"
   },
   "popup_active_site_checking": {
-    "message": "Checking the active site"
+    "message": "સક્રિય સાઇટ તપાસી રહ્યાં છીએ"
+  },
+  "popup_active_site_unsupported": {
+    "message": "તેને અનલૉક કરવા સામાન્ય વેબસાઇટ ખોલો"
+  },
+  "popup_active_site_unknown": {
+    "message": "સક્રિય સાઇટ ઓળખી શકાઈ નહીં"
+  },
+  "popup_active_site_error": {
+    "message": "સક્રિય સાઇટ ઓળખી શકાઈ નહીં."
   },
   "popup_resume_now": {
-    "message": "Resume now"
+    "message": "હમણાં ફરી શરૂ કરો"
   },
   "popup_start_next_focus_early": {
     "message": "શરુ next focus early"
   },
   "popup_unlock_this_site": {
-    "message": "Unlock this site"
+    "message": "આ સાઇટ અનલૉક કરો"
   },
   "popup_unlock_all_sites": {
-    "message": "Unlock all sites"
+    "message": "બધી સાઇટ્સ અનલૉક કરો"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ ઍક્સેસ, $CREDIT$ ક્રેડિટ",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ ઍક્સેસ, $CREDIT$ ક્રેડિટ - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
   },
   "popup_choose_work_tab_button": {
-    "message": "Choose work tab"
+    "message": "વર્ક ટૅબ પસંદ કરો"
   },
   "popup_change_work_tab_button": {
-    "message": "Change work tab"
+    "message": "વર્ક ટૅબ બદલો"
   },
   "popup_session_actions_summary": {
     "message": "સેશન actions"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ સાઇટ ઍક્સેસ ક્રેડિટ",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
   },
   "popup_add_allowed_domain_label": {
     "message": "ઉમેરો an allowed domain"
@@ -140,10 +215,19 @@
     "message": "હાર્ડ લૉક. જલ્દી અંત ન કરી શકો."
   },
   "popup_draft_stop_flexible": {
-    "message": "Can end at any time."
+    "message": "ગમે ત્યારે સમાપ્ત કરી શકાય છે."
   },
   "popup_draft_stop_friction": {
     "message": "$SECONDS$s રાહ જોયા બાદ અંત કરો.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "$SECONDS$ સેકન્ડની રાહ અને પુષ્ટિ વાક્ય પછી સમાપ્ત કરો.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -155,19 +239,25 @@
     "message": "સેશન length"
   },
   "popup_custom_minutes_label": {
-    "message": "Custom minutes"
+    "message": "કસ્ટમ મિનિટ"
   },
   "popup_custom_minutes_placeholder": {
     "message": "મી"
   },
+  "popup_gate_force_end": {
+    "message": "ટાઇમઆઉટ અવગણો અને છતાં સમાપ્ત કરો"
+  },
   "popup_gate_keep_focusing": {
-    "message": "Keep focusing"
+    "message": "ફોકસ ચાલુ રાખો"
   },
   "popup_gate_phrase_label": {
-    "message": "Type:"
+    "message": "ટાઇપ કરો:"
+  },
+  "popup_gate_update_failed": {
+    "message": "દ્વાર અપડેટ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "popup_gate_intention": {
-    "message": "You said: $INTENTION$",
+    "message": "તેં કહ્યું: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -176,10 +266,10 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "A moment to decide:"
+    "message": "નિર્ણય લેવા માટે એક ક્ષણ:"
   },
   "popup_gate_wait_remaining": {
-    "message": "of $TOTAL$ s",
+    "message": "$TOTAL$ સેકન્ડમાંથી",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -188,10 +278,32 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Back to work"
+    "message": "કામ પર પાછા"
   },
   "popup_destination_unavailable": {
-    "message": "Destination unavailable"
+    "message": "ગંતવ્ય ઉપલબ્ધ નથી"
+  },
+  "popup_back_to_work_name": {
+    "message": "કામ પર પાછા: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "કામ પર પાછા: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
   },
   "popup_categories_locked": {
     "message": "Category editing is disabled until બ્લોક્ડ-site lists reload."
@@ -199,14 +311,32 @@
   "popup_blocked_categories_heading": {
     "message": "બ્લોક્ડ categories"
   },
+  "popup_show_full_domain": {
+    "message": "સંપૂર્ણ ડોમેન બતાવો: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "સંપૂર્ણ રેગ્યુલર એક્સપ્રેશન બતાવો: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
   "popup_rule_kind_domain": {
-    "message": "Domain"
+    "message": "ડોમેન"
   },
   "popup_rule_kind_regex": {
-    "message": "Regular expression"
+    "message": "રેગ્યુલર એક્સપ્રેશન"
   },
   "popup_category_sites_label": {
-    "message": "$CATEGORY$ sites",
+    "message": "$CATEGORY$ સાઇટ્સ",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -215,7 +345,7 @@
     }
   },
   "popup_sites_one": {
-    "message": "$COUNT$ site",
+    "message": "$COUNT$ સાઇટ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -224,7 +354,7 @@
     }
   },
   "popup_sites_other": {
-    "message": "$COUNT$ sites",
+    "message": "$COUNT$ સાઇટ્સ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -233,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "and $COUNT$ more site",
+    "message": "અને $COUNT$ વધુ સાઇટ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -242,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "and $COUNT$ more sites",
+    "message": "અને $COUNT$ વધુ સાઇટ્સ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -251,7 +381,7 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Allowed exceptions"
+    "message": "મંજૂર અપવાદો"
   },
   "popup_extra_blocked_heading": {
     "message": "Extra બ્લોક્ડ rules"
@@ -260,16 +390,29 @@
     "message": "No extra બ્લોક્ડ rules."
   },
   "popup_allowed_heading": {
-    "message": "Allowed sites and rules"
+    "message": "મંજૂર સાઇટ્સ અને નિયમો"
   },
   "popup_no_allowed_sites": {
-    "message": "No sites are allowed yet."
+    "message": "હજુ સુધી કોઈ સાઇટ મંજૂર નથી."
   },
   "popup_what_will_be_blocked": {
     "message": "What will be બ્લોક્ડ"
   },
   "popup_what_will_be_allowed": {
-    "message": "What will be allowed"
+    "message": "શું મંજૂર કરવામાં આવશે"
+  },
+  "popup_categories_selected": {
+    "message": "$TOTAL$ માંથી $SELECTED$ કેટેગરી પસંદ કરેલી",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
   },
   "popup_extra_blocked_rules_one": {
     "message": "$COUNT$ extra બ્લોક્ડ rule",
@@ -290,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed rule",
+    "message": "$COUNT$ મંજૂર નિયમ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -299,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed rules",
+    "message": "$COUNT$ મંજૂર નિયમો",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -323,16 +466,34 @@
     "message": "સેશન type"
   },
   "popup_session_type_flexible": {
-    "message": "Flexible"
+    "message": "લવચીક"
   },
   "popup_session_type_friction": {
-    "message": "Friction"
+    "message": "ઘર્ષણ"
   },
   "popup_session_type_hard": {
-    "message": "Hard lock"
+    "message": "સખત લૉક"
   },
   "popup_session_type_flexible_hint": {
     "message": "End the સેશન immediately whenever you choose."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "વહેલા સમાપ્ત કરવા માટે $WAIT$ જરૂરી છે. ટાઇપ કરવાની જરૂર નથી.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "વહેલા સમાપ્ત કરવા માટે $WAIT$ અને ટાઇપ કરેલી પુષ્ટિ જરૂરી છે.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
   },
   "popup_session_type_hard_hint": {
     "message": "The સેશન cannot end early. Site access credit still works."
@@ -346,17 +507,44 @@
   "popup_invalid_duration_error": {
     "message": "Enter a સેશન length greater than zero minutes."
   },
+  "popup_stale_lists_unavailable": {
+    "message": "ડિફૉલ્ટ બદલાયા, પણ હાલની લિસ્ટ લોડ કરી શકાઈ નહીં. પોપઅપ રિલોડ કરો."
+  },
   "popup_no_work_tab_option": {
-    "message": "No work tab (optional)"
+    "message": "કોઈ વર્ક ટૅબ નથી (વૈકલ્પિક)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "પસંદ કરેલી ટૅબ ઉપલબ્ધ નથી - બીજી પસંદ કરો"
+  },
+  "popup_cycles_label": {
+    "message": "ચક્ર: $FOCUS$ મિનિટ ફોકસ, $SHORT_BREAK$ મિનિટ બ્રેક, દર $LONG_EVERY$મા ચક્રે $LONG_BREAK$ મિનિટનો લાંબો બ્રેક",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
   },
   "popup_intention_label": {
-    "message": "Intention"
+    "message": "ઉદ્દેશ"
   },
   "popup_intention_placeholder": {
-    "message": "What are you working on?"
+    "message": "તારું કામ શું છે?"
   },
   "popup_work_tab_named": {
-    "message": "Work tab: $TITLE$",
+    "message": "વર્ક ટૅબ: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -365,19 +553,19 @@
     }
   },
   "popup_change_button": {
-    "message": "Change"
+    "message": "બદલો"
   },
   "popup_session_settings_summary": {
     "message": "સેશન settings"
   },
   "popup_choose_work_tab_label": {
-    "message": "Choose a work tab"
+    "message": "એક વર્ક ટૅબ પસંદ કરો"
   },
   "popup_work_tab_select_label": {
-    "message": "Work tab"
+    "message": "વર્ક ટૅબ"
   },
   "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Current)",
+    "message": "$TITLE$ (વર્તમાન)",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -386,10 +574,10 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Blocking mode"
+    "message": "બ્લોકિંગ મોડ"
   },
   "popup_invalid_time_label": {
-    "message": "invalid time"
+    "message": "અમાન્ય સમય"
   },
   "popup_start_focus_label": {
     "message": "શરુ $DURATION$ focus",
@@ -400,23 +588,41 @@
       }
     }
   },
+  "popup_invalid_domain_error": {
+    "message": "docs.example.com જેવો માન્ય ડોમેન દાખલ કરો."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "વર્ક ટૅબ લોડ કરી શકાઈ નહીં. ફરી પ્રયાસ કરવા પોપઅપ ફરી ખોલો."
+  },
   "popup_use_this_tab": {
-    "message": "Use this tab"
+    "message": "આ ટૅબનો ઉપયોગ કરો"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "આ ટૅબ કામ માટે ઉપલબ્ધ નથી. બીજી ખુલ્લી ટૅબ પસંદ કરો."
   },
   "popup_checking_current_tab": {
-    "message": "Checking current tab..."
+    "message": "વર્તમાન ટૅબ તપાસી રહ્યાં છીએ..."
+  },
+  "popup_finding_current_tab": {
+    "message": "તારી વર્તમાન ટૅબ શોધી રહ્યાં છીએ..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "તારી વર્તમાન ટૅબ લોડ કરી શકાઈ નહીં. ફરી પ્રયાસ કરો."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "તારી વર્ક ટૅબ પસંદ કરો અથવા બદલો."
   },
   "popup_saving_work_tab": {
-    "message": "Saving work tab..."
+    "message": "વર્ક ટૅબ સાચવી રહ્યાં છીએ..."
   },
   "popup_save_work_tab_failed": {
     "message": "Could not સાચવો the work tab. Try again."
   },
   "popup_choose_open_tab_option": {
-    "message": "Choose an open tab"
+    "message": "એક ખુલ્લી ટૅબ પસંદ કરો"
   },
   "popup_or_choose_another_tab": {
-    "message": "Or choose another tab"
+    "message": "અથવા બીજી ટૅબ પસંદ કરો"
   },
   "popup_start_failed": {
     "message": "Could not શરુ સેશન. Try again."

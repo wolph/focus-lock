@@ -12,46 +12,66 @@
     "message": "സ്ഥിതിവിവരം ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കാൻ പുതുക്കുക."
   },
   "stats_partial_error_both": {
-    "message": "Hourly attempts and site access credit സെറ്റിംഗുകൾ are unavailable."
+    "message": "മണിക്കൂർ ശ്രമങ്ങളും സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ് സെറ്റിംഗുകളും ലഭ്യമല്ല."
   },
   "stats_partial_error_attempts": {
-    "message": "പ്രതിമണിക്കൂർ ശ്രമങ്ങൾ ലഭ്യമല്ല."
+    "message": "മണിക്കൂർ ശ്രമങ്ങൾ ലഭ്യമല്ല."
   },
   "stats_partial_error_economy": {
     "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ് സെറ്റിംഗുകൾ ലഭ്യമല്ല."
   },
   "stats_scope_synced": {
-    "message": "ഈ Chrome അക്കൗണ്ട് നിന്നും സിങ്ക് ചെയ്ത കൂടെ."
+    "message": "ഈ Chrome അക്കൗണ്ടിൽ നിന്നുള്ള സിങ്ക് ചെയ്ത ആകെ കണക്കുകൾ. സ്ഥാനിക-മാത്രം പാനലുകൾ ലേബൽ ചെയ്തിരിക്കുന്നു."
   },
   "stats_scope_local": {
-    "message": "ഈ മെഷീൻ നിന്നും."
+    "message": "ഈ മെഷിനിൽ നിന്നുള്ള ആകെ കണക്കുകൾ. Focus Lock സ്ഥിതിവിവരങ്ങൾ സിങ്ക് ചെയ്യപ്പെടാത്തതാണ്."
   },
   "stats_scope_checking": {
-    "message": "ഈ കൂടെ സിങ്ക് നിർണ്ണയിക്കുന്നു."
+    "message": "ഈ ആകെ കണക്കുകൾ സിങ്ക് ചെയ്യപ്പെട്ടിട്ടുണ്ടോ എന്ന് പരിശോധിക്കുന്നു."
+  },
+  "stats_scope_unavailable": {
+    "message": "സ്ഥിതിവിവരങ്ങൾ സ്കോപ്പ് ലഭ്യമല്ല. ആകെ കണക്കുകൾ സിങ്ക് ചെയ്ത ഡാറ്റ ഉൾപ്പെടലാം. മണിക്കൂർ ശ്രമങ്ങളും സമീപകാല സെഷനുകളും ഈ മെഷിനിൽ നിന്നാണ്."
   },
   "stats_scope_retry": {
-    "message": "Retry scope check"
+    "message": "സ്കോപ്പ് പരിശോധന വീണ്ടും ശ്രമിക്കുക"
   },
   "stats_empty": {
-    "message": "Stats appear after your first സെഷൻ."
+    "message": "നിങ്ങളുടെ ആദ്യ സെഷനിന് ശേഷം സ്ഥിതിവിവരം ദൃശ്യമാകും."
   },
   "stats_tile_focus_today": {
-    "message": "Focus ഇന്ന്"
+    "message": "ഇന്ന് ഫോക്കസ്"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Focus in the last 7 ദിവസങ്ങൾ"
+    "message": "കഴിഞ്ഞ 7 ദിവസം ഫോക്കസ്"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts തടഞ്ഞിരിക്കുന്നു ഇന്ന്"
+    "message": "ഇന്ന് തടഞ്ഞ ശ്രമങ്ങൾ"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gate requests dismissed ഇന്ന്"
+    "message": "ഇന്ന് കവാടം നിരസിച്ച അഭ്യർത്ഥനകൾ"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent ഇന്ന്"
+    "message": "ഇന്ന് ചെലവായ സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ്"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "എല്ലാ സൈറ്റുകൾ $ALL_SITES$, ഒരു സൈറ്റ് $ONE_SITE$, $EARNED$ സമ്പാദിച്ച",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ earned",
+    "message": "$EARNED$ സമ്പാദിച്ച",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -106,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active ദിവസങ്ങൾ this month ($MONTH$)",
+    "message": "ഈ മാസം $MONTH$ $COUNT$ സജീവ ദിവസങ്ങൾ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -141,22 +161,22 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Focus, last 14 ദിവസങ്ങൾ"
+    "message": "ഫോക്കസ്, കഴിഞ്ഞ 14 ദിവസം"
   },
   "stats_chart_focus_empty": {
-    "message": "Focus minutes appear after your first സെഷൻ."
+    "message": "നിങ്ങളുടെ ആദ്യ സെഷനിന് ശേഷം ഫോക്കസ് മിനിറ്റ് ദൃശ്യമാകും."
   },
   "stats_chart_attempts_heading": {
-    "message": "തടഞ്ഞിരിക്കുന്നു attempts, last 14 ദിവസങ്ങൾ"
+    "message": "തടഞ്ഞ ശ്രമങ്ങൾ, കഴിഞ്ഞ 14 ദിവസം"
   },
   "stats_chart_attempts_empty": {
-    "message": "തടഞ്ഞിരിക്കുന്നു attempts show up here once a സെഷൻ catches one."
+    "message": "ഒരു സെഷൻ തടഞ്ഞ ശ്രമങ്ങൾ പിടിച്ചെടുത്തതിന് ശേഷം തടഞ്ഞ ശ്രമങ്ങൾ ഇവിടെ കാണിക്കും."
   },
   "stats_chart_sites_heading": {
-    "message": "Top തടഞ്ഞിരിക്കുന്നു sites, last 30 ദിവസങ്ങൾ"
+    "message": "ഏറ്റവും കൂടുതൽ തടഞ്ഞ സൈറ്റുകൾ, കഴിഞ്ഞ 30 ദിവസം"
   },
   "stats_chart_sites_empty": {
-    "message": "Nothing തടഞ്ഞിരിക്കുന്നു yet. That is a fine ആരംഭിക്കുക."
+    "message": "ഇതുവരെ ഒന്നും തടഞ്ഞിട്ടില്ല. അത് നല്ലൊരു തുടക്കമാണ്."
   },
   "stats_chart_hours_heading": {
     "message": "മണിക്കൂർ അനുസരിച്ച ശ്രമങ്ങൾ, ഈ മെഷീൻ മാത്രം"
@@ -174,7 +194,7 @@
     }
   },
   "stats_blocked_count_one": {
-    "message": "$COUNT$ തടഞ്ഞിരിക്കുന്നു",
+    "message": "$COUNT$ തടഞ്ഞത്",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -183,7 +203,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "$COUNT$ തടഞ്ഞിരിക്കുന്നു",
+    "message": "$COUNT$ തടഞ്ഞത്",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -226,43 +246,46 @@
     "message": "വിഭാഗം"
   },
   "stats_chart_table_value": {
-    "message": "Value"
+    "message": "മൂല്യം"
   },
   "stats_heat_strip_label": {
-    "message": "24-hour തടഞ്ഞിരിക്കുന്നു-attempt heat strip"
+    "message": "24-മണിക്കൂർ തടഞ്ഞ-ശ്രമ താപ സ്ട്രിപ്പ്"
+  },
+  "stats_sessions_heading": {
+    "message": "ഈ മെഷിനിൽ സമീപകാല സെഷനുകൾ"
   },
   "stats_sessions_empty": {
-    "message": "Your first സെഷൻ will appear here."
+    "message": "നിങ്ങളുടെ ആദ്യ സെഷൻ ഇവിടെ പ്രത്യക്ഷപ്പെടും."
   },
   "stats_sessions_col_date": {
-    "message": "Date"
+    "message": "തീയതി"
   },
   "stats_sessions_col_start": {
     "message": "ആരംഭിക്കുക"
   },
   "stats_sessions_col_planned": {
-    "message": "Planned"
+    "message": "ആസൂത്രണ ചെയ്ത"
   },
   "stats_sessions_col_focused": {
-    "message": "Focused"
+    "message": "ഫോക്കസ് ചെയ്ത"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All sites"
+    "message": "എല്ലാ സൈറ്റുകൾ"
   },
   "stats_sessions_col_one_site": {
-    "message": "One site"
+    "message": "ഒരു സൈറ്റ്"
   },
   "stats_sessions_col_intention": {
-    "message": "Intention"
+    "message": "ഉദ്ദേശ്യം"
   },
   "stats_sessions_col_outcome": {
-    "message": "Outcome"
+    "message": "ഫലം"
   },
   "stats_sessions_col_source": {
-    "message": "Source"
+    "message": "ഉറവിടം"
   },
   "stats_session_no_intention": {
-    "message": "No intention"
+    "message": "ഉദ്ദേശ്യം ഇല്ല"
   },
   "stats_session_article_label": {
     "message": "സെഷൻ: $INTENTION$",
@@ -274,21 +297,21 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "manual"
+    "message": "മാനുവൽ"
   },
   "stats_session_source_schedule": {
-    "message": "schedule"
+    "message": "സാരണി"
   },
   "stats_session_source_scheduled": {
-    "message": "scheduled"
+    "message": "ആസൂത്രിത"
   },
   "stats_outcome_completed": {
-    "message": "Completed"
+    "message": "പൂർത്തിയായി"
   },
   "stats_outcome_ended_early": {
-    "message": "Ended early"
+    "message": "നേരത്തേ അവസാനിപ്പിച്ചു"
   },
   "stats_outcome_running": {
-    "message": "Running"
+    "message": "പ്രവർത്തനരത"
   }
 }
