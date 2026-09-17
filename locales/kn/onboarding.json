@@ -1,12 +1,12 @@
 {
   "onboarding_page_title": {
-    "message": "Set up ಫೋಕಸ್ Lock"
+    "message": "Focus Lock ಸೆಟಪ್ ಮಾಡಿ"
   },
   "onboarding_eyebrow": {
-    "message": "ಫೋಕಸ್ Lock setup"
+    "message": "Focus Lock ಸೆಟಪ್"
   },
   "onboarding_progress": {
-    "message": "Step $STEP$ ನ $TOTAL$",
+    "message": "$TOTAL$ ರಲ್ಲಿ ಹಂತ $STEP$",
     "placeholders": {
       "STEP": {
         "content": "$1",
@@ -19,37 +19,37 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Your saved setup progress could not be restಅಥವಾed. ಪ್ರಾರಂಭಿಸಿರಲ್ಲಿg agaರಲ್ಲಿ ಜೊತೆ your current defaults."
+    "message": "ನಿನ್ನ ಉಳಿಸಿದ ಸೆಟಪ್ ಪ್ರಗತಿಯನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿನ್ನ ಪ್ರಸ್ತುತ ಡಿಫಾಲ್ಟ್‌ಗಳೊಂದಿಗೆ ಮತ್ತೆ ಪ್ರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ."
   },
   "onboarding_complete_heading": {
     "message": "ಸೆಟಪ್ ಪೂರ್ಣಗೊಂಡಿದೆ"
   },
   "onboarding_complete_body": {
-    "message": "Your choices are saved. Open ಫೋಕಸ್ Lock from the Chrome ಕಿolbar ಕಿ start a sessiಮೇಲೆ."
+    "message": "ನಿನ್ನ ಆಯ್ಕೆಗಳು ಉಳಿಸಲಾಗಿದೆ. ಸೆಷನ್ ಪ್ರಾರಂಭಿಸಲು Chrome ಟೂಲ್‌ಬಾರ್‌ನಿಂದ Focus Lock ತೆರೆಯಿರಿ."
   },
   "onboarding_error_heading": {
     "message": "ಸೆಟಪ್ ಲಭ್ಯವಿಲ್ಲ"
   },
   "onboarding_error_body": {
-    "message": "Could not load setup. Try agaರಲ್ಲಿ."
+    "message": "ಸೆಟಪ್ ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "onboarding_retry_button": {
-    "message": "ಮರುಪ್ರಯತ್ನ"
+    "message": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
   },
   "onboarding_save_error": {
-    "message": "Could not save setup progress. Try agaರಲ್ಲಿ."
+    "message": "ಸೆಟಪ್ ಪ್ರಗತಿ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "onboarding_enable_error": {
-    "message": "Could not enable website blockರಲ್ಲಿg. Try agaರಲ್ಲಿ."
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "onboarding_finish_error": {
-    "message": "Could not complete setup. Your choices are still saved. Try agaರಲ್ಲಿ."
+    "message": "ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿನ್ನ ಆಯ್ಕೆಗಳು ಇನ್ನೂ ಉಳಿಸಲಾಗಿದೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "onboarding_lists_heading": {
-    "message": "Choose your startರಲ್ಲಿg block list"
+    "message": "ನಿನ್ನ ಆರಂಭಿಕ ಬ್ಲಾಕ್ ಲಿಸ್ಟ್ ಆಯ್ಕೆಮಾಡಿ"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "In $MODE$, enabled cನಲ್ಲಿegಅಥವಾies ಮತ್ತು extra blocked sites are unavailable.",
+    "message": "$MODE$ ನಲ್ಲಿ, ಸಕ್ರಿಯಗೊಳಿಸಿದ ವಿಭಾಗಗಳು ಮತ್ತು ಹೆಚ್ಚುವರಿ ಬ್ಲಾಕ್ ಮಾಡಿದ ಸೈಟ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "$MODE$ ನಲ್ಲಿ, ನಿನ್ನ ಅನುಮತಿ ಪಟ್ಟಿಯ ಹೊರತು ಎಲ್ಲಾ ಸೈಟ್‌ಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ.",
+    "message": "$MODE$ ನಲ್ಲಿ, ನಿನ್ನ ಅಲೋ ಲಿಸ್ಟ್ ಹೊರತುಪಡಿಸಿ ಎಲ್ಲಾ ಸೈಟ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,10 +67,10 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "These choices become defaults ಸಾಕಾಂಶ future sessiಮೇಲೆs. You can edit them lನಲ್ಲಿer."
+    "message": "ಈ ಆಯ್ಕೆಗಳು ಭವಿಷ್ಯದ ಸೆಷನ್‌ಗಳಿಗೆ ಡಿಫಾಲ್ಟ್ ಆಗುತ್ತವೆ. ನೀನು ಅವುಗಳನ್ನು ನಂತರ ಎಡಿಟ್ ಮಾಡಬಹುದು."
   },
   "onboarding_lists_legend": {
-    "message": "Recommended website cನಲ್ಲಿegಅಥವಾies"
+    "message": "ಶಿಫಾರಸು ಮಾಡಿದ ವೆಬ್‌ಸೈಟ್ ವಿಭಾಗಗಳು"
   },
   "onboarding_site_count_one": {
     "message": "$COUNT$ ಸೈಟ್",
@@ -91,7 +91,7 @@
     }
   },
   "onboarding_show_category_sites": {
-    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸು",
+    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸಿ",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -100,7 +100,7 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಮರೆಮಾಡು",
+    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "onboarding_category_domains_label": {
-    "message": "$CATEGORY$ domaರಲ್ಲಿs",
+    "message": "$CATEGORY$ ಡೊಮೇನ್‌ಗಳು",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -118,60 +118,60 @@
     }
   },
   "onboarding_continue_button": {
-    "message": "Cಮೇಲೆtರಲ್ಲಿue"
+    "message": "ಮುಂದುವರಿಸಿ"
   },
   "onboarding_access_heading": {
-    "message": "Enable website blockರಲ್ಲಿg"
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸಿ"
   },
   "onboarding_access_local_matching": {
-    "message": "ಫೋಕಸ್ Lock checks page addresses locally so it can mನಲ್ಲಿch your selected cನಲ್ಲಿegಅಥವಾies ಮತ್ತು sites. It uses website access ಕಿ show its blockರಲ್ಲಿg screen ಮತ್ತು restಅಥವಾe affected pages ಯಾವಾಗ your sessiಮೇಲೆ ends."
+    "message": "Focus Lock ನಿನ್ನ ಆಯ್ಕೆಮಾಡಿದ ವಿಭಾಗಗಳು ಮತ್ತು ಸೈಟ್‌ಗಳನ್ನು ಹೊಂದಿಸಲು ಪೇಜ್ ವಿಳಾಸಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಪರಿಶೀಲಿಸುತ್ತದೆ. ಅದರ ಬ್ಲಾಕಿಂಗ್ ಸ್ಕ್ರೀನ್ ತೋರಿಸಲು ಮತ್ತು ನಿನ್ನ ಸೆಷನ್ ಮುಗಿದಾಗ ಬಾಧಿತ ಪೇಜ್‌ಗಳನ್ನು ಪುನಃಸ್ಥಾಪಿಸಲು ಇದು ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶವನ್ನು ಬಳಸುತ್ತದೆ."
   },
   "onboarding_access_capability_intro": {
-    "message": "Cನಲ್ಲಿegಅಥವಾies ಮತ್ತು cusಕಿm domaರಲ್ಲಿs can ರಲ್ಲಿclude any website. Chrome will thereಸಾಕಾಂಶe request this capability:"
+    "message": "ವಿಭಾಗಗಳು ಮತ್ತು ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗಳು ಯಾವುದೇ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಒಳಗೊಂಡಿರಬಹುದು. ಆದ್ದರಿಂದ Chrome ಈ ಸಾಮರ್ಥ್ಯವನ್ನು ವಿನಂತಿಸುತ್ತದೆ:"
   },
   "onboarding_access_capability": {
-    "message": "Read ಮತ್ತು change all your dನಲ್ಲಿa ಮೇಲೆ all websites"
+    "message": "ಎಲ್ಲಾ ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ನಿನ್ನ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಓದಿ ಮತ್ತು ಬದಲಾಯಿಸಿ"
   },
   "onboarding_access_scope_note": {
-    "message": "ಫೋಕಸ್ Lock uses thನಲ್ಲಿ access ಮೇಲೆly while applyರಲ್ಲಿg your blockರಲ್ಲಿg rules."
+    "message": "Focus Lock ನಿನ್ನ ಬ್ಲಾಕಿಂಗ್ ನಿಯಮಗಳನ್ನು ಅನ್ವಯಿಸುವಾಗ ಮಾತ್ರ ಆ ಪ್ರವೇಶವನ್ನು ಬಳಸುತ್ತದೆ."
   },
   "onboarding_access_denied": {
-    "message": "Chrome ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಿಲ್ಲ. ನೀನು ಮರುಪ್ರಯತ್ನಿಸಬಹುದು."
+    "message": "Chrome ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಿಲ್ಲ. ನೀನು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಬಹುದು."
   },
   "onboarding_access_registration_error": {
-    "message": "Website access is granted, but ಫೋಕಸ್ Lock could not enable blockರಲ್ಲಿg. ಮರುಪ್ರಯತ್ನ setup ಅಥವಾ reload the extensiಮೇಲೆ."
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಾಗಿದೆ, ಆದರೆ Focus Lock ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಸೆಟಪ್ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಮರುಲೋಡ್ ಮಾಡಿ."
   },
   "onboarding_access_enable_button": {
-    "message": "Enable website blockರಲ್ಲಿg"
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸಿ"
   },
   "onboarding_access_defer_button": {
     "message": "ಈಗ ಬೇಡ"
   },
   "onboarding_sync_heading": {
-    "message": "Choose where your settರಲ್ಲಿgs are stಅಥವಾed"
+    "message": "ನಿನ್ನ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಎಲ್ಲಿ ಸಂಗ್ರಹವಾಗುತ್ತವೆ ಎಂದು ಆಯ್ಕೆಮಾಡಿ"
   },
   "onboarding_sync_switch_label": {
-    "message": "ಸಿಂಕ್ರೊನೈಜ್ across Chrome devices"
+    "message": "Chrome ಸಾಧನಗಳಾದ್ಯಂತ Sync ಮಾಡಿ"
   },
   "onboarding_sync_enabled_note": {
-    "message": "The approved dನಲ್ಲಿa below will use Chrome ಸಿಂಕ್ರೊನೈಜ್ after you fರಲ್ಲಿish setup."
+    "message": "ನೀನು ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸಿದ ನಂತರ ಕೆಳಗಿನ ಅನುಮೋದಿತ ಡೇಟಾ Chrome Sync ಬಳಸುತ್ತದೆ."
   },
   "onboarding_sync_disabled_note": {
-    "message": "All ಫೋಕಸ್ Lock dನಲ್ಲಿa stays ರಲ್ಲಿ this Chrome prನile."
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಈ Chrome ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಉಳಿಯುತ್ತದೆ."
   },
   "onboarding_sync_synced_title": {
-    "message": "ಸಿಂಕ್ರೊನೈಜ್ed"
+    "message": "ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ"
   },
   "onboarding_sync_local_title": {
-    "message": "Local ಮೇಲೆly"
+    "message": "ಸ್ಥಳೀಯ ಮಾತ್ರ"
   },
   "onboarding_sync_developer_note": {
-    "message": "Nothರಲ್ಲಿg is sent ಕಿ the ಫೋಕಸ್ Lock developer."
+    "message": "Focus Lock ಡೆವಲಪರ್‌ಗೆ ಏನೂ ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ."
   },
   "onboarding_sync_finish_enabled": {
-    "message": "Fರಲ್ಲಿish setup ಜೊತೆ sync enabled"
+    "message": "Sync ಸಕ್ರಿಯದೊಂದಿಗೆ ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸಿ"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "Fರಲ್ಲಿish setup ಜೊತೆout sync"
+    "message": "Sync ಇಲ್ಲದೆ ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸಿ"
   }
 }

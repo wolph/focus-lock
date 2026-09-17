@@ -764,5 +764,31 @@
   "shared_gate_end_title": {
     "message": "End this session",
     "description": "Heading of the gate that confirms ending the running session, in the popup and on the block page."
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Choose an available work tab.",
+    "description": "Answer given when the chosen work tab is gone or cannot be used."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "That tab is no longer available. Choose another work tab.",
+    "description": "Answer given when the chosen work tab has been closed."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Session started, but the work tab could not be saved. $CHOOSE$",
+    "description": "Shown when a session started but its work tab could not be stored. CHOOSE is the sentence asking the user to pick an available tab.",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "The focus session has changed. Choose your work tab again.",
+    "description": "Answer given when the work tab was chosen for a session that is no longer running."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "The focus session has changed. Reopen the popup.",
+    "description": "Answer given when a work tab action names a session that is no longer running."
   }
 }

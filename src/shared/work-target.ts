@@ -1,17 +1,17 @@
+import { t } from './i18n';
 import type { Rejection } from './messages';
 
 /** The one answer every ineligible or vanished work tab gets, from the popup and the overlay. */
-export const CHOOSE_WORK_TAB_ERROR: string = 'Choose an available work tab.';
-export const WORK_TAB_CLOSED_ERROR: string =
-  'That tab is no longer available. Choose another work tab.';
+export const CHOOSE_WORK_TAB_ERROR: string = t('shared_work_choose_tab_error');
+export const WORK_TAB_CLOSED_ERROR: string = t('shared_work_tab_closed_error');
 /** The `work-target-not-saved` start code carries this when the save itself failed. */
-export const WORK_TARGET_NOT_SAVED_ERROR: string = `Session started, but the work tab could not be saved. ${CHOOSE_WORK_TAB_ERROR}`;
+export const WORK_TARGET_NOT_SAVED_ERROR: string = t('shared_work_target_not_saved_error', {
+  CHOOSE: CHOOSE_WORK_TAB_ERROR,
+});
 /** The service found another session than the one the request named. */
-export const WORK_SESSION_CHANGED_ERROR: string =
-  'The focus session has changed. Choose your work tab again.';
+export const WORK_SESSION_CHANGED_ERROR: string = t('shared_work_session_changed_error');
 /** The engine refused a work target action because the named session is not the live one. */
-export const WORK_TARGET_ACTION_STALE_ERROR: string =
-  'The focus session has changed. Reopen the popup.';
+export const WORK_TARGET_ACTION_STALE_ERROR: string = t('shared_work_target_action_stale_error');
 
 /** One eligible tab as the pickers see it: identity, title and hostname, never the full URL. */
 export interface WorkTab {
