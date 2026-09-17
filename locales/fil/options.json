@@ -11,14 +11,8 @@
   "options_privacy_loading": {
     "message": "Nag-load privacy settings"
   },
-  "options_save_failed": {
-    "message": "Could not save. Try again."
-  },
   "options_blocking_heading": {
     "message": "Hadlanging"
-  },
-  "options_blocking_help": {
-    "message": "Custom rules block during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories block common time sinks."
   },
   "options_custom_blacklist_title": {
     "message": "Custom blacklist"
@@ -28,9 +22,6 @@
   },
   "options_bundled_categories_heading": {
     "message": "Bundled categories"
-  },
-  "options_bundled_categories_help": {
-    "message": "Bundled lists of common time sinks. Toggle a whole category, then open it to keep single sites available."
   },
   "options_schedule_heading": {
     "message": "Schedule"
@@ -122,36 +113,6 @@
   "options_rule_add": {
     "message": "Magdagdag rule"
   },
-  "options_rules_help": {
-    "message": "facebook.com covers that domain and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/shorts/ matches the full URL as a regular expression."
-  },
-  "options_number_error_positive": {
-    "message": "$LABEL$ must be a positive whole number.",
-    "placeholders": {
-      "LABEL": {
-        "content": "$1",
-        "example": "Focus minutes"
-      }
-    }
-  },
-  "options_number_error_whole": {
-    "message": "$LABEL$ must be a whole number of zero or greater.",
-    "placeholders": {
-      "LABEL": {
-        "content": "$1",
-        "example": "Site access credit limit (minutes)"
-      }
-    }
-  },
-  "options_number_error_nonnegative": {
-    "message": "$LABEL$ must be zero or greater.",
-    "placeholders": {
-      "LABEL": {
-        "content": "$1",
-        "example": "Minutes of site access per 30 minutes of focus"
-      }
-    }
-  },
   "options_number_error_minute_range": {
     "message": "$LABEL$ must be within the supported minuto range.",
     "placeholders": {
@@ -173,9 +134,6 @@
   "options_session_defaults_heading": {
     "message": "Sesyon defaults"
   },
-  "options_session_defaults_help": {
-    "message": "Mode and strictness are fixed when a session starts. These are the values the start form opens with."
-  },
   "options_preset_short_label": {
     "message": "Short session preset (minutos)"
   },
@@ -185,29 +143,11 @@
   "options_preset_deep_label": {
     "message": "Deep session preset (minutos)"
   },
-  "options_mode_blacklist_label": {
-    "message": "Blacklist: block listed sites"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Whitelist: allow only listed sites"
-  },
-  "options_strictness_flexible_label": {
-    "message": "Flexible: end the session whenever you choose"
-  },
-  "options_strictness_friction_label": {
-    "message": "Friction: stopping early uses the configured deliberation gate"
-  },
-  "options_strictness_hard_label": {
-    "message": "Hard: no early end, temporary site access only"
-  },
   "options_cycle_heading": {
     "message": "Focus and break cycle"
   },
   "options_cycle_help": {
     "message": "Defaults: 25 minuto focus, 5 minuto break, 15 minuto long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact minutos are convention, not science."
-  },
-  "options_cycle_default_label": {
-    "message": "Cycle focus and breaks by default"
   },
   "options_focus_minutes_label": {
     "message": "Focus minutos"
@@ -218,14 +158,8 @@
   "options_long_break_minutes_label": {
     "message": "Long break minutos"
   },
-  "options_long_every_label": {
-    "message": "Long break every Nth cycle"
-  },
   "options_gate_heading": {
     "message": "Deliberation gate"
-  },
-  "options_gate_help": {
-    "message": "A 10 second wait with an explicit back-to-work button measurably reduces impulse visits (field study, PNAS 2023). The longer wait and the typed sentence roughly double the effect."
   },
   "options_gate_wait_one": {
     "message": "Wait $COUNT$ second",
@@ -251,17 +185,8 @@
   "options_custom_delay_label": {
     "message": "Custom delay (seconds)"
   },
-  "options_custom_delay_error": {
-    "message": "Custom delay must be a positive whole number of seconds."
-  },
-  "options_gate_typed_phrase_label": {
-    "message": "Also require typing a sentence"
-  },
   "options_gate_force_end_label": {
     "message": "Paganahin \"Ignore timeout and end anyway\" button"
-  },
-  "options_credit_help": {
-    "message": "Site access credit accrues while you focus. Both access to all sites and a single-site unlock spend from the same balance. You can step away at any time without spending credit."
   },
   "options_earn_rate_label": {
     "message": "Minutes of site access per 30 minutos of focus"
@@ -329,24 +254,6 @@
       "HOST": {
         "content": "$1",
         "example": "reddit.com"
-      }
-    }
-  },
-  "options_all_sites_included_announcement": {
-    "message": "All $CATEGORY$ sites included.",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_all_sites_kept_available_announcement": {
-    "message": "All $CATEGORY$ sites kept available.",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
       }
     }
   },
@@ -440,36 +347,6 @@
       }
     }
   },
-  "options_category_uncheck_help": {
-    "message": "Uncheck a site to keep it available while the rest of the category is blocked."
-  },
-  "options_category_site_bulk_actions_aria": {
-    "message": "$CATEGORY$ site bulk actions",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_select_all_category_sites_aria": {
-    "message": "Select all $CATEGORY$ sites",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
-  "options_deselect_all_category_sites_aria": {
-    "message": "Deselect all $CATEGORY$ sites",
-    "placeholders": {
-      "CATEGORY": {
-        "content": "$1",
-        "example": "Social"
-      }
-    }
-  },
   "options_category_sites_region_aria": {
     "message": "$CATEGORY$ sites",
     "placeholders": {
@@ -503,15 +380,6 @@
   "options_schedule_cycles_label": {
     "message": "Cycle focus and breaks"
   },
-  "options_schedule_overlap_error": {
-    "message": "Overlaps another enabled entry on $DAY$.",
-    "placeholders": {
-      "DAY": {
-        "content": "$1",
-        "example": "Mon"
-      }
-    }
-  },
   "options_schedule_session_type_aria": {
     "message": "Sesyon type"
   },
@@ -538,9 +406,6 @@
   },
   "options_cancel": {
     "message": "Kanselahin"
-  },
-  "options_schedule_empty": {
-    "message": "No scheduled sessions yet."
   },
   "options_schedule_selected_days_aria": {
     "message": "Selected araws"
@@ -615,9 +480,6 @@
   "options_sound_play": {
     "message": "Play"
   },
-  "options_sound_preview_error": {
-    "message": "Could not preview the sound. Try again."
-  },
   "options_sounds_notifications_heading": {
     "message": "Notifications"
   },
@@ -636,26 +498,11 @@
   "options_privacy_website_off_title": {
     "message": "Website access is off"
   },
-  "options_privacy_website_off_detail": {
-    "message": "Focus Lock cannot block websites until you grant access."
-  },
   "options_privacy_website_enable_action": {
     "message": "Paganahin website blocking"
   },
-  "options_privacy_website_unregistered_title": {
-    "message": "Website access is granted, but blocking is not active"
-  },
-  "options_privacy_website_unregistered_detail": {
-    "message": "Chrome granted access, but Focus Lock could not register its blocking script."
-  },
   "options_privacy_website_retry_action": {
     "message": "Subukan Muli website blocking"
-  },
-  "options_privacy_website_on_title": {
-    "message": "Website blocking is enabled"
-  },
-  "options_privacy_website_on_detail": {
-    "message": "Focus Lock can apply your active blocking rules on regular website pages."
   },
   "options_privacy_confirm_local_history_title": {
     "message": "Alisin local history?"
@@ -678,65 +525,17 @@
   "options_privacy_confirm_synced_policy_action": {
     "message": "Kumpirmahin delete remote Sync data"
   },
-  "options_privacy_synced_policy_deleted": {
-    "message": "Remote Chrome Sync data deleted."
-  },
-  "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently deletes remote settings, block and allow lists, site access credit, streaks, and domain-level blocked-attempt aggregates from Chrome Sync. Local settings and statistics stay on this device."
-  },
   "options_privacy_confirm_all_title": {
     "message": "Alisin all Focus Lock data?"
   },
   "options_privacy_confirm_all_action": {
     "message": "Kumpirmahin delete all Focus Lock data"
   },
-  "options_privacy_all_deleted": {
-    "message": "All Focus Lock data deleted."
-  },
-  "options_privacy_all_body_intro": {
-    "message": "This permanently deletes every piece of Focus Lock data on this device and any Focus Lock copies left in Chrome Sync:"
-  },
-  "options_privacy_all_body_outro": {
-    "message": "Deleting everything is available only while no session is running. Focus Lock then returns to setup."
-  },
-  "options_privacy_error_local_history_clear": {
-    "message": "Local history could not be deleted. Try again."
-  },
-  "options_privacy_error_synced_policy_clear": {
-    "message": "Remote Chrome Sync data could not be deleted. Try again."
-  },
-  "options_privacy_error_all_clear": {
-    "message": "All Focus Lock data could not be deleted. Try again."
-  },
-  "options_privacy_error_sync_write": {
-    "message": "Chrome Sync could not save your latest changes. Your local save is safe."
-  },
-  "options_privacy_error_request": {
-    "message": "The request could not be completed. Try again."
-  },
   "options_privacy_website_access_updated": {
     "message": "Website access updated."
   },
-  "options_privacy_website_access_denied": {
-    "message": "Website access was not granted."
-  },
-  "options_privacy_error_website_access": {
-    "message": "Website access could not be updated. Try again."
-  },
   "options_privacy_website_blocking_enabled": {
     "message": "Website blocking enabled."
-  },
-  "options_privacy_error_export": {
-    "message": "Could not export the event log."
-  },
-  "options_privacy_error_export_retry": {
-    "message": "Could not export the event log. Try again."
-  },
-  "options_privacy_error_open_chrome_settings": {
-    "message": "Could not open Chrome permission settings. Try again."
-  },
-  "options_privacy_chrome_settings_opened": {
-    "message": "Chrome permission settings opened."
   },
   "options_privacy_open_chrome_settings": {
     "message": "Buksan Chrome permission settings"
@@ -744,26 +543,17 @@
   "options_privacy_sync_heading": {
     "message": "Chrome Sync"
   },
-  "options_privacy_sync_switch_label": {
-    "message": "Sync Focus Lock data across Chrome devices"
-  },
   "options_privacy_sync_enabled": {
     "message": "Chrome Sync enabled."
   },
   "options_privacy_sync_disabled": {
     "message": "Chrome Sync disabled."
   },
-  "options_privacy_sync_saving": {
-    "message": "Chrome Sync is still saving your latest changes."
-  },
   "options_privacy_sync_on": {
     "message": "Chrome Sync is on."
   },
   "options_privacy_sync_off": {
     "message": "Chrome Sync is off."
-  },
-  "options_privacy_sync_changes_saved": {
-    "message": "Chrome Sync changes saved."
   },
   "options_privacy_retry_enable_sync": {
     "message": "Subukan Muli enabling Chrome Sync"
@@ -777,14 +567,8 @@
   "options_privacy_scope_local_only": {
     "message": "Local only"
   },
-  "options_privacy_developer_note": {
-    "message": "Nothing is sent to the Focus Lock developer."
-  },
   "options_privacy_local_log_heading": {
     "message": "Local event log"
-  },
-  "options_privacy_local_log_detail": {
-    "message": "Export the detailed local log or delete local browsing and session history."
   },
   "options_privacy_export_local_log": {
     "message": "Export local event log"
@@ -810,9 +594,6 @@
   "options_privacy_all_data_detail": {
     "message": "Alisin every Focus Lock record on this device and any Focus Lock copies left in Chrome Sync, then start again from setup. Available while no session is running."
   },
-  "options_privacy_resuming_all_clear": {
-    "message": "Resuming deletion of all Focus Lock data."
-  },
   "options_privacy_retry_local_history": {
     "message": "Subukan Muli local history deletion"
   },
@@ -821,29 +602,5 @@
   },
   "options_privacy_retry_all_data": {
     "message": "Subukan Muli all data deletion"
-  },
-  "options_error_load": {
-    "message": "Could not load settings. Reload the page to try again."
-  },
-  "options_error_retry_boot": {
-    "message": "Could not restart Focus Lock. Try again."
-  },
-  "options_error_refresh_privacy": {
-    "message": "Could not refresh privacy settings. Reload the page."
-  },
-  "options_error_website_blocking": {
-    "message": "Could not update website blocking. Try again."
-  },
-  "options_error_change_sync": {
-    "message": "Could not change Chrome Sync. Try again."
-  },
-  "options_error_retry_sync": {
-    "message": "Could not retry Chrome Sync. Try again."
-  },
-  "options_error_save_settings": {
-    "message": "Could not save settings. Reload the page and try again."
-  },
-  "options_error_save_lists": {
-    "message": "Could not save lists. Reload the page and try again."
   }
 }

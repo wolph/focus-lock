@@ -187,6 +187,20 @@ export function checkDefault(en) {
 const NEAR_EN_LOCALES = new Set(['en_GB']);
 /** Above this share of byte-identical messages, a catalogue is untranslated rather than translated. */
 const MAX_IDENTICAL_SHARE = 0.1;
+/**
+ * The longest English message that may legitimately read the same in another language. A label
+ * like Notifications, Intention or Date is genuinely shared by many languages, and so are product
+ * names and the example domains inside placeholders. A whole sentence is not: an identical
+ * sentence is padding, whatever it claims to be.
+ */
+const MAX_SHARED_MESSAGE_CHARS = 25;
+
+/** True when a translation reading exactly like the English cannot be an honest translation. */
+export function isPadding(locale, sourceMessage, translatedMessage) {
+  if (NEAR_EN_LOCALES.has(locale)) return false;
+  if (translatedMessage !== sourceMessage) return false;
+  return [...sourceMessage].length > MAX_SHARED_MESSAGE_CHARS;
+}
 
 /** Validate one translated catalogue against en. */
 export function checkTranslation(locale, en, catalogue) {
@@ -212,8 +226,15 @@ export function checkTranslation(locale, en, catalogue) {
   }
   for (const [base, enCategories] of enFamilies) {
     const have = localeFamilies.get(base) ?? new Set();
-    for (const category of requiredCategories(locale)) {
-      if (!have.has(category)) errors.push(`${locale}: plural family ${base} lacks _${category}`);
+    // A family nobody has touched yet is a gap like any other untranslated key: Chrome falls back
+    // to the default locale for the whole family. A family that exists but lacks a form the
+    // language needs is a defect, because that one count would render in the wrong form.
+    if (have.size === 0) {
+      errors.push(`${locale}: plural family ${base} is missing`);
+    } else {
+      for (const category of requiredCategories(locale)) {
+        if (!have.has(category)) errors.push(`${locale}: plural family ${base} lacks _${category}`);
+      }
     }
     const source = en[`${base}_other`] ?? en[`${base}_${[...enCategories][0]}`];
     for (const category of PLURAL_CATEGORIES) {
@@ -228,8 +249,9 @@ export function checkTranslation(locale, en, catalogue) {
       ([key, source]) =>
         PLURAL_SUFFIX.exec(key) === null &&
         catalogue[key] !== undefined &&
-        // A product name, a glyph or a bare number is the same in every language.
-        source.message.length > 3 &&
+        // A short label, a product name, a glyph or a bare number can be the same in every
+        // language, so only messages long enough to make sameness implausible are counted.
+        [...source.message].length > MAX_SHARED_MESSAGE_CHARS &&
         /[a-z]{2}/.test(source.message),
     );
     const identical = comparable.filter(
@@ -313,8 +335,18 @@ export function unusedKeys(en, roots) {
   return unused;
 }
 
-/** Run every check over a source root. Returns { errors, warnings }. */
-export function checkLocales(root) {
+/**
+ * Run every check over a source root.
+ *
+ * A locale that is still being translated is not a broken build: Chrome falls back to the default
+ * locale for a key the catalogue does not carry, so a half-finished language shows English for the
+ * rest and nothing else changes. Those gaps are therefore counted and reported rather than failed.
+ * What is always an error is a catalogue that would render wrongly: a placeholder the translation
+ * drops or invents, a key that belongs to no message, a plural family missing a form the language
+ * needs, or a catalogue that is almost entirely the English text. Pass `complete` for the release
+ * gate, which additionally requires every locale to be finished.
+ */
+export function checkLocales(root, { complete = false } = {}) {
   const errors = [];
   const warnings = [];
   const present = existsSync(root)
@@ -346,11 +378,18 @@ export function checkLocales(root) {
       continue;
     }
     if (catalogue === null) {
-      errors.push(`${locale}: catalogue missing`);
+      (complete ? errors : warnings).push(`${locale}: not started`);
       continue;
     }
     const result = checkTranslation(locale, en, catalogue);
-    errors.push(...result.errors);
+    const missing = result.errors.filter((error) => error.endsWith(' is missing'));
+    const broken = result.errors.filter((error) => !error.endsWith(' is missing'));
+    errors.push(...broken);
+    if (missing.length > 0) {
+      (complete ? errors : warnings).push(
+        `${locale}: ${missing.length} message(s) not translated yet, falling back to ${DEFAULT_LOCALE}`,
+      );
+    }
     warnings.push(...result.warnings);
   }
   return { errors, warnings };
@@ -364,10 +403,27 @@ function pluralBaseOf(key) {
   return match === null ? null : key.slice(0, -match[0].length);
 }
 
+/**
+ * Restore a placeholder's closing dollar. Writing `$TIME` for `$TIME$` is the mistake translators
+ * make most often, and it is unambiguous to repair: the name has to be one the English message
+ * declares, and the text has to be missing that exact reference. Anything else is left alone.
+ */
+export function repairPlaceholders(source, text) {
+  const declared = Object.keys(source.placeholders ?? {});
+  if (declared.length === 0) return text;
+  let repaired = text;
+  for (const name of declared) {
+    if (repaired.includes(`$${name}$`)) continue;
+    repaired = repaired.replace(new RegExp(`\\$${name}(?!\\$)`, 'g'), `$${name}$`);
+  }
+  return repaired;
+}
+
 function translatedEntry(source, text) {
+  const message = repairPlaceholders(source, text);
   return source.placeholders === undefined
-    ? { message: text }
-    : { message: text, placeholders: source.placeholders };
+    ? { message }
+    : { message, placeholders: source.placeholders };
 }
 
 /**
@@ -403,17 +459,19 @@ export function mergeTranslation(root, locale, flat, write) {
         continue;
       }
       let candidate = added === 'fresh' ? translatedEntry(source, text) : previous[key];
-      const isEnglish = (value) =>
-        !NEAR_EN_LOCALES.has(locale) &&
-        value.message === source.message &&
-        source.message.length > 3;
+      const isEnglish = (value) => isPadding(locale, source.message, value.message);
       // A later submission that re-sends the English text must never overwrite a translation the
       // locale already had: the earlier work wins, and only a genuinely new translation replaces it.
       if (added === 'fresh' && isEnglish(candidate) && previous[key] !== undefined) {
         candidate = previous[key];
         added = 'carried';
       }
-      if (isEnglish(candidate)) result.untranslated += 1;
+      // Padding is not stored. Chrome falls back to the default locale for a key the catalogue
+      // does not carry, which renders the same words without claiming they were translated.
+      if (isEnglish(candidate)) {
+        result.untranslated += 1;
+        continue;
+      }
       out[key] = candidate;
       result[added] += 1;
     }

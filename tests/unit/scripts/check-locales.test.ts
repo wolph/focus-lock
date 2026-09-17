@@ -10,6 +10,7 @@ import {
   LOCALES,
   mergeSurfaces,
   mergeTranslation,
+  repairPlaceholders,
   translationProgress,
   unusedKeys,
 } from '../../../scripts/locales-lib.mjs';
@@ -132,11 +133,18 @@ describe('mergeSurfaces and generateLocales', () => {
     expect(generateLocales(src, out)).toEqual(['en']);
     const merged: Catalogue = JSON.parse(readFileSync(join(out, 'en', 'messages.json'), 'utf8'));
     expect(Object.keys(merged)).toEqual(['popup_start', 'shared_hint']);
-    const { errors } = checkLocales(src);
-    const missing: string[] = errors.filter((error: string): boolean =>
-      error.endsWith('catalogue missing'),
-    );
-    expect(missing).toHaveLength(LOCALES.length - 1);
+    // A locale nobody has started is a gap, not a broken build, so it warns by default and only
+    // fails under the release gate.
+    expect(
+      checkLocales(src).warnings.filter((warning: string): boolean =>
+        warning.endsWith('not started'),
+      ),
+    ).toHaveLength(LOCALES.length - 1);
+    expect(
+      checkLocales(src, { complete: true }).errors.filter((error: string): boolean =>
+        error.endsWith('not started'),
+      ),
+    ).toHaveLength(LOCALES.length - 1);
   });
 });
 
@@ -198,23 +206,39 @@ describe('mergeTranslation', () => {
     });
   });
 
-  it('stores a message that reads the same in both languages, and counts it', () => {
+  it('stores a short label that reads the same in both languages', () => {
     const src: string = seeded();
+    const written: Catalogue = merge(src, 'nl', {
+      popup_start: 'Start',
+      shared_hint: '$MINUTES$ min totaal',
+    });
+    // Start is Start in Dutch. A key that is never stored can never be complete, so a shared
+    // short label is kept.
+    expect(written.popup_start?.message).toBe('Start');
+    expect(written.shared_hint).toBeDefined();
+  });
+
+  it('drops a whole sentence that is still the English text', () => {
+    const root: string = mkdtempSync(join(tmpdir(), 'padding-'));
+    const src: string = join(root, 'locales');
+    const sentence: string = 'End the running session before deleting all data.';
+    mkdirSync(join(src, 'en'), { recursive: true });
+    writeFileSync(
+      join(src, 'en', 'popup.json'),
+      JSON.stringify({ popup_note: { message: sentence, description: 'A note.' } }),
+    );
     const written: Catalogue = {};
     const result = mergeTranslation(
       src,
       'nl',
-      { popup_start: 'Start', shared_hint: '$MINUTES$ min totaal' },
+      { popup_note: sentence },
       (surface: string, messages: Catalogue): void => {
         mkdirSync(join(src, 'nl'), { recursive: true });
         writeFileSync(join(src, 'nl', `${surface}.json`), JSON.stringify(messages));
         Object.assign(written, messages);
       },
     );
-    // A word can be the same in both languages, and a key that is never stored can never be
-    // complete. Wholesale padding is caught by share in checkTranslation instead.
-    expect(written.popup_start?.message).toBe('Start');
-    expect(written.shared_hint).toBeDefined();
+    expect(written.popup_note).toBeUndefined();
     expect(result.untranslated).toBe(1);
   });
 
@@ -264,11 +288,15 @@ describe('translationProgress', () => {
 });
 
 describe('mergeTranslation keeps earlier work', () => {
-  it('refuses to overwrite a translation with the English text', () => {
+  it('refuses to overwrite a translation with the English sentence', () => {
     const root: string = mkdtempSync(join(tmpdir(), 'keep-'));
     const src: string = join(root, 'locales');
+    const sentence: string = 'End the running session before deleting all data.';
     mkdirSync(join(src, 'en'), { recursive: true });
-    writeFileSync(join(src, 'en', 'popup.json'), JSON.stringify({ popup_start: EN.popup_start }));
+    writeFileSync(
+      join(src, 'en', 'popup.json'),
+      JSON.stringify({ popup_note: { message: sentence, description: 'A note.' } }),
+    );
     const write = (locale: string, flat: Record<string, string>): Catalogue => {
       const written: Catalogue = {};
       mergeTranslation(src, locale, flat, (surface: string, messages: Catalogue): void => {
@@ -278,8 +306,37 @@ describe('mergeTranslation keeps earlier work', () => {
       });
       return written;
     };
-    write('nl', { popup_start: 'Starten' });
-    const second: Catalogue = write('nl', { popup_start: 'Start' });
-    expect(second.popup_start?.message).toBe('Starten');
+    write('nl', { popup_note: 'Beeindig de lopende sessie voordat je alle gegevens verwijdert.' });
+    const second: Catalogue = write('nl', { popup_note: sentence });
+    expect(second.popup_note?.message).toBe(
+      'Beeindig de lopende sessie voordat je alle gegevens verwijdert.',
+    );
+  });
+});
+
+describe('repairPlaceholders', () => {
+  const source: { message: string; placeholders: Record<string, { content: string }> } = {
+    message: 'Theme: $CURRENT$. Switch to $NEXT$',
+    placeholders: { CURRENT: { content: '$1' }, NEXT: { content: '$2' } },
+  };
+
+  it('restores a closing dollar the translation dropped', () => {
+    expect(repairPlaceholders(source, 'テーマ：$CURRENT$。$NEXTに切り替え')).toBe(
+      'テーマ：$CURRENT$。$NEXT$に切り替え',
+    );
+  });
+
+  it('leaves a correct translation alone', () => {
+    expect(repairPlaceholders(source, 'Tema: $CURRENT$. Cambiar a $NEXT$')).toBe(
+      'Tema: $CURRENT$. Cambiar a $NEXT$',
+    );
+  });
+
+  it('does not invent a placeholder the translation never names', () => {
+    expect(repairPlaceholders(source, 'Tema: $CURRENT$')).toBe('Tema: $CURRENT$');
+  });
+
+  it('ignores a message with no placeholders at all', () => {
+    expect(repairPlaceholders({ message: 'Start' }, 'Comenca')).toBe('Comenca');
   });
 });

@@ -23,6 +23,12 @@ export function mergeSurfaces(surfaces: Array<{ surface: string; messages: Catal
 export function readCatalogue(root: string, locale: string): Catalogue | null;
 export function checkDefault(en: Catalogue): string[];
 export function checkTranslation(locale: string, en: Catalogue, catalogue: Catalogue): CheckResult;
+export function repairPlaceholders(source: MessageEntry, text: string): string;
+export function isPadding(
+  locale: string,
+  sourceMessage: string,
+  translatedMessage: string,
+): boolean;
 export function unusedKeys(en: Catalogue, roots: readonly string[]): string[];
 export interface MergeResult {
   fresh: number;
@@ -49,5 +55,5 @@ export interface Progress {
   total: number;
 }
 export function translationProgress(root: string, locale: string): Progress | null;
-export function checkLocales(root: string): CheckResult;
+export function checkLocales(root: string, options?: { complete?: boolean }): CheckResult;
 export function generateLocales(root: string, out: string): string[];

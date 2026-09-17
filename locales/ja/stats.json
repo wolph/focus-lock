@@ -185,7 +185,7 @@
     "message": "その他"
   },
   "stats_chart_minutes_tick": {
-    "message": "[JA: stats_chart_minutes_tick] $MINUTES$",
+    "message": "$MINUTES$m",
     "placeholders": {
       "MINUTES": {
         "content": "$1",

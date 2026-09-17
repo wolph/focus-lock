@@ -3,10 +3,10 @@
     "message": "Focus Lock"
   },
   "overlay_stopped_title": {
-    "message": "已锁定 - Focus Lock"
+    "message": "Locked - Focus Lock"
   },
   "overlay_return_label": {
-    "message": "$ACTION$：$DESTINATION$",
+    "message": "$ACTION$: $DESTINATION$",
     "placeholders": {
       "ACTION": {
         "content": "$1",
@@ -57,34 +57,34 @@
     "message": "无法联系 Focus Lock。請重試。"
   },
   "overlay_picker_heading": {
-    "message": "選擇工作頁籤"
+    "message": "Choose a work tab"
   },
   "overlay_picker_cancel": {
-    "message": "取消"
+    "message": "Cancel"
   },
   "overlay_picker_search_label": {
-    "message": "搜尋工作頁籤"
+    "message": "Search work tabs"
   },
   "overlay_picker_search_placeholder": {
     "message": "按標題或網站搜尋"
   },
   "overlay_picker_clear_search": {
-    "message": "清除搜尋"
+    "message": "Clear search"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "刷新頁籤"
+    "message": "Refresh tabs"
   },
   "overlay_picker_available_tabs": {
-    "message": "可用工作頁籤"
+    "message": "Available work tabs"
   },
   "overlay_picker_finding": {
-    "message": "正在查找可用頁籤..."
+    "message": "Finding available tabs..."
   },
   "overlay_picker_searching": {
-    "message": "正在搜尋工作頁籤..."
+    "message": "Searching work tabs..."
   },
   "overlay_picker_saving": {
-    "message": "正在保存工作頁籤..."
+    "message": "Saving work tab..."
   },
   "overlay_picker_no_tabs": {
     "message": "没有可用的工作頁籤。打開此会话允许的網站，然後刷新頁籤。"
@@ -96,7 +96,7 @@
     "message": "无法載入工作頁籤。請重試。"
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ 个匹配，共 $COUNT$ 个頁籤",
+    "message": "$MATCHES$ of $COUNT$ tab",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ 个匹配，共 $COUNT$ 个頁籤",
+    "message": "$MATCHES$ of $COUNT$ tabs",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -122,7 +122,7 @@
     }
   },
   "overlay_picker_tab_label": {
-    "message": "$TITLE$（$HOSTNAME$）",
+    "message": "$TITLE$ ($HOSTNAME$)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

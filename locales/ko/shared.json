@@ -67,7 +67,7 @@
     }
   },
   "shared_gate_requirement_typed": {
-    "message": "$WAIT 및 입력된 문",
+    "message": "$WAIT$ 및 입력된 문",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -76,7 +76,7 @@
     }
   },
   "shared_until_stopped_hint_flexible": {
-    "message": "$LABEL로 종료될 때까지 실행됩니다. 사이클 끔.",
+    "message": "$LABEL$로 종료될 때까지 실행됩니다. 사이클 끔.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -185,7 +185,7 @@
     "message": "도구모음 팝업은 세션 컨트롤을 소유합니다. 활성 세션은 시작할 때 캡처된 규칙을 유지합니다."
   },
   "shared_settings_timed": {
-    "message": "시간이 정해진 세션은 $TIME까지 활성화됩니다. 자동으로 종료됩니다. 도구모음 팝업을 사용하여 라이브 상태를 확인하십시오.",
+    "message": "시간이 정해진 세션은 $TIME$까지 활성화됩니다. 자동으로 종료됩니다. 도구모음 팝업을 사용하여 라이브 상태를 확인하십시오.",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -218,7 +218,7 @@
     "message": "종료됨：복구 실패"
   },
   "shared_duration_hours_minutes": {
-    "message": "$HOURS$시간 $MINUTES$분",
+    "message": "$HOURS$ h $MINUTES$ m",
     "placeholders": {
       "HOURS": {
         "content": "$1",
@@ -231,7 +231,7 @@
     }
   },
   "shared_duration_minutes": {
-    "message": "$MINUTES$분",
+    "message": "$MINUTES$ m",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -406,7 +406,7 @@
     "message": "모든 데이터를 삭제하기 전에 실행 중인 세션을 종료하십시오."
   },
   "shared_nav_brand": {
-    "message": "포커스 Lock"
+    "message": "Focus Lock"
   },
   "shared_nav_product": {
     "message": "제품 탐색"
@@ -445,7 +445,7 @@
     "message": "다크"
   },
   "shared_theme_button": {
-    "message": "테마：$CURRENT$. $NEXT로 전환",
+    "message": "테마：$CURRENT$. $NEXT$로 전환",
     "placeholders": {
       "CURRENT": {
         "content": "$1",
@@ -585,7 +585,7 @@
     }
   },
   "shared_overlay_locked_until": {
-    "message": "$TIME까지 잠금",
+    "message": "$TIME$까지 잠금",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -603,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "$HOST$ $CLOCK 잠금해제",
+    "message": "$HOST$ $CLOCK$ 잠금해제",
     "placeholders": {
       "HOST": {
         "content": "$1",

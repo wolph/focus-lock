@@ -6,7 +6,7 @@
     "message": "Sesi fokus Anda selesai."
   },
   "notify_schedule_window_body": {
-    "message": "Dikunci hingga $END$.",
+    "message": "Locked until $END$.",
     "placeholders": {
       "END": {
         "content": "$1",
@@ -66,7 +66,7 @@
     }
   },
   "notify_unknown_error": {
-    "message": "kesalahan tidak dikenal"
+    "message": "unknown error"
   },
   "notify_nothing_to_reset": {
     "message": "Fokus Lock is running, nothing to reset"

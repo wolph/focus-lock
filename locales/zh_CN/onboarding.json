@@ -1,12 +1,12 @@
 {
   "onboarding_page_title": {
-    "message": "设置 Focus Lock"
+    "message": "Set up Focus Lock"
   },
   "onboarding_eyebrow": {
-    "message": "Focus Lock 设置"
+    "message": "Focus Lock setup"
   },
   "onboarding_progress": {
-    "message": "第 $STEP$ 步，共 $TOTAL$ 步",
+    "message": "Step $STEP$ of $TOTAL$",
     "placeholders": {
       "STEP": {
         "content": "$1",
@@ -22,19 +22,19 @@
     "message": "无法恢复已保存的设置进度。从当前默认值重新开始。"
   },
   "onboarding_complete_heading": {
-    "message": "设置完成"
+    "message": "Setup complete"
   },
   "onboarding_complete_body": {
     "message": "您的选择已保存。从 Chrome 工具栏打开 Focus Lock 以启动会话。"
   },
   "onboarding_error_heading": {
-    "message": "设置不可用"
+    "message": "Setup unavailable"
   },
   "onboarding_error_body": {
     "message": "无法加载设置。请重试。"
   },
   "onboarding_retry_button": {
-    "message": "重试"
+    "message": "Retry"
   },
   "onboarding_save_error": {
     "message": "无法保存设置进度。请重试。"
@@ -73,7 +73,7 @@
     "message": "推荐的网站分类"
   },
   "onboarding_site_count_one": {
-    "message": "$COUNT$ 个网站",
+    "message": "$COUNT$ site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -82,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ 个网站",
+    "message": "$COUNT$ sites",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -91,7 +91,7 @@
     }
   },
   "onboarding_show_category_sites": {
-    "message": "显示 $CATEGORY$ 网站",
+    "message": "Show $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -100,7 +100,7 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "隐藏 $CATEGORY$ 网站",
+    "message": "Hide $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "onboarding_category_domains_label": {
-    "message": "$CATEGORY$ 域名",
+    "message": "$CATEGORY$ domains",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -118,10 +118,10 @@
     }
   },
   "onboarding_continue_button": {
-    "message": "继续"
+    "message": "Continue"
   },
   "onboarding_access_heading": {
-    "message": "启用网站阻止"
+    "message": "Enable website blocking"
   },
   "onboarding_access_local_matching": {
     "message": "Focus Lock 在本地检查页面地址，以便能够匹配您选择的分类和网站。它使用网站访问来显示其阻止屏幕并在您的会话结束时恢复受影响的页面。"
@@ -142,10 +142,10 @@
     "message": "已授予网站访问权限，但 Focus Lock 无法启用阻止。请重试设置或重新加载扩展程序。"
   },
   "onboarding_access_enable_button": {
-    "message": "启用网站阻止"
+    "message": "Enable website blocking"
   },
   "onboarding_access_defer_button": {
-    "message": "暂不启用"
+    "message": "Not now"
   },
   "onboarding_sync_heading": {
     "message": "选择您的设置存储位置"
@@ -160,10 +160,10 @@
     "message": "所有 Focus Lock 数据都保留在此 Chrome 配置文件中。"
   },
   "onboarding_sync_synced_title": {
-    "message": "已同步"
+    "message": "Synced"
   },
   "onboarding_sync_local_title": {
-    "message": "仅限本地"
+    "message": "Local only"
   },
   "onboarding_sync_developer_note": {
     "message": "未向 Focus Lock 开发者发送任何内容。"
@@ -172,6 +172,6 @@
     "message": "完成设置并启用同步"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "完成设置而不同步"
+    "message": "Finish setup without sync"
   }
 }

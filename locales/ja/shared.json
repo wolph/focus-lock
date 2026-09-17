@@ -67,7 +67,7 @@
     }
   },
   "shared_gate_requirement_typed": {
-    "message": "$WAITと入力された文",
+    "message": "$WAIT$と入力された文",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -76,7 +76,7 @@
     }
   },
   "shared_until_stopped_hint_flexible": {
-    "message": "$LABELで終了するまで実行されます。サイクルオフ。",
+    "message": "$LABEL$で終了するまで実行されます。サイクルオフ。",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -185,7 +185,7 @@
     "message": "ツールバーポップアップはセッションコントロールを所有しています。アクティブなセッションは開始時にキャプチャされたルールを保持します。"
   },
   "shared_settings_timed": {
-    "message": "時間制限セッションは$TIMEまでアクティブです。自動的に終了します。ツールバーポップアップを使用してライブステータスを取得してください。",
+    "message": "時間制限セッションは$TIME$までアクティブです。自動的に終了します。ツールバーポップアップを使用してライブステータスを取得してください。",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -218,7 +218,7 @@
     "message": "終了：リカバリー失敗"
   },
   "shared_duration_hours_minutes": {
-    "message": "[JA: shared_duration_hours_minutes] $HOURS$ $MINUTES$",
+    "message": "$HOURS$ h $MINUTES$ m",
     "placeholders": {
       "HOURS": {
         "content": "$1",
@@ -231,7 +231,7 @@
     }
   },
   "shared_duration_minutes": {
-    "message": "[JA: shared_duration_minutes] $MINUTES$",
+    "message": "$MINUTES$ m",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -406,7 +406,7 @@
     "message": "すべてのデータを削除する前に、実行中のセッションを終了してください。"
   },
   "shared_nav_brand": {
-    "message": "[JA: shared_nav_brand]"
+    "message": "Focus Lock"
   },
   "shared_nav_product": {
     "message": "製品ナビゲーション"
@@ -445,7 +445,7 @@
     "message": "ダーク"
   },
   "shared_theme_button": {
-    "message": "テーマ：$CURRENT$。$NEXTに切り替え",
+    "message": "テーマ：$CURRENT$。$NEXT$に切り替え",
     "placeholders": {
       "CURRENT": {
         "content": "$1",
@@ -585,7 +585,7 @@
     }
   },
   "shared_overlay_locked_until": {
-    "message": "$TIMEまでロック",
+    "message": "$TIME$までロック",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -603,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "$HOST$ $CLOCKのロック解除",
+    "message": "$HOST$ $CLOCK$のロック解除",
     "placeholders": {
       "HOST": {
         "content": "$1",

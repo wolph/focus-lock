@@ -6,7 +6,7 @@
     "message": "Fokasi Lock setup"
   },
   "onboarding_progress": {
-    "message": "Hatua $STEP$ ya $TOTAL$",
+    "message": "Step $STEP$ of $TOTAL$",
     "placeholders": {
       "STEP": {
         "content": "$1",
@@ -73,7 +73,7 @@
     "message": "Kategori za tovuti zilizorekomendwa"
   },
   "onboarding_site_count_one": {
-    "message": "Tovuti $COUNT$",
+    "message": "$COUNT$ site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -82,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "Tovuti $COUNT$",
+    "message": "$COUNT$ sites",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "onboarding_category_domains_label": {
-    "message": "Vikoa vya $CATEGORY$",
+    "message": "$CATEGORY$ domains",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -145,7 +145,7 @@
     "message": "Wezesha website blocking"
   },
   "onboarding_access_defer_button": {
-    "message": "Sio sasa"
+    "message": "Not now"
   },
   "onboarding_sync_heading": {
     "message": "Chagua mahali ambapo mipango yako inahifadhiwa"
@@ -160,10 +160,10 @@
     "message": "All Fokasi Lock data stays in this Chrome profile."
   },
   "onboarding_sync_synced_title": {
-    "message": "Lingana"
+    "message": "Synced"
   },
   "onboarding_sync_local_title": {
-    "message": "Ndani ya ndani tu"
+    "message": "Local only"
   },
   "onboarding_sync_developer_note": {
     "message": "Nothing is sent to the Fokasi Lock developer."
@@ -172,6 +172,6 @@
     "message": "Malizia kuanzisha na ulinganifu unawezesha"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "Malizia kuanzisha bila ulinganifu"
+    "message": "Finish setup without sync"
   }
 }

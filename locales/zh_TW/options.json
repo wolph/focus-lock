@@ -1,96 +1,96 @@
 {
   "options_page_title": {
-    "message": "Focus Lock 選項"
+    "message": "Focus Lock options"
   },
   "options_heading": {
-    "message": "Focus Lock 設定"
+    "message": "Focus Lock settings"
   },
   "options_loading_settings": {
-    "message": "載入設定中"
+    "message": "Loading settings"
   },
   "options_privacy_loading": {
-    "message": "載入隐私設定中"
+    "message": "Loading privacy settings"
   },
   "options_save_failed": {
     "message": "无法保存。請重試。"
   },
   "options_blocking_heading": {
-    "message": "封鎖"
+    "message": "Blocking"
   },
   "options_blocking_help": {
     "message": "自訂規則在黑名单会话期间封鎖。允許清單是在允許清單会话期间保持可达的。捆绑分類封鎖常见時間黑洞。"
   },
   "options_custom_blacklist_title": {
-    "message": "自訂黑名单"
+    "message": "Custom blacklist"
   },
   "options_whitelist_title": {
-    "message": "允許清單"
+    "message": "Whitelist"
   },
   "options_bundled_categories_heading": {
-    "message": "捆绑分類"
+    "message": "Bundled categories"
   },
   "options_bundled_categories_help": {
     "message": "常见時間黑洞的捆绑清單。切換整个分類，然後打開它以保持单个網站可用。"
   },
   "options_schedule_heading": {
-    "message": "日程"
+    "message": "Schedule"
   },
   "options_schedule_help": {
     "message": "会话在这些窗口内自欄啟動。此处設定的严格性适用于整个窗口。"
   },
   "options_behavior_heading": {
-    "message": "会话欄为"
+    "message": "Session behavior"
   },
   "options_budget_heading": {
-    "message": "網站存取點數"
+    "message": "Site access credit"
   },
   "options_notifications_heading": {
-    "message": "通知"
+    "message": "Notifications"
   },
   "options_privacy_heading": {
-    "message": "隐私和資料"
+    "message": "Privacy and data"
   },
   "options_load_error_retry": {
-    "message": "重試"
+    "message": "Retry"
   },
   "options_load_error_delete_all": {
     "message": "刪除所有内容并重新開始"
   },
   "options_load_error_keep_data": {
-    "message": "保留我的資料"
+    "message": "Keep my data"
   },
   "options_delete_all_data": {
     "message": "刪除所有 Focus Lock 資料"
   },
   "options_dirty_saving": {
-    "message": "保存更改中"
+    "message": "Saving changes"
   },
   "options_dirty_unsaved": {
-    "message": "有未保存的更改"
+    "message": "Unsaved changes"
   },
   "options_dirty_clean": {
-    "message": "没有未保存的更改"
+    "message": "No unsaved changes"
   },
   "options_dirty_discard": {
-    "message": "放弃更改"
+    "message": "Discard changes"
   },
   "options_dirty_save": {
-    "message": "保存更改"
+    "message": "Save changes"
   },
   "options_session_status_label": {
-    "message": "会话狀態"
+    "message": "Session status"
   },
   "options_rule_kind_host_badge": {
-    "message": "網域"
+    "message": "domain"
   },
   "options_rule_kind_regex_badge": {
-    "message": "正则表达式"
+    "message": "regex"
   },
   "options_rule_remove": {
-    "message": "移除"
+    "message": "Remove"
   },
   "options_rule_remove_aria": {
-    "message": "移除 $PATTERN$",
+    "message": "Remove $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -99,19 +99,19 @@
     }
   },
   "options_rules_empty": {
-    "message": "尚无規則。"
+    "message": "No rules yet."
   },
   "options_rule_kind_aria": {
-    "message": "規則類型"
+    "message": "Rule kind"
   },
   "options_rule_kind_host_option": {
-    "message": "網域或子網域"
+    "message": "domain or subdomain"
   },
   "options_rule_kind_regex_option": {
-    "message": "正则表达式（完整 URL）"
+    "message": "regex (full URL)"
   },
   "options_rule_pattern_aria": {
-    "message": "模式"
+    "message": "Pattern"
   },
   "options_rule_pattern_placeholder_host": {
     "message": "facebook.com"
@@ -120,7 +120,7 @@
     "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
-    "message": "添加規則"
+    "message": "Add rule"
   },
   "options_rules_help": {
     "message": "facebook.com 涵盖该網域及其每个子網域。news.ycombinator.com 涵盖该子網域及其下的任何内容。/youtube\\.com\\/shorts/ 将完整 URL 作为正则表达式进欄匹配。"
@@ -171,7 +171,7 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "会话預設值"
+    "message": "Session defaults"
   },
   "options_session_defaults_help": {
     "message": "会话啟動時模式和严格性是固定的。这些是啟動表单打開的值。"
@@ -201,7 +201,7 @@
     "message": "強制鎖定：无法提前結束，仅限临時網站存取"
   },
   "options_cycle_heading": {
-    "message": "专注和休息週期"
+    "message": "Focus and break cycle"
   },
   "options_cycle_help": {
     "message": "預設值：25 分鐘专注，5 分鐘休息，每 4 个週期有 15 分鐘长休息。日程上的休息在研究样本中击败随意休息以改善心情和专注。确切的分鐘数是约定俗成的，不是科学的。"
@@ -210,25 +210,25 @@
     "message": "預設情况下循环专注和休息"
   },
   "options_focus_minutes_label": {
-    "message": "专注分鐘数"
+    "message": "Focus minutes"
   },
   "options_short_break_minutes_label": {
-    "message": "短休息分鐘数"
+    "message": "Short break minutes"
   },
   "options_long_break_minutes_label": {
-    "message": "长休息分鐘数"
+    "message": "Long break minutes"
   },
   "options_long_every_label": {
     "message": "每第 N 个週期休息一次"
   },
   "options_gate_heading": {
-    "message": "確認門檻"
+    "message": "Deliberation gate"
   },
   "options_gate_help": {
     "message": "10 秒等待加上明确的回到工作按钮可以显著减少冲动存取（现场研究，PNAS 2023）。更长的等待和輸入的句子大约将效果加倍。"
   },
   "options_gate_wait_one": {
-    "message": "等待 $COUNT$ 秒",
+    "message": "Wait $COUNT$ second",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -237,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "等待 $COUNT$ 秒",
+    "message": "Wait $COUNT$ seconds",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -246,10 +246,10 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "自訂"
+    "message": "Custom"
   },
   "options_custom_delay_label": {
-    "message": "自訂延遲（秒）"
+    "message": "Custom delay (seconds)"
   },
   "options_custom_delay_error": {
     "message": "自訂延遲必须是大于零的整数秒数。"
@@ -276,7 +276,7 @@
     "message": "網站解鎖時长（分鐘）"
   },
   "options_streak_heading": {
-    "message": "連續記錄和保留"
+    "message": "Streak and retention"
   },
   "options_streak_help": {
     "message": "連續記錄計算达到目标的天数。一个預設会话保持链条活跃，冻结令牌修复错过的一天。"
@@ -288,10 +288,10 @@
     "message": "冻结令牌间隔（天）"
   },
   "options_retention_label": {
-    "message": "保留每日統計（天）"
+    "message": "Keep daily stats (days)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ 分類已啟用。",
+    "message": "$CATEGORY$ category on.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -300,7 +300,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ 分類已停用。",
+    "message": "$CATEGORY$ category off.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -309,13 +309,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "所有分類已啟用。"
+    "message": "All categories on."
   },
   "options_all_categories_off_announcement": {
-    "message": "所有分類已停用。"
+    "message": "All categories off."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ 已包含。",
+    "message": "$HOST$ included.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -324,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ 保持可用。",
+    "message": "$HOST$ kept available.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -351,10 +351,10 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "分類批量操作"
+    "message": "Category bulk actions"
   },
   "options_selected_count": {
-    "message": "已選擇 $COUNT$",
+    "message": "Selected $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "已取消選擇 $COUNT$",
+    "message": "Deselected $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,19 +372,19 @@
     }
   },
   "options_select_all": {
-    "message": "全选"
+    "message": "Select all"
   },
   "options_deselect_all": {
-    "message": "取消全选"
+    "message": "Deselect all"
   },
   "options_select_all_categories_aria": {
-    "message": "全选分類"
+    "message": "Select all categories"
   },
   "options_deselect_all_categories_aria": {
-    "message": "取消全选分類"
+    "message": "Deselect all categories"
   },
   "options_show_category_sites": {
-    "message": "顯示 $CATEGORY$ 網站",
+    "message": "Show $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -393,7 +393,7 @@
     }
   },
   "options_hide_category_sites": {
-    "message": "隱藏 $CATEGORY$ 網站",
+    "message": "Hide $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -402,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "已包含 $COUNT$ 个網站",
+    "message": "$COUNT$ site included",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -411,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "已包含 $COUNT$ 个網站",
+    "message": "$COUNT$ sites included",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -420,7 +420,7 @@
     }
   },
   "options_category_off": {
-    "message": "分類已停用"
+    "message": "Category off"
   },
   "options_included_when_enabled_one": {
     "message": "啟用時包含 $COUNT$ 个",
@@ -471,7 +471,7 @@
     }
   },
   "options_category_sites_region_aria": {
-    "message": "$CATEGORY$ 網站",
+    "message": "$CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -480,28 +480,28 @@
     }
   },
   "options_day_sun": {
-    "message": "日"
+    "message": "Sun"
   },
   "options_day_mon": {
-    "message": "一"
+    "message": "Mon"
   },
   "options_day_tue": {
-    "message": "二"
+    "message": "Tue"
   },
   "options_day_wed": {
-    "message": "三"
+    "message": "Wed"
   },
   "options_day_thu": {
-    "message": "四"
+    "message": "Thu"
   },
   "options_day_fri": {
-    "message": "五"
+    "message": "Fri"
   },
   "options_day_sat": {
-    "message": "六"
+    "message": "Sat"
   },
   "options_schedule_cycles_label": {
-    "message": "循环专注和休息"
+    "message": "Cycle focus and breaks"
   },
   "options_schedule_overlap_error": {
     "message": "与 $DAY$ 上啟用的另一条目重叠。",
@@ -513,40 +513,40 @@
     }
   },
   "options_schedule_session_type_aria": {
-    "message": "会话類型"
+    "message": "Session type"
   },
   "options_schedule_entry_legend": {
-    "message": "日程条目"
+    "message": "Schedule entry"
   },
   "options_schedule_start_label": {
-    "message": "開始"
+    "message": "Start"
   },
   "options_schedule_end_label": {
-    "message": "結束"
+    "message": "End"
   },
   "options_schedule_duration_legend": {
-    "message": "時长"
+    "message": "Duration"
   },
   "options_schedule_intention_label": {
-    "message": "意圖"
+    "message": "Intention"
   },
   "options_schedule_intention_placeholder": {
-    "message": "此時間的用途"
+    "message": "what this time is for"
   },
   "options_schedule_save_entry": {
-    "message": "保存条目"
+    "message": "Save entry"
   },
   "options_cancel": {
-    "message": "取消"
+    "message": "Cancel"
   },
   "options_schedule_empty": {
     "message": "尚无計畫的会话。"
   },
   "options_schedule_selected_days_aria": {
-    "message": "选定的日期"
+    "message": "Selected days"
   },
   "options_schedule_time_range": {
-    "message": "$START$ 至 $END$",
+    "message": "$START$ to $END$",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -559,52 +559,52 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "黑名单"
+    "message": "blacklist"
   },
   "options_schedule_mode_whitelist": {
-    "message": "允許清單"
+    "message": "whitelist"
   },
   "options_schedule_strictness_flexible": {
-    "message": "靈活"
+    "message": "flexible"
   },
   "options_schedule_strictness_friction": {
-    "message": "緩衝"
+    "message": "friction"
   },
   "options_schedule_strictness_hard": {
-    "message": "強制鎖定"
+    "message": "hard"
   },
   "options_schedule_enabled_label": {
-    "message": "已啟用"
+    "message": "Enabled"
   },
   "options_schedule_edit": {
-    "message": "編輯"
+    "message": "Edit"
   },
   "options_schedule_delete": {
-    "message": "刪除"
+    "message": "Delete"
   },
   "options_schedule_add": {
-    "message": "添加日程条目"
+    "message": "Add schedule entry"
   },
   "options_sounds_heading": {
-    "message": "声音"
+    "message": "Sounds"
   },
   "options_master_volume": {
-    "message": "主音量"
+    "message": "Master volume"
   },
   "options_sound_session_complete": {
-    "message": "会话完成"
+    "message": "Session complete"
   },
   "options_sound_break_start": {
-    "message": "休息開始"
+    "message": "Break start"
   },
   "options_sound_break_end": {
-    "message": "休息結束"
+    "message": "Break end"
   },
   "options_sound_schedule_start": {
-    "message": "日程自动啟動"
+    "message": "Schedule auto-start"
   },
   "options_sound_preview_aria": {
-    "message": "预览 $SOUND$",
+    "message": "Preview $SOUND$",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -613,34 +613,34 @@
     }
   },
   "options_sound_play": {
-    "message": "播放"
+    "message": "Play"
   },
   "options_sound_preview_error": {
     "message": "无法预览声音。請重試。"
   },
   "options_sounds_notifications_heading": {
-    "message": "通知"
+    "message": "Notifications"
   },
   "options_session_complete_notification": {
     "message": "会话完成時顯示系统通知"
   },
   "options_badge_heading": {
-    "message": "徽章"
+    "message": "Badge"
   },
   "options_badge_countdown": {
     "message": "在工具栏图标上顯示剩余時間"
   },
   "options_privacy_website_access_heading": {
-    "message": "網站存取"
+    "message": "Website access"
   },
   "options_privacy_website_off_title": {
-    "message": "網站存取已關閉"
+    "message": "Website access is off"
   },
   "options_privacy_website_off_detail": {
     "message": "在您授予存取權限之前，Focus Lock 无法封鎖網站。"
   },
   "options_privacy_website_enable_action": {
-    "message": "啟用網站封鎖"
+    "message": "Enable website blocking"
   },
   "options_privacy_website_unregistered_title": {
     "message": "已授予網站存取權限，但封鎖不活跃"
@@ -649,7 +649,7 @@
     "message": "Chrome 已授予存取權限，但 Focus Lock 无法注册其封鎖脚本。"
   },
   "options_privacy_website_retry_action": {
-    "message": "重試網站封鎖"
+    "message": "Retry website blocking"
   },
   "options_privacy_website_on_title": {
     "message": "已啟用網站封鎖"
@@ -658,13 +658,13 @@
     "message": "Focus Lock 可以在常规网页上应用您的活跃封鎖規則。"
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "刪除本地历史记录？"
+    "message": "Delete local history?"
   },
   "options_privacy_confirm_local_history_action": {
     "message": "確認刪除本地历史记录"
   },
   "options_privacy_local_history_deleted": {
-    "message": "本地历史记录已刪除。"
+    "message": "Local history deleted."
   },
   "options_privacy_confirm_local_history_body": {
     "message": "这将永久刪除此设备上的完整 URL、专注意圖和詳細会话事件。它不会清除執欄的会话，執欄的会话保留其意圖和它封鎖的每个頁籤的地址。結束会话会清除意圖并啟動清理，清理会清除所有打開的網站頁籤，清理在完成時移除每个已儲存的地址。"
@@ -673,7 +673,7 @@
     "message": "这将永久刪除此设备上的完整 URL、专注意圖和詳細会话事件，加上仅限本地的聚合統計。它不会清除執欄的会话，執欄的会话保留其意圖和它封鎖的每个頁籤的地址。結束会话会清除意圖并啟動清理，清理会清除所有打開的網站頁籤，清理在完成時移除每个已儲存的地址。"
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "刪除远程同步資料？"
+    "message": "Delete remote Sync data?"
   },
   "options_privacy_confirm_synced_policy_action": {
     "message": "確認刪除远程同步資料"
@@ -715,7 +715,7 @@
     "message": "无法完成請求。請重試。"
   },
   "options_privacy_website_access_updated": {
-    "message": "網站存取已更新。"
+    "message": "Website access updated."
   },
   "options_privacy_website_access_denied": {
     "message": "未授予網站存取權限。"
@@ -724,7 +724,7 @@
     "message": "无法更新網站存取。請重試。"
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "已啟用網站封鎖。"
+    "message": "Website blocking enabled."
   },
   "options_privacy_error_export": {
     "message": "无法导出事件日志。"
@@ -742,25 +742,25 @@
     "message": "打開 Chrome 權限設定"
   },
   "options_privacy_sync_heading": {
-    "message": "Chrome 同步"
+    "message": "Chrome Sync"
   },
   "options_privacy_sync_switch_label": {
     "message": "在 Chrome 设备间同步 Focus Lock 資料"
   },
   "options_privacy_sync_enabled": {
-    "message": "已啟用 Chrome 同步。"
+    "message": "Chrome Sync enabled."
   },
   "options_privacy_sync_disabled": {
-    "message": "已停用 Chrome 同步。"
+    "message": "Chrome Sync disabled."
   },
   "options_privacy_sync_saving": {
     "message": "Chrome 同步仍在保存您的最新更改。"
   },
   "options_privacy_sync_on": {
-    "message": "Chrome 同步已啟用。"
+    "message": "Chrome Sync is on."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome 同步已停用。"
+    "message": "Chrome Sync is off."
   },
   "options_privacy_sync_changes_saved": {
     "message": "Chrome 同步更改已保存。"
@@ -769,43 +769,43 @@
     "message": "重試啟用 Chrome 同步"
   },
   "options_privacy_retry_sync": {
-    "message": "重試 Chrome 同步"
+    "message": "Retry Chrome Sync"
   },
   "options_privacy_scope_synced": {
-    "message": "已同步"
+    "message": "Synced"
   },
   "options_privacy_scope_local_only": {
-    "message": "仅限本地"
+    "message": "Local only"
   },
   "options_privacy_developer_note": {
     "message": "未向 Focus Lock 開发者发送任何内容。"
   },
   "options_privacy_local_log_heading": {
-    "message": "本地事件日志"
+    "message": "Local event log"
   },
   "options_privacy_local_log_detail": {
     "message": "导出詳細本地日志或刪除本地浏览和会话历史记录。"
   },
   "options_privacy_export_local_log": {
-    "message": "导出本地事件日志"
+    "message": "Export local event log"
   },
   "options_privacy_local_log_exported": {
-    "message": "本地事件日志已导出。"
+    "message": "Local event log exported."
   },
   "options_privacy_delete_local_history": {
-    "message": "刪除本地历史记录"
+    "message": "Delete local history"
   },
   "options_privacy_remote_data_heading": {
-    "message": "远程同步資料"
+    "message": "Remote Sync data"
   },
   "options_privacy_remote_data_detail": {
     "message": "刪除 Chrome 同步中留下的 Focus Lock 副本，不更改此设备。"
   },
   "options_privacy_delete_remote_data": {
-    "message": "刪除远程同步資料"
+    "message": "Delete remote Sync data"
   },
   "options_privacy_all_data_heading": {
-    "message": "所有 Focus Lock 資料"
+    "message": "All Focus Lock data"
   },
   "options_privacy_all_data_detail": {
     "message": "刪除此设备上的每条 Focus Lock 记录和 Chrome 同步中留下的任何 Focus Lock 副本，然後从設定重新開始。在没有会话執欄時可用。"
@@ -820,7 +820,7 @@
     "message": "重試远程同步刪除"
   },
   "options_privacy_retry_all_data": {
-    "message": "重試所有資料刪除"
+    "message": "Retry all data deletion"
   },
   "options_error_load": {
     "message": "无法載入設定。重新載入页面以重試。"

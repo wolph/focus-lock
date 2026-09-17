@@ -6,7 +6,7 @@
     "message": "Kikao chako cha fokasi kimekamilika."
   },
   "notify_schedule_window_body": {
-    "message": "Imefungwa hadi $END$.",
+    "message": "Locked until $END$.",
     "placeholders": {
       "END": {
         "content": "$1",
@@ -66,7 +66,7 @@
     }
   },
   "notify_unknown_error": {
-    "message": "hitilafu isiyojulikana"
+    "message": "unknown error"
   },
   "notify_nothing_to_reset": {
     "message": "Fokasi Lock is running, nothing to reset"

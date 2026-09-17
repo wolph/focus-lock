@@ -6,7 +6,7 @@
     "message": "Fokus Lock setup"
   },
   "onboarding_progress": {
-    "message": "Langkah $STEP$ dari $TOTAL$",
+    "message": "Step $STEP$ of $TOTAL$",
     "placeholders": {
       "STEP": {
         "content": "$1",
@@ -73,7 +73,7 @@
     "message": "Kategori laman web yang direkomendasikan"
   },
   "onboarding_site_count_one": {
-    "message": "$COUNT$ situs",
+    "message": "$COUNT$ site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -82,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ situs",
+    "message": "$COUNT$ sites",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "onboarding_category_domains_label": {
-    "message": "Domain $CATEGORY$",
+    "message": "$CATEGORY$ domains",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -145,7 +145,7 @@
     "message": "Aktifkan website blocking"
   },
   "onboarding_access_defer_button": {
-    "message": "Bukan sekarang"
+    "message": "Not now"
   },
   "onboarding_sync_heading": {
     "message": "Pilih di mana pengaturan Anda disimpan"
@@ -160,10 +160,10 @@
     "message": "All Fokus Lock data stays in this Chrome profile."
   },
   "onboarding_sync_synced_title": {
-    "message": "Disinkronkan"
+    "message": "Synced"
   },
   "onboarding_sync_local_title": {
-    "message": "Hanya lokal"
+    "message": "Local only"
   },
   "onboarding_sync_developer_note": {
     "message": "Nothing is sent to the Fokus Lock developer."
@@ -172,6 +172,6 @@
     "message": "Selesaikan penyiapan dengan sinkronisasi diaktifkan"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "Selesaikan penyiapan tanpa sinkronisasi"
+    "message": "Finish setup without sync"
   }
 }

@@ -478,7 +478,7 @@
     "message": "선택한 때 언제든지 세션을 종료할 수 있습니다."
   },
   "popup_session_type_friction_hint": {
-    "message": "조기 종료는 $WAIT가 필요합니다. 타이핑이 필요하지 않습니다.",
+    "message": "조기 종료는 $WAIT$가 필요합니다. 타이핑이 필요하지 않습니다.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -487,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "조기 종료는 $WAIT과 입력된 확인이 필요합니다.",
+    "message": "조기 종료는 $WAIT$과 입력된 확인이 필요합니다.",
     "placeholders": {
       "WAIT": {
         "content": "$1",

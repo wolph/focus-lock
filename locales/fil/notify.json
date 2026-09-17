@@ -1,12 +1,12 @@
 {
   "notify_session_complete_title": {
-    "message": "Tapos na ang sesyon ng focus"
+    "message": "Focus session complete"
   },
   "notify_session_complete_body": {
     "message": "Tapos na ang iyong sesyon ng focus."
   },
   "notify_schedule_window_body": {
-    "message": "Naka-lock hanggang $END$.",
+    "message": "Locked until $END$.",
     "placeholders": {
       "END": {
         "content": "$1",
@@ -66,7 +66,7 @@
     }
   },
   "notify_unknown_error": {
-    "message": "hindi kilalang error"
+    "message": "unknown error"
   },
   "notify_nothing_to_reset": {
     "message": "Tumatakbo ang Focus Lock, walang i-reset"
