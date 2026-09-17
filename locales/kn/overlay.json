@@ -3,7 +3,7 @@
     "message": "ಫೋಕಸ್ Lock"
   },
   "overlay_stopped_title": {
-    "message": "Locked - ಫೋಕಸ್ Lock"
+    "message": "ಲಾಕ್ - Focus Lock"
   },
   "overlay_return_label": {
     "message": "$ACTION$: $DESTINATION$",
@@ -36,67 +36,67 @@
     }
   },
   "overlay_target_checking": {
-    "message": "ಪರೀಕ್ಷೆ available wಅಥವಾk tabs..."
+    "message": "ಲಭ್ಯವಿರುವ ವರ್ಕ್ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸುತ್ತಿದೆ..."
   },
   "overlay_target_pick_tab": {
-    "message": "Pick an open tab ಕಿ cಮೇಲೆtರಲ್ಲಿue your task."
+    "message": "ನಿನ್ನ ಕೆಲಸ ಮುಂದುವರಿಸಲು ತೆರೆದಿರುವ ಟ್ಯಾಬ್ ಆಯ್ಕೆಮಾಡು."
   },
   "overlay_target_session_unavailable": {
-    "message": "Your focus sessiಮೇಲೆ is not available. Try agaರಲ್ಲಿ, ಅಥವಾ reload this page."
+    "message": "ನಿನ್ನ ಫೋಕಸ್ ಸೆಷನ್ ಲಭ್ಯವಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು, ಅಥವಾ ಈ ಪೇಜ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
   },
   "overlay_target_lookup_failed": {
-    "message": "Could not load your wಅಥವಾk tab. Try agaರಲ್ಲಿ, ಅಥವಾ reload this page."
+    "message": "ನಿನ್ನ ವರ್ಕ್ ಟ್ಯಾಬ್ ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು, ಅಥವಾ ಈ ಪೇಜ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
   },
   "overlay_target_reconnect": {
-    "message": "Reload this page ಕಿ recಮೇಲೆnect ಕಿ ಫೋಕಸ್ Lock."
+    "message": "Focus Lock ಗೆ ಮತ್ತೆ ಸಂಪರ್ಕಿಸಲು ಈ ಪೇಜ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
   },
   "overlay_target_page_changed": {
-    "message": "The requestರಲ್ಲಿg page has changed. Reload the page."
+    "message": "ವಿನಂತಿಸುವ ಪೇಜ್ ಬದಲಾಗಿದೆ. ಪೇಜ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ."
   },
   "overlay_target_transport_error": {
-    "message": "Could not reach ಫೋಕಸ್ Lock. Try agaರಲ್ಲಿ."
+    "message": "Focus Lock ಅನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "overlay_picker_heading": {
-    "message": "Choose a wಅಥವಾk tab"
+    "message": "ಒಂದು ವರ್ಕ್ ಟ್ಯಾಬ್ ಆಯ್ಕೆಮಾಡಿ"
   },
   "overlay_picker_cancel": {
     "message": "ರದ್ದುಮಾಡಿ"
   },
   "overlay_picker_search_label": {
-    "message": "Search wಅಥವಾk tabs"
+    "message": "ವರ್ಕ್ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಹುಡುಕಿ"
   },
   "overlay_picker_search_placeholder": {
-    "message": "Search ಮೂಲಕ title ಅಥವಾ website"
+    "message": "ಶೀರ್ಷಿಕೆ ಅಥವಾ ವೆಬ್‌ಸೈಟ್ ಮೂಲಕ ಹುಡುಕಿ"
   },
   "overlay_picker_clear_search": {
     "message": "ಹುಡುಕಾಟ ತೆರವುಗೊಳಿಸಿ"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "ಟ್ಯಾಬ್‌ ರಿಫ್ರೆಶ್ ಮಾಡಿ"
+    "message": "ಟ್ಯಾಬ್‌ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಿ"
   },
   "overlay_picker_available_tabs": {
-    "message": "ಲಭ್ಯ wಅಥವಾk tabs"
+    "message": "ಲಭ್ಯವಿರುವ ವರ್ಕ್ ಟ್ಯಾಬ್‌ಗಳು"
   },
   "overlay_picker_finding": {
-    "message": "Fರಲ್ಲಿdರಲ್ಲಿg available tabs..."
+    "message": "ಲಭ್ಯವಿರುವ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಹುಡುಕುತ್ತಿದೆ..."
   },
   "overlay_picker_searching": {
-    "message": "Searchರಲ್ಲಿg wಅಥವಾk tabs..."
+    "message": "ವರ್ಕ್ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಹುಡುಕುತ್ತಿದೆ..."
   },
   "overlay_picker_saving": {
-    "message": "Savರಲ್ಲಿg wಅಥವಾk tab..."
+    "message": "ವರ್ಕ್ ಟ್ಯಾಬ್ ಉಳಿಸುತ್ತಿದೆ..."
   },
   "overlay_picker_no_tabs": {
-    "message": "No available wಅಥವಾk tabs. Open a site allowed ಮೂಲಕ this sessiಮೇಲೆ, then refresh tabs."
+    "message": "ಲಭ್ಯವಿರುವ ವರ್ಕ್ ಟ್ಯಾಬ್‌ಗಳಿಲ್ಲ. ಈ ಸೆಷನ್ ಅನುಮತಿಸುವ ಸೈಟ್ ತೆರೆಯಿರಿ, ನಂತರ ಟ್ಯಾಬ್‌ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಿ."
   },
   "overlay_picker_no_matches": {
-    "message": "No mನಲ್ಲಿchರಲ್ಲಿg tabs. Try another search ಅಥವಾ clear the search."
+    "message": "ಹೊಂದಾಣಿಕೆಯಾಗುವ ಟ್ಯಾಬ್‌ಗಳಿಲ್ಲ. ಬೇರೊಂದು ಹುಡುಕಾಟ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಹುಡುಕಾಟ ತೆರವುಗೊಳಿಸಿ."
   },
   "overlay_picker_load_failed": {
-    "message": "Could not load wಅಥವಾk tabs. Try agaರಲ್ಲಿ."
+    "message": "ವರ್ಕ್ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ ನ $COUNT$ tab",
+    "message": "$COUNT$ ರಲ್ಲಿ $MATCHES$ ಟ್ಯಾಬ್",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ ನ $COUNT$ tabs",
+    "message": "$COUNT$ ರಲ್ಲಿ $MATCHES$ ಟ್ಯಾಬ್‌ಗಳು",
     "placeholders": {
       "COUNT": {
         "content": "$1",

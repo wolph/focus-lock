@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Diese Sitzung beenden"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Wählen Sie einen verfügbaren Arbeits-Tab."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Diese Registerkarte ist nicht mehr verfügbar. Wählen Sie einen anderen Arbeits-Tab."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Sitzung gestartet, aber der Arbeits-Tab konnte nicht gespeichert werden. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Die Fokussitzung hat sich geändert. Wählen Sie Ihren Arbeits-Tab erneut."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Die Fokussitzung hat sich geändert. Öffnen Sie das Popup erneut."
   }
 }

@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Lopeta tämä jakso"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Valitse käytettävissä oleva työvälilehti."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Välilehti ei ole enää käytettävissä. Valitse toinen työvälilehti."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Istunto alkoi, mutta työvälilehteä ei voitu tallentaa. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Fokussesjio on muuttunut. Valitse työvälilehti uudelleen."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Fokussesjio on muuttunut. Avaa ponnahdusikkuna uudelleen."
   }
 }

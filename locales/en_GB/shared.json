@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "End this session"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Choose an available work tab."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "That tab is no longer available. Choose another work tab."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Session started, but the work tab could not be saved. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "The focus session has changed. Choose your work tab again."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "The focus session has changed. Reopen the popup."
   }
 }

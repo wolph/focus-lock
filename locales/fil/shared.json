@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Tapusin this session"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Pumili ng available na trabaho tab."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Ang tab na iyon ay hindi na available. Pumili ng iba pang trabaho tab."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Nagsimula ang sesyon, ngunit ang trabaho tab ay hindi naipundar. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Nagbago ang focus session. Pumili ng iyong trabaho tab ulit."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Nagbago ang focus session. Bubuksan ang popup ulit."
   }
 }

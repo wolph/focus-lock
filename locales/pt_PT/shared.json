@@ -624,6 +624,27 @@
   "shared_gate_end_title": {
     "message": "Acabar esta sessão"
   },
+  "shared_work_choose_tab_error": {
+    "message": "Escolha um separador de trabalho disponível."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Esse separador já não está disponível. Escolha outro separador de trabalho."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Sessão iniciada, mas o separador de trabalho não pôde ser guardado. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "A sessão de foco mudou. Escolha o seu separador de trabalho novamente."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "A sessão de foco mudou. Reabra a janela flutuante."
+  },
   "shared_minutes_many": {
     "message": "$COUNT$ minutos",
     "placeholders": {

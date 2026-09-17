@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Malizia this session"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Chagua kazi tab inayopatikana."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Kichupo hicho hakina tena. Chagua kazi tab nyingine."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Kikao kimeanza, lakini kazi tab haiwezi kuhifadhiwa. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Kikao cha mtazamo kimebadilika. Chagua kazi tab yako tena."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Kikao cha mtazamo kimebadilika. Fungua dirisha tena."
   }
 }

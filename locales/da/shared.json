@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "Afslut denne session"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "Vælg en tilgængelig arbejdsfane."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "Fanen er ikke længere tilgængelig. Vælg en anden arbejdsfane."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "Sessionen startede, men arbejdsfanen kunne ikke gemmes. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "Fokuseringen er ændret. Vælg din arbejdsfane igen."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "Fokuseringen er ændret. Åbn popup igen."
   }
 }
