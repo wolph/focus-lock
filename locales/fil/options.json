@@ -540,10 +540,10 @@
     "message": "Kanselahin"
   },
   "options_schedule_empty": {
-    "message": "No scheduled sesysas yet."
+    "message": "Wala pang nakaiskedyul na sesyon."
   },
   "options_schedule_selected_days_aria": {
-    "message": "Selected araws"
+    "message": "Mga piniling araw"
   },
   "options_schedule_time_range": {
     "message": "$START$ sa $END$",
@@ -565,7 +565,7 @@
     "message": "whitelist"
   },
   "options_schedule_strictness_flexible": {
-    "message": "flexible"
+    "message": "nababaluktot"
   },
   "options_schedule_strictness_friction": {
     "message": "alitan"
@@ -583,7 +583,7 @@
     "message": "Alisin"
   },
   "options_schedule_add": {
-    "message": "Magdagdag schedule entry"
+    "message": "Magdagdag ng entry sa iskedyul"
   },
   "options_sounds_heading": {
     "message": "Mga tunog"
@@ -592,16 +592,16 @@
     "message": "Pangunahing tunog"
   },
   "options_sound_session_complete": {
-    "message": "Sesyon complete"
+    "message": "Tapos ang sesyon"
   },
   "options_sound_break_start": {
     "message": "Pahsaga simulan"
   },
   "options_sound_break_end": {
-    "message": "Pahsaga end"
+    "message": "Katapusan ng pahinga"
   },
   "options_sound_schedule_start": {
-    "message": "Schedule ausa-simulan"
+    "message": "Kusang pagsisimula ayon sa iskedyul"
   },
   "options_sound_preview_aria": {
     "message": "Pretsagnan $SOUND$",
@@ -613,139 +613,139 @@
     }
   },
   "options_sound_play": {
-    "message": "I-play"
+    "message": "Patugtugin"
   },
   "options_sound_preview_error": {
-    "message": "Hindi maaaring preview ang sound. Try again."
+    "message": "Hindi mapakinggan ang tunog. Subukan muli."
   },
   "options_sounds_notifications_heading": {
     "message": "Notificatisas"
   },
   "options_session_complete_notification": {
-    "message": "Ipakita a system notification when a session completes"
+    "message": "Magpakita ng abiso ng sistema kapag natapos ang sesyon"
   },
   "options_badge_heading": {
     "message": "Lencana"
   },
   "options_badge_countdown": {
-    "message": "Show ang remaining time on ang toolbar icon"
+    "message": "Ipakita ang natitirang oras sa icon ng toolbar"
   },
   "options_privacy_website_access_heading": {
-    "message": "Website pag-access"
+    "message": "Access sa website"
   },
   "options_privacy_website_off_title": {
-    "message": "Website pag-access is ngf"
+    "message": "Naka-off ang access sa website"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock hindi maaaring block websites until you grant access."
+    "message": "Hindi makakaharang ang Focus Lock ng mga website hangga't hindi ka nagbibigay ng access."
   },
   "options_privacy_website_enable_action": {
-    "message": "Paganahin website blocking"
+    "message": "I-enable ang pagharang sa website"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "Website pag-access is granted, but hadlangsag is not active"
+    "message": "Naibigay ang access sa website, ngunit hindi aktibo ang pagharang"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome granted access, but Focus Lock hindi maaaring register its blocking script."
+    "message": "Nagbigay ng access ang Chrome, ngunit hindi nairehistro ng Focus Lock ang script nito sa pagharang."
   },
   "options_privacy_website_retry_action": {
-    "message": "Subukan Muli website blocking"
+    "message": "Subukan muli ang pagharang sa website"
   },
   "options_privacy_website_on_title": {
     "message": "Website hadlangsag is gawsad"
   },
   "options_privacy_website_on_detail": {
-    "message": "Focus Lock can apply ang iyong active blocking rules on regular website pages."
+    "message": "Maaaring ilapat ng Focus Lock ang iyong aktibong panuntunan sa pagharang sa karaniwang pahina ng website."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "Alisin local history?"
+    "message": "Burahin ang lokal na kasaysayan?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "Kumpirmahin delete local history"
+    "message": "Kumpirmahin ang pagbura ng lokal na kasaysayan"
   },
   "options_privacy_local_history_deleted": {
     "message": "Local hissay burahsad."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device. It does not clear a tumatakbo session, which keeps its intention and ang address of each tab it is blocking. Ending ang session clears ang intention and starts a cleanup that clears every open website tab, and ang cleanup removes every stored address when it completes."
+    "message": "Permanenteng binubura nito ang buong URL, mga layunin ng pokus, at detalyadong kaganapan ng sesyon mula sa device na ito. Hindi nito nililinis ang tumatakbong sesyon, na pinananatili ang layunin nito at ang address ng bawat tab na hinaharangan. Ang pagtatapos ng sesyon ay naglilinis sa layunin at nagsisimula ng paglilinis na naglilinis sa bawat bukas na tab ng website, at inaalis ng paglilinis ang bawat naka-imbak na address kapag natapos ito."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device, plus local-only aggregate statistics. It does not clear a tumatakbo session, which keeps its intention and ang address of each tab it is blocking. Ending ang session clears ang intention and starts a cleanup that clears every open website tab, and ang cleanup removes every stored address when it completes."
+    "message": "Permanenteng binubura nito ang buong URL, mga layunin ng pokus, at detalyadong kaganapan ng sesyon mula sa device na ito, kasama ang lokal na pinagsama-samang estadistika. Hindi nito nililinis ang tumatakbong sesyon, na pinananatili ang layunin nito at ang address ng bawat tab na hinaharangan. Ang pagtatapos ng sesyon ay naglilinis sa layunin at nagsisimula ng paglilinis na naglilinis sa bawat bukas na tab ng website, at inaalis ng paglilinis ang bawat naka-imbak na address kapag natapos ito."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Alisin remote Sync data?"
+    "message": "Burahin ang malayong datos ng Sync?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Kumpirmahin delete remote Sync data"
+    "message": "Kumpirmahin ang pagbura ng malayong datos ng Sync"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Remote Chrome Sync data burahsad."
+    "message": "Nabura ang malayong datos ng Chrome Sync."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently burahsas remote mga settsag, hadlang at allow lists, site pag-access cri-edit, sunod-sunods, at domasa-level hadlanged-attempt aggregates from Chrome Sync. Local mga settsag at statistics stay sa this device."
+    "message": "Permanenteng binubura nito ang malayong setting, mga listahan ng pagharang at pagpayag, kreditong access sa site, sunod-sunod, at kabuuan ng hinarang na pagtatangka sa antas ng domain mula sa Chrome Sync. Nananatili sa device na ito ang lokal na setting at estadistika."
   },
   "options_privacy_confirm_all_title": {
-    "message": "Alisin all Focus Lock data?"
+    "message": "Burahin ang lahat ng datos ng Focus Lock?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "Kumpirmahin delete all Focus Lock data"
+    "message": "Kumpirmahin ang pagbura ng lahat ng datos ng Focus Lock"
   },
   "options_privacy_all_deleted": {
-    "message": "All Pokus Lock data burahsad."
+    "message": "Nabura ang lahat ng datos ng Focus Lock."
   },
   "options_privacy_all_body_intro": {
-    "message": "This permanently burahsas every piece ng Pokus Lock data sa this device at any Pokus Lock copies left sa Chrome Sync:"
+    "message": "Permanenteng binubura nito ang bawat piraso ng datos ng Focus Lock sa device na ito at anumang kopyang naiwan sa Chrome Sync:"
   },
   "options_privacy_all_body_outro": {
     "message": "Ang pag-delete ng lahat ay makukuha lamang habang walang tumatakbong session. Focus Lock ay bumabalik sa setup."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Local history hindi maaaring be deleted. Try again."
+    "message": "Hindi nabura ang lokal na kasaysayan. Subukan muli."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Remote Chrome Sync data hindi maaaring be deleted. Try again."
+    "message": "Hindi nabura ang malayong datos ng Chrome Sync. Subukan muli."
   },
   "options_privacy_error_all_clear": {
-    "message": "All Focus Lock data hindi maaaring be deleted. Try again."
+    "message": "Hindi nabura ang lahat ng datos ng Focus Lock. Subukan muli."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync hindi maaaring save ang iyong latest changes. Ang iyong local save is safe."
+    "message": "Hindi na-save ng Chrome Sync ang iyong pinakabagong pagbabago. Ligtas ang iyong lokal na naka-save."
   },
   "options_privacy_error_request": {
-    "message": "Ang request hindi maaaring be completed. Try again."
+    "message": "Hindi natapos ang kahilingan. Subukan muli."
   },
   "options_privacy_website_access_updated": {
-    "message": "Website pag-access updated."
+    "message": "Na-update ang access sa website."
   },
   "options_privacy_website_access_denied": {
-    "message": "Website pag-access was not granted."
+    "message": "Hindi naibigay ang access sa website."
   },
   "options_privacy_error_website_access": {
-    "message": "Website access hindi maaaring be updated. Try again."
+    "message": "Hindi na-update ang access sa website. Subukan muli."
   },
   "options_privacy_website_blocking_enabled": {
     "message": "Website hadlangsag gawsad."
   },
   "options_privacy_error_export": {
-    "message": "Hindi maaaring export ang event log."
+    "message": "Hindi mai-export ang talaan ng kaganapan."
   },
   "options_privacy_error_export_retry": {
-    "message": "Hindi maaaring export ang event log. Try again."
+    "message": "Hindi mai-export ang talaan ng kaganapan. Subukan muli."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Hindi maaaring open Chrome permission settings. Try again."
+    "message": "Hindi mabuksan ang setting ng pahintulot ng Chrome. Subukan muli."
   },
   "options_privacy_chrome_settings_opened": {
     "message": "Chrome permissisa mga settsag buksaned."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Buksan Chrome permission settings"
+    "message": "Buksan ang setting ng pahintulot ng Chrome"
   },
   "options_privacy_sync_heading": {
     "message": "Chrome I-i-sync"
   },
   "options_privacy_sync_switch_label": {
-    "message": "Sync Pokus Lock data across Chrome devices"
+    "message": "I-sync ang datos ng Focus Lock sa mga device na Chrome"
   },
   "options_privacy_sync_enabled": {
     "message": "Chrome Sync gawsad."
@@ -754,7 +754,7 @@
     "message": "Chrome Sync huwagd."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sync is still saving ang iyong latest changes."
+    "message": "Sini-save pa ng Chrome Sync ang iyong pinakabagong pagbabago."
   },
   "options_privacy_sync_on": {
     "message": "Chrome Sync is sa."
@@ -763,87 +763,87 @@
     "message": "Chrome Sync is ngf."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Chrome Sync changes magsaved."
+    "message": "Na-save ang mga pagbabago sa Chrome Sync."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Subukan Muli enabling Chrome Sync"
+    "message": "Subukan muling i-enable ang Chrome Sync"
   },
   "options_privacy_retry_sync": {
     "message": "Subukan Muli Chrome Sync"
   },
   "options_privacy_scope_synced": {
-    "message": "I-i-synced"
+    "message": "Naka-sync"
   },
   "options_privacy_scope_local_only": {
     "message": "Local saly"
   },
   "options_privacy_developer_note": {
-    "message": "Nothing is sent to ang Focus Lock developer."
+    "message": "Walang ipinapadala sa nagpaunlad ng Focus Lock."
   },
   "options_privacy_local_log_heading": {
-    "message": "Local event tala"
+    "message": "Lokal na talaan ng kaganapan"
   },
   "options_privacy_local_log_detail": {
-    "message": "Export ang detailed local log or delete local browsing and session history."
+    "message": "I-export ang detalyadong lokal na talaan o burahin ang lokal na kasaysayan ng pagba-browse at sesyon."
   },
   "options_privacy_export_local_log": {
-    "message": "Expot local event log"
+    "message": "I-export ang lokal na talaan ng kaganapan"
   },
   "options_privacy_local_log_exported": {
-    "message": "Local event log expoted."
+    "message": "Na-export ang lokal na talaan ng kaganapan."
   },
   "options_privacy_delete_local_history": {
-    "message": "Alisin local history"
+    "message": "Burahin ang lokal na kasaysayan"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Remote I-i-sync data"
+    "message": "Malayong datos ng Sync"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Delete ang Focus Lock copies left in Chrome Sync nang walang changing this device."
+    "message": "Burahin ang mga kopya ng Focus Lock na naiwan sa Chrome Sync nang hindi binabago ang device na ito."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Alisin remote Sync data"
+    "message": "Burahin ang malayong datos ng Sync"
   },
   "options_privacy_all_data_heading": {
-    "message": "All Pokus Lock data"
+    "message": "Lahat ng datos ng Focus Lock"
   },
   "options_privacy_all_data_detail": {
-    "message": "Burahin ang bawat Focus Lock record sa device na ito at ang anumang Focus Lock copies sa Chrome Sync, pagkatapos magsimula ulit mula sa setup. Makukuha habang walang tumatakbong session."
+    "message": "Burahin ang bawat talaan ng Focus Lock sa device na ito at anumang kopyang naiwan sa Chrome Sync, pagkatapos ay magsimula muli mula sa setup. Available habang walang tumatakbong sesyon."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Resumsag deletisa ng all Pokus Lock data."
   },
   "options_privacy_retry_local_history": {
-    "message": "Subukan Muli local history deletion"
+    "message": "Subukan muli ang pagbura ng lokal na kasaysayan"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Subukan Muli remote Sync deletion"
+    "message": "Subukan muli ang pagbura ng malayong Sync"
   },
   "options_privacy_retry_all_data": {
-    "message": "Subukan Muli all data deletion"
+    "message": "Subukan muli ang pagbura ng lahat ng datos"
   },
   "options_error_load": {
-    "message": "Hindi maaaring load settings. Reload ang page to try again."
+    "message": "Hindi makarga ang mga setting. I-reload ang pahina upang subukan muli."
   },
   "options_error_retry_boot": {
-    "message": "Hindi maaaring restart Focus Lock. Try again."
+    "message": "Hindi ma-restart ang Focus Lock. Subukan muli."
   },
   "options_error_refresh_privacy": {
-    "message": "Hindi maaaring refresh privacy settings. Reload ang page."
+    "message": "Hindi ma-refresh ang mga setting ng privacy. I-reload ang pahina."
   },
   "options_error_website_blocking": {
-    "message": "Hindi maaaring update website blocking. Try again."
+    "message": "Hindi ma-update ang pagharang sa website. Subukan muli."
   },
   "options_error_change_sync": {
-    "message": "Hindi maaaring change Chrome Sync. Try again."
+    "message": "Hindi mabago ang Chrome Sync. Subukan muli."
   },
   "options_error_retry_sync": {
-    "message": "Hindi maaaring retry Chrome Sync. Try again."
+    "message": "Hindi masubukan muli ang Chrome Sync. Subukan muli."
   },
   "options_error_save_settings": {
-    "message": "Hindi maaaring save settings. Reload ang page and try again."
+    "message": "Hindi ma-save ang mga setting. I-reload ang pahina at subukan muli."
   },
   "options_error_save_lists": {
-    "message": "Hindi maaaring save lists. Reload ang page and try again."
+    "message": "Hindi ma-save ang mga listahan. I-reload ang pahina at subukan muli."
   }
 }
