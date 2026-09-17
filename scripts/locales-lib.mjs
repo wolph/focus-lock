@@ -280,7 +280,7 @@ export function strayLatin(locale, message) {
  * placeholder name like $SELECTED$ is not a word on screen.
  */
 const ENGLISH_WORDS =
-  /\b(?:the|could not|cannot|your|you can|please|instead|already|between|available|another|through|without|finished|running)\b/gi;
+  /\b(?:the|could not|cannot|your|you can|please|instead|already|between|another|through|without|finished|running)\b/gi;
 
 /**
  * English words left in a translated message. This is the Latin-script half of `strayLatin`: in a
