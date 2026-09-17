@@ -12,6 +12,7 @@ import {
   mergeSurfaces,
   mergeTranslation,
   repairPlaceholders,
+  strayLatin,
   translationProgress,
   unusedKeys,
 } from '../../../scripts/locales-lib.mjs';
@@ -412,5 +413,28 @@ describe('isPadding', () => {
 
   it('never calls British English padding', () => {
     expect(isPadding('en_GB', sentence, sentence)).toBe(false);
+  });
+});
+
+describe('strayLatin', () => {
+  it('catches an English sentence with a word or two swapped in', () => {
+    expect(strayLatin('kn', 'ಫೋಕಸ್ sessiಮೇಲೆ complete')).toEqual(['sessi', 'complete']);
+    expect(strayLatin('gu', 'End સેશન')).toEqual(['End']);
+  });
+
+  it('accepts a message that is genuinely in its own script', () => {
+    expect(strayLatin('ru', 'Завершить сеанс')).toEqual([]);
+    expect(strayLatin('ja', 'セッションを終了')).toEqual([]);
+  });
+
+  it('allows placeholders, the product name, brands, units and domains', () => {
+    expect(strayLatin('ru', 'Focus Lock: $COUNT$ мин, 100KB, facebook.com')).toEqual([]);
+    expect(strayLatin('hi', 'Chrome Sync से $PATTERN$ हटाएं')).toEqual([]);
+    expect(strayLatin('bn', 'উদাহরণ: /youtube\\.com\\/shorts/')).toEqual([]);
+  });
+
+  it('says nothing about a locale written in Latin script', () => {
+    expect(strayLatin('de', 'Sitzung beenden')).toEqual([]);
+    expect(strayLatin('en_GB', 'End session')).toEqual([]);
   });
 });

@@ -210,6 +210,70 @@ export function isPadding(locale, sourceMessage, translatedMessage) {
   return [...sourceMessage].length > MAX_SHARED_MESSAGE_CHARS;
 }
 
+/**
+ * Locales written in a script other than Latin. A message in one of these should carry no Latin
+ * words of its own, so a run of Latin letters that is not a placeholder, a brand, a domain or a
+ * regular expression is either untranslated English or the wreckage of a find and replace.
+ */
+const NON_LATIN_LOCALES = new Set([
+  'am',
+  'ar',
+  'bg',
+  'bn',
+  'el',
+  'fa',
+  'gu',
+  'he',
+  'hi',
+  'ja',
+  'kn',
+  'ko',
+  'ml',
+  'mr',
+  'ru',
+  'sr',
+  'ta',
+  'te',
+  'th',
+  'uk',
+  'zh_CN',
+  'zh_TW',
+]);
+
+/**
+ * Latin text that belongs in any locale, whatever its script: placeholders, the product name,
+ * brands, unit symbols, domains and the regular expressions the rule examples show. The domain
+ * pattern allows the escaped dot a regular expression writes, so `/youtube\.com\/shorts/` is
+ * consumed whole rather than leaving `com` behind.
+ */
+const ALLOWED_LATIN = [
+  /\$[A-Za-z0-9_]+\$/g,
+  /\/[^\s]*\//g,
+  /(?:[A-Za-z0-9-]+\\?\.)+[A-Za-z]{2,}(?:\/[^\s]*)?/g,
+  /Focus Lock/g,
+  /Chrome/g,
+  /Sync/g,
+  /PNAS/g,
+  /URL/g,
+  /regex/gi,
+  /HH:MM/g,
+  /(?:[KMG]i?B|kB)/g,
+  /\bON\b/g,
+];
+
+/**
+ * Latin words left in a message whose language is not written in Latin script. This is the one
+ * defect the other checks cannot see: a message half-translated by substituting words, or wrecked
+ * by a find and replace that spliced letters into the middle of English words, differs from the
+ * English source and so passes every byte comparison while still reading as English on screen.
+ */
+export function strayLatin(locale, message) {
+  if (!NON_LATIN_LOCALES.has(locale)) return [];
+  let rest = message;
+  for (const pattern of ALLOWED_LATIN) rest = rest.replace(pattern, ' ');
+  return [...rest.matchAll(/[A-Za-z]{2,}/g)].map((match) => match[0]);
+}
+
 /** Validate one translated catalogue against en. */
 export function checkTranslation(locale, en, catalogue) {
   const errors = [];
@@ -250,6 +314,15 @@ export function checkTranslation(locale, en, catalogue) {
       if (entry !== undefined) {
         checkEntry(locale, `${base}_${category}`, source, entry, errors, warnings);
       }
+    }
+  }
+  for (const [key, entry] of Object.entries(catalogue)) {
+    if (typeof entry.message !== 'string') continue;
+    const stray = strayLatin(locale, entry.message);
+    if (stray.length > 0) {
+      errors.push(
+        `${locale}: ${key} still carries Latin text in a non-Latin script: ${stray.slice(0, 4).join(', ')}`,
+      );
     }
   }
   if (!NEAR_EN_LOCALES.has(locale)) {
