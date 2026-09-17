@@ -19,7 +19,7 @@
     "message": "Hindi mabuksan ang Settings. Subukan ulit."
   },
   "popup_settings_load_failed": {
-    "message": "Hindi na-load ang mga setting ng sesyon. I-reload ang popup para subukan ulit. Ipinapakita ang mga default."
+    "message": "Hindi makarga ang mga setting ng sesyon. I-reload ang popup upang subukan muli. Ipinapakita ang mga default."
   },
   "popup_open_setup_failed": {
     "message": "Hindi mabuksan ang setup. Subukan ulit."
@@ -28,7 +28,7 @@
     "message": "Tapusin ang pag-set up ng Focus Lock"
   },
   "popup_setup_required_body": {
-    "message": "Piliin ang iyong mga panimulang listahan, pahintulot sa site, at storage mode bago magsimula ng sesyon."
+    "message": "Piliin ang iyong panimulang listahan, access sa website, at paraan ng imbakan bago magsimula ng sesyon."
   },
   "popup_open_setup_button": {
     "message": "Buksan ang setup"
@@ -49,7 +49,7 @@
     "message": "Hindi nagbigay ang Chrome ng pahintulot sa site. Naka-off pa rin ang pag-block sa site."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Naibigay na ang pahintulot sa site, pero hindi ma-enable ng Focus Lock ang pag-block. Ulitin ang setup o i-reload ang ekstensyon."
+    "message": "Naibigay ang access sa website, ngunit hindi na-enable ng Focus Lock ang pagharang. Subukan muli ang setup o i-reload ang extension."
   },
   "popup_enable_blocking_button": {
     "message": "Paganahin ang pag-block sa site"
@@ -109,7 +109,7 @@
     "message": "Sinusuri ang aktibong site"
   },
   "popup_active_site_unsupported": {
-    "message": "Buksan ang isang regular na site para ma-unlock ito"
+    "message": "Magbukas ng karaniwang website upang buksan ito"
   },
   "popup_active_site_unknown": {
     "message": "Hindi matukoy ang aktibong site"
@@ -124,13 +124,13 @@
     "message": "Simulan nang maaga ang susunod na Focus"
   },
   "popup_unlock_this_site": {
-    "message": "I-unlock ang site na ito"
+    "message": "Buksan ang site na ito"
   },
   "popup_unlock_all_sites": {
-    "message": "I-unlock ang lahat ng site"
+    "message": "Buksan ang lahat ng site"
   },
   "popup_spend_cost": {
-    "message": "$ACCESS$ na pag-access, $CREDIT$ na kredito",
+    "message": "$ACCESS$ na access, $CREDIT$ na kredito",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -143,7 +143,7 @@
     }
   },
   "popup_spend_cost_host": {
-    "message": "$ACCESS$ na pag-access, $CREDIT$ na kredito - $HOST$",
+    "message": "$ACCESS$ na access, $CREDIT$ na kredito - $HOST$",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -239,7 +239,7 @@
     "message": "Haba ng sesyon"
   },
   "popup_custom_minutes_label": {
-    "message": "Custom minutos"
+    "message": "Sariling minuto"
   },
   "popup_custom_minutes_placeholder": {
     "message": "min"
@@ -254,7 +254,7 @@
     "message": "I-type:"
   },
   "popup_gate_update_failed": {
-    "message": "Hindi na-update ang gate. Subukan ulit."
+    "message": "Hindi ma-update ang tarangkahan. Subukan muli."
   },
   "popup_gate_intention": {
     "message": "Sinabi mo: $INTENTION$",
@@ -321,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "Ipakita ang buong regular expression: $PATTERN$",
+    "message": "Ipakita ang buong regular na ekspresyon: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -333,7 +333,7 @@
     "message": "Domain"
   },
   "popup_rule_kind_regex": {
-    "message": "Regular expression"
+    "message": "Regular na ekspresyon"
   },
   "popup_category_sites_label": {
     "message": "Mga site ng $CATEGORY$",
@@ -508,7 +508,7 @@
     "message": "Maglagay ng haba ng sesyon na higit sa zero minuto."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Nagbago ang mga default, pero hindi na-load ang kasalukuyang mga listahan. I-reload ang popup."
+    "message": "Nagbago ang mga default, ngunit hindi makarga ang kasalukuyang listahan. I-reload ang popup."
   },
   "popup_no_work_tab_option": {
     "message": "Walang tab ng trabaho (opsyonal)"
@@ -574,7 +574,7 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Mode ng pag-block"
+    "message": "Paraan ng pagharang"
   },
   "popup_invalid_time_label": {
     "message": "hindi wastong oras"
@@ -592,7 +592,7 @@
     "message": "Maglagay ng wastong domain tulad ng docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Hindi na-load ang mga tab ng trabaho. Buksan muli ang popup para subukan ulit."
+    "message": "Hindi makarga ang mga tab na pantrabaho. Buksan muli ang popup upang subukan muli."
   },
   "popup_use_this_tab": {
     "message": "Gamitin ang tab na ito"
