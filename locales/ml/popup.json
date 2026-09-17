@@ -236,7 +236,7 @@
     }
   },
   "popup_session_length_label": {
-    "message": "സെഷൻ length"
+    "message": "സെഷന്റെ ദൈർഘ്യം"
   },
   "popup_custom_minutes_label": {
     "message": "പ്രത്യേക മിനിറ്റുകൾ"
@@ -402,7 +402,7 @@
     "message": "എന്താണ് അനുവദിക്കപ്പെടും"
   },
   "popup_categories_selected": {
-    "message": "$SELECTED$ of $TOTAL$ വിഭാഗങ്ങൾ തിരഞ്ഞെടുത്തിരിക്കുന്നു",
+    "message": "$TOTAL$ വിഭാഗങ്ങളിൽ $SELECTED$ എണ്ണം തിരഞ്ഞെടുത്തു",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -517,7 +517,7 @@
     "message": "തിരഞ്ഞെടുത്ത ടാബ് ലഭ്യമല്ല - മറ്റൊന്ന് തിരഞ്ഞെടുക്കുക"
   },
   "popup_cycles_label": {
-    "message": "സൈക്കിളുകൾ: $FOCUS$ മിനി ഫോക്കസ്, $SHORT_BREAK$ മിനി ബ്രേക്ക്, $LONG_BREAK$ മിനി ദീർഘ ബ്രേക് എല്ലാ $LONG_EVERY$th",
+    "message": "സൈക്കിളുകൾ: $FOCUS$ മിനിറ്റ് ഫോക്കസ്, $SHORT_BREAK$ മിനിറ്റ് ഇടവേള, ഓരോ $LONG_EVERY$-ാം തവണയും $LONG_BREAK$ മിനിറ്റ് ദീർഘ ഇടവേള",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
