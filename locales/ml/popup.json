@@ -136,8 +136,20 @@
       }
     }
   },
+  "popup_draft_stop_hard": {
+    "message": "ഹാർഡ് ലോക്ക്. അതിരാത്രി അവസാനിപ്പിക്കാൻ കഴിയില്ല."
+  },
   "popup_draft_stop_flexible": {
     "message": "Can end at any time."
+  },
+  "popup_draft_stop_friction": {
+    "message": "$SECONDS$s കാത്തിരുന്നതിന് ശേഷം അവസാനിപ്പിക്കുക.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
   },
   "popup_session_length_label": {
     "message": "സെഷൻ length"
@@ -146,7 +158,7 @@
     "message": "Custom minutes"
   },
   "popup_custom_minutes_placeholder": {
-    "message": "min"
+    "message": "മി"
   },
   "popup_gate_keep_focusing": {
     "message": "Keep focusing"

@@ -3,58 +3,58 @@
     "message": "Statistika Focus Lock"
   },
   "stats_page_title": {
-    "message": "Vaš fokusni zapis"
+    "message": "Tvoj zapis osredotočenosti"
   },
   "stats_loading": {
-    "message": "Nalagam statistiko."
+    "message": "Nalagam tvojo statistiko."
   },
   "stats_load_error": {
-    "message": "Ne morem naložiti statistike. Osvežite stran in poskusite ponovno."
+    "message": "Statistike ni bilo mogoče naložiti. Znova naloži stran."
   },
   "stats_partial_error_both": {
-    "message": "Urni poskusi in nastavitve kreditov za dostop do spletnih mest niso na voljo."
+    "message": "Poskusi po urah in nastavitve kredita za dostop niso na voljo."
   },
   "stats_partial_error_attempts": {
-    "message": "Urni poskusi niso na voljo."
+    "message": "Poskusi po urah niso na voljo."
   },
   "stats_partial_error_economy": {
-    "message": "Nastavitve kreditov za dostop do spletnih mest niso na voljo."
+    "message": "Nastavitve kredita za dostop niso na voljo."
   },
   "stats_scope_synced": {
-    "message": "Sinhronizirani skupni seštevki iz tega Chrome računa. Plošče samo za lokalno so označene."
+    "message": "Sinhronizirani seštevki iz tega računa Chrome. Plošče samo s te naprave so označene."
   },
   "stats_scope_local": {
-    "message": "Skupni seštevki s tega računalnika. Statistika Focus Lock se ne sinhroniziraj."
+    "message": "Seštevki s tega računalnika. Statistika Focus Lock se ne sinhronizira."
   },
   "stats_scope_checking": {
-    "message": "Preverjam, ali so ti skupni seštevki sinhronizirani."
+    "message": "Preverjam, ali so ti seštevki sinhronizirani."
   },
   "stats_scope_unavailable": {
-    "message": "Obseg statistike ni na voljo. Skupni seštevki lahko vključujejo sinhronizirane podatke. Urni poskusi in nedavne seje so s tega računalnika."
+    "message": "Obseg statistike ni na voljo. Seštevki lahko vključujejo sinhronizirane podatke. Poskusi po urah in nedavne seje so s tega računalnika."
   },
   "stats_scope_retry": {
-    "message": "Ponovni poskus preverjanja obsega"
+    "message": "Znova preveri obseg"
   },
   "stats_empty": {
-    "message": "Statistika se pojavi po vaši prvi seji."
+    "message": "Statistika se pojavi po tvoji prvi seji."
   },
   "stats_tile_focus_today": {
-    "message": "Fokus danes"
+    "message": "Osredotočenost danes"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Fokus v zadnjih 7 dneh"
+    "message": "Osredotočenost v zadnjih 7 dneh"
   },
   "stats_tile_attempts_today": {
-    "message": "Poskusi blokirani danes"
+    "message": "Danes blokirani poskusi"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Zahtevki vrat zavrnjeni danes"
+    "message": "Danes opuščene zahteve za odklep"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Kredit za dostop do spletnih mest, porabljen danes"
+    "message": "Danes porabljen kredit za dostop"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "Vsa spletna mesta $ALL_SITES$, eno spletno mesto $ONE_SITE$, $EARNED$ zasluženo",
+    "message": "Vsa spletna mesta $ALL_SITES$, eno spletno mesto $ONE_SITE$, prisluženo $EARNED$",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -71,7 +71,7 @@
     }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ zasluženo",
+    "message": "prisluženo $EARNED$",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -83,7 +83,7 @@
     "message": "Niz"
   },
   "stats_streak_empty": {
-    "message": "Vaš niz se začne s prvim dnikom osredotočenosti."
+    "message": "Tvoj niz se začne s tvojim prvim dnem osredotočenosti."
   },
   "stats_streak_unit_one": {
     "message": "dan"
@@ -92,7 +92,7 @@
     "message": "dni"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$ žeton zamrzovanja bankan",
+    "message": "$COUNT$ prihranjen zaščitni dan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$ žetonov zamrzovanja bankan",
+    "message": "$COUNT$ prihranjenih zaščitnih dni",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "Zamrzovanje niza: en zamujeni dan, pokrit"
+    "message": "Zaščita niza: en zamujen dan je pokrit"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ aktivni dan tega meseca ($MONTH$)",
+    "message": "$COUNT$ aktiven dan ta mesec ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ aktivnih dni tega meseca ($MONTH$)",
+    "message": "$COUNT$ aktivnih dni ta mesec ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Aktivni datumi v $MONTH$: $DAYS$.",
+    "message": "Aktivni dnevi v $MONTH$: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -152,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "Ni aktivnih datumov v $MONTH$.",
+    "message": "Ni aktivnih dni v $MONTH$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -161,10 +161,10 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Fokus, zadnjih 14 dni"
+    "message": "Osredotočenost, zadnjih 14 dni"
   },
   "stats_chart_focus_empty": {
-    "message": "Minute osredotočenosti se pojavijo po vaši prvi seji."
+    "message": "Minute osredotočenosti se pojavijo po tvoji prvi seji."
   },
   "stats_chart_attempts_heading": {
     "message": "Blokirani poskusi, zadnjih 14 dni"
@@ -173,19 +173,19 @@
     "message": "Blokirani poskusi se pojavijo tukaj, ko jih seja ujame."
   },
   "stats_chart_sites_heading": {
-    "message": "Najbolj blokirana spletna mesta, zadnjih 30 dni"
+    "message": "Najpogosteje blokirana spletna mesta, zadnjih 30 dni"
   },
   "stats_chart_sites_empty": {
-    "message": "Še nič ni blokirano. To je odličen začetek."
+    "message": "Zaenkrat nič blokiranega. To je lep začetek."
   },
   "stats_chart_hours_heading": {
-    "message": "Poskusi po uri, samo ta računalnik"
+    "message": "Poskusi po urah, samo ta računalnik"
   },
   "stats_chart_other_site": {
     "message": "drugo"
   },
   "stats_chart_minutes_tick": {
-    "message": "$MINUTES$m",
+    "message": "$MINUTES$ m",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -194,7 +194,7 @@
     }
   },
   "stats_blocked_count_one": {
-    "message": "$COUNT$ blokiran",
+    "message": "$COUNT$ blokiran poskus",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -203,7 +203,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "$COUNT$ blokiranih",
+    "message": "$COUNT$ blokiranih poskusov",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -212,19 +212,19 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "Stolpični diagram"
+    "message": "Stolpčni diagram"
   },
   "stats_chart_name_hbar": {
-    "message": "Vodoravni stolpični diagram"
+    "message": "Vodoravni stolpčni diagram"
   },
   "stats_chart_description_bar": {
-    "message": "Stolpični diagram. Uporabite tipkovnico za premikanje po podatkovnih točkah ali odprite Prikaži kot tabelo za enake vrednosti."
+    "message": "Stolpčni diagram. S tipkovnico se premikaj po podatkovnih točkah ali odpri Prikaži kot tabelo za iste vrednosti."
   },
   "stats_chart_description_hbar": {
-    "message": "Vodoravni stolpični diagram. Uporabite tipkovnico za premikanje po podatkovnih točkah ali odprite Prikaži kot tabelo za enake vrednosti."
+    "message": "Vodoravni stolpčni diagram. S tipkovnico se premikaj po podatkovnih točkah ali odpri Prikaži kot tabelo za iste vrednosti."
   },
   "stats_chart_empty_default": {
-    "message": "Še ni podatkov."
+    "message": "Zaenkrat ni podatkov."
   },
   "stats_chart_point": {
     "message": "$LABEL$: $VALUE$",
@@ -249,13 +249,13 @@
     "message": "Vrednost"
   },
   "stats_heat_strip_label": {
-    "message": "24-urni trak intenzivnosti blokiranih poskusov"
+    "message": "Štiriindvajseturni trak jakosti blokiranih poskusov"
   },
   "stats_sessions_heading": {
     "message": "Nedavne seje na tem računalniku"
   },
   "stats_sessions_empty": {
-    "message": "Vaša prva seja se bo pojavila tukaj."
+    "message": "Tvoja prva seja se bo pojavila tukaj."
   },
   "stats_sessions_col_date": {
     "message": "Datum"
@@ -276,16 +276,16 @@
     "message": "Eno spletno mesto"
   },
   "stats_sessions_col_intention": {
-    "message": "Namen"
+    "message": "Namera"
   },
   "stats_sessions_col_outcome": {
-    "message": "Rezultat"
+    "message": "Izid"
   },
   "stats_sessions_col_source": {
     "message": "Vir"
   },
   "stats_session_no_intention": {
-    "message": "Ni namena"
+    "message": "Brez namere"
   },
   "stats_session_article_label": {
     "message": "Seja: $INTENTION$",
@@ -303,16 +303,16 @@
     "message": "urnik"
   },
   "stats_session_source_scheduled": {
-    "message": "razporejen"
+    "message": "načrtovano"
   },
   "stats_outcome_completed": {
-    "message": "Zaključeno"
+    "message": "Dokončano"
   },
   "stats_outcome_ended_early": {
-    "message": "Končano zgodaj"
+    "message": "Končano predčasno"
   },
   "stats_outcome_running": {
-    "message": "Teče"
+    "message": "Poteka"
   },
   "stats_streak_unit_two": {
     "message": "dneva"
@@ -321,7 +321,7 @@
     "message": "dnevi"
   },
   "stats_streak_freeze_tokens_two": {
-    "message": "$COUNT$ žetona zamrzovanja bankan",
+    "message": "$COUNT$ prihranjena zaščitna dneva",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -330,7 +330,7 @@
     }
   },
   "stats_streak_freeze_tokens_few": {
-    "message": "$COUNT$ žetoni zamrzovanja bankan",
+    "message": "$COUNT$ prihranjeni zaščitni dnevi",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -339,7 +339,7 @@
     }
   },
   "stats_streak_active_days_two": {
-    "message": "$COUNT$ aktivna dneva tega meseca ($MONTH$)",
+    "message": "$COUNT$ aktivna dneva ta mesec ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -352,7 +352,7 @@
     }
   },
   "stats_streak_active_days_few": {
-    "message": "$COUNT$ aktivni dnevi tega meseca ($MONTH$)",
+    "message": "$COUNT$ aktivni dnevi ta mesec ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -365,7 +365,7 @@
     }
   },
   "stats_blocked_count_two": {
-    "message": "$COUNT$ blokirana",
+    "message": "$COUNT$ blokirana poskusa",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -374,7 +374,7 @@
     }
   },
   "stats_blocked_count_few": {
-    "message": "$COUNT$ blokirani",
+    "message": "$COUNT$ blokirani poskusi",
     "placeholders": {
       "COUNT": {
         "content": "$1",

@@ -1,93 +1,96 @@
 {
   "options_page_title": {
-    "message": "Focus Lock options"
+    "message": "Focus Lock વિકલ્પો"
   },
   "options_heading": {
     "message": "Focus Lock સેટિંગ્સ"
   },
   "options_loading_settings": {
-    "message": "Loading સેટિંગ્સ"
+    "message": "સેટિંગ્સ લોડ થઈ રહી છે"
   },
   "options_privacy_loading": {
-    "message": "Loading privacy સેટિંગ્સ"
+    "message": "ગોપનીયતા સેટિંગ્સ લોડ થઈ રહી છે"
   },
   "options_save_failed": {
-    "message": "Could not સાચવો. Try again."
+    "message": "સાચવી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "options_blocking_heading": {
-    "message": "Blocking"
+    "message": "બ્લોકિંગ"
   },
   "options_blocking_help": {
-    "message": "Custom rules બ્લોક during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories બ્લોક common time sinks."
+    "message": "કસ્ટમ નિયમો બ્લેકલિસ્ટ સેશન દરમિયાન બ્લોક કરે છે. વ્હાઇટલિસ્ટ સેશન દરમિયાન વ્હાઇટલિસ્ટ પર રહેલી સાઇટ્સ જ પહોંચી શકાય એવી રહે છે. બંડલ કરેલી કેટેગરીઓ સામાન્ય સમય બગાડતી સાઇટ્સને બ્લોક કરે છે."
   },
   "options_custom_blacklist_title": {
-    "message": "Custom blacklist"
+    "message": "કસ્ટમ બ્લેકલિસ્ટ"
   },
   "options_whitelist_title": {
-    "message": "Whitelist"
+    "message": "વ્હાઇટલિસ્ટ"
   },
   "options_bundled_categories_heading": {
-    "message": "Bundled categories"
+    "message": "બંડલ કરેલી કેટેગરીઓ"
+  },
+  "options_bundled_categories_help": {
+    "message": "સામાન્ય સમય બગાડતી સાઇટ્સની બંડલ કરેલી યાદીઓ. આખી કેટેગરી ટૉગલ કરો, પછી કોઈ એક સાઇટને ઉપલબ્ધ રાખવા માટે તેને ખોલો."
   },
   "options_schedule_heading": {
-    "message": "Schedule"
+    "message": "શેડ્યૂલ"
   },
   "options_schedule_help": {
-    "message": "Sessions શરુ on their own inside these windows. Strictness set here applies for the whole window."
+    "message": "આ સમયગાળામાં સેશન આપમેળે શરૂ થાય છે. અહીં સેટ કરેલી કડકાઈ આખા સમયગાળા માટે લાગુ પડે છે."
   },
   "options_behavior_heading": {
-    "message": "સેશન behavior"
+    "message": "સેશન વર્તણૂક"
   },
   "options_budget_heading": {
-    "message": "Site access credit"
+    "message": "સાઇટ ઍક્સેસ ક્રેડિટ"
   },
   "options_notifications_heading": {
-    "message": "Notifications"
+    "message": "સૂચનાઓ"
   },
   "options_privacy_heading": {
-    "message": "Privacy and data"
+    "message": "ગોપનીયતા અને ડેટા"
   },
   "options_load_error_retry": {
-    "message": "Retry"
+    "message": "ફરી પ્રયાસ કરો"
   },
   "options_load_error_delete_all": {
-    "message": "કાઢી નાખો everything and શરુ over"
+    "message": "બધું ડિલીટ કરો અને ફરીથી શરૂ કરો"
   },
   "options_load_error_keep_data": {
-    "message": "Keep my data"
+    "message": "મારો ડેટા રાખો"
   },
   "options_delete_all_data": {
-    "message": "કાઢી નાખો all Focus Lock data"
+    "message": "બધો Focus Lock ડેટા ડિલીટ કરો"
   },
   "options_dirty_saving": {
-    "message": "Saving changes"
+    "message": "ફેરફારો સચવાઈ રહ્યા છે"
   },
   "options_dirty_unsaved": {
-    "message": "Unsaved changes"
+    "message": "ન સચવાયેલા ફેરફારો"
   },
   "options_dirty_clean": {
-    "message": "No unsaved changes"
+    "message": "કોઈ ન સચવાયેલા ફેરફારો નથી"
   },
   "options_dirty_discard": {
-    "message": "Discard changes"
+    "message": "ફેરફારો કાઢી નાખો"
   },
   "options_dirty_save": {
-    "message": "સાચવો changes"
+    "message": "ફેરફારો સાચવો"
   },
   "options_session_status_label": {
-    "message": "સેશન status"
+    "message": "સેશન સ્થિતિ"
   },
   "options_rule_kind_host_badge": {
-    "message": "domain"
+    "message": "ડોમેન"
   },
   "options_rule_kind_regex_badge": {
     "message": "regex"
   },
   "options_rule_remove": {
-    "message": "Remove"
+    "message": "કાઢી નાખો"
   },
   "options_rule_remove_aria": {
-    "message": "Remove $PATTERN$",
+    "message": "$PATTERN$ કાઢી નાખો",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -96,19 +99,19 @@
     }
   },
   "options_rules_empty": {
-    "message": "No rules yet."
+    "message": "હજુ સુધી કોઈ નિયમો નથી."
   },
   "options_rule_kind_aria": {
-    "message": "Rule kind"
+    "message": "નિયમનો પ્રકાર"
   },
   "options_rule_kind_host_option": {
-    "message": "domain or subdomain"
+    "message": "ડોમેન અથવા સબડોમેન"
   },
   "options_rule_kind_regex_option": {
-    "message": "regex (full URL)"
+    "message": "regex (સંપૂર્ણ URL)"
   },
   "options_rule_pattern_aria": {
-    "message": "Pattern"
+    "message": "પેટર્ન"
   },
   "options_rule_pattern_placeholder_host": {
     "message": "facebook.com"
@@ -117,46 +120,115 @@
     "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
-    "message": "ઉમેરો rule"
+    "message": "નિયમ ઉમેરો"
+  },
+  "options_rules_help": {
+    "message": "facebook.com તે ડોમેન અને તેના દરેક સબડોમેનને આવરી લે છે. news.ycombinator.com તે સબડોમેન અને તેની નીચેની દરેક વસ્તુને આવરી લે છે. /youtube\\.com\\/shorts/ સંપૂર્ણ URL ને એક રેગ્યુલર એક્સપ્રેશન તરીકે મેચ કરે છે."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ એક ધન પૂર્ણાંક હોવો જોઈએ.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ શૂન્ય અથવા તેથી વધુનો પૂર્ણાંક હોવો જોઈએ.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ શૂન્ય અથવા તેથી વધુ હોવો જોઈએ.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ સપોર્ટેડ મિનિટ શ્રેણીની અંદર હોવો જોઈએ.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ સપોર્ટેડ દિવસ શ્રેણીની અંદર હોવો જોઈએ.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
   },
   "options_session_defaults_heading": {
-    "message": "સેશન defaults"
+    "message": "સેશન ડિફૉલ્ટ્સ"
   },
   "options_session_defaults_help": {
-    "message": "Mode and strictness are fixed when a સેશન starts. These are the values the શરુ form opens with."
+    "message": "સેશન શરૂ થાય ત્યારે મોડ અને કડકાઈ નક્કી થઈ જાય છે. આ એ મૂલ્યો છે જેની સાથે સ્ટાર્ટ ફોર્મ ખૂલે છે."
   },
   "options_preset_short_label": {
-    "message": "Short સેશન preset (minutes)"
+    "message": "ટૂંકું સેશન પ્રીસેટ (મિનિટ)"
   },
   "options_preset_default_label": {
-    "message": "Default સેશન preset (minutes)"
+    "message": "ડિફૉલ્ટ સેશન પ્રીસેટ (મિનિટ)"
   },
   "options_preset_deep_label": {
-    "message": "Deep સેશન preset (minutes)"
+    "message": "ઊંડું સેશન પ્રીસેટ (મિનિટ)"
   },
   "options_mode_blacklist_label": {
-    "message": "Blacklist: બ્લોક listed sites"
+    "message": "બ્લેકલિસ્ટ: યાદીમાંની સાઇટ્સ બ્લોક કરો"
+  },
+  "options_mode_whitelist_label": {
+    "message": "વ્હાઇટલિસ્ટ: ફક્ત યાદીમાંની સાઇટ્સને જ મંજૂરી આપો"
   },
   "options_strictness_flexible_label": {
-    "message": "Flexible: end the સેશન whenever you choose"
+    "message": "લવચીક: તું જ્યારે ઇચ્છે ત્યારે સેશન સમાપ્ત કરો"
+  },
+  "options_strictness_friction_label": {
+    "message": "ઘર્ષણ: વહેલા બંધ કરવા માટે સેટ કરેલા વિચારણા દ્વારનો ઉપયોગ થાય છે"
+  },
+  "options_strictness_hard_label": {
+    "message": "સખત: વહેલું સમાપ્ત નહીં, ફક્ત કામચલાઉ સાઇટ ઍક્સેસ"
   },
   "options_cycle_heading": {
-    "message": "Focus and break cycle"
+    "message": "ફોકસ અને બ્રેક ચક્ર"
+  },
+  "options_cycle_help": {
+    "message": "ડિફૉલ્ટ: 25 મિનિટ ફોકસ, 5 મિનિટ બ્રેક, દર 4થા ચક્રે 15 મિનિટનો લાંબો બ્રેક. અભ્યાસના નમૂનાઓમાં, નિશ્ચિત સમયે લેવાયેલા બ્રેક મૂડ અને ફોકસ માટે મન થાય ત્યારે લેવાયેલા બ્રેક કરતાં વધુ સારા સાબિત થાય છે. ચોક્કસ મિનિટો પરંપરા છે, વિજ્ઞાન નહીં."
+  },
+  "options_cycle_default_label": {
+    "message": "ડિફૉલ્ટ રીતે ફોકસ અને બ્રેક ચક્ર ચલાવો"
   },
   "options_focus_minutes_label": {
-    "message": "Focus minutes"
+    "message": "ફોકસ મિનિટ"
   },
   "options_short_break_minutes_label": {
-    "message": "Short break minutes"
+    "message": "ટૂંકા બ્રેકની મિનિટ"
   },
   "options_long_break_minutes_label": {
-    "message": "Long break minutes"
+    "message": "લાંબા બ્રેકની મિનિટ"
+  },
+  "options_long_every_label": {
+    "message": "દર Nમા ચક્રે લાંબો બ્રેક"
   },
   "options_gate_heading": {
-    "message": "Deliberation gate"
+    "message": "વિચારણા દ્વાર"
+  },
+  "options_gate_help": {
+    "message": "સ્પષ્ટ 'કામ પર પાછા જાઓ' બટન સાથેની 10 સેકન્ડની રાહ આવેગજન્ય મુલાકાતોને માપી શકાય એ રીતે ઘટાડે છે (ફિલ્ડ સ્ટડી, PNAS 2023). લાંબી રાહ અને ટાઇપ કરેલું વાક્ય અસરને લગભગ બમણી કરે છે."
   },
   "options_gate_wait_one": {
-    "message": "Wait $COUNT$ second",
+    "message": "$COUNT$ સેકન્ડ રાહ જુઓ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -165,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "Wait $COUNT$ seconds",
+    "message": "$COUNT$ સેકન્ડ રાહ જુઓ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -174,28 +246,52 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "Custom"
+    "message": "કસ્ટમ"
   },
   "options_custom_delay_label": {
-    "message": "Custom delay (seconds)"
+    "message": "કસ્ટમ વિલંબ (સેકન્ડ)"
+  },
+  "options_custom_delay_error": {
+    "message": "કસ્ટમ વિલંબ સેકન્ડનો ધન પૂર્ણાંક હોવો જોઈએ."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "એક વાક્ય ટાઇપ કરવું પણ ફરજિયાત બનાવો"
   },
   "options_gate_force_end_label": {
-    "message": "સક્ષમ \"Ignore timeout and end anyway\" button"
+    "message": "“ટાઇમઆઉટ અવગણો અને છતાં સમાપ્ત કરો” બટન ચાલુ કરો"
+  },
+  "options_credit_help": {
+    "message": "તું ફોકસ કરે ત્યારે સાઇટ ઍક્સેસ ક્રેડિટ જમા થાય છે. બધી સાઇટ્સની ઍક્સેસ અને એક જ સાઇટનું અનલૉક બંને એક જ બેલેન્સમાંથી ખર્ચાય છે. તું ક્રેડિટ ખર્ચ્યા વિના ગમે ત્યારે દૂર જઈ શકે છે."
+  },
+  "options_earn_rate_label": {
+    "message": "30 મિનિટના ફોકસ દીઠ સાઇટ ઍક્સેસની મિનિટો"
+  },
+  "options_credit_cap_label": {
+    "message": "સાઇટ ઍક્સેસ ક્રેડિટ મર્યાદા (મિનિટ)"
+  },
+  "options_pause_length_label": {
+    "message": "બધી-સાઇટ ઍક્સેસનો સમયગાળો (મિનિટ)"
+  },
+  "options_unlock_length_label": {
+    "message": "સાઇટ અનલૉકનો સમયગાળો (મિનિટ)"
   },
   "options_streak_heading": {
-    "message": "Streak and retention"
+    "message": "સ્ટ્રીક અને જાળવણી"
   },
   "options_streak_help": {
-    "message": "The streak counts દિવસો that reach the goal. One default સેશન keeps the chain alive, and a freeze token repairs a missed day."
+    "message": "સ્ટ્રીક એ દિવસોની ગણતરી કરે છે જે લક્ષ્ય સુધી પહોંચે છે. એક ડિફૉલ્ટ સેશન સાંકળને જીવંત રાખે છે, અને ફ્રીઝ ટોકન ચૂકી ગયેલા દિવસને સુધારે છે."
+  },
+  "options_streak_goal_label": {
+    "message": "દૈનિક સ્ટ્રીક લક્ષ્ય (ફોકસ મિનિટ)"
   },
   "options_freeze_interval_label": {
-    "message": "Freeze token interval (દિવસો)"
+    "message": "ફ્રીઝ ટોકન અંતરાલ (દિવસ)"
   },
   "options_retention_label": {
-    "message": "Keep daily stats (દિવસો)"
+    "message": "દૈનિક આંકડા રાખો (દિવસ)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ category on.",
+    "message": "$CATEGORY$ કેટેગરી ચાલુ.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -204,7 +300,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ category off.",
+    "message": "$CATEGORY$ કેટેગરી બંધ.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -213,13 +309,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "All categories on."
+    "message": "બધી કેટેગરીઓ ચાલુ."
   },
   "options_all_categories_off_announcement": {
-    "message": "All categories off."
+    "message": "બધી કેટેગરીઓ બંધ."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ included.",
+    "message": "$HOST$ સામેલ.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -228,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ kept available.",
+    "message": "$HOST$ ઉપલબ્ધ રાખવામાં આવી.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -236,11 +332,29 @@
       }
     }
   },
+  "options_all_sites_included_announcement": {
+    "message": "બધી $CATEGORY$ સાઇટ્સ સામેલ.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "બધી $CATEGORY$ સાઇટ્સ ઉપલબ્ધ રાખવામાં આવી.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
   "options_category_bulk_actions_aria": {
-    "message": "Category bulk actions"
+    "message": "કેટેગરી બલ્ક ક્રિયાઓ"
   },
   "options_selected_count": {
-    "message": "Selected $COUNT$",
+    "message": "$COUNT$ પસંદ કરેલ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -249,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Deselected $COUNT$",
+    "message": "$COUNT$ પસંદગી રદ કરેલ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -258,19 +372,19 @@
     }
   },
   "options_select_all": {
-    "message": "Select all"
+    "message": "બધું પસંદ કરો"
   },
   "options_deselect_all": {
-    "message": "Deselect all"
+    "message": "બધાની પસંદગી રદ કરો"
   },
   "options_select_all_categories_aria": {
-    "message": "Select all categories"
+    "message": "બધી કેટેગરીઓ પસંદ કરો"
   },
   "options_deselect_all_categories_aria": {
-    "message": "Deselect all categories"
+    "message": "બધી કેટેગરીઓની પસંદગી રદ કરો"
   },
   "options_show_category_sites": {
-    "message": "Show $CATEGORY$ sites",
+    "message": "$CATEGORY$ સાઇટ્સ બતાવો",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -279,7 +393,7 @@
     }
   },
   "options_hide_category_sites": {
-    "message": "Hide $CATEGORY$ sites",
+    "message": "$CATEGORY$ સાઇટ્સ છુપાવો",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -288,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ site included",
+    "message": "$COUNT$ સાઇટ સામેલ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -297,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ sites included",
+    "message": "$COUNT$ સાઇટ્સ સામેલ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -306,13 +420,58 @@
     }
   },
   "options_category_off": {
-    "message": "Category off"
+    "message": "કેટેગરી બંધ"
+  },
+  "options_included_when_enabled_one": {
+    "message": "ચાલુ કરવા પર $COUNT$ સામેલ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "ચાલુ કરવા પર $COUNT$ સામેલ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
   },
   "options_category_uncheck_help": {
-    "message": "Uncheck a site to keep it available while the rest of the category is બ્લોક્ડ."
+    "message": "બાકીની કેટેગરી બ્લોક હોય ત્યારે કોઈ સાઇટને ઉપલબ્ધ રાખવા માટે તેનું ચેકબોક્સ કાઢી નાખો."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ સાઇટ બલ્ક ક્રિયાઓ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "બધી $CATEGORY$ સાઇટ્સ પસંદ કરો",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "બધી $CATEGORY$ સાઇટ્સની પસંદગી રદ કરો",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_category_sites_region_aria": {
-    "message": "$CATEGORY$ sites",
+    "message": "$CATEGORY$ સાઇટ્સ",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -321,61 +480,73 @@
     }
   },
   "options_day_sun": {
-    "message": "Sun"
+    "message": "રવિ"
   },
   "options_day_mon": {
-    "message": "Mon"
+    "message": "સોમ"
   },
   "options_day_tue": {
-    "message": "Tue"
+    "message": "મંગળ"
   },
   "options_day_wed": {
-    "message": "Wed"
+    "message": "બુધ"
   },
   "options_day_thu": {
-    "message": "Thu"
+    "message": "ગુરુ"
   },
   "options_day_fri": {
-    "message": "Fri"
+    "message": "શુક્ર"
   },
   "options_day_sat": {
-    "message": "Sat"
+    "message": "શનિ"
   },
   "options_schedule_cycles_label": {
-    "message": "Cycle focus and breaks"
+    "message": "ફોકસ અને બ્રેક ચક્ર ચલાવો"
+  },
+  "options_schedule_overlap_error": {
+    "message": "$DAY$ ના રોજ બીજી ચાલુ એન્ટ્રી સાથે ઓવરલેપ થાય છે.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
   },
   "options_schedule_session_type_aria": {
-    "message": "સેશન type"
+    "message": "સેશન પ્રકાર"
   },
   "options_schedule_entry_legend": {
-    "message": "Schedule entry"
+    "message": "શેડ્યૂલ એન્ટ્રી"
   },
   "options_schedule_start_label": {
-    "message": "શરુ"
+    "message": "શરૂઆત"
   },
   "options_schedule_end_label": {
-    "message": "End"
+    "message": "અંત"
   },
   "options_schedule_duration_legend": {
-    "message": "Duration"
+    "message": "સમયગાળો"
   },
   "options_schedule_intention_label": {
-    "message": "Intention"
+    "message": "ઉદ્દેશ"
   },
   "options_schedule_intention_placeholder": {
-    "message": "what this time is for"
+    "message": "આ સમય શેના માટે છે"
   },
   "options_schedule_save_entry": {
-    "message": "સાચવો entry"
+    "message": "એન્ટ્રી સાચવો"
   },
   "options_cancel": {
     "message": "રદ કરો"
   },
+  "options_schedule_empty": {
+    "message": "હજુ સુધી કોઈ શેડ્યૂલ કરેલા સેશન નથી."
+  },
   "options_schedule_selected_days_aria": {
-    "message": "Selected દિવસો"
+    "message": "પસંદ કરેલા દિવસો"
   },
   "options_schedule_time_range": {
-    "message": "$START$ to $END$",
+    "message": "$START$ થી $END$",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -388,52 +559,52 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blacklist"
+    "message": "બ્લેકલિસ્ટ"
   },
   "options_schedule_mode_whitelist": {
-    "message": "whitelist"
+    "message": "વ્હાઇટલિસ્ટ"
   },
   "options_schedule_strictness_flexible": {
-    "message": "flexible"
+    "message": "લવચીક"
   },
   "options_schedule_strictness_friction": {
-    "message": "friction"
+    "message": "ઘર્ષણ"
   },
   "options_schedule_strictness_hard": {
-    "message": "hard"
+    "message": "સખત"
   },
   "options_schedule_enabled_label": {
-    "message": "Enabled"
+    "message": "ચાલુ"
   },
   "options_schedule_edit": {
-    "message": "Edit"
+    "message": "સંપાદિત કરો"
   },
   "options_schedule_delete": {
-    "message": "કાઢી નાખો"
+    "message": "ડિલીટ કરો"
   },
   "options_schedule_add": {
-    "message": "ઉમેરો schedule entry"
+    "message": "શેડ્યૂલ એન્ટ્રી ઉમેરો"
   },
   "options_sounds_heading": {
-    "message": "Sounds"
+    "message": "અવાજો"
   },
   "options_master_volume": {
-    "message": "Master volume"
+    "message": "મુખ્ય વૉલ્યુમ"
   },
   "options_sound_session_complete": {
-    "message": "સેશન complete"
+    "message": "સેશન પૂર્ણ"
   },
   "options_sound_break_start": {
-    "message": "Break શરુ"
+    "message": "બ્રેક શરૂ"
   },
   "options_sound_break_end": {
-    "message": "Break end"
+    "message": "બ્રેક પૂર્ણ"
   },
   "options_sound_schedule_start": {
-    "message": "Schedule auto-શરુ"
+    "message": "શેડ્યૂલ ઑટો-સ્ટાર્ટ"
   },
   "options_sound_preview_aria": {
-    "message": "Preview $SOUND$",
+    "message": "$SOUND$ પ્રીવ્યૂ કરો",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -442,150 +613,237 @@
     }
   },
   "options_sound_play": {
-    "message": "Play"
+    "message": "ચલાવો"
+  },
+  "options_sound_preview_error": {
+    "message": "અવાજનું પ્રીવ્યૂ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "options_sounds_notifications_heading": {
-    "message": "Notifications"
+    "message": "સૂચનાઓ"
   },
   "options_session_complete_notification": {
-    "message": "Show a system notification when a સેશન completes"
+    "message": "સેશન પૂર્ણ થાય ત્યારે સિસ્ટમ સૂચના બતાવો"
   },
   "options_badge_heading": {
-    "message": "Badge"
+    "message": "બેજ"
+  },
+  "options_badge_countdown": {
+    "message": "ટૂલબાર આઇકોન પર બાકીનો સમય બતાવો"
   },
   "options_privacy_website_access_heading": {
-    "message": "Website access"
+    "message": "વેબસાઇટ ઍક્સેસ"
   },
   "options_privacy_website_off_title": {
-    "message": "Website access is off"
+    "message": "વેબસાઇટ ઍક્સેસ બંધ છે"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock cannot બ્લોક websites until you grant access."
+    "message": "તું ઍક્સેસ ન આપે ત્યાં સુધી Focus Lock વેબસાઇટ્સ બ્લોક કરી શકતું નથી."
   },
   "options_privacy_website_enable_action": {
-    "message": "સક્ષમ website blocking"
+    "message": "વેબસાઇટ બ્લોકિંગ ચાલુ કરો"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "વેબસાઇટ ઍક્સેસ આપવામાં આવી છે, પણ બ્લોકિંગ સક્રિય નથી"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome એ ઍક્સેસ આપી, પણ Focus Lock તેની બ્લોકિંગ સ્ક્રિપ્ટ રજિસ્ટર કરી શક્યું નહીં."
   },
   "options_privacy_website_retry_action": {
-    "message": "Retry website blocking"
+    "message": "વેબસાઇટ બ્લોકિંગ ફરી પ્રયાસ કરો"
+  },
+  "options_privacy_website_on_title": {
+    "message": "વેબસાઇટ બ્લોકિંગ ચાલુ છે"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock તારા સક્રિય બ્લોકિંગ નિયમો સામાન્ય વેબસાઇટ પેજ પર લાગુ કરી શકે છે."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "કાઢી નાખો local history?"
+    "message": "લોકલ હિસ્ટ્રી ડિલીટ કરવી છે?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "Confirm કાઢી નાખો local history"
+    "message": "લોકલ હિસ્ટ્રી ડિલીટ કરવાની પુષ્ટિ કરો"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Local history deleted."
+    "message": "લોકલ હિસ્ટ્રી ડિલીટ થઈ."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed સેશન events from this device. It does not clear a running સેશન, which keeps its intention and the address of each tab it is blocking. Ending the સેશન clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "આ, સંપૂર્ણ URL, ફોકસ ઉદ્દેશો અને વિગતવાર સેશન ઇવેન્ટ્સને આ ડિવાઇસ પરથી કાયમ માટે ડિલીટ કરે છે. તે ચાલુ સેશનને સાફ કરતું નથી, જે પોતાનો ઉદ્દેશ અને તે જે દરેક ટૅબને બ્લોક કરી રહ્યું છે તેનું સરનામું જાળવી રાખે છે. સેશન સમાપ્ત કરવાથી ઉદ્દેશ સાફ થાય છે અને એક ક્લીનઅપ શરૂ થાય છે જે દરેક ખુલ્લી વેબસાઇટ ટૅબને સાફ કરે છે, અને એ ક્લીનઅપ પૂર્ણ થાય ત્યારે દરેક સંગ્રહિત સરનામું દૂર કરે છે."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed સેશન events from this device, plus local-only aggregate statistics. It does not clear a running સેશન, which keeps its intention and the address of each tab it is blocking. Ending the સેશન clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "આ, સંપૂર્ણ URL, ફોકસ ઉદ્દેશો, વિગતવાર સેશન ઇવેન્ટ્સ અને ફક્ત-લોકલ સરવાળા આંકડાઓને આ ડિવાઇસ પરથી કાયમ માટે ડિલીટ કરે છે. તે ચાલુ સેશનને સાફ કરતું નથી, જે પોતાનો ઉદ્દેશ અને તે જે દરેક ટૅબને બ્લોક કરી રહ્યું છે તેનું સરનામું જાળવી રાખે છે. સેશન સમાપ્ત કરવાથી ઉદ્દેશ સાફ થાય છે અને એક ક્લીનઅપ શરૂ થાય છે જે દરેક ખુલ્લી વેબસાઇટ ટૅબને સાફ કરે છે, અને એ ક્લીનઅપ પૂર્ણ થાય ત્યારે દરેક સંગ્રહિત સરનામું દૂર કરે છે."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "કાઢી નાખો remote Sync data?"
+    "message": "રિમોટ Sync ડેટા ડિલીટ કરવો છે?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Confirm કાઢી નાખો remote Sync data"
+    "message": "રિમોટ Sync ડેટા ડિલીટ કરવાની પુષ્ટિ કરો"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "રિમોટ Chrome Sync ડેટા ડિલીટ થયો."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently deletes remote સેટિંગ્સ, બ્લોક and allow lists, site access credit, streaks, and domain-level બ્લોક્ડ-attempt aggregates from Chrome Sync. Local સેટિંગ્સ and statistics stay on this device."
+    "message": "આ Chrome Sync માંથી રિમોટ સેટિંગ્સ, બ્લોક અને એલાઉ લિસ્ટ, સાઇટ ઍક્સેસ ક્રેડિટ, સ્ટ્રીક અને ડોમેન-સ્તરના બ્લોક-પ્રયાસ સરવાળા આંકડાઓને કાયમ માટે ડિલીટ કરે છે. લોકલ સેટિંગ્સ અને આંકડા આ ડિવાઇસ પર જ રહે છે."
   },
   "options_privacy_confirm_all_title": {
-    "message": "કાઢી નાખો all Focus Lock data?"
+    "message": "બધો Focus Lock ડેટા ડિલીટ કરવો છે?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "Confirm કાઢી નાખો all Focus Lock data"
+    "message": "બધો Focus Lock ડેટા ડિલીટ કરવાની પુષ્ટિ કરો"
+  },
+  "options_privacy_all_deleted": {
+    "message": "બધો Focus Lock ડેટા ડિલીટ થયો."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "આ, આ ડિવાઇસ પરના દરેક Focus Lock ડેટા અને Chrome Sync માં રહેલી કોઈપણ Focus Lock નકલોને કાયમ માટે ડિલીટ કરે છે:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Deleting everything is available only while no સેશન is running. Focus Lock then returns to setup."
+    "message": "કોઈ સેશન ચાલુ ન હોય ત્યારે જ બધું ડિલીટ કરવાનું ઉપલબ્ધ છે. પછી Focus Lock સેટઅપ પર પાછું જાય છે."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "લોકલ હિસ્ટ્રી ડિલીટ કરી શકાઈ નહીં. ફરી પ્રયાસ કરો."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "રિમોટ Chrome Sync ડેટા ડિલીટ કરી શકાયો નહીં. ફરી પ્રયાસ કરો."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "બધો Focus Lock ડેટા ડિલીટ કરી શકાયો નહીં. ફરી પ્રયાસ કરો."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync could not સાચવો your latest changes. Your local સાચવો is safe."
+    "message": "Chrome Sync તારા છેલ્લા ફેરફારો સાચવી શક્યું નહીં. તારું લોકલ સેવ સુરક્ષિત છે."
+  },
+  "options_privacy_error_request": {
+    "message": "વિનંતી પૂર્ણ કરી શકાઈ નહીં. ફરી પ્રયાસ કરો."
   },
   "options_privacy_website_access_updated": {
-    "message": "Website access updated."
+    "message": "વેબસાઇટ ઍક્સેસ અપડેટ થઈ."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "વેબસાઇટ ઍક્સેસ આપવામાં આવી નહોતી."
+  },
+  "options_privacy_error_website_access": {
+    "message": "વેબસાઇટ ઍક્સેસ અપડેટ કરી શકાઈ નહીં. ફરી પ્રયાસ કરો."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Website blocking enabled."
+    "message": "વેબસાઇટ બ્લોકિંગ ચાલુ થયું."
+  },
+  "options_privacy_error_export": {
+    "message": "ઇવેન્ટ લોગ એક્સપોર્ટ કરી શકાયો નહીં."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "ઇવેન્ટ લોગ એક્સપોર્ટ કરી શકાયો નહીં. ફરી પ્રયાસ કરો."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Could not open Chrome permission સેટિંગ્સ. Try again."
+    "message": "Chrome પરવાનગી સેટિંગ્સ ખોલી શકાયા નહીં. ફરી પ્રયાસ કરો."
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "Chrome permission સેટિંગ્સ opened."
+    "message": "Chrome પરવાનગી સેટિંગ્સ ખૂલી."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Open Chrome permission સેટિંગ્સ"
+    "message": "Chrome પરવાનગી સેટિંગ્સ ખોલો"
   },
   "options_privacy_sync_heading": {
     "message": "Chrome Sync"
   },
+  "options_privacy_sync_switch_label": {
+    "message": "Chrome ડિવાઇસ પર Focus Lock ડેટા Sync કરો"
+  },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync enabled."
+    "message": "Chrome Sync ચાલુ થયું."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync disabled."
+    "message": "Chrome Sync બંધ થયું."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync હજુ પણ તારા છેલ્લા ફેરફારો સાચવી રહ્યું છે."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync is on."
+    "message": "Chrome Sync ચાલુ છે."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync is off."
+    "message": "Chrome Sync બંધ છે."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome Sync ફેરફારો સચવાયા."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome Sync ચાલુ કરવાનો ફરી પ્રયાસ કરો"
   },
   "options_privacy_retry_sync": {
-    "message": "Retry Chrome Sync"
+    "message": "Chrome Sync ફરી પ્રયાસ કરો"
   },
   "options_privacy_scope_synced": {
-    "message": "Synced"
+    "message": "સિંક થયેલ"
   },
   "options_privacy_scope_local_only": {
-    "message": "Local only"
+    "message": "ફક્ત લોકલ"
+  },
+  "options_privacy_developer_note": {
+    "message": "Focus Lock ડેવલપરને કંઈ મોકલવામાં આવતું નથી."
   },
   "options_privacy_local_log_heading": {
-    "message": "Local event log"
+    "message": "લોકલ ઇવેન્ટ લોગ"
   },
   "options_privacy_local_log_detail": {
-    "message": "Export the detailed local log or કાઢી નાખો local browsing and સેશન history."
+    "message": "વિગતવાર લોકલ લોગ એક્સપોર્ટ કરો અથવા લોકલ બ્રાઉઝિંગ અને સેશન હિસ્ટ્રી ડિલીટ કરો."
   },
   "options_privacy_export_local_log": {
-    "message": "Export local event log"
+    "message": "લોકલ ઇવેન્ટ લોગ એક્સપોર્ટ કરો"
   },
   "options_privacy_local_log_exported": {
-    "message": "Local event log exported."
+    "message": "લોકલ ઇવેન્ટ લોગ એક્સપોર્ટ થયો."
   },
   "options_privacy_delete_local_history": {
-    "message": "કાઢી નાખો local history"
+    "message": "લોકલ હિસ્ટ્રી ડિલીટ કરો"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Remote Sync data"
+    "message": "રિમોટ Sync ડેટા"
   },
   "options_privacy_remote_data_detail": {
-    "message": "કાઢી નાખો the Focus Lock copies left in Chrome Sync without changing this device."
+    "message": "આ ડિવાઇસમાં ફેરફાર કર્યા વિના Chrome Sync માં રહેલી Focus Lock નકલો ડિલીટ કરો."
   },
   "options_privacy_delete_remote_data": {
-    "message": "કાઢી નાખો remote Sync data"
+    "message": "રિમોટ Sync ડેટા ડિલીટ કરો"
   },
   "options_privacy_all_data_heading": {
-    "message": "All Focus Lock data"
+    "message": "બધો Focus Lock ડેટા"
   },
   "options_privacy_all_data_detail": {
-    "message": "કાઢી નાખો every Focus Lock record on this device and any Focus Lock copies left in Chrome Sync, then શરુ again from setup. Available while no સેશન is running."
+    "message": "આ ડિવાઇસ પરનો દરેક Focus Lock રેકોર્ડ અને Chrome Sync માં રહેલી કોઈપણ Focus Lock નકલો ડિલીટ કરો, પછી સેટઅપથી ફરીથી શરૂ કરો. કોઈ સેશન ચાલુ ન હોય ત્યારે જ ઉપલબ્ધ."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "બધા Focus Lock ડેટાની ડિલીટ ફરીથી શરૂ થઈ રહી છે."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "લોકલ હિસ્ટ્રી ડિલીટનો ફરી પ્રયાસ કરો"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "રિમોટ Sync ડિલીટનો ફરી પ્રયાસ કરો"
   },
   "options_privacy_retry_all_data": {
-    "message": "Retry all data deletion"
+    "message": "બધા ડેટાની ડિલીટનો ફરી પ્રયાસ કરો"
   },
   "options_error_load": {
-    "message": "Could not load સેટિંગ્સ. Reload the page to try again."
+    "message": "સેટિંગ્સ લોડ કરી શકાયા નહીં. ફરી પ્રયાસ કરવા પેજ રિલોડ કરો."
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lock ફરી શરૂ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
   },
   "options_error_refresh_privacy": {
-    "message": "Could not refresh privacy સેટિંગ્સ. Reload the page."
+    "message": "ગોપનીયતા સેટિંગ્સ રિફ્રેશ કરી શકાયા નહીં. પેજ રિલોડ કરો."
+  },
+  "options_error_website_blocking": {
+    "message": "વેબસાઇટ બ્લોકિંગ અપડેટ કરી શકાયું નહીં. ફરી પ્રયાસ કરો."
+  },
+  "options_error_change_sync": {
+    "message": "Chrome Sync બદલી શકાયું નહીં. ફરી પ્રયાસ કરો."
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome Sync નો ફરી પ્રયાસ કરી શકાયો નહીં. ફરી પ્રયાસ કરો."
   },
   "options_error_save_settings": {
-    "message": "Could not સાચવો સેટિંગ્સ. Reload the page and try again."
+    "message": "સેટિંગ્સ સાચવી શકાયા નહીં. પેજ રિલોડ કરો અને ફરી પ્રયાસ કરો."
   },
   "options_error_save_lists": {
-    "message": "Could not સાચવો lists. Reload the page and try again."
+    "message": "લિસ્ટ સાચવી શકાયા નહીં. પેજ રિલોડ કરો અને ફરી પ્રયાસ કરો."
   }
 }

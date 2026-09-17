@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "جلسه تمرکز به پایان رسید"
+  },
+  "notify_session_complete_body": {
+    "message": "جلسه تمرکز شما تمام شد."
+  },
+  "notify_schedule_window_body": {
+    "message": "تا $END$ قفل است.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "زمان‌بندی تمرکز شروع نشد"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "مسدودسازی سایت‌ها فعال نیست. راه‌اندازی را کامل کنید یا دسترسی به سایت‌ها را بدهید، سپس دوباره تلاش کنید."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "راه‌اندازی در زبانه دیگری کامل شد."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "راه‌اندازی در زبانه دیگری تغییر کرد. آخرین انتخاب‌ها دوباره بارگذاری شدند."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "راه‌اندازی در زبانه دیگری تغییر کرد. پیش از پایان، راه‌اندازی را دوباره بارگذاری کنید."
+  },
+  "notify_setup_not_complete": {
+    "message": "راه‌اندازی کامل نیست."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "راه‌اندازی آماده پایان نیست."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "انتخاب محل ذخیره‌سازی راه‌اندازی تغییر کرد. پیش از پایان، راه‌اندازی را دوباره بارگذاری کنید."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "عملیات ذخیره‌سازی راه‌اندازی اولیه ناموفق بود."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "عملیات راه‌اندازی اولیه ناموفق بود."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock نتوانست دسترسی به سایت‌ها را بررسی کند. راه‌اندازی را دوباره انجام دهید یا افزونه را بارگذاری مجدد کنید."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "دسترسی به سایت‌ها داده شد، اما Focus Lock نتوانست مسدودسازی را فعال کند. راه‌اندازی را دوباره انجام دهید یا افزونه را بارگذاری مجدد کنید."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "دسترسی به سایت‌ها در دسترس نیست و Focus Lock نتوانست پاک‌سازی مسدودسازی را به پایان برساند. راه‌اندازی را دوباره انجام دهید یا افزونه را بارگذاری مجدد کنید."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock وضعیت ناسازگاری از دسترسی به سایت‌ها دریافت کرد. راه‌اندازی را دوباره انجام دهید یا افزونه را بارگذاری مجدد کنید."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock راه‌اندازی خود را کامل نکرد: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "خطای ناشناخته"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock در حال کار است، چیزی برای بازنشانی نیست"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock نمی‌تواند وضعیت اجرایی را که هنوز درون یک نسل از تنظیمات ذخیره شده بازنشانی کند"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "تلاش دوباره برای حذف داده‌ها در دسترس نیست."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "پیش از حذف داده‌های همگام‌شده، همگام‌سازی را خاموش کنید"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock هنوز در حال اتمام تغییر قبلی است. لحظه‌ای بعد دوباره تلاش کنید."
+  },
+  "notify_work_gate_stuck": {
+    "message": "دروازه تأمل باز بسته نشد. دوباره تلاش کنید."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "زبانه کار در دسترس نیست."
+  },
+  "notify_settings_sync_limit": {
+    "message": "تنظیمات از محدوده ۸ کیلوبایتی Chrome Sync فراتر رفته است. مواردی از زمان‌بندی را حذف کنید یا قصدها را کوتاه‌تر کنید، سپس دوباره تلاش کنید."
+  },
+  "notify_lists_sync_limit": {
+    "message": "فهرست‌ها از محدوده ۸ کیلوبایتی Chrome Sync فراتر رفته‌اند. قوانین سفارشی یا فهرست سفید را حذف کنید، سپس دوباره تلاش کنید."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: حذف سایت‌های مسدود پس از پایان آن ممکن می‌شود"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: موارد تازه فهرست سفید پس از پایان آن اعمال می‌شوند"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: غیرفعال کردن دسته‌ها پس از پایان آن ممکن می‌شود"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: استثناهای تازه پس از پایان آن اعمال می‌شوند"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: کاهش سخت‌گیری پیش‌فرض تا پایان آن منتظر می‌ماند"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: کوتاه کردن مهلت تأمل دروازه را تضعیف می‌کند"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: حذف عبارت تایپی دروازه را تضعیف می‌کند"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: افزایش نرخ کسب اعتبار، فرارهای بیشتری را تأمین می‌کند"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: افزایش سقف اعتبار، فرارهای بیشتری را تأمین می‌کند"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: کوتاه کردن مکث‌ها هزینه آن‌ها را پایین می‌آورد"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: کوتاه کردن بازگشایی‌ها هزینه آن‌ها را پایین می‌آورد"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "یک جلسه سخت‌گیرانه در حال اجراست: مورد زمان‌بندی آن تا پایانش قابل تضعیف نیست"
+  }
+}

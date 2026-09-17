@@ -1,1 +1,702 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "naslednja: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Nastavitve"
+  },
+  "popup_open_settings_failed": {
+    "message": "Nastavitev ni bilo mogoče odpreti. Poskusi znova."
+  },
+  "popup_settings_load_failed": {
+    "message": "Nastavitev seje ni bilo mogoče naložiti. Znova naloži okno. Prikazane so privzete vrednosti."
+  },
+  "popup_open_setup_failed": {
+    "message": "Nastavitve ni bilo mogoče odpreti. Poskusi znova."
+  },
+  "popup_setup_required_heading": {
+    "message": "Dokončaj nastavitev Focus Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "Preden zaženeš sejo, izberi začetne sezname, dostop do spletnih mest in način shranjevanja."
+  },
+  "popup_open_setup_button": {
+    "message": "Odpri nastavitev"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Blokiranja spletnih mest ni bilo mogoče potrditi. Poskusi znova."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Blokiranja spletnih mest ni bilo mogoče vklopiti. Poskusi znova."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Blokiranje spletnih mest je izklopljeno"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock ne more zagnati seje, dokler Chrome ne dovoli dostopa do spletnih mest in se blokiranje ne vklopi."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome ni dovolil dostopa do spletnih mest. Blokiranje je še vedno izklopljeno."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Dostop do spletnih mest je dovoljen, vendar Focus Lock ni mogel vklopiti blokiranja. Ponovi nastavitev ali znova naloži razširitev."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Vklopi blokiranje spletnih mest"
+  },
+  "popup_retry_button": {
+    "message": "Znova"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Tvoja seja se je končala, ker je bil odvzet dostop do spletnih mest."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Tvoja seja se je končala, ker Focus Lock ni mogel vklopiti blokiranja spletnih mest."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Obvestila ni bilo mogoče zapreti. Poskusi znova."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Zapri obvestilo o dostopu do spletnih mest"
+  },
+  "popup_dismiss_button": {
+    "message": "Zapri"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lock ni bilo mogoče znova zagnati. Poskusi znova."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock se ni mogel zagnati"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Razloga ni bilo mogoče prebrati."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Ponastavi lokalno izvajalno okolje"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Ohrani tvoje nastavitve, sezname in statistiko. Počisti stanje trenutne seje."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Izbriši vse in začni znova"
+  },
+  "popup_keep_data_button": {
+    "message": "Obdrži moje podatke"
+  },
+  "popup_delete_all_button": {
+    "message": "Izbriši vse podatke Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Stanje nastavitve ni na voljo. Znova naloži Focus Lock."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Stanje osredotočenosti ni na voljo"
+  },
+  "popup_action_in_progress": {
+    "message": "Dejanje poteka"
+  },
+  "popup_active_site_checking": {
+    "message": "Preverjam aktivno spletno mesto"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Odpri navadno spletno mesto, da ga odkleneš"
+  },
+  "popup_active_site_unknown": {
+    "message": "Aktivnega spletnega mesta ni bilo mogoče prepoznati"
+  },
+  "popup_active_site_error": {
+    "message": "Aktivnega spletnega mesta ni bilo mogoče prepoznati."
+  },
+  "popup_resume_now": {
+    "message": "Nadaljuj zdaj"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Začni naslednjo osredotočenost prej"
+  },
+  "popup_unlock_this_site": {
+    "message": "Odkleni to spletno mesto"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Odkleni vsa spletna mesta"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ dostopa, $CREDIT$ kredita",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ dostopa, $CREDIT$ kredita - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Izberi delovni zavihek"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Zamenjaj delovni zavihek"
+  },
+  "popup_session_actions_summary": {
+    "message": "Dejanja seje"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ kredita za dostop",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Dodaj dovoljeno domeno"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "dokumenti.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Dodaj dovoljeno domeno"
+  },
+  "popup_add_button": {
+    "message": "Dodaj"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Samo $COUNT$ pravil dovoljenih spletnih mest. Druga spletna mesta blokirana.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ blokiranih kategorij, $RULES$ dodatnih pravil.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Trdo zaklepanje. Ni mogoče končati prej."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Lahko končaš kadar koli."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Konec po $SECONDS$s čakanja.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Konec po $SECONDS$s čakanja in potrditvenem stavku.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Dolžina seje"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Lastne minute"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_gate_force_end": {
+    "message": "Prezri čakanje in vseeno končaj"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Ostani osredotočen"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Vtipkaj:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Premisleka ni bilo mogoče posodobiti. Poskusi znova."
+  },
+  "popup_gate_intention": {
+    "message": "Rekel si: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Trenutek za premislek:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "od $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Nazaj na delo"
+  },
+  "popup_destination_unavailable": {
+    "message": "Cilj ni znan"
+  },
+  "popup_back_to_work_name": {
+    "message": "Nazaj na delo: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Nazaj na delo: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Kategorije bo mogoče urejati, ko se seznami blokiranih spletnih mest znova naložijo."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blokirane kategorije"
+  },
+  "popup_show_full_domain": {
+    "message": "Pokaži celotno domeno: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Pokaži celoten regularni izraz: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domena"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regularni izraz"
+  },
+  "popup_category_sites_label": {
+    "message": "Spletna mesta kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ spletno mesto",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ spletnih mest",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "in še $COUNT$ spletno mesto",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "in še $COUNT$ spletnih mest",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Dovoljene izjeme"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Dodatna pravila blokiranja"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Ni dodatnih pravil blokiranja."
+  },
+  "popup_allowed_heading": {
+    "message": "Dovoljena spletna mesta in pravila"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Zaenkrat ni dovoljeno nobeno spletno mesto."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "Kaj bo blokirano"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "Kaj bo dovoljeno"
+  },
+  "popup_categories_selected": {
+    "message": "Izbranih $SELECTED$ od $TOTAL$ kategorij",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ dodatno pravilo blokiranja",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ dodatnih pravil blokiranja",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ dovoljeno pravilo",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ dovoljenih pravil",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Spremembe dovoljenih spletnih mest in pravil tukaj veljajo samo za to sejo. Vse drugo je blokirano."
+  },
+  "popup_scope_blacklist": {
+    "message": "Spremembe kategorij in pravil tukaj veljajo samo za to sejo."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Odpri nastavitve za trajne privzete vrednosti"
+  },
+  "popup_rule_details_label": {
+    "message": "Podrobnosti pravil seje"
+  },
+  "popup_session_type_legend": {
+    "message": "Vrsta seje"
+  },
+  "popup_session_type_flexible": {
+    "message": "Prilagodljiva"
+  },
+  "popup_session_type_friction": {
+    "message": "Trenje"
+  },
+  "popup_session_type_hard": {
+    "message": "Trdo zaklepanje"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Končaj sejo takoj, kadar koli se odločiš."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Predčasen konec zahteva $WAIT$. Ničesar ti ni treba tipkati.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Predčasen konec zahteva $WAIT$ in vtipkano potrditev.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "Seja se ne more končati prej. Kredit za dostop še vedno deluje."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "Izbrane kategorije in dodatna pravila so blokirani. Druga spletna mesta ostanejo na voljo."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Na voljo so samo navedena spletna mesta. Vsako drugo spletno mesto je blokirano."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Vnesi dolžino seje, večjo od nič minut."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Privzete vrednosti so se spremenile, trenutnih seznamov pa ni bilo mogoče naložiti. Znova naloži okno."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Brez delovnega zavihka (izbirno)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Izbrani zavihek ni na voljo - izberi drugega"
+  },
+  "popup_cycles_label": {
+    "message": "Cikli: $FOCUS$ min osredotočenosti, $SHORT_BREAK$ min odmora, $LONG_BREAK$ min dolgega odmora vsak $LONG_EVERY$.",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Namera"
+  },
+  "popup_intention_placeholder": {
+    "message": "Na čem delaš?"
+  },
+  "popup_work_tab_named": {
+    "message": "Delovni zavihek: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Zamenjaj"
+  },
+  "popup_session_settings_summary": {
+    "message": "Nastavitve seje"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Izberi delovni zavihek"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Delovni zavihek"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (trenutni)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Način blokiranja"
+  },
+  "popup_invalid_time_label": {
+    "message": "neveljaven čas"
+  },
+  "popup_start_focus_label": {
+    "message": "Začni osredotočenost za $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Vnesi veljavno domeno, na primer dokumenti.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Delovnih zavihkov ni bilo mogoče naložiti. Znova odpri okno."
+  },
+  "popup_use_this_tab": {
+    "message": "Uporabi ta zavihek"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "Ta zavihek ni primeren za delo. Izberi drug odprt zavihek."
+  },
+  "popup_checking_current_tab": {
+    "message": "Preverjam trenutni zavihek..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Iščem tvoj trenutni zavihek..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Tvojega trenutnega zavihka ni bilo mogoče naložiti. Poskusi znova."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Izberi ali zamenjaj svoj delovni zavihek."
+  },
+  "popup_saving_work_tab": {
+    "message": "Shranjujem delovni zavihek..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Delovnega zavihka ni bilo mogoče shraniti. Poskusi znova."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Izberi odprt zavihek"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Ali izberi drug zavihek"
+  },
+  "popup_start_failed": {
+    "message": "Seje ni bilo mogoče zagnati. Poskusi znova."
+  },
+  "popup_sites_two": {
+    "message": "$COUNT$ spletni mesti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_sites_few": {
+    "message": "$COUNT$ spletna mesta",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_two": {
+    "message": "in še $COUNT$ spletni mesti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_few": {
+    "message": "in še $COUNT$ spletna mesta",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_two": {
+    "message": "$COUNT$ dodatni pravili blokiranja",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_few": {
+    "message": "$COUNT$ dodatna pravila blokiranja",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_two": {
+    "message": "$COUNT$ dovoljeni pravili",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_few": {
+    "message": "$COUNT$ dovoljena pravila",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  }
+}

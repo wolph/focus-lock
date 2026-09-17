@@ -21,10 +21,13 @@
     "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ് സെറ്റിംഗുകൾ ലഭ്യമല്ല."
   },
   "stats_scope_synced": {
-    "message": "ഈ Chrome അക്കൗണ്ടിൽ നിന്ന് സിങ്ക് ചെയ്ത മൊത്തം."
+    "message": "ഈ Chrome അക്കൗണ്ട് നിന്നും സിങ്ക് ചെയ്ത കൂടെ."
   },
   "stats_scope_local": {
-    "message": "ഈ മെഷീൻ നിന്നും മൊത്തം."
+    "message": "ഈ മെഷീൻ നിന്നും."
+  },
+  "stats_scope_checking": {
+    "message": "ഈ കൂടെ സിങ്ക് നിർണ്ണയിക്കുന്നു."
   },
   "stats_scope_retry": {
     "message": "Retry scope check"

@@ -1,1 +1,666 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "הבא: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "הגדרות"
+  },
+  "popup_open_settings_failed": {
+    "message": "לא ניתן היה לפתוח את ההגדרות. נסה שוב."
+  },
+  "popup_settings_load_failed": {
+    "message": "לא ניתן היה לטעון את הגדרות המפגש. פתח מחדש את החלון כדי לנסות שוב. מוצגות ברירות המחדל."
+  },
+  "popup_open_setup_failed": {
+    "message": "לא ניתן היה לפתוח את ההגדרה. נסה שוב."
+  },
+  "popup_setup_required_heading": {
+    "message": "סיים להגדיר את Focus Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "בחר את רשימות הפתיחה שלך, את הגישה לאתרים ואת מצב האחסון לפני התחלת מפגש."
+  },
+  "popup_open_setup_button": {
+    "message": "פתח הגדרה"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "לא ניתן היה לאשר חסימת אתרים. נסה שוב."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "לא ניתן היה להפעיל חסימת אתרים. נסה שוב."
+  },
+  "popup_blocking_off_heading": {
+    "message": "חסימת האתרים כבויה"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock אינו יכול להתחיל מפגש עד ש-Chrome יאשר גישה לאתרים והחסימה תופעל."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome לא אישר גישה לאתרים. חסימת האתרים עדיין כבויה."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "הגישה לאתרים אושרה, אך Focus Lock לא הצליח להפעיל חסימה. נסה שוב את ההגדרה או טען מחדש את התוסף."
+  },
+  "popup_enable_blocking_button": {
+    "message": "הפעל חסימת אתרים"
+  },
+  "popup_retry_button": {
+    "message": "נסה שוב"
+  },
+  "popup_notice_access_revoked": {
+    "message": "המפגש שלך הסתיים כי הגישה לאתרים הוסרה."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "המפגש שלך הסתיים כי Focus Lock לא הצליח להפעיל חסימת אתרים."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "לא ניתן היה לסגור את ההודעה הזו. נסה שוב."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "סגור את הודעת הגישה לאתרים"
+  },
+  "popup_dismiss_button": {
+    "message": "סגור"
+  },
+  "popup_restart_failed": {
+    "message": "לא ניתן היה להפעיל מחדש את Focus Lock. נסה שוב."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock לא הצליח להתחיל"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "לא ניתן היה לקרוא את הסיבה."
+  },
+  "popup_reset_runtime_button": {
+    "message": "אפס ריצה מקומית"
+  },
+  "popup_reset_runtime_note": {
+    "message": "שומר על ההגדרות, הרשימות והסטטיסטיקות שלך. מנקה את מצב המפגש הנוכחי."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "מחק הכול והתחל מחדש"
+  },
+  "popup_keep_data_button": {
+    "message": "שמור על הנתונים שלי"
+  },
+  "popup_delete_all_button": {
+    "message": "מחק את כל נתוני Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "מצב ההגדרה אינו זמין. טען מחדש את Focus Lock כדי לנסות שוב."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "מצב הריכוז אינו זמין"
+  },
+  "popup_action_in_progress": {
+    "message": "פעולה מתבצעת"
+  },
+  "popup_active_site_checking": {
+    "message": "בודק את האתר הפעיל"
+  },
+  "popup_active_site_unsupported": {
+    "message": "פתח אתר רגיל כדי לשחרר אותו"
+  },
+  "popup_active_site_unknown": {
+    "message": "לא ניתן היה לזהות את האתר הפעיל"
+  },
+  "popup_active_site_error": {
+    "message": "לא ניתן היה לזהות את האתר הפעיל."
+  },
+  "popup_resume_now": {
+    "message": "חדש עכשיו"
+  },
+  "popup_start_next_focus_early": {
+    "message": "התחל מוקדם את הריכוז הבא"
+  },
+  "popup_unlock_this_site": {
+    "message": "שחרר את האתר הזה"
+  },
+  "popup_unlock_all_sites": {
+    "message": "שחרר את כל האתרים"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ גישה, $CREDIT$ קרדיט",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ גישה, $CREDIT$ קרדיט - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "בחר לשונית עבודה"
+  },
+  "popup_change_work_tab_button": {
+    "message": "שנה לשונית עבודה"
+  },
+  "popup_session_actions_summary": {
+    "message": "פעולות מפגש"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ קרדיט גישה לאתרים",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "הוסף דומיין מותר"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "הוסף דומיין מותר"
+  },
+  "popup_add_button": {
+    "message": "הוסף"
+  },
+  "popup_draft_allowed_only": {
+    "message": "רק $COUNT$ כללי אתרים מותרים. שאר האתרים חסומים.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ קטגוריות חסומות, $RULES$ כללים נוספים.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "נעילה קשיחה. אי אפשר לסיים מוקדם."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "אפשר לסיים בכל רגע."
+  },
+  "popup_draft_stop_friction": {
+    "message": "סיום אחרי המתנה של $SECONDS$ שנ'.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "סיום אחרי המתנה של $SECONDS$ שנ' ומשפט אישור.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "אורך המפגש"
+  },
+  "popup_custom_minutes_label": {
+    "message": "דקות מותאמות"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "דק'"
+  },
+  "popup_gate_force_end": {
+    "message": "התעלם מההמתנה וסיים בכל זאת"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "המשך להתרכז"
+  },
+  "popup_gate_phrase_label": {
+    "message": "הקלד:"
+  },
+  "popup_gate_update_failed": {
+    "message": "לא ניתן היה לעדכן את השער. נסה שוב."
+  },
+  "popup_gate_intention": {
+    "message": "אמרת: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "רגע להחלטה:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "מתוך $TOTAL$ שנ'",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "חזרה לעבודה"
+  },
+  "popup_destination_unavailable": {
+    "message": "היעד אינו זמין"
+  },
+  "popup_back_to_work_name": {
+    "message": "חזרה לעבודה: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "חזרה לעבודה: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "עריכת קטגוריות מושבתת עד שרשימות האתרים החסומים ייטענו מחדש."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "קטגוריות חסומות"
+  },
+  "popup_show_full_domain": {
+    "message": "הצג את הדומיין המלא: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "הצג את הביטוי הרגולרי המלא: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "דומיין"
+  },
+  "popup_rule_kind_regex": {
+    "message": "ביטוי רגולרי"
+  },
+  "popup_category_sites_label": {
+    "message": "אתרים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "אתר $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ אתרים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "ועוד אתר $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "ועוד $COUNT$ אתרים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "חריגים מותרים"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "כללי חסימה נוספים"
+  },
+  "popup_no_extra_blocked": {
+    "message": "אין כללי חסימה נוספים."
+  },
+  "popup_allowed_heading": {
+    "message": "אתרים וכללים מותרים"
+  },
+  "popup_no_allowed_sites": {
+    "message": "עדיין אין אתרים מותרים."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "מה ייחסם"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "מה יותר"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ מתוך $TOTAL$ קטגוריות נבחרו",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "כלל חסימה נוסף $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ כללי חסימה נוספים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "כלל מותר $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ כללים מותרים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "שינויים באתרים המותרים ובכללים כאן חלים על המפגש הזה בלבד. כל השאר חסום."
+  },
+  "popup_scope_blacklist": {
+    "message": "שינויים בקטגוריות ובכללים כאן חלים על המפגש הזה בלבד."
+  },
+  "popup_open_settings_defaults": {
+    "message": "פתח הגדרות לערכי ברירת מחדל קבועים"
+  },
+  "popup_rule_details_label": {
+    "message": "פרטי כללי המפגש"
+  },
+  "popup_session_type_legend": {
+    "message": "סוג המפגש"
+  },
+  "popup_session_type_flexible": {
+    "message": "גמיש"
+  },
+  "popup_session_type_friction": {
+    "message": "חיכוך"
+  },
+  "popup_session_type_hard": {
+    "message": "נעילה קשיחה"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "סיים את המפגש מיד בכל רגע שתבחר."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "סיום מוקדם מחייב $WAIT$. אין צורך להקליד.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "סיום מוקדם מחייב $WAIT$ ואישור מוקלד.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "אי אפשר לסיים את המפגש מוקדם. קרדיט הגישה לאתרים עדיין פועל."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "הקטגוריות הנבחרות והכללים הנוספים חסומים. שאר האתרים נשארים זמינים."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "רק האתרים ברשימה זמינים. כל אתר אחר חסום."
+  },
+  "popup_invalid_duration_error": {
+    "message": "הזן אורך מפגש גדול מאפס דקות."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "ברירות המחדל השתנו, אך לא ניתן היה לטעון את הרשימות הנוכחיות. פתח מחדש את החלון."
+  },
+  "popup_no_work_tab_option": {
+    "message": "ללא לשונית עבודה (אופציונלי)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "הלשונית שנבחרה אינה זמינה - בחר אחרת"
+  },
+  "popup_cycles_label": {
+    "message": "מחזורים: $FOCUS$ דק' ריכוז, $SHORT_BREAK$ דק' הפסקה, $LONG_BREAK$ דק' הפסקה ארוכה בכל מחזור $LONG_EVERY$",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "כוונה"
+  },
+  "popup_intention_placeholder": {
+    "message": "על מה אתה עובד?"
+  },
+  "popup_work_tab_named": {
+    "message": "לשונית עבודה: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "שנה"
+  },
+  "popup_session_settings_summary": {
+    "message": "הגדרות המפגש"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "בחר לשונית עבודה"
+  },
+  "popup_work_tab_select_label": {
+    "message": "לשונית עבודה"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (הנוכחית)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "מצב חסימה"
+  },
+  "popup_invalid_time_label": {
+    "message": "זמן לא תקין"
+  },
+  "popup_start_focus_label": {
+    "message": "התחל ריכוז של $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "הזן דומיין תקין כמו docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "לא ניתן היה לטעון לשוניות עבודה. פתח מחדש את החלון כדי לנסות שוב."
+  },
+  "popup_use_this_tab": {
+    "message": "השתמש בלשונית הזו"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "הלשונית הזו אינה זמינה לעבודה. בחר לשונית פתוחה אחרת."
+  },
+  "popup_checking_current_tab": {
+    "message": "בודק את הלשונית הנוכחית..."
+  },
+  "popup_finding_current_tab": {
+    "message": "מחפש את הלשונית הנוכחית שלך..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "לא ניתן היה לטעון את הלשונית הנוכחית שלך. נסה שוב."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "בחר או החלף את לשונית העבודה שלך."
+  },
+  "popup_saving_work_tab": {
+    "message": "שומר את לשונית העבודה..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "לא ניתן היה לשמור את לשונית העבודה. נסה שוב."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "בחר לשונית פתוחה"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "או בחר לשונית אחרת"
+  },
+  "popup_start_failed": {
+    "message": "לא ניתן היה להתחיל את המפגש. נסה שוב."
+  },
+  "popup_sites_two": {
+    "message": "$COUNT$ אתרים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_two": {
+    "message": "ועוד $COUNT$ אתרים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_two": {
+    "message": "$COUNT$ כללי חסימה נוספים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_two": {
+    "message": "$COUNT$ כללים מותרים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  }
+}

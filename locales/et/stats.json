@@ -1,1 +1,317 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Focus Locki statistika"
+  },
+  "stats_page_title": {
+    "message": "Sinu fookuse ülevaade"
+  },
+  "stats_loading": {
+    "message": "Sinu statistika laadimine."
+  },
+  "stats_load_error": {
+    "message": "Statistika laadimine ebaõnnestus. Laadi leht uuesti ja proovi uuesti."
+  },
+  "stats_partial_error_both": {
+    "message": "Tunnipõhised katsed ja saidi juurdepääsu krediidi seaded pole saadaval."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Tunnipõhised katsed pole saadaval."
+  },
+  "stats_partial_error_economy": {
+    "message": "Saidi juurdepääsu krediidi seaded pole saadaval."
+  },
+  "stats_scope_synced": {
+    "message": "Sünkroonitud kogusummad sellelt Chrome'i kontolt. Ainult kohalikud paneelid on märgitud."
+  },
+  "stats_scope_local": {
+    "message": "Kogusummad sellest seadmest. Focus Locki statistikat ei sünkroonita."
+  },
+  "stats_scope_checking": {
+    "message": "Kontrollitakse, kas need kogusummad on sünkroonitud."
+  },
+  "stats_scope_unavailable": {
+    "message": "Statistika ulatus pole teada. Kogusummades võib olla sünkroonitud andmeid. Tunnipõhised katsed ja hiljutised seansid on sellest seadmest."
+  },
+  "stats_scope_retry": {
+    "message": "Korda ulatuse kontrolli"
+  },
+  "stats_empty": {
+    "message": "Statistika ilmub pärast sinu esimest seanssi."
+  },
+  "stats_tile_focus_today": {
+    "message": "Fookus täna"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Fookus viimasel 7 päeval"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Täna blokeeritud katsed"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Täna hüljatud värava taotlused"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Täna kulutatud juurdepääsu krediit"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Kõik saidid $ALL_SITES$, üks sait $ONE_SITE$, teenitud $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "teenitud $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Seeria"
+  },
+  "stats_streak_empty": {
+    "message": "Sinu seeria algab esimesest fookusepäevast."
+  },
+  "stats_streak_unit_one": {
+    "message": "päev"
+  },
+  "stats_streak_unit_other": {
+    "message": "päeva"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "kogutud $COUNT$ külmutusmärk",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "kogutud $COUNT$ külmutusmärki",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Seeria külmutus: üks vahele jäänud päev on kaetud"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktiivne päev sel kuul ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktiivset päeva sel kuul ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktiivsed päevad kuus $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Kuus $MONTH$ pole aktiivseid päevi.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Fookus, viimased 14 päeva"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Fookuseminutid ilmuvad pärast sinu esimest seanssi."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Blokeeritud katsed, viimased 14 päeva"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Blokeeritud katsed ilmuvad siia, kui seanss esimese neist püüab."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Enim blokeeritud saidid, viimased 30 päeva"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Midagi pole veel blokeeritud. See on hea algus."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Katsed tundide kaupa, ainult see seade"
+  },
+  "stats_chart_other_site": {
+    "message": "muud"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blokeeritud",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blokeeritud",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Tulpdiagramm"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Horisontaalne tulpdiagramm"
+  },
+  "stats_chart_description_bar": {
+    "message": "Tulpdiagramm. Liigu andmepunktide vahel klaviatuuriga või ava Vaata tabelina, et näha samu väärtusi."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Horisontaalne tulpdiagramm. Liigu andmepunktide vahel klaviatuuriga või ava Vaata tabelina, et näha samu väärtusi."
+  },
+  "stats_chart_empty_default": {
+    "message": "Andmeid veel pole."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "Vaata tabelina"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategooria"
+  },
+  "stats_chart_table_value": {
+    "message": "Väärtus"
+  },
+  "stats_heat_strip_label": {
+    "message": "24 tunni blokeeritud katsete soojusriba"
+  },
+  "stats_sessions_heading": {
+    "message": "Hiljutised seansid selles seadmes"
+  },
+  "stats_sessions_empty": {
+    "message": "Sinu esimene seanss ilmub siia."
+  },
+  "stats_sessions_col_date": {
+    "message": "Kuupäev"
+  },
+  "stats_sessions_col_start": {
+    "message": "Algus"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Plaanitud"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Fookuses"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Kõik saidid"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Üks sait"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Kavatsus"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Tulemus"
+  },
+  "stats_sessions_col_source": {
+    "message": "Allikas"
+  },
+  "stats_session_no_intention": {
+    "message": "Kavatsus puudub"
+  },
+  "stats_session_article_label": {
+    "message": "Seanss: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "käsitsi"
+  },
+  "stats_session_source_schedule": {
+    "message": "ajakava"
+  },
+  "stats_session_source_scheduled": {
+    "message": "ajakava järgi"
+  },
+  "stats_outcome_completed": {
+    "message": "Lõpetatud"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Lõpetatud varem"
+  },
+  "stats_outcome_running": {
+    "message": "Käib"
+  }
+}

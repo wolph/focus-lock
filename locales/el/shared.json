@@ -1,39 +1,64 @@
 {
   "shared_until_stopped": {
-    "message": "Until stopped"
+    "message": "Μέχρι να σταματήσεις"
   },
   "shared_preset_short": {
-    "message": "short"
+    "message": "σύντομη"
   },
   "shared_preset_focus": {
-    "message": "focus"
+    "message": "εστίαση"
   },
   "shared_preset_deep_work": {
-    "message": "deep work"
+    "message": "βαθιά δουλειά"
   },
   "shared_deep_work_note": {
-    "message": "A preference, not science: one long uninterrupted αποκλεισμός, with no automatic breaks."
+    "message": "Προτίμηση, όχι επιστήμη: ένα μεγάλο αδιάκοπο μπλοκ, χωρίς αυτόματα διαλείμματα."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ λεπτά συνολικά, με μπλοκ εστίασης των $FOCUS$ λεπτών",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ λεπτά αδιάκοπης εστίασης",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
   },
   "shared_start_until_stopped": {
-    "message": "Έναρξη until stopped"
+    "message": "Έναρξη μέχρι να σταματήσεις"
   },
   "shared_lock_until_manual_unlock": {
-    "message": "Lock until manual unlock"
+    "message": "Κλείδωμα μέχρι το χειροκίνητο ξεκλείδωμα"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Οι συνεδρίες μέχρι να σταματήσεις μένουν Ευέλικτες ή Τριβής και δεν μπορούν να χρησιμοποιήσουν κύκλους εστίασης και διαλειμμάτων."
   },
   "shared_hard_unavailable_reason": {
-    "message": "Hard lock is not available for Until stopped: with no timer and no manual λήξη, the συνεδρία could never λήξη."
+    "message": "Το Πλήρες κλείδωμα δεν είναι διαθέσιμο για συνεδρία μέχρι να σταματήσεις: χωρίς χρονόμετρο και χωρίς χειροκίνητο τέλος, η συνεδρία δεν θα τελείωνε ποτέ."
   },
   "shared_end_session": {
-    "message": "Λήξη συνεδρία"
+    "message": "Τερματισμός συνεδρίας"
   },
   "shared_unlock": {
-    "message": "Unlock"
+    "message": "Ξεκλείδωμα"
   },
   "shared_gate_wait_none": {
-    "message": "no wait"
+    "message": "χωρίς αναμονή"
   },
   "shared_gate_wait": {
-    "message": "a $SECONDS$-second wait",
+    "message": "αναμονή $SECONDS$ δευτερολέπτων",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -41,8 +66,17 @@
       }
     }
   },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ και μια πληκτρολογημένη φράση",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
   "shared_until_stopped_hint_flexible": {
-    "message": "Runs until you λήξη it with $LABEL$. Cycles off.",
+    "message": "Τρέχει μέχρι να την τερματίσεις με $LABEL$. Κύκλοι ανενεργοί.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -50,71 +84,108 @@
       }
     }
   },
+  "shared_until_stopped_hint_friction": {
+    "message": "Τρέχει μέχρι να την ξεκλειδώσεις: $REQUIREMENT$ και μετά $LABEL$. Κύκλοι ανενεργοί.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Κύκλοι που επιβάλλει η λειτουργία μέχρι να σταματήσεις"
+  },
   "shared_mode_blacklist": {
-    "message": "Αποκλεισμός selected sites"
+    "message": "Αποκλεισμός των επιλεγμένων ιστότοπων"
   },
   "shared_mode_whitelist": {
-    "message": "Allow selected sites only"
+    "message": "Μόνο οι επιλεγμένοι ιστότοποι επιτρέπονται"
   },
   "shared_focus_time_label": {
-    "message": "Focus time"
+    "message": "Χρόνος εστίασης"
   },
   "shared_clock_focus_phase": {
-    "message": "focus phase"
+    "message": "φάση εστίασης"
   },
   "shared_clock_total_session": {
-    "message": "total συνεδρία"
+    "message": "συνολική συνεδρία"
   },
   "shared_clock_pause": {
-    "message": "pause"
+    "message": "παύση"
   },
   "shared_clock_break": {
-    "message": "break"
+    "message": "διάλειμμα"
   },
   "shared_badge_indefinite": {
-    "message": "ON"
+    "message": "ΝΑΙ"
+  },
+  "shared_popup_starting": {
+    "message": "Το Focus Lock ξεκινάει. Εφαρμογή των κανόνων που διάλεξες."
   },
   "shared_popup_closure_cleanup": {
-    "message": "Συνεδρία ended. Finishing browser cleanup."
+    "message": "Η συνεδρία τελείωσε. Ολοκλήρωση του καθαρισμού στον browser."
   },
   "shared_popup_transition_cleanup": {
-    "message": "Focus Lock could not έναρξη. Finishing browser cleanup."
+    "message": "Το Focus Lock δεν ξεκίνησε. Ολοκλήρωση του καθαρισμού στον browser."
   },
   "shared_popup_transition_error": {
-    "message": "Focus Lock could not clean up an incomplete έναρξη."
+    "message": "Το Focus Lock δεν μπόρεσε να καθαρίσει μια μισοτελειωμένη εκκίνηση."
+  },
+  "shared_popup_closure_error": {
+    "message": "Το Focus Lock δεν μπόρεσε να ολοκληρώσει τον καθαρισμό στον browser."
   },
   "shared_retry_cleanup": {
-    "message": "Retry cleanup"
+    "message": "Νέα προσπάθεια καθαρισμού"
   },
   "shared_end_failed": {
-    "message": "Could not λήξη συνεδρία. Try again."
+    "message": "Η συνεδρία δεν τερματίστηκε. Δοκίμασε ξανά."
+  },
+  "shared_retry_failed": {
+    "message": "Η νέα προσπάθεια καθαρισμού απέτυχε. Δοκίμασε ξανά."
+  },
+  "shared_action_failed": {
+    "message": "Αυτή η ενέργεια δεν ζητήθηκε σωστά. Δοκίμασε ξανά."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Η επιστροφή στη δουλειά απέτυχε. Δοκίμασε ξανά."
+  },
+  "shared_data_clear_pending": {
+    "message": "Διαγραφή των δεδομένων του Focus Lock. Ολοκλήρωση του καθαρισμού."
   },
   "shared_data_clear_error": {
-    "message": "Could not διαγραφή data. Try again."
+    "message": "Τα δεδομένα δεν διαγράφηκαν. Δοκίμασε ξανά."
   },
   "shared_schedule_window_label": {
-    "message": "Until window ends"
+    "message": "Μέχρι να κλείσει το διάστημα"
   },
   "shared_schedule_until_stopped": {
-    "message": "Starts on schedule and runs until you stop it: Λήξη συνεδρία for Flexible, Unlock through the deliberation gate for Friction. Cycles off."
+    "message": "Ξεκινάει στην ώρα του προγράμματος και τρέχει μέχρι να τη σταματήσεις: Τερματισμός συνεδρίας για την Ευέλικτη, Ξεκλείδωμα μέσα από την επιβεβαίωση για την Τριβή. Κύκλοι ανενεργοί."
   },
   "shared_schedule_started_title": {
-    "message": "Focus schedule started"
+    "message": "Η προγραμματισμένη συνεδρία ξεκίνησε"
   },
   "shared_schedule_until_stopped_body": {
-    "message": "Active until you stop it."
+    "message": "Ενεργή μέχρι να τη σταματήσεις."
   },
   "shared_settings_indefinite": {
-    "message": "Until stopped συνεδρία active. Use the toolbar popup to view or λήξη it."
+    "message": "Τρέχει συνεδρία μέχρι να σταματήσεις. Δες την ή τερμάτισέ την από το παράθυρο της γραμμής εργαλείων."
+  },
+  "shared_settings_starting": {
+    "message": "Το Focus Lock ξεκινάει. Έλεγχος πρόσβασης στους ιστότοπους και εφαρμογή των κανόνων σου."
   },
   "shared_settings_error": {
-    "message": "Focus Lock could not finish browser cleanup. Άνοιγμα the popup and retry."
+    "message": "Το Focus Lock δεν ολοκλήρωσε τον καθαρισμό στον browser. Άνοιξε το παράθυρο και δοκίμασε ξανά."
   },
   "shared_settings_session_disclosure": {
-    "message": "The toolbar popup owns συνεδρία controls. The active συνεδρία keeps the rules captured when it started."
+    "message": "Τα χειριστήρια της συνεδρίας βρίσκονται στο παράθυρο της γραμμής εργαλείων. Η ενεργή συνεδρία κρατάει τους κανόνες που καταγράφηκαν όταν ξεκίνησε."
   },
   "shared_settings_timed": {
-    "message": "Timed συνεδρία active until $TIME$. It ends automatically. Use the toolbar popup for live status.",
+    "message": "Χρονομετρημένη συνεδρία ενεργή μέχρι τις $TIME$. Τελειώνει μόνη της. Για ζωντανή κατάσταση δες το παράθυρο της γραμμής εργαλείων.",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -123,22 +194,31 @@
     }
   },
   "shared_outcome_timer_completed": {
-    "message": "Completed"
+    "message": "Ολοκληρώθηκε"
   },
   "shared_outcome_manual_completed": {
-    "message": "Completed manually"
+    "message": "Ολοκληρώθηκε χειροκίνητα"
   },
   "shared_outcome_manual_canceled": {
-    "message": "Ended early"
+    "message": "Τελείωσε νωρίς"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Τέλος: χάθηκε η πρόσβαση στους ιστότοπους"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Τέλος: απέτυχε η προετοιμασία του αποκλεισμού"
   },
   "shared_outcome_alarm_failed": {
-    "message": "Ended: timer setup failed"
+    "message": "Τέλος: απέτυχε η δημιουργία του χρονομέτρου"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Τέλος: απέτυχε ο αποκλεισμός των σελίδων"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "Ended: recovery failed"
+    "message": "Τέλος: απέτυχε η ανάκτηση"
   },
   "shared_duration_hours_minutes": {
-    "message": "$HOURS$ h $MINUTES$ m",
+    "message": "$HOURS$ ώ $MINUTES$ λ",
     "placeholders": {
       "HOURS": {
         "content": "$1",
@@ -151,7 +231,7 @@
     }
   },
   "shared_duration_minutes": {
-    "message": "$MINUTES$ m",
+    "message": "$MINUTES$ λ",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -160,7 +240,7 @@
     }
   },
   "shared_minutes_one": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ λεπτό",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -169,7 +249,7 @@
     }
   },
   "shared_minutes_other": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ λεπτά",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -178,13 +258,13 @@
     }
   },
   "shared_updating_session": {
-    "message": "Updating συνεδρία"
+    "message": "Ενημέρωση της συνεδρίας"
   },
   "shared_less_than_a_minute": {
-    "message": "Less than a minute"
+    "message": "Λιγότερο από ένα λεπτό"
   },
-  "shared_focus_remaining_session": {
-    "message": "$DURATION$ left in this συνεδρία",
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ μέχρι το διάλειμμά σου",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -192,11 +272,29 @@
       }
     }
   },
+  "shared_focus_remaining_session": {
+    "message": "Απομένουν $DURATION$ σε αυτή τη συνεδρία",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Το κόστος ξεπερνάει το όριο πίστωσης"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Η πίστωση ξαναμαζεύεται στη διάρκεια της εστίασης"
+  },
+  "shared_credit_off": {
+    "message": "Η συγκέντρωση πίστωσης είναι απενεργοποιημένη"
+  },
   "shared_not_enough_time": {
-    "message": "Not enough time in this focus αποκλεισμός"
+    "message": "Δεν υπάρχει αρκετός χρόνος σε αυτό το μπλοκ εστίασης"
   },
   "shared_ready_in": {
-    "message": "Ready in $CLOCK$",
+    "message": "Έτοιμο σε $CLOCK$",
     "placeholders": {
       "CLOCK": {
         "content": "$1",
@@ -205,7 +303,7 @@
     }
   },
   "shared_verdict_with_pattern": {
-    "message": "$LABEL$: $PATTERN$",
+    "message": "$LABEL$: «$PATTERN$»",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -218,7 +316,7 @@
     }
   },
   "shared_verdict_blocked_category": {
-    "message": "Αποκλείστηκε by $CATEGORY$",
+    "message": "Αποκλεισμένο από την κατηγορία $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -227,91 +325,94 @@
     }
   },
   "shared_verdict_blocked_custom": {
-    "message": "Αποκλείστηκε by your αποκλεισμός list"
+    "message": "Αποκλεισμένο από τη λίστα αποκλεισμού σου"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "Not on your allow list"
+    "message": "Εκτός της λίστας επιτρεπόμενων σου"
   },
   "shared_verdict_blocked_session": {
-    "message": "Αποκλείστηκε by this συνεδρία"
+    "message": "Αποκλεισμένο από αυτή τη συνεδρία"
   },
   "shared_verdict_allow_list": {
-    "message": "On your allow list"
+    "message": "Στη λίστα επιτρεπόμενων σου"
   },
   "shared_verdict_always_allowed": {
-    "message": "Always allowed"
+    "message": "Πάντα επιτρεπόμενο"
   },
   "shared_verdict_unlock": {
-    "message": "Temporarily unlocked"
+    "message": "Προσωρινά ξεκλείδωτο"
+  },
+  "shared_verdict_excluded": {
+    "message": "Εξαιρεμένο από επιλεγμένη κατηγορία"
   },
   "shared_verdict_no_session": {
-    "message": "No active focus συνεδρία"
+    "message": "Καμία ενεργή συνεδρία εστίασης"
   },
   "shared_verdict_allowed_session": {
-    "message": "Allowed by this συνεδρία"
+    "message": "Επιτρέπεται από αυτή τη συνεδρία"
   },
   "shared_category_social": {
-    "message": "Social media"
+    "message": "Κοινωνικά δίκτυα"
   },
   "shared_category_video": {
-    "message": "Video and streaming"
+    "message": "Βίντεο και streaming"
   },
   "shared_category_news": {
-    "message": "News"
+    "message": "Ειδήσεις"
   },
   "shared_category_mail": {
-    "message": "Mail"
+    "message": "Αλληλογραφία"
   },
   "shared_category_shopping": {
-    "message": "Shopping"
+    "message": "Αγορές"
   },
   "shared_category_gaming": {
-    "message": "Gaming"
+    "message": "Παιχνίδια"
   },
   "shared_category_forums": {
-    "message": "Forums and boredom"
+    "message": "Φόρουμ και πλήξη"
   },
   "shared_synced_settings": {
     "message": "Ρυθμίσεις"
   },
   "shared_synced_lists": {
-    "message": "Αποκλεισμός and allow lists"
+    "message": "Λίστες αποκλεισμού και επιτρεπόμενων"
   },
   "shared_synced_credit": {
-    "message": "Site access credit"
+    "message": "Πίστωση πρόσβασης σε ιστότοπους"
   },
   "shared_synced_streaks": {
-    "message": "Streaks"
+    "message": "Σερί"
   },
   "shared_synced_aggregates": {
-    "message": "Domain-level αποκλείστηκε-attempt aggregates"
+    "message": "Συγκεντρωτικά ανά τομέα για τις αποκλεισμένες προσπάθειες"
   },
   "shared_local_full_urls": {
-    "message": "Full URLs"
+    "message": "Πλήρη URL"
   },
   "shared_local_intentions": {
-    "message": "Focus intentions"
+    "message": "Προθέσεις εστίασης"
   },
   "shared_local_events": {
-    "message": "Detailed συνεδρία events"
+    "message": "Αναλυτικά συμβάντα συνεδριών"
   },
   "shared_local_runtime": {
-    "message": "Active runtime συνεδρία"
+    "message": "Η συνεδρία που τρέχει"
   },
   "shared_legacy_policy_dropped": {
-    "message": "Some synced data from an older version could not be read and was επαναφορά."
+    "message": "Κάποια συγχρονισμένα δεδομένα από παλιότερη έκδοση δεν διαβάστηκαν και μηδενίστηκαν."
   },
   "shared_all_data_clear_running": {
-    "message": "Λήξη the running συνεδρία before deleting all data."
+    "message": "Τερμάτισε τη συνεδρία που τρέχει πριν διαγράψεις όλα τα δεδομένα."
   },
   "shared_nav_brand": {
     "message": "Focus Lock"
   },
   "shared_nav_product": {
-    "message": "Product navigation"
+    "message": "Πλοήγηση προϊόντος"
   },
   "shared_nav_overview": {
-    "message": "Overview"
+    "message": "Επισκόπηση"
   },
   "shared_nav_settings": {
     "message": "Ρυθμίσεις"
@@ -323,31 +424,44 @@
     "message": "Πρόγραμμα"
   },
   "shared_section_behavior": {
-    "message": "Συνεδρία behavior"
+    "message": "Συμπεριφορά συνεδρίας"
   },
   "shared_section_budget": {
-    "message": "Πίστωση Πρόσβασης Ιστοχώρου"
+    "message": "Πίστωση πρόσβασης σε ιστότοπους"
   },
   "shared_section_notifications": {
-    "message": "Notifications"
+    "message": "Ειδοποιήσεις"
   },
   "shared_section_privacy": {
-    "message": "Ιδιωτικότητα και Δεδομένα"
+    "message": "Απόρρητο και δεδομένα"
   },
   "shared_theme_auto": {
-    "message": "Auto"
+    "message": "Αυτόματο"
   },
   "shared_theme_light": {
-    "message": "Light"
+    "message": "Φωτεινό"
   },
   "shared_theme_dark": {
-    "message": "Dark"
+    "message": "Σκοτεινό"
+  },
+  "shared_theme_button": {
+    "message": "Θέμα: $CURRENT$. Αλλαγή σε $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
   },
   "shared_theme_error": {
-    "message": "Could not αποθήκευση theme. Reload page and try again."
+    "message": "Το θέμα δεν αποθηκεύτηκε. Φόρτωσε ξανά τη σελίδα και δοκίμασε πάλι."
   },
   "shared_host_search_label": {
-    "message": "Search $TITLE$ sites",
+    "message": "Αναζήτηση στους ιστότοπους της κατηγορίας $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -355,38 +469,123 @@
       }
     }
   },
+  "shared_host_none": {
+    "message": "Κανένας ιστότοπος της κατηγορίας $TITLE$ δεν ταιριάζει με την αναζήτησή σου.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Εμφανίζονται $SHOWN$ από $MATCHED$ ιστότοπους. Κάνε αναζήτηση για να περιορίσεις τη λίστα.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Εμφανίζονται $MATCHED$ από $TOTAL$ ιστότοπους.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Εμφανίζονται και οι $TOTAL$ ιστότοποι.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
   "shared_end_the_session": {
-    "message": "Λήξη the συνεδρία"
+    "message": "Τερματισμός της συνεδρίας"
   },
   "shared_overlay_starting_title": {
-    "message": "Focus Lock is starting"
+    "message": "Το Focus Lock ξεκινάει"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Εφαρμογή των κανόνων που διάλεξες."
   },
   "shared_overlay_stopped_page": {
-    "message": "This page did not load. It will load by itself when the συνεδρία ends."
+    "message": "Αυτή η σελίδα δεν φόρτωσε. Θα φορτώσει μόνη της όταν τελειώσει η συνεδρία."
   },
   "shared_overlay_next_step": {
-    "message": "Your next step"
+    "message": "Το επόμενο βήμα σου"
   },
   "shared_overlay_back_to_work": {
-    "message": "Back to work"
+    "message": "Πίσω στη δουλειά"
   },
   "shared_overlay_choose_work_tab": {
-    "message": "Choose a work tab"
+    "message": "Διάλεξε καρτέλα εργασίας"
   },
   "shared_overlay_change_work_tab": {
-    "message": "Change work tab"
+    "message": "Αλλαγή καρτέλας εργασίας"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Χρειάζεσαι διάλειμμα ή πρόσβαση σε ιστότοπο;"
+  },
+  "shared_overlay_access_note": {
+    "message": "Μπορείς να σηκωθείς όποτε θέλεις. Η πρόσβαση σε ιστότοπους ξοδεύει πίστωση."
   },
   "shared_overlay_gate_force_end": {
-    "message": "Ignore timeout and λήξη anyway"
+    "message": "Αγνόησε την αναμονή και τερμάτισε"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Το Focus Lock δεν ενημέρωσε αυτή την ενέργεια. Δοκίμασε ξανά."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ πίστωση πρόσβασης",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Συνέχισε τη δουλειά που έκανες"
   },
   "shared_overlay_pause_action": {
-    "message": "Unlock all sites"
+    "message": "Ξεκλείδωμα όλων των ιστότοπων"
   },
   "shared_overlay_unlock_site_action": {
-    "message": "Unlock this site"
+    "message": "Ξεκλείδωμα αυτού του ιστότοπου"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - κοστίζει $COST$ πίστωση",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
   },
   "shared_overlay_locked_until": {
-    "message": "Locked until $TIME$",
+    "message": "Κλειδωμένο μέχρι τις $TIME$",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -395,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "You said: $INTENTION$",
+    "message": "Έγραψες: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -404,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "Unlock $HOST$ $CLOCK$",
+    "message": "Ξεκλείδωμα του $HOST$ για $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -417,12 +616,12 @@
     }
   },
   "shared_gate_back": {
-    "message": "Keep focusing"
+    "message": "Συνεχίζω την εστίαση"
   },
   "shared_gate_phrase_label": {
-    "message": "Type this to confirm:"
+    "message": "Πληκτρολόγησε αυτό για επιβεβαίωση:"
   },
   "shared_gate_end_title": {
-    "message": "Λήξη this συνεδρία"
+    "message": "Τερματισμός αυτής της συνεδρίας"
   }
 }

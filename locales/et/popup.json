@@ -1,1 +1,630 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "järgmine: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Seaded"
+  },
+  "popup_open_settings_failed": {
+    "message": "Seadete avamine ebaõnnestus. Proovi uuesti."
+  },
+  "popup_settings_load_failed": {
+    "message": "Seansi seadete laadimine ebaõnnestus. Värskenda hüpikakent, et uuesti proovida. Kuvatakse vaikeväärtused."
+  },
+  "popup_open_setup_failed": {
+    "message": "Seadistuse avamine ebaõnnestus. Proovi uuesti."
+  },
+  "popup_setup_required_heading": {
+    "message": "Lõpeta Focus Locki seadistamine"
+  },
+  "popup_setup_required_body": {
+    "message": "Vali oma esialgsed nimekirjad, veebisaidi juurdepääs ja salvestusrežiim enne seansi alustamist."
+  },
+  "popup_open_setup_button": {
+    "message": "Ava seadistus"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Veebisaitide blokeerimise kinnitamine ebaõnnestus. Proovi uuesti."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Veebisaitide blokeerimise lubamine ebaõnnestus. Proovi uuesti."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Veebisaitide blokeerimine on väljas"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock ei saa seanssi alustada, enne kui Chrome annab veebisaidi juurdepääsu ja blokeerimine on lubatud."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome ei andnud veebisaidi juurdepääsu. Veebisaitide blokeerimine on endiselt väljas."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Veebisaidi juurdepääs on antud, kuid Focus Lock ei suutnud blokeerimist lubada. Proovi seadistust uuesti või laadi laiendus uuesti."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Luba veebisaitide blokeerimine"
+  },
+  "popup_retry_button": {
+    "message": "Proovi uuesti"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Sinu seanss lõppes, sest veebisaidi juurdepääs eemaldati."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Sinu seanss lõppes, sest Focus Lock ei suutnud veebisaitide blokeerimist lubada."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Selle teate sulgemine ebaõnnestus. Proovi uuesti."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Sulge veebisaidi juurdepääsu teade"
+  },
+  "popup_dismiss_button": {
+    "message": "Sulge"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Locki taaskäivitamine ebaõnnestus. Proovi uuesti."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock ei saanud käivituda"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Põhjust ei õnnestunud lugeda."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Lähtesta kohalik käitusaeg"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Säilitab sinu seaded, nimekirjad ja statistika. Kustutab praeguse seansi oleku."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Kustuta kõik ja alusta otsast"
+  },
+  "popup_keep_data_button": {
+    "message": "Säilita minu andmed"
+  },
+  "popup_delete_all_button": {
+    "message": "Kustuta kõik Focus Locki andmed"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Seadistuse olek pole saadaval. Uuesti proovimiseks laadi Focus Lock uuesti."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Fookuse olek pole saadaval"
+  },
+  "popup_action_in_progress": {
+    "message": "Toiming käib"
+  },
+  "popup_active_site_checking": {
+    "message": "Aktiivse saidi kontrollimine"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Avamiseks ava tavaline veebisait"
+  },
+  "popup_active_site_unknown": {
+    "message": "Aktiivset saiti ei õnnestunud tuvastada"
+  },
+  "popup_active_site_error": {
+    "message": "Aktiivset saiti ei õnnestunud tuvastada."
+  },
+  "popup_resume_now": {
+    "message": "Jätka kohe"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Alusta järgmist fookust ennetähtaegselt"
+  },
+  "popup_unlock_this_site": {
+    "message": "Ava see sait"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Ava kõik saidid"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ juurdepääs, $CREDIT$ krediit",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ juurdepääs, $CREDIT$ krediit - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Vali töösakk"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Muuda töösakki"
+  },
+  "popup_session_actions_summary": {
+    "message": "Seansi toimingud"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ saidi juurdepääsu krediiti",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Lisa lubatud domeen"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Lisa lubatud domeen"
+  },
+  "popup_add_button": {
+    "message": "Lisa"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Ainult $COUNT$ lubatud saidi reeglit. Teised veebisaidid on blokeeritud.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ blokeeritud kategooriat, $RULES$ lisareeglit.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Range lukk. Ei saa enneaegselt lõpetada."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Saab lõpetada igal ajal."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Lõpeta pärast $SECONDS$ s ooteaega.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Lõpeta pärast $SECONDS$ s ooteaega ja kinnituslauset.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Seansi kestus"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Kohandatud minutid"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_gate_force_end": {
+    "message": "Ignoreeri ajapiirangut ja lõpeta ikkagi"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Jätka keskendumist"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Tipi:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Värava uuendamine ebaõnnestus. Proovi uuesti."
+  },
+  "popup_gate_intention": {
+    "message": "Sina ütlesid: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Hetk otsustamiseks:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "/ $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Tagasi tööle"
+  },
+  "popup_destination_unavailable": {
+    "message": "Sihtkoht pole saadaval"
+  },
+  "popup_back_to_work_name": {
+    "message": "Tagasi tööle: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Tagasi tööle: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Kategooriate muutmine on keelatud, kuni blokeeritud saitide nimekirjad taaslaaditakse."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blokeeritud kategooriad"
+  },
+  "popup_show_full_domain": {
+    "message": "Näita täielikku domeeni: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Näita täielikku regulaaravaldist: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domeen"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regulaaravaldis"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ saidid",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ sait",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ saiti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "ja veel $COUNT$ sait",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "ja veel $COUNT$ saiti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Lubatud erandid"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Lisatud blokeerimisreeglid"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Lisatud blokeerimisreegleid pole."
+  },
+  "popup_allowed_heading": {
+    "message": "Lubatud saidid ja reeglid"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Ühtegi saiti pole veel lubatud."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "Mida blokeeritakse"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "Mida lubatakse"
+  },
+  "popup_categories_selected": {
+    "message": "Valitud $SELECTED$ / $TOTAL$ kategooriat",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ lisatud blokeerimisreegel",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ lisatud blokeerimisreeglit",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ lubatud reegel",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ lubatud reeglit",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Siinsed lubatud saidi ja reegli muudatused kehtivad ainult selle seansi jaoks. Kõik muu on blokeeritud."
+  },
+  "popup_scope_blacklist": {
+    "message": "Siinsed kategooria ja reegli muudatused kehtivad ainult selle seansi jaoks."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Ava seaded püsivate vaikeväärtuste jaoks"
+  },
+  "popup_rule_details_label": {
+    "message": "Seansi reeglite üksikasjad"
+  },
+  "popup_session_type_legend": {
+    "message": "Seansi tüüp"
+  },
+  "popup_session_type_flexible": {
+    "message": "Paindlik"
+  },
+  "popup_session_type_friction": {
+    "message": "Takistus"
+  },
+  "popup_session_type_hard": {
+    "message": "Range lukk"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Lõpeta seanss kohe, millal iganes soovid."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Enneaegne lõpetamine nõuab $WAIT$. Tippimist ei nõuta.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Enneaegne lõpetamine nõuab $WAIT$ ja tipitud kinnitust.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "Seanssi ei saa enneaegselt lõpetada. Saidi juurdepääsu krediit töötab endiselt."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "Valitud kategooriad ja lisareeglid on blokeeritud. Teised saidid jäävad saadavale."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Saadaval on ainult loetletud saidid. Kõik teised veebisaidid on blokeeritud."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Sisesta seansi kestus, mis on suurem kui null minutit."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Vaikeväärtused muutusid, kuid praeguste nimekirjade laadimine ebaõnnestus. Värskenda hüpikakent."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Töösakk puudub (valikuline)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Valitud sakk pole saadaval - vali mõni teine"
+  },
+  "popup_cycles_label": {
+    "message": "Tsüklid: $FOCUS$ min fookust, $SHORT_BREAK$ min pausi, $LONG_BREAK$ min pikk paus iga $LONG_EVERY$.",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Kavatsus"
+  },
+  "popup_intention_placeholder": {
+    "message": "Millega sa tegeled?"
+  },
+  "popup_work_tab_named": {
+    "message": "Töösakk: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Muuda"
+  },
+  "popup_session_settings_summary": {
+    "message": "Seansi seaded"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Vali töösakk"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Töösakk"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (praegune)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Blokeerimisrežiim"
+  },
+  "popup_invalid_time_label": {
+    "message": "sobimatu aeg"
+  },
+  "popup_start_focus_label": {
+    "message": "Alusta $DURATION$ fookust",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Sisesta kehtiv domeen, näiteks docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Töösakkide laadimine ebaõnnestus. Ava hüpikaken uuesti, et proovida uuesti."
+  },
+  "popup_use_this_tab": {
+    "message": "Kasuta seda sakki"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "See sakk pole töö jaoks saadaval. Vali mõni teine avatud sakk."
+  },
+  "popup_checking_current_tab": {
+    "message": "Praeguse saki kontrollimine..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Sinu praeguse saki otsimine..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Sinu praeguse saki laadimine ebaõnnestus. Proovi uuesti."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Vali või asenda oma töösakk."
+  },
+  "popup_saving_work_tab": {
+    "message": "Töösaki salvestamine..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Töösaki salvestamine ebaõnnestus. Proovi uuesti."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Vali avatud sakk"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Või vali mõni teine sakk"
+  },
+  "popup_start_failed": {
+    "message": "Seansi alustamine ebaõnnestus. Proovi uuesti."
+  }
+}

@@ -1,1 +1,627 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "थांबवेपर्यंत"
+  },
+  "shared_preset_short": {
+    "message": "लहान"
+  },
+  "shared_preset_focus": {
+    "message": "फोकस"
+  },
+  "shared_preset_deep_work": {
+    "message": "सखोल काम"
+  },
+  "shared_deep_work_note": {
+    "message": "ही आवड आहे, विज्ञान नाही: एक लांब अखंड ब्लॉक, आपोआप मिळणाऱ्या विश्रांतीशिवाय."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "एकूण $MINUTES$ मिनिटे, $FOCUS$ मिनिटांच्या फोकस ब्लॉकसह",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ मिनिटे अखंड फोकस",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "थांबवेपर्यंत सुरू करा"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "स्वतः अनलॉक करेपर्यंत लॉक करा"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "थांबवेपर्यंत चालणारी सेशन लवचिक किंवा विलंबासह राहतात आणि फोकस-विश्रांती चक्र वापरू शकत नाहीत."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "थांबवेपर्यंत चालणाऱ्या सेशनसाठी कडक लॉक उपलब्ध नाही: टाइमरही नाही आणि स्वतः संपवण्याचा मार्गही नाही, त्यामुळे सेशन कधीच संपणार नाही."
+  },
+  "shared_end_session": {
+    "message": "सेशन संपवा"
+  },
+  "shared_unlock": {
+    "message": "अनलॉक करा"
+  },
+  "shared_gate_wait_none": {
+    "message": "प्रतीक्षेशिवाय"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ सेकंदांची प्रतीक्षा",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ आणि एक टाइप केलेले वाक्य",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "तुम्ही $LABEL$ दाबेपर्यंत चालेल. चक्र बंद.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "तुम्ही अनलॉक करेपर्यंत चालेल: $REQUIREMENT$, मग $LABEL$. चक्र बंद.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "थांबवेपर्यंत मोडमध्ये चक्र बंद"
+  },
+  "shared_mode_blacklist": {
+    "message": "निवडलेल्या साइट ब्लॉक करा"
+  },
+  "shared_mode_whitelist": {
+    "message": "फक्त निवडलेल्या साइट उघड्या ठेवा"
+  },
+  "shared_focus_time_label": {
+    "message": "फोकसचा वेळ"
+  },
+  "shared_clock_focus_phase": {
+    "message": "फोकस टप्पा"
+  },
+  "shared_clock_total_session": {
+    "message": "संपूर्ण सेशन"
+  },
+  "shared_clock_pause": {
+    "message": "पॉज"
+  },
+  "shared_clock_break": {
+    "message": "विश्रांती"
+  },
+  "shared_badge_indefinite": {
+    "message": "चालू"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock सुरू होत आहे. तुम्ही निवडलेले नियम लागू करत आहोत."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "सेशन संपले. ब्राउझरची स्वच्छता पूर्ण करत आहोत."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock सुरू होऊ शकले नाही. ब्राउझरची स्वच्छता पूर्ण करत आहोत."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock अपूर्ण सुरुवातीची स्वच्छता करू शकले नाही."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock ब्राउझरची स्वच्छता पूर्ण करू शकले नाही."
+  },
+  "shared_retry_cleanup": {
+    "message": "स्वच्छता पुन्हा करा"
+  },
+  "shared_end_failed": {
+    "message": "सेशन संपवता आले नाही. पुन्हा प्रयत्न करा."
+  },
+  "shared_retry_failed": {
+    "message": "स्वच्छता पुन्हा करता आली नाही. पुन्हा प्रयत्न करा."
+  },
+  "shared_action_failed": {
+    "message": "ही कृती करता आली नाही. पुन्हा प्रयत्न करा."
+  },
+  "shared_return_to_work_failed": {
+    "message": "कामावर परतता आले नाही. पुन्हा प्रयत्न करा."
+  },
+  "shared_data_clear_pending": {
+    "message": "Focus Lock चा डेटा हटवत आहोत. स्वच्छता पूर्ण करत आहोत."
+  },
+  "shared_data_clear_error": {
+    "message": "डेटा हटवता आला नाही. पुन्हा प्रयत्न करा."
+  },
+  "shared_schedule_window_label": {
+    "message": "वेळमर्यादा संपेपर्यंत"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "वेळापत्रकानुसार सुरू होते आणि तुम्ही थांबवेपर्यंत चालते: लवचिकसाठी सेशन संपवा, विलंबासहसाठी पुष्टी स्क्रीनमधून अनलॉक करा. चक्र बंद."
+  },
+  "shared_schedule_started_title": {
+    "message": "वेळापत्रकातील सेशन सुरू झाले"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "तुम्ही थांबवेपर्यंत सक्रिय राहील."
+  },
+  "shared_settings_indefinite": {
+    "message": "थांबवेपर्यंत चालणारे सेशन सक्रिय आहे. ते पाहण्यासाठी किंवा संपवण्यासाठी टूलबारचा पॉपअप उघडा."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock सुरू होत आहे. वेबसाइट प्रवेश तपासत आहोत आणि तुमचे नियम लागू करत आहोत."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock ब्राउझरची स्वच्छता पूर्ण करू शकले नाही. पॉपअप उघडून पुन्हा प्रयत्न करा."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "सेशनची नियंत्रणे टूलबारच्या पॉपअपमध्ये आहेत. सक्रिय सेशन सुरू होताना घेतलेले नियमच ठेवते."
+  },
+  "shared_settings_timed": {
+    "message": "$TIME$ पर्यंत टाइमर असलेले सेशन सक्रिय आहे. ते आपोआप संपेल. सध्याच्या स्थितीसाठी टूलबारचा पॉपअप पहा.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "पूर्ण झाले"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "स्वतः पूर्ण केले"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "लवकर संपले"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "संपले: वेबसाइट प्रवेश गेला"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "संपले: ब्लॉकिंग सेट होऊ शकली नाही"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "संपले: टाइमर सेट होऊ शकला नाही"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "संपले: पानांवर ब्लॉकिंग लागू होऊ शकली नाही"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "संपले: स्थिती परत मिळवता आली नाही"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ता $MINUTES$ मि",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ मि",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ मि",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ मि",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "सेशन अद्ययावत होत आहे"
+  },
+  "shared_less_than_a_minute": {
+    "message": "एका मिनिटापेक्षा कमी"
+  },
+  "shared_focus_remaining_break": {
+    "message": "विश्रांतीला $DURATION$ बाकी",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "या सेशनमध्ये $DURATION$ बाकी",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "खर्च क्रेडिट मर्यादेपेक्षा जास्त आहे"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "फोकसदरम्यान क्रेडिट पुन्हा जमा होईल"
+  },
+  "shared_credit_off": {
+    "message": "क्रेडिट कमावणे बंद आहे"
+  },
+  "shared_not_enough_time": {
+    "message": "या फोकस ब्लॉकमध्ये पुरेसा वेळ नाही"
+  },
+  "shared_ready_in": {
+    "message": "$CLOCK$ मध्ये तयार",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "$CATEGORY$ श्रेणीमुळे ब्लॉक",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "तुमच्या ब्लॉक यादीमुळे ब्लॉक"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "तुमच्या परवानगी यादीत नाही"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "या सेशनमुळे ब्लॉक"
+  },
+  "shared_verdict_allow_list": {
+    "message": "तुमच्या परवानगी यादीत आहे"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "नेहमी परवानगी"
+  },
+  "shared_verdict_unlock": {
+    "message": "तात्पुरते अनलॉक"
+  },
+  "shared_verdict_excluded": {
+    "message": "निवडलेल्या श्रेणीतून वगळलेले"
+  },
+  "shared_verdict_no_session": {
+    "message": "सक्रिय फोकस सेशन नाही"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "या सेशनमध्ये परवानगी"
+  },
+  "shared_category_social": {
+    "message": "सोशल मीडिया"
+  },
+  "shared_category_video": {
+    "message": "व्हिडिओ आणि स्ट्रीमिंग"
+  },
+  "shared_category_news": {
+    "message": "बातम्या"
+  },
+  "shared_category_mail": {
+    "message": "मेल"
+  },
+  "shared_category_shopping": {
+    "message": "खरेदी"
+  },
+  "shared_category_gaming": {
+    "message": "गेमिंग"
+  },
+  "shared_category_forums": {
+    "message": "फोरम आणि कंटाळा"
+  },
+  "shared_synced_settings": {
+    "message": "सेटिंग्ज"
+  },
+  "shared_synced_lists": {
+    "message": "ब्लॉक आणि परवानगी याद्या"
+  },
+  "shared_synced_credit": {
+    "message": "साइट प्रवेश क्रेडिट"
+  },
+  "shared_synced_streaks": {
+    "message": "स्ट्रीक"
+  },
+  "shared_synced_aggregates": {
+    "message": "डोमेननुसार ब्लॉक झालेल्या प्रयत्नांचा सारांश"
+  },
+  "shared_local_full_urls": {
+    "message": "पूर्ण URL"
+  },
+  "shared_local_intentions": {
+    "message": "फोकसचे हेतू"
+  },
+  "shared_local_events": {
+    "message": "सेशनच्या तपशीलवार घटना"
+  },
+  "shared_local_runtime": {
+    "message": "सुरू असलेले सेशन"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "जुन्या आवृत्तीतील काही सिंक केलेला डेटा वाचता आला नाही आणि तो रीसेट करण्यात आला."
+  },
+  "shared_all_data_clear_running": {
+    "message": "सर्व डेटा हटवण्याआधी सुरू असलेले सेशन संपवा."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "उत्पादन नेव्हिगेशन"
+  },
+  "shared_nav_overview": {
+    "message": "आढावा"
+  },
+  "shared_nav_settings": {
+    "message": "सेटिंग्ज"
+  },
+  "shared_section_blocking": {
+    "message": "ब्लॉकिंग"
+  },
+  "shared_section_schedule": {
+    "message": "वेळापत्रक"
+  },
+  "shared_section_behavior": {
+    "message": "सेशनचे वर्तन"
+  },
+  "shared_section_budget": {
+    "message": "साइट प्रवेश क्रेडिट"
+  },
+  "shared_section_notifications": {
+    "message": "सूचना"
+  },
+  "shared_section_privacy": {
+    "message": "गोपनीयता आणि डेटा"
+  },
+  "shared_theme_auto": {
+    "message": "आपोआप"
+  },
+  "shared_theme_light": {
+    "message": "फिकट"
+  },
+  "shared_theme_dark": {
+    "message": "गडद"
+  },
+  "shared_theme_button": {
+    "message": "थीम: $CURRENT$. $NEXT$ वर बदला",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "थीम जतन होऊ शकली नाही. पान पुन्हा लोड करून पुन्हा प्रयत्न करा."
+  },
+  "shared_host_search_label": {
+    "message": "$TITLE$ च्या साइट शोधा",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "$TITLE$ ची कोणतीही साइट तुमच्या शोधाशी जुळत नाही.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "$MATCHED$ पैकी $SHOWN$ साइट दाखवत आहोत. यादी लहान करण्यासाठी शोधा.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "$TOTAL$ पैकी $MATCHED$ साइट दाखवत आहोत.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "सर्व $TOTAL$ साइट दाखवत आहोत.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "सेशन संपवा"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock सुरू होत आहे"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "तुम्ही निवडलेले नियम लागू करत आहोत."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "हे पान लोड झाले नाही. सेशन संपताच ते आपोआप लोड होईल."
+  },
+  "shared_overlay_next_step": {
+    "message": "तुमचे पुढचे पाऊल"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "कामावर परत"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "कामाचा टॅब निवडा"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "कामाचा टॅब बदला"
+  },
+  "shared_overlay_access_summary": {
+    "message": "विश्रांती किंवा साइट प्रवेश हवा आहे?"
+  },
+  "shared_overlay_access_note": {
+    "message": "तुम्ही कधीही बाजूला होऊ शकता. साइट प्रवेशासाठी क्रेडिट खर्च होते."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "प्रतीक्षा वगळून संपवा"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock ही कृती अद्ययावत करू शकले नाही. पुन्हा प्रयत्न करा."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ साइट प्रवेश क्रेडिट",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "तुमचे सध्याचे काम सुरू ठेवा"
+  },
+  "shared_overlay_pause_action": {
+    "message": "सर्व साइट अनलॉक करा"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "ही साइट अनलॉक करा"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ साठी - खर्च $COST$ क्रेडिट",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "$TIME$ पर्यंत लॉक",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "तुम्ही म्हणाला होतात: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "$HOST$ $CLOCK$ साठी अनलॉक करा",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "फोकस सुरू ठेवा"
+  },
+  "shared_gate_phrase_label": {
+    "message": "पुष्टीसाठी हे टाइप करा:"
+  },
+  "shared_gate_end_title": {
+    "message": "हे सेशन संपवा"
+  }
+}

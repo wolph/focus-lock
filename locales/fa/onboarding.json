@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "راه‌اندازی Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "راه‌اندازی Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "گام $STEP$ از $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "پیشرفت ذخیره‌شده راه‌اندازی بازیابی نشد. با پیش‌فرض‌های فعلی شما دوباره آغاز می‌شود."
+  },
+  "onboarding_complete_heading": {
+    "message": "راه‌اندازی کامل شد"
+  },
+  "onboarding_complete_body": {
+    "message": "انتخاب‌های شما ذخیره شد. برای شروع یک جلسه، Focus Lock را از نوار ابزار Chrome باز کنید."
+  },
+  "onboarding_error_heading": {
+    "message": "راه‌اندازی در دسترس نیست"
+  },
+  "onboarding_error_body": {
+    "message": "راه‌اندازی بارگذاری نشد. دوباره تلاش کنید."
+  },
+  "onboarding_retry_button": {
+    "message": "تلاش دوباره"
+  },
+  "onboarding_save_error": {
+    "message": "پیشرفت راه‌اندازی ذخیره نشد. دوباره تلاش کنید."
+  },
+  "onboarding_enable_error": {
+    "message": "مسدودسازی سایت‌ها فعال نشد. دوباره تلاش کنید."
+  },
+  "onboarding_finish_error": {
+    "message": "راه‌اندازی کامل نشد. انتخاب‌های شما همچنان ذخیره است. دوباره تلاش کنید."
+  },
+  "onboarding_lists_heading": {
+    "message": "فهرست مسدودسازی آغازین خود را انتخاب کنید"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "در $MODE$، دسته‌های فعال و سایت‌های مسدود اضافی در دسترس نیستند.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "در $MODE$، همه سایت‌ها جز فهرست مجاز شما در دسترس نیستند.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "این انتخاب‌ها به پیش‌فرض جلسه‌های بعدی تبدیل می‌شوند. بعداً می‌توانید آن‌ها را ویرایش کنید."
+  },
+  "onboarding_lists_legend": {
+    "message": "دسته‌های پیشنهادی سایت‌ها"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ سایت",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ سایت",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "نمایش سایت‌های $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "پنهان کردن سایت‌های $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "دامنه‌های $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "ادامه"
+  },
+  "onboarding_access_heading": {
+    "message": "فعال کردن مسدودسازی سایت‌ها"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock نشانی صفحه‌ها را به‌صورت محلی بررسی می‌کند تا با دسته‌ها و سایت‌های انتخابی شما تطبیق دهد. از دسترسی به سایت‌ها برای نمایش صفحه مسدودسازی و بازگرداندن صفحه‌های متأثر در پایان جلسه استفاده می‌کند."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "دسته‌ها و دامنه‌های سفارشی می‌توانند هر سایتی را در بر بگیرند. بنابراین Chrome این اجازه را درخواست می‌کند:"
+  },
+  "onboarding_access_capability": {
+    "message": "خواندن و تغییر همه داده‌های شما در همه وب‌سایت‌ها"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock تنها هنگام اعمال قوانین مسدودسازی شما از این دسترسی استفاده می‌کند."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome دسترسی به سایت‌ها را نداد. می‌توانید دوباره تلاش کنید."
+  },
+  "onboarding_access_registration_error": {
+    "message": "دسترسی به سایت‌ها داده شد، اما Focus Lock نتوانست مسدودسازی را فعال کند. راه‌اندازی را دوباره انجام دهید یا افزونه را بارگذاری مجدد کنید."
+  },
+  "onboarding_access_enable_button": {
+    "message": "فعال کردن مسدودسازی سایت‌ها"
+  },
+  "onboarding_access_defer_button": {
+    "message": "الان نه"
+  },
+  "onboarding_sync_heading": {
+    "message": "محل ذخیره تنظیمات خود را انتخاب کنید"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "همگام‌سازی بین دستگاه‌های Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "داده‌های تأییدشده زیر پس از پایان راه‌اندازی از Chrome Sync استفاده می‌کنند."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "همه داده‌های Focus Lock در همین نمایه Chrome می‌مانند."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "همگام‌شده"
+  },
+  "onboarding_sync_local_title": {
+    "message": "فقط محلی"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "چیزی برای توسعه‌دهنده Focus Lock فرستاده نمی‌شود."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "پایان راه‌اندازی با همگام‌سازی فعال"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "پایان راه‌اندازی بدون همگام‌سازی"
+  }
+}

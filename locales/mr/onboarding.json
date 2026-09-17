@@ -1,1 +1,177 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock सेट करा"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock सेटअप"
+  },
+  "onboarding_progress": {
+    "message": "टप्पा $STEP$ / $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "तुमची जतन केलेली सेटअप प्रगती परत मिळवता आली नाही. तुमच्या सध्याच्या डीफॉल्टसह पुन्हा सुरुवात करत आहोत."
+  },
+  "onboarding_complete_heading": {
+    "message": "सेटअप पूर्ण झाला"
+  },
+  "onboarding_complete_body": {
+    "message": "तुमच्या निवडी जतन झाल्या आहेत. सेशन सुरू करण्यासाठी Chrome टूलबारमधून Focus Lock उघडा."
+  },
+  "onboarding_error_heading": {
+    "message": "सेटअप उपलब्ध नाही"
+  },
+  "onboarding_error_body": {
+    "message": "सेटअप लोड होऊ शकला नाही. पुन्हा प्रयत्न करा."
+  },
+  "onboarding_retry_button": {
+    "message": "पुन्हा प्रयत्न करा"
+  },
+  "onboarding_save_error": {
+    "message": "सेटअपची प्रगती जतन होऊ शकली नाही. पुन्हा प्रयत्न करा."
+  },
+  "onboarding_enable_error": {
+    "message": "वेबसाइट ब्लॉकिंग चालू होऊ शकली नाही. पुन्हा प्रयत्न करा."
+  },
+  "onboarding_finish_error": {
+    "message": "सेटअप पूर्ण होऊ शकला नाही. तुमच्या निवडी अजूनही जतन आहेत. पुन्हा प्रयत्न करा."
+  },
+  "onboarding_lists_heading": {
+    "message": "तुमची सुरुवातीची ब्लॉक यादी निवडा"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "$MODE$ मध्ये, चालू श्रेणी आणि अतिरिक्त ब्लॉक केलेल्या साइट उपलब्ध नसतात.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$ मध्ये, तुमच्या परवानगी यादीशिवाय प्रत्येक साइट बंद असते.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "या निवडी पुढील सेशनसाठी डीफॉल्ट बनतात. त्या नंतर बदलता येतात."
+  },
+  "onboarding_lists_legend": {
+    "message": "शिफारस केलेल्या वेबसाइट श्रेणी"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ साइट",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ साइट",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "$CATEGORY$ च्या साइट दाखवा",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "$CATEGORY$ च्या साइट लपवा",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ चे डोमेन",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "पुढे जा"
+  },
+  "onboarding_access_heading": {
+    "message": "वेबसाइट ब्लॉकिंग चालू करा"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock पानांचे पत्ते याच उपकरणावर तपासते, जेणेकरून ते तुम्ही निवडलेल्या श्रेणी आणि साइटशी जुळवता येतील. वेबसाइट प्रवेशाचा वापर ते स्वतःची ब्लॉकिंग स्क्रीन दाखवण्यासाठी आणि सेशन संपल्यावर बाधित पाने परत आणण्यासाठी करते."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "श्रेणी आणि स्वतःच्या डोमेनमध्ये कोणतीही वेबसाइट येऊ शकते. म्हणून Chrome ही परवानगी मागेल:"
+  },
+  "onboarding_access_capability": {
+    "message": "सर्व वेबसाइटवरील तुमचा सर्व डेटा वाचणे आणि त्यात बदल करणे"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock तो प्रवेश फक्त तुमचे ब्लॉकिंग नियम लागू करतानाच वापरते."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome ने वेबसाइट प्रवेश दिला नाही. तुम्ही पुन्हा प्रयत्न करू शकता."
+  },
+  "onboarding_access_registration_error": {
+    "message": "वेबसाइट प्रवेश मिळाला, पण Focus Lock ब्लॉकिंग चालू करू शकले नाही. सेटअप पुन्हा करा किंवा एक्सटेंशन पुन्हा लोड करा."
+  },
+  "onboarding_access_enable_button": {
+    "message": "वेबसाइट ब्लॉकिंग चालू करा"
+  },
+  "onboarding_access_defer_button": {
+    "message": "आता नको"
+  },
+  "onboarding_sync_heading": {
+    "message": "तुमच्या सेटिंग्ज कुठे ठेवायच्या ते निवडा"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Chrome उपकरणांदरम्यान सिंक करा"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "सेटअप पूर्ण केल्यावर खालील डेटा Chrome सिंक वापरेल."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Focus Lock चा सर्व डेटा याच Chrome प्रोफाइलमध्ये राहतो."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "सिंक होते"
+  },
+  "onboarding_sync_local_title": {
+    "message": "फक्त स्थानिक"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock च्या डेव्हलपरला काहीही पाठवले जात नाही."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "सिंक चालू ठेवून सेटअप पूर्ण करा"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "सिंकशिवाय सेटअप पूर्ण करा"
+  }
+}

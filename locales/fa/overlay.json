@@ -1,0 +1,120 @@
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "قفل‌شده - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "در حال بررسی زبانه‌های کار در دسترس..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "برای ادامه کارتان یک زبانه باز را انتخاب کنید."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "جلسه تمرکز شما در دسترس نیست. دوباره تلاش کنید یا این صفحه را بارگذاری مجدد کنید."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "زبانه کار شما بارگذاری نشد. دوباره تلاش کنید یا این صفحه را بارگذاری مجدد کنید."
+  },
+  "overlay_target_reconnect": {
+    "message": "برای اتصال دوباره به Focus Lock این صفحه را بارگذاری مجدد کنید."
+  },
+  "overlay_target_page_changed": {
+    "message": "صفحه درخواست‌کننده تغییر کرده است. صفحه را بارگذاری مجدد کنید."
+  },
+  "overlay_target_transport_error": {
+    "message": "دسترسی به Focus Lock ممکن نشد. دوباره تلاش کنید."
+  },
+  "overlay_picker_heading": {
+    "message": "یک زبانه کار انتخاب کنید"
+  },
+  "overlay_picker_cancel": {
+    "message": "لغو"
+  },
+  "overlay_picker_search_label": {
+    "message": "جست‌وجو در زبانه‌های کار"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "جست‌وجو بر اساس عنوان یا سایت"
+  },
+  "overlay_picker_clear_search": {
+    "message": "پاک کردن جست‌وجو"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "تازه‌سازی زبانه‌ها"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "زبانه‌های کار در دسترس"
+  },
+  "overlay_picker_finding": {
+    "message": "در حال یافتن زبانه‌های در دسترس..."
+  },
+  "overlay_picker_searching": {
+    "message": "در حال جست‌وجو در زبانه‌های کار..."
+  },
+  "overlay_picker_saving": {
+    "message": "در حال ذخیره زبانه کار..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "زبانه کاری در دسترس نیست. سایتی را که این جلسه اجازه می‌دهد باز کنید، سپس زبانه‌ها را تازه کنید."
+  },
+  "overlay_picker_no_matches": {
+    "message": "زبانه هم‌خوانی ندارد. جست‌وجوی دیگری را امتحان کنید یا جست‌وجو را پاک کنید."
+  },
+  "overlay_picker_load_failed": {
+    "message": "زبانه‌های کار بارگذاری نشدند. دوباره تلاش کنید."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ از $COUNT$ زبانه",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ از $COUNT$ زبانه",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  }
+}

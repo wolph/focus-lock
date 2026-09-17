@@ -1,1 +1,636 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "Док не зауставиш"
+  },
+  "shared_preset_short": {
+    "message": "кратко"
+  },
+  "shared_preset_focus": {
+    "message": "фокус"
+  },
+  "shared_preset_deep_work": {
+    "message": "дубок рад"
+  },
+  "shared_deep_work_note": {
+    "message": "Склоност, а не наука: један дуг непрекинут блок, без аутоматских пауза."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ мин укупно, са блоковима фокуса од $FOCUS$ мин",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ мин непрекидног фокуса",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Покрени док не зауставиш"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Закључај док ручно не откључаш"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Сесије које трају док их не зауставиш задржавају Флексибилно или Отпор и не могу да користе циклусе фокуса и паузе."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Чврсто закључавање није доступно уз Док не зауставиш: без мерача времена и без ручног краја сесија никада не би могла да се заврши."
+  },
+  "shared_end_session": {
+    "message": "Заврши сесију"
+  },
+  "shared_unlock": {
+    "message": "Откључај"
+  },
+  "shared_gate_wait_none": {
+    "message": "без чекања"
+  },
+  "shared_gate_wait": {
+    "message": "чекање од $SECONDS$ секунди",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ и уписана реченица",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Траје док је не завршиш помоћу $LABEL$. Циклуси искључени.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Траје док је не откључаш: $REQUIREMENT$, затим $LABEL$. Циклуси искључени.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Циклуси искључени због режима Док не зауставиш"
+  },
+  "shared_mode_blacklist": {
+    "message": "Блокирај изабране сајтове"
+  },
+  "shared_mode_whitelist": {
+    "message": "Дозволи само изабране сајтове"
+  },
+  "shared_focus_time_label": {
+    "message": "Време фокуса"
+  },
+  "shared_clock_focus_phase": {
+    "message": "фаза фокуса"
+  },
+  "shared_clock_total_session": {
+    "message": "цела сесија"
+  },
+  "shared_clock_pause": {
+    "message": "застој"
+  },
+  "shared_clock_break": {
+    "message": "пауза"
+  },
+  "shared_badge_indefinite": {
+    "message": "УКЉ"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock се покреће. Примењују се твоја изабрана правила."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Сесија је завршена. Завршава се чишћење прегледача."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock није могао да се покрене. Завршава се чишћење прегледача."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock није могао да очисти недовршено покретање."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock није могао да заврши чишћење прегледача."
+  },
+  "shared_retry_cleanup": {
+    "message": "Покушај чишћење поново"
+  },
+  "shared_end_failed": {
+    "message": "Сесија није могла да се заврши. Покушај поново."
+  },
+  "shared_retry_failed": {
+    "message": "Чишћење није могло поново да се покуша. Покушај поново."
+  },
+  "shared_action_failed": {
+    "message": "Та радња није могла да се затражи. Покушај поново."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Повратак на посао није успео. Покушај поново."
+  },
+  "shared_data_clear_pending": {
+    "message": "Бришу се Focus Lock подаци. Завршава се чишћење."
+  },
+  "shared_data_clear_error": {
+    "message": "Подаци нису могли да се обришу. Покушај поново."
+  },
+  "shared_schedule_window_label": {
+    "message": "Док се прозор не заврши"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Покреће се по распореду и траје док је не зауставиш: Заврши сесију за Флексибилно, Откључај кроз препреку промишљања за Отпор. Циклуси искључени."
+  },
+  "shared_schedule_started_title": {
+    "message": "Распоред фокуса је покренут"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Активно док га не зауставиш."
+  },
+  "shared_settings_indefinite": {
+    "message": "Активна је сесија која траје док је не зауставиш. Користи искачући прозор у траци са алаткама да је видиш или завршиш."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock се покреће. Проверава се приступ сајтовима и примењују се твоја правила."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock није могао да заврши чишћење прегледача. Отвори искачући прозор и покушај поново."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Искачући прозор у траци са алаткама управља сесијом. Активна сесија задржава правила забележена при покретању."
+  },
+  "shared_settings_timed": {
+    "message": "Временски ограничена сесија је активна до $TIME$. Завршава се сама. За стање уживо користи искачући прозор у траци са алаткама.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Завршено"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Завршено ручно"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Прекинуто раније"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Прекинуто: изгубљен приступ сајтовима"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Прекинуто: подешавање блокирања није успело"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Прекинуто: мерач времена није направљен"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Прекинуто: блокирање није допрло до страница"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Прекинуто: опоравак није успео"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ч $MINUTES$ мин",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ мин",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ мин",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ мин",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Ажурирање сесије"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Мање од минута"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ до твоје паузе",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ преостало у овој сесији",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Цена премашује ограничење кредита"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Кредит се поново зарађује током фокуса"
+  },
+  "shared_credit_off": {
+    "message": "Зарађивање кредита је искључено"
+  },
+  "shared_not_enough_time": {
+    "message": "Нема довољно времена у овом блоку фокуса"
+  },
+  "shared_ready_in": {
+    "message": "Спремно за $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Блокира категорија $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Блокира твој списак блокираних"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Није на твом списку дозвољених"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Блокира ова сесија"
+  },
+  "shared_verdict_allow_list": {
+    "message": "На твом списку дозвољених"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Увек дозвољено"
+  },
+  "shared_verdict_unlock": {
+    "message": "Привремено откључано"
+  },
+  "shared_verdict_excluded": {
+    "message": "Изузето из изабране категорије"
+  },
+  "shared_verdict_no_session": {
+    "message": "Нема активне сесије фокуса"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Дозвољава ова сесија"
+  },
+  "shared_category_social": {
+    "message": "Друштвене мреже"
+  },
+  "shared_category_video": {
+    "message": "Видео и стриминг"
+  },
+  "shared_category_news": {
+    "message": "Вести"
+  },
+  "shared_category_mail": {
+    "message": "Е-пошта"
+  },
+  "shared_category_shopping": {
+    "message": "Куповина"
+  },
+  "shared_category_gaming": {
+    "message": "Игре"
+  },
+  "shared_category_forums": {
+    "message": "Форуми и досада"
+  },
+  "shared_synced_settings": {
+    "message": "Подешавања"
+  },
+  "shared_synced_lists": {
+    "message": "Спискови блокираних и дозвољених"
+  },
+  "shared_synced_credit": {
+    "message": "Кредит за приступ"
+  },
+  "shared_synced_streaks": {
+    "message": "Низови"
+  },
+  "shared_synced_aggregates": {
+    "message": "Збирни блокирани покушаји на нивоу домена"
+  },
+  "shared_local_full_urls": {
+    "message": "Потпуне URL адресе"
+  },
+  "shared_local_intentions": {
+    "message": "Намере фокуса"
+  },
+  "shared_local_events": {
+    "message": "Детаљни догађаји сесије"
+  },
+  "shared_local_runtime": {
+    "message": "Активна сесија у току"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Неки синхронизовани подаци из старије верзије нису могли да се прочитају и враћени су на подразумевано."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Заврши сесију која траје пре брисања свих података."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "Навигација производа"
+  },
+  "shared_nav_overview": {
+    "message": "Преглед"
+  },
+  "shared_nav_settings": {
+    "message": "Подешавања"
+  },
+  "shared_section_blocking": {
+    "message": "Блокирање"
+  },
+  "shared_section_schedule": {
+    "message": "Распоред"
+  },
+  "shared_section_behavior": {
+    "message": "Понашање сесије"
+  },
+  "shared_section_budget": {
+    "message": "Кредит за приступ"
+  },
+  "shared_section_notifications": {
+    "message": "Обавештења"
+  },
+  "shared_section_privacy": {
+    "message": "Приватност и подаци"
+  },
+  "shared_theme_auto": {
+    "message": "Аутоматски"
+  },
+  "shared_theme_light": {
+    "message": "Светло"
+  },
+  "shared_theme_dark": {
+    "message": "Тамно"
+  },
+  "shared_theme_button": {
+    "message": "Тема: $CURRENT$. Пребаци на $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Тема није могла да се сачува. Поново учитај страницу и покушај опет."
+  },
+  "shared_host_search_label": {
+    "message": "Претражи сајтове у категорији $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Ниједан сајт у категорији $TITLE$ не одговара твојој претрази.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Приказано $SHOWN$ од $MATCHED$ сајтова. Претражи да сузиш списак.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Приказано $MATCHED$ од $TOTAL$ сајтова.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Приказани сви $TOTAL$ сајтови.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Заврши сесију"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock се покреће"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Примењују се твоја изабрана правила."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Ова страница се није учитала. Учитаће се сама када се сесија заврши."
+  },
+  "shared_overlay_next_step": {
+    "message": "Твој следећи корак"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Назад на посао"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Изабери радну картицу"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Промени радну картицу"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Треба ти пауза или приступ сајту?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Можеш се удаљити у било ком тренутку. Приступ сајтовима троши кредит."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Занемари чекање и ипак заврши"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock није могао да ажурира ову радњу. Покушај поново."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ кредита за приступ",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Настави са својим тренутним задатком"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Откључај све сајтове"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Откључај овај сајт"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - кошта $COST$ кредита",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Закључано до $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Написао си: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Откључај $HOST$ на $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Настави са фокусом"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Упиши ово за потврду:"
+  },
+  "shared_gate_end_title": {
+    "message": "Заврши ову сесију"
+  },
+  "shared_minutes_few": {
+    "message": "$COUNT$ мин",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

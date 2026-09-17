@@ -6,7 +6,7 @@
     "message": "Κλειδωμένο - Focus Lock"
   },
   "overlay_return_label": {
-    "message": "Επιστροφή στις Καρτέλες",
+    "message": "$ACTION$: «$DESTINATION$»",
     "placeholders": {
       "ACTION": {
         "content": "$1",
@@ -15,6 +15,23 @@
       "DESTINATION": {
         "content": "$2",
         "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: «$DESTINATION$» ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
       }
     }
   },
@@ -105,7 +122,7 @@
     }
   },
   "overlay_picker_tab_label": {
-    "message": "$TITLE$ ($HOSTNAME$)",
+    "message": "«$TITLE$» ($HOSTNAME$)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

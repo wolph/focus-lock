@@ -1,9 +1,9 @@
 {
   "notify_session_complete_title": {
-    "message": "Fookussessioon lõppenud"
+    "message": "Fookusseanss lõppenud"
   },
   "notify_session_complete_body": {
-    "message": "Sinu fookussessioon lõppes."
+    "message": "Sinu fookusseanss lõppes."
   },
   "notify_schedule_window_body": {
     "message": "Lukustatud kuni $END$.",
@@ -15,7 +15,7 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Fookuse ajakava ei saanud alata"
+    "message": "Ajakava seanss ei saanud alata"
   },
   "notify_schedule_unavailable_body": {
     "message": "Veebisaitide blokeerimine ei ole lubatud. Lõpeta seadistamine või anna veebisaidi juurdepääs, seejärel proovi uuesti."

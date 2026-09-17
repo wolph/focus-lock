@@ -1,1 +1,876 @@
-{}
+{
+  "options_page_title": {
+    "message": "אפשרויות Focus Lock"
+  },
+  "options_heading": {
+    "message": "הגדרות Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "טוען הגדרות"
+  },
+  "options_privacy_loading": {
+    "message": "טוען הגדרות פרטיות"
+  },
+  "options_save_failed": {
+    "message": "לא ניתן היה לשמור. נסה שוב."
+  },
+  "options_blocking_heading": {
+    "message": "חסימה"
+  },
+  "options_blocking_help": {
+    "message": "כללים מותאמים חוסמים במפגשי רשימה שחורה. הרשימה הלבנה היא מה שנשאר נגיש במפגשי רשימה לבנה. הקטגוריות המצורפות חוסמות בזבזני זמן נפוצים."
+  },
+  "options_custom_blacklist_title": {
+    "message": "רשימה שחורה מותאמת"
+  },
+  "options_whitelist_title": {
+    "message": "רשימה לבנה"
+  },
+  "options_bundled_categories_heading": {
+    "message": "קטגוריות מצורפות"
+  },
+  "options_bundled_categories_help": {
+    "message": "רשימות מצורפות של בזבזני זמן נפוצים. הפעל קטגוריה שלמה, ואז פתח אותה כדי להשאיר אתרים בודדים זמינים."
+  },
+  "options_schedule_heading": {
+    "message": "לוח זמנים"
+  },
+  "options_schedule_help": {
+    "message": "מפגשים מתחילים מעצמם בתוך החלונות האלה. רמת הקשיחות שנקבעת כאן חלה על כל החלון."
+  },
+  "options_behavior_heading": {
+    "message": "התנהגות המפגש"
+  },
+  "options_budget_heading": {
+    "message": "קרדיט גישה לאתרים"
+  },
+  "options_notifications_heading": {
+    "message": "התראות"
+  },
+  "options_privacy_heading": {
+    "message": "פרטיות ונתונים"
+  },
+  "options_load_error_retry": {
+    "message": "נסה שוב"
+  },
+  "options_load_error_delete_all": {
+    "message": "מחק הכול והתחל מחדש"
+  },
+  "options_load_error_keep_data": {
+    "message": "שמור על הנתונים שלי"
+  },
+  "options_delete_all_data": {
+    "message": "מחק את כל נתוני Focus Lock"
+  },
+  "options_dirty_saving": {
+    "message": "שומר שינויים"
+  },
+  "options_dirty_unsaved": {
+    "message": "שינויים שלא נשמרו"
+  },
+  "options_dirty_clean": {
+    "message": "אין שינויים שלא נשמרו"
+  },
+  "options_dirty_discard": {
+    "message": "בטל שינויים"
+  },
+  "options_dirty_save": {
+    "message": "שמור שינויים"
+  },
+  "options_session_status_label": {
+    "message": "מצב המפגש"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "דומיין"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "ביטוי רגולרי"
+  },
+  "options_rule_remove": {
+    "message": "הסר"
+  },
+  "options_rule_remove_aria": {
+    "message": "הסר את $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "עדיין אין כללים."
+  },
+  "options_rule_kind_aria": {
+    "message": "סוג הכלל"
+  },
+  "options_rule_kind_host_option": {
+    "message": "דומיין או תת-דומיין"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "ביטוי רגולרי (כתובת URL מלאה)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "תבנית"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "הוסף כלל"
+  },
+  "options_rules_help": {
+    "message": "facebook.com מכסה את הדומיין הזה וכל תת-דומיין שלו. news.ycombinator.com מכסה את תת-הדומיין הזה וכל מה שתחתיו. /youtube\\.com\\/shorts/ מתאים לכתובת ה-URL המלאה כביטוי רגולרי."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ חייב להיות מספר שלם חיובי.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ חייב להיות מספר שלם אפס או גדול ממנו.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ חייב להיות אפס או גדול ממנו.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ חייב להיות בטווח הדקות הנתמך.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ חייב להיות בטווח הימים הנתמך.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "ברירות מחדל למפגש"
+  },
+  "options_session_defaults_help": {
+    "message": "המצב ורמת הקשיחות נקבעים עם תחילת המפגש. אלה הערכים שאיתם נפתח טופס ההתחלה."
+  },
+  "options_preset_short_label": {
+    "message": "מפגש קצר מוגדר מראש (דקות)"
+  },
+  "options_preset_default_label": {
+    "message": "מפגש ברירת מחדל מוגדר מראש (דקות)"
+  },
+  "options_preset_deep_label": {
+    "message": "מפגש עמוק מוגדר מראש (דקות)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "רשימה שחורה: חסום את האתרים ברשימה"
+  },
+  "options_mode_whitelist_label": {
+    "message": "רשימה לבנה: התר רק את האתרים ברשימה"
+  },
+  "options_strictness_flexible_label": {
+    "message": "גמיש: סיים את המפגש מתי שתבחר"
+  },
+  "options_strictness_friction_label": {
+    "message": "חיכוך: עצירה מוקדמת עוברת דרך שער השהייה שהוגדר"
+  },
+  "options_strictness_hard_label": {
+    "message": "קשיח: בלי סיום מוקדם, גישה זמנית לאתרים בלבד"
+  },
+  "options_cycle_heading": {
+    "message": "מחזור ריכוז והפסקה"
+  },
+  "options_cycle_help": {
+    "message": "ברירות מחדל: 25 דקות ריכוז, 5 דקות הפסקה, 15 דקות הפסקה ארוכה בכל מחזור רביעי. במדגמי מחקר, הפסקות לפי לוח זמנים עדיפות על הפסקות לפי תחושה, גם במצב הרוח וגם בריכוז. הדקות המדויקות הן מוסכמה, לא מדע."
+  },
+  "options_cycle_default_label": {
+    "message": "החלף בין ריכוז להפסקות כברירת מחדל"
+  },
+  "options_focus_minutes_label": {
+    "message": "דקות ריכוז"
+  },
+  "options_short_break_minutes_label": {
+    "message": "דקות הפסקה קצרה"
+  },
+  "options_long_break_minutes_label": {
+    "message": "דקות הפסקה ארוכה"
+  },
+  "options_long_every_label": {
+    "message": "הפסקה ארוכה בכל מחזור N"
+  },
+  "options_gate_heading": {
+    "message": "שער שהייה"
+  },
+  "options_gate_help": {
+    "message": "המתנה של 10 שניות עם כפתור מפורש לחזרה לעבודה מפחיתה באופן מדיד ביקורים אימפולסיביים (מחקר שדה, PNAS 2023). המתנה ארוכה יותר ומשפט מוקלד מכפילים את ההשפעה בערך."
+  },
+  "options_gate_wait_one": {
+    "message": "המתן $COUNT$ שנייה",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "המתן $COUNT$ שניות",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "מותאם"
+  },
+  "options_custom_delay_label": {
+    "message": "השהיה מותאמת (שניות)"
+  },
+  "options_custom_delay_error": {
+    "message": "ההשהיה המותאמת חייבת להיות מספר שלם חיובי של שניות."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "דרוש גם הקלדת משפט"
+  },
+  "options_gate_force_end_label": {
+    "message": "הפעל את הכפתור \"התעלם מההמתנה וסיים בכל זאת\""
+  },
+  "options_credit_help": {
+    "message": "קרדיט גישה לאתרים נצבר בזמן שאתה מתרכז. גם גישה לכל האתרים וגם שחרור של אתר יחיד יורדים מאותה יתרה. אפשר להתרחק בכל רגע בלי לנצל קרדיט."
+  },
+  "options_earn_rate_label": {
+    "message": "דקות גישה לאתרים לכל 30 דקות ריכוז"
+  },
+  "options_credit_cap_label": {
+    "message": "מגבלת קרדיט גישה לאתרים (דקות)"
+  },
+  "options_pause_length_label": {
+    "message": "משך גישה לכל האתרים (דקות)"
+  },
+  "options_unlock_length_label": {
+    "message": "משך שחרור אתר (דקות)"
+  },
+  "options_streak_heading": {
+    "message": "רצף ושמירת נתונים"
+  },
+  "options_streak_help": {
+    "message": "הרצף סופר ימים שמגיעים ליעד. מפגש ברירת מחדל אחד שומר על השרשרת, ואסימון הקפאה מתקן יום חסר."
+  },
+  "options_streak_goal_label": {
+    "message": "יעד רצף יומי (דקות ריכוז)"
+  },
+  "options_freeze_interval_label": {
+    "message": "מרווח אסימוני הקפאה (ימים)"
+  },
+  "options_retention_label": {
+    "message": "שמור סטטיסטיקות יומיות (ימים)"
+  },
+  "options_category_on_announcement": {
+    "message": "קטגוריה $CATEGORY$ מופעלת.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "קטגוריה $CATEGORY$ כבויה.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "כל הקטגוריות מופעלות."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "כל הקטגוריות כבויות."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ נכלל.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ נשאר זמין.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "כל האתרים בקטגוריה $CATEGORY$ נכללים.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "כל האתרים בקטגוריה $CATEGORY$ נשארים זמינים.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "פעולות קבוצתיות על קטגוריות"
+  },
+  "options_selected_count": {
+    "message": "נבחרו $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "בוטלה בחירת $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "בחר הכול"
+  },
+  "options_deselect_all": {
+    "message": "בטל בחירת הכול"
+  },
+  "options_select_all_categories_aria": {
+    "message": "בחר את כל הקטגוריות"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "בטל את בחירת כל הקטגוריות"
+  },
+  "options_show_category_sites": {
+    "message": "הצג אתרים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "הסתר אתרים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "אתר $COUNT$ נכלל",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ אתרים נכללים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "הקטגוריה כבויה"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ ייכלל בהפעלה",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ ייכללו בהפעלה",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "בטל סימון של אתר כדי להשאיר אותו זמין בזמן ששאר הקטגוריה חסומה."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "פעולות קבוצתיות על אתרים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "בחר את כל האתרים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "בטל את בחירת כל האתרים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "אתרים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "א'"
+  },
+  "options_day_mon": {
+    "message": "ב'"
+  },
+  "options_day_tue": {
+    "message": "ג'"
+  },
+  "options_day_wed": {
+    "message": "ד'"
+  },
+  "options_day_thu": {
+    "message": "ה'"
+  },
+  "options_day_fri": {
+    "message": "ו'"
+  },
+  "options_day_sat": {
+    "message": "ש'"
+  },
+  "options_schedule_cycles_label": {
+    "message": "החלף בין ריכוז להפסקות"
+  },
+  "options_schedule_overlap_error": {
+    "message": "חופף לרשומה מופעלת אחרת ביום $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "סוג המפגש"
+  },
+  "options_schedule_entry_legend": {
+    "message": "רשומת לוח זמנים"
+  },
+  "options_schedule_start_label": {
+    "message": "התחלה"
+  },
+  "options_schedule_end_label": {
+    "message": "סיום"
+  },
+  "options_schedule_duration_legend": {
+    "message": "משך"
+  },
+  "options_schedule_intention_label": {
+    "message": "כוונה"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "למה מיועד הזמן הזה"
+  },
+  "options_schedule_save_entry": {
+    "message": "שמור רשומה"
+  },
+  "options_cancel": {
+    "message": "ביטול"
+  },
+  "options_schedule_empty": {
+    "message": "עדיין אין מפגשים מתוזמנים."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "ימים שנבחרו"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ עד $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "רשימה שחורה"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "רשימה לבנה"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "גמיש"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "חיכוך"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "קשיח"
+  },
+  "options_schedule_enabled_label": {
+    "message": "מופעל"
+  },
+  "options_schedule_edit": {
+    "message": "ערוך"
+  },
+  "options_schedule_delete": {
+    "message": "מחק"
+  },
+  "options_schedule_add": {
+    "message": "הוסף רשומת לוח זמנים"
+  },
+  "options_sounds_heading": {
+    "message": "צלילים"
+  },
+  "options_master_volume": {
+    "message": "עוצמת קול ראשית"
+  },
+  "options_sound_session_complete": {
+    "message": "סיום מפגש"
+  },
+  "options_sound_break_start": {
+    "message": "תחילת הפסקה"
+  },
+  "options_sound_break_end": {
+    "message": "סוף הפסקה"
+  },
+  "options_sound_schedule_start": {
+    "message": "התחלה אוטומטית מלוח הזמנים"
+  },
+  "options_sound_preview_aria": {
+    "message": "השמע את $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "השמע"
+  },
+  "options_sound_preview_error": {
+    "message": "לא ניתן היה להשמיע את הצליל. נסה שוב."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "התראות"
+  },
+  "options_session_complete_notification": {
+    "message": "הצג התראת מערכת כשמפגש מסתיים"
+  },
+  "options_badge_heading": {
+    "message": "תג"
+  },
+  "options_badge_countdown": {
+    "message": "הצג את הזמן שנותר על סמל סרגל הכלים"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "גישה לאתרים"
+  },
+  "options_privacy_website_off_title": {
+    "message": "הגישה לאתרים כבויה"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock אינו יכול לחסום אתרים עד שתאשר גישה."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "הפעל חסימת אתרים"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "הגישה לאתרים אושרה, אך החסימה אינה פעילה"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome אישר גישה, אך Focus Lock לא הצליח לרשום את סקריפט החסימה שלו."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "נסה שוב חסימת אתרים"
+  },
+  "options_privacy_website_on_title": {
+    "message": "חסימת האתרים מופעלת"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock יכול להחיל את כללי החסימה הפעילים שלך בדפי אתרים רגילים."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "למחוק את ההיסטוריה המקומית?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "אשר מחיקת היסטוריה מקומית"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "ההיסטוריה המקומית נמחקה."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "פעולה זו מוחקת לצמיתות מהמכשיר הזה כתובות URL מלאות, כוונות ריכוז ואירועי מפגש מפורטים. היא אינה מנקה מפגש שפועל, ששומר על הכוונה שלו ועל הכתובת של כל לשונית שהוא חוסם. סיום המפגש מנקה את הכוונה ומתחיל ניקוי שמנקה כל לשונית אתר פתוחה, והניקוי מסיר כל כתובת שמורה בסיומו."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "פעולה זו מוחקת לצמיתות מהמכשיר הזה כתובות URL מלאות, כוונות ריכוז ואירועי מפגש מפורטים, ובנוסף סטטיסטיקות מצטברות מקומיות בלבד. היא אינה מנקה מפגש שפועל, ששומר על הכוונה שלו ועל הכתובת של כל לשונית שהוא חוסם. סיום המפגש מנקה את הכוונה ומתחיל ניקוי שמנקה כל לשונית אתר פתוחה, והניקוי מסיר כל כתובת שמורה בסיומו."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "למחוק נתוני Sync מרוחקים?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "אשר מחיקת נתוני Sync מרוחקים"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "נתוני Chrome Sync המרוחקים נמחקו."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "פעולה זו מוחקת לצמיתות מ-Chrome Sync הגדרות מרוחקות, רשימות חסימה והיתר, קרדיט גישה לאתרים, רצפים וסיכומי ניסיונות חסומים ברמת הדומיין. ההגדרות והסטטיסטיקות המקומיות נשארות במכשיר הזה."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "למחוק את כל נתוני Focus Lock?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "אשר מחיקת כל נתוני Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "כל נתוני Focus Lock נמחקו."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "פעולה זו מוחקת לצמיתות כל פיסת נתונים של Focus Lock במכשיר הזה וכל עותק של Focus Lock שנשאר ב-Chrome Sync:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "מחיקת הכול זמינה רק כשאין מפגש שפועל. לאחר מכן Focus Lock חוזר להגדרה הראשונית."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "לא ניתן היה למחוק את ההיסטוריה המקומית. נסה שוב."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "לא ניתן היה למחוק את נתוני Chrome Sync המרוחקים. נסה שוב."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "לא ניתן היה למחוק את כל נתוני Focus Lock. נסה שוב."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync לא הצליח לשמור את השינויים האחרונים שלך. השמירה המקומית שלך בטוחה."
+  },
+  "options_privacy_error_request": {
+    "message": "לא ניתן היה להשלים את הבקשה. נסה שוב."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "הגישה לאתרים עודכנה."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "הגישה לאתרים לא אושרה."
+  },
+  "options_privacy_error_website_access": {
+    "message": "לא ניתן היה לעדכן את הגישה לאתרים. נסה שוב."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "חסימת האתרים הופעלה."
+  },
+  "options_privacy_error_export": {
+    "message": "לא ניתן היה לייצא את יומן האירועים."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "לא ניתן היה לייצא את יומן האירועים. נסה שוב."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "לא ניתן היה לפתוח את הגדרות ההרשאות של Chrome. נסה שוב."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "הגדרות ההרשאות של Chrome נפתחו."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "פתח את הגדרות ההרשאות של Chrome"
+  },
+  "options_privacy_sync_heading": {
+    "message": "סנכרון Chrome"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "סנכרן נתוני Focus Lock בין מכשירי Chrome"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "סנכרון Chrome הופעל."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "סנכרון Chrome כובה."
+  },
+  "options_privacy_sync_saving": {
+    "message": "סנכרון Chrome עדיין שומר את השינויים האחרונים שלך."
+  },
+  "options_privacy_sync_on": {
+    "message": "סנכרון Chrome מופעל."
+  },
+  "options_privacy_sync_off": {
+    "message": "סנכרון Chrome כבוי."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "שינויי סנכרון Chrome נשמרו."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "נסה שוב להפעיל סנכרון Chrome"
+  },
+  "options_privacy_retry_sync": {
+    "message": "נסה שוב סנכרון Chrome"
+  },
+  "options_privacy_scope_synced": {
+    "message": "מסונכרן"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "מקומי בלבד"
+  },
+  "options_privacy_developer_note": {
+    "message": "דבר אינו נשלח למפתח של Focus Lock."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "יומן אירועים מקומי"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "ייצא את היומן המקומי המפורט או מחק היסטוריית גלישה ומפגשים מקומית."
+  },
+  "options_privacy_export_local_log": {
+    "message": "ייצא יומן אירועים מקומי"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "יומן האירועים המקומי יוצא."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "מחק היסטוריה מקומית"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "נתוני Sync מרוחקים"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "מחק את עותקי Focus Lock שנשארו ב-Chrome Sync בלי לשנות את המכשיר הזה."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "מחק נתוני Sync מרוחקים"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "כל נתוני Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "מחק כל רשומה של Focus Lock במכשיר הזה וכל עותק של Focus Lock שנשאר ב-Chrome Sync, ואז התחל מחדש מההגדרה הראשונית. זמין כשאין מפגש שפועל."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "מחדש את מחיקת כל נתוני Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "נסה שוב מחיקת היסטוריה מקומית"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "נסה שוב מחיקת Sync מרוחק"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "נסה שוב מחיקת כל הנתונים"
+  },
+  "options_error_load": {
+    "message": "לא ניתן היה לטעון את ההגדרות. טען מחדש את הדף כדי לנסות שוב."
+  },
+  "options_error_retry_boot": {
+    "message": "לא ניתן היה להפעיל מחדש את Focus Lock. נסה שוב."
+  },
+  "options_error_refresh_privacy": {
+    "message": "לא ניתן היה לרענן את הגדרות הפרטיות. טען מחדש את הדף."
+  },
+  "options_error_website_blocking": {
+    "message": "לא ניתן היה לעדכן את חסימת האתרים. נסה שוב."
+  },
+  "options_error_change_sync": {
+    "message": "לא ניתן היה לשנות את סנכרון Chrome. נסה שוב."
+  },
+  "options_error_retry_sync": {
+    "message": "לא ניתן היה לנסות שוב את סנכרון Chrome. נסה שוב."
+  },
+  "options_error_save_settings": {
+    "message": "לא ניתן היה לשמור את ההגדרות. טען מחדש את הדף ונסה שוב."
+  },
+  "options_error_save_lists": {
+    "message": "לא ניתן היה לשמור את הרשימות. טען מחדש את הדף ונסה שוב."
+  },
+  "options_gate_wait_two": {
+    "message": "המתן $COUNT$ שניות",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_two": {
+    "message": "$COUNT$ אתרים נכללים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_two": {
+    "message": "$COUNT$ ייכללו בהפעלה",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

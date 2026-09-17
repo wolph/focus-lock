@@ -1,1 +1,645 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "Dokler ne ustaviš"
+  },
+  "shared_preset_short": {
+    "message": "kratka"
+  },
+  "shared_preset_focus": {
+    "message": "osredotočenost"
+  },
+  "shared_preset_deep_work": {
+    "message": "poglobljeno delo"
+  },
+  "shared_deep_work_note": {
+    "message": "To je preferenca, ne znanost: en dolg neprekinjen blok brez samodejnih odmorov."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "skupaj $MINUTES$ min, z bloki osredotočenosti po $FOCUS$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min neprekinjene osredotočenosti",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Začni, dokler ne ustaviš"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Zakleni do ročnega odklepa"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Seje, ki tečejo dokler jih ne ustaviš, ostanejo prilagodljive ali s trenjem in ne morejo uporabljati ciklov osredotočenosti in odmorov."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Trdo zaklepanje pri možnosti Dokler ne ustaviš ni na voljo: brez časovnika in brez ročnega konca se seja nikoli ne bi končala."
+  },
+  "shared_end_session": {
+    "message": "Končaj sejo"
+  },
+  "shared_unlock": {
+    "message": "Odkleni"
+  },
+  "shared_gate_wait_none": {
+    "message": "brez čakanja"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ sekund čakanja",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ in vtipkan stavek",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Teče, dokler je ne končaš z $LABEL$. Cikli izklopljeni.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Teče, dokler je ne odkleneš: $REQUIREMENT$, nato $LABEL$. Cikli izklopljeni.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Cikli, ki jih vsiljuje Dokler ne ustaviš"
+  },
+  "shared_mode_blacklist": {
+    "message": "Blokiraj izbrana spletna mesta"
+  },
+  "shared_mode_whitelist": {
+    "message": "Dovoli samo izbrana spletna mesta"
+  },
+  "shared_focus_time_label": {
+    "message": "Čas osredotočenosti"
+  },
+  "shared_clock_focus_phase": {
+    "message": "faza osredotočenosti"
+  },
+  "shared_clock_total_session": {
+    "message": "cela seja"
+  },
+  "shared_clock_pause": {
+    "message": "zaustavljeno"
+  },
+  "shared_clock_break": {
+    "message": "odmor"
+  },
+  "shared_badge_indefinite": {
+    "message": "VKL"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock se zaganja. Uveljavlja tvoja izbrana pravila."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Seja se je končala. Dokončujem čiščenje v brskalniku."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock se ni mogel zagnati. Dokončujem čiščenje v brskalniku."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock ni mogel počistiti za nedokončanim zagonom."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock ni mogel dokončati čiščenja v brskalniku."
+  },
+  "shared_retry_cleanup": {
+    "message": "Poskusi čiščenje znova"
+  },
+  "shared_end_failed": {
+    "message": "Seje ni bilo mogoče končati. Poskusi znova."
+  },
+  "shared_retry_failed": {
+    "message": "Čiščenja ni bilo mogoče ponoviti. Poskusi znova."
+  },
+  "shared_action_failed": {
+    "message": "Tega dejanja ni bilo mogoče zahtevati. Poskusi znova."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Vrnitev k delu ni uspela. Poskusi znova."
+  },
+  "shared_data_clear_pending": {
+    "message": "Brišem podatke Focus Lock. Dokončujem čiščenje."
+  },
+  "shared_data_clear_error": {
+    "message": "Podatkov ni bilo mogoče izbrisati. Poskusi znova."
+  },
+  "shared_schedule_window_label": {
+    "message": "Do konca okna"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Zažene se po urniku in teče, dokler je ne ustaviš: Končaj sejo pri prilagodljivi, Odkleni prek časa za premislek pri trenju. Cikli izklopljeni."
+  },
+  "shared_schedule_started_title": {
+    "message": "Urnik osredotočenosti se je začel"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Aktivna, dokler je ne ustaviš."
+  },
+  "shared_settings_indefinite": {
+    "message": "Teče seja Dokler ne ustaviš. Oglej si jo ali jo končaj v oknu v orodni vrstici."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock se zaganja. Preverja dostop do spletnih mest in uveljavlja tvoja pravila."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock ni mogel dokončati čiščenja v brskalniku. Odpri okno v orodni vrstici in poskusi znova."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Upravljanje seje pripada oknu v orodni vrstici. Aktivna seja obdrži pravila, zajeta ob svojem zagonu."
+  },
+  "shared_settings_timed": {
+    "message": "Seja s časovnikom teče do $TIME$. Konča se sama. Trenutno stanje najdeš v oknu v orodni vrstici.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Dokončano"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Dokončano ročno"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Končano predčasno"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Končano: izgubljen dostop do spletnih mest"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Končano: nastavitev blokiranja ni uspela"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Končano: nastavitev časovnika ni uspela"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Končano: uveljavitev na straneh ni uspela"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Končano: obnovitev ni uspela"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ min",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Posodabljam sejo"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Manj kot minuta"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ do tvojega odmora",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ preostane v tej seji",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Cena presega omejitev kredita"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Kredit se spet nabira med osredotočenostjo"
+  },
+  "shared_credit_off": {
+    "message": "Nabiranje kredita je izklopljeno"
+  },
+  "shared_not_enough_time": {
+    "message": "V tem bloku osredotočenosti ni dovolj časa"
+  },
+  "shared_ready_in": {
+    "message": "Pripravljeno čez $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Blokirano s kategorijo $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Blokirano s tvojim seznamom blokiranih"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Ni na tvojem seznamu dovoljenih"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Blokirano s to sejo"
+  },
+  "shared_verdict_allow_list": {
+    "message": "Je na tvojem seznamu dovoljenih"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Vedno dovoljeno"
+  },
+  "shared_verdict_unlock": {
+    "message": "Začasno odklenjeno"
+  },
+  "shared_verdict_excluded": {
+    "message": "Izvzeto iz izbrane kategorije"
+  },
+  "shared_verdict_no_session": {
+    "message": "Ni aktivne seje osredotočenosti"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Dovoljeno s to sejo"
+  },
+  "shared_category_social": {
+    "message": "Družbena omrežja"
+  },
+  "shared_category_video": {
+    "message": "Video in pretakanje"
+  },
+  "shared_category_news": {
+    "message": "Novice"
+  },
+  "shared_category_mail": {
+    "message": "E-pošta"
+  },
+  "shared_category_shopping": {
+    "message": "Nakupovanje"
+  },
+  "shared_category_gaming": {
+    "message": "Igre"
+  },
+  "shared_category_forums": {
+    "message": "Forumi in dolgčas"
+  },
+  "shared_synced_settings": {
+    "message": "Nastavitve"
+  },
+  "shared_synced_lists": {
+    "message": "Seznama blokiranih in dovoljenih"
+  },
+  "shared_synced_credit": {
+    "message": "Kredit za dostop"
+  },
+  "shared_synced_streaks": {
+    "message": "Nizi"
+  },
+  "shared_synced_aggregates": {
+    "message": "Seštevki blokiranih poskusov po domenah"
+  },
+  "shared_local_full_urls": {
+    "message": "Celotni URL-ji"
+  },
+  "shared_local_intentions": {
+    "message": "Namere osredotočenosti"
+  },
+  "shared_local_events": {
+    "message": "Podrobni dogodki sej"
+  },
+  "shared_local_runtime": {
+    "message": "Aktivna tekoča seja"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Nekaterih sinhroniziranih podatkov iz starejše različice ni bilo mogoče prebrati in so bili ponastavljeni."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Preden izbrišeš vse podatke, končaj tekočo sejo."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "Krmarjenje po izdelku"
+  },
+  "shared_nav_overview": {
+    "message": "Pregled"
+  },
+  "shared_nav_settings": {
+    "message": "Nastavitve"
+  },
+  "shared_section_blocking": {
+    "message": "Blokiranje"
+  },
+  "shared_section_schedule": {
+    "message": "Urnik"
+  },
+  "shared_section_behavior": {
+    "message": "Vedenje seje"
+  },
+  "shared_section_budget": {
+    "message": "Kredit za dostop"
+  },
+  "shared_section_notifications": {
+    "message": "Obvestila"
+  },
+  "shared_section_privacy": {
+    "message": "Zasebnost in podatki"
+  },
+  "shared_theme_auto": {
+    "message": "Sistem"
+  },
+  "shared_theme_light": {
+    "message": "Svetla"
+  },
+  "shared_theme_dark": {
+    "message": "Temna"
+  },
+  "shared_theme_button": {
+    "message": "Tema: $CURRENT$. Preklopi na $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Teme ni bilo mogoče shraniti. Znova naloži stran in poskusi znova."
+  },
+  "shared_host_search_label": {
+    "message": "Iskanje spletnih mest kategorije $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Tvojemu iskanju ne ustreza nobeno spletno mesto kategorije $TITLE$.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Prikazanih $SHOWN$ od $MATCHED$ spletnih mest. Z iskanjem zožiš seznam.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Prikazanih $MATCHED$ od $TOTAL$ spletnih mest.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Prikazanih vseh $TOTAL$ spletnih mest.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Končaj sejo"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock se zaganja"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Uveljavljam tvoja izbrana pravila."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Ta stran se ni naložila. Naložila se bo sama, ko se seja konča."
+  },
+  "shared_overlay_next_step": {
+    "message": "Tvoj naslednji korak"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Nazaj na delo"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Izberi delovni zavihek"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Zamenjaj delovni zavihek"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Potrebuješ odmor ali dostop do spletnega mesta?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Kadar koli lahko odideš. Dostop do spletnega mesta stane kredit."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Prezri čakanje in vseeno končaj"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock ni mogel posodobiti tega dejanja. Poskusi znova."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ kredita za dostop",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Nadaljuj svojo trenutno nalogo"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Odkleni vsa spletna mesta"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Odkleni to spletno mesto"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - stane $COST$ kredita",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Zaklenjeno do $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Rekel si: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Odkleni $HOST$ za $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Ostani osredotočen"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Za potrditev vtipkaj:"
+  },
+  "shared_gate_end_title": {
+    "message": "Končaj to sejo"
+  },
+  "shared_minutes_two": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_minutes_few": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

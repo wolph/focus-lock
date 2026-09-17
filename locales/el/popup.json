@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "next: $DAY$ $TIME$",
+    "message": "επόμενη: $DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -16,112 +16,181 @@
     "message": "Ρυθμίσεις"
   },
   "popup_open_settings_failed": {
-    "message": "Could not άνοιγμα Ρυθμίσεις. Try again."
+    "message": "Οι Ρυθμίσεις δεν άνοιξαν. Δοκίμασε ξανά."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load συνεδρία ρυθμίσεις. Reload the popup to try again. Defaults are shown."
+    "message": "Οι ρυθμίσεις της συνεδρίας δεν φορτώθηκαν. Φόρτωσε ξανά το παράθυρο. Εμφανίζονται οι προεπιλογές."
   },
   "popup_open_setup_failed": {
-    "message": "Could not άνοιγμα setup. Try again."
+    "message": "Η ρύθμιση δεν άνοιξε. Δοκίμασε ξανά."
+  },
+  "popup_setup_required_heading": {
+    "message": "Ολοκλήρωσε τη ρύθμιση του Focus Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose your starting lists, website access, and storage mode before starting a συνεδρία."
+    "message": "Διάλεξε τις αρχικές σου λίστες, την πρόσβαση στους ιστότοπους και τον τρόπο αποθήκευσης πριν ξεκινήσεις συνεδρία."
   },
   "popup_open_setup_button": {
-    "message": "Άνοιγμα setup"
+    "message": "Άνοιγμα ρύθμισης"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Ο αποκλεισμός ιστότοπων δεν επιβεβαιώθηκε. Δοκίμασε ξανά."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not ενεργοποίηση website blocking. Try again."
+    "message": "Ο αποκλεισμός ιστότοπων δεν ενεργοποιήθηκε. Δοκίμασε ξανά."
   },
   "popup_blocking_off_heading": {
-    "message": "Website blocking is off"
+    "message": "Ο αποκλεισμός ιστότοπων είναι ανενεργός"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock cannot έναρξη a συνεδρία until Chrome grants website access and blocking is enabled."
+    "message": "Το Focus Lock δεν μπορεί να ξεκινήσει συνεδρία μέχρι το Chrome να δώσει πρόσβαση στους ιστότοπους και να ενεργοποιηθεί ο αποκλεισμός."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Το Chrome δεν έδωσε πρόσβαση στους ιστότοπους. Ο αποκλεισμός παραμένει ανενεργός."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but Focus Lock could not ενεργοποίηση blocking. Retry setup or reload the extension."
+    "message": "Η πρόσβαση στους ιστότοπους δόθηκε, αλλά το Focus Lock δεν μπόρεσε να ενεργοποιήσει τον αποκλεισμό. Επανάλαβε τη ρύθμιση ή φόρτωσε ξανά την επέκταση."
   },
   "popup_enable_blocking_button": {
-    "message": "Ενεργοποίηση website blocking"
+    "message": "Ενεργοποίηση αποκλεισμού ιστότοπων"
   },
   "popup_retry_button": {
-    "message": "Retry"
+    "message": "Ξανά"
   },
   "popup_notice_access_revoked": {
-    "message": "Your συνεδρία ended because website access was removed."
+    "message": "Η συνεδρία σου τελείωσε επειδή αφαιρέθηκε η πρόσβαση στους ιστότοπους."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your συνεδρία ended because Focus Lock could not ενεργοποίηση website blocking."
+    "message": "Η συνεδρία σου τελείωσε επειδή το Focus Lock δεν μπόρεσε να ενεργοποιήσει τον αποκλεισμό ιστότοπων."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Αυτή η ειδοποίηση δεν έκλεισε. Δοκίμασε ξανά."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Κλείσιμο της ειδοποίησης για την πρόσβαση στους ιστότοπους"
   },
   "popup_dismiss_button": {
-    "message": "Dismiss"
+    "message": "Κλείσιμο"
+  },
+  "popup_restart_failed": {
+    "message": "Το Focus Lock δεν επανεκκινήθηκε. Δοκίμασε ξανά."
   },
   "popup_boot_failed_heading": {
-    "message": "Focus Lock could not έναρξη"
+    "message": "Το Focus Lock δεν μπόρεσε να ξεκινήσει"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Ο λόγος δεν διαβάστηκε."
   },
   "popup_reset_runtime_button": {
-    "message": "Επαναφορά local runtime"
+    "message": "Επαναφορά της τοπικής κατάστασης"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your ρυθμίσεις, lists, and statistics. Clears the current συνεδρία state."
+    "message": "Κρατάει τις ρυθμίσεις, τις λίστες και τα στατιστικά σου. Καθαρίζει την κατάσταση της τρέχουσας συνεδρίας."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Διذγραφή everything and έναρξη over"
+    "message": "Διαγραφή όλων και νέα αρχή"
   },
   "popup_keep_data_button": {
-    "message": "Keep my data"
+    "message": "Κράτα τα δεδομένα μου"
   },
   "popup_delete_all_button": {
-    "message": "Διذγραφή all Focus Lock data"
+    "message": "Διαγραφή όλων των δεδομένων του Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Η κατάσταση της ρύθμισης δεν είναι διαθέσιμη. Φόρτωσε ξανά το Focus Lock."
   },
   "popup_snapshot_unavailable": {
-    "message": "Focus status unavailable"
+    "message": "Η κατάσταση εστίασης δεν είναι διαθέσιμη"
   },
   "popup_action_in_progress": {
-    "message": "Action in progress"
+    "message": "Ενέργεια σε εξέλιξη"
   },
   "popup_active_site_checking": {
-    "message": "Checking the active site"
+    "message": "Έλεγχος του ενεργού ιστότοπου"
   },
   "popup_active_site_unsupported": {
-    "message": "Άνοιγμα a regular website to unlock it"
+    "message": "Άνοιξε έναν κανονικό ιστότοπο για να τον ξεκλειδώσεις"
+  },
+  "popup_active_site_unknown": {
+    "message": "Ο ενεργός ιστότοπος δεν αναγνωρίστηκε"
+  },
+  "popup_active_site_error": {
+    "message": "Ο ενεργός ιστότοπος δεν αναγνωρίστηκε."
   },
   "popup_resume_now": {
-    "message": "Resume now"
+    "message": "Συνέχισε τώρα"
   },
   "popup_start_next_focus_early": {
-    "message": "Έναρξη next focus early"
+    "message": "Νωρίτερη έναρξη εστίασης"
   },
   "popup_unlock_this_site": {
-    "message": "Unlock this site"
+    "message": "Ξεκλείδωμα αυτού του ιστότοπου"
   },
   "popup_unlock_all_sites": {
-    "message": "Unlock all sites"
+    "message": "Ξεκλείδωμα όλων των ιστότοπων"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ πρόσβαση, $CREDIT$ πίστωση",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ πρόσβαση, $CREDIT$ πίστωση - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
   },
   "popup_choose_work_tab_button": {
-    "message": "Choose work tab"
+    "message": "Επιλογή καρτέλας εργασίας"
   },
   "popup_change_work_tab_button": {
-    "message": "Change work tab"
+    "message": "Αλλαγή καρτέλας εργασίας"
   },
   "popup_session_actions_summary": {
-    "message": "Συνεδρία actions"
+    "message": "Ενέργειες συνεδρίας"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ πίστωση πρόσβασης",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Προσθήκη an allowed domain"
+    "message": "Προσθήκη επιτρεπόμενου τομέα"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Προσθήκη allowed domain"
+    "message": "Προσθήκη επιτρεπόμενου τομέα"
   },
   "popup_add_button": {
     "message": "Προσθήκη"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed site rules. Other websites αποκλείστηκε.",
+    "message": "Μόνο $COUNT$ κανόνες επιτρεπόμενων ιστότοπων. Οι υπόλοιποι αποκλείονται.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -130,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ αποκλείστηκε categories, $RULES$ extra rules.",
+    "message": "$CATEGORIES$ αποκλεισμένες κατηγορίες, $RULES$ επιπλέον κανόνες.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -143,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Hard lock. Cannot λήξη early."
+    "message": "Πλήρες κλείδωμα. Δεν τελειώνει νωρίτερα."
   },
   "popup_draft_stop_flexible": {
-    "message": "Can λήξη at any time."
+    "message": "Τελειώνει όποτε θέλεις."
   },
   "popup_draft_stop_friction": {
-    "message": "Λήξη after a $SECONDS$s wait.",
+    "message": "Τέλος μετά από αναμονή $SECONDS$ δευτ.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -158,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "Λήξη after a $SECONDS$s wait and confirmation phrase.",
+    "message": "Τέλος μετά από αναμονή $SECONDS$ δευτ. και φράση επιβεβαίωσης.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -167,25 +236,28 @@
     }
   },
   "popup_session_length_label": {
-    "message": "Συνεδρία length"
+    "message": "Διάρκεια συνεδρίας"
   },
   "popup_custom_minutes_label": {
-    "message": "Custom λεπτά"
+    "message": "Προσαρμοσμένα λεπτά"
   },
   "popup_custom_minutes_placeholder": {
-    "message": "min"
+    "message": "λεπ"
   },
   "popup_gate_force_end": {
-    "message": "Ignore timeout and λήξη anyway"
+    "message": "Αγνόησε την αναμονή και τερμάτισε"
   },
   "popup_gate_keep_focusing": {
-    "message": "Keep focusing"
+    "message": "Συνεχίζω την εστίαση"
   },
   "popup_gate_phrase_label": {
-    "message": "Type:"
+    "message": "Πληκτρολόγησε:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Η επιβεβαίωση δεν ενημερώθηκε. Δοκίμασε ξανά."
   },
   "popup_gate_intention": {
-    "message": "You said: $INTENTION$",
+    "message": "Έγραψες: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -194,10 +266,10 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "A moment to decide:"
+    "message": "Μια στιγμή για να αποφασίσεις:"
   },
   "popup_gate_wait_remaining": {
-    "message": "of $TOTAL$ s",
+    "message": "από $TOTAL$ δευτ.",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -206,19 +278,41 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Back to work"
+    "message": "Πίσω στη δουλειά"
   },
   "popup_destination_unavailable": {
-    "message": "Destination unavailable"
+    "message": "Ο προορισμός δεν είναι διαθέσιμος"
+  },
+  "popup_back_to_work_name": {
+    "message": "Πίσω στη δουλειά: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Πίσω στη δουλειά: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
   },
   "popup_categories_locked": {
-    "message": "Category editing is disabled until αποκλείστηκε-site lists reload."
+    "message": "Οι κατηγορίες δεν αλλάζουν μέχρι να ξαναφορτώσουν οι λίστες των αποκλεισμένων ιστότοπων."
   },
   "popup_blocked_categories_heading": {
-    "message": "Αποκλείστηκε categories"
+    "message": "Αποκλεισμένες κατηγορίες"
   },
   "popup_show_full_domain": {
-    "message": "Εμφάνιση full domain: $PATTERN$",
+    "message": "Εμφάνιση πλήρους τομέα: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -227,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "Εμφάνιση full regular expression: $PATTERN$",
+    "message": "Εμφάνιση πλήρους κανονικής έκφρασης: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -236,13 +330,13 @@
     }
   },
   "popup_rule_kind_domain": {
-    "message": "Domain"
+    "message": "Τομέας"
   },
   "popup_rule_kind_regex": {
-    "message": "Regular expression"
+    "message": "Κανονική έκφραση"
   },
   "popup_category_sites_label": {
-    "message": "$CATEGORY$ sites",
+    "message": "Ιστότοποι της κατηγορίας $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -251,7 +345,7 @@
     }
   },
   "popup_sites_one": {
-    "message": "$COUNT$ site",
+    "message": "$COUNT$ ιστότοπος",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -260,7 +354,7 @@
     }
   },
   "popup_sites_other": {
-    "message": "$COUNT$ sites",
+    "message": "$COUNT$ ιστότοποι",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -269,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "and $COUNT$ more site",
+    "message": "και $COUNT$ ακόμη ιστότοπος",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -278,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "and $COUNT$ more sites",
+    "message": "και $COUNT$ ακόμη ιστότοποι",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -287,28 +381,41 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Allowed exceptions"
+    "message": "Επιτρεπόμενες εξαιρέσεις"
   },
   "popup_extra_blocked_heading": {
-    "message": "Extra αποκλείστηκε rules"
+    "message": "Επιπλέον αποκλεισμένοι κανόνες"
   },
   "popup_no_extra_blocked": {
-    "message": "No extra αποκλείστηκε rules."
+    "message": "Δεν υπάρχουν επιπλέον αποκλεισμένοι κανόνες."
   },
   "popup_allowed_heading": {
-    "message": "Allowed sites and rules"
+    "message": "Επιτρεπόμενοι ιστότοποι και κανόνες"
   },
   "popup_no_allowed_sites": {
-    "message": "No sites are allowed yet."
+    "message": "Δεν επιτρέπεται κανένας ιστότοπος ακόμη."
   },
   "popup_what_will_be_blocked": {
-    "message": "What will be αποκλείστηκε"
+    "message": "Τι θα αποκλειστεί"
   },
   "popup_what_will_be_allowed": {
-    "message": "What will be allowed"
+    "message": "Τι θα επιτραπεί"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ από $TOTAL$ κατηγορίες επιλεγμένες",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$ extra αποκλείστηκε rule",
+    "message": "$COUNT$ επιπλέον αποκλεισμένος κανόνας",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -317,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$ extra αποκλείστηκε rules",
+    "message": "$COUNT$ επιπλέον αποκλεισμένοι κανόνες",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -326,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed rule",
+    "message": "$COUNT$ επιτρεπόμενος κανόνας",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -335,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed rules",
+    "message": "$COUNT$ επιτρεπόμενοι κανόνες",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -344,55 +451,100 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Allowed-site and rule changes here apply only to this συνεδρία. Everything else is αποκλείστηκε."
+    "message": "Οι αλλαγές σε επιτρεπόμενους ιστότοπους και κανόνες εδώ ισχύουν μόνο για αυτή τη συνεδρία. Όλα τα υπόλοιπα αποκλείονται."
   },
   "popup_scope_blacklist": {
-    "message": "Category and rule changes here apply only to this συνεδρία."
+    "message": "Οι αλλαγές σε κατηγορίες και κανόνες εδώ ισχύουν μόνο για αυτή τη συνεδρία."
   },
   "popup_open_settings_defaults": {
-    "message": "Άνοιγμα Ρυθμίσεις for permanent defaults"
+    "message": "Άνοιγμα Ρυθμίσεων για τις μόνιμες προεπιλογές"
   },
   "popup_rule_details_label": {
-    "message": "Συνεδρία rule details"
+    "message": "Λεπτομέρειες κανόνων της συνεδρίας"
   },
   "popup_session_type_legend": {
-    "message": "Συνεδρία type"
+    "message": "Τύπος συνεδρίας"
   },
   "popup_session_type_flexible": {
-    "message": "Flexible"
+    "message": "Ευέλικτη"
   },
   "popup_session_type_friction": {
-    "message": "Friction"
+    "message": "Τριβή"
   },
   "popup_session_type_hard": {
-    "message": "Hard lock"
+    "message": "Πλήρες κλείδωμα"
   },
   "popup_session_type_flexible_hint": {
-    "message": "Λήξη the συνεδρία immediately whenever you choose."
+    "message": "Τερματίζεις τη συνεδρία αμέσως, όποτε θέλεις."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Ο πρόωρος τερματισμός θέλει $WAIT$. Δεν χρειάζεται να πληκτρολογήσεις.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Ο πρόωρος τερματισμός θέλει $WAIT$ και πληκτρολογημένη επιβεβαίωση.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
   },
   "popup_session_type_hard_hint": {
-    "message": "The συνεδρία cannot λήξη early. Site access credit still works."
+    "message": "Η συνεδρία δεν τερματίζεται νωρίτερα. Η πίστωση πρόσβασης λειτουργεί κανονικά."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected categories and extra rules are αποκλείστηκε. Other sites remain available."
+    "message": "Οι επιλεγμένες κατηγορίες και οι επιπλέον κανόνες αποκλείονται. Οι υπόλοιποι ιστότοποι παραμένουν διαθέσιμοι."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. Every other website is αποκλείστηκε."
+    "message": "Μόνο οι ιστότοποι της λίστας είναι διαθέσιμοι. Κάθε άλλος ιστότοπος αποκλείεται."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a συνεδρία length greater than zero λεπτά."
+    "message": "Δώσε διάρκεια συνεδρίας μεγαλύτερη από μηδέν λεπτά."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Οι προεπιλογές άλλαξαν, αλλά οι τρέχουσες λίστες δεν φορτώθηκαν. Φόρτωσε ξανά το παράθυρο."
   },
   "popup_no_work_tab_option": {
-    "message": "No work tab (optional)"
+    "message": "Χωρίς καρτέλα εργασίας (προαιρετικό)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Η επιλεγμένη καρτέλα δεν είναι διαθέσιμη - διάλεξε άλλη"
+  },
+  "popup_cycles_label": {
+    "message": "Κύκλοι: $FOCUS$ λεπτά εστίαση, $SHORT_BREAK$ λεπτά διάλειμμα, $LONG_BREAK$ λεπτά μεγάλο διάλειμμα κάθε $LONG_EVERY$ο",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
   },
   "popup_intention_label": {
-    "message": "Intention"
+    "message": "Πρόθεση"
   },
   "popup_intention_placeholder": {
-    "message": "What are you working on?"
+    "message": "Με τι ασχολείσαι;"
   },
   "popup_work_tab_named": {
-    "message": "Work tab: $TITLE$",
+    "message": "Καρτέλα εργασίας: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -401,19 +553,19 @@
     }
   },
   "popup_change_button": {
-    "message": "Change"
+    "message": "Αλλαγή"
   },
   "popup_session_settings_summary": {
-    "message": "Συνεδρία ρυθμίσεις"
+    "message": "Ρυθμίσεις συνεδρίας"
   },
   "popup_choose_work_tab_label": {
-    "message": "Choose a work tab"
+    "message": "Διάλεξε καρτέλα εργασίας"
   },
   "popup_work_tab_select_label": {
-    "message": "Work tab"
+    "message": "Καρτέλα εργασίας"
   },
   "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Current)",
+    "message": "$TITLE$ (τρέχουσα)",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -422,13 +574,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Blocking mode"
+    "message": "Λειτουργία αποκλεισμού"
   },
   "popup_invalid_time_label": {
-    "message": "invalid time"
+    "message": "μη έγκυρη διάρκεια"
   },
   "popup_start_focus_label": {
-    "message": "Έναρξη $DURATION$ focus",
+    "message": "Έναρξη εστίασης $DURATION$",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -436,28 +588,43 @@
       }
     }
   },
+  "popup_invalid_domain_error": {
+    "message": "Δώσε έγκυρο τομέα, όπως docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Οι καρτέλες εργασίας δεν φορτώθηκαν. Άνοιξε ξανά το παράθυρο."
+  },
   "popup_use_this_tab": {
-    "message": "Use this tab"
+    "message": "Αυτή η καρτέλα"
   },
   "popup_current_tab_unavailable": {
-    "message": "This tab is not available for work. Choose another άνοιγμα tab."
+    "message": "Αυτή η καρτέλα δεν κάνει για δουλειά. Διάλεξε άλλη ανοιχτή καρτέλα."
   },
   "popup_checking_current_tab": {
-    "message": "Checking current tab..."
+    "message": "Έλεγχος της τρέχουσας καρτέλας..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Αναζήτηση της τρέχουσας καρτέλας σου..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Η τρέχουσα καρτέλα σου δεν φορτώθηκε. Δοκίμασε ξανά."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Διάλεξε ή άλλαξε την καρτέλα εργασίας σου."
   },
   "popup_saving_work_tab": {
-    "message": "Saving work tab..."
+    "message": "Αποθήκευση καρτέλας εργασίας..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not αποθήκευση the work tab. Try again."
+    "message": "Η καρτέλα εργασίας δεν αποθηκεύτηκε. Δοκίμασε ξανά."
   },
   "popup_choose_open_tab_option": {
-    "message": "Choose an άνοιγμα tab"
+    "message": "Διάλεξε μια ανοιχτή καρτέλα"
   },
   "popup_or_choose_another_tab": {
-    "message": "Or choose another tab"
+    "message": "Ή διάλεξε άλλη καρτέλα"
   },
   "popup_start_failed": {
-    "message": "Could not έναρξη συνεδρία. Try again."
+    "message": "Η συνεδρία δεν ξεκίνησε. Δοκίμασε ξανά."
   }
 }

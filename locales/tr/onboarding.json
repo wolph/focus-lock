@@ -91,7 +91,7 @@
     }
   },
   "onboarding_show_category_sites": {
-    "message": "Siteleri göster",
+    "message": "$CATEGORY$ sitelerini göster",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -100,7 +100,7 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "Siteleri gizle",
+    "message": "$CATEGORY$ sitelerini gizle",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",

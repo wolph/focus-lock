@@ -227,7 +227,7 @@
     "message": "Δεν υπάρχουν δεδομένα ακόμη."
   },
   "stats_chart_point": {
-    "message": "$LABEL$: $VALUE$",
+    "message": "$LABEL$, $VALUE$",
     "placeholders": {
       "LABEL": {
         "content": "$1",
