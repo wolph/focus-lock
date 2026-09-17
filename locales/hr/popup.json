@@ -16,64 +16,64 @@
     "message": "Postavke"
   },
   "popup_open_settings_failed": {
-    "message": "Postavke se nisu mogle otvoriti. Pokušaj ponovno."
+    "message": "Nije moguće otvoriti Postavke. Pokušajte ponovno."
   },
   "popup_settings_load_failed": {
-    "message": "Postavke sesije se nisu mogle učitati. Ponovno učitaj skočni prozor da pokušaš opet. Prikazane su zadane vrijednosti."
+    "message": "Nije moguće učitati postavke sesije. Ponovno učitajte skočni prozor kako biste pokušali ponovno. Prikazane su zadane vrijednosti."
   },
   "popup_open_setup_failed": {
-    "message": "Postavljanje se nije moglo otvoriti. Pokušaj ponovno."
+    "message": "Nije moguće otvoriti postavljanje. Pokušajte ponovno."
   },
   "popup_setup_required_heading": {
-    "message": "Dovrši postavljanje Focus Locka"
+    "message": "Završite postavljanje Focus Locka"
   },
   "popup_setup_required_body": {
-    "message": "Odaberi početne popise, pristup web-stranicama i način pohrane prije pokretanja sesije."
+    "message": "Odaberite početne popise, pristup web-mjestima i način pohrane prije pokretanja sesije."
   },
   "popup_open_setup_button": {
     "message": "Otvori postavljanje"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Blokiranje web-stranica se nije moglo potvrditi. Pokušaj ponovno."
+    "message": "Nije moguće potvrditi blokiranje web-mjesta. Pokušajte ponovno."
   },
   "popup_blocking_enable_failed": {
-    "message": "Blokiranje web-stranica se nije moglo uključiti. Pokušaj ponovno."
+    "message": "Nije moguće omogućiti blokiranje web-mjesta. Pokušajte ponovno."
   },
   "popup_blocking_off_heading": {
-    "message": "Blokiranje web-stranica je isključeno"
+    "message": "Blokiranje web-mjesta je isključeno"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock ne može pokrenuti sesiju dok Chrome ne odobri pristup web-stranicama i dok blokiranje nije uključeno."
+    "message": "Focus Lock ne može pokrenuti sesiju dok Chrome ne odobri pristup web-mjestima i aktivira blokiranje."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome nije odobrio pristup web-stranicama. Blokiranje je i dalje isključeno."
+    "message": "Chrome nije odobrio pristup web-mjestima. Blokiranje web-mjesta je još uvijek isključeno."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Pristup web-stranicama je odobren, ali Focus Lock nije mogao uključiti blokiranje. Pokušaj postavljanje ponovno ili ponovno učitaj proširenje."
+    "message": "Pristup web-mjestima je odobren, ali Focus Lock ne može aktivirati blokiranje. Pokušajte ponovno postavljanje ili ponovno učitajte nastavak."
   },
   "popup_enable_blocking_button": {
-    "message": "Uključi blokiranje web-stranica"
+    "message": "Omogući blokiranje web-mjesta"
   },
   "popup_retry_button": {
     "message": "Pokušaj ponovno"
   },
   "popup_notice_access_revoked": {
-    "message": "Tvoja sesija je završila jer je pristup web-stranicama uklonjen."
+    "message": "Vaša sesija je završena jer je pristup web-mjestima uklonjen."
   },
   "popup_notice_blocking_failed": {
-    "message": "Tvoja sesija je završila jer Focus Lock nije mogao uključiti blokiranje web-stranica."
+    "message": "Vaša sesija je završena jer Focus Lock nije mogao aktivirati blokiranje web-mjesta."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Ova se obavijest nije mogla odbaciti. Pokušaj ponovno."
+    "message": "Nije moguće odbaciti ovu obavijest. Pokušajte ponovno."
   },
   "popup_dismiss_notice_label": {
-    "message": "Odbaci obavijest o pristupu web-stranicama"
+    "message": "Odbaci obavijest o pristupu web-mjestima"
   },
   "popup_dismiss_button": {
     "message": "Odbaci"
   },
   "popup_restart_failed": {
-    "message": "Focus Lock se nije mogao ponovno pokrenuti. Pokušaj ponovno."
+    "message": "Nije moguće ponovno pokrenuti Focus Lock. Pokušajte ponovno."
   },
   "popup_boot_failed_heading": {
     "message": "Focus Lock se nije mogao pokrenuti"
@@ -82,55 +82,55 @@
     "message": "Razlog se nije mogao pročitati."
   },
   "popup_reset_runtime_button": {
-    "message": "Poništi lokalno izvođenje"
+    "message": "Resetiraj lokalnu runtimu"
   },
   "popup_reset_runtime_note": {
-    "message": "Zadržava tvoje postavke, popise i statistiku. Briše stanje trenutne sesije."
+    "message": "Čuva vaše postavke, popise i statistiku. Briše trenutno stanje sesije."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Izbriši sve i počni ispočetka"
+    "message": "Obriši sve i počni ponovno"
   },
   "popup_keep_data_button": {
     "message": "Zadrži moje podatke"
   },
   "popup_delete_all_button": {
-    "message": "Izbriši sve Focus Lock podatke"
+    "message": "Obriši sve podatke Focus Locka"
   },
   "popup_setup_status_unavailable": {
-    "message": "Stanje postavljanja nije dostupno. Ponovno učitaj Focus Lock da pokušaš opet."
+    "message": "Status postavljanja nije dostupan. Ponovno učitajte Focus Lock kako biste pokušali ponovno."
   },
   "popup_snapshot_unavailable": {
-    "message": "Stanje fokusa nije dostupno"
+    "message": "Status fokusa nije dostupan"
   },
   "popup_action_in_progress": {
-    "message": "Radnja je u tijeku"
+    "message": "Radnja u tijeku"
   },
   "popup_active_site_checking": {
     "message": "Provjera aktivne web-stranice"
   },
   "popup_active_site_unsupported": {
-    "message": "Otvori običnu web-stranicu da je otključaš"
+    "message": "Otvorite regularnu web-stranicu kako biste je otključali"
   },
   "popup_active_site_unknown": {
-    "message": "Aktivna web-stranica nije prepoznata"
+    "message": "Nije moguće identificirati aktivnu web-stranicu"
   },
   "popup_active_site_error": {
-    "message": "Aktivna web-stranica nije prepoznata."
+    "message": "Nije moguće identificirati aktivnu web-stranicu."
   },
   "popup_resume_now": {
-    "message": "Nastavi odmah"
+    "message": "Nastavi sada"
   },
   "popup_start_next_focus_early": {
-    "message": "Pokreni sljedeći fokus ranije"
+    "message": "Počni sljedeći fokus ranije"
   },
   "popup_unlock_this_site": {
     "message": "Otključaj ovu web-stranicu"
   },
   "popup_unlock_all_sites": {
-    "message": "Otključaj sve web-stranice"
+    "message": "Otključaj sve web-mjesta"
   },
   "popup_spend_cost": {
-    "message": "$ACCESS$ pristupa, $CREDIT$ kredita",
+    "message": "$ACCESS$ pristup, $CREDIT$ bodovi",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -143,7 +143,7 @@
     }
   },
   "popup_spend_cost_host": {
-    "message": "$ACCESS$ pristupa, $CREDIT$ kredita - $HOST$",
+    "message": "$ACCESS$ pristup, $CREDIT$ bodovi - $HOST$",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -160,16 +160,16 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Odaberi radnu karticu"
+    "message": "Odaberi radni tabulator"
   },
   "popup_change_work_tab_button": {
-    "message": "Promijeni radnu karticu"
+    "message": "Promijeni radni tabulator"
   },
   "popup_session_actions_summary": {
     "message": "Radnje sesije"
   },
   "popup_site_access_credit": {
-    "message": "$CREDIT$ kredita za pristup",
+    "message": "$CREDIT$ bodovi pristupa web-mjestima",
     "placeholders": {
       "CREDIT": {
         "content": "$1",
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Dodaj dopuštenu domenu"
+    "message": "Dodaj dozvoljenu domenu"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Dodaj dopuštenu domenu"
+    "message": "Dodaj dozvoljenu domenu"
   },
   "popup_add_button": {
     "message": "Dodaj"
   },
   "popup_draft_allowed_only": {
-    "message": "Samo $COUNT$ pravila dopuštenih web-stranica. Ostale su blokirane.",
+    "message": "Samo $COUNT$ dozvoljenih web-mjesta. Ostale web-stranice su blokirane.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -212,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Čvrsto zaključavanje. Nema ranog kraja."
+    "message": "Teško zaključavanje. Nije moguće završiti ranije."
   },
   "popup_draft_stop_flexible": {
-    "message": "Može se završiti bilo kada."
+    "message": "Može završiti bilo kad."
   },
   "popup_draft_stop_friction": {
-    "message": "Završi nakon čekanja od $SECONDS$ s.",
+    "message": "Završi nakon čekanja od $SECONDS$s.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -227,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "Završi nakon čekanja od $SECONDS$ s i potvrdne rečenice.",
+    "message": "Završi nakon čekanja od $SECONDS$s i potvrde fraze.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -239,25 +239,25 @@
     "message": "Trajanje sesije"
   },
   "popup_custom_minutes_label": {
-    "message": "Vlastite minute"
+    "message": "Prilagođene minute"
   },
   "popup_custom_minutes_placeholder": {
     "message": "min"
   },
   "popup_gate_force_end": {
-    "message": "Zanemari čekanje i ipak završi"
+    "message": "Ignoriraj vremenski limit i svejedno završi"
   },
   "popup_gate_keep_focusing": {
-    "message": "Nastavi s fokusom"
+    "message": "Nastavi fokusirati"
   },
   "popup_gate_phrase_label": {
     "message": "Upiši:"
   },
   "popup_gate_update_failed": {
-    "message": "Prepreka se nije mogla ažurirati. Pokušaj ponovno."
+    "message": "Nije moguće ažurirati vrata razmišljanja. Pokušajte ponovno."
   },
   "popup_gate_intention": {
-    "message": "Napisao si: $INTENTION$",
+    "message": "Rekao si: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -266,7 +266,7 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "Trenutak za odluku:"
+    "message": "Moment za odlučivanje:"
   },
   "popup_gate_wait_remaining": {
     "message": "od $TOTAL$ s",
@@ -278,13 +278,13 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Natrag na posao"
+    "message": "Nazad na rad"
   },
   "popup_destination_unavailable": {
     "message": "Odredište nije dostupno"
   },
   "popup_back_to_work_name": {
-    "message": "Natrag na posao: $DESTINATION$",
+    "message": "Nazad na rad: $DESTINATION$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -293,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "Natrag na posao: $DESTINATION$ ($HOSTNAME$)",
+    "message": "Nazad na rad: $DESTINATION$ ($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -306,13 +306,13 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Uređivanje kategorija je onemogućeno dok se popisi blokiranih web-stranica ponovno ne učitaju."
+    "message": "Uređivanje kategorije je onemogućeno dok se popisi blokiranih web-mjesta ne ponovo učitaju."
   },
   "popup_blocked_categories_heading": {
     "message": "Blokirane kategorije"
   },
   "popup_show_full_domain": {
-    "message": "Prikaži cijelu domenu: $PATTERN$",
+    "message": "Prikaži puni domen: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -321,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "Prikaži cijeli regularni izraz: $PATTERN$",
+    "message": "Prikaži regularni izraz u cijelosti: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -330,13 +330,13 @@
     }
   },
   "popup_rule_kind_domain": {
-    "message": "Domena"
+    "message": "Domen"
   },
   "popup_rule_kind_regex": {
     "message": "Regularni izraz"
   },
   "popup_category_sites_label": {
-    "message": "Web-stranice u kategoriji $CATEGORY$",
+    "message": "Web-mjesta iz $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "i još $COUNT$ web-stranica",
+    "message": "i $COUNT$ dodatna web-stranica",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "i još $COUNT$ web-stranica",
+    "message": "i $COUNT$ dodatnih web-stranica",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -381,7 +381,7 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Dopuštena izuzeća"
+    "message": "Dopušteni izuzeci"
   },
   "popup_extra_blocked_heading": {
     "message": "Dodatna blokirana pravila"
@@ -390,16 +390,16 @@
     "message": "Nema dodatnih blokiranih pravila."
   },
   "popup_allowed_heading": {
-    "message": "Dopuštene web-stranice i pravila"
+    "message": "Dozvoljena web-mjesta i pravila"
   },
   "popup_no_allowed_sites": {
-    "message": "Još nijedna web-stranica nije dopuštena."
+    "message": "Nema dozvoljenih web-mjesta."
   },
   "popup_what_will_be_blocked": {
     "message": "Što će biti blokirano"
   },
   "popup_what_will_be_allowed": {
-    "message": "Što će biti dopušteno"
+    "message": "Što će biti dozvoljeno"
   },
   "popup_categories_selected": {
     "message": "Odabrano $SELECTED$ od $TOTAL$ kategorija",
@@ -433,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ dopušteno pravilo",
+    "message": "$COUNT$ dozvoljeno pravilo",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -442,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ dopuštenih pravila",
+    "message": "$COUNT$ dozvoljenih pravila",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,13 +451,13 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Promjene dopuštenih web-stranica i pravila ovdje vrijede samo za ovu sesiju. Sve ostalo je blokirano."
+    "message": "Promjene dozvoljenih web-mjesta i pravila ovdje primjenjuju se samo na ovu sesiju. Sve ostale stranice su blokirane."
   },
   "popup_scope_blacklist": {
-    "message": "Promjene kategorija i pravila ovdje vrijede samo za ovu sesiju."
+    "message": "Promjene kategorija i pravila ovdje primjenjuju se samo na ovu sesiju."
   },
   "popup_open_settings_defaults": {
-    "message": "Otvori postavke za trajne zadane vrijednosti"
+    "message": "Otvori Postavke za trajne zadane vrijednosti"
   },
   "popup_rule_details_label": {
     "message": "Pojedinosti pravila sesije"
@@ -466,19 +466,19 @@
     "message": "Vrsta sesije"
   },
   "popup_session_type_flexible": {
-    "message": "Fleksibilno"
+    "message": "Fleksibilna"
   },
   "popup_session_type_friction": {
-    "message": "Otpor"
+    "message": "Trenje"
   },
   "popup_session_type_hard": {
-    "message": "Čvrsto zaključavanje"
+    "message": "Teško zaključavanje"
   },
   "popup_session_type_flexible_hint": {
-    "message": "Završi sesiju odmah kad god želiš."
+    "message": "Završi sesiju odmah kad god odabereš."
   },
   "popup_session_type_friction_hint": {
-    "message": "Rani prekid traži $WAIT$. Upisivanje nije potrebno.",
+    "message": "Završavanje ranije zahtijeva $WAIT$. Pisanje nije potrebno.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -487,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Rani prekid traži $WAIT$ i upisanu potvrdu.",
+    "message": "Završavanje ranije zahtijeva $WAIT$ i tipkanu potvrdu.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -496,28 +496,28 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "Sesija se ne može završiti ranije. Kredit za pristup i dalje radi."
+    "message": "Sesija ne može biti završena ranije. Bodovi pristupa web-mjestima još uvijek rade."
   },
   "popup_mode_blacklist_hint": {
-    "message": "Odabrane kategorije i dodatna pravila su blokirani. Ostale web-stranice ostaju dostupne."
+    "message": "Odabrane kategorije i dodatna pravila su blokirana. Druga web-mjesta ostaju dostupna."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Dostupne su samo navedene web-stranice. Sve ostale su blokirane."
+    "message": "Dostupna su samo navedena web-mjesta. Sve ostale web-stranice su blokirane."
   },
   "popup_invalid_duration_error": {
-    "message": "Unesi trajanje sesije veće od nula minuta."
+    "message": "Unesite trajanje sesije veće od nula minuta."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Zadane vrijednosti su se promijenile, ali trenutni popisi se nisu mogli učitati. Ponovno učitaj skočni prozor."
+    "message": "Zadane vrijednosti su se promijenile, ali trenutni popisi se nisu mogli učitati. Ponovno učitajte skočni prozor."
   },
   "popup_no_work_tab_option": {
-    "message": "Bez radne kartice (neobavezno)"
+    "message": "Nema radnog abulatora (neobavezno)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Odabrana kartica nije dostupna - odaberi drugu"
+    "message": "Odabrani tabulator nije dostupan - odaberi drugi"
   },
   "popup_cycles_label": {
-    "message": "Ciklusi: $FOCUS$ min fokusa, $SHORT_BREAK$ min pauze, $LONG_BREAK$ min duge pauze svaki $LONG_EVERY$.",
+    "message": "Ciklusi: $FOCUS$ min fokusa, $SHORT_BREAK$ min pauze, $LONG_BREAK$ min dugačka pauza svakih $LONG_EVERY$.",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -544,7 +544,7 @@
     "message": "Na čemu radiš?"
   },
   "popup_work_tab_named": {
-    "message": "Radna kartica: $TITLE$",
+    "message": "Radni tabulator: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -559,13 +559,13 @@
     "message": "Postavke sesije"
   },
   "popup_choose_work_tab_label": {
-    "message": "Odaberi radnu karticu"
+    "message": "Odaberi radni tabulator"
   },
   "popup_work_tab_select_label": {
-    "message": "Radna kartica"
+    "message": "Radni tabulator"
   },
   "popup_work_tab_current_option": {
-    "message": "$TITLE$ (trenutna)",
+    "message": "$TITLE$ (Trenutni)",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -574,13 +574,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Način blokiranja"
+    "message": "Modus blokiranja"
   },
   "popup_invalid_time_label": {
-    "message": "neispravno vrijeme"
+    "message": "nevaljano vrijeme"
   },
   "popup_start_focus_label": {
-    "message": "Pokreni fokus od $DURATION$",
+    "message": "Počni $DURATION$ fokusa",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -589,43 +589,43 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "Unesi ispravnu domenu, primjerice docs.example.com."
+    "message": "Unesite valjanu domenu kao docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Radne kartice se nisu mogle učitati. Ponovno otvori skočni prozor da pokušaš opet."
+    "message": "Nije moguće učitati radne tabulatore. Ponovno otvorite skočni prozor kako biste pokušali ponovno."
   },
   "popup_use_this_tab": {
-    "message": "Koristi ovu karticu"
+    "message": "Koristi ovaj tabulator"
   },
   "popup_current_tab_unavailable": {
-    "message": "Na ovoj kartici ne možeš raditi. Odaberi drugu otvorenu karticu."
+    "message": "Ovaj tabulator nije dostupan za rad. Odaberi drugi otvoreni tabulator."
   },
   "popup_checking_current_tab": {
-    "message": "Provjera trenutne kartice..."
+    "message": "Provjera trenutnog abulatora..."
   },
   "popup_finding_current_tab": {
-    "message": "Traženje tvoje trenutne kartice..."
+    "message": "Pronalaženje vašeg trenutnog abulatora..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Tvoja trenutna kartica se nije mogla učitati. Pokušaj ponovno."
+    "message": "Nije moguće učitati vaš trenutni tabulator. Pokušajte ponovno."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Odaberi ili zamijeni svoju radnu karticu."
+    "message": "Odaberi ili zamijeni radni tabulator."
   },
   "popup_saving_work_tab": {
-    "message": "Spremanje radne kartice..."
+    "message": "Spremanje radnog abulatora..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Radna kartica se nije mogla spremiti. Pokušaj ponovno."
+    "message": "Nije moguće spremiti radni tabulator. Pokušajte ponovno."
   },
   "popup_choose_open_tab_option": {
-    "message": "Odaberi otvorenu karticu"
+    "message": "Odaberi otvoreni tabulator"
   },
   "popup_or_choose_another_tab": {
-    "message": "Ili odaberi drugu karticu"
+    "message": "Ili odaberi drugi tabulator"
   },
   "popup_start_failed": {
-    "message": "Sesija se nije mogla pokrenuti. Pokušaj ponovno."
+    "message": "Nije moguće pokrenuti sesiju. Pokušajte ponovno."
   },
   "popup_sites_few": {
     "message": "$COUNT$ web-stranice",
@@ -637,7 +637,7 @@
     }
   },
   "popup_more_sites_few": {
-    "message": "i još $COUNT$ web-stranice",
+    "message": "i $COUNT$ dodatne web-stranice",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -655,7 +655,7 @@
     }
   },
   "popup_allowed_rules_few": {
-    "message": "$COUNT$ dopuštena pravila",
+    "message": "$COUNT$ dozvoljenja pravila",
     "placeholders": {
       "COUNT": {
         "content": "$1",

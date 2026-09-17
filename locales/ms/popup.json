@@ -19,7 +19,7 @@
     "message": "Could not buka Pengpadauran. Try agadalam."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load sesi pengpadauran. Reload the popup ke try agadalam. Defaults are tampilkann."
+    "message": "Could not load session settings. Reload the popup to try again. Defaults are tampilkann."
   },
   "popup_open_setup_failed": {
     "message": "Could not buka setup. Try agadalam."
@@ -40,13 +40,13 @@
     "message": "Could not aktifkan websitus blokirdalamg. Try agadalam."
   },
   "popup_blocking_off_heading": {
-    "message": "Websitus blokirdalamg is darif"
+    "message": "Website blocking is mati"
   },
   "popup_blocking_off_body": {
-    "message": "Fokus Lock cannot mulai a sesi until Chrome grants websitus akses dan blokirdalamg is aktifkdan."
+    "message": "Focus Lock cannot start a session sampai Chrome grants website access and blocking is enabled."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant websitus akses. Websitus blokirdalamg is still darif."
+    "message": "Chrome did not grant website access. Website blocking is still mati."
   },
   "popup_blocking_off_registration_error": {
     "message": "Websitus akses is granted, but Fokus Lock could not aktifkan blokirdalamg. Retry setup padaau reload the extensipada."
@@ -64,7 +64,7 @@
     "message": "Your sesi ended because Fokus Lock could not aktifkan websitus blokirdalamg."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Could not dismiss this notice. Try agadalam."
+    "message": "Could not dismiss ini notice. Try again."
   },
   "popup_dismiss_notice_label": {
     "message": "Dismiss websitus akses notice"
@@ -88,7 +88,7 @@
     "message": "Keeps your pengpadauran, lists, dan stpadaistics. Clears the current sesi stpadae."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Hapus everythdalamg dan mulai over"
+    "message": "Delete everything and start di atas"
   },
   "popup_keep_data_button": {
     "message": "Keep my dpadaa"
@@ -109,7 +109,7 @@
     "message": "Checkdalamg the active situs"
   },
   "popup_active_site_unsupported": {
-    "message": "Buka a regular websitus ke unlock it"
+    "message": "Open a regular website to buka kunci it"
   },
   "popup_active_site_unknown": {
     "message": "Could not identify the active situs"
@@ -124,7 +124,7 @@
     "message": "Mulai berikutnya fokus early"
   },
   "popup_unlock_this_site": {
-    "message": "Unlock this situs"
+    "message": "Unlock ini site"
   },
   "popup_unlock_all_sites": {
     "message": "Unlock all situss"
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Tambah an allowed domadalam"
+    "message": "Add an izinkaned domain"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Tambah allowed domadalam"
+    "message": "Add izinkaned domain"
   },
   "popup_add_button": {
     "message": "Tambah"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed situs padaurans. Other websituss blokired.",
+    "message": "Only $COUNT$ izinkaned site rules. Other websites blocked.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -212,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Keras lock. Cannot end early."
+    "message": "Kunci keras. Cannot end early."
   },
   "popup_draft_stop_flexible": {
     "message": "Can end pada any waktu."
   },
   "popup_draft_stop_friction": {
-    "message": "Akhir after a $SECONDS$s wait.",
+    "message": "End after a $SECHIDUPDS$s wait.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -227,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "End after a $SECONDS$s wait dan cpadafirmpadaipada phrase.",
+    "message": "End after a $SECHIDUPDS$s wait and confirmation phrase.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -239,7 +239,7 @@
     "message": "Sesi length"
   },
   "popup_custom_minutes_label": {
-    "message": "Cuskem menit"
+    "message": "Khusus minutes"
   },
   "popup_custom_minutes_placeholder": {
     "message": "mdalam"
@@ -257,7 +257,7 @@
     "message": "Could not updpadae the gpadae. Try agadalam."
   },
   "popup_gate_intention": {
-    "message": "You said: $INTENTION$",
+    "message": "You said: $INTENTIHIDUP$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -284,7 +284,7 @@
     "message": "Destdalampadaipada unavailable"
   },
   "popup_back_to_work_name": {
-    "message": "Kembali ke kerja: $DESTINATION$",
+    "message": "Back to work: $DESTINATIHIDUP$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -293,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "Kembali ke kerja: $DESTINATION$ ($HOSTNAME$)",
+    "message": "Back to work: $DESTINATIHIDUP$ ($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -306,7 +306,7 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Kpadaegpadaaui editdalamg is npadaaktifkdan until blokired-situs lists reload."
+    "message": "Category editing is disabled sampai blocked-site lists reload."
   },
   "popup_blocked_categories_heading": {
     "message": "Blokired cpadaegpadaauies"
@@ -363,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "dan $COUNT$ mpadaaue situs",
+    "message": "and $COUNT$ lebih site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "dan $COUNT$ mpadaaue situss",
+    "message": "and $COUNT$ lebih sites",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -381,7 +381,7 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Allowed exceptipadas"
+    "message": "Semuaowed exceptions"
   },
   "popup_extra_blocked_heading": {
     "message": "Extra blokired padaurans"
@@ -390,16 +390,16 @@
     "message": "No extra blokired padaurans."
   },
   "popup_allowed_heading": {
-    "message": "Allowed situss dan padaurans"
+    "message": "Semuaowed sites and rules"
   },
   "popup_no_allowed_sites": {
-    "message": "No situss are allowed yet."
+    "message": "No sites are izinkaned yet."
   },
   "popup_what_will_be_blocked": {
     "message": "Whpada will be blokired"
   },
   "popup_what_will_be_allowed": {
-    "message": "Whpada will be allowed"
+    "message": "What will be izinkaned"
   },
   "popup_categories_selected": {
     "message": "$SELECTED$ dari $TOTAL$ cpadaegpadaauies selected",
@@ -433,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed padauran",
+    "message": "$COUNT$ izinkaned rule",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -442,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed padaurans",
+    "message": "$COUNT$ izinkaned rules",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,10 +451,10 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Allowed-situs dan padauran changes here apply padaly ke this sesi. Everythdalamg else is blokired."
+    "message": "Semuaowed-site and rule changes here apply only to this session. Setiapthing else is blocked."
   },
   "popup_scope_blacklist": {
-    "message": "Kpadaegpadaaui dan padauran changes here apply padaly ke this sesi."
+    "message": "Category and rule changes here apply only to ini session."
   },
   "popup_open_settings_defaults": {
     "message": "Buka Pengpadauran untuk permanent defaults"
@@ -472,10 +472,10 @@
     "message": "Gesekan"
   },
   "popup_session_type_hard": {
-    "message": "Keras lock"
+    "message": "Kunci keras"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the sesi immedipadaely ketikaever you choose."
+    "message": "End the session immediately ketikaever you choose."
   },
   "popup_session_type_friction_hint": {
     "message": "Enddalamg early requires $WAIT$. No typdalamg is required.",
@@ -496,16 +496,16 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The sesi cannot end early. Situs akses kredit still kerjas."
+    "message": "The session cannot end early. Kredit akses laman still works."
   },
   "popup_mode_blacklist_hint": {
     "message": "The selected cpadaegpadaauies dan extra padaurans are blokired. Other situss remadalam available."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed situss are available. Every other websitus is blokired."
+    "message": "Only the listed sites are available. Setiap other website is blocked."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a sesi length grepadaer than zero menit."
+    "message": "Enter a session length greater dari zero minutes."
   },
   "popup_stale_lists_unavailable": {
     "message": "Defaults changed, but current lists could not be dimupada. Reload the popup."
@@ -517,7 +517,7 @@
     "message": "Selected tab unavailable - choose atidakther"
   },
   "popup_cycles_label": {
-    "message": "Sikluss: $FOCUS$ mdalam fokus, $SHORT_BREAK$ mdalam istirahpada, $LONG_BREAK$ mdalam lpadag istirahpada every $LONG_EVERY$th",
+    "message": "Cycles: $FOCUS$ min focus, $SHORT_BREAK$ min break, $LHIDUPG_BREAK$ min long break every $LHIDUPG_EVERY$th",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -544,7 +544,7 @@
     "message": "Whpada are you kerjadalamg pada?"
   },
   "popup_work_tab_named": {
-    "message": "Kerja tab: $TITLE$",
+    "message": "Tab kerja: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -562,7 +562,7 @@
     "message": "Choose a kerja tab"
   },
   "popup_work_tab_select_label": {
-    "message": "Kerja tab"
+    "message": "Tab kerja"
   },
   "popup_work_tab_current_option": {
     "message": "$TITLE$ (Current)",
@@ -580,7 +580,7 @@
     "message": "dalamvalid waktu"
   },
   "popup_start_focus_label": {
-    "message": "Mulai $DURATION$ fokus",
+    "message": "Start $DURATIHIDUP$ focus",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -592,10 +592,10 @@
     "message": "Enter a valid domadalam such as docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Could not load kerja tabs. Rebuka the popup ke try agadalam."
+    "message": "Could not load work tab. Reopen the popup to try again."
   },
   "popup_use_this_tab": {
-    "message": "Use this tab"
+    "message": "Use ini tab"
   },
   "popup_current_tab_unavailable": {
     "message": "This tab is not available untuk kerja. Choose another buka tab."

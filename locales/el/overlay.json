@@ -22,10 +22,10 @@
     "message": "Έλεγχος διαθέσιμων καρτελών εργασίας..."
   },
   "overlay_target_pick_tab": {
-    "message": "Διάλεξε μια ανοιχτή καρτέλα για να συνεχίσεις τη δουλειά σου."
+    "message": "Pick an άνοιγμα tab to continue your task."
   },
   "overlay_target_session_unavailable": {
-    "message": "Η συνεδρία εστίασής σου δεν είναι διαθέσιμη. Δοκίμασε ξανά ή φόρτωσε ξανά αυτή τη σελίδα."
+    "message": "Your focus συνεδρία is not available. Try again, or reload this page."
   },
   "overlay_target_lookup_failed": {
     "message": "Η καρτέλα εργασίας σου δεν φορτώθηκε. Δοκίμασε ξανά ή φόρτωσε ξανά αυτή τη σελίδα."
@@ -43,7 +43,7 @@
     "message": "Διάλεξε καρτέλα εργασίας"
   },
   "overlay_picker_cancel": {
-    "message": "Άκυρο"
+    "message": "Ακύρωση"
   },
   "overlay_picker_search_label": {
     "message": "Αναζήτηση καρτελών εργασίας"
@@ -70,7 +70,7 @@
     "message": "Αποθήκευση καρτέλας εργασίας..."
   },
   "overlay_picker_no_tabs": {
-    "message": "Δεν υπάρχουν διαθέσιμες καρτέλες εργασίας. Άνοιξε έναν ιστότοπο που επιτρέπει αυτή η συνεδρία και ανανέωσε τις καρτέλες."
+    "message": "No available work tabs. Άνοιγμα a site allowed by this συνεδρία, then refresh tabs."
   },
   "overlay_picker_no_matches": {
     "message": "Καμία καρτέλα δεν ταιριάζει. Δοκίμασε άλλη αναζήτηση ή καθάρισε την αναζήτηση."

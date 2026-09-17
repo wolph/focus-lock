@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "In $MODE$, every situs is unavailable except your allow list.",
+    "message": "In $MODE$, every site is unavailable except your izinkan list.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -124,16 +124,16 @@
     "message": "Aktifkan websitus blokirdalamg"
   },
   "onboarding_access_local_matching": {
-    "message": "Fokus Lock checks page tambahresses locally so it can mpadach your selected cpadaegpadaauies dan situss. It uses websitus akses ke tampilkan its blokirdalamg screen dan restpadaaue affected pages ketika your sesi ends."
+    "message": "Focus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to tampilkan its blocking screen and restore affected pages ketika your session ends."
   },
   "onboarding_access_capability_intro": {
-    "message": "Cpadaegpadaauies dan cuskem domadalams can dalamclude any websitus. Chrome will thereuntuke request this capability:"
+    "message": "Categories and custom domains can include any website. Chrome will therefore request ini capability:"
   },
   "onboarding_access_capability": {
     "message": "Read dan change all your dpadaa pada all websituss"
   },
   "onboarding_access_scope_note": {
-    "message": "Fokus Lock uses thpada akses padaly while applydalamg your blokirdalamg padaurans."
+    "message": "Focus Lock uses itu access only while applying your blocking rules."
   },
   "onboarding_access_denied": {
     "message": "Chrome did not grant websitus akses. You can retry."
@@ -157,7 +157,7 @@
     "message": "The approved dpadaa below will use Chrome Sync after you fdalamish setup."
   },
   "onboarding_sync_disabled_note": {
-    "message": "All Fokus Lock dpadaa stays dalam this Chrome prdariile."
+    "message": "Semua Focus Lock data stays in this Chrome profile."
   },
   "onboarding_sync_synced_title": {
     "message": "Sinkronkaned"

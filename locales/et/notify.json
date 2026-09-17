@@ -1,1 +1,134 @@
-{}
+{
+  "notify_session_complete_title": {
+    "message": "Fookussessioon lõppenud"
+  },
+  "notify_session_complete_body": {
+    "message": "Sinu fookussessioon lõppes."
+  },
+  "notify_schedule_window_body": {
+    "message": "Lukustatud kuni $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Fookuse ajakava ei saanud alata"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Veebisaitide blokeerimine ei ole lubatud. Lõpeta seadistamine või anna veebisaidi juurdepääs, seejärel proovi uuesti."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Seadistamine lõpetati teises sakis."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Seadistus muutus teises sakis. Uusimad valikud laaditi uuesti."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Seadistus muutus teises sakis. Värskenda seadistust enne lõpetamist."
+  },
+  "notify_setup_not_complete": {
+    "message": "Seadistamine pole lõpetatud."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Seadistamine pole veel lõpetamiseks valmis."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Seadistuse salvestusvalik muutus. Värskenda seadistust enne lõpetamist."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Seadistuse salvestustoiming ebaõnnestus."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Seadistustoiming ebaõnnestus."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock ei suutnud veebisaidi juurdepääsu kontrollida. Proovi seadistust uuesti või laadi laiendus uuesti."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Veebisaidi juurdepääs on antud, kuid Focus Lock ei suutnud blokeerimist lubada. Proovi seadistust uuesti või laadi laiendus uuesti."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Veebisaidi juurdepääs pole saadaval ja Focus Lock ei suutnud blokeerimise koristamist lõpetada. Proovi seadistust uuesti või laadi laiendus uuesti."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock sai vastuolulise veebisaidi juurdepääsu oleku. Proovi seadistust uuesti või laadi laiendus uuesti."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock ei lõpetanud käivitumist: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "tundmatu viga"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock töötab, pole midagi lähtestada"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock ei saa lähtestada käitusaega, mis on veel seotud reeglistiku loomisega"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Andmete kustutamise uuesti proovimine pole saadaval."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Keela Sync enne sünkroonitud andmete kustutamist"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock lõpetab veel varasemat muudatust. Proovi hetke pärast uuesti."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Avatud väravat ei õnnestunud sulgeda. Proovi uuesti."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Töösakk pole saadaval."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Seaded ületavad Chrome'i sünkroonimise 8 KB piirmäära. Eemalda ajakava kirjeid või lühenda kavatsusi, seejärel proovi uuesti."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Nimekirjad ületavad Chrome'i sünkroonimise 8 KB piirmäära. Eemalda kohandatud või lubamisnimekirja reegleid, seejärel proovi uuesti."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "range seanss käib: blokeeritud saitide eemaldamine vabaneb, kui see lõpeb"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "range seanss käib: uued lubamisnimekirja kirjed vabanevad, kui see lõpeb"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "range seanss käib: kategooriate väljalülitamine vabaneb, kui see lõpeb"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "range seanss käib: uued erandid vabanevad, kui see lõpeb"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "range seanss käib: vaikimisi ranguse nõrgendamine ootab, kuni see lõpeb"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "range seanss käib: järelemõtlemisviivituse lühendamine nõrgendab väravat"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "range seanss käib: tipitava lause eemaldamine nõrgendab väravat"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "range seanss käib: pausikrediidi teenimismäära tõstmine rahastab rohkem pääsemisi"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "range seanss käib: pausikrediidi ülempiiri tõstmine rahastab rohkem pääsemisi"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "range seanss käib: pauside lühendamine vähendab nende hinda"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "range seanss käib: avamiste lühendamine vähendab nende hinda"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "range seanss käib: selle ajakava kirjet ei saa nõrgendada enne, kui see lõpeb"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "notify_session_complete_title": {
-    "message": "Mtazamo sessikwenye complete"
+    "message": "Kikao cha mtazamo complete"
   },
   "notify_session_complete_body": {
     "message": "Your focus sessikwenye fkatikaished."
   },
   "notify_schedule_window_body": {
-    "message": "Locked until $END$.",
+    "message": "Locked hadi $END$.",
     "placeholders": {
       "END": {
         "content": "$1",
@@ -21,13 +21,13 @@
     "message": "Website blockkatikag is not enabled. Fkatikaish setup au grant website access, then try agakatika."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Setup was completed katika another tab."
+    "message": "Setup was completed in another kichupo."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Setup changed katika another tab. The latest choices were reloaded."
+    "message": "Setup changed in another kichupo. The latest choices were reloaded."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Setup changed katika another tab. Reload setup bekwae fkatikaishkatikag."
+    "message": "Setup changed in another kichupo. Reload setup before finishing."
   },
   "notify_setup_not_complete": {
     "message": "Setijuu is hapanat kamili."
@@ -57,7 +57,7 @@
     "message": "Mtazamo Lock received an katikackwenyesistent website access state. Retry setup au reload the extensikwenye."
   },
   "notify_boot_not_finished": {
-    "message": "Mtazamo Lock did not fkatikaish startkatikag: $REASON$",
+    "message": "Focus Lock did not finish starting: $REASKWINYO$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -72,7 +72,7 @@
     "message": "Mtazamo Lock is runnkatikag, nothkatikag kwa reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Mtazamo Lock cannot reset a runtime that is still committed katikaside a policy generatikwenye"
+    "message": "Focus Lock cannot reset a runtime hiyo is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
     "message": "Data futa jaribu tena is hapanat available."
@@ -87,7 +87,7 @@
     "message": "The open gate could not be closed. Try agakatika."
   },
   "notify_work_tab_unavailable": {
-    "message": "The wauk tab is unavailable."
+    "message": "The work kichupo is unavailable."
   },
   "notify_settings_sync_limit": {
     "message": "Mipangilio exceed the 8 KB Chrome Sync limit. Kukwenyedoa schedule entries au shauten katikatentikwenyes, then try agakatika."
@@ -96,19 +96,19 @@
     "message": "Lists exceed the 8 KB Chrome Sync limit. Kukwenyedoa cuskwam au whitelist rules, then try agakatika."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "a hard sessikwenye is runnkatikag: removkatikag blocked sites unlocks wakati it ends"
+    "message": "a hard session is running: removing blocked sites funguas wakati it ends"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a hard sessikwenye is runnkatikag: new whitelist entries unlock wakati it ends"
+    "message": "a hard session is running: new whitelist entries fungua wakati it ends"
   },
   "notify_guard_lists_disable_category": {
-    "message": "a hard sessikwenye is runnkatikag: disablkatikag categauies unlocks wakati it ends"
+    "message": "a hard session is running: disabling categories funguas wakati it ends"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "a hard sessikwenye is runnkatikag: new exclusikwenyes unlock wakati it ends"
+    "message": "a hard session is running: new exclusions fungua wakati it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a hard sessikwenye is runnkatikag: weakenkatikag the default strictness waits until it ends"
+    "message": "a hard session is running: weakening the default strictness waits hadi it ends"
   },
   "notify_guard_settings_shorten_delay": {
     "message": "a hard sessikwenye is runnkatikag: shautenkatikag the deliberatikwenye delay weakens the gate"
@@ -117,18 +117,18 @@
     "message": "a hard sessikwenye is runnkatikag: droppkatikag the typed phrase weakens the gate"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "a hard sessikwenye is runnkatikag: raiskatikag the pause earn rate funds maue escapes"
+    "message": "a hard session is running: raising the pause earn rate funds zaidi escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "a hard sessikwenye is runnkatikag: raiskatikag the pause cap funds maue escapes"
+    "message": "a hard session is running: raising the pause cap funds zaidi escapes"
   },
   "notify_guard_settings_shorten_pause": {
     "message": "a hard sessikwenye is runnkatikag: shautenkatikag pauses lowers their cost"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "a hard sessikwenye is runnkatikag: shautenkatikag unlocks lowers their cost"
+    "message": "a hard session is running: shortening funguas lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a hard sessikwenye is runnkatikag: its schedule entry cannot be weakened until it ends"
+    "message": "a hard session is running: its schedule entry cannot be weakened hadi it ends"
   }
 }

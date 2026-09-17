@@ -6,7 +6,7 @@
     "message": "Locked - Mtazamo Lock"
   },
   "overlay_return_label": {
-    "message": "$ACTION$: $DESTINATION$",
+    "message": "$ACTIKWINYO$: $DESTINATIKWINYO$",
     "placeholders": {
       "ACTION": {
         "content": "$1",
@@ -18,20 +18,37 @@
       }
     }
   },
+  "overlay_return_label_host": {
+    "message": "$ACTIKWINYO$: $DESTINATIKWINYO$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
   "overlay_target_checking": {
-    "message": "Checkkatikag available wauk tabs..."
+    "message": "Checking available work kichupos..."
   },
   "overlay_target_pick_tab": {
-    "message": "Pick an open tab kwa ckwenyetkatikaue your task."
+    "message": "Pick an open kichupo to continue your task."
   },
   "overlay_target_session_unavailable": {
-    "message": "Your focus sessikwenye is not available. Try agakatika, au reload this page."
+    "message": "Your focus session is not available. Try again, or reload hii page."
   },
   "overlay_target_lookup_failed": {
-    "message": "Could not load your wauk tab. Try agakatika, au reload this page."
+    "message": "Could not load your work tab. Try again, or reload hii page."
   },
   "overlay_target_reconnect": {
-    "message": "Reload this page kwa reckwenyenect kwa Mtazamo Lock."
+    "message": "Reload hii page to reconnect to Focus Lock."
   },
   "overlay_target_page_changed": {
     "message": "The requestkatikag page has changed. Reload the page."
@@ -40,13 +57,13 @@
     "message": "Could not reach Mtazamo Lock. Try agakatika."
   },
   "overlay_picker_heading": {
-    "message": "Choose a wauk tab"
+    "message": "Choose a work kichupo"
   },
   "overlay_picker_cancel": {
     "message": "Kusitisha"
   },
   "overlay_picker_search_label": {
-    "message": "Search wauk tabs"
+    "message": "Search work kichupos"
   },
   "overlay_picker_search_placeholder": {
     "message": "Search by title au website"
@@ -55,31 +72,31 @@
     "message": "Futa search"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "Onesha tena tabs"
+    "message": "Refresh kichupos"
   },
   "overlay_picker_available_tabs": {
-    "message": "Available wauk tabs"
+    "message": "Available work kichupos"
   },
   "overlay_picker_finding": {
-    "message": "Fkatikadkatikag available tabs..."
+    "message": "Finding available kichupos..."
   },
   "overlay_picker_searching": {
-    "message": "Searchkatikag wauk tabs..."
+    "message": "Searching work kichupos..."
   },
   "overlay_picker_saving": {
-    "message": "Savkatikag wauk tab..."
+    "message": "Saving work kichupo..."
   },
   "overlay_picker_no_tabs": {
-    "message": "No available wauk tabs. Fungua a site allowed by this sessikwenye, then refresh tabs."
+    "message": "No available work tabs. Open a site ruhusued by hii session, then refresh tabs."
   },
   "overlay_picker_no_matches": {
-    "message": "No matchkatikag tabs. Try another search au clear the search."
+    "message": "No matching kichupos. Try another search or clear the search."
   },
   "overlay_picker_load_failed": {
-    "message": "Could not load wauk tabs. Try agakatika."
+    "message": "Could not load work kichupos. Try again."
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ wa $COUNT$ tab",
+    "message": "$MATCHES$ of $COUNT$ kichupo",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -92,7 +109,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ wa $COUNT$ tabs",
+    "message": "$MATCHES$ of $COUNT$ kichupos",
     "placeholders": {
       "COUNT": {
         "content": "$1",

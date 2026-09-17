@@ -1,9 +1,9 @@
 {
   "notify_session_complete_title": {
-    "message": "Συνεδρία εστίασης ολοκληρώθηκε"
+    "message": "Focus συνεδρία complete"
   },
   "notify_session_complete_body": {
-    "message": "Η συνεδρία εστίασής σου τελείωσε."
+    "message": "Your focus συνεδρία finished."
   },
   "notify_schedule_window_body": {
     "message": "Κλειδωμένο μέχρι τις $END$.",
@@ -15,7 +15,7 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Ο προγραμματισμός εστίασης δεν ξεκίνησε"
+    "message": "Focus schedule could not έναρξη"
   },
   "notify_schedule_unavailable_body": {
     "message": "Ο αποκλεισμός ιστότοπων δεν είναι ενεργός. Ολοκλήρωσε τη ρύθμιση ή δώσε πρόσβαση στους ιστότοπους και δοκίμασε ξανά."
@@ -48,7 +48,7 @@
     "message": "Το Focus Lock δεν μπόρεσε να ελέγξει την πρόσβαση στους ιστότοπους. Επανάλαβε τη ρύθμιση ή φόρτωσε ξανά την επέκταση."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Η πρόσβαση στους ιστότοπους δόθηκε, αλλά το Focus Lock δεν μπόρεσε να ενεργοποιήσει τον αποκλεισμό. Επανάλαβε τη ρύθμιση ή φόρτωσε ξανά την επέκταση."
+    "message": "Website access is granted, but Focus Lock could not ενεργοποίηση blocking. Retry setup or reload the extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
     "message": "Η πρόσβαση στους ιστότοπους δεν είναι διαθέσιμη και το Focus Lock δεν μπόρεσε να ολοκληρώσει την άρση του αποκλεισμού. Επανάλαβε τη ρύθμιση ή φόρτωσε ξανά την επέκταση."
@@ -69,66 +69,66 @@
     "message": "άγνωστο σφάλμα"
   },
   "notify_nothing_to_reset": {
-    "message": "το Focus Lock λειτουργεί κανονικά, δεν υπάρχει τίποτα να επαναφερθεί"
+    "message": "Focus Lock is running, nothing to επαναφορά"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "το Focus Lock δεν μπορεί να επαναφέρει κατάσταση που βρίσκεται ακόμη μέσα σε μια γενιά ρυθμίσεων"
+    "message": "Focus Lock cannot επαναφορά a runtime that is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
     "message": "Δεν υπάρχει διαγραφή δεδομένων για επανάληψη."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Απενεργοποίησε τον συγχρονισμό πριν διαγράψεις τα συγχρονισμένα δεδομένα"
+    "message": "Απενεργοποίηση Sync before deleting synced data"
   },
   "notify_work_gate_busy": {
     "message": "Το Focus Lock ολοκληρώνει ακόμη μια προηγούμενη αλλαγή. Δοκίμασε ξανά σε λίγο."
   },
   "notify_work_gate_stuck": {
-    "message": "Η ανοιχτή επιβεβαίωση δεν μπόρεσε να κλείσει. Δοκίμασε ξανά."
+    "message": "The άνοιγμα gate could not be closed. Try again."
   },
   "notify_work_tab_unavailable": {
     "message": "Η καρτέλα εργασίας δεν είναι διαθέσιμη."
   },
   "notify_settings_sync_limit": {
-    "message": "Οι ρυθμίσεις ξεπερνούν το όριο των 8 KB του Chrome Sync. Αφαίρεσε καταχωρίσεις προγράμματος ή συντόμευσε τις προθέσεις και δοκίμασε ξανά."
+    "message": "Ρυθμίσεις exceed the 8 KB Chrome Sync limit. Αφαίρεση schedule entries or shorten intentions, then try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Οι λίστες ξεπερνούν το όριο των 8 KB του Chrome Sync. Αφαίρεσε προσαρμοσμένους ή επιτρεπόμενους κανόνες και δοκίμασε ξανά."
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Αφαίρεση custom or whitelist rules, then try again."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι ιστότοποι που αφαιρείς ξεκλειδώνουν όταν τελειώσει"
+    "message": "a hard συνεδρία is running: removing αποκλείστηκε sites unlocks when it ends"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι νέες επιτρεπόμενες καταχωρίσεις ισχύουν όταν τελειώσει"
+    "message": "a hard συνεδρία is running: new whitelist entries unlock when it ends"
   },
   "notify_guard_lists_disable_category": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι κατηγορίες που απενεργοποιείς ξεκλειδώνουν όταν τελειώσει"
+    "message": "a hard συνεδρία is running: disabling categories unlocks when it ends"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι νέες εξαιρέσεις ισχύουν όταν τελειώσει"
+    "message": "a hard συνεδρία is running: new exclusions unlock when it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: η χαλάρωση της προεπιλεγμένης αυστηρότητας περιμένει το τέλος της"
+    "message": "a hard συνεδρία is running: weakening the default strictness waits until it ends"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: η συντόμευση της αναμονής αποδυναμώνει την επιβεβαίωση"
+    "message": "a hard συνεδρία is running: shortening the deliberation delay weakens the gate"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: η κατάργηση της φράσης που πληκτρολογείς αποδυναμώνει την επιβεβαίωση"
+    "message": "a hard συνεδρία is running: dropping the typed phrase weakens the gate"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: ο ταχύτερος ρυθμός συγκέντρωσης χρηματοδοτεί περισσότερες διαφυγές"
+    "message": "a hard συνεδρία is running: raising the pause earn rate funds more escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: το υψηλότερο όριο πίστωσης χρηματοδοτεί περισσότερες διαφυγές"
+    "message": "a hard συνεδρία is running: raising the pause cap funds more escapes"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι πιο σύντομες παύσεις κοστίζουν λιγότερο"
+    "message": "a hard συνεδρία is running: shortening pauses lowers their cost"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: τα πιο σύντομα ξεκλειδώματα κοστίζουν λιγότερο"
+    "message": "a hard συνεδρία is running: shortening unlocks lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "τρέχει συνεδρία πλήρους κλειδώματος: η καταχώριση προγράμματός της δεν χαλαρώνει πριν τελειώσει"
+    "message": "a hard συνεδρία is running: its schedule entry cannot be weakened until it ends"
   }
 }

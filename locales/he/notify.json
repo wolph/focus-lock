@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "מפגש הריכוז הסתיים"
+  },
+  "notify_session_complete_body": {
+    "message": "מפגש הריכוז שלך הסתיים."
+  },
+  "notify_schedule_window_body": {
+    "message": "נעול עד $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "לא ניתן היה להתחיל את לוח הזמנים לריכוז"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "חסימת אתרים אינה מופעלת. השלם את ההגדרה או אשר גישה לאתרים, ואז נסה שוב."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "ההגדרה הושלמה בלשונית אחרת."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "ההגדרה השתנתה בלשונית אחרת. הבחירות העדכניות נטענו מחדש."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "ההגדרה השתנתה בלשונית אחרת. טען מחדש את ההגדרה לפני הסיום."
+  },
+  "notify_setup_not_complete": {
+    "message": "ההגדרה אינה שלמה."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "ההגדרה אינה מוכנה לסיום."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "בחירת האחסון של ההגדרה השתנתה. טען מחדש את ההגדרה לפני הסיום."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "פעולת האחסון של ההגדרה הראשונית נכשלה."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "פעולת ההגדרה הראשונית נכשלה."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock לא הצליח לבדוק את הגישה לאתרים. נסה שוב את ההגדרה או טען מחדש את התוסף."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "הגישה לאתרים אושרה, אך Focus Lock לא הצליח להפעיל חסימה. נסה שוב את ההגדרה או טען מחדש את התוסף."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "הגישה לאתרים אינה זמינה, ו-Focus Lock לא הצליח לסיים את ניקוי החסימה. נסה שוב את ההגדרה או טען מחדש את התוסף."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock קיבל מצב גישה לאתרים שאינו עקבי. נסה שוב את ההגדרה או טען מחדש את התוסף."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock לא סיים לעלות: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "שגיאה לא ידועה"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock פועל כרגיל, אין מה לאפס"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock אינו יכול לאפס מצב ריצה ששמור בתוך דור של הגדרות"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "אין אפשרות לנסות שוב את מחיקת הנתונים."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "כבה את הסנכרון לפני מחיקת נתונים מסונכרנים"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock עדיין מסיים שינוי קודם. נסה שוב בעוד רגע."
+  },
+  "notify_work_gate_stuck": {
+    "message": "לא ניתן היה לסגור את שער השהייה הפתוח. נסה שוב."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "לשונית העבודה אינה זמינה."
+  },
+  "notify_settings_sync_limit": {
+    "message": "ההגדרות חורגות ממגבלת 8 קילובייט של Chrome Sync. הסר רשומות מלוח הזמנים או קצר כוונות, ואז נסה שוב."
+  },
+  "notify_lists_sync_limit": {
+    "message": "הרשימות חורגות ממגבלת 8 קילובייט של Chrome Sync. הסר כללים מותאמים או כללי רשימה לבנה, ואז נסה שוב."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "מפגש קשיח פועל: אפשר יהיה להסיר אתרים חסומים בסיומו"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "מפגש קשיח פועל: רשומות חדשות ברשימה הלבנה ייכנסו לתוקף בסיומו"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "מפגש קשיח פועל: אפשר יהיה לכבות קטגוריות בסיומו"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "מפגש קשיח פועל: חריגים חדשים ייכנסו לתוקף בסיומו"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "מפגש קשיח פועל: החלשת רמת הקשיחות המוגדרת ממתינה לסיומו"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "מפגש קשיח פועל: קיצור זמן השהייה מחליש את השער"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "מפגש קשיח פועל: ביטול המשפט שיש להקליד מחליש את השער"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "מפגש קשיח פועל: העלאת קצב הצבירה מממנת יותר בריחות"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "מפגש קשיח פועל: העלאת תקרת הקרדיט מממנת יותר בריחות"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "מפגש קשיח פועל: קיצור ההשהיות מוזיל את עלותן"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "מפגש קשיח פועל: קיצור שחרורי הנעילה מוזיל את עלותם"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "מפגש קשיח פועל: אין אפשרות להחליש את רשומת לוח הזמנים שלו עד לסיומו"
+  }
+}

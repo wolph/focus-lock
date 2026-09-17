@@ -1,78 +1,96 @@
 {
   "options_page_title": {
-    "message": "Focus Lock options"
+    "message": "Επιλογές Focus Lock"
   },
   "options_heading": {
-    "message": "Focus Lock settings"
+    "message": "Ρυθμίσεις Focus Lock"
   },
   "options_loading_settings": {
-    "message": "Loading settings"
+    "message": "Φόρτωση ρυθμίσεων"
   },
   "options_privacy_loading": {
-    "message": "Loading privacy settings"
+    "message": "Φόρτωση ρυθμίσεων απορρήτου"
+  },
+  "options_save_failed": {
+    "message": "Η αποθήκευση απέτυχε. Δοκίμασε ξανά."
   },
   "options_blocking_heading": {
     "message": "Αποκλεισμός"
   },
+  "options_blocking_help": {
+    "message": "Οι προσαρμοσμένοι κανόνες αποκλείουν στις συνεδρίες λίστας αποκλεισμού. Η λίστα επιτρεπόμενων είναι ό,τι παραμένει προσβάσιμο στις συνεδρίες λίστας επιτρεπόμενων. Οι έτοιμες κατηγορίες αποκλείουν τους συνηθισμένους χρονοφάγους."
+  },
   "options_custom_blacklist_title": {
-    "message": "Custom blacklist"
+    "message": "Προσαρμοσμένη λίστα αποκλεισμού"
   },
   "options_whitelist_title": {
-    "message": "Whitelist"
+    "message": "Λίστα επιτρεπόμενων"
   },
   "options_bundled_categories_heading": {
-    "message": "Ομαδοποιημένες Κατηγορίες"
+    "message": "Έτοιμες κατηγορίες"
+  },
+  "options_bundled_categories_help": {
+    "message": "Έτοιμες λίστες με τους συνηθισμένους χρονοφάγους. Ενεργοποίησε μια ολόκληρη κατηγορία και μετά άνοιξέ την για να κρατήσεις μεμονωμένους ιστότοπους διαθέσιμους."
   },
   "options_schedule_heading": {
     "message": "Πρόγραμμα"
   },
+  "options_schedule_help": {
+    "message": "Οι συνεδρίες ξεκινούν μόνες τους μέσα σε αυτά τα διαστήματα. Η αυστηρότητα που ορίζεις εδώ ισχύει για όλο το διάστημα."
+  },
   "options_behavior_heading": {
-    "message": "Συμπεριφορά Συνεδρίας"
+    "message": "Συμπεριφορά συνεδρίας"
   },
   "options_budget_heading": {
-    "message": "Πίστωση Πρόσβασης Ιστοσελίδας"
+    "message": "Πίστωση πρόσβασης σε ιστότοπους"
   },
   "options_notifications_heading": {
-    "message": "Notifications"
+    "message": "Ειδοποιήσεις"
   },
   "options_privacy_heading": {
-    "message": "Ιδιωτικότητα"
+    "message": "Απόρρητο και δεδομένα"
   },
   "options_load_error_retry": {
-    "message": "Retry"
+    "message": "Ξανά"
+  },
+  "options_load_error_delete_all": {
+    "message": "Διαγραφή όλων και νέα αρχή"
   },
   "options_load_error_keep_data": {
-    "message": "Keep my data"
+    "message": "Κράτα τα δεδομένα μου"
+  },
+  "options_delete_all_data": {
+    "message": "Διαγραφή όλων των δεδομένων του Focus Lock"
   },
   "options_dirty_saving": {
-    "message": "Saving changes"
+    "message": "Αποθήκευση αλλαγών"
   },
   "options_dirty_unsaved": {
-    "message": "Unsaved changes"
+    "message": "Μη αποθηκευμένες αλλαγές"
   },
   "options_dirty_clean": {
-    "message": "No unsaved changes"
+    "message": "Καμία αλλαγή προς αποθήκευση"
   },
   "options_dirty_discard": {
-    "message": "Discard changes"
+    "message": "Απόρριψη αλλαγών"
   },
   "options_dirty_save": {
-    "message": "Save changes"
+    "message": "Αποθήκευση αλλαγών"
   },
   "options_session_status_label": {
-    "message": "Session status"
+    "message": "Κατάσταση συνεδρίας"
   },
   "options_rule_kind_host_badge": {
-    "message": "domain"
+    "message": "τομέας"
   },
   "options_rule_kind_regex_badge": {
     "message": "regex"
   },
   "options_rule_remove": {
-    "message": "Remove"
+    "message": "Αφαίρεση"
   },
   "options_rule_remove_aria": {
-    "message": "Remove $PATTERN$",
+    "message": "Αφαίρεση $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -81,19 +99,19 @@
     }
   },
   "options_rules_empty": {
-    "message": "No rules yet."
+    "message": "Δεν υπάρχουν κανόνες ακόμη."
   },
   "options_rule_kind_aria": {
-    "message": "Rule kind"
+    "message": "Είδος κανόνα"
   },
   "options_rule_kind_host_option": {
-    "message": "domain or subdomain"
+    "message": "τομέας ή υποτομέας"
   },
   "options_rule_kind_regex_option": {
-    "message": "regex (full URL)"
+    "message": "regex (πλήρες URL)"
   },
   "options_rule_pattern_aria": {
-    "message": "Pattern"
+    "message": "Μοτίβο"
   },
   "options_rule_pattern_placeholder_host": {
     "message": "facebook.com"
@@ -102,28 +120,115 @@
     "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
-    "message": "Add rule"
+    "message": "Προσθήκη κανόνα"
+  },
+  "options_rules_help": {
+    "message": "Το facebook.com καλύπτει αυτόν τον τομέα και κάθε υποτομέα. Το news.ycombinator.com καλύπτει αυτόν τον υποτομέα και οτιδήποτε από κάτω του. Το /youtube\\.com\\/shorts/ ταιριάζει με το πλήρες URL ως κανονική έκφραση."
+  },
+  "options_number_error_positive": {
+    "message": "Το πεδίο $LABEL$ δέχεται μόνο θετικό ακέραιο αριθμό.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "Το πεδίο $LABEL$ δέχεται μόνο ακέραιο αριθμό από το μηδέν και πάνω.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "Το πεδίο $LABEL$ δεν μπορεί να είναι μικρότερο από μηδέν.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "Το πεδίο $LABEL$ είναι εκτός του υποστηριζόμενου εύρους λεπτών.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "Το πεδίο $LABEL$ είναι εκτός του υποστηριζόμενου εύρους ημερών.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
   },
   "options_session_defaults_heading": {
-    "message": "Session defaults"
+    "message": "Προεπιλογές συνεδρίας"
+  },
+  "options_session_defaults_help": {
+    "message": "Η λειτουργία και η αυστηρότητα κλειδώνουν μόλις ξεκινήσει η συνεδρία. Με αυτές τις τιμές ανοίγει η φόρμα εκκίνησης."
+  },
+  "options_preset_short_label": {
+    "message": "Προεπιλογή σύντομης συνεδρίας (λεπτά)"
+  },
+  "options_preset_default_label": {
+    "message": "Προεπιλογή κανονικής συνεδρίας (λεπτά)"
+  },
+  "options_preset_deep_label": {
+    "message": "Προεπιλογή βαθιάς συνεδρίας (λεπτά)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Λίστα αποκλεισμού: αποκλεισμός των ιστότοπων της λίστας"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Λίστα επιτρεπόμενων: μόνο οι ιστότοποι της λίστας επιτρέπονται"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Ευέλικτη: τελειώνεις τη συνεδρία όποτε θέλεις"
+  },
+  "options_strictness_friction_label": {
+    "message": "Τριβή: η πρόωρη διακοπή περνάει από την επιβεβαίωση που έχεις ορίσει"
+  },
+  "options_strictness_hard_label": {
+    "message": "Πλήρες κλείδωμα: καμία πρόωρη λήξη, μόνο προσωρινή πρόσβαση σε ιστότοπους"
   },
   "options_cycle_heading": {
-    "message": "Κύκλος Εστίασης και Διαλείμματος"
+    "message": "Κύκλος εστίασης και διαλειμμάτων"
+  },
+  "options_cycle_help": {
+    "message": "Προεπιλογές: 25 λεπτά εστίαση, 5 λεπτά διάλειμμα, 15 λεπτά μεγάλο διάλειμμα κάθε 4ο κύκλο. Στις μελέτες, τα προγραμματισμένα διαλείμματα υπερτερούν έναντι των αυθόρμητων, τόσο στη διάθεση όσο και στην εστίαση. Τα ακριβή λεπτά είναι σύμβαση, όχι επιστήμη."
+  },
+  "options_cycle_default_label": {
+    "message": "Εναλλαγή εστίασης και διαλειμμάτων από προεπιλογή"
   },
   "options_focus_minutes_label": {
-    "message": "Focus minutes"
+    "message": "Λεπτά εστίασης"
   },
   "options_short_break_minutes_label": {
-    "message": "Short break minutes"
+    "message": "Λεπτά μικρού διαλείμματος"
   },
   "options_long_break_minutes_label": {
-    "message": "Long break minutes"
+    "message": "Λεπτά μεγάλου διαλείμματος"
+  },
+  "options_long_every_label": {
+    "message": "Μεγάλο διάλειμμα κάθε N κύκλους"
   },
   "options_gate_heading": {
-    "message": "Deliberation gate"
+    "message": "Επιβεβαίωση πριν τη λήξη"
+  },
+  "options_gate_help": {
+    "message": "Μια αναμονή 10 δευτερολέπτων με ένα ξεκάθαρο κουμπί επιστροφής στη δουλειά μειώνει μετρήσιμα τις παρορμητικές επισκέψεις (έρευνα πεδίου, PNAS 2023). Η μεγαλύτερη αναμονή και η πληκτρολογημένη φράση περίπου διπλασιάζουν το αποτέλεσμα."
   },
   "options_gate_wait_one": {
-    "message": "Wait $COUNT$ second",
+    "message": "Αναμονή $COUNT$ δευτερολέπτου",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -132,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "Wait $COUNT$ seconds",
+    "message": "Αναμονή $COUNT$ δευτερολέπτων",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -141,19 +246,52 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "Custom"
+    "message": "Προσαρμοσμένη"
   },
   "options_custom_delay_label": {
-    "message": "Custom delay (seconds)"
+    "message": "Προσαρμοσμένη αναμονή (δευτερόλεπτα)"
+  },
+  "options_custom_delay_error": {
+    "message": "Η προσαρμοσμένη αναμονή δέχεται μόνο θετικό ακέραιο αριθμό δευτερολέπτων."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Να ζητείται και πληκτρολόγηση μιας φράσης"
+  },
+  "options_gate_force_end_label": {
+    "message": "Ενεργοποίηση του κουμπιού «Αγνόησε την αναμονή και τερμάτισε»"
+  },
+  "options_credit_help": {
+    "message": "Η πίστωση πρόσβασης μαζεύεται όσο εστιάζεις. Τόσο η πρόσβαση σε όλους τους ιστότοπους όσο και το ξεκλείδωμα ενός ιστότοπου βγαίνουν από το ίδιο υπόλοιπο. Μπορείς να σηκωθείς όποτε θέλεις χωρίς να ξοδέψεις πίστωση."
+  },
+  "options_earn_rate_label": {
+    "message": "Λεπτά πρόσβασης ανά 30 λεπτά εστίασης"
+  },
+  "options_credit_cap_label": {
+    "message": "Όριο πίστωσης πρόσβασης (λεπτά)"
+  },
+  "options_pause_length_label": {
+    "message": "Διάρκεια πρόσβασης σε όλους τους ιστότοπους (λεπτά)"
+  },
+  "options_unlock_length_label": {
+    "message": "Διάρκεια ξεκλειδώματος ενός ιστότοπου (λεπτά)"
   },
   "options_streak_heading": {
-    "message": "Σειρά και Διατήρηση"
+    "message": "Σερί και διατήρηση"
+  },
+  "options_streak_help": {
+    "message": "Το σερί μετράει τις μέρες που φτάνουν τον στόχο. Μια προεπιλεγμένη συνεδρία κρατάει την αλυσίδα ζωντανή, και ένα πάγωμα επιδιορθώνει μια μέρα που έχασες."
+  },
+  "options_streak_goal_label": {
+    "message": "Ημερήσιος στόχος σερί (λεπτά εστίασης)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Μεσοδιάστημα παγωμάτων (ημέρες)"
   },
   "options_retention_label": {
-    "message": "Keep daily stats (days)"
+    "message": "Διατήρηση ημερήσιων στατιστικών (ημέρες)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ category on.",
+    "message": "Η κατηγορία $CATEGORY$ ενεργοποιήθηκε.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -162,7 +300,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ category off.",
+    "message": "Η κατηγορία $CATEGORY$ απενεργοποιήθηκε.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -171,13 +309,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "All categories on."
+    "message": "Όλες οι κατηγορίες ενεργοποιήθηκαν."
   },
   "options_all_categories_off_announcement": {
-    "message": "All categories off."
+    "message": "Όλες οι κατηγορίες απενεργοποιήθηκαν."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ included.",
+    "message": "Ο ιστότοπος $HOST$ συμπεριλήφθηκε.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -186,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ kept available.",
+    "message": "Ο ιστότοπος $HOST$ παραμένει διαθέσιμος.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -194,11 +332,29 @@
       }
     }
   },
+  "options_all_sites_included_announcement": {
+    "message": "Όλοι οι ιστότοποι της κατηγορίας $CATEGORY$ συμπεριλήφθηκαν.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Όλοι οι ιστότοποι της κατηγορίας $CATEGORY$ παραμένουν διαθέσιμοι.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
   "options_category_bulk_actions_aria": {
-    "message": "Category bulk actions"
+    "message": "Μαζικές ενέργειες κατηγοριών"
   },
   "options_selected_count": {
-    "message": "Selected $COUNT$",
+    "message": "Επιλεγμένα: $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -207,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Deselected $COUNT$",
+    "message": "Αποεπιλεγμένα: $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -216,19 +372,19 @@
     }
   },
   "options_select_all": {
-    "message": "Select all"
+    "message": "Επιλογή όλων"
   },
   "options_deselect_all": {
-    "message": "Deselect all"
+    "message": "Αποεπιλογή όλων"
   },
   "options_select_all_categories_aria": {
-    "message": "Select all categories"
+    "message": "Επιλογή όλων των κατηγοριών"
   },
   "options_deselect_all_categories_aria": {
-    "message": "Deselect all categories"
+    "message": "Αποεπιλογή όλων των κατηγοριών"
   },
   "options_show_category_sites": {
-    "message": "Show $CATEGORY$ sites",
+    "message": "Εμφάνιση ιστότοπων της κατηγορίας $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -237,7 +393,7 @@
     }
   },
   "options_hide_category_sites": {
-    "message": "Hide $CATEGORY$ sites",
+    "message": "Απόκρυψη ιστότοπων της κατηγορίας $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -246,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ site included",
+    "message": "$COUNT$ ιστότοπος συμπεριλαμβάνεται",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -255,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ sites included",
+    "message": "$COUNT$ ιστότοποι συμπεριλαμβάνονται",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -264,10 +420,58 @@
     }
   },
   "options_category_off": {
-    "message": "Category off"
+    "message": "Κατηγορία ανενεργή"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ θα συμπεριληφθεί όταν ενεργοποιηθεί",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ θα συμπεριληφθούν όταν ενεργοποιηθεί",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Ξεμάρκαρε έναν ιστότοπο για να μείνει διαθέσιμος ενώ η υπόλοιπη κατηγορία αποκλείεται."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Μαζικές ενέργειες για τους ιστότοπους της κατηγορίας $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Επιλογή όλων των ιστότοπων της κατηγορίας $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Αποεπιλογή όλων των ιστότοπων της κατηγορίας $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_category_sites_region_aria": {
-    "message": "$CATEGORY$ sites",
+    "message": "Ιστότοποι της κατηγορίας $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -276,61 +480,73 @@
     }
   },
   "options_day_sun": {
-    "message": "Sun"
+    "message": "Κυρ"
   },
   "options_day_mon": {
-    "message": "Mon"
+    "message": "Δευ"
   },
   "options_day_tue": {
-    "message": "Tue"
+    "message": "Τρί"
   },
   "options_day_wed": {
-    "message": "Wed"
+    "message": "Τετ"
   },
   "options_day_thu": {
-    "message": "Thu"
+    "message": "Πέμ"
   },
   "options_day_fri": {
-    "message": "Fri"
+    "message": "Παρ"
   },
   "options_day_sat": {
-    "message": "Sat"
+    "message": "Σάβ"
   },
   "options_schedule_cycles_label": {
-    "message": "Cycle focus and breaks"
+    "message": "Εναλλαγή εστίασης και διαλειμμάτων"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Επικαλύπτεται με άλλη ενεργή καταχώριση την $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
   },
   "options_schedule_session_type_aria": {
-    "message": "Session type"
+    "message": "Τύπος συνεδρίας"
   },
   "options_schedule_entry_legend": {
-    "message": "Schedule entry"
+    "message": "Καταχώριση προγράμματος"
   },
   "options_schedule_start_label": {
-    "message": "Start"
+    "message": "Έναρξη"
   },
   "options_schedule_end_label": {
-    "message": "End"
+    "message": "Λήξη"
   },
   "options_schedule_duration_legend": {
-    "message": "Duration"
+    "message": "Διάρκεια"
   },
   "options_schedule_intention_label": {
-    "message": "Intention"
+    "message": "Πρόθεση"
   },
   "options_schedule_intention_placeholder": {
-    "message": "what this time is for"
+    "message": "για τι είναι αυτή η ώρα"
   },
   "options_schedule_save_entry": {
-    "message": "Save entry"
+    "message": "Αποθήκευση καταχώρισης"
   },
   "options_cancel": {
-    "message": "Ακύρωση"
+    "message": "Άκυρο"
+  },
+  "options_schedule_empty": {
+    "message": "Δεν υπάρχουν προγραμματισμένες συνεδρίες ακόμη."
   },
   "options_schedule_selected_days_aria": {
-    "message": "Selected days"
+    "message": "Επιλεγμένες ημέρες"
   },
   "options_schedule_time_range": {
-    "message": "$START$ to $END$",
+    "message": "$START$ έως $END$",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -343,52 +559,52 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blacklist"
+    "message": "αποκλεισμός"
   },
   "options_schedule_mode_whitelist": {
-    "message": "whitelist"
+    "message": "επιτρεπόμενα"
   },
   "options_schedule_strictness_flexible": {
-    "message": "flexible"
+    "message": "ευέλικτη"
   },
   "options_schedule_strictness_friction": {
-    "message": "friction"
+    "message": "τριβή"
   },
   "options_schedule_strictness_hard": {
-    "message": "hard"
+    "message": "πλήρες"
   },
   "options_schedule_enabled_label": {
-    "message": "Enabled"
+    "message": "Ενεργή"
   },
   "options_schedule_edit": {
-    "message": "Edit"
+    "message": "Επεξεργασία"
   },
   "options_schedule_delete": {
-    "message": "Delete"
+    "message": "Διαγραφή"
   },
   "options_schedule_add": {
-    "message": "Add schedule entry"
+    "message": "Προσθήκη καταχώρισης προγράμματος"
   },
   "options_sounds_heading": {
-    "message": "Sounds"
+    "message": "Ήχοι"
   },
   "options_master_volume": {
-    "message": "Master volume"
+    "message": "Γενική ένταση"
   },
   "options_sound_session_complete": {
-    "message": "Session complete"
+    "message": "Λήξη συνεδρίας"
   },
   "options_sound_break_start": {
-    "message": "Break start"
+    "message": "Έναρξη διαλείμματος"
   },
   "options_sound_break_end": {
-    "message": "Break end"
+    "message": "Λήξη διαλείμματος"
   },
   "options_sound_schedule_start": {
-    "message": "Schedule auto-start"
+    "message": "Αυτόματη έναρξη από το πρόγραμμα"
   },
   "options_sound_preview_aria": {
-    "message": "Preview $SOUND$",
+    "message": "Άκουσε το $SOUND$",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -397,87 +613,237 @@
     }
   },
   "options_sound_play": {
-    "message": "Play"
+    "message": "Αναπαραγωγή"
+  },
+  "options_sound_preview_error": {
+    "message": "Ο ήχος δεν παίχτηκε. Δοκίμασε ξανά."
   },
   "options_sounds_notifications_heading": {
-    "message": "Notifications"
+    "message": "Ειδοποιήσεις"
+  },
+  "options_session_complete_notification": {
+    "message": "Εμφάνιση ειδοποίησης συστήματος όταν τελειώνει μια συνεδρία"
   },
   "options_badge_heading": {
     "message": "Σήμα"
   },
+  "options_badge_countdown": {
+    "message": "Εμφάνιση του χρόνου που απομένει στο εικονίδιο της γραμμής εργαλείων"
+  },
   "options_privacy_website_access_heading": {
-    "message": "Website access"
+    "message": "Πρόσβαση σε ιστότοπους"
   },
   "options_privacy_website_off_title": {
-    "message": "Website access is off"
+    "message": "Η πρόσβαση σε ιστότοπους είναι ανενεργή"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Το Focus Lock δεν μπορεί να αποκλείσει ιστότοπους μέχρι να δώσεις πρόσβαση."
   },
   "options_privacy_website_enable_action": {
-    "message": "Enable website blocking"
+    "message": "Ενεργοποίηση αποκλεισμού ιστότοπων"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Η πρόσβαση δόθηκε, αλλά ο αποκλεισμός δεν είναι ενεργός"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Το Chrome έδωσε την πρόσβαση, αλλά το Focus Lock δεν μπόρεσε να καταχωρίσει το σενάριο αποκλεισμού του."
   },
   "options_privacy_website_retry_action": {
-    "message": "Retry website blocking"
+    "message": "Νέα προσπάθεια αποκλεισμού ιστότοπων"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Ο αποκλεισμός ιστότοπων είναι ενεργός"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Το Focus Lock μπορεί να εφαρμόσει τους ενεργούς κανόνες αποκλεισμού σου σε κανονικές ιστοσελίδες."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "Delete local history?"
+    "message": "Διαγραφή τοπικού ιστορικού;"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Επιβεβαίωση διαγραφής τοπικού ιστορικού"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Local history deleted."
+    "message": "Το τοπικό ιστορικό διαγράφηκε."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Αυτό διαγράφει οριστικά από αυτή τη συσκευή τα πλήρη URL, τις προθέσεις εστίασης και τα αναλυτικά συμβάντα των συνεδριών. Δεν καθαρίζει μια συνεδρία που τρέχει, η οποία κρατάει την πρόθεσή της και τη διεύθυνση κάθε καρτέλας που αποκλείει. Η λήξη της συνεδρίας σβήνει την πρόθεση και ξεκινάει έναν καθαρισμό που ελευθερώνει κάθε ανοιχτή καρτέλα ιστότοπου, και ο καθαρισμός αφαιρεί κάθε αποθηκευμένη διεύθυνση όταν ολοκληρωθεί."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Αυτό διαγράφει οριστικά από αυτή τη συσκευή τα πλήρη URL, τις προθέσεις εστίασης και τα αναλυτικά συμβάντα των συνεδριών, καθώς και τα συγκεντρωτικά στατιστικά που μένουν μόνο τοπικά. Δεν καθαρίζει μια συνεδρία που τρέχει, η οποία κρατάει την πρόθεσή της και τη διεύθυνση κάθε καρτέλας που αποκλείει. Η λήξη της συνεδρίας σβήνει την πρόθεση και ξεκινάει έναν καθαρισμό που ελευθερώνει κάθε ανοιχτή καρτέλα ιστότοπου, και ο καθαρισμός αφαιρεί κάθε αποθηκευμένη διεύθυνση όταν ολοκληρωθεί."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Delete remote Sync data?"
+    "message": "Διαγραφή απομακρυσμένων δεδομένων συγχρονισμού;"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Επιβεβαίωση διαγραφής απομακρυσμένων δεδομένων συγχρονισμού"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Τα απομακρυσμένα δεδομένα του συγχρονισμού Chrome διαγράφηκαν."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Αυτό διαγράφει οριστικά από τον συγχρονισμό Chrome τις απομακρυσμένες ρυθμίσεις, τις λίστες αποκλεισμού και επιτρεπόμενων, την πίστωση πρόσβασης, τα σερί και τα συγκεντρωτικά ανά τομέα για τις αποκλεισμένες προσπάθειες. Οι τοπικές ρυθμίσεις και τα στατιστικά μένουν σε αυτή τη συσκευή."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Διαγραφή όλων των δεδομένων του Focus Lock;"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Επιβεβαίωση διαγραφής όλων των δεδομένων του Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Όλα τα δεδομένα του Focus Lock διαγράφηκαν."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Αυτό διαγράφει οριστικά κάθε δεδομένο του Focus Lock σε αυτή τη συσκευή και κάθε αντίγραφο του Focus Lock που έχει μείνει στον συγχρονισμό Chrome:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Η διαγραφή όλων είναι διαθέσιμη μόνο όταν δεν τρέχει συνεδρία. Το Focus Lock επιστρέφει μετά στη ρύθμιση."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Το τοπικό ιστορικό δεν διαγράφηκε. Δοκίμασε ξανά."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Τα απομακρυσμένα δεδομένα του συγχρονισμού Chrome δεν διαγράφηκαν. Δοκίμασε ξανά."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Τα δεδομένα του Focus Lock δεν διαγράφηκαν όλα. Δοκίμασε ξανά."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Ο συγχρονισμός Chrome δεν μπόρεσε να αποθηκεύσει τις τελευταίες αλλαγές σου. Η τοπική αποθήκευση είναι ασφαλής."
+  },
+  "options_privacy_error_request": {
+    "message": "Το αίτημα δεν ολοκληρώθηκε. Δοκίμασε ξανά."
   },
   "options_privacy_website_access_updated": {
-    "message": "Website access updated."
+    "message": "Η πρόσβαση σε ιστότοπους ενημερώθηκε."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Η πρόσβαση σε ιστότοπους δεν δόθηκε."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Η πρόσβαση σε ιστότοπους δεν ενημερώθηκε. Δοκίμασε ξανά."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Website blocking enabled."
+    "message": "Ο αποκλεισμός ιστότοπων ενεργοποιήθηκε."
+  },
+  "options_privacy_error_export": {
+    "message": "Η εξαγωγή του αρχείου καταγραφής απέτυχε."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Η εξαγωγή του αρχείου καταγραφής απέτυχε. Δοκίμασε ξανά."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Οι ρυθμίσεις δικαιωμάτων του Chrome δεν άνοιξαν. Δοκίμασε ξανά."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Οι ρυθμίσεις δικαιωμάτων του Chrome άνοιξαν."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Άνοιγμα ρυθμίσεων δικαιωμάτων του Chrome"
   },
   "options_privacy_sync_heading": {
-    "message": "Chrome Sync"
+    "message": "Συγχρονισμός Chrome"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Συγχρονισμός των δεδομένων του Focus Lock στις συσκευές με Chrome"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync enabled."
+    "message": "Ο συγχρονισμός Chrome ενεργοποιήθηκε."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync disabled."
+    "message": "Ο συγχρονισμός Chrome απενεργοποιήθηκε."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Ο συγχρονισμός Chrome αποθηκεύει ακόμη τις τελευταίες αλλαγές σου."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync is on."
+    "message": "Ο συγχρονισμός Chrome είναι ενεργός."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync is off."
+    "message": "Ο συγχρονισμός Chrome είναι ανενεργός."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Οι αλλαγές αποθηκεύτηκαν στον συγχρονισμό Chrome."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Νέα προσπάθεια ενεργοποίησης του συγχρονισμού Chrome"
   },
   "options_privacy_retry_sync": {
-    "message": "Retry Chrome Sync"
+    "message": "Νέα προσπάθεια συγχρονισμού Chrome"
   },
   "options_privacy_scope_synced": {
-    "message": "Synced"
+    "message": "Συγχρονισμένα"
   },
   "options_privacy_scope_local_only": {
-    "message": "Local only"
+    "message": "Μόνο τοπικά"
+  },
+  "options_privacy_developer_note": {
+    "message": "Τίποτα δεν στέλνεται στον δημιουργό του Focus Lock."
   },
   "options_privacy_local_log_heading": {
-    "message": "Local event log"
+    "message": "Τοπικό αρχείο καταγραφής"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Κάνε εξαγωγή του αναλυτικού τοπικού αρχείου ή διάγραψε το τοπικό ιστορικό περιήγησης και συνεδριών."
   },
   "options_privacy_export_local_log": {
-    "message": "Export local event log"
+    "message": "Εξαγωγή τοπικού αρχείου καταγραφής"
   },
   "options_privacy_local_log_exported": {
-    "message": "Local event log exported."
+    "message": "Το τοπικό αρχείο καταγραφής εξήχθη."
   },
   "options_privacy_delete_local_history": {
-    "message": "Delete local history"
+    "message": "Διαγραφή τοπικού ιστορικού"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Remote Sync data"
+    "message": "Απομακρυσμένα δεδομένα συγχρονισμού"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Διάγραψε τα αντίγραφα του Focus Lock που έχουν μείνει στον συγχρονισμό Chrome χωρίς να αλλάξει τίποτα σε αυτή τη συσκευή."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Delete remote Sync data"
+    "message": "Διαγραφή απομακρυσμένων δεδομένων συγχρονισμού"
   },
   "options_privacy_all_data_heading": {
-    "message": "All Focus Lock data"
+    "message": "Όλα τα δεδομένα του Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Διάγραψε κάθε εγγραφή του Focus Lock σε αυτή τη συσκευή και κάθε αντίγραφο που έχει μείνει στον συγχρονισμό Chrome, και ξεκίνα ξανά από τη ρύθμιση. Διαθέσιμο όσο δεν τρέχει συνεδρία."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Συνεχίζεται η διαγραφή όλων των δεδομένων του Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Νέα προσπάθεια διαγραφής τοπικού ιστορικού"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Νέα προσπάθεια διαγραφής απομακρυσμένων δεδομένων συγχρονισμού"
   },
   "options_privacy_retry_all_data": {
-    "message": "Retry all data deletion"
+    "message": "Νέα προσπάθεια διαγραφής όλων των δεδομένων"
+  },
+  "options_error_load": {
+    "message": "Οι ρυθμίσεις δεν φορτώθηκαν. Φόρτωσε ξανά τη σελίδα και δοκίμασε πάλι."
+  },
+  "options_error_retry_boot": {
+    "message": "Το Focus Lock δεν επανεκκινήθηκε. Δοκίμασε ξανά."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Οι ρυθμίσεις απορρήτου δεν ανανεώθηκαν. Φόρτωσε ξανά τη σελίδα."
+  },
+  "options_error_website_blocking": {
+    "message": "Ο αποκλεισμός ιστότοπων δεν ενημερώθηκε. Δοκίμασε ξανά."
+  },
+  "options_error_change_sync": {
+    "message": "Ο συγχρονισμός Chrome δεν άλλαξε. Δοκίμασε ξανά."
+  },
+  "options_error_retry_sync": {
+    "message": "Η νέα προσπάθεια συγχρονισμού Chrome απέτυχε. Δοκίμασε ξανά."
+  },
+  "options_error_save_settings": {
+    "message": "Οι ρυθμίσεις δεν αποθηκεύτηκαν. Φόρτωσε ξανά τη σελίδα και δοκίμασε πάλι."
+  },
+  "options_error_save_lists": {
+    "message": "Οι λίστες δεν αποθηκεύτηκαν. Φόρτωσε ξανά τη σελίδα και δοκίμασε πάλι."
   }
 }

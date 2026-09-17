@@ -18,19 +18,19 @@
     "message": "Hourly padatempts are unavailable."
   },
   "stats_partial_error_economy": {
-    "message": "Situs akses kredit pengpadauran are unavailable."
+    "message": "Kredit akses laman settings are unavailable."
   },
   "stats_scope_synced": {
-    "message": "Synced ketals from this Chrome account. Local-padaly panels are labeled."
+    "message": "Synced totals from ini Chrome account. Local-only panels are labeled."
   },
   "stats_scope_local": {
-    "message": "Totals from this machdalame. Fokus Lock stpadaistics are not synced."
+    "message": "Totals from ini machine. Focus Lock statistics are not synced."
   },
   "stats_scope_checking": {
     "message": "Checkdalamg whether these ketals are synced."
   },
   "stats_scope_unavailable": {
-    "message": "Stpadaistics scope is unavailable. Totals may dalamclude synced dpadaa. Hourly padatempts dan recent sesis are from this machdalame."
+    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from ini machine."
   },
   "stats_scope_retry": {
     "message": "Coba ulang scope check"
@@ -51,10 +51,10 @@
     "message": "Gpadae requests dismissed keday"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Situs akses kredit spent keday"
+    "message": "Kredit akses laman spent today"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "All situss $ALL_SITES$, padae situs $ONE_SITE$, $EARNED$ earned",
+    "message": "Semua sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "Garis freeze: padae missed day, covered"
+    "message": "Streak freeze: one missed day, cdi atased"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active day this mpadpadah ($MONTH$)",
+    "message": "$COUNT$ active day ini month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active days this mpadpadah ($MONTH$)",
+    "message": "$COUNT$ active days ini month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Active dpadaes dalam $MONTH$: $DAYS$.",
+    "message": "Active dates in $MHIDUPTH$: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -152,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "No active dpadaes dalam $MONTH$.",
+    "message": "No active dates in $MHIDUPTH$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -170,7 +170,7 @@
     "message": "Blokired padatempts, last 14 days"
   },
   "stats_chart_attempts_empty": {
-    "message": "Blokired padatempts tampilkan up here padace a sesi cpadaches padae."
+    "message": "Blocked attempts tampilkan up here once a session catches one."
   },
   "stats_chart_sites_heading": {
     "message": "Top blokired situss, last 30 days"
@@ -179,7 +179,7 @@
     "message": "Nothdalamg blokired yet. Thpada is a fdalame mulai."
   },
   "stats_chart_hours_heading": {
-    "message": "Attempts oleh hour, this machdalame padaly"
+    "message": "Attempts by hour, ini machine only"
   },
   "stats_chart_other_site": {
     "message": "other"
@@ -252,7 +252,7 @@
     "message": "24-hour blokired-padatempt hepada strip"
   },
   "stats_sessions_heading": {
-    "message": "Recent sesis pada this machdalame"
+    "message": "Recent sessions on ini machine"
   },
   "stats_sessions_empty": {
     "message": "Your first sesi will appear here."
@@ -270,7 +270,7 @@
     "message": "Fokused"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All situss"
+    "message": "Semua sites"
   },
   "stats_sessions_col_one_site": {
     "message": "One situs"
@@ -288,7 +288,7 @@
     "message": "No nipada"
   },
   "stats_session_article_label": {
-    "message": "Sesi: $INTENTION$",
+    "message": "Session: $INTENTIHIDUP$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",

@@ -1,12 +1,12 @@
 {
   "notify_session_complete_title": {
-    "message": "Fokus sesi complete"
+    "message": "Sesi fokus complete"
   },
   "notify_session_complete_body": {
     "message": "Your fokus sesi fdalamished."
   },
   "notify_schedule_window_body": {
-    "message": "Locked until $END$.",
+    "message": "Locked sampai $END$.",
     "placeholders": {
       "END": {
         "content": "$1",
@@ -57,7 +57,7 @@
     "message": "Fokus Lock received an dalamcpadasistent websitus akses stpadae. Retry setup padaau reload the extensipada."
   },
   "notify_boot_not_finished": {
-    "message": "Fokus Lock did not fdalamish mulaidalamg: $REASON$",
+    "message": "Focus Lock did not finish starting: $REASHIDUP$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -72,7 +72,7 @@
     "message": "Fokus Lock is runndalamg, nothdalamg ke reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Fokus Lock cannot reset a runwaktu thpada is still committed dalamside a policy generpadaipada"
+    "message": "Focus Lock cannot reset a runtime itu is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
     "message": "Dpadaa clear retry is not available."
@@ -96,19 +96,19 @@
     "message": "Lists exceed the 8 KB Chrome Sync limit. Hapus cuskem padaau whitelist padaurans, then try agadalam."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "a keras sesi is runndalamg: removdalamg blokired situss unlocks ketika it ends"
+    "message": "a hard session is running: removing blocked sites buka kuncis ketika it ends"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a keras sesi is runndalamg: new whitelist entries unlock ketika it ends"
+    "message": "a hard session is running: new whitelist entries buka kunci ketika it ends"
   },
   "notify_guard_lists_disable_category": {
-    "message": "a keras sesi is runndalamg: disabldalamg cpadaegpadaauies unlocks ketika it ends"
+    "message": "a hard session is running: disabling categories buka kuncis ketika it ends"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "a keras sesi is runndalamg: new exclusipadas unlock ketika it ends"
+    "message": "a hard session is running: new exclusions buka kunci ketika it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a keras sesi is runndalamg: weakendalamg the default strictness waits until it ends"
+    "message": "a hard session is running: weakening the default strictness waits sampai it ends"
   },
   "notify_guard_settings_shorten_delay": {
     "message": "a keras sesi is runndalamg: shpadaautendalamg the deliberpadaipada delay weakens the gpadae"
@@ -117,18 +117,18 @@
     "message": "a keras sesi is runndalamg: droppdalamg the tiped phrase weakens the gpadae"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "a keras sesi is runndalamg: raisdalamg the jeda earn rpadae funds mpadaaue escapes"
+    "message": "a hard session is running: raising the pause earn rate funds lebih escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "a keras sesi is runndalamg: raisdalamg the jeda cap funds mpadaaue escapes"
+    "message": "a hard session is running: raising the pause cap funds lebih escapes"
   },
   "notify_guard_settings_shorten_pause": {
     "message": "a keras sesi is runndalamg: shpadaautendalamg jedas lowers their cost"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "a keras sesi is runndalamg: shpadaautendalamg unlocks lowers their cost"
+    "message": "a hard session is running: shortening buka kuncis lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a keras sesi is runndalamg: its schedule entry cannot be weakened until it ends"
+    "message": "a hard session is running: its schedule entry cannot be weakened sampai it ends"
   }
 }

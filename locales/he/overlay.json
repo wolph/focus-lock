@@ -1,0 +1,133 @@
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "נעול - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "בודק לשוניות עבודה זמינות..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "בחר לשונית פתוחה כדי להמשיך במשימה שלך."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "מפגש הריכוז שלך אינו זמין. נסה שוב או טען מחדש את הדף."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "לא ניתן היה לטעון את לשונית העבודה שלך. נסה שוב או טען מחדש את הדף."
+  },
+  "overlay_target_reconnect": {
+    "message": "טען מחדש את הדף כדי להתחבר שוב אל Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "הדף המבקש השתנה. טען מחדש את הדף."
+  },
+  "overlay_target_transport_error": {
+    "message": "לא ניתן היה להגיע אל Focus Lock. נסה שוב."
+  },
+  "overlay_picker_heading": {
+    "message": "בחר לשונית עבודה"
+  },
+  "overlay_picker_cancel": {
+    "message": "ביטול"
+  },
+  "overlay_picker_search_label": {
+    "message": "חפש לשוניות עבודה"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "חפש לפי כותרת או אתר"
+  },
+  "overlay_picker_clear_search": {
+    "message": "נקה חיפוש"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "רענן לשוניות"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "לשוניות עבודה זמינות"
+  },
+  "overlay_picker_finding": {
+    "message": "מחפש לשוניות זמינות..."
+  },
+  "overlay_picker_searching": {
+    "message": "מחפש בלשוניות העבודה..."
+  },
+  "overlay_picker_saving": {
+    "message": "שומר את לשונית העבודה..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "אין לשוניות עבודה זמינות. פתח אתר שהמפגש הזה מתיר, ואז רענן לשוניות."
+  },
+  "overlay_picker_no_matches": {
+    "message": "אין לשוניות תואמות. נסה חיפוש אחר או נקה את החיפוש."
+  },
+  "overlay_picker_load_failed": {
+    "message": "לא ניתן היה לטעון לשוניות עבודה. נסה שוב."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ מתוך $COUNT$ לשונית",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ מתוך $COUNT$ לשוניות",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_picker_count_two": {
+    "message": "$MATCHES$ מתוך $COUNT$ לשוניות",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

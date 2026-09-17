@@ -1,12 +1,12 @@
 {
   "notify_session_complete_title": {
-    "message": "Pokus sessisa complete"
+    "message": "Sesyon ng pokus complete"
   },
   "notify_session_complete_body": {
     "message": "Your focus sessisa fsaished."
   },
   "notify_schedule_window_body": {
-    "message": "Locked until $END$.",
+    "message": "Locked hanggang $END$.",
     "placeholders": {
       "END": {
         "content": "$1",
@@ -57,7 +57,7 @@
     "message": "Pokus Lock received an sacsasistent website access state. Retry setup o reload the extensisa."
   },
   "notify_boot_not_finished": {
-    "message": "Pokus Lock did not fsaish startsag: $REASON$",
+    "message": "Focus Lock did not finish starting: $REASBUKAS$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -72,7 +72,7 @@
     "message": "Pokus Lock is runnsag, nothsag sa reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Pokus Lock cannot reset a runtime that is still committed saside a policy generatisa"
+    "message": "Focus Lock cannot reset a runtime iyon is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
     "message": "Data linisin subukan muli is hindit available."
@@ -96,19 +96,19 @@
     "message": "Lists exceed the 8 KB Chrome Sync limit. Alissa cussam o whitelist rules, then try agasa."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "a hard sessisa is runnsag: removsag blocked sites unlocks kung kailan it ends"
+    "message": "a hard session is running: removing blocked sites i-unlocks kapag it ends"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a hard sessisa is runnsag: new whitelist entries unlock kung kailan it ends"
+    "message": "a hard session is running: new whitelist entries i-unlock kapag it ends"
   },
   "notify_guard_lists_disable_category": {
-    "message": "a hard sessisa is runnsag: disablsag categoies unlocks kung kailan it ends"
+    "message": "a hard session is running: disabling categories i-unlocks kapag it ends"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "a hard sessisa is runnsag: new exclusisas unlock kung kailan it ends"
+    "message": "a hard session is running: new exclusions i-unlock kapag it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a hard sessisa is runnsag: weakensag the default strictness waits until it ends"
+    "message": "a hard session is running: weakening the default strictness waits hanggang it ends"
   },
   "notify_guard_settings_shorten_delay": {
     "message": "a hard sessisa is runnsag: shotensag the deliberatisa delay weakens the gate"
@@ -117,18 +117,18 @@
     "message": "a hard sessisa is runnsag: droppsag the typed phrase weakens the gate"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "a hard sessisa is runnsag: raissag the pause earn rate funds moe escapes"
+    "message": "a hard session is running: raising the pause earn rate funds higit pa escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "a hard sessisa is runnsag: raissag the pause cap funds moe escapes"
+    "message": "a hard session is running: raising the pause cap funds higit pa escapes"
   },
   "notify_guard_settings_shorten_pause": {
     "message": "a hard sessisa is runnsag: shotensag pauses lowers their cost"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "a hard sessisa is runnsag: shotensag unlocks lowers their cost"
+    "message": "a hard session is running: shortening i-unlocks lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a hard sessisa is runnsag: its schedule entry cannot be weakened until it ends"
+    "message": "a hard session is running: its schedule entry cannot be weakened hanggang it ends"
   }
 }

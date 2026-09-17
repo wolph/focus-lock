@@ -1,1 +1,627 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "থামানো পর্যন্ত"
+  },
+  "shared_preset_short": {
+    "message": "ছোট"
+  },
+  "shared_preset_focus": {
+    "message": "ফোকাস"
+  },
+  "shared_preset_deep_work": {
+    "message": "গভীর কাজ"
+  },
+  "shared_deep_work_note": {
+    "message": "এটি পছন্দ, বিজ্ঞান নয়: একটানা একটি লম্বা ব্লক, কোনো স্বয়ংক্রিয় বিরতি ছাড়া।"
+  },
+  "shared_timed_hint_cycles": {
+    "message": "মোট $MINUTES$ মিনিট, $FOCUS$ মিনিটের ফোকাস ব্লক সহ",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ মিনিট একটানা ফোকাস",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "থামানো পর্যন্ত শুরু করুন"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "নিজে আনলক করা পর্যন্ত লক করুন"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "থামানো পর্যন্ত চলা সেশন নমনীয় বা বিলম্বসহ থাকে এবং ফোকাস ও বিরতির চক্র ব্যবহার করতে পারে না।"
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "থামানো পর্যন্ত চলা সেশনে কঠোর লক পাওয়া যায় না: টাইমারও নেই, নিজে শেষ করার উপায়ও নেই, তাই সেশন কখনও শেষই হবে না।"
+  },
+  "shared_end_session": {
+    "message": "সেশন শেষ করুন"
+  },
+  "shared_unlock": {
+    "message": "আনলক করুন"
+  },
+  "shared_gate_wait_none": {
+    "message": "অপেক্ষা ছাড়া"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ সেকেন্ডের অপেক্ষা",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ এবং একটি টাইপ করা বাক্য",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "আপনি $LABEL$ না চাপা পর্যন্ত চলবে। চক্র বন্ধ।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "আপনি আনলক না করা পর্যন্ত চলবে: $REQUIREMENT$, তারপর $LABEL$। চক্র বন্ধ।",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "থামানো পর্যন্ত মোডে চক্র বন্ধ"
+  },
+  "shared_mode_blacklist": {
+    "message": "বেছে নেওয়া সাইট ব্লক করুন"
+  },
+  "shared_mode_whitelist": {
+    "message": "শুধু বেছে নেওয়া সাইট খুলুন"
+  },
+  "shared_focus_time_label": {
+    "message": "ফোকাসের সময়"
+  },
+  "shared_clock_focus_phase": {
+    "message": "ফোকাস পর্ব"
+  },
+  "shared_clock_total_session": {
+    "message": "পুরো সেশন"
+  },
+  "shared_clock_pause": {
+    "message": "বিরতি"
+  },
+  "shared_clock_break": {
+    "message": "ব্রেক"
+  },
+  "shared_badge_indefinite": {
+    "message": "চালু"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock চালু হচ্ছে। আপনার বেছে নেওয়া নিয়ম প্রয়োগ করা হচ্ছে।"
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "সেশন শেষ। ব্রাউজারের পরিষ্কারের কাজ শেষ করা হচ্ছে।"
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock চালু হতে পারেনি। ব্রাউজারের পরিষ্কারের কাজ শেষ করা হচ্ছে।"
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock অসম্পূর্ণ শুরুর পরিষ্কার করতে পারেনি।"
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock ব্রাউজারের পরিষ্কারের কাজ শেষ করতে পারেনি।"
+  },
+  "shared_retry_cleanup": {
+    "message": "পরিষ্কার আবার চেষ্টা করুন"
+  },
+  "shared_end_failed": {
+    "message": "সেশন শেষ করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "shared_retry_failed": {
+    "message": "পরিষ্কার আবার চেষ্টা করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "shared_action_failed": {
+    "message": "এই কাজটি করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "shared_return_to_work_failed": {
+    "message": "কাজে ফেরা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "shared_data_clear_pending": {
+    "message": "Focus Lock-এর ডেটা মোছা হচ্ছে। পরিষ্কারের কাজ শেষ করা হচ্ছে।"
+  },
+  "shared_data_clear_error": {
+    "message": "ডেটা মোছা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "shared_schedule_window_label": {
+    "message": "সময়সীমা শেষ হওয়া পর্যন্ত"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "সময়সূচি অনুযায়ী শুরু হয় এবং আপনি না থামানো পর্যন্ত চলে: নমনীয়-এর জন্য সেশন শেষ করুন, বিলম্বসহ-এর জন্য নিশ্চিতকরণ স্ক্রিন দিয়ে আনলক করুন। চক্র বন্ধ।"
+  },
+  "shared_schedule_started_title": {
+    "message": "সময়সূচির সেশন শুরু হয়েছে"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "আপনি না থামানো পর্যন্ত সক্রিয় থাকবে।"
+  },
+  "shared_settings_indefinite": {
+    "message": "থামানো পর্যন্ত চলা সেশন সক্রিয়। এটি দেখতে বা শেষ করতে টুলবারের পপআপ খুলুন।"
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock চালু হচ্ছে। ওয়েবসাইট অ্যাক্সেস দেখা হচ্ছে এবং আপনার নিয়ম প্রয়োগ করা হচ্ছে।"
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock ব্রাউজারের পরিষ্কারের কাজ শেষ করতে পারেনি। পপআপ খুলে আবার চেষ্টা করুন।"
+  },
+  "shared_settings_session_disclosure": {
+    "message": "সেশনের নিয়ন্ত্রণ টুলবারের পপআপে থাকে। সক্রিয় সেশন শুরুর সময় নেওয়া নিয়মগুলিই ধরে রাখে।"
+  },
+  "shared_settings_timed": {
+    "message": "$TIME$ পর্যন্ত টাইমার দেওয়া সেশন সক্রিয়। এটি নিজে থেকেই শেষ হবে। বর্তমান অবস্থার জন্য টুলবারের পপআপ দেখুন।",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "সম্পূর্ণ"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "নিজে সম্পূর্ণ করা"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "আগেই শেষ"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "শেষ: ওয়েবসাইট অ্যাক্সেস হারিয়ে গেছে"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "শেষ: ব্লকিং সেট করা যায়নি"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "শেষ: টাইমার সেট করা যায়নি"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "শেষ: পাতায় ব্লকিং প্রয়োগ করা যায়নি"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "শেষ: অবস্থা ফিরিয়ে আনা যায়নি"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ঘ $MINUTES$ মি",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ মি",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ মি",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ মি",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "সেশন আপডেট হচ্ছে"
+  },
+  "shared_less_than_a_minute": {
+    "message": "এক মিনিটেরও কম"
+  },
+  "shared_focus_remaining_break": {
+    "message": "বিরতির আগে $DURATION$ বাকি",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "এই সেশনে $DURATION$ বাকি",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "খরচ ক্রেডিট সীমার চেয়ে বেশি"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "ফোকাসের সময় আবার ক্রেডিট জমবে"
+  },
+  "shared_credit_off": {
+    "message": "ক্রেডিট অর্জন বন্ধ আছে"
+  },
+  "shared_not_enough_time": {
+    "message": "এই ফোকাস ব্লকে যথেষ্ট সময় নেই"
+  },
+  "shared_ready_in": {
+    "message": "$CLOCK$ পরে প্রস্তুত",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "$CATEGORY$ বিভাগের কারণে ব্লক",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "আপনার ব্লক তালিকার কারণে ব্লক"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "আপনার অনুমতি তালিকায় নেই"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "এই সেশনে ব্লক"
+  },
+  "shared_verdict_allow_list": {
+    "message": "আপনার অনুমতি তালিকায় আছে"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "সবসময় অনুমোদিত"
+  },
+  "shared_verdict_unlock": {
+    "message": "সাময়িকভাবে আনলক করা"
+  },
+  "shared_verdict_excluded": {
+    "message": "বেছে নেওয়া বিভাগ থেকে বাদ দেওয়া"
+  },
+  "shared_verdict_no_session": {
+    "message": "কোনো সক্রিয় ফোকাস সেশন নেই"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "এই সেশনে অনুমোদিত"
+  },
+  "shared_category_social": {
+    "message": "সোশ্যাল মিডিয়া"
+  },
+  "shared_category_video": {
+    "message": "ভিডিও ও স্ট্রিমিং"
+  },
+  "shared_category_news": {
+    "message": "খবর"
+  },
+  "shared_category_mail": {
+    "message": "মেল"
+  },
+  "shared_category_shopping": {
+    "message": "কেনাকাটা"
+  },
+  "shared_category_gaming": {
+    "message": "গেমিং"
+  },
+  "shared_category_forums": {
+    "message": "ফোরাম ও একঘেয়েমি"
+  },
+  "shared_synced_settings": {
+    "message": "সেটিংস"
+  },
+  "shared_synced_lists": {
+    "message": "ব্লক ও অনুমতি তালিকা"
+  },
+  "shared_synced_credit": {
+    "message": "সাইট অ্যাক্সেস ক্রেডিট"
+  },
+  "shared_synced_streaks": {
+    "message": "স্ট্রিক"
+  },
+  "shared_synced_aggregates": {
+    "message": "ডোমেন অনুযায়ী ব্লক হওয়া চেষ্টার সারসংক্ষেপ"
+  },
+  "shared_local_full_urls": {
+    "message": "সম্পূর্ণ URL"
+  },
+  "shared_local_intentions": {
+    "message": "ফোকাসের উদ্দেশ্য"
+  },
+  "shared_local_events": {
+    "message": "সেশনের বিস্তারিত ঘটনা"
+  },
+  "shared_local_runtime": {
+    "message": "চলমান সেশন"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "পুরোনো সংস্করণের কিছু সিঙ্ক করা ডেটা পড়া যায়নি, তাই রিসেট করা হয়েছে।"
+  },
+  "shared_all_data_clear_running": {
+    "message": "সমস্ত ডেটা মোছার আগে চলমান সেশন শেষ করুন।"
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "প্রোডাক্ট নেভিগেশন"
+  },
+  "shared_nav_overview": {
+    "message": "সারসংক্ষেপ"
+  },
+  "shared_nav_settings": {
+    "message": "সেটিংস"
+  },
+  "shared_section_blocking": {
+    "message": "ব্লকিং"
+  },
+  "shared_section_schedule": {
+    "message": "সময়সূচি"
+  },
+  "shared_section_behavior": {
+    "message": "সেশনের আচরণ"
+  },
+  "shared_section_budget": {
+    "message": "সাইট অ্যাক্সেস ক্রেডিট"
+  },
+  "shared_section_notifications": {
+    "message": "বিজ্ঞপ্তি"
+  },
+  "shared_section_privacy": {
+    "message": "গোপনীয়তা ও ডেটা"
+  },
+  "shared_theme_auto": {
+    "message": "স্বয়ংক্রিয়"
+  },
+  "shared_theme_light": {
+    "message": "হালকা"
+  },
+  "shared_theme_dark": {
+    "message": "গাঢ়"
+  },
+  "shared_theme_button": {
+    "message": "থিম: $CURRENT$। $NEXT$-এ বদলান",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "থিম সংরক্ষণ করা যায়নি। পাতা রিলোড করে আবার চেষ্টা করুন।"
+  },
+  "shared_host_search_label": {
+    "message": "$TITLE$-এর সাইট খুঁজুন",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "$TITLE$-এর কোনো সাইট আপনার খোঁজার সঙ্গে মেলে না।",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "$MATCHED$টির মধ্যে $SHOWN$টি সাইট দেখানো হচ্ছে। তালিকা ছোট করতে খুঁজুন।",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "$TOTAL$টির মধ্যে $MATCHED$টি সাইট দেখানো হচ্ছে।",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "সবগুলি $TOTAL$টি সাইট দেখানো হচ্ছে।",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "সেশন শেষ করুন"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock চালু হচ্ছে"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "আপনার বেছে নেওয়া নিয়ম প্রয়োগ করা হচ্ছে।"
+  },
+  "shared_overlay_stopped_page": {
+    "message": "এই পাতাটি লোড হয়নি। সেশন শেষ হলে এটি নিজেই লোড হবে।"
+  },
+  "shared_overlay_next_step": {
+    "message": "আপনার পরের ধাপ"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "কাজে ফিরুন"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "কাজের ট্যাব বেছে নিন"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "কাজের ট্যাব বদলান"
+  },
+  "shared_overlay_access_summary": {
+    "message": "বিরতি বা সাইট অ্যাক্সেস দরকার?"
+  },
+  "shared_overlay_access_note": {
+    "message": "আপনি যেকোনো সময় সরে যেতে পারেন। সাইট অ্যাক্সেসে ক্রেডিট খরচ হয়।"
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "অপেক্ষা বাদ দিয়ে শেষ করুন"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock এই কাজটি আপডেট করতে পারেনি। আবার চেষ্টা করুন।"
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ সাইট অ্যাক্সেস ক্রেডিট",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "আপনার চলতি কাজ চালিয়ে যান"
+  },
+  "shared_overlay_pause_action": {
+    "message": "সব সাইট আনলক করুন"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "এই সাইট আনলক করুন"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$-এর জন্য - খরচ $COST$ ক্রেডিট",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "$TIME$ পর্যন্ত লক",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "আপনি বলেছিলেন: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "$HOST$ $CLOCK$-এর জন্য আনলক করুন",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "ফোকাস চালিয়ে যান"
+  },
+  "shared_gate_phrase_label": {
+    "message": "নিশ্চিত করতে এটি টাইপ করুন:"
+  },
+  "shared_gate_end_title": {
+    "message": "এই সেশন শেষ করুন"
+  }
+}

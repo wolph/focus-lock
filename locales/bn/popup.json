@@ -1,1 +1,630 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "পরবর্তী: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "সেটিংস"
+  },
+  "popup_open_settings_failed": {
+    "message": "সেটিংস খোলা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "popup_settings_load_failed": {
+    "message": "সেশন সেটিংস লোড করা যায়নি। আবার চেষ্টা করতে পপআপ আবার খুলুন। ডিফল্ট মান দেখানো হচ্ছে।"
+  },
+  "popup_open_setup_failed": {
+    "message": "সেটআপ খোলা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "popup_setup_required_heading": {
+    "message": "Focus Lock-এর সেটআপ শেষ করুন"
+  },
+  "popup_setup_required_body": {
+    "message": "সেশন শুরু করার আগে আপনার শুরুর তালিকা, ওয়েবসাইট অ্যাক্সেস ও স্টোরেজ মোড বেছে নিন।"
+  },
+  "popup_open_setup_button": {
+    "message": "সেটআপ খুলুন"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "ওয়েবসাইট ব্লকিং নিশ্চিত করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "popup_blocking_enable_failed": {
+    "message": "ওয়েবসাইট ব্লকিং চালু করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "popup_blocking_off_heading": {
+    "message": "ওয়েবসাইট ব্লকিং বন্ধ আছে"
+  },
+  "popup_blocking_off_body": {
+    "message": "Chrome ওয়েবসাইট অ্যাক্সেস না দেওয়া এবং ব্লকিং চালু না হওয়া পর্যন্ত Focus Lock সেশন শুরু করতে পারে না।"
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome ওয়েবসাইট অ্যাক্সেস দেয়নি। ওয়েবসাইট ব্লকিং এখনও বন্ধ।"
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "ওয়েবসাইট অ্যাক্সেস দেওয়া হয়েছে, কিন্তু Focus Lock ব্লকিং চালু করতে পারেনি। সেটআপ আবার করুন বা এক্সটেনশন রিলোড করুন।"
+  },
+  "popup_enable_blocking_button": {
+    "message": "ওয়েবসাইট ব্লকিং চালু করুন"
+  },
+  "popup_retry_button": {
+    "message": "আবার চেষ্টা করুন"
+  },
+  "popup_notice_access_revoked": {
+    "message": "ওয়েবসাইট অ্যাক্সেস সরিয়ে নেওয়ায় আপনার সেশন শেষ হয়ে গেছে।"
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Focus Lock ওয়েবসাইট ব্লকিং চালু করতে না পারায় আপনার সেশন শেষ হয়ে গেছে।"
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "এই বিজ্ঞপ্তিটি সরানো যায়নি। আবার চেষ্টা করুন।"
+  },
+  "popup_dismiss_notice_label": {
+    "message": "ওয়েবসাইট অ্যাক্সেসের বিজ্ঞপ্তি সরান"
+  },
+  "popup_dismiss_button": {
+    "message": "সরান"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lock আবার চালু করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock চালু হতে পারেনি"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "কারণটি পড়া যায়নি।"
+  },
+  "popup_reset_runtime_button": {
+    "message": "স্থানীয় অবস্থা রিসেট করুন"
+  },
+  "popup_reset_runtime_note": {
+    "message": "আপনার সেটিংস, তালিকা ও পরিসংখ্যান থেকে যায়। শুধু চলতি সেশনের অবস্থা মুছে যায়।"
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "সব মুছে নতুন করে শুরু করুন"
+  },
+  "popup_keep_data_button": {
+    "message": "আমার ডেটা রাখুন"
+  },
+  "popup_delete_all_button": {
+    "message": "Focus Lock-এর সমস্ত ডেটা মুছুন"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "সেটআপের অবস্থা জানা যায়নি। আবার চেষ্টা করতে Focus Lock রিলোড করুন।"
+  },
+  "popup_snapshot_unavailable": {
+    "message": "ফোকাসের অবস্থা উপলব্ধ নয়"
+  },
+  "popup_action_in_progress": {
+    "message": "কাজ চলছে"
+  },
+  "popup_active_site_checking": {
+    "message": "সক্রিয় সাইট দেখা হচ্ছে"
+  },
+  "popup_active_site_unsupported": {
+    "message": "আনলক করতে একটি সাধারণ ওয়েবসাইট খুলুন"
+  },
+  "popup_active_site_unknown": {
+    "message": "সক্রিয় সাইট চেনা যায়নি"
+  },
+  "popup_active_site_error": {
+    "message": "সক্রিয় সাইট চেনা যায়নি।"
+  },
+  "popup_resume_now": {
+    "message": "এখনই আবার শুরু করুন"
+  },
+  "popup_start_next_focus_early": {
+    "message": "পরের ফোকাস আগেই শুরু করুন"
+  },
+  "popup_unlock_this_site": {
+    "message": "এই সাইট আনলক করুন"
+  },
+  "popup_unlock_all_sites": {
+    "message": "সব সাইট আনলক করুন"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ অ্যাক্সেস, $CREDIT$ ক্রেডিট",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ অ্যাক্সেস, $CREDIT$ ক্রেডিট - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "কাজের ট্যাব বেছে নিন"
+  },
+  "popup_change_work_tab_button": {
+    "message": "কাজের ট্যাব বদলান"
+  },
+  "popup_session_actions_summary": {
+    "message": "সেশনের কাজ"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ সাইট অ্যাক্সেস ক্রেডিট",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "অনুমোদিত ডোমেন যোগ করুন"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "wiki.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "অনুমোদিত ডোমেন যোগ করুন"
+  },
+  "popup_add_button": {
+    "message": "যোগ করুন"
+  },
+  "popup_draft_allowed_only": {
+    "message": "শুধু $COUNT$টি অনুমোদিত সাইট নিয়ম। বাকি ওয়েবসাইট ব্লক।",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$টি ব্লক বিভাগ, $RULES$টি বাড়তি নিয়ম।",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "কঠোর লক। আগে শেষ করা যায় না।"
+  },
+  "popup_draft_stop_flexible": {
+    "message": "যেকোনো সময় শেষ করা যায়।"
+  },
+  "popup_draft_stop_friction": {
+    "message": "$SECONDS$ সে অপেক্ষার পর শেষ।",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "$SECONDS$ সে অপেক্ষা ও নিশ্চিতকরণ বাক্যের পর শেষ।",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "সেশনের দৈর্ঘ্য"
+  },
+  "popup_custom_minutes_label": {
+    "message": "নিজের মিনিট"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "মি"
+  },
+  "popup_gate_force_end": {
+    "message": "অপেক্ষা বাদ দিয়ে শেষ করুন"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "ফোকাস চালিয়ে যান"
+  },
+  "popup_gate_phrase_label": {
+    "message": "টাইপ করুন:"
+  },
+  "popup_gate_update_failed": {
+    "message": "নিশ্চিতকরণ স্ক্রিন আপডেট করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "popup_gate_intention": {
+    "message": "আপনি বলেছিলেন: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "ভাবার জন্য একটু সময়:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "/ $TOTAL$ সে",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "কাজে ফিরুন"
+  },
+  "popup_destination_unavailable": {
+    "message": "গন্তব্য উপলব্ধ নয়"
+  },
+  "popup_back_to_work_name": {
+    "message": "কাজে ফিরুন: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "কাজে ফিরুন: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "ব্লক করা সাইটের তালিকা আবার লোড না হওয়া পর্যন্ত বিভাগ বদলানো যাবে না।"
+  },
+  "popup_blocked_categories_heading": {
+    "message": "ব্লক করা বিভাগ"
+  },
+  "popup_show_full_domain": {
+    "message": "পুরো ডোমেন দেখান: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "পুরো রেগুলার এক্সপ্রেশন দেখান: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "ডোমেন"
+  },
+  "popup_rule_kind_regex": {
+    "message": "রেগুলার এক্সপ্রেশন"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$-এর সাইট",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$টি সাইট",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$টি সাইট",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "আরও $COUNT$টি সাইট",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "আরও $COUNT$টি সাইট",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "অনুমোদিত ব্যতিক্রম"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "বাড়তি ব্লক নিয়ম"
+  },
+  "popup_no_extra_blocked": {
+    "message": "কোনো বাড়তি ব্লক নিয়ম নেই।"
+  },
+  "popup_allowed_heading": {
+    "message": "অনুমোদিত সাইট ও নিয়ম"
+  },
+  "popup_no_allowed_sites": {
+    "message": "এখনও কোনো সাইট অনুমোদিত নয়।"
+  },
+  "popup_what_will_be_blocked": {
+    "message": "কী ব্লক হবে"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "কী অনুমোদিত হবে"
+  },
+  "popup_categories_selected": {
+    "message": "$TOTAL$টির মধ্যে $SELECTED$টি বিভাগ বেছে নেওয়া",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$টি বাড়তি ব্লক নিয়ম",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$টি বাড়তি ব্লক নিয়ম",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$টি অনুমোদিত নিয়ম",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$টি অনুমোদিত নিয়ম",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "এখানে অনুমোদিত সাইট ও নিয়মে করা বদল শুধু এই সেশনেই কাজ করে। বাকি সব ব্লক থাকে।"
+  },
+  "popup_scope_blacklist": {
+    "message": "এখানে বিভাগ ও নিয়মে করা বদল শুধু এই সেশনেই কাজ করে।"
+  },
+  "popup_open_settings_defaults": {
+    "message": "স্থায়ী ডিফল্টের জন্য সেটিংস খুলুন"
+  },
+  "popup_rule_details_label": {
+    "message": "সেশনের নিয়মের বিবরণ"
+  },
+  "popup_session_type_legend": {
+    "message": "সেশনের ধরন"
+  },
+  "popup_session_type_flexible": {
+    "message": "নমনীয়"
+  },
+  "popup_session_type_friction": {
+    "message": "বিলম্বসহ"
+  },
+  "popup_session_type_hard": {
+    "message": "কঠোর লক"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "যখন ইচ্ছা, সেশন সঙ্গে সঙ্গে শেষ করুন।"
+  },
+  "popup_session_type_friction_hint": {
+    "message": "আগে শেষ করতে $WAIT$ লাগে। কিছু টাইপ করতে হয় না।",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "আগে শেষ করতে $WAIT$ এবং টাইপ করা নিশ্চিতকরণ লাগে।",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "সেশন আগে শেষ করা যায় না। সাইট অ্যাক্সেস ক্রেডিট তবুও কাজ করে।"
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "বেছে নেওয়া বিভাগ ও বাড়তি নিয়ম ব্লক থাকে। বাকি সাইট খোলা থাকে।"
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "শুধু তালিকার সাইটগুলি খোলা থাকে। অন্য প্রতিটি ওয়েবসাইট ব্লক থাকে।"
+  },
+  "popup_invalid_duration_error": {
+    "message": "শূন্য মিনিটের বেশি সেশনের দৈর্ঘ্য দিন।"
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "ডিফল্ট বদলে গেছে, কিন্তু বর্তমান তালিকা লোড করা যায়নি। পপআপ আবার খুলুন।"
+  },
+  "popup_no_work_tab_option": {
+    "message": "কোনো কাজের ট্যাব নয় (ঐচ্ছিক)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "বেছে নেওয়া ট্যাব নেই - অন্যটি বাছুন"
+  },
+  "popup_cycles_label": {
+    "message": "চক্র: $FOCUS$ মি ফোকাস, $SHORT_BREAK$ মি বিরতি, প্রতি $LONG_EVERY$তম বারে $LONG_BREAK$ মি লম্বা বিরতি",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "উদ্দেশ্য"
+  },
+  "popup_intention_placeholder": {
+    "message": "আপনি কী নিয়ে কাজ করছেন?"
+  },
+  "popup_work_tab_named": {
+    "message": "কাজের ট্যাব: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "বদলান"
+  },
+  "popup_session_settings_summary": {
+    "message": "সেশনের সেটিংস"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "কাজের ট্যাব বেছে নিন"
+  },
+  "popup_work_tab_select_label": {
+    "message": "কাজের ট্যাব"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (বর্তমান)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "ব্লকিং মোড"
+  },
+  "popup_invalid_time_label": {
+    "message": "অবৈধ সময়"
+  },
+  "popup_start_focus_label": {
+    "message": "$DURATION$ ফোকাস শুরু করুন",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "সঠিক ডোমেন দিন, যেমন wiki.example.com।"
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "কাজের ট্যাব লোড করা যায়নি। আবার চেষ্টা করতে পপআপ আবার খুলুন।"
+  },
+  "popup_use_this_tab": {
+    "message": "এই ট্যাবটি নিন"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "এই ট্যাবটি কাজের জন্য উপলব্ধ নয়। অন্য কোনো খোলা ট্যাব বাছুন।"
+  },
+  "popup_checking_current_tab": {
+    "message": "বর্তমান ট্যাব দেখা হচ্ছে..."
+  },
+  "popup_finding_current_tab": {
+    "message": "আপনার বর্তমান ট্যাব খোঁজা হচ্ছে..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "আপনার বর্তমান ট্যাব লোড করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "আপনার কাজের ট্যাব বেছে নিন বা বদলান।"
+  },
+  "popup_saving_work_tab": {
+    "message": "কাজের ট্যাব সংরক্ষণ করা হচ্ছে..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "কাজের ট্যাব সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "popup_choose_open_tab_option": {
+    "message": "একটি খোলা ট্যাব বাছুন"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "অথবা অন্য একটি ট্যাব বাছুন"
+  },
+  "popup_start_failed": {
+    "message": "সেশন শুরু করা যায়নি। আবার চেষ্টা করুন।"
+  }
+}

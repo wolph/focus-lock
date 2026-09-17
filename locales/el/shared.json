@@ -11,14 +11,20 @@
   "shared_preset_deep_work": {
     "message": "deep work"
   },
+  "shared_deep_work_note": {
+    "message": "A preference, not science: one long uninterrupted αποκλεισμός, with no automatic breaks."
+  },
   "shared_start_until_stopped": {
-    "message": "Start until stopped"
+    "message": "Έναρξη until stopped"
   },
   "shared_lock_until_manual_unlock": {
     "message": "Lock until manual unlock"
   },
+  "shared_hard_unavailable_reason": {
+    "message": "Hard lock is not available for Until stopped: with no timer and no manual λήξη, the συνεδρία could never λήξη."
+  },
   "shared_end_session": {
-    "message": "End session"
+    "message": "Λήξη συνεδρία"
   },
   "shared_unlock": {
     "message": "Unlock"
@@ -35,8 +41,17 @@
       }
     }
   },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Runs until you λήξη it with $LABEL$. Cycles off.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
   "shared_mode_blacklist": {
-    "message": "Block selected sites"
+    "message": "Αποκλεισμός selected sites"
   },
   "shared_mode_whitelist": {
     "message": "Allow selected sites only"
@@ -48,7 +63,7 @@
     "message": "focus phase"
   },
   "shared_clock_total_session": {
-    "message": "total session"
+    "message": "total συνεδρία"
   },
   "shared_clock_pause": {
     "message": "pause"
@@ -59,17 +74,53 @@
   "shared_badge_indefinite": {
     "message": "ON"
   },
+  "shared_popup_closure_cleanup": {
+    "message": "Συνεδρία ended. Finishing browser cleanup."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock could not έναρξη. Finishing browser cleanup."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock could not clean up an incomplete έναρξη."
+  },
   "shared_retry_cleanup": {
     "message": "Retry cleanup"
   },
+  "shared_end_failed": {
+    "message": "Could not λήξη συνεδρία. Try again."
+  },
+  "shared_data_clear_error": {
+    "message": "Could not διαγραφή data. Try again."
+  },
   "shared_schedule_window_label": {
     "message": "Until window ends"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Starts on schedule and runs until you stop it: Λήξη συνεδρία for Flexible, Unlock through the deliberation gate for Friction. Cycles off."
   },
   "shared_schedule_started_title": {
     "message": "Focus schedule started"
   },
   "shared_schedule_until_stopped_body": {
     "message": "Active until you stop it."
+  },
+  "shared_settings_indefinite": {
+    "message": "Until stopped συνεδρία active. Use the toolbar popup to view or λήξη it."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock could not finish browser cleanup. Άνοιγμα the popup and retry."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "The toolbar popup owns συνεδρία controls. The active συνεδρία keeps the rules captured when it started."
+  },
+  "shared_settings_timed": {
+    "message": "Timed συνεδρία active until $TIME$. It ends automatically. Use the toolbar popup for live status.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
   },
   "shared_outcome_timer_completed": {
     "message": "Completed"
@@ -127,10 +178,22 @@
     }
   },
   "shared_updating_session": {
-    "message": "Updating session"
+    "message": "Updating συνεδρία"
   },
   "shared_less_than_a_minute": {
     "message": "Less than a minute"
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ left in this συνεδρία",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_not_enough_time": {
+    "message": "Not enough time in this focus αποκλεισμός"
   },
   "shared_ready_in": {
     "message": "Ready in $CLOCK$",
@@ -155,7 +218,7 @@
     }
   },
   "shared_verdict_blocked_category": {
-    "message": "Blocked by $CATEGORY$",
+    "message": "Αποκλείστηκε by $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -163,11 +226,14 @@
       }
     }
   },
+  "shared_verdict_blocked_custom": {
+    "message": "Αποκλείστηκε by your αποκλεισμός list"
+  },
   "shared_verdict_whitelist_miss": {
     "message": "Not on your allow list"
   },
   "shared_verdict_blocked_session": {
-    "message": "Blocked by this session"
+    "message": "Αποκλείστηκε by this συνεδρία"
   },
   "shared_verdict_allow_list": {
     "message": "On your allow list"
@@ -179,10 +245,10 @@
     "message": "Temporarily unlocked"
   },
   "shared_verdict_no_session": {
-    "message": "No active focus session"
+    "message": "No active focus συνεδρία"
   },
   "shared_verdict_allowed_session": {
-    "message": "Allowed by this session"
+    "message": "Allowed by this συνεδρία"
   },
   "shared_category_social": {
     "message": "Social media"
@@ -206,16 +272,19 @@
     "message": "Forums and boredom"
   },
   "shared_synced_settings": {
-    "message": "Settings"
+    "message": "Ρυθμίσεις"
   },
   "shared_synced_lists": {
-    "message": "Block and allow lists"
+    "message": "Αποκλεισμός and allow lists"
   },
   "shared_synced_credit": {
     "message": "Site access credit"
   },
   "shared_synced_streaks": {
     "message": "Streaks"
+  },
+  "shared_synced_aggregates": {
+    "message": "Domain-level αποκλείστηκε-attempt aggregates"
   },
   "shared_local_full_urls": {
     "message": "Full URLs"
@@ -224,10 +293,16 @@
     "message": "Focus intentions"
   },
   "shared_local_events": {
-    "message": "Detailed session events"
+    "message": "Detailed συνεδρία events"
   },
   "shared_local_runtime": {
-    "message": "Active runtime session"
+    "message": "Active runtime συνεδρία"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Some synced data from an older version could not be read and was επαναφορά."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Λήξη the running συνεδρία before deleting all data."
   },
   "shared_nav_brand": {
     "message": "Focus Lock"
@@ -239,25 +314,25 @@
     "message": "Overview"
   },
   "shared_nav_settings": {
-    "message": "Settings"
+    "message": "Ρυθμίσεις"
   },
   "shared_section_blocking": {
-    "message": "Blocking"
+    "message": "Αποκλεισμός"
   },
   "shared_section_schedule": {
-    "message": "Schedule"
+    "message": "Πρόγραμμα"
   },
   "shared_section_behavior": {
-    "message": "Session behavior"
+    "message": "Συνεδρία behavior"
   },
   "shared_section_budget": {
-    "message": "Site access credit"
+    "message": "Πίστωση Πρόσβασης Ιστοχώρου"
   },
   "shared_section_notifications": {
     "message": "Notifications"
   },
   "shared_section_privacy": {
-    "message": "Privacy and data"
+    "message": "Ιδιωτικότητα και Δεδομένα"
   },
   "shared_theme_auto": {
     "message": "Auto"
@@ -267,6 +342,9 @@
   },
   "shared_theme_dark": {
     "message": "Dark"
+  },
+  "shared_theme_error": {
+    "message": "Could not αποθήκευση theme. Reload page and try again."
   },
   "shared_host_search_label": {
     "message": "Search $TITLE$ sites",
@@ -278,10 +356,13 @@
     }
   },
   "shared_end_the_session": {
-    "message": "End the session"
+    "message": "Λήξη the συνεδρία"
   },
   "shared_overlay_starting_title": {
     "message": "Focus Lock is starting"
+  },
+  "shared_overlay_stopped_page": {
+    "message": "This page did not load. It will load by itself when the συνεδρία ends."
   },
   "shared_overlay_next_step": {
     "message": "Your next step"
@@ -294,6 +375,9 @@
   },
   "shared_overlay_change_work_tab": {
     "message": "Change work tab"
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Ignore timeout and λήξη anyway"
   },
   "shared_overlay_pause_action": {
     "message": "Unlock all sites"
@@ -339,6 +423,6 @@
     "message": "Type this to confirm:"
   },
   "shared_gate_end_title": {
-    "message": "End this session"
+    "message": "Λήξη this συνεδρία"
   }
 }

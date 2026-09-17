@@ -6,19 +6,37 @@
     "message": "Το Ρεκόρ Εστίασής σας"
   },
   "stats_loading": {
-    "message": "Loading your stats."
+    "message": "Loading your στατιστικές."
+  },
+  "stats_load_error": {
+    "message": "Could not load στατιστικές. Reload to try again."
+  },
+  "stats_partial_error_both": {
+    "message": "Hourly attempts and site access credit ρυθμίσεις are unavailable."
+  },
+  "stats_partial_error_economy": {
+    "message": "Site access credit ρυθμίσεις are unavailable."
   },
   "stats_scope_retry": {
     "message": "Retry scope check"
   },
+  "stats_empty": {
+    "message": "Στατιστικές appear after your first συνεδρία."
+  },
   "stats_tile_focus_today": {
-    "message": "Focus today"
+    "message": "Εστίαση σήμερα"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Focus in the last 7 days"
+    "message": "Εστίαση τις τελευταίες 7 ημέρες"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts blocked today"
+    "message": "Attempts αποκλείστηκε σήμερα"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Gate requests dismissed σήμερα"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Site access credit spent σήμερα"
   },
   "stats_tile_credit_subline_earned": {
     "message": "$EARNED$ earned",
@@ -30,16 +48,44 @@
     }
   },
   "stats_streak_heading": {
-    "message": "Streak"
+    "message": "Σειρά"
   },
   "stats_streak_unit_one": {
     "message": "day"
   },
   "stats_streak_unit_other": {
-    "message": "days"
+    "message": "ημέρες"
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ active ημέρες this month ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
   },
   "stats_chart_focus_heading": {
-    "message": "Focus, last 14 days"
+    "message": "Focus, last 14 ημέρες"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Focus λεπτά appear after your first συνεδρία."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Αποκλείστηκε attempts, last 14 ημέρες"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Αποκλείστηκε attempts εμφάνιση up here once a συνεδρία catches one."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Top αποκλείστηκε sites, last 30 ημέρες"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Nothing αποκλείστηκε yet. That is a fine έναρξη."
   },
   "stats_chart_other_site": {
     "message": "other"
@@ -54,7 +100,7 @@
     }
   },
   "stats_blocked_count_one": {
-    "message": "$COUNT$ blocked",
+    "message": "$COUNT$ αποκλείστηκε",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -63,7 +109,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "$COUNT$ blocked",
+    "message": "$COUNT$ αποκλείστηκε",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -76,6 +122,12 @@
   },
   "stats_chart_name_hbar": {
     "message": "Horizontal bar chart"
+  },
+  "stats_chart_description_bar": {
+    "message": "Bar chart. Use the keyboard to move through data points, or άνοιγμα View as table for the same values."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Horizontal bar chart. Use the keyboard to move through data points, or άνοιγμα View as table for the same values."
   },
   "stats_chart_empty_default": {
     "message": "No data yet."
@@ -102,11 +154,17 @@
   "stats_chart_table_value": {
     "message": "Value"
   },
+  "stats_heat_strip_label": {
+    "message": "24-hour αποκλείστηκε-attempt heat strip"
+  },
+  "stats_sessions_empty": {
+    "message": "Your first συνεδρία will appear here."
+  },
   "stats_sessions_col_date": {
     "message": "Date"
   },
   "stats_sessions_col_start": {
-    "message": "Start"
+    "message": "Έναρξη"
   },
   "stats_sessions_col_planned": {
     "message": "Planned"
@@ -133,7 +191,7 @@
     "message": "No intention"
   },
   "stats_session_article_label": {
-    "message": "Session: $INTENTION$",
+    "message": "Συνεδρία: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",

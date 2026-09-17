@@ -1,0 +1,186 @@
+{
+  "onboarding_page_title": {
+    "message": "הגדרת Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "הגדרת Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "שלב $STEP$ מתוך $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "לא ניתן היה לשחזר את התקדמות ההגדרה השמורה. מתחילים מחדש עם ברירות המחדל הנוכחיות שלך."
+  },
+  "onboarding_complete_heading": {
+    "message": "ההגדרה הושלמה"
+  },
+  "onboarding_complete_body": {
+    "message": "הבחירות שלך נשמרו. פתח את Focus Lock מסרגל הכלים של Chrome כדי להתחיל מפגש."
+  },
+  "onboarding_error_heading": {
+    "message": "ההגדרה אינה זמינה"
+  },
+  "onboarding_error_body": {
+    "message": "לא ניתן היה לטעון את ההגדרה. נסה שוב."
+  },
+  "onboarding_retry_button": {
+    "message": "נסה שוב"
+  },
+  "onboarding_save_error": {
+    "message": "לא ניתן היה לשמור את התקדמות ההגדרה. נסה שוב."
+  },
+  "onboarding_enable_error": {
+    "message": "לא ניתן היה להפעיל חסימת אתרים. נסה שוב."
+  },
+  "onboarding_finish_error": {
+    "message": "לא ניתן היה להשלים את ההגדרה. הבחירות שלך עדיין שמורות. נסה שוב."
+  },
+  "onboarding_lists_heading": {
+    "message": "בחר את רשימת החסימה שאיתה תתחיל"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "ב$MODE$, הקטגוריות המופעלות והאתרים החסומים הנוספים אינם זמינים.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "ב$MODE$, כל האתרים אינם זמינים למעט רשימת ההיתר שלך.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "הבחירות האלה הופכות לברירת מחדל למפגשים הבאים. תוכל לערוך אותן בהמשך."
+  },
+  "onboarding_lists_legend": {
+    "message": "קטגוריות אתרים מומלצות"
+  },
+  "onboarding_site_count_one": {
+    "message": "אתר $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ אתרים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "הצג אתרים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "הסתר אתרים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "דומיינים בקטגוריה $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "המשך"
+  },
+  "onboarding_access_heading": {
+    "message": "הפעלת חסימת אתרים"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock בודק כתובות של דפים באופן מקומי כדי להתאים אותן לקטגוריות ולאתרים שבחרת. הוא משתמש בגישה לאתרים כדי להציג את מסך החסימה ולשחזר את הדפים המושפעים בתום המפגש."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "קטגוריות ודומיינים מותאמים יכולים לכלול כל אתר. לכן Chrome יבקש את ההרשאה הזו:"
+  },
+  "onboarding_access_capability": {
+    "message": "קריאה ושינוי של כל הנתונים שלך בכל האתרים"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock משתמש בגישה הזו רק בזמן החלת כללי החסימה שלך."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome לא אישר גישה לאתרים. אפשר לנסות שוב."
+  },
+  "onboarding_access_registration_error": {
+    "message": "הגישה לאתרים אושרה, אך Focus Lock לא הצליח להפעיל חסימה. נסה שוב את ההגדרה או טען מחדש את התוסף."
+  },
+  "onboarding_access_enable_button": {
+    "message": "הפעל חסימת אתרים"
+  },
+  "onboarding_access_defer_button": {
+    "message": "לא עכשיו"
+  },
+  "onboarding_sync_heading": {
+    "message": "בחר היכן יישמרו ההגדרות שלך"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "סנכרון בין מכשירי Chrome"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "הנתונים המאושרים שלהלן ישתמשו ב-Chrome Sync לאחר סיום ההגדרה."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "כל נתוני Focus Lock נשארים בפרופיל Chrome הזה."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "מסונכרן"
+  },
+  "onboarding_sync_local_title": {
+    "message": "מקומי בלבד"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "דבר אינו נשלח למפתח של Focus Lock."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "סיים את ההגדרה עם סנכרון מופעל"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "סיים את ההגדרה ללא סנכרון"
+  },
+  "onboarding_site_count_two": {
+    "message": "$COUNT$ אתרים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

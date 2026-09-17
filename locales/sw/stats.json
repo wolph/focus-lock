@@ -15,19 +15,19 @@
     "message": "Hourly attempts na site access credit settkatikags are unavailable."
   },
   "stats_partial_error_economy": {
-    "message": "Tovuti access credit settkatikags are unavailable."
+    "message": "Mikakati ya kufikia tovuti settings are unavailable."
   },
   "stats_scope_synced": {
-    "message": "Synced kwatals from this Chrome account. Local-kwenyely panels are labeled."
+    "message": "Synced totals from hii Chrome account. Local-only panels are labeled."
   },
   "stats_scope_local": {
-    "message": "Totals from this machkatikae. Mtazamo Lock statistics are not synced."
+    "message": "Totals from hii machine. Focus Lock statistics are not synced."
   },
   "stats_scope_checking": {
     "message": "Checkkatikag whether these kwatals are synced."
   },
   "stats_scope_unavailable": {
-    "message": "Statistics scope is unavailable. Totals may katikaclude synced data. Hourly attempts na recent sessikwenyes are from this machkatikae."
+    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from hii machine."
   },
   "stats_scope_retry": {
     "message": "Jaribu tena scope check"
@@ -48,10 +48,10 @@
     "message": "Gate requests dismissed kwaday"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Tovuti access credit spent kwaday"
+    "message": "Mikakati ya kufikia tovuti spent today"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "All sites $ALL_SITES$, kwenyee site $ONE_SITE$, $EARNED$ earned",
+    "message": "Zote sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -107,10 +107,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "Msururu freeze: kwenyee missed day, covered"
+    "message": "Streak freeze: one missed day, cjuu yaed"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active day this mkwenyeth ($MONTH$)",
+    "message": "$COUNT$ active day hii month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -123,7 +123,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active days this mkwenyeth ($MONTH$)",
+    "message": "$COUNT$ active days hii month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -136,7 +136,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Active dates katika $MONTH$: $DAYS$.",
+    "message": "Active dates in $MKWINYOTH$: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -149,7 +149,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "No active dates katika $MONTH$.",
+    "message": "No active dates in $MKWINYOTH$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -167,7 +167,7 @@
     "message": "Kuzuiaed attempts, last 14 days"
   },
   "stats_chart_attempts_empty": {
-    "message": "Kuzuiaed attempts show up here kwenyece a sessikwenye catches kwenyee."
+    "message": "Blocked attempts ongesha up here once a session catches one."
   },
   "stats_chart_sites_heading": {
     "message": "Top kuzuiaed kwavutis, last 30 days"
@@ -176,7 +176,7 @@
     "message": "Nothkatikag blocked yet. That is a fkatikae start."
   },
   "stats_chart_hours_heading": {
-    "message": "Attempts by hour, this machkatikae kwenyely"
+    "message": "Attempts by hour, hii machine only"
   },
   "stats_chart_other_site": {
     "message": "other"
@@ -215,10 +215,10 @@
     "message": "Hauizkwenyetal bar chart"
   },
   "stats_chart_description_bar": {
-    "message": "Bar chart. Use the keyboard kwa move through data pokatikats, au open Tazama as table kwa the same values."
+    "message": "Bar chart. Use the keyboard to move through data points, or open View as kichupole for the same values."
   },
   "stats_chart_description_hbar": {
-    "message": "Hauizkwenyetal bar chart. Use the keyboard kwa move through data pokatikats, au open Tazama as table kwa the same values."
+    "message": "Horizontal bar chart. Use the keyboard to move through data points, or open View as kichupole for the same values."
   },
   "stats_chart_empty_default": {
     "message": "Hapana data yet."
@@ -237,7 +237,7 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "Tazama as table"
+    "message": "View as kichupole"
   },
   "stats_chart_table_category": {
     "message": "Akatikaa"
@@ -249,7 +249,7 @@
     "message": "24-hour kuzuiaed-attempt heat strip"
   },
   "stats_sessions_heading": {
-    "message": "Recent sessikwenyes kwenye this machkatikae"
+    "message": "Recent sessions on hii machine"
   },
   "stats_sessions_empty": {
     "message": "Your first sessikwenye will appear here."
@@ -267,7 +267,7 @@
     "message": "Mtazamoed"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All kwavutis"
+    "message": "Zote sites"
   },
   "stats_sessions_col_one_site": {
     "message": "One kwavuti"
@@ -285,7 +285,7 @@
     "message": "No katikatentikwenye"
   },
   "stats_session_article_label": {
-    "message": "Kikao: $INTENTION$",
+    "message": "Session: $INTENTIKWINYO$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",

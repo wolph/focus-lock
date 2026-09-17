@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "In $MODE$, every site is unavailable except your lahatow list.",
+    "message": "In $MODE$, every site is unavailable except your hayaan list.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -124,16 +124,16 @@
     "message": "Gawsa website blocksag"
   },
   "onboarding_access_local_matching": {
-    "message": "Pokus Lock checks page addresses locally so it can match your selected categoies at sites. It uses website access sa show its blocksag screen at ressae affected pages kung kailan your sessisa ends."
+    "message": "Focus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to ipakita its blocking screen and restore affected pages kapag your session ends."
   },
   "onboarding_access_capability_intro": {
-    "message": "Categoies at cussam domasas can saclude any website. Chrome will thereparae request this capability:"
+    "message": "Categories and custom domains can include any website. Chrome will therefore request ito capability:"
   },
   "onboarding_access_capability": {
     "message": "Read at change all your data sa all websites"
   },
   "onboarding_access_scope_note": {
-    "message": "Pokus Lock uses that access saly while applysag your blocksag rules."
+    "message": "Focus Lock uses iyon access only while applying your blocking rules."
   },
   "onboarding_access_denied": {
     "message": "Chrome did not grant website pag-access. You can retry."
@@ -157,7 +157,7 @@
     "message": "The approved data below will use Chrome Sync after you fsaish setup."
   },
   "onboarding_sync_disabled_note": {
-    "message": "All Pokus Lock data stays sa this Chrome prngile."
+    "message": "Lahat Focus Lock data stays in this Chrome profile."
   },
   "onboarding_sync_synced_title": {
     "message": "I-i-synced"

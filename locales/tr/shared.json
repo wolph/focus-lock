@@ -1,24 +1,49 @@
 {
   "shared_until_stopped": {
-    "message": "Until stopped"
+    "message": "Durdurulana kadar"
   },
   "shared_preset_short": {
-    "message": "short"
+    "message": "kısa"
   },
   "shared_preset_focus": {
-    "message": "focus"
+    "message": "odak"
   },
   "shared_preset_deep_work": {
-    "message": "deep work"
+    "message": "derin çalışma"
   },
   "shared_deep_work_note": {
     "message": "A preference, not science: one long uninterrupted engelle, with no automatic breaks."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ dk toplam, $FOCUS$ dk odak blokları ile",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ dk kesintisiz odak",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
   },
   "shared_start_until_stopped": {
     "message": "Başlat until stopped"
   },
   "shared_lock_until_manual_unlock": {
-    "message": "Lock until manual unlock"
+    "message": "Manuel kilidi aç"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Durdurulana kadar seanslar Esnek veya Engel tutun ve odak ve ara döngüleri kullanamaz."
   },
   "shared_hard_unavailable_reason": {
     "message": "Hard lock is not available for Until stopped: with no timer and no manual end, the seans could never end."
@@ -27,19 +52,53 @@
     "message": "End seans"
   },
   "shared_unlock": {
-    "message": "Unlock"
+    "message": "Kilidi aç"
   },
   "shared_gate_wait_none": {
-    "message": "no wait"
+    "message": "bekleme yok"
   },
   "shared_gate_wait": {
-    "message": "a $SECONDS$-second wait",
+    "message": "bir $SECONDS$ saniyeli bekleme",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
         "example": "10"
       }
     }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ ve yazılı cümle",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Bunu $LABEL$ ile sonlandırana kadar çalışır. Döngüler kapalı.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Bunu kilit açana kadar çalışır: $REQUIREMENT$, sonra $LABEL$. Döngüler kapalı.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Durdurulana kadar tarafından zorlanan döngüler"
   },
   "shared_mode_blacklist": {
     "message": "Engelle selected siteler"
@@ -51,19 +110,19 @@
     "message": "Focus zaman"
   },
   "shared_clock_focus_phase": {
-    "message": "focus phase"
+    "message": "odak aşaması"
   },
   "shared_clock_total_session": {
     "message": "total seans"
   },
   "shared_clock_pause": {
-    "message": "pause"
+    "message": "duraklat"
   },
   "shared_clock_break": {
-    "message": "break"
+    "message": "ara"
   },
   "shared_badge_indefinite": {
-    "message": "ON"
+    "message": "AÇIK"
   },
   "shared_popup_starting": {
     "message": "Focus Lock is starting. Applying your selected kurallar."
@@ -77,23 +136,38 @@
   "shared_popup_transition_error": {
     "message": "Focus Lock could not clean up an incomplete başlat."
   },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock tarayıcı temizliğini bitiremedi."
+  },
   "shared_retry_cleanup": {
-    "message": "Retry cleanup"
+    "message": "Temizliği yeniden dene"
   },
   "shared_end_failed": {
     "message": "Could not end seans. Try again."
+  },
+  "shared_retry_failed": {
+    "message": "Temizliği yeniden denemesi yapılamadı. Yeniden dene."
+  },
+  "shared_action_failed": {
+    "message": "Bu işlem istenmesi yapılamadı. Yeniden dene."
+  },
+  "shared_return_to_work_failed": {
+    "message": "İşe dönüş yapılamadı. Yeniden dene."
+  },
+  "shared_data_clear_pending": {
+    "message": "Focus Lock verisi siliniyor. Temizlik tamamlanıyor."
   },
   "shared_data_clear_error": {
     "message": "Could not sil data. Try again."
   },
   "shared_schedule_window_label": {
-    "message": "Until window ends"
+    "message": "Pencere sonuna kadar"
   },
   "shared_schedule_until_stopped": {
     "message": "Starts on schedule and runs until you durdur it: End seans for Flexible, Unlock through the deliberation gate for Friction. Cycles off."
   },
   "shared_schedule_started_title": {
-    "message": "Focus schedule started"
+    "message": "Odak takvimi başlatıldı"
   },
   "shared_schedule_until_stopped_body": {
     "message": "Active until you durdur it."
@@ -120,22 +194,31 @@
     }
   },
   "shared_outcome_timer_completed": {
-    "message": "Completed"
+    "message": "Tamamlandı"
   },
   "shared_outcome_manual_completed": {
-    "message": "Completed manually"
+    "message": "El ile tamamlandı"
   },
   "shared_outcome_manual_canceled": {
-    "message": "Ended early"
+    "message": "Erken bitti"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Bitti: website erişimi kaybedildi"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Bitti: engelleme kurulumu başarısız"
   },
   "shared_outcome_alarm_failed": {
-    "message": "Ended: timer setup failed"
+    "message": "Bitti: zamanlayıcı kurulumu başarısız"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Bitti: sayfa uygulaması başarısız"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "Ended: recovery failed"
+    "message": "Bitti: kurtarma başarısız"
   },
   "shared_duration_hours_minutes": {
-    "message": "$HOURS$ h $MINUTES$ m",
+    "message": "$HOURS$ s $MINUTES$ d",
     "placeholders": {
       "HOURS": {
         "content": "$1",
@@ -148,7 +231,7 @@
     }
   },
   "shared_duration_minutes": {
-    "message": "$MINUTES$ m",
+    "message": "$MINUTES$ d",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -157,7 +240,7 @@
     }
   },
   "shared_minutes_one": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ d",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -166,7 +249,7 @@
     }
   },
   "shared_minutes_other": {
-    "message": "$COUNT$ min",
+    "message": "$COUNT$ d",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -178,7 +261,16 @@
     "message": "Updating seans"
   },
   "shared_less_than_a_minute": {
-    "message": "Less than a minute"
+    "message": "Bir dakikadan az"
+  },
+  "shared_focus_remaining_break": {
+    "message": "Aranıza kadar $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
   },
   "shared_focus_remaining_session": {
     "message": "$DURATION$ left in this seans",
@@ -189,11 +281,20 @@
       }
     }
   },
+  "shared_cost_exceeds_limit": {
+    "message": "Maliyet kredi limitini aşıyor"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Kredi kazanımı odak sırasında devam ediyor"
+  },
+  "shared_credit_off": {
+    "message": "Kredi kazanımı kapalı"
+  },
   "shared_not_enough_time": {
     "message": "Not enough zaman in this focus engelle"
   },
   "shared_ready_in": {
-    "message": "Ready in $CLOCK$",
+    "message": "İçinde hazır $CLOCK$",
     "placeholders": {
       "CLOCK": {
         "content": "$1",
@@ -227,19 +328,19 @@
     "message": "Engellendi by your engelle list"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "Not on your allow list"
+    "message": "İzin listenizde değil"
   },
   "shared_verdict_blocked_session": {
     "message": "Engellendi by this seans"
   },
   "shared_verdict_allow_list": {
-    "message": "On your allow list"
+    "message": "İzin listenizde"
   },
   "shared_verdict_always_allowed": {
-    "message": "Always allowed"
+    "message": "Her zaman izin verilir"
   },
   "shared_verdict_unlock": {
-    "message": "Temporarily unlocked"
+    "message": "Geçici olarak kilidi açıldı"
   },
   "shared_verdict_excluded": {
     "message": "Excluded from a selected kategori"
@@ -260,16 +361,16 @@
     "message": "Haber"
   },
   "shared_category_mail": {
-    "message": "Mail"
+    "message": "Posta"
   },
   "shared_category_shopping": {
     "message": "Alışveriş"
   },
   "shared_category_gaming": {
-    "message": "Gaming"
+    "message": "Oyun"
   },
   "shared_category_forums": {
-    "message": "Forums and boredom"
+    "message": "Forumlar ve sıkılma"
   },
   "shared_synced_settings": {
     "message": "Ayarlar"
@@ -278,19 +379,19 @@
     "message": "Engelle and allow lists"
   },
   "shared_synced_credit": {
-    "message": "Site access credit"
+    "message": "Site erişim kredisi"
   },
   "shared_synced_streaks": {
-    "message": "Streaks"
+    "message": "Seriler"
   },
   "shared_synced_aggregates": {
     "message": "Domain-level engellendi-attempt aggregates"
   },
   "shared_local_full_urls": {
-    "message": "Full URLs"
+    "message": "Tam URL'ler"
   },
   "shared_local_intentions": {
-    "message": "Focus intentions"
+    "message": "Odak niyetleri"
   },
   "shared_local_events": {
     "message": "Detailed seans events"
@@ -308,46 +409,68 @@
     "message": "Focus Lock"
   },
   "shared_nav_product": {
-    "message": "Product navigation"
+    "message": "Ürün navigasyonu"
   },
   "shared_nav_overview": {
-    "message": "Overview"
+    "message": "Genel bakış"
   },
   "shared_nav_settings": {
     "message": "Ayarlar"
   },
   "shared_section_blocking": {
-    "message": "Blocking"
+    "message": "Engelleme"
   },
   "shared_section_schedule": {
-    "message": "Schedule"
+    "message": "Zaman çizelgesi"
   },
   "shared_section_behavior": {
     "message": "Seans behavior"
   },
   "shared_section_budget": {
-    "message": "Site access credit"
+    "message": "Site erişim kredisi"
   },
   "shared_section_notifications": {
-    "message": "Notifications"
+    "message": "Bildirimler"
   },
   "shared_section_privacy": {
-    "message": "Privacy and data"
+    "message": "Gizlilik ve veriler"
   },
   "shared_theme_auto": {
-    "message": "Auto"
+    "message": "Otomatik"
   },
   "shared_theme_light": {
-    "message": "Light"
+    "message": "Açık"
   },
   "shared_theme_dark": {
-    "message": "Dark"
+    "message": "Koyu"
+  },
+  "shared_theme_button": {
+    "message": "Tema: $CURRENT$. Şuna geç: $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
   },
   "shared_theme_error": {
     "message": "Could not kaydet theme. Reload page and try again."
   },
   "shared_host_search_label": {
     "message": "Search $TITLE$ siteler",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Aramanızla eşleşen $TITLE$ sitesi yok.",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -394,7 +517,7 @@
     "message": "End the seans"
   },
   "shared_overlay_starting_title": {
-    "message": "Focus Lock is starting"
+    "message": "Focus Lock başlıyor"
   },
   "shared_overlay_starting_detail": {
     "message": "Applying your selected kurallar."
@@ -403,28 +526,66 @@
     "message": "This page did not load. It will load by itself when the seans ends."
   },
   "shared_overlay_next_step": {
-    "message": "Your next step"
+    "message": "Sonraki adımın"
   },
   "shared_overlay_back_to_work": {
-    "message": "Back to work"
+    "message": "İşe geri dön"
   },
   "shared_overlay_choose_work_tab": {
-    "message": "Choose a work tab"
+    "message": "İş sekmesi seç"
   },
   "shared_overlay_change_work_tab": {
-    "message": "Change work tab"
+    "message": "İş sekmesi değiştir"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Ara mı veya site erişimi mi lazım?"
   },
   "shared_overlay_access_note": {
     "message": "You can step away at any zaman. Site access uses credit."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Zaman aşımını göz ardı et ve bitir"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock bu işlemi güncelleyemedi. Yeniden dene."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ site erişim kredisi",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Mevcut görevini devam et"
   },
   "shared_overlay_pause_action": {
     "message": "Unlock all siteler"
   },
   "shared_overlay_unlock_site_action": {
-    "message": "Unlock this site"
+    "message": "Bu siteyi aç"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - $COST$ kredi gider",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
   },
   "shared_overlay_locked_until": {
-    "message": "Locked until $TIME$",
+    "message": "$TIME$ kadar kilitli",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -433,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "You said: $INTENTION$",
+    "message": "Söyledin: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -442,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "Unlock $HOST$ $CLOCK$",
+    "message": "$HOST$ kilidini aç $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -455,10 +616,10 @@
     }
   },
   "shared_gate_back": {
-    "message": "Keep focusing"
+    "message": "Odaklanmaya devam et"
   },
   "shared_gate_phrase_label": {
-    "message": "Type this to confirm:"
+    "message": "Doğrulamak için bunu yaz:"
   },
   "shared_gate_end_title": {
     "message": "End this seans"

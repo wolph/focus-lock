@@ -15,19 +15,19 @@
     "message": "Hourly attempts at site access credit settsags are unavailable."
   },
   "stats_partial_error_economy": {
-    "message": "Site access credit settsags are unavailable."
+    "message": "Credit sa access ng site settings are unavailable."
   },
   "stats_scope_synced": {
-    "message": "Synced satals from this Chrome account. Local-saly panels are labeled."
+    "message": "Synced totals from ito Chrome account. Local-only panels are labeled."
   },
   "stats_scope_local": {
-    "message": "Totals from this machsae. Pokus Lock statistics are not synced."
+    "message": "Totals from ito machine. Focus Lock statistics are not synced."
   },
   "stats_scope_checking": {
     "message": "Checksag whether these satals are synced."
   },
   "stats_scope_unavailable": {
-    "message": "Statistics scope is unavailable. Totals may saclude synced data. Hourly attempts at recent sessisas are from this machsae."
+    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from ito machine."
   },
   "stats_scope_retry": {
     "message": "Subukan muli scope check"
@@ -48,10 +48,10 @@
     "message": "Gate requests dismissed saday"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent saday"
+    "message": "Credit sa access ng site spent today"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "All sites $ALL_SITES$, sae site $ONE_SITE$, $EARNED$ earned",
+    "message": "Lahat sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -107,10 +107,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "Sunod-sunod freeze: sae missed day, covered"
+    "message": "Streak freeze: one missed day, csa itaased"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active day this msath ($MONTH$)",
+    "message": "$COUNT$ active day ito month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -123,7 +123,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active days this msath ($MONTH$)",
+    "message": "$COUNT$ active days ito month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -136,7 +136,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Active dates sa $MONTH$: $DAYS$.",
+    "message": "Active dates in $MBUKASTH$: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -149,7 +149,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "No active dates sa $MONTH$.",
+    "message": "No active dates in $MBUKASTH$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -167,7 +167,7 @@
     "message": "Hadlanged attempts, last 14 days"
   },
   "stats_chart_attempts_empty": {
-    "message": "Hadlanged attempts show up here sace a sessisa catches sae."
+    "message": "Blocked attempts ipakita up here once a session catches one."
   },
   "stats_chart_sites_heading": {
     "message": "Top hadlanged sites, last 30 days"
@@ -176,7 +176,7 @@
     "message": "Nothsag blocked yet. That is a fsae start."
   },
   "stats_chart_hours_heading": {
-    "message": "Attempts by hour, this machsae saly"
+    "message": "Attempts by hour, ito machine only"
   },
   "stats_chart_other_site": {
     "message": "other"
@@ -249,7 +249,7 @@
     "message": "24-hour hadlanged-attempt heat strip"
   },
   "stats_sessions_heading": {
-    "message": "Recent sessisas sa this machsae"
+    "message": "Recent sessions on ito machine"
   },
   "stats_sessions_empty": {
     "message": "Your first sessisa will appear here."
@@ -285,7 +285,7 @@
     "message": "No satentisa"
   },
   "stats_session_article_label": {
-    "message": "Sesysa: $INTENTION$",
+    "message": "Session: $INTENTIBUKAS$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",

@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "In $MODE$, every kwavuti is unavailable except your allow list.",
+    "message": "In $MODE$, every site is unavailable except your ruhusu list.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -124,16 +124,16 @@
     "message": "Kuweka website blockkatikag"
   },
   "onboarding_access_local_matching": {
-    "message": "Mtazamo Lock checks page addresses locally so it can match your selected categauies na sites. It uses website access kwa show its blockkatikag screen na restaue affected pages wakati your sessikwenye ends."
+    "message": "Focus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to ongesha its blocking screen and restore affected pages wakati your session ends."
   },
   "onboarding_access_capability_intro": {
-    "message": "Categauies na cuskwam domakatikas can katikaclude any website. Chrome will therekwae request this capability:"
+    "message": "Categories and custom domains can include any website. Chrome will therefore request hii capability:"
   },
   "onboarding_access_capability": {
     "message": "Read na change all your data kwenye all websites"
   },
   "onboarding_access_scope_note": {
-    "message": "Mtazamo Lock uses that access kwenyely while applykatikag your blockkatikag rules."
+    "message": "Focus Lock uses hiyo access only while applying your blocking rules."
   },
   "onboarding_access_denied": {
     "message": "Chrome did not grant webkwavuti kufikia. You can retry."
@@ -157,7 +157,7 @@
     "message": "The approved data below will use Chrome Sync after you fkatikaish setup."
   },
   "onboarding_sync_disabled_note": {
-    "message": "All Mtazamo Lock data stays katika this Chrome prwaile."
+    "message": "Zote Focus Lock data stays in this Chrome profile."
   },
   "onboarding_sync_synced_title": {
     "message": "Pangaed"

@@ -1,1 +1,645 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "Kým nezastavíš"
+  },
+  "shared_preset_short": {
+    "message": "krátka"
+  },
+  "shared_preset_focus": {
+    "message": "sústredenie"
+  },
+  "shared_preset_deep_work": {
+    "message": "hlboká práca"
+  },
+  "shared_deep_work_note": {
+    "message": "Je to preferencia, nie veda: jeden dlhý neprerušený blok bez automatických prestávok."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "celkom $MINUTES$ min, s blokmi sústredenia po $FOCUS$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min neprerušeného sústredenia",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Spustiť, kým nezastavíš"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Zamknúť do ručného odomknutia"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Relácie, ktoré bežia kým nezastavíš, zostávajú flexibilné alebo s trením a nemôžu používať cyklus sústredenia a prestávok."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Tvrdý zámok nie je pri voľbe Kým nezastavíš dostupný: bez časovača a bez ručného konca by relácia nikdy neskončila."
+  },
+  "shared_end_session": {
+    "message": "Ukončiť reláciu"
+  },
+  "shared_unlock": {
+    "message": "Odomknúť"
+  },
+  "shared_gate_wait_none": {
+    "message": "bez čakania"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ sekúnd čakania",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ a napísaná veta",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Beží, kým ju neukončíš cez $LABEL$. Cykly vypnuté.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Beží, kým ju neodomkneš: $REQUIREMENT$, potom $LABEL$. Cykly vypnuté.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Cykly vynútené voľbou Kým nezastavíš"
+  },
+  "shared_mode_blacklist": {
+    "message": "Blokovať vybrané weby"
+  },
+  "shared_mode_whitelist": {
+    "message": "Povoliť len vybrané weby"
+  },
+  "shared_focus_time_label": {
+    "message": "Čas sústredenia"
+  },
+  "shared_clock_focus_phase": {
+    "message": "fáza sústredenia"
+  },
+  "shared_clock_total_session": {
+    "message": "celá relácia"
+  },
+  "shared_clock_pause": {
+    "message": "pozastavené"
+  },
+  "shared_clock_break": {
+    "message": "prestávka"
+  },
+  "shared_badge_indefinite": {
+    "message": "ZAP"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock sa spúšťa. Uplatňuje tvoje vybrané pravidlá."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Relácia sa skončila. Dokončujem upratanie v prehliadači."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock sa nepodarilo spustiť. Dokončujem upratanie v prehliadači."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock nemohol upratať po nedokončenom štarte."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock nemohol dokončiť upratanie v prehliadači."
+  },
+  "shared_retry_cleanup": {
+    "message": "Skúsiť upratanie znova"
+  },
+  "shared_end_failed": {
+    "message": "Reláciu sa nepodarilo ukončiť. Skús to znova."
+  },
+  "shared_retry_failed": {
+    "message": "Upratanie sa nepodarilo zopakovať. Skús to znova."
+  },
+  "shared_action_failed": {
+    "message": "Túto akciu sa nepodarilo vyžiadať. Skús to znova."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Návrat k práci sa nepodaril. Skús to znova."
+  },
+  "shared_data_clear_pending": {
+    "message": "Mažem údaje Focus Lock. Dokončujem upratanie."
+  },
+  "shared_data_clear_error": {
+    "message": "Údaje sa nepodarilo zmazať. Skús to znova."
+  },
+  "shared_schedule_window_label": {
+    "message": "Do konca okna"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Spustí sa podľa plánu a beží, kým ju nezastavíš: Ukončiť reláciu pri flexibilnej, Odomknúť cez čas na rozmyslenie pri trení. Cykly vypnuté."
+  },
+  "shared_schedule_started_title": {
+    "message": "Plán sústredenia spustený"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Aktívna, kým ju nezastavíš."
+  },
+  "shared_settings_indefinite": {
+    "message": "Beží relácia Kým nezastavíš. Pozri si ju alebo ju ukonči v okne na paneli."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock sa spúšťa. Kontroluje prístup k webom a uplatňuje tvoje pravidlá."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock nemohol dokončiť upratanie v prehliadači. Otvor okno na paneli a skús to znova."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Ovládanie relácie patrí oknu na paneli. Aktívna relácia si drží pravidlá zachytené pri svojom štarte."
+  },
+  "shared_settings_timed": {
+    "message": "Relácia s časovačom beží do $TIME$. Skončí sama. Aktuálny stav nájdeš v okne na paneli.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Dokončené"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Dokončené ručne"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Ukončené predčasne"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Ukončené: stratený prístup k webom"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Ukončené: nastavenie blokovania zlyhalo"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Ukončené: nastavenie časovača zlyhalo"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Ukončené: uplatnenie na stránkach zlyhalo"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Ukončené: obnovenie zlyhalo"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ min",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Aktualizujem reláciu"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Menej ako minúta"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ do prestávky",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ zostáva v tejto relácii",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Cena presahuje limit kreditu"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Kredit sa opäť načítava pri sústredení"
+  },
+  "shared_credit_off": {
+    "message": "Načítavanie kreditu je vypnuté"
+  },
+  "shared_not_enough_time": {
+    "message": "V tomto bloku sústredenia nie je dosť času"
+  },
+  "shared_ready_in": {
+    "message": "Pripravené o $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Blokované kategóriou $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Blokované tvojím zoznamom blokovaných"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Nie je na tvojom zozname povolených"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Blokované touto reláciou"
+  },
+  "shared_verdict_allow_list": {
+    "message": "Je na tvojom zozname povolených"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Vždy povolené"
+  },
+  "shared_verdict_unlock": {
+    "message": "Dočasne odomknuté"
+  },
+  "shared_verdict_excluded": {
+    "message": "Vyňaté z vybranej kategórie"
+  },
+  "shared_verdict_no_session": {
+    "message": "Žiadna aktívna relácia sústredenia"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Povolené touto reláciou"
+  },
+  "shared_category_social": {
+    "message": "Sociálne siete"
+  },
+  "shared_category_video": {
+    "message": "Video a streamovanie"
+  },
+  "shared_category_news": {
+    "message": "Správy"
+  },
+  "shared_category_mail": {
+    "message": "E-mail"
+  },
+  "shared_category_shopping": {
+    "message": "Nakupovanie"
+  },
+  "shared_category_gaming": {
+    "message": "Hry"
+  },
+  "shared_category_forums": {
+    "message": "Fóra a nuda"
+  },
+  "shared_synced_settings": {
+    "message": "Nastavenia"
+  },
+  "shared_synced_lists": {
+    "message": "Zoznamy blokovaných a povolených"
+  },
+  "shared_synced_credit": {
+    "message": "Kredit na prístup"
+  },
+  "shared_synced_streaks": {
+    "message": "Série"
+  },
+  "shared_synced_aggregates": {
+    "message": "Súhrny blokovaných pokusov po doménach"
+  },
+  "shared_local_full_urls": {
+    "message": "Celé URL"
+  },
+  "shared_local_intentions": {
+    "message": "Predsavzatia sústredenia"
+  },
+  "shared_local_events": {
+    "message": "Podrobné udalosti relácií"
+  },
+  "shared_local_runtime": {
+    "message": "Aktívna bežiaca relácia"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Niektoré synchronizované údaje zo staršej verzie sa nepodarilo prečítať a boli resetované."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Skôr než zmažeš všetky údaje, ukonči bežiacu reláciu."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "Navigácia produktu"
+  },
+  "shared_nav_overview": {
+    "message": "Prehľad"
+  },
+  "shared_nav_settings": {
+    "message": "Nastavenia"
+  },
+  "shared_section_blocking": {
+    "message": "Blokovanie"
+  },
+  "shared_section_schedule": {
+    "message": "Plán"
+  },
+  "shared_section_behavior": {
+    "message": "Správanie relácie"
+  },
+  "shared_section_budget": {
+    "message": "Kredit na prístup"
+  },
+  "shared_section_notifications": {
+    "message": "Oznámenia"
+  },
+  "shared_section_privacy": {
+    "message": "Súkromie a údaje"
+  },
+  "shared_theme_auto": {
+    "message": "Systém"
+  },
+  "shared_theme_light": {
+    "message": "Svetlý"
+  },
+  "shared_theme_dark": {
+    "message": "Tmavý"
+  },
+  "shared_theme_button": {
+    "message": "Motív: $CURRENT$. Prepnúť na $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Motív sa nepodarilo uložiť. Znova načítaj stránku a skús to znova."
+  },
+  "shared_host_search_label": {
+    "message": "Hľadať weby kategórie $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Tvojmu hľadaniu nezodpovedá žiadny web kategórie $TITLE$.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Zobrazených $SHOWN$ z $MATCHED$ webov. Hľadaním zoznam zúžiš.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Zobrazených $MATCHED$ z $TOTAL$ webov.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Zobrazených všetkých $TOTAL$ webov.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Ukončiť reláciu"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock sa spúšťa"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Uplatňujem tvoje vybrané pravidlá."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Táto stránka sa nenačítala. Načíta sa sama, keď relácia skončí."
+  },
+  "shared_overlay_next_step": {
+    "message": "Tvoj ďalší krok"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Späť do práce"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Vyber pracovnú kartu"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Zmeniť pracovnú kartu"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Potrebuješ pauzu alebo prístup k webu?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Kedykoľvek môžeš odísť. Prístup k webu stojí kredit."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Ignorovať čakanie a aj tak ukončiť"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock nemohol túto akciu aktualizovať. Skús to znova."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ kreditu na prístup",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Pokračuj vo svojej úlohe"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Odomknúť všetky weby"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Odomknúť tento web"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - stojí $COST$ kreditu",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Zamknuté do $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Povedal si: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Odomknúť $HOST$ na $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Sústreď sa ďalej"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Na potvrdenie napíš:"
+  },
+  "shared_gate_end_title": {
+    "message": "Ukončiť túto reláciu"
+  },
+  "shared_minutes_few": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_minutes_many": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

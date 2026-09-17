@@ -37,16 +37,16 @@
     }
   },
   "shared_start_until_stopped": {
-    "message": "Mulai until hentikanped"
+    "message": "Start sampai stopped"
   },
   "shared_lock_until_manual_unlock": {
-    "message": "Lock until manual unlock"
+    "message": "Lock sampai manual buka kunci"
   },
   "shared_until_stopped_disclosure": {
     "message": "Until hentikanped sesis keep Fleksibel padaau Gesekan dan cannot use fokus dan istirahpada sikluss."
   },
   "shared_hard_unavailable_reason": {
-    "message": "Keras lock is not available untuk Until hentikanped: dengan no waktur dan no manual end, the sesi could never end."
+    "message": "Kunci keras is not available for Until stopped: with no timer and no manual end, the session could never end."
   },
   "shared_end_session": {
     "message": "End sesi"
@@ -58,7 +58,7 @@
     "message": "tidak wait"
   },
   "shared_gate_wait": {
-    "message": "a $SECONDS$-secpadad wait",
+    "message": "a $SECHIDUPDS$-second wait",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -76,7 +76,7 @@
     }
   },
   "shared_until_stopped_hint_flexible": {
-    "message": "Runs until you end it dengan $LABEL$. Sikluss darif.",
+    "message": "Runs sampai you end it with $LABEL$. Cycles mati.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -85,7 +85,7 @@
     }
   },
   "shared_until_stopped_hint_friction": {
-    "message": "Runs until you unlock it: $REQUIREMENT$, then $LABEL$. Sikluss darif.",
+    "message": "Runs sampai you buka kunci it: $REQUIREMENT$, then $LABEL$. Cycles mati.",
     "placeholders": {
       "REQUIREMENT": {
         "content": "$1",
@@ -104,7 +104,7 @@
     "message": "Blokir selected situss"
   },
   "shared_mode_whitelist": {
-    "message": "Allow selected situss padaly"
+    "message": "Semuaow selected sites only"
   },
   "shared_focus_time_label": {
     "message": "Fokus waktu"
@@ -122,13 +122,13 @@
     "message": "istirahpada"
   },
   "shared_badge_indefinite": {
-    "message": "ON"
+    "message": "HIDUP"
   },
   "shared_popup_starting": {
     "message": "Fokus Lock is mulaidalamg. Applydalamg your selected padaurans."
   },
   "shared_popup_closure_cleanup": {
-    "message": "Sesi ended. Fdalamishdalamg browser cleanup."
+    "message": "Sesi berakhir. Finishing browser cleanup."
   },
   "shared_popup_transition_cleanup": {
     "message": "Fokus Lock could not mulai. Fdalamishdalamg browser cleanup."
@@ -149,7 +149,7 @@
     "message": "Could not retry cleanup. Try agadalam."
   },
   "shared_action_failed": {
-    "message": "Could not request thpada actipada. Try agadalam."
+    "message": "Could not request itu action. Try again."
   },
   "shared_return_to_work_failed": {
     "message": "Could not return ke kerja. Try agadalam."
@@ -164,16 +164,16 @@
     "message": "Until wdalamdow ends"
   },
   "shared_schedule_until_stopped": {
-    "message": "Mulais pada schedule dan runs until you hentikan it: End sesi untuk Fleksibel, Unlock through the deliberpadaipada gpadae untuk Gesekan. Sikluss darif."
+    "message": "Starts on schedule and runs sampai you stop it: End session for Flexible, Unlock through the deliberation gate for Friction. Cycles mati."
   },
   "shared_schedule_started_title": {
     "message": "Fokus schedule mulaied"
   },
   "shared_schedule_until_stopped_body": {
-    "message": "Active until you hentikan it."
+    "message": "Active sampai you stop it."
   },
   "shared_settings_indefinite": {
-    "message": "Until hentikanped sesi active. Use the keolbar popup ke lihpada padaau end it."
+    "message": "Until stopped session active. Use the toolbar popup to lihat or end it."
   },
   "shared_settings_starting": {
     "message": "Fokus Lock is mulaidalamg. Checkdalamg websitus akses dan applydalamg your padaurans."
@@ -182,10 +182,10 @@
     "message": "Fokus Lock could not fdalamish browser cleanup. Buka the popup dan retry."
   },
   "shared_settings_session_disclosure": {
-    "message": "The keolbar popup owns sesi cpadpadarols. The active sesi keeps the padaurans captured ketika it mulaied."
+    "message": "The toolbar popup owns session controls. The active session keeps the rules captured ketika it started."
   },
   "shared_settings_timed": {
-    "message": "Waktud sesi active until $TIME$. It ends aukempadaically. Use the keolbar popup untuk live stpadaus.",
+    "message": "Timed session active sampai $TIME$. It ends automatically. Use the toolbar popup for live status.",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -215,7 +215,7 @@
     "message": "Ended: page enuntukcement gagal"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "Ended: recovery gagal"
+    "message": "Ended: recdi atasy failed"
   },
   "shared_duration_hours_minutes": {
     "message": "$HOURS$ h $MINUTES$ m",
@@ -261,10 +261,10 @@
     "message": "Updpadadalamg sesi"
   },
   "shared_less_than_a_minute": {
-    "message": "Less than a mdalamute"
+    "message": "Less dari a minute"
   },
   "shared_focus_remaining_break": {
-    "message": "$DURATION$ until your istirahpada",
+    "message": "$DURATION$ sampai your break",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -273,7 +273,7 @@
     }
   },
   "shared_focus_remaining_session": {
-    "message": "$DURATION$ left dalam this sesi",
+    "message": "$DURATION$ left in ini session",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -288,10 +288,10 @@
     "message": "Kredit earndalamg lanjutkans durdalamg fokus"
   },
   "shared_credit_off": {
-    "message": "Kredit earndalamg is turned darif"
+    "message": "Credit earning is turned mati"
   },
   "shared_not_enough_time": {
-    "message": "Not enough waktu dalam this fokus blokir"
+    "message": "Not enough time in ini focus block"
   },
   "shared_ready_in": {
     "message": "Ready dalam $CLOCK$",
@@ -328,19 +328,19 @@
     "message": "Blokired oleh your blokir list"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "Not pada your allow list"
+    "message": "Not on your izinkan list"
   },
   "shared_verdict_blocked_session": {
-    "message": "Blokired oleh this sesi"
+    "message": "Blocked by ini session"
   },
   "shared_verdict_allow_list": {
-    "message": "On your semuaow list"
+    "message": "On your izinkan list"
   },
   "shared_verdict_always_allowed": {
-    "message": "Always semuaowed"
+    "message": "Always izinkaned"
   },
   "shared_verdict_unlock": {
-    "message": "Temppadaauarily unlocked"
+    "message": "Temporarily buka kuncied"
   },
   "shared_verdict_excluded": {
     "message": "Excluded from a selected kpadaegpadaaui"
@@ -349,7 +349,7 @@
     "message": "No active fokus sesi"
   },
   "shared_verdict_allowed_session": {
-    "message": "Allowed oleh this sesi"
+    "message": "Semuaowed by this session"
   },
   "shared_category_social": {
     "message": "Social media"
@@ -376,10 +376,10 @@
     "message": "Pengpadauran"
   },
   "shared_synced_lists": {
-    "message": "Blokir dan allow lists"
+    "message": "Block and izinkan lists"
   },
   "shared_synced_credit": {
-    "message": "Situs akses kredit"
+    "message": "Kredit akses laman"
   },
   "shared_synced_streaks": {
     "message": "Gariss"
@@ -412,7 +412,7 @@
     "message": "Product navigpadaipada"
   },
   "shared_nav_overview": {
-    "message": "Overlihpada"
+    "message": "Overlihat"
   },
   "shared_nav_settings": {
     "message": "Pengpadauran"
@@ -424,10 +424,10 @@
     "message": "Schedule"
   },
   "shared_section_behavior": {
-    "message": "Sesi behavipadaau"
+    "message": "Perilaku sesi"
   },
   "shared_section_budget": {
-    "message": "Situs akses kredit"
+    "message": "Kredit akses laman"
   },
   "shared_section_notifications": {
     "message": "Notificpadaipadas"
@@ -523,7 +523,7 @@
     "message": "Applydalamg your selected padaurans."
   },
   "shared_overlay_stopped_page": {
-    "message": "This page did not load. It will load oleh itself ketika the sesi ends."
+    "message": "This page did not load. It will load by itself ketika the session ends."
   },
   "shared_overlay_next_step": {
     "message": "Your berikutnya step"
@@ -547,7 +547,7 @@
     "message": "Ignpadaaue waktuout dan end anyway"
   },
   "shared_overlay_transport_error": {
-    "message": "Fokus Lock could not updpadae this actipada. Try agadalam."
+    "message": "Focus Lock could not update ini action. Try again."
   },
   "shared_overlay_bank_amount": {
     "message": "$AMOUNT$ situs akses kredit",
@@ -565,7 +565,7 @@
     "message": "Unlock all situss"
   },
   "shared_overlay_unlock_site_action": {
-    "message": "Unlock this situs"
+    "message": "Unlock ini site"
   },
   "shared_overlay_spend_action": {
     "message": "$LABEL$ $LENGTH$ - costs $COST$ kredit",
@@ -585,7 +585,7 @@
     }
   },
   "shared_overlay_locked_until": {
-    "message": "Locked until $TIME$",
+    "message": "Locked sampai $TIME$",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -594,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "You said: $INTENTION$",
+    "message": "You said: $INTENTIHIDUP$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -619,9 +619,9 @@
     "message": "Keep fokusdalamg"
   },
   "shared_gate_phrase_label": {
-    "message": "Tipe this ke cpadafirm:"
+    "message": "Type ini to confirm:"
   },
   "shared_gate_end_title": {
-    "message": "End this sesi"
+    "message": "End ini session"
   }
 }

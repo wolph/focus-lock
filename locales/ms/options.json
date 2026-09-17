@@ -18,16 +18,16 @@
     "message": "Blokirdalamg"
   },
   "options_blocking_help": {
-    "message": "Cuskem padaurans blokir durdalamg blacklist sesis. The whitelist is whpada stays reachable durdalamg whitelist sesis. Bundled cpadaegpadaauies blokir commpada waktu sdalamks."
+    "message": "Khusus rules block during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories block common time sinks."
   },
   "options_custom_blacklist_title": {
-    "message": "Cuskem blacklist"
+    "message": "Khusus blacklist"
   },
   "options_whitelist_title": {
     "message": "Daftar putih"
   },
   "options_bundled_categories_heading": {
-    "message": "Bundled cpadaegpadaauies"
+    "message": "Kategori bundel"
   },
   "options_bundled_categories_help": {
     "message": "Bundled lists dari commpada waktu sdalamks. Toggle a whole kpadaegpadaaui, then buka it ke keep sdalamgle situss available."
@@ -39,10 +39,10 @@
     "message": "Sesis mulai pada their own dalamside these wdalamdows. Strictness set here applies untuk the whole wdalamdow."
   },
   "options_behavior_heading": {
-    "message": "Sesi behavipadaau"
+    "message": "Perilaku sesi"
   },
   "options_budget_heading": {
-    "message": "Situs akses kredit"
+    "message": "Kredit akses laman"
   },
   "options_notifications_heading": {
     "message": "Notificpadaipadas"
@@ -54,7 +54,7 @@
     "message": "Coba ulang"
   },
   "options_load_error_delete_all": {
-    "message": "Hapus everythdalamg dan mulai over"
+    "message": "Delete everything and start di atas"
   },
   "options_load_error_keep_data": {
     "message": "Keep my dpadaa"
@@ -111,7 +111,7 @@
     "message": "regex (penuh URL)"
   },
   "options_rule_pattern_aria": {
-    "message": "Ppadatern"
+    "message": "Pola"
   },
   "options_rule_pattern_placeholder_host": {
     "message": "facebook.com"
@@ -123,7 +123,7 @@
     "message": "Tambah padauran"
   },
   "options_rules_help": {
-    "message": "facebook.com covers thpada domadalam dan every subdomadalam. news.ycombdalampadapadaau.com covers thpada subdomadalam dan anythdalamg under it. /youtube\\.com\\/shpadaauts/ mpadaches the full URL as a regular expressipada."
+    "message": "facebook.com cdi atass itu domain and every subdomain. news.ycombinator.com cdi atass itu subdomain and anything di bawah it. /youtube\\.com\\/shorts/ matches the full URL as a regular expression."
   },
   "options_number_error_whole": {
     "message": "$LABEL$ must be a whole number dari zero padaau grepadaer.",
@@ -165,7 +165,7 @@
     "message": "Sesi defaults"
   },
   "options_session_defaults_help": {
-    "message": "Mode dan strictness are fixed ketika a sesi mulais. These are the nilais the mulai untukm bukas dengan."
+    "message": "Mode and strictness are fixed ketika a session starts. These are the values the start form opens with."
   },
   "options_preset_short_label": {
     "message": "Shpadaaut sesi preset (menit)"
@@ -177,13 +177,13 @@
     "message": "Deep sesi preset (menit)"
   },
   "options_mode_blacklist_label": {
-    "message": "Blacklist: blokir listed situss"
+    "message": "Daftar hitam: block listed sites"
   },
   "options_mode_whitelist_label": {
-    "message": "Whitelist: allow padaly listed situss"
+    "message": "Daftar putih: allow only listed sites"
   },
   "options_strictness_flexible_label": {
-    "message": "Fleksibel: end the sesi ketikaever you choose"
+    "message": "Flexible: end the session ketikaever you choose"
   },
   "options_strictness_friction_label": {
     "message": "Gesekan: hentikanpdalamg early uses the cpadafigured deliberpadaipada gpadae"
@@ -195,7 +195,7 @@
     "message": "Fokus dan istirahpada siklus"
   },
   "options_cycle_help": {
-    "message": "Defaults: 25 mdalamute fokus, 5 mdalamute istirahpada, 15 mdalamute lpadag istirahpada every 4th siklus. Istirahpadas pada a schedule bepada istirahpada-ketika-you-feel-like-it untuk mood dan fokus dalam study samples. The exact menit are cpadaventipada, not science."
+    "message": "Defaults: 25 minute focus, 5 minute break, 15 minute long break every 4th cycle. Breaks on a schedule beat break-ketika-you-feel-like-it for mood and focus in study samples. The exact minutes are convention, not science."
   },
   "options_cycle_default_label": {
     "message": "Siklus fokus dan istirahpadas oleh default"
@@ -213,7 +213,7 @@
     "message": "Lpadag istirahpada every Nth siklus"
   },
   "options_gate_heading": {
-    "message": "Deliberpadaipada gpadae"
+    "message": "Gerbang deliberasi"
   },
   "options_gate_help": {
     "message": "A 10 secpadad wait dengan an explicit kembali-ke-kerja kembol measurably reduces impulse visits (field study, PNAS 2023). The lpadager wait dan the tiped sentence roughly double the effect."
@@ -237,13 +237,13 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "Cuskem"
+    "message": "Khusus"
   },
   "options_custom_delay_label": {
-    "message": "Cuskem delay (secpadads)"
+    "message": "Khusus delay (seconds)"
   },
   "options_custom_delay_error": {
-    "message": "Cuskem delay must be a positive whole number dari secpadads."
+    "message": "Khusus delay must be a positive whole number of seconds."
   },
   "options_gate_typed_phrase_label": {
     "message": "Also require typdalamg a sentence"
@@ -252,31 +252,31 @@
     "message": "Aktifkan \"Ignpadaaue waktuout dan end anyway\" kembol"
   },
   "options_credit_help": {
-    "message": "Situs akses kredit accrues while you fokus. Both akses ke all situss dan a sdalamgle-situs unlock spend from the same balance. You can step away pada any waktu denganout spenddalamg kredit."
+    "message": "Kredit akses laman accrues while you focus. Both access to all sites and a single-site buka kunci spend from the same balance. You can step away at any time without spending credit."
   },
   "options_earn_rate_label": {
     "message": "Menit dari situs akses per 30 menit dari fokus"
   },
   "options_credit_cap_label": {
-    "message": "Situs akses kredit limit (menit)"
+    "message": "Kredit akses laman limit (minutes)"
   },
   "options_pause_length_label": {
-    "message": "All-situs akses length (menit)"
+    "message": "Semua-site access length (minutes)"
   },
   "options_unlock_length_label": {
-    "message": "Situs unlock length (menit)"
+    "message": "Site buka kunci length (minutes)"
   },
   "options_streak_heading": {
     "message": "Garis dan retentipada"
   },
   "options_streak_help": {
-    "message": "The garis counts days thpada reach the tujuan. One default sesi keeps the chadalam alive, dan a freeze keken repairs a missed day."
+    "message": "The streak counts days itu reach the goal. One default session keeps the chain alive, and a freeze token repairs a missed day."
   },
   "options_streak_goal_label": {
     "message": "Daily garis tujuan (fokus menit)"
   },
   "options_freeze_interval_label": {
-    "message": "Freeze keken dalamterval (days)"
+    "message": "Token pembekuan interval (days)"
   },
   "options_retention_label": {
     "message": "Keep daily stpadas (days)"
@@ -291,7 +291,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ kpadaegpadaaui darif.",
+    "message": "$CATEGORY$ category mati.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -300,10 +300,10 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "All cpadaegpadaauies pada."
+    "message": "Semua categories on."
   },
   "options_all_categories_off_announcement": {
-    "message": "All cpadaegpadaauies darif."
+    "message": "Semua categories off."
   },
   "options_host_included_announcement": {
     "message": "$HOST$ dalamcluded.",
@@ -324,7 +324,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "All $CATEGORY$ situss dalamcluded.",
+    "message": "Semua $CATEGORY$ sites included.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -333,7 +333,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "All $CATEGORY$ situss kept available.",
+    "message": "Semua $CATEGORY$ sites kept available.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -411,10 +411,10 @@
     }
   },
   "options_category_off": {
-    "message": "Kpadaegpadaaui darif"
+    "message": "Category mati"
   },
   "options_included_when_enabled_one": {
-    "message": "$COUNT$ dalamcluded ketika aktifkdan",
+    "message": "$COUNT$ included ketika enabled",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -423,7 +423,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ dalamcluded ketika aktifkdan",
+    "message": "$COUNT$ included ketika enabled",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -522,7 +522,7 @@
     "message": "Nipada"
   },
   "options_schedule_intention_placeholder": {
-    "message": "whpada this waktu is untuk"
+    "message": "what ini time is for"
   },
   "options_schedule_save_entry": {
     "message": "Simpan entry"
@@ -583,7 +583,7 @@
     "message": "Master volume"
   },
   "options_sound_session_complete": {
-    "message": "Sesi complete"
+    "message": "Sesi selesai"
   },
   "options_sound_break_start": {
     "message": "Istirahpada mulai"
@@ -595,7 +595,7 @@
     "message": "Schedule auke-mulai"
   },
   "options_sound_preview_aria": {
-    "message": "Prelihpada $SOUND$",
+    "message": "Prelihat $SOUND$",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -607,13 +607,13 @@
     "message": "Mainkan"
   },
   "options_sound_preview_error": {
-    "message": "Could not prelihpada the sound. Try agadalam."
+    "message": "Could not prelihat the sound. Try again."
   },
   "options_sounds_notifications_heading": {
     "message": "Notificpadaipadas"
   },
   "options_session_complete_notification": {
-    "message": "Tampilkan a system notificpadaipada ketika a sesi completes"
+    "message": "Show a system notification ketika a session completes"
   },
   "options_badge_heading": {
     "message": "Badge"
@@ -625,10 +625,10 @@
     "message": "Websitus akses"
   },
   "options_privacy_website_off_title": {
-    "message": "Websitus akses is darif"
+    "message": "Website access is mati"
   },
   "options_privacy_website_off_detail": {
-    "message": "Fokus Lock cannot blokir websituss until you grant akses."
+    "message": "Focus Lock cannot block websites sampai you grant access."
   },
   "options_privacy_website_enable_action": {
     "message": "Aktifkan websitus blokirdalamg"
@@ -658,10 +658,10 @@
     "message": "Local histpadaauy hapusd."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently hapuss full URLs, fokus nipadas, dan detailed sesi events from this device. It does not clear a runndalamg sesi, which keeps its nipada dan the tambahress dari each tab it is blokirdalamg. Enddalamg the sesi clears the nipada dan mulais a cleanup thpada clears every buka websitus tab, dan the cleanup hapuss every stpadaaued tambahress ketika it completes."
+    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from ini device. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Ending the session clears the intention and starts a cleanup itu clears every open website tab, and the cleanup removes every stored address ketika it completes."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently hapuss full URLs, fokus nipadas, dan detailed sesi events from this device, plus local-padaly aggregpadae stpadaistics. It does not clear a runndalamg sesi, which keeps its nipada dan the tambahress dari each tab it is blokirdalamg. Enddalamg the sesi clears the nipada dan mulais a cleanup thpada clears every buka websitus tab, dan the cleanup hapuss every stpadaaued tambahress ketika it completes."
+    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from ini device, plus local-only aggregate statistics. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Ending the session clears the intention and starts a cleanup itu clears every open website tab, and the cleanup removes every stored address ketika it completes."
   },
   "options_privacy_confirm_synced_policy_title": {
     "message": "Hapus remote Sync dpadaa?"
@@ -673,7 +673,7 @@
     "message": "Remote Chrome Sync dpadaa hapusd."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently hapuss remote pengpadauran, blokir dan allow lists, situs akses kredit, gariss, dan domadalam-level blokired-padatempt aggregpadaes from Chrome Sync. Local pengpadauran dan stpadaistics stay pada this device."
+    "message": "This permanently deletes remote settings, block and izinkan lists, site access credit, streaks, and domain-level blocked-attempt aggregates from Chrome Sync. Local settings and statistics stay on ini device."
   },
   "options_privacy_confirm_all_title": {
     "message": "Hapus all Fokus Lock dpadaa?"
@@ -682,10 +682,10 @@
     "message": "Cpadafirm hapus all Fokus Lock dpadaa"
   },
   "options_privacy_all_deleted": {
-    "message": "All Fokus Lock dpadaa hapusd."
+    "message": "Semua Focus Lock data deleted."
   },
   "options_privacy_all_body_intro": {
-    "message": "This permanently hapuss every piece dari Fokus Lock dpadaa pada this device dan any Fokus Lock copies left dalam Chrome Sync:"
+    "message": "This permanently deletes every piece of Focus Lock data on ini device and any Focus Lock copies left in Chrome Sync:"
   },
   "options_privacy_all_body_outro": {
     "message": "Deletdalamg everythdalamg is available padaly while no sesi is runndalamg. Fokus Lock then returns ke setup."
@@ -697,7 +697,7 @@
     "message": "Remote Chrome Sync dpadaa could not be hapusd. Try agadalam."
   },
   "options_privacy_error_all_clear": {
-    "message": "All Fokus Lock dpadaa could not be hapusd. Try agadalam."
+    "message": "Semua Focus Lock data could not be deleted. Try again."
   },
   "options_privacy_error_sync_write": {
     "message": "Chrome Sync could not simpan your lpadaest changes. Your local simpan is safe."
@@ -751,7 +751,7 @@
     "message": "Chrome Sync is pada."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync is darif."
+    "message": "Chrome Sync is mati."
   },
   "options_privacy_sync_changes_saved": {
     "message": "Chrome Sync changes simpdan."
@@ -790,16 +790,16 @@
     "message": "Remote Sync dpadaa"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Hapus the Fokus Lock copies left dalam Chrome Sync denganout changdalamg this device."
+    "message": "Delete the Focus Lock copies left in Chrome Sync without changing ini device."
   },
   "options_privacy_delete_remote_data": {
     "message": "Hapus remote Sync dpadaa"
   },
   "options_privacy_all_data_heading": {
-    "message": "All Fokus Lock dpadaa"
+    "message": "Semua Focus Lock data"
   },
   "options_privacy_all_data_detail": {
-    "message": "Hapus every Fokus Lock recpadaaud pada this device dan any Fokus Lock copies left dalam Chrome Sync, then mulai agadalam from setup. Available while no sesi is runndalamg."
+    "message": "Delete every Focus Lock record on ini device and any Focus Lock copies left in Chrome Sync, then start again from setup. Available while no session is running."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Resumdalamg deletipada dari all Fokus Lock dpadaa."

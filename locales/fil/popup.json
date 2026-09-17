@@ -19,7 +19,7 @@
     "message": "Could not open Mga settsag. Try agasa."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load sessisa settsags. Reload the popup sa try agasa. Defaults are shown."
+    "message": "Could not load session settings. Reload the popup to try again. Defaults are ipakitan."
   },
   "popup_open_setup_failed": {
     "message": "Could not open setup. Try agasa."
@@ -43,7 +43,7 @@
     "message": "Website blocksag is ngf"
   },
   "popup_blocking_off_body": {
-    "message": "Pokus Lock cannot start a sessisa until Chrome grants website access at blocksag is enabled."
+    "message": "Focus Lock cannot start a session hanggang Chrome grants website access and blocking is enabled."
   },
   "popup_blocking_off_denied": {
     "message": "Chrome did not grant website access. Website blocksag is still ngf."
@@ -64,7 +64,7 @@
     "message": "Your sessisa ended because Pokus Lock could not enable website blocksag."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Could not dismiss this notice. Try agasa."
+    "message": "Could not dismiss ito notice. Try again."
   },
   "popup_dismiss_notice_label": {
     "message": "Dismiss website pag-access notice"
@@ -88,7 +88,7 @@
     "message": "Keeps your settsags, lists, at statistics. Clears the current sessisa state."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Burahsa everythsag at start over"
+    "message": "Delete everything and start sa itaas"
   },
   "popup_keep_data_button": {
     "message": "Keep my data"
@@ -109,7 +109,7 @@
     "message": "Checksag the active site"
   },
   "popup_active_site_unsupported": {
-    "message": "Buksan a regular website sa unlock it"
+    "message": "Open a regular website to i-unlock it"
   },
   "popup_active_site_unknown": {
     "message": "Could hindit identify the aktibo site"
@@ -124,7 +124,7 @@
     "message": "Simulan next focus early"
   },
   "popup_unlock_this_site": {
-    "message": "Unlock this site"
+    "message": "Unlock ito site"
   },
   "popup_unlock_all_sites": {
     "message": "Unlock lahat sites"
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Magdagdag an allowed domasa"
+    "message": "Add an hayaaned domain"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Magdagdag allowed domasa"
+    "message": "Add hayaaned domain"
   },
   "popup_add_button": {
     "message": "Magdagdag"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed site panuntunans. Other websites hadlanged.",
+    "message": "Only $COUNT$ hayaaned site rules. Other websites blocked.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -212,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Mahirap lock. Cannot end early."
+    "message": "Mahigpit na pag-lock. Cannot end early."
   },
   "popup_draft_stop_flexible": {
     "message": "Can end at any oas."
   },
   "popup_draft_stop_friction": {
-    "message": "Wakas after a $SECONDS$s wait.",
+    "message": "End after a $SECBUKASDS$s wait.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -227,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "End after a $SECONDS$s wait at csafirmatisa phrase.",
+    "message": "End after a $SECBUKASDS$s wait and confirmation phrase.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -239,7 +239,7 @@
     "message": "Sesysa length"
   },
   "popup_custom_minutes_label": {
-    "message": "Cussam msautes"
+    "message": "Kustom minutes"
   },
   "popup_custom_minutes_placeholder": {
     "message": "msa"
@@ -257,7 +257,7 @@
     "message": "Could not update the gate. Try agasa."
   },
   "popup_gate_intention": {
-    "message": "You said: $INTENTION$",
+    "message": "You said: $INTENTIBUKAS$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -284,7 +284,7 @@
     "message": "Destsaatisa unavailable"
   },
   "popup_back_to_work_name": {
-    "message": "Bumalik sa wok: $DESTINATION$",
+    "message": "Back to work: $DESTINATIBUKAS$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -293,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "Bumalik sa wok: $DESTINATION$ ($HOSTNAME$)",
+    "message": "Back to work: $DESTINATIBUKAS$ ($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -306,7 +306,7 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Kategoya editsag is disabled until blocked-site lists reload."
+    "message": "Category editing is disabled hanggang blocked-site lists reload."
   },
   "popup_blocked_categories_heading": {
     "message": "Hadlanged categoies"
@@ -363,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "at $COUNT$ moe site",
+    "message": "and $COUNT$ higit pa site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "at $COUNT$ moe sites",
+    "message": "and $COUNT$ higit pa sites",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -381,7 +381,7 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Allowed exceptisas"
+    "message": "Lahatowed exceptions"
   },
   "popup_extra_blocked_heading": {
     "message": "Extra hadlanged panuntunans"
@@ -390,16 +390,16 @@
     "message": "No extra hadlanged panuntunans."
   },
   "popup_allowed_heading": {
-    "message": "Allowed sites at rules"
+    "message": "Lahatowed sites and rules"
   },
   "popup_no_allowed_sites": {
-    "message": "Hindi sites are lahatowed yet."
+    "message": "No sites are hayaaned yet."
   },
   "popup_what_will_be_blocked": {
     "message": "What will be hadlanged"
   },
   "popup_what_will_be_allowed": {
-    "message": "What will be lahatowed"
+    "message": "What will be hayaaned"
   },
   "popup_categories_selected": {
     "message": "$SELECTED$ ng $TOTAL$ categoies selected",
@@ -433,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed panuntunan",
+    "message": "$COUNT$ hayaaned rule",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -442,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed panuntunans",
+    "message": "$COUNT$ hayaaned rules",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,10 +451,10 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Allowed-site at rule changes here apply saly sa this sessisa. Everythsag else is blocked."
+    "message": "Lahatowed-site and rule changes here apply only to this session. Bawatthing else is blocked."
   },
   "popup_scope_blacklist": {
-    "message": "Kategoya at rule changes here apply saly sa this sessisa."
+    "message": "Category and rule changes here apply only to ito session."
   },
   "popup_open_settings_defaults": {
     "message": "Buksan Mga settsag para permanent defaults"
@@ -472,10 +472,10 @@
     "message": "Alitan"
   },
   "popup_session_type_hard": {
-    "message": "Mahirap lock"
+    "message": "Mahigpit na pag-lock"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the sessisa immediately kung kailanever you choose."
+    "message": "End the session immediately kapagever you choose."
   },
   "popup_session_type_friction_hint": {
     "message": "Endsag early requires $WAIT$. No typsag is required.",
@@ -496,16 +496,16 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The sessisa cannot end early. Site access credit still woks."
+    "message": "The session cannot end early. Credit sa access ng site still works."
   },
   "popup_mode_blacklist_hint": {
     "message": "The selected categoies at extra rules are blocked. Other sites remasa available."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. Every other website is hadlanged."
+    "message": "Only the listed sites are available. Bawat other website is blocked."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a sessisa length greater than zero msautes."
+    "message": "Enter a session length greater kaysa zero minutes."
   },
   "popup_stale_lists_unavailable": {
     "message": "Defaults changed, but current lists could hindit be mag-loaded. Remag-load the poppataas."
@@ -517,7 +517,7 @@
     "message": "Selected tab unavailable - choose ahindither"
   },
   "popup_cycles_label": {
-    "message": "Sikluss: $FOCUS$ msa focus, $SHORT_BREAK$ msa break, $LONG_BREAK$ msa lsag break every $LONG_EVERY$th",
+    "message": "Cycles: $FOCUS$ min focus, $SHORT_BREAK$ min break, $LBUKASG_BREAK$ min long break every $LBUKASG_EVERY$th",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -544,7 +544,7 @@
     "message": "What are you woksag sa?"
   },
   "popup_work_tab_named": {
-    "message": "Trabaho tab: $TITLE$",
+    "message": "Tab ng trabaho: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -562,7 +562,7 @@
     "message": "Choose a wok tab"
   },
   "popup_work_tab_select_label": {
-    "message": "Trabaho tab"
+    "message": "Tab ng trabaho"
   },
   "popup_work_tab_current_option": {
     "message": "$TITLE$ (Current)",
@@ -580,7 +580,7 @@
     "message": "savalid time"
   },
   "popup_start_focus_label": {
-    "message": "Simulan $DURATION$ focus",
+    "message": "Start $DURATIBUKAS$ focus",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -592,10 +592,10 @@
     "message": "Enter a valid domasa such as docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Could not load wok tabs. Reopen the popup sa try agasa."
+    "message": "Could not load work mga tab. Reopen the popup to try again."
   },
   "popup_use_this_tab": {
-    "message": "Use this tab"
+    "message": "Use ito tab"
   },
   "popup_current_tab_unavailable": {
     "message": "This tab is not available para wok. Choose another open tab."

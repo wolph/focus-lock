@@ -1,12 +1,12 @@
 {
   "onboarding_page_title": {
-    "message": "Ρύθμιση Focus Lock"
+    "message": "Ρυθμίστε το Focus Lock"
   },
   "onboarding_eyebrow": {
-    "message": "Focus Lock setup"
+    "message": "Εγκατάσταση Focus Lock"
   },
   "onboarding_progress": {
-    "message": "Step $STEP$ of $TOTAL$",
+    "message": "Βήμα $STEP$ από $TOTAL$",
     "placeholders": {
       "STEP": {
         "content": "$1",
@@ -21,11 +21,41 @@
   "onboarding_complete_heading": {
     "message": "Setup complete"
   },
+  "onboarding_complete_body": {
+    "message": "Your choices are saved. Άνοιγμα Focus Lock from the Chrome toolbar to έναρξη a συνεδρία."
+  },
   "onboarding_error_heading": {
     "message": "Setup unavailable"
   },
   "onboarding_retry_button": {
     "message": "Retry"
+  },
+  "onboarding_save_error": {
+    "message": "Could not αποθήκευση setup progress. Try again."
+  },
+  "onboarding_enable_error": {
+    "message": "Could not ενεργοποίηση website blocking. Try again."
+  },
+  "onboarding_finish_error": {
+    "message": "Δεν ήταν δυνατή η ολοκλήρωση της εγκατάστασης. Οι επιλογές σας είναι ακόμα αποθηκευμένες. Δοκιμάστε ξανά."
+  },
+  "onboarding_lists_heading": {
+    "message": "Επιλέξτε τη λίστα αποκλεισμού εκκίνησης"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "In $MODE$, enabled categories and extra αποκλείστηκε sites are unavailable.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "These choices become defaults for future sessions. You can επεξεργασία them later."
+  },
+  "onboarding_lists_legend": {
+    "message": "Προτεινόμενες κατηγορίες ιστοχώρων"
   },
   "onboarding_site_count_one": {
     "message": "$COUNT$ site",
@@ -46,7 +76,7 @@
     }
   },
   "onboarding_show_category_sites": {
-    "message": "Show $CATEGORY$ sites",
+    "message": "Εμφάνιση $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -55,7 +85,7 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "Hide $CATEGORY$ sites",
+    "message": "Απόκρυψη $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -73,16 +103,28 @@
     }
   },
   "onboarding_continue_button": {
-    "message": "Continue"
+    "message": "Συνέχεια"
   },
   "onboarding_access_heading": {
-    "message": "Enable website blocking"
+    "message": "Ενεργοποιήστε τον αποκλεισμό ιστοχώρων"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to εμφάνιση its blocking screen and restore affected pages when your συνεδρία ends."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Website access is granted, but Focus Lock could not ενεργοποίηση blocking. Retry setup or reload the extension."
   },
   "onboarding_access_enable_button": {
-    "message": "Enable website blocking"
+    "message": "Ενεργοποιήστε τον αποκλεισμό ιστοχώρων"
   },
   "onboarding_access_defer_button": {
     "message": "Not now"
+  },
+  "onboarding_sync_heading": {
+    "message": "Επιλέξτε όπου αποθηκεύονται οι ρυθμίσεις σας"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Συγχρονισμός σε συσκευές Chrome"
   },
   "onboarding_sync_synced_title": {
     "message": "Synced"
