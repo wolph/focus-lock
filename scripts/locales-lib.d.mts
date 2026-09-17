@@ -33,6 +33,7 @@ export function englishEcho(en: Catalogue, catalogue: Catalogue): EnglishEcho;
 export function simplifiedInTraditional(locale: string, message: string): string[];
 export function strayEnglish(locale: string, message: string): string[];
 export function strayLatin(locale: string, message: string): string[];
+export function brokenPattern(key: string, message: string): boolean;
 export function isPadding(
   locale: string,
   sourceMessage: string,

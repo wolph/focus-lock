@@ -3,6 +3,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import {
+  brokenPattern,
   checkDefault,
   checkLocales,
   checkTranslation,
@@ -573,5 +574,25 @@ describe('mergeTranslation reports what it refuses', () => {
     };
     write({ options_badge: 'domasa' });
     expect(write({ options_badge: 'domain' }, true).options_badge?.message).toBe('domain');
+  });
+});
+
+describe('brokenPattern', () => {
+  it('accepts a regular expression literal', () => {
+    expect(
+      brokenPattern('options_rule_pattern_placeholder_regex', '/youtube\\.com\\/shorts/'),
+    ).toBe(false);
+  });
+
+  it('rejects text that is not a literal at all', () => {
+    expect(brokenPattern('options_rule_pattern_placeholder_regex', 'regex (buong URL)')).toBe(true);
+  });
+
+  it('rejects a literal that will not compile', () => {
+    expect(brokenPattern('options_rule_pattern_placeholder_regex', '/youtube(\\.com/')).toBe(true);
+  });
+
+  it('says nothing about an ordinary key', () => {
+    expect(brokenPattern('popup_start', 'not a pattern')).toBe(false);
   });
 });

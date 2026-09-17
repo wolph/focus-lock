@@ -423,6 +423,27 @@ export function englishEcho(en, catalogue) {
   return { echoed, compared, share: compared === 0 ? 0 : echoed.length / compared };
 }
 
+/**
+ * Keys whose value is a pattern the extension itself has to parse, not prose. A translator who
+ * edits the words inside one of these silently breaks the example: Filipino's regex example had
+ * become `/youtube\\.com\\/shots/`, which matches nothing, and no wording check could see it
+ * because the string is not English words in the first place.
+ */
+const PATTERN_KEYS = new Set(['options_rule_pattern_placeholder_regex']);
+
+/** True when a value meant to be a regular expression literal is not one. */
+export function brokenPattern(key, message) {
+  if (!PATTERN_KEYS.has(key)) return false;
+  const literal = /^\/(.+)\/$/.exec(message);
+  if (literal === null) return true;
+  try {
+    new RegExp(literal[1]);
+    return false;
+  } catch {
+    return true;
+  }
+}
+
 /** Validate one translated catalogue against en. */
 export function checkTranslation(locale, en, catalogue) {
   const errors = [];
@@ -467,6 +488,10 @@ export function checkTranslation(locale, en, catalogue) {
   }
   for (const [key, entry] of Object.entries(catalogue)) {
     if (typeof entry.message !== 'string') continue;
+    if (brokenPattern(key, entry.message)) {
+      errors.push(`${locale}: ${key} is not a usable pattern: ${entry.message}`);
+      continue;
+    }
     const stray = strayLatin(locale, entry.message);
     if (stray.length > 0) {
       errors.push(
