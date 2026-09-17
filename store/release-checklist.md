@@ -1,9 +1,7 @@
 # Chrome Web Store release candidate 0.2.0
 
-Candidate source: `33e4933f5a10a2f2fd55bc7c86d9da657e8c84f9`, which is the tree the package was
-built from. Verification finished at `517e753`, one commit later, which changes a test assertion
-only and leaves the built output identical. Verified on 17 September 2026 with Node.js 24.18.0 and
-Chrome for Testing 151.0.7922.34.
+Candidate source: `43a4c98`, which is the tree the package was built from. Verified on 17 September
+2026 with Node.js 24.18.0 and Chrome for Testing 151.0.7922.34.
 
 This candidate ships the interface in 53 languages. Chrome selects the catalogue from the browser's
 UI language, so there is no picker and nothing for the user to configure. English stays the default
@@ -73,8 +71,8 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
 ## Package
 
 - Archive: `release/focus-lock-0.2.0.zip`
-- SHA-256: `484f8c0c9b0d1827f8dd9f41733537998411b84fd91cade2098f4c62261c3d29`
-- Build tree SHA-256: `93236ba8deabd8dee9749d605b1d828f0ff78f64994d295a3a43c999526df278`, over the 94
+- SHA-256: `1999f0734b943f5c4fc1e14fdb988c2fb1f4c46649f33a7b921391221dcfd4b3`
+- Build tree SHA-256: `f0a2f1ac987e433981eeffdffd05bda254debd2de28d555bcf4bceb5e7807c47`, over the 94
   files in `dist`, by the digest `store-screenshots.spec.ts` uses to decide whether a capture came
   from the build in front of it.
 - The archive contains 94 files. That is 53 more than 0.1.1, and all 53 are message catalogues, so

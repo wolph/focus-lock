@@ -15,20 +15,6 @@ const STATE_COLORS: Record<Phase, string> = {
 };
 
 /**
- * The same phases again, lightened for the ring that is drawn on the green tile.
- *
- * The badge sits on the browser's own background and can use the palette above. The ring cannot:
- * focus green on tile green is the most common state of all and it vanished, so each phase gets a
- * tint chosen to read against `#2ebf58` while staying recognisably the same colour.
- */
-const RING_COLORS: Record<Phase, string> = {
-  idle: '#e5e7eb',
-  focus: '#a7f3a9',
-  break: '#5eead4',
-  paused: '#fcd34d',
-};
-
-/**
  * Only an active session has clocks to report. Starting, cleanup, and error hide a
  * durable session behind a journal, so nothing about it may reach the toolbar.
  */
@@ -51,27 +37,18 @@ export function badgeForV2(
 }
 
 /**
- * Pure description of the icon for a v2 snapshot: phase color, shackle position, and
- * phase progress. Indefinite focus has no phase end, so it draws no ring. An indefinite
- * pause does have one, so its pause ring still fills toward the pause end.
+ * Pure description of the icon for a v2 snapshot: is the lock shut.
+ *
+ * A session locks sites only while its focus phase runs, so a break and a pause draw the shackle
+ * open even though the session is still alive. That is the honest reading: during a break nothing
+ * is blocked, and an icon that stayed shut would claim otherwise. The badge still names the phase
+ * and counts the session down, which is where the detail the icon dropped now lives.
  */
 export function iconSpecV2(snapshot: SessionSnapshotV2): IconSpec {
-  const color: string = RING_COLORS[snapshot.phase];
-  if (
-    !projectsActiveClocks(snapshot) ||
-    snapshot.phaseStartedAt === null ||
-    snapshot.phaseEndsAt === null
-  ) {
-    return { color, open: snapshot.phase === 'idle', progress: 0, glyph: 'lock', ring: false };
-  }
-  const span: number = snapshot.phaseEndsAt - snapshot.phaseStartedAt;
-  const progress: number =
-    span <= 0 ? 0 : Math.min(1, Math.max(0, (snapshot.at - snapshot.phaseStartedAt) / span));
-  return {
-    color,
-    open: false,
-    progress,
-    glyph: snapshot.phase === 'break' ? 'cup' : 'lock',
-    ring: true,
-  };
+  return { open: !locksSites(snapshot) };
+}
+
+/** The one definition of locked, matching `isLocked` on the site so the two marks agree. */
+function locksSites(snapshot: SessionSnapshotV2): boolean {
+  return snapshot.lifecycle.kind === 'active' && snapshot.phase === 'focus';
 }

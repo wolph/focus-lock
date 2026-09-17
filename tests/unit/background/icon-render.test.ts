@@ -4,16 +4,19 @@ import type { IconSpec } from '../../../src/background/icon';
 import { drawIcon, updateIcon } from '../../../src/background/icon';
 import { emptySnapshot } from '../../../src/shared/constants';
 
-const TILE_GREEN: string = '#2ebf58';
-const RING_TRACK: string = '#116331';
-const GLYPH_WHITE: string = '#ffffff';
+const LOCK_GREEN: string = '#2ebf58';
+const KEYHOLE_GREEN: string = '#116331';
+
+const LOCKED: IconSpec = { open: false };
+const UNLOCKED: IconSpec = { open: true };
 
 interface DrawCall {
   name: string;
   args: number[];
-  /** The paint in force when the call ran, so a test can say which colour drew which shape. */
+  /** The paint and pen in force when the call ran, so a test can say how a shape was drawn. */
   fillStyle: string;
   strokeStyle: string;
+  lineWidth: number;
 }
 
 class RecordingContext {
@@ -24,7 +27,13 @@ class RecordingContext {
   public lineCap: CanvasLineCap = 'butt';
 
   private record(name: string, args: number[]): void {
-    this.calls.push({ name, args, fillStyle: this.fillStyle, strokeStyle: this.strokeStyle });
+    this.calls.push({
+      name,
+      args,
+      fillStyle: this.fillStyle,
+      strokeStyle: this.strokeStyle,
+      lineWidth: this.lineWidth,
+    });
   }
 
   public clearRect(...args: number[]): void {
@@ -87,12 +96,13 @@ class RecordingCanvas {
 }
 
 function render(size: number, spec: IconSpec): DrawCall[] {
+  RecordingCanvas.contexts = [];
   vi.stubGlobal('OffscreenCanvas', RecordingCanvas);
   drawIcon(size, spec);
   return RecordingCanvas.contexts.at(-1)?.calls ?? [];
 }
 
-/** The shape that a paint call closes: the entry drawn immediately before the stroke or fill. */
+/** The shape a paint call closes: the entry drawn immediately before the stroke or fill. */
 function painted(
   calls: DrawCall[],
   shape: 'arc' | 'roundRect',
@@ -100,159 +110,134 @@ function painted(
 ): DrawCall[] {
   return calls.filter((call: DrawCall, index: number): boolean => {
     if (call.name !== shape) return false;
-    const next: DrawCall | undefined = calls[index + 1];
-    return next?.name === paint;
+    return calls[index + 1]?.name === paint;
   });
 }
 
 function colourOf(calls: DrawCall[], call: DrawCall, paint: 'fill' | 'stroke'): string {
-  const index: number = calls.indexOf(call);
-  const closing: DrawCall | undefined = calls[index + 1];
+  const closing: DrawCall | undefined = calls[calls.indexOf(call) + 1];
   return paint === 'fill' ? (closing?.fillStyle ?? '') : (closing?.strokeStyle ?? '');
 }
-
-function activeSpec(phase: 'focus' | 'break'): IconSpec {
-  // The projection only draws a ring for an active lifecycle, so the fixture carries one. The v1
-  // projection this used to call read the phase fields without that guard and is gone.
-  return iconSpecV2({
-    ...emptySnapshot(30_000),
-    lifecycle: { kind: 'active', endAuthority: { kind: 'immediate', actionLabel: 'End session' } },
-    phase,
-    phaseStartedAt: 0,
-    phaseEndsAt: 60_000,
-  });
-}
-
-const IDLE_SPEC: IconSpec = {
-  color: '#e5e7eb',
-  open: true,
-  progress: 0,
-  glyph: 'lock',
-  ring: false,
-};
 
 afterEach((): void => {
   RecordingCanvas.contexts = [];
   vi.unstubAllGlobals();
 });
 
-describe('brand tile', (): void => {
+describe('the lock', (): void => {
   it.each([16, 32])(
-    'fills a green tile before anything else at %i pixels',
+    'draws a green shackle, body and keyhole at %i pixels',
     (size: number): void => {
-      const calls: DrawCall[] = render(size, activeSpec('focus'));
-      const unit: number = size / 16;
-      const tile: DrawCall | undefined = painted(calls, 'roundRect', 'fill')[0];
+      const calls: DrawCall[] = render(size, LOCKED);
+      const shackle: DrawCall | undefined = painted(calls, 'arc', 'stroke')[0];
+      const body: DrawCall | undefined = painted(calls, 'roundRect', 'fill')[0];
+      const bore: DrawCall | undefined = painted(calls, 'arc', 'fill')[0];
 
       expect(calls[0]?.name).toBe('clearRect');
-      expect(tile).toBeDefined();
-      expect(tile?.args[0]).toBeCloseTo(0.75 * unit, 6);
-      expect(tile?.args[2]).toBeCloseTo(14.5 * unit, 6);
-      expect(tile?.args[3]).toBeCloseTo(14.5 * unit, 6);
-      expect(colourOf(calls, tile as DrawCall, 'fill')).toBe(TILE_GREEN);
+      expect(colourOf(calls, shackle as DrawCall, 'stroke')).toBe(LOCK_GREEN);
+      expect(colourOf(calls, body as DrawCall, 'fill')).toBe(LOCK_GREEN);
+      expect(colourOf(calls, bore as DrawCall, 'fill')).toBe(KEYHOLE_GREEN);
     },
   );
 
-  it('paints the tile in every phase, which is what "green everywhere" means', (): void => {
-    for (const spec of [IDLE_SPEC, activeSpec('focus'), activeSpec('break')]) {
-      const calls: DrawCall[] = render(32, spec);
-      const tile: DrawCall | undefined = painted(calls, 'roundRect', 'fill')[0];
+  it('fills most of the canvas, which is the whole point of the shape', (): void => {
+    const calls: DrawCall[] = render(16, LOCKED);
+    const body: DrawCall | undefined = painted(calls, 'roundRect', 'fill')[0];
+    const shackle: DrawCall | undefined = painted(calls, 'arc', 'stroke')[0];
+    const bodyWidth: number = body?.args[2] ?? 0;
+    const bodyBottom: number = (body?.args[1] ?? 0) + (body?.args[3] ?? 0);
+    const shackleTop: number =
+      (shackle?.args[1] ?? 0) - (shackle?.args[2] ?? 0) - (shackle?.lineWidth ?? 0) / 2;
 
-      expect(colourOf(calls, tile as DrawCall, 'fill')).toBe(TILE_GREEN);
-      RecordingCanvas.contexts = [];
-    }
+    expect(bodyWidth).toBeGreaterThanOrEqual(12);
+    expect(bodyBottom).toBeGreaterThanOrEqual(15);
+    expect(shackleTop).toBeLessThanOrEqual(1.2);
+    expect(shackleTop).toBeGreaterThanOrEqual(0);
   });
 
-  it('draws the padlock body in white on top of the tile', (): void => {
-    const calls: DrawCall[] = render(32, activeSpec('focus'));
-    const body: DrawCall | undefined = painted(calls, 'roundRect', 'fill')[1];
+  it('scales with the icon so 32 is twice 16', (): void => {
+    const small: DrawCall[] = render(16, LOCKED);
+    const large: DrawCall[] = render(32, LOCKED);
+    const smallBody: DrawCall | undefined = painted(small, 'roundRect', 'fill')[0];
+    const largeBody: DrawCall | undefined = painted(large, 'roundRect', 'fill')[0];
 
-    expect(body).toBeDefined();
-    expect(colourOf(calls, body as DrawCall, 'fill')).toBe(GLYPH_WHITE);
-  });
-});
-
-describe('progress ring', (): void => {
-  it('draws a full track and a sweep proportional to progress', (): void => {
-    const spec: IconSpec = { ...activeSpec('focus'), progress: 0.25 };
-    const calls: DrawCall[] = render(32, spec);
-    const arcs: DrawCall[] = painted(calls, 'arc', 'stroke');
-    const track: DrawCall | undefined = arcs[0];
-    const sweep: DrawCall | undefined = arcs[1];
-
-    expect(colourOf(calls, track as DrawCall, 'stroke')).toBe(RING_TRACK);
-    expect(track?.args[4]).toBeCloseTo(2 * Math.PI, 6);
-    expect(colourOf(calls, sweep as DrawCall, 'stroke')).toBe(spec.color);
-    expect((sweep?.args[4] ?? 0) - (sweep?.args[3] ?? 0)).toBeCloseTo(0.25 * 2 * Math.PI, 6);
-    expect(sweep?.args[3]).toBeCloseTo(-Math.PI / 2, 6);
-  });
-
-  it('omits the ring entirely when idle', (): void => {
-    const calls: DrawCall[] = render(32, IDLE_SPEC);
-    const strokedArcs: DrawCall[] = painted(calls, 'arc', 'stroke');
-
-    // Only the shackle remains, and it is white rather than a ring colour.
-    expect(strokedArcs).toHaveLength(1);
-    expect(colourOf(calls, strokedArcs[0] as DrawCall, 'stroke')).toBe(GLYPH_WHITE);
-  });
-
-  it('scales the ring with the icon so 32 is twice 16', (): void => {
-    const small: DrawCall[] = render(16, activeSpec('focus'));
-    RecordingCanvas.contexts = [];
-    const large: DrawCall[] = render(32, activeSpec('focus'));
-    const smallTrack: DrawCall | undefined = painted(small, 'arc', 'stroke')[0];
-    const largeTrack: DrawCall | undefined = painted(large, 'arc', 'stroke')[0];
-
-    expect((largeTrack?.args[2] ?? 0) / (smallTrack?.args[2] ?? 1)).toBeCloseTo(2, 6);
+    expect((largeBody?.args[2] ?? 0) / (smallBody?.args[2] ?? 1)).toBeCloseTo(2, 6);
   });
 });
 
-describe('phase glyphs', (): void => {
-  it('opens the shackle only when idle', (): void => {
-    const idle: DrawCall[] = render(32, IDLE_SPEC);
-    RecordingCanvas.contexts = [];
-    const running: DrawCall[] = render(32, activeSpec('focus'));
+describe('locked and unlocked', (): void => {
+  it('swings the shackle only when open', (): void => {
+    const locked: DrawCall[] = render(32, LOCKED);
+    const unlocked: DrawCall[] = render(32, UNLOCKED);
 
-    expect(idle.some((call: DrawCall): boolean => call.name === 'rotate')).toBe(true);
-    expect(running.some((call: DrawCall): boolean => call.name === 'rotate')).toBe(false);
+    expect(locked.some((call: DrawCall): boolean => call.name === 'rotate')).toBe(false);
+    expect(unlocked.some((call: DrawCall): boolean => call.name === 'rotate')).toBe(true);
   });
 
-  it('draws the cup only for breaks while both phases keep the lock body', (): void => {
-    const focus: DrawCall[] = render(16, activeSpec('focus'));
-    RecordingCanvas.contexts = [];
-    const rest: DrawCall[] = render(16, activeSpec('break'));
-    // Both glyphs are cut in the tile colour, so what separates them is how the circle is painted:
-    // the keyhole is a filled bore, and the cup's handle is a stroked loop on its side.
-    const bore = (calls: DrawCall[]): DrawCall[] =>
-      painted(calls, 'arc', 'fill').filter(
-        (call: DrawCall): boolean => colourOf(calls, call, 'fill') === TILE_GREEN,
-      );
-    const handle = (calls: DrawCall[]): DrawCall[] =>
-      painted(calls, 'arc', 'stroke').filter(
-        (call: DrawCall): boolean => colourOf(calls, call, 'stroke') === TILE_GREEN,
-      );
+  it('swings the free leg upward rather than down into the body', (): void => {
+    const unlocked: DrawCall[] = render(32, UNLOCKED);
+    const turn: DrawCall | undefined = unlocked.find(
+      (call: DrawCall): boolean => call.name === 'rotate',
+    );
 
-    expect(bore(focus)).toHaveLength(1);
-    expect(handle(focus)).toHaveLength(0);
-    expect(bore(rest)).toHaveLength(0);
-    expect(handle(rest)).toHaveLength(1);
-    expect(painted(focus, 'roundRect', 'fill').length).toBeGreaterThanOrEqual(2);
-    expect(painted(rest, 'roundRect', 'fill').length).toBeGreaterThanOrEqual(2);
+    // Canvas y grows downward, so a positive angle turns clockwise and lifts a leg that starts on
+    // the left of the hinge. A negative one buried it in the body and the lock read as shut.
+    expect(turn?.args[0]).toBeGreaterThan(0);
   });
 
-  it('cuts the glyph out of the lock face in the tile colour', (): void => {
-    const rest: DrawCall[] = render(32, activeSpec('break'));
-    const cup: DrawCall | undefined = painted(rest, 'roundRect', 'fill')[2];
+  it('drops the shackle before swinging so the crown is not clipped away', (): void => {
+    const unlocked: DrawCall[] = render(32, UNLOCKED);
+    const rotateAt: number = unlocked.findIndex(
+      (call: DrawCall): boolean => call.name === 'rotate',
+    );
+    const drop: DrawCall | undefined = unlocked
+      .slice(0, rotateAt)
+      .filter((call: DrawCall): boolean => call.name === 'translate')
+      .find((call: DrawCall): boolean => call.args[0] === 0 && (call.args[1] ?? 0) > 0);
 
-    expect(colourOf(rest, cup as DrawCall, 'fill')).toBe(TILE_GREEN);
+    expect(drop).toBeDefined();
+  });
+
+  it('leaves the body and keyhole alone when the lock opens', (): void => {
+    const locked: DrawCall[] = render(32, LOCKED);
+    const unlocked: DrawCall[] = render(32, UNLOCKED);
+
+    expect(painted(unlocked, 'roundRect', 'fill')[0]?.args).toEqual(
+      painted(locked, 'roundRect', 'fill')[0]?.args,
+    );
+    expect(painted(unlocked, 'arc', 'fill')[0]?.args).toEqual(
+      painted(locked, 'arc', 'fill')[0]?.args,
+    );
   });
 
   it('reports the requested size back to the caller', (): void => {
     vi.stubGlobal('OffscreenCanvas', RecordingCanvas);
-    const image: ImageData = drawIcon(32, activeSpec('focus'));
+    const image: ImageData = drawIcon(32, LOCKED);
 
     expect(image.width).toBe(32);
     expect(image.height).toBe(32);
+  });
+});
+
+describe('what the shackle follows', (): void => {
+  function snapshotFor(phase: 'focus' | 'break' | 'paused'): Parameters<typeof iconSpecV2>[0] {
+    return {
+      ...emptySnapshot(30_000),
+      lifecycle: {
+        kind: 'active',
+        endAuthority: { kind: 'immediate', actionLabel: 'End session' },
+      },
+      phase,
+      phaseStartedAt: 0,
+      phaseEndsAt: 60_000,
+    };
+  }
+
+  it('shuts the lock only while a focus phase is blocking sites', (): void => {
+    expect(iconSpecV2(snapshotFor('focus')).open).toBe(false);
+    expect(iconSpecV2(snapshotFor('break')).open).toBe(true);
+    expect(iconSpecV2(snapshotFor('paused')).open).toBe(true);
+    expect(iconSpecV2(emptySnapshot(0)).open).toBe(true);
   });
 });
 
