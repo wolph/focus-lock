@@ -1,1 +1,530 @@
-{}
+{
+  "options_page_title": {
+    "message": "Focus Lock опције"
+  },
+  "options_heading": {
+    "message": "Focus Lock подешавања"
+  },
+  "options_loading_settings": {
+    "message": "Учитавање подешавања"
+  },
+  "options_privacy_loading": {
+    "message": "Учитавање подешавања приватности"
+  },
+  "options_save_failed": {
+    "message": "Чување није успело. Покушај поново."
+  },
+  "options_blocking_heading": {
+    "message": "Блокирање"
+  },
+  "options_blocking_help": {
+    "message": "Сопствена правила блокирају током сесија са списком блокираних. Списак дозвољених је оно што остаје доступно током сесија са списком дозвољених. Уграђене категорије блокирају уобичајене губитнике времена."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Сопствени списак блокираних"
+  },
+  "options_whitelist_title": {
+    "message": "Списак дозвољених"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Уграђене категорије"
+  },
+  "options_bundled_categories_help": {
+    "message": "Уграђени спискови уобичајених губитника времена. Укључи или искључи целу категорију, а затим је отвори да поједини сајтови остану доступни."
+  },
+  "options_schedule_heading": {
+    "message": "Распоред"
+  },
+  "options_schedule_help": {
+    "message": "Сесије се саме покрећу унутар ових прозора. Строгоћа подешена овде важи за цео прозор."
+  },
+  "options_behavior_heading": {
+    "message": "Понашање сесије"
+  },
+  "options_budget_heading": {
+    "message": "Кредит за приступ"
+  },
+  "options_notifications_heading": {
+    "message": "Обавештења"
+  },
+  "options_privacy_heading": {
+    "message": "Приватност и подаци"
+  },
+  "options_load_error_retry": {
+    "message": "Покушај поново"
+  },
+  "options_load_error_delete_all": {
+    "message": "Обриши све и почни испочетка"
+  },
+  "options_load_error_keep_data": {
+    "message": "Задржи моје податке"
+  },
+  "options_delete_all_data": {
+    "message": "Обриши све Focus Lock податке"
+  },
+  "options_dirty_saving": {
+    "message": "Чување измена"
+  },
+  "options_dirty_unsaved": {
+    "message": "Несачуване измене"
+  },
+  "options_dirty_clean": {
+    "message": "Нема несачуваних измена"
+  },
+  "options_dirty_discard": {
+    "message": "Одбаци измене"
+  },
+  "options_dirty_save": {
+    "message": "Сачувај измене"
+  },
+  "options_session_status_label": {
+    "message": "Стање сесије"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "домен"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "израз"
+  },
+  "options_rule_remove": {
+    "message": "Уклони"
+  },
+  "options_rule_remove_aria": {
+    "message": "Уклони $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Још нема правила."
+  },
+  "options_rule_kind_aria": {
+    "message": "Врста правила"
+  },
+  "options_rule_kind_host_option": {
+    "message": "домен или поддомен"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "регуларни израз (цео URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Шаблон"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "Додај правило"
+  },
+  "options_rules_help": {
+    "message": "facebook.com покрива тај домен и сваки поддомен. news.ycombinator.com покрива тај поддомен и све испод њега. /youtube\\.com\\/shorts/ поклапа се са целим URL-ом као регуларни израз."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ мора бити позитиван цео број.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ мора бити цео број нула или већи.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ мора бити нула или веће.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ мора бити у подржаном распону минута.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ мора бити у подржаном распону дана.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Подразумеване вредности сесије"
+  },
+  "options_session_defaults_help": {
+    "message": "Режим и строгоћа се закључавају када сесија почне. Ово су вредности са којима се отвара образац за покретање."
+  },
+  "options_preset_short_label": {
+    "message": "Предложак кратке сесије (минути)"
+  },
+  "options_preset_default_label": {
+    "message": "Предложак уобичајене сесије (минути)"
+  },
+  "options_preset_deep_label": {
+    "message": "Предложак дубоке сесије (минути)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Списак блокираних: блокирај наведене сајтове"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Списак дозвољених: дозволи само наведене сајтове"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Флексибилно: заврши сесију кад год желиш"
+  },
+  "options_strictness_friction_label": {
+    "message": "Отпор: рани прекид иде кроз подешену препреку промишљања"
+  },
+  "options_strictness_hard_label": {
+    "message": "Чврсто закључавање: нема раног краја, само привремени приступ сајтовима"
+  },
+  "options_cycle_heading": {
+    "message": "Циклус фокуса и паузе"
+  },
+  "options_cycle_help": {
+    "message": "Подразумевано: 25 минута фокуса, 5 минута паузе, 15 минута дуге паузе сваки четврти циклус. Паузе по распореду надмашују паузе по осећају за расположење и фокус у узорцима истраживања. Тачни минути су договор, а не наука."
+  },
+  "options_cycle_default_label": {
+    "message": "Подразумевано смењуј фокус и паузе"
+  },
+  "options_focus_minutes_label": {
+    "message": "Минути фокуса"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Минути кратке паузе"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Минути дуге паузе"
+  },
+  "options_long_every_label": {
+    "message": "Дуга пауза сваки N-ти циклус"
+  },
+  "options_gate_heading": {
+    "message": "Препрека промишљања"
+  },
+  "options_gate_help": {
+    "message": "Чекање од 10 секунди са изричитим дугметом за повратак на посао мерљиво смањује импулсивне посете (теренско истраживање, PNAS 2023). Дуже чекање и уписана реченица отприлике удвостручују ефекат."
+  },
+  "options_gate_wait_one": {
+    "message": "Чекај $COUNT$ секунду",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Чекај $COUNT$ секунди",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Прилагођено"
+  },
+  "options_custom_delay_label": {
+    "message": "Прилагођено одлагање (секунде)"
+  },
+  "options_custom_delay_error": {
+    "message": "Прилагођено одлагање мора бити позитиван цео број секунди."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Тражи и уписивање реченице"
+  },
+  "options_gate_force_end_label": {
+    "message": "Укључи дугме „Занемари чекање и ипак заврши”"
+  },
+  "options_credit_help": {
+    "message": "Кредит за приступ расте док се фокусираш. И приступ свим сајтовима и откључавање једног троше се са истог стања. Можеш се удаљити у било ком тренутку без трошења кредита."
+  },
+  "options_earn_rate_label": {
+    "message": "Минути приступа сајтовима на 30 минута фокуса"
+  },
+  "options_credit_cap_label": {
+    "message": "Ограничење кредита за приступ (минути)"
+  },
+  "options_pause_length_label": {
+    "message": "Трајање приступа свим сајтовима (минути)"
+  },
+  "options_unlock_length_label": {
+    "message": "Трајање откључавања сајта (минути)"
+  },
+  "options_streak_heading": {
+    "message": "Низ и чување података"
+  },
+  "options_streak_help": {
+    "message": "Низ броји дане који достигну циљ. Једна уобичајена сесија одржава ланац у животу, а жетон замрзавања поправља пропуштени дан."
+  },
+  "options_streak_goal_label": {
+    "message": "Дневни циљ низа (минути фокуса)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Размак жетона замрзавања (дани)"
+  },
+  "options_retention_label": {
+    "message": "Чувај дневну статистику (дани)"
+  },
+  "options_category_on_announcement": {
+    "message": "Категорија $CATEGORY$ укључена.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Категорија $CATEGORY$ искључена.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Све категорије укључене."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Све категорије искључене."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ је обухваћен.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ остаје доступан.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Сви сајтови у категорији $CATEGORY$ су обухваћени.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Сви сајтови у категорији $CATEGORY$ остају доступни.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Групне радње за категорије"
+  },
+  "options_selected_count": {
+    "message": "Изабрано $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Поништено $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Изабери све"
+  },
+  "options_deselect_all": {
+    "message": "Поништи избор свих"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Изабери све категорије"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Поништи избор свих категорија"
+  },
+  "options_show_category_sites": {
+    "message": "Прикажи сајтове у категорији $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Сакриј сајтове у категорији $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ сајт обухваћен",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ сајтова обухваћено",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Категорија је искључена"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ обухваћен када се укључи",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ обухваћено када се укључи",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Поништи ознаку сајта да остане доступан док је остатак категорије блокиран."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Групне радње за сајтове у категорији $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Изабери све сајтове у категорији $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Поништи избор свих сајтова у категорији $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Сајтови у категорији $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "нед"
+  },
+  "options_day_mon": {
+    "message": "пон"
+  },
+  "options_day_tue": {
+    "message": "уто"
+  },
+  "options_day_wed": {
+    "message": "сре"
+  },
+  "options_day_thu": {
+    "message": "чет"
+  },
+  "options_day_fri": {
+    "message": "пет"
+  },
+  "options_day_sat": {
+    "message": "суб"
+  },
+  "options_gate_wait_few": {
+    "message": "Чекај $COUNT$ секунде",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_few": {
+    "message": "$COUNT$ сајта обухваћена",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_few": {
+    "message": "$COUNT$ обухваћена када се укључи",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}
