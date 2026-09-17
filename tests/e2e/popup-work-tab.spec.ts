@@ -84,7 +84,9 @@ test('the popup defaults to the current work tab and can replace a closed target
   await extPage.reload();
 
   await extPage.getByRole('button', { name: 'Choose work tab', exact: true }).click();
-  await expect(extPage.getByLabel('Work tab', { exact: true })).toBeFocused();
+  // The running session has no work tab dropdown, so the request focuses the chooser itself.
+  // See docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
+  await expect(extPage.getByRole('button', { name: 'Use this tab', exact: true })).toBeFocused();
   await extPage.getByRole('button', { name: 'Use this tab', exact: true }).click();
   await expect
     .poll(async (): Promise<string | null> => {
