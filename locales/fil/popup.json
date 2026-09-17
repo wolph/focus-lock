@@ -241,9 +241,6 @@
   "popup_custom_minutes_label": {
     "message": "Custom minutos"
   },
-  "popup_custom_minutes_placeholder": {
-    "message": "msa"
-  },
   "popup_gate_force_end": {
     "message": "Ignoe oasout at end anyway"
   },
@@ -328,12 +325,6 @@
         "example": "^https://example\\.com/feed"
       }
     }
-  },
-  "popup_rule_kind_domain": {
-    "message": "Domasa"
-  },
-  "popup_rule_kind_regex": {
-    "message": "Regular expressisa"
   },
   "popup_category_sites_label": {
     "message": "$CATEGORY$ laman",
