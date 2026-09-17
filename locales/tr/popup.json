@@ -1,1 +1,14 @@
-{}
+{
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_session_type_flexible": {
+    "message": "Esnek"
+  },
+  "popup_session_type_friction": {
+    "message": "Engel"
+  },
+  "popup_session_type_hard": {
+    "message": "Sert Kilit"
+  }
+}

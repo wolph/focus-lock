@@ -1,1 +1,849 @@
-{}
+{
+  "options_page_title": {
+    "message": "Focus Lock विकल्प"
+  },
+  "options_heading": {
+    "message": "Focus Lock सेटिंग्स"
+  },
+  "options_loading_settings": {
+    "message": "सेटिंग्स लोड हो रही हैं"
+  },
+  "options_privacy_loading": {
+    "message": "गोपनीयता सेटिंग्स लोड हो रही हैं"
+  },
+  "options_save_failed": {
+    "message": "सहेजा नहीं जा सका। दोबारा कोशिश करें।"
+  },
+  "options_blocking_heading": {
+    "message": "ब्लॉकिंग"
+  },
+  "options_blocking_help": {
+    "message": "आपके अपने नियम ब्लॉक सूची वाले सेशन में ब्लॉक करते हैं। अनुमति सूची वही है जो अनुमति सूची वाले सेशन में खुली रहती है। तैयार श्रेणियाँ आम समय बर्बाद करने वाली साइटें ब्लॉक करती हैं।"
+  },
+  "options_custom_blacklist_title": {
+    "message": "अपनी ब्लॉक सूची"
+  },
+  "options_whitelist_title": {
+    "message": "अनुमति सूची"
+  },
+  "options_bundled_categories_heading": {
+    "message": "तैयार श्रेणियाँ"
+  },
+  "options_bundled_categories_help": {
+    "message": "आम समय बर्बाद करने वाली साइटों की तैयार सूचियाँ। पूरी श्रेणी चालू या बंद करें, फिर उसे खोलकर अलग-अलग साइटें खुली रखें।"
+  },
+  "options_schedule_heading": {
+    "message": "शेड्यूल"
+  },
+  "options_schedule_help": {
+    "message": "इन समय-खिड़कियों के भीतर सेशन अपने आप शुरू होते हैं। यहाँ तय की गई सख्ती पूरी खिड़की पर लागू रहती है।"
+  },
+  "options_behavior_heading": {
+    "message": "सेशन का व्यवहार"
+  },
+  "options_budget_heading": {
+    "message": "साइट एक्सेस क्रेडिट"
+  },
+  "options_notifications_heading": {
+    "message": "सूचनाएँ"
+  },
+  "options_privacy_heading": {
+    "message": "गोपनीयता और डेटा"
+  },
+  "options_load_error_retry": {
+    "message": "दोबारा कोशिश करें"
+  },
+  "options_load_error_delete_all": {
+    "message": "सब कुछ हटाकर नए सिरे से शुरू करें"
+  },
+  "options_load_error_keep_data": {
+    "message": "मेरा डेटा रहने दें"
+  },
+  "options_delete_all_data": {
+    "message": "Focus Lock का सारा डेटा हटाएँ"
+  },
+  "options_dirty_saving": {
+    "message": "बदलाव सहेजे जा रहे हैं"
+  },
+  "options_dirty_unsaved": {
+    "message": "बिना सहेजे बदलाव"
+  },
+  "options_dirty_clean": {
+    "message": "कोई बिना सहेजा बदलाव नहीं"
+  },
+  "options_dirty_discard": {
+    "message": "बदलाव छोड़ें"
+  },
+  "options_dirty_save": {
+    "message": "बदलाव सहेजें"
+  },
+  "options_session_status_label": {
+    "message": "सेशन की स्थिति"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "डोमेन"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "रेगेक्स"
+  },
+  "options_rule_remove": {
+    "message": "हटाएँ"
+  },
+  "options_rule_remove_aria": {
+    "message": "$PATTERN$ हटाएँ",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "अभी कोई नियम नहीं है।"
+  },
+  "options_rule_kind_aria": {
+    "message": "नियम का प्रकार"
+  },
+  "options_rule_kind_host_option": {
+    "message": "डोमेन या सबडोमेन"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "रेगेक्स (पूरा URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "पैटर्न"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "instagram.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/instagram\\.com\\/reels/"
+  },
+  "options_rule_add": {
+    "message": "नियम जोड़ें"
+  },
+  "options_rules_help": {
+    "message": "facebook.com उस डोमेन और उसके हर सबडोमेन पर लागू होता है। news.ycombinator.com उस सबडोमेन और उसके नीचे की हर चीज़ पर लागू होता है। /youtube\\.com\\/shorts/ पूरे URL से रेगुलर एक्सप्रेशन की तरह मिलान करता है।"
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ शून्य से बड़ी पूर्ण संख्या होनी चाहिए।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ शून्य या उससे बड़ी पूर्ण संख्या होनी चाहिए।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ शून्य या उससे बड़ी होनी चाहिए।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ समर्थित मिनट सीमा के भीतर होनी चाहिए।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ समर्थित दिन सीमा के भीतर होनी चाहिए।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "सेशन के डिफ़ॉल्ट"
+  },
+  "options_session_defaults_help": {
+    "message": "सेशन शुरू होते ही मोड और सख्ती तय हो जाती है। ये वही मान हैं जिनके साथ शुरुआत फ़ॉर्म खुलता है।"
+  },
+  "options_preset_short_label": {
+    "message": "छोटा सेशन प्रीसेट (मिनट)"
+  },
+  "options_preset_default_label": {
+    "message": "डिफ़ॉल्ट सेशन प्रीसेट (मिनट)"
+  },
+  "options_preset_deep_label": {
+    "message": "गहरा सेशन प्रीसेट (मिनट)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "ब्लॉक सूची: सूची में दी गई साइटें ब्लॉक करें"
+  },
+  "options_mode_whitelist_label": {
+    "message": "अनुमति सूची: सिर्फ़ सूची में दी गई साइटें खोलें"
+  },
+  "options_strictness_flexible_label": {
+    "message": "लचीला: जब चाहें सेशन समाप्त करें"
+  },
+  "options_strictness_friction_label": {
+    "message": "विलंब वाला: जल्दी रोकने पर तय की गई पुष्टि स्क्रीन से गुज़रना पड़ता है"
+  },
+  "options_strictness_hard_label": {
+    "message": "सख्त: जल्दी समाप्ति नहीं, सिर्फ़ अस्थायी साइट एक्सेस"
+  },
+  "options_cycle_heading": {
+    "message": "फोकस और ब्रेक चक्र"
+  },
+  "options_cycle_help": {
+    "message": "डिफ़ॉल्ट: 25 मिनट फोकस, 5 मिनट ब्रेक, हर चौथे चक्र पर 15 मिनट का लंबा ब्रेक। छात्रों पर हुए अध्ययनों में तय समय पर लिए गए ब्रेक, मन होने पर लिए गए ब्रेक से बेहतर मनोदशा और फोकस देते हैं। सटीक मिनट परंपरा हैं, विज्ञान नहीं।"
+  },
+  "options_cycle_default_label": {
+    "message": "डिफ़ॉल्ट रूप से सेशन को फोकस और ब्रेक में बाँटें"
+  },
+  "options_focus_minutes_label": {
+    "message": "फोकस के मिनट"
+  },
+  "options_short_break_minutes_label": {
+    "message": "छोटे ब्रेक के मिनट"
+  },
+  "options_long_break_minutes_label": {
+    "message": "लंबे ब्रेक के मिनट"
+  },
+  "options_long_every_label": {
+    "message": "हर N-वें चक्र पर लंबा ब्रेक"
+  },
+  "options_gate_heading": {
+    "message": "पुष्टि स्क्रीन"
+  },
+  "options_gate_help": {
+    "message": "काम पर लौटने के साफ़ बटन के साथ 10 सेकंड की प्रतीक्षा आवेग में की गई विज़िट को उल्लेखनीय रूप से घटाती है (फ़ील्ड अध्ययन, PNAS 2023)। लंबी प्रतीक्षा और टाइप किया गया वाक्य इस असर को लगभग दोगुना कर देते हैं।"
+  },
+  "options_gate_wait_one": {
+    "message": "$COUNT$ सेकंड प्रतीक्षा करें",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "$COUNT$ सेकंड प्रतीक्षा करें",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "अपनी पसंद"
+  },
+  "options_custom_delay_label": {
+    "message": "अपनी देरी (सेकंड)"
+  },
+  "options_custom_delay_error": {
+    "message": "अपनी देरी शून्य से बड़ी पूर्ण संख्या में सेकंड होनी चाहिए।"
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "एक वाक्य टाइप करना भी ज़रूरी करें"
+  },
+  "options_gate_force_end_label": {
+    "message": "“प्रतीक्षा छोड़ें और समाप्त करें” बटन दिखाएँ"
+  },
+  "options_credit_help": {
+    "message": "फोकस करते समय साइट एक्सेस क्रेडिट जमा होता है। सभी साइटों का एक्सेस और किसी एक साइट का अनलॉक, दोनों इसी एक बैलेंस से खर्च होते हैं। आप बिना क्रेडिट खर्च किए कभी भी हट सकते हैं।"
+  },
+  "options_earn_rate_label": {
+    "message": "हर 30 मिनट फोकस पर मिलने वाले साइट एक्सेस के मिनट"
+  },
+  "options_credit_cap_label": {
+    "message": "साइट एक्सेस क्रेडिट की सीमा (मिनट)"
+  },
+  "options_pause_length_label": {
+    "message": "सभी साइटों के एक्सेस की अवधि (मिनट)"
+  },
+  "options_unlock_length_label": {
+    "message": "साइट अनलॉक की अवधि (मिनट)"
+  },
+  "options_streak_heading": {
+    "message": "स्ट्रीक और डेटा रखने की अवधि"
+  },
+  "options_streak_help": {
+    "message": "स्ट्रीक उन दिनों को गिनती है जिनमें लक्ष्य पूरा हुआ। एक डिफ़ॉल्ट सेशन कड़ी को बनाए रखता है, और एक फ़्रीज़ टोकन छूटे हुए दिन की भरपाई कर देता है।"
+  },
+  "options_streak_goal_label": {
+    "message": "रोज़ का स्ट्रीक लक्ष्य (फोकस मिनट)"
+  },
+  "options_freeze_interval_label": {
+    "message": "फ़्रीज़ टोकन मिलने का अंतराल (दिन)"
+  },
+  "options_retention_label": {
+    "message": "रोज़ के आँकड़े रखें (दिन)"
+  },
+  "options_category_on_announcement": {
+    "message": "$CATEGORY$ श्रेणी चालू।",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "$CATEGORY$ श्रेणी बंद।",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "सभी श्रेणियाँ चालू।"
+  },
+  "options_all_categories_off_announcement": {
+    "message": "सभी श्रेणियाँ बंद।"
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ शामिल किया गया।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ खुला रखा गया।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "$CATEGORY$ की सभी साइटें शामिल की गईं।",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "$CATEGORY$ की सभी साइटें खुली रखी गईं।",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "श्रेणियों पर एक साथ कार्रवाई"
+  },
+  "options_selected_count": {
+    "message": "$COUNT$ चुने गए",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "$COUNT$ हटाए गए",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "सभी चुनें"
+  },
+  "options_deselect_all": {
+    "message": "सभी हटाएँ"
+  },
+  "options_select_all_categories_aria": {
+    "message": "सभी श्रेणियाँ चुनें"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "सभी श्रेणियाँ हटाएँ"
+  },
+  "options_show_category_sites": {
+    "message": "$CATEGORY$ की साइटें दिखाएँ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "$CATEGORY$ की साइटें छिपाएँ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ साइट शामिल",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ साइटें शामिल",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "श्रेणी बंद"
+  },
+  "options_included_when_enabled_one": {
+    "message": "चालू करने पर $COUNT$ साइट शामिल",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "चालू करने पर $COUNT$ साइटें शामिल",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "किसी साइट का चेक हटाएँ ताकि बाकी श्रेणी ब्लॉक रहते हुए वह साइट खुली रहे।"
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ की साइटों पर एक साथ कार्रवाई",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "$CATEGORY$ की सभी साइटें चुनें",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "$CATEGORY$ की सभी साइटें हटाएँ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$ की साइटें",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "रवि"
+  },
+  "options_day_mon": {
+    "message": "सोम"
+  },
+  "options_day_tue": {
+    "message": "मंगल"
+  },
+  "options_day_wed": {
+    "message": "बुध"
+  },
+  "options_day_thu": {
+    "message": "गुरु"
+  },
+  "options_day_fri": {
+    "message": "शुक्र"
+  },
+  "options_day_sat": {
+    "message": "शनि"
+  },
+  "options_schedule_cycles_label": {
+    "message": "फोकस और ब्रेक में बाँटें"
+  },
+  "options_schedule_overlap_error": {
+    "message": "$DAY$ को किसी दूसरी चालू प्रविष्टि से टकराता है।",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "सेशन का प्रकार"
+  },
+  "options_schedule_entry_legend": {
+    "message": "शेड्यूल प्रविष्टि"
+  },
+  "options_schedule_start_label": {
+    "message": "शुरुआत"
+  },
+  "options_schedule_end_label": {
+    "message": "समाप्ति"
+  },
+  "options_schedule_duration_legend": {
+    "message": "अवधि"
+  },
+  "options_schedule_intention_label": {
+    "message": "इरादा"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "यह समय किस काम के लिए है"
+  },
+  "options_schedule_save_entry": {
+    "message": "प्रविष्टि सहेजें"
+  },
+  "options_cancel": {
+    "message": "रद्द करें"
+  },
+  "options_schedule_empty": {
+    "message": "अभी कोई शेड्यूल किया गया सेशन नहीं है।"
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "चुने गए दिन"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ से $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "ब्लॉक सूची"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "अनुमति सूची"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "लचीला"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "विलंब वाला"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "सख्त"
+  },
+  "options_schedule_enabled_label": {
+    "message": "चालू"
+  },
+  "options_schedule_edit": {
+    "message": "बदलें"
+  },
+  "options_schedule_delete": {
+    "message": "हटाएँ"
+  },
+  "options_schedule_add": {
+    "message": "शेड्यूल प्रविष्टि जोड़ें"
+  },
+  "options_sounds_heading": {
+    "message": "ध्वनियाँ"
+  },
+  "options_master_volume": {
+    "message": "मुख्य आवाज़"
+  },
+  "options_sound_session_complete": {
+    "message": "सेशन पूरा"
+  },
+  "options_sound_break_start": {
+    "message": "ब्रेक शुरू"
+  },
+  "options_sound_break_end": {
+    "message": "ब्रेक खत्म"
+  },
+  "options_sound_schedule_start": {
+    "message": "शेड्यूल से अपने आप शुरू"
+  },
+  "options_sound_preview_aria": {
+    "message": "$SOUND$ सुनकर देखें",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "बजाएँ"
+  },
+  "options_sound_preview_error": {
+    "message": "ध्वनि सुनाई नहीं जा सकी। दोबारा कोशिश करें।"
+  },
+  "options_sounds_notifications_heading": {
+    "message": "सूचनाएँ"
+  },
+  "options_session_complete_notification": {
+    "message": "सेशन पूरा होने पर सिस्टम सूचना दिखाएँ"
+  },
+  "options_badge_heading": {
+    "message": "बैज"
+  },
+  "options_badge_countdown": {
+    "message": "टूलबार आइकन पर बचा हुआ समय दिखाएँ"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "वेबसाइट एक्सेस"
+  },
+  "options_privacy_website_off_title": {
+    "message": "वेबसाइट एक्सेस बंद है"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "जब तक आप एक्सेस नहीं देते, Focus Lock वेबसाइटें ब्लॉक नहीं कर सकता।"
+  },
+  "options_privacy_website_enable_action": {
+    "message": "वेबसाइट ब्लॉकिंग चालू करें"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "वेबसाइट एक्सेस मिल गया है, लेकिन ब्लॉकिंग चालू नहीं है"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome ने एक्सेस दे दिया, लेकिन Focus Lock अपनी ब्लॉकिंग स्क्रिप्ट दर्ज नहीं कर सका।"
+  },
+  "options_privacy_website_retry_action": {
+    "message": "वेबसाइट ब्लॉकिंग दोबारा आज़माएँ"
+  },
+  "options_privacy_website_on_title": {
+    "message": "वेबसाइट ब्लॉकिंग चालू है"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock सामान्य वेबसाइट पन्नों पर आपके चालू ब्लॉकिंग नियम लागू कर सकता है।"
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "स्थानीय इतिहास हटाएँ?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "स्थानीय इतिहास हटाने की पुष्टि करें"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "स्थानीय इतिहास हटा दिया गया।"
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "इससे इस डिवाइस से पूरे URL, फोकस के इरादे और सेशन की विस्तृत घटनाएँ हमेशा के लिए हट जाएँगी। इससे चल रहा सेशन खत्म नहीं होता, जो अपना इरादा और हर ब्लॉक किए जा रहे टैब का पता अपने पास रखता है। सेशन समाप्त करने पर इरादा हट जाता है और हर खुले वेबसाइट टैब की सफ़ाई शुरू होती है, और वह सफ़ाई पूरी होने पर हर सहेजा गया पता हट जाता है।"
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "इससे इस डिवाइस से पूरे URL, फोकस के इरादे और सेशन की विस्तृत घटनाएँ, साथ ही सिर्फ़ इसी डिवाइस पर रखे सारांश आँकड़े हमेशा के लिए हट जाएँगे। इससे चल रहा सेशन खत्म नहीं होता, जो अपना इरादा और हर ब्लॉक किए जा रहे टैब का पता अपने पास रखता है। सेशन समाप्त करने पर इरादा हट जाता है और हर खुले वेबसाइट टैब की सफ़ाई शुरू होती है, और वह सफ़ाई पूरी होने पर हर सहेजा गया पता हट जाता है।"
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Chrome सिंक से डेटा हटाएँ?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Chrome सिंक से डेटा हटाने की पुष्टि करें"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Chrome सिंक का डेटा हटा दिया गया।"
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "इससे Chrome सिंक से सेटिंग्स, ब्लॉक और अनुमति सूचियाँ, साइट एक्सेस क्रेडिट, स्ट्रीक और डोमेन स्तर के ब्लॉक हुए प्रयासों के सारांश हमेशा के लिए हट जाएँगे। स्थानीय सेटिंग्स और आँकड़े इस डिवाइस पर बने रहेंगे।"
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Focus Lock का सारा डेटा हटाएँ?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Focus Lock का सारा डेटा हटाने की पुष्टि करें"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Focus Lock का सारा डेटा हटा दिया गया।"
+  },
+  "options_privacy_all_body_intro": {
+    "message": "इससे इस डिवाइस पर Focus Lock का हर डेटा और Chrome सिंक में बची Focus Lock की हर प्रति हमेशा के लिए हट जाएगी:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "सब कुछ हटाने का विकल्प तभी उपलब्ध है जब कोई सेशन न चल रहा हो। इसके बाद Focus Lock फिर से सेटअप पर लौट आता है।"
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "स्थानीय इतिहास नहीं हटाया जा सका। दोबारा कोशिश करें।"
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Chrome सिंक का डेटा नहीं हटाया जा सका। दोबारा कोशिश करें।"
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Focus Lock का सारा डेटा नहीं हटाया जा सका। दोबारा कोशिश करें।"
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome सिंक आपके नवीनतम बदलाव सहेज नहीं सका। आपका स्थानीय सहेजा गया डेटा सुरक्षित है।"
+  },
+  "options_privacy_error_request": {
+    "message": "यह अनुरोध पूरा नहीं हो सका। दोबारा कोशिश करें।"
+  },
+  "options_privacy_website_access_updated": {
+    "message": "वेबसाइट एक्सेस अपडेट हुआ।"
+  },
+  "options_privacy_website_access_denied": {
+    "message": "वेबसाइट एक्सेस नहीं मिला।"
+  },
+  "options_privacy_error_website_access": {
+    "message": "वेबसाइट एक्सेस अपडेट नहीं हो सका। दोबारा कोशिश करें।"
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "वेबसाइट ब्लॉकिंग चालू हो गई।"
+  },
+  "options_privacy_error_export": {
+    "message": "इवेंट लॉग एक्सपोर्ट नहीं हो सका।"
+  },
+  "options_privacy_error_export_retry": {
+    "message": "इवेंट लॉग एक्सपोर्ट नहीं हो सका। दोबारा कोशिश करें।"
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Chrome की अनुमति सेटिंग्स नहीं खुल सकीं। दोबारा कोशिश करें।"
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome की अनुमति सेटिंग्स खुल गईं।"
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Chrome की अनुमति सेटिंग्स खोलें"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome सिंक"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Chrome डिवाइसों के बीच Focus Lock का डेटा सिंक करें"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome सिंक चालू हो गया।"
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome सिंक बंद हो गया।"
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome सिंक अभी आपके नवीनतम बदलाव सहेज रहा है।"
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome सिंक चालू है।"
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome सिंक बंद है।"
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "बदलाव Chrome सिंक में सहेजे गए।"
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome सिंक चालू करना दोबारा आज़माएँ"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Chrome सिंक दोबारा आज़माएँ"
+  },
+  "options_privacy_scope_synced": {
+    "message": "सिंक होता है"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "सिर्फ़ स्थानीय"
+  },
+  "options_privacy_developer_note": {
+    "message": "Focus Lock के डेवलपर को कुछ भी नहीं भेजा जाता।"
+  },
+  "options_privacy_local_log_heading": {
+    "message": "स्थानीय इवेंट लॉग"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "विस्तृत स्थानीय लॉग एक्सपोर्ट करें या स्थानीय ब्राउज़िंग और सेशन इतिहास हटाएँ।"
+  },
+  "options_privacy_export_local_log": {
+    "message": "स्थानीय इवेंट लॉग एक्सपोर्ट करें"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "स्थानीय इवेंट लॉग एक्सपोर्ट हो गया।"
+  },
+  "options_privacy_delete_local_history": {
+    "message": "स्थानीय इतिहास हटाएँ"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Chrome सिंक का डेटा"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "इस डिवाइस को बदले बिना Chrome सिंक में बची Focus Lock की प्रतियाँ हटाएँ।"
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Chrome सिंक का डेटा हटाएँ"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Focus Lock का सारा डेटा"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "इस डिवाइस पर Focus Lock का हर रिकॉर्ड और Chrome सिंक में बची Focus Lock की हर प्रति हटाएँ, फिर सेटअप से नए सिरे से शुरू करें। तभी उपलब्ध जब कोई सेशन न चल रहा हो।"
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Focus Lock का सारा डेटा हटाने का काम फिर से शुरू किया जा रहा है।"
+  },
+  "options_privacy_retry_local_history": {
+    "message": "स्थानीय इतिहास हटाना दोबारा आज़माएँ"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Chrome सिंक का डेटा हटाना दोबारा आज़माएँ"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "सारा डेटा हटाना दोबारा आज़माएँ"
+  },
+  "options_error_load": {
+    "message": "सेटिंग्स लोड नहीं हो सकीं। पेज फिर से लोड करके दोबारा कोशिश करें।"
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lock फिर से शुरू नहीं हो सका। दोबारा कोशिश करें।"
+  },
+  "options_error_refresh_privacy": {
+    "message": "गोपनीयता सेटिंग्स ताज़ा नहीं हो सकीं। पेज फिर से लोड करें।"
+  },
+  "options_error_website_blocking": {
+    "message": "वेबसाइट ब्लॉकिंग अपडेट नहीं हो सकी। दोबारा कोशिश करें।"
+  },
+  "options_error_change_sync": {
+    "message": "Chrome सिंक नहीं बदला जा सका। दोबारा कोशिश करें।"
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome सिंक दोबारा नहीं आज़माया जा सका। दोबारा कोशिश करें।"
+  },
+  "options_error_save_settings": {
+    "message": "सेटिंग्स सहेजी नहीं जा सकीं। पेज फिर से लोड करके दोबारा कोशिश करें।"
+  },
+  "options_error_save_lists": {
+    "message": "सूचियाँ सहेजी नहीं जा सकीं। पेज फिर से लोड करके दोबारा कोशिश करें।"
+  }
+}

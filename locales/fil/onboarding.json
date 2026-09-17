@@ -1,9 +1,9 @@
 {
   "onboarding_page_title": {
-    "message": "I-set up ang Focus Lock"
+    "message": "Hanay pataas Focus Lock"
   },
   "onboarding_eyebrow": {
-    "message": "Pag-set up ng Focus Lock"
+    "message": "Focus Lock hanaypataas"
   },
   "onboarding_progress": {
     "message": "Hakbang $STEP$ ng $TOTAL$",
@@ -19,37 +19,37 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Your saved setup progress could not be restored. Magsimulaing again with your current defaults."
+    "message": "Your i-saved hanaypataas progress could hindit be reitipond. Magsimulaing again with your current defaults."
   },
   "onboarding_complete_heading": {
-    "message": "I-set up complete"
+    "message": "Hanaypataas kumpleto"
   },
   "onboarding_complete_body": {
-    "message": "Your choices are saved. Buksan Focus Lock from the Chrome toolbar to start a session."
+    "message": "Your choices are i-saved. Buksan Focus Lock from the Chrome toolbar to magsimula a session."
   },
   "onboarding_error_heading": {
-    "message": "I-set up unavailable"
+    "message": "Hanaypataas unavailable"
   },
   "onboarding_error_body": {
-    "message": "Hindi makapag-load ng setup. Subukan ulit."
+    "message": "Could hindit mag-load hanaypataas. Try again."
   },
   "onboarding_retry_button": {
-    "message": "Subukan Muli"
+    "message": "Subukan muli"
   },
   "onboarding_save_error": {
-    "message": "Hindi ma-save ang progreso ng setup. Subukan ulit."
+    "message": "Could hindit i-save hanaypataas progress. Try again."
   },
   "onboarding_enable_error": {
-    "message": "Hindi mapagana ang blocking ng website. Subukan ulit."
+    "message": "Could hindit paganahin website blocking. Try again."
   },
   "onboarding_finish_error": {
-    "message": "Hindi na-kumpleto ang setup. Ang iyong mga pagpipilian ay nakaligtas pa rin. Subukan ulit."
+    "message": "Could hindit kumpleto hanaypataas. Your choices are still i-saved. Try again."
   },
   "onboarding_lists_heading": {
-    "message": "Piliin ang iyong pangunahing listahan ng blocking"
+    "message": "Choose your magsimulaing block list"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "Sa $MODE$, ang mga pinagana na kategorya at karagdagang na-block na mga site ay hindi available.",
+    "message": "In $MODE$, paganahind categories and extra blocked sites are unavailable.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "Sa $MODE$, lahat ng mga site ay hindi available maliban sa iyong listahan ng pinapayagan.",
+    "message": "In $MODE$, every site is unavailable except your lahatow list.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -70,7 +70,7 @@
     "message": "Ang mga pagpipiliang ito ay nagiging default para sa mga susunod na sesyon. Maaari mong i-edit ito mamaya."
   },
   "onboarding_lists_legend": {
-    "message": "Inirerekomendang kategorya ng website"
+    "message": "Recommwakased website categories"
   },
   "onboarding_site_count_one": {
     "message": "$COUNT$ sitio",
@@ -100,7 +100,7 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "Itago $CATEGORY$ sites",
+    "message": "Tago $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -124,54 +124,54 @@
     "message": "Paganahin website blocking"
   },
   "onboarding_access_local_matching": {
-    "message": "Ang Focus Lock ay nag-check ng mga address ng page nang lokal upang makapag-match sa iyong mga piniling kategorya at mga site. Gumagamit ito ng access sa website upang ipakita ang screen ng pagbabalanse at ibalik ang mga apektadong pahina kapag nagtatapos ang iyong sesyon."
+    "message": "Focus Lock checks page magdagdagresses loclahaty so it can match your selected categories and sites. It uses website access to ipakita its blocking screen and reitipon affected pages when your session wakass."
   },
   "onboarding_access_capability_intro": {
-    "message": "Ang mga kategorya at custom na domain ay maaaring magsama ng anumang website. Samakatuwid, ang Chrome ay hihiling ng kakayahang ito:"
+    "message": "Categories and custom domains can include any website. Chrome will therefore request this kakayahan:"
   },
   "onboarding_access_capability": {
-    "message": "Basahin at baguhin ang lahat ng iyong data sa lahat ng mga website"
+    "message": "Read and change lahat your data on lahat websites"
   },
   "onboarding_access_scope_note": {
     "message": "Ang Focus Lock ay gumagamit lamang ng access na iyon sa paglalapat ng iyong mga patakaran sa pagbabalanse."
   },
   "onboarding_access_denied": {
-    "message": "Ang Chrome ay hindi nagbigay ng access sa website. Maaari kang subukan ulit."
+    "message": "Chrome did hindit grant website access. You can subukan muli."
   },
   "onboarding_access_registration_error": {
-    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock could hindit paganahin blocking. Subukan muli hanaypataas or remag-load the extension."
   },
   "onboarding_access_enable_button": {
     "message": "Paganahin website blocking"
   },
   "onboarding_access_defer_button": {
-    "message": "Hindi ngayon"
+    "message": "Hindit hindiw"
   },
   "onboarding_sync_heading": {
-    "message": "Piliin kung saan nakaimbak ang iyong mga setting"
+    "message": "Choose where your pagwawikas are itipond"
   },
   "onboarding_sync_switch_label": {
-    "message": "I-sync sa lahat ng Chrome device"
+    "message": "I-i-sync across Chrome devices"
   },
   "onboarding_sync_enabled_note": {
-    "message": "Ang naaprubahang data sa ibaba ay gagamitin ang Chrome Sync pagkatapos mong tapusin ang setup."
+    "message": "The approved data below will use Chrome I-i-sync after you finish hanaypataas."
   },
   "onboarding_sync_disabled_note": {
-    "message": "Ang lahat ng Focus Lock data ay manatili sa Chrome profile na ito."
+    "message": "Lahat Focus Lock data stays in this Chrome profile."
   },
   "onboarding_sync_synced_title": {
-    "message": "Naka-sync"
+    "message": "I-i-synced"
   },
   "onboarding_sync_local_title": {
     "message": "Lokal lamang"
   },
   "onboarding_sync_developer_note": {
-    "message": "Walang ipinapadala sa developer ng Focus Lock."
+    "message": "Hindithing is sent to the Focus Lock developer."
   },
   "onboarding_sync_finish_enabled": {
-    "message": "Tapusin ang setup na may sync na pinagana"
+    "message": "Finish hanaypataas with i-sync paganahind"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "Tapusin ang setup nang walang sync"
+    "message": "Finish hanaypataas without i-sync"
   }
 }

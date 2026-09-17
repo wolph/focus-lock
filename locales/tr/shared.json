@@ -1,1 +1,30 @@
-{}
+{
+  "shared_verdict_with_pattern": {
+    "message": "Desen $PATTERN$ ile eşleşmişdir",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_category_social": {
+    "message": "Sosyal"
+  },
+  "shared_category_video": {
+    "message": "Video"
+  },
+  "shared_category_news": {
+    "message": "Haber"
+  },
+  "shared_category_shopping": {
+    "message": "Alışveriş"
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  }
+}

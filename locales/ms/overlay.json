@@ -18,11 +18,23 @@
       }
     }
   },
+  "overlay_target_pick_tab": {
+    "message": "Pick an buka tab to lanjutkan your task."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Your focus session is tidakt available. Try again, or remuat this page."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Could tidakt muat your work tab. Try again, or remuat this page."
+  },
   "overlay_target_reconnect": {
-    "message": "Reload this page to reconnect to Fokus Lock."
+    "message": "Remuat this page to reconnect to Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "The requesting page has changed. Remuat the page."
   },
   "overlay_target_transport_error": {
-    "message": "Could not reach Fokus Lock. Try again."
+    "message": "Could tidakt reach Focus Lock. Try again."
   },
   "overlay_picker_heading": {
     "message": "Choose a work tab"
@@ -33,11 +45,14 @@
   "overlay_picker_search_label": {
     "message": "Search work tabs"
   },
+  "overlay_picker_search_placeholder": {
+    "message": "Search by judul or website"
+  },
   "overlay_picker_clear_search": {
-    "message": "Clear search"
+    "message": "Bersihkan search"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "Refresh tabs"
+    "message": "Segarkan tabs"
   },
   "overlay_picker_available_tabs": {
     "message": "Available work tabs"
@@ -52,7 +67,13 @@
     "message": "Saving work tab..."
   },
   "overlay_picker_no_tabs": {
-    "message": "No available work tabs. Buka a site allowed by this session, then refresh tabs."
+    "message": "Tidak available work tabs. Buka a site semuaowed by this session, then segarkan tabs."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Tidak matching tabs. Try atidakther search or bersihkan the search."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Could tidakt muat work tabs. Try again."
   },
   "overlay_picker_count_one": {
     "message": "$MATCHES$ of $COUNT$ tab",

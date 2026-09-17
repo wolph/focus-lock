@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "next: $DAY$ $TIME$",
+    "message": "inayofuata: $DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -13,85 +13,121 @@
     }
   },
   "popup_settings_button_label": {
-    "message": "Mipango"
+    "message": "Mpangilios"
   },
   "popup_open_settings_failed": {
-    "message": "Could not open Mipango. Try again."
+    "message": "Could hapanat fungua Mpangilios. Try again."
+  },
+  "popup_settings_load_failed": {
+    "message": "Could hapanat pakia session mpangilios. Repakia the popjuu to try again. Defaults are ongeshan."
+  },
+  "popup_open_setup_failed": {
+    "message": "Could hapanat fungua setijuu. Try again."
   },
   "popup_setup_required_heading": {
-    "message": "Finish setting up Fokasi Lock"
+    "message": "Finish mpangilio juu Focus Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "Choose your anzaing lists, website access, and storage njia before anzaing a session."
   },
   "popup_open_setup_button": {
-    "message": "Fungua setup"
+    "message": "Fungua setijuu"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Could hapanat thibitisha website blocking. Try again."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Could hapanat wezesha website blocking. Try again."
   },
   "popup_blocking_off_heading": {
     "message": "Tovuti blocking is off"
   },
   "popup_blocking_off_body": {
-    "message": "Fokasi Lock cannot start a session until Chrome grants website access and blocking is enabled."
+    "message": "Focus Lock canhapanat anza a session until Chrome grants website access and blocking is wezeshad."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant website access. Tovuti blocking is still off."
+    "message": "Chrome did hapanat grant website access. Website blocking is still off."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Tovuti access is granted, but Fokasi Lock could not enable blocking. Jaribu Tena setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock could hapanat wezesha blocking. Jaribu tena setijuu or repakia the extension."
   },
   "popup_enable_blocking_button": {
     "message": "Wezesha website blocking"
   },
   "popup_retry_button": {
-    "message": "Jaribu Tena"
+    "message": "Jaribu tena"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Your session mwishoed because website access was ondoad."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your session ended because Fokasi Lock could not enable website blocking."
+    "message": "Your session mwishoed because Focus Lock could hapanat wezesha website blocking."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Could hapanat sitaka this hapanatice. Try again."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Sitaka website access hapanatice"
   },
   "popup_dismiss_button": {
-    "message": "Dismiss"
+    "message": "Sitaka"
   },
   "popup_restart_failed": {
-    "message": "Could not restart Fokasi Lock. Try again."
+    "message": "Could hapanat reanza Focus Lock. Try again."
   },
   "popup_boot_failed_heading": {
-    "message": "Fokasi Lock could not start"
+    "message": "Focus Lock could hapanat anza"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "The reason could hapanat be read."
   },
   "popup_reset_runtime_button": {
-    "message": "Reset local runtime"
+    "message": "Seti juuyai local runtime"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Keeps your mpangilios, lists, and statistics. Futas the current session hali."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Futa everything and start over"
+    "message": "Futa everything and anza over"
   },
   "popup_keep_data_button": {
     "message": "Keep my data"
   },
   "popup_delete_all_button": {
-    "message": "Futa all Fokasi Lock data"
+    "message": "Futa zote Focus Lock data"
   },
   "popup_setup_status_unavailable": {
-    "message": "Kuanzisha status unavailable. Reload Fokasi Lock to try again."
+    "message": "Setijuu hali unavailable. Repakia Focus Lock to try again."
   },
   "popup_snapshot_unavailable": {
-    "message": "Fokasi status unavailable"
+    "message": "Focus hali unavailable"
   },
   "popup_action_in_progress": {
     "message": "Action in progress"
   },
   "popup_active_site_checking": {
-    "message": "Checking the active site"
+    "message": "Checking the amilifu site"
   },
   "popup_active_site_unsupported": {
     "message": "Fungua a regular website to unlock it"
   },
+  "popup_active_site_unknown": {
+    "message": "Could hapanat identify the amilifu site"
+  },
+  "popup_active_site_error": {
+    "message": "Could hapanat identify the amilifu site."
+  },
   "popup_resume_now": {
-    "message": "Resume now"
+    "message": "Resume hapanaw"
   },
   "popup_start_next_focus_early": {
-    "message": "Anza next focus early"
+    "message": "Anza inayofuata focus early"
   },
   "popup_unlock_this_site": {
     "message": "Unlock this site"
   },
   "popup_unlock_all_sites": {
-    "message": "Unlock all sites"
+    "message": "Unlock zote sites"
   },
   "popup_choose_work_tab_button": {
     "message": "Choose work tab"
@@ -103,22 +139,34 @@
     "message": "Kikao actions"
   },
   "popup_add_allowed_domain_label": {
-    "message": "Ongeza an allowed domain"
+    "message": "Ongeza an zoteowed domain"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Ongeza allowed domain"
+    "message": "Ongeza zoteowed domain"
   },
   "popup_add_button": {
     "message": "Ongeza"
   },
+  "popup_draft_allowed_only": {
+    "message": "Only $COUNT$ zoteowed site rules. Other websites blocked.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Hard lock. Canhapanat mwisho early."
+  },
   "popup_draft_stop_flexible": {
-    "message": "Can end at any time."
+    "message": "Can mwisho at any time."
   },
   "popup_draft_stop_friction": {
-    "message": "Malizia after a $SECONDS$s wait.",
+    "message": "Mwisho after a $SECONDS$s wait.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -127,7 +175,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "Malizia after a $SECONDS$s wait and confirmation phrase.",
+    "message": "Mwisho after a $SECONDS$s wait and thibitishaation phrase.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -144,11 +192,17 @@
   "popup_custom_minutes_placeholder": {
     "message": "min"
   },
+  "popup_gate_force_end": {
+    "message": "Ighapanare timeout and mwisho anyway"
+  },
   "popup_gate_keep_focusing": {
     "message": "Keep focusing"
   },
   "popup_gate_phrase_label": {
-    "message": "Type:"
+    "message": "Aina:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Could hapanat juudate the gate. Try again."
   },
   "popup_gate_intention": {
     "message": "You said: $INTENTION$",
@@ -200,13 +254,13 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Kategoriya editing is disabled until blocked-site lists reload."
+    "message": "Kategoria editing is lemazad until blocked-site lists repakia."
   },
   "popup_blocked_categories_heading": {
     "message": "Zuiaed categories"
   },
   "popup_show_full_domain": {
-    "message": "Onyesha full domain: $PATTERN$",
+    "message": "Ongesha kamili domain: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -215,7 +269,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "Onyesha full regular expression: $PATTERN$",
+    "message": "Ongesha kamili regular expression: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -275,25 +329,25 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Ruhusued exceptions"
+    "message": "Zoteowed exceptions"
   },
   "popup_extra_blocked_heading": {
     "message": "Extra blocked rules"
   },
   "popup_no_extra_blocked": {
-    "message": "No extra blocked rules."
+    "message": "Hapana extra blocked rules."
   },
   "popup_allowed_heading": {
-    "message": "Ruhusued sites and rules"
+    "message": "Zoteowed sites and rules"
   },
   "popup_no_allowed_sites": {
-    "message": "No sites are allowed yet."
+    "message": "Hapana sites are zoteowed yet."
   },
   "popup_what_will_be_blocked": {
     "message": "What will be blocked"
   },
   "popup_what_will_be_allowed": {
-    "message": "What will be allowed"
+    "message": "What will be zoteowed"
   },
   "popup_extra_blocked_rules_one": {
     "message": "$COUNT$ extra blocked kanuni",
@@ -314,7 +368,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed rule",
+    "message": "$COUNT$ zoteowed rule",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -323,7 +377,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed rules",
+    "message": "$COUNT$ zoteowed rules",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -332,19 +386,19 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Ruhusued-site and rule changes here apply only to this session. Everything else is blocked."
+    "message": "Zoteowed-site and rule changes here apply only to this session. Everything else is blocked."
   },
   "popup_scope_blacklist": {
-    "message": "Kategoriya and rule changes here apply only to this session."
+    "message": "Kategoria and rule changes here apply only to this session."
   },
   "popup_open_settings_defaults": {
-    "message": "Fungua Mipango for permanent defaults"
+    "message": "Fungua Mpangilios for permanent defaults"
   },
   "popup_rule_details_label": {
     "message": "Kikao rule details"
   },
   "popup_session_type_legend": {
-    "message": "Kikao type"
+    "message": "Session aina"
   },
   "popup_session_type_flexible": {
     "message": "Flexible"
@@ -356,10 +410,10 @@
     "message": "Hard lock"
   },
   "popup_session_type_flexible_hint": {
-    "message": "Malizia the session immediately whenever you choose."
+    "message": "Mwisho the session immediately whenever you choose."
   },
   "popup_session_type_friction_hint": {
-    "message": "Maliziaing early requires $WAIT$. No typing is required.",
+    "message": "Mwishoing early requires $WAIT$. Hapana typing is required.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -368,7 +422,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Maliziaing early requires $WAIT$ and typed confirmation.",
+    "message": "Mwishoing early requires $WAIT$ and ainad thibitishaation.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -376,11 +430,20 @@
       }
     }
   },
+  "popup_session_type_hard_hint": {
+    "message": "The session canhapanat mwisho early. Site access credit still works."
+  },
   "popup_invalid_duration_error": {
     "message": "Enter a session length greater than zero dakikas."
   },
+  "popup_stale_lists_unavailable": {
+    "message": "Defaults changed, but current lists could hapanat be pakiaed. Repakia the popjuu."
+  },
   "popup_no_work_tab_option": {
-    "message": "No work tab (optional)"
+    "message": "Hapana work tab (chaguoal)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Selected tab unavailable - choose ahapanather"
   },
   "popup_intention_label": {
     "message": "Intention"
@@ -401,7 +464,7 @@
     "message": "Change"
   },
   "popup_session_settings_summary": {
-    "message": "Kikao settings"
+    "message": "Session mpangilios"
   },
   "popup_choose_work_tab_label": {
     "message": "Choose a work tab"
@@ -419,7 +482,7 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Zuiaing mode"
+    "message": "Blocking njia"
   },
   "popup_invalid_time_label": {
     "message": "invalid time"
@@ -433,19 +496,34 @@
       }
     }
   },
+  "popup_work_tabs_unavailable": {
+    "message": "Could hapanat pakia work tabs. Refungua the popjuu to try again."
+  },
   "popup_use_this_tab": {
     "message": "Use this tab"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "This tab is hapanat available for work. Choose ahapanather fungua tab."
   },
   "popup_checking_current_tab": {
     "message": "Checking current tab..."
   },
+  "popup_current_tab_load_failed": {
+    "message": "Could hapanat pakia your current tab. Try again."
+  },
   "popup_saving_work_tab": {
     "message": "Saving work tab..."
   },
+  "popup_save_work_tab_failed": {
+    "message": "Could hapanat hifadhi the work tab. Try again."
+  },
   "popup_choose_open_tab_option": {
-    "message": "Choose an open tab"
+    "message": "Choose an fungua tab"
   },
   "popup_or_choose_another_tab": {
-    "message": "Or choose another tab"
+    "message": "Or choose ahapanather tab"
+  },
+  "popup_start_failed": {
+    "message": "Could hapanat anza session. Try again."
   }
 }

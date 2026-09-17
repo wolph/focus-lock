@@ -1,1 +1,177 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock'u ayarla"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock kurulumu"
+  },
+  "onboarding_progress": {
+    "message": "$STEP$ / $TOTAL$ adım",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Kurulum verileri tarayıcıda depolanıyor. Tarayıcı verilerini temizlerseniz kurulumu yeniden tamamlamanız gerekecek."
+  },
+  "onboarding_complete_heading": {
+    "message": "Kurulum tamamlandı!"
+  },
+  "onboarding_complete_body": {
+    "message": "Focus Lock artık web sitelerini engellemeye hazır."
+  },
+  "onboarding_error_heading": {
+    "message": "Kurulum hatası"
+  },
+  "onboarding_error_body": {
+    "message": "Kurulum yüklenemedi. Yeniden dene."
+  },
+  "onboarding_retry_button": {
+    "message": "Yeniden dene"
+  },
+  "onboarding_save_error": {
+    "message": "Kurulum ilerleme kaydedilemedi. Yeniden dene."
+  },
+  "onboarding_enable_error": {
+    "message": "Website engelleme etkinleştirilemiyor. Yeniden dene."
+  },
+  "onboarding_finish_error": {
+    "message": "Kurulum tamamlanamadı. Seçimleriniz hala kaydedildi. Yeniden dene."
+  },
+  "onboarding_lists_heading": {
+    "message": "Başlangıç engelleme listesini seç"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "$MODE$ modunda, etkinleştirilen kategoriler ve ek engellenen siteler kullanılamaz.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$ modunda, izin listenizde olanlar dışında tüm siteler kullanılamaz.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Bu seçimler gelecek seanslar için varsayılan olur. Daha sonra düzenleyebilirsin."
+  },
+  "onboarding_lists_legend": {
+    "message": "Önerilen web sitesi kategorileri"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ siteler",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Siteleri göster",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Siteleri gizle",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ alanları",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Devam et"
+  },
+  "onboarding_access_heading": {
+    "message": "Website engellemeyi etkinleştir"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock, seçilen kategorilerin ve sitelerin eşleştirilmesi için sayfa adreslerini yerel olarak kontrol eder. Engelleme ekranını göstermek ve seansın bittiğinde etkilenen sayfaları geri yüklemek için website erişimini kullanır."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategoriler ve özel alanlar herhangi bir web sitesini içerebilir. Chrome bu nedenle bu özelliği isteyecektir:"
+  },
+  "onboarding_access_capability": {
+    "message": "Tüm web sitelerinde tüm verilerinizi oku ve değiştir"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock bu erişimi yalnızca engelleme kurallarını uygularken kullanır."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome website erişim vermedi. Yeniden deneyebilirsin."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Website engelleme kuralı kaydedilemedi."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Website engellemeyi etkinleştir"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Şimdi değil"
+  },
+  "onboarding_sync_heading": {
+    "message": "Ayarlarının nerede depolanacağını seç"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Chrome cihazları arasında senkronize et"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Aşağıdaki onaylanan veriler kurulumu bitirdikten sonra Chrome Sync'i kullanacak."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Tüm Focus Lock verileri bu Chrome profilinde kalır."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Senkronize edilmiş"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Yalnızca yerel"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock geliştirmecisine hiçbir şey gönderilmez."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Kurulumu senkronizasyon etkin olarak bitir"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Kurulumu senkronizasyon olmadan bitir"
+  }
+}

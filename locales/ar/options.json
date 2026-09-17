@@ -1,1 +1,957 @@
-{}
+{
+  "options_page_title": {
+    "message": "خيارات Focus Lock"
+  },
+  "options_heading": {
+    "message": "إعدادات Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "جارٍ تحميل الإعدادات"
+  },
+  "options_privacy_loading": {
+    "message": "جارٍ تحميل إعدادات الخصوصية"
+  },
+  "options_save_failed": {
+    "message": "تعذّر الحفظ. أعد المحاولة."
+  },
+  "options_blocking_heading": {
+    "message": "الحظر"
+  },
+  "options_blocking_help": {
+    "message": "تحظر القواعد المخصصة أثناء جلسات القائمة السوداء. والقائمة البيضاء هي ما يبقى متاحًا أثناء جلسات القائمة البيضاء. وتحظر الفئات المرفقة أكثر مضيّعات الوقت شيوعًا."
+  },
+  "options_custom_blacklist_title": {
+    "message": "قائمة سوداء مخصصة"
+  },
+  "options_whitelist_title": {
+    "message": "القائمة البيضاء"
+  },
+  "options_bundled_categories_heading": {
+    "message": "الفئات المرفقة"
+  },
+  "options_bundled_categories_help": {
+    "message": "قوائم مرفقة بأكثر مضيّعات الوقت شيوعًا. فعّل فئة كاملة، ثم افتحها لإبقاء مواقع منفردة متاحة."
+  },
+  "options_schedule_heading": {
+    "message": "الجدول الزمني"
+  },
+  "options_schedule_help": {
+    "message": "تبدأ الجلسات تلقائيًا داخل هذه الفترات. وتنطبق الصرامة المحددة هنا على الفترة كاملة."
+  },
+  "options_behavior_heading": {
+    "message": "سلوك الجلسة"
+  },
+  "options_budget_heading": {
+    "message": "رصيد الوصول إلى المواقع"
+  },
+  "options_notifications_heading": {
+    "message": "الإشعارات"
+  },
+  "options_privacy_heading": {
+    "message": "الخصوصية والبيانات"
+  },
+  "options_load_error_retry": {
+    "message": "إعادة المحاولة"
+  },
+  "options_load_error_delete_all": {
+    "message": "حذف كل شيء والبدء من جديد"
+  },
+  "options_load_error_keep_data": {
+    "message": "الاحتفاظ ببياناتي"
+  },
+  "options_delete_all_data": {
+    "message": "حذف جميع بيانات Focus Lock"
+  },
+  "options_dirty_saving": {
+    "message": "جارٍ حفظ التغييرات"
+  },
+  "options_dirty_unsaved": {
+    "message": "تغييرات غير محفوظة"
+  },
+  "options_dirty_clean": {
+    "message": "لا توجد تغييرات غير محفوظة"
+  },
+  "options_dirty_discard": {
+    "message": "تجاهل التغييرات"
+  },
+  "options_dirty_save": {
+    "message": "حفظ التغييرات"
+  },
+  "options_session_status_label": {
+    "message": "حالة الجلسة"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "نطاق"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "تعبير نمطي"
+  },
+  "options_rule_remove": {
+    "message": "إزالة"
+  },
+  "options_rule_remove_aria": {
+    "message": "إزالة $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "لا توجد قواعد بعد."
+  },
+  "options_rule_kind_aria": {
+    "message": "نوع القاعدة"
+  },
+  "options_rule_kind_host_option": {
+    "message": "نطاق أو نطاق فرعي"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "تعبير نمطي (عنوان URL كامل)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "النمط"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "إضافة قاعدة"
+  },
+  "options_rules_help": {
+    "message": "يغطي facebook.com ذلك النطاق وكل نطاقاته الفرعية. ويغطي news.ycombinator.com ذلك النطاق الفرعي وكل ما تحته. ويطابق /youtube\\.com\\/shorts/ عنوان URL الكامل كتعبير نمطي."
+  },
+  "options_number_error_positive": {
+    "message": "يجب أن يكون $LABEL$ عددًا صحيحًا موجبًا.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "يجب أن يكون $LABEL$ عددًا صحيحًا أكبر من صفر أو مساويًا له.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "يجب أن يكون $LABEL$ أكبر من صفر أو مساويًا له.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "يجب أن يكون $LABEL$ ضمن نطاق الدقائق المدعوم.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "يجب أن يكون $LABEL$ ضمن نطاق الأيام المدعوم.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "الإعدادات الافتراضية للجلسة"
+  },
+  "options_session_defaults_help": {
+    "message": "يُثبَّت الوضع والصرامة عند بدء الجلسة. وهذه هي القيم التي يفتح بها نموذج البدء."
+  },
+  "options_preset_short_label": {
+    "message": "إعداد الجلسة القصيرة (بالدقائق)"
+  },
+  "options_preset_default_label": {
+    "message": "إعداد الجلسة الافتراضية (بالدقائق)"
+  },
+  "options_preset_deep_label": {
+    "message": "إعداد الجلسة العميقة (بالدقائق)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "قائمة سوداء: حظر المواقع المدرجة"
+  },
+  "options_mode_whitelist_label": {
+    "message": "قائمة بيضاء: السماح بالمواقع المدرجة فقط"
+  },
+  "options_strictness_flexible_label": {
+    "message": "مرن: أنهِ الجلسة متى شئت"
+  },
+  "options_strictness_friction_label": {
+    "message": "احتكاك: الإيقاف المبكر يمرّ عبر بوابة التروّي المُعدّة"
+  },
+  "options_strictness_hard_label": {
+    "message": "صارم: لا إنهاء مبكر، وصول مؤقت إلى المواقع فقط"
+  },
+  "options_cycle_heading": {
+    "message": "دورة التركيز والاستراحة"
+  },
+  "options_cycle_help": {
+    "message": "الإعدادات الافتراضية: 25 دقيقة تركيز، و5 دقائق استراحة، و15 دقيقة استراحة طويلة كل دورة رابعة. في عيّنات الدراسات، تتفوق الاستراحات المجدولة على الاستراحات حسب الرغبة في المزاج والتركيز. والدقائق المحددة عُرف وليست علمًا."
+  },
+  "options_cycle_default_label": {
+    "message": "تناوب التركيز والاستراحات افتراضيًا"
+  },
+  "options_focus_minutes_label": {
+    "message": "دقائق التركيز"
+  },
+  "options_short_break_minutes_label": {
+    "message": "دقائق الاستراحة القصيرة"
+  },
+  "options_long_break_minutes_label": {
+    "message": "دقائق الاستراحة الطويلة"
+  },
+  "options_long_every_label": {
+    "message": "استراحة طويلة كل دورة رقم N"
+  },
+  "options_gate_heading": {
+    "message": "بوابة التروّي"
+  },
+  "options_gate_help": {
+    "message": "مهلة 10 ثوانٍ مع زرّ صريح للعودة إلى العمل تقلّل الزيارات الاندفاعية بشكل قابل للقياس (دراسة ميدانية، PNAS 2023). والمهلة الأطول والعبارة المكتوبة تضاعفان الأثر تقريبًا."
+  },
+  "options_gate_wait_one": {
+    "message": "انتظر $COUNT$ ثانية",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "انتظر $COUNT$ ثانية",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "مخصص"
+  },
+  "options_custom_delay_label": {
+    "message": "مهلة مخصصة (بالثواني)"
+  },
+  "options_custom_delay_error": {
+    "message": "يجب أن تكون المهلة المخصصة عددًا صحيحًا موجبًا من الثواني."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "اطلب أيضًا كتابة عبارة"
+  },
+  "options_gate_force_end_label": {
+    "message": "تفعيل زر «تجاهل المهلة وأنهِ على أي حال»"
+  },
+  "options_credit_help": {
+    "message": "يتراكم رصيد الوصول إلى المواقع أثناء تركيزك. ويُخصم كل من الوصول إلى جميع المواقع وإلغاء قفل موقع واحد من الرصيد نفسه. ويمكنك الابتعاد في أي وقت دون إنفاق رصيد."
+  },
+  "options_earn_rate_label": {
+    "message": "دقائق الوصول إلى المواقع مقابل كل 30 دقيقة تركيز"
+  },
+  "options_credit_cap_label": {
+    "message": "حدّ رصيد الوصول إلى المواقع (بالدقائق)"
+  },
+  "options_pause_length_label": {
+    "message": "مدة الوصول إلى جميع المواقع (بالدقائق)"
+  },
+  "options_unlock_length_label": {
+    "message": "مدة إلغاء قفل موقع (بالدقائق)"
+  },
+  "options_streak_heading": {
+    "message": "السلسلة والاحتفاظ بالبيانات"
+  },
+  "options_streak_help": {
+    "message": "تحسب السلسلة الأيام التي تبلغ الهدف. جلسة افتراضية واحدة تبقي السلسلة حيّة، ورمز التجميد يصلح يومًا فائتًا."
+  },
+  "options_streak_goal_label": {
+    "message": "هدف السلسلة اليومي (دقائق تركيز)"
+  },
+  "options_freeze_interval_label": {
+    "message": "فترة منح رموز التجميد (بالأيام)"
+  },
+  "options_retention_label": {
+    "message": "الاحتفاظ بالإحصاءات اليومية (بالأيام)"
+  },
+  "options_category_on_announcement": {
+    "message": "فئة $CATEGORY$ مفعّلة.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "فئة $CATEGORY$ معطّلة.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "جميع الفئات مفعّلة."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "جميع الفئات معطّلة."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ مُدرج.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ أُبقي متاحًا.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "جميع مواقع $CATEGORY$ مُدرجة.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "جميع مواقع $CATEGORY$ أُبقيت متاحة.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "إجراءات جماعية على الفئات"
+  },
+  "options_selected_count": {
+    "message": "المحدد $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "غير المحدد $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "تحديد الكل"
+  },
+  "options_deselect_all": {
+    "message": "إلغاء تحديد الكل"
+  },
+  "options_select_all_categories_aria": {
+    "message": "تحديد جميع الفئات"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "إلغاء تحديد جميع الفئات"
+  },
+  "options_show_category_sites": {
+    "message": "عرض مواقع $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "إخفاء مواقع $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ موقع مُدرج",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ موقع مُدرج",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "الفئة معطّلة"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ مُدرج عند التفعيل",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ مُدرج عند التفعيل",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "أزل تحديد موقع لإبقائه متاحًا بينما تبقى بقية الفئة محظورة."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "إجراءات جماعية على مواقع $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "تحديد جميع مواقع $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "إلغاء تحديد جميع مواقع $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "مواقع $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "أحد"
+  },
+  "options_day_mon": {
+    "message": "اثنين"
+  },
+  "options_day_tue": {
+    "message": "ثلاثاء"
+  },
+  "options_day_wed": {
+    "message": "أربعاء"
+  },
+  "options_day_thu": {
+    "message": "خميس"
+  },
+  "options_day_fri": {
+    "message": "جمعة"
+  },
+  "options_day_sat": {
+    "message": "سبت"
+  },
+  "options_schedule_cycles_label": {
+    "message": "تناوب التركيز والاستراحات"
+  },
+  "options_schedule_overlap_error": {
+    "message": "يتداخل مع مدخل آخر مفعّل يوم $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "نوع الجلسة"
+  },
+  "options_schedule_entry_legend": {
+    "message": "مدخل الجدول الزمني"
+  },
+  "options_schedule_start_label": {
+    "message": "البداية"
+  },
+  "options_schedule_end_label": {
+    "message": "النهاية"
+  },
+  "options_schedule_duration_legend": {
+    "message": "المدة"
+  },
+  "options_schedule_intention_label": {
+    "message": "النية"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "ما الغرض من هذا الوقت"
+  },
+  "options_schedule_save_entry": {
+    "message": "حفظ المدخل"
+  },
+  "options_cancel": {
+    "message": "إلغاء"
+  },
+  "options_schedule_empty": {
+    "message": "لا توجد جلسات مجدولة بعد."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "الأيام المحددة"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ إلى $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "قائمة سوداء"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "قائمة بيضاء"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "مرن"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "احتكاك"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "صارم"
+  },
+  "options_schedule_enabled_label": {
+    "message": "مفعّل"
+  },
+  "options_schedule_edit": {
+    "message": "تعديل"
+  },
+  "options_schedule_delete": {
+    "message": "حذف"
+  },
+  "options_schedule_add": {
+    "message": "إضافة مدخل إلى الجدول الزمني"
+  },
+  "options_sounds_heading": {
+    "message": "الأصوات"
+  },
+  "options_master_volume": {
+    "message": "مستوى الصوت العام"
+  },
+  "options_sound_session_complete": {
+    "message": "انتهاء الجلسة"
+  },
+  "options_sound_break_start": {
+    "message": "بداية الاستراحة"
+  },
+  "options_sound_break_end": {
+    "message": "نهاية الاستراحة"
+  },
+  "options_sound_schedule_start": {
+    "message": "البدء التلقائي بالجدول"
+  },
+  "options_sound_preview_aria": {
+    "message": "تشغيل $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "تشغيل"
+  },
+  "options_sound_preview_error": {
+    "message": "تعذّر تشغيل الصوت. أعد المحاولة."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "الإشعارات"
+  },
+  "options_session_complete_notification": {
+    "message": "عرض إشعار من النظام عند انتهاء الجلسة"
+  },
+  "options_badge_heading": {
+    "message": "الشارة"
+  },
+  "options_badge_countdown": {
+    "message": "عرض الوقت المتبقي على أيقونة شريط الأدوات"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "الوصول إلى المواقع"
+  },
+  "options_privacy_website_off_title": {
+    "message": "الوصول إلى المواقع معطّل"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "لا يستطيع Focus Lock حظر المواقع حتى تمنحه الوصول."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "تفعيل حظر المواقع"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "الوصول إلى المواقع ممنوح، لكن الحظر غير نشط"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "منح Chrome الوصول، لكن تعذّر على Focus Lock تسجيل برنامج الحظر الخاص به."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "إعادة محاولة حظر المواقع"
+  },
+  "options_privacy_website_on_title": {
+    "message": "حظر المواقع مفعّل"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "يستطيع Focus Lock تطبيق قواعد الحظر النشطة لديك على صفحات المواقع العادية."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "حذف السجل المحلي؟"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "تأكيد حذف السجل المحلي"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "حُذف السجل المحلي."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "يحذف هذا نهائيًا من هذا الجهاز عناوين URL الكاملة ونيات التركيز وأحداث الجلسات التفصيلية. ولا يمسح جلسة قيد التشغيل، إذ تحتفظ بنيتها وبعنوان كل علامة تبويب تحظرها. وإنهاء الجلسة يمسح النية ويبدأ تنظيفًا يمسح كل علامة تبويب مفتوحة، ويزيل التنظيف كل العناوين المخزّنة عند اكتماله."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "يحذف هذا نهائيًا من هذا الجهاز عناوين URL الكاملة ونيات التركيز وأحداث الجلسات التفصيلية، إضافة إلى الإحصاءات المجمّعة المحلية فقط. ولا يمسح جلسة قيد التشغيل، إذ تحتفظ بنيتها وبعنوان كل علامة تبويب تحظرها. وإنهاء الجلسة يمسح النية ويبدأ تنظيفًا يمسح كل علامة تبويب مفتوحة، ويزيل التنظيف كل العناوين المخزّنة عند اكتماله."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "حذف بيانات المزامنة البعيدة؟"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "تأكيد حذف بيانات المزامنة البعيدة"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "حُذفت بيانات Chrome Sync البعيدة."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "يحذف هذا نهائيًا من Chrome Sync الإعدادات البعيدة وقوائم الحظر والسماح ورصيد الوصول إلى المواقع والسلاسل ومجاميع المحاولات المحظورة على مستوى النطاق. وتبقى الإعدادات والإحصاءات المحلية على هذا الجهاز."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "حذف جميع بيانات Focus Lock؟"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "تأكيد حذف جميع بيانات Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "حُذفت جميع بيانات Focus Lock."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "يحذف هذا نهائيًا كل بيانات Focus Lock على هذا الجهاز وأي نسخ من Focus Lock متبقية في Chrome Sync:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "حذف كل شيء متاح فقط بينما لا توجد جلسة قيد التشغيل. ثم يعود Focus Lock إلى الإعداد."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "تعذّر حذف السجل المحلي. أعد المحاولة."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "تعذّر حذف بيانات Chrome Sync البعيدة. أعد المحاولة."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "تعذّر حذف جميع بيانات Focus Lock. أعد المحاولة."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "تعذّر على Chrome Sync حفظ أحدث تغييراتك. نسختك المحلية بأمان."
+  },
+  "options_privacy_error_request": {
+    "message": "تعذّر إكمال الطلب. أعد المحاولة."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "حُدّث الوصول إلى المواقع."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "لم يُمنح الوصول إلى المواقع."
+  },
+  "options_privacy_error_website_access": {
+    "message": "تعذّر تحديث الوصول إلى المواقع. أعد المحاولة."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "فُعّل حظر المواقع."
+  },
+  "options_privacy_error_export": {
+    "message": "تعذّر تصدير سجل الأحداث."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "تعذّر تصدير سجل الأحداث. أعد المحاولة."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "تعذّر فتح إعدادات صلاحيات Chrome. أعد المحاولة."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "فُتحت إعدادات صلاحيات Chrome."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "فتح إعدادات صلاحيات Chrome"
+  },
+  "options_privacy_sync_heading": {
+    "message": "مزامنة Chrome"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "مزامنة بيانات Focus Lock بين أجهزة Chrome"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "فُعّلت مزامنة Chrome."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "عُطّلت مزامنة Chrome."
+  },
+  "options_privacy_sync_saving": {
+    "message": "ما زالت مزامنة Chrome تحفظ أحدث تغييراتك."
+  },
+  "options_privacy_sync_on": {
+    "message": "مزامنة Chrome مفعّلة."
+  },
+  "options_privacy_sync_off": {
+    "message": "مزامنة Chrome معطّلة."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "حُفظت تغييرات مزامنة Chrome."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "إعادة محاولة تفعيل مزامنة Chrome"
+  },
+  "options_privacy_retry_sync": {
+    "message": "إعادة محاولة مزامنة Chrome"
+  },
+  "options_privacy_scope_synced": {
+    "message": "مزامَن"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "محلي فقط"
+  },
+  "options_privacy_developer_note": {
+    "message": "لا يُرسل أي شيء إلى مطوّر Focus Lock."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "سجل الأحداث المحلي"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "صدّر السجل المحلي التفصيلي أو احذف سجل التصفح والجلسات المحلي."
+  },
+  "options_privacy_export_local_log": {
+    "message": "تصدير سجل الأحداث المحلي"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "صُدّر سجل الأحداث المحلي."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "حذف السجل المحلي"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "بيانات المزامنة البعيدة"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "احذف نسخ Focus Lock المتبقية في Chrome Sync دون تغيير هذا الجهاز."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "حذف بيانات المزامنة البعيدة"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "جميع بيانات Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "احذف كل سجل لـ Focus Lock على هذا الجهاز وأي نسخ من Focus Lock متبقية في Chrome Sync، ثم ابدأ من جديد من الإعداد. متاح بينما لا توجد جلسة قيد التشغيل."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "استئناف حذف جميع بيانات Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "إعادة محاولة حذف السجل المحلي"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "إعادة محاولة حذف المزامنة البعيدة"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "إعادة محاولة حذف جميع البيانات"
+  },
+  "options_error_load": {
+    "message": "تعذّر تحميل الإعدادات. أعد تحميل الصفحة للمحاولة مرة أخرى."
+  },
+  "options_error_retry_boot": {
+    "message": "تعذّر إعادة تشغيل Focus Lock. أعد المحاولة."
+  },
+  "options_error_refresh_privacy": {
+    "message": "تعذّر تحديث إعدادات الخصوصية. أعد تحميل الصفحة."
+  },
+  "options_error_website_blocking": {
+    "message": "تعذّر تحديث حظر المواقع. أعد المحاولة."
+  },
+  "options_error_change_sync": {
+    "message": "تعذّر تغيير مزامنة Chrome. أعد المحاولة."
+  },
+  "options_error_retry_sync": {
+    "message": "تعذّر إعادة محاولة مزامنة Chrome. أعد المحاولة."
+  },
+  "options_error_save_settings": {
+    "message": "تعذّر حفظ الإعدادات. أعد تحميل الصفحة وحاول مرة أخرى."
+  },
+  "options_error_save_lists": {
+    "message": "تعذّر حفظ القوائم. أعد تحميل الصفحة وحاول مرة أخرى."
+  },
+  "options_gate_wait_zero": {
+    "message": "انتظر $COUNT$ ثانية",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_two": {
+    "message": "انتظر $COUNT$ ثانيتين",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_few": {
+    "message": "انتظر $COUNT$ ثوانٍ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_many": {
+    "message": "انتظر $COUNT$ ثانية",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_zero": {
+    "message": "$COUNT$ موقع مُدرج",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_sites_included_two": {
+    "message": "$COUNT$ موقعان مُدرجان",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_sites_included_few": {
+    "message": "$COUNT$ مواقع مُدرجة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_sites_included_many": {
+    "message": "$COUNT$ موقعًا مُدرجًا",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_zero": {
+    "message": "$COUNT$ مُدرج عند التفعيل",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_two": {
+    "message": "$COUNT$ مُدرجان عند التفعيل",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_few": {
+    "message": "$COUNT$ مُدرجة عند التفعيل",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_many": {
+    "message": "$COUNT$ مُدرجًا عند التفعيل",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

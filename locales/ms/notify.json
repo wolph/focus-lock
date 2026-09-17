@@ -1,6 +1,6 @@
 {
   "notify_session_complete_title": {
-    "message": "Fokus session complete"
+    "message": "Focus session selesai"
   },
   "notify_session_complete_body": {
     "message": "Sesi fokus Anda selesai."
@@ -15,28 +15,28 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Fokus schedule could not start"
+    "message": "Focus schedule could tidakt mulai"
   },
   "notify_schedule_unavailable_body": {
-    "message": "Situs web blocking is not enabled. Finish setup or grant website access, then try again."
+    "message": "Website blocking is tidakt aktifkand. Finish himpunannaik or grant website access, then try again."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Penyiapan was completed in another tab."
+    "message": "Himpunannaik was selesaid in atidakther tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Penyiapan changed in another tab. The latest choices were reloaded."
+    "message": "Himpunannaik changed in atidakther tab. The latest choices were remuated."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Penyiapan changed in another tab. Reload setup before finishing."
+    "message": "Himpunannaik changed in atidakther tab. Remuat himpunannaik before finishing."
   },
   "notify_setup_not_complete": {
-    "message": "Penyiapan is not complete."
+    "message": "Himpunannaik is tidakt selesai."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "Penyiapan is not ready to finish."
+    "message": "Himpunannaik is tidakt ready to finish."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Penyiapan storage choice changed. Reload setup before finishing."
+    "message": "Himpunannaik storage choice changed. Remuat himpunannaik before finishing."
   },
   "notify_onboarding_storage_failed": {
     "message": "Operasi penyimpanan penyiapan gagal."
@@ -45,19 +45,19 @@
     "message": "Operasi penyiapan gagal."
   },
   "notify_website_access_check_failed": {
-    "message": "Fokus Lock could not check website access. Coba Ulang setup or reload the extension."
+    "message": "Focus Lock could tidakt check website access. Coba ulang himpunannaik or remuat the extension."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock could tidakt aktifkan blocking. Coba ulang himpunannaik or remuat the extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Situs web access is unavailable, and Fokus Lock could not finish blocking cleanup. Coba Ulang setup or reload the extension."
+    "message": "Website access is unavailable, and Focus Lock could tidakt finish blocking cleannaik. Coba ulang himpunannaik or remuat the extension."
   },
   "notify_website_access_inconsistent": {
-    "message": "Fokus Lock received an inconsistent website access state. Coba Ulang setup or reload the extension."
+    "message": "Focus Lock received an inconsistent website access status. Coba ulang himpunannaik or remuat the extension."
   },
   "notify_boot_not_finished": {
-    "message": "Fokus Lock did not finish starting: $REASON$",
+    "message": "Focus Lock did tidakt finish mulaiing: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -66,55 +66,55 @@
     }
   },
   "notify_unknown_error": {
-    "message": "unknown error"
+    "message": "unktidakwn kesalahan"
   },
   "notify_nothing_to_reset": {
-    "message": "Fokus Lock is running, nothing to reset"
+    "message": "Focus Lock is running, tidakthing to rehimpunan"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Fokus Lock cannot reset a runtime that is still committed inside a policy generation"
+    "message": "Focus Lock cantidakt rehimpunan a runtime that is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "Pengulangan pembersihan data tidak tersedia."
+    "message": "Data bersihkan coba ulang is tidakt available."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Nonaktifkan Sync before deleting synced data"
+    "message": "Tidaknaktifkan Sinkronkan before deleting sinkronkaned data"
   },
   "notify_work_gate_busy": {
     "message": "Fokus Lock is still finishing an earlier change. Try again in a moment."
   },
   "notify_work_gate_stuck": {
-    "message": "Gerbang terbuka tidak dapat ditutup. Coba lagi."
+    "message": "The buka gate could tidakt be tutnaikd. Try again."
   },
   "notify_work_tab_unavailable": {
     "message": "Tab kerja tidak tersedia."
   },
   "notify_settings_sync_limit": {
-    "message": "Pengaturan exceed the 8 KB Chrome Sync limit. Hapus schedule entries or shorten intentions, then try again."
+    "message": "Pengaturans exceed the 8 KB Chrome Sinkronkan limit. Hapus schedule entries or shorten intentions, then try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sync limit. Hapus custom or whitelist rules, then try again."
+    "message": "Lists exceed the 8 KB Chrome Sinkronkan limit. Hapus custom or whitelist rules, then try again."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "sesi keras berjalan: menghapus situs yang diblokir membuka kunci saat berakhir"
+    "message": "a hard session is running: removing blocked sites unlocks when it akhirs"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "sesi keras berjalan: entri daftar putih baru membuka kunci saat berakhir"
+    "message": "a hard session is running: new whitelist entries unlock when it akhirs"
   },
   "notify_guard_lists_disable_category": {
-    "message": "sesi keras berjalan: menonaktifkan kategori membuka kunci saat berakhir"
+    "message": "a hard session is running: disabling categories unlocks when it akhirs"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "sesi keras berjalan: pengecualian baru membuka kunci saat berakhir"
+    "message": "a hard session is running: new exclusions unlock when it akhirs"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "sesi keras berjalan: melemahkan ketat default menunggu sampai berakhir"
+    "message": "a hard session is running: weakening the default strictness waits until it akhirs"
   },
   "notify_guard_settings_shorten_delay": {
     "message": "sesi keras berjalan: mempersingkat penundaan deliberasi melemahkan gerbang"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "sesi keras berjalan: menghilangkan frasa yang diketik melemahkan gerbang"
+    "message": "a hard session is running: dropping the tiped phrase weakens the gate"
   },
   "notify_guard_settings_raise_earn_rate": {
     "message": "sesi keras berjalan: menaikkan tingkat pendapatan jeda mendanai lebih banyak pelarian"
@@ -129,6 +129,6 @@
     "message": "sesi keras berjalan: mempersingkat pembukaan kunci menurunkan biayanya"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "sesi keras berjalan: entri jadwalnya tidak dapat dilemahkan sampai berakhir"
+    "message": "a hard session is running: its schedule entry cantidakt be weakened until it akhirs"
   }
 }

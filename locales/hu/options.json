@@ -1,1 +1,849 @@
-{}
+{
+  "options_page_title": {
+    "message": "Focus Lock beállítások"
+  },
+  "options_heading": {
+    "message": "Focus Lock beállítások"
+  },
+  "options_loading_settings": {
+    "message": "Beállítások betöltése"
+  },
+  "options_privacy_loading": {
+    "message": "Adatvédelmi beállítások betöltése"
+  },
+  "options_save_failed": {
+    "message": "A mentés nem sikerült. Próbáld újra."
+  },
+  "options_blocking_heading": {
+    "message": "Blokkolás"
+  },
+  "options_blocking_help": {
+    "message": "Az egyéni szabályok a tiltólistás menetek alatt blokkolnak. Az engedélyezési lista az, ami az engedélyezési listás menetek alatt elérhető marad. A beépített kategóriák a szokásos időrablókat zárják ki."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Egyéni tiltólista"
+  },
+  "options_whitelist_title": {
+    "message": "Engedélyezési lista"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Beépített kategóriák"
+  },
+  "options_bundled_categories_help": {
+    "message": "Kész listák a szokásos időrablókról. Kapcsolj be egy egész kategóriát, majd nyisd ki, ha egyes oldalakat elérhetőnek hagynál."
+  },
+  "options_schedule_heading": {
+    "message": "Ütemezés"
+  },
+  "options_schedule_help": {
+    "message": "A menetek maguktól indulnak ezekben az idősávokban. Az itt beállított szigor az egész idősávra érvényes."
+  },
+  "options_behavior_heading": {
+    "message": "A menet viselkedése"
+  },
+  "options_budget_heading": {
+    "message": "Oldalhozzáférési kredit"
+  },
+  "options_notifications_heading": {
+    "message": "Értesítések"
+  },
+  "options_privacy_heading": {
+    "message": "Adatvédelem és adatok"
+  },
+  "options_load_error_retry": {
+    "message": "Újra"
+  },
+  "options_load_error_delete_all": {
+    "message": "Mindent törlök és újrakezdem"
+  },
+  "options_load_error_keep_data": {
+    "message": "Megtartom az adataimat"
+  },
+  "options_delete_all_data": {
+    "message": "Minden Focus Lock adat törlése"
+  },
+  "options_dirty_saving": {
+    "message": "Változtatások mentése"
+  },
+  "options_dirty_unsaved": {
+    "message": "Mentetlen változtatások"
+  },
+  "options_dirty_clean": {
+    "message": "Nincs mentetlen változtatás"
+  },
+  "options_dirty_discard": {
+    "message": "Változtatások elvetése"
+  },
+  "options_dirty_save": {
+    "message": "Változtatások mentése"
+  },
+  "options_session_status_label": {
+    "message": "A menet állapota"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domain"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
+  "options_rule_remove": {
+    "message": "Eltávolítás"
+  },
+  "options_rule_remove_aria": {
+    "message": "$PATTERN$ eltávolítása",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Még nincs szabály."
+  },
+  "options_rule_kind_aria": {
+    "message": "Szabály típusa"
+  },
+  "options_rule_kind_host_option": {
+    "message": "domain vagy aldomain"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (teljes URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Minta"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "Szabály hozzáadása"
+  },
+  "options_rules_help": {
+    "message": "A facebook.com az adott domaint és minden aldomaint lefedi. A news.ycombinator.com azt az aldomaint és mindent alatta. A /youtube\\.com\\/shorts/ a teljes URL-t illeszti reguláris kifejezésként."
+  },
+  "options_number_error_positive": {
+    "message": "A(z) $LABEL$ csak nullánál nagyobb egész szám lehet.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "A(z) $LABEL$ csak nulla vagy annál nagyobb egész szám lehet.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "A(z) $LABEL$ nem lehet nullánál kisebb.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "A(z) $LABEL$ a támogatott perctartományon kívül esik.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "A(z) $LABEL$ a támogatott naptartományon kívül esik.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "A menet alapértékei"
+  },
+  "options_session_defaults_help": {
+    "message": "A mód és a szigor a menet indulásakor rögzül. Ezekkel az értékekkel nyílik meg az indítóűrlap."
+  },
+  "options_preset_short_label": {
+    "message": "Rövid menet előbeállítása (perc)"
+  },
+  "options_preset_default_label": {
+    "message": "Alapértelmezett menet előbeállítása (perc)"
+  },
+  "options_preset_deep_label": {
+    "message": "Mély menet előbeállítása (perc)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Tiltólista: a felsorolt oldalak blokkolása"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Engedélyezési lista: csak a felsorolt oldalak engedélyezése"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Rugalmas: a menetet bármikor befejezheted"
+  },
+  "options_strictness_friction_label": {
+    "message": "Súrlódás: a korai leállítás a beállított megerősítésen megy át"
+  },
+  "options_strictness_hard_label": {
+    "message": "Teljes zárolás: nincs korai befejezés, csak ideiglenes oldalhozzáférés"
+  },
+  "options_cycle_heading": {
+    "message": "Fókusz- és pihenőciklus"
+  },
+  "options_cycle_help": {
+    "message": "Alapértékek: 25 perc fókusz, 5 perc pihenő, 15 perc hosszú pihenő minden 4. ciklus után. A vizsgálatokban az ütemezett pihenők jobbak a hangulatra és a fókuszra, mint az ötletszerűen tartottak. A pontos percszámok megegyezés kérdései, nem tudományé."
+  },
+  "options_cycle_default_label": {
+    "message": "Fókusz és pihenő váltogatása alapértelmezés szerint"
+  },
+  "options_focus_minutes_label": {
+    "message": "Fókuszpercek"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Rövid pihenő percei"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Hosszú pihenő percei"
+  },
+  "options_long_every_label": {
+    "message": "Hosszú pihenő minden N. ciklus után"
+  },
+  "options_gate_heading": {
+    "message": "Megerősítő várakozás"
+  },
+  "options_gate_help": {
+    "message": "Egy 10 másodperces várakozás egy külön munkához visszatérő gombbal mérhetően csökkenti az impulzusból fakadó látogatásokat (terepkutatás, PNAS 2023). A hosszabb várakozás és a begépelt mondat nagyjából megduplázza a hatást."
+  },
+  "options_gate_wait_one": {
+    "message": "Várakozás $COUNT$ másodpercig",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Várakozás $COUNT$ másodpercig",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Egyéni"
+  },
+  "options_custom_delay_label": {
+    "message": "Egyéni várakozás (másodperc)"
+  },
+  "options_custom_delay_error": {
+    "message": "Az egyéni várakozás csak nullánál nagyobb egész másodperc lehet."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Kérjen begépelt mondatot is"
+  },
+  "options_gate_force_end_label": {
+    "message": "A „Várakozás átugrása és befejezés mindenképp” gomb bekapcsolása"
+  },
+  "options_credit_help": {
+    "message": "Az oldalhozzáférési kredit fókuszálás közben gyűlik. A teljes hozzáférés és az egy oldalra szóló feloldás is ugyanabból az egyenlegből megy. Bármikor felállhatsz anélkül, hogy kreditet költenél."
+  },
+  "options_earn_rate_label": {
+    "message": "Oldalhozzáférés percben 30 perc fókuszonként"
+  },
+  "options_credit_cap_label": {
+    "message": "Oldalhozzáférési kredit felső határa (perc)"
+  },
+  "options_pause_length_label": {
+    "message": "Teljes oldalhozzáférés hossza (perc)"
+  },
+  "options_unlock_length_label": {
+    "message": "Egy oldal feloldásának hossza (perc)"
+  },
+  "options_streak_heading": {
+    "message": "Sorozat és megőrzés"
+  },
+  "options_streak_help": {
+    "message": "A sorozat azokat a napokat számolja, amelyek elérik a célt. Egy alapértelmezett menet életben tartja a láncot, egy fagyasztás pedig megjavít egy kihagyott napot."
+  },
+  "options_streak_goal_label": {
+    "message": "Napi sorozatcél (fókuszpercben)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Fagyasztások közötti idő (nap)"
+  },
+  "options_retention_label": {
+    "message": "Napi statisztikák megőrzése (nap)"
+  },
+  "options_category_on_announcement": {
+    "message": "$CATEGORY$ kategória bekapcsolva.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "$CATEGORY$ kategória kikapcsolva.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Minden kategória bekapcsolva."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Minden kategória kikapcsolva."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ bevéve.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ elérhető marad.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Minden $CATEGORY$ oldal bevéve.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Minden $CATEGORY$ oldal elérhető marad.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Kategóriák tömeges műveletei"
+  },
+  "options_selected_count": {
+    "message": "Kijelölve: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Kijelölés törölve: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Összes kijelölése"
+  },
+  "options_deselect_all": {
+    "message": "Kijelölés törlése"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Minden kategória kijelölése"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Minden kategória kijelölésének törlése"
+  },
+  "options_show_category_sites": {
+    "message": "$CATEGORY$ oldalainak megjelenítése",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "$CATEGORY$ oldalainak elrejtése",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ oldal bevéve",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ oldal bevéve",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Kategória kikapcsolva"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ lesz bevéve bekapcsoláskor",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ lesz bevéve bekapcsoláskor",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Vedd ki a pipát egy oldalnál, ha elérhető maradna, míg a kategória többi része blokkolva van."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ oldalainak tömeges műveletei",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "$CATEGORY$ minden oldalának kijelölése",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "$CATEGORY$ minden oldala kijelölésének törlése",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$ oldalai",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "Vas"
+  },
+  "options_day_mon": {
+    "message": "Hét"
+  },
+  "options_day_tue": {
+    "message": "Kedd"
+  },
+  "options_day_wed": {
+    "message": "Sze"
+  },
+  "options_day_thu": {
+    "message": "Csüt"
+  },
+  "options_day_fri": {
+    "message": "Pén"
+  },
+  "options_day_sat": {
+    "message": "Szo"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Fókusz és pihenő váltogatása"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Átfed egy másik bekapcsolt bejegyzéssel ezen a napon: $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "A menet típusa"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Ütemezési bejegyzés"
+  },
+  "options_schedule_start_label": {
+    "message": "Kezdés"
+  },
+  "options_schedule_end_label": {
+    "message": "Vége"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Hossz"
+  },
+  "options_schedule_intention_label": {
+    "message": "Szándék"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "mire szolgál ez az idő"
+  },
+  "options_schedule_save_entry": {
+    "message": "Bejegyzés mentése"
+  },
+  "options_cancel": {
+    "message": "Mégse"
+  },
+  "options_schedule_empty": {
+    "message": "Még nincs ütemezett menet."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Kijelölt napok"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ és $END$ között",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "tiltólista"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "engedélyezési lista"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "rugalmas"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "súrlódás"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "teljes"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Bekapcsolva"
+  },
+  "options_schedule_edit": {
+    "message": "Szerkesztés"
+  },
+  "options_schedule_delete": {
+    "message": "Törlés"
+  },
+  "options_schedule_add": {
+    "message": "Ütemezési bejegyzés hozzáadása"
+  },
+  "options_sounds_heading": {
+    "message": "Hangok"
+  },
+  "options_master_volume": {
+    "message": "Fő hangerő"
+  },
+  "options_sound_session_complete": {
+    "message": "Menet vége"
+  },
+  "options_sound_break_start": {
+    "message": "Pihenő kezdete"
+  },
+  "options_sound_break_end": {
+    "message": "Pihenő vége"
+  },
+  "options_sound_schedule_start": {
+    "message": "Ütemezett önindítás"
+  },
+  "options_sound_preview_aria": {
+    "message": "$SOUND$ meghallgatása",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Lejátszás"
+  },
+  "options_sound_preview_error": {
+    "message": "A hangot nem sikerült lejátszani. Próbáld újra."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Értesítések"
+  },
+  "options_session_complete_notification": {
+    "message": "Rendszerértesítés a menet végén"
+  },
+  "options_badge_heading": {
+    "message": "Jelvény"
+  },
+  "options_badge_countdown": {
+    "message": "A hátralévő idő mutatása az eszköztár ikonján"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Oldalhozzáférés"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Az oldalhozzáférés ki van kapcsolva"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "A Focus Lock addig nem tud oldalakat blokkolni, amíg nem adsz hozzáférést."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Oldalblokkolás bekapcsolása"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Az oldalhozzáférés megvan, de a blokkolás nem aktív"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "A Chrome megadta a hozzáférést, de a Focus Lock nem tudta bejegyezni a blokkoló szkriptjét."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Oldalblokkolás újrapróbálása"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Az oldalblokkolás be van kapcsolva"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "A Focus Lock alkalmazni tudja az aktív blokkolási szabályaidat a szokásos weboldalakon."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Törlöd a helyi előzményeket?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Helyi előzmények törlésének megerősítése"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "A helyi előzmények törölve."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Ez véglegesen törli erről az eszközről a teljes URL-eket, a fókuszszándékokat és a részletes meneteseményeket. A futó menetet nem törli, az megtartja a szándékát és minden blokkolt fül címét. A menet befejezése törli a szándékot, és elindít egy takarítást, amely minden nyitott weboldalfület felszabadít, és a végén eltávolítja az összes tárolt címet."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Ez véglegesen törli erről az eszközről a teljes URL-eket, a fókuszszándékokat és a részletes meneteseményeket, valamint a csak helyi összesített statisztikákat. A futó menetet nem törli, az megtartja a szándékát és minden blokkolt fül címét. A menet befejezése törli a szándékot, és elindít egy takarítást, amely minden nyitott weboldalfület felszabadít, és a végén eltávolítja az összes tárolt címet."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Törlöd a távoli szinkronizált adatokat?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Távoli szinkronizált adatok törlésének megerősítése"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "A távoli Chrome-szinkronizálási adatok törölve."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Ez véglegesen törli a Chrome-szinkronizálásból a távoli beállításokat, a tiltó- és engedélyezési listákat, az oldalhozzáférési kreditet, a sorozatokat és a domainszintű blokkolt kísérletek összesítéseit. A helyi beállítások és statisztikák ezen az eszközön maradnak."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Törlöd az összes Focus Lock adatot?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Az összes Focus Lock adat törlésének megerősítése"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Az összes Focus Lock adat törölve."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Ez véglegesen törli az eszközön lévő összes Focus Lock adatot, és minden Focus Lock másolatot, ami a Chrome-szinkronizálásban maradt:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "A teljes törlés csak akkor érhető el, ha nem fut menet. A Focus Lock ezután visszatér a beállításhoz."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "A helyi előzményeket nem sikerült törölni. Próbáld újra."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "A távoli Chrome-szinkronizálási adatokat nem sikerült törölni. Próbáld újra."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Az összes Focus Lock adatot nem sikerült törölni. Próbáld újra."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "A Chrome-szinkronizálás nem tudta menteni a legutóbbi változtatásaidat. A helyi mentés biztonságban van."
+  },
+  "options_privacy_error_request": {
+    "message": "A kérést nem sikerült teljesíteni. Próbáld újra."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Az oldalhozzáférés frissítve."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Az oldalhozzáférést nem kaptad meg."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Az oldalhozzáférést nem sikerült frissíteni. Próbáld újra."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Az oldalblokkolás bekapcsolva."
+  },
+  "options_privacy_error_export": {
+    "message": "Az eseménynaplót nem sikerült exportálni."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Az eseménynaplót nem sikerült exportálni. Próbáld újra."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "A Chrome engedélybeállításait nem sikerült megnyitni. Próbáld újra."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "A Chrome engedélybeállításai megnyitva."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Chrome engedélybeállítások megnyitása"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome-szinkronizálás"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Focus Lock adatok szinkronizálása a Chrome-eszközök között"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "A Chrome-szinkronizálás bekapcsolva."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "A Chrome-szinkronizálás kikapcsolva."
+  },
+  "options_privacy_sync_saving": {
+    "message": "A Chrome-szinkronizálás még menti a legutóbbi változtatásaidat."
+  },
+  "options_privacy_sync_on": {
+    "message": "A Chrome-szinkronizálás be van kapcsolva."
+  },
+  "options_privacy_sync_off": {
+    "message": "A Chrome-szinkronizálás ki van kapcsolva."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "A változtatások mentve a Chrome-szinkronizálásba."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome-szinkronizálás bekapcsolásának újrapróbálása"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Chrome-szinkronizálás újrapróbálása"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Szinkronizált"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Csak helyi"
+  },
+  "options_privacy_developer_note": {
+    "message": "A Focus Lock fejlesztőjéhez semmi nem jut el."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Helyi eseménynapló"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Exportáld a részletes helyi naplót, vagy töröld a helyi böngészési és menetelőzményeket."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Helyi eseménynapló exportálása"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "A helyi eseménynapló exportálva."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Helyi előzmények törlése"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Távoli szinkronizált adatok"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Töröld a Chrome-szinkronizálásban maradt Focus Lock másolatokat anélkül, hogy ezen az eszközön bármi változna."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Távoli szinkronizált adatok törlése"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Az összes Focus Lock adat"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Töröld az eszközön lévő minden Focus Lock feljegyzést és a Chrome-szinkronizálásban maradt másolatokat, majd kezdd újra a beállítástól. Csak akkor érhető el, ha nem fut menet."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Az összes Focus Lock adat törlése folytatódik."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Helyi előzmények törlésének újrapróbálása"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Távoli szinkronizált adatok törlésének újrapróbálása"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Az összes adat törlésének újrapróbálása"
+  },
+  "options_error_load": {
+    "message": "A beállításokat nem sikerült betölteni. Töltsd újra az oldalt, és próbáld újra."
+  },
+  "options_error_retry_boot": {
+    "message": "A Focus Lockot nem sikerült újraindítani. Próbáld újra."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Az adatvédelmi beállításokat nem sikerült frissíteni. Töltsd újra az oldalt."
+  },
+  "options_error_website_blocking": {
+    "message": "Az oldalblokkolást nem sikerült frissíteni. Próbáld újra."
+  },
+  "options_error_change_sync": {
+    "message": "A Chrome-szinkronizálást nem sikerült módosítani. Próbáld újra."
+  },
+  "options_error_retry_sync": {
+    "message": "A Chrome-szinkronizálást nem sikerült újrapróbálni. Próbáld újra."
+  },
+  "options_error_save_settings": {
+    "message": "A beállításokat nem sikerült menteni. Töltsd újra az oldalt, és próbáld újra."
+  },
+  "options_error_save_lists": {
+    "message": "A listákat nem sikerült menteni. Töltsd újra az oldalt, és próbáld újra."
+  }
+}

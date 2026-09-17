@@ -1,1 +1,385 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Statistiky Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Tvoje bilance soustředění"
+  },
+  "stats_loading": {
+    "message": "Načítám tvoje statistiky."
+  },
+  "stats_load_error": {
+    "message": "Statistiky se nepodařilo načíst. Načti stránku znovu."
+  },
+  "stats_partial_error_both": {
+    "message": "Pokusy po hodinách a nastavení kreditu na přístup nejsou dostupné."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Pokusy po hodinách nejsou dostupné."
+  },
+  "stats_partial_error_economy": {
+    "message": "Nastavení kreditu na přístup není dostupné."
+  },
+  "stats_scope_synced": {
+    "message": "Synchronizované součty z tohoto účtu Chrome. Panely jen z tohoto zařízení jsou označené."
+  },
+  "stats_scope_local": {
+    "message": "Součty z tohoto počítače. Statistiky Focus Lock se nesynchronizují."
+  },
+  "stats_scope_checking": {
+    "message": "Zjišťuji, zda jsou tyto součty synchronizované."
+  },
+  "stats_scope_unavailable": {
+    "message": "Rozsah statistik není dostupný. Součty mohou zahrnovat synchronizovaná data. Pokusy po hodinách a poslední relace jsou z tohoto počítače."
+  },
+  "stats_scope_retry": {
+    "message": "Znovu zjistit rozsah"
+  },
+  "stats_empty": {
+    "message": "Statistiky se objeví po tvé první relaci."
+  },
+  "stats_tile_focus_today": {
+    "message": "Soustředění dnes"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Soustředění za posledních 7 dní"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Dnes zablokované pokusy"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Dnes opuštěné žádosti o odemčení"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Dnes utracený kredit na přístup"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Všechny weby $ALL_SITES$, jeden web $ONE_SITE$, získáno $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "získáno $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Série"
+  },
+  "stats_streak_empty": {
+    "message": "Tvoje série začne tvým prvním dnem soustředění."
+  },
+  "stats_streak_unit_one": {
+    "message": "den"
+  },
+  "stats_streak_unit_other": {
+    "message": "dní"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ našetřený ochranný den",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ našetřených ochranných dnů",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Ochrana série: jeden zmeškaný den je pokrytý"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktivní den tento měsíc ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktivních dnů tento měsíc ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktivní dny v $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Žádné aktivní dny v $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Soustředění, posledních 14 dní"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Minuty soustředění se objeví po tvé první relaci."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Zablokované pokusy, posledních 14 dní"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Zablokované pokusy se tu objeví, jakmile nějaký relace zachytí."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Nejčastěji blokované weby, posledních 30 dní"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Zatím nic zablokovaného. To je pěkný začátek."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Pokusy po hodinách, jen tento počítač"
+  },
+  "stats_chart_other_site": {
+    "message": "ostatní"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ zablokovaný pokus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ zablokovaných pokusů",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Sloupcový graf"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Vodorovný sloupcový graf"
+  },
+  "stats_chart_description_bar": {
+    "message": "Sloupcový graf. Procházej datové body klávesnicí nebo otevři Zobrazit jako tabulku pro stejné hodnoty."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Vodorovný sloupcový graf. Procházej datové body klávesnicí nebo otevři Zobrazit jako tabulku pro stejné hodnoty."
+  },
+  "stats_chart_empty_default": {
+    "message": "Zatím žádná data."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "Zobrazit jako tabulku"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategorie"
+  },
+  "stats_chart_table_value": {
+    "message": "Hodnota"
+  },
+  "stats_heat_strip_label": {
+    "message": "Čtyřiadvacetihodinový pás intenzity zablokovaných pokusů"
+  },
+  "stats_sessions_heading": {
+    "message": "Poslední relace na tomto počítači"
+  },
+  "stats_sessions_empty": {
+    "message": "Tvoje první relace se objeví tady."
+  },
+  "stats_sessions_col_date": {
+    "message": "Datum"
+  },
+  "stats_sessions_col_start": {
+    "message": "Začátek"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Plánováno"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Soustředěno"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Všechny weby"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Jeden web"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Předsevzetí"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Výsledek"
+  },
+  "stats_sessions_col_source": {
+    "message": "Zdroj"
+  },
+  "stats_session_no_intention": {
+    "message": "Bez předsevzetí"
+  },
+  "stats_session_article_label": {
+    "message": "Relace: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "ručně"
+  },
+  "stats_session_source_schedule": {
+    "message": "plán"
+  },
+  "stats_session_source_scheduled": {
+    "message": "naplánováno"
+  },
+  "stats_outcome_completed": {
+    "message": "Dokončeno"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Ukončeno předčasně"
+  },
+  "stats_outcome_running": {
+    "message": "Probíhá"
+  },
+  "stats_streak_unit_few": {
+    "message": "dny"
+  },
+  "stats_streak_unit_many": {
+    "message": "dne"
+  },
+  "stats_streak_freeze_tokens_few": {
+    "message": "$COUNT$ našetřené ochranné dny",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_many": {
+    "message": "$COUNT$ našetřeného ochranného dne",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_active_days_few": {
+    "message": "$COUNT$ aktivní dny tento měsíc ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_many": {
+    "message": "$COUNT$ aktivního dne tento měsíc ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_blocked_count_few": {
+    "message": "$COUNT$ zablokované pokusy",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_blocked_count_many": {
+    "message": "$COUNT$ zablokovaného pokusu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

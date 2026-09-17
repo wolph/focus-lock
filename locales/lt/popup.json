@@ -1,1 +1,702 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "kita: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Nustatymai"
+  },
+  "popup_open_settings_failed": {
+    "message": "Nepavyko atidaryti nustatymų. Bandyk dar kartą."
+  },
+  "popup_settings_load_failed": {
+    "message": "Nepavyko įkelti sesijos nustatymų. Įkelk langą iš naujo, kad bandytum vėl. Rodomos numatytosios reikšmės."
+  },
+  "popup_open_setup_failed": {
+    "message": "Nepavyko atidaryti sąrankos. Bandyk dar kartą."
+  },
+  "popup_setup_required_heading": {
+    "message": "Užbaik Focus Lock sąranką"
+  },
+  "popup_setup_required_body": {
+    "message": "Prieš pradėdamas sesiją pasirink pradinius sąrašus, svetainių prieigą ir saugojimo būdą."
+  },
+  "popup_open_setup_button": {
+    "message": "Atverti sąranką"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Nepavyko patvirtinti svetainių blokavimo. Bandyk dar kartą."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Nepavyko įjungti svetainių blokavimo. Bandyk dar kartą."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Svetainių blokavimas išjungtas"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock negali pradėti sesijos, kol Chrome nesuteiks svetainių prieigos ir nebus įjungtas blokavimas."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome nesuteikė svetainių prieigos. Blokavimas tebėra išjungtas."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Svetainių prieiga suteikta, bet Focus Lock nepavyko įjungti blokavimo. Pakartok sąranką arba įkelk plėtinį iš naujo."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Įjungti svetainių blokavimą"
+  },
+  "popup_retry_button": {
+    "message": "Bandyti dar kartą"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Tavo sesija baigėsi, nes buvo atimta svetainių prieiga."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Tavo sesija baigėsi, nes Focus Lock nepavyko įjungti svetainių blokavimo."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Nepavyko paslėpti šio pranešimo. Bandyk dar kartą."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Paslėpti svetainių prieigos pranešimą"
+  },
+  "popup_dismiss_button": {
+    "message": "Slėpti"
+  },
+  "popup_restart_failed": {
+    "message": "Nepavyko iš naujo paleisti Focus Lock. Bandyk dar kartą."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock nepavyko paleisti"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Priežasties perskaityti nepavyko."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Atstatyti vietinę būseną"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Išsaugo tavo nustatymus, sąrašus ir statistiką. Išvalo dabartinės sesijos būseną."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Viską pašalinti ir pradėti iš naujo"
+  },
+  "popup_keep_data_button": {
+    "message": "Palikti mano duomenis"
+  },
+  "popup_delete_all_button": {
+    "message": "Pašalinti visus Focus Lock duomenis"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Sąrankos būsena nepasiekiama. Įkelk Focus Lock iš naujo ir bandyk vėl."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Susikaupimo būsena nepasiekiama"
+  },
+  "popup_action_in_progress": {
+    "message": "Veiksmas vykdomas"
+  },
+  "popup_active_site_checking": {
+    "message": "Tikrinama aktyvi svetainė"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Kad atrakintum, atverk įprastą svetainę"
+  },
+  "popup_active_site_unknown": {
+    "message": "Nepavyko nustatyti aktyvios svetainės"
+  },
+  "popup_active_site_error": {
+    "message": "Nepavyko nustatyti aktyvios svetainės."
+  },
+  "popup_resume_now": {
+    "message": "Tęsti dabar"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Pradėti susikaupimą anksčiau"
+  },
+  "popup_unlock_this_site": {
+    "message": "Atrakinti šią svetainę"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Atrakinti visas svetaines"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ prieigos, $CREDIT$ kredito",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ prieigos, $CREDIT$ kredito - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Pasirinkti darbo kortelę"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Keisti darbo kortelę"
+  },
+  "popup_session_actions_summary": {
+    "message": "Sesijos veiksmai"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ svetainių prieigos kredito",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Pridėti leidžiamą domeną"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Pridėti leidžiamą domeną"
+  },
+  "popup_add_button": {
+    "message": "Pridėti"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Tik $COUNT$ leidžiamų svetainių taisyklės. Kitos svetainės blokuojamos.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ blokuojamos kategorijos, $RULES$ papildomos taisyklės.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Griežtas užraktas. Anksčiau baigti negalima."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Galima baigti bet kada."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Baigti po $SECONDS$ sek. laukimo.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Baigti po $SECONDS$ sek. laukimo ir patvirtinimo sakinio.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Sesijos trukmė"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Savos minutės"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min."
+  },
+  "popup_gate_force_end": {
+    "message": "Nepaisyti laukimo ir vis tiek baigti"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Toliau susikaupti"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Įrašyk:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Nepavyko atnaujinti vartų. Bandyk dar kartą."
+  },
+  "popup_gate_intention": {
+    "message": "Tu parašei: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Akimirka apsispręsti:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "iš $TOTAL$ sek.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Grįžti prie darbo"
+  },
+  "popup_destination_unavailable": {
+    "message": "Tikslas nepasiekiamas"
+  },
+  "popup_back_to_work_name": {
+    "message": "Grįžti prie darbo: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Grįžti prie darbo: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Kategorijų keisti negalima, kol nebus iš naujo įkelti blokuojamų svetainių sąrašai."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blokuojamos kategorijos"
+  },
+  "popup_show_full_domain": {
+    "message": "Rodyti visą domeną: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Rodyti visą reguliariąją išraišką: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domenas"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Reguliarioji išraiška"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ svetainės",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ svetainė",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ svetainių",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "ir dar $COUNT$ svetainė",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "ir dar $COUNT$ svetainių",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Leidžiamos išimtys"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Papildomos blokuojamos taisyklės"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Papildomų blokuojamų taisyklių nėra."
+  },
+  "popup_allowed_heading": {
+    "message": "Leidžiamos svetainės ir taisyklės"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Leidžiamų svetainių dar nėra."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "Kas bus blokuojama"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "Kas bus leidžiama"
+  },
+  "popup_categories_selected": {
+    "message": "Pasirinkta $SELECTED$ iš $TOTAL$ kategorijų",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ papildoma blokuojama taisyklė",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ papildomų blokuojamų taisyklių",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ leidžiama taisyklė",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ leidžiamų taisyklių",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Čia keičiamos leidžiamos svetainės ir taisyklės galioja tik šiai sesijai. Visa kita blokuojama."
+  },
+  "popup_scope_blacklist": {
+    "message": "Čia keičiamos kategorijos ir taisyklės galioja tik šiai sesijai."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Atverti nustatymus nuolatinėms reikšmėms"
+  },
+  "popup_rule_details_label": {
+    "message": "Sesijos taisyklių detalės"
+  },
+  "popup_session_type_legend": {
+    "message": "Sesijos tipas"
+  },
+  "popup_session_type_flexible": {
+    "message": "Lankstus"
+  },
+  "popup_session_type_friction": {
+    "message": "Trintis"
+  },
+  "popup_session_type_hard": {
+    "message": "Griežtas užraktas"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Baik sesiją iškart, kada tik nori."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Ankstyvas baigimas: $WAIT$. Rašyti nieko nereikia.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Ankstyvas baigimas: $WAIT$ ir įrašytas patvirtinimas.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "Sesijos anksčiau baigti negalima. Svetainių prieigos kreditas vis tiek veikia."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "Pasirinktos kategorijos ir papildomos taisyklės blokuojamos. Kitos svetainės lieka pasiekiamos."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Pasiekiamos tik išvardytos svetainės. Visos kitos blokuojamos."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Įvesk už nulį didesnę sesijos trukmę minutėmis."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Numatytosios reikšmės pasikeitė, bet dabartinių sąrašų įkelti nepavyko. Įkelk langą iš naujo."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Darbo kortelės nėra (nebūtina)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Pasirinkta kortelė nepasiekiama - pasirink kitą"
+  },
+  "popup_cycles_label": {
+    "message": "Ciklai: $FOCUS$ min. susikaupimo, $SHORT_BREAK$ min. pertrauka, $LONG_BREAK$ min. ilga pertrauka kas $LONG_EVERY$ kartą",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Ketinimas"
+  },
+  "popup_intention_placeholder": {
+    "message": "Prie ko dirbi?"
+  },
+  "popup_work_tab_named": {
+    "message": "Darbo kortelė: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Keisti"
+  },
+  "popup_session_settings_summary": {
+    "message": "Sesijos nustatymai"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Pasirink darbo kortelę"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Darbo kortelė"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (dabartinė)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Blokavimo režimas"
+  },
+  "popup_invalid_time_label": {
+    "message": "netinkama trukmė"
+  },
+  "popup_start_focus_label": {
+    "message": "Pradėti susikaupimą ($DURATION$)",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Įvesk tinkamą domeną, pavyzdžiui docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Nepavyko įkelti darbo kortelių. Atverk langą iš naujo ir bandyk vėl."
+  },
+  "popup_use_this_tab": {
+    "message": "Naudoti šią kortelę"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "Ši kortelė darbui netinka. Pasirink kitą atvertą kortelę."
+  },
+  "popup_checking_current_tab": {
+    "message": "Tikrinama dabartinė kortelė..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Ieškoma tavo dabartinės kortelės..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Nepavyko įkelti tavo dabartinės kortelės. Bandyk dar kartą."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Pasirink arba pakeisk darbo kortelę."
+  },
+  "popup_saving_work_tab": {
+    "message": "Įrašoma darbo kortelė..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Nepavyko įrašyti darbo kortelės. Bandyk dar kartą."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Pasirink atvertą kortelę"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Arba pasirink kitą kortelę"
+  },
+  "popup_start_failed": {
+    "message": "Nepavyko pradėti sesijos. Bandyk dar kartą."
+  },
+  "popup_sites_few": {
+    "message": "$COUNT$ svetainės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ svetainės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_few": {
+    "message": "ir dar $COUNT$ svetainės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_many": {
+    "message": "ir dar $COUNT$ svetainės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_few": {
+    "message": "$COUNT$ papildomos blokuojamos taisyklės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ papildomos blokuojamos taisyklės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_few": {
+    "message": "$COUNT$ leidžiamos taisyklės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
+    "message": "$COUNT$ leidžiamos taisyklės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  }
+}

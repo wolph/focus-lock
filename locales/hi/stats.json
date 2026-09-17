@@ -1,1 +1,317 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Focus Lock आँकड़े"
+  },
+  "stats_page_title": {
+    "message": "आपका फोकस रिकॉर्ड"
+  },
+  "stats_loading": {
+    "message": "आपके आँकड़े लोड हो रहे हैं।"
+  },
+  "stats_load_error": {
+    "message": "आँकड़े लोड नहीं हो सके। दोबारा कोशिश करने के लिए पेज फिर से लोड करें।"
+  },
+  "stats_partial_error_both": {
+    "message": "घंटेवार प्रयास और साइट एक्सेस क्रेडिट सेटिंग्स उपलब्ध नहीं हैं।"
+  },
+  "stats_partial_error_attempts": {
+    "message": "घंटेवार प्रयास उपलब्ध नहीं हैं।"
+  },
+  "stats_partial_error_economy": {
+    "message": "साइट एक्सेस क्रेडिट सेटिंग्स उपलब्ध नहीं हैं।"
+  },
+  "stats_scope_synced": {
+    "message": "इस Chrome खाते से सिंक किए गए कुल आँकड़े। सिर्फ़ इसी डिवाइस वाले पैनल अलग से चिह्नित हैं।"
+  },
+  "stats_scope_local": {
+    "message": "इसी मशीन के कुल आँकड़े। Focus Lock के आँकड़े सिंक नहीं होते।"
+  },
+  "stats_scope_checking": {
+    "message": "जाँचा जा रहा है कि ये कुल आँकड़े सिंक होते हैं या नहीं।"
+  },
+  "stats_scope_unavailable": {
+    "message": "आँकड़ों का दायरा उपलब्ध नहीं है। कुल आँकड़ों में सिंक किया गया डेटा शामिल हो सकता है। घंटेवार प्रयास और हाल के सेशन इसी मशीन के हैं।"
+  },
+  "stats_scope_retry": {
+    "message": "दायरा दोबारा जाँचें"
+  },
+  "stats_empty": {
+    "message": "आँकड़े आपके पहले सेशन के बाद दिखेंगे।"
+  },
+  "stats_tile_focus_today": {
+    "message": "आज का फोकस"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "पिछले 7 दिनों का फोकस"
+  },
+  "stats_tile_attempts_today": {
+    "message": "आज ब्लॉक हुए प्रयास"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "आज छोड़े गए अनलॉक अनुरोध"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "आज खर्च हुआ साइट एक्सेस क्रेडिट"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "सभी साइटें $ALL_SITES$, एक साइट $ONE_SITE$, कमाया $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "कमाया $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "स्ट्रीक"
+  },
+  "stats_streak_empty": {
+    "message": "आपकी स्ट्रीक आपके पहले फोकस दिन से शुरू होगी।"
+  },
+  "stats_streak_unit_one": {
+    "message": "दिन"
+  },
+  "stats_streak_unit_other": {
+    "message": "दिन"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ फ़्रीज़ टोकन जमा",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ फ़्रीज़ टोकन जमा",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "स्ट्रीक फ़्रीज़: एक छूटा हुआ दिन, भरपाई हो गई"
+  },
+  "stats_streak_active_days_one": {
+    "message": "इस महीने ($MONTH$) $COUNT$ सक्रिय दिन",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "इस महीने ($MONTH$) $COUNT$ सक्रिय दिन",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "$MONTH$ में सक्रिय तारीखें: $DAYS$।",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "$MONTH$ में कोई सक्रिय तारीख नहीं।",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "फोकस, पिछले 14 दिन"
+  },
+  "stats_chart_focus_empty": {
+    "message": "फोकस के मिनट आपके पहले सेशन के बाद दिखेंगे।"
+  },
+  "stats_chart_attempts_heading": {
+    "message": "ब्लॉक हुए प्रयास, पिछले 14 दिन"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "जब कोई सेशन पहला प्रयास पकड़ेगा, तब वे यहाँ दिखेंगे।"
+  },
+  "stats_chart_sites_heading": {
+    "message": "सबसे ज़्यादा ब्लॉक हुई साइटें, पिछले 30 दिन"
+  },
+  "stats_chart_sites_empty": {
+    "message": "अभी कुछ ब्लॉक नहीं हुआ। यह अच्छी शुरुआत है।"
+  },
+  "stats_chart_hours_heading": {
+    "message": "घंटे के हिसाब से प्रयास, सिर्फ़ इसी मशीन पर"
+  },
+  "stats_chart_other_site": {
+    "message": "अन्य"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$मि",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ ब्लॉक",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ ब्लॉक",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "बार चार्ट"
+  },
+  "stats_chart_name_hbar": {
+    "message": "क्षैतिज बार चार्ट"
+  },
+  "stats_chart_description_bar": {
+    "message": "बार चार्ट। कीबोर्ड से डेटा बिंदुओं पर जाएँ, या वही मान देखने के लिए तालिका के रूप में देखें खोलें।"
+  },
+  "stats_chart_description_hbar": {
+    "message": "क्षैतिज बार चार्ट। कीबोर्ड से डेटा बिंदुओं पर जाएँ, या वही मान देखने के लिए तालिका के रूप में देखें खोलें।"
+  },
+  "stats_chart_empty_default": {
+    "message": "अभी कोई डेटा नहीं।"
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "तालिका के रूप में देखें"
+  },
+  "stats_chart_table_category": {
+    "message": "श्रेणी"
+  },
+  "stats_chart_table_value": {
+    "message": "मान"
+  },
+  "stats_heat_strip_label": {
+    "message": "24 घंटे की ब्लॉक हुए प्रयासों की हीट पट्टी"
+  },
+  "stats_sessions_heading": {
+    "message": "इस मशीन पर हाल के सेशन"
+  },
+  "stats_sessions_empty": {
+    "message": "आपका पहला सेशन यहाँ दिखेगा।"
+  },
+  "stats_sessions_col_date": {
+    "message": "तारीख"
+  },
+  "stats_sessions_col_start": {
+    "message": "शुरुआत"
+  },
+  "stats_sessions_col_planned": {
+    "message": "तय"
+  },
+  "stats_sessions_col_focused": {
+    "message": "फोकस में"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "सभी साइटें"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "एक साइट"
+  },
+  "stats_sessions_col_intention": {
+    "message": "इरादा"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "नतीजा"
+  },
+  "stats_sessions_col_source": {
+    "message": "स्रोत"
+  },
+  "stats_session_no_intention": {
+    "message": "कोई इरादा नहीं"
+  },
+  "stats_session_article_label": {
+    "message": "सेशन: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "खुद शुरू किया"
+  },
+  "stats_session_source_schedule": {
+    "message": "शेड्यूल"
+  },
+  "stats_session_source_scheduled": {
+    "message": "शेड्यूल से शुरू"
+  },
+  "stats_outcome_completed": {
+    "message": "पूरा हुआ"
+  },
+  "stats_outcome_ended_early": {
+    "message": "जल्दी समाप्त"
+  },
+  "stats_outcome_running": {
+    "message": "चल रहा है"
+  }
+}

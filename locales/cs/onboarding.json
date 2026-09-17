@@ -1,1 +1,195 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Nastavení Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Nastavení Focus Lock"
+  },
+  "onboarding_progress": {
+    "message": "Krok $STEP$ z $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Tvůj uložený postup nastavení se nepodařilo obnovit. Začínáme znovu s tvými současnými výchozími hodnotami."
+  },
+  "onboarding_complete_heading": {
+    "message": "Nastavení dokončeno"
+  },
+  "onboarding_complete_body": {
+    "message": "Tvoje volby jsou uloženy. Otevři Focus Lock na liště Chromu a spusť relaci."
+  },
+  "onboarding_error_heading": {
+    "message": "Nastavení není dostupné"
+  },
+  "onboarding_error_body": {
+    "message": "Nastavení se nepodařilo načíst. Zkus to znovu."
+  },
+  "onboarding_retry_button": {
+    "message": "Zkusit znovu"
+  },
+  "onboarding_save_error": {
+    "message": "Postup nastavení se nepodařilo uložit. Zkus to znovu."
+  },
+  "onboarding_enable_error": {
+    "message": "Blokování webů se nepodařilo zapnout. Zkus to znovu."
+  },
+  "onboarding_finish_error": {
+    "message": "Nastavení se nepodařilo dokončit. Tvoje volby zůstávají uloženy. Zkus to znovu."
+  },
+  "onboarding_lists_heading": {
+    "message": "Vyber si první seznam blokovaných"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "V režimu $MODE$ jsou zapnuté kategorie a další blokované weby nedostupné.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "V režimu $MODE$ je nedostupný každý web kromě tvého seznamu povolených.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Tyto volby se stanou výchozími pro příští relace. Později je můžeš upravit."
+  },
+  "onboarding_lists_legend": {
+    "message": "Doporučené kategorie webů"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ web",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ webů",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Zobrazit weby kategorie $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Skrýt weby kategorie $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Domény kategorie $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Pokračovat"
+  },
+  "onboarding_access_heading": {
+    "message": "Zapnout blokování webů"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock kontroluje adresy stránek místně, aby je porovnal s tvými vybranými kategoriemi a weby. Přístup k webům používá k tomu, aby ukázal svou blokovací obrazovku a po skončení relace obnovil dotčené stránky."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategorie a vlastní domény mohou zahrnovat jakýkoli web. Chrome proto požádá o toto oprávnění:"
+  },
+  "onboarding_access_capability": {
+    "message": "Číst a měnit všechna vaše data na všech webech"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock ten přístup používá jen při uplatňování tvých blokovacích pravidel."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome přístup k webům nepovolil. Můžeš to zkusit znovu."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Přístup k webům je povolen, ale Focus Lock nemohl zapnout blokování. Zopakuj nastavení nebo znovu načti rozšíření."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Zapnout blokování webů"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Teď ne"
+  },
+  "onboarding_sync_heading": {
+    "message": "Vyber, kde se budou tvoje nastavení ukládat"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Synchronizovat mezi zařízeními s Chromem"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Schválená data níže začnou používat synchronizaci Chromu, jakmile nastavení dokončíš."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Všechna data Focus Lock zůstanou v tomto profilu Chromu."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Synchronizováno"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Jen místní"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Vývojáři Focus Lock se neposílá nic."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Dokončit nastavení se synchronizací"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Dokončit nastavení bez synchronizace"
+  },
+  "onboarding_site_count_few": {
+    "message": "$COUNT$ weby",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ webu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

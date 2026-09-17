@@ -1,1 +1,876 @@
-{}
+{
+  "options_page_title": {
+    "message": "Mogućnosti Focus Lock"
+  },
+  "options_heading": {
+    "message": "Postavke Focus Lock"
+  },
+  "options_loading_settings": {
+    "message": "Učitavanje postavki"
+  },
+  "options_privacy_loading": {
+    "message": "Učitavanje privatnosti"
+  },
+  "options_save_failed": {
+    "message": "Nije moguće spremiti. Pokušajte ponovno."
+  },
+  "options_blocking_heading": {
+    "message": "Blokiranje"
+  },
+  "options_blocking_help": {
+    "message": "Prilagođena pravila blokuju tijekom crne liste sesija. Bijela lista je ono što ostaje dostupno tijekom sesija bijele liste. Ugrađene kategorije blokuju česte vremenske provalije."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Prilagođena crna lista"
+  },
+  "options_whitelist_title": {
+    "message": "Bijela lista"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Ugrađene kategorije"
+  },
+  "options_bundled_categories_help": {
+    "message": "Ugrađeni popisi čestih vremenskih provala. Uključite cijelu kategoriju, a zatim je otvorite da zadržite dostupna pojedinaćna mjesta."
+  },
+  "options_schedule_heading": {
+    "message": "Raspored"
+  },
+  "options_schedule_help": {
+    "message": "Sesije se započinjuju same unutar ovih prozora. Stroga pravila postavljena ovdje primjenjuju se cijeli prozor."
+  },
+  "options_behavior_heading": {
+    "message": "Ponašanje sesije"
+  },
+  "options_budget_heading": {
+    "message": "Kredit za pristup mjestima"
+  },
+  "options_notifications_heading": {
+    "message": "Obavijesti"
+  },
+  "options_privacy_heading": {
+    "message": "Privatnost i podaci"
+  },
+  "options_load_error_retry": {
+    "message": "Pokušaj ponovno"
+  },
+  "options_load_error_delete_all": {
+    "message": "Obriši sve i počni ispočetka"
+  },
+  "options_load_error_keep_data": {
+    "message": "Zadrži moje podatke"
+  },
+  "options_delete_all_data": {
+    "message": "Obriši sve podatke Focus Lock"
+  },
+  "options_dirty_saving": {
+    "message": "Spremanje promjena"
+  },
+  "options_dirty_unsaved": {
+    "message": "Nespremljene promjene"
+  },
+  "options_dirty_clean": {
+    "message": "Nema nespremljenih promjena"
+  },
+  "options_dirty_discard": {
+    "message": "Odbaci promjene"
+  },
+  "options_dirty_save": {
+    "message": "Spremi promjene"
+  },
+  "options_session_status_label": {
+    "message": "Status sesije"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domena"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "izraz"
+  },
+  "options_rule_remove": {
+    "message": "Ukloni"
+  },
+  "options_rule_remove_aria": {
+    "message": "Ukloni $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "Nema pravila."
+  },
+  "options_rule_kind_aria": {
+    "message": "Vrsta pravila"
+  },
+  "options_rule_kind_host_option": {
+    "message": "domena ili poddomena"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (cijeli URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Uzorak"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "Dodaj pravilo"
+  },
+  "options_rules_help": {
+    "message": "facebook.com pokriva tu domenu i svakog poddomena. news.ycombinator.com pokriva tu poddomenu i sve ispod nje. /youtube\\.com\\/shorts/ poklapa cijeli URL kao regularni izraz."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ mora biti pozitivan cijeli broj.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ mora biti cijeli broj nula ili veći.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ mora biti nula ili veći.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ mora biti unutar podržanog raspona minuta.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ mora biti unutar podržanog raspona dana.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "Zadane vrijednosti sesije"
+  },
+  "options_session_defaults_help": {
+    "message": "Način i strogovnost su fiksni kada se sesija pokrene. Ovo su vrijednosti s kojima se oblik pokretanja otvara."
+  },
+  "options_preset_short_label": {
+    "message": "Kratka predloga sesije (minute)"
+  },
+  "options_preset_default_label": {
+    "message": "Zadana predloga sesije (minute)"
+  },
+  "options_preset_deep_label": {
+    "message": "Duboka predloga sesije (minute)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Crna lista: blokiraj navedena mjesta"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Bijela lista: dozvoli samo navedena mjesta"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Fleksibilna: završi sesiju kada god želiš"
+  },
+  "options_strictness_friction_label": {
+    "message": "Trenje: zaustavljanje prije kraja koristi konfiguriranu deliberativnu vrata"
+  },
+  "options_strictness_hard_label": {
+    "message": "Tvrda: bez ranog završetka, samo privremeni pristup mjestima"
+  },
+  "options_cycle_heading": {
+    "message": "Ciklus fokusa i pauze"
+  },
+  "options_cycle_help": {
+    "message": "Zadane vrijednosti: 25-minutni fokus, 5-minutna pauza, 15-minutna dugačka pauza svakog 4. ciklusa. Pauze prema rasporedu nadmašuju pauze-kada-se-osjećaš kao za raspoloženje i fokus u studijskim uzorcima. Točne minute su konvencija, ne znanost."
+  },
+  "options_cycle_default_label": {
+    "message": "Ciklus fokusa i pausa prema zadanoj vrijednosti"
+  },
+  "options_focus_minutes_label": {
+    "message": "Minute fokusa"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Minute kratke pauze"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Minute dugačke pauze"
+  },
+  "options_long_every_label": {
+    "message": "Dugačka pauza svakog N-tog ciklusa"
+  },
+  "options_gate_heading": {
+    "message": "Deliberativna vrata"
+  },
+  "options_gate_help": {
+    "message": "Čekanje od 10 sekundi s eksplicitnim gumbom nazad-na-rad mjerljivo smanjuje impulzivne posjete (studija u polju, PNAS 2023). Duže čekanje i pisana rečenica grubno dupliraju učinak."
+  },
+  "options_gate_wait_one": {
+    "message": "Čekaj $COUNT$ sekundu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Čekaj $COUNT$ sekundi",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Prilagođeno"
+  },
+  "options_custom_delay_label": {
+    "message": "Prilagođeno kašnjenje (sekunde)"
+  },
+  "options_custom_delay_error": {
+    "message": "Prilagođeno kašnjenje mora biti pozitivan cijeli broj sekundi."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Također zahtijevaj pisanje rečenice"
+  },
+  "options_gate_force_end_label": {
+    "message": "Omogući \"Ignoriraj vremenski limit i završi svejedno\" gumb"
+  },
+  "options_credit_help": {
+    "message": "Kredit za pristup mjestima se skuplja dok se fokusirate. Pristup svim mjestima i otključavanje jednog mjesta troše istu bilancu. Možete se umaknuti bilo kada bez trošenja kredita."
+  },
+  "options_earn_rate_label": {
+    "message": "Minute pristupa mjestima po 30 minuta fokusa"
+  },
+  "options_credit_cap_label": {
+    "message": "Limit kredita za pristup mjestima (minute)"
+  },
+  "options_pause_length_label": {
+    "message": "Duljina pristupa svim mjestima (minute)"
+  },
+  "options_unlock_length_label": {
+    "message": "Duljina otključavanja mjesta (minute)"
+  },
+  "options_streak_heading": {
+    "message": "Niz i zadržavanje"
+  },
+  "options_streak_help": {
+    "message": "Niz broji dane koji dostignu cilj. Jedna zadana sesija održava lanac živ, a token zamrzavanja popravlja propušteni dan."
+  },
+  "options_streak_goal_label": {
+    "message": "Dnevni cilj niza (minute fokusa)"
+  },
+  "options_freeze_interval_label": {
+    "message": "Interval tokena zamrzavanja (dani)"
+  },
+  "options_retention_label": {
+    "message": "Zadrži dnevne statistike (dani)"
+  },
+  "options_category_on_announcement": {
+    "message": "Kategorija $CATEGORY$ uključena.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "Kategorija $CATEGORY$ isključena.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "Sve kategorije uključene."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "Sve kategorije isključene."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ uključen.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ ostaje dostupan.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "Sva mjesta kategorije $CATEGORY$ uključena.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Sva mjesta kategorije $CATEGORY$ ostaju dostupna.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Skupne akcije kategorije"
+  },
+  "options_selected_count": {
+    "message": "Odabrano $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Odabrano $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Odaberi sve"
+  },
+  "options_deselect_all": {
+    "message": "Otkaži odabir svih"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Odaberi sve kategorije"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Otkaži odabir svih kategorija"
+  },
+  "options_show_category_sites": {
+    "message": "Prikaži mjesta kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Sakrij mjesta kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ mjesto uključeno",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ mjesta uključena",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Kategorija isključena"
+  },
+  "options_included_when_enabled_one": {
+    "message": "$COUNT$ uključeno kada je omogućeno",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "$COUNT$ uključena kada je omogućeno",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "Odznači mjesto da ga zadržiš dostupnim dok je ostatak kategorije blokiran."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "Skupne akcije mjesta kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Odaberi sva mjesta kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Otkaži odabir svih mjesta kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "Mjesta kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "Ned"
+  },
+  "options_day_mon": {
+    "message": "Pon"
+  },
+  "options_day_tue": {
+    "message": "Uto"
+  },
+  "options_day_wed": {
+    "message": "Sri"
+  },
+  "options_day_thu": {
+    "message": "Čet"
+  },
+  "options_day_fri": {
+    "message": "Pet"
+  },
+  "options_day_sat": {
+    "message": "Sub"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Ciklus fokusa i pausa"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Preklapa se drugi aktivni unos na $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Vrsta sesije"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Unos rasporeda"
+  },
+  "options_schedule_start_label": {
+    "message": "Početak"
+  },
+  "options_schedule_end_label": {
+    "message": "Završetak"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Trajanje"
+  },
+  "options_schedule_intention_label": {
+    "message": "Namjena"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "za što je ovo vrijeme"
+  },
+  "options_schedule_save_entry": {
+    "message": "Spremi unos"
+  },
+  "options_cancel": {
+    "message": "Otkaži"
+  },
+  "options_schedule_empty": {
+    "message": "Nema zakazanih sesija."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Odabrani dani"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ do $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "crna lista"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "bijela lista"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "fleksibilna"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "trenje"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "tvrda"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Omogućeno"
+  },
+  "options_schedule_edit": {
+    "message": "Uredi"
+  },
+  "options_schedule_delete": {
+    "message": "Obriši"
+  },
+  "options_schedule_add": {
+    "message": "Dodaj unos rasporeda"
+  },
+  "options_sounds_heading": {
+    "message": "Zvukovi"
+  },
+  "options_master_volume": {
+    "message": "Glavna glasnoća"
+  },
+  "options_sound_session_complete": {
+    "message": "Sesija završena"
+  },
+  "options_sound_break_start": {
+    "message": "Pauza početa"
+  },
+  "options_sound_break_end": {
+    "message": "Pauza završena"
+  },
+  "options_sound_schedule_start": {
+    "message": "Samozapočeće rasporeda"
+  },
+  "options_sound_preview_aria": {
+    "message": "Pregledaj $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Sviraj"
+  },
+  "options_sound_preview_error": {
+    "message": "Nije moguće pregledati zvuk. Pokušajte ponovno."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Obavijesti"
+  },
+  "options_session_complete_notification": {
+    "message": "Prikaži obavijest sustava kada se sesija završi"
+  },
+  "options_badge_heading": {
+    "message": "Značka"
+  },
+  "options_badge_countdown": {
+    "message": "Prikaži preostalo vrijeme na ikoni alatne trake"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Pristup mjestima"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Pristup mjestima je isključen"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock ne može blokirati mjesta dok ne dašteš pristup."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Omogući blokiranje mjesta"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Pristup mjestima je odobren, ali blokiranje nije aktivno"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome je odobrio pristup, ali Focus Lock nije mogao registrirati svoj skriptu blokiranja."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Pokušaj ponovno blokiranje mjesta"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Blokiranje mjesta je omogućeno"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock može primjenjiti tvoja aktivna pravila blokiranja na redovitim web stranicama."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Obriši lokalnu povijest?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Potvrdi brisanje lokalne povijesti"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Lokalna povijest obrisana."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Trajno briše pune URL-e, namjere fokusa i detaljne događaje sesije s ovog uređaja. Ne čisti aktivnu sesiju, koja drži svoju namjeru i adresu svakog taba koji blokira. Završetak sesije čisti namjeru i započinje brisanje koje čisti sve otvorene web stranice, a brisanje uklanja svaku pohranjenu adresu kada se završi."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Trajno briše pune URL-e, namjere fokusa i detaljne događaje sesije s ovog uređaja, plus samo-lokalne zbirne statistike. Ne čisti aktivnu sesiju, koja drži svoju namjeru i adresu svakog taba koji blokira. Završetak sesije čisti namjeru i započinje brisanje koje čisti sve otvorene web stranice, a brisanje uklanja svaku pohranjenu adresu kada se završi."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Obriši daljine podatke Sinhronizacije?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Potvrdi brisanje daljinskih podataka Sinhronizacije"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Daljinski Chrome Sync podaci obrisani."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Trajno briše udaljene postavke, blok i dozvoljene popise, kredit za pristup mjestima, nizove i zbrojeve pokušaja blokade na razini domene iz Chrome Sync. Lokalne postavke i statistika ostaju na ovom uređaju."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Obriši sve podatke Focus Lock?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Potvrdi brisanje svih podataka Focus Lock"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Svi podaci Focus Lock obrisani."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Trajno briše svaki komad podataka Focus Lock na ovom uređaju i bilo koje kopije Focus Lock ostavljene u Chrome Sync:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Brisanje svega dostupno je samo kada se ne izvršava sesija. Focus Lock se zatim vraća na postavu."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Lokalna povijest nije mogla biti obrisana. Pokušajte ponovno."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Daljinski Chrome Sync podaci nisu mogli biti obrisani. Pokušajte ponovno."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Svi podaci Focus Lock nisu mogli biti obrisani. Pokušajte ponovno."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync nije mogao spremiti tvoje najnovije promjene. Tvoja lokalna pohrana je sigurna."
+  },
+  "options_privacy_error_request": {
+    "message": "Zahtjev nije mogao biti izvršen. Pokušajte ponovno."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Pristup mjestima ažuriran."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Pristup mjestima nije odobren."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Pristup mjestima nije mogao biti ažuriran. Pokušajte ponovno."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Blokiranje mjesta omogućeno."
+  },
+  "options_privacy_error_export": {
+    "message": "Nije moguće izvoziti zapisnik događaja."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Nije moguće izvoziti zapisnik događaja. Pokušajte ponovno."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Nije moguće otvoriti Chrome postavke dozvola. Pokušajte ponovno."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome postavke dozvola otvorene."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Otvori Chrome postavke dozvola"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome sinkronizacija"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Sinhronizira Focus Lock podatke preko Chrome uređaja"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync omogućen."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync onemogućen."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync je još uvijek sprema tvoje najnovije promjene."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync je uključen."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync je isključen."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome Sync promjene spremljene."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Pokušaj ponovno omogućiti Chrome Sync"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Pokušaj ponovno Chrome Sync"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Sinhroniziran"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Samo lokalno"
+  },
+  "options_privacy_developer_note": {
+    "message": "Ništa se ne šalje razvojnom timu Focus Lock."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Lokalni zapisnik događaja"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Izvezi detaljni lokalni zapisnik ili obriši lokalnu povijest pregledavanja i sesije."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Izvezi lokalni zapisnik događaja"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Lokalni zapisnik događaja izvezen."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Obriši lokalnu povijest"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Daljinski Sync podaci"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Obriši kopije Focus Lock ostavljene u Chrome Sync bez promjene ovog uređaja."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Obriši daljine Sync podatke"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Svi podaci Focus Lock"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Obriši svaki zapis Focus Lock na ovom uređaju i bilo koje kopije Focus Lock ostavljene u Chrome Sync, zatim počni ispočetka s postavom. Dostupno samo kada se ne izvršava sesija."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Nastavljam brisanje svih podataka Focus Lock."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Pokušaj ponovno brisanje lokalne zgodovine"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Pokušaj ponovno brisanje daljinskog Sync"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Pokušaj ponovno brisanje svih podataka"
+  },
+  "options_error_load": {
+    "message": "Nije moguće učitati postavke. Ponovno učitaj stranicu da pokušaš ponovno."
+  },
+  "options_error_retry_boot": {
+    "message": "Nije moguće ponovno pokrenuti Focus Lock. Pokušajte ponovno."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Nije moguće osvježiti privatnost. Ponovno učitaj stranicu."
+  },
+  "options_error_website_blocking": {
+    "message": "Nije moguće ažurirati blokiranje mjesta. Pokušajte ponovno."
+  },
+  "options_error_change_sync": {
+    "message": "Nije moguće promijeniti Chrome Sync. Pokušajte ponovno."
+  },
+  "options_error_retry_sync": {
+    "message": "Nije moguće pokušati ponovno Chrome Sync. Pokušajte ponovno."
+  },
+  "options_error_save_settings": {
+    "message": "Nije moguće spremiti postavke. Ponovno učitaj stranicu i pokušaj ponovno."
+  },
+  "options_error_save_lists": {
+    "message": "Nije moguće spremiti popise. Ponovno učitaj stranicu i pokušaj ponovno."
+  },
+  "options_gate_wait_few": {
+    "message": "Čekaj $COUNT$ sekunde",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_few": {
+    "message": "$COUNT$ web-stranice obuhvaćene",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_few": {
+    "message": "$COUNT$ obuhvaćene kad se uključi",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

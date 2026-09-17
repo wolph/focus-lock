@@ -1,9 +1,9 @@
 {
   "onboarding_page_title": {
-    "message": "Set up Fokus Lock"
+    "message": "Himpunan naik Focus Lock"
   },
   "onboarding_eyebrow": {
-    "message": "Fokus Lock setup"
+    "message": "Focus Lock himpunannaik"
   },
   "onboarding_progress": {
     "message": "Step $STEP$ of $TOTAL$",
@@ -19,37 +19,37 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Your saved setup progress could not be restored. Mulaiing again with your current defaults."
+    "message": "Your simpand himpunannaik progress could tidakt be resimpand. Mulaiing again with your current defaults."
   },
   "onboarding_complete_heading": {
-    "message": "Penyiapan complete"
+    "message": "Himpunannaik selesai"
   },
   "onboarding_complete_body": {
-    "message": "Your choices are saved. Buka Fokus Lock from the Chrome toolbar to start a session."
+    "message": "Your choices are simpand. Buka Focus Lock from the Chrome toolbar to mulai a session."
   },
   "onboarding_error_heading": {
-    "message": "Penyiapan unavailable"
+    "message": "Himpunannaik unavailable"
   },
   "onboarding_error_body": {
-    "message": "Tidak dapat memuat penyiapan. Coba lagi."
+    "message": "Could tidakt muat himpunannaik. Try again."
   },
   "onboarding_retry_button": {
-    "message": "Coba Ulang"
+    "message": "Coba ulang"
   },
   "onboarding_save_error": {
-    "message": "Tidak dapat menyimpan kemajuan penyiapan. Coba lagi."
+    "message": "Could tidakt simpan himpunannaik progress. Try again."
   },
   "onboarding_enable_error": {
-    "message": "Tidak dapat mengaktifkan penyekatan laman web. Coba lagi."
+    "message": "Could tidakt aktifkan website blocking. Try again."
   },
   "onboarding_finish_error": {
-    "message": "Tidak dapat menyelesaikan penyiapan. Pilihan Anda masih disimpan. Coba lagi."
+    "message": "Could tidakt selesai himpunannaik. Your choices are still simpand. Try again."
   },
   "onboarding_lists_heading": {
-    "message": "Pilih daftar blokir awal Anda"
+    "message": "Choose your mulaiing block list"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "Di $MODE$, kategori yang diaktifkan dan situs yang diblokir tambahan tidak tersedia.",
+    "message": "In $MODE$, aktifkand categories and extra blocked sites are unavailable.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "Di $MODE$, setiap situs tidak tersedia kecuali daftar izin Anda.",
+    "message": "In $MODE$, every site is unavailable except your semuaow list.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -70,7 +70,7 @@
     "message": "Pilihan ini menjadi default untuk sesi masa depan. Anda dapat mengeditnya nanti."
   },
   "onboarding_lists_legend": {
-    "message": "Kategori laman web yang direkomendasikan"
+    "message": "Recommakhired website categories"
   },
   "onboarding_site_count_one": {
     "message": "$COUNT$ site",
@@ -124,54 +124,54 @@
     "message": "Aktifkan website blocking"
   },
   "onboarding_access_local_matching": {
-    "message": "Fokus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your session ends."
+    "message": "Focus Lock checks page tambahresses locsemuay so it can match your selected categories and sites. It uses website access to tampilkan its blocking screen and resimpan affected pages when your session akhirs."
   },
   "onboarding_access_capability_intro": {
-    "message": "Kategori dan domain khusus dapat menyertakan situs web apa pun. Chrome karena itu akan meminta kemampuan ini:"
+    "message": "Categories and custom domains can include any website. Chrome will therefore request this kemampuan:"
   },
   "onboarding_access_capability": {
-    "message": "Baca dan ubah semua data Anda di semua situs web"
+    "message": "Read and change semua your data on semua websites"
   },
   "onboarding_access_scope_note": {
     "message": "Fokus Lock uses that access only while applying your blocking rules."
   },
   "onboarding_access_denied": {
-    "message": "Chrome tidak memberikan akses laman web. Anda dapat mencoba lagi."
+    "message": "Chrome did tidakt grant website access. You can coba ulang."
   },
   "onboarding_access_registration_error": {
-    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock could tidakt aktifkan blocking. Coba ulang himpunannaik or remuat the extension."
   },
   "onboarding_access_enable_button": {
     "message": "Aktifkan website blocking"
   },
   "onboarding_access_defer_button": {
-    "message": "Not now"
+    "message": "Tidakt tidakw"
   },
   "onboarding_sync_heading": {
-    "message": "Pilih di mana pengaturan Anda disimpan"
+    "message": "Choose where your pengaturans are simpand"
   },
   "onboarding_sync_switch_label": {
-    "message": "Sinkronisasi di seluruh perangkat Chrome"
+    "message": "Sinkronkan across Chrome devices"
   },
   "onboarding_sync_enabled_note": {
-    "message": "Data yang disetujui di bawah akan menggunakan Sinkronisasi Chrome setelah Anda menyelesaikan penyiapan."
+    "message": "The approved data below will use Chrome Sinkronkan after you finish himpunannaik."
   },
   "onboarding_sync_disabled_note": {
-    "message": "All Fokus Lock data stays in this Chrome profile."
+    "message": "Semua Focus Lock data stays in this Chrome profile."
   },
   "onboarding_sync_synced_title": {
-    "message": "Synced"
+    "message": "Sinkronkaned"
   },
   "onboarding_sync_local_title": {
     "message": "Local only"
   },
   "onboarding_sync_developer_note": {
-    "message": "Nothing is sent to the Fokus Lock developer."
+    "message": "Tidakthing is sent to the Focus Lock developer."
   },
   "onboarding_sync_finish_enabled": {
-    "message": "Selesaikan penyiapan dengan sinkronisasi diaktifkan"
+    "message": "Finish himpunannaik with sinkronkan aktifkand"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "Finish setup without sync"
+    "message": "Finish himpunannaik without sinkronkan"
   }
 }

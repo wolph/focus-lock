@@ -1,1 +1,120 @@
-{}
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "लॉक - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "उपलब्ध काम के टैब जाँचे जा रहे हैं..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "अपना काम जारी रखने के लिए कोई खुला टैब चुनें।"
+  },
+  "overlay_target_session_unavailable": {
+    "message": "आपका फोकस सेशन उपलब्ध नहीं है। दोबारा कोशिश करें, या यह पेज फिर से लोड करें।"
+  },
+  "overlay_target_lookup_failed": {
+    "message": "आपका काम का टैब लोड नहीं हो सका। दोबारा कोशिश करें, या यह पेज फिर से लोड करें।"
+  },
+  "overlay_target_reconnect": {
+    "message": "Focus Lock से फिर से जुड़ने के लिए यह पेज फिर से लोड करें।"
+  },
+  "overlay_target_page_changed": {
+    "message": "अनुरोध करने वाला पेज बदल गया है। पेज फिर से लोड करें।"
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock तक पहुँचा नहीं जा सका। दोबारा कोशिश करें।"
+  },
+  "overlay_picker_heading": {
+    "message": "काम का टैब चुनें"
+  },
+  "overlay_picker_cancel": {
+    "message": "रद्द करें"
+  },
+  "overlay_picker_search_label": {
+    "message": "काम के टैब खोजें"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "शीर्षक या वेबसाइट से खोजें"
+  },
+  "overlay_picker_clear_search": {
+    "message": "खोज साफ़ करें"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "टैब ताज़ा करें"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "उपलब्ध काम के टैब"
+  },
+  "overlay_picker_finding": {
+    "message": "उपलब्ध टैब खोजे जा रहे हैं..."
+  },
+  "overlay_picker_searching": {
+    "message": "काम के टैब खोजे जा रहे हैं..."
+  },
+  "overlay_picker_saving": {
+    "message": "काम का टैब सहेजा जा रहा है..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "कोई काम का टैब उपलब्ध नहीं। इस सेशन में अनुमत कोई साइट खोलें, फिर टैब ताज़ा करें।"
+  },
+  "overlay_picker_no_matches": {
+    "message": "कोई मिलता-जुलता टैब नहीं। दूसरी खोज आज़माएँ या खोज साफ़ करें।"
+  },
+  "overlay_picker_load_failed": {
+    "message": "काम के टैब लोड नहीं हो सके। दोबारा कोशिश करें।"
+  },
+  "overlay_picker_count_one": {
+    "message": "$COUNT$ में से $MATCHES$ टैब",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$COUNT$ में से $MATCHES$ टैब",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  }
+}

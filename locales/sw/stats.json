@@ -6,34 +6,66 @@
     "message": "Your focus record"
   },
   "stats_loading": {
-    "message": "Kupakia your stats."
+    "message": "Pakiaing your stats."
+  },
+  "stats_load_error": {
+    "message": "Could hapanat pakia stats. Repakia to try again."
+  },
+  "stats_partial_error_both": {
+    "message": "Hourly attempts and site access credit mpangilios are unavailable."
   },
   "stats_partial_error_economy": {
-    "message": "Tovuti access credit settings are unavailable."
+    "message": "Site access credit mpangilios are unavailable."
+  },
+  "stats_scope_synced": {
+    "message": "Pangaed totals from this Chrome account. Local-only panels are labeled."
   },
   "stats_scope_local": {
-    "message": "Totals from this machine. Fokasi Lock statistics are not synced."
+    "message": "Totals from this machine. Focus Lock statistics are hapanat pangaed."
+  },
+  "stats_scope_checking": {
+    "message": "Checking whether these totals are pangaed."
   },
   "stats_scope_unavailable": {
-    "message": "Takwimu scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from this machine."
+    "message": "Statistics scope is unavailable. Totals may include pangaed data. Hourly attempts and recent sessions are from this machine."
   },
   "stats_scope_retry": {
-    "message": "Jaribu Tena scope check"
+    "message": "Jaribu tena scope check"
+  },
+  "stats_empty": {
+    "message": "Stats appear after your ya kwanza session."
   },
   "stats_tile_focus_today": {
     "message": "Fokasi tosiku"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Fokasi in the last 7 sikus"
+    "message": "Focus in the ya mwisho 7 days"
   },
   "stats_tile_attempts_today": {
     "message": "Attempts blocked tosiku"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gate requests dismissed tosiku"
+    "message": "Gate requests sitakaed today"
   },
   "stats_tile_credit_spent_today": {
     "message": "Site access credit spent tosiku"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Zote sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
   },
   "stats_tile_credit_subline_earned": {
     "message": "$EARNED$ earned",
@@ -48,7 +80,7 @@
     "message": "Streak"
   },
   "stats_streak_empty": {
-    "message": "Your streak starts with your first focus siku."
+    "message": "Your streak anzas with your ya kwanza focus day."
   },
   "stats_streak_unit_one": {
     "message": "siku"
@@ -56,11 +88,29 @@
   "stats_streak_unit_other": {
     "message": "sikus"
   },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ freeze tsawaen banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ freeze tsawaens banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "stats_streak_freeze_chip_title": {
     "message": "Streak freeze: one missed siku, covered"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active siku this month ($MONTH$)",
+    "message": "$COUNT$ amilifu day this month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -73,7 +123,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active sikus this month ($MONTH$)",
+    "message": "$COUNT$ amilifu days this month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -85,20 +135,45 @@
       }
     }
   },
+  "stats_streak_active_dates": {
+    "message": "Amilifu dates in $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Hapana amilifu dates in $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
   "stats_chart_focus_heading": {
-    "message": "Fokasi, last 14 sikus"
+    "message": "Focus, ya mwisho 14 days"
   },
   "stats_chart_focus_empty": {
-    "message": "Fokasi dakikas appear after your first session."
+    "message": "Focus minutes appear after your ya kwanza session."
   },
   "stats_chart_attempts_heading": {
-    "message": "Zuiaed attempts, last 14 sikus"
+    "message": "Blocked attempts, ya mwisho 14 days"
   },
   "stats_chart_attempts_empty": {
-    "message": "Zuiaed attempts show up here once a session catches one."
+    "message": "Blocked attempts ongesha juu here once a session catches one."
   },
   "stats_chart_sites_heading": {
-    "message": "Top blocked sites, last 30 sikus"
+    "message": "Juu blocked sites, ya mwisho 30 days"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Hapanathing blocked yet. That is a fine anza."
   },
   "stats_chart_hours_heading": {
     "message": "Attempts by saa, this machine only"
@@ -139,8 +214,14 @@
   "stats_chart_name_hbar": {
     "message": "Horizontal bar chart"
   },
+  "stats_chart_description_bar": {
+    "message": "Bar chart. Use the keyboard to move through data points, or fungua View as table for the same thamanis."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Horizontal bar chart. Use the keyboard to move through data points, or fungua View as table for the same thamanis."
+  },
   "stats_chart_empty_default": {
-    "message": "No data yet."
+    "message": "Hapana data yet."
   },
   "stats_chart_point": {
     "message": "$LABEL$: $VALUE$",
@@ -159,13 +240,16 @@
     "message": "View as table"
   },
   "stats_chart_table_category": {
-    "message": "Kategoriya"
+    "message": "Kategoria"
   },
   "stats_chart_table_value": {
-    "message": "Value"
+    "message": "Thamani"
   },
   "stats_heat_strip_label": {
     "message": "24-saa blocked-attempt heat strip"
+  },
+  "stats_sessions_empty": {
+    "message": "Your ya kwanza session will appear here."
   },
   "stats_sessions_col_date": {
     "message": "Date"
@@ -180,7 +264,7 @@
     "message": "Fokasied"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All sites"
+    "message": "Zote sites"
   },
   "stats_sessions_col_one_site": {
     "message": "One site"
@@ -195,7 +279,7 @@
     "message": "Source"
   },
   "stats_session_no_intention": {
-    "message": "No intention"
+    "message": "Hapana intention"
   },
   "stats_session_article_label": {
     "message": "Kikao: $INTENTION$",
@@ -216,30 +300,12 @@
     "message": "scheduled"
   },
   "stats_outcome_completed": {
-    "message": "Completed"
+    "message": "Kamilid"
   },
   "stats_outcome_ended_early": {
-    "message": "Maliziaed early"
+    "message": "Mwishoed early"
   },
   "stats_outcome_running": {
     "message": "Running"
-  },
-  "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$ freeze token banked",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$ freeze tokens banked",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "2"
-      }
-    }
   }
 }

@@ -1,6 +1,6 @@
 {
   "notify_session_complete_title": {
-    "message": "Fokasi session complete"
+    "message": "Focus session kamili"
   },
   "notify_session_complete_body": {
     "message": "Kikao chako cha fokasi kimekamilika."
@@ -15,28 +15,28 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Fokasi schedule could not start"
+    "message": "Focus schedule could hapanat anza"
   },
   "notify_schedule_unavailable_body": {
-    "message": "Tovuti blocking is not enabled. Finish setup or grant website access, then try again."
+    "message": "Website blocking is hapanat wezeshad. Finish setijuu or grant website access, then try again."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Kuanzisha was completed in another tab."
+    "message": "Setijuu was kamilid in ahapanather tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Kuanzisha changed in another tab. The latest choices were reloaded."
+    "message": "Setijuu changed in ahapanather tab. The latest choices were repakiaed."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Kuanzisha changed in another tab. Reload setup before finishing."
+    "message": "Setijuu changed in ahapanather tab. Repakia setijuu before finishing."
   },
   "notify_setup_not_complete": {
-    "message": "Kuanzisha is not complete."
+    "message": "Setijuu is hapanat kamili."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "Kuanzisha is not ready to finish."
+    "message": "Setijuu is hapanat ready to finish."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Kuanzisha storage choice changed. Reload setup before finishing."
+    "message": "Setijuu storage choice changed. Repakia setijuu before finishing."
   },
   "notify_onboarding_storage_failed": {
     "message": "Operesheni ya hifadhi ya onboarding imeshindwa."
@@ -45,19 +45,19 @@
     "message": "Operesheni ya onboarding imeshindwa."
   },
   "notify_website_access_check_failed": {
-    "message": "Fokasi Lock could not check website access. Jaribu Tena setup or reload the extension."
+    "message": "Focus Lock could hapanat check website access. Jaribu tena setijuu or repakia the extension."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Tovuti access is granted, but Fokasi Lock could not enable blocking. Jaribu Tena setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock could hapanat wezesha blocking. Jaribu tena setijuu or repakia the extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Tovuti access is unavailable, and Fokasi Lock could not finish blocking cleanup. Jaribu Tena setup or reload the extension."
+    "message": "Website access is unavailable, and Focus Lock could hapanat finish blocking cleanjuu. Jaribu tena setijuu or repakia the extension."
   },
   "notify_website_access_inconsistent": {
-    "message": "Fokasi Lock received an inconsistent website access state. Jaribu Tena setup or reload the extension."
+    "message": "Focus Lock received an inconsistent website access hali. Jaribu tena setijuu or repakia the extension."
   },
   "notify_boot_not_finished": {
-    "message": "Fokasi Lock did not finish starting: $REASON$",
+    "message": "Focus Lock did hapanat finish anzaing: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -66,55 +66,55 @@
     }
   },
   "notify_unknown_error": {
-    "message": "unknown error"
+    "message": "unkhapanawn hitilafu"
   },
   "notify_nothing_to_reset": {
-    "message": "Fokasi Lock is running, nothing to reset"
+    "message": "Focus Lock is running, hapanathing to seti juuyai"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Fokasi Lock cannot reset a runtime that is still committed inside a policy generation"
+    "message": "Focus Lock canhapanat seti juuyai a runtime that is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "Kujaribu tena kuondoa data hakipo."
+    "message": "Data futa jaribu tena is hapanat available."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Lemaza Sync before deleting synced data"
+    "message": "Lemaza Panga before deleting pangaed data"
   },
   "notify_work_gate_busy": {
     "message": "Fokasi Lock is still finishing an earlier change. Try again in a moment."
   },
   "notify_work_gate_stuck": {
-    "message": "Kiwango kilichofunguka haiwezi kufungwa. Jaribu tena."
+    "message": "The fungua gate could hapanat be fungad. Try again."
   },
   "notify_work_tab_unavailable": {
     "message": "Kichupo cha kazi hakipo."
   },
   "notify_settings_sync_limit": {
-    "message": "Mipango exceed the 8 KB Chrome Sync limit. Ondoa schedule entries or shorten intentions, then try again."
+    "message": "Mpangilios exceed the 8 KB Chrome Panga limit. Ondoa schedule entries or shorten intentions, then try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sync limit. Ondoa custom or whitelist rules, then try again."
+    "message": "Lists exceed the 8 KB Chrome Panga limit. Ondoa custom or whitelist rules, then try again."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "kikao kigumu kinaendelea: kuondoa tovuti ambazo zimefungwa inafungua wakati inapoishia"
+    "message": "a hard session is running: removing blocked sites unlocks when it mwishos"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "kikao kigumu kinaendelea: rekodi mpya za whitelisting inafungua wakati inapoishia"
+    "message": "a hard session is running: new whitelist entries unlock when it mwishos"
   },
   "notify_guard_lists_disable_category": {
-    "message": "kikao kigumu kinaendelea: kulemaza kategori inafungua wakati inapoishia"
+    "message": "a hard session is running: disabling categories unlocks when it mwishos"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "kikao kigumu kinaendelea: ukadiriaji mpya inafungua wakati inapoishia"
+    "message": "a hard session is running: new exclusions unlock when it mwishos"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "kikao kigumu kinaendelea: kudhaifu jukumu la chaguo-msingi linangojea hadi inapoishia"
+    "message": "a hard session is running: weakening the default strictness waits until it mwishos"
   },
   "notify_guard_settings_shorten_delay": {
     "message": "kikao kigumu kinaendelea: kufupi kuchelewesha kwa nia kunefanya kiwango kuwa dhaifu"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "kikao kigumu kinaendelea: kuachana na maneno yaliyoandikwa kunefanya kiwango kuwa dhaifu"
+    "message": "a hard session is running: dropping the ainad phrase weakens the gate"
   },
   "notify_guard_settings_raise_earn_rate": {
     "message": "kikao kigumu kinaendelea: kuinua kiwango cha kiasi cha kupumzika nafundi zaidi ya kumkimbia"
@@ -129,6 +129,6 @@
     "message": "kikao kigumu kinaendelea: kufupi kufungua inakupunguza gharama yake"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "kikao kigumu kinaendelea: rekodi yake ya ratiba haiwezi kudhaifu hadi inapoishia"
+    "message": "a hard session is running: its schedule entry canhapanat be weakened until it mwishos"
   }
 }
