@@ -500,6 +500,352 @@
   "options_day_sat": {
     "message": "суб"
   },
+  "options_schedule_cycles_label": {
+    "message": "Смењуј фокус и паузе"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Преклапа се са другом укљученом ставком у $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "Врста сесије"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Ставка распореда"
+  },
+  "options_schedule_start_label": {
+    "message": "Почетак"
+  },
+  "options_schedule_end_label": {
+    "message": "Крај"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Трајање"
+  },
+  "options_schedule_intention_label": {
+    "message": "Намера"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "чему је ово време намењено"
+  },
+  "options_schedule_save_entry": {
+    "message": "Сачувај ставку"
+  },
+  "options_cancel": {
+    "message": "Одустани"
+  },
+  "options_schedule_empty": {
+    "message": "Још нема заказаних сесија."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Изабрани дани"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ до $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "списак блокираних"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "списак дозвољених"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "флексибилно"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "отпор"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "чврсто закључавање"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Укључено"
+  },
+  "options_schedule_edit": {
+    "message": "Уреди"
+  },
+  "options_schedule_delete": {
+    "message": "Обриши"
+  },
+  "options_schedule_add": {
+    "message": "Додај ставку распореда"
+  },
+  "options_sounds_heading": {
+    "message": "Звуци"
+  },
+  "options_master_volume": {
+    "message": "Главна јачина звука"
+  },
+  "options_sound_session_complete": {
+    "message": "Сесија завршена"
+  },
+  "options_sound_break_start": {
+    "message": "Почетак паузе"
+  },
+  "options_sound_break_end": {
+    "message": "Крај паузе"
+  },
+  "options_sound_schedule_start": {
+    "message": "Аутоматско покретање по распореду"
+  },
+  "options_sound_preview_aria": {
+    "message": "Преслушај звук $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Пусти"
+  },
+  "options_sound_preview_error": {
+    "message": "Звук није могао да се пусти. Покушај поново."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Обавештења"
+  },
+  "options_session_complete_notification": {
+    "message": "Прикажи системско обавештење када се сесија заврши"
+  },
+  "options_badge_heading": {
+    "message": "Значка"
+  },
+  "options_badge_countdown": {
+    "message": "Прикажи преостало време на икони траке са алаткама"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Приступ сајтовима"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Приступ сајтовима је искључен"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock не може да блокира сајтове док не одобриш приступ."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "Укључи блокирање сајтова"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "Приступ сајтовима је одобрен, али блокирање није активно"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome је одобрио приступ, али Focus Lock није могао да региструје своју скрипту за блокирање."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Покушај блокирање сајтова поново"
+  },
+  "options_privacy_website_on_title": {
+    "message": "Блокирање сајтова је укључено"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock може да примени твоја активна правила блокирања на обичним веб-страницама."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "Обрисати локалну историју?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Потврди брисање локалне историје"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Локална историја је обрисана."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "Ово трајно брише потпуне URL адресе, намере фокуса и детаљне догађаје сесије са овог уређаја. Не прекида сесију која траје, а она задржава своју намеру и адресу сваке картице коју блокира. Завршетак сесије брише намеру и покреће чишћење које очисти сваку отворену веб-картицу, а чишћење уклања сваку сачувану адресу када се заврши."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "Ово трајно брише потпуне URL адресе, намере фокуса и детаљне догађаје сесије са овог уређаја, уз збирну статистику која постоји само локално. Не прекида сесију која траје, а она задржава своју намеру и адресу сваке картице коју блокира. Завршетак сесије брише намеру и покреће чишћење које очисти сваку отворену веб-картицу, а чишћење уклања сваку сачувану адресу када се заврши."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Обрисати удаљене податке из синхронизације?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Потврди брисање удаљених података из синхронизације"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Удаљени подаци из Chrome синхронизације су обрисани."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "Ово трајно брише удаљена подешавања, спискове блокираних и дозвољених, кредит за приступ, низове и збирне податке о блокираним покушајима на нивоу домена из Chrome синхронизације. Локална подешавања и локална статистика остају на овом уређају."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Обрисати све Focus Lock податке?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Потврди брисање свих Focus Lock података"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Сви Focus Lock подаци су обрисани."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "Ово трајно брише сваки делић Focus Lock података на овом уређају и све Focus Lock копије које су остале у Chrome синхронизацији:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Брисање свега могуће је само док ниједна сесија не траје. Focus Lock се затим враћа на подешавање."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Локална историја није могла да се обрише. Покушај поново."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Удаљени подаци из Chrome синхронизације нису могли да се обришу. Покушај поново."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Сви Focus Lock подаци нису могли да се обришу. Покушај поново."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome синхронизација није могла да сачува твоје најновије измене. Локално чување је безбедно."
+  },
+  "options_privacy_error_request": {
+    "message": "Захтев није могао да се заврши. Покушај поново."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Приступ сајтовима је ажуриран."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "Приступ сајтовима није одобрен."
+  },
+  "options_privacy_error_website_access": {
+    "message": "Приступ сајтовима није могао да се ажурира. Покушај поново."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Блокирање сајтова је укључено."
+  },
+  "options_privacy_error_export": {
+    "message": "Дневник догађаја није могао да се извезе."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Дневник догађаја није могао да се извезе. Покушај поново."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Подешавања дозвола у Chrome-у нису могла да се отворе. Покушај поново."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Подешавања дозвола у Chrome-у су отворена."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Отвори подешавања дозвола у Chrome-у"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome синхронизација"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Синхронизуј Focus Lock податке између Chrome уређаја"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome синхронизација је укључена."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome синхронизација је искључена."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome синхронизација још чува твоје најновије измене."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome синхронизација је укључена."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome синхронизација је искључена."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Измене су сачуване у Chrome синхронизацији."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Покушај поново да укључиш Chrome синхронизацију"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Покушај Chrome синхронизацију поново"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Синхронизовано"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Само локално"
+  },
+  "options_privacy_developer_note": {
+    "message": "Ништа се не шаље програмеру Focus Lock-а."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Локални дневник догађаја"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Извези детаљан локални дневник или обриши локалну историју прегледања и сесија."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Извези локални дневник догађаја"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Локални дневник догађаја је извезен."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "Обриши локалну историју"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Удаљени подаци у синхронизацији"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "Обриши Focus Lock копије које су остале у Chrome синхронизацији без промена на овом уређају."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Обриши удаљене податке из синхронизације"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Сви Focus Lock подаци"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "Обриши сваки Focus Lock запис на овом уређају и све Focus Lock копије које су остале у Chrome синхронизацији, а затим почни испочетка од подешавања. Доступно док ниједна сесија не траје."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Наставља се брисање свих Focus Lock података."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "Покушај поново да обришеш локалну историју"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Покушај поново да обришеш удаљене податке из синхронизације"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Покушај поново да обришеш све податке"
+  },
+  "options_error_load": {
+    "message": "Подешавања нису могла да се учитају. Поново учитај страницу да покушаш опет."
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lock није могао поново да се покрене. Покушај поново."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Подешавања приватности нису могла да се освеже. Поново учитај страницу."
+  },
+  "options_error_website_blocking": {
+    "message": "Блокирање сајтова није могло да се ажурира. Покушај поново."
+  },
+  "options_error_change_sync": {
+    "message": "Chrome синхронизација није могла да се промени. Покушај поново."
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome синхронизација није могла поново да се покуша. Покушај поново."
+  },
+  "options_error_save_settings": {
+    "message": "Подешавања нису могла да се сачувају. Поново учитај страницу и покушај опет."
+  },
+  "options_error_save_lists": {
+    "message": "Спискови нису могли да се сачувају. Поново учитај страницу и покушај опет."
+  },
   "options_gate_wait_few": {
     "message": "Чекај $COUNT$ секунде",
     "placeholders": {

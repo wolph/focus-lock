@@ -1,1 +1,630 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "ďalšie: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Nastavenia"
+  },
+  "popup_open_settings_failed": {
+    "message": "Nepodarilo sa otvoriť Nastavenia. Skúste znova."
+  },
+  "popup_settings_load_failed": {
+    "message": "Nepodarilo sa načítať nastavenia relácie. Obnovte okno s panelom nástrojov a skúste znova. Zobrazujú sa predvolené hodnoty."
+  },
+  "popup_open_setup_failed": {
+    "message": "Nepodarilo sa otvoriť nastavenie. Skúste znova."
+  },
+  "popup_setup_required_heading": {
+    "message": "Dokončite nastavenie Focus Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "Vyberte si počiatočné zoznamy, prístup k webom a režim ukladania pred spustením relácie."
+  },
+  "popup_open_setup_button": {
+    "message": "Otvoriť nastavenie"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Nepodarilo sa potvrdiť blokovaní webov. Skúste znova."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Nepodarilo sa aktivovať blokovanie webov. Skúste znova."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Blokovanie webov je vypnuté"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock nemôže spustiť reláciu, kým mu Chrome neudelia prístup k webom a nebude aktivované blokovanie."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome neudelil prístup k webom. Blokovanie webov je stále vypnuté."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Prístup k webom je udelený, ale Focus Lock nemôže aktivovať blokovanie. Opakujte nastavenie alebo znova načítajte rozšírenie."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Aktivovať blokovanie webov"
+  },
+  "popup_retry_button": {
+    "message": "Skúsiť znova"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Vaša relácia skončila, pretože bol odstránený prístup k webom."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Vaša relácia skončila, pretože Focus Lock nemôže aktivovať blokovanie webov."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Nepodarilo sa zavrhnúť túto poznámku. Skúste znova."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Zavrhnúť poznámku o prístupe k webom"
+  },
+  "popup_dismiss_button": {
+    "message": "Zavrhnúť"
+  },
+  "popup_restart_failed": {
+    "message": "Nepodarilo sa reštartovať Focus Lock. Skúste znova."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock sa nepodarilo spustiť"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Dôvod sa nepodarilo prečítať."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Obnoviť lokálny runtime"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Zachová vaše nastavenia, zoznamy a štatistiky. Vymaže aktuálny stav relácie."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Vymazať všetko a začať odznova"
+  },
+  "popup_keep_data_button": {
+    "message": "Ponechať moje údaje"
+  },
+  "popup_delete_all_button": {
+    "message": "Vymazať všetky údaje Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Stav nastavenia nie je dostupný. Znova načítajte Focus Lock a skúste znova."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Stav zamerania nie je dostupný"
+  },
+  "popup_action_in_progress": {
+    "message": "Akcia prebieha"
+  },
+  "popup_active_site_checking": {
+    "message": "Kontrola aktívneho webu"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Otvorte bežný web, aby ste ho mohli odomknúť"
+  },
+  "popup_active_site_unknown": {
+    "message": "Nepodarilo sa identifikovať aktívny web"
+  },
+  "popup_active_site_error": {
+    "message": "Nepodarilo sa identifikovať aktívny web."
+  },
+  "popup_resume_now": {
+    "message": "Pokračovať teraz"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Začať nasledujúce zameranie skôr"
+  },
+  "popup_unlock_this_site": {
+    "message": "Odomknúť tento web"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Odomknúť všetky weby"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ prístup, $CREDIT$ kredit",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ prístup, $CREDIT$ kredit - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Vybrať pracovný tab"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Zmeniť pracovný tab"
+  },
+  "popup_session_actions_summary": {
+    "message": "Akcie relácie"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ kredit na prístup k webom",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Pridať povolený web"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Pridať povolený web"
+  },
+  "popup_add_button": {
+    "message": "Pridať"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Len $COUNT$ pravidiel povolených webov. Ostatné weby sú blokované.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ blokovaných kategórií, $RULES$ ďalších pravidiel.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Tvrdý zámok. Nemožno skončiť skôr."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Možno skončiť kedykoľvek."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Skončenie po čakaní $SECONDS$s.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Skončenie po čakaní $SECONDS$s a fráze na potvrdenie.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Dĺžka relácie"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Vlastné minúty"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_gate_force_end": {
+    "message": "Ignorovať časový limit a skončiť aj tak"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Pokračovať v zameraní"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Napíšte:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Nepodarilo sa aktualizovať bránu. Skúste znova."
+  },
+  "popup_gate_intention": {
+    "message": "Povedali ste: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Chvíľu na rozhodnutie:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "z $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Späť k práci"
+  },
+  "popup_destination_unavailable": {
+    "message": "Cieľ nie je dostupný"
+  },
+  "popup_back_to_work_name": {
+    "message": "Späť k práci: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Späť k práci: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Úpravy kategórií sú zakázané, kým sa zoznamy blokovaných webov znova nenačítajú."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blokované kategórie"
+  },
+  "popup_show_full_domain": {
+    "message": "Zobraziť celú doménu: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Zobraziť celý regulárny výraz: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Doména"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regulárny výraz"
+  },
+  "popup_category_sites_label": {
+    "message": "Weby z kategórie $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ web",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ webov",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "a $COUNT$ ďalší web",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "a $COUNT$ ďalších webov",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Povolené výnimky"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Ďalšie blokované pravidlá"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Žiadne ďalšie blokované pravidlá."
+  },
+  "popup_allowed_heading": {
+    "message": "Povolené weby a pravidlá"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Zatiaľ nie sú povolené žiadne weby."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "Čo bude blokované"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "Čo bude povolené"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ z $TOTAL$ vybraných kategórií",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ ďalšie blokované pravidlo",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ ďalších blokovaných pravidiel",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ povolené pravidlo",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ povolených pravidiel",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Zmeny webov a pravidiel tu sa vzťahujú len na túto reláciu. Všetko ostatné je blokované."
+  },
+  "popup_scope_blacklist": {
+    "message": "Zmeny kategórií a pravidiel tu sa vzťahujú len na túto reláciu."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Otvorte Nastavenia pre trvalé predvolené hodnoty"
+  },
+  "popup_rule_details_label": {
+    "message": "Podrobnosti pravidiel relácie"
+  },
+  "popup_session_type_legend": {
+    "message": "Typ relácie"
+  },
+  "popup_session_type_flexible": {
+    "message": "Flexibilný"
+  },
+  "popup_session_type_friction": {
+    "message": "Trenie"
+  },
+  "popup_session_type_hard": {
+    "message": "Tvrdý zámok"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Skončite reláciu ihneď, kedykoľvek si to želáte."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Skončenie vyžaduje $WAIT$. Písanie nie je povinné.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Skončenie vyžaduje $WAIT$ a potvrdzovací frázu.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "Relácia nemôže skončiť skôr. Kredit na prístup k webom stále funguje."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "Vybrané kategórie a ďalšie pravidlá sú blokované. Ostatné weby sú dostupné."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Dostupné sú len uvedené weby. Všetky ostatné weby sú blokované."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Zadajte dĺžku relácie väčšiu ako nula minút."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Predvolené hodnoty sa zmenili, ale aktuálne zoznamy sa nepodarilo načítať. Obnovte okno s panelom nástrojov."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Žiaden pracovný tab (voliteľný)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Vybraný tab nie je dostupný - vyberte si iný"
+  },
+  "popup_cycles_label": {
+    "message": "Cykly: $FOCUS$ min zamerania, $SHORT_BREAK$ min prestávka, $LONG_BREAK$ min dlhá prestávka každý $LONG_EVERY$-tý",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Zámer"
+  },
+  "popup_intention_placeholder": {
+    "message": "Na čom pracujete?"
+  },
+  "popup_work_tab_named": {
+    "message": "Pracovný tab: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Zmeniť"
+  },
+  "popup_session_settings_summary": {
+    "message": "Nastavenia relácie"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Vybrať pracovný tab"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Pracovný tab"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (aktuálny)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Režim blokovaní"
+  },
+  "popup_invalid_time_label": {
+    "message": "neplatný čas"
+  },
+  "popup_start_focus_label": {
+    "message": "Spustiť $DURATION$ zamerania",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Zadajte platnú doménu, napríklad docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Nepodarilo sa načítať pracovné taby. Znova otvorte okno s panelom nástrojov."
+  },
+  "popup_use_this_tab": {
+    "message": "Použiť tento tab"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "Tento tab nie je dostupný pre prácu. Vyberte si ďalší otvorený tab."
+  },
+  "popup_checking_current_tab": {
+    "message": "Kontrola aktuálneho tabu..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Hľadanie vášho aktuálneho tabu..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Nepodarilo sa načítať váš aktuálny tab. Skúste znova."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Vyberte alebo nahraďte váš pracovný tab."
+  },
+  "popup_saving_work_tab": {
+    "message": "Ukladanie pracovného tabu..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Nepodarilo sa uložiť pracovný tab. Skúste znova."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Vybrať otvorený tab"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Alebo si vyberte ďalší tab"
+  },
+  "popup_start_failed": {
+    "message": "Nepodarilo sa spustiť reláciu. Skúste znova."
+  }
+}

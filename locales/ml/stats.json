@@ -1,1 +1,282 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Focus Lock സ്ഥിതിവിവരം"
+  },
+  "stats_page_title": {
+    "message": "നിങ്ങളുടെ ഫോക്കസ് റെക്കോർഡ്"
+  },
+  "stats_loading": {
+    "message": "നിങ്ങളുടെ സ്ഥിതിവിവരം ലോഡ് ചെയ്യുന്നു."
+  },
+  "stats_load_error": {
+    "message": "സ്ഥിതിവിവരം ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കാൻ പുതുക്കുക."
+  },
+  "stats_partial_error_both": {
+    "message": "Hourly attempts and site access credit സെറ്റിംഗുകൾ are unavailable."
+  },
+  "stats_partial_error_economy": {
+    "message": "Site access credit സെറ്റിംഗുകൾ are unavailable."
+  },
+  "stats_scope_retry": {
+    "message": "Retry scope check"
+  },
+  "stats_empty": {
+    "message": "Stats appear after your first സെഷൻ."
+  },
+  "stats_tile_focus_today": {
+    "message": "Focus ഇന്ന്"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Focus in the last 7 ദിവസങ്ങൾ"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Attempts തടഞ്ഞിരിക്കുന്നു ഇന്ന്"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Gate requests dismissed ഇന്ന്"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Site access credit spent ഇന്ന്"
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ earned",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "സ്ട്രീക്"
+  },
+  "stats_streak_empty": {
+    "message": "നിങ്ങളുടെ സ്ട്രീക് നിങ്ങളുടെ ആദ്യ ഫോക്കസ് ദിനം ഉപയോഗിച്ച് ആരംഭിക്കുന്നു."
+  },
+  "stats_streak_unit_one": {
+    "message": "ദിവസം"
+  },
+  "stats_streak_unit_other": {
+    "message": "ദിവസങ്ങൾ"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ ഫ്രീസ് ടോക്കൻ ബാങ്കിംഗ് ചെയ്യപ്പെട്ടിരിക്കുന്നു",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ ഫ്രീസ് ടോക്കണുകൾ ബാങ്കിംഗ് ചെയ്യപ്പെട്ടിരിക്കുന്നു",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "സ്ട്രീക് ഫ്രീസ്: ഒരു നിരസിത ദിവസം, കവർ ചെയ്തിരിക്കുന്നു"
+  },
+  "stats_streak_active_days_one": {
+    "message": "ഈ മാസം $MONTH$ $COUNT$ സജീവ ദിവസം",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ active ദിവസങ്ങൾ this month ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "$MONTH$ സജീവ തീയതികൾ: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "$MONTH$ സജീവ തീയതി ഇല്ല.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Focus, last 14 ദിവസങ്ങൾ"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Focus minutes appear after your first സെഷൻ."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "തടഞ്ഞിരിക്കുന്നു attempts, last 14 ദിവസങ്ങൾ"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "തടഞ്ഞിരിക്കുന്നു attempts show up here once a സെഷൻ catches one."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Top തടഞ്ഞിരിക്കുന്നു sites, last 30 ദിവസങ്ങൾ"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Nothing തടഞ്ഞിരിക്കുന്നു yet. That is a fine ആരംഭിക്കുക."
+  },
+  "stats_chart_hours_heading": {
+    "message": "മണിക്കൂർ അനുസരിച്ച ശ്രമങ്ങൾ, ഈ മെഷീൻ മാത്രം"
+  },
+  "stats_chart_other_site": {
+    "message": "മറ്റുള്ളത്"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$മി",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ തടഞ്ഞിരിക്കുന്നു",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ തടഞ്ഞിരിക്കുന്നു",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "ബാർ ചാർട്ട്"
+  },
+  "stats_chart_name_hbar": {
+    "message": "തിരശ്ചീന ബാർ ചാർട്ട്"
+  },
+  "stats_chart_description_bar": {
+    "message": "ബാർ ചാർട്ട്. ഡാറ്റാ പോയിന്റുകളിലൂടെ നീങ്ങാൻ കീബോർഡ് ഉപയോഗിക്കുക അല്ലെങ്കിൽ പട്ടികയായി വിവരങ്ങൾ കാണാൻ തുറക്കുക."
+  },
+  "stats_chart_description_hbar": {
+    "message": "തിരശ്ചീന ബാർ ചാർട്ട്. ഡാറ്റാ പോയിന്റുകളിലൂടെ നീങ്ങാൻ കീബോർഡ് ഉപയോഗിക്കുക അല്ലെങ്കിൽ പട്ടികയായി വിവരങ്ങൾ കാണാൻ തുറക്കുക."
+  },
+  "stats_chart_empty_default": {
+    "message": "ഇതുവരെ ഡാറ്റ ില്ല."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "പട്ടികയായി കാണുക"
+  },
+  "stats_chart_table_category": {
+    "message": "വിഭാഗം"
+  },
+  "stats_chart_table_value": {
+    "message": "Value"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-hour തടഞ്ഞിരിക്കുന്നു-attempt heat strip"
+  },
+  "stats_sessions_empty": {
+    "message": "Your first സെഷൻ will appear here."
+  },
+  "stats_sessions_col_date": {
+    "message": "Date"
+  },
+  "stats_sessions_col_start": {
+    "message": "ആരംഭിക്കുക"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planned"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Focused"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "All sites"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "One site"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Intention"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Outcome"
+  },
+  "stats_sessions_col_source": {
+    "message": "Source"
+  },
+  "stats_session_no_intention": {
+    "message": "No intention"
+  },
+  "stats_session_article_label": {
+    "message": "സെഷൻ: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "manual"
+  },
+  "stats_session_source_schedule": {
+    "message": "schedule"
+  },
+  "stats_session_source_scheduled": {
+    "message": "scheduled"
+  },
+  "stats_outcome_completed": {
+    "message": "Completed"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Ended early"
+  },
+  "stats_outcome_running": {
+    "message": "Running"
+  }
+}

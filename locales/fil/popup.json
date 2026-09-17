@@ -13,58 +13,58 @@
     }
   },
   "popup_settings_button_label": {
-    "message": "Mga settsag"
+    "message": "Mga setting"
   },
   "popup_open_settings_failed": {
-    "message": "Could not open Mga settsag. Try agasa."
+    "message": "Could not open Mga setting. Try again."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load session settings. Reload the popup to try again. Defaults are ipakitan."
+    "message": "Could not load sesysa mga settsag. Reload the popup sa try agasa. Defaults are ipakitan."
   },
   "popup_open_setup_failed": {
-    "message": "Could not open setup. Try agasa."
+    "message": "Could not buksan setup. Try agasa."
   },
   "popup_setup_required_heading": {
     "message": "Fsaish settsag up Pokus Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose your startsag lists, website access, at ssaage mode beparae startsag a sessisa."
+    "message": "Choose your simulansag lists, website pag-access, at ssaage modo beparae simulansag a sesysa."
   },
   "popup_open_setup_button": {
     "message": "Buksan setup"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Could not csafirm website blocksag. Try agasa."
+    "message": "Could not csafirm website hadlangsag. Try agasa."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not enable website blocksag. Try agasa."
+    "message": "Could not gawsa website hadlangsag. Try agasa."
   },
   "popup_blocking_off_heading": {
-    "message": "Website blocksag is ngf"
+    "message": "Website hadlangsag is ngf"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock cannot start a session hanggang Chrome grants website access and blocking is enabled."
+    "message": "Pokus Lock cannot simulan a sesysa until Chrome grants website pag-access at hadlangsag is gawsad."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant website access. Website blocksag is still ngf."
+    "message": "Chrome did not grant website pag-access. Website hadlangsag is still ngf."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but Pokus Lock could not enable blocksag. Retry setup o reload the extensisa."
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
   },
   "popup_enable_blocking_button": {
-    "message": "Gawsa website blocksag"
+    "message": "Paganahin website blocking"
   },
   "popup_retry_button": {
-    "message": "Subukan muli"
+    "message": "Subukan Muli"
   },
   "popup_notice_access_revoked": {
-    "message": "Your sessisa ended because website access was removed."
+    "message": "Your sesysa ended because website pag-access was alissad."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your sessisa ended because Pokus Lock could not enable website blocksag."
+    "message": "Your sesysa ended because Pokus Lock could not gawsa website hadlangsag."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Could not dismiss ito notice. Try again."
+    "message": "Could not dismiss this notice. Try agasa."
   },
   "popup_dismiss_notice_label": {
     "message": "Dismiss website pag-access notice"
@@ -73,10 +73,10 @@
     "message": "Palampasin"
   },
   "popup_restart_failed": {
-    "message": "Could not restart Pokus Lock. Try agasa."
+    "message": "Could not resimulan Pokus Lock. Try agasa."
   },
   "popup_boot_failed_heading": {
-    "message": "Pokus Lock could not start"
+    "message": "Pokus Lock could not simulan"
   },
   "popup_boot_reason_unavailable": {
     "message": "The reassa could not be read."
@@ -85,19 +85,19 @@
     "message": "Reset local runoas"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your settsags, lists, at statistics. Clears the current sessisa state."
+    "message": "Keeps your mga settsag, lists, at statistics. Clears the current sesysa state."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Delete everything and start sa itaas"
+    "message": "Alisin everything and start over"
   },
   "popup_keep_data_button": {
     "message": "Keep my data"
   },
   "popup_delete_all_button": {
-    "message": "Burahsa all Pokus Lock data"
+    "message": "Alisin all Focus Lock data"
   },
   "popup_setup_status_unavailable": {
-    "message": "Setup status unavailable. Reload Pokus Lock sa try agasa."
+    "message": "I-set up status unavailable. Reload Focus Lock to try again."
   },
   "popup_snapshot_unavailable": {
     "message": "Pokus status unavailable"
@@ -109,7 +109,7 @@
     "message": "Checksag the active site"
   },
   "popup_active_site_unsupported": {
-    "message": "Open a regular website to i-unlock it"
+    "message": "Buksan a regular website to unlock it"
   },
   "popup_active_site_unknown": {
     "message": "Could hindit identify the aktibo site"
@@ -121,7 +121,7 @@
     "message": "Ipagpatuloy now"
   },
   "popup_start_next_focus_early": {
-    "message": "Simulan next focus early"
+    "message": "Magsimula next focus early"
   },
   "popup_unlock_this_site": {
     "message": "Unlock ito site"
@@ -160,13 +160,13 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Choose wok tab"
+    "message": "Choose trabaho tab"
   },
   "popup_change_work_tab_button": {
-    "message": "Change wok tab"
+    "message": "Change trabaho tab"
   },
   "popup_session_actions_summary": {
-    "message": "Sesysa actisas"
+    "message": "Sesyon actions"
   },
   "popup_site_access_credit": {
     "message": "$CREDIT$ site pag-access cri-edit",
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Add an hayaaned domain"
+    "message": "Magdagdag an allowed domain"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Add hayaaned domain"
+    "message": "Magdagdag allowed domain"
   },
   "popup_add_button": {
     "message": "Magdagdag"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ hayaaned site rules. Other websites blocked.",
+    "message": "Only $COUNT$ allowed site panuntunans. Other websites hadlanged.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -199,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ blocked categoies, $RULES$ extra rules.",
+    "message": "$CATEGORIES$ hadlanged categoies, $RULES$ extra panuntunans.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -212,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Mahigpit na pag-lock. Cannot end early."
+    "message": "Mahirap lock. Cannot end early."
   },
   "popup_draft_stop_flexible": {
     "message": "Can end at any oas."
   },
   "popup_draft_stop_friction": {
-    "message": "End after a $SECBUKASDS$s wait.",
+    "message": "Tapusin after a $SECONDS$s wait.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -227,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "End after a $SECBUKASDS$s wait and confirmation phrase.",
+    "message": "Tapusin after a $SECONDS$s wait and confirmation phrase.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -236,19 +236,19 @@
     }
   },
   "popup_session_length_label": {
-    "message": "Sesysa length"
+    "message": "Sesyon length"
   },
   "popup_custom_minutes_label": {
-    "message": "Kustom minutes"
+    "message": "Custom minutos"
   },
   "popup_custom_minutes_placeholder": {
     "message": "msa"
   },
   "popup_gate_force_end": {
-    "message": "Ignoe timeout at end anyway"
+    "message": "Ignoe oasout at end anyway"
   },
   "popup_gate_keep_focusing": {
-    "message": "Keep focussag"
+    "message": "Keep pokussag"
   },
   "popup_gate_phrase_label": {
     "message": "Uri:"
@@ -257,7 +257,7 @@
     "message": "Could not update the gate. Try agasa."
   },
   "popup_gate_intention": {
-    "message": "You said: $INTENTIBUKAS$",
+    "message": "You said: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -278,13 +278,13 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Bumalik sa wok"
+    "message": "Bumalik to work"
   },
   "popup_destination_unavailable": {
     "message": "Destsaatisa unavailable"
   },
   "popup_back_to_work_name": {
-    "message": "Back to work: $DESTINATIBUKAS$",
+    "message": "Bumalik to work: $DESTINATION$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -293,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "Back to work: $DESTINATIBUKAS$ ($HOSTNAME$)",
+    "message": "Bumalik to work: $DESTINATION$ ($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -306,13 +306,13 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Category editing is disabled hanggang blocked-site lists reload."
+    "message": "Kategorya editing is disabled until blocked-site lists reload."
   },
   "popup_blocked_categories_heading": {
-    "message": "Hadlanged categoies"
+    "message": "Hadlanged categories"
   },
   "popup_show_full_domain": {
-    "message": "Ipakita full domasa: $PATTERN$",
+    "message": "Ipakita full domain: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -321,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "Ipakita full regular expressisa: $PATTERN$",
+    "message": "Ipakita full regular expression: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "and $COUNT$ higit pa site",
+    "message": "at $COUNT$ moe site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "and $COUNT$ higit pa sites",
+    "message": "at $COUNT$ moe sites",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -381,7 +381,7 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Lahatowed exceptions"
+    "message": "Payaganed exceptions"
   },
   "popup_extra_blocked_heading": {
     "message": "Extra hadlanged panuntunans"
@@ -390,7 +390,7 @@
     "message": "No extra hadlanged panuntunans."
   },
   "popup_allowed_heading": {
-    "message": "Lahatowed sites and rules"
+    "message": "Payaganed sites and rules"
   },
   "popup_no_allowed_sites": {
     "message": "No sites are hayaaned yet."
@@ -433,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ hayaaned rule",
+    "message": "$COUNT$ allowed panuntunan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -442,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ hayaaned rules",
+    "message": "$COUNT$ allowed panuntunans",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,19 +451,19 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Lahatowed-site and rule changes here apply only to this session. Bawatthing else is blocked."
+    "message": "Payaganed-site and rule changes here apply only to this session. Everything else is blocked."
   },
   "popup_scope_blacklist": {
-    "message": "Category and rule changes here apply only to ito session."
+    "message": "Kategorya and rule changes here apply only to this session."
   },
   "popup_open_settings_defaults": {
-    "message": "Buksan Mga settsag para permanent defaults"
+    "message": "Buksan Mga setting for permanent defaults"
   },
   "popup_rule_details_label": {
-    "message": "Sesysa rule details"
+    "message": "Sesyon rule details"
   },
   "popup_session_type_legend": {
-    "message": "Sesysa type"
+    "message": "Sesyon type"
   },
   "popup_session_type_flexible": {
     "message": "Flexible"
@@ -472,13 +472,13 @@
     "message": "Alitan"
   },
   "popup_session_type_hard": {
-    "message": "Mahigpit na pag-lock"
+    "message": "Mahirap lock"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the session immediately kapagever you choose."
+    "message": "Tapusin the session immediately whenever you choose."
   },
   "popup_session_type_friction_hint": {
-    "message": "Endsag early requires $WAIT$. No typsag is required.",
+    "message": "Tapusining early requires $WAIT$. No typing is required.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -487,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Endsag early requires $WAIT$ at typed csafirmatisa.",
+    "message": "Tapusining early requires $WAIT$ and typed confirmation.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -496,28 +496,28 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The session cannot end early. Credit sa access ng site still works."
+    "message": "The sesysa cannot end early. Site pag-access cri-edit still trabahos."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected categoies at extra rules are blocked. Other sites remasa available."
+    "message": "The selected categoies at extra panuntunans are hadlanged. Other sites remasa available."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. Bawat other website is blocked."
+    "message": "Only the listed sites are available. Every other website is hadlanged."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a session length greater kaysa zero minutes."
+    "message": "Enter a session length greater than zero minutos."
   },
   "popup_stale_lists_unavailable": {
     "message": "Defaults changed, but current lists could hindit be mag-loaded. Remag-load the poppataas."
   },
   "popup_no_work_tab_option": {
-    "message": "No wok tab (optisaal)"
+    "message": "No trabaho tab (opsysaal)"
   },
   "popup_work_tab_unavailable_option": {
     "message": "Selected tab unavailable - choose ahindither"
   },
   "popup_cycles_label": {
-    "message": "Cycles: $FOCUS$ min focus, $SHORT_BREAK$ min break, $LBUKASG_BREAK$ min long break every $LBUKASG_EVERY$th",
+    "message": "Sikluss: $FOCUS$ msa pokus, $SHORT_BREAK$ msa pahsaga, $LONG_BREAK$ msa lsag pahsaga every $LONG_EVERY$th",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -541,10 +541,10 @@
     "message": "Layunsa"
   },
   "popup_intention_placeholder": {
-    "message": "What are you woksag sa?"
+    "message": "What are you trabahosag sa?"
   },
   "popup_work_tab_named": {
-    "message": "Tab ng trabaho: $TITLE$",
+    "message": "Trabaho tab: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -556,16 +556,16 @@
     "message": "Change"
   },
   "popup_session_settings_summary": {
-    "message": "Sesysa settsags"
+    "message": "Sesyon settings"
   },
   "popup_choose_work_tab_label": {
-    "message": "Choose a wok tab"
+    "message": "Choose a trabaho tab"
   },
   "popup_work_tab_select_label": {
-    "message": "Tab ng trabaho"
+    "message": "Trabaho tab"
   },
   "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Current)",
+    "message": "$TITLE$ (Kasalukuyan)",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -574,13 +574,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Hadlangsag mode"
+    "message": "Hadlanging mode"
   },
   "popup_invalid_time_label": {
-    "message": "savalid time"
+    "message": "savalid oas"
   },
   "popup_start_focus_label": {
-    "message": "Start $DURATIBUKAS$ focus",
+    "message": "Magsimula $DURATION$ focus",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -592,13 +592,13 @@
     "message": "Enter a valid domasa such as docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Could not load work mga tab. Reopen the popup to try again."
+    "message": "Could not load trabaho tabs. Rebuksan the popup sa try agasa."
   },
   "popup_use_this_tab": {
     "message": "Use ito tab"
   },
   "popup_current_tab_unavailable": {
-    "message": "This tab is not available para wok. Choose another open tab."
+    "message": "This tab is not available para trabaho. Choose another buksan tab."
   },
   "popup_checking_current_tab": {
     "message": "Checksag current tab..."
@@ -610,13 +610,13 @@
     "message": "Could not load your current tab. Try agasa."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Choose o replace your wok tab."
+    "message": "Choose o replace your trabaho tab."
   },
   "popup_saving_work_tab": {
-    "message": "Savsag wok tab..."
+    "message": "Savsag trabaho tab..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not save the wok tab. Try agasa."
+    "message": "Could not magsave the trabaho tab. Try agasa."
   },
   "popup_choose_open_tab_option": {
     "message": "Choose an buksan tab"
@@ -625,6 +625,6 @@
     "message": "Or choose ahindither tab"
   },
   "popup_start_failed": {
-    "message": "Could not start sessisa. Try agasa."
+    "message": "Could not simulan sesysa. Try agasa."
   }
 }

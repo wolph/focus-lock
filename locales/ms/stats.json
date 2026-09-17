@@ -1,57 +1,57 @@
 {
   "stats_document_title": {
-    "message": "Fokus Lock stpadas"
+    "message": "Fokus Lock stats"
   },
   "stats_page_title": {
-    "message": "Your fokus recpadaaud"
+    "message": "Your fokus record"
   },
   "stats_loading": {
-    "message": "Memupada your stpadas."
+    "message": "Memuat your stats."
   },
   "stats_load_error": {
     "message": "Could not load stpadas. Reload ke try agadalam."
   },
   "stats_partial_error_both": {
-    "message": "Hourly padatempts dan situs akses kredit pengpadauran are unavailable."
+    "message": "Jamly attempts and site access credit settings are unavailable."
   },
   "stats_partial_error_attempts": {
-    "message": "Hourly padatempts are unavailable."
+    "message": "Jamly attempts are unavailable."
   },
   "stats_partial_error_economy": {
-    "message": "Kredit akses laman settings are unavailable."
+    "message": "Situs akses kredit pengpadauran are unavailable."
   },
   "stats_scope_synced": {
-    "message": "Synced totals from ini Chrome account. Local-only panels are labeled."
+    "message": "Synced ketals from this Chrome account. Local-padaly panels are labeled."
   },
   "stats_scope_local": {
-    "message": "Totals from ini machine. Focus Lock statistics are not synced."
+    "message": "Totals from this machine. Fokus Lock statistics are not synced."
   },
   "stats_scope_checking": {
     "message": "Checkdalamg whether these ketals are synced."
   },
   "stats_scope_unavailable": {
-    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from ini machine."
+    "message": "Statistik scope is unavailable. Totals may include synced data. Hourly attempts and recent sesis are from this machine."
   },
   "stats_scope_retry": {
-    "message": "Coba ulang scope check"
+    "message": "Coba Ulang scope check"
   },
   "stats_empty": {
-    "message": "Stpadas appear after your first sesi."
+    "message": "Stats appear after your first sesi."
   },
   "stats_tile_focus_today": {
-    "message": "Fokus keday"
+    "message": "Fokus tohari"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Fokus dalam the last 7 days"
+    "message": "Fokus in the last 7 haris"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts blokired keday"
+    "message": "Attempts blocked tohari"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gpadae requests dismissed keday"
+    "message": "Gate requests dismissed tohari"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Kredit akses laman spent today"
+    "message": "Site access credit spent tohari"
   },
   "stats_tile_credit_subline_spent": {
     "message": "Semua sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
@@ -83,7 +83,7 @@
     "message": "Garis"
   },
   "stats_streak_empty": {
-    "message": "Your garis mulais dengan your first fokus day."
+    "message": "Your streak starts with your first focus hari."
   },
   "stats_streak_unit_one": {
     "message": "hari"
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "Streak freeze: one missed day, cdi atased"
+    "message": "Streak freeze: one missed hari, covered"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active day ini month ($MONTH$)",
+    "message": "$COUNT$ active hari this month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active days ini month ($MONTH$)",
+    "message": "$COUNT$ active haris this month ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Active dates in $MHIDUPTH$: $DAYS$.",
+    "message": "Active dpadaes dalam $MONTH$: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -152,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "No active dates in $MHIDUPTH$.",
+    "message": "No active dpadaes dalam $MONTH$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -161,25 +161,25 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Fokus, last 14 days"
+    "message": "Fokus, last 14 haris"
   },
   "stats_chart_focus_empty": {
-    "message": "Fokus menit appear after your first sesi."
+    "message": "Fokus menits appear after your first session."
   },
   "stats_chart_attempts_heading": {
-    "message": "Blokired padatempts, last 14 days"
+    "message": "Blokired attempts, last 14 haris"
   },
   "stats_chart_attempts_empty": {
-    "message": "Blocked attempts tampilkan up here once a session catches one."
+    "message": "Blokired attempts show up here once a session catches one."
   },
   "stats_chart_sites_heading": {
-    "message": "Top blokired situss, last 30 days"
+    "message": "Top blocked sites, last 30 haris"
   },
   "stats_chart_sites_empty": {
     "message": "Nothdalamg blokired yet. Thpada is a fdalame mulai."
   },
   "stats_chart_hours_heading": {
-    "message": "Attempts by hour, ini machine only"
+    "message": "Attempts by jam, this machine only"
   },
   "stats_chart_other_site": {
     "message": "other"
@@ -243,16 +243,16 @@
     "message": "Lihpada as table"
   },
   "stats_chart_table_category": {
-    "message": "Kpadaegpadaaui"
+    "message": "Kategori"
   },
   "stats_chart_table_value": {
     "message": "Nilai"
   },
   "stats_heat_strip_label": {
-    "message": "24-hour blokired-padatempt hepada strip"
+    "message": "24-jam blocked-attempt heat strip"
   },
   "stats_sessions_heading": {
-    "message": "Recent sessions on ini machine"
+    "message": "Recent sesis on this machine"
   },
   "stats_sessions_empty": {
     "message": "Your first sesi will appear here."
@@ -288,7 +288,7 @@
     "message": "No nipada"
   },
   "stats_session_article_label": {
-    "message": "Session: $INTENTIHIDUP$",
+    "message": "Sesi: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",

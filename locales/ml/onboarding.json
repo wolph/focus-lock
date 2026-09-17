@@ -25,7 +25,7 @@
     "message": "സെറ്റപ്പ് പൂർത്തിയായി"
   },
   "onboarding_complete_body": {
-    "message": "നിന്റെ തിരഞ്ഞെടുപ്പുകൾ സേവ് ചെയ്തു. സെഷൻ തുടങ്ങാൻ Chrome ടൂൾബാറിൽ നിന്ന് Focus Lock തുറക്കുക."
+    "message": "Your choices are saved. Open Focus Lock from the Chrome toolbar to ആരംഭിക്കുക a സെഷൻ."
   },
   "onboarding_error_heading": {
     "message": "സെറ്റപ്പ് ലഭ്യമല്ല"
@@ -37,19 +37,19 @@
     "message": "വീണ്ടും ശ്രമിക്കുക"
   },
   "onboarding_save_error": {
-    "message": "സെറ്റപ്പ് പുരോഗതി സേവ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
+    "message": "Could not സംരക്ഷിക്കുക setup progress. Try again."
   },
   "onboarding_enable_error": {
-    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
+    "message": "Could not സജീവമാക്കുക website blocking. Try again."
   },
   "onboarding_finish_error": {
     "message": "സെറ്റപ്പ് പൂർത്തിയാക്കാനായില്ല. നിന്റെ തിരഞ്ഞെടുപ്പുകൾ ഇപ്പോഴും സേവ് ചെയ്തിട്ടുണ്ട്. വീണ്ടും ശ്രമിക്കുക."
   },
   "onboarding_lists_heading": {
-    "message": "നിന്റെ ആരംഭ തടയൽ പട്ടിക തിരഞ്ഞെടുക്കുക"
+    "message": "Choose your starting തടയുക list"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "$MODE$ ൽ, പ്രവർത്തനക്ഷമമാക്കിയ കാറ്റഗറികളും അധിക തടഞ്ഞ സൈറ്റുകളും ലഭ്യമല്ല.",
+    "message": "In $MODE$, enabled categories and extra തടഞ്ഞിരിക്കുന്നു sites are unavailable.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -121,10 +121,10 @@
     "message": "തുടരുക"
   },
   "onboarding_access_heading": {
-    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കുക"
+    "message": "സജീവമാക്കുക website blocking"
   },
   "onboarding_access_local_matching": {
-    "message": "നിന്റെ തിരഞ്ഞെടുത്ത കാറ്റഗറികളും സൈറ്റുകളും ചേർത്തുനോക്കാൻ Focus Lock പേജ് വിലാസങ്ങൾ പ്രാദേശികമായി പരിശോധിക്കുന്നു. അതിന്റെ ബ്ലോക്കിംഗ് സ്ക്രീൻ കാണിക്കാനും സെഷൻ അവസാനിക്കുമ്പോൾ ബാധിച്ച പേജുകൾ പുനഃസ്ഥാപിക്കാനും ഇത് വെബ്സൈറ്റ് ആക്സസ് ഉപയോഗിക്കുന്നു."
+    "message": "Focus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your സെഷൻ ends."
   },
   "onboarding_access_capability_intro": {
     "message": "കാറ്റഗറികളിലും കസ്റ്റം ഡൊമെയ്‌നുകളിലും ഏത് വെബ്സൈറ്റും ഉൾപ്പെടാം. അതിനാൽ Chrome ഈ അനുമതി ചോദിക്കും:"
@@ -139,16 +139,16 @@
     "message": "Chrome വെബ്സൈറ്റ് ആക്സസ് അനുവദിച്ചില്ല. നിനക്ക് വീണ്ടും ശ്രമിക്കാം."
   },
   "onboarding_access_registration_error": {
-    "message": "വെബ്സൈറ്റ് ആക്സസ് അനുവദിച്ചു, പക്ഷേ Focus Lock-ന് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാനായില്ല. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
+    "message": "Website access is granted, but Focus Lock could not സജീവമാക്കുക blocking. Retry setup or reload the extension."
   },
   "onboarding_access_enable_button": {
-    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കുക"
+    "message": "സജീവമാക്കുക website blocking"
   },
   "onboarding_access_defer_button": {
     "message": "ഇപ്പോൾ വേണ്ട"
   },
   "onboarding_sync_heading": {
-    "message": "നിന്റെ സെറ്റിംഗ്സ് എവിടെ സൂക്ഷിക്കണമെന്ന് തിരഞ്ഞെടുക്കുക"
+    "message": "Choose where your സെറ്റിംഗുകൾ are stored"
   },
   "onboarding_sync_switch_label": {
     "message": "Chrome ഡിവൈസുകളിലുടനീളം സിങ്ക് ചെയ്യുക"

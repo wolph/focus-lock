@@ -6,7 +6,7 @@
     "message": "Locked - Pokus Lock"
   },
   "overlay_return_label": {
-    "message": "$ACTIBUKAS$: $DESTINATIBUKAS$",
+    "message": "$ACTION$: $DESTINATION$",
     "placeholders": {
       "ACTION": {
         "content": "$1",
@@ -15,40 +15,23 @@
       "DESTINATION": {
         "content": "$2",
         "example": "Annual report"
-      }
-    }
-  },
-  "overlay_return_label_host": {
-    "message": "$ACTIBUKAS$: $DESTINATIBUKAS$ ($HOSTNAME$)",
-    "placeholders": {
-      "ACTION": {
-        "content": "$1",
-        "example": "Back to work"
-      },
-      "DESTINATION": {
-        "content": "$2",
-        "example": "Annual report"
-      },
-      "HOSTNAME": {
-        "content": "$3",
-        "example": "work.example"
       }
     }
   },
   "overlay_target_checking": {
-    "message": "Checking available work mga tab..."
+    "message": "Checksag available trabaho tabs..."
   },
   "overlay_target_pick_tab": {
-    "message": "Pick an open tab sa csatsaue your task."
+    "message": "Pick an buksan tab sa csatsaue your task."
   },
   "overlay_target_session_unavailable": {
-    "message": "Your focus session is not available. Try again, or reload ito page."
+    "message": "Your pokus sesysa is not available. Try agasa, o reload this page."
   },
   "overlay_target_lookup_failed": {
-    "message": "Could not load your work tab. Try again, or reload ito page."
+    "message": "Could not load your trabaho tab. Try agasa, o reload this page."
   },
   "overlay_target_reconnect": {
-    "message": "Reload ito page to reconnect to Focus Lock."
+    "message": "Reload this page sa recsanect sa Pokus Lock."
   },
   "overlay_target_page_changed": {
     "message": "The requestsag page has changed. Reload the page."
@@ -57,13 +40,13 @@
     "message": "Could not reach Pokus Lock. Try agasa."
   },
   "overlay_picker_heading": {
-    "message": "Choose a wok tab"
+    "message": "Choose a trabaho tab"
   },
   "overlay_picker_cancel": {
-    "message": "Kanselahsa"
+    "message": "Kanselahin"
   },
   "overlay_picker_search_label": {
-    "message": "Search work mga tab"
+    "message": "Search trabaho tabs"
   },
   "overlay_picker_search_placeholder": {
     "message": "Search by title o website"
@@ -75,25 +58,25 @@
     "message": "Refresh mga tab"
   },
   "overlay_picker_available_tabs": {
-    "message": "Available work mga tab"
+    "message": "Available trabaho tabs"
   },
   "overlay_picker_finding": {
-    "message": "Finding available mga tab..."
+    "message": "Fsadsag available tabs..."
   },
   "overlay_picker_searching": {
-    "message": "Searching work mga tab..."
+    "message": "Searchsag trabaho tabs..."
   },
   "overlay_picker_saving": {
-    "message": "Savsag wok tab..."
+    "message": "Savsag trabaho tab..."
   },
   "overlay_picker_no_tabs": {
-    "message": "No available work tabs. Open a site hayaaned by ito session, then refresh tabs."
+    "message": "No available work tabs. Buksan a site allowed by this session, then refresh tabs."
   },
   "overlay_picker_no_matches": {
-    "message": "No matching mga tab. Try another search or clear the search."
+    "message": "No matchsag tabs. Try another search o clear the search."
   },
   "overlay_picker_load_failed": {
-    "message": "Could not load work mga tab. Try again."
+    "message": "Could not load trabaho tabs. Try agasa."
   },
   "overlay_picker_count_one": {
     "message": "$MATCHES$ ng $COUNT$ tab",
@@ -109,7 +92,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ of $COUNT$ mga tab",
+    "message": "$MATCHES$ ng $COUNT$ tabs",
     "placeholders": {
       "COUNT": {
         "content": "$1",

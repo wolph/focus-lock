@@ -416,6 +416,24 @@ export function repairPlaceholders(source, text) {
     if (repaired.includes(`$${name}$`)) continue;
     repaired = repaired.replace(new RegExp(`\\$${name}(?!\\$)`, 'g'), `$${name}$`);
   }
+
+  // A translator running a find and replace over the whole file can rewrite the inside of a
+  // placeholder name, turning $ACTION$ into $ACTIBUKAS$ when the word ON was being replaced. The
+  // repair is only attempted when the references left over and the names still unaccounted for
+  // line up one for one, and then they are matched in the order they appear, which is the order
+  // the names were written in.
+  const referenced = [...repaired.matchAll(/\$([A-Za-z0-9_]+)\$/g)].map((match) => match[1]);
+  const unknown = referenced.filter((name) => !declared.includes(name));
+  const absent = declared.filter((name) => !referenced.includes(name));
+  if (unknown.length > 0 && unknown.length === absent.length) {
+    const seen = [];
+    for (const name of unknown) if (!seen.includes(name)) seen.push(name);
+    if (seen.length === absent.length) {
+      seen.forEach((wrong, index) => {
+        repaired = repaired.split(`$${wrong}$`).join(`$${absent[index]}$`);
+      });
+    }
+  }
   return repaired;
 }
 
@@ -458,7 +476,12 @@ export function mergeTranslation(root, locale, flat, write) {
         result.missing += 1;
         continue;
       }
-      let candidate = added === 'fresh' ? translatedEntry(source, text) : previous[key];
+      // A carried value is repaired too: a name a global find and replace rewrote was stored
+      // before the repair existed, and nothing else would ever come back to it.
+      let candidate =
+        added === 'fresh'
+          ? translatedEntry(source, text)
+          : translatedEntry(source, previous[key].message);
       const isEnglish = (value) => isPadding(locale, source.message, value.message);
       const readsAsEnglish = (value) =>
         !NEAR_EN_LOCALES.has(locale) && value.message === source.message;

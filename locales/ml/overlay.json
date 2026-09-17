@@ -18,23 +18,6 @@
       }
     }
   },
-  "overlay_return_label_host": {
-    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
-    "placeholders": {
-      "ACTION": {
-        "content": "$1",
-        "example": "Back to work"
-      },
-      "DESTINATION": {
-        "content": "$2",
-        "example": "Annual report"
-      },
-      "HOSTNAME": {
-        "content": "$3",
-        "example": "work.example"
-      }
-    }
-  },
   "overlay_target_checking": {
     "message": "ലഭ്യമായ വർക്ക് ടാബുകൾ പരിശോധിക്കുന്നു..."
   },
@@ -42,7 +25,7 @@
     "message": "നിന്റെ ജോലി തുടരാൻ ഒരു തുറന്ന ടാബ് തിരഞ്ഞെടുക്കുക."
   },
   "overlay_target_session_unavailable": {
-    "message": "നിന്റെ ഫോക്കസ് സെഷൻ ലഭ്യമല്ല. വീണ്ടും ശ്രമിക്കുക, അല്ലെങ്കിൽ ഈ പേജ് റീലോഡ് ചെയ്യുക."
+    "message": "Your focus സെഷൻ is not available. Try again, or reload this page."
   },
   "overlay_target_lookup_failed": {
     "message": "നിന്റെ വർക്ക് ടാബ് ലോഡ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക, അല്ലെങ്കിൽ ഈ പേജ് റീലോഡ് ചെയ്യുക."
@@ -60,7 +43,7 @@
     "message": "ഒരു വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക"
   },
   "overlay_picker_cancel": {
-    "message": "റദ്ദാക്കുക"
+    "message": "റദ്ദുചെയ്യുക"
   },
   "overlay_picker_search_label": {
     "message": "വർക്ക് ടാബുകൾ തിരയുക"
@@ -87,7 +70,7 @@
     "message": "വർക്ക് ടാബ് സേവ് ചെയ്യുന്നു..."
   },
   "overlay_picker_no_tabs": {
-    "message": "ലഭ്യമായ വർക്ക് ടാബുകളില്ല. ഈ സെഷൻ അനുവദിക്കുന്ന ഒരു സൈറ്റ് തുറന്നിട്ട്, ടാബുകൾ പുതുക്കുക."
+    "message": "No available work tabs. Open a site allowed by this സെഷൻ, then refresh tabs."
   },
   "overlay_picker_no_matches": {
     "message": "പൊരുത്തപ്പെടുന്ന ടാബുകളില്ല. മറ്റൊരു തിരച്ചിൽ നടത്തുക അല്ലെങ്കിൽ തിരച്ചിൽ മായ്ക്കുക."

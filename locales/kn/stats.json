@@ -1,1 +1,207 @@
-{}
+{
+  "stats_document_title": {
+    "message": "ಫೋಕಸ್ Lock stats"
+  },
+  "stats_page_title": {
+    "message": "Your ಫೋಕಸ್ record"
+  },
+  "stats_loading": {
+    "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ your stats."
+  },
+  "stats_partial_error_both": {
+    "message": "Hourly attempts and site access credit ಸೆಟ್ಟಿಂಗ್‌ಗಳು are unavailable."
+  },
+  "stats_partial_error_economy": {
+    "message": "Site access credit ಸೆಟ್ಟಿಂಗ್‌ಗಳು are unavailable."
+  },
+  "stats_scope_local": {
+    "message": "Totals from this machine. ಫೋಕಸ್ Lock statistics are not synced."
+  },
+  "stats_scope_checking": {
+    "message": "ಪರೀಕ್ಷೆ whether these totals are synced."
+  },
+  "stats_scope_unavailable": {
+    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent ಸೆಷ್ಟs are from this machine."
+  },
+  "stats_scope_retry": {
+    "message": "ಮರುಪ್ರಯತ್ನ scope check"
+  },
+  "stats_empty": {
+    "message": "Stats appear after your first ಸೆಷ್ಟ."
+  },
+  "stats_tile_focus_today": {
+    "message": "ಫೋಕಸ್ today"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "ಫೋಕಸ್ in the last 7 days"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Attempts ನಿರ್ಬಂಧed today"
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ earned",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Streak"
+  },
+  "stats_streak_empty": {
+    "message": "Your streak starts with your first ಫೋಕಸ್ day."
+  },
+  "stats_streak_unit_one": {
+    "message": "day"
+  },
+  "stats_streak_unit_other": {
+    "message": "days"
+  },
+  "stats_chart_focus_heading": {
+    "message": "ಫೋಕಸ್, last 14 days"
+  },
+  "stats_chart_focus_empty": {
+    "message": "ಫೋಕಸ್ minutes appear after your first ಸೆಷ್ಟ."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "ನಿರ್ಬಂಧed attempts, last 14 days"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "ನಿರ್ಬಂಧed attempts show up here once a ಸೆಷ್ಟ catches one."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Top ನಿರ್ಬಂಧed sites, last 30 days"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Nothing ನಿರ್ಬಂಧed yet. That is a fine start."
+  },
+  "stats_chart_other_site": {
+    "message": "other"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ ನಿರ್ಬಂಧed",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ ನಿರ್ಬಂಧed",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Bar chart"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Horizontal bar chart"
+  },
+  "stats_chart_empty_default": {
+    "message": "No data yet."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "View as table"
+  },
+  "stats_chart_table_category": {
+    "message": "Category"
+  },
+  "stats_chart_table_value": {
+    "message": "Value"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-hour ನಿರ್ಬಂಧed-attempt heat strip"
+  },
+  "stats_sessions_heading": {
+    "message": "Recent ಸೆಷ್ಟs on this machine"
+  },
+  "stats_sessions_empty": {
+    "message": "Your first ಸೆಷ್ಟ will appear here."
+  },
+  "stats_sessions_col_date": {
+    "message": "Date"
+  },
+  "stats_sessions_col_start": {
+    "message": "ಪ್ರಾರಂಭಿಸಿ"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planned"
+  },
+  "stats_sessions_col_focused": {
+    "message": "ಫೋಕಸ್ed"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "All sites"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "One site"
+  },
+  "stats_sessions_col_intention": {
+    "message": "ಉದ್ದೇಶ"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Outcome"
+  },
+  "stats_sessions_col_source": {
+    "message": "Source"
+  },
+  "stats_session_no_intention": {
+    "message": "No intention"
+  },
+  "stats_session_article_label": {
+    "message": "ಸೆಷ್ಟ: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "manual"
+  },
+  "stats_session_source_schedule": {
+    "message": "schedule"
+  },
+  "stats_session_source_scheduled": {
+    "message": "scheduled"
+  },
+  "stats_outcome_completed": {
+    "message": "Completed"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Ended early"
+  },
+  "stats_outcome_running": {
+    "message": "Running"
+  }
+}

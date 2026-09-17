@@ -1,9 +1,9 @@
 {
   "onboarding_page_title": {
-    "message": "Set up Mtazamo Lock"
+    "message": "Set up Fokasi Lock"
   },
   "onboarding_eyebrow": {
-    "message": "Mtazamo Lock setup"
+    "message": "Fokasi Lock setup"
   },
   "onboarding_progress": {
     "message": "Step $STEP$ wa $TOTAL$",
@@ -19,37 +19,37 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Your saved setup progress could not be restaued. Kuanzakatikag agakatika na your current defaults."
+    "message": "Your saved setup progress could not be restored. Anzaing again with your current defaults."
   },
   "onboarding_complete_heading": {
-    "message": "Setijuu kamili"
+    "message": "Kuanzisha complete"
   },
   "onboarding_complete_body": {
-    "message": "Your choices are saved. Fungua Mtazamo Lock from the Chrome kwaolbar kwa start a sessikwenye."
+    "message": "Your choices are saved. Fungua Fokasi Lock from the Chrome toolbar to start a session."
   },
   "onboarding_error_heading": {
-    "message": "Setijuu unavailable"
+    "message": "Kuanzisha unavailable"
   },
   "onboarding_error_body": {
     "message": "Could not load setup. Try agakatika."
   },
   "onboarding_retry_button": {
-    "message": "Jaribu tena"
+    "message": "Jaribu Tena"
   },
   "onboarding_save_error": {
-    "message": "Could not save setup progress. Try agakatika."
+    "message": "Could not kuhifadhi setup progress. Try agakatika."
   },
   "onboarding_enable_error": {
-    "message": "Could not enable website blockkatikag. Try agakatika."
+    "message": "Could not kuweka webkwavuti kuzuiakatikag. Try agakatika."
   },
   "onboarding_finish_error": {
-    "message": "Could not complete setup. Your choices are still saved. Try agakatika."
+    "message": "Could not complete setup. Your choices are still kuhifadhid. Try agakatika."
   },
   "onboarding_lists_heading": {
-    "message": "Choose your startkatikag block list"
+    "message": "Choose your kuanzakatikag kuzuia list"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "In $MODE$, enabled categauies na extra blocked sites are unavailable.",
+    "message": "In $MODE$, kuwekad categauies na extra kuzuiaed kwavutis are unavailable.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "In $MODE$, every site is unavailable except your ruhusu list.",
+    "message": "In $MODE$, every kwavuti is unavailable except your allow list.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,10 +67,10 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "These choices become defaults kwa future sessikwenyes. You can edit them later."
+    "message": "These choices become defaults kwa future kikaos. You can hariri them later."
   },
   "onboarding_lists_legend": {
-    "message": "Recommended website categauies"
+    "message": "Recommended webkwavuti categauies"
   },
   "onboarding_site_count_one": {
     "message": "$COUNT$ kwavuti",
@@ -91,7 +91,7 @@
     }
   },
   "onboarding_show_category_sites": {
-    "message": "Ongesha $CATEGORY$ sites",
+    "message": "Onyesha $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -118,37 +118,37 @@
     }
   },
   "onboarding_continue_button": {
-    "message": "Ckwenyetkatikaue"
+    "message": "Endelea"
   },
   "onboarding_access_heading": {
-    "message": "Kuweka website blockkatikag"
+    "message": "Wezesha website blocking"
   },
   "onboarding_access_local_matching": {
-    "message": "Focus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to ongesha its blocking screen and restore affected pages wakati your session ends."
+    "message": "Fokasi Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your session ends."
   },
   "onboarding_access_capability_intro": {
-    "message": "Categories and custom domains can include any website. Chrome will therefore request hii capability:"
+    "message": "Categauies na cuskwam domakatikas can katikaclude any webkwavuti. Chrome will therekwae request this capability:"
   },
   "onboarding_access_capability": {
-    "message": "Read na change all your data kwenye all websites"
+    "message": "Read na change all your data kwenye all webkwavutis"
   },
   "onboarding_access_scope_note": {
-    "message": "Focus Lock uses hiyo access only while applying your blocking rules."
+    "message": "Fokasi Lock uses that access only while applying your blocking rules."
   },
   "onboarding_access_denied": {
     "message": "Chrome did not grant webkwavuti kufikia. You can retry."
   },
   "onboarding_access_registration_error": {
-    "message": "Website access is granted, but Mtazamo Lock could not enable blockkatikag. Retry setup au reload the extensikwenye."
+    "message": "Tovuti access is granted, but Fokasi Lock could not enable blocking. Jaribu Tena setup or reload the extension."
   },
   "onboarding_access_enable_button": {
-    "message": "Kuweka website blockkatikag"
+    "message": "Wezesha website blocking"
   },
   "onboarding_access_defer_button": {
     "message": "Hapanat hapanaw"
   },
   "onboarding_sync_heading": {
-    "message": "Choose where your settkatikags are staued"
+    "message": "Choose where your mipangilio are staued"
   },
   "onboarding_sync_switch_label": {
     "message": "Panga across Chrome devices"
@@ -157,7 +157,7 @@
     "message": "The approved data below will use Chrome Sync after you fkatikaish setup."
   },
   "onboarding_sync_disabled_note": {
-    "message": "Zote Focus Lock data stays in this Chrome profile."
+    "message": "All Fokasi Lock data stays in this Chrome profile."
   },
   "onboarding_sync_synced_title": {
     "message": "Pangaed"
@@ -166,10 +166,10 @@
     "message": "Local kwenyely"
   },
   "onboarding_sync_developer_note": {
-    "message": "Nothkatikag is sent kwa the Mtazamo Lock developer."
+    "message": "Nothing is sent to the Fokasi Lock developer."
   },
   "onboarding_sync_finish_enabled": {
-    "message": "Fkatikaish setup na sync enabled"
+    "message": "Fkatikaish setup na sync kuwekad"
   },
   "onboarding_sync_finish_disabled": {
     "message": "Fkatikaish setup naout sync"

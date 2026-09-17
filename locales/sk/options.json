@@ -6,70 +6,70 @@
     "message": "Nastavenia Focus Lock"
   },
   "options_loading_settings": {
-    "message": "Načítavajú sa nastavenia"
+    "message": "Načítavam nastavenia"
   },
   "options_privacy_loading": {
-    "message": "Načítavajú sa nastavenia ochrany údajov"
+    "message": "Načítavam nastavenia súkromia"
   },
   "options_save_failed": {
-    "message": "Nepodarilo sa uložiť. Skúste znova."
+    "message": "Uloženie sa nepodarilo. Skús to znova."
   },
   "options_blocking_heading": {
     "message": "Blokovanie"
   },
   "options_blocking_help": {
-    "message": "Vlastné pravidlá blokujú počas relácií s čiernou listinou. Biela listina je to, čo zostáva dostupné počas relácií s bielou listinou. Zbalené kategórie blokujú časté únikové prvky."
+    "message": "Vlastné pravidlá blokujú počas relácií so zoznamom blokovaných. Zoznam povolených je to, čo zostáva dostupné počas relácií so zoznamom povolených. Dodávané kategórie blokujú bežných žrútov času."
   },
   "options_custom_blacklist_title": {
-    "message": "Vlastná čierna listina"
+    "message": "Vlastný zoznam blokovaných"
   },
   "options_whitelist_title": {
-    "message": "Biela listina"
+    "message": "Zoznam povolených"
   },
   "options_bundled_categories_heading": {
-    "message": "Zbalené kategórie"
+    "message": "Dodávané kategórie"
   },
   "options_bundled_categories_help": {
-    "message": "Zbalené zoznamy časých únikových prvkov. Zapnite celú kategóriu, potom ju otvorte, aby ste udržali jednotlivé weby dostupné."
+    "message": "Dodávané zoznamy bežných žrútov času. Zapni celú kategóriu a potom ju otvor, ak chceš nechať jednotlivé weby dostupné."
   },
   "options_schedule_heading": {
     "message": "Plán"
   },
   "options_schedule_help": {
-    "message": "Relácie sa spúšťajú automaticky v rámci týchto časových okien. Prísnosť nastavená tu platí pre celé okno."
+    "message": "Relácie sa v týchto oknách spúšťajú samy. Prísnosť nastavená tu platí pre celé okno."
   },
   "options_behavior_heading": {
     "message": "Správanie relácie"
   },
   "options_budget_heading": {
-    "message": "Kredit prístupu na web"
+    "message": "Kredit na prístup"
   },
   "options_notifications_heading": {
     "message": "Oznámenia"
   },
   "options_privacy_heading": {
-    "message": "Ochrana údajov"
+    "message": "Súkromie a údaje"
   },
   "options_load_error_retry": {
-    "message": "Skúste znova"
+    "message": "Skúsiť znova"
   },
   "options_load_error_delete_all": {
-    "message": "Odstrániť všetko a začať nanovo"
+    "message": "Zmazať všetko a začať odznova"
   },
   "options_load_error_keep_data": {
     "message": "Ponechať moje údaje"
   },
   "options_delete_all_data": {
-    "message": "Odstrániť všetky údaje Focus Lock"
+    "message": "Zmazať všetky údaje Focus Lock"
   },
   "options_dirty_saving": {
-    "message": "Ukladajú sa zmeny"
+    "message": "Ukladám zmeny"
   },
   "options_dirty_unsaved": {
     "message": "Neuložené zmeny"
   },
   "options_dirty_clean": {
-    "message": "Nie sú žiadne neuložené zmeny"
+    "message": "Žiadne neuložené zmeny"
   },
   "options_dirty_discard": {
     "message": "Zahodiť zmeny"
@@ -84,7 +84,7 @@
     "message": "doména"
   },
   "options_rule_kind_regex_badge": {
-    "message": "regex"
+    "message": "regulárny výraz"
   },
   "options_rule_remove": {
     "message": "Odstrániť"
@@ -102,19 +102,19 @@
     "message": "Zatiaľ žiadne pravidlá."
   },
   "options_rule_kind_aria": {
-    "message": "Typ pravidla"
+    "message": "Druh pravidla"
   },
   "options_rule_kind_host_option": {
     "message": "doména alebo subdoména"
   },
   "options_rule_kind_regex_option": {
-    "message": "regex (úplná URL)"
+    "message": "regulárny výraz (celá URL)"
   },
   "options_rule_pattern_aria": {
     "message": "Vzor"
   },
   "options_rule_pattern_placeholder_host": {
-    "message": "facebook.com"
+    "message": "aktuality.sk"
   },
   "options_rule_pattern_placeholder_regex": {
     "message": "/youtube\\.com\\/shorts/"
@@ -123,7 +123,7 @@
     "message": "Pridať pravidlo"
   },
   "options_rules_help": {
-    "message": "facebook.com pokrýva túto doménu a každú subdoménu. news.ycombinator.com pokrýva túto subdoménu a všetko pod ňou. /youtube\\.com\\/shorts/ sa zhoduje s úplnou URL ako regulárny výraz."
+    "message": "facebook.com pokrýva túto doménu aj každú subdoménu. news.ycombinator.com pokrýva túto subdoménu a všetko pod ňou. /youtube\\.com\\/shorts/ zodpovedá celej URL ako regulárny výraz."
   },
   "options_number_error_positive": {
     "message": "$LABEL$ musí byť kladné celé číslo.",
@@ -144,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "$LABEL$ musí byť nula alebo väčšia.",
+    "message": "$LABEL$ musí byť nula alebo viac.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -171,46 +171,46 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "Predvolené nastavenia relácie"
+    "message": "Predvolené hodnoty relácie"
   },
   "options_session_defaults_help": {
-    "message": "Režim a prísnosť sú pevne nastavené pri spustení relácie. Toto sú hodnoty, s ktorými sa formulár spustí."
+    "message": "Režim a prísnosť sú pevne dané vo chvíli, keď relácia začne. Toto sú hodnoty, s ktorými sa otvorí štartovací formulár."
   },
   "options_preset_short_label": {
-    "message": "Krátkej relácie (minúty)"
+    "message": "Krátka relácia (minúty)"
   },
   "options_preset_default_label": {
     "message": "Predvolená relácia (minúty)"
   },
   "options_preset_deep_label": {
-    "message": "Hlboká relácia (minúty)"
+    "message": "Dlhá relácia (minúty)"
   },
   "options_mode_blacklist_label": {
-    "message": "Čierna listina: blokovať uvedené weby"
+    "message": "Zoznam blokovaných: blokovať uvedené weby"
   },
   "options_mode_whitelist_label": {
-    "message": "Biela listina: umožniť iba uvedené weby"
+    "message": "Zoznam povolených: povoliť len uvedené weby"
   },
   "options_strictness_flexible_label": {
-    "message": "Flexibilné: ukončiť reláciu kedykoľvek si zvolíte"
+    "message": "Flexibilné: ukonči reláciu, kedykoľvek budeš chcieť"
   },
   "options_strictness_friction_label": {
-    "message": "Trenie: zastavenie vyžaduje nakonfigurovanú bránu prehodnotenia"
+    "message": "Trenie: predčasné ukončenie ide cez nastavený čas na rozmyslenie"
   },
   "options_strictness_hard_label": {
-    "message": "Tvrdé: bez skoršieho konca, len dočasný prístup na web"
+    "message": "Tvrdý zámok: žiadne predčasné ukončenie, len dočasný prístup k webu"
   },
   "options_cycle_heading": {
-    "message": "Cyklus fokusu a prestávky"
+    "message": "Cyklus sústredenia a prestávok"
   },
   "options_cycle_help": {
-    "message": "Predvolené nastavenie: 25 minút fokusu, 5 minút prestávky, 15 minút dlhej prestávky každý 4. cyklus. Prestávky v pláne sú lepšie pre náladu a fokus v študijných vzorkách. Presné minúty sú konvencia, nie veda."
+    "message": "Predvolené hodnoty: 25 minút sústredenia, 5 minút prestávka, 15 minút dlhá prestávka každý 4. cyklus. Prestávky podľa plánu si v štúdiách vedú lepšie než prestávky podľa nálady, čo sa týka nálady aj sústredenia. Presné minúty sú konvencia, nie veda."
   },
   "options_cycle_default_label": {
-    "message": "Cyklizovať fokus a prestávky predvolene"
+    "message": "V predvolenom stave striedať sústredenie a prestávky"
   },
   "options_focus_minutes_label": {
-    "message": "Minúty fokusu"
+    "message": "Minúty sústredenia"
   },
   "options_short_break_minutes_label": {
     "message": "Minúty krátkej prestávky"
@@ -222,10 +222,10 @@
     "message": "Dlhá prestávka každý N. cyklus"
   },
   "options_gate_heading": {
-    "message": "Brána prehodnotenia"
+    "message": "Čas na rozmyslenie"
   },
   "options_gate_help": {
-    "message": "10-sekundová čakacia doba s explicitným tlačidlom spätne k práci značne znižuje impulzívne návštevy (polná štúdia, PNAS 2023). Dlhšia čakacia doba a napísaná veta zhruba zdvojnásobia efekt."
+    "message": "Desať sekúnd čakania spolu s výslovným tlačidlom späť do práce merateľne znižuje impulzívne návštevy (terénna štúdia, PNAS 2023). Dlhšie čakanie a napísaná veta účinok zhruba zdvojnásobia."
   },
   "options_gate_wait_one": {
     "message": "Čakať $COUNT$ sekundu",
@@ -249,43 +249,43 @@
     "message": "Vlastné"
   },
   "options_custom_delay_label": {
-    "message": "Vlastné oneskorenie (sekundy)"
+    "message": "Vlastné čakanie (sekundy)"
   },
   "options_custom_delay_error": {
-    "message": "Vlastné oneskorenie musí byť kladné celé číslo sekúnd."
+    "message": "Vlastné čakanie musí byť kladný celý počet sekúnd."
   },
   "options_gate_typed_phrase_label": {
-    "message": "Tiež vyžadovať napísanú vetu"
+    "message": "Vyžadovať navyše napísanie vety"
   },
   "options_gate_force_end_label": {
-    "message": "Povoliť tlačidlo \"Ignorovať časový limit a skončiť aj tak\""
+    "message": "Zapnúť tlačidlo „Ignorovať čakanie a aj tak ukončiť“"
   },
   "options_credit_help": {
-    "message": "Kredit prístupu na web sa hromadí počas fokusu. Prístup na všetky weby aj odomknutie jednotlivého webu čerpajú z rovnakého zostatku. Môžete si urobiť prestávku kedykoľvek bez traty kreditu."
+    "message": "Kredit na prístup pribúda, kým sa sústredíš. Prístup ku všetkým webom aj odomknutie jedného webu sa platia z rovnakého zostatku. Kedykoľvek môžeš odísť od počítača bez toho, aby si minul kredit."
   },
   "options_earn_rate_label": {
-    "message": "Minúty prístupu na web za 30 minút fokusu"
+    "message": "Minúty prístupu k webom za 30 minút sústredenia"
   },
   "options_credit_cap_label": {
-    "message": "Limit kreditu prístupu na web (minúty)"
+    "message": "Limit kreditu na prístup (minúty)"
   },
   "options_pause_length_label": {
-    "message": "Dĺžka prístupu na všetky weby (minúty)"
+    "message": "Dĺžka prístupu ku všetkým webom (minúty)"
   },
   "options_unlock_length_label": {
-    "message": "Dĺžka odomknutia webu (minúty)"
+    "message": "Dĺžka odomknutia jedného webu (minúty)"
   },
   "options_streak_heading": {
-    "message": "Séria a uchovanie"
+    "message": "Séria a uchovávanie"
   },
   "options_streak_help": {
-    "message": "Séria počítá dni, ktoré dosiahnu cieľ. Jedna predvolená relácia udržiava sériu živú a token zmrazenia opraví zmeškané dni."
+    "message": "Séria počíta dni, ktoré dosiahnu cieľ. Jedna predvolená relácia udrží reťaz nažive a ochranný deň opraví zmeškaný deň."
   },
   "options_streak_goal_label": {
-    "message": "Denný cieľ série (minúty fokusu)"
+    "message": "Denný cieľ série (minúty sústredenia)"
   },
   "options_freeze_interval_label": {
-    "message": "Interval zmrazovacieho tokenu (dni)"
+    "message": "Interval ochranných dní (dni)"
   },
   "options_retention_label": {
     "message": "Uchovávať denné štatistiky (dni)"
@@ -324,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ ponechaný dostupný.",
+    "message": "$HOST$ zostáva dostupný.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -342,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "Všetky weby kategórie $CATEGORY$ ponechané dostupné.",
+    "message": "Všetky weby kategórie $CATEGORY$ zostávajú dostupné.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -351,10 +351,10 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "Hromadné akcie kategórie"
+    "message": "Hromadné akcie pre kategórie"
   },
   "options_selected_count": {
-    "message": "Vybrané $COUNT$",
+    "message": "Vybraných $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Nevybrané $COUNT$",
+    "message": "Odznačených $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -375,13 +375,13 @@
     "message": "Vybrať všetko"
   },
   "options_deselect_all": {
-    "message": "Zrušiť výber všetkého"
+    "message": "Odznačiť všetko"
   },
   "options_select_all_categories_aria": {
     "message": "Vybrať všetky kategórie"
   },
   "options_deselect_all_categories_aria": {
-    "message": "Zrušiť výber všetkých kategórií"
+    "message": "Odznačiť všetky kategórie"
   },
   "options_show_category_sites": {
     "message": "Zobraziť weby kategórie $CATEGORY$",
@@ -402,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "Zahrnutý $COUNT$ web",
+    "message": "$COUNT$ zahrnutý web",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -411,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "Zahrnutých $COUNT$ webov",
+    "message": "$COUNT$ zahrnutých webov",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -441,10 +441,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "Zrušte zaškrtnutie webu, aby bol dostupný, zatiaľ čo zvyšok kategórie je blokovaný."
+    "message": "Odškrtni web, aby zostal dostupný, kým je zvyšok kategórie blokovaný."
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "Hromadné akcie webov kategórie $CATEGORY$",
+    "message": "Hromadné akcie pre weby kategórie $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -462,7 +462,7 @@
     }
   },
   "options_deselect_all_category_sites_aria": {
-    "message": "Zrušiť výber všetkých webov kategórie $CATEGORY$",
+    "message": "Odznačiť všetky weby kategórie $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -495,16 +495,16 @@
     "message": "Št"
   },
   "options_day_fri": {
-    "message": "Pia"
+    "message": "Pi"
   },
   "options_day_sat": {
     "message": "So"
   },
   "options_schedule_cycles_label": {
-    "message": "Cyklizovať fokus a prestávky"
+    "message": "Striedať sústredenie a prestávky"
   },
   "options_schedule_overlap_error": {
-    "message": "Prekrýva sa ďalšou zapnutou položkou v $DAY$.",
+    "message": "Prekrýva sa s inou zapnutou položkou v $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -525,13 +525,13 @@
     "message": "Koniec"
   },
   "options_schedule_duration_legend": {
-    "message": "Trvanie"
+    "message": "Dĺžka"
   },
   "options_schedule_intention_label": {
-    "message": "Zámer"
+    "message": "Predsavzatie"
   },
   "options_schedule_intention_placeholder": {
-    "message": "na čo je tento čas určený"
+    "message": "na čo je tento čas"
   },
   "options_schedule_save_entry": {
     "message": "Uložiť položku"
@@ -540,10 +540,10 @@
     "message": "Zrušiť"
   },
   "options_schedule_empty": {
-    "message": "Zatiaľ žádne plánované relácie."
+    "message": "Zatiaľ žiadne naplánované relácie."
   },
   "options_schedule_selected_days_aria": {
-    "message": "Vybraté dni"
+    "message": "Vybrané dni"
   },
   "options_schedule_time_range": {
     "message": "$START$ až $END$",
@@ -559,10 +559,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "čierna listina"
+    "message": "zoznam blokovaných"
   },
   "options_schedule_mode_whitelist": {
-    "message": "biela listina"
+    "message": "zoznam povolených"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexibilné"
@@ -571,16 +571,16 @@
     "message": "trenie"
   },
   "options_schedule_strictness_hard": {
-    "message": "tvrdé"
+    "message": "tvrdý zámok"
   },
   "options_schedule_enabled_label": {
-    "message": "Povolené"
+    "message": "Zapnuté"
   },
   "options_schedule_edit": {
     "message": "Upraviť"
   },
   "options_schedule_delete": {
-    "message": "Odstrániť"
+    "message": "Zmazať"
   },
   "options_schedule_add": {
     "message": "Pridať položku plánu"
@@ -589,7 +589,7 @@
     "message": "Zvuky"
   },
   "options_master_volume": {
-    "message": "Hlavný hlasitosť"
+    "message": "Hlavná hlasitosť"
   },
   "options_sound_session_complete": {
     "message": "Relácia dokončená"
@@ -601,10 +601,10 @@
     "message": "Koniec prestávky"
   },
   "options_sound_schedule_start": {
-    "message": "Automatické spustenie plánu"
+    "message": "Automatický štart z plánu"
   },
   "options_sound_preview_aria": {
-    "message": "Náhľad $SOUND$",
+    "message": "Prehrať zvuk $SOUND$",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -616,234 +616,288 @@
     "message": "Prehrať"
   },
   "options_sound_preview_error": {
-    "message": "Nepodarilo sa predviesť zvuk. Skúste znova."
+    "message": "Zvuk sa nepodarilo prehrať. Skús to znova."
   },
   "options_sounds_notifications_heading": {
     "message": "Oznámenia"
   },
   "options_session_complete_notification": {
-    "message": "Zobraziť systémové oznámenie po dokončení relácie"
+    "message": "Zobraziť systémové oznámenie, keď relácia skončí"
   },
   "options_badge_heading": {
-    "message": "Odznak"
+    "message": "Odznak ikony"
   },
   "options_badge_countdown": {
-    "message": "Zobraziť zvyšný čas na ikone panela nástrojov"
+    "message": "Zobrazovať zostávajúci čas na ikone na paneli"
   },
   "options_privacy_website_access_heading": {
-    "message": "Prístup na web"
+    "message": "Prístup k webom"
   },
   "options_privacy_website_off_title": {
-    "message": "Prístup na web je vypnutý"
+    "message": "Prístup k webom je vypnutý"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock nemôže blokovať weby, kým neudielite prístup."
+    "message": "Focus Lock nemôže blokovať weby, kým prístup nepovolíš."
   },
   "options_privacy_website_enable_action": {
-    "message": "Povoliť blokovanie webov"
+    "message": "Zapnúť blokovanie webov"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "Prístup na web je udelený, ale blokovanie nie je aktívne"
+    "message": "Prístup k webom je povolený, ale blokovanie nie je aktívne"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome udelil prístup, ale Focus Lock nemôže zaregistrovať svoj skript blokovania."
+    "message": "Chrome prístup povolil, ale Focus Lock nemohol zaregistrovať svoj blokovací skript."
   },
   "options_privacy_website_retry_action": {
-    "message": "Skúsiť znova blokovanie webov"
+    "message": "Skúsiť blokovanie webov znova"
   },
   "options_privacy_website_on_title": {
-    "message": "Blokovanie webov je povolené"
+    "message": "Blokovanie webov je zapnuté"
   },
   "options_privacy_website_on_detail": {
-    "message": "Focus Lock môže uplatňovať vaše aktívne pravidlá blokovania na bežných stránkach webov."
+    "message": "Focus Lock môže uplatňovať tvoje aktívne blokovacie pravidlá na bežných webových stránkach."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "Odstrániť lokálnu históriu?"
+    "message": "Zmazať lokálnu históriu?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "Potvrdiť odstránenie lokálnej histórie"
+    "message": "Potvrdiť zmazanie lokálnej histórie"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Lokálna história odstránená."
+    "message": "Lokálna história zmazaná."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "Toto natrvalo odstraňuje úplné adresy URL, záväzky fokusu a podrobné udalosti relácií z tohto zariadenia. Nemazáva bežiacu reláciu, ktorá udržiava svoj záväzok a adresu každej karty, ktorú blokuje. Ukončenie relácie zmaže záväzok a spustí čistenie, ktoré zmaže všetky otvorené karty webov a čistenie odstráni všetky uložené adresy po dokončení."
+    "message": "Týmto natrvalo zmažeš z tohto zariadenia celé URL, predsavzatia sústredenia a podrobné udalosti relácií. Bežiacu reláciu to nevymaže, tá si ponechá svoje predsavzatie aj adresu každej karty, ktorú blokuje. Ukončením relácie sa predsavzatie vymaže a spustí sa upratanie, ktoré uvoľní každú otvorenú kartu s webom; toto upratanie po dokončení odstráni každú uloženú adresu."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "Toto natrvalo odstraňuje úplné adresy URL, záväzky fokusu a podrobné udalosti relácií z tohto zariadenia, plus lokálne agregované štatistiky. Nemazáva bežiacu reláciu, ktorá udržiava svoj záväzok a adresu každej karty, ktorú blokuje. Ukončenie relácie zmaže záväzok a spustí čistenie, ktoré zmaže všetky otvorené karty webov a čistenie odstráni všetky uložené adresy po dokončení."
+    "message": "Týmto natrvalo zmažeš z tohto zariadenia celé URL, predsavzatia sústredenia a podrobné udalosti relácií a k tomu súhrnné štatistiky, ktoré sú len lokálne. Bežiacu reláciu to nevymaže, tá si ponechá svoje predsavzatie aj adresu každej karty, ktorú blokuje. Ukončením relácie sa predsavzatie vymaže a spustí sa upratanie, ktoré uvoľní každú otvorenú kartu s webom; toto upratanie po dokončení odstráni každú uloženú adresu."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Odstrániť vzdialené údaje Sync?"
+    "message": "Zmazať synchronizované údaje?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Potvrdiť odstránenie vzdialených údajov Sync"
+    "message": "Potvrdiť zmazanie synchronizovaných údajov"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Vzdialené údaje Chrome Sync odstránené."
+    "message": "Synchronizované údaje zmazané."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "Toto natrvalo odstraňuje vzdialené nastavenia, zoznamy blokácie a povolenia, kredit prístupu na web, série a agregáty blokovaných pokusov na úrovni domény z Chrome Sync. Lokálne nastavenia a štatistiky zostávajú na tomto zariadení."
+    "message": "Týmto natrvalo zmažeš zo synchronizácie Chromu nastavenia, zoznamy blokovaných a povolených, kredit na prístup, série a súhrny blokovaných pokusov po doménach. Lokálne nastavenia a štatistiky zostanú na tomto zariadení."
   },
   "options_privacy_confirm_all_title": {
-    "message": "Odstrániť všetky údaje Focus Lock?"
+    "message": "Zmazať všetky údaje Focus Lock?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "Potvrdiť odstránenie všetkých údajov Focus Lock"
+    "message": "Potvrdiť zmazanie všetkých údajov Focus Lock"
   },
   "options_privacy_all_deleted": {
-    "message": "Všetky údaje Focus Lock boli odstránené."
+    "message": "Všetky údaje Focus Lock zmazané."
   },
   "options_privacy_all_body_intro": {
-    "message": "Toto natrvalo odstraňuje všetky údaje Focus Lock na tomto zariadení a všetky kópie Focus Lock ponechané v Chrome Sync:"
+    "message": "Týmto natrvalo zmažeš každý kúsok údajov Focus Lock na tomto zariadení aj každú kópiu Focus Lock v synchronizácii Chromu:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Odstránenie všetkého je dostupné iba keď nebeží žiadna relácia. Focus Lock sa potom vráti do nastavenia."
+    "message": "Zmazať všetko sa dá len vtedy, keď nebeží žiadna relácia. Focus Lock sa potom vráti k nastaveniu."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Lokálnu históriu sa nepodarilo odstrániť. Skúste znova."
+    "message": "Lokálnu históriu sa nepodarilo zmazať. Skús to znova."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Vzdialené údaje Chrome Sync sa nepodarilo odstrániť. Skúste znova."
+    "message": "Synchronizované údaje sa nepodarilo zmazať. Skús to znova."
   },
   "options_privacy_error_all_clear": {
-    "message": "Všetky údaje Focus Lock sa nepodarilo odstrániť. Skúste znova."
+    "message": "Všetky údaje Focus Lock sa nepodarilo zmazať. Skús to znova."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync nemôže uložiť vaše najnovšie zmeny. Váš lokálny ulov je bezpečný."
+    "message": "Synchronizácia Chromu nemohla uložiť tvoje posledné zmeny. Lokálne uloženie je v poriadku."
   },
   "options_privacy_error_request": {
-    "message": "Požiadavka sa nedala vykonať. Skúste znova."
+    "message": "Požiadavku sa nepodarilo dokončiť. Skús to znova."
   },
   "options_privacy_website_access_updated": {
-    "message": "Prístup na web bol aktualizovaný."
+    "message": "Prístup k webom aktualizovaný."
   },
   "options_privacy_website_access_denied": {
-    "message": "Prístup na web nebol udelený."
+    "message": "Prístup k webom nebol povolený."
   },
   "options_privacy_error_website_access": {
-    "message": "Prístup na web sa nepodarilo aktualizovať. Skúste znova."
+    "message": "Prístup k webom sa nepodarilo aktualizovať. Skús to znova."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Blokovanie webov povolené."
+    "message": "Blokovanie webov zapnuté."
   },
   "options_privacy_error_export": {
-    "message": "Nepodarilo sa exportovať denník udalostí."
+    "message": "Protokol udalostí sa nepodarilo exportovať."
   },
   "options_privacy_error_export_retry": {
-    "message": "Nepodarilo sa exportovať denník udalostí. Skúste znova."
+    "message": "Protokol udalostí sa nepodarilo exportovať. Skús to znova."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Nepodarilo sa otvoriť nastavenia oprávnení Chrome. Skúste znova."
+    "message": "Nastavenia oprávnení Chromu sa nepodarilo otvoriť. Skús to znova."
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "Nastavenia oprávnení Chrome otvorené."
+    "message": "Nastavenia oprávnení Chromu otvorené."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Otvoriť nastavenia oprávnení Chrome"
+    "message": "Otvoriť nastavenia oprávnení Chromu"
   },
   "options_privacy_sync_heading": {
-    "message": "Chrome Sync"
+    "message": "Synchronizácia Chromu"
   },
   "options_privacy_sync_switch_label": {
-    "message": "Synchronizovať údaje Focus Lock medzi zariadeniami Chrome"
+    "message": "Synchronizovať údaje Focus Lock medzi zariadeniami s Chromom"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync povolený."
+    "message": "Synchronizácia Chromu zapnutá."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync vypnutý."
+    "message": "Synchronizácia Chromu vypnutá."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sync stále ukladá vaše najnovšie zmeny."
+    "message": "Synchronizácia Chromu ešte ukladá tvoje posledné zmeny."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync je zapnutý."
+    "message": "Synchronizácia Chromu je zapnutá."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync je vypnutý."
+    "message": "Synchronizácia Chromu je vypnutá."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Zmeny Chrome Sync uložené."
+    "message": "Zmeny v synchronizácii Chromu uložené."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Skúsiť znova zapnutie Chrome Sync"
+    "message": "Skúsiť znova zapnúť synchronizáciu Chromu"
   },
   "options_privacy_retry_sync": {
-    "message": "Skúsiť znova Chrome Sync"
+    "message": "Skúsiť synchronizáciu Chromu znova"
   },
   "options_privacy_scope_synced": {
     "message": "Synchronizované"
   },
   "options_privacy_scope_local_only": {
-    "message": "Iba lokálne"
+    "message": "Len lokálne"
   },
   "options_privacy_developer_note": {
-    "message": "Nič sa nešíri vývojárom Focus Lock."
+    "message": "Vývojárovi Focus Lock sa neposiela nič."
   },
   "options_privacy_local_log_heading": {
-    "message": "Lokálny denník udalostí"
+    "message": "Lokálny protokol udalostí"
   },
   "options_privacy_local_log_detail": {
-    "message": "Exportujte podrobný lokálny denník alebo zmažte lokálnu históriu prehliadania a relácií."
+    "message": "Exportuj podrobný lokálny protokol alebo zmaž lokálnu históriu prehliadania a relácií."
   },
   "options_privacy_export_local_log": {
-    "message": "Exportovať lokálny denník udalostí"
+    "message": "Exportovať lokálny protokol udalostí"
   },
   "options_privacy_local_log_exported": {
-    "message": "Lokálny denník udalostí exportovaný."
+    "message": "Lokálny protokol udalostí exportovaný."
   },
   "options_privacy_delete_local_history": {
-    "message": "Odstrániť lokálnu históriu"
+    "message": "Zmazať lokálnu históriu"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Vzdialené údaje Sync"
+    "message": "Synchronizované údaje"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Zmažte kópie Focus Lock ponechané v Chrome Sync bez zmeny tohto zariadenia."
+    "message": "Zmaž kópie Focus Lock, ktoré zostali v synchronizácii Chromu, bez zmeny tohto zariadenia."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Odstrániť vzdialené údaje Sync"
+    "message": "Zmazať synchronizované údaje"
   },
   "options_privacy_all_data_heading": {
     "message": "Všetky údaje Focus Lock"
   },
   "options_privacy_all_data_detail": {
-    "message": "Zmažte všetky záznamy Focus Lock na tomto zariadení a všetky kópie Focus Lock ponechané v Chrome Sync, potom začnite znova od nastavenia. Dostupné keď nebeží žiadna relácia."
+    "message": "Zmaž každý záznam Focus Lock na tomto zariadení aj každú kópiu Focus Lock v synchronizácii Chromu a začni znova od nastavenia. Dostupné, kým nebeží žiadna relácia."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "Obnovuje sa odstránenie všetkých údajov Focus Lock."
+    "message": "Mazanie všetkých údajov Focus Lock pokračuje."
   },
   "options_privacy_retry_local_history": {
-    "message": "Skúsiť znova odstránenie lokálnej histórie"
+    "message": "Skúsiť zmazanie lokálnej histórie znova"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Skúsiť znova odstránenie vzdialených údajov Sync"
+    "message": "Skúsiť zmazanie synchronizovaných údajov znova"
   },
   "options_privacy_retry_all_data": {
-    "message": "Skúsiť znova odstránenie všetkých údajov"
+    "message": "Skúsiť zmazanie všetkých údajov znova"
   },
   "options_error_load": {
-    "message": "Nastavenia sa nedali načítať. Obnovte stránku a skúste znova."
+    "message": "Nastavenia sa nepodarilo načítať. Znova načítaj stránku a skús to znova."
   },
   "options_error_retry_boot": {
-    "message": "Focus Lock sa nepodarilo reštartovať. Skúste znova."
+    "message": "Focus Lock sa nepodarilo reštartovať. Skús to znova."
   },
   "options_error_refresh_privacy": {
-    "message": "Nastavenia ochrany údajov sa nedali obnoviť. Obnovte stránku."
+    "message": "Nastavenia súkromia sa nepodarilo obnoviť. Znova načítaj stránku."
   },
   "options_error_website_blocking": {
-    "message": "Blokovanie webov sa nedalo aktualizovať. Skúste znova."
+    "message": "Blokovanie webov sa nepodarilo aktualizovať. Skús to znova."
   },
   "options_error_change_sync": {
-    "message": "Chrome Sync sa nedal zmeniť. Skúste znova."
+    "message": "Synchronizáciu Chromu sa nepodarilo zmeniť. Skús to znova."
   },
   "options_error_retry_sync": {
-    "message": "Chrome Sync sa nepodarilo skúsiť znova. Skúste znova."
+    "message": "Synchronizáciu Chromu sa nepodarilo skúsiť znova. Skús to znova."
   },
   "options_error_save_settings": {
-    "message": "Nastavenia sa nedali uložiť. Obnovte stránku a skúste znova."
+    "message": "Nastavenia sa nepodarilo uložiť. Znova načítaj stránku a skús to znova."
   },
   "options_error_save_lists": {
-    "message": "Zoznamy sa nedali uložiť. Obnovte stránku a skúste znova."
+    "message": "Zoznamy sa nepodarilo uložiť. Znova načítaj stránku a skús to znova."
+  },
+  "options_gate_wait_few": {
+    "message": "Čakať $COUNT$ sekundy",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_many": {
+    "message": "Čakať $COUNT$ sekundy",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_few": {
+    "message": "$COUNT$ zahrnuté weby",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_sites_included_many": {
+    "message": "$COUNT$ zahrnutého webu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_few": {
+    "message": "$COUNT$ zahrnuté po zapnutí",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_many": {
+    "message": "$COUNT$ zahrnutého po zapnutí",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
   }
 }

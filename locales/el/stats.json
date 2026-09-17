@@ -1,27 +1,42 @@
 {
   "stats_document_title": {
-    "message": "Στατιστικές Focus Lock"
+    "message": "Στατιστικά Focus Lock"
   },
   "stats_page_title": {
-    "message": "Το Ρεκόρ Εστίασής σας"
+    "message": "Το ιστορικό εστίασής σου"
   },
   "stats_loading": {
-    "message": "Loading your στατιστικές."
+    "message": "Φόρτωση των στατιστικών σου."
   },
   "stats_load_error": {
-    "message": "Could not load στατιστικές. Reload to try again."
+    "message": "Τα στατιστικά δεν φορτώθηκαν. Φόρτωσε ξανά τη σελίδα."
   },
   "stats_partial_error_both": {
-    "message": "Hourly attempts and site access credit ρυθμίσεις are unavailable."
+    "message": "Οι ωριαίες προσπάθειες και οι ρυθμίσεις πίστωσης πρόσβασης δεν είναι διαθέσιμες."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Οι ωριαίες προσπάθειες δεν είναι διαθέσιμες."
   },
   "stats_partial_error_economy": {
-    "message": "Site access credit ρυθμίσεις are unavailable."
+    "message": "Οι ρυθμίσεις πίστωσης πρόσβασης δεν είναι διαθέσιμες."
+  },
+  "stats_scope_synced": {
+    "message": "Συγχρονισμένα σύνολα από αυτόν τον λογαριασμό Chrome. Τα πάνελ που είναι μόνο τοπικά επισημαίνονται."
+  },
+  "stats_scope_local": {
+    "message": "Σύνολα από αυτό το μηχάνημα. Τα στατιστικά του Focus Lock δεν συγχρονίζονται."
+  },
+  "stats_scope_checking": {
+    "message": "Έλεγχος αν αυτά τα σύνολα συγχρονίζονται."
+  },
+  "stats_scope_unavailable": {
+    "message": "Το εύρος των στατιστικών δεν είναι διαθέσιμο. Τα σύνολα μπορεί να περιλαμβάνουν συγχρονισμένα δεδομένα. Οι ωριαίες προσπάθειες και οι πρόσφατες συνεδρίες είναι από αυτό το μηχάνημα."
   },
   "stats_scope_retry": {
-    "message": "Retry scope check"
+    "message": "Νέος έλεγχος εύρους"
   },
   "stats_empty": {
-    "message": "Στατιστικές appear after your first συνεδρία."
+    "message": "Τα στατιστικά εμφανίζονται μετά την πρώτη σου συνεδρία."
   },
   "stats_tile_focus_today": {
     "message": "Εστίαση σήμερα"
@@ -30,16 +45,33 @@
     "message": "Εστίαση τις τελευταίες 7 ημέρες"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts αποκλείστηκε σήμερα"
+    "message": "Προσπάθειες που μπλοκαρίστηκαν σήμερα"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gate requests dismissed σήμερα"
+    "message": "Αιτήματα ξεκλειδώματος που εγκαταλείφθηκαν σήμερα"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent σήμερα"
+    "message": "Πίστωση πρόσβασης που ξοδεύτηκε σήμερα"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Όλοι οι ιστότοποι $ALL_SITES$, ένας ιστότοπος $ONE_SITE$, $EARNED$ κερδισμένα",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ earned",
+    "message": "$EARNED$ κερδισμένα",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -48,16 +80,53 @@
     }
   },
   "stats_streak_heading": {
-    "message": "Σειρά"
+    "message": "Σερί"
+  },
+  "stats_streak_empty": {
+    "message": "Το σερί σου ξεκινάει με την πρώτη σου μέρα εστίασης."
   },
   "stats_streak_unit_one": {
-    "message": "day"
+    "message": "ημέρα"
   },
   "stats_streak_unit_other": {
     "message": "ημέρες"
   },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ πάγωμα στην άκρη",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ παγώματα στην άκρη",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Πάγωμα σερί: μία χαμένη μέρα, καλυμμένη"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ ενεργή ημέρα αυτόν τον μήνα ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active ημέρες this month ($MONTH$)",
+    "message": "$COUNT$ ενεργές ημέρες αυτόν τον μήνα ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -69,29 +138,54 @@
       }
     }
   },
+  "stats_streak_active_dates": {
+    "message": "Ενεργές ημέρες τον μήνα $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Καμία ενεργή ημέρα τον μήνα $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
   "stats_chart_focus_heading": {
-    "message": "Focus, last 14 ημέρες"
+    "message": "Εστίαση, τελευταίες 14 ημέρες"
   },
   "stats_chart_focus_empty": {
-    "message": "Focus λεπτά appear after your first συνεδρία."
+    "message": "Τα λεπτά εστίασης εμφανίζονται μετά την πρώτη σου συνεδρία."
   },
   "stats_chart_attempts_heading": {
-    "message": "Αποκλείστηκε attempts, last 14 ημέρες"
+    "message": "Μπλοκαρισμένες προσπάθειες, τελευταίες 14 ημέρες"
   },
   "stats_chart_attempts_empty": {
-    "message": "Αποκλείστηκε attempts εμφάνιση up here once a συνεδρία catches one."
+    "message": "Οι μπλοκαρισμένες προσπάθειες εμφανίζονται εδώ μόλις μια συνεδρία πιάσει την πρώτη."
   },
   "stats_chart_sites_heading": {
-    "message": "Top αποκλείστηκε sites, last 30 ημέρες"
+    "message": "Ιστότοποι με τους περισσότερους αποκλεισμούς, τελευταίες 30 ημέρες"
   },
   "stats_chart_sites_empty": {
-    "message": "Nothing αποκλείστηκε yet. That is a fine έναρξη."
+    "message": "Τίποτα μπλοκαρισμένο ακόμη. Καλή αρχή."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Προσπάθειες ανά ώρα, μόνο σε αυτό το μηχάνημα"
   },
   "stats_chart_other_site": {
-    "message": "other"
+    "message": "λοιποί"
   },
   "stats_chart_minutes_tick": {
-    "message": "$MINUTES$m",
+    "message": "$MINUTES$ λ",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -100,7 +194,7 @@
     }
   },
   "stats_blocked_count_one": {
-    "message": "$COUNT$ αποκλείστηκε",
+    "message": "$COUNT$ μπλοκαρισμένη",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +203,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "$COUNT$ αποκλείστηκε",
+    "message": "$COUNT$ μπλοκαρισμένες",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -118,19 +212,19 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "Bar chart"
+    "message": "Ραβδόγραμμα"
   },
   "stats_chart_name_hbar": {
-    "message": "Horizontal bar chart"
+    "message": "Οριζόντιο ραβδόγραμμα"
   },
   "stats_chart_description_bar": {
-    "message": "Bar chart. Use the keyboard to move through data points, or άνοιγμα View as table for the same values."
+    "message": "Ραβδόγραμμα. Χρησιμοποίησε το πληκτρολόγιο για να κινηθείς στα σημεία δεδομένων ή άνοιξε το Προβολή ως πίνακας για τις ίδιες τιμές."
   },
   "stats_chart_description_hbar": {
-    "message": "Horizontal bar chart. Use the keyboard to move through data points, or άνοιγμα View as table for the same values."
+    "message": "Οριζόντιο ραβδόγραμμα. Χρησιμοποίησε το πληκτρολόγιο για να κινηθείς στα σημεία δεδομένων ή άνοιξε το Προβολή ως πίνακας για τις ίδιες τιμές."
   },
   "stats_chart_empty_default": {
-    "message": "No data yet."
+    "message": "Δεν υπάρχουν δεδομένα ακόμη."
   },
   "stats_chart_point": {
     "message": "$LABEL$: $VALUE$",
@@ -146,49 +240,52 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "View as table"
+    "message": "Προβολή ως πίνακας"
   },
   "stats_chart_table_category": {
-    "message": "Category"
+    "message": "Κατηγορία"
   },
   "stats_chart_table_value": {
-    "message": "Value"
+    "message": "Τιμή"
   },
   "stats_heat_strip_label": {
-    "message": "24-hour αποκλείστηκε-attempt heat strip"
+    "message": "Λωρίδα έντασης μπλοκαρισμένων προσπαθειών για 24 ώρες"
+  },
+  "stats_sessions_heading": {
+    "message": "Πρόσφατες συνεδρίες σε αυτό το μηχάνημα"
   },
   "stats_sessions_empty": {
-    "message": "Your first συνεδρία will appear here."
+    "message": "Η πρώτη σου συνεδρία θα εμφανιστεί εδώ."
   },
   "stats_sessions_col_date": {
-    "message": "Date"
+    "message": "Ημερομηνία"
   },
   "stats_sessions_col_start": {
     "message": "Έναρξη"
   },
   "stats_sessions_col_planned": {
-    "message": "Planned"
+    "message": "Προγραμματισμένη"
   },
   "stats_sessions_col_focused": {
-    "message": "Focused"
+    "message": "Σε εστίαση"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All sites"
+    "message": "Όλοι οι ιστότοποι"
   },
   "stats_sessions_col_one_site": {
-    "message": "One site"
+    "message": "Ένας ιστότοπος"
   },
   "stats_sessions_col_intention": {
-    "message": "Intention"
+    "message": "Πρόθεση"
   },
   "stats_sessions_col_outcome": {
-    "message": "Outcome"
+    "message": "Έκβαση"
   },
   "stats_sessions_col_source": {
-    "message": "Source"
+    "message": "Προέλευση"
   },
   "stats_session_no_intention": {
-    "message": "No intention"
+    "message": "Χωρίς πρόθεση"
   },
   "stats_session_article_label": {
     "message": "Συνεδρία: $INTENTION$",
@@ -200,21 +297,21 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "manual"
+    "message": "χειροκίνητη"
   },
   "stats_session_source_schedule": {
-    "message": "schedule"
+    "message": "πρόγραμμα"
   },
   "stats_session_source_scheduled": {
-    "message": "scheduled"
+    "message": "ξεκίνησε από το πρόγραμμα"
   },
   "stats_outcome_completed": {
-    "message": "Completed"
+    "message": "Ολοκληρώθηκε"
   },
   "stats_outcome_ended_early": {
-    "message": "Ended early"
+    "message": "Τελείωσε νωρίς"
   },
   "stats_outcome_running": {
-    "message": "Running"
+    "message": "Σε εξέλιξη"
   }
 }

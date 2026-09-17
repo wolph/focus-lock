@@ -1,1 +1,412 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "next: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "സെറ്റിംഗുകൾ"
+  },
+  "popup_open_settings_failed": {
+    "message": "Could not open സെറ്റിംഗുകൾ. Try again."
+  },
+  "popup_settings_load_failed": {
+    "message": "Could not load സെഷൻ സെറ്റിംഗുകൾ. Reload the popup to try again. Defaults are shown."
+  },
+  "popup_setup_required_body": {
+    "message": "Choose your starting lists, website access, and storage mode before starting a സെഷൻ."
+  },
+  "popup_open_setup_button": {
+    "message": "Open setup"
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Could not സജീവമാക്കുക website blocking. Try again."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Website blocking is off"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock cannot ആരംഭിക്കുക a സെഷൻ until Chrome grants website access and blocking is enabled."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Website access is granted, but Focus Lock could not സജീവമാക്കുക blocking. Retry setup or reload the extension."
+  },
+  "popup_enable_blocking_button": {
+    "message": "സജീവമാക്കുക website blocking"
+  },
+  "popup_retry_button": {
+    "message": "Retry"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Your സെഷൻ ended because website access was removed."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Your സെഷൻ ended because Focus Lock could not സജീവമാക്കുക website blocking."
+  },
+  "popup_dismiss_button": {
+    "message": "Dismiss"
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock could not ആരംഭിക്കുക"
+  },
+  "popup_reset_runtime_button": {
+    "message": "Reset local runtime"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Keeps your സെറ്റിംഗുകൾ, lists, and statistics. Clears the current സെഷൻ state."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "കണ്ടെത്തുക everything and ആരംഭിക്കുക over"
+  },
+  "popup_keep_data_button": {
+    "message": "Keep my data"
+  },
+  "popup_delete_all_button": {
+    "message": "കണ്ടെത്തുക all Focus Lock data"
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Focus status unavailable"
+  },
+  "popup_action_in_progress": {
+    "message": "Action in progress"
+  },
+  "popup_active_site_checking": {
+    "message": "Checking the active site"
+  },
+  "popup_resume_now": {
+    "message": "Resume now"
+  },
+  "popup_start_next_focus_early": {
+    "message": "ആരംഭിക്കുക next focus early"
+  },
+  "popup_unlock_this_site": {
+    "message": "Unlock this site"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Unlock all sites"
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Choose work tab"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Change work tab"
+  },
+  "popup_session_actions_summary": {
+    "message": "സെഷൻ actions"
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "ചേർക്കുക an allowed domain"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "ചേർക്കുക allowed domain"
+  },
+  "popup_add_button": {
+    "message": "ചേർക്കുക"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Only $COUNT$ allowed site rules. Other websites തടഞ്ഞിരിക്കുന്നു.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ തടഞ്ഞിരിക്കുന്നു categories, $RULES$ extra rules.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Can end at any time."
+  },
+  "popup_session_length_label": {
+    "message": "സെഷൻ length"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Custom minutes"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Keep focusing"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Type:"
+  },
+  "popup_gate_intention": {
+    "message": "You said: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "A moment to decide:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "of $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Back to work"
+  },
+  "popup_destination_unavailable": {
+    "message": "Destination unavailable"
+  },
+  "popup_categories_locked": {
+    "message": "Category editing is disabled until തടഞ്ഞിരിക്കുന്നു-site lists reload."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "തടഞ്ഞിരിക്കുന്നു categories"
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domain"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regular expression"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "and $COUNT$ more site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "and $COUNT$ more sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Allowed exceptions"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Extra തടഞ്ഞിരിക്കുന്നു rules"
+  },
+  "popup_no_extra_blocked": {
+    "message": "No extra തടഞ്ഞിരിക്കുന്നു rules."
+  },
+  "popup_allowed_heading": {
+    "message": "Allowed sites and rules"
+  },
+  "popup_no_allowed_sites": {
+    "message": "No sites are allowed yet."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "What will be തടഞ്ഞിരിക്കുന്നു"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "What will be allowed"
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ extra തടഞ്ഞിരിക്കുന്നു rule",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ extra തടഞ്ഞിരിക്കുന്നു rules",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ allowed rule",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ allowed rules",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Allowed-site and rule changes here apply only to this സെഷൻ. Everything else is തടഞ്ഞിരിക്കുന്നു."
+  },
+  "popup_scope_blacklist": {
+    "message": "Category and rule changes here apply only to this സെഷൻ."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Open സെറ്റിംഗുകൾ for permanent defaults"
+  },
+  "popup_rule_details_label": {
+    "message": "സെഷൻ rule details"
+  },
+  "popup_session_type_legend": {
+    "message": "സെഷൻ type"
+  },
+  "popup_session_type_flexible": {
+    "message": "Flexible"
+  },
+  "popup_session_type_friction": {
+    "message": "Friction"
+  },
+  "popup_session_type_hard": {
+    "message": "Hard lock"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "End the സെഷൻ immediately whenever you choose."
+  },
+  "popup_session_type_hard_hint": {
+    "message": "The സെഷൻ cannot end early. Site access credit still works."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "The selected categories and extra rules are തടഞ്ഞിരിക്കുന്നു. Other sites remain available."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Only the listed sites are available. Every other website is തടഞ്ഞിരിക്കുന്നു."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Enter a സെഷൻ length greater than zero minutes."
+  },
+  "popup_no_work_tab_option": {
+    "message": "No work tab (optional)"
+  },
+  "popup_intention_label": {
+    "message": "Intention"
+  },
+  "popup_intention_placeholder": {
+    "message": "What are you working on?"
+  },
+  "popup_work_tab_named": {
+    "message": "Work tab: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Change"
+  },
+  "popup_session_settings_summary": {
+    "message": "സെഷൻ സെറ്റിംഗുകൾ"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Choose a work tab"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Work tab"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (Current)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Blocking mode"
+  },
+  "popup_invalid_time_label": {
+    "message": "invalid time"
+  },
+  "popup_start_focus_label": {
+    "message": "ആരംഭിക്കുക $DURATION$ focus",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_use_this_tab": {
+    "message": "Use this tab"
+  },
+  "popup_checking_current_tab": {
+    "message": "Checking current tab..."
+  },
+  "popup_saving_work_tab": {
+    "message": "Saving work tab..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Could not സംരക്ഷിക്കുക the work tab. Try again."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Choose an open tab"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Or choose another tab"
+  },
+  "popup_start_failed": {
+    "message": "Could not ആരംഭിക്കുക സെഷൻ. Try again."
+  }
+}

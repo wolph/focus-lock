@@ -1,48 +1,48 @@
 {
   "options_page_title": {
-    "message": "Mtazamo Lock optikwenyes"
+    "message": "Fokasi Lock options"
   },
   "options_heading": {
-    "message": "Mtazamo Lock settkatikags"
+    "message": "Fokasi Lock settings"
   },
   "options_loading_settings": {
-    "message": "Kupakia settkatikags"
+    "message": "Kupakia settings"
   },
   "options_privacy_loading": {
-    "message": "Kupakia privacy settkatikags"
+    "message": "Kupakia privacy settings"
   },
   "options_save_failed": {
-    "message": "Could not save. Try agakatika."
+    "message": "Could not kuhifadhi. Try agakatika."
   },
   "options_blocking_heading": {
-    "message": "Kuzuiakatikag"
+    "message": "Zuiaing"
   },
   "options_blocking_help": {
-    "message": "Ziada rules block during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories block common time sinks."
+    "message": "Cuskwam sherias kuzuia durkatikag blacklist kikaos. The whitelist is what stays reachable durkatikag whitelist kikaos. Bundled categauies kuzuia commkwenye wakati skatikaks."
   },
   "options_custom_blacklist_title": {
-    "message": "Ziada blacklist"
+    "message": "Cuskwam blacklist"
   },
   "options_whitelist_title": {
     "message": "Orodha nyeupe"
   },
   "options_bundled_categories_heading": {
-    "message": "Aina zilizobandilizwa"
+    "message": "Bundled categauies"
   },
   "options_bundled_categories_help": {
-    "message": "Bundled lists wa commkwenye time skatikaks. Toggle a whole categauy, then open it kwa keep skatikagle sites available."
+    "message": "Bundled lists wa commkwenye wakati skatikaks. Toggle a whole akatikaa, then fungua it kwa keep skatikagle kwavutis available."
   },
   "options_schedule_heading": {
     "message": "Schedule"
   },
   "options_schedule_help": {
-    "message": "Kikaos start kwenye their own katikaside these wkatikadows. Strictness set here applies kwa the whole wkatikadow."
+    "message": "Kikaos start on their own inside these windows. Strictness set here applies for the whole window."
   },
   "options_behavior_heading": {
-    "message": "Tabia ya kikao"
+    "message": "Kikao behavior"
   },
   "options_budget_heading": {
-    "message": "Mikakati ya kufikia tovuti"
+    "message": "Tovuti kufikia crhariri"
   },
   "options_notifications_heading": {
     "message": "Notificatikwenyes"
@@ -51,16 +51,16 @@
     "message": "Privacy na data"
   },
   "options_load_error_retry": {
-    "message": "Jaribu tena"
+    "message": "Jaribu Tena"
   },
   "options_load_error_delete_all": {
-    "message": "Delete everything and start juu ya"
+    "message": "Futa everything and start over"
   },
   "options_load_error_keep_data": {
     "message": "Keep my data"
   },
   "options_delete_all_data": {
-    "message": "Kufuta all Mtazamo Lock data"
+    "message": "Futa all Fokasi Lock data"
   },
   "options_dirty_saving": {
     "message": "Savkatikag changes"
@@ -75,7 +75,7 @@
     "message": "Discard changes"
   },
   "options_dirty_save": {
-    "message": "Kuhifadhi changes"
+    "message": "Hifadhi changes"
   },
   "options_session_status_label": {
     "message": "Kikao status"
@@ -87,10 +87,10 @@
     "message": "regex"
   },
   "options_rule_remove": {
-    "message": "Kukwenyedoa"
+    "message": "Ondoa"
   },
   "options_rule_remove_aria": {
-    "message": "Kukwenyedoa $PATTERN$",
+    "message": "Ondoa $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -102,7 +102,7 @@
     "message": "No sherias yet."
   },
   "options_rule_kind_aria": {
-    "message": "Sheria kkatikad"
+    "message": "Kanuni kind"
   },
   "options_rule_kind_host_option": {
     "message": "domakatika au subdomakatika"
@@ -120,10 +120,10 @@
     "message": "/youtube\\.com\\/shauts/"
   },
   "options_rule_add": {
-    "message": "Kukwenyegeza rule"
+    "message": "Ongeza rule"
   },
   "options_rules_help": {
-    "message": "facebook.com cjuu yas hiyo domain and every subdomain. news.ycombinator.com cjuu yas hiyo subdomain and anything chini ya it. /youtube\\.com\\/shorts/ matches the full URL as a regular expression."
+    "message": "facebook.com covers that domakatika na every subdomakatika. news.ycombkatikaatau.com covers that subdomakatika na anythkatikag under it. /youtube\\.com\\/shauts/ matches the full URL as a regular expressikwenye."
   },
   "options_number_error_whole": {
     "message": "$LABEL$ must be a whole number wa zero au greater.",
@@ -144,7 +144,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$ must be nakatika the suppauted mkatikaute range.",
+    "message": "$LABEL$ must be within the supported dakika range.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -153,7 +153,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$ must be nakatika the suppauted day range.",
+    "message": "$LABEL$ must be within the supported siku range.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -165,58 +165,58 @@
     "message": "Kikao defaults"
   },
   "options_session_defaults_help": {
-    "message": "Mode and strictness are fixed wakati a session starts. These are the values the start form opens with."
+    "message": "Njia na strictness are fixed wakati a kikao kuanzas. These are the thamanis the kuanza kwam funguas na."
   },
   "options_preset_short_label": {
-    "message": "Shaut sessikwenye preset (mkatikautes)"
+    "message": "Short session preset (dakikas)"
   },
   "options_preset_default_label": {
-    "message": "Default sessikwenye preset (mkatikautes)"
+    "message": "Default session preset (dakikas)"
   },
   "options_preset_deep_label": {
-    "message": "Deep sessikwenye preset (mkatikautes)"
+    "message": "Deep session preset (dakikas)"
   },
   "options_mode_blacklist_label": {
-    "message": "Orodha nyeusi: block listed sites"
+    "message": "Blacklist: kuzuia listed kwavutis"
   },
   "options_mode_whitelist_label": {
-    "message": "Orodha nyeupe: allow only listed sites"
+    "message": "Whitelist: allow kwenyely listed kwavutis"
   },
   "options_strictness_flexible_label": {
-    "message": "Flexible: end the session wakatiever you choose"
+    "message": "Bkatikagu: end the kikao wakatiever you choose"
   },
   "options_strictness_friction_label": {
-    "message": "Nguvu: skwappkatikag early uses the ckwenyefigured deliberatikwenye gate"
+    "message": "Nguvu: kusimamapkatikag early uses the ckwenyefigured kufikiri gate"
   },
   "options_strictness_hard_label": {
-    "message": "Ngumu: no early end, tempauary site access kwenyely"
+    "message": "Ngumu: no early end, tempauary kwavuti kufikia kwenyely"
   },
   "options_cycle_heading": {
-    "message": "Mtazamo na break cycle"
+    "message": "Fokasi and break cycle"
   },
   "options_cycle_help": {
-    "message": "Defaults: 25 minute focus, 5 minute break, 15 minute long break every 4th cycle. Breaks on a schedule beat break-wakati-you-feel-like-it for mood and focus in study samples. The exact minutes are convention, not science."
+    "message": "Defaults: 25 dakika focus, 5 dakika break, 15 dakika long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact dakikas are convention, not science."
   },
   "options_cycle_default_label": {
-    "message": "Mzunguko focus na breaks by default"
+    "message": "Mzunguko mtazamo na mapumzikos by default"
   },
   "options_focus_minutes_label": {
-    "message": "Mtazamo mkatikautes"
+    "message": "Fokasi dakikas"
   },
   "options_short_break_minutes_label": {
-    "message": "Shaut break mkatikautes"
+    "message": "Short break dakikas"
   },
   "options_long_break_minutes_label": {
-    "message": "Lkwenyeg break mkatikautes"
+    "message": "Long break dakikas"
   },
   "options_long_every_label": {
-    "message": "Lkwenyeg break every Nth cycle"
+    "message": "Lkwenyeg mapumziko every Nth mzunguko"
   },
   "options_gate_heading": {
-    "message": "Kiwango cha kufikiri"
+    "message": "Kufikiri gate"
   },
   "options_gate_help": {
-    "message": "A 10 seckwenyed wait na an explicit back-kwa-wauk butkwan measurably reduces impulse visits (field study, PNAS 2023). The lkwenyeger wait na the typed sentence roughly double the effect."
+    "message": "A 10 seckwenyed wait na an explicit nyuma-kwa-kazi kitufe measurably reduces impulse visits (field study, PNAS 2023). The lkwenyeger wait na the akatikaad sentence roughly double the effect."
   },
   "options_gate_wait_one": {
     "message": "Wait $COUNT$ seckwenyed",
@@ -237,52 +237,52 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "Ziada"
+    "message": "Cuskwam"
   },
   "options_custom_delay_label": {
-    "message": "Ziada delay (seconds)"
+    "message": "Cuskwam delay (seckwenyeds)"
   },
   "options_custom_delay_error": {
-    "message": "Ziada delay must be a positive whole number of seconds."
+    "message": "Cuskwam delay must be a positive whole number wa seckwenyeds."
   },
   "options_gate_typed_phrase_label": {
     "message": "Also require typkatikag a sentence"
   },
   "options_gate_force_end_label": {
-    "message": "Kuweka \"Ignaue timeout na end anyway\" butkwan"
+    "message": "Wezesha \"Ignore timeout and end anyway\" button"
   },
   "options_credit_help": {
-    "message": "Mikakati ya kufikia tovuti accrues while you focus. Both access to all sites and a single-site fungua spend from the same balance. You can step away at any time without spending credit."
+    "message": "Tovuti kufikia crhariri accrues while you mtazamo. Both kufikia kwa all kwavutis na a skatikagle-kwavuti unlock spend from the same balance. You can step away at any wakati naout spendkatikag crhariri."
   },
   "options_earn_rate_label": {
-    "message": "Dakika wa site access per 30 mkatikautes wa focus"
+    "message": "Minutes of site access per 30 dakikas of focus"
   },
   "options_credit_cap_label": {
-    "message": "Mikakati ya kufikia tovuti limit (minutes)"
+    "message": "Site access credit limit (dakikas)"
   },
   "options_pause_length_label": {
-    "message": "Zote-site access length (minutes)"
+    "message": "All-site access length (dakikas)"
   },
   "options_unlock_length_label": {
-    "message": "Site fungua length (minutes)"
+    "message": "Site unlock length (dakikas)"
   },
   "options_streak_heading": {
     "message": "Msururu na retentikwenye"
   },
   "options_streak_help": {
-    "message": "The streak counts days hiyo reach the goal. One default session keeps the chain alive, and a freeze token repairs a missed day."
+    "message": "The streak counts sikus that reach the goal. One default session keeps the chain alive, and a freeze token repairs a missed siku."
   },
   "options_streak_goal_label": {
-    "message": "Daily streak goal (focus mkatikautes)"
+    "message": "Daily streak goal (focus dakikas)"
   },
   "options_freeze_interval_label": {
-    "message": "Freeze kwaken katikaterval (days)"
+    "message": "Freeze token interval (sikus)"
   },
   "options_retention_label": {
     "message": "Keep daily stats (sikus)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ categauy kwenye.",
+    "message": "$CATEGORY$ akatikaa kwenye.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -291,7 +291,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ category zima.",
+    "message": "$CATEGORY$ akatikaa waf.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -300,10 +300,10 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "Zote categories on."
+    "message": "All categauies kwenye."
   },
   "options_all_categories_off_announcement": {
-    "message": "Zote categories off."
+    "message": "All categauies waf."
   },
   "options_host_included_announcement": {
     "message": "$HOST$ katikacluded.",
@@ -324,7 +324,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "Zote $CATEGORY$ sites included.",
+    "message": "All $CATEGORY$ kwavutis katikacluded.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -333,7 +333,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "Zote $CATEGORY$ sites kept available.",
+    "message": "All $CATEGORY$ kwavutis kept available.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -342,7 +342,7 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "Akatikaa bulk actikwenyes"
+    "message": "Kategoriya bulk actions"
   },
   "options_selected_count": {
     "message": "Selected $COUNT$",
@@ -375,7 +375,7 @@
     "message": "Deselect all categauies"
   },
   "options_show_category_sites": {
-    "message": "Ongesha $CATEGORY$ sites",
+    "message": "Onyesha $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -393,7 +393,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ site katikacluded",
+    "message": "$COUNT$ kwavuti katikacluded",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -402,7 +402,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ sites katikacluded",
+    "message": "$COUNT$ kwavutis katikacluded",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -411,10 +411,10 @@
     }
   },
   "options_category_off": {
-    "message": "Category zima"
+    "message": "Kategoriya off"
   },
   "options_included_when_enabled_one": {
-    "message": "$COUNT$ included wakati enabled",
+    "message": "$COUNT$ katikacluded wakati kuwekad",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -423,7 +423,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ included wakati enabled",
+    "message": "$COUNT$ katikacluded wakati kuwekad",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -432,10 +432,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "Uncheck a site kwa keep it available while the rest wa the categauy is blocked."
+    "message": "Uncheck a kwavuti kwa keep it available while the rest wa the akatikaa is kuzuiaed."
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "$CATEGORY$ site bulk actikwenyes",
+    "message": "$CATEGORY$ kwavuti bulk actikwenyes",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -492,10 +492,10 @@
     "message": "Sat"
   },
   "options_schedule_cycles_label": {
-    "message": "Mzunguko focus na breaks"
+    "message": "Mzunguko mtazamo na mapumzikos"
   },
   "options_schedule_overlap_error": {
-    "message": "Overlaps another enabled entry kwenye $DAY$.",
+    "message": "Overlaps another kuwekad entry kwenye $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -510,10 +510,10 @@
     "message": "Schedule entry"
   },
   "options_schedule_start_label": {
-    "message": "Kuanza"
+    "message": "Anza"
   },
   "options_schedule_end_label": {
-    "message": "Mwisho"
+    "message": "Malizia"
   },
   "options_schedule_duration_legend": {
     "message": "Duratikwenye"
@@ -522,16 +522,16 @@
     "message": "Nidhamu"
   },
   "options_schedule_intention_placeholder": {
-    "message": "what hii time is for"
+    "message": "what this wakati is kwa"
   },
   "options_schedule_save_entry": {
-    "message": "Kuhifadhi entry"
+    "message": "Hifadhi entry"
   },
   "options_cancel": {
-    "message": "Kusitisha"
+    "message": "Ghairi"
   },
   "options_schedule_empty": {
-    "message": "No scheduled sessikwenyes yet."
+    "message": "No scheduled kikaos yet."
   },
   "options_schedule_selected_days_aria": {
     "message": "Selected sikus"
@@ -559,22 +559,22 @@
     "message": "bkatikagu"
   },
   "options_schedule_strictness_friction": {
-    "message": "frictikwenye"
+    "message": "nguvu"
   },
   "options_schedule_strictness_hard": {
     "message": "ngumu"
   },
   "options_schedule_enabled_label": {
-    "message": "Kuwekad"
+    "message": "Wezeshad"
   },
   "options_schedule_edit": {
     "message": "Hariri"
   },
   "options_schedule_delete": {
-    "message": "Kufuta"
+    "message": "Futa"
   },
   "options_schedule_add": {
-    "message": "Kukwenyegeza schedule entry"
+    "message": "Ongeza schedule entry"
   },
   "options_sounds_heading": {
     "message": "Sounds"
@@ -583,16 +583,16 @@
     "message": "Master volume"
   },
   "options_sound_session_complete": {
-    "message": "Kikao kamili"
+    "message": "Kikao complete"
   },
   "options_sound_break_start": {
-    "message": "Mapumziko start"
+    "message": "Mapumziko kuanza"
   },
   "options_sound_break_end": {
     "message": "Mapumziko end"
   },
   "options_sound_schedule_start": {
-    "message": "Schedule aukwa-start"
+    "message": "Schedule aukwa-kuanza"
   },
   "options_sound_preview_aria": {
     "message": "Pretazama $SOUND$",
@@ -607,97 +607,97 @@
     "message": "Play"
   },
   "options_sound_preview_error": {
-    "message": "Could not pretazama the sound. Try again."
+    "message": "Could not pretazama the sound. Try agakatika."
   },
   "options_sounds_notifications_heading": {
     "message": "Notificatikwenyes"
   },
   "options_session_complete_notification": {
-    "message": "Show a system notification wakati a session completes"
+    "message": "Onyesha a system notification when a session completes"
   },
   "options_badge_heading": {
     "message": "Badge"
   },
   "options_badge_countdown": {
-    "message": "Ongesha the remakatikakatikag time kwenye the kwaolbar ickwenye"
+    "message": "Onyesha the remaining time on the toolbar icon"
   },
   "options_privacy_website_access_heading": {
-    "message": "Webkwavuti kufikia"
+    "message": "Tovuti access"
   },
   "options_privacy_website_off_title": {
-    "message": "Website access is zima"
+    "message": "Tovuti access is off"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock cannot block websites hadi you grant access."
+    "message": "Fokasi Lock cannot block websites until you grant access."
   },
   "options_privacy_website_enable_action": {
-    "message": "Kuweka website blockkatikag"
+    "message": "Wezesha website blocking"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "Website access is granted, but blockkatikag is not active"
+    "message": "Tovuti access is granted, but blocking is not active"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome granted access, but Mtazamo Lock could not register its blockkatikag script."
+    "message": "Chrome granted access, but Fokasi Lock could not register its blocking script."
   },
   "options_privacy_website_retry_action": {
-    "message": "Retry website blockkatikag"
+    "message": "Jaribu Tena website blocking"
   },
   "options_privacy_website_on_title": {
-    "message": "Website blockkatikag is enabled"
+    "message": "Tovuti blocking is enabled"
   },
   "options_privacy_website_on_detail": {
-    "message": "Mtazamo Lock can apply your active blockkatikag rules kwenye regular website pages."
+    "message": "Fokasi Lock can apply your active blocking rules on regular website pages."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "Kufuta local histauy?"
+    "message": "Futa local history?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "Ckwenyefirm delete local histauy"
+    "message": "Thibitisha delete local history"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Local histauy deleted."
+    "message": "Local histauy kufutad."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from hii device. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Ending the session clears the intention and starts a cleanup hiyo clears every open website tab, and the cleanup removes every stored address wakati it completes."
+    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Maliziaing the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from hii device, plus local-only aggregate statistics. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Ending the session clears the intention and starts a cleanup hiyo clears every open website tab, and the cleanup removes every stored address wakati it completes."
+    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device, plus local-only aggregate statistics. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Maliziaing the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Kufuta remote Sync data?"
+    "message": "Futa remote Sync data?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Ckwenyefirm delete remote Sync data"
+    "message": "Thibitisha delete remote Sync data"
   },
   "options_privacy_synced_policy_deleted": {
     "message": "Remote Chrome Sync data kufutad."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently deletes remote settings, block and ruhusu lists, site access credit, streaks, and domain-level blocked-attempt aggregates from Chrome Sync. Local settings and statistics stay on hii device."
+    "message": "This permanently kufutas remote mipangilio, kuzuia na allow lists, kwavuti kufikia crhariri, msururus, na domakatika-level kuzuiaed-attempt aggregates from Chrome Sync. Local mipangilio na statistics stay kwenye this device."
   },
   "options_privacy_confirm_all_title": {
-    "message": "Kufuta all Mtazamo Lock data?"
+    "message": "Futa all Fokasi Lock data?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "Ckwenyefirm delete all Mtazamo Lock data"
+    "message": "Thibitisha delete all Fokasi Lock data"
   },
   "options_privacy_all_deleted": {
-    "message": "Zote Focus Lock data deleted."
+    "message": "All Fokasi Lock data deleted."
   },
   "options_privacy_all_body_intro": {
-    "message": "This permanently deletes every piece of Focus Lock data on hii device and any Focus Lock copies left in Chrome Sync:"
+    "message": "This permanently deletes every piece of Fokasi Lock data on this device and any Fokasi Lock copies left in Chrome Sync:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Deletkatikag everythkatikag is available kwenyely while no sessikwenye is runnkatikag. Mtazamo Lock then returns kwa setup."
+    "message": "Deleting everything is available only while no session is running. Fokasi Lock then returns to setup."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Local histauy could not be deleted. Try agakatika."
+    "message": "Local histauy could not be kufutad. Try agakatika."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Remote Chrome Sync data could not be deleted. Try agakatika."
+    "message": "Remote Chrome Sync data could not be kufutad. Try agakatika."
   },
   "options_privacy_error_all_clear": {
-    "message": "Zote Focus Lock data could not be deleted. Try again."
+    "message": "All Fokasi Lock data could not be deleted. Try again."
   },
   "options_privacy_error_sync_write": {
     "message": "Chrome Sync could not kuhifadhi your latest changes. Your local kuhifadhi is safe."
@@ -706,16 +706,16 @@
     "message": "The request could not be completed. Try agakatika."
   },
   "options_privacy_website_access_updated": {
-    "message": "Webkwavuti kufikia updated."
+    "message": "Tovuti access updated."
   },
   "options_privacy_website_access_denied": {
-    "message": "Webkwavuti kufikia was not granted."
+    "message": "Tovuti access was not granted."
   },
   "options_privacy_error_website_access": {
-    "message": "Website access could not be updated. Try agakatika."
+    "message": "Tovuti access could not be updated. Try again."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Website blockkatikag enabled."
+    "message": "Tovuti blocking enabled."
   },
   "options_privacy_error_export": {
     "message": "Could not expaut the event log."
@@ -724,19 +724,19 @@
     "message": "Could not expaut the event log. Try agakatika."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Could not open Chrome permissikwenye settkatikags. Try agakatika."
+    "message": "Could not fungua Chrome permissikwenye mipangilio. Try agakatika."
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "Chrome permissikwenye settkatikags opened."
+    "message": "Chrome permissikwenye mipangilio funguaed."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Fungua Chrome permissikwenye settkatikags"
+    "message": "Fungua Chrome permission settings"
   },
   "options_privacy_sync_heading": {
     "message": "Chrome Panga"
   },
   "options_privacy_sync_switch_label": {
-    "message": "Sync Mtazamo Lock data across Chrome devices"
+    "message": "Sync Fokasi Lock data across Chrome devices"
   },
   "options_privacy_sync_enabled": {
     "message": "Chrome Sync kuwekad."
@@ -751,16 +751,16 @@
     "message": "Chrome Sync is kwenye."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync is zima."
+    "message": "Chrome Sync is waf."
   },
   "options_privacy_sync_changes_saved": {
     "message": "Chrome Sync changes kuhifadhid."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Retry enablkatikag Chrome Sync"
+    "message": "Jaribu Tena enabling Chrome Sync"
   },
   "options_privacy_retry_sync": {
-    "message": "Jaribu tena Chrome Panga"
+    "message": "Jaribu Tena Chrome Sync"
   },
   "options_privacy_scope_synced": {
     "message": "Pangaed"
@@ -769,13 +769,13 @@
     "message": "Local kwenyely"
   },
   "options_privacy_developer_note": {
-    "message": "Nothkatikag is sent kwa the Mtazamo Lock developer."
+    "message": "Nothing is sent to the Fokasi Lock developer."
   },
   "options_privacy_local_log_heading": {
     "message": "Local event kumbuka"
   },
   "options_privacy_local_log_detail": {
-    "message": "Expaut the detailed local log au delete local browskatikag na sessikwenye histauy."
+    "message": "Expaut the detailed local log au kufuta local browskatikag na kikao histauy."
   },
   "options_privacy_export_local_log": {
     "message": "Expaut local event log"
@@ -784,46 +784,46 @@
     "message": "Local event log expauted."
   },
   "options_privacy_delete_local_history": {
-    "message": "Kufuta local histauy"
+    "message": "Futa local history"
   },
   "options_privacy_remote_data_heading": {
     "message": "Remote Panga data"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Delete the Focus Lock copies left in Chrome Sync without changing hii device."
+    "message": "Futa the Fokasi Lock copies left in Chrome Sync without changing this device."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Kufuta remote Sync data"
+    "message": "Futa remote Sync data"
   },
   "options_privacy_all_data_heading": {
-    "message": "Zote Focus Lock data"
+    "message": "All Fokasi Lock data"
   },
   "options_privacy_all_data_detail": {
-    "message": "Delete every Focus Lock record on hii device and any Focus Lock copies left in Chrome Sync, then start again from setup. Available while no session is running."
+    "message": "Futa every Fokasi Lock record on this device and any Fokasi Lock copies left in Chrome Sync, then start again from setup. Available while no session is running."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "Resumkatikag deletikwenye wa all Mtazamo Lock data."
+    "message": "Resuming deletion of all Fokasi Lock data."
   },
   "options_privacy_retry_local_history": {
-    "message": "Retry local histauy deletikwenye"
+    "message": "Jaribu Tena local history deletion"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Retry remote Sync deletikwenye"
+    "message": "Jaribu Tena remote Sync deletion"
   },
   "options_privacy_retry_all_data": {
-    "message": "Retry all data deletikwenye"
+    "message": "Jaribu Tena all data deletion"
   },
   "options_error_load": {
-    "message": "Could not load settkatikags. Reload the page kwa try agakatika."
+    "message": "Could not load mipangilio. Reload the page kwa try agakatika."
   },
   "options_error_retry_boot": {
-    "message": "Could not restart Mtazamo Lock. Try agakatika."
+    "message": "Could not restart Fokasi Lock. Try again."
   },
   "options_error_refresh_privacy": {
-    "message": "Could not refresh privacy settkatikags. Reload the page."
+    "message": "Could not refresh privacy mipangilio. Reload the page."
   },
   "options_error_website_blocking": {
-    "message": "Could not update website blockkatikag. Try agakatika."
+    "message": "Could not update webkwavuti kuzuiakatikag. Try agakatika."
   },
   "options_error_change_sync": {
     "message": "Could not change Chrome Sync. Try agakatika."
@@ -832,9 +832,9 @@
     "message": "Could not retry Chrome Sync. Try agakatika."
   },
   "options_error_save_settings": {
-    "message": "Could not save settkatikags. Reload the page na try agakatika."
+    "message": "Could not kuhifadhi mipangilio. Reload the page na try agakatika."
   },
   "options_error_save_lists": {
-    "message": "Could not save lists. Reload the page na try agakatika."
+    "message": "Could not kuhifadhi lists. Reload the page na try agakatika."
   }
 }

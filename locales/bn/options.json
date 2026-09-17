@@ -1,1 +1,849 @@
-{}
+{
+  "options_page_title": {
+    "message": "Focus Lock বিকল্প"
+  },
+  "options_heading": {
+    "message": "Focus Lock সেটিংস"
+  },
+  "options_loading_settings": {
+    "message": "সেটিংস লোড হচ্ছে"
+  },
+  "options_privacy_loading": {
+    "message": "গোপনীয়তা সেটিংস লোড হচ্ছে"
+  },
+  "options_save_failed": {
+    "message": "সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_blocking_heading": {
+    "message": "ব্লকিং"
+  },
+  "options_blocking_help": {
+    "message": "আপনার নিজের নিয়ম ব্লক তালিকার সেশনে ব্লক করে। অনুমতি তালিকা সেটাই, যা অনুমতি তালিকার সেশনে খোলা থাকে। তৈরি বিভাগগুলি চেনা সময়নষ্টকারী সাইট ব্লক করে।"
+  },
+  "options_custom_blacklist_title": {
+    "message": "নিজের ব্লক তালিকা"
+  },
+  "options_whitelist_title": {
+    "message": "অনুমতি তালিকা"
+  },
+  "options_bundled_categories_heading": {
+    "message": "তৈরি বিভাগ"
+  },
+  "options_bundled_categories_help": {
+    "message": "চেনা সময়নষ্টকারী সাইটের তৈরি তালিকা। গোটা বিভাগ চালু বা বন্ধ করুন, তারপর সেটি খুলে আলাদা সাইট খোলা রাখুন।"
+  },
+  "options_schedule_heading": {
+    "message": "সময়সূচি"
+  },
+  "options_schedule_help": {
+    "message": "এই সময়সীমার মধ্যে সেশন নিজে থেকেই শুরু হয়। এখানে দেওয়া কঠোরতা পুরো সময়সীমায় কাজ করে।"
+  },
+  "options_behavior_heading": {
+    "message": "সেশনের আচরণ"
+  },
+  "options_budget_heading": {
+    "message": "সাইট অ্যাক্সেস ক্রেডিট"
+  },
+  "options_notifications_heading": {
+    "message": "বিজ্ঞপ্তি"
+  },
+  "options_privacy_heading": {
+    "message": "গোপনীয়তা ও ডেটা"
+  },
+  "options_load_error_retry": {
+    "message": "আবার চেষ্টা করুন"
+  },
+  "options_load_error_delete_all": {
+    "message": "সব মুছে নতুন করে শুরু করুন"
+  },
+  "options_load_error_keep_data": {
+    "message": "আমার ডেটা রাখুন"
+  },
+  "options_delete_all_data": {
+    "message": "Focus Lock-এর সমস্ত ডেটা মুছুন"
+  },
+  "options_dirty_saving": {
+    "message": "পরিবর্তন সংরক্ষণ করা হচ্ছে"
+  },
+  "options_dirty_unsaved": {
+    "message": "অসংরক্ষিত পরিবর্তন"
+  },
+  "options_dirty_clean": {
+    "message": "কোনো অসংরক্ষিত পরিবর্তন নেই"
+  },
+  "options_dirty_discard": {
+    "message": "পরিবর্তন বাতিল করুন"
+  },
+  "options_dirty_save": {
+    "message": "পরিবর্তন সংরক্ষণ করুন"
+  },
+  "options_session_status_label": {
+    "message": "সেশনের অবস্থা"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "ডোমেন"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "রেগেক্স"
+  },
+  "options_rule_remove": {
+    "message": "সরান"
+  },
+  "options_rule_remove_aria": {
+    "message": "$PATTERN$ সরান",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "এখনও কোনো নিয়ম নেই।"
+  },
+  "options_rule_kind_aria": {
+    "message": "নিয়মের ধরন"
+  },
+  "options_rule_kind_host_option": {
+    "message": "ডোমেন বা সাবডোমেন"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "রেগেক্স (পূর্ণ URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "প্যাটার্ন"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "instagram.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/instagram\\.com\\/reels/"
+  },
+  "options_rule_add": {
+    "message": "নিয়ম যোগ করুন"
+  },
+  "options_rules_help": {
+    "message": "facebook.com সেই ডোমেন ও তার প্রতিটি সাবডোমেনে কাজ করে। news.ycombinator.com সেই সাবডোমেন ও তার নিচের সবকিছুতে কাজ করে। /youtube\\.com\\/shorts/ পূর্ণ URL-এর সঙ্গে রেগুলার এক্সপ্রেশন হিসেবে মেলে।"
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ শূন্যের চেয়ে বড় পূর্ণ সংখ্যা হতে হবে।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ শূন্য বা তার বেশি পূর্ণ সংখ্যা হতে হবে।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ শূন্য বা তার বেশি হতে হবে।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ সমর্থিত মিনিটের সীমার মধ্যে হতে হবে।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ সমর্থিত দিনের সীমার মধ্যে হতে হবে।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "সেশনের ডিফল্ট"
+  },
+  "options_session_defaults_help": {
+    "message": "সেশন শুরু হলেই মোড ও কঠোরতা ঠিক হয়ে যায়। শুরুর ফর্ম এই মানগুলি নিয়েই খোলে।"
+  },
+  "options_preset_short_label": {
+    "message": "ছোট সেশন প্রিসেট (মিনিট)"
+  },
+  "options_preset_default_label": {
+    "message": "ডিফল্ট সেশন প্রিসেট (মিনিট)"
+  },
+  "options_preset_deep_label": {
+    "message": "গভীর সেশন প্রিসেট (মিনিট)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "ব্লক তালিকা: তালিকার সাইট ব্লক করুন"
+  },
+  "options_mode_whitelist_label": {
+    "message": "অনুমতি তালিকা: শুধু তালিকার সাইট খুলুন"
+  },
+  "options_strictness_flexible_label": {
+    "message": "নমনীয়: যখন ইচ্ছা সেশন শেষ করুন"
+  },
+  "options_strictness_friction_label": {
+    "message": "বিলম্বসহ: আগে থামাতে হলে নির্ধারিত নিশ্চিতকরণ স্ক্রিন পেরোতে হয়"
+  },
+  "options_strictness_hard_label": {
+    "message": "কঠোর: আগে শেষ করা যায় না, শুধু সাময়িক সাইট অ্যাক্সেস"
+  },
+  "options_cycle_heading": {
+    "message": "ফোকাস ও বিরতির চক্র"
+  },
+  "options_cycle_help": {
+    "message": "ডিফল্ট: 25 মিনিট ফোকাস, 5 মিনিট বিরতি, প্রতি 4র্থ চক্রে 15 মিনিটের লম্বা বিরতি। শিক্ষার্থীদের নিয়ে করা গবেষণায় সময়সূচি মেনে নেওয়া বিরতি মন ও মনোযোগের জন্য ইচ্ছেমতো নেওয়া বিরতির চেয়ে ভালো। মিনিটের সংখ্যাগুলি প্রথা, বিজ্ঞান নয়।"
+  },
+  "options_cycle_default_label": {
+    "message": "ডিফল্টভাবে সেশনকে ফোকাস ও বিরতিতে ভাগ করুন"
+  },
+  "options_focus_minutes_label": {
+    "message": "ফোকাসের মিনিট"
+  },
+  "options_short_break_minutes_label": {
+    "message": "ছোট বিরতির মিনিট"
+  },
+  "options_long_break_minutes_label": {
+    "message": "লম্বা বিরতির মিনিট"
+  },
+  "options_long_every_label": {
+    "message": "প্রতি N-তম চক্রে লম্বা বিরতি"
+  },
+  "options_gate_heading": {
+    "message": "নিশ্চিতকরণ স্ক্রিন"
+  },
+  "options_gate_help": {
+    "message": "কাজে ফেরার স্পষ্ট বোতাম সহ 10 সেকেন্ডের অপেক্ষা ঝোঁকের বশে করা ভিজিট লক্ষণীয়ভাবে কমায় (ফিল্ড গবেষণা, PNAS 2023)। লম্বা অপেক্ষা ও টাইপ করা বাক্য এই প্রভাব প্রায় দ্বিগুণ করে।"
+  },
+  "options_gate_wait_one": {
+    "message": "$COUNT$ সেকেন্ড অপেক্ষা করুন",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "$COUNT$ সেকেন্ড অপেক্ষা করুন",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "নিজের পছন্দ"
+  },
+  "options_custom_delay_label": {
+    "message": "নিজের বিলম্ব (সেকেন্ড)"
+  },
+  "options_custom_delay_error": {
+    "message": "নিজের বিলম্ব শূন্যের চেয়ে বড় পূর্ণ সংখ্যক সেকেন্ড হতে হবে।"
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "একটি বাক্য টাইপ করাও বাধ্যতামূলক করুন"
+  },
+  "options_gate_force_end_label": {
+    "message": "“অপেক্ষা বাদ দিয়ে শেষ করুন” বোতাম দেখান"
+  },
+  "options_credit_help": {
+    "message": "ফোকাস করার সময় সাইট অ্যাক্সেস ক্রেডিট জমে। সব সাইটের অ্যাক্সেস আর একটি সাইটের আনলক, দুটিই একই ব্যালান্স থেকে খরচ হয়। ক্রেডিট খরচ না করেই আপনি যেকোনো সময় সরে যেতে পারেন।"
+  },
+  "options_earn_rate_label": {
+    "message": "প্রতি 30 মিনিট ফোকাসে পাওয়া সাইট অ্যাক্সেসের মিনিট"
+  },
+  "options_credit_cap_label": {
+    "message": "সাইট অ্যাক্সেস ক্রেডিটের সীমা (মিনিট)"
+  },
+  "options_pause_length_label": {
+    "message": "সব সাইটের অ্যাক্সেসের দৈর্ঘ্য (মিনিট)"
+  },
+  "options_unlock_length_label": {
+    "message": "সাইট আনলকের দৈর্ঘ্য (মিনিট)"
+  },
+  "options_streak_heading": {
+    "message": "স্ট্রিক ও ডেটা রাখার মেয়াদ"
+  },
+  "options_streak_help": {
+    "message": "স্ট্রিক সেই দিনগুলি গোনে যেদিন লক্ষ্য পূরণ হয়। একটি ডিফল্ট সেশনই ধারাবাহিকতা ধরে রাখে, আর একটি ফ্রিজ টোকেন বাদ পড়া দিন পুষিয়ে দেয়।"
+  },
+  "options_streak_goal_label": {
+    "message": "দৈনিক স্ট্রিক লক্ষ্য (ফোকাস মিনিট)"
+  },
+  "options_freeze_interval_label": {
+    "message": "ফ্রিজ টোকেন পাওয়ার ব্যবধান (দিন)"
+  },
+  "options_retention_label": {
+    "message": "দৈনিক পরিসংখ্যান রাখুন (দিন)"
+  },
+  "options_category_on_announcement": {
+    "message": "$CATEGORY$ বিভাগ চালু।",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "$CATEGORY$ বিভাগ বন্ধ।",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "সব বিভাগ চালু।"
+  },
+  "options_all_categories_off_announcement": {
+    "message": "সব বিভাগ বন্ধ।"
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ যুক্ত করা হয়েছে।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ খোলা রাখা হয়েছে।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "$CATEGORY$-এর সব সাইট যুক্ত করা হয়েছে।",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "$CATEGORY$-এর সব সাইট খোলা রাখা হয়েছে।",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "বিভাগে একসঙ্গে কাজ"
+  },
+  "options_selected_count": {
+    "message": "$COUNT$টি বেছে নেওয়া",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "$COUNT$টি বাদ দেওয়া",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "সব বাছুন"
+  },
+  "options_deselect_all": {
+    "message": "সব বাদ দিন"
+  },
+  "options_select_all_categories_aria": {
+    "message": "সব বিভাগ বাছুন"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "সব বিভাগ বাদ দিন"
+  },
+  "options_show_category_sites": {
+    "message": "$CATEGORY$-এর সাইট দেখান",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "$CATEGORY$-এর সাইট লুকান",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$টি সাইট যুক্ত",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$টি সাইট যুক্ত",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "বিভাগ বন্ধ"
+  },
+  "options_included_when_enabled_one": {
+    "message": "চালু করলে $COUNT$টি যুক্ত হবে",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "চালু করলে $COUNT$টি যুক্ত হবে",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "কোনো সাইটের টিক তুলে দিন, যাতে বিভাগের বাকি অংশ ব্লক থাকলেও সেটি খোলা থাকে।"
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$-এর সাইটে একসঙ্গে কাজ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "$CATEGORY$-এর সব সাইট বাছুন",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "$CATEGORY$-এর সব সাইট বাদ দিন",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$-এর সাইট",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "রবি"
+  },
+  "options_day_mon": {
+    "message": "সোম"
+  },
+  "options_day_tue": {
+    "message": "মঙ্গল"
+  },
+  "options_day_wed": {
+    "message": "বুধ"
+  },
+  "options_day_thu": {
+    "message": "বৃহ"
+  },
+  "options_day_fri": {
+    "message": "শুক্র"
+  },
+  "options_day_sat": {
+    "message": "শনি"
+  },
+  "options_schedule_cycles_label": {
+    "message": "ফোকাস ও বিরতিতে ভাগ করুন"
+  },
+  "options_schedule_overlap_error": {
+    "message": "$DAY$-এ আরেকটি চালু এন্ট্রির সঙ্গে মিলে যাচ্ছে।",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "সেশনের ধরন"
+  },
+  "options_schedule_entry_legend": {
+    "message": "সময়সূচির এন্ট্রি"
+  },
+  "options_schedule_start_label": {
+    "message": "শুরু"
+  },
+  "options_schedule_end_label": {
+    "message": "শেষ"
+  },
+  "options_schedule_duration_legend": {
+    "message": "সময়কাল"
+  },
+  "options_schedule_intention_label": {
+    "message": "উদ্দেশ্য"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "এই সময়টি কীসের জন্য"
+  },
+  "options_schedule_save_entry": {
+    "message": "এন্ট্রি সংরক্ষণ করুন"
+  },
+  "options_cancel": {
+    "message": "বাতিল"
+  },
+  "options_schedule_empty": {
+    "message": "এখনও কোনো সময়সূচির সেশন নেই।"
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "বেছে নেওয়া দিন"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ থেকে $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "ব্লক তালিকা"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "অনুমতি তালিকা"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "নমনীয়"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "বিলম্বসহ"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "কঠোর"
+  },
+  "options_schedule_enabled_label": {
+    "message": "চালু"
+  },
+  "options_schedule_edit": {
+    "message": "সম্পাদনা"
+  },
+  "options_schedule_delete": {
+    "message": "মুছুন"
+  },
+  "options_schedule_add": {
+    "message": "সময়সূচির এন্ট্রি যোগ করুন"
+  },
+  "options_sounds_heading": {
+    "message": "শব্দ"
+  },
+  "options_master_volume": {
+    "message": "মূল ভলিউম"
+  },
+  "options_sound_session_complete": {
+    "message": "সেশন সম্পূর্ণ"
+  },
+  "options_sound_break_start": {
+    "message": "বিরতি শুরু"
+  },
+  "options_sound_break_end": {
+    "message": "বিরতি শেষ"
+  },
+  "options_sound_schedule_start": {
+    "message": "সময়সূচি থেকে নিজে শুরু"
+  },
+  "options_sound_preview_aria": {
+    "message": "$SOUND$ শুনে দেখুন",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "বাজান"
+  },
+  "options_sound_preview_error": {
+    "message": "শব্দটি শোনানো যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_sounds_notifications_heading": {
+    "message": "বিজ্ঞপ্তি"
+  },
+  "options_session_complete_notification": {
+    "message": "সেশন শেষ হলে সিস্টেম বিজ্ঞপ্তি দেখান"
+  },
+  "options_badge_heading": {
+    "message": "ব্যাজ"
+  },
+  "options_badge_countdown": {
+    "message": "টুলবার আইকনে বাকি সময় দেখান"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "ওয়েবসাইট অ্যাক্সেস"
+  },
+  "options_privacy_website_off_title": {
+    "message": "ওয়েবসাইট অ্যাক্সেস বন্ধ"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "আপনি অ্যাক্সেস না দেওয়া পর্যন্ত Focus Lock ওয়েবসাইট ব্লক করতে পারে না।"
+  },
+  "options_privacy_website_enable_action": {
+    "message": "ওয়েবসাইট ব্লকিং চালু করুন"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "ওয়েবসাইট অ্যাক্সেস দেওয়া হয়েছে, কিন্তু ব্লকিং সক্রিয় নয়"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome অ্যাক্সেস দিয়েছে, কিন্তু Focus Lock তার ব্লকিং স্ক্রিপ্ট নিবন্ধন করতে পারেনি।"
+  },
+  "options_privacy_website_retry_action": {
+    "message": "ওয়েবসাইট ব্লকিং আবার চেষ্টা করুন"
+  },
+  "options_privacy_website_on_title": {
+    "message": "ওয়েবসাইট ব্লকিং চালু আছে"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock সাধারণ ওয়েবসাইটের পাতায় আপনার চালু ব্লকিং নিয়ম প্রয়োগ করতে পারে।"
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "স্থানীয় ইতিহাস মুছবেন?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "স্থানীয় ইতিহাস মোছা নিশ্চিত করুন"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "স্থানীয় ইতিহাস মুছে ফেলা হয়েছে।"
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "এতে এই ডিভাইস থেকে পূর্ণ URL, ফোকাসের উদ্দেশ্য এবং সেশনের বিস্তারিত ঘটনা চিরতরে মুছে যাবে। এতে চলমান সেশন শেষ হয় না, যা নিজের উদ্দেশ্য এবং ব্লক করা প্রতিটি ট্যাবের ঠিকানা ধরে রাখে। সেশন শেষ করলে উদ্দেশ্য মুছে যায় এবং প্রতিটি খোলা ওয়েবসাইট ট্যাব পরিষ্কার করা শুরু হয়, আর সেই পরিষ্কার শেষ হলে সংরক্ষিত প্রতিটি ঠিকানা মুছে যায়।"
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "এতে এই ডিভাইস থেকে পূর্ণ URL, ফোকাসের উদ্দেশ্য এবং সেশনের বিস্তারিত ঘটনা, সেইসঙ্গে শুধু এই ডিভাইসে রাখা সারসংক্ষেপ পরিসংখ্যান চিরতরে মুছে যাবে। এতে চলমান সেশন শেষ হয় না, যা নিজের উদ্দেশ্য এবং ব্লক করা প্রতিটি ট্যাবের ঠিকানা ধরে রাখে। সেশন শেষ করলে উদ্দেশ্য মুছে যায় এবং প্রতিটি খোলা ওয়েবসাইট ট্যাব পরিষ্কার করা শুরু হয়, আর সেই পরিষ্কার শেষ হলে সংরক্ষিত প্রতিটি ঠিকানা মুছে যায়।"
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "Chrome সিঙ্ক থেকে ডেটা মুছবেন?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Chrome সিঙ্ক থেকে ডেটা মোছা নিশ্চিত করুন"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Chrome সিঙ্কের ডেটা মুছে ফেলা হয়েছে।"
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "এতে Chrome সিঙ্ক থেকে সেটিংস, ব্লক ও অনুমতি তালিকা, সাইট অ্যাক্সেস ক্রেডিট, স্ট্রিক এবং ডোমেন অনুযায়ী ব্লক হওয়া চেষ্টার সারসংক্ষেপ চিরতরে মুছে যাবে। স্থানীয় সেটিংস ও পরিসংখ্যান এই ডিভাইসেই থাকবে।"
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "Focus Lock-এর সমস্ত ডেটা মুছবেন?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Focus Lock-এর সমস্ত ডেটা মোছা নিশ্চিত করুন"
+  },
+  "options_privacy_all_deleted": {
+    "message": "Focus Lock-এর সমস্ত ডেটা মুছে ফেলা হয়েছে।"
+  },
+  "options_privacy_all_body_intro": {
+    "message": "এতে এই ডিভাইসে Focus Lock-এর প্রতিটি ডেটা এবং Chrome সিঙ্কে থেকে যাওয়া Focus Lock-এর প্রতিটি কপি চিরতরে মুছে যাবে:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "সব মোছার সুযোগ শুধু তখনই থাকে যখন কোনো সেশন চলছে না। এরপর Focus Lock আবার সেটআপে ফিরে যায়।"
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "স্থানীয় ইতিহাস মোছা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Chrome সিঙ্কের ডেটা মোছা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_privacy_error_all_clear": {
+    "message": "Focus Lock-এর সমস্ত ডেটা মোছা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome সিঙ্ক আপনার সর্বশেষ পরিবর্তন সংরক্ষণ করতে পারেনি। আপনার স্থানীয় সংরক্ষণ নিরাপদ আছে।"
+  },
+  "options_privacy_error_request": {
+    "message": "অনুরোধটি সম্পূর্ণ করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_privacy_website_access_updated": {
+    "message": "ওয়েবসাইট অ্যাক্সেস আপডেট হয়েছে।"
+  },
+  "options_privacy_website_access_denied": {
+    "message": "ওয়েবসাইট অ্যাক্সেস দেওয়া হয়নি।"
+  },
+  "options_privacy_error_website_access": {
+    "message": "ওয়েবসাইট অ্যাক্সেস আপডেট করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "ওয়েবসাইট ব্লকিং চালু হয়েছে।"
+  },
+  "options_privacy_error_export": {
+    "message": "ইভেন্ট লগ এক্সপোর্ট করা যায়নি।"
+  },
+  "options_privacy_error_export_retry": {
+    "message": "ইভেন্ট লগ এক্সপোর্ট করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Chrome-এর অনুমতি সেটিংস খোলা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome-এর অনুমতি সেটিংস খোলা হয়েছে।"
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Chrome-এর অনুমতি সেটিংস খুলুন"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome সিঙ্ক"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Chrome ডিভাইসগুলির মধ্যে Focus Lock-এর ডেটা সিঙ্ক করুন"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome সিঙ্ক চালু হয়েছে।"
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome সিঙ্ক বন্ধ হয়েছে।"
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome সিঙ্ক এখনও আপনার সর্বশেষ পরিবর্তন সংরক্ষণ করছে।"
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome সিঙ্ক চালু আছে।"
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome সিঙ্ক বন্ধ আছে।"
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "পরিবর্তন Chrome সিঙ্কে সংরক্ষিত হয়েছে।"
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome সিঙ্ক চালু করা আবার চেষ্টা করুন"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Chrome সিঙ্ক আবার চেষ্টা করুন"
+  },
+  "options_privacy_scope_synced": {
+    "message": "সিঙ্ক হয়"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "শুধু স্থানীয়"
+  },
+  "options_privacy_developer_note": {
+    "message": "Focus Lock-এর ডেভেলপারকে কিছুই পাঠানো হয় না।"
+  },
+  "options_privacy_local_log_heading": {
+    "message": "স্থানীয় ইভেন্ট লগ"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "বিস্তারিত স্থানীয় লগ এক্সপোর্ট করুন অথবা স্থানীয় ব্রাউজিং ও সেশন ইতিহাস মুছুন।"
+  },
+  "options_privacy_export_local_log": {
+    "message": "স্থানীয় ইভেন্ট লগ এক্সপোর্ট করুন"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "স্থানীয় ইভেন্ট লগ এক্সপোর্ট হয়েছে।"
+  },
+  "options_privacy_delete_local_history": {
+    "message": "স্থানীয় ইতিহাস মুছুন"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Chrome সিঙ্কের ডেটা"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "এই ডিভাইস না বদলে Chrome সিঙ্কে থেকে যাওয়া Focus Lock-এর কপিগুলি মুছুন।"
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "Chrome সিঙ্কের ডেটা মুছুন"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "Focus Lock-এর সমস্ত ডেটা"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "এই ডিভাইসে Focus Lock-এর প্রতিটি রেকর্ড এবং Chrome সিঙ্কে থেকে যাওয়া Focus Lock-এর প্রতিটি কপি মুছে ফেলুন, তারপর সেটআপ থেকে নতুন করে শুরু করুন। কোনো সেশন না চললেই এটি পাওয়া যায়।"
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "Focus Lock-এর সমস্ত ডেটা মোছার কাজ আবার শুরু করা হচ্ছে।"
+  },
+  "options_privacy_retry_local_history": {
+    "message": "স্থানীয় ইতিহাস মোছা আবার চেষ্টা করুন"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "Chrome সিঙ্কের ডেটা মোছা আবার চেষ্টা করুন"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "সমস্ত ডেটা মোছা আবার চেষ্টা করুন"
+  },
+  "options_error_load": {
+    "message": "সেটিংস লোড করা যায়নি। আবার চেষ্টা করতে পাতাটি রিলোড করুন।"
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lock আবার চালু করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_error_refresh_privacy": {
+    "message": "গোপনীয়তা সেটিংস রিফ্রেশ করা যায়নি। পাতাটি রিলোড করুন।"
+  },
+  "options_error_website_blocking": {
+    "message": "ওয়েবসাইট ব্লকিং আপডেট করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_error_change_sync": {
+    "message": "Chrome সিঙ্ক বদলানো যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome সিঙ্ক আবার চেষ্টা করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "options_error_save_settings": {
+    "message": "সেটিংস সংরক্ষণ করা যায়নি। পাতাটি রিলোড করে আবার চেষ্টা করুন।"
+  },
+  "options_error_save_lists": {
+    "message": "তালিকা সংরক্ষণ করা যায়নি। পাতাটি রিলোড করে আবার চেষ্টা করুন।"
+  }
+}

@@ -1,1 +1,177 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Focus Locki seadistamine"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Locki seadistus"
+  },
+  "onboarding_progress": {
+    "message": "Samm $STEP$ / $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Sinu salvestatud seadistuse edenemist ei õnnestunud taastada. Alustatakse uuesti praeguste vaikeväärtustega."
+  },
+  "onboarding_complete_heading": {
+    "message": "Seadistamine lõpetatud"
+  },
+  "onboarding_complete_body": {
+    "message": "Sinu valikud on salvestatud. Ava Focus Lock Chrome'i tööriistaribalt, et alustada seanssi."
+  },
+  "onboarding_error_heading": {
+    "message": "Seadistus pole saadaval"
+  },
+  "onboarding_error_body": {
+    "message": "Seadistuse laadimine ebaõnnestus. Proovi uuesti."
+  },
+  "onboarding_retry_button": {
+    "message": "Proovi uuesti"
+  },
+  "onboarding_save_error": {
+    "message": "Seadistuse edenemise salvestamine ebaõnnestus. Proovi uuesti."
+  },
+  "onboarding_enable_error": {
+    "message": "Veebisaitide blokeerimise lubamine ebaõnnestus. Proovi uuesti."
+  },
+  "onboarding_finish_error": {
+    "message": "Seadistamise lõpetamine ebaõnnestus. Sinu valikud on endiselt salvestatud. Proovi uuesti."
+  },
+  "onboarding_lists_heading": {
+    "message": "Vali oma esialgne blokeerimisnimekiri"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Režiimis $MODE$ pole lubatud kategooriad ja lisatud blokeeritud saidid saadaval.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Režiimis $MODE$ pole ükski sait saadaval, välja arvatud sinu lubamisnimekiri.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Need valikud saavad tulevaste seansside vaikeväärtusteks. Saad neid hiljem muuta."
+  },
+  "onboarding_lists_legend": {
+    "message": "Soovitatud veebisaidi kategooriad"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ sait",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ saiti",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Näita $CATEGORY$ saite",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Peida $CATEGORY$ saidid",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ domeenid",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Jätka"
+  },
+  "onboarding_access_heading": {
+    "message": "Luba veebisaitide blokeerimine"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock kontrollib lehtede aadresse kohapeal, et sobitada neid sinu valitud kategooriate ja saitidega. Ta kasutab veebisaidi juurdepääsu, et näidata oma blokeerimiskuva ja taastada mõjutatud lehed, kui sinu seanss lõpeb."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategooriad ja kohandatud domeenid võivad sisaldada mistahes veebisaiti. Seetõttu küsib Chrome järgmist õigust:"
+  },
+  "onboarding_access_capability": {
+    "message": "Kõigi sinu andmete lugemine ja muutmine kõigil veebisaitidel"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock kasutab seda juurdepääsu ainult sinu blokeerimisreeglite rakendamisel."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome ei andnud veebisaidi juurdepääsu. Võid uuesti proovida."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Veebisaidi juurdepääs on antud, kuid Focus Lock ei suutnud blokeerimist lubada. Proovi seadistust uuesti või laadi laiendus uuesti."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Luba veebisaitide blokeerimine"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Mitte praegu"
+  },
+  "onboarding_sync_heading": {
+    "message": "Vali, kus sinu seaded talletatakse"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Sünkrooni Chrome'i seadmete vahel"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Allpool heaks kiidetud andmed kasutavad pärast seadistamise lõpetamist Chrome'i sünkroonimist."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Kõik Focus Locki andmed jäävad sellesse Chrome'i profiili."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Sünkroonitud"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Ainult kohalik"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Locki arendajale ei saadeta midagi."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Lõpeta seadistus sünkroonimine lubatuna"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Lõpeta seadistus ilma sünkroonimiseta"
+  }
+}

@@ -362,3 +362,33 @@ describe('mergeTranslation never regresses a translation', () => {
     expect(write({ popup_start: 'Start' }).popup_start?.message).toBe('Starten');
   });
 });
+
+describe('repairPlaceholders recovers a corrupted name', () => {
+  it('restores one name a global find and replace rewrote', () => {
+    const source = {
+      message: 'Focus Lock did not finish starting: $REASON$',
+      placeholders: { REASON: { content: '$1' } },
+    };
+    expect(repairPlaceholders(source, 'hindi natapos: $REASBUKAS$')).toBe(
+      'hindi natapos: $REASON$',
+    );
+  });
+
+  it('restores two names in the order they appear', () => {
+    const source = {
+      message: '$ACTION$ $DESTINATION$',
+      placeholders: { ACTION: { content: '$1' }, DESTINATION: { content: '$2' } },
+    };
+    expect(repairPlaceholders(source, '$ACTIBUKAS$ sa $DESTINATIBUKAS$')).toBe(
+      '$ACTION$ sa $DESTINATION$',
+    );
+  });
+
+  it('leaves a translation alone when the counts do not line up', () => {
+    const source = {
+      message: '$ACTION$ $DESTINATION$',
+      placeholders: { ACTION: { content: '$1' }, DESTINATION: { content: '$2' } },
+    };
+    expect(repairPlaceholders(source, 'only $ACTIBUKAS$ here')).toBe('only $ACTIBUKAS$ here');
+  });
+});

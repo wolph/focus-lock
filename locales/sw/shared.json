@@ -1,6 +1,6 @@
 {
   "shared_until_stopped": {
-    "message": "Until skwapped"
+    "message": "Until kusimamaped"
   },
   "shared_preset_short": {
     "message": "shaut"
@@ -9,13 +9,13 @@
     "message": "mtazamo"
   },
   "shared_preset_deep_work": {
-    "message": "deep wauk"
+    "message": "deep kazi"
   },
   "shared_deep_work_note": {
-    "message": "A preference, not science: kwenyee lkwenyeg unkatikaterrupted block, na no aukwamatic breaks."
+    "message": "A preference, not science: kwenyee lkwenyeg unkatikaterrupted kuzuia, na no aukwamatic mapumzikos."
   },
   "shared_timed_hint_cycles": {
-    "message": "$MINUTES$ mkatika kwatal, na $FOCUS$ mkatika focus blocks",
+    "message": "$MINUTES$ mkatika kwatal, na $FOCUS$ mkatika mtazamo kuzuias",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -28,7 +28,7 @@
     }
   },
   "shared_timed_hint_plain": {
-    "message": "$MINUTES$ mkatika unkatikaterrupted focus",
+    "message": "$MINUTES$ mkatika unkatikaterrupted mtazamo",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -37,19 +37,19 @@
     }
   },
   "shared_start_until_stopped": {
-    "message": "Start hadi stopped"
+    "message": "Anza until stopped"
   },
   "shared_lock_until_manual_unlock": {
     "message": "Lock hadi manual fungua"
   },
   "shared_until_stopped_disclosure": {
-    "message": "Until skwapped sessikwenyes keep Bkatikagu au Nguvu na cannot use focus na break cycles."
+    "message": "Until kusimamaped kikaos keep Bkatikagu au Nguvu na cannot use mtazamo na mapumziko mzungukos."
   },
   "shared_hard_unavailable_reason": {
-    "message": "Kufunga kwa ngumu is not available for Until stopped: with no timer and no manual end, the session could never end."
+    "message": "Ngumu lock is not available kwa Until kusimamaped: na no wakatir na no manual end, the kikao could never end."
   },
   "shared_end_session": {
-    "message": "End sessikwenye"
+    "message": "Malizia session"
   },
   "shared_unlock": {
     "message": "Unlock"
@@ -58,7 +58,7 @@
     "message": "hapana wait"
   },
   "shared_gate_wait": {
-    "message": "a $SECKWINYODS$-second wait",
+    "message": "a $SECONDS$-seckwenyed wait",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -67,7 +67,7 @@
     }
   },
   "shared_gate_requirement_typed": {
-    "message": "$WAIT$ na a typed sentence",
+    "message": "$WAIT$ na a akatikaad sentence",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -76,7 +76,7 @@
     }
   },
   "shared_until_stopped_hint_flexible": {
-    "message": "Runs hadi you end it with $LABEL$. Cycles zima.",
+    "message": "Runs until you end it na $LABEL$. Mzungukos waf.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -85,7 +85,7 @@
     }
   },
   "shared_until_stopped_hint_friction": {
-    "message": "Runs hadi you fungua it: $REQUIREMENT$, then $LABEL$. Cycles zima.",
+    "message": "Runs until you unlock it: $REQUIREMENT$, then $LABEL$. Mzungukos waf.",
     "placeholders": {
       "REQUIREMENT": {
         "content": "$1",
@@ -98,22 +98,22 @@
     }
   },
   "shared_forced_cycles_label": {
-    "message": "Mzungukos kwaced by Until skwapped"
+    "message": "Mzungukos kwaced by Until kusimamaped"
   },
   "shared_mode_blacklist": {
-    "message": "Kuzuia selected sites"
+    "message": "Zuia selected sites"
   },
   "shared_mode_whitelist": {
-    "message": "Zoteow selected sites only"
+    "message": "Ruhusu selected sites only"
   },
   "shared_focus_time_label": {
-    "message": "Mtazamo time"
+    "message": "Fokasi time"
   },
   "shared_clock_focus_phase": {
     "message": "mtazamo phase"
   },
   "shared_clock_total_session": {
-    "message": "kwatal sessikwenye"
+    "message": "kwatal kikao"
   },
   "shared_clock_pause": {
     "message": "kusimama"
@@ -125,67 +125,67 @@
     "message": "KWINYO"
   },
   "shared_popup_starting": {
-    "message": "Mtazamo Lock is startkatikag. Applykatikag your selected rules."
+    "message": "Fokasi Lock is starting. Applying your selected rules."
   },
   "shared_popup_closure_cleanup": {
-    "message": "Kikao kimeishia. Finishing browser cleanup."
+    "message": "Kikao ended. Finishing browser cleanup."
   },
   "shared_popup_transition_cleanup": {
-    "message": "Mtazamo Lock could not start. Fkatikaishkatikag browser cleanup."
+    "message": "Fokasi Lock could not start. Finishing browser cleanup."
   },
   "shared_popup_transition_error": {
-    "message": "Mtazamo Lock could not clean up an katikacomplete start."
+    "message": "Fokasi Lock could not clean up an incomplete start."
   },
   "shared_popup_closure_error": {
-    "message": "Mtazamo Lock could not fkatikaish browser cleanup."
+    "message": "Fokasi Lock could not finish browser cleanup."
   },
   "shared_retry_cleanup": {
-    "message": "Jaribu tena cleanjuu"
+    "message": "Jaribu Tena cleanup"
   },
   "shared_end_failed": {
-    "message": "Could not end sessikwenye. Try agakatika."
+    "message": "Could not end kikao. Try agakatika."
   },
   "shared_retry_failed": {
     "message": "Could not retry cleanup. Try agakatika."
   },
   "shared_action_failed": {
-    "message": "Could not request hiyo action. Try again."
+    "message": "Could not request that actikwenye. Try agakatika."
   },
   "shared_return_to_work_failed": {
-    "message": "Could not return kwa wauk. Try agakatika."
+    "message": "Could not return kwa kazi. Try agakatika."
   },
   "shared_data_clear_pending": {
-    "message": "Deletkatikag Mtazamo Lock data. Fkatikaishkatikag cleanup."
+    "message": "Deleting Fokasi Lock data. Finishing cleanup."
   },
   "shared_data_clear_error": {
-    "message": "Could not delete data. Try agakatika."
+    "message": "Could not kufuta data. Try agakatika."
   },
   "shared_schedule_window_label": {
     "message": "Until wkatikadow ends"
   },
   "shared_schedule_until_stopped": {
-    "message": "Starts on schedule and runs hadi you stop it: End session for Flexible, Unlock through the deliberation gate for Friction. Cycles zima."
+    "message": "Anzas on schedule and runs until you stop it: Malizia session for Flexible, Unlock through the deliberation gate for Friction. Cycles off."
   },
   "shared_schedule_started_title": {
-    "message": "Mtazamo schedule started"
+    "message": "Fokasi schedule started"
   },
   "shared_schedule_until_stopped_body": {
-    "message": "Active hadi you stop it."
+    "message": "Active until you kusimama it."
   },
   "shared_settings_indefinite": {
-    "message": "Until stopped session active. Use the toolbar popup to tazama or end it."
+    "message": "Until kusimamaped kikao active. Use the kwaolbar popup kwa tazama au end it."
   },
   "shared_settings_starting": {
-    "message": "Mtazamo Lock is startkatikag. Checkkatikag website access na applykatikag your rules."
+    "message": "Fokasi Lock is starting. Checking website access and applying your rules."
   },
   "shared_settings_error": {
-    "message": "Mtazamo Lock could not fkatikaish browser cleanup. Fungua the popup na retry."
+    "message": "Fokasi Lock could not finish browser cleanup. Fungua the popup and retry."
   },
   "shared_settings_session_disclosure": {
-    "message": "The toolbar popup owns session controls. The active session keeps the rules captured wakati it started."
+    "message": "The kwaolbar popup owns kikao ckwenyetrols. The active kikao keeps the sherias captured wakati it kuanzaed."
   },
   "shared_settings_timed": {
-    "message": "Timed session active hadi $TIME$. It ends automatically. Use the toolbar popup for live status.",
+    "message": "Wakatid kikao active until $TIME$. It ends aukwamatically. Use the kwaolbar popup kwa live status.",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -200,22 +200,22 @@
     "message": "Kamilid manuzotey"
   },
   "shared_outcome_manual_canceled": {
-    "message": "Mwishoed early"
+    "message": "Maliziaed early"
   },
   "shared_outcome_website_access_lost": {
-    "message": "Ended: webkwavuti kufikia lost"
+    "message": "Maliziaed: website access lost"
   },
   "shared_outcome_content_registration_failed": {
-    "message": "Ended: blockkatikag setup failed"
+    "message": "Maliziaed: blocking setup failed"
   },
   "shared_outcome_alarm_failed": {
-    "message": "Ended: wakatir setup kushkatikadwa"
+    "message": "Maliziaed: timer setup failed"
   },
   "shared_outcome_tab_enforcement_failed": {
-    "message": "Ended: page enkwacement failed"
+    "message": "Maliziaed: page enforcement failed"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "Ended: recjuu yay failed"
+    "message": "Maliziaed: recovery failed"
   },
   "shared_duration_hours_minutes": {
     "message": "$HOURS$ h $MINUTES$ m",
@@ -258,13 +258,13 @@
     }
   },
   "shared_updating_session": {
-    "message": "Updatkatikag sessikwenye"
+    "message": "Updatkatikag kikao"
   },
   "shared_less_than_a_minute": {
-    "message": "Less kuliko a minute"
+    "message": "Less than a dakika"
   },
   "shared_focus_remaining_break": {
-    "message": "$DURATION$ hadi your break",
+    "message": "$DURATION$ until your mapumziko",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -273,7 +273,7 @@
     }
   },
   "shared_focus_remaining_session": {
-    "message": "$DURATION$ left in hii session",
+    "message": "$DURATION$ left katika this kikao",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -285,13 +285,13 @@
     "message": "Cost exceeds the crhariri limit"
   },
   "shared_credit_resumes_focus": {
-    "message": "Mikakati earnkatikag resumes durkatikag focus"
+    "message": "Alama earning resumes during focus"
   },
   "shared_credit_off": {
-    "message": "Credit earning is turned zima"
+    "message": "Alama earning is turned off"
   },
   "shared_not_enough_time": {
-    "message": "Not enough time in hii focus block"
+    "message": "Not enough wakati katika this mtazamo kuzuia"
   },
   "shared_ready_in": {
     "message": "Ready katika $CLOCK$",
@@ -316,7 +316,7 @@
     }
   },
   "shared_verdict_blocked_category": {
-    "message": "Kuzuiaed by $CATEGORY$",
+    "message": "Zuiaed by $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -325,13 +325,13 @@
     }
   },
   "shared_verdict_blocked_custom": {
-    "message": "Kuzuiaed by your block list"
+    "message": "Zuiaed by your block list"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "Not on your ruhusu list"
+    "message": "Not kwenye your allow list"
   },
   "shared_verdict_blocked_session": {
-    "message": "Blocked by hii session"
+    "message": "Zuiaed by this session"
   },
   "shared_verdict_allow_list": {
     "message": "On your ruhusu list"
@@ -340,16 +340,16 @@
     "message": "Always ruhusued"
   },
   "shared_verdict_unlock": {
-    "message": "Temporarily funguaed"
+    "message": "Tempauarily unlocked"
   },
   "shared_verdict_excluded": {
-    "message": "Excluded from a selected categauy"
+    "message": "Excluded from a selected akatikaa"
   },
   "shared_verdict_no_session": {
-    "message": "No active focus sessikwenye"
+    "message": "No active mtazamo kikao"
   },
   "shared_verdict_allowed_session": {
-    "message": "Zoteowed by this session"
+    "message": "Ruhusued by this session"
   },
   "shared_category_social": {
     "message": "Social media"
@@ -373,40 +373,40 @@
     "message": "Fauums na bauedom"
   },
   "shared_synced_settings": {
-    "message": "Mipangilio"
+    "message": "Mipango"
   },
   "shared_synced_lists": {
-    "message": "Block and ruhusu lists"
+    "message": "Zuia and allow lists"
   },
   "shared_synced_credit": {
-    "message": "Mikakati ya kufikia tovuti"
+    "message": "Tovuti kufikia crhariri"
   },
   "shared_synced_streaks": {
     "message": "Msururus"
   },
   "shared_synced_aggregates": {
-    "message": "Kikoa-level blocked-attempt aggregates"
+    "message": "Domakatika-level kuzuiaed-attempt aggregates"
   },
   "shared_local_full_urls": {
     "message": "Kamili URLs"
   },
   "shared_local_intentions": {
-    "message": "Mtazamo katikatentikwenyes"
+    "message": "Fokasi intentions"
   },
   "shared_local_events": {
-    "message": "Detailed sessikwenye events"
+    "message": "Detailed kikao events"
   },
   "shared_local_runtime": {
-    "message": "Active runtime sessikwenye"
+    "message": "Active runwakati kikao"
   },
   "shared_legacy_policy_dropped": {
     "message": "Some synced data from an older versikwenye could not be read na was reset."
   },
   "shared_all_data_clear_running": {
-    "message": "End the runnkatikag sessikwenye bekwae deletkatikag all data."
+    "message": "Malizia the running session before deleting all data."
   },
   "shared_nav_brand": {
-    "message": "Mtazamo Lock"
+    "message": "Fokasi Lock"
   },
   "shared_nav_product": {
     "message": "Product navigatikwenye"
@@ -415,19 +415,19 @@
     "message": "Overtazama"
   },
   "shared_nav_settings": {
-    "message": "Mipangilio"
+    "message": "Mipango"
   },
   "shared_section_blocking": {
-    "message": "Kuzuiakatikag"
+    "message": "Zuiaing"
   },
   "shared_section_schedule": {
     "message": "Schedule"
   },
   "shared_section_behavior": {
-    "message": "Tabia ya kikao"
+    "message": "Kikao behavior"
   },
   "shared_section_budget": {
-    "message": "Mikakati ya kufikia tovuti"
+    "message": "Tovuti kufikia crhariri"
   },
   "shared_section_notifications": {
     "message": "Notificatikwenyes"
@@ -458,7 +458,7 @@
     }
   },
   "shared_theme_error": {
-    "message": "Could not save theme. Reload page na try agakatika."
+    "message": "Could not kuhifadhi theme. Reload page na try agakatika."
   },
   "shared_host_search_label": {
     "message": "Search $TITLE$ kwavutis",
@@ -479,7 +479,7 @@
     }
   },
   "shared_host_partial": {
-    "message": "Ongeshakatikag $SHOWN$ wa $MATCHED$ sites. Search kwa narrow the list.",
+    "message": "Onyeshaing $SHOWN$ of $MATCHED$ sites. Search to narrow the list.",
     "placeholders": {
       "SHOWN": {
         "content": "$1",
@@ -492,7 +492,7 @@
     }
   },
   "shared_host_matched": {
-    "message": "Ongeshakatikag $MATCHED$ wa $TOTAL$ sites.",
+    "message": "Onyeshaing $MATCHED$ of $TOTAL$ sites.",
     "placeholders": {
       "MATCHED": {
         "content": "$1",
@@ -505,7 +505,7 @@
     }
   },
   "shared_host_all": {
-    "message": "Ongeshakatikag all $TOTAL$ sites.",
+    "message": "Onyeshaing all $TOTAL$ sites.",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -514,40 +514,40 @@
     }
   },
   "shared_end_the_session": {
-    "message": "End the sessikwenye"
+    "message": "Malizia the session"
   },
   "shared_overlay_starting_title": {
-    "message": "Mtazamo Lock is startkatikag"
+    "message": "Fokasi Lock is starting"
   },
   "shared_overlay_starting_detail": {
-    "message": "Applykatikag your selected rules."
+    "message": "Applykatikag your selected sherias."
   },
   "shared_overlay_stopped_page": {
-    "message": "This page did not load. It will load by itself wakati the session ends."
+    "message": "This page did not load. It will load by itself wakati the kikao ends."
   },
   "shared_overlay_next_step": {
     "message": "Your katikaaywauata step"
   },
   "shared_overlay_back_to_work": {
-    "message": "Nyuma kwa wauk"
+    "message": "Nyuma to work"
   },
   "shared_overlay_choose_work_tab": {
-    "message": "Choose a work kichupo"
+    "message": "Choose a kazi tab"
   },
   "shared_overlay_change_work_tab": {
-    "message": "Change work kichupo"
+    "message": "Change kazi tab"
   },
   "shared_overlay_access_summary": {
-    "message": "Need a break au site access?"
+    "message": "Need a mapumziko au kwavuti kufikia?"
   },
   "shared_overlay_access_note": {
-    "message": "You can step away at any time. Tovuti access uses credit."
+    "message": "You can step away at any wakati. Tovuti kufikia uses crhariri."
   },
   "shared_overlay_gate_force_end": {
-    "message": "Ignaue timeout na end anyway"
+    "message": "Ignaue wakatiout na end anyway"
   },
   "shared_overlay_transport_error": {
-    "message": "Focus Lock could not update hii action. Try again."
+    "message": "Fokasi Lock could not update this action. Try again."
   },
   "shared_overlay_bank_amount": {
     "message": "$AMOUNT$ kwavuti kufikia crhariri",
@@ -559,13 +559,13 @@
     }
   },
   "shared_overlay_next_step_fallback": {
-    "message": "Ckwenyetkatikaue your current task"
+    "message": "Endelea your current task"
   },
   "shared_overlay_pause_action": {
     "message": "Unlock all kwavutis"
   },
   "shared_overlay_unlock_site_action": {
-    "message": "Unlock hii site"
+    "message": "Unlock this kwavuti"
   },
   "shared_overlay_spend_action": {
     "message": "$LABEL$ $LENGTH$ - costs $COST$ crhariri",
@@ -594,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "You said: $INTENTIKWINYO$",
+    "message": "You said: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -616,12 +616,12 @@
     }
   },
   "shared_gate_back": {
-    "message": "Keep focuskatikag"
+    "message": "Keep mtazamokatikag"
   },
   "shared_gate_phrase_label": {
-    "message": "Type hii to confirm:"
+    "message": "Akatikaa this kwa ckwenyefirm:"
   },
   "shared_gate_end_title": {
-    "message": "End hii session"
+    "message": "Malizia this session"
   }
 }

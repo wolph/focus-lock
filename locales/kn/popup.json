@@ -1,1 +1,448 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "next: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+  },
+  "popup_open_settings_failed": {
+    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Try again."
+  },
+  "popup_settings_load_failed": {
+    "message": "Could not load ಸೆಷ್ಟ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Reload the popup to try again. Defaults are shown."
+  },
+  "popup_open_setup_failed": {
+    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ setup. Try again."
+  },
+  "popup_setup_required_heading": {
+    "message": "Finish setting up ಫೋಕಸ್ Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "Choose your starting lists, website access, and storage mode before starting a ಸೆಷ್ಟ."
+  },
+  "popup_open_setup_button": {
+    "message": "Open setup"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Could not confirm website ನಿರ್ಬಂಧing. Try again."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Could not enable website ನಿರ್ಬಂಧing. Try again."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Website ನಿರ್ಬಂಧing is off"
+  },
+  "popup_blocking_off_body": {
+    "message": "ಫೋಕಸ್ Lock cannot start a ಸೆಷ್ಟ until Chrome grants website access and ನಿರ್ಬಂಧing is enabled."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome did not grant website access. Website ನಿರ್ಬಂಧing is still off."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Website access is granted, but ಫೋಕಸ್ Lock could not enable ನಿರ್ಬಂಧing. ಮರುಪ್ರಯತ್ನ setup or reload the extension."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Enable website ನಿರ್ಬಂಧing"
+  },
+  "popup_retry_button": {
+    "message": "ಮರುಪ್ರಯತ್ನ"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Your ಸೆಷ್ಟ ended because website access was removed."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Your ಸೆಷ್ಟ ended because ಫೋಕಸ್ Lock could not enable website ನಿರ್ಬಂಧing."
+  },
+  "popup_dismiss_button": {
+    "message": "Dismiss"
+  },
+  "popup_restart_failed": {
+    "message": "Could not restart ಫೋಕಸ್ Lock. Try again."
+  },
+  "popup_boot_failed_heading": {
+    "message": "ಫೋಕಸ್ Lock could not start"
+  },
+  "popup_reset_runtime_button": {
+    "message": "Reset local runtime"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Keeps your ಸೆಟ್ಟಿಂಗ್‌ಗಳು, lists, and statistics. Clears the current ಸೆಷ್ಟ state."
+  },
+  "popup_keep_data_button": {
+    "message": "Keep my data"
+  },
+  "popup_delete_all_button": {
+    "message": "Delete all ಫೋಕಸ್ Lock data"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Setup status unavailable. Reload ಫೋಕಸ್ Lock to try again."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "ಫೋಕಸ್ status unavailable"
+  },
+  "popup_action_in_progress": {
+    "message": "Action in progress"
+  },
+  "popup_active_site_checking": {
+    "message": "ಪರೀಕ್ಷೆ the active site"
+  },
+  "popup_resume_now": {
+    "message": "ಸುಳ್ಳು ಪ್ರಸ್ತಾಪಿಸಿ now"
+  },
+  "popup_start_next_focus_early": {
+    "message": "ಪ್ರಾರಂಭಿಸಿ next ಫೋಕಸ್ early"
+  },
+  "popup_unlock_this_site": {
+    "message": "ಅನ್‌ಲಾಕ್ this site"
+  },
+  "popup_unlock_all_sites": {
+    "message": "ಅನ್‌ಲಾಕ್ all sites"
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Choose work tab"
+  },
+  "popup_change_work_tab_button": {
+    "message": "ಬದಲಾವಣೆ work tab"
+  },
+  "popup_session_actions_summary": {
+    "message": "ಸೆಷ್ಟ actions"
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Add an allowed domain"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Add allowed domain"
+  },
+  "popup_add_button": {
+    "message": "Add"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Only $COUNT$ allowed site rules. Other websites ನಿರ್ಬಂಧed.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ ನಿರ್ಬಂಧed categories, $RULES$ extra rules.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "ಕಠಿಣ lock. Cannot end early."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Can end at any time."
+  },
+  "popup_session_length_label": {
+    "message": "ಸೆಷ್ಟ length"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Custom minutes"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Keep ಫೋಕಸ್ing"
+  },
+  "popup_gate_phrase_label": {
+    "message": "ಪ್ರಕಾರ:"
+  },
+  "popup_gate_intention": {
+    "message": "You said: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "A moment to decide:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "of $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Back to work"
+  },
+  "popup_destination_unavailable": {
+    "message": "Destination unavailable"
+  },
+  "popup_categories_locked": {
+    "message": "Category editing is disabled until ನಿರ್ಬಂಧed-site lists reload."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "ನಿರ್ಬಂಧed categories"
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domain"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regular expression"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "and $COUNT$ more site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "and $COUNT$ more sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Allowed exceptions"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Extra ನಿರ್ಬಂಧed rules"
+  },
+  "popup_no_extra_blocked": {
+    "message": "No extra ನಿರ್ಬಂಧed rules."
+  },
+  "popup_allowed_heading": {
+    "message": "Allowed sites and rules"
+  },
+  "popup_no_allowed_sites": {
+    "message": "No sites are allowed yet."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "What will be ನಿರ್ಬಂಧed"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "What will be allowed"
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ extra ನಿರ್ಬಂಧed rule",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ extra ನಿರ್ಬಂಧed rules",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ allowed rule",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ allowed rules",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Allowed-site and rule changes here apply only to this ಸೆಷ್ಟ. Everything else is ನಿರ್ಬಂಧed."
+  },
+  "popup_scope_blacklist": {
+    "message": "Category and rule changes here apply only to this ಸೆಷ್ಟ."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Open ಸೆಟ್ಟಿಂಗ್‌ಗಳು for permanent defaults"
+  },
+  "popup_rule_details_label": {
+    "message": "ಸೆಷ್ಟ rule details"
+  },
+  "popup_session_type_legend": {
+    "message": "ಸೆಷ್ಟ type"
+  },
+  "popup_session_type_flexible": {
+    "message": "ನಮ್ಯ"
+  },
+  "popup_session_type_friction": {
+    "message": "ರಕ್ಷಣೆ"
+  },
+  "popup_session_type_hard": {
+    "message": "ಕಠಿಣ lock"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "End the ಸೆಷ್ಟ immediately whenever you choose."
+  },
+  "popup_session_type_hard_hint": {
+    "message": "The ಸೆಷ್ಟ cannot end early. Site access credit still works."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "The selected categories and extra rules are ನಿರ್ಬಂಧed. Other sites remain available."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Only the listed sites are available. Every other website is ನಿರ್ಬಂಧed."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Enter a ಸೆಷ್ಟ length greater than zero minutes."
+  },
+  "popup_no_work_tab_option": {
+    "message": "No work tab (optional)"
+  },
+  "popup_cycles_label": {
+    "message": "ಚಕ್ರs: $FOCUS$ min ಫೋಕಸ್, $SHORT_BREAK$ min break, $LONG_BREAK$ min long break every $LONG_EVERY$th",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "ಉದ್ದೇಶ"
+  },
+  "popup_intention_placeholder": {
+    "message": "What are you working on?"
+  },
+  "popup_work_tab_named": {
+    "message": "Work tab: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "ಬದಲಾವಣೆ"
+  },
+  "popup_session_settings_summary": {
+    "message": "ಸೆಷ್ಟ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Choose a work tab"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Work tab"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (Current)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "ನಿರ್ಬಂಧing mode"
+  },
+  "popup_invalid_time_label": {
+    "message": "invalid time"
+  },
+  "popup_start_focus_label": {
+    "message": "ಪ್ರಾರಂಭಿಸಿ $DURATION$ ಫೋಕಸ್",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_use_this_tab": {
+    "message": "Use this tab"
+  },
+  "popup_checking_current_tab": {
+    "message": "ಪರೀಕ್ಷೆ current tab..."
+  },
+  "popup_saving_work_tab": {
+    "message": "Saving work tab..."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Choose an open tab"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Or choose another tab"
+  },
+  "popup_start_failed": {
+    "message": "Could not start ಸೆಷ್ಟ. Try again."
+  }
+}

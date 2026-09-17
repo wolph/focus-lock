@@ -36,37 +36,37 @@
     }
   },
   "overlay_target_checking": {
-    "message": "Kullanılabilir iş sekmeler kontrol ediliyor..."
+    "message": "Uygun çalışma sekmeleri denetleniyor..."
   },
   "overlay_target_pick_tab": {
-    "message": "Pick an aç tab to continue your task."
+    "message": "İşine devam etmek için açık bir sekme seç."
   },
   "overlay_target_session_unavailable": {
-    "message": "Your focus seans is not available. Try again, or reload this page."
+    "message": "Odak seansın kullanılamıyor. Tekrar dene ya da bu sayfayı yeniden yükle."
   },
   "overlay_target_lookup_failed": {
-    "message": "İş sekmeniz yüklenemedi. Yeniden dene veya sayfayı yenile."
+    "message": "Çalışma sekmen yüklenemedi. Tekrar dene ya da bu sayfayı yeniden yükle."
   },
   "overlay_target_reconnect": {
-    "message": "Focus Lock'a yeniden bağlanmak için sayfayı yenile."
+    "message": "Focus Lock ile yeniden bağlanmak için bu sayfayı yeniden yükle."
   },
   "overlay_target_page_changed": {
-    "message": "İstekte bulunan sayfa değişti. Sayfayı yenile."
+    "message": "İsteği yapan sayfa değişti. Sayfayı yeniden yükle."
   },
   "overlay_target_transport_error": {
-    "message": "Focus Lock'a ulaşılamadı. Yeniden dene."
+    "message": "Focus Lock'a ulaşılamadı. Tekrar dene."
   },
   "overlay_picker_heading": {
-    "message": "İş sekmesi seç"
+    "message": "Bir çalışma sekmesi seç"
   },
   "overlay_picker_cancel": {
-    "message": "İptal"
+    "message": "Vazgeç"
   },
   "overlay_picker_search_label": {
-    "message": "İş sekmelerinde ara"
+    "message": "Çalışma sekmelerinde ara"
   },
   "overlay_picker_search_placeholder": {
-    "message": "Başlık veya web sitesine göre ara"
+    "message": "Başlığa ya da siteye göre ara"
   },
   "overlay_picker_clear_search": {
     "message": "Aramayı temizle"
@@ -75,28 +75,28 @@
     "message": "Sekmeleri yenile"
   },
   "overlay_picker_available_tabs": {
-    "message": "Kullanılabilir iş sekmeler"
+    "message": "Uygun çalışma sekmeleri"
   },
   "overlay_picker_finding": {
-    "message": "Kullanılabilir sekmeler bulunuyor..."
+    "message": "Uygun sekmeler aranıyor..."
   },
   "overlay_picker_searching": {
-    "message": "İş sekmeler aranıyor..."
+    "message": "Çalışma sekmelerinde aranıyor..."
   },
   "overlay_picker_saving": {
-    "message": "İş sekmesi kaydediliyor..."
+    "message": "Çalışma sekmesi kaydediliyor..."
   },
   "overlay_picker_no_tabs": {
-    "message": "No available work tabs. Aç a site allowed by this seans, then refresh tabs."
+    "message": "Uygun çalışma sekmesi yok. Bu seansın izin verdiği bir site aç, sonra sekmeleri yenile."
   },
   "overlay_picker_no_matches": {
-    "message": "Eşleşen sekmeler yok. Başka bir arama dene veya aramayı temizle."
+    "message": "Eşleşen sekme yok. Başka bir arama dene ya da aramayı temizle."
   },
   "overlay_picker_load_failed": {
-    "message": "İş sekmeler yüklenemedi. Yeniden dene."
+    "message": "Çalışma sekmeleri yüklenemedi. Tekrar dene."
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ / $COUNT$ sekme",
+    "message": "$COUNT$ sekmeden $MATCHES$ tanesi",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ / $COUNT$ sekmeler",
+    "message": "$COUNT$ sekmeden $MATCHES$ tanesi",
     "placeholders": {
       "COUNT": {
         "content": "$1",

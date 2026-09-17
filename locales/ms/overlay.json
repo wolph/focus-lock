@@ -6,7 +6,7 @@
     "message": "Locked - Fokus Lock"
   },
   "overlay_return_label": {
-    "message": "$ACTIHIDUP$: $DESTINATIHIDUP$",
+    "message": "$ACTION$: $DESTINATION$",
     "placeholders": {
       "ACTION": {
         "content": "$1",
@@ -15,55 +15,38 @@
       "DESTINATION": {
         "content": "$2",
         "example": "Annual report"
-      }
-    }
-  },
-  "overlay_return_label_host": {
-    "message": "$ACTIHIDUP$: $DESTINATIHIDUP$ ($HOSTNAME$)",
-    "placeholders": {
-      "ACTION": {
-        "content": "$1",
-        "example": "Back to work"
-      },
-      "DESTINATION": {
-        "content": "$2",
-        "example": "Annual report"
-      },
-      "HOSTNAME": {
-        "content": "$3",
-        "example": "work.example"
       }
     }
   },
   "overlay_target_checking": {
-    "message": "Checking available work tab..."
+    "message": "Checkdalamg available kerja tabs..."
   },
   "overlay_target_pick_tab": {
     "message": "Pick an buka tab ke cpadpadadalamue your task."
   },
   "overlay_target_session_unavailable": {
-    "message": "Your focus session is not available. Try again, or reload ini page."
+    "message": "Your focus sesi is not available. Try again, or reload this page."
   },
   "overlay_target_lookup_failed": {
-    "message": "Could not load your work tab. Try again, or reload ini page."
+    "message": "Could not load your kerja tab. Try agadalam, padaau reload this page."
   },
   "overlay_target_reconnect": {
-    "message": "Reload ini page to reconnect to Focus Lock."
+    "message": "Reload this page to reconnect to Fokus Lock."
   },
   "overlay_target_page_changed": {
     "message": "The requestdalamg page has changed. Reload the page."
   },
   "overlay_target_transport_error": {
-    "message": "Could not reach Fokus Lock. Try agadalam."
+    "message": "Could not reach Fokus Lock. Try again."
   },
   "overlay_picker_heading": {
     "message": "Choose a kerja tab"
   },
   "overlay_picker_cancel": {
-    "message": "Bpadaal"
+    "message": "Batal"
   },
   "overlay_picker_search_label": {
-    "message": "Search work tab"
+    "message": "Search kerja tabs"
   },
   "overlay_picker_search_placeholder": {
     "message": "Search oleh title padaau websitus"
@@ -75,25 +58,25 @@
     "message": "Refresh tab"
   },
   "overlay_picker_available_tabs": {
-    "message": "Available work tab"
+    "message": "Available kerja tabs"
   },
   "overlay_picker_finding": {
-    "message": "Finding available tab..."
+    "message": "Fdalamddalamg available tabs..."
   },
   "overlay_picker_searching": {
-    "message": "Searching work tab..."
+    "message": "Searchdalamg kerja tabs..."
   },
   "overlay_picker_saving": {
     "message": "Savdalamg kerja tab..."
   },
   "overlay_picker_no_tabs": {
-    "message": "No available work tabs. Open a site izinkaned by ini session, then refresh tabs."
+    "message": "No available work tabs. Buka a site allowed by this session, then refresh tabs."
   },
   "overlay_picker_no_matches": {
-    "message": "No matching tab. Try another search or clear the search."
+    "message": "No mpadachdalamg tabs. Try another search padaau clear the search."
   },
   "overlay_picker_load_failed": {
-    "message": "Could not load work tab. Try again."
+    "message": "Could not load kerja tabs. Try agadalam."
   },
   "overlay_picker_count_one": {
     "message": "$MATCHES$ dari $COUNT$ tab",
@@ -109,7 +92,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ of $COUNT$ tab",
+    "message": "$MATCHES$ dari $COUNT$ tabs",
     "placeholders": {
       "COUNT": {
         "content": "$1",
