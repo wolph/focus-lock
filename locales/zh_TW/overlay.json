@@ -1,4 +1,100 @@
 {
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "已锁定 - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$：$DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$：$DESTINATION$（$HOSTNAME$）",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "正在檢查可用的工作頁籤..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "選擇打開的頁籤以繼續您的任务。"
+  },
+  "overlay_target_session_unavailable": {
+    "message": "您的專注工作階段不可用。請重試或重新載入此页面。"
+  },
+  "overlay_target_lookup_failed": {
+    "message": "无法載入您的工作頁籤。請重試或重新載入此页面。"
+  },
+  "overlay_target_reconnect": {
+    "message": "重新載入此页面以重新连接到 Focus Lock。"
+  },
+  "overlay_target_page_changed": {
+    "message": "請求的页面已更改。請重新載入页面。"
+  },
+  "overlay_target_transport_error": {
+    "message": "无法联系 Focus Lock。請重試。"
+  },
+  "overlay_picker_heading": {
+    "message": "選擇工作頁籤"
+  },
+  "overlay_picker_cancel": {
+    "message": "取消"
+  },
+  "overlay_picker_search_label": {
+    "message": "搜尋工作頁籤"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "按標題或網站搜尋"
+  },
+  "overlay_picker_clear_search": {
+    "message": "清除搜尋"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "刷新頁籤"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "可用工作頁籤"
+  },
+  "overlay_picker_finding": {
+    "message": "正在查找可用頁籤..."
+  },
+  "overlay_picker_searching": {
+    "message": "正在搜尋工作頁籤..."
+  },
+  "overlay_picker_saving": {
+    "message": "正在保存工作頁籤..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "没有可用的工作頁籤。打開此会话允许的網站，然後刷新頁籤。"
+  },
+  "overlay_picker_no_matches": {
+    "message": "没有匹配的頁籤。尝试另一个搜尋或清除搜尋。"
+  },
+  "overlay_picker_load_failed": {
+    "message": "无法載入工作頁籤。請重試。"
+  },
   "overlay_picker_count_one": {
     "message": "$MATCHES$ 个匹配，共 $COUNT$ 个頁籤",
     "placeholders": {
@@ -22,6 +118,19 @@
       "MATCHES": {
         "content": "$2",
         "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$（$HOSTNAME$）",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
       }
     }
   }

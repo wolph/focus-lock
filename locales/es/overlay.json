@@ -121,19 +121,6 @@
       }
     }
   },
-  "overlay_picker_count_many": {
-    "message": "$MATCHES$ de $COUNT$ pestañas",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "4"
-      },
-      "MATCHES": {
-        "content": "$2",
-        "example": "1"
-      }
-    }
-  },
   "overlay_picker_tab_label": {
     "message": "$TITLE$ ($HOSTNAME$)",
     "placeholders": {
@@ -144,6 +131,19 @@
       "HOSTNAME": {
         "content": "$2",
         "example": "work.example"
+      }
+    }
+  },
+  "overlay_picker_count_many": {
+    "message": "$MATCHES$ de $COUNT$ pestañas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
       }
     }
   }

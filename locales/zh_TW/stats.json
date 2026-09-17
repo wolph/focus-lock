@@ -1,6 +1,92 @@
 {
+  "stats_document_title": {
+    "message": "Focus Lock 統計"
+  },
+  "stats_page_title": {
+    "message": "您的专注记录"
+  },
+  "stats_loading": {
+    "message": "載入您的統計中。"
+  },
+  "stats_load_error": {
+    "message": "无法載入統計。重新載入以重試。"
+  },
+  "stats_partial_error_both": {
+    "message": "每小時尝试和網站存取點數設定不可用。"
+  },
+  "stats_partial_error_attempts": {
+    "message": "每小時尝试不可用。"
+  },
+  "stats_partial_error_economy": {
+    "message": "網站存取點數設定不可用。"
+  },
+  "stats_scope_synced": {
+    "message": "来自此 Chrome 账户的同步总计。仅限本地面板已标记。"
+  },
+  "stats_scope_local": {
+    "message": "来自此計算机的总计。Focus Lock 統計不同步。"
+  },
+  "stats_scope_checking": {
+    "message": "檢查这些总计是否同步中。"
+  },
+  "stats_scope_unavailable": {
+    "message": "統計范围不可用。总计可能包括同步資料。每小時尝试和最近会话来自此計算机。"
+  },
+  "stats_scope_retry": {
+    "message": "重試范围檢查"
+  },
+  "stats_empty": {
+    "message": "統計在您的第一个会话後出现。"
+  },
+  "stats_tile_focus_today": {
+    "message": "今天的专注"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "过去 7 天的专注"
+  },
+  "stats_tile_attempts_today": {
+    "message": "今天已封鎖的尝试"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "今天關閉的门槛請求"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "今天花费的網站存取點數"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "所有網站 $ALL_SITES$，一个網站 $ONE_SITE$，$EARNED$ 获得",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ 获得",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "連續記錄"
+  },
+  "stats_streak_empty": {
+    "message": "您的連續記錄从您的第一个专注日期開始。"
+  },
   "stats_streak_unit_one": {
-    "message": "day"
+    "message": "天"
   },
   "stats_streak_unit_other": {
     "message": "天"
@@ -22,6 +108,9 @@
         "example": "2"
       }
     }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "連續記錄冻结：一个错过的日期，已覆盖"
   },
   "stats_streak_active_days_one": {
     "message": "本月有 $COUNT$ 个活跃日期（$MONTH$）",
@@ -49,6 +138,61 @@
       }
     }
   },
+  "stats_streak_active_dates": {
+    "message": "$MONTH$ 中的活跃日期：$DAYS$。",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "$MONTH$ 中没有活跃日期。",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "专注，过去 14 天"
+  },
+  "stats_chart_focus_empty": {
+    "message": "在您的第一个会话後会出现专注分鐘数。"
+  },
+  "stats_chart_attempts_heading": {
+    "message": "已封鎖的尝试，过去 14 天"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "一旦会话捕获尝试，已封鎖的尝试就会出现在此处。"
+  },
+  "stats_chart_sites_heading": {
+    "message": "排名最靠前的封鎖網站，过去 30 天"
+  },
+  "stats_chart_sites_empty": {
+    "message": "没有被封鎖的内容。这是一个不错的開始。"
+  },
+  "stats_chart_hours_heading": {
+    "message": "按小時的尝试，仅此計算机"
+  },
+  "stats_chart_other_site": {
+    "message": "其他"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ 分鐘",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
   "stats_blocked_count_one": {
     "message": "$COUNT$ 个已封鎖",
     "placeholders": {
@@ -66,5 +210,108 @@
         "example": "12"
       }
     }
+  },
+  "stats_chart_name_bar": {
+    "message": "条形图"
+  },
+  "stats_chart_name_hbar": {
+    "message": "水平条形图"
+  },
+  "stats_chart_description_bar": {
+    "message": "条形图。使用鍵盘在資料点之间移动，或打開\"以表格形式查看\"以获取相同的值。"
+  },
+  "stats_chart_description_hbar": {
+    "message": "水平条形图。使用鍵盘在資料点之间移动，或打開\"以表格形式查看\"以获取相同的值。"
+  },
+  "stats_chart_empty_default": {
+    "message": "尚无資料。"
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$：$VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "以表格形式查看"
+  },
+  "stats_chart_table_category": {
+    "message": "分類"
+  },
+  "stats_chart_table_value": {
+    "message": "值"
+  },
+  "stats_heat_strip_label": {
+    "message": "24 小時已封鎖尝试热条"
+  },
+  "stats_sessions_heading": {
+    "message": "此計算机上的最近会话"
+  },
+  "stats_sessions_empty": {
+    "message": "您的第一个会话将顯示在此处。"
+  },
+  "stats_sessions_col_date": {
+    "message": "日期"
+  },
+  "stats_sessions_col_start": {
+    "message": "開始"
+  },
+  "stats_sessions_col_planned": {
+    "message": "計畫"
+  },
+  "stats_sessions_col_focused": {
+    "message": "专注"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "所有網站"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "一个網站"
+  },
+  "stats_sessions_col_intention": {
+    "message": "意圖"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "结果"
+  },
+  "stats_sessions_col_source": {
+    "message": "来源"
+  },
+  "stats_session_no_intention": {
+    "message": "无意圖"
+  },
+  "stats_session_article_label": {
+    "message": "会话：$INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "手动"
+  },
+  "stats_session_source_schedule": {
+    "message": "日程"
+  },
+  "stats_session_source_scheduled": {
+    "message": "已計畫"
+  },
+  "stats_outcome_completed": {
+    "message": "已完成"
+  },
+  "stats_outcome_ended_early": {
+    "message": "提前結束"
+  },
+  "stats_outcome_running": {
+    "message": "執欄中"
   }
 }

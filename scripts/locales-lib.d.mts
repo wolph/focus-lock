@@ -28,6 +28,7 @@ export interface MergeResult {
   fresh: number;
   carried: number;
   untranslated: number;
+  missing: number;
   unknown: string[];
 }
 export function mergeTranslation(
@@ -39,7 +40,8 @@ export function mergeTranslation(
 export interface ProgressRow {
   surface: string;
   translated: string;
-  untranslated: number;
+  missing: number;
+  sameAsEnglish: number;
 }
 export interface Progress {
   rows: ProgressRow[];

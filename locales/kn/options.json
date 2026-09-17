@@ -163,5 +163,420 @@
         "example": "Keep daily stats (days)"
       }
     }
+  },
+  "options_session_defaults_heading": {
+    "message": "ಸೆಷನ್ ಡೀಫಾಲ್ಟ್‌ಗಳು"
+  },
+  "options_session_defaults_help": {
+    "message": "ಸೆಷನ್ ಪ್ರಾರಂಭವಾದಾಗ ಮೋಡ್ ಮತ್ತು ಕಠಿಣತೆ ಸ್ಥಿರವಾಗಿರುತ್ತವೆ. ಪ್ರಾರಂಭ ಫಾರ್ಮ್ ತೆರೆಯುವಾಗ ಇರುವ ಮೌಲ್ಯಗಳು ಇವೇ."
+  },
+  "options_preset_short_label": {
+    "message": "ಚಿಕ್ಕ ಸೆಷನ್ ಪ್ರಿಸೆಟ್ (ನಿಮಿಷಗಳು)"
+  },
+  "options_preset_default_label": {
+    "message": "ಡೀಫಾಲ್ಟ್ ಸೆಷನ್ ಪ್ರಿಸೆಟ್ (ನಿಮಿಷಗಳು)"
+  },
+  "options_preset_deep_label": {
+    "message": "ಡೀಪ್ ವರ್ಕ್ ಸೆಷನ್ ಪ್ರಿಸೆಟ್ (ನಿಮಿಷಗಳು)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "ಬ್ಲಾಕ್ ಪಟ್ಟಿ: ಪಟ್ಟಿ ಮಾಡಿದ ಸೈಟ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡು"
+  },
+  "options_mode_whitelist_label": {
+    "message": "ಅನುಮತಿ ಪಟ್ಟಿ: ಪಟ್ಟಿ ಮಾಡಿದ ಸೈಟ್‌ಗಳನ್ನು ಮಾತ್ರ ಅನುಮತಿಸು"
+  },
+  "options_strictness_flexible_label": {
+    "message": "ನಮ್ಯ: ನಿನಗಿಷ್ಟ ಬಂದಾಗ ಸೆಷನ್ ಕೊನೆಗೊಳಿಸು"
+  },
+  "options_strictness_friction_label": {
+    "message": "ಘರ್ಷಣೆ: ಬೇಗ ನಿಲ್ಲಿಸುವುದು ಹೊಂದಿಸಿದ ಆಲೋಚನಾ ಗೇಟ್ ಅನ್ನು ಬಳಸುತ್ತದೆ"
+  },
+  "options_strictness_hard_label": {
+    "message": "ಕಠಿಣ ಲಾಕ್: ಬೇಗ ಕೊನೆಗೊಳಿಸುವಂತಿಲ್ಲ, ತಾತ್ಕಾಲಿಕ ಸೈಟ್ ಪ್ರವೇಶ ಮಾತ್ರ"
+  },
+  "options_cycle_heading": {
+    "message": "ಫೋಕಸ್ ಮತ್ತು ವಿರಾಮ ಚಕ್ರ"
+  },
+  "options_cycle_help": {
+    "message": "ಡೀಫಾಲ್ಟ್‌ಗಳು: 25 ನಿಮಿಷ ಫೋಕಸ್, 5 ನಿಮಿಷ ವಿರಾಮ, ಪ್ರತಿ 4ನೇ ಚಕ್ರಕ್ಕೆ 15 ನಿಮಿಷ ದೀರ್ಘ ವಿರಾಮ. ಅಧ್ಯಯನ ಮಾದರಿಗಳಲ್ಲಿ ಮನಸ್ಥಿತಿ ಮತ್ತು ಫೋಕಸ್‌ಗಾಗಿ ವೇಳಾಪಟ್ಟಿ ಪ್ರಕಾರದ ವಿರಾಮಗಳು ಇಷ್ಟ ಬಂದಾಗ ತೆಗೆದುಕೊಳ್ಳುವ ವಿರಾಮಗಳಿಗಿಂತ ಉತ್ತಮ. ನಿಖರ ನಿಮಿಷಗಳು ಸಂಪ್ರದಾಯ, ವಿಜ್ಞಾನವಲ್ಲ."
+  },
+  "options_cycle_default_label": {
+    "message": "ಡೀಫಾಲ್ಟ್ ಆಗಿ ಫೋಕಸ್ ಮತ್ತು ವಿರಾಮಗಳನ್ನು ಚಕ್ರಗೊಳಿಸು"
+  },
+  "options_focus_minutes_label": {
+    "message": "ಫೋಕಸ್ ನಿಮಿಷಗಳು"
+  },
+  "options_short_break_minutes_label": {
+    "message": "ಚಿಕ್ಕ ವಿರಾಮ ನಿಮಿಷಗಳು"
+  },
+  "options_long_break_minutes_label": {
+    "message": "ದೀರ್ಘ ವಿರಾಮ ನಿಮಿಷಗಳು"
+  },
+  "options_long_every_label": {
+    "message": "ಪ್ರತಿ Nನೇ ಚಕ್ರಕ್ಕೆ ದೀರ್ಘ ವಿರಾಮ"
+  },
+  "options_gate_heading": {
+    "message": "ಆಲೋಚನಾ ಗೇಟ್"
+  },
+  "options_gate_help": {
+    "message": "ಸ್ಪಷ್ಟ 'ಕೆಲಸಕ್ಕೆ ಹಿಂತಿರುಗು' ಬಟನ್‌ನೊಂದಿಗೆ 10 ಸೆಕೆಂಡುಗಳ ಕಾಯುವಿಕೆ ಪ್ರಚೋದನಾ ಭೇಟಿಗಳನ್ನು ಅಳೆಯಬಹುದಾದಷ್ಟು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ (ಕ್ಷೇತ್ರ ಅಧ್ಯಯನ, PNAS 2023). ಹೆಚ್ಚಿನ ಕಾಯುವಿಕೆ ಮತ್ತು ಟೈಪ್ ಮಾಡಿದ ವಾಕ್ಯ ಪರಿಣಾಮವನ್ನು ಸುಮಾರು ದುಪ್ಪಟ್ಟುಗೊಳಿಸುತ್ತವೆ."
+  },
+  "options_gate_wait_one": {
+    "message": "$COUNT$ ಸೆಕೆಂಡು ಕಾಯಿ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "$COUNT$ ಸೆಕೆಂಡುಗಳು ಕಾಯಿ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "ಕಸ್ಟಮ್"
+  },
+  "options_custom_delay_label": {
+    "message": "ಕಸ್ಟಮ್ ವಿಳಂಬ (ಸೆಕೆಂಡುಗಳು)"
+  },
+  "options_custom_delay_error": {
+    "message": "ಕಸ್ಟಮ್ ವಿಳಂಬ ಧನಾತ್ಮಕ ಪೂರ್ಣಾಂಕ ಸೆಕೆಂಡುಗಳಾಗಿರಬೇಕು."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "ವಾಕ್ಯ ಟೈಪ್ ಮಾಡುವುದನ್ನೂ ಕಡ್ಡಾಯಗೊಳಿಸು"
+  },
+  "options_gate_force_end_label": {
+    "message": "\"ಟೈಮ್‌ಔಟ್ ಕಡೆಗಣಿಸಿ, ಆದರೂ ಮುಗಿಸು\" ಬಟನ್ ಸಕ್ರಿಯಗೊಳಿಸು"
+  },
+  "options_credit_help": {
+    "message": "ನೀನು ಫೋಕಸ್ ಮಾಡುತ್ತಿರುವಾಗ ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ ಸಂಗ್ರಹವಾಗುತ್ತದೆ. ಎಲ್ಲಾ ಸೈಟ್‌ಗಳಿಗೆ ಪ್ರವೇಶ ಮತ್ತು ಒಂದೇ ಸೈಟ್ ಅನ್‌ಲಾಕ್ ಎರಡೂ ಒಂದೇ ಬ್ಯಾಲೆನ್ಸ್‌ನಿಂದ ಖರ್ಚಾಗುತ್ತವೆ. ಕ್ರೆಡಿಟ್ ಖರ್ಚು ಮಾಡದೆ ನೀನು ಯಾವಾಗ ಬೇಕಾದರೂ ಸ್ವಲ್ಪ ಹೊತ್ತು ಪಕ್ಕಕ್ಕೆ ಸರಿಯಬಹುದು."
+  },
+  "options_earn_rate_label": {
+    "message": "ಪ್ರತಿ 30 ನಿಮಿಷ ಫೋಕಸ್‌ಗೆ ಸೈಟ್ ಪ್ರವೇಶದ ನಿಮಿಷಗಳು"
+  },
+  "options_credit_cap_label": {
+    "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ ಮಿತಿ (ನಿಮಿಷಗಳು)"
+  },
+  "options_pause_length_label": {
+    "message": "ಎಲ್ಲಾ-ಸೈಟ್ ಪ್ರವೇಶದ ಅವಧಿ (ನಿಮಿಷಗಳು)"
+  },
+  "options_unlock_length_label": {
+    "message": "ಸೈಟ್ ಅನ್‌ಲಾಕ್ ಅವಧಿ (ನಿಮಿಷಗಳು)"
+  },
+  "options_streak_heading": {
+    "message": "ಸ್ಟ್ರೀಕ್ ಮತ್ತು ಧಾರಣೆ"
+  },
+  "options_streak_help": {
+    "message": "ಗುರಿ ತಲುಪುವ ದಿನಗಳನ್ನು ಸ್ಟ್ರೀಕ್ ಎಣಿಸುತ್ತದೆ. ಒಂದು ಡೀಫಾಲ್ಟ್ ಸೆಷನ್ ಸರಪಳಿಯನ್ನು ಜೀವಂತವಾಗಿಡುತ್ತದೆ, ಮತ್ತು ಫ್ರೀಜ್ ಟೋಕನ್ ತಪ್ಪಿದ ದಿನವನ್ನು ಸರಿಪಡಿಸುತ್ತದೆ."
+  },
+  "options_streak_goal_label": {
+    "message": "ದೈನಂದಿನ ಸ್ಟ್ರೀಕ್ ಗುರಿ (ಫೋಕಸ್ ನಿಮಿಷಗಳು)"
+  },
+  "options_freeze_interval_label": {
+    "message": "ಫ್ರೀಜ್ ಟೋಕನ್ ಮಧ್ಯಂತರ (ದಿನಗಳು)"
+  },
+  "options_retention_label": {
+    "message": "ದೈನಂದಿನ ಅಂಕಿಅಂಶಗಳನ್ನು ಇರಿಸಿಕೊ (ದಿನಗಳು)"
+  },
+  "options_category_on_announcement": {
+    "message": "$CATEGORY$ ವರ್ಗ ಆನ್ ಆಗಿದೆ.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "$CATEGORY$ ವರ್ಗ ಆಫ್ ಆಗಿದೆ.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "ಎಲ್ಲಾ ವರ್ಗಗಳು ಆನ್ ಆಗಿವೆ."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "ಎಲ್ಲಾ ವರ್ಗಗಳು ಆಫ್ ಆಗಿವೆ."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ ಸೇರಿಸಲಾಗಿದೆ.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ ಲಭ್ಯವಾಗಿ ಇರಿಸಲಾಗಿದೆ.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "ಎಲ್ಲಾ $CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "ಎಲ್ಲಾ $CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಲಭ್ಯವಾಗಿ ಇರಿಸಲಾಗಿದೆ.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "ವರ್ಗ ಬಲ್ಕ್ ಕ್ರಿಯೆಗಳು"
+  },
+  "options_selected_count": {
+    "message": "$COUNT$ ಆಯ್ಕೆಯಾಗಿವೆ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "$COUNT$ ಆಯ್ಕೆ ರದ್ದಾಗಿವೆ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆಮಾಡಿ"
+  },
+  "options_deselect_all": {
+    "message": "ಎಲ್ಲಾ ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ"
+  },
+  "options_select_all_categories_aria": {
+    "message": "ಎಲ್ಲಾ ವರ್ಗಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "ಎಲ್ಲಾ ವರ್ಗಗಳ ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ"
+  },
+  "options_show_category_sites": {
+    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸು",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಮರೆಮಾಡು",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ ಸೈಟ್ ಸೇರಿಸಲಾಗಿದೆ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ ಸೈಟ್‌ಗಳು ಸೇರಿಸಲಾಗಿವೆ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "ವರ್ಗ ಆಫ್"
+  },
+  "options_included_when_enabled_one": {
+    "message": "ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ $COUNT$ ಸೈಟ್ ಸೇರ್ಪಡೆಯಾಗುತ್ತದೆ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ $COUNT$ ಸೈಟ್‌ಗಳು ಸೇರ್ಪಡೆಯಾಗುತ್ತವೆ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "ವರ್ಗದ ಉಳಿದ ಭಾಗ ಬ್ಲಾಕ್ ಆಗಿರುವಾಗ ಒಂದು ಸೈಟ್ ಅನ್ನು ಲಭ್ಯವಾಗಿಡಲು ಅದರ ಚೆಕ್ ತೆಗೆ."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ ಸೈಟ್ ಬಲ್ಕ್ ಕ್ರಿಯೆಗಳು",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "ಎಲ್ಲಾ $CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "ಎಲ್ಲಾ $CATEGORY$ ಸೈಟ್‌ಗಳ ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳು",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "ಭಾನು"
+  },
+  "options_day_mon": {
+    "message": "ಸೋಮ"
+  },
+  "options_day_tue": {
+    "message": "ಮಂಗಳ"
+  },
+  "options_day_wed": {
+    "message": "ಬುಧ"
+  },
+  "options_day_thu": {
+    "message": "ಗುರು"
+  },
+  "options_day_fri": {
+    "message": "ಶುಕ್ರ"
+  },
+  "options_day_sat": {
+    "message": "ಶನಿ"
+  },
+  "options_schedule_cycles_label": {
+    "message": "ಫೋಕಸ್ ಮತ್ತು ವಿರಾಮಗಳನ್ನು ಚಕ್ರಗೊಳಿಸು"
+  },
+  "options_schedule_overlap_error": {
+    "message": "$DAY$ ದಿನದಂದು ಇನ್ನೊಂದು ಸಕ್ರಿಯ ನಮೂದಿನೊಂದಿಗೆ ಅತಿಕ್ರಮಿಸುತ್ತದೆ.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "ಸೆಷನ್ ವಿಧ"
+  },
+  "options_schedule_entry_legend": {
+    "message": "ವೇಳಾಪಟ್ಟಿ ನಮೂದು"
+  },
+  "options_schedule_start_label": {
+    "message": "ಪ್ರಾರಂಭ"
+  },
+  "options_schedule_end_label": {
+    "message": "ಅಂತ್ಯ"
+  },
+  "options_schedule_duration_legend": {
+    "message": "ಅವಧಿ"
+  },
+  "options_schedule_intention_label": {
+    "message": "ಉದ್ದೇಶ"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "ಈ ಸಮಯ ಯಾವುದಕ್ಕಾಗಿ"
+  },
+  "options_schedule_save_entry": {
+    "message": "ನಮೂದನ್ನು ಉಳಿಸಿ"
+  },
+  "options_cancel": {
+    "message": "ರದ್ದುಮಾಡಿ"
+  },
+  "options_schedule_empty": {
+    "message": "ಇನ್ನೂ ಯಾವುದೇ ವೇಳಾಪಟ್ಟಿ ಸೆಷನ್‌ಗಳಿಲ್ಲ."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "ಆಯ್ಕೆ ಮಾಡಿದ ದಿನಗಳು"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ ಇಂದ $END$ ವರೆಗೆ",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "ಬ್ಲಾಕ್ ಪಟ್ಟಿ"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "ಅನುಮತಿ ಪಟ್ಟಿ"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "ನಮ್ಯ"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "ಘರ್ಷಣೆ"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "ಕಠಿಣ ಲಾಕ್"
+  },
+  "options_schedule_enabled_label": {
+    "message": "ಸಕ್ರಿಯ"
+  },
+  "options_schedule_edit": {
+    "message": "ಸಂಪಾದಿಸಿ"
+  },
+  "options_schedule_delete": {
+    "message": "ಅಳಿಸಿ"
+  },
+  "options_schedule_add": {
+    "message": "ವೇಳಾಪಟ್ಟಿ ನಮೂದು ಸೇರಿಸಿ"
   }
 }

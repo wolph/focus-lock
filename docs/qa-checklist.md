@@ -30,7 +30,7 @@ Unit suite: **184 files** matching `tests/unit/**/*.test.{ts,tsx}`, the pattern
 deriving it means collecting every file, which is the expensive half of a run, and a number
 that needs a run to verify is exactly the kind that went stale here four times.
 
-End-to-end suite: **115 scenarios in 27 spec files**, as Playwright itself
+End-to-end suite: **133 scenarios in 30 spec files**, as Playwright itself
 lists them. Asking the runner rather than counting `test(` in the sources is not pedantry: a
 grep undercounts `test.skip`, which is listed and reported, and misses a spec file added
 since the grep was written. Both mistakes were present when this section was first drafted.
@@ -102,6 +102,29 @@ since the grep was written. Both mistakes were present when this section was fir
 
 - the 7 September profile boots, migrates once, runs a session, and republishes to Chrome Sync
 
+### locale-capture.spec.ts (1)
+
+- capture every surface for review
+
+### locale-layout.spec.ts (16)
+
+- the popup, settings and stats fit their boxes
+- the popup, settings and stats fit their boxes
+- the popup, settings and stats fit their boxes
+- the popup, settings and stats fit their boxes
+- the popup, settings and stats fit their boxes
+- the popup, settings and stats fit their boxes
+- the popup, settings and stats fit their boxes
+- the popup, settings and stats fit their boxes
+- the running popup and the block overlay fit their boxes
+- the running popup and the block overlay fit their boxes
+- the running popup and the block overlay fit their boxes
+- the running popup and the block overlay fit their boxes
+- the running popup and the block overlay fit their boxes
+- the running popup and the block overlay fit their boxes
+- the running popup and the block overlay fit their boxes
+- the running popup and the block overlay fit their boxes
+
 ### manual-unlock.spec.ts (2)
 
 - a Flexible manual start reads Start until stopped and ends at once
@@ -147,6 +170,10 @@ since the grep was written. Both mistakes were present when this section was fir
 ### popup-work-tab.spec.ts (1)
 
 - the popup defaults to the current work tab and can replace a closed target
+
+### probe-check.spec.ts (1)
+
+- the overflow probe reports a box its text cannot fit
 
 ### qa-flows.spec.ts (8)
 

@@ -1,4 +1,77 @@
 {
+  "onboarding_page_title": {
+    "message": "设置 Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock 设置"
+  },
+  "onboarding_progress": {
+    "message": "第 $STEP$ 步，共 $TOTAL$ 步",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "无法恢复已保存的设置进度。从当前默认值重新开始。"
+  },
+  "onboarding_complete_heading": {
+    "message": "设置完成"
+  },
+  "onboarding_complete_body": {
+    "message": "您的选择已保存。从 Chrome 工具栏打开 Focus Lock 以启动会话。"
+  },
+  "onboarding_error_heading": {
+    "message": "设置不可用"
+  },
+  "onboarding_error_body": {
+    "message": "无法加载设置。请重试。"
+  },
+  "onboarding_retry_button": {
+    "message": "重试"
+  },
+  "onboarding_save_error": {
+    "message": "无法保存设置进度。请重试。"
+  },
+  "onboarding_enable_error": {
+    "message": "无法启用网站阻止。请重试。"
+  },
+  "onboarding_finish_error": {
+    "message": "无法完成设置。您的选择仍已保存。请重试。"
+  },
+  "onboarding_lists_heading": {
+    "message": "选择您的起始阻止列表"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "在 $MODE$ 中，启用的分类和额外已阻止网站不可用。",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "在 $MODE$ 中，每个网站都不可用，除了您的允许列表。",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "这些选择成为未来会话的默认值。您稍后可以编辑它们。"
+  },
+  "onboarding_lists_legend": {
+    "message": "推荐的网站分类"
+  },
   "onboarding_site_count_one": {
     "message": "$COUNT$ 个网站",
     "placeholders": {
@@ -16,5 +89,89 @@
         "example": "52"
       }
     }
+  },
+  "onboarding_show_category_sites": {
+    "message": "显示 $CATEGORY$ 网站",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "隐藏 $CATEGORY$ 网站",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ 域名",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "继续"
+  },
+  "onboarding_access_heading": {
+    "message": "启用网站阻止"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock 在本地检查页面地址，以便能够匹配您选择的分类和网站。它使用网站访问来显示其阻止屏幕并在您的会话结束时恢复受影响的页面。"
+  },
+  "onboarding_access_capability_intro": {
+    "message": "分类和自定义域名可以包括任何网站。因此 Chrome 将请求此功能："
+  },
+  "onboarding_access_capability": {
+    "message": "读取并更改您在所有网站上的所有数据"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock 仅在应用您的阻止规则时使用该访问权限。"
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome 未授予网站访问权限。您可以重试。"
+  },
+  "onboarding_access_registration_error": {
+    "message": "已授予网站访问权限，但 Focus Lock 无法启用阻止。请重试设置或重新加载扩展程序。"
+  },
+  "onboarding_access_enable_button": {
+    "message": "启用网站阻止"
+  },
+  "onboarding_access_defer_button": {
+    "message": "暂不启用"
+  },
+  "onboarding_sync_heading": {
+    "message": "选择您的设置存储位置"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "在 Chrome 设备间同步"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "下面的已批准数据将在您完成设置后使用 Chrome 同步。"
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "所有 Focus Lock 数据都保留在此 Chrome 配置文件中。"
+  },
+  "onboarding_sync_synced_title": {
+    "message": "已同步"
+  },
+  "onboarding_sync_local_title": {
+    "message": "仅限本地"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "未向 Focus Lock 开发者发送任何内容。"
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "完成设置并启用同步"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "完成设置而不同步"
   }
 }

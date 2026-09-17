@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "ఫోకస్ సెషన్ పూర్తయింది"
+  },
+  "notify_session_complete_body": {
+    "message": "మీ ఫోకస్ సెషన్ ముగిసింది."
+  },
+  "notify_schedule_window_body": {
+    "message": "$END$ వరకు లాక్ చేయబడింది.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "ఫోకస్ షెడ్యూల్ ప్రారంభం కాలేదు"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్ ప్రారంభించబడలేదు. సెటప్ పూర్తి చేయండి లేదా వెబ్‌సైట్ యాక్సెస్ ఇవ్వండి, తర్వాత మళ్లీ ప్రయత్నించండి."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "సెటప్ మరో ట్యాబ్‌లో పూర్తయింది."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "సెటప్ మరో ట్యాబ్‌లో మారింది. తాజా ఎంపికలు మళ్లీ లోడ్ చేయబడ్డాయి."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "సెటప్ మరో ట్యాబ్‌లో మారింది. పూర్తి చేయడానికి ముందు సెటప్‌ను రీలోడ్ చేయండి."
+  },
+  "notify_setup_not_complete": {
+    "message": "సెటప్ ఇంకా పూర్తి కాలేదు."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "సెటప్ పూర్తి చేయడానికి సిద్ధంగా లేదు."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "సెటప్ నిల్వ ఎంపిక మారింది. పూర్తి చేయడానికి ముందు సెటప్‌ను రీలోడ్ చేయండి."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "సెటప్ నిల్వ కార్యకలాపం విఫలమైంది."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "సెటప్ కార్యకలాపం విఫలమైంది."
+  },
+  "notify_website_access_check_failed": {
+    "message": "వెబ్‌సైట్ యాక్సెస్‌ను Focus Lock తనిఖీ చేయలేకపోయింది. సెటప్‌ను మళ్లీ ప్రయత్నించండి లేదా ఎక్స్‌టెన్షన్‌ను రీలోడ్ చేయండి."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ ఇవ్వబడింది, కానీ బ్లాకింగ్‌ను ప్రారంభించడంలో Focus Lock విఫలమైంది. సెటప్‌ను మళ్లీ ప్రయత్నించండి లేదా ఎక్స్‌టెన్షన్‌ను రీలోడ్ చేయండి."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ అందుబాటులో లేదు, మరియు బ్లాకింగ్ క్లీనప్‌ను పూర్తి చేయడంలో Focus Lock విఫలమైంది. సెటప్‌ను మళ్లీ ప్రయత్నించండి లేదా ఎక్స్‌టెన్షన్‌ను రీలోడ్ చేయండి."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "అస్థిరమైన వెబ్‌సైట్ యాక్సెస్ స్థితిని Focus Lock అందుకుంది. సెటప్‌ను మళ్లీ ప్రయత్నించండి లేదా ఎక్స్‌టెన్షన్‌ను రీలోడ్ చేయండి."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock ప్రారంభం పూర్తి కాలేదు: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "తెలియని లోపం"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock నడుస్తోంది, రీసెట్ చేయడానికి ఏమీ లేదు"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "పాలసీ జనరేషన్‌లో ఇంకా నిబద్ధమైన రన్‌టైమ్‌ను Focus Lock రీసెట్ చేయలేదు"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "డేటా క్లియర్ మళ్లీ ప్రయత్నం అందుబాటులో లేదు."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "సింక్ చేసిన డేటాను తొలగించే ముందు Sync‌ను ఆఫ్ చేయండి"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock ఇంకా మునుపటి మార్పును పూర్తి చేస్తోంది. కొద్దిసేపటిలో మళ్లీ ప్రయత్నించండి."
+  },
+  "notify_work_gate_stuck": {
+    "message": "తెరిచిన గేట్‌ను మూయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "పని ట్యాబ్ అందుబాటులో లేదు."
+  },
+  "notify_settings_sync_limit": {
+    "message": "సెట్టింగ్‌లు 8 KB Chrome Sync పరిమితిని మించాయి. షెడ్యూల్ ఎంట్రీలను తీసివేయండి లేదా ఉద్దేశాలను చిన్నవి చేయండి, తర్వాత మళ్లీ ప్రయత్నించండి."
+  },
+  "notify_lists_sync_limit": {
+    "message": "జాబితాలు 8 KB Chrome Sync పరిమితిని మించాయి. కస్టమ్ లేదా అనుమతి జాబితా నియమాలను తీసివేయండి, తర్వాత మళ్లీ ప్రయత్నించండి."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: బ్లాక్ చేసిన సైట్‌లను తీసివేయడం అది ముగిసినప్పుడు అన్‌లాక్ అవుతుంది"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: కొత్త అనుమతి జాబితా ఎంట్రీలు అది ముగిసినప్పుడు అన్‌లాక్ అవుతాయి"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: కేటగిరీలను ఆఫ్ చేయడం అది ముగిసినప్పుడు అన్‌లాక్ అవుతుంది"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: కొత్త మినహాయింపులు అది ముగిసినప్పుడు అన్‌లాక్ అవుతాయి"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: డిఫాల్ట్ కఠినత్వాన్ని తగ్గించడం అది ముగిసే వరకు వేచి ఉంటుంది"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: ఆలోచనా గేట్ ఆలస్యాన్ని తగ్గించడం గేట్‌ను బలహీనం చేస్తుంది"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: టైప్ చేసే వాక్యాన్ని తొలగించడం గేట్‌ను బలహీనం చేస్తుంది"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: విరామ క్రెడిట్ సంపాదన రేటును పెంచడం మరిన్ని తప్పించుకోవడాలకు నిధులిస్తుంది"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: విరామ క్రెడిట్ పరిమితిని పెంచడం మరిన్ని తప్పించుకోవడాలకు నిధులిస్తుంది"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: విరామాలను తగ్గించడం వాటి ఖర్చును తగ్గిస్తుంది"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: అన్‌లాక్‌లను తగ్గించడం వాటి ఖర్చును తగ్గిస్తుంది"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "కఠిన లాక్ సెషన్ నడుస్తోంది: దీన్ని ప్రారంభించిన షెడ్యూల్ ఎంట్రీని అది ముగిసే వరకు బలహీనం చేయలేరు"
+  }
+}

@@ -22,34 +22,34 @@
     "message": "저장된 설정 진행 상황을 복원할 수 없습니다. 현재 기본값으로 다시 시작합니다."
   },
   "onboarding_complete_heading": {
-    "message": "설정이 완료되었습니다"
+    "message": "설정 완료"
   },
   "onboarding_complete_body": {
-    "message": "선택 항목이 저장되었습니다. Chrome 도구모음에서 Focus Lock을 열어 세션을 시작하세요."
+    "message": "선택 사항이 저장되었습니다. Chrome 도구모음에서 Focus Lock을 열어 세션을 시작하십시오."
   },
   "onboarding_error_heading": {
     "message": "설정을 사용할 수 없습니다"
   },
   "onboarding_error_body": {
-    "message": "설정을 로드할 수 없습니다. 다시 시도하세요."
+    "message": "설정을 로드할 수 없습니다. 다시 시도하십시오."
   },
   "onboarding_retry_button": {
-    "message": "재시도"
+    "message": "다시 시도"
   },
   "onboarding_save_error": {
-    "message": "설정 진행 상황을 저장할 수 없습니다. 다시 시도하세요."
+    "message": "설정 진행 상황을 저장할 수 없습니다. 다시 시도하십시오."
   },
   "onboarding_enable_error": {
-    "message": "웹사이트 차단을 활성화할 수 없습니다. 다시 시도하세요."
+    "message": "웹사이트 차단을 활성화할 수 없습니다. 다시 시도하십시오."
   },
   "onboarding_finish_error": {
-    "message": "설정을 완료할 수 없습니다. 선택 항목이 저장되었습니다. 다시 시도하세요."
+    "message": "설정을 완료할 수 없습니다. 선택 사항은 여전히 저장됩니다. 다시 시도하십시오."
   },
   "onboarding_lists_heading": {
-    "message": "차단 목록을 선택하세요"
+    "message": "차단 목록 선택"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "$MODE$에서 활성화된 카테고리 및 추가 차단된 사이트를 사용할 수 없습니다.",
+    "message": "$MODE$에서 활성화된 카테고리 및 추가 차단 사이트는 사용할 수 없습니다.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,7 +67,7 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "이러한 선택 항목은 향후 세션의 기본값이 됩니다. 나중에 편집할 수 있습니다."
+    "message": "이러한 선택은 향후 세션의 기본값이 됩니다. 나중에 편집할 수 있습니다."
   },
   "onboarding_lists_legend": {
     "message": "권장 웹사이트 카테고리"
@@ -124,28 +124,28 @@
     "message": "웹사이트 차단 활성화"
   },
   "onboarding_access_local_matching": {
-    "message": "Focus Lock은 페이지 주소를 로컬에서 확인하여 선택한 카테고리 및 사이트와 일치시킬 수 있습니다. 웹사이트 접근을 사용하여 차단 화면을 표시하고 세션이 종료될 때 영향을 받는 페이지를 복원합니다."
+    "message": "Focus Lock은 페이지 주소를 로컬로 확인하여 선택한 카테고리 및 사이트와 일치할 수 있습니다. 웹사이트 액세스를 사용하여 차단 화면을 표시하고 세션이 끝날 때 영향을 받은 페이지를 복원합니다."
   },
   "onboarding_access_capability_intro": {
-    "message": "카테고리 및 사용자 정의 도메인에는 모든 웹사이트가 포함될 수 있습니다. Chrome이 다음 기능을 요청합니다:"
+    "message": "카테고리 및 사용자 지정 도메인에는 모든 웹사이트가 포함될 수 있습니다. 따라서 Chrome이 이 기능을 요청합니다："
   },
   "onboarding_access_capability": {
-    "message": "모든 웹사이트의 모든 데이터를 읽고 변경"
+    "message": "모든 웹사이트의 모든 데이터를 읽기 및 변경"
   },
   "onboarding_access_scope_note": {
-    "message": "Focus Lock은 차단 규칙을 적용할 때만 해당 접근을 사용합니다."
+    "message": "Focus Lock은 차단 규칙을 적용하는 동안에만 해당 액세스를 사용합니다."
   },
   "onboarding_access_denied": {
-    "message": "Chrome이 웹사이트 접근을 허용하지 않았습니다. 재시도할 수 있습니다."
+    "message": "Chrome이 웹사이트 액세스를 허가하지 않았습니다. 다시 시도할 수 있습니다."
   },
   "onboarding_access_registration_error": {
-    "message": "웹사이트 접근은 부여되었지만 Focus Lock이 차단을 활성화할 수 없습니다. 설정을 다시 실행하거나 확장 프로그램을 다시 로드하세요."
+    "message": "웹사이트 액세스가 허가되었지만 Focus Lock이 차단을 활성화할 수 없습니다. 설정을 다시 시도하거나 확장 프로그램을 다시로드하십시오."
   },
   "onboarding_access_enable_button": {
     "message": "웹사이트 차단 활성화"
   },
   "onboarding_access_defer_button": {
-    "message": "나중에"
+    "message": "지금은 아님"
   },
   "onboarding_sync_heading": {
     "message": "설정 저장 위치 선택"
@@ -154,22 +154,22 @@
     "message": "Chrome 기기 간 동기화"
   },
   "onboarding_sync_enabled_note": {
-    "message": "아래의 승인된 데이터는 설정을 완료한 후 Chrome 동기화를 사용합니다."
+    "message": "아래 승인된 데이터는 설정 완료 후 Chrome 동기화를 사용합니다."
   },
   "onboarding_sync_disabled_note": {
-    "message": "모든 Focus Lock 데이터는 이 Chrome 프로필에 유지됩니다."
+    "message": "모든 Focus Lock 데이터는 이 Chrome 프로필에 남아있습니다."
   },
   "onboarding_sync_synced_title": {
     "message": "동기화됨"
   },
   "onboarding_sync_local_title": {
-    "message": "로컬 전용"
+    "message": "로컬만"
   },
   "onboarding_sync_developer_note": {
     "message": "Focus Lock 개발자에게 아무것도 전송되지 않습니다."
   },
   "onboarding_sync_finish_enabled": {
-    "message": "동기화를 활성화하고 설정 완료"
+    "message": "동기화를 활성화하여 설정 완료"
   },
   "onboarding_sync_finish_disabled": {
     "message": "동기화 없이 설정 완료"

@@ -1,6 +1,243 @@
 {
+  "shared_until_stopped": {
+    "message": "直到停止"
+  },
+  "shared_preset_short": {
+    "message": "短"
+  },
+  "shared_preset_focus": {
+    "message": "专注"
+  },
+  "shared_preset_deep_work": {
+    "message": "深度工作"
+  },
+  "shared_deep_work_note": {
+    "message": "一个偏好，不是科学：一个长的不间断块，没有自动休息。"
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ 分鐘总计，有 $FOCUS$ 分鐘专注块",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ 分鐘不间断专注",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "啟動直到停止"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "锁定直到手动解鎖"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "直到停止会话保持靈活或緩衝，无法使用专注和休息週期。"
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "強制鎖定不可用于直到停止：没有计時器和没有手动結束，会话永远无法結束。"
+  },
+  "shared_end_session": {
+    "message": "結束会话"
+  },
+  "shared_unlock": {
+    "message": "解鎖"
+  },
+  "shared_gate_wait_none": {
+    "message": "无等待"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ 秒等待",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ 和輸入的句子",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "執欄直到您使用 $LABEL$ 結束。週期關閉。",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "執欄直到您解鎖它：$REQUIREMENT$，然後 $LABEL$。週期關閉。",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "強制週期，直到停止"
+  },
+  "shared_mode_blacklist": {
+    "message": "封鎖选定網站"
+  },
+  "shared_mode_whitelist": {
+    "message": "仅允许选定網站"
+  },
+  "shared_focus_time_label": {
+    "message": "专注時間"
+  },
+  "shared_clock_focus_phase": {
+    "message": "專注階段"
+  },
+  "shared_clock_total_session": {
+    "message": "总会话"
+  },
+  "shared_clock_pause": {
+    "message": "休息"
+  },
+  "shared_clock_break": {
+    "message": "休息"
+  },
   "shared_badge_indefinite": {
-    "message": "ON"
+    "message": "開啟"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock 正在啟動。应用您選擇的規則。"
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "会话已結束。完成浏览器清理中。"
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock 无法啟動。完成浏览器清理中。"
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock 无法清理未完成的啟動。"
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock 无法完成浏览器清理。"
+  },
+  "shared_retry_cleanup": {
+    "message": "重試清理"
+  },
+  "shared_end_failed": {
+    "message": "无法結束会话。請重試。"
+  },
+  "shared_retry_failed": {
+    "message": "无法重試清理。請重試。"
+  },
+  "shared_action_failed": {
+    "message": "无法請求该操作。請重試。"
+  },
+  "shared_return_to_work_failed": {
+    "message": "无法回到工作。請重試。"
+  },
+  "shared_data_clear_pending": {
+    "message": "刪除 Focus Lock 資料中。完成清理中。"
+  },
+  "shared_data_clear_error": {
+    "message": "无法刪除資料。請重試。"
+  },
+  "shared_schedule_window_label": {
+    "message": "直到窗口結束"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "按日程啟動并執欄直到您停止它：靈活的結束会话，通过確認門檻为緩衝解鎖。週期關閉。"
+  },
+  "shared_schedule_started_title": {
+    "message": "专注日程已啟動"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "活跃直到您停止它。"
+  },
+  "shared_settings_indefinite": {
+    "message": "直到停止会话处于活跃。使用工具栏弹出窗口查看或結束它。"
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock 正在啟動。檢查網站存取并应用您的規則。"
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock 无法完成浏览器清理。打開弹出窗口并重試。"
+  },
+  "shared_settings_session_disclosure": {
+    "message": "工具栏弹出窗口拥有会话控制。活跃会话保留它啟動時捕获的規則。"
+  },
+  "shared_settings_timed": {
+    "message": "计時会话处于活跃狀態直到 $TIME$。它将自动結束。使用工具栏弹出窗口获取实時狀態。",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "已完成"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "手动完成"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "提前結束"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "已結束：網站存取已丢失"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "已結束：封鎖設定失败"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "已結束：计時器設定失败"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "已結束：页面強制執欄失败"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "已結束：恢复失败"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ 小時 $MINUTES$ 分鐘",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ 分鐘",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
   },
   "shared_minutes_one": {
     "message": "$COUNT$ 分鐘",
@@ -19,5 +256,372 @@
         "example": "25"
       }
     }
+  },
+  "shared_updating_session": {
+    "message": "更新会话中"
+  },
+  "shared_less_than_a_minute": {
+    "message": "少于一分鐘"
+  },
+  "shared_focus_remaining_break": {
+    "message": "直到您休息还有 $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "此会话中还剩 $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "成本超過额度限制"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "额度获得在专注期间恢复"
+  },
+  "shared_credit_off": {
+    "message": "额度获得已關閉"
+  },
+  "shared_not_enough_time": {
+    "message": "此專注階段中時間不足"
+  },
+  "shared_ready_in": {
+    "message": "准备好于 $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$：$PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "被 $CATEGORY$ 封鎖",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "被您的封鎖清單封鎖"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "不在您的允許清單中"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "被此会话封鎖"
+  },
+  "shared_verdict_allow_list": {
+    "message": "在您的允許清單中"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "始终允许"
+  },
+  "shared_verdict_unlock": {
+    "message": "临時解鎖"
+  },
+  "shared_verdict_excluded": {
+    "message": "从选定分類中排除"
+  },
+  "shared_verdict_no_session": {
+    "message": "没有活跃專注工作階段"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "由此会话允许"
+  },
+  "shared_category_social": {
+    "message": "社交媒体"
+  },
+  "shared_category_video": {
+    "message": "视频和流媒体"
+  },
+  "shared_category_news": {
+    "message": "新闻"
+  },
+  "shared_category_mail": {
+    "message": "邮件"
+  },
+  "shared_category_shopping": {
+    "message": "购物"
+  },
+  "shared_category_gaming": {
+    "message": "游戏"
+  },
+  "shared_category_forums": {
+    "message": "论坛和无聊"
+  },
+  "shared_synced_settings": {
+    "message": "設定"
+  },
+  "shared_synced_lists": {
+    "message": "封鎖和允許清單"
+  },
+  "shared_synced_credit": {
+    "message": "網站存取點數"
+  },
+  "shared_synced_streaks": {
+    "message": "連續記錄"
+  },
+  "shared_synced_aggregates": {
+    "message": "網域级已封鎖尝试聚合"
+  },
+  "shared_local_full_urls": {
+    "message": "完整 URL"
+  },
+  "shared_local_intentions": {
+    "message": "专注意圖"
+  },
+  "shared_local_events": {
+    "message": "詳細会话事件"
+  },
+  "shared_local_runtime": {
+    "message": "活跃執欄時会话"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "来自较旧版本的某些同步資料无法讀取并已重置。"
+  },
+  "shared_all_data_clear_running": {
+    "message": "在刪除所有資料之前結束執欄的会话。"
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "产品导航"
+  },
+  "shared_nav_overview": {
+    "message": "概覽"
+  },
+  "shared_nav_settings": {
+    "message": "設定"
+  },
+  "shared_section_blocking": {
+    "message": "封鎖"
+  },
+  "shared_section_schedule": {
+    "message": "日程"
+  },
+  "shared_section_behavior": {
+    "message": "会话欄为"
+  },
+  "shared_section_budget": {
+    "message": "網站存取點數"
+  },
+  "shared_section_notifications": {
+    "message": "通知"
+  },
+  "shared_section_privacy": {
+    "message": "隐私和資料"
+  },
+  "shared_theme_auto": {
+    "message": "自动"
+  },
+  "shared_theme_light": {
+    "message": "浅色"
+  },
+  "shared_theme_dark": {
+    "message": "深色"
+  },
+  "shared_theme_button": {
+    "message": "主题：$CURRENT$。切換至 $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "无法保存主题。重新載入页面并重試。"
+  },
+  "shared_host_search_label": {
+    "message": "搜尋 $TITLE$ 網站",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "没有 $TITLE$ 網站与您的搜尋匹配。",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "顯示 $SHOWN$ 个，共 $MATCHED$ 个網站。搜尋以缩小清單。",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "顯示 $MATCHED$ 个，共 $TOTAL$ 个網站。",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "顯示所有 $TOTAL$ 个網站。",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "結束会话"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock 正在啟動"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "应用您選擇的規則。"
+  },
+  "shared_overlay_stopped_page": {
+    "message": "此页面未載入。会话結束時它将自欄載入。"
+  },
+  "shared_overlay_next_step": {
+    "message": "您的下一步"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "回到工作"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "選擇工作頁籤"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "更改工作頁籤"
+  },
+  "shared_overlay_access_summary": {
+    "message": "需要休息或網站存取？"
+  },
+  "shared_overlay_access_note": {
+    "message": "您可以随時离開。網站存取使用额度。"
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "忽略超時并无论如何結束"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock 无法更新此操作。請重試。"
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ 網站存取點數",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "繼續您的目前任务"
+  },
+  "shared_overlay_pause_action": {
+    "message": "解鎖所有網站"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "解鎖此網站"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - 成本 $COST$ 额度",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "已锁定直到 $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "您說：$INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "解鎖 $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "繼續专注"
+  },
+  "shared_gate_phrase_label": {
+    "message": "輸入此内容以確認："
+  },
+  "shared_gate_end_title": {
+    "message": "結束此会话"
   }
 }

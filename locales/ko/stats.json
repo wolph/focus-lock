@@ -6,10 +6,10 @@
     "message": "포커스 기록"
   },
   "stats_loading": {
-    "message": "통계 로드 중."
+    "message": "통계를 로드하고 있습니다."
   },
   "stats_load_error": {
-    "message": "통계를 로드할 수 없습니다. 다시 시도하세요."
+    "message": "통계를 로드할 수 없습니다. 다시로드하고 다시 시도하십시오."
   },
   "stats_partial_error_both": {
     "message": "시간별 시도 및 사이트 접근 크레딧 설정을 사용할 수 없습니다."
@@ -21,34 +21,34 @@
     "message": "사이트 접근 크레딧 설정을 사용할 수 없습니다."
   },
   "stats_scope_synced": {
-    "message": "이 Chrome 계정에서 동기화된 합계. 로컬 전용 패널은 레이블이 지정됩니다."
+    "message": "이 Chrome 계정에서 동기화된 합계입니다. 로컬 전용 패널은 레이블이 지정됩니다."
   },
   "stats_scope_local": {
-    "message": "이 기기에서 합계. Focus Lock 통계는 동기화되지 않습니다."
+    "message": "이 컴퓨터에서의 합계입니다. Focus Lock 통계는 동기화되지 않습니다."
   },
   "stats_scope_checking": {
     "message": "이러한 합계가 동기화되는지 확인 중입니다."
   },
   "stats_scope_unavailable": {
-    "message": "통계 범위를 사용할 수 없습니다. 합계는 동기화된 데이터를 포함할 수 있습니다. 시간별 시도 및 최근 세션은 이 기기에서 제공됩니다."
+    "message": "통계 범위를 사용할 수 없습니다. 합계에는 동기화된 데이터가 포함될 수 있습니다. 시간별 시도 및 최근 세션은 이 컴퓨터에서 나옵니다."
   },
   "stats_scope_retry": {
     "message": "범위 확인 재시도"
   },
   "stats_empty": {
-    "message": "통계는 첫 번째 세션 후에 나타납니다."
+    "message": "통계는 첫 번째 세션 후에 표시됩니다."
   },
   "stats_tile_focus_today": {
     "message": "오늘의 포커스"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "지난 7일간의 포커스"
+    "message": "지난 7일 동안의 포커스"
   },
   "stats_tile_attempts_today": {
     "message": "오늘 차단된 시도"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "오늘 무시된 게이트 요청"
+    "message": "오늘 해제된 게이트 요청"
   },
   "stats_tile_credit_spent_today": {
     "message": "오늘 사용한 사이트 접근 크레딧"
@@ -80,10 +80,10 @@
     }
   },
   "stats_streak_heading": {
-    "message": "연속 기록"
+    "message": "연속"
   },
   "stats_streak_empty": {
-    "message": "연속 기록은 첫 번째 포커스 날부터 시작됩니다."
+    "message": "연속은 첫 포커스 날부터 시작됩니다."
   },
   "stats_streak_unit_one": {
     "message": "일"
@@ -92,7 +92,7 @@
     "message": "일"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$개의 동결 토큰 은행에 저금",
+    "message": "$COUNT$개 동결 토큰이 은행에 보관",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$개의 동결 토큰 은행에 저금",
+    "message": "$COUNT$개 동결 토큰이 은행에 보관",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "연속 기록 동결: 1일 건너뜀, 적용됨"
+    "message": "연속 동결：하나의 놓친 날, 보장"
   },
   "stats_streak_active_days_one": {
-    "message": "이번 달의 $COUNT$개 활성 날짜 ($MONTH$)",
+    "message": "이달 $COUNT$개 활성 날($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "이번 달의 $COUNT$개 활성 날짜 ($MONTH$)",
+    "message": "이달 $COUNT$개 활성 날($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "$MONTH$의 활성 날짜: $DAYS$.",
+    "message": "$MONTH$의 활성 날짜：$DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -164,28 +164,37 @@
     "message": "포커스, 지난 14일"
   },
   "stats_chart_focus_empty": {
-    "message": "포커스 분은 첫 번째 세션 후에 나타납니다."
+    "message": "포커스 분은 첫 세션 후에 표시됩니다."
   },
   "stats_chart_attempts_heading": {
     "message": "차단된 시도, 지난 14일"
   },
   "stats_chart_attempts_empty": {
-    "message": "차단된 시도는 세션이 하나를 포착한 후에 표시됩니다."
+    "message": "차단된 시도는 세션이 한 번 캐치하면 표시됩니다."
   },
   "stats_chart_sites_heading": {
-    "message": "상위 차단된 사이트, 지난 30일"
+    "message": "상위 차단 사이트, 지난 30일"
   },
   "stats_chart_sites_empty": {
-    "message": "아직 차단된 것이 없습니다. 멋진 시작입니다."
+    "message": "아직 아무것도 차단되지 않았습니다. 이것은 좋은 시작입니다."
   },
   "stats_chart_hours_heading": {
-    "message": "시간별 시도, 이 기기만"
+    "message": "시간별 시도, 이 컴퓨터만"
   },
   "stats_chart_other_site": {
     "message": "기타"
   },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
   "stats_blocked_count_one": {
-    "message": "$COUNT$ 차단됨",
+    "message": "$COUNT$개 차단",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -194,7 +203,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "$COUNT$ 차단됨",
+    "message": "$COUNT$개 차단",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -203,19 +212,32 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "막대 차트"
+    "message": "막대 그래프"
   },
   "stats_chart_name_hbar": {
-    "message": "수평 막대 차트"
+    "message": "가로 막대 그래프"
   },
   "stats_chart_description_bar": {
-    "message": "막대 차트. 키보드를 사용하여 데이터 포인트를 이동하거나 테이블로 보기를 열어 동일한 값을 얻습니다."
+    "message": "막대 그래프입니다. 키보드를 사용하여 데이터 포인트를 이동하거나 테이블로 보기를 열어 동일한 값을 얻으십시오."
   },
   "stats_chart_description_hbar": {
-    "message": "수평 막대 차트. 키보드를 사용하여 데이터 포인트를 이동하거나 테이블로 보기를 열어 동일한 값을 얻습니다."
+    "message": "가로 막대 그래프입니다. 키보드를 사용하여 데이터 포인트를 이동하거나 테이블로 보기를 열어 동일한 값을 얻으십시오."
   },
   "stats_chart_empty_default": {
     "message": "아직 데이터가 없습니다."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$：$VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
   },
   "stats_chart_table_summary": {
     "message": "테이블로 보기"
@@ -230,7 +252,7 @@
     "message": "24시간 차단된 시도 열 지도"
   },
   "stats_sessions_heading": {
-    "message": "이 기기의 최근 세션"
+    "message": "이 컴퓨터의 최근 세션"
   },
   "stats_sessions_empty": {
     "message": "첫 번째 세션이 여기에 표시됩니다."
@@ -245,7 +267,7 @@
     "message": "계획됨"
   },
   "stats_sessions_col_focused": {
-    "message": "포커스"
+    "message": "포커스됨"
   },
   "stats_sessions_col_all_sites": {
     "message": "모든 사이트"
@@ -266,7 +288,7 @@
     "message": "의도 없음"
   },
   "stats_session_article_label": {
-    "message": "세션: $INTENTION$",
+    "message": "세션：$INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -281,13 +303,13 @@
     "message": "일정"
   },
   "stats_session_source_scheduled": {
-    "message": "스케줄"
+    "message": "예약됨"
   },
   "stats_outcome_completed": {
     "message": "완료됨"
   },
   "stats_outcome_ended_early": {
-    "message": "조기 종료"
+    "message": "조기 종료됨"
   },
   "stats_outcome_running": {
     "message": "실행 중"

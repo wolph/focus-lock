@@ -90,15 +90,6 @@
       }
     }
   },
-  "onboarding_site_count_many": {
-    "message": "$COUNT$ sitios",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "52"
-      }
-    }
-  },
   "onboarding_show_category_sites": {
     "message": "Mostrar los sitios de $CATEGORY$",
     "placeholders": {
@@ -182,5 +173,14 @@
   },
   "onboarding_sync_finish_disabled": {
     "message": "Terminar sin sincronización"
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ sitios",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
   }
 }

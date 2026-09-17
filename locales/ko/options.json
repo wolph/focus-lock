@@ -9,34 +9,34 @@
     "message": "설정 로드 중"
   },
   "options_privacy_loading": {
-    "message": "개인정보 설정 로드 중"
+    "message": "개인정보 보호 설정 로드 중"
   },
   "options_save_failed": {
-    "message": "저장할 수 없습니다. 다시 시도하세요."
+    "message": "저장할 수 없습니다. 다시 시도하십시오."
   },
   "options_blocking_heading": {
     "message": "차단"
   },
   "options_blocking_help": {
-    "message": "사용자 정의 규칙은 블랙리스트 세션 중에 차단됩니다. 허용 목록은 허용 목록 세션 중에 도달 가능한 상태입니다. 번들된 카테고리는 일반적인 시간 낭비를 차단합니다."
+    "message": "사용자 지정 규칙은 검은목록 세션 중에 차단합니다. 허용 목록은 허용 목록 세션 중에 도달 가능한 것입니다. 번들 카테고리는 일반적인 시간 낭비를 차단합니다."
   },
   "options_custom_blacklist_title": {
-    "message": "사용자 정의 블랙리스트"
+    "message": "사용자 지정 검은목록"
   },
   "options_whitelist_title": {
     "message": "허용 목록"
   },
   "options_bundled_categories_heading": {
-    "message": "번들된 카테고리"
+    "message": "번들 카테고리"
   },
   "options_bundled_categories_help": {
-    "message": "일반적인 시간 낭비의 번들 목록입니다. 전체 카테고리를 전환한 후 열어서 단일 사이트를 사용 가능하게 유지합니다."
+    "message": "일반적인 시간 낭비 번들 목록. 전체 카테고리를 전환한 다음 열어서 단일 사이트를 사용 가능하게 유지합니다."
   },
   "options_schedule_heading": {
     "message": "일정"
   },
   "options_schedule_help": {
-    "message": "세션은 이러한 창 내에서 자동으로 시작됩니다. 여기서 설정한 엄격성이 전체 창에 적용됩니다."
+    "message": "세션은 이러한 창 내에서 자동으로 시작됩니다. 여기서 설정된 엄격함이 전체 창에 적용됩니다."
   },
   "options_behavior_heading": {
     "message": "세션 동작"
@@ -48,10 +48,10 @@
     "message": "알림"
   },
   "options_privacy_heading": {
-    "message": "개인정보 및 데이터"
+    "message": "개인정보 보호 및 데이터"
   },
   "options_load_error_retry": {
-    "message": "재시도"
+    "message": "다시 시도"
   },
   "options_load_error_delete_all": {
     "message": "모두 삭제하고 다시 시작"
@@ -84,7 +84,7 @@
     "message": "도메인"
   },
   "options_rule_kind_regex_badge": {
-    "message": "정규 표현식"
+    "message": "정규식"
   },
   "options_rule_remove": {
     "message": "제거"
@@ -108,19 +108,25 @@
     "message": "도메인 또는 하위 도메인"
   },
   "options_rule_kind_regex_option": {
-    "message": "정규 표현식 (전체 URL)"
+    "message": "정규식(전체 URL)"
   },
   "options_rule_pattern_aria": {
     "message": "패턴"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
     "message": "규칙 추가"
   },
   "options_rules_help": {
-    "message": "facebook.com은 해당 도메인 및 모든 하위 도메인을 포함합니다. news.ycombinator.com은 해당 하위 도메인 및 그 아래의 모든 항목을 포함합니다. /youtube\\.com\\/shorts/는 전체 URL을 정규 표현식으로 일치시킵니다."
+    "message": "facebook.com은 해당 도메인 및 모든 하위 도메인을 포함합니다. news.ycombinator.com은 해당 하위 도메인 및 그 아래의 모든 항목을 포함합니다. /youtube\\.com\\/shorts/는 전체 URL을 정규식으로 일치시킵니다."
   },
   "options_number_error_positive": {
-    "message": "$LABEL$은(는) 양수여야 합니다.",
+    "message": "$LABEL$은 양의 정수여야 합니다.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -129,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "$LABEL$은(는) 0 이상의 정수여야 합니다.",
+    "message": "$LABEL$은 0 이상의 정수여야 합니다.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -138,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "$LABEL$은(는) 0 이상이어야 합니다.",
+    "message": "$LABEL$은 0 이상이어야 합니다.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -147,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$은(는) 지원되는 분 범위 내에 있어야 합니다.",
+    "message": "$LABEL$은 지원되는 분 범위 내에 있어야 합니다.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -156,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$은(는) 지원되는 일 범위 내에 있어야 합니다.",
+    "message": "$LABEL$은 지원되는 날 범위 내에 있어야 합니다.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -168,37 +174,37 @@
     "message": "세션 기본값"
   },
   "options_session_defaults_help": {
-    "message": "모드와 엄격성은 세션 시작 시 고정됩니다. 이것이 시작 양식이 열 때의 값입니다."
+    "message": "세션이 시작될 때 모드와 엄격함이 고정됩니다. 이것이 시작 양식이 열리는 값입니다."
   },
   "options_preset_short_label": {
-    "message": "짧은 세션 프리셋 (분)"
+    "message": "짧은 세션 프리셋(분)"
   },
   "options_preset_default_label": {
-    "message": "기본 세션 프리셋 (분)"
+    "message": "기본 세션 프리셋(분)"
   },
   "options_preset_deep_label": {
-    "message": "깊은 세션 프리셋 (분)"
+    "message": "깊은 세션 프리셋(분)"
   },
   "options_mode_blacklist_label": {
-    "message": "블랙리스트: 나열된 사이트 차단"
+    "message": "검은목록：나열된 사이트 차단"
   },
   "options_mode_whitelist_label": {
-    "message": "허용 목록: 나열된 사이트만 허용"
+    "message": "허용 목록：나열된 사이트만 허용"
   },
   "options_strictness_flexible_label": {
-    "message": "유연: 선택할 때 세션 종료"
+    "message": "유연：언제든지 세션을 종료할 수 있습니다"
   },
   "options_strictness_friction_label": {
-    "message": "마찰: 조기 중지는 설정된 고민 게이트를 사용합니다"
+    "message": "마찰：조기 중지는 설정된 숙고 게이트를 사용합니다"
   },
   "options_strictness_hard_label": {
-    "message": "하드 잠금: 조기 종료 없음, 임시 사이트 접근만"
+    "message": "하드 잠금：조기 종료 없음, 임시 사이트 액세스만"
   },
   "options_cycle_heading": {
     "message": "포커스 및 휴식 사이클"
   },
   "options_cycle_help": {
-    "message": "기본값: 25분 포커스, 5분 휴식, 4번째 사이클마다 15분 긴 휴식입니다. 연구 표본의 일정에 따라 기분과 포커스를 위해 원할 때 휴식을 취하세요. 정확한 분은 관례이지 과학이 아닙니다."
+    "message": "기본값：25분 포커스, 5분 휴식, 4번째 사이클마다 15분 긴 휴식. 일정상의 휴식은 기분과 집중도에 대한 연구 샘플에서 휴식을 느낄 때를 깨뜨립니다. 정확한 분은 규칙이지 과학이 아닙니다."
   },
   "options_cycle_default_label": {
     "message": "기본적으로 포커스 및 휴식 사이클"
@@ -216,10 +222,10 @@
     "message": "N번째 사이클마다 긴 휴식"
   },
   "options_gate_heading": {
-    "message": "고민 게이트"
+    "message": "숙고 게이트"
   },
   "options_gate_help": {
-    "message": "10초 대기와 명확한 작업 복귀 버튼으로 충동적 방문이 크게 감소합니다 (현장 연구, PNAS 2023). 더 긴 대기 및 입력된 문장은 효과를 거의 2배로 만듭니다."
+    "message": "10초 대기 및 명시적 백투워크 버튼은 충동적인 방문을 측정 가능하게 줄입니다(현장 연구, PNAS 2023). 더 긴 대기 및 입력된 문은 효과를 대략 두 배로 늘립니다."
   },
   "options_gate_wait_one": {
     "message": "$COUNT$초 대기",
@@ -240,52 +246,52 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "사용자 정의"
+    "message": "사용자 지정"
   },
   "options_custom_delay_label": {
-    "message": "사용자 정의 지연 (초)"
+    "message": "사용자 지정 지연(초)"
   },
   "options_custom_delay_error": {
-    "message": "사용자 정의 지연은 0보다 큰 초 정수여야 합니다."
+    "message": "사용자 지정 지연은 양의 정수 초여야 합니다."
   },
   "options_gate_typed_phrase_label": {
-    "message": "또한 문장 입력 필수"
+    "message": "문장 입력도 필요"
   },
   "options_gate_force_end_label": {
-    "message": "\"시간 초과 무시하고 종료\" 버튼 활성화"
+    "message": "\"타임아웃 무시하고 어쨌든 종료\" 버튼 활성화"
   },
   "options_credit_help": {
-    "message": "포커스 중에 사이트 접근 크레딧이 축적됩니다. 모든 사이트 접근 및 단일 사이트 잠금 해제 모두 동일한 잔액에서 소비됩니다. 언제든지 비용 없이 이동할 수 있습니다."
+    "message": "사이트 접근 크레딧은 포커스하는 동안 증가합니다. 모든 사이트 액세스 및 단일 사이트 잠금해제는 동일한 잔액에서 소비됩니다. 언제든지 떠날 수 있습니다."
   },
   "options_earn_rate_label": {
-    "message": "30분 포커스당 사이트 접근 분"
+    "message": "30분 포커스당 사이트 액세스 분"
   },
   "options_credit_cap_label": {
-    "message": "사이트 접근 크레딧 제한 (분)"
+    "message": "사이트 접근 크레딧 제한(분)"
   },
   "options_pause_length_label": {
-    "message": "모든 사이트 접근 시간 (분)"
+    "message": "모든 사이트 액세스 길이(분)"
   },
   "options_unlock_length_label": {
-    "message": "사이트 잠금 해제 시간 (분)"
+    "message": "사이트 잠금해제 길이(분)"
   },
   "options_streak_heading": {
-    "message": "연속 기록 및 보존"
+    "message": "연속 및 보유"
   },
   "options_streak_help": {
-    "message": "연속 기록은 목표에 도달한 날을 계산합니다. 1개의 기본 세션이 연쇄를 유지하고 동결 토큰이 놓친 날을 복구합니다."
+    "message": "연속은 목표에 도달하는 날을 계산합니다. 하나의 기본 세션은 체인을 유지하고 동결 토큰은 놓친 날을 복구합니다."
   },
   "options_streak_goal_label": {
-    "message": "일일 연속 기록 목표 (포커스 분)"
+    "message": "일일 연속 목표(포커스 분)"
   },
   "options_freeze_interval_label": {
-    "message": "동결 토큰 간격 (일)"
+    "message": "동결 토큰 간격(일)"
   },
   "options_retention_label": {
-    "message": "일일 통계 유지 (일)"
+    "message": "일일 통계 유지(일)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ 카테고리 켜짐.",
+    "message": "$CATEGORY$ 카테고리 켜기.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -294,7 +300,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ 카테고리 꺼짐.",
+    "message": "$CATEGORY$ 카테고리 끄기.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -303,13 +309,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "모든 카테고리 켜짐."
+    "message": "모든 카테고리가 켜져있습니다."
   },
   "options_all_categories_off_announcement": {
-    "message": "모든 카테고리 꺼짐."
+    "message": "모든 카테고리가 꺼져있습니다."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ 포함됨.",
+    "message": "$HOST$가 포함되었습니다.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -318,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ 사용 가능하게 유지.",
+    "message": "$HOST$는 사용 가능하게 유지되었습니다.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -327,7 +333,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "모든 $CATEGORY$ 사이트 포함됨.",
+    "message": "모든 $CATEGORY$ 사이트가 포함되었습니다.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -336,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "모든 $CATEGORY$ 사이트가 사용 가능하게 유지됨.",
+    "message": "모든 $CATEGORY$ 사이트는 사용 가능하게 유지되었습니다.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -396,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$개 사이트 포함됨",
+    "message": "$COUNT$개 사이트 포함",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -405,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$개 사이트 포함됨",
+    "message": "$COUNT$개 사이트 포함",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -414,10 +420,10 @@
     }
   },
   "options_category_off": {
-    "message": "카테고리 꺼짐"
+    "message": "카테고리 끄기"
   },
   "options_included_when_enabled_one": {
-    "message": "활성화될 때 $COUNT$개 포함됨",
+    "message": "활성화될 때 $COUNT$개 포함",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -426,7 +432,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "활성화될 때 $COUNT$개 포함됨",
+    "message": "활성화될 때 $COUNT$개 포함",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -435,7 +441,7 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "사이트를 선택 해제하여 나머지 카테고리가 차단되는 동안 사용 가능하게 유지합니다."
+    "message": "사이트의 선택을 취소하여 나머지 카테고리가 차단되는 동안 사용 가능하게 유지합니다."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ 사이트 일괄 작업",
@@ -516,7 +522,7 @@
     "message": "시작"
   },
   "options_schedule_end_label": {
-    "message": "종료"
+    "message": "끝"
   },
   "options_schedule_duration_legend": {
     "message": "기간"
@@ -525,7 +531,7 @@
     "message": "의도"
   },
   "options_schedule_intention_placeholder": {
-    "message": "이 시간이 무엇을 위한 것인지"
+    "message": "이 시간은 무엇을 위한 것입니까"
   },
   "options_schedule_save_entry": {
     "message": "항목 저장"
@@ -534,13 +540,13 @@
     "message": "취소"
   },
   "options_schedule_empty": {
-    "message": "아직 스케줄된 세션이 없습니다."
+    "message": "아직 예약된 세션이 없습니다."
   },
   "options_schedule_selected_days_aria": {
-    "message": "선택된 날짜"
+    "message": "선택된 날"
   },
   "options_schedule_time_range": {
-    "message": "$START$에서 $END$",
+    "message": "$START$에서 $END$까지",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -553,7 +559,7 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "블랙리스트"
+    "message": "검은목록"
   },
   "options_schedule_mode_whitelist": {
     "message": "허용 목록"
@@ -610,13 +616,13 @@
     "message": "재생"
   },
   "options_sound_preview_error": {
-    "message": "소리를 미리 볼 수 없습니다. 다시 시도하세요."
+    "message": "소리를 미리 볼 수 없습니다. 다시 시도하십시오."
   },
   "options_sounds_notifications_heading": {
     "message": "알림"
   },
   "options_session_complete_notification": {
-    "message": "세션이 완료될 때 시스템 알림 표시"
+    "message": "세션 완료 시 시스템 알림 표시"
   },
   "options_badge_heading": {
     "message": "배지"
@@ -625,34 +631,34 @@
     "message": "도구모음 아이콘에 남은 시간 표시"
   },
   "options_privacy_website_access_heading": {
-    "message": "웹사이트 접근"
+    "message": "웹사이트 액세스"
   },
   "options_privacy_website_off_title": {
-    "message": "웹사이트 접근이 꺼짐"
+    "message": "웹사이트 액세스가 꺼져있습니다"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock은 접근을 허용할 때까지 웹사이트를 차단할 수 없습니다."
+    "message": "Focus Lock은 액세스를 허가할 때까지 웹사이트를 차단할 수 없습니다."
   },
   "options_privacy_website_enable_action": {
     "message": "웹사이트 차단 활성화"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "웹사이트 접근은 허용되지만 차단이 활성화되지 않음"
+    "message": "웹사이트 액세스가 허가되었지만 차단이 활성화되지 않았습니다"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome이 접근을 허용했지만 Focus Lock이 차단 스크립트를 등록할 수 없습니다."
+    "message": "Chrome이 액세스를 허가했지만 Focus Lock이 차단 스크립트를 등록할 수 없습니다."
   },
   "options_privacy_website_retry_action": {
-    "message": "웹사이트 차단 재시도"
+    "message": "웹사이트 차단 다시 시도"
   },
   "options_privacy_website_on_title": {
-    "message": "웹사이트 차단이 활성화됨"
+    "message": "웹사이트 차단이 활성화되었습니다"
   },
   "options_privacy_website_on_detail": {
     "message": "Focus Lock은 일반 웹페이지에 활성 차단 규칙을 적용할 수 있습니다."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "로컬 기록을 삭제하시겠어요?"
+    "message": "로컬 기록을 삭제하시겠습니까？"
   },
   "options_privacy_confirm_local_history_action": {
     "message": "로컬 기록 삭제 확인"
@@ -661,13 +667,13 @@
     "message": "로컬 기록이 삭제되었습니다."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "이렇게 하면 이 기기에서 전체 URL, 포커스 의도 및 상세 세션 이벤트가 영구적으로 삭제됩니다. 실행 중인 세션은 정리되지 않으며 해당 의도와 차단하는 각 탭의 주소를 유지합니다. 세션을 종료하면 의도가 지워지고 모든 열려있는 웹사이트 탭을 정리하는 정리가 시작되며, 정리가 완료되면 저장된 모든 주소가 제거됩니다."
+    "message": "이렇게 하면 이 기기에서 전체 URL, 포커스 의도 및 상세 세션 이벤트가 영구적으로 삭제됩니다. 실행 중인 세션은 지워지지 않습니다. 이 세션은 의도와 차단하는 각 탭의 주소를 유지합니다. 세션을 종료하면 앱 의도가 지워지고 정리가 시작됩니다. 이 정리는 모든 열린 웹사이트 탭을 지우고 완료될 때 저장된 모든 주소를 제거합니다."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "이렇게 하면 이 기기에서 전체 URL, 포커스 의도, 상세 세션 이벤트 및 로컬 전용 집계 통계가 영구적으로 삭제됩니다. 실행 중인 세션은 정리되지 않으며 해당 의도와 차단하는 각 탭의 주소를 유지합니다. 세션을 종료하면 의도가 지워지고 모든 열려있는 웹사이트 탭을 정리하는 정리가 시작되며, 정리가 완료되면 저장된 모든 주소가 제거됩니다."
+    "message": "이렇게 하면 이 기기에서 전체 URL, 포커스 의도, 상세 세션 이벤트 및 로컬 전용 집계 통계가 영구적으로 삭제됩니다. 실행 중인 세션은 지워지지 않습니다. 이 세션은 의도와 차단하는 각 탭의 주소를 유지합니다. 세션을 종료하면 앱 의도가 지워지고 정리가 시작됩니다. 이 정리는 모든 열린 웹사이트 탭을 지우고 완료될 때 저장된 모든 주소를 제거합니다."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "원격 동기화 데이터를 삭제하시겠어요?"
+    "message": "원격 동기화 데이터를 삭제하시겠습니까？"
   },
   "options_privacy_confirm_synced_policy_action": {
     "message": "원격 동기화 데이터 삭제 확인"
@@ -676,10 +682,10 @@
     "message": "원격 Chrome 동기화 데이터가 삭제되었습니다."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "이렇게 하면 Chrome 동기화에서 원격 설정, 차단 목록, 허용 목록, 사이트 접근 크레딧, 연속 기록 및 도메인 수준의 차단된 시도 집계가 영구적으로 삭제됩니다. 로컬 설정 및 통계는 이 기기에 유지됩니다."
+    "message": "이렇게 하면 Chrome 동기화에 남아있는 원격 설정, 차단 및 허용 목록, 사이트 접근 크레딧, 연속 및 도메인 수준 차단된 시도 집계가 영구적으로 삭제됩니다. 로컬 설정 및 통계는 이 기기에 남아있습니다."
   },
   "options_privacy_confirm_all_title": {
-    "message": "모든 Focus Lock 데이터를 삭제하시겠어요?"
+    "message": "모든 Focus Lock 데이터를 삭제하시겠습니까？"
   },
   "options_privacy_confirm_all_action": {
     "message": "모든 Focus Lock 데이터 삭제 확인"
@@ -688,34 +694,34 @@
     "message": "모든 Focus Lock 데이터가 삭제되었습니다."
   },
   "options_privacy_all_body_intro": {
-    "message": "이렇게 하면 이 기기의 모든 Focus Lock 데이터 및 Chrome 동기화에 남아있는 모든 Focus Lock 사본이 영구적으로 삭제됩니다:"
+    "message": "이렇게 하면 이 기기의 모든 Focus Lock 데이터 및 Chrome 동기화에 남아있는 모든 Focus Lock 복사본이 영구적으로 삭제됩니다："
   },
   "options_privacy_all_body_outro": {
-    "message": "모든 삭제는 세션이 실행 중이 아닐 때만 사용 가능합니다. Focus Lock이 설정으로 돌아갑니다."
+    "message": "모든 데이터 삭제는 세션이 실행되지 않는 동안에만 사용 가능합니다. Focus Lock은 설정으로 돌아갑니다."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "로컬 기록을 삭제할 수 없습니다. 다시 시도하세요."
+    "message": "로컬 기록을 삭제할 수 없습니다. 다시 시도하십시오."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "원격 Chrome 동기화 데이터를 삭제할 수 없습니다. 다시 시도하세요."
+    "message": "원격 Chrome 동기화 데이터를 삭제할 수 없습니다. 다시 시도하십시오."
   },
   "options_privacy_error_all_clear": {
-    "message": "모든 Focus Lock 데이터를 삭제할 수 없습니다. 다시 시도하세요."
+    "message": "모든 Focus Lock 데이터를 삭제할 수 없습니다. 다시 시도하십시오."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome 동기화가 최신 변경 사항을 저장할 수 없습니다. 로컬 저장이 안전합니다."
+    "message": "Chrome 동기화가 최신 변경 사항을 저장할 수 없습니다. 로컬 저장소는 안전합니다."
   },
   "options_privacy_error_request": {
-    "message": "요청을 완료할 수 없습니다. 다시 시도하세요."
+    "message": "요청을 완료할 수 없습니다. 다시 시도하십시오."
   },
   "options_privacy_website_access_updated": {
-    "message": "웹사이트 접근이 업데이트되었습니다."
+    "message": "웹사이트 액세스가 업데이트되었습니다."
   },
   "options_privacy_website_access_denied": {
-    "message": "웹사이트 접근이 허용되지 않았습니다."
+    "message": "웹사이트 액세스가 허가되지 않았습니다."
   },
   "options_privacy_error_website_access": {
-    "message": "웹사이트 접근을 업데이트할 수 없습니다. 다시 시도하세요."
+    "message": "웹사이트 액세스를 업데이트할 수 없습니다. 다시 시도하십시오."
   },
   "options_privacy_website_blocking_enabled": {
     "message": "웹사이트 차단이 활성화되었습니다."
@@ -724,10 +730,10 @@
     "message": "이벤트 로그를 내보낼 수 없습니다."
   },
   "options_privacy_error_export_retry": {
-    "message": "이벤트 로그를 내보낼 수 없습니다. 다시 시도하세요."
+    "message": "이벤트 로그를 내보낼 수 없습니다. 다시 시도하십시오."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Chrome 권한 설정을 열 수 없습니다. 다시 시도하세요."
+    "message": "Chrome 권한 설정을 열 수 없습니다. 다시 시도하십시오."
   },
   "options_privacy_chrome_settings_opened": {
     "message": "Chrome 권한 설정이 열렸습니다."
@@ -769,7 +775,7 @@
     "message": "동기화됨"
   },
   "options_privacy_scope_local_only": {
-    "message": "로컬 전용"
+    "message": "로컬만"
   },
   "options_privacy_developer_note": {
     "message": "Focus Lock 개발자에게 아무것도 전송되지 않습니다."
@@ -793,7 +799,7 @@
     "message": "원격 동기화 데이터"
   },
   "options_privacy_remote_data_detail": {
-    "message": "이 기기를 변경하지 않고 Chrome 동기화에 남아있는 Focus Lock 사본을 삭제합니다."
+    "message": "이 기기를 변경하지 않고 Chrome 동기화에 남아있는 Focus Lock 복사본을 삭제합니다."
   },
   "options_privacy_delete_remote_data": {
     "message": "원격 동기화 데이터 삭제"
@@ -802,10 +808,10 @@
     "message": "모든 Focus Lock 데이터"
   },
   "options_privacy_all_data_detail": {
-    "message": "이 기기의 모든 Focus Lock 레코드 및 Chrome 동기화에 남아있는 모든 Focus Lock 사본을 삭제한 후 설정부터 다시 시작합니다. 세션이 실행 중이 아닐 때만 사용 가능합니다."
+    "message": "이 기기의 모든 Focus Lock 레코드 및 Sync에 남아있는 모든 Focus Lock 복사본을 삭제하고 설정에서 시작합니다. 세션이 실행되지 않는 동안 사용 가능합니다."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "모든 Focus Lock 데이터 삭제를 재개하고 있습니다."
+    "message": "모든 Focus Lock 데이터 삭제를 재개 중입니다."
   },
   "options_privacy_retry_local_history": {
     "message": "로컬 기록 삭제 재시도"
@@ -817,27 +823,27 @@
     "message": "모든 데이터 삭제 재시도"
   },
   "options_error_load": {
-    "message": "설정을 로드할 수 없습니다. 페이지를 다시 로드하고 다시 시도하세요."
+    "message": "설정을 로드할 수 없습니다. 페이지를 다시로드하고 다시 시도하십시오."
   },
   "options_error_retry_boot": {
-    "message": "Focus Lock을 다시 시작할 수 없습니다. 다시 시도하세요."
+    "message": "Focus Lock을 다시 시작할 수 없습니다. 다시 시도하십시오."
   },
   "options_error_refresh_privacy": {
-    "message": "개인정보 설정을 새로 고칠 수 없습니다. 페이지를 다시 로드하세요."
+    "message": "개인정보 보호 설정을 새로 고칠 수 없습니다. 페이지를 다시로드하십시오."
   },
   "options_error_website_blocking": {
-    "message": "웹사이트 차단을 업데이트할 수 없습니다. 다시 시도하세요."
+    "message": "웹사이트 차단을 업데이트할 수 없습니다. 다시 시도하십시오."
   },
   "options_error_change_sync": {
-    "message": "Chrome 동기화를 변경할 수 없습니다. 다시 시도하세요."
+    "message": "Chrome 동기화를 변경할 수 없습니다. 다시 시도하십시오."
   },
   "options_error_retry_sync": {
-    "message": "Chrome 동기화를 재시도할 수 없습니다. 다시 시도하세요."
+    "message": "Chrome 동기화를 재시도할 수 없습니다. 다시 시도하십시오."
   },
   "options_error_save_settings": {
-    "message": "설정을 저장할 수 없습니다. 페이지를 다시 로드하고 다시 시도하세요."
+    "message": "설정을 저장할 수 없습니다. 페이지를 다시로드하고 다시 시도하십시오."
   },
   "options_error_save_lists": {
-    "message": "목록을 저장할 수 없습니다. 페이지를 다시 로드하고 다시 시도하세요."
+    "message": "목록을 저장할 수 없습니다. 페이지를 다시로드하고 다시 시도하십시오."
   }
 }

@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock సెటప్ చేయండి"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock సెటప్"
+  },
+  "onboarding_progress": {
+    "message": "దశ $STEP$ / $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "మీ సేవ్ చేసిన సెటప్ పురోగతిని పునరుద్ధరించలేకపోయాం. మీ ప్రస్తుత డిఫాల్ట్‌లతో మళ్లీ ప్రారంభిస్తోంది."
+  },
+  "onboarding_complete_heading": {
+    "message": "సెటప్ పూర్తయింది"
+  },
+  "onboarding_complete_body": {
+    "message": "మీ ఎంపికలు సేవ్ చేయబడ్డాయి. సెషన్ ప్రారంభించడానికి Chrome టూల్‌బార్ నుండి Focus Lock తెరవండి."
+  },
+  "onboarding_error_heading": {
+    "message": "సెటప్ అందుబాటులో లేదు"
+  },
+  "onboarding_error_body": {
+    "message": "సెటప్ లోడ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "onboarding_retry_button": {
+    "message": "మళ్లీ ప్రయత్నించండి"
+  },
+  "onboarding_save_error": {
+    "message": "సెటప్ పురోగతిని సేవ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "onboarding_enable_error": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను ప్రారంభించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "onboarding_finish_error": {
+    "message": "సెటప్ పూర్తి చేయలేకపోయాం. మీ ఎంపికలు ఇంకా సేవ్ చేయబడి ఉన్నాయి. మళ్లీ ప్రయత్నించండి."
+  },
+  "onboarding_lists_heading": {
+    "message": "మీ ప్రారంభ బ్లాక్ లిస్ట్‌ను ఎంచుకోండి"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "$MODE$‌లో, ప్రారంభించిన కేటగిరీలు మరియు అదనపు బ్లాక్ చేసిన సైట్‌లు అందుబాటులో ఉండవు.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$‌లో, మీ అనుమతి జాబితా తప్ప ప్రతి సైట్ అందుబాటులో ఉండదు.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "ఈ ఎంపికలు భవిష్యత్ సెషన్‌లకు డిఫాల్ట్‌లు అవుతాయి. మీరు వీటిని తర్వాత సవరించవచ్చు."
+  },
+  "onboarding_lists_legend": {
+    "message": "సిఫార్సు చేసిన వెబ్‌సైట్ కేటగిరీలు"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ సైట్",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ సైట్‌లు",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "$CATEGORY$ సైట్‌లను చూపించు",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "$CATEGORY$ సైట్‌లను దాచు",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ డొమైన్‌లు",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "కొనసాగించు"
+  },
+  "onboarding_access_heading": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను ప్రారంభించండి"
+  },
+  "onboarding_access_local_matching": {
+    "message": "మీరు ఎంచుకున్న కేటగిరీలు మరియు సైట్‌లను సరిపోల్చడానికి Focus Lock పేజీ చిరునామాలను స్థానికంగా తనిఖీ చేస్తుంది. మీ సెషన్ ముగిసినప్పుడు దాని బ్లాకింగ్ స్క్రీన్‌ను చూపించడానికి మరియు ప్రభావితమైన పేజీలను పునరుద్ధరించడానికి ఇది వెబ్‌సైట్ యాక్సెస్‌ను ఉపయోగిస్తుంది."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "కేటగిరీలు మరియు కస్టమ్ డొమైన్‌లు ఏ వెబ్‌సైట్‌నైనా కలిగి ఉండవచ్చు. కాబట్టి Chrome ఈ సామర్థ్యాన్ని అభ్యర్థిస్తుంది:"
+  },
+  "onboarding_access_capability": {
+    "message": "అన్ని వెబ్‌సైట్‌లలో మీ మొత్తం డేటాను చదవడం మరియు మార్చడం"
+  },
+  "onboarding_access_scope_note": {
+    "message": "మీ బ్లాకింగ్ నియమాలను వర్తింపజేసేటప్పుడు మాత్రమే Focus Lock ఆ యాక్సెస్‌ను ఉపయోగిస్తుంది."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome వెబ్‌సైట్ యాక్సెస్ ఇవ్వలేదు. మీరు మళ్లీ ప్రయత్నించవచ్చు."
+  },
+  "onboarding_access_registration_error": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ ఇవ్వబడింది, కానీ బ్లాకింగ్‌ను ప్రారంభించడంలో Focus Lock విఫలమైంది. సెటప్‌ను మళ్లీ ప్రయత్నించండి లేదా ఎక్స్‌టెన్షన్‌ను రీలోడ్ చేయండి."
+  },
+  "onboarding_access_enable_button": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను ప్రారంభించండి"
+  },
+  "onboarding_access_defer_button": {
+    "message": "ఇప్పుడు వద్దు"
+  },
+  "onboarding_sync_heading": {
+    "message": "మీ సెట్టింగ్‌లు ఎక్కడ నిల్వ చేయబడతాయో ఎంచుకోండి"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Chrome పరికరాలలో సింక్ చేయండి"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "సెటప్ పూర్తయిన తర్వాత దిగువన ఉన్న ఆమోదించిన డేటా Chrome Sync‌ను ఉపయోగిస్తుంది."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "అన్ని Focus Lock డేటా ఈ Chrome ప్రొఫైల్‌లోనే ఉంటుంది."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "సింక్ చేయబడింది"
+  },
+  "onboarding_sync_local_title": {
+    "message": "స్థానికం మాత్రమే"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock డెవలపర్‌కు ఏమీ పంపబడదు."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "సింక్ ప్రారంభించి సెటప్ పూర్తి చేయండి"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "సింక్ లేకుండా సెటప్ పూర్తి చేయండి"
+  }
+}

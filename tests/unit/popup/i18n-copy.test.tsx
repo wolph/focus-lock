@@ -20,8 +20,13 @@ interface I18nFake {
 
 /** Marks every answer, and appends the substitutions so their order can be read back. */
 const i18nFake: I18nFake = {
-  getMessage: (key: string, substitutions?: string[]): string =>
-    key === '@@bidi_dir' ? 'rtl' : [`${TRANSLATED}:${key}`, ...(substitutions ?? [])].join(' '),
+  getMessage: (key: string, substitutions?: string[]): string => {
+    if (key === '@@bidi_dir') return 'rtl';
+    // The locale the catalogue was resolved from, which is what decides plural rules and number
+    // formatting as well as the words themselves.
+    if (key === '@@ui_locale') return 'nl_NL';
+    return [`${TRANSLATED}:${key}`, ...(substitutions ?? [])].join(' ');
+  },
   getUILanguage: (): string => 'nl-NL',
 };
 

@@ -1,0 +1,317 @@
+{
+  "stats_document_title": {
+    "message": "Focus Lock గణాంకాలు"
+  },
+  "stats_page_title": {
+    "message": "మీ ఫోకస్ రికార్డు"
+  },
+  "stats_loading": {
+    "message": "మీ గణాంకాలు లోడ్ అవుతున్నాయి."
+  },
+  "stats_load_error": {
+    "message": "గణాంకాలను లోడ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించడానికి రీలోడ్ చేయండి."
+  },
+  "stats_partial_error_both": {
+    "message": "గంటవారీ ప్రయత్నాలు మరియు సైట్ యాక్సెస్ క్రెడిట్ సెట్టింగ్‌లు అందుబాటులో లేవు."
+  },
+  "stats_partial_error_attempts": {
+    "message": "గంటవారీ ప్రయత్నాలు అందుబాటులో లేవు."
+  },
+  "stats_partial_error_economy": {
+    "message": "సైట్ యాక్సెస్ క్రెడిట్ సెట్టింగ్‌లు అందుబాటులో లేవు."
+  },
+  "stats_scope_synced": {
+    "message": "ఈ Chrome ఖాతా నుండి సింక్ చేసిన మొత్తాలు. స్థానికం-మాత్రమే ప్యానెల్‌లు లేబుల్ చేయబడ్డాయి."
+  },
+  "stats_scope_local": {
+    "message": "ఈ మెషిన్ నుండి మొత్తాలు. Focus Lock గణాంకాలు సింక్ చేయబడవు."
+  },
+  "stats_scope_checking": {
+    "message": "ఈ మొత్తాలు సింక్ చేయబడ్డాయో లేదో తనిఖీ చేస్తోంది."
+  },
+  "stats_scope_unavailable": {
+    "message": "గణాంక పరిధి అందుబాటులో లేదు. మొత్తాలలో సింక్ చేసిన డేటా ఉండవచ్చు. గంటవారీ ప్రయత్నాలు మరియు ఇటీవలి సెషన్‌లు ఈ మెషిన్ నుండివి."
+  },
+  "stats_scope_retry": {
+    "message": "పరిధి తనిఖీని మళ్లీ ప్రయత్నించు"
+  },
+  "stats_empty": {
+    "message": "మీ మొదటి సెషన్ తర్వాత గణాంకాలు కనిపిస్తాయి."
+  },
+  "stats_tile_focus_today": {
+    "message": "ఈరోజు ఫోకస్"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "గత 7 రోజుల్లో ఫోకస్"
+  },
+  "stats_tile_attempts_today": {
+    "message": "ఈరోజు బ్లాక్ చేసిన ప్రయత్నాలు"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "ఈరోజు తిరస్కరించిన గేట్ అభ్యర్థనలు"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "ఈరోజు ఖర్చు చేసిన సైట్ యాక్సెస్ క్రెడిట్"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "అన్ని సైట్‌లు $ALL_SITES$, ఒక సైట్ $ONE_SITE$, $EARNED$ సంపాదించారు",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ సంపాదించారు",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "వరుస"
+  },
+  "stats_streak_empty": {
+    "message": "మీ మొదటి ఫోకస్ రోజుతో మీ వరుస ప్రారంభమవుతుంది."
+  },
+  "stats_streak_unit_one": {
+    "message": "రోజు"
+  },
+  "stats_streak_unit_other": {
+    "message": "రోజులు"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ ఫ్రీజ్ టోకెన్ దాచబడింది",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ ఫ్రీజ్ టోకెన్‌లు దాచబడ్డాయి",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "వరుస ఫ్రీజ్: ఒక మిస్ అయిన రోజు, కవర్ చేయబడింది"
+  },
+  "stats_streak_active_days_one": {
+    "message": "ఈ నెల ($MONTH$) $COUNT$ యాక్టివ్ రోజు",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "ఈ నెల ($MONTH$) $COUNT$ యాక్టివ్ రోజులు",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "$MONTH$లో యాక్టివ్ తేదీలు: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "$MONTH$లో యాక్టివ్ తేదీలు లేవు.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "ఫోకస్, గత 14 రోజులు"
+  },
+  "stats_chart_focus_empty": {
+    "message": "మీ మొదటి సెషన్ తర్వాత ఫోకస్ నిమిషాలు కనిపిస్తాయి."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "బ్లాక్ చేసిన ప్రయత్నాలు, గత 14 రోజులు"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "ఒక సెషన్ ఒకదాన్ని పట్టుకున్న తర్వాత బ్లాక్ చేసిన ప్రయత్నాలు ఇక్కడ కనిపిస్తాయి."
+  },
+  "stats_chart_sites_heading": {
+    "message": "అత్యధికంగా బ్లాక్ చేసిన సైట్‌లు, గత 30 రోజులు"
+  },
+  "stats_chart_sites_empty": {
+    "message": "ఇంకా ఏమీ బ్లాక్ చేయబడలేదు. అది మంచి ప్రారంభం."
+  },
+  "stats_chart_hours_heading": {
+    "message": "గంటవారీ ప్రయత్నాలు, ఈ మెషిన్ మాత్రమే"
+  },
+  "stats_chart_other_site": {
+    "message": "ఇతరాలు"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ని",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ బ్లాక్ చేయబడింది",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ బ్లాక్ చేయబడ్డాయి",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "బార్ చార్ట్"
+  },
+  "stats_chart_name_hbar": {
+    "message": "క్షితిజ సమాంతర బార్ చార్ట్"
+  },
+  "stats_chart_description_bar": {
+    "message": "బార్ చార్ట్. డేటా పాయింట్ల మధ్య తరలించడానికి కీబోర్డ్‌ను ఉపయోగించండి, లేదా అదే విలువల కోసం అట్టిక కోసం చూడు తెరవండి."
+  },
+  "stats_chart_description_hbar": {
+    "message": "క్షితిజ సమాంతర బార్ చార్ట్. డేటా పాయింట్ల మధ్య తరలించడానికి కీబోర్డ్‌ను ఉపయోగించండి, లేదా అదే విలువల కోసం అట్టిక కోసం చూడు తెరవండి."
+  },
+  "stats_chart_empty_default": {
+    "message": "ఇంకా డేటా లేదు."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "అట్టిక కోసం చూడు"
+  },
+  "stats_chart_table_category": {
+    "message": "కేటగిరీ"
+  },
+  "stats_chart_table_value": {
+    "message": "విలువ"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-గంటల బ్లాక్ చేసిన-ప్రయత్న హీట్ స్ట్రిప్"
+  },
+  "stats_sessions_heading": {
+    "message": "ఈ మెషిన్‌లో ఇటీవలి సెషన్‌లు"
+  },
+  "stats_sessions_empty": {
+    "message": "మీ మొదటి సెషన్ ఇక్కడ కనిపిస్తుంది."
+  },
+  "stats_sessions_col_date": {
+    "message": "తేదీ"
+  },
+  "stats_sessions_col_start": {
+    "message": "ప్రారంభం"
+  },
+  "stats_sessions_col_planned": {
+    "message": "ప్రణాళిక చేసినది"
+  },
+  "stats_sessions_col_focused": {
+    "message": "ఫోకస్ చేసినది"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "అన్ని సైట్‌లు"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "ఒక సైట్"
+  },
+  "stats_sessions_col_intention": {
+    "message": "ఉద్దేశం"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "ఫలితం"
+  },
+  "stats_sessions_col_source": {
+    "message": "మూలం"
+  },
+  "stats_session_no_intention": {
+    "message": "ఉద్దేశం లేదు"
+  },
+  "stats_session_article_label": {
+    "message": "సెషన్: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "మాన్యువల్"
+  },
+  "stats_session_source_schedule": {
+    "message": "షెడ్యూల్"
+  },
+  "stats_session_source_scheduled": {
+    "message": "షెడ్యూల్ చేయబడింది"
+  },
+  "stats_outcome_completed": {
+    "message": "పూర్తయింది"
+  },
+  "stats_outcome_ended_early": {
+    "message": "ముందుగా ముగిసింది"
+  },
+  "stats_outcome_running": {
+    "message": "నడుస్తోంది"
+  }
+}

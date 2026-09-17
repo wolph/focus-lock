@@ -245,15 +245,6 @@
       }
     }
   },
-  "options_gate_wait_many": {
-    "message": "Attendre $COUNT$ secondes",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "10"
-      }
-    }
-  },
   "options_gate_wait_custom": {
     "message": "Personnalisé"
   },
@@ -428,15 +419,6 @@
       }
     }
   },
-  "options_category_sites_included_many": {
-    "message": "$COUNT$ sites inclus",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "12"
-      }
-    }
-  },
   "options_category_off": {
     "message": "Catégorie désactivée"
   },
@@ -450,15 +432,6 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ inclus une fois activée",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "12"
-      }
-    }
-  },
-  "options_included_when_enabled_many": {
     "message": "$COUNT$ inclus une fois activée",
     "placeholders": {
       "COUNT": {
@@ -872,5 +845,32 @@
   },
   "options_error_save_lists": {
     "message": "Impossible d'enregistrer les listes. Recharge la page et réessaie."
+  },
+  "options_gate_wait_many": {
+    "message": "Attendre $COUNT$ secondes",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_category_sites_included_many": {
+    "message": "$COUNT$ sites inclus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_included_when_enabled_many": {
+    "message": "$COUNT$ inclus une fois activée",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
   }
 }

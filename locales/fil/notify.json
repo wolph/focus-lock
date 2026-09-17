@@ -21,22 +21,22 @@
     "message": "Hindi na-enable ang pagharang sa website. Tapusin ang setup o magbigay ng access sa website, pagkatapos ay subukan muli."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Nakumpleto ang setup sa ibang tab."
+    "message": "I-set up was completed in another tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Nagbago ang setup sa ibang tab. Ang pinakabagong pagpipilian ay nag-reload."
+    "message": "I-set up changed in another tab. The latest choices were reloaded."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Nagbago ang setup sa ibang tab. I-reload ang setup bago makumpleto."
+    "message": "I-set up changed in another tab. Reload setup before finishing."
   },
   "notify_setup_not_complete": {
-    "message": "Ang setup ay hindi kumpleto."
+    "message": "I-set up is not complete."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "Ang setup ay hindi handa na para makumpleto."
+    "message": "I-set up is not ready to finish."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Nagbago ang pagpipilian ng pag-iimbak ng setup. I-reload ang setup bago makumpleto."
+    "message": "I-set up storage choice changed. Reload setup before finishing."
   },
   "notify_onboarding_storage_failed": {
     "message": "Nabigong operasyon sa pag-iimbak ng onboarding."
@@ -45,16 +45,16 @@
     "message": "Nabigong operasyon sa onboarding."
   },
   "notify_website_access_check_failed": {
-    "message": "Hindi makakasuri ng access sa website ang Focus Lock. Subukan muli ang setup o i-reload ang extension."
+    "message": "Focus Lock could not check website access. Subukan Muli setup or reload the extension."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Binigyan ng access sa website, ngunit hindi makapagsimula ng pagharang ang Focus Lock. Subukan muli ang setup o i-reload ang extension."
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Hindi available ang access sa website, at hindi matatapos ang pagharang-buhay ng Focus Lock. Subukan muli ang setup o i-reload ang extension."
+    "message": "Website access is unavailable, and Focus Lock could not finish blocking cleanup. Subukan Muli setup or reload the extension."
   },
   "notify_website_access_inconsistent": {
-    "message": "Nakatanggap ang Focus Lock ng hindi tugmang estado ng access sa website. Subukan muli ang setup o i-reload ang extension."
+    "message": "Focus Lock received an inconsistent website access state. Subukan Muli setup or reload the extension."
   },
   "notify_boot_not_finished": {
     "message": "Hindi natatapos ang pagsisimula ng Focus Lock: $REASON$",
@@ -78,7 +78,7 @@
     "message": "Ang pagsubok muli sa pag-clear ng data ay hindi available."
   },
   "notify_disable_sync_before_delete": {
-    "message": "I-disable ang Sync bago i-delete ang data na naka-sync"
+    "message": "I-disable Sync before deleting synced data"
   },
   "notify_work_gate_busy": {
     "message": "Gumagawa pa rin ng pagbabago ang Focus Lock. Subukan muli sa sandali."
@@ -90,10 +90,10 @@
     "message": "Hindi available ang tab ng trabaho."
   },
   "notify_settings_sync_limit": {
-    "message": "Lampas ang mga setting sa 8 KB limit ng Chrome Sync. Alisin ang mga entry ng iskedyul o pahabain ang mga hangarin, pagkatapos ay subukan muli."
+    "message": "Mga setting exceed the 8 KB Chrome Sync limit. Alisin schedule entries or shorten intentions, then try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Lampas ang mga listahan sa 8 KB limit ng Chrome Sync. Alisin ang custom o whitelist rules, pagkatapos ay subukan muli."
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Alisin custom or whitelist rules, then try again."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "tumatakbo ang hard session: ang pag-alisin ng blocked sites ay nag-unlock kapag nagtatapos"

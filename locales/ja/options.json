@@ -1,96 +1,96 @@
 {
   "options_page_title": {
-    "message": "[JA: options_page_title]"
+    "message": "Focus Lockオプション"
   },
   "options_heading": {
-    "message": "[JA: options_heading]"
+    "message": "Focus Lock設定"
   },
   "options_loading_settings": {
-    "message": "[JA: options_loading_settings]"
+    "message": "設定をロード中"
   },
   "options_privacy_loading": {
-    "message": "[JA: options_privacy_loading]"
+    "message": "プライバシー設定をロード中"
   },
   "options_save_failed": {
-    "message": "[JA: options_save_failed]"
+    "message": "保存できませんでした。もう一度試してください。"
   },
   "options_blocking_heading": {
-    "message": "[JA: options_blocking_heading]"
+    "message": "ブロッキング"
   },
   "options_blocking_help": {
-    "message": "[JA: options_blocking_help]"
+    "message": "カスタムルールはブラックリストセッション中にブロックします。ホワイトリストはホワイトリストセッション中に到達可能なものです。バンドルされたカテゴリは一般的な時間浪費をブロックします。"
   },
   "options_custom_blacklist_title": {
-    "message": "[JA: options_custom_blacklist_title]"
+    "message": "カスタムブラックリスト"
   },
   "options_whitelist_title": {
-    "message": "[JA: options_whitelist_title]"
+    "message": "ホワイトリスト"
   },
   "options_bundled_categories_heading": {
-    "message": "[JA: options_bundled_categories_heading]"
+    "message": "バンドルカテゴリ"
   },
   "options_bundled_categories_help": {
-    "message": "[JA: options_bundled_categories_help]"
+    "message": "一般的な時間浪費のバンドルリスト。カテゴリ全体を切り替えてから開いて、単一のサイトを利用可能に保ちます。"
   },
   "options_schedule_heading": {
-    "message": "[JA: options_schedule_heading]"
+    "message": "スケジュール"
   },
   "options_schedule_help": {
-    "message": "[JA: options_schedule_help]"
+    "message": "セッションはこれらのウィンドウ内で自動的に開始されます。ここで設定された厳密性がウィンドウ全体に適用されます。"
   },
   "options_behavior_heading": {
-    "message": "[JA: options_behavior_heading]"
+    "message": "セッション動作"
   },
   "options_budget_heading": {
-    "message": "[JA: options_budget_heading]"
+    "message": "サイトアクセスクレジット"
   },
   "options_notifications_heading": {
-    "message": "[JA: options_notifications_heading]"
+    "message": "通知"
   },
   "options_privacy_heading": {
-    "message": "[JA: options_privacy_heading]"
+    "message": "プライバシーとデータ"
   },
   "options_load_error_retry": {
-    "message": "[JA: options_load_error_retry]"
+    "message": "再試行"
   },
   "options_load_error_delete_all": {
-    "message": "[JA: options_load_error_delete_all]"
+    "message": "すべてを削除して開始し直す"
   },
   "options_load_error_keep_data": {
-    "message": "[JA: options_load_error_keep_data]"
+    "message": "データを保持"
   },
   "options_delete_all_data": {
-    "message": "[JA: options_delete_all_data]"
+    "message": "すべてのFocus Lockデータを削除"
   },
   "options_dirty_saving": {
-    "message": "[JA: options_dirty_saving]"
+    "message": "変更を保存中"
   },
   "options_dirty_unsaved": {
-    "message": "[JA: options_dirty_unsaved]"
+    "message": "未保存の変更"
   },
   "options_dirty_clean": {
-    "message": "[JA: options_dirty_clean]"
+    "message": "未保存の変更なし"
   },
   "options_dirty_discard": {
-    "message": "[JA: options_dirty_discard]"
+    "message": "変更を破棄"
   },
   "options_dirty_save": {
-    "message": "[JA: options_dirty_save]"
+    "message": "変更を保存"
   },
   "options_session_status_label": {
-    "message": "[JA: options_session_status_label]"
+    "message": "セッション状態"
   },
   "options_rule_kind_host_badge": {
-    "message": "[JA: options_rule_kind_host_badge]"
+    "message": "ドメイン"
   },
   "options_rule_kind_regex_badge": {
-    "message": "[JA: options_rule_kind_regex_badge]"
+    "message": "正規表現"
   },
   "options_rule_remove": {
-    "message": "[JA: options_rule_remove]"
+    "message": "削除"
   },
   "options_rule_remove_aria": {
-    "message": "[JA: options_rule_remove_aria] $PATTERN$",
+    "message": "$PATTERN$を削除",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -99,19 +99,19 @@
     }
   },
   "options_rules_empty": {
-    "message": "[JA: options_rules_empty]"
+    "message": "ルールはまだありません。"
   },
   "options_rule_kind_aria": {
-    "message": "[JA: options_rule_kind_aria]"
+    "message": "ルールの種類"
   },
   "options_rule_kind_host_option": {
-    "message": "[JA: options_rule_kind_host_option]"
+    "message": "ドメインまたはサブドメイン"
   },
   "options_rule_kind_regex_option": {
-    "message": "[JA: options_rule_kind_regex_option]"
+    "message": "正規表現（完全なURL）"
   },
   "options_rule_pattern_aria": {
-    "message": "[JA: options_rule_pattern_aria]"
+    "message": "パターン"
   },
   "options_rule_pattern_placeholder_host": {
     "message": "[JA: options_rule_pattern_placeholder_host]"
@@ -120,13 +120,13 @@
     "message": "[JA: options_rule_pattern_placeholder_regex]"
   },
   "options_rule_add": {
-    "message": "[JA: options_rule_add]"
+    "message": "ルールを追加"
   },
   "options_rules_help": {
-    "message": "[JA: options_rules_help]"
+    "message": "facebook.comはそのドメインとすべてのサブドメインをカバーしています。news.ycombinator.comはそのサブドメインとその下のすべてのものをカバーしています。/youtube\\.com\\/shorts/は完全なURLを正規表現としてマッチングします。"
   },
   "options_number_error_positive": {
-    "message": "[JA: options_number_error_positive] $LABEL$",
+    "message": "$LABEL$は正の整数である必要があります。",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -135,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "[JA: options_number_error_whole] $LABEL$",
+    "message": "$LABEL$は0以上の整数である必要があります。",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -144,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "[JA: options_number_error_nonnegative] $LABEL$",
+    "message": "$LABEL$は0以上である必要があります。",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -153,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "[JA: options_number_error_minute_range] $LABEL$",
+    "message": "$LABEL$はサポートされている分の範囲内である必要があります。",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -162,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "[JA: options_number_error_day_range] $LABEL$",
+    "message": "$LABEL$はサポートされている日の範囲内である必要があります。",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -171,64 +171,64 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "[JA: options_session_defaults_heading]"
+    "message": "セッションデフォルト"
   },
   "options_session_defaults_help": {
-    "message": "[JA: options_session_defaults_help]"
+    "message": "セッション開始時にモードと厳密性が固定されます。これらはスタートフォームが開く値です。"
   },
   "options_preset_short_label": {
-    "message": "[JA: options_preset_short_label]"
+    "message": "短いセッションプリセット（分）"
   },
   "options_preset_default_label": {
-    "message": "[JA: options_preset_default_label]"
+    "message": "デフォルトセッションプリセット（分）"
   },
   "options_preset_deep_label": {
-    "message": "[JA: options_preset_deep_label]"
+    "message": "ディープセッションプリセット（分）"
   },
   "options_mode_blacklist_label": {
-    "message": "[JA: options_mode_blacklist_label]"
+    "message": "ブラックリスト：リストされたサイトをブロック"
   },
   "options_mode_whitelist_label": {
-    "message": "[JA: options_mode_whitelist_label]"
+    "message": "ホワイトリスト：リストされたサイトのみを許可"
   },
   "options_strictness_flexible_label": {
-    "message": "[JA: options_strictness_flexible_label]"
+    "message": "フレキシブル：いつでもセッションを終了できます"
   },
   "options_strictness_friction_label": {
-    "message": "[JA: options_strictness_friction_label]"
+    "message": "フリクション：早期停止は設定された検討ゲートを使用します"
   },
   "options_strictness_hard_label": {
-    "message": "[JA: options_strictness_hard_label]"
+    "message": "ハードロック：早期終了なし、一時的なサイトアクセスのみ"
   },
   "options_cycle_heading": {
-    "message": "[JA: options_cycle_heading]"
+    "message": "フォーカスと休憩サイクル"
   },
   "options_cycle_help": {
-    "message": "[JA: options_cycle_help]"
+    "message": "デフォルト：25分フォーカス、5分休憩、4サイクルごとに15分長い休憩。スケジュール上の休憩は、気分と集中度に関する研究サンプルで、休憩を感じるときのために破ります。正確な分は規約であり、科学ではありません。"
   },
   "options_cycle_default_label": {
-    "message": "[JA: options_cycle_default_label]"
+    "message": "デフォルトでフォーカスと休憩をサイクルする"
   },
   "options_focus_minutes_label": {
-    "message": "[JA: options_focus_minutes_label]"
+    "message": "フォーカス分"
   },
   "options_short_break_minutes_label": {
-    "message": "[JA: options_short_break_minutes_label]"
+    "message": "短い休憩分"
   },
   "options_long_break_minutes_label": {
-    "message": "[JA: options_long_break_minutes_label]"
+    "message": "長い休憩分"
   },
   "options_long_every_label": {
-    "message": "[JA: options_long_every_label]"
+    "message": "第Nサイクルごとに長い休憩"
   },
   "options_gate_heading": {
-    "message": "[JA: options_gate_heading]"
+    "message": "検討ゲート"
   },
   "options_gate_help": {
-    "message": "[JA: options_gate_help]"
+    "message": "10秒の待機と明示的なバックツーワークボタンは、衝動的な訪問を測定可能に減らします（フィールドスタディ、PNAS 2023）。より長い待機と入力された文は、ほぼ効果を倍増させます。"
   },
   "options_gate_wait_one": {
-    "message": "[JA: options_gate_wait_one] $COUNT$",
+    "message": "$COUNT$秒待機",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -237,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "[JA: options_gate_wait_other] $COUNT$",
+    "message": "$COUNT$秒待機",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -246,52 +246,52 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "[JA: options_gate_wait_custom]"
+    "message": "カスタム"
   },
   "options_custom_delay_label": {
-    "message": "[JA: options_custom_delay_label]"
+    "message": "カスタム遅延（秒）"
   },
   "options_custom_delay_error": {
-    "message": "[JA: options_custom_delay_error]"
+    "message": "カスタム遅延は正の整数秒である必要があります。"
   },
   "options_gate_typed_phrase_label": {
-    "message": "[JA: options_gate_typed_phrase_label]"
+    "message": "文を入力する必要もあります"
   },
   "options_gate_force_end_label": {
-    "message": "[JA: options_gate_force_end_label]"
+    "message": "\"タイムアウトを無視してとにかく終了\"ボタンを有効にする"
   },
   "options_credit_help": {
-    "message": "[JA: options_credit_help]"
+    "message": "サイトアクセスクレジットはフォーカス中に増加します。すべてのサイトへのアクセスと単一サイトのロック解除は同じ残高から費やされます。いつでも離れることができます。"
   },
   "options_earn_rate_label": {
-    "message": "[JA: options_earn_rate_label]"
+    "message": "30分フォーカスあたりのサイトアクセス分"
   },
   "options_credit_cap_label": {
-    "message": "[JA: options_credit_cap_label]"
+    "message": "サイトアクセスクレジット制限（分）"
   },
   "options_pause_length_label": {
-    "message": "[JA: options_pause_length_label]"
+    "message": "すべてのサイトアクセス長（分）"
   },
   "options_unlock_length_label": {
-    "message": "[JA: options_unlock_length_label]"
+    "message": "サイトロック解除長（分）"
   },
   "options_streak_heading": {
-    "message": "[JA: options_streak_heading]"
+    "message": "ストリークと保持"
   },
   "options_streak_help": {
-    "message": "[JA: options_streak_help]"
+    "message": "ストリークは目標に達する日をカウントします。1つのデフォルトセッションはチェーンを維持し、フリーズトークンは欠落した日を修復します。"
   },
   "options_streak_goal_label": {
-    "message": "[JA: options_streak_goal_label]"
+    "message": "日次ストリークゴール（フォーカス分）"
   },
   "options_freeze_interval_label": {
-    "message": "[JA: options_freeze_interval_label]"
+    "message": "フリーズトークン間隔（日）"
   },
   "options_retention_label": {
-    "message": "[JA: options_retention_label]"
+    "message": "日次統計を保持（日）"
   },
   "options_category_on_announcement": {
-    "message": "[JA: options_category_on_announcement] $CATEGORY$",
+    "message": "$CATEGORY$カテゴリオン。",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -300,7 +300,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "[JA: options_category_off_announcement] $CATEGORY$",
+    "message": "$CATEGORY$カテゴリオフ。",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -309,13 +309,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "[JA: options_all_categories_on_announcement]"
+    "message": "すべてのカテゴリがオンです。"
   },
   "options_all_categories_off_announcement": {
-    "message": "[JA: options_all_categories_off_announcement]"
+    "message": "すべてのカテゴリがオフです。"
   },
   "options_host_included_announcement": {
-    "message": "[JA: options_host_included_announcement] $HOST$",
+    "message": "$HOST$が含まれています。",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -324,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "[JA: options_host_kept_available_announcement] $HOST$",
+    "message": "$HOST$は利用可能に保たれています。",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -333,7 +333,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "[JA: options_all_sites_included_announcement] $CATEGORY$",
+    "message": "すべての$CATEGORY$サイトが含まれています。",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -342,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "[JA: options_all_sites_kept_available_announcement] $CATEGORY$",
+    "message": "すべての$CATEGORY$サイトは利用可能に保たれています。",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -351,10 +351,10 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "[JA: options_category_bulk_actions_aria]"
+    "message": "カテゴリ一括操作"
   },
   "options_selected_count": {
-    "message": "[JA: options_selected_count] $COUNT$",
+    "message": "$COUNT$を選択しました",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "[JA: options_deselected_count] $COUNT$",
+    "message": "$COUNT$の選択を解除",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,19 +372,19 @@
     }
   },
   "options_select_all": {
-    "message": "[JA: options_select_all]"
+    "message": "すべてを選択"
   },
   "options_deselect_all": {
-    "message": "[JA: options_deselect_all]"
+    "message": "すべての選択を解除"
   },
   "options_select_all_categories_aria": {
-    "message": "[JA: options_select_all_categories_aria]"
+    "message": "すべてのカテゴリを選択"
   },
   "options_deselect_all_categories_aria": {
-    "message": "[JA: options_deselect_all_categories_aria]"
+    "message": "すべてのカテゴリの選択を解除"
   },
   "options_show_category_sites": {
-    "message": "[JA: options_show_category_sites] $CATEGORY$",
+    "message": "$CATEGORY$サイトを表示",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -393,7 +393,7 @@
     }
   },
   "options_hide_category_sites": {
-    "message": "[JA: options_hide_category_sites] $CATEGORY$",
+    "message": "$CATEGORY$サイトを非表示",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -402,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "[JA: options_category_sites_included_one] $COUNT$",
+    "message": "$COUNT$サイトが含まれています",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -411,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "[JA: options_category_sites_included_other] $COUNT$",
+    "message": "$COUNT$サイトが含まれています",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -420,10 +420,10 @@
     }
   },
   "options_category_off": {
-    "message": "[JA: options_category_off]"
+    "message": "カテゴリオフ"
   },
   "options_included_when_enabled_one": {
-    "message": "[JA: options_included_when_enabled_one] $COUNT$",
+    "message": "有効時に$COUNT$が含まれます",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -432,7 +432,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "[JA: options_included_when_enabled_other] $COUNT$",
+    "message": "有効時に$COUNT$が含まれます",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -441,10 +441,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "[JA: options_category_uncheck_help]"
+    "message": "サイトのチェックを外して、残りのカテゴリがブロックされている間、利用可能に保ちます。"
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "[JA: options_category_site_bulk_actions_aria] $CATEGORY$",
+    "message": "$CATEGORY$サイト一括操作",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "options_select_all_category_sites_aria": {
-    "message": "[JA: options_select_all_category_sites_aria] $CATEGORY$",
+    "message": "すべての$CATEGORY$サイトを選択",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -462,7 +462,7 @@
     }
   },
   "options_deselect_all_category_sites_aria": {
-    "message": "[JA: options_deselect_all_category_sites_aria] $CATEGORY$",
+    "message": "すべての$CATEGORY$サイトの選択を解除",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -471,7 +471,7 @@
     }
   },
   "options_category_sites_region_aria": {
-    "message": "[JA: options_category_sites_region_aria] $CATEGORY$",
+    "message": "$CATEGORY$サイト",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -480,31 +480,31 @@
     }
   },
   "options_day_sun": {
-    "message": "[JA: options_day_sun]"
+    "message": "日"
   },
   "options_day_mon": {
-    "message": "[JA: options_day_mon]"
+    "message": "月"
   },
   "options_day_tue": {
-    "message": "[JA: options_day_tue]"
+    "message": "火"
   },
   "options_day_wed": {
-    "message": "[JA: options_day_wed]"
+    "message": "水"
   },
   "options_day_thu": {
-    "message": "[JA: options_day_thu]"
+    "message": "木"
   },
   "options_day_fri": {
-    "message": "[JA: options_day_fri]"
+    "message": "金"
   },
   "options_day_sat": {
-    "message": "[JA: options_day_sat]"
+    "message": "土"
   },
   "options_schedule_cycles_label": {
-    "message": "[JA: options_schedule_cycles_label]"
+    "message": "フォーカスと休憩をサイクルする"
   },
   "options_schedule_overlap_error": {
-    "message": "[JA: options_schedule_overlap_error] $DAY$",
+    "message": "$DAY$の別のエントリと重なります。",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -513,40 +513,40 @@
     }
   },
   "options_schedule_session_type_aria": {
-    "message": "[JA: options_schedule_session_type_aria]"
+    "message": "セッションの種類"
   },
   "options_schedule_entry_legend": {
-    "message": "[JA: options_schedule_entry_legend]"
+    "message": "スケジュールエントリ"
   },
   "options_schedule_start_label": {
-    "message": "[JA: options_schedule_start_label]"
+    "message": "開始"
   },
   "options_schedule_end_label": {
-    "message": "[JA: options_schedule_end_label]"
+    "message": "終了"
   },
   "options_schedule_duration_legend": {
-    "message": "[JA: options_schedule_duration_legend]"
+    "message": "期間"
   },
   "options_schedule_intention_label": {
-    "message": "[JA: options_schedule_intention_label]"
+    "message": "意図"
   },
   "options_schedule_intention_placeholder": {
-    "message": "[JA: options_schedule_intention_placeholder]"
+    "message": "この時間は何のためですか"
   },
   "options_schedule_save_entry": {
-    "message": "[JA: options_schedule_save_entry]"
+    "message": "エントリを保存"
   },
   "options_cancel": {
-    "message": "[JA: options_cancel]"
+    "message": "キャンセル"
   },
   "options_schedule_empty": {
-    "message": "[JA: options_schedule_empty]"
+    "message": "スケジュール済みセッションはまだありません。"
   },
   "options_schedule_selected_days_aria": {
-    "message": "[JA: options_schedule_selected_days_aria]"
+    "message": "選択した日"
   },
   "options_schedule_time_range": {
-    "message": "[JA: options_schedule_time_range] $START$ $END$",
+    "message": "$START$から$END$",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -559,52 +559,52 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "[JA: options_schedule_mode_blacklist]"
+    "message": "ブラックリスト"
   },
   "options_schedule_mode_whitelist": {
-    "message": "[JA: options_schedule_mode_whitelist]"
+    "message": "ホワイトリスト"
   },
   "options_schedule_strictness_flexible": {
-    "message": "[JA: options_schedule_strictness_flexible]"
+    "message": "フレキシブル"
   },
   "options_schedule_strictness_friction": {
-    "message": "[JA: options_schedule_strictness_friction]"
+    "message": "フリクション"
   },
   "options_schedule_strictness_hard": {
-    "message": "[JA: options_schedule_strictness_hard]"
+    "message": "ハード"
   },
   "options_schedule_enabled_label": {
-    "message": "[JA: options_schedule_enabled_label]"
+    "message": "有効"
   },
   "options_schedule_edit": {
-    "message": "[JA: options_schedule_edit]"
+    "message": "編集"
   },
   "options_schedule_delete": {
-    "message": "[JA: options_schedule_delete]"
+    "message": "削除"
   },
   "options_schedule_add": {
-    "message": "[JA: options_schedule_add]"
+    "message": "スケジュールエントリを追加"
   },
   "options_sounds_heading": {
-    "message": "[JA: options_sounds_heading]"
+    "message": "音"
   },
   "options_master_volume": {
-    "message": "[JA: options_master_volume]"
+    "message": "マスターボリューム"
   },
   "options_sound_session_complete": {
-    "message": "[JA: options_sound_session_complete]"
+    "message": "セッション完了"
   },
   "options_sound_break_start": {
-    "message": "[JA: options_sound_break_start]"
+    "message": "休憩開始"
   },
   "options_sound_break_end": {
-    "message": "[JA: options_sound_break_end]"
+    "message": "休憩終了"
   },
   "options_sound_schedule_start": {
-    "message": "[JA: options_sound_schedule_start]"
+    "message": "スケジュール自動開始"
   },
   "options_sound_preview_aria": {
-    "message": "[JA: options_sound_preview_aria] $SOUND$",
+    "message": "$SOUND$をプレビュー",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -613,237 +613,237 @@
     }
   },
   "options_sound_play": {
-    "message": "[JA: options_sound_play]"
+    "message": "再生"
   },
   "options_sound_preview_error": {
-    "message": "[JA: options_sound_preview_error]"
+    "message": "音声をプレビューできませんでした。もう一度試してください。"
   },
   "options_sounds_notifications_heading": {
-    "message": "[JA: options_sounds_notifications_heading]"
+    "message": "通知"
   },
   "options_session_complete_notification": {
-    "message": "[JA: options_session_complete_notification]"
+    "message": "セッション完了時にシステム通知を表示"
   },
   "options_badge_heading": {
-    "message": "[JA: options_badge_heading]"
+    "message": "バッジ"
   },
   "options_badge_countdown": {
-    "message": "[JA: options_badge_countdown]"
+    "message": "ツールバーアイコンに残り時間を表示"
   },
   "options_privacy_website_access_heading": {
-    "message": "[JA: options_privacy_website_access_heading]"
+    "message": "ウェブサイトアクセス"
   },
   "options_privacy_website_off_title": {
-    "message": "[JA: options_privacy_website_off_title]"
+    "message": "ウェブサイトアクセスはオフです"
   },
   "options_privacy_website_off_detail": {
-    "message": "[JA: options_privacy_website_off_detail]"
+    "message": "Focus Lockはアクセスを許可するまでウェブサイトをブロックできません。"
   },
   "options_privacy_website_enable_action": {
-    "message": "[JA: options_privacy_website_enable_action]"
+    "message": "ウェブサイトブロッキングを有効にする"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "[JA: options_privacy_website_unregistered_title]"
+    "message": "ウェブサイトアクセスは許可されていますが、ブロッキングはアクティブではありません"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "[JA: options_privacy_website_unregistered_detail]"
+    "message": "Chromeはアクセスを許可しましたが、Focus Lockはブロッキングスクリプトを登録できませんでした。"
   },
   "options_privacy_website_retry_action": {
-    "message": "[JA: options_privacy_website_retry_action]"
+    "message": "ウェブサイトブロッキングを再試行"
   },
   "options_privacy_website_on_title": {
-    "message": "[JA: options_privacy_website_on_title]"
+    "message": "ウェブサイトブロッキングが有効です"
   },
   "options_privacy_website_on_detail": {
-    "message": "[JA: options_privacy_website_on_detail]"
+    "message": "Focus Lockは通常のウェブページに対してアクティブなブロッキングルールを適用できます。"
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "[JA: options_privacy_confirm_local_history_title]"
+    "message": "ローカル履歴を削除しますか？"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "[JA: options_privacy_confirm_local_history_action]"
+    "message": "ローカル履歴の削除を確認"
   },
   "options_privacy_local_history_deleted": {
-    "message": "[JA: options_privacy_local_history_deleted]"
+    "message": "ローカル履歴が削除されました。"
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "[JA: options_privacy_confirm_local_history_body]"
+    "message": "これは、このデバイスから完全なURL、フォーカスの意図、詳細なセッションイベントを永久に削除します。実行中のセッションはクリアされません。このセッションは意図と、ブロックしている各タブのアドレスを保持します。セッションを終了するとアプリの意図がクリアされ、クリーンアップが開始されます。このクリーンアップはすべてのオープンウェブサイトタブをクリアし、完了時にすべての保存されたアドレスを削除します。"
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "[JA: options_privacy_confirm_local_history_body_aggregates]"
+    "message": "これは、このデバイスから完全なURL、フォーカスの意図、詳細なセッションイベント、およびローカルのみの集計統計を永久に削除します。実行中のセッションはクリアされません。このセッションは意図と、ブロックしている各タブのアドレスを保持します。セッションを終了するとアプリの意図がクリアされ、クリーンアップが開始されます。このクリーンアップはすべてのオープンウェブサイトタブをクリアし、完了時にすべての保存されたアドレスを削除します。"
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "[JA: options_privacy_confirm_synced_policy_title]"
+    "message": "リモートSyncデータを削除しますか？"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "[JA: options_privacy_confirm_synced_policy_action]"
+    "message": "リモートSyncデータの削除を確認"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "[JA: options_privacy_synced_policy_deleted]"
+    "message": "リモートChrome Syncデータが削除されました。"
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "[JA: options_privacy_confirm_synced_policy_body]"
+    "message": "これは、Chrome Syncに残されたリモート設定、ブロックリストとホワイトリスト、サイトアクセスクレジット、ストリーク、ドメインレベルのブロックされた試行集計を永久に削除します。ローカル設定と統計はこのデバイスに留まります。"
   },
   "options_privacy_confirm_all_title": {
-    "message": "[JA: options_privacy_confirm_all_title]"
+    "message": "すべてのFocus Lockデータを削除しますか？"
   },
   "options_privacy_confirm_all_action": {
-    "message": "[JA: options_privacy_confirm_all_action]"
+    "message": "すべてのFocus Lockデータの削除を確認"
   },
   "options_privacy_all_deleted": {
-    "message": "[JA: options_privacy_all_deleted]"
+    "message": "すべてのFocus Lockデータが削除されました。"
   },
   "options_privacy_all_body_intro": {
-    "message": "[JA: options_privacy_all_body_intro]"
+    "message": "これにより、このデバイスのすべてのFocus Lockデータと、Chrome Syncに残されたFocus Lockコピーが永久に削除されます："
   },
   "options_privacy_all_body_outro": {
-    "message": "[JA: options_privacy_all_body_outro]"
+    "message": "すべてを削除することは、セッションが実行されていない間のみ利用可能です。Focus Lockはセットアップに戻ります。"
   },
   "options_privacy_error_local_history_clear": {
-    "message": "[JA: options_privacy_error_local_history_clear]"
+    "message": "ローカル履歴を削除できませんでした。もう一度試してください。"
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "[JA: options_privacy_error_synced_policy_clear]"
+    "message": "リモートChrome Syncデータを削除できませんでした。もう一度試してください。"
   },
   "options_privacy_error_all_clear": {
-    "message": "[JA: options_privacy_error_all_clear]"
+    "message": "すべてのFocus Lockデータを削除できませんでした。もう一度試してください。"
   },
   "options_privacy_error_sync_write": {
-    "message": "[JA: options_privacy_error_sync_write]"
+    "message": "Chrome Syncは最新の変更を保存できませんでした。ローカル保存は安全です。"
   },
   "options_privacy_error_request": {
-    "message": "[JA: options_privacy_error_request]"
+    "message": "リクエストを完了できませんでした。もう一度試してください。"
   },
   "options_privacy_website_access_updated": {
-    "message": "[JA: options_privacy_website_access_updated]"
+    "message": "ウェブサイトアクセスが更新されました。"
   },
   "options_privacy_website_access_denied": {
-    "message": "[JA: options_privacy_website_access_denied]"
+    "message": "ウェブサイトアクセスは許可されませんでした。"
   },
   "options_privacy_error_website_access": {
-    "message": "[JA: options_privacy_error_website_access]"
+    "message": "ウェブサイトアクセスを更新できませんでした。もう一度試してください。"
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "[JA: options_privacy_website_blocking_enabled]"
+    "message": "ウェブサイトブロッキングが有効です。"
   },
   "options_privacy_error_export": {
-    "message": "[JA: options_privacy_error_export]"
+    "message": "イベントログをエクスポートできませんでした。"
   },
   "options_privacy_error_export_retry": {
-    "message": "[JA: options_privacy_error_export_retry]"
+    "message": "イベントログをエクスポートできませんでした。もう一度試してください。"
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "[JA: options_privacy_error_open_chrome_settings]"
+    "message": "Chrome権限設定を開けませんでした。もう一度試してください。"
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "[JA: options_privacy_chrome_settings_opened]"
+    "message": "Chrome権限設定が開かれました。"
   },
   "options_privacy_open_chrome_settings": {
-    "message": "[JA: options_privacy_open_chrome_settings]"
+    "message": "Chrome権限設定を開く"
   },
   "options_privacy_sync_heading": {
-    "message": "[JA: options_privacy_sync_heading]"
+    "message": "Chrome同期"
   },
   "options_privacy_sync_switch_label": {
-    "message": "[JA: options_privacy_sync_switch_label]"
+    "message": "Chrome デバイス間でFocus Lockデータを同期"
   },
   "options_privacy_sync_enabled": {
-    "message": "[JA: options_privacy_sync_enabled]"
+    "message": "Chrome同期が有効です。"
   },
   "options_privacy_sync_disabled": {
-    "message": "[JA: options_privacy_sync_disabled]"
+    "message": "Chrome同期が無効です。"
   },
   "options_privacy_sync_saving": {
-    "message": "[JA: options_privacy_sync_saving]"
+    "message": "Chrome Syncはまだ最新の変更を保存しています。"
   },
   "options_privacy_sync_on": {
-    "message": "[JA: options_privacy_sync_on]"
+    "message": "Chrome Syncが有効です。"
   },
   "options_privacy_sync_off": {
-    "message": "[JA: options_privacy_sync_off]"
+    "message": "Chrome Syncが無効です。"
   },
   "options_privacy_sync_changes_saved": {
-    "message": "[JA: options_privacy_sync_changes_saved]"
+    "message": "Chrome Sync変更が保存されました。"
   },
   "options_privacy_retry_enable_sync": {
-    "message": "[JA: options_privacy_retry_enable_sync]"
+    "message": "Chrome Syncを有効にする再試行"
   },
   "options_privacy_retry_sync": {
-    "message": "[JA: options_privacy_retry_sync]"
+    "message": "Chrome Syncを再試行"
   },
   "options_privacy_scope_synced": {
-    "message": "[JA: options_privacy_scope_synced]"
+    "message": "同期済み"
   },
   "options_privacy_scope_local_only": {
-    "message": "[JA: options_privacy_scope_local_only]"
+    "message": "ローカルのみ"
   },
   "options_privacy_developer_note": {
-    "message": "[JA: options_privacy_developer_note]"
+    "message": "Focus Lock開発者には何も送信されません。"
   },
   "options_privacy_local_log_heading": {
-    "message": "[JA: options_privacy_local_log_heading]"
+    "message": "ローカルイベントログ"
   },
   "options_privacy_local_log_detail": {
-    "message": "[JA: options_privacy_local_log_detail]"
+    "message": "詳細なローカルログをエクスポートするか、ローカル閲覧とセッション履歴を削除します。"
   },
   "options_privacy_export_local_log": {
-    "message": "[JA: options_privacy_export_local_log]"
+    "message": "ローカルイベントログをエクスポート"
   },
   "options_privacy_local_log_exported": {
-    "message": "[JA: options_privacy_local_log_exported]"
+    "message": "ローカルイベントログがエクスポートされました。"
   },
   "options_privacy_delete_local_history": {
-    "message": "[JA: options_privacy_delete_local_history]"
+    "message": "ローカル履歴を削除"
   },
   "options_privacy_remote_data_heading": {
-    "message": "[JA: options_privacy_remote_data_heading]"
+    "message": "リモートSyncデータ"
   },
   "options_privacy_remote_data_detail": {
-    "message": "[JA: options_privacy_remote_data_detail]"
+    "message": "このデバイスを変更することなく、Chrome Syncに残されたFocus Lockコピーを削除します。"
   },
   "options_privacy_delete_remote_data": {
-    "message": "[JA: options_privacy_delete_remote_data]"
+    "message": "リモートSyncデータを削除"
   },
   "options_privacy_all_data_heading": {
-    "message": "[JA: options_privacy_all_data_heading]"
+    "message": "すべてのFocus Lockデータ"
   },
   "options_privacy_all_data_detail": {
-    "message": "[JA: options_privacy_all_data_detail]"
+    "message": "このデバイス上のすべてのFocus Lockレコードとチェーンサイプに残されたFocus Lockコピーを削除し、セットアップから開始します。セッションが実行されていない間に利用可能です。"
   },
   "options_privacy_resuming_all_clear": {
-    "message": "[JA: options_privacy_resuming_all_clear]"
+    "message": "すべてのFocus Lockデータの削除を再開中。"
   },
   "options_privacy_retry_local_history": {
-    "message": "[JA: options_privacy_retry_local_history]"
+    "message": "ローカル履歴削除を再試行"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "[JA: options_privacy_retry_remote_sync]"
+    "message": "リモートSync削除を再試行"
   },
   "options_privacy_retry_all_data": {
-    "message": "[JA: options_privacy_retry_all_data]"
+    "message": "すべてのデータ削除を再試行"
   },
   "options_error_load": {
-    "message": "[JA: options_error_load]"
+    "message": "設定を読み込めませんでした。ページをリロードしてもう一度試してください。"
   },
   "options_error_retry_boot": {
-    "message": "[JA: options_error_retry_boot]"
+    "message": "Focus Lockを再起動できませんでした。もう一度試してください。"
   },
   "options_error_refresh_privacy": {
-    "message": "[JA: options_error_refresh_privacy]"
+    "message": "プライバシー設定を更新できませんでした。ページをリロードしてください。"
   },
   "options_error_website_blocking": {
-    "message": "[JA: options_error_website_blocking]"
+    "message": "ウェブサイトブロッキングを更新できませんでした。もう一度試してください。"
   },
   "options_error_change_sync": {
-    "message": "[JA: options_error_change_sync]"
+    "message": "Chrome Syncを変更できませんでした。もう一度試してください。"
   },
   "options_error_retry_sync": {
-    "message": "[JA: options_error_retry_sync]"
+    "message": "Chrome Syncを再試行できませんでした。もう一度試してください。"
   },
   "options_error_save_settings": {
-    "message": "[JA: options_error_save_settings]"
+    "message": "設定を保存できませんでした。ページをリロードしてもう一度試してください。"
   },
   "options_error_save_lists": {
-    "message": "[JA: options_error_save_lists]"
+    "message": "リストを保存できませんでした。ページをリロードしてもう一度試してください。"
   }
 }

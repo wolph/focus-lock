@@ -257,15 +257,6 @@
       }
     }
   },
-  "shared_minutes_many": {
-    "message": "$COUNT$ min",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "25"
-      }
-    }
-  },
   "shared_updating_session": {
     "message": "Mise à jour de la session"
   },
@@ -632,5 +623,14 @@
   },
   "shared_gate_end_title": {
     "message": "Terminer cette session"
+  },
+  "shared_minutes_many": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
   }
 }

@@ -1,0 +1,627 @@
+{
+  "shared_until_stopped": {
+    "message": "ఆపే వరకు"
+  },
+  "shared_preset_short": {
+    "message": "చిన్న"
+  },
+  "shared_preset_focus": {
+    "message": "ఫోకస్"
+  },
+  "shared_preset_deep_work": {
+    "message": "డీప్ వర్క్"
+  },
+  "shared_deep_work_note": {
+    "message": "ఇది ఒక ప్రాధాన్యత, శాస్త్రం కాదు: ఆటోమేటిక్ విరామాలు లేని ఒక పొడవైన నిరంతర బ్లాక్."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "మొత్తం $MINUTES$ నిమిషాలు, $FOCUS$ నిమి ఫోకస్ బ్లాక్‌లతో",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ నిమి నిరంతర ఫోకస్",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "ఆపే వరకు ప్రారంభించు"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "మాన్యువల్‌గా అన్‌లాక్ చేసే వరకు లాక్ చేయి"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "ఆపే వరకు సెషన్‌లు సరళ లేదా ఘర్షణను ఉంచుతాయి మరియు ఫోకస్ మరియు విరామ చక్రాలను ఉపయోగించలేవు."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "ఆపే వరకు సెషన్‌కు కఠిన లాక్ అందుబాటులో లేదు: టైమర్ మరియు మాన్యువల్ ముగింపు లేకుండా, సెషన్ ఎప్పటికీ ముగియదు."
+  },
+  "shared_end_session": {
+    "message": "సెషన్‌ను ముగించు"
+  },
+  "shared_unlock": {
+    "message": "అన్‌లాక్ చేయి"
+  },
+  "shared_gate_wait_none": {
+    "message": "నిరీక్షణ లేదు"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$-సెకను నిరీక్షణ",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ మరియు టైప్ చేసిన వాక్యం",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "$LABEL$తో మీరు ముగించే వరకు నడుస్తుంది. చక్రాలు ఆఫ్‌లో ఉన్నాయి.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "మీరు దాన్ని అన్‌లాక్ చేసే వరకు నడుస్తుంది: $REQUIREMENT$, తర్వాత $LABEL$. చక్రాలు ఆఫ్‌లో ఉన్నాయి.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "ఆపే వరకు ద్వారా బలవంతంగా చేసిన చక్రాలు"
+  },
+  "shared_mode_blacklist": {
+    "message": "ఎంచుకున్న సైట్‌లను బ్లాక్ చేయి"
+  },
+  "shared_mode_whitelist": {
+    "message": "ఎంచుకున్న సైట్‌లను మాత్రమే అనుమతించు"
+  },
+  "shared_focus_time_label": {
+    "message": "ఫోకస్ సమయం"
+  },
+  "shared_clock_focus_phase": {
+    "message": "ఫోకస్ దశ"
+  },
+  "shared_clock_total_session": {
+    "message": "మొత్తం సెషన్"
+  },
+  "shared_clock_pause": {
+    "message": "విరామం"
+  },
+  "shared_clock_break": {
+    "message": "బ్రేక్"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock ప్రారంభమవుతోంది. మీరు ఎంచుకున్న నియమాలను వర్తింపజేస్తోంది."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "సెషన్ ముగిసింది. బ్రౌజర్ క్లీనప్‌ను పూర్తి చేస్తోంది."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock ప్రారంభం కాలేదు. బ్రౌజర్ క్లీనప్‌ను పూర్తి చేస్తోంది."
+  },
+  "shared_popup_transition_error": {
+    "message": "అసంపూర్ణ ప్రారంభం తర్వాత క్లీనప్‌ను Focus Lock పూర్తి చేయలేకపోయింది."
+  },
+  "shared_popup_closure_error": {
+    "message": "బ్రౌజర్ క్లీనప్‌ను Focus Lock పూర్తి చేయలేకపోయింది."
+  },
+  "shared_retry_cleanup": {
+    "message": "క్లీనప్‌ను మళ్లీ ప్రయత్నించు"
+  },
+  "shared_end_failed": {
+    "message": "సెషన్‌ను ముగించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "shared_retry_failed": {
+    "message": "క్లీనప్‌ను మళ్లీ ప్రయత్నించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "shared_action_failed": {
+    "message": "ఆ చర్యను అభ్యర్థించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "shared_return_to_work_failed": {
+    "message": "పనికి తిరిగి వెళ్లలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "shared_data_clear_pending": {
+    "message": "Focus Lock డేటాను తొలగిస్తోంది. క్లీనప్‌ను పూర్తి చేస్తోంది."
+  },
+  "shared_data_clear_error": {
+    "message": "డేటాను తొలగించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "shared_schedule_window_label": {
+    "message": "విండో ముగిసే వరకు"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "షెడ్యూల్‌పై ప్రారంభమై మీరు ఆపే వరకు నడుస్తుంది: సరళానికి సెషన్‌ను ముగించు, ఘర్షణకు ఆలోచనా గేట్ ద్వారా అన్‌లాక్ చేయి. చక్రాలు ఆఫ్‌లో ఉన్నాయి."
+  },
+  "shared_schedule_started_title": {
+    "message": "ఫోకస్ షెడ్యూల్ ప్రారంభమైంది"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "మీరు ఆపే వరకు యాక్టివ్‌గా ఉంటుంది."
+  },
+  "shared_settings_indefinite": {
+    "message": "ఆపే వరకు సెషన్ యాక్టివ్‌గా ఉంది. దాన్ని చూడటానికి లేదా ముగించడానికి టూల్‌బార్ పాప్అప్‌ను ఉపయోగించండి."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock ప్రారంభమవుతోంది. వెబ్‌సైట్ యాక్సెస్‌ను తనిఖీ చేసి మీ నియమాలను వర్తింపజేస్తోంది."
+  },
+  "shared_settings_error": {
+    "message": "బ్రౌజర్ క్లీనప్‌ను Focus Lock పూర్తి చేయలేకపోయింది. పాప్అప్‌ను తెరిచి మళ్లీ ప్రయత్నించండి."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "టూల్‌బార్ పాప్అప్ సెషన్ నియంత్రణలను కలిగి ఉంటుంది. యాక్టివ్ సెషన్ అది ప్రారంభమైనప్పుడు తీసుకున్న నియమాలను ఉంచుకుంటుంది."
+  },
+  "shared_settings_timed": {
+    "message": "టైమ్డ్ సెషన్ $TIME$ వరకు యాక్టివ్‌గా ఉంది. ఇది ఆటోమేటిక్‌గా ముగుస్తుంది. లైవ్ స్థితి కోసం టూల్‌బార్ పాప్అప్‌ను ఉపయోగించండి.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "పూర్తయింది"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "మాన్యువల్‌గా పూర్తయింది"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "ముందుగా ముగిసింది"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "ముగిసింది: వెబ్‌సైట్ యాక్సెస్ కోల్పోయింది"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "ముగిసింది: బ్లాకింగ్ సెటప్ విఫలమైంది"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "ముగిసింది: టైమర్ సెటప్ విఫలమైంది"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "ముగిసింది: పేజీ అమలు విఫలమైంది"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "ముగిసింది: రికవరీ విఫలమైంది"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ గం $MINUTES$ ని",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ ని",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ ని",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ ని",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "సెషన్‌ను నవీకరిస్తోంది"
+  },
+  "shared_less_than_a_minute": {
+    "message": "ఒక నిమిషం కంటే తక్కువ"
+  },
+  "shared_focus_remaining_break": {
+    "message": "మీ విరామం వరకు $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "ఈ సెషన్‌లో $DURATION$ మిగిలి ఉంది",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "ఖర్చు క్రెడిట్ పరిమితిని మించుతుంది"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "ఫోకస్ సమయంలో క్రెడిట్ సంపాదన తిరిగి ప్రారంభమవుతుంది"
+  },
+  "shared_credit_off": {
+    "message": "క్రెడిట్ సంపాదన ఆఫ్ చేయబడింది"
+  },
+  "shared_not_enough_time": {
+    "message": "ఈ ఫోకస్ బ్లాక్‌లో సరిపడా సమయం లేదు"
+  },
+  "shared_ready_in": {
+    "message": "$CLOCK$లో సిద్ధం",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "$CATEGORY$ ద్వారా బ్లాక్ చేయబడింది",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "మీ బ్లాక్ లిస్ట్ ద్వారా బ్లాక్ చేయబడింది"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "మీ అనుమతి జాబితాలో లేదు"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "ఈ సెషన్ ద్వారా బ్లాక్ చేయబడింది"
+  },
+  "shared_verdict_allow_list": {
+    "message": "మీ అనుమతి జాబితాలో ఉంది"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "ఎల్లప్పుడూ అనుమతించబడింది"
+  },
+  "shared_verdict_unlock": {
+    "message": "తాత్కాలికంగా అన్‌లాక్ చేయబడింది"
+  },
+  "shared_verdict_excluded": {
+    "message": "ఎంచుకున్న కేటగిరీ నుండి మినహాయించబడింది"
+  },
+  "shared_verdict_no_session": {
+    "message": "యాక్టివ్ ఫోకస్ సెషన్ లేదు"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "ఈ సెషన్ ద్వారా అనుమతించబడింది"
+  },
+  "shared_category_social": {
+    "message": "సోషల్ మీడియా"
+  },
+  "shared_category_video": {
+    "message": "వీడియో మరియు స్ట్రీమింగ్"
+  },
+  "shared_category_news": {
+    "message": "వార్తలు"
+  },
+  "shared_category_mail": {
+    "message": "మెయిల్"
+  },
+  "shared_category_shopping": {
+    "message": "షాపింగ్"
+  },
+  "shared_category_gaming": {
+    "message": "గేమింగ్"
+  },
+  "shared_category_forums": {
+    "message": "ఫోరమ్‌లు మరియు బోర్‌డమ్"
+  },
+  "shared_synced_settings": {
+    "message": "సెట్టింగ్‌లు"
+  },
+  "shared_synced_lists": {
+    "message": "బ్లాక్ మరియు అనుమతి జాబితాలు"
+  },
+  "shared_synced_credit": {
+    "message": "సైట్ యాక్సెస్ క్రెడిట్"
+  },
+  "shared_synced_streaks": {
+    "message": "వరుసలు"
+  },
+  "shared_synced_aggregates": {
+    "message": "డొమైన్-స్థాయి బ్లాక్ చేసిన ప్రయత్న మొత్తాలు"
+  },
+  "shared_local_full_urls": {
+    "message": "పూర్తి URLలు"
+  },
+  "shared_local_intentions": {
+    "message": "ఫోకస్ ఉద్దేశాలు"
+  },
+  "shared_local_events": {
+    "message": "వివరణాత్మక సెషన్ ఈవెంట్‌లు"
+  },
+  "shared_local_runtime": {
+    "message": "యాక్టివ్ రన్‌టైమ్ సెషన్"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "పాత వెర్షన్ నుండి కొంత సింక్ చేసిన డేటాను చదవలేకపోయాం మరియు రీసెట్ చేయబడింది."
+  },
+  "shared_all_data_clear_running": {
+    "message": "అన్ని డేటాను తొలగించే ముందు నడుస్తున్న సెషన్‌ను ముగించండి."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "ప్రొడక్ట్ నావిగేషన్"
+  },
+  "shared_nav_overview": {
+    "message": "అవలోకనం"
+  },
+  "shared_nav_settings": {
+    "message": "సెట్టింగ్‌లు"
+  },
+  "shared_section_blocking": {
+    "message": "బ్లాకింగ్"
+  },
+  "shared_section_schedule": {
+    "message": "షెడ్యూల్"
+  },
+  "shared_section_behavior": {
+    "message": "సెషన్ ప్రవర్తన"
+  },
+  "shared_section_budget": {
+    "message": "సైట్ యాక్సెస్ క్రెడిట్"
+  },
+  "shared_section_notifications": {
+    "message": "నోటిఫికేషన్‌లు"
+  },
+  "shared_section_privacy": {
+    "message": "గోప్యత మరియు డేటా"
+  },
+  "shared_theme_auto": {
+    "message": "ఆటో"
+  },
+  "shared_theme_light": {
+    "message": "లైట్"
+  },
+  "shared_theme_dark": {
+    "message": "డార్క్"
+  },
+  "shared_theme_button": {
+    "message": "థీమ్: $CURRENT$. $NEXT$కు మార్చు",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "థీమ్‌ను సేవ్ చేయలేకపోయాం. పేజీని రీలోడ్ చేసి మళ్లీ ప్రయత్నించండి."
+  },
+  "shared_host_search_label": {
+    "message": "$TITLE$ సైట్‌లను వెతుకు",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "మీ శోధనకు ఏ $TITLE$ సైట్ సరిపోలలేదు.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "$MATCHED$లో $SHOWN$ సైట్‌లు చూపబడుతున్నాయి. జాబితాను తగ్గించడానికి వెతకండి.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "$TOTAL$లో $MATCHED$ సైట్‌లు చూపబడుతున్నాయి.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "అన్ని $TOTAL$ సైట్‌లు చూపబడుతున్నాయి.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "సెషన్‌ను ముగించు"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock ప్రారంభమవుతోంది"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "మీరు ఎంచుకున్న నియమాలను వర్తింపజేస్తోంది."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "ఈ పేజీ లోడ్ కాలేదు. సెషన్ ముగిసినప్పుడు ఇది తనంతట తానే లోడ్ అవుతుంది."
+  },
+  "shared_overlay_next_step": {
+    "message": "మీ తర్వాతి అడుగు"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "పనికి తిరిగి వెళ్ళు"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "పని ట్యాబ్‌ను ఎంచుకోండి"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "పని ట్యాబ్‌ను మార్చు"
+  },
+  "shared_overlay_access_summary": {
+    "message": "విరామం లేదా సైట్ యాక్సెస్ కావాలా?"
+  },
+  "shared_overlay_access_note": {
+    "message": "మీరు ఎప్పుడైనా దూరంగా వెళ్లవచ్చు. సైట్ యాక్సెస్ క్రెడిట్‌ను ఉపయోగిస్తుంది."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "టైమ్‌అవుట్‌ను విస్మరించి అయినా ముగించు"
+  },
+  "shared_overlay_transport_error": {
+    "message": "ఈ చర్యను Focus Lock నవీకరించలేకపోయింది. మళ్లీ ప్రయత్నించండి."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ సైట్ యాక్సెస్ క్రెడిట్",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "మీ ప్రస్తుత పనిని కొనసాగించండి"
+  },
+  "shared_overlay_pause_action": {
+    "message": "అన్ని సైట్‌లను అన్‌లాక్ చేయి"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "ఈ సైట్‌ను అన్‌లాక్ చేయి"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - $COST$ క్రెడిట్ ఖర్చవుతుంది",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "$TIME$ వరకు లాక్ చేయబడింది",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "మీరు చెప్పింది: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "$HOST$ను $CLOCK$కు అన్‌లాక్ చేయి",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "ఫోకస్ చేస్తూ ఉండు"
+  },
+  "shared_gate_phrase_label": {
+    "message": "నిర్ధారించడానికి దీన్ని టైప్ చేయండి:"
+  },
+  "shared_gate_end_title": {
+    "message": "ఈ సెషన్‌ను ముగించు"
+  }
+}

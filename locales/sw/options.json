@@ -11,8 +11,29 @@
   "options_privacy_loading": {
     "message": "Kupakia privacy settings"
   },
+  "options_save_failed": {
+    "message": "Could not save. Try again."
+  },
   "options_blocking_heading": {
     "message": "Zuiaing"
+  },
+  "options_blocking_help": {
+    "message": "Custom rules block during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories block common time sinks."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Custom blacklist"
+  },
+  "options_whitelist_title": {
+    "message": "Whitelist"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Bundled categories"
+  },
+  "options_bundled_categories_help": {
+    "message": "Bundled lists of common time sinks. Toggle a whole category, then open it to keep single sites available."
+  },
+  "options_schedule_heading": {
+    "message": "Schedule"
   },
   "options_schedule_help": {
     "message": "Kikaos start on their own inside these windows. Strictness set here applies for the whole window."
@@ -20,20 +41,50 @@
   "options_behavior_heading": {
     "message": "Kikao behavior"
   },
+  "options_budget_heading": {
+    "message": "Site access credit"
+  },
+  "options_notifications_heading": {
+    "message": "Notifications"
+  },
+  "options_privacy_heading": {
+    "message": "Privacy and data"
+  },
   "options_load_error_retry": {
     "message": "Jaribu Tena"
   },
   "options_load_error_delete_all": {
     "message": "Futa everything and start over"
   },
+  "options_load_error_keep_data": {
+    "message": "Keep my data"
+  },
   "options_delete_all_data": {
     "message": "Futa all Fokasi Lock data"
+  },
+  "options_dirty_saving": {
+    "message": "Saving changes"
+  },
+  "options_dirty_unsaved": {
+    "message": "Unsaved changes"
+  },
+  "options_dirty_clean": {
+    "message": "No unsaved changes"
+  },
+  "options_dirty_discard": {
+    "message": "Discard changes"
   },
   "options_dirty_save": {
     "message": "Hifadhi changes"
   },
   "options_session_status_label": {
     "message": "Kikao status"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domain"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
   },
   "options_rule_remove": {
     "message": "Ondoa"
@@ -47,11 +98,59 @@
       }
     }
   },
+  "options_rules_empty": {
+    "message": "No rules yet."
+  },
   "options_rule_kind_aria": {
     "message": "Kanuni kind"
   },
+  "options_rule_kind_host_option": {
+    "message": "domain or subdomain"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (full URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Pattern"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
   "options_rule_add": {
     "message": "Ongeza rule"
+  },
+  "options_rules_help": {
+    "message": "facebook.com covers that domain and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/shorts/ matches the full URL as a regular expression."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ must be a positive whole number.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ must be a whole number of zero or greater.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ must be zero or greater.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
   },
   "options_number_error_minute_range": {
     "message": "$LABEL$ must be within the supported dakika range.",
@@ -74,6 +173,9 @@
   "options_session_defaults_heading": {
     "message": "Kikao defaults"
   },
+  "options_session_defaults_help": {
+    "message": "Mode and strictness are fixed when a session starts. These are the values the start form opens with."
+  },
   "options_preset_short_label": {
     "message": "Short session preset (dakikas)"
   },
@@ -83,11 +185,29 @@
   "options_preset_deep_label": {
     "message": "Deep session preset (dakikas)"
   },
+  "options_mode_blacklist_label": {
+    "message": "Blacklist: block listed sites"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Whitelist: allow only listed sites"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Flexible: end the session whenever you choose"
+  },
+  "options_strictness_friction_label": {
+    "message": "Friction: stopping early uses the configured deliberation gate"
+  },
+  "options_strictness_hard_label": {
+    "message": "Hard: no early end, temporary site access only"
+  },
   "options_cycle_heading": {
     "message": "Fokasi and break cycle"
   },
   "options_cycle_help": {
     "message": "Defaults: 25 dakika focus, 5 dakika break, 15 dakika long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact dakikas are convention, not science."
+  },
+  "options_cycle_default_label": {
+    "message": "Cycle focus and breaks by default"
   },
   "options_focus_minutes_label": {
     "message": "Fokasi dakikas"
@@ -98,8 +218,50 @@
   "options_long_break_minutes_label": {
     "message": "Long break dakikas"
   },
+  "options_long_every_label": {
+    "message": "Long break every Nth cycle"
+  },
+  "options_gate_heading": {
+    "message": "Deliberation gate"
+  },
+  "options_gate_help": {
+    "message": "A 10 second wait with an explicit back-to-work button measurably reduces impulse visits (field study, PNAS 2023). The longer wait and the typed sentence roughly double the effect."
+  },
+  "options_gate_wait_one": {
+    "message": "Wait $COUNT$ second",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Wait $COUNT$ seconds",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Custom"
+  },
+  "options_custom_delay_label": {
+    "message": "Custom delay (seconds)"
+  },
+  "options_custom_delay_error": {
+    "message": "Custom delay must be a positive whole number of seconds."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Also require typing a sentence"
+  },
   "options_gate_force_end_label": {
     "message": "Wezesha \"Ignore timeout and end anyway\" button"
+  },
+  "options_credit_help": {
+    "message": "Site access credit accrues while you focus. Both access to all sites and a single-site unlock spend from the same balance. You can step away at any time without spending credit."
   },
   "options_earn_rate_label": {
     "message": "Minutes of site access per 30 dakikas of focus"
@@ -113,6 +275,9 @@
   "options_unlock_length_label": {
     "message": "Site unlock length (dakikas)"
   },
+  "options_streak_heading": {
+    "message": "Streak and retention"
+  },
   "options_streak_help": {
     "message": "The streak counts sikus that reach the goal. One default session keeps the chain alive, and a freeze token repairs a missed siku."
   },
@@ -125,8 +290,98 @@
   "options_retention_label": {
     "message": "Keep daily stats (sikus)"
   },
+  "options_category_on_announcement": {
+    "message": "$CATEGORY$ category on.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "$CATEGORY$ category off.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "All categories on."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "All categories off."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ included.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ kept available.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "All $CATEGORY$ sites included.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "All $CATEGORY$ sites kept available.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
   "options_category_bulk_actions_aria": {
     "message": "Kategoriya bulk actions"
+  },
+  "options_selected_count": {
+    "message": "Selected $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Deselected $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Select all"
+  },
+  "options_deselect_all": {
+    "message": "Deselect all"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Select all categories"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Deselect all categories"
   },
   "options_show_category_sites": {
     "message": "Onyesha $CATEGORY$ sites",
@@ -185,6 +440,45 @@
       }
     }
   },
+  "options_category_uncheck_help": {
+    "message": "Uncheck a site to keep it available while the rest of the category is blocked."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ site bulk actions",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Select all $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Deselect all $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
   "options_day_sun": {
     "message": "Sun"
   },
@@ -206,8 +500,23 @@
   "options_day_sat": {
     "message": "Sat"
   },
+  "options_schedule_cycles_label": {
+    "message": "Cycle focus and breaks"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Overlaps another enabled entry on $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
   "options_schedule_session_type_aria": {
     "message": "Kikao type"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Schedule entry"
   },
   "options_schedule_start_label": {
     "message": "Anza"
@@ -215,14 +524,54 @@
   "options_schedule_end_label": {
     "message": "Malizia"
   },
+  "options_schedule_duration_legend": {
+    "message": "Duration"
+  },
+  "options_schedule_intention_label": {
+    "message": "Intention"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "what this time is for"
+  },
   "options_schedule_save_entry": {
     "message": "Hifadhi entry"
   },
   "options_cancel": {
     "message": "Ghairi"
   },
+  "options_schedule_empty": {
+    "message": "No scheduled sessions yet."
+  },
   "options_schedule_selected_days_aria": {
     "message": "Selected sikus"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ to $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "blacklist"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "whitelist"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "flexible"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "friction"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "hard"
   },
   "options_schedule_enabled_label": {
     "message": "Wezeshad"
@@ -236,11 +585,47 @@
   "options_schedule_add": {
     "message": "Ongeza schedule entry"
   },
+  "options_sounds_heading": {
+    "message": "Sounds"
+  },
+  "options_master_volume": {
+    "message": "Master volume"
+  },
   "options_sound_session_complete": {
     "message": "Kikao complete"
   },
+  "options_sound_break_start": {
+    "message": "Break start"
+  },
+  "options_sound_break_end": {
+    "message": "Break end"
+  },
+  "options_sound_schedule_start": {
+    "message": "Schedule auto-start"
+  },
+  "options_sound_preview_aria": {
+    "message": "Preview $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Play"
+  },
+  "options_sound_preview_error": {
+    "message": "Could not preview the sound. Try again."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Notifications"
+  },
   "options_session_complete_notification": {
     "message": "Onyesha a system notification when a session completes"
+  },
+  "options_badge_heading": {
+    "message": "Badge"
   },
   "options_badge_countdown": {
     "message": "Onyesha the remaining time on the toolbar icon"
@@ -278,6 +663,9 @@
   "options_privacy_confirm_local_history_action": {
     "message": "Thibitisha delete local history"
   },
+  "options_privacy_local_history_deleted": {
+    "message": "Local history deleted."
+  },
   "options_privacy_confirm_local_history_body": {
     "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Maliziaing the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
   },
@@ -289,6 +677,12 @@
   },
   "options_privacy_confirm_synced_policy_action": {
     "message": "Thibitisha delete remote Sync data"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Remote Chrome Sync data deleted."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "This permanently deletes remote settings, block and allow lists, site access credit, streaks, and domain-level blocked-attempt aggregates from Chrome Sync. Local settings and statistics stay on this device."
   },
   "options_privacy_confirm_all_title": {
     "message": "Futa all Fokasi Lock data?"
@@ -305,8 +699,20 @@
   "options_privacy_all_body_outro": {
     "message": "Deleting everything is available only while no session is running. Fokasi Lock then returns to setup."
   },
+  "options_privacy_error_local_history_clear": {
+    "message": "Local history could not be deleted. Try again."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Remote Chrome Sync data could not be deleted. Try again."
+  },
   "options_privacy_error_all_clear": {
     "message": "All Fokasi Lock data could not be deleted. Try again."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync could not save your latest changes. Your local save is safe."
+  },
+  "options_privacy_error_request": {
+    "message": "The request could not be completed. Try again."
   },
   "options_privacy_website_access_updated": {
     "message": "Tovuti access updated."
@@ -320,11 +726,44 @@
   "options_privacy_website_blocking_enabled": {
     "message": "Tovuti blocking enabled."
   },
+  "options_privacy_error_export": {
+    "message": "Could not export the event log."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Could not export the event log. Try again."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Could not open Chrome permission settings. Try again."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome permission settings opened."
+  },
   "options_privacy_open_chrome_settings": {
     "message": "Fungua Chrome permission settings"
   },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
+  },
   "options_privacy_sync_switch_label": {
     "message": "Sync Fokasi Lock data across Chrome devices"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync enabled."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync disabled."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync is still saving your latest changes."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync is on."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync is off."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome Sync changes saved."
   },
   "options_privacy_retry_enable_sync": {
     "message": "Jaribu Tena enabling Chrome Sync"
@@ -332,11 +771,32 @@
   "options_privacy_retry_sync": {
     "message": "Jaribu Tena Chrome Sync"
   },
+  "options_privacy_scope_synced": {
+    "message": "Synced"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Local only"
+  },
   "options_privacy_developer_note": {
     "message": "Nothing is sent to the Fokasi Lock developer."
   },
+  "options_privacy_local_log_heading": {
+    "message": "Local event log"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Export the detailed local log or delete local browsing and session history."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Export local event log"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Local event log exported."
+  },
   "options_privacy_delete_local_history": {
     "message": "Futa local history"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Remote Sync data"
   },
   "options_privacy_remote_data_detail": {
     "message": "Futa the Fokasi Lock copies left in Chrome Sync without changing this device."
@@ -362,25 +822,28 @@
   "options_privacy_retry_all_data": {
     "message": "Jaribu Tena all data deletion"
   },
+  "options_error_load": {
+    "message": "Could not load settings. Reload the page to try again."
+  },
   "options_error_retry_boot": {
     "message": "Could not restart Fokasi Lock. Try again."
   },
-  "options_gate_wait_one": {
-    "message": "Wait $COUNT$ second",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
+  "options_error_refresh_privacy": {
+    "message": "Could not refresh privacy settings. Reload the page."
   },
-  "options_gate_wait_other": {
-    "message": "Wait $COUNT$ seconds",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "10"
-      }
-    }
+  "options_error_website_blocking": {
+    "message": "Could not update website blocking. Try again."
+  },
+  "options_error_change_sync": {
+    "message": "Could not change Chrome Sync. Try again."
+  },
+  "options_error_retry_sync": {
+    "message": "Could not retry Chrome Sync. Try again."
+  },
+  "options_error_save_settings": {
+    "message": "Could not save settings. Reload the page and try again."
+  },
+  "options_error_save_lists": {
+    "message": "Could not save lists. Reload the page and try again."
   }
 }

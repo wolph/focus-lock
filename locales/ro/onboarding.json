@@ -72,6 +72,15 @@
   "onboarding_lists_legend": {
     "message": "Categorii de site-uri recomandate"
   },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
   "onboarding_site_count_other": {
     "message": "$COUNT$ de site-uri",
     "placeholders": {
@@ -171,15 +180,6 @@
       "COUNT": {
         "content": "$1",
         "example": "52"
-      }
-    }
-  },
-  "onboarding_site_count_one": {
-    "message": "$COUNT$ site",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
       }
     }
   }

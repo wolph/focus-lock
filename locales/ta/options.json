@@ -1,0 +1,849 @@
+{
+  "options_page_title": {
+    "message": "Focus Lock விருப்பங்கள்"
+  },
+  "options_heading": {
+    "message": "Focus Lock அமைப்புகள்"
+  },
+  "options_loading_settings": {
+    "message": "அமைப்புகள் ஏற்றப்படுகின்றன"
+  },
+  "options_privacy_loading": {
+    "message": "தனியுரிமை அமைப்புகள் ஏற்றப்படுகின்றன"
+  },
+  "options_save_failed": {
+    "message": "சேமிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_blocking_heading": {
+    "message": "தடுப்பு"
+  },
+  "options_blocking_help": {
+    "message": "தடுப்புப் பட்டியல் அமர்வுகளின்போது தனிப்பயன் விதிகள் தடுக்கும். அனுமதிப் பட்டியல் அமர்வுகளின்போது அணுகக்கூடியதாக இருப்பது அனுமதிப் பட்டியல் ஆகும். தொகுக்கப்பட்ட வகைகள் பொதுவான நேரம் வீணாக்கும் தளங்களைத் தடுக்கும்."
+  },
+  "options_custom_blacklist_title": {
+    "message": "தனிப்பயன் தடுப்புப் பட்டியல்"
+  },
+  "options_whitelist_title": {
+    "message": "அனுமதிப் பட்டியல்"
+  },
+  "options_bundled_categories_heading": {
+    "message": "தொகுக்கப்பட்ட வகைகள்"
+  },
+  "options_bundled_categories_help": {
+    "message": "பொதுவான நேரம் வீணாக்கும் தளங்களின் தொகுக்கப்பட்ட பட்டியல்கள். ஒரு முழு வகையை நிலைமாற்றவும், பின்னர் தனிப்பட்ட தளங்களைக் கிடைக்கச் செய்ய அதைத் திறக்கவும்."
+  },
+  "options_schedule_heading": {
+    "message": "அட்டவணை"
+  },
+  "options_schedule_help": {
+    "message": "இந்த காலப்பகுதிகளுக்குள் அமர்வுகள் தானாகவே தொடங்கும். இங்கு அமைக்கப்பட்ட கடினத்தன்மை முழு காலப்பகுதிக்கும் பொருந்தும்."
+  },
+  "options_behavior_heading": {
+    "message": "அமர்வு நடத்தை"
+  },
+  "options_budget_heading": {
+    "message": "தள அணுகல் கடன்"
+  },
+  "options_notifications_heading": {
+    "message": "அறிவிப்புகள்"
+  },
+  "options_privacy_heading": {
+    "message": "தனியுரிமையும் தரவும்"
+  },
+  "options_load_error_retry": {
+    "message": "மீண்டும் முயற்சி"
+  },
+  "options_load_error_delete_all": {
+    "message": "அனைத்தையும் நீக்கி மீண்டும் தொடங்கவும்"
+  },
+  "options_load_error_keep_data": {
+    "message": "எனது தரவை வைத்திரு"
+  },
+  "options_delete_all_data": {
+    "message": "அனைத்து Focus Lock தரவையும் நீக்கு"
+  },
+  "options_dirty_saving": {
+    "message": "மாற்றங்கள் சேமிக்கப்படுகின்றன"
+  },
+  "options_dirty_unsaved": {
+    "message": "சேமிக்கப்படாத மாற்றங்கள்"
+  },
+  "options_dirty_clean": {
+    "message": "சேமிக்கப்படாத மாற்றங்கள் இல்லை"
+  },
+  "options_dirty_discard": {
+    "message": "மாற்றங்களை நிராகரி"
+  },
+  "options_dirty_save": {
+    "message": "மாற்றங்களைச் சேமி"
+  },
+  "options_session_status_label": {
+    "message": "அமர்வு நிலை"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "டொமைன்"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
+  "options_rule_remove": {
+    "message": "அகற்று"
+  },
+  "options_rule_remove_aria": {
+    "message": "$PATTERN$ஐ அகற்று",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "இதுவரை விதிகள் இல்லை."
+  },
+  "options_rule_kind_aria": {
+    "message": "விதி வகை"
+  },
+  "options_rule_kind_host_option": {
+    "message": "டொமைன் அல்லது துணை-டொமைன்"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (முழு URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "வடிவம்"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "விதியைச் சேர்"
+  },
+  "options_rules_help": {
+    "message": "facebook.com அந்த டொமைனையும் ஒவ்வொரு துணை-டொமைனையும் உள்ளடக்கும். news.ycombinator.com அந்த துணை-டொமைனையும் அதற்கு கீழுள்ள அனைத்தையும் உள்ளடக்கும். /youtube\\.com\\/shorts/ முழு URLஐயும் regex ஆகப் பொருத்தும்."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ ஒரு நேர்மறை முழு எண்ணாக இருக்க வேண்டும்.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ பூஜ்ஜியம் அல்லது அதற்கு மேற்பட்ட முழு எண்ணாக இருக்க வேண்டும்.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ பூஜ்ஜியம் அல்லது அதற்கு மேற்பட்டதாக இருக்க வேண்டும்.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ ஆதரிக்கப்படும் நிமிட வரம்பிற்குள் இருக்க வேண்டும்.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ ஆதரிக்கப்படும் நாள் வரம்பிற்குள் இருக்க வேண்டும்.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "அமர்வு இயல்புநிலைகள்"
+  },
+  "options_session_defaults_help": {
+    "message": "பயன்முறையும் கடினத்தன்மையும் அமர்வு தொடங்கும்போது நிலைநிறுத்தப்படுகின்றன. தொடக்க படிவம் திறக்கும் மதிப்புகள் இவை."
+  },
+  "options_preset_short_label": {
+    "message": "குறுகிய அமர்வு முன்னமைவு (நிமிடங்கள்)"
+  },
+  "options_preset_default_label": {
+    "message": "இயல்புநிலை அமர்வு முன்னமைவு (நிமிடங்கள்)"
+  },
+  "options_preset_deep_label": {
+    "message": "ஆழ்ந்த அமர்வு முன்னமைவு (நிமிடங்கள்)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "தடுப்புப் பட்டியல்: பட்டியலிடப்பட்ட தளங்களைத் தடு"
+  },
+  "options_mode_whitelist_label": {
+    "message": "அனுமதிப் பட்டியல்: பட்டியலிடப்பட்ட தளங்களை மட்டும் அனுமதி"
+  },
+  "options_strictness_flexible_label": {
+    "message": "நெகிழ்வானது: நீங்கள் விரும்பும்போது அமர்வை முடிக்கவும்"
+  },
+  "options_strictness_friction_label": {
+    "message": "தடை: முன்கூட்டியே நிறுத்துவது கட்டமைக்கப்பட்ட பரிசீலனை வாயிலைப் பயன்படுத்தும்"
+  },
+  "options_strictness_hard_label": {
+    "message": "கடும் பூட்டு: முன்கூட்டியே முடிவு இல்லை, தற்காலிக தள அணுகல் மட்டும்"
+  },
+  "options_cycle_heading": {
+    "message": "கவனம் மற்றும் இடைவேளைச் சுழற்சி"
+  },
+  "options_cycle_help": {
+    "message": "இயல்புநிலைகள்: 25 நிமிட கவனம், 5 நிமிட இடைவேளை, ஒவ்வொரு 4வது சுழற்சியிலும் 15 நிமிட நீண்ட இடைவேளை. அட்டவணைப்படுத்தப்பட்ட இடைவேளைகள், விருப்பப்படி இடைவேளை எடுப்பதை விட ஆய்வுப் படிப்புகளில் மனநிலைக்கும் கவனத்திற்கும் சிறப்பாக இருக்கின்றன. துல்லியமான நிமிடங்கள் மரபு, அறிவியல் அல்ல."
+  },
+  "options_cycle_default_label": {
+    "message": "இயல்பாகவே கவனம் மற்றும் இடைவேளைகளைச் சுழற்றவும்"
+  },
+  "options_focus_minutes_label": {
+    "message": "கவன நிமிடங்கள்"
+  },
+  "options_short_break_minutes_label": {
+    "message": "குறுகிய இடைவேளை நிமிடங்கள்"
+  },
+  "options_long_break_minutes_label": {
+    "message": "நீண்ட இடைவேளை நிமிடங்கள்"
+  },
+  "options_long_every_label": {
+    "message": "ஒவ்வொரு N-வது சுழற்சியிலும் நீண்ட இடைவேளை"
+  },
+  "options_gate_heading": {
+    "message": "பரிசீலனை வாயில்"
+  },
+  "options_gate_help": {
+    "message": "வெளிப்படையான பணிக்குத் திரும்பு பொத்தானுடன் கூடிய 10 வினாடி காத்திருப்பு தூண்டுதல் வருகைகளை அளவிடக்கூடிய அளவில் குறைக்கிறது (கள ஆய்வு, PNAS 2023). நீண்ட காத்திருப்பும் தட்டச்சு செய்யும் வாக்கியமும் விளைவை கிட்டத்தட்ட இரட்டிப்பாக்குகின்றன."
+  },
+  "options_gate_wait_one": {
+    "message": "$COUNT$ வினாடி காத்திரு",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "$COUNT$ வினாடிகள் காத்திரு",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "தனிப்பயன்"
+  },
+  "options_custom_delay_label": {
+    "message": "தனிப்பயன் தாமதம் (வினாடிகள்)"
+  },
+  "options_custom_delay_error": {
+    "message": "தனிப்பயன் தாமதம் பூஜ்ஜியத்திற்கு மேற்பட்ட முழு எண் வினாடிகளாக இருக்க வேண்டும்."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "ஒரு வாக்கியத்தையும் தட்டச்சு செய்ய வேண்டும்"
+  },
+  "options_gate_force_end_label": {
+    "message": "\"நேரக் கெடுவைப் புறக்கணித்து முடி\" பொத்தானை இயக்கு"
+  },
+  "options_credit_help": {
+    "message": "நீங்கள் கவனம் செலுத்தும்போது தள அணுகல் கடன் குவிகிறது. அனைத்துத் தளங்களுக்கான அணுகலும் ஒரு தளத் திறப்பும் ஒரே இருப்பிலிருந்து செலவிடப்படுகின்றன. கடனைச் செலவிடாமல் எந்த நேரத்திலும் விலகிச் செல்லலாம்."
+  },
+  "options_earn_rate_label": {
+    "message": "ஒவ்வொரு 30 நிமிட கவனத்திற்கும் தள அணுகல் நிமிடங்கள்"
+  },
+  "options_credit_cap_label": {
+    "message": "தள அணுகல் கடன் வரம்பு (நிமிடங்கள்)"
+  },
+  "options_pause_length_label": {
+    "message": "அனைத்துத் தள அணுகல் நீளம் (நிமிடங்கள்)"
+  },
+  "options_unlock_length_label": {
+    "message": "தளத் திறப்பு நீளம் (நிமிடங்கள்)"
+  },
+  "options_streak_heading": {
+    "message": "தொடர் மற்றும் தக்கவைப்பு"
+  },
+  "options_streak_help": {
+    "message": "இலக்கை எட்டும் நாட்களைத் தொடர் எண்ணுகிறது. ஒரு இயல்புநிலை அமர்வு தொடரை உயிருடன் வைத்திருக்கும், ஒரு உறைவு டோக்கன் தவறவிட்ட நாளைச் சரிசெய்யும்."
+  },
+  "options_streak_goal_label": {
+    "message": "தினசரி தொடர் இலக்கு (கவன நிமிடங்கள்)"
+  },
+  "options_freeze_interval_label": {
+    "message": "உறைவு டோக்கன் இடைவெளி (நாட்கள்)"
+  },
+  "options_retention_label": {
+    "message": "தினசரி புள்ளிவிவரங்களை வைத்திரு (நாட்கள்)"
+  },
+  "options_category_on_announcement": {
+    "message": "$CATEGORY$ வகை இயக்கத்தில்.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "$CATEGORY$ வகை முடக்கத்தில்.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "அனைத்து வகைகளும் இயக்கத்தில்."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "அனைத்து வகைகளும் முடக்கத்தில்."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ சேர்க்கப்பட்டது.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ கிடைக்குமாறு வைக்கப்பட்டது.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "அனைத்து $CATEGORY$ தளங்களும் சேர்க்கப்பட்டன.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "அனைத்து $CATEGORY$ தளங்களும் கிடைக்குமாறு வைக்கப்பட்டன.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "வகை மொத்த செயல்கள்"
+  },
+  "options_selected_count": {
+    "message": "$COUNT$ தேர்ந்தெடுக்கப்பட்டது",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "$COUNT$ தேர்வு நீக்கப்பட்டது",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "அனைத்தையும் தேர்வுசெய்"
+  },
+  "options_deselect_all": {
+    "message": "அனைத்தையும் தேர்வுநீக்கு"
+  },
+  "options_select_all_categories_aria": {
+    "message": "அனைத்து வகைகளையும் தேர்வுசெய்"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "அனைத்து வகைகளையும் தேர்வுநீக்கு"
+  },
+  "options_show_category_sites": {
+    "message": "$CATEGORY$ தளங்களைக் காட்டு",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "$CATEGORY$ தளங்களை மறை",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ தளம் சேர்க்கப்பட்டது",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ தளங்கள் சேர்க்கப்பட்டன",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "வகை முடக்கத்தில்"
+  },
+  "options_included_when_enabled_one": {
+    "message": "இயக்கும்போது $COUNT$ சேர்க்கப்படும்",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "இயக்கும்போது $COUNT$ சேர்க்கப்படும்",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "மற்ற வகை தடுக்கப்பட்டிருக்கும்போது ஒரு தளத்தைக் கிடைக்குமாறு வைக்க அதன் தேர்வை நீக்கவும்."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ தள மொத்த செயல்கள்",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "அனைத்து $CATEGORY$ தளங்களையும் தேர்வுசெய்",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "அனைத்து $CATEGORY$ தளங்களையும் தேர்வுநீக்கு",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$ தளங்கள்",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "ஞாயி"
+  },
+  "options_day_mon": {
+    "message": "திங்"
+  },
+  "options_day_tue": {
+    "message": "செவ்"
+  },
+  "options_day_wed": {
+    "message": "புத"
+  },
+  "options_day_thu": {
+    "message": "வியா"
+  },
+  "options_day_fri": {
+    "message": "வெள்"
+  },
+  "options_day_sat": {
+    "message": "சனி"
+  },
+  "options_schedule_cycles_label": {
+    "message": "கவனம் மற்றும் இடைவேளைகளைச் சுழற்று"
+  },
+  "options_schedule_overlap_error": {
+    "message": "$DAY$ அன்று மற்றொரு இயக்கப்பட்ட உள்ளீட்டுடன் மேலெழுகிறது.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "அமர்வு வகை"
+  },
+  "options_schedule_entry_legend": {
+    "message": "அட்டவணை உள்ளீடு"
+  },
+  "options_schedule_start_label": {
+    "message": "தொடக்கம்"
+  },
+  "options_schedule_end_label": {
+    "message": "முடிவு"
+  },
+  "options_schedule_duration_legend": {
+    "message": "கால அளவு"
+  },
+  "options_schedule_intention_label": {
+    "message": "நோக்கம்"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "இந்த நேரம் எதற்காக"
+  },
+  "options_schedule_save_entry": {
+    "message": "உள்ளீட்டைச் சேமி"
+  },
+  "options_cancel": {
+    "message": "ரத்துசெய்"
+  },
+  "options_schedule_empty": {
+    "message": "இதுவரை திட்டமிடப்பட்ட அமர்வுகள் இல்லை."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "தேர்ந்தெடுக்கப்பட்ட நாட்கள்"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ முதல் $END$ வரை",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "தடுப்புப் பட்டியல்"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "அனுமதிப் பட்டியல்"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "நெகிழ்வானது"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "தடை"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "கடும் பூட்டு"
+  },
+  "options_schedule_enabled_label": {
+    "message": "இயக்கப்பட்டது"
+  },
+  "options_schedule_edit": {
+    "message": "திருத்து"
+  },
+  "options_schedule_delete": {
+    "message": "நீக்கு"
+  },
+  "options_schedule_add": {
+    "message": "அட்டவணை உள்ளீட்டைச் சேர்"
+  },
+  "options_sounds_heading": {
+    "message": "ஒலிகள்"
+  },
+  "options_master_volume": {
+    "message": "முதன்மை ஒலியளவு"
+  },
+  "options_sound_session_complete": {
+    "message": "அமர்வு முடிந்தது"
+  },
+  "options_sound_break_start": {
+    "message": "இடைவேளை தொடக்கம்"
+  },
+  "options_sound_break_end": {
+    "message": "இடைவேளை முடிவு"
+  },
+  "options_sound_schedule_start": {
+    "message": "அட்டவணை தானியக்கத் தொடக்கம்"
+  },
+  "options_sound_preview_aria": {
+    "message": "$SOUND$ ஐ முன்னோட்டமிடு",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "இயக்கு"
+  },
+  "options_sound_preview_error": {
+    "message": "ஒலியை முன்னோட்டமிட முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "அறிவிப்புகள்"
+  },
+  "options_session_complete_notification": {
+    "message": "அமர்வு முடியும்போது கணினி அறிவிப்பைக் காட்டு"
+  },
+  "options_badge_heading": {
+    "message": "பேட்ஜ்"
+  },
+  "options_badge_countdown": {
+    "message": "கருவிப்பட்டை ஐகானில் மீதமுள்ள நேரத்தைக் காட்டு"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "இணையதள அணுகல்"
+  },
+  "options_privacy_website_off_title": {
+    "message": "இணையதள அணுகல் முடக்கத்தில் உள்ளது"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "நீங்கள் அணுகலை வழங்கும் வரை Focus Lock இணையதளங்களைத் தடுக்க முடியாது."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "இணையதளத் தடுப்பை இயக்கவும்"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "இணையதள அணுகல் வழங்கப்பட்டது, ஆனால் தடுப்பு செயலில் இல்லை"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome அணுகலை வழங்கியது, ஆனால் அதன் தடுப்பு ஸ்கிரிப்டைப் பதிவுசெய்ய Focus Lock-ஆல் முடியவில்லை."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "இணையதளத் தடுப்பை மீண்டும் முயற்சி"
+  },
+  "options_privacy_website_on_title": {
+    "message": "இணையதளத் தடுப்பு இயக்கப்பட்டுள்ளது"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "வழக்கமான இணையதளப் பக்கங்களில் Focus Lock உங்கள் செயலில் உள்ள தடுப்பு விதிகளைப் பயன்படுத்தலாம்."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "உள்ளூர் வரலாற்றை நீக்கவா?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "உள்ளூர் வரலாற்று நீக்கத்தை உறுதிசெய்"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "உள்ளூர் வரலாறு நீக்கப்பட்டது."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "இது முழு URLகள், கவன நோக்கங்கள், விரிவான அமர்வு நிகழ்வுகளை இந்தச் சாதனத்திலிருந்து நிரந்தரமாக நீக்குகிறது. இயங்கும் அமர்வை இது அழிக்காது, அது அதன் நோக்கத்தையும் அது தடுக்கும் ஒவ்வொரு தாவலின் முகவரியையும் வைத்திருக்கும். அமர்வை முடிப்பது நோக்கத்தை அழித்து, திறந்திருக்கும் ஒவ்வொரு இணையதளத் தாவலையும் சுத்தம் செய்யத் தொடங்கும், அந்தச் சுத்தம் முடிந்தவுடன் சேமிக்கப்பட்ட ஒவ்வொரு முகவரியையும் அகற்றும்."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "இது முழு URLகள், கவன நோக்கங்கள், விரிவான அமர்வு நிகழ்வுகள் மற்றும் உள்ளூர்-மட்டும் மொத்தப் புள்ளிவிவரங்களை இந்தச் சாதனத்திலிருந்து நிரந்தரமாக நீக்குகிறது. இயங்கும் அமர்வை இது அழிக்காது, அது அதன் நோக்கத்தையும் அது தடுக்கும் ஒவ்வொரு தாவலின் முகவரியையும் வைத்திருக்கும். அமர்வை முடிப்பது நோக்கத்தை அழித்து, திறந்திருக்கும் ஒவ்வொரு இணையதளத் தாவலையும் சுத்தம் செய்யத் தொடங்கும், அந்தச் சுத்தம் முடிந்தவுடன் சேமிக்கப்பட்ட ஒவ்வொரு முகவரியையும் அகற்றும்."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "தொலைநிலை Sync தரவை நீக்கவா?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "தொலைநிலை Sync தரவு நீக்கத்தை உறுதிசெய்"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "தொலைநிலை Chrome Sync தரவு நீக்கப்பட்டது."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "இது தொலைநிலை அமைப்புகள், தடுப்பு மற்றும் அனுமதிப் பட்டியல்கள், தள அணுகல் கடன், தொடர்கள் மற்றும் டொமைன்-மட்டத்தில் தடுக்கப்பட்ட முயற்சி மொத்தங்களை Chrome Sync-லிருந்து நிரந்தரமாக நீக்குகிறது. உள்ளூர் அமைப்புகளும் புள்ளிவிவரங்களும் இந்தச் சாதனத்திலேயே இருக்கும்."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "அனைத்து Focus Lock தரவையும் நீக்கவா?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "அனைத்து Focus Lock தரவு நீக்கத்தையும் உறுதிசெய்"
+  },
+  "options_privacy_all_deleted": {
+    "message": "அனைத்து Focus Lock தரவும் நீக்கப்பட்டது."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "இது இந்தச் சாதனத்தில் உள்ள ஒவ்வொரு Focus Lock தரவையும், Chrome Sync-இல் உள்ள எந்த Focus Lock நகல்களையும் நிரந்தரமாக நீக்குகிறது:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "எந்த அமர்வும் இயங்காதபோது மட்டுமே அனைத்தையும் நீக்குவது கிடைக்கும். பின்னர் Focus Lock அமைப்புக்குத் திரும்பும்."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "உள்ளூர் வரலாற்றை நீக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "தொலைநிலை Chrome Sync தரவை நீக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "அனைத்து Focus Lock தரவையும் நீக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "உங்கள் சமீபத்திய மாற்றங்களை Chrome Sync சேமிக்க முடியவில்லை. உங்கள் உள்ளூர் சேமிப்பு பாதுகாப்பாக உள்ளது."
+  },
+  "options_privacy_error_request": {
+    "message": "கோரிக்கையை முடிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "இணையதள அணுகல் புதுப்பிக்கப்பட்டது."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "இணையதள அணுகல் வழங்கப்படவில்லை."
+  },
+  "options_privacy_error_website_access": {
+    "message": "இணையதள அணுகலைப் புதுப்பிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "இணையதளத் தடுப்பு இயக்கப்பட்டது."
+  },
+  "options_privacy_error_export": {
+    "message": "நிகழ்வுப் பதிவை ஏற்றுமதி செய்ய முடியவில்லை."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "நிகழ்வுப் பதிவை ஏற்றுமதி செய்ய முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Chrome அனுமதி அமைப்புகளைத் திறக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome அனுமதி அமைப்புகள் திறக்கப்பட்டன."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Chrome அனுமதி அமைப்புகளைத் திற"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Chrome சாதனங்களில் Focus Lock தரவை ஒத்திசை"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync இயக்கப்பட்டது."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync முடக்கப்பட்டது."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync இன்னும் உங்கள் சமீபத்திய மாற்றங்களைச் சேமிக்கிறது."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync இயக்கத்தில் உள்ளது."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync முடக்கத்தில் உள்ளது."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome Sync மாற்றங்கள் சேமிக்கப்பட்டன."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome Sync இயக்குவதை மீண்டும் முயற்சி"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Chrome Sync-ஐ மீண்டும் முயற்சி"
+  },
+  "options_privacy_scope_synced": {
+    "message": "ஒத்திசைக்கப்பட்டது"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "உள்ளூர் மட்டும்"
+  },
+  "options_privacy_developer_note": {
+    "message": "Focus Lock உருவாக்குநருக்கு எதுவும் அனுப்பப்படுவதில்லை."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "உள்ளூர் நிகழ்வுப் பதிவு"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "விரிவான உள்ளூர் பதிவை ஏற்றுமதி செய் அல்லது உள்ளூர் உலாவல் மற்றும் அமர்வு வரலாற்றை நீக்கு."
+  },
+  "options_privacy_export_local_log": {
+    "message": "உள்ளூர் நிகழ்வுப் பதிவை ஏற்றுமதி செய்"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "உள்ளூர் நிகழ்வுப் பதிவு ஏற்றுமதி செய்யப்பட்டது."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "உள்ளூர் வரலாற்றை நீக்கு"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "தொலைநிலை Sync தரவு"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "இந்தச் சாதனத்தை மாற்றாமல் Chrome Sync-இல் உள்ள Focus Lock நகல்களை நீக்கு."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "தொலைநிலை Sync தரவை நீக்கு"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "அனைத்து Focus Lock தரவும்"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "இந்தச் சாதனத்தில் உள்ள ஒவ்வொரு Focus Lock பதிவையும், Chrome Sync-இல் உள்ள எந்த Focus Lock நகல்களையும் நீக்கி, பின்னர் அமைப்பிலிருந்து மீண்டும் தொடங்கு. எந்த அமர்வும் இயங்காதபோது கிடைக்கும்."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "அனைத்து Focus Lock தரவு நீக்கத்தையும் மீண்டும் தொடங்குகிறது."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "உள்ளூர் வரலாறு நீக்கத்தை மீண்டும் முயற்சி"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "தொலைநிலை Sync நீக்கத்தை மீண்டும் முயற்சி"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "அனைத்து தரவு நீக்கத்தையும் மீண்டும் முயற்சி"
+  },
+  "options_error_load": {
+    "message": "அமைப்புகளை ஏற்ற முடியவில்லை. மீண்டும் முயற்சிக்க பக்கத்தை மீண்டும் ஏற்றவும்."
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lock-ஐ மீண்டும் தொடங்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_error_refresh_privacy": {
+    "message": "தனியுரிமை அமைப்புகளைப் புதுப்பிக்க முடியவில்லை. பக்கத்தை மீண்டும் ஏற்றவும்."
+  },
+  "options_error_website_blocking": {
+    "message": "இணையதளத் தடுப்பைப் புதுப்பிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_error_change_sync": {
+    "message": "Chrome Sync-ஐ மாற்ற முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome Sync-ஐ மீண்டும் முயற்சிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_error_save_settings": {
+    "message": "அமைப்புகளைச் சேமிக்க முடியவில்லை. பக்கத்தை மீண்டும் ஏற்றி மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_error_save_lists": {
+    "message": "பட்டியல்களைச் சேமிக்க முடியவில்லை. பக்கத்தை மீண்டும் ஏற்றி மீண்டும் முயற்சிக்கவும்."
+  }
+}

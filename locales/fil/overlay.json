@@ -1,12 +1,99 @@
 {
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "Locked - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Checking available work tabs..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Pick an open tab to continue your task."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Your focus session is not available. Try again, or reload this page."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Could not load your work tab. Try again, or reload this page."
+  },
+  "overlay_target_reconnect": {
+    "message": "Reload this page to reconnect to Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "The requesting page has changed. Reload the page."
+  },
+  "overlay_target_transport_error": {
+    "message": "Could not reach Focus Lock. Try again."
+  },
+  "overlay_picker_heading": {
+    "message": "Choose a work tab"
+  },
   "overlay_picker_cancel": {
     "message": "Kanselahin"
   },
   "overlay_picker_search_label": {
     "message": "Maghanap work tabs"
   },
+  "overlay_picker_search_placeholder": {
+    "message": "Search by title or website"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Clear search"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Refresh tabs"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Available work tabs"
+  },
+  "overlay_picker_finding": {
+    "message": "Finding available tabs..."
+  },
+  "overlay_picker_searching": {
+    "message": "Searching work tabs..."
+  },
+  "overlay_picker_saving": {
+    "message": "Saving work tab..."
+  },
   "overlay_picker_no_tabs": {
     "message": "No available work tabs. Buksan a site allowed by this session, then refresh tabs."
+  },
+  "overlay_picker_no_matches": {
+    "message": "No matching tabs. Try another search or clear the search."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Could not load work tabs. Try again."
   },
   "overlay_picker_count_one": {
     "message": "$MATCHES$ of $COUNT$ tab",
@@ -31,6 +118,19 @@
       "MATCHES": {
         "content": "$2",
         "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
       }
     }
   }

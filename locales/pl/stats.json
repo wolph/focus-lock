@@ -226,6 +226,19 @@
   "stats_chart_empty_default": {
     "message": "Brak danych."
   },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
   "stats_chart_table_summary": {
     "message": "Pokaż jako tabelę"
   },

@@ -1,0 +1,630 @@
+{
+  "popup_next_schedule": {
+    "message": "తర్వాత: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "సెట్టింగ్‌లు"
+  },
+  "popup_open_settings_failed": {
+    "message": "సెట్టింగ్‌లను తెరవలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_settings_load_failed": {
+    "message": "సెషన్ సెట్టింగ్‌లను లోడ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించడానికి పాప్అప్‌ను రీలోడ్ చేయండి. డిఫాల్ట్‌లు చూపబడుతున్నాయి."
+  },
+  "popup_open_setup_failed": {
+    "message": "సెటప్‌ను తెరవలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_setup_required_heading": {
+    "message": "Focus Lock సెటప్‌ను పూర్తి చేయండి"
+  },
+  "popup_setup_required_body": {
+    "message": "సెషన్ ప్రారంభించే ముందు మీ ప్రారంభ జాబితాలు, వెబ్‌సైట్ యాక్సెస్, మరియు నిల్వ మోడ్‌ను ఎంచుకోండి."
+  },
+  "popup_open_setup_button": {
+    "message": "సెటప్‌ను తెరువు"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను నిర్ధారించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను ప్రారంభించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_blocking_off_heading": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్ ఆఫ్‌లో ఉంది"
+  },
+  "popup_blocking_off_body": {
+    "message": "Chrome వెబ్‌సైట్ యాక్సెస్ ఇచ్చి బ్లాకింగ్ ప్రారంభమయ్యే వరకు Focus Lock సెషన్‌ను ప్రారంభించలేదు."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome వెబ్‌సైట్ యాక్సెస్ ఇవ్వలేదు. వెబ్‌సైట్ బ్లాకింగ్ ఇంకా ఆఫ్‌లో ఉంది."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ ఇవ్వబడింది, కానీ బ్లాకింగ్‌ను ప్రారంభించడంలో Focus Lock విఫలమైంది. సెటప్‌ను మళ్లీ ప్రయత్నించండి లేదా ఎక్స్‌టెన్షన్‌ను రీలోడ్ చేయండి."
+  },
+  "popup_enable_blocking_button": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను ప్రారంభించండి"
+  },
+  "popup_retry_button": {
+    "message": "మళ్లీ ప్రయత్నించండి"
+  },
+  "popup_notice_access_revoked": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ తొలగించబడినందున మీ సెషన్ ముగిసింది."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను ప్రారంభించడంలో Focus Lock విఫలమైనందున మీ సెషన్ ముగిసింది."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "ఈ నోటీసును తీసివేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ నోటీసును తీసివేయి"
+  },
+  "popup_dismiss_button": {
+    "message": "తీసివేయి"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lockను మళ్లీ ప్రారంభించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock ప్రారంభం కాలేదు"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "కారణాన్ని చదవలేకపోయాం."
+  },
+  "popup_reset_runtime_button": {
+    "message": "స్థానిక రన్‌టైమ్‌ను రీసెట్ చేయి"
+  },
+  "popup_reset_runtime_note": {
+    "message": "మీ సెట్టింగ్‌లు, జాబితాలు మరియు గణాంకాలను ఉంచుతుంది. ప్రస్తుత సెషన్ స్థితిని క్లియర్ చేస్తుంది."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "అన్నీ తొలగించి మళ్లీ ప్రారంభించండి"
+  },
+  "popup_keep_data_button": {
+    "message": "నా డేటాను ఉంచు"
+  },
+  "popup_delete_all_button": {
+    "message": "అన్ని Focus Lock డేటాను తొలగించు"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "సెటప్ స్థితి అందుబాటులో లేదు. మళ్లీ ప్రయత్నించడానికి Focus Lockను రీలోడ్ చేయండి."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "ఫోకస్ స్థితి అందుబాటులో లేదు"
+  },
+  "popup_action_in_progress": {
+    "message": "చర్య ప్రగతిలో ఉంది"
+  },
+  "popup_active_site_checking": {
+    "message": "యాక్టివ్ సైట్‌ను తనిఖీ చేస్తోంది"
+  },
+  "popup_active_site_unsupported": {
+    "message": "దాన్ని అన్‌లాక్ చేయడానికి ఒక సాధారణ వెబ్‌సైట్‌ను తెరవండి"
+  },
+  "popup_active_site_unknown": {
+    "message": "యాక్టివ్ సైట్‌ను గుర్తించలేకపోయాం"
+  },
+  "popup_active_site_error": {
+    "message": "యాక్టివ్ సైట్‌ను గుర్తించలేకపోయాం."
+  },
+  "popup_resume_now": {
+    "message": "ఇప్పుడు కొనసాగించు"
+  },
+  "popup_start_next_focus_early": {
+    "message": "తర్వాతి ఫోకస్‌ను ముందుగా ప్రారంభించు"
+  },
+  "popup_unlock_this_site": {
+    "message": "ఈ సైట్‌ను అన్‌లాక్ చేయి"
+  },
+  "popup_unlock_all_sites": {
+    "message": "అన్ని సైట్‌లను అన్‌లాక్ చేయి"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ యాక్సెస్, $CREDIT$ క్రెడిట్",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ యాక్సెస్, $CREDIT$ క్రెడిట్ - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "పని ట్యాబ్‌ను ఎంచుకో"
+  },
+  "popup_change_work_tab_button": {
+    "message": "పని ట్యాబ్‌ను మార్చు"
+  },
+  "popup_session_actions_summary": {
+    "message": "సెషన్ చర్యలు"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ సైట్ యాక్సెస్ క్రెడిట్",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "అనుమతించిన డొమైన్‌ను జోడించు"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "అనుమతించిన డొమైన్‌ను జోడించు"
+  },
+  "popup_add_button": {
+    "message": "జోడించు"
+  },
+  "popup_draft_allowed_only": {
+    "message": "కేవలం $COUNT$ అనుమతించిన సైట్ నియమాలు. ఇతర వెబ్‌సైట్‌లు బ్లాక్ చేయబడ్డాయి.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ బ్లాక్ చేసిన కేటగిరీలు, $RULES$ అదనపు నియమాలు.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "కఠిన లాక్. ముందుగా ముగించలేరు."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "ఎప్పుడైనా ముగించవచ్చు."
+  },
+  "popup_draft_stop_friction": {
+    "message": "$SECONDS$సె నిరీక్షణ తర్వాత ముగించండి.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "$SECONDS$సె నిరీక్షణ మరియు నిర్ధారణ వాక్యం తర్వాత ముగించండి.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "సెషన్ నిడివి"
+  },
+  "popup_custom_minutes_label": {
+    "message": "కస్టమ్ నిమిషాలు"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "నిమి"
+  },
+  "popup_gate_force_end": {
+    "message": "టైమ్‌అవుట్‌ను విస్మరించి అయినా ముగించు"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "ఫోకస్ చేస్తూ ఉండు"
+  },
+  "popup_gate_phrase_label": {
+    "message": "టైప్ చేయండి:"
+  },
+  "popup_gate_update_failed": {
+    "message": "గేట్‌ను నవీకరించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_gate_intention": {
+    "message": "మీరు చెప్పింది: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "నిర్ణయించడానికి ఒక క్షణం:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "$TOTAL$ సెలో",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "పనికి తిరిగి వెళ్ళు"
+  },
+  "popup_destination_unavailable": {
+    "message": "గమ్యస్థానం అందుబాటులో లేదు"
+  },
+  "popup_back_to_work_name": {
+    "message": "పనికి తిరిగి వెళ్ళు: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "పనికి తిరిగి వెళ్ళు: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "బ్లాక్ చేసిన సైట్ జాబితాలు రీలోడ్ అయ్యే వరకు కేటగిరీ ఎడిటింగ్ నిలిపివేయబడింది."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "బ్లాక్ చేసిన కేటగిరీలు"
+  },
+  "popup_show_full_domain": {
+    "message": "పూర్తి డొమైన్‌ను చూపించు: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "పూర్తి regex‌ను చూపించు: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "డొమైన్"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regular expression"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ సైట్‌లు",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ సైట్",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ సైట్‌లు",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "మరో $COUNT$ సైట్",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "మరో $COUNT$ సైట్‌లు",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "అనుమతించిన మినహాయింపులు"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "అదనపు బ్లాక్ చేసిన నియమాలు"
+  },
+  "popup_no_extra_blocked": {
+    "message": "అదనపు బ్లాక్ చేసిన నియమాలు లేవు."
+  },
+  "popup_allowed_heading": {
+    "message": "అనుమతించిన సైట్‌లు మరియు నియమాలు"
+  },
+  "popup_no_allowed_sites": {
+    "message": "ఇంకా అనుమతించిన సైట్‌లు లేవు."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "ఏమి బ్లాక్ చేయబడుతుంది"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "ఏమి అనుమతించబడుతుంది"
+  },
+  "popup_categories_selected": {
+    "message": "$TOTAL$లో $SELECTED$ కేటగిరీలు ఎంపిక చేయబడ్డాయి",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ అదనపు బ్లాక్ చేసిన నియమం",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ అదనపు బ్లాక్ చేసిన నియమాలు",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ అనుమతించిన నియమం",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ అనుమతించిన నియమాలు",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "ఇక్కడ అనుమతించిన-సైట్ మరియు నియమ మార్పులు ఈ సెషన్‌కు మాత్రమే వర్తిస్తాయి. మిగతా అన్నీ బ్లాక్ చేయబడతాయి."
+  },
+  "popup_scope_blacklist": {
+    "message": "ఇక్కడ కేటగిరీ మరియు నియమ మార్పులు ఈ సెషన్‌కు మాత్రమే వర్తిస్తాయి."
+  },
+  "popup_open_settings_defaults": {
+    "message": "శాశ్వత డిఫాల్ట్‌ల కోసం సెట్టింగ్‌లను తెరువు"
+  },
+  "popup_rule_details_label": {
+    "message": "సెషన్ నియమ వివరాలు"
+  },
+  "popup_session_type_legend": {
+    "message": "సెషన్ రకం"
+  },
+  "popup_session_type_flexible": {
+    "message": "సరళ"
+  },
+  "popup_session_type_friction": {
+    "message": "ఘర్షణ"
+  },
+  "popup_session_type_hard": {
+    "message": "కఠిన లాక్"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "మీరు కోరుకున్నప్పుడు వెంటనే సెషన్‌ను ముగించండి."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "ముందుగా ముగించడానికి $WAIT$ అవసరం. టైపింగ్ అవసరం లేదు.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "ముందుగా ముగించడానికి $WAIT$ మరియు టైప్ చేసిన నిర్ధారణ అవసరం.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "సెషన్ ముందుగా ముగియదు. సైట్ యాక్సెస్ క్రెడిట్ ఇప్పటికీ పనిచేస్తుంది."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "ఎంచుకున్న కేటగిరీలు మరియు అదనపు నియమాలు బ్లాక్ చేయబడతాయి. ఇతర సైట్‌లు అందుబాటులో ఉంటాయి."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "జాబితా చేసిన సైట్‌లు మాత్రమే అందుబాటులో ఉంటాయి. ప్రతి ఇతర వెబ్‌సైట్ బ్లాక్ చేయబడుతుంది."
+  },
+  "popup_invalid_duration_error": {
+    "message": "సున్నా నిమిషాల కంటే ఎక్కువ సెషన్ నిడివిని నమోదు చేయండి."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "డిఫాల్ట్‌లు మారాయి, కానీ ప్రస్తుత జాబితాలను లోడ్ చేయలేకపోయాం. పాప్అప్‌ను రీలోడ్ చేయండి."
+  },
+  "popup_no_work_tab_option": {
+    "message": "పని ట్యాబ్ లేదు (ఐచ్ఛికం)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "ఎంచుకున్న ట్యాబ్ అందుబాటులో లేదు - మరొకటి ఎంచుకోండి"
+  },
+  "popup_cycles_label": {
+    "message": "చక్రాలు: $FOCUS$ నిమి ఫోకస్, $SHORT_BREAK$ నిమి విరామం, ప్రతి $LONG_EVERY$వ చక్రానికి $LONG_BREAK$ నిమి దీర్ఘ విరామం",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "ఉద్దేశం"
+  },
+  "popup_intention_placeholder": {
+    "message": "మీరు దేనిపై పని చేస్తున్నారు?"
+  },
+  "popup_work_tab_named": {
+    "message": "పని ట్యాబ్: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "మార్చు"
+  },
+  "popup_session_settings_summary": {
+    "message": "సెషన్ సెట్టింగ్‌లు"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "ఒక పని ట్యాబ్‌ను ఎంచుకోండి"
+  },
+  "popup_work_tab_select_label": {
+    "message": "పని ట్యాబ్"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (ప్రస్తుతం)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "బ్లాకింగ్ మోడ్"
+  },
+  "popup_invalid_time_label": {
+    "message": "చెల్లని సమయం"
+  },
+  "popup_start_focus_label": {
+    "message": "$DURATION$ ఫోకస్‌ను ప్రారంభించు",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "docs.example.com వంటి చెల్లుబాటు అయ్యే డొమైన్‌ను నమోదు చేయండి."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "పని ట్యాబ్‌లను లోడ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించడానికి పాప్అప్‌ను తిరిగి తెరవండి."
+  },
+  "popup_use_this_tab": {
+    "message": "ఈ ట్యాబ్‌ను ఉపయోగించు"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "ఈ ట్యాబ్ పని కోసం అందుబాటులో లేదు. వేరే తెరిచిన ట్యాబ్‌ను ఎంచుకోండి."
+  },
+  "popup_checking_current_tab": {
+    "message": "ప్రస్తుత ట్యాబ్‌ను తనిఖీ చేస్తోంది..."
+  },
+  "popup_finding_current_tab": {
+    "message": "మీ ప్రస్తుత ట్యాబ్‌ను కనుగొంటోంది..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "మీ ప్రస్తుత ట్యాబ్‌ను లోడ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "మీ పని ట్యాబ్‌ను ఎంచుకోండి లేదా భర్తీ చేయండి."
+  },
+  "popup_saving_work_tab": {
+    "message": "పని ట్యాబ్‌ను సేవ్ చేస్తోంది..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "పని ట్యాబ్‌ను సేవ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "తెరిచిన ట్యాబ్‌ను ఎంచుకోండి"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "లేదా వేరే ట్యాబ్‌ను ఎంచుకోండి"
+  },
+  "popup_start_failed": {
+    "message": "సెషన్‌ను ప్రారంభించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  }
+}

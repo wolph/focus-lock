@@ -18,7 +18,13 @@ if (progress === null) {
 console.table(progress.rows);
 const percent = progress.total === 0 ? 0 : Math.round((progress.done / progress.total) * 100);
 console.log(`${locale}: ${progress.done}/${progress.total} translated (${percent}%)`);
-if (progress.done < progress.total) {
-  console.log(`${progress.total - progress.done} messages still carry the English text.`);
-  process.exit(1);
+const missing = progress.rows.reduce((total, row) => total + row.missing, 0);
+const same = progress.rows.reduce((total, row) => total + row.sameAsEnglish, 0);
+if (missing > 0) console.log(`${missing} messages are not written yet.`);
+if (same > 0) {
+  console.log(
+    `${same} messages read the same as the English. That is right for a word your language shares, ` +
+      'and wrong for one left untranslated.',
+  );
 }
+if (progress.done < progress.total) process.exit(1);

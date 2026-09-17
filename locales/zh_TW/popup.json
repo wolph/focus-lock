@@ -1,12 +1,348 @@
 {
+  "popup_next_schedule": {
+    "message": "下一个：$DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "設定"
+  },
+  "popup_open_settings_failed": {
+    "message": "无法打開設定。請重試。"
+  },
+  "popup_settings_load_failed": {
+    "message": "无法載入会话設定。重新載入弹出窗口以重試。顯示預設值。"
+  },
+  "popup_open_setup_failed": {
+    "message": "无法打開設定。請重試。"
+  },
+  "popup_setup_required_heading": {
+    "message": "完成 Focus Lock 設定"
+  },
+  "popup_setup_required_body": {
+    "message": "在啟動会话前選擇您的起始清單、網站存取和儲存模式。"
+  },
+  "popup_open_setup_button": {
+    "message": "打開設定"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "无法確認網站封鎖。請重試。"
+  },
+  "popup_blocking_enable_failed": {
+    "message": "无法啟用網站封鎖。請重試。"
+  },
+  "popup_blocking_off_heading": {
+    "message": "網站封鎖已關閉"
+  },
+  "popup_blocking_off_body": {
+    "message": "在 Chrome 授予網站存取權限并啟用封鎖之前，Focus Lock 无法啟動会话。"
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome 未授予網站存取權限。網站封鎖仍未啟用。"
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "已授予網站存取權限，但 Focus Lock 无法啟用封鎖。請重試設定或重新載入擴充功能。"
+  },
+  "popup_enable_blocking_button": {
+    "message": "啟用網站封鎖"
+  },
+  "popup_retry_button": {
+    "message": "重試"
+  },
+  "popup_notice_access_revoked": {
+    "message": "您的会话已結束，因为網站存取已被移除。"
+  },
+  "popup_notice_blocking_failed": {
+    "message": "您的会话已結束，因为 Focus Lock 无法啟用網站封鎖。"
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "无法關閉此通知。請重試。"
+  },
+  "popup_dismiss_notice_label": {
+    "message": "關閉網站存取通知"
+  },
+  "popup_dismiss_button": {
+    "message": "關閉"
+  },
+  "popup_restart_failed": {
+    "message": "无法重啟 Focus Lock。請重試。"
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock 无法啟動"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "无法讀取原因。"
+  },
+  "popup_reset_runtime_button": {
+    "message": "重置本地執欄時"
+  },
+  "popup_reset_runtime_note": {
+    "message": "保留您的設定、清單和統計。清除目前会话狀態。"
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "刪除所有内容并重新開始"
+  },
+  "popup_keep_data_button": {
+    "message": "保留我的資料"
+  },
+  "popup_delete_all_button": {
+    "message": "刪除所有 Focus Lock 資料"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "設定狀態不可用。重新載入 Focus Lock 以重試。"
+  },
+  "popup_snapshot_unavailable": {
+    "message": "专注狀態不可用"
+  },
+  "popup_action_in_progress": {
+    "message": "操作進欄中"
+  },
+  "popup_active_site_checking": {
+    "message": "正在檢查活跃網站"
+  },
+  "popup_active_site_unsupported": {
+    "message": "打開常规網站以解鎖"
+  },
+  "popup_active_site_unknown": {
+    "message": "无法识别活跃網站"
+  },
+  "popup_active_site_error": {
+    "message": "无法识别活跃網站。"
+  },
+  "popup_resume_now": {
+    "message": "立即恢复"
+  },
+  "popup_start_next_focus_early": {
+    "message": "提前開始下一个专注"
+  },
+  "popup_unlock_this_site": {
+    "message": "解鎖此網站"
+  },
+  "popup_unlock_all_sites": {
+    "message": "解鎖所有網站"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ 存取，$CREDIT$ 额度",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ 存取，$CREDIT$ 额度 - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "選擇工作頁籤"
+  },
+  "popup_change_work_tab_button": {
+    "message": "更改工作頁籤"
+  },
+  "popup_session_actions_summary": {
+    "message": "会话操作"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ 網站存取點數",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "添加允许的網域"
+  },
   "popup_allowed_domain_placeholder": {
     "message": "example.com"
   },
+  "popup_add_allowed_domain_button": {
+    "message": "添加允许的網域"
+  },
   "popup_add_button": {
-    "message": "Add"
+    "message": "添加"
+  },
+  "popup_draft_allowed_only": {
+    "message": "仅 $COUNT$ 个允许網站規則。其他網站已封鎖。",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ 个被封鎖的分類，$RULES$ 个额外規則。",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "強制鎖定。无法提前結束。"
+  },
+  "popup_draft_stop_flexible": {
+    "message": "随時結束。"
+  },
+  "popup_draft_stop_friction": {
+    "message": "在 $SECONDS$ 秒等待後結束。",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "在 $SECONDS$ 秒等待和確認短語後結束。",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "会话长度"
+  },
+  "popup_custom_minutes_label": {
+    "message": "自訂分鐘数"
   },
   "popup_custom_minutes_placeholder": {
-    "message": "min"
+    "message": "分鐘"
+  },
+  "popup_gate_force_end": {
+    "message": "忽略超時并无论如何結束"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "繼續专注"
+  },
+  "popup_gate_phrase_label": {
+    "message": "輸入："
+  },
+  "popup_gate_update_failed": {
+    "message": "无法更新门槛。請重試。"
+  },
+  "popup_gate_intention": {
+    "message": "您說：$INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "片刻以决定："
+  },
+  "popup_gate_wait_remaining": {
+    "message": "的 $TOTAL$ 秒",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "回到工作"
+  },
+  "popup_destination_unavailable": {
+    "message": "目标不可用"
+  },
+  "popup_back_to_work_name": {
+    "message": "回到工作：$DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "回到工作：$DESTINATION$（$HOSTNAME$）",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "在封鎖網站清單重新載入之前停用分類編輯。"
+  },
+  "popup_blocked_categories_heading": {
+    "message": "已封鎖的分類"
+  },
+  "popup_show_full_domain": {
+    "message": "顯示完整網域：$PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "顯示完整正则表达式：$PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "網域"
+  },
+  "popup_rule_kind_regex": {
+    "message": "正则表达式"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ 網站",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "popup_sites_one": {
     "message": "$COUNT$ 个網站",
@@ -41,6 +377,40 @@
       "COUNT": {
         "content": "$1",
         "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "允许的例外"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "额外封鎖規則"
+  },
+  "popup_no_extra_blocked": {
+    "message": "没有额外封鎖規則。"
+  },
+  "popup_allowed_heading": {
+    "message": "允许的網站和規則"
+  },
+  "popup_no_allowed_sites": {
+    "message": "尚无允许的網站。"
+  },
+  "popup_what_will_be_blocked": {
+    "message": "将被封鎖的内容"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "将被允许的内容"
+  },
+  "popup_categories_selected": {
+    "message": "选定 $SELECTED$ 个，共 $TOTAL$ 个分類",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
       }
     }
   },
@@ -79,5 +449,182 @@
         "example": "3"
       }
     }
+  },
+  "popup_scope_whitelist": {
+    "message": "这里的允许網站和規則更改仅适用于此会话。其他一切都被封鎖。"
+  },
+  "popup_scope_blacklist": {
+    "message": "这里的分類和規則更改仅适用于此会话。"
+  },
+  "popup_open_settings_defaults": {
+    "message": "打開設定以获得永久預設值"
+  },
+  "popup_rule_details_label": {
+    "message": "会话規則詳情"
+  },
+  "popup_session_type_legend": {
+    "message": "会话類型"
+  },
+  "popup_session_type_flexible": {
+    "message": "靈活"
+  },
+  "popup_session_type_friction": {
+    "message": "緩衝"
+  },
+  "popup_session_type_hard": {
+    "message": "強制鎖定"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "随時立即結束会话。"
+  },
+  "popup_session_type_friction_hint": {
+    "message": "提前結束需要 $WAIT$。不需要輸入。",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "提前結束需要 $WAIT$ 和輸入確認。",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "会话无法提前結束。網站存取點數仍然有效。"
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "选定的分類和额外規則被封鎖。其他網站保持可用。"
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "仅欄出的網站可用。所有其他網站被封鎖。"
+  },
+  "popup_invalid_duration_error": {
+    "message": "輸入大于零分鐘的会话长度。"
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "預設值已更改，但无法載入目前清單。重新載入弹出窗口。"
+  },
+  "popup_no_work_tab_option": {
+    "message": "无工作頁籤（可选）"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "选定的頁籤不可用 - 選擇另一个"
+  },
+  "popup_cycles_label": {
+    "message": "週期：$FOCUS$ 分鐘专注，$SHORT_BREAK$ 分鐘休息，每 $LONG_EVERY$ 个週期有 $LONG_BREAK$ 分鐘长休息",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "意圖"
+  },
+  "popup_intention_placeholder": {
+    "message": "您在做什么？"
+  },
+  "popup_work_tab_named": {
+    "message": "工作頁籤：$TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "更改"
+  },
+  "popup_session_settings_summary": {
+    "message": "会话設定"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "選擇工作頁籤"
+  },
+  "popup_work_tab_select_label": {
+    "message": "工作頁籤"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$（目前）",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "封鎖模式"
+  },
+  "popup_invalid_time_label": {
+    "message": "无效時間"
+  },
+  "popup_start_focus_label": {
+    "message": "啟動 $DURATION$ 专注",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "輸入有效的網域，例如 docs.example.com。"
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "无法載入工作頁籤。重新打開弹出窗口以重試。"
+  },
+  "popup_use_this_tab": {
+    "message": "使用此頁籤"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "此頁籤不可用于工作。選擇另一个打開的頁籤。"
+  },
+  "popup_checking_current_tab": {
+    "message": "正在檢查目前頁籤..."
+  },
+  "popup_finding_current_tab": {
+    "message": "正在查找您的目前頁籤..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "无法載入您的目前頁籤。請重試。"
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "選擇或更换您的工作頁籤。"
+  },
+  "popup_saving_work_tab": {
+    "message": "正在保存工作頁籤..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "无法保存工作頁籤。請重試。"
+  },
+  "popup_choose_open_tab_option": {
+    "message": "選擇打開的頁籤"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "或選擇另一个頁籤"
+  },
+  "popup_start_failed": {
+    "message": "无法啟動会话。請重試。"
   }
 }

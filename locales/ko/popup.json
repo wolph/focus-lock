@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "다음: $DAY$ $TIME$",
+    "message": "다음：$DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -16,70 +16,70 @@
     "message": "설정"
   },
   "popup_open_settings_failed": {
-    "message": "설정을 열 수 없습니다. 다시 시도하세요."
+    "message": "설정을 열 수 없습니다. 다시 시도하십시오."
   },
   "popup_settings_load_failed": {
-    "message": "세션 설정을 로드할 수 없습니다. 팝업을 다시 로드하고 다시 시도하세요. 기본값이 표시됩니다."
+    "message": "세션 설정을 로드할 수 없습니다. 팝업을 다시로드하고 다시 시도하십시오. 기본값이 표시됩니다."
   },
   "popup_open_setup_failed": {
-    "message": "설정을 열 수 없습니다. 다시 시도하세요."
+    "message": "설정을 열 수 없습니다. 다시 시도하십시오."
   },
   "popup_setup_required_heading": {
     "message": "Focus Lock 설정 완료"
   },
   "popup_setup_required_body": {
-    "message": "세션을 시작하기 전에 시작 목록, 웹사이트 접근 및 저장소 모드를 선택하세요."
+    "message": "세션을 시작하기 전에 시작 목록, 웹사이트 액세스 및 저장소 모드를 선택하십시오."
   },
   "popup_open_setup_button": {
     "message": "설정 열기"
   },
   "popup_blocking_confirm_failed": {
-    "message": "웹사이트 차단을 확인할 수 없습니다. 다시 시도하세요."
+    "message": "웹사이트 차단을 확인할 수 없습니다. 다시 시도하십시오."
   },
   "popup_blocking_enable_failed": {
-    "message": "웹사이트 차단을 활성화할 수 없습니다. 다시 시도하세요."
+    "message": "웹사이트 차단을 활성화할 수 없습니다. 다시 시도하십시오."
   },
   "popup_blocking_off_heading": {
-    "message": "웹사이트 차단이 꺼짐"
+    "message": "웹사이트 차단이 꺼져있습니다"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock은 Chrome이 웹사이트 접근을 허용하고 차단이 활성화될 때까지 세션을 시작할 수 없습니다."
+    "message": "Focus Lock은 Chrome이 웹사이트 액세스를 허가할 때까지 세션을 시작할 수 없습니다."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome이 웹사이트 접근을 허용하지 않았습니다. 웹사이트 차단이 여전히 꺼져있습니다."
+    "message": "Chrome이 웹사이트 액세스를 허가하지 않았습니다. 웹사이트 차단이 여전히 꺼져있습니다."
   },
   "popup_blocking_off_registration_error": {
-    "message": "웹사이트 접근은 부여되었지만 Focus Lock이 차단을 활성화할 수 없습니다. 설정을 다시 실행하거나 확장 프로그램을 다시 로드하세요."
+    "message": "웹사이트 액세스가 허가되었지만 Focus Lock이 차단을 활성화할 수 없습니다. 설정을 다시 시도하거나 확장 프로그램을 다시로드하십시오."
   },
   "popup_enable_blocking_button": {
     "message": "웹사이트 차단 활성화"
   },
   "popup_retry_button": {
-    "message": "재시도"
+    "message": "다시 시도"
   },
   "popup_notice_access_revoked": {
-    "message": "웹사이트 접근이 제거되어 세션이 종료되었습니다."
+    "message": "웹사이트 액세스가 제거되어 세션이 종료되었습니다."
   },
   "popup_notice_blocking_failed": {
-    "message": "Focus Lock이 웹사이트 차단을 활성화할 수 없어 세션이 종료되었습니다."
+    "message": "Focus Lock이 웹사이트 차단을 활성화할 수 없어서 세션이 종료되었습니다."
   },
   "popup_dismiss_notice_failed": {
-    "message": "이 알림을 무시할 수 없습니다. 다시 시도하세요."
+    "message": "이 알림을 닫을 수 없습니다. 다시 시도하십시오."
   },
   "popup_dismiss_notice_label": {
-    "message": "웹사이트 접근 알림 무시"
+    "message": "웹사이트 액세스 알림 닫기"
   },
   "popup_dismiss_button": {
-    "message": "무시"
+    "message": "닫기"
   },
   "popup_restart_failed": {
-    "message": "Focus Lock을 다시 시작할 수 없습니다. 다시 시도하세요."
+    "message": "Focus Lock을 다시 시작할 수 없습니다. 다시 시도하십시오."
   },
   "popup_boot_failed_heading": {
-    "message": "Focus Lock을 시작할 수 없습니다"
+    "message": "Focus Lock이 시작되지 않았습니다"
   },
   "popup_boot_reason_unavailable": {
-    "message": "이유를 로드할 수 없습니다."
+    "message": "이유를 읽을 수 없습니다."
   },
   "popup_reset_runtime_button": {
     "message": "로컬 런타임 재설정"
@@ -97,19 +97,19 @@
     "message": "모든 Focus Lock 데이터 삭제"
   },
   "popup_setup_status_unavailable": {
-    "message": "설정 상태를 사용할 수 없습니다. Focus Lock을 다시 로드하고 다시 시도하세요."
+    "message": "설정 상태를 사용할 수 없습니다. Focus Lock을 다시로드하고 다시 시도하십시오."
   },
   "popup_snapshot_unavailable": {
     "message": "포커스 상태를 사용할 수 없습니다"
   },
   "popup_action_in_progress": {
-    "message": "작업이 진행 중입니다"
+    "message": "작업 진행 중"
   },
   "popup_active_site_checking": {
     "message": "활성 사이트 확인 중"
   },
   "popup_active_site_unsupported": {
-    "message": "일반 웹사이트를 열어 잠금 해제"
+    "message": "일반 웹사이트를 열어서 잠금해제"
   },
   "popup_active_site_unknown": {
     "message": "활성 사이트를 식별할 수 없습니다"
@@ -121,16 +121,16 @@
     "message": "지금 재개"
   },
   "popup_start_next_focus_early": {
-    "message": "다음 포커스 일찍 시작"
+    "message": "다음 포커스 조기 시작"
   },
   "popup_unlock_this_site": {
-    "message": "이 사이트 잠금 해제"
+    "message": "이 사이트 잠금해제"
   },
   "popup_unlock_all_sites": {
-    "message": "모든 사이트 잠금 해제"
+    "message": "모든 사이트 잠금해제"
   },
   "popup_spend_cost": {
-    "message": "$ACCESS$ 접근, $CREDIT$ 크레딧",
+    "message": "$ACCESS$ 액세스, $CREDIT$ 크레딧",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -143,7 +143,7 @@
     }
   },
   "popup_spend_cost_host": {
-    "message": "$ACCESS$ 접근, $CREDIT$ 크레딧 - $HOST$",
+    "message": "$ACCESS$ 액세스, $CREDIT$ 크레딧 - $HOST$",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -180,6 +180,9 @@
   "popup_add_allowed_domain_label": {
     "message": "허용된 도메인 추가"
   },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
   "popup_add_allowed_domain_button": {
     "message": "허용된 도메인 추가"
   },
@@ -187,7 +190,7 @@
     "message": "추가"
   },
   "popup_draft_allowed_only": {
-    "message": "$COUNT$개의 허용된 사이트 규칙만 해당합니다. 다른 웹사이트는 차단됩니다.",
+    "message": "$COUNT$개의 허용된 사이트 규칙만 있습니다. 다른 웹사이트는 차단됩니다.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -196,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$개의 차단된 카테고리, $RULES$개의 추가 규칙.",
+    "message": "$CATEGORIES$개 차단 카테고리, $RULES$개 추가 규칙.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -209,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "하드 잠금. 조기 종료가 불가능합니다."
+    "message": "하드 잠금. 조기 종료 불가능."
   },
   "popup_draft_stop_flexible": {
     "message": "언제든지 종료할 수 있습니다."
   },
   "popup_draft_stop_friction": {
-    "message": "$SECONDS$초 대기 후 종료합니다.",
+    "message": "$SECONDS$초 대기 후 종료.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -224,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "$SECONDS$초 대기 및 확인 문구 후 종료합니다.",
+    "message": "$SECONDS$초 대기 및 확인 구 후 종료.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -236,25 +239,25 @@
     "message": "세션 길이"
   },
   "popup_custom_minutes_label": {
-    "message": "사용자 정의 분"
+    "message": "사용자 지정 분"
   },
   "popup_custom_minutes_placeholder": {
     "message": "분"
   },
   "popup_gate_force_end": {
-    "message": "시간 초과 무시하고 종료"
+    "message": "타임아웃 무시하고 어쨌든 종료"
   },
   "popup_gate_keep_focusing": {
-    "message": "포커스 계속"
+    "message": "포커싱 계속"
   },
   "popup_gate_phrase_label": {
-    "message": "입력:"
+    "message": "입력："
   },
   "popup_gate_update_failed": {
-    "message": "게이트를 업데이트할 수 없습니다. 다시 시도하세요."
+    "message": "게이트를 업데이트할 수 없습니다. 다시 시도하십시오."
   },
   "popup_gate_intention": {
-    "message": "당신이 말씀한 것: $INTENTION$",
+    "message": "당신이 말씀하신 것：$INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -263,10 +266,10 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "결정하는 순간:"
+    "message": "결정할 순간："
   },
   "popup_gate_wait_remaining": {
-    "message": "총 $TOTAL$초 중",
+    "message": "（총 $TOTAL$ 초 중）",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -275,13 +278,13 @@
     }
   },
   "popup_back_to_work": {
-    "message": "작업으로 돌아가기"
+    "message": "작업 돌아가기"
   },
   "popup_destination_unavailable": {
     "message": "목적지를 사용할 수 없습니다"
   },
   "popup_back_to_work_name": {
-    "message": "작업으로 돌아가기: $DESTINATION$",
+    "message": "작업 돌아가기：$DESTINATION$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -290,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "작업으로 돌아가기: $DESTINATION$ ($HOSTNAME$)",
+    "message": "작업 돌아가기：$DESTINATION$($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -303,13 +306,13 @@
     }
   },
   "popup_categories_locked": {
-    "message": "차단된 사이트 목록이 다시 로드될 때까지 카테고리 편집이 비활성화됩니다."
+    "message": "차단된 사이트 목록이 다시로드될 때까지 카테고리 편집이 비활성화됩니다."
   },
   "popup_blocked_categories_heading": {
     "message": "차단된 카테고리"
   },
   "popup_show_full_domain": {
-    "message": "전체 도메인 표시: $PATTERN$",
+    "message": "전체 도메인 표시：$PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -318,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "전체 정규 표현식 표시: $PATTERN$",
+    "message": "전체 정규식 표시：$PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -330,7 +333,7 @@
     "message": "도메인"
   },
   "popup_rule_kind_regex": {
-    "message": "정규 표현식"
+    "message": "정규식"
   },
   "popup_category_sites_label": {
     "message": "$CATEGORY$ 사이트",
@@ -360,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "그 외 $COUNT$개 사이트",
+    "message": "및 $COUNT$개 사이트 추가",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -369,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "그 외 $COUNT$개 사이트",
+    "message": "및 $COUNT$개 사이트 추가",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -381,10 +384,10 @@
     "message": "허용된 예외"
   },
   "popup_extra_blocked_heading": {
-    "message": "추가 차단 규칙"
+    "message": "차단된 추가 규칙"
   },
   "popup_no_extra_blocked": {
-    "message": "추가 차단 규칙이 없습니다."
+    "message": "차단된 추가 규칙이 없습니다."
   },
   "popup_allowed_heading": {
     "message": "허용된 사이트 및 규칙"
@@ -393,13 +396,13 @@
     "message": "아직 허용된 사이트가 없습니다."
   },
   "popup_what_will_be_blocked": {
-    "message": "차단될 것"
+    "message": "차단될 항목"
   },
   "popup_what_will_be_allowed": {
-    "message": "허용될 것"
+    "message": "허용될 항목"
   },
   "popup_categories_selected": {
-    "message": "$SELECTED$/$TOTAL$ 카테고리가 선택됨",
+    "message": "$SELECTED$ / $TOTAL$개 카테고리 선택",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -412,7 +415,7 @@
     }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$개 추가 차단 규칙",
+    "message": "$COUNT$개 추가 차단된 규칙",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -421,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$개 추가 차단 규칙",
+    "message": "$COUNT$개 추가 차단된 규칙",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -448,16 +451,16 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "허용된 사이트 및 규칙 변경은 이 세션에만 적용됩니다. 다른 모든 것은 차단됩니다."
+    "message": "여기서 허용된 사이트 및 규칙 변경은 이 세션에만 적용됩니다. 다른 모든 것은 차단됩니다."
   },
   "popup_scope_blacklist": {
-    "message": "카테고리 및 규칙 변경은 이 세션에만 적용됩니다."
+    "message": "여기서 카테고리 및 규칙 변경은 이 세션에만 적용됩니다."
   },
   "popup_open_settings_defaults": {
-    "message": "영구 기본값의 설정 열기"
+    "message": "영구적 기본값에 대한 설정 열기"
   },
   "popup_rule_details_label": {
-    "message": "세션 규칙 상세 정보"
+    "message": "세션 규칙 세부 정보"
   },
   "popup_session_type_legend": {
     "message": "세션 유형"
@@ -472,10 +475,10 @@
     "message": "하드 잠금"
   },
   "popup_session_type_flexible_hint": {
-    "message": "선택했을 때 세션을 즉시 종료합니다."
+    "message": "선택한 때 언제든지 세션을 종료할 수 있습니다."
   },
   "popup_session_type_friction_hint": {
-    "message": "조기 종료에는 $WAIT$가 필요합니다. 입력은 필요 없습니다.",
+    "message": "조기 종료는 $WAIT가 필요합니다. 타이핑이 필요하지 않습니다.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -484,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "조기 종료에는 $WAIT$ 및 입력된 확인이 필요합니다.",
+    "message": "조기 종료는 $WAIT과 입력된 확인이 필요합니다.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -493,28 +496,28 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "세션을 조기에 종료할 수 없습니다. 사이트 접근 크레딧은 계속 작동합니다."
+    "message": "세션은 조기에 종료될 수 없습니다. 사이트 접근 크레딧은 계속 작동합니다."
   },
   "popup_mode_blacklist_hint": {
-    "message": "선택한 카테고리 및 추가 규칙이 차단됩니다. 다른 사이트는 사용 가능한 상태로 유지됩니다."
+    "message": "선택한 카테고리 및 추가 규칙이 차단됩니다. 다른 사이트는 사용 가능하게 유지됩니다."
   },
   "popup_mode_whitelist_hint": {
     "message": "나열된 사이트만 사용 가능합니다. 다른 모든 웹사이트는 차단됩니다."
   },
   "popup_invalid_duration_error": {
-    "message": "0분보다 긴 세션 길이를 입력하세요."
+    "message": "0분보다 큰 세션 길이를 입력하십시오."
   },
   "popup_stale_lists_unavailable": {
-    "message": "기본값이 변경되었지만 현재 목록을 로드할 수 없습니다. 팝업을 다시 로드하세요."
+    "message": "기본값이 변경되었지만 현재 목록을 로드할 수 없습니다. 팝업을 다시로드하십시오."
   },
   "popup_no_work_tab_option": {
-    "message": "작업 탭 없음 (선택 사항)"
+    "message": "작업 탭 없음(선택 사항)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "선택된 탭을 사용할 수 없음 - 다른 탭을 선택하세요"
+    "message": "선택된 탭을 사용할 수 없음 - 다른 탭을 선택하십시오"
   },
   "popup_cycles_label": {
-    "message": "사이클: $FOCUS$분 포커스, $SHORT_BREAK$분 휴식, $LONG_EVERY$번째마다 $LONG_BREAK$분 긴 휴식",
+    "message": "사이클：$FOCUS$분 포커스, $SHORT_BREAK$분 휴식, $LONG_EVERY$번째마다 $LONG_BREAK$분 긴 휴식",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -538,10 +541,10 @@
     "message": "의도"
   },
   "popup_intention_placeholder": {
-    "message": "무엇을 작업 중인가요?"
+    "message": "무엇을 하고 있습니까？"
   },
   "popup_work_tab_named": {
-    "message": "작업 탭: $TITLE$",
+    "message": "작업 탭：$TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -562,7 +565,7 @@
     "message": "작업 탭"
   },
   "popup_work_tab_current_option": {
-    "message": "$TITLE$ (현재)",
+    "message": "$TITLE$(현재)",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -586,42 +589,42 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "docs.example.com과 같은 유효한 도메인을 입력하세요."
+    "message": "docs.example.com과 같은 유효한 도메인을 입력하십시오."
   },
   "popup_work_tabs_unavailable": {
-    "message": "작업 탭을 로드할 수 없습니다. 팝업을 다시 열고 다시 시도하세요."
+    "message": "작업 탭을 로드할 수 없습니다. 팝업을 다시 열고 다시 시도하십시오."
   },
   "popup_use_this_tab": {
     "message": "이 탭 사용"
   },
   "popup_current_tab_unavailable": {
-    "message": "이 탭은 작업에 사용할 수 없습니다. 다른 열린 탭을 선택하세요."
+    "message": "이 탭은 작업에 사용할 수 없습니다. 다른 열린 탭을 선택하십시오."
   },
   "popup_checking_current_tab": {
     "message": "현재 탭 확인 중..."
   },
   "popup_finding_current_tab": {
-    "message": "현재 탭 찾는 중..."
+    "message": "현재 탭을 찾는 중..."
   },
   "popup_current_tab_load_failed": {
-    "message": "현재 탭을 로드할 수 없습니다. 다시 시도하세요."
+    "message": "현재 탭을 로드할 수 없습니다. 다시 시도하십시오."
   },
   "popup_choose_work_tab_copy": {
-    "message": "작업 탭을 선택하거나 바꾸세요."
+    "message": "작업 탭을 선택하거나 변경합니다."
   },
   "popup_saving_work_tab": {
-    "message": "작업 탭 저장 중..."
+    "message": "작업 탭을 저장 중..."
   },
   "popup_save_work_tab_failed": {
-    "message": "작업 탭을 저장할 수 없습니다. 다시 시도하세요."
+    "message": "작업 탭을 저장할 수 없습니다. 다시 시도하십시오."
   },
   "popup_choose_open_tab_option": {
     "message": "열린 탭 선택"
   },
   "popup_or_choose_another_tab": {
-    "message": "또는 다른 탭 선택"
+    "message": "또는 다른 탭을 선택하십시오"
   },
   "popup_start_failed": {
-    "message": "세션을 시작할 수 없습니다. 다시 시도하세요."
+    "message": "세션을 시작할 수 없습니다. 다시 시도하십시오."
   }
 }

@@ -19,16 +19,16 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Hindi maipulihkan ang nakaimbak na pag-unlad ng setup. Nagsisimula muli kasama ang iyong mga kasalukuyang default."
+    "message": "Your saved setup progress could not be restored. Magsimulaing again with your current defaults."
   },
   "onboarding_complete_heading": {
-    "message": "Kumpleto ang setup"
+    "message": "I-set up complete"
   },
   "onboarding_complete_body": {
-    "message": "Nakaimbak ang iyong mga pagpipilian. Buksan ang Focus Lock mula sa Chrome toolbar upang magsimula ng sesyon."
+    "message": "Your choices are saved. Buksan Focus Lock from the Chrome toolbar to start a session."
   },
   "onboarding_error_heading": {
-    "message": "Ang setup ay hindi available"
+    "message": "I-set up unavailable"
   },
   "onboarding_error_body": {
     "message": "Hindi makapag-load ng setup. Subukan muli."
@@ -72,8 +72,26 @@
   "onboarding_lists_legend": {
     "message": "Mga inirerekomendang kategorya ng website"
   },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
   "onboarding_show_category_sites": {
-    "message": "Ipakita ang mga site ng $CATEGORY$",
+    "message": "Ipakita $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -82,7 +100,7 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "Itago ang mga site ng $CATEGORY$",
+    "message": "Itago $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -103,7 +121,7 @@
     "message": "Magpatuloy"
   },
   "onboarding_access_heading": {
-    "message": "Paganahin ang pagharang sa website"
+    "message": "Paganahin website blocking"
   },
   "onboarding_access_local_matching": {
     "message": "Sinisuri ng Focus Lock ang mga address ng pahina nang lokal upang makapag-tugma ng iyong mga piling kategorya at site. Gumagamit ito ng access sa website upang ipakita ang screen ng pagharang at ibalik ang mga apektadong pahina kapag nagtatapos ang iyong sesyon."
@@ -121,10 +139,10 @@
     "message": "Hindi nagbigay ng access sa website ang Chrome. Maaari kang magsubok muli."
   },
   "onboarding_access_registration_error": {
-    "message": "Binigyan ng access sa website, ngunit hindi makapagsimula ng pagharang ang Focus Lock. Subukan muli ang setup o i-reload ang extension."
+    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
   },
   "onboarding_access_enable_button": {
-    "message": "Paganahin ang pagharang sa website"
+    "message": "Paganahin website blocking"
   },
   "onboarding_access_defer_button": {
     "message": "Hindi ngayon"
@@ -155,23 +173,5 @@
   },
   "onboarding_sync_finish_disabled": {
     "message": "Tapusin ang setup nang walang sync"
-  },
-  "onboarding_site_count_one": {
-    "message": "$COUNT$ site",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "onboarding_site_count_other": {
-    "message": "$COUNT$ sites",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "52"
-      }
-    }
   }
 }

@@ -1,0 +1,317 @@
+{
+  "stats_document_title": {
+    "message": "Focus Lock புள்ளிவிவரங்கள்"
+  },
+  "stats_page_title": {
+    "message": "உங்கள் கவனப் பதிவு"
+  },
+  "stats_loading": {
+    "message": "உங்கள் புள்ளிவிவரங்கள் ஏற்றப்படுகின்றன."
+  },
+  "stats_load_error": {
+    "message": "புள்ளிவிவரங்களை ஏற்ற முடியவில்லை. மீண்டும் முயற்சிக்க மீண்டும் ஏற்றவும்."
+  },
+  "stats_partial_error_both": {
+    "message": "மணிநேர முயற்சிகளும் தள அணுகல் கடன் அமைப்புகளும் கிடைக்கவில்லை."
+  },
+  "stats_partial_error_attempts": {
+    "message": "மணிநேர முயற்சிகள் கிடைக்கவில்லை."
+  },
+  "stats_partial_error_economy": {
+    "message": "தள அணுகல் கடன் அமைப்புகள் கிடைக்கவில்லை."
+  },
+  "stats_scope_synced": {
+    "message": "இந்த Chrome கணக்கிலிருந்து ஒத்திசைக்கப்பட்ட மொத்தங்கள். உள்ளூர்-மட்டும் பலகங்கள் குறிக்கப்பட்டுள்ளன."
+  },
+  "stats_scope_local": {
+    "message": "இந்த கணினியிலிருந்து மொத்தங்கள். Focus Lock புள்ளிவிவரங்கள் ஒத்திசைக்கப்படவில்லை."
+  },
+  "stats_scope_checking": {
+    "message": "இந்த மொத்தங்கள் ஒத்திசைக்கப்பட்டதா என்று சரிபார்க்கிறது."
+  },
+  "stats_scope_unavailable": {
+    "message": "புள்ளிவிவர நோக்கம் கிடைக்கவில்லை. மொத்தங்களில் ஒத்திசைக்கப்பட்ட தரவு இருக்கலாம். மணிநேர முயற்சிகளும் சமீபத்திய அமர்வுகளும் இந்த கணினியிலிருந்து."
+  },
+  "stats_scope_retry": {
+    "message": "நோக்கச் சரிபார்ப்பை மீண்டும் முயற்சி"
+  },
+  "stats_empty": {
+    "message": "உங்கள் முதல் அமர்விற்குப் பிறகு புள்ளிவிவரங்கள் தோன்றும்."
+  },
+  "stats_tile_focus_today": {
+    "message": "இன்றைய கவனம்"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "கடந்த 7 நாட்களில் கவனம்"
+  },
+  "stats_tile_attempts_today": {
+    "message": "இன்று தடுக்கப்பட்ட முயற்சிகள்"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "இன்று நிராகரிக்கப்பட்ட நுழைவாயில் கோரிக்கைகள்"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "இன்று செலவழிக்கப்பட்ட தள அணுகல் கடன்"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "அனைத்துத் தளங்கள் $ALL_SITES$, ஒரு தளம் $ONE_SITE$, $EARNED$ ஈட்டப்பட்டது",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ ஈட்டப்பட்டது",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "தொடர்"
+  },
+  "stats_streak_empty": {
+    "message": "உங்கள் முதல் கவன நாளுடன் உங்கள் தொடர் தொடங்குகிறது."
+  },
+  "stats_streak_unit_one": {
+    "message": "நாள்"
+  },
+  "stats_streak_unit_other": {
+    "message": "நாட்கள்"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ உறைவு டோக்கன் சேமிப்பில்",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ உறைவு டோக்கன்கள் சேமிப்பில்",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "தொடர் உறைவு: ஒரு தவறவிட்ட நாள், ஈடுசெய்யப்பட்டது"
+  },
+  "stats_streak_active_days_one": {
+    "message": "இந்த மாதம் ($MONTH$) $COUNT$ செயலில் உள்ள நாள்",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "இந்த மாதம் ($MONTH$) $COUNT$ செயலில் உள்ள நாட்கள்",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "$MONTH$ இல் செயலில் உள்ள தேதிகள்: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "$MONTH$ இல் செயலில் உள்ள தேதிகள் இல்லை.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "கவனம், கடந்த 14 நாட்கள்"
+  },
+  "stats_chart_focus_empty": {
+    "message": "உங்கள் முதல் அமர்விற்குப் பிறகு கவன நிமிடங்கள் தோன்றும்."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "தடுக்கப்பட்ட முயற்சிகள், கடந்த 14 நாட்கள்"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "ஒரு அமர்வு ஒன்றைப் பிடித்தவுடன் தடுக்கப்பட்ட முயற்சிகள் இங்கே தோன்றும்."
+  },
+  "stats_chart_sites_heading": {
+    "message": "அதிகம் தடுக்கப்பட்ட தளங்கள், கடந்த 30 நாட்கள்"
+  },
+  "stats_chart_sites_empty": {
+    "message": "இதுவரை எதுவும் தடுக்கப்படவில்லை. அது ஒரு நல்ல தொடக்கம்."
+  },
+  "stats_chart_hours_heading": {
+    "message": "மணிநேரப்படி முயற்சிகள், இந்த கணினி மட்டும்"
+  },
+  "stats_chart_other_site": {
+    "message": "மற்றவை"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$நி",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ தடுக்கப்பட்டது",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ தடுக்கப்பட்டது",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "பட்டை விளக்கப்படம்"
+  },
+  "stats_chart_name_hbar": {
+    "message": "கிடைமட்ட பட்டை விளக்கப்படம்"
+  },
+  "stats_chart_description_bar": {
+    "message": "பட்டை விளக்கப்படம். தரவுப் புள்ளிகளுக்கு இடையே நகர விசைப்பலகையைப் பயன்படுத்தவும், அல்லது அதே மதிப்புகளுக்கு அட்டவணையாகக் காண்-ஐத் திறக்கவும்."
+  },
+  "stats_chart_description_hbar": {
+    "message": "கிடைமட்ட பட்டை விளக்கப்படம். தரவுப் புள்ளிகளுக்கு இடையே நகர விசைப்பலகையைப் பயன்படுத்தவும், அல்லது அதே மதிப்புகளுக்கு அட்டவணையாகக் காண்-ஐத் திறக்கவும்."
+  },
+  "stats_chart_empty_default": {
+    "message": "இதுவரை தரவு இல்லை."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "அட்டவணையாகக் காண்"
+  },
+  "stats_chart_table_category": {
+    "message": "வகை"
+  },
+  "stats_chart_table_value": {
+    "message": "மதிப்பு"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-மணிநேர தடுக்கப்பட்ட-முயற்சி வெப்பப் பட்டை"
+  },
+  "stats_sessions_heading": {
+    "message": "இந்த கணினியில் சமீபத்திய அமர்வுகள்"
+  },
+  "stats_sessions_empty": {
+    "message": "உங்கள் முதல் அமர்வு இங்கே தோன்றும்."
+  },
+  "stats_sessions_col_date": {
+    "message": "தேதி"
+  },
+  "stats_sessions_col_start": {
+    "message": "தொடக்கம்"
+  },
+  "stats_sessions_col_planned": {
+    "message": "திட்டமிடப்பட்டது"
+  },
+  "stats_sessions_col_focused": {
+    "message": "கவனம் செலுத்தியது"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "அனைத்துத் தளங்கள்"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "ஒரு தளம்"
+  },
+  "stats_sessions_col_intention": {
+    "message": "நோக்கம்"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "விளைவு"
+  },
+  "stats_sessions_col_source": {
+    "message": "மூலம்"
+  },
+  "stats_session_no_intention": {
+    "message": "நோக்கம் இல்லை"
+  },
+  "stats_session_article_label": {
+    "message": "அமர்வு: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "கைமுறை"
+  },
+  "stats_session_source_schedule": {
+    "message": "அட்டவணை"
+  },
+  "stats_session_source_scheduled": {
+    "message": "திட்டமிடப்பட்டது"
+  },
+  "stats_outcome_completed": {
+    "message": "முடிந்தது"
+  },
+  "stats_outcome_ended_early": {
+    "message": "முன்கூட்டியே முடிந்தது"
+  },
+  "stats_outcome_running": {
+    "message": "இயங்குகிறது"
+  }
+}

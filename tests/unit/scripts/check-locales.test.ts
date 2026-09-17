@@ -94,13 +94,22 @@ describe('checkTranslation', () => {
       ]),
     );
   });
-  it('warns on a narrow-surface message far longer than en', () => {
+  it('warns on a narrow-surface message that is both long and far longer than en', () => {
     const { warnings } = checkTranslation(
       'de',
       EN,
-      translated({ popup_start: { message: 'Sitzung jetzt starten' } }),
+      translated({ popup_start: { message: 'Fokussitzung jetzt sofort starten und sperren' } }),
     );
     expect(warnings).toEqual([expect.stringContaining('popup_start is')]);
+  });
+
+  it('stays quiet about a short label that simply has a longer word', () => {
+    const { warnings } = checkTranslation(
+      'ca',
+      EN,
+      translated({ popup_start: { message: 'Comencar' } }),
+    );
+    expect(warnings).toEqual([]);
   });
 });
 
@@ -189,14 +198,24 @@ describe('mergeTranslation', () => {
     });
   });
 
-  it('drops a message that is still the English text', () => {
+  it('stores a message that reads the same in both languages, and counts it', () => {
     const src: string = seeded();
-    const written: Catalogue = merge(src, 'nl', {
-      popup_start: 'Start',
-      shared_hint: '$MINUTES$ min totaal',
-    });
-    expect(written.popup_start).toBeUndefined();
+    const written: Catalogue = {};
+    const result = mergeTranslation(
+      src,
+      'nl',
+      { popup_start: 'Start', shared_hint: '$MINUTES$ min totaal' },
+      (surface: string, messages: Catalogue): void => {
+        mkdirSync(join(src, 'nl'), { recursive: true });
+        writeFileSync(join(src, 'nl', `${surface}.json`), JSON.stringify(messages));
+        Object.assign(written, messages);
+      },
+    );
+    // A word can be the same in both languages, and a key that is never stored can never be
+    // complete. Wholesale padding is caught by share in checkTranslation instead.
+    expect(written.popup_start?.message).toBe('Start');
     expect(written.shared_hint).toBeDefined();
+    expect(result.untranslated).toBe(1);
   });
 
   it('keeps British English identical to the source', () => {
@@ -239,7 +258,8 @@ describe('translationProgress', () => {
     expect(progress).not.toBeNull();
     expect(progress?.done).toBe(1);
     expect(progress?.total).toBe(2);
-    expect(progress?.rows[0]?.untranslated).toBe(1);
+    expect(progress?.rows[0]?.missing).toBe(1);
+    expect(progress?.rows[0]?.sameAsEnglish).toBe(0);
   });
 });
 

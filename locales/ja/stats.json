@@ -1,60 +1,60 @@
 {
   "stats_document_title": {
-    "message": "[JA: stats_document_title]"
+    "message": "Focus Lock統計"
   },
   "stats_page_title": {
-    "message": "[JA: stats_page_title]"
+    "message": "フォーカス記録"
   },
   "stats_loading": {
-    "message": "[JA: stats_loading]"
+    "message": "統計をロード中です。"
   },
   "stats_load_error": {
-    "message": "[JA: stats_load_error]"
+    "message": "統計をロードできませんでした。リロードしてもう一度試してください。"
   },
   "stats_partial_error_both": {
-    "message": "[JA: stats_partial_error_both]"
+    "message": "時間当たりの試行とサイトアクセスクレジット設定は利用できません。"
   },
   "stats_partial_error_attempts": {
-    "message": "[JA: stats_partial_error_attempts]"
+    "message": "時間当たりの試みは利用できません。"
   },
   "stats_partial_error_economy": {
-    "message": "[JA: stats_partial_error_economy]"
+    "message": "サイトアクセスクレジット設定は利用できません。"
   },
   "stats_scope_synced": {
-    "message": "[JA: stats_scope_synced]"
+    "message": "このChromeアカウントからの同期済みの合計。ローカルのみのパネルはラベル付けされています。"
   },
   "stats_scope_local": {
-    "message": "[JA: stats_scope_local]"
+    "message": "このマシンからの合計。Focus Lock統計は同期されていません。"
   },
   "stats_scope_checking": {
-    "message": "[JA: stats_scope_checking]"
+    "message": "これらの合計が同期されているかどうかをチェック中。"
   },
   "stats_scope_unavailable": {
-    "message": "[JA: stats_scope_unavailable]"
+    "message": "統計範囲は利用できません。合計には同期されたデータが含まれる場合があります。時間当たりの試行と最近のセッションはこのマシンからのものです。"
   },
   "stats_scope_retry": {
-    "message": "[JA: stats_scope_retry]"
+    "message": "スコープチェックを再試行"
   },
   "stats_empty": {
-    "message": "[JA: stats_empty]"
+    "message": "統計は最初のセッションの後に表示されます。"
   },
   "stats_tile_focus_today": {
-    "message": "[JA: stats_tile_focus_today]"
+    "message": "今日のフォーカス"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "[JA: stats_tile_focus_last_7_days]"
+    "message": "過去7日間のフォーカス"
   },
   "stats_tile_attempts_today": {
-    "message": "[JA: stats_tile_attempts_today]"
+    "message": "今日ブロックされた試み"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "[JA: stats_tile_gate_dismissed_today]"
+    "message": "今日却下されたゲートリクエスト"
   },
   "stats_tile_credit_spent_today": {
-    "message": "[JA: stats_tile_credit_spent_today]"
+    "message": "今日費やされたサイトアクセスクレジット"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "[JA: stats_tile_credit_subline_spent] $ALL_SITES$ $ONE_SITE$ $EARNED$",
+    "message": "すべてのサイト$ALL_SITES$、1つのサイト$ONE_SITE$、$EARNED$獲得",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -71,7 +71,7 @@
     }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "[JA: stats_tile_credit_subline_earned] $EARNED$",
+    "message": "$EARNED$獲得",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -80,19 +80,19 @@
     }
   },
   "stats_streak_heading": {
-    "message": "[JA: stats_streak_heading]"
+    "message": "ストリーク"
   },
   "stats_streak_empty": {
-    "message": "[JA: stats_streak_empty]"
+    "message": "ストリークは最初のフォーカス日で開始されます。"
   },
   "stats_streak_unit_one": {
-    "message": "[JA: stats_streak_unit_one]"
+    "message": "日"
   },
   "stats_streak_unit_other": {
-    "message": "[JA: stats_streak_unit_other]"
+    "message": "日"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "[JA: stats_streak_freeze_tokens_one] $COUNT$",
+    "message": "$COUNT$フリーズトークンが銀行に保管されている",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "[JA: stats_streak_freeze_tokens_other] $COUNT$",
+    "message": "$COUNT$フリーズトークンが銀行に保管されている",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -110,10 +110,10 @@
     }
   },
   "stats_streak_freeze_chip_title": {
-    "message": "[JA: stats_streak_freeze_chip_title]"
+    "message": "ストリークフリーズ：1日の欠落、カバー"
   },
   "stats_streak_active_days_one": {
-    "message": "[JA: stats_streak_active_days_one] $COUNT$ $MONTH$",
+    "message": "今月$COUNT$アクティブな日（$MONTH$）",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "[JA: stats_streak_active_days_other] $COUNT$ $MONTH$",
+    "message": "今月$COUNT$アクティブな日（$MONTH$）",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -139,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "[JA: stats_streak_active_dates] $MONTH$ $DAYS$",
+    "message": "$MONTH$のアクティブ日付：$DAYS$。",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -152,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "[JA: stats_streak_no_active_dates] $MONTH$",
+    "message": "$MONTH$のアクティブな日付がありません。",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -161,28 +161,28 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "[JA: stats_chart_focus_heading]"
+    "message": "フォーカス、過去14日間"
   },
   "stats_chart_focus_empty": {
-    "message": "[JA: stats_chart_focus_empty]"
+    "message": "フォーカス分は最初のセッション後に表示されます。"
   },
   "stats_chart_attempts_heading": {
-    "message": "[JA: stats_chart_attempts_heading]"
+    "message": "ブロックされた試み、過去14日間"
   },
   "stats_chart_attempts_empty": {
-    "message": "[JA: stats_chart_attempts_empty]"
+    "message": "ブロックされた試みはセッションがキャッチしたら表示されます。"
   },
   "stats_chart_sites_heading": {
-    "message": "[JA: stats_chart_sites_heading]"
+    "message": "トップブロックサイト、過去30日間"
   },
   "stats_chart_sites_empty": {
-    "message": "[JA: stats_chart_sites_empty]"
+    "message": "まだ何もブロックされていません。これは良いスタートです。"
   },
   "stats_chart_hours_heading": {
-    "message": "[JA: stats_chart_hours_heading]"
+    "message": "時間ごとの試み、このマシンのみ"
   },
   "stats_chart_other_site": {
-    "message": "[JA: stats_chart_other_site]"
+    "message": "その他"
   },
   "stats_chart_minutes_tick": {
     "message": "[JA: stats_chart_minutes_tick] $MINUTES$",
@@ -194,7 +194,7 @@
     }
   },
   "stats_blocked_count_one": {
-    "message": "[JA: stats_blocked_count_one] $COUNT$",
+    "message": "$COUNT$ブロック",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -203,7 +203,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "[JA: stats_blocked_count_other] $COUNT$",
+    "message": "$COUNT$ブロック",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -212,22 +212,22 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "[JA: stats_chart_name_bar]"
+    "message": "棒グラフ"
   },
   "stats_chart_name_hbar": {
-    "message": "[JA: stats_chart_name_hbar]"
+    "message": "横棒グラフ"
   },
   "stats_chart_description_bar": {
-    "message": "[JA: stats_chart_description_bar]"
+    "message": "棒グラフ。キーボードを使用してデータポイントを移動するか、テーブルとして表示を開いて同じ値を取得します。"
   },
   "stats_chart_description_hbar": {
-    "message": "[JA: stats_chart_description_hbar]"
+    "message": "横棒グラフ。キーボードを使用してデータポイントを移動するか、テーブルとして表示を開いて同じ値を取得します。"
   },
   "stats_chart_empty_default": {
-    "message": "[JA: stats_chart_empty_default]"
+    "message": "まだデータがありません。"
   },
   "stats_chart_point": {
-    "message": "[JA: stats_chart_point] $LABEL$ $VALUE$",
+    "message": "$LABEL$：$VALUE$",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -240,55 +240,55 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "[JA: stats_chart_table_summary]"
+    "message": "テーブルとして表示"
   },
   "stats_chart_table_category": {
-    "message": "[JA: stats_chart_table_category]"
+    "message": "カテゴリー"
   },
   "stats_chart_table_value": {
-    "message": "[JA: stats_chart_table_value]"
+    "message": "値"
   },
   "stats_heat_strip_label": {
-    "message": "[JA: stats_heat_strip_label]"
+    "message": "24時間ブロック試行ヒートストリップ"
   },
   "stats_sessions_heading": {
-    "message": "[JA: stats_sessions_heading]"
+    "message": "このマシンの最近のセッション"
   },
   "stats_sessions_empty": {
-    "message": "[JA: stats_sessions_empty]"
+    "message": "最初のセッションはここに表示されます。"
   },
   "stats_sessions_col_date": {
-    "message": "[JA: stats_sessions_col_date]"
+    "message": "日付"
   },
   "stats_sessions_col_start": {
-    "message": "[JA: stats_sessions_col_start]"
+    "message": "開始"
   },
   "stats_sessions_col_planned": {
-    "message": "[JA: stats_sessions_col_planned]"
+    "message": "計画済み"
   },
   "stats_sessions_col_focused": {
-    "message": "[JA: stats_sessions_col_focused]"
+    "message": "焦点が合った"
   },
   "stats_sessions_col_all_sites": {
-    "message": "[JA: stats_sessions_col_all_sites]"
+    "message": "すべてのサイト"
   },
   "stats_sessions_col_one_site": {
-    "message": "[JA: stats_sessions_col_one_site]"
+    "message": "1つのサイト"
   },
   "stats_sessions_col_intention": {
-    "message": "[JA: stats_sessions_col_intention]"
+    "message": "意図"
   },
   "stats_sessions_col_outcome": {
-    "message": "[JA: stats_sessions_col_outcome]"
+    "message": "結果"
   },
   "stats_sessions_col_source": {
-    "message": "[JA: stats_sessions_col_source]"
+    "message": "ソース"
   },
   "stats_session_no_intention": {
-    "message": "[JA: stats_session_no_intention]"
+    "message": "意図なし"
   },
   "stats_session_article_label": {
-    "message": "[JA: stats_session_article_label] $INTENTION$",
+    "message": "セッション：$INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -297,21 +297,21 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "[JA: stats_session_source_manual]"
+    "message": "マニュアル"
   },
   "stats_session_source_schedule": {
-    "message": "[JA: stats_session_source_schedule]"
+    "message": "スケジュール"
   },
   "stats_session_source_scheduled": {
-    "message": "[JA: stats_session_source_scheduled]"
+    "message": "予定済み"
   },
   "stats_outcome_completed": {
-    "message": "[JA: stats_outcome_completed]"
+    "message": "完了"
   },
   "stats_outcome_ended_early": {
-    "message": "[JA: stats_outcome_ended_early]"
+    "message": "早期に終了"
   },
   "stats_outcome_running": {
-    "message": "[JA: stats_outcome_running]"
+    "message": "実行中"
   }
 }

@@ -83,6 +83,9 @@
   "options_rule_kind_host_badge": {
     "message": "tên miền"
   },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
   "options_rule_remove": {
     "message": "Xóa"
   },
@@ -109,6 +112,12 @@
   },
   "options_rule_pattern_aria": {
     "message": "Mẫu"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
     "message": "Thêm quy tắc"

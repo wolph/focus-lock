@@ -1,15 +1,43 @@
 {
+  "popup_next_schedule": {
+    "message": "next: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
   "popup_settings_button_label": {
     "message": "Mipango"
   },
   "popup_open_settings_failed": {
     "message": "Could not open Mipango. Try again."
   },
+  "popup_settings_load_failed": {
+    "message": "Could not load session settings. Reload the popup to try again. Defaults are shown."
+  },
+  "popup_open_setup_failed": {
+    "message": "Could not open setup. Try again."
+  },
   "popup_setup_required_heading": {
     "message": "Finish setting up Fokasi Lock"
   },
+  "popup_setup_required_body": {
+    "message": "Choose your starting lists, website access, and storage mode before starting a session."
+  },
   "popup_open_setup_button": {
     "message": "Fungua setup"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Could not confirm website blocking. Try again."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Could not enable website blocking. Try again."
   },
   "popup_blocking_off_heading": {
     "message": "Tovuti blocking is off"
@@ -29,8 +57,20 @@
   "popup_retry_button": {
     "message": "Jaribu Tena"
   },
+  "popup_notice_access_revoked": {
+    "message": "Your session ended because website access was removed."
+  },
   "popup_notice_blocking_failed": {
     "message": "Your session ended because Fokasi Lock could not enable website blocking."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Could not dismiss this notice. Try again."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Dismiss website access notice"
+  },
+  "popup_dismiss_button": {
+    "message": "Dismiss"
   },
   "popup_restart_failed": {
     "message": "Could not restart Fokasi Lock. Try again."
@@ -38,8 +78,20 @@
   "popup_boot_failed_heading": {
     "message": "Fokasi Lock could not start"
   },
+  "popup_boot_reason_unavailable": {
+    "message": "The reason could not be read."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Reset local runtime"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Keeps your settings, lists, and statistics. Clears the current session state."
+  },
   "popup_delete_all_confirm_button": {
     "message": "Futa everything and start over"
+  },
+  "popup_keep_data_button": {
+    "message": "Keep my data"
   },
   "popup_delete_all_button": {
     "message": "Futa all Fokasi Lock data"
@@ -50,23 +102,120 @@
   "popup_snapshot_unavailable": {
     "message": "Fokasi status unavailable"
   },
+  "popup_action_in_progress": {
+    "message": "Action in progress"
+  },
+  "popup_active_site_checking": {
+    "message": "Checking the active site"
+  },
   "popup_active_site_unsupported": {
     "message": "Fungua a regular website to unlock it"
+  },
+  "popup_active_site_unknown": {
+    "message": "Could not identify the active site"
+  },
+  "popup_active_site_error": {
+    "message": "Could not identify the active site."
+  },
+  "popup_resume_now": {
+    "message": "Resume now"
   },
   "popup_start_next_focus_early": {
     "message": "Anza next focus early"
   },
+  "popup_unlock_this_site": {
+    "message": "Unlock this site"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Unlock all sites"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ access, $CREDIT$ credit",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ access, $CREDIT$ credit - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Choose work tab"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Change work tab"
+  },
   "popup_session_actions_summary": {
     "message": "Kikao actions"
   },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ site access credit",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
   "popup_add_allowed_domain_label": {
     "message": "Ongeza an allowed domain"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
     "message": "Ongeza allowed domain"
   },
   "popup_add_button": {
     "message": "Ongeza"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Only $COUNT$ allowed site rules. Other websites blocked.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ blocked categories, $RULES$ extra rules.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Hard lock. Cannot end early."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Can end at any time."
   },
   "popup_draft_stop_friction": {
     "message": "Malizia after a $SECONDS$s wait.",
@@ -95,8 +244,44 @@
   "popup_custom_minutes_placeholder": {
     "message": "min"
   },
+  "popup_gate_force_end": {
+    "message": "Ignore timeout and end anyway"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Keep focusing"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Type:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Could not update the gate. Try again."
+  },
+  "popup_gate_intention": {
+    "message": "You said: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "A moment to decide:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "of $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
   "popup_back_to_work": {
     "message": "Nyuma to work"
+  },
+  "popup_destination_unavailable": {
+    "message": "Destination unavailable"
   },
   "popup_back_to_work_name": {
     "message": "Nyuma to work: $DESTINATION$",
@@ -144,6 +329,21 @@
       }
     }
   },
+  "popup_rule_kind_domain": {
+    "message": "Domain"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regular expression"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
   "popup_sites_one": {
     "message": "$COUNT$ tovuti",
     "placeholders": {
@@ -183,8 +383,36 @@
   "popup_allowed_exceptions_heading": {
     "message": "Ruhusued exceptions"
   },
+  "popup_extra_blocked_heading": {
+    "message": "Extra blocked rules"
+  },
+  "popup_no_extra_blocked": {
+    "message": "No extra blocked rules."
+  },
   "popup_allowed_heading": {
     "message": "Ruhusued sites and rules"
+  },
+  "popup_no_allowed_sites": {
+    "message": "No sites are allowed yet."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "What will be blocked"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "What will be allowed"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ of $TOTAL$ categories selected",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
   },
   "popup_extra_blocked_rules_one": {
     "message": "$COUNT$ extra blocked kanuni",
@@ -237,6 +465,15 @@
   "popup_session_type_legend": {
     "message": "Kikao type"
   },
+  "popup_session_type_flexible": {
+    "message": "Flexible"
+  },
+  "popup_session_type_friction": {
+    "message": "Friction"
+  },
+  "popup_session_type_hard": {
+    "message": "Hard lock"
+  },
   "popup_session_type_flexible_hint": {
     "message": "Malizia the session immediately whenever you choose."
   },
@@ -258,14 +495,89 @@
       }
     }
   },
+  "popup_session_type_hard_hint": {
+    "message": "The session cannot end early. Site access credit still works."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "The selected categories and extra rules are blocked. Other sites remain available."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Only the listed sites are available. Every other website is blocked."
+  },
   "popup_invalid_duration_error": {
     "message": "Enter a session length greater than zero dakikas."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Defaults changed, but current lists could not be loaded. Reload the popup."
+  },
+  "popup_no_work_tab_option": {
+    "message": "No work tab (optional)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Selected tab unavailable - choose another"
+  },
+  "popup_cycles_label": {
+    "message": "Cycles: $FOCUS$ min focus, $SHORT_BREAK$ min break, $LONG_BREAK$ min long break every $LONG_EVERY$th",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Intention"
+  },
+  "popup_intention_placeholder": {
+    "message": "What are you working on?"
+  },
+  "popup_work_tab_named": {
+    "message": "Work tab: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Change"
   },
   "popup_session_settings_summary": {
     "message": "Kikao settings"
   },
+  "popup_choose_work_tab_label": {
+    "message": "Choose a work tab"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Work tab"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (Current)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
   "popup_blocking_mode_legend": {
     "message": "Zuiaing mode"
+  },
+  "popup_invalid_time_label": {
+    "message": "invalid time"
   },
   "popup_start_focus_label": {
     "message": "Anza $DURATION$ focus",
@@ -275,5 +587,44 @@
         "example": "50 min"
       }
     }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Enter a valid domain such as docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Could not load work tabs. Reopen the popup to try again."
+  },
+  "popup_use_this_tab": {
+    "message": "Use this tab"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "This tab is not available for work. Choose another open tab."
+  },
+  "popup_checking_current_tab": {
+    "message": "Checking current tab..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Finding your current tab..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Could not load your current tab. Try again."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Choose or replace your work tab."
+  },
+  "popup_saving_work_tab": {
+    "message": "Saving work tab..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Could not save the work tab. Try again."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Choose an open tab"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Or choose another tab"
+  },
+  "popup_start_failed": {
+    "message": "Could not start session. Try again."
   }
 }

@@ -1,12 +1,12 @@
 {
   "notify_session_complete_title": {
-    "message": "フォーカスセッション完了"
+    "message": "フォーカスセッションが完了しました"
   },
   "notify_session_complete_body": {
-    "message": "フォーカスセッションが終わりました。"
+    "message": "フォーカスセッションが終了しました。"
   },
   "notify_schedule_window_body": {
-    "message": "$END$ までロック中。",
+    "message": "$END$までロックされています。",
     "placeholders": {
       "END": {
         "content": "$1",
@@ -15,19 +15,19 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "フォーカススケジュールを開始できません"
+    "message": "フォーカススケジュール開始不可"
   },
   "notify_schedule_unavailable_body": {
-    "message": "Webサイトのブロックが有効になっていません。セットアップを完了するか、Webサイトへのアクセス権を付与してから、もう一度お試しください。"
+    "message": "ウェブサイトブロッキングが有効になっていません。セットアップを完了するか、ウェブサイトアクセスを許可してからもう一度試してください。"
   },
   "notify_setup_completed_elsewhere": {
-    "message": "セットアップが別のタブで完了しました。"
+    "message": "別のタブでセットアップが完了しました。"
   },
   "notify_setup_changed_reloaded": {
-    "message": "セットアップが別のタブで変更されました。最新の選択が再度読み込まれました。"
+    "message": "別のタブでセットアップが変更されました。最新の選択がリロードされました。"
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "セットアップが別のタブで変更されました。完了する前にセットアップを再度読み込んでください。"
+    "message": "別のタブでセットアップが変更されました。完了する前にセットアップをリロードしてください。"
   },
   "notify_setup_not_complete": {
     "message": "セットアップが完了していません。"
@@ -36,28 +36,28 @@
     "message": "セットアップは完了する準備ができていません。"
   },
   "notify_setup_storage_choice_changed": {
-    "message": "セットアップのストレージの選択が変更されました。完了する前にセットアップを再度読み込んでください。"
+    "message": "セットアップ保存先の選択が変更されました。完了する前にセットアップをリロードしてください。"
   },
   "notify_onboarding_storage_failed": {
-    "message": "オンボーディングストレージ操作が失敗しました。"
+    "message": "オンボーディング保存操作が失敗しました。"
   },
   "notify_onboarding_operation_failed": {
     "message": "オンボーディング操作が失敗しました。"
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lockはサイトアクセスを確認できません。セットアップを再度実行するか、拡張機能を再度読み込んでください。"
+    "message": "Focus Lockはウェブサイトアクセスを確認できませんでした。セットアップを再試行するか、拡張機能をリロードしてください。"
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Webサイトへのアクセスは許可されていますが、Focus Lockはブロッキングを有効にできません。セットアップを再度実行するか、拡張機能を再度読み込んでください。"
+    "message": "ウェブサイトアクセスは許可されていますが、Focus Lockはブロッキングを有効にできませんでした。セットアップを再試行するか、拡張機能をリロードしてください。"
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Webサイトへのアクセスが利用できず、Focus Lockはブロッキング クリーンアップを完了できません。セットアップを再度実行するか、拡張機能を再度読み込んでください。"
+    "message": "ウェブサイトアクセスが利用できず、Focus Lockはブロッキングクリーンアップを完了できませんでした。セットアップを再試行するか、拡張機能をリロードしてください。"
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lockが一貫性のないサイトアクセス状態を受け取りました。セットアップを再度実行するか、拡張機能を再度読み込んでください。"
+    "message": "Focus Lockは矛盾したウェブサイトアクセス状態を受け取りました。セットアップを再試行するか、拡張機能をリロードしてください。"
   },
   "notify_boot_not_finished": {
-    "message": "Focus Lockが起動を完了しませんでした: $REASON$",
+    "message": "Focus Lockが起動を完了しませんでした：$REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -69,66 +69,66 @@
     "message": "不明なエラー"
   },
   "notify_nothing_to_reset": {
-    "message": "Focus Lockが実行中です。リセットするものはありません"
+    "message": "Focus Lockが実行中であり、リセットするものはありません"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Focus Lockはポリシー生成中にコミットされたランタイムをリセットできません"
+    "message": "Focus Lockはポリシー生成内に専念されたランタイムをリセットできません"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "データ クリア再試行は利用できません。"
+    "message": "データクリア再試行は利用できません。"
   },
   "notify_disable_sync_before_delete": {
-    "message": "同期されたデータを削除する前に同期を無効にしてください"
+    "message": "同期データを削除する前にSyncを無効にしてください"
   },
   "notify_work_gate_busy": {
-    "message": "Focus Lockはまだ以前の変更を完了しています。少し待ってからもう一度お試しください。"
+    "message": "Focus Lockは以前の変更をまだ完了しています。しばらくしてからもう一度試してください。"
   },
   "notify_work_gate_stuck": {
-    "message": "開いているゲートを閉じることができません。もう一度お試しください。"
+    "message": "開いているゲートを閉じることができませんでした。もう一度試してください。"
   },
   "notify_work_tab_unavailable": {
-    "message": "ワークタブが利用できません。"
+    "message": "ワークタブは利用できません。"
   },
   "notify_settings_sync_limit": {
-    "message": "設定が8 KB Chrome同期制限を超えています。スケジュール エントリを削除するか、意図を短縮してから、もう一度お試しください。"
+    "message": "設定が8KB Chrome Sync制限を超えています。スケジュールエントリを削除するか、意図を短くしてからもう一度試してください。"
   },
   "notify_lists_sync_limit": {
-    "message": "リストが8 KB Chrome同期制限を超えています。カスタムまたはホワイトリスト ルールを削除してから、もう一度お試しください。"
+    "message": "リストが8KB Chrome Sync制限を超えています。カスタムルールまたはホワイトリストルールを削除してからもう一度試してください。"
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "ハード セッションが実行中です。ブロック済みサイトを削除するとロック解除されます (セッション終了時)"
+    "message": "ハードセッションが実行中です：ブロックされたサイトを削除するとセッション終了時にロック解除されます"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "ハード セッションが実行中です。新しいホワイトリスト エントリはロック解除されます (セッション終了時)"
+    "message": "ハードセッションが実行中です：新しいホワイトリストエントリはセッション終了時にロック解除されます"
   },
   "notify_guard_lists_disable_category": {
-    "message": "ハード セッションが実行中です。カテゴリを無効にするとロック解除されます (セッション終了時)"
+    "message": "ハードセッションが実行中です：カテゴリを無効にするとセッション終了時にロック解除されます"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "ハード セッションが実行中です。新しい除外はロック解除されます (セッション終了時)"
+    "message": "ハードセッションが実行中です：新しい除外はセッション終了時にロック解除されます"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "ハード セッションが実行中です。デフォルトの厳密性を低下させるとセッション終了まで待機します"
+    "message": "ハードセッションが実行中です：デフォルトの厳密性を低下させるとセッション終了時になります"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "ハード セッションが実行中です。熟慮遅延を短縮するとゲートが弱まります"
+    "message": "ハードセッションが実行中です：検討遅延を短縮するとゲートが弱まります"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "ハード セッションが実行中です。入力された句を削除するとゲートが弱まります"
+    "message": "ハードセッションが実行中です：入力フレーズを削除するとゲートが弱まります"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "ハード セッションが実行中です。一時停止の獲得率を上げるとより多くのエスケープに資金が流れます"
+    "message": "ハードセッションが実行中です：一時停止獲得率を上げるとより多くの脱出資金が得られます"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "ハード セッションが実行中です。一時停止の上限を上げるとより多くのエスケープに資金が流れます"
+    "message": "ハードセッションが実行中です：一時停止キャップを上げるとより多くの脱出資金が得られます"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "ハード セッションが実行中です。一時停止を短縮するとコストが低下します"
+    "message": "ハードセッションが実行中です：一時停止を短くするとコストが低くなります"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "ハード セッションが実行中です。ロック解除を短縮するとコストが低下します"
+    "message": "ハードセッションが実行中です：ロック解除を短くするとコストが低くなります"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "ハード セッションが実行中です。そのスケジュール エントリはセッション終了まで弱体化できません"
+    "message": "ハードセッションが実行中です：そのスケジュールエントリはセッション終了時まで弱化できません"
   }
 }

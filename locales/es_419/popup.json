@@ -362,15 +362,6 @@
       }
     }
   },
-  "popup_sites_many": {
-    "message": "$COUNT$ sitios",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "42"
-      }
-    }
-  },
   "popup_more_sites_one": {
     "message": "y $COUNT$ sitio más",
     "placeholders": {
@@ -381,15 +372,6 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "y $COUNT$ sitios más",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "34"
-      }
-    }
-  },
-  "popup_more_sites_many": {
     "message": "y $COUNT$ sitios más",
     "placeholders": {
       "COUNT": {
@@ -450,15 +432,6 @@
       }
     }
   },
-  "popup_extra_blocked_rules_many": {
-    "message": "$COUNT$ reglas bloqueadas extra",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "2"
-      }
-    }
-  },
   "popup_allowed_rules_one": {
     "message": "$COUNT$ regla permitida",
     "placeholders": {
@@ -469,15 +442,6 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ reglas permitidas",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
-  },
-  "popup_allowed_rules_many": {
     "message": "$COUNT$ reglas permitidas",
     "placeholders": {
       "COUNT": {
@@ -662,5 +626,41 @@
   },
   "popup_start_failed": {
     "message": "No se pudo iniciar la sesión. Intenta de nuevo."
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ sitios",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_many": {
+    "message": "y $COUNT$ sitios más",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ reglas bloqueadas extra",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
+    "message": "$COUNT$ reglas permitidas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
   }
 }

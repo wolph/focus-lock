@@ -12,9 +12,11 @@ import {
 afterEach((): void => cleanup());
 
 describe('settings navigation', (): void => {
-  it('bounds and right-aligns theme errors inside the responsive navigation', (): void => {
+  it('bounds and end-aligns theme errors inside the responsive navigation', (): void => {
     const css: string = readFileSync(resolve('src/shared/settings-nav.css'), 'utf8');
-    expect(css).toMatch(/\.settings-nav \.theme-error\s*\{[^}]*right:\s*0/s);
+    // The offset is logical rather than physical, so the error sits at the end of the line in a
+    // right-to-left language as well.
+    expect(css).toMatch(/\.settings-nav \.theme-error\s*\{[^}]*inset-inline-end:\s*0/s);
     expect(css).toMatch(/\.settings-nav \.theme-error\s*\{[^}]*max-width:/s);
     expect(css).toMatch(/\.settings-nav \.theme-error\s*\{[^}]*white-space:\s*normal/s);
   });

@@ -26,7 +26,8 @@ const result = mergeTranslation('locales', locale, flat, (surface, messages) => 
 });
 
 console.log(
-  `${locale}: ${result.fresh} new, ${result.carried} kept, ${result.untranslated} still untranslated`,
+  `${locale}: ${result.fresh} new, ${result.carried} kept, ${result.missing} not yet written, ` +
+    `${result.untranslated} still reading as English`,
 );
 if (result.unknown.length > 0) {
   console.error(

@@ -64,7 +64,15 @@ export const DEFAULT_LOCALE = 'en';
 
 /** Surfaces whose strings sit inside a fixed-width layout and get a length warning. */
 const NARROW_PREFIXES = ['popup_', 'overlay_', 'shared_'];
-const LENGTH_WARN_RATIO = 1.7;
+const LENGTH_WARN_RATIO = 2.0;
+/**
+ * Below this many characters a ratio says nothing: a six-letter English button word translates to
+ * a fourteen-letter one in Catalan without ever threatening the layout. Only a translation that is
+ * both long in its own right and much longer than the English is worth looking at. Romance and
+ * Slavic languages sit around 1.3 to 1.6 times the English length as a matter of course, so the
+ * ratio is set well above that: this is a pointer for the layout run, not a style rule.
+ */
+const LENGTH_WARN_MIN_CHARS = 25;
 
 /** Characters the en catalogue never uses, per the project's punctuation rules. */
 const FORBIDDEN_EN = /[;—–‘’“”…]/;
@@ -263,9 +271,10 @@ function checkEntry(locale, key, source, entry, errors, warnings) {
     }
   }
   if (NARROW_PREFIXES.some((prefix) => key.startsWith(prefix))) {
-    const ratio = [...entry.message].length / [...source.message].length;
-    if (ratio > LENGTH_WARN_RATIO) {
-      warnings.push(`${locale}: ${key} is ${ratio.toFixed(2)}x the en length`);
+    const length = [...entry.message].length;
+    const ratio = length / [...source.message].length;
+    if (length >= LENGTH_WARN_MIN_CHARS && ratio > LENGTH_WARN_RATIO) {
+      warnings.push(`${locale}: ${key} is ${ratio.toFixed(2)}x the en length (${length} characters)`);
     }
   }
 }
@@ -362,9 +371,12 @@ function translatedEntry(source, text) {
 /**
  * Merge a flat {key: message} map into one locale's surface files. A partial map is welcome: keys
  * it does not carry keep whatever the locale already had, so a locale can be translated one
- * surface at a time. A message byte-identical to the English source is dropped rather than stored,
- * because Chrome already falls back to en for a key a locale does not carry, and storing the
- * English text would count padding as translation.
+ * surface at a time.
+ *
+ * A message identical to the English source is stored, because some words genuinely are the same
+ * in both languages and a key that is never stored can never be complete. What it may not do is
+ * replace a translation the locale already had: that is how a later pass of padding used to undo
+ * earlier work. Wholesale padding is caught by share, in `checkTranslation`, rather than per key.
  */
 export function mergeTranslation(root, locale, flat, write) {
   const english = readSurfaceFiles(root, 'en');
@@ -373,7 +385,7 @@ export function mergeTranslation(root, locale, flat, write) {
     (readSurfaceFiles(root, locale) ?? []).map(({ surface, messages }) => [surface, messages]),
   );
   const unknown = new Set(Object.keys(flat));
-  const result = { fresh: 0, carried: 0, untranslated: 0, unknown: [] };
+  const result = { fresh: 0, carried: 0, untranslated: 0, missing: 0, unknown: [] };
 
   for (const { surface, messages } of english) {
     const previous = existing.get(surface) ?? {};
@@ -385,7 +397,7 @@ export function mergeTranslation(root, locale, flat, write) {
       if (typeof text === 'string' && text.trim() !== '') added = 'fresh';
       else if (previous[key] !== undefined) added = 'carried';
       if (added === null) {
-        result.untranslated += 1;
+        result.missing += 1;
         continue;
       }
       let candidate = added === 'fresh' ? translatedEntry(source, text) : previous[key];
@@ -399,10 +411,7 @@ export function mergeTranslation(root, locale, flat, write) {
         candidate = previous[key];
         added = 'carried';
       }
-      if (isEnglish(candidate)) {
-        result.untranslated += 1;
-        continue;
-      }
+      if (isEnglish(candidate)) result.untranslated += 1;
       out[key] = candidate;
       result[added] += 1;
     }
@@ -453,7 +462,10 @@ export function translationProgress(root, locale) {
     rows.push({
       surface,
       translated: `${translatedKeys.length}/${comparable.length}`,
-      untranslated: comparable.length - translatedKeys.length,
+      missing: comparable.filter((key) => theirs[key] === undefined).length,
+      sameAsEnglish: comparable.filter(
+        (key) => theirs[key] !== undefined && theirs[key].message === messages[key].message,
+      ).length,
     });
   }
   return { rows, done, total: comparableTotal };

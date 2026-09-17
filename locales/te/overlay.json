@@ -1,0 +1,137 @@
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "లాక్ చేయబడింది - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "అందుబాటులో ఉన్న పని ట్యాబ్‌లను తనిఖీ చేస్తోంది..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "మీ పనిని కొనసాగించడానికి తెరిచిన ట్యాబ్‌ను ఎంచుకోండి."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "మీ ఫోకస్ సెషన్ అందుబాటులో లేదు. మళ్లీ ప్రయత్నించండి, లేదా ఈ పేజీని రీలోడ్ చేయండి."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "మీ పని ట్యాబ్‌ను లోడ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి, లేదా ఈ పేజీని రీలోడ్ చేయండి."
+  },
+  "overlay_target_reconnect": {
+    "message": "Focus Lockకు తిరిగి కనెక్ట్ కావడానికి ఈ పేజీని రీలోడ్ చేయండి."
+  },
+  "overlay_target_page_changed": {
+    "message": "అభ్యర్థించిన పేజీ మారింది. పేజీని రీలోడ్ చేయండి."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lockను చేరుకోలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "overlay_picker_heading": {
+    "message": "పని ట్యాబ్‌ను ఎంచుకోండి"
+  },
+  "overlay_picker_cancel": {
+    "message": "రద్దు చేయి"
+  },
+  "overlay_picker_search_label": {
+    "message": "పని ట్యాబ్‌లను వెతుకు"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "శీర్షిక లేదా వెబ్‌సైట్ ద్వారా వెతుకు"
+  },
+  "overlay_picker_clear_search": {
+    "message": "శోధనను క్లియర్ చేయి"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "ట్యాబ్‌లను రిఫ్రెష్ చేయి"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "అందుబాటులో ఉన్న పని ట్యాబ్‌లు"
+  },
+  "overlay_picker_finding": {
+    "message": "అందుబాటులో ఉన్న ట్యాబ్‌లను కనుగొంటోంది..."
+  },
+  "overlay_picker_searching": {
+    "message": "పని ట్యాబ్‌లను వెతుకుతోంది..."
+  },
+  "overlay_picker_saving": {
+    "message": "పని ట్యాబ్‌ను సేవ్ చేస్తోంది..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "అందుబాటులో పని ట్యాబ్‌లు లేవు. ఈ సెషన్ అనుమతించే సైట్‌ను తెరిచి, తర్వాత ట్యాబ్‌లను రిఫ్రెష్ చేయండి."
+  },
+  "overlay_picker_no_matches": {
+    "message": "సరిపోలే ట్యాబ్‌లు లేవు. వేరే శోధన ప్రయత్నించండి లేదా శోధనను క్లియర్ చేయండి."
+  },
+  "overlay_picker_load_failed": {
+    "message": "పని ట్యాబ్‌లను లోడ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "overlay_picker_count_one": {
+    "message": "$COUNT$ ట్యాబ్‌లో $MATCHES$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$COUNT$ ట్యాబ్‌లలో $MATCHES$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  }
+}

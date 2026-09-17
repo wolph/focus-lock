@@ -1,12 +1,42 @@
 {
+  "stats_document_title": {
+    "message": "Focus Lock stats"
+  },
+  "stats_page_title": {
+    "message": "Your focus record"
+  },
   "stats_loading": {
     "message": "Nag-load your stats."
+  },
+  "stats_load_error": {
+    "message": "Could not load stats. Reload to try again."
+  },
+  "stats_partial_error_both": {
+    "message": "Hourly attempts and site access credit settings are unavailable."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Hourly attempts are unavailable."
+  },
+  "stats_partial_error_economy": {
+    "message": "Site access credit settings are unavailable."
+  },
+  "stats_scope_synced": {
+    "message": "Synced totals from this Chrome account. Local-only panels are labeled."
+  },
+  "stats_scope_local": {
+    "message": "Totals from this machine. Focus Lock statistics are not synced."
+  },
+  "stats_scope_checking": {
+    "message": "Checking whether these totals are synced."
   },
   "stats_scope_unavailable": {
     "message": "Mga Istatistika scope is unavailable. Totals may include synced data. Hourly attempts and recent sessions are from this machine."
   },
   "stats_scope_retry": {
     "message": "Subukan Muli scope check"
+  },
+  "stats_empty": {
+    "message": "Stats appear after your first session."
   },
   "stats_tile_focus_today": {
     "message": "Focus toaraw"
@@ -23,14 +53,61 @@
   "stats_tile_credit_spent_today": {
     "message": "Site access credit spent toaraw"
   },
+  "stats_tile_credit_subline_spent": {
+    "message": "All sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ earned",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Streak"
+  },
   "stats_streak_empty": {
     "message": "Your streak starts with your first focus araw."
   },
   "stats_streak_unit_one": {
-    "message": "day"
+    "message": "araw"
   },
   "stats_streak_unit_other": {
     "message": "araws"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ freeze token banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ freeze tokens banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
   },
   "stats_streak_freeze_chip_title": {
     "message": "Streak freeze: one missed araw, covered"
@@ -61,6 +138,28 @@
       }
     }
   },
+  "stats_streak_active_dates": {
+    "message": "Active dates in $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "No active dates in $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
   "stats_chart_focus_heading": {
     "message": "Focus, last 14 araws"
   },
@@ -68,16 +167,31 @@
     "message": "Focus minutos appear after your first session."
   },
   "stats_chart_attempts_heading": {
-    "message": "Nahanggang attempts, last 14 days"
+    "message": "Hadlanged attempts, last 14 araws"
   },
   "stats_chart_attempts_empty": {
-    "message": "Nahanggang attempts show up here once a session catches one."
+    "message": "Hadlanged attempts show up here once a session catches one."
   },
   "stats_chart_sites_heading": {
     "message": "Top blocked sites, last 30 araws"
   },
+  "stats_chart_sites_empty": {
+    "message": "Nothing blocked yet. That is a fine start."
+  },
   "stats_chart_hours_heading": {
     "message": "Attempts by oras, this machine only"
+  },
+  "stats_chart_other_site": {
+    "message": "other"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
   },
   "stats_blocked_count_one": {
     "message": "$COUNT$ haried",
@@ -97,14 +211,81 @@
       }
     }
   },
+  "stats_chart_name_bar": {
+    "message": "Bar chart"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Horizontal bar chart"
+  },
+  "stats_chart_description_bar": {
+    "message": "Bar chart. Use the keyboard to move through data points, or open View as table for the same values."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Horizontal bar chart. Use the keyboard to move through data points, or open View as table for the same values."
+  },
+  "stats_chart_empty_default": {
+    "message": "No data yet."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "View as table"
+  },
   "stats_chart_table_category": {
     "message": "Kategorya"
+  },
+  "stats_chart_table_value": {
+    "message": "Value"
   },
   "stats_heat_strip_label": {
     "message": "24-oras blocked-attempt heat strip"
   },
+  "stats_sessions_heading": {
+    "message": "Recent sessions on this machine"
+  },
+  "stats_sessions_empty": {
+    "message": "Your first session will appear here."
+  },
+  "stats_sessions_col_date": {
+    "message": "Date"
+  },
   "stats_sessions_col_start": {
     "message": "Magsimula"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planned"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Focused"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "All sites"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "One site"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Intention"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Outcome"
+  },
+  "stats_sessions_col_source": {
+    "message": "Source"
+  },
+  "stats_session_no_intention": {
+    "message": "No intention"
   },
   "stats_session_article_label": {
     "message": "Sesyon: $INTENTION$",
@@ -115,28 +296,22 @@
       }
     }
   },
+  "stats_session_source_manual": {
+    "message": "manual"
+  },
+  "stats_session_source_schedule": {
+    "message": "schedule"
+  },
+  "stats_session_source_scheduled": {
+    "message": "scheduled"
+  },
   "stats_outcome_completed": {
     "message": "Nakumpleto"
   },
   "stats_outcome_ended_early": {
     "message": "Tapusined early"
   },
-  "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$ freeze token banked",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$ freeze tokens banked",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "2"
-      }
-    }
+  "stats_outcome_running": {
+    "message": "Running"
   }
 }

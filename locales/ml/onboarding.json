@@ -1,1 +1,177 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock സെറ്റപ്പ് ചെയ്യുക"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock സെറ്റപ്പ്"
+  },
+  "onboarding_progress": {
+    "message": "ഘട്ടം $STEP$, ആകെ $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "നിന്റെ സേവ് ചെയ്ത സെറ്റപ്പ് പുരോഗതി പുനഃസ്ഥാപിക്കാനായില്ല. നിലവിലെ സ്ഥിരം മൂല്യങ്ങളോടെ വീണ്ടും തുടങ്ങുന്നു."
+  },
+  "onboarding_complete_heading": {
+    "message": "സെറ്റപ്പ് പൂർത്തിയായി"
+  },
+  "onboarding_complete_body": {
+    "message": "നിന്റെ തിരഞ്ഞെടുപ്പുകൾ സേവ് ചെയ്തു. സെഷൻ തുടങ്ങാൻ Chrome ടൂൾബാറിൽ നിന്ന് Focus Lock തുറക്കുക."
+  },
+  "onboarding_error_heading": {
+    "message": "സെറ്റപ്പ് ലഭ്യമല്ല"
+  },
+  "onboarding_error_body": {
+    "message": "സെറ്റപ്പ് ലോഡ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "onboarding_retry_button": {
+    "message": "വീണ്ടും ശ്രമിക്കുക"
+  },
+  "onboarding_save_error": {
+    "message": "സെറ്റപ്പ് പുരോഗതി സേവ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "onboarding_enable_error": {
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "onboarding_finish_error": {
+    "message": "സെറ്റപ്പ് പൂർത്തിയാക്കാനായില്ല. നിന്റെ തിരഞ്ഞെടുപ്പുകൾ ഇപ്പോഴും സേവ് ചെയ്തിട്ടുണ്ട്. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "onboarding_lists_heading": {
+    "message": "നിന്റെ ആരംഭ തടയൽ പട്ടിക തിരഞ്ഞെടുക്കുക"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "$MODE$ ൽ, പ്രവർത്തനക്ഷമമാക്കിയ കാറ്റഗറികളും അധിക തടഞ്ഞ സൈറ്റുകളും ലഭ്യമല്ല.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$ ൽ, നിന്റെ അനുവദന പട്ടികയിലുള്ളവ ഒഴികെ എല്ലാ സൈറ്റും ലഭ്യമല്ല.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "ഈ തിരഞ്ഞെടുപ്പുകൾ ഭാവി സെഷനുകൾക്കുള്ള സ്ഥിരം മൂല്യങ്ങളാകും. പിന്നീട് ഇവ തിരുത്താം."
+  },
+  "onboarding_lists_legend": {
+    "message": "ശുപാർശ ചെയ്യുന്ന വെബ്സൈറ്റ് കാറ്റഗറികൾ"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ സൈറ്റ്",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ സൈറ്റുകൾ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "$CATEGORY$ സൈറ്റുകൾ കാണിക്കുക",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "$CATEGORY$ സൈറ്റുകൾ മറയ്ക്കുക",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ ഡൊമെയ്‌നുകൾ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "തുടരുക"
+  },
+  "onboarding_access_heading": {
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കുക"
+  },
+  "onboarding_access_local_matching": {
+    "message": "നിന്റെ തിരഞ്ഞെടുത്ത കാറ്റഗറികളും സൈറ്റുകളും ചേർത്തുനോക്കാൻ Focus Lock പേജ് വിലാസങ്ങൾ പ്രാദേശികമായി പരിശോധിക്കുന്നു. അതിന്റെ ബ്ലോക്കിംഗ് സ്ക്രീൻ കാണിക്കാനും സെഷൻ അവസാനിക്കുമ്പോൾ ബാധിച്ച പേജുകൾ പുനഃസ്ഥാപിക്കാനും ഇത് വെബ്സൈറ്റ് ആക്സസ് ഉപയോഗിക്കുന്നു."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "കാറ്റഗറികളിലും കസ്റ്റം ഡൊമെയ്‌നുകളിലും ഏത് വെബ്സൈറ്റും ഉൾപ്പെടാം. അതിനാൽ Chrome ഈ അനുമതി ചോദിക്കും:"
+  },
+  "onboarding_access_capability": {
+    "message": "എല്ലാ വെബ്സൈറ്റുകളിലുമുള്ള നിങ്ങളുടെ ഡാറ്റ വായിക്കുകയും മാറ്റുകയും ചെയ്യുക"
+  },
+  "onboarding_access_scope_note": {
+    "message": "നിന്റെ ബ്ലോക്കിംഗ് നിയമങ്ങൾ പ്രയോഗിക്കുമ്പോൾ മാത്രമേ Focus Lock ആ ആക്സസ് ഉപയോഗിക്കൂ."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome വെബ്സൈറ്റ് ആക്സസ് അനുവദിച്ചില്ല. നിനക്ക് വീണ്ടും ശ്രമിക്കാം."
+  },
+  "onboarding_access_registration_error": {
+    "message": "വെബ്സൈറ്റ് ആക്സസ് അനുവദിച്ചു, പക്ഷേ Focus Lock-ന് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാനായില്ല. സെറ്റപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ റീലോഡ് ചെയ്യുക."
+  },
+  "onboarding_access_enable_button": {
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കുക"
+  },
+  "onboarding_access_defer_button": {
+    "message": "ഇപ്പോൾ വേണ്ട"
+  },
+  "onboarding_sync_heading": {
+    "message": "നിന്റെ സെറ്റിംഗ്സ് എവിടെ സൂക്ഷിക്കണമെന്ന് തിരഞ്ഞെടുക്കുക"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Chrome ഡിവൈസുകളിലുടനീളം സിങ്ക് ചെയ്യുക"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "സെറ്റപ്പ് പൂർത്തിയാക്കിക്കഴിഞ്ഞാൽ താഴെയുള്ള അംഗീകൃത ഡാറ്റ Chrome Sync ഉപയോഗിക്കും."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "എല്ലാ Focus Lock ഡാറ്റയും ഈ Chrome പ്രൊഫൈലിൽ തന്നെ നിലനിൽക്കും."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "സിങ്ക് ചെയ്തത്"
+  },
+  "onboarding_sync_local_title": {
+    "message": "പ്രാദേശികം മാത്രം"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock ഡെവലപ്പർക്ക് ഒന്നും അയക്കുന്നില്ല."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "സിങ്ക് പ്രവർത്തനക്ഷമമാക്കി സെറ്റപ്പ് പൂർത്തിയാക്കുക"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "സിങ്ക് ഇല്ലാതെ സെറ്റപ്പ് പൂർത്തിയാക്കുക"
+  }
+}

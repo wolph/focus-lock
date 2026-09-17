@@ -353,15 +353,6 @@
       }
     }
   },
-  "popup_sites_many": {
-    "message": "$COUNT$ sites",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "42"
-      }
-    }
-  },
   "popup_sites_other": {
     "message": "$COUNT$ sites",
     "placeholders": {
@@ -381,15 +372,6 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "et $COUNT$ sites de plus",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "34"
-      }
-    }
-  },
-  "popup_more_sites_many": {
     "message": "et $COUNT$ sites de plus",
     "placeholders": {
       "COUNT": {
@@ -450,15 +432,6 @@
       }
     }
   },
-  "popup_extra_blocked_rules_many": {
-    "message": "$COUNT$ règles bloquées en plus",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "2"
-      }
-    }
-  },
   "popup_allowed_rules_one": {
     "message": "$COUNT$ règle autorisée",
     "placeholders": {
@@ -469,15 +442,6 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ règles autorisées",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
-  },
-  "popup_allowed_rules_many": {
     "message": "$COUNT$ règles autorisées",
     "placeholders": {
       "COUNT": {
@@ -662,5 +626,41 @@
   },
   "popup_start_failed": {
     "message": "Impossible de démarrer la session. Réessaie."
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_many": {
+    "message": "et $COUNT$ sites de plus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ règles bloquées en plus",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
+    "message": "$COUNT$ règles autorisées",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
   }
 }

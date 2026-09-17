@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock-ஐ அமைக்கவும்"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock அமைப்பு"
+  },
+  "onboarding_progress": {
+    "message": "படி $STEP$ / $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "உங்கள் சேமிக்கப்பட்ட அமைப்பு முன்னேற்றத்தை மீட்டெடுக்க முடியவில்லை. உங்கள் தற்போதைய இயல்புநிலைகளுடன் மீண்டும் தொடங்குகிறது."
+  },
+  "onboarding_complete_heading": {
+    "message": "அமைப்பு முடிந்தது"
+  },
+  "onboarding_complete_body": {
+    "message": "உங்கள் தேர்வுகள் சேமிக்கப்பட்டுள்ளன. அமர்வைத் தொடங்க Chrome கருவிப்பட்டையிலிருந்து Focus Lock-ஐத் திறக்கவும்."
+  },
+  "onboarding_error_heading": {
+    "message": "அமைப்பு கிடைக்கவில்லை"
+  },
+  "onboarding_error_body": {
+    "message": "அமைப்பை ஏற்ற முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "onboarding_retry_button": {
+    "message": "மீண்டும் முயற்சி"
+  },
+  "onboarding_save_error": {
+    "message": "அமைப்பு முன்னேற்றத்தைச் சேமிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "onboarding_enable_error": {
+    "message": "இணையதளத் தடுப்பை இயக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "onboarding_finish_error": {
+    "message": "அமைப்பை முடிக்க முடியவில்லை. உங்கள் தேர்வுகள் இன்னும் சேமிக்கப்பட்டுள்ளன. மீண்டும் முயற்சிக்கவும்."
+  },
+  "onboarding_lists_heading": {
+    "message": "உங்கள் தொடக்கத் தடுப்புப் பட்டியலைத் தேர்வுசெய்யவும்"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "$MODE$-இல், இயக்கப்பட்ட வகைகளும் கூடுதல் தடுக்கப்பட்ட தளங்களும் கிடைக்காது.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$-இல், உங்கள் அனுமதிப் பட்டியல் தவிர மற்ற அனைத்து தளங்களும் கிடைக்காது.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "இந்தத் தேர்வுகள் எதிர்கால அமர்வுகளுக்கு இயல்புநிலைகளாக மாறும். அவற்றை நீங்கள் பின்னர் திருத்தலாம்."
+  },
+  "onboarding_lists_legend": {
+    "message": "பரிந்துரைக்கப்பட்ட இணையதள வகைகள்"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ தளம்",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ தளங்கள்",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "$CATEGORY$ தளங்களைக் காட்டு",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "$CATEGORY$ தளங்களை மறை",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ டொமைன்கள்",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "தொடரவும்"
+  },
+  "onboarding_access_heading": {
+    "message": "இணையதளத் தடுப்பை இயக்கவும்"
+  },
+  "onboarding_access_local_matching": {
+    "message": "உங்கள் தேர்ந்தெடுத்த வகைகள் மற்றும் தளங்களைப் பொருத்த Focus Lock பக்க முகவரிகளை உள்ளூரில் சரிபார்க்கிறது. உங்கள் அமர்வு முடிந்தவுடன் அதன் தடுப்புத் திரையைக் காட்டவும், பாதிக்கப்பட்ட பக்கங்களை மீட்டெடுக்கவும் இணையதள அணுகலைப் பயன்படுத்துகிறது."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "வகைகள் மற்றும் தனிப்பயன் டொமைன்கள் எந்த இணையதளத்தையும் உள்ளடக்கியிருக்கலாம். எனவே Chrome இந்தத் திறனைக் கோரும்:"
+  },
+  "onboarding_access_capability": {
+    "message": "அனைத்து இணையதளங்களிலும் உங்கள் அனைத்துத் தரவையும் படித்து மாற்றவும்"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock உங்கள் தடுப்பு விதிகளைப் பயன்படுத்தும்போது மட்டுமே அந்த அணுகலைப் பயன்படுத்துகிறது."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome இணையதள அணுகலை வழங்கவில்லை. நீங்கள் மீண்டும் முயற்சிக்கலாம்."
+  },
+  "onboarding_access_registration_error": {
+    "message": "இணையதள அணுகல் வழங்கப்பட்டது, ஆனால் தடுப்பை இயக்க Focus Lock-ஆல் முடியவில்லை. அமைப்பை மீண்டும் முயற்சிக்கவும் அல்லது நீட்டிப்பை மீண்டும் ஏற்றவும்."
+  },
+  "onboarding_access_enable_button": {
+    "message": "இணையதளத் தடுப்பை இயக்கவும்"
+  },
+  "onboarding_access_defer_button": {
+    "message": "இப்போது வேண்டாம்"
+  },
+  "onboarding_sync_heading": {
+    "message": "உங்கள் அமைப்புகள் எங்கு சேமிக்கப்படும் என்பதைத் தேர்வுசெய்யவும்"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Chrome சாதனங்களில் ஒத்திசைக்கவும்"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "கீழே உள்ள அங்கீகரிக்கப்பட்ட தரவு அமைப்பை முடித்தபின் Chrome Sync-ஐப் பயன்படுத்தும்."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "அனைத்து Focus Lock தரவும் இந்த Chrome சுயவிவரத்திலேயே இருக்கும்."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "ஒத்திசைக்கப்பட்டது"
+  },
+  "onboarding_sync_local_title": {
+    "message": "உள்ளூர் மட்டும்"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock உருவாக்குநருக்கு எதுவும் அனுப்பப்படுவதில்லை."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "ஒத்திசைவு இயக்கத்துடன் அமைப்பை முடிக்கவும்"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "ஒத்திசைவு இல்லாமல் அமைப்பை முடிக்கவும்"
+  }
+}

@@ -3,10 +3,10 @@
     "message": "[JA: overlay_dialog_label]"
   },
   "overlay_stopped_title": {
-    "message": "[JA: overlay_stopped_title]"
+    "message": "ロック - Focus Lock"
   },
   "overlay_return_label": {
-    "message": "[JA: overlay_return_label] $ACTION$ $DESTINATION$",
+    "message": "$ACTION$：$DESTINATION$",
     "placeholders": {
       "ACTION": {
         "content": "$1",
@@ -19,7 +19,7 @@
     }
   },
   "overlay_return_label_host": {
-    "message": "[JA: overlay_return_label_host] $ACTION$ $DESTINATION$ $HOSTNAME$",
+    "message": "$ACTION$：$DESTINATION$（$HOSTNAME$）",
     "placeholders": {
       "ACTION": {
         "content": "$1",
@@ -36,67 +36,67 @@
     }
   },
   "overlay_target_checking": {
-    "message": "[JA: overlay_target_checking]"
+    "message": "利用可能なワークタブをチェック中..."
   },
   "overlay_target_pick_tab": {
-    "message": "[JA: overlay_target_pick_tab]"
+    "message": "タスクを続けるには、開いているタブを選択してください。"
   },
   "overlay_target_session_unavailable": {
-    "message": "[JA: overlay_target_session_unavailable]"
+    "message": "フォーカスセッションは利用できません。もう一度試すか、このページをリロードしてください。"
   },
   "overlay_target_lookup_failed": {
-    "message": "[JA: overlay_target_lookup_failed]"
+    "message": "ワークタブを読み込めませんでした。もう一度試すか、このページをリロードしてください。"
   },
   "overlay_target_reconnect": {
-    "message": "[JA: overlay_target_reconnect]"
+    "message": "このページをリロードしてFocus Lockに再接続してください。"
   },
   "overlay_target_page_changed": {
-    "message": "[JA: overlay_target_page_changed]"
+    "message": "リクエストページが変更されました。ページをリロードしてください。"
   },
   "overlay_target_transport_error": {
-    "message": "[JA: overlay_target_transport_error]"
+    "message": "Focus Lockに到達できませんでした。もう一度試してください。"
   },
   "overlay_picker_heading": {
-    "message": "[JA: overlay_picker_heading]"
+    "message": "ワークタブを選択"
   },
   "overlay_picker_cancel": {
-    "message": "[JA: overlay_picker_cancel]"
+    "message": "キャンセル"
   },
   "overlay_picker_search_label": {
-    "message": "[JA: overlay_picker_search_label]"
+    "message": "ワークタブを検索"
   },
   "overlay_picker_search_placeholder": {
-    "message": "[JA: overlay_picker_search_placeholder]"
+    "message": "タイトルまたはウェブサイトで検索"
   },
   "overlay_picker_clear_search": {
-    "message": "[JA: overlay_picker_clear_search]"
+    "message": "検索をクリア"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "[JA: overlay_picker_refresh_tabs]"
+    "message": "タブをリフレッシュ"
   },
   "overlay_picker_available_tabs": {
-    "message": "[JA: overlay_picker_available_tabs]"
+    "message": "利用可能なワークタブ"
   },
   "overlay_picker_finding": {
-    "message": "[JA: overlay_picker_finding]"
+    "message": "利用可能なタブを検索中..."
   },
   "overlay_picker_searching": {
-    "message": "[JA: overlay_picker_searching]"
+    "message": "ワークタブを検索中..."
   },
   "overlay_picker_saving": {
-    "message": "[JA: overlay_picker_saving]"
+    "message": "ワークタブを保存中..."
   },
   "overlay_picker_no_tabs": {
-    "message": "[JA: overlay_picker_no_tabs]"
+    "message": "利用可能なワークタブがありません。このセッションで許可されたサイトを開いて、タブをリフレッシュしてください。"
   },
   "overlay_picker_no_matches": {
-    "message": "[JA: overlay_picker_no_matches]"
+    "message": "マッチするタブがありません。別の検索を試すか、検索をクリアしてください。"
   },
   "overlay_picker_load_failed": {
-    "message": "[JA: overlay_picker_load_failed]"
+    "message": "ワークタブを読み込めませんでした。もう一度試してください。"
   },
   "overlay_picker_count_one": {
-    "message": "[JA: overlay_picker_count_one] $MATCHES$ $COUNT$",
+    "message": "$MATCHES$（全$COUNT$）タブ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "[JA: overlay_picker_count_other] $MATCHES$ $COUNT$",
+    "message": "$MATCHES$（全$COUNT$）タブ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -122,7 +122,7 @@
     }
   },
   "overlay_picker_tab_label": {
-    "message": "[JA: overlay_picker_tab_label] $TITLE$ $HOSTNAME$",
+    "message": "$TITLE$（$HOSTNAME$）",
     "placeholders": {
       "TITLE": {
         "content": "$1",

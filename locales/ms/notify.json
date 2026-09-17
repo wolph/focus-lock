@@ -1,6 +1,6 @@
 {
   "notify_session_complete_title": {
-    "message": "Sesi fokus selesai"
+    "message": "Fokus session complete"
   },
   "notify_session_complete_body": {
     "message": "Sesi fokus Anda selesai."
@@ -15,28 +15,28 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Jadwal fokus tidak dapat dimulai"
+    "message": "Fokus schedule could not start"
   },
   "notify_schedule_unavailable_body": {
-    "message": "Penyekatan laman web tidak diaktifkan. Selesaikan penyiapan atau berikan akses laman web, kemudian coba lagi."
+    "message": "Situs web blocking is not enabled. Finish setup or grant website access, then try again."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Penyiapan diselesaikan di tab lain."
+    "message": "Penyiapan was completed in another tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Penyiapan berubah di tab lain. Pilihan terbaru telah dimuat ulang."
+    "message": "Penyiapan changed in another tab. The latest choices were reloaded."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Penyiapan berubah di tab lain. Muat ulang penyiapan sebelum menyelesaikan."
+    "message": "Penyiapan changed in another tab. Reload setup before finishing."
   },
   "notify_setup_not_complete": {
-    "message": "Penyiapan tidak lengkap."
+    "message": "Penyiapan is not complete."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "Penyiapan tidak siap untuk diselesaikan."
+    "message": "Penyiapan is not ready to finish."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Pilihan penyimpanan penyiapan berubah. Muat ulang penyiapan sebelum menyelesaikan."
+    "message": "Penyiapan storage choice changed. Reload setup before finishing."
   },
   "notify_onboarding_storage_failed": {
     "message": "Operasi penyimpanan penyiapan gagal."
@@ -45,19 +45,19 @@
     "message": "Operasi penyiapan gagal."
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lock tidak dapat memeriksa akses laman web. Coba ulang penyiapan atau muat ulang ekstensi."
+    "message": "Fokus Lock could not check website access. Coba Ulang setup or reload the extension."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Akses laman web diberikan, tetapi Focus Lock tidak dapat mengaktifkan penyekatan. Coba ulang penyiapan atau muat ulang ekstensi."
+    "message": "Situs web access is granted, but Fokus Lock could not enable blocking. Coba Ulang setup or reload the extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Akses laman web tidak tersedia, dan Focus Lock tidak dapat menyelesaikan pembersihan penyekatan. Coba ulang penyiapan atau muat ulang ekstensi."
+    "message": "Situs web access is unavailable, and Fokus Lock could not finish blocking cleanup. Coba Ulang setup or reload the extension."
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lock menerima status akses laman web yang tidak konsisten. Coba ulang penyiapan atau muat ulang ekstensi."
+    "message": "Fokus Lock received an inconsistent website access state. Coba Ulang setup or reload the extension."
   },
   "notify_boot_not_finished": {
-    "message": "Focus Lock tidak selesai dimulai: $REASON$",
+    "message": "Fokus Lock did not finish starting: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -69,19 +69,19 @@
     "message": "kesalahan tidak dikenal"
   },
   "notify_nothing_to_reset": {
-    "message": "Focus Lock sedang berjalan, tidak ada yang perlu direset"
+    "message": "Fokus Lock is running, nothing to reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Focus Lock tidak dapat mereset waktu aktif yang masih berkomitmen dalam pembuatan kebijakan"
+    "message": "Fokus Lock cannot reset a runtime that is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
     "message": "Pengulangan pembersihan data tidak tersedia."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Nonaktifkan Sinkronisasi sebelum menghapus data yang disinkronkan"
+    "message": "Nonaktifkan Sync before deleting synced data"
   },
   "notify_work_gate_busy": {
-    "message": "Focus Lock masih menyelesaikan perubahan sebelumnya. Coba lagi sebentar."
+    "message": "Fokus Lock is still finishing an earlier change. Try again in a moment."
   },
   "notify_work_gate_stuck": {
     "message": "Gerbang terbuka tidak dapat ditutup. Coba lagi."
@@ -90,10 +90,10 @@
     "message": "Tab kerja tidak tersedia."
   },
   "notify_settings_sync_limit": {
-    "message": "Pengaturan melebihi batas Sinkronisasi Chrome 8 KB. Hapus entri jadwal atau perpendek niat, kemudian coba lagi."
+    "message": "Pengaturan exceed the 8 KB Chrome Sync limit. Hapus schedule entries or shorten intentions, then try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Daftar melebihi batas Sinkronisasi Chrome 8 KB. Hapus aturan khusus atau daftar putih, kemudian coba lagi."
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Hapus custom or whitelist rules, then try again."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "sesi keras berjalan: menghapus situs yang diblokir membuka kunci saat berakhir"

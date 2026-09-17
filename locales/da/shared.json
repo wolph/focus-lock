@@ -302,6 +302,19 @@
       }
     }
   },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_verdict_blocked_category": {
     "message": "Blokeret af $CATEGORY$",
     "placeholders": {
@@ -391,6 +404,9 @@
   },
   "shared_all_data_clear_running": {
     "message": "Afslut den kørende session, før du sletter alle data."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
   },
   "shared_nav_product": {
     "message": "Produktnavigation"

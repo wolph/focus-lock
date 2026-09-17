@@ -344,6 +344,15 @@
       }
     }
   },
+  "popup_sites_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
   "popup_sites_other": {
     "message": "$COUNT$ de site-uri",
     "placeholders": {
@@ -651,15 +660,6 @@
       "COUNT": {
         "content": "$1",
         "example": "3"
-      }
-    }
-  },
-  "popup_sites_one": {
-    "message": "$COUNT$ site",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
       }
     }
   }

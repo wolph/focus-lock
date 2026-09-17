@@ -1,0 +1,627 @@
+{
+  "shared_until_stopped": {
+    "message": "நிறுத்தும் வரை"
+  },
+  "shared_preset_short": {
+    "message": "குறுகிய"
+  },
+  "shared_preset_focus": {
+    "message": "கவனம்"
+  },
+  "shared_preset_deep_work": {
+    "message": "ஆழ்ந்த வேலை"
+  },
+  "shared_deep_work_note": {
+    "message": "இது ஒரு விருப்பம், அறிவியல் அல்ல: தானியக்க இடைவேளைகள் இல்லாத ஒரு நீண்ட தடையில்லா தொகுதி."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "மொத்தம் $MINUTES$ நிமிடம், $FOCUS$ நிமிட கவனத் தொகுதிகளுடன்",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ நிமிட தடையில்லா கவனம்",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "நிறுத்தும் வரை தொடங்கு"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "கைமுறையாகத் திறக்கும் வரை பூட்டு"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "நிறுத்தும் வரை அமர்வுகள் நெகிழ்வானது அல்லது தடையை வைத்திருக்கும், கவனம் மற்றும் இடைவேளைச் சுழற்சிகளைப் பயன்படுத்த முடியாது."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "நிறுத்தும் வரை அமர்விற்கு கடும் பூட்டு கிடைக்காது: நேரமும் கைமுறை முடிவும் இல்லாமல், அமர்வு ஒருபோதும் முடியாது."
+  },
+  "shared_end_session": {
+    "message": "அமர்வை முடி"
+  },
+  "shared_unlock": {
+    "message": "திற"
+  },
+  "shared_gate_wait_none": {
+    "message": "காத்திருப்பு இல்லை"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$-வினாடி காத்திருப்பு",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ மற்றும் தட்டச்சு செய்யப்பட்ட வாக்கியம்",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "$LABEL$ மூலம் நீங்கள் முடிக்கும் வரை இயங்கும். சுழற்சிகள் முடக்கத்தில்.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "நீங்கள் திறக்கும் வரை இயங்கும்: $REQUIREMENT$, பின்னர் $LABEL$. சுழற்சிகள் முடக்கத்தில்.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "நிறுத்தும் வரையால் கட்டாயப்படுத்தப்பட்ட சுழற்சிகள்"
+  },
+  "shared_mode_blacklist": {
+    "message": "தேர்ந்தெடுக்கப்பட்ட தளங்களைத் தடு"
+  },
+  "shared_mode_whitelist": {
+    "message": "தேர்ந்தெடுக்கப்பட்ட தளங்களை மட்டும் அனுமதி"
+  },
+  "shared_focus_time_label": {
+    "message": "கவன நேரம்"
+  },
+  "shared_clock_focus_phase": {
+    "message": "கவனக் கட்டம்"
+  },
+  "shared_clock_total_session": {
+    "message": "மொத்த அமர்வு"
+  },
+  "shared_clock_pause": {
+    "message": "இடைநிறுத்தம்"
+  },
+  "shared_clock_break": {
+    "message": "இடைவேளை"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock தொடங்குகிறது. உங்கள் தேர்ந்தெடுத்த விதிகளைப் பயன்படுத்துகிறது."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "அமர்வு முடிந்தது. உலாவல் சுத்தத்தை முடிக்கிறது."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock தொடங்க முடியவில்லை. உலாவல் சுத்தத்தை முடிக்கிறது."
+  },
+  "shared_popup_transition_error": {
+    "message": "முடியாத தொடக்கத்திற்குப் பிறகு சுத்தம் செய்ய Focus Lock-ஆல் முடியவில்லை."
+  },
+  "shared_popup_closure_error": {
+    "message": "உலாவல் சுத்தத்தை முடிக்க Focus Lock-ஆல் முடியவில்லை."
+  },
+  "shared_retry_cleanup": {
+    "message": "சுத்தத்தை மீண்டும் முயற்சி"
+  },
+  "shared_end_failed": {
+    "message": "அமர்வை முடிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "shared_retry_failed": {
+    "message": "சுத்தத்தை மீண்டும் முயற்சிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "shared_action_failed": {
+    "message": "அந்தச் செயலைக் கோர முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "shared_return_to_work_failed": {
+    "message": "பணிக்குத் திரும்ப முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "shared_data_clear_pending": {
+    "message": "Focus Lock தரவை நீக்குகிறது. சுத்தத்தை முடிக்கிறது."
+  },
+  "shared_data_clear_error": {
+    "message": "தரவை நீக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "shared_schedule_window_label": {
+    "message": "காலப்பகுதி முடியும் வரை"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "அட்டவணைப்படி தொடங்கி நீங்கள் நிறுத்தும் வரை இயங்கும்: நெகிழ்வானதற்கு அமர்வை முடி, தடைக்கு பரிசீலனை வாயில் வழியாகத் திற. சுழற்சிகள் முடக்கத்தில்."
+  },
+  "shared_schedule_started_title": {
+    "message": "கவனத் திட்டம் தொடங்கியது"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "நீங்கள் நிறுத்தும் வரை செயலில்."
+  },
+  "shared_settings_indefinite": {
+    "message": "நிறுத்தும் வரை அமர்வு செயலில் உள்ளது. அதைப் பார்க்க அல்லது முடிக்க கருவிப்பட்டை பாப்அப்பைப் பயன்படுத்தவும்."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock தொடங்குகிறது. இணையதள அணுகலைச் சரிபார்த்து உங்கள் விதிகளைப் பயன்படுத்துகிறது."
+  },
+  "shared_settings_error": {
+    "message": "உலாவல் சுத்தத்தை முடிக்க Focus Lock-ஆல் முடியவில்லை. பாப்அப்பைத் திறந்து மீண்டும் முயற்சிக்கவும்."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "கருவிப்பட்டை பாப்அப் அமர்வுக் கட்டுப்பாடுகளை வைத்திருக்கும். செயலில் உள்ள அமர்வு அது தொடங்கியபோது பிடித்த விதிகளை வைத்திருக்கும்."
+  },
+  "shared_settings_timed": {
+    "message": "நேரம் நிர்ணயிக்கப்பட்ட அமர்வு $TIME$ வரை செயலில் உள்ளது. இது தானாகவே முடியும். நேரடி நிலைக்கு கருவிப்பட்டை பாப்அப்பைப் பயன்படுத்தவும்.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "முடிந்தது"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "கைமுறையாக முடிந்தது"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "முன்கூட்டியே முடிந்தது"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "முடிந்தது: இணையதள அணுகல் இழந்தது"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "முடிந்தது: தடுப்பு அமைவு தோல்வியடைந்தது"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "முடிந்தது: நேரக் கருவி அமைவு தோல்வியடைந்தது"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "முடிந்தது: பக்கச் செயல்படுத்தல் தோல்வியடைந்தது"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "முடிந்தது: மீட்டெடுப்பு தோல்வியடைந்தது"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ம $MINUTES$ நி",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ நி",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ நிமி",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ நிமி",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "அமர்வைப் புதுப்பிக்கிறது"
+  },
+  "shared_less_than_a_minute": {
+    "message": "ஒரு நிமிடத்திற்கும் குறைவு"
+  },
+  "shared_focus_remaining_break": {
+    "message": "உங்கள் இடைவேளை வரை $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "இந்த அமர்வில் $DURATION$ மீதமுள்ளது",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "செலவு கடன் வரம்பை மீறுகிறது"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "கவனத்தின்போது கடன் ஈட்டுதல் மீண்டும் தொடங்கும்"
+  },
+  "shared_credit_off": {
+    "message": "கடன் ஈட்டுதல் முடக்கப்பட்டுள்ளது"
+  },
+  "shared_not_enough_time": {
+    "message": "இந்த கவனத் தொகுதியில் போதுமான நேரம் இல்லை"
+  },
+  "shared_ready_in": {
+    "message": "$CLOCK$ இல் தயார்",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "$CATEGORY$ ஆல் தடுக்கப்பட்டது",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "உங்கள் தடுப்புப் பட்டியலால் தடுக்கப்பட்டது"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "உங்கள் அனுமதிப் பட்டியலில் இல்லை"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "இந்த அமர்வால் தடுக்கப்பட்டது"
+  },
+  "shared_verdict_allow_list": {
+    "message": "உங்கள் அனுமதிப் பட்டியலில் உள்ளது"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "எப்போதும் அனுமதிக்கப்பட்டது"
+  },
+  "shared_verdict_unlock": {
+    "message": "தற்காலிகமாகத் திறக்கப்பட்டது"
+  },
+  "shared_verdict_excluded": {
+    "message": "தேர்ந்தெடுத்த வகையிலிருந்து விலக்கப்பட்டது"
+  },
+  "shared_verdict_no_session": {
+    "message": "செயலில் கவன அமர்வு இல்லை"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "இந்த அமர்வால் அனுமதிக்கப்பட்டது"
+  },
+  "shared_category_social": {
+    "message": "சமூக ஊடகம்"
+  },
+  "shared_category_video": {
+    "message": "வீடியோ மற்றும் ஸ்ட்ரீமிங்"
+  },
+  "shared_category_news": {
+    "message": "செய்திகள்"
+  },
+  "shared_category_mail": {
+    "message": "மின்னஞ்சல்"
+  },
+  "shared_category_shopping": {
+    "message": "ஷாப்பிங்"
+  },
+  "shared_category_gaming": {
+    "message": "கேமிங்"
+  },
+  "shared_category_forums": {
+    "message": "மன்றங்கள் மற்றும் சலிப்பு"
+  },
+  "shared_synced_settings": {
+    "message": "அமைப்புகள்"
+  },
+  "shared_synced_lists": {
+    "message": "தடுப்பு மற்றும் அனுமதிப் பட்டியல்கள்"
+  },
+  "shared_synced_credit": {
+    "message": "தள அணுகல் கடன்"
+  },
+  "shared_synced_streaks": {
+    "message": "தொடர்கள்"
+  },
+  "shared_synced_aggregates": {
+    "message": "டொமைன்-மட்ட தடுக்கப்பட்ட முயற்சி மொத்தங்கள்"
+  },
+  "shared_local_full_urls": {
+    "message": "முழு URLகள்"
+  },
+  "shared_local_intentions": {
+    "message": "கவன நோக்கங்கள்"
+  },
+  "shared_local_events": {
+    "message": "விரிவான அமர்வு நிகழ்வுகள்"
+  },
+  "shared_local_runtime": {
+    "message": "செயலில் உள்ள இயக்க அமர்வு"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "பழைய பதிப்பிலிருந்த சில ஒத்திசைக்கப்பட்ட தரவைப் படிக்க முடியாமல் மீட்டமைக்கப்பட்டது."
+  },
+  "shared_all_data_clear_running": {
+    "message": "அனைத்துத் தரவையும் நீக்கும் முன் இயங்கும் அமர்வை முடிக்கவும்."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "தயாரிப்பு வழிசெலுத்தல்"
+  },
+  "shared_nav_overview": {
+    "message": "மேலோட்டம்"
+  },
+  "shared_nav_settings": {
+    "message": "அமைப்புகள்"
+  },
+  "shared_section_blocking": {
+    "message": "தடுப்பு"
+  },
+  "shared_section_schedule": {
+    "message": "அட்டவணை"
+  },
+  "shared_section_behavior": {
+    "message": "அமர்வு நடத்தை"
+  },
+  "shared_section_budget": {
+    "message": "தள அணுகல் கடன்"
+  },
+  "shared_section_notifications": {
+    "message": "அறிவிப்புகள்"
+  },
+  "shared_section_privacy": {
+    "message": "தனியுரிமையும் தரவும்"
+  },
+  "shared_theme_auto": {
+    "message": "தானியங்கி"
+  },
+  "shared_theme_light": {
+    "message": "வெளிர்"
+  },
+  "shared_theme_dark": {
+    "message": "இருள்"
+  },
+  "shared_theme_button": {
+    "message": "தீம்: $CURRENT$. $NEXT$க்கு மாறு",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "தீமைச் சேமிக்க முடியவில்லை. பக்கத்தை மீண்டும் ஏற்றி மீண்டும் முயற்சிக்கவும்."
+  },
+  "shared_host_search_label": {
+    "message": "$TITLE$ தளங்களைத் தேடு",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "உங்கள் தேடலுக்கு $TITLE$ தளம் பொருந்தவில்லை.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "$MATCHED$ தளங்களில் $SHOWN$ காட்டப்படுகிறது. பட்டியலைக் குறுக்கத் தேடவும்.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "$TOTAL$ தளங்களில் $MATCHED$ காட்டப்படுகிறது.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "அனைத்து $TOTAL$ தளங்களும் காட்டப்படுகின்றன.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "அமர்வை முடி"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock தொடங்குகிறது"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "உங்கள் தேர்ந்தெடுத்த விதிகளைப் பயன்படுத்துகிறது."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "இந்தப் பக்கம் ஏற்றப்படவில்லை. அமர்வு முடியும்போது இது தானாகவே ஏற்றப்படும்."
+  },
+  "shared_overlay_next_step": {
+    "message": "உங்கள் அடுத்த படி"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "பணிக்குத் திரும்பு"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "பணி தாவலைத் தேர்வுசெய்யவும்"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "பணி தாவலை மாற்று"
+  },
+  "shared_overlay_access_summary": {
+    "message": "இடைவேளையா அல்லது தள அணுகலா தேவை?"
+  },
+  "shared_overlay_access_note": {
+    "message": "நீங்கள் எந்த நேரத்திலும் விலகிச் செல்லலாம். தள அணுகல் கடனைப் பயன்படுத்துகிறது."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "நேரக் கெடுவைப் புறக்கணித்து முடி"
+  },
+  "shared_overlay_transport_error": {
+    "message": "இந்தச் செயலைப் புதுப்பிக்க Focus Lock-ஆல் முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ தள அணுகல் கடன்",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "உங்கள் தற்போதைய பணியைத் தொடரவும்"
+  },
+  "shared_overlay_pause_action": {
+    "message": "அனைத்துத் தளங்களையும் திற"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "இந்தத் தளத்தைத் திற"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - $COST$ கடன் செலவாகும்",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "$TIME$ வரை பூட்டப்பட்டது",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "நீங்கள் கூறியது: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "$HOST$ ஐ $CLOCK$ க்குத் திற",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "கவனத்தைத் தொடர்"
+  },
+  "shared_gate_phrase_label": {
+    "message": "உறுதிசெய்ய இதைத் தட்டச்சு செய்யவும்:"
+  },
+  "shared_gate_end_title": {
+    "message": "இந்த அமர்வை முடி"
+  }
+}

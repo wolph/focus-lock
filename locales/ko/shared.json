@@ -1,9 +1,9 @@
 {
   "shared_until_stopped": {
-    "message": "중지될 때까지"
+    "message": "중단될 때까지"
   },
   "shared_preset_short": {
-    "message": "짧음"
+    "message": "짧은"
   },
   "shared_preset_focus": {
     "message": "포커스"
@@ -12,10 +12,10 @@
     "message": "깊은 작업"
   },
   "shared_deep_work_note": {
-    "message": "선호도이지 과학이 아닙니다. 1개의 긴 중단 없는 블록, 자동 중단 없음."
+    "message": "과학이 아닌 기본 설정：하나의 긴 중단되지 않은 작업, 자동 휴식 없음."
   },
   "shared_timed_hint_cycles": {
-    "message": "총 $MINUTES$분, $FOCUS$분 포커스 블록 포함",
+    "message": "$FOCUS$분 포커스 블록이 있는 $MINUTES$분 총",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -37,22 +37,22 @@
     }
   },
   "shared_start_until_stopped": {
-    "message": "중지될 때까지 시작"
+    "message": "중단될 때까지 시작"
   },
   "shared_lock_until_manual_unlock": {
-    "message": "수동 잠금 해제까지 잠금"
+    "message": "수동 잠금해제까지 잠금"
   },
   "shared_until_stopped_disclosure": {
-    "message": "중지될 때까지의 세션은 유연 또는 마찰을 유지하며 포커스 및 휴식 사이클을 사용할 수 없습니다."
+    "message": "중단될 때까지 세션은 유연 또는 마찰을 유지하며 포커스 및 휴식 사이클을 사용할 수 없습니다."
   },
   "shared_hard_unavailable_reason": {
-    "message": "타이머 없음, 수동 종료 없음에서 세션이 종료될 수 없으므로 하드 잠금은 중지될 때까지 사용할 수 없습니다."
+    "message": "하드 잠금은 중단될 때까지 사용할 수 없습니다：타이머 없음 및 수동 종료 없음으로 세션은 종료될 수 없었습니다."
   },
   "shared_end_session": {
     "message": "세션 종료"
   },
   "shared_unlock": {
-    "message": "잠금 해제"
+    "message": "잠금해제"
   },
   "shared_gate_wait_none": {
     "message": "대기 없음"
@@ -67,7 +67,7 @@
     }
   },
   "shared_gate_requirement_typed": {
-    "message": "$WAIT$ 및 입력된 문장",
+    "message": "$WAIT 및 입력된 문",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -76,7 +76,7 @@
     }
   },
   "shared_until_stopped_hint_flexible": {
-    "message": "$LABEL$로 종료될 때까지 실행됩니다. 사이클이 꺼져있습니다.",
+    "message": "$LABEL로 종료될 때까지 실행됩니다. 사이클 끔.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -85,7 +85,7 @@
     }
   },
   "shared_until_stopped_hint_friction": {
-    "message": "$REQUIREMENT$로 잠금 해제될 때까지 실행한 후 $LABEL$. 사이클이 꺼져있습니다.",
+    "message": "잠금해제될 때까지 실행됩니다：$REQUIREMENT$, 그 다음 $LABEL$. 사이클 끔.",
     "placeholders": {
       "REQUIREMENT": {
         "content": "$1",
@@ -98,7 +98,7 @@
     }
   },
   "shared_forced_cycles_label": {
-    "message": "중지로 강제된 사이클"
+    "message": "중단될 때까지 강제된 사이클"
   },
   "shared_mode_blacklist": {
     "message": "선택한 사이트 차단"
@@ -113,7 +113,7 @@
     "message": "포커스 단계"
   },
   "shared_clock_total_session": {
-    "message": "세션 합계"
+    "message": "세션 총계"
   },
   "shared_clock_pause": {
     "message": "일시 중지"
@@ -125,13 +125,13 @@
     "message": "ON"
   },
   "shared_popup_starting": {
-    "message": "Focus Lock이 시작 중입니다. 선택한 규칙을 적용합니다."
+    "message": "Focus Lock이 시작 중입니다. 선택한 규칙을 적용하고 있습니다."
   },
   "shared_popup_closure_cleanup": {
-    "message": "세션 종료. 브라우저 정리 완료 중."
+    "message": "세션이 종료되었습니다. 브라우저 정리를 완료하고 있습니다."
   },
   "shared_popup_transition_cleanup": {
-    "message": "Focus Lock이 시작할 수 없습니다. 브라우저 정리 완료 중."
+    "message": "Focus Lock이 시작되지 않았습니다. 브라우저 정리를 완료하고 있습니다."
   },
   "shared_popup_transition_error": {
     "message": "Focus Lock이 불완전한 시작을 정리할 수 없습니다."
@@ -143,49 +143,49 @@
     "message": "정리 재시도"
   },
   "shared_end_failed": {
-    "message": "세션을 종료할 수 없습니다. 다시 시도하세요."
+    "message": "세션을 종료할 수 없습니다. 다시 시도하십시오."
   },
   "shared_retry_failed": {
-    "message": "정리를 재시도할 수 없습니다. 다시 시도하세요."
+    "message": "정리를 재시도할 수 없습니다. 다시 시도하십시오."
   },
   "shared_action_failed": {
-    "message": "이 작업을 요청할 수 없습니다. 다시 시도하세요."
+    "message": "해당 작업을 요청할 수 없습니다. 다시 시도하십시오."
   },
   "shared_return_to_work_failed": {
-    "message": "작업으로 돌아갈 수 없습니다. 다시 시도하세요."
+    "message": "작업으로 돌아갈 수 없습니다. 다시 시도하십시오."
   },
   "shared_data_clear_pending": {
-    "message": "Focus Lock 데이터를 삭제 중입니다. 정리 완료 중."
+    "message": "Focus Lock 데이터를 삭제하고 있습니다. 정리를 완료하고 있습니다."
   },
   "shared_data_clear_error": {
-    "message": "데이터를 삭제할 수 없습니다. 다시 시도하세요."
+    "message": "데이터를 삭제할 수 없습니다. 다시 시도하십시오."
   },
   "shared_schedule_window_label": {
-    "message": "창이 종료될 때까지"
+    "message": "창 종료까지"
   },
   "shared_schedule_until_stopped": {
-    "message": "일정에 따라 시작하여 중지될 때까지 실행: 유연의 경우 세션 종료, 마찰의 경우 고민 게이트를 통해 잠금 해제합니다. 사이클이 꺼져있습니다."
+    "message": "일정상 시작되어 중단될 때까지 실행됩니다：유연의 경우 세션 종료, 마찰의 경우 숙고 게이트를 통해 잠금해제합니다. 사이클 끔."
   },
   "shared_schedule_started_title": {
-    "message": "포커스 일정이 시작되었습니다"
+    "message": "포커스 일정 시작"
   },
   "shared_schedule_until_stopped_body": {
-    "message": "중지될 때까지 활성."
+    "message": "중단될 때까지 활성화됩니다."
   },
   "shared_settings_indefinite": {
-    "message": "중지 세션이 실행 중입니다. 도구모음 팝업을 사용하여 보거나 종료하세요."
+    "message": "중단될 때까지 세션이 활성화됩니다. 도구모음 팝업을 사용하여 보기 또는 종료하십시오."
   },
   "shared_settings_starting": {
-    "message": "Focus Lock이 시작 중입니다. 웹사이트 접근을 확인하고 규칙을 적용합니다."
+    "message": "Focus Lock이 시작 중입니다. 웹사이트 액세스를 확인하고 규칙을 적용하고 있습니다."
   },
   "shared_settings_error": {
-    "message": "Focus Lock이 브라우저 정리를 완료할 수 없습니다. 팝업을 열고 재시도하세요."
+    "message": "Focus Lock이 브라우저 정리를 완료할 수 없습니다. 팝업을 열고 재시도하십시오."
   },
   "shared_settings_session_disclosure": {
-    "message": "도구모음 팝업이 세션 컨트롤을 소유합니다. 활성 세션은 시작 시 캡처된 규칙을 보유합니다."
+    "message": "도구모음 팝업은 세션 컨트롤을 소유합니다. 활성 세션은 시작할 때 캡처된 규칙을 유지합니다."
   },
   "shared_settings_timed": {
-    "message": "정시 세션이 $TIME$까지 활성입니다. 자동으로 종료됩니다. 실시간 상태의 도구모음 팝업을 사용하세요.",
+    "message": "시간이 정해진 세션은 $TIME까지 활성화됩니다. 자동으로 종료됩니다. 도구모음 팝업을 사용하여 라이브 상태를 확인하십시오.",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -200,22 +200,22 @@
     "message": "수동으로 완료됨"
   },
   "shared_outcome_manual_canceled": {
-    "message": "조기 종료"
+    "message": "조기 종료됨"
   },
   "shared_outcome_website_access_lost": {
-    "message": "종료: 웹사이트 접근 손실"
+    "message": "종료됨：웹사이트 액세스가 손실됨"
   },
   "shared_outcome_content_registration_failed": {
-    "message": "종료: 차단 설정 실패"
+    "message": "종료됨：차단 설정 실패"
   },
   "shared_outcome_alarm_failed": {
-    "message": "종료: 타이머 설정 실패"
+    "message": "종료됨：타이머 설정 실패"
   },
   "shared_outcome_tab_enforcement_failed": {
-    "message": "종료: 페이지 적용 실패"
+    "message": "종료됨：페이지 강제 실패"
   },
   "shared_outcome_invalid_active_state": {
-    "message": "종료: 복구 실패"
+    "message": "종료됨：복구 실패"
   },
   "shared_duration_hours_minutes": {
     "message": "$HOURS$시간 $MINUTES$분",
@@ -273,7 +273,7 @@
     }
   },
   "shared_focus_remaining_session": {
-    "message": "이 세션에 $DURATION$ 남음",
+    "message": "이 세션에서 $DURATION$ 남음",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -285,13 +285,13 @@
     "message": "비용이 크레딧 제한을 초과합니다"
   },
   "shared_credit_resumes_focus": {
-    "message": "포커스 중에 크레딧 획득이 재개됩니다"
+    "message": "포커스 중에 신용 획득이 재개됩니다"
   },
   "shared_credit_off": {
-    "message": "크레딧 획득이 꺼져있습니다"
+    "message": "신용 획득이 꺼져있습니다"
   },
   "shared_not_enough_time": {
-    "message": "이 포커스 블록에 충분한 시간이 없습니다"
+    "message": "이 포커스 블록에 시간이 부족합니다"
   },
   "shared_ready_in": {
     "message": "$CLOCK$에 준비됨",
@@ -302,8 +302,21 @@
       }
     }
   },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$：$PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_verdict_blocked_category": {
-    "message": "$CATEGORY$로 차단됨",
+    "message": "$CATEGORY$로 인해 차단",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -312,31 +325,31 @@
     }
   },
   "shared_verdict_blocked_custom": {
-    "message": "차단 목록으로 차단됨"
+    "message": "차단 목록으로 인해 차단"
   },
   "shared_verdict_whitelist_miss": {
     "message": "허용 목록에 없음"
   },
   "shared_verdict_blocked_session": {
-    "message": "이 세션으로 차단됨"
+    "message": "이 세션으로 인해 차단"
   },
   "shared_verdict_allow_list": {
     "message": "허용 목록에 있음"
   },
   "shared_verdict_always_allowed": {
-    "message": "항상 허용됨"
+    "message": "항상 허용"
   },
   "shared_verdict_unlock": {
-    "message": "임시로 잠금 해제됨"
+    "message": "일시적으로 잠금해제됨"
   },
   "shared_verdict_excluded": {
-    "message": "선택된 카테고리에서 제외됨"
+    "message": "선택한 카테고리에서 제외"
   },
   "shared_verdict_no_session": {
     "message": "활성 포커스 세션 없음"
   },
   "shared_verdict_allowed_session": {
-    "message": "이 세션으로 허용됨"
+    "message": "이 세션으로 인해 허용"
   },
   "shared_category_social": {
     "message": "소셜 미디어"
@@ -354,7 +367,7 @@
     "message": "쇼핑"
   },
   "shared_category_gaming": {
-    "message": "게임"
+    "message": "게이밍"
   },
   "shared_category_forums": {
     "message": "포럼 및 지루함"
@@ -363,16 +376,16 @@
     "message": "설정"
   },
   "shared_synced_lists": {
-    "message": "목록 차단 및 허용"
+    "message": "차단 및 허용 목록"
   },
   "shared_synced_credit": {
     "message": "사이트 접근 크레딧"
   },
   "shared_synced_streaks": {
-    "message": "연속 기록"
+    "message": "연속"
   },
   "shared_synced_aggregates": {
-    "message": "도메인 수준의 차단된 시도 집계"
+    "message": "도메인 수준 차단된 시도 집계"
   },
   "shared_local_full_urls": {
     "message": "전체 URL"
@@ -387,10 +400,10 @@
     "message": "활성 런타임 세션"
   },
   "shared_legacy_policy_dropped": {
-    "message": "이전 버전의 일부 동기화된 데이터를 읽을 수 없어 재설정되었습니다."
+    "message": "이전 버전의 일부 동기화된 데이터를 읽을 수 없어서 재설정되었습니다."
   },
   "shared_all_data_clear_running": {
-    "message": "모든 데이터를 삭제하기 전에 실행 중인 세션을 종료하세요."
+    "message": "모든 데이터를 삭제하기 전에 실행 중인 세션을 종료하십시오."
   },
   "shared_nav_brand": {
     "message": "포커스 Lock"
@@ -420,19 +433,19 @@
     "message": "알림"
   },
   "shared_section_privacy": {
-    "message": "개인정보 및 데이터"
+    "message": "개인정보 보호 및 데이터"
   },
   "shared_theme_auto": {
     "message": "자동"
   },
   "shared_theme_light": {
-    "message": "밝음"
+    "message": "라이트"
   },
   "shared_theme_dark": {
-    "message": "어두움"
+    "message": "다크"
   },
   "shared_theme_button": {
-    "message": "테마: $CURRENT$. $NEXT$로 전환",
+    "message": "테마：$CURRENT$. $NEXT로 전환",
     "placeholders": {
       "CURRENT": {
         "content": "$1",
@@ -445,7 +458,7 @@
     }
   },
   "shared_theme_error": {
-    "message": "테마를 저장할 수 없습니다. 페이지를 다시 로드하고 다시 시도하세요."
+    "message": "테마를 저장할 수 없습니다. 페이지를 다시로드하고 다시 시도하십시오."
   },
   "shared_host_search_label": {
     "message": "$TITLE$ 사이트 검색",
@@ -457,7 +470,7 @@
     }
   },
   "shared_host_none": {
-    "message": "$TITLE$ 사이트가 검색과 일치하지 않습니다.",
+    "message": "검색과 일치하는 $TITLE$ 사이트가 없습니다.",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -466,7 +479,7 @@
     }
   },
   "shared_host_partial": {
-    "message": "$MATCHED$/$SHOWN$ 사이트를 표시합니다. 검색하여 목록을 좁혀 보세요.",
+    "message": "$SHOWN$ / $MATCHED$개 사이트를 표시하고 있습니다. 검색하여 목록을 좁히십시오.",
     "placeholders": {
       "SHOWN": {
         "content": "$1",
@@ -479,7 +492,7 @@
     }
   },
   "shared_host_matched": {
-    "message": "$TOTAL$/$MATCHED$ 사이트를 표시합니다.",
+    "message": "$MATCHED$ / $TOTAL$개 사이트를 표시하고 있습니다.",
     "placeholders": {
       "MATCHED": {
         "content": "$1",
@@ -492,7 +505,7 @@
     }
   },
   "shared_host_all": {
-    "message": "모든 $TOTAL$ 사이트를 표시합니다.",
+    "message": "$TOTAL$개의 모든 사이트를 표시하고 있습니다.",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -507,16 +520,16 @@
     "message": "Focus Lock이 시작 중입니다"
   },
   "shared_overlay_starting_detail": {
-    "message": "선택한 규칙을 적용합니다."
+    "message": "선택한 규칙을 적용하고 있습니다."
   },
   "shared_overlay_stopped_page": {
-    "message": "이 페이지가 로드되지 않았습니다. 세션이 종료되면 자동으로 로드됩니다."
+    "message": "이 페이지가 로드되지 않았습니다. 세션이 끝나면 자동으로 로드됩니다."
   },
   "shared_overlay_next_step": {
     "message": "다음 단계"
   },
   "shared_overlay_back_to_work": {
-    "message": "작업으로 돌아가기"
+    "message": "작업 돌아가기"
   },
   "shared_overlay_choose_work_tab": {
     "message": "작업 탭 선택"
@@ -525,16 +538,16 @@
     "message": "작업 탭 변경"
   },
   "shared_overlay_access_summary": {
-    "message": "휴식 또는 사이트 접근이 필요한가요?"
+    "message": "휴식 또는 사이트 액세스가 필요하신가요？"
   },
   "shared_overlay_access_note": {
-    "message": "언제든지 이동할 수 있습니다. 사이트 접근은 크레딧을 사용합니다."
+    "message": "언제든지 떠날 수 있습니다. 사이트 액세스는 크레딧을 사용합니다."
   },
   "shared_overlay_gate_force_end": {
-    "message": "시간 초과 무시하고 종료"
+    "message": "타임아웃 무시하고 어쨌든 종료"
   },
   "shared_overlay_transport_error": {
-    "message": "Focus Lock이 이 작업을 업데이트할 수 없습니다. 다시 시도하세요."
+    "message": "Focus Lock이 이 작업을 업데이트할 수 없습니다. 다시 시도하십시오."
   },
   "shared_overlay_bank_amount": {
     "message": "$AMOUNT$ 사이트 접근 크레딧",
@@ -549,10 +562,10 @@
     "message": "현재 작업 계속"
   },
   "shared_overlay_pause_action": {
-    "message": "모든 사이트 잠금 해제"
+    "message": "모든 사이트 잠금해제"
   },
   "shared_overlay_unlock_site_action": {
-    "message": "이 사이트 잠금 해제"
+    "message": "이 사이트 잠금해제"
   },
   "shared_overlay_spend_action": {
     "message": "$LABEL$ $LENGTH$ - $COST$ 크레딧 비용",
@@ -572,7 +585,7 @@
     }
   },
   "shared_overlay_locked_until": {
-    "message": "$TIME$까지 잠금",
+    "message": "$TIME까지 잠금",
     "placeholders": {
       "TIME": {
         "content": "$1",
@@ -581,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "당신이 말씀한 것: $INTENTION$",
+    "message": "당신이 말씀하신 것：$INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -590,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "$HOST$ $CLOCK$ 잠금 해제",
+    "message": "$HOST$ $CLOCK 잠금해제",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -603,10 +616,10 @@
     }
   },
   "shared_gate_back": {
-    "message": "포커스 계속"
+    "message": "포커싱 계속"
   },
   "shared_gate_phrase_label": {
-    "message": "이를 입력하여 확인:"
+    "message": "확인하려면 이것을 입력하십시오："
   },
   "shared_gate_end_title": {
     "message": "이 세션 종료"

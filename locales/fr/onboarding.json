@@ -81,15 +81,6 @@
       }
     }
   },
-  "onboarding_site_count_many": {
-    "message": "$COUNT$ sites",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "52"
-      }
-    }
-  },
   "onboarding_site_count_other": {
     "message": "$COUNT$ sites",
     "placeholders": {
@@ -182,5 +173,14 @@
   },
   "onboarding_sync_finish_disabled": {
     "message": "Terminer sans synchronisation"
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
   }
 }

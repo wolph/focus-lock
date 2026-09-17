@@ -83,6 +83,9 @@
   "options_rule_kind_host_badge": {
     "message": "โดเมน"
   },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
   "options_rule_remove": {
     "message": "ลบ"
   },
@@ -109,6 +112,12 @@
   },
   "options_rule_pattern_aria": {
     "message": "รูปแบบ"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
   },
   "options_rule_add": {
     "message": "เพิ่มกฎ"
@@ -731,6 +740,9 @@
   },
   "options_privacy_open_chrome_settings": {
     "message": "เปิดการตั้งค่าสิทธิ์ของ Chrome"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
   },
   "options_privacy_sync_switch_label": {
     "message": "ซิงก์ข้อมูล Focus Lock ข้ามอุปกรณ์ Chrome"

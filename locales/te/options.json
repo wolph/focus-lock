@@ -1,0 +1,849 @@
+{
+  "options_page_title": {
+    "message": "Focus Lock ఎంపికలు"
+  },
+  "options_heading": {
+    "message": "Focus Lock సెట్టింగ్‌లు"
+  },
+  "options_loading_settings": {
+    "message": "సెట్టింగ్‌లు లోడ్ అవుతున్నాయి"
+  },
+  "options_privacy_loading": {
+    "message": "గోప్యతా సెట్టింగ్‌లు లోడ్ అవుతున్నాయి"
+  },
+  "options_save_failed": {
+    "message": "సేవ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_blocking_heading": {
+    "message": "బ్లాకింగ్"
+  },
+  "options_blocking_help": {
+    "message": "కస్టమ్ నియమాలు బ్లాక్ లిస్ట్ సెషన్‌లలో బ్లాక్ చేస్తాయి. అనుమతి జాబితా సెషన్‌లలో అందుబాటులో ఉండేది అనుమతి జాబితానే. బండిల్ చేసిన కేటగిరీలు సాధారణ సమయం వృథా చేసే సైట్‌లను బ్లాక్ చేస్తాయి."
+  },
+  "options_custom_blacklist_title": {
+    "message": "కస్టమ్ బ్లాక్ లిస్ట్"
+  },
+  "options_whitelist_title": {
+    "message": "అనుమతి జాబితా"
+  },
+  "options_bundled_categories_heading": {
+    "message": "బండిల్ చేసిన కేటగిరీలు"
+  },
+  "options_bundled_categories_help": {
+    "message": "సాధారణ సమయం వృథా చేసే సైట్‌ల బండిల్ చేసిన జాబితాలు. ఒక పూర్తి కేటగిరీని టోగుల్ చేయండి, తర్వాత ఒంటరి సైట్‌లను అందుబాటులో ఉంచడానికి దాన్ని తెరవండి."
+  },
+  "options_schedule_heading": {
+    "message": "షెడ్యూల్"
+  },
+  "options_schedule_help": {
+    "message": "సెషన్‌లు ఈ విండోల లోపల తమంతట తామే ప్రారంభమవుతాయి. ఇక్కడ సెట్ చేసిన కఠినత్వం మొత్తం విండోకు వర్తిస్తుంది."
+  },
+  "options_behavior_heading": {
+    "message": "సెషన్ ప్రవర్తన"
+  },
+  "options_budget_heading": {
+    "message": "సైట్ యాక్సెస్ క్రెడిట్"
+  },
+  "options_notifications_heading": {
+    "message": "నోటిఫికేషన్‌లు"
+  },
+  "options_privacy_heading": {
+    "message": "గోప్యత మరియు డేటా"
+  },
+  "options_load_error_retry": {
+    "message": "మళ్లీ ప్రయత్నించండి"
+  },
+  "options_load_error_delete_all": {
+    "message": "అన్నీ తొలగించి మళ్లీ ప్రారంభించండి"
+  },
+  "options_load_error_keep_data": {
+    "message": "నా డేటాను ఉంచు"
+  },
+  "options_delete_all_data": {
+    "message": "అన్ని Focus Lock డేటాను తొలగించు"
+  },
+  "options_dirty_saving": {
+    "message": "మార్పులు సేవ్ అవుతున్నాయి"
+  },
+  "options_dirty_unsaved": {
+    "message": "సేవ్ చేయని మార్పులు"
+  },
+  "options_dirty_clean": {
+    "message": "సేవ్ చేయని మార్పులు లేవు"
+  },
+  "options_dirty_discard": {
+    "message": "మార్పులను విస్మరించు"
+  },
+  "options_dirty_save": {
+    "message": "మార్పులను సేవ్ చేయి"
+  },
+  "options_session_status_label": {
+    "message": "సెషన్ స్థితి"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "డొమైన్"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
+  "options_rule_remove": {
+    "message": "తీసివేయి"
+  },
+  "options_rule_remove_aria": {
+    "message": "$PATTERN$‌ను తీసివేయి",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "ఇంకా నియమాలు లేవు."
+  },
+  "options_rule_kind_aria": {
+    "message": "నియమ రకం"
+  },
+  "options_rule_kind_host_option": {
+    "message": "డొమైన్ లేదా సబ్‌డొమైన్"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (పూర్తి URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "నమూనా"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "నియమాన్ని జోడించు"
+  },
+  "options_rules_help": {
+    "message": "facebook.com ఆ డొమైన్‌ను మరియు ప్రతి సబ్‌డొమైన్‌ను కవర్ చేస్తుంది. news.ycombinator.com ఆ సబ్‌డొమైన్‌ను మరియు దాని కింద ఉన్న ప్రతిదాన్ని కవర్ చేస్తుంది. /youtube\\.com\\/shorts/ పూర్తి URLను regexగా సరిపోల్చుతుంది."
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ ధనాత్మక పూర్ణ సంఖ్య అయి ఉండాలి.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ సున్నా లేదా అంతకంటే ఎక్కువ పూర్ణ సంఖ్య అయి ఉండాలి.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ సున్నా లేదా అంతకంటే ఎక్కువ అయి ఉండాలి.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ మద్దతు ఉన్న నిమిషాల పరిధిలో ఉండాలి.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ మద్దతు ఉన్న రోజుల పరిధిలో ఉండాలి.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "సెషన్ డిఫాల్ట్‌లు"
+  },
+  "options_session_defaults_help": {
+    "message": "సెషన్ ప్రారంభమైనప్పుడు మోడ్ మరియు కఠినత్వం స్థిరపరచబడతాయి. ప్రారంభ ఫారం తెరిచే విలువలు ఇవే."
+  },
+  "options_preset_short_label": {
+    "message": "చిన్న సెషన్ ప్రీసెట్ (నిమిషాలు)"
+  },
+  "options_preset_default_label": {
+    "message": "డిఫాల్ట్ సెషన్ ప్రీసెట్ (నిమిషాలు)"
+  },
+  "options_preset_deep_label": {
+    "message": "డీప్ సెషన్ ప్రీసెట్ (నిమిషాలు)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "బ్లాక్ లిస్ట్: జాబితా చేసిన సైట్‌లను బ్లాక్ చేయి"
+  },
+  "options_mode_whitelist_label": {
+    "message": "అనుమతి జాబితా: జాబితా చేసిన సైట్‌లను మాత్రమే అనుమతించు"
+  },
+  "options_strictness_flexible_label": {
+    "message": "సరళ: మీరు కోరుకున్నప్పుడు సెషన్‌ను ముగించండి"
+  },
+  "options_strictness_friction_label": {
+    "message": "ఘర్షణ: ముందుగా ఆపడం కాన్ఫిగర్ చేసిన ఆలోచనా గేట్‌ను ఉపయోగిస్తుంది"
+  },
+  "options_strictness_hard_label": {
+    "message": "కఠిన లాక్: ముందస్తు ముగింపు లేదు, తాత్కాలిక సైట్ యాక్సెస్ మాత్రమే"
+  },
+  "options_cycle_heading": {
+    "message": "ఫోకస్ మరియు విరామ చక్రం"
+  },
+  "options_cycle_help": {
+    "message": "డిఫాల్ట్‌లు: 25 నిమిషాల ఫోకస్, 5 నిమిషాల విరామం, ప్రతి 4వ చక్రానికి 15 నిమిషాల దీర్ఘ విరామం. అధ్యయన నమూనాలలో మానసిక స్థితి మరియు ఏకాగ్రత కోసం, ఇష్టం వచ్చినప్పుడు విరామం తీసుకోవడం కంటే షెడ్యూల్‌పై విరామాలు మెరుగ్గా పనిచేస్తాయి. ఖచ్చితమైన నిమిషాలు సంప్రదాయం, శాస్త్రం కాదు."
+  },
+  "options_cycle_default_label": {
+    "message": "డిఫాల్ట్‌గా ఫోకస్ మరియు విరామాలను చక్రం చేయి"
+  },
+  "options_focus_minutes_label": {
+    "message": "ఫోకస్ నిమిషాలు"
+  },
+  "options_short_break_minutes_label": {
+    "message": "చిన్న విరామ నిమిషాలు"
+  },
+  "options_long_break_minutes_label": {
+    "message": "దీర్ఘ విరామ నిమిషాలు"
+  },
+  "options_long_every_label": {
+    "message": "ప్రతి N-వ చక్రానికి దీర్ఘ విరామం"
+  },
+  "options_gate_heading": {
+    "message": "ఆలోచనా గేట్"
+  },
+  "options_gate_help": {
+    "message": "స్పష్టమైన పనికి తిరిగి వెళ్లు బటన్‌తో 10 సెకన్ల నిరీక్షణ, ఆకస్మిక సందర్శనలను గణనీయంగా తగ్గిస్తుంది (ఫీల్డ్ స్టడీ, PNAS 2023). ఎక్కువ నిరీక్షణ మరియు టైప్ చేసే వాక్యం ప్రభావాన్ని దాదాపు రెట్టింపు చేస్తాయి."
+  },
+  "options_gate_wait_one": {
+    "message": "$COUNT$ సెకను వేచి ఉండండి",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "$COUNT$ సెకన్లు వేచి ఉండండి",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "కస్టమ్"
+  },
+  "options_custom_delay_label": {
+    "message": "కస్టమ్ ఆలస్యం (సెకన్లు)"
+  },
+  "options_custom_delay_error": {
+    "message": "కస్టమ్ ఆలస్యం సున్నా కంటే ఎక్కువ పూర్ణ సంఖ్య సెకన్లు అయి ఉండాలి."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "ఒక వాక్యాన్ని కూడా టైప్ చేయమని కోరు"
+  },
+  "options_gate_force_end_label": {
+    "message": "\"టైమ్‌అవుట్‌ను విస్మరించి అయినా ముగించు\" బటన్‌ను ప్రారంభించు"
+  },
+  "options_credit_help": {
+    "message": "మీరు ఏకాగ్రతతో ఉన్నప్పుడు సైట్ యాక్సెస్ క్రెడిట్ పేరుకుపోతుంది. అన్ని సైట్‌ల యాక్సెస్ మరియు ఒకే సైట్ అన్‌లాక్ రెండూ ఒకే బ్యాలెన్స్ నుండి ఖర్చవుతాయి. క్రెడిట్ ఖర్చు చేయకుండా మీరు ఎప్పుడైనా దూరంగా వెళ్లవచ్చు."
+  },
+  "options_earn_rate_label": {
+    "message": "ప్రతి 30 నిమిషాల ఫోకస్‌కు సైట్ యాక్సెస్ నిమిషాలు"
+  },
+  "options_credit_cap_label": {
+    "message": "సైట్ యాక్సెస్ క్రెడిట్ పరిమితి (నిమిషాలు)"
+  },
+  "options_pause_length_label": {
+    "message": "అన్ని-సైట్ యాక్సెస్ నిడివి (నిమిషాలు)"
+  },
+  "options_unlock_length_label": {
+    "message": "సైట్ అన్‌లాక్ నిడివి (నిమిషాలు)"
+  },
+  "options_streak_heading": {
+    "message": "వరుస మరియు నిలుపుదల"
+  },
+  "options_streak_help": {
+    "message": "వరుస లక్ష్యాన్ని చేరుకున్న రోజులను లెక్కిస్తుంది. ఒక డిఫాల్ట్ సెషన్ గొలుసును సజీవంగా ఉంచుతుంది, మరియు ఒక ఫ్రీజ్ టోకెన్ మిస్ అయిన రోజును సరిచేస్తుంది."
+  },
+  "options_streak_goal_label": {
+    "message": "రోజువారీ వరుస లక్ష్యం (ఫోకస్ నిమిషాలు)"
+  },
+  "options_freeze_interval_label": {
+    "message": "ఫ్రీజ్ టోకెన్ విరామం (రోజులు)"
+  },
+  "options_retention_label": {
+    "message": "రోజువారీ గణాంకాలను ఉంచు (రోజులు)"
+  },
+  "options_category_on_announcement": {
+    "message": "$CATEGORY$ కేటగిరీ ఆన్‌లో ఉంది.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "$CATEGORY$ కేటగిరీ ఆఫ్‌లో ఉంది.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "అన్ని కేటగిరీలు ఆన్‌లో ఉన్నాయి."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "అన్ని కేటగిరీలు ఆఫ్‌లో ఉన్నాయి."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ చేర్చబడింది.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ అందుబాటులో ఉంచబడింది.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "అన్ని $CATEGORY$ సైట్‌లు చేర్చబడ్డాయి.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "అన్ని $CATEGORY$ సైట్‌లు అందుబాటులో ఉంచబడ్డాయి.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "కేటగిరీ బల్క్ చర్యలు"
+  },
+  "options_selected_count": {
+    "message": "$COUNT$ ఎంపిక చేయబడింది",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "$COUNT$ ఎంపిక తీసివేయబడింది",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "అన్నీ ఎంచుకో"
+  },
+  "options_deselect_all": {
+    "message": "అన్నీ ఎంపిక తీసివేయి"
+  },
+  "options_select_all_categories_aria": {
+    "message": "అన్ని కేటగిరీలను ఎంచుకో"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "అన్ని కేటగిరీల ఎంపికను తీసివేయి"
+  },
+  "options_show_category_sites": {
+    "message": "$CATEGORY$ సైట్‌లను చూపించు",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "$CATEGORY$ సైట్‌లను దాచు",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ సైట్ చేర్చబడింది",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ సైట్‌లు చేర్చబడ్డాయి",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "కేటగిరీ ఆఫ్‌లో ఉంది"
+  },
+  "options_included_when_enabled_one": {
+    "message": "ప్రారంభించినప్పుడు $COUNT$ చేర్చబడుతుంది",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "ప్రారంభించినప్పుడు $COUNT$ చేర్చబడతాయి",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "మిగిలిన కేటగిరీ బ్లాక్ చేయబడి ఉండగా ఒక సైట్‌ను అందుబాటులో ఉంచడానికి దాని చెక్‌ను తీసివేయండి."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ సైట్ బల్క్ చర్యలు",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "అన్ని $CATEGORY$ సైట్‌లను ఎంచుకో",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "అన్ని $CATEGORY$ సైట్‌ల ఎంపికను తీసివేయి",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$ సైట్‌లు",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "ఆది"
+  },
+  "options_day_mon": {
+    "message": "సోమ"
+  },
+  "options_day_tue": {
+    "message": "మంగళ"
+  },
+  "options_day_wed": {
+    "message": "బుధ"
+  },
+  "options_day_thu": {
+    "message": "గురు"
+  },
+  "options_day_fri": {
+    "message": "శుక్ర"
+  },
+  "options_day_sat": {
+    "message": "శని"
+  },
+  "options_schedule_cycles_label": {
+    "message": "ఫోకస్ మరియు విరామాలను చక్రం చేయి"
+  },
+  "options_schedule_overlap_error": {
+    "message": "$DAY$న ప్రారంభించిన మరో ఎంట్రీతో అతివ్యాప్తి చెందుతోంది.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "సెషన్ రకం"
+  },
+  "options_schedule_entry_legend": {
+    "message": "షెడ్యూల్ ఎంట్రీ"
+  },
+  "options_schedule_start_label": {
+    "message": "ప్రారంభం"
+  },
+  "options_schedule_end_label": {
+    "message": "ముగింపు"
+  },
+  "options_schedule_duration_legend": {
+    "message": "వ్యవధి"
+  },
+  "options_schedule_intention_label": {
+    "message": "ఉద్దేశం"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "ఈ సమయం దేని కోసం"
+  },
+  "options_schedule_save_entry": {
+    "message": "ఎంట్రీని సేవ్ చేయి"
+  },
+  "options_cancel": {
+    "message": "రద్దు చేయి"
+  },
+  "options_schedule_empty": {
+    "message": "ఇంకా షెడ్యూల్ చేసిన సెషన్‌లు లేవు."
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "ఎంచుకున్న రోజులు"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ నుండి $END$ వరకు",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "బ్లాక్ లిస్ట్"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "అనుమతి జాబితా"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "సరళ"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "ఘర్షణ"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "కఠిన లాక్"
+  },
+  "options_schedule_enabled_label": {
+    "message": "ప్రారంభించబడింది"
+  },
+  "options_schedule_edit": {
+    "message": "సవరించు"
+  },
+  "options_schedule_delete": {
+    "message": "తొలగించు"
+  },
+  "options_schedule_add": {
+    "message": "షెడ్యూల్ ఎంట్రీని జోడించు"
+  },
+  "options_sounds_heading": {
+    "message": "శబ్దాలు"
+  },
+  "options_master_volume": {
+    "message": "మాస్టర్ వాల్యూమ్"
+  },
+  "options_sound_session_complete": {
+    "message": "సెషన్ పూర్తయింది"
+  },
+  "options_sound_break_start": {
+    "message": "విరామం ప్రారంభం"
+  },
+  "options_sound_break_end": {
+    "message": "విరామం ముగింపు"
+  },
+  "options_sound_schedule_start": {
+    "message": "షెడ్యూల్ ఆటో-ప్రారంభం"
+  },
+  "options_sound_preview_aria": {
+    "message": "$SOUND$ను ప్రివ్యూ చేయి",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "ప్లే చేయి"
+  },
+  "options_sound_preview_error": {
+    "message": "శబ్దాన్ని ప్రివ్యూ చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "నోటిఫికేషన్‌లు"
+  },
+  "options_session_complete_notification": {
+    "message": "సెషన్ పూర్తయినప్పుడు సిస్టమ్ నోటిఫికేషన్‌ను చూపించు"
+  },
+  "options_badge_heading": {
+    "message": "బ్యాడ్జ్"
+  },
+  "options_badge_countdown": {
+    "message": "టూల్‌బార్ ఐకాన్‌పై మిగిలిన సమయాన్ని చూపించు"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "వెబ్‌సైట్ యాక్సెస్"
+  },
+  "options_privacy_website_off_title": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ ఆఫ్‌లో ఉంది"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "మీరు యాక్సెస్ ఇచ్చే వరకు Focus Lock వెబ్‌సైట్‌లను బ్లాక్ చేయలేదు."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను ప్రారంభించండి"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ ఇవ్వబడింది, కానీ బ్లాకింగ్ యాక్టివ్‌గా లేదు"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome యాక్సెస్ ఇచ్చింది, కానీ దాని బ్లాకింగ్ స్క్రిప్ట్‌ను నమోదు చేయడంలో Focus Lock విఫలమైంది."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను మళ్లీ ప్రయత్నించు"
+  },
+  "options_privacy_website_on_title": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్ ప్రారంభించబడింది"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "సాధారణ వెబ్‌సైట్ పేజీలలో Focus Lock మీ యాక్టివ్ బ్లాకింగ్ నియమాలను వర్తింపజేయగలదు."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "స్థానిక చరిత్రను తొలగించాలా?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "స్థానిక చరిత్ర తొలగింపును నిర్ధారించు"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "స్థానిక చరిత్ర తొలగించబడింది."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "ఇది ఈ పరికరం నుండి పూర్తి URLలు, ఫోకస్ ఉద్దేశాలు, మరియు వివరణాత్మక సెషన్ ఈవెంట్‌లను శాశ్వతంగా తొలగిస్తుంది. ఇది నడుస్తున్న సెషన్‌ను క్లియర్ చేయదు, అది తన ఉద్దేశాన్ని మరియు అది బ్లాక్ చేస్తున్న ప్రతి ట్యాబ్ చిరునామాను ఉంచుకుంటుంది. సెషన్‌ను ముగించడం ఉద్దేశాన్ని క్లియర్ చేసి, తెరిచిన ప్రతి వెబ్‌సైట్ ట్యాబ్‌ను క్లియర్ చేసే క్లీనప్‌ను ప్రారంభిస్తుంది, మరియు క్లీనప్ పూర్తయినప్పుడు నిల్వ చేసిన ప్రతి చిరునామాను తొలగిస్తుంది."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "ఇది ఈ పరికరం నుండి పూర్తి URLలు, ఫోకస్ ఉద్దేశాలు, వివరణాత్మక సెషన్ ఈవెంట్‌లు, అలాగే స్థానిక-మాత్రమే మొత్తపు గణాంకాలను శాశ్వతంగా తొలగిస్తుంది. ఇది నడుస్తున్న సెషన్‌ను క్లియర్ చేయదు, అది తన ఉద్దేశాన్ని మరియు అది బ్లాక్ చేస్తున్న ప్రతి ట్యాబ్ చిరునామాను ఉంచుకుంటుంది. సెషన్‌ను ముగించడం ఉద్దేశాన్ని క్లియర్ చేసి, తెరిచిన ప్రతి వెబ్‌సైట్ ట్యాబ్‌ను క్లియర్ చేసే క్లీనప్‌ను ప్రారంభిస్తుంది, మరియు క్లీనప్ పూర్తయినప్పుడు నిల్వ చేసిన ప్రతి చిరునామాను తొలగిస్తుంది."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "రిమోట్ Sync డేటాను తొలగించాలా?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "రిమోట్ Sync డేటా తొలగింపును నిర్ధారించు"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "రిమోట్ Chrome Sync డేటా తొలగించబడింది."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "ఇది రిమోట్ సెట్టింగ్‌లు, బ్లాక్ మరియు అనుమతి జాబితాలు, సైట్ యాక్సెస్ క్రెడిట్, వరుసలు, మరియు డొమైన్-స్థాయి బ్లాక్ చేసిన ప్రయత్న మొత్తాలను Chrome Sync నుండి శాశ్వతంగా తొలగిస్తుంది. స్థానిక సెట్టింగ్‌లు మరియు గణాంకాలు ఈ పరికరంలోనే ఉంటాయి."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "అన్ని Focus Lock డేటాను తొలగించాలా?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "అన్ని Focus Lock డేటా తొలగింపును నిర్ధారించు"
+  },
+  "options_privacy_all_deleted": {
+    "message": "అన్ని Focus Lock డేటా తొలగించబడింది."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "ఇది ఈ పరికరంలో ఉన్న ప్రతి Focus Lock డేటాను, మరియు Chrome Sync‌లో ఉన్న ఏ Focus Lock కాపీలనైనా శాశ్వతంగా తొలగిస్తుంది:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "ఏ సెషన్ నడవనప్పుడు మాత్రమే అన్నీ తొలగించడం అందుబాటులో ఉంటుంది. తర్వాత Focus Lock సెటప్‌కు తిరిగి వెళుతుంది."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "స్థానిక చరిత్రను తొలగించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "రిమోట్ Chrome Sync డేటాను తొలగించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "అన్ని Focus Lock డేటాను తొలగించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "మీ తాజా మార్పులను Chrome Sync సేవ్ చేయలేకపోయింది. మీ స్థానిక సేవ్ సురక్షితంగా ఉంది."
+  },
+  "options_privacy_error_request": {
+    "message": "అభ్యర్థనను పూర్తి చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ నవీకరించబడింది."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "వెబ్‌సైట్ యాక్సెస్ ఇవ్వబడలేదు."
+  },
+  "options_privacy_error_website_access": {
+    "message": "వెబ్‌సైట్ యాక్సెస్‌ను నవీకరించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్ ప్రారంభించబడింది."
+  },
+  "options_privacy_error_export": {
+    "message": "ఈవెంట్ లాగ్‌ను ఎగుమతి చేయలేకపోయాం."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "ఈవెంట్ లాగ్‌ను ఎగుమతి చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Chrome అనుమతి సెట్టింగ్‌లను తెరవలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome అనుమతి సెట్టింగ్‌లు తెరవబడ్డాయి."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Chrome అనుమతి సెట్టింగ్‌లను తెరువు"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Chrome పరికరాలలో Focus Lock డేటాను సింక్ చేయి"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync ప్రారంభించబడింది."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync నిలిపివేయబడింది."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync మీ తాజా మార్పులను ఇంకా సేవ్ చేస్తోంది."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync ఆన్‌లో ఉంది."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync ఆఫ్‌లో ఉంది."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome Sync మార్పులు సేవ్ చేయబడ్డాయి."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome Sync ప్రారంభించడాన్ని మళ్లీ ప్రయత్నించు"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Chrome Syncను మళ్లీ ప్రయత్నించు"
+  },
+  "options_privacy_scope_synced": {
+    "message": "సింక్ చేయబడింది"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "స్థానికం మాత్రమే"
+  },
+  "options_privacy_developer_note": {
+    "message": "Focus Lock డెవలపర్‌కు ఏమీ పంపబడదు."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "స్థానిక ఈవెంట్ లాగ్"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "వివరణాత్మక స్థానిక లాగ్‌ను ఎగుమతి చేయండి లేదా స్థానిక బ్రౌజింగ్ మరియు సెషన్ చరిత్రను తొలగించండి."
+  },
+  "options_privacy_export_local_log": {
+    "message": "స్థానిక ఈవెంట్ లాగ్‌ను ఎగుమతి చేయి"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "స్థానిక ఈవెంట్ లాగ్ ఎగుమతి చేయబడింది."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "స్థానిక చరిత్రను తొలగించు"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "రిమోట్ Sync డేటా"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "ఈ పరికరాన్ని మార్చకుండా Chrome Sync‌లో ఉన్న Focus Lock కాపీలను తొలగించు."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "రిమోట్ Sync డేటాను తొలగించు"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "అన్ని Focus Lock డేటా"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "ఈ పరికరంలో ఉన్న ప్రతి Focus Lock రికార్డును, మరియు Chrome Sync‌లో ఉన్న ఏ Focus Lock కాపీలనైనా తొలగించి, తర్వాత సెటప్ నుండి మళ్లీ ప్రారంభించు. ఏ సెషన్ నడవనప్పుడు అందుబాటులో ఉంటుంది."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "అన్ని Focus Lock డేటా తొలగింపును తిరిగి ప్రారంభిస్తోంది."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "స్థానిక చరిత్ర తొలగింపును మళ్లీ ప్రయత్నించు"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "రిమోట్ Sync తొలగింపును మళ్లీ ప్రయత్నించు"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "అన్ని డేటా తొలగింపును మళ్లీ ప్రయత్నించు"
+  },
+  "options_error_load": {
+    "message": "సెట్టింగ్‌లను లోడ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించడానికి పేజీని రీలోడ్ చేయండి."
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lockను మళ్లీ ప్రారంభించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_error_refresh_privacy": {
+    "message": "గోప్యతా సెట్టింగ్‌లను రిఫ్రెష్ చేయలేకపోయాం. పేజీని రీలోడ్ చేయండి."
+  },
+  "options_error_website_blocking": {
+    "message": "వెబ్‌సైట్ బ్లాకింగ్‌ను నవీకరించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_error_change_sync": {
+    "message": "Chrome Syncను మార్చలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome Syncను మళ్లీ ప్రయత్నించలేకపోయాం. మళ్లీ ప్రయత్నించండి."
+  },
+  "options_error_save_settings": {
+    "message": "సెట్టింగ్‌లను సేవ్ చేయలేకపోయాం. పేజీని రీలోడ్ చేసి మళ్లీ ప్రయత్నించండి."
+  },
+  "options_error_save_lists": {
+    "message": "జాబితాలను సేవ్ చేయలేకపోయాం. పేజీని రీలోడ్ చేసి మళ్లీ ప్రయత్నించండి."
+  }
+}

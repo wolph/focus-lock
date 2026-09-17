@@ -1,6 +1,6 @@
 {
   "notify_session_complete_title": {
-    "message": "Kikao cha fokasi kimekamilika"
+    "message": "Fokasi session complete"
   },
   "notify_session_complete_body": {
     "message": "Kikao chako cha fokasi kimekamilika."
@@ -15,28 +15,28 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Ratiba ya fokasi haiwezi kuanza"
+    "message": "Fokasi schedule could not start"
   },
   "notify_schedule_unavailable_body": {
-    "message": "Kuzuia tovuti hakukamilishwa. Malizia kuanzisha au likizo tokeza upatikanaji wa tovuti, kisha jaribu tena."
+    "message": "Tovuti blocking is not enabled. Finish setup or grant website access, then try again."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Kuanzisha kumekamilika katika kichupo kingine."
+    "message": "Kuanzisha was completed in another tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Kuanzisha kubadilika katika kichupo kingine. Chaguzi za hivi karibuni zimeorodheshwa."
+    "message": "Kuanzisha changed in another tab. The latest choices were reloaded."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Kuanzisha kubadilika katika kichupo kingine. Pakia kuanzisha upya kabla ya kumaliza."
+    "message": "Kuanzisha changed in another tab. Reload setup before finishing."
   },
   "notify_setup_not_complete": {
-    "message": "Kuanzisha hakukamilika."
+    "message": "Kuanzisha is not complete."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "Kuanzisha si tayari kumaliza."
+    "message": "Kuanzisha is not ready to finish."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Chaguo la hifadhi ya kuanzisha linabadilika. Pakia kuanzisha upya kabla ya kumaliza."
+    "message": "Kuanzisha storage choice changed. Reload setup before finishing."
   },
   "notify_onboarding_storage_failed": {
     "message": "Operesheni ya hifadhi ya onboarding imeshindwa."
@@ -45,19 +45,19 @@
     "message": "Operesheni ya onboarding imeshindwa."
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lock haiwezi kuangalia upatikanaji wa tovuti. Jaribu kuanzisha tena au upya mkakati wa kieneza."
+    "message": "Fokasi Lock could not check website access. Jaribu Tena setup or reload the extension."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Upatikanaji wa tovuti umeitolewa, lakini Focus Lock haiwezi kuwezesha kuzuia. Jaribu kuanzisha tena au upya mkakati wa kieneza."
+    "message": "Tovuti access is granted, but Fokasi Lock could not enable blocking. Jaribu Tena setup or reload the extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Upatikanaji wa tovuti haupo, na Focus Lock haiwezi kumaliza usafi wa kuzuia. Jaribu kuanzisha tena au upya mkakati wa kieneza."
+    "message": "Tovuti access is unavailable, and Fokasi Lock could not finish blocking cleanup. Jaribu Tena setup or reload the extension."
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lock ilipokea hali isiyofaa ya upatikanaji wa tovuti. Jaribu kuanzisha tena au upya mkakati wa kieneza."
+    "message": "Fokasi Lock received an inconsistent website access state. Jaribu Tena setup or reload the extension."
   },
   "notify_boot_not_finished": {
-    "message": "Focus Lock haikumaliza kuanza: $REASON$",
+    "message": "Fokasi Lock did not finish starting: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -69,19 +69,19 @@
     "message": "hitilafu isiyojulikana"
   },
   "notify_nothing_to_reset": {
-    "message": "Focus Lock inaendelea, hakuna kitu cha kuanzisha upya"
+    "message": "Fokasi Lock is running, nothing to reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Focus Lock haiwezi kuanzisha upya muda unaohusika ambao umehakikishwa ndani ya uzalishaji wa sera"
+    "message": "Fokasi Lock cannot reset a runtime that is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
     "message": "Kujaribu tena kuondoa data hakipo."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Lemaza Sync kabla ya kuondoa data iliyolingana"
+    "message": "Lemaza Sync before deleting synced data"
   },
   "notify_work_gate_busy": {
-    "message": "Focus Lock bado inamaliza mabadiliko ya zamani. Jaribu tena kwa dakika."
+    "message": "Fokasi Lock is still finishing an earlier change. Try again in a moment."
   },
   "notify_work_gate_stuck": {
     "message": "Kiwango kilichofunguka haiwezi kufungwa. Jaribu tena."
@@ -90,10 +90,10 @@
     "message": "Kichupo cha kazi hakipo."
   },
   "notify_settings_sync_limit": {
-    "message": "Mipango inazidi ukomo wa Chrome Sync wa 8 KB. Ondoa entries ya ratiba au fupi habari, kisha jaribu tena."
+    "message": "Mipango exceed the 8 KB Chrome Sync limit. Ondoa schedule entries or shorten intentions, then try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Orodha inazidi ukomo wa Chrome Sync wa 8 KB. Ondoa kanuni za kawaida au whitelisting, kisha jaribu tena."
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Ondoa custom or whitelist rules, then try again."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "kikao kigumu kinaendelea: kuondoa tovuti ambazo zimefungwa inafungua wakati inapoishia"

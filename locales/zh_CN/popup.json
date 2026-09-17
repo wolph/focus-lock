@@ -1,12 +1,348 @@
 {
+  "popup_next_schedule": {
+    "message": "下一个：$DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "设置"
+  },
+  "popup_open_settings_failed": {
+    "message": "无法打开设置。请重试。"
+  },
+  "popup_settings_load_failed": {
+    "message": "无法加载会话设置。重新加载弹出窗口以重试。显示默认值。"
+  },
+  "popup_open_setup_failed": {
+    "message": "无法打开设置。请重试。"
+  },
+  "popup_setup_required_heading": {
+    "message": "完成 Focus Lock 设置"
+  },
+  "popup_setup_required_body": {
+    "message": "在启动会话前选择您的起始列表、网站访问和存储模式。"
+  },
+  "popup_open_setup_button": {
+    "message": "打开设置"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "无法确认网站阻止。请重试。"
+  },
+  "popup_blocking_enable_failed": {
+    "message": "无法启用网站阻止。请重试。"
+  },
+  "popup_blocking_off_heading": {
+    "message": "网站阻止已关闭"
+  },
+  "popup_blocking_off_body": {
+    "message": "在 Chrome 授予网站访问权限并启用阻止之前，Focus Lock 无法启动会话。"
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome 未授予网站访问权限。网站阻止仍未启用。"
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "已授予网站访问权限，但 Focus Lock 无法启用阻止。请重试设置或重新加载扩展程序。"
+  },
+  "popup_enable_blocking_button": {
+    "message": "启用网站阻止"
+  },
+  "popup_retry_button": {
+    "message": "重试"
+  },
+  "popup_notice_access_revoked": {
+    "message": "您的会话已结束，因为网站访问已被移除。"
+  },
+  "popup_notice_blocking_failed": {
+    "message": "您的会话已结束，因为 Focus Lock 无法启用网站阻止。"
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "无法关闭此通知。请重试。"
+  },
+  "popup_dismiss_notice_label": {
+    "message": "关闭网站访问通知"
+  },
+  "popup_dismiss_button": {
+    "message": "关闭"
+  },
+  "popup_restart_failed": {
+    "message": "无法重启 Focus Lock。请重试。"
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock 无法启动"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "无法读取原因。"
+  },
+  "popup_reset_runtime_button": {
+    "message": "重置本地运行时"
+  },
+  "popup_reset_runtime_note": {
+    "message": "保留您的设置、列表和统计。清除当前会话状态。"
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "删除所有内容并重新开始"
+  },
+  "popup_keep_data_button": {
+    "message": "保留我的数据"
+  },
+  "popup_delete_all_button": {
+    "message": "删除所有 Focus Lock 数据"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "设置状态不可用。重新加载 Focus Lock 以重试。"
+  },
+  "popup_snapshot_unavailable": {
+    "message": "专注状态不可用"
+  },
+  "popup_action_in_progress": {
+    "message": "操作进行中"
+  },
+  "popup_active_site_checking": {
+    "message": "正在检查活跃网站"
+  },
+  "popup_active_site_unsupported": {
+    "message": "打开常规网站以解锁"
+  },
+  "popup_active_site_unknown": {
+    "message": "无法识别活跃网站"
+  },
+  "popup_active_site_error": {
+    "message": "无法识别活跃网站。"
+  },
+  "popup_resume_now": {
+    "message": "立即恢复"
+  },
+  "popup_start_next_focus_early": {
+    "message": "提前开始下一个专注"
+  },
+  "popup_unlock_this_site": {
+    "message": "解锁此网站"
+  },
+  "popup_unlock_all_sites": {
+    "message": "解锁所有网站"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ 访问，$CREDIT$ 额度",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ 访问，$CREDIT$ 额度 - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "选择工作标签页"
+  },
+  "popup_change_work_tab_button": {
+    "message": "更改工作标签页"
+  },
+  "popup_session_actions_summary": {
+    "message": "会话操作"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ 网站访问额度",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "添加允许的域名"
+  },
   "popup_allowed_domain_placeholder": {
     "message": "example.com"
   },
+  "popup_add_allowed_domain_button": {
+    "message": "添加允许的域名"
+  },
   "popup_add_button": {
-    "message": "Add"
+    "message": "添加"
+  },
+  "popup_draft_allowed_only": {
+    "message": "仅 $COUNT$ 个允许网站规则。其他网站已阻止。",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ 个被阻止的分类，$RULES$ 个额外规则。",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "强制锁定。无法提前结束。"
+  },
+  "popup_draft_stop_flexible": {
+    "message": "随时结束。"
+  },
+  "popup_draft_stop_friction": {
+    "message": "在 $SECONDS$ 秒等待后结束。",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "在 $SECONDS$ 秒等待和确认短语后结束。",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "会话长度"
+  },
+  "popup_custom_minutes_label": {
+    "message": "自定义分钟数"
   },
   "popup_custom_minutes_placeholder": {
-    "message": "min"
+    "message": "分钟"
+  },
+  "popup_gate_force_end": {
+    "message": "忽略超时并无论如何结束"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "继续专注"
+  },
+  "popup_gate_phrase_label": {
+    "message": "输入："
+  },
+  "popup_gate_update_failed": {
+    "message": "无法更新门槛。请重试。"
+  },
+  "popup_gate_intention": {
+    "message": "您说：$INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "片刻以决定："
+  },
+  "popup_gate_wait_remaining": {
+    "message": "的 $TOTAL$ 秒",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "回到工作"
+  },
+  "popup_destination_unavailable": {
+    "message": "目标不可用"
+  },
+  "popup_back_to_work_name": {
+    "message": "回到工作：$DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "回到工作：$DESTINATION$（$HOSTNAME$）",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "在阻止网站列表重新加载之前禁用分类编辑。"
+  },
+  "popup_blocked_categories_heading": {
+    "message": "已阻止的分类"
+  },
+  "popup_show_full_domain": {
+    "message": "显示完整域名：$PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "显示完整正则表达式：$PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "域名"
+  },
+  "popup_rule_kind_regex": {
+    "message": "正则表达式"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ 网站",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "popup_sites_one": {
     "message": "$COUNT$ 个网站",
@@ -41,6 +377,40 @@
       "COUNT": {
         "content": "$1",
         "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "允许的例外"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "额外阻止规则"
+  },
+  "popup_no_extra_blocked": {
+    "message": "没有额外阻止规则。"
+  },
+  "popup_allowed_heading": {
+    "message": "允许的网站和规则"
+  },
+  "popup_no_allowed_sites": {
+    "message": "尚无允许的网站。"
+  },
+  "popup_what_will_be_blocked": {
+    "message": "将被阻止的内容"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "将被允许的内容"
+  },
+  "popup_categories_selected": {
+    "message": "选定 $SELECTED$ 个，共 $TOTAL$ 个分类",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
       }
     }
   },
@@ -79,5 +449,182 @@
         "example": "3"
       }
     }
+  },
+  "popup_scope_whitelist": {
+    "message": "这里的允许网站和规则更改仅适用于此会话。其他一切都被阻止。"
+  },
+  "popup_scope_blacklist": {
+    "message": "这里的分类和规则更改仅适用于此会话。"
+  },
+  "popup_open_settings_defaults": {
+    "message": "打开设置以获得永久默认值"
+  },
+  "popup_rule_details_label": {
+    "message": "会话规则详情"
+  },
+  "popup_session_type_legend": {
+    "message": "会话类型"
+  },
+  "popup_session_type_flexible": {
+    "message": "灵活"
+  },
+  "popup_session_type_friction": {
+    "message": "缓冲"
+  },
+  "popup_session_type_hard": {
+    "message": "强制锁定"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "随时立即结束会话。"
+  },
+  "popup_session_type_friction_hint": {
+    "message": "提前结束需要 $WAIT$。不需要输入。",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "提前结束需要 $WAIT$ 和输入确认。",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "会话无法提前结束。网站访问额度仍然有效。"
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "选定的分类和额外规则被阻止。其他网站保持可用。"
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "仅列出的网站可用。所有其他网站被阻止。"
+  },
+  "popup_invalid_duration_error": {
+    "message": "输入大于零分钟的会话长度。"
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "默认值已更改，但无法加载当前列表。重新加载弹出窗口。"
+  },
+  "popup_no_work_tab_option": {
+    "message": "无工作标签页（可选）"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "选定的标签页不可用 - 选择另一个"
+  },
+  "popup_cycles_label": {
+    "message": "周期：$FOCUS$ 分钟专注，$SHORT_BREAK$ 分钟休息，每 $LONG_EVERY$ 个周期有 $LONG_BREAK$ 分钟长休息",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "意图"
+  },
+  "popup_intention_placeholder": {
+    "message": "您在做什么？"
+  },
+  "popup_work_tab_named": {
+    "message": "工作标签页：$TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "更改"
+  },
+  "popup_session_settings_summary": {
+    "message": "会话设置"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "选择工作标签页"
+  },
+  "popup_work_tab_select_label": {
+    "message": "工作标签页"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$（当前）",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "阻止模式"
+  },
+  "popup_invalid_time_label": {
+    "message": "无效时间"
+  },
+  "popup_start_focus_label": {
+    "message": "启动 $DURATION$ 专注",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "输入有效的域名，例如 docs.example.com。"
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "无法加载工作标签页。重新打开弹出窗口以重试。"
+  },
+  "popup_use_this_tab": {
+    "message": "使用此标签页"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "此标签页不可用于工作。选择另一个打开的标签页。"
+  },
+  "popup_checking_current_tab": {
+    "message": "正在检查当前标签页..."
+  },
+  "popup_finding_current_tab": {
+    "message": "正在查找您的当前标签页..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "无法加载您的当前标签页。请重试。"
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "选择或更换您的工作标签页。"
+  },
+  "popup_saving_work_tab": {
+    "message": "正在保存工作标签页..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "无法保存工作标签页。请重试。"
+  },
+  "popup_choose_open_tab_option": {
+    "message": "选择打开的标签页"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "或选择另一个标签页"
+  },
+  "popup_start_failed": {
+    "message": "无法启动会话。请重试。"
   }
 }

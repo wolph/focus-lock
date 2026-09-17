@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "கவன அமர்வு முடிந்தது"
+  },
+  "notify_session_complete_body": {
+    "message": "உங்கள் கவன அமர்வு முடிந்தது."
+  },
+  "notify_schedule_window_body": {
+    "message": "$END$ வரை பூட்டப்பட்டுள்ளது.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "கவனத் திட்டம் தொடங்க முடியவில்லை"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "இணையதளத் தடுப்பு இயக்கப்படவில்லை. அமைப்பை முடிக்கவும் அல்லது இணையதள அணுகலை வழங்கவும், பின்னர் மீண்டும் முயற்சிக்கவும்."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "அமைப்பு வேறொரு தாவலில் முடிக்கப்பட்டது."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "அமைப்பு வேறொரு தாவலில் மாற்றப்பட்டது. சமீபத்திய தேர்வுகள் மீண்டும் ஏற்றப்பட்டன."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "அமைப்பு வேறொரு தாவலில் மாற்றப்பட்டது. முடிப்பதற்கு முன் அமைப்பை மீண்டும் ஏற்றவும்."
+  },
+  "notify_setup_not_complete": {
+    "message": "அமைப்பு இன்னும் முடியவில்லை."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "அமைப்பு முடிக்கத் தயாராக இல்லை."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "அமைப்பு சேமிப்புத் தேர்வு மாற்றப்பட்டது. முடிப்பதற்கு முன் அமைப்பை மீண்டும் ஏற்றவும்."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "அமைப்பு சேமிப்புச் செயல்பாடு தோல்வியடைந்தது."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "அமைப்புச் செயல்பாடு தோல்வியடைந்தது."
+  },
+  "notify_website_access_check_failed": {
+    "message": "இணையதள அணுகலை Focus Lock சரிபார்க்க முடியவில்லை. அமைப்பை மீண்டும் முயற்சிக்கவும் அல்லது நீட்டிப்பை மீண்டும் ஏற்றவும்."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "இணையதள அணுகல் வழங்கப்பட்டது, ஆனால் தடுப்பை இயக்க Focus Lock-ஆல் முடியவில்லை. அமைப்பை மீண்டும் முயற்சிக்கவும் அல்லது நீட்டிப்பை மீண்டும் ஏற்றவும்."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "இணையதள அணுகல் இல்லை, மேலும் தடுப்புச் சுத்தம் செய்வதை Focus Lock-ஆல் முடிக்க முடியவில்லை. அமைப்பை மீண்டும் முயற்சிக்கவும் அல்லது நீட்டிப்பை மீண்டும் ஏற்றவும்."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "முரணான இணையதள அணுகல் நிலையை Focus Lock பெற்றது. அமைப்பை மீண்டும் முயற்சிக்கவும் அல்லது நீட்டிப்பை மீண்டும் ஏற்றவும்."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock தொடங்குவதை முடிக்கவில்லை: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "தெரியாத பிழை"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock இயங்குகிறது, மீட்டமைக்க எதுவும் இல்லை"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "ஒரு கொள்கைத் தொகுப்பினுள் இணைக்கப்பட்ட இயக்க நிலையை Focus Lock-ஆல் மீட்டமைக்க முடியாது"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "தரவு அழிப்பு மறுமுயற்சி கிடைக்கவில்லை."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "ஒத்திசைக்கப்பட்ட தரவை நீக்குவதற்கு முன் Sync-ஐ முடக்கவும்"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock முந்தைய மாற்றத்தை இன்னும் முடிக்கிறது. சிறிது நேரம் கழித்து முயற்சிக்கவும்."
+  },
+  "notify_work_gate_stuck": {
+    "message": "திறந்த நுழைவாயிலை மூட முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "பணி தாவல் கிடைக்கவில்லை."
+  },
+  "notify_settings_sync_limit": {
+    "message": "அமைப்புகள் 8 KB Chrome Sync வரம்பைத் தாண்டுகின்றன. திட்ட உள்ளீடுகளை நீக்கவும் அல்லது நோக்கங்களைச் சுருக்கவும், பின்னர் மீண்டும் முயற்சிக்கவும்."
+  },
+  "notify_lists_sync_limit": {
+    "message": "பட்டியல்கள் 8 KB Chrome Sync வரம்பைத் தாண்டுகின்றன. தனிப்பயன் அல்லது அனுமதிப் பட்டியல் விதிகளை நீக்கவும், பின்னர் மீண்டும் முயற்சிக்கவும்."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "கடும் அமர்வு இயங்குகிறது: தடுக்கப்பட்ட தளங்களை அகற்றுவது அது முடியும்போது திறக்கும்"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "கடும் அமர்வு இயங்குகிறது: புதிய அனுமதிப் பட்டியல் உள்ளீடுகள் அது முடியும்போது திறக்கும்"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "கடும் அமர்வு இயங்குகிறது: வகைகளை முடக்குவது அது முடியும்போது திறக்கும்"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "கடும் அமர்வு இயங்குகிறது: புதிய விலக்குகள் அது முடியும்போது திறக்கும்"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "கடும் அமர்வு இயங்குகிறது: இயல்புக் கடினத்தன்மையைக் குறைப்பது அது முடியும் வரை காத்திருக்கும்"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "கடும் அமர்வு இயங்குகிறது: பரிசீலனை தாமதத்தைக் குறைப்பது நுழைவாயிலை பலவீனப்படுத்தும்"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "கடும் அமர்வு இயங்குகிறது: தட்டச்சு செய்யும் வாக்கியத்தை நீக்குவது நுழைவாயிலை பலவீனப்படுத்தும்"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "கடும் அமர்வு இயங்குகிறது: இடைவேளைக் கடன் ஈட்டு விகிதத்தை உயர்த்துவது கூடுதல் தப்பிப்புகளுக்கு நிதியளிக்கும்"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "கடும் அமர்வு இயங்குகிறது: இடைவேளைக் கடன் வரம்பை உயர்த்துவது கூடுதல் தப்பிப்புகளுக்கு நிதியளிக்கும்"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "கடும் அமர்வு இயங்குகிறது: இடைவேளைகளைக் குறைப்பது அவற்றின் செலவைக் குறைக்கும்"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "கடும் அமர்வு இயங்குகிறது: திறப்புகளைக் குறைப்பது அவற்றின் செலவைக் குறைக்கும்"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "கடும் அமர்வு இயங்குகிறது: அதைத் தொடங்கிய திட்ட உள்ளீட்டை அது முடியும் வரை பலவீனப்படுத்த முடியாது"
+  }
+}

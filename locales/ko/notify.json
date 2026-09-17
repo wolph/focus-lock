@@ -1,6 +1,6 @@
 {
   "notify_session_complete_title": {
-    "message": "포커스 세션이 완료되었습니다"
+    "message": "포커스 세션 완료"
   },
   "notify_session_complete_body": {
     "message": "포커스 세션이 종료되었습니다."
@@ -15,28 +15,28 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "포커스 일정을 시작할 수 없습니다"
+    "message": "포커스 일정을 시작할 수 없음"
   },
   "notify_schedule_unavailable_body": {
-    "message": "웹사이트 차단이 활성화되지 않았습니다. 설정을 완료하거나 웹사이트 접근 권한을 부여한 후 다시 시도하세요."
+    "message": "웹사이트 차단이 활성화되지 않았습니다. 설정을 완료하거나 웹사이트 액세스를 허가한 후 다시 시도하십시오."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "설정이 다른 탭에서 완료되었습니다."
+    "message": "다른 탭에서 설정이 완료되었습니다."
   },
   "notify_setup_changed_reloaded": {
-    "message": "설정이 다른 탭에서 변경되었습니다. 최신 선택 항목이 다시 로드되었습니다."
+    "message": "다른 탭에서 설정이 변경되었습니다. 최신 선택 사항이 다시로드되었습니다."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "설정이 다른 탭에서 변경되었습니다. 완료하기 전에 설정을 다시 로드하세요."
+    "message": "다른 탭에서 설정이 변경되었습니다. 완료하기 전에 설정을 다시로드하십시오."
   },
   "notify_setup_not_complete": {
     "message": "설정이 완료되지 않았습니다."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "설정을 완료할 준비가 되어있지 않습니다."
+    "message": "설정이 완료될 준비가 되지 않았습니다."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "설정 저장소 선택이 변경되었습니다. 완료하기 전에 설정을 다시 로드하세요."
+    "message": "설정 저장소 선택이 변경되었습니다. 완료하기 전에 설정을 다시로드하십시오."
   },
   "notify_onboarding_storage_failed": {
     "message": "온보딩 저장소 작업이 실패했습니다."
@@ -45,19 +45,19 @@
     "message": "온보딩 작업이 실패했습니다."
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lock이 웹사이트 접근을 확인할 수 없습니다. 설정을 다시 실행하거나 확장 프로그램을 다시 로드하세요."
+    "message": "Focus Lock이 웹사이트 액세스를 확인할 수 없습니다. 설정을 다시 시도하거나 확장 프로그램을 다시로드하십시오."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "웹사이트 접근은 부여되었지만 Focus Lock이 차단을 활성화할 수 없습니다. 설정을 다시 실행하거나 확장 프로그램을 다시 로드하세요."
+    "message": "웹사이트 액세스가 허가되었지만 Focus Lock이 차단을 활성화할 수 없습니다. 설정을 다시 시도하거나 확장 프로그램을 다시로드하십시오."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "웹사이트 접근이 불가능하며 Focus Lock이 차단 정리를 완료할 수 없습니다. 설정을 다시 실행하거나 확장 프로그램을 다시 로드하세요."
+    "message": "웹사이트 액세스가 없으며 Focus Lock이 차단 정리를 완료할 수 없습니다. 설정을 다시 시도하거나 확장 프로그램을 다시로드하십시오."
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lock이 불일치하는 웹사이트 접근 상태를 받았습니다. 설정을 다시 실행하거나 확장 프로그램을 다시 로드하세요."
+    "message": "Focus Lock이 불일치하는 웹사이트 액세스 상태를 받았습니다. 설정을 다시 시도하거나 확장 프로그램을 다시로드하십시오."
   },
   "notify_boot_not_finished": {
-    "message": "Focus Lock이 시작을 완료하지 못했습니다: $REASON$",
+    "message": "Focus Lock이 시작을 완료하지 못했습니다：$REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -69,66 +69,66 @@
     "message": "알 수 없는 오류"
   },
   "notify_nothing_to_reset": {
-    "message": "Focus Lock이 실행 중입니다. 재설정할 것이 없습니다."
+    "message": "Focus Lock이 실행 중이며 재설정할 항목이 없습니다"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Focus Lock이 정책 생성 내에서 커밋된 런타임을 재설정할 수 없습니다."
+    "message": "Focus Lock이 정책 생성 내에서 커밋된 런타임을 재설정할 수 없습니다"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "데이터 삭제 재시도를 사용할 수 없습니다."
+    "message": "데이터 지우기 다시 시도를 사용할 수 없습니다."
   },
   "notify_disable_sync_before_delete": {
-    "message": "동기화된 데이터를 삭제하기 전에 동기화를 비활성화하세요."
+    "message": "동기화된 데이터를 삭제하기 전에 동기화를 비활성화하십시오"
   },
   "notify_work_gate_busy": {
-    "message": "Focus Lock이 여전히 이전 변경을 완료하고 있습니다. 잠시 후 다시 시도하세요."
+    "message": "Focus Lock이 여전히 이전 변경을 완료하고 있습니다. 잠시 후 다시 시도하십시오."
   },
   "notify_work_gate_stuck": {
-    "message": "열린 게이트를 닫을 수 없습니다. 다시 시도하세요."
+    "message": "열린 게이트를 닫을 수 없습니다. 다시 시도하십시오."
   },
   "notify_work_tab_unavailable": {
     "message": "작업 탭을 사용할 수 없습니다."
   },
   "notify_settings_sync_limit": {
-    "message": "설정이 8KB Chrome 동기화 제한을 초과합니다. 일정 항목을 제거하거나 의도를 단축한 후 다시 시도하세요."
+    "message": "설정이 8KB Chrome 동기화 제한을 초과합니다. 일정 항목을 제거하거나 의도를 단축한 후 다시 시도하십시오."
   },
   "notify_lists_sync_limit": {
-    "message": "목록이 8KB Chrome 동기화 제한을 초과합니다. 사용자 정의 또는 허용 목록 규칙을 제거한 후 다시 시도하세요."
+    "message": "목록이 8KB Chrome 동기화 제한을 초과합니다. 사용자 지정 또는 허용 목록 규칙을 제거한 후 다시 시도하십시오."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "하드 잠금 세션이 실행 중입니다. 차단된 사이트를 제거하면 세션이 종료될 때 잠금이 해제됩니다."
+    "message": "하드 세션이 실행 중입니다：차단된 사이트를 제거하면 세션이 끝날 때 잠금해제됩니다"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "하드 잠금 세션이 실행 중입니다. 새 허용 목록 항목은 세션이 종료될 때 잠금이 해제됩니다."
+    "message": "하드 세션이 실행 중입니다：새 허용 목록 항목은 세션이 끝날 때 잠금해제됩니다"
   },
   "notify_guard_lists_disable_category": {
-    "message": "하드 잠금 세션이 실행 중입니다. 카테고리를 비활성화하면 세션이 종료될 때 잠금이 해제됩니다."
+    "message": "하드 세션이 실행 중입니다：카테고리를 비활성화하면 세션이 끝날 때 잠금해제됩니다"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "하드 잠금 세션이 실행 중입니다. 새 제외는 세션이 종료될 때 잠금이 해제됩니다."
+    "message": "하드 세션이 실행 중입니다：새 제외는 세션이 끝날 때 잠금해제됩니다"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "하드 잠금 세션이 실행 중입니다. 기본 엄격성을 약화하면 종료될 때까지 대기합니다."
+    "message": "하드 세션이 실행 중입니다：기본 엄격함을 약화시키면 세션이 끝날 때까지 기다립니다"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "하드 잠금 세션이 실행 중입니다. 고민 지연을 단축하면 게이트가 약해집니다."
+    "message": "하드 세션이 실행 중입니다：숙고 지연을 단축하면 게이트가 약해집니다"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "하드 잠금 세션이 실행 중입니다. 입력된 문구를 삭제하면 게이트가 약해집니다."
+    "message": "하드 세션이 실행 중입니다：입력한 구를 삭제하면 게이트가 약해집니다"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "하드 잠금 세션이 실행 중입니다. 일시 중지 수입 비율을 높이면 더 많은 탈출에 자금이 지원됩니다."
+    "message": "하드 세션이 실행 중입니다：일시 중지 수익률을 올리면 더 많은 탈출 자금이 나옵니다"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "하드 잠금 세션이 실행 중입니다. 일시 중지 상한을 올리면 더 많은 탈출에 자금이 지원됩니다."
+    "message": "하드 세션이 실행 중입니다：일시 중지 상한을 올리면 더 많은 탈출 자금이 나옵니다"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "하드 잠금 세션이 실행 중입니다. 일시 중지를 단축하면 비용이 감소합니다."
+    "message": "하드 세션이 실행 중입니다：일시 중지를 단축하면 비용이 낮아집니다"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "하드 잠금 세션이 실행 중입니다. 잠금 해제를 단축하면 비용이 감소합니다."
+    "message": "하드 세션이 실행 중입니다：잠금해제를 단축하면 비용이 낮아집니다"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "하드 잠금 세션이 실행 중입니다. 일정 항목은 세션이 종료될 때까지 약화될 수 없습니다."
+    "message": "하드 세션이 실행 중입니다：일정 항목은 세션이 끝날 때까지 약해질 수 없습니다"
   }
 }
