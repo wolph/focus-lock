@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Sesija fokusa je završena"
+  },
+  "notify_session_complete_body": {
+    "message": "Tvoja sesija fokusa je gotova."
+  },
+  "notify_schedule_window_body": {
+    "message": "Zaključano do $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Raspored fokusa nije mogao započeti"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Blokiranje web-stranica nije uključeno. Dovrši postavljanje ili odobri pristup web-stranicama pa pokušaj ponovno."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Postavljanje je dovršeno u drugoj kartici."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Postavljanje je promijenjeno u drugoj kartici. Najnoviji izbori su ponovno učitani."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Postavljanje je promijenjeno u drugoj kartici. Ponovno učitaj postavljanje prije dovršetka."
+  },
+  "notify_setup_not_complete": {
+    "message": "Postavljanje nije dovršeno."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Postavljanje nije spremno za dovršetak."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Izbor pohrane u postavljanju je promijenjen. Ponovno učitaj postavljanje prije dovršetka."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Operacija pohrane tijekom postavljanja nije uspjela."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Operacija postavljanja nije uspjela."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock nije mogao provjeriti pristup web-stranicama. Pokušaj postavljanje ponovno ili ponovno učitaj proširenje."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Pristup web-stranicama je odobren, ali Focus Lock nije mogao uključiti blokiranje. Pokušaj postavljanje ponovno ili ponovno učitaj proširenje."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Pristup web-stranicama nije dostupan, a Focus Lock nije mogao dovršiti čišćenje blokiranja. Pokušaj postavljanje ponovno ili ponovno učitaj proširenje."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock je primio nedosljedno stanje pristupa web-stranicama. Pokušaj postavljanje ponovno ili ponovno učitaj proširenje."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock nije dovršio pokretanje: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "nepoznata pogreška"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock radi, nema se što poništiti"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock ne može poništiti izvođenje koje je još upisano u generaciju pravila"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Ponovni pokušaj brisanja podataka nije dostupan."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Isključi sinkronizaciju prije brisanja sinkroniziranih podataka"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock još dovršava raniju promjenu. Pokušaj ponovno za trenutak."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Otvorena prepreka nije se mogla zatvoriti. Pokušaj ponovno."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Radna kartica nije dostupna."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Postavke premašuju ograničenje od 8 kB u Chrome sinkronizaciji. Ukloni stavke rasporeda ili skrati namjere pa pokušaj ponovno."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Popisi premašuju ograničenje od 8 kB u Chrome sinkronizaciji. Ukloni vlastita pravila ili pravila s popisa dopuštenih pa pokušaj ponovno."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "traje sesija s čvrstim zaključavanjem: uklanjanje blokiranih web-stranica otključava se kad ona završi"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "traje sesija s čvrstim zaključavanjem: nove stavke popisa dopuštenih otključavaju se kad ona završi"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "traje sesija s čvrstim zaključavanjem: isključivanje kategorija otključava se kad ona završi"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "traje sesija s čvrstim zaključavanjem: nova izuzeća otključavaju se kad ona završi"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "traje sesija s čvrstim zaključavanjem: slabljenje zadane strogoće čeka njezin kraj"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "traje sesija s čvrstim zaključavanjem: skraćivanje odgode promišljanja slabi prepreku"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "traje sesija s čvrstim zaključavanjem: uklanjanje upisane rečenice slabi prepreku"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "traje sesija s čvrstim zaključavanjem: povećanje stope zarade za pauze financira više bijegova"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "traje sesija s čvrstim zaključavanjem: povećanje gornje granice za pauze financira više bijegova"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "traje sesija s čvrstim zaključavanjem: skraćivanje pauza snižava njihovu cijenu"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "traje sesija s čvrstim zaključavanjem: skraćivanje otključavanja snižava njihovu cijenu"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "traje sesija s čvrstim zaključavanjem: njezina stavka rasporeda ne može se oslabiti dok ne završi"
+  }
+}

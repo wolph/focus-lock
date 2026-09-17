@@ -3,7 +3,7 @@
     "message": "Focus Lock"
   },
   "overlay_stopped_title": {
-    "message": "Terkunci - Focus Lock"
+    "message": "Kilitli - Focus Lock"
   },
   "overlay_return_label": {
     "message": "$ACTION$: $DESTINATION$",
@@ -18,85 +18,68 @@
       }
     }
   },
-  "overlay_return_label_host": {
-    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
-    "placeholders": {
-      "ACTION": {
-        "content": "$1",
-        "example": "Back to work"
-      },
-      "DESTINATION": {
-        "content": "$2",
-        "example": "Annual report"
-      },
-      "HOSTNAME": {
-        "content": "$3",
-        "example": "work.example"
-      }
-    }
-  },
   "overlay_target_checking": {
-    "message": "Memeriksa tab kerja yang tersedia..."
+    "message": "Uygun çalışma sekmeleri denetleniyor..."
   },
   "overlay_target_pick_tab": {
-    "message": "Pilih tab terbuka untuk melanjutkan tugasmu."
+    "message": "İşine devam etmek için açık bir sekme seç."
   },
   "overlay_target_session_unavailable": {
-    "message": "Sesi fokusmu tidak tersedia. Coba lagi, atau muat ulang halaman ini."
+    "message": "Odak seansın kullanılamıyor. Tekrar dene ya da bu sayfayı yeniden yükle."
   },
   "overlay_target_lookup_failed": {
-    "message": "Tidak dapat memuat tab kerjamu. Coba lagi, atau muat ulang halaman ini."
+    "message": "Çalışma sekmen yüklenemedi. Tekrar dene ya da bu sayfayı yeniden yükle."
   },
   "overlay_target_reconnect": {
-    "message": "Muat ulang halaman ini untuk tersambung kembali ke Focus Lock."
+    "message": "Focus Lock ile yeniden bağlanmak için bu sayfayı yeniden yükle."
   },
   "overlay_target_page_changed": {
-    "message": "Halaman yang meminta telah berubah. Muat ulang halaman."
+    "message": "İsteği yapan sayfa değişti. Sayfayı yeniden yükle."
   },
   "overlay_target_transport_error": {
-    "message": "Tidak dapat menjangkau Focus Lock. Coba lagi."
+    "message": "Focus Lock'a ulaşılamadı. Tekrar dene."
   },
   "overlay_picker_heading": {
-    "message": "Pilih tab kerja"
+    "message": "Bir çalışma sekmesi seç"
   },
   "overlay_picker_cancel": {
-    "message": "Batal"
+    "message": "Vazgeç"
   },
   "overlay_picker_search_label": {
-    "message": "Cari tab kerja"
+    "message": "Çalışma sekmelerinde ara"
   },
   "overlay_picker_search_placeholder": {
-    "message": "Cari berdasarkan judul atau situs web"
+    "message": "Başlığa ya da siteye göre ara"
   },
   "overlay_picker_clear_search": {
-    "message": "Hapus pencarian"
+    "message": "Aramayı temizle"
   },
   "overlay_picker_refresh_tabs": {
-    "message": "Segarkan tab"
+    "message": "Sekmeleri yenile"
   },
   "overlay_picker_available_tabs": {
-    "message": "Tab kerja yang tersedia"
+    "message": "Uygun çalışma sekmeleri"
   },
   "overlay_picker_finding": {
-    "message": "Mencari tab yang tersedia..."
+    "message": "Uygun sekmeler aranıyor..."
   },
   "overlay_picker_searching": {
-    "message": "Mencari tab kerja..."
+    "message": "Çalışma sekmelerinde aranıyor..."
   },
   "overlay_picker_saving": {
-    "message": "Menyimpan tab kerja..."
+    "message": "Çalışma sekmesi kaydediliyor..."
   },
   "overlay_picker_no_tabs": {
-    "message": "Tidak ada tab kerja yang tersedia. Buka situs yang diizinkan oleh sesi ini, lalu segarkan tab."
+    "message": "Uygun çalışma sekmesi yok. Bu seansın izin verdiği bir site aç, sonra sekmeleri yenile."
   },
   "overlay_picker_no_matches": {
-    "message": "Tidak ada tab yang cocok. Coba pencarian lain atau hapus pencarian."
+    "message": "Eşleşen sekme yok. Başka bir arama dene ya da aramayı temizle."
   },
   "overlay_picker_load_failed": {
-    "message": "Tidak dapat memuat tab kerja. Coba lagi."
+    "message": "Çalışma sekmeleri yüklenemedi. Tekrar dene."
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ dari $COUNT$ tab",
+    "message": "$COUNT$ sekmeden $MATCHES$ tanesi",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -109,7 +92,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ dari $COUNT$ tab",
+    "message": "$COUNT$ sekmeden $MATCHES$ tanesi",
     "placeholders": {
       "COUNT": {
         "content": "$1",

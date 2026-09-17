@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Сесията на фокус завърши"
+  },
+  "notify_session_complete_body": {
+    "message": "Сесията ти на фокус приключи."
+  },
+  "notify_schedule_window_body": {
+    "message": "Заключено до $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Графикът за фокус не можа да започне"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Блокирането на сайтове не е включено. Завърши настройката или разреши достъпа до сайтове и опитай отново."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Настройката е завършена в друг раздел."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Настройката се промени в друг раздел. Най-новите избори бяха презаредени."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Настройката се промени в друг раздел. Презареди настройката, преди да я завършиш."
+  },
+  "notify_setup_not_complete": {
+    "message": "Настройката не е завършена."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Настройката не е готова за завършване."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Изборът за съхранение в настройката се промени. Презареди настройката, преди да я завършиш."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Операцията за съхранение при настройката е неуспешна."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Операцията по настройката е неуспешна."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock не можа да провери достъпа до сайтове. Опитай настройката отново или презареди разширението."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Достъпът до сайтове е разрешен, но Focus Lock не можа да включи блокирането. Опитай настройката отново или презареди разширението."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Достъпът до сайтове не е наличен и Focus Lock не можа да завърши почистването на блокирането. Опитай настройката отново или презареди разширението."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock получи противоречиво състояние на достъпа до сайтове. Опитай настройката отново или презареди разширението."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock не завърши стартирането: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "неизвестна грешка"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock работи, няма какво да се нулира"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock не може да нулира изпълнение, което още е записано в поколение на политиката"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Повторен опит за изтриване на данни не е наличен."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Изключи синхронизацията, преди да изтриеш синхронизираните данни"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock още завършва предишна промяна. Опитай пак след момент."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Отворената бариера не можа да се затвори. Опитай отново."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Работният раздел не е наличен."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Настройките надхвърлят ограничението от 8 kB в синхронизацията на Chrome. Премахни записи от графика или съкрати намеренията и опитай отново."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Списъците надхвърлят ограничението от 8 kB в синхронизацията на Chrome. Премахни свои правила или правила от списъка с разрешени и опитай отново."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "тече сесия с твърдо заключване: премахването на блокирани сайтове се отключва, когато тя приключи"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "тече сесия с твърдо заключване: новите записи в списъка с разрешени се отключват, когато тя приключи"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "тече сесия с твърдо заключване: изключването на категории се отключва, когато тя приключи"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "тече сесия с твърдо заключване: новите изключения се отключват, когато тя приключи"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "тече сесия с твърдо заключване: отслабването на подразбираната строгост изчаква края ѝ"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "тече сесия с твърдо заключване: съкращаването на забавянето за размисъл отслабва бариерата"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "тече сесия с твърдо заключване: премахването на въвежданото изречение отслабва бариерата"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "тече сесия с твърдо заключване: повишаването на скоростта на натрупване за паузи финансира повече бягства"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "тече сесия с твърдо заключване: повишаването на тавана за паузи финансира повече бягства"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "тече сесия с твърдо заключване: съкращаването на паузите намалява цената им"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "тече сесия с твърдо заключване: съкращаването на отключванията намалява цената им"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "тече сесия с твърдо заключване: записът ѝ в графика не може да се отслаби, докато тя не приключи"
+  }
+}

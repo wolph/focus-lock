@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Odak seansı tamamlandı"
+  },
+  "notify_session_complete_body": {
+    "message": "Odak seansın sona erdi."
+  },
+  "notify_schedule_window_body": {
+    "message": "$END$ saatine kadar kilitli.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Zamanlanmış odak seansı başlayamadı"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Site engelleme açık değil. Kurulumu tamamla ya da site erişimi ver, sonra tekrar dene."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Kurulum başka bir sekmede tamamlandı."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Kurulum başka bir sekmede değişti. En son seçimler yeniden yüklendi."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Kurulum başka bir sekmede değişti. Bitirmeden önce kurulumu yeniden yükle."
+  },
+  "notify_setup_not_complete": {
+    "message": "Kurulum tamamlanmadı."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Kurulum henüz bitirilemez."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Depolama seçimi değişti. Bitirmeden önce kurulumu yeniden yükle."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Kurulum depolama işlemi başarısız oldu."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Kurulum işlemi başarısız oldu."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock site erişimini denetleyemedi. Kurulumu yinele ya da uzantıyı yeniden yükle."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Site erişimi verildi ama Focus Lock engellemeyi açamadı. Kurulumu yinele ya da uzantıyı yeniden yükle."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Site erişimi yok ve Focus Lock engellemeyi geri almayı da bitiremedi. Kurulumu yinele ya da uzantıyı yeniden yükle."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock tutarsız bir site erişim durumu aldı. Kurulumu yinele ya da uzantıyı yeniden yükle."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock başlatmayı tamamlayamadı: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "bilinmeyen hata"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock düzgün çalışıyor, sıfırlanacak bir şey yok"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock hâlâ bir ayar kuşağının içinde duran bir durumu sıfırlayamaz"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Yeniden denenecek bir veri silme işlemi yok."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Eşitlenen verileri silmeden önce eşitlemeyi kapat"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock önceki bir değişikliği hâlâ bitiriyor. Birazdan tekrar dene."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Açık onay kapatılamadı. Tekrar dene."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Çalışma sekmesi kullanılamıyor."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Ayarlar Chrome Sync 8 KB sınırını aşıyor. Zamanlama kayıtlarını sil ya da niyetleri kısalt, sonra tekrar dene."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Listeler Chrome Sync 8 KB sınırını aşıyor. Özel ya da izinli kuralları sil, sonra tekrar dene."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "tam kilit seansı sürüyor: kaldırdığın siteler seans bitince açılır"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "tam kilit seansı sürüyor: yeni izinli kayıtlar seans bitince geçerli olur"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "tam kilit seansı sürüyor: kapattığın kategoriler seans bitince açılır"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "tam kilit seansı sürüyor: yeni ayrık tutmalar seans bitince geçerli olur"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "tam kilit seansı sürüyor: varsayılan sıkılığı gevşetmek seansın bitmesini bekler"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "tam kilit seansı sürüyor: beklemeyi kısaltmak onayı zayıflatır"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "tam kilit seansı sürüyor: yazılan cümleyi kaldırmak onayı zayıflatır"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "tam kilit seansı sürüyor: kazanç hızını artırmak daha çok kaçışı finanse eder"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "tam kilit seansı sürüyor: kredi tavanını yükseltmek daha çok kaçışı finanse eder"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "tam kilit seansı sürüyor: kısa duraklatmaların maliyeti düşer"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "tam kilit seansı sürüyor: kısa açmaların maliyeti düşer"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "tam kilit seansı sürüyor: seansın zamanlama kaydı bitene kadar gevşetilemez"
+  }
+}

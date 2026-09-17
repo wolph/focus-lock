@@ -3,64 +3,73 @@
     "message": "Fokus Lock options"
   },
   "options_heading": {
-    "message": "Fokus Lock settings"
+    "message": "Fokus Lock pengaturan"
   },
   "options_loading_settings": {
-    "message": "Memuat settings"
+    "message": "Memuat pengaturan"
   },
   "options_privacy_loading": {
-    "message": "Memuat privacy settings"
+    "message": "Loading privacy pengaturan"
+  },
+  "options_save_failed": {
+    "message": "Tidak dapat menyimpan. Try again."
   },
   "options_blocking_heading": {
-    "message": "Blokiring"
+    "message": "Penyekatan"
+  },
+  "options_blocking_help": {
+    "message": "Aturan khusus blokir during daftar hitam sesis. The daftar putih is what stays reachable during daftar putih sesis. Kategori bundel blokir common time sinks."
   },
   "options_custom_blacklist_title": {
-    "message": "Custom blacklist"
+    "message": "Daftar hitam khusus"
   },
   "options_whitelist_title": {
-    "message": "Whitelist"
+    "message": "Daftar putih"
   },
   "options_bundled_categories_heading": {
-    "message": "Bundled categories"
+    "message": "Kategori bundel"
+  },
+  "options_bundled_categories_help": {
+    "message": "Bundled lists of common time sinks. Beralih a whole kategori, then buka it to keep single situss tersedia."
   },
   "options_schedule_heading": {
-    "message": "Schedule"
+    "message": "Jadwal"
   },
   "options_schedule_help": {
-    "message": "Sesis start on their own inside these windows. Strictness set here applies for the whole window."
+    "message": "Sesis mulai on their own inside these windows. Strictness set here applies for the whole window."
   },
   "options_behavior_heading": {
-    "message": "Sesi behavior"
+    "message": "Perilaku sesi"
   },
   "options_budget_heading": {
-    "message": "Site access credit"
+    "message": "Kredit akses laman"
   },
   "options_notifications_heading": {
-    "message": "Notifications"
+    "message": "Pemberitahuan"
   },
   "options_privacy_heading": {
-    "message": "Privacy and data"
+    "message": "Privasi dan data"
   },
   "options_load_error_retry": {
     "message": "Coba Ulang"
   },
   "options_load_error_delete_all": {
-    "message": "Hapus everything and start over"
+    "message": "Hapus everything and mulai over"
   },
   "options_load_error_keep_data": {
     "message": "Keep my data"
   },
   "options_delete_all_data": {
-    "message": "Hapus all Fokus Lock data"
+    "message": "Hapus semua Fokus Lock data"
   },
   "options_dirty_saving": {
     "message": "Saving changes"
   },
   "options_dirty_unsaved": {
-    "message": "Unsaved changes"
+    "message": "Unsimpand changes"
   },
   "options_dirty_clean": {
-    "message": "No unsaved changes"
+    "message": "No unsimpand changes"
   },
   "options_dirty_discard": {
     "message": "Discard changes"
@@ -90,7 +99,7 @@
     }
   },
   "options_rules_empty": {
-    "message": "No rules yet."
+    "message": "No aturans yet."
   },
   "options_rule_kind_aria": {
     "message": "Aturan kind"
@@ -102,16 +111,19 @@
     "message": "regex (full URL)"
   },
   "options_rule_pattern_aria": {
-    "message": "Pattern"
+    "message": "Pola"
   },
   "options_rule_pattern_placeholder_host": {
     "message": "facebook.com"
   },
   "options_rule_pattern_placeholder_regex": {
-    "message": "/youtube\\.com\\/shorts/"
+    "message": "/youtube\\.com\\/pakhireks/"
   },
   "options_rule_add": {
-    "message": "Tambah rule"
+    "message": "Tambah aturan"
+  },
+  "options_rules_help": {
+    "message": "facebook.com covers that domain and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/pakhireks/ matches the full URL as a regular expression."
   },
   "options_number_error_minute_range": {
     "message": "$LABEL$ must be within the supported menit range.",
@@ -134,35 +146,62 @@
   "options_session_defaults_heading": {
     "message": "Sesi defaults"
   },
+  "options_session_defaults_help": {
+    "message": "Mode and strictness are fixed ketika a sesi mulais. These are the values the mulai form bukas with."
+  },
   "options_preset_short_label": {
-    "message": "Short session preset (menits)"
+    "message": "Pakhirek sesi preset (menits)"
   },
   "options_preset_default_label": {
-    "message": "Default session preset (menits)"
+    "message": "Default sesi preset (menits)"
   },
   "options_preset_deep_label": {
-    "message": "Deep session preset (menits)"
+    "message": "Dalam sesi preset (menits)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Daftar hitam: blokir listed situss"
+  },
+  "options_mode_whitelist_label": {
+    "message": "Daftar putih: semuaow only listed situss"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Fleksibel: akhir the sesi ketikaever you choose"
+  },
+  "options_strictness_friction_label": {
+    "message": "Gesekan: stopping early uses the configured deliberasi gerbang"
+  },
+  "options_strictness_hard_label": {
+    "message": "Keras: no early akhir, temporary situs akses only"
   },
   "options_cycle_heading": {
-    "message": "Fokus and break cycle"
+    "message": "Fokus and istirahat siklus"
   },
   "options_cycle_help": {
-    "message": "Defaults: 25 menit focus, 5 menit break, 15 menit long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact menits are convention, not science."
+    "message": "Defaults: 25 menit fokus, 5 menit istirahat, 15 menit long istirahat every 4th siklus. Istirahats on a jadwal beat istirahat-ketika-you-feel-like-it for mood and fokus in study samples. The exact menits are convention, not science."
+  },
+  "options_cycle_default_label": {
+    "message": "Siklus fokus and istirahats by default"
   },
   "options_focus_minutes_label": {
     "message": "Fokus menits"
   },
   "options_short_break_minutes_label": {
-    "message": "Short break menits"
+    "message": "Pakhirek istirahat menits"
   },
   "options_long_break_minutes_label": {
-    "message": "Long break menits"
+    "message": "Long istirahat menits"
+  },
+  "options_long_every_label": {
+    "message": "Long istirahat every Nth siklus"
   },
   "options_gate_heading": {
-    "message": "Deliberation gate"
+    "message": "Deliberasi gerbang"
+  },
+  "options_gate_help": {
+    "message": "A 10 detik wait with an explicit back-to-kerja tombol measurably reduces impulse visits (kolom study, PNAS 2023). The longer wait and the typed sentence roughly double the effect."
   },
   "options_gate_wait_one": {
-    "message": "Wait $COUNT$ second",
+    "message": "Wait $COUNT$ detik",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -171,7 +210,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "Wait $COUNT$ seconds",
+    "message": "Wait $COUNT$ detiks",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -183,31 +222,37 @@
     "message": "Custom"
   },
   "options_custom_delay_label": {
-    "message": "Custom delay (seconds)"
+    "message": "Custom delay (detiks)"
+  },
+  "options_custom_delay_error": {
+    "message": "Custom delay must be a positive whole number of detiks."
   },
   "options_gate_force_end_label": {
-    "message": "Aktifkan \"Ignore timeout and end anyway\" button"
+    "message": "Aktifkan \"Ignore timeout and akhir anyway\" tombol"
+  },
+  "options_credit_help": {
+    "message": "Kredit akses laman accrues while you fokus. Both akses to semua situss and a single-situs unlock spakhir from the same balance. You can step away at any time without spakhiring credit."
   },
   "options_earn_rate_label": {
-    "message": "Minutes of site access per 30 menits of focus"
+    "message": "Menits of situs akses per 30 menits of fokus"
   },
   "options_credit_cap_label": {
-    "message": "Site access credit limit (menits)"
+    "message": "Kredit akses laman limit (menits)"
   },
   "options_pause_length_label": {
-    "message": "All-site access length (menits)"
+    "message": "Semua-situs akses length (menits)"
   },
   "options_unlock_length_label": {
-    "message": "Site unlock length (menits)"
+    "message": "Situs unlock length (menits)"
   },
   "options_streak_heading": {
-    "message": "Streak and retention"
+    "message": "Garis and retensi"
   },
   "options_streak_help": {
-    "message": "The streak counts haris that reach the goal. One default session keeps the chain alive, and a freeze token repairs a missed hari."
+    "message": "The garis jumlahs haris that reach the tujuan. One default sesi keeps the chain alive, and a token pembekuan repairs a missed hari."
   },
   "options_streak_goal_label": {
-    "message": "Daily streak goal (focus menits)"
+    "message": "Daily garis tujuan (fokus menits)"
   },
   "options_freeze_interval_label": {
     "message": "Freeze token interval (haris)"
@@ -216,7 +261,7 @@
     "message": "Keep daily stats (haris)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ category on.",
+    "message": "$CATEGORY$ kategori on.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -225,7 +270,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ category off.",
+    "message": "$CATEGORY$ kategori off.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -234,13 +279,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "All categories on."
+    "message": "Semua categories on."
   },
   "options_all_categories_off_announcement": {
-    "message": "All categories off."
+    "message": "Semua categories off."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ included.",
+    "message": "$HOST$ disertakan.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -249,7 +294,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ kept available.",
+    "message": "$HOST$ dipertahankan tersedia.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -257,11 +302,29 @@
       }
     }
   },
+  "options_all_sites_included_announcement": {
+    "message": "Semua $CATEGORY$ situss disertakan.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "Semua $CATEGORY$ situss dipertahankan tersedia.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
   "options_category_bulk_actions_aria": {
     "message": "Kategori bulk actions"
   },
   "options_selected_count": {
-    "message": "Selected $COUNT$",
+    "message": "Pilihed $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -270,7 +333,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Deselected $COUNT$",
+    "message": "Depilihed $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -279,19 +342,19 @@
     }
   },
   "options_select_all": {
-    "message": "Select all"
+    "message": "Pilih semua"
   },
   "options_deselect_all": {
-    "message": "Deselect all"
+    "message": "Depilih semua"
   },
   "options_select_all_categories_aria": {
-    "message": "Select all categories"
+    "message": "Pilih semua categories"
   },
   "options_deselect_all_categories_aria": {
-    "message": "Deselect all categories"
+    "message": "Depilih semua categories"
   },
   "options_show_category_sites": {
-    "message": "Tampilkan $CATEGORY$ sites",
+    "message": "Tampilkan $CATEGORY$ situss",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -300,7 +363,7 @@
     }
   },
   "options_hide_category_sites": {
-    "message": "Sembunyikan $CATEGORY$ sites",
+    "message": "Sembunyikan $CATEGORY$ situss",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -309,7 +372,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ site included",
+    "message": "$COUNT$ situs disertakan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -318,7 +381,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ sites included",
+    "message": "$COUNT$ situss disertakan",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -330,7 +393,7 @@
     "message": "Kategori off"
   },
   "options_included_when_enabled_one": {
-    "message": "$COUNT$ included when aktifkand",
+    "message": "$COUNT$ disertakan ketika aktifkand",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -339,7 +402,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ included when aktifkand",
+    "message": "$COUNT$ disertakan ketika aktifkand",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -347,8 +410,38 @@
       }
     }
   },
+  "options_category_uncheck_help": {
+    "message": "Uncheck a situs to keep it tersedia while the rest of the kategori is blokired."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ situs bulk actions",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "Pilih semua $CATEGORY$ situss",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "Depilih semua $CATEGORY$ situss",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
   "options_category_sites_region_aria": {
-    "message": "$CATEGORY$ sites",
+    "message": "$CATEGORY$ situss",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -378,13 +471,22 @@
     "message": "Sat"
   },
   "options_schedule_cycles_label": {
-    "message": "Cycle focus and breaks"
+    "message": "Siklus fokus and istirahats"
+  },
+  "options_schedule_overlap_error": {
+    "message": "Overlaps another aktifkand entry on $DAY$.",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
   },
   "options_schedule_session_type_aria": {
     "message": "Sesi type"
   },
   "options_schedule_entry_legend": {
-    "message": "Schedule entry"
+    "message": "Jadwal entry"
   },
   "options_schedule_start_label": {
     "message": "Mulai"
@@ -396,7 +498,7 @@
     "message": "Duration"
   },
   "options_schedule_intention_label": {
-    "message": "Intention"
+    "message": "Niat"
   },
   "options_schedule_intention_placeholder": {
     "message": "what this time is for"
@@ -407,8 +509,11 @@
   "options_cancel": {
     "message": "Batal"
   },
+  "options_schedule_empty": {
+    "message": "No jadwald sesis yet."
+  },
   "options_schedule_selected_days_aria": {
-    "message": "Selected haris"
+    "message": "Pilihed haris"
   },
   "options_schedule_time_range": {
     "message": "$START$ to $END$",
@@ -424,19 +529,19 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blacklist"
+    "message": "daftar hitam"
   },
   "options_schedule_mode_whitelist": {
-    "message": "whitelist"
+    "message": "daftar putih"
   },
   "options_schedule_strictness_flexible": {
-    "message": "flexible"
+    "message": "fleksibel"
   },
   "options_schedule_strictness_friction": {
-    "message": "friction"
+    "message": "gesekan"
   },
   "options_schedule_strictness_hard": {
-    "message": "hard"
+    "message": "keras"
   },
   "options_schedule_enabled_label": {
     "message": "Aktifkand"
@@ -448,10 +553,10 @@
     "message": "Hapus"
   },
   "options_schedule_add": {
-    "message": "Tambah schedule entry"
+    "message": "Tambah jadwal entry"
   },
   "options_sounds_heading": {
-    "message": "Sounds"
+    "message": "Suaras"
   },
   "options_master_volume": {
     "message": "Master volume"
@@ -460,13 +565,13 @@
     "message": "Sesi complete"
   },
   "options_sound_break_start": {
-    "message": "Break start"
+    "message": "Istirahat mulai"
   },
   "options_sound_break_end": {
-    "message": "Break end"
+    "message": "Istirahat akhir"
   },
   "options_sound_schedule_start": {
-    "message": "Schedule auto-start"
+    "message": "Jadwal auto-mulai"
   },
   "options_sound_preview_aria": {
     "message": "Preview $SOUND$",
@@ -478,13 +583,16 @@
     }
   },
   "options_sound_play": {
-    "message": "Play"
+    "message": "Mainkan"
+  },
+  "options_sound_preview_error": {
+    "message": "Could not preview the suara. Try again."
   },
   "options_sounds_notifications_heading": {
-    "message": "Notifications"
+    "message": "Pemberitahuan"
   },
   "options_session_complete_notification": {
-    "message": "Tampilkan a system notification when a session completes"
+    "message": "Tampilkan a system notification ketika a sesi completes"
   },
   "options_badge_heading": {
     "message": "Badge"
@@ -493,159 +601,216 @@
     "message": "Tampilkan the remaining time on the toolbar icon"
   },
   "options_privacy_website_access_heading": {
-    "message": "Situs web access"
+    "message": "Websitus akses"
   },
   "options_privacy_website_off_title": {
-    "message": "Situs web access is off"
+    "message": "Websitus akses is off"
   },
   "options_privacy_website_off_detail": {
-    "message": "Fokus Lock cannot block websites until you grant access."
+    "message": "Fokus Lock cannot blokir websituss until you grant akses."
   },
   "options_privacy_website_enable_action": {
-    "message": "Aktifkan website blocking"
+    "message": "Aktifkan websitus penyekatan"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "Situs web access is granted, but blocking is not active"
+    "message": "Websitus akses is granted, but penyekatan is not active"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome granted access, but Fokus Lock could not register its blocking script."
+    "message": "Chrome granted akses, but Fokus Lock could not register its penyekatan script."
   },
   "options_privacy_website_retry_action": {
-    "message": "Coba Ulang website blocking"
+    "message": "Coba Ulang websitus penyekatan"
   },
   "options_privacy_website_on_title": {
-    "message": "Situs web blocking is enabled"
+    "message": "Websitus penyekatan is aktifkand"
   },
   "options_privacy_website_on_detail": {
-    "message": "Fokus Lock can apply your active blocking rules on regular website pages."
+    "message": "Fokus Lock can apply your active penyekatan aturans on regular websitus pages."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "Hapus local history?"
+    "message": "Hapus lokal history?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "Konfirmasi delete local history"
+    "message": "Confirm hapus lokal history"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Local history deleted."
+    "message": "Lokal history hapusd."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Akhiring the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "This permanently hapuss full URLs, fokus niats, and detailed sesi events from this device. It does not clear a running sesi, which keeps its niat and the tambahress of each tab it is penyekatan. Akhiring the sesi clears the niat and mulais a cleanup that clears every buka websitus tab, and the cleanup hapuss every stored tambahress ketika it completes."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device, plus local-only aggregate statistics. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Akhiring the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "This permanently hapuss full URLs, fokus niats, and detailed sesi events from this device, plus lokal-only aggregerbang statistics. It does not clear a running sesi, which keeps its niat and the tambahress of each tab it is penyekatan. Akhiring the sesi clears the niat and mulais a cleanup that clears every buka websitus tab, and the cleanup hapuss every stored tambahress ketika it completes."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Hapus remote Sync data?"
+    "message": "Hapus remote Sinkronisasi data?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Konfirmasi delete remote Sync data"
+    "message": "Confirm hapus remote Sinkronisasi data"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "Remote Chrome Sinkronisasi data hapusd."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "This permanently hapuss remote pengaturan, blokir and semuaow lists, kredit akses laman, gariss, and domain-level blokired-attempt aggregerbangs from Chrome Sinkronisasi. Lokal pengaturan and statistics stay on this device."
   },
   "options_privacy_confirm_all_title": {
-    "message": "Hapus all Fokus Lock data?"
+    "message": "Hapus semua Fokus Lock data?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "Konfirmasi delete all Fokus Lock data"
+    "message": "Confirm hapus semua Fokus Lock data"
   },
   "options_privacy_all_deleted": {
-    "message": "All Fokus Lock data deleted."
+    "message": "Semua Fokus Lock data hapusd."
   },
   "options_privacy_all_body_intro": {
-    "message": "This permanently deletes every piece of Fokus Lock data on this device and any Fokus Lock copies left in Chrome Sync:"
+    "message": "This permanently hapuss every piece of Fokus Lock data on this device and any Fokus Lock copies left in Chrome Sinkronisasi:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Deleting everything is available only while no session is running. Fokus Lock then returns to setup."
+    "message": "Deleting everything is tersedia only while no sesi is running. Fokus Lock then returns to setup."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "Lokal history could not be hapusd. Try again."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "Remote Chrome Sinkronisasi data could not be hapusd. Try again."
   },
   "options_privacy_error_all_clear": {
-    "message": "All Fokus Lock data could not be deleted. Try again."
+    "message": "Semua Fokus Lock data could not be hapusd. Try again."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sinkronisasi tidak dapat menyimpan your latest changes. Your lokal simpan is safe."
   },
   "options_privacy_website_access_updated": {
-    "message": "Situs web access updated."
+    "message": "Websitus akses updated."
   },
   "options_privacy_website_access_denied": {
-    "message": "Situs web access was not granted."
+    "message": "Websitus akses was not granted."
   },
   "options_privacy_error_website_access": {
-    "message": "Situs web access could not be updated. Try again."
+    "message": "Websitus akses could not be updated. Try again."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Situs web blocking enabled."
+    "message": "Websitus penyekatan aktifkand."
+  },
+  "options_privacy_error_export": {
+    "message": "Could not ekspor the event log."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "Could not ekspor the event log. Try again."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Could not buka Chrome izin pengaturan. Try again."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome izin pengaturan bukaed."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Buka Chrome permission settings"
+    "message": "Buka Chrome izin pengaturan"
   },
   "options_privacy_sync_heading": {
-    "message": "Chrome Sync"
+    "message": "Chrome Sinkronisasi"
   },
   "options_privacy_sync_switch_label": {
-    "message": "Sync Fokus Lock data across Chrome devices"
+    "message": "Sinkronisasi Fokus Lock data across Chrome devices"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync enabled."
+    "message": "Chrome Sinkronisasi aktifkand."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync disabled."
+    "message": "Chrome Sinkronisasi nonaktifkand."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sinkronisasi is still saving your latest changes."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync is on."
+    "message": "Chrome Sinkronisasi is on."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync is off."
+    "message": "Chrome Sinkronisasi is off."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome Sinkronisasi changes simpand."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Coba Ulang enabling Chrome Sync"
+    "message": "Coba Ulang enabling Chrome Sinkronisasi"
   },
   "options_privacy_retry_sync": {
-    "message": "Coba Ulang Chrome Sync"
+    "message": "Coba Ulang Chrome Sinkronisasi"
   },
   "options_privacy_scope_synced": {
-    "message": "Synced"
+    "message": "Sinkronisasied"
   },
   "options_privacy_scope_local_only": {
-    "message": "Local only"
+    "message": "Lokal only"
   },
   "options_privacy_developer_note": {
     "message": "Nothing is sent to the Fokus Lock developer."
   },
   "options_privacy_local_log_heading": {
-    "message": "Local event log"
+    "message": "Lokal event log"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Ekspor the detailed lokal log or hapus lokal browsing and sesi history."
   },
   "options_privacy_export_local_log": {
-    "message": "Export local event log"
+    "message": "Ekspor lokal event log"
   },
   "options_privacy_local_log_exported": {
-    "message": "Local event log exported."
+    "message": "Lokal event log ekspored."
   },
   "options_privacy_delete_local_history": {
-    "message": "Hapus local history"
+    "message": "Hapus lokal history"
   },
   "options_privacy_remote_data_heading": {
-    "message": "Remote Sync data"
+    "message": "Remote Sinkronisasi data"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Hapus the Fokus Lock copies left in Chrome Sync without changing this device."
+    "message": "Hapus the Fokus Lock copies left in Chrome Sinkronisasi without changing this device."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Hapus remote Sync data"
+    "message": "Hapus remote Sinkronisasi data"
   },
   "options_privacy_all_data_heading": {
-    "message": "All Fokus Lock data"
+    "message": "Semua Fokus Lock data"
   },
   "options_privacy_all_data_detail": {
-    "message": "Hapus every Fokus Lock record on this device and any Fokus Lock copies left in Chrome Sync, then start again from setup. Available while no session is running."
+    "message": "Hapus every Fokus Lock record on this device and any Fokus Lock copies left in Chrome Sinkronisasi, then mulai again from setup. Tersedia while no sesi is running."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "Resuming deletion of all Fokus Lock data."
+    "message": "Resuming deletion of semua Fokus Lock data."
   },
   "options_privacy_retry_local_history": {
-    "message": "Coba Ulang local history deletion"
+    "message": "Coba Ulang lokal history deletion"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Coba Ulang remote Sync deletion"
+    "message": "Coba Ulang remote Sinkronisasi deletion"
   },
   "options_privacy_retry_all_data": {
-    "message": "Coba Ulang all data deletion"
+    "message": "Coba Ulang semua data deletion"
+  },
+  "options_error_load": {
+    "message": "Could not load pengaturan. Reload the page to try again."
   },
   "options_error_retry_boot": {
-    "message": "Could not restart Fokus Lock. Try again."
+    "message": "Could not remulai Fokus Lock. Try again."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Could not refresh privacy pengaturan. Reload the page."
+  },
+  "options_error_website_blocking": {
+    "message": "Could not update websitus penyekatan. Try again."
+  },
+  "options_error_change_sync": {
+    "message": "Could not change Chrome Sinkronisasi. Try again."
+  },
+  "options_error_retry_sync": {
+    "message": "Could not coba ulang Chrome Sinkronisasi. Try again."
+  },
+  "options_error_save_settings": {
+    "message": "Tidak dapat menyimpan pengaturan. Reload the page and try again."
+  },
+  "options_error_save_lists": {
+    "message": "Tidak dapat menyimpan lists. Reload the page and try again."
   }
 }

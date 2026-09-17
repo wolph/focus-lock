@@ -1,0 +1,645 @@
+{
+  "shared_until_stopped": {
+    "message": "Kol sustabdysi"
+  },
+  "shared_preset_short": {
+    "message": "trumpa"
+  },
+  "shared_preset_focus": {
+    "message": "susikaupimas"
+  },
+  "shared_preset_deep_work": {
+    "message": "gilus darbas"
+  },
+  "shared_deep_work_note": {
+    "message": "Tai pasirinkimas, o ne mokslas: vienas ilgas nepertraukiamas blokas be automatinių pertraukų."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "iš viso $MINUTES$ min., su $FOCUS$ min. susikaupimo blokais",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min. nepertraukiamo susikaupimo",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Pradėti, kol sustabdysi"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Užrakinti, kol atrakinsi pats"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Sesijos, kurios trunka, kol sustabdysi, lieka Lanksčios arba su Trintimi ir negali naudoti susikaupimo bei pertraukų ciklų."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Griežtas užraktas negalimas, kai sesija trunka, kol sustabdysi: be laikmačio ir be rankinio baigimo sesija niekada nesibaigtų."
+  },
+  "shared_end_session": {
+    "message": "Baigti sesiją"
+  },
+  "shared_unlock": {
+    "message": "Atrakinti"
+  },
+  "shared_gate_wait_none": {
+    "message": "be laukimo"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ sek. laukimas",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ ir įrašytas sakinys",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Veikia, kol ją baigsi mygtuku $LABEL$. Ciklai išjungti.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Veikia, kol ją atrakinsi: $REQUIREMENT$, tada $LABEL$. Ciklai išjungti.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Ciklus nustato režimas Kol sustabdysi"
+  },
+  "shared_mode_blacklist": {
+    "message": "Blokuoti pasirinktas svetaines"
+  },
+  "shared_mode_whitelist": {
+    "message": "Leisti tik pasirinktas svetaines"
+  },
+  "shared_focus_time_label": {
+    "message": "Susikaupimo laikas"
+  },
+  "shared_clock_focus_phase": {
+    "message": "susikaupimo fazė"
+  },
+  "shared_clock_total_session": {
+    "message": "visa sesija"
+  },
+  "shared_clock_pause": {
+    "message": "pauzė"
+  },
+  "shared_clock_break": {
+    "message": "pertrauka"
+  },
+  "shared_badge_indefinite": {
+    "message": "ĮJ"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock paleidžiamas. Taikomos tavo taisyklės."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Sesija baigta. Baigiamas naršyklės valymas."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock nepavyko paleisti. Baigiamas naršyklės valymas."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock nepavyko sutvarkyti nebaigto paleidimo."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock nepavyko baigti naršyklės valymo."
+  },
+  "shared_retry_cleanup": {
+    "message": "Kartoti valymą"
+  },
+  "shared_end_failed": {
+    "message": "Nepavyko baigti sesijos. Bandyk dar kartą."
+  },
+  "shared_retry_failed": {
+    "message": "Nepavyko pakartoti valymo. Bandyk dar kartą."
+  },
+  "shared_action_failed": {
+    "message": "Nepavyko įvykdyti šio veiksmo. Bandyk dar kartą."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Nepavyko grįžti prie darbo. Bandyk dar kartą."
+  },
+  "shared_data_clear_pending": {
+    "message": "Šalinami Focus Lock duomenys. Baigiamas valymas."
+  },
+  "shared_data_clear_error": {
+    "message": "Nepavyko pašalinti duomenų. Bandyk dar kartą."
+  },
+  "shared_schedule_window_label": {
+    "message": "Kol baigsis laikotarpis"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Prasideda pagal tvarkaraštį ir veikia, kol sustabdysi: Lanksčiai sesijai - Baigti sesiją, Trinties sesijai - Atrakinti per apsvarstymo vartus. Ciklai išjungti."
+  },
+  "shared_schedule_started_title": {
+    "message": "Tvarkaraščio sesija prasidėjo"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Veikia, kol ją sustabdysi."
+  },
+  "shared_settings_indefinite": {
+    "message": "Vyksta sesija, trunkanti kol sustabdysi. Peržiūrėti ar baigti ją gali įrankių juostos lange."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock paleidžiamas. Tikrinama svetainių prieiga ir taikomos tavo taisyklės."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock nepavyko baigti naršyklės valymo. Atidaryk langą ir bandyk dar kartą."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Sesijos valdikliai yra įrankių juostos lange. Vykstanti sesija laikosi taisyklių, galiojusių jos pradžioje."
+  },
+  "shared_settings_timed": {
+    "message": "Laikmačio sesija vyksta iki $TIME$. Ji baigsis automatiškai. Gyvą būseną matysi įrankių juostos lange.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Užbaigta"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Užbaigta rankiniu būdu"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Baigta anksčiau"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Baigta: prarasta svetainių prieiga"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Baigta: nepavyko paruošti blokavimo"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Baigta: nepavyko sukurti laikmačio"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Baigta: nepavyko pritaikyti puslapiams"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Baigta: nepavyko atkurti būsenos"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ val. $MINUTES$ min.",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ min.",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Atnaujinama sesija"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Mažiau nei minutė"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ iki pertraukos",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ iki sesijos pabaigos",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Kaina viršija kredito ribą"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Kreditas vėl kaupiasi susikaupimo metu"
+  },
+  "shared_credit_off": {
+    "message": "Kredito kaupimas išjungtas"
+  },
+  "shared_not_enough_time": {
+    "message": "Šiame susikaupimo bloke nepakanka laiko"
+  },
+  "shared_ready_in": {
+    "message": "Bus paruošta po $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Blokuoja kategorija $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Blokuoja tavo blokavimo sąrašas"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Nėra tavo leidžiamųjų sąraše"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Blokuoja ši sesija"
+  },
+  "shared_verdict_allow_list": {
+    "message": "Yra tavo leidžiamųjų sąraše"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Visada leidžiama"
+  },
+  "shared_verdict_unlock": {
+    "message": "Laikinai atrakinta"
+  },
+  "shared_verdict_excluded": {
+    "message": "Išbraukta iš pasirinktos kategorijos"
+  },
+  "shared_verdict_no_session": {
+    "message": "Nevyksta jokia susikaupimo sesija"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Leidžia ši sesija"
+  },
+  "shared_category_social": {
+    "message": "Socialiniai tinklai"
+  },
+  "shared_category_video": {
+    "message": "Vaizdo įrašai ir transliacijos"
+  },
+  "shared_category_news": {
+    "message": "Naujienos"
+  },
+  "shared_category_mail": {
+    "message": "Paštas"
+  },
+  "shared_category_shopping": {
+    "message": "Apsipirkimas"
+  },
+  "shared_category_gaming": {
+    "message": "Žaidimai"
+  },
+  "shared_category_forums": {
+    "message": "Forumai ir nuobodulys"
+  },
+  "shared_synced_settings": {
+    "message": "Nustatymai"
+  },
+  "shared_synced_lists": {
+    "message": "Blokavimo ir leidžiamųjų sąrašai"
+  },
+  "shared_synced_credit": {
+    "message": "Svetainių prieigos kreditas"
+  },
+  "shared_synced_streaks": {
+    "message": "Serijos"
+  },
+  "shared_synced_aggregates": {
+    "message": "Blokuotų bandymų suvestinės pagal domeną"
+  },
+  "shared_local_full_urls": {
+    "message": "Pilni URL adresai"
+  },
+  "shared_local_intentions": {
+    "message": "Susikaupimo ketinimai"
+  },
+  "shared_local_events": {
+    "message": "Išsamūs sesijos įvykiai"
+  },
+  "shared_local_runtime": {
+    "message": "Vykstanti sesija"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Kai kurių senesnės versijos sinchronizuotų duomenų nepavyko perskaityti, todėl jie atstatyti į pradinius."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Prieš šalindamas visus duomenis baik vykstančią sesiją."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "Produkto naršymas"
+  },
+  "shared_nav_overview": {
+    "message": "Apžvalga"
+  },
+  "shared_nav_settings": {
+    "message": "Nustatymai"
+  },
+  "shared_section_blocking": {
+    "message": "Blokavimas"
+  },
+  "shared_section_schedule": {
+    "message": "Tvarkaraštis"
+  },
+  "shared_section_behavior": {
+    "message": "Sesijos elgsena"
+  },
+  "shared_section_budget": {
+    "message": "Svetainių prieigos kreditas"
+  },
+  "shared_section_notifications": {
+    "message": "Pranešimai"
+  },
+  "shared_section_privacy": {
+    "message": "Privatumas ir duomenys"
+  },
+  "shared_theme_auto": {
+    "message": "Automatinė"
+  },
+  "shared_theme_light": {
+    "message": "Šviesi"
+  },
+  "shared_theme_dark": {
+    "message": "Tamsi"
+  },
+  "shared_theme_button": {
+    "message": "Tema: $CURRENT$. Perjungti į $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Nepavyko įrašyti temos. Įkelk puslapį iš naujo ir bandyk dar kartą."
+  },
+  "shared_host_search_label": {
+    "message": "Ieškoti $TITLE$ svetainių",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Nė viena $TITLE$ svetainė neatitinka tavo paieškos.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Rodoma $SHOWN$ iš $MATCHED$ svetainių. Tikslink paiešką.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Rodoma $MATCHED$ iš $TOTAL$ svetainių.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Rodomos visos $TOTAL$ svetainės.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Baigti sesiją"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock paleidžiamas"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Taikomos tavo taisyklės."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Šis puslapis nebuvo įkeltas. Jis įsikels pats, kai sesija baigsis."
+  },
+  "shared_overlay_next_step": {
+    "message": "Tavo kitas žingsnis"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Grįžti prie darbo"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Pasirinkti darbo kortelę"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Keisti darbo kortelę"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Reikia pertraukos ar prieigos?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Pasitraukti gali bet kada. Svetainių prieiga naudoja kreditą."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Nepaisyti laukimo ir vis tiek baigti"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock nepavyko atnaujinti šio veiksmo. Bandyk dar kartą."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ prieigos kredito",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Tęsk dabartinę užduotį"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Atrakinti visas svetaines"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Atrakinti šią svetainę"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - kainuoja $COST$ kredito",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Užrakinta iki $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Tu parašei: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Atrakinti $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Toliau susikaupti"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Įrašyk tai, kad patvirtintum:"
+  },
+  "shared_gate_end_title": {
+    "message": "Baigti šią sesiją"
+  },
+  "shared_minutes_few": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_minutes_many": {
+    "message": "$COUNT$ min.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

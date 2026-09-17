@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "A fókuszmenet véget ért"
+  },
+  "notify_session_complete_body": {
+    "message": "A fókuszmeneted befejeződött."
+  },
+  "notify_schedule_window_body": {
+    "message": "Zárolva eddig: $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Az ütemezett fókuszmenet nem indult el"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Az oldalblokkolás nincs bekapcsolva. Fejezd be a beállítást, vagy adj hozzáférést az oldalakhoz, majd próbáld újra."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "A beállítás egy másik fülön már befejeződött."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "A beállítás egy másik fülön megváltozott. A legfrissebb választások újratöltve."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "A beállítás egy másik fülön megváltozott. Töltsd újra a beállítást, mielőtt befejezed."
+  },
+  "notify_setup_not_complete": {
+    "message": "A beállítás nincs kész."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "A beállítás még nem fejezhető be."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "A tárolási választás megváltozott. Töltsd újra a beállítást, mielőtt befejezed."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "A beállítás tárolási művelete nem sikerült."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "A beállítási művelet nem sikerült."
+  },
+  "notify_website_access_check_failed": {
+    "message": "A Focus Lock nem tudta ellenőrizni az oldalhozzáférést. Ismételd meg a beállítást, vagy töltsd újra a bővítményt."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Az oldalhozzáférés megvan, de a Focus Lock nem tudta bekapcsolni a blokkolást. Ismételd meg a beállítást, vagy töltsd újra a bővítményt."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Az oldalhozzáférés nem érhető el, és a Focus Lock a blokkolás lebontását sem tudta befejezni. Ismételd meg a beállítást, vagy töltsd újra a bővítményt."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "A Focus Lock ellentmondásos oldalhozzáférési állapotot kapott. Ismételd meg a beállítást, vagy töltsd újra a bővítményt."
+  },
+  "notify_boot_not_finished": {
+    "message": "A Focus Lock nem fejezte be az indulást: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "ismeretlen hiba"
+  },
+  "notify_nothing_to_reset": {
+    "message": "a Focus Lock rendben fut, nincs mit visszaállítani"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "a Focus Lock nem tud visszaállítani olyan állapotot, amely még egy beállításgeneráción belül van"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Nincs újrapróbálható adattörlés."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Kapcsold ki a szinkronizálást, mielőtt törlöd a szinkronizált adatokat"
+  },
+  "notify_work_gate_busy": {
+    "message": "A Focus Lock még befejez egy korábbi módosítást. Próbáld újra egy pillanat múlva."
+  },
+  "notify_work_gate_stuck": {
+    "message": "A nyitott megerősítést nem sikerült lezárni. Próbáld újra."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "A munkafül nem érhető el."
+  },
+  "notify_settings_sync_limit": {
+    "message": "A beállítások túllépik a Chrome Sync 8 KB-os korlátját. Törölj ütemezési bejegyzéseket, vagy rövidítsd a szándékokat, majd próbáld újra."
+  },
+  "notify_lists_sync_limit": {
+    "message": "A listák túllépik a Chrome Sync 8 KB-os korlátját. Törölj egyéni vagy engedélyezett szabályokat, majd próbáld újra."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "teljes zárolású menet fut: az eltávolított oldalak a végén oldódnak fel"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "teljes zárolású menet fut: az új engedélyezett bejegyzések a végén lépnek életbe"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "teljes zárolású menet fut: a kikapcsolt kategóriák a végén oldódnak fel"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "teljes zárolású menet fut: az új kivételek a végén lépnek életbe"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "teljes zárolású menet fut: az alapértelmezett szigor enyhítése megvárja a végét"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "teljes zárolású menet fut: a várakozás rövidítése gyengíti a megerősítést"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "teljes zárolású menet fut: a begépelendő mondat elhagyása gyengíti a megerősítést"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "teljes zárolású menet fut: a gyűjtési ütem növelése több kiszökést finanszíroz"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "teljes zárolású menet fut: a kreditplafon emelése több kiszökést finanszíroz"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "teljes zárolású menet fut: a rövidebb szünetek kevesebbe kerülnek"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "teljes zárolású menet fut: a rövidebb feloldások kevesebbe kerülnek"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "teljes zárolású menet fut: az ütemezési bejegyzése a végéig nem gyengíthető"
+  }
+}

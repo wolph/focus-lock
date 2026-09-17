@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Η συνεδρία εστίασης ολοκληρώθηκε"
+  },
+  "notify_session_complete_body": {
+    "message": "Η συνεδρία εστίασής σου τελείωσε."
+  },
+  "notify_schedule_window_body": {
+    "message": "Κλειδωμένο μέχρι τις $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Ο προγραμματισμός εστίασης δεν ξεκίνησε"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Ο αποκλεισμός ιστότοπων δεν είναι ενεργός. Ολοκλήρωσε τη ρύθμιση ή δώσε πρόσβαση στους ιστότοπους και δοκίμασε ξανά."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Η ρύθμιση ολοκληρώθηκε σε άλλη καρτέλα."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Η ρύθμιση άλλαξε σε άλλη καρτέλα. Οι πιο πρόσφατες επιλογές φορτώθηκαν ξανά."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Η ρύθμιση άλλαξε σε άλλη καρτέλα. Φόρτωσε ξανά τη ρύθμιση πριν την ολοκληρώσεις."
+  },
+  "notify_setup_not_complete": {
+    "message": "Η ρύθμιση δεν είναι ολοκληρωμένη."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Η ρύθμιση δεν είναι έτοιμη να ολοκληρωθεί."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Η επιλογή αποθήκευσης άλλαξε. Φόρτωσε ξανά τη ρύθμιση πριν την ολοκληρώσεις."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Η αποθήκευση της ρύθμισης απέτυχε."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Η ενέργεια ρύθμισης απέτυχε."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Το Focus Lock δεν μπόρεσε να ελέγξει την πρόσβαση στους ιστότοπους. Επανάλαβε τη ρύθμιση ή φόρτωσε ξανά την επέκταση."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Η πρόσβαση στους ιστότοπους δόθηκε, αλλά το Focus Lock δεν μπόρεσε να ενεργοποιήσει τον αποκλεισμό. Επανάλαβε τη ρύθμιση ή φόρτωσε ξανά την επέκταση."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Η πρόσβαση στους ιστότοπους δεν είναι διαθέσιμη και το Focus Lock δεν μπόρεσε να ολοκληρώσει την άρση του αποκλεισμού. Επανάλαβε τη ρύθμιση ή φόρτωσε ξανά την επέκταση."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Το Focus Lock έλαβε ασυνεπή κατάσταση πρόσβασης στους ιστότοπους. Επανάλαβε τη ρύθμιση ή φόρτωσε ξανά την επέκταση."
+  },
+  "notify_boot_not_finished": {
+    "message": "Το Focus Lock δεν ολοκλήρωσε την εκκίνηση: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "άγνωστο σφάλμα"
+  },
+  "notify_nothing_to_reset": {
+    "message": "το Focus Lock λειτουργεί κανονικά, δεν υπάρχει τίποτα να επαναφερθεί"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "το Focus Lock δεν μπορεί να επαναφέρει κατάσταση που βρίσκεται ακόμη μέσα σε μια γενιά ρυθμίσεων"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Δεν υπάρχει διαγραφή δεδομένων για επανάληψη."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Απενεργοποίησε τον συγχρονισμό πριν διαγράψεις τα συγχρονισμένα δεδομένα"
+  },
+  "notify_work_gate_busy": {
+    "message": "Το Focus Lock ολοκληρώνει ακόμη μια προηγούμενη αλλαγή. Δοκίμασε ξανά σε λίγο."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Η ανοιχτή επιβεβαίωση δεν μπόρεσε να κλείσει. Δοκίμασε ξανά."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Η καρτέλα εργασίας δεν είναι διαθέσιμη."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Οι ρυθμίσεις ξεπερνούν το όριο των 8 KB του Chrome Sync. Αφαίρεσε καταχωρίσεις προγράμματος ή συντόμευσε τις προθέσεις και δοκίμασε ξανά."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Οι λίστες ξεπερνούν το όριο των 8 KB του Chrome Sync. Αφαίρεσε προσαρμοσμένους ή επιτρεπόμενους κανόνες και δοκίμασε ξανά."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι ιστότοποι που αφαιρείς ξεκλειδώνουν όταν τελειώσει"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι νέες επιτρεπόμενες καταχωρίσεις ισχύουν όταν τελειώσει"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι κατηγορίες που απενεργοποιείς ξεκλειδώνουν όταν τελειώσει"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι νέες εξαιρέσεις ισχύουν όταν τελειώσει"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: η χαλάρωση της προεπιλεγμένης αυστηρότητας περιμένει το τέλος της"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: η συντόμευση της αναμονής αποδυναμώνει την επιβεβαίωση"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: η κατάργηση της φράσης που πληκτρολογείς αποδυναμώνει την επιβεβαίωση"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: ο ταχύτερος ρυθμός συγκέντρωσης χρηματοδοτεί περισσότερες διαφυγές"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: το υψηλότερο όριο πίστωσης χρηματοδοτεί περισσότερες διαφυγές"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: οι πιο σύντομες παύσεις κοστίζουν λιγότερο"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: τα πιο σύντομα ξεκλειδώματα κοστίζουν λιγότερο"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "τρέχει συνεδρία πλήρους κλειδώματος: η καταχώριση προγράμματός της δεν χαλαρώνει πριν τελειώσει"
+  }
+}

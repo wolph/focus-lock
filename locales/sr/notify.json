@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "Сесија фокуса је завршена"
+  },
+  "notify_session_complete_body": {
+    "message": "Твоја сесија фокуса је готова."
+  },
+  "notify_schedule_window_body": {
+    "message": "Закључано до $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Распоред фокуса није могао да почне"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Блокирање сајтова није укључено. Заврши подешавање или одобри приступ сајтовима, па покушај поново."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Подешавање је завршено у другој картици."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Подешавање је промењено у другој картици. Најновији избори су поново учитани."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Подешавање је промењено у другој картици. Поново учитај подешавање пре завршетка."
+  },
+  "notify_setup_not_complete": {
+    "message": "Подешавање није завршено."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Подешавање није спремно за завршетак."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Избор складиштења у подешавању је промењен. Поново учитај подешавање пре завршетка."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Операција складиштења током подешавања није успела."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Операција подешавања није успела."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock није могао да провери приступ сајтовима. Покушај подешавање поново или поново учитај додатак."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Приступ сајтовима је одобрен, али Focus Lock није могао да укључи блокирање. Покушај подешавање поново или поново учитај додатак."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Приступ сајтовима није доступан, а Focus Lock није могао да заврши чишћење блокирања. Покушај подешавање поново или поново учитај додатак."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock је примио недоследно стање приступа сајтовима. Покушај подешавање поново или поново учитај додатак."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock није завршио покретање: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "непозната грешка"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock ради, нема шта да се ресетује"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock не може да ресетује извршавање које је још уписано у генерацију правила"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Поновни покушај брисања података није доступан."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Искључи синхронизацију пре брисања синхронизованих података"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock још завршава ранију промену. Покушај поново за тренутак."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Отворена препрека није могла да се затвори. Покушај поново."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Радна картица није доступна."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Подешавања премашују ограничење од 8 kB у Chrome синхронизацији. Уклони ставке распореда или скрати намере, па покушај поново."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Спискови премашују ограничење од 8 kB у Chrome синхронизацији. Уклони сопствена правила или правила са списка дозвољених, па покушај поново."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "траје сесија са чврстим закључавањем: уклањање блокираних сајтова се откључава када се она заврши"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "траје сесија са чврстим закључавањем: нове ставке списка дозвољених се откључавају када се она заврши"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "траје сесија са чврстим закључавањем: искључивање категорија се откључава када се она заврши"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "траје сесија са чврстим закључавањем: нова изузећа се откључавају када се она заврши"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "траје сесија са чврстим закључавањем: слабљење подразумеване строгоће чека њен крај"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "траје сесија са чврстим закључавањем: скраћивање одлагања промишљања слаби препреку"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "траје сесија са чврстим закључавањем: уклањање уписане реченице слаби препреку"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "траје сесија са чврстим закључавањем: повећање стопе зараде за паузе финансира више бекстава"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "траје сесија са чврстим закључавањем: повећање горње границе за паузе финансира више бекстава"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "траје сесија са чврстим закључавањем: скраћивање пауза снижава њихову цену"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "траје сесија са чврстим закључавањем: скраћивање откључавања снижава њихову цену"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "траје сесија са чврстим закључавањем: њена ставка распореда не може да се ослаби док се не заврши"
+  }
+}

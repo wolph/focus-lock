@@ -15,6 +15,14 @@ import {
  * Every locale ships, so this set is a tripwire rather than a promise about the other forty-five.
  */
 const STRESS_LOCALES: readonly string[] = ['de', 'fi', 'ru', 'ja', 'zh-CN', 'hi', 'ar', 'he'];
+/**
+ * A build produced by `scripts/locale-preview-dist.mjs`, which ships one catalogue and names it as
+ * the default locale. Chrome then renders that language whatever the browser's own interface
+ * language is, which is the only way to look at a translated layout on macOS.
+ */
+const PINNED_LOCALE: string | undefined = process.env.LOCALE_LAYOUT_PINNED;
+const LOCALES_UNDER_TEST: readonly string[] =
+  PINNED_LOCALE === undefined ? STRESS_LOCALES : [PINNED_LOCALE];
 const RTL_LOCALES: ReadonlySet<string> = new Set<string>(['ar', 'he', 'fa']);
 
 const SETTINGS_SECTIONS: readonly string[] = [
@@ -43,6 +51,9 @@ async function expectFits(page: Page, locale: string, surface: string): Promise<
  * reason, when the request did not take.
  */
 async function requireUiLanguage(page: Page, locale: string): Promise<void> {
+  // A pinned build carries one catalogue, so the language is settled by the build rather than by
+  // the browser and there is nothing to check.
+  if (PINNED_LOCALE !== undefined) return;
   // `@@ui_locale` is the browser's interface locale, which is what Chrome picks the catalogue by.
   // `getUILanguage` reports the language preference instead and can say fr while every message
   // still comes from en, so it is the wrong thing to gate on.
@@ -55,6 +66,8 @@ async function requireUiLanguage(page: Page, locale: string): Promise<void> {
 }
 
 async function expectDirection(page: Page, locale: string): Promise<void> {
+  // A pinned build still reports the browser's own direction, so only the language is looked at.
+  if (PINNED_LOCALE !== undefined) return;
   const direction: string = await page.evaluate(
     (): string => document.documentElement.dir || 'ltr',
   );
@@ -67,11 +80,12 @@ async function expectDirection(page: Page, locale: string): Promise<void> {
 
 /** The overlay's shadow root is closed, so the host element is what carries its direction. */
 async function expectOverlayDirection(page: Page, locale: string): Promise<void> {
+  if (PINNED_LOCALE !== undefined) return;
   const direction: string = await overlayDirection(page);
   expect(direction, `${locale} overlay direction`).toBe(RTL_LOCALES.has(locale) ? 'rtl' : 'ltr');
 }
 
-for (const locale of STRESS_LOCALES) {
+for (const locale of LOCALES_UNDER_TEST) {
   test.describe(`layout in ${locale}`, () => {
     test.use({ extensionUiLanguage: locale });
 
