@@ -16,40 +16,40 @@
     "message": "Mga setting"
   },
   "popup_open_settings_failed": {
-    "message": "Could not open Mga setting. Try again."
+    "message": "Hindi maaaring open Settings. Try again."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load sesysa mga settsag. Reload the popup sa try agasa. Defaults are ipakitan."
+    "message": "Hindi maaaring load session settings. Reload ang popup to try again. Defaults are shown."
   },
   "popup_open_setup_failed": {
-    "message": "Could not buksan setup. Try agasa."
+    "message": "Hindi maaaring open setup. Try again."
   },
   "popup_setup_required_heading": {
     "message": "Fsaish settsag up Pokus Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose your simulansag lists, website pag-access, at ssaage modo beparae simulansag a sesysa."
+    "message": "Choose ang iyong starting lists, website access, and storage mode before starting a session."
   },
   "popup_open_setup_button": {
     "message": "Buksan setup"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Could not csafirm website hadlangsag. Try agasa."
+    "message": "Hindi maaaring confirm website blocking. Try again."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not gawsa website hadlangsag. Try agasa."
+    "message": "Hindi maaaring enable website blocking. Try again."
   },
   "popup_blocking_off_heading": {
     "message": "Website hadlangsag is ngf"
   },
   "popup_blocking_off_body": {
-    "message": "Pokus Lock cannot simulan a sesysa until Chrome grants website pag-access at hadlangsag is gawsad."
+    "message": "Focus Lock hindi maaaring start a session until Chrome grants website access and blocking is enabled."
   },
   "popup_blocking_off_denied": {
     "message": "Chrome did not grant website pag-access. Website hadlangsag is still ngf."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock hindi maaaring enable blocking. Retry setup or reload ang extension."
   },
   "popup_enable_blocking_button": {
     "message": "Paganahin website blocking"
@@ -58,13 +58,13 @@
     "message": "Subukan Muli"
   },
   "popup_notice_access_revoked": {
-    "message": "Your sesysa ended because website pag-access was alissad."
+    "message": "Ang iyong session ended because website access was removed."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your sesysa ended because Pokus Lock could not gawsa website hadlangsag."
+    "message": "Ang iyong session ended because Focus Lock hindi maaaring enable website blocking."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Could not dismiss this notice. Try agasa."
+    "message": "Hindi maaaring dismiss this notice. Try again."
   },
   "popup_dismiss_notice_label": {
     "message": "Dismiss website pag-access notice"
@@ -73,19 +73,19 @@
     "message": "Palampasin"
   },
   "popup_restart_failed": {
-    "message": "Could not resimulan Pokus Lock. Try agasa."
+    "message": "Hindi maaaring restart Focus Lock. Try again."
   },
   "popup_boot_failed_heading": {
-    "message": "Pokus Lock could not simulan"
+    "message": "Focus Lock hindi maaaring start"
   },
   "popup_boot_reason_unavailable": {
-    "message": "The reassa could not be read."
+    "message": "Ang reason hindi maaaring be read."
   },
   "popup_reset_runtime_button": {
     "message": "Reset local runoas"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your mga settsag, lists, at statistics. Clears the current sesysa state."
+    "message": "Keeps ang iyong settings, lists, and statistics. Clears ang current session state."
   },
   "popup_delete_all_confirm_button": {
     "message": "Alisin everything and start over"
@@ -106,16 +106,16 @@
     "message": "Actisa sa progress"
   },
   "popup_active_site_checking": {
-    "message": "Checksag the active site"
+    "message": "Checking ang active site"
   },
   "popup_active_site_unsupported": {
     "message": "Buksan a regular website to unlock it"
   },
   "popup_active_site_unknown": {
-    "message": "Could hindit identify the aktibo site"
+    "message": "Hindi maaaring identify ang active site"
   },
   "popup_active_site_error": {
-    "message": "Could hindit identify the aktibo site."
+    "message": "Hindi maaaring identify ang active site."
   },
   "popup_resume_now": {
     "message": "Ipagpatuloy now"
@@ -212,7 +212,7 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Mahirap lock. Cannot end early."
+    "message": "Hard lock. Hindi maaaring end early."
   },
   "popup_draft_stop_flexible": {
     "message": "Can end at any oas."
@@ -254,7 +254,7 @@
     "message": "Uri:"
   },
   "popup_gate_update_failed": {
-    "message": "Could not update the gate. Try agasa."
+    "message": "Hindi maaaring update ang gate. Try again."
   },
   "popup_gate_intention": {
     "message": "Sinabi mo: $INTENTION$",
@@ -475,7 +475,7 @@
     "message": "Mahirap lock"
   },
   "popup_session_type_flexible_hint": {
-    "message": "Tapusin the session immediately whenever you choose."
+    "message": "End ang session immediately whenever you choose."
   },
   "popup_session_type_friction_hint": {
     "message": "Tapusining early requires $WAIT$. No typing is required.",
@@ -496,25 +496,25 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The sesysa cannot end early. Site pag-access cri-edit still trabahos."
+    "message": "Ang session hindi maaaring end early. Site access credit still works."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected categoies at extra panuntunans are hadlanged. Other sites remasa available."
+    "message": "Ang selected categories and extra rules are blocked. Oangr sites remain available."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. Every other website is hadlanged."
+    "message": "Only ang listed sites are available. Every oangr website is blocked."
   },
   "popup_invalid_duration_error": {
     "message": "Enter a session length greater than zero minutos."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Defaults changed, but current lists could hindit be mag-loaded. Remag-load the poppataas."
+    "message": "Defaults changed, but current lists hindi maaaring be loaded. Reload ang popup."
   },
   "popup_no_work_tab_option": {
     "message": "No trabaho tab (opsysaal)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Selected tab unavailable - choose ahindither"
+    "message": "Selected tab unavailable - choose anoangr"
   },
   "popup_cycles_label": {
     "message": "Sikluss: $FOCUS$ msa pokus, $SHORT_BREAK$ msa pahsaga, $LONG_BREAK$ msa lsag pahsaga every $LONG_EVERY$th",
@@ -592,39 +592,39 @@
     "message": "Enter a valid domasa such as docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Could not load trabaho tabs. Rebuksan the popup sa try agasa."
+    "message": "Hindi maaaring load work tabs. Reopen ang popup to try again."
   },
   "popup_use_this_tab": {
     "message": "Use ito tab"
   },
   "popup_current_tab_unavailable": {
-    "message": "This tab is not available para trabaho. Choose another buksan tab."
+    "message": "This tab is hindi available for work. Choose anoangr open tab."
   },
   "popup_checking_current_tab": {
     "message": "Checksag current tab..."
   },
   "popup_finding_current_tab": {
-    "message": "Fsadsag your current tab..."
+    "message": "Tinitingnan ang iyong kasalukuyang tab..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Could not load your current tab. Try agasa."
+    "message": "Hindi maaaring load ang iyong current tab. Try again."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Choose o replace your trabaho tab."
+    "message": "Piliin ang tab na gusto mong gamitin para sa iyong focus session."
   },
   "popup_saving_work_tab": {
     "message": "Savsag trabaho tab..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not magsave the trabaho tab. Try agasa."
+    "message": "Hindi maaaring save ang work tab. Try again."
   },
   "popup_choose_open_tab_option": {
     "message": "Choose an buksan tab"
   },
   "popup_or_choose_another_tab": {
-    "message": "Or choose ahindither tab"
+    "message": "o pumili ng iba pang tab"
   },
   "popup_start_failed": {
-    "message": "Could not simulan sesysa. Try agasa."
+    "message": "Hindi maaaring start session. Try again."
   }
 }

@@ -19,13 +19,13 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Your saved setup progress could not be restored. Magsimulaing again with your current defaults."
+    "message": "Ang iyong saved setup progress hindi maaaring be restored. Starting again with ang iyong current defaults."
   },
   "onboarding_complete_heading": {
     "message": "I-set up complete"
   },
   "onboarding_complete_body": {
-    "message": "Your choices are saved. Buksan Focus Lock from the Chrome toolbar to start a session."
+    "message": "Ang iyong choices are saved. Open Focus Lock from ang Chrome toolbar to start a session."
   },
   "onboarding_error_heading": {
     "message": "I-set up unavailable"
@@ -46,10 +46,10 @@
     "message": "Hindi na-kumpleto ang setup. Ang iyong mga pagpipilian ay nakaligtas pa rin. Subukan ulit."
   },
   "onboarding_lists_heading": {
-    "message": "Piliin ang iyong pangunahing listahan ng blocking"
+    "message": "Anong mga site ang gusto mong i-block?"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "Sa $MODE$, ang mga pinagana na kategorya at karagdagang na-block na mga site ay hindi available.",
+    "message": "Ang bawat URL sa block list ay nagiging unavailable sa panahon ng sesi.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "Sa $MODE$, lahat ng mga site ay hindi available maliban sa iyong listahan ng pinapayagan.",
+    "message": "In $MODE$, every site is unavailable except ang iyong allow list.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -136,10 +136,10 @@
     "message": "Ang Focus Lock ay gumagamit lamang ng access na iyon sa paglalapat ng iyong mga patakaran sa pagbabalanse."
   },
   "onboarding_access_denied": {
-    "message": "Ang Chrome ay hindi nagbigay ng access sa website. Maaari kang subukan ulit."
+    "message": "Maaari kang magdulot ng website access sa mga setting ng iyong browser."
   },
   "onboarding_access_registration_error": {
-    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock hindi maaaring enable blocking. Retry setup or reload ang extension."
   },
   "onboarding_access_enable_button": {
     "message": "Paganahin website blocking"

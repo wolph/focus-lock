@@ -12,13 +12,13 @@
     "message": "આંકડા લોડ કરી શકાયા નહીં. ફરી પ્રયાસ કરવા રિલોડ કરો."
   },
   "stats_partial_error_both": {
-    "message": "Hourly attempts and site access credit સેટિંગ્સ are unavailable."
+    "message": "કલાકદીઠ પ્રયાસો અને સાઇટ ઍક્સેસ ક્રેડિટ સેટિંગ્સ ઉપલબ્ધ નથી."
   },
   "stats_partial_error_attempts": {
     "message": "કલાકદીઠ પ્રયાસો ઉપલબ્ધ નથી."
   },
   "stats_partial_error_economy": {
-    "message": "Site access credit સેટિંગ્સ are unavailable."
+    "message": "સાઇટ ઍક્સેસ ક્રેડિટ સેટિંગ્સ ઉપલબ્ધ નથી."
   },
   "stats_scope_synced": {
     "message": "આ Chrome ખાતાથી સિંક્ કરેલ કુલ."
@@ -36,22 +36,22 @@
     "message": "વ્યાપ તપાસ ફરી પ્રયાસ કરો"
   },
   "stats_empty": {
-    "message": "Stats appear after your first સેશન."
+    "message": "તારા પ્રથમ સેશન પછી આંકડા દેખાય છે."
   },
   "stats_tile_focus_today": {
-    "message": "Focus આજે"
+    "message": "આજનું ફોકસ"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Focus in the last 7 દિવસો"
+    "message": "છેલ્લા 7 દિવસમાં ફોકસ"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts બ્લોક્ડ આજે"
+    "message": "આજે બ્લોક કરેલા પ્રયાસો"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gate requests dismissed આજે"
+    "message": "આજે નકારેલી દ્વાર વિનંતીઓ"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent આજે"
+    "message": "આજે ખર્ચેલી સાઇટ ઍક્સેસ ક્રેડિટ"
   },
   "stats_tile_credit_subline_spent": {
     "message": "બધી સાઇટ્સ $ALL_SITES$, એક સાઇટ $ONE_SITE$, $EARNED$ કમાયા",
@@ -113,7 +113,7 @@
     "message": "સ્ટ્રીક ફ્રીઝ: એક ચૂકી ગયેલો દિવસ, આવરી લેવાયો"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ active દિવસ this month ($MONTH$)",
+    "message": "આ મહિને ($MONTH$) $COUNT$ સક્રિય દિવસ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -126,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ active દિવસો this month ($MONTH$)",
+    "message": "આ મહિને ($MONTH$) $COUNT$ સક્રિય દિવસો",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -161,22 +161,22 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Focus, last 14 દિવસો"
+    "message": "ફોકસ, છેલ્લા 14 દિવસ"
   },
   "stats_chart_focus_empty": {
-    "message": "Focus minutes appear after your first સેશન."
+    "message": "તારા પ્રથમ સેશન પછી ફોકસ મિનિટ દેખાય છે."
   },
   "stats_chart_attempts_heading": {
-    "message": "બ્લોક્ડ attempts, last 14 દિવસો"
+    "message": "બ્લોક કરેલા પ્રયાસો, છેલ્લા 14 દિવસ"
   },
   "stats_chart_attempts_empty": {
-    "message": "બ્લોક્ડ attempts show up here once a સેશન catches one."
+    "message": "એકવાર સેશન કોઈ પ્રયાસ પકડે પછી બ્લોક કરેલા પ્રયાસો અહીં દેખાય છે."
   },
   "stats_chart_sites_heading": {
-    "message": "Top બ્લોક્ડ sites, last 30 દિવસો"
+    "message": "ટોચની બ્લોક કરેલી સાઇટ્સ, છેલ્લા 30 દિવસ"
   },
   "stats_chart_sites_empty": {
-    "message": "Nothing બ્લોક્ડ yet. That is a fine શરુ."
+    "message": "હજુ સુધી કંઈ બ્લોક કરેલું નથી. એ સારી શરૂઆત છે."
   },
   "stats_chart_hours_heading": {
     "message": "કલાક પ્રમાણે પ્રયાસો, ફક્ત આ મશીન"
@@ -249,13 +249,13 @@
     "message": "મૂલ્ય"
   },
   "stats_heat_strip_label": {
-    "message": "24-hour બ્લોક્ડ-attempt heat strip"
+    "message": "24-કલાકની બ્લોક-પ્રયાસ હીટ સ્ટ્રીપ"
   },
   "stats_sessions_heading": {
     "message": "આ મશીન પરના તાજેતરના સેશન"
   },
   "stats_sessions_empty": {
-    "message": "Your first સેશન will appear here."
+    "message": "તારું પ્રથમ સેશન અહીં દેખાશે."
   },
   "stats_sessions_col_date": {
     "message": "તારીખ"

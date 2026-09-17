@@ -623,5 +623,26 @@
   },
   "shared_gate_end_title": {
     "message": "આ સેશન સમાપ્ત કરો"
+  },
+  "shared_work_choose_tab_error": {
+    "message": "ઉપલબ્ધ વર્ક ટૅબ પસંદ કરો."
+  },
+  "shared_work_tab_closed_error": {
+    "message": "તે ટૅબ હવે ઉપલબ્ધ નથી. બીજો વર્ક ટૅબ પસંદ કરો."
+  },
+  "shared_work_target_not_saved_error": {
+    "message": "સેશન શરૂ થયું, પણ વર્ક ટૅબ સાચવી શકાયું નહીં. $CHOOSE$",
+    "placeholders": {
+      "CHOOSE": {
+        "content": "$1",
+        "example": "Choose an available work tab."
+      }
+    }
+  },
+  "shared_work_session_changed_error": {
+    "message": "ફોકસ સેશન બદલાયું છે. તારો વર્ક ટૅબ ફરીથી પસંદ કરો."
+  },
+  "shared_work_target_action_stale_error": {
+    "message": "ફોકસ સેશન બદલાયું છે. પોપઅપ ફરીથી ખોલો."
   }
 }

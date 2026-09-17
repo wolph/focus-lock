@@ -3,19 +3,19 @@
     "message": "Pokus Lock stats"
   },
   "stats_page_title": {
-    "message": "Your pokus recod"
+    "message": "Ang iyong focus record"
   },
   "stats_loading": {
-    "message": "Nag-load your stats."
+    "message": "Loading ang iyong stats."
   },
   "stats_load_error": {
-    "message": "Could not load stats. Reload sa try agasa."
+    "message": "Hindi maaaring load stats. Reload to try again."
   },
   "stats_partial_error_both": {
     "message": "Hourly attempts at site pag-access cri-edit mga settsag are unavailable."
   },
   "stats_partial_error_attempts": {
-    "message": "Ang oras-oras na mga pagsubok ay hindi available."
+    "message": "Hindi available para sa unang pagkakataon na gawing available ang datos."
   },
   "stats_partial_error_economy": {
     "message": "Site pag-access cri-edit mga settsag are unavailable."
@@ -36,13 +36,13 @@
     "message": "Subukan Muli scope check"
   },
   "stats_empty": {
-    "message": "Stats appear after your first sesysa."
+    "message": "Stats appear after ang iyong first session."
   },
   "stats_tile_focus_today": {
     "message": "Focus toaraw"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Focus in the last 7 araws"
+    "message": "Focus in ang last 7 days"
   },
   "stats_tile_attempts_today": {
     "message": "Attempts blocked toaraw"
@@ -83,7 +83,7 @@
     "message": "Sunod-sunod"
   },
   "stats_streak_empty": {
-    "message": "Your streak starts with your first focus araw."
+    "message": "Ang iyong streak starts with ang iyong first focus day."
   },
   "stats_streak_unit_one": {
     "message": "araw"
@@ -164,7 +164,7 @@
     "message": "Focus, last 14 araws"
   },
   "stats_chart_focus_empty": {
-    "message": "Focus minutos appear after your first session."
+    "message": "Focus minutes appear after ang iyong first session."
   },
   "stats_chart_attempts_heading": {
     "message": "Hadlanged attempts, last 14 araws"
@@ -218,10 +218,10 @@
     "message": "Hoizsatal bar chart"
   },
   "stats_chart_description_bar": {
-    "message": "Bar chart. Use the keyboard sa move through data posats, o buksan Tsagnan as table para the same halagas."
+    "message": "Bar chart. Use ang keyboard to move sa pamamagitan ng data points, or open View as table for ang same values."
   },
   "stats_chart_description_hbar": {
-    "message": "Hoizsatal bar chart. Use the keyboard sa move through data posats, o buksan Tsagnan as table para the same halagas."
+    "message": "Horizontal bar chart. Use ang keyboard to move sa pamamagitan ng data points, or open View as table for ang same values."
   },
   "stats_chart_empty_default": {
     "message": "Hindi data yet."
@@ -255,7 +255,7 @@
     "message": "Recent sesysas sa this machsae"
   },
   "stats_sessions_empty": {
-    "message": "Your first sesysa will appear here."
+    "message": "Ang iyong first session will appear here."
   },
   "stats_sessions_col_date": {
     "message": "Petsa"

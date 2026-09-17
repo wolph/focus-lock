@@ -36,25 +36,25 @@
     }
   },
   "overlay_target_checking": {
-    "message": "Checkkatikag available kazi tabs..."
+    "message": "Checking inayopatikana work tabs..."
   },
   "overlay_target_pick_tab": {
-    "message": "Pick an fungua tab kwa ckwenyetkatikaue your task."
+    "message": "Pick an open tab to continue yako task."
   },
   "overlay_target_session_unavailable": {
-    "message": "Your mtazamo kikao is not available. Try agakatika, au reload this page."
+    "message": "Yako focus session is not inayopatikana. Try again, or reload this page."
   },
   "overlay_target_lookup_failed": {
-    "message": "Could not load your kazi tab. Try agakatika, au reload this page."
+    "message": "Haiwezi load yako work tab. Try again, or reload this page."
   },
   "overlay_target_reconnect": {
     "message": "Reload this page to reconnect to Fokasi Lock."
   },
   "overlay_target_page_changed": {
-    "message": "The requestkatikag page has changed. Reload the page."
+    "message": "Ile requesting page has changed. Reload ile page."
   },
   "overlay_target_transport_error": {
-    "message": "Could not reach Fokasi Lock. Try again."
+    "message": "Haiwezi reach Focus Lock. Try again."
   },
   "overlay_picker_heading": {
     "message": "Choose a kazi tab"
@@ -75,10 +75,10 @@
     "message": "Refresh kichupos"
   },
   "overlay_picker_available_tabs": {
-    "message": "Available kazi tabs"
+    "message": "Inayopatikana work tabs"
   },
   "overlay_picker_finding": {
-    "message": "Fkatikadkatikag available tabs..."
+    "message": "Finding inayopatikana tabs..."
   },
   "overlay_picker_searching": {
     "message": "Searchkatikag kazi tabs..."
@@ -87,13 +87,13 @@
     "message": "Savkatikag kazi tab..."
   },
   "overlay_picker_no_tabs": {
-    "message": "No available work tabs. Fungua a site allowed by this session, then refresh tabs."
+    "message": "No inayopatikana work tabs. Open a site allowed by this session, ilen refresh tabs."
   },
   "overlay_picker_no_matches": {
-    "message": "No matchkatikag tabs. Try another search au clear the search."
+    "message": "No matching tabs. Try anoiler search or clear ile search."
   },
   "overlay_picker_load_failed": {
-    "message": "Could not load kazi tabs. Try agakatika."
+    "message": "Haiwezi load work tabs. Try again."
   },
   "overlay_picker_count_one": {
     "message": "$MATCHES$ wa $COUNT$ tab",

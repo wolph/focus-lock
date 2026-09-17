@@ -3,7 +3,7 @@
     "message": "Fokasi session complete"
   },
   "notify_session_complete_body": {
-    "message": "Your mtazamo kikao fkatikaished."
+    "message": "Yako focus session imekamilika."
   },
   "notify_schedule_window_body": {
     "message": "Locked hadi $END$.",
@@ -15,19 +15,19 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Fokasi schedule could not start"
+    "message": "Focus schedule haiwezi start"
   },
   "notify_schedule_unavailable_body": {
     "message": "Tovuti blocking is not enabled. Finish setup or grant website access, then try again."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Kuanzisha was completed in another tab."
+    "message": "Setup was completed in anoiler tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Kuanzisha changed in another tab. The latest choices were reloaded."
+    "message": "Setup changed in anoiler tab. Ile latest choices were reloaded."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Kuanzisha changed in another tab. Reload setup before finishing."
+    "message": "Setup changed in anoiler tab. Reload setup before finishing."
   },
   "notify_setup_not_complete": {
     "message": "Kuanzisha is not complete."
@@ -45,16 +45,16 @@
     "message": "Onboardkatikag operatikwenye kushkatikadwa."
   },
   "notify_website_access_check_failed": {
-    "message": "Fokasi Lock could not check website access. Jaribu Tena setup or reload the extension."
+    "message": "Focus Lock haiwezi check website access. Retry setup or reload ile extension."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Tovuti access is granted, but Fokasi Lock could not enable blocking. Jaribu Tena setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock haiwezi enable blocking. Retry setup or reload ile extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Tovuti access is unavailable, and Fokasi Lock could not finish blocking cleanup. Jaribu Tena setup or reload the extension."
+    "message": "Website access is uninayopatikana, and Focus Lock haiwezi finish blocking cleanup. Retry setup or reload ile extension."
   },
   "notify_website_access_inconsistent": {
-    "message": "Fokasi Lock received an inconsistent website access state. Jaribu Tena setup or reload the extension."
+    "message": "Focus Lock received an inconsistent website access state. Retry setup or reload ile extension."
   },
   "notify_boot_not_finished": {
     "message": "Fokasi Lock did not finish starting: $REASON$",
@@ -69,13 +69,13 @@
     "message": "unknown hitilafu"
   },
   "notify_nothing_to_reset": {
-    "message": "Fokasi Lock is running, nothing to reset"
+    "message": "Focus Lock is inaendeshwa, nothing to reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Fokasi Lock cannot reset a runtime that is still committed inside a policy generation"
+    "message": "Focus Lock haiwezi reset a runtime that is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "Data futa jaribu tena is hapanat available."
+    "message": "Data clear retry is not inayopatikana."
   },
   "notify_disable_sync_before_delete": {
     "message": "Lemaza Sync before deleting synced data"
@@ -84,16 +84,16 @@
     "message": "Fokasi Lock is still finishing an earlier change. Try again in a moment."
   },
   "notify_work_gate_stuck": {
-    "message": "The fungua gate could not be fungad. Try agakatika."
+    "message": "Ile open gate haiwezi be closed. Try again."
   },
   "notify_work_tab_unavailable": {
-    "message": "The kazi tab is unavailable."
+    "message": "Ile work tab is uninayopatikana."
   },
   "notify_settings_sync_limit": {
-    "message": "Mipango exceed the 8 KB Chrome Sync limit. Ondoa schedule entries or shorten intentions, then try again."
+    "message": "Settings exceed ile 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, ilen try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sync limit. Ondoa custom or whitelist rules, then try again."
+    "message": "Lists exceed ile 8 KB Chrome Sync limit. Remove custom or whitelist rules, ilen try again."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "a ngumu kikao is runnkatikag: removkatikag kuzuiaed kwavutis unlocks wakati it ends"
@@ -108,19 +108,19 @@
     "message": "a ngumu kikao is runnkatikag: new exclusikwenyes unlock wakati it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a ngumu kikao is runnkatikag: weakenkatikag the default strictness waits until it ends"
+    "message": "a hard session is inaendeshwa: weakening ile default strictness waits until it ends"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "a ngumu kikao is runnkatikag: shautenkatikag the kufikiri delay weakens the gate"
+    "message": "a hard session is inaendeshwa: shortening ile deliberation delay weakens ile gate"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "a ngumu kikao is runnkatikag: droppkatikag the akatikaad phrase weakens the gate"
+    "message": "a hard session is inaendeshwa: dropping ile typed phrase weakens ile gate"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "a ngumu kikao is runnkatikag: raiskatikag the kusimama earn rate funds maue escapes"
+    "message": "a hard session is inaendeshwa: raising ile pause earn rate funds more escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "a ngumu kikao is runnkatikag: raiskatikag the kusimama cap funds maue escapes"
+    "message": "a hard session is inaendeshwa: raising ile pause cap funds more escapes"
   },
   "notify_guard_settings_shorten_pause": {
     "message": "a ngumu kikao is runnkatikag: shautenkatikag kusimamas lowers their cost"
@@ -129,6 +129,6 @@
     "message": "a ngumu kikao is runnkatikag: shautenkatikag unlocks lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a ngumu kikao is runnkatikag: its schedule entry cannot be weakened until it ends"
+    "message": "a hard session is inaendeshwa: its schedule entry haiwezi be weakened until it ends"
   }
 }

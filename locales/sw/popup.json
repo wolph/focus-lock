@@ -16,40 +16,40 @@
     "message": "Mipango"
   },
   "popup_open_settings_failed": {
-    "message": "Could not open Mipango. Try again."
+    "message": "Haiwezi open Settings. Try again."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load kikao mipangilio. Reload the popup kwa try agakatika. Defaults are kwenyegeshan."
+    "message": "Haiwezi load session settings. Reload ile popup to try again. Defaults are shown."
   },
   "popup_open_setup_failed": {
-    "message": "Could not fungua setup. Try agakatika."
+    "message": "Haiwezi open setup. Try again."
   },
   "popup_setup_required_heading": {
     "message": "Finish setting up Fokasi Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose your kuanzakatikag lists, webkwavuti kufikia, na stauage njia bekwae kuanzakatikag a kikao."
+    "message": "Choose yako starting lists, website access, and storage mode before starting a session."
   },
   "popup_open_setup_button": {
     "message": "Fungua setup"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Could not ckwenyefirm webkwavuti kuzuiakatikag. Try agakatika."
+    "message": "Haiwezi confirm website blocking. Try again."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not kuweka webkwavuti kuzuiakatikag. Try agakatika."
+    "message": "Haiwezi enable website blocking. Try again."
   },
   "popup_blocking_off_heading": {
     "message": "Tovuti blocking is off"
   },
   "popup_blocking_off_body": {
-    "message": "Fokasi Lock cannot start a session until Chrome grants website access and blocking is enabled."
+    "message": "Focus Lock haiwezi start a session until Chrome grants website access and blocking is enabled."
   },
   "popup_blocking_off_denied": {
     "message": "Chrome did not grant website access. Tovuti blocking is still off."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Tovuti access is granted, but Fokasi Lock could not enable blocking. Jaribu Tena setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock haiwezi enable blocking. Retry setup or reload ile extension."
   },
   "popup_enable_blocking_button": {
     "message": "Wezesha website blocking"
@@ -58,13 +58,13 @@
     "message": "Jaribu Tena"
   },
   "popup_notice_access_revoked": {
-    "message": "Your kikao ended because webkwavuti kufikia was kukwenyedoad."
+    "message": "Yako session ended because website access was removed."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your session ended because Fokasi Lock could not enable website blocking."
+    "message": "Yako session ended because Focus Lock haiwezi enable website blocking."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Could not dismiss this notice. Try agakatika."
+    "message": "Haiwezi dismiss this notice. Try again."
   },
   "popup_dismiss_notice_label": {
     "message": "Dismiss webkwavuti kufikia notice"
@@ -73,19 +73,19 @@
     "message": "Sitaka"
   },
   "popup_restart_failed": {
-    "message": "Could not restart Fokasi Lock. Try again."
+    "message": "Haiwezi restart Focus Lock. Try again."
   },
   "popup_boot_failed_heading": {
-    "message": "Fokasi Lock could not start"
+    "message": "Focus Lock haiwezi start"
   },
   "popup_boot_reason_unavailable": {
-    "message": "The reaskwenye could not be read."
+    "message": "Ile reason haiwezi be read."
   },
   "popup_reset_runtime_button": {
     "message": "Reset local runwakati"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your mipangilio, lists, na statistics. Clears the current kikao state."
+    "message": "Keeps yako settings, lists, and statistics. Clears ile current session state."
   },
   "popup_delete_all_confirm_button": {
     "message": "Futa everything and start over"
@@ -106,16 +106,16 @@
     "message": "Actikwenye katika progress"
   },
   "popup_active_site_checking": {
-    "message": "Checkkatikag the active kwavuti"
+    "message": "Checking ile active site"
   },
   "popup_active_site_unsupported": {
     "message": "Fungua a regular website to unlock it"
   },
   "popup_active_site_unknown": {
-    "message": "Could not identify the active kwavuti"
+    "message": "Haiwezi identify ile active site"
   },
   "popup_active_site_error": {
-    "message": "Could not identify the active kwavuti."
+    "message": "Haiwezi identify ile active site."
   },
   "popup_resume_now": {
     "message": "Kuendelea now"
@@ -212,7 +212,7 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Ngumu lock. Cannot end early."
+    "message": "Hard lock. Haiwezi end early."
   },
   "popup_draft_stop_flexible": {
     "message": "Can end at any wakati."
@@ -254,7 +254,7 @@
     "message": "Akatikaa:"
   },
   "popup_gate_update_failed": {
-    "message": "Could not update the gate. Try agakatika."
+    "message": "Haiwezi update ile gate. Try again."
   },
   "popup_gate_intention": {
     "message": "Ulisema: $INTENTION$",
@@ -475,7 +475,7 @@
     "message": "Ngumu lock"
   },
   "popup_session_type_flexible_hint": {
-    "message": "Malizia the session immediately whenever you choose."
+    "message": "End ile session immediately whenever you choose."
   },
   "popup_session_type_friction_hint": {
     "message": "Maliziaing early requires $WAIT$. No typing is required.",
@@ -496,25 +496,25 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The kikao cannot end early. Tovuti kufikia crhariri still kazis."
+    "message": "Ile session haiwezi end early. Site access credit still works."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected categauies na extra sherias are kuzuiaed. Other kwavutis remakatika available."
+    "message": "Ile selected categories and extra rules are blocked. Oiler sites remain inayopatikana."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed kwavutis are available. Every other webkwavuti is kuzuiaed."
+    "message": "Only ile listed sites are inayopatikana. Every oiler website is blocked."
   },
   "popup_invalid_duration_error": {
     "message": "Enter a session length greater than zero dakikas."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Defaults changed, but current lists could hapanat be pakiaed. Repakia the popjuu."
+    "message": "Defaults changed, but current lists haiwezi be loaded. Reload ile popup."
   },
   "popup_no_work_tab_option": {
     "message": "No kazi tab (chaguoal)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Selected kichupo unavailable - choose another"
+    "message": "Selected tab uninayopatikana - choose anoiler"
   },
   "popup_cycles_label": {
     "message": "Mzungukos: $FOCUS$ mkatika mtazamo, $SHORT_BREAK$ mkatika mapumziko, $LONG_BREAK$ mkatika lkwenyeg mapumziko every $LONG_EVERY$th",
@@ -592,39 +592,39 @@
     "message": "Enter a valid domakatika such as docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Could not load kazi tabs. Refungua the popup kwa try agakatika."
+    "message": "Haiwezi load work tabs. Reopen ile popup to try again."
   },
   "popup_use_this_tab": {
     "message": "Use this kichupo"
   },
   "popup_current_tab_unavailable": {
-    "message": "This tab is not available kwa kazi. Choose another fungua tab."
+    "message": "This tab is not inayopatikana for work. Choose anoiler open tab."
   },
   "popup_checking_current_tab": {
     "message": "Checkkatikag current tab..."
   },
   "popup_finding_current_tab": {
-    "message": "Fkatikadkatikag your current tab..."
+    "message": "Finding yako current tab..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Could not load your current tab. Try agakatika."
+    "message": "Haiwezi load yako current tab. Try again."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Choose au replace your kazi tab."
+    "message": "Choose or replace yako work tab."
   },
   "popup_saving_work_tab": {
     "message": "Savkatikag kazi tab..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not kuhifadhi the kazi tab. Try agakatika."
+    "message": "Haiwezi save ile work tab. Try again."
   },
   "popup_choose_open_tab_option": {
     "message": "Choose an fungua tab"
   },
   "popup_or_choose_another_tab": {
-    "message": "Or choose another kichupo"
+    "message": "Or choose anoiler tab"
   },
   "popup_start_failed": {
-    "message": "Could not kuanza kikao. Try agakatika."
+    "message": "Haiwezi start session. Try again."
   }
 }

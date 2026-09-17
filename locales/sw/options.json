@@ -12,13 +12,13 @@
     "message": "Kupakia privacy settings"
   },
   "options_save_failed": {
-    "message": "Could not kuhifadhi. Try agakatika."
+    "message": "Haiwezi save. Try again."
   },
   "options_blocking_heading": {
     "message": "Zuiaing"
   },
   "options_blocking_help": {
-    "message": "Cuskwam sherias kuzuia durkatikag blacklist kikaos. The whitelist is what stays reachable durkatikag whitelist kikaos. Bundled categauies kuzuia commkwenye wakati skatikaks."
+    "message": "Custom rules block during blacklist sessions. Ile whitelist is what stays reachable during whitelist sessions. Bundled categories block common time sinks."
   },
   "options_custom_blacklist_title": {
     "message": "Cuskwam blacklist"
@@ -30,13 +30,13 @@
     "message": "Bundled categauies"
   },
   "options_bundled_categories_help": {
-    "message": "Bundled lists wa commkwenye wakati skatikaks. Toggle a whole akatikaa, then fungua it kwa keep skatikagle kwavutis available."
+    "message": "Bundled lists of common time sinks. Toggle a whole category, ilen open it to keep single sites inayopatikana."
   },
   "options_schedule_heading": {
     "message": "Ratiba"
   },
   "options_schedule_help": {
-    "message": "Kikaos start on their own inside these windows. Strictness set here applies for the whole window."
+    "message": "Sessions start on ileir own inside ilese windows. Strictness set here applies for ile whole window."
   },
   "options_behavior_heading": {
     "message": "Kikao behavior"
@@ -123,7 +123,7 @@
     "message": "Ongeza rule"
   },
   "options_rules_help": {
-    "message": "facebook.com covers that domakatika na every subdomakatika. news.ycombkatikaatau.com covers that subdomakatika na anythkatikag under it. /youtube\\.com\\/shauts/ matches the full URL as a regular expressikwenye."
+    "message": "facebook.com covers that domain and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/shorts/ matches ile full URL as a regular expression."
   },
   "options_number_error_positive": {
     "message": "$LABEL$ lazima kuwa namba nzima chanya.",
@@ -153,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$ must be within the supported dakika range.",
+    "message": "$LABEL$ must be within ile supported minute range.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -162,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$ must be within the supported siku range.",
+    "message": "$LABEL$ must be within ile supported day range.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -174,7 +174,7 @@
     "message": "Kikao defaults"
   },
   "options_session_defaults_help": {
-    "message": "Njia na strictness are fixed wakati a kikao kuanzas. These are the thamanis the kuanza kwam funguas na."
+    "message": "Mode and strictness are fixed when a session starts. Ilese are ile values ile start form opens with."
   },
   "options_preset_short_label": {
     "message": "Short session preset (dakikas)"
@@ -192,10 +192,10 @@
     "message": "Whitelist: allow kwenyely listed kwavutis"
   },
   "options_strictness_flexible_label": {
-    "message": "Bkatikagu: end the kikao wakatiever you choose"
+    "message": "Flexible: end ile session whenever you choose"
   },
   "options_strictness_friction_label": {
-    "message": "Nguvu: kusimamapkatikag early uses the ckwenyefigured kufikiri gate"
+    "message": "Friction: stopping early uses ile configured deliberation gate"
   },
   "options_strictness_hard_label": {
     "message": "Ngumu: no early end, tempauary kwavuti kufikia kwenyely"
@@ -204,7 +204,7 @@
     "message": "Fokasi and break cycle"
   },
   "options_cycle_help": {
-    "message": "Defaults: 25 dakika focus, 5 dakika break, 15 dakika long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact dakikas are convention, not science."
+    "message": "Defaults: 25 minute focus, 5 minute break, 15 minute long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. Ile exact minutes are convention, not science."
   },
   "options_cycle_default_label": {
     "message": "Mzunguko mtazamo na mapumzikos by default"
@@ -225,7 +225,7 @@
     "message": "Kufikiri gate"
   },
   "options_gate_help": {
-    "message": "A 10 seckwenyed wait na an explicit nyuma-kwa-kazi kitufe measurably reduces impulse visits (field study, PNAS 2023). The lkwenyeger wait na the akatikaad sentence roughly double the effect."
+    "message": "A 10 second wait with an explicit back-to-work button measurably reduces impulse visits (field study, PNAS 2023). Ile longer wait and ile typed sentence roughly double ile effect."
   },
   "options_gate_wait_one": {
     "message": "Wait $COUNT$ seckwenyed",
@@ -261,7 +261,7 @@
     "message": "Wezesha \"Ignore timeout and end anyway\" button"
   },
   "options_credit_help": {
-    "message": "Tovuti kufikia crhariri accrues while you mtazamo. Both kufikia kwa all kwavutis na a skatikagle-kwavuti unlock spend from the same balance. You can step away at any wakati naout spendkatikag crhariri."
+    "message": "Site access credit accrues while you focus. Both access to all sites and a single-site unlock spend from ile same balance. Unaweza step away at any time bila spending credit."
   },
   "options_earn_rate_label": {
     "message": "Minutes of site access per 30 dakikas of focus"
@@ -279,7 +279,7 @@
     "message": "Msururu na retentikwenye"
   },
   "options_streak_help": {
-    "message": "The streak counts sikus that reach the goal. One default session keeps the chain alive, and a freeze token repairs a missed siku."
+    "message": "Ile streak counts days that reach ile goal. One default session keeps ile chain alive, and a freeze token repairs a missed day."
   },
   "options_streak_goal_label": {
     "message": "Daily streak goal (focus dakikas)"
@@ -342,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "All $CATEGORY$ kwavutis kept available.",
+    "message": "All $CATEGORY$ sites kept inayopatikana.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -441,7 +441,7 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "Uncheck a kwavuti kwa keep it available while the rest wa the akatikaa is kuzuiaed."
+    "message": "Uncheck a site to keep it inayopatikana while ile rest of ile category is blocked."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ kwavuti bulk actikwenyes",
@@ -504,7 +504,7 @@
     "message": "Mzunguko mtazamo na mapumzikos"
   },
   "options_schedule_overlap_error": {
-    "message": "Overlaps another kuwekad entry kwenye $DAY$.",
+    "message": "Overlaps anoiler enabled entry on $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -616,7 +616,7 @@
     "message": "Mainisha"
   },
   "options_sound_preview_error": {
-    "message": "Could not pretazama the sound. Try agakatika."
+    "message": "Haiwezi preview ile sound. Try again."
   },
   "options_sounds_notifications_heading": {
     "message": "Notificatikwenyes"
@@ -628,7 +628,7 @@
     "message": "Lencana"
   },
   "options_badge_countdown": {
-    "message": "Onyesha the remaining time on the toolbar icon"
+    "message": "Show ile remaining time on ile toolbar icon"
   },
   "options_privacy_website_access_heading": {
     "message": "Tovuti access"
@@ -637,7 +637,7 @@
     "message": "Tovuti access is off"
   },
   "options_privacy_website_off_detail": {
-    "message": "Fokasi Lock cannot block websites until you grant access."
+    "message": "Focus Lock haiwezi block websites until you grant access."
   },
   "options_privacy_website_enable_action": {
     "message": "Wezesha website blocking"
@@ -646,7 +646,7 @@
     "message": "Tovuti access is granted, but blocking is not active"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome granted access, but Fokasi Lock could not register its blocking script."
+    "message": "Chrome granted access, but Focus Lock haiwezi register its zuiaing script."
   },
   "options_privacy_website_retry_action": {
     "message": "Jaribu Tena website blocking"
@@ -655,7 +655,7 @@
     "message": "Tovuti blocking is enabled"
   },
   "options_privacy_website_on_detail": {
-    "message": "Fokasi Lock can apply your active blocking rules on regular website pages."
+    "message": "Focus Lock can apply yako active blocking rules on regular website pages."
   },
   "options_privacy_confirm_local_history_title": {
     "message": "Futa local history?"
@@ -667,10 +667,10 @@
     "message": "Local histauy kufutad."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Maliziaing the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device. It does not clear a inaendeshwa session, which keeps its intention and ile address of each tab it is blocking. Ending ile session clears ile intention and starts a cleanup that clears every open website tab, and ile cleanup removes every stored address when it completes."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device, plus local-only aggregate statistics. It does not clear a running session, which keeps its intention and the address of each tab it is blocking. Maliziaing the session clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+    "message": "This permanently deletes full URLs, focus intentions, and detailed session events from this device, plus local-only aggregate statistics. It does not clear a inaendeshwa session, which keeps its intention and ile address of each tab it is blocking. Ending ile session clears ile intention and starts a cleanup that clears every open website tab, and ile cleanup removes every stored address when it completes."
   },
   "options_privacy_confirm_synced_policy_title": {
     "message": "Futa remote Sync data?"
@@ -697,22 +697,22 @@
     "message": "This permanently deletes every piece of Fokasi Lock data on this device and any Fokasi Lock copies left in Chrome Sync:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Deleting everything is available only while no session is running. Fokasi Lock then returns to setup."
+    "message": "Deleting everything is inayopatikana only while no session is inaendeshwa. Focus Lock ilen returns to setup."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Local histauy could not be kufutad. Try agakatika."
+    "message": "Local history haiwezi be deleted. Try again."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Remote Chrome Sync data could not be kufutad. Try agakatika."
+    "message": "Remote Chrome Sync data haiwezi be deleted. Try again."
   },
   "options_privacy_error_all_clear": {
-    "message": "All Fokasi Lock data could not be deleted. Try again."
+    "message": "All Focus Lock data haiwezi be deleted. Try again."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync could not kuhifadhi your latest changes. Your local kuhifadhi is safe."
+    "message": "Chrome Sync haiwezi save yako latest changes. Yako local save is safe."
   },
   "options_privacy_error_request": {
-    "message": "The request could not be completed. Try agakatika."
+    "message": "Ile request haiwezi be completed. Try again."
   },
   "options_privacy_website_access_updated": {
     "message": "Tovuti access updated."
@@ -721,19 +721,19 @@
     "message": "Tovuti access was not granted."
   },
   "options_privacy_error_website_access": {
-    "message": "Tovuti access could not be updated. Try again."
+    "message": "Website access haiwezi be updated. Try again."
   },
   "options_privacy_website_blocking_enabled": {
     "message": "Tovuti blocking enabled."
   },
   "options_privacy_error_export": {
-    "message": "Could not expaut the event log."
+    "message": "Haiwezi export ile event log."
   },
   "options_privacy_error_export_retry": {
-    "message": "Could not expaut the event log. Try agakatika."
+    "message": "Haiwezi export ile event log. Try again."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Could not fungua Chrome permissikwenye mipangilio. Try agakatika."
+    "message": "Haiwezi open Chrome permission settings. Try again."
   },
   "options_privacy_chrome_settings_opened": {
     "message": "Chrome permissikwenye mipangilio funguaed."
@@ -754,7 +754,7 @@
     "message": "Chrome Sync kuzimad."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sync is still savkatikag your latest changes."
+    "message": "Chrome Sync is still saving yako latest changes."
   },
   "options_privacy_sync_on": {
     "message": "Chrome Sync is kwenye."
@@ -778,13 +778,13 @@
     "message": "Local kwenyely"
   },
   "options_privacy_developer_note": {
-    "message": "Nothing is sent to the Fokasi Lock developer."
+    "message": "Nothing is sent to ile Focus Lock developer."
   },
   "options_privacy_local_log_heading": {
     "message": "Local event kumbuka"
   },
   "options_privacy_local_log_detail": {
-    "message": "Expaut the detailed local log au kufuta local browskatikag na kikao histauy."
+    "message": "Export ile detailed local log or delete local browsing and session history."
   },
   "options_privacy_export_local_log": {
     "message": "Expaut local event log"
@@ -799,7 +799,7 @@
     "message": "Remote Panga data"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Futa the Fokasi Lock copies left in Chrome Sync without changing this device."
+    "message": "Delete ile Focus Lock copies left in Chrome Sync bila changing this device."
   },
   "options_privacy_delete_remote_data": {
     "message": "Futa remote Sync data"
@@ -808,7 +808,7 @@
     "message": "All Fokasi Lock data"
   },
   "options_privacy_all_data_detail": {
-    "message": "Futa every Fokasi Lock record on this device and any Fokasi Lock copies left in Chrome Sync, then start again from setup. Available while no session is running."
+    "message": "Delete every Focus Lock record on this device and any Focus Lock copies left in Chrome Sync, ilen start again from setup. Inayopatikana while no session is inaendeshwa."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Resuming deletion of all Fokasi Lock data."
@@ -823,27 +823,27 @@
     "message": "Jaribu Tena all data deletion"
   },
   "options_error_load": {
-    "message": "Could not load mipangilio. Reload the page kwa try agakatika."
+    "message": "Haiwezi load settings. Reload ile page to try again."
   },
   "options_error_retry_boot": {
-    "message": "Could not restart Fokasi Lock. Try again."
+    "message": "Haiwezi restart Focus Lock. Try again."
   },
   "options_error_refresh_privacy": {
-    "message": "Could not refresh privacy mipangilio. Reload the page."
+    "message": "Haiwezi refresh privacy settings. Reload ile page."
   },
   "options_error_website_blocking": {
-    "message": "Could not update webkwavuti kuzuiakatikag. Try agakatika."
+    "message": "Haiwezi update website blocking. Try again."
   },
   "options_error_change_sync": {
-    "message": "Could not change Chrome Sync. Try agakatika."
+    "message": "Haiwezi change Chrome Sync. Try again."
   },
   "options_error_retry_sync": {
-    "message": "Could not retry Chrome Sync. Try agakatika."
+    "message": "Haiwezi retry Chrome Sync. Try again."
   },
   "options_error_save_settings": {
-    "message": "Could not kuhifadhi mipangilio. Reload the page na try agakatika."
+    "message": "Haiwezi save settings. Reload ile page and try again."
   },
   "options_error_save_lists": {
-    "message": "Could not kuhifadhi lists. Reload the page na try agakatika."
+    "message": "Haiwezi save lists. Reload ile page and try again."
   }
 }

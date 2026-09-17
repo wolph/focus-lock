@@ -3,13 +3,13 @@
     "message": "Fokasi Lock stats"
   },
   "stats_page_title": {
-    "message": "Your mtazamo recaud"
+    "message": "Yako focus record"
   },
   "stats_loading": {
-    "message": "Kupakia your stats."
+    "message": "Loading yako stats."
   },
   "stats_load_error": {
-    "message": "Could not load stats. Reload kwa try agakatika."
+    "message": "Haiwezi load stats. Reload to try again."
   },
   "stats_partial_error_both": {
     "message": "Hourly attempts na kwavuti kufikia crhariri mipangilio are unavailable."
@@ -36,13 +36,13 @@
     "message": "Jaribu Tena scope check"
   },
   "stats_empty": {
-    "message": "Stats appear after your first kikao."
+    "message": "Stats appear after yako first session."
   },
   "stats_tile_focus_today": {
     "message": "Fokasi tosiku"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Fokasi in the last 7 sikus"
+    "message": "Focus in ile last 7 days"
   },
   "stats_tile_attempts_today": {
     "message": "Attempts blocked tosiku"
@@ -83,7 +83,7 @@
     "message": "Msururu"
   },
   "stats_streak_empty": {
-    "message": "Your streak starts with your first focus siku."
+    "message": "Yako streak starts with yako first focus day."
   },
   "stats_streak_unit_one": {
     "message": "siku"
@@ -164,7 +164,7 @@
     "message": "Fokasi, last 14 sikus"
   },
   "stats_chart_focus_empty": {
-    "message": "Fokasi dakikas appear after your first session."
+    "message": "Focus minutes appear after yako first session."
   },
   "stats_chart_attempts_heading": {
     "message": "Zuiaed attempts, last 14 sikus"
@@ -218,10 +218,10 @@
     "message": "Hauizkwenyetal bar chart"
   },
   "stats_chart_description_bar": {
-    "message": "Bar chart. Use the keyboard kwa move through data pokatikats, au fungua Tazama as table kwa the same thamanis."
+    "message": "Bar chart. Use ile keyboard to move kupitia data points, or open View as table for ile same values."
   },
   "stats_chart_description_hbar": {
-    "message": "Hauizkwenyetal bar chart. Use the keyboard kwa move through data pokatikats, au fungua Tazama as table kwa the same thamanis."
+    "message": "Horizontal bar chart. Use ile keyboard to move kupitia data points, or open View as table for ile same values."
   },
   "stats_chart_empty_default": {
     "message": "Hapana data yet."
@@ -255,7 +255,7 @@
     "message": "Recent kikaos kwenye this machkatikae"
   },
   "stats_sessions_empty": {
-    "message": "Your first kikao will appear here."
+    "message": "Yako first session will appear here."
   },
   "stats_sessions_col_date": {
     "message": "Tarehe"

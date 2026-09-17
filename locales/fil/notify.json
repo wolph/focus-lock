@@ -3,7 +3,7 @@
     "message": "Pokus sesysa complete"
   },
   "notify_session_complete_body": {
-    "message": "Your pokus sesysa fsaished."
+    "message": "Ang iyong focus session tapos."
   },
   "notify_schedule_window_body": {
     "message": "Locked hanggang $END$.",
@@ -15,19 +15,19 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Pokus schedule could not simulan"
+    "message": "Focus schedule hindi maaaring start"
   },
   "notify_schedule_unavailable_body": {
     "message": "Website hadlangsag is not gawsad. Fsaish setup o grant website pag-access, then try agasa."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "I-set up was completed in another tab."
+    "message": "Setup was completed in anoangr tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "I-set up changed in another tab. The latest choices were reloaded."
+    "message": "Setup changed in anoangr tab. Ang latest choices were reloaded."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "I-set up changed in another tab. Reload setup before finishing."
+    "message": "Setup changed in anoangr tab. Reload setup before finishing."
   },
   "notify_setup_not_complete": {
     "message": "I-set up is not complete."
@@ -45,16 +45,16 @@
     "message": "Onboardsag operatisa nabigo."
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lock could not check website access. Subukan Muli setup or reload the extension."
+    "message": "Focus Lock hindi maaaring check website access. Retry setup or reload ang extension."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
+    "message": "Website access is granted, but Focus Lock hindi maaaring enable blocking. Retry setup or reload ang extension."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Website access is unavailable, and Focus Lock could not finish blocking cleanup. Subukan Muli setup or reload the extension."
+    "message": "Website access is unavailable, and Focus Lock hindi maaaring finish blocking cleanup. Retry setup or reload ang extension."
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lock received an inconsistent website access state. Subukan Muli setup or reload the extension."
+    "message": "Focus Lock received an inconsistent website access state. Retry setup or reload ang extension."
   },
   "notify_boot_not_finished": {
     "message": "Pokus Lock did not fsaish simulansag: $REASON$",
@@ -72,10 +72,10 @@
     "message": "Pokus Lock is runnsag, nothsag sa reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Pokus Lock cannot reset a runoas that is still committed saside a policy generatisa"
+    "message": "Focus Lock hindi maaaring reset a runtime that is still committed inside a policy generation"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "Data linisin subukan muli is hindit available."
+    "message": "Data clear retry is hindi available."
   },
   "notify_disable_sync_before_delete": {
     "message": "I-disable Sync before deleting synced data"
@@ -84,16 +84,16 @@
     "message": "Pokus Lock is still fsaishsag an earlier change. Try agasa sa a moment."
   },
   "notify_work_gate_stuck": {
-    "message": "The buksan gate could not be isarad. Try agasa."
+    "message": "Ang open gate hindi maaaring be closed. Try again."
   },
   "notify_work_tab_unavailable": {
-    "message": "The trabaho tab is unavailable."
+    "message": "Ang work tab is unavailable."
   },
   "notify_settings_sync_limit": {
-    "message": "Mga setting exceed the 8 KB Chrome Sync limit. Alisin schedule entries or shorten intentions, then try again."
+    "message": "Settings exceed ang 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, angn try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sync limit. Alisin custom or whitelist rules, then try again."
+    "message": "Lists exceed ang 8 KB Chrome Sync limit. Remove custom or whitelist rules, angn try again."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "a mahirap sesysa is runnsag: removsag hadlanged sites unlocks kung kailan it ends"
@@ -108,19 +108,19 @@
     "message": "a mahirap sesysa is runnsag: new exclusisas unlock kung kailan it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a mahirap sesysa is runnsag: weakensag the default strictness waits until it ends"
+    "message": "a hard session is tumatakbo: weakening ang default strictness waits until it ends"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "a mahirap sesysa is runnsag: shotensag the pag-isip delay weakens the gate"
+    "message": "a hard session is tumatakbo: shortening ang deliberation delay weakens ang gate"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "a mahirap sesysa is runnsag: droppsag the urid phrase weakens the gate"
+    "message": "a hard session is tumatakbo: dropping ang typed phrase weakens ang gate"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "a mahirap sesysa is runnsag: raissag the panatilihsa earn rate funds moe escapes"
+    "message": "a hard session is tumatakbo: raising ang pause earn rate funds more escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "a mahirap sesysa is runnsag: raissag the panatilihsa cap funds moe escapes"
+    "message": "a hard session is tumatakbo: raising ang pause cap funds more escapes"
   },
   "notify_guard_settings_shorten_pause": {
     "message": "a mahirap sesysa is runnsag: shotensag panatilihsas lowers their cost"
@@ -129,6 +129,6 @@
     "message": "a mahirap sesysa is runnsag: shotensag unlocks lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a mahirap sesysa is runnsag: its schedule entry cannot be weakened until it ends"
+    "message": "a hard session is tumatakbo: its schedule entry hindi maaaring be weakened until it ends"
   }
 }

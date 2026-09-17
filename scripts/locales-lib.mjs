@@ -299,7 +299,7 @@ export function strayEnglish(locale, message) {
  * wrong locale, which reads as a foreign spelling to a Taiwanese or Hong Kong reader.
  */
 const SIMPLIFIED_ONLY =
-  /[国见业务选单页设备资讯网络记录钟统计间时开关闭历这个来样点击线灭应该问题维护继续显图标签规则还经过运动启结执访链买卖读写语书换确认设项数据库网处择条]/u;
+  /[与业东严个丰为丽举乐乡书买产亲仪们价伍会伤位体关养写决准减击切划则删判别制剪务动势区医华协单卖卫历县发变叠启员品器团国图坛增处备复实富导层岗师帖干库应座开式归录态执护报择换据改数无时显杀权条来极构查标树样档检汇泽测济润渴灭点热爱现生盘确礼称程窗答签粘系约级纹线组终经结给络统继续维编网职联节荐药营表见规计订认议讯记讲论设访证评识词译话询该语误说读课谈谓财责账质贫贱贴贵资车转轮辑过运还这连述选部钟钱链错键镇闭问间闻队际限险静页项领题风食饥饮饰饿验鼠]/u;
 
 /** Simplified characters found in a Traditional Chinese message. */
 export function simplifiedInTraditional(locale, message) {
