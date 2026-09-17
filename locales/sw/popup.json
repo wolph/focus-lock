@@ -16,100 +16,100 @@
     "message": "Mipango"
   },
   "popup_open_settings_failed": {
-    "message": "Haiwezi open Settings. Try again."
+    "message": "Haikuweza kufungua Mipangilio. Jaribu tena."
   },
   "popup_settings_load_failed": {
-    "message": "Haiwezi load session settings. Reload ile popup to try again. Defaults are shown."
+    "message": "Haikuweza kupakia mipangilio ya kipindi. Pakia upya kidirisha ili kujaribu tena. Chaguo-msingi zinaonyeshwa."
   },
   "popup_open_setup_failed": {
-    "message": "Haiwezi open setup. Try again."
+    "message": "Haikuweza kufungua usanidi. Jaribu tena."
   },
   "popup_setup_required_heading": {
-    "message": "Finish setting up Fokasi Lock"
+    "message": "Kamilisha usanidi wa Focus Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose yako starting lists, website access, and storage mode before starting a session."
+    "message": "Chagua orodha zako za awali, ufikiaji wa tovuti na hali ya hifadhi kabla ya kuanza kipindi."
   },
   "popup_open_setup_button": {
     "message": "Fungua setup"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Haiwezi confirm website blocking. Try again."
+    "message": "Haikuweza kuthibitisha uzuiaji wa tovuti. Jaribu tena."
   },
   "popup_blocking_enable_failed": {
-    "message": "Haiwezi enable website blocking. Try again."
+    "message": "Haikuweza kuwasha uzuiaji wa tovuti. Jaribu tena."
   },
   "popup_blocking_off_heading": {
-    "message": "Tovuti blocking is off"
+    "message": "Uzuiaji wa tovuti umezimwa"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock haiwezi start a session until Chrome grants website access and blocking is enabled."
+    "message": "Focus Lock haiwezi kuanza kipindi hadi Chrome itoe ufikiaji wa tovuti na uzuiaji uwashwe."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant website access. Tovuti blocking is still off."
+    "message": "Chrome haikutoa ufikiaji wa tovuti. Uzuiaji wa tovuti bado umezimwa."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but Focus Lock haiwezi enable blocking. Retry setup or reload ile extension."
+    "message": "Ufikiaji wa tovuti umetolewa, lakini Focus Lock haikuweza kuwasha uzuiaji. Jaribu usanidi tena au pakia upya kiendelezi."
   },
   "popup_enable_blocking_button": {
-    "message": "Wezesha website blocking"
+    "message": "Washa uzuiaji wa tovuti"
   },
   "popup_retry_button": {
     "message": "Jaribu Tena"
   },
   "popup_notice_access_revoked": {
-    "message": "Yako session ended because website access was removed."
+    "message": "Kipindi chako kiliisha kwa sababu ufikiaji wa tovuti uliondolewa."
   },
   "popup_notice_blocking_failed": {
-    "message": "Yako session ended because Focus Lock haiwezi enable website blocking."
+    "message": "Kipindi chako kiliisha kwa sababu Focus Lock haikuweza kuwasha uzuiaji wa tovuti."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Haiwezi dismiss this notice. Try again."
+    "message": "Haikuweza kuondoa taarifa hii. Jaribu tena."
   },
   "popup_dismiss_notice_label": {
-    "message": "Dismiss webkwavuti kufikia notice"
+    "message": "Ondoa taarifa ya ufikiaji wa tovuti"
   },
   "popup_dismiss_button": {
     "message": "Sitaka"
   },
   "popup_restart_failed": {
-    "message": "Haiwezi restart Focus Lock. Try again."
+    "message": "Haikuweza kuanzisha upya Focus Lock. Jaribu tena."
   },
   "popup_boot_failed_heading": {
     "message": "Focus Lock haiwezi start"
   },
   "popup_boot_reason_unavailable": {
-    "message": "Ile reason haiwezi be read."
+    "message": "Sababu haikuweza kusomwa."
   },
   "popup_reset_runtime_button": {
     "message": "Reset local runwakati"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps yako settings, lists, and statistics. Clears ile current session state."
+    "message": "Huhifadhi mipangilio, orodha na takwimu zako. Hufuta hali ya kipindi cha sasa."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Futa everything and start over"
+    "message": "Futa kila kitu na uanze upya"
   },
   "popup_keep_data_button": {
     "message": "Jifatilie data yangu"
   },
   "popup_delete_all_button": {
-    "message": "Futa all Fokasi Lock data"
+    "message": "Futa data yote ya Focus Lock"
   },
   "popup_setup_status_unavailable": {
-    "message": "Kuanzisha status unavailable. Reload Fokasi Lock to try again."
+    "message": "Hali ya usanidi haipatikani. Pakia upya Focus Lock ili kujaribu tena."
   },
   "popup_snapshot_unavailable": {
-    "message": "Fokasi status unavailable"
+    "message": "Hali ya umakini haipatikani"
   },
   "popup_action_in_progress": {
-    "message": "Actikwenye katika progress"
+    "message": "Kitendo kinaendelea"
   },
   "popup_active_site_checking": {
-    "message": "Checking ile active site"
+    "message": "Inakagua tovuti inayotumika"
   },
   "popup_active_site_unsupported": {
-    "message": "Fungua a regular website to unlock it"
+    "message": "Fungua tovuti ya kawaida ili kuifungua"
   },
   "popup_active_site_unknown": {
     "message": "Haiwezi identify ile active site"
@@ -118,16 +118,16 @@
     "message": "Haiwezi identify ile active site."
   },
   "popup_resume_now": {
-    "message": "Kuendelea now"
+    "message": "Endelea sasa"
   },
   "popup_start_next_focus_early": {
-    "message": "Anza next focus early"
+    "message": "Anza umakini unaofuata mapema"
   },
   "popup_unlock_this_site": {
-    "message": "Unlock this kwavuti"
+    "message": "Fungua tovuti hii"
   },
   "popup_unlock_all_sites": {
-    "message": "Unlock all kwavutis"
+    "message": "Fungua tovuti zote"
   },
   "popup_spend_cost": {
     "message": "$ACCESS$ kufikia, $CREDIT$ crhariri",
@@ -160,13 +160,13 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Choose kazi tab"
+    "message": "Chagua kichupo cha kazi"
   },
   "popup_change_work_tab_button": {
-    "message": "Change kazi tab"
+    "message": "Badilisha kichupo cha kazi"
   },
   "popup_session_actions_summary": {
-    "message": "Kikao actions"
+    "message": "Vitendo vya kipindi"
   },
   "popup_site_access_credit": {
     "message": "$CREDIT$ kwavuti kufikia crhariri",
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Ongeza an allowed domain"
+    "message": "Ongeza kikoa kinachoruhusiwa"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Ongeza allowed domain"
+    "message": "Ongeza kikoa kinachoruhusiwa"
   },
   "popup_add_button": {
     "message": "Ongeza"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed kwavuti sherias. Other webkwavutis kuzuiaed.",
+    "message": "Kanuni $COUNT$ pekee za tovuti zinazoruhusiwa. Tovuti nyingine zimezuiwa.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -212,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Hard lock. Haiwezi end early."
+    "message": "Kufuli kikali. Haiwezi kukomeshwa mapema."
   },
   "popup_draft_stop_flexible": {
-    "message": "Can end at any wakati."
+    "message": "Inaweza kukomeshwa wakati wowote."
   },
   "popup_draft_stop_friction": {
-    "message": "Malizia after a $SECONDS$s wait.",
+    "message": "Hukomeshwa baada ya kusubiri sekunde $SECONDS$.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -227,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "Malizia after a $SECONDS$s wait and confirmation phrase.",
+    "message": "Hukomeshwa baada ya kusubiri sekunde $SECONDS$ na kifungu cha uthibitisho.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -236,25 +236,25 @@
     }
   },
   "popup_session_length_label": {
-    "message": "Kikao length"
+    "message": "Urefu wa kipindi"
   },
   "popup_custom_minutes_label": {
-    "message": "Custom dakikas"
+    "message": "Dakika maalum"
   },
   "popup_custom_minutes_placeholder": {
     "message": "mkatika"
   },
   "popup_gate_force_end": {
-    "message": "Ignaue wakatiout na end anyway"
+    "message": "Puuza muda wa kusubiri na ukomeshe hata hivyo"
   },
   "popup_gate_keep_focusing": {
-    "message": "Keep mtazamokatikag"
+    "message": "Endelea kuwa makini"
   },
   "popup_gate_phrase_label": {
     "message": "Akatikaa:"
   },
   "popup_gate_update_failed": {
-    "message": "Haiwezi update ile gate. Try again."
+    "message": "Haikuweza kusasisha lango. Jaribu tena."
   },
   "popup_gate_intention": {
     "message": "Ulisema: $INTENTION$",
@@ -266,7 +266,7 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "A moment kwa decide:"
+    "message": "Muda mfupi wa kuamua:"
   },
   "popup_gate_wait_remaining": {
     "message": "wa $TOTAL$ s",
@@ -278,13 +278,13 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Nyuma to work"
+    "message": "Rudi kazini"
   },
   "popup_destination_unavailable": {
-    "message": "Destkatikaatikwenye unavailable"
+    "message": "Mahali paendapo hapapatikani"
   },
   "popup_back_to_work_name": {
-    "message": "Nyuma to work: $DESTINATION$",
+    "message": "Rudi kazini: $DESTINATION$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -293,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "Nyuma to work: $DESTINATION$ ($HOSTNAME$)",
+    "message": "Rudi kazini: $DESTINATION$ ($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -306,13 +306,13 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Kategoriya editing is disabled until blocked-site lists reload."
+    "message": "Kuhariri makundi kumezimwa hadi orodha za tovuti zilizozuiwa zipakiwe upya."
   },
   "popup_blocked_categories_heading": {
-    "message": "Zuiaed categories"
+    "message": "Makundi yaliyozuiwa"
   },
   "popup_show_full_domain": {
-    "message": "Onyesha full domain: $PATTERN$",
+    "message": "Onyesha kikoa kamili: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -321,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "Onyesha full regular expression: $PATTERN$",
+    "message": "Onyesha usemi kamili wa kawaida: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -333,7 +333,7 @@
     "message": "Domakatika"
   },
   "popup_rule_kind_regex": {
-    "message": "Regular expressikwenye"
+    "message": "Usemi wa kawaida"
   },
   "popup_category_sites_label": {
     "message": "$CATEGORY$ kwavutis",
@@ -381,7 +381,7 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Ruhusued exceptions"
+    "message": "Vighairi vinavyoruhusiwa"
   },
   "popup_extra_blocked_heading": {
     "message": "Extra kuzuiaed sherias"
@@ -390,19 +390,19 @@
     "message": "No extra kuzuiaed sherias."
   },
   "popup_allowed_heading": {
-    "message": "Ruhusued sites and rules"
+    "message": "Tovuti na kanuni zinazoruhusiwa"
   },
   "popup_no_allowed_sites": {
-    "message": "No kwavutis are allowed yet."
+    "message": "Hakuna tovuti inayoruhusiwa bado."
   },
   "popup_what_will_be_blocked": {
-    "message": "What will be kuzuiaed"
+    "message": "Nini kitazuiwa"
   },
   "popup_what_will_be_allowed": {
-    "message": "What will be ruhusued"
+    "message": "Nini kitaruhusiwa"
   },
   "popup_categories_selected": {
-    "message": "$SELECTED$ wa $TOTAL$ categauies selected",
+    "message": "Makundi $SELECTED$ kati ya $TOTAL$ yamechaguliwa",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -433,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed sheria",
+    "message": "Kanuni $COUNT$ inayoruhusiwa",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -442,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed sherias",
+    "message": "Kanuni $COUNT$ zinazoruhusiwa",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,19 +451,19 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Ruhusued-site and rule changes here apply only to this session. Everything else is blocked."
+    "message": "Mabadiliko ya tovuti zinazoruhusiwa na kanuni hapa yanahusu kipindi hiki pekee. Kila kitu kingine kimezuiwa."
   },
   "popup_scope_blacklist": {
-    "message": "Kategoriya and rule changes here apply only to this session."
+    "message": "Mabadiliko ya makundi na kanuni hapa yanahusu kipindi hiki pekee."
   },
   "popup_open_settings_defaults": {
-    "message": "Fungua Mipango for permanent defaults"
+    "message": "Fungua Mipangilio kwa chaguo-msingi za kudumu"
   },
   "popup_rule_details_label": {
-    "message": "Kikao rule details"
+    "message": "Maelezo ya kanuni za kipindi"
   },
   "popup_session_type_legend": {
-    "message": "Kikao type"
+    "message": "Aina ya kipindi"
   },
   "popup_session_type_flexible": {
     "message": "Bkatikagu"
@@ -475,10 +475,10 @@
     "message": "Ngumu lock"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End ile session immediately whenever you choose."
+    "message": "Komesha kipindi mara moja wakati wowote unapotaka."
   },
   "popup_session_type_friction_hint": {
-    "message": "Maliziaing early requires $WAIT$. No typing is required.",
+    "message": "Kukomesha mapema kunahitaji $WAIT$. Hakuna kuandika kunakohitajika.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -487,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Maliziaing early requires $WAIT$ and typed confirmation.",
+    "message": "Kukomesha mapema kunahitaji $WAIT$ na uthibitisho wa kuandika.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -496,25 +496,25 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "Ile session haiwezi end early. Site access credit still works."
+    "message": "Kipindi hakiwezi kukomeshwa mapema. Salio la ufikiaji wa tovuti bado hufanya kazi."
   },
   "popup_mode_blacklist_hint": {
-    "message": "Ile selected categories and extra rules are blocked. Oiler sites remain inayopatikana."
+    "message": "Makundi yaliyochaguliwa na kanuni za ziada zimezuiwa. Tovuti nyingine zinabaki zinapatikana."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only ile listed sites are inayopatikana. Every oiler website is blocked."
+    "message": "Tovuti zilizoorodheshwa pekee ndizo zinazopatikana. Kila tovuti nyingine imezuiwa."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a session length greater than zero dakikas."
+    "message": "Weka urefu wa kipindi zaidi ya dakika sifuri."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Defaults changed, but current lists haiwezi be loaded. Reload ile popup."
+    "message": "Chaguo-msingi zimebadilika, lakini orodha za sasa hazikuweza kupakiwa. Pakia upya kidirisha."
   },
   "popup_no_work_tab_option": {
     "message": "No kazi tab (chaguoal)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Selected tab uninayopatikana - choose anoiler"
+    "message": "Kichupo kilichochaguliwa hakipatikani - chagua kingine"
   },
   "popup_cycles_label": {
     "message": "Mzungukos: $FOCUS$ mkatika mtazamo, $SHORT_BREAK$ mkatika mapumziko, $LONG_BREAK$ mkatika lkwenyeg mapumziko every $LONG_EVERY$th",
@@ -541,7 +541,7 @@
     "message": "Nidhamu"
   },
   "popup_intention_placeholder": {
-    "message": "What are you kazikatikag kwenye?"
+    "message": "Unafanya kazi gani?"
   },
   "popup_work_tab_named": {
     "message": "Kazi tab: $TITLE$",
@@ -556,10 +556,10 @@
     "message": "Badilisha"
   },
   "popup_session_settings_summary": {
-    "message": "Kikao settings"
+    "message": "Mipangilio ya kipindi"
   },
   "popup_choose_work_tab_label": {
-    "message": "Choose a kazi tab"
+    "message": "Chagua kichupo cha kazi"
   },
   "popup_work_tab_select_label": {
     "message": "Kazi tab"
@@ -574,7 +574,7 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Zuiaing mode"
+    "message": "Hali ya uzuiaji"
   },
   "popup_invalid_time_label": {
     "message": "katikavalid wakati"
@@ -589,42 +589,42 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "Enter a valid domakatika such as docs.example.com."
+    "message": "Weka kikoa halali kama docs.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Haiwezi load work tabs. Reopen ile popup to try again."
+    "message": "Haikuweza kupakia vichupo vya kazi. Fungua tena kidirisha ili kujaribu tena."
   },
   "popup_use_this_tab": {
-    "message": "Use this kichupo"
+    "message": "Tumia kichupo hiki"
   },
   "popup_current_tab_unavailable": {
-    "message": "This tab is not inayopatikana for work. Choose anoiler open tab."
+    "message": "Kichupo hiki hakipatikani kwa kazi. Chagua kichupo kingine kilichofunguliwa."
   },
   "popup_checking_current_tab": {
-    "message": "Checkkatikag current tab..."
+    "message": "Inakagua kichupo cha sasa..."
   },
   "popup_finding_current_tab": {
-    "message": "Finding yako current tab..."
+    "message": "Inatafuta kichupo chako cha sasa..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Haiwezi load yako current tab. Try again."
+    "message": "Haikuweza kupakia kichupo chako cha sasa. Jaribu tena."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Choose or replace yako work tab."
+    "message": "Chagua au badilisha kichupo chako cha kazi."
   },
   "popup_saving_work_tab": {
     "message": "Savkatikag kazi tab..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Haiwezi save ile work tab. Try again."
+    "message": "Haikuweza kuhifadhi kichupo cha kazi. Jaribu tena."
   },
   "popup_choose_open_tab_option": {
-    "message": "Choose an fungua tab"
+    "message": "Chagua kichupo kilichofunguliwa"
   },
   "popup_or_choose_another_tab": {
-    "message": "Or choose anoiler tab"
+    "message": "Au chagua kichupo kingine"
   },
   "popup_start_failed": {
-    "message": "Haiwezi start session. Try again."
+    "message": "Haikuweza kuanza kipindi. Jaribu tena."
   }
 }
