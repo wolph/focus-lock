@@ -16,100 +16,100 @@
     "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
   "popup_open_settings_failed": {
-    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Try again."
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load ಸೆಷ್ಟ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Reload the popup to try again. Defaults are shown."
+    "message": "ಸೆಷನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಪಾಪ್‌ಅಪ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ. ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ತೋರಿಸಲಾಗಿದೆ."
   },
   "popup_open_setup_failed": {
-    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ setup. Try again."
+    "message": "ಸೆಟಪ್ ಅನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "popup_setup_required_heading": {
-    "message": "Finish setting up ಫೋಕಸ್ Lock"
+    "message": "Focus Lock ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸಿ"
   },
   "popup_setup_required_body": {
-    "message": "Choose your starting lists, website access, and storage mode before starting a ಸೆಷ್ಟ."
+    "message": "ಸೆಷನ್ ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು ನಿಮ್ಮ ಆರಂಭಿಕ ಪಟ್ಟಿಗಳು, ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಮತ್ತು ಸಂಗ್ರಹ ಮೋಡ್ ಅನ್ನು ಆರಿಸಿ."
   },
   "popup_open_setup_button": {
     "message": "ಸೆಟಪ್ ತೆರೆಯಿರಿ"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Could not confirm website ನಿರ್ಬಂಧing. Try again."
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ದೃಢೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not enable website ನಿರ್ಬಂಧing. Try again."
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "popup_blocking_off_heading": {
-    "message": "Website ನಿರ್ಬಂಧing is off"
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಆಫ್ ಆಗಿದೆ"
   },
   "popup_blocking_off_body": {
-    "message": "ಫೋಕಸ್ Lock cannot start a ಸೆಷ್ಟ until Chrome grants website access and ನಿರ್ಬಂಧing is enabled."
+    "message": "Chrome ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಿ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳ್ಳುವವರೆಗೆ Focus Lock ಸೆಷನ್ ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant website access. Website ನಿರ್ಬಂಧing is still off."
+    "message": "Chrome ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಿಲ್ಲ. ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಇನ್ನೂ ಆಫ್ ಆಗಿದೆ."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but ಫೋಕಸ್ Lock could not enable ನಿರ್ಬಂಧing. ಮರುಪ್ರಯತ್ನ setup or reload the extension."
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಾಗಿದೆ, ಆದರೆ Focus Lock ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಸೆಟಪ್ ಅನ್ನು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ."
   },
   "popup_enable_blocking_button": {
-    "message": "Enable website ನಿರ್ಬಂಧing"
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸಿ"
   },
   "popup_retry_button": {
-    "message": "ಮರುಪ್ರಯತ್ನ"
+    "message": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
   },
   "popup_notice_access_revoked": {
-    "message": "Your ಸೆಷ್ಟ ended because website access was removed."
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶವನ್ನು ತೆಗೆದುಹಾಕಿದ್ದರಿಂದ ನಿಮ್ಮ ಸೆಷನ್ ಕೊನೆಗೊಂಡಿತು."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your ಸೆಷ್ಟ ended because ಫೋಕಸ್ Lock could not enable website ನಿರ್ಬಂಧing."
+    "message": "Focus Lock ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗದ ಕಾರಣ ನಿಮ್ಮ ಸೆಷನ್ ಕೊನೆಗೊಂಡಿತು."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Could not dismiss this notice. Try agaರಲ್ಲಿ."
+    "message": "ಈ ಸೂಚನೆಯನ್ನು ವಜಾಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "popup_dismiss_notice_label": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಸೂಚನೆ ಅಕ್ಷರೇ"
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಸೂಚನೆಯನ್ನು ವಜಾಗೊಳಿಸಿ"
   },
   "popup_dismiss_button": {
-    "message": "ಅಕ್ಷರೇ"
+    "message": "ವಜಾಗೊಳಿಸಿ"
   },
   "popup_restart_failed": {
-    "message": "Could not restart ಫೋಕಸ್ Lock. Try again."
+    "message": "Focus Lock ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "popup_boot_failed_heading": {
-    "message": "ಫೋಕಸ್ Lock could not start"
+    "message": "Focus Lock ಪ್ರಾರಂಭವಾಗಲಿಲ್ಲ"
   },
   "popup_boot_reason_unavailable": {
-    "message": "The reasಮೇಲೆ could not be read."
+    "message": "ಕಾರಣವನ್ನು ಓದಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
   },
   "popup_reset_runtime_button": {
     "message": "ಸ್ಥಳೀಯ ರನ್‌ಟೈಮ್ ಮರುಹೊಂದಿಸಿ"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your ಸೆಟ್ಟಿಂಗ್‌ಗಳು, lists, and statistics. Clears the current ಸೆಷ್ಟ state."
+    "message": "ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಪಟ್ಟಿಗಳು ಮತ್ತು ಅಂಕಿಅಂಶಗಳನ್ನು ಉಳಿಸಿಕೊಳ್ಳುತ್ತದೆ. ಪ್ರಸ್ತುತ ಸೆಷನ್ ಸ್ಥಿತಿಯನ್ನು ಅಳಿಸುತ್ತದೆ."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Delete everythರಲ್ಲಿg ಮತ್ತು start over"
+    "message": "ಎಲ್ಲವನ್ನೂ ಅಳಿಸಿ ಮತ್ತೆ ಪ್ರಾರಂಭಿಸಿ"
   },
   "popup_keep_data_button": {
-    "message": "Keep my dನಲ್ಲಿa"
+    "message": "ನನ್ನ ಡೇಟಾವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಿ"
   },
   "popup_delete_all_button": {
-    "message": "Delete all ಫೋಕಸ್ Lock data"
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾವನ್ನು ಅಳಿಸಿ"
   },
   "popup_setup_status_unavailable": {
-    "message": "Setup status unavailable. Reload ಫೋಕಸ್ Lock to try again."
+    "message": "ಸೆಟಪ್ ಸ್ಥಿತಿ ಲಭ್ಯವಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು Focus Lock ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ."
   },
   "popup_snapshot_unavailable": {
-    "message": "ಫೋಕಸ್ status unavailable"
+    "message": "ಫೋಕಸ್ ಸ್ಥಿತಿ ಲಭ್ಯವಿಲ್ಲ"
   },
   "popup_action_in_progress": {
-    "message": "ಕ್ರಿಯೆ ರಲ್ಲಿ progress"
+    "message": "ಕ್ರಿಯೆ ಪ್ರಗತಿಯಲ್ಲಿದೆ"
   },
   "popup_active_site_checking": {
-    "message": "ಪರೀಕ್ಷೆ the active site"
+    "message": "ಸಕ್ರಿಯ ಸೈಟ್ ಅನ್ನು ಪರಿಶೀಲಿಸುತ್ತಿದೆ"
   },
   "popup_active_site_unsupported": {
-    "message": "Open a regular website ಕಿ unlock it"
+    "message": "ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಸಾಮಾನ್ಯ ವೆಬ್‌ಸೈಟ್ ತೆರೆಯಿರಿ"
   },
   "popup_active_site_unknown": {
     "message": "ಸಕ್ರಿಯ ಸೈಟ್ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
@@ -118,16 +118,16 @@
     "message": "ಸಕ್ರಿಯ ಸೈಟ್ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
   },
   "popup_resume_now": {
-    "message": "ಸುಳ್ಳು ಪ್ರಸ್ತಾಪಿಸಿ now"
+    "message": "ಈಗ ಮುಂದುವರಿಸಿ"
   },
   "popup_start_next_focus_early": {
-    "message": "ಪ್ರಾರಂಭಿಸಿ next ಫೋಕಸ್ early"
+    "message": "ಮುಂದಿನ ಫೋಕಸ್ ಅನ್ನು ಬೇಗ ಪ್ರಾರಂಭಿಸಿ"
   },
   "popup_unlock_this_site": {
-    "message": "ಅನ್‌ಲಾಕ್ this site"
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ"
   },
   "popup_unlock_all_sites": {
-    "message": "ಅನ್‌ಲಾಕ್ all sites"
+    "message": "ಎಲ್ಲಾ ಸೈಟ್‌ಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ"
   },
   "popup_spend_cost": {
     "message": "$ACCESS$ ಪ್ರವೇಶ, $CREDIT$ ಕ್ರೆಡಿಟ್",
@@ -160,13 +160,13 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Choose wಅಥವಾk tab"
+    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಆರಿಸಿ"
   },
   "popup_change_work_tab_button": {
-    "message": "ಬದಲಾವಣೆ work tab"
+    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಬದಲಾಯಿಸಿ"
   },
   "popup_session_actions_summary": {
-    "message": "ಸೆಷ್ಟ actions"
+    "message": "ಸೆಷನ್ ಕ್ರಿಯೆಗಳು"
   },
   "popup_site_access_credit": {
     "message": "$CREDIT$ ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್",
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Add an allowed domaರಲ್ಲಿ"
+    "message": "ಅನುಮತಿಸಲಾದ ಡೊಮೈನ್ ಸೇರಿಸಿ"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Add allowed domaರಲ್ಲಿ"
+    "message": "ಅನುಮತಿಸಲಾದ ಡೊಮೈನ್ ಸೇರಿಸಿ"
   },
   "popup_add_button": {
     "message": "ಸೇರಿಸಿ"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed site rules. Other websites ನಿರ್ಬಂಧed.",
+    "message": "ಕೇವಲ $COUNT$ ಅನುಮತಿಸಲಾದ ಸೈಟ್ ನಿಯಮಗಳು. ಇತರ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಬ್ಲಾಕ್ ಆಗಿವೆ.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -199,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ ನಿರ್ಬಂಧed categories, $RULES$ extra rules.",
+    "message": "$CATEGORIES$ ಬ್ಲಾಕ್ ಮಾಡಿದ ವರ್ಗಗಳು, $RULES$ ಹೆಚ್ಚುವರಿ ನಿಯಮಗಳು.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -212,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "ಕಠಿಣ lock. Cannot end early."
+    "message": "ಕಠಿಣ ಲಾಕ್. ಬೇಗ ಕೊನೆಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
   },
   "popup_draft_stop_flexible": {
-    "message": "Can end ನಲ್ಲಿ any time."
+    "message": "ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಕೊನೆಗೊಳಿಸಬಹುದು."
   },
   "popup_draft_stop_friction": {
-    "message": "$SECONDS$ಸೆ ನಂತರ ಮುಗಿಸಿ.",
+    "message": "$SECONDS$ ಸೆಕೆಂಡ್ ಕಾಯುವಿಕೆಯ ನಂತರ ಕೊನೆಗೊಳಿಸಿ.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -227,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "End after a $SECONDS$s wait ಮತ್ತು cಮೇಲೆfirmನಲ್ಲಿiಮೇಲೆ phrase.",
+    "message": "$SECONDS$ ಸೆ ಕಾಯುವಿಕೆ ಮತ್ತು ದೃಢೀಕರಣ ವಾಕ್ಯದ ನಂತರ ಕೊನೆಗೊಳಿಸಿ.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -236,28 +236,28 @@
     }
   },
   "popup_session_length_label": {
-    "message": "ಸೆಷ್ಟ length"
+    "message": "ಸೆಷನ್ ಉದ್ದ"
   },
   "popup_custom_minutes_label": {
-    "message": "Cusಕಿm mರಲ್ಲಿutes"
+    "message": "ಕಸ್ಟಮ್ ನಿಮಿಷಗಳು"
   },
   "popup_custom_minutes_placeholder": {
-    "message": "mರಲ್ಲಿ"
+    "message": "ನಿ"
   },
   "popup_gate_force_end": {
-    "message": "Ignಅಥವಾe timeout ಮತ್ತು end anyway"
+    "message": "ಟೈಮ್‌ಔಟ್ ಅನ್ನು ನಿರ್ಲಕ್ಷಿಸಿ ಮತ್ತು ಹೇಗಾದರೂ ಕೊನೆಗೊಳಿಸಿ"
   },
   "popup_gate_keep_focusing": {
-    "message": "Keep ಫೋಕಸ್ing"
+    "message": "ಫೋಕಸ್ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಿ"
   },
   "popup_gate_phrase_label": {
-    "message": "ಪ್ರಕಾರ:"
+    "message": "ಟೈಪ್ ಮಾಡಿ:"
   },
   "popup_gate_update_failed": {
-    "message": "Could not updನಲ್ಲಿe the gನಲ್ಲಿe. Try agaರಲ್ಲಿ."
+    "message": "ಗೇಟ್ ಅನ್ನು ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "popup_gate_intention": {
-    "message": "ನೀವು ಹೇಳಿದ್ದು: $INTENTION$",
+    "message": "ನೀನು ಹೇಳಿದೆ: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -266,10 +266,10 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "A moment ಕಿ decide:"
+    "message": "ನಿರ್ಧರಿಸಲು ಒಂದು ಕ್ಷಣ:"
   },
   "popup_gate_wait_remaining": {
-    "message": "ನ $TOTAL$ s",
+    "message": "$TOTAL$ ಸೆಕೆಂಡ್‌ಗಳಲ್ಲಿ",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -278,13 +278,13 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Back ಕಿ wಅಥವಾk"
+    "message": "ಕೆಲಸಕ್ಕೆ ಹಿಂತಿರುಗಿ"
   },
   "popup_destination_unavailable": {
-    "message": "Destರಲ್ಲಿನಲ್ಲಿiಮೇಲೆ unavailable"
+    "message": "ಗಮ್ಯಸ್ಥಾನ ಲಭ್ಯವಿಲ್ಲ"
   },
   "popup_back_to_work_name": {
-    "message": "Back ಕಿ wಅಥವಾk: $DESTINATION$",
+    "message": "ಕೆಲಸಕ್ಕೆ ಹಿಂತಿರುಗಿ: $DESTINATION$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -293,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "Back ಕಿ wಅಥವಾk: $DESTINATION$ ($HOSTNAME$)",
+    "message": "ಕೆಲಸಕ್ಕೆ ಹಿಂತಿರುಗಿ: $DESTINATION$ ($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -306,13 +306,13 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Category editing is disabled until ನಿರ್ಬಂಧed-site lists reload."
+    "message": "ಬ್ಲಾಕ್ ಮಾಡಿದ ಸೈಟ್ ಪಟ್ಟಿಗಳು ಮರುಲೋಡ್ ಆಗುವವರೆಗೆ ವರ್ಗ ಸಂಪಾದನೆ ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ."
   },
   "popup_blocked_categories_heading": {
-    "message": "ನಿರ್ಬಂಧed categories"
+    "message": "ಬ್ಲಾಕ್ ಮಾಡಿದ ವರ್ಗಗಳು"
   },
   "popup_show_full_domain": {
-    "message": "Show full domaರಲ್ಲಿ: $PATTERN$",
+    "message": "ಪೂರ್ಣ ಡೊಮೈನ್ ತೋರಿಸಿ: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -321,7 +321,7 @@
     }
   },
   "popup_show_full_regex": {
-    "message": "Show full regular expressiಮೇಲೆ: $PATTERN$",
+    "message": "ಪೂರ್ಣ ರೆಗ್ಯುಲರ್ ಎಕ್ಸ್‌ಪ್ರೆಶನ್ ತೋರಿಸಿ: $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -330,13 +330,13 @@
     }
   },
   "popup_rule_kind_domain": {
-    "message": "Domaರಲ್ಲಿ"
+    "message": "ಡೊಮೈನ್"
   },
   "popup_rule_kind_regex": {
-    "message": "Regular expressiಮೇಲೆ"
+    "message": "ರೆಗ್ಯುಲರ್ ಎಕ್ಸ್‌ಪ್ರೆಶನ್"
   },
   "popup_category_sites_label": {
-    "message": "$CATEGORY$ ಸೈಟ್",
+    "message": "$CATEGORY$ ಸೈಟ್‌ಗಳು",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -354,7 +354,7 @@
     }
   },
   "popup_sites_other": {
-    "message": "$COUNT$ ಸೈಟ್",
+    "message": "$COUNT$ ಸೈಟ್‌ಗಳು",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "ಮತ್ತು $COUNT$ mಅಥವಾe site",
+    "message": "ಮತ್ತು $COUNT$ ಹೆಚ್ಚಿನ ಸೈಟ್",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "ಮತ್ತು $COUNT$ mಅಥವಾe sites",
+    "message": "ಮತ್ತು $COUNT$ ಹೆಚ್ಚಿನ ಸೈಟ್‌ಗಳು",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -381,28 +381,28 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Allowed exceptiಮೇಲೆs"
+    "message": "ಅನುಮತಿಸಲಾದ ವಿನಾಯಿತಿಗಳು"
   },
   "popup_extra_blocked_heading": {
-    "message": "Extra ನಿರ್ಬಂಧed rules"
+    "message": "ಹೆಚ್ಚುವರಿ ಬ್ಲಾಕ್ ಮಾಡಿದ ನಿಯಮಗಳು"
   },
   "popup_no_extra_blocked": {
-    "message": "No extra ನಿರ್ಬಂಧed rules."
+    "message": "ಹೆಚ್ಚುವರಿ ಬ್ಲಾಕ್ ಮಾಡಿದ ನಿಯಮಗಳಿಲ್ಲ."
   },
   "popup_allowed_heading": {
-    "message": "Allowed sites ಮತ್ತು rules"
+    "message": "ಅನುಮತಿಸಲಾದ ಸೈಟ್‌ಗಳು ಮತ್ತು ನಿಯಮಗಳು"
   },
   "popup_no_allowed_sites": {
-    "message": "ಇನ್ನೂ ಯಾವುದೇ ಸೈಟ್ ಅನುಮತಿಯಿಲ್ಲ."
+    "message": "ಇನ್ನೂ ಯಾವುದೇ ಸೈಟ್ ಅನುಮತಿಸಿಲ್ಲ."
   },
   "popup_what_will_be_blocked": {
-    "message": "What will be ನಿರ್ಬಂಧed"
+    "message": "ಏನು ಬ್ಲಾಕ್ ಆಗುತ್ತದೆ"
   },
   "popup_what_will_be_allowed": {
-    "message": "Whನಲ್ಲಿ will be allowed"
+    "message": "ಏನು ಅನುಮತಿಸಲಾಗುತ್ತದೆ"
   },
   "popup_categories_selected": {
-    "message": "$SELECTED$ ನ $TOTAL$ cನಲ್ಲಿegಅಥವಾies selected",
+    "message": "$TOTAL$ ರಲ್ಲಿ $SELECTED$ ವರ್ಗಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -415,7 +415,7 @@
     }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$ extra ನಿರ್ಬಂಧed rule",
+    "message": "$COUNT$ ಹೆಚ್ಚುವರಿ ಬ್ಲಾಕ್ ಮಾಡಿದ ನಿಯಮ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -424,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$ extra ನಿರ್ಬಂಧed rules",
+    "message": "$COUNT$ ಹೆಚ್ಚುವರಿ ಬ್ಲಾಕ್ ಮಾಡಿದ ನಿಯಮಗಳು",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -433,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ ಅನುಮತಿ ನಿಯಮ",
+    "message": "$COUNT$ ಅನುಮತಿಸಿದ ನಿಯಮ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -442,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ ಅನುಮತಿ ನಿಯಮ",
+    "message": "$COUNT$ ಅನುಮತಿಸಿದ ನಿಯಮಗಳು",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,34 +451,34 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Allowed-site and rule changes here apply only to this ಸೆಷ್ಟ. Everything else is ನಿರ್ಬಂಧed."
+    "message": "ಇಲ್ಲಿನ ಅನುಮತಿಸಲಾದ-ಸೈಟ್ ಮತ್ತು ನಿಯಮ ಬದಲಾವಣೆಗಳು ಈ ಸೆಷನ್‌ಗೆ ಮಾತ್ರ ಅನ್ವಯಿಸುತ್ತವೆ. ಉಳಿದೆಲ್ಲವೂ ಬ್ಲಾಕ್ ಆಗಿದೆ."
   },
   "popup_scope_blacklist": {
-    "message": "Category and rule changes here apply only to this ಸೆಷ್ಟ."
+    "message": "ಇಲ್ಲಿನ ವರ್ಗ ಮತ್ತು ನಿಯಮ ಬದಲಾವಣೆಗಳು ಈ ಸೆಷನ್‌ಗೆ ಮಾತ್ರ ಅನ್ವಯಿಸುತ್ತವೆ."
   },
   "popup_open_settings_defaults": {
-    "message": "Open ಸೆಟ್ಟಿಂಗ್‌ಗಳು for permanent defaults"
+    "message": "ಶಾಶ್ವತ ಡೀಫಾಲ್ಟ್‌ಗಳಿಗಾಗಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ"
   },
   "popup_rule_details_label": {
-    "message": "ಸೆಷ್ಟ rule details"
+    "message": "ಸೆಷನ್ ನಿಯಮ ವಿವರಗಳು"
   },
   "popup_session_type_legend": {
-    "message": "ಸೆಷ್ಟ type"
+    "message": "ಸೆಷನ್ ಪ್ರಕಾರ"
   },
   "popup_session_type_flexible": {
-    "message": "ನಮ್ಯ"
+    "message": "ಫ್ಲೆಕ್ಸಿಬಲ್"
   },
   "popup_session_type_friction": {
-    "message": "ರಕ್ಷಣೆ"
+    "message": "ಘರ್ಷಣೆ"
   },
   "popup_session_type_hard": {
-    "message": "ಕಠಿಣ lock"
+    "message": "ಕಠಿಣ ಲಾಕ್"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the ಸೆಷ್ಟ immediately whenever you choose."
+    "message": "ನೀನು ಬಯಸಿದಾಗ ತಕ್ಷಣ ಸೆಷನ್ ಅನ್ನು ಕೊನೆಗೊಳಿಸಿ."
   },
   "popup_session_type_friction_hint": {
-    "message": "Endರಲ್ಲಿg early requires $WAIT$. No typರಲ್ಲಿg is required.",
+    "message": "ಬೇಗ ಕೊನೆಗೊಳಿಸಲು $WAIT$ ಅಗತ್ಯವಿದೆ. ಟೈಪಿಂಗ್ ಅಗತ್ಯವಿಲ್ಲ.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -487,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Endರಲ್ಲಿg early requires $WAIT$ ಮತ್ತು typed cಮೇಲೆfirmನಲ್ಲಿiಮೇಲೆ.",
+    "message": "ಬೇಗ ಕೊನೆಗೊಳಿಸಲು $WAIT$ ಮತ್ತು ಟೈಪ್ ಮಾಡಿದ ದೃಢೀಕರಣ ಅಗತ್ಯವಿದೆ.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -496,28 +496,28 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The ಸೆಷ್ಟ cannot end early. Site access credit still works."
+    "message": "ಸೆಷನ್ ಬೇಗ ಕೊನೆಗೊಳ್ಳಲು ಸಾಧ್ಯವಿಲ್ಲ. ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ ಇನ್ನೂ ಕೆಲಸ ಮಾಡುತ್ತದೆ."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected categories and extra rules are ನಿರ್ಬಂಧed. Other sites remain available."
+    "message": "ಆಯ್ಕೆ ಮಾಡಿದ ವರ್ಗಗಳು ಮತ್ತು ಹೆಚ್ಚುವರಿ ನಿಯಮಗಳು ಬ್ಲಾಕ್ ಆಗಿವೆ. ಇತರ ಸೈಟ್‌ಗಳು ಲಭ್ಯವಿರುತ್ತವೆ."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. Every other website is ನಿರ್ಬಂಧed."
+    "message": "ಪಟ್ಟಿ ಮಾಡಿದ ಸೈಟ್‌ಗಳು ಮಾತ್ರ ಲಭ್ಯವಿವೆ. ಇತರ ಎಲ್ಲಾ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಬ್ಲಾಕ್ ಆಗಿವೆ."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a ಸೆಷ್ಟ length greater than zero minutes."
+    "message": "ಶೂನ್ಯ ನಿಮಿಷಗಳಿಗಿಂತ ಹೆಚ್ಚಿನ ಸೆಷನ್ ಉದ್ದವನ್ನು ನಮೂದಿಸಿ."
   },
   "popup_stale_lists_unavailable": {
-    "message": "ಪೂರ್ವನಿರ್ಧಾರಿತs changed, but current lists could not be loaded. Reload the popup."
+    "message": "ಡೀಫಾಲ್ಟ್‌ಗಳು ಬದಲಾಗಿವೆ, ಆದರೆ ಪ್ರಸ್ತುತ ಪಟ್ಟಿಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪಾಪ್‌ಅಪ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ."
   },
   "popup_no_work_tab_option": {
-    "message": "No wಅಥವಾk tab (optiಮೇಲೆal)"
+    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಇಲ್ಲ (ಐಚ್ಛಿಕ)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "ಆರಿಸಿed tab unavailable - choose another"
+    "message": "ಆಯ್ಕೆ ಮಾಡಿದ ಟ್ಯಾಬ್ ಲಭ್ಯವಿಲ್ಲ - ಬೇರೊಂದನ್ನು ಆರಿಸಿ"
   },
   "popup_cycles_label": {
-    "message": "ಚಕ್ರs: $FOCUS$ min ಫೋಕಸ್, $SHORT_BREAK$ min break, $LONG_BREAK$ min long break every $LONG_EVERY$th",
+    "message": "ಚಕ್ರಗಳು: $FOCUS$ ನಿಮಿಷ ಫೋಕಸ್, $SHORT_BREAK$ ನಿಮಿಷ ವಿರತಿ, ಪ್ರತಿ $LONG_EVERY$ ನೇ ಚಕ್ರಕ್ಕೆ $LONG_BREAK$ ನಿಮಿಷ ದೀರ್ಘ ವಿರತಿ",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -541,10 +541,10 @@
     "message": "ಉದ್ದೇಶ"
   },
   "popup_intention_placeholder": {
-    "message": "Whನಲ್ಲಿ are you wಅಥವಾkರಲ್ಲಿg ಮೇಲೆ?"
+    "message": "ನೀನು ಏನು ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದೀಯ?"
   },
   "popup_work_tab_named": {
-    "message": "Wಅಥವಾk tab: $TITLE$",
+    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -553,16 +553,16 @@
     }
   },
   "popup_change_button": {
-    "message": "ಬದಲಾವಣೆ"
+    "message": "ಬದಲಾಯಿಸಿ"
   },
   "popup_session_settings_summary": {
-    "message": "ಸೆಷ್ಟ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+    "message": "ಸೆಷನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
   "popup_choose_work_tab_label": {
-    "message": "Choose a wಅಥವಾk tab"
+    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಆರಿಸಿ"
   },
   "popup_work_tab_select_label": {
-    "message": "Wಅಥವಾk tab"
+    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್"
   },
   "popup_work_tab_current_option": {
     "message": "$TITLE$ (ಪ್ರಸ್ತುತ)",
@@ -574,13 +574,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "ನಿರ್ಬಂಧing mode"
+    "message": "ಬ್ಲಾಕಿಂಗ್ ಮೋಡ್"
   },
   "popup_invalid_time_label": {
-    "message": "ರಲ್ಲಿvalid time"
+    "message": "ಅಮಾನ್ಯ ಸಮಯ"
   },
   "popup_start_focus_label": {
-    "message": "ಪ್ರಾರಂಭಿಸಿ $DURATION$ ಫೋಕಸ್",
+    "message": "$DURATION$ ಫೋಕಸ್ ಪ್ರಾರಂಭಿಸಿ",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -589,42 +589,42 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "Enter a valid domaರಲ್ಲಿ such as docs.example.com."
+    "message": "docs.example.com ನಂತಹ ಮಾನ್ಯ ಡೊಮೈನ್ ಅನ್ನು ನಮೂದಿಸಿ."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Could not load wಅಥವಾk tabs. Reopen the popup ಕಿ try agaರಲ್ಲಿ."
+    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಪಾಪ್‌ಅಪ್ ಅನ್ನು ಮತ್ತೆ ತೆರೆಯಿರಿ."
   },
   "popup_use_this_tab": {
     "message": "ಈ ಟ್ಯಾಬ್ ಬಳಸಿ"
   },
   "popup_current_tab_unavailable": {
-    "message": "This tab is not available ಸಾಕಾಂಶ wಅಥವಾk. Choose another open tab."
+    "message": "ಈ ಟ್ಯಾಬ್ ಕೆಲಸಕ್ಕೆ ಲಭ್ಯವಿಲ್ಲ. ಬೇರೆ ತೆರೆದ ಟ್ಯಾಬ್ ಆರಿಸಿ."
   },
   "popup_checking_current_tab": {
-    "message": "ಪರೀಕ್ಷೆ current tab..."
+    "message": "ಪ್ರಸ್ತುತ ಟ್ಯಾಬ್ ಅನ್ನು ಪರಿಶೀಲಿಸುತ್ತಿದೆ..."
   },
   "popup_finding_current_tab": {
-    "message": "Fರಲ್ಲಿdರಲ್ಲಿg your current tab..."
+    "message": "ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಟ್ಯಾಬ್ ಅನ್ನು ಹುಡುಕುತ್ತಿದೆ..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Could not load your current tab. Try agaರಲ್ಲಿ."
+    "message": "ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಟ್ಯಾಬ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Choose ಅಥವಾ replace your wಅಥವಾk tab."
+    "message": "ನಿಮ್ಮ ಕೆಲಸದ ಟ್ಯಾಬ್ ಅನ್ನು ಆರಿಸಿ ಅಥವಾ ಬದಲಾಯಿಸಿ."
   },
   "popup_saving_work_tab": {
-    "message": "Savರಲ್ಲಿg wಅಥವಾk tab..."
+    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಅನ್ನು ಉಳಿಸುತ್ತಿದೆ..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not save the wಅಥವಾk tab. Try agaರಲ್ಲಿ."
+    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಅನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "popup_choose_open_tab_option": {
-    "message": "ತೆರೆದ ಟ್ಯಾಬ್ ಆರಿಸಿ"
+    "message": "ಒಂದು ತೆರೆದ ಟ್ಯಾಬ್ ಆಯ್ಕೆಮಾಡಿ"
   },
   "popup_or_choose_another_tab": {
-    "message": "ಅಥವಾ ಮತ್ತೊಂದು ಟ್ಯಾಬ್ ಆರಿಸಿ"
+    "message": "ಅಥವಾ ಬೇರೊಂದು ಟ್ಯಾಬ್ ಆಯ್ಕೆಮಾಡಿ"
   },
   "popup_start_failed": {
-    "message": "Could not start ಸೆಷ್ಟ. Try again."
+    "message": "ಸೆಷನ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   }
 }

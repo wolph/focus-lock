@@ -9,7 +9,7 @@
     "message": "載入您的統計中。"
   },
   "stats_load_error": {
-    "message": "无法載入統計。重新載入以重試。"
+    "message": "無法載入統計資料。重新載入再試一次。"
   },
   "stats_partial_error_both": {
     "message": "每小時尝试和網站存取點數設定不可用。"
@@ -224,7 +224,7 @@
     "message": "水平長條圖。使用鍵盤移動通過資料點，或開啟「以表格檢視」以取得相同的值。"
   },
   "stats_chart_empty_default": {
-    "message": "尚无資料。"
+    "message": "還沒有資料。"
   },
   "stats_chart_point": {
     "message": "$LABEL$：$VALUE$",
@@ -252,7 +252,7 @@
     "message": "24 小時被封鎖嘗試熱帶"
   },
   "stats_sessions_heading": {
-    "message": "此計算机上的最近会话"
+    "message": "此機器上的最近工作階段"
   },
   "stats_sessions_empty": {
     "message": "您的第一個工作階段將出現在這裡。"
@@ -285,10 +285,10 @@
     "message": "來源"
   },
   "stats_session_no_intention": {
-    "message": "无意圖"
+    "message": "沒有意圖"
   },
   "stats_session_article_label": {
-    "message": "会话：$INTENTION$",
+    "message": "工作階段：$INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",

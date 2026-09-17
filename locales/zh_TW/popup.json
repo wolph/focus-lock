@@ -16,40 +16,40 @@
     "message": "設定"
   },
   "popup_open_settings_failed": {
-    "message": "无法打開設定。請重試。"
+    "message": "無法開啟設定。請重試。"
   },
   "popup_settings_load_failed": {
-    "message": "无法載入会话設定。重新載入弹出窗口以重試。顯示預設值。"
+    "message": "無法載入工作階段設定。重新載入快顯視窗再試一次。顯示預設值。"
   },
   "popup_open_setup_failed": {
-    "message": "无法打開設定。請重試。"
+    "message": "無法開啟設定。請重試。"
   },
   "popup_setup_required_heading": {
     "message": "完成 Focus Lock 設定"
   },
   "popup_setup_required_body": {
-    "message": "在啟動会话前選擇您的起始清單、網站存取和儲存模式。"
+    "message": "在開始工作階段前選擇您的起始清單、網站存取和儲存模式。"
   },
   "popup_open_setup_button": {
     "message": "打開設定"
   },
   "popup_blocking_confirm_failed": {
-    "message": "无法確認網站封鎖。請重試。"
+    "message": "無法確認網站阻止。請重試。"
   },
   "popup_blocking_enable_failed": {
-    "message": "无法啟用網站封鎖。請重試。"
+    "message": "無法啟用網站阻止。請重試。"
   },
   "popup_blocking_off_heading": {
     "message": "網站封鎖已關閉"
   },
   "popup_blocking_off_body": {
-    "message": "在 Chrome 授予網站存取權限并啟用封鎖之前，Focus Lock 无法啟動会话。"
+    "message": "Focus Lock 無法啟動工作階段直到 Chrome 授予網站存取且啟用阻止。"
   },
   "popup_blocking_off_denied": {
     "message": "Chrome 未授予網站存取權限。網站封鎖仍未啟用。"
   },
   "popup_blocking_off_registration_error": {
-    "message": "已授予網站存取權限，但 Focus Lock 无法啟用封鎖。請重試設定或重新載入擴充功能。"
+    "message": "已授予網站存取，但 Focus Lock 無法啟用阻止。重新進行設定或重新載入擴充功能。"
   },
   "popup_enable_blocking_button": {
     "message": "啟用網站封鎖"
@@ -58,13 +58,13 @@
     "message": "重試"
   },
   "popup_notice_access_revoked": {
-    "message": "您的会话已結束，因为網站存取已被移除。"
+    "message": "您的工作階段因移除網站存取而結束。"
   },
   "popup_notice_blocking_failed": {
-    "message": "您的会话已結束，因为 Focus Lock 无法啟用網站封鎖。"
+    "message": "您的工作階段因 Focus Lock 無法啟用網站阻止而結束。"
   },
   "popup_dismiss_notice_failed": {
-    "message": "无法關閉此通知。請重試。"
+    "message": "無法關閉此通知。請重試。"
   },
   "popup_dismiss_notice_label": {
     "message": "關閉網站存取通知"
@@ -73,19 +73,19 @@
     "message": "關閉"
   },
   "popup_restart_failed": {
-    "message": "无法重啟 Focus Lock。請重試。"
+    "message": "無法重新啟動 Focus Lock。請重試。"
   },
   "popup_boot_failed_heading": {
-    "message": "Focus Lock 无法啟動"
+    "message": "Focus Lock 無法啟動"
   },
   "popup_boot_reason_unavailable": {
-    "message": "无法讀取原因。"
+    "message": "無法讀取原因。"
   },
   "popup_reset_runtime_button": {
     "message": "重置本地執欄時"
   },
   "popup_reset_runtime_note": {
-    "message": "保留您的設定、清單和統計。清除目前会话狀態。"
+    "message": "保留您的設定、清單和統計資料。清除目前工作階段狀態。"
   },
   "popup_delete_all_confirm_button": {
     "message": "刪除所有内容并重新開始"
@@ -112,10 +112,10 @@
     "message": "開啟定期網站以解鎖它"
   },
   "popup_active_site_unknown": {
-    "message": "无法识别活跃網站"
+    "message": "無法識別活躍網站"
   },
   "popup_active_site_error": {
-    "message": "无法识别活跃網站。"
+    "message": "無法識別活躍網站。"
   },
   "popup_resume_now": {
     "message": "立即恢复"
@@ -166,7 +166,7 @@
     "message": "更改工作頁籤"
   },
   "popup_session_actions_summary": {
-    "message": "会话操作"
+    "message": "工作階段動作"
   },
   "popup_site_access_credit": {
     "message": "$CREDIT$ 網站存取點數",
@@ -212,7 +212,7 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "強制鎖定。无法提前結束。"
+    "message": "困難鎖定。無法提前結束。"
   },
   "popup_draft_stop_flexible": {
     "message": "随時結束。"
@@ -236,7 +236,7 @@
     }
   },
   "popup_session_length_label": {
-    "message": "会话长度"
+    "message": "工作階段長度"
   },
   "popup_custom_minutes_label": {
     "message": "自訂分鐘數"
@@ -245,7 +245,7 @@
     "message": "分鐘"
   },
   "popup_gate_force_end": {
-    "message": "忽略超時并无论如何結束"
+    "message": "忽略逾時並仍然結束"
   },
   "popup_gate_keep_focusing": {
     "message": "繼續专注"
@@ -254,7 +254,7 @@
     "message": "輸入："
   },
   "popup_gate_update_failed": {
-    "message": "无法更新门槛。請重試。"
+    "message": "無法更新入口。請重試。"
   },
   "popup_gate_intention": {
     "message": "您說：$INTENTION$",
@@ -393,7 +393,7 @@
     "message": "允许的網站和規則"
   },
   "popup_no_allowed_sites": {
-    "message": "尚无允许的網站。"
+    "message": "還沒有允許的網站。"
   },
   "popup_what_will_be_blocked": {
     "message": "将被封鎖的内容"
@@ -460,10 +460,10 @@
     "message": "打開設定以获得永久預設值"
   },
   "popup_rule_details_label": {
-    "message": "会话規則詳情"
+    "message": "工作階段規則詳細資訊"
   },
   "popup_session_type_legend": {
-    "message": "会话類型"
+    "message": "工作階段類型"
   },
   "popup_session_type_flexible": {
     "message": "靈活"
@@ -475,7 +475,7 @@
     "message": "強制鎖定"
   },
   "popup_session_type_flexible_hint": {
-    "message": "随時立即結束会话。"
+    "message": "隨時立即結束工作階段。"
   },
   "popup_session_type_friction_hint": {
     "message": "提前結束需要 $WAIT$。不需要輸入。",
@@ -496,7 +496,7 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "会话无法提前結束。網站存取點數仍然有效。"
+    "message": "工作階段無法提前結束。網站存取信用仍然有效。"
   },
   "popup_mode_blacklist_hint": {
     "message": "選定的類別和額外規則被封鎖。其他網站保持可用。"
@@ -505,10 +505,10 @@
     "message": "仅欄出的網站可用。所有其他網站被封鎖。"
   },
   "popup_invalid_duration_error": {
-    "message": "輸入大于零分鐘的会话长度。"
+    "message": "輸入大於零分鐘的工作階段長度。"
   },
   "popup_stale_lists_unavailable": {
-    "message": "預設值已更改，但无法載入目前清單。重新載入弹出窗口。"
+    "message": "預設值已變更，但無法載入目前清單。重新載入快顯視窗。"
   },
   "popup_no_work_tab_option": {
     "message": "無工作索引標籤（可選）"
@@ -556,7 +556,7 @@
     "message": "更改"
   },
   "popup_session_settings_summary": {
-    "message": "会话設定"
+    "message": "工作階段設定"
   },
   "popup_choose_work_tab_label": {
     "message": "選擇工作頁籤"
@@ -577,7 +577,7 @@
     "message": "封鎖模式"
   },
   "popup_invalid_time_label": {
-    "message": "无效時間"
+    "message": "無效時間"
   },
   "popup_start_focus_label": {
     "message": "啟動 $DURATION$ 专注",
@@ -592,7 +592,7 @@
     "message": "輸入有效的網域，例如 docs.example.com。"
   },
   "popup_work_tabs_unavailable": {
-    "message": "无法載入工作頁籤。重新打開弹出窗口以重試。"
+    "message": "無法載入工作標籤。重新開啟快顯視窗再試一次。"
   },
   "popup_use_this_tab": {
     "message": "使用此頁籤"
@@ -607,7 +607,7 @@
     "message": "正在查找您的目前頁籤..."
   },
   "popup_current_tab_load_failed": {
-    "message": "无法載入您的目前頁籤。請重試。"
+    "message": "無法載入您目前的標籤。請重試。"
   },
   "popup_choose_work_tab_copy": {
     "message": "選擇或取代您的工作索引標籤。"
@@ -616,7 +616,7 @@
     "message": "正在保存工作頁籤..."
   },
   "popup_save_work_tab_failed": {
-    "message": "无法保存工作頁籤。請重試。"
+    "message": "無法儲存工作標籤。請重試。"
   },
   "popup_choose_open_tab_option": {
     "message": "選擇打開的頁籤"
@@ -625,6 +625,6 @@
     "message": "或選擇另一個索引標籤"
   },
   "popup_start_failed": {
-    "message": "无法啟動会话。請重試。"
+    "message": "無法啟動工作階段。請重試。"
   }
 }

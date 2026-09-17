@@ -43,19 +43,19 @@
     "message": "鎖定直到手動解鎖"
   },
   "shared_until_stopped_disclosure": {
-    "message": "直到停止会话保持靈活或緩衝，无法使用专注和休息週期。"
+    "message": "直到停止工作階段保持靈活或摩擦且無法使用專注和休息週期。"
   },
   "shared_hard_unavailable_reason": {
     "message": "硬性鎖定不適用於直到停止：沒有計時器和手動結束，工作階段永遠無法結束。"
   },
   "shared_end_session": {
-    "message": "結束会话"
+    "message": "結束工作階段"
   },
   "shared_unlock": {
     "message": "解鎖"
   },
   "shared_gate_wait_none": {
-    "message": "无等待"
+    "message": "無等待"
   },
   "shared_gate_wait": {
     "message": "$SECONDS$ 秒等待",
@@ -113,7 +113,7 @@
     "message": "專注階段"
   },
   "shared_clock_total_session": {
-    "message": "总会话"
+    "message": "總工作階段"
   },
   "shared_clock_pause": {
     "message": "休息"
@@ -128,37 +128,37 @@
     "message": "Focus Lock 正在啟動。套用您選定的規則。"
   },
   "shared_popup_closure_cleanup": {
-    "message": "会话已結束。完成浏览器清理中。"
+    "message": "工作階段已結束。正在完成瀏覽器清理。"
   },
   "shared_popup_transition_cleanup": {
-    "message": "Focus Lock 无法啟動。完成浏览器清理中。"
+    "message": "Focus Lock 無法啟動。正在完成瀏覽器清理。"
   },
   "shared_popup_transition_error": {
-    "message": "Focus Lock 无法清理未完成的啟動。"
+    "message": "Focus Lock 無法清理不完整的啟動。"
   },
   "shared_popup_closure_error": {
-    "message": "Focus Lock 无法完成浏览器清理。"
+    "message": "Focus Lock 無法完成瀏覽器清理。"
   },
   "shared_retry_cleanup": {
     "message": "重試清理"
   },
   "shared_end_failed": {
-    "message": "无法結束会话。請重試。"
+    "message": "無法結束工作階段。請重試。"
   },
   "shared_retry_failed": {
-    "message": "无法重試清理。請重試。"
+    "message": "無法重試清理。請重試。"
   },
   "shared_action_failed": {
     "message": "無法要求該動作。再試一次。"
   },
   "shared_return_to_work_failed": {
-    "message": "无法回到工作。請重試。"
+    "message": "無法返回工作。請重試。"
   },
   "shared_data_clear_pending": {
     "message": "刪除 Focus Lock 資料中。完成清理中。"
   },
   "shared_data_clear_error": {
-    "message": "无法刪除資料。請重試。"
+    "message": "無法刪除資料。請重試。"
   },
   "shared_schedule_window_label": {
     "message": "直到窗口結束"
@@ -179,10 +179,10 @@
     "message": "Focus Lock 正在啟動。檢查網路存取並套用您的規則。"
   },
   "shared_settings_error": {
-    "message": "Focus Lock 无法完成浏览器清理。打開弹出窗口并重試。"
+    "message": "Focus Lock 無法完成瀏覽器清理。開啟快顯視窗並重試。"
   },
   "shared_settings_session_disclosure": {
-    "message": "工具栏弹出窗口拥有会话控制。活跃会话保留它啟動時捕获的規則。"
+    "message": "工具列快顯視窗擁有工作階段控制。活躍工作階段保留啟動時擷取的規則。"
   },
   "shared_settings_timed": {
     "message": "計時工作階段直到 $TIME$ 為止有效。它會自動結束。使用工具列快顯視窗以取得即時狀態。",
@@ -258,7 +258,7 @@
     }
   },
   "shared_updating_session": {
-    "message": "更新会话中"
+    "message": "更新工作階段"
   },
   "shared_less_than_a_minute": {
     "message": "少于一分鐘"
@@ -331,13 +331,13 @@
     "message": "不在您的允許清單中"
   },
   "shared_verdict_blocked_session": {
-    "message": "被此会话封鎖"
+    "message": "此工作階段阻止"
   },
   "shared_verdict_allow_list": {
     "message": "在您的允許清單中"
   },
   "shared_verdict_always_allowed": {
-    "message": "始终允许"
+    "message": "始終允許"
   },
   "shared_verdict_unlock": {
     "message": "临時解鎖"
@@ -349,16 +349,16 @@
     "message": "没有活跃專注工作階段"
   },
   "shared_verdict_allowed_session": {
-    "message": "由此会话允许"
+    "message": "此工作階段允許"
   },
   "shared_category_social": {
-    "message": "社交媒体"
+    "message": "社群媒體"
   },
   "shared_category_video": {
-    "message": "视频和流媒体"
+    "message": "影片和串流"
   },
   "shared_category_news": {
-    "message": "新闻"
+    "message": "新聞"
   },
   "shared_category_mail": {
     "message": "邮件"
@@ -370,7 +370,7 @@
     "message": "游戏"
   },
   "shared_category_forums": {
-    "message": "论坛和无聊"
+    "message": "論壇和無聊"
   },
   "shared_synced_settings": {
     "message": "設定"
@@ -385,7 +385,7 @@
     "message": "連續記錄"
   },
   "shared_synced_aggregates": {
-    "message": "網域级已封鎖尝试聚合"
+    "message": "網域級阻止嘗試彙總"
   },
   "shared_local_full_urls": {
     "message": "完整 URL"
@@ -394,22 +394,22 @@
     "message": "专注意圖"
   },
   "shared_local_events": {
-    "message": "詳細会话事件"
+    "message": "詳細工作階段事件"
   },
   "shared_local_runtime": {
-    "message": "活跃執欄時会话"
+    "message": "活躍執行階段工作階段"
   },
   "shared_legacy_policy_dropped": {
     "message": "舊版本的某些同步資料無法讀取並已重設。"
   },
   "shared_all_data_clear_running": {
-    "message": "在刪除所有資料之前結束執欄的会话。"
+    "message": "刪除所有資料前結束運行中的工作階段。"
   },
   "shared_nav_brand": {
     "message": "Focus Lock"
   },
   "shared_nav_product": {
-    "message": "产品导航"
+    "message": "產品導覽"
   },
   "shared_nav_overview": {
     "message": "概覽"
@@ -424,7 +424,7 @@
     "message": "日程"
   },
   "shared_section_behavior": {
-    "message": "会话欄为"
+    "message": "工作階段行為"
   },
   "shared_section_budget": {
     "message": "網站存取點數"
@@ -470,7 +470,7 @@
     }
   },
   "shared_host_none": {
-    "message": "没有 $TITLE$ 網站与您的搜尋匹配。",
+    "message": "沒有符合您搜尋的 $TITLE$ 網站。",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -514,7 +514,7 @@
     }
   },
   "shared_end_the_session": {
-    "message": "結束会话"
+    "message": "結束工作階段"
   },
   "shared_overlay_starting_title": {
     "message": "Focus Lock 正在啟動"
@@ -544,10 +544,10 @@
     "message": "您可以随時离開。網站存取使用额度。"
   },
   "shared_overlay_gate_force_end": {
-    "message": "忽略超時并无论如何結束"
+    "message": "忽略逾時並仍然結束"
   },
   "shared_overlay_transport_error": {
-    "message": "Focus Lock 无法更新此操作。請重試。"
+    "message": "Focus Lock 無法更新此動作。請重試。"
   },
   "shared_overlay_bank_amount": {
     "message": "$AMOUNT$ 網站存取點數",
@@ -622,6 +622,6 @@
     "message": "輸入此内容以確認："
   },
   "shared_gate_end_title": {
-    "message": "結束此会话"
+    "message": "結束此工作階段"
   }
 }

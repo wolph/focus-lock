@@ -12,7 +12,7 @@
     "message": "載入隐私設定中"
   },
   "options_save_failed": {
-    "message": "无法保存。請重試。"
+    "message": "無法儲存。請重試。"
   },
   "options_blocking_heading": {
     "message": "封鎖"
@@ -39,7 +39,7 @@
     "message": "工作階段在這些時段內自動啟動。這裡設定的嚴格程度適用於整個時段。"
   },
   "options_behavior_heading": {
-    "message": "会话欄为"
+    "message": "工作階段行為"
   },
   "options_budget_heading": {
     "message": "網站存取點數"
@@ -78,7 +78,7 @@
     "message": "保存更改"
   },
   "options_session_status_label": {
-    "message": "会话狀態"
+    "message": "工作階段狀態"
   },
   "options_rule_kind_host_badge": {
     "message": "網域"
@@ -99,7 +99,7 @@
     }
   },
   "options_rules_empty": {
-    "message": "尚无規則。"
+    "message": "還沒有規則。"
   },
   "options_rule_kind_aria": {
     "message": "規則類型"
@@ -171,7 +171,7 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "会话預設值"
+    "message": "工作階段預設值"
   },
   "options_session_defaults_help": {
     "message": "工作階段啟動時模式和嚴格程度是固定的。這些是啟動表單開啟的值。"
@@ -192,13 +192,13 @@
     "message": "允許清單：仅允许欄出的網站"
   },
   "options_strictness_flexible_label": {
-    "message": "靈活：随時結束会话"
+    "message": "靈活：隨時結束工作階段"
   },
   "options_strictness_friction_label": {
     "message": "緩衝：提前停止使用設定的確認門檻"
   },
   "options_strictness_hard_label": {
-    "message": "強制鎖定：无法提前結束，仅限临時網站存取"
+    "message": "困難：無提前結束，僅限臨時網站存取"
   },
   "options_cycle_heading": {
     "message": "专注和休息週期"
@@ -258,7 +258,7 @@
     "message": "也需要輸入句子"
   },
   "options_gate_force_end_label": {
-    "message": "啟用\"忽略超時并无论如何結束\"按钮"
+    "message": "啟用「忽略逾時並仍然結束」按鈕"
   },
   "options_credit_help": {
     "message": "工作階段專注時賺取網站存取額度。所有網站存取和單一網站解鎖都從同一個帳戶花費。您可以隨時離開而不花費額度。"
@@ -513,7 +513,7 @@
     }
   },
   "options_schedule_session_type_aria": {
-    "message": "会话類型"
+    "message": "工作階段類型"
   },
   "options_schedule_entry_legend": {
     "message": "排程項目"
@@ -540,7 +540,7 @@
     "message": "取消"
   },
   "options_schedule_empty": {
-    "message": "尚无計畫的会话。"
+    "message": "還沒有排程工作階段。"
   },
   "options_schedule_selected_days_aria": {
     "message": "選定的天數"
@@ -592,7 +592,7 @@
     "message": "主音量"
   },
   "options_sound_session_complete": {
-    "message": "会话完成"
+    "message": "工作階段完成"
   },
   "options_sound_break_start": {
     "message": "休息開始"
@@ -616,7 +616,7 @@
     "message": "播放"
   },
   "options_sound_preview_error": {
-    "message": "无法预览声音。請重試。"
+    "message": "無法預覽聲音。請重試。"
   },
   "options_sounds_notifications_heading": {
     "message": "通知"
@@ -637,7 +637,7 @@
     "message": "網站存取已關閉"
   },
   "options_privacy_website_off_detail": {
-    "message": "在您授予存取權限之前，Focus Lock 无法封鎖網站。"
+    "message": "Focus Lock 無法阻止網站直到您授予存取權限。"
   },
   "options_privacy_website_enable_action": {
     "message": "啟用網站封鎖"
@@ -646,7 +646,7 @@
     "message": "已授予網站存取權限，但封鎖不活跃"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome 已授予存取權限，但 Focus Lock 无法注册其封鎖脚本。"
+    "message": "Chrome 已授予存取，但 Focus Lock 無法註冊其阻止指令。"
   },
   "options_privacy_website_retry_action": {
     "message": "重試網站封鎖"
@@ -697,22 +697,22 @@
     "message": "這將永久刪除這個裝置上的每個 Focus Lock 資料和 Chrome 同步中留下的任何 Focus Lock 副本："
   },
   "options_privacy_all_body_outro": {
-    "message": "刪除所有内容仅在没有会话執欄時可用。之後 Focus Lock 将返回設定。"
+    "message": "刪除所有項目只在未運行工作階段時可用。Focus Lock 將重新開始設定。"
   },
   "options_privacy_error_local_history_clear": {
     "message": "無法刪除本機歷史記錄。再試一次。"
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "无法刪除远程 Chrome 同步資料。請重試。"
+    "message": "無法刪除遠端 Chrome 同步資料。請重試。"
   },
   "options_privacy_error_all_clear": {
-    "message": "无法刪除所有 Focus Lock 資料。請重試。"
+    "message": "無法刪除所有 Focus Lock 資料。請重試。"
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome 同步无法保存您的最新更改。您的本地保存是安全的。"
+    "message": "Chrome 同步無法儲存您的最新變更。您的本機儲存是安全的。"
   },
   "options_privacy_error_request": {
-    "message": "无法完成請求。請重試。"
+    "message": "無法完成請求。請重試。"
   },
   "options_privacy_website_access_updated": {
     "message": "網站存取已更新。"
@@ -721,19 +721,19 @@
     "message": "未授予網站存取權限。"
   },
   "options_privacy_error_website_access": {
-    "message": "无法更新網站存取。請重試。"
+    "message": "無法更新網站存取。請重試。"
   },
   "options_privacy_website_blocking_enabled": {
     "message": "已啟用網站封鎖。"
   },
   "options_privacy_error_export": {
-    "message": "无法导出事件日志。"
+    "message": "無法匯出事件紀錄。"
   },
   "options_privacy_error_export_retry": {
-    "message": "无法导出事件日志。請重試。"
+    "message": "無法匯出事件紀錄。請重試。"
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "无法打開 Chrome 權限設定。請重試。"
+    "message": "無法開啟 Chrome 權限設定。請重試。"
   },
   "options_privacy_chrome_settings_opened": {
     "message": "Chrome 權限設定已打開。"
@@ -778,7 +778,7 @@
     "message": "仅限本地"
   },
   "options_privacy_developer_note": {
-    "message": "未向 Focus Lock 開发者发送任何内容。"
+    "message": "Focus Lock 開發者未收到任何資料。"
   },
   "options_privacy_local_log_heading": {
     "message": "本地事件日志"
@@ -787,10 +787,10 @@
     "message": "匯出詳細本機日誌或刪除本機瀏覽和工作階段歷史記錄。"
   },
   "options_privacy_export_local_log": {
-    "message": "导出本地事件日志"
+    "message": "匯出本機事件紀錄"
   },
   "options_privacy_local_log_exported": {
-    "message": "本地事件日志已导出。"
+    "message": "本機事件紀錄已匯出。"
   },
   "options_privacy_delete_local_history": {
     "message": "刪除本機歷史記錄"
@@ -826,19 +826,19 @@
     "message": "無法載入設定。重新載入頁面後再試一次。"
   },
   "options_error_retry_boot": {
-    "message": "无法重啟 Focus Lock。請重試。"
+    "message": "無法重新啟動 Focus Lock。請重試。"
   },
   "options_error_refresh_privacy": {
     "message": "無法重新整理隱私設定。重新載入頁面。"
   },
   "options_error_website_blocking": {
-    "message": "无法更新網站封鎖。請重試。"
+    "message": "無法更新網站阻止。請重試。"
   },
   "options_error_change_sync": {
-    "message": "无法更改 Chrome 同步。請重試。"
+    "message": "無法變更 Chrome 同步。請重試。"
   },
   "options_error_retry_sync": {
-    "message": "无法重試 Chrome 同步。請重試。"
+    "message": "無法重試 Chrome 同步。請重試。"
   },
   "options_error_save_settings": {
     "message": "無法儲存設定。重新載入頁面後再試一次。"

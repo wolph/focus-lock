@@ -324,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "Ang site ay nanatiling makukuha sa normal na oras.",
+    "message": "Nanatiling magagamit ang $HOST$.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -342,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "Ang lahat ng sites ay nanatiling makukuha sa normal na oras.",
+    "message": "Nanatiling magagamit ang lahat ng site sa $CATEGORY$.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",

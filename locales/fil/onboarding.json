@@ -49,7 +49,7 @@
     "message": "Anong mga site ang gusto mong i-block?"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "Ang bawat URL sa block list ay nagiging unavailable sa panahon ng sesi.",
+    "message": "Sa $MODE$, hindi magagamit ang mga pinaganang kategorya at karagdagang mga naka-block na site.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "Mga site na makukuha lamang sa whitelist session.",
+    "message": "Sa $MODE$, hindi magagamit ang lahat ng site maliban sa iyong listahan ng pinapayagan.",
     "placeholders": {
       "MODE": {
         "content": "$1",

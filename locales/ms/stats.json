@@ -3,16 +3,16 @@
     "message": "Fokus Lock stats"
   },
   "stats_page_title": {
-    "message": "Andar focus record"
+    "message": "Anda focus record"
   },
   "stats_loading": {
-    "message": "Loading andar stats."
+    "message": "Loading anda stats."
   },
   "stats_load_error": {
     "message": "Tidak dapat memuat stats. Muat ulang untuk coba lagi."
   },
   "stats_partial_error_both": {
-    "message": "Jamly attempts and site access credit settings are unavailable."
+    "message": "Hourly attempts and site akses credit settings are unavailable."
   },
   "stats_partial_error_attempts": {
     "message": "Jamly attempts are unavailable."
@@ -30,13 +30,13 @@
     "message": "Checkdalamg whether these ketals are synced."
   },
   "stats_scope_unavailable": {
-    "message": "Statistik scope is unavailable. Totals may include synced data. Hourly attempts and recent sesis are from this machine."
+    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent sesis are from this machine."
   },
   "stats_scope_retry": {
     "message": "Coba Ulang scope check"
   },
   "stats_empty": {
-    "message": "Stats appear after andar first session."
+    "message": "Stats appear after anda first sesi."
   },
   "stats_tile_focus_today": {
     "message": "Fokus tohari"
@@ -51,7 +51,7 @@
     "message": "Gate requests dismissed tohari"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent tohari"
+    "message": "Site akses credit spent today"
   },
   "stats_tile_credit_subline_spent": {
     "message": "All situss $ALL_SITES$, padae situs $ONE_SITE$, $EARNED$ earned",
@@ -164,13 +164,13 @@
     "message": "Fokus, last 14 haris"
   },
   "stats_chart_focus_empty": {
-    "message": "Focus menit appear after andar first session."
+    "message": "Focus minutes appear after anda first sesi."
   },
   "stats_chart_attempts_heading": {
     "message": "Blokired attempts, last 14 haris"
   },
   "stats_chart_attempts_empty": {
-    "message": "Blokired attempts show up here once a session catches one."
+    "message": "Blocked attempts show up here once a sesi catches one."
   },
   "stats_chart_sites_heading": {
     "message": "Top blocked sites, last 30 haris"
@@ -215,7 +215,7 @@
     "message": "Carta bar"
   },
   "stats_chart_name_hbar": {
-    "message": "Hpadaauizpadpadaal bar chart"
+    "message": "Horizontal batang bagan"
   },
   "stats_chart_description_bar": {
     "message": "Bagan batang. Gunakan keyboard untuk bergerak melalui titik data, atau buka Lihat sebagai tabel untuk nilai yang sama."
@@ -240,7 +240,7 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "Lihpada as table"
+    "message": "View as tabel"
   },
   "stats_chart_table_category": {
     "message": "Kategori"
@@ -255,7 +255,7 @@
     "message": "Recent sesis on this machine"
   },
   "stats_sessions_empty": {
-    "message": "Andar first session will appear here."
+    "message": "Anda first session will appear here."
   },
   "stats_sessions_col_date": {
     "message": "Dpadae"

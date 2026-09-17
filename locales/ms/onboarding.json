@@ -46,7 +46,7 @@
     "message": "Tidak dapat menyelesaikan penyiapan. Pilihan Anda masih disimpan. Coba lagi."
   },
   "onboarding_lists_heading": {
-    "message": "Choose andar starting blok list"
+    "message": "Choose anda starting block list"
   },
   "onboarding_lists_blacklist_rule": {
     "message": "In $MODE$, aktifkdan cpadaegpadaauies dan extra blokired situss are unavailable.",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "In $MODE$, every situs is unavailable except andar daftar izinkan.",
+    "message": "In $MODE$, every site is unavailable except anda allow list.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,7 +67,7 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "These choices become defaults for future sessions. Anda can edit them later."
+    "message": "These choices become defaults for future sessions. Anda dapat edit them later."
   },
   "onboarding_lists_legend": {
     "message": "Recommended websitus cpadaegpadaauies"
@@ -121,34 +121,34 @@
     "message": "Lanjutkan"
   },
   "onboarding_access_heading": {
-    "message": "Aktifkan website blocking"
+    "message": "Enable situs web pemblokiran"
   },
   "onboarding_access_local_matching": {
-    "message": "Focus Lock checks page addresses locally so it can match andar selected categories and situss. It uses websitus access to show its bloking screen and restore affected pages when andar session ends."
+    "message": "Focus Lock checks page addresses locally so it can match anda selected categories and sites. It uses situs web akses to show its pemblokiran screen and restore affected pages when anda sesi ends."
   },
   "onboarding_access_capability_intro": {
     "message": "Cpadaegpadaauies dan cuskem domadalams can dalamclude any websitus. Chrome will thereuntuke request this capability:"
   },
   "onboarding_access_capability": {
-    "message": "Read and change all andar data on all websituss"
+    "message": "Read and change all anda data on all situs webs"
   },
   "onboarding_access_scope_note": {
-    "message": "Focus Lock uses that access only while applying andar bloking rules."
+    "message": "Focus Lock uses that akses only while applying anda pemblokiran rules."
   },
   "onboarding_access_denied": {
-    "message": "Chrome did not grant websitus access. Anda can retry."
+    "message": "Chrome did not grant website access. Anda dapat retry."
   },
   "onboarding_access_registration_error": {
     "message": "Akses situs web diberikan, tetapi Focus Lock tidak dapat mengaktifkan pemblokiran. Coba ulang penyiapan atau muat ulang ekstensi."
   },
   "onboarding_access_enable_button": {
-    "message": "Aktifkan website blocking"
+    "message": "Enable situs web pemblokiran"
   },
   "onboarding_access_defer_button": {
     "message": "Tidakt tidakw"
   },
   "onboarding_sync_heading": {
-    "message": "Choose where andar settings are stored"
+    "message": "Choose where anda settings are stored"
   },
   "onboarding_sync_switch_label": {
     "message": "Sinkronkan across Chrome devices"
