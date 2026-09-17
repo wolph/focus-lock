@@ -31,25 +31,25 @@
     "message": "I-set up unavailable"
   },
   "onboarding_error_body": {
-    "message": "Hindi makapag-load ng setup. Subukan muli."
+    "message": "Hindi makapag-load ng setup. Subukan ulit."
   },
   "onboarding_retry_button": {
     "message": "Subukan Muli"
   },
   "onboarding_save_error": {
-    "message": "Hindi masayang ang pag-unlad ng setup. Subukan muli."
+    "message": "Hindi ma-save ang progreso ng setup. Subukan ulit."
   },
   "onboarding_enable_error": {
-    "message": "Hindi makapagsimula ng pagharang sa website. Subukan muli."
+    "message": "Hindi mapagana ang blocking ng website. Subukan ulit."
   },
   "onboarding_finish_error": {
-    "message": "Hindi makumpleto ang setup. Ang iyong mga pagpipilian ay nakaimbak pa rin. Subukan muli."
+    "message": "Hindi na-kumpleto ang setup. Ang iyong mga pagpipilian ay nakaligtas pa rin. Subukan ulit."
   },
   "onboarding_lists_heading": {
-    "message": "Piliin ang iyong panimulang block list"
+    "message": "Piliin ang iyong pangunahing listahan ng blocking"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "Sa $MODE$, ang mga enabled na kategorya at karagdagang blocked sites ay hindi available.",
+    "message": "Sa $MODE$, ang mga pinagana na kategorya at karagdagang na-block na mga site ay hindi available.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "Sa $MODE$, bawat site ay hindi available maliban sa iyong allow list.",
+    "message": "Sa $MODE$, lahat ng mga site ay hindi available maliban sa iyong listahan ng pinapayagan.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,10 +67,10 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "Ang mga pagpipiliang ito ay nagiging default para sa mga susunod na sesyon. Maaari mong i-edit ang mga ito mamaya."
+    "message": "Ang mga pagpipiliang ito ay nagiging default para sa mga susunod na sesyon. Maaari mong i-edit ito mamaya."
   },
   "onboarding_lists_legend": {
-    "message": "Mga inirerekomendang kategorya ng website"
+    "message": "Inirerekomendang kategorya ng website"
   },
   "onboarding_site_count_one": {
     "message": "$COUNT$ site",
@@ -82,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ sites",
+    "message": "$COUNT$ mga site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -124,19 +124,19 @@
     "message": "Paganahin website blocking"
   },
   "onboarding_access_local_matching": {
-    "message": "Sinisuri ng Focus Lock ang mga address ng pahina nang lokal upang makapag-tugma ng iyong mga piling kategorya at site. Gumagamit ito ng access sa website upang ipakita ang screen ng pagharang at ibalik ang mga apektadong pahina kapag nagtatapos ang iyong sesyon."
+    "message": "Ang Focus Lock ay nag-check ng mga address ng page nang lokal upang makapag-match sa iyong mga piniling kategorya at mga site. Gumagamit ito ng access sa website upang ipakita ang screen ng pagbabalanse at ibalik ang mga apektadong pahina kapag nagtatapos ang iyong sesyon."
   },
   "onboarding_access_capability_intro": {
-    "message": "Ang mga kategorya at custom domain ay maaaring kasama ang anumang website. Ang Chrome ay samakatuwid ay hihiling ng kakayahang ito:"
+    "message": "Ang mga kategorya at custom na domain ay maaaring magsama ng anumang website. Samakatuwid, ang Chrome ay hihiling ng kakayahang ito:"
   },
   "onboarding_access_capability": {
-    "message": "Basahin at baguhin ang lahat ng iyong data sa lahat ng website"
+    "message": "Basahin at baguhin ang lahat ng iyong data sa lahat ng mga website"
   },
   "onboarding_access_scope_note": {
-    "message": "Ginagamit ng Focus Lock ang access na iyon lamang sa paglalapat ng iyong mga panuntunan sa pagharang."
+    "message": "Ang Focus Lock ay gumagamit lamang ng access na iyon sa paglalapat ng iyong mga patakaran sa pagbabalanse."
   },
   "onboarding_access_denied": {
-    "message": "Hindi nagbigay ng access sa website ang Chrome. Maaari kang magsubok muli."
+    "message": "Ang Chrome ay hindi nagbigay ng access sa website. Maaari kang subukan ulit."
   },
   "onboarding_access_registration_error": {
     "message": "Website access is granted, but Focus Lock could not enable blocking. Subukan Muli setup or reload the extension."
@@ -154,10 +154,10 @@
     "message": "I-sync sa lahat ng Chrome device"
   },
   "onboarding_sync_enabled_note": {
-    "message": "Ang aprubadong data sa ibaba ay gagamit ang Chrome Sync pagkatapos makumpleto ng setup."
+    "message": "Ang naaprubahang data sa ibaba ay gagamitin ang Chrome Sync pagkatapos mong tapusin ang setup."
   },
   "onboarding_sync_disabled_note": {
-    "message": "Ang lahat ng data ng Focus Lock ay nanatili sa profile na ito ng Chrome."
+    "message": "Ang lahat ng Focus Lock data ay manatili sa Chrome profile na ito."
   },
   "onboarding_sync_synced_title": {
     "message": "Naka-sync"
@@ -169,7 +169,7 @@
     "message": "Walang ipinapadala sa developer ng Focus Lock."
   },
   "onboarding_sync_finish_enabled": {
-    "message": "Tapusin ang setup na may sync na naka-enable"
+    "message": "Tapusin ang setup na may sync na pinagana"
   },
   "onboarding_sync_finish_disabled": {
     "message": "Tapusin ang setup nang walang sync"

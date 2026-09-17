@@ -1,0 +1,163 @@
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "Zamknuté - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Kontrolujem dostupné pracovné karty..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Vyber otvorenú kartu a pokračuj v práci."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Tvoja relácia sústredenia nie je dostupná. Skús to znova alebo znova načítaj túto stránku."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Pracovnú kartu sa nepodarilo načítať. Skús to znova alebo znova načítaj túto stránku."
+  },
+  "overlay_target_reconnect": {
+    "message": "Znova načítaj túto stránku, aby sa obnovilo spojenie s Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "Žiadajúca stránka sa zmenila. Znova načítaj stránku."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock nie je dostupný. Skús to znova."
+  },
+  "overlay_picker_heading": {
+    "message": "Vyber pracovnú kartu"
+  },
+  "overlay_picker_cancel": {
+    "message": "Zrušiť"
+  },
+  "overlay_picker_search_label": {
+    "message": "Hľadať v pracovných kartách"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Hľadaj podľa názvu alebo webu"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Vymazať hľadanie"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Obnoviť karty"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Dostupné pracovné karty"
+  },
+  "overlay_picker_finding": {
+    "message": "Hľadám dostupné karty..."
+  },
+  "overlay_picker_searching": {
+    "message": "Prehľadávam pracovné karty..."
+  },
+  "overlay_picker_saving": {
+    "message": "Ukladám pracovnú kartu..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Žiadne dostupné pracovné karty. Otvor web, ktorý táto relácia povoľuje, a potom obnov karty."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Žiadne zodpovedajúce karty. Skús iné hľadanie alebo hľadanie vymaž."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Pracovné karty sa nepodarilo načítať. Skús to znova."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ z $COUNT$ karty",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ z $COUNT$ kariet",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_picker_count_few": {
+    "message": "$MATCHES$ z $COUNT$ kariet",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_many": {
+    "message": "$MATCHES$ z $COUNT$ karty",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

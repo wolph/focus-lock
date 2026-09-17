@@ -50,7 +50,7 @@ test('capture every surface for review', async ({ context, extPage, extensionId,
   await onboarding.goto(`chrome-extension://${extensionId}/src/onboarding/onboarding.html`);
   await shot(onboarding, 'onboarding');
 
-  await startTestSession(extPage, { intention: 'Terminer le rapport' });
+  await startTestSession(extPage, { intention: 'Focus Lock' });
   await waitForActiveSession(extPage);
   await popup.goto(`chrome-extension://${extensionId}/src/popup/popup.html`);
   await expect(popup.locator('.active-view')).toBeVisible();

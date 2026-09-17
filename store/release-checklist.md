@@ -59,6 +59,16 @@ Unchanged from 0.1.0, captured at `2026-09-12T12:38:33.853Z`.
 | 04-stats.png | `4bcb2e4a9661269b00a86f1d6d2c30be7b644d3a99d21d05ac6cd9f1722da5e4` |
 | 05-privacy-data.png | `fb9bbf2970dca94e03df8edeb74467c002a26ec6bb2fddbc07760c2c61e99589` |
 
+## Languages
+
+The extension name and the short description come from the message catalogue in the package, so
+the Web Store shows them in the shopper's own language with no dashboard work. Every locale the
+store supports has a catalogue, and a locale the store resolves to nothing falls back to English.
+
+The detailed description is dashboard-only: the Web Store does not read it from the package, so a
+translated listing has to be pasted per language under Store listing, Localised listings. That is
+manual work and it is not part of the build. The listing text lives in `store/listing.md`.
+
 ## Submission
 
 Submitted for review on 15 September 2026. The item status is Pending review, and

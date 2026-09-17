@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "የትኩረት ክፍለ ጊዜ ተጠናቅቋል"
+  },
+  "notify_session_complete_body": {
+    "message": "የትኩረት ክፍለ ጊዜዎ አልቋል።"
+  },
+  "notify_schedule_window_body": {
+    "message": "እስከ $END$ ድረስ ተቆልፏል።",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "የትኩረት መርሃ ግብር መጀመር አልቻለም"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "የድረ ገፅ እገዳ አልነቃም። ማዋቀሩን ይጨርሱ ወይም የድረ ገፅ መዳረሻ ይፍቀዱ፣ ከዚያ ደግመው ይሞክሩ።"
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "ማዋቀሩ በሌላ ትር ውስጥ ተጠናቋል።"
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "ማዋቀሩ በሌላ ትር ውስጥ ተቀይሯል። የቅርብ ጊዜ ምርጫዎች ዳግም ተጭነዋል።"
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "ማዋቀሩ በሌላ ትር ውስጥ ተቀይሯል። ከመጨረስዎ በፊት ማዋቀሩን ዳግም ይጫኑ።"
+  },
+  "notify_setup_not_complete": {
+    "message": "ማዋቀሩ ገና አልተጠናቀቀም።"
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "ማዋቀሩ ለመጨረስ ገና ዝግጁ አይደለም።"
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "የማዋቀር ማከማቻ ምርጫ ተቀይሯል። ከመጨረስዎ በፊት ማዋቀሩን ዳግም ይጫኑ።"
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "የማዋቀር ማከማቻ ክንዋኔ አልተሳካም።"
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "የማዋቀር ክንዋኔ አልተሳካም።"
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock የድረ ገፅ መዳረሻን ማረጋገጥ አልቻለም። ማዋቀሩን ደግመው ይሞክሩ ወይም ተጨማሪውን ዳግም ይጫኑ።"
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "የድረ ገፅ መዳረሻ ተፈቅዷል፣ ነገር ግን Focus Lock እገዳን ማንቃት አልቻለም። ማዋቀሩን ደግመው ይሞክሩ ወይም ተጨማሪውን ዳግም ይጫኑ።"
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "የድረ ገፅ መዳረሻ የለም፣ እና Focus Lock የእገዳ ማጽዳትን መጨረስ አልቻለም። ማዋቀሩን ደግመው ይሞክሩ ወይም ተጨማሪውን ዳግም ይጫኑ።"
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock ወጥ ያልሆነ የድረ ገፅ መዳረሻ ሁኔታ ተቀብሏል። ማዋቀሩን ደግመው ይሞክሩ ወይም ተጨማሪውን ዳግም ይጫኑ።"
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock መጀመሩን አልጨረሰም፦ $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "ያልታወቀ ስህተት"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock እየሰራ ነው፣ ዳግም ለማስጀመር ምንም ነገር የለም"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "አሁንም በፖሊሲ ትውልድ ውስጥ የተካተተ ሩንታይምን Focus Lock ዳግም ማስጀመር አይችልም"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "የመረጃ ማጽዳት ድጋሚ ሙከራ አይገኝም።"
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "ተመሳስሎ የተከማቸ መረጃን ከመሰረዝዎ በፊት Sync ያጥፉ"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock ቀደም ያለ ለውጥን መጨረስ ላይ ነው። ትንሽ ቆይተው ደግመው ይሞክሩ።"
+  },
+  "notify_work_gate_stuck": {
+    "message": "ክፍት የነበረውን በር መዝጋት አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "notify_work_tab_unavailable": {
+    "message": "የስራ ትሩ አይገኝም።"
+  },
+  "notify_settings_sync_limit": {
+    "message": "ቅንብሮች የ8 KB Chrome Sync ገደብን አልፈዋል። የመርሃ ግብር ግቤቶችን ያስወግዱ ወይም ዓላማዎችን ያሳጥሩ፣ ከዚያ ደግመው ይሞክሩ።"
+  },
+  "notify_lists_sync_limit": {
+    "message": "ዝርዝሮች የ8 KB Chrome Sync ገደብን አልፈዋል። ብጁ ወይም የፍቃድ ዝርዝር ህጎችን ያስወግዱ፣ ከዚያ ደግመው ይሞክሩ።"
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ የታገዱ ገፆችን ማስወገድ ክፍለ ጊዜው ሲያልቅ ይከፈታል"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ አዲስ የፍቃድ ዝርዝር ግቤቶች ክፍለ ጊዜው ሲያልቅ ይከፈታሉ"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ ምድቦችን ማጥፋት ክፍለ ጊዜው ሲያልቅ ይከፈታል"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ አዲስ ልዩ ማድረጊያዎች ክፍለ ጊዜው ሲያልቅ ይከፈታሉ"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ ነባሪውን ጥብቅነት ማዳከም ክፍለ ጊዜው እስኪያልቅ ድረስ ይጠብቃል"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ የማሰላሰያ በሩን መዘግየት ማሳጠር በሩን ያዳክማል"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ የሚተየበውን ሐረግ ማስወገድ በሩን ያዳክማል"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ የእረፍት ክሬዲት ማግኛ መጠንን መጨመር ተጨማሪ ማምለጫዎችን ያስፋፋል"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ የእረፍት ክሬዲት ገደብን መጨመር ተጨማሪ ማምለጫዎችን ያስፋፋል"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ እረፍቶችን ማሳጠር ወጪያቸውን ይቀንሳል"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ መክፈቻዎችን ማሳጠር ወጪያቸውን ይቀንሳል"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ እየሰራ ነው፦ ይህን የጀመረው የመርሃ ግብር ግቤት ክፍለ ጊዜው እስኪያልቅ ድረስ ሊዳከም አይችልም"
+  }
+}

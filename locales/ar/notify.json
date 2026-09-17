@@ -1,0 +1,134 @@
+{
+  "notify_session_complete_title": {
+    "message": "انتهت جلسة التركيز"
+  },
+  "notify_session_complete_body": {
+    "message": "انتهت جلسة تركيزك."
+  },
+  "notify_schedule_window_body": {
+    "message": "مقفل حتى $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "تعذّر بدء جدول التركيز"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "حظر المواقع الإلكترونية غير مفعّل. أكمل الإعداد أو امنح الوصول إلى المواقع، ثم أعد المحاولة."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "اكتمل الإعداد في علامة تبويب أخرى."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "تغيّر الإعداد في علامة تبويب أخرى. أُعيد تحميل أحدث الخيارات."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "تغيّر الإعداد في علامة تبويب أخرى. أعد تحميل الإعداد قبل إنهائه."
+  },
+  "notify_setup_not_complete": {
+    "message": "الإعداد غير مكتمل."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "الإعداد غير جاهز للإنهاء."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "تغيّر خيار تخزين الإعداد. أعد تحميل الإعداد قبل إنهائه."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "فشلت عملية تخزين الإعداد الأولي."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "فشلت عملية الإعداد الأولي."
+  },
+  "notify_website_access_check_failed": {
+    "message": "تعذّر على Focus Lock التحقق من الوصول إلى المواقع. أعد الإعداد أو أعد تحميل الإضافة."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "مُنح الوصول إلى المواقع، لكن تعذّر على Focus Lock تفعيل الحظر. أعد الإعداد أو أعد تحميل الإضافة."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "الوصول إلى المواقع غير متاح، وتعذّر على Focus Lock إنهاء تنظيف الحظر. أعد الإعداد أو أعد تحميل الإضافة."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "تلقّى Focus Lock حالة وصول إلى المواقع غير متسقة. أعد الإعداد أو أعد تحميل الإضافة."
+  },
+  "notify_boot_not_finished": {
+    "message": "لم يكمل Focus Lock بدء التشغيل: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "خطأ غير معروف"
+  },
+  "notify_nothing_to_reset": {
+    "message": "‏Focus Lock يعمل بشكل طبيعي، ولا شيء لإعادة تعيينه"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "لا يمكن لـ Focus Lock إعادة تعيين حالة تشغيل ما زالت محفوظة داخل جيل من الإعدادات"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "إعادة محاولة حذف البيانات غير متاحة."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "عطّل المزامنة قبل حذف البيانات المزامَنة"
+  },
+  "notify_work_gate_busy": {
+    "message": "ما زال Focus Lock ينهي تغييرًا سابقًا. أعد المحاولة بعد لحظة."
+  },
+  "notify_work_gate_stuck": {
+    "message": "تعذّر إغلاق بوابة التروّي المفتوحة. أعد المحاولة."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "علامة تبويب العمل غير متاحة."
+  },
+  "notify_settings_sync_limit": {
+    "message": "تتجاوز الإعدادات حدّ 8 كيلوبايت في Chrome Sync. احذف مدخلات من الجدول الزمني أو اختصر النيات، ثم أعد المحاولة."
+  },
+  "notify_lists_sync_limit": {
+    "message": "تتجاوز القوائم حدّ 8 كيلوبايت في Chrome Sync. احذف قواعد مخصصة أو قواعد من القائمة البيضاء، ثم أعد المحاولة."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "هناك جلسة صارمة قيد التشغيل: يمكن إزالة المواقع المحظورة عند انتهائها"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "هناك جلسة صارمة قيد التشغيل: تُفعَّل مدخلات القائمة البيضاء الجديدة عند انتهائها"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "هناك جلسة صارمة قيد التشغيل: يمكن تعطيل الفئات عند انتهائها"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "هناك جلسة صارمة قيد التشغيل: تُفعَّل الاستثناءات الجديدة عند انتهائها"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "هناك جلسة صارمة قيد التشغيل: تخفيف الصرامة الافتراضية ينتظر حتى انتهائها"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "هناك جلسة صارمة قيد التشغيل: اختصار مهلة التروّي يضعف البوابة"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "هناك جلسة صارمة قيد التشغيل: إلغاء العبارة المكتوبة يضعف البوابة"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "هناك جلسة صارمة قيد التشغيل: رفع معدل كسب الرصيد يموّل مزيدًا من الهروب"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "هناك جلسة صارمة قيد التشغيل: رفع حدّ الرصيد يموّل مزيدًا من الهروب"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "هناك جلسة صارمة قيد التشغيل: اختصار فترات الإيقاف يخفض تكلفتها"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "هناك جلسة صارمة قيد التشغيل: اختصار فترات إلغاء القفل يخفض تكلفتها"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "هناك جلسة صارمة قيد التشغيل: لا يمكن إضعاف مدخل الجدول الزمني الخاص بها حتى تنتهي"
+  }
+}

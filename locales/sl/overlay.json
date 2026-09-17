@@ -1,0 +1,163 @@
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "Zaklenjeno - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Preverjam razpoložljive delovne zavihke..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Izberi odprt zavihek in nadaljuj svoje delo."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Tvoja seja osredotočenosti ni na voljo. Poskusi znova ali znova naloži to stran."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Delovnega zavihka ni bilo mogoče naložiti. Poskusi znova ali znova naloži to stran."
+  },
+  "overlay_target_reconnect": {
+    "message": "Znova naloži to stran, da se povežeš s Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "Stran, ki je poslala zahtevo, se je spremenila. Znova naloži stran."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock ni dosegljiv. Poskusi znova."
+  },
+  "overlay_picker_heading": {
+    "message": "Izberi delovni zavihek"
+  },
+  "overlay_picker_cancel": {
+    "message": "Prekliči"
+  },
+  "overlay_picker_search_label": {
+    "message": "Iskanje po delovnih zavihkih"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Išči po naslovu ali spletnem mestu"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Počisti iskanje"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Osveži zavihke"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Razpoložljivi delovni zavihki"
+  },
+  "overlay_picker_finding": {
+    "message": "Iščem razpoložljive zavihke..."
+  },
+  "overlay_picker_searching": {
+    "message": "Preiskujem delovne zavihke..."
+  },
+  "overlay_picker_saving": {
+    "message": "Shranjujem delovni zavihek..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Ni razpoložljivih delovnih zavihkov. Odpri spletno mesto, ki ga ta seja dovoli, in nato osveži zavihke."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Ni ujemajočih zavihkov. Poskusi drugo iskanje ali počisti iskanje."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Delovnih zavihkov ni bilo mogoče naložiti. Poskusi znova."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ od $COUNT$ zavihka",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ od $COUNT$ zavihkov",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_picker_count_two": {
+    "message": "$MATCHES$ od $COUNT$ zavihkov",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_few": {
+    "message": "$MATCHES$ od $COUNT$ zavihkov",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

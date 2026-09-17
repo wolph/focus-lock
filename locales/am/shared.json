@@ -1,0 +1,627 @@
+{
+  "shared_until_stopped": {
+    "message": "እስኪያቆሙ ድረስ"
+  },
+  "shared_preset_short": {
+    "message": "አጭር"
+  },
+  "shared_preset_focus": {
+    "message": "ትኩረት"
+  },
+  "shared_preset_deep_work": {
+    "message": "ጥልቅ ስራ"
+  },
+  "shared_deep_work_note": {
+    "message": "ይህ ምርጫ ነው፣ ሳይንስ አይደለም፦ ራስ-ሰር እረፍቶች የሌሉት አንድ ረጅም ተከታታይ ብሎክ።"
+  },
+  "shared_timed_hint_cycles": {
+    "message": "በጠቅላላው $MINUTES$ ደቂቃ፣ ከ$FOCUS$ ደቂ የትኩረት ብሎኮች ጋር",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ ደቂ ተከታታይ ትኩረት",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "እስኪያቆሙ ድረስ ጀምር"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "በእጅ እስኪከፈት ድረስ ቆልፍ"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "እስኪያቆሙ ድረስ ክፍለ ጊዜዎች ተለዋዋጭ ወይም መጓተትን ይይዛሉ፣ የትኩረትና እረፍት ዑደቶችን መጠቀም አይችሉም።"
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "ጠንካራ ቁልፍ ለእስኪያቆሙ ድረስ ክፍለ ጊዜ አይገኝም፦ ያለ ሰዓት ቆጣሪና በእጅ መጨረሻ፣ ክፍለ ጊዜው ፈጽሞ አያልቅም ነበር።"
+  },
+  "shared_end_session": {
+    "message": "ክፍለ ጊዜውን ጨርስ"
+  },
+  "shared_unlock": {
+    "message": "ክፈት"
+  },
+  "shared_gate_wait_none": {
+    "message": "መጠበቅ የለም"
+  },
+  "shared_gate_wait": {
+    "message": "የ$SECONDS$-ሰከንድ መጠበቅ",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ እና የተተየበ ሐረግ",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "በ$LABEL$ እስኪጨርሱ ድረስ ይሠራል። ዑደቶች ጠፍተዋል።",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "እስኪከፍቱት ድረስ ይሠራል፦ $REQUIREMENT$፣ ከዚያ $LABEL$። ዑደቶች ጠፍተዋል።",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "በእስኪያቆሙ ድረስ የተገደዱ ዑደቶች"
+  },
+  "shared_mode_blacklist": {
+    "message": "የተመረጡ ገፆችን አግድ"
+  },
+  "shared_mode_whitelist": {
+    "message": "የተመረጡ ገፆችን ብቻ ፍቀድ"
+  },
+  "shared_focus_time_label": {
+    "message": "የትኩረት ጊዜ"
+  },
+  "shared_clock_focus_phase": {
+    "message": "የትኩረት ደረጃ"
+  },
+  "shared_clock_total_session": {
+    "message": "ጠቅላላ ክፍለ ጊዜ"
+  },
+  "shared_clock_pause": {
+    "message": "ማቆሚያ"
+  },
+  "shared_clock_break": {
+    "message": "እረፍት"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock እየጀመረ ነው። የመረጡትን ህጎች እየተገበረ ነው።"
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "ክፍለ ጊዜው አልቋል። የአሳሽ ማጽዳትን በመጨረስ ላይ።"
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock መጀመር አልቻለም። የአሳሽ ማጽዳትን በመጨረስ ላይ።"
+  },
+  "shared_popup_transition_error": {
+    "message": "ያልተጠናቀቀ መጀመሪያ በኋላ ማጽዳትን Focus Lock መጨረስ አልቻለም።"
+  },
+  "shared_popup_closure_error": {
+    "message": "የአሳሽ ማጽዳትን Focus Lock መጨረስ አልቻለም።"
+  },
+  "shared_retry_cleanup": {
+    "message": "ማጽዳትን ደግመው ይሞክሩ"
+  },
+  "shared_end_failed": {
+    "message": "ክፍለ ጊዜውን መጨረስ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "shared_retry_failed": {
+    "message": "ማጽዳትን ደግመው መሞከር አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "shared_action_failed": {
+    "message": "ያንን ተግባር መጠየቅ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "shared_return_to_work_failed": {
+    "message": "ወደ ስራ መመለስ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "shared_data_clear_pending": {
+    "message": "የFocus Lock መረጃን በመሰረዝ ላይ። ማጽዳትን በመጨረስ ላይ።"
+  },
+  "shared_data_clear_error": {
+    "message": "መረጃን መሰረዝ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "shared_schedule_window_label": {
+    "message": "ጊዜው እስኪያልቅ ድረስ"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "በመርሃ ግብር ተጀምሮ እስኪያቆሙ ድረስ ይሠራል፦ ለተለዋዋጭ ክፍለ ጊዜውን ጨርስ፣ ለመጓተት በማሰላሰያ በሩ በኩል ክፈት። ዑደቶች ጠፍተዋል።"
+  },
+  "shared_schedule_started_title": {
+    "message": "የትኩረት መርሃ ግብር ተጀምሯል"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "እስኪያቆሙ ድረስ ገባሪ ነው።"
+  },
+  "shared_settings_indefinite": {
+    "message": "እስኪያቆሙ ድረስ ክፍለ ጊዜ ገባሪ ነው። ለማየት ወይም ለመጨረስ የመሳሪያ አሞሌ ብቅ-ባዩን ይጠቀሙ።"
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock እየጀመረ ነው። የድረ ገፅ መዳረሻን በማረጋገጥ ላይና ህጎችዎን በመተግበር ላይ።"
+  },
+  "shared_settings_error": {
+    "message": "የአሳሽ ማጽዳትን Focus Lock መጨረስ አልቻለም። ብቅ-ባዩን ከፍተው ደግመው ይሞክሩ።"
+  },
+  "shared_settings_session_disclosure": {
+    "message": "የመሳሪያ አሞሌ ብቅ-ባይ የክፍለ ጊዜ መቆጣጠሪያዎችን ይይዛል። ገባሪው ክፍለ ጊዜ ሲጀመር የያዛቸውን ህጎች ይይዛል።"
+  },
+  "shared_settings_timed": {
+    "message": "የተቀነባበረ ክፍለ ጊዜ እስከ $TIME$ ድረስ ገባሪ ነው። በራሱ ያልቃል። ለቀጥታ ሁኔታ የመሳሪያ አሞሌ ብቅ-ባዩን ይጠቀሙ።",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "ተጠናቋል"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "በእጅ ተጠናቋል"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "ቀድሞ አልቋል"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "አልቋል፦ የድረ ገፅ መዳረሻ ጠፍቷል"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "አልቋል፦ የእገዳ ማዋቀር አልተሳካም"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "አልቋል፦ የሰዓት ቆጣሪ ማዋቀር አልተሳካም"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "አልቋል፦ የገፅ አፈጻጸም አልተሳካም"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "አልቋል፦ መልሶ ማግኘት አልተሳካም"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ሰ $MINUTES$ ደ",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ ደ",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ ደቂ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ ደቂ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "ክፍለ ጊዜውን በማዘመን ላይ"
+  },
+  "shared_less_than_a_minute": {
+    "message": "ከአንድ ደቂቃ በታች"
+  },
+  "shared_focus_remaining_break": {
+    "message": "እስከ እረፍትዎ ድረስ $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "በዚህ ክፍለ ጊዜ ውስጥ $DURATION$ ቀርቷል",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "ወጪው ከክሬዲት ገደብ ይበልጣል"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "ትኩረት በሚደረግበት ጊዜ የክሬዲት ማግኛ ይቀጥላል"
+  },
+  "shared_credit_off": {
+    "message": "የክሬዲት ማግኛ ጠፍቷል"
+  },
+  "shared_not_enough_time": {
+    "message": "በዚህ የትኩረት ብሎክ ውስጥ በቂ ጊዜ የለም"
+  },
+  "shared_ready_in": {
+    "message": "በ$CLOCK$ ውስጥ ዝግጁ",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$፦ $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "በ$CATEGORY$ ታግዷል",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "በማገጃ ዝርዝርዎ ታግዷል"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "በፍቃድ ዝርዝርዎ ውስጥ የለም"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "በዚህ ክፍለ ጊዜ ታግዷል"
+  },
+  "shared_verdict_allow_list": {
+    "message": "በፍቃድ ዝርዝርዎ ውስጥ ነው"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "ሁልጊዜም ተፈቅዷል"
+  },
+  "shared_verdict_unlock": {
+    "message": "ለጊዜው ተከፍቷል"
+  },
+  "shared_verdict_excluded": {
+    "message": "ከተመረጠው ምድብ ተለይቷል"
+  },
+  "shared_verdict_no_session": {
+    "message": "ገባሪ የትኩረት ክፍለ ጊዜ የለም"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "በዚህ ክፍለ ጊዜ ተፈቅዷል"
+  },
+  "shared_category_social": {
+    "message": "ማህበራዊ ሚዲያ"
+  },
+  "shared_category_video": {
+    "message": "ቪዲዮና ዥረት"
+  },
+  "shared_category_news": {
+    "message": "ዜናዎች"
+  },
+  "shared_category_mail": {
+    "message": "ኢሜይል"
+  },
+  "shared_category_shopping": {
+    "message": "ግብይት"
+  },
+  "shared_category_gaming": {
+    "message": "ጨዋታ"
+  },
+  "shared_category_forums": {
+    "message": "መድረኮችና መሰላቸት"
+  },
+  "shared_synced_settings": {
+    "message": "ቅንብሮች"
+  },
+  "shared_synced_lists": {
+    "message": "የማገጃና ፍቃድ ዝርዝሮች"
+  },
+  "shared_synced_credit": {
+    "message": "የገፅ መዳረሻ ክሬዲት"
+  },
+  "shared_synced_streaks": {
+    "message": "ተከታታይነቶች"
+  },
+  "shared_synced_aggregates": {
+    "message": "በዶሜይን-ደረጃ የታገዱ ሙከራ ጠቅላላዎች"
+  },
+  "shared_local_full_urls": {
+    "message": "ሙሉ URLዎች"
+  },
+  "shared_local_intentions": {
+    "message": "የትኩረት ዓላማዎች"
+  },
+  "shared_local_events": {
+    "message": "ዝርዝር የክፍለ ጊዜ ክስተቶች"
+  },
+  "shared_local_runtime": {
+    "message": "ገባሪ የሩንታይም ክፍለ ጊዜ"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "ከቀድሞ ስሪት የተወሰነ ተመሳሳይ የተደረገ መረጃ ማንበብ አልተቻለም እና ዳግም ተጀምሯል።"
+  },
+  "shared_all_data_clear_running": {
+    "message": "ሁሉንም መረጃ ከመሰረዝዎ በፊት ገባሪውን ክፍለ ጊዜ ይጨርሱ።"
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "የምርት አሰሳ"
+  },
+  "shared_nav_overview": {
+    "message": "አጠቃላይ እይታ"
+  },
+  "shared_nav_settings": {
+    "message": "ቅንብሮች"
+  },
+  "shared_section_blocking": {
+    "message": "እገዳ"
+  },
+  "shared_section_schedule": {
+    "message": "መርሃ ግብር"
+  },
+  "shared_section_behavior": {
+    "message": "የክፍለ ጊዜ ባህሪ"
+  },
+  "shared_section_budget": {
+    "message": "የገፅ መዳረሻ ክሬዲት"
+  },
+  "shared_section_notifications": {
+    "message": "ማሳወቂያዎች"
+  },
+  "shared_section_privacy": {
+    "message": "ግላዊነትና መረጃ"
+  },
+  "shared_theme_auto": {
+    "message": "ራስ-ሰር"
+  },
+  "shared_theme_light": {
+    "message": "ብሩህ"
+  },
+  "shared_theme_dark": {
+    "message": "ጨለማ"
+  },
+  "shared_theme_button": {
+    "message": "ገጽታ፦ $CURRENT$። ወደ $NEXT$ ቀይር",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "ገጽታን ማስቀመጥ አልተቻለም። ገፁን ዳግም ጭነው ደግመው ይሞክሩ።"
+  },
+  "shared_host_search_label": {
+    "message": "የ$TITLE$ ገፆችን ፈልግ",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "ለፍለጋዎ የሚዛመድ $TITLE$ ገፅ የለም።",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "$SHOWN$ ከ$MATCHED$ ገፆች ታይተዋል። ዝርዝሩን ለማጥበብ ይፈልጉ።",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "$MATCHED$ ከ$TOTAL$ ገፆች ታይተዋል።",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "ሁሉም $TOTAL$ ገፆች ታይተዋል።",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "ክፍለ ጊዜውን ጨርስ"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock እየጀመረ ነው"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "የመረጡትን ህጎች እየተገበረ ነው።"
+  },
+  "shared_overlay_stopped_page": {
+    "message": "ይህ ገፅ አልተጫነም። ክፍለ ጊዜው ሲያልቅ በራሱ ይጫናል።"
+  },
+  "shared_overlay_next_step": {
+    "message": "ቀጣይ እርምጃዎ"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "ወደ ስራ ተመለስ"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "የስራ ትር ይምረጡ"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "የስራ ትር ቀይር"
+  },
+  "shared_overlay_access_summary": {
+    "message": "እረፍት ወይም የገፅ መዳረሻ ይፈልጋሉ?"
+  },
+  "shared_overlay_access_note": {
+    "message": "በማንኛውም ጊዜ መራቅ ይችላሉ። የገፅ መዳረሻ ክሬዲት ይጠቀማል።"
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "ጊዜ ማብቂያውን ችላ ብለህ ጨርስ"
+  },
+  "shared_overlay_transport_error": {
+    "message": "ይህን ተግባር Focus Lock ማዘመን አልቻለም። ደግመው ይሞክሩ።"
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ የገፅ መዳረሻ ክሬዲት",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "የአሁኑን ስራዎን ይቀጥሉ"
+  },
+  "shared_overlay_pause_action": {
+    "message": "ሁሉንም ገፆች ክፈት"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "ይህን ገፅ ክፈት"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - $COST$ ክሬዲት ያስከፍላል",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "እስከ $TIME$ ድረስ ተቆልፏል",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "የተናገሩት፦ $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "$HOST$ን ለ$CLOCK$ ክፈት",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "ትኩረት ማድረግዎን ይቀጥሉ"
+  },
+  "shared_gate_phrase_label": {
+    "message": "ለማረጋገጥ ይህን ይተይቡ፦"
+  },
+  "shared_gate_end_title": {
+    "message": "ይህን ክፍለ ጊዜ ጨርስ"
+  }
+}

@@ -578,5 +578,266 @@
   },
   "options_schedule_add": {
     "message": "ವೇಳಾಪಟ್ಟಿ ನಮೂದು ಸೇರಿಸಿ"
+  },
+  "options_sounds_heading": {
+    "message": "ಶಬ್ದಗಳು"
+  },
+  "options_master_volume": {
+    "message": "ಮಾಸ್ಟರ್ ವಾಲ್ಯೂಮ್"
+  },
+  "options_sound_session_complete": {
+    "message": "ಸೆಷನ್ ಪೂರ್ಣಗೊಂಡಿದೆ"
+  },
+  "options_sound_break_start": {
+    "message": "ವಿರಾಮ ಪ್ರಾರಂಭ"
+  },
+  "options_sound_break_end": {
+    "message": "ವಿರಾಮ ಅಂತ್ಯ"
+  },
+  "options_sound_schedule_start": {
+    "message": "ವೇಳಾಪಟ್ಟಿ ಸ್ವಯಂ-ಪ್ರಾರಂಭ"
+  },
+  "options_sound_preview_aria": {
+    "message": "$SOUND$ ಮುನ್ನೋಟ",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "ಪ್ಲೇ ಮಾಡಿ"
+  },
+  "options_sound_preview_error": {
+    "message": "ಶಬ್ದದ ಮುನ್ನೋಟ ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_sounds_notifications_heading": {
+    "message": "ಅಧಿಸೂಚನೆಗಳು"
+  },
+  "options_session_complete_notification": {
+    "message": "ಸೆಷನ್ ಪೂರ್ಣಗೊಂಡಾಗ ಸಿಸ್ಟಂ ಅಧಿಸೂಚನೆ ತೋರಿಸು"
+  },
+  "options_badge_heading": {
+    "message": "ಬ್ಯಾಡ್ಜ್"
+  },
+  "options_badge_countdown": {
+    "message": "ಟೂಲ್‌ಬಾರ್ ಐಕಾನ್‌ನಲ್ಲಿ ಉಳಿದ ಸಮಯ ತೋರಿಸು"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ"
+  },
+  "options_privacy_website_off_title": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಆಫ್ ಆಗಿದೆ"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "ನೀನು ಪ್ರವೇಶ ನೀಡುವವರೆಗೆ Focus Lock ವೆಬ್‌ಸೈಟ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸು"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಾಗಿದೆ, ಆದರೆ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯವಾಗಿಲ್ಲ"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome ಪ್ರವೇಶ ನೀಡಿತು, ಆದರೆ Focus Lock ತನ್ನ ಬ್ಲಾಕಿಂಗ್ ಸ್ಕ್ರಿಪ್ಟ್ ಅನ್ನು ನೋಂದಾಯಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+  },
+  "options_privacy_website_retry_action": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಮರುಪ್ರಯತ್ನಿಸಿ"
+  },
+  "options_privacy_website_on_title": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಂಡಿದೆ"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock ಸಾಮಾನ್ಯ ವೆಬ್‌ಸೈಟ್ ಪುಟಗಳಲ್ಲಿ ನಿನ್ನ ಸಕ್ರಿಯ ಬ್ಲಾಕಿಂಗ್ ನಿಯಮಗಳನ್ನು ಅನ್ವಯಿಸಬಹುದು."
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸುವುದೇ?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸುವಿಕೆ ದೃಢೀಕರಿಸಿ"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸಲಾಗಿದೆ."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "ಇದು ಈ ಸಾಧನದಿಂದ ಪೂರ್ಣ URLಗಳು, ಫೋಕಸ್ ಉದ್ದೇಶಗಳು, ಮತ್ತು ವಿವರವಾದ ಸೆಷನ್ ಘಟನೆಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ. ಇದು ಚಾಲನೆಯಲ್ಲಿರುವ ಸೆಷನ್ ಅನ್ನು ತೆರವುಗೊಳಿಸುವುದಿಲ್ಲ, ಅದು ತನ್ನ ಉದ್ದೇಶ ಮತ್ತು ಅದು ಬ್ಲಾಕ್ ಮಾಡುತ್ತಿರುವ ಪ್ರತಿ ಟ್ಯಾಬ್‌ನ ವಿಳಾಸವನ್ನು ಉಳಿಸಿಕೊಳ್ಳುತ್ತದೆ. ಸೆಷನ್ ಕೊನೆಗೊಳಿಸುವುದು ಉದ್ದೇಶವನ್ನು ತೆರವುಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಪ್ರತಿ ತೆರೆದ ವೆಬ್‌ಸೈಟ್ ಟ್ಯಾಬ್ ಅನ್ನು ತೆರವುಗೊಳಿಸುವ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆಯನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತದೆ, ಮತ್ತು ಈ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆ ಪೂರ್ಣಗೊಂಡಾಗ ಪ್ರತಿ ಸಂಗ್ರಹಿತ ವಿಳಾಸವನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "ಇದು ಈ ಸಾಧನದಿಂದ ಪೂರ್ಣ URLಗಳು, ಫೋಕಸ್ ಉದ್ದೇಶಗಳು, ವಿವರವಾದ ಸೆಷನ್ ಘಟನೆಗಳು, ಮತ್ತು ಸ್ಥಳೀಯ-ಮಾತ್ರ ಒಟ್ಟು ಅಂಕಿಅಂಶಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ. ಇದು ಚಾಲನೆಯಲ್ಲಿರುವ ಸೆಷನ್ ಅನ್ನು ತೆರವುಗೊಳಿಸುವುದಿಲ್ಲ, ಅದು ತನ್ನ ಉದ್ದೇಶ ಮತ್ತು ಅದು ಬ್ಲಾಕ್ ಮಾಡುತ್ತಿರುವ ಪ್ರತಿ ಟ್ಯಾಬ್‌ನ ವಿಳಾಸವನ್ನು ಉಳಿಸಿಕೊಳ್ಳುತ್ತದೆ. ಸೆಷನ್ ಕೊನೆಗೊಳಿಸುವುದು ಉದ್ದೇಶವನ್ನು ತೆರವುಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಪ್ರತಿ ತೆರೆದ ವೆಬ್‌ಸೈಟ್ ಟ್ಯಾಬ್ ಅನ್ನು ತೆರವುಗೊಳಿಸುವ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆಯನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತದೆ, ಮತ್ತು ಈ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆ ಪೂರ್ಣಗೊಂಡಾಗ ಪ್ರತಿ ಸಂಗ್ರಹಿತ ವಿಳಾಸವನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "ರಿಮೋಟ್ Sync ಡೇಟಾ ಅಳಿಸುವುದೇ?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "ರಿಮೋಟ್ Sync ಡೇಟಾ ಅಳಿಸುವಿಕೆ ದೃಢೀಕರಿಸಿ"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "ರಿಮೋಟ್ Chrome Sync ಡೇಟಾ ಅಳಿಸಲಾಗಿದೆ."
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "ಇದು Chrome Sync ನಿಂದ ರಿಮೋಟ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಬ್ಲಾಕ್ ಮತ್ತು ಅನುಮತಿ ಪಟ್ಟಿಗಳು, ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್, ಸ್ಟ್ರೀಕ್‌ಗಳು, ಮತ್ತು ಡೊಮೇನ್-ಮಟ್ಟದ ಬ್ಲಾಕ್-ಪ್ರಯತ್ನ ಒಟ್ಟು ಮೊತ್ತಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ. ಸ್ಥಳೀಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಅಂಕಿಅಂಶಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಉಳಿಯುತ್ತವೆ."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಅಳಿಸುವುದೇ?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಅಳಿಸುವಿಕೆ ದೃಢೀಕರಿಸಿ"
+  },
+  "options_privacy_all_deleted": {
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಅಳಿಸಲಾಗಿದೆ."
+  },
+  "options_privacy_all_body_intro": {
+    "message": "ಇದು ಈ ಸಾಧನದಲ್ಲಿರುವ ಪ್ರತಿಯೊಂದು Focus Lock ಡೇಟಾ ಮತ್ತು Chrome Sync ನಲ್ಲಿ ಉಳಿದಿರುವ ಯಾವುದೇ Focus Lock ಪ್ರತಿಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ:"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "ಯಾವುದೇ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿಲ್ಲದಿರುವಾಗ ಮಾತ್ರ ಎಲ್ಲವನ್ನೂ ಅಳಿಸುವುದು ಲಭ್ಯ. ನಂತರ Focus Lock ಸೆಟಪ್‌ಗೆ ಹಿಂತಿರುಗುತ್ತದೆ."
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "ರಿಮೋಟ್ Chrome Sync ಡೇಟಾವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_privacy_error_all_clear": {
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync ನಿನ್ನ ಇತ್ತೀಚಿನ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿನ್ನ ಸ್ಥಳೀಯ ಉಳಿತಾಯ ಸುರಕ್ಷಿತವಾಗಿದೆ."
+  },
+  "options_privacy_error_request": {
+    "message": "ವಿನಂತಿಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನವೀಕರಿಸಲಾಗಿದೆ."
+  },
+  "options_privacy_website_access_denied": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಾಗಿಲ್ಲ."
+  },
+  "options_privacy_error_website_access": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಂಡಿದೆ."
+  },
+  "options_privacy_error_export": {
+    "message": "ಈವೆಂಟ್ ಲಾಗ್ ಅನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+  },
+  "options_privacy_error_export_retry": {
+    "message": "ಈವೆಂಟ್ ಲಾಗ್ ಅನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Chrome ಅನುಮತಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome ಅನುಮತಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ತೆರೆದಿವೆ."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Chrome ಅನುಮತಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆ"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "Chrome ಸಾಧನಗಳಾದ್ಯಂತ Focus Lock ಡೇಟಾವನ್ನು ಸಿಂಕ್ ಮಾಡು"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync ಸಕ್ರಿಯಗೊಂಡಿದೆ."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ."
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync ಇನ್ನೂ ನಿನ್ನ ಇತ್ತೀಚಿನ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸುತ್ತಿದೆ."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync ಆನ್ ಆಗಿದೆ."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync ಆಫ್ ಆಗಿದೆ."
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "Chrome Sync ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ."
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome Sync ಸಕ್ರಿಯಗೊಳಿಸುವಿಕೆ ಮರುಪ್ರಯತ್ನಿಸಿ"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Chrome Sync ಮರುಪ್ರಯತ್ನಿಸಿ"
+  },
+  "options_privacy_scope_synced": {
+    "message": "ಸಿಂಕ್ ಆಗಿದೆ"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "ಸ್ಥಳೀಯ ಮಾತ್ರ"
+  },
+  "options_privacy_developer_note": {
+    "message": "Focus Lock ಡೆವಲಪರ್‌ಗೆ ಏನೂ ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ."
+  },
+  "options_privacy_local_log_heading": {
+    "message": "ಸ್ಥಳೀಯ ಈವೆಂಟ್ ಲಾಗ್"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "ವಿವರವಾದ ಸ್ಥಳೀಯ ಲಾಗ್ ಅನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡು ಅಥವಾ ಸ್ಥಳೀಯ ಬ್ರೌಸಿಂಗ್ ಮತ್ತು ಸೆಷನ್ ಇತಿಹಾಸವನ್ನು ಅಳಿಸು."
+  },
+  "options_privacy_export_local_log": {
+    "message": "ಸ್ಥಳೀಯ ಈವೆಂಟ್ ಲಾಗ್ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಿ"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "ಸ್ಥಳೀಯ ಈವೆಂಟ್ ಲಾಗ್ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಆಗಿದೆ."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸಿ"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "ರಿಮೋಟ್ Sync ಡೇಟಾ"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "ಈ ಸಾಧನವನ್ನು ಬದಲಾಯಿಸದೆ Chrome Sync ನಲ್ಲಿ ಉಳಿದಿರುವ Focus Lock ಪ್ರತಿಗಳನ್ನು ಅಳಿಸು."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "ರಿಮೋಟ್ Sync ಡೇಟಾ ಅಳಿಸಿ"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "ಈ ಸಾಧನದಲ್ಲಿರುವ ಪ್ರತಿಯೊಂದು Focus Lock ದಾಖಲೆ ಮತ್ತು Chrome Sync ನಲ್ಲಿ ಉಳಿದಿರುವ ಯಾವುದೇ Focus Lock ಪ್ರತಿಗಳನ್ನು ಅಳಿಸಿ, ನಂತರ ಸೆಟಪ್‌ನಿಂದ ಮತ್ತೆ ಪ್ರಾರಂಭಿಸು. ಯಾವುದೇ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿಲ್ಲದಿರುವಾಗ ಮಾತ್ರ ಲಭ್ಯ."
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಅಳಿಸುವಿಕೆಯನ್ನು ಪುನರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ."
+  },
+  "options_privacy_retry_local_history": {
+    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸುವಿಕೆ ಮರುಪ್ರಯತ್ನಿಸಿ"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "ರಿಮೋಟ್ Sync ಅಳಿಸುವಿಕೆ ಮರುಪ್ರಯತ್ನಿಸಿ"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "ಎಲ್ಲಾ ಡೇಟಾ ಅಳಿಸುವಿಕೆ ಮರುಪ್ರಯತ್ನಿಸಿ"
+  },
+  "options_error_load": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lock ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_error_refresh_privacy": {
+    "message": "ಗೌಪ್ಯತಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+  },
+  "options_error_website_blocking": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_error_change_sync": {
+    "message": "Chrome Sync ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome Sync ಮರುಪ್ರಯತ್ನಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_error_save_settings": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+  },
+  "options_error_save_lists": {
+    "message": "ಪಟ್ಟಿಗಳನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
   }
 }

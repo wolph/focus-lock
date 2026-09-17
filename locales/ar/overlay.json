@@ -1,0 +1,189 @@
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "مقفل - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "جارٍ التحقق من علامات تبويب العمل المتاحة..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "اختر علامة تبويب مفتوحة لمتابعة مهمتك."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "جلسة تركيزك غير متاحة. أعد المحاولة أو أعد تحميل هذه الصفحة."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "تعذّر تحميل علامة تبويب العمل. أعد المحاولة أو أعد تحميل هذه الصفحة."
+  },
+  "overlay_target_reconnect": {
+    "message": "أعد تحميل هذه الصفحة لإعادة الاتصال بـ Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "تغيّرت الصفحة الطالبة. أعد تحميل الصفحة."
+  },
+  "overlay_target_transport_error": {
+    "message": "تعذّر الوصول إلى Focus Lock. أعد المحاولة."
+  },
+  "overlay_picker_heading": {
+    "message": "اختر علامة تبويب للعمل"
+  },
+  "overlay_picker_cancel": {
+    "message": "إلغاء"
+  },
+  "overlay_picker_search_label": {
+    "message": "ابحث في علامات تبويب العمل"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "ابحث بالعنوان أو الموقع"
+  },
+  "overlay_picker_clear_search": {
+    "message": "مسح البحث"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "تحديث علامات التبويب"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "علامات تبويب العمل المتاحة"
+  },
+  "overlay_picker_finding": {
+    "message": "جارٍ البحث عن علامات التبويب المتاحة..."
+  },
+  "overlay_picker_searching": {
+    "message": "جارٍ البحث في علامات تبويب العمل..."
+  },
+  "overlay_picker_saving": {
+    "message": "جارٍ حفظ علامة تبويب العمل..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "لا توجد علامات تبويب عمل متاحة. افتح موقعًا تسمح به هذه الجلسة، ثم حدّث علامات التبويب."
+  },
+  "overlay_picker_no_matches": {
+    "message": "لا توجد علامات تبويب مطابقة. جرّب بحثًا آخر أو امسح البحث."
+  },
+  "overlay_picker_load_failed": {
+    "message": "تعذّر تحميل علامات تبويب العمل. أعد المحاولة."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ من $COUNT$ علامة تبويب",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ من $COUNT$ علامة تبويب",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_picker_count_zero": {
+    "message": "$MATCHES$ من $COUNT$ علامة تبويب",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_two": {
+    "message": "$MATCHES$ من $COUNT$ علامتي تبويب",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_few": {
+    "message": "$MATCHES$ من $COUNT$ علامات تبويب",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_many": {
+    "message": "$MATCHES$ من $COUNT$ علامة تبويب",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

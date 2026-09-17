@@ -1,0 +1,317 @@
+{
+  "stats_document_title": {
+    "message": "የFocus Lock ስታትስቲክስ"
+  },
+  "stats_page_title": {
+    "message": "የትኩረት መዝገብዎ"
+  },
+  "stats_loading": {
+    "message": "ስታትስቲክስዎ እየተጫነ ነው።"
+  },
+  "stats_load_error": {
+    "message": "ስታትስቲክስ መጫን አልተቻለም። ደግመው ለመሞከር ዳግም ይጫኑ።"
+  },
+  "stats_partial_error_both": {
+    "message": "የሰዓት ሙከራዎችና የገፅ መዳረሻ ክሬዲት ቅንብሮች አይገኙም።"
+  },
+  "stats_partial_error_attempts": {
+    "message": "የሰዓት ሙከራዎች አይገኙም።"
+  },
+  "stats_partial_error_economy": {
+    "message": "የገፅ መዳረሻ ክሬዲት ቅንብሮች አይገኙም።"
+  },
+  "stats_scope_synced": {
+    "message": "ከዚህ Chrome መለያ የተመሳሰሉ ጠቅላላዎች። በአካባቢ-ብቻ ፓነሎች ምልክት ተደርጎባቸዋል።"
+  },
+  "stats_scope_local": {
+    "message": "ከዚህ መሳሪያ ጠቅላላዎች። የFocus Lock ስታትስቲክስ አይመሳሰልም።"
+  },
+  "stats_scope_checking": {
+    "message": "እነዚህ ጠቅላላዎች የተመሳሰሉ መሆናቸውን በማረጋገጥ ላይ።"
+  },
+  "stats_scope_unavailable": {
+    "message": "የስታትስቲክስ ወሰን አይገኝም። ጠቅላላዎቹ የተመሳሰለ መረጃ ሊይዙ ይችላሉ። የሰዓት ሙከራዎችና የቅርብ ጊዜ ክፍለ ጊዜዎች ከዚህ መሳሪያ ናቸው።"
+  },
+  "stats_scope_retry": {
+    "message": "የወሰን ማረጋገጫን ደግመው ይሞክሩ"
+  },
+  "stats_empty": {
+    "message": "ስታትስቲክስ ከመጀመሪያ ክፍለ ጊዜዎ በኋላ ይታያል።"
+  },
+  "stats_tile_focus_today": {
+    "message": "የዛሬ ትኩረት"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "ባለፉት 7 ቀናት ትኩረት"
+  },
+  "stats_tile_attempts_today": {
+    "message": "ዛሬ የታገዱ ሙከራዎች"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "ዛሬ የተነሱ የበር ጥያቄዎች"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "ዛሬ የወጣ የገፅ መዳረሻ ክሬዲት"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "ሁሉም ገፆች $ALL_SITES$፣ አንድ ገፅ $ONE_SITE$፣ $EARNED$ ተገኝቷል",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ ተገኝቷል",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "ተከታታይነት"
+  },
+  "stats_streak_empty": {
+    "message": "ተከታታይነትዎ ከመጀመሪያው የትኩረት ቀንዎ ጋር ይጀምራል።"
+  },
+  "stats_streak_unit_one": {
+    "message": "ቀን"
+  },
+  "stats_streak_unit_other": {
+    "message": "ቀናት"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ የቅዝቃዜ ማስመሪያ ተከማችቷል",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ የቅዝቃዜ ማስመሪያዎች ተከማችተዋል",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "የተከታታይነት ቅዝቃዜ፦ አንድ የዘለለ ቀን፣ ተሸፍኗል"
+  },
+  "stats_streak_active_days_one": {
+    "message": "በዚህ ወር ($MONTH$) $COUNT$ ገባሪ ቀን",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "በዚህ ወር ($MONTH$) $COUNT$ ገባሪ ቀናት",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "በ$MONTH$ ውስጥ ገባሪ ቀናት፦ $DAYS$።",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "በ$MONTH$ ውስጥ ገባሪ ቀናት የሉም።",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "ትኩረት፣ ያለፉ 14 ቀናት"
+  },
+  "stats_chart_focus_empty": {
+    "message": "የትኩረት ደቂቃዎች ከመጀመሪያ ክፍለ ጊዜዎ በኋላ ይታያሉ።"
+  },
+  "stats_chart_attempts_heading": {
+    "message": "የታገዱ ሙከራዎች፣ ያለፉ 14 ቀናት"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "አንድ ክፍለ ጊዜ አንዱን ከያዘ በኋላ የታገዱ ሙከራዎች እዚህ ይታያሉ።"
+  },
+  "stats_chart_sites_heading": {
+    "message": "በብዛት የታገዱ ገፆች፣ ያለፉ 30 ቀናት"
+  },
+  "stats_chart_sites_empty": {
+    "message": "እስካሁን ምንም አልታገደም። ያ ጥሩ መጀመሪያ ነው።"
+  },
+  "stats_chart_hours_heading": {
+    "message": "በሰዓት የተከፋፈሉ ሙከራዎች፣ ይህ መሳሪያ ብቻ"
+  },
+  "stats_chart_other_site": {
+    "message": "ሌሎች"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ደ",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ ታግዷል",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ ታግደዋል",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "የአምድ ቻርት"
+  },
+  "stats_chart_name_hbar": {
+    "message": "አግድም የአምድ ቻርት"
+  },
+  "stats_chart_description_bar": {
+    "message": "የአምድ ቻርት። በመረጃ ነጥቦች መካከል ለመንቀሳቀስ የቁልፍ ሰሌዳን ይጠቀሙ፣ ወይም ለተመሳሳይ እሴቶች እንደ ሠንጠረዥ አሳይ ይክፈቱ።"
+  },
+  "stats_chart_description_hbar": {
+    "message": "አግድም የአምድ ቻርት። በመረጃ ነጥቦች መካከል ለመንቀሳቀስ የቁልፍ ሰሌዳን ይጠቀሙ፣ ወይም ለተመሳሳይ እሴቶች እንደ ሠንጠረዥ አሳይ ይክፈቱ።"
+  },
+  "stats_chart_empty_default": {
+    "message": "እስካሁን መረጃ የለም።"
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$፦ $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "እንደ ሠንጠረዥ አሳይ"
+  },
+  "stats_chart_table_category": {
+    "message": "ምድብ"
+  },
+  "stats_chart_table_value": {
+    "message": "እሴት"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-ሰዓት የታገዱ-ሙከራ የሙቀት መስመር"
+  },
+  "stats_sessions_heading": {
+    "message": "በዚህ መሳሪያ ላይ የቅርብ ጊዜ ክፍለ ጊዜዎች"
+  },
+  "stats_sessions_empty": {
+    "message": "የመጀመሪያ ክፍለ ጊዜዎ እዚህ ይታያል።"
+  },
+  "stats_sessions_col_date": {
+    "message": "ቀን"
+  },
+  "stats_sessions_col_start": {
+    "message": "መጀመሪያ"
+  },
+  "stats_sessions_col_planned": {
+    "message": "የታቀደ"
+  },
+  "stats_sessions_col_focused": {
+    "message": "ትኩረት የተደረገበት"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "ሁሉም ገፆች"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "አንድ ገፅ"
+  },
+  "stats_sessions_col_intention": {
+    "message": "ዓላማ"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "ውጤት"
+  },
+  "stats_sessions_col_source": {
+    "message": "ምንጭ"
+  },
+  "stats_session_no_intention": {
+    "message": "ዓላማ የለም"
+  },
+  "stats_session_article_label": {
+    "message": "ክፍለ ጊዜ፦ $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "በእጅ"
+  },
+  "stats_session_source_schedule": {
+    "message": "መርሃ ግብር"
+  },
+  "stats_session_source_scheduled": {
+    "message": "የተመደበ"
+  },
+  "stats_outcome_completed": {
+    "message": "ተጠናቋል"
+  },
+  "stats_outcome_ended_early": {
+    "message": "ቀድሞ አልቋል"
+  },
+  "stats_outcome_running": {
+    "message": "እየሰራ ነው"
+  }
+}

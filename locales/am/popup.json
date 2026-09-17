@@ -1,0 +1,630 @@
+{
+  "popup_next_schedule": {
+    "message": "ቀጣይ፦ $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "ቅንብሮች"
+  },
+  "popup_open_settings_failed": {
+    "message": "ቅንብሮችን መክፈት አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_settings_load_failed": {
+    "message": "የክፍለ ጊዜ ቅንብሮችን መጫን አልተቻለም። ደግመው ለመሞከር ብቅ-ባዩን ዳግም ይጫኑ። ነባሪዎች ታይተዋል።"
+  },
+  "popup_open_setup_failed": {
+    "message": "ማዋቀሩን መክፈት አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_setup_required_heading": {
+    "message": "Focus Lock ማዋቀርን ይጨርሱ"
+  },
+  "popup_setup_required_body": {
+    "message": "ክፍለ ጊዜ ከመጀመርዎ በፊት የመነሻ ዝርዝሮችዎን፣ የድረ ገፅ መዳረሻን፣ እና የማከማቻ ሁነታን ይምረጡ።"
+  },
+  "popup_open_setup_button": {
+    "message": "ማዋቀርን ክፈት"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "የድረ ገፅ እገዳን ማረጋገጥ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_blocking_enable_failed": {
+    "message": "የድረ ገፅ እገዳን ማንቃት አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_blocking_off_heading": {
+    "message": "የድረ ገፅ እገዳ ጠፍቷል"
+  },
+  "popup_blocking_off_body": {
+    "message": "Chrome የድረ ገፅ መዳረሻ ፈቅዶ እገዳ እስከሚነቃ ድረስ Focus Lock ክፍለ ጊዜ መጀመር አይችልም።"
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome የድረ ገፅ መዳረሻ አልፈቀደም። የድረ ገፅ እገዳ አሁንም ጠፍቷል።"
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "የድረ ገፅ መዳረሻ ተፈቅዷል፣ ነገር ግን Focus Lock እገዳን ማንቃት አልቻለም። ማዋቀሩን ደግመው ይሞክሩ ወይም ተጨማሪውን ዳግም ይጫኑ።"
+  },
+  "popup_enable_blocking_button": {
+    "message": "የድረ ገፅ እገዳን ያንቁ"
+  },
+  "popup_retry_button": {
+    "message": "ደግመው ይሞክሩ"
+  },
+  "popup_notice_access_revoked": {
+    "message": "የድረ ገፅ መዳረሻ ስለተወገደ ክፍለ ጊዜዎ አልቋል።"
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Focus Lock የድረ ገፅ እገዳን ማንቃት ስላልቻለ ክፍለ ጊዜዎ አልቋል።"
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "ይህን ማሳወቂያ ማንሳት አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_dismiss_notice_label": {
+    "message": "የድረ ገፅ መዳረሻ ማሳወቂያን አንሳ"
+  },
+  "popup_dismiss_button": {
+    "message": "አንሳ"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lockን ዳግም ማስጀመር አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock መጀመር አልቻለም"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "ምክንያቱን ማንበብ አልተቻለም።"
+  },
+  "popup_reset_runtime_button": {
+    "message": "የአካባቢ ሩንታይምን ዳግም አስጀምር"
+  },
+  "popup_reset_runtime_note": {
+    "message": "ቅንብሮችዎን፣ ዝርዝሮችዎን፣ እና ስታትስቲክሶችዎን ይይዛል። የአሁኑን የክፍለ ጊዜ ሁኔታ ያጸዳል።"
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "ሁሉንም ሰርዞ እንደገና ጀምር"
+  },
+  "popup_keep_data_button": {
+    "message": "መረጃዬን አቆይ"
+  },
+  "popup_delete_all_button": {
+    "message": "ሁሉንም የFocus Lock መረጃ ሰርዝ"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "የማዋቀር ሁኔታ አይገኝም። ደግመው ለመሞከር Focus Lockን ዳግም ይጫኑ።"
+  },
+  "popup_snapshot_unavailable": {
+    "message": "የትኩረት ሁኔታ አይገኝም"
+  },
+  "popup_action_in_progress": {
+    "message": "ተግባር በሂደት ላይ ነው"
+  },
+  "popup_active_site_checking": {
+    "message": "ገባሪውን ገፅ በማረጋገጥ ላይ"
+  },
+  "popup_active_site_unsupported": {
+    "message": "ለመክፈት መደበኛ ገፅ ይክፈቱ"
+  },
+  "popup_active_site_unknown": {
+    "message": "ገባሪውን ገፅ መለየት አልተቻለም"
+  },
+  "popup_active_site_error": {
+    "message": "ገባሪውን ገፅ መለየት አልተቻለም።"
+  },
+  "popup_resume_now": {
+    "message": "አሁን ቀጥል"
+  },
+  "popup_start_next_focus_early": {
+    "message": "ቀጣዩን ትኩረት ቀድመው ጀምር"
+  },
+  "popup_unlock_this_site": {
+    "message": "ይህን ገፅ ክፈት"
+  },
+  "popup_unlock_all_sites": {
+    "message": "ሁሉንም ገፆች ክፈት"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ መዳረሻ፣ $CREDIT$ ክሬዲት",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ መዳረሻ፣ $CREDIT$ ክሬዲት - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "የስራ ትር ምረጥ"
+  },
+  "popup_change_work_tab_button": {
+    "message": "የስራ ትር ቀይር"
+  },
+  "popup_session_actions_summary": {
+    "message": "የክፍለ ጊዜ ተግባራት"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ የገፅ መዳረሻ ክሬዲት",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "የተፈቀደ ዶሜይን ጨምር"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "የተፈቀደ ዶሜይን ጨምር"
+  },
+  "popup_add_button": {
+    "message": "ጨምር"
+  },
+  "popup_draft_allowed_only": {
+    "message": "$COUNT$ የተፈቀዱ ገፅ ህጎች ብቻ። ሌሎች ድረ ገፆች ታግደዋል።",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ የታገዱ ምድቦች፣ $RULES$ ተጨማሪ ህጎች።",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "ጠንካራ ቁልፍ። ቀድሞ መጨረስ አይቻልም።"
+  },
+  "popup_draft_stop_flexible": {
+    "message": "በማንኛውም ጊዜ መጨረስ ይችላሉ።"
+  },
+  "popup_draft_stop_friction": {
+    "message": "ከ$SECONDS$ ሰ. መጠበቅ በኋላ ጨርስ።",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "ከ$SECONDS$ ሰ. መጠበቅና ማረጋገጫ ሐረግ በኋላ ጨርስ።",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "የክፍለ ጊዜ ርዝመት"
+  },
+  "popup_custom_minutes_label": {
+    "message": "ብጁ ደቂቃዎች"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "ደቂ"
+  },
+  "popup_gate_force_end": {
+    "message": "ጊዜ ማብቂያውን ችላ ብለህ ጨርስ"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "ትኩረት ማድረግዎን ይቀጥሉ"
+  },
+  "popup_gate_phrase_label": {
+    "message": "ይተይቡ፦"
+  },
+  "popup_gate_update_failed": {
+    "message": "በሩን ማዘመን አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_gate_intention": {
+    "message": "የተናገሩት፦ $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "ለመወሰን አንድ ቅጽበት፦"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "ከ$TOTAL$ ሰ.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "ወደ ስራ ተመለስ"
+  },
+  "popup_destination_unavailable": {
+    "message": "መድረሻ አይገኝም"
+  },
+  "popup_back_to_work_name": {
+    "message": "ወደ ስራ ተመለስ፦ $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "ወደ ስራ ተመለስ፦ $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "የታገዱ ገፅ ዝርዝሮች ዳግም እስኪጫኑ ድረስ የምድብ አርትዖት ተሰናክሏል።"
+  },
+  "popup_blocked_categories_heading": {
+    "message": "የታገዱ ምድቦች"
+  },
+  "popup_show_full_domain": {
+    "message": "ሙሉ ዶሜይን አሳይ፦ $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "ሙሉ regex አሳይ፦ $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "ዶሜይን"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regular expression"
+  },
+  "popup_category_sites_label": {
+    "message": "የ$CATEGORY$ ገፆች",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ ገፅ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ ገፆች",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "እና $COUNT$ ተጨማሪ ገፅ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "እና $COUNT$ ተጨማሪ ገፆች",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "የተፈቀዱ ልዩ ሁኔታዎች"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "ተጨማሪ የታገዱ ህጎች"
+  },
+  "popup_no_extra_blocked": {
+    "message": "ተጨማሪ የታገዱ ህጎች የሉም።"
+  },
+  "popup_allowed_heading": {
+    "message": "የተፈቀዱ ገፆችና ህጎች"
+  },
+  "popup_no_allowed_sites": {
+    "message": "እስካሁን የተፈቀዱ ገፆች የሉም።"
+  },
+  "popup_what_will_be_blocked": {
+    "message": "ምን ይታገዳል"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "ምን ይፈቀዳል"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ ከ$TOTAL$ ምድቦች ተመርጠዋል",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ ተጨማሪ የታገደ ህግ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ ተጨማሪ የታገዱ ህጎች",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ የተፈቀደ ህግ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ የተፈቀዱ ህጎች",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "እዚህ ያሉ የተፈቀደ-ገፅና ህግ ለውጦች የሚሠሩት ለዚህ ክፍለ ጊዜ ብቻ ነው። የተቀረው ሁሉ ይታገዳል።"
+  },
+  "popup_scope_blacklist": {
+    "message": "እዚህ ያሉ የምድብና ህግ ለውጦች የሚሠሩት ለዚህ ክፍለ ጊዜ ብቻ ነው።"
+  },
+  "popup_open_settings_defaults": {
+    "message": "ለቋሚ ነባሪዎች ቅንብሮችን ክፈት"
+  },
+  "popup_rule_details_label": {
+    "message": "የክፍለ ጊዜ ህግ ዝርዝሮች"
+  },
+  "popup_session_type_legend": {
+    "message": "የክፍለ ጊዜ አይነት"
+  },
+  "popup_session_type_flexible": {
+    "message": "ተለዋዋጭ"
+  },
+  "popup_session_type_friction": {
+    "message": "መጓተት"
+  },
+  "popup_session_type_hard": {
+    "message": "ጠንካራ ቁልፍ"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "በፈለጉ ጊዜ ክፍለ ጊዜውን ወዲያውኑ ያጠናቅቁ።"
+  },
+  "popup_session_type_friction_hint": {
+    "message": "ቀድሞ ለመጨረስ $WAIT$ ያስፈልጋል። መተየብ አያስፈልግም።",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "ቀድሞ ለመጨረስ $WAIT$ እና የተተየበ ማረጋገጫ ያስፈልጋል።",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "ክፍለ ጊዜው ቀድሞ አያልቅም። የገፅ መዳረሻ ክሬዲት አሁንም ይሠራል።"
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "የተመረጡት ምድቦችና ተጨማሪ ህጎች ይታገዳሉ። ሌሎች ገፆች ይገኛሉ።"
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "የተዘረዘሩት ገፆች ብቻ ይገኛሉ። ሌላው እያንዳንዱ ድረ ገፅ ይታገዳል።"
+  },
+  "popup_invalid_duration_error": {
+    "message": "ከዜሮ ደቂቃ በላይ የሆነ የክፍለ ጊዜ ርዝመት ያስገቡ።"
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "ነባሪዎች ተቀይረዋል፣ ነገር ግን የአሁኑን ዝርዝሮች መጫን አልተቻለም። ብቅ-ባዩን ዳግም ይጫኑ።"
+  },
+  "popup_no_work_tab_option": {
+    "message": "የስራ ትር የለም (አማራጭ)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "የተመረጠው ትር አይገኝም - ሌላ ይምረጡ"
+  },
+  "popup_cycles_label": {
+    "message": "ዑደቶች፦ $FOCUS$ ደቂ ትኩረት፣ $SHORT_BREAK$ ደቂ እረፍት፣ በየ$LONG_EVERY$ኛው ዑደት $LONG_BREAK$ ደቂ ረጅም እረፍት",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "ዓላማ"
+  },
+  "popup_intention_placeholder": {
+    "message": "በምን ላይ እየሰሩ ነው?"
+  },
+  "popup_work_tab_named": {
+    "message": "የስራ ትር፦ $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "ቀይር"
+  },
+  "popup_session_settings_summary": {
+    "message": "የክፍለ ጊዜ ቅንብሮች"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "የስራ ትር ይምረጡ"
+  },
+  "popup_work_tab_select_label": {
+    "message": "የስራ ትር"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (አሁኑ)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "የእገዳ ሁነታ"
+  },
+  "popup_invalid_time_label": {
+    "message": "ልክ ያልሆነ ጊዜ"
+  },
+  "popup_start_focus_label": {
+    "message": "$DURATION$ ትኩረትን ጀምር",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "እንደ docs.example.com ያለ ትክክለኛ ዶሜይን ያስገቡ።"
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "የስራ ትሮችን መጫን አልተቻለም። ደግመው ለመሞከር ብቅ-ባዩን ዳግም ይክፈቱ።"
+  },
+  "popup_use_this_tab": {
+    "message": "ይህን ትር ተጠቀም"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "ይህ ትር ለስራ አይገኝም። ሌላ ክፍት ትር ይምረጡ።"
+  },
+  "popup_checking_current_tab": {
+    "message": "የአሁኑን ትር በማረጋገጥ ላይ..."
+  },
+  "popup_finding_current_tab": {
+    "message": "የአሁኑን ትርዎን በመፈለግ ላይ..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "የአሁኑን ትርዎን መጫን አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "የስራ ትርዎን ይምረጡ ወይም ይተኩ።"
+  },
+  "popup_saving_work_tab": {
+    "message": "የስራ ትርን በማስቀመጥ ላይ..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "የስራ ትርን ማስቀመጥ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "popup_choose_open_tab_option": {
+    "message": "ክፍት ትር ይምረጡ"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "ወይም ሌላ ትር ይምረጡ"
+  },
+  "popup_start_failed": {
+    "message": "ክፍለ ጊዜውን መጀመር አልተቻለም። ደግመው ይሞክሩ።"
+  }
+}

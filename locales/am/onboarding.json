@@ -1,0 +1,177 @@
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock ያዋቅሩ"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock ማዋቀር"
+  },
+  "onboarding_progress": {
+    "message": "ደረጃ $STEP$ ከ$TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "የተቀመጠው የማዋቀር እድገትዎ መመለስ አልቻለም። በአሁኑ ነባሪዎችዎ እንደገና ይጀምራል።"
+  },
+  "onboarding_complete_heading": {
+    "message": "ማዋቀር ተጠናቋል"
+  },
+  "onboarding_complete_body": {
+    "message": "ምርጫዎችዎ ተቀምጠዋል። ክፍለ ጊዜ ለመጀመር Focus Lockን ከChrome መሳሪያ አሞሌ ይክፈቱ።"
+  },
+  "onboarding_error_heading": {
+    "message": "ማዋቀር አይገኝም"
+  },
+  "onboarding_error_body": {
+    "message": "ማዋቀሩን መጫን አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "onboarding_retry_button": {
+    "message": "ደግመው ይሞክሩ"
+  },
+  "onboarding_save_error": {
+    "message": "የማዋቀር እድገትን ማስቀመጥ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "onboarding_enable_error": {
+    "message": "የድረ ገፅ እገዳን ማንቃት አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "onboarding_finish_error": {
+    "message": "ማዋቀሩን መጨረስ አልተቻለም። ምርጫዎችዎ አሁንም ተቀምጠዋል። ደግመው ይሞክሩ።"
+  },
+  "onboarding_lists_heading": {
+    "message": "የመነሻ የማገጃ ዝርዝርዎን ይምረጡ"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "በ$MODE$ ውስጥ፣ የነቃ ምድቦችና ተጨማሪ የታገዱ ገፆች አይገኙም።",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "በ$MODE$ ውስጥ፣ ከፍቃድ ዝርዝርዎ በስተቀር ማንኛውም ገፅ አይገኝም።",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "እነዚህ ምርጫዎች ለወደፊት ክፍለ ጊዜዎች ነባሪ ይሆናሉ። በኋላ ማስተካከል ይችላሉ።"
+  },
+  "onboarding_lists_legend": {
+    "message": "የሚመከሩ የድረ ገፅ ምድቦች"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ ገፅ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ ገፆች",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "የ$CATEGORY$ ገፆችን አሳይ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "የ$CATEGORY$ ገፆችን ደብቅ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "የ$CATEGORY$ ዶሜይኖች",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "ቀጥል"
+  },
+  "onboarding_access_heading": {
+    "message": "የድረ ገፅ እገዳን ያንቁ"
+  },
+  "onboarding_access_local_matching": {
+    "message": "የመረጡትን ምድቦችና ገፆች ለማዛመድ Focus Lock የገፅ አድራሻዎችን በአካባቢው ያረጋግጣል። ክፍለ ጊዜዎ ሲያልቅ የእገዳ ማያ ገፁን ለማሳየትና የተነኩ ገፆችን ወደነበሩበት ለመመለስ የድረ ገፅ መዳረሻን ይጠቀማል።"
+  },
+  "onboarding_access_capability_intro": {
+    "message": "ምድቦችና ብጁ ዶሜይኖች ማንኛውንም ገፅ ሊያካትቱ ይችላሉ። ስለዚህ Chrome ይህን አቅም ይጠይቃል፦"
+  },
+  "onboarding_access_capability": {
+    "message": "በሁሉም ድረ ገፆች ላይ ያለውን ውሂብዎን ሁሉ ማንበብና መቀየር"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock የእገዳ ህጎችዎን ሲተገብር ብቻ ያንን መዳረሻ ይጠቀማል።"
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome የድረ ገፅ መዳረሻ አልፈቀደም። ደግመው መሞከር ይችላሉ።"
+  },
+  "onboarding_access_registration_error": {
+    "message": "የድረ ገፅ መዳረሻ ተፈቅዷል፣ ነገር ግን Focus Lock እገዳን ማንቃት አልቻለም። ማዋቀሩን ደግመው ይሞክሩ ወይም ተጨማሪውን ዳግም ይጫኑ።"
+  },
+  "onboarding_access_enable_button": {
+    "message": "የድረ ገፅ እገዳን ያንቁ"
+  },
+  "onboarding_access_defer_button": {
+    "message": "አሁን አይደለም"
+  },
+  "onboarding_sync_heading": {
+    "message": "ቅንብሮችዎ የት እንደሚከማቹ ይምረጡ"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "በChrome መሳሪያዎች ላይ አመሳስል"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "ማዋቀሩን ከጨረሱ በኋላ ከዚህ በታች ያለው የተፈቀደ መረጃ Chrome Syncን ይጠቀማል።"
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "ሁሉም Focus Lock መረጃ በዚህ የChrome መገለጫ ውስጥ ብቻ ይቆያል።"
+  },
+  "onboarding_sync_synced_title": {
+    "message": "ተመሳስሏል"
+  },
+  "onboarding_sync_local_title": {
+    "message": "በአካባቢው ብቻ"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "ምንም ነገር ለFocus Lock ገንቢው አይላክም።"
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Sync በነቃበት ማዋቀሩን ጨርስ"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "ያለ Sync ማዋቀሩን ጨርስ"
+  }
+}

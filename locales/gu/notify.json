@@ -1,1 +1,134 @@
-{}
+{
+  "notify_session_complete_title": {
+    "message": "ફોકસ સેશન પૂર્ણ"
+  },
+  "notify_session_complete_body": {
+    "message": "તારું ફોકસ સેશન પૂરું થયું."
+  },
+  "notify_schedule_window_body": {
+    "message": "$END$ સુધી લોક.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "ફોકસ શેડ્યૂલ શરૂ થઈ શક્યું નહીં"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "વેબસાઇટ બ્લોકિંગ ચાલુ નથી. સેટઅપ પૂર્ણ કરો અથવા વેબસાઇટ ઍક્સેસ આપો, પછી ફરી પ્રયત્ન કરો."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "સેટઅપ બીજા ટૅબમાં પૂર્ણ થયું હતું."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "સેટઅપ બીજા ટૅબમાં બદલાયું. નવીનતમ પસંદગીઓ ફરી લોડ થઈ."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "સેટઅપ બીજા ટૅબમાં બદલાયું. પૂર્ણ કરતાં પહેલાં સેટઅપ ફરી લોડ કરો."
+  },
+  "notify_setup_not_complete": {
+    "message": "સેટઅપ પૂર્ણ નથી."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "સેટઅપ પૂર્ણ કરવા તૈયાર નથી."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "સેટઅપ સ્ટોરેજ પસંદગી બદલાઈ. પૂર્ણ કરતાં પહેલાં સેટઅપ ફરી લોડ કરો."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "સેટઅપ સ્ટોરેજ ક્રિયા નિષ્ફળ ગઈ."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "સેટઅપ ક્રિયા નિષ્ફળ ગઈ."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock વેબસાઇટ ઍક્સેસ ચકાસી શક્યું નહીં. સેટઅપ ફરી પ્રયત્ન કરો અથવા એક્સટેન્શન ફરી લોડ કરો."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "વેબસાઇટ ઍક્સેસ મંજૂર છે, પણ Focus Lock બ્લોકિંગ ચાલુ કરી શક્યું નહીં. સેટઅપ ફરી પ્રયત્ન કરો અથવા એક્સટેન્શન ફરી લોડ કરો."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "વેબસાઇટ ઍક્સેસ ઉપલબ્ધ નથી, અને Focus Lock બ્લોકિંગ ક્લીનઅપ પૂર્ણ કરી શક્યું નહીં. સેટઅપ ફરી પ્રયત્ન કરો અથવા એક્સટેન્શન ફરી લોડ કરો."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lockને અસંગત વેબસાઇટ ઍક્સેસ સ્થિતિ મળી. સેટઅપ ફરી પ્રયત્ન કરો અથવા એક્સટેન્શન ફરી લોડ કરો."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock શરૂ થવાનું પૂર્ણ કરી શક્યું નહીં: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "અજાણી ભૂલ"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock ચાલુ છે, રીસેટ કરવા કંઈ નથી"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock એવા રનટાઇમને રીસેટ કરી શકતું નથી જે હજુ પોલિસી જનરેશનમાં કમિટ થયેલું છે"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "ડેટા ક્લિયર ફરી પ્રયત્ન ઉપલબ્ધ નથી."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "સિંક કરેલો ડેટા ડિલીટ કરતાં પહેલાં Sync બંધ કરો"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock હજુ અગાઉનો ફેરફાર પૂર્ણ કરી રહ્યું છે. થોડી વારમાં ફરી પ્રયત્ન કરો."
+  },
+  "notify_work_gate_stuck": {
+    "message": "ખુલ્લું ગેટ બંધ થઈ શક્યું નહીં. ફરી પ્રયત્ન કરો."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "કાર્ય ટૅબ ઉપલબ્ધ નથી."
+  },
+  "notify_settings_sync_limit": {
+    "message": "સેટિંગ્સ 8 KB Chrome Sync મર્યાદા કરતાં વધારે છે. શેડ્યૂલ એન્ટ્રીઓ દૂર કરો અથવા ઇરાદા ટૂંકા કરો, પછી ફરી પ્રયત્ન કરો."
+  },
+  "notify_lists_sync_limit": {
+    "message": "લિસ્ટ 8 KB Chrome Sync મર્યાદા કરતાં વધારે છે. કસ્ટમ અથવા અલાઉ લિસ્ટ નિયમો દૂર કરો, પછી ફરી પ્રયત્ન કરો."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "સખત લોક સેશન ચાલુ છે: બ્લોક કરેલી સાઇટ્સ દૂર કરવી તે પૂરું થાય ત્યારે અનલોક થાય છે"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "સખત લોક સેશન ચાલુ છે: નવી અલાઉ લિસ્ટ એન્ટ્રીઓ તે પૂરું થાય ત્યારે અનલોક થાય છે"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "સખત લોક સેશન ચાલુ છે: શ્રેણીઓ બંધ કરવી તે પૂરું થાય ત્યારે અનલોક થાય છે"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "સખત લોક સેશન ચાલુ છે: નવા અપવાદો તે પૂરું થાય ત્યારે અનલોક થાય છે"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "સખત લોક સેશન ચાલુ છે: ડિફૉલ્ટ કડકાઈ નબળી કરવી તે પૂરું થાય ત્યાં સુધી રાહ જુએ છે"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "સખત લોક સેશન ચાલુ છે: વિચારણા વિલંબ ટૂંકો કરવો ગેટને નબળું બનાવે છે"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "સખત લોક સેશન ચાલુ છે: ટાઇપ કરેલું વાક્ય કાઢી નાખવું ગેટને નબળું બનાવે છે"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "સખત લોક સેશન ચાલુ છે: પોઝ કમાણી દર વધારવો વધુ છટકબારીઓ માટે ભંડોળ પૂરું પાડે છે"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "સખત લોક સેશન ચાલુ છે: પોઝ મર્યાદા વધારવી વધુ છટકબારીઓ માટે ભંડોળ પૂરું પાડે છે"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "સખત લોક સેશન ચાલુ છે: પોઝ ટૂંકા કરવાથી તેમનો ખર્ચ ઘટે છે"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "સખત લોક સેશન ચાલુ છે: અનલોક ટૂંકા કરવાથી તેમનો ખર્ચ ઘટે છે"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "સખત લોક સેશન ચાલુ છે: તે પૂરું ન થાય ત્યાં સુધી તેની શેડ્યૂલ એન્ટ્રી નબળી કરી શકાતી નથી"
+  }
+}

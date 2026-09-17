@@ -1,0 +1,849 @@
+{
+  "options_page_title": {
+    "message": "የFocus Lock አማራጮች"
+  },
+  "options_heading": {
+    "message": "የFocus Lock ቅንብሮች"
+  },
+  "options_loading_settings": {
+    "message": "ቅንብሮች እየተጫኑ ነው"
+  },
+  "options_privacy_loading": {
+    "message": "የግላዊነት ቅንብሮች እየተጫኑ ነው"
+  },
+  "options_save_failed": {
+    "message": "ማስቀመጥ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_blocking_heading": {
+    "message": "እገዳ"
+  },
+  "options_blocking_help": {
+    "message": "ብጁ ህጎች በማገጃ ዝርዝር ክፍለ ጊዜዎች ውስጥ ያግዳሉ። በፍቃድ ዝርዝር ክፍለ ጊዜዎች ውስጥ ተደራሽ የሚሆነው የፍቃድ ዝርዝሩ ነው። የተጣመሩ ምድቦች የተለመዱ ጊዜ አባካኝ ገፆችን ያግዳሉ።"
+  },
+  "options_custom_blacklist_title": {
+    "message": "ብጁ የማገጃ ዝርዝር"
+  },
+  "options_whitelist_title": {
+    "message": "የፍቃድ ዝርዝር"
+  },
+  "options_bundled_categories_heading": {
+    "message": "የተጣመሩ ምድቦች"
+  },
+  "options_bundled_categories_help": {
+    "message": "የተለመዱ ጊዜ አባካኝ ገፆች የተጣመሩ ዝርዝሮች። አንድ ሙሉ ምድብን ይቀያይሩ፣ ከዚያ ነጠላ ገፆችን ተደራሽ ለማድረግ ይክፈቱት።"
+  },
+  "options_schedule_heading": {
+    "message": "መርሃ ግብር"
+  },
+  "options_schedule_help": {
+    "message": "ክፍለ ጊዜዎች በራሳቸው በእነዚህ ጊዜያት ውስጥ ይጀምራሉ። እዚህ የተቀመጠው ጥብቅነት ለጠቅላላው ጊዜ ይሠራል።"
+  },
+  "options_behavior_heading": {
+    "message": "የክፍለ ጊዜ ባህሪ"
+  },
+  "options_budget_heading": {
+    "message": "የገፅ መዳረሻ ክሬዲት"
+  },
+  "options_notifications_heading": {
+    "message": "ማሳወቂያዎች"
+  },
+  "options_privacy_heading": {
+    "message": "ግላዊነትና መረጃ"
+  },
+  "options_load_error_retry": {
+    "message": "ደግመው ይሞክሩ"
+  },
+  "options_load_error_delete_all": {
+    "message": "ሁሉንም ሰርዞ እንደገና ጀምር"
+  },
+  "options_load_error_keep_data": {
+    "message": "መረጃዬን አቆይ"
+  },
+  "options_delete_all_data": {
+    "message": "ሁሉንም የFocus Lock መረጃ ሰርዝ"
+  },
+  "options_dirty_saving": {
+    "message": "ለውጦች እየተቀመጡ ነው"
+  },
+  "options_dirty_unsaved": {
+    "message": "ያልተቀመጡ ለውጦች"
+  },
+  "options_dirty_clean": {
+    "message": "ያልተቀመጡ ለውጦች የሉም"
+  },
+  "options_dirty_discard": {
+    "message": "ለውጦችን አስወግድ"
+  },
+  "options_dirty_save": {
+    "message": "ለውጦችን አስቀምጥ"
+  },
+  "options_session_status_label": {
+    "message": "የክፍለ ጊዜ ሁኔታ"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "ዶሜይን"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
+  "options_rule_remove": {
+    "message": "አስወግድ"
+  },
+  "options_rule_remove_aria": {
+    "message": "$PATTERN$ን አስወግድ",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "እስካሁን ህጎች የሉም።"
+  },
+  "options_rule_kind_aria": {
+    "message": "የህግ አይነት"
+  },
+  "options_rule_kind_host_option": {
+    "message": "ዶሜይን ወይም ንዑስ-ዶሜይን"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (ሙሉ URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "ንድፍ"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "ህግ ጨምር"
+  },
+  "options_rules_help": {
+    "message": "facebook.com ያንን ዶሜይንና እያንዳንዱን ንዑስ-ዶሜይን ይሸፍናል። news.ycombinator.com ያንን ንዑስ-ዶሜይንና ከሱ በታች ያለውን ሁሉ ይሸፍናል። /youtube\\.com\\/shorts/ ሙሉ URLን እንደ regex ያዛምዳል።"
+  },
+  "options_number_error_positive": {
+    "message": "$LABEL$ አዎንታዊ ሙሉ ቁጥር መሆን አለበት።",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ ዜሮ ወይም ከዚያ በላይ የሆነ ሙሉ ቁጥር መሆን አለበት።",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ ዜሮ ወይም ከዚያ በላይ መሆን አለበት።",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
+  },
+  "options_number_error_minute_range": {
+    "message": "$LABEL$ በሚደገፈው የደቂቃ ክልል ውስጥ መሆን አለበት።",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
+  },
+  "options_number_error_day_range": {
+    "message": "$LABEL$ በሚደገፈው የቀን ክልል ውስጥ መሆን አለበት።",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
+  },
+  "options_session_defaults_heading": {
+    "message": "የክፍለ ጊዜ ነባሪዎች"
+  },
+  "options_session_defaults_help": {
+    "message": "ክፍለ ጊዜ ሲጀምር ሁነታና ጥብቅነት ተስተካክለው ይቀራሉ። የመነሻ ቅፅ የሚከፈትባቸው እሴቶች እነዚህ ናቸው።"
+  },
+  "options_preset_short_label": {
+    "message": "አጭር የክፍለ ጊዜ ቅንብር (ደቂቃዎች)"
+  },
+  "options_preset_default_label": {
+    "message": "ነባሪ የክፍለ ጊዜ ቅንብር (ደቂቃዎች)"
+  },
+  "options_preset_deep_label": {
+    "message": "ጥልቅ የክፍለ ጊዜ ቅንብር (ደቂቃዎች)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "የማገጃ ዝርዝር፦ የተዘረዘሩ ገፆችን አግድ"
+  },
+  "options_mode_whitelist_label": {
+    "message": "የፍቃድ ዝርዝር፦ የተዘረዘሩ ገፆችን ብቻ ፍቀድ"
+  },
+  "options_strictness_flexible_label": {
+    "message": "ተለዋዋጭ፦ በፈለጉ ጊዜ ክፍለ ጊዜውን ያጠናቅቁ"
+  },
+  "options_strictness_friction_label": {
+    "message": "መጓተት፦ ቀድሞ ማቆም የተዋቀረውን የማሰላሰያ በር ይጠቀማል"
+  },
+  "options_strictness_hard_label": {
+    "message": "ጠንካራ ቁልፍ፦ ቀድሞ መጨረስ የለም፣ ጊዜያዊ የገፅ መዳረሻ ብቻ"
+  },
+  "options_cycle_heading": {
+    "message": "የትኩረትና የእረፍት ዑደት"
+  },
+  "options_cycle_help": {
+    "message": "ነባሪዎች፦ 25 ደቂቃ ትኩረት፣ 5 ደቂቃ እረፍት፣ በየ4ኛው ዑደት 15 ደቂቃ ረጅም እረፍት። በጥናት ናሙናዎች ውስጥ ለስሜትና ትኩረት፣ በመርሃ ግብር ላይ የተመሰረቱ እረፍቶች እንደፈለጉ ከማረፍ ይሻላሉ። ትክክለኛዎቹ ደቂቃዎች ልማድ እንጂ ሳይንስ አይደሉም።"
+  },
+  "options_cycle_default_label": {
+    "message": "በነባሪነት ትኩረትና እረፍቶችን በዑደት ያድርጉ"
+  },
+  "options_focus_minutes_label": {
+    "message": "የትኩረት ደቂቃዎች"
+  },
+  "options_short_break_minutes_label": {
+    "message": "የአጭር እረፍት ደቂቃዎች"
+  },
+  "options_long_break_minutes_label": {
+    "message": "የረጅም እረፍት ደቂቃዎች"
+  },
+  "options_long_every_label": {
+    "message": "ረጅም እረፍት በየስንተኛው ዑደት"
+  },
+  "options_gate_heading": {
+    "message": "የማሰላሰያ በር"
+  },
+  "options_gate_help": {
+    "message": "ግልጽ የ«ወደ ስራ ተመለስ» ቁልፍ ያለው የ10 ሰከንድ መጠበቅ ስሜታዊ ጉብኝቶችን በሚለካ ደረጃ ይቀንሳል (የመስክ ጥናት፣ PNAS 2023)። ረዘም ያለ መጠበቅና የሚተየብ ሐረግ ውጤቱን በእጥፍ ያሳድጋሉ።"
+  },
+  "options_gate_wait_one": {
+    "message": "$COUNT$ ሰከንድ ይጠብቁ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "$COUNT$ ሰከንዶች ይጠብቁ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "ብጁ"
+  },
+  "options_custom_delay_label": {
+    "message": "ብጁ መዘግየት (ሰከንዶች)"
+  },
+  "options_custom_delay_error": {
+    "message": "ብጁ መዘግየት ከዜሮ በላይ የሆነ ሙሉ ቁጥር ሰከንድ መሆን አለበት።"
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "ሐረግ መተየብንም ይጠይቁ"
+  },
+  "options_gate_force_end_label": {
+    "message": "«ጊዜ ማብቂያውን ችላ ብለህ ጨርስ» የሚለውን ቁልፍ አንቃ"
+  },
+  "options_credit_help": {
+    "message": "ትኩረት ሲያደርጉ የገፅ መዳረሻ ክሬዲት ይከማቻል። ወደ ሁሉም ገፆች መዳረሻና ነጠላ-ገፅ መክፈት ሁለቱም ከተመሳሳይ ቀሪ ሂሳብ ይወጣሉ። ክሬዲት ሳያጠፉ በማንኛውም ጊዜ መራቅ ይችላሉ።"
+  },
+  "options_earn_rate_label": {
+    "message": "በየ30 ደቂቃ ትኩረት የገፅ መዳረሻ ደቂቃዎች"
+  },
+  "options_credit_cap_label": {
+    "message": "የገፅ መዳረሻ ክሬዲት ገደብ (ደቂቃዎች)"
+  },
+  "options_pause_length_label": {
+    "message": "የሁሉም-ገፅ መዳረሻ ርዝመት (ደቂቃዎች)"
+  },
+  "options_unlock_length_label": {
+    "message": "የገፅ መክፈቻ ርዝመት (ደቂቃዎች)"
+  },
+  "options_streak_heading": {
+    "message": "ተከታታይነትና ማቆያ"
+  },
+  "options_streak_help": {
+    "message": "ተከታታይነት ግቡን የደረሱ ቀናትን ይቆጥራል። አንድ ነባሪ ክፍለ ጊዜ ሰንሰለቱን ሕያው ያደርገዋል፣ የቅዝቃዜ ማስመሪያም የዘለለን ቀን ያስተካክላል።"
+  },
+  "options_streak_goal_label": {
+    "message": "የቀን ተከታታይነት ግብ (የትኩረት ደቂቃዎች)"
+  },
+  "options_freeze_interval_label": {
+    "message": "የቅዝቃዜ ማስመሪያ ልዩነት (ቀናት)"
+  },
+  "options_retention_label": {
+    "message": "ዕለታዊ ስታትስቲክስን አቆይ (ቀናት)"
+  },
+  "options_category_on_announcement": {
+    "message": "የ$CATEGORY$ ምድብ በርቷል።",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "የ$CATEGORY$ ምድብ ጠፍቷል።",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "ሁሉም ምድቦች በርተዋል።"
+  },
+  "options_all_categories_off_announcement": {
+    "message": "ሁሉም ምድቦች ጠፍተዋል።"
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ ተካቷል።",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ ተደራሽ ሆኖ ቆይቷል።",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_all_sites_included_announcement": {
+    "message": "ሁሉም የ$CATEGORY$ ገፆች ተካትተዋል።",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_sites_kept_available_announcement": {
+    "message": "ሁሉም የ$CATEGORY$ ገፆች ተደራሽ ሆነው ቆይተዋል።",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "የምድብ ጅምላ ተግባራት"
+  },
+  "options_selected_count": {
+    "message": "$COUNT$ ተመርጧል",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "$COUNT$ ምርጫ ተነስቷል",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "ሁሉንም ምረጥ"
+  },
+  "options_deselect_all": {
+    "message": "ሁሉንም ምርጫ አንሳ"
+  },
+  "options_select_all_categories_aria": {
+    "message": "ሁሉንም ምድቦች ምረጥ"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "ሁሉንም ምድቦች ምርጫ አንሳ"
+  },
+  "options_show_category_sites": {
+    "message": "የ$CATEGORY$ ገፆችን አሳይ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "የ$CATEGORY$ ገፆችን ደብቅ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ ገፅ ተካቷል",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ ገፆች ተካትተዋል",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "ምድብ ጠፍቷል"
+  },
+  "options_included_when_enabled_one": {
+    "message": "ሲነቃ $COUNT$ ይካተታል",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_included_when_enabled_other": {
+    "message": "ሲነቃ $COUNT$ ይካተታሉ",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_uncheck_help": {
+    "message": "የተቀረው ምድብ ታግዶ እያለ አንድ ገፅን ተደራሽ ለማድረግ ምልክቱን ያንሱ።"
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "የ$CATEGORY$ ገፅ ጅምላ ተግባራት",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_select_all_category_sites_aria": {
+    "message": "ሁሉንም የ$CATEGORY$ ገፆች ምረጥ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_deselect_all_category_sites_aria": {
+    "message": "ሁሉንም የ$CATEGORY$ ገፆች ምርጫ አንሳ",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_region_aria": {
+    "message": "የ$CATEGORY$ ገፆች",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "እሁድ"
+  },
+  "options_day_mon": {
+    "message": "ሰኞ"
+  },
+  "options_day_tue": {
+    "message": "ማክሰ"
+  },
+  "options_day_wed": {
+    "message": "ረቡዕ"
+  },
+  "options_day_thu": {
+    "message": "ሐሙስ"
+  },
+  "options_day_fri": {
+    "message": "አርብ"
+  },
+  "options_day_sat": {
+    "message": "ቅዳሜ"
+  },
+  "options_schedule_cycles_label": {
+    "message": "ትኩረትና እረፍቶችን በዑደት ያድርጉ"
+  },
+  "options_schedule_overlap_error": {
+    "message": "በ$DAY$ ከሌላ የነቃ ግቤት ጋር ይደራረባል።",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
+  },
+  "options_schedule_session_type_aria": {
+    "message": "የክፍለ ጊዜ አይነት"
+  },
+  "options_schedule_entry_legend": {
+    "message": "የመርሃ ግብር ግቤት"
+  },
+  "options_schedule_start_label": {
+    "message": "መጀመሪያ"
+  },
+  "options_schedule_end_label": {
+    "message": "መጨረሻ"
+  },
+  "options_schedule_duration_legend": {
+    "message": "ቆይታ"
+  },
+  "options_schedule_intention_label": {
+    "message": "ዓላማ"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "ይህ ጊዜ ለምንድን ነው"
+  },
+  "options_schedule_save_entry": {
+    "message": "ግቤቱን አስቀምጥ"
+  },
+  "options_cancel": {
+    "message": "ተወው"
+  },
+  "options_schedule_empty": {
+    "message": "እስካሁን የተመደቡ ክፍለ ጊዜዎች የሉም።"
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "የተመረጡ ቀናት"
+  },
+  "options_schedule_time_range": {
+    "message": "ከ$START$ እስከ $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "የማገጃ ዝርዝር"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "የፍቃድ ዝርዝር"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "ተለዋዋጭ"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "መጓተት"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "ጠንካራ ቁልፍ"
+  },
+  "options_schedule_enabled_label": {
+    "message": "ነቅቷል"
+  },
+  "options_schedule_edit": {
+    "message": "አርትዕ"
+  },
+  "options_schedule_delete": {
+    "message": "ሰርዝ"
+  },
+  "options_schedule_add": {
+    "message": "የመርሃ ግብር ግቤት ጨምር"
+  },
+  "options_sounds_heading": {
+    "message": "ድምፆች"
+  },
+  "options_master_volume": {
+    "message": "ዋና ድምፅ መጠን"
+  },
+  "options_sound_session_complete": {
+    "message": "ክፍለ ጊዜ ተጠናቋል"
+  },
+  "options_sound_break_start": {
+    "message": "እረፍት ተጀመረ"
+  },
+  "options_sound_break_end": {
+    "message": "እረፍት አለቀ"
+  },
+  "options_sound_schedule_start": {
+    "message": "የመርሃ ግብር ራስ-ሰር መጀመሪያ"
+  },
+  "options_sound_preview_aria": {
+    "message": "$SOUND$ን ቅድመ ማዳመጥ",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "አጫውት"
+  },
+  "options_sound_preview_error": {
+    "message": "ድምፁን ቅድመ ማዳመጥ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_sounds_notifications_heading": {
+    "message": "ማሳወቂያዎች"
+  },
+  "options_session_complete_notification": {
+    "message": "ክፍለ ጊዜ ሲጠናቀቅ የስርዓት ማሳወቂያ አሳይ"
+  },
+  "options_badge_heading": {
+    "message": "ባጅ"
+  },
+  "options_badge_countdown": {
+    "message": "በመሳሪያ አሞሌ አዶ ላይ የቀረውን ጊዜ አሳይ"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "የድረ ገፅ መዳረሻ"
+  },
+  "options_privacy_website_off_title": {
+    "message": "የድረ ገፅ መዳረሻ ጠፍቷል"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "መዳረሻ እስከሚፈቅዱ ድረስ Focus Lock ገፆችን ማገድ አይችልም።"
+  },
+  "options_privacy_website_enable_action": {
+    "message": "የድረ ገፅ እገዳን ያንቁ"
+  },
+  "options_privacy_website_unregistered_title": {
+    "message": "የድረ ገፅ መዳረሻ ተፈቅዷል፣ ነገር ግን እገዳ ገባሪ አይደለም"
+  },
+  "options_privacy_website_unregistered_detail": {
+    "message": "Chrome መዳረሻ ፈቅዷል፣ ነገር ግን Focus Lock የእገዳ ስክሪፕቱን መመዝገብ አልቻለም።"
+  },
+  "options_privacy_website_retry_action": {
+    "message": "የድረ ገፅ እገዳን ደግመው ይሞክሩ"
+  },
+  "options_privacy_website_on_title": {
+    "message": "የድረ ገፅ እገዳ ነቅቷል"
+  },
+  "options_privacy_website_on_detail": {
+    "message": "Focus Lock በተለመዱ የድረ ገፅ ገፆች ላይ ገባሪ የእገዳ ህጎችዎን ሊተገብር ይችላል።"
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "የአካባቢ ታሪክ ይሰረዝ?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "የአካባቢ ታሪክ መሰረዝን አረጋግጥ"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "የአካባቢ ታሪክ ተሰርዟል።"
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "ይህ ሙሉ URLዎችን፣ የትኩረት ዓላማዎችን፣ እና ዝርዝር የክፍለ ጊዜ ክስተቶችን ከዚህ መሳሪያ በቋሚነት ይሰርዛል። ገባሪ ክፍለ ጊዜን አያጠፋም፣ ዓላማውንና የሚያግደውን እያንዳንዱን ትር አድራሻ ይይዛል። ክፍለ ጊዜውን መጨረስ ዓላማውን ያጸዳል፣ ክፍት የነበረውን እያንዳንዱን የድረ ገፅ ትር የሚያጸዳ ማጽዳት ይጀምራል፣ ማጽዳቱም ሲጠናቀቅ የተከማቸውን እያንዳንዱን አድራሻ ያስወግዳል።"
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "ይህ ሙሉ URLዎችን፣ የትኩረት ዓላማዎችን፣ ዝርዝር የክፍለ ጊዜ ክስተቶችን፣ እንዲሁም በአካባቢ-ብቻ ያሉ ጠቅላላ ስታትስቲክሶችን ከዚህ መሳሪያ በቋሚነት ይሰርዛል። ገባሪ ክፍለ ጊዜን አያጠፋም፣ ዓላማውንና የሚያግደውን እያንዳንዱን ትር አድራሻ ይይዛል። ክፍለ ጊዜውን መጨረስ ዓላማውን ያጸዳል፣ ክፍት የነበረውን እያንዳንዱን የድረ ገፅ ትር የሚያጸዳ ማጽዳት ይጀምራል፣ ማጽዳቱም ሲጠናቀቅ የተከማቸውን እያንዳንዱን አድራሻ ያስወግዳል።"
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "የርቀት Sync መረጃ ይሰረዝ?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "የርቀት Sync መረጃ መሰረዝን አረጋግጥ"
+  },
+  "options_privacy_synced_policy_deleted": {
+    "message": "የርቀት Chrome Sync መረጃ ተሰርዟል።"
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "ይህ የርቀት ቅንብሮችን፣ የማገጃና ፍቃድ ዝርዝሮችን፣ የገፅ መዳረሻ ክሬዲትን፣ ተከታታይነቶችን፣ እና በዶሜይን-ደረጃ የታገዱ ሙከራ ጠቅላላዎችን ከChrome Sync በቋሚነት ይሰርዛል። የአካባቢ ቅንብሮችና ስታትስቲክሶች በዚህ መሳሪያ ውስጥ ይቆያሉ።"
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "ሁሉም የFocus Lock መረጃ ይሰረዝ?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "ሁሉንም የFocus Lock መረጃ መሰረዝን አረጋግጥ"
+  },
+  "options_privacy_all_deleted": {
+    "message": "ሁሉም የFocus Lock መረጃ ተሰርዟል።"
+  },
+  "options_privacy_all_body_intro": {
+    "message": "ይህ በዚህ መሳሪያ ላይ ያለውን እያንዳንዱን የFocus Lock መረጃ፣ እና በChrome Sync ውስጥ ያለውን ማንኛውንም የFocus Lock ቅጂ በቋሚነት ይሰርዛል፦"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "ሁሉንም መሰረዝ የሚገኘው ምንም ክፍለ ጊዜ በማይሰራበት ጊዜ ብቻ ነው። Focus Lock ከዚያ ወደ ማዋቀር ይመለሳል።"
+  },
+  "options_privacy_error_local_history_clear": {
+    "message": "የአካባቢ ታሪክ መሰረዝ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_privacy_error_synced_policy_clear": {
+    "message": "የርቀት Chrome Sync መረጃ መሰረዝ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_privacy_error_all_clear": {
+    "message": "ሁሉንም የFocus Lock መረጃ መሰረዝ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync የቅርብ ጊዜ ለውጦችዎን ማስቀመጥ አልቻለም። የአካባቢ ማስቀመጫዎ ደህና ነው።"
+  },
+  "options_privacy_error_request": {
+    "message": "ጥያቄውን ማጠናቀቅ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_privacy_website_access_updated": {
+    "message": "የድረ ገፅ መዳረሻ ተዘምኗል።"
+  },
+  "options_privacy_website_access_denied": {
+    "message": "የድረ ገፅ መዳረሻ አልተፈቀደም።"
+  },
+  "options_privacy_error_website_access": {
+    "message": "የድረ ገፅ መዳረሻ ማዘመን አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "የድረ ገፅ እገዳ ነቅቷል።"
+  },
+  "options_privacy_error_export": {
+    "message": "የክስተት መዝገብ መላክ አልተቻለም።"
+  },
+  "options_privacy_error_export_retry": {
+    "message": "የክስተት መዝገብ መላክ አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "የChrome ፍቃድ ቅንብሮችን መክፈት አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "የChrome ፍቃድ ቅንብሮች ተከፍተዋል።"
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "የChrome ፍቃድ ቅንብሮችን ክፈት"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
+  },
+  "options_privacy_sync_switch_label": {
+    "message": "የFocus Lock መረጃን በChrome መሳሪያዎች ላይ አመሳስል"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync ነቅቷል።"
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync ጠፍቷል።"
+  },
+  "options_privacy_sync_saving": {
+    "message": "Chrome Sync የቅርብ ጊዜ ለውጦችዎን እያስቀመጠ ነው።"
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync በርቷል።"
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync ጠፍቷል።"
+  },
+  "options_privacy_sync_changes_saved": {
+    "message": "የChrome Sync ለውጦች ተቀምጠዋል።"
+  },
+  "options_privacy_retry_enable_sync": {
+    "message": "Chrome Syncን ማንቃት ደግመው ይሞክሩ"
+  },
+  "options_privacy_retry_sync": {
+    "message": "Chrome Syncን ደግመው ይሞክሩ"
+  },
+  "options_privacy_scope_synced": {
+    "message": "ተመሳስሏል"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "በአካባቢው ብቻ"
+  },
+  "options_privacy_developer_note": {
+    "message": "ምንም ነገር ለFocus Lock ገንቢው አይላክም።"
+  },
+  "options_privacy_local_log_heading": {
+    "message": "የአካባቢ ክስተት መዝገብ"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "ዝርዝር የአካባቢ መዝገብን ይላኩ ወይም የአካባቢ አሰሳና የክፍለ ጊዜ ታሪክን ይሰርዙ።"
+  },
+  "options_privacy_export_local_log": {
+    "message": "የአካባቢ ክስተት መዝገብን ላክ"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "የአካባቢ ክስተት መዝገብ ተልኳል።"
+  },
+  "options_privacy_delete_local_history": {
+    "message": "የአካባቢ ታሪክን ሰርዝ"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "የርቀት Sync መረጃ"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "ይህን መሳሪያ ሳይቀይሩ በChrome Sync ውስጥ ያሉትን የFocus Lock ቅጂዎች ይሰርዙ።"
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "የርቀት Sync መረጃን ሰርዝ"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "ሁሉም የFocus Lock መረጃ"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "በዚህ መሳሪያ ላይ ያለውን እያንዳንዱን የFocus Lock መዝገብ፣ እና በChrome Sync ውስጥ ያለውን ማንኛውንም የFocus Lock ቅጂ ሰርዞ፣ ከዚያ ከማዋቀር እንደገና ይጀምራል። ምንም ክፍለ ጊዜ በማይሰራበት ጊዜ ይገኛል።"
+  },
+  "options_privacy_resuming_all_clear": {
+    "message": "ሁሉንም የFocus Lock መረጃ መሰረዝን በድጋሚ እየጀመረ ነው።"
+  },
+  "options_privacy_retry_local_history": {
+    "message": "የአካባቢ ታሪክ መሰረዝን ደግመው ይሞክሩ"
+  },
+  "options_privacy_retry_remote_sync": {
+    "message": "የርቀት Sync መሰረዝን ደግመው ይሞክሩ"
+  },
+  "options_privacy_retry_all_data": {
+    "message": "ሁሉንም መረጃ መሰረዝ ደግመው ይሞክሩ"
+  },
+  "options_error_load": {
+    "message": "ቅንብሮችን መጫን አልተቻለም። ደግመው ለመሞከር ገፁን ዳግም ይጫኑ።"
+  },
+  "options_error_retry_boot": {
+    "message": "Focus Lockን ዳግም ማስጀመር አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_error_refresh_privacy": {
+    "message": "የግላዊነት ቅንብሮችን ማደስ አልተቻለም። ገፁን ዳግም ይጫኑ።"
+  },
+  "options_error_website_blocking": {
+    "message": "የድረ ገፅ እገዳን ማዘመን አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_error_change_sync": {
+    "message": "Chrome Syncን መቀየር አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_error_retry_sync": {
+    "message": "Chrome Syncን ደግመው መሞከር አልተቻለም። ደግመው ይሞክሩ።"
+  },
+  "options_error_save_settings": {
+    "message": "ቅንብሮችን ማስቀመጥ አልተቻለም። ገፁን ዳግም ጭነው ደግመው ይሞክሩ።"
+  },
+  "options_error_save_lists": {
+    "message": "ዝርዝሮችን ማስቀመጥ አልተቻለም። ገፁን ዳግም ጭነው ደግመው ይሞክሩ።"
+  }
+}
