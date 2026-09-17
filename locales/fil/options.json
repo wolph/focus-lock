@@ -324,7 +324,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "Ang site ay nanatiling available sa normal na oras.",
+    "message": "Ang site ay nanatiling makukuha sa normal na oras.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -342,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "Ang lahat ng sites ay nanatiling available sa normal na oras.",
+    "message": "Ang lahat ng sites ay nanatiling makukuha sa normal na oras.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -441,7 +441,7 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "I-uncheck ang site upang manatiling available habang ang ibang bahagi ng category ay nablok."
+    "message": "I-uncheck ang site upang manatiling makukuha habang ang ibang bahagi ng category ay nablok."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ site bulk actisas",
@@ -697,7 +697,7 @@
     "message": "This permanently burahsas every piece ng Pokus Lock data sa this device at any Pokus Lock copies left sa Chrome Sync:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Ang pag-delete ng lahat ay available lamang habang walang tumatakbong session. Focus Lock ay bumabalik sa setup."
+    "message": "Ang pag-delete ng lahat ay makukuha lamang habang walang tumatakbong session. Focus Lock ay bumabalik sa setup."
   },
   "options_privacy_error_local_history_clear": {
     "message": "Local history hindi maaaring be deleted. Try again."
@@ -808,7 +808,7 @@
     "message": "All Pokus Lock data"
   },
   "options_privacy_all_data_detail": {
-    "message": "Burahin ang bawat Focus Lock record sa device na ito at ang anumang Focus Lock copies sa Chrome Sync, pagkatapos magsimula ulit mula sa setup. Available habang walang tumatakbong session."
+    "message": "Burahin ang bawat Focus Lock record sa device na ito at ang anumang Focus Lock copies sa Chrome Sync, pagkatapos magsimula ulit mula sa setup. Makukuha habang walang tumatakbong session."
   },
   "options_privacy_resuming_all_clear": {
     "message": "Resumsag deletisa ng all Pokus Lock data."

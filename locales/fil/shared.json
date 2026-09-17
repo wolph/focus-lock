@@ -46,7 +46,7 @@
     "message": "Until stopped sessions keep Flexible or Friction and hindi maaaring use focus and break cycles."
   },
   "shared_hard_unavailable_reason": {
-    "message": "Hard lock ay hindi available para sa Until stopped: walang timer at walang manual end, ang session ay hindi kailanman magtatapos."
+    "message": "Hard lock ay hindi makukuha para sa Until stopped: walang timer at walang manual end, ang session ay hindi kailanman magtatapos."
   },
   "shared_end_session": {
     "message": "Tapusin session"
@@ -625,10 +625,10 @@
     "message": "Tapusin this session"
   },
   "shared_work_choose_tab_error": {
-    "message": "Pumili ng available na work tab."
+    "message": "Pumili ng makukuhang work tab."
   },
   "shared_work_tab_closed_error": {
-    "message": "Ang tab na iyan ay hindi na available. Pumili ng iba pang work tab."
+    "message": "Ang tab na iyan ay hindi na makukuha. Pumili ng iba pang work tab."
   },
   "shared_work_target_not_saved_error": {
     "message": "Ang session ay nagsimula, ngunit ang work tab ay hindi maaaring i-save. $CHOOSE$",

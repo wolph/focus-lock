@@ -36,13 +36,13 @@
     }
   },
   "overlay_target_checking": {
-    "message": "Sinusuri ang available na work tabs..."
+    "message": "Sinusuri ang makukuhang work tabs..."
   },
   "overlay_target_pick_tab": {
     "message": "Piliin ang iyong work tab"
   },
   "overlay_target_session_unavailable": {
-    "message": "Ang iyong focus session ay hindi available. Subukan ulit, o i-reload ang page na ito."
+    "message": "Ang iyong focus session ay hindi makukuha. Subukan ulit, o i-reload ang page na ito."
   },
   "overlay_target_lookup_failed": {
     "message": "Hindi maaaring load ang iyong work tab. Try again, or reload this page."
@@ -75,10 +75,10 @@
     "message": "Refresh mga tab"
   },
   "overlay_picker_available_tabs": {
-    "message": "Available na work tabs"
+    "message": "Makukuhang work tabs"
   },
   "overlay_picker_finding": {
-    "message": "Naghahanap ng available na tabs..."
+    "message": "Naghahanap ng makukuhang tabs..."
   },
   "overlay_picker_searching": {
     "message": "Searchsag trabaho tabs..."
@@ -87,7 +87,7 @@
     "message": "Savsag trabaho tab..."
   },
   "overlay_picker_no_tabs": {
-    "message": "Walang available na work tabs. Buksan ang site na allowed ng session na ito, pagkatapos i-refresh ang tabs."
+    "message": "Walang makukuhang work tabs. Buksan ang site na pinapayagan ng session na ito, pagkatapos i-refresh ang tabs."
   },
   "overlay_picker_no_matches": {
     "message": "No matching tabs. Try anoangr search or clear ang search."

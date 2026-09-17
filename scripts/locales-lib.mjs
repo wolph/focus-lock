@@ -375,6 +375,11 @@ const BORROWED_WORDS = new Set([
 
 /** Above this share of messages echoing their English source, a catalogue is not translated. */
 const MAX_ENGLISH_ECHO_SHARE = 0.15;
+/**
+ * Below this many comparable messages the share says nothing: two languages sharing a word in a
+ * handful of strings is ordinary, and only a whole catalogue makes the pattern visible.
+ */
+const MIN_ECHO_SAMPLE = 50;
 
 function contentWords(message) {
   return (
@@ -477,7 +482,7 @@ export function checkTranslation(locale, en, catalogue) {
   }
   if (!NEAR_EN_LOCALES.has(locale)) {
     const echo = englishEcho(en, catalogue);
-    if (echo.share > MAX_ENGLISH_ECHO_SHARE) {
+    if (echo.compared >= MIN_ECHO_SAMPLE && echo.share > MAX_ENGLISH_ECHO_SHARE) {
       errors.push(
         `${locale}: ${echo.echoed.length} of ${echo.compared} messages still echo the English written for the same key, ` +
           `for example ${echo.echoed.slice(0, 3).join(', ')}`,
