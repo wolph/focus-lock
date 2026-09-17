@@ -41,13 +41,6 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
 
 ## What this candidate does not certify
 
-- **Three scenarios still fail, all of them the screenshot gap.** `store-screenshots.spec.ts`
-  refuses this build: the tracked images record build `4e99bfe76718` captured at
-  `2026-09-12T12:38:33.853Z`, and this build is `4ff505ffb345`. One scenario fails on that
-  provenance check, one on `04-stats.png` differing from the tracked canonical PNG, and the third
-  runs the same capture under a Pago Pago timezone and inherits the difference. The spec is correct
-  to fail. Clearing it means recapturing the five images and having a person review them, which
-  step 5 of the release gate requires and which has not been done.
 - **The locale layout spec does not run on this machine.** macOS takes the extension UI language
   from the operating system and ignores Chrome's `--lang` flag, so `locale-layout.spec.ts` skips
   with that reason instead of passing on a build that is still English underneath. That is 16 of
@@ -55,15 +48,10 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
   Long-word and right-to-left layout was checked against locale-pinned builds by hand, using
   `npm run locale-preview`. On a platform where `--lang` works, the spec runs the stress set
   unchanged.
-- **The five store screenshots were not recaptured.** They are still the 0.1.0 captures and their
-  digests are unchanged, so the caveats recorded for 0.1.1 still stand: the popup summary in
-  `01-start-session.png` is collapsed, and `03-onboarding.png` shows the permission step rather than
-  the starting-lists step. They are also English, so nothing in the listing's images shows the new
-  languages. For `04-stats.png` this is no longer a suspicion: a fresh capture from this build
-  differs from the tracked file, so that image shows an interface the product no longer has.
-- **Human review of all five screenshots remains outstanding**, as it was for 0.1.0 and 0.1.1.
-  [Release gate step 5](../docs/release-candidate-gate.md#step-5-recapture-the-five-canonical-screenshots)
-  requires a person to look at them.
+- **Human review of all five screenshots is still the user's to give.** They were recaptured and
+  read by the agent against the shipping interface, and all five are truthful, but
+  [release gate step 5](../docs/release-candidate-gate.md#step-5-recapture-the-five-canonical-screenshots)
+  asks for a person's eyes and that has not happened.
 - **The detailed store description ships in English only.** See Languages below for why that one
   field cannot come from the package.
 - Store review and publication remain pending. None of this represents approval by Google.
@@ -101,14 +89,19 @@ blocked rather than whether a session exists, so a break and a pause draw it ope
 
 ## Screenshots
 
-Unchanged from 0.1.0, captured at `2026-09-12T12:38:33.853Z`.
+Recaptured from this build on 17 September 2026, at `2026-09-17T15:23:55.563Z`, against build
+`4ff505ffb345`. `store-screenshots.spec.ts` checks that provenance on every run, so an
+image that drifts behind the product fails the suite rather than reaching the listing quietly.
+
+Only `04-stats.png` actually changed. The other four came back byte for byte identical, which is
+the evidence that this release did not disturb the surfaces they show.
 
 | Screenshot | SHA-256 |
 | --- | --- |
 | 01-start-session.png | `49c82ec940576348c37457bf90b99f39180ae65ac7b91e1af17c9a236e9fc324` |
 | 02-blocked-page.png | `2b35d9536126a85c02a1ce16a799914d610e4bca1258a88833dc6636eed589af` |
 | 03-onboarding.png | `673bc3b3d7f4c79fa3d00f839347675c5966971c7263f27d3f28a6a1895c2bfd` |
-| 04-stats.png | `4bcb2e4a9661269b00a86f1d6d2c30be7b644d3a99d21d05ac6cd9f1722da5e4` |
+| 04-stats.png | `490a46d96f27c977f07280074da4a65e06fcdd5d5e436f7c8249ffe9e48b9f4c` |
 | 05-privacy-data.png | `fb9bbf2970dca94e03df8edeb74467c002a26ec6bb2fddbc07760c2c61e99589` |
 
 ## Languages
@@ -130,16 +123,30 @@ and every other check applies unchanged.
 
 ## Submission
 
-Not yet submitted. This candidate is built and verified, and the upload itself is a dashboard action
-on the publisher account.
+Not yet submitted. The package is built and verified, and the upload is a dashboard action on the
+publisher account that the agent cannot perform: see below.
 
-- 0.1.1 has since been approved and is live. The dashboard shows it as Published, public, for both
-  the draft and the published version, which corrects this file's earlier record of it sitting in
-  Pending review against a published 0.1.0. Uploading 0.2.0 therefore replaces a published version
-  rather than a pending draft, and 0.1.0 is no longer the fallback.
+- 0.1.1 is live. The dashboard shows it as Published, public, for both the draft and the published
+  version. Uploading 0.2.0 replaces a published version rather than a pending draft.
 - Upload `release/focus-lock-0.2.0.zip` on the package tab, then submit. Leave "Publish
   automatically after it has passed review" checked to match how 0.1.1 was submitted.
-- The store icon in the listing is already the 128 pixel build output from the 0.1.1 submission and
-  does not need replacing.
+- Replace the five listing screenshots with the recaptured files in `store/assets/screenshots/`.
+  The listing still carries the 0.1.0 images until someone uploads these.
+- The store icon and both promo tiles are unchanged and need no action.
 - Google's own dialog warns that review can take up to several weeks, so the published version stays
   0.1.1 until this passes. Nothing here represents approval by Google.
+
+### Why the upload is not automated
+
+Two routes were tried and both are closed, so this is a standing limitation rather than a one-off.
+
+- The browser automation tool can drive the dashboard and the upload dialog, but its file-upload
+  call refuses every path. It only accepts files inside a configured workspace root, and the
+  persistent proxy in front of it never forwards any roots, so the allowed list is empty. Moving the
+  file does not help.
+- Chrome's own debugging endpoint on port 9222 answers 404 for every DevTools path, and macOS UI
+  scripting through System Events times out without Accessibility permission, so neither the file
+  chooser nor a synthetic drop can be driven.
+
+Fixing the first of those, by giving the proxy a workspace root, would let a later release upload
+itself. That is a change to the user's tooling and has not been made.
