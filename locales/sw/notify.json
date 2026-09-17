@@ -1,9 +1,9 @@
 {
   "notify_session_complete_title": {
-    "message": "Focus session kamili"
+    "message": "Mtazamo sessikwenye complete"
   },
   "notify_session_complete_body": {
-    "message": "Kikao chako cha fokasi kimekamilika."
+    "message": "Your focus sessikwenye fkatikaished."
   },
   "notify_schedule_window_body": {
     "message": "Locked until $END$.",
@@ -15,49 +15,49 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Focus schedule could hapanat anza"
+    "message": "Mtazamo schedule could not start"
   },
   "notify_schedule_unavailable_body": {
-    "message": "Website blocking is hapanat wezeshad. Finish setijuu or grant website access, then try again."
+    "message": "Website blockkatikag is not enabled. Fkatikaish setup au grant website access, then try agakatika."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Setijuu was kamilid in ahapanather tab."
+    "message": "Setup was completed katika another tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Setijuu changed in ahapanather tab. The latest choices were repakiaed."
+    "message": "Setup changed katika another tab. The latest choices were reloaded."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Setijuu changed in ahapanather tab. Repakia setijuu before finishing."
+    "message": "Setup changed katika another tab. Reload setup bekwae fkatikaishkatikag."
   },
   "notify_setup_not_complete": {
     "message": "Setijuu is hapanat kamili."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "Setijuu is hapanat ready to finish."
+    "message": "Setup is not ready kwa fkatikaish."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Setijuu storage choice changed. Repakia setijuu before finishing."
+    "message": "Setup stauage choice changed. Reload setup bekwae fkatikaishkatikag."
   },
   "notify_onboarding_storage_failed": {
-    "message": "Operesheni ya hifadhi ya onboarding imeshindwa."
+    "message": "Onboardkatikag stauage operatikwenye failed."
   },
   "notify_onboarding_operation_failed": {
-    "message": "Operesheni ya onboarding imeshindwa."
+    "message": "Onboardkatikag operatikwenye failed."
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lock could hapanat check website access. Jaribu tena setijuu or repakia the extension."
+    "message": "Mtazamo Lock could not check website access. Retry setup au reload the extensikwenye."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Website access is granted, but Focus Lock could hapanat wezesha blocking. Jaribu tena setijuu or repakia the extension."
+    "message": "Website access is granted, but Mtazamo Lock could not enable blockkatikag. Retry setup au reload the extensikwenye."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Website access is unavailable, and Focus Lock could hapanat finish blocking cleanjuu. Jaribu tena setijuu or repakia the extension."
+    "message": "Website access is unavailable, na Mtazamo Lock could not fkatikaish blockkatikag cleanup. Retry setup au reload the extensikwenye."
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lock received an inconsistent website access hali. Jaribu tena setijuu or repakia the extension."
+    "message": "Mtazamo Lock received an katikackwenyesistent website access state. Retry setup au reload the extensikwenye."
   },
   "notify_boot_not_finished": {
-    "message": "Focus Lock did hapanat finish anzaing: $REASON$",
+    "message": "Mtazamo Lock did not fkatikaish startkatikag: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -66,69 +66,69 @@
     }
   },
   "notify_unknown_error": {
-    "message": "unkhapanawn hitilafu"
+    "message": "unknown errau"
   },
   "notify_nothing_to_reset": {
-    "message": "Focus Lock is running, hapanathing to seti juuyai"
+    "message": "Mtazamo Lock is runnkatikag, nothkatikag kwa reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Focus Lock canhapanat seti juuyai a runtime that is still committed inside a policy generation"
+    "message": "Mtazamo Lock cannot reset a runtime that is still committed katikaside a policy generatikwenye"
   },
   "notify_data_clear_retry_unavailable": {
     "message": "Data futa jaribu tena is hapanat available."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Lemaza Panga before deleting pangaed data"
+    "message": "Kuzima Sync bekwae deletkatikag synced data"
   },
   "notify_work_gate_busy": {
-    "message": "Fokasi Lock is still finishing an earlier change. Try again in a moment."
+    "message": "Mtazamo Lock is still fkatikaishkatikag an earlier change. Try agakatika katika a moment."
   },
   "notify_work_gate_stuck": {
-    "message": "The fungua gate could hapanat be fungad. Try again."
+    "message": "The open gate could not be closed. Try agakatika."
   },
   "notify_work_tab_unavailable": {
-    "message": "Kichupo cha kazi hakipo."
+    "message": "The wauk tab is unavailable."
   },
   "notify_settings_sync_limit": {
-    "message": "Mpangilios exceed the 8 KB Chrome Panga limit. Ondoa schedule entries or shorten intentions, then try again."
+    "message": "Mipangilio exceed the 8 KB Chrome Sync limit. Kukwenyedoa schedule entries au shauten katikatentikwenyes, then try agakatika."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Panga limit. Ondoa custom or whitelist rules, then try again."
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Kukwenyedoa cuskwam au whitelist rules, then try agakatika."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "a hard session is running: removing blocked sites unlocks when it mwishos"
+    "message": "a hard sessikwenye is runnkatikag: removkatikag blocked sites unlocks wakati it ends"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a hard session is running: new whitelist entries unlock when it mwishos"
+    "message": "a hard sessikwenye is runnkatikag: new whitelist entries unlock wakati it ends"
   },
   "notify_guard_lists_disable_category": {
-    "message": "a hard session is running: disabling categories unlocks when it mwishos"
+    "message": "a hard sessikwenye is runnkatikag: disablkatikag categauies unlocks wakati it ends"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "a hard session is running: new exclusions unlock when it mwishos"
+    "message": "a hard sessikwenye is runnkatikag: new exclusikwenyes unlock wakati it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a hard session is running: weakening the default strictness waits until it mwishos"
+    "message": "a hard sessikwenye is runnkatikag: weakenkatikag the default strictness waits until it ends"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "kikao kigumu kinaendelea: kufupi kuchelewesha kwa nia kunefanya kiwango kuwa dhaifu"
+    "message": "a hard sessikwenye is runnkatikag: shautenkatikag the deliberatikwenye delay weakens the gate"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "a hard session is running: dropping the ainad phrase weakens the gate"
+    "message": "a hard sessikwenye is runnkatikag: droppkatikag the typed phrase weakens the gate"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "kikao kigumu kinaendelea: kuinua kiwango cha kiasi cha kupumzika nafundi zaidi ya kumkimbia"
+    "message": "a hard sessikwenye is runnkatikag: raiskatikag the pause earn rate funds maue escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "kikao kigumu kinaendelea: kuinua kofia ya kupumzika nafundi zaidi ya kumkimbia"
+    "message": "a hard sessikwenye is runnkatikag: raiskatikag the pause cap funds maue escapes"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "kikao kigumu kinaendelea: kufupi kupumzika kupunguza gharama yake"
+    "message": "a hard sessikwenye is runnkatikag: shautenkatikag pauses lowers their cost"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "kikao kigumu kinaendelea: kufupi kufungua inakupunguza gharama yake"
+    "message": "a hard sessikwenye is runnkatikag: shautenkatikag unlocks lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a hard session is running: its schedule entry canhapanat be weakened until it mwishos"
+    "message": "a hard sessikwenye is runnkatikag: its schedule entry cannot be weakened until it ends"
   }
 }

@@ -1,1 +1,385 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Focus Lock statistika"
+  },
+  "stats_page_title": {
+    "message": "Tavo susikaupimo įrašas"
+  },
+  "stats_loading": {
+    "message": "Įkeliama tavo statistika."
+  },
+  "stats_load_error": {
+    "message": "Nepavyko įkelti statistikos. Įkelk puslapį iš naujo ir bandyk vėl."
+  },
+  "stats_partial_error_both": {
+    "message": "Valandiniai bandymai ir svetainių prieigos kredito nustatymai nepasiekiami."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Valandiniai bandymai nepasiekiami."
+  },
+  "stats_partial_error_economy": {
+    "message": "Svetainių prieigos kredito nustatymai nepasiekiami."
+  },
+  "stats_scope_synced": {
+    "message": "Sinchronizuotos sumos iš šios Chrome paskyros. Tik vietiniai skydeliai pažymėti."
+  },
+  "stats_scope_local": {
+    "message": "Sumos iš šio įrenginio. Focus Lock statistika nesinchronizuojama."
+  },
+  "stats_scope_checking": {
+    "message": "Tikrinama, ar šios sumos sinchronizuojamos."
+  },
+  "stats_scope_unavailable": {
+    "message": "Statistikos apimtis nežinoma. Į sumas gali patekti sinchronizuoti duomenys. Valandiniai bandymai ir paskutinės sesijos yra iš šio įrenginio."
+  },
+  "stats_scope_retry": {
+    "message": "Kartoti apimties patikrą"
+  },
+  "stats_empty": {
+    "message": "Statistika atsiras po pirmos tavo sesijos."
+  },
+  "stats_tile_focus_today": {
+    "message": "Susikaupimas šiandien"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Susikaupimas per 7 dienas"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Šiandien blokuoti bandymai"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Šiandien atmestos vartų užklausos"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Šiandien išleistas prieigos kreditas"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Visos svetainės $ALL_SITES$, viena svetainė $ONE_SITE$, uždirbta $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "uždirbta $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Serija"
+  },
+  "stats_streak_empty": {
+    "message": "Tavo serija prasideda pirmą susikaupimo dieną."
+  },
+  "stats_streak_unit_one": {
+    "message": "diena"
+  },
+  "stats_streak_unit_other": {
+    "message": "dienų"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "sukauptas $COUNT$ užšaldymo žetonas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "sukaupta $COUNT$ užšaldymo žetonų",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Serijos užšaldymas: viena praleista diena padengta"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktyvi diena šį mėnesį ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktyvių dienų šį mėnesį ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktyvios $MONTH$ dienos: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "$MONTH$ aktyvių dienų nėra.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Susikaupimas, paskutinės 14 dienų"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Susikaupimo minutės atsiras po pirmos tavo sesijos."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Blokuoti bandymai, paskutinės 14 dienų"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Blokuoti bandymai atsiras čia, kai sesija pirmą kartą ką nors sugaus."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Dažniausiai blokuotos svetainės, paskutinės 30 dienų"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Kol kas nieko neblokuota. Puiki pradžia."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Bandymai pagal valandas, tik šis įrenginys"
+  },
+  "stats_chart_other_site": {
+    "message": "kita"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ min.",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blokuotas bandymas",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blokuotų bandymų",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Stulpelinė diagrama"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Horizontali stulpelinė diagrama"
+  },
+  "stats_chart_description_bar": {
+    "message": "Stulpelinė diagrama. Duomenų taškus peržiūrėk klaviatūra arba atverk Rodyti lentele, kad pamatytum tas pačias reikšmes."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Horizontali stulpelinė diagrama. Duomenų taškus peržiūrėk klaviatūra arba atverk Rodyti lentele, kad pamatytum tas pačias reikšmes."
+  },
+  "stats_chart_empty_default": {
+    "message": "Duomenų kol kas nėra."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "Rodyti lentele"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategorija"
+  },
+  "stats_chart_table_value": {
+    "message": "Reikšmė"
+  },
+  "stats_heat_strip_label": {
+    "message": "24 valandų blokuotų bandymų intensyvumo juosta"
+  },
+  "stats_sessions_heading": {
+    "message": "Paskutinės šio įrenginio sesijos"
+  },
+  "stats_sessions_empty": {
+    "message": "Pirma tavo sesija atsiras čia."
+  },
+  "stats_sessions_col_date": {
+    "message": "Data"
+  },
+  "stats_sessions_col_start": {
+    "message": "Pradžia"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planuota"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Susikaupta"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Visos svetainės"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Viena svetainė"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Ketinimas"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Baigtis"
+  },
+  "stats_sessions_col_source": {
+    "message": "Šaltinis"
+  },
+  "stats_session_no_intention": {
+    "message": "Ketinimo nėra"
+  },
+  "stats_session_article_label": {
+    "message": "Sesija: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "rankinė"
+  },
+  "stats_session_source_schedule": {
+    "message": "tvarkaraštis"
+  },
+  "stats_session_source_scheduled": {
+    "message": "pagal tvarkaraštį"
+  },
+  "stats_outcome_completed": {
+    "message": "Užbaigta"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Baigta anksčiau"
+  },
+  "stats_outcome_running": {
+    "message": "Vyksta"
+  },
+  "stats_streak_unit_few": {
+    "message": "dienos"
+  },
+  "stats_streak_unit_many": {
+    "message": "dienos"
+  },
+  "stats_streak_freeze_tokens_few": {
+    "message": "sukaupti $COUNT$ užšaldymo žetonai",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_many": {
+    "message": "sukaupta $COUNT$ užšaldymo žetono",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_active_days_few": {
+    "message": "$COUNT$ aktyvios dienos šį mėnesį ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_many": {
+    "message": "$COUNT$ aktyvios dienos šį mėnesį ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_blocked_count_few": {
+    "message": "$COUNT$ blokuoti bandymai",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_blocked_count_many": {
+    "message": "$COUNT$ blokuoto bandymo",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

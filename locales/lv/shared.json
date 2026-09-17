@@ -1,0 +1,636 @@
+{
+  "shared_until_stopped": {
+    "message": "Līdz apturēšanai"
+  },
+  "shared_preset_short": {
+    "message": "īsa"
+  },
+  "shared_preset_focus": {
+    "message": "koncentrēšanās"
+  },
+  "shared_preset_deep_work": {
+    "message": "dziļais darbs"
+  },
+  "shared_deep_work_note": {
+    "message": "Tā ir izvēle, nevis zinātne: viens garš nepārtraukts bloks bez automātiskiem pārtraukumiem."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "kopā $MINUTES$ min, ar $FOCUS$ min koncentrēšanās blokiem",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ min nepārtrauktas koncentrēšanās",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Sākt līdz apturēšanai"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Bloķēt līdz atbloķēšanai ar roku"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "Sesijas līdz apturēšanai paliek Elastīgas vai ar Berzi un nevar izmantot koncentrēšanās un pārtraukumu ciklus."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "Stingra bloķēšana nav pieejama režīmā Līdz apturēšanai: bez taimera un bez beigšanas ar roku sesija nekad nebeigtos."
+  },
+  "shared_end_session": {
+    "message": "Beigt sesiju"
+  },
+  "shared_unlock": {
+    "message": "Atbloķēt"
+  },
+  "shared_gate_wait_none": {
+    "message": "bez gaidīšanas"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ sekunžu gaidīšana",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ un ierakstīts teikums",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Darbojas, līdz to beidz ar $LABEL$. Cikli izslēgti.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Darbojas, līdz to atbloķē: $REQUIREMENT$, tad $LABEL$. Cikli izslēgti.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "Ciklus nosaka režīms Līdz apturēšanai"
+  },
+  "shared_mode_blacklist": {
+    "message": "Bloķēt atlasītās vietnes"
+  },
+  "shared_mode_whitelist": {
+    "message": "Atļaut tikai atlasītās vietnes"
+  },
+  "shared_focus_time_label": {
+    "message": "Koncentrēšanās laiks"
+  },
+  "shared_clock_focus_phase": {
+    "message": "koncentrēšanās fāze"
+  },
+  "shared_clock_total_session": {
+    "message": "visa sesija"
+  },
+  "shared_clock_pause": {
+    "message": "pauze"
+  },
+  "shared_clock_break": {
+    "message": "pārtraukums"
+  },
+  "shared_badge_indefinite": {
+    "message": "IESL"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock startē. Tiek piemēroti tavi noteikumi."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "Sesija beigusies. Tiek pabeigta pārlūka sakārtošana."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock neizdevās startēt. Tiek pabeigta pārlūka sakārtošana."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock neizdevās sakārtot nepabeigtu startēšanu."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock neizdevās pabeigt pārlūka sakārtošanu."
+  },
+  "shared_retry_cleanup": {
+    "message": "Atkārtot sakārtošanu"
+  },
+  "shared_end_failed": {
+    "message": "Neizdevās beigt sesiju. Mēģini vēlreiz."
+  },
+  "shared_retry_failed": {
+    "message": "Neizdevās atkārtot sakārtošanu. Mēģini vēlreiz."
+  },
+  "shared_action_failed": {
+    "message": "Neizdevās izpildīt šo darbību. Mēģini vēlreiz."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Neizdevās atgriezties pie darba. Mēģini vēlreiz."
+  },
+  "shared_data_clear_pending": {
+    "message": "Tiek dzēsti Focus Lock dati. Tiek pabeigta sakārtošana."
+  },
+  "shared_data_clear_error": {
+    "message": "Neizdevās izdzēst datus. Mēģini vēlreiz."
+  },
+  "shared_schedule_window_label": {
+    "message": "Līdz loga beigām"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Sākas pēc grafika un darbojas, līdz to apturi: Elastīgai - Beigt sesiju, Berzei - Atbloķēt caur apdomāšanās vārtiem. Cikli izslēgti."
+  },
+  "shared_schedule_started_title": {
+    "message": "Grafika sesija sākusies"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Aktīva, līdz to apturi."
+  },
+  "shared_settings_indefinite": {
+    "message": "Notiek sesija līdz apturēšanai. Apskati vai beidz to rīkjoslas logā."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock startē. Tiek pārbaudīta vietņu piekļuve un piemēroti tavi noteikumi."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock neizdevās pabeigt pārlūka sakārtošanu. Atver logu un mēģini vēlreiz."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "Sesijas vadīklas ir rīkjoslas logā. Aktīvā sesija patur noteikumus, kādi bija tās sākumā."
+  },
+  "shared_settings_timed": {
+    "message": "Sesija ar taimeri aktīva līdz $TIME$. Tā beidzas pati. Tiešo stāvokli skaties rīkjoslas logā.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Pabeigta"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Pabeigta ar roku"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Beigta pirms laika"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Beigta: zaudēta vietņu piekļuve"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Beigta: neizdevās sagatavot bloķēšanu"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Beigta: neizdevās izveidot taimeri"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Beigta: neizdevās piemērot lapām"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Beigta: neizdevās atjaunot stāvokli"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ min",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ min",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Sesija tiek atjaunināta"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Mazāk par minūti"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ līdz pārtraukumam",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ līdz sesijas beigām",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "Izmaksas pārsniedz kredīta ierobežojumu"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "Kredīts atkal krājas koncentrēšanās laikā"
+  },
+  "shared_credit_off": {
+    "message": "Kredīta krāšana ir izslēgta"
+  },
+  "shared_not_enough_time": {
+    "message": "Šajā koncentrēšanās blokā nepietiek laika"
+  },
+  "shared_ready_in": {
+    "message": "Būs gatavs pēc $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Bloķē kategorija $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "Bloķē tavs bloķēšanas saraksts"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Nav tavā atļauto sarakstā"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Bloķē šī sesija"
+  },
+  "shared_verdict_allow_list": {
+    "message": "Ir tavā atļauto sarakstā"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Vienmēr atļauts"
+  },
+  "shared_verdict_unlock": {
+    "message": "Uz laiku atbloķēts"
+  },
+  "shared_verdict_excluded": {
+    "message": "Izslēgts no atlasītas kategorijas"
+  },
+  "shared_verdict_no_session": {
+    "message": "Nenotiek neviena koncentrēšanās sesija"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Atļauj šī sesija"
+  },
+  "shared_category_social": {
+    "message": "Sociālie tīkli"
+  },
+  "shared_category_video": {
+    "message": "Video un straumēšana"
+  },
+  "shared_category_news": {
+    "message": "Ziņas"
+  },
+  "shared_category_mail": {
+    "message": "Pasts"
+  },
+  "shared_category_shopping": {
+    "message": "Iepirkšanās"
+  },
+  "shared_category_gaming": {
+    "message": "Spēles"
+  },
+  "shared_category_forums": {
+    "message": "Forumi un garlaicība"
+  },
+  "shared_synced_settings": {
+    "message": "Iestatījumi"
+  },
+  "shared_synced_lists": {
+    "message": "Bloķēšanas un atļauto saraksti"
+  },
+  "shared_synced_credit": {
+    "message": "Vietņu piekļuves kredīts"
+  },
+  "shared_synced_streaks": {
+    "message": "Sērijas"
+  },
+  "shared_synced_aggregates": {
+    "message": "Bloķēto mēģinājumu kopsavilkumi pa domēniem"
+  },
+  "shared_local_full_urls": {
+    "message": "Pilnas URL adreses"
+  },
+  "shared_local_intentions": {
+    "message": "Koncentrēšanās nodomi"
+  },
+  "shared_local_events": {
+    "message": "Detalizēti sesijas notikumi"
+  },
+  "shared_local_runtime": {
+    "message": "Aktīvā sesija"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Dažus vecākas versijas sinhronizētos datus neizdevās nolasīt, tāpēc tie tika atiestatīti."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Pirms visu datu dzēšanas beidz aktīvo sesiju."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "Produkta navigācija"
+  },
+  "shared_nav_overview": {
+    "message": "Pārskats"
+  },
+  "shared_nav_settings": {
+    "message": "Iestatījumi"
+  },
+  "shared_section_blocking": {
+    "message": "Bloķēšana"
+  },
+  "shared_section_schedule": {
+    "message": "Grafiks"
+  },
+  "shared_section_behavior": {
+    "message": "Sesijas uzvedība"
+  },
+  "shared_section_budget": {
+    "message": "Vietņu piekļuves kredīts"
+  },
+  "shared_section_notifications": {
+    "message": "Paziņojumi"
+  },
+  "shared_section_privacy": {
+    "message": "Privātums un dati"
+  },
+  "shared_theme_auto": {
+    "message": "Automātiska"
+  },
+  "shared_theme_light": {
+    "message": "Gaiša"
+  },
+  "shared_theme_dark": {
+    "message": "Tumša"
+  },
+  "shared_theme_button": {
+    "message": "Motīvs: $CURRENT$. Pārslēgt uz $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "Neizdevās saglabāt motīvu. Pārlādē lapu un mēģini vēlreiz."
+  },
+  "shared_host_search_label": {
+    "message": "Meklēt $TITLE$ vietnes",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Neviena $TITLE$ vietne neatbilst tavam meklējumam.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "Rāda $SHOWN$ no $MATCHED$ vietnēm. Precizē meklējumu.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "Rāda $MATCHED$ no $TOTAL$ vietnēm.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Rāda visas $TOTAL$ vietnes.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "Beigt sesiju"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock startē"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "Tiek piemēroti tavi noteikumi."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Šī lapa netika ielādēta. Tā ielādēsies pati, kad sesija beigsies."
+  },
+  "shared_overlay_next_step": {
+    "message": "Tavs nākamais solis"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Atpakaļ pie darba"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Izvēlēties darba cilni"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Mainīt darba cilni"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Vajag pārtraukumu vai piekļuvi?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Aiziet vari jebkurā brīdī. Vietņu piekļuve tērē kredītu."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Neņemt vērā gaidīšanu un tomēr beigt"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock neizdevās atjaunināt šo darbību. Mēģini vēlreiz."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ piekļuves kredīta",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Turpini savu pašreizējo uzdevumu"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Atbloķēt visas vietnes"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Atbloķēt šo vietni"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - maksā $COST$ kredīta",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Bloķēts līdz $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Tu rakstīji: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Atbloķēt $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Turpināt koncentrēties"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Ieraksti šo, lai apstiprinātu:"
+  },
+  "shared_gate_end_title": {
+    "message": "Beigt šo sesiju"
+  },
+  "shared_minutes_zero": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

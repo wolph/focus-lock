@@ -1,1 +1,344 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "Until stopped"
+  },
+  "shared_preset_short": {
+    "message": "short"
+  },
+  "shared_preset_focus": {
+    "message": "focus"
+  },
+  "shared_preset_deep_work": {
+    "message": "deep work"
+  },
+  "shared_start_until_stopped": {
+    "message": "Start until stopped"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Lock until manual unlock"
+  },
+  "shared_end_session": {
+    "message": "End session"
+  },
+  "shared_unlock": {
+    "message": "Unlock"
+  },
+  "shared_gate_wait_none": {
+    "message": "no wait"
+  },
+  "shared_gate_wait": {
+    "message": "a $SECONDS$-second wait",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_mode_blacklist": {
+    "message": "Block selected sites"
+  },
+  "shared_mode_whitelist": {
+    "message": "Allow selected sites only"
+  },
+  "shared_focus_time_label": {
+    "message": "Focus time"
+  },
+  "shared_clock_focus_phase": {
+    "message": "focus phase"
+  },
+  "shared_clock_total_session": {
+    "message": "total session"
+  },
+  "shared_clock_pause": {
+    "message": "pause"
+  },
+  "shared_clock_break": {
+    "message": "break"
+  },
+  "shared_badge_indefinite": {
+    "message": "ON"
+  },
+  "shared_retry_cleanup": {
+    "message": "Retry cleanup"
+  },
+  "shared_schedule_window_label": {
+    "message": "Until window ends"
+  },
+  "shared_schedule_started_title": {
+    "message": "Focus schedule started"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Active until you stop it."
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Completed"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Completed manually"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Ended early"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Ended: timer setup failed"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Ended: recovery failed"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ h $MINUTES$ m",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "Updating session"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Less than a minute"
+  },
+  "shared_ready_in": {
+    "message": "Ready in $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Blocked by $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Not on your allow list"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Blocked by this session"
+  },
+  "shared_verdict_allow_list": {
+    "message": "On your allow list"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Always allowed"
+  },
+  "shared_verdict_unlock": {
+    "message": "Temporarily unlocked"
+  },
+  "shared_verdict_no_session": {
+    "message": "No active focus session"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Allowed by this session"
+  },
+  "shared_category_social": {
+    "message": "Social media"
+  },
+  "shared_category_video": {
+    "message": "Video and streaming"
+  },
+  "shared_category_news": {
+    "message": "News"
+  },
+  "shared_category_mail": {
+    "message": "Mail"
+  },
+  "shared_category_shopping": {
+    "message": "Shopping"
+  },
+  "shared_category_gaming": {
+    "message": "Gaming"
+  },
+  "shared_category_forums": {
+    "message": "Forums and boredom"
+  },
+  "shared_synced_settings": {
+    "message": "Settings"
+  },
+  "shared_synced_lists": {
+    "message": "Block and allow lists"
+  },
+  "shared_synced_credit": {
+    "message": "Site access credit"
+  },
+  "shared_synced_streaks": {
+    "message": "Streaks"
+  },
+  "shared_local_full_urls": {
+    "message": "Full URLs"
+  },
+  "shared_local_intentions": {
+    "message": "Focus intentions"
+  },
+  "shared_local_events": {
+    "message": "Detailed session events"
+  },
+  "shared_local_runtime": {
+    "message": "Active runtime session"
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "Product navigation"
+  },
+  "shared_nav_overview": {
+    "message": "Overview"
+  },
+  "shared_nav_settings": {
+    "message": "Settings"
+  },
+  "shared_section_blocking": {
+    "message": "Blocking"
+  },
+  "shared_section_schedule": {
+    "message": "Schedule"
+  },
+  "shared_section_behavior": {
+    "message": "Session behavior"
+  },
+  "shared_section_budget": {
+    "message": "Site access credit"
+  },
+  "shared_section_notifications": {
+    "message": "Notifications"
+  },
+  "shared_section_privacy": {
+    "message": "Privacy and data"
+  },
+  "shared_theme_auto": {
+    "message": "Auto"
+  },
+  "shared_theme_light": {
+    "message": "Light"
+  },
+  "shared_theme_dark": {
+    "message": "Dark"
+  },
+  "shared_host_search_label": {
+    "message": "Search $TITLE$ sites",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "End the session"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock is starting"
+  },
+  "shared_overlay_next_step": {
+    "message": "Your next step"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Back to work"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Choose a work tab"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Change work tab"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Unlock all sites"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Unlock this site"
+  },
+  "shared_overlay_locked_until": {
+    "message": "Locked until $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "You said: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "Unlock $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Keep focusing"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Type this to confirm:"
+  },
+  "shared_gate_end_title": {
+    "message": "End this session"
+  }
+}

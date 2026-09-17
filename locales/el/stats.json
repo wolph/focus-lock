@@ -1,1 +1,162 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Στατιστικές Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Το Ρεκόρ Εστίασής σας"
+  },
+  "stats_loading": {
+    "message": "Loading your stats."
+  },
+  "stats_scope_retry": {
+    "message": "Retry scope check"
+  },
+  "stats_tile_focus_today": {
+    "message": "Focus today"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Focus in the last 7 days"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Attempts blocked today"
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ earned",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Streak"
+  },
+  "stats_streak_unit_one": {
+    "message": "day"
+  },
+  "stats_streak_unit_other": {
+    "message": "days"
+  },
+  "stats_chart_focus_heading": {
+    "message": "Focus, last 14 days"
+  },
+  "stats_chart_other_site": {
+    "message": "other"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blocked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blocked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Bar chart"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Horizontal bar chart"
+  },
+  "stats_chart_empty_default": {
+    "message": "No data yet."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "View as table"
+  },
+  "stats_chart_table_category": {
+    "message": "Category"
+  },
+  "stats_chart_table_value": {
+    "message": "Value"
+  },
+  "stats_sessions_col_date": {
+    "message": "Date"
+  },
+  "stats_sessions_col_start": {
+    "message": "Start"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planned"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Focused"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "All sites"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "One site"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Intention"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Outcome"
+  },
+  "stats_sessions_col_source": {
+    "message": "Source"
+  },
+  "stats_session_no_intention": {
+    "message": "No intention"
+  },
+  "stats_session_article_label": {
+    "message": "Session: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "manual"
+  },
+  "stats_session_source_schedule": {
+    "message": "schedule"
+  },
+  "stats_session_source_scheduled": {
+    "message": "scheduled"
+  },
+  "stats_outcome_completed": {
+    "message": "Completed"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Ended early"
+  },
+  "stats_outcome_running": {
+    "message": "Running"
+  }
+}

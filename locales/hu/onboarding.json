@@ -1,1 +1,177 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "A Focus Lock beállítása"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock beállítás"
+  },
+  "onboarding_progress": {
+    "message": "$STEP$. lépés / $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "A mentett beállítási haladásod nem volt visszaállítható. Kezdjük elölről a jelenlegi alapértékeiddel."
+  },
+  "onboarding_complete_heading": {
+    "message": "A beállítás kész"
+  },
+  "onboarding_complete_body": {
+    "message": "A választásaid mentve. Nyisd meg a Focus Lockot a Chrome eszköztáráról, és indíts egy menetet."
+  },
+  "onboarding_error_heading": {
+    "message": "A beállítás nem érhető el"
+  },
+  "onboarding_error_body": {
+    "message": "A beállítást nem sikerült betölteni. Próbáld újra."
+  },
+  "onboarding_retry_button": {
+    "message": "Újra"
+  },
+  "onboarding_save_error": {
+    "message": "A beállítási haladást nem sikerült menteni. Próbáld újra."
+  },
+  "onboarding_enable_error": {
+    "message": "Az oldalblokkolást nem sikerült bekapcsolni. Próbáld újra."
+  },
+  "onboarding_finish_error": {
+    "message": "A beállítást nem sikerült befejezni. A választásaid megmaradtak. Próbáld újra."
+  },
+  "onboarding_lists_heading": {
+    "message": "Válaszd ki a kiinduló tiltólistádat"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "$MODE$ módban a bekapcsolt kategóriák és a külön blokkolt oldalak nem érhetők el.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$ módban az engedélyezési listádon kívül semmi nem érhető el.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Ezek a választások lesznek a következő menetek alapértékei. Később bármikor módosíthatod őket."
+  },
+  "onboarding_lists_legend": {
+    "message": "Ajánlott oldalkategóriák"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ oldal",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ oldal",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "$CATEGORY$ oldalainak megjelenítése",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "$CATEGORY$ oldalainak elrejtése",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ domainjei",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Tovább"
+  },
+  "onboarding_access_heading": {
+    "message": "Oldalblokkolás bekapcsolása"
+  },
+  "onboarding_access_local_matching": {
+    "message": "A Focus Lock helyben nézi meg az oldalak címét, hogy összevesse őket a kiválasztott kategóriáiddal és oldalaiddal. Az oldalhozzáférést arra használja, hogy megjelenítse a blokkoló képernyőjét, és hogy a menet végén helyreállítsa az érintett oldalakat."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "A kategóriák és az egyéni domainek bármelyik oldalra vonatkozhatnak. A Chrome ezért ezt a jogosultságot fogja kérni:"
+  },
+  "onboarding_access_capability": {
+    "message": "Az összes adatod olvasása és módosítása minden webhelyen"
+  },
+  "onboarding_access_scope_note": {
+    "message": "A Focus Lock csak addig használja ezt a hozzáférést, amíg a blokkolási szabályaidat alkalmazza."
+  },
+  "onboarding_access_denied": {
+    "message": "A Chrome nem adta meg az oldalhozzáférést. Újrapróbálhatod."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Az oldalhozzáférés megvan, de a Focus Lock nem tudta bekapcsolni a blokkolást. Ismételd meg a beállítást, vagy töltsd újra a bővítményt."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Oldalblokkolás bekapcsolása"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Most nem"
+  },
+  "onboarding_sync_heading": {
+    "message": "Válaszd ki, hol tároljuk a beállításaidat"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Szinkronizálás a Chrome-eszközök között"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Az alább jóváhagyott adatok a beállítás befejezése után a Chrome-szinkronizálást fogják használni."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Minden Focus Lock adat ebben a Chrome-profilban marad."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Szinkronizált"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Csak helyi"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "A Focus Lock fejlesztőjéhez semmi nem jut el."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Beállítás befejezése szinkronizálással"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Beállítás befejezése szinkronizálás nélkül"
+  }
+}

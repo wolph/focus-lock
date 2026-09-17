@@ -1,1 +1,627 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "रोकने तक"
+  },
+  "shared_preset_short": {
+    "message": "छोटा"
+  },
+  "shared_preset_focus": {
+    "message": "फोकस"
+  },
+  "shared_preset_deep_work": {
+    "message": "गहरा काम"
+  },
+  "shared_deep_work_note": {
+    "message": "यह पसंद है, विज्ञान नहीं: एक लंबा बिना रुकावट का ब्लॉक, बिना अपने आप मिलने वाले ब्रेक के।"
+  },
+  "shared_timed_hint_cycles": {
+    "message": "कुल $MINUTES$ मिनट, $FOCUS$ मिनट के फोकस ब्लॉक के साथ",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ मिनट बिना रुकावट फोकस",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "रोकने तक शुरू करें"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "खुद अनलॉक करने तक लॉक करें"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "रोकने तक चलने वाले सेशन लचीला या विलंब वाला ही रहते हैं और फोकस-ब्रेक चक्र नहीं चला सकते।"
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "रोकने तक वाले सेशन के लिए सख्त लॉक उपलब्ध नहीं है: न टाइमर और न खुद समाप्त करने का रास्ता हो, तो सेशन कभी खत्म ही नहीं होगा।"
+  },
+  "shared_end_session": {
+    "message": "सेशन समाप्त करें"
+  },
+  "shared_unlock": {
+    "message": "अनलॉक करें"
+  },
+  "shared_gate_wait_none": {
+    "message": "बिना प्रतीक्षा"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ सेकंड की प्रतीक्षा",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ और एक टाइप किया गया वाक्य",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "तब तक चलेगा जब तक आप $LABEL$ नहीं दबाते। चक्र बंद।",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "तब तक चलेगा जब तक आप अनलॉक नहीं करते: $REQUIREMENT$, फिर $LABEL$। चक्र बंद।",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "रोकने तक वाले सेशन में चक्र बंद"
+  },
+  "shared_mode_blacklist": {
+    "message": "चुनी हुई साइटें ब्लॉक करें"
+  },
+  "shared_mode_whitelist": {
+    "message": "सिर्फ़ चुनी हुई साइटें खोलें"
+  },
+  "shared_focus_time_label": {
+    "message": "फोकस का समय"
+  },
+  "shared_clock_focus_phase": {
+    "message": "फोकस चरण"
+  },
+  "shared_clock_total_session": {
+    "message": "पूरा सेशन"
+  },
+  "shared_clock_pause": {
+    "message": "पॉज़"
+  },
+  "shared_clock_break": {
+    "message": "ब्रेक"
+  },
+  "shared_badge_indefinite": {
+    "message": "चालू"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock शुरू हो रहा है। आपके चुने हुए नियम लागू किए जा रहे हैं।"
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "सेशन समाप्त हुआ। ब्राउज़र की सफ़ाई पूरी की जा रही है।"
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock शुरू नहीं हो सका। ब्राउज़र की सफ़ाई पूरी की जा रही है।"
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock अधूरी शुरुआत की सफ़ाई नहीं कर सका।"
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock ब्राउज़र की सफ़ाई पूरी नहीं कर सका।"
+  },
+  "shared_retry_cleanup": {
+    "message": "सफ़ाई दोबारा आज़माएँ"
+  },
+  "shared_end_failed": {
+    "message": "सेशन समाप्त नहीं हो सका। दोबारा कोशिश करें।"
+  },
+  "shared_retry_failed": {
+    "message": "सफ़ाई दोबारा नहीं आज़माई जा सकी। दोबारा कोशिश करें।"
+  },
+  "shared_action_failed": {
+    "message": "यह कार्रवाई नहीं हो सकी। दोबारा कोशिश करें।"
+  },
+  "shared_return_to_work_failed": {
+    "message": "काम पर लौटा नहीं जा सका। दोबारा कोशिश करें।"
+  },
+  "shared_data_clear_pending": {
+    "message": "Focus Lock का डेटा हटाया जा रहा है। सफ़ाई पूरी की जा रही है।"
+  },
+  "shared_data_clear_error": {
+    "message": "डेटा नहीं हटाया जा सका। दोबारा कोशिश करें।"
+  },
+  "shared_schedule_window_label": {
+    "message": "खिड़की खत्म होने तक"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "शेड्यूल पर शुरू होता है और तब तक चलता है जब तक आप इसे नहीं रोकते: लचीला के लिए सेशन समाप्त करें, विलंब वाला के लिए पुष्टि स्क्रीन से अनलॉक करें। चक्र बंद।"
+  },
+  "shared_schedule_started_title": {
+    "message": "शेड्यूल का सेशन शुरू हुआ"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "जब तक आप इसे नहीं रोकते, सक्रिय रहेगा।"
+  },
+  "shared_settings_indefinite": {
+    "message": "रोकने तक चलने वाला सेशन सक्रिय है। इसे देखने या समाप्त करने के लिए टूलबार का पॉपअप खोलें।"
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock शुरू हो रहा है। वेबसाइट एक्सेस जाँचा जा रहा है और आपके नियम लागू किए जा रहे हैं।"
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock ब्राउज़र की सफ़ाई पूरी नहीं कर सका। पॉपअप खोलकर दोबारा आज़माएँ।"
+  },
+  "shared_settings_session_disclosure": {
+    "message": "सेशन के नियंत्रण टूलबार के पॉपअप में हैं। सक्रिय सेशन वही नियम रखता है जो शुरू होते समय लिए गए थे।"
+  },
+  "shared_settings_timed": {
+    "message": "$TIME$ तक टाइमर वाला सेशन सक्रिय है। यह अपने आप समाप्त हो जाएगा। मौजूदा स्थिति के लिए टूलबार का पॉपअप देखें।",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "पूरा हुआ"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "खुद पूरा किया"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "जल्दी समाप्त"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "समाप्त: वेबसाइट एक्सेस चला गया"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "समाप्त: ब्लॉकिंग सेट नहीं हो सकी"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "समाप्त: टाइमर सेट नहीं हो सका"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "समाप्त: पन्नों पर ब्लॉकिंग लागू नहीं हो सकी"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "समाप्त: स्थिति वापस नहीं लाई जा सकी"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ घं $MINUTES$ मि",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ मि",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ मि",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ मि",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "सेशन अपडेट हो रहा है"
+  },
+  "shared_less_than_a_minute": {
+    "message": "एक मिनट से कम"
+  },
+  "shared_focus_remaining_break": {
+    "message": "ब्रेक में $DURATION$ बाकी",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "इस सेशन में $DURATION$ बाकी",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "लागत क्रेडिट सीमा से ज़्यादा है"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "फोकस के दौरान क्रेडिट फिर से जमा होगा"
+  },
+  "shared_credit_off": {
+    "message": "क्रेडिट कमाना बंद है"
+  },
+  "shared_not_enough_time": {
+    "message": "इस फोकस ब्लॉक में उतना समय नहीं है"
+  },
+  "shared_ready_in": {
+    "message": "$CLOCK$ में तैयार",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "$CATEGORY$ श्रेणी से ब्लॉक",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "आपकी ब्लॉक सूची से ब्लॉक"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "आपकी अनुमति सूची में नहीं"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "इस सेशन से ब्लॉक"
+  },
+  "shared_verdict_allow_list": {
+    "message": "आपकी अनुमति सूची में"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "हमेशा अनुमत"
+  },
+  "shared_verdict_unlock": {
+    "message": "अस्थायी रूप से अनलॉक"
+  },
+  "shared_verdict_excluded": {
+    "message": "चुनी हुई श्रेणी से बाहर रखा गया"
+  },
+  "shared_verdict_no_session": {
+    "message": "कोई सक्रिय फोकस सेशन नहीं"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "इस सेशन में अनुमत"
+  },
+  "shared_category_social": {
+    "message": "सोशल मीडिया"
+  },
+  "shared_category_video": {
+    "message": "वीडियो और स्ट्रीमिंग"
+  },
+  "shared_category_news": {
+    "message": "समाचार"
+  },
+  "shared_category_mail": {
+    "message": "मेल"
+  },
+  "shared_category_shopping": {
+    "message": "खरीदारी"
+  },
+  "shared_category_gaming": {
+    "message": "गेमिंग"
+  },
+  "shared_category_forums": {
+    "message": "फ़ोरम और बोरियत"
+  },
+  "shared_synced_settings": {
+    "message": "सेटिंग्स"
+  },
+  "shared_synced_lists": {
+    "message": "ब्लॉक और अनुमति सूचियाँ"
+  },
+  "shared_synced_credit": {
+    "message": "साइट एक्सेस क्रेडिट"
+  },
+  "shared_synced_streaks": {
+    "message": "स्ट्रीक"
+  },
+  "shared_synced_aggregates": {
+    "message": "डोमेन स्तर पर ब्लॉक हुए प्रयासों के सारांश"
+  },
+  "shared_local_full_urls": {
+    "message": "पूरे URL"
+  },
+  "shared_local_intentions": {
+    "message": "फोकस के इरादे"
+  },
+  "shared_local_events": {
+    "message": "सेशन की विस्तृत घटनाएँ"
+  },
+  "shared_local_runtime": {
+    "message": "चल रहा सेशन"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "पुराने संस्करण का कुछ सिंक किया गया डेटा पढ़ा नहीं जा सका और रीसेट कर दिया गया।"
+  },
+  "shared_all_data_clear_running": {
+    "message": "सारा डेटा हटाने से पहले चल रहा सेशन समाप्त करें।"
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "उत्पाद नेविगेशन"
+  },
+  "shared_nav_overview": {
+    "message": "अवलोकन"
+  },
+  "shared_nav_settings": {
+    "message": "सेटिंग्स"
+  },
+  "shared_section_blocking": {
+    "message": "ब्लॉकिंग"
+  },
+  "shared_section_schedule": {
+    "message": "शेड्यूल"
+  },
+  "shared_section_behavior": {
+    "message": "सेशन का व्यवहार"
+  },
+  "shared_section_budget": {
+    "message": "साइट एक्सेस क्रेडिट"
+  },
+  "shared_section_notifications": {
+    "message": "सूचनाएँ"
+  },
+  "shared_section_privacy": {
+    "message": "गोपनीयता और डेटा"
+  },
+  "shared_theme_auto": {
+    "message": "अपने आप"
+  },
+  "shared_theme_light": {
+    "message": "हल्का"
+  },
+  "shared_theme_dark": {
+    "message": "गहरा"
+  },
+  "shared_theme_button": {
+    "message": "थीम: $CURRENT$। $NEXT$ पर बदलें",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "थीम सहेजी नहीं जा सकी। पेज फिर से लोड करके दोबारा कोशिश करें।"
+  },
+  "shared_host_search_label": {
+    "message": "$TITLE$ की साइटें खोजें",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "$TITLE$ की कोई साइट आपकी खोज से मेल नहीं खाती।",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "$MATCHED$ में से $SHOWN$ साइटें दिख रही हैं। सूची छोटी करने के लिए खोजें।",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "$TOTAL$ में से $MATCHED$ साइटें दिख रही हैं।",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "सभी $TOTAL$ साइटें दिख रही हैं।",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "सेशन समाप्त करें"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock शुरू हो रहा है"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "आपके चुने हुए नियम लागू किए जा रहे हैं।"
+  },
+  "shared_overlay_stopped_page": {
+    "message": "यह पेज लोड नहीं हुआ। सेशन खत्म होते ही यह अपने आप लोड हो जाएगा।"
+  },
+  "shared_overlay_next_step": {
+    "message": "आपका अगला कदम"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "काम पर लौटें"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "काम का टैब चुनें"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "काम का टैब बदलें"
+  },
+  "shared_overlay_access_summary": {
+    "message": "ब्रेक या साइट एक्सेस चाहिए?"
+  },
+  "shared_overlay_access_note": {
+    "message": "आप कभी भी हट सकते हैं। साइट एक्सेस में क्रेडिट खर्च होता है।"
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "प्रतीक्षा छोड़ें और समाप्त करें"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock यह कार्रवाई अपडेट नहीं कर सका। दोबारा कोशिश करें।"
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ साइट एक्सेस क्रेडिट",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "अपना मौजूदा काम जारी रखें"
+  },
+  "shared_overlay_pause_action": {
+    "message": "सभी साइटें अनलॉक करें"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "यह साइट अनलॉक करें"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ के लिए - लागत $COST$ क्रेडिट",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "$TIME$ तक लॉक",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "आपने कहा था: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "$HOST$ को $CLOCK$ के लिए अनलॉक करें",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "फोकस जारी रखें"
+  },
+  "shared_gate_phrase_label": {
+    "message": "पुष्टि के लिए यह टाइप करें:"
+  },
+  "shared_gate_end_title": {
+    "message": "यह सेशन समाप्त करें"
+  }
+}

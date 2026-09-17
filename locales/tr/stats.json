@@ -244,5 +244,74 @@
   },
   "stats_chart_table_category": {
     "message": "Kategori"
+  },
+  "stats_chart_table_value": {
+    "message": "Değer"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-hour engellendi-attempt heat strip"
+  },
+  "stats_sessions_heading": {
+    "message": "Son seanslar bu makinede"
+  },
+  "stats_sessions_empty": {
+    "message": "Your first seans will appear here."
+  },
+  "stats_sessions_col_date": {
+    "message": "Tarih"
+  },
+  "stats_sessions_col_start": {
+    "message": "Başlat"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Planlandı"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Odaklandı"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "All siteler"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Bir site"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Niyet"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Sonuç"
+  },
+  "stats_sessions_col_source": {
+    "message": "Kaynak"
+  },
+  "stats_session_no_intention": {
+    "message": "Niyet yok"
+  },
+  "stats_session_article_label": {
+    "message": "Seans: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "manuel"
+  },
+  "stats_session_source_schedule": {
+    "message": "program"
+  },
+  "stats_session_source_scheduled": {
+    "message": "programlı"
+  },
+  "stats_outcome_completed": {
+    "message": "Tamamlandı"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Erken bitti"
+  },
+  "stats_outcome_running": {
+    "message": "Çalışıyor"
   }
 }

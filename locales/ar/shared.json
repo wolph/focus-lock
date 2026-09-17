@@ -1,1 +1,663 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "حتى الإيقاف"
+  },
+  "shared_preset_short": {
+    "message": "قصيرة"
+  },
+  "shared_preset_focus": {
+    "message": "تركيز"
+  },
+  "shared_preset_deep_work": {
+    "message": "عمل عميق"
+  },
+  "shared_deep_work_note": {
+    "message": "تفضيل لا علم: فترة واحدة طويلة دون انقطاع، وبلا استراحات تلقائية."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ دقيقة إجمالًا، بفترات تركيز مدتها $FOCUS$ دقيقة",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ دقيقة تركيز دون انقطاع",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "ابدأ حتى الإيقاف"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "اقفل حتى إلغاء القفل يدويًا"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "جلسات حتى الإيقاف تبقى مرنة أو باحتكاك ولا يمكنها استخدام دورات التركيز والاستراحة."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "القفل الصارم غير متاح لجلسات حتى الإيقاف: بلا مؤقّت وبلا إنهاء يدوي، لن تنتهي الجلسة أبدًا."
+  },
+  "shared_end_session": {
+    "message": "إنهاء الجلسة"
+  },
+  "shared_unlock": {
+    "message": "إلغاء القفل"
+  },
+  "shared_gate_wait_none": {
+    "message": "بلا انتظار"
+  },
+  "shared_gate_wait": {
+    "message": "انتظار $SECONDS$ ثانية",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ وعبارة مكتوبة",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "تعمل حتى تنهيها بـ $LABEL$. الدورات معطّلة.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "تعمل حتى تلغي قفلها: $REQUIREMENT$، ثم $LABEL$. الدورات معطّلة.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "دورات مفروضة بسبب حتى الإيقاف"
+  },
+  "shared_mode_blacklist": {
+    "message": "حظر المواقع المحددة"
+  },
+  "shared_mode_whitelist": {
+    "message": "السماح بالمواقع المحددة فقط"
+  },
+  "shared_focus_time_label": {
+    "message": "وقت التركيز"
+  },
+  "shared_clock_focus_phase": {
+    "message": "مرحلة التركيز"
+  },
+  "shared_clock_total_session": {
+    "message": "إجمالي الجلسة"
+  },
+  "shared_clock_pause": {
+    "message": "إيقاف مؤقت"
+  },
+  "shared_clock_break": {
+    "message": "استراحة"
+  },
+  "shared_badge_indefinite": {
+    "message": "يعمل"
+  },
+  "shared_popup_starting": {
+    "message": "يبدأ Focus Lock. جارٍ تطبيق القواعد التي اخترتها."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "انتهت الجلسة. جارٍ إنهاء تنظيف المتصفح."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "تعذّر بدء Focus Lock. جارٍ إنهاء تنظيف المتصفح."
+  },
+  "shared_popup_transition_error": {
+    "message": "تعذّر على Focus Lock تنظيف بدء غير مكتمل."
+  },
+  "shared_popup_closure_error": {
+    "message": "تعذّر على Focus Lock إنهاء تنظيف المتصفح."
+  },
+  "shared_retry_cleanup": {
+    "message": "إعادة محاولة التنظيف"
+  },
+  "shared_end_failed": {
+    "message": "تعذّر إنهاء الجلسة. أعد المحاولة."
+  },
+  "shared_retry_failed": {
+    "message": "تعذّرت إعادة محاولة التنظيف. أعد المحاولة."
+  },
+  "shared_action_failed": {
+    "message": "تعذّر طلب هذا الإجراء. أعد المحاولة."
+  },
+  "shared_return_to_work_failed": {
+    "message": "تعذّرت العودة إلى العمل. أعد المحاولة."
+  },
+  "shared_data_clear_pending": {
+    "message": "جارٍ حذف بيانات Focus Lock. جارٍ إنهاء التنظيف."
+  },
+  "shared_data_clear_error": {
+    "message": "تعذّر حذف البيانات. أعد المحاولة."
+  },
+  "shared_schedule_window_label": {
+    "message": "حتى نهاية الفترة"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "تبدأ حسب الجدول وتعمل حتى توقفها: إنهاء الجلسة للوضع المرن، وإلغاء القفل عبر بوابة التروّي لوضع الاحتكاك. الدورات معطّلة."
+  },
+  "shared_schedule_started_title": {
+    "message": "بدأ جدول التركيز"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "نشطة حتى توقفها."
+  },
+  "shared_settings_indefinite": {
+    "message": "جلسة حتى الإيقاف نشطة. استخدم نافذة شريط الأدوات لعرضها أو إنهائها."
+  },
+  "shared_settings_starting": {
+    "message": "يبدأ Focus Lock. جارٍ التحقق من الوصول إلى المواقع وتطبيق قواعدك."
+  },
+  "shared_settings_error": {
+    "message": "تعذّر على Focus Lock إنهاء تنظيف المتصفح. افتح النافذة وأعد المحاولة."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "نافذة شريط الأدوات هي مكان التحكم بالجلسة. وتحتفظ الجلسة النشطة بالقواعد التي التقطتها عند بدئها."
+  },
+  "shared_settings_timed": {
+    "message": "جلسة مؤقّتة نشطة حتى $TIME$. تنتهي تلقائيًا. استخدم نافذة شريط الأدوات لمتابعة الحالة مباشرة.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "مكتملة"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "مكتملة يدويًا"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "انتهت مبكرًا"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "انتهت: فُقد الوصول إلى المواقع"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "انتهت: فشل إعداد الحظر"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "انتهت: فشل إعداد المؤقّت"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "انتهت: فشل التطبيق على الصفحات"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "انتهت: فشلت الاستعادة"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ س $MINUTES$ د",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ د",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ دقيقة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ دقيقة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "جارٍ تحديث الجلسة"
+  },
+  "shared_less_than_a_minute": {
+    "message": "أقل من دقيقة"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ حتى استراحتك",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ متبقية في هذه الجلسة",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "التكلفة تتجاوز حدّ الرصيد"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "يُستأنف كسب الرصيد أثناء التركيز"
+  },
+  "shared_credit_off": {
+    "message": "كسب الرصيد معطّل"
+  },
+  "shared_not_enough_time": {
+    "message": "لا يوجد وقت كافٍ في فترة التركيز هذه"
+  },
+  "shared_ready_in": {
+    "message": "جاهز خلال $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "محظور بواسطة $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "محظور بقائمة الحظر لديك"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "ليس في قائمة السماح لديك"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "محظور بهذه الجلسة"
+  },
+  "shared_verdict_allow_list": {
+    "message": "في قائمة السماح لديك"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "مسموح دائمًا"
+  },
+  "shared_verdict_unlock": {
+    "message": "غير مقفل مؤقتًا"
+  },
+  "shared_verdict_excluded": {
+    "message": "مستثنى من فئة محددة"
+  },
+  "shared_verdict_no_session": {
+    "message": "لا توجد جلسة تركيز نشطة"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "مسموح بهذه الجلسة"
+  },
+  "shared_category_social": {
+    "message": "شبكات التواصل"
+  },
+  "shared_category_video": {
+    "message": "الفيديو والبث"
+  },
+  "shared_category_news": {
+    "message": "الأخبار"
+  },
+  "shared_category_mail": {
+    "message": "البريد"
+  },
+  "shared_category_shopping": {
+    "message": "التسوق"
+  },
+  "shared_category_gaming": {
+    "message": "الألعاب"
+  },
+  "shared_category_forums": {
+    "message": "المنتديات والملل"
+  },
+  "shared_synced_settings": {
+    "message": "الإعدادات"
+  },
+  "shared_synced_lists": {
+    "message": "قوائم الحظر والسماح"
+  },
+  "shared_synced_credit": {
+    "message": "رصيد الوصول إلى المواقع"
+  },
+  "shared_synced_streaks": {
+    "message": "السلاسل"
+  },
+  "shared_synced_aggregates": {
+    "message": "مجاميع المحاولات المحظورة على مستوى النطاق"
+  },
+  "shared_local_full_urls": {
+    "message": "عناوين URL الكاملة"
+  },
+  "shared_local_intentions": {
+    "message": "نيات التركيز"
+  },
+  "shared_local_events": {
+    "message": "أحداث الجلسة التفصيلية"
+  },
+  "shared_local_runtime": {
+    "message": "جلسة التشغيل النشطة"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "تعذّرت قراءة بعض البيانات المزامَنة من إصدار أقدم فأُعيد تعيينها."
+  },
+  "shared_all_data_clear_running": {
+    "message": "أنهِ الجلسة قيد التشغيل قبل حذف جميع البيانات."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "تنقّل المنتج"
+  },
+  "shared_nav_overview": {
+    "message": "نظرة عامة"
+  },
+  "shared_nav_settings": {
+    "message": "الإعدادات"
+  },
+  "shared_section_blocking": {
+    "message": "الحظر"
+  },
+  "shared_section_schedule": {
+    "message": "الجدول الزمني"
+  },
+  "shared_section_behavior": {
+    "message": "سلوك الجلسة"
+  },
+  "shared_section_budget": {
+    "message": "رصيد الوصول إلى المواقع"
+  },
+  "shared_section_notifications": {
+    "message": "الإشعارات"
+  },
+  "shared_section_privacy": {
+    "message": "الخصوصية والبيانات"
+  },
+  "shared_theme_auto": {
+    "message": "تلقائي"
+  },
+  "shared_theme_light": {
+    "message": "فاتح"
+  },
+  "shared_theme_dark": {
+    "message": "داكن"
+  },
+  "shared_theme_button": {
+    "message": "المظهر: $CURRENT$. التبديل إلى $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "تعذّر حفظ المظهر. أعد تحميل الصفحة وحاول مرة أخرى."
+  },
+  "shared_host_search_label": {
+    "message": "ابحث في مواقع $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "لا يطابق أي موقع من $TITLE$ بحثك.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "عرض $SHOWN$ من $MATCHED$ موقعًا. ابحث لتضييق القائمة.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "عرض $MATCHED$ من $TOTAL$ موقعًا.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "عرض جميع المواقع البالغ عددها $TOTAL$.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "إنهاء الجلسة"
+  },
+  "shared_overlay_starting_title": {
+    "message": "يبدأ Focus Lock"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "جارٍ تطبيق القواعد التي اخترتها."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "لم تُحمّل هذه الصفحة. ستُحمّل تلقائيًا عند انتهاء الجلسة."
+  },
+  "shared_overlay_next_step": {
+    "message": "خطوتك التالية"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "العودة إلى العمل"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "اختر علامة تبويب للعمل"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "تغيير علامة تبويب العمل"
+  },
+  "shared_overlay_access_summary": {
+    "message": "تحتاج إلى استراحة أو وصول إلى المواقع؟"
+  },
+  "shared_overlay_access_note": {
+    "message": "يمكنك الابتعاد في أي وقت. والوصول إلى المواقع يستهلك رصيدًا."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "تجاهل المهلة وأنهِ على أي حال"
+  },
+  "shared_overlay_transport_error": {
+    "message": "تعذّر على Focus Lock تحديث هذا الإجراء. أعد المحاولة."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ رصيد وصول إلى المواقع",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "تابع مهمتك الحالية"
+  },
+  "shared_overlay_pause_action": {
+    "message": "إلغاء قفل جميع المواقع"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "إلغاء قفل هذا الموقع"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - يكلّف $COST$ من الرصيد",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "مقفل حتى $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "قلت: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "إلغاء قفل $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "واصل التركيز"
+  },
+  "shared_gate_phrase_label": {
+    "message": "اكتب هذا للتأكيد:"
+  },
+  "shared_gate_end_title": {
+    "message": "إنهاء هذه الجلسة"
+  },
+  "shared_minutes_zero": {
+    "message": "$COUNT$ دقيقة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_minutes_two": {
+    "message": "$COUNT$ دقيقتان",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_minutes_few": {
+    "message": "$COUNT$ دقائق",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_minutes_many": {
+    "message": "$COUNT$ دقيقة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

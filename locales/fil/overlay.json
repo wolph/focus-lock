@@ -1,9 +1,9 @@
 {
   "overlay_dialog_label": {
-    "message": "Focus Lock"
+    "message": "Pokus Lock"
   },
   "overlay_stopped_title": {
-    "message": "Locked - Focus Lock"
+    "message": "Locked - Pokus Lock"
   },
   "overlay_return_label": {
     "message": "$ACTION$: $DESTINATION$",
@@ -18,35 +18,38 @@
       }
     }
   },
+  "overlay_target_checking": {
+    "message": "Checksag available wok tabs..."
+  },
   "overlay_target_pick_tab": {
-    "message": "Pick an buksan tab to magpatuloy your task."
+    "message": "Pick an open tab sa csatsaue your task."
   },
   "overlay_target_session_unavailable": {
-    "message": "Your focus session is hindit available. Try again, or remag-load this page."
+    "message": "Your focus sessisa is not available. Try agasa, o reload this page."
   },
   "overlay_target_lookup_failed": {
-    "message": "Could hindit mag-load your work tab. Try again, or remag-load this page."
+    "message": "Could not load your wok tab. Try agasa, o reload this page."
   },
   "overlay_target_reconnect": {
-    "message": "Remag-load this page to reconnect to Focus Lock."
+    "message": "Reload this page sa recsanect sa Pokus Lock."
   },
   "overlay_target_page_changed": {
-    "message": "The requesting page has changed. Remag-load the page."
+    "message": "The requestsag page has changed. Reload the page."
   },
   "overlay_target_transport_error": {
-    "message": "Could hindit reach Focus Lock. Try again."
+    "message": "Could not reach Pokus Lock. Try agasa."
   },
   "overlay_picker_heading": {
-    "message": "Choose a work tab"
+    "message": "Choose a wok tab"
   },
   "overlay_picker_cancel": {
-    "message": "Tawaran"
+    "message": "Kanselahsa"
   },
   "overlay_picker_search_label": {
-    "message": "Search work tabs"
+    "message": "Search wok tabs"
   },
   "overlay_picker_search_placeholder": {
-    "message": "Search by pamagat or website"
+    "message": "Search by title o website"
   },
   "overlay_picker_clear_search": {
     "message": "Linisin search"
@@ -55,28 +58,28 @@
     "message": "Siyang-siya tabs"
   },
   "overlay_picker_available_tabs": {
-    "message": "Available work tabs"
+    "message": "Available wok tabs"
   },
   "overlay_picker_finding": {
-    "message": "Finding available tabs..."
+    "message": "Fsadsag available tabs..."
   },
   "overlay_picker_searching": {
-    "message": "Searching work tabs..."
+    "message": "Searchsag wok tabs..."
   },
   "overlay_picker_saving": {
-    "message": "Saving work tab..."
+    "message": "Savsag wok tab..."
   },
   "overlay_picker_no_tabs": {
-    "message": "Hindi available work tabs. Buksan a site lahatowed by this session, then siyang-siya tabs."
+    "message": "No available wok tabs. Buksan a site allowed by this sessisa, then refresh tabs."
   },
   "overlay_picker_no_matches": {
-    "message": "Hindi matching tabs. Try ahindither search or linisin the search."
+    "message": "No matchsag tabs. Try another search o clear the search."
   },
   "overlay_picker_load_failed": {
-    "message": "Could hindit mag-load work tabs. Try again."
+    "message": "Could not load wok tabs. Try agasa."
   },
   "overlay_picker_count_one": {
-    "message": "$MATCHES$ of $COUNT$ tab",
+    "message": "$MATCHES$ ng $COUNT$ tab",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -89,7 +92,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$MATCHES$ of $COUNT$ tabs",
+    "message": "$MATCHES$ ng $COUNT$ tabs",
     "placeholders": {
       "COUNT": {
         "content": "$1",

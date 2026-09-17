@@ -1,1 +1,134 @@
-{}
+{
+  "notify_session_complete_title": {
+    "message": "Susikaupimo sesija baigta"
+  },
+  "notify_session_complete_body": {
+    "message": "Tavo susikaupimo sesija baigėsi."
+  },
+  "notify_schedule_window_body": {
+    "message": "Užrakinta iki $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Tvarkaraščio sesijos paleisti nepavyko"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Svetainių blokavimas neįjungtas. Užbaik sąranką arba suteik svetainių prieigą, tada bandyk dar kartą."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Sąranka buvo užbaigta kitoje kortelėje."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Sąranka pasikeitė kitoje kortelėje. Naujausi pasirinkimai įkelti iš naujo."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Sąranka pasikeitė kitoje kortelėje. Prieš baigdamas įkelk ją iš naujo."
+  },
+  "notify_setup_not_complete": {
+    "message": "Sąranka nebaigta."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Sąrankos dar negalima užbaigti."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Sąrankos saugojimo pasirinkimas pasikeitė. Prieš baigdamas įkelk sąranką iš naujo."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Sąrankos saugojimo veiksmas nepavyko."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Sąrankos veiksmas nepavyko."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock nepavyko patikrinti svetainių prieigos. Pakartok sąranką arba įkelk plėtinį iš naujo."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Svetainių prieiga suteikta, bet Focus Lock nepavyko įjungti blokavimo. Pakartok sąranką arba įkelk plėtinį iš naujo."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Svetainių prieiga nepasiekiama, ir Focus Lock nepavyko baigti blokavimo valymo. Pakartok sąranką arba įkelk plėtinį iš naujo."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock gavo prieštaringą svetainių prieigos būseną. Pakartok sąranką arba įkelk plėtinį iš naujo."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock nebaigė paleidimo: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "nežinoma klaida"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock veikia, atstatyti nėra ko"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock negali atstatyti būsenos, kuri tebėra įrašyta nustatymų kartoje"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Duomenų šalinimo kartoti nėra ko."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Prieš šalindamas sinchronizuotus duomenis išjunk sinchronizavimą"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock dar baigia ankstesnį pakeitimą. Bandyk po akimirkos."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Atvirų vartų nepavyko uždaryti. Bandyk dar kartą."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Darbo kortelė nepasiekiama."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Nustatymai viršija 8 KB Chrome sinchronizavimo ribą. Pašalink tvarkaraščio įrašų arba sutrumpink ketinimus, tada bandyk dar kartą."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Sąrašai viršija 8 KB Chrome sinchronizavimo ribą. Pašalink savų arba leidžiamųjų taisyklių, tada bandyk dar kartą."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "vyksta griežta sesija: blokuotos svetainės pašalinamos tik jai pasibaigus"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "vyksta griežta sesija: nauji leidžiamųjų įrašai įsigalios tik jai pasibaigus"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "vyksta griežta sesija: kategorijos išjungiamos tik jai pasibaigus"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "vyksta griežta sesija: naujos išimtys įsigalios tik jai pasibaigus"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "vyksta griežta sesija: numatytojo griežtumo sušvelninimas lauks jos pabaigos"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "vyksta griežta sesija: trumpesnis apsvarstymo laukimas susilpnina vartus"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "vyksta griežta sesija: įrašomo sakinio atsisakymas susilpnina vartus"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "vyksta griežta sesija: didesnis kredito kaupimas finansuoja daugiau pabėgimų"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "vyksta griežta sesija: didesnė kredito riba finansuoja daugiau pabėgimų"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "vyksta griežta sesija: trumpesnės pauzės atpigina jų kainą"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "vyksta griežta sesija: trumpesni atrakinimai atpigina jų kainą"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "vyksta griežta sesija: jos tvarkaraščio įrašo susilpninti negalima, kol ji nesibaigs"
+  }
+}

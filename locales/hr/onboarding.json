@@ -1,1 +1,186 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Postavi Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Postava Focus Locka"
+  },
+  "onboarding_progress": {
+    "message": "Korak $STEP$ od $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Nije moguće obnoviti vaš spremljeni napredak postave. Počinjemo ponovno s vašim trenutnim zadanim vrijednostima."
+  },
+  "onboarding_complete_heading": {
+    "message": "Postava dovršena"
+  },
+  "onboarding_complete_body": {
+    "message": "Vaš izbor je spremljen. Otvorite Focus Lock iz Chrome alatne trake kako biste započeli sesiju."
+  },
+  "onboarding_error_heading": {
+    "message": "Postava nije dostupna"
+  },
+  "onboarding_error_body": {
+    "message": "Nije moguće učitati postavu. Pokušajte ponovno."
+  },
+  "onboarding_retry_button": {
+    "message": "Pokušaj ponovno"
+  },
+  "onboarding_save_error": {
+    "message": "Nije moguće spremiti napredak postave. Pokušajte ponovno."
+  },
+  "onboarding_enable_error": {
+    "message": "Nije moguće omogućiti blokiranje web stranica. Pokušajte ponovno."
+  },
+  "onboarding_finish_error": {
+    "message": "Nije moguće dovršiti postavu. Vaš izbor je i dalje spremljen. Pokušajte ponovno."
+  },
+  "onboarding_lists_heading": {
+    "message": "Odaberite svoj početni popis blokiranja"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "U $MODE$, aktivne kategorije i dodatno blokirane web stranice nisu dostupne.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "U $MODE$, sve web stranice su nedostupne osim vašeg popisa dozvola.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Ovi izbori postaju zadane vrijednosti za buduće sesije. Kasnije ih možete uređivati."
+  },
+  "onboarding_lists_legend": {
+    "message": "Preporučene kategorije web stranica"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ web stranica",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ web stranica",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Prikaži web stranice kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Sakrij web stranice kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Domene kategorije $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Nastavi"
+  },
+  "onboarding_access_heading": {
+    "message": "Omogući blokiranje web stranica"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock provjeravanja adrese stranica lokalno tako da može uskladiti odabrane kategorije i web stranice. Koristi pristup web stranicama da prikaže zaslon blokiranja i obnoviti pogođene stranice kada se vaša sesija završi."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategorije i prilagođene domene mogu sadržavati bilo koju web stranicu. Chrome će stoga tražiti ovu mogućnost:"
+  },
+  "onboarding_access_capability": {
+    "message": "Čitaj i promijeni sve svoje podatke na svim web stranicama"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock koristi taj pristup samo pri primjeni vaših pravila blokiranja."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome nije dodijelio pristup web stranicama. Možete pokušati ponovno."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Pristup web stranicama je dodijeljen, ali Focus Lock nije mogao omogućiti blokiranje. Pokušajte postavu ponovno ili ponovno učitajte ekstenziju."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Omogući blokiranje web stranica"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Ne sada"
+  },
+  "onboarding_sync_heading": {
+    "message": "Odaberite gdje se vaše postavke čuvaju"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Sinhronizacija između Chrome uređaja"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Odobreni podaci ispod koristit će Chrome Sync nakon što završite postavu."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Svi podaci Focus Locka ostaju u ovom Chrome profilu."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Sinhronizirано"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Samo lokalno"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Ništa se ne šalje razvijatelju Focus Locka."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Završi postavu s omogućenom sinhronizacijom"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Završi postavu bez sinhronizacije"
+  },
+  "onboarding_site_count_few": {
+    "message": "$COUNT$ web-stranice",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

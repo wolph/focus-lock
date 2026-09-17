@@ -1,1 +1,317 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Focus Lock statisztikák"
+  },
+  "stats_page_title": {
+    "message": "A fókuszteljesítményed"
+  },
+  "stats_loading": {
+    "message": "Statisztikák betöltése."
+  },
+  "stats_load_error": {
+    "message": "A statisztikákat nem sikerült betölteni. Töltsd újra az oldalt."
+  },
+  "stats_partial_error_both": {
+    "message": "Az óránkénti kísérletek és az oldalhozzáférési kredit beállításai nem érhetők el."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Az óránkénti kísérletek nem érhetők el."
+  },
+  "stats_partial_error_economy": {
+    "message": "Az oldalhozzáférési kredit beállításai nem érhetők el."
+  },
+  "stats_scope_synced": {
+    "message": "Szinkronizált összesítések erről a Chrome-fiókról. A csak helyi panelek meg vannak jelölve."
+  },
+  "stats_scope_local": {
+    "message": "Ennek a gépnek az összesítései. A Focus Lock statisztikái nem szinkronizálódnak."
+  },
+  "stats_scope_checking": {
+    "message": "Ellenőrzés, hogy ezek az összesítések szinkronizáltak-e."
+  },
+  "stats_scope_unavailable": {
+    "message": "A statisztikák hatóköre nem érhető el. Az összesítések szinkronizált adatokat is tartalmazhatnak. Az óránkénti kísérletek és a legutóbbi menetek erről a gépről valók."
+  },
+  "stats_scope_retry": {
+    "message": "Hatókör újraellenőrzése"
+  },
+  "stats_empty": {
+    "message": "A statisztikák az első meneted után jelennek meg."
+  },
+  "stats_tile_focus_today": {
+    "message": "Mai fókusz"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Fókusz az elmúlt 7 napban"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Ma blokkolt kísérletek"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Ma elengedett feloldási kérések"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Ma elköltött oldalhozzáférési kredit"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Minden oldal $ALL_SITES$, egy oldal $ONE_SITE$, $EARNED$ gyűjtve",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ gyűjtve",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Sorozat"
+  },
+  "stats_streak_empty": {
+    "message": "A sorozatod az első fókusznapoddal indul."
+  },
+  "stats_streak_unit_one": {
+    "message": "nap"
+  },
+  "stats_streak_unit_other": {
+    "message": "nap"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ fagyasztás a tartalékban",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ fagyasztás a tartalékban",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Sorozatfagyasztás: egy kihagyott nap fedezve"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktív nap ebben a hónapban ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktív nap ebben a hónapban ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktív napok ekkor: $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Nincs aktív nap ekkor: $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Fókusz, elmúlt 14 nap"
+  },
+  "stats_chart_focus_empty": {
+    "message": "A fókuszpercek az első meneted után jelennek meg."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Blokkolt kísérletek, elmúlt 14 nap"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "A blokkolt kísérletek akkor jelennek meg, ha egy menet elkap egyet."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Leggyakrabban blokkolt oldalak, elmúlt 30 nap"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Még semmi nem volt blokkolva. Ez jó kezdés."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Kísérletek óránként, csak ezen a gépen"
+  },
+  "stats_chart_other_site": {
+    "message": "egyéb"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ p",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blokkolva",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blokkolva",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Oszlopdiagram"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Vízszintes oszlopdiagram"
+  },
+  "stats_chart_description_bar": {
+    "message": "Oszlopdiagram. Billentyűzettel lépkedhetsz az adatpontok között, vagy nyisd meg a Megtekintés táblázatként nézetet ugyanezekért az értékekért."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Vízszintes oszlopdiagram. Billentyűzettel lépkedhetsz az adatpontok között, vagy nyisd meg a Megtekintés táblázatként nézetet ugyanezekért az értékekért."
+  },
+  "stats_chart_empty_default": {
+    "message": "Még nincs adat."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$, $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "Megtekintés táblázatként"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategória"
+  },
+  "stats_chart_table_value": {
+    "message": "Érték"
+  },
+  "stats_heat_strip_label": {
+    "message": "A blokkolt kísérletek 24 órás hőtérképsávja"
+  },
+  "stats_sessions_heading": {
+    "message": "Legutóbbi menetek ezen a gépen"
+  },
+  "stats_sessions_empty": {
+    "message": "Az első meneted itt fog megjelenni."
+  },
+  "stats_sessions_col_date": {
+    "message": "Dátum"
+  },
+  "stats_sessions_col_start": {
+    "message": "Kezdés"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Tervezett"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Fókuszban"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Minden oldal"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Egy oldal"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Szándék"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Eredmény"
+  },
+  "stats_sessions_col_source": {
+    "message": "Forrás"
+  },
+  "stats_session_no_intention": {
+    "message": "Nincs szándék"
+  },
+  "stats_session_article_label": {
+    "message": "Menet: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "kézi"
+  },
+  "stats_session_source_schedule": {
+    "message": "ütemezés"
+  },
+  "stats_session_source_scheduled": {
+    "message": "ütemezve indult"
+  },
+  "stats_outcome_completed": {
+    "message": "Befejezve"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Korán véget ért"
+  },
+  "stats_outcome_running": {
+    "message": "Fut"
+  }
+}

@@ -1,9 +1,9 @@
 {
   "notify_session_complete_title": {
-    "message": "Focus session selesai"
+    "message": "Fokus sesi complete"
   },
   "notify_session_complete_body": {
-    "message": "Sesi fokus Anda selesai."
+    "message": "Your fokus sesi fdalamished."
   },
   "notify_schedule_window_body": {
     "message": "Locked until $END$.",
@@ -15,49 +15,49 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "Focus schedule could tidakt mulai"
+    "message": "Fokus schedule could not mulai"
   },
   "notify_schedule_unavailable_body": {
-    "message": "Website blocking is tidakt aktifkand. Finish himpunannaik or grant website access, then try again."
+    "message": "Websitus blokirdalamg is not aktifkdan. Fdalamish setup padaau grant websitus akses, then try agadalam."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "Himpunannaik was selesaid in atidakther tab."
+    "message": "Setup was completed dalam another tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "Himpunannaik changed in atidakther tab. The latest choices were remuated."
+    "message": "Setup changed dalam another tab. The lpadaest choices were redimupada."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "Himpunannaik changed in atidakther tab. Remuat himpunannaik before finishing."
+    "message": "Setup changed dalam another tab. Reload setup beuntuke fdalamishdalamg."
   },
   "notify_setup_not_complete": {
     "message": "Himpunannaik is tidakt selesai."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "Himpunannaik is tidakt ready to finish."
+    "message": "Setup is not ready ke fdalamish."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "Himpunannaik storage choice changed. Remuat himpunannaik before finishing."
+    "message": "Setup stpadaauage choice changed. Reload setup beuntuke fdalamishdalamg."
   },
   "notify_onboarding_storage_failed": {
-    "message": "Operasi penyimpanan penyiapan gagal."
+    "message": "Onboarddalamg stpadaauage operpadaipada gagal."
   },
   "notify_onboarding_operation_failed": {
-    "message": "Operasi penyiapan gagal."
+    "message": "Onboarddalamg operpadaipada gagal."
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lock could tidakt check website access. Coba ulang himpunannaik or remuat the extension."
+    "message": "Fokus Lock could not check websitus akses. Retry setup padaau reload the extensipada."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "Website access is granted, but Focus Lock could tidakt aktifkan blocking. Coba ulang himpunannaik or remuat the extension."
+    "message": "Websitus akses is granted, but Fokus Lock could not aktifkan blokirdalamg. Retry setup padaau reload the extensipada."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "Website access is unavailable, and Focus Lock could tidakt finish blocking cleannaik. Coba ulang himpunannaik or remuat the extension."
+    "message": "Websitus akses is unavailable, dan Fokus Lock could not fdalamish blokirdalamg cleanup. Retry setup padaau reload the extensipada."
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lock received an inconsistent website access status. Coba ulang himpunannaik or remuat the extension."
+    "message": "Fokus Lock received an dalamcpadasistent websitus akses stpadae. Retry setup padaau reload the extensipada."
   },
   "notify_boot_not_finished": {
-    "message": "Focus Lock did tidakt finish mulaiing: $REASON$",
+    "message": "Fokus Lock did not fdalamish mulaidalamg: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -66,69 +66,69 @@
     }
   },
   "notify_unknown_error": {
-    "message": "unktidakwn kesalahan"
+    "message": "unknown kesalahan"
   },
   "notify_nothing_to_reset": {
-    "message": "Focus Lock is running, tidakthing to rehimpunan"
+    "message": "Fokus Lock is runndalamg, nothdalamg ke reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "Focus Lock cantidakt rehimpunan a runtime that is still committed inside a policy generation"
+    "message": "Fokus Lock cannot reset a runwaktu thpada is still committed dalamside a policy generpadaipada"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "Data bersihkan coba ulang is tidakt available."
+    "message": "Dpadaa clear retry is not available."
   },
   "notify_disable_sync_before_delete": {
-    "message": "Tidaknaktifkan Sinkronkan before deleting sinkronkaned data"
+    "message": "Npadaaktifkan Sync beuntuke deletdalamg synced dpadaa"
   },
   "notify_work_gate_busy": {
-    "message": "Fokus Lock is still finishing an earlier change. Try again in a moment."
+    "message": "Fokus Lock is still fdalamishdalamg an earlier change. Try agadalam dalam a moment."
   },
   "notify_work_gate_stuck": {
-    "message": "The buka gate could tidakt be tutnaikd. Try again."
+    "message": "The buka gpadae could not be tutupd. Try agadalam."
   },
   "notify_work_tab_unavailable": {
-    "message": "Tab kerja tidak tersedia."
+    "message": "The kerja tab is unavailable."
   },
   "notify_settings_sync_limit": {
-    "message": "Pengaturans exceed the 8 KB Chrome Sinkronkan limit. Hapus schedule entries or shorten intentions, then try again."
+    "message": "Pengpadauran exceed the 8 KB Chrome Sync limit. Hapus schedule entries padaau shpadaauten nipadas, then try agadalam."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sinkronkan limit. Hapus custom or whitelist rules, then try again."
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Hapus cuskem padaau whitelist padaurans, then try agadalam."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "a hard session is running: removing blocked sites unlocks when it akhirs"
+    "message": "a keras sesi is runndalamg: removdalamg blokired situss unlocks ketika it ends"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a hard session is running: new whitelist entries unlock when it akhirs"
+    "message": "a keras sesi is runndalamg: new whitelist entries unlock ketika it ends"
   },
   "notify_guard_lists_disable_category": {
-    "message": "a hard session is running: disabling categories unlocks when it akhirs"
+    "message": "a keras sesi is runndalamg: disabldalamg cpadaegpadaauies unlocks ketika it ends"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "a hard session is running: new exclusions unlock when it akhirs"
+    "message": "a keras sesi is runndalamg: new exclusipadas unlock ketika it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "a hard session is running: weakening the default strictness waits until it akhirs"
+    "message": "a keras sesi is runndalamg: weakendalamg the default strictness waits until it ends"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "sesi keras berjalan: mempersingkat penundaan deliberasi melemahkan gerbang"
+    "message": "a keras sesi is runndalamg: shpadaautendalamg the deliberpadaipada delay weakens the gpadae"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "a hard session is running: dropping the tiped phrase weakens the gate"
+    "message": "a keras sesi is runndalamg: droppdalamg the tiped phrase weakens the gpadae"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "sesi keras berjalan: menaikkan tingkat pendapatan jeda mendanai lebih banyak pelarian"
+    "message": "a keras sesi is runndalamg: raisdalamg the jeda earn rpadae funds mpadaaue escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "sesi keras berjalan: menaikkan batas jeda mendanai lebih banyak pelarian"
+    "message": "a keras sesi is runndalamg: raisdalamg the jeda cap funds mpadaaue escapes"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "sesi keras berjalan: mempersingkat jeda menurunkan biayanya"
+    "message": "a keras sesi is runndalamg: shpadaautendalamg jedas lowers their cost"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "sesi keras berjalan: mempersingkat pembukaan kunci menurunkan biayanya"
+    "message": "a keras sesi is runndalamg: shpadaautendalamg unlocks lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "a hard session is running: its schedule entry cantidakt be weakened until it akhirs"
+    "message": "a keras sesi is runndalamg: its schedule entry cannot be weakened until it ends"
   }
 }

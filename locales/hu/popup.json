@@ -1,1 +1,630 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "következő: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Beállítások"
+  },
+  "popup_open_settings_failed": {
+    "message": "A Beállításokat nem sikerült megnyitni. Próbáld újra."
+  },
+  "popup_settings_load_failed": {
+    "message": "A menet beállításait nem sikerült betölteni. Töltsd újra az ablakot. Az alapértékek látszanak."
+  },
+  "popup_open_setup_failed": {
+    "message": "A beállítást nem sikerült megnyitni. Próbáld újra."
+  },
+  "popup_setup_required_heading": {
+    "message": "Fejezd be a Focus Lock beállítását"
+  },
+  "popup_setup_required_body": {
+    "message": "Válaszd ki a kiinduló listáidat, az oldalhozzáférést és a tárolási módot, mielőtt menetet indítasz."
+  },
+  "popup_open_setup_button": {
+    "message": "Beállítás megnyitása"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Az oldalblokkolást nem sikerült megerősíteni. Próbáld újra."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Az oldalblokkolást nem sikerült bekapcsolni. Próbáld újra."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Az oldalblokkolás ki van kapcsolva"
+  },
+  "popup_blocking_off_body": {
+    "message": "A Focus Lock addig nem tud menetet indítani, amíg a Chrome nem ad oldalhozzáférést, és a blokkolás nincs bekapcsolva."
+  },
+  "popup_blocking_off_denied": {
+    "message": "A Chrome nem adott oldalhozzáférést. Az oldalblokkolás továbbra is ki van kapcsolva."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Az oldalhozzáférés megvan, de a Focus Lock nem tudta bekapcsolni a blokkolást. Ismételd meg a beállítást, vagy töltsd újra a bővítményt."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Oldalblokkolás bekapcsolása"
+  },
+  "popup_retry_button": {
+    "message": "Újra"
+  },
+  "popup_notice_access_revoked": {
+    "message": "A meneted azért ért véget, mert megszűnt az oldalhozzáférés."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "A meneted azért ért véget, mert a Focus Lock nem tudta bekapcsolni az oldalblokkolást."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Ezt az értesítést nem sikerült bezárni. Próbáld újra."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Az oldalhozzáférési értesítés bezárása"
+  },
+  "popup_dismiss_button": {
+    "message": "Bezárás"
+  },
+  "popup_restart_failed": {
+    "message": "A Focus Lockot nem sikerült újraindítani. Próbáld újra."
+  },
+  "popup_boot_failed_heading": {
+    "message": "A Focus Lock nem tudott elindulni"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Az okot nem sikerült kiolvasni."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Helyi futásállapot visszaállítása"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Megtartja a beállításaidat, a listáidat és a statisztikáidat. A jelenlegi menet állapotát törli."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Mindent törlök és újrakezdem"
+  },
+  "popup_keep_data_button": {
+    "message": "Megtartom az adataimat"
+  },
+  "popup_delete_all_button": {
+    "message": "Minden Focus Lock adat törlése"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "A beállítás állapota nem érhető el. Töltsd újra a Focus Lockot."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "A fókusz állapota nem érhető el"
+  },
+  "popup_action_in_progress": {
+    "message": "Művelet folyamatban"
+  },
+  "popup_active_site_checking": {
+    "message": "Az aktív oldal ellenőrzése"
+  },
+  "popup_active_site_unsupported": {
+    "message": "A feloldáshoz nyiss meg egy szokásos oldalt"
+  },
+  "popup_active_site_unknown": {
+    "message": "Az aktív oldalt nem sikerült azonosítani"
+  },
+  "popup_active_site_error": {
+    "message": "Az aktív oldalt nem sikerült azonosítani."
+  },
+  "popup_resume_now": {
+    "message": "Folytatás most"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Következő fókusz előbb"
+  },
+  "popup_unlock_this_site": {
+    "message": "Ennek az oldalnak a feloldása"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Minden oldal feloldása"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ hozzáférés, $CREDIT$ kredit",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ hozzáférés, $CREDIT$ kredit - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Munkafül választása"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Munkafül cseréje"
+  },
+  "popup_session_actions_summary": {
+    "message": "A menet műveletei"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ oldalhozzáférési kredit",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Engedélyezett domain hozzáadása"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Engedélyezett domain hozzáadása"
+  },
+  "popup_add_button": {
+    "message": "Hozzáadás"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Csak $COUNT$ engedélyezett oldalszabály. A többi oldal blokkolva.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ blokkolt kategória, $RULES$ extra szabály.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Teljes zárolás. Nem fejezhető be korábban."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Bármikor befejezhető."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Befejezés $SECONDS$ mp várakozás után.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Befejezés $SECONDS$ mp várakozás és egy megerősítő mondat után.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "A menet hossza"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Egyéni percszám"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "perc"
+  },
+  "popup_gate_force_end": {
+    "message": "Várakozás átugrása és befejezés mindenképp"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Maradok a fókuszban"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Gépeld be:"
+  },
+  "popup_gate_update_failed": {
+    "message": "A megerősítést nem sikerült frissíteni. Próbáld újra."
+  },
+  "popup_gate_intention": {
+    "message": "Ezt írtad: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Egy pillanat a döntéshez:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "/ $TOTAL$ mp",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Vissza a munkához"
+  },
+  "popup_destination_unavailable": {
+    "message": "A cél nem érhető el"
+  },
+  "popup_back_to_work_name": {
+    "message": "Vissza a munkához: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Vissza a munkához: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "A kategóriák addig nem szerkeszthetők, amíg a blokkolt oldalak listái újra be nem töltenek."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blokkolt kategóriák"
+  },
+  "popup_show_full_domain": {
+    "message": "Teljes domain megjelenítése: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Teljes reguláris kifejezés megjelenítése: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domain"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Reguláris kifejezés"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ oldalai",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ oldal",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ oldal",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "és még $COUNT$ oldal",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "és még $COUNT$ oldal",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Engedélyezett kivételek"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Extra blokkolt szabályok"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Nincs extra blokkolt szabály."
+  },
+  "popup_allowed_heading": {
+    "message": "Engedélyezett oldalak és szabályok"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Még egy oldal sincs engedélyezve."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "Mi lesz blokkolva"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "Mi lesz engedélyezve"
+  },
+  "popup_categories_selected": {
+    "message": "$TOTAL$ kategóriából $SELECTED$ kiválasztva",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ extra blokkolt szabály",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ extra blokkolt szabály",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ engedélyezett szabály",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ engedélyezett szabály",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Az itt megadott engedélyezett oldalak és szabályok csak erre a menetre vonatkoznak. Minden más blokkolva van."
+  },
+  "popup_scope_blacklist": {
+    "message": "Az itt megadott kategóriák és szabályok csak erre a menetre vonatkoznak."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Beállítások megnyitása az állandó alapértékekhez"
+  },
+  "popup_rule_details_label": {
+    "message": "A menet szabályainak részletei"
+  },
+  "popup_session_type_legend": {
+    "message": "A menet típusa"
+  },
+  "popup_session_type_flexible": {
+    "message": "Rugalmas"
+  },
+  "popup_session_type_friction": {
+    "message": "Súrlódás"
+  },
+  "popup_session_type_hard": {
+    "message": "Teljes zárolás"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "A menetet azonnal befejezed, amikor csak akarod."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "A korai befejezéshez $WAIT$ kell. Gépelni nem kell.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "A korai befejezéshez $WAIT$ és egy begépelt megerősítés kell.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "A menet nem fejezhető be korábban. Az oldalhozzáférési kredit továbbra is működik."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "A kiválasztott kategóriák és az extra szabályok blokkolva vannak. A többi oldal elérhető marad."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Csak a felsorolt oldalak érhetők el. Minden más oldal blokkolva van."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Adj meg nullánál hosszabb menethosszt percben."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Az alapértékek megváltoztak, de a friss listákat nem sikerült betölteni. Töltsd újra az ablakot."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Nincs munkafül (nem kötelező)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "A választott fül nem érhető el - válassz másikat"
+  },
+  "popup_cycles_label": {
+    "message": "Ciklusok: $FOCUS$ perc fókusz, $SHORT_BREAK$ perc pihenő, $LONG_BREAK$ perc hosszú pihenő minden $LONG_EVERY$. után",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Szándék"
+  },
+  "popup_intention_placeholder": {
+    "message": "Min dolgozol?"
+  },
+  "popup_work_tab_named": {
+    "message": "Munkafül: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Csere"
+  },
+  "popup_session_settings_summary": {
+    "message": "A menet beállításai"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Válassz munkafület"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Munkafül"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (jelenlegi)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Blokkolási mód"
+  },
+  "popup_invalid_time_label": {
+    "message": "érvénytelen hossz"
+  },
+  "popup_start_focus_label": {
+    "message": "$DURATION$ fókusz indítása",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Adj meg érvényes domaint, például docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "A munkafüleket nem sikerült betölteni. Nyisd meg újra az ablakot."
+  },
+  "popup_use_this_tab": {
+    "message": "Ezt a fület használom"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "Ez a fül nem használható munkára. Válassz egy másik nyitott fület."
+  },
+  "popup_checking_current_tab": {
+    "message": "A jelenlegi fül ellenőrzése..."
+  },
+  "popup_finding_current_tab": {
+    "message": "A jelenlegi füled keresése..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "A jelenlegi füledet nem sikerült betölteni. Próbáld újra."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Válaszd ki vagy cseréld le a munkafüledet."
+  },
+  "popup_saving_work_tab": {
+    "message": "Munkafül mentése..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "A munkafület nem sikerült menteni. Próbáld újra."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Válassz egy nyitott fület"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Vagy válassz másik fület"
+  },
+  "popup_start_failed": {
+    "message": "A menetet nem sikerült elindítani. Próbáld újra."
+  }
+}

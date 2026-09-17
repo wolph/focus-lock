@@ -1,1 +1,317 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Focus Lock পরিসংখ্যান"
+  },
+  "stats_page_title": {
+    "message": "আপনার ফোকাসের হিসাব"
+  },
+  "stats_loading": {
+    "message": "আপনার পরিসংখ্যান লোড হচ্ছে।"
+  },
+  "stats_load_error": {
+    "message": "পরিসংখ্যান লোড করা যায়নি। আবার চেষ্টা করতে পাতাটি রিলোড করুন।"
+  },
+  "stats_partial_error_both": {
+    "message": "ঘণ্টাভিত্তিক চেষ্টা ও সাইট অ্যাক্সেস ক্রেডিট সেটিংস উপলব্ধ নয়।"
+  },
+  "stats_partial_error_attempts": {
+    "message": "ঘণ্টাভিত্তিক চেষ্টা উপলব্ধ নয়।"
+  },
+  "stats_partial_error_economy": {
+    "message": "সাইট অ্যাক্সেস ক্রেডিট সেটিংস উপলব্ধ নয়।"
+  },
+  "stats_scope_synced": {
+    "message": "এই Chrome অ্যাকাউন্ট থেকে সিঙ্ক করা মোট হিসাব। শুধু এই ডিভাইসের প্যানেলগুলি আলাদা করে চিহ্নিত।"
+  },
+  "stats_scope_local": {
+    "message": "এই মেশিনের মোট হিসাব। Focus Lock-এর পরিসংখ্যান সিঙ্ক হয় না।"
+  },
+  "stats_scope_checking": {
+    "message": "এই মোট হিসাব সিঙ্ক হয় কি না দেখা হচ্ছে।"
+  },
+  "stats_scope_unavailable": {
+    "message": "পরিসংখ্যানের পরিধি জানা যায়নি। মোট হিসাবে সিঙ্ক করা ডেটা থাকতে পারে। ঘণ্টাভিত্তিক চেষ্টা ও সাম্প্রতিক সেশন এই মেশিনের।"
+  },
+  "stats_scope_retry": {
+    "message": "পরিধি আবার দেখুন"
+  },
+  "stats_empty": {
+    "message": "আপনার প্রথম সেশনের পর পরিসংখ্যান দেখা যাবে।"
+  },
+  "stats_tile_focus_today": {
+    "message": "আজকের ফোকাস"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "গত 7 দিনের ফোকাস"
+  },
+  "stats_tile_attempts_today": {
+    "message": "আজ ব্লক হওয়া চেষ্টা"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "আজ ছেড়ে দেওয়া আনলক অনুরোধ"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "আজ খরচ হওয়া সাইট অ্যাক্সেস ক্রেডিট"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "সব সাইট $ALL_SITES$, এক সাইট $ONE_SITE$, অর্জিত $EARNED$",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "অর্জিত $EARNED$",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "স্ট্রিক"
+  },
+  "stats_streak_empty": {
+    "message": "আপনার প্রথম ফোকাস দিন থেকেই স্ট্রিক শুরু হবে।"
+  },
+  "stats_streak_unit_one": {
+    "message": "দিন"
+  },
+  "stats_streak_unit_other": {
+    "message": "দিন"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$টি ফ্রিজ টোকেন জমা",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$টি ফ্রিজ টোকেন জমা",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "স্ট্রিক ফ্রিজ: একটি বাদ পড়া দিন পুষিয়ে যায়"
+  },
+  "stats_streak_active_days_one": {
+    "message": "এই মাসে ($MONTH$) $COUNT$টি সক্রিয় দিন",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "এই মাসে ($MONTH$) $COUNT$টি সক্রিয় দিন",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "$MONTH$-এ সক্রিয় তারিখ: $DAYS$।",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "$MONTH$-এ কোনো সক্রিয় তারিখ নেই।",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "ফোকাস, গত 14 দিন"
+  },
+  "stats_chart_focus_empty": {
+    "message": "আপনার প্রথম সেশনের পর ফোকাসের মিনিট দেখা যাবে।"
+  },
+  "stats_chart_attempts_heading": {
+    "message": "ব্লক হওয়া চেষ্টা, গত 14 দিন"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "কোনো সেশন প্রথম চেষ্টা ধরলেই সেগুলি এখানে দেখা যাবে।"
+  },
+  "stats_chart_sites_heading": {
+    "message": "সবচেয়ে বেশি ব্লক হওয়া সাইট, গত 30 দিন"
+  },
+  "stats_chart_sites_empty": {
+    "message": "এখনও কিছু ব্লক হয়নি। এটি ভালো শুরু।"
+  },
+  "stats_chart_hours_heading": {
+    "message": "ঘণ্টা অনুযায়ী চেষ্টা, শুধু এই মেশিনে"
+  },
+  "stats_chart_other_site": {
+    "message": "অন্যান্য"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$মি",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$টি ব্লক",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$টি ব্লক",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "বার চার্ট"
+  },
+  "stats_chart_name_hbar": {
+    "message": "অনুভূমিক বার চার্ট"
+  },
+  "stats_chart_description_bar": {
+    "message": "বার চার্ট। কীবোর্ড দিয়ে ডেটা বিন্দুতে যান, অথবা একই মান দেখতে টেবিল হিসেবে দেখুন খুলুন।"
+  },
+  "stats_chart_description_hbar": {
+    "message": "অনুভূমিক বার চার্ট। কীবোর্ড দিয়ে ডেটা বিন্দুতে যান, অথবা একই মান দেখতে টেবিল হিসেবে দেখুন খুলুন।"
+  },
+  "stats_chart_empty_default": {
+    "message": "এখনও কোনো ডেটা নেই।"
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "টেবিল হিসেবে দেখুন"
+  },
+  "stats_chart_table_category": {
+    "message": "বিভাগ"
+  },
+  "stats_chart_table_value": {
+    "message": "মান"
+  },
+  "stats_heat_strip_label": {
+    "message": "24 ঘণ্টার ব্লক হওয়া চেষ্টার হিট স্ট্রিপ"
+  },
+  "stats_sessions_heading": {
+    "message": "এই মেশিনের সাম্প্রতিক সেশন"
+  },
+  "stats_sessions_empty": {
+    "message": "আপনার প্রথম সেশন এখানে দেখা যাবে।"
+  },
+  "stats_sessions_col_date": {
+    "message": "তারিখ"
+  },
+  "stats_sessions_col_start": {
+    "message": "শুরু"
+  },
+  "stats_sessions_col_planned": {
+    "message": "পরিকল্পিত"
+  },
+  "stats_sessions_col_focused": {
+    "message": "ফোকাসে"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "সব সাইট"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "এক সাইট"
+  },
+  "stats_sessions_col_intention": {
+    "message": "উদ্দেশ্য"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "ফলাফল"
+  },
+  "stats_sessions_col_source": {
+    "message": "উৎস"
+  },
+  "stats_session_no_intention": {
+    "message": "কোনো উদ্দেশ্য নেই"
+  },
+  "stats_session_article_label": {
+    "message": "সেশন: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "নিজে শুরু করা"
+  },
+  "stats_session_source_schedule": {
+    "message": "সময়সূচি"
+  },
+  "stats_session_source_scheduled": {
+    "message": "সময়সূচি থেকে শুরু"
+  },
+  "stats_outcome_completed": {
+    "message": "সম্পূর্ণ"
+  },
+  "stats_outcome_ended_early": {
+    "message": "আগেই শেষ"
+  },
+  "stats_outcome_running": {
+    "message": "চলছে"
+  }
+}

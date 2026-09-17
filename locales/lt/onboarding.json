@@ -1,1 +1,195 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock sąranka"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock sąranka"
+  },
+  "onboarding_progress": {
+    "message": "$STEP$ žingsnis iš $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Įrašytos sąrankos eigos atkurti nepavyko. Pradedama iš naujo su dabartinėmis numatytosiomis reikšmėmis."
+  },
+  "onboarding_complete_heading": {
+    "message": "Sąranka baigta"
+  },
+  "onboarding_complete_body": {
+    "message": "Tavo pasirinkimai įrašyti. Kad pradėtum sesiją, atverk Focus Lock iš Chrome įrankių juostos."
+  },
+  "onboarding_error_heading": {
+    "message": "Sąranka nepasiekiama"
+  },
+  "onboarding_error_body": {
+    "message": "Nepavyko įkelti sąrankos. Bandyk dar kartą."
+  },
+  "onboarding_retry_button": {
+    "message": "Bandyti dar kartą"
+  },
+  "onboarding_save_error": {
+    "message": "Nepavyko įrašyti sąrankos eigos. Bandyk dar kartą."
+  },
+  "onboarding_enable_error": {
+    "message": "Nepavyko įjungti svetainių blokavimo. Bandyk dar kartą."
+  },
+  "onboarding_finish_error": {
+    "message": "Nepavyko užbaigti sąrankos. Tavo pasirinkimai tebėra įrašyti. Bandyk dar kartą."
+  },
+  "onboarding_lists_heading": {
+    "message": "Pasirink pradinį blokavimo sąrašą"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Režimu $MODE$ įjungtos kategorijos ir papildomai blokuotos svetainės būna nepasiekiamos.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Režimu $MODE$ nepasiekiama kiekviena svetainė, išskyrus tavo leidžiamųjų sąrašą.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Šie pasirinkimai tampa numatytaisiais būsimoms sesijoms. Vėliau juos galėsi pakeisti."
+  },
+  "onboarding_lists_legend": {
+    "message": "Rekomenduojamos svetainių kategorijos"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ svetainė",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ svetainių",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Rodyti $CATEGORY$ svetaines",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Slėpti $CATEGORY$ svetaines",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ domenai",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Tęsti"
+  },
+  "onboarding_access_heading": {
+    "message": "Įjungti svetainių blokavimą"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock tikrina puslapių adresus tavo įrenginyje, kad palygintų juos su pasirinktomis kategorijomis ir svetainėmis. Svetainių prieigą jis naudoja blokavimo ekranui parodyti ir paveiktiems puslapiams atkurti, kai sesija baigiasi."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategorijos ir savi domenai gali apimti bet kurią svetainę. Todėl Chrome paprašys šio leidimo:"
+  },
+  "onboarding_access_capability": {
+    "message": "Skaityti ir keisti visus jūsų duomenis visose svetainėse"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock naudoja šią prieigą tik tada, kai taiko tavo blokavimo taisykles."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome nesuteikė svetainių prieigos. Gali bandyti dar kartą."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Svetainių prieiga suteikta, bet Focus Lock nepavyko įjungti blokavimo. Pakartok sąranką arba įkelk plėtinį iš naujo."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Įjungti svetainių blokavimą"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Ne dabar"
+  },
+  "onboarding_sync_heading": {
+    "message": "Pasirink, kur saugomi tavo nustatymai"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Sinchronizuoti tarp Chrome įrenginių"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Žemiau patvirtinti duomenys po sąrankos keliaus per Chrome sinchronizavimą."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Visi Focus Lock duomenys lieka šiame Chrome profilyje."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Sinchronizuojama"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Tik vietoje"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock kūrėjui nieko nesiunčiama."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Baigti su įjungtu sinchronizavimu"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Baigti be sinchronizavimo"
+  },
+  "onboarding_site_count_few": {
+    "message": "$COUNT$ svetainės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_site_count_many": {
+    "message": "$COUNT$ svetainės",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

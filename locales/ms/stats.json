@@ -1,57 +1,60 @@
 {
   "stats_document_title": {
-    "message": "Fokus Lock stats"
+    "message": "Fokus Lock stpadas"
   },
   "stats_page_title": {
-    "message": "Your fokus record"
+    "message": "Your fokus recpadaaud"
   },
   "stats_loading": {
-    "message": "Muating your stats."
+    "message": "Memupada your stpadas."
   },
   "stats_load_error": {
-    "message": "Could tidakt muat stats. Remuat to try again."
+    "message": "Could not load stpadas. Reload ke try agadalam."
   },
   "stats_partial_error_both": {
-    "message": "Hourly attempts and site access credit pengaturans are unavailable."
+    "message": "Hourly padatempts dan situs akses kredit pengpadauran are unavailable."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Hourly padatempts are unavailable."
   },
   "stats_partial_error_economy": {
-    "message": "Site access credit pengaturans are unavailable."
+    "message": "Situs akses kredit pengpadauran are unavailable."
   },
   "stats_scope_synced": {
-    "message": "Sinkronkaned totals from this Chrome account. Local-only panels are labeled."
+    "message": "Synced ketals from this Chrome account. Local-padaly panels are labeled."
   },
   "stats_scope_local": {
-    "message": "Totals from this machine. Focus Lock statistics are tidakt sinkronkaned."
+    "message": "Totals from this machdalame. Fokus Lock stpadaistics are not synced."
   },
   "stats_scope_checking": {
-    "message": "Checking whether these totals are sinkronkaned."
+    "message": "Checkdalamg whether these ketals are synced."
   },
   "stats_scope_unavailable": {
-    "message": "Statistics scope is unavailable. Totals may include sinkronkaned data. Hourly attempts and recent sessions are from this machine."
+    "message": "Stpadaistics scope is unavailable. Totals may dalamclude synced dpadaa. Hourly padatempts dan recent sesis are from this machdalame."
   },
   "stats_scope_retry": {
     "message": "Coba ulang scope check"
   },
   "stats_empty": {
-    "message": "Stats appear after your pertama session."
+    "message": "Stpadas appear after your first sesi."
   },
   "stats_tile_focus_today": {
-    "message": "Fokus tohari"
+    "message": "Fokus keday"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Focus in the terakhir 7 days"
+    "message": "Fokus dalam the last 7 days"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts blocked tohari"
+    "message": "Attempts blokired keday"
   },
   "stats_tile_gate_dismissed_today": {
-    "message": "Gate requests tutnaiked today"
+    "message": "Gpadae requests dismissed keday"
   },
   "stats_tile_credit_spent_today": {
-    "message": "Site access credit spent tohari"
+    "message": "Situs akses kredit spent keday"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "Semua sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
+    "message": "All situss $ALL_SITES$, padae situs $ONE_SITE$, $EARNED$ earned",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -80,7 +83,7 @@
     "message": "Garis"
   },
   "stats_streak_empty": {
-    "message": "Your streak mulais with your pertama focus day."
+    "message": "Your garis mulais dengan your first fokus day."
   },
   "stats_streak_unit_one": {
     "message": "hari"
@@ -88,11 +91,29 @@
   "stats_streak_unit_other": {
     "message": "haris"
   },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ freeze keken banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ freeze kekens banked",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "stats_streak_freeze_chip_title": {
-    "message": "Garis freeze: one missed hari, covered"
+    "message": "Garis freeze: padae missed day, covered"
   },
   "stats_streak_active_days_one": {
-    "message": "$COUNT$ aktif day this month ($MONTH$)",
+    "message": "$COUNT$ active day this mpadpadah ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -105,7 +126,7 @@
     }
   },
   "stats_streak_active_days_other": {
-    "message": "$COUNT$ aktif days this month ($MONTH$)",
+    "message": "$COUNT$ active days this mpadpadah ($MONTH$)",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -118,7 +139,7 @@
     }
   },
   "stats_streak_active_dates": {
-    "message": "Aktif dates in $MONTH$: $DAYS$.",
+    "message": "Active dpadaes dalam $MONTH$: $DAYS$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -131,7 +152,7 @@
     }
   },
   "stats_streak_no_active_dates": {
-    "message": "Tidak aktif dates in $MONTH$.",
+    "message": "No active dpadaes dalam $MONTH$.",
     "placeholders": {
       "MONTH": {
         "content": "$1",
@@ -140,25 +161,25 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Focus, terakhir 14 days"
+    "message": "Fokus, last 14 days"
   },
   "stats_chart_focus_empty": {
-    "message": "Focus minutes appear after your pertama session."
+    "message": "Fokus menit appear after your first sesi."
   },
   "stats_chart_attempts_heading": {
-    "message": "Blocked attempts, terakhir 14 days"
+    "message": "Blokired padatempts, last 14 days"
   },
   "stats_chart_attempts_empty": {
-    "message": "Blocked attempts tampilkan naik here once a session catches one."
+    "message": "Blokired padatempts tampilkan up here padace a sesi cpadaches padae."
   },
   "stats_chart_sites_heading": {
-    "message": "Atas blocked sites, terakhir 30 days"
+    "message": "Top blokired situss, last 30 days"
   },
   "stats_chart_sites_empty": {
-    "message": "Tidakthing blocked yet. That is a fine mulai."
+    "message": "Nothdalamg blokired yet. Thpada is a fdalame mulai."
   },
   "stats_chart_hours_heading": {
-    "message": "Attempts by jam, this machine only"
+    "message": "Attempts oleh hour, this machdalame padaly"
   },
   "stats_chart_other_site": {
     "message": "other"
@@ -173,7 +194,7 @@
     }
   },
   "stats_blocked_count_one": {
-    "message": "$COUNT$ blocked",
+    "message": "$COUNT$ blokired",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -182,7 +203,7 @@
     }
   },
   "stats_blocked_count_other": {
-    "message": "$COUNT$ blocked",
+    "message": "$COUNT$ blokired",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -194,16 +215,16 @@
     "message": "Bar chart"
   },
   "stats_chart_name_hbar": {
-    "message": "Horizontal bar chart"
+    "message": "Hpadaauizpadpadaal bar chart"
   },
   "stats_chart_description_bar": {
-    "message": "Bar chart. Use the keyboard to move through data points, or buka View as table for the same nilais."
+    "message": "Bar chart. Use the keyboard ke move through dpadaa podalamts, padaau buka Lihpada as table untuk the same nilais."
   },
   "stats_chart_description_hbar": {
-    "message": "Horizontal bar chart. Use the keyboard to move through data points, or buka View as table for the same nilais."
+    "message": "Hpadaauizpadpadaal bar chart. Use the keyboard ke move through dpadaa podalamts, padaau buka Lihpada as table untuk the same nilais."
   },
   "stats_chart_empty_default": {
-    "message": "Tidak data yet."
+    "message": "No dpadaa yet."
   },
   "stats_chart_point": {
     "message": "$LABEL$: $VALUE$",
@@ -219,25 +240,25 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "View as table"
+    "message": "Lihpada as table"
   },
   "stats_chart_table_category": {
-    "message": "Kategori"
+    "message": "Kpadaegpadaaui"
   },
   "stats_chart_table_value": {
     "message": "Nilai"
   },
   "stats_heat_strip_label": {
-    "message": "24-jam blocked-attempt heat strip"
+    "message": "24-hour blokired-padatempt hepada strip"
   },
   "stats_sessions_heading": {
-    "message": "Recent sesis on this machine"
+    "message": "Recent sesis pada this machdalame"
   },
   "stats_sessions_empty": {
-    "message": "Your pertama session will appear here."
+    "message": "Your first sesi will appear here."
   },
   "stats_sessions_col_date": {
-    "message": "Date"
+    "message": "Dpadae"
   },
   "stats_sessions_col_start": {
     "message": "Mulai"
@@ -249,13 +270,13 @@
     "message": "Fokused"
   },
   "stats_sessions_col_all_sites": {
-    "message": "Semua sites"
+    "message": "All situss"
   },
   "stats_sessions_col_one_site": {
-    "message": "One site"
+    "message": "One situs"
   },
   "stats_sessions_col_intention": {
-    "message": "Intention"
+    "message": "Nipada"
   },
   "stats_sessions_col_outcome": {
     "message": "Outcome"
@@ -264,7 +285,7 @@
     "message": "Source"
   },
   "stats_session_no_intention": {
-    "message": "Tidak intention"
+    "message": "No nipada"
   },
   "stats_session_article_label": {
     "message": "Sesi: $INTENTION$",
@@ -291,24 +312,6 @@
     "message": "Akhired early"
   },
   "stats_outcome_running": {
-    "message": "Running"
-  },
-  "stats_streak_freeze_tokens_one": {
-    "message": "$COUNT$ freeze token banked",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "stats_streak_freeze_tokens_other": {
-    "message": "$COUNT$ freeze tokens banked",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "2"
-      }
-    }
+    "message": "Runndalamg"
   }
 }

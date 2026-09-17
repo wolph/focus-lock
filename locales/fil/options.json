@@ -1,93 +1,96 @@
 {
   "options_page_title": {
-    "message": "Focus Lock opsyons"
+    "message": "Pokus Lock optisas"
   },
   "options_heading": {
-    "message": "Focus Lock pagwawikas"
+    "message": "Pokus Lock settsags"
   },
   "options_loading_settings": {
-    "message": "Mag-mag-loading pagwawikas"
+    "message": "Naglo-load settsags"
   },
   "options_privacy_loading": {
-    "message": "Mag-mag-loading privacy pagwawikas"
+    "message": "Naglo-load privacy settsags"
   },
   "options_save_failed": {
-    "message": "Could hindit i-save. Try again."
+    "message": "Could not save. Try agasa."
   },
   "options_blocking_heading": {
-    "message": "Hadlanging"
+    "message": "Hadlangsag"
+  },
+  "options_blocking_help": {
+    "message": "Cussam rules block dursag blacklist sessisas. The whitelist is what stays reachable dursag whitelist sessisas. Bundled categoies block commsa time ssaks."
   },
   "options_custom_blacklist_title": {
-    "message": "Custom blacklist"
+    "message": "Cussam blacklist"
   },
   "options_whitelist_title": {
     "message": "Whitelist"
   },
   "options_bundled_categories_heading": {
-    "message": "Bundled categories"
+    "message": "Bundled categoies"
   },
   "options_bundled_categories_help": {
-    "message": "Bundled lists of common time sinks. Toggle a whole kategorya, then buksan it to keep single sites available."
+    "message": "Bundled lists ng commsa time ssaks. Toggle a whole categoy, then open it sa keep ssagle sites available."
   },
   "options_schedule_heading": {
     "message": "Schedule"
   },
   "options_schedule_help": {
-    "message": "Sessions magsimula on their own inside these windows. Strictness hanay here applies for the whole window."
+    "message": "Sesysas start sa their own saside these wsadows. Strictness set here applies para the whole wsadow."
   },
   "options_behavior_heading": {
-    "message": "Sesyon behavior"
+    "message": "Sesysa behavio"
   },
   "options_budget_heading": {
-    "message": "Site access credit"
+    "message": "Site pag-access cri-edit"
   },
   "options_notifications_heading": {
-    "message": "Hinditifications"
+    "message": "Notificatisas"
   },
   "options_privacy_heading": {
-    "message": "Privacy and data"
+    "message": "Privacy at data"
   },
   "options_load_error_retry": {
     "message": "Subukan muli"
   },
   "options_load_error_delete_all": {
-    "message": "Burahin everything and magsimula over"
+    "message": "Burahsa everythsag at start over"
   },
   "options_load_error_keep_data": {
     "message": "Keep my data"
   },
   "options_delete_all_data": {
-    "message": "Burahin lahat Focus Lock data"
+    "message": "Burahsa all Pokus Lock data"
   },
   "options_dirty_saving": {
-    "message": "Saving changes"
+    "message": "Savsag changes"
   },
   "options_dirty_unsaved": {
-    "message": "Uni-saved changes"
+    "message": "Unmagsaved changes"
   },
   "options_dirty_clean": {
-    "message": "Hindi uni-saved changes"
+    "message": "No unmagsaved changes"
   },
   "options_dirty_discard": {
     "message": "Discard changes"
   },
   "options_dirty_save": {
-    "message": "I-i-save changes"
+    "message": "Magsave changes"
   },
   "options_session_status_label": {
-    "message": "Session kalagayan"
+    "message": "Sesysa status"
   },
   "options_rule_kind_host_badge": {
-    "message": "domain"
+    "message": "domasa"
   },
   "options_rule_kind_regex_badge": {
     "message": "regex"
   },
   "options_rule_remove": {
-    "message": "Alisin"
+    "message": "Alissa"
   },
   "options_rule_remove_aria": {
-    "message": "Alisin $PATTERN$",
+    "message": "Alissa $PATTERN$",
     "placeholders": {
       "PATTERN": {
         "content": "$1",
@@ -96,13 +99,13 @@
     }
   },
   "options_rules_empty": {
-    "message": "Hindi rules yet."
+    "message": "No panuntunans yet."
   },
   "options_rule_kind_aria": {
-    "message": "Rule hiwaga"
+    "message": "Panuntunan ksad"
   },
   "options_rule_kind_host_option": {
-    "message": "domain or subdomain"
+    "message": "domasa o subdomasa"
   },
   "options_rule_kind_regex_option": {
     "message": "regex (puhindi URL)"
@@ -114,16 +117,34 @@
     "message": "facebook.com"
   },
   "options_rule_pattern_placeholder_regex": {
-    "message": "/youtube\\.com\\/shorts/"
+    "message": "/youtube\\.com\\/shots/"
   },
   "options_rule_add": {
     "message": "Magdagdag rule"
   },
   "options_rules_help": {
-    "message": "facebook.com covers that domain and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/shorts/ matches the puhindi URL as a regular expression."
+    "message": "facebook.com covers that domasa at every subdomasa. news.ycombsaasa.com covers that subdomasa at anythsag under it. /youtube\\.com\\/shots/ matches the full URL as a regular expressisa."
+  },
+  "options_number_error_whole": {
+    "message": "$LABEL$ must be a whole number ng zero o greater.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
+    }
+  },
+  "options_number_error_nonnegative": {
+    "message": "$LABEL$ must be zero o greater.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
+    }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$ must be within the spataasported minute range.",
+    "message": "$LABEL$ must be kasamasa the suppoted msaute range.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -132,7 +153,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$ must be within the spataasported day range.",
+    "message": "$LABEL$ must be kasamasa the suppoted day range.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -141,55 +162,64 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "Sesyon defaults"
+    "message": "Sesysa defaults"
   },
   "options_session_defaults_help": {
-    "message": "Paraan and strictness are fixed when a session magsimulas. These are the halagas the magsimula form buksans with."
+    "message": "Modo at strictness are fixed kung kailan a sessisa starts. These are the values the start param opens kasama."
   },
   "options_preset_short_label": {
-    "message": "Short session prehanay (minutes)"
+    "message": "Shot sessisa preset (msautes)"
   },
   "options_preset_default_label": {
-    "message": "Default session prehanay (minutes)"
+    "message": "Default sessisa preset (msautes)"
   },
   "options_preset_deep_label": {
-    "message": "Deep session prehanay (minutes)"
+    "message": "Deep sessisa preset (msautes)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Blacklist: hadlang listed sites"
   },
   "options_mode_whitelist_label": {
-    "message": "Whitelist: lahatow only listed sites"
+    "message": "Whitelist: allow saly listed sites"
   },
   "options_strictness_flexible_label": {
-    "message": "Flexible: wakas the session whenever you choose"
+    "message": "Flexible: end the sessisa kung kailanever you choose"
   },
   "options_strictness_friction_label": {
-    "message": "Friction: tigilping early uses the configured deliberation gate"
+    "message": "Alitan: ssappsag early uses the csafigured deliberatisa gate"
   },
   "options_strictness_hard_label": {
-    "message": "Hard: hindi early wakas, temporary site access only"
+    "message": "Mahirap: no early end, tempoary site access saly"
   },
   "options_cycle_heading": {
-    "message": "Focus and break cycle"
+    "message": "Pokus at break cycle"
   },
   "options_cycle_help": {
-    "message": "Defaults: 25 minute focus, 5 minute break, 15 minute long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact minutes are convention, hindit science."
+    "message": "Defaults: 25 msaute focus, 5 msaute break, 15 msaute lsag break every 4th cycle. Pahsagas sa a schedule beat break-kung kailan-you-feel-like-it para mood at focus sa study samples. The exact msautes are csaventisa, not science."
+  },
+  "options_cycle_default_label": {
+    "message": "Siklus focus at breaks by default"
   },
   "options_focus_minutes_label": {
-    "message": "Focus minutos"
+    "message": "Pokus msautes"
   },
   "options_short_break_minutes_label": {
-    "message": "Short break minutos"
+    "message": "Shot break msautes"
   },
   "options_long_break_minutes_label": {
-    "message": "Long break minutos"
+    "message": "Lsag break msautes"
+  },
+  "options_long_every_label": {
+    "message": "Lsag break every Nth cycle"
   },
   "options_gate_heading": {
-    "message": "Deliberation gate"
+    "message": "Deliberatisa gate"
   },
   "options_gate_help": {
-    "message": "A 10 second wait with an explicit bumalik-to-work button measurably reduces impulse visits (field study, PNAS 2023). The longer wait and the urid sentence roughly double the effect."
+    "message": "A 10 secsad wait kasama an explicit back-sa-wok butsan measurably reduces impulse visits (field study, PNAS 2023). The lsager wait at the typed sentence roughly double the effect."
   },
   "options_gate_wait_one": {
-    "message": "Wait $COUNT$ second",
+    "message": "Wait $COUNT$ secsad",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -198,7 +228,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "Wait $COUNT$ seconds",
+    "message": "Wait $COUNT$ secsads",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -207,46 +237,52 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "Custom"
+    "message": "Cussam"
   },
   "options_custom_delay_label": {
-    "message": "Custom delay (seconds)"
+    "message": "Cussam delay (secsads)"
+  },
+  "options_custom_delay_error": {
+    "message": "Cussam delay must be a positive whole number ng secsads."
+  },
+  "options_gate_typed_phrase_label": {
+    "message": "Also require typsag a sentence"
   },
   "options_gate_force_end_label": {
-    "message": "Paganahin \"Ighindire timeout and wakas anyway\" button"
+    "message": "Gawsa \"Ignoe timeout at end anyway\" butsan"
   },
   "options_credit_help": {
-    "message": "Site access credit accrues while you focus. Both access to lahat sites and a single-site unlock spwakas from the same balance. You can step away at any time without spwakasing credit."
+    "message": "Site access credit accrues while you focus. Both access sa all sites at a ssagle-site unlock spend from the same balance. You can step away at any time kasamaout spendsag credit."
   },
   "options_earn_rate_label": {
-    "message": "Minutes of site access per 30 minutos of focus"
+    "message": "Msausa ng site access per 30 msautes ng focus"
   },
   "options_credit_cap_label": {
-    "message": "Site access credit limit (minutos)"
+    "message": "Site access credit limit (msautes)"
   },
   "options_pause_length_label": {
-    "message": "Lahat-site access length (minutes)"
+    "message": "All-site access length (msautes)"
   },
   "options_unlock_length_label": {
-    "message": "Site unlock length (minutos)"
+    "message": "Site unlock length (msautes)"
   },
   "options_streak_heading": {
-    "message": "Streak and retention"
+    "message": "Sunod-sunod at retentisa"
   },
   "options_streak_help": {
-    "message": "The streak counts araws that reach the goal. One default session keeps the chain alive, and a freeze token repairs a missed araw."
+    "message": "The streak counts days that reach the goal. One default sessisa keeps the chasa alive, at a freeze saken repairs a missed day."
   },
   "options_streak_goal_label": {
-    "message": "Daily streak goal (focus minutos)"
+    "message": "Daily streak goal (focus msautes)"
   },
   "options_freeze_interval_label": {
-    "message": "Freeze token interval (araws)"
+    "message": "Freeze saken saterval (days)"
   },
   "options_retention_label": {
     "message": "Keep daily stats (araws)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ kategorya on.",
+    "message": "$CATEGORY$ categoy sa.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -255,7 +291,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ kategorya off.",
+    "message": "$CATEGORY$ categoy ngf.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -264,13 +300,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "Lahat categories on."
+    "message": "All categoies sa."
   },
   "options_all_categories_off_announcement": {
-    "message": "Lahat categories off."
+    "message": "All categoies ngf."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ included.",
+    "message": "$HOST$ sacluded.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -288,7 +324,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "Lahat $CATEGORY$ sites included.",
+    "message": "All $CATEGORY$ sites sacluded.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -306,7 +342,7 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "Kategorya bulk actions"
+    "message": "Kategoya bulk actisas"
   },
   "options_selected_count": {
     "message": "Selected $COUNT$",
@@ -333,10 +369,10 @@
     "message": "Deselect lahat"
   },
   "options_select_all_categories_aria": {
-    "message": "Select lahat categories"
+    "message": "Select all categoies"
   },
   "options_deselect_all_categories_aria": {
-    "message": "Deselect lahat categories"
+    "message": "Deselect all categoies"
   },
   "options_show_category_sites": {
     "message": "Ipakita $CATEGORY$ sites",
@@ -348,7 +384,7 @@
     }
   },
   "options_hide_category_sites": {
-    "message": "Tago $CATEGORY$ sites",
+    "message": "Itago $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -357,7 +393,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ site included",
+    "message": "$COUNT$ site sacluded",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -366,7 +402,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ sites included",
+    "message": "$COUNT$ sites sacluded",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -375,10 +411,10 @@
     }
   },
   "options_category_off": {
-    "message": "Kategorya off"
+    "message": "Kategoya ngf"
   },
   "options_included_when_enabled_one": {
-    "message": "$COUNT$ included when paganahind",
+    "message": "$COUNT$ sacluded kung kailan enabled",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -387,7 +423,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ included when paganahind",
+    "message": "$COUNT$ sacluded kung kailan enabled",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -396,7 +432,16 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "Uncheck a site to keep it available while the rest of the kategorya is blocked."
+    "message": "Uncheck a site sa keep it available while the rest ng the categoy is blocked."
+  },
+  "options_category_site_bulk_actions_aria": {
+    "message": "$CATEGORY$ site bulk actisas",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_select_all_category_sites_aria": {
     "message": "Select lahat $CATEGORY$ sites",
@@ -429,7 +474,7 @@
     "message": "Sun"
   },
   "options_day_mon": {
-    "message": "Mon"
+    "message": "Msa"
   },
   "options_day_tue": {
     "message": "Tue"
@@ -447,10 +492,10 @@
     "message": "Sat"
   },
   "options_schedule_cycles_label": {
-    "message": "Cycle focus and breaks"
+    "message": "Siklus focus at breaks"
   },
   "options_schedule_overlap_error": {
-    "message": "Overlaps ahindither paganahind entry on $DAY$.",
+    "message": "Overlaps another enabled entry sa $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -459,40 +504,40 @@
     }
   },
   "options_schedule_session_type_aria": {
-    "message": "Session uri"
+    "message": "Sesysa type"
   },
   "options_schedule_entry_legend": {
     "message": "Schedule entry"
   },
   "options_schedule_start_label": {
-    "message": "Magsimula"
+    "message": "Simulan"
   },
   "options_schedule_end_label": {
     "message": "Wakas"
   },
   "options_schedule_duration_legend": {
-    "message": "Duration"
+    "message": "Duratisa"
   },
   "options_schedule_intention_label": {
-    "message": "Intention"
+    "message": "Layunsa"
   },
   "options_schedule_intention_placeholder": {
-    "message": "what this time is for"
+    "message": "what this time is para"
   },
   "options_schedule_save_entry": {
-    "message": "I-i-save entry"
+    "message": "Magsave entry"
   },
   "options_cancel": {
-    "message": "Tawaran"
+    "message": "Kanselahsa"
   },
   "options_schedule_empty": {
-    "message": "Hindi scheduled sessions yet."
+    "message": "No scheduled sessisas yet."
   },
   "options_schedule_selected_days_aria": {
     "message": "Selected araws"
   },
   "options_schedule_time_range": {
-    "message": "$START$ to $END$",
+    "message": "$START$ sa $END$",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -514,19 +559,19 @@
     "message": "flexible"
   },
   "options_schedule_strictness_friction": {
-    "message": "friction"
+    "message": "frictisa"
   },
   "options_schedule_strictness_hard": {
-    "message": "hard"
+    "message": "mahirap"
   },
   "options_schedule_enabled_label": {
-    "message": "Paganahind"
+    "message": "Gawsad"
   },
   "options_schedule_edit": {
     "message": "I-edit"
   },
   "options_schedule_delete": {
-    "message": "Burahin"
+    "message": "Burahsa"
   },
   "options_schedule_add": {
     "message": "Magdagdag schedule entry"
@@ -538,19 +583,19 @@
     "message": "Master volume"
   },
   "options_sound_session_complete": {
-    "message": "Session kumpleto"
+    "message": "Sesysa complete"
   },
   "options_sound_break_start": {
-    "message": "Break magsimula"
+    "message": "Pahsaga start"
   },
   "options_sound_break_end": {
-    "message": "Break wakas"
+    "message": "Pahsaga end"
   },
   "options_sound_schedule_start": {
-    "message": "Schedule auto-magsimula"
+    "message": "Schedule ausa-start"
   },
   "options_sound_preview_aria": {
-    "message": "Preview $SOUND$",
+    "message": "Pretsagnan $SOUND$",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -562,157 +607,157 @@
     "message": "Play"
   },
   "options_sound_preview_error": {
-    "message": "Could hindit preview the sound. Try again."
+    "message": "Could not preview the sound. Try agasa."
   },
   "options_sounds_notifications_heading": {
-    "message": "Hinditifications"
+    "message": "Notificatisas"
   },
   "options_session_complete_notification": {
-    "message": "Ipakita a system hinditification when a session kumpletos"
+    "message": "Ipakita a system notificatisa kung kailan a sessisa completes"
   },
   "options_badge_heading": {
     "message": "Badge"
   },
   "options_badge_countdown": {
-    "message": "Ipakita the remaining time on the toolbar icon"
+    "message": "Ipakita the remasasag time sa the saolbar icsa"
   },
   "options_privacy_website_access_heading": {
-    "message": "Website access"
+    "message": "Website pag-access"
   },
   "options_privacy_website_off_title": {
-    "message": "Website access is off"
+    "message": "Website access is ngf"
   },
   "options_privacy_website_off_detail": {
-    "message": "Focus Lock canhindit block websites until you grant access."
+    "message": "Pokus Lock cannot block websites until you grant access."
   },
   "options_privacy_website_enable_action": {
-    "message": "Paganahin website blocking"
+    "message": "Gawsa website blocksag"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "Website access is granted, but blocking is hindit aktibo"
+    "message": "Website access is granted, but blocksag is not active"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome granted access, but Focus Lock could hindit register its blocking script."
+    "message": "Chrome granted access, but Pokus Lock could not register its blocksag script."
   },
   "options_privacy_website_retry_action": {
-    "message": "Subukan muli website blocking"
+    "message": "Retry website blocksag"
   },
   "options_privacy_website_on_title": {
-    "message": "Website blocking is paganahind"
+    "message": "Website blocksag is enabled"
   },
   "options_privacy_website_on_detail": {
-    "message": "Focus Lock can apply your aktibo blocking rules on regular website pages."
+    "message": "Pokus Lock can apply your active blocksag rules sa regular website pages."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "Burahin local history?"
+    "message": "Burahsa local hissay?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "Tiyakin burahin local history"
+    "message": "Csafirm delete local hissay"
   },
   "options_privacy_local_history_deleted": {
-    "message": "Local history burahind."
+    "message": "Local hissay deleted."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "This permanently burahins puhindi URLs, focus intentions, and detailed session events from this device. It does hindit linisin a running session, which keeps its intention and the magdagdagress of each tab it is blocking. Wakasing the session linisins the intention and magsimulas a cleanpataas that linisins every buksan website tab, and the cleanpataas alisins every itipond magdagdagress when it kumpletos."
+    "message": "This permanently deletes full URLs, focus satentisas, at detailed sessisa events from this device. It does not clear a runnsag sessisa, which keeps its satentisa at the address ng each tab it is blocksag. Endsag the sessisa clears the satentisa at starts a cleanup that clears every open website tab, at the cleanup removes every ssaed address kung kailan it completes."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "This permanently burahins puhindi URLs, focus intentions, and detailed session events from this device, plus local-only aggregate statistics. It does hindit linisin a running session, which keeps its intention and the magdagdagress of each tab it is blocking. Wakasing the session linisins the intention and magsimulas a cleanpataas that linisins every buksan website tab, and the cleanpataas alisins every itipond magdagdagress when it kumpletos."
+    "message": "This permanently deletes full URLs, focus satentisas, at detailed sessisa events from this device, plus local-saly aggregate statistics. It does not clear a runnsag sessisa, which keeps its satentisa at the address ng each tab it is blocksag. Endsag the sessisa clears the satentisa at starts a cleanup that clears every open website tab, at the cleanup removes every ssaed address kung kailan it completes."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "Burahin remote I-i-sync data?"
+    "message": "Burahsa remote Sync data?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "Tiyakin burahin remote I-i-sync data"
+    "message": "Csafirm delete remote Sync data"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "Remote Chrome I-i-sync data burahind."
+    "message": "Remote Chrome Sync data burahsad."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently burahins remote pagwawikas, block and lahatow lists, site access credit, streaks, and domain-level blocked-attempt aggregates from Chrome I-i-sync. Local pagwawikas and statistics stay on this device."
+    "message": "This permanently deletes remote settsags, block at allow lists, site access credit, streaks, at domasa-level blocked-attempt aggregates from Chrome Sync. Local settsags at statistics stay sa this device."
   },
   "options_privacy_confirm_all_title": {
-    "message": "Burahin lahat Focus Lock data?"
+    "message": "Burahsa all Pokus Lock data?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "Tiyakin burahin lahat Focus Lock data"
+    "message": "Csafirm delete all Pokus Lock data"
   },
   "options_privacy_all_deleted": {
-    "message": "Lahat Focus Lock data burahind."
+    "message": "All Pokus Lock data deleted."
   },
   "options_privacy_all_body_intro": {
-    "message": "This permanently burahins every piece of Focus Lock data on this device and any Focus Lock copies kaliwa in Chrome I-i-sync:"
+    "message": "This permanently deletes every piece ng Pokus Lock data sa this device at any Pokus Lock copies left sa Chrome Sync:"
   },
   "options_privacy_all_body_outro": {
-    "message": "Deleting everything is available only while hindi session is running. Focus Lock then returns to hanaypataas."
+    "message": "Deletsag everythsag is available saly while no sessisa is runnsag. Pokus Lock then returns sa setup."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "Local history could hindit be burahind. Try again."
+    "message": "Local hissay could not be deleted. Try agasa."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "Remote Chrome I-i-sync data could hindit be burahind. Try again."
+    "message": "Remote Chrome Sync data could not be deleted. Try agasa."
   },
   "options_privacy_error_all_clear": {
-    "message": "Lahat Focus Lock data could hindit be burahind. Try again."
+    "message": "All Pokus Lock data could not be deleted. Try agasa."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome I-i-sync could hindit i-save your latest changes. Your local i-save is safe."
+    "message": "Chrome Sync could not magsave your latest changes. Your local magsave is safe."
   },
   "options_privacy_error_request": {
-    "message": "The request could hindit be kumpletod. Try again."
+    "message": "The request could not be completed. Try agasa."
   },
   "options_privacy_website_access_updated": {
-    "message": "Website access pataasdated."
+    "message": "Website pag-access updated."
   },
   "options_privacy_website_access_denied": {
-    "message": "Website access was hindit granted."
+    "message": "Website pag-access was not granted."
   },
   "options_privacy_error_website_access": {
-    "message": "Website access could hindit be pataasdated. Try again."
+    "message": "Website access could not be updated. Try agasa."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "Website blocking paganahind."
+    "message": "Website blocksag enabled."
   },
   "options_privacy_error_export": {
-    "message": "Could hindit dalhin the event tala."
+    "message": "Could not expot the event log."
   },
   "options_privacy_error_export_retry": {
-    "message": "Could hindit dalhin the event tala. Try again."
+    "message": "Could not expot the event log. Try agasa."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Could hindit buksan Chrome permission pagwawikas. Try again."
+    "message": "Could not open Chrome permissisa settsags. Try agasa."
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "Chrome permission pagwawikas buksaned."
+    "message": "Chrome permissisa settsags opened."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Buksan Chrome permission pagwawikas"
+    "message": "Buksan Chrome permissisa settsags"
   },
   "options_privacy_sync_heading": {
     "message": "Chrome I-i-sync"
   },
   "options_privacy_sync_switch_label": {
-    "message": "I-i-sync Focus Lock data across Chrome devices"
+    "message": "Sync Pokus Lock data across Chrome devices"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome I-i-sync paganahind."
+    "message": "Chrome Sync gawsad."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome I-i-sync palambotind."
+    "message": "Chrome Sync huwagd."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome I-i-sync is still saving your latest changes."
+    "message": "Chrome Sync is still savsag your latest changes."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome I-i-sync is on."
+    "message": "Chrome Sync is sa."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome I-i-sync is off."
+    "message": "Chrome Sync is ngf."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Chrome I-i-sync changes i-saved."
+    "message": "Chrome Sync changes magsaved."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Subukan muli enabling Chrome I-i-sync"
+    "message": "Retry enablsag Chrome Sync"
   },
   "options_privacy_retry_sync": {
     "message": "Subukan muli Chrome I-i-sync"
@@ -721,75 +766,75 @@
     "message": "I-i-synced"
   },
   "options_privacy_scope_local_only": {
-    "message": "Local only"
+    "message": "Local saly"
   },
   "options_privacy_developer_note": {
-    "message": "Hindithing is sent to the Focus Lock developer."
+    "message": "Nothsag is sent sa the Pokus Lock developer."
   },
   "options_privacy_local_log_heading": {
     "message": "Local event tala"
   },
   "options_privacy_local_log_detail": {
-    "message": "Dalhin the detailed local tala or burahin local browsing and session history."
+    "message": "Expot the detailed local log o delete local browssag at sessisa hissay."
   },
   "options_privacy_export_local_log": {
-    "message": "Dalhin local event tala"
+    "message": "Expot local event log"
   },
   "options_privacy_local_log_exported": {
-    "message": "Local event tala dalhined."
+    "message": "Local event log expoted."
   },
   "options_privacy_delete_local_history": {
-    "message": "Burahin local history"
+    "message": "Burahsa local hissay"
   },
   "options_privacy_remote_data_heading": {
     "message": "Remote I-i-sync data"
   },
   "options_privacy_remote_data_detail": {
-    "message": "Burahin the Focus Lock copies kaliwa in Chrome I-i-sync without changing this device."
+    "message": "Burahsa the Pokus Lock copies left sa Chrome Sync kasamaout changsag this device."
   },
   "options_privacy_delete_remote_data": {
-    "message": "Burahin remote I-i-sync data"
+    "message": "Burahsa remote Sync data"
   },
   "options_privacy_all_data_heading": {
-    "message": "Lahat Focus Lock data"
+    "message": "All Pokus Lock data"
   },
   "options_privacy_all_data_detail": {
-    "message": "Burahin every Focus Lock record on this device and any Focus Lock copies kaliwa in Chrome I-i-sync, then magsimula again from hanaypataas. Available while hindi session is running."
+    "message": "Burahsa every Pokus Lock recod sa this device at any Pokus Lock copies left sa Chrome Sync, then start agasa from setup. Available while no sessisa is runnsag."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "Resuming deletion of lahat Focus Lock data."
+    "message": "Resumsag deletisa ng all Pokus Lock data."
   },
   "options_privacy_retry_local_history": {
-    "message": "Subukan muli local history deletion"
+    "message": "Retry local hissay deletisa"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "Subukan muli remote I-i-sync deletion"
+    "message": "Retry remote Sync deletisa"
   },
   "options_privacy_retry_all_data": {
-    "message": "Subukan muli lahat data deletion"
+    "message": "Retry all data deletisa"
   },
   "options_error_load": {
-    "message": "Could hindit mag-load pagwawikas. Remag-load the page to try again."
+    "message": "Could not load settsags. Reload the page sa try agasa."
   },
   "options_error_retry_boot": {
-    "message": "Could hindit remagsimula Focus Lock. Try again."
+    "message": "Could not restart Pokus Lock. Try agasa."
   },
   "options_error_refresh_privacy": {
-    "message": "Could hindit siyang-siya privacy pagwawikas. Remag-load the page."
+    "message": "Could not refresh privacy settsags. Reload the page."
   },
   "options_error_website_blocking": {
-    "message": "Could hindit pataasdate website blocking. Try again."
+    "message": "Could not update website blocksag. Try agasa."
   },
   "options_error_change_sync": {
-    "message": "Could hindit change Chrome I-i-sync. Try again."
+    "message": "Could not change Chrome Sync. Try agasa."
   },
   "options_error_retry_sync": {
-    "message": "Could hindit subukan muli Chrome I-i-sync. Try again."
+    "message": "Could not retry Chrome Sync. Try agasa."
   },
   "options_error_save_settings": {
-    "message": "Could hindit i-save pagwawikas. Remag-load the page and try again."
+    "message": "Could not save settsags. Reload the page at try agasa."
   },
   "options_error_save_lists": {
-    "message": "Could hindit i-save lists. Remag-load the page and try again."
+    "message": "Could not save lists. Reload the page at try agasa."
   }
 }

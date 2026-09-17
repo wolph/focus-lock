@@ -1,1 +1,630 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "अगला: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "सेटिंग्स"
+  },
+  "popup_open_settings_failed": {
+    "message": "सेटिंग्स नहीं खुल सकीं। दोबारा कोशिश करें।"
+  },
+  "popup_settings_load_failed": {
+    "message": "सेशन सेटिंग्स लोड नहीं हो सकीं। दोबारा कोशिश करने के लिए पॉपअप फिर से खोलें। डिफ़ॉल्ट मान दिखाए जा रहे हैं।"
+  },
+  "popup_open_setup_failed": {
+    "message": "सेटअप नहीं खुल सका। दोबारा कोशिश करें।"
+  },
+  "popup_setup_required_heading": {
+    "message": "Focus Lock का सेटअप पूरा करें"
+  },
+  "popup_setup_required_body": {
+    "message": "सेशन शुरू करने से पहले अपनी शुरुआती सूचियाँ, वेबसाइट एक्सेस और स्टोरेज मोड चुनें।"
+  },
+  "popup_open_setup_button": {
+    "message": "सेटअप खोलें"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "वेबसाइट ब्लॉकिंग की पुष्टि नहीं हो सकी। दोबारा कोशिश करें।"
+  },
+  "popup_blocking_enable_failed": {
+    "message": "वेबसाइट ब्लॉकिंग चालू नहीं हो सकी। दोबारा कोशिश करें।"
+  },
+  "popup_blocking_off_heading": {
+    "message": "वेबसाइट ब्लॉकिंग बंद है"
+  },
+  "popup_blocking_off_body": {
+    "message": "जब तक Chrome वेबसाइट एक्सेस नहीं देता और ब्लॉकिंग चालू नहीं होती, Focus Lock सेशन शुरू नहीं कर सकता।"
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome ने वेबसाइट एक्सेस नहीं दिया। वेबसाइट ब्लॉकिंग अब भी बंद है।"
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "वेबसाइट एक्सेस मिल गया, लेकिन Focus Lock ब्लॉकिंग चालू नहीं कर सका। सेटअप दोहराएँ या एक्सटेंशन फिर से लोड करें।"
+  },
+  "popup_enable_blocking_button": {
+    "message": "वेबसाइट ब्लॉकिंग चालू करें"
+  },
+  "popup_retry_button": {
+    "message": "दोबारा कोशिश करें"
+  },
+  "popup_notice_access_revoked": {
+    "message": "आपका सेशन इसलिए समाप्त हुआ क्योंकि वेबसाइट एक्सेस हटा दिया गया था।"
+  },
+  "popup_notice_blocking_failed": {
+    "message": "आपका सेशन इसलिए समाप्त हुआ क्योंकि Focus Lock वेबसाइट ब्लॉकिंग चालू नहीं कर सका।"
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "यह सूचना हटाई नहीं जा सकी। दोबारा कोशिश करें।"
+  },
+  "popup_dismiss_notice_label": {
+    "message": "वेबसाइट एक्सेस की सूचना हटाएँ"
+  },
+  "popup_dismiss_button": {
+    "message": "हटाएँ"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lock फिर से शुरू नहीं हो सका। दोबारा कोशिश करें।"
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock शुरू नहीं हो सका"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "कारण पढ़ा नहीं जा सका।"
+  },
+  "popup_reset_runtime_button": {
+    "message": "स्थानीय स्थिति रीसेट करें"
+  },
+  "popup_reset_runtime_note": {
+    "message": "आपकी सेटिंग्स, सूचियाँ और आँकड़े बने रहते हैं। मौजूदा सेशन की स्थिति हट जाती है।"
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "सब कुछ हटाकर नए सिरे से शुरू करें"
+  },
+  "popup_keep_data_button": {
+    "message": "मेरा डेटा रहने दें"
+  },
+  "popup_delete_all_button": {
+    "message": "Focus Lock का सारा डेटा हटाएँ"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "सेटअप की स्थिति उपलब्ध नहीं। दोबारा कोशिश करने के लिए Focus Lock फिर से लोड करें।"
+  },
+  "popup_snapshot_unavailable": {
+    "message": "फोकस की स्थिति उपलब्ध नहीं"
+  },
+  "popup_action_in_progress": {
+    "message": "कार्रवाई चल रही है"
+  },
+  "popup_active_site_checking": {
+    "message": "मौजूदा साइट जाँची जा रही है"
+  },
+  "popup_active_site_unsupported": {
+    "message": "अनलॉक करने के लिए कोई सामान्य वेबसाइट खोलें"
+  },
+  "popup_active_site_unknown": {
+    "message": "मौजूदा साइट पहचानी नहीं जा सकी"
+  },
+  "popup_active_site_error": {
+    "message": "मौजूदा साइट पहचानी नहीं जा सकी।"
+  },
+  "popup_resume_now": {
+    "message": "अभी फिर से शुरू करें"
+  },
+  "popup_start_next_focus_early": {
+    "message": "अगला फोकस जल्दी शुरू करें"
+  },
+  "popup_unlock_this_site": {
+    "message": "यह साइट अनलॉक करें"
+  },
+  "popup_unlock_all_sites": {
+    "message": "सभी साइटें अनलॉक करें"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ एक्सेस, $CREDIT$ क्रेडिट",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ एक्सेस, $CREDIT$ क्रेडिट - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "काम का टैब चुनें"
+  },
+  "popup_change_work_tab_button": {
+    "message": "काम का टैब बदलें"
+  },
+  "popup_session_actions_summary": {
+    "message": "सेशन की कार्रवाइयाँ"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ साइट एक्सेस क्रेडिट",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "अनुमत डोमेन जोड़ें"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "wiki.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "अनुमत डोमेन जोड़ें"
+  },
+  "popup_add_button": {
+    "message": "जोड़ें"
+  },
+  "popup_draft_allowed_only": {
+    "message": "सिर्फ़ $COUNT$ अनुमत साइट नियम। बाकी वेबसाइटें ब्लॉक।",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ ब्लॉक श्रेणियाँ, $RULES$ अतिरिक्त नियम।",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "सख्त लॉक। जल्दी समाप्त नहीं कर सकते।"
+  },
+  "popup_draft_stop_flexible": {
+    "message": "कभी भी समाप्त कर सकते हैं।"
+  },
+  "popup_draft_stop_friction": {
+    "message": "$SECONDS$ से की प्रतीक्षा के बाद समाप्ति।",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "$SECONDS$ से की प्रतीक्षा और पुष्टि वाक्य के बाद समाप्ति।",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "सेशन की लंबाई"
+  },
+  "popup_custom_minutes_label": {
+    "message": "अपने मिनट"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "मि"
+  },
+  "popup_gate_force_end": {
+    "message": "प्रतीक्षा छोड़ें और समाप्त करें"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "फोकस जारी रखें"
+  },
+  "popup_gate_phrase_label": {
+    "message": "टाइप करें:"
+  },
+  "popup_gate_update_failed": {
+    "message": "पुष्टि स्क्रीन अपडेट नहीं हो सकी। दोबारा कोशिश करें।"
+  },
+  "popup_gate_intention": {
+    "message": "आपने कहा था: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "सोचने के लिए एक पल:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "/ $TOTAL$ से",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "काम पर लौटें"
+  },
+  "popup_destination_unavailable": {
+    "message": "गंतव्य उपलब्ध नहीं"
+  },
+  "popup_back_to_work_name": {
+    "message": "काम पर लौटें: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "काम पर लौटें: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "जब तक ब्लॉक साइटों की सूचियाँ फिर से लोड नहीं होतीं, श्रेणियाँ बदली नहीं जा सकतीं।"
+  },
+  "popup_blocked_categories_heading": {
+    "message": "ब्लॉक श्रेणियाँ"
+  },
+  "popup_show_full_domain": {
+    "message": "पूरा डोमेन दिखाएँ: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "पूरा रेगुलर एक्सप्रेशन दिखाएँ: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "डोमेन"
+  },
+  "popup_rule_kind_regex": {
+    "message": "रेगुलर एक्सप्रेशन"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ की साइटें",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ साइट",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ साइटें",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "और $COUNT$ साइट",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "और $COUNT$ साइटें",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "अनुमत अपवाद"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "अतिरिक्त ब्लॉक नियम"
+  },
+  "popup_no_extra_blocked": {
+    "message": "कोई अतिरिक्त ब्लॉक नियम नहीं।"
+  },
+  "popup_allowed_heading": {
+    "message": "अनुमत साइटें और नियम"
+  },
+  "popup_no_allowed_sites": {
+    "message": "अभी कोई साइट अनुमत नहीं है।"
+  },
+  "popup_what_will_be_blocked": {
+    "message": "क्या ब्लॉक होगा"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "क्या अनुमत होगा"
+  },
+  "popup_categories_selected": {
+    "message": "$TOTAL$ में से $SELECTED$ श्रेणियाँ चुनी गईं",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ अतिरिक्त ब्लॉक नियम",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ अतिरिक्त ब्लॉक नियम",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ अनुमत नियम",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ अनुमत नियम",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "यहाँ अनुमत साइटों और नियमों में किए बदलाव सिर्फ़ इसी सेशन पर लागू होते हैं। बाकी सब ब्लॉक रहता है।"
+  },
+  "popup_scope_blacklist": {
+    "message": "यहाँ श्रेणियों और नियमों में किए बदलाव सिर्फ़ इसी सेशन पर लागू होते हैं।"
+  },
+  "popup_open_settings_defaults": {
+    "message": "स्थायी डिफ़ॉल्ट के लिए सेटिंग्स खोलें"
+  },
+  "popup_rule_details_label": {
+    "message": "सेशन के नियमों का विवरण"
+  },
+  "popup_session_type_legend": {
+    "message": "सेशन का प्रकार"
+  },
+  "popup_session_type_flexible": {
+    "message": "लचीला"
+  },
+  "popup_session_type_friction": {
+    "message": "विलंब वाला"
+  },
+  "popup_session_type_hard": {
+    "message": "सख्त लॉक"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "जब चाहें, सेशन तुरंत समाप्त करें।"
+  },
+  "popup_session_type_friction_hint": {
+    "message": "जल्दी समाप्त करने के लिए $WAIT$ ज़रूरी है। कुछ टाइप करना ज़रूरी नहीं।",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "जल्दी समाप्त करने के लिए $WAIT$ और टाइप की गई पुष्टि ज़रूरी है।",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "सेशन जल्दी समाप्त नहीं हो सकता। साइट एक्सेस क्रेडिट फिर भी काम करता है।"
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "चुनी हुई श्रेणियाँ और अतिरिक्त नियम ब्लॉक रहते हैं। बाकी साइटें खुली रहती हैं।"
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "सिर्फ़ सूची में दी गई साइटें खुली रहती हैं। बाकी हर वेबसाइट ब्लॉक रहती है।"
+  },
+  "popup_invalid_duration_error": {
+    "message": "सेशन की लंबाई शून्य मिनट से ज़्यादा डालें।"
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "डिफ़ॉल्ट बदल गए, लेकिन मौजूदा सूचियाँ लोड नहीं हो सकीं। पॉपअप फिर से खोलें।"
+  },
+  "popup_no_work_tab_option": {
+    "message": "कोई काम का टैब नहीं (वैकल्पिक)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "चुना हुआ टैब उपलब्ध नहीं - दूसरा चुनें"
+  },
+  "popup_cycles_label": {
+    "message": "चक्र: $FOCUS$ मि फोकस, $SHORT_BREAK$ मि ब्रेक, हर $LONG_EVERY$-वें पर $LONG_BREAK$ मि लंबा ब्रेक",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "इरादा"
+  },
+  "popup_intention_placeholder": {
+    "message": "आप किस पर काम कर रहे हैं?"
+  },
+  "popup_work_tab_named": {
+    "message": "काम का टैब: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "बदलें"
+  },
+  "popup_session_settings_summary": {
+    "message": "सेशन की सेटिंग्स"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "काम का टैब चुनें"
+  },
+  "popup_work_tab_select_label": {
+    "message": "काम का टैब"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (मौजूदा)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "ब्लॉकिंग मोड"
+  },
+  "popup_invalid_time_label": {
+    "message": "अमान्य समय"
+  },
+  "popup_start_focus_label": {
+    "message": "$DURATION$ का फोकस शुरू करें",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "कोई सही डोमेन डालें, जैसे wiki.example.com।"
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "काम के टैब लोड नहीं हो सके। दोबारा कोशिश करने के लिए पॉपअप फिर से खोलें।"
+  },
+  "popup_use_this_tab": {
+    "message": "यही टैब चुनें"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "यह टैब काम के लिए उपलब्ध नहीं है। कोई दूसरा खुला टैब चुनें।"
+  },
+  "popup_checking_current_tab": {
+    "message": "मौजूदा टैब जाँचा जा रहा है..."
+  },
+  "popup_finding_current_tab": {
+    "message": "आपका मौजूदा टैब खोजा जा रहा है..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "आपका मौजूदा टैब लोड नहीं हो सका। दोबारा कोशिश करें।"
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "अपना काम का टैब चुनें या बदलें।"
+  },
+  "popup_saving_work_tab": {
+    "message": "काम का टैब सहेजा जा रहा है..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "काम का टैब सहेजा नहीं जा सका। दोबारा कोशिश करें।"
+  },
+  "popup_choose_open_tab_option": {
+    "message": "कोई खुला टैब चुनें"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "या कोई दूसरा टैब चुनें"
+  },
+  "popup_start_failed": {
+    "message": "सेशन शुरू नहीं हो सका। दोबारा कोशिश करें।"
+  }
+}

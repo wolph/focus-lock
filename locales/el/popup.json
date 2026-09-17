@@ -1,1 +1,303 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "next: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Settings"
+  },
+  "popup_open_setup_button": {
+    "message": "Open setup"
+  },
+  "popup_blocking_off_heading": {
+    "message": "Website blocking is off"
+  },
+  "popup_enable_blocking_button": {
+    "message": "Enable website blocking"
+  },
+  "popup_retry_button": {
+    "message": "Retry"
+  },
+  "popup_dismiss_button": {
+    "message": "Dismiss"
+  },
+  "popup_reset_runtime_button": {
+    "message": "Reset local runtime"
+  },
+  "popup_keep_data_button": {
+    "message": "Keep my data"
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Focus status unavailable"
+  },
+  "popup_action_in_progress": {
+    "message": "Action in progress"
+  },
+  "popup_active_site_checking": {
+    "message": "Checking the active site"
+  },
+  "popup_resume_now": {
+    "message": "Resume now"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Start next focus early"
+  },
+  "popup_unlock_this_site": {
+    "message": "Unlock this site"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Unlock all sites"
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Choose work tab"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Change work tab"
+  },
+  "popup_session_actions_summary": {
+    "message": "Session actions"
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Add an allowed domain"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Add allowed domain"
+  },
+  "popup_add_button": {
+    "message": "Add"
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Can end at any time."
+  },
+  "popup_session_length_label": {
+    "message": "Session length"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Custom minutes"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Keep focusing"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Type:"
+  },
+  "popup_gate_intention": {
+    "message": "You said: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "A moment to decide:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "of $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Back to work"
+  },
+  "popup_destination_unavailable": {
+    "message": "Destination unavailable"
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blocked categories"
+  },
+  "popup_rule_kind_domain": {
+    "message": "Domain"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regular expression"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "and $COUNT$ more site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "and $COUNT$ more sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Allowed exceptions"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Extra blocked rules"
+  },
+  "popup_no_extra_blocked": {
+    "message": "No extra blocked rules."
+  },
+  "popup_allowed_heading": {
+    "message": "Allowed sites and rules"
+  },
+  "popup_no_allowed_sites": {
+    "message": "No sites are allowed yet."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "What will be blocked"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "What will be allowed"
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ allowed rule",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ allowed rules",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_rule_details_label": {
+    "message": "Session rule details"
+  },
+  "popup_session_type_legend": {
+    "message": "Session type"
+  },
+  "popup_session_type_flexible": {
+    "message": "Flexible"
+  },
+  "popup_session_type_friction": {
+    "message": "Friction"
+  },
+  "popup_session_type_hard": {
+    "message": "Hard lock"
+  },
+  "popup_no_work_tab_option": {
+    "message": "No work tab (optional)"
+  },
+  "popup_intention_label": {
+    "message": "Intention"
+  },
+  "popup_intention_placeholder": {
+    "message": "What are you working on?"
+  },
+  "popup_work_tab_named": {
+    "message": "Work tab: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Change"
+  },
+  "popup_session_settings_summary": {
+    "message": "Session settings"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Choose a work tab"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Work tab"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (Current)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Blocking mode"
+  },
+  "popup_invalid_time_label": {
+    "message": "invalid time"
+  },
+  "popup_start_focus_label": {
+    "message": "Start $DURATION$ focus",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_use_this_tab": {
+    "message": "Use this tab"
+  },
+  "popup_checking_current_tab": {
+    "message": "Checking current tab..."
+  },
+  "popup_saving_work_tab": {
+    "message": "Saving work tab..."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Choose an open tab"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Or choose another tab"
+  }
+}

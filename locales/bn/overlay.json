@@ -1,1 +1,120 @@
-{}
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "লক করা - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "উপলব্ধ কাজের ট্যাব দেখা হচ্ছে..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "আপনার কাজ চালিয়ে যেতে একটি খোলা ট্যাব বেছে নিন।"
+  },
+  "overlay_target_session_unavailable": {
+    "message": "আপনার ফোকাস সেশন উপলব্ধ নয়। আবার চেষ্টা করুন, বা এই পাতাটি রিলোড করুন।"
+  },
+  "overlay_target_lookup_failed": {
+    "message": "আপনার কাজের ট্যাব লোড করা যায়নি। আবার চেষ্টা করুন, বা এই পাতাটি রিলোড করুন।"
+  },
+  "overlay_target_reconnect": {
+    "message": "Focus Lock-এর সঙ্গে আবার যুক্ত হতে এই পাতাটি রিলোড করুন।"
+  },
+  "overlay_target_page_changed": {
+    "message": "অনুরোধ করা পাতাটি বদলে গেছে। পাতাটি রিলোড করুন।"
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock-এর কাছে পৌঁছানো যায়নি। আবার চেষ্টা করুন।"
+  },
+  "overlay_picker_heading": {
+    "message": "কাজের ট্যাব বেছে নিন"
+  },
+  "overlay_picker_cancel": {
+    "message": "বাতিল"
+  },
+  "overlay_picker_search_label": {
+    "message": "কাজের ট্যাব খুঁজুন"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "শিরোনাম বা ওয়েবসাইট দিয়ে খুঁজুন"
+  },
+  "overlay_picker_clear_search": {
+    "message": "খোঁজা মুছুন"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "ট্যাব রিফ্রেশ করুন"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "উপলব্ধ কাজের ট্যাব"
+  },
+  "overlay_picker_finding": {
+    "message": "উপলব্ধ ট্যাব খোঁজা হচ্ছে..."
+  },
+  "overlay_picker_searching": {
+    "message": "কাজের ট্যাব খোঁজা হচ্ছে..."
+  },
+  "overlay_picker_saving": {
+    "message": "কাজের ট্যাব সংরক্ষণ করা হচ্ছে..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "কোনো কাজের ট্যাব নেই। এই সেশনে অনুমোদিত কোনো সাইট খুলুন, তারপর ট্যাব রিফ্রেশ করুন।"
+  },
+  "overlay_picker_no_matches": {
+    "message": "মিলে যাওয়া কোনো ট্যাব নেই। অন্যভাবে খুঁজুন বা খোঁজা মুছুন।"
+  },
+  "overlay_picker_load_failed": {
+    "message": "কাজের ট্যাব লোড করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "overlay_picker_count_one": {
+    "message": "$COUNT$টির মধ্যে $MATCHES$টি ট্যাব",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$COUNT$টির মধ্যে $MATCHES$টি ট্যাব",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  }
+}

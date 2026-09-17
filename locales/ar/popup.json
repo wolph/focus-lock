@@ -1,1 +1,774 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "التالية: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "الإعدادات"
+  },
+  "popup_open_settings_failed": {
+    "message": "تعذّر فتح الإعدادات. أعد المحاولة."
+  },
+  "popup_settings_load_failed": {
+    "message": "تعذّر تحميل إعدادات الجلسة. أعد فتح النافذة للمحاولة مرة أخرى. تُعرض الإعدادات الافتراضية."
+  },
+  "popup_open_setup_failed": {
+    "message": "تعذّر فتح الإعداد. أعد المحاولة."
+  },
+  "popup_setup_required_heading": {
+    "message": "أكمل إعداد Focus Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "اختر قوائمك الأولية والوصول إلى المواقع ووضع التخزين قبل بدء جلسة."
+  },
+  "popup_open_setup_button": {
+    "message": "فتح الإعداد"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "تعذّر تأكيد حظر المواقع. أعد المحاولة."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "تعذّر تفعيل حظر المواقع. أعد المحاولة."
+  },
+  "popup_blocking_off_heading": {
+    "message": "حظر المواقع معطّل"
+  },
+  "popup_blocking_off_body": {
+    "message": "لا يستطيع Focus Lock بدء جلسة حتى يمنح Chrome الوصول إلى المواقع ويُفعَّل الحظر."
+  },
+  "popup_blocking_off_denied": {
+    "message": "لم يمنح Chrome الوصول إلى المواقع. ما زال حظر المواقع معطّلًا."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "مُنح الوصول إلى المواقع، لكن تعذّر على Focus Lock تفعيل الحظر. أعد الإعداد أو أعد تحميل الإضافة."
+  },
+  "popup_enable_blocking_button": {
+    "message": "تفعيل حظر المواقع"
+  },
+  "popup_retry_button": {
+    "message": "إعادة المحاولة"
+  },
+  "popup_notice_access_revoked": {
+    "message": "انتهت جلستك لأن الوصول إلى المواقع أُزيل."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "انتهت جلستك لأن Focus Lock لم يتمكن من تفعيل حظر المواقع."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "تعذّر إخفاء هذا التنبيه. أعد المحاولة."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "إخفاء تنبيه الوصول إلى المواقع"
+  },
+  "popup_dismiss_button": {
+    "message": "إخفاء"
+  },
+  "popup_restart_failed": {
+    "message": "تعذّرت إعادة تشغيل Focus Lock. أعد المحاولة."
+  },
+  "popup_boot_failed_heading": {
+    "message": "تعذّر بدء Focus Lock"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "تعذّرت قراءة السبب."
+  },
+  "popup_reset_runtime_button": {
+    "message": "إعادة تعيين التشغيل المحلي"
+  },
+  "popup_reset_runtime_note": {
+    "message": "يحتفظ بإعداداتك وقوائمك وإحصاءاتك. ويمسح حالة الجلسة الحالية."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "حذف كل شيء والبدء من جديد"
+  },
+  "popup_keep_data_button": {
+    "message": "الاحتفاظ ببياناتي"
+  },
+  "popup_delete_all_button": {
+    "message": "حذف جميع بيانات Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "حالة الإعداد غير متاحة. أعد تحميل Focus Lock للمحاولة مرة أخرى."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "حالة التركيز غير متاحة"
+  },
+  "popup_action_in_progress": {
+    "message": "إجراء قيد التنفيذ"
+  },
+  "popup_active_site_checking": {
+    "message": "جارٍ التحقق من الموقع النشط"
+  },
+  "popup_active_site_unsupported": {
+    "message": "افتح موقعًا إلكترونيًا عاديًا لإلغاء قفله"
+  },
+  "popup_active_site_unknown": {
+    "message": "تعذّر تحديد الموقع النشط"
+  },
+  "popup_active_site_error": {
+    "message": "تعذّر تحديد الموقع النشط."
+  },
+  "popup_resume_now": {
+    "message": "استئناف الآن"
+  },
+  "popup_start_next_focus_early": {
+    "message": "ابدأ التركيز التالي مبكرًا"
+  },
+  "popup_unlock_this_site": {
+    "message": "إلغاء قفل هذا الموقع"
+  },
+  "popup_unlock_all_sites": {
+    "message": "إلغاء قفل جميع المواقع"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ وصول، $CREDIT$ رصيد",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ وصول، $CREDIT$ رصيد - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "اختر علامة تبويب العمل"
+  },
+  "popup_change_work_tab_button": {
+    "message": "تغيير علامة تبويب العمل"
+  },
+  "popup_session_actions_summary": {
+    "message": "إجراءات الجلسة"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ رصيد وصول إلى المواقع",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "أضف نطاقًا مسموحًا"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "إضافة نطاق مسموح"
+  },
+  "popup_add_button": {
+    "message": "إضافة"
+  },
+  "popup_draft_allowed_only": {
+    "message": "$COUNT$ قواعد مواقع مسموحة فقط. بقية المواقع محظورة.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ فئات محظورة، $RULES$ قواعد إضافية.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "قفل صارم. لا يمكن الإنهاء مبكرًا."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "يمكن الإنهاء في أي وقت."
+  },
+  "popup_draft_stop_friction": {
+    "message": "الإنهاء بعد انتظار $SECONDS$ ثانية.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "الإنهاء بعد انتظار $SECONDS$ ثانية وعبارة تأكيد.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "مدة الجلسة"
+  },
+  "popup_custom_minutes_label": {
+    "message": "دقائق مخصصة"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "دقيقة"
+  },
+  "popup_gate_force_end": {
+    "message": "تجاهل المهلة وأنهِ على أي حال"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "واصل التركيز"
+  },
+  "popup_gate_phrase_label": {
+    "message": "اكتب:"
+  },
+  "popup_gate_update_failed": {
+    "message": "تعذّر تحديث البوابة. أعد المحاولة."
+  },
+  "popup_gate_intention": {
+    "message": "قلت: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "لحظة للتفكير:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "من $TOTAL$ ث",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "العودة إلى العمل"
+  },
+  "popup_destination_unavailable": {
+    "message": "الوجهة غير متاحة"
+  },
+  "popup_back_to_work_name": {
+    "message": "العودة إلى العمل: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "العودة إلى العمل: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "تعديل الفئات معطّل حتى تُعاد قوائم المواقع المحظورة."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "الفئات المحظورة"
+  },
+  "popup_show_full_domain": {
+    "message": "عرض النطاق الكامل: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "عرض التعبير النمطي الكامل: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "نطاق"
+  },
+  "popup_rule_kind_regex": {
+    "message": "تعبير نمطي"
+  },
+  "popup_category_sites_label": {
+    "message": "مواقع $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ موقع",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ موقع",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "و$COUNT$ موقع آخر",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "و$COUNT$ موقع آخر",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "الاستثناءات المسموحة"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "قواعد حظر إضافية"
+  },
+  "popup_no_extra_blocked": {
+    "message": "لا توجد قواعد حظر إضافية."
+  },
+  "popup_allowed_heading": {
+    "message": "المواقع والقواعد المسموحة"
+  },
+  "popup_no_allowed_sites": {
+    "message": "لا توجد مواقع مسموحة بعد."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "ما الذي سيُحظر"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "ما الذي سيُسمح به"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ من $TOTAL$ فئات محددة",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ قاعدة حظر إضافية",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ قاعدة حظر إضافية",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ قاعدة مسموحة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ قاعدة مسموحة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "تغييرات المواقع المسموحة والقواعد هنا تنطبق على هذه الجلسة فقط. وكل ما عداها محظور."
+  },
+  "popup_scope_blacklist": {
+    "message": "تغييرات الفئات والقواعد هنا تنطبق على هذه الجلسة فقط."
+  },
+  "popup_open_settings_defaults": {
+    "message": "افتح الإعدادات للقيم الدائمة"
+  },
+  "popup_rule_details_label": {
+    "message": "تفاصيل قواعد الجلسة"
+  },
+  "popup_session_type_legend": {
+    "message": "نوع الجلسة"
+  },
+  "popup_session_type_flexible": {
+    "message": "مرن"
+  },
+  "popup_session_type_friction": {
+    "message": "احتكاك"
+  },
+  "popup_session_type_hard": {
+    "message": "قفل صارم"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "أنهِ الجلسة فورًا متى شئت."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "الإنهاء المبكر يتطلب $WAIT$. لا حاجة إلى الكتابة.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "الإنهاء المبكر يتطلب $WAIT$ وتأكيدًا مكتوبًا.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "لا يمكن إنهاء الجلسة مبكرًا. ويظل رصيد الوصول إلى المواقع يعمل."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "الفئات المحددة والقواعد الإضافية محظورة. وتبقى المواقع الأخرى متاحة."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "المواقع المدرجة فقط متاحة. وكل موقع آخر محظور."
+  },
+  "popup_invalid_duration_error": {
+    "message": "أدخل مدة جلسة أكبر من صفر دقيقة."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "تغيّرت الإعدادات الافتراضية، لكن تعذّر تحميل القوائم الحالية. أعد فتح النافذة."
+  },
+  "popup_no_work_tab_option": {
+    "message": "بلا علامة تبويب عمل (اختياري)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "علامة التبويب المحددة غير متاحة - اختر غيرها"
+  },
+  "popup_cycles_label": {
+    "message": "الدورات: $FOCUS$ دقيقة تركيز، $SHORT_BREAK$ دقيقة استراحة، $LONG_BREAK$ دقيقة استراحة طويلة كل دورة رقم $LONG_EVERY$",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "النية"
+  },
+  "popup_intention_placeholder": {
+    "message": "على ماذا تعمل؟"
+  },
+  "popup_work_tab_named": {
+    "message": "علامة تبويب العمل: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "تغيير"
+  },
+  "popup_session_settings_summary": {
+    "message": "إعدادات الجلسة"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "اختر علامة تبويب للعمل"
+  },
+  "popup_work_tab_select_label": {
+    "message": "علامة تبويب العمل"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (الحالية)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "وضع الحظر"
+  },
+  "popup_invalid_time_label": {
+    "message": "وقت غير صالح"
+  },
+  "popup_start_focus_label": {
+    "message": "ابدأ تركيز $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "أدخل نطاقًا صالحًا مثل docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "تعذّر تحميل علامات تبويب العمل. أعد فتح النافذة للمحاولة مرة أخرى."
+  },
+  "popup_use_this_tab": {
+    "message": "استخدم علامة التبويب هذه"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "علامة التبويب هذه غير متاحة للعمل. اختر علامة تبويب مفتوحة أخرى."
+  },
+  "popup_checking_current_tab": {
+    "message": "جارٍ التحقق من علامة التبويب الحالية..."
+  },
+  "popup_finding_current_tab": {
+    "message": "جارٍ البحث عن علامة التبويب الحالية..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "تعذّر تحميل علامة التبويب الحالية. أعد المحاولة."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "اختر علامة تبويب العمل أو غيّرها."
+  },
+  "popup_saving_work_tab": {
+    "message": "جارٍ حفظ علامة تبويب العمل..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "تعذّر حفظ علامة تبويب العمل. أعد المحاولة."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "اختر علامة تبويب مفتوحة"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "أو اختر علامة تبويب أخرى"
+  },
+  "popup_start_failed": {
+    "message": "تعذّر بدء الجلسة. أعد المحاولة."
+  },
+  "popup_sites_zero": {
+    "message": "$COUNT$ موقع",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_sites_two": {
+    "message": "$COUNT$ موقعان",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_sites_few": {
+    "message": "$COUNT$ مواقع",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ موقعًا",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_zero": {
+    "message": "و$COUNT$ موقع آخر",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_two": {
+    "message": "وموقعان آخران عددهما $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_few": {
+    "message": "و$COUNT$ مواقع أخرى",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_many": {
+    "message": "و$COUNT$ موقعًا آخر",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_zero": {
+    "message": "$COUNT$ قاعدة حظر إضافية",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_two": {
+    "message": "$COUNT$ قاعدتا حظر إضافيتان",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_few": {
+    "message": "$COUNT$ قواعد حظر إضافية",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ قاعدة حظر إضافية",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_zero": {
+    "message": "$COUNT$ قاعدة مسموحة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_two": {
+    "message": "$COUNT$ قاعدتان مسموحتان",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_few": {
+    "message": "$COUNT$ قواعد مسموحة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
+    "message": "$COUNT$ قاعدة مسموحة",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  }
+}

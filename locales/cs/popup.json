@@ -1,1 +1,702 @@
-{}
+{
+  "popup_next_schedule": {
+    "message": "další: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Nastavení"
+  },
+  "popup_open_settings_failed": {
+    "message": "Nastavení se nepodařilo otevřít. Zkus to znovu."
+  },
+  "popup_settings_load_failed": {
+    "message": "Nastavení relace se nepodařilo načíst. Načti okno znovu. Zobrazují se výchozí hodnoty."
+  },
+  "popup_open_setup_failed": {
+    "message": "Nastavení se nepodařilo otevřít. Zkus to znovu."
+  },
+  "popup_setup_required_heading": {
+    "message": "Dokonči nastavení Focus Lock"
+  },
+  "popup_setup_required_body": {
+    "message": "Než spustíš relaci, vyber si počáteční seznamy, přístup k webům a režim ukládání."
+  },
+  "popup_open_setup_button": {
+    "message": "Otevřít nastavení"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Blokování webů se nepodařilo potvrdit. Zkus to znovu."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Blokování webů se nepodařilo zapnout. Zkus to znovu."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Blokování webů je vypnuté"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock nemůže spustit relaci, dokud Chrome nepovolí přístup k webům a nezapne se blokování."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome přístup k webům nepovolil. Blokování webů je stále vypnuté."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Přístup k webům je povolen, ale Focus Lock nemohl zapnout blokování. Zopakuj nastavení nebo znovu načti rozšíření."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Zapnout blokování webů"
+  },
+  "popup_retry_button": {
+    "message": "Znovu"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Tvoje relace skončila, protože byl odebrán přístup k webům."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Tvoje relace skončila, protože Focus Lock nemohl zapnout blokování webů."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Upozornění se nepodařilo zavřít. Zkus to znovu."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Zavřít upozornění o přístupu k webům"
+  },
+  "popup_dismiss_button": {
+    "message": "Zavřít"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lock se nepodařilo restartovat. Zkus to znovu."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock se nepodařilo spustit"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Důvod se nepodařilo přečíst."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Resetovat místní běhové prostředí"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Zachová tvoje nastavení, seznamy a statistiky. Smaže stav současné relace."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Smazat vše a začít znovu"
+  },
+  "popup_keep_data_button": {
+    "message": "Ponechat moje data"
+  },
+  "popup_delete_all_button": {
+    "message": "Smazat všechna data Focus Lock"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Stav nastavení není dostupný. Načti Focus Lock znovu."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Stav soustředění není dostupný"
+  },
+  "popup_action_in_progress": {
+    "message": "Probíhá akce"
+  },
+  "popup_active_site_checking": {
+    "message": "Kontroluji aktivní web"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Otevři běžný web, který chceš odemknout"
+  },
+  "popup_active_site_unknown": {
+    "message": "Aktivní web se nepodařilo rozpoznat"
+  },
+  "popup_active_site_error": {
+    "message": "Aktivní web se nepodařilo rozpoznat."
+  },
+  "popup_resume_now": {
+    "message": "Pokračovat hned"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Spustit další soustředění dřív"
+  },
+  "popup_unlock_this_site": {
+    "message": "Odemknout tento web"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Odemknout všechny weby"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ přístupu, $CREDIT$ kreditu",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ přístupu, $CREDIT$ kreditu - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "Vybrat pracovní kartu"
+  },
+  "popup_change_work_tab_button": {
+    "message": "Změnit pracovní kartu"
+  },
+  "popup_session_actions_summary": {
+    "message": "Akce relace"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ kreditu na přístup",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Přidat povolenou doménu"
+  },
+  "popup_allowed_domain_placeholder": {
+    "message": "dokumenty.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Přidat povolenou doménu"
+  },
+  "popup_add_button": {
+    "message": "Přidat"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Jen $COUNT$ pravidel povolených webů. Ostatní weby blokovány.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ blokovaných kategorií, $RULES$ dalších pravidel.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Tvrdý zámek. Nelze ukončit dřív."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Lze ukončit kdykoli."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Konec po $SECONDS$s čekání.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "Konec po $SECONDS$s čekání a potvrzovací větě.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Délka relace"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Vlastní minuty"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "min"
+  },
+  "popup_gate_force_end": {
+    "message": "Ignorovat čekání a přesto ukončit"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Soustřeď se dál"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Napiš:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Rozmyšlení se nepodařilo aktualizovat. Zkus to znovu."
+  },
+  "popup_gate_intention": {
+    "message": "Řekl jsi: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Chvilka na rozmyšlenou:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "z $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "Zpátky do práce"
+  },
+  "popup_destination_unavailable": {
+    "message": "Cíl není známý"
+  },
+  "popup_back_to_work_name": {
+    "message": "Zpátky do práce: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Zpátky do práce: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Kategorie půjde upravit, až se znovu načtou seznamy blokovaných webů."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Blokované kategorie"
+  },
+  "popup_show_full_domain": {
+    "message": "Zobrazit celou doménu: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Zobrazit celý regulární výraz: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Doména"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Regulární výraz"
+  },
+  "popup_category_sites_label": {
+    "message": "Weby kategorie $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ web",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ webů",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "a další $COUNT$ web",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "a dalších $COUNT$ webů",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "Povolené výjimky"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Další blokovací pravidla"
+  },
+  "popup_no_extra_blocked": {
+    "message": "Žádná další blokovací pravidla."
+  },
+  "popup_allowed_heading": {
+    "message": "Povolené weby a pravidla"
+  },
+  "popup_no_allowed_sites": {
+    "message": "Zatím nejsou povolené žádné weby."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "Co bude blokováno"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "Co bude povoleno"
+  },
+  "popup_categories_selected": {
+    "message": "Vybráno $SELECTED$ z $TOTAL$ kategorií",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ další blokovací pravidlo",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ dalších blokovacích pravidel",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ povolené pravidlo",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ povolených pravidel",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Změny povolených webů a pravidel tady platí jen pro tuto relaci. Všechno ostatní je blokované."
+  },
+  "popup_scope_blacklist": {
+    "message": "Změny kategorií a pravidel tady platí jen pro tuto relaci."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Otevřít nastavení pro trvalé výchozí hodnoty"
+  },
+  "popup_rule_details_label": {
+    "message": "Podrobnosti pravidel relace"
+  },
+  "popup_session_type_legend": {
+    "message": "Typ relace"
+  },
+  "popup_session_type_flexible": {
+    "message": "Flexibilní"
+  },
+  "popup_session_type_friction": {
+    "message": "Tření"
+  },
+  "popup_session_type_hard": {
+    "message": "Tvrdý zámek"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "Ukonči relaci okamžitě, kdykoli se rozhodneš."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Předčasné ukončení vyžaduje $WAIT$. Psát nic nemusíš.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Předčasné ukončení vyžaduje $WAIT$ a napsané potvrzení.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "Relace nemůže skončit dřív. Kredit na přístup funguje dál."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "Vybrané kategorie a další pravidla jsou blokované. Ostatní weby zůstávají dostupné."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Dostupné jsou jen uvedené weby. Každý jiný web je blokovaný."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Zadej délku relace větší než nula minut."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Výchozí hodnoty se změnily, ale současné seznamy se nepodařilo načíst. Načti okno znovu."
+  },
+  "popup_no_work_tab_option": {
+    "message": "Žádná pracovní karta (volitelné)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Vybraná karta není dostupná - vyber jinou"
+  },
+  "popup_cycles_label": {
+    "message": "Cykly: $FOCUS$ min soustředění, $SHORT_BREAK$ min přestávka, $LONG_BREAK$ min dlouhá přestávka každý $LONG_EVERY$.",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Předsevzetí"
+  },
+  "popup_intention_placeholder": {
+    "message": "Na čem pracuješ?"
+  },
+  "popup_work_tab_named": {
+    "message": "Pracovní karta: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Změnit"
+  },
+  "popup_session_settings_summary": {
+    "message": "Nastavení relace"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "Vyber pracovní kartu"
+  },
+  "popup_work_tab_select_label": {
+    "message": "Pracovní karta"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (aktuální)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Režim blokování"
+  },
+  "popup_invalid_time_label": {
+    "message": "neplatný čas"
+  },
+  "popup_start_focus_label": {
+    "message": "Spustit soustředění na $DURATION$",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "Zadej platnou doménu, například dokumenty.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Pracovní karty se nepodařilo načíst. Otevři okno znovu."
+  },
+  "popup_use_this_tab": {
+    "message": "Použít tuto kartu"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "Tato karta se k práci nehodí. Vyber jinou otevřenou kartu."
+  },
+  "popup_checking_current_tab": {
+    "message": "Kontroluji aktuální kartu..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Hledám tvoji aktuální kartu..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Tvoji aktuální kartu se nepodařilo načíst. Zkus to znovu."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Vyber nebo vyměň svoji pracovní kartu."
+  },
+  "popup_saving_work_tab": {
+    "message": "Ukládám pracovní kartu..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Pracovní kartu se nepodařilo uložit. Zkus to znovu."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Vyber otevřenou kartu"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Nebo vyber jinou kartu"
+  },
+  "popup_start_failed": {
+    "message": "Relaci se nepodařilo spustit. Zkus to znovu."
+  },
+  "popup_sites_few": {
+    "message": "$COUNT$ weby",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ webu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_few": {
+    "message": "a další $COUNT$ weby",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_many": {
+    "message": "a dalšího $COUNT$ webu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_few": {
+    "message": "$COUNT$ další blokovací pravidla",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ dalšího blokovacího pravidla",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_few": {
+    "message": "$COUNT$ povolená pravidla",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
+    "message": "$COUNT$ povoleného pravidla",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  }
+}

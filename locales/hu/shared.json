@@ -1,1 +1,627 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "Leállításig"
+  },
+  "shared_preset_short": {
+    "message": "rövid"
+  },
+  "shared_preset_focus": {
+    "message": "fókusz"
+  },
+  "shared_preset_deep_work": {
+    "message": "mély munka"
+  },
+  "shared_deep_work_note": {
+    "message": "Ízlés kérdése, nem tudományé: egy hosszú, megszakítás nélküli blokk, automatikus pihenők nélkül."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "összesen $MINUTES$ perc, $FOCUS$ perces fókuszblokkokkal",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ perc megszakítás nélküli fókusz",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "Indítás leállításig"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "Zárolás kézi feloldásig"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "A leállításig tartó menetek Rugalmasak vagy Súrlódásosak maradnak, és nem használhatnak fókusz- és pihenőciklust."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "A Teljes zárolás nem érhető el a leállításig tartó menethez: időzítő és kézi befejezés nélkül a menet sosem érne véget."
+  },
+  "shared_end_session": {
+    "message": "Menet befejezése"
+  },
+  "shared_unlock": {
+    "message": "Feloldás"
+  },
+  "shared_gate_wait_none": {
+    "message": "várakozás nélkül"
+  },
+  "shared_gate_wait": {
+    "message": "$SECONDS$ másodperces várakozás",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ és egy begépelt mondat",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "Addig fut, amíg be nem fejezed ezzel: $LABEL$. Ciklusok kikapcsolva.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "Addig fut, amíg fel nem oldod: $REQUIREMENT$, majd $LABEL$. Ciklusok kikapcsolva.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "A leállításig mód által kényszerített ciklusok"
+  },
+  "shared_mode_blacklist": {
+    "message": "A kiválasztott oldalak blokkolása"
+  },
+  "shared_mode_whitelist": {
+    "message": "Csak a kiválasztott oldalak engedélyezése"
+  },
+  "shared_focus_time_label": {
+    "message": "Fókuszidő"
+  },
+  "shared_clock_focus_phase": {
+    "message": "fókuszszakasz"
+  },
+  "shared_clock_total_session": {
+    "message": "teljes menet"
+  },
+  "shared_clock_pause": {
+    "message": "szünet"
+  },
+  "shared_clock_break": {
+    "message": "pihenő"
+  },
+  "shared_badge_indefinite": {
+    "message": "BE"
+  },
+  "shared_popup_starting": {
+    "message": "A Focus Lock indul. A kiválasztott szabályok alkalmazása."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "A menet véget ért. A böngésző takarítása folyamatban."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "A Focus Lock nem tudott elindulni. A böngésző takarítása folyamatban."
+  },
+  "shared_popup_transition_error": {
+    "message": "A Focus Lock nem tudta rendbe tenni a félbemaradt indulást."
+  },
+  "shared_popup_closure_error": {
+    "message": "A Focus Lock nem tudta befejezni a böngésző takarítását."
+  },
+  "shared_retry_cleanup": {
+    "message": "Takarítás újra"
+  },
+  "shared_end_failed": {
+    "message": "A menetet nem sikerült befejezni. Próbáld újra."
+  },
+  "shared_retry_failed": {
+    "message": "A takarítást nem sikerült újrapróbálni. Próbáld újra."
+  },
+  "shared_action_failed": {
+    "message": "Ezt a műveletet nem sikerült kérni. Próbáld újra."
+  },
+  "shared_return_to_work_failed": {
+    "message": "Nem sikerült visszatérni a munkához. Próbáld újra."
+  },
+  "shared_data_clear_pending": {
+    "message": "A Focus Lock adatainak törlése. A takarítás befejezése."
+  },
+  "shared_data_clear_error": {
+    "message": "Az adatokat nem sikerült törölni. Próbáld újra."
+  },
+  "shared_schedule_window_label": {
+    "message": "Az idősáv végéig"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "Ütemezés szerint indul, és addig fut, amíg le nem állítod: Rugalmasnál a Menet befejezése, Súrlódásnál a Feloldás a megerősítő várakozáson át. Ciklusok kikapcsolva."
+  },
+  "shared_schedule_started_title": {
+    "message": "Az ütemezett menet elindult"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "Aktív, amíg le nem állítod."
+  },
+  "shared_settings_indefinite": {
+    "message": "Leállításig tartó menet fut. Az eszköztár ablakában nézheted meg vagy fejezheted be."
+  },
+  "shared_settings_starting": {
+    "message": "A Focus Lock indul. Az oldalhozzáférés ellenőrzése és a szabályaid alkalmazása."
+  },
+  "shared_settings_error": {
+    "message": "A Focus Lock nem tudta befejezni a böngésző takarítását. Nyisd meg az ablakot, és próbáld újra."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "A menet vezérlői az eszköztár ablakában vannak. A futó menet megtartja az induláskor rögzített szabályokat."
+  },
+  "shared_settings_timed": {
+    "message": "Időzített menet fut eddig: $TIME$. Magától véget ér. Az élő állapotot az eszköztár ablakában nézd.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "Befejezve"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "Kézzel befejezve"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "Korán véget ért"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "Vége: elveszett az oldalhozzáférés"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "Vége: a blokkolás előkészítése nem sikerült"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "Vége: az időzítő létrehozása nem sikerült"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "Vége: az oldalak blokkolása nem sikerült"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "Vége: a helyreállítás nem sikerült"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ó $MINUTES$ p",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ p",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ perc",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ perc",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "A menet frissítése"
+  },
+  "shared_less_than_a_minute": {
+    "message": "Kevesebb mint egy perc"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ a pihenőig",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ van hátra ebből a menetből",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "A költség meghaladja a kredithatárt"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "A kredit fókusz közben gyűlik tovább"
+  },
+  "shared_credit_off": {
+    "message": "A kreditgyűjtés ki van kapcsolva"
+  },
+  "shared_not_enough_time": {
+    "message": "Nincs elég idő ebben a fókuszblokkban"
+  },
+  "shared_ready_in": {
+    "message": "Kész ennyi múlva: $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: „$PATTERN$”",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "Blokkolva ez alapján: $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "A tiltólistád blokkolja"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "Nincs az engedélyezési listádon"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "Ez a menet blokkolja"
+  },
+  "shared_verdict_allow_list": {
+    "message": "Rajta van az engedélyezési listádon"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "Mindig engedélyezett"
+  },
+  "shared_verdict_unlock": {
+    "message": "Ideiglenesen feloldva"
+  },
+  "shared_verdict_excluded": {
+    "message": "Kivéve egy kiválasztott kategóriából"
+  },
+  "shared_verdict_no_session": {
+    "message": "Nincs futó fókuszmenet"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "Ez a menet engedélyezi"
+  },
+  "shared_category_social": {
+    "message": "Közösségi média"
+  },
+  "shared_category_video": {
+    "message": "Videó és streaming"
+  },
+  "shared_category_news": {
+    "message": "Hírek"
+  },
+  "shared_category_mail": {
+    "message": "Levelezés"
+  },
+  "shared_category_shopping": {
+    "message": "Vásárlás"
+  },
+  "shared_category_gaming": {
+    "message": "Játék"
+  },
+  "shared_category_forums": {
+    "message": "Fórumok és unaloműzők"
+  },
+  "shared_synced_settings": {
+    "message": "Beállítások"
+  },
+  "shared_synced_lists": {
+    "message": "Tiltó- és engedélyezési listák"
+  },
+  "shared_synced_credit": {
+    "message": "Oldalhozzáférési kredit"
+  },
+  "shared_synced_streaks": {
+    "message": "Sorozatok"
+  },
+  "shared_synced_aggregates": {
+    "message": "Domainszintű összesítések a blokkolt kísérletekről"
+  },
+  "shared_local_full_urls": {
+    "message": "Teljes URL-ek"
+  },
+  "shared_local_intentions": {
+    "message": "Fókuszszándékok"
+  },
+  "shared_local_events": {
+    "message": "Részletes menetesemények"
+  },
+  "shared_local_runtime": {
+    "message": "A futó menet"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "Egy korábbi verzióból származó szinkronizált adatok egy részét nem lehetett beolvasni, ezért alaphelyzetbe kerültek."
+  },
+  "shared_all_data_clear_running": {
+    "message": "Fejezd be a futó menetet, mielőtt minden adatot törölsz."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "Termékmenü"
+  },
+  "shared_nav_overview": {
+    "message": "Áttekintés"
+  },
+  "shared_nav_settings": {
+    "message": "Beállítások"
+  },
+  "shared_section_blocking": {
+    "message": "Blokkolás"
+  },
+  "shared_section_schedule": {
+    "message": "Ütemezés"
+  },
+  "shared_section_behavior": {
+    "message": "A menet viselkedése"
+  },
+  "shared_section_budget": {
+    "message": "Oldalhozzáférési kredit"
+  },
+  "shared_section_notifications": {
+    "message": "Értesítések"
+  },
+  "shared_section_privacy": {
+    "message": "Adatvédelem és adatok"
+  },
+  "shared_theme_auto": {
+    "message": "Automatikus"
+  },
+  "shared_theme_light": {
+    "message": "Világos"
+  },
+  "shared_theme_dark": {
+    "message": "Sötét"
+  },
+  "shared_theme_button": {
+    "message": "Téma: $CURRENT$. Váltás erre: $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "A témát nem sikerült menteni. Töltsd újra az oldalt, és próbáld újra."
+  },
+  "shared_host_search_label": {
+    "message": "Keresés a(z) $TITLE$ oldalai között",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "Egyetlen $TITLE$ oldal sem felel meg a keresésednek.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "$MATCHED$ oldalból $SHOWN$ látszik. Szűkítsd a listát kereséssel.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "$TOTAL$ oldalból $MATCHED$ látszik.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "Mind a(z) $TOTAL$ oldal látszik.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "A menet befejezése"
+  },
+  "shared_overlay_starting_title": {
+    "message": "A Focus Lock indul"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "A kiválasztott szabályok alkalmazása."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "Ez az oldal nem töltődött be. Magától betölt, amikor a menet véget ér."
+  },
+  "shared_overlay_next_step": {
+    "message": "A következő lépésed"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "Vissza a munkához"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "Válassz munkafület"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "Munkafül cseréje"
+  },
+  "shared_overlay_access_summary": {
+    "message": "Pihenőre vagy oldalhozzáférésre van szükséged?"
+  },
+  "shared_overlay_access_note": {
+    "message": "Bármikor felállhatsz. Az oldalhozzáférés kreditbe kerül."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "Várakozás átugrása és befejezés mindenképp"
+  },
+  "shared_overlay_transport_error": {
+    "message": "A Focus Lock nem tudta frissíteni ezt a műveletet. Próbáld újra."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ oldalhozzáférési kredit",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "Folytasd a mostani feladatodat"
+  },
+  "shared_overlay_pause_action": {
+    "message": "Minden oldal feloldása"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "Ennek az oldalnak a feloldása"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - ára $COST$ kredit",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "Zárolva eddig: $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "Ezt írtad: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "$HOST$ feloldása ennyi időre: $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "Maradok a fókuszban"
+  },
+  "shared_gate_phrase_label": {
+    "message": "Gépeld be ezt a megerősítéshez:"
+  },
+  "shared_gate_end_title": {
+    "message": "Ennek a menetnek a befejezése"
+  }
+}

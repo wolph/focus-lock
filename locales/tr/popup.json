@@ -1,6 +1,469 @@
 {
+  "popup_next_schedule": {
+    "message": "sonraki: $DAY$ $TIME$",
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      },
+      "TIME": {
+        "content": "$2",
+        "example": "09:00"
+      }
+    }
+  },
+  "popup_settings_button_label": {
+    "message": "Ayarlar"
+  },
+  "popup_open_settings_failed": {
+    "message": "Could not aç Ayarlar. Try again."
+  },
+  "popup_settings_load_failed": {
+    "message": "Could not load seans ayarlar. Reload the popup to try again. Defaults are shown."
+  },
+  "popup_open_setup_failed": {
+    "message": "Could not aç setup. Try again."
+  },
+  "popup_setup_required_heading": {
+    "message": "Focus Lock kurulumunu tamamla"
+  },
+  "popup_setup_required_body": {
+    "message": "Choose your starting lists, website access, and storage mod before starting a seans."
+  },
+  "popup_open_setup_button": {
+    "message": "Aç setup"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "Website engelleme doğrulanamadı. Yeniden dene."
+  },
+  "popup_blocking_enable_failed": {
+    "message": "Could not etkinleştir website blocking. Try again."
+  },
+  "popup_blocking_off_heading": {
+    "message": "Website engelleme kapalı"
+  },
+  "popup_blocking_off_body": {
+    "message": "Focus Lock cannot başlat a seans until Chrome grants website access and blocking is enabled."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome website erişim vermedi. Website engelleme hala kapalı."
+  },
+  "popup_blocking_off_registration_error": {
+    "message": "Website access is granted, but Focus Lock could not etkinleştir blocking. Retry setup or reload the extension."
+  },
+  "popup_enable_blocking_button": {
+    "message": "Etkinleştir website blocking"
+  },
+  "popup_retry_button": {
+    "message": "Yeniden dene"
+  },
+  "popup_notice_access_revoked": {
+    "message": "Your seans ended because website access was removed."
+  },
+  "popup_notice_blocking_failed": {
+    "message": "Your seans ended because Focus Lock could not etkinleştir website blocking."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Bu bildirim kapatılamadı. Yeniden dene."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "Website erişim bildirimini kapat"
+  },
+  "popup_dismiss_button": {
+    "message": "Kapat"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lock yeniden başlatılamadı. Yeniden dene."
+  },
+  "popup_boot_failed_heading": {
+    "message": "Focus Lock could not başlat"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "Sebep okunamadı."
+  },
+  "popup_reset_runtime_button": {
+    "message": "Sıfırla local runtime"
+  },
+  "popup_reset_runtime_note": {
+    "message": "Keeps your ayarlar, lists, and istatistikler. Clears the current seans state."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Sil everything and başlat over"
+  },
+  "popup_keep_data_button": {
+    "message": "Verilerimi tut"
+  },
+  "popup_delete_all_button": {
+    "message": "Sil all Focus Lock data"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "Kurulum durumu kullanılamıyor. Focus Lock'u yeniden yükle."
+  },
+  "popup_snapshot_unavailable": {
+    "message": "Odak durumu kullanılamıyor"
+  },
+  "popup_action_in_progress": {
+    "message": "İşlem devam ediyor"
+  },
+  "popup_active_site_checking": {
+    "message": "Etkin site kontrol ediliyor"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Aç a regular website to unlock it"
+  },
+  "popup_active_site_unknown": {
+    "message": "Etkin site tanımlanamadı"
+  },
+  "popup_active_site_error": {
+    "message": "Etkin site tanımlanamadı."
+  },
+  "popup_resume_now": {
+    "message": "Şimdi devam et"
+  },
+  "popup_start_next_focus_early": {
+    "message": "Başlat next focus early"
+  },
+  "popup_unlock_this_site": {
+    "message": "Bu siteyi aç"
+  },
+  "popup_unlock_all_sites": {
+    "message": "Unlock all siteler"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ erişim, $CREDIT$ kredi",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ erişim, $CREDIT$ kredi - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "popup_choose_work_tab_button": {
+    "message": "İş sekmesi seç"
+  },
+  "popup_change_work_tab_button": {
+    "message": "İş sekmesi değiştir"
+  },
+  "popup_session_actions_summary": {
+    "message": "Seans actions"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ site erişim kredisi",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
+  },
+  "popup_add_allowed_domain_label": {
+    "message": "Ekle an allowed domain"
+  },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
+  },
+  "popup_add_allowed_domain_button": {
+    "message": "Ekle allowed domain"
+  },
+  "popup_add_button": {
+    "message": "Ekle"
+  },
+  "popup_draft_allowed_only": {
+    "message": "Only $COUNT$ allowed site kurallar. Other websites engellendi.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_draft_blocked_summary": {
+    "message": "$CATEGORIES$ engellendi kategoriler, $RULES$ extra kurallar.",
+    "placeholders": {
+      "CATEGORIES": {
+        "content": "$1",
+        "example": "4"
+      },
+      "RULES": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "popup_draft_stop_hard": {
+    "message": "Sert Kilit. Erken bitiremezsin."
+  },
+  "popup_draft_stop_flexible": {
+    "message": "Can end at any zaman."
+  },
+  "popup_draft_stop_friction": {
+    "message": "Bekleme süresi sonra ($SECONDS$s) bitir.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "$SECONDS$s bekle ve doğrulama cümlesi sonra bitir.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_session_length_label": {
+    "message": "Seans length"
+  },
+  "popup_custom_minutes_label": {
+    "message": "Custom dakika"
+  },
+  "popup_custom_minutes_placeholder": {
+    "message": "dk"
+  },
+  "popup_gate_force_end": {
+    "message": "Zaman aşımını göz ardı et ve bitir"
+  },
+  "popup_gate_keep_focusing": {
+    "message": "Odaklanmaya devam et"
+  },
+  "popup_gate_phrase_label": {
+    "message": "Yaz:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Kapı güncellenemedi. Yeniden dene."
+  },
+  "popup_gate_intention": {
+    "message": "Söyledin: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the quarterly report"
+      }
+    }
+  },
+  "popup_gate_wait_prefix": {
+    "message": "Karar vermek için bir an:"
+  },
+  "popup_gate_wait_remaining": {
+    "message": "/ $TOTAL$ s",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_back_to_work": {
+    "message": "İşe geri dön"
+  },
+  "popup_destination_unavailable": {
+    "message": "Hedef kullanılamıyor"
+  },
+  "popup_back_to_work_name": {
+    "message": "İşe geri dön: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "İşe geri dön: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
+  },
+  "popup_categories_locked": {
+    "message": "Kategori editing is disabled until engellendi-site lists reload."
+  },
+  "popup_blocked_categories_heading": {
+    "message": "Engellendi kategoriler"
+  },
+  "popup_show_full_domain": {
+    "message": "Göster full domain: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Göster full regular expression: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
+  },
+  "popup_rule_kind_domain": {
+    "message": "Alan adı"
+  },
+  "popup_rule_kind_regex": {
+    "message": "Düzenli ifade"
+  },
+  "popup_category_sites_label": {
+    "message": "$CATEGORY$ siteler",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "popup_sites_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_sites_other": {
+    "message": "$COUNT$ siteler",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_one": {
+    "message": "ve $COUNT$ daha fazla site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_more_sites_other": {
+    "message": "and $COUNT$ more siteler",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_allowed_exceptions_heading": {
+    "message": "İzin verilen istisnalar"
+  },
+  "popup_extra_blocked_heading": {
+    "message": "Extra engellendi kurallar"
+  },
+  "popup_no_extra_blocked": {
+    "message": "No extra engellendi kurallar."
+  },
+  "popup_allowed_heading": {
+    "message": "Allowed siteler and kurallar"
+  },
+  "popup_no_allowed_sites": {
+    "message": "No siteler are allowed yet."
+  },
+  "popup_what_will_be_blocked": {
+    "message": "What will be engellendi"
+  },
+  "popup_what_will_be_allowed": {
+    "message": "İzin verilecek"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ of $TOTAL$ kategoriler selected",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_one": {
+    "message": "$COUNT$ extra engellendi kural",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_other": {
+    "message": "$COUNT$ extra engellendi kurallar",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_one": {
+    "message": "$COUNT$ allowed kural",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_allowed_rules_other": {
+    "message": "$COUNT$ allowed kurallar",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_scope_whitelist": {
+    "message": "Allowed-site and kural changes here apply only to this seans. Everything else is engellendi."
+  },
+  "popup_scope_blacklist": {
+    "message": "Kategori and kural changes here apply only to this seans."
+  },
+  "popup_open_settings_defaults": {
+    "message": "Aç Ayarlar for permanent defaults"
+  },
+  "popup_rule_details_label": {
+    "message": "Seans kural details"
+  },
+  "popup_session_type_legend": {
+    "message": "Seans type"
   },
   "popup_session_type_flexible": {
     "message": "Esnek"
@@ -10,5 +473,158 @@
   },
   "popup_session_type_hard": {
     "message": "Sert Kilit"
+  },
+  "popup_session_type_flexible_hint": {
+    "message": "End the seans immediately whenever you choose."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Erken bitirmek $WAIT$ gerektirir. Yazı gerekli değildir.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Erken bitirmek $WAIT$ ve yazılı doğrulama gerektirir.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_hard_hint": {
+    "message": "The seans cannot end early. Site access credit still works."
+  },
+  "popup_mode_blacklist_hint": {
+    "message": "The selected kategoriler and extra kurallar are engellendi. Other siteler remain available."
+  },
+  "popup_mode_whitelist_hint": {
+    "message": "Only the listed siteler are available. Every other website is engellendi."
+  },
+  "popup_invalid_duration_error": {
+    "message": "Enter a seans length greater than zero dakika."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "Varsayılanlar değişti, ancak geçerli listeler yüklenemedi. Popup'u yeniden yükle."
+  },
+  "popup_no_work_tab_option": {
+    "message": "İş sekmesi yok (isteğe bağlı)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "Seçilen sekme kullanılamıyor - başkasını seç"
+  },
+  "popup_cycles_label": {
+    "message": "Döngüler: $FOCUS$ dk odak, $SHORT_BREAK$ dk ara, her $LONG_EVERY$. döngüde $LONG_BREAK$ dk uzun ara",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
+  },
+  "popup_intention_label": {
+    "message": "Niyet"
+  },
+  "popup_intention_placeholder": {
+    "message": "Neyde çalışıyorsun?"
+  },
+  "popup_work_tab_named": {
+    "message": "İş sekmesi: $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_change_button": {
+    "message": "Değiştir"
+  },
+  "popup_session_settings_summary": {
+    "message": "Seans ayarlar"
+  },
+  "popup_choose_work_tab_label": {
+    "message": "İş sekmesi seç"
+  },
+  "popup_work_tab_select_label": {
+    "message": "İş sekmesi"
+  },
+  "popup_work_tab_current_option": {
+    "message": "$TITLE$ (Geçerli)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_blocking_mode_legend": {
+    "message": "Blocking mod"
+  },
+  "popup_invalid_time_label": {
+    "message": "invalid zaman"
+  },
+  "popup_start_focus_label": {
+    "message": "Başlat $DURATION$ focus",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "50 min"
+      }
+    }
+  },
+  "popup_invalid_domain_error": {
+    "message": "docs.example.com gibi geçerli bir alan adı gir."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "İş sekmeler yüklenemedi. Tekrar denemek için popup'u aç."
+  },
+  "popup_use_this_tab": {
+    "message": "Bu sekmeyi kullan"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "This tab is not available for work. Choose another aç tab."
+  },
+  "popup_checking_current_tab": {
+    "message": "Geçerli sekme kontrol ediliyor..."
+  },
+  "popup_finding_current_tab": {
+    "message": "Geçerli sekmen bulunuyor..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Geçerli sekmen yüklenemedi. Yeniden dene."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "İş sekmesini seç veya değiştir."
+  },
+  "popup_saving_work_tab": {
+    "message": "İş sekmesi kaydediliyor..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Could not kaydet the work tab. Try again."
+  },
+  "popup_choose_open_tab_option": {
+    "message": "Choose an aç tab"
+  },
+  "popup_or_choose_another_tab": {
+    "message": "Veya başka bir sekme seç"
+  },
+  "popup_start_failed": {
+    "message": "Could not başlat seans. Try again."
   }
 }

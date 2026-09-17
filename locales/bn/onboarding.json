@@ -1,1 +1,177 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock সেট আপ করুন"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock সেটআপ"
+  },
+  "onboarding_progress": {
+    "message": "ধাপ $STEP$ / $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "আপনার সংরক্ষিত সেটআপ অগ্রগতি ফিরিয়ে আনা যায়নি। আপনার বর্তমান ডিফল্ট দিয়ে আবার শুরু করা হচ্ছে।"
+  },
+  "onboarding_complete_heading": {
+    "message": "সেটআপ সম্পূর্ণ"
+  },
+  "onboarding_complete_body": {
+    "message": "আপনার পছন্দগুলি সংরক্ষিত হয়েছে। সেশন শুরু করতে Chrome টুলবার থেকে Focus Lock খুলুন।"
+  },
+  "onboarding_error_heading": {
+    "message": "সেটআপ উপলব্ধ নয়"
+  },
+  "onboarding_error_body": {
+    "message": "সেটআপ লোড করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "onboarding_retry_button": {
+    "message": "আবার চেষ্টা করুন"
+  },
+  "onboarding_save_error": {
+    "message": "সেটআপের অগ্রগতি সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "onboarding_enable_error": {
+    "message": "ওয়েবসাইট ব্লকিং চালু করা যায়নি। আবার চেষ্টা করুন।"
+  },
+  "onboarding_finish_error": {
+    "message": "সেটআপ শেষ করা যায়নি। আপনার পছন্দগুলি এখনও সংরক্ষিত আছে। আবার চেষ্টা করুন।"
+  },
+  "onboarding_lists_heading": {
+    "message": "আপনার শুরুর ব্লক তালিকা বেছে নিন"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "$MODE$-এ, চালু বিভাগ এবং বাড়তি ব্লক করা সাইটগুলি খোলা যায় না।",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "$MODE$-এ, আপনার অনুমতি তালিকা ছাড়া প্রতিটি সাইট বন্ধ থাকে।",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "এই পছন্দগুলি পরের সেশনগুলির ডিফল্ট হয়ে যায়। পরে এগুলি বদলাতে পারবেন।"
+  },
+  "onboarding_lists_legend": {
+    "message": "প্রস্তাবিত ওয়েবসাইট বিভাগ"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$টি সাইট",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$টি সাইট",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "$CATEGORY$-এর সাইট দেখান",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "$CATEGORY$-এর সাইট লুকান",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$-এর ডোমেন",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "এগিয়ে যান"
+  },
+  "onboarding_access_heading": {
+    "message": "ওয়েবসাইট ব্লকিং চালু করুন"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock পাতার ঠিকানা এই ডিভাইসেই যাচাই করে, যাতে সেগুলি আপনার বেছে নেওয়া বিভাগ ও সাইটের সঙ্গে মেলাতে পারে। ওয়েবসাইট অ্যাক্সেস সে ব্যবহার করে নিজের ব্লকিং স্ক্রিন দেখাতে এবং সেশন শেষ হলে প্রভাবিত পাতাগুলি ফিরিয়ে আনতে।"
+  },
+  "onboarding_access_capability_intro": {
+    "message": "বিভাগ ও নিজের ডোমেনে যেকোনো ওয়েবসাইট থাকতে পারে। তাই Chrome এই অনুমতি চাইবে:"
+  },
+  "onboarding_access_capability": {
+    "message": "সব ওয়েবসাইটে আপনার সমস্ত ডেটা পড়া এবং পরিবর্তন করা"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock এই অ্যাক্সেস শুধু আপনার ব্লকিং নিয়ম প্রয়োগ করার সময়েই ব্যবহার করে।"
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome ওয়েবসাইট অ্যাক্সেস দেয়নি। আপনি আবার চেষ্টা করতে পারেন।"
+  },
+  "onboarding_access_registration_error": {
+    "message": "ওয়েবসাইট অ্যাক্সেস দেওয়া হয়েছে, কিন্তু Focus Lock ব্লকিং চালু করতে পারেনি। সেটআপ আবার করুন বা এক্সটেনশন রিলোড করুন।"
+  },
+  "onboarding_access_enable_button": {
+    "message": "ওয়েবসাইট ব্লকিং চালু করুন"
+  },
+  "onboarding_access_defer_button": {
+    "message": "এখন নয়"
+  },
+  "onboarding_sync_heading": {
+    "message": "আপনার সেটিংস কোথায় রাখা হবে বেছে নিন"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Chrome ডিভাইসগুলির মধ্যে সিঙ্ক করুন"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "সেটআপ শেষ করার পর নিচের অনুমোদিত ডেটা Chrome সিঙ্ক ব্যবহার করবে।"
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Focus Lock-এর সমস্ত ডেটা এই Chrome প্রোফাইলেই থাকে।"
+  },
+  "onboarding_sync_synced_title": {
+    "message": "সিঙ্ক হয়"
+  },
+  "onboarding_sync_local_title": {
+    "message": "শুধু স্থানীয়"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock-এর ডেভেলপারকে কিছুই পাঠানো হয় না।"
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "সিঙ্ক চালু রেখে সেটআপ শেষ করুন"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "সিঙ্ক ছাড়াই সেটআপ শেষ করুন"
+  }
+}

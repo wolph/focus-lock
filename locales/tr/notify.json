@@ -84,16 +84,16 @@
     "message": "Focus Lock önceki bir değişikliği hâlâ bitiriyor. Birazdan tekrar dene."
   },
   "notify_work_gate_stuck": {
-    "message": "Açık onay kapatılamadı. Tekrar dene."
+    "message": "The aç gate could not be closed. Try again."
   },
   "notify_work_tab_unavailable": {
     "message": "Çalışma sekmesi kullanılamıyor."
   },
   "notify_settings_sync_limit": {
-    "message": "Ayarlar Chrome Sync 8 KB sınırını aşıyor. Zamanlama kayıtlarını sil ya da niyetleri kısalt, sonra tekrar dene."
+    "message": "Ayarlar exceed the 8 KB Chrome Sync limit. Kaldır schedule entries or shorten intentions, then try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Listeler Chrome Sync 8 KB sınırını aşıyor. Özel ya da izinli kuralları sil, sonra tekrar dene."
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Kaldır custom or whitelist kurallar, then try again."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "Engelleme listesinden kaldırıldı"
@@ -108,27 +108,27 @@
     "message": "Istisna eklendi"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "tam kilit seansı sürüyor: varsayılan sıkılığı gevşetmek seansın bitmesini bekler"
+    "message": "a hard seans is running: weakening the default strictness waits until it ends"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "tam kilit seansı sürüyor: beklemeyi kısaltmak onayı zayıflatır"
+    "message": "a hard seans is running: shortening the deliberation delay weakens the gate"
   },
   "notify_guard_settings_drop_phrase": {
     "message": "Başlık temizlendi"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "tam kilit seansı sürüyor: kazanç hızını artırmak daha çok kaçışı finanse eder"
+    "message": "a hard seans is running: raising the pause earn rate funds more escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "tam kilit seansı sürüyor: kredi tavanını yükseltmek daha çok kaçışı finanse eder"
+    "message": "a hard seans is running: raising the pause cap funds more escapes"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "tam kilit seansı sürüyor: kısa duraklatmaların maliyeti düşer"
+    "message": "a hard seans is running: shortening pauses lowers their cost"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "tam kilit seansı sürüyor: kısa açmaların maliyeti düşer"
+    "message": "a hard seans is running: shortening unlocks lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "tam kilit seansı sürüyor: seansın zamanlama kaydı bitene kadar gevşetilemez"
+    "message": "a hard seans is running: its schedule entry cannot be weakened until it ends"
   }
 }
