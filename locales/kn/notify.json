@@ -1,9 +1,9 @@
 {
   "notify_session_complete_title": {
-    "message": "ಫೋಕಸ್ ಸೆಷನ್ ಪೂರ್ಣಗೊಂಡಿದೆ"
+    "message": "ಫೋಕಸ್ sessiಮೇಲೆ complete"
   },
   "notify_session_complete_body": {
-    "message": "ನಿನ್ನ ಫೋಕಸ್ ಸೆಷನ್ ಮುಗಿದಿದೆ."
+    "message": "Your focus sessiಮೇಲೆ fರಲ್ಲಿished."
   },
   "notify_schedule_window_body": {
     "message": "$END$ ವರೆಗೆ ಲಾಕ್ ಆಗಿದೆ.",
@@ -15,49 +15,49 @@
     }
   },
   "notify_schedule_unavailable_title": {
-    "message": "ಫೋಕಸ್ ವೇಳಾಪಟ್ಟಿ ಪ್ರಾರಂಭವಾಗಲಿಲ್ಲ"
+    "message": "ಫೋಕಸ್ schedule could not start"
   },
   "notify_schedule_unavailable_body": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಂಡಿಲ್ಲ. ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸು ಅಥವಾ ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡು, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Website blockರಲ್ಲಿg is not enabled. Fರಲ್ಲಿish setup ಅಥವಾ grant website access, then try agaರಲ್ಲಿ."
   },
   "notify_setup_completed_elsewhere": {
-    "message": "ಸೆಟಪ್ ಬೇರೊಂದು ಟ್ಯಾಬ್‌ನಲ್ಲಿ ಪೂರ್ಣಗೊಂಡಿದೆ."
+    "message": "Setup was completed ರಲ್ಲಿ another tab."
   },
   "notify_setup_changed_reloaded": {
-    "message": "ಸೆಟಪ್ ಬೇರೊಂದು ಟ್ಯಾಬ್‌ನಲ್ಲಿ ಬದಲಾಗಿದೆ. ಇತ್ತೀಚಿನ ಆಯ್ಕೆಗಳನ್ನು ಮರುಲೋಡ್ ಮಾಡಲಾಗಿದೆ."
+    "message": "Setup changed ರಲ್ಲಿ another tab. The lನಲ್ಲಿest choices were reloaded."
   },
   "notify_setup_changed_reload_before_finishing": {
-    "message": "ಸೆಟಪ್ ಬೇರೊಂದು ಟ್ಯಾಬ್‌ನಲ್ಲಿ ಬದಲಾಗಿದೆ. ಪೂರ್ಣಗೊಳಿಸುವ ಮೊದಲು ಸೆಟಪ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "Setup changed ರಲ್ಲಿ another tab. Reload setup beಸಾಕಾಂಶe fರಲ್ಲಿishರಲ್ಲಿg."
   },
   "notify_setup_not_complete": {
     "message": "ಸೆಟಪ್ ಪೂರ್ಣಗೊಂಡಿಲ್ಲ."
   },
   "notify_setup_not_ready_to_finish": {
-    "message": "ಸೆಟಪ್ ಪೂರ್ಣಗೊಳಿಸಲು ಸಿದ್ಧವಾಗಿಲ್ಲ."
+    "message": "Setup is not ready ಕಿ fರಲ್ಲಿish."
   },
   "notify_setup_storage_choice_changed": {
-    "message": "ಸೆಟಪ್ ಸಂಗ್ರಹಣಾ ಆಯ್ಕೆ ಬದಲಾಗಿದೆ. ಪೂರ್ಣಗೊಳಿಸುವ ಮೊದಲು ಸೆಟಪ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "Setup stಅಥವಾage choice changed. Reload setup beಸಾಕಾಂಶe fರಲ್ಲಿishರಲ್ಲಿg."
   },
   "notify_onboarding_storage_failed": {
-    "message": "ಸೆಟಪ್ ಸಂಗ್ರಹಣಾ ಕಾರ್ಯಾಚರಣೆ ವಿಫಲವಾಯಿತು."
+    "message": "Onboardರಲ್ಲಿg stಅಥವಾage operನಲ್ಲಿiಮೇಲೆ failed."
   },
   "notify_onboarding_operation_failed": {
-    "message": "ಸೆಟಪ್ ಕಾರ್ಯಾಚರಣೆ ವಿಫಲವಾಯಿತು."
+    "message": "Onboardರಲ್ಲಿg operನಲ್ಲಿiಮೇಲೆ failed."
   },
   "notify_website_access_check_failed": {
-    "message": "Focus Lock ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶವನ್ನು ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಸೆಟಪ್ ಅನ್ನು ಮರುಪ್ರಯತ್ನಿಸು ಅಥವಾ ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "ಫೋಕಸ್ Lock could not check website access. ಮರುಪ್ರಯತ್ನ setup ಅಥವಾ reload the extensiಮೇಲೆ."
   },
   "notify_website_access_granted_blocking_failed": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಾಗಿದೆ, ಆದರೆ Focus Lock ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಸೆಟಪ್ ಅನ್ನು ಮರುಪ್ರಯತ್ನಿಸು ಅಥವಾ ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "Website access is granted, but ಫೋಕಸ್ Lock could not enable blockರಲ್ಲಿg. ಮರುಪ್ರಯತ್ನ setup ಅಥವಾ reload the extensiಮೇಲೆ."
   },
   "notify_website_access_unavailable_cleanup_failed": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಲಭ್ಯವಿಲ್ಲ, ಮತ್ತು Focus Lock ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಸೆಟಪ್ ಅನ್ನು ಮರುಪ್ರಯತ್ನಿಸು ಅಥವಾ ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "Website access is unavailable, ಮತ್ತು ಫೋಕಸ್ Lock could not fರಲ್ಲಿish blockರಲ್ಲಿg cleanup. ಮರುಪ್ರಯತ್ನ setup ಅಥವಾ reload the extensiಮೇಲೆ."
   },
   "notify_website_access_inconsistent": {
-    "message": "Focus Lock ಗೆ ಅಸಮಂಜಸ ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಸ್ಥಿತಿ ದೊರೆತಿದೆ. ಸೆಟಪ್ ಅನ್ನು ಮರುಪ್ರಯತ್ನಿಸು ಅಥವಾ ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "ಫೋಕಸ್ Lock received an ರಲ್ಲಿcಮೇಲೆsistent website access stನಲ್ಲಿe. ಮರುಪ್ರಯತ್ನ setup ಅಥವಾ reload the extensiಮೇಲೆ."
   },
   "notify_boot_not_finished": {
-    "message": "Focus Lock ಪ್ರಾರಂಭಗೊಳ್ಳುವುದನ್ನು ಪೂರ್ಣಗೊಳಿಸಲಿಲ್ಲ: $REASON$",
+    "message": "ಫೋಕಸ್ Lock did not fರಲ್ಲಿish startರಲ್ಲಿg: $REASON$",
     "placeholders": {
       "REASON": {
         "content": "$1",
@@ -66,69 +66,69 @@
     }
   },
   "notify_unknown_error": {
-    "message": "ಅಜ್ಞಾತ ದೋಷ"
+    "message": "unknown errಅಥವಾ"
   },
   "notify_nothing_to_reset": {
-    "message": "Focus Lock ಚಾಲನೆಯಲ್ಲಿದೆ, ಮರುಹೊಂದಿಸಲು ಏನೂ ಇಲ್ಲ"
+    "message": "ಫೋಕಸ್ Lock is runnರಲ್ಲಿg, nothರಲ್ಲಿg ಕಿ reset"
   },
   "notify_runtime_committed_in_generation": {
-    "message": "ನೀತಿ ಜನರೇಶನ್ ಒಳಗೆ ಇನ್ನೂ ಬದ್ಧವಾಗಿರುವ ರನ್‌ಟೈಮ್ ಅನ್ನು Focus Lock ಮರುಹೊಂದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ"
+    "message": "ಫೋಕಸ್ Lock cannot reset a runtime thನಲ್ಲಿ is still committed ರಲ್ಲಿside a policy generನಲ್ಲಿiಮೇಲೆ"
   },
   "notify_data_clear_retry_unavailable": {
-    "message": "ಡೇಟಾ ಅಳಿಸುವಿಕೆಯ ಮರುಪ್ರಯತ್ನ ಲಭ್ಯವಿಲ್ಲ."
+    "message": "Dನಲ್ಲಿa clear retry is not available."
   },
   "notify_disable_sync_before_delete": {
-    "message": "ಸಿಂಕ್ ಆಗಿರುವ ಡೇಟಾವನ್ನು ಅಳಿಸುವ ಮೊದಲು Chrome Sync ಅನ್ನು ಆಫ್ ಮಾಡು"
+    "message": "Disable ಸಿಂಕ್ರೊನೈಜ್ beಸಾಕಾಂಶe deletರಲ್ಲಿg synced dನಲ್ಲಿa"
   },
   "notify_work_gate_busy": {
-    "message": "Focus Lock ಇನ್ನೂ ಹಿಂದಿನ ಬದಲಾವಣೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸುತ್ತಿದೆ. ಸ್ವಲ್ಪ ಸಮಯದಲ್ಲಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "ಫೋಕಸ್ Lock is still fರಲ್ಲಿishರಲ್ಲಿg an earlier change. Try agaರಲ್ಲಿ ರಲ್ಲಿ a moment."
   },
   "notify_work_gate_stuck": {
-    "message": "ತೆರೆದ ಗೇಟ್ ಅನ್ನು ಮುಚ್ಚಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "The open gನಲ್ಲಿe could not be closed. Try agaರಲ್ಲಿ."
   },
   "notify_work_tab_unavailable": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಲಭ್ಯವಿಲ್ಲ."
+    "message": "The wಅಥವಾk tab is unavailable."
   },
   "notify_settings_sync_limit": {
-    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು 8 KB Chrome Sync ಮಿತಿಯನ್ನು ಮೀರಿವೆ. ವೇಳಾಪಟ್ಟಿ ನಮೂದುಗಳನ್ನು ತೆಗೆದುಹಾಕು ಅಥವಾ ಉದ್ದೇಶಗಳನ್ನು ಚಿಕ್ಕದಾಗಿಸು, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು exceed the 8 KB Chrome ಸಿಂಕ್ರೊನೈಜ್ limit. Remove schedule entries ಅಥವಾ shಅಥವಾten ರಲ್ಲಿtentiಮೇಲೆs, then try agaರಲ್ಲಿ."
   },
   "notify_lists_sync_limit": {
-    "message": "ಪಟ್ಟಿಗಳು 8 KB Chrome Sync ಮಿತಿಯನ್ನು ಮೀರಿವೆ. ಕಸ್ಟಮ್ ಅಥವಾ ಅನುಮತಿ ಪಟ್ಟಿ ನಿಯಮಗಳನ್ನು ತೆಗೆದುಹಾಕು, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Lists exceed the 8 KB Chrome ಸಿಂಕ್ರೊನೈಜ್ limit. Remove cusಕಿm ಅಥವಾ whitelist rules, then try agaರಲ್ಲಿ."
   },
   "notify_guard_lists_remove_blocked": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ಬ್ಲಾಕ್ ಮಾಡಿದ ಸೈಟ್‌ಗಳನ್ನು ತೆಗೆದುಹಾಕುವುದು ಅದು ಮುಗಿದಾಗ ಅನ್‌ಲಾಕ್ ಆಗುತ್ತದೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: removರಲ್ಲಿg blocked sites unlocks ಯಾವಾಗ it ends"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ಹೊಸ ಅನುಮತಿ ಪಟ್ಟಿ ನಮೂದುಗಳು ಅದು ಮುಗಿದಾಗ ಅನ್‌ಲಾಕ್ ಆಗುತ್ತವೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: new whitelist entries unlock ಯಾವಾಗ it ends"
   },
   "notify_guard_lists_disable_category": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ವರ್ಗಗಳನ್ನು ಆಫ್ ಮಾಡುವುದು ಅದು ಮುಗಿದಾಗ ಅನ್‌ಲಾಕ್ ಆಗುತ್ತದೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: disablರಲ್ಲಿg cನಲ್ಲಿegಅಥವಾies unlocks ಯಾವಾಗ it ends"
   },
   "notify_guard_lists_add_exclusion": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ಹೊಸ ವಿನಾಯಿತಿಗಳು ಅದು ಮುಗಿದಾಗ ಅನ್‌ಲಾಕ್ ಆಗುತ್ತವೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: new exclusiಮೇಲೆs unlock ಯಾವಾಗ it ends"
   },
   "notify_guard_settings_weaken_strictness": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ಡೀಫಾಲ್ಟ್ ಕಠಿಣತೆಯನ್ನು ಸಡಿಲಗೊಳಿಸುವುದು ಅದು ಮುಗಿಯುವವರೆಗೆ ಕಾಯುತ್ತದೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: weakenರಲ್ಲಿg the default strictness waits until it ends"
   },
   "notify_guard_settings_shorten_delay": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ಆಲೋಚನಾ ವಿಳಂಬವನ್ನು ಕಡಿಮೆ ಮಾಡುವುದು ಗೇಟ್ ಅನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: shಅಥವಾtenರಲ್ಲಿg the deliberನಲ್ಲಿiಮೇಲೆ delay weakens the gನಲ್ಲಿe"
   },
   "notify_guard_settings_drop_phrase": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ಟೈಪ್ ಮಾಡುವ ವಾಕ್ಯವನ್ನು ಕೈಬಿಡುವುದು ಗೇಟ್ ಅನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: droppರಲ್ಲಿg the typed phrase weakens the gನಲ್ಲಿe"
   },
   "notify_guard_settings_raise_earn_rate": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ವಿರಾಮ ಕ್ರೆಡಿಟ್ ಗಳಿಕೆ ದರವನ್ನು ಹೆಚ್ಚಿಸುವುದು ಹೆಚ್ಚಿನ ತಪ್ಪಿಸಿಕೊಳ್ಳುವಿಕೆಗಳಿಗೆ ಹಣಕಾಸು ಒದಗಿಸುತ್ತದೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: raisರಲ್ಲಿg the pause earn rನಲ್ಲಿe funds mಅಥವಾe escapes"
   },
   "notify_guard_settings_raise_cap": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ವಿರಾಮ ಕ್ರೆಡಿಟ್ ಮಿತಿಯನ್ನು ಹೆಚ್ಚಿಸುವುದು ಹೆಚ್ಚಿನ ತಪ್ಪಿಸಿಕೊಳ್ಳುವಿಕೆಗಳಿಗೆ ಹಣಕಾಸು ಒದಗಿಸುತ್ತದೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: raisರಲ್ಲಿg the pause cap funds mಅಥವಾe escapes"
   },
   "notify_guard_settings_shorten_pause": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ವಿರಾಮಗಳನ್ನು ಚಿಕ್ಕದಾಗಿಸುವುದು ಅವುಗಳ ವೆಚ್ಚವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: shಅಥವಾtenರಲ್ಲಿg pauses lowers their cost"
   },
   "notify_guard_settings_shorten_unlock": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ಅನ್‌ಲಾಕ್‌ಗಳನ್ನು ಚಿಕ್ಕದಾಗಿಸುವುದು ಅವುಗಳ ವೆಚ್ಚವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: shಅಥವಾtenರಲ್ಲಿg unlocks lowers their cost"
   },
   "notify_guard_settings_schedule_weakened": {
-    "message": "ಕಠಿಣ ಲಾಕ್ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿದೆ: ಅದು ಮುಗಿಯುವವರೆಗೆ ಅದರ ವೇಳಾಪಟ್ಟಿ ನಮೂದನ್ನು ದುರ್ಬಲಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ"
+    "message": "a hard sessiಮೇಲೆ is runnರಲ್ಲಿg: its schedule entry cannot be weakened until it ends"
   }
 }

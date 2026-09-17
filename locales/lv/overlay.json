@@ -1,1 +1,133 @@
-{}
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "Bloķēts - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Meklē pieejamās darba cilnes..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Izvēlies atvērtu cilni, lai turpinātu uzdevumu."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Tava koncentrēšanās sesija nav pieejama. Mēģini vēlreiz vai pārlādē šo lapu."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Neizdevās ielādēt tavu darba cilni. Mēģini vēlreiz vai pārlādē šo lapu."
+  },
+  "overlay_target_reconnect": {
+    "message": "Pārlādē šo lapu, lai atkal savienotos ar Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "Pieprasījuma lapa ir mainījusies. Pārlādē lapu."
+  },
+  "overlay_target_transport_error": {
+    "message": "Neizdevās sasniegt Focus Lock. Mēģini vēlreiz."
+  },
+  "overlay_picker_heading": {
+    "message": "Izvēlies darba cilni"
+  },
+  "overlay_picker_cancel": {
+    "message": "Atcelt"
+  },
+  "overlay_picker_search_label": {
+    "message": "Meklēt darba cilnes"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Meklē pēc nosaukuma vai vietnes"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Notīrīt meklējumu"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Atsvaidzināt cilnes"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Pieejamās darba cilnes"
+  },
+  "overlay_picker_finding": {
+    "message": "Meklē pieejamās cilnes..."
+  },
+  "overlay_picker_searching": {
+    "message": "Meklē starp darba cilnēm..."
+  },
+  "overlay_picker_saving": {
+    "message": "Saglabā darba cilni..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Pieejamu darba cilņu nav. Atver vietni, ko šī sesija atļauj, un atsvaidzini cilnes."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Atbilstošu cilņu nav. Pamēģini citu meklējumu vai notīri to."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Neizdevās ielādēt darba cilnes. Mēģini vēlreiz."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ no $COUNT$ cilnes",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ no $COUNT$ cilnēm",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_picker_count_zero": {
+    "message": "$MATCHES$ no $COUNT$ cilnēm",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

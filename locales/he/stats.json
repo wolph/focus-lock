@@ -1,1 +1,351 @@
-{}
+{
+  "stats_document_title": {
+    "message": "סטטיסטיקות Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "תיעוד הריכוז שלך"
+  },
+  "stats_loading": {
+    "message": "טוען את הסטטיסטיקות שלך."
+  },
+  "stats_load_error": {
+    "message": "לא ניתן היה לטעון סטטיסטיקות. טען מחדש כדי לנסות שוב."
+  },
+  "stats_partial_error_both": {
+    "message": "הניסיונות לפי שעה והגדרות קרדיט הגישה לאתרים אינם זמינים."
+  },
+  "stats_partial_error_attempts": {
+    "message": "הניסיונות לפי שעה אינם זמינים."
+  },
+  "stats_partial_error_economy": {
+    "message": "הגדרות קרדיט הגישה לאתרים אינן זמינות."
+  },
+  "stats_scope_synced": {
+    "message": "סכומים מסונכרנים מחשבון Chrome הזה. לוחות מקומיים בלבד מסומנים."
+  },
+  "stats_scope_local": {
+    "message": "סכומים מהמחשב הזה. סטטיסטיקות Focus Lock אינן מסונכרנות."
+  },
+  "stats_scope_checking": {
+    "message": "בודק אם הסכומים האלה מסונכרנים."
+  },
+  "stats_scope_unavailable": {
+    "message": "היקף הסטטיסטיקות אינו זמין. הסכומים עשויים לכלול נתונים מסונכרנים. הניסיונות לפי שעה והמפגשים האחרונים הם מהמחשב הזה."
+  },
+  "stats_scope_retry": {
+    "message": "בדוק שוב את ההיקף"
+  },
+  "stats_empty": {
+    "message": "סטטיסטיקות מופיעות אחרי המפגש הראשון שלך."
+  },
+  "stats_tile_focus_today": {
+    "message": "ריכוז היום"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "ריכוז ב-7 הימים האחרונים"
+  },
+  "stats_tile_attempts_today": {
+    "message": "ניסיונות שנחסמו היום"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "בקשות שער שננטשו היום"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "קרדיט גישה לאתרים שנוצל היום"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "כל האתרים $ALL_SITES$, אתר יחיד $ONE_SITE$, $EARNED$ נצברו",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ נצברו",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "רצף"
+  },
+  "stats_streak_empty": {
+    "message": "הרצף שלך מתחיל ביום הריכוז הראשון שלך."
+  },
+  "stats_streak_unit_one": {
+    "message": "יום"
+  },
+  "stats_streak_unit_other": {
+    "message": "ימים"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ אסימון הקפאה שמור",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ אסימוני הקפאה שמורים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "הקפאת רצף: יום חסר אחד, מכוסה"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ יום פעיל החודש ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ ימים פעילים החודש ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "ימים פעילים ב$MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "אין ימים פעילים ב$MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "ריכוז, 14 הימים האחרונים"
+  },
+  "stats_chart_focus_empty": {
+    "message": "דקות ריכוז מופיעות אחרי המפגש הראשון שלך."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "ניסיונות שנחסמו, 14 הימים האחרונים"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "ניסיונות שנחסמו יופיעו כאן ברגע שמפגש יתפוס אחד."
+  },
+  "stats_chart_sites_heading": {
+    "message": "האתרים החסומים ביותר, 30 הימים האחרונים"
+  },
+  "stats_chart_sites_empty": {
+    "message": "עוד לא נחסם דבר. התחלה יפה."
+  },
+  "stats_chart_hours_heading": {
+    "message": "ניסיונות לפי שעה, המחשב הזה בלבד"
+  },
+  "stats_chart_other_site": {
+    "message": "אחר"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$ד",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ נחסם",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ נחסמו",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "תרשים עמודות"
+  },
+  "stats_chart_name_hbar": {
+    "message": "תרשים עמודות אופקי"
+  },
+  "stats_chart_description_bar": {
+    "message": "תרשים עמודות. השתמש במקלדת כדי לעבור בין נקודות הנתונים, או פתח הצג כטבלה לאותם ערכים."
+  },
+  "stats_chart_description_hbar": {
+    "message": "תרשים עמודות אופקי. השתמש במקלדת כדי לעבור בין נקודות הנתונים, או פתח הצג כטבלה לאותם ערכים."
+  },
+  "stats_chart_empty_default": {
+    "message": "אין עדיין נתונים."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "הצג כטבלה"
+  },
+  "stats_chart_table_category": {
+    "message": "קטגוריה"
+  },
+  "stats_chart_table_value": {
+    "message": "ערך"
+  },
+  "stats_heat_strip_label": {
+    "message": "רצועת חום של ניסיונות חסומים ב-24 שעות"
+  },
+  "stats_sessions_heading": {
+    "message": "מפגשים אחרונים במחשב הזה"
+  },
+  "stats_sessions_empty": {
+    "message": "המפגש הראשון שלך יופיע כאן."
+  },
+  "stats_sessions_col_date": {
+    "message": "תאריך"
+  },
+  "stats_sessions_col_start": {
+    "message": "התחלה"
+  },
+  "stats_sessions_col_planned": {
+    "message": "מתוכנן"
+  },
+  "stats_sessions_col_focused": {
+    "message": "בריכוז"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "כל האתרים"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "אתר יחיד"
+  },
+  "stats_sessions_col_intention": {
+    "message": "כוונה"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "תוצאה"
+  },
+  "stats_sessions_col_source": {
+    "message": "מקור"
+  },
+  "stats_session_no_intention": {
+    "message": "ללא כוונה"
+  },
+  "stats_session_article_label": {
+    "message": "מפגש: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "ידני"
+  },
+  "stats_session_source_schedule": {
+    "message": "לוח זמנים"
+  },
+  "stats_session_source_scheduled": {
+    "message": "מתוזמן"
+  },
+  "stats_outcome_completed": {
+    "message": "הושלם"
+  },
+  "stats_outcome_ended_early": {
+    "message": "הסתיים מוקדם"
+  },
+  "stats_outcome_running": {
+    "message": "פועל"
+  },
+  "stats_streak_unit_two": {
+    "message": "ימים"
+  },
+  "stats_streak_freeze_tokens_two": {
+    "message": "$COUNT$ אסימוני הקפאה שמורים",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_active_days_two": {
+    "message": "$COUNT$ ימים פעילים החודש ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_blocked_count_two": {
+    "message": "$COUNT$ נחסמו",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

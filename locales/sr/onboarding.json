@@ -1,1 +1,186 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Подеси Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock подешавање"
+  },
+  "onboarding_progress": {
+    "message": "Корак $STEP$ од $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Твој сачувани напредак подешавања није могао да се врати. Креће се испочетка са твојим тренутним подразумеваним вредностима."
+  },
+  "onboarding_complete_heading": {
+    "message": "Подешавање је завршено"
+  },
+  "onboarding_complete_body": {
+    "message": "Твоји избори су сачувани. Отвори Focus Lock из Chrome траке са алаткама да покренеш сесију."
+  },
+  "onboarding_error_heading": {
+    "message": "Подешавање није доступно"
+  },
+  "onboarding_error_body": {
+    "message": "Подешавање није могло да се учита. Покушај поново."
+  },
+  "onboarding_retry_button": {
+    "message": "Покушај поново"
+  },
+  "onboarding_save_error": {
+    "message": "Напредак подешавања није могао да се сачува. Покушај поново."
+  },
+  "onboarding_enable_error": {
+    "message": "Блокирање сајтова није могло да се укључи. Покушај поново."
+  },
+  "onboarding_finish_error": {
+    "message": "Подешавање није могло да се заврши. Твоји избори су и даље сачувани. Покушај поново."
+  },
+  "onboarding_lists_heading": {
+    "message": "Изабери свој почетни списак блокираних"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "У режиму $MODE$ укључене категорије и додатно блокирани сајтови нису доступни.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "У режиму $MODE$ ниједан сајт није доступан осим твог списка дозвољених.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Ови избори постају подразумеване вредности за будуће сесије. Можеш их касније уредити."
+  },
+  "onboarding_lists_legend": {
+    "message": "Препоручене категорије сајтова"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ сајт",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ сајтова",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Прикажи сајтове у категорији $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Сакриј сајтове у категорији $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "Домени у категорији $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Настави"
+  },
+  "onboarding_access_heading": {
+    "message": "Укључи блокирање сајтова"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock локално проверава адресе страница како би их упарио са твојим изабраним категоријама и сајтовима. Приступ сајтовима користи да прикаже екран блокирања и врати погођене странице када се твоја сесија заврши."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Категорије и сопствени домени могу да обухвате било који сајт. Chrome ће стога затражити ову дозволу:"
+  },
+  "onboarding_access_capability": {
+    "message": "Читање и промена свих ваших података на свим веб-сајтовима"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock користи тај приступ само док примењује твоја правила блокирања."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome није одобрио приступ сајтовима. Можеш покушати поново."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Приступ сајтовима је одобрен, али Focus Lock није могао да укључи блокирање. Покушај подешавање поново или поново учитај додатак."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Укључи блокирање сајтова"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Не сада"
+  },
+  "onboarding_sync_heading": {
+    "message": "Изабери где се чувају твоја подешавања"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Синхронизуј између Chrome уређаја"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Одобрени подаци у наставку користиће Chrome синхронизацију након што завршиш подешавање."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Сви Focus Lock подаци остају у овом Chrome профилу."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Синхронизовано"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Само локално"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Ништа се не шаље програмеру Focus Lock-а."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Заврши подешавање уз укључену синхронизацију"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Заврши подешавање без синхронизације"
+  },
+  "onboarding_site_count_few": {
+    "message": "$COUNT$ сајта",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

@@ -1,1 +1,636 @@
-{}
+{
+  "shared_until_stopped": {
+    "message": "עד עצירה"
+  },
+  "shared_preset_short": {
+    "message": "קצר"
+  },
+  "shared_preset_focus": {
+    "message": "ריכוז"
+  },
+  "shared_preset_deep_work": {
+    "message": "עבודה עמוקה"
+  },
+  "shared_deep_work_note": {
+    "message": "העדפה, לא מדע: מקטע ארוך אחד ללא הפרעות, בלי הפסקות אוטומטיות."
+  },
+  "shared_timed_hint_cycles": {
+    "message": "$MINUTES$ דק' בסך הכול, עם מקטעי ריכוז של $FOCUS$ דק'",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "50"
+      },
+      "FOCUS": {
+        "content": "$2",
+        "example": "25"
+      }
+    }
+  },
+  "shared_timed_hint_plain": {
+    "message": "$MINUTES$ דק' ריכוז ללא הפרעה",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_start_until_stopped": {
+    "message": "התחל עד עצירה"
+  },
+  "shared_lock_until_manual_unlock": {
+    "message": "נעל עד שחרור ידני"
+  },
+  "shared_until_stopped_disclosure": {
+    "message": "מפגשי עד עצירה נשארים גמישים או בחיכוך ואינם יכולים להשתמש במחזורי ריכוז והפסקה."
+  },
+  "shared_hard_unavailable_reason": {
+    "message": "נעילה קשיחה אינה זמינה למפגשי עד עצירה: בלי טיימר ובלי סיום ידני, המפגש לעולם לא יסתיים."
+  },
+  "shared_end_session": {
+    "message": "סיים מפגש"
+  },
+  "shared_unlock": {
+    "message": "שחרר"
+  },
+  "shared_gate_wait_none": {
+    "message": "ללא המתנה"
+  },
+  "shared_gate_wait": {
+    "message": "המתנה של $SECONDS$ שניות",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "shared_gate_requirement_typed": {
+    "message": "$WAIT$ ומשפט מוקלד",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "shared_until_stopped_hint_flexible": {
+    "message": "פועל עד שתסיים אותו ב$LABEL$. מחזורים כבויים.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "End session"
+      }
+    }
+  },
+  "shared_until_stopped_hint_friction": {
+    "message": "פועל עד שתשחרר אותו: $REQUIREMENT$, ואז $LABEL$. מחזורים כבויים.",
+    "placeholders": {
+      "REQUIREMENT": {
+        "content": "$1",
+        "example": "a 10-second wait and a typed sentence"
+      },
+      "LABEL": {
+        "content": "$2",
+        "example": "Unlock"
+      }
+    }
+  },
+  "shared_forced_cycles_label": {
+    "message": "מחזורים שנכפו על ידי עד עצירה"
+  },
+  "shared_mode_blacklist": {
+    "message": "חסום אתרים נבחרים"
+  },
+  "shared_mode_whitelist": {
+    "message": "התר אתרים נבחרים בלבד"
+  },
+  "shared_focus_time_label": {
+    "message": "זמן ריכוז"
+  },
+  "shared_clock_focus_phase": {
+    "message": "שלב ריכוז"
+  },
+  "shared_clock_total_session": {
+    "message": "סך המפגש"
+  },
+  "shared_clock_pause": {
+    "message": "השהיה"
+  },
+  "shared_clock_break": {
+    "message": "הפסקה"
+  },
+  "shared_badge_indefinite": {
+    "message": "פעיל"
+  },
+  "shared_popup_starting": {
+    "message": "Focus Lock מתחיל. מחיל את הכללים שבחרת."
+  },
+  "shared_popup_closure_cleanup": {
+    "message": "המפגש הסתיים. מסיים ניקוי בדפדפן."
+  },
+  "shared_popup_transition_cleanup": {
+    "message": "Focus Lock לא הצליח להתחיל. מסיים ניקוי בדפדפן."
+  },
+  "shared_popup_transition_error": {
+    "message": "Focus Lock לא הצליח לנקות התחלה שלא הושלמה."
+  },
+  "shared_popup_closure_error": {
+    "message": "Focus Lock לא הצליח לסיים את הניקוי בדפדפן."
+  },
+  "shared_retry_cleanup": {
+    "message": "נסה ניקוי שוב"
+  },
+  "shared_end_failed": {
+    "message": "לא ניתן היה לסיים את המפגש. נסה שוב."
+  },
+  "shared_retry_failed": {
+    "message": "לא ניתן היה לנסות ניקוי שוב. נסה שוב."
+  },
+  "shared_action_failed": {
+    "message": "לא ניתן היה לבקש את הפעולה. נסה שוב."
+  },
+  "shared_return_to_work_failed": {
+    "message": "לא ניתן היה לחזור לעבודה. נסה שוב."
+  },
+  "shared_data_clear_pending": {
+    "message": "מוחק נתוני Focus Lock. מסיים ניקוי."
+  },
+  "shared_data_clear_error": {
+    "message": "לא ניתן היה למחוק נתונים. נסה שוב."
+  },
+  "shared_schedule_window_label": {
+    "message": "עד סוף החלון"
+  },
+  "shared_schedule_until_stopped": {
+    "message": "מתחיל לפי לוח הזמנים ופועל עד שתעצור אותו: סיים מפגש במצב גמיש, שחרר דרך שער השהייה במצב חיכוך. מחזורים כבויים."
+  },
+  "shared_schedule_started_title": {
+    "message": "לוח הזמנים לריכוז התחיל"
+  },
+  "shared_schedule_until_stopped_body": {
+    "message": "פעיל עד שתעצור אותו."
+  },
+  "shared_settings_indefinite": {
+    "message": "מפגש עד עצירה פעיל. השתמש בחלון שבסרגל הכלים כדי לראות אותו או לסיים אותו."
+  },
+  "shared_settings_starting": {
+    "message": "Focus Lock מתחיל. בודק גישה לאתרים ומחיל את הכללים שלך."
+  },
+  "shared_settings_error": {
+    "message": "Focus Lock לא הצליח לסיים את הניקוי בדפדפן. פתח את החלון ונסה שוב."
+  },
+  "shared_settings_session_disclosure": {
+    "message": "פקדי המפגש נמצאים בחלון שבסרגל הכלים. המפגש הפעיל שומר על הכללים שנלכדו בעת התחלתו."
+  },
+  "shared_settings_timed": {
+    "message": "מפגש מתוזמן פעיל עד $TIME$. הוא מסתיים אוטומטית. השתמש בחלון שבסרגל הכלים למצב בזמן אמת.",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:30"
+      }
+    }
+  },
+  "shared_outcome_timer_completed": {
+    "message": "הושלם"
+  },
+  "shared_outcome_manual_completed": {
+    "message": "הושלם ידנית"
+  },
+  "shared_outcome_manual_canceled": {
+    "message": "הסתיים מוקדם"
+  },
+  "shared_outcome_website_access_lost": {
+    "message": "הסתיים: הגישה לאתרים אבדה"
+  },
+  "shared_outcome_content_registration_failed": {
+    "message": "הסתיים: הגדרת החסימה נכשלה"
+  },
+  "shared_outcome_alarm_failed": {
+    "message": "הסתיים: הגדרת הטיימר נכשלה"
+  },
+  "shared_outcome_tab_enforcement_failed": {
+    "message": "הסתיים: האכיפה בדפים נכשלה"
+  },
+  "shared_outcome_invalid_active_state": {
+    "message": "הסתיים: השחזור נכשל"
+  },
+  "shared_duration_hours_minutes": {
+    "message": "$HOURS$ ש' $MINUTES$ ד'",
+    "placeholders": {
+      "HOURS": {
+        "content": "$1",
+        "example": "2"
+      },
+      "MINUTES": {
+        "content": "$2",
+        "example": "05"
+      }
+    }
+  },
+  "shared_duration_minutes": {
+    "message": "$MINUTES$ ד'",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "shared_minutes_one": {
+    "message": "$COUNT$ דק'",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "shared_minutes_other": {
+    "message": "$COUNT$ דק'",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "shared_updating_session": {
+    "message": "מעדכן מפגש"
+  },
+  "shared_less_than_a_minute": {
+    "message": "פחות מדקה"
+  },
+  "shared_focus_remaining_break": {
+    "message": "$DURATION$ עד ההפסקה שלך",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_focus_remaining_session": {
+    "message": "$DURATION$ נותרו במפגש הזה",
+    "placeholders": {
+      "DURATION": {
+        "content": "$1",
+        "example": "5 min"
+      }
+    }
+  },
+  "shared_cost_exceeds_limit": {
+    "message": "העלות חורגת ממגבלת הקרדיט"
+  },
+  "shared_credit_resumes_focus": {
+    "message": "צבירת הקרדיט מתחדשת בזמן ריכוז"
+  },
+  "shared_credit_off": {
+    "message": "צבירת הקרדיט כבויה"
+  },
+  "shared_not_enough_time": {
+    "message": "אין מספיק זמן במקטע הריכוז הזה"
+  },
+  "shared_ready_in": {
+    "message": "מוכן בעוד $CLOCK$",
+    "placeholders": {
+      "CLOCK": {
+        "content": "$1",
+        "example": "1:30"
+      }
+    }
+  },
+  "shared_verdict_with_pattern": {
+    "message": "$LABEL$: $PATTERN$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Blocked by your block list"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_verdict_blocked_category": {
+    "message": "נחסם על ידי $CATEGORY$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_verdict_blocked_custom": {
+    "message": "נחסם על ידי רשימת החסימה שלך"
+  },
+  "shared_verdict_whitelist_miss": {
+    "message": "לא ברשימת ההיתר שלך"
+  },
+  "shared_verdict_blocked_session": {
+    "message": "נחסם על ידי המפגש הזה"
+  },
+  "shared_verdict_allow_list": {
+    "message": "ברשימת ההיתר שלך"
+  },
+  "shared_verdict_always_allowed": {
+    "message": "מותר תמיד"
+  },
+  "shared_verdict_unlock": {
+    "message": "משוחרר זמנית"
+  },
+  "shared_verdict_excluded": {
+    "message": "הוחרג מקטגוריה נבחרת"
+  },
+  "shared_verdict_no_session": {
+    "message": "אין מפגש ריכוז פעיל"
+  },
+  "shared_verdict_allowed_session": {
+    "message": "מותר על ידי המפגש הזה"
+  },
+  "shared_category_social": {
+    "message": "רשתות חברתיות"
+  },
+  "shared_category_video": {
+    "message": "וידאו וסטרימינג"
+  },
+  "shared_category_news": {
+    "message": "חדשות"
+  },
+  "shared_category_mail": {
+    "message": "דואר"
+  },
+  "shared_category_shopping": {
+    "message": "קניות"
+  },
+  "shared_category_gaming": {
+    "message": "משחקים"
+  },
+  "shared_category_forums": {
+    "message": "פורומים ושעמום"
+  },
+  "shared_synced_settings": {
+    "message": "הגדרות"
+  },
+  "shared_synced_lists": {
+    "message": "רשימות חסימה והיתר"
+  },
+  "shared_synced_credit": {
+    "message": "קרדיט גישה לאתרים"
+  },
+  "shared_synced_streaks": {
+    "message": "רצפים"
+  },
+  "shared_synced_aggregates": {
+    "message": "סיכומי ניסיונות חסומים ברמת הדומיין"
+  },
+  "shared_local_full_urls": {
+    "message": "כתובות URL מלאות"
+  },
+  "shared_local_intentions": {
+    "message": "כוונות ריכוז"
+  },
+  "shared_local_events": {
+    "message": "אירועי מפגש מפורטים"
+  },
+  "shared_local_runtime": {
+    "message": "מפגש ריצה פעיל"
+  },
+  "shared_legacy_policy_dropped": {
+    "message": "לא ניתן היה לקרוא חלק מהנתונים המסונכרנים מגרסה ישנה יותר והם אופסו."
+  },
+  "shared_all_data_clear_running": {
+    "message": "סיים את המפגש הפועל לפני מחיקת כל הנתונים."
+  },
+  "shared_nav_brand": {
+    "message": "Focus Lock"
+  },
+  "shared_nav_product": {
+    "message": "ניווט במוצר"
+  },
+  "shared_nav_overview": {
+    "message": "סקירה"
+  },
+  "shared_nav_settings": {
+    "message": "הגדרות"
+  },
+  "shared_section_blocking": {
+    "message": "חסימה"
+  },
+  "shared_section_schedule": {
+    "message": "לוח זמנים"
+  },
+  "shared_section_behavior": {
+    "message": "התנהגות המפגש"
+  },
+  "shared_section_budget": {
+    "message": "קרדיט גישה לאתרים"
+  },
+  "shared_section_notifications": {
+    "message": "התראות"
+  },
+  "shared_section_privacy": {
+    "message": "פרטיות ונתונים"
+  },
+  "shared_theme_auto": {
+    "message": "אוטומטי"
+  },
+  "shared_theme_light": {
+    "message": "בהיר"
+  },
+  "shared_theme_dark": {
+    "message": "כהה"
+  },
+  "shared_theme_button": {
+    "message": "ערכת נושא: $CURRENT$. עבור אל $NEXT$",
+    "placeholders": {
+      "CURRENT": {
+        "content": "$1",
+        "example": "Auto"
+      },
+      "NEXT": {
+        "content": "$2",
+        "example": "Light"
+      }
+    }
+  },
+  "shared_theme_error": {
+    "message": "לא ניתן היה לשמור את ערכת הנושא. טען מחדש את הדף ונסה שוב."
+  },
+  "shared_host_search_label": {
+    "message": "חפש אתרים בקטגוריה $TITLE$",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_none": {
+    "message": "אף אתר בקטגוריה $TITLE$ אינו תואם לחיפוש שלך.",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "shared_host_partial": {
+    "message": "מוצגים $SHOWN$ מתוך $MATCHED$ אתרים. חפש כדי לצמצם את הרשימה.",
+    "placeholders": {
+      "SHOWN": {
+        "content": "$1",
+        "example": "50"
+      },
+      "MATCHED": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_matched": {
+    "message": "מוצגים $MATCHED$ מתוך $TOTAL$ אתרים.",
+    "placeholders": {
+      "MATCHED": {
+        "content": "$1",
+        "example": "12"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "200"
+      }
+    }
+  },
+  "shared_host_all": {
+    "message": "מוצגים כל $TOTAL$ האתרים.",
+    "placeholders": {
+      "TOTAL": {
+        "content": "$1",
+        "example": "200"
+      }
+    }
+  },
+  "shared_end_the_session": {
+    "message": "סיים את המפגש"
+  },
+  "shared_overlay_starting_title": {
+    "message": "Focus Lock מתחיל"
+  },
+  "shared_overlay_starting_detail": {
+    "message": "מחיל את הכללים שבחרת."
+  },
+  "shared_overlay_stopped_page": {
+    "message": "הדף הזה לא נטען. הוא ייטען מעצמו בתום המפגש."
+  },
+  "shared_overlay_next_step": {
+    "message": "הצעד הבא שלך"
+  },
+  "shared_overlay_back_to_work": {
+    "message": "חזרה לעבודה"
+  },
+  "shared_overlay_choose_work_tab": {
+    "message": "בחר לשונית עבודה"
+  },
+  "shared_overlay_change_work_tab": {
+    "message": "שנה לשונית עבודה"
+  },
+  "shared_overlay_access_summary": {
+    "message": "צריך הפסקה או גישה לאתרים?"
+  },
+  "shared_overlay_access_note": {
+    "message": "אפשר להתרחק בכל רגע. גישה לאתרים צורכת קרדיט."
+  },
+  "shared_overlay_gate_force_end": {
+    "message": "התעלם מההמתנה וסיים בכל זאת"
+  },
+  "shared_overlay_transport_error": {
+    "message": "Focus Lock לא הצליח לעדכן את הפעולה הזו. נסה שוב."
+  },
+  "shared_overlay_bank_amount": {
+    "message": "$AMOUNT$ קרדיט גישה לאתרים",
+    "placeholders": {
+      "AMOUNT": {
+        "content": "$1",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_next_step_fallback": {
+    "message": "המשך במשימה הנוכחית שלך"
+  },
+  "shared_overlay_pause_action": {
+    "message": "שחרר את כל האתרים"
+  },
+  "shared_overlay_unlock_site_action": {
+    "message": "שחרר את האתר הזה"
+  },
+  "shared_overlay_spend_action": {
+    "message": "$LABEL$ $LENGTH$ - עולה $COST$ קרדיט",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Unlock all sites"
+      },
+      "LENGTH": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "COST": {
+        "content": "$3",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_overlay_locked_until": {
+    "message": "נעול עד $TIME$",
+    "placeholders": {
+      "TIME": {
+        "content": "$1",
+        "example": "14:35"
+      }
+    }
+  },
+  "shared_overlay_gate_said": {
+    "message": "אמרת: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "Finish the report"
+      }
+    }
+  },
+  "shared_overlay_unlock_host": {
+    "message": "שחרר את $HOST$ $CLOCK$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      },
+      "CLOCK": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "shared_gate_back": {
+    "message": "המשך להתרכז"
+  },
+  "shared_gate_phrase_label": {
+    "message": "הקלד את זה לאישור:"
+  },
+  "shared_gate_end_title": {
+    "message": "סיים את המפגש הזה"
+  },
+  "shared_minutes_two": {
+    "message": "$COUNT$ דק'",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  }
+}

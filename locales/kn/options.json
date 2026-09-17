@@ -1,69 +1,69 @@
 {
   "options_page_title": {
-    "message": "Focus Lock ಆಯ್ಕೆಗಳು"
+    "message": "ಫೋಕಸ್ Lock optiಮೇಲೆs"
   },
   "options_heading": {
-    "message": "Focus Lock ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+    "message": "ಫೋಕಸ್ Lock settರಲ್ಲಿgs"
   },
   "options_loading_settings": {
-    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
+    "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ settರಲ್ಲಿgs"
   },
   "options_privacy_loading": {
-    "message": "ಗೌಪ್ಯತಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
+    "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ privacy settರಲ್ಲಿgs"
   },
   "options_save_failed": {
-    "message": "ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not save. Try agaರಲ್ಲಿ."
   },
   "options_blocking_heading": {
-    "message": "ಬ್ಲಾಕಿಂಗ್"
+    "message": "ನಿರ್ಬಂಧ"
   },
   "options_blocking_help": {
-    "message": "ಬ್ಲಾಕ್ ಪಟ್ಟಿ ಸೆಷನ್‌ಗಳಲ್ಲಿ ಕಸ್ಟಮ್ ನಿಯಮಗಳು ಬ್ಲಾಕ್ ಮಾಡುತ್ತವೆ. ಅನುಮತಿ ಪಟ್ಟಿ ಸೆಷನ್‌ಗಳಲ್ಲಿ ತಲುಪಬಹುದಾಗಿ ಉಳಿಯುವುದೇ ಅನುಮತಿ ಪಟ್ಟಿ. ಬಂಡಲ್ ವರ್ಗಗಳು ಸಾಮಾನ್ಯ ಸಮಯ ಹಾಳುಮಾಡುವ ಸೈಟ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡುತ್ತವೆ."
+    "message": "ಕಸ್ಟಮ್ ನಿಯಮ block durರಲ್ಲಿg blacklist sessiಮೇಲೆs. The whitelist is whನಲ್ಲಿ stays reachable durರಲ್ಲಿg whitelist sessiಮೇಲೆs. ಬಂಡಲ್ ವರ್ಗ block commಮೇಲೆ time sರಲ್ಲಿks."
   },
   "options_custom_blacklist_title": {
-    "message": "ಕಸ್ಟಮ್ ಬ್ಲಾಕ್ ಪಟ್ಟಿ"
+    "message": "Cusಕಿm blacklist"
   },
   "options_whitelist_title": {
     "message": "ಅನುಮತಿ ಪಟ್ಟಿ"
   },
   "options_bundled_categories_heading": {
-    "message": "ಬಂಡಲ್ ವರ್ಗಗಳು"
+    "message": "ಬಂಡಲ್ ವರ್ಗ"
   },
   "options_bundled_categories_help": {
-    "message": "ಸಾಮಾನ್ಯ ಸಮಯ ಹಾಳುಮಾಡುವ ಸೈಟ್‌ಗಳ ಬಂಡಲ್ ಪಟ್ಟಿಗಳು. ಇಡೀ ವರ್ಗವನ್ನು ಟಾಗಲ್ ಮಾಡು, ನಂತರ ಒಂಟಿ ಸೈಟ್‌ಗಳನ್ನು ಲಭ್ಯವಾಗಿಡಲು ಅದನ್ನು ತೆರೆ."
+    "message": "Bundled lists of common time sinks. ಟಾಗಲ್ a whole category, then open it to keep single sites available."
   },
   "options_schedule_heading": {
     "message": "ವೇಳಾಪಟ್ಟಿ"
   },
   "options_schedule_help": {
-    "message": "ಈ ಅವಧಿಗಳ ಒಳಗೆ ಸೆಷನ್‌ಗಳು ತಾವಾಗಿಯೇ ಪ್ರಾರಂಭವಾಗುತ್ತವೆ. ಇಲ್ಲಿ ಹೊಂದಿಸಿದ ಕಠಿಣತೆ ಇಡೀ ಅವಧಿಗೆ ಅನ್ವಯಿಸುತ್ತದೆ."
+    "message": "ಸೆಷ್ಟs start ಮೇಲೆ their own ರಲ್ಲಿside these wರಲ್ಲಿdows. Strictness set here applies ಸಾಕಾಂಶ the whole wರಲ್ಲಿdow."
   },
   "options_behavior_heading": {
-    "message": "ಸೆಷನ್ ವರ್ತನೆ"
+    "message": "ಸೆಷ್ಟ ವರ್ತನೆ"
   },
   "options_budget_heading": {
     "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್"
   },
   "options_notifications_heading": {
-    "message": "ಅಧಿಸೂಚನೆಗಳು"
+    "message": "Notificನಲ್ಲಿiಮೇಲೆs"
   },
   "options_privacy_heading": {
-    "message": "ಗೌಪ್ಯತೆ ಮತ್ತು ಡೇಟಾ"
+    "message": "Privacy ಮತ್ತು dನಲ್ಲಿa"
   },
   "options_load_error_retry": {
-    "message": "ಮರುಪ್ರಯತ್ನಿಸಿ"
+    "message": "ಮರುಪ್ರಯತ್ನ"
   },
   "options_load_error_delete_all": {
-    "message": "ಎಲ್ಲವನ್ನೂ ಅಳಿಸಿ ಮತ್ತೆ ಪ್ರಾರಂಭಿಸಿ"
+    "message": "Delete everythರಲ್ಲಿg ಮತ್ತು start over"
   },
   "options_load_error_keep_data": {
-    "message": "ನನ್ನ ಡೇಟಾ ಉಳಿಸಿಕೊ"
+    "message": "Keep my dನಲ್ಲಿa"
   },
   "options_delete_all_data": {
-    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾವನ್ನು ಅಳಿಸಿ"
+    "message": "Delete all ಫೋಕಸ್ Lock dನಲ್ಲಿa"
   },
   "options_dirty_saving": {
-    "message": "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲಾಗುತ್ತಿದೆ"
+    "message": "Savರಲ್ಲಿg changes"
   },
   "options_dirty_unsaved": {
     "message": "ಉಳಿಸದ ಬದಲಾವಣೆಗಳು"
@@ -78,10 +78,10 @@
     "message": "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ"
   },
   "options_session_status_label": {
-    "message": "ಸೆಷನ್ ಸ್ಥಿತಿ"
+    "message": "ಸೆಷ್ಟ stನಲ್ಲಿus"
   },
   "options_rule_kind_host_badge": {
-    "message": "ಡೊಮೇನ್"
+    "message": "domaರಲ್ಲಿ"
   },
   "options_rule_kind_regex_badge": {
     "message": "ರೀಜೆಕ್ಸ್"
@@ -102,22 +102,28 @@
     "message": "ಇನ್ನೂ ನಿಯಮಗಳಿಲ್ಲ."
   },
   "options_rule_kind_aria": {
-    "message": "ನಿಯಮದ ವಿಧ"
+    "message": "ನಿಯಮ kರಲ್ಲಿd"
   },
   "options_rule_kind_host_option": {
-    "message": "ಡೊಮೇನ್ ಅಥವಾ ಸಬ್‌ಡೊಮೇನ್"
+    "message": "domaರಲ್ಲಿ ಅಥವಾ subdomaರಲ್ಲಿ"
   },
   "options_rule_kind_regex_option": {
     "message": "ರೀಜೆಕ್ಸ್ (ಪೂರ್ಣ URL)"
   },
   "options_rule_pattern_aria": {
-    "message": "ಪ್ಯಾಟರ್ನ್"
+    "message": "Pನಲ್ಲಿtern"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shಅಥವಾts/"
   },
   "options_rule_add": {
     "message": "ನಿಯಮ ಸೇರಿಸಿ"
   },
   "options_rules_help": {
-    "message": "facebook.com ಆ ಡೊಮೇನ್ ಮತ್ತು ಪ್ರತಿಯೊಂದು ಸಬ್‌ಡೊಮೇನ್ ಅನ್ನು ಒಳಗೊಳ್ಳುತ್ತದೆ. news.ycombinator.com ಆ ಸಬ್‌ಡೊಮೇನ್ ಮತ್ತು ಅದರ ಅಡಿಯಲ್ಲಿರುವ ಎಲ್ಲವನ್ನೂ ಒಳಗೊಳ್ಳುತ್ತದೆ. /youtube\\.com\\/shorts/ ಪೂರ್ಣ URL ಅನ್ನು ರೆಗ್ಯುಲರ್ ಎಕ್ಸ್‌ಪ್ರೆಶನ್ ಆಗಿ ಹೊಂದಿಸುತ್ತದೆ."
+    "message": "facebook.com covers thನಲ್ಲಿ domaರಲ್ಲಿ ಮತ್ತು every subdomaರಲ್ಲಿ. news.ycombರಲ್ಲಿನಲ್ಲಿಅಥವಾ.com covers thನಲ್ಲಿ subdomaರಲ್ಲಿ ಮತ್ತು anythರಲ್ಲಿg under it. /youtube\\.com\\/shಅಥವಾts/ mನಲ್ಲಿches the full URL as a regular expressiಮೇಲೆ."
   },
   "options_number_error_positive": {
     "message": "$LABEL$ ಧನಾತ್ಮಕ ಪೂರ್ಣಾಂಕವಾಗಿರಬೇಕು.",
@@ -129,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "$LABEL$ ಸೊನ್ನೆ ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಪೂರ್ಣಾಂಕವಾಗಿರಬೇಕು.",
+    "message": "$LABEL$ must be a whole number ನ zero ಅಥವಾ greನಲ್ಲಿer.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -138,7 +144,7 @@
     }
   },
   "options_number_error_nonnegative": {
-    "message": "$LABEL$ ಸೊನ್ನೆ ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿರಬೇಕು.",
+    "message": "$LABEL$ must be zero ಅಥವಾ greನಲ್ಲಿer.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -147,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$ ಬೆಂಬಲಿತ ನಿಮಿಷಗಳ ವ್ಯಾಪ್ತಿಯೊಳಗೆ ಇರಬೇಕು.",
+    "message": "$LABEL$ must be ಜೊತೆರಲ್ಲಿ the suppಅಥವಾted mರಲ್ಲಿute range.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -156,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$ ಬೆಂಬಲಿತ ದಿನಗಳ ವ್ಯಾಪ್ತಿಯೊಳಗೆ ಇರಬೇಕು.",
+    "message": "$LABEL$ must be ಜೊತೆರಲ್ಲಿ the suppಅಥವಾted day range.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -165,64 +171,64 @@
     }
   },
   "options_session_defaults_heading": {
-    "message": "ಸೆಷನ್ ಡೀಫಾಲ್ಟ್‌ಗಳು"
+    "message": "ಸೆಷ್ಟ defaults"
   },
   "options_session_defaults_help": {
-    "message": "ಸೆಷನ್ ಪ್ರಾರಂಭವಾದಾಗ ಮೋಡ್ ಮತ್ತು ಕಠಿಣತೆ ಸ್ಥಿರವಾಗಿರುತ್ತವೆ. ಪ್ರಾರಂಭ ಫಾರ್ಮ್ ತೆರೆಯುವಾಗ ಇರುವ ಮೌಲ್ಯಗಳು ಇವೇ."
+    "message": "ವಿಧಾನ ಮತ್ತು strictness are fixed ಯಾವಾಗ a sessiಮೇಲೆ starts. These are the values the start ಸಾಕಾಂಶm opens ಜೊತೆ."
   },
   "options_preset_short_label": {
-    "message": "ಚಿಕ್ಕ ಸೆಷನ್ ಪ್ರಿಸೆಟ್ (ನಿಮಿಷಗಳು)"
+    "message": "Shಅಥವಾt sessiಮೇಲೆ preset (mರಲ್ಲಿutes)"
   },
   "options_preset_default_label": {
-    "message": "ಡೀಫಾಲ್ಟ್ ಸೆಷನ್ ಪ್ರಿಸೆಟ್ (ನಿಮಿಷಗಳು)"
+    "message": "ಪೂರ್ವನಿರ್ಧಾರಿತ session preset (minutes)"
   },
   "options_preset_deep_label": {
-    "message": "ಡೀಪ್ ವರ್ಕ್ ಸೆಷನ್ ಪ್ರಿಸೆಟ್ (ನಿಮಿಷಗಳು)"
+    "message": "Deep sessiಮೇಲೆ preset (mರಲ್ಲಿutes)"
   },
   "options_mode_blacklist_label": {
     "message": "ಬ್ಲಾಕ್ ಪಟ್ಟಿ: ಪಟ್ಟಿ ಮಾಡಿದ ಸೈಟ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡು"
   },
   "options_mode_whitelist_label": {
-    "message": "ಅನುಮತಿ ಪಟ್ಟಿ: ಪಟ್ಟಿ ಮಾಡಿದ ಸೈಟ್‌ಗಳನ್ನು ಮಾತ್ರ ಅನುಮತಿಸು"
+    "message": "Whitelist: allow ಮೇಲೆly listed sites"
   },
   "options_strictness_flexible_label": {
-    "message": "ನಮ್ಯ: ನಿನಗಿಷ್ಟ ಬಂದಾಗ ಸೆಷನ್ ಕೊನೆಗೊಳಿಸು"
+    "message": "ನಮ್ಯ: end the sessiಮೇಲೆ ಯಾವಾಗever you choose"
   },
   "options_strictness_friction_label": {
-    "message": "ಘರ್ಷಣೆ: ಬೇಗ ನಿಲ್ಲಿಸುವುದು ಹೊಂದಿಸಿದ ಆಲೋಚನಾ ಗೇಟ್ ಅನ್ನು ಬಳಸುತ್ತದೆ"
+    "message": "ರಕ್ಷಣೆ: sಕಿppರಲ್ಲಿg early uses the cಮೇಲೆfigured deliberನಲ್ಲಿiಮೇಲೆ gನಲ್ಲಿe"
   },
   "options_strictness_hard_label": {
-    "message": "ಕಠಿಣ ಲಾಕ್: ಬೇಗ ಕೊನೆಗೊಳಿಸುವಂತಿಲ್ಲ, ತಾತ್ಕಾಲಿಕ ಸೈಟ್ ಪ್ರವೇಶ ಮಾತ್ರ"
+    "message": "ಕಠಿಣ: no early end, tempಅಥವಾary site access ಮೇಲೆly"
   },
   "options_cycle_heading": {
-    "message": "ಫೋಕಸ್ ಮತ್ತು ವಿರಾಮ ಚಕ್ರ"
+    "message": "ಫೋಕಸ್ ಮತ್ತು break cycle"
   },
   "options_cycle_help": {
-    "message": "ಡೀಫಾಲ್ಟ್‌ಗಳು: 25 ನಿಮಿಷ ಫೋಕಸ್, 5 ನಿಮಿಷ ವಿರಾಮ, ಪ್ರತಿ 4ನೇ ಚಕ್ರಕ್ಕೆ 15 ನಿಮಿಷ ದೀರ್ಘ ವಿರಾಮ. ಅಧ್ಯಯನ ಮಾದರಿಗಳಲ್ಲಿ ಮನಸ್ಥಿತಿ ಮತ್ತು ಫೋಕಸ್‌ಗಾಗಿ ವೇಳಾಪಟ್ಟಿ ಪ್ರಕಾರದ ವಿರಾಮಗಳು ಇಷ್ಟ ಬಂದಾಗ ತೆಗೆದುಕೊಳ್ಳುವ ವಿರಾಮಗಳಿಗಿಂತ ಉತ್ತಮ. ನಿಖರ ನಿಮಿಷಗಳು ಸಂಪ್ರದಾಯ, ವಿಜ್ಞಾನವಲ್ಲ."
+    "message": "ಪೂರ್ವನಿರ್ಧಾರಿತs: 25 minute focus, 5 minute break, 15 minute long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact minutes are convention, not science."
   },
   "options_cycle_default_label": {
-    "message": "ಡೀಫಾಲ್ಟ್ ಆಗಿ ಫೋಕಸ್ ಮತ್ತು ವಿರಾಮಗಳನ್ನು ಚಕ್ರಗೊಳಿಸು"
+    "message": "ಚಕ್ರ focus ಮತ್ತು breaks ಮೂಲಕ default"
   },
   "options_focus_minutes_label": {
-    "message": "ಫೋಕಸ್ ನಿಮಿಷಗಳು"
+    "message": "ಫೋಕಸ್ mರಲ್ಲಿutes"
   },
   "options_short_break_minutes_label": {
-    "message": "ಚಿಕ್ಕ ವಿರಾಮ ನಿಮಿಷಗಳು"
+    "message": "Shಅಥವಾt break mರಲ್ಲಿutes"
   },
   "options_long_break_minutes_label": {
-    "message": "ದೀರ್ಘ ವಿರಾಮ ನಿಮಿಷಗಳು"
+    "message": "Lಮೇಲೆg break mರಲ್ಲಿutes"
   },
   "options_long_every_label": {
-    "message": "ಪ್ರತಿ Nನೇ ಚಕ್ರಕ್ಕೆ ದೀರ್ಘ ವಿರಾಮ"
+    "message": "Lಮೇಲೆg break every Nth cycle"
   },
   "options_gate_heading": {
-    "message": "ಆಲೋಚನಾ ಗೇಟ್"
+    "message": "ಚಿಂತಾಮನನ gನಲ್ಲಿe"
   },
   "options_gate_help": {
-    "message": "ಸ್ಪಷ್ಟ 'ಕೆಲಸಕ್ಕೆ ಹಿಂತಿರುಗು' ಬಟನ್‌ನೊಂದಿಗೆ 10 ಸೆಕೆಂಡುಗಳ ಕಾಯುವಿಕೆ ಪ್ರಚೋದನಾ ಭೇಟಿಗಳನ್ನು ಅಳೆಯಬಹುದಾದಷ್ಟು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ (ಕ್ಷೇತ್ರ ಅಧ್ಯಯನ, PNAS 2023). ಹೆಚ್ಚಿನ ಕಾಯುವಿಕೆ ಮತ್ತು ಟೈಪ್ ಮಾಡಿದ ವಾಕ್ಯ ಪರಿಣಾಮವನ್ನು ಸುಮಾರು ದುಪ್ಪಟ್ಟುಗೊಳಿಸುತ್ತವೆ."
+    "message": "A 10 secಮೇಲೆd wait ಜೊತೆ an explicit back-ಕಿ-wಅಥವಾk butಕಿn measurably reduces impulse visits (field study, PNAS 2023). The lಮೇಲೆger wait ಮತ್ತು the typed sentence roughly double the effect."
   },
   "options_gate_wait_one": {
-    "message": "$COUNT$ ಸೆಕೆಂಡು ಕಾಯಿ",
+    "message": "Wait $COUNT$ secಮೇಲೆd",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -231,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "$COUNT$ ಸೆಕೆಂಡುಗಳು ಕಾಯಿ",
+    "message": "Wait $COUNT$ secಮೇಲೆds",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -240,52 +246,52 @@
     }
   },
   "options_gate_wait_custom": {
-    "message": "ಕಸ್ಟಮ್"
+    "message": "Cusಕಿm"
   },
   "options_custom_delay_label": {
-    "message": "ಕಸ್ಟಮ್ ವಿಳಂಬ (ಸೆಕೆಂಡುಗಳು)"
+    "message": "Cusಕಿm delay (secಮೇಲೆds)"
   },
   "options_custom_delay_error": {
-    "message": "ಕಸ್ಟಮ್ ವಿಳಂಬ ಧನಾತ್ಮಕ ಪೂರ್ಣಾಂಕ ಸೆಕೆಂಡುಗಳಾಗಿರಬೇಕು."
+    "message": "Cusಕಿm delay must be a positive whole number ನ secಮೇಲೆds."
   },
   "options_gate_typed_phrase_label": {
-    "message": "ವಾಕ್ಯ ಟೈಪ್ ಮಾಡುವುದನ್ನೂ ಕಡ್ಡಾಯಗೊಳಿಸು"
+    "message": "Also require typರಲ್ಲಿg a sentence"
   },
   "options_gate_force_end_label": {
-    "message": "\"ಟೈಮ್‌ಔಟ್ ಕಡೆಗಣಿಸಿ, ಆದರೂ ಮುಗಿಸು\" ಬಟನ್ ಸಕ್ರಿಯಗೊಳಿಸು"
+    "message": "Enable \"Ignಅಥವಾe timeout ಮತ್ತು end anyway\" butಕಿn"
   },
   "options_credit_help": {
-    "message": "ನೀನು ಫೋಕಸ್ ಮಾಡುತ್ತಿರುವಾಗ ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ ಸಂಗ್ರಹವಾಗುತ್ತದೆ. ಎಲ್ಲಾ ಸೈಟ್‌ಗಳಿಗೆ ಪ್ರವೇಶ ಮತ್ತು ಒಂದೇ ಸೈಟ್ ಅನ್‌ಲಾಕ್ ಎರಡೂ ಒಂದೇ ಬ್ಯಾಲೆನ್ಸ್‌ನಿಂದ ಖರ್ಚಾಗುತ್ತವೆ. ಕ್ರೆಡಿಟ್ ಖರ್ಚು ಮಾಡದೆ ನೀನು ಯಾವಾಗ ಬೇಕಾದರೂ ಸ್ವಲ್ಪ ಹೊತ್ತು ಪಕ್ಕಕ್ಕೆ ಸರಿಯಬಹುದು."
+    "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ accrues while you focus. Both access ಕಿ all sites ಮತ್ತು a sರಲ್ಲಿgle-site unlock spend from the same balance. You can step away ನಲ್ಲಿ any time ಜೊತೆout spendರಲ್ಲಿg credit."
   },
   "options_earn_rate_label": {
-    "message": "ಪ್ರತಿ 30 ನಿಮಿಷ ಫೋಕಸ್‌ಗೆ ಸೈಟ್ ಪ್ರವೇಶದ ನಿಮಿಷಗಳು"
+    "message": "ಕನಿಷ್ಠutes of site access per 30 minutes of focus"
   },
   "options_credit_cap_label": {
-    "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ ಮಿತಿ (ನಿಮಿಷಗಳು)"
+    "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ limit (mರಲ್ಲಿutes)"
   },
   "options_pause_length_label": {
-    "message": "ಎಲ್ಲಾ-ಸೈಟ್ ಪ್ರವೇಶದ ಅವಧಿ (ನಿಮಿಷಗಳು)"
+    "message": "ಎಲ್ಲಾ-site access length (minutes)"
   },
   "options_unlock_length_label": {
-    "message": "ಸೈಟ್ ಅನ್‌ಲಾಕ್ ಅವಧಿ (ನಿಮಿಷಗಳು)"
+    "message": "ಸೈಟ್ unlock length (mರಲ್ಲಿutes)"
   },
   "options_streak_heading": {
-    "message": "ಸ್ಟ್ರೀಕ್ ಮತ್ತು ಧಾರಣೆ"
+    "message": "ಧಾರೆ ಮತ್ತು retentiಮೇಲೆ"
   },
   "options_streak_help": {
-    "message": "ಗುರಿ ತಲುಪುವ ದಿನಗಳನ್ನು ಸ್ಟ್ರೀಕ್ ಎಣಿಸುತ್ತದೆ. ಒಂದು ಡೀಫಾಲ್ಟ್ ಸೆಷನ್ ಸರಪಳಿಯನ್ನು ಜೀವಂತವಾಗಿಡುತ್ತದೆ, ಮತ್ತು ಫ್ರೀಜ್ ಟೋಕನ್ ತಪ್ಪಿದ ದಿನವನ್ನು ಸರಿಪಡಿಸುತ್ತದೆ."
+    "message": "The streak counts days thನಲ್ಲಿ reach the goal. One default sessiಮೇಲೆ keeps the chaರಲ್ಲಿ alive, ಮತ್ತು a freeze ಕಿken repairs a missed day."
   },
   "options_streak_goal_label": {
-    "message": "ದೈನಂದಿನ ಸ್ಟ್ರೀಕ್ ಗುರಿ (ಫೋಕಸ್ ನಿಮಿಷಗಳು)"
+    "message": "Daily streak goal (focus mರಲ್ಲಿutes)"
   },
   "options_freeze_interval_label": {
-    "message": "ಫ್ರೀಜ್ ಟೋಕನ್ ಮಧ್ಯಂತರ (ದಿನಗಳು)"
+    "message": "Freeze ಕಿken ರಲ್ಲಿterval (days)"
   },
   "options_retention_label": {
-    "message": "ದೈನಂದಿನ ಅಂಕಿಅಂಶಗಳನ್ನು ಇರಿಸಿಕೊ (ದಿನಗಳು)"
+    "message": "Keep daily stನಲ್ಲಿs (days)"
   },
   "options_category_on_announcement": {
-    "message": "$CATEGORY$ ವರ್ಗ ಆನ್ ಆಗಿದೆ.",
+    "message": "$CATEGORY$ cನಲ್ಲಿegಅಥವಾy ಮೇಲೆ.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -294,7 +300,7 @@
     }
   },
   "options_category_off_announcement": {
-    "message": "$CATEGORY$ ವರ್ಗ ಆಫ್ ಆಗಿದೆ.",
+    "message": "$CATEGORY$ cನಲ್ಲಿegಅಥವಾy ನf.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -303,13 +309,13 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "ಎಲ್ಲಾ ವರ್ಗಗಳು ಆನ್ ಆಗಿವೆ."
+    "message": "ಎಲ್ಲಾ categories on."
   },
   "options_all_categories_off_announcement": {
-    "message": "ಎಲ್ಲಾ ವರ್ಗಗಳು ಆಫ್ ಆಗಿವೆ."
+    "message": "ಎಲ್ಲಾ categories off."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ ಸೇರಿಸಲಾಗಿದೆ.",
+    "message": "$HOST$ ರಲ್ಲಿcluded.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -327,7 +333,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "ಎಲ್ಲಾ $CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ.",
+    "message": "ಎಲ್ಲಾ $CATEGORY$ sites included.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -336,7 +342,7 @@
     }
   },
   "options_all_sites_kept_available_announcement": {
-    "message": "ಎಲ್ಲಾ $CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಲಭ್ಯವಾಗಿ ಇರಿಸಲಾಗಿದೆ.",
+    "message": "ಎಲ್ಲಾ $CATEGORY$ sites kept available.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -345,10 +351,10 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "ವರ್ಗ ಬಲ್ಕ್ ಕ್ರಿಯೆಗಳು"
+    "message": "ವರ್ಗ bulk actiಮೇಲೆs"
   },
   "options_selected_count": {
-    "message": "$COUNT$ ಆಯ್ಕೆಯಾಗಿವೆ",
+    "message": "ಆರಿಸಿed $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -366,16 +372,16 @@
     }
   },
   "options_select_all": {
-    "message": "ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆಮಾಡಿ"
+    "message": "ಆರಿಸಿ all"
   },
   "options_deselect_all": {
     "message": "ಎಲ್ಲಾ ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ"
   },
   "options_select_all_categories_aria": {
-    "message": "ಎಲ್ಲಾ ವರ್ಗಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+    "message": "ಆರಿಸಿ all categories"
   },
   "options_deselect_all_categories_aria": {
-    "message": "ಎಲ್ಲಾ ವರ್ಗಗಳ ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ"
+    "message": "Deselect all cನಲ್ಲಿegಅಥವಾies"
   },
   "options_show_category_sites": {
     "message": "$CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸು",
@@ -396,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ ಸೈಟ್ ಸೇರಿಸಲಾಗಿದೆ",
+    "message": "$COUNT$ site ರಲ್ಲಿcluded",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -405,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ ಸೈಟ್‌ಗಳು ಸೇರಿಸಲಾಗಿವೆ",
+    "message": "$COUNT$ sites ರಲ್ಲಿcluded",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -414,10 +420,10 @@
     }
   },
   "options_category_off": {
-    "message": "ವರ್ಗ ಆಫ್"
+    "message": "ವರ್ಗ ನf"
   },
   "options_included_when_enabled_one": {
-    "message": "ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ $COUNT$ ಸೈಟ್ ಸೇರ್ಪಡೆಯಾಗುತ್ತದೆ",
+    "message": "$COUNT$ ರಲ್ಲಿcluded ಯಾವಾಗ enabled",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -426,7 +432,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ $COUNT$ ಸೈಟ್‌ಗಳು ಸೇರ್ಪಡೆಯಾಗುತ್ತವೆ",
+    "message": "$COUNT$ ರಲ್ಲಿcluded ಯಾವಾಗ enabled",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -435,10 +441,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "ವರ್ಗದ ಉಳಿದ ಭಾಗ ಬ್ಲಾಕ್ ಆಗಿರುವಾಗ ಒಂದು ಸೈಟ್ ಅನ್ನು ಲಭ್ಯವಾಗಿಡಲು ಅದರ ಚೆಕ್ ತೆಗೆ."
+    "message": "Uncheck a site ಕಿ keep it available while the rest ನ the cನಲ್ಲಿegಅಥವಾy is blocked."
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "$CATEGORY$ ಸೈಟ್ ಬಲ್ಕ್ ಕ್ರಿಯೆಗಳು",
+    "message": "$CATEGORY$ site bulk actiಮೇಲೆs",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -447,7 +453,7 @@
     }
   },
   "options_select_all_category_sites_aria": {
-    "message": "ಎಲ್ಲಾ $CATEGORY$ ಸೈಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    "message": "ಆರಿಸಿ all $CATEGORY$ sites",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -477,7 +483,7 @@
     "message": "ಭಾನು"
   },
   "options_day_mon": {
-    "message": "ಸೋಮ"
+    "message": "Mಮೇಲೆ"
   },
   "options_day_tue": {
     "message": "ಮಂಗಳ"
@@ -492,13 +498,13 @@
     "message": "ಶುಕ್ರ"
   },
   "options_day_sat": {
-    "message": "ಶನಿ"
+    "message": "Sನಲ್ಲಿ"
   },
   "options_schedule_cycles_label": {
-    "message": "ಫೋಕಸ್ ಮತ್ತು ವಿರಾಮಗಳನ್ನು ಚಕ್ರಗೊಳಿಸು"
+    "message": "ಚಕ್ರ focus ಮತ್ತು breaks"
   },
   "options_schedule_overlap_error": {
-    "message": "$DAY$ ದಿನದಂದು ಇನ್ನೊಂದು ಸಕ್ರಿಯ ನಮೂದಿನೊಂದಿಗೆ ಅತಿಕ್ರಮಿಸುತ್ತದೆ.",
+    "message": "Overlaps another enabled entry ಮೇಲೆ $DAY$.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -507,13 +513,13 @@
     }
   },
   "options_schedule_session_type_aria": {
-    "message": "ಸೆಷನ್ ವಿಧ"
+    "message": "ಸೆಷ್ಟ type"
   },
   "options_schedule_entry_legend": {
     "message": "ವೇಳಾಪಟ್ಟಿ ನಮೂದು"
   },
   "options_schedule_start_label": {
-    "message": "ಪ್ರಾರಂಭ"
+    "message": "ಪ್ರಾರಂಭಿಸಿ"
   },
   "options_schedule_end_label": {
     "message": "ಅಂತ್ಯ"
@@ -525,7 +531,7 @@
     "message": "ಉದ್ದೇಶ"
   },
   "options_schedule_intention_placeholder": {
-    "message": "ಈ ಸಮಯ ಯಾವುದಕ್ಕಾಗಿ"
+    "message": "whನಲ್ಲಿ this time is ಸಾಕಾಂಶ"
   },
   "options_schedule_save_entry": {
     "message": "ನಮೂದನ್ನು ಉಳಿಸಿ"
@@ -534,13 +540,13 @@
     "message": "ರದ್ದುಮಾಡಿ"
   },
   "options_schedule_empty": {
-    "message": "ಇನ್ನೂ ಯಾವುದೇ ವೇಳಾಪಟ್ಟಿ ಸೆಷನ್‌ಗಳಿಲ್ಲ."
+    "message": "No scheduled sessiಮೇಲೆs yet."
   },
   "options_schedule_selected_days_aria": {
-    "message": "ಆಯ್ಕೆ ಮಾಡಿದ ದಿನಗಳು"
+    "message": "ಆರಿಸಿed days"
   },
   "options_schedule_time_range": {
-    "message": "$START$ ಇಂದ $END$ ವರೆಗೆ",
+    "message": "$START$ ಕಿ $END$",
     "placeholders": {
       "START": {
         "content": "$1",
@@ -562,7 +568,7 @@
     "message": "ನಮ್ಯ"
   },
   "options_schedule_strictness_friction": {
-    "message": "ಘರ್ಷಣೆ"
+    "message": "frictiಮೇಲೆ"
   },
   "options_schedule_strictness_hard": {
     "message": "ಕಠಿಣ ಲಾಕ್"
@@ -586,16 +592,16 @@
     "message": "ಮಾಸ್ಟರ್ ವಾಲ್ಯೂಮ್"
   },
   "options_sound_session_complete": {
-    "message": "ಸೆಷನ್ ಪೂರ್ಣಗೊಂಡಿದೆ"
+    "message": "ಸೆಷ್ಟ complete"
   },
   "options_sound_break_start": {
-    "message": "ವಿರಾಮ ಪ್ರಾರಂಭ"
+    "message": "ವಿರತಿ start"
   },
   "options_sound_break_end": {
-    "message": "ವಿರಾಮ ಅಂತ್ಯ"
+    "message": "ವಿರತಿ end"
   },
   "options_sound_schedule_start": {
-    "message": "ವೇಳಾಪಟ್ಟಿ ಸ್ವಯಂ-ಪ್ರಾರಂಭ"
+    "message": "Schedule auಕಿ-start"
   },
   "options_sound_preview_aria": {
     "message": "$SOUND$ ಮುನ್ನೋಟ",
@@ -610,234 +616,234 @@
     "message": "ಪ್ಲೇ ಮಾಡಿ"
   },
   "options_sound_preview_error": {
-    "message": "ಶಬ್ದದ ಮುನ್ನೋಟ ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not preview the sound. Try agaರಲ್ಲಿ."
   },
   "options_sounds_notifications_heading": {
-    "message": "ಅಧಿಸೂಚನೆಗಳು"
+    "message": "Notificನಲ್ಲಿiಮೇಲೆs"
   },
   "options_session_complete_notification": {
-    "message": "ಸೆಷನ್ ಪೂರ್ಣಗೊಂಡಾಗ ಸಿಸ್ಟಂ ಅಧಿಸೂಚನೆ ತೋರಿಸು"
+    "message": "Show a system notificನಲ್ಲಿiಮೇಲೆ ಯಾವಾಗ a sessiಮೇಲೆ completes"
   },
   "options_badge_heading": {
     "message": "ಬ್ಯಾಡ್ಜ್"
   },
   "options_badge_countdown": {
-    "message": "ಟೂಲ್‌ಬಾರ್ ಐಕಾನ್‌ನಲ್ಲಿ ಉಳಿದ ಸಮಯ ತೋರಿಸು"
+    "message": "Show the remaರಲ್ಲಿರಲ್ಲಿg time ಮೇಲೆ the ಕಿolbar icಮೇಲೆ"
   },
   "options_privacy_website_access_heading": {
     "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ"
   },
   "options_privacy_website_off_title": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಆಫ್ ಆಗಿದೆ"
+    "message": "Website access is ನf"
   },
   "options_privacy_website_off_detail": {
-    "message": "ನೀನು ಪ್ರವೇಶ ನೀಡುವವರೆಗೆ Focus Lock ವೆಬ್‌ಸೈಟ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ."
+    "message": "ಫೋಕಸ್ Lock cannot block websites until you grant access."
   },
   "options_privacy_website_enable_action": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸು"
+    "message": "Enable website blockರಲ್ಲಿg"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಾಗಿದೆ, ಆದರೆ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯವಾಗಿಲ್ಲ"
+    "message": "Website access is granted, but blockರಲ್ಲಿg is not active"
   },
   "options_privacy_website_unregistered_detail": {
-    "message": "Chrome ಪ್ರವೇಶ ನೀಡಿತು, ಆದರೆ Focus Lock ತನ್ನ ಬ್ಲಾಕಿಂಗ್ ಸ್ಕ್ರಿಪ್ಟ್ ಅನ್ನು ನೋಂದಾಯಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+    "message": "Chrome granted access, but ಫೋಕಸ್ Lock could not register its blockರಲ್ಲಿg script."
   },
   "options_privacy_website_retry_action": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಮರುಪ್ರಯತ್ನಿಸಿ"
+    "message": "ಮರುಪ್ರಯತ್ನ website blockರಲ್ಲಿg"
   },
   "options_privacy_website_on_title": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಂಡಿದೆ"
+    "message": "Website blockರಲ್ಲಿg is enabled"
   },
   "options_privacy_website_on_detail": {
-    "message": "Focus Lock ಸಾಮಾನ್ಯ ವೆಬ್‌ಸೈಟ್ ಪುಟಗಳಲ್ಲಿ ನಿನ್ನ ಸಕ್ರಿಯ ಬ್ಲಾಕಿಂಗ್ ನಿಯಮಗಳನ್ನು ಅನ್ವಯಿಸಬಹುದು."
+    "message": "ಫೋಕಸ್ Lock can apply your active blockರಲ್ಲಿg rules ಮೇಲೆ regular website pages."
   },
   "options_privacy_confirm_local_history_title": {
-    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸುವುದೇ?"
+    "message": "Delete local histಅಥವಾy?"
   },
   "options_privacy_confirm_local_history_action": {
-    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸುವಿಕೆ ದೃಢೀಕರಿಸಿ"
+    "message": "Cಮೇಲೆfirm delete local histಅಥವಾy"
   },
   "options_privacy_local_history_deleted": {
-    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸಲಾಗಿದೆ."
+    "message": "Local histಅಥವಾy deleted."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "ಇದು ಈ ಸಾಧನದಿಂದ ಪೂರ್ಣ URLಗಳು, ಫೋಕಸ್ ಉದ್ದೇಶಗಳು, ಮತ್ತು ವಿವರವಾದ ಸೆಷನ್ ಘಟನೆಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ. ಇದು ಚಾಲನೆಯಲ್ಲಿರುವ ಸೆಷನ್ ಅನ್ನು ತೆರವುಗೊಳಿಸುವುದಿಲ್ಲ, ಅದು ತನ್ನ ಉದ್ದೇಶ ಮತ್ತು ಅದು ಬ್ಲಾಕ್ ಮಾಡುತ್ತಿರುವ ಪ್ರತಿ ಟ್ಯಾಬ್‌ನ ವಿಳಾಸವನ್ನು ಉಳಿಸಿಕೊಳ್ಳುತ್ತದೆ. ಸೆಷನ್ ಕೊನೆಗೊಳಿಸುವುದು ಉದ್ದೇಶವನ್ನು ತೆರವುಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಪ್ರತಿ ತೆರೆದ ವೆಬ್‌ಸೈಟ್ ಟ್ಯಾಬ್ ಅನ್ನು ತೆರವುಗೊಳಿಸುವ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆಯನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತದೆ, ಮತ್ತು ಈ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆ ಪೂರ್ಣಗೊಂಡಾಗ ಪ್ರತಿ ಸಂಗ್ರಹಿತ ವಿಳಾಸವನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ."
+    "message": "This permanently deletes full URLs, focus ರಲ್ಲಿtentiಮೇಲೆs, ಮತ್ತು detailed sessiಮೇಲೆ events from this device. It does not clear a runnರಲ್ಲಿg sessiಮೇಲೆ, which keeps its ರಲ್ಲಿtentiಮೇಲೆ ಮತ್ತು the address ನ each tab it is blockರಲ್ಲಿg. Endರಲ್ಲಿg the sessiಮೇಲೆ clears the ರಲ್ಲಿtentiಮೇಲೆ ಮತ್ತು starts a cleanup thನಲ್ಲಿ clears every open website tab, ಮತ್ತು the cleanup removes every stಅಥವಾed address ಯಾವಾಗ it completes."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "ಇದು ಈ ಸಾಧನದಿಂದ ಪೂರ್ಣ URLಗಳು, ಫೋಕಸ್ ಉದ್ದೇಶಗಳು, ವಿವರವಾದ ಸೆಷನ್ ಘಟನೆಗಳು, ಮತ್ತು ಸ್ಥಳೀಯ-ಮಾತ್ರ ಒಟ್ಟು ಅಂಕಿಅಂಶಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ. ಇದು ಚಾಲನೆಯಲ್ಲಿರುವ ಸೆಷನ್ ಅನ್ನು ತೆರವುಗೊಳಿಸುವುದಿಲ್ಲ, ಅದು ತನ್ನ ಉದ್ದೇಶ ಮತ್ತು ಅದು ಬ್ಲಾಕ್ ಮಾಡುತ್ತಿರುವ ಪ್ರತಿ ಟ್ಯಾಬ್‌ನ ವಿಳಾಸವನ್ನು ಉಳಿಸಿಕೊಳ್ಳುತ್ತದೆ. ಸೆಷನ್ ಕೊನೆಗೊಳಿಸುವುದು ಉದ್ದೇಶವನ್ನು ತೆರವುಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಪ್ರತಿ ತೆರೆದ ವೆಬ್‌ಸೈಟ್ ಟ್ಯಾಬ್ ಅನ್ನು ತೆರವುಗೊಳಿಸುವ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆಯನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತದೆ, ಮತ್ತು ಈ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆ ಪೂರ್ಣಗೊಂಡಾಗ ಪ್ರತಿ ಸಂಗ್ರಹಿತ ವಿಳಾಸವನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ."
+    "message": "This permanently deletes full URLs, focus ರಲ್ಲಿtentiಮೇಲೆs, ಮತ್ತು detailed sessiಮೇಲೆ events from this device, plus local-ಮೇಲೆly aggregನಲ್ಲಿe stನಲ್ಲಿistics. It does not clear a runnರಲ್ಲಿg sessiಮೇಲೆ, which keeps its ರಲ್ಲಿtentiಮೇಲೆ ಮತ್ತು the address ನ each tab it is blockರಲ್ಲಿg. Endರಲ್ಲಿg the sessiಮೇಲೆ clears the ರಲ್ಲಿtentiಮೇಲೆ ಮತ್ತು starts a cleanup thನಲ್ಲಿ clears every open website tab, ಮತ್ತು the cleanup removes every stಅಥವಾed address ಯಾವಾಗ it completes."
   },
   "options_privacy_confirm_synced_policy_title": {
-    "message": "ರಿಮೋಟ್ Sync ಡೇಟಾ ಅಳಿಸುವುದೇ?"
+    "message": "Delete remote ಸಿಂಕ್ರೊನೈಜ್ dನಲ್ಲಿa?"
   },
   "options_privacy_confirm_synced_policy_action": {
-    "message": "ರಿಮೋಟ್ Sync ಡೇಟಾ ಅಳಿಸುವಿಕೆ ದೃಢೀಕರಿಸಿ"
+    "message": "Cಮೇಲೆfirm delete remote ಸಿಂಕ್ರೊನೈಜ್ dನಲ್ಲಿa"
   },
   "options_privacy_synced_policy_deleted": {
-    "message": "ರಿಮೋಟ್ Chrome Sync ಡೇಟಾ ಅಳಿಸಲಾಗಿದೆ."
+    "message": "Remote Chrome ಸಿಂಕ್ರೊನೈಜ್ dನಲ್ಲಿa deleted."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "ಇದು Chrome Sync ನಿಂದ ರಿಮೋಟ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಬ್ಲಾಕ್ ಮತ್ತು ಅನುಮತಿ ಪಟ್ಟಿಗಳು, ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್, ಸ್ಟ್ರೀಕ್‌ಗಳು, ಮತ್ತು ಡೊಮೇನ್-ಮಟ್ಟದ ಬ್ಲಾಕ್-ಪ್ರಯತ್ನ ಒಟ್ಟು ಮೊತ್ತಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ. ಸ್ಥಳೀಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಅಂಕಿಅಂಶಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಉಳಿಯುತ್ತವೆ."
+    "message": "This permanently deletes remote settರಲ್ಲಿgs, block ಮತ್ತು allow lists, site access credit, streaks, ಮತ್ತು domaರಲ್ಲಿ-level blocked-ನಲ್ಲಿtempt aggregನಲ್ಲಿes from Chrome ಸಿಂಕ್ರೊನೈಜ್. Local settರಲ್ಲಿgs ಮತ್ತು stನಲ್ಲಿistics stay ಮೇಲೆ this device."
   },
   "options_privacy_confirm_all_title": {
-    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಅಳಿಸುವುದೇ?"
+    "message": "Delete all ಫೋಕಸ್ Lock dನಲ್ಲಿa?"
   },
   "options_privacy_confirm_all_action": {
-    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಅಳಿಸುವಿಕೆ ದೃಢೀಕರಿಸಿ"
+    "message": "Cಮೇಲೆfirm delete all ಫೋಕಸ್ Lock dನಲ್ಲಿa"
   },
   "options_privacy_all_deleted": {
-    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಅಳಿಸಲಾಗಿದೆ."
+    "message": "ಎಲ್ಲಾ Focus Lock data deleted."
   },
   "options_privacy_all_body_intro": {
-    "message": "ಇದು ಈ ಸಾಧನದಲ್ಲಿರುವ ಪ್ರತಿಯೊಂದು Focus Lock ಡೇಟಾ ಮತ್ತು Chrome Sync ನಲ್ಲಿ ಉಳಿದಿರುವ ಯಾವುದೇ Focus Lock ಪ್ರತಿಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ:"
+    "message": "This permanently deletes every piece ನ ಫೋಕಸ್ Lock dನಲ್ಲಿa ಮೇಲೆ this device ಮತ್ತು any ಫೋಕಸ್ Lock copies left ರಲ್ಲಿ Chrome ಸಿಂಕ್ರೊನೈಜ್:"
   },
   "options_privacy_all_body_outro": {
-    "message": "ಯಾವುದೇ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿಲ್ಲದಿರುವಾಗ ಮಾತ್ರ ಎಲ್ಲವನ್ನೂ ಅಳಿಸುವುದು ಲಭ್ಯ. ನಂತರ Focus Lock ಸೆಟಪ್‌ಗೆ ಹಿಂತಿರುಗುತ್ತದೆ."
+    "message": "Deletರಲ್ಲಿg everythರಲ್ಲಿg is available ಮೇಲೆly while no sessiಮೇಲೆ is runnರಲ್ಲಿg. ಫೋಕಸ್ Lock then returns ಕಿ setup."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Local histಅಥವಾy could not be deleted. Try agaರಲ್ಲಿ."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "ರಿಮೋಟ್ Chrome Sync ಡೇಟಾವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Remote Chrome ಸಿಂಕ್ರೊನೈಜ್ dನಲ್ಲಿa could not be deleted. Try agaರಲ್ಲಿ."
   },
   "options_privacy_error_all_clear": {
-    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "ಎಲ್ಲಾ Focus Lock data could not be deleted. Try again."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync ನಿನ್ನ ಇತ್ತೀಚಿನ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿನ್ನ ಸ್ಥಳೀಯ ಉಳಿತಾಯ ಸುರಕ್ಷಿತವಾಗಿದೆ."
+    "message": "Chrome ಸಿಂಕ್ರೊನೈಜ್ could not save your lನಲ್ಲಿest changes. Your local save is safe."
   },
   "options_privacy_error_request": {
-    "message": "ವಿನಂತಿಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "The request could not be completed. Try agaರಲ್ಲಿ."
   },
   "options_privacy_website_access_updated": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನವೀಕರಿಸಲಾಗಿದೆ."
+    "message": "Website access updನಲ್ಲಿed."
   },
   "options_privacy_website_access_denied": {
     "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನೀಡಲಾಗಿಲ್ಲ."
   },
   "options_privacy_error_website_access": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Website access could not be updನಲ್ಲಿed. Try agaರಲ್ಲಿ."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಸಕ್ರಿಯಗೊಂಡಿದೆ."
+    "message": "Website blockರಲ್ಲಿg enabled."
   },
   "options_privacy_error_export": {
-    "message": "ಈವೆಂಟ್ ಲಾಗ್ ಅನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+    "message": "Could not expಅಥವಾt the event log."
   },
   "options_privacy_error_export_retry": {
-    "message": "ಈವೆಂಟ್ ಲಾಗ್ ಅನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not expಅಥವಾt the event log. Try agaರಲ್ಲಿ."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "Chrome ಅನುಮತಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ Chrome permissiಮೇಲೆ settರಲ್ಲಿgs. Try agaರಲ್ಲಿ."
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "Chrome ಅನುಮತಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ತೆರೆದಿವೆ."
+    "message": "Chrome permissiಮೇಲೆ settರಲ್ಲಿgs opened."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "Chrome ಅನುಮತಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆ"
+    "message": "Open Chrome permissiಮೇಲೆ settರಲ್ಲಿgs"
   },
   "options_privacy_sync_heading": {
-    "message": "Chrome Sync"
+    "message": "Chrome ಸಿಂಕ್ರೊನೈಜ್"
   },
   "options_privacy_sync_switch_label": {
-    "message": "Chrome ಸಾಧನಗಳಾದ್ಯಂತ Focus Lock ಡೇಟಾವನ್ನು ಸಿಂಕ್ ಮಾಡು"
+    "message": "ಸಿಂಕ್ರೊನೈಜ್ ಫೋಕಸ್ Lock dನಲ್ಲಿa across Chrome devices"
   },
   "options_privacy_sync_enabled": {
-    "message": "Chrome Sync ಸಕ್ರಿಯಗೊಂಡಿದೆ."
+    "message": "Chrome ಸಿಂಕ್ರೊನೈಜ್ enabled."
   },
   "options_privacy_sync_disabled": {
-    "message": "Chrome Sync ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ."
+    "message": "Chrome ಸಿಂಕ್ರೊನೈಜ್ disabled."
   },
   "options_privacy_sync_saving": {
-    "message": "Chrome Sync ಇನ್ನೂ ನಿನ್ನ ಇತ್ತೀಚಿನ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸುತ್ತಿದೆ."
+    "message": "Chrome ಸಿಂಕ್ರೊನೈಜ್ is still savರಲ್ಲಿg your lನಲ್ಲಿest changes."
   },
   "options_privacy_sync_on": {
-    "message": "Chrome Sync ಆನ್ ಆಗಿದೆ."
+    "message": "Chrome ಸಿಂಕ್ರೊನೈಜ್ is ಮೇಲೆ."
   },
   "options_privacy_sync_off": {
-    "message": "Chrome Sync ಆಫ್ ಆಗಿದೆ."
+    "message": "Chrome ಸಿಂಕ್ರೊನೈಜ್ is ನf."
   },
   "options_privacy_sync_changes_saved": {
-    "message": "Chrome Sync ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ."
+    "message": "Chrome ಸಿಂಕ್ರೊನೈಜ್ changes saved."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "Chrome Sync ಸಕ್ರಿಯಗೊಳಿಸುವಿಕೆ ಮರುಪ್ರಯತ್ನಿಸಿ"
+    "message": "ಮರುಪ್ರಯತ್ನ enablರಲ್ಲಿg Chrome ಸಿಂಕ್ರೊನೈಜ್"
   },
   "options_privacy_retry_sync": {
-    "message": "Chrome Sync ಮರುಪ್ರಯತ್ನಿಸಿ"
+    "message": "ಮರುಪ್ರಯತ್ನ Chrome ಸಿಂಕ್ರೊನೈಜ್"
   },
   "options_privacy_scope_synced": {
-    "message": "ಸಿಂಕ್ ಆಗಿದೆ"
+    "message": "ಸಿಂಕ್ರೊನೈಜ್ed"
   },
   "options_privacy_scope_local_only": {
-    "message": "ಸ್ಥಳೀಯ ಮಾತ್ರ"
+    "message": "Local ಮೇಲೆly"
   },
   "options_privacy_developer_note": {
-    "message": "Focus Lock ಡೆವಲಪರ್‌ಗೆ ಏನೂ ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ."
+    "message": "Nothರಲ್ಲಿg is sent ಕಿ the ಫೋಕಸ್ Lock developer."
   },
   "options_privacy_local_log_heading": {
     "message": "ಸ್ಥಳೀಯ ಈವೆಂಟ್ ಲಾಗ್"
   },
   "options_privacy_local_log_detail": {
-    "message": "ವಿವರವಾದ ಸ್ಥಳೀಯ ಲಾಗ್ ಅನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡು ಅಥವಾ ಸ್ಥಳೀಯ ಬ್ರೌಸಿಂಗ್ ಮತ್ತು ಸೆಷನ್ ಇತಿಹಾಸವನ್ನು ಅಳಿಸು."
+    "message": "Expಅಥವಾt the detailed local log ಅಥವಾ delete local browsರಲ್ಲಿg ಮತ್ತು sessiಮೇಲೆ histಅಥವಾy."
   },
   "options_privacy_export_local_log": {
-    "message": "ಸ್ಥಳೀಯ ಈವೆಂಟ್ ಲಾಗ್ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಿ"
+    "message": "Expಅಥವಾt local event log"
   },
   "options_privacy_local_log_exported": {
-    "message": "ಸ್ಥಳೀಯ ಈವೆಂಟ್ ಲಾಗ್ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಆಗಿದೆ."
+    "message": "Local event log expಅಥವಾted."
   },
   "options_privacy_delete_local_history": {
-    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸಿ"
+    "message": "Delete local histಅಥವಾy"
   },
   "options_privacy_remote_data_heading": {
-    "message": "ರಿಮೋಟ್ Sync ಡೇಟಾ"
+    "message": "Remote ಸಿಂಕ್ರೊನೈಜ್ dನಲ್ಲಿa"
   },
   "options_privacy_remote_data_detail": {
-    "message": "ಈ ಸಾಧನವನ್ನು ಬದಲಾಯಿಸದೆ Chrome Sync ನಲ್ಲಿ ಉಳಿದಿರುವ Focus Lock ಪ್ರತಿಗಳನ್ನು ಅಳಿಸು."
+    "message": "Delete the ಫೋಕಸ್ Lock copies left ರಲ್ಲಿ Chrome ಸಿಂಕ್ರೊನೈಜ್ ಜೊತೆout changರಲ್ಲಿg this device."
   },
   "options_privacy_delete_remote_data": {
-    "message": "ರಿಮೋಟ್ Sync ಡೇಟಾ ಅಳಿಸಿ"
+    "message": "Delete remote ಸಿಂಕ್ರೊನೈಜ್ dನಲ್ಲಿa"
   },
   "options_privacy_all_data_heading": {
-    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ"
+    "message": "ಎಲ್ಲಾ Focus Lock data"
   },
   "options_privacy_all_data_detail": {
-    "message": "ಈ ಸಾಧನದಲ್ಲಿರುವ ಪ್ರತಿಯೊಂದು Focus Lock ದಾಖಲೆ ಮತ್ತು Chrome Sync ನಲ್ಲಿ ಉಳಿದಿರುವ ಯಾವುದೇ Focus Lock ಪ್ರತಿಗಳನ್ನು ಅಳಿಸಿ, ನಂತರ ಸೆಟಪ್‌ನಿಂದ ಮತ್ತೆ ಪ್ರಾರಂಭಿಸು. ಯಾವುದೇ ಸೆಷನ್ ಚಾಲನೆಯಲ್ಲಿಲ್ಲದಿರುವಾಗ ಮಾತ್ರ ಲಭ್ಯ."
+    "message": "Delete every ಫೋಕಸ್ Lock recಅಥವಾd ಮೇಲೆ this device ಮತ್ತು any ಫೋಕಸ್ Lock copies left ರಲ್ಲಿ Chrome ಸಿಂಕ್ರೊನೈಜ್, then start agaರಲ್ಲಿ from setup. ಲಭ್ಯ while no sessiಮೇಲೆ is runnರಲ್ಲಿg."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾ ಅಳಿಸುವಿಕೆಯನ್ನು ಪುನರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ."
+    "message": "Resumರಲ್ಲಿg deletiಮೇಲೆ ನ all ಫೋಕಸ್ Lock dನಲ್ಲಿa."
   },
   "options_privacy_retry_local_history": {
-    "message": "ಸ್ಥಳೀಯ ಇತಿಹಾಸ ಅಳಿಸುವಿಕೆ ಮರುಪ್ರಯತ್ನಿಸಿ"
+    "message": "ಮರುಪ್ರಯತ್ನ local histಅಥವಾy deletiಮೇಲೆ"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "ರಿಮೋಟ್ Sync ಅಳಿಸುವಿಕೆ ಮರುಪ್ರಯತ್ನಿಸಿ"
+    "message": "ಮರುಪ್ರಯತ್ನ remote ಸಿಂಕ್ರೊನೈಜ್ deletiಮೇಲೆ"
   },
   "options_privacy_retry_all_data": {
-    "message": "ಎಲ್ಲಾ ಡೇಟಾ ಅಳಿಸುವಿಕೆ ಮರುಪ್ರಯತ್ನಿಸಿ"
+    "message": "ಮರುಪ್ರಯತ್ನ all dನಲ್ಲಿa deletiಮೇಲೆ"
   },
   "options_error_load": {
-    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "Could not load settರಲ್ಲಿgs. Reload the page ಕಿ try agaರಲ್ಲಿ."
   },
   "options_error_retry_boot": {
-    "message": "Focus Lock ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not restart ಫೋಕಸ್ Lock. Try agaರಲ್ಲಿ."
   },
   "options_error_refresh_privacy": {
-    "message": "ಗೌಪ್ಯತಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "Could not refresh privacy settರಲ್ಲಿgs. Reload the page."
   },
   "options_error_website_blocking": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಬ್ಲಾಕಿಂಗ್ ಅನ್ನು ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not updನಲ್ಲಿe website blockರಲ್ಲಿg. Try agaರಲ್ಲಿ."
   },
   "options_error_change_sync": {
-    "message": "Chrome Sync ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not change Chrome ಸಿಂಕ್ರೊನೈಜ್. Try agaರಲ್ಲಿ."
   },
   "options_error_retry_sync": {
-    "message": "Chrome Sync ಮರುಪ್ರಯತ್ನಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not retry Chrome ಸಿಂಕ್ರೊನೈಜ್. Try agaರಲ್ಲಿ."
   },
   "options_error_save_settings": {
-    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not save settರಲ್ಲಿgs. Reload the page ಮತ್ತು try agaರಲ್ಲಿ."
   },
   "options_error_save_lists": {
-    "message": "ಪಟ್ಟಿಗಳನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not save lists. Reload the page ಮತ್ತು try agaರಲ್ಲಿ."
   }
 }

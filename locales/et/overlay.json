@@ -1,1 +1,120 @@
-{}
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "Lukustatud - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Saadaolevate töösakkide kontrollimine..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Vali avatud sakk, et jätkata oma ülesannet."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Sinu fookussessioon pole saadaval. Proovi uuesti või värskenda seda lehte."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Sinu töösaki laadimine ebaõnnestus. Proovi uuesti või värskenda seda lehte."
+  },
+  "overlay_target_reconnect": {
+    "message": "Värskenda seda lehte, et Focus Lockiga uuesti ühenduda."
+  },
+  "overlay_target_page_changed": {
+    "message": "Päringu esitanud leht on muutunud. Värskenda lehte."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lockiga ei õnnestunud ühendust saada. Proovi uuesti."
+  },
+  "overlay_picker_heading": {
+    "message": "Vali töösakk"
+  },
+  "overlay_picker_cancel": {
+    "message": "Tühista"
+  },
+  "overlay_picker_search_label": {
+    "message": "Otsi töösakke"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Otsi pealkirja või veebisaidi järgi"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Tühjenda otsing"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Värskenda sakke"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Saadaolevad töösakid"
+  },
+  "overlay_picker_finding": {
+    "message": "Saadaolevate sakkide otsimine..."
+  },
+  "overlay_picker_searching": {
+    "message": "Töösakkide otsimine..."
+  },
+  "overlay_picker_saving": {
+    "message": "Töösaki salvestamine..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Saadaolevaid töösakke pole. Ava sait, mida see seanss lubab, seejärel värskenda sakke."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Sobivaid sakke pole. Proovi teistsugust otsingut või tühjenda otsing."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Töösakkide laadimine ebaõnnestus. Proovi uuesti."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ / $COUNT$ sakk",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ / $COUNT$ sakki",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  }
+}

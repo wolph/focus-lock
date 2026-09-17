@@ -16,91 +16,103 @@
     "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
   "popup_open_settings_failed": {
-    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Try again."
+    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Try agaರಲ್ಲಿ."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load ಸೆಷ್ಟ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Reload the popup to try again. Defaults are shown."
+    "message": "Could not load session settings. Reload the popup to try again. ಪೂರ್ವನಿರ್ಧಾರಿತs are shown."
   },
   "popup_open_setup_failed": {
-    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ setup. Try again."
+    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ setup. Try agaರಲ್ಲಿ."
   },
   "popup_setup_required_heading": {
-    "message": "Finish setting up ಫೋಕಸ್ Lock"
+    "message": "Fರಲ್ಲಿish settರಲ್ಲಿg up ಫೋಕಸ್ Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose your starting lists, website access, and storage mode before starting a ಸೆಷ್ಟ."
+    "message": "Choose your startರಲ್ಲಿg lists, website access, ಮತ್ತು stಅಥವಾage mode beಸಾಕಾಂಶe startರಲ್ಲಿg a sessiಮೇಲೆ."
   },
   "popup_open_setup_button": {
     "message": "Open setup"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Could not confirm website ನಿರ್ಬಂಧing. Try again."
+    "message": "Could not cಮೇಲೆfirm website blockರಲ್ಲಿg. Try agaರಲ್ಲಿ."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not enable website ನಿರ್ಬಂಧing. Try again."
+    "message": "Could not enable website blockರಲ್ಲಿg. Try agaರಲ್ಲಿ."
   },
   "popup_blocking_off_heading": {
-    "message": "Website ನಿರ್ಬಂಧing is off"
+    "message": "Website blockರಲ್ಲಿg is ನf"
   },
   "popup_blocking_off_body": {
-    "message": "ಫೋಕಸ್ Lock cannot start a ಸೆಷ್ಟ until Chrome grants website access and ನಿರ್ಬಂಧing is enabled."
+    "message": "ಫೋಕಸ್ Lock cannot start a sessiಮೇಲೆ until Chrome grants website access ಮತ್ತು blockರಲ್ಲಿg is enabled."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant website access. Website ನಿರ್ಬಂಧing is still off."
+    "message": "Chrome did not grant website access. Website blockರಲ್ಲಿg is still ನf."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but ಫೋಕಸ್ Lock could not enable ನಿರ್ಬಂಧing. ಮರುಪ್ರಯತ್ನ setup or reload the extension."
+    "message": "Website access is granted, but ಫೋಕಸ್ Lock could not enable blockರಲ್ಲಿg. ಮರುಪ್ರಯತ್ನ setup ಅಥವಾ reload the extensiಮೇಲೆ."
   },
   "popup_enable_blocking_button": {
-    "message": "Enable website ನಿರ್ಬಂಧing"
+    "message": "Enable website blockರಲ್ಲಿg"
   },
   "popup_retry_button": {
     "message": "ಮರುಪ್ರಯತ್ನ"
   },
   "popup_notice_access_revoked": {
-    "message": "Your ಸೆಷ್ಟ ended because website access was removed."
+    "message": "Your sessiಮೇಲೆ ended because website access was removed."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your ಸೆಷ್ಟ ended because ಫೋಕಸ್ Lock could not enable website ನಿರ್ಬಂಧing."
+    "message": "Your sessiಮೇಲೆ ended because ಫೋಕಸ್ Lock could not enable website blockರಲ್ಲಿg."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "Could not dismiss this notice. Try agaರಲ್ಲಿ."
   },
   "popup_dismiss_button": {
     "message": "Dismiss"
   },
   "popup_restart_failed": {
-    "message": "Could not restart ಫೋಕಸ್ Lock. Try again."
+    "message": "Could not restart ಫೋಕಸ್ Lock. Try agaರಲ್ಲಿ."
   },
   "popup_boot_failed_heading": {
     "message": "ಫೋಕಸ್ Lock could not start"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "The reasಮೇಲೆ could not be read."
   },
   "popup_reset_runtime_button": {
     "message": "Reset local runtime"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your ಸೆಟ್ಟಿಂಗ್‌ಗಳು, lists, and statistics. Clears the current ಸೆಷ್ಟ state."
+    "message": "Keeps your settರಲ್ಲಿgs, lists, ಮತ್ತು stನಲ್ಲಿistics. Clears the current sessiಮೇಲೆ stನಲ್ಲಿe."
+  },
+  "popup_delete_all_confirm_button": {
+    "message": "Delete everythರಲ್ಲಿg ಮತ್ತು start over"
   },
   "popup_keep_data_button": {
-    "message": "Keep my data"
+    "message": "Keep my dನಲ್ಲಿa"
   },
   "popup_delete_all_button": {
-    "message": "Delete all ಫೋಕಸ್ Lock data"
+    "message": "Delete all ಫೋಕಸ್ Lock dನಲ್ಲಿa"
   },
   "popup_setup_status_unavailable": {
-    "message": "Setup status unavailable. Reload ಫೋಕಸ್ Lock to try again."
+    "message": "Setup stನಲ್ಲಿus unavailable. Reload ಫೋಕಸ್ Lock ಕಿ try agaರಲ್ಲಿ."
   },
   "popup_snapshot_unavailable": {
-    "message": "ಫೋಕಸ್ status unavailable"
+    "message": "ಫೋಕಸ್ stನಲ್ಲಿus unavailable"
   },
   "popup_action_in_progress": {
-    "message": "Action in progress"
+    "message": "ಕ್ರಿಯೆ ರಲ್ಲಿ progress"
   },
   "popup_active_site_checking": {
     "message": "ಪರೀಕ್ಷೆ the active site"
+  },
+  "popup_active_site_unsupported": {
+    "message": "Open a regular website ಕಿ unlock it"
   },
   "popup_resume_now": {
     "message": "ಸುಳ್ಳು ಪ್ರಸ್ತಾಪಿಸಿ now"
   },
   "popup_start_next_focus_early": {
-    "message": "ಪ್ರಾರಂಭಿಸಿ next ಫೋಕಸ್ early"
+    "message": "ಪ್ರಾರಂಭಿಸಿ next focus early"
   },
   "popup_unlock_this_site": {
     "message": "ಅನ್‌ಲಾಕ್ this site"
@@ -109,22 +121,22 @@
     "message": "ಅನ್‌ಲಾಕ್ all sites"
   },
   "popup_choose_work_tab_button": {
-    "message": "Choose work tab"
+    "message": "Choose wಅಥವಾk tab"
   },
   "popup_change_work_tab_button": {
-    "message": "ಬದಲಾವಣೆ work tab"
+    "message": "ಬದಲಾವಣೆ wಅಥವಾk tab"
   },
   "popup_session_actions_summary": {
-    "message": "ಸೆಷ್ಟ actions"
+    "message": "ಸೆಷ್ಟ actiಮೇಲೆs"
   },
   "popup_add_allowed_domain_label": {
-    "message": "Add an allowed domain"
+    "message": "Add an allowed domaರಲ್ಲಿ"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Add allowed domain"
+    "message": "Add allowed domaರಲ್ಲಿ"
   },
   "popup_add_button": {
     "message": "Add"
@@ -139,7 +151,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ ನಿರ್ಬಂಧed categories, $RULES$ extra rules.",
+    "message": "$CATEGORIES$ blocked cನಲ್ಲಿegಅಥವಾies, $RULES$ extra rules.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -152,25 +164,40 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "ಕಠಿಣ lock. Cannot end early."
+    "message": "ಹಾರ್ಡ ಲಾಕ್. Cannot end early."
   },
   "popup_draft_stop_flexible": {
-    "message": "Can end at any time."
+    "message": "Can end ನಲ್ಲಿ any time."
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "End after a $SECONDS$s wait ಮತ್ತು cಮೇಲೆfirmನಲ್ಲಿiಮೇಲೆ phrase.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
   },
   "popup_session_length_label": {
     "message": "ಸೆಷ್ಟ length"
   },
   "popup_custom_minutes_label": {
-    "message": "Custom minutes"
+    "message": "Cusಕಿm mರಲ್ಲಿutes"
   },
   "popup_custom_minutes_placeholder": {
-    "message": "min"
+    "message": "mರಲ್ಲಿ"
+  },
+  "popup_gate_force_end": {
+    "message": "Ignಅಥವಾe timeout ಮತ್ತು end anyway"
   },
   "popup_gate_keep_focusing": {
-    "message": "Keep ಫೋಕಸ್ing"
+    "message": "Keep focusರಲ್ಲಿg"
   },
   "popup_gate_phrase_label": {
     "message": "ಪ್ರಕಾರ:"
+  },
+  "popup_gate_update_failed": {
+    "message": "Could not updನಲ್ಲಿe the gನಲ್ಲಿe. Try agaರಲ್ಲಿ."
   },
   "popup_gate_intention": {
     "message": "You said: $INTENTION$",
@@ -182,10 +209,10 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "A moment to decide:"
+    "message": "A moment ಕಿ decide:"
   },
   "popup_gate_wait_remaining": {
-    "message": "of $TOTAL$ s",
+    "message": "ನ $TOTAL$ s",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -194,22 +221,62 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Back to work"
+    "message": "Back ಕಿ wಅಥವಾk"
   },
   "popup_destination_unavailable": {
-    "message": "Destination unavailable"
+    "message": "Destರಲ್ಲಿನಲ್ಲಿiಮೇಲೆ unavailable"
+  },
+  "popup_back_to_work_name": {
+    "message": "Back ಕಿ wಅಥವಾk: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "Back ಕಿ wಅಥವಾk: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
   },
   "popup_categories_locked": {
-    "message": "Category editing is disabled until ನಿರ್ಬಂಧed-site lists reload."
+    "message": "ವರ್ಗ editರಲ್ಲಿg is disabled until blocked-site lists reload."
   },
   "popup_blocked_categories_heading": {
-    "message": "ನಿರ್ಬಂಧed categories"
+    "message": "ನಿರ್ಬಂಧಿತ cನಲ್ಲಿegಅಥವಾies"
+  },
+  "popup_show_full_domain": {
+    "message": "Show full domaರಲ್ಲಿ: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "Show full regular expressiಮೇಲೆ: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
   },
   "popup_rule_kind_domain": {
-    "message": "Domain"
+    "message": "Domaರಲ್ಲಿ"
   },
   "popup_rule_kind_regex": {
-    "message": "Regular expression"
+    "message": "Regular expressiಮೇಲೆ"
   },
   "popup_category_sites_label": {
     "message": "$CATEGORY$ sites",
@@ -239,7 +306,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "and $COUNT$ more site",
+    "message": "ಮತ್ತು $COUNT$ mಅಥವಾe site",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -248,7 +315,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "and $COUNT$ more sites",
+    "message": "ಮತ್ತು $COUNT$ mಅಥವಾe sites",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -257,7 +324,7 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Allowed exceptions"
+    "message": "ಎಲ್ಲಾowed exceptions"
   },
   "popup_extra_blocked_heading": {
     "message": "Extra ನಿರ್ಬಂಧed rules"
@@ -266,16 +333,29 @@
     "message": "No extra ನಿರ್ಬಂಧed rules."
   },
   "popup_allowed_heading": {
-    "message": "Allowed sites and rules"
+    "message": "ಎಲ್ಲಾowed sites and rules"
   },
   "popup_no_allowed_sites": {
     "message": "No sites are allowed yet."
   },
   "popup_what_will_be_blocked": {
-    "message": "What will be ನಿರ್ಬಂಧed"
+    "message": "Whನಲ್ಲಿ will be blocked"
   },
   "popup_what_will_be_allowed": {
-    "message": "What will be allowed"
+    "message": "Whನಲ್ಲಿ will be allowed"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ ನ $TOTAL$ cನಲ್ಲಿegಅಥವಾies selected",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
   },
   "popup_extra_blocked_rules_one": {
     "message": "$COUNT$ extra ನಿರ್ಬಂಧed rule",
@@ -314,13 +394,13 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Allowed-site and rule changes here apply only to this ಸೆಷ್ಟ. Everything else is ನಿರ್ಬಂಧed."
+    "message": "ಎಲ್ಲಾowed-site and rule changes here apply only to this session. ಪ್ರತಿthing else is blocked."
   },
   "popup_scope_blacklist": {
-    "message": "Category and rule changes here apply only to this ಸೆಷ್ಟ."
+    "message": "ವರ್ಗ ಮತ್ತು rule changes here apply ಮೇಲೆly ಕಿ this sessiಮೇಲೆ."
   },
   "popup_open_settings_defaults": {
-    "message": "Open ಸೆಟ್ಟಿಂಗ್‌ಗಳು for permanent defaults"
+    "message": "Open ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಸಾಕಾಂಶ permanent defaults"
   },
   "popup_rule_details_label": {
     "message": "ಸೆಷ್ಟ rule details"
@@ -335,28 +415,52 @@
     "message": "ರಕ್ಷಣೆ"
   },
   "popup_session_type_hard": {
-    "message": "ಕಠಿಣ lock"
+    "message": "ಹಾರ್ಡ ಲಾಕ್"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the ಸೆಷ್ಟ immediately whenever you choose."
+    "message": "End the sessiಮೇಲೆ immediನಲ್ಲಿely ಯಾವಾಗever you choose."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "Endರಲ್ಲಿg early requires $WAIT$. No typರಲ್ಲಿg is required.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "Endರಲ್ಲಿg early requires $WAIT$ ಮತ್ತು typed cಮೇಲೆfirmನಲ್ಲಿiಮೇಲೆ.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
   },
   "popup_session_type_hard_hint": {
-    "message": "The ಸೆಷ್ಟ cannot end early. Site access credit still works."
+    "message": "The sessiಮೇಲೆ cannot end early. ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ still wಅಥವಾks."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected categories and extra rules are ನಿರ್ಬಂಧed. Other sites remain available."
+    "message": "The selected cನಲ್ಲಿegಅಥವಾies ಮತ್ತು extra rules are blocked. Other sites remaರಲ್ಲಿ available."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. Every other website is ನಿರ್ಬಂಧed."
+    "message": "Only the listed sites are available. ಪ್ರತಿ other website is blocked."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a ಸೆಷ್ಟ length greater than zero minutes."
+    "message": "Enter a sessiಮೇಲೆ length greನಲ್ಲಿer than zero mರಲ್ಲಿutes."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "ಪೂರ್ವನಿರ್ಧಾರಿತs changed, but current lists could not be loaded. Reload the popup."
   },
   "popup_no_work_tab_option": {
-    "message": "No work tab (optional)"
+    "message": "No wಅಥವಾk tab (optiಮೇಲೆal)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "ಆರಿಸಿed tab unavailable - choose another"
   },
   "popup_cycles_label": {
-    "message": "ಚಕ್ರs: $FOCUS$ min ಫೋಕಸ್, $SHORT_BREAK$ min break, $LONG_BREAK$ min long break every $LONG_EVERY$th",
+    "message": "ಚಕ್ರs: $FOCUS$ mರಲ್ಲಿ focus, $SHORT_BREAK$ mರಲ್ಲಿ break, $LONG_BREAK$ mರಲ್ಲಿ lಮೇಲೆg break every $LONG_EVERY$th",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -380,10 +484,10 @@
     "message": "ಉದ್ದೇಶ"
   },
   "popup_intention_placeholder": {
-    "message": "What are you working on?"
+    "message": "Whನಲ್ಲಿ are you wಅಥವಾkರಲ್ಲಿg ಮೇಲೆ?"
   },
   "popup_work_tab_named": {
-    "message": "Work tab: $TITLE$",
+    "message": "Wಅಥವಾk tab: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -395,13 +499,13 @@
     "message": "ಬದಲಾವಣೆ"
   },
   "popup_session_settings_summary": {
-    "message": "ಸೆಷ್ಟ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+    "message": "ಸೆಷ್ಟ settರಲ್ಲಿgs"
   },
   "popup_choose_work_tab_label": {
-    "message": "Choose a work tab"
+    "message": "Choose a wಅಥವಾk tab"
   },
   "popup_work_tab_select_label": {
-    "message": "Work tab"
+    "message": "Wಅಥವಾk tab"
   },
   "popup_work_tab_current_option": {
     "message": "$TITLE$ (Current)",
@@ -413,13 +517,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "ನಿರ್ಬಂಧing mode"
+    "message": "ನಿರ್ಬಂಧ mode"
   },
   "popup_invalid_time_label": {
-    "message": "invalid time"
+    "message": "ರಲ್ಲಿvalid time"
   },
   "popup_start_focus_label": {
-    "message": "ಪ್ರಾರಂಭಿಸಿ $DURATION$ ಫೋಕಸ್",
+    "message": "ಪ್ರಾರಂಭಿಸಿ $DURATION$ focus",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -427,14 +531,35 @@
       }
     }
   },
+  "popup_invalid_domain_error": {
+    "message": "Enter a valid domaರಲ್ಲಿ such as docs.example.com."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "Could not load wಅಥವಾk tabs. Reopen the popup ಕಿ try agaರಲ್ಲಿ."
+  },
   "popup_use_this_tab": {
     "message": "Use this tab"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "This tab is not available ಸಾಕಾಂಶ wಅಥವಾk. Choose another open tab."
   },
   "popup_checking_current_tab": {
     "message": "ಪರೀಕ್ಷೆ current tab..."
   },
+  "popup_finding_current_tab": {
+    "message": "Fರಲ್ಲಿdರಲ್ಲಿg your current tab..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "Could not load your current tab. Try agaರಲ್ಲಿ."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "Choose ಅಥವಾ replace your wಅಥವಾk tab."
+  },
   "popup_saving_work_tab": {
-    "message": "Saving work tab..."
+    "message": "Savರಲ್ಲಿg wಅಥವಾk tab..."
+  },
+  "popup_save_work_tab_failed": {
+    "message": "Could not save the wಅಥವಾk tab. Try agaರಲ್ಲಿ."
   },
   "popup_choose_open_tab_option": {
     "message": "Choose an open tab"
@@ -443,6 +568,6 @@
     "message": "Or choose another tab"
   },
   "popup_start_failed": {
-    "message": "Could not start ಸೆಷ್ಟ. Try again."
+    "message": "Could not start sessiಮೇಲೆ. Try agaರಲ್ಲಿ."
   }
 }

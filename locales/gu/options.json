@@ -1,1 +1,591 @@
-{}
+{
+  "options_page_title": {
+    "message": "Focus Lock options"
+  },
+  "options_heading": {
+    "message": "Focus Lock સેટિંગ્સ"
+  },
+  "options_loading_settings": {
+    "message": "Loading સેટિંગ્સ"
+  },
+  "options_privacy_loading": {
+    "message": "Loading privacy સેટિંગ્સ"
+  },
+  "options_save_failed": {
+    "message": "Could not સાચવો. Try again."
+  },
+  "options_blocking_heading": {
+    "message": "Blocking"
+  },
+  "options_blocking_help": {
+    "message": "Custom rules બ્લોક during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories બ્લોક common time sinks."
+  },
+  "options_custom_blacklist_title": {
+    "message": "Custom blacklist"
+  },
+  "options_whitelist_title": {
+    "message": "Whitelist"
+  },
+  "options_bundled_categories_heading": {
+    "message": "Bundled categories"
+  },
+  "options_schedule_heading": {
+    "message": "Schedule"
+  },
+  "options_schedule_help": {
+    "message": "Sessions શરુ on their own inside these windows. Strictness set here applies for the whole window."
+  },
+  "options_behavior_heading": {
+    "message": "સેશન behavior"
+  },
+  "options_budget_heading": {
+    "message": "Site access credit"
+  },
+  "options_notifications_heading": {
+    "message": "Notifications"
+  },
+  "options_privacy_heading": {
+    "message": "Privacy and data"
+  },
+  "options_load_error_retry": {
+    "message": "Retry"
+  },
+  "options_load_error_delete_all": {
+    "message": "કાઢી નાખો everything and શરુ over"
+  },
+  "options_load_error_keep_data": {
+    "message": "Keep my data"
+  },
+  "options_delete_all_data": {
+    "message": "કાઢી નાખો all Focus Lock data"
+  },
+  "options_dirty_saving": {
+    "message": "Saving changes"
+  },
+  "options_dirty_unsaved": {
+    "message": "Unsaved changes"
+  },
+  "options_dirty_clean": {
+    "message": "No unsaved changes"
+  },
+  "options_dirty_discard": {
+    "message": "Discard changes"
+  },
+  "options_dirty_save": {
+    "message": "સાચવો changes"
+  },
+  "options_session_status_label": {
+    "message": "સેશન status"
+  },
+  "options_rule_kind_host_badge": {
+    "message": "domain"
+  },
+  "options_rule_kind_regex_badge": {
+    "message": "regex"
+  },
+  "options_rule_remove": {
+    "message": "Remove"
+  },
+  "options_rule_remove_aria": {
+    "message": "Remove $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
+  },
+  "options_rules_empty": {
+    "message": "No rules yet."
+  },
+  "options_rule_kind_aria": {
+    "message": "Rule kind"
+  },
+  "options_rule_kind_host_option": {
+    "message": "domain or subdomain"
+  },
+  "options_rule_kind_regex_option": {
+    "message": "regex (full URL)"
+  },
+  "options_rule_pattern_aria": {
+    "message": "Pattern"
+  },
+  "options_rule_pattern_placeholder_host": {
+    "message": "facebook.com"
+  },
+  "options_rule_pattern_placeholder_regex": {
+    "message": "/youtube\\.com\\/shorts/"
+  },
+  "options_rule_add": {
+    "message": "ઉમેરો rule"
+  },
+  "options_session_defaults_heading": {
+    "message": "સેશન defaults"
+  },
+  "options_session_defaults_help": {
+    "message": "Mode and strictness are fixed when a સેશન starts. These are the values the શરુ form opens with."
+  },
+  "options_preset_short_label": {
+    "message": "Short સેશન preset (minutes)"
+  },
+  "options_preset_default_label": {
+    "message": "Default સેશન preset (minutes)"
+  },
+  "options_preset_deep_label": {
+    "message": "Deep સેશન preset (minutes)"
+  },
+  "options_mode_blacklist_label": {
+    "message": "Blacklist: બ્લોક listed sites"
+  },
+  "options_strictness_flexible_label": {
+    "message": "Flexible: end the સેશન whenever you choose"
+  },
+  "options_cycle_heading": {
+    "message": "Focus and break cycle"
+  },
+  "options_focus_minutes_label": {
+    "message": "Focus minutes"
+  },
+  "options_short_break_minutes_label": {
+    "message": "Short break minutes"
+  },
+  "options_long_break_minutes_label": {
+    "message": "Long break minutes"
+  },
+  "options_gate_heading": {
+    "message": "Deliberation gate"
+  },
+  "options_gate_wait_one": {
+    "message": "Wait $COUNT$ second",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_gate_wait_other": {
+    "message": "Wait $COUNT$ seconds",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "options_gate_wait_custom": {
+    "message": "Custom"
+  },
+  "options_custom_delay_label": {
+    "message": "Custom delay (seconds)"
+  },
+  "options_gate_force_end_label": {
+    "message": "સક્ષમ \"Ignore timeout and end anyway\" button"
+  },
+  "options_streak_heading": {
+    "message": "Streak and retention"
+  },
+  "options_streak_help": {
+    "message": "The streak counts દિવસો that reach the goal. One default સેશન keeps the chain alive, and a freeze token repairs a missed day."
+  },
+  "options_freeze_interval_label": {
+    "message": "Freeze token interval (દિવસો)"
+  },
+  "options_retention_label": {
+    "message": "Keep daily stats (દિવસો)"
+  },
+  "options_category_on_announcement": {
+    "message": "$CATEGORY$ category on.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_off_announcement": {
+    "message": "$CATEGORY$ category off.",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_all_categories_on_announcement": {
+    "message": "All categories on."
+  },
+  "options_all_categories_off_announcement": {
+    "message": "All categories off."
+  },
+  "options_host_included_announcement": {
+    "message": "$HOST$ included.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_host_kept_available_announcement": {
+    "message": "$HOST$ kept available.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "options_category_bulk_actions_aria": {
+    "message": "Category bulk actions"
+  },
+  "options_selected_count": {
+    "message": "Selected $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "options_deselected_count": {
+    "message": "Deselected $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "options_select_all": {
+    "message": "Select all"
+  },
+  "options_deselect_all": {
+    "message": "Deselect all"
+  },
+  "options_select_all_categories_aria": {
+    "message": "Select all categories"
+  },
+  "options_deselect_all_categories_aria": {
+    "message": "Deselect all categories"
+  },
+  "options_show_category_sites": {
+    "message": "Show $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_hide_category_sites": {
+    "message": "Hide $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_category_sites_included_one": {
+    "message": "$COUNT$ site included",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "options_category_sites_included_other": {
+    "message": "$COUNT$ sites included",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "options_category_off": {
+    "message": "Category off"
+  },
+  "options_category_uncheck_help": {
+    "message": "Uncheck a site to keep it available while the rest of the category is બ્લોક્ડ."
+  },
+  "options_category_sites_region_aria": {
+    "message": "$CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
+  },
+  "options_day_sun": {
+    "message": "Sun"
+  },
+  "options_day_mon": {
+    "message": "Mon"
+  },
+  "options_day_tue": {
+    "message": "Tue"
+  },
+  "options_day_wed": {
+    "message": "Wed"
+  },
+  "options_day_thu": {
+    "message": "Thu"
+  },
+  "options_day_fri": {
+    "message": "Fri"
+  },
+  "options_day_sat": {
+    "message": "Sat"
+  },
+  "options_schedule_cycles_label": {
+    "message": "Cycle focus and breaks"
+  },
+  "options_schedule_session_type_aria": {
+    "message": "સેશન type"
+  },
+  "options_schedule_entry_legend": {
+    "message": "Schedule entry"
+  },
+  "options_schedule_start_label": {
+    "message": "શરુ"
+  },
+  "options_schedule_end_label": {
+    "message": "End"
+  },
+  "options_schedule_duration_legend": {
+    "message": "Duration"
+  },
+  "options_schedule_intention_label": {
+    "message": "Intention"
+  },
+  "options_schedule_intention_placeholder": {
+    "message": "what this time is for"
+  },
+  "options_schedule_save_entry": {
+    "message": "સાચવો entry"
+  },
+  "options_cancel": {
+    "message": "રદ કરો"
+  },
+  "options_schedule_selected_days_aria": {
+    "message": "Selected દિવસો"
+  },
+  "options_schedule_time_range": {
+    "message": "$START$ to $END$",
+    "placeholders": {
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
+    }
+  },
+  "options_schedule_mode_blacklist": {
+    "message": "blacklist"
+  },
+  "options_schedule_mode_whitelist": {
+    "message": "whitelist"
+  },
+  "options_schedule_strictness_flexible": {
+    "message": "flexible"
+  },
+  "options_schedule_strictness_friction": {
+    "message": "friction"
+  },
+  "options_schedule_strictness_hard": {
+    "message": "hard"
+  },
+  "options_schedule_enabled_label": {
+    "message": "Enabled"
+  },
+  "options_schedule_edit": {
+    "message": "Edit"
+  },
+  "options_schedule_delete": {
+    "message": "કાઢી નાખો"
+  },
+  "options_schedule_add": {
+    "message": "ઉમેરો schedule entry"
+  },
+  "options_sounds_heading": {
+    "message": "Sounds"
+  },
+  "options_master_volume": {
+    "message": "Master volume"
+  },
+  "options_sound_session_complete": {
+    "message": "સેશન complete"
+  },
+  "options_sound_break_start": {
+    "message": "Break શરુ"
+  },
+  "options_sound_break_end": {
+    "message": "Break end"
+  },
+  "options_sound_schedule_start": {
+    "message": "Schedule auto-શરુ"
+  },
+  "options_sound_preview_aria": {
+    "message": "Preview $SOUND$",
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
+  },
+  "options_sound_play": {
+    "message": "Play"
+  },
+  "options_sounds_notifications_heading": {
+    "message": "Notifications"
+  },
+  "options_session_complete_notification": {
+    "message": "Show a system notification when a સેશન completes"
+  },
+  "options_badge_heading": {
+    "message": "Badge"
+  },
+  "options_privacy_website_access_heading": {
+    "message": "Website access"
+  },
+  "options_privacy_website_off_title": {
+    "message": "Website access is off"
+  },
+  "options_privacy_website_off_detail": {
+    "message": "Focus Lock cannot બ્લોક websites until you grant access."
+  },
+  "options_privacy_website_enable_action": {
+    "message": "સક્ષમ website blocking"
+  },
+  "options_privacy_website_retry_action": {
+    "message": "Retry website blocking"
+  },
+  "options_privacy_confirm_local_history_title": {
+    "message": "કાઢી નાખો local history?"
+  },
+  "options_privacy_confirm_local_history_action": {
+    "message": "Confirm કાઢી નાખો local history"
+  },
+  "options_privacy_local_history_deleted": {
+    "message": "Local history deleted."
+  },
+  "options_privacy_confirm_local_history_body": {
+    "message": "This permanently deletes full URLs, focus intentions, and detailed સેશન events from this device. It does not clear a running સેશન, which keeps its intention and the address of each tab it is blocking. Ending the સેશન clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+  },
+  "options_privacy_confirm_local_history_body_aggregates": {
+    "message": "This permanently deletes full URLs, focus intentions, and detailed સેશન events from this device, plus local-only aggregate statistics. It does not clear a running સેશન, which keeps its intention and the address of each tab it is blocking. Ending the સેશન clears the intention and starts a cleanup that clears every open website tab, and the cleanup removes every stored address when it completes."
+  },
+  "options_privacy_confirm_synced_policy_title": {
+    "message": "કાઢી નાખો remote Sync data?"
+  },
+  "options_privacy_confirm_synced_policy_action": {
+    "message": "Confirm કાઢી નાખો remote Sync data"
+  },
+  "options_privacy_confirm_synced_policy_body": {
+    "message": "This permanently deletes remote સેટિંગ્સ, બ્લોક and allow lists, site access credit, streaks, and domain-level બ્લોક્ડ-attempt aggregates from Chrome Sync. Local સેટિંગ્સ and statistics stay on this device."
+  },
+  "options_privacy_confirm_all_title": {
+    "message": "કાઢી નાખો all Focus Lock data?"
+  },
+  "options_privacy_confirm_all_action": {
+    "message": "Confirm કાઢી નાખો all Focus Lock data"
+  },
+  "options_privacy_all_body_outro": {
+    "message": "Deleting everything is available only while no સેશન is running. Focus Lock then returns to setup."
+  },
+  "options_privacy_error_sync_write": {
+    "message": "Chrome Sync could not સાચવો your latest changes. Your local સાચવો is safe."
+  },
+  "options_privacy_website_access_updated": {
+    "message": "Website access updated."
+  },
+  "options_privacy_website_blocking_enabled": {
+    "message": "Website blocking enabled."
+  },
+  "options_privacy_error_open_chrome_settings": {
+    "message": "Could not open Chrome permission સેટિંગ્સ. Try again."
+  },
+  "options_privacy_chrome_settings_opened": {
+    "message": "Chrome permission સેટિંગ્સ opened."
+  },
+  "options_privacy_open_chrome_settings": {
+    "message": "Open Chrome permission સેટિંગ્સ"
+  },
+  "options_privacy_sync_heading": {
+    "message": "Chrome Sync"
+  },
+  "options_privacy_sync_enabled": {
+    "message": "Chrome Sync enabled."
+  },
+  "options_privacy_sync_disabled": {
+    "message": "Chrome Sync disabled."
+  },
+  "options_privacy_sync_on": {
+    "message": "Chrome Sync is on."
+  },
+  "options_privacy_sync_off": {
+    "message": "Chrome Sync is off."
+  },
+  "options_privacy_retry_sync": {
+    "message": "Retry Chrome Sync"
+  },
+  "options_privacy_scope_synced": {
+    "message": "Synced"
+  },
+  "options_privacy_scope_local_only": {
+    "message": "Local only"
+  },
+  "options_privacy_local_log_heading": {
+    "message": "Local event log"
+  },
+  "options_privacy_local_log_detail": {
+    "message": "Export the detailed local log or કાઢી નાખો local browsing and સેશન history."
+  },
+  "options_privacy_export_local_log": {
+    "message": "Export local event log"
+  },
+  "options_privacy_local_log_exported": {
+    "message": "Local event log exported."
+  },
+  "options_privacy_delete_local_history": {
+    "message": "કાઢી નાખો local history"
+  },
+  "options_privacy_remote_data_heading": {
+    "message": "Remote Sync data"
+  },
+  "options_privacy_remote_data_detail": {
+    "message": "કાઢી નાખો the Focus Lock copies left in Chrome Sync without changing this device."
+  },
+  "options_privacy_delete_remote_data": {
+    "message": "કાઢી નાખો remote Sync data"
+  },
+  "options_privacy_all_data_heading": {
+    "message": "All Focus Lock data"
+  },
+  "options_privacy_all_data_detail": {
+    "message": "કાઢી નાખો every Focus Lock record on this device and any Focus Lock copies left in Chrome Sync, then શરુ again from setup. Available while no સેશન is running."
+  },
+  "options_privacy_retry_all_data": {
+    "message": "Retry all data deletion"
+  },
+  "options_error_load": {
+    "message": "Could not load સેટિંગ્સ. Reload the page to try again."
+  },
+  "options_error_refresh_privacy": {
+    "message": "Could not refresh privacy સેટિંગ્સ. Reload the page."
+  },
+  "options_error_save_settings": {
+    "message": "Could not સાચવો સેટિંગ્સ. Reload the page and try again."
+  },
+  "options_error_save_lists": {
+    "message": "Could not સાચવો lists. Reload the page and try again."
+  }
+}

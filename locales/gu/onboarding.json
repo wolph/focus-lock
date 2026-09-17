@@ -1,1 +1,126 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Set up Focus Lock"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock setup"
+  },
+  "onboarding_progress": {
+    "message": "Step $STEP$ of $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_complete_heading": {
+    "message": "Setup complete"
+  },
+  "onboarding_complete_body": {
+    "message": "Your choices are saved. Open Focus Lock from the Chrome toolbar to શરુ a સેશન."
+  },
+  "onboarding_error_heading": {
+    "message": "Setup unavailable"
+  },
+  "onboarding_retry_button": {
+    "message": "Retry"
+  },
+  "onboarding_save_error": {
+    "message": "Could not સાચવો setup progress. Try again."
+  },
+  "onboarding_enable_error": {
+    "message": "Could not સક્ષમ website blocking. Try again."
+  },
+  "onboarding_lists_heading": {
+    "message": "Choose your starting બ્લોક list"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "In $MODE$, enabled categories and extra બ્લોક્ડ sites are unavailable.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ site",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ sites",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Show $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Hide $CATEGORY$ sites",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ domains",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Continue"
+  },
+  "onboarding_access_heading": {
+    "message": "સક્ષમ website blocking"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock checks page addresses locally so it can match your selected categories and sites. It uses website access to show its blocking screen and restore affected pages when your સેશન ends."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Website access is granted, but Focus Lock could not સક્ષમ blocking. Retry setup or reload the extension."
+  },
+  "onboarding_access_enable_button": {
+    "message": "સક્ષમ website blocking"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Not now"
+  },
+  "onboarding_sync_heading": {
+    "message": "Choose where your સેટિંગ્સ are stored"
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Synced"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Local only"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Finish setup without sync"
+  }
+}

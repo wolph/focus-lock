@@ -1,1 +1,134 @@
-{}
+{
+  "notify_session_complete_title": {
+    "message": "Koncentrēšanās sesija pabeigta"
+  },
+  "notify_session_complete_body": {
+    "message": "Tava koncentrēšanās sesija ir beigusies."
+  },
+  "notify_schedule_window_body": {
+    "message": "Bloķēts līdz $END$.",
+    "placeholders": {
+      "END": {
+        "content": "$1",
+        "example": "17:30"
+      }
+    }
+  },
+  "notify_schedule_unavailable_title": {
+    "message": "Grafika sesiju neizdevās sākt"
+  },
+  "notify_schedule_unavailable_body": {
+    "message": "Vietņu bloķēšana nav ieslēgta. Pabeidz uzstādīšanu vai piešķir vietņu piekļuvi un mēģini vēlreiz."
+  },
+  "notify_setup_completed_elsewhere": {
+    "message": "Uzstādīšana tika pabeigta citā cilnē."
+  },
+  "notify_setup_changed_reloaded": {
+    "message": "Uzstādīšana mainījās citā cilnē. Jaunākās izvēles tika ielādētas no jauna."
+  },
+  "notify_setup_changed_reload_before_finishing": {
+    "message": "Uzstādīšana mainījās citā cilnē. Pirms pabeigšanas pārlādē to."
+  },
+  "notify_setup_not_complete": {
+    "message": "Uzstādīšana nav pabeigta."
+  },
+  "notify_setup_not_ready_to_finish": {
+    "message": "Uzstādīšanu vēl nevar pabeigt."
+  },
+  "notify_setup_storage_choice_changed": {
+    "message": "Uzstādīšanas glabāšanas izvēle mainījās. Pirms pabeigšanas pārlādē uzstādīšanu."
+  },
+  "notify_onboarding_storage_failed": {
+    "message": "Uzstādīšanas glabāšanas darbība neizdevās."
+  },
+  "notify_onboarding_operation_failed": {
+    "message": "Uzstādīšanas darbība neizdevās."
+  },
+  "notify_website_access_check_failed": {
+    "message": "Focus Lock neizdevās pārbaudīt vietņu piekļuvi. Atkārto uzstādīšanu vai pārlādē paplašinājumu."
+  },
+  "notify_website_access_granted_blocking_failed": {
+    "message": "Vietņu piekļuve ir piešķirta, bet Focus Lock neizdevās ieslēgt bloķēšanu. Atkārto uzstādīšanu vai pārlādē paplašinājumu."
+  },
+  "notify_website_access_unavailable_cleanup_failed": {
+    "message": "Vietņu piekļuve nav pieejama, un Focus Lock neizdevās pabeigt bloķēšanas sakārtošanu. Atkārto uzstādīšanu vai pārlādē paplašinājumu."
+  },
+  "notify_website_access_inconsistent": {
+    "message": "Focus Lock saņēma pretrunīgu vietņu piekļuves stāvokli. Atkārto uzstādīšanu vai pārlādē paplašinājumu."
+  },
+  "notify_boot_not_finished": {
+    "message": "Focus Lock nepabeidza startēšanu: $REASON$",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "storage is unavailable"
+      }
+    }
+  },
+  "notify_unknown_error": {
+    "message": "nezināma kļūda"
+  },
+  "notify_nothing_to_reset": {
+    "message": "Focus Lock darbojas, nav ko atiestatīt"
+  },
+  "notify_runtime_committed_in_generation": {
+    "message": "Focus Lock nevar atiestatīt stāvokli, kas vēl ir ierakstīts iestatījumu paaudzē"
+  },
+  "notify_data_clear_retry_unavailable": {
+    "message": "Datu dzēšanu nav ko atkārtot."
+  },
+  "notify_disable_sync_before_delete": {
+    "message": "Pirms sinhronizēto datu dzēšanas izslēdz sinhronizāciju"
+  },
+  "notify_work_gate_busy": {
+    "message": "Focus Lock vēl pabeidz iepriekšējo izmaiņu. Mēģini pēc brīža."
+  },
+  "notify_work_gate_stuck": {
+    "message": "Atvērtos vārtus neizdevās aizvērt. Mēģini vēlreiz."
+  },
+  "notify_work_tab_unavailable": {
+    "message": "Darba cilne nav pieejama."
+  },
+  "notify_settings_sync_limit": {
+    "message": "Iestatījumi pārsniedz 8 KB Chrome sinhronizācijas ierobežojumu. Noņem grafika ierakstus vai saīsini nodomus un mēģini vēlreiz."
+  },
+  "notify_lists_sync_limit": {
+    "message": "Saraksti pārsniedz 8 KB Chrome sinhronizācijas ierobežojumu. Noņem paša vai atļauto noteikumus un mēģini vēlreiz."
+  },
+  "notify_guard_lists_remove_blocked": {
+    "message": "notiek stingra sesija: bloķētās vietnes tiks noņemtas, kad tā beigsies"
+  },
+  "notify_guard_lists_add_whitelist": {
+    "message": "notiek stingra sesija: jaunie atļauto ieraksti stāsies spēkā, kad tā beigsies"
+  },
+  "notify_guard_lists_disable_category": {
+    "message": "notiek stingra sesija: kategorijas tiks izslēgtas, kad tā beigsies"
+  },
+  "notify_guard_lists_add_exclusion": {
+    "message": "notiek stingra sesija: jaunie izņēmumi stāsies spēkā, kad tā beigsies"
+  },
+  "notify_guard_settings_weaken_strictness": {
+    "message": "notiek stingra sesija: noklusētā stingruma pavājināšana gaidīs tās beigas"
+  },
+  "notify_guard_settings_shorten_delay": {
+    "message": "notiek stingra sesija: īsāka apdomāšanās gaidīšana vājina vārtus"
+  },
+  "notify_guard_settings_drop_phrase": {
+    "message": "notiek stingra sesija: ierakstāmā teikuma atcelšana vājina vārtus"
+  },
+  "notify_guard_settings_raise_earn_rate": {
+    "message": "notiek stingra sesija: lielāka kredīta krāšana finansē vairāk izvairīšanos"
+  },
+  "notify_guard_settings_raise_cap": {
+    "message": "notiek stingra sesija: lielāks kredīta griests finansē vairāk izvairīšanos"
+  },
+  "notify_guard_settings_shorten_pause": {
+    "message": "notiek stingra sesija: īsākas pauzes samazina to cenu"
+  },
+  "notify_guard_settings_shorten_unlock": {
+    "message": "notiek stingra sesija: īsākas atbloķēšanas samazina to cenu"
+  },
+  "notify_guard_settings_schedule_weakened": {
+    "message": "notiek stingra sesija: tās grafika ierakstu nevar pavājināt, kamēr tā nav beigusies"
+  }
+}

@@ -1,1 +1,186 @@
-{}
+{
+  "onboarding_page_title": {
+    "message": "Focus Lock uzstādīšana"
+  },
+  "onboarding_eyebrow": {
+    "message": "Focus Lock uzstādīšana"
+  },
+  "onboarding_progress": {
+    "message": "$STEP$. solis no $TOTAL$",
+    "placeholders": {
+      "STEP": {
+        "content": "$1",
+        "example": "2"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "onboarding_recovery_notice": {
+    "message": "Saglabāto uzstādīšanas gaitu neizdevās atjaunot. Sākam no jauna ar taviem pašreizējiem noklusējumiem."
+  },
+  "onboarding_complete_heading": {
+    "message": "Uzstādīšana pabeigta"
+  },
+  "onboarding_complete_body": {
+    "message": "Tavas izvēles ir saglabātas. Lai sāktu sesiju, atver Focus Lock no Chrome rīkjoslas."
+  },
+  "onboarding_error_heading": {
+    "message": "Uzstādīšana nav pieejama"
+  },
+  "onboarding_error_body": {
+    "message": "Neizdevās ielādēt uzstādīšanu. Mēģini vēlreiz."
+  },
+  "onboarding_retry_button": {
+    "message": "Mēģināt vēlreiz"
+  },
+  "onboarding_save_error": {
+    "message": "Neizdevās saglabāt uzstādīšanas gaitu. Mēģini vēlreiz."
+  },
+  "onboarding_enable_error": {
+    "message": "Neizdevās ieslēgt vietņu bloķēšanu. Mēģini vēlreiz."
+  },
+  "onboarding_finish_error": {
+    "message": "Neizdevās pabeigt uzstādīšanu. Tavas izvēles joprojām ir saglabātas. Mēģini vēlreiz."
+  },
+  "onboarding_lists_heading": {
+    "message": "Izvēlies sākuma bloķēšanas sarakstu"
+  },
+  "onboarding_lists_blacklist_rule": {
+    "message": "Režīmā $MODE$ ieslēgtās kategorijas un papildus bloķētās vietnes nav pieejamas.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Block list"
+      }
+    }
+  },
+  "onboarding_lists_whitelist_rule": {
+    "message": "Režīmā $MODE$ nav pieejama neviena vietne, izņemot tavu atļauto sarakstu.",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "Allow list"
+      }
+    }
+  },
+  "onboarding_lists_defaults_note": {
+    "message": "Šīs izvēles kļūst par noklusējumiem turpmākajām sesijām. Vēlāk tās varēsi mainīt."
+  },
+  "onboarding_lists_legend": {
+    "message": "Ieteiktās vietņu kategorijas"
+  },
+  "onboarding_site_count_one": {
+    "message": "$COUNT$ vietne",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "onboarding_site_count_other": {
+    "message": "$COUNT$ vietnes",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  },
+  "onboarding_show_category_sites": {
+    "message": "Rādīt $CATEGORY$ vietnes",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_hide_category_sites": {
+    "message": "Slēpt $CATEGORY$ vietnes",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_category_domains_label": {
+    "message": "$CATEGORY$ domēni",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social media"
+      }
+    }
+  },
+  "onboarding_continue_button": {
+    "message": "Turpināt"
+  },
+  "onboarding_access_heading": {
+    "message": "Ieslēgt vietņu bloķēšanu"
+  },
+  "onboarding_access_local_matching": {
+    "message": "Focus Lock pārbauda lapu adreses tavā ierīcē, lai salīdzinātu tās ar izvēlētajām kategorijām un vietnēm. Vietņu piekļuvi tas izmanto, lai parādītu bloķēšanas ekrānu un atjaunotu skartās lapas, kad sesija beidzas."
+  },
+  "onboarding_access_capability_intro": {
+    "message": "Kategorijas un paša domēni var aptvert jebkuru vietni. Tāpēc Chrome pieprasīs šo atļauju:"
+  },
+  "onboarding_access_capability": {
+    "message": "Lasīt un mainīt visus jūsu datus visās vietnēs"
+  },
+  "onboarding_access_scope_note": {
+    "message": "Focus Lock izmanto šo piekļuvi tikai tad, kad piemēro tavus bloķēšanas noteikumus."
+  },
+  "onboarding_access_denied": {
+    "message": "Chrome nepiešķīra vietņu piekļuvi. Vari mēģināt vēlreiz."
+  },
+  "onboarding_access_registration_error": {
+    "message": "Vietņu piekļuve ir piešķirta, bet Focus Lock neizdevās ieslēgt bloķēšanu. Atkārto uzstādīšanu vai pārlādē paplašinājumu."
+  },
+  "onboarding_access_enable_button": {
+    "message": "Ieslēgt vietņu bloķēšanu"
+  },
+  "onboarding_access_defer_button": {
+    "message": "Ne tagad"
+  },
+  "onboarding_sync_heading": {
+    "message": "Izvēlies, kur glabāt savus iestatījumus"
+  },
+  "onboarding_sync_switch_label": {
+    "message": "Sinhronizēt starp Chrome ierīcēm"
+  },
+  "onboarding_sync_enabled_note": {
+    "message": "Zemāk apstiprinātie dati pēc uzstādīšanas izmantos Chrome sinhronizāciju."
+  },
+  "onboarding_sync_disabled_note": {
+    "message": "Visi Focus Lock dati paliek šajā Chrome profilā."
+  },
+  "onboarding_sync_synced_title": {
+    "message": "Sinhronizēts"
+  },
+  "onboarding_sync_local_title": {
+    "message": "Tikai vietēji"
+  },
+  "onboarding_sync_developer_note": {
+    "message": "Focus Lock izstrādātājam netiek sūtīts nekas."
+  },
+  "onboarding_sync_finish_enabled": {
+    "message": "Pabeigt ar ieslēgtu sinhronizāciju"
+  },
+  "onboarding_sync_finish_disabled": {
+    "message": "Pabeigt bez sinhronizācijas"
+  },
+  "onboarding_site_count_zero": {
+    "message": "$COUNT$ vietņu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "52"
+      }
+    }
+  }
+}

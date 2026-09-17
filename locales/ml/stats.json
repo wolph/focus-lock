@@ -14,8 +14,17 @@
   "stats_partial_error_both": {
     "message": "Hourly attempts and site access credit സെറ്റിംഗുകൾ are unavailable."
   },
+  "stats_partial_error_attempts": {
+    "message": "പ്രതിമണിക്കൂർ ശ്രമങ്ങൾ ലഭ്യമല്ല."
+  },
   "stats_partial_error_economy": {
-    "message": "Site access credit സെറ്റിംഗുകൾ are unavailable."
+    "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ് സെറ്റിംഗുകൾ ലഭ്യമല്ല."
+  },
+  "stats_scope_synced": {
+    "message": "ഈ Chrome അക്കൗണ്ടിൽ നിന്ന് സിങ്ക് ചെയ്ത മൊത്തം."
+  },
+  "stats_scope_local": {
+    "message": "ഈ മെഷീൻ നിന്നും മൊത്തം."
   },
   "stats_scope_retry": {
     "message": "Retry scope check"

@@ -1,6 +1,6 @@
 {
   "options_page_title": {
-    "message": "Focus Lock options"
+    "message": "Focus Lock ഓപ്ഷനുകൾ"
   },
   "options_heading": {
     "message": "Focus Lock സെറ്റിംഗുകൾ"
@@ -15,7 +15,7 @@
     "message": "Could not സംരക്ഷിക്കുക. Try again."
   },
   "options_blocking_heading": {
-    "message": "Blocking"
+    "message": "തടയൽ"
   },
   "options_blocking_help": {
     "message": "Custom rules തടയുക during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories തടയുക common time sinks."
@@ -30,22 +30,22 @@
     "message": "Bundled categories"
   },
   "options_schedule_heading": {
-    "message": "Schedule"
+    "message": "ഷെഡ്യൂൾ"
   },
   "options_schedule_help": {
     "message": "Sessions ആരംഭിക്കുക on their own inside these windows. Strictness set here applies for the whole window."
   },
   "options_behavior_heading": {
-    "message": "സെഷൻ behavior"
+    "message": "സെഷൻ സ്വഭാവം"
   },
   "options_budget_heading": {
-    "message": "Site access credit"
+    "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ്"
   },
   "options_notifications_heading": {
     "message": "Notifications"
   },
   "options_privacy_heading": {
-    "message": "Privacy and data"
+    "message": "പ്രൈവസി"
   },
   "options_load_error_retry": {
     "message": "Retry"
@@ -141,7 +141,7 @@
     "message": "Flexible: end the സെഷൻ whenever you choose"
   },
   "options_cycle_heading": {
-    "message": "Focus and break cycle"
+    "message": "ഫോക്കസ് ഒപ്പം ബ്രേക് സൈക്കിൾ"
   },
   "options_focus_minutes_label": {
     "message": "Focus minutes"
@@ -183,7 +183,7 @@
     "message": "സജീവമാക്കുക \"Ignore timeout and end anyway\" button"
   },
   "options_streak_heading": {
-    "message": "Streak and retention"
+    "message": "സ്ട്രീക് കൂടാതെ സംരക്ഷണം"
   },
   "options_streak_help": {
     "message": "The streak counts ദിവസങ്ങൾ that reach the goal. One default സെഷൻ keeps the chain alive, and a freeze token repairs a missed day."

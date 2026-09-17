@@ -1,39 +1,55 @@
 {
+  "overlay_dialog_label": {
+    "message": "ಫೋಕಸ್ Lock"
+  },
   "overlay_stopped_title": {
-    "message": "ಲಾಕ್ ಆಗಿದೆ - Focus Lock"
+    "message": "Locked - ಫೋಕಸ್ Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
   },
   "overlay_target_checking": {
-    "message": "ಲಭ್ಯವಿರುವ ಕೆಲಸದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ..."
+    "message": "ಪರೀಕ್ಷೆ available wಅಥವಾk tabs..."
   },
   "overlay_target_pick_tab": {
-    "message": "ನಿನ್ನ ಕೆಲಸವನ್ನು ಮುಂದುವರಿಸಲು ತೆರೆದ ಟ್ಯಾಬ್ ಆರಿಸು."
+    "message": "Pick an open tab ಕಿ cಮೇಲೆtರಲ್ಲಿue your task."
   },
   "overlay_target_session_unavailable": {
-    "message": "ನಿನ್ನ ಫೋಕಸ್ ಸೆಷನ್ ಲಭ್ಯವಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು, ಅಥವಾ ಈ ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "Your focus sessiಮೇಲೆ is not available. Try agaರಲ್ಲಿ, ಅಥವಾ reload this page."
   },
   "overlay_target_lookup_failed": {
-    "message": "ನಿನ್ನ ಕೆಲಸದ ಟ್ಯಾಬ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು, ಅಥವಾ ಈ ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "Could not load your wಅಥವಾk tab. Try agaರಲ್ಲಿ, ಅಥವಾ reload this page."
   },
   "overlay_target_reconnect": {
-    "message": "Focus Lock ಗೆ ಮರುಸಂಪರ್ಕಿಸಲು ಈ ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "Reload this page ಕಿ recಮೇಲೆnect ಕಿ ಫೋಕಸ್ Lock."
   },
   "overlay_target_page_changed": {
-    "message": "ವಿನಂತಿಸಿದ ಪುಟ ಬದಲಾಗಿದೆ. ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡು."
+    "message": "The requestರಲ್ಲಿg page has changed. Reload the page."
   },
   "overlay_target_transport_error": {
-    "message": "Focus Lock ಅನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not reach ಫೋಕಸ್ Lock. Try agaರಲ್ಲಿ."
   },
   "overlay_picker_heading": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಆರಿಸು"
+    "message": "Choose a wಅಥವಾk tab"
   },
   "overlay_picker_cancel": {
     "message": "ರದ್ದುಮಾಡಿ"
   },
   "overlay_picker_search_label": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಹುಡುಕಿ"
+    "message": "Search wಅಥವಾk tabs"
   },
   "overlay_picker_search_placeholder": {
-    "message": "ಶೀರ್ಷಿಕೆ ಅಥವಾ ವೆಬ್‌ಸೈಟ್ ಮೂಲಕ ಹುಡುಕಿ"
+    "message": "Search ಮೂಲಕ title ಅಥವಾ website"
   },
   "overlay_picker_clear_search": {
     "message": "ಹುಡುಕಾಟ ತೆರವುಗೊಳಿಸಿ"
@@ -42,28 +58,28 @@
     "message": "ಟ್ಯಾಬ್‌ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಿ"
   },
   "overlay_picker_available_tabs": {
-    "message": "ಲಭ್ಯವಿರುವ ಕೆಲಸದ ಟ್ಯಾಬ್‌ಗಳು"
+    "message": "ಲಭ್ಯ wಅಥವಾk tabs"
   },
   "overlay_picker_finding": {
-    "message": "ಲಭ್ಯವಿರುವ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಹುಡುಕಲಾಗುತ್ತಿದೆ..."
+    "message": "Fರಲ್ಲಿdರಲ್ಲಿg available tabs..."
   },
   "overlay_picker_searching": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಹುಡುಕಲಾಗುತ್ತಿದೆ..."
+    "message": "Searchರಲ್ಲಿg wಅಥವಾk tabs..."
   },
   "overlay_picker_saving": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಉಳಿಸಲಾಗುತ್ತಿದೆ..."
+    "message": "Savರಲ್ಲಿg wಅಥವಾk tab..."
   },
   "overlay_picker_no_tabs": {
-    "message": "ಲಭ್ಯವಿರುವ ಕೆಲಸದ ಟ್ಯಾಬ್‌ಗಳಿಲ್ಲ. ಈ ಸೆಷನ್ ಅನುಮತಿಸುವ ಸೈಟ್ ಅನ್ನು ತೆರೆ, ನಂತರ ಟ್ಯಾಬ್‌ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡು."
+    "message": "No available wಅಥವಾk tabs. Open a site allowed ಮೂಲಕ this sessiಮೇಲೆ, then refresh tabs."
   },
   "overlay_picker_no_matches": {
-    "message": "ಹೊಂದಾಣಿಕೆಯಾಗುವ ಟ್ಯಾಬ್‌ಗಳಿಲ್ಲ. ಬೇರೆ ಹುಡುಕಾಟ ಪ್ರಯತ್ನಿಸು ಅಥವಾ ಹುಡುಕಾಟ ತೆರವುಗೊಳಿಸು."
+    "message": "No mನಲ್ಲಿchರಲ್ಲಿg tabs. Try another search ಅಥವಾ clear the search."
   },
   "overlay_picker_load_failed": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು."
+    "message": "Could not load wಅಥವಾk tabs. Try agaರಲ್ಲಿ."
   },
   "overlay_picker_count_one": {
-    "message": "$COUNT$ ರಲ್ಲಿ $MATCHES$ ಟ್ಯಾಬ್",
+    "message": "$MATCHES$ ನ $COUNT$ tab",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -76,7 +92,7 @@
     }
   },
   "overlay_picker_count_other": {
-    "message": "$COUNT$ ರಲ್ಲಿ $MATCHES$ ಟ್ಯಾಬ್‌ಗಳು",
+    "message": "$MATCHES$ ನ $COUNT$ tabs",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -85,6 +101,19 @@
       "MATCHES": {
         "content": "$2",
         "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
       }
     }
   }

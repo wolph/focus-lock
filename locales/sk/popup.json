@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "ďalšie: $DAY$ $TIME$",
+    "message": "ďalšia: $DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -16,64 +16,64 @@
     "message": "Nastavenia"
   },
   "popup_open_settings_failed": {
-    "message": "Nepodarilo sa otvoriť Nastavenia. Skúste znova."
+    "message": "Nastavenia sa nepodarilo otvoriť. Skús to znova."
   },
   "popup_settings_load_failed": {
-    "message": "Nepodarilo sa načítať nastavenia relácie. Obnovte okno s panelom nástrojov a skúste znova. Zobrazujú sa predvolené hodnoty."
+    "message": "Nastavenia relácie sa nepodarilo načítať. Znova načítaj okno. Zobrazujú sa predvolené hodnoty."
   },
   "popup_open_setup_failed": {
-    "message": "Nepodarilo sa otvoriť nastavenie. Skúste znova."
+    "message": "Nastavenie sa nepodarilo otvoriť. Skús to znova."
   },
   "popup_setup_required_heading": {
-    "message": "Dokončite nastavenie Focus Lock"
+    "message": "Dokonči nastavenie Focus Lock"
   },
   "popup_setup_required_body": {
-    "message": "Vyberte si počiatočné zoznamy, prístup k webom a režim ukladania pred spustením relácie."
+    "message": "Než spustíš reláciu, vyber si počiatočné zoznamy, prístup k webom a režim ukladania."
   },
   "popup_open_setup_button": {
     "message": "Otvoriť nastavenie"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Nepodarilo sa potvrdiť blokovaní webov. Skúste znova."
+    "message": "Blokovanie webov sa nepodarilo potvrdiť. Skús to znova."
   },
   "popup_blocking_enable_failed": {
-    "message": "Nepodarilo sa aktivovať blokovanie webov. Skúste znova."
+    "message": "Blokovanie webov sa nepodarilo zapnúť. Skús to znova."
   },
   "popup_blocking_off_heading": {
     "message": "Blokovanie webov je vypnuté"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock nemôže spustiť reláciu, kým mu Chrome neudelia prístup k webom a nebude aktivované blokovanie."
+    "message": "Focus Lock nemôže spustiť reláciu, kým Chrome nepovolí prístup k webom a nezapne sa blokovanie."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome neudelil prístup k webom. Blokovanie webov je stále vypnuté."
+    "message": "Chrome prístup k webom nepovolil. Blokovanie webov je stále vypnuté."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Prístup k webom je udelený, ale Focus Lock nemôže aktivovať blokovanie. Opakujte nastavenie alebo znova načítajte rozšírenie."
+    "message": "Prístup k webom je povolený, ale Focus Lock nemohol zapnúť blokovanie. Zopakuj nastavenie alebo znova načítaj rozšírenie."
   },
   "popup_enable_blocking_button": {
-    "message": "Aktivovať blokovanie webov"
+    "message": "Zapnúť blokovanie webov"
   },
   "popup_retry_button": {
-    "message": "Skúsiť znova"
+    "message": "Znova"
   },
   "popup_notice_access_revoked": {
-    "message": "Vaša relácia skončila, pretože bol odstránený prístup k webom."
+    "message": "Tvoja relácia sa skončila, pretože bol odobratý prístup k webom."
   },
   "popup_notice_blocking_failed": {
-    "message": "Vaša relácia skončila, pretože Focus Lock nemôže aktivovať blokovanie webov."
+    "message": "Tvoja relácia sa skončila, pretože Focus Lock nemohol zapnúť blokovanie webov."
   },
   "popup_dismiss_notice_failed": {
-    "message": "Nepodarilo sa zavrhnúť túto poznámku. Skúste znova."
+    "message": "Upozornenie sa nepodarilo zavrieť. Skús to znova."
   },
   "popup_dismiss_notice_label": {
-    "message": "Zavrhnúť poznámku o prístupe k webom"
+    "message": "Zavrieť upozornenie o prístupe k webom"
   },
   "popup_dismiss_button": {
-    "message": "Zavrhnúť"
+    "message": "Zavrieť"
   },
   "popup_restart_failed": {
-    "message": "Nepodarilo sa reštartovať Focus Lock. Skúste znova."
+    "message": "Focus Lock sa nepodarilo reštartovať. Skús to znova."
   },
   "popup_boot_failed_heading": {
     "message": "Focus Lock sa nepodarilo spustiť"
@@ -82,46 +82,46 @@
     "message": "Dôvod sa nepodarilo prečítať."
   },
   "popup_reset_runtime_button": {
-    "message": "Obnoviť lokálny runtime"
+    "message": "Resetovať lokálne behové prostredie"
   },
   "popup_reset_runtime_note": {
-    "message": "Zachová vaše nastavenia, zoznamy a štatistiky. Vymaže aktuálny stav relácie."
+    "message": "Zachová tvoje nastavenia, zoznamy a štatistiky. Zmaže stav súčasnej relácie."
   },
   "popup_delete_all_confirm_button": {
-    "message": "Vymazať všetko a začať odznova"
+    "message": "Zmazať všetko a začať odznova"
   },
   "popup_keep_data_button": {
     "message": "Ponechať moje údaje"
   },
   "popup_delete_all_button": {
-    "message": "Vymazať všetky údaje Focus Lock"
+    "message": "Zmazať všetky údaje Focus Lock"
   },
   "popup_setup_status_unavailable": {
-    "message": "Stav nastavenia nie je dostupný. Znova načítajte Focus Lock a skúste znova."
+    "message": "Stav nastavenia nie je dostupný. Znova načítaj Focus Lock."
   },
   "popup_snapshot_unavailable": {
-    "message": "Stav zamerania nie je dostupný"
+    "message": "Stav sústredenia nie je dostupný"
   },
   "popup_action_in_progress": {
-    "message": "Akcia prebieha"
+    "message": "Prebieha akcia"
   },
   "popup_active_site_checking": {
-    "message": "Kontrola aktívneho webu"
+    "message": "Kontrolujem aktívny web"
   },
   "popup_active_site_unsupported": {
-    "message": "Otvorte bežný web, aby ste ho mohli odomknúť"
+    "message": "Otvor bežný web, ktorý chceš odomknúť"
   },
   "popup_active_site_unknown": {
-    "message": "Nepodarilo sa identifikovať aktívny web"
+    "message": "Aktívny web sa nepodarilo rozpoznať"
   },
   "popup_active_site_error": {
-    "message": "Nepodarilo sa identifikovať aktívny web."
+    "message": "Aktívny web sa nepodarilo rozpoznať."
   },
   "popup_resume_now": {
-    "message": "Pokračovať teraz"
+    "message": "Pokračovať hneď"
   },
   "popup_start_next_focus_early": {
-    "message": "Začať nasledujúce zameranie skôr"
+    "message": "Spustiť ďalšie sústredenie skôr"
   },
   "popup_unlock_this_site": {
     "message": "Odomknúť tento web"
@@ -130,7 +130,7 @@
     "message": "Odomknúť všetky weby"
   },
   "popup_spend_cost": {
-    "message": "$ACCESS$ prístup, $CREDIT$ kredit",
+    "message": "$ACCESS$ prístupu, $CREDIT$ kreditu",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -143,7 +143,7 @@
     }
   },
   "popup_spend_cost_host": {
-    "message": "$ACCESS$ prístup, $CREDIT$ kredit - $HOST$",
+    "message": "$ACCESS$ prístupu, $CREDIT$ kreditu - $HOST$",
     "placeholders": {
       "ACCESS": {
         "content": "$1",
@@ -160,16 +160,16 @@
     }
   },
   "popup_choose_work_tab_button": {
-    "message": "Vybrať pracovný tab"
+    "message": "Vybrať pracovnú kartu"
   },
   "popup_change_work_tab_button": {
-    "message": "Zmeniť pracovný tab"
+    "message": "Zmeniť pracovnú kartu"
   },
   "popup_session_actions_summary": {
     "message": "Akcie relácie"
   },
   "popup_site_access_credit": {
-    "message": "$CREDIT$ kredit na prístup k webom",
+    "message": "$CREDIT$ kreditu na prístup",
     "placeholders": {
       "CREDIT": {
         "content": "$1",
@@ -178,19 +178,19 @@
     }
   },
   "popup_add_allowed_domain_label": {
-    "message": "Pridať povolený web"
+    "message": "Pridať povolenú doménu"
   },
   "popup_allowed_domain_placeholder": {
-    "message": "docs.example.com"
+    "message": "dokumenty.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "Pridať povolený web"
+    "message": "Pridať povolenú doménu"
   },
   "popup_add_button": {
     "message": "Pridať"
   },
   "popup_draft_allowed_only": {
-    "message": "Len $COUNT$ pravidiel povolených webov. Ostatné weby sú blokované.",
+    "message": "Len $COUNT$ pravidiel povolených webov. Ostatné weby blokované.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -212,13 +212,13 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "Tvrdý zámok. Nemožno skončiť skôr."
+    "message": "Tvrdý zámok. Nedá sa ukončiť skôr."
   },
   "popup_draft_stop_flexible": {
-    "message": "Možno skončiť kedykoľvek."
+    "message": "Dá sa ukončiť kedykoľvek."
   },
   "popup_draft_stop_friction": {
-    "message": "Skončenie po čakaní $SECONDS$s.",
+    "message": "Koniec po $SECONDS$s čakania.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -227,7 +227,7 @@
     }
   },
   "popup_draft_stop_friction_phrase": {
-    "message": "Skončenie po čakaní $SECONDS$s a fráze na potvrdenie.",
+    "message": "Koniec po $SECONDS$s čakania a potvrdzovacej vete.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -245,19 +245,19 @@
     "message": "min"
   },
   "popup_gate_force_end": {
-    "message": "Ignorovať časový limit a skončiť aj tak"
+    "message": "Ignorovať čakanie a aj tak ukončiť"
   },
   "popup_gate_keep_focusing": {
-    "message": "Pokračovať v zameraní"
+    "message": "Sústreď sa ďalej"
   },
   "popup_gate_phrase_label": {
-    "message": "Napíšte:"
+    "message": "Napíš:"
   },
   "popup_gate_update_failed": {
-    "message": "Nepodarilo sa aktualizovať bránu. Skúste znova."
+    "message": "Rozmyslenie sa nepodarilo aktualizovať. Skús to znova."
   },
   "popup_gate_intention": {
-    "message": "Povedali ste: $INTENTION$",
+    "message": "Povedal si: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -266,7 +266,7 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "Chvíľu na rozhodnutie:"
+    "message": "Chvíľka na rozmyslenie:"
   },
   "popup_gate_wait_remaining": {
     "message": "z $TOTAL$ s",
@@ -278,13 +278,13 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Späť k práci"
+    "message": "Späť do práce"
   },
   "popup_destination_unavailable": {
-    "message": "Cieľ nie je dostupný"
+    "message": "Cieľ nie je známy"
   },
   "popup_back_to_work_name": {
-    "message": "Späť k práci: $DESTINATION$",
+    "message": "Späť do práce: $DESTINATION$",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -293,7 +293,7 @@
     }
   },
   "popup_back_to_work_name_host": {
-    "message": "Späť k práci: $DESTINATION$ ($HOSTNAME$)",
+    "message": "Späť do práce: $DESTINATION$ ($HOSTNAME$)",
     "placeholders": {
       "DESTINATION": {
         "content": "$1",
@@ -306,7 +306,7 @@
     }
   },
   "popup_categories_locked": {
-    "message": "Úpravy kategórií sú zakázané, kým sa zoznamy blokovaných webov znova nenačítajú."
+    "message": "Kategórie sa budú dať upraviť, až sa znova načítajú zoznamy blokovaných webov."
   },
   "popup_blocked_categories_heading": {
     "message": "Blokované kategórie"
@@ -336,7 +336,7 @@
     "message": "Regulárny výraz"
   },
   "popup_category_sites_label": {
-    "message": "Weby z kategórie $CATEGORY$",
+    "message": "Weby kategórie $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "a $COUNT$ ďalší web",
+    "message": "a ďalší $COUNT$ web",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -372,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "a $COUNT$ ďalších webov",
+    "message": "a ďalších $COUNT$ webov",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -384,10 +384,10 @@
     "message": "Povolené výnimky"
   },
   "popup_extra_blocked_heading": {
-    "message": "Ďalšie blokované pravidlá"
+    "message": "Ďalšie blokovacie pravidlá"
   },
   "popup_no_extra_blocked": {
-    "message": "Žiadne ďalšie blokované pravidlá."
+    "message": "Žiadne ďalšie blokovacie pravidlá."
   },
   "popup_allowed_heading": {
     "message": "Povolené weby a pravidlá"
@@ -402,7 +402,7 @@
     "message": "Čo bude povolené"
   },
   "popup_categories_selected": {
-    "message": "$SELECTED$ z $TOTAL$ vybraných kategórií",
+    "message": "Vybraných $SELECTED$ z $TOTAL$ kategórií",
     "placeholders": {
       "SELECTED": {
         "content": "$1",
@@ -415,7 +415,7 @@
     }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$ ďalšie blokované pravidlo",
+    "message": "$COUNT$ ďalšie blokovacie pravidlo",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -424,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$ ďalších blokovaných pravidiel",
+    "message": "$COUNT$ ďalších blokovacích pravidiel",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -451,13 +451,13 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Zmeny webov a pravidiel tu sa vzťahujú len na túto reláciu. Všetko ostatné je blokované."
+    "message": "Zmeny povolených webov a pravidiel tu platia len pre túto reláciu. Všetko ostatné je blokované."
   },
   "popup_scope_blacklist": {
-    "message": "Zmeny kategórií a pravidiel tu sa vzťahujú len na túto reláciu."
+    "message": "Zmeny kategórií a pravidiel tu platia len pre túto reláciu."
   },
   "popup_open_settings_defaults": {
-    "message": "Otvorte Nastavenia pre trvalé predvolené hodnoty"
+    "message": "Otvoriť nastavenia pre trvalé predvolené hodnoty"
   },
   "popup_rule_details_label": {
     "message": "Podrobnosti pravidiel relácie"
@@ -466,7 +466,7 @@
     "message": "Typ relácie"
   },
   "popup_session_type_flexible": {
-    "message": "Flexibilný"
+    "message": "Flexibilné"
   },
   "popup_session_type_friction": {
     "message": "Trenie"
@@ -475,10 +475,10 @@
     "message": "Tvrdý zámok"
   },
   "popup_session_type_flexible_hint": {
-    "message": "Skončite reláciu ihneď, kedykoľvek si to želáte."
+    "message": "Ukonči reláciu okamžite, kedykoľvek sa rozhodneš."
   },
   "popup_session_type_friction_hint": {
-    "message": "Skončenie vyžaduje $WAIT$. Písanie nie je povinné.",
+    "message": "Predčasné ukončenie vyžaduje $WAIT$. Nič písať nemusíš.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -487,7 +487,7 @@
     }
   },
   "popup_session_type_friction_hint_phrase": {
-    "message": "Skončenie vyžaduje $WAIT$ a potvrdzovací frázu.",
+    "message": "Predčasné ukončenie vyžaduje $WAIT$ a napísané potvrdenie.",
     "placeholders": {
       "WAIT": {
         "content": "$1",
@@ -496,28 +496,28 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "Relácia nemôže skončiť skôr. Kredit na prístup k webom stále funguje."
+    "message": "Relácia nemôže skončiť skôr. Kredit na prístup funguje ďalej."
   },
   "popup_mode_blacklist_hint": {
-    "message": "Vybrané kategórie a ďalšie pravidlá sú blokované. Ostatné weby sú dostupné."
+    "message": "Vybrané kategórie a ďalšie pravidlá sú blokované. Ostatné weby zostávajú dostupné."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Dostupné sú len uvedené weby. Všetky ostatné weby sú blokované."
+    "message": "Dostupné sú len uvedené weby. Každý iný web je blokovaný."
   },
   "popup_invalid_duration_error": {
-    "message": "Zadajte dĺžku relácie väčšiu ako nula minút."
+    "message": "Zadaj dĺžku relácie väčšiu než nula minút."
   },
   "popup_stale_lists_unavailable": {
-    "message": "Predvolené hodnoty sa zmenili, ale aktuálne zoznamy sa nepodarilo načítať. Obnovte okno s panelom nástrojov."
+    "message": "Predvolené hodnoty sa zmenili, ale súčasné zoznamy sa nepodarilo načítať. Znova načítaj okno."
   },
   "popup_no_work_tab_option": {
-    "message": "Žiaden pracovný tab (voliteľný)"
+    "message": "Žiadna pracovná karta (voliteľné)"
   },
   "popup_work_tab_unavailable_option": {
-    "message": "Vybraný tab nie je dostupný - vyberte si iný"
+    "message": "Vybraná karta nie je dostupná - vyber inú"
   },
   "popup_cycles_label": {
-    "message": "Cykly: $FOCUS$ min zamerania, $SHORT_BREAK$ min prestávka, $LONG_BREAK$ min dlhá prestávka každý $LONG_EVERY$-tý",
+    "message": "Cykly: $FOCUS$ min sústredenia, $SHORT_BREAK$ min prestávka, $LONG_BREAK$ min dlhá prestávka každý $LONG_EVERY$.",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -538,13 +538,13 @@
     }
   },
   "popup_intention_label": {
-    "message": "Zámer"
+    "message": "Predsavzatie"
   },
   "popup_intention_placeholder": {
-    "message": "Na čom pracujete?"
+    "message": "Na čom pracuješ?"
   },
   "popup_work_tab_named": {
-    "message": "Pracovný tab: $TITLE$",
+    "message": "Pracovná karta: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -559,13 +559,13 @@
     "message": "Nastavenia relácie"
   },
   "popup_choose_work_tab_label": {
-    "message": "Vybrať pracovný tab"
+    "message": "Vyber pracovnú kartu"
   },
   "popup_work_tab_select_label": {
-    "message": "Pracovný tab"
+    "message": "Pracovná karta"
   },
   "popup_work_tab_current_option": {
-    "message": "$TITLE$ (aktuálny)",
+    "message": "$TITLE$ (aktuálna)",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -574,13 +574,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Režim blokovaní"
+    "message": "Režim blokovania"
   },
   "popup_invalid_time_label": {
     "message": "neplatný čas"
   },
   "popup_start_focus_label": {
-    "message": "Spustiť $DURATION$ zamerania",
+    "message": "Spustiť sústredenie na $DURATION$",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -589,42 +589,114 @@
     }
   },
   "popup_invalid_domain_error": {
-    "message": "Zadajte platnú doménu, napríklad docs.example.com."
+    "message": "Zadaj platnú doménu, napríklad dokumenty.example.com."
   },
   "popup_work_tabs_unavailable": {
-    "message": "Nepodarilo sa načítať pracovné taby. Znova otvorte okno s panelom nástrojov."
+    "message": "Pracovné karty sa nepodarilo načítať. Otvor okno znova."
   },
   "popup_use_this_tab": {
-    "message": "Použiť tento tab"
+    "message": "Použiť túto kartu"
   },
   "popup_current_tab_unavailable": {
-    "message": "Tento tab nie je dostupný pre prácu. Vyberte si ďalší otvorený tab."
+    "message": "Táto karta sa na prácu nehodí. Vyber inú otvorenú kartu."
   },
   "popup_checking_current_tab": {
-    "message": "Kontrola aktuálneho tabu..."
+    "message": "Kontrolujem aktuálnu kartu..."
   },
   "popup_finding_current_tab": {
-    "message": "Hľadanie vášho aktuálneho tabu..."
+    "message": "Hľadám tvoju aktuálnu kartu..."
   },
   "popup_current_tab_load_failed": {
-    "message": "Nepodarilo sa načítať váš aktuálny tab. Skúste znova."
+    "message": "Tvoju aktuálnu kartu sa nepodarilo načítať. Skús to znova."
   },
   "popup_choose_work_tab_copy": {
-    "message": "Vyberte alebo nahraďte váš pracovný tab."
+    "message": "Vyber alebo vymeň svoju pracovnú kartu."
   },
   "popup_saving_work_tab": {
-    "message": "Ukladanie pracovného tabu..."
+    "message": "Ukladám pracovnú kartu..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Nepodarilo sa uložiť pracovný tab. Skúste znova."
+    "message": "Pracovnú kartu sa nepodarilo uložiť. Skús to znova."
   },
   "popup_choose_open_tab_option": {
-    "message": "Vybrať otvorený tab"
+    "message": "Vyber otvorenú kartu"
   },
   "popup_or_choose_another_tab": {
-    "message": "Alebo si vyberte ďalší tab"
+    "message": "Alebo vyber inú kartu"
   },
   "popup_start_failed": {
-    "message": "Nepodarilo sa spustiť reláciu. Skúste znova."
+    "message": "Reláciu sa nepodarilo spustiť. Skús to znova."
+  },
+  "popup_sites_few": {
+    "message": "$COUNT$ weby",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_sites_many": {
+    "message": "$COUNT$ webu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_more_sites_few": {
+    "message": "a ďalšie $COUNT$ weby",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_more_sites_many": {
+    "message": "a ďalšieho $COUNT$ webu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "34"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_few": {
+    "message": "$COUNT$ ďalšie blokovacie pravidlá",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_extra_blocked_rules_many": {
+    "message": "$COUNT$ ďalšieho blokovacieho pravidla",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_allowed_rules_few": {
+    "message": "$COUNT$ povolené pravidlá",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_allowed_rules_many": {
+    "message": "$COUNT$ povoleného pravidla",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
   }
 }

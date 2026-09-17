@@ -1,1 +1,133 @@
-{}
+{
+  "overlay_dialog_label": {
+    "message": "Focus Lock"
+  },
+  "overlay_stopped_title": {
+    "message": "Закључано - Focus Lock"
+  },
+  "overlay_return_label": {
+    "message": "$ACTION$: $DESTINATION$",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      }
+    }
+  },
+  "overlay_target_checking": {
+    "message": "Провера доступних радних картица..."
+  },
+  "overlay_target_pick_tab": {
+    "message": "Изабери отворену картицу да наставиш свој задатак."
+  },
+  "overlay_target_session_unavailable": {
+    "message": "Твоја сесија фокуса није доступна. Покушај поново или поново учитај ову страницу."
+  },
+  "overlay_target_lookup_failed": {
+    "message": "Твоја радна картица није могла да се учита. Покушај поново или поново учитај ову страницу."
+  },
+  "overlay_target_reconnect": {
+    "message": "Поново учитај ову страницу да се поново повежеш са додатком Focus Lock."
+  },
+  "overlay_target_page_changed": {
+    "message": "Страница која је послала захтев се променила. Поново учитај страницу."
+  },
+  "overlay_target_transport_error": {
+    "message": "Focus Lock није био доступан. Покушај поново."
+  },
+  "overlay_picker_heading": {
+    "message": "Изабери радну картицу"
+  },
+  "overlay_picker_cancel": {
+    "message": "Одустани"
+  },
+  "overlay_picker_search_label": {
+    "message": "Претражи радне картице"
+  },
+  "overlay_picker_search_placeholder": {
+    "message": "Претражи по наслову или сајту"
+  },
+  "overlay_picker_clear_search": {
+    "message": "Очисти претрагу"
+  },
+  "overlay_picker_refresh_tabs": {
+    "message": "Освежи картице"
+  },
+  "overlay_picker_available_tabs": {
+    "message": "Доступне радне картице"
+  },
+  "overlay_picker_finding": {
+    "message": "Тражење доступних картица..."
+  },
+  "overlay_picker_searching": {
+    "message": "Претраживање радних картица..."
+  },
+  "overlay_picker_saving": {
+    "message": "Чување радне картице..."
+  },
+  "overlay_picker_no_tabs": {
+    "message": "Нема доступних радних картица. Отвори сајт који сесија дозвољава па освежи картице."
+  },
+  "overlay_picker_no_matches": {
+    "message": "Нема одговарајућих картица. Покушај другу претрагу или очисти претрагу."
+  },
+  "overlay_picker_load_failed": {
+    "message": "Радне картице нису могле да се учитају. Покушај поново."
+  },
+  "overlay_picker_count_one": {
+    "message": "$MATCHES$ од $COUNT$ картице",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_count_other": {
+    "message": "$MATCHES$ од $COUNT$ картица",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "overlay_picker_tab_label": {
+    "message": "$TITLE$ ($HOSTNAME$)",
+    "placeholders": {
+      "TITLE": {
+        "content": "$1",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "work.example"
+      }
+    }
+  },
+  "overlay_picker_count_few": {
+    "message": "$MATCHES$ од $COUNT$ картице",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MATCHES": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  }
+}

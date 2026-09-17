@@ -1,1 +1,385 @@
-{}
+{
+  "stats_document_title": {
+    "message": "Statistika Focus Lock"
+  },
+  "stats_page_title": {
+    "message": "Vaš fokusni zapis"
+  },
+  "stats_loading": {
+    "message": "Nalagam statistiko."
+  },
+  "stats_load_error": {
+    "message": "Ne morem naložiti statistike. Osvežite stran in poskusite ponovno."
+  },
+  "stats_partial_error_both": {
+    "message": "Urni poskusi in nastavitve kreditov za dostop do spletnih mest niso na voljo."
+  },
+  "stats_partial_error_attempts": {
+    "message": "Urni poskusi niso na voljo."
+  },
+  "stats_partial_error_economy": {
+    "message": "Nastavitve kreditov za dostop do spletnih mest niso na voljo."
+  },
+  "stats_scope_synced": {
+    "message": "Sinhronizirani skupni seštevki iz tega Chrome računa. Plošče samo za lokalno so označene."
+  },
+  "stats_scope_local": {
+    "message": "Skupni seštevki s tega računalnika. Statistika Focus Lock se ne sinhroniziraj."
+  },
+  "stats_scope_checking": {
+    "message": "Preverjam, ali so ti skupni seštevki sinhronizirani."
+  },
+  "stats_scope_unavailable": {
+    "message": "Obseg statistike ni na voljo. Skupni seštevki lahko vključujejo sinhronizirane podatke. Urni poskusi in nedavne seje so s tega računalnika."
+  },
+  "stats_scope_retry": {
+    "message": "Ponovni poskus preverjanja obsega"
+  },
+  "stats_empty": {
+    "message": "Statistika se pojavi po vaši prvi seji."
+  },
+  "stats_tile_focus_today": {
+    "message": "Fokus danes"
+  },
+  "stats_tile_focus_last_7_days": {
+    "message": "Fokus v zadnjih 7 dneh"
+  },
+  "stats_tile_attempts_today": {
+    "message": "Poskusi blokirani danes"
+  },
+  "stats_tile_gate_dismissed_today": {
+    "message": "Zahtevki vrat zavrnjeni danes"
+  },
+  "stats_tile_credit_spent_today": {
+    "message": "Kredit za dostop do spletnih mest, porabljen danes"
+  },
+  "stats_tile_credit_subline_spent": {
+    "message": "Vsa spletna mesta $ALL_SITES$, eno spletno mesto $ONE_SITE$, $EARNED$ zasluženo",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_tile_credit_subline_earned": {
+    "message": "$EARNED$ zasluženo",
+    "placeholders": {
+      "EARNED": {
+        "content": "$1",
+        "example": "17 m"
+      }
+    }
+  },
+  "stats_streak_heading": {
+    "message": "Niz"
+  },
+  "stats_streak_empty": {
+    "message": "Vaš niz se začne s prvim dnikom osredotočenosti."
+  },
+  "stats_streak_unit_one": {
+    "message": "dan"
+  },
+  "stats_streak_unit_other": {
+    "message": "dni"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ žeton zamrzovanja bankan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ žetonov zamrzovanja bankan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "Zamrzovanje niza: en zamujeni dan, pokrit"
+  },
+  "stats_streak_active_days_one": {
+    "message": "$COUNT$ aktivni dan tega meseca ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_other": {
+    "message": "$COUNT$ aktivnih dni tega meseca ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_dates": {
+    "message": "Aktivni datumi v $MONTH$: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "Ni aktivnih datumov v $MONTH$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_chart_focus_heading": {
+    "message": "Fokus, zadnjih 14 dni"
+  },
+  "stats_chart_focus_empty": {
+    "message": "Minute osredotočenosti se pojavijo po vaši prvi seji."
+  },
+  "stats_chart_attempts_heading": {
+    "message": "Blokirani poskusi, zadnjih 14 dni"
+  },
+  "stats_chart_attempts_empty": {
+    "message": "Blokirani poskusi se pojavijo tukaj, ko jih seja ujame."
+  },
+  "stats_chart_sites_heading": {
+    "message": "Najbolj blokirana spletna mesta, zadnjih 30 dni"
+  },
+  "stats_chart_sites_empty": {
+    "message": "Še nič ni blokirano. To je odličen začetek."
+  },
+  "stats_chart_hours_heading": {
+    "message": "Poskusi po uri, samo ta računalnik"
+  },
+  "stats_chart_other_site": {
+    "message": "drugo"
+  },
+  "stats_chart_minutes_tick": {
+    "message": "$MINUTES$m",
+    "placeholders": {
+      "MINUTES": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "stats_blocked_count_one": {
+    "message": "$COUNT$ blokiran",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_blocked_count_other": {
+    "message": "$COUNT$ blokiranih",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_chart_name_bar": {
+    "message": "Stolpični diagram"
+  },
+  "stats_chart_name_hbar": {
+    "message": "Vodoravni stolpični diagram"
+  },
+  "stats_chart_description_bar": {
+    "message": "Stolpični diagram. Uporabite tipkovnico za premikanje po podatkovnih točkah ali odprite Prikaži kot tabelo za enake vrednosti."
+  },
+  "stats_chart_description_hbar": {
+    "message": "Vodoravni stolpični diagram. Uporabite tipkovnico za premikanje po podatkovnih točkah ali odprite Prikaži kot tabelo za enake vrednosti."
+  },
+  "stats_chart_empty_default": {
+    "message": "Še ni podatkov."
+  },
+  "stats_chart_point": {
+    "message": "$LABEL$: $VALUE$",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "28 Aug"
+      },
+      "VALUE": {
+        "content": "$2",
+        "example": "10 m"
+      }
+    }
+  },
+  "stats_chart_table_summary": {
+    "message": "Prikaži kot tabelo"
+  },
+  "stats_chart_table_category": {
+    "message": "Kategorija"
+  },
+  "stats_chart_table_value": {
+    "message": "Vrednost"
+  },
+  "stats_heat_strip_label": {
+    "message": "24-urni trak intenzivnosti blokiranih poskusov"
+  },
+  "stats_sessions_heading": {
+    "message": "Nedavne seje na tem računalniku"
+  },
+  "stats_sessions_empty": {
+    "message": "Vaša prva seja se bo pojavila tukaj."
+  },
+  "stats_sessions_col_date": {
+    "message": "Datum"
+  },
+  "stats_sessions_col_start": {
+    "message": "Začetek"
+  },
+  "stats_sessions_col_planned": {
+    "message": "Načrtovano"
+  },
+  "stats_sessions_col_focused": {
+    "message": "Osredotočeno"
+  },
+  "stats_sessions_col_all_sites": {
+    "message": "Vsa spletna mesta"
+  },
+  "stats_sessions_col_one_site": {
+    "message": "Eno spletno mesto"
+  },
+  "stats_sessions_col_intention": {
+    "message": "Namen"
+  },
+  "stats_sessions_col_outcome": {
+    "message": "Rezultat"
+  },
+  "stats_sessions_col_source": {
+    "message": "Vir"
+  },
+  "stats_session_no_intention": {
+    "message": "Ni namena"
+  },
+  "stats_session_article_label": {
+    "message": "Seja: $INTENTION$",
+    "placeholders": {
+      "INTENTION": {
+        "content": "$1",
+        "example": "thesis chapter"
+      }
+    }
+  },
+  "stats_session_source_manual": {
+    "message": "ročno"
+  },
+  "stats_session_source_schedule": {
+    "message": "urnik"
+  },
+  "stats_session_source_scheduled": {
+    "message": "razporejen"
+  },
+  "stats_outcome_completed": {
+    "message": "Zaključeno"
+  },
+  "stats_outcome_ended_early": {
+    "message": "Končano zgodaj"
+  },
+  "stats_outcome_running": {
+    "message": "Teče"
+  },
+  "stats_streak_unit_two": {
+    "message": "dneva"
+  },
+  "stats_streak_unit_few": {
+    "message": "dnevi"
+  },
+  "stats_streak_freeze_tokens_two": {
+    "message": "$COUNT$ žetona zamrzovanja bankan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_few": {
+    "message": "$COUNT$ žetoni zamrzovanja bankan",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_active_days_two": {
+    "message": "$COUNT$ aktivna dneva tega meseca ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_streak_active_days_few": {
+    "message": "$COUNT$ aktivni dnevi tega meseca ($MONTH$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "4"
+      },
+      "MONTH": {
+        "content": "$2",
+        "example": "August 2026"
+      }
+    }
+  },
+  "stats_blocked_count_two": {
+    "message": "$COUNT$ blokirana",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "stats_blocked_count_few": {
+    "message": "$COUNT$ blokirani",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}
