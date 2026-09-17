@@ -18,6 +18,23 @@
       }
     }
   },
+  "overlay_return_label_host": {
+    "message": "$ACTION$ - $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
   "overlay_target_checking": {
     "message": "Meklē pieejamās darba cilnes..."
   },
@@ -25,7 +42,7 @@
     "message": "Izvēlies atvērtu cilni, lai turpinātu uzdevumu."
   },
   "overlay_target_session_unavailable": {
-    "message": "Tava koncentrēšanās sesija nav pieejama. Mēģini vēlreiz vai pārlādē šo lapu."
+    "message": "Tava fokusa sesija nav pieejama. Mēģini vēlreiz vai pārlādē šo lapu."
   },
   "overlay_target_lookup_failed": {
     "message": "Neizdevās ielādēt tavu darba cilni. Mēģini vēlreiz vai pārlādē šo lapu."

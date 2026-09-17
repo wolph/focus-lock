@@ -24,7 +24,7 @@
     "message": "Cussam blacklist"
   },
   "options_whitelist_title": {
-    "message": "Whitelist"
+    "message": "Puting listahan"
   },
   "options_bundled_categories_heading": {
     "message": "Bundled categoies"
@@ -315,7 +315,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ kept available.",
+    "message": "$HOST$ available.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -345,7 +345,7 @@
     "message": "Kategorya bulk actions"
   },
   "options_selected_count": {
-    "message": "Selected $COUNT$",
+    "message": "Napili $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -354,7 +354,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Deselected $COUNT$",
+    "message": "Hindi napili $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -462,7 +462,7 @@
     }
   },
   "options_category_sites_region_aria": {
-    "message": "$CATEGORY$ sites",
+    "message": "$CATEGORY$ laman",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -507,7 +507,7 @@
     "message": "Sesyon type"
   },
   "options_schedule_entry_legend": {
-    "message": "Schedule entry"
+    "message": "Pagpasok ng oras"
   },
   "options_schedule_start_label": {
     "message": "Magsimula"
@@ -577,10 +577,10 @@
     "message": "Magdagdag schedule entry"
   },
   "options_sounds_heading": {
-    "message": "Sounds"
+    "message": "Mga tunog"
   },
   "options_master_volume": {
-    "message": "Master volume"
+    "message": "Pangunahing tunog"
   },
   "options_sound_session_complete": {
     "message": "Sesyon complete"
@@ -604,7 +604,7 @@
     }
   },
   "options_sound_play": {
-    "message": "Play"
+    "message": "I-play"
   },
   "options_sound_preview_error": {
     "message": "Could not pretsagnan the sound. Try agasa."
@@ -616,7 +616,7 @@
     "message": "Ipakita a system notification when a session completes"
   },
   "options_badge_heading": {
-    "message": "Badge"
+    "message": "Lencana"
   },
   "options_badge_countdown": {
     "message": "Ipakita the remaining time on the toolbar icon"

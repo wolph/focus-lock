@@ -100,7 +100,7 @@
     "message": "Uzstādīšanas stāvoklis nav pieejams. Pārlādē Focus Lock un mēģini vēlreiz."
   },
   "popup_snapshot_unavailable": {
-    "message": "Koncentrēšanās stāvoklis nav pieejams"
+    "message": "Fokusa stāvoklis nav pieejams"
   },
   "popup_action_in_progress": {
     "message": "Darbība tiek izpildīta"
@@ -121,7 +121,7 @@
     "message": "Turpināt tagad"
   },
   "popup_start_next_focus_early": {
-    "message": "Sākt koncentrēšanos ātrāk"
+    "message": "Sākt fokusēšanos ātrāk"
   },
   "popup_unlock_this_site": {
     "message": "Atbloķēt šo vietni"
@@ -469,7 +469,7 @@
     "message": "Elastīga"
   },
   "popup_session_type_friction": {
-    "message": "Berze"
+    "message": "Aizkave"
   },
   "popup_session_type_hard": {
     "message": "Stingra bloķēšana"
@@ -517,7 +517,7 @@
     "message": "Izvēlētā cilne nav pieejama - izvēlies citu"
   },
   "popup_cycles_label": {
-    "message": "Cikli: $FOCUS$ min koncentrēšanās, $SHORT_BREAK$ min pārtraukums, $LONG_BREAK$ min garais pārtraukums ik pēc $LONG_EVERY$ reizes",
+    "message": "Cikli: $FOCUS$ min fokuss, $SHORT_BREAK$ min pārtraukums, $LONG_BREAK$ min garais pārtraukums ik pēc $LONG_EVERY$ reizes",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -580,7 +580,7 @@
     "message": "nederīgs ilgums"
   },
   "popup_start_focus_label": {
-    "message": "Sākt koncentrēšanos ($DURATION$)",
+    "message": "Sākt $DURATION$ fokusu",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -627,6 +627,15 @@
   "popup_start_failed": {
     "message": "Neizdevās sākt sesiju. Mēģini vēlreiz."
   },
+  "popup_allowed_rules_zero": {
+    "message": "$COUNT$ atļautu noteikumu",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
   "popup_sites_zero": {
     "message": "$COUNT$ vietņu",
     "placeholders": {
@@ -651,15 +660,6 @@
       "COUNT": {
         "content": "$1",
         "example": "2"
-      }
-    }
-  },
-  "popup_allowed_rules_zero": {
-    "message": "$COUNT$ atļauto noteikumu",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1",
-        "example": "3"
       }
     }
   }

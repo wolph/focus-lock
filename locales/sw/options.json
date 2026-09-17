@@ -315,7 +315,7 @@
     }
   },
   "options_host_kept_available_announcement": {
-    "message": "$HOST$ kept available.",
+    "message": "$HOST$ kuhifadhiwa kupatikana.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -345,7 +345,7 @@
     "message": "Kategoriya bulk actions"
   },
   "options_selected_count": {
-    "message": "Selected $COUNT$",
+    "message": "Kuchaguliwa $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -354,7 +354,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "Deselected $COUNT$",
+    "message": "Kutobatua $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -507,7 +507,7 @@
     "message": "Kikao type"
   },
   "options_schedule_entry_legend": {
-    "message": "Schedule entry"
+    "message": "Kuingia mwongozo"
   },
   "options_schedule_start_label": {
     "message": "Anza"
@@ -550,10 +550,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blacklist"
+    "message": "orodha nyeusi"
   },
   "options_schedule_mode_whitelist": {
-    "message": "whitelist"
+    "message": "orodha nyeupe"
   },
   "options_schedule_strictness_flexible": {
     "message": "bkatikagu"
@@ -577,10 +577,10 @@
     "message": "Ongeza schedule entry"
   },
   "options_sounds_heading": {
-    "message": "Sounds"
+    "message": "Sauti"
   },
   "options_master_volume": {
-    "message": "Master volume"
+    "message": "Kiasi cha jumla"
   },
   "options_sound_session_complete": {
     "message": "Kikao complete"
@@ -604,7 +604,7 @@
     }
   },
   "options_sound_play": {
-    "message": "Play"
+    "message": "Mainisha"
   },
   "options_sound_preview_error": {
     "message": "Could not pretazama the sound. Try agakatika."
@@ -616,7 +616,7 @@
     "message": "Onyesha a system notification when a session completes"
   },
   "options_badge_heading": {
-    "message": "Badge"
+    "message": "Lencana"
   },
   "options_badge_countdown": {
     "message": "Onyesha the remaining time on the toolbar icon"

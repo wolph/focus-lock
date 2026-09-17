@@ -52,7 +52,7 @@
     "message": "Akhir session"
   },
   "shared_unlock": {
-    "message": "Unlock"
+    "message": "Buka kunci"
   },
   "shared_gate_wait_none": {
     "message": "tidak wait"
@@ -218,7 +218,7 @@
     "message": "Akhired: recovery failed"
   },
   "shared_duration_hours_minutes": {
-    "message": "$HOURS$ h $MINUTES$ m",
+    "message": "$HOURS$ j $MINUTES$ m",
     "placeholders": {
       "HOURS": {
         "content": "$1",
@@ -352,16 +352,16 @@
     "message": "Izinkaned by this session"
   },
   "shared_category_social": {
-    "message": "Social media"
+    "message": "Media sosial"
   },
   "shared_category_video": {
     "message": "Video dan streamdalamg"
   },
   "shared_category_news": {
-    "message": "News"
+    "message": "Berita"
   },
   "shared_category_mail": {
-    "message": "Mail"
+    "message": "Mel"
   },
   "shared_category_shopping": {
     "message": "Shoppdalamg"
@@ -421,7 +421,7 @@
     "message": "Blokiring"
   },
   "shared_section_schedule": {
-    "message": "Schedule"
+    "message": "Jadwal"
   },
   "shared_section_behavior": {
     "message": "Sesi behavior"
@@ -439,10 +439,10 @@
     "message": "Auke"
   },
   "shared_theme_light": {
-    "message": "Light"
+    "message": "Terang"
   },
   "shared_theme_dark": {
-    "message": "Dark"
+    "message": "Gelap"
   },
   "shared_theme_button": {
     "message": "Theme: $CURRENT$. Switch ke $NEXT$",
@@ -594,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "You said: $INTENTION$",
+    "message": "Anda berkata: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -603,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "Unlock $HOST$ $CLOCK$",
+    "message": "Buka kunci $HOST$ $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",

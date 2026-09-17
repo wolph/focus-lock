@@ -71,7 +71,7 @@
     }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ earned",
+    "message": "$EARNED$ diperoleh",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -182,7 +182,7 @@
     "message": "Attempts by jam, this machine only"
   },
   "stats_chart_other_site": {
-    "message": "other"
+    "message": "lain-lain"
   },
   "stats_chart_minutes_tick": {
     "message": "$MINUTES$m",
@@ -212,7 +212,7 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "Bar chart"
+    "message": "Carta bar"
   },
   "stats_chart_name_hbar": {
     "message": "Hpadaauizpadpadaal bar chart"
@@ -264,7 +264,7 @@
     "message": "Mulai"
   },
   "stats_sessions_col_planned": {
-    "message": "Planned"
+    "message": "Rencana"
   },
   "stats_sessions_col_focused": {
     "message": "Fokused"
@@ -279,10 +279,10 @@
     "message": "Nipada"
   },
   "stats_sessions_col_outcome": {
-    "message": "Outcome"
+    "message": "Hasil"
   },
   "stats_sessions_col_source": {
-    "message": "Source"
+    "message": "Sumber"
   },
   "stats_session_no_intention": {
     "message": "No nipada"
@@ -300,10 +300,10 @@
     "message": "manual"
   },
   "stats_session_source_schedule": {
-    "message": "schedule"
+    "message": "jadwal"
   },
   "stats_session_source_scheduled": {
-    "message": "scheduled"
+    "message": "dijadwalkan"
   },
   "stats_outcome_completed": {
     "message": "Selesaid"

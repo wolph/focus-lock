@@ -68,7 +68,7 @@
     }
   },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ natuklasan",
+    "message": "$EARNED$ nakuha",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -209,7 +209,7 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "Bar chart"
+    "message": "Tsart ng haligi"
   },
   "stats_chart_name_hbar": {
     "message": "Hoizsatal bar chart"
@@ -255,13 +255,13 @@
     "message": "Your first sesysa will appear here."
   },
   "stats_sessions_col_date": {
-    "message": "Date"
+    "message": "Petsa"
   },
   "stats_sessions_col_start": {
     "message": "Magsimula"
   },
   "stats_sessions_col_planned": {
-    "message": "Planned"
+    "message": "Pinlano"
   },
   "stats_sessions_col_focused": {
     "message": "Pokused"
@@ -270,16 +270,16 @@
     "message": "Lahat sites"
   },
   "stats_sessions_col_one_site": {
-    "message": "One site"
+    "message": "Isang site"
   },
   "stats_sessions_col_intention": {
     "message": "Layunsa"
   },
   "stats_sessions_col_outcome": {
-    "message": "Outcome"
+    "message": "Resulta"
   },
   "stats_sessions_col_source": {
-    "message": "Source"
+    "message": "Pinagmulan"
   },
   "stats_session_no_intention": {
     "message": "No layunsa"
@@ -294,13 +294,13 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "manual"
+    "message": "manu"
   },
   "stats_session_source_schedule": {
-    "message": "schedule"
+    "message": "iskedyul"
   },
   "stats_session_source_scheduled": {
-    "message": "scheduled"
+    "message": "nakalagay"
   },
   "stats_outcome_completed": {
     "message": "Kumpletod"

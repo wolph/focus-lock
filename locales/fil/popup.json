@@ -91,7 +91,7 @@
     "message": "Alisin everything and start over"
   },
   "popup_keep_data_button": {
-    "message": "Keep my data"
+    "message": "Panatilihin ang aking data"
   },
   "popup_delete_all_button": {
     "message": "Alisin all Focus Lock data"
@@ -257,7 +257,7 @@
     "message": "Could not update the gate. Try agasa."
   },
   "popup_gate_intention": {
-    "message": "You said: $INTENTION$",
+    "message": "Sinabi mo: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -336,7 +336,7 @@
     "message": "Regular expressisa"
   },
   "popup_category_sites_label": {
-    "message": "$CATEGORY$ sites",
+    "message": "$CATEGORY$ laman",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -354,7 +354,7 @@
     }
   },
   "popup_sites_other": {
-    "message": "$COUNT$ sites",
+    "message": "$COUNT$ laman",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -466,7 +466,7 @@
     "message": "Sesyon type"
   },
   "popup_session_type_flexible": {
-    "message": "Flexible"
+    "message": "Naabot"
   },
   "popup_session_type_friction": {
     "message": "Alitan"
@@ -553,7 +553,7 @@
     }
   },
   "popup_change_button": {
-    "message": "Change"
+    "message": "Baguhin"
   },
   "popup_session_settings_summary": {
     "message": "Sesyon settings"

@@ -52,7 +52,7 @@
     "message": "Tapusin session"
   },
   "shared_unlock": {
-    "message": "Unlock"
+    "message": "I-unlock"
   },
   "shared_gate_wait_none": {
     "message": "hindi wait"
@@ -358,10 +358,10 @@
     "message": "Video at streamsag"
   },
   "shared_category_news": {
-    "message": "News"
+    "message": "Balita"
   },
   "shared_category_mail": {
-    "message": "Mail"
+    "message": "Email"
   },
   "shared_category_shopping": {
     "message": "Shoppsag"
@@ -421,7 +421,7 @@
     "message": "Hadlanging"
   },
   "shared_section_schedule": {
-    "message": "Schedule"
+    "message": "Iskedyul"
   },
   "shared_section_behavior": {
     "message": "Sesyon behavior"
@@ -461,7 +461,7 @@
     "message": "Could not magsave theme. Reload page at try agasa."
   },
   "shared_host_search_label": {
-    "message": "Search $TITLE$ sites",
+    "message": "Paghahanap $TITLE$ sites",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -594,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "You said: $INTENTION$",
+    "message": "Sinabi mo: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -603,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "Unlock $HOST$ $CLOCK$",
+    "message": "I-unlock $HOST$ $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",

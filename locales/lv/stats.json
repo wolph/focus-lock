@@ -3,7 +3,7 @@
     "message": "Focus Lock statistika"
   },
   "stats_page_title": {
-    "message": "Tavs koncentrēšanās ieraksts"
+    "message": "Tavs fokusa ieraksts"
   },
   "stats_loading": {
     "message": "Ielādē tavu statistiku."
@@ -39,10 +39,10 @@
     "message": "Statistika parādīsies pēc tavas pirmās sesijas."
   },
   "stats_tile_focus_today": {
-    "message": "Koncentrēšanās šodien"
+    "message": "Fokuss šodien"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "Koncentrēšanās pēdējās 7 dienās"
+    "message": "Fokuss pēdējās 7 dienās"
   },
   "stats_tile_attempts_today": {
     "message": "Šodien bloķētie mēģinājumi"
@@ -83,7 +83,7 @@
     "message": "Sērija"
   },
   "stats_streak_empty": {
-    "message": "Tava sērija sākas ar pirmo koncentrēšanās dienu."
+    "message": "Tava sērija sākas ar pirmo fokusa dienu."
   },
   "stats_streak_unit_one": {
     "message": "diena"
@@ -92,7 +92,7 @@
     "message": "dienas"
   },
   "stats_streak_freeze_tokens_one": {
-    "message": "sakrāts $COUNT$ iesaldēšanas marķieris",
+    "message": "sakrāts $COUNT$ iesaldēšanas žetons",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -101,7 +101,7 @@
     }
   },
   "stats_streak_freeze_tokens_other": {
-    "message": "sakrāti $COUNT$ iesaldēšanas marķieri",
+    "message": "sakrāti $COUNT$ iesaldēšanas žetoni",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -161,10 +161,10 @@
     }
   },
   "stats_chart_focus_heading": {
-    "message": "Koncentrēšanās, pēdējās 14 dienas"
+    "message": "Fokuss, pēdējās 14 dienas"
   },
   "stats_chart_focus_empty": {
-    "message": "Koncentrēšanās minūtes parādīsies pēc tavas pirmās sesijas."
+    "message": "Fokusa minūtes parādīsies pēc tavas pirmās sesijas."
   },
   "stats_chart_attempts_heading": {
     "message": "Bloķētie mēģinājumi, pēdējās 14 dienas"
@@ -314,17 +314,17 @@
   "stats_outcome_running": {
     "message": "Notiek"
   },
-  "stats_streak_unit_zero": {
-    "message": "dienu"
-  },
   "stats_streak_freeze_tokens_zero": {
-    "message": "sakrāts $COUNT$ iesaldēšanas marķieru",
+    "message": "sakrāti $COUNT$ iesaldēšanas žetonu",
     "placeholders": {
       "COUNT": {
         "content": "$1",
         "example": "2"
       }
     }
+  },
+  "stats_streak_unit_zero": {
+    "message": "dienu"
   },
   "stats_streak_active_days_zero": {
     "message": "$COUNT$ aktīvu dienu šomēnes ($MONTH$)",

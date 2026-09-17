@@ -1,6 +1,6 @@
 {
   "popup_next_schedule": {
-    "message": "next: $DAY$ $TIME$",
+    "message": "അടുത്തത്: $DAY$ $TIME$",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -13,109 +13,184 @@
     }
   },
   "popup_settings_button_label": {
-    "message": "സെറ്റിംഗുകൾ"
+    "message": "ക്രമീകരണങ്ങൾ"
   },
   "popup_open_settings_failed": {
-    "message": "Could not open സെറ്റിംഗുകൾ. Try again."
+    "message": "ക്രമീകരണങ്ങൾ തുറക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load സെഷൻ സെറ്റിംഗുകൾ. Reload the popup to try again. Defaults are shown."
+    "message": "സെഷൻ ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. പോപ്പപ്പ് വീണ്ടും ലോഡ് ചെയ്ത് ശ്രമിക്കുക. സ്ഥിരതകൾ കാണിച്ചിരിക്കുന്നു."
+  },
+  "popup_open_setup_failed": {
+    "message": "സെറ്റআപ്പ് തുറക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "popup_setup_required_heading": {
+    "message": "Focus Lock സെറ്റ് ചെയ്യൽ പൂർത്തിയാക്കുക"
   },
   "popup_setup_required_body": {
-    "message": "Choose your starting lists, website access, and storage mode before starting a സെഷൻ."
+    "message": "ഒരു സെഷൻ ആരംഭിക്കുന്നതിനുമുമ്പ് നിങ്ങളുടെ ആരംഭ പട്ടികകൾ, വെബ്സൈറ്റ് ആക്സസ്സ്, സ്റ്റോറേജ് മോഡ് തിരഞ്ഞെടുക്കുക."
   },
   "popup_open_setup_button": {
-    "message": "Open setup"
+    "message": "സെറ്റാപ്പ് തുറക്കുക"
+  },
+  "popup_blocking_confirm_failed": {
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് സ്ഥിരീകരിക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not സജീവമാക്കുക website blocking. Try again."
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "popup_blocking_off_heading": {
-    "message": "Website blocking is off"
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് ഓഫാണ്"
   },
   "popup_blocking_off_body": {
-    "message": "Focus Lock cannot ആരംഭിക്കുക a സെഷൻ until Chrome grants website access and blocking is enabled."
+    "message": "Focus Lock ഒരു സെഷൻ ആരംഭിക്കാൻ കഴിയുന്നത് വരെ Chrome വെബ്സൈറ്റ് ആക്സസ്സ് നൽകി ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കുന്നത് വരെ."
+  },
+  "popup_blocking_off_denied": {
+    "message": "Chrome വെബ്സൈറ്റ് ആക്സസ്സ് നൽകിയില്ല. വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് ഇതുവരെയും ഓഫാണ്."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but Focus Lock could not സജീവമാക്കുക blocking. Retry setup or reload the extension."
+    "message": "വെബ്സൈറ്റ് ആക്സസ്സ് നൽകിയിരിക്കുന്നു എന്നാൽ Focus Lock ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാൻ കഴിഞ്ഞില്ല. സെറ്റാപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ വീണ്ടും ലോഡ് ചെയ്യുക."
   },
   "popup_enable_blocking_button": {
-    "message": "സജീവം website blocking"
+    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കുക"
   },
   "popup_retry_button": {
-    "message": "Retry"
+    "message": "വീണ്ടും ശ്രമിക്കുക"
   },
   "popup_notice_access_revoked": {
-    "message": "Your സെഷൻ ended because website access was removed."
+    "message": "വെബ്സൈറ്റ് ആക്സസ്സ് നീക്കം ചെയ്യപ്പെട്ടതിനാൽ നിങ്ങളുടെ സെഷൻ അവസാനിച്ചു."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your സെഷൻ ended because Focus Lock could not സജീവമാക്കുക website blocking."
+    "message": "Focus Lock വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാൻ കഴിഞ്ഞില്ലതിനാൽ നിങ്ങളുടെ സെഷൻ അവസാനിച്ചു."
+  },
+  "popup_dismiss_notice_failed": {
+    "message": "ഈ സൂചന പിരിച്ചുവിടാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "വെബ്സൈറ്റ് ആക്സസ്സ് സൂചന പിരിച്ചുവിടുക"
   },
   "popup_dismiss_button": {
-    "message": "Dismiss"
+    "message": "പിരിച്ചുവിടുക"
+  },
+  "popup_restart_failed": {
+    "message": "Focus Lock വീണ്ടും ആരംഭിക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "popup_boot_failed_heading": {
-    "message": "Focus Lock could not ആരംഭിക്കുക"
+    "message": "Focus Lock ആരംഭിക്കാൻ കഴിഞ്ഞില്ല"
+  },
+  "popup_boot_reason_unavailable": {
+    "message": "കാരണം വായിക്കാൻ കഴിഞ്ഞില്ല."
   },
   "popup_reset_runtime_button": {
-    "message": "Reset local runtime"
+    "message": "സ്ഥാനിക റൺടൈം പുനഃസജ്ജമാക്കുക"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your സെറ്റിംഗുകൾ, lists, and statistics. Clears the current സെഷൻ state."
+    "message": "നിങ്ങളുടെ ക്രമീകരണങ്ങൾ, പട്ടികകൾ, സ്ഥിതിവിവരം സൂക്ഷിക്കുക. നിലവിലെ സെഷൻ അവസ്ഥ മായ്ച്ചുകളയുക."
   },
   "popup_delete_all_confirm_button": {
-    "message": "കണ്ടെത്തുക everything and start over"
+    "message": "എല്ലാം ഇല്ലാതാക്കി വീണ്ടും ആരംഭിക്കുക"
   },
   "popup_keep_data_button": {
-    "message": "Keep my data"
+    "message": "എന്റെ ഡാറ്റ സൂക്ഷിക്കുക"
   },
   "popup_delete_all_button": {
-    "message": "കണ്ടെത്തുക all Focus Lock data"
+    "message": "Focus Lock എന്നതിന്റെ എല്ലാ ഡാറ്റ ഇല്ലാതാക്കുക"
+  },
+  "popup_setup_status_unavailable": {
+    "message": "സെറ്റാപ്പ് അവസ്ഥ ലഭ്യമല്ല. Focus Lock വീണ്ടും ലോഡ് ചെയ്ത് ശ്രമിക്കുക."
   },
   "popup_snapshot_unavailable": {
-    "message": "Focus status unavailable"
+    "message": "ഫോക്കസ് അവസ്ഥ ലഭ്യമല്ല"
   },
   "popup_action_in_progress": {
-    "message": "Action in progress"
+    "message": "പ്രവർത്തനം പുരോഗതിയിലാണ്"
   },
   "popup_active_site_checking": {
-    "message": "Checking the active site"
+    "message": "സജീവ സൈറ്റ് പരിശോധിക്കുന്നു"
+  },
+  "popup_active_site_unsupported": {
+    "message": "അത് അൺലോക്ക് ചെയ്യാൻ ഒരു സാധാരണ വെബ്സൈറ്റ് തുറക്കുക"
+  },
+  "popup_active_site_unknown": {
+    "message": "സജീവ സൈറ്റ് തിരിച്ചറിയാൻ കഴിഞ്ഞില്ല"
+  },
+  "popup_active_site_error": {
+    "message": "സജീവ സൈറ്റ് തിരിച്ചറിയാൻ കഴിഞ്ഞില്ല."
   },
   "popup_resume_now": {
-    "message": "Resume now"
+    "message": "ഇപ്പോൾ പുനരാരംഭിക്കുക"
   },
   "popup_start_next_focus_early": {
-    "message": "ആരംഭിക്കുക next focus early"
+    "message": "അടുത്ത ഫോക്കസ് നേരത്തെ ആരംഭിക്കുക"
   },
   "popup_unlock_this_site": {
-    "message": "Unlock this site"
+    "message": "ഈ സൈറ്റ് അൺലോക്ക് ചെയ്യുക"
   },
   "popup_unlock_all_sites": {
-    "message": "Unlock all sites"
+    "message": "എല്ലാ സൈറ്റുകൾ അൺലോക്ക് ചെയ്യുക"
+  },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ ആക്സസ്സ്, $CREDIT$ ക്രെഡിറ്റ്",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ ആക്സസ്സ്, $CREDIT$ ക്രെഡിറ്റ് - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
   },
   "popup_choose_work_tab_button": {
-    "message": "Choose work tab"
+    "message": "വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക"
   },
   "popup_change_work_tab_button": {
-    "message": "Change work tab"
+    "message": "വർക്ക് ടാബ് മാറ്റുക"
   },
   "popup_session_actions_summary": {
-    "message": "സെഷൻ actions"
+    "message": "സെഷൻ പ്രവർത്തനങ്ങൾ"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ സൈറ്റ് ആക്സസ്സ് ക്രെഡിറ്റ്",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
   },
   "popup_add_allowed_domain_label": {
-    "message": "ചേർക്കുക an allowed domain"
+    "message": "അനുമതിപ്പെട്ട ഡൊമെയ്ൻ ചേർക്കുക"
   },
   "popup_allowed_domain_placeholder": {
     "message": "docs.example.com"
   },
   "popup_add_allowed_domain_button": {
-    "message": "ചേർക്കുക allowed domain"
+    "message": "അനുമതിപ്പെട്ട ഡൊമെയ്ൻ ചേർക്കുക"
   },
   "popup_add_button": {
     "message": "ചേർക്കുക"
   },
   "popup_draft_allowed_only": {
-    "message": "Only $COUNT$ allowed site rules. Other websites തടഞ്ഞിരിക്കുന്നു.",
+    "message": "കേവലം $COUNT$ അനുമതിപ്പെട്ട സൈറ്റ് നിയമങ്ങൾ. മറ്റ് വെബ്സൈറ്റുകൾ ബ്ലോക്ക് ചെയ്തിരിക്കുന്നു.",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -124,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ തടഞ്ഞിരിക്കുന്നു categories, $RULES$ extra rules.",
+    "message": "$CATEGORIES$ ബ്ലോക്ക് ചെയ്ത വിഭാഗങ്ങൾ, $RULES$ അധിക നിയമങ്ങൾ.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -137,13 +212,22 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "ഹാർഡ് ലോക്ക്. അതിരാത്രി അവസാനിപ്പിക്കാൻ കഴിയില്ല."
+    "message": "കഠിനമായ ലോക്ക്. നേരത്തെ അവസാനിപ്പിക്കാൻ കഴിയില്ല."
   },
   "popup_draft_stop_flexible": {
-    "message": "Can end at any time."
+    "message": "ഏത് സമയത്തും അവസാനിപ്പിക്കാൻ കഴിയും."
   },
   "popup_draft_stop_friction": {
-    "message": "$SECONDS$s കാത്തിരുന്നതിന് ശേഷം അവസാനിപ്പിക്കുക.",
+    "message": "$SECONDS$s കാത്തിരിപ്പിനു ശേഷം അവസാനിപ്പിക്കുക.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "popup_draft_stop_friction_phrase": {
+    "message": "$SECONDS$s കാത്തിരിപ്പ് കൂടാതെ സ്ഥിരീകരണ വാക്യത്തിനു ശേഷം അവസാനിപ്പിക്കുക.",
     "placeholders": {
       "SECONDS": {
         "content": "$1",
@@ -152,22 +236,28 @@
     }
   },
   "popup_session_length_label": {
-    "message": "സെഷൻ length"
+    "message": "സെഷൻ ദൈർഘ്യം"
   },
   "popup_custom_minutes_label": {
-    "message": "Custom minutes"
+    "message": "പ്രത്യേക മിനിറ്റുകൾ"
   },
   "popup_custom_minutes_placeholder": {
-    "message": "മി"
+    "message": "മിനി"
+  },
+  "popup_gate_force_end": {
+    "message": "ടൈംഔട്ട് അവഗണിക്കുകയും എന്തായാലും അവസാനിപ്പിക്കുക"
   },
   "popup_gate_keep_focusing": {
-    "message": "Keep focusing"
+    "message": "ഫോക്കസ് ചെയ്തുകൊണ്ടുതുടരുക"
   },
   "popup_gate_phrase_label": {
-    "message": "Type:"
+    "message": "ടൈപ്പ് ചെയ്യുക:"
+  },
+  "popup_gate_update_failed": {
+    "message": "ഗേറ്റ് അപ്ഡേറ്റ് ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "popup_gate_intention": {
-    "message": "You said: $INTENTION$",
+    "message": "നിങ്ങൾ പറഞ്ഞു: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -176,10 +266,10 @@
     }
   },
   "popup_gate_wait_prefix": {
-    "message": "A moment to decide:"
+    "message": "തീരുമാനിക്കാൻ ഒരു നിമിഷം:"
   },
   "popup_gate_wait_remaining": {
-    "message": "of $TOTAL$ s",
+    "message": "$TOTAL$ സെ ൽ",
     "placeholders": {
       "TOTAL": {
         "content": "$1",
@@ -188,25 +278,65 @@
     }
   },
   "popup_back_to_work": {
-    "message": "Back to work"
+    "message": "വർക്കിലേക്ക് തിരിച്ചുപോകുക"
   },
   "popup_destination_unavailable": {
-    "message": "Destination unavailable"
+    "message": "ലക്ഷ്യ ലഭ്യമല്ല"
+  },
+  "popup_back_to_work_name": {
+    "message": "വർക്കിലേക്ക് തിരിച്ചുപോകുക: $DESTINATION$",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      }
+    }
+  },
+  "popup_back_to_work_name_host": {
+    "message": "വർക്കിലേക്ക് തിരിച്ചുപോകുക: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "DESTINATION": {
+        "content": "$1",
+        "example": "Quarterly report"
+      },
+      "HOSTNAME": {
+        "content": "$2",
+        "example": "docs.example.com"
+      }
+    }
   },
   "popup_categories_locked": {
-    "message": "Category editing is disabled until തടഞ്ഞിരിക്കുന്നു-site lists reload."
+    "message": "ബ്ലോക്ക് ചെയ്ത സൈറ്റ് പട്ടികകൾ വീണ്ടും ലോഡ് ചെയ്യുന്നത് വരെ വിഭാഗ എഡിറ്റിംഗ് പ്രവർത്തനരഹിതമാണ്."
   },
   "popup_blocked_categories_heading": {
-    "message": "തടഞ്ഞിരിക്കുന്നു categories"
+    "message": "ബ്ലോക്ക് ചെയ്ത വിഭാഗങ്ങൾ"
+  },
+  "popup_show_full_domain": {
+    "message": "പൂർണ്ണ ഡൊമെയ്ൻ കാണിക്കുക: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "news.example.com"
+      }
+    }
+  },
+  "popup_show_full_regex": {
+    "message": "പൂർണ നിയമങ്ങൾ കാണിക്കുക: $PATTERN$",
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "^https://example\\.com/feed"
+      }
+    }
   },
   "popup_rule_kind_domain": {
-    "message": "Domain"
+    "message": "ഡൊമെയ്ൻ"
   },
   "popup_rule_kind_regex": {
-    "message": "Regular expression"
+    "message": "നിയമങ്ങൾ"
   },
   "popup_category_sites_label": {
-    "message": "$CATEGORY$ sites",
+    "message": "$CATEGORY$ സൈറ്റുകൾ",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -215,7 +345,7 @@
     }
   },
   "popup_sites_one": {
-    "message": "$COUNT$ site",
+    "message": "$COUNT$ സൈറ്റ്",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -224,7 +354,7 @@
     }
   },
   "popup_sites_other": {
-    "message": "$COUNT$ sites",
+    "message": "$COUNT$ സൈറ്റുകൾ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -233,7 +363,7 @@
     }
   },
   "popup_more_sites_one": {
-    "message": "and $COUNT$ more site",
+    "message": "കൂടാതെ $COUNT$ കൂടുതൽ സൈറ്റ്",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -242,7 +372,7 @@
     }
   },
   "popup_more_sites_other": {
-    "message": "and $COUNT$ more sites",
+    "message": "കൂടാതെ $COUNT$ കൂടുതൽ സൈറ്റുകൾ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -251,28 +381,41 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "Allowed exceptions"
+    "message": "അനുവദിക്കുന്ന അപവാദങ്ങൾ"
   },
   "popup_extra_blocked_heading": {
-    "message": "Extra തടഞ്ഞിരിക്കുന്നു rules"
+    "message": "അധിക ബ്ലോക്ക് നിയമങ്ങൾ"
   },
   "popup_no_extra_blocked": {
-    "message": "No extra തടഞ്ഞിരിക്കുന്നു rules."
+    "message": "അധിക ബ്ലോക്ക് നിയമങ്ങൾ ഇല്ല."
   },
   "popup_allowed_heading": {
-    "message": "Allowed sites and rules"
+    "message": "അനുമതിപ്പെട്ട സൈറ്റുകൾ കൂടാതെ നിയമങ്ങൾ"
   },
   "popup_no_allowed_sites": {
-    "message": "No sites are allowed yet."
+    "message": "ഒരു സൈറ്റുകളും ഇതുവരെ അനുമതിപ്പെട്ടിരിക്കുന്നില്ല."
   },
   "popup_what_will_be_blocked": {
-    "message": "What will be തടഞ്ഞിരിക്കുന്നു"
+    "message": "എന്താണ് ബ്ലോക്ക് ചെയ്യപ്പെടും"
   },
   "popup_what_will_be_allowed": {
-    "message": "What will be allowed"
+    "message": "എന്താണ് അനുവദിക്കപ്പെടും"
+  },
+  "popup_categories_selected": {
+    "message": "$SELECTED$ of $TOTAL$ വിഭാഗങ്ങൾ തിരഞ്ഞെടുത്തിരിക്കുന്നു",
+    "placeholders": {
+      "SELECTED": {
+        "content": "$1",
+        "example": "1"
+      },
+      "TOTAL": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
   },
   "popup_extra_blocked_rules_one": {
-    "message": "$COUNT$ extra തടഞ്ഞിരിക്കുന്നു rule",
+    "message": "$COUNT$ അധിക ബ്ലോക്ക് നിയമം",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -281,7 +424,7 @@
     }
   },
   "popup_extra_blocked_rules_other": {
-    "message": "$COUNT$ extra തടഞ്ഞിരിക്കുന്നു rules",
+    "message": "$COUNT$ അധിക ബ്ലോക്ക് നിയമങ്ങൾ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -290,7 +433,7 @@
     }
   },
   "popup_allowed_rules_one": {
-    "message": "$COUNT$ allowed rule",
+    "message": "$COUNT$ അനുമതിപ്പെട്ട നിയമം",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -299,7 +442,7 @@
     }
   },
   "popup_allowed_rules_other": {
-    "message": "$COUNT$ allowed rules",
+    "message": "$COUNT$ അനുമതിപ്പെട്ട നിയമങ്ങൾ",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -308,55 +451,100 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "Allowed-site and rule changes here apply only to this സെഷൻ. Everything else is തടഞ്ഞിരിക്കുന്നു."
+    "message": "ഈ സെഷനിനേക്കുറിച്ച് അനുവദിക്കുന്ന-സൈറ്റ് കൂടാതെ നിയമ മാറ്റങ്ങൾ. മറ്റെല്ലാം ബ്ലോക്ക് ചെയ്തിരിക്കുന്നു."
   },
   "popup_scope_blacklist": {
-    "message": "Category and rule changes here apply only to this സെഷൻ."
+    "message": "ഈ സെഷനിനേക്കുറിച്ച് വിഭാഗ കൂടാതെ നിയമ മാറ്റങ്ങൾ."
   },
   "popup_open_settings_defaults": {
-    "message": "Open സെറ്റിംഗുകൾ for permanent defaults"
+    "message": "സ്ഥിരമായ സ്ഥിരതകൾക്കായി ക്രമീകരണങ്ങൾ തുറക്കുക"
   },
   "popup_rule_details_label": {
-    "message": "സെഷൻ rule details"
+    "message": "സെഷൻ നിയം വിവരങ്ങൾ"
   },
   "popup_session_type_legend": {
-    "message": "സെഷൻ type"
+    "message": "സെഷൻ തരം"
   },
   "popup_session_type_flexible": {
-    "message": "Flexible"
+    "message": "വഴക്കമുള്ള"
   },
   "popup_session_type_friction": {
-    "message": "Friction"
+    "message": "ഘർഷണം"
   },
   "popup_session_type_hard": {
-    "message": "Hard lock"
+    "message": "കഠിനമായ ലോക്ക്"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the സെഷൻ immediately whenever you choose."
+    "message": "നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന ഏത് സമയത്തും സെഷൻ ഉടനെ അവസാനിപ്പിക്കുക."
+  },
+  "popup_session_type_friction_hint": {
+    "message": "നേരത്തെ അവസാനിപ്പിക്കാൻ $WAIT$ ആവശ്യമാണ്. ടൈപ്പിംഗ് ആവശ്യമില്ല.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
+  },
+  "popup_session_type_friction_hint_phrase": {
+    "message": "നേരത്തെ അവസാനിപ്പിക്കാൻ $WAIT$ കൂടാതെ ടൈപ്പ് സ്ഥിരീകരണം ആവശ്യമാണ്.",
+    "placeholders": {
+      "WAIT": {
+        "content": "$1",
+        "example": "a 10-second wait"
+      }
+    }
   },
   "popup_session_type_hard_hint": {
-    "message": "The സെഷൻ cannot end early. Site access credit still works."
+    "message": "സെഷൻ നേരത്തെ അവസാനിപ്പിക്കാൻ കഴിയില്ല. സൈറ്റ് ആക്സസ്സ് ക്രെഡിറ്റ് ഇപ്പോഴും പ്രവർത്തിക്കുന്നു."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected categories and extra rules are തടഞ്ഞിരിക്കുന്നു. Other sites remain available."
+    "message": "തിരഞ്ഞെടുത്ത വിഭാഗങ്ങൾ കൂടാതെ അധിക നിയമങ്ങൾ ബ്ലോക്ക് ചെയ്തിരിക്കുന്നു. മറ്റ് സൈറ്റുകൾ ലഭ്യമായി തുടരുക."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. Every other website is തടഞ്ഞിരിക്കുന്നു."
+    "message": "കേവലം സൂചിപ്പിച്ച സൈറ്റുകൾ ലഭ്യമാണ്. മറ്റെല്ലാ വെബ്സൈറ്റുകൾ ബ്ലോക്ക് ചെയ്തിരിക്കുന്നു."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a സെഷൻ length greater than zero minutes."
+    "message": "പൂജ്യ മിനിറ്റുകളേക്കാൾ കൂടിയ സെഷൻ ദൈർഘ്യം നൽകുക."
+  },
+  "popup_stale_lists_unavailable": {
+    "message": "സ്ഥിരതകൾ മാറിയെങ്കിലും നിലവിലെ പട്ടികകൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. പോപ്പപ്പ് വീണ്ടും ലോഡ് ചെയ്യുക."
   },
   "popup_no_work_tab_option": {
-    "message": "No work tab (optional)"
+    "message": "വർക്ക് ടാബ് ഇല്ലാ (ഐച്ഛികം)"
+  },
+  "popup_work_tab_unavailable_option": {
+    "message": "തിരഞ്ഞെടുത്ത ടാബ് ലഭ്യമല്ല - മറ്റൊന്ന് തിരഞ്ഞെടുക്കുക"
+  },
+  "popup_cycles_label": {
+    "message": "സൈക്കിളുകൾ: $FOCUS$ മിനി ഫോക്കസ്, $SHORT_BREAK$ മിനി ബ്രേക്ക്, $LONG_BREAK$ മിനി ദീർഘ ബ്രേക് എല്ലാ $LONG_EVERY$th",
+    "placeholders": {
+      "FOCUS": {
+        "content": "$1",
+        "example": "25"
+      },
+      "SHORT_BREAK": {
+        "content": "$2",
+        "example": "5"
+      },
+      "LONG_BREAK": {
+        "content": "$3",
+        "example": "15"
+      },
+      "LONG_EVERY": {
+        "content": "$4",
+        "example": "4"
+      }
+    }
   },
   "popup_intention_label": {
-    "message": "Intention"
+    "message": "ഉദ്ദേശ്യം"
   },
   "popup_intention_placeholder": {
-    "message": "What are you working on?"
+    "message": "നിങ്ങൾ എന്തിൽ പ്രവർത്തിക്കുന്നു?"
   },
   "popup_work_tab_named": {
-    "message": "Work tab: $TITLE$",
+    "message": "വർക്ക് ടാബ്: $TITLE$",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -365,19 +553,19 @@
     }
   },
   "popup_change_button": {
-    "message": "Change"
+    "message": "മാറ്റുക"
   },
   "popup_session_settings_summary": {
-    "message": "സെഷൻ settings"
+    "message": "സെഷൻ ക്രമീകരണങ്ങൾ"
   },
   "popup_choose_work_tab_label": {
-    "message": "Choose a work tab"
+    "message": "വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക"
   },
   "popup_work_tab_select_label": {
-    "message": "Work tab"
+    "message": "വർക്ക് ടാബ്"
   },
   "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Current)",
+    "message": "$TITLE$ (നിലവിലെ)",
     "placeholders": {
       "TITLE": {
         "content": "$1",
@@ -386,13 +574,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "Blocking mode"
+    "message": "ബ്ലോക്കിംഗ് മോഡ്"
   },
   "popup_invalid_time_label": {
-    "message": "invalid time"
+    "message": "അസാധുവായ സമയം"
   },
   "popup_start_focus_label": {
-    "message": "ആരംഭിക്കുക $DURATION$ focus",
+    "message": "$DURATION$ ഫോക്കസ് ആരംഭിക്കുക",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -400,25 +588,43 @@
       }
     }
   },
+  "popup_invalid_domain_error": {
+    "message": "docs.example.com പോലെയുള്ള സാധുവായ ഡൊമെയ്ൻ നൽകുക."
+  },
+  "popup_work_tabs_unavailable": {
+    "message": "വർക്ക് ടാബുകൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. പോപ്പപ്പ് പുനരാരംഭിക്കുക ശ്രമിക്കാൻ."
+  },
   "popup_use_this_tab": {
-    "message": "Use this tab"
+    "message": "ഈ ടാബ് ഉപയോഗിക്കുക"
+  },
+  "popup_current_tab_unavailable": {
+    "message": "ഈ ടാബ് വർക്കിനേക്കുറിച്ച് ലഭ്യമല്ല. മറ്റൊരു തുറന്ന ടാബ് തിരഞ്ഞെടുക്കുക."
   },
   "popup_checking_current_tab": {
-    "message": "Checking current tab..."
+    "message": "നിലവിലെ ടാബ് പരിശോധിക്കുന്നു..."
+  },
+  "popup_finding_current_tab": {
+    "message": "നിങ്ങളുടെ നിലവിലെ ടാബ് കണ്ടെത്തുന്നു..."
+  },
+  "popup_current_tab_load_failed": {
+    "message": "നിങ്ങളുടെ നിലവിലെ ടാബ് ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
+  },
+  "popup_choose_work_tab_copy": {
+    "message": "നിങ്ങളുടെ വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക അല്ലെങ്കിൽ മാറ്റിസ്ഥാപിക്കുക."
   },
   "popup_saving_work_tab": {
-    "message": "Saving work tab..."
+    "message": "വർക്ക് ടാബ് സംരക്ഷിക്കുന്നു..."
   },
   "popup_save_work_tab_failed": {
-    "message": "Could not സംരക്ഷിക്കുക the work tab. Try again."
+    "message": "വർക്ക് ടാബ് സംരക്ഷിക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "popup_choose_open_tab_option": {
-    "message": "Choose an open tab"
+    "message": "തുറന്ന ടാബ് തിരഞ്ഞെടുക്കുക"
   },
   "popup_or_choose_another_tab": {
-    "message": "Or choose another tab"
+    "message": "അല്ലെങ്കിൽ മറ്റൊരു ടാബ് തിരഞ്ഞെടുക്കുക"
   },
   "popup_start_failed": {
-    "message": "Could not ആരംഭിക്കുക സെഷൻ. Try again."
+    "message": "സെഷൻ ആരംഭിക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
   }
 }

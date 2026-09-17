@@ -52,7 +52,7 @@
     "message": "Malizia session"
   },
   "shared_unlock": {
-    "message": "Unlock"
+    "message": "Fungua"
   },
   "shared_gate_wait_none": {
     "message": "hapana wait"
@@ -352,16 +352,16 @@
     "message": "Ruhusued by this session"
   },
   "shared_category_social": {
-    "message": "Social media"
+    "message": "Mitandao ya kijamii"
   },
   "shared_category_video": {
     "message": "Video na streamkatikag"
   },
   "shared_category_news": {
-    "message": "News"
+    "message": "Habari"
   },
   "shared_category_mail": {
-    "message": "Mail"
+    "message": "Barua"
   },
   "shared_category_shopping": {
     "message": "Shoppkatikag"
@@ -421,7 +421,7 @@
     "message": "Zuiaing"
   },
   "shared_section_schedule": {
-    "message": "Schedule"
+    "message": "Ratiba"
   },
   "shared_section_behavior": {
     "message": "Kikao behavior"
@@ -439,10 +439,10 @@
     "message": "Aukwa"
   },
   "shared_theme_light": {
-    "message": "Light"
+    "message": "Nuru"
   },
   "shared_theme_dark": {
-    "message": "Dark"
+    "message": "Giza"
   },
   "shared_theme_button": {
     "message": "Theme: $CURRENT$. Switch kwa $NEXT$",
@@ -594,7 +594,7 @@
     }
   },
   "shared_overlay_gate_said": {
-    "message": "You said: $INTENTION$",
+    "message": "Ulisema: $INTENTION$",
     "placeholders": {
       "INTENTION": {
         "content": "$1",
@@ -603,7 +603,7 @@
     }
   },
   "shared_overlay_unlock_host": {
-    "message": "Unlock $HOST$ $CLOCK$",
+    "message": "Fungua $HOST$ $CLOCK$",
     "placeholders": {
       "HOST": {
         "content": "$1",
