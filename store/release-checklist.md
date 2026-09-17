@@ -21,9 +21,13 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
   its English length in Catalan, Greek, Filipino, Croatian, European Portuguese or Slovenian. A
   length warning is a layout hint, not a defect.
 - The 53 catalogues carry 36,778 messages against 686 English keys.
-- The full browser suite was run: 133 scenarios on one worker in 14.7 minutes, 109 passed, 20
-  skipped and 4 failed. One failure was a stale assertion this release made stale, fixed in
-  `517e753` and re-run green. The other three are the screenshot gap described below.
+- The full browser suite was run twice. The first run, before the fix below, was 109 passed, 20
+  skipped and 4 failed in 14.7 minutes. One of those four was an assertion this release had made
+  stale: the Stats count is now rendered through `Intl.NumberFormat`, so the page says `1,234,567`
+  where the test still demanded `1234567`. The number was right and the test was old. `517e753`
+  matches the digits with an optional group separator, so the assertion holds in every locale
+  rather than in English only. The confirming run afterwards was 110 passed, 20 skipped and 3
+  failed in 15.2 minutes, and all three failures are the screenshot gap described below.
 - The five scenarios recorded as red against 0.1.1 all pass now. `indefinite-recovery.spec.ts` and
   `system.spec.ts` are green throughout, at 6 passed and 0 failed each, and the two `qa-flows`
   scenarios named there pass as well. Their recorded line numbers had drifted with this release, so
