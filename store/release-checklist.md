@@ -19,13 +19,15 @@ locale, and any key a catalogue lacks falls back to English rather than renderin
   its English length in Catalan, Greek, Filipino, Croatian, European Portuguese or Slovenian. A
   length warning is a layout hint, not a defect.
 - The 53 catalogues carry 36,778 messages against 686 English keys.
-- The full browser suite was run on this build: 112 passed, 20 skipped and 3 failed. All three
-  failures are the screenshot gap described below, and nothing else in the suite is red.
-- Two rounds of popup work sit between this candidate and 0.1.1, and each was caught by the suite
-  rather than by review. Making the session actions always visible broke 22 scenarios through one
-  shared test helper that clicked a disclosure that no longer exists. Moving the work tab chooser to
-  the top left the popup with no enabled button in its core, so focus went nowhere when a gate
-  closed. Both are fixed and pinned.
+- The full browser suite passes outright: 116 passed, 20 skipped, nothing failed, exit status 0 in
+  13.5 minutes. That includes all nine store-screenshot scenarios, which had been red for the whole
+  of this release until the images were recaptured from this build.
+- Two rounds of popup work sit between this candidate and 0.1.1, and the suite caught every
+  regression rather than review. Making the session actions always visible broke 22 scenarios
+  through one shared helper that clicked a disclosure that no longer exists. Moving the work tab
+  chooser to the top left the popup with no enabled button in its core, so focus went nowhere when
+  a gate closed. Two further scenarios still drove controls that had been deleted or renamed, one
+  of them passing only against a stale pages build. All are fixed and pinned.
 - The five scenarios recorded as red against 0.1.1 all pass now. `indefinite-recovery.spec.ts` and
   `system.spec.ts` are green throughout, at 6 passed and 0 failed each, and the two `qa-flows`
   scenarios named there pass as well. Their recorded line numbers had drifted with this release, so
