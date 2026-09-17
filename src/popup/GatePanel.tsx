@@ -31,10 +31,12 @@ export type GateCommandSender = (
  */
 export type GateCommandErrorMapper = (response: unknown, fallback: string) => string | null;
 
-/** The cancel-gate copy the End authority publishes, so these literals cannot drift from it. */
-type PublishedCancelGateCopy = Extract<EndAuthorityV2, { copy: { confirm: string } }>['copy'];
-
-const CANCEL_CONFIRM_LABEL: PublishedCancelGateCopy['confirm'] = 'End the session';
+/**
+ * The cancel gate's own confirm, for a gate that arrives without published copy. The worker
+ * publishes the same words as a fixed English tag that the runtime contract validates, and
+ * `confirmLabelText` in v2-command.tsx turns that tag into this very message, so the two agree in
+ * every language.
+ */
 
 /**
  * The default confirm of each gate kind. An open End authority publishes its own cancel-gate
@@ -43,7 +45,7 @@ const CANCEL_CONFIRM_LABEL: PublishedCancelGateCopy['confirm'] = 'End the sessio
 const CONFIRM_LABELS: Record<GateKind, string> = {
   pause: t('popup_unlock_all_sites'),
   unlockSite: t('popup_unlock_this_site'),
-  cancel: CANCEL_CONFIRM_LABEL,
+  cancel: t('shared_end_the_session'),
 };
 
 /** The wording a pause or unlock gate uses. An End authority publishes its own instead. */
