@@ -310,5 +310,9 @@
   },
   "stats_outcome_running": {
     "message": "Runnkatikag"
+  },
+  "stats_partial_error_attempts": {
+    "message": "Majaribio ya kila saa hayapatikani.",
+    "description": "Warning above the panels when only the hourly attempt log failed to load."
   }
 }

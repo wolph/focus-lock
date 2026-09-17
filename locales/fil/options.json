@@ -836,5 +836,15 @@
   },
   "options_error_save_lists": {
     "message": "Could not magsave lists. Reload the page at try agasa."
+  },
+  "options_number_error_positive": {
+    "message": "Ang $LABEL$ ay dapat na positibong buong numero.",
+    "description": "Error under a number field that takes only whole numbers above zero. LABEL holds that field's own label, for example Focus minutes.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
   }
 }

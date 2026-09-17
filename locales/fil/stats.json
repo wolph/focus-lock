@@ -310,5 +310,9 @@
   },
   "stats_outcome_running": {
     "message": "Runnsag"
+  },
+  "stats_partial_error_attempts": {
+    "message": "Ang oras-oras na mga pagsubok ay hindi available.",
+    "description": "Warning above the panels when only the hourly attempt log failed to load."
   }
 }
