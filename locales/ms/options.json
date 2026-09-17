@@ -125,6 +125,15 @@
   "options_rules_help": {
     "message": "facebook.com covers that domain and every subdomain. news.ycombinator.com covers that subdomain and anything under it. /youtube\\.com\\/pakhireks/ matches the full URL as a regular expression."
   },
+  "options_number_error_positive": {
+    "message": "$LABEL$ mesti menjadi bilangan bulat positif.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
   "options_number_error_whole": {
     "message": "$LABEL$ must be a whole number dari zero padaau grepadaer.",
     "placeholders": {
@@ -474,7 +483,7 @@
     "message": "Ahd"
   },
   "options_day_mon": {
-    "message": "Isn"
+    "message": "Mpada"
   },
   "options_day_tue": {
     "message": "Sel"
@@ -489,7 +498,7 @@
     "message": "Jum"
   },
   "options_day_sat": {
-    "message": "Sab"
+    "message": "Spada"
   },
   "options_schedule_cycles_label": {
     "message": "Siklus fokus and istirahats"
@@ -836,15 +845,5 @@
   },
   "options_error_save_lists": {
     "message": "Tidak dapat menyimpan lists. Reload the page and try again."
-  },
-  "options_number_error_positive": {
-    "message": "$LABEL$ mesti menjadi bilangan bulat positif.",
-    "description": "Error under a number field that takes only whole numbers above zero. LABEL holds that field's own label, for example Focus minutes.",
-    "placeholders": {
-      "LABEL": {
-        "content": "$1",
-        "example": "Focus minutes"
-      }
-    }
   }
 }

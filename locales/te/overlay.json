@@ -18,6 +18,23 @@
       }
     }
   },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
   "overlay_target_checking": {
     "message": "అందుబాటులో ఉన్న పని ట్యాబ్‌లను తనిఖీ చేస్తోంది..."
   },

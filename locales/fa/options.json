@@ -1,6 +1,6 @@
 {
   "options_page_title": {
-    "message": "تنظیمات Focus Lock"
+    "message": "گزینه‌های Focus Lock"
   },
   "options_heading": {
     "message": "تنظیمات Focus Lock"
@@ -12,31 +12,31 @@
     "message": "در حال بارگذاری تنظیمات حریم خصوصی"
   },
   "options_save_failed": {
-    "message": "ذخیره نشد. دوباره امتحان کنید."
+    "message": "ذخیره نشد. دوباره تلاش کنید."
   },
   "options_blocking_heading": {
     "message": "مسدودسازی"
   },
   "options_blocking_help": {
-    "message": "قوانین سفارشی در طول جلسه‌های لیست سیاه مسدود می‌کنند. لیست سفید همان چیزی است که در طول جلسه‌های لیست سفید در دسترس می‌ماند. دسته‌بندی‌های آماده، اتلاف‌کننده‌های رایج وقت را مسدود می‌کنند."
+    "message": "قوانین سفارشی در جلسه‌های فهرست سیاه مسدود می‌کنند. فهرست سفید همان چیزی است که در جلسه‌های فهرست سفید در دسترس می‌ماند. دسته‌های همراه، وقت‌کش‌های رایج را مسدود می‌کنند."
   },
   "options_custom_blacklist_title": {
-    "message": "لیست سیاه سفارشی"
+    "message": "فهرست سیاه سفارشی"
   },
   "options_whitelist_title": {
-    "message": "لیست سفید"
+    "message": "فهرست سفید"
   },
   "options_bundled_categories_heading": {
-    "message": "دسته‌بندی‌های آماده"
+    "message": "دسته‌های همراه"
   },
   "options_bundled_categories_help": {
-    "message": "لیست‌های آماده از اتلاف‌کننده‌های رایج وقت. یک دسته کامل را روشن یا خاموش کنید، سپس آن را باز کنید تا سایت‌های تکی در دسترس بمانند."
+    "message": "فهرست‌های همراه از وقت‌کش‌های رایج. یک دسته کامل را فعال کنید، سپس آن را باز کنید تا سایت‌های تکی در دسترس بمانند."
   },
   "options_schedule_heading": {
     "message": "زمان‌بندی"
   },
   "options_schedule_help": {
-    "message": "جلسه‌ها در این بازه‌های زمانی به‌طور خودکار شروع می‌شوند. سختگیری تنظیم‌شده در اینجا برای کل بازه اعمال می‌شود."
+    "message": "جلسه‌ها خودبه‌خود درون این بازه‌ها آغاز می‌شوند. سخت‌گیری تعیین‌شده در اینجا بر کل بازه اعمال می‌شود."
   },
   "options_behavior_heading": {
     "message": "رفتار جلسه"
@@ -54,13 +54,13 @@
     "message": "تلاش دوباره"
   },
   "options_load_error_delete_all": {
-    "message": "همه‌چیز را حذف کن و از نو شروع کن"
+    "message": "حذف همه چیز و شروع دوباره"
   },
   "options_load_error_keep_data": {
-    "message": "داده‌های من را نگه دار"
+    "message": "داده‌هایم را نگه دار"
   },
   "options_delete_all_data": {
-    "message": "همه داده‌های Focus Lock را حذف کن"
+    "message": "حذف همه داده‌های Focus Lock"
   },
   "options_dirty_saving": {
     "message": "در حال ذخیره تغییرات"
@@ -69,7 +69,7 @@
     "message": "تغییرات ذخیره‌نشده"
   },
   "options_dirty_clean": {
-    "message": "هیچ تغییر ذخیره‌نشده‌ای نیست"
+    "message": "تغییر ذخیره‌نشده‌ای نیست"
   },
   "options_dirty_discard": {
     "message": "نادیده گرفتن تغییرات"
@@ -99,7 +99,7 @@
     }
   },
   "options_rules_empty": {
-    "message": "هنوز قانونی وجود ندارد."
+    "message": "هنوز قانونی نیست."
   },
   "options_rule_kind_aria": {
     "message": "نوع قانون"
@@ -108,7 +108,7 @@
     "message": "دامنه یا زیردامنه"
   },
   "options_rule_kind_regex_option": {
-    "message": "regex (نشانی کامل)"
+    "message": "عبارت باقاعده (نشانی کامل)"
   },
   "options_rule_pattern_aria": {
     "message": "الگو"
@@ -123,7 +123,7 @@
     "message": "افزودن قانون"
   },
   "options_rules_help": {
-    "message": "facebook.com آن دامنه و هر زیردامنه را پوشش می‌دهد. news.ycombinator.com آن زیردامنه و هر چیز زیرمجموعه آن را پوشش می‌دهد. /youtube\\.com\\/shorts/ کل نشانی را به‌صورت یک عبارت باقاعده تطبیق می‌دهد."
+    "message": "facebook.com آن دامنه و همه زیردامنه‌هایش را پوشش می‌دهد. news.ycombinator.com آن زیردامنه و هر چه زیر آن است را پوشش می‌دهد. /youtube\\.com\\/shorts/ نشانی کامل را به‌عنوان عبارت باقاعده تطبیق می‌دهد."
   },
   "options_number_error_positive": {
     "message": "$LABEL$ باید یک عدد صحیح مثبت باشد.",
@@ -135,7 +135,7 @@
     }
   },
   "options_number_error_whole": {
-    "message": "$LABEL$ باید عددی صحیح صفر یا بزرگ‌تر باشد.",
+    "message": "$LABEL$ باید یک عدد صحیح صفر یا بزرگ‌تر باشد.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -153,7 +153,7 @@
     }
   },
   "options_number_error_minute_range": {
-    "message": "$LABEL$ باید در محدوده دقیقه‌های پشتیبانی‌شده باشد.",
+    "message": "$LABEL$ باید در بازه دقیقه‌های پشتیبانی‌شده باشد.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -162,7 +162,7 @@
     }
   },
   "options_number_error_day_range": {
-    "message": "$LABEL$ باید در محدوده روزهای پشتیبانی‌شده باشد.",
+    "message": "$LABEL$ باید در بازه روزهای پشتیبانی‌شده باشد.",
     "placeholders": {
       "LABEL": {
         "content": "$1",
@@ -174,7 +174,7 @@
     "message": "پیش‌فرض‌های جلسه"
   },
   "options_session_defaults_help": {
-    "message": "حالت و سختگیری هنگام شروع جلسه ثابت می‌شوند. این‌ها مقادیری هستند که فرم شروع با آن‌ها باز می‌شود."
+    "message": "حالت و سخت‌گیری هنگام شروع جلسه ثابت می‌شوند. این‌ها مقادیری هستند که فرم شروع با آن‌ها باز می‌شود."
   },
   "options_preset_short_label": {
     "message": "پیش‌تنظیم جلسه کوتاه (دقیقه)"
@@ -186,28 +186,28 @@
     "message": "پیش‌تنظیم جلسه عمیق (دقیقه)"
   },
   "options_mode_blacklist_label": {
-    "message": "لیست سیاه: مسدودکردن سایت‌های فهرست‌شده"
+    "message": "فهرست سیاه: مسدود کردن سایت‌های فهرست‌شده"
   },
   "options_mode_whitelist_label": {
-    "message": "لیست سفید: فقط اجازه دادن به سایت‌های فهرست‌شده"
+    "message": "فهرست سفید: اجازه فقط به سایت‌های فهرست‌شده"
   },
   "options_strictness_flexible_label": {
-    "message": "انعطاف‌پذیر: هر وقت بخواهی جلسه را تمام کن"
+    "message": "انعطاف‌پذیر: هر وقت خواستید جلسه را پایان دهید"
   },
   "options_strictness_friction_label": {
-    "message": "اصطکاک: توقف زودهنگام از دروازه تأمل پیکربندی‌شده استفاده می‌کند"
+    "message": "اصطکاک: توقف زودهنگام از دروازه تأمل پیکربندی‌شده می‌گذرد"
   },
   "options_strictness_hard_label": {
-    "message": "سخت: پایان زودهنگام ممکن نیست، فقط دسترسی موقت به سایت"
+    "message": "سخت‌گیرانه: بدون پایان زودهنگام، فقط دسترسی موقت به سایت"
   },
   "options_cycle_heading": {
     "message": "چرخه تمرکز و استراحت"
   },
   "options_cycle_help": {
-    "message": "پیش‌فرض‌ها: 25 دقیقه تمرکز، 5 دقیقه استراحت، 15 دقیقه استراحت طولانی در هر چرخه چهارم. در نمونه‌های پژوهشی، استراحت‌های زمان‌بندی‌شده برای خلق‌وخو و تمرکز بهتر از استراحت‌هروقت‌دلت‌خواست عمل می‌کنند. دقیقه‌های دقیق یک قرارداد هستند، نه علم."
+    "message": "پیش‌فرض‌ها: ۲۵ دقیقه تمرکز، ۵ دقیقه استراحت، ۱۵ دقیقه استراحت بلند در هر چرخه چهارم. در نمونه‌های پژوهشی، استراحت‌های زمان‌بندی‌شده از استراحت هر وقت دلت خواست، هم برای خلق‌وخو و هم برای تمرکز بهترند. دقیقه‌های دقیق قرارداد است، نه علم."
   },
   "options_cycle_default_label": {
-    "message": "به‌طور پیش‌فرض تمرکز و استراحت‌ها را چرخه‌ای کن"
+    "message": "تناوب تمرکز و استراحت به‌صورت پیش‌فرض"
   },
   "options_focus_minutes_label": {
     "message": "دقیقه‌های تمرکز"
@@ -216,19 +216,19 @@
     "message": "دقیقه‌های استراحت کوتاه"
   },
   "options_long_break_minutes_label": {
-    "message": "دقیقه‌های استراحت طولانی"
+    "message": "دقیقه‌های استراحت بلند"
   },
   "options_long_every_label": {
-    "message": "استراحت طولانی هر چند چرخه"
+    "message": "استراحت بلند در هر چرخه Nام"
   },
   "options_gate_heading": {
     "message": "دروازه تأمل"
   },
   "options_gate_help": {
-    "message": "یک وقفه 10 ثانیه‌ای همراه با دکمه صریح «بازگشت به کار» به‌طور قابل‌سنجش بازدیدهای تکانشی را کاهش می‌دهد (مطالعه میدانی، PNAS 2023). وقفه طولانی‌تر و جمله تایپی تقریباً اثر را دو برابر می‌کنند."
+    "message": "۱۰ ثانیه انتظار همراه با دکمه‌ای صریح برای بازگشت به کار، بازدیدهای آنی را به‌طور قابل اندازه‌گیری کم می‌کند (پژوهش میدانی، PNAS 2023). انتظار بلندتر و جمله تایپی این اثر را تقریباً دو برابر می‌کنند."
   },
   "options_gate_wait_one": {
-    "message": "$COUNT$ ثانیه صبر کن",
+    "message": "$COUNT$ ثانیه صبر کنید",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -237,7 +237,7 @@
     }
   },
   "options_gate_wait_other": {
-    "message": "$COUNT$ ثانیه صبر کن",
+    "message": "$COUNT$ ثانیه صبر کنید",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -252,19 +252,19 @@
     "message": "تأخیر سفارشی (ثانیه)"
   },
   "options_custom_delay_error": {
-    "message": "تأخیر سفارشی باید عددی صحیح و مثبت از ثانیه باشد."
+    "message": "تأخیر سفارشی باید یک عدد صحیح مثبت از ثانیه باشد."
   },
   "options_gate_typed_phrase_label": {
-    "message": "تایپ یک جمله را نیز الزامی کن"
+    "message": "تایپ کردن یک جمله هم لازم باشد"
   },
   "options_gate_force_end_label": {
-    "message": "دکمه «نادیده گرفتن زمان و پایان دادن به‌هرحال» را فعال کن"
+    "message": "فعال کردن دکمه «نادیده گرفتن انتظار و پایان دادن»"
   },
   "options_credit_help": {
-    "message": "اعتبار دسترسی به سایت هنگام تمرکز شما جمع می‌شود. هم دسترسی به همه سایت‌ها و هم باز کردن یک سایت از یک موجودی یکسان خرج می‌شوند. می‌توانید در هر زمان بدون خرج کردن اعتبار، از کار فاصله بگیرید."
+    "message": "اعتبار دسترسی به سایت هنگام تمرکز شما انباشته می‌شود. هم دسترسی به همه سایت‌ها و هم بازگشایی یک سایت از همان موجودی خرج می‌شوند. هر وقت خواستید می‌توانید بدون خرج کردن اعتبار کنار بروید."
   },
   "options_earn_rate_label": {
-    "message": "دقیقه‌های دسترسی به سایت به ازای هر 30 دقیقه تمرکز"
+    "message": "دقیقه دسترسی به سایت به ازای هر ۳۰ دقیقه تمرکز"
   },
   "options_credit_cap_label": {
     "message": "سقف اعتبار دسترسی به سایت (دقیقه)"
@@ -273,22 +273,22 @@
     "message": "مدت دسترسی به همه سایت‌ها (دقیقه)"
   },
   "options_unlock_length_label": {
-    "message": "مدت باز کردن سایت (دقیقه)"
+    "message": "مدت بازگشایی سایت (دقیقه)"
   },
   "options_streak_heading": {
-    "message": "توالی و نگه‌داری"
+    "message": "زنجیره و نگهداری داده"
   },
   "options_streak_help": {
-    "message": "توالی، روزهایی را می‌شمارد که به هدف می‌رسند. یک جلسه پیش‌فرض زنجیره را زنده نگه می‌دارد و یک نشان انجماد یک روز ازدست‌رفته را جبران می‌کند."
+    "message": "زنجیره روزهایی را می‌شمارد که به هدف می‌رسند. یک جلسه پیش‌فرض زنجیره را زنده نگه می‌دارد و یک ژتون انجماد یک روز از دست رفته را جبران می‌کند."
   },
   "options_streak_goal_label": {
-    "message": "هدف روزانه توالی (دقیقه‌های تمرکز)"
+    "message": "هدف روزانه زنجیره (دقیقه تمرکز)"
   },
   "options_freeze_interval_label": {
-    "message": "فاصله نشان انجماد (روز)"
+    "message": "فاصله ژتون انجماد (روز)"
   },
   "options_retention_label": {
-    "message": "نگه‌داشتن آمار روزانه (روز)"
+    "message": "نگهداری آمار روزانه (روز)"
   },
   "options_category_on_announcement": {
     "message": "دسته $CATEGORY$ روشن شد.",
@@ -315,7 +315,7 @@
     "message": "همه دسته‌ها خاموش شدند."
   },
   "options_host_included_announcement": {
-    "message": "$HOST$ اضافه شد.",
+    "message": "$HOST$ افزوده شد.",
     "placeholders": {
       "HOST": {
         "content": "$1",
@@ -333,7 +333,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "همه سایت‌های $CATEGORY$ اضافه شدند.",
+    "message": "همه سایت‌های $CATEGORY$ افزوده شدند.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -351,10 +351,10 @@
     }
   },
   "options_category_bulk_actions_aria": {
-    "message": "عملیات گروهی دسته"
+    "message": "کنش‌های گروهی دسته‌ها"
   },
   "options_selected_count": {
-    "message": "$COUNT$ انتخاب‌شده",
+    "message": "انتخاب‌شده $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -363,7 +363,7 @@
     }
   },
   "options_deselected_count": {
-    "message": "$COUNT$ لغوشده از انتخاب",
+    "message": "لغو انتخاب $COUNT$",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -402,7 +402,7 @@
     }
   },
   "options_category_sites_included_one": {
-    "message": "$COUNT$ سایت اضافه شد",
+    "message": "$COUNT$ سایت افزوده شد",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -411,7 +411,7 @@
     }
   },
   "options_category_sites_included_other": {
-    "message": "$COUNT$ سایت اضافه شد",
+    "message": "$COUNT$ سایت افزوده شد",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -420,10 +420,10 @@
     }
   },
   "options_category_off": {
-    "message": "دسته خاموش"
+    "message": "دسته خاموش است"
   },
   "options_included_when_enabled_one": {
-    "message": "$COUNT$ در صورت فعال بودن اضافه می‌شود",
+    "message": "$COUNT$ هنگام فعال شدن افزوده می‌شود",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -432,7 +432,7 @@
     }
   },
   "options_included_when_enabled_other": {
-    "message": "$COUNT$ در صورت فعال بودن اضافه می‌شود",
+    "message": "$COUNT$ هنگام فعال شدن افزوده می‌شود",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -441,10 +441,10 @@
     }
   },
   "options_category_uncheck_help": {
-    "message": "علامت یک سایت را بردارید تا در حالی که بقیه دسته مسدود است، در دسترس بماند."
+    "message": "تیک یک سایت را بردارید تا در دسترس بماند در حالی که بقیه دسته مسدود است."
   },
   "options_category_site_bulk_actions_aria": {
-    "message": "عملیات گروهی سایت‌های $CATEGORY$",
+    "message": "کنش‌های گروهی سایت‌های $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -480,31 +480,31 @@
     }
   },
   "options_day_sun": {
-    "message": "ی"
+    "message": "یک"
   },
   "options_day_mon": {
-    "message": "د"
+    "message": "دو"
   },
   "options_day_tue": {
-    "message": "س"
+    "message": "سه"
   },
   "options_day_wed": {
-    "message": "چ"
+    "message": "چهار"
   },
   "options_day_thu": {
-    "message": "پ"
+    "message": "پنج"
   },
   "options_day_fri": {
-    "message": "ج"
+    "message": "جمعه"
   },
   "options_day_sat": {
-    "message": "ش"
+    "message": "شنبه"
   },
   "options_schedule_cycles_label": {
-    "message": "چرخه تمرکز و استراحت‌ها"
+    "message": "تناوب تمرکز و استراحت"
   },
   "options_schedule_overlap_error": {
-    "message": "با ورودی فعال دیگری در روز $DAY$ همپوشانی دارد.",
+    "message": "با مورد فعال دیگری در $DAY$ هم‌پوشانی دارد.",
     "placeholders": {
       "DAY": {
         "content": "$1",
@@ -516,7 +516,7 @@
     "message": "نوع جلسه"
   },
   "options_schedule_entry_legend": {
-    "message": "ورودی زمان‌بندی"
+    "message": "مورد زمان‌بندی"
   },
   "options_schedule_start_label": {
     "message": "شروع"
@@ -525,7 +525,7 @@
     "message": "پایان"
   },
   "options_schedule_duration_legend": {
-    "message": "مدت‌زمان"
+    "message": "مدت"
   },
   "options_schedule_intention_label": {
     "message": "قصد"
@@ -534,13 +534,13 @@
     "message": "این زمان برای چیست"
   },
   "options_schedule_save_entry": {
-    "message": "ذخیره ورودی"
+    "message": "ذخیره مورد"
   },
   "options_cancel": {
     "message": "لغو"
   },
   "options_schedule_empty": {
-    "message": "هنوز جلسه زمان‌بندی‌شده‌ای وجود ندارد."
+    "message": "هنوز جلسه زمان‌بندی‌شده‌ای نیست."
   },
   "options_schedule_selected_days_aria": {
     "message": "روزهای انتخاب‌شده"
@@ -559,10 +559,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "لیست سیاه"
+    "message": "فهرست سیاه"
   },
   "options_schedule_mode_whitelist": {
-    "message": "لیست سفید"
+    "message": "فهرست سفید"
   },
   "options_schedule_strictness_flexible": {
     "message": "انعطاف‌پذیر"
@@ -571,7 +571,7 @@
     "message": "اصطکاک"
   },
   "options_schedule_strictness_hard": {
-    "message": "سخت"
+    "message": "سخت‌گیرانه"
   },
   "options_schedule_enabled_label": {
     "message": "فعال"
@@ -583,16 +583,16 @@
     "message": "حذف"
   },
   "options_schedule_add": {
-    "message": "افزودن ورودی زمان‌بندی"
+    "message": "افزودن مورد زمان‌بندی"
   },
   "options_sounds_heading": {
     "message": "صداها"
   },
   "options_master_volume": {
-    "message": "میزان صدای اصلی"
+    "message": "بلندی صدای اصلی"
   },
   "options_sound_session_complete": {
-    "message": "جلسه تمام شد"
+    "message": "پایان جلسه"
   },
   "options_sound_break_start": {
     "message": "شروع استراحت"
@@ -601,10 +601,10 @@
     "message": "پایان استراحت"
   },
   "options_sound_schedule_start": {
-    "message": "شروع خودکار زمان‌بندی"
+    "message": "شروع خودکار از زمان‌بندی"
   },
   "options_sound_preview_aria": {
-    "message": "پیش‌شنیدن $SOUND$",
+    "message": "پخش $SOUND$",
     "placeholders": {
       "SOUND": {
         "content": "$1",
@@ -616,46 +616,46 @@
     "message": "پخش"
   },
   "options_sound_preview_error": {
-    "message": "پیش‌شنیدن صدا انجام نشد. دوباره امتحان کنید."
+    "message": "صدا پخش نشد. دوباره تلاش کنید."
   },
   "options_sounds_notifications_heading": {
     "message": "اعلان‌ها"
   },
   "options_session_complete_notification": {
-    "message": "هنگام تمام شدن جلسه، اعلان سیستم را نشان بده"
+    "message": "نمایش اعلان سیستمی هنگام پایان جلسه"
   },
   "options_badge_heading": {
     "message": "نشان"
   },
   "options_badge_countdown": {
-    "message": "زمان باقی‌مانده را روی نماد نوار ابزار نشان بده"
+    "message": "نمایش زمان باقی‌مانده روی نماد نوار ابزار"
   },
   "options_privacy_website_access_heading": {
-    "message": "دسترسی به وب‌سایت"
+    "message": "دسترسی به سایت‌ها"
   },
   "options_privacy_website_off_title": {
-    "message": "دسترسی به وب‌سایت خاموش است"
+    "message": "دسترسی به سایت‌ها خاموش است"
   },
   "options_privacy_website_off_detail": {
-    "message": "تا زمانی که دسترسی ندهید، Focus Lock نمی‌تواند وب‌سایت‌ها را مسدود کند."
+    "message": "Focus Lock تا وقتی دسترسی ندهید نمی‌تواند سایت‌ها را مسدود کند."
   },
   "options_privacy_website_enable_action": {
-    "message": "فعال‌کردن مسدودسازی وب‌سایت"
+    "message": "فعال کردن مسدودسازی سایت‌ها"
   },
   "options_privacy_website_unregistered_title": {
-    "message": "دسترسی به وب‌سایت داده شده، اما مسدودسازی فعال نیست"
+    "message": "دسترسی به سایت‌ها داده شده، اما مسدودسازی فعال نیست"
   },
   "options_privacy_website_unregistered_detail": {
     "message": "Chrome دسترسی داد، اما Focus Lock نتوانست اسکریپت مسدودسازی خود را ثبت کند."
   },
   "options_privacy_website_retry_action": {
-    "message": "تلاش دوباره برای مسدودسازی وب‌سایت"
+    "message": "تلاش دوباره برای مسدودسازی سایت‌ها"
   },
   "options_privacy_website_on_title": {
-    "message": "مسدودسازی وب‌سایت فعال است"
+    "message": "مسدودسازی سایت‌ها فعال است"
   },
   "options_privacy_website_on_detail": {
-    "message": "Focus Lock می‌تواند قوانین مسدودسازی فعال شما را روی صفحات معمولی وب‌سایت اعمال کند."
+    "message": "Focus Lock می‌تواند قوانین مسدودسازی فعال شما را روی صفحه‌های معمولی سایت‌ها اعمال کند."
   },
   "options_privacy_confirm_local_history_title": {
     "message": "تاریخچه محلی حذف شود؟"
@@ -667,10 +667,10 @@
     "message": "تاریخچه محلی حذف شد."
   },
   "options_privacy_confirm_local_history_body": {
-    "message": "این کار به‌طور دائمی نشانی‌های کامل، قصدهای تمرکز و رویدادهای جزئی جلسه را از این دستگاه حذف می‌کند. این کار یک جلسه در حال اجرا را پاک نمی‌کند، که قصد خود و نشانی هر تبی را که مسدود می‌کند نگه می‌دارد. پایان دادن به جلسه، قصد را پاک می‌کند و پاک‌سازی‌ای را شروع می‌کند که هر تب وب‌سایت باز را پاک می‌کند، و این پاک‌سازی با تکمیل شدن، هر نشانی ذخیره‌شده را حذف می‌کند."
+    "message": "این کار نشانی‌های کامل، قصدهای تمرکز و رویدادهای تفصیلی جلسه را برای همیشه از این دستگاه حذف می‌کند. جلسه در حال اجرا را پاک نمی‌کند، که قصد خود و نشانی هر زبانه‌ای را که مسدود می‌کند نگه می‌دارد. پایان دادن به جلسه قصد را پاک می‌کند و پاک‌سازی‌ای را آغاز می‌کند که هر زبانه سایت باز را پاک می‌کند، و پاک‌سازی در پایان هر نشانی ذخیره‌شده را برمی‌دارد."
   },
   "options_privacy_confirm_local_history_body_aggregates": {
-    "message": "این کار به‌طور دائمی نشانی‌های کامل، قصدهای تمرکز، رویدادهای جزئی جلسه، به‌علاوه آمار تجمیعی محلی را از این دستگاه حذف می‌کند. این کار یک جلسه در حال اجرا را پاک نمی‌کند، که قصد خود و نشانی هر تبی را که مسدود می‌کند نگه می‌دارد. پایان دادن به جلسه، قصد را پاک می‌کند و پاک‌سازی‌ای را شروع می‌کند که هر تب وب‌سایت باز را پاک می‌کند، و این پاک‌سازی با تکمیل شدن، هر نشانی ذخیره‌شده را حذف می‌کند."
+    "message": "این کار نشانی‌های کامل، قصدهای تمرکز و رویدادهای تفصیلی جلسه را به‌همراه آمار تجمیعی فقط محلی برای همیشه از این دستگاه حذف می‌کند. جلسه در حال اجرا را پاک نمی‌کند، که قصد خود و نشانی هر زبانه‌ای را که مسدود می‌کند نگه می‌دارد. پایان دادن به جلسه قصد را پاک می‌کند و پاک‌سازی‌ای را آغاز می‌کند که هر زبانه سایت باز را پاک می‌کند، و پاک‌سازی در پایان هر نشانی ذخیره‌شده را برمی‌دارد."
   },
   "options_privacy_confirm_synced_policy_title": {
     "message": "داده‌های Sync راه دور حذف شود؟"
@@ -682,7 +682,7 @@
     "message": "داده‌های Chrome Sync راه دور حذف شد."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "این کار تنظیمات، لیست‌های مسدودسازی و مجاز، اعتبار دسترسی به سایت، توالی‌ها و آمار تجمیعی تلاش‌های مسدودشده بر اساس دامنه را به‌طور دائمی از Chrome Sync حذف می‌کند. تنظیمات و آمار محلی روی این دستگاه باقی می‌مانند."
+    "message": "این کار تنظیمات راه دور، فهرست‌های مسدودسازی و مجاز، اعتبار دسترسی به سایت، زنجیره‌ها و مجموع تلاش‌های مسدودشده در سطح دامنه را برای همیشه از Chrome Sync حذف می‌کند. تنظیمات و آمار محلی روی این دستگاه می‌مانند."
   },
   "options_privacy_confirm_all_title": {
     "message": "همه داده‌های Focus Lock حذف شود؟"
@@ -694,58 +694,58 @@
     "message": "همه داده‌های Focus Lock حذف شد."
   },
   "options_privacy_all_body_intro": {
-    "message": "این کار هر بخشی از داده‌های Focus Lock روی این دستگاه و هر نسخه Focus Lock باقی‌مانده در Chrome Sync را به‌طور دائمی حذف می‌کند:"
+    "message": "این کار هر داده Focus Lock روی این دستگاه و هر نسخه Focus Lock باقی‌مانده در Chrome Sync را برای همیشه حذف می‌کند:"
   },
   "options_privacy_all_body_outro": {
-    "message": "حذف همه‌چیز فقط زمانی در دسترس است که هیچ جلسه‌ای در حال اجرا نباشد. سپس Focus Lock به مرحله راه‌اندازی بازمی‌گردد."
+    "message": "حذف همه چیز فقط زمانی در دسترس است که جلسه‌ای در حال اجرا نباشد. سپس Focus Lock به راه‌اندازی بازمی‌گردد."
   },
   "options_privacy_error_local_history_clear": {
-    "message": "تاریخچه محلی حذف نشد. دوباره امتحان کنید."
+    "message": "تاریخچه محلی حذف نشد. دوباره تلاش کنید."
   },
   "options_privacy_error_synced_policy_clear": {
-    "message": "داده‌های Chrome Sync راه دور حذف نشد. دوباره امتحان کنید."
+    "message": "داده‌های Chrome Sync راه دور حذف نشد. دوباره تلاش کنید."
   },
   "options_privacy_error_all_clear": {
-    "message": "همه داده‌های Focus Lock حذف نشد. دوباره امتحان کنید."
+    "message": "همه داده‌های Focus Lock حذف نشد. دوباره تلاش کنید."
   },
   "options_privacy_error_sync_write": {
-    "message": "Chrome Sync نتوانست آخرین تغییرات شما را ذخیره کند. ذخیره محلی شما امن است."
+    "message": "Chrome Sync نتوانست آخرین تغییرات شما را ذخیره کند. نسخه محلی شما امن است."
   },
   "options_privacy_error_request": {
-    "message": "درخواست تکمیل نشد. دوباره امتحان کنید."
+    "message": "درخواست کامل نشد. دوباره تلاش کنید."
   },
   "options_privacy_website_access_updated": {
-    "message": "دسترسی به وب‌سایت به‌روزرسانی شد."
+    "message": "دسترسی به سایت‌ها به‌روز شد."
   },
   "options_privacy_website_access_denied": {
-    "message": "دسترسی به وب‌سایت داده نشد."
+    "message": "دسترسی به سایت‌ها داده نشد."
   },
   "options_privacy_error_website_access": {
-    "message": "دسترسی به وب‌سایت به‌روزرسانی نشد. دوباره امتحان کنید."
+    "message": "دسترسی به سایت‌ها به‌روز نشد. دوباره تلاش کنید."
   },
   "options_privacy_website_blocking_enabled": {
-    "message": "مسدودسازی وب‌سایت فعال شد."
+    "message": "مسدودسازی سایت‌ها فعال شد."
   },
   "options_privacy_error_export": {
-    "message": "خروجی گرفتن از گزارش رویدادها انجام نشد."
+    "message": "گزارش رویدادها برون‌ریزی نشد."
   },
   "options_privacy_error_export_retry": {
-    "message": "خروجی گرفتن از گزارش رویدادها انجام نشد. دوباره امتحان کنید."
+    "message": "گزارش رویدادها برون‌ریزی نشد. دوباره تلاش کنید."
   },
   "options_privacy_error_open_chrome_settings": {
-    "message": "باز کردن تنظیمات مجوز Chrome انجام نشد. دوباره امتحان کنید."
+    "message": "تنظیمات اجازه‌های Chrome باز نشد. دوباره تلاش کنید."
   },
   "options_privacy_chrome_settings_opened": {
-    "message": "تنظیمات مجوز Chrome باز شد."
+    "message": "تنظیمات اجازه‌های Chrome باز شد."
   },
   "options_privacy_open_chrome_settings": {
-    "message": "باز کردن تنظیمات مجوز Chrome"
+    "message": "باز کردن تنظیمات اجازه‌های Chrome"
   },
   "options_privacy_sync_heading": {
     "message": "همگام‌سازی Chrome"
   },
   "options_privacy_sync_switch_label": {
-    "message": "همگام‌سازی داده‌های Focus Lock در دستگاه‌های Chrome"
+    "message": "همگام‌سازی داده‌های Focus Lock بین دستگاه‌های Chrome"
   },
   "options_privacy_sync_enabled": {
     "message": "همگام‌سازی Chrome فعال شد."
@@ -766,7 +766,7 @@
     "message": "تغییرات همگام‌سازی Chrome ذخیره شد."
   },
   "options_privacy_retry_enable_sync": {
-    "message": "تلاش دوباره برای فعال‌کردن همگام‌سازی Chrome"
+    "message": "تلاش دوباره برای فعال کردن همگام‌سازی Chrome"
   },
   "options_privacy_retry_sync": {
     "message": "تلاش دوباره برای همگام‌سازی Chrome"
@@ -778,72 +778,72 @@
     "message": "فقط محلی"
   },
   "options_privacy_developer_note": {
-    "message": "هیچ‌چیز برای توسعه‌دهنده Focus Lock ارسال نمی‌شود."
+    "message": "چیزی برای توسعه‌دهنده Focus Lock فرستاده نمی‌شود."
   },
   "options_privacy_local_log_heading": {
     "message": "گزارش رویدادهای محلی"
   },
   "options_privacy_local_log_detail": {
-    "message": "گزارش محلی جزئی را خروجی بگیرید یا تاریخچه مرور و جلسه محلی را حذف کنید."
+    "message": "گزارش محلی تفصیلی را برون‌ریزی کنید یا تاریخچه محلی مرور و جلسه‌ها را حذف کنید."
   },
   "options_privacy_export_local_log": {
-    "message": "خروجی گرفتن از گزارش رویدادهای محلی"
+    "message": "برون‌ریزی گزارش رویدادهای محلی"
   },
   "options_privacy_local_log_exported": {
-    "message": "گزارش رویدادهای محلی خروجی گرفته شد."
+    "message": "گزارش رویدادهای محلی برون‌ریزی شد."
   },
   "options_privacy_delete_local_history": {
     "message": "حذف تاریخچه محلی"
   },
   "options_privacy_remote_data_heading": {
-    "message": "داده‌های همگام‌سازی راه دور"
+    "message": "داده‌های Sync راه دور"
   },
   "options_privacy_remote_data_detail": {
     "message": "نسخه‌های Focus Lock باقی‌مانده در Chrome Sync را بدون تغییر این دستگاه حذف کنید."
   },
   "options_privacy_delete_remote_data": {
-    "message": "حذف داده‌های همگام‌سازی راه دور"
+    "message": "حذف داده‌های Sync راه دور"
   },
   "options_privacy_all_data_heading": {
     "message": "همه داده‌های Focus Lock"
   },
   "options_privacy_all_data_detail": {
-    "message": "هر رکورد Focus Lock روی این دستگاه و هر نسخه Focus Lock باقی‌مانده در Chrome Sync را حذف کنید، سپس دوباره از راه‌اندازی شروع کنید. زمانی در دسترس است که هیچ جلسه‌ای در حال اجرا نباشد."
+    "message": "هر رکورد Focus Lock روی این دستگاه و هر نسخه Focus Lock باقی‌مانده در Chrome Sync را حذف کنید، سپس از راه‌اندازی دوباره آغاز کنید. زمانی در دسترس است که جلسه‌ای در حال اجرا نباشد."
   },
   "options_privacy_resuming_all_clear": {
-    "message": "از سرگیری حذف همه داده‌های Focus Lock."
+    "message": "ازسرگیری حذف همه داده‌های Focus Lock."
   },
   "options_privacy_retry_local_history": {
     "message": "تلاش دوباره برای حذف تاریخچه محلی"
   },
   "options_privacy_retry_remote_sync": {
-    "message": "تلاش دوباره برای حذف همگام‌سازی راه دور"
+    "message": "تلاش دوباره برای حذف Sync راه دور"
   },
   "options_privacy_retry_all_data": {
     "message": "تلاش دوباره برای حذف همه داده‌ها"
   },
   "options_error_load": {
-    "message": "بارگذاری تنظیمات انجام نشد. صفحه را دوباره بارگذاری کنید تا دوباره امتحان کنید."
+    "message": "تنظیمات بارگذاری نشد. برای تلاش دوباره صفحه را بارگذاری مجدد کنید."
   },
   "options_error_retry_boot": {
-    "message": "راه‌اندازی مجدد Focus Lock انجام نشد. دوباره امتحان کنید."
+    "message": "Focus Lock دوباره راه‌اندازی نشد. دوباره تلاش کنید."
   },
   "options_error_refresh_privacy": {
-    "message": "به‌روزرسانی تنظیمات حریم خصوصی انجام نشد. صفحه را دوباره بارگذاری کنید."
+    "message": "تنظیمات حریم خصوصی تازه نشد. صفحه را بارگذاری مجدد کنید."
   },
   "options_error_website_blocking": {
-    "message": "به‌روزرسانی مسدودسازی وب‌سایت انجام نشد. دوباره امتحان کنید."
+    "message": "مسدودسازی سایت‌ها به‌روز نشد. دوباره تلاش کنید."
   },
   "options_error_change_sync": {
-    "message": "تغییر همگام‌سازی Chrome انجام نشد. دوباره امتحان کنید."
+    "message": "همگام‌سازی Chrome تغییر نکرد. دوباره تلاش کنید."
   },
   "options_error_retry_sync": {
-    "message": "تلاش دوباره برای همگام‌سازی Chrome انجام نشد. دوباره امتحان کنید."
+    "message": "تلاش دوباره برای همگام‌سازی Chrome ممکن نشد. دوباره تلاش کنید."
   },
   "options_error_save_settings": {
-    "message": "ذخیره تنظیمات انجام نشد. صفحه را دوباره بارگذاری کنید و دوباره امتحان کنید."
+    "message": "تنظیمات ذخیره نشد. صفحه را بارگذاری مجدد کنید و دوباره تلاش کنید."
   },
   "options_error_save_lists": {
-    "message": "ذخیره لیست‌ها انجام نشد. صفحه را دوباره بارگذاری کنید و دوباره امتحان کنید."
+    "message": "فهرست‌ها ذخیره نشد. صفحه را بارگذاری مجدد کنید و دوباره تلاش کنید."
   }
 }

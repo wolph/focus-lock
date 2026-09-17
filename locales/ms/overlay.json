@@ -18,6 +18,23 @@
       }
     }
   },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
   "overlay_target_checking": {
     "message": "Checkdalamg available kerja tabs..."
   },
@@ -113,24 +130,6 @@
       },
       "HOSTNAME": {
         "content": "$2",
-        "example": "work.example"
-      }
-    }
-  },
-  "overlay_return_label_host": {
-    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
-    "description": "Accessible name and tooltip of the main button on the blocked page when the chosen work tab also has a website name. ACTION holds wording such as Back to work, DESTINATION holds the tab title, HOSTNAME holds the website the tab is on.",
-    "placeholders": {
-      "ACTION": {
-        "content": "$1",
-        "example": "Back to work"
-      },
-      "DESTINATION": {
-        "content": "$2",
-        "example": "Annual report"
-      },
-      "HOSTNAME": {
-        "content": "$3",
         "example": "work.example"
       }
     }

@@ -30,7 +30,7 @@
     "message": "ಬಂಡಲ್ ವರ್ಗ"
   },
   "options_bundled_categories_help": {
-    "message": "Bundled lists of common time sinks. ಟಾಗಲ್ a whole category, then open it to keep single sites available."
+    "message": "Bundled lists ನ commಮೇಲೆ time sರಲ್ಲಿks. Toggle a whole cನಲ್ಲಿegಅಥವಾy, then open it ಕಿ keep sರಲ್ಲಿgle sites available."
   },
   "options_schedule_heading": {
     "message": "ವೇಳಾಪಟ್ಟಿ"
@@ -180,7 +180,7 @@
     "message": "Shಅಥವಾt sessiಮೇಲೆ preset (mರಲ್ಲಿutes)"
   },
   "options_preset_default_label": {
-    "message": "ಪೂರ್ವನಿರ್ಧಾರಿತ session preset (minutes)"
+    "message": "Default sessiಮೇಲೆ preset (mರಲ್ಲಿutes)"
   },
   "options_preset_deep_label": {
     "message": "Deep sessiಮೇಲೆ preset (mರಲ್ಲಿutes)"
@@ -204,7 +204,7 @@
     "message": "ಫೋಕಸ್ ಮತ್ತು break cycle"
   },
   "options_cycle_help": {
-    "message": "ಪೂರ್ವನಿರ್ಧಾರಿತs: 25 minute focus, 5 minute break, 15 minute long break every 4th cycle. Breaks on a schedule beat break-when-you-feel-like-it for mood and focus in study samples. The exact minutes are convention, not science."
+    "message": "Defaults: 25 mರಲ್ಲಿute focus, 5 mರಲ್ಲಿute break, 15 mರಲ್ಲಿute lಮೇಲೆg break every 4th cycle. ವಿರತಿs ಮೇಲೆ a schedule beನಲ್ಲಿ break-ಯಾವಾಗ-you-feel-like-it ಸಾಕಾಂಶ mood ಮತ್ತು focus ರಲ್ಲಿ study samples. The exact mರಲ್ಲಿutes are cಮೇಲೆventiಮೇಲೆ, not science."
   },
   "options_cycle_default_label": {
     "message": "ಚಕ್ರ focus ಮತ್ತು breaks ಮೂಲಕ default"
@@ -264,13 +264,13 @@
     "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ accrues while you focus. Both access ಕಿ all sites ಮತ್ತು a sರಲ್ಲಿgle-site unlock spend from the same balance. You can step away ನಲ್ಲಿ any time ಜೊತೆout spendರಲ್ಲಿg credit."
   },
   "options_earn_rate_label": {
-    "message": "ಕನಿಷ್ಠutes of site access per 30 minutes of focus"
+    "message": "ನಿಮಿಷ ನ site access per 30 mರಲ್ಲಿutes ನ focus"
   },
   "options_credit_cap_label": {
     "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ limit (mರಲ್ಲಿutes)"
   },
   "options_pause_length_label": {
-    "message": "ಎಲ್ಲಾ-site access length (minutes)"
+    "message": "All-site access length (mರಲ್ಲಿutes)"
   },
   "options_unlock_length_label": {
     "message": "ಸೈಟ್ unlock length (mರಲ್ಲಿutes)"
@@ -309,10 +309,10 @@
     }
   },
   "options_all_categories_on_announcement": {
-    "message": "ಎಲ್ಲಾ categories on."
+    "message": "All cನಲ್ಲಿegಅಥವಾies ಮೇಲೆ."
   },
   "options_all_categories_off_announcement": {
-    "message": "ಎಲ್ಲಾ categories off."
+    "message": "All cನಲ್ಲಿegಅಥವಾies ನf."
   },
   "options_host_included_announcement": {
     "message": "$HOST$ ರಲ್ಲಿcluded.",
@@ -333,7 +333,7 @@
     }
   },
   "options_all_sites_included_announcement": {
-    "message": "ಎಲ್ಲಾ $CATEGORY$ sites included.",
+    "message": "All $CATEGORY$ sites ರಲ್ಲಿcluded.",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -378,7 +378,7 @@
     "message": "ಎಲ್ಲಾ ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ"
   },
   "options_select_all_categories_aria": {
-    "message": "ಆರಿಸಿ all categories"
+    "message": "Select all cನಲ್ಲಿegಅಥವಾies"
   },
   "options_deselect_all_categories_aria": {
     "message": "Deselect all cನಲ್ಲಿegಅಥವಾies"
@@ -691,7 +691,7 @@
     "message": "Cಮೇಲೆfirm delete all ಫೋಕಸ್ Lock dನಲ್ಲಿa"
   },
   "options_privacy_all_deleted": {
-    "message": "ಎಲ್ಲಾ Focus Lock data deleted."
+    "message": "All ಫೋಕಸ್ Lock dನಲ್ಲಿa deleted."
   },
   "options_privacy_all_body_intro": {
     "message": "This permanently deletes every piece ನ ಫೋಕಸ್ Lock dನಲ್ಲಿa ಮೇಲೆ this device ಮತ್ತು any ಫೋಕಸ್ Lock copies left ರಲ್ಲಿ Chrome ಸಿಂಕ್ರೊನೈಜ್:"
@@ -706,7 +706,7 @@
     "message": "Remote Chrome ಸಿಂಕ್ರೊನೈಜ್ dನಲ್ಲಿa could not be deleted. Try agaರಲ್ಲಿ."
   },
   "options_privacy_error_all_clear": {
-    "message": "ಎಲ್ಲಾ Focus Lock data could not be deleted. Try again."
+    "message": "All ಫೋಕಸ್ Lock dನಲ್ಲಿa could not be deleted. Try agaರಲ್ಲಿ."
   },
   "options_privacy_error_sync_write": {
     "message": "Chrome ಸಿಂಕ್ರೊನೈಜ್ could not save your lನಲ್ಲಿest changes. Your local save is safe."
@@ -805,7 +805,7 @@
     "message": "Delete remote ಸಿಂಕ್ರೊನೈಜ್ dನಲ್ಲಿa"
   },
   "options_privacy_all_data_heading": {
-    "message": "ಎಲ್ಲಾ Focus Lock data"
+    "message": "All ಫೋಕಸ್ Lock dನಲ್ಲಿa"
   },
   "options_privacy_all_data_detail": {
     "message": "Delete every ಫೋಕಸ್ Lock recಅಥವಾd ಮೇಲೆ this device ಮತ್ತು any ಫೋಕಸ್ Lock copies left ರಲ್ಲಿ Chrome ಸಿಂಕ್ರೊನೈಜ್, then start agaರಲ್ಲಿ from setup. ಲಭ್ಯ while no sessiಮೇಲೆ is runnರಲ್ಲಿg."

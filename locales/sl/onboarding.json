@@ -1,6 +1,6 @@
 {
   "onboarding_page_title": {
-    "message": "Nastavi Focus Lock"
+    "message": "Nastavite Focus Lock"
   },
   "onboarding_eyebrow": {
     "message": "Nastavitev Focus Lock"
@@ -19,37 +19,37 @@
     }
   },
   "onboarding_recovery_notice": {
-    "message": "Shranjenega napredka nastavitve ni bilo mogoče obnoviti. Začenjamo znova s tvojimi trenutnimi privzetimi vrednostmi."
+    "message": "Shranjenega napredka nastavitve ni bilo mogoče obnoviti. Začenjam znova z vašimi trenutnimi privzetimi nastavitvami."
   },
   "onboarding_complete_heading": {
-    "message": "Nastavitev dokončana"
+    "message": "Nastavitev je končana"
   },
   "onboarding_complete_body": {
-    "message": "Tvoje izbire so shranjene. Odpri Focus Lock v orodni vrstici Chroma in zaženi sejo."
+    "message": "Vaše izbire so shranjene. Odprite Focus Lock iz orodni pasu Chrome, da začnete sejo."
   },
   "onboarding_error_heading": {
-    "message": "Nastavitev ni na voljo"
+    "message": "Nastavitev ni dostopna"
   },
   "onboarding_error_body": {
-    "message": "Nastavitve ni bilo mogoče naložiti. Poskusi znova."
+    "message": "Nastavitve ni bilo mogoče naložiti. Poskusite znova."
   },
   "onboarding_retry_button": {
-    "message": "Poskusi znova"
+    "message": "Poskusite znova"
   },
   "onboarding_save_error": {
-    "message": "Napredka nastavitve ni bilo mogoče shraniti. Poskusi znova."
+    "message": "Napredka nastavitve ni bilo mogoče shraniti. Poskusite znova."
   },
   "onboarding_enable_error": {
-    "message": "Blokiranja spletnih mest ni bilo mogoče vklopiti. Poskusi znova."
+    "message": "Blokade spletnih strani ni bilo mogoče omogočiti. Poskusite znova."
   },
   "onboarding_finish_error": {
-    "message": "Nastavitve ni bilo mogoče dokončati. Tvoje izbire ostajajo shranjene. Poskusi znova."
+    "message": "Nastavitve ni bilo mogoče dokončati. Vaše izbire so še vedno shranjene. Poskusite znova."
   },
   "onboarding_lists_heading": {
-    "message": "Izberi svoj prvi seznam blokiranih"
+    "message": "Izberite svoj seznam začetne blokade"
   },
   "onboarding_lists_blacklist_rule": {
-    "message": "V načinu $MODE$ so vklopljene kategorije in dodatna blokirana spletna mesta nedosegljivi.",
+    "message": "V $MODE$ so omogočene kategorije in dodatno blokirane spletne strani nedostopne.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "V načinu $MODE$ je nedosegljivo vsako spletno mesto razen tvojega seznama dovoljenih.",
+    "message": "V $MODE$ je vsaka spletna stran nedostopna, razen vašega seznama dovoljenj.",
     "placeholders": {
       "MODE": {
         "content": "$1",
@@ -67,13 +67,13 @@
     }
   },
   "onboarding_lists_defaults_note": {
-    "message": "Te izbire postanejo privzete za prihodnje seje. Kasneje jih lahko spremeniš."
+    "message": "Te izbire postanejo privzete za prihodnje seje. Lahko jih kasneje uredite."
   },
   "onboarding_lists_legend": {
-    "message": "Priporočene kategorije spletnih mest"
+    "message": "Priporočene kategorije spletnih strani"
   },
   "onboarding_site_count_one": {
-    "message": "$COUNT$ spletno mesto",
+    "message": "$COUNT$ spletna stran",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -82,7 +82,7 @@
     }
   },
   "onboarding_site_count_other": {
-    "message": "$COUNT$ spletnih mest",
+    "message": "$COUNT$ spletnih strani",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -91,7 +91,7 @@
     }
   },
   "onboarding_show_category_sites": {
-    "message": "Pokaži spletna mesta kategorije $CATEGORY$",
+    "message": "Prikaži $CATEGORY$ spletne strani",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -100,7 +100,7 @@
     }
   },
   "onboarding_hide_category_sites": {
-    "message": "Skrij spletna mesta kategorije $CATEGORY$",
+    "message": "Skrij $CATEGORY$ spletne strani",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -109,7 +109,7 @@
     }
   },
   "onboarding_category_domains_label": {
-    "message": "Domene kategorije $CATEGORY$",
+    "message": "Domene $CATEGORY$",
     "placeholders": {
       "CATEGORY": {
         "content": "$1",
@@ -121,43 +121,43 @@
     "message": "Nadaljuj"
   },
   "onboarding_access_heading": {
-    "message": "Vklopi blokiranje spletnih mest"
+    "message": "Omogoči blokado spletnih strani"
   },
   "onboarding_access_local_matching": {
-    "message": "Focus Lock preverja naslove strani lokalno, da jih ujema s tvojimi izbranimi kategorijami in spletnimi mesti. Dostop do spletnih mest uporablja za to, da pokaže svoj zaslon blokiranja in po koncu seje obnovi prizadete strani."
+    "message": "Focus Lock preverja naslove strani lokalno, da se lahko ujemajo z vašimi izbranimi kategorijami in spletnimi stranmi. Dostop do spletnih strani uporablja za prikaz svojega zaslona blokade in obnovitev prizadetih strani, ko se vaša seja konča."
   },
   "onboarding_access_capability_intro": {
-    "message": "Kategorije in lastne domene lahko zajamejo katero koli spletno mesto. Chrome zato zahteva to dovoljenje:"
+    "message": "Kategorije in prilagojene domene lahko vključujejo katero koli spletno stran. Chrome bo zato zahteval to zmogljivost:"
   },
   "onboarding_access_capability": {
-    "message": "Branje in spreminjanje vseh vaših podatkov na vseh spletnih mestih"
+    "message": "Preberi in spremeni vse svoje podatke na vseh spletnih straneh"
   },
   "onboarding_access_scope_note": {
-    "message": "Focus Lock ta dostop uporablja samo med uveljavljanjem tvojih pravil blokiranja."
+    "message": "Focus Lock ta dostop uporablja samo pri uporabi svojih pravil blokade."
   },
   "onboarding_access_denied": {
-    "message": "Chrome ni dovolil dostopa do spletnih mest. Lahko poskusiš znova."
+    "message": "Chrome vam ni odobril dostopa do spletnih strani. Lahko poskusite znova."
   },
   "onboarding_access_registration_error": {
-    "message": "Dostop do spletnih mest je dovoljen, vendar Focus Lock ni mogel vklopiti blokiranja. Ponovi nastavitev ali znova naloži razširitev."
+    "message": "Dostop do spletnih strani je odobren, vendar Focus Lock ni mogel omogočiti blokade. Poskusite znova nastaviti ali ponovno naložiti razširitev."
   },
   "onboarding_access_enable_button": {
-    "message": "Vklopi blokiranje spletnih mest"
+    "message": "Omogoči blokado spletnih strani"
   },
   "onboarding_access_defer_button": {
     "message": "Ne zdaj"
   },
   "onboarding_sync_heading": {
-    "message": "Izberi, kje se shranjujejo tvoje nastavitve"
+    "message": "Izberite, kje so vaše nastavitve shranjene"
   },
   "onboarding_sync_switch_label": {
-    "message": "Sinhroniziraj med napravami s Chromom"
+    "message": "Sinhronizacija med napravami Chrome"
   },
   "onboarding_sync_enabled_note": {
-    "message": "Odobreni podatki spodaj bodo uporabljali sinhronizacijo Chroma, ko dokončaš nastavitev."
+    "message": "Odobreni podatki spodaj bodo uporabili Chrome Sync, potem ko končate nastavitev."
   },
   "onboarding_sync_disabled_note": {
-    "message": "Vsi podatki Focus Lock ostanejo v tem profilu Chroma."
+    "message": "Vsi podatki Focus Lock ostanejo v tem profilu Chrome."
   },
   "onboarding_sync_synced_title": {
     "message": "Sinhronizirano"
@@ -166,16 +166,16 @@
     "message": "Samo lokalno"
   },
   "onboarding_sync_developer_note": {
-    "message": "Razvijalcu Focus Lock se ne pošlje nič."
+    "message": "Razvijalcu Focus Lock se ne pošilja nič."
   },
   "onboarding_sync_finish_enabled": {
-    "message": "Dokončaj nastavitev s sinhronizacijo"
+    "message": "Dokončajte nastavitev s sinhronizacijo omogočeno"
   },
   "onboarding_sync_finish_disabled": {
-    "message": "Dokončaj nastavitev brez sinhronizacije"
+    "message": "Dokončajte nastavitev brez sinhronizacije"
   },
   "onboarding_site_count_two": {
-    "message": "$COUNT$ spletni mesti",
+    "message": "$COUNT$ spletni strani",
     "placeholders": {
       "COUNT": {
         "content": "$1",
@@ -184,7 +184,7 @@
     }
   },
   "onboarding_site_count_few": {
-    "message": "$COUNT$ spletna mesta",
+    "message": "$COUNT$ spletne strani",
     "placeholders": {
       "COUNT": {
         "content": "$1",

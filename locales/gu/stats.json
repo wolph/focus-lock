@@ -1,15 +1,21 @@
 {
   "stats_document_title": {
-    "message": "Focus Lock stats"
+    "message": "Focus Lock આંકડા"
   },
   "stats_page_title": {
-    "message": "Your focus record"
+    "message": "તારો ફોકસ રેકોર્ડ"
   },
   "stats_loading": {
-    "message": "Loading your stats."
+    "message": "તારા આંકડા લોડ થઈ રહ્યા છે."
+  },
+  "stats_load_error": {
+    "message": "આંકડા લોડ કરી શકાયા નહીં. ફરી પ્રયાસ કરવા રિલોડ કરો."
   },
   "stats_partial_error_both": {
     "message": "Hourly attempts and site access credit સેટિંગ્સ are unavailable."
+  },
+  "stats_partial_error_attempts": {
+    "message": "કલાકદીઠ પ્રયાસો ઉપલબ્ધ નથી."
   },
   "stats_partial_error_economy": {
     "message": "Site access credit સેટિંગ્સ are unavailable."
@@ -23,8 +29,11 @@
   "stats_scope_checking": {
     "message": "આ કુલ સિંક્ કરેલ છે તે નક્કી કર્યું છે."
   },
+  "stats_scope_unavailable": {
+    "message": "આંકડાનો વ્યાપ ઉપલબ્ધ નથી. કુલ સરવાળામાં સિંક કરેલો ડેટા સામેલ હોઈ શકે છે. કલાકદીઠ પ્રયાસો અને તાજેતરના સેશન આ મશીનના છે."
+  },
   "stats_scope_retry": {
-    "message": "Retry scope check"
+    "message": "વ્યાપ તપાસ ફરી પ્રયાસ કરો"
   },
   "stats_empty": {
     "message": "Stats appear after your first સેશન."
@@ -44,8 +53,25 @@
   "stats_tile_credit_spent_today": {
     "message": "Site access credit spent આજે"
   },
+  "stats_tile_credit_subline_spent": {
+    "message": "બધી સાઇટ્સ $ALL_SITES$, એક સાઇટ $ONE_SITE$, $EARNED$ કમાયા",
+    "placeholders": {
+      "ALL_SITES": {
+        "content": "$1",
+        "example": "5 m"
+      },
+      "ONE_SITE": {
+        "content": "$2",
+        "example": "2 m"
+      },
+      "EARNED": {
+        "content": "$3",
+        "example": "17 m"
+      }
+    }
+  },
   "stats_tile_credit_subline_earned": {
-    "message": "$EARNED$ earned",
+    "message": "$EARNED$ કમાયા",
     "placeholders": {
       "EARNED": {
         "content": "$1",
@@ -54,13 +80,37 @@
     }
   },
   "stats_streak_heading": {
-    "message": "Streak"
+    "message": "સ્ટ્રીક"
+  },
+  "stats_streak_empty": {
+    "message": "તારી સ્ટ્રીક તારા પહેલા ફોકસ દિવસથી શરૂ થાય છે."
   },
   "stats_streak_unit_one": {
-    "message": "day"
+    "message": "દિવસ"
   },
   "stats_streak_unit_other": {
     "message": "દિવસો"
+  },
+  "stats_streak_freeze_tokens_one": {
+    "message": "$COUNT$ ફ્રીઝ ટોકન જમા",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "stats_streak_freeze_tokens_other": {
+    "message": "$COUNT$ ફ્રીઝ ટોકન જમા",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "stats_streak_freeze_chip_title": {
+    "message": "સ્ટ્રીક ફ્રીઝ: એક ચૂકી ગયેલો દિવસ, આવરી લેવાયો"
   },
   "stats_streak_active_days_one": {
     "message": "$COUNT$ active દિવસ this month ($MONTH$)",
@@ -88,6 +138,28 @@
       }
     }
   },
+  "stats_streak_active_dates": {
+    "message": "$MONTH$ માં સક્રિય તારીખો: $DAYS$.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      },
+      "DAYS": {
+        "content": "$2",
+        "example": "25, 26, 27, 28"
+      }
+    }
+  },
+  "stats_streak_no_active_dates": {
+    "message": "$MONTH$ માં કોઈ સક્રિય તારીખ નથી.",
+    "placeholders": {
+      "MONTH": {
+        "content": "$1",
+        "example": "August 2026"
+      }
+    }
+  },
   "stats_chart_focus_heading": {
     "message": "Focus, last 14 દિવસો"
   },
@@ -106,11 +178,14 @@
   "stats_chart_sites_empty": {
     "message": "Nothing બ્લોક્ડ yet. That is a fine શરુ."
   },
+  "stats_chart_hours_heading": {
+    "message": "કલાક પ્રમાણે પ્રયાસો, ફક્ત આ મશીન"
+  },
   "stats_chart_other_site": {
-    "message": "other"
+    "message": "અન્ય"
   },
   "stats_chart_minutes_tick": {
-    "message": "$MINUTES$m",
+    "message": "$MINUTES$મિ",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -137,13 +212,19 @@
     }
   },
   "stats_chart_name_bar": {
-    "message": "Bar chart"
+    "message": "બાર ચાર્ટ"
   },
   "stats_chart_name_hbar": {
-    "message": "Horizontal bar chart"
+    "message": "આડો બાર ચાર્ટ"
+  },
+  "stats_chart_description_bar": {
+    "message": "બાર ચાર્ટ. ડેટા પોઇન્ટ વચ્ચે ફરવા કીબોર્ડનો ઉપયોગ કરો, અથવા એ જ મૂલ્યો માટે 'ટેબલ તરીકે જુઓ' ખોલો."
+  },
+  "stats_chart_description_hbar": {
+    "message": "આડો બાર ચાર્ટ. ડેટા પોઇન્ટ વચ્ચે ફરવા કીબોર્ડનો ઉપયોગ કરો, અથવા એ જ મૂલ્યો માટે 'ટેબલ તરીકે જુઓ' ખોલો."
   },
   "stats_chart_empty_default": {
-    "message": "No data yet."
+    "message": "હજુ સુધી કોઈ ડેટા નથી."
   },
   "stats_chart_point": {
     "message": "$LABEL$: $VALUE$",
@@ -159,49 +240,52 @@
     }
   },
   "stats_chart_table_summary": {
-    "message": "View as table"
+    "message": "ટેબલ તરીકે જુઓ"
   },
   "stats_chart_table_category": {
-    "message": "Category"
+    "message": "કેટેગરી"
   },
   "stats_chart_table_value": {
-    "message": "Value"
+    "message": "મૂલ્ય"
   },
   "stats_heat_strip_label": {
     "message": "24-hour બ્લોક્ડ-attempt heat strip"
+  },
+  "stats_sessions_heading": {
+    "message": "આ મશીન પરના તાજેતરના સેશન"
   },
   "stats_sessions_empty": {
     "message": "Your first સેશન will appear here."
   },
   "stats_sessions_col_date": {
-    "message": "Date"
+    "message": "તારીખ"
   },
   "stats_sessions_col_start": {
     "message": "શરુ"
   },
   "stats_sessions_col_planned": {
-    "message": "Planned"
+    "message": "આયોજિત"
   },
   "stats_sessions_col_focused": {
-    "message": "Focused"
+    "message": "ફોકસ કરેલું"
   },
   "stats_sessions_col_all_sites": {
-    "message": "All sites"
+    "message": "બધી સાઇટ્સ"
   },
   "stats_sessions_col_one_site": {
-    "message": "One site"
+    "message": "એક સાઇટ"
   },
   "stats_sessions_col_intention": {
-    "message": "Intention"
+    "message": "ઉદ્દેશ"
   },
   "stats_sessions_col_outcome": {
-    "message": "Outcome"
+    "message": "પરિણામ"
   },
   "stats_sessions_col_source": {
-    "message": "Source"
+    "message": "સ્રોત"
   },
   "stats_session_no_intention": {
-    "message": "No intention"
+    "message": "કોઈ ઉદ્દેશ નથી"
   },
   "stats_session_article_label": {
     "message": "સેશન: $INTENTION$",
@@ -213,21 +297,21 @@
     }
   },
   "stats_session_source_manual": {
-    "message": "manual"
+    "message": "મેન્યુઅલ"
   },
   "stats_session_source_schedule": {
-    "message": "schedule"
+    "message": "શેડ્યૂલ"
   },
   "stats_session_source_scheduled": {
-    "message": "scheduled"
+    "message": "શેડ્યૂલ કરેલું"
   },
   "stats_outcome_completed": {
-    "message": "Completed"
+    "message": "પૂર્ણ થયું"
   },
   "stats_outcome_ended_early": {
-    "message": "Ended early"
+    "message": "વહેલું સમાપ્ત થયું"
   },
   "stats_outcome_running": {
-    "message": "Running"
+    "message": "ચાલુ"
   }
 }

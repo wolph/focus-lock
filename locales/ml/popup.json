@@ -13,10 +13,10 @@
     }
   },
   "popup_settings_button_label": {
-    "message": "ക്രമീകരണങ്ങൾ"
+    "message": "സെറ്റിംഗുകൾ"
   },
   "popup_open_settings_failed": {
-    "message": "ക്രമീകരണങ്ങൾ തുറക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക."
+    "message": "Could not open സെറ്റിംഗുകൾ. Try again."
   },
   "popup_settings_load_failed": {
     "message": "സെഷൻ ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. പോപ്പപ്പ് വീണ്ടും ലോഡ് ചെയ്ത് ശ്രമിക്കുക. സ്ഥിരതകൾ കാണിച്ചിരിക്കുന്നു."
@@ -52,7 +52,7 @@
     "message": "വെബ്സൈറ്റ് ആക്സസ്സ് നൽകിയിരിക്കുന്നു എന്നാൽ Focus Lock ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കാൻ കഴിഞ്ഞില്ല. സെറ്റാപ്പ് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ എക്സ്റ്റൻഷൻ വീണ്ടും ലോഡ് ചെയ്യുക."
   },
   "popup_enable_blocking_button": {
-    "message": "വെബ്സൈറ്റ് ബ്ലോക്കിംഗ് പ്രവർത്തനക്ഷമമാക്കുക"
+    "message": "സജീവം website blocking"
   },
   "popup_retry_button": {
     "message": "വീണ്ടും ശ്രമിക്കുക"
@@ -88,13 +88,13 @@
     "message": "നിങ്ങളുടെ ക്രമീകരണങ്ങൾ, പട്ടികകൾ, സ്ഥിതിവിവരം സൂക്ഷിക്കുക. നിലവിലെ സെഷൻ അവസ്ഥ മായ്ച്ചുകളയുക."
   },
   "popup_delete_all_confirm_button": {
-    "message": "എല്ലാം ഇല്ലാതാക്കി വീണ്ടും ആരംഭിക്കുക"
+    "message": "കണ്ടെത്തുക everything and start over"
   },
   "popup_keep_data_button": {
     "message": "എന്റെ ഡാറ്റ സൂക്ഷിക്കുക"
   },
   "popup_delete_all_button": {
-    "message": "Focus Lock എന്നതിന്റെ എല്ലാ ഡാറ്റ ഇല്ലാതാക്കുക"
+    "message": "കണ്ടെത്തുക all Focus Lock data"
   },
   "popup_setup_status_unavailable": {
     "message": "സെറ്റാപ്പ് അവസ്ഥ ലഭ്യമല്ല. Focus Lock വീണ്ടും ലോഡ് ചെയ്ത് ശ്രമിക്കുക."
@@ -166,7 +166,7 @@
     "message": "വർക്ക് ടാബ് മാറ്റുക"
   },
   "popup_session_actions_summary": {
-    "message": "സെഷൻ പ്രവർത്തനങ്ങൾ"
+    "message": "സെഷൻ actions"
   },
   "popup_site_access_credit": {
     "message": "$CREDIT$ സൈറ്റ് ആക്സസ്സ് ക്രെഡിറ്റ്",
@@ -236,7 +236,7 @@
     }
   },
   "popup_session_length_label": {
-    "message": "സെഷൻ ദൈർഘ്യം"
+    "message": "സെഷൻ length"
   },
   "popup_custom_minutes_label": {
     "message": "പ്രത്യേക മിനിറ്റുകൾ"
@@ -457,13 +457,13 @@
     "message": "ഈ സെഷനിനേക്കുറിച്ച് വിഭാഗ കൂടാതെ നിയമ മാറ്റങ്ങൾ."
   },
   "popup_open_settings_defaults": {
-    "message": "സ്ഥിരമായ സ്ഥിരതകൾക്കായി ക്രമീകരണങ്ങൾ തുറക്കുക"
+    "message": "Open സെറ്റിംഗുകൾ for permanent defaults"
   },
   "popup_rule_details_label": {
-    "message": "സെഷൻ നിയം വിവരങ്ങൾ"
+    "message": "സെഷൻ rule details"
   },
   "popup_session_type_legend": {
-    "message": "സെഷൻ തരം"
+    "message": "സെഷൻ type"
   },
   "popup_session_type_flexible": {
     "message": "വഴക്കമുള്ള"
@@ -556,7 +556,7 @@
     "message": "മാറ്റുക"
   },
   "popup_session_settings_summary": {
-    "message": "സെഷൻ ക്രമീകരണങ്ങൾ"
+    "message": "സെഷൻ settings"
   },
   "popup_choose_work_tab_label": {
     "message": "വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക"

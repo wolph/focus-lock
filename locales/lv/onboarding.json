@@ -58,7 +58,7 @@
     }
   },
   "onboarding_lists_whitelist_rule": {
-    "message": "Režīmā $MODE$ nav pieejama neviena vietne, izņemot tavu atļauju sarakstu.",
+    "message": "Režīmā $MODE$ nav pieejama neviena vietne, izņemot tavu atļauto sarakstu.",
     "placeholders": {
       "MODE": {
         "content": "$1",

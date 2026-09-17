@@ -195,10 +195,18 @@ const MAX_IDENTICAL_SHARE = 0.1;
  */
 const MAX_SHARED_MESSAGE_CHARS = 25;
 
+/** A message with nothing to translate: placeholders, punctuation and spacing only. */
+function hasNoWords(message) {
+  return !/\p{Letter}/u.test(message.replace(/\$[A-Za-z0-9_]+\$/g, ''));
+}
+
 /** True when a translation reading exactly like the English cannot be an honest translation. */
 export function isPadding(locale, sourceMessage, translatedMessage) {
   if (NEAR_EN_LOCALES.has(locale)) return false;
   if (translatedMessage !== sourceMessage) return false;
+  // `$ACTION$: $DESTINATION$ ($HOSTNAME$)` has no words in it, so every language writes it the
+  // same way however long it is. Only a message with something to translate can be padding.
+  if (hasNoWords(sourceMessage)) return false;
   return [...sourceMessage].length > MAX_SHARED_MESSAGE_CHARS;
 }
 
@@ -252,6 +260,7 @@ export function checkTranslation(locale, en, catalogue) {
         // A short label, a product name, a glyph or a bare number can be the same in every
         // language, so only messages long enough to make sameness implausible are counted.
         [...source.message].length > MAX_SHARED_MESSAGE_CHARS &&
+        !hasNoWords(source.message) &&
         /[a-z]{2}/.test(source.message),
     );
     const identical = comparable.filter(

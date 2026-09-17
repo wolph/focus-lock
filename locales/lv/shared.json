@@ -6,7 +6,7 @@
     "message": "īsa"
   },
   "shared_preset_focus": {
-    "message": "fokuss"
+    "message": "koncentrēšanās"
   },
   "shared_preset_deep_work": {
     "message": "dziļais darbs"
@@ -15,7 +15,7 @@
     "message": "Tā ir izvēle, nevis zinātne: viens garš nepārtraukts bloks bez automātiskiem pārtraukumiem."
   },
   "shared_timed_hint_cycles": {
-    "message": "kopā $MINUTES$ min, ar $FOCUS$ min fokusa posmiem",
+    "message": "kopā $MINUTES$ min, ar $FOCUS$ min koncentrēšanās blokiem",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -28,7 +28,7 @@
     }
   },
   "shared_timed_hint_plain": {
-    "message": "$MINUTES$ min nepārtraukta fokusa",
+    "message": "$MINUTES$ min nepārtrauktas koncentrēšanās",
     "placeholders": {
       "MINUTES": {
         "content": "$1",
@@ -43,7 +43,7 @@
     "message": "Bloķēt līdz atbloķēšanai ar roku"
   },
   "shared_until_stopped_disclosure": {
-    "message": "Sesijas līdz apturēšanai paliek Elastīgas vai ar Aizkavi un nevar izmantot fokusa un pārtraukumu ciklus."
+    "message": "Sesijas līdz apturēšanai paliek Elastīgas vai ar Berzi un nevar izmantot koncentrēšanās un pārtraukumu ciklus."
   },
   "shared_hard_unavailable_reason": {
     "message": "Stingra bloķēšana nav pieejama režīmā Līdz apturēšanai: bez taimera un bez beigšanas ar roku sesija nekad nebeigtos."
@@ -107,10 +107,10 @@
     "message": "Atļaut tikai atlasītās vietnes"
   },
   "shared_focus_time_label": {
-    "message": "Fokusa laiks"
+    "message": "Koncentrēšanās laiks"
   },
   "shared_clock_focus_phase": {
-    "message": "fokusa fāze"
+    "message": "koncentrēšanās fāze"
   },
   "shared_clock_total_session": {
     "message": "visa sesija"
@@ -164,7 +164,7 @@
     "message": "Līdz loga beigām"
   },
   "shared_schedule_until_stopped": {
-    "message": "Sākas pēc grafika un darbojas, līdz to apturi: Elastīgai - Beigt sesiju, Aizkavei - Atbloķēt caur pārdomu vārtiem. Cikli izslēgti."
+    "message": "Sākas pēc grafika un darbojas, līdz to apturi: Elastīgai - Beigt sesiju, Berzei - Atbloķēt caur apdomāšanās vārtiem. Cikli izslēgti."
   },
   "shared_schedule_started_title": {
     "message": "Grafika sesija sākusies"
@@ -285,13 +285,13 @@
     "message": "Izmaksas pārsniedz kredīta ierobežojumu"
   },
   "shared_credit_resumes_focus": {
-    "message": "Kredīts atkal krājas fokusa laikā"
+    "message": "Kredīts atkal krājas koncentrēšanās laikā"
   },
   "shared_credit_off": {
     "message": "Kredīta krāšana ir izslēgta"
   },
   "shared_not_enough_time": {
-    "message": "Šajā fokusa posmā nepietiek laika"
+    "message": "Šajā koncentrēšanās blokā nepietiek laika"
   },
   "shared_ready_in": {
     "message": "Būs gatavs pēc $CLOCK$",
@@ -328,13 +328,13 @@
     "message": "Bloķē tavs bloķēšanas saraksts"
   },
   "shared_verdict_whitelist_miss": {
-    "message": "Nav tavā atļauju sarakstā"
+    "message": "Nav tavā atļauto sarakstā"
   },
   "shared_verdict_blocked_session": {
     "message": "Bloķē šī sesija"
   },
   "shared_verdict_allow_list": {
-    "message": "Ir tavā atļauju sarakstā"
+    "message": "Ir tavā atļauto sarakstā"
   },
   "shared_verdict_always_allowed": {
     "message": "Vienmēr atļauts"
@@ -346,7 +346,7 @@
     "message": "Izslēgts no atlasītas kategorijas"
   },
   "shared_verdict_no_session": {
-    "message": "Nenotiek neviena fokusa sesija"
+    "message": "Nenotiek neviena koncentrēšanās sesija"
   },
   "shared_verdict_allowed_session": {
     "message": "Atļauj šī sesija"
@@ -376,7 +376,7 @@
     "message": "Iestatījumi"
   },
   "shared_synced_lists": {
-    "message": "Bloķēšanas un atļauju saraksti"
+    "message": "Bloķēšanas un atļauto saraksti"
   },
   "shared_synced_credit": {
     "message": "Vietņu piekļuves kredīts"
@@ -391,7 +391,7 @@
     "message": "Pilnas URL adreses"
   },
   "shared_local_intentions": {
-    "message": "Fokusa nodomi"
+    "message": "Koncentrēšanās nodomi"
   },
   "shared_local_events": {
     "message": "Detalizēti sesijas notikumi"

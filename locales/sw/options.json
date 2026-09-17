@@ -125,6 +125,15 @@
   "options_rules_help": {
     "message": "facebook.com covers that domakatika na every subdomakatika. news.ycombkatikaatau.com covers that subdomakatika na anythkatikag under it. /youtube\\.com\\/shauts/ matches the full URL as a regular expressikwenye."
   },
+  "options_number_error_positive": {
+    "message": "$LABEL$ lazima kuwa namba nzima chanya.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
   "options_number_error_whole": {
     "message": "$LABEL$ must be a whole number wa zero au greater.",
     "placeholders": {
@@ -474,7 +483,7 @@
     "message": "Jum"
   },
   "options_day_mon": {
-    "message": "Jmo"
+    "message": "Mkwenye"
   },
   "options_day_tue": {
     "message": "Jam"
@@ -836,15 +845,5 @@
   },
   "options_error_save_lists": {
     "message": "Could not kuhifadhi lists. Reload the page na try agakatika."
-  },
-  "options_number_error_positive": {
-    "message": "$LABEL$ lazima kuwa namba nzima chanya.",
-    "description": "Error under a number field that takes only whole numbers above zero. LABEL holds that field's own label, for example Focus minutes.",
-    "placeholders": {
-      "LABEL": {
-        "content": "$1",
-        "example": "Focus minutes"
-      }
-    }
   }
 }

@@ -54,7 +54,7 @@
     "message": "Site access credit spent tohari"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "Semua sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
+    "message": "All situss $ALL_SITES$, padae situs $ONE_SITE$, $EARNED$ earned",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -270,7 +270,7 @@
     "message": "Fokused"
   },
   "stats_sessions_col_all_sites": {
-    "message": "Semua sites"
+    "message": "All situss"
   },
   "stats_sessions_col_one_site": {
     "message": "One situs"

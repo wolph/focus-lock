@@ -7,6 +7,7 @@ import {
   checkLocales,
   checkTranslation,
   generateLocales,
+  isPadding,
   LOCALES,
   mergeSurfaces,
   mergeTranslation,
@@ -390,5 +391,26 @@ describe('repairPlaceholders recovers a corrupted name', () => {
       placeholders: { ACTION: { content: '$1' }, DESTINATION: { content: '$2' } },
     };
     expect(repairPlaceholders(source, 'only $ACTIBUKAS$ here')).toBe('only $ACTIBUKAS$ here');
+  });
+});
+
+describe('isPadding', () => {
+  const sentence: string = 'End the running session before deleting all data.';
+
+  it('calls an identical sentence padding', () => {
+    expect(isPadding('nl', sentence, sentence)).toBe(true);
+  });
+
+  it('never calls a message without words padding', () => {
+    const shape: string = '$ACTION$: $DESTINATION$ ($HOSTNAME$)';
+    expect(isPadding('nl', shape, shape)).toBe(false);
+  });
+
+  it('never calls a short label padding', () => {
+    expect(isPadding('nl', 'Notifications', 'Notifications')).toBe(false);
+  });
+
+  it('never calls British English padding', () => {
+    expect(isPadding('en_GB', sentence, sentence)).toBe(false);
   });
 });

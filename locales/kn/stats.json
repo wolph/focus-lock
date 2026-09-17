@@ -1,51 +1,51 @@
 {
   "stats_document_title": {
-    "message": "ಫೋಕಸ್ Lock stನಲ್ಲಿs"
+    "message": "ಫೋಕಸ್ Lock stats"
   },
   "stats_page_title": {
-    "message": "Your focus recಅಥವಾd"
+    "message": "Your ಫೋಕಸ್ record"
   },
   "stats_loading": {
-    "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ your stನಲ್ಲಿs."
+    "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ your stats."
   },
   "stats_load_error": {
     "message": "Could not load stನಲ್ಲಿs. Reload ಕಿ try agaರಲ್ಲಿ."
   },
   "stats_partial_error_both": {
-    "message": "ಗಂಟೆly ನಲ್ಲಿtempts ಮತ್ತು site access credit settರಲ್ಲಿgs are unavailable."
+    "message": "Hourly attempts and site access credit ಸೆಟ್ಟಿಂಗ್‌ಗಳು are unavailable."
   },
   "stats_partial_error_attempts": {
     "message": "ಗಂಟೆly ನಲ್ಲಿtempts are unavailable."
   },
   "stats_partial_error_economy": {
-    "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ settರಲ್ಲಿgs are unavailable."
+    "message": "Site access credit ಸೆಟ್ಟಿಂಗ್‌ಗಳು are unavailable."
   },
   "stats_scope_synced": {
     "message": "ಸಿಂಕ್ರೊನೈಜ್ed ಕಿtals from this Chrome account. Local-ಮೇಲೆly panels are labeled."
   },
   "stats_scope_local": {
-    "message": "ಗೆtals from this machine. Focus Lock statistics are not synced."
+    "message": "Totals from this machine. ಫೋಕಸ್ Lock statistics are not synced."
   },
   "stats_scope_checking": {
-    "message": "ಪರೀಕ್ಷೆ whether these ಕಿtals are synced."
+    "message": "ಪರೀಕ್ಷೆ whether these totals are synced."
   },
   "stats_scope_unavailable": {
-    "message": "Statistics scope is unavailable. ಗೆtals may include synced data. Hourly attempts and recent sessions are from this machine."
+    "message": "Statistics scope is unavailable. Totals may include synced data. Hourly attempts and recent ಸೆಷ್ಟs are from this machine."
   },
   "stats_scope_retry": {
     "message": "ಮರುಪ್ರಯತ್ನ scope check"
   },
   "stats_empty": {
-    "message": "Stನಲ್ಲಿs appear after your first sessiಮೇಲೆ."
+    "message": "Stats appear after your first ಸೆಷ್ಟ."
   },
   "stats_tile_focus_today": {
-    "message": "ಫೋಕಸ್ ಕಿday"
+    "message": "ಫೋಕಸ್ today"
   },
   "stats_tile_focus_last_7_days": {
-    "message": "ಫೋಕಸ್ ರಲ್ಲಿ the last 7 days"
+    "message": "ಫೋಕಸ್ in the last 7 days"
   },
   "stats_tile_attempts_today": {
-    "message": "Attempts blocked ಕಿday"
+    "message": "Attempts ನಿರ್ಬಂಧed today"
   },
   "stats_tile_gate_dismissed_today": {
     "message": "Gನಲ್ಲಿe requests dismissed ಕಿday"
@@ -54,7 +54,7 @@
     "message": "ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ spent ಕಿday"
   },
   "stats_tile_credit_subline_spent": {
-    "message": "ಎಲ್ಲಾ sites $ALL_SITES$, one site $ONE_SITE$, $EARNED$ earned",
+    "message": "All sites $ALL_SITES$, ಮೇಲೆe site $ONE_SITE$, $EARNED$ earned",
     "placeholders": {
       "ALL_SITES": {
         "content": "$1",
@@ -83,7 +83,7 @@
     "message": "ಧಾರೆ"
   },
   "stats_streak_empty": {
-    "message": "Your streak starts ಜೊತೆ your first focus day."
+    "message": "Your streak starts with your first ಫೋಕಸ್ day."
   },
   "stats_streak_unit_one": {
     "message": "ದಿನ"
@@ -164,19 +164,19 @@
     "message": "ಫೋಕಸ್, last 14 days"
   },
   "stats_chart_focus_empty": {
-    "message": "ಫೋಕಸ್ mರಲ್ಲಿutes appear after your first sessiಮೇಲೆ."
+    "message": "ಫೋಕಸ್ minutes appear after your first ಸೆಷ್ಟ."
   },
   "stats_chart_attempts_heading": {
-    "message": "ನಿರ್ಬಂಧಿತ ನಲ್ಲಿtempts, last 14 days"
+    "message": "ನಿರ್ಬಂಧed attempts, last 14 days"
   },
   "stats_chart_attempts_empty": {
-    "message": "ನಿರ್ಬಂಧಿತ ನಲ್ಲಿtempts show up here ಮೇಲೆce a sessiಮೇಲೆ cನಲ್ಲಿches ಮೇಲೆe."
+    "message": "ನಿರ್ಬಂಧed attempts show up here once a ಸೆಷ್ಟ catches one."
   },
   "stats_chart_sites_heading": {
-    "message": "ಗೆp blocked sites, last 30 days"
+    "message": "Top ನಿರ್ಬಂಧed sites, last 30 days"
   },
   "stats_chart_sites_empty": {
-    "message": "Nothರಲ್ಲಿg blocked yet. Thನಲ್ಲಿ is a fರಲ್ಲಿe start."
+    "message": "Nothing ನಿರ್ಬಂಧed yet. That is a fine start."
   },
   "stats_chart_hours_heading": {
     "message": "Attempts ಮೂಲಕ hour, this machರಲ್ಲಿe ಮೇಲೆly"
@@ -249,16 +249,16 @@
     "message": "ಮೌಲ್ಯ"
   },
   "stats_heat_strip_label": {
-    "message": "24-hour blocked-ನಲ್ಲಿtempt heನಲ್ಲಿ strip"
+    "message": "24-hour ನಿರ್ಬಂಧed-attempt heat strip"
   },
   "stats_sessions_heading": {
-    "message": "Recent sessiಮೇಲೆs ಮೇಲೆ this machರಲ್ಲಿe"
+    "message": "Recent ಸೆಷ್ಟs on this machine"
   },
   "stats_sessions_empty": {
-    "message": "Your first sessiಮೇಲೆ will appear here."
+    "message": "Your first ಸೆಷ್ಟ will appear here."
   },
   "stats_sessions_col_date": {
-    "message": "ದಿನಾಂಕ"
+    "message": "Dನಲ್ಲಿe"
   },
   "stats_sessions_col_start": {
     "message": "ಪ್ರಾರಂಭಿಸಿ"

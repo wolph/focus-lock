@@ -14,6 +14,9 @@
   "stats_partial_error_both": {
     "message": "Hourly attempts na kwavuti kufikia crhariri mipangilio are unavailable."
   },
+  "stats_partial_error_attempts": {
+    "message": "Majaribio ya kila saa hayapatikani."
+  },
   "stats_partial_error_economy": {
     "message": "Tovuti kufikia crhariri mipangilio are unavailable."
   },
@@ -310,9 +313,5 @@
   },
   "stats_outcome_running": {
     "message": "Runnkatikag"
-  },
-  "stats_partial_error_attempts": {
-    "message": "Majaribio ya kila saa hayapatikani.",
-    "description": "Warning above the panels when only the hourly attempt log failed to load."
   }
 }

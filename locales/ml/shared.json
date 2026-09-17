@@ -101,7 +101,7 @@
     "message": "നിർത്തുന്നതുവരെയാൽ നിർബന്ധിതമായ ചക്രങ്ങൾ"
   },
   "shared_mode_blacklist": {
-    "message": "തിരഞ്ഞെടുത്ത സൈറ്റുകൾ തടയുക"
+    "message": "തടയുക selected sites"
   },
   "shared_mode_whitelist": {
     "message": "തിരഞ്ഞെടുത്ത സൈറ്റുകൾ മാത്രം അനുവദിക്കുക"
@@ -128,7 +128,7 @@
     "message": "Focus Lock ആരംഭിക്കുന്നു. നിങ്ങളുടെ തിരഞ്ഞെടുത്ത നിയമങ്ങൾ പ്രയോഗിക്കുന്നു."
   },
   "shared_popup_closure_cleanup": {
-    "message": "സെഷൻ അവസാനിച്ചു. ബ്രൗസർ ക്ലീനআപ് പൂർത്തിയാക്കുന്നു."
+    "message": "സെഷൻ ended. Finishing browser cleanup."
   },
   "shared_popup_transition_cleanup": {
     "message": "Focus Lock ആരംഭിക്കാൻ കഴിഞ്ഞില്ല. ബ്രൗസർ ക്ലീനআപ് പൂർത്തിയാക്കുന്നു."
@@ -373,10 +373,10 @@
     "message": "ഫോറങ്ങൾ കൂടാതെ വിരസത"
   },
   "shared_synced_settings": {
-    "message": "സജ്ജീകരണങ്ങൾ"
+    "message": "സെറ്റിംഗുകൾ"
   },
   "shared_synced_lists": {
-    "message": "തടയൽ കൂടാതെ അനുവാദ ലിസ്റ്റുകൾ"
+    "message": "തടയുക and allow lists"
   },
   "shared_synced_credit": {
     "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ്"
@@ -415,7 +415,7 @@
     "message": "അവലോകനം"
   },
   "shared_nav_settings": {
-    "message": "സജ്ജീകരണങ്ങൾ"
+    "message": "സെറ്റിംഗുകൾ"
   },
   "shared_section_blocking": {
     "message": "തടയൽ"
@@ -424,7 +424,7 @@
     "message": "ഷെഡ്യൂൾ"
   },
   "shared_section_behavior": {
-    "message": "സെഷൻ പെരുമാറ്റം"
+    "message": "സെഷൻ behavior"
   },
   "shared_section_budget": {
     "message": "സൈറ്റ് ആക്സസ് ക്രെഡിറ്റ്"

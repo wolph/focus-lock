@@ -125,6 +125,15 @@
   "options_rules_help": {
     "message": "facebook.com covers that domasa at every subdomasa. news.ycombsaasa.com covers that subdomasa at anythsag under it. /youtube\\.com\\/shots/ matches the full URL as a regular expressisa."
   },
+  "options_number_error_positive": {
+    "message": "Ang $LABEL$ ay dapat na positibong buong numero.",
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
+  },
   "options_number_error_whole": {
     "message": "$LABEL$ must be a whole number ng zero o greater.",
     "placeholders": {
@@ -474,7 +483,7 @@
     "message": "Lin"
   },
   "options_day_mon": {
-    "message": "Lun"
+    "message": "Msa"
   },
   "options_day_tue": {
     "message": "Mar"
@@ -836,15 +845,5 @@
   },
   "options_error_save_lists": {
     "message": "Could not magsave lists. Reload the page at try agasa."
-  },
-  "options_number_error_positive": {
-    "message": "Ang $LABEL$ ay dapat na positibong buong numero.",
-    "description": "Error under a number field that takes only whole numbers above zero. LABEL holds that field's own label, for example Focus minutes.",
-    "placeholders": {
-      "LABEL": {
-        "content": "$1",
-        "example": "Focus minutes"
-      }
-    }
   }
 }

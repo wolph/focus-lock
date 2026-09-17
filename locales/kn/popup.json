@@ -16,61 +16,64 @@
     "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
   "popup_open_settings_failed": {
-    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Try agaರಲ್ಲಿ."
+    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Try again."
   },
   "popup_settings_load_failed": {
-    "message": "Could not load session settings. Reload the popup to try again. ಪೂರ್ವನಿರ್ಧಾರಿತs are shown."
+    "message": "Could not load ಸೆಷ್ಟ ಸೆಟ್ಟಿಂಗ್‌ಗಳು. Reload the popup to try again. Defaults are shown."
   },
   "popup_open_setup_failed": {
-    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ setup. Try agaರಲ್ಲಿ."
+    "message": "ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ setup. Try again."
   },
   "popup_setup_required_heading": {
-    "message": "Fರಲ್ಲಿish settರಲ್ಲಿg up ಫೋಕಸ್ Lock"
+    "message": "Finish setting up ಫೋಕಸ್ Lock"
   },
   "popup_setup_required_body": {
-    "message": "Choose your startರಲ್ಲಿg lists, website access, ಮತ್ತು stಅಥವಾage mode beಸಾಕಾಂಶe startರಲ್ಲಿg a sessiಮೇಲೆ."
+    "message": "Choose your starting lists, website access, and storage mode before starting a ಸೆಷ್ಟ."
   },
   "popup_open_setup_button": {
     "message": "ಸೆಟಪ್ ತೆರೆಯಿರಿ"
   },
   "popup_blocking_confirm_failed": {
-    "message": "Could not cಮೇಲೆfirm website blockರಲ್ಲಿg. Try agaರಲ್ಲಿ."
+    "message": "Could not confirm website ನಿರ್ಬಂಧing. Try again."
   },
   "popup_blocking_enable_failed": {
-    "message": "Could not enable website blockರಲ್ಲಿg. Try agaರಲ್ಲಿ."
+    "message": "Could not enable website ನಿರ್ಬಂಧing. Try again."
   },
   "popup_blocking_off_heading": {
-    "message": "Website blockರಲ್ಲಿg is ನf"
+    "message": "Website ನಿರ್ಬಂಧing is off"
   },
   "popup_blocking_off_body": {
-    "message": "ಫೋಕಸ್ Lock cannot start a sessiಮೇಲೆ until Chrome grants website access ಮತ್ತು blockರಲ್ಲಿg is enabled."
+    "message": "ಫೋಕಸ್ Lock cannot start a ಸೆಷ್ಟ until Chrome grants website access and ನಿರ್ಬಂಧing is enabled."
   },
   "popup_blocking_off_denied": {
-    "message": "Chrome did not grant website access. Website blockರಲ್ಲಿg is still ನf."
+    "message": "Chrome did not grant website access. Website ನಿರ್ಬಂಧing is still off."
   },
   "popup_blocking_off_registration_error": {
-    "message": "Website access is granted, but ಫೋಕಸ್ Lock could not enable blockರಲ್ಲಿg. ಮರುಪ್ರಯತ್ನ setup ಅಥವಾ reload the extensiಮೇಲೆ."
+    "message": "Website access is granted, but ಫೋಕಸ್ Lock could not enable ನಿರ್ಬಂಧing. ಮರುಪ್ರಯತ್ನ setup or reload the extension."
   },
   "popup_enable_blocking_button": {
-    "message": "Enable website blockರಲ್ಲಿg"
+    "message": "Enable website ನಿರ್ಬಂಧing"
   },
   "popup_retry_button": {
     "message": "ಮರುಪ್ರಯತ್ನ"
   },
   "popup_notice_access_revoked": {
-    "message": "Your sessiಮೇಲೆ ended because website access was removed."
+    "message": "Your ಸೆಷ್ಟ ended because website access was removed."
   },
   "popup_notice_blocking_failed": {
-    "message": "Your sessiಮೇಲೆ ended because ಫೋಕಸ್ Lock could not enable website blockರಲ್ಲಿg."
+    "message": "Your ಸೆಷ್ಟ ended because ಫೋಕಸ್ Lock could not enable website ನಿರ್ಬಂಧing."
   },
   "popup_dismiss_notice_failed": {
     "message": "Could not dismiss this notice. Try agaರಲ್ಲಿ."
+  },
+  "popup_dismiss_notice_label": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಸೂಚನೆ ಅಕ್ಷರೇ"
   },
   "popup_dismiss_button": {
     "message": "ಅಕ್ಷರೇ"
   },
   "popup_restart_failed": {
-    "message": "Could not restart ಫೋಕಸ್ Lock. Try agaರಲ್ಲಿ."
+    "message": "Could not restart ಫೋಕಸ್ Lock. Try again."
   },
   "popup_boot_failed_heading": {
     "message": "ಫೋಕಸ್ Lock could not start"
@@ -82,7 +85,7 @@
     "message": "ಸ್ಥಳೀಯ ರನ್‌ಟೈಮ್ ಮರುಹೊಂದಿಸಿ"
   },
   "popup_reset_runtime_note": {
-    "message": "Keeps your settರಲ್ಲಿgs, lists, ಮತ್ತು stನಲ್ಲಿistics. Clears the current sessiಮೇಲೆ stನಲ್ಲಿe."
+    "message": "Keeps your ಸೆಟ್ಟಿಂಗ್‌ಗಳು, lists, and statistics. Clears the current ಸೆಷ್ಟ state."
   },
   "popup_delete_all_confirm_button": {
     "message": "Delete everythರಲ್ಲಿg ಮತ್ತು start over"
@@ -91,13 +94,13 @@
     "message": "Keep my dನಲ್ಲಿa"
   },
   "popup_delete_all_button": {
-    "message": "Delete all ಫೋಕಸ್ Lock dನಲ್ಲಿa"
+    "message": "Delete all ಫೋಕಸ್ Lock data"
   },
   "popup_setup_status_unavailable": {
-    "message": "Setup stನಲ್ಲಿus unavailable. Reload ಫೋಕಸ್ Lock ಕಿ try agaರಲ್ಲಿ."
+    "message": "Setup status unavailable. Reload ಫೋಕಸ್ Lock to try again."
   },
   "popup_snapshot_unavailable": {
-    "message": "ಫೋಕಸ್ stನಲ್ಲಿus unavailable"
+    "message": "ಫೋಕಸ್ status unavailable"
   },
   "popup_action_in_progress": {
     "message": "ಕ್ರಿಯೆ ರಲ್ಲಿ progress"
@@ -108,11 +111,17 @@
   "popup_active_site_unsupported": {
     "message": "Open a regular website ಕಿ unlock it"
   },
+  "popup_active_site_unknown": {
+    "message": "ಸಕ್ರಿಯ ಸೈಟ್ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
+  },
+  "popup_active_site_error": {
+    "message": "ಸಕ್ರಿಯ ಸೈಟ್ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+  },
   "popup_resume_now": {
     "message": "ಸುಳ್ಳು ಪ್ರಸ್ತಾಪಿಸಿ now"
   },
   "popup_start_next_focus_early": {
-    "message": "ಪ್ರಾರಂಭಿಸಿ next focus early"
+    "message": "ಪ್ರಾರಂಭಿಸಿ next ಫೋಕಸ್ early"
   },
   "popup_unlock_this_site": {
     "message": "ಅನ್‌ಲಾಕ್ this site"
@@ -120,14 +129,53 @@
   "popup_unlock_all_sites": {
     "message": "ಅನ್‌ಲಾಕ್ all sites"
   },
+  "popup_spend_cost": {
+    "message": "$ACCESS$ ಪ್ರವೇಶ, $CREDIT$ ಕ್ರೆಡಿಟ್",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      }
+    }
+  },
+  "popup_spend_cost_host": {
+    "message": "$ACCESS$ ಪ್ರವೇಶ, $CREDIT$ ಕ್ರೆಡಿಟ್ - $HOST$",
+    "placeholders": {
+      "ACCESS": {
+        "content": "$1",
+        "example": "5:00"
+      },
+      "CREDIT": {
+        "content": "$2",
+        "example": "5:00"
+      },
+      "HOST": {
+        "content": "$3",
+        "example": "reddit.com"
+      }
+    }
+  },
   "popup_choose_work_tab_button": {
     "message": "Choose wಅಥವಾk tab"
   },
   "popup_change_work_tab_button": {
-    "message": "ಬದಲಾವಣೆ wಅಥವಾk tab"
+    "message": "ಬದಲಾವಣೆ work tab"
   },
   "popup_session_actions_summary": {
-    "message": "ಸೆಷ್ಟ actiಮೇಲೆs"
+    "message": "ಸೆಷ್ಟ actions"
+  },
+  "popup_site_access_credit": {
+    "message": "$CREDIT$ ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್",
+    "placeholders": {
+      "CREDIT": {
+        "content": "$1",
+        "example": "12:30"
+      }
+    }
   },
   "popup_add_allowed_domain_label": {
     "message": "Add an allowed domaರಲ್ಲಿ"
@@ -151,7 +199,7 @@
     }
   },
   "popup_draft_blocked_summary": {
-    "message": "$CATEGORIES$ blocked cನಲ್ಲಿegಅಥವಾies, $RULES$ extra rules.",
+    "message": "$CATEGORIES$ ನಿರ್ಬಂಧed categories, $RULES$ extra rules.",
     "placeholders": {
       "CATEGORIES": {
         "content": "$1",
@@ -164,10 +212,19 @@
     }
   },
   "popup_draft_stop_hard": {
-    "message": "ಹಾರ್ಡ ಲಾಕ್. Cannot end early."
+    "message": "ಕಠಿಣ lock. Cannot end early."
   },
   "popup_draft_stop_flexible": {
     "message": "Can end ನಲ್ಲಿ any time."
+  },
+  "popup_draft_stop_friction": {
+    "message": "$SECONDS$ಸೆ ನಂತರ ಮುಗಿಸಿ.",
+    "placeholders": {
+      "SECONDS": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
   },
   "popup_draft_stop_friction_phrase": {
     "message": "End after a $SECONDS$s wait ಮತ್ತು cಮೇಲೆfirmನಲ್ಲಿiಮೇಲೆ phrase.",
@@ -191,7 +248,7 @@
     "message": "Ignಅಥವಾe timeout ಮತ್ತು end anyway"
   },
   "popup_gate_keep_focusing": {
-    "message": "Keep focusರಲ್ಲಿg"
+    "message": "Keep ಫೋಕಸ್ing"
   },
   "popup_gate_phrase_label": {
     "message": "ಪ್ರಕಾರ:"
@@ -249,10 +306,10 @@
     }
   },
   "popup_categories_locked": {
-    "message": "ವರ್ಗ editರಲ್ಲಿg is disabled until blocked-site lists reload."
+    "message": "Category editing is disabled until ನಿರ್ಬಂಧed-site lists reload."
   },
   "popup_blocked_categories_heading": {
-    "message": "ನಿರ್ಬಂಧಿತ cನಲ್ಲಿegಅಥವಾies"
+    "message": "ನಿರ್ಬಂಧed categories"
   },
   "popup_show_full_domain": {
     "message": "Show full domaರಲ್ಲಿ: $PATTERN$",
@@ -324,7 +381,7 @@
     }
   },
   "popup_allowed_exceptions_heading": {
-    "message": "ಎಲ್ಲಾowed exceptions"
+    "message": "Allowed exceptiಮೇಲೆs"
   },
   "popup_extra_blocked_heading": {
     "message": "Extra ನಿರ್ಬಂಧed rules"
@@ -333,13 +390,13 @@
     "message": "No extra ನಿರ್ಬಂಧed rules."
   },
   "popup_allowed_heading": {
-    "message": "ಎಲ್ಲಾowed sites and rules"
+    "message": "Allowed sites ಮತ್ತು rules"
   },
   "popup_no_allowed_sites": {
     "message": "ಇನ್ನೂ ಯಾವುದೇ ಸೈಟ್ ಅನುಮತಿಯಿಲ್ಲ."
   },
   "popup_what_will_be_blocked": {
-    "message": "Whನಲ್ಲಿ will be blocked"
+    "message": "What will be ನಿರ್ಬಂಧed"
   },
   "popup_what_will_be_allowed": {
     "message": "Whನಲ್ಲಿ will be allowed"
@@ -394,13 +451,13 @@
     }
   },
   "popup_scope_whitelist": {
-    "message": "ಎಲ್ಲಾowed-site and rule changes here apply only to this session. ಪ್ರತಿthing else is blocked."
+    "message": "Allowed-site and rule changes here apply only to this ಸೆಷ್ಟ. Everything else is ನಿರ್ಬಂಧed."
   },
   "popup_scope_blacklist": {
-    "message": "ವರ್ಗ ಮತ್ತು rule changes here apply ಮೇಲೆly ಕಿ this sessiಮೇಲೆ."
+    "message": "Category and rule changes here apply only to this ಸೆಷ್ಟ."
   },
   "popup_open_settings_defaults": {
-    "message": "Open ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಸಾಕಾಂಶ permanent defaults"
+    "message": "Open ಸೆಟ್ಟಿಂಗ್‌ಗಳು for permanent defaults"
   },
   "popup_rule_details_label": {
     "message": "ಸೆಷ್ಟ rule details"
@@ -415,10 +472,10 @@
     "message": "ರಕ್ಷಣೆ"
   },
   "popup_session_type_hard": {
-    "message": "ಹಾರ್ಡ ಲಾಕ್"
+    "message": "ಕಠಿಣ lock"
   },
   "popup_session_type_flexible_hint": {
-    "message": "End the sessiಮೇಲೆ immediನಲ್ಲಿely ಯಾವಾಗever you choose."
+    "message": "End the ಸೆಷ್ಟ immediately whenever you choose."
   },
   "popup_session_type_friction_hint": {
     "message": "Endರಲ್ಲಿg early requires $WAIT$. No typರಲ್ಲಿg is required.",
@@ -439,16 +496,16 @@
     }
   },
   "popup_session_type_hard_hint": {
-    "message": "The sessiಮೇಲೆ cannot end early. ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್ still wಅಥವಾks."
+    "message": "The ಸೆಷ್ಟ cannot end early. Site access credit still works."
   },
   "popup_mode_blacklist_hint": {
-    "message": "The selected cನಲ್ಲಿegಅಥವಾies ಮತ್ತು extra rules are blocked. Other sites remaರಲ್ಲಿ available."
+    "message": "The selected categories and extra rules are ನಿರ್ಬಂಧed. Other sites remain available."
   },
   "popup_mode_whitelist_hint": {
-    "message": "Only the listed sites are available. ಪ್ರತಿ other website is blocked."
+    "message": "Only the listed sites are available. Every other website is ನಿರ್ಬಂಧed."
   },
   "popup_invalid_duration_error": {
-    "message": "Enter a sessiಮೇಲೆ length greನಲ್ಲಿer than zero mರಲ್ಲಿutes."
+    "message": "Enter a ಸೆಷ್ಟ length greater than zero minutes."
   },
   "popup_stale_lists_unavailable": {
     "message": "ಪೂರ್ವನಿರ್ಧಾರಿತs changed, but current lists could not be loaded. Reload the popup."
@@ -460,7 +517,7 @@
     "message": "ಆರಿಸಿed tab unavailable - choose another"
   },
   "popup_cycles_label": {
-    "message": "ಚಕ್ರs: $FOCUS$ mರಲ್ಲಿ focus, $SHORT_BREAK$ mರಲ್ಲಿ break, $LONG_BREAK$ mರಲ್ಲಿ lಮೇಲೆg break every $LONG_EVERY$th",
+    "message": "ಚಕ್ರs: $FOCUS$ min ಫೋಕಸ್, $SHORT_BREAK$ min break, $LONG_BREAK$ min long break every $LONG_EVERY$th",
     "placeholders": {
       "FOCUS": {
         "content": "$1",
@@ -499,7 +556,7 @@
     "message": "ಬದಲಾವಣೆ"
   },
   "popup_session_settings_summary": {
-    "message": "ಸೆಷ್ಟ settರಲ್ಲಿgs"
+    "message": "ಸೆಷ್ಟ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
   "popup_choose_work_tab_label": {
     "message": "Choose a wಅಥವಾk tab"
@@ -517,13 +574,13 @@
     }
   },
   "popup_blocking_mode_legend": {
-    "message": "ನಿರ್ಬಂಧ mode"
+    "message": "ನಿರ್ಬಂಧing mode"
   },
   "popup_invalid_time_label": {
     "message": "ರಲ್ಲಿvalid time"
   },
   "popup_start_focus_label": {
-    "message": "ಪ್ರಾರಂಭಿಸಿ $DURATION$ focus",
+    "message": "ಪ್ರಾರಂಭಿಸಿ $DURATION$ ಫೋಕಸ್",
     "placeholders": {
       "DURATION": {
         "content": "$1",
@@ -568,70 +625,6 @@
     "message": "ಅಥವಾ ಮತ್ತೊಂದು ಟ್ಯಾಬ್ ಆರಿಸಿ"
   },
   "popup_start_failed": {
-    "message": "Could not start sessiಮೇಲೆ. Try agaರಲ್ಲಿ."
-  },
-  "popup_dismiss_notice_label": {
-    "message": "ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶ ಸೂಚನೆ ಅಕ್ಷರೇ",
-    "description": "Accessible name of the button that hides the website access notice in the popup."
-  },
-  "popup_active_site_unknown": {
-    "message": "ಸಕ್ರಿಯ ಸೈಟ್ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ",
-    "description": "Reason the unlock button is disabled after reading the current tab failed. Shown inside the button, without a full stop."
-  },
-  "popup_active_site_error": {
-    "message": "ಸಕ್ರಿಯ ಸೈಟ್ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
-    "description": "Alert under the active session view after reading the current tab failed. A sentence, unlike the shorter reason inside the button."
-  },
-  "popup_spend_cost": {
-    "message": "$ACCESS$ ಪ್ರವೇಶ, $CREDIT$ ಕ್ರೆಡಿಟ್",
-    "description": "Second line of an unlock button: how long the unlock lasts and how much earned credit it costs. Both are clock durations such as 5:00.",
-    "placeholders": {
-      "ACCESS": {
-        "content": "$1",
-        "example": "5:00"
-      },
-      "CREDIT": {
-        "content": "$2",
-        "example": "5:00"
-      }
-    }
-  },
-  "popup_spend_cost_host": {
-    "message": "$ACCESS$ ಪ್ರವೇಶ, $CREDIT$ ಕ್ರೆಡಿಟ್ - $HOST$",
-    "description": "Second line of the unlock button for one site: the length, the cost, and the site it applies to. ACCESS and CREDIT are clock durations, HOST is a domain name.",
-    "placeholders": {
-      "ACCESS": {
-        "content": "$1",
-        "example": "5:00"
-      },
-      "CREDIT": {
-        "content": "$2",
-        "example": "5:00"
-      },
-      "HOST": {
-        "content": "$3",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "popup_site_access_credit": {
-    "message": "$CREDIT$ ಸೈಟ್ ಪ್ರವೇಶ ಕ್ರೆಡಿಟ್",
-    "description": "How much earned credit is available, shown above the session actions. CREDIT is a clock duration.",
-    "placeholders": {
-      "CREDIT": {
-        "content": "$1",
-        "example": "12:30"
-      }
-    }
-  },
-  "popup_draft_stop_friction": {
-    "message": "$SECONDS$ಸೆ ನಂತರ ಮುಗಿಸಿ.",
-    "description": "Summary beside the start button for a session that can be ended after a deliberation wait. SECONDS is that wait in seconds, and s is the abbreviation for seconds.",
-    "placeholders": {
-      "SECONDS": {
-        "content": "$1",
-        "example": "10"
-      }
-    }
+    "message": "Could not start ಸೆಷ್ಟ. Try again."
   }
 }

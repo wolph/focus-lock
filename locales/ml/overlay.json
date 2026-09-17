@@ -18,6 +18,23 @@
       }
     }
   },
+  "overlay_return_label_host": {
+    "message": "$ACTION$: $DESTINATION$ ($HOSTNAME$)",
+    "placeholders": {
+      "ACTION": {
+        "content": "$1",
+        "example": "Back to work"
+      },
+      "DESTINATION": {
+        "content": "$2",
+        "example": "Annual report"
+      },
+      "HOSTNAME": {
+        "content": "$3",
+        "example": "work.example"
+      }
+    }
+  },
   "overlay_target_checking": {
     "message": "ലഭ്യമായ വർക്ക് ടാബുകൾ പരിശോധിക്കുന്നു..."
   },
@@ -43,7 +60,7 @@
     "message": "വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക"
   },
   "overlay_picker_cancel": {
-    "message": "റദ്ദാക്കുക"
+    "message": "റദ്ദുചെയ്യുക"
   },
   "overlay_picker_search_label": {
     "message": "വർക്ക് ടാബുകൾ തിരയുക"
