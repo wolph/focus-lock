@@ -16,7 +16,7 @@ No account, payment, external service, or test credential is required. The exten
 7. Choose Start 2 min focus.
 8. After the session starts, open a new normal top-level tab and navigate to `https://x.com/`.
 9. Confirm the blocking surface shows the intention, countdown, and rule text `Blocked by Social media: x.com`. The rule text identifies the source and matched domain. x.com is an unaffiliated example from the bundled Social media list. If the review environment cannot reach it or rewrites the URL, navigate to another domain shown in that list and substitute the final registrable host in the expected rule text.
-10. Click the Focus Lock toolbar icon, expand Session actions, and choose End session. Flexible ends immediately without a wait or typed phrase. Focus Lock removes the blocking surface. If the document was stopped during navigation, the tab reloads so the requested page can render.
+10. Click the Focus Lock toolbar icon and choose End session. The session actions are visible as soon as the popup opens, so there is nothing to expand. Flexible ends immediately without a wait or typed phrase. Focus Lock removes the blocking surface. If the document was stopped during navigation, the tab reloads so the requested page can render.
 
 ## Inspect Statistics
 
