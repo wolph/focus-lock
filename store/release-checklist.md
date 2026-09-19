@@ -138,6 +138,23 @@ publisher account that the agent cannot perform: see below.
 - Google's own dialog warns that review can take up to several weeks, so the published version stays
   0.1.1 until this passes. Nothing here represents approval by Google.
 
+### Repo copy that still trails the dashboard
+
+Two texts live in the dashboard in a newer form than this repository holds. Both were checked on
+19 September 2026 by reading the dashboard directly.
+
+- `store/listing.md` holds the description that is published today, which opens "Focus Lock blocks
+  distracting websites". The 0.2.0 draft carries a different, longer description of 4,207
+  characters that opens "You sat down to finish the proposal". The draft text is the one that will
+  go live when this release passes review.
+- The `scripting` permission justification in the dashboard is 472 characters. The two columns for
+  `scripting` in `store/permission-justifications.md` concatenate to 352, so the dashboard carries
+  roughly 120 characters this file lacks. The other seven justifications match to the character.
+
+Neither could be copied across, because the dashboard asked for a fresh sign-in and reading a draft
+needs one. Copying them is a two-minute job once signed in, and inventing the missing words instead
+would have put text in the repository that nobody wrote.
+
 ### Why the upload is not automated
 
 Two routes were tried and both are closed, so this is a standing limitation rather than a one-off.
