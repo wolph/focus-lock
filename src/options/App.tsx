@@ -1,5 +1,6 @@
 import type { VNode } from 'preact';
 import { type Dispatch, type StateUpdater, useEffect, useState } from 'preact/hooks';
+import type { PendingPath } from '../background/pending-policy-changes';
 import { t } from '../shared/i18n';
 import {
   parseSettingsSectionHash,
@@ -11,6 +12,7 @@ import { applyTheme } from '../shared/theme';
 import type { ListsConfig, Rule, ScheduleEntry, Settings } from '../shared/types';
 import { BehaviorDefaults, PauseEconomy } from './Behavior';
 import { Categories } from './Categories';
+import { PendingChange } from './PendingChange';
 import { PrivacyData } from './PrivacyData';
 import { RulesEditor } from './RulesEditor';
 import { Schedule } from './Schedule';
@@ -32,6 +34,26 @@ interface SectionProps {
   store: SettingsStore;
   onSettings: (next: Settings) => void;
   onLists: (next: ListsConfig) => void;
+}
+
+/** The held edits for one section, under the controls that asked for them. */
+function HeldEdits({ store, paths }: { store: SettingsStore; paths: PendingPath[] }): VNode {
+  return (
+    <>
+      {paths.map(
+        (path: PendingPath): VNode => (
+          <PendingChange
+            key={path}
+            path={path}
+            changes={store.pendingChanges}
+            onCancel={(cancelled: PendingPath): void => {
+              void store.cancelPendingChange(cancelled);
+            }}
+          />
+        ),
+      )}
+    </>
+  );
 }
 
 function BlockingSection(props: SectionProps): VNode {
@@ -58,6 +80,7 @@ function BlockingSection(props: SectionProps): VNode {
         <p class="help">{t('options_bundled_categories_help')}</p>
         <Categories lists={props.lists} onChange={props.onLists} />
       </div>
+      <HeldEdits store={props.store} paths={['lists']} />
     </section>
   );
 }
@@ -74,6 +97,7 @@ function ScheduleSection(props: SectionProps): VNode {
           props.onSettings({ ...props.settings, schedule: next });
         }}
       />
+      <HeldEdits store={props.store} paths={['settings.schedule']} />
     </section>
   );
 }
@@ -83,6 +107,14 @@ function BehaviorSection(props: SectionProps): VNode {
     <section>
       <h2>{t('options_behavior_heading')}</h2>
       <BehaviorDefaults settings={props.settings} onChange={props.onSettings} />
+      <HeldEdits
+        store={props.store}
+        paths={[
+          'settings.defaultStrictness',
+          'settings.gate.delayMs',
+          'settings.gate.requireTypedPhrase',
+        ]}
+      />
     </section>
   );
 }
@@ -92,6 +124,15 @@ function BudgetSection(props: SectionProps): VNode {
     <section>
       <h2>{t('options_budget_heading')}</h2>
       <PauseEconomy settings={props.settings} onChange={props.onSettings} />
+      <HeldEdits
+        store={props.store}
+        paths={[
+          'settings.pause.earnRatio',
+          'settings.pause.capMs',
+          'settings.pause.pauseMs',
+          'settings.pause.unlockMs',
+        ]}
+      />
     </section>
   );
 }

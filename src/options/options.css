@@ -144,6 +144,29 @@ button.ghost {
   color: var(--muted);
 }
 
+.pending-change {
+  align-items: baseline;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-top: 12px;
+  padding: 10px 12px;
+}
+
+.pending-change__value {
+  font-weight: 600;
+  margin: 0;
+}
+
+.pending-change__reason {
+  color: var(--muted);
+  flex: 1 1 200px;
+  margin: 0;
+}
+
 .autosave-status {
   color: var(--muted);
   font-weight: 600;

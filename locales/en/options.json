@@ -1065,7 +1065,7 @@
     "message": "Waiting for the hard lock to end: $VALUE$",
     "description": "Line under a Settings control holding a change a hard lock refused. VALUE is the value the person chose, such as a duration or a site name.",
     "placeholders": {
-      "value": {
+      "VALUE": {
         "content": "$1",
         "example": "10 s"
       }
@@ -1074,5 +1074,13 @@
   "options_pending_cancel": {
     "message": "Cancel this change",
     "description": "Button that drops a change a hard lock is holding, so it will not be applied when the lock ends."
+  },
+  "options_pending_value_on": {
+    "message": "on",
+    "description": "The value of a held change that turns a Settings switch on. Read inside 'Waiting for the hard lock to end'."
+  },
+  "options_pending_value_off": {
+    "message": "off",
+    "description": "The value of a held change that turns a Settings switch off. Read inside 'Waiting for the hard lock to end'."
   }
 }
