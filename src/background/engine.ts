@@ -800,9 +800,16 @@ export class Engine {
   /** Resolves the durable journals once, before any alarm or message reaches the controller. */
   async recover(): Promise<void> {
     await this.controller.recover();
-    this.pending = (await this.ports.loadPendingChanges?.()) ?? [];
-    // A browser closed while a hard lock ran is the common way an edit is still owed at boot.
-    await this.enqueuePolicyMutation((): Promise<void> => this.flushPendingChanges());
+    // A browser closed while a hard lock ran is the common way an edit is still owed at boot, so
+    // the queue is read and retried here. Neither step may take the worker down with it: a held
+    // edit that cannot be read or cannot be applied is one edit lost, while a boot that throws is
+    // a profile with no blocking at all.
+    try {
+      this.pending = (await this.ports.loadPendingChanges?.()) ?? [];
+      await this.enqueuePolicyMutation((): Promise<void> => this.flushPendingChanges());
+    } catch (error: unknown) {
+      this.ports.reportError(error);
+    }
   }
 
   /**

@@ -1250,6 +1250,30 @@ describe('Engine', () => {
     expect(rebooted.pendingStore.changes).toEqual([]);
   });
 
+  it('boots with blocking live when a held edit cannot be applied', async () => {
+    const blocked: ListsConfig = {
+      ...DEFAULT_LISTS,
+      custom: [{ kind: 'host', pattern: 'reddit.com' }],
+    };
+    const hard: Harness = makeEngine({
+      runtime: activeRuntimeV2({ config: hardConfigV2() }),
+      lists: blocked,
+    });
+    clearMutationPorts(hard.ports);
+    await hard.engine.updateLists(DEFAULT_LISTS);
+
+    const rebooted: Harness = makeEngine({
+      lists: blocked,
+      pendingStore: hard.pendingStore,
+      saveMatcherCache: (): Promise<void> => Promise.reject(new Error('local cache unavailable')),
+    });
+
+    await expect(rebooted.engine.recover()).resolves.toBeUndefined();
+
+    expect(rebooted.ports.reportError).toHaveBeenCalled();
+    expect(rebooted.engine.getLists()).toEqual(blocked);
+  });
+
   it('keeps holding an edit a second hard lock still refuses', async () => {
     const blocked: ListsConfig = {
       ...DEFAULT_LISTS,
