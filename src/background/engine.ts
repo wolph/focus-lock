@@ -74,6 +74,18 @@ import {
 } from './data-clear-reset-v2';
 import type { EnforcementTargetPortsV2 } from './enforcement-targets-v2';
 import { type GuardReasonKey, listsChangeAllowed, settingsChangeAllowed } from './guard';
+import {
+  applyPendingToLists,
+  applyPendingToSettings,
+  capturePendingChange,
+  LISTS_PATH,
+  type PendingIntent,
+  type PendingPath,
+  type PendingPolicyChange,
+  pathForGuardReason,
+  pendingListsDelta,
+  pendingSettingsValue,
+} from './pending-policy-changes';
 import { encodeListsForSync, LIST_SYNC_KEYS, type ListsSyncEncoding } from './list-sync-codec';
 import type { PolicyValueByKey } from './policy-storage';
 import {
@@ -144,6 +156,12 @@ export interface EnginePorts {
   rehydrateAfterDataClear(): Promise<string>;
   saveRuntime(r: RuntimeStateV2): Promise<void>;
   saveMatcherCache(cache: StoredMatcherCache, lists: ListsConfig): Promise<void>;
+  /**
+   * The weakening edits a hard lock refused. Optional like the other storage seams, so a test
+   * harness that owns no storage keeps the queue in memory for the life of its engine.
+   */
+  loadPendingChanges?(): Promise<PendingPolicyChange[]>;
+  savePendingChanges?(changes: readonly PendingPolicyChange[]): Promise<void>;
   savePolicy?<K extends keyof PolicyValueByKey>(key: K, value: PolicyValueByKey[K]): Promise<void>;
   saveAggregate?(key: string, value: DailyAgg): Promise<void>;
   removeAggregate?(key: string): Promise<void>;
@@ -322,6 +340,9 @@ export class Engine {
     SessionRuleSnapshot
   >();
   private composedRulesFor: ListsConfig | null = null;
+  /** Weakening edits a hard lock refused, retried whenever the guard's answer could change. */
+  private pending: PendingPolicyChange[] = [];
+  private flushingPending = false;
 
   constructor(
     private readonly ports: EnginePorts,
@@ -413,6 +434,9 @@ export class Engine {
     return {
       broadcast: (snapshot: SessionSnapshot): void => {
         this.ports.broadcast(snapshot);
+        // Every publish is a session boundary or a gate move, so it is also the moment a lock may
+        // have given way and a held edit may have become allowed.
+        this.requestPendingFlush();
         // Every publish is a session boundary or a gate move, and each one changes which tab can
         // be the work tab, so the pickers refresh with the same beat as the popup.
         this.ports.workTargetChanged?.();
@@ -776,6 +800,9 @@ export class Engine {
   /** Resolves the durable journals once, before any alarm or message reaches the controller. */
   async recover(): Promise<void> {
     await this.controller.recover();
+    this.pending = (await this.ports.loadPendingChanges?.()) ?? [];
+    // A browser closed while a hard lock ran is the common way an edit is still owed at boot.
+    await this.enqueuePolicyMutation((): Promise<void> => this.flushPendingChanges());
   }
 
   /**
@@ -1462,6 +1489,71 @@ export class Engine {
     }
   }
 
+  /** The weakening edits this profile is still owed, newest last. */
+  pendingChanges(): readonly PendingPolicyChange[] {
+    return this.pending;
+  }
+
+  /** Drops one held edit, for a person who has changed their mind before the lock ends. */
+  async cancelPendingChange(path: PendingPath): Promise<Ack> {
+    const before: number = this.pending.length;
+    this.pending = this.pending.filter((c: PendingPolicyChange): boolean => c.path !== path);
+    if (this.pending.length === before) return { ok: false, error: t('options_error_save_settings') };
+    await this.persistPendingChanges();
+    return { ok: true };
+  }
+
+  /**
+   * Keeps a refused edit instead of discarding it. A replay is not allowed to rewrite the entry
+   * it is replaying: the refusal it meets is the same one already held, and rewriting it would
+   * move the time the person asked for it.
+   */
+  private async holdPendingChange(change: PendingPolicyChange): Promise<void> {
+    if (this.flushingPending) return;
+    this.pending = capturePendingChange(this.pending, change);
+    await this.persistPendingChanges();
+  }
+
+  private async persistPendingChanges(): Promise<void> {
+    await this.ports.savePendingChanges?.(this.pending);
+  }
+
+  /**
+   * A held edit applies as soon as it is allowed. The retry is the same write through the same
+   * guard, so nothing reaches a hard lock that is still running, and an edit the person made by
+   * hand in the meantime is carried by the delta rather than overwritten by it.
+   */
+  private async flushPendingChanges(): Promise<void> {
+    if (this.pending.length === 0 || this.flushingPending) return;
+    this.flushingPending = true;
+    try {
+      for (const change of [...this.pending]) {
+        const ack: Ack = await this.replayPendingChange(change);
+        if (!ack.ok) continue;
+        this.pending = this.pending.filter((c: PendingPolicyChange): boolean => c.path !== change.path);
+      }
+    } finally {
+      this.flushingPending = false;
+    }
+    await this.persistPendingChanges();
+  }
+
+  private async replayPendingChange(change: PendingPolicyChange): Promise<Ack> {
+    if (change.path === LISTS_PATH) {
+      const intent: PendingIntent = change.intent;
+      return this.updateListsNow(applyPendingToLists(this.lists, intent), null, true, false);
+    }
+    return this.updateSettingsNow(applyPendingToSettings(this.settings, change));
+  }
+
+  /** Runs a flush on its own turn of the policy queue, for a caller that cannot await one. */
+  private requestPendingFlush(): void {
+    if (this.pending.length === 0) return;
+    void this.enqueuePolicyMutation((): Promise<void> => this.flushPendingChanges()).catch(
+      (error: unknown): void => this.ports.reportError(error),
+    );
+  }
+
   async updateSettings(s: Settings): Promise<Ack> {
     return this.enqueuePolicyMutation((): Promise<Ack> => this.updateSettingsNow(s));
   }
@@ -1484,7 +1576,16 @@ export class Engine {
       this.settings,
       s,
     );
-    if (reason !== null) return this.fail(now, t(reason));
+    if (reason !== null) {
+      const path: PendingPath = pathForGuardReason(reason);
+      await this.holdPendingChange({
+        path,
+        intent: { kind: 'value', value: pendingSettingsValue(s, path) },
+        reasonKey: reason,
+        at: now,
+      });
+      return this.fail(now, t(reason));
+    }
     const scheduleMoved: boolean = !exactDataEqual(this.settings.schedule, s.schedule);
     try {
       await this.savePolicy('settings', s);
@@ -1543,7 +1644,15 @@ export class Engine {
       this.lists,
       l,
     );
-    if (reason !== null) return this.fail(now, t(reason));
+    if (reason !== null) {
+      await this.holdPendingChange({
+        path: LISTS_PATH,
+        intent: pendingListsDelta(this.lists, l),
+        reasonKey: reason,
+        at: now,
+      });
+      return this.fail(now, t(reason));
+    }
     const bundle: MatcherCacheBundle = buildMatcherCache(l, ALL_CATEGORIES);
     await this.ports.saveMatcherCache(bundle.stored, l);
     if (queueForSync) {
@@ -2288,6 +2397,9 @@ export class Engine {
         : structuredClone(projection);
     this.deviceId = await this.ports.rehydrateAfterDataClear();
     this.pendingEvents = [];
+    // An erased profile owes nobody the edits the lock it no longer has once refused.
+    this.pending = [];
+    await this.persistPendingChanges();
     this.dirty = false;
     this.needsBlocking = false;
     this.bankDirty = false;

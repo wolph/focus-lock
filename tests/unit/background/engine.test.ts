@@ -7,6 +7,7 @@ import { appendEventsV2, readEventsV2 } from '../../../src/background/event-log-
 import { encodeListsForSync, LIST_SYNC_SHARD_KEYS } from '../../../src/background/list-sync-codec';
 import { clockRebaseArchiveKey } from '../../../src/background/rollover';
 import { projectRuntimeDomainV2 } from '../../../src/background/runtime-checkpoint-v2';
+import type { PendingPolicyChange } from '../../../src/background/pending-policy-changes';
 import type { DeferredBlockClaim } from '../../../src/background/runtime-leaf-types';
 import { emptyRuntimeV2 } from '../../../src/background/runtime-store-v2';
 import type { RuntimeStateV2 } from '../../../src/background/runtime-v2-types';
@@ -71,6 +72,12 @@ interface Harness {
   now(): number;
   setNow(ms: number): void;
   loggedEvents(): EventRecord[];
+  pendingStore: PendingChangeStore;
+}
+
+/** One profile's stored queue of held edits, which survives a worker restart in these tests. */
+interface PendingChangeStore {
+  changes: PendingPolicyChange[];
 }
 
 const T0: number = new Date(2026, 7, 29, 8, 59).getTime();
@@ -210,6 +217,8 @@ function makeEngine(opts?: {
   hasPendingSync?: (key: string) => boolean;
   websiteBlockingReady?: () => boolean;
   lists?: ListsConfig;
+  /** Shared across harnesses to model one profile's storage across a worker restart. */
+  pendingStore?: PendingChangeStore;
 }): Harness {
   let nowMs: number = T0;
   const ports: Harness['ports'] = {
@@ -267,8 +276,18 @@ function makeEngine(opts?: {
       custom: [{ kind: 'host', pattern: 'facebook.com' }],
     } satisfies ListsConfig);
   const seeded: RuntimeStateV2 = opts?.runtime ?? emptyRuntimeV2Fixture(T0);
+  const pendingStore: PendingChangeStore = opts?.pendingStore ?? { changes: [] };
   const engine: Engine = new Engine(
-    { ...ports, ...seams } as unknown as EnginePorts,
+    {
+      ...ports,
+      ...seams,
+      loadPendingChanges: (): Promise<PendingPolicyChange[]> =>
+        Promise.resolve(structuredClone(pendingStore.changes)),
+      savePendingChanges: (changes: readonly PendingPolicyChange[]): Promise<void> => {
+        pendingStore.changes = structuredClone([...changes]);
+        return Promise.resolve();
+      },
+    } as unknown as EnginePorts,
     settings,
     lists,
     { balanceMs: opts?.bankMs ?? 0 },
@@ -281,6 +300,7 @@ function makeEngine(opts?: {
     engine,
     seededRuntime: seeded,
     ports,
+    pendingStore,
     now: (): number => nowMs,
     setNow: (ms: number): void => {
       nowMs = ms;
@@ -1200,6 +1220,118 @@ describe('Engine', () => {
     await expect(sessionBlocks(h, 'https://cnn.com/politics')).resolves.toBe(true);
     // The rule the saved lists dropped stops blocking.
     await expect(sessionBlocks(h, 'https://facebook.com/feed')).resolves.toBe(false);
+  });
+
+  it('holds a list edit a hard lock refused and applies it on a boot with no session', async () => {
+    const blocked: ListsConfig = {
+      ...DEFAULT_LISTS,
+      custom: [{ kind: 'host', pattern: 'reddit.com' }],
+    };
+    const hard: Harness = makeEngine({
+      runtime: activeRuntimeV2({ config: hardConfigV2() }),
+      lists: blocked,
+    });
+    clearMutationPorts(hard.ports);
+
+    await expect(hard.engine.updateLists(DEFAULT_LISTS)).resolves.toEqual(
+      expect.objectContaining({ ok: false }),
+    );
+
+    expect(hard.engine.getLists()).toEqual(blocked);
+    expect(hard.engine.pendingChanges()).toEqual([
+      expect.objectContaining({ path: 'lists', reasonKey: 'notify_guard_lists_remove_blocked' }),
+    ]);
+
+    const rebooted: Harness = makeEngine({ lists: blocked, pendingStore: hard.pendingStore });
+    await rebooted.engine.recover();
+
+    expect(rebooted.engine.getLists()).toEqual(DEFAULT_LISTS);
+    expect(rebooted.engine.pendingChanges()).toEqual([]);
+    expect(rebooted.pendingStore.changes).toEqual([]);
+  });
+
+  it('keeps holding an edit a second hard lock still refuses', async () => {
+    const blocked: ListsConfig = {
+      ...DEFAULT_LISTS,
+      custom: [{ kind: 'host', pattern: 'reddit.com' }],
+    };
+    const hard: Harness = makeEngine({
+      runtime: activeRuntimeV2({ config: hardConfigV2() }),
+      lists: blocked,
+    });
+    clearMutationPorts(hard.ports);
+    await expect(hard.engine.updateLists(DEFAULT_LISTS)).resolves.toEqual(
+      expect.objectContaining({ ok: false }),
+    );
+
+    const stillLocked: Harness = makeEngine({
+      runtime: activeRuntimeV2({ config: hardConfigV2() }),
+      lists: blocked,
+      pendingStore: hard.pendingStore,
+    });
+    await stillLocked.engine.recover();
+
+    expect(stillLocked.engine.getLists()).toEqual(blocked);
+    expect(stillLocked.engine.pendingChanges()).toHaveLength(1);
+  });
+
+  it('holds a refused gate delay and applies it to the settings as they then stand', async () => {
+    const hard: Harness = makeEngine({
+      runtime: activeRuntimeV2({ config: hardConfigV2() }),
+      settings: { gate: { ...DEFAULT_SETTINGS.gate, delayMs: 20_000 } },
+    });
+    clearMutationPorts(hard.ports);
+
+    await expect(
+      hard.engine.updateSettings({
+        ...hard.engine.getSettings(),
+        gate: { ...hard.engine.getSettings().gate, delayMs: 5_000 },
+      }),
+    ).resolves.toEqual(expect.objectContaining({ ok: false }));
+
+    expect(hard.engine.getSettings().gate.delayMs).toBe(20_000);
+    expect(hard.engine.pendingChanges()).toEqual([
+      expect.objectContaining({
+        path: 'settings.gate.delayMs',
+        reasonKey: 'notify_guard_settings_shorten_delay',
+        intent: { kind: 'value', value: 5_000 },
+      }),
+    ]);
+
+    const rebooted: Harness = makeEngine({
+      settings: { gate: { ...DEFAULT_SETTINGS.gate, delayMs: 20_000 } },
+      pendingStore: hard.pendingStore,
+    });
+    await rebooted.engine.recover();
+
+    expect(rebooted.engine.getSettings().gate.delayMs).toBe(5_000);
+    expect(rebooted.engine.pendingChanges()).toEqual([]);
+  });
+
+  it('cancels one held edit and leaves the other waiting', async () => {
+    const blocked: ListsConfig = {
+      ...DEFAULT_LISTS,
+      custom: [{ kind: 'host', pattern: 'reddit.com' }],
+    };
+    const hard: Harness = makeEngine({
+      runtime: activeRuntimeV2({ config: hardConfigV2() }),
+      lists: blocked,
+      settings: { gate: { ...DEFAULT_SETTINGS.gate, requireTypedPhrase: true } },
+    });
+    clearMutationPorts(hard.ports);
+    await hard.engine.updateLists(DEFAULT_LISTS);
+    await hard.engine.updateSettings({
+      ...hard.engine.getSettings(),
+      gate: { ...hard.engine.getSettings().gate, requireTypedPhrase: false },
+    });
+    expect(hard.engine.pendingChanges()).toHaveLength(2);
+
+    await expect(hard.engine.cancelPendingChange('lists')).resolves.toEqual({ ok: true });
+
+    expect(hard.engine.pendingChanges()).toEqual([
+      expect.objectContaining({ path: 'settings.gate.requireTypedPhrase' }),
+    ]);
+    expect(hard.pendingStore.changes).toHaveLength(1);
   });
 
   it('keeps active lists, matchers, and Sync queues when cache persistence fails', async () => {

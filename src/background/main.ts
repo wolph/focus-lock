@@ -20,6 +20,7 @@ import {
   LOCAL_DATA_CLEAR_JOURNAL,
   LOCAL_DEVICE_ID,
   LOCAL_EVENTS,
+  LOCAL_PENDING_CHANGES,
   LOCAL_FIRST_SYNC_PUBLICATION,
   LOCAL_INSTALL_MARKER,
   LOCAL_LISTS_SNAPSHOT,
@@ -118,6 +119,10 @@ import {
   type PolicyStorage,
   type PolicyStorageDataClearPorts,
 } from './policy-storage';
+import {
+  parsePendingChanges,
+  type PendingPolicyChange,
+} from './pending-policy-changes';
 import { parseRequest } from './request-validation';
 import { routeMessage } from './router';
 import {
@@ -1304,6 +1309,17 @@ async function boot(
     },
     saveRuntime: (runtime: RuntimeStateV2): Promise<void> => saveRuntimeV2(runtime),
     saveMatcherCache,
+    loadPendingChanges: async (): Promise<PendingPolicyChange[]> =>
+      parsePendingChanges(
+        (await chrome.storage.local.get(LOCAL_PENDING_CHANGES))[LOCAL_PENDING_CHANGES],
+      ),
+    savePendingChanges: async (changes: readonly PendingPolicyChange[]): Promise<void> => {
+      if (changes.length === 0) {
+        await chrome.storage.local.remove(LOCAL_PENDING_CHANGES);
+        return;
+      }
+      await chrome.storage.local.set({ [LOCAL_PENDING_CHANGES]: [...changes] });
+    },
     savePolicy: (key, value): Promise<void> => policyStorage.setPolicy(key, value),
     saveAggregate: (key: string, value: DailyAgg): Promise<void> =>
       policyStorage.saveAggregate(key, value),
