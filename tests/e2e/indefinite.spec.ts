@@ -72,7 +72,7 @@ const OVERLAY_STOPPED_PAGE_COPY: string =
 const SETTINGS_INDEFINITE_COPY: string =
   'Until stopped session active. Use the toolbar popup to view or end it.';
 const SETTINGS_SESSION_DISCLOSURE: string =
-  'The toolbar popup owns session controls. The active session keeps the rules captured when it started.';
+  'The toolbar popup owns session controls. Your changes reach the running session as you make them, except a hard lock, which holds anything that unblocks until it ends.';
 const SCHEDULE_STARTED_TITLE: string = 'Focus schedule started';
 const SCHEDULE_UNTIL_STOPPED_BODY: string = 'Active until you stop it.';
 const CANCEL_GATE_TITLE: string = 'End this session';

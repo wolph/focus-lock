@@ -383,8 +383,8 @@ test('a closed work tab can be replaced and stale session actions are rejected',
   expect(stale.ok).toBe(false);
   const current: WorkTargetResult = await target(extPage, work.windowId);
   expect(current.ok && current.state).toBe('ready');
-  // A v2 session judges its work tabs by the rules it captured at start, so a list edit made
-  // while it runs neither blocks the chosen tab nor takes the return destination away.
+  // A session is judged by the lists as they stand, so blocking the work tab's own site takes the
+  // destination away: returning to work must not land on a page the session is now covering.
   const lists = await sendExtensionRequest(extPage, { type: 'getLists' });
   expect(
     await sendExtensionRequest(extPage, {
@@ -392,8 +392,28 @@ test('a closed work tab can be replaced and stale session actions are rejected',
       lists: { ...lists, custom: [...lists.custom, { kind: 'host', pattern: 'other.example' }] },
     }),
   ).toEqual({ ok: true });
-  const unchanged: WorkTargetResult = await target(extPage, work.windowId);
-  expect(unchanged.ok && unchanged.state).toBe('ready');
+  await expect
+    .poll(async (): Promise<string> => {
+      const result: WorkTargetResult = await target(extPage, work.windowId);
+      return result.ok ? result.state : result.error;
+    })
+    .toBe('unavailable');
+  expect(
+    await sendExtensionRequest(extPage, {
+      type: 'returnToWork',
+      sessionId,
+      windowId: work.windowId,
+    }),
+  ).toMatchObject({ ok: false });
+
+  // Unblocking it again gives the destination back, without choosing the tab a second time.
+  expect(await sendExtensionRequest(extPage, { type: 'updateLists', lists })).toEqual({ ok: true });
+  await expect
+    .poll(async (): Promise<string> => {
+      const result: WorkTargetResult = await target(extPage, work.windowId);
+      return result.ok ? result.state : result.error;
+    })
+    .toBe('ready');
   expect(
     await sendExtensionRequest(extPage, {
       type: 'returnToWork',

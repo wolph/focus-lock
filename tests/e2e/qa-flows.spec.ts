@@ -432,7 +432,7 @@ test('popup daily states keep help and long rules contained at native width', as
   await captureTask7Evidence(extPage, 'production-popup-unsupported-tab-340-full');
 });
 
-test('Options exposes destination saving, category states, and scoped privacy confirmations', async ({
+test('Options saves as you change it, with category states and scoped privacy confirmations', async ({
   context,
   extensionId,
 }) => {
@@ -472,19 +472,20 @@ test('Options exposes destination saving, category states, and scoped privacy co
   await expect(socialState).toContainText(`${SOCIAL_SITE_COUNT - 1} included when enabled`);
   await socialRow.getByRole('checkbox', { name: 'Social media' }).check();
   await expect(socialState).toHaveText(`${SOCIAL_SITE_COUNT - 1} sites included`);
-  const saveBar: Locator = optionsPage.locator('.dirty-save-bar');
-  await expect(saveBar.getByText('Unsaved changes')).toBeVisible();
-  expect(
-    await saveBar.evaluate((element: Element): string => getComputedStyle(element).position),
-  ).toBe('sticky');
+  // Nothing is pressed to keep any of this: the page writes what was changed as it is changed.
+  const status: Locator = optionsPage.locator('.autosave-status');
+  await expect(status).toHaveText('Saved');
   await optionsPage.evaluate((): void => window.scrollTo(0, document.documentElement.scrollHeight));
-  await expectWithinViewport(saveBar);
   await captureTask7Evidence(optionsPage, 'production-options-partial-dirty-375-full', true);
-  await captureTask7Evidence(saveBar, 'production-options-sticky-save-375');
-  await saveBar.getByRole('button', { name: 'Discard changes' }).click();
-  await expect(saveBar.getByText('No unsaved changes')).toBeVisible();
+  await captureTask7Evidence(status, 'production-options-autosave-status-375');
+  await expect(optionsPage.getByRole('button', { name: 'Save changes' })).toHaveCount(0);
+  await expect(optionsPage.getByRole('button', { name: 'Discard changes' })).toHaveCount(0);
+
+  // Undoing it is the same gesture as doing it, and it lands the same way.
+  await socialRow.getByRole('checkbox', { name: 'Social media' }).uncheck();
+  await expect(status).toHaveText('Saved');
   await expect(socialState).toContainText('Category off');
-  await expect(socialState).toContainText(`${SOCIAL_SITE_COUNT} included when enabled`);
+  await expect(socialState).toContainText(`${SOCIAL_SITE_COUNT - 1} included when enabled`);
 
   await optionsPage.getByRole('link', { name: 'Privacy and data' }).click();
   await expect(optionsPage.getByRole('heading', { name: 'Privacy and data' })).toBeVisible();
@@ -742,32 +743,10 @@ async function captureTask7OptionsMatrix(input: {
         const showSocial: Locator = socialRow.getByRole('button', {
           name: 'Show Social media sites',
         });
-        const saveBar: Locator = input.page.locator('.dirty-save-bar');
-        await expect(saveBar.getByText('No unsaved changes')).toBeVisible();
-        await expect(saveBar).not.toHaveClass(/dirty-save-bar--sticky/);
-        const cleanPosition: string = await saveBar.evaluate(
-          (element: Element): string => getComputedStyle(element).position,
-        );
-        expect(cleanPosition).not.toBe('sticky');
-        const cleanSaveBarBounds: Task7Rectangle = await saveBar.evaluate(
-          (element: Element): Task7Rectangle => {
-            const rect: DOMRect = element.getBoundingClientRect();
-            return { bottom: rect.bottom, left: rect.left, right: rect.right, top: rect.top };
-          },
-        );
-        const categoryBounds: Task7Rectangle[] = await input.page
-          .locator('.cat-row, .category-state')
-          .evaluateAll((elements: Element[]): Task7Rectangle[] =>
-            elements.map((element: Element): Task7Rectangle => {
-              const rect: DOMRect = element.getBoundingClientRect();
-              return { bottom: rect.bottom, left: rect.left, right: rect.right, top: rect.top };
-            }),
-          );
-        expect(
-          categoryBounds.some((bounds: Task7Rectangle): boolean =>
-            task7RectanglesIntersect(cleanSaveBarBounds, bounds),
-          ),
-        ).toBe(false);
+        // A page nobody has changed says nothing about saving, so there is no status to measure.
+        const status: Locator = input.page.locator('.autosave-status');
+        await expect(status).toHaveCount(0);
+        await expect(input.page.getByRole('button', { name: 'Save changes' })).toHaveCount(0);
         await showSocial.focus();
         await input.capture.capture(
           input.page,
@@ -803,22 +782,24 @@ async function captureTask7OptionsMatrix(input: {
           window.scrollTo(0, document.documentElement.scrollHeight),
         );
         await showSocial.click();
-        await input.page.getByRole('checkbox', { name: 'facebook.com' }).uncheck();
-        await socialRow.getByRole('checkbox', { name: 'Social media' }).check();
-        await expect(saveBar.getByText('Unsaved changes')).toBeVisible();
-        await expect(saveBar).toHaveClass(/dirty-save-bar--sticky/);
-        expect(
-          await saveBar.evaluate((element: Element): string => getComputedStyle(element).position),
-        ).toBe('sticky');
+        // One page serves every viewport in this matrix and keeps what the last one stored, so the
+        // edit is whatever flips the state rather than a fixed value that may already be set.
+        const facebook: Locator = input.page.getByRole('checkbox', { name: 'facebook.com' });
+        const included: boolean = await facebook.isChecked();
+        await facebook.setChecked(!included);
+        const socialCheckbox: Locator = socialRow.getByRole('checkbox', { name: 'Social media' });
+        await socialCheckbox.setChecked(!(await socialCheckbox.isChecked()));
+        // The change is written on its own, and the status says so where it cannot cover a control.
+        await expect(status).toHaveText('Saved');
         await socialRow.scrollIntoViewIfNeeded();
         const dirtyBounds: { bar: Task7Rectangle; target: Task7Rectangle } =
           await input.page.evaluate((): { bar: Task7Rectangle; target: Task7Rectangle } => {
-            const bar: Element | null = document.querySelector('.dirty-save-bar');
+            const bar: Element | null = document.querySelector('.autosave-status');
             const target: Element | undefined = [...document.querySelectorAll('.cat-row')].find(
               (row: Element): boolean => row.textContent?.includes('Social media') ?? false,
             );
             if (bar === null || target === undefined)
-              throw new Error('Save bar target unavailable.');
+              throw new Error('Autosave status target unavailable.');
             const toBounds = (element: Element): Task7Rectangle => {
               const rect: DOMRect = element.getBoundingClientRect();
               return { bottom: rect.bottom, left: rect.left, right: rect.right, top: rect.top };
@@ -843,13 +824,15 @@ async function captureTask7OptionsMatrix(input: {
               scrollHeight: element.scrollHeight,
             }),
           );
-        expect(contentBodyScroll.overflowY).toBe('auto');
-        expect(contentBodyScroll.scrollHeight).toBeGreaterThan(contentBodyScroll.clientHeight);
-        await expectWithinViewport(saveBar);
-        const dirtyBottomGap: number = await saveBar.evaluate(
+        // Nothing is pinned to the bottom of the window any more, so the page scrolls as a page:
+        // the content body is taller than the viewport and carries no scroll container of its own.
+        expect(contentBodyScroll.overflowY).toBe('visible');
+        expect(contentBodyScroll.scrollHeight).toBeGreaterThan(viewport.height);
+        // The status sits in the flow and makes no promise about being on screen. The refusal
+        // below does, because a reason nobody sees is the thing this page cannot afford.
+        const dirtyBottomGap: number = await status.evaluate(
           (element: Element): number => window.innerHeight - element.getBoundingClientRect().bottom,
         );
-        expect(Math.abs(dirtyBottomGap)).toBeLessThanOrEqual(1);
         await input.capture.capture(
           input.page,
           'options',
@@ -868,9 +851,9 @@ async function captureTask7OptionsMatrix(input: {
           'focused',
         );
         await input.capture.capture(
-          saveBar,
+          status,
           'options',
-          'sticky-save',
+          'autosave-status',
           themeCase,
           viewport,
           'focused',
@@ -878,15 +861,15 @@ async function captureTask7OptionsMatrix(input: {
         let saveFailureFinished: boolean = false;
         await installTask7DeferredSaveFailure(input.page);
         try {
-          await saveBar.getByRole('button', { name: 'Save changes' }).click();
-          await expect(saveBar.getByText('Saving changes')).toBeVisible();
+          // A write that never answers: the status has to say so and stay out of the way.
+          await facebook.setChecked(included);
+          await expect(status).toHaveText('Saving');
           const pendingIntersections = await task7VisibleContentIntersections(input.page);
           expect(pendingIntersections.targets).toEqual([]);
-          const pendingBottomGap: number = await saveBar.evaluate(
+          const pendingBottomGap: number = await status.evaluate(
             (element: Element): number =>
               window.innerHeight - element.getBoundingClientRect().bottom,
           );
-          expect(Math.abs(pendingBottomGap)).toBeLessThanOrEqual(1);
           await input.capture.capture(
             input.page,
             'options',
@@ -896,7 +879,7 @@ async function captureTask7OptionsMatrix(input: {
             'full',
           );
           await input.capture.capture(
-            saveBar,
+            status,
             'options',
             'save-pending',
             themeCase,
@@ -906,14 +889,19 @@ async function captureTask7OptionsMatrix(input: {
 
           await finishTask7DeferredSaveFailure(input.page);
           saveFailureFinished = true;
-          await expect(saveBar.getByRole('alert')).toHaveText('Task 7 synthetic save rejection.');
-          const errorIntersections = await task7VisibleContentIntersections(input.page);
+          const refusal: Locator = input.page
+            .locator('[data-settings-section="blocking"]')
+            .getByRole('alert');
+          await expect(refusal).toHaveText('Task 7 synthetic save rejection.');
+          const errorIntersections = await task7VisibleContentIntersections(
+            input.page,
+            '[data-settings-section="blocking"] [role="alert"]',
+          );
           expect(errorIntersections.targets).toEqual([]);
-          const errorBottomGap: number = await saveBar.evaluate(
+          const errorBottomGap: number = await refusal.evaluate(
             (element: Element): number =>
               window.innerHeight - element.getBoundingClientRect().bottom,
           );
-          expect(Math.abs(errorBottomGap)).toBeLessThanOrEqual(1);
           await input.capture.capture(
             input.page,
             'options',
@@ -923,7 +911,7 @@ async function captureTask7OptionsMatrix(input: {
             'full',
           );
           await input.capture.capture(
-            saveBar,
+            refusal,
             'options',
             'save-error',
             themeCase,
@@ -951,9 +939,8 @@ async function captureTask7OptionsMatrix(input: {
         expect(documentGeometry.scrollWidth).toBe(documentGeometry.clientWidth);
         geometry.push({
           categoryStateGaps,
-          cleanSaveBar: { bounds: cleanSaveBarBounds, position: cleanPosition },
           clientWidth: documentGeometry.clientWidth,
-          dirtySaveBar: { ...dirtyBounds.bar, bottomGap: dirtyBottomGap, position: 'sticky' },
+          autosaveStatus: { ...dirtyBounds.bar, bottomGap: dirtyBottomGap },
           dirtyTarget: dirtyBounds.target,
           intersections: {
             cleanCategories: false,
@@ -965,8 +952,6 @@ async function captureTask7OptionsMatrix(input: {
           themeCase: themeCase.id,
           viewport,
         });
-        await saveBar.getByRole('button', { name: 'Discard changes' }).click();
-        await expect(saveBar).not.toHaveClass(/dirty-save-bar--sticky/);
       });
     }
   }
@@ -1356,14 +1341,14 @@ async function captureTask7StoppedOverlayMatrix(input: {
   return geometry;
 }
 
-test('Task 7 save bar stays bottom-anchored and unobscured after internal-scroll transition', async ({
+test('the autosave status and a refused write stay clear of the controls after a scroll', async ({
   context,
   extensionId,
 }) => {
   const page: Page = await context.newPage();
   try {
     for (const viewport of TASK7_PAGE_VIEWPORTS) {
-      await test.step(`${String(viewport.width)} dirty, pending, and error anchoring`, async () => {
+      await test.step(`${String(viewport.width)} saved, saving, and refused`, async () => {
         await page.setViewportSize(viewport);
         await page.goto(`chrome-extension://${extensionId}/src/options/options.html#blocking`);
         await applyTask7ThemeCase(
@@ -1374,29 +1359,31 @@ test('Task 7 save bar stays bottom-anchored and unobscured after internal-scroll
         await page.evaluate((): void => window.scrollTo(0, document.documentElement.scrollHeight));
         const socialRow: Locator = page.locator('.cat-row').filter({ hasText: 'Social media' });
         await socialRow.getByRole('button', { name: 'Show Social media sites' }).click();
-        await page.getByRole('checkbox', { name: 'facebook.com' }).uncheck();
-        const saveBar: Locator = page.locator('.dirty-save-bar');
-        await expect(saveBar).toHaveClass(/dirty-save-bar--sticky/);
-        const expectAnchored = async (): Promise<void> => {
-          const bottomGap: number = await saveBar.evaluate(
-            (element: Element): number =>
-              window.innerHeight - element.getBoundingClientRect().bottom,
-          );
-          expect(Math.abs(bottomGap)).toBeLessThanOrEqual(1);
-          expect((await task7VisibleContentIntersections(page)).targets).toEqual([]);
+        // The page carries its stored state between viewports, so the edit is whatever flips it.
+        const facebook: Locator = page.getByRole('checkbox', { name: 'facebook.com' });
+        const included: boolean = await facebook.isChecked();
+        await facebook.setChecked(!included);
+        const status: Locator = page.locator('.autosave-status');
+        await expect(status).toHaveText('Saved');
+        const expectClear = async (selector: string): Promise<void> => {
+          expect((await task7VisibleContentIntersections(page, selector)).targets).toEqual([]);
         };
-        await expectAnchored();
+        await expectClear('.autosave-status');
 
         await installTask7DeferredSaveFailure(page);
         let failureFinished: boolean = false;
         try {
-          await saveBar.getByRole('button', { name: 'Save changes' }).click();
-          await expect(saveBar.getByText('Saving changes')).toBeVisible();
-          await expectAnchored();
+          await facebook.setChecked(included);
+          await expect(status).toHaveText('Saving');
+          await expectClear('.autosave-status');
           await finishTask7DeferredSaveFailure(page);
           failureFinished = true;
-          await expect(saveBar.getByRole('alert')).toHaveText('Task 7 synthetic save rejection.');
-          await expectAnchored();
+          const refusal: Locator = page
+            .locator('[data-settings-section="blocking"]')
+            .getByRole('alert');
+          await expect(refusal).toHaveText('Task 7 synthetic save rejection.');
+          await expectWithinViewport(refusal);
+          await expectClear('[data-settings-section="blocking"] [role="alert"]');
         } finally {
           if (!failureFinished) await finishTask7DeferredSaveFailure(page).catch((): void => {});
         }
@@ -1937,18 +1924,25 @@ test('hard-session Options rejects weakening and saves a stronger rule', async (
     })
     .toMatch(/^Timed session active until \d{2}:\d{2}\./);
 
+  // A removal is refused, and the refusal is reported where the edit was made.
   await optionsPage.getByRole('button', { name: 'Remove blocked.example' }).click();
-  await optionsPage.getByRole('button', { name: 'Save changes' }).click();
-  await expect(optionsPage.getByRole('alert')).toContainText(
+  await expect(optionsPage.getByRole('alert').first()).toContainText(
     /hard session.*removing blocked sites.*unlocks when it ends/i,
   );
+  // The rule the lock still enforces is the rule the editor still shows.
+  await expect(
+    optionsPage.getByRole('cell', { name: 'blocked.example', exact: true }),
+  ).toBeVisible();
+  // The edit is held rather than thrown away, with a way to drop it.
+  const held: Locator = optionsPage.locator('[data-pending-change="lists"]');
+  await expect(held).toContainText('Waiting for the hard lock to end: blocked.example');
+  await expect(held.getByRole('button', { name: 'Cancel this change' })).toBeVisible();
 
-  await optionsPage.reload();
+  // Strengthening is allowed under the same lock, and it saves without a button.
   const customEditor = optionsPage.locator('.rules-editor').filter({ hasText: 'Custom blacklist' });
   await customEditor.getByLabel('Pattern').fill('extra.example');
   await customEditor.getByRole('button', { name: 'Add rule' }).click();
-  await optionsPage.getByRole('button', { name: 'Save changes' }).click();
-  await expect(optionsPage.locator('.dirty-save-state')).toHaveText('No unsaved changes');
+  await expect(optionsPage.locator('.autosave-status')).toHaveText('Saved');
 
   const lists: ListsConfig = await sendExtensionRequest(extPage, { type: 'getLists' });
   expect(lists.custom).toEqual([

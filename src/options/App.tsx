@@ -1,5 +1,5 @@
 import type { VNode } from 'preact';
-import { type Dispatch, type StateUpdater, useEffect, useState } from 'preact/hooks';
+import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
 import type { PendingPath } from '../background/pending-policy-changes';
 import { t } from '../shared/i18n';
 import {
@@ -34,6 +34,25 @@ interface SectionProps {
   store: SettingsStore;
   onSettings: (next: Settings) => void;
   onLists: (next: ListsConfig) => void;
+}
+
+/**
+ * A refused write, reported with the controls that tried it. It brings itself into view: an edit
+ * made at the bottom of a long section would otherwise be refused somewhere above the fold, and a
+ * reason nobody sees is barely better than no reason at all.
+ */
+function SectionError({ message }: { message: string }): VNode {
+  const element: { current: HTMLParagraphElement | null } = useRef<HTMLParagraphElement | null>(
+    null,
+  );
+  useEffect((): void => {
+    element.current?.scrollIntoView({ block: 'nearest' });
+  }, []);
+  return (
+    <p class="save-error" role="alert" ref={element}>
+      {message}
+    </p>
+  );
 }
 
 /** The held edits for one section, under the controls that asked for them. */
@@ -298,11 +317,7 @@ function SectionPanels(props: SectionPanelsProps): VNode {
         const error: string | null = props.autosave.errorFor(destination);
         return (
           <div key={id} data-settings-section={id} hidden={props.section !== id}>
-            {error === null ? null : (
-              <p class="save-error" role="alert">
-                {error}
-              </p>
-            )}
+            {error === null ? null : <SectionError message={error} />}
             <SectionBody
               section={id}
               settings={props.settings}

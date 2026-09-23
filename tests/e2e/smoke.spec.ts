@@ -748,7 +748,7 @@ test('options page fits a mobile viewport', async ({ context, extensionId }) => 
 });
 
 // biome-ignore lint/correctness/noEmptyPattern: this regression owns its isolated extension context
-test('options rejection and save actions stay together at the viewport edge', async ({}, testInfo) => {
+test('a refused Settings write reports itself and puts the control back', async ({}, testInfo) => {
   const dist: string = resolveExtensionDist();
   const context: BrowserContext = await chromium.launchPersistentContext(
     testInfo.outputPath('task5-options-profile'),
@@ -788,33 +788,31 @@ test('options rejection and save actions stay together at the viewport edge', as
 
     await page.getByRole('textbox', { name: 'Pattern' }).first().fill('example.com');
     await page.getByRole('button', { name: 'Add rule' }).first().click();
-    await page.getByRole('button', { name: 'Save changes' }).click();
-    await expect(page.getByRole('alert')).toHaveText(
-      'Blocking changes could not be saved. Try again.',
-    );
-    await page.evaluate((): void => window.scrollTo(0, 0));
 
-    const geometry: {
-      alertInside: boolean;
-      bottom: number;
-      discardInside: boolean;
-      saveInside: boolean;
-      top: number;
-      viewportHeight: number;
-    } = await page.locator('.dirty-save-bar').evaluate((bar: Element) => {
-      const bounds: DOMRect = bar.getBoundingClientRect();
-      return {
-        alertInside: bar.querySelector('[role="alert"]') !== null,
-        bottom: bounds.bottom,
-        discardInside: bar.querySelector('button.secondary') !== null,
-        saveInside: bar.querySelector('button.primary') !== null,
-        top: bounds.top,
-        viewportHeight: window.innerHeight,
-      };
-    });
-    expect(geometry).toMatchObject({ alertInside: true, discardInside: true, saveInside: true });
+    // The write goes out on its own, and its refusal is reported with the controls that tried it.
+    const alert: Locator = page.getByRole('alert');
+    await expect(alert).toHaveText('Blocking changes could not be saved. Try again.');
+    const panel: Locator = page.locator('[data-settings-section="blocking"]');
+    expect(
+      await alert.evaluate(
+        (element: Element, panelSelector: string): boolean =>
+          element.closest(panelSelector) !== null,
+        '[data-settings-section="blocking"]',
+      ),
+    ).toBe(true);
+    await expect(panel.getByRole('heading', { level: 2, name: 'Blocking' })).toBeVisible();
+
+    const geometry: { bottom: number; top: number; viewportHeight: number } = await alert.evaluate(
+      (element: Element) => {
+        const bounds: DOMRect = element.getBoundingClientRect();
+        return { bottom: bounds.bottom, top: bounds.top, viewportHeight: window.innerHeight };
+      },
+    );
     expect(geometry.top).toBeGreaterThanOrEqual(0);
     expect(geometry.bottom).toBeLessThanOrEqual(geometry.viewportHeight + 1);
+
+    // The rule the worker refused is not left sitting in the editor as though it had been stored.
+    await expect(page.getByRole('cell', { name: 'example.com' })).toHaveCount(0);
   } finally {
     await context.close();
   }
@@ -831,7 +829,11 @@ test('options current navigation meets light text contrast', async ({ context, e
 test('options primary button meets dark text contrast', async ({ context, extensionId }) => {
   const page: Page = await context.newPage();
   await page.emulateMedia({ colorScheme: 'dark' });
-  await page.goto(`chrome-extension://${extensionId}/src/options/options.html`);
-  await expect(page.getByRole('heading', { level: 2 })).toBeVisible();
+  // Settings saves as you type, so the page carries a primary button only where a form has to be
+  // committed as a whole. The schedule entry editor is that form.
+  await page.goto(`chrome-extension://${extensionId}/src/options/options.html#schedule`);
+  await expect(page.getByRole('heading', { level: 2, name: 'Schedule' })).toBeVisible();
+  await page.getByRole('button', { name: 'Add schedule entry' }).click();
+  await expect(page.getByRole('button', { name: 'Save entry' })).toBeVisible();
   expect(await elementContrast(page, 'button.primary')).toBeGreaterThanOrEqual(4.5);
 });

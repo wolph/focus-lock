@@ -189,13 +189,13 @@ since the grep was written. Both mistakes were present when this section was fir
 
 ### qa-flows.spec.ts (8)
 
-- Options exposes destination saving, category states, and scoped privacy confirmations
+- Options saves as you change it, with category states and scoped privacy confirmations
 - Task 5 Stats responsive evidence matrix is reproducible
 - Task 7 production evidence matrix is reproducible
-- Task 7 save bar stays bottom-anchored and unobscured after internal-scroll transition
 - completion clears browser effects and reaches sound and notification APIs
 - hard-session Options rejects weakening and saves a stronger rule
 - popup daily states keep help and long rules contained at native width
+- the autosave status and a refused write stay clear of the controls after a scroll
 - theme cycle persists across extension pages and live overlay hosts without reloads
 
 ### quiet-popup.spec.ts (3)
@@ -226,12 +226,12 @@ since the grep was written. Both mistakes were present when this section was fir
 
 - Stats content stays inside responsive viewports
 - Stats navigation round-trips through an Options section
+- a refused Settings write reports itself and puts the control back
 - blockable test site loads without a session
 - extension loads and the worker answers getSnapshot
 - options current navigation meets light text contrast
 - options page fits a mobile viewport
 - options primary button meets dark text contrast
-- options rejection and save actions stay together at the viewport edge
 - popup keeps its preferred height and fits controls into shorter hosts
 - popup page renders
 

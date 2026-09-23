@@ -171,98 +171,114 @@ export function task7RectanglesIntersect(left: Task7Rectangle, right: Task7Recta
   );
 }
 
-export async function task7VisibleContentIntersections(page: Page): Promise<{
+/**
+ * What the element named by `selector` covers up. It was written for the sticky save bar, which
+ * floated over the page; it now serves the autosave status and the refusal that took its place,
+ * which sit in the flow and must still never land on top of a control.
+ */
+export async function task7VisibleContentIntersections(
+  page: Page,
+  selector: string = '.autosave-status',
+): Promise<{
   bar: Task7Rectangle;
   targets: Task7ContentIntersection[];
 }> {
-  return await page.evaluate((): { bar: Task7Rectangle; targets: Task7ContentIntersection[] } => {
-    const bar: HTMLElement | null = document.querySelector('.dirty-save-bar');
-    if (bar === null) throw new Error('Dirty save bar is unavailable.');
-    const toBounds = (element: Element): Task7Rectangle => {
-      const rect: DOMRect = element.getBoundingClientRect();
-      return { bottom: rect.bottom, left: rect.left, right: rect.right, top: rect.top };
-    };
-    const intersects = (left: Task7Rectangle, right: Task7Rectangle): boolean =>
-      left.left < right.right &&
-      left.right > right.left &&
-      left.top < right.bottom &&
-      left.bottom > right.top;
-    const barBounds: Task7Rectangle = toBounds(bar);
-    const selectors: readonly string[] = [
-      'h1',
-      'h2',
-      'h3',
-      'p',
-      '[role="alert"]',
-      '[role="status"]',
-      'button',
-      'input',
-      'select',
-      'textarea',
-      '.cat-row',
-      '.category-state',
-    ];
-    const elements: Set<Element> = new Set(
-      selectors.flatMap((selector: string): Element[] => [
-        ...document.querySelectorAll(`main ${selector}`),
-      ]),
-    );
-    const targets: Task7ContentIntersection[] = [];
-    for (const element of elements) {
-      if (bar.contains(element)) continue;
-      const style: CSSStyleDeclaration = getComputedStyle(element);
-      const bounds: Task7Rectangle = toBounds(element);
-      const visibleBounds: Task7Rectangle = {
-        bottom: Math.min(bounds.bottom, innerHeight),
-        left: Math.max(bounds.left, 0),
-        right: Math.min(bounds.right, innerWidth),
-        top: Math.max(bounds.top, 0),
+  return await page.evaluate(
+    (
+      barSelector: string,
+    ): {
+      bar: Task7Rectangle;
+      targets: Task7ContentIntersection[];
+    } => {
+      const bar: HTMLElement | null = document.querySelector(barSelector);
+      if (bar === null) throw new Error(`No element matches ${barSelector}.`);
+      const toBounds = (element: Element): Task7Rectangle => {
+        const rect: DOMRect = element.getBoundingClientRect();
+        return { bottom: rect.bottom, left: rect.left, right: rect.right, top: rect.top };
       };
-      let ancestor: Element | null = element.parentElement;
-      while (ancestor !== null && ancestor !== document.documentElement) {
-        const ancestorStyle: CSSStyleDeclaration = getComputedStyle(ancestor);
-        const clipsX: boolean = ['auto', 'clip', 'hidden', 'scroll'].includes(
-          ancestorStyle.overflowX,
-        );
-        const clipsY: boolean = ['auto', 'clip', 'hidden', 'scroll'].includes(
-          ancestorStyle.overflowY,
-        );
-        if (clipsX || clipsY) {
-          const ancestorBounds: Task7Rectangle = toBounds(ancestor);
-          if (clipsX) {
-            visibleBounds.left = Math.max(visibleBounds.left, ancestorBounds.left);
-            visibleBounds.right = Math.min(visibleBounds.right, ancestorBounds.right);
+      const intersects = (left: Task7Rectangle, right: Task7Rectangle): boolean =>
+        left.left < right.right &&
+        left.right > right.left &&
+        left.top < right.bottom &&
+        left.bottom > right.top;
+      const barBounds: Task7Rectangle = toBounds(bar);
+      const selectors: readonly string[] = [
+        'h1',
+        'h2',
+        'h3',
+        'p',
+        '[role="alert"]',
+        '[role="status"]',
+        'button',
+        'input',
+        'select',
+        'textarea',
+        '.cat-row',
+        '.category-state',
+      ];
+      const elements: Set<Element> = new Set(
+        selectors.flatMap((selector: string): Element[] => [
+          ...document.querySelectorAll(`main ${selector}`),
+        ]),
+      );
+      const targets: Task7ContentIntersection[] = [];
+      for (const element of elements) {
+        if (bar.contains(element)) continue;
+        const style: CSSStyleDeclaration = getComputedStyle(element);
+        const bounds: Task7Rectangle = toBounds(element);
+        const visibleBounds: Task7Rectangle = {
+          bottom: Math.min(bounds.bottom, innerHeight),
+          left: Math.max(bounds.left, 0),
+          right: Math.min(bounds.right, innerWidth),
+          top: Math.max(bounds.top, 0),
+        };
+        let ancestor: Element | null = element.parentElement;
+        while (ancestor !== null && ancestor !== document.documentElement) {
+          const ancestorStyle: CSSStyleDeclaration = getComputedStyle(ancestor);
+          const clipsX: boolean = ['auto', 'clip', 'hidden', 'scroll'].includes(
+            ancestorStyle.overflowX,
+          );
+          const clipsY: boolean = ['auto', 'clip', 'hidden', 'scroll'].includes(
+            ancestorStyle.overflowY,
+          );
+          if (clipsX || clipsY) {
+            const ancestorBounds: Task7Rectangle = toBounds(ancestor);
+            if (clipsX) {
+              visibleBounds.left = Math.max(visibleBounds.left, ancestorBounds.left);
+              visibleBounds.right = Math.min(visibleBounds.right, ancestorBounds.right);
+            }
+            if (clipsY) {
+              visibleBounds.top = Math.max(visibleBounds.top, ancestorBounds.top);
+              visibleBounds.bottom = Math.min(visibleBounds.bottom, ancestorBounds.bottom);
+            }
           }
-          if (clipsY) {
-            visibleBounds.top = Math.max(visibleBounds.top, ancestorBounds.top);
-            visibleBounds.bottom = Math.min(visibleBounds.bottom, ancestorBounds.bottom);
-          }
+          ancestor = ancestor.parentElement;
         }
-        ancestor = ancestor.parentElement;
+        const visible: boolean =
+          style.display !== 'none' &&
+          style.visibility !== 'hidden' &&
+          visibleBounds.right > visibleBounds.left &&
+          visibleBounds.bottom > visibleBounds.top;
+        if (!visible || !intersects(visibleBounds, barBounds)) continue;
+        const selector: string =
+          element.className === ''
+            ? element.tagName.toLowerCase()
+            : `${element.tagName.toLowerCase()}.${String(element.className).trim().split(/\s+/).join('.')}`;
+        targets.push({
+          bounds: visibleBounds,
+          label:
+            element.getAttribute('aria-label') ??
+            (element.classList.contains('category-state')
+              ? `${element.previousElementSibling?.textContent?.trim().replace(/\s+/g, ' ') ?? 'Unknown category'} state: ${element.textContent?.trim().replace(/\s+/g, ' ') ?? ''}`
+              : element.textContent?.trim().replace(/\s+/g, ' ')) ??
+            '',
+          selector,
+        });
       }
-      const visible: boolean =
-        style.display !== 'none' &&
-        style.visibility !== 'hidden' &&
-        visibleBounds.right > visibleBounds.left &&
-        visibleBounds.bottom > visibleBounds.top;
-      if (!visible || !intersects(visibleBounds, barBounds)) continue;
-      const selector: string =
-        element.className === ''
-          ? element.tagName.toLowerCase()
-          : `${element.tagName.toLowerCase()}.${String(element.className).trim().split(/\s+/).join('.')}`;
-      targets.push({
-        bounds: visibleBounds,
-        label:
-          element.getAttribute('aria-label') ??
-          (element.classList.contains('category-state')
-            ? `${element.previousElementSibling?.textContent?.trim().replace(/\s+/g, ' ') ?? 'Unknown category'} state: ${element.textContent?.trim().replace(/\s+/g, ' ') ?? ''}`
-            : element.textContent?.trim().replace(/\s+/g, ' ')) ??
-          '',
-        selector,
-      });
-    }
-    return { bar: barBounds, targets };
-  });
+      return { bar: barBounds, targets };
+    },
+    selector,
+  );
 }
 
 export async function installTask7DeferredSaveFailure(page: Page): Promise<void> {
