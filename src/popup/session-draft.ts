@@ -1,6 +1,7 @@
 import { normalizeSessionHostInput } from '../core/matcher';
-import { CATEGORY_IDS, rulesFromLists } from '../shared/constants';
+import { rulesFromLists } from '../shared/constants';
 import { t } from '../shared/i18n';
+import { composeSessionRules } from '../shared/session-rules';
 import type {
   CategoryId,
   CycleConfig,
@@ -62,22 +63,7 @@ export function rebaseSessionDraft<const T extends { rules: SessionRuleSnapshot 
   draft: T,
   lists: ListsConfig,
 ): T {
-  const baseline: SessionRuleSnapshot = rulesFromLists(lists);
-  const categories: Record<CategoryId, boolean> = { ...baseline.categories };
-  for (const id of CATEGORY_IDS) {
-    if (draft.rules.categories[id] !== draft.rules.baselineCategories[id]) {
-      categories[id] = draft.rules.categories[id];
-    }
-  }
-  return {
-    ...draft,
-    rules: {
-      ...baseline,
-      categories,
-      sessionBlacklist: structuredClone(draft.rules.sessionBlacklist),
-      sessionAllowlist: structuredClone(draft.rules.sessionAllowlist),
-    },
-  };
+  return { ...draft, rules: composeSessionRules(lists, draft.rules) };
 }
 
 export function addDraftAllowHost<const T extends { rules: SessionRuleSnapshot }>(
