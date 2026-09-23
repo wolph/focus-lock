@@ -30,7 +30,7 @@ Unit suite: **187 files** matching `tests/unit/**/*.test.{ts,tsx}`, the pattern
 deriving it means collecting every file, which is the expensive half of a run, and a number
 that needs a run to verify is exactly the kind that went stale here four times.
 
-End-to-end suite: **136 scenarios in 31 spec files**, as Playwright itself
+End-to-end suite: **139 scenarios in 32 spec files**, as Playwright itself
 lists them. Asking the runner rather than counting `test(` in the sources is not pedantry: a
 grep undercounts `test.skip`, which is listed and reported, and misses a spec file added
 since the grep was written. Both mistakes were present when this section was first drafted.
@@ -101,6 +101,12 @@ since the grep was written. Both mistakes were present when this section was fir
 ### legacy-upgrade.spec.ts (1)
 
 - the 7 September profile boots, migrates once, runs a session, and republishes to Chrome Sync
+
+### live-settings.spec.ts (3)
+
+- a block added during a Flexible session reaches the tab already open
+- a block removed during a Flexible session clears the tab already open
+- a hard lock takes a new block at once and holds a removal until it ends
 
 ### locale-capture.spec.ts (1)
 
