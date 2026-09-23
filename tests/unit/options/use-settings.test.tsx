@@ -12,6 +12,7 @@ import {
   emptySnapshot,
   rulesFromLists,
 } from '../../../src/shared/constants';
+import type { PendingPolicyChange } from '../../../src/background/pending-policy-changes';
 import type { Request } from '../../../src/shared/messages';
 import { settingsTimedCopy } from '../../../src/shared/session-copy';
 import type {
@@ -121,6 +122,67 @@ describe('useSettingsStore', () => {
     expect(store().lists).toEqual(DEFAULT_LISTS);
     expect(store().snapshot).toEqual(emptySnapshot(0));
     expect(store().loadError).toBeNull();
+  });
+
+  it('loads the held edits a hard lock refused', async (): Promise<void> => {
+    const held: PendingPolicyChange = {
+      path: 'settings.gate.delayMs',
+      intent: { kind: 'value', value: 5_000 },
+      reasonKey: 'notify_guard_settings_shorten_delay',
+      at: 10,
+    };
+    fake.respond('getPendingChanges', { changes: [held] });
+    render(<Harness />);
+    await waitFor((): void => expect(store().lists).not.toBeNull());
+
+    expect(store().pendingChanges).toEqual([held]);
+  });
+
+  it('drops a held edit the person cancels and reads the queue back', async (): Promise<void> => {
+    const held: PendingPolicyChange = {
+      path: 'lists',
+      intent: {
+        kind: 'lists-delta',
+        removeCustom: ['host:reddit.com'],
+        addWhitelist: [],
+        disableCategories: [],
+        addExclusions: {},
+      },
+      reasonKey: 'notify_guard_lists_remove_blocked',
+      at: 11,
+    };
+    fake.respond('getPendingChanges', { changes: [held] });
+    fake.respond('cancelPendingChange', { ok: true });
+    render(<Harness />);
+    await waitFor((): void => expect(store().pendingChanges).toHaveLength(1));
+
+    fake.respond('getPendingChanges', { changes: [] });
+    await act(async (): Promise<void> => {
+      await store().cancelPendingChange('lists');
+    });
+
+    expect(fake.sent).toContainEqual({ type: 'cancelPendingChange', path: 'lists' });
+    expect(store().pendingChanges).toEqual([]);
+  });
+
+  it('follows the stored queue when the worker drains it', async (): Promise<void> => {
+    const held: PendingPolicyChange = {
+      path: 'settings.pause.capMs',
+      intent: { kind: 'value', value: 1 },
+      reasonKey: 'notify_guard_settings_raise_cap',
+      at: 12,
+    };
+    fake.respond('getPendingChanges', { changes: [held] });
+    render(<Harness />);
+    await waitFor((): void => expect(store().pendingChanges).toHaveLength(1));
+
+    fake.respond('getPendingChanges', { changes: [] });
+    await act(async (): Promise<void> => {
+      fake.emitStorageChange({ pendingChanges: { oldValue: [held] } });
+      await Promise.resolve();
+    });
+
+    await waitFor((): void => expect(store().pendingChanges).toEqual([]));
   });
 
   it('loads the durable setup state with the settings surfaces', async (): Promise<void> => {

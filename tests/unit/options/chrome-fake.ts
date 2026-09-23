@@ -22,6 +22,8 @@ export function installChromeFake(): ChromeFake {
   const sent: Request[] = [];
   const responders: Map<string, unknown | Responder> = new Map();
   responders.set('getSetupState', structuredClone(DEFAULT_SETUP));
+  // A profile owes no held edits unless a test says otherwise, which is what a fresh one looks like.
+  responders.set('getPendingChanges', { changes: [] });
   const listeners: Set<(message: unknown) => void> = new Set();
   type StorageListener = (
     changes: Record<string, chrome.storage.StorageChange>,

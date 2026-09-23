@@ -1,4 +1,9 @@
 import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
+import {
+  parsePendingChanges,
+  type PendingPath,
+  type PendingPolicyChange,
+} from '../background/pending-policy-changes';
 import { t } from '../shared/i18n';
 import type { Ack, ClearFocusLockDataResponse } from '../shared/messages';
 import { sendRequest } from '../shared/messages';
@@ -18,7 +23,7 @@ import {
   parseStoredSettingsV2,
 } from '../shared/runtime-validation';
 import { DATA_CLEAR_ERROR_COPY } from '../shared/session-copy';
-import { LOCAL_SETUP } from '../shared/storage-keys';
+import { LOCAL_PENDING_CHANGES, LOCAL_SETUP } from '../shared/storage-keys';
 import { updateTheme } from '../shared/theme';
 import type {
   BootFailure,
@@ -93,8 +98,12 @@ export interface SettingsStore {
   loadError: string | null;
   /** Why the worker did not start, when that is what the load error reports. */
   bootFailure: BootFailure | null;
+  /** Weakening edits a hard lock refused and still owes, newest last. */
+  pendingChanges: PendingPolicyChange[];
   /** resolves null on success, the worker's rejection string verbatim otherwise */
   saveSettings(mutation: SettingsMutation): Promise<string | null>;
+  /** Drops one held edit. Resolves null on success, an error string otherwise. */
+  cancelPendingChange(path: PendingPath): Promise<string | null>;
   saveTheme(next: ThemeMode): Promise<string | null>;
   saveLists(next: ListsConfig): Promise<string | null>;
   reconcileWebsiteAccess(): Promise<string | null>;
@@ -197,9 +206,16 @@ export function useSettingsStore(): SettingsStore {
     BootFailure | null,
     Dispatch<StateUpdater<BootFailure | null>>,
   ] = useState<BootFailure | null>(null);
+  const [pendingChanges, setPendingChanges]: [
+    PendingPolicyChange[],
+    Dispatch<StateUpdater<PendingPolicyChange[]>>,
+  ] = useState<PendingPolicyChange[]>([]);
   const settingsRef: { current: Settings | null } = useRef<Settings | null>(null);
   /** The initial load, kept so a boot retry can run it again outside the effect that owns it. */
   const reload: { current: () => Promise<void> } = useRef<() => Promise<void>>(
+    async (): Promise<void> => undefined,
+  );
+  const rereadPendingRef: { current: () => Promise<void> } = useRef<() => Promise<void>>(
     async (): Promise<void> => undefined,
   );
   const settingsWrites: WriteQueue = useRef<Promise<void>>(Promise.resolve());
@@ -224,7 +240,8 @@ export function useSettingsStore(): SettingsStore {
     };
     const load: () => Promise<void> = async (): Promise<void> => {
       try {
-        const [loadedSettings, loadedLists, loadedSnapshot, loadedSetup]: [
+        const [loadedSettings, loadedLists, loadedSnapshot, loadedSetup, loadedPending]: [
+          unknown,
           unknown,
           unknown,
           unknown,
@@ -234,6 +251,7 @@ export function useSettingsStore(): SettingsStore {
           sendRequest({ type: 'getLists' }),
           sendRequest({ type: 'getSnapshot' }),
           sendRequest({ type: 'getSetupState' }),
+          sendRequest({ type: 'getPendingChanges' }),
         ]);
         if (!alive) return;
         // A stored or synced v1 schedule entry reads as a window entry through the v2 parser.
@@ -254,6 +272,7 @@ export function useSettingsStore(): SettingsStore {
         setLists(loadedLists);
         setSnapshot(currentSnapshot);
         setSetup(loadedSetup);
+        setPendingChanges(parsePendingChanges((loadedPending as { changes?: unknown } | null)?.changes));
         setBootFailure(null);
         setLoadError(null);
       } catch {
@@ -275,6 +294,20 @@ export function useSettingsStore(): SettingsStore {
         // Keep the record already rendered.
       }
     };
+    /**
+     * The worker drains the queue on its own, when a lock ends or a boot finds one owed, so the
+     * page follows the stored value rather than asking after each of its own writes alone.
+     */
+    const rereadPending: () => Promise<void> = async (): Promise<void> => {
+      try {
+        const response: unknown = await sendRequest({ type: 'getPendingChanges' });
+        if (!alive) return;
+        setPendingChanges(parsePendingChanges((response as { changes?: unknown } | null)?.changes));
+      } catch {
+        // Keep the record already rendered.
+      }
+    };
+    rereadPendingRef.current = rereadPending;
     const onBroadcast: (message: unknown) => void = (message: unknown): void => {
       if (isRecord(message) && message.type === 'stateChanged') {
         if (!isSessionSnapshot(message.snapshot)) {
@@ -304,7 +337,9 @@ export function useSettingsStore(): SettingsStore {
      */
     const onStored: (changes: Record<string, chrome.storage.StorageChange>, area: string) => void =
       (changes: Record<string, chrome.storage.StorageChange>, area: string): void => {
-        if (area !== 'local' || !Object.hasOwn(changes, LOCAL_SETUP)) return;
+        if (area !== 'local') return;
+        if (Object.hasOwn(changes, LOCAL_PENDING_CHANGES)) void rereadPending();
+        if (!Object.hasOwn(changes, LOCAL_SETUP)) return;
         void rereadSetup();
       };
     chrome.storage.onChanged.addListener(onStored);
@@ -462,6 +497,17 @@ export function useSettingsStore(): SettingsStore {
     });
   };
 
+  const cancelPendingChange: (path: PendingPath) => Promise<string | null> = async (
+    path: PendingPath,
+  ): Promise<string | null> => {
+    return enqueueWrite(settingsWrites, async (): Promise<string | null> => {
+      const ack: Ack = await sendRequest({ type: 'cancelPendingChange', path });
+      const responseError: string | null = ackError(ack, t('options_error_save_settings'));
+      await rereadPendingRef.current();
+      return responseError;
+    });
+  };
+
   const saveTheme: (next: ThemeMode) => Promise<string | null> = async (
     next: ThemeMode,
   ): Promise<string | null> => {
@@ -484,7 +530,9 @@ export function useSettingsStore(): SettingsStore {
     setup,
     loadError,
     bootFailure,
+    pendingChanges,
     saveSettings,
+    cancelPendingChange,
     saveTheme,
     saveLists,
     reconcileWebsiteAccess,

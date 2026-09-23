@@ -486,6 +486,10 @@ export async function routeMessage(
       return engine.getSettings();
     case 'getLists':
       return engine.getLists();
+    case 'getPendingChanges':
+      return { changes: [...engine.pendingChanges()] };
+    case 'cancelPendingChange':
+      return engine.cancelPendingChange(msg.path);
     case 'getStats':
       return policyStorage === undefined
         ? fetchStats(msg.days, Date.now(), engine.statsOverlay())

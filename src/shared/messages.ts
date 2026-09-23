@@ -1,3 +1,4 @@
+import type { PendingPath, PendingPolicyChange } from '../background/pending-policy-changes';
 import type { DocumentContentCommand } from './enforcement-v2';
 import type {
   BootFailure,
@@ -136,6 +137,9 @@ export type NonSessionRequest =
   | { type: 'updateLists'; lists: ListsConfig }
   | { type: 'getSettings' }
   | { type: 'getLists' }
+  /** Settings only: the weakening edits a hard lock refused and still owes. */
+  | { type: 'getPendingChanges' }
+  | { type: 'cancelPendingChange'; path: PendingPath }
   | { type: 'getStats'; days: number }
   | { type: 'exportEvents' }
   | { type: 'previewSound'; sound: SoundId }
@@ -250,6 +254,8 @@ export interface NonSessionResponseMap {
   updateLists: Ack;
   getSettings: Settings;
   getLists: ListsConfig;
+  getPendingChanges: { changes: PendingPolicyChange[] };
+  cancelPendingChange: Ack;
   getStats: StatsBundle;
   exportEvents: { json: string };
   previewSound: Ack;

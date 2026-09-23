@@ -30,6 +30,7 @@ import type {
 import { isUuid, validateDetachedGateState } from '../shared/v2-domain-intrinsics';
 import { isBrowserTabId } from '../shared/work-target';
 import { canEncodeListsForSync } from './list-sync-codec';
+import { isPendingPath } from './pending-policy-changes';
 import { assertSyncItemWithinQuota } from './sync-quota';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -628,6 +629,7 @@ function parseRecord(value: Record<string, unknown>): Request | null {
     case 'startNextFocusEarly':
     case 'getSettings':
     case 'getLists':
+    case 'getPendingChanges':
     case 'exportEvents':
       return hasExactKeys(value, ['type']) ? (value as Request) : null;
     case 'saveOnboardingDraft':
@@ -724,6 +726,10 @@ function parseRecord(value: Record<string, unknown>): Request | null {
       const lists: ListsConfig | null = parseListsConfigForSync(value.lists);
       return lists === null ? null : { type: 'updateLists', lists };
     }
+    case 'cancelPendingChange':
+      return hasExactKeys(value, ['type', 'path']) && isPendingPath(value.path)
+        ? (value as Request)
+        : null;
     case 'getStats':
       return hasExactKeys(value, ['type', 'days']) && isSafeDayCount(value.days)
         ? (value as Request)

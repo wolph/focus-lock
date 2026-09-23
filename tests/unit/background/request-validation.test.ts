@@ -154,6 +154,8 @@ const VALID_REQUESTS: RequestByType = {
   updateLists: { type: 'updateLists', lists: LISTS },
   getSettings: { type: 'getSettings' },
   getLists: { type: 'getLists' },
+  getPendingChanges: { type: 'getPendingChanges' },
+  cancelPendingChange: { type: 'cancelPendingChange', path: 'settings.gate.delayMs' },
   getStats: { type: 'getStats', days: 30 },
   exportEvents: { type: 'exportEvents' },
   previewSound: { type: 'previewSound', sound: 'breakStart' },

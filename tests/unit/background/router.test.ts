@@ -245,6 +245,45 @@ function enforcementIn(commands: DocumentContentCommand[]): DocumentEnforcementC
   );
 }
 
+describe('routeMessage pending changes', (): void => {
+  it('answers with the edits the engine is still holding', async (): Promise<void> => {
+    const held: Engine = realBlockingEngine();
+    const blocked: ListsConfig = {
+      ...DEFAULT_LISTS,
+      custom: [{ kind: 'host', pattern: 'facebook.com' }],
+    };
+    await held.startSession({
+      mode: 'blacklist',
+      strictness: 'hard',
+      duration: { kind: 'timed', minutes: 25 },
+      cycling: null,
+      intention: 'ship it',
+      source: 'manual',
+      scheduleOccurrence: null,
+      rules: rulesFromLists(blocked),
+    });
+
+    await expect(held.updateLists({ ...DEFAULT_LISTS, custom: [] })).resolves.toEqual(
+      expect.objectContaining({ ok: false }),
+    );
+
+    expect(held.pendingChanges()).toHaveLength(1);
+    await expect(routeMessage(held, { type: 'getPendingChanges' }, sender)).resolves.toEqual({
+      changes: [expect.objectContaining({ path: 'lists' })],
+    });
+  });
+
+  it('refuses to cancel an edit it is not holding', async (): Promise<void> => {
+    await expect(
+      routeMessage(
+        realBlockingEngine(),
+        { type: 'cancelPendingChange', path: 'settings.pause.capMs' },
+        sender,
+      ),
+    ).resolves.toEqual(expect.objectContaining({ ok: false }));
+  });
+});
+
 describe('routeMessage onboarding wiring', (): void => {
   it('returns an exact operational cleanup failure', async (): Promise<void> => {
     const storage: PolicyStorage = onboardingStorage({

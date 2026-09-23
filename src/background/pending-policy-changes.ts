@@ -200,7 +200,8 @@ export function capturePendingChange(
   ];
 }
 
-function isPendingPath(value: unknown): value is PendingPath {
+/** A path this build knows. The message boundary asks before a request names one. */
+export function isPendingPath(value: unknown): value is PendingPath {
   return value === LISTS_PATH || SETTINGS_PATHS.includes(value as PendingPath);
 }
 
