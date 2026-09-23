@@ -63,16 +63,13 @@ describe('Options navigation', () => {
     expect(document.querySelectorAll('h1')).toHaveLength(1);
   });
 
-  it('sticks the save bar only while it represents an actionable state', (): void => {
+  it('keeps the autosave status quiet until it has something to report', (): void => {
     const css: string = readFileSync(resolve('src/options/options.css'), 'utf8');
-    expect(css).toMatch(/\.dirty-save-bar\s*\{[^}]*background:\s*var\(--surface\)/s);
-    expect(css).not.toMatch(/\.dirty-save-bar\s*\{[^}]*position:\s*sticky/s);
-    expect(css).not.toMatch(/\.dirty-save-bar\s*\{[^}]*bottom:\s*0/s);
-    expect(css).toMatch(/\.dirty-save-bar--sticky\s*\{[^}]*position:\s*sticky/s);
-    expect(css).toMatch(/\.dirty-save-bar--sticky\s*\{[^}]*bottom:\s*0/s);
-    expect(css).toMatch(/\.options--sticky-save\s*\{[^}]*height:\s*100dvh/s);
-    expect(css).toMatch(/\.options--sticky-save\s*\{[^}]*overflow:\s*hidden/s);
-    expect(css).toMatch(/\.options--sticky-save\s+\.content-body\s*\{[^}]*overflow-y:\s*auto/s);
+    // The save bar and the layout that made room for it are gone with the draft they served.
+    expect(css).not.toMatch(/\.dirty-save-bar/s);
+    expect(css).not.toMatch(/\.options--sticky-save/s);
+    expect(css).toMatch(/\.autosave-status\s*\{[^}]*color:\s*var\(--muted\)/s);
+    expect(css).toMatch(/\.autosave-status--error\s*\{[^}]*color:\s*var\(--warn\)/s);
   });
 
   it('uses the exact read-only session status copy', async (): Promise<void> => {

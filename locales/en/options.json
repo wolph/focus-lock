@@ -83,26 +83,6 @@
     "message": "Delete all Focus Lock data",
     "description": "Button that opens the confirmation for deleting every piece of extension data."
   },
-  "options_dirty_saving": {
-    "message": "Saving changes",
-    "description": "Status in the save bar while the current section is being written."
-  },
-  "options_dirty_unsaved": {
-    "message": "Unsaved changes",
-    "description": "Status in the save bar when the current section has edits that are not written yet."
-  },
-  "options_dirty_clean": {
-    "message": "No unsaved changes",
-    "description": "Status in the save bar when the current section matches what is stored."
-  },
-  "options_dirty_discard": {
-    "message": "Discard changes",
-    "description": "Button in the save bar that throws away the edits of the current section."
-  },
-  "options_dirty_save": {
-    "message": "Save changes",
-    "description": "Button in the save bar that writes the edits of the current section."
-  },
   "options_session_status_label": {
     "message": "Session status",
     "description": "Label of the read-only running-session line at the top of Settings."
@@ -122,7 +102,12 @@
   "options_rule_remove_aria": {
     "message": "Remove $PATTERN$",
     "description": "Screen reader label of the button that deletes one rule. PATTERN holds the rule as it is shown, for example facebook.com.",
-    "placeholders": { "PATTERN": { "content": "$1", "example": "facebook.com" } }
+    "placeholders": {
+      "PATTERN": {
+        "content": "$1",
+        "example": "facebook.com"
+      }
+    }
   },
   "options_rules_empty": {
     "message": "No rules yet.",
@@ -163,31 +148,52 @@
   "options_number_error_positive": {
     "message": "$LABEL$ must be a positive whole number.",
     "description": "Error under a number field that takes only whole numbers above zero. LABEL holds that field's own label, for example Focus minutes.",
-    "placeholders": { "LABEL": { "content": "$1", "example": "Focus minutes" } }
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Focus minutes"
+      }
+    }
   },
   "options_number_error_whole": {
     "message": "$LABEL$ must be a whole number of zero or greater.",
     "description": "Error under a number field that takes whole numbers including zero. LABEL holds that field's own label.",
     "placeholders": {
-      "LABEL": { "content": "$1", "example": "Site access credit limit (minutes)" }
+      "LABEL": {
+        "content": "$1",
+        "example": "Site access credit limit (minutes)"
+      }
     }
   },
   "options_number_error_nonnegative": {
     "message": "$LABEL$ must be zero or greater.",
     "description": "Error under a number field that takes fractions including zero. LABEL holds that field's own label.",
     "placeholders": {
-      "LABEL": { "content": "$1", "example": "Minutes of site access per 30 minutes of focus" }
+      "LABEL": {
+        "content": "$1",
+        "example": "Minutes of site access per 30 minutes of focus"
+      }
     }
   },
   "options_number_error_minute_range": {
     "message": "$LABEL$ must be within the supported minute range.",
     "description": "Error under a duration field whose value is outside the minutes the extension supports. LABEL holds that field's own label.",
-    "placeholders": { "LABEL": { "content": "$1", "example": "Short session preset (minutes)" } }
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Short session preset (minutes)"
+      }
+    }
   },
   "options_number_error_day_range": {
     "message": "$LABEL$ must be within the supported day range.",
     "description": "Error under a field counting days whose value is outside the days the extension supports. LABEL holds that field's own label.",
-    "placeholders": { "LABEL": { "content": "$1", "example": "Keep daily stats (days)" } }
+    "placeholders": {
+      "LABEL": {
+        "content": "$1",
+        "example": "Keep daily stats (days)"
+      }
+    }
   },
   "options_session_defaults_heading": {
     "message": "Session defaults",
@@ -268,12 +274,22 @@
   "options_gate_wait_one": {
     "message": "Wait $COUNT$ second",
     "description": "Radio label for one of the fixed waiting times of the deliberation gate. Singular. COUNT holds the number of seconds.",
-    "placeholders": { "COUNT": { "content": "$1", "example": "1" } }
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
   },
   "options_gate_wait_other": {
     "message": "Wait $COUNT$ seconds",
     "description": "Radio label for one of the fixed waiting times of the deliberation gate. Plural, used for 0, 10, and 30. COUNT holds the number of seconds.",
-    "placeholders": { "COUNT": { "content": "$1", "example": "10" } }
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
   },
   "options_gate_wait_custom": {
     "message": "Custom",
@@ -338,12 +354,22 @@
   "options_category_on_announcement": {
     "message": "$CATEGORY$ category on.",
     "description": "Screen reader announcement after a bundled category is switched on. CATEGORY holds the category name, for example Social.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_category_off_announcement": {
     "message": "$CATEGORY$ category off.",
     "description": "Screen reader announcement after a bundled category is switched off. CATEGORY holds the category name, for example Social.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_all_categories_on_announcement": {
     "message": "All categories on.",
@@ -356,22 +382,42 @@
   "options_host_included_announcement": {
     "message": "$HOST$ included.",
     "description": "Screen reader announcement after one site is put back under its blocking category. HOST holds the site address.",
-    "placeholders": { "HOST": { "content": "$1", "example": "reddit.com" } }
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   },
   "options_host_kept_available_announcement": {
     "message": "$HOST$ kept available.",
     "description": "Screen reader announcement after one site is excused from its blocking category. HOST holds the site address.",
-    "placeholders": { "HOST": { "content": "$1", "example": "reddit.com" } }
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   },
   "options_all_sites_included_announcement": {
     "message": "All $CATEGORY$ sites included.",
     "description": "Screen reader announcement after every site of one category is put back under blocking. CATEGORY holds the category name.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_all_sites_kept_available_announcement": {
     "message": "All $CATEGORY$ sites kept available.",
     "description": "Screen reader announcement after every site of one category is excused from blocking. CATEGORY holds the category name.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_category_bulk_actions_aria": {
     "message": "Category bulk actions",
@@ -380,12 +426,22 @@
   "options_selected_count": {
     "message": "Selected $COUNT$",
     "description": "Counter of how many categories or sites are currently selected. COUNT holds the number.",
-    "placeholders": { "COUNT": { "content": "$1", "example": "7" } }
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
   },
   "options_deselected_count": {
     "message": "Deselected $COUNT$",
     "description": "Counter of how many categories or sites are currently deselected. COUNT holds the number.",
-    "placeholders": { "COUNT": { "content": "$1", "example": "3" } }
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
   },
   "options_select_all": {
     "message": "Select all",
@@ -406,22 +462,42 @@
   "options_show_category_sites": {
     "message": "Show $CATEGORY$ sites",
     "description": "Button that opens one bundled category to show the sites in it. CATEGORY holds the category name.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_hide_category_sites": {
     "message": "Hide $CATEGORY$ sites",
     "description": "Button that closes one bundled category again. CATEGORY holds the category name.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_category_sites_included_one": {
     "message": "$COUNT$ site included",
     "description": "State line under an enabled category. Singular. COUNT holds how many of its sites are blocked.",
-    "placeholders": { "COUNT": { "content": "$1", "example": "1" } }
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
   },
   "options_category_sites_included_other": {
     "message": "$COUNT$ sites included",
     "description": "State line under an enabled category. Plural. COUNT holds how many of its sites are blocked.",
-    "placeholders": { "COUNT": { "content": "$1", "example": "12" } }
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
   },
   "options_category_off": {
     "message": "Category off",
@@ -430,12 +506,22 @@
   "options_included_when_enabled_one": {
     "message": "$COUNT$ included when enabled",
     "description": "State line under a switched-off category. Singular. COUNT holds how many of its sites would be blocked.",
-    "placeholders": { "COUNT": { "content": "$1", "example": "1" } }
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
   },
   "options_included_when_enabled_other": {
     "message": "$COUNT$ included when enabled",
     "description": "State line under a switched-off category. Plural. COUNT holds how many of its sites would be blocked.",
-    "placeholders": { "COUNT": { "content": "$1", "example": "12" } }
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
   },
   "options_category_uncheck_help": {
     "message": "Uncheck a site to keep it available while the rest of the category is blocked.",
@@ -444,22 +530,42 @@
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ site bulk actions",
     "description": "Screen reader label of the buttons that select or deselect every site of one open category. CATEGORY holds the category name.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_select_all_category_sites_aria": {
     "message": "Select all $CATEGORY$ sites",
     "description": "Screen reader label of the Select all button inside one open category. CATEGORY holds the category name.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_deselect_all_category_sites_aria": {
     "message": "Deselect all $CATEGORY$ sites",
     "description": "Screen reader label of the Deselect all button inside one open category. CATEGORY holds the category name.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_category_sites_region_aria": {
     "message": "$CATEGORY$ sites",
     "description": "Screen reader label of the scrolling list of sites inside one open category. CATEGORY holds the category name.",
-    "placeholders": { "CATEGORY": { "content": "$1", "example": "Social" } }
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1",
+        "example": "Social"
+      }
+    }
   },
   "options_day_sun": {
     "message": "Sun",
@@ -496,7 +602,12 @@
   "options_schedule_overlap_error": {
     "message": "Overlaps another enabled entry on $DAY$.",
     "description": "Error when a schedule entry shares a time with another one. DAY holds the abbreviated weekday, for example Mon.",
-    "placeholders": { "DAY": { "content": "$1", "example": "Mon" } }
+    "placeholders": {
+      "DAY": {
+        "content": "$1",
+        "example": "Mon"
+      }
+    }
   },
   "options_schedule_session_type_aria": {
     "message": "Session type",
@@ -546,8 +657,14 @@
     "message": "$START$ to $END$",
     "description": "The clock times of a saved schedule entry. START and END hold the times as the browser formats them.",
     "placeholders": {
-      "START": { "content": "$1", "example": "09:00" },
-      "END": { "content": "$2", "example": "12:00" }
+      "START": {
+        "content": "$1",
+        "example": "09:00"
+      },
+      "END": {
+        "content": "$2",
+        "example": "12:00"
+      }
     }
   },
   "options_schedule_mode_blacklist": {
@@ -613,7 +730,12 @@
   "options_sound_preview_aria": {
     "message": "Preview $SOUND$",
     "description": "Screen reader label of the button that plays one sound once. SOUND holds that sound's name, for example Break start.",
-    "placeholders": { "SOUND": { "content": "$1", "example": "Break start" } }
+    "placeholders": {
+      "SOUND": {
+        "content": "$1",
+        "example": "Break start"
+      }
+    }
   },
   "options_sound_play": {
     "message": "Play",
@@ -926,5 +1048,31 @@
   "options_error_save_lists": {
     "message": "Could not save lists. Reload the page and try again.",
     "description": "Error shown when a write of the block and allow lists was refused."
+  },
+  "options_autosave_saving": {
+    "message": "Saving",
+    "description": "Status beside the Settings controls while a change is being written."
+  },
+  "options_autosave_saved": {
+    "message": "Saved",
+    "description": "Status beside the Settings controls once a change has been written."
+  },
+  "options_autosave_failed": {
+    "message": "Not saved",
+    "description": "Status beside the Settings controls when a change could not be written. The reason is shown with the control it belongs to."
+  },
+  "options_pending_waiting": {
+    "message": "Waiting for the hard lock to end: $VALUE$",
+    "description": "Line under a Settings control holding a change a hard lock refused. VALUE is the value the person chose, such as a duration or a site name.",
+    "placeholders": {
+      "value": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Cancel this change",
+    "description": "Button that drops a change a hard lock is holding, so it will not be applied when the lock ends."
   }
 }

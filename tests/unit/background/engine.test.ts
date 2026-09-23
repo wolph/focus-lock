@@ -1,13 +1,12 @@
 import { describe, expect, it, vi } from 'vitest';
 import type { EnforcementCheckpoint } from '../../../src/background/enforcement-persistence-v2';
-import type { DocumentContentCommand } from '../../../src/shared/enforcement-v2';
 import type { BlockingSweepLease, EnginePorts } from '../../../src/background/engine';
 import { aggregatedFocusEventV2, Engine } from '../../../src/background/engine';
 import { appendEventsV2, readEventsV2 } from '../../../src/background/event-log-v2';
 import { encodeListsForSync, LIST_SYNC_SHARD_KEYS } from '../../../src/background/list-sync-codec';
+import type { PendingPolicyChange } from '../../../src/background/pending-policy-changes';
 import { clockRebaseArchiveKey } from '../../../src/background/rollover';
 import { projectRuntimeDomainV2 } from '../../../src/background/runtime-checkpoint-v2';
-import type { PendingPolicyChange } from '../../../src/background/pending-policy-changes';
 import type { DeferredBlockClaim } from '../../../src/background/runtime-leaf-types';
 import { emptyRuntimeV2 } from '../../../src/background/runtime-store-v2';
 import type { RuntimeStateV2 } from '../../../src/background/runtime-v2-types';
@@ -23,6 +22,7 @@ import {
   rulesFromLists,
   TOP_SITES_DAILY,
 } from '../../../src/shared/constants';
+import type { DocumentContentCommand } from '../../../src/shared/enforcement-v2';
 import { t } from '../../../src/shared/i18n';
 import type { Ack } from '../../../src/shared/messages';
 import {

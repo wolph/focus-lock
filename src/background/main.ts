@@ -20,11 +20,11 @@ import {
   LOCAL_DATA_CLEAR_JOURNAL,
   LOCAL_DEVICE_ID,
   LOCAL_EVENTS,
-  LOCAL_PENDING_CHANGES,
   LOCAL_FIRST_SYNC_PUBLICATION,
   LOCAL_INSTALL_MARKER,
   LOCAL_LISTS_SNAPSHOT,
   LOCAL_ONBOARDING_DRAFT,
+  LOCAL_PENDING_CHANGES,
   LOCAL_POLICY_COMMIT,
   LOCAL_RUNTIME,
   LOCAL_RUNTIME_MIGRATION,
@@ -113,16 +113,13 @@ import {
   type ListsSyncEncoding,
 } from './list-sync-codec';
 import { createOnboardingService, type OnboardingService } from './onboarding';
+import { type PendingPolicyChange, parsePendingChanges } from './pending-policy-changes';
 import {
   createPolicyStorage,
   type PolicySnapshot,
   type PolicyStorage,
   type PolicyStorageDataClearPorts,
 } from './policy-storage';
-import {
-  parsePendingChanges,
-  type PendingPolicyChange,
-} from './pending-policy-changes';
 import { parseRequest } from './request-validation';
 import { routeMessage } from './router';
 import {

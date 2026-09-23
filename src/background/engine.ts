@@ -25,7 +25,6 @@ import {
 } from '../shared/constants';
 import type { DocumentContentCommand } from '../shared/enforcement-v2';
 import { CoreError } from '../shared/errors';
-import { composeSessionRules } from '../shared/session-rules';
 import { exactDataEqual } from '../shared/exact-data';
 import { t } from '../shared/i18n';
 import type {
@@ -37,6 +36,7 @@ import type {
   StartSessionResponseV2,
 } from '../shared/messages';
 import { isListsConfig } from '../shared/runtime-validation';
+import { composeSessionRules } from '../shared/session-rules';
 import { syncAggKey } from '../shared/storage-keys';
 import { localDateStr, localMonthStr } from '../shared/time';
 import type {
@@ -74,6 +74,7 @@ import {
 } from './data-clear-reset-v2';
 import type { EnforcementTargetPortsV2 } from './enforcement-targets-v2';
 import { type GuardReasonKey, listsChangeAllowed, settingsChangeAllowed } from './guard';
+import { encodeListsForSync, LIST_SYNC_KEYS, type ListsSyncEncoding } from './list-sync-codec';
 import {
   applyPendingToLists,
   applyPendingToSettings,
@@ -86,7 +87,6 @@ import {
   pendingListsDelta,
   pendingSettingsValue,
 } from './pending-policy-changes';
-import { encodeListsForSync, LIST_SYNC_KEYS, type ListsSyncEncoding } from './list-sync-codec';
 import type { PolicyValueByKey } from './policy-storage';
 import {
   type BackwardDateRebasePlan,
@@ -1498,7 +1498,8 @@ export class Engine {
   async cancelPendingChange(path: PendingPath): Promise<Ack> {
     const before: number = this.pending.length;
     this.pending = this.pending.filter((c: PendingPolicyChange): boolean => c.path !== path);
-    if (this.pending.length === before) return { ok: false, error: t('options_error_save_settings') };
+    if (this.pending.length === before)
+      return { ok: false, error: t('options_error_save_settings') };
     await this.persistPendingChanges();
     return { ok: true };
   }
@@ -1530,7 +1531,9 @@ export class Engine {
       for (const change of [...this.pending]) {
         const ack: Ack = await this.replayPendingChange(change);
         if (!ack.ok) continue;
-        this.pending = this.pending.filter((c: PendingPolicyChange): boolean => c.path !== change.path);
+        this.pending = this.pending.filter(
+          (c: PendingPolicyChange): boolean => c.path !== change.path,
+        );
       }
     } finally {
       this.flushingPending = false;

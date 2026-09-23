@@ -125,7 +125,10 @@ export function applyPendingToLists(lists: ListsConfig, intent: PendingIntent): 
     const added: string[] | undefined = intent.addExclusions[id];
     if (added === undefined) continue;
     const before: string[] = exclusions[id] ?? [];
-    exclusions[id] = [...before, ...added.filter((host: string): boolean => !before.includes(host))];
+    exclusions[id] = [
+      ...before,
+      ...added.filter((host: string): boolean => !before.includes(host)),
+    ];
   }
   return {
     ...lists,

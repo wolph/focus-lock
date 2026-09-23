@@ -1,8 +1,8 @@
 import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
 import {
-  parsePendingChanges,
   type PendingPath,
   type PendingPolicyChange,
+  parsePendingChanges,
 } from '../background/pending-policy-changes';
 import { t } from '../shared/i18n';
 import type { Ack, ClearFocusLockDataResponse } from '../shared/messages';
@@ -272,7 +272,9 @@ export function useSettingsStore(): SettingsStore {
         setLists(loadedLists);
         setSnapshot(currentSnapshot);
         setSetup(loadedSetup);
-        setPendingChanges(parsePendingChanges((loadedPending as { changes?: unknown } | null)?.changes));
+        setPendingChanges(
+          parsePendingChanges((loadedPending as { changes?: unknown } | null)?.changes),
+        );
         setBootFailure(null);
         setLoadError(null);
       } catch {

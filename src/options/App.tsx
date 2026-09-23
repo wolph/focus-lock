@@ -1,5 +1,5 @@
 import type { VNode } from 'preact';
-import { type Dispatch, type StateUpdater, useEffect, useRef, useState } from 'preact/hooks';
+import { type Dispatch, type StateUpdater, useEffect, useState } from 'preact/hooks';
 import { t } from '../shared/i18n';
 import {
   parseSettingsSectionHash,
@@ -11,14 +11,19 @@ import { applyTheme } from '../shared/theme';
 import type { ListsConfig, Rule, ScheduleEntry, Settings } from '../shared/types';
 import { BehaviorDefaults, PauseEconomy } from './Behavior';
 import { Categories } from './Categories';
-import { DirtySaveBar } from './DirtySaveBar';
 import { PrivacyData } from './PrivacyData';
 import { RulesEditor } from './RulesEditor';
 import { Schedule } from './Schedule';
 import { SessionStatus } from './SessionStatus';
 import { SoundsBadge } from './SoundsBadge';
+import {
+  type AutosaveController,
+  type AutosaveDestination,
+  type AutosaveStatus,
+  useAutosave,
+} from './use-autosave';
 import type { SettingsStore } from './use-settings';
-import { type SettingsMutation, useSettingsStore } from './use-settings';
+import { useSettingsStore } from './use-settings';
 
 interface SectionProps {
   section: SettingsSectionId;
@@ -231,214 +236,71 @@ function SectionBody(props: SectionProps): VNode {
   }
 }
 
-function SectionPanels(props: SectionProps): VNode {
+interface SectionPanelsProps {
+  section: SettingsSectionId;
+  settings: Settings;
+  lists: ListsConfig;
+  store: SettingsStore;
+  autosave: AutosaveController;
+}
+
+/**
+ * Every section is rendered and all but one hidden, so a change keeps its place when the person
+ * moves between them. Each panel writes through on change, and a write the worker refused reports
+ * itself above the controls that tried it rather than at the foot of the page.
+ */
+function SectionPanels(props: SectionPanelsProps): VNode {
   return (
     <>
-      {SETTINGS_SECTIONS.map(
-        ({ id }: { id: SettingsSectionId }): VNode => (
+      {SETTINGS_SECTIONS.map(({ id }: { id: SettingsSectionId }): VNode => {
+        const destination: AutosaveDestination = id === 'blocking' ? 'lists' : id;
+        const error: string | null = props.autosave.errorFor(destination);
+        return (
           <div key={id} data-settings-section={id} hidden={props.section !== id}>
-            <SectionBody {...props} section={id} />
+            {error === null ? null : (
+              <p class="save-error" role="alert">
+                {error}
+              </p>
+            )}
+            <SectionBody
+              section={id}
+              settings={props.settings}
+              lists={props.lists}
+              store={props.store}
+              onSettings={(next: Settings): void => props.autosave.updateSettings(id, next)}
+              onLists={(next: ListsConfig): void => props.autosave.updateLists(next)}
+            />
           </div>
-        ),
-      )}
+        );
+      })}
     </>
   );
 }
 
-function settingsSlice(section: SettingsSectionId, settings: Settings): unknown {
-  switch (section) {
-    case 'schedule':
-      return { schedule: settings.schedule };
-    case 'behavior':
-      return {
-        presetsMin: settings.presetsMin,
-        defaultMode: settings.defaultMode,
-        defaultStrictness: settings.defaultStrictness,
-        defaultCycling: settings.defaultCycling,
-        cyclingOnByDefault: settings.cyclingOnByDefault,
-        gate: settings.gate,
-      };
-    case 'budget':
-      return {
-        pause: settings.pause,
-        streakGoalMin: settings.streakGoalMin,
-        streakFreezeIntervalDays: settings.streakFreezeIntervalDays,
-        retentionDays: settings.retentionDays,
-      };
-    case 'notifications':
-      return {
-        sounds: settings.sounds,
-        badgeCountdown: settings.badgeCountdown,
-        sessionCompleteNotification: settings.sessionCompleteNotification,
-      };
-    case 'blocking':
-    case 'privacy':
-      return null;
-  }
-}
-
-function sameValue(left: unknown, right: unknown): boolean {
-  return JSON.stringify(left) === JSON.stringify(right);
-}
-
-function sectionIsDirty(
-  section: SettingsSectionId,
-  draftSettings: Settings,
-  committedSettings: Settings,
-  draftLists: ListsConfig,
-  committedLists: ListsConfig,
-): boolean {
-  if (section === 'blocking') return !sameValue(draftLists, committedLists);
-  if (section === 'privacy') return false;
-  return !sameValue(
-    settingsSlice(section, draftSettings),
-    settingsSlice(section, committedSettings),
+/** The one line that says whether what you changed is stored. */
+function AutosaveStatusLine({ status }: { status: AutosaveStatus }): VNode | null {
+  if (status === 'idle') return null;
+  const message: string =
+    status === 'saving'
+      ? t('options_autosave_saving')
+      : status === 'saved'
+        ? t('options_autosave_saved')
+        : t('options_autosave_failed');
+  return (
+    <p class={`autosave-status autosave-status--${status}`} aria-live="polite">
+      {message}
+    </p>
   );
-}
-
-function settingsWithDraftSection(
-  section: SettingsSectionId,
-  committed: Settings,
-  draft: Settings,
-): Settings {
-  switch (section) {
-    case 'schedule':
-      return { ...committed, schedule: draft.schedule };
-    case 'behavior':
-      return {
-        ...committed,
-        presetsMin: draft.presetsMin,
-        defaultMode: draft.defaultMode,
-        defaultStrictness: draft.defaultStrictness,
-        defaultCycling: draft.defaultCycling,
-        cyclingOnByDefault: draft.cyclingOnByDefault,
-        gate: draft.gate,
-      };
-    case 'budget':
-      return {
-        ...committed,
-        pause: draft.pause,
-        streakGoalMin: draft.streakGoalMin,
-        streakFreezeIntervalDays: draft.streakFreezeIntervalDays,
-        retentionDays: draft.retentionDays,
-      };
-    case 'notifications':
-      return {
-        ...committed,
-        sounds: draft.sounds,
-        badgeCountdown: draft.badgeCountdown,
-        sessionCompleteNotification: draft.sessionCompleteNotification,
-      };
-    case 'blocking':
-    case 'privacy':
-      return committed;
-  }
-}
-
-function settingsWithCommittedSection(
-  section: SettingsSectionId,
-  draft: Settings,
-  committed: Settings,
-): Settings {
-  return settingsWithDraftSection(section, draft, committed);
-}
-
-function settingsMutationFromDraft(
-  section: SettingsSectionId,
-  draft: Settings,
-): SettingsMutation | null {
-  switch (section) {
-    case 'schedule':
-      return { section, value: { schedule: structuredClone(draft.schedule) } };
-    case 'behavior':
-      return {
-        section,
-        value: {
-          presetsMin: [...draft.presetsMin],
-          defaultMode: draft.defaultMode,
-          defaultStrictness: draft.defaultStrictness,
-          defaultCycling: structuredClone(draft.defaultCycling),
-          cyclingOnByDefault: draft.cyclingOnByDefault,
-          gate: { ...draft.gate },
-        },
-      };
-    case 'budget':
-      return {
-        section,
-        value: {
-          pause: { ...draft.pause },
-          streakGoalMin: draft.streakGoalMin,
-          streakFreezeIntervalDays: draft.streakFreezeIntervalDays,
-          retentionDays: draft.retentionDays,
-        },
-      };
-    case 'notifications':
-      return {
-        section,
-        value: {
-          sounds: { ...draft.sounds },
-          badgeCountdown: draft.badgeCountdown,
-          sessionCompleteNotification: draft.sessionCompleteNotification,
-        },
-      };
-    case 'blocking':
-    case 'privacy':
-      return null;
-  }
-}
-
-interface DestinationSaveState {
-  transactionId: number;
-  source: SettingsSectionId;
-  pending: boolean;
-  error: string | null;
-}
-
-type DestinationSaveStates = Record<SettingsSectionId, DestinationSaveState>;
-
-function initialSaveStates(): DestinationSaveStates {
-  return Object.fromEntries(
-    SETTINGS_SECTIONS.map(
-      ({ id }: { id: SettingsSectionId }): [SettingsSectionId, DestinationSaveState] => [
-        id,
-        { transactionId: 0, source: id, pending: false, error: null },
-      ],
-    ),
-  ) as DestinationSaveStates;
 }
 
 export function App(): VNode {
   const store: SettingsStore = useSettingsStore();
+  const autosave: AutosaveController = useAutosave(store);
   const [section, setSection]: [SettingsSectionId, Dispatch<StateUpdater<SettingsSectionId>>] =
     useState<SettingsSectionId>(
       (): SettingsSectionId => parseSettingsSectionHash(window.location.hash),
     );
-  const [draftSettings, setDraftSettings]: [
-    Settings | null,
-    Dispatch<StateUpdater<Settings | null>>,
-  ] = useState<Settings | null>(null);
-  const [draftLists, setDraftLists]: [
-    ListsConfig | null,
-    Dispatch<StateUpdater<ListsConfig | null>>,
-  ] = useState<ListsConfig | null>(null);
-  const [saveStates, setSaveStates]: [
-    DestinationSaveStates,
-    Dispatch<StateUpdater<DestinationSaveStates>>,
-  ] = useState<DestinationSaveStates>(initialSaveStates);
-  const nextTransactionId: { current: number } = useRef<number>(1);
-  const pendingTransactions: { current: Map<SettingsSectionId, number> } = useRef<
-    Map<SettingsSectionId, number>
-  >(new Map<SettingsSectionId, number>());
 
-  useEffect((): void => {
-    const loaded: Settings | null = store.settings;
-    if (loaded !== null) {
-      setDraftSettings(
-        (current: Settings | null): Settings =>
-          current === null ? loaded : { ...current, theme: loaded.theme },
-      );
-    }
-  }, [store.settings]);
   useEffect((): (() => void) => {
     const onHashChange: () => void = (): void => {
       setSection(parseSettingsSectionHash(window.location.hash));
@@ -449,102 +311,24 @@ export function App(): VNode {
   useEffect((): void => {
     if (store.settings !== null) applyTheme(document.documentElement, store.settings.theme);
   }, [store.settings]);
-  useEffect((): void => {
-    const loaded: ListsConfig | null = store.lists;
-    if (loaded !== null) {
-      setDraftLists((current: ListsConfig | null): ListsConfig => current ?? loaded);
-    }
-  }, [store.lists]);
+  // A page going away takes its debounce with it, so what is waiting is written first.
+  useEffect((): (() => void) => {
+    const onHide: () => void = (): void => {
+      if (document.visibilityState === 'hidden') void autosave.flush();
+    };
+    document.addEventListener('visibilitychange', onHide);
+    window.addEventListener('pagehide', onHide);
+    return (): void => {
+      document.removeEventListener('visibilitychange', onHide);
+      window.removeEventListener('pagehide', onHide);
+    };
+  }, [autosave.flush]);
 
-  const loaded: boolean =
-    draftSettings !== null &&
-    draftLists !== null &&
-    store.settings !== null &&
-    store.lists !== null;
-  const dirty: boolean =
-    draftSettings !== null && draftLists !== null && store.settings !== null && store.lists !== null
-      ? sectionIsDirty(section, draftSettings, store.settings, draftLists, store.lists)
-      : false;
-  const activeSaveState: DestinationSaveState = saveStates[section];
-  const savePending: boolean = activeSaveState.pending;
-  const saveError: string | null = activeSaveState.error;
-  const stickySave: boolean = dirty || savePending || saveError !== null;
-
-  const saveSection: () => Promise<void> = async (): Promise<void> => {
-    if (
-      draftSettings === null ||
-      draftLists === null ||
-      store.settings === null ||
-      store.lists === null ||
-      !dirty ||
-      savePending
-    ) {
-      return;
-    }
-    const source: SettingsSectionId = section;
-    if (pendingTransactions.current.has(source)) return;
-    const transactionId: number = nextTransactionId.current;
-    nextTransactionId.current += 1;
-    pendingTransactions.current.set(source, transactionId);
-    setSaveStates(
-      (current: DestinationSaveStates): DestinationSaveStates => ({
-        ...current,
-        [source]: { transactionId, source, pending: true, error: null },
-      }),
-    );
-    let error: string | null = null;
-    try {
-      let result: string | null;
-      if (source === 'blocking') {
-        result = await store.saveLists(draftLists);
-      } else {
-        const mutation: SettingsMutation | null = settingsMutationFromDraft(source, draftSettings);
-        result = mutation === null ? t('options_save_failed') : await store.saveSettings(mutation);
-      }
-      error = result;
-    } catch {
-      error = t('options_save_failed');
-    } finally {
-      if (pendingTransactions.current.get(source) === transactionId) {
-        pendingTransactions.current.delete(source);
-      }
-      setSaveStates(
-        (current: DestinationSaveStates): DestinationSaveStates =>
-          current[source].transactionId === transactionId
-            ? {
-                ...current,
-                [source]: { transactionId, source, pending: false, error },
-              }
-            : current,
-      );
-    }
-  };
-
-  const discardSection: () => void = (): void => {
-    if (
-      draftSettings === null ||
-      draftLists === null ||
-      store.settings === null ||
-      store.lists === null ||
-      savePending
-    ) {
-      return;
-    }
-    setSaveStates(
-      (current: DestinationSaveStates): DestinationSaveStates => ({
-        ...current,
-        [section]: { ...current[section], error: null },
-      }),
-    );
-    if (section === 'blocking') {
-      setDraftLists(store.lists);
-      return;
-    }
-    setDraftSettings(settingsWithCommittedSection(section, draftSettings, store.settings));
-  };
+  const settings: Settings | null = autosave.settings;
+  const lists: ListsConfig | null = autosave.lists;
 
   return (
-    <div class={`options${stickySave ? ' options--sticky-save' : ''}`}>
+    <div class="options">
       <SettingsNav
         page="options"
         section={section}
@@ -558,30 +342,21 @@ export function App(): VNode {
           {store.snapshot === null ? null : <SessionStatus snapshot={store.snapshot} />}
           {store.loadError !== null ? (
             <LoadError store={store} />
-          ) : draftSettings === null || draftLists === null ? (
+          ) : settings === null || lists === null ? (
             <p>{t('options_loading_settings')}</p>
           ) : (
-            <SectionPanels
-              section={section}
-              settings={draftSettings}
-              lists={draftLists}
-              store={store}
-              onSettings={setDraftSettings}
-              onLists={setDraftLists}
-            />
+            <>
+              <SectionPanels
+                section={section}
+                settings={settings}
+                lists={lists}
+                store={store}
+                autosave={autosave}
+              />
+              {section === 'privacy' ? null : <AutosaveStatusLine status={autosave.status} />}
+            </>
           )}
         </div>
-        {loaded && section !== 'privacy' ? (
-          <DirtySaveBar
-            dirty={dirty}
-            pending={savePending}
-            error={saveError}
-            onSave={(): void => {
-              void saveSection();
-            }}
-            onDiscard={discardSection}
-          />
-        ) : null}
       </main>
     </div>
   );

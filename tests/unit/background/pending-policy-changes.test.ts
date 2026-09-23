@@ -3,9 +3,9 @@ import {
   applyPendingToLists,
   applyPendingToSettings,
   capturePendingChange,
-  parsePendingChanges,
   type PendingIntent,
   type PendingPolicyChange,
+  parsePendingChanges,
   pathForGuardReason,
   pendingListsDelta,
   pendingSettingsValue,
@@ -39,9 +39,7 @@ describe('pendingListsDelta', () => {
     const laterAllowedEdit: ListsConfig = lists(['reddit.com', 'news.example.com']);
     const applied: ListsConfig = applyPendingToLists(laterAllowedEdit, delta);
 
-    expect(applied.custom.map((rule: Rule): string => rule.pattern)).toEqual([
-      'news.example.com',
-    ]);
+    expect(applied.custom.map((rule: Rule): string => rule.pattern)).toEqual(['news.example.com']);
   });
 
   it('records a disabled category and an added exclusion host', () => {
@@ -95,9 +93,9 @@ describe('capturePendingChange', () => {
     );
 
     expect(queue).toHaveLength(2);
-    expect(queue.find((c: PendingPolicyChange): boolean => c.path === 'settings.gate.delayMs')).toBe(
-      replacement,
-    );
+    expect(
+      queue.find((c: PendingPolicyChange): boolean => c.path === 'settings.gate.delayMs'),
+    ).toBe(replacement);
   });
 });
 

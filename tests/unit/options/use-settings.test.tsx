@@ -2,6 +2,7 @@
 import { act, cleanup, fireEvent, render, waitFor } from '@testing-library/preact';
 import type { VNode } from 'preact';
 import { afterEach, beforeEach, describe, expect, it, type Mock, vi } from 'vitest';
+import type { PendingPolicyChange } from '../../../src/background/pending-policy-changes';
 import { App } from '../../../src/options/App';
 import type { SettingsStore } from '../../../src/options/use-settings';
 import { useSettingsStore } from '../../../src/options/use-settings';
@@ -12,7 +13,6 @@ import {
   emptySnapshot,
   rulesFromLists,
 } from '../../../src/shared/constants';
-import type { PendingPolicyChange } from '../../../src/background/pending-policy-changes';
 import type { Request } from '../../../src/shared/messages';
 import { settingsTimedCopy } from '../../../src/shared/session-copy';
 import type {
@@ -670,37 +670,32 @@ describe('App frame', () => {
     expect((getAllByLabelText('Pattern')[0] as HTMLInputElement).value).toBe('unfinished.example');
   });
 
-  it('owns dirty state per destination and discards only the active section', async (): Promise<void> => {
-    const { getByLabelText, getByRole, getByText } = render(<App />);
+  it('writes a change without a save button and keeps it while you move around', async (): Promise<void> => {
+    fake.respond('updateSettings', { ok: true });
+    const { getByLabelText, getByRole, queryByRole } = render(<App />);
     await waitFor((): void => expect(getByRole('link', { name: 'Session behavior' })).toBeTruthy());
 
     fireEvent.click(getByRole('link', { name: 'Session behavior' }));
-    const preset: HTMLInputElement = getByLabelText(
-      'Short session preset (minutes)',
-    ) as HTMLInputElement;
-    expect((getByRole('button', { name: 'Save changes' }) as HTMLButtonElement).disabled).toBe(
-      true,
-    );
-    fireEvent.input(preset, { target: { value: '12' } });
-    expect(getByText('Unsaved changes')).toBeTruthy();
-    expect((getByRole('button', { name: 'Save changes' }) as HTMLButtonElement).disabled).toBe(
-      false,
-    );
+    expect(queryByRole('button', { name: 'Save changes' })).toBeNull();
+    expect(queryByRole('button', { name: 'Discard changes' })).toBeNull();
+
+    fireEvent.input(getByLabelText('Short session preset (minutes)'), { target: { value: '12' } });
+
+    await waitFor((): void => {
+      expect(
+        fake.sent.some(
+          (request: Request): boolean =>
+            request.type === 'updateSettings' && request.settings.presetsMin[0] === 12,
+        ),
+      ).toBe(true);
+    });
 
     fireEvent.click(getByRole('link', { name: 'Schedule' }));
-    expect(getByText('No unsaved changes')).toBeTruthy();
-    expect((getByRole('button', { name: 'Save changes' }) as HTMLButtonElement).disabled).toBe(
-      true,
-    );
-
     fireEvent.click(getByRole('link', { name: 'Session behavior' }));
     expect((getByLabelText('Short session preset (minutes)') as HTMLInputElement).value).toBe('12');
-    fireEvent.click(getByRole('button', { name: 'Discard changes' }));
-    expect((getByLabelText('Short session preset (minutes)') as HTMLInputElement).value).toBe('15');
-    expect(getByText('No unsaved changes')).toBeTruthy();
   });
 
-  it('keeps the sticky save actions pending until the destination save settles', async (): Promise<void> => {
+  it('reports saving until the write settles, then saved', async (): Promise<void> => {
     const update: Deferred<{ ok: true }> = deferred<{ ok: true }>();
     fake.respond('updateSettings', update.promise);
     const { getByLabelText, getByRole, getByText } = render(<App />);
@@ -712,17 +707,10 @@ describe('App frame', () => {
       target: { value: '30' },
     });
 
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
-    expect(getByText('Saving changes')).toBeTruthy();
-    expect((getByRole('button', { name: 'Save changes' }) as HTMLButtonElement).disabled).toBe(
-      true,
-    );
-    expect((getByRole('button', { name: 'Discard changes' }) as HTMLButtonElement).disabled).toBe(
-      true,
-    );
+    await waitFor((): void => expect(getByText('Saving')).toBeTruthy());
 
     await act(async (): Promise<void> => update.resolve({ ok: true }));
-    await waitFor((): void => expect(getByText('No unsaved changes')).toBeTruthy());
+    await waitFor((): void => expect(getByText('Saved')).toBeTruthy());
   });
 
   it('keeps a deferred rejection owned by its originating destination', async (): Promise<void> => {
@@ -737,26 +725,22 @@ describe('App frame', () => {
     fireEvent.input(getByLabelText('Daily streak goal (focus minutes)'), {
       target: { value: '30' },
     });
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
-    expect(getByText('Saving changes')).toBeTruthy();
+    await waitFor((): void => expect(getByText('Saving')).toBeTruthy());
 
+    // The reason belongs to the section that tried the write, not to whichever one is open.
     fireEvent.click(getByRole('link', { name: 'Notifications' }));
-    expect(getByText('No unsaved changes')).toBeTruthy();
-    expect(queryByRole('alert')).toBeNull();
-
     await act(async (): Promise<void> => {
       update.resolve({ ok: false, error: 'budget write rejected' });
     });
-    await waitFor((): void => expect(getByText('No unsaved changes')).toBeTruthy());
     expect(queryByRole('alert')).toBeNull();
 
     fireEvent.click(getByRole('link', { name: 'Site access credit' }));
     await waitFor((): void => {
       expect(getByRole('alert').textContent).toBe('budget write rejected');
     });
-    expect(getByText('Unsaved changes')).toBeTruthy();
-    expect((getByRole('button', { name: 'Save changes' }) as HTMLButtonElement).disabled).toBe(
-      false,
+    // The refused value is not left on the control: what is shown is what is in force.
+    expect((getByLabelText('Daily streak goal (focus minutes)') as HTMLInputElement).value).toBe(
+      String(DEFAULT_SETTINGS.streakGoalMin),
     );
   });
 
@@ -775,7 +759,6 @@ describe('App frame', () => {
     fireEvent.input(getByLabelText('Daily streak goal (focus minutes)'), {
       target: { value: '30' },
     });
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
 
     expect(
       fake.sent.filter((request: Request): boolean => request.type === 'updateSettings'),
@@ -809,7 +792,6 @@ describe('App frame', () => {
     fireEvent.input(getByLabelText('Daily streak goal (focus minutes)'), {
       target: { value: '30' },
     });
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
     fireEvent.click(getByRole('button', { name: /Theme: Auto/i }));
 
     expect(
@@ -826,7 +808,7 @@ describe('App frame', () => {
     expect((getByLabelText('Daily streak goal (focus minutes)') as HTMLInputElement).value).toBe(
       '30',
     );
-    expect(getByText('No unsaved changes')).toBeTruthy();
+    await waitFor((): void => expect(getByText('Saved')).toBeTruthy());
   });
 
   it('rebases a queued Notifications save on an accepted Site access credit save', async (): Promise<void> => {
@@ -846,10 +828,8 @@ describe('App frame', () => {
     fireEvent.input(getByLabelText('Daily streak goal (focus minutes)'), {
       target: { value: '30' },
     });
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
     fireEvent.click(getByRole('link', { name: 'Notifications' }));
     fireEvent.click(getByLabelText('Show a system notification when a session completes'));
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
 
     await act(async (): Promise<void> => budgetUpdate.resolve({ ok: true }));
     await waitFor((): void =>
@@ -879,12 +859,10 @@ describe('App frame', () => {
 
     fireEvent.click(getByRole('link', { name: 'Notifications' }));
     fireEvent.click(getByLabelText('Show a system notification when a session completes'));
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
     fireEvent.click(getByRole('link', { name: 'Session behavior' }));
     fireEvent.input(getByLabelText('Short session preset (minutes)'), {
       target: { value: '12' },
     });
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
 
     await act(async (): Promise<void> => notificationsUpdate.resolve({ ok: true }));
     await waitFor((): void =>
@@ -901,7 +879,7 @@ describe('App frame', () => {
     await act(async (): Promise<void> => behaviorUpdate.resolve({ ok: true }));
   });
 
-  it('keeps a rejected save message inside the sticky action wrapper', async (): Promise<void> => {
+  it('reports a refused list write above the controls that tried it', async (): Promise<void> => {
     fake.respond('updateLists', { ok: false, error: 'blocking write rejected' });
     const { getAllByLabelText, getAllByRole, getByRole } = render(<App />);
     await waitFor((): void => expect(getByRole('heading', { name: 'Blocking' })).toBeTruthy());
@@ -909,14 +887,12 @@ describe('App frame', () => {
       target: { value: 'example.com' },
     });
     fireEvent.click(getAllByRole('button', { name: 'Add rule' })[0] as HTMLElement);
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
 
     const alert: HTMLElement = await waitFor((): HTMLElement => getByRole('alert'));
-    const wrapper: Element | null = alert.closest('.dirty-save-bar');
-    expect(wrapper).not.toBeNull();
-    expect(wrapper?.contains(getByRole('button', { name: 'Save changes' }))).toBe(true);
-    expect(wrapper?.contains(getByRole('button', { name: 'Discard changes' }))).toBe(true);
-    expect(wrapper?.contains(document.querySelector('.dirty-save-state'))).toBe(true);
+    expect(alert.textContent).toBe('blocking write rejected');
+    const panel: Element | null = alert.closest('[data-settings-section="blocking"]');
+    expect(panel).not.toBeNull();
+    expect(panel?.contains(getByRole('heading', { name: 'Blocking' }))).toBe(true);
   });
 
   it('keeps a live theme update in the draft used by a later section save', async (): Promise<void> => {
@@ -946,7 +922,6 @@ describe('App frame', () => {
     fireEvent.input(getByLabelText('Daily streak goal (focus minutes)'), {
       target: { value: '30' },
     });
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
     await waitFor((): void =>
       expect(
         fake.sent.some(
@@ -998,7 +973,7 @@ describe('App frame', () => {
     };
     fake.respond('getLists', committed);
     fake.respond('updateLists', { ok: true });
-    const { getAllByLabelText, getAllByRole, getByLabelText, getByRole } = render(<App />);
+    const { getAllByLabelText, getAllByRole, getByLabelText } = render(<App />);
     await waitFor((): void => {
       expect(getByLabelText('Social media')).toBeTruthy();
     });
@@ -1008,7 +983,6 @@ describe('App frame', () => {
       target: { value: 'nu.nl' },
     });
     fireEvent.click(getAllByRole('button', { name: 'Add rule' })[0] as HTMLElement);
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
 
     await waitFor((): void => {
       expect(fake.sent.some((request: Request): boolean => request.type === 'updateLists')).toBe(
@@ -1023,7 +997,7 @@ describe('App frame', () => {
     expect(update?.lists.categories.social).toBe(false);
   });
 
-  it('does not include an unsaved strictness weakening in a pause save', async (): Promise<void> => {
+  it('writes each section on its own without dragging another section along', async (): Promise<void> => {
     const committed: Settings = { ...DEFAULT_SETTINGS, defaultStrictness: 'hard' };
     fake.respond('getSettings', committed);
     fake.respond('updateSettings', { ok: true });
@@ -1036,23 +1010,32 @@ describe('App frame', () => {
     fireEvent.click(
       getByLabelText('Friction: stopping early uses the configured deliberation gate'),
     );
-    fireEvent.click(getByRole('link', { name: 'Site access credit' }));
-    fireEvent.input(getByLabelText('Daily streak goal (focus minutes)'), {
-      target: { value: '30' },
-    });
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
-
     await waitFor((): void => {
       expect(fake.sent.some((request: Request): boolean => request.type === 'updateSettings')).toBe(
         true,
       );
     });
-    const update: Extract<Request, { type: 'updateSettings' }> | undefined = fake.sent.find(
+
+    fireEvent.click(getByRole('link', { name: 'Site access credit' }));
+    fireEvent.input(getByLabelText('Daily streak goal (focus minutes)'), {
+      target: { value: '30' },
+    });
+    await waitFor((): void => {
+      expect(
+        fake.sent.filter((request: Request): boolean => request.type === 'updateSettings'),
+      ).toHaveLength(2);
+    });
+
+    const updates: Extract<Request, { type: 'updateSettings' }>[] = fake.sent.filter(
       (request: Request): request is Extract<Request, { type: 'updateSettings' }> =>
         request.type === 'updateSettings',
     );
-    expect(update?.settings.streakGoalMin).toBe(30);
-    expect(update?.settings.defaultStrictness).toBe('hard');
+    // The behaviour write carries its own change and nothing from the section not touched yet.
+    expect(updates[0]?.settings.defaultStrictness).toBe('friction');
+    expect(updates[0]?.settings.streakGoalMin).toBe(DEFAULT_SETTINGS.streakGoalMin);
+    // The credit write carries its own change, over the behaviour change already stored.
+    expect(updates[1]?.settings.streakGoalMin).toBe(30);
+    expect(updates[1]?.settings.defaultStrictness).toBe('friction');
   });
 
   it('persists preset controls through the strictness section save', async (): Promise<void> => {
@@ -1065,7 +1048,6 @@ describe('App frame', () => {
     fireEvent.input(getByLabelText('Short session preset (minutes)'), {
       target: { value: '12' },
     });
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
 
     await waitFor((): void => {
       expect(fake.sent.some((request: Request): boolean => request.type === 'updateSettings')).toBe(
@@ -1092,7 +1074,6 @@ describe('App frame', () => {
     });
     fireEvent.click(getByRole('link', { name: 'Site access credit' }));
     fireEvent.input(getByLabelText('Freeze token interval (days)'), { target: { value: '9' } });
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
 
     await waitFor((): void => {
       expect(fake.sent.some((request: Request): boolean => request.type === 'updateSettings')).toBe(
@@ -1119,7 +1100,6 @@ describe('App frame', () => {
     });
     fireEvent.click(getByRole('link', { name: 'Notifications' }));
     fireEvent.click(getByLabelText('Show a system notification when a session completes'));
-    fireEvent.click(getByRole('button', { name: 'Save changes' }));
 
     await waitFor((): void => {
       expect(fake.sent.some((request: Request): boolean => request.type === 'updateSettings')).toBe(
