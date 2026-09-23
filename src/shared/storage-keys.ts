@@ -25,6 +25,12 @@ export const LOCAL_RUNTIME_MIGRATION: string = 'runtimeMigration';
  */
 export const LOCAL_RUNTIME_REJECTED: string = 'runtimeRejected';
 export const LOCAL_EVENTS: string = 'events';
+/**
+ * Weakening edits a hard lock refused, retried whenever the guard's answer could have changed.
+ * Local because it is an intention for this profile, not policy any other device should adopt.
+ * Removed by the all-data clear.
+ */
+export const LOCAL_PENDING_CHANGES: string = 'pendingChanges';
 export const LOCAL_DEVICE_ID: string = 'deviceId';
 export const LOCAL_SYNC_JOURNAL: string = 'syncJournal';
 export const LOCAL_FIRST_SYNC_PUBLICATION: string = 'firstSyncPublication';
