@@ -1,4 +1,4 @@
-import { t } from '../shared/i18n';
+import type { MessageKey } from '../shared/i18n';
 import type {
   ListsConfig,
   Rule,
@@ -10,11 +10,14 @@ import type {
 } from '../shared/types';
 
 /**
- * Weakening guard for hard sessions. Additive edits always pass, edits
- * that would unlock something mid-session are rejected with a
- * user-facing reason. Friction sessions and idle allow everything.
- * Null means allowed, a string is the rejection reason.
+ * Weakening guard for hard sessions. Additive edits always pass, edits that would unlock
+ * something mid-session are rejected. Friction sessions and idle allow everything.
+ * Null means allowed, a `notify_guard_*` message key is the rejection reason. The key rather
+ * than the sentence, because the caller localises it for the person in front of it and the
+ * pending queue stores it until a later session ends, by which time the browser's language may
+ * be a different one.
  */
+export type GuardReasonKey = Extract<MessageKey, `notify_guard_${string}`>;
 
 function ruleIds(rules: Rule[]): Set<string> {
   return new Set(rules.map((r: Rule): string => `${r.kind}:${r.pattern}`));
@@ -48,13 +51,13 @@ export function listsChangeAllowed(
   mode: SessionMode | null,
   current: ListsConfig,
   incoming: ListsConfig,
-): string | null {
+): GuardReasonKey | null {
   if (!isHard(session)) return null;
   if (mode === 'blacklist' && removedAny(current.custom, incoming.custom)) {
-    return t('notify_guard_lists_remove_blocked');
+    return 'notify_guard_lists_remove_blocked';
   }
   if (mode === 'whitelist' && addedAny(current.whitelist, incoming.whitelist)) {
-    return t('notify_guard_lists_add_whitelist');
+    return 'notify_guard_lists_add_whitelist';
   }
   for (const [id, enabled] of Object.entries(current.categories)) {
     if (
@@ -62,7 +65,7 @@ export function listsChangeAllowed(
       enabled &&
       incoming.categories[id as keyof ListsConfig['categories']] === false
     ) {
-      return t('notify_guard_lists_disable_category');
+      return 'notify_guard_lists_disable_category';
     }
   }
   for (const [id, hosts] of Object.entries(incoming.exclusions)) {
@@ -70,7 +73,7 @@ export function listsChangeAllowed(
       current.exclusions[id as keyof ListsConfig['categories']] ?? [],
     );
     if (mode === 'blacklist' && (hosts ?? []).some((h: string): boolean => !before.has(h))) {
-      return t('notify_guard_lists_add_exclusion');
+      return 'notify_guard_lists_add_exclusion';
     }
   }
   return null;
@@ -100,28 +103,28 @@ export function settingsChangeAllowed(
   session: SessionState | null,
   current: Settings,
   incoming: Settings,
-): string | null {
+): GuardReasonKey | null {
   if (!isHard(session)) return null;
   if (strictnessWeakened(current.defaultStrictness, incoming.defaultStrictness)) {
-    return t('notify_guard_settings_weaken_strictness');
+    return 'notify_guard_settings_weaken_strictness';
   }
   if (incoming.gate.delayMs < current.gate.delayMs) {
-    return t('notify_guard_settings_shorten_delay');
+    return 'notify_guard_settings_shorten_delay';
   }
   if (current.gate.requireTypedPhrase && !incoming.gate.requireTypedPhrase) {
-    return t('notify_guard_settings_drop_phrase');
+    return 'notify_guard_settings_drop_phrase';
   }
   if (incoming.pause.earnRatio > current.pause.earnRatio) {
-    return t('notify_guard_settings_raise_earn_rate');
+    return 'notify_guard_settings_raise_earn_rate';
   }
   if (incoming.pause.capMs > current.pause.capMs) {
-    return t('notify_guard_settings_raise_cap');
+    return 'notify_guard_settings_raise_cap';
   }
   if (incoming.pause.pauseMs < current.pause.pauseMs) {
-    return t('notify_guard_settings_shorten_pause');
+    return 'notify_guard_settings_shorten_pause';
   }
   if (incoming.pause.unlockMs < current.pause.unlockMs) {
-    return t('notify_guard_settings_shorten_unlock');
+    return 'notify_guard_settings_shorten_unlock';
   }
   if (
     scheduleWeakened(
@@ -130,7 +133,7 @@ export function settingsChangeAllowed(
       incoming.schedule,
     )
   ) {
-    return t('notify_guard_settings_schedule_weakened');
+    return 'notify_guard_settings_schedule_weakened';
   }
   return null;
 }

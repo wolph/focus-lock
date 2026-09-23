@@ -73,7 +73,7 @@ import {
   runBrowserResetAttemptV2,
 } from './data-clear-reset-v2';
 import type { EnforcementTargetPortsV2 } from './enforcement-targets-v2';
-import { listsChangeAllowed, settingsChangeAllowed } from './guard';
+import { type GuardReasonKey, listsChangeAllowed, settingsChangeAllowed } from './guard';
 import { encodeListsForSync, LIST_SYNC_KEYS, type ListsSyncEncoding } from './list-sync-codec';
 import type { PolicyValueByKey } from './policy-storage';
 import {
@@ -1479,8 +1479,12 @@ export class Engine {
       }
     }
     const now: number = this.ports.now();
-    const reason: string | null = settingsChangeAllowed(this.runtime.session, this.settings, s);
-    if (reason !== null) return this.fail(now, reason);
+    const reason: GuardReasonKey | null = settingsChangeAllowed(
+      this.runtime.session,
+      this.settings,
+      s,
+    );
+    if (reason !== null) return this.fail(now, t(reason));
     const scheduleMoved: boolean = !exactDataEqual(this.settings.schedule, s.schedule);
     try {
       await this.savePolicy('settings', s);
@@ -1533,13 +1537,13 @@ export class Engine {
     reconcilePendingSync: boolean,
   ): Promise<Ack> {
     const now: number = this.ports.now();
-    const reason: string | null = listsChangeAllowed(
+    const reason: GuardReasonKey | null = listsChangeAllowed(
       this.runtime.session,
       this.runtime.session?.config.mode ?? null,
       this.lists,
       l,
     );
-    if (reason !== null) return this.fail(now, reason);
+    if (reason !== null) return this.fail(now, t(reason));
     const bundle: MatcherCacheBundle = buildMatcherCache(l, ALL_CATEGORIES);
     await this.ports.saveMatcherCache(bundle.stored, l);
     if (queueForSync) {
@@ -1569,12 +1573,12 @@ export class Engine {
   async applySyncedSettings(settings: Settings): Promise<Ack> {
     this.assertRuntimeMutationAllowed();
     const now: number = this.ports.now();
-    const reason: string | null = settingsChangeAllowed(
+    const reason: GuardReasonKey | null = settingsChangeAllowed(
       this.runtime.session,
       this.settings,
       settings,
     );
-    if (reason !== null) return this.fail(now, reason);
+    if (reason !== null) return this.fail(now, t(reason));
     this.setSettingsAndClampBank(settings);
     this.dirty = true;
     await this.commit(now);
@@ -1640,21 +1644,21 @@ export class Engine {
     _reconcilePendingLists: boolean,
   ): Promise<Ack & { accepted?: Partial<PolicyValueByKey> }> {
     if (changes.settings !== undefined) {
-      const reason: string | null = settingsChangeAllowed(
+      const reason: GuardReasonKey | null = settingsChangeAllowed(
         this.runtime.session,
         this.settings,
         changes.settings,
       );
-      if (reason !== null) return { ok: false, error: reason };
+      if (reason !== null) return { ok: false, error: t(reason) };
     }
     if (changes.lists !== undefined) {
-      const reason: string | null = listsChangeAllowed(
+      const reason: GuardReasonKey | null = listsChangeAllowed(
         this.runtime.session,
         this.runtime.session?.config.mode ?? null,
         this.lists,
         changes.lists,
       );
-      if (reason !== null) return { ok: false, error: reason };
+      if (reason !== null) return { ok: false, error: t(reason) };
       try {
         await encodeListsForSync(changes.lists);
       } catch (error: unknown) {

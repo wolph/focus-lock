@@ -43,8 +43,8 @@ const withCustom: ListsConfig = {
 
 describe('listsChangeAllowed', () => {
   it('rejects removing a rule during a hard session, allows adding', () => {
-    expect(listsChangeAllowed(hardSession, 'blacklist', withCustom, DEFAULT_LISTS)).toMatch(
-      /hard/i,
+    expect(listsChangeAllowed(hardSession, 'blacklist', withCustom, DEFAULT_LISTS)).toBe(
+      'notify_guard_lists_remove_blocked',
     );
     expect(listsChangeAllowed(hardSession, 'blacklist', DEFAULT_LISTS, withCustom)).toBeNull();
   });
@@ -55,9 +55,13 @@ describe('listsChangeAllowed', () => {
       categories: { ...DEFAULT_LISTS.categories, social: true },
     };
     const catOff: ListsConfig = { ...DEFAULT_LISTS };
-    expect(listsChangeAllowed(hardSession, 'blacklist', catOn, catOff)).toMatch(/hard/i);
+    expect(listsChangeAllowed(hardSession, 'blacklist', catOn, catOff)).toBe(
+      'notify_guard_lists_disable_category',
+    );
     const excl: ListsConfig = { ...catOn, exclusions: { social: ['facebook.com'] } };
-    expect(listsChangeAllowed(hardSession, 'blacklist', catOn, excl)).toMatch(/hard/i);
+    expect(listsChangeAllowed(hardSession, 'blacklist', catOn, excl)).toBe(
+      'notify_guard_lists_add_exclusion',
+    );
   });
 
   it('rejects whitelist additions during a hard whitelist session', () => {
@@ -65,7 +69,9 @@ describe('listsChangeAllowed', () => {
       ...DEFAULT_LISTS,
       whitelist: [{ kind: 'host', pattern: 'github.com' }],
     };
-    expect(listsChangeAllowed(hardSession, 'whitelist', DEFAULT_LISTS, wl)).toMatch(/hard/i);
+    expect(listsChangeAllowed(hardSession, 'whitelist', DEFAULT_LISTS, wl)).toBe(
+      'notify_guard_lists_add_whitelist',
+    );
   });
 
   it('allows removing a whitelist rule during a hard whitelist session', () => {
@@ -155,7 +161,9 @@ describe('settingsChangeAllowed', () => {
       ...DEFAULT_SETTINGS,
       gate: { ...DEFAULT_SETTINGS.gate, delayMs: 1_000 },
     };
-    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, weaker)).toMatch(/hard/i);
+    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, weaker)).toBe(
+      'notify_guard_settings_shorten_delay',
+    );
     const stronger: Settings = {
       ...DEFAULT_SETTINGS,
       gate: { ...DEFAULT_SETTINGS.gate, delayMs: 30_000 },
@@ -172,7 +180,9 @@ describe('settingsChangeAllowed', () => {
       ...DEFAULT_SETTINGS,
       gate: { ...DEFAULT_SETTINGS.gate, requireTypedPhrase: false },
     };
-    expect(settingsChangeAllowed(hardSession, typed, untyped)).toMatch(/hard/i);
+    expect(settingsChangeAllowed(hardSession, typed, untyped)).toBe(
+      'notify_guard_settings_drop_phrase',
+    );
     expect(settingsChangeAllowed(hardSession, untyped, typed)).toBeNull();
   });
 
@@ -181,12 +191,16 @@ describe('settingsChangeAllowed', () => {
       ...DEFAULT_SETTINGS,
       pause: { ...DEFAULT_SETTINGS.pause, earnRatio: 1 },
     };
-    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, richer)).toMatch(/hard/i);
+    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, richer)).toBe(
+      'notify_guard_settings_raise_earn_rate',
+    );
     const bigger: Settings = {
       ...DEFAULT_SETTINGS,
       pause: { ...DEFAULT_SETTINGS.pause, capMs: DEFAULT_SETTINGS.pause.capMs + 1 },
     };
-    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, bigger)).toMatch(/hard/i);
+    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, bigger)).toBe(
+      'notify_guard_settings_raise_cap',
+    );
   });
 
   it('rejects lowering pause and unlock costs during hard and allows raising them', () => {
@@ -207,8 +221,12 @@ describe('settingsChangeAllowed', () => {
       },
     };
 
-    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, lowerPause)).toMatch(/hard/i);
-    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, lowerUnlock)).toMatch(/hard/i);
+    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, lowerPause)).toBe(
+      'notify_guard_settings_shorten_pause',
+    );
+    expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, lowerUnlock)).toBe(
+      'notify_guard_settings_shorten_unlock',
+    );
     expect(settingsChangeAllowed(hardSession, DEFAULT_SETTINGS, higherCosts)).toBeNull();
   });
 
@@ -252,13 +270,27 @@ describe('settingsChangeAllowed', () => {
       schedule: [{ ...scheduleEntry, strictness: 'flexible' }],
     };
     const removed: Settings = { ...DEFAULT_SETTINGS, schedule: [] };
-    expect(settingsChangeAllowed(fromSchedule, current, disabled)).toMatch(/hard/i);
-    expect(settingsChangeAllowed(fromSchedule, current, shortened)).toMatch(/hard/i);
-    expect(settingsChangeAllowed(fromSchedule, current, fewerDays)).toMatch(/hard/i);
-    expect(settingsChangeAllowed(fromSchedule, current, laterStart)).toMatch(/hard/i);
-    expect(settingsChangeAllowed(fromSchedule, current, weakerStrictness)).toMatch(/hard/i);
-    expect(settingsChangeAllowed(fromSchedule, current, weakestStrictness)).toMatch(/hard/i);
-    expect(settingsChangeAllowed(fromSchedule, current, removed)).toMatch(/hard/i);
+    expect(settingsChangeAllowed(fromSchedule, current, disabled)).toBe(
+      'notify_guard_settings_schedule_weakened',
+    );
+    expect(settingsChangeAllowed(fromSchedule, current, shortened)).toBe(
+      'notify_guard_settings_schedule_weakened',
+    );
+    expect(settingsChangeAllowed(fromSchedule, current, fewerDays)).toBe(
+      'notify_guard_settings_schedule_weakened',
+    );
+    expect(settingsChangeAllowed(fromSchedule, current, laterStart)).toBe(
+      'notify_guard_settings_schedule_weakened',
+    );
+    expect(settingsChangeAllowed(fromSchedule, current, weakerStrictness)).toBe(
+      'notify_guard_settings_schedule_weakened',
+    );
+    expect(settingsChangeAllowed(fromSchedule, current, weakestStrictness)).toBe(
+      'notify_guard_settings_schedule_weakened',
+    );
+    expect(settingsChangeAllowed(fromSchedule, current, removed)).toBe(
+      'notify_guard_settings_schedule_weakened',
+    );
   });
 
   it('allows strengthening or no-effect edits to the source schedule entry', () => {
