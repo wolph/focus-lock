@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "זו כבר לשונית העבודה שלך.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "שינויים בכללים שלך חלים מיד."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "שינויים בכללים שלך חלים מיד. רק סיום מוקדם כרוך בעלות."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "אפשר להוסיף חסימות בזמן שהוא פועל. הסרות ממתינות עד לסיומו."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "שינויים בהגדרות מגיעים למפגש הזה ברגע שאתה מבצע אותם."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "שינויים בהגדרות מגיעים למפגש הזה ברגע שאתה מבצע אותם."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "שינויי הגדרות שמוסיפים חסימות מגיעים למפגש הזה. אלה שמסירים אותן ממתינים לסיומו."
   }
 }

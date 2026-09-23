@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Učitavanje privatnosti"
   },
-  "options_save_failed": {
-    "message": "Nije moguće spremiti. Pokušajte ponovno."
-  },
   "options_blocking_heading": {
     "message": "Blokiranje"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Obriši sve podatke Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Spremanje promjena"
-  },
-  "options_dirty_unsaved": {
-    "message": "Nespremljene promjene"
-  },
-  "options_dirty_clean": {
-    "message": "Nema nespremljenih promjena"
-  },
-  "options_dirty_discard": {
-    "message": "Odbaci promjene"
-  },
-  "options_dirty_save": {
-    "message": "Spremi promjene"
   },
   "options_session_status_label": {
     "message": "Status sesije"
@@ -872,5 +854,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Spremanje"
+  },
+  "options_autosave_saved": {
+    "message": "Spremljeno"
+  },
+  "options_autosave_failed": {
+    "message": "Nije spremljeno"
+  },
+  "options_pending_waiting": {
+    "message": "Čeka se kraj teškog zaključavanja: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Otkaži ovu promjenu"
+  },
+  "options_pending_value_on": {
+    "message": "uključeno"
+  },
+  "options_pending_value_off": {
+    "message": "isključeno"
   }
 }

@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Gizlilik ayarları yükleniyor"
   },
-  "options_save_failed": {
-    "message": "Kaydedilemedi. Tekrar dene."
-  },
   "options_blocking_heading": {
     "message": "Engelleme"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Tüm Focus Lock verilerini sil"
-  },
-  "options_dirty_saving": {
-    "message": "Değişiklikler kaydediliyor"
-  },
-  "options_dirty_unsaved": {
-    "message": "Kaydedilmemiş değişiklikler"
-  },
-  "options_dirty_clean": {
-    "message": "Kaydedilmemiş değişiklik yok"
-  },
-  "options_dirty_discard": {
-    "message": "Değişiklikleri at"
-  },
-  "options_dirty_save": {
-    "message": "Değişiklikleri kaydet"
   },
   "options_session_status_label": {
     "message": "Seans durumu"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Listeler kaydedilemedi. Sayfayı yeniden yükleyip tekrar dene."
+  },
+  "options_autosave_saving": {
+    "message": "Kaydediliyor"
+  },
+  "options_autosave_saved": {
+    "message": "Kaydedildi"
+  },
+  "options_autosave_failed": {
+    "message": "Kaydedilmedi"
+  },
+  "options_pending_waiting": {
+    "message": "Tam kilidin bitmesi bekleniyor: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Bu değişiklikten vazgeç"
+  },
+  "options_pending_value_on": {
+    "message": "açık"
+  },
+  "options_pending_value_off": {
+    "message": "kapalı"
   }
 }

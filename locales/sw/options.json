@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Inapakia mipangilio ya faragha"
   },
-  "options_save_failed": {
-    "message": "Imeshindwa kuhifadhi. Jaribu tena."
-  },
   "options_blocking_heading": {
     "message": "Zuiaing"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Futa data yote ya Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Inahifadhi mabadiliko"
-  },
-  "options_dirty_unsaved": {
-    "message": "Mabadiliko yasiyohifadhiwa"
-  },
-  "options_dirty_clean": {
-    "message": "Hakuna mabadiliko yasiyohifadhiwa"
-  },
-  "options_dirty_discard": {
-    "message": "Tanua mabadiliko"
-  },
-  "options_dirty_save": {
-    "message": "Hifadhi mabadiliko"
   },
   "options_session_status_label": {
     "message": "Kikao status"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Imeshindwa kuhifadhi orodha. Pakia upya ukurasa na ujaribu tena."
+  },
+  "options_autosave_saving": {
+    "message": "Inahifadhi"
+  },
+  "options_autosave_saved": {
+    "message": "Imehifadhiwa"
+  },
+  "options_autosave_failed": {
+    "message": "Haijahifadhiwa"
+  },
+  "options_pending_waiting": {
+    "message": "Inasubiri ngumu lock kumalizika: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Ghairi mabadiliko haya"
+  },
+  "options_pending_value_on": {
+    "message": "imewashwa"
+  },
+  "options_pending_value_off": {
+    "message": "imezimwa"
   }
 }

@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "加载隐私设置中"
   },
-  "options_save_failed": {
-    "message": "无法保存。请重试。"
-  },
   "options_blocking_heading": {
     "message": "阻止"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "删除所有 Focus Lock 数据"
-  },
-  "options_dirty_saving": {
-    "message": "保存更改中"
-  },
-  "options_dirty_unsaved": {
-    "message": "有未保存的更改"
-  },
-  "options_dirty_clean": {
-    "message": "没有未保存的更改"
-  },
-  "options_dirty_discard": {
-    "message": "放弃更改"
-  },
-  "options_dirty_save": {
-    "message": "保存更改"
   },
   "options_session_status_label": {
     "message": "会话状态"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "无法保存列表。重新加载页面并重试。"
+  },
+  "options_autosave_saving": {
+    "message": "正在保存"
+  },
+  "options_autosave_saved": {
+    "message": "已保存"
+  },
+  "options_autosave_failed": {
+    "message": "未保存"
+  },
+  "options_pending_waiting": {
+    "message": "等待强制锁定结束：$VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "取消此更改"
+  },
+  "options_pending_value_on": {
+    "message": "开启"
+  },
+  "options_pending_value_off": {
+    "message": "关闭"
   }
 }

@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Ja és la teva pestanya de treball.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Els canvis a les regles s'apliquen a l'instant."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Els canvis a les regles s'apliquen a l'instant. Només acabar abans d'hora té un cost."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Pots afegir bloquejos mentre s'executa. Les eliminacions esperen fins que acabi."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Les edicions a Configuració arriben a aquesta sessió tan bon punt les fas."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Les edicions a Configuració arriben a aquesta sessió tan bon punt les fas."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Les edicions a Configuració que afegeixen bloquejos arriben a aquesta sessió. Les que els eliminen esperen que acabi."
   }
 }

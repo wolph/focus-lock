@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Ez már a munkafüled.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "A szabályaid módosításai azonnal érvénybe lépnek."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "A szabályaid módosításai azonnal érvénybe lépnek. Csak a korai befejezésnek van ára."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Futás közben adhatsz hozzá blokkolásokat. Az eltávolítások a végéig várnak."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "A Beállításokban tett módosítások azonnal elérik ezt a menetet."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "A Beállításokban tett módosítások azonnal elérik ezt a menetet."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "A blokkolást hozzáadó beállításmódosítások elérik ezt a menetet. Az eltávolítók a menet végéig várnak."
   }
 }

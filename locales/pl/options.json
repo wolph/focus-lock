@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Wczytujemy ustawienia prywatności"
   },
-  "options_save_failed": {
-    "message": "Nie udało się zapisać. Spróbuj ponownie."
-  },
   "options_blocking_heading": {
     "message": "Blokowanie"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Usuń wszystkie dane Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Zapisujemy zmiany"
-  },
-  "options_dirty_unsaved": {
-    "message": "Niezapisane zmiany"
-  },
-  "options_dirty_clean": {
-    "message": "Brak niezapisanych zmian"
-  },
-  "options_dirty_discard": {
-    "message": "Odrzuć zmiany"
-  },
-  "options_dirty_save": {
-    "message": "Zapisz zmiany"
   },
   "options_session_status_label": {
     "message": "Stan sesji"
@@ -899,5 +881,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Zapisywanie"
+  },
+  "options_autosave_saved": {
+    "message": "Zapisano"
+  },
+  "options_autosave_failed": {
+    "message": "Nie zapisano"
+  },
+  "options_pending_waiting": {
+    "message": "Oczekiwanie na koniec twardej blokady: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Anuluj tę zmianę"
+  },
+  "options_pending_value_on": {
+    "message": "włączone"
+  },
+  "options_pending_value_off": {
+    "message": "wyłączone"
   }
 }

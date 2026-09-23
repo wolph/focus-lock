@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "This is already your work tab.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Changes to your rules apply at once."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Changes to your rules apply at once. Only ending early costs."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "You can add blocks while it runs. Removals wait until it ends."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Edits in Settings reach this session as you make them."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Edits in Settings reach this session as you make them."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Settings edits that add blocks reach this session. Ones that remove them wait for it to end."
   }
 }

@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Зареждане на настройките за поверителност"
   },
-  "options_save_failed": {
-    "message": "Неуспешен запис. Опитай отново."
-  },
   "options_blocking_heading": {
     "message": "Блокиране"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Изтрий всички данни на Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Запазване на промените"
-  },
-  "options_dirty_unsaved": {
-    "message": "Незапазени промени"
-  },
-  "options_dirty_clean": {
-    "message": "Няма незапазени промени"
-  },
-  "options_dirty_discard": {
-    "message": "Отхвърли промените"
-  },
-  "options_dirty_save": {
-    "message": "Запази промените"
   },
   "options_session_status_label": {
     "message": "Статус на сесията"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Неуспешен запис на списъците. Презареди страницата и опитай отново."
+  },
+  "options_autosave_saving": {
+    "message": "Запазване"
+  },
+  "options_autosave_saved": {
+    "message": "Запазено"
+  },
+  "options_autosave_failed": {
+    "message": "Незапазено"
+  },
+  "options_pending_waiting": {
+    "message": "Изчакване на края на твърдото заключване: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Отмени тази промяна"
+  },
+  "options_pending_value_on": {
+    "message": "включено"
+  },
+  "options_pending_value_off": {
+    "message": "изключено"
   }
 }

@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "ગોપનીયતા સેટિંગ્સ લોડ થઈ રહી છે"
   },
-  "options_save_failed": {
-    "message": "સાચવી શકાયું નહીં. ફરી પ્રયાસ કરો."
-  },
   "options_blocking_heading": {
     "message": "બ્લોકિંગ"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "બધો Focus Lock ડેટા કાઢી નાખો"
-  },
-  "options_dirty_saving": {
-    "message": "ફેરફારો સચવાઈ રહ્યા છે"
-  },
-  "options_dirty_unsaved": {
-    "message": "ન સચવાયેલા ફેરફારો"
-  },
-  "options_dirty_clean": {
-    "message": "કોઈ ન સચવાયેલા ફેરફારો નથી"
-  },
-  "options_dirty_discard": {
-    "message": "ફેરફારો કાઢી નાખો"
-  },
-  "options_dirty_save": {
-    "message": "ફેરફારો સાચવો"
   },
   "options_session_status_label": {
     "message": "સેશન સ્થિતિ"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "લિસ્ટ સાચવી શકાયા નહીં. પેજ રિલોડ કરો અને ફરી પ્રયાસ કરો."
+  },
+  "options_autosave_saving": {
+    "message": "સાચવી રહ્યાં છીએ"
+  },
+  "options_autosave_saved": {
+    "message": "સચવાયું"
+  },
+  "options_autosave_failed": {
+    "message": "સચવાયું નથી"
+  },
+  "options_pending_waiting": {
+    "message": "સખત લૉક સમાપ્ત થવાની રાહ જોઈ રહ્યાં છીએ: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "આ ફેરફાર રદ કરો"
+  },
+  "options_pending_value_on": {
+    "message": "ચાલુ"
+  },
+  "options_pending_value_off": {
+    "message": "બંધ"
   }
 }

@@ -691,5 +691,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "To już jest twoja karta robocza.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Zmiany w regułach obowiązują od razu."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Zmiany w regułach obowiązują od razu. Kosztuje tylko wcześniejsze zakończenie."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Możesz dodawać blokady, gdy sesja trwa. Usunięcia czekają, aż się skończy."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Zmiany w Ustawieniach trafiają do tej sesji od razu po ich wprowadzeniu."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Zmiany w Ustawieniach trafiają do tej sesji od razu po ich wprowadzeniu."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Zmiany w Ustawieniach, które dodają blokady, trafiają do tej sesji od razu. Te, które je usuwają, czekają, aż sesja się skończy."
   }
 }

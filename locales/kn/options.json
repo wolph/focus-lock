@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "ಗೌಪ್ಯತಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಲೋಡ್ ಆಗುತ್ತಿವೆ"
   },
-  "options_save_failed": {
-    "message": "ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
-  },
   "options_blocking_heading": {
     "message": "ಬ್ಲಾಕಿಂಗ್"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "ಎಲ್ಲಾ Focus Lock ಡೇಟಾವನ್ನು ಅಳಿಸಿ"
-  },
-  "options_dirty_saving": {
-    "message": "ಬದಲಾವಣೆಗಳು ಉಳಿಸಲಾಗುತ್ತಿದೆ"
-  },
-  "options_dirty_unsaved": {
-    "message": "ಉಳಿಸದ ಬದಲಾವಣೆಗಳು"
-  },
-  "options_dirty_clean": {
-    "message": "ಉಳಿಸದ ಬದಲಾವಣೆಗಳಿಲ್ಲ"
-  },
-  "options_dirty_discard": {
-    "message": "ಬದಲಾವಣೆಗಳನ್ನು ತಿರಸ್ಕರಿಸಿ"
-  },
-  "options_dirty_save": {
-    "message": "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ"
   },
   "options_session_status_label": {
     "message": "ಸೆಷನ್ ಸ್ಥಿತಿ"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "ಲಿಸ್ಟ್‌ಗಳನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪೇಜ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "options_autosave_saving": {
+    "message": "ಉಳಿಸುತ್ತಿದೆ"
+  },
+  "options_autosave_saved": {
+    "message": "ಉಳಿಸಲಾಗಿದೆ"
+  },
+  "options_autosave_failed": {
+    "message": "ಉಳಿಸಲಾಗಿಲ್ಲ"
+  },
+  "options_pending_waiting": {
+    "message": "ಕಠಿಣ ಲಾಕ್ ಮುಗಿಯುವುದನ್ನು ಕಾಯುತ್ತಿದೆ: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "ಈ ಬದಲಾವಣೆಯನ್ನು ರದ್ದುಮಾಡಿ"
+  },
+  "options_pending_value_on": {
+    "message": "ಆನ್"
+  },
+  "options_pending_value_off": {
+    "message": "ಆಫ್"
   }
 }

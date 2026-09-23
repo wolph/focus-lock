@@ -691,5 +691,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Tai jau tavo darbo kortelė.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Taisyklių pakeitimai pritaikomi iš karto."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Taisyklių pakeitimai pritaikomi iš karto. Kainuoja tik ankstyvas baigimas."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Kol sesija vyksta, gali pridėti naujų blokavimo taisyklių. Jų pašalinimas laukia, kol sesija baigsis."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Nustatymuose atliekami pakeitimai pasiekia šią sesiją iš karto."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Nustatymuose atliekami pakeitimai pasiekia šią sesiją iš karto."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Nustatymų pakeitimai, pridedantys blokavimo taisyklių, pasiekia šią sesiją iš karto. Juos šalinantys pakeitimai laukia, kol sesija baigsis."
   }
 }

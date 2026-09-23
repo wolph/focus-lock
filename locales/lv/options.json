@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Ielādē privātuma iestatījumus"
   },
-  "options_save_failed": {
-    "message": "Neizdevās saglabāt. Mēģini vēlreiz."
-  },
   "options_blocking_heading": {
     "message": "Bloķēšana"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Dzēst visus Focus Lock datus"
-  },
-  "options_dirty_saving": {
-    "message": "Izmaiņas tiek saglabātas"
-  },
-  "options_dirty_unsaved": {
-    "message": "Nesaglabātas izmaiņas"
-  },
-  "options_dirty_clean": {
-    "message": "Nav nesaglabātu izmaiņu"
-  },
-  "options_dirty_discard": {
-    "message": "Atmest izmaiņas"
-  },
-  "options_dirty_save": {
-    "message": "Saglabāt izmaiņas"
   },
   "options_session_status_label": {
     "message": "Sesijas statuss"
@@ -872,5 +854,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Saglabā"
+  },
+  "options_autosave_saved": {
+    "message": "Saglabāts"
+  },
+  "options_autosave_failed": {
+    "message": "Nav saglabāts"
+  },
+  "options_pending_waiting": {
+    "message": "Gaida, kad beigsies stingrā bloķēšana: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Atcelt šo izmaiņu"
+  },
+  "options_pending_value_on": {
+    "message": "ieslēgts"
+  },
+  "options_pending_value_off": {
+    "message": "izslēgts"
   }
 }

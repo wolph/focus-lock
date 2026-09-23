@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Chargement des réglages de confidentialité"
   },
-  "options_save_failed": {
-    "message": "Impossible d'enregistrer. Réessaie."
-  },
   "options_blocking_heading": {
     "message": "Blocage"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Supprimer toutes les données Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Enregistrement des modifications"
-  },
-  "options_dirty_unsaved": {
-    "message": "Modifications non enregistrées"
-  },
-  "options_dirty_clean": {
-    "message": "Aucune modification non enregistrée"
-  },
-  "options_dirty_discard": {
-    "message": "Annuler les modifications"
-  },
-  "options_dirty_save": {
-    "message": "Enregistrer les modifications"
   },
   "options_session_status_label": {
     "message": "État de la session"
@@ -872,5 +854,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Enregistrement"
+  },
+  "options_autosave_saved": {
+    "message": "Enregistré"
+  },
+  "options_autosave_failed": {
+    "message": "Non enregistré"
+  },
+  "options_pending_waiting": {
+    "message": "En attente de la fin du verrouillage strict : $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Annuler cette modification"
+  },
+  "options_pending_value_on": {
+    "message": "activé"
+  },
+  "options_pending_value_off": {
+    "message": "désactivé"
   }
 }

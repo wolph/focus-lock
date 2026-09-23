@@ -182,7 +182,7 @@
     "message": "Focus Lock 无法完成浏览器清理。打开弹出窗口并重试。"
   },
   "shared_settings_session_disclosure": {
-    "message": "工具栏弹出窗口拥有会话控制。活跃会话保留它启动时捕获的规则。"
+    "message": "工具栏弹出窗口拥有会话控制。你做出更改后会立即送达正在运行的会话，强制锁定除外：它会将任何解除阻止的操作扣留到结束为止。"
   },
   "shared_settings_timed": {
     "message": "计时会话处于活跃状态直到 $TIME$。它将自动结束。使用工具栏弹出窗口获取实时状态。",

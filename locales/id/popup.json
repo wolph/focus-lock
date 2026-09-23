@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Ini sudah jadi tab kerjamu.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Perubahan pada aturanmu langsung berlaku."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Perubahan pada aturanmu langsung berlaku. Hanya mengakhiri lebih awal yang berbiaya."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Kamu bisa menambah blokir saat sesi berjalan. Penghapusan menunggu hingga sesi berakhir."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Perubahan di Pengaturan langsung sampai ke sesi ini saat kamu membuatnya."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Perubahan di Pengaturan langsung sampai ke sesi ini saat kamu membuatnya."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Perubahan Pengaturan yang menambah blokir langsung sampai ke sesi ini. Yang menghapusnya menunggu hingga sesi berakhir."
   }
 }

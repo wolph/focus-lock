@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Det här är redan din arbetsflik.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Ändringar av dina regler gäller direkt."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Ändringar av dina regler gäller direkt. Bara att avsluta i förtid kostar."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Du kan lägga till blockerade regler medan det pågår. Borttagningar väntar tills det tar slut."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Ändringar i Inställningar når det här passet så snart du gör dem."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Ändringar i Inställningar når det här passet så snart du gör dem."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Ändringar i Inställningar som lägger till blockerade regler når det här passet. De som tar bort dem väntar tills det tar slut."
   }
 }

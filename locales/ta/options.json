@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "தனியுரிமை அமைப்புகள் ஏற்றப்படுகின்றன"
   },
-  "options_save_failed": {
-    "message": "சேமிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
-  },
   "options_blocking_heading": {
     "message": "தடுப்பு"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "அனைத்து Focus Lock தரவையும் நீக்கு"
-  },
-  "options_dirty_saving": {
-    "message": "மாற்றங்கள் சேமிக்கப்படுகின்றன"
-  },
-  "options_dirty_unsaved": {
-    "message": "சேமிக்கப்படாத மாற்றங்கள்"
-  },
-  "options_dirty_clean": {
-    "message": "சேமிக்கப்படாத மாற்றங்கள் இல்லை"
-  },
-  "options_dirty_discard": {
-    "message": "மாற்றங்களை நிராகரி"
-  },
-  "options_dirty_save": {
-    "message": "மாற்றங்களைச் சேமி"
   },
   "options_session_status_label": {
     "message": "அமர்வு நிலை"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "பட்டியல்களைச் சேமிக்க முடியவில்லை. பக்கத்தை மீண்டும் ஏற்றி மீண்டும் முயற்சிக்கவும்."
+  },
+  "options_autosave_saving": {
+    "message": "சேமிக்கிறது"
+  },
+  "options_autosave_saved": {
+    "message": "சேமிக்கப்பட்டது"
+  },
+  "options_autosave_failed": {
+    "message": "சேமிக்கப்படவில்லை"
+  },
+  "options_pending_waiting": {
+    "message": "கடும் பூட்டு முடியும் வரை காத்திருக்கிறது: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "இந்த மாற்றத்தை ரத்துசெய்"
+  },
+  "options_pending_value_on": {
+    "message": "இயக்கத்தில்"
+  },
+  "options_pending_value_off": {
+    "message": "முடக்கத்தில்"
   }
 }

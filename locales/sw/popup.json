@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Hiki tayari ni kichupo chako cha kazi.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Mabadiliko ya kanuni zako yanatumika mara moja."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Mabadiliko ya kanuni zako yanatumika mara moja. Ni kumaliza mapema tu kunagharimu."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Unaweza kuongeza kanuni za kuzuia wakati kinaendelea. Kuziondoa kunasubiri mpaka kiishe."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Mabadiliko katika Mipango yanafika kwenye kikao hiki mara tu unapoyafanya."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Mabadiliko katika Mipango yanafika kwenye kikao hiki mara tu unapoyafanya."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Mabadiliko ya Mipango yanayoongeza kanuni za kuzuia yanafika kwenye kikao hiki. Yanayoziondoa yanasubiri mpaka kiishe."
   }
 }

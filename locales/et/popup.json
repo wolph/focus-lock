@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "See on juba sinu töö vahekaart.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Sinu reeglite muudatused rakenduvad kohe."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Sinu reeglite muudatused rakenduvad kohe. Ainult enneaegne lõpetamine maksab."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Töö ajal saad lisada blokeeringuid. Eemaldamised ootavad, kuni see lõpeb."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Seadete muudatused jõuavad selle seansini kohe, kui need teed."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Seadete muudatused jõuavad selle seansini kohe, kui need teed."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Seadete muudatused, mis lisavad blokeeringuid, jõuavad selle seansini. Need, mis need eemaldavad, ootavad, kuni seanss lõpeb."
   }
 }

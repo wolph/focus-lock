@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "در حال بارگذاری تنظیمات حریم خصوصی"
   },
-  "options_save_failed": {
-    "message": "ذخیره نشد. دوباره تلاش کنید."
-  },
   "options_blocking_heading": {
     "message": "مسدودسازی"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "حذف همه داده‌های Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "در حال ذخیره تغییرات"
-  },
-  "options_dirty_unsaved": {
-    "message": "تغییرات ذخیره‌نشده"
-  },
-  "options_dirty_clean": {
-    "message": "تغییر ذخیره‌نشده‌ای نیست"
-  },
-  "options_dirty_discard": {
-    "message": "نادیده گرفتن تغییرات"
-  },
-  "options_dirty_save": {
-    "message": "ذخیره تغییرات"
   },
   "options_session_status_label": {
     "message": "وضعیت جلسه"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "فهرست‌ها ذخیره نشد. صفحه را بارگذاری مجدد کنید و دوباره تلاش کنید."
+  },
+  "options_autosave_saving": {
+    "message": "در حال ذخیره"
+  },
+  "options_autosave_saved": {
+    "message": "ذخیره شد"
+  },
+  "options_autosave_failed": {
+    "message": "ذخیره نشد"
+  },
+  "options_pending_waiting": {
+    "message": "در انتظار پایان قفل سخت‌گیرانه: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "لغو این تغییر"
+  },
+  "options_pending_value_on": {
+    "message": "روشن"
+  },
+  "options_pending_value_off": {
+    "message": "خاموش"
   }
 }

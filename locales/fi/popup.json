@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Tämä on jo työvälilehtesi.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Sääntömuutokset tulevat voimaan heti."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Sääntömuutokset tulevat voimaan heti. Vain aikainen lopetus maksaa."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Voit lisätä estoja sen aikana. Poistot odottavat sen päättymistä."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Asetuksissa tehdyt muutokset tulevat tähän jaksoon heti."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Asetuksissa tehdyt muutokset tulevat tähän jaksoon heti."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Asetusmuutokset, jotka lisäävät estoja, tulevat tähän jaksoon. Ne, jotka poistavat niitä, odottavat sen päättymistä."
   }
 }

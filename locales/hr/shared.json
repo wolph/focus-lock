@@ -182,7 +182,7 @@
     "message": "Focus Lock nije mogao dovršiti čišćenje preglednika. Otvori skočni prozor i pokušaj ponovno."
   },
   "shared_settings_session_disclosure": {
-    "message": "Skočni prozor u alatnoj traci upravlja sesijom. Aktivna sesija zadržava pravila zabilježena pri pokretanju."
+    "message": "Skočni prozor u alatnoj traci upravlja sesijom. Tvoje promjene stižu do sesije koja je u tijeku čim ih napraviš, osim kod teškog zaključavanja, koje zadržava sve što deblokira dok sesija ne završi."
   },
   "shared_settings_timed": {
     "message": "Vremenski ograničena sesija aktivna je do $TIME$. Završava sama. Za stanje uživo koristi skočni prozor u alatnoj traci.",

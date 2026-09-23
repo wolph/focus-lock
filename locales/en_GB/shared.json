@@ -182,7 +182,7 @@
     "message": "Focus Lock could not finish browser cleanup. Open the popup and retry."
   },
   "shared_settings_session_disclosure": {
-    "message": "The toolbar popup owns session controls. The active session keeps the rules captured when it started."
+    "message": "The toolbar popup owns session controls. Your changes reach the running session as you make them, except a hard lock, which holds anything that unblocks until it ends."
   },
   "shared_settings_timed": {
     "message": "Timed session active until $TIME$. It ends automatically. Use the toolbar popup for live status.",

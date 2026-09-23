@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "ఇది ఇప్పటికే మీ పని ట్యాబ్.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "మీ నియమాలలో మార్పులు వెంటనే వర్తిస్తాయి."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "మీ నియమాలలో మార్పులు వెంటనే వర్తిస్తాయి. ముందుగా ముగించడానికి మాత్రమే ఖర్చు అవుతుంది."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "ఇది నడుస్తున్నప్పుడు మీరు బ్లాక్ చేసిన నియమాలను జోడించవచ్చు. తీసివేతలు అది ముగిసే వరకు వేచి ఉంటాయి."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "సెట్టింగ్‌లలోని మార్పులు మీరు వాటిని చేసిన వెంటనే ఈ సెషన్‌కు చేరతాయి."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "సెట్టింగ్‌లలోని మార్పులు మీరు వాటిని చేసిన వెంటనే ఈ సెషన్‌కు చేరతాయి."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "బ్లాక్ చేసిన నియమాలను జోడించే సెట్టింగ్‌ల మార్పులు ఈ సెషన్‌కు చేరతాయి. వాటిని తీసివేసేవి అది ముగిసే వరకు వేచి ఉంటాయి."
   }
 }

@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "개인정보 보호 설정 로드 중"
   },
-  "options_save_failed": {
-    "message": "저장할 수 없습니다. 다시 시도하십시오."
-  },
   "options_blocking_heading": {
     "message": "차단"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "모든 Focus Lock 데이터 삭제"
-  },
-  "options_dirty_saving": {
-    "message": "변경 사항 저장 중"
-  },
-  "options_dirty_unsaved": {
-    "message": "저장하지 않은 변경 사항"
-  },
-  "options_dirty_clean": {
-    "message": "저장하지 않은 변경 사항 없음"
-  },
-  "options_dirty_discard": {
-    "message": "변경 사항 취소"
-  },
-  "options_dirty_save": {
-    "message": "변경 사항 저장"
   },
   "options_session_status_label": {
     "message": "세션 상태"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "목록을 저장할 수 없습니다. 페이지를 다시로드하고 다시 시도하십시오."
+  },
+  "options_autosave_saving": {
+    "message": "저장 중"
+  },
+  "options_autosave_saved": {
+    "message": "저장됨"
+  },
+  "options_autosave_failed": {
+    "message": "저장되지 않음"
+  },
+  "options_pending_waiting": {
+    "message": "하드 잠금이 끝나길 기다리는 중: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "이 변경 취소"
+  },
+  "options_pending_value_on": {
+    "message": "켜짐"
+  },
+  "options_pending_value_off": {
+    "message": "꺼짐"
   }
 }

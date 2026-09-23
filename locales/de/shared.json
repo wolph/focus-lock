@@ -182,7 +182,7 @@
     "message": "Focus Lock konnte das Browser-Aufräumen nicht abschließen. Öffne das Pop-up und versuch es erneut."
   },
   "shared_settings_session_disclosure": {
-    "message": "Die Sitzungssteuerung liegt im Symbolleisten-Pop-up. Die aktive Sitzung behält die Regeln von ihrem Start."
+    "message": "Die Sitzungssteuerung liegt im Symbolleisten-Pop-up. Deine Änderungen erreichen die laufende Sitzung, sobald du sie vornimmst, außer bei einer harten Sperre: Sie hält alles zurück, was entsperrt, bis sie endet."
   },
   "shared_settings_timed": {
     "message": "Sitzung mit Timer aktiv bis $TIME$. Sie endet automatisch. Nutze das Symbolleisten-Pop-up für den aktuellen Status.",

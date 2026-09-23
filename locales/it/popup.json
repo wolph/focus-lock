@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "È già la tua scheda di lavoro.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Le modifiche alle tue regole si applicano subito."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Le modifiche alle tue regole si applicano subito. Solo terminare in anticipo ha un costo."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Puoi aggiungere blocchi mentre è in corso. Le rimozioni aspettano la sua fine."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Le modifiche fatte in Impostazioni raggiungono questa sessione non appena le fai."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Le modifiche fatte in Impostazioni raggiungono questa sessione non appena le fai."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Le modifiche alle Impostazioni che aggiungono blocchi raggiungono questa sessione. Quelle che li rimuovono aspettano la sua fine."
   }
 }

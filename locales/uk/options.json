@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Завантажуємо налаштування приватності"
   },
-  "options_save_failed": {
-    "message": "Не вдалося зберегти. Спробуй ще раз."
-  },
   "options_blocking_heading": {
     "message": "Блокування"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Видалити всі дані Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Зберігаємо зміни"
-  },
-  "options_dirty_unsaved": {
-    "message": "Незбережені зміни"
-  },
-  "options_dirty_clean": {
-    "message": "Незбережених змін немає"
-  },
-  "options_dirty_discard": {
-    "message": "Скасувати зміни"
-  },
-  "options_dirty_save": {
-    "message": "Зберегти зміни"
   },
   "options_session_status_label": {
     "message": "Стан сесії"
@@ -899,5 +881,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Зберігається"
+  },
+  "options_autosave_saved": {
+    "message": "Збережено"
+  },
+  "options_autosave_failed": {
+    "message": "Не збережено"
+  },
+  "options_pending_waiting": {
+    "message": "Очікування завершення жорсткого блокування: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Скасувати цю зміну"
+  },
+  "options_pending_value_on": {
+    "message": "увімкнено"
+  },
+  "options_pending_value_off": {
+    "message": "вимкнено"
   }
 }

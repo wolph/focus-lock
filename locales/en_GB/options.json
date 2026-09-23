@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Loading privacy settings"
   },
-  "options_save_failed": {
-    "message": "Could not save. Try again."
-  },
   "options_blocking_heading": {
     "message": "Blocking"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Delete all Focus Lock data"
-  },
-  "options_dirty_saving": {
-    "message": "Saving changes"
-  },
-  "options_dirty_unsaved": {
-    "message": "Unsaved changes"
-  },
-  "options_dirty_clean": {
-    "message": "No unsaved changes"
-  },
-  "options_dirty_discard": {
-    "message": "Discard changes"
-  },
-  "options_dirty_save": {
-    "message": "Save changes"
   },
   "options_session_status_label": {
     "message": "Session status"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Could not save lists. Reload the page and try again."
+  },
+  "options_autosave_saving": {
+    "message": "Saving"
+  },
+  "options_autosave_saved": {
+    "message": "Saved"
+  },
+  "options_autosave_failed": {
+    "message": "Not saved"
+  },
+  "options_pending_waiting": {
+    "message": "Waiting for the hard lock to end: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Cancel this change"
+  },
+  "options_pending_value_on": {
+    "message": "on"
+  },
+  "options_pending_value_off": {
+    "message": "off"
   }
 }

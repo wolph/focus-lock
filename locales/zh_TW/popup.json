@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "這已經是你的工作頁籤了。",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "規則的變更會立即套用。"
+  },
+  "popup_session_type_friction_edits": {
+    "message": "規則的變更會立即套用。只有提前結束才需要付出代價。"
+  },
+  "popup_session_type_hard_edits": {
+    "message": "執行期間可以新增封鎖規則。移除則要等到結束才會生效。"
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "你在設定中做出的變更會立即送達這個工作階段。"
+  },
+  "popup_scope_strictness_friction": {
+    "message": "你在設定中做出的變更會立即送達這個工作階段。"
+  },
+  "popup_scope_strictness_hard": {
+    "message": "在設定中新增封鎖規則的變更會送達這個工作階段。移除封鎖規則的變更則要等到工作階段結束才會送達。"
   }
 }

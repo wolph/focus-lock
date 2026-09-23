@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Esta já é sua aba de trabalho.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "As mudanças nas suas regras valem na hora."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "As mudanças nas suas regras valem na hora. Só custa encerrar antes."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Você pode adicionar bloqueios enquanto ela está em andamento. As remoções esperam até ela terminar."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "As alterações em Configurações chegam a esta sessão assim que você as faz."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "As alterações em Configurações chegam a esta sessão assim que você as faz."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Alterações em Configurações que adicionam bloqueios chegam a esta sessão na hora. As que os removem esperam até ela terminar."
   }
 }

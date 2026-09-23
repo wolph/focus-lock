@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Se încarcă setările de confidențialitate"
   },
-  "options_save_failed": {
-    "message": "Salvarea nu a reușit. Încearcă din nou."
-  },
   "options_blocking_heading": {
     "message": "Blocare"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Șterge toate datele Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Se salvează modificările"
-  },
-  "options_dirty_unsaved": {
-    "message": "Modificări nesalvate"
-  },
-  "options_dirty_clean": {
-    "message": "Nicio modificare nesalvată"
-  },
-  "options_dirty_discard": {
-    "message": "Renunță la modificări"
-  },
-  "options_dirty_save": {
-    "message": "Salvează modificările"
   },
   "options_session_status_label": {
     "message": "Starea sesiunii"
@@ -872,5 +854,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Se salvează"
+  },
+  "options_autosave_saved": {
+    "message": "Salvat"
+  },
+  "options_autosave_failed": {
+    "message": "Nesalvat"
+  },
+  "options_pending_waiting": {
+    "message": "Se așteaptă încheierea blocării stricte: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Anulează această modificare"
+  },
+  "options_pending_value_on": {
+    "message": "activat"
+  },
+  "options_pending_value_off": {
+    "message": "dezactivat"
   }
 }

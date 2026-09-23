@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Aceasta este deja fila ta de lucru.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Modificările regulilor tale se aplică imediat."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Modificările regulilor tale se aplică imediat. Doar încheierea mai devreme costă."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Poți adăuga blocări cât timp rulează. Eliminările așteaptă până se încheie."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Modificările din Setări ajung la această sesiune imediat ce le faci."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Modificările din Setări ajung la această sesiune imediat ce le faci."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Modificările din Setări care adaugă blocări ajung la această sesiune imediat. Cele care le elimină așteaptă până se încheie."
   }
 }

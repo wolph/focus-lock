@@ -182,7 +182,7 @@
     "message": "Focus Lock 無法完成瀏覽器清理。開啟快顯視窗並重試。"
   },
   "shared_settings_session_disclosure": {
-    "message": "工具列快顯視窗擁有工作階段控制。活躍工作階段保留啟動時擷取的規則。"
+    "message": "工具列快顯視窗擁有工作階段控制。你做出變更後會立即送達執行中的工作階段，強制鎖定除外：它會將任何解除封鎖的操作扣留到結束為止。"
   },
   "shared_settings_timed": {
     "message": "計時工作階段直到 $TIME$ 為止有效。它會自動結束。使用工具列快顯視窗以取得即時狀態。",

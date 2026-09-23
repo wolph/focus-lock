@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Privaatsusseadete laadimine"
   },
-  "options_save_failed": {
-    "message": "Salvestamine ebaõnnestus. Proovi uuesti."
-  },
   "options_blocking_heading": {
     "message": "Blokeerimine"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Kustuta kõik Focus Locki andmed"
-  },
-  "options_dirty_saving": {
-    "message": "Muudatuste salvestamine"
-  },
-  "options_dirty_unsaved": {
-    "message": "Salvestamata muudatused"
-  },
-  "options_dirty_clean": {
-    "message": "Salvestamata muudatusi ei ole"
-  },
-  "options_dirty_discard": {
-    "message": "Loobu muudatustest"
-  },
-  "options_dirty_save": {
-    "message": "Salvesta muudatused"
   },
   "options_session_status_label": {
     "message": "Seansi olek"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Nimekirjade salvestamine ebaõnnestus. Värskenda lehte ja proovi uuesti."
+  },
+  "options_autosave_saving": {
+    "message": "Salvestamine"
+  },
+  "options_autosave_saved": {
+    "message": "Salvestatud"
+  },
+  "options_autosave_failed": {
+    "message": "Salvestamata"
+  },
+  "options_pending_waiting": {
+    "message": "Ootab range luku lõppu: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Tühista see muudatus"
+  },
+  "options_pending_value_on": {
+    "message": "sees"
+  },
+  "options_pending_value_off": {
+    "message": "väljas"
   }
 }

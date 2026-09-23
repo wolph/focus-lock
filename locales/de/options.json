@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Datenschutzeinstellungen werden geladen"
   },
-  "options_save_failed": {
-    "message": "Speichern fehlgeschlagen. Versuch es erneut."
-  },
   "options_blocking_heading": {
     "message": "Sperren"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Alle Focus-Lock-Daten löschen"
-  },
-  "options_dirty_saving": {
-    "message": "Änderungen werden gespeichert"
-  },
-  "options_dirty_unsaved": {
-    "message": "Nicht gespeicherte Änderungen"
-  },
-  "options_dirty_clean": {
-    "message": "Keine ungespeicherten Änderungen"
-  },
-  "options_dirty_discard": {
-    "message": "Änderungen verwerfen"
-  },
-  "options_dirty_save": {
-    "message": "Änderungen speichern"
   },
   "options_session_status_label": {
     "message": "Sitzungsstatus"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Die Listen konnten nicht gespeichert werden. Lade die Seite neu und versuch es erneut."
+  },
+  "options_autosave_saving": {
+    "message": "Wird gespeichert"
+  },
+  "options_autosave_saved": {
+    "message": "Gespeichert"
+  },
+  "options_autosave_failed": {
+    "message": "Nicht gespeichert"
+  },
+  "options_pending_waiting": {
+    "message": "Warten, bis die harte Sperre endet: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Diese Änderung abbrechen"
+  },
+  "options_pending_value_on": {
+    "message": "ein"
+  },
+  "options_pending_value_off": {
+    "message": "aus"
   }
 }

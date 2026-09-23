@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Šī jau ir tava darba cilne.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Izmaiņas noteikumos stājas spēkā uzreiz."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Izmaiņas noteikumos stājas spēkā uzreiz. Maksā tikai priekšlaicīga beigšana."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Kamēr sesija norit, vari pievienot jaunus bloķējumus. To noņemšana gaida, kad sesija beigsies."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Izmaiņas Iestatījumos uzreiz sasniedz šo sesiju."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Izmaiņas Iestatījumos uzreiz sasniedz šo sesiju."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Iestatījumu izmaiņas, kas pievieno bloķējumus, sasniedz šo sesiju uzreiz. Tās, kas tos noņem, gaida, kad sesija beigsies."
   }
 }

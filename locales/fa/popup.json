@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "این همین حالا زبانه کار شماست.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "تغییرات قوانین شما بلافاصله اعمال می‌شوند."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "تغییرات قوانین شما بلافاصله اعمال می‌شوند. فقط پایان دادن زودهنگام هزینه دارد."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "در حین اجرا می‌توانید مسدودسازی اضافه کنید. حذف‌ها تا پایان آن منتظر می‌مانند."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "تغییرات در تنظیمات بلافاصله به این جلسه می‌رسند."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "تغییرات در تنظیمات بلافاصله به این جلسه می‌رسند."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "تغییرات تنظیمات که مسدودی اضافه می‌کنند به این جلسه می‌رسند. آن‌هایی که حذف می‌کنند تا پایان جلسه منتظر می‌مانند."
   }
 }

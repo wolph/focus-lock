@@ -356,7 +356,7 @@ test('popup daily states keep help and long rules contained at native width', as
   const flexible: Locator = extPage.getByRole('button', { name: 'Flexible' });
   await flexible.hover();
   await expect(extPage.getByRole('tooltip')).toHaveText(
-    'End the session immediately whenever you choose.',
+    'End the session immediately whenever you choose. Changes to your rules apply at once.',
   );
   await expectWithinViewport(extPage.getByRole('tooltip'));
   await extPage.mouse.move(0, 0);
@@ -368,7 +368,7 @@ test('popup daily states keep help and long rules contained at native width', as
     .getByRole('tooltip')
     .filter({ hasText: 'Ending early requires a 10-second wait' });
   await expect(frictionTooltip).toHaveText(
-    'Ending early requires a 10-second wait. No typing is required.',
+    'Ending early requires a 10-second wait. No typing is required. Changes to your rules apply at once. Only ending early costs.',
   );
   await expectWithinViewport(frictionTooltip);
   await captureTask7Evidence(extPage, 'production-popup-friction-focus-340-full');
@@ -381,7 +381,7 @@ test('popup daily states keep help and long rules contained at native width', as
     .getByRole('tooltip')
     .filter({ hasText: 'The session cannot end early' });
   await expect(hardTooltip).toHaveText(
-    'The session cannot end early. Site access credit still works.',
+    'The session cannot end early. Site access credit still works. You can add blocks while it runs. Removals wait until it ends.',
   );
   await expectWithinViewport(hardTooltip);
   await extPage.keyboard.press('Escape');

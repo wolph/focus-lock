@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "இது ஏற்கனவே உங்கள் பணி தாவல்.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "உங்கள் விதிகளில் மாற்றங்கள் உடனடியாக நடைமுறைக்கு வரும்."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "உங்கள் விதிகளில் மாற்றங்கள் உடனடியாக நடைமுறைக்கு வரும். முன்கூட்டியே முடிப்பது மட்டுமே செலவாகும்."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "இது இயங்கும்போது தடுக்கப்பட்ட விதிகளைச் சேர்க்கலாம். நீக்குதல்கள் அது முடியும் வரை காத்திருக்கும்."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "நீங்கள் செய்யும்போதே அமைப்புகளில் செய்யும் மாற்றங்கள் இந்த அமர்வை சென்றடையும்."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "நீங்கள் செய்யும்போதே அமைப்புகளில் செய்யும் மாற்றங்கள் இந்த அமர்வை சென்றடையும்."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "தடுக்கப்பட்ட விதிகளைச் சேர்க்கும் அமைப்புகள் மாற்றங்கள் இந்த அமர்வை சென்றடையும். அவற்றை நீக்குபவை அது முடியும் வரை காத்திருக்கும்."
   }
 }

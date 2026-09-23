@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Este já é o teu separador de trabalho.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "As alterações às tuas regras aplicam-se de imediato."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "As alterações às tuas regras aplicam-se de imediato. Só acabar mais cedo tem custo."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Podes adicionar bloqueios enquanto decorre. As remoções esperam até acabar."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "As alterações nas Definições chegam a esta sessão assim que as fazes."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "As alterações nas Definições chegam a esta sessão assim que as fazes."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "As alterações nas Definições que adicionam bloqueios chegam a esta sessão de imediato. As que os removem esperam até a sessão acabar."
   }
 }

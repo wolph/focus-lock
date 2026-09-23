@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "กำลังโหลดการตั้งค่าความเป็นส่วนตัว"
   },
-  "options_save_failed": {
-    "message": "บันทึกไม่สำเร็จ ลองอีกครั้ง"
-  },
   "options_blocking_heading": {
     "message": "การบล็อก"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "ลบข้อมูล Focus Lock ทั้งหมด"
-  },
-  "options_dirty_saving": {
-    "message": "กำลังบันทึกการเปลี่ยนแปลง"
-  },
-  "options_dirty_unsaved": {
-    "message": "มีการเปลี่ยนแปลงที่ยังไม่บันทึก"
-  },
-  "options_dirty_clean": {
-    "message": "ไม่มีการเปลี่ยนแปลงที่ยังไม่บันทึก"
-  },
-  "options_dirty_discard": {
-    "message": "ละทิ้งการเปลี่ยนแปลง"
-  },
-  "options_dirty_save": {
-    "message": "บันทึกการเปลี่ยนแปลง"
   },
   "options_session_status_label": {
     "message": "สถานะเซสชัน"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "บันทึกรายการไม่สำเร็จ โหลดหน้าใหม่แล้วลองอีกครั้ง"
+  },
+  "options_autosave_saving": {
+    "message": "กำลังบันทึก"
+  },
+  "options_autosave_saved": {
+    "message": "บันทึกแล้ว"
+  },
+  "options_autosave_failed": {
+    "message": "บันทึกไม่สำเร็จ"
+  },
+  "options_pending_waiting": {
+    "message": "รอให้ล็อกเข้มงวดสิ้นสุด: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "ยกเลิกการเปลี่ยนแปลงนี้"
+  },
+  "options_pending_value_on": {
+    "message": "เปิด"
+  },
+  "options_pending_value_off": {
+    "message": "ปิด"
   }
 }

@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "സ്വകാര്യതാ ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യുന്നു"
   },
-  "options_save_failed": {
-    "message": "സേവ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
-  },
   "options_blocking_heading": {
     "message": "ബ്ലോക്കിംഗ്"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "എല്ലാ Focus Lock ഡാറ്റയും ഇല്ലാതാക്കുക"
-  },
-  "options_dirty_saving": {
-    "message": "മാറ്റങ്ങൾ സേവ് ചെയ്യുന്നു"
-  },
-  "options_dirty_unsaved": {
-    "message": "സേവ് ചെയ്യാത്ത മാറ്റങ്ങൾ"
-  },
-  "options_dirty_clean": {
-    "message": "സേവ് ചെയ്യാത്ത മാറ്റങ്ങളില്ല"
-  },
-  "options_dirty_discard": {
-    "message": "മാറ്റങ്ങൾ ഒഴിവാക്കുക"
-  },
-  "options_dirty_save": {
-    "message": "മാറ്റങ്ങൾ സംരക്ഷിക്കുക"
   },
   "options_session_status_label": {
     "message": "സെഷൻ നില"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "പട്ടികകൾ സേവ് ചെയ്യാനായില്ല. പേജ് റീലോഡ് ചെയ്ത് വീണ്ടും ശ്രമിക്കുക."
+  },
+  "options_autosave_saving": {
+    "message": "സേവ് ചെയ്യുന്നു"
+  },
+  "options_autosave_saved": {
+    "message": "സേവ് ചെയ്തു"
+  },
+  "options_autosave_failed": {
+    "message": "സേവ് ചെയ്തില്ല"
+  },
+  "options_pending_waiting": {
+    "message": "കഠിനമായ ലോക്ക് അവസാനിക്കുന്നത് വരെ കാത്തിരിക്കുന്നു: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "ഈ മാറ്റം റദ്ദാക്കുക"
+  },
+  "options_pending_value_on": {
+    "message": "ഓൺ"
+  },
+  "options_pending_value_off": {
+    "message": "ഓഫ്"
   }
 }

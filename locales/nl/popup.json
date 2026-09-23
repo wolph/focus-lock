@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Dit is al je werktabblad.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Wijzigingen in je regels gelden meteen."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Wijzigingen in je regels gelden meteen. Alleen vroeg stoppen kost iets."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Je kunt blokkades toevoegen terwijl de sessie loopt. Verwijderingen wachten tot ze eindigt."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Wijzigingen in Instellingen bereiken deze sessie zodra je ze maakt."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Wijzigingen in Instellingen bereiken deze sessie zodra je ze maakt."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Wijzigingen in Instellingen die blokkades toevoegen, bereiken deze sessie meteen. Wijzigingen die ze verwijderen, wachten tot de sessie eindigt."
   }
 }

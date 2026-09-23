@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Учитавање подешавања приватности"
   },
-  "options_save_failed": {
-    "message": "Чување није успело. Покушај поново."
-  },
   "options_blocking_heading": {
     "message": "Блокирање"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Обриши све Focus Lock податке"
-  },
-  "options_dirty_saving": {
-    "message": "Чување измена"
-  },
-  "options_dirty_unsaved": {
-    "message": "Несачуване измене"
-  },
-  "options_dirty_clean": {
-    "message": "Нема несачуваних измена"
-  },
-  "options_dirty_discard": {
-    "message": "Одбаци измене"
-  },
-  "options_dirty_save": {
-    "message": "Сачувај измене"
   },
   "options_session_status_label": {
     "message": "Стање сесије"
@@ -872,5 +854,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Чување"
+  },
+  "options_autosave_saved": {
+    "message": "Сачувано"
+  },
+  "options_autosave_failed": {
+    "message": "Није сачувано"
+  },
+  "options_pending_waiting": {
+    "message": "Чека се крај чврстог закључавања: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Одустани од ове измене"
+  },
+  "options_pending_value_on": {
+    "message": "укључено"
+  },
+  "options_pending_value_off": {
+    "message": "искључено"
   }
 }

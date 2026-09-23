@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Nalaganje nastavitev zasebnosti"
   },
-  "options_save_failed": {
-    "message": "Shranjevanje ni uspelo. Poskusite znova."
-  },
   "options_blocking_heading": {
     "message": "Blokiranje"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Izbriši vse podatke Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Shranjevanje sprememb"
-  },
-  "options_dirty_unsaved": {
-    "message": "Neshranjena sprememba"
-  },
-  "options_dirty_clean": {
-    "message": "Ni neshranjena sprememba"
-  },
-  "options_dirty_discard": {
-    "message": "Zavrzi spremembe"
-  },
-  "options_dirty_save": {
-    "message": "Shrani spremembe"
   },
   "options_session_status_label": {
     "message": "Stanje seans"
@@ -899,5 +881,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Shranjevanje"
+  },
+  "options_autosave_saved": {
+    "message": "Shranjeno"
+  },
+  "options_autosave_failed": {
+    "message": "Ni shranjeno"
+  },
+  "options_pending_waiting": {
+    "message": "Čaka se na konec trdega zaklepanja: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Prekliči to spremembo"
+  },
+  "options_pending_value_on": {
+    "message": "vklopljeno"
+  },
+  "options_pending_value_off": {
+    "message": "izklopljeno"
   }
 }

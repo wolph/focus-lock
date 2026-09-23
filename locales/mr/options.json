@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "गोपनीयता सेटिंग्ज लोड होत आहेत"
   },
-  "options_save_failed": {
-    "message": "जतन करता आले नाही. पुन्हा प्रयत्न करा."
-  },
   "options_blocking_heading": {
     "message": "ब्लॉकिंग"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Focus Lock चा सर्व डेटा हटवा"
-  },
-  "options_dirty_saving": {
-    "message": "बदल जतन करत आहोत"
-  },
-  "options_dirty_unsaved": {
-    "message": "जतन न केलेले बदल"
-  },
-  "options_dirty_clean": {
-    "message": "जतन न केलेले बदल नाहीत"
-  },
-  "options_dirty_discard": {
-    "message": "बदल टाकून द्या"
-  },
-  "options_dirty_save": {
-    "message": "बदल जतन करा"
   },
   "options_session_status_label": {
     "message": "सेशनची स्थिती"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "याद्या जतन होऊ शकल्या नाहीत. पान पुन्हा लोड करून पुन्हा प्रयत्न करा."
+  },
+  "options_autosave_saving": {
+    "message": "सेव्ह होत आहे"
+  },
+  "options_autosave_saved": {
+    "message": "सेव्ह झाले"
+  },
+  "options_autosave_failed": {
+    "message": "सेव्ह झाले नाही"
+  },
+  "options_pending_waiting": {
+    "message": "कडक लॉक संपण्याची वाट पाहत आहे: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "हा बदल रद्द करा"
+  },
+  "options_pending_value_on": {
+    "message": "चालू"
+  },
+  "options_pending_value_off": {
+    "message": "बंद"
   }
 }

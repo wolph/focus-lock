@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "આ પહેલેથી જ તારી વર્ક ટૅબ છે.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "તમારા નિયમોમાં ફેરફારો તરત જ લાગુ થાય છે."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "તમારા નિયમોમાં ફેરફારો તરત જ લાગુ થાય છે. ફક્ત વહેલું સમાપ્ત કરવામાં ખર્ચ થાય છે."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "તે ચાલુ હોય ત્યારે તમે બ્લોક ઉમેરી શકો છો. દૂર કરવાનું તે સમાપ્ત થાય ત્યાં સુધી રાહ જુએ છે."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "સેટિંગ્સમાં કરેલા ફેરફારો તમે કરો કે તરત જ આ સેશન સુધી પહોંચે છે."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "સેટિંગ્સમાં કરેલા ફેરફારો તમે કરો કે તરત જ આ સેશન સુધી પહોંચે છે."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "બ્લોક ઉમેરતા સેટિંગ્સ ફેરફારો આ સેશન સુધી પહોંચે છે. તેમને દૂર કરતા ફેરફારો તે સમાપ્ત થાય ત્યાં સુધી રાહ જુએ છે."
   }
 }

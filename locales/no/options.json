@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Laster personverninnstillinger"
   },
-  "options_save_failed": {
-    "message": "Kunne ikke lagre. Prøv igjen."
-  },
   "options_blocking_heading": {
     "message": "Blokkering"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Slett alle Focus Lock-data"
-  },
-  "options_dirty_saving": {
-    "message": "Lagrer endringer"
-  },
-  "options_dirty_unsaved": {
-    "message": "Ulagrede endringer"
-  },
-  "options_dirty_clean": {
-    "message": "Ingen ulagrede endringer"
-  },
-  "options_dirty_discard": {
-    "message": "Forkast endringer"
-  },
-  "options_dirty_save": {
-    "message": "Lagre endringer"
   },
   "options_session_status_label": {
     "message": "Øktstatus"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Kunne ikke lagre listene. Last siden på nytt og prøv igjen."
+  },
+  "options_autosave_saving": {
+    "message": "Lagrer"
+  },
+  "options_autosave_saved": {
+    "message": "Lagret"
+  },
+  "options_autosave_failed": {
+    "message": "Ikke lagret"
+  },
+  "options_pending_waiting": {
+    "message": "Venter på at hard lås skal avsluttes: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Avbryt denne endringen"
+  },
+  "options_pending_value_on": {
+    "message": "på"
+  },
+  "options_pending_value_off": {
+    "message": "av"
   }
 }

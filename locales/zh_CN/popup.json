@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "这已经是你的工作标签页了。",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "对规则的更改会立即生效。"
+  },
+  "popup_session_type_friction_edits": {
+    "message": "对规则的更改会立即生效。只有提前结束才需要代价。"
+  },
+  "popup_session_type_hard_edits": {
+    "message": "运行期间可以添加阻止规则。移除操作要等到结束才会生效。"
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "你在设置中做出更改后会立即送达此会话。"
+  },
+  "popup_scope_strictness_friction": {
+    "message": "你在设置中做出更改后会立即送达此会话。"
+  },
+  "popup_scope_strictness_hard": {
+    "message": "在设置中添加阻止规则的更改会送达此会话，移除阻止规则的更改要等到会话结束才会送达。"
   }
 }

@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Φόρτωση ρυθμίσεων απορρήτου"
   },
-  "options_save_failed": {
-    "message": "Η αποθήκευση απέτυχε. Δοκίμασε ξανά."
-  },
   "options_blocking_heading": {
     "message": "Αποκλεισμός"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Διαγραφή όλων των δεδομένων του Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Αποθήκευση αλλαγών"
-  },
-  "options_dirty_unsaved": {
-    "message": "Μη αποθηκευμένες αλλαγές"
-  },
-  "options_dirty_clean": {
-    "message": "Καμία αλλαγή προς αποθήκευση"
-  },
-  "options_dirty_discard": {
-    "message": "Απόρριψη αλλαγών"
-  },
-  "options_dirty_save": {
-    "message": "Αποθήκευση αλλαγών"
   },
   "options_session_status_label": {
     "message": "Κατάσταση συνεδρίας"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Οι λίστες δεν αποθηκεύτηκαν. Φόρτωσε ξανά τη σελίδα και δοκίμασε πάλι."
+  },
+  "options_autosave_saving": {
+    "message": "Αποθήκευση"
+  },
+  "options_autosave_saved": {
+    "message": "Αποθηκεύτηκε"
+  },
+  "options_autosave_failed": {
+    "message": "Δεν αποθηκεύτηκε"
+  },
+  "options_pending_waiting": {
+    "message": "Αναμονή για τη λήξη του πλήρους κλειδώματος: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Ακύρωση αυτής της αλλαγής"
+  },
+  "options_pending_value_on": {
+    "message": "ενεργό"
+  },
+  "options_pending_value_off": {
+    "message": "ανενεργό"
   }
 }

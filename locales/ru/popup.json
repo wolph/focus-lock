@@ -691,5 +691,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Это уже твоя рабочая вкладка.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Изменения правил применяются сразу."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Изменения правил применяются сразу. Платить нужно только за досрочное завершение."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Пока сессия идёт, можно добавлять блокировки. Их удаление ждёт завершения сессии."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Изменения в Настройках попадают в эту сессию сразу, как только ты их вносишь."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Изменения в Настройках попадают в эту сессию сразу, как только ты их вносишь."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Изменения в Настройках, добавляющие блокировки, попадают в эту сессию сразу. Те, что их убирают, ждут завершения сессии."
   }
 }

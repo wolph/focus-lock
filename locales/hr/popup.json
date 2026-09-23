@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Ovo je već tvoj radni tabulator.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Promjene tvojih pravila primjenjuju se odmah."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Promjene tvojih pravila primjenjuju se odmah. Samo rani završetak nosi cijenu."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Možeš dodavati blokade dok traje. Uklanjanja čekaju dok ne završi."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Izmjene u Postavkama stižu do ove sesije čim ih napraviš."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Izmjene u Postavkama stižu do ove sesije čim ih napraviš."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Izmjene Postavki koje dodaju blokade stižu do ove sesije. One koje ih uklanjaju čekaju da sesija završi."
   }
 }

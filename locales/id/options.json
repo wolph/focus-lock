@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Memuat pengaturan privasi"
   },
-  "options_save_failed": {
-    "message": "Tidak dapat menyimpan. Coba lagi."
-  },
   "options_blocking_heading": {
     "message": "Pemblokiran"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Hapus semua data Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Menyimpan perubahan"
-  },
-  "options_dirty_unsaved": {
-    "message": "Perubahan belum disimpan"
-  },
-  "options_dirty_clean": {
-    "message": "Tidak ada perubahan yang belum disimpan"
-  },
-  "options_dirty_discard": {
-    "message": "Buang perubahan"
-  },
-  "options_dirty_save": {
-    "message": "Simpan perubahan"
   },
   "options_session_status_label": {
     "message": "Status sesi"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Tidak dapat menyimpan daftar. Muat ulang halaman dan coba lagi."
+  },
+  "options_autosave_saving": {
+    "message": "Menyimpan"
+  },
+  "options_autosave_saved": {
+    "message": "Tersimpan"
+  },
+  "options_autosave_failed": {
+    "message": "Tidak tersimpan"
+  },
+  "options_pending_waiting": {
+    "message": "Menunggu kunci keras berakhir: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Batalkan perubahan ini"
+  },
+  "options_pending_value_on": {
+    "message": "aktif"
+  },
+  "options_pending_value_off": {
+    "message": "nonaktif"
   }
 }

@@ -182,7 +182,7 @@
     "message": "Focus Lock nepavyko baigti naršyklės valymo. Atidaryk langą ir bandyk dar kartą."
   },
   "shared_settings_session_disclosure": {
-    "message": "Sesijos valdikliai yra įrankių juostos lange. Vykstanti sesija laikosi taisyklių, galiojusių jos pradžioje."
+    "message": "Sesijos valdymas yra įrankių juostos lange. Pakeitimai pasiekia vykstančią sesiją iš karto, išskyrus griežtą užraktą, kuris sulaiko bet kokį atblokavimą, kol sesija baigsis."
   },
   "shared_settings_timed": {
     "message": "Laikmačio sesija vyksta iki $TIME$. Ji baigsis automatiškai. Gyvą būseną matysi įrankių juostos lange.",

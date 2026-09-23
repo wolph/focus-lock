@@ -182,7 +182,7 @@
     "message": "Focus Lock n'a pas pu terminer le nettoyage du navigateur. Ouvre la fenêtre et réessaie."
   },
   "shared_settings_session_disclosure": {
-    "message": "Les commandes de session sont dans la fenêtre de la barre d'outils. La session en cours garde les règles enregistrées à son démarrage."
+    "message": "Les commandes de session sont dans la fenêtre de la barre d'outils. Tes modifications atteignent la session en cours dès que tu les fais, sauf en verrouillage strict, où tout ce qui débloque est retenu jusqu'à sa fin."
   },
   "shared_settings_timed": {
     "message": "Session minutée active jusqu'à $TIME$. Elle se termine automatiquement. Utilise la fenêtre de la barre d'outils pour l'état en direct.",

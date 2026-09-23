@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Είναι ήδη η καρτέλα εργασίας σου.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Οι αλλαγές στους κανόνες σου ισχύουν αμέσως."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Οι αλλαγές στους κανόνες σου ισχύουν αμέσως. Μόνο ο πρόωρος τερματισμός έχει κόστος."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Μπορείς να προσθέτεις αποκλεισμούς όσο τρέχει. Οι αφαιρέσεις περιμένουν να τελειώσει."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Οι αλλαγές στις Ρυθμίσεις φτάνουν σε αυτή τη συνεδρία μόλις τις κάνεις."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Οι αλλαγές στις Ρυθμίσεις φτάνουν σε αυτή τη συνεδρία μόλις τις κάνεις."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Οι αλλαγές στις Ρυθμίσεις που προσθέτουν αποκλεισμούς φτάνουν σε αυτή τη συνεδρία. Όσες τους αφαιρούν περιμένουν να τελειώσει."
   }
 }

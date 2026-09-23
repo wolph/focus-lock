@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "এটা ইতিমধ্যেই আপনার কাজের ট্যাব।",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "আপনার নিয়মের পরিবর্তন সঙ্গে সঙ্গে কার্যকর হয়।"
+  },
+  "popup_session_type_friction_edits": {
+    "message": "আপনার নিয়মের পরিবর্তন সঙ্গে সঙ্গে কার্যকর হয়। শুধু আগে শেষ করলে মূল্য দিতে হয়।"
+  },
+  "popup_session_type_hard_edits": {
+    "message": "চলাকালীন আপনি ব্লক যোগ করতে পারেন। সরানো নিয়মগুলো শেষ না হওয়া পর্যন্ত অপেক্ষা করে।"
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "সেটিংসে করা পরিবর্তন যেমনি করেন তেমনি এই সেশনে পৌঁছায়।"
+  },
+  "popup_scope_strictness_friction": {
+    "message": "সেটিংসে করা পরিবর্তন যেমনি করেন তেমনি এই সেশনে পৌঁছায়।"
+  },
+  "popup_scope_strictness_hard": {
+    "message": "যে সেটিংস পরিবর্তন ব্লক যোগ করে তা এই সেশনে পৌঁছায়। যেগুলো ব্লক সরায় সেগুলো শেষ হওয়া পর্যন্ত অপেক্ষা করে।"
   }
 }

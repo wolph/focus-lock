@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Ово је већ твоја радна картица.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Измене правила се примењују одмах."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Измене правила се примењују одмах. Плаћа се само рани прекид."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Можеш да додајеш правила блокирања док траје. Уклањања чекају док се не заврши."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Измене у Подешавањима стижу до ове сесије чим их направиш."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Измене у Подешавањима стижу до ове сесије чим их направиш."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Измене у Подешавањима које додају правила блокирања стижу до ове сесије. Оне које их уклањају чекају крај сесије."
   }
 }

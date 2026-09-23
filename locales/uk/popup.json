@@ -691,5 +691,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Це вже твоя робоча вкладка.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Зміни правил застосовуються одразу."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Зміни правил застосовуються одразу. Платиш лише за дострокове завершення."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Під час сесії можна додавати блокування. Видалення чекають, доки вона не завершиться."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Зміни в Налаштуваннях доходять до цієї сесії, щойно ти їх вносиш."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Зміни в Налаштуваннях доходять до цієї сесії, щойно ти їх вносиш."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Зміни в Налаштуваннях, які додають блокування, доходять до цієї сесії. Ті, що їх видаляють, чекають на її завершення."
   }
 }

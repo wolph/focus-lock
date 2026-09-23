@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "ഇത് ഇപ്പോൾ തന്നെ നിങ്ങളുടെ ജോലി ടാബാണ്.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "നിങ്ങളുടെ നിയമങ്ങളിലെ മാറ്റങ്ങൾ ഉടനടി ബാധകമാകും."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "നിങ്ങളുടെ നിയമങ്ങളിലെ മാറ്റങ്ങൾ ഉടനടി ബാധകമാകും. നേരത്തെ അവസാനിപ്പിക്കുന്നതിന് മാത്രമേ ചെലവ് വരൂ."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "ഇത് പ്രവർത്തിക്കുമ്പോൾ നിങ്ങൾക്ക് ബ്ലോക്കുകൾ ചേർക്കാം. നീക്കം ചെയ്യലുകൾ ഇത് അവസാനിക്കുന്നത് വരെ കാത്തിരിക്കും."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "സെറ്റിംഗുകളിലെ മാറ്റങ്ങൾ നിങ്ങൾ വരുത്തുന്ന ഉടനെ ഈ സെഷനിൽ എത്തും."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "സെറ്റിംഗുകളിലെ മാറ്റങ്ങൾ നിങ്ങൾ വരുത്തുന്ന ഉടനെ ഈ സെഷനിൽ എത്തും."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "ബ്ലോക്കുകൾ ചേർക്കുന്ന സെറ്റിംഗ് മാറ്റങ്ങൾ ഉടനെ ഈ സെഷനിൽ എത്തും. അവ നീക്കം ചെയ്യുന്നവ ഇത് അവസാനിക്കുന്നത് വരെ കാത്തിരിക്കും."
   }
 }

@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Det er allerede din arbejdsfane.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Ændringer af dine regler gælder med det samme."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Ændringer af dine regler gælder med det samme. Kun tidlig afslutning koster."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Du kan tilføje blokeringer, mens den kører. Fjernelser venter, til den slutter."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Rettelser i Indstillinger når denne session, så snart du foretager dem."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Rettelser i Indstillinger når denne session, så snart du foretager dem."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Rettelser i Indstillinger, der tilføjer blokeringer, når denne session. Dem, der fjerner blokeringer, venter, til den slutter."
   }
 }

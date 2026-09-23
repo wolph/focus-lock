@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Privacyinstellingen laden"
   },
-  "options_save_failed": {
-    "message": "Opslaan mislukt. Probeer opnieuw."
-  },
   "options_blocking_heading": {
     "message": "Blokkeren"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Alle Focus Lock-gegevens verwijderen"
-  },
-  "options_dirty_saving": {
-    "message": "Wijzigingen opslaan"
-  },
-  "options_dirty_unsaved": {
-    "message": "Niet-opgeslagen wijzigingen"
-  },
-  "options_dirty_clean": {
-    "message": "Geen niet-opgeslagen wijzigingen"
-  },
-  "options_dirty_discard": {
-    "message": "Wijzigingen verwerpen"
-  },
-  "options_dirty_save": {
-    "message": "Wijzigingen opslaan"
   },
   "options_session_status_label": {
     "message": "Sessiestatus"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Lijsten opslaan mislukt. Herlaad de pagina en probeer opnieuw."
+  },
+  "options_autosave_saving": {
+    "message": "Opslaan"
+  },
+  "options_autosave_saved": {
+    "message": "Opgeslagen"
+  },
+  "options_autosave_failed": {
+    "message": "Niet opgeslagen"
+  },
+  "options_pending_waiting": {
+    "message": "Wachten tot Op slot eindigt: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Annuleer deze wijziging"
+  },
+  "options_pending_value_on": {
+    "message": "aan"
+  },
+  "options_pending_value_off": {
+    "message": "uit"
   }
 }

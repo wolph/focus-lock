@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Caricamento delle impostazioni sulla privacy"
   },
-  "options_save_failed": {
-    "message": "Impossibile salvare. Riprova."
-  },
   "options_blocking_heading": {
     "message": "Blocco"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Elimina tutti i dati di Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Salvataggio delle modifiche"
-  },
-  "options_dirty_unsaved": {
-    "message": "Modifiche non salvate"
-  },
-  "options_dirty_clean": {
-    "message": "Nessuna modifica da salvare"
-  },
-  "options_dirty_discard": {
-    "message": "Annulla le modifiche"
-  },
-  "options_dirty_save": {
-    "message": "Salva le modifiche"
   },
   "options_session_status_label": {
     "message": "Stato della sessione"
@@ -872,5 +854,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Salvataggio"
+  },
+  "options_autosave_saved": {
+    "message": "Salvato"
+  },
+  "options_autosave_failed": {
+    "message": "Non salvato"
+  },
+  "options_pending_waiting": {
+    "message": "In attesa della fine del blocco totale: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Annulla questa modifica"
+  },
+  "options_pending_value_on": {
+    "message": "attivato"
+  },
+  "options_pending_value_off": {
+    "message": "disattivato"
   }
 }

@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Nilo-load ang mga setting ng privacy"
   },
-  "options_save_failed": {
-    "message": "Hindi maaaring i-save ang mga setting. I-reload ang page at subukan ulit."
-  },
   "options_blocking_heading": {
     "message": "Pagharang"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Burahin lahat ng data ng Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Sine-save ang mga pagbabago"
-  },
-  "options_dirty_unsaved": {
-    "message": "Mga pagbabagong hindi pa na-save"
-  },
-  "options_dirty_clean": {
-    "message": "Walang pagbabagong hindi pa na-save"
-  },
-  "options_dirty_discard": {
-    "message": "Burahin ang mga pagbabago"
-  },
-  "options_dirty_save": {
-    "message": "I-save ang mga pagbabago"
   },
   "options_session_status_label": {
     "message": "Sesyon status"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Hindi ma-save ang mga listahan. I-reload ang page at subukan muli."
+  },
+  "options_autosave_saving": {
+    "message": "Sine-save"
+  },
+  "options_autosave_saved": {
+    "message": "Na-save"
+  },
+  "options_autosave_failed": {
+    "message": "Hindi na-save"
+  },
+  "options_pending_waiting": {
+    "message": "Naghihintay na matapos ang mahigpit na lock: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Kanselahin ang pagbabagong ito"
+  },
+  "options_pending_value_on": {
+    "message": "naka-on"
+  },
+  "options_pending_value_off": {
+    "message": "naka-off"
   }
 }

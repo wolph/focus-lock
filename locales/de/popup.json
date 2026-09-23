@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Das ist schon dein Arbeits-Tab.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Änderungen an deinen Regeln gelten sofort."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Änderungen an deinen Regeln gelten sofort. Nur vorzeitiges Beenden kostet."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Während sie läuft, kannst du Sperren hinzufügen. Entfernungen warten, bis sie endet."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Änderungen in den Einstellungen erreichen diese Sitzung, sobald du sie vornimmst."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Änderungen in den Einstellungen erreichen diese Sitzung, sobald du sie vornimmst."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Änderungen in den Einstellungen, die Sperren hinzufügen, erreichen diese Sitzung. Änderungen, die sie entfernen, warten, bis sie endet."
   }
 }

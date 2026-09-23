@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "S'està carregant la configuració de privadesa"
   },
-  "options_save_failed": {
-    "message": "No s'ha pogut desar. Torna-ho a provar."
-  },
   "options_blocking_heading": {
     "message": "Bloqueig"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Suprimeix totes les dades de Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "S'estan desant els canvis"
-  },
-  "options_dirty_unsaved": {
-    "message": "Canvis sense desar"
-  },
-  "options_dirty_clean": {
-    "message": "Cap canvi sense desar"
-  },
-  "options_dirty_discard": {
-    "message": "Descarta els canvis"
-  },
-  "options_dirty_save": {
-    "message": "Desa els canvis"
   },
   "options_session_status_label": {
     "message": "Estat de la sessió"
@@ -872,5 +854,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Desant"
+  },
+  "options_autosave_saved": {
+    "message": "Desat"
+  },
+  "options_autosave_failed": {
+    "message": "No desat"
+  },
+  "options_pending_waiting": {
+    "message": "Esperant que acabi el bloqueig estricte: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Cancel·la aquest canvi"
+  },
+  "options_pending_value_on": {
+    "message": "activat"
+  },
+  "options_pending_value_off": {
+    "message": "desactivat"
   }
 }

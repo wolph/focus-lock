@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "A carregar as definições de privacidade"
   },
-  "options_save_failed": {
-    "message": "Não foi possível guardar. Tenta novamente."
-  },
   "options_blocking_heading": {
     "message": "Bloqueio"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Eliminar todos os dados do Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "A guardar as alterações"
-  },
-  "options_dirty_unsaved": {
-    "message": "Alterações por guardar"
-  },
-  "options_dirty_clean": {
-    "message": "Não há alterações por guardar"
-  },
-  "options_dirty_discard": {
-    "message": "Descartar as alterações"
-  },
-  "options_dirty_save": {
-    "message": "Guardar as alterações"
   },
   "options_session_status_label": {
     "message": "Estado da sessão"
@@ -872,5 +854,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "A guardar"
+  },
+  "options_autosave_saved": {
+    "message": "Guardado"
+  },
+  "options_autosave_failed": {
+    "message": "Não guardado"
+  },
+  "options_pending_waiting": {
+    "message": "A aguardar que o bloqueio total termine: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Cancelar esta alteração"
+  },
+  "options_pending_value_on": {
+    "message": "ligado"
+  },
+  "options_pending_value_off": {
+    "message": "desligado"
   }
 }

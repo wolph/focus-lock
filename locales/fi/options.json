@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Ladataan tietosuoja-asetuksia"
   },
-  "options_save_failed": {
-    "message": "Tallennus ei onnistunut. Yritä uudelleen."
-  },
   "options_blocking_heading": {
     "message": "Esto"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Poista kaikki Focus Lockin tiedot"
-  },
-  "options_dirty_saving": {
-    "message": "Tallennetaan muutoksia"
-  },
-  "options_dirty_unsaved": {
-    "message": "Tallentamattomia muutoksia"
-  },
-  "options_dirty_clean": {
-    "message": "Ei tallentamattomia muutoksia"
-  },
-  "options_dirty_discard": {
-    "message": "Hylkää muutokset"
-  },
-  "options_dirty_save": {
-    "message": "Tallenna muutokset"
   },
   "options_session_status_label": {
     "message": "Jakson tila"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Listoja ei voitu tallentaa. Lataa sivu uudelleen ja yritä uudestaan."
+  },
+  "options_autosave_saving": {
+    "message": "Tallennetaan"
+  },
+  "options_autosave_saved": {
+    "message": "Tallennettu"
+  },
+  "options_autosave_failed": {
+    "message": "Ei tallennettu"
+  },
+  "options_pending_waiting": {
+    "message": "Odottaa tiukan lukituksen päättymistä: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Peru tämä muutos"
+  },
+  "options_pending_value_on": {
+    "message": "päällä"
+  },
+  "options_pending_value_off": {
+    "message": "pois päältä"
   }
 }

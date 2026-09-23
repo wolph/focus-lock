@@ -182,7 +182,7 @@
     "message": "Focus Lock nie mógł dokończyć porządkowania przeglądarki. Otwórz okienko i ponów."
   },
   "shared_settings_session_disclosure": {
-    "message": "Sterowanie sesją jest w okienku na pasku narzędzi. Aktywna sesja zachowuje reguły zapisane przy jej starcie."
+    "message": "Sterowanie sesją jest w okienku na pasku narzędzi. Twoje zmiany trafiają do trwającej sesji od razu po ich wprowadzeniu, z wyjątkiem twardej blokady, która wstrzymuje wszystko, co odblokowuje, aż się skończy."
   },
   "shared_settings_timed": {
     "message": "Aktywna sesja z timerem do $TIME$. Zakończy się automatycznie. Bieżący stan zobacz w okienku na pasku.",

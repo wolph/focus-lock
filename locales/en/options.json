@@ -15,10 +15,6 @@
     "message": "Loading privacy settings",
     "description": "Placeholder in the Privacy and data section while the privacy state is being read."
   },
-  "options_save_failed": {
-    "message": "Could not save. Try again.",
-    "description": "Error under the save bar when saving the current Settings section failed."
-  },
   "options_blocking_heading": {
     "message": "Blocking",
     "description": "Heading of the Settings section that holds the block and allow lists."

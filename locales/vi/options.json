@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Đang tải cài đặt quyền riêng tư"
   },
-  "options_save_failed": {
-    "message": "Không thể lưu. Hãy thử lại."
-  },
   "options_blocking_heading": {
     "message": "Chặn"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Xóa toàn bộ dữ liệu Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Đang lưu thay đổi"
-  },
-  "options_dirty_unsaved": {
-    "message": "Có thay đổi chưa lưu"
-  },
-  "options_dirty_clean": {
-    "message": "Không có thay đổi chưa lưu"
-  },
-  "options_dirty_discard": {
-    "message": "Hủy thay đổi"
-  },
-  "options_dirty_save": {
-    "message": "Lưu thay đổi"
   },
   "options_session_status_label": {
     "message": "Trạng thái phiên"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Không thể lưu danh sách. Hãy tải lại trang rồi thử lại."
+  },
+  "options_autosave_saving": {
+    "message": "Đang lưu"
+  },
+  "options_autosave_saved": {
+    "message": "Đã lưu"
+  },
+  "options_autosave_failed": {
+    "message": "Chưa lưu"
+  },
+  "options_pending_waiting": {
+    "message": "Đang chờ khóa cứng kết thúc: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Hủy thay đổi này"
+  },
+  "options_pending_value_on": {
+    "message": "bật"
+  },
+  "options_pending_value_off": {
+    "message": "tắt"
   }
 }

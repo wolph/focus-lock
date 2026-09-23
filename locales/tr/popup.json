@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Bu zaten çalışma sekmen.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Kurallarındaki değişiklikler hemen uygulanır."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Kurallarındaki değişiklikler hemen uygulanır. Yalnızca erken bitirmenin bedeli vardır."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Çalışırken engelleme kuralı ekleyebilirsin. Kaldırmalar bitene kadar bekler."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Ayarlar'daki düzenlemeler, onları yaptığın anda bu seansa ulaşır."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Ayarlar'daki düzenlemeler, onları yaptığın anda bu seansa ulaşır."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Engelleme kuralı ekleyen Ayarlar düzenlemeleri bu seansa ulaşır. Onları kaldıranlar bitene kadar bekler."
   }
 }

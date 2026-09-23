@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Загружаем настройки конфиденциальности"
   },
-  "options_save_failed": {
-    "message": "Не удалось сохранить. Повтори попытку."
-  },
   "options_blocking_heading": {
     "message": "Блокировка"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Удалить все данные Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Сохраняем изменения"
-  },
-  "options_dirty_unsaved": {
-    "message": "Несохранённые изменения"
-  },
-  "options_dirty_clean": {
-    "message": "Несохранённых изменений нет"
-  },
-  "options_dirty_discard": {
-    "message": "Отменить изменения"
-  },
-  "options_dirty_save": {
-    "message": "Сохранить изменения"
   },
   "options_session_status_label": {
     "message": "Статус сессии"
@@ -899,5 +881,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Сохранение"
+  },
+  "options_autosave_saved": {
+    "message": "Сохранено"
+  },
+  "options_autosave_failed": {
+    "message": "Не сохранено"
+  },
+  "options_pending_waiting": {
+    "message": "Ожидание окончания жёсткой блокировки: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Отменить это изменение"
+  },
+  "options_pending_value_on": {
+    "message": "включено"
+  },
+  "options_pending_value_off": {
+    "message": "выключено"
   }
 }

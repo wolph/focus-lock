@@ -182,7 +182,7 @@
     "message": "Focus Lock no pudo terminar la limpieza del navegador. Abre la ventana y reinténtalo."
   },
   "shared_settings_session_disclosure": {
-    "message": "Los controles de sesión están en la ventana de la barra de herramientas. La sesión activa conserva las reglas que tenía al iniciarse."
+    "message": "La ventana de la barra de herramientas controla la sesión. Tus cambios llegan a la sesión activa en cuanto los haces, salvo con un bloqueo estricto, que retiene todo lo que desbloquea hasta que termina."
   },
   "shared_settings_timed": {
     "message": "Sesión con temporizador activa hasta las $TIME$. Termina sola. Usa la ventana de la barra de herramientas para ver el estado en vivo.",

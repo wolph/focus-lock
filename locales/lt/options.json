@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Įkeliami privatumo nustatymai"
   },
-  "options_save_failed": {
-    "message": "Nepavyko įrašyti. Bandyk dar kartą."
-  },
   "options_blocking_heading": {
     "message": "Blokavimas"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Pašalinti visus Focus Lock duomenis"
-  },
-  "options_dirty_saving": {
-    "message": "Įrašomi pakeitimai"
-  },
-  "options_dirty_unsaved": {
-    "message": "Neįrašyti pakeitimai"
-  },
-  "options_dirty_clean": {
-    "message": "Neįrašytų pakeitimų nėra"
-  },
-  "options_dirty_discard": {
-    "message": "Atmesti pakeitimus"
-  },
-  "options_dirty_save": {
-    "message": "Įrašyti pakeitimus"
   },
   "options_session_status_label": {
     "message": "Sesijos būsena"
@@ -899,5 +881,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Saugoma"
+  },
+  "options_autosave_saved": {
+    "message": "Išsaugota"
+  },
+  "options_autosave_failed": {
+    "message": "Neišsaugota"
+  },
+  "options_pending_waiting": {
+    "message": "Laukiama, kol baigsis griežtas užraktas: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Atšaukti šį pakeitimą"
+  },
+  "options_pending_value_on": {
+    "message": "įjungta"
+  },
+  "options_pending_value_off": {
+    "message": "išjungta"
   }
 }

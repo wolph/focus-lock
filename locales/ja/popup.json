@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "これはすでにワークタブです。",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "ルールの変更はすぐに適用されます。"
+  },
+  "popup_session_type_friction_edits": {
+    "message": "ルールの変更はすぐに適用されます。早期終了のみコストがかかります。"
+  },
+  "popup_session_type_hard_edits": {
+    "message": "実行中にブロックを追加できます。削除は終了するまで待機します。"
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "設定での変更は、行った時点ですぐにこのセッションに反映されます。"
+  },
+  "popup_scope_strictness_friction": {
+    "message": "設定での変更は、行った時点ですぐにこのセッションに反映されます。"
+  },
+  "popup_scope_strictness_hard": {
+    "message": "ブロックを追加する設定の変更は、このセッションに反映されます。削除する変更は、終了するまで待機します。"
   }
 }

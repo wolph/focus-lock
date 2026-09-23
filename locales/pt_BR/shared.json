@@ -182,7 +182,7 @@
     "message": "O Focus Lock não conseguiu finalizar a limpeza do navegador. Abra o popup e tente de novo."
   },
   "shared_settings_session_disclosure": {
-    "message": "Os controles da sessão ficam no popup da barra de ferramentas. A sessão em andamento mantém as regras registradas quando ela começou."
+    "message": "Os controles da sessão ficam no popup da barra de ferramentas. Suas alterações chegam à sessão em andamento assim que você as faz, exceto no bloqueio total, que retém qualquer coisa que desbloqueie até ela terminar."
   },
   "shared_settings_timed": {
     "message": "Sessão cronometrada em andamento até $TIME$. Ela termina sozinha. Use o popup da barra de ferramentas para o status ao vivo.",

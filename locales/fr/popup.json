@@ -655,5 +655,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "C'est déjà ton onglet de travail.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Les modifications de tes règles s'appliquent immédiatement."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Les modifications de tes règles s'appliquent immédiatement. Seul l'arrêt anticipé a un coût."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Tu peux ajouter des blocages pendant son exécution. Les suppressions attendent sa fin."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Les modifications faites dans les réglages atteignent cette session dès que tu les fais."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Les modifications faites dans les réglages atteignent cette session dès que tu les fais."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Les modifications des réglages qui ajoutent des blocages atteignent cette session. Celles qui les suppriment attendent sa fin."
   }
 }

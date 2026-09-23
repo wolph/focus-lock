@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Indlæser privatlivsindstillinger"
   },
-  "options_save_failed": {
-    "message": "Kunne ikke gemme. Prøv igen."
-  },
   "options_blocking_heading": {
     "message": "Blokering"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Slet alle Focus Lock-data"
-  },
-  "options_dirty_saving": {
-    "message": "Gemmer ændringer"
-  },
-  "options_dirty_unsaved": {
-    "message": "Ikke-gemte ændringer"
-  },
-  "options_dirty_clean": {
-    "message": "Ingen ikke-gemte ændringer"
-  },
-  "options_dirty_discard": {
-    "message": "Kassér ændringer"
-  },
-  "options_dirty_save": {
-    "message": "Gem ændringer"
   },
   "options_session_status_label": {
     "message": "Sessionsstatus"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Listerne kunne ikke gemmes. Genindlæs siden, og prøv igen."
+  },
+  "options_autosave_saving": {
+    "message": "Gemmer"
+  },
+  "options_autosave_saved": {
+    "message": "Gemt"
+  },
+  "options_autosave_failed": {
+    "message": "Ikke gemt"
+  },
+  "options_pending_waiting": {
+    "message": "Venter på, at hård lås slutter: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Annuller denne ændring"
+  },
+  "options_pending_value_on": {
+    "message": "til"
+  },
+  "options_pending_value_off": {
+    "message": "fra"
   }
 }

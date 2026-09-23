@@ -691,5 +691,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Tohle už je tvoje pracovní karta.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Změny pravidel se projeví okamžitě."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Změny pravidel se projeví okamžitě. Cenu má jen předčasné ukončení."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Za běhu můžeš přidávat blokace. Odebrání počká, až relace skončí."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Úpravy v Nastavení se do této relace projeví, jakmile je uděláš."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Úpravy v Nastavení se do této relace projeví, jakmile je uděláš."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Úpravy v Nastavení, které přidávají blokace, se do této relace projeví. Ty, co je odebírají, počkají, až skončí."
   }
 }

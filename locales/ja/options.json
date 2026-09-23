@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "プライバシー設定をロード中"
   },
-  "options_save_failed": {
-    "message": "保存できませんでした。もう一度試してください。"
-  },
   "options_blocking_heading": {
     "message": "ブロッキング"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "すべてのFocus Lockデータを削除"
-  },
-  "options_dirty_saving": {
-    "message": "変更を保存中"
-  },
-  "options_dirty_unsaved": {
-    "message": "未保存の変更"
-  },
-  "options_dirty_clean": {
-    "message": "未保存の変更なし"
-  },
-  "options_dirty_discard": {
-    "message": "変更を破棄"
-  },
-  "options_dirty_save": {
-    "message": "変更を保存"
   },
   "options_session_status_label": {
     "message": "セッション状態"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "リストを保存できませんでした。ページをリロードしてもう一度試してください。"
+  },
+  "options_autosave_saving": {
+    "message": "保存中"
+  },
+  "options_autosave_saved": {
+    "message": "保存済み"
+  },
+  "options_autosave_failed": {
+    "message": "未保存"
+  },
+  "options_pending_waiting": {
+    "message": "ハードロックの終了を待っています: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "この変更をキャンセル"
+  },
+  "options_pending_value_on": {
+    "message": "オン"
+  },
+  "options_pending_value_off": {
+    "message": "オフ"
   }
 }

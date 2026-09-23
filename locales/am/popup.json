@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "ይህ አስቀድሞ የስራ ትርዎ ነው።",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "የህጎችዎ ለውጦች ወዲያውኑ ይተገበራሉ።"
+  },
+  "popup_session_type_friction_edits": {
+    "message": "የህጎችዎ ለውጦች ወዲያውኑ ይተገበራሉ። ቀድሞ መጨረስ ብቻ ዋጋ ያስከፍላል።"
+  },
+  "popup_session_type_hard_edits": {
+    "message": "ክፍለ ጊዜው በሚሰራበት ጊዜ እገዳዎችን መጨመር ይችላሉ። ማስወገጃዎች ክፍለ ጊዜው እስኪያልቅ ድረስ ይጠብቃሉ።"
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "በቅንብሮች የሚያደርጓቸው ለውጦች እንዳደረጓቸው ወደዚህ ክፍለ ጊዜ ይደርሳሉ።"
+  },
+  "popup_scope_strictness_friction": {
+    "message": "በቅንብሮች የሚያደርጓቸው ለውጦች እንዳደረጓቸው ወደዚህ ክፍለ ጊዜ ይደርሳሉ።"
+  },
+  "popup_scope_strictness_hard": {
+    "message": "እገዳ የሚጨምሩ የቅንብሮች ለውጦች ወደዚህ ክፍለ ጊዜ ይደርሳሉ። የሚያስወግዱት ግን ክፍለ ጊዜው እስኪያልቅ ድረስ ይጠብቃሉ።"
   }
 }

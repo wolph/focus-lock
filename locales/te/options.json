@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "గోప్యతా సెట్టింగ్‌లు లోడ్ అవుతున్నాయి"
   },
-  "options_save_failed": {
-    "message": "సేవ్ చేయలేకపోయాం. మళ్లీ ప్రయత్నించండి."
-  },
   "options_blocking_heading": {
     "message": "బ్లాకింగ్"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "అన్ని Focus Lock డేటాను తొలగించు"
-  },
-  "options_dirty_saving": {
-    "message": "మార్పులు సేవ్ అవుతున్నాయి"
-  },
-  "options_dirty_unsaved": {
-    "message": "సేవ్ చేయని మార్పులు"
-  },
-  "options_dirty_clean": {
-    "message": "సేవ్ చేయని మార్పులు లేవు"
-  },
-  "options_dirty_discard": {
-    "message": "మార్పులను విస్మరించు"
-  },
-  "options_dirty_save": {
-    "message": "మార్పులను సేవ్ చేయి"
   },
   "options_session_status_label": {
     "message": "సెషన్ స్థితి"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "జాబితాలను సేవ్ చేయలేకపోయాం. పేజీని రీలోడ్ చేసి మళ్లీ ప్రయత్నించండి."
+  },
+  "options_autosave_saving": {
+    "message": "సేవ్ చేస్తోంది"
+  },
+  "options_autosave_saved": {
+    "message": "సేవ్ చేయబడింది"
+  },
+  "options_autosave_failed": {
+    "message": "సేవ్ చేయబడలేదు"
+  },
+  "options_pending_waiting": {
+    "message": "కఠిన లాక్ ముగిసే వరకు వేచి ఉంది: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "ఈ మార్పును రద్దు చేయి"
+  },
+  "options_pending_value_on": {
+    "message": "ఆన్"
+  },
+  "options_pending_value_off": {
+    "message": "ఆఫ్"
   }
 }

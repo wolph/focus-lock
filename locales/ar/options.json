@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "جارٍ تحميل إعدادات الخصوصية"
   },
-  "options_save_failed": {
-    "message": "تعذّر الحفظ. أعد المحاولة."
-  },
   "options_blocking_heading": {
     "message": "الحظر"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "حذف جميع بيانات Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "جارٍ حفظ التغييرات"
-  },
-  "options_dirty_unsaved": {
-    "message": "تغييرات غير محفوظة"
-  },
-  "options_dirty_clean": {
-    "message": "لا توجد تغييرات غير محفوظة"
-  },
-  "options_dirty_discard": {
-    "message": "تجاهل التغييرات"
-  },
-  "options_dirty_save": {
-    "message": "حفظ التغييرات"
   },
   "options_session_status_label": {
     "message": "حالة الجلسة"
@@ -953,5 +935,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "جارٍ الحفظ"
+  },
+  "options_autosave_saved": {
+    "message": "تم الحفظ"
+  },
+  "options_autosave_failed": {
+    "message": "تعذّر الحفظ"
+  },
+  "options_pending_waiting": {
+    "message": "بانتظار انتهاء القفل الصارم: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "إلغاء هذا التغيير"
+  },
+  "options_pending_value_on": {
+    "message": "مفعّل"
+  },
+  "options_pending_value_off": {
+    "message": "معطّل"
   }
 }

@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Läser in integritetsinställningar"
   },
-  "options_save_failed": {
-    "message": "Kunde inte spara. Försök igen."
-  },
   "options_blocking_heading": {
     "message": "Blockering"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Radera all data i Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Sparar ändringar"
-  },
-  "options_dirty_unsaved": {
-    "message": "Osparade ändringar"
-  },
-  "options_dirty_clean": {
-    "message": "Inga osparade ändringar"
-  },
-  "options_dirty_discard": {
-    "message": "Kasta ändringar"
-  },
-  "options_dirty_save": {
-    "message": "Spara ändringar"
   },
   "options_session_status_label": {
     "message": "Passets status"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "Kunde inte spara listorna. Läs in sidan på nytt och försök igen."
+  },
+  "options_autosave_saving": {
+    "message": "Sparar"
+  },
+  "options_autosave_saved": {
+    "message": "Sparat"
+  },
+  "options_autosave_failed": {
+    "message": "Inte sparat"
+  },
+  "options_pending_waiting": {
+    "message": "Väntar på att det hårda låset ska avslutas: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Avbryt den här ändringen"
+  },
+  "options_pending_value_on": {
+    "message": "på"
+  },
+  "options_pending_value_off": {
+    "message": "av"
   }
 }

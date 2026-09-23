@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Adatvédelmi beállítások betöltése"
   },
-  "options_save_failed": {
-    "message": "A mentés nem sikerült. Próbáld újra."
-  },
   "options_blocking_heading": {
     "message": "Blokkolás"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Minden Focus Lock adat törlése"
-  },
-  "options_dirty_saving": {
-    "message": "Változtatások mentése"
-  },
-  "options_dirty_unsaved": {
-    "message": "Mentetlen változtatások"
-  },
-  "options_dirty_clean": {
-    "message": "Nincs mentetlen változtatás"
-  },
-  "options_dirty_discard": {
-    "message": "Változtatások elvetése"
-  },
-  "options_dirty_save": {
-    "message": "Változtatások mentése"
   },
   "options_session_status_label": {
     "message": "A menet állapota"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "A listákat nem sikerült menteni. Töltsd újra az oldalt, és próbáld újra."
+  },
+  "options_autosave_saving": {
+    "message": "Mentés"
+  },
+  "options_autosave_saved": {
+    "message": "Mentve"
+  },
+  "options_autosave_failed": {
+    "message": "Nincs mentve"
+  },
+  "options_pending_waiting": {
+    "message": "Várakozás a teljes zárolás végére: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "A módosítás elvetése"
+  },
+  "options_pending_value_on": {
+    "message": "be"
+  },
+  "options_pending_value_off": {
+    "message": "ki"
   }
 }

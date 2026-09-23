@@ -691,5 +691,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "To je že tvoj delovni zavihek.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Spremembe pravil se uveljavijo takoj."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Spremembe pravil se uveljavijo takoj. Plača se le predčasen konec."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Med potekom lahko dodajaš pravila blokiranja. Odstranitve počakajo do konca."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Spremembe v Nastavitvah dosežejo to sejo takoj, ko jih narediš."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Spremembe v Nastavitvah dosežejo to sejo takoj, ko jih narediš."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Spremembe v Nastavitvah, ki dodajo pravila blokiranja, dosežejo to sejo. Tiste, ki jih odstranijo, počakajo do konca."
   }
 }

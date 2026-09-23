@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "Načítavam nastavenia súkromia"
   },
-  "options_save_failed": {
-    "message": "Uloženie sa nepodarilo. Skús to znova."
-  },
   "options_blocking_heading": {
     "message": "Blokovanie"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "Zmazať všetky údaje Focus Lock"
-  },
-  "options_dirty_saving": {
-    "message": "Ukladám zmeny"
-  },
-  "options_dirty_unsaved": {
-    "message": "Neuložené zmeny"
-  },
-  "options_dirty_clean": {
-    "message": "Žiadne neuložené zmeny"
-  },
-  "options_dirty_discard": {
-    "message": "Zahodiť zmeny"
-  },
-  "options_dirty_save": {
-    "message": "Uložiť zmeny"
   },
   "options_session_status_label": {
     "message": "Stav relácie"
@@ -899,5 +881,32 @@
         "example": "12"
       }
     }
+  },
+  "options_autosave_saving": {
+    "message": "Ukladá sa"
+  },
+  "options_autosave_saved": {
+    "message": "Uložené"
+  },
+  "options_autosave_failed": {
+    "message": "Neuložené"
+  },
+  "options_pending_waiting": {
+    "message": "Čaká sa na skončenie tvrdého zámku: $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "Zrušiť túto zmenu"
+  },
+  "options_pending_value_on": {
+    "message": "zapnuté"
+  },
+  "options_pending_value_off": {
+    "message": "vypnuté"
   }
 }

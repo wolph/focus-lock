@@ -763,5 +763,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "هذه بالفعل علامة تبويب العمل.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "التغييرات على قواعدك تُطبَّق فورًا."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "التغييرات على قواعدك تُطبَّق فورًا. الإنهاء المبكر وحده له تكلفة."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "يمكنك إضافة حظر أثناء تشغيل الجلسة. الإزالة تنتظر حتى تنتهي."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "التعديلات في الإعدادات تصل إلى هذه الجلسة فور إجرائها."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "التعديلات في الإعدادات تصل إلى هذه الجلسة فور إجرائها."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "تعديلات الإعدادات التي تضيف حظرًا تصل إلى هذه الجلسة. أما التي تزيله فتنتظر حتى تنتهي."
   }
 }

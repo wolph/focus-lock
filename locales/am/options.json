@@ -11,9 +11,6 @@
   "options_privacy_loading": {
     "message": "የግላዊነት ቅንብሮች እየተጫኑ ነው"
   },
-  "options_save_failed": {
-    "message": "ማስቀመጥ አልተቻለም። ደግመው ይሞክሩ።"
-  },
   "options_blocking_heading": {
     "message": "እገዳ"
   },
@@ -61,21 +58,6 @@
   },
   "options_delete_all_data": {
     "message": "ሁሉንም የFocus Lock መረጃ ሰርዝ"
-  },
-  "options_dirty_saving": {
-    "message": "ለውጦች እየተቀመጡ ነው"
-  },
-  "options_dirty_unsaved": {
-    "message": "ያልተቀመጡ ለውጦች"
-  },
-  "options_dirty_clean": {
-    "message": "ያልተቀመጡ ለውጦች የሉም"
-  },
-  "options_dirty_discard": {
-    "message": "ለውጦችን አስወግድ"
-  },
-  "options_dirty_save": {
-    "message": "ለውጦችን አስቀምጥ"
   },
   "options_session_status_label": {
     "message": "የክፍለ ጊዜ ሁኔታ"
@@ -845,5 +827,32 @@
   },
   "options_error_save_lists": {
     "message": "ዝርዝሮችን ማስቀመጥ አልተቻለም። ገፁን ዳግም ጭነው ደግመው ይሞክሩ።"
+  },
+  "options_autosave_saving": {
+    "message": "በማስቀመጥ ላይ"
+  },
+  "options_autosave_saved": {
+    "message": "ተቀምጧል"
+  },
+  "options_autosave_failed": {
+    "message": "አልተቀመጠም"
+  },
+  "options_pending_waiting": {
+    "message": "ጠንካራ ቁልፍ እስኪያልቅ በመጠበቅ ላይ፦ $VALUE$",
+    "placeholders": {
+      "VALUE": {
+        "content": "$1",
+        "example": "10 s"
+      }
+    }
+  },
+  "options_pending_cancel": {
+    "message": "ይህን ለውጥ ተወው"
+  },
+  "options_pending_value_on": {
+    "message": "በርቷል"
+  },
+  "options_pending_value_off": {
+    "message": "ጠፍቷል"
   }
 }

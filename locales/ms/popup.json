@@ -619,5 +619,23 @@
   "popup_current_tab_is_work_tab": {
     "message": "Ini sudah tab kerja anda.",
     "description": "Hint under Make this my work tab when the tab the user is on is already the work tab, so the button is disabled."
+  },
+  "popup_session_type_flexible_edits": {
+    "message": "Perubahan pada peraturan anda terpakai serta-merta."
+  },
+  "popup_session_type_friction_edits": {
+    "message": "Perubahan pada peraturan anda terpakai serta-merta. Hanya menamatkan lebih awal yang dikenakan kos."
+  },
+  "popup_session_type_hard_edits": {
+    "message": "Anda boleh menambah sekatan semasa ia berjalan. Penyingkiran menunggu sehingga ia tamat."
+  },
+  "popup_scope_strictness_flexible": {
+    "message": "Perubahan dalam Pengaturan sampai ke sesi ini sebaik sahaja anda membuatnya."
+  },
+  "popup_scope_strictness_friction": {
+    "message": "Perubahan dalam Pengaturan sampai ke sesi ini sebaik sahaja anda membuatnya."
+  },
+  "popup_scope_strictness_hard": {
+    "message": "Perubahan Pengaturan yang menambah sekatan sampai ke sesi ini. Yang menyingkirkannya menunggu sehingga ia tamat."
   }
 }
