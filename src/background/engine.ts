@@ -25,6 +25,7 @@ import {
 } from '../shared/constants';
 import type { DocumentContentCommand } from '../shared/enforcement-v2';
 import { CoreError } from '../shared/errors';
+import { composeSessionRules } from '../shared/session-rules';
 import { exactDataEqual } from '../shared/exact-data';
 import { t } from '../shared/i18n';
 import type {
@@ -315,6 +316,12 @@ export class Engine {
     SessionRuleSnapshot,
     Map<SessionMode, CompiledMatcher>
   > = new WeakMap<SessionRuleSnapshot, Map<SessionMode, CompiledMatcher>>();
+  /** Composed rules per captured snapshot, dropped whole when the saved lists are replaced. */
+  private composedRulesCache: WeakMap<SessionRuleSnapshot, SessionRuleSnapshot> = new WeakMap<
+    SessionRuleSnapshot,
+    SessionRuleSnapshot
+  >();
+  private composedRulesFor: ListsConfig | null = null;
 
   constructor(
     private readonly ports: EnginePorts,
@@ -366,7 +373,7 @@ export class Engine {
         'ready' | 'website-access-lost' | 'content-registration-failed'
       > => this.ports.auditEnforcement(),
       compileMatcher: (rules: SessionRuleSnapshot, mode: SessionMode): CompiledMatcher =>
-        this.compileSessionPolicy(rules, ALL_CATEGORIES, mode),
+        this.compileSessionPolicy(this.composedRules(rules), ALL_CATEGORIES, mode),
       verdictFor: (
         matcher: CompiledMatcher,
         url: string,
@@ -824,11 +831,19 @@ export class Engine {
     return this.controller.hasActiveSession();
   }
 
-  /** The live session as the work tab pickers see it: its identity and the policy it captured. */
+  /**
+   * The live session as the work tab pickers see it: its identity and the rules it is judged by.
+   * Those are the composed rules, not the captured ones, so a tab a saved edit has just blocked
+   * stops being offered as a work tab.
+   */
   workTargetSession(): WorkSession | null {
     const session: SessionState | null = this.runtime.session;
     if (session === null) return null;
-    return { sessionId: session.sessionId, mode: session.config.mode, rules: session.config.rules };
+    return {
+      sessionId: session.sessionId,
+      mode: session.config.mode,
+      rules: this.composedRules(session.config.rules),
+    };
   }
 
   /** What a picker lists under before a session exists: the draft's rules, else the saved lists. */
@@ -843,6 +858,24 @@ export class Engine {
    */
   workTargetAllowed(url: string, policy: WorkTargetPolicy): boolean {
     return !evaluateUrl(this.workTargetMatcher(policy), url, [], this.ports.now()).blocked;
+  }
+
+  /**
+   * The live rules for one captured snapshot: the saved lists as they stand now, carrying the
+   * session's own overrides. Every verdict site reaches its matcher through the `compileMatcher`
+   * port, so composing here is what makes a saved list edit reach the session already running.
+   * The cache is keyed by the snapshot and dropped whole when the saved lists are replaced.
+   */
+  private composedRules(rules: SessionRuleSnapshot): SessionRuleSnapshot {
+    if (this.composedRulesFor !== this.lists) {
+      this.composedRulesCache = new WeakMap<SessionRuleSnapshot, SessionRuleSnapshot>();
+      this.composedRulesFor = this.lists;
+    }
+    const cached: SessionRuleSnapshot | undefined = this.composedRulesCache.get(rules);
+    if (cached !== undefined) return cached;
+    const composed: SessionRuleSnapshot = composeSessionRules(this.lists, rules);
+    this.composedRulesCache.set(rules, composed);
+    return composed;
   }
 
   private workTargetMatcher(policy: WorkTargetPolicy): CompiledMatcher {

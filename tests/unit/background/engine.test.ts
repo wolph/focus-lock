@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import type { EnforcementCheckpoint } from '../../../src/background/enforcement-persistence-v2';
+import type { DocumentContentCommand } from '../../../src/shared/enforcement-v2';
 import type { BlockingSweepLease, EnginePorts } from '../../../src/background/engine';
 import { aggregatedFocusEventV2, Engine } from '../../../src/background/engine';
 import { appendEventsV2, readEventsV2 } from '../../../src/background/event-log-v2';
@@ -38,6 +39,7 @@ import type {
   ListsConfig,
   ScheduleEntry,
   SessionConfig,
+  SessionRuleSnapshot,
   SessionSnapshot,
   SessionStateV2,
   Settings,
@@ -303,11 +305,12 @@ function currentRuntime(h: Harness): RuntimeStateV2 {
 }
 
 /**
- * The verdict the live session's captured policy gives. The controller owns verdicts now, so a
- * test that asserts the active policy compiles it from the rules the session froze, which is the
- * same snapshot the worker blocks with.
+ * The verdict the rules the session captured at its start would give. That snapshot is durable
+ * and never rewritten, so this answers what the session was started with. It does not answer what
+ * the session blocks now, because the saved lists move underneath it: ask `sessionBlocks` for
+ * that, which goes through the engine.
  */
-function sessionVerdict(h: Harness, url: string, at: number = T0): ReturnType<typeof evaluateUrl> {
+function frozenVerdict(h: Harness, url: string, at: number = T0): ReturnType<typeof evaluateUrl> {
   const runtime: RuntimeStateV2 = currentRuntime(h);
   const session: SessionStateV2 | null = runtime.session;
   if (session === null) throw new Error('expected a live session to evaluate against');
@@ -316,6 +319,25 @@ function sessionVerdict(h: Harness, url: string, at: number = T0): ReturnType<ty
     url,
     [...runtime.unlocks],
     at,
+  );
+}
+
+/**
+ * What the session blocks now, asked through the engine so the port under test answers it. Each
+ * URL gets its own document, because the worker keys a frozen command by document and a second
+ * question asked on the first question's document would be answered from that command.
+ */
+let probeDocuments: number = 0;
+async function sessionBlocks(h: Harness, url: string): Promise<boolean> {
+  probeDocuments += 1;
+  const commands: DocumentContentCommand[] = await h.engine.documentCommandsFor(
+    { tabId: 900 + probeDocuments, documentId: `probe-${probeDocuments}`, url },
+    null,
+    'read',
+  );
+  return commands.some(
+    (command: DocumentContentCommand): boolean =>
+      command.command === 'apply-enforcement' && command.verdict.blocked,
   );
 }
 
@@ -506,7 +528,7 @@ describe('Engine', () => {
     expect(restarted.ports.notify).not.toHaveBeenCalled();
   });
 
-  it('keeps the active policy immutable across list changes and worker restart', async (): Promise<void> => {
+  it('keeps the captured policy immutable while the session follows the saved lists', async (): Promise<void> => {
     const first: Harness = makeEngine({ runtime: activeRuntimeV2() });
     const replacementLists: ListsConfig = {
       ...DEFAULT_LISTS,
@@ -514,15 +536,21 @@ describe('Engine', () => {
     };
 
     await expect(first.engine.updateLists(replacementLists)).resolves.toEqual({ ok: true });
-    expect(sessionVerdict(first, 'https://facebook.com/feed').blocked).toBe(true);
-    expect(sessionVerdict(first, 'https://replacement.example/page').blocked).toBe(false);
+    // What the session captured is durable and never rewritten.
+    expect(frozenVerdict(first, 'https://facebook.com/feed').blocked).toBe(true);
+    expect(frozenVerdict(first, 'https://replacement.example/page').blocked).toBe(false);
+    // What it blocks is the saved lists as they stand now.
+    await expect(sessionBlocks(first, 'https://facebook.com/feed')).resolves.toBe(false);
+    await expect(sessionBlocks(first, 'https://replacement.example/page')).resolves.toBe(true);
 
     const persisted: RuntimeStateV2 = structuredClone(
       first.ports.saveRuntime.mock.calls.at(-1)?.[0] as RuntimeStateV2,
     );
     const restarted: Harness = makeEngine({ runtime: persisted, lists: replacementLists });
-    expect(sessionVerdict(restarted, 'https://facebook.com/feed').blocked).toBe(true);
-    expect(sessionVerdict(restarted, 'https://replacement.example/page').blocked).toBe(false);
+    expect(frozenVerdict(restarted, 'https://facebook.com/feed').blocked).toBe(true);
+    expect(frozenVerdict(restarted, 'https://replacement.example/page').blocked).toBe(false);
+    await expect(sessionBlocks(restarted, 'https://facebook.com/feed')).resolves.toBe(false);
+    await expect(sessionBlocks(restarted, 'https://replacement.example/page')).resolves.toBe(true);
   });
 
   it('keeps the active policy immutable across a settings change', async (): Promise<void> => {
@@ -532,7 +560,7 @@ describe('Engine', () => {
       h.engine.updateSettings({ ...DEFAULT_SETTINGS, defaultMode: 'whitelist' }),
     ).resolves.toEqual({ ok: true });
 
-    expect(sessionVerdict(h, 'https://facebook.com/feed').blocked).toBe(true);
+    expect(frozenVerdict(h, 'https://facebook.com/feed').blocked).toBe(true);
   });
 
   it('forwards background errors to the configured port', () => {
@@ -972,7 +1000,7 @@ describe('Engine', () => {
 
   it('rejects oversized local lists without replacing the compiled matcher', async () => {
     const h: Harness = makeEngine({ runtime: activeRuntimeV2() });
-    const before = sessionVerdict(h, 'https://facebook.com/feed');
+    const before = frozenVerdict(h, 'https://facebook.com/feed');
     h.ports.queueSync.mockClear();
     const oversized: ListsConfig = {
       ...DEFAULT_LISTS,
@@ -988,7 +1016,7 @@ describe('Engine', () => {
       ...DEFAULT_LISTS,
       custom: [{ kind: 'host', pattern: 'facebook.com' }],
     });
-    expect(sessionVerdict(h, 'https://facebook.com/feed')).toEqual(before);
+    expect(frozenVerdict(h, 'https://facebook.com/feed')).toEqual(before);
     expect(h.ports.queueSync).not.toHaveBeenCalledWith(SYNC_LISTS, expect.anything());
     expect(h.ports.saveMatcherCache).not.toHaveBeenCalled();
   });
@@ -1099,7 +1127,7 @@ describe('Engine', () => {
     });
   });
 
-  it('persists both matcher modes without changing the active session policy', async () => {
+  it('persists both matcher modes and applies them to the session already running', async () => {
     const order: string[] = [];
     const h: Harness = makeEngine({
       runtime: activeRuntimeV2(),
@@ -1124,11 +1152,11 @@ describe('Engine', () => {
       updated,
     );
     expect(h.engine.getLists()).toEqual(updated);
-    expect(sessionVerdict(h, 'https://replacement.example/page').blocked).toBe(false);
-    expect(sessionVerdict(h, 'https://facebook.com/feed').blocked).toBe(true);
+    await expect(sessionBlocks(h, 'https://replacement.example/page')).resolves.toBe(true);
+    await expect(sessionBlocks(h, 'https://facebook.com/feed')).resolves.toBe(false);
   });
 
-  it('persists accepted live lists without echoing them or changing the active policy', async () => {
+  it('persists accepted live lists without echoing them, and applies them to the session', async () => {
     const h: Harness = makeEngine({ runtime: activeRuntimeV2() });
     clearMutationPorts(h.ports);
     const updated: ListsConfig = {
@@ -1143,8 +1171,35 @@ describe('Engine', () => {
       updated,
     );
     expect(h.ports.queueSync).not.toHaveBeenCalledWith(SYNC_LISTS, expect.anything());
-    expect(sessionVerdict(h, 'https://live.example/page').blocked).toBe(false);
-    expect(sessionVerdict(h, 'https://facebook.com/feed').blocked).toBe(true);
+    await expect(sessionBlocks(h, 'https://live.example/page')).resolves.toBe(true);
+    await expect(sessionBlocks(h, 'https://facebook.com/feed')).resolves.toBe(false);
+  });
+
+  it('keeps a session-only category override when the saved categories move', async () => {
+    const captured: SessionRuleSnapshot = rulesFromLists(ENGINE_LISTS);
+    const h: Harness = makeEngine({
+      runtime: activeRuntimeV2({
+        config: {
+          ...activeSessionV2().config,
+          rules: { ...captured, categories: { ...captured.categories, video: true } },
+        },
+      }),
+    });
+    clearMutationPorts(h.ports);
+
+    await expect(
+      h.engine.updateLists({
+        ...DEFAULT_LISTS,
+        categories: { ...DEFAULT_LISTS.categories, news: true },
+      }),
+    ).resolves.toEqual({ ok: true });
+
+    // The popup's session-only video toggle survives the saved categories moving under it.
+    await expect(sessionBlocks(h, 'https://youtube.com/watch')).resolves.toBe(true);
+    // The category the saved lists just enabled reaches the running session.
+    await expect(sessionBlocks(h, 'https://cnn.com/politics')).resolves.toBe(true);
+    // The rule the saved lists dropped stops blocking.
+    await expect(sessionBlocks(h, 'https://facebook.com/feed')).resolves.toBe(false);
   });
 
   it('keeps active lists, matchers, and Sync queues when cache persistence fails', async () => {
@@ -1153,7 +1208,7 @@ describe('Engine', () => {
       saveMatcherCache: (): Promise<void> => Promise.reject(new Error('local cache unavailable')),
     });
     const beforeLists: ListsConfig = h.engine.getLists();
-    const beforeVerdict: Verdict = sessionVerdict(h, 'https://facebook.com/feed');
+    const beforeVerdict: Verdict = frozenVerdict(h, 'https://facebook.com/feed');
     clearMutationPorts(h.ports);
     const updated: ListsConfig = {
       ...DEFAULT_LISTS,
@@ -1163,8 +1218,8 @@ describe('Engine', () => {
     await expect(h.engine.updateLists(updated)).rejects.toThrow('local cache unavailable');
 
     expect(h.engine.getLists()).toEqual(beforeLists);
-    expect(sessionVerdict(h, 'https://facebook.com/feed')).toEqual(beforeVerdict);
-    expect(sessionVerdict(h, 'https://replacement.example/page').blocked).toBe(false);
+    expect(frozenVerdict(h, 'https://facebook.com/feed')).toEqual(beforeVerdict);
+    expect(frozenVerdict(h, 'https://replacement.example/page').blocked).toBe(false);
     expect(h.ports.queueSync).not.toHaveBeenCalledWith(SYNC_LISTS, expect.anything());
   });
 
@@ -1758,7 +1813,7 @@ describe('Engine', () => {
     expect(h.ports.queueSync).toHaveBeenCalledWith(SYNC_LISTS, liveLists);
     expect(h.ports.supersedeSync).not.toHaveBeenCalledWith(SYNC_LISTS, liveLists);
     expect(h.engine.getLists()).toEqual(liveLists);
-    expect(sessionVerdict(h, 'https://live.example/page').blocked).toBe(false);
+    await expect(sessionBlocks(h, 'https://live.example/page')).resolves.toBe(true);
   });
 
   it('reconciles local Sync queued after a live event arrives during cache persistence', async () => {
@@ -2026,7 +2081,7 @@ describe('Engine', () => {
       ...DEFAULT_LISTS,
       custom: [{ kind: 'host', pattern: 'facebook.com' }],
     });
-    expect(sessionVerdict(h, 'https://facebook.com/feed').blocked).toBe(true);
+    expect(frozenVerdict(h, 'https://facebook.com/feed').blocked).toBe(true);
   });
 
   it('rejects oversized settings before time-advanced catch-up mutates state or queues writes', async () => {
@@ -2100,7 +2155,7 @@ describe('Engine', () => {
 
   it('reports the quota error before hard-session list weakening policy', async () => {
     const h: Harness = makeEngine({ runtime: activeRuntimeV2({ config: hardConfigV2() }) });
-    const before = sessionVerdict(h, 'https://facebook.com/feed');
+    const before = frozenVerdict(h, 'https://facebook.com/feed');
     await h.engine.snapshotPersisted();
     clearMutationPorts(h.ports);
     const oversized: ListsConfig = {
@@ -2118,7 +2173,7 @@ describe('Engine', () => {
       custom: [{ kind: 'host', pattern: 'facebook.com' }],
     });
     expect(h.ports.now).not.toHaveBeenCalled();
-    expect(sessionVerdict(h, 'https://facebook.com/feed')).toEqual(before);
+    expect(frozenVerdict(h, 'https://facebook.com/feed')).toEqual(before);
     expect(h.ports.saveRuntime).not.toHaveBeenCalled();
     expect(h.ports.queueSync).not.toHaveBeenCalled();
   });

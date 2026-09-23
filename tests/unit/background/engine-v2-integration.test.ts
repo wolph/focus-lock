@@ -646,6 +646,10 @@ async function previousShapeStorage(runtime: unknown): Promise<Record<string, un
   const booted: WorkerHarness = await bootWorker(installedSeed());
   return {
     ...structuredClone(booted.local),
+    // The profile's session blocks the social category, and a session only blocks a category the
+    // saved lists block, so the stored lists carry it too. A session is judged by the lists as
+    // they stand, and a seed that disagreed with its own session would describe no real profile.
+    [LOCAL_LISTS]: { ...DEFAULT_LISTS, categories: { ...DEFAULT_LISTS.categories, social: true } },
     [LOCAL_RUNTIME]: structuredClone(runtime),
     [LOCAL_RUNTIME_SCHEMA]: { runtimeSchemaVersion: 2 },
   };
