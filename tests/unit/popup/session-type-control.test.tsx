@@ -34,6 +34,20 @@ afterEach((): void => {
 
 describe('SessionTypeControl', (): void => {
   it.each([
+    ['Flexible', 'Changes to your rules apply at once.'],
+    ['Friction', 'Changes to your rules apply at once. Only ending early costs.'],
+    ['Hard lock', 'You can add blocks while it runs. Removals wait until it ends.'],
+  ] as const)(
+    'says what %s does to a change made while it runs',
+    (label: string, edits: string): void => {
+      const view = render(<SessionTypes />);
+      const choice: HTMLElement = view.getByRole('button', { name: label });
+
+      expect(choice.textContent).toContain(edits);
+    },
+  );
+
+  it.each([
     ['focus', 'Flexible'],
     ['pointer', 'Friction'],
     ['click', 'Hard lock'],

@@ -10,6 +10,7 @@ import type {
   Rule,
   SessionMode,
   SessionRuleSnapshot,
+  Strictness,
 } from '../shared/types';
 
 /**
@@ -18,7 +19,20 @@ import type {
  */
 export interface RuleSummaryDraft {
   mode: SessionMode;
+  strictness: Strictness;
   rules: SessionRuleSnapshot;
+}
+
+/** What a Settings edit made during the session does to it, which the session type decides. */
+function scopeLine(strictness: Strictness): string {
+  switch (strictness) {
+    case 'flexible':
+      return t('popup_scope_strictness_flexible');
+    case 'friction':
+      return t('popup_scope_strictness_friction');
+    case 'hard':
+      return t('popup_scope_strictness_hard');
+  }
 }
 
 export interface RuleSummaryProps {
@@ -266,6 +280,7 @@ export function RuleSummary(props: RuleSummaryProps): VNode {
               ? t('popup_scope_whitelist')
               : t('popup_scope_blacklist')}
           </span>
+          <span>{scopeLine(props.draft.strictness)}</span>
           <button type="button" onClick={props.onOpenSettings}>
             {t('popup_open_settings_defaults')}
           </button>

@@ -430,7 +430,7 @@ export function StartForm({
             ) : null}
 
             <RuleSummary
-              draft={draft}
+              draft={{ mode: draft.mode, strictness, rules: draft.rules }}
               lists={activeLists}
               categoriesEditable={categoriesEditable}
               onCategoryToggle={(id: CategoryId): void => {

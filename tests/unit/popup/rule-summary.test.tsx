@@ -11,7 +11,7 @@ import {
   toggleDraftCategory,
 } from '../../../src/popup/session-draft';
 import { DEFAULT_LISTS, DEFAULT_SETTINGS } from '../../../src/shared/constants';
-import type { ListsConfig, Settings } from '../../../src/shared/types';
+import type { ListsConfig, Settings, Strictness } from '../../../src/shared/types';
 
 vi.mock('../../../src/core/categories', () => ({
   ALL_CATEGORIES: [
@@ -72,6 +72,30 @@ describe('session draft helpers', (): void => {
 });
 
 describe('RuleSummary', (): void => {
+  it.each([
+    ['flexible', 'Edits in Settings reach this session as you make them.'],
+    ['friction', 'Edits in Settings reach this session as you make them.'],
+    [
+      'hard',
+      'Settings edits that add blocks reach this session. Ones that remove them wait for it to end.',
+    ],
+  ] as const)(
+    'says what a Settings edit does to a %s session while it runs',
+    (strictness: Strictness, line: string): void => {
+      const view = render(
+        <RuleSummary
+          draft={{ ...createSessionDraft(DEFAULT_SETTINGS, DEFAULT_LISTS), strictness }}
+          lists={DEFAULT_LISTS}
+          categoriesEditable={true}
+          onCategoryToggle={vi.fn()}
+          onOpenSettings={vi.fn()}
+        />,
+      );
+
+      expect(view.getByText(line)).toBeTruthy();
+    },
+  );
+
   it('names the first few sites of a large category and counts the rest', (): void => {
     const lists: ListsConfig = {
       ...DEFAULT_LISTS,

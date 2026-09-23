@@ -8,6 +8,8 @@ interface SessionTypeChoice {
   value: Strictness;
   label: string;
   consequence: string;
+  /** What this type does to a rule change made while the session runs. */
+  edits: string;
   /** The one-sentence reason this choice cannot be selected, null while it can. */
   unavailableReason: string | null;
 }
@@ -44,18 +46,21 @@ export function SessionTypeControl({
       value: 'flexible',
       label: t('popup_session_type_flexible'),
       consequence: t('popup_session_type_flexible_hint'),
+      edits: t('popup_session_type_flexible_edits'),
       unavailableReason: null,
     },
     {
       value: 'friction',
       label: t('popup_session_type_friction'),
       consequence: frictionConsequence(frictionDelayMs, requireTypedPhrase),
+      edits: t('popup_session_type_friction_edits'),
       unavailableReason: null,
     },
     {
       value: 'hard',
       label: t('popup_session_type_hard'),
       consequence: t('popup_session_type_hard_hint'),
+      edits: t('popup_session_type_hard_edits'),
       unavailableReason: hardUnavailableReason ?? null,
     },
   ];
@@ -74,6 +79,7 @@ export function SessionTypeControl({
                 <span class="session-type-choice__content">
                   <span class="session-type-choice__label">{choice.label}</span>
                   <span class="session-type-choice__hint">{explanation}</span>
+                  {disabled ? null : <span class="session-type-choice__edits">{choice.edits}</span>}
                 </span>
               }
               triggerClassName="session-type-choice"
@@ -81,7 +87,7 @@ export function SessionTypeControl({
               triggerDisabled={disabled}
               onTriggerClick={(): void => onChange(choice.value)}
             >
-              {explanation}
+              {disabled ? explanation : `${explanation} ${choice.edits}`}
             </HelpPopover>
           );
         })}

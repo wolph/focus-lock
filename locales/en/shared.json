@@ -228,7 +228,7 @@
     "description": "Settings page error when cleanup did not finish."
   },
   "shared_settings_session_disclosure": {
-    "message": "The toolbar popup owns session controls. The active session keeps the rules captured when it started.",
+    "message": "The toolbar popup owns session controls. Your changes reach the running session as you make them, except a hard lock, which holds anything that unblocks until it ends.",
     "description": "Settings page note explaining that a running session cannot be edited here."
   },
   "shared_settings_timed": {

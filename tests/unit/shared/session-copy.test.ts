@@ -160,7 +160,7 @@ describe('session copy', (): void => {
       'Focus Lock could not finish browser cleanup. Open the popup and retry.',
     );
     expect(SETTINGS_SESSION_DISCLOSURE).toBe(
-      'The toolbar popup owns session controls. The active session keeps the rules captured when it started.',
+      'The toolbar popup owns session controls. Your changes reach the running session as you make them, except a hard lock, which holds anything that unblocks until it ends.',
     );
   });
 
