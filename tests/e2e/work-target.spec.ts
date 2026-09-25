@@ -335,12 +335,19 @@ test('long next steps scroll with a trackpad and touch while the blocked page st
     await page.keyboard.press('Home');
     await expect.poll(scrollTop).toBe(0);
     await cdp.send('Emulation.setTouchEmulationEnabled', { enabled: true, maxTouchPoints: 1 });
-    await cdp.send('Input.synthesizeScrollGesture', {
-      x: 180,
-      y: 400,
-      yDistance: -300,
-      gestureSourceType: 'touch',
+    // A finger drag made of touch events. Input.synthesizeScrollGesture scrolls on macOS, but
+    // headless Chromium on Linux delivers its touchstart and never a touchmove.
+    await cdp.send('Input.dispatchTouchEvent', {
+      type: 'touchStart',
+      touchPoints: [{ x: 180, y: 400 }],
     });
+    for (let step: number = 1; step <= 10; step += 1) {
+      await cdp.send('Input.dispatchTouchEvent', {
+        type: 'touchMove',
+        touchPoints: [{ x: 180, y: 400 - step * 30 }],
+      });
+    }
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
     await expect.poll(scrollTop).toBeGreaterThan(0);
     expect(await page.evaluate((): number => window.scrollY)).toBe(300);
   } finally {
