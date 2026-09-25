@@ -135,6 +135,19 @@ async function selectTarget(extPage: Page, work: TabIdentity): Promise<string> {
   return current.sessionId;
 }
 
+/** How long the overlay gets to carry the control, which is longer than a loaded CI runner needs. */
+const OVERLAY_CONTROL_TIMEOUT_MS: number = 20_000;
+
+/**
+ * Clicks one control inside the overlay's shadow root, through the accessibility tree because the
+ * control has no page-level selector.
+ *
+ * The node is looked up and clicked in one attempt, and the attempt is repeated while the overlay
+ * refreezes underneath it. A frozen view arrives whenever the worker republishes, which a session
+ * start and a work-tab status update both do, and the node the previous tree named is detached by
+ * the time it is scrolled to. Reading the tree once and trusting the id afterwards is what made
+ * this fail on CI in two different ways: a detached node, and a control that had not arrived yet.
+ */
 async function clickOverlay(
   context: BrowserContext,
   page: Page,
@@ -142,27 +155,43 @@ async function clickOverlay(
   role: string = 'button',
 ): Promise<void> {
   const session: CDPSession = await context.newCDPSession(page);
+  const deadline: number = Date.now() + OVERLAY_CONTROL_TIMEOUT_MS;
+  let lastFailure: string = `never found ${role} ${name}`;
   try {
-    await expect
-      .poll(async (): Promise<boolean> => {
+    while (Date.now() < deadline) {
+      try {
         const tree = await session.send('Accessibility.getFullAXTree');
-        return tree.nodes.some(
-          (node): boolean => node.role?.value === role && String(node.name?.value).startsWith(name),
+        const node = tree.nodes.find(
+          (entry): boolean =>
+            entry.role?.value === role && String(entry.name?.value).startsWith(name),
         );
-      })
-      .toBe(true);
-    const tree = await session.send('Accessibility.getFullAXTree');
-    const node = tree.nodes.find(
-      (entry): boolean => entry.role?.value === role && String(entry.name?.value).startsWith(name),
-    );
-    if (node?.backendDOMNodeId === undefined) throw new Error(`Missing button: ${name}`);
-    await session.send('DOM.scrollIntoViewIfNeeded', { backendNodeId: node.backendDOMNodeId });
-    const box = await session.send('DOM.getBoxModel', { backendNodeId: node.backendDOMNodeId });
-    const [left, top, right, , , bottom] = box.model.content;
-    if (left === undefined || top === undefined || right === undefined || bottom === undefined) {
-      throw new Error('Missing button coordinates');
+        if (node?.backendDOMNodeId === undefined) {
+          lastFailure = `no ${role} named ${name} in the tree`;
+          await page.waitForTimeout(100);
+          continue;
+        }
+        await session.send('DOM.scrollIntoViewIfNeeded', { backendNodeId: node.backendDOMNodeId });
+        const box = await session.send('DOM.getBoxModel', { backendNodeId: node.backendDOMNodeId });
+        const [left, top, right, , , bottom] = box.model.content;
+        if (
+          left === undefined ||
+          top === undefined ||
+          right === undefined ||
+          bottom === undefined
+        ) {
+          throw new Error('Missing button coordinates');
+        }
+        await page.mouse.click((left + right) / 2, (top + bottom) / 2);
+        return;
+      } catch (error: unknown) {
+        // A node the overlay replaced between the read and the click is the ordinary race here,
+        // and the answer to it is a fresh tree rather than a failed scenario. Anything else is
+        // reported once the budget is spent.
+        lastFailure = error instanceof Error ? error.message : String(error);
+        await page.waitForTimeout(100);
+      }
     }
-    await page.mouse.click((left + right) / 2, (top + bottom) / 2);
+    throw new Error(`Could not click ${role} ${name}: ${lastFailure}`);
   } finally {
     await session.detach();
   }
