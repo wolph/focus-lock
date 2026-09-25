@@ -30,7 +30,7 @@ Unit suite: **187 files** matching `tests/unit/**/*.test.{ts,tsx}`, the pattern
 deriving it means collecting every file, which is the expensive half of a run, and a number
 that needs a run to verify is exactly the kind that went stale here four times.
 
-End-to-end suite: **139 scenarios in 32 spec files**, as Playwright itself
+End-to-end suite: **140 scenarios in 33 spec files**, as Playwright itself
 lists them. Asking the runner rather than counting `test(` in the sources is not pedantry: a
 grep undercounts `test.skip`, which is listed and reported, and misses a spec file added
 since the grep was written. Both mistakes were present when this section was first drafted.
@@ -50,7 +50,7 @@ since the grep was written. Both mistakes were present when this section was fir
 ### closure-reasons.spec.ts (4)
 
 - a migrated session with no valid v2 form ends as an invalid active state
-- a session whose documents cannot be reached ends as a tab enforcement failure
+- a session survives a document Chrome refuses to script
 - a session whose phase alarm cannot be held ends as an alarm failure
 - a start whose registration cannot be audited fails as a registration failure
 
@@ -255,6 +255,10 @@ since the grep was written. Both mistakes were present when this section was fir
 - privacy data deletion keeps local and remote scopes separate
 - projected first-Sync publication rejects total quota overflow and preserves local policy
 - sync and local storage keep their documented split and quota
+
+### unscriptable-tabs.spec.ts (1)
+
+- a start is not refused by a tab that failed to load
 
 ### work-target.spec.ts (11)
 

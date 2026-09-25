@@ -751,8 +751,11 @@ describe('recovery failure paths', (): void => {
       'tab-enforcement-failed',
     );
     expect(result.runtime.session).toBeNull();
-    // A document with no receiver cannot be reached by trying again, so the attempt is not repeated.
-    expect(test.ports.sends).toHaveLength(2);
+    // The first document's epoch reset, its enforcement command, and the one retry it gets once
+    // the script has been put into it. Chrome allowed the script here, so silence the second time
+    // is a page this session cannot enforce: the sweep stops there and the session closes rather
+    // than running over a document nobody is covering.
+    expect(test.ports.sends).toHaveLength(3);
   });
 
   it('closes a session whose rules cannot compile', async (): Promise<void> => {

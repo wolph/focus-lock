@@ -68,6 +68,8 @@ interface SentMessage {
 
 interface WorldOptions {
   tabs?: TabRow[];
+  /** What Chrome answers when the sweep tries to put the script into one tab. */
+  scriptable?: (tabId: number, world: FakeWorld) => 'ready' | 'unscriptable';
   generationScript?: number[];
   documentIds?: Record<number, string | null>;
   generation?: number;
@@ -96,6 +98,7 @@ interface FakeWorld {
   recordedAcks: DocumentEpochResetAck[];
   commands: Map<string, FrozenDocumentCommand>;
   staleCommands: Map<string, FrozenDocumentCommand>;
+  injected: number[];
   ports: EnforcementTargetPortsV2;
   driver: SweepDriverV2;
 }
@@ -263,6 +266,7 @@ function makeWorld(options: WorldOptions = {}): FakeWorld {
     recordedAcks: [],
     commands: new Map<string, FrozenDocumentCommand>(),
     staleCommands: new Map<string, FrozenDocumentCommand>(),
+    injected: [],
     ports: {} as EnforcementTargetPortsV2,
     driver: {} as SweepDriverV2,
   };
@@ -285,6 +289,11 @@ function makeWorld(options: WorldOptions = {}): FakeWorld {
       return script[Math.min(read, script.length - 1)] ?? world.generation;
     },
     now: (): number => world.now,
+    ensureDocumentScript: async (tabId: number): Promise<'ready' | 'unscriptable'> => {
+      world.injected.push(tabId);
+      world.events.push(`inject:${String(tabId)}`);
+      return options.scriptable?.(tabId, world) ?? 'ready';
+    },
   };
   const transport: ContentTransportPortsV2 = {
     sendToDocument: async (
@@ -827,7 +836,7 @@ describe('runEnforcementPassV2 transport classification rows', () => {
 });
 
 describe('runEnforcementPassV2 fatal outcomes', () => {
-  it('never downgrades an ordinary page with no receiver', async (): Promise<void> => {
+  it('never downgrades an ordinary page that stays silent after the script is put in it', async (): Promise<void> => {
     const world: FakeWorld = makeWorld({
       acked: ['7:document-7'],
       answer: async (message: DocumentContentCommand): Promise<unknown> => {
@@ -838,8 +847,84 @@ describe('runEnforcementPassV2 fatal outcomes', () => {
 
     const result: EnforcementPassResultV2 = await runEnforcementPassV2(world.ports, world.driver);
 
+    // Chrome allows the script, so silence is a page this session cannot enforce, and it is fatal.
+    expect(world.injected).toEqual([7]);
     expect(result.kind).toBe('unreachable');
     if (result.kind === 'unreachable') expect(result.detail).toContain('7');
+  });
+
+  it('puts the script into a document that has none and enforces it', async (): Promise<void> => {
+    let receiver: boolean = false;
+    const world: FakeWorld = makeWorld({
+      acked: ['7:document-7'],
+      scriptable: (_tabId: number, world: FakeWorld): 'ready' => {
+        // Injecting is what gives this document its listener, which is the ordinary case for a
+        // tab that was already open when the extension was installed or reloaded.
+        receiver = true;
+        void world;
+        return 'ready';
+      },
+      answer: async (
+        message: DocumentContentCommand,
+        tabId: number,
+        documentId: string,
+        world: FakeWorld,
+      ): Promise<unknown> => {
+        if (isEnforcementMessage(message) && !receiver) {
+          throw new Error('Receiving end does not exist.');
+        }
+        return await defaultAnswer(message, tabId, documentId, world);
+      },
+    });
+
+    const result: EnforcementPassResultV2 = await runEnforcementPassV2(world.ports, world.driver);
+
+    expect(world.injected).toEqual([7]);
+    expect(result.kind).toBe('stable');
+    if (result.kind === 'stable') expect(result.documents).toHaveLength(1);
+  });
+
+  it('excludes a document Chrome refuses to script instead of abandoning the sweep', async (): Promise<void> => {
+    const world: FakeWorld = makeWorld({
+      tabs: [
+        { tabId: 7, url: 'https://example.com/path' },
+        { tabId: 8, url: 'https://dead.example/gone' },
+      ],
+      documentIds: { 7: 'document-7', 8: 'document-8' },
+      acked: ['7:document-7', '8:document-8'],
+      scriptable: (tabId: number): 'ready' | 'unscriptable' =>
+        tabId === 8 ? 'unscriptable' : 'ready',
+      answer: async (
+        message: DocumentContentCommand,
+        tabId: number,
+        documentId: string,
+        world: FakeWorld,
+      ): Promise<unknown> => {
+        if (isEnforcementMessage(message) && tabId === 8) {
+          throw new Error('Receiving end does not exist.');
+        }
+        return await defaultAnswer(message, tabId, documentId, world);
+      },
+    });
+
+    const result: EnforcementPassResultV2 = await runEnforcementPassV2(world.ports, world.driver);
+
+    expect(result.kind).toBe('stable');
+    if (result.kind !== 'stable') return;
+    // The page Chrome will not let the extension into is recorded rather than enforced, and the
+    // ordinary page beside it is still covered.
+    expect(result.documents.map((ack: DocumentEnforcementAck): number => ack.tabId)).toEqual([7]);
+    expect(result.exclusions).toEqual([
+      {
+        tabId: 8,
+        documentId: 'document-8',
+        url: 'https://dead.example/gone',
+        reason: 'unscriptable',
+      },
+    ]);
+    for (const exclusion of result.exclusions) {
+      expect(validateDetachedEnforcementTargetExclusion(exclusion)).toBe(true);
+    }
   });
 
   it('reports a mismatch answer with its detail', async (): Promise<void> => {

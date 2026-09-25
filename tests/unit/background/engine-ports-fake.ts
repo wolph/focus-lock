@@ -145,6 +145,7 @@ export function engineSeamPortsV2(options: EngineSeamOptionsV2): EngineSeamPorts
     topFrameDocumentId: (): Promise<string | null> => Promise.resolve(null),
     readTargetGeneration: options.readTargetGeneration ?? ((): number => 1),
     now,
+    ensureDocumentScript: (): Promise<'ready' | 'unscriptable'> => Promise.resolve('ready'),
   };
   const transport: ContentTransportPortsV2 = {
     sendToDocument: (

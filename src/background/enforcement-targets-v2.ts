@@ -37,11 +37,23 @@ export interface EnforcementTargetPortsV2 {
   topFrameDocumentId(tabId: number): Promise<string | null>;
   readTargetGeneration(): number;
   now(): number;
+  /**
+   * Puts the enforcement script into one document and answers whether Chrome permits it at all.
+   *
+   * A document with no listener is one of two things, and only trying tells them apart: an
+   * ordinary page whose script has not reached it yet, which is every tab that was already open
+   * when the extension was installed or reloaded, or a document Chrome refuses to script, such as
+   * a frame showing a network error page. The first is recoverable and the second is not, and
+   * treating both as fatal is what made one dead tab refuse every session start.
+   */
+  ensureDocumentScript(tabId: number): Promise<'ready' | 'unscriptable'>;
 }
 
 export type TargetClassificationV2 =
   | { kind: 'enforceable'; tabId: number; documentId: string; url: string }
   | { kind: 'known-unsupported'; tabId: number; documentId: string | null; url: string }
+  /** An HTTP(S) document Chrome refuses to script, learned by trying rather than by its URL. */
+  | { kind: 'unscriptable'; tabId: number; documentId: string; url: string }
   | { kind: 'changed'; tabId: number; url: string; documentId: null }
   | { kind: 'outside'; tabId: number };
 
@@ -89,7 +101,9 @@ export type FreshnessAttemptResultV2 =
 type TargetOutcomeV2 =
   | { kind: 'acknowledged'; ack: DocumentEnforcementAck }
   | { kind: 'skipped' }
-  | { kind: 'unreachable'; detail: string };
+  /** Chrome refuses to script this document, so it is recorded as excluded rather than enforced. */
+  | { kind: 'unscriptable' }
+  | { kind: 'unreachable'; detail: string; missingReceiver: boolean };
 
 /** The command answers that end the sweep. Closed and Changed are handled before this point. */
 type FatalCommandOutcomeV2 = Extract<
@@ -169,17 +183,31 @@ export async function runEnforcementPassV2(
   driver: SweepDriverV2,
 ): Promise<EnforcementPassResultV2> {
   let pending: TargetClassificationV2[] = [];
+  // Tabs this sweep has learned Chrome will not script. They are excluded for the rest of it, so
+  // neither the sends nor the stability reread asks them for an acknowledgement they cannot give.
+  const unscriptable: Set<number> = new Set<number>();
   for (let pass: number = 0; pass < MAX_TARGET_RESOLVER_PASSES; pass++) {
     const acknowledged: Map<string, DocumentEnforcementAck> = new Map<
       string,
       DocumentEnforcementAck
     >();
-    for (const target of enforceableOf(await enumerateEnforcementTargetsV2(ports))) {
-      const outcome: TargetOutcomeV2 = await applyToTargetV2(driver, target);
-      if (outcome.kind === 'unreachable') return outcome;
+    const targets: TargetClassificationV2[] = excludingUnscriptable(
+      await enumerateEnforcementTargetsV2(ports),
+      unscriptable,
+    );
+    for (const target of enforceableOf(targets)) {
+      const outcome: TargetOutcomeV2 = await applyToTargetWithRecoveryV2(ports, driver, target);
+      if (outcome.kind === 'unreachable') return { kind: 'unreachable', detail: outcome.detail };
+      if (outcome.kind === 'unscriptable') {
+        unscriptable.add(target.tabId);
+        continue;
+      }
       if (outcome.kind === 'acknowledged') acknowledged.set(targetKey(target), outcome.ack);
     }
-    const current: TargetClassificationV2[] = await enumerateEnforcementTargetsV2(ports);
+    const current: TargetClassificationV2[] = excludingUnscriptable(
+      await enumerateEnforcementTargetsV2(ports),
+      unscriptable,
+    );
     pending = current.filter(
       (target: TargetClassificationV2): boolean => target.kind === 'changed',
     );
@@ -234,6 +262,45 @@ export async function runFreshnessAttemptV2(
   };
 }
 
+/** Reclassifies the targets this sweep has already found unscriptable, so nothing asks them again. */
+function excludingUnscriptable(
+  targets: readonly TargetClassificationV2[],
+  unscriptable: ReadonlySet<number>,
+): TargetClassificationV2[] {
+  return targets.map(
+    (target: TargetClassificationV2): TargetClassificationV2 =>
+      target.kind === 'enforceable' && unscriptable.has(target.tabId)
+        ? {
+            kind: 'unscriptable',
+            tabId: target.tabId,
+            documentId: target.documentId,
+            url: target.url,
+          }
+        : target,
+  );
+}
+
+/**
+ * One document's turn, with the one recovery a missing listener allows.
+ *
+ * A document that answers nothing gets the script put into it and the whole turn again. Chrome
+ * either permits that, in which case silence the second time is a page this session cannot
+ * enforce and stays fatal, or refuses it, in which case the document is excluded. Only a missing
+ * listener is retried: a mismatch is an answer the frozen command cannot explain, and no amount
+ * of injecting changes that.
+ */
+async function applyToTargetWithRecoveryV2(
+  ports: EnforcementTargetPortsV2,
+  driver: SweepDriverV2,
+  target: EnforceableTargetV2,
+): Promise<TargetOutcomeV2> {
+  const first: TargetOutcomeV2 = await applyToTargetV2(driver, target);
+  if (first.kind !== 'unreachable' || !first.missingReceiver) return first;
+  const state: 'ready' | 'unscriptable' = await ports.ensureDocumentScript(target.tabId);
+  if (state === 'unscriptable') return { kind: 'unscriptable' };
+  return await applyToTargetV2(driver, target);
+}
+
 /**
  * Applies one frozen command to one enforceable document. The epoch handshake comes first for a
  * document that has never acknowledged this epoch, and its acknowledgement is recorded before the
@@ -264,7 +331,7 @@ async function applyToTargetV2(
   }
   if (outcome.kind === 'applied') return { kind: 'acknowledged', ack: outcome.ack };
   if (outcome.kind === 'closed' || outcome.kind === 'changed') return { kind: 'skipped' };
-  return unreachableTarget(target, commandFailureDetail(outcome));
+  return unreachableTarget(target, commandFailureDetail(outcome), outcome.kind === 'no-receiver');
 }
 
 /** Returns null when the document acknowledged the epoch, or the fatal outcome that stopped it. */
@@ -279,7 +346,7 @@ async function runEpochHandshakeV2(
     return null;
   }
   if (outcome.kind === 'closed') return { kind: 'skipped' };
-  return unreachableTarget(target, resetFailureDetail(outcome));
+  return unreachableTarget(target, resetFailureDetail(outcome), outcome.kind === 'no-receiver');
 }
 
 function commandFailureDetail(outcome: FatalCommandOutcomeV2): string {
@@ -295,10 +362,15 @@ function resetFailureDetail(outcome: FatalResetOutcomeV2): string {
   return `keeps the retired epoch ${outcome.currentEpoch}`;
 }
 
-function unreachableTarget(target: EnforceableTargetV2, detail: string): TargetOutcomeV2 {
+function unreachableTarget(
+  target: EnforceableTargetV2,
+  detail: string,
+  missingReceiver: boolean,
+): TargetOutcomeV2 {
   return {
     kind: 'unreachable',
     detail: `tab ${target.tabId} document ${target.documentId}: ${detail}`,
+    missingReceiver,
   };
 }
 
@@ -352,16 +424,16 @@ function enforceableOf(targets: readonly TargetClassificationV2[]): EnforceableT
   );
 }
 
-/** Known unsupported targets are recorded honestly and never receive a command. */
+/** Targets that never receive a command are recorded honestly, with the reason they were left out. */
 function exclusionsOf(targets: readonly TargetClassificationV2[]): EnforcementTargetExclusion[] {
   const exclusions: EnforcementTargetExclusion[] = [];
   for (const target of targets) {
-    if (target.kind !== 'known-unsupported') continue;
+    if (target.kind !== 'known-unsupported' && target.kind !== 'unscriptable') continue;
     exclusions.push({
       tabId: target.tabId,
       documentId: target.documentId,
       url: target.url,
-      reason: 'known-unsupported',
+      reason: target.kind,
     });
   }
   return exclusions;

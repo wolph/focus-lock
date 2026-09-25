@@ -535,6 +535,7 @@ function targetPorts(
     },
     readTargetGeneration: (): number => state.generation,
     now: (): number => state.now,
+    ensureDocumentScript: (): Promise<'ready' | 'unscriptable'> => Promise.resolve('ready'),
   };
 }
 

@@ -759,7 +759,7 @@ function browserResetPorts(lease: AllDataClearLease): BrowserResetPortsV2 {
     ...seam,
     now: (): number => Date.now(),
     newId: (): string => crypto.randomUUID(),
-    targets: enforcementTargetPortsV2(),
+    targets: enforcementTargetPortsV2(contentScriptFile),
     transport: {
       sendToDocument: (
         tabId: number,
@@ -1366,7 +1366,7 @@ async function boot(
       if (state.permission !== 'granted') return 'website-access-lost';
       return state.status === 'ready' ? 'ready' : 'content-registration-failed';
     },
-    targets: enforcementTargetPortsV2(),
+    targets: enforcementTargetPortsV2(contentScriptFile),
     transport: {
       sendToDocument: (
         tabId: number,

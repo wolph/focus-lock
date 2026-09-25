@@ -257,7 +257,7 @@ test.skip('a start whose registration cannot be audited fails as a registration 
   expect(runtime.session).toBeNull();
 });
 
-test('a session whose documents cannot be reached ends as a tab enforcement failure', async ({
+test('a session survives a document Chrome refuses to script', async ({
   freshInstallExtension,
 }) => {
   const launch: FreshInstallLaunch = await completedFreshInstall(freshInstallExtension);
@@ -273,8 +273,8 @@ test('a session whose documents cannot be reached ends as a tab enforcement fail
     UNREACHABLE_URL,
   );
   try {
-    // A blocked host on a port nothing answers. The tab is an enforceable http target the worker
-    // must verify, and its error document can host no content script, so no pass can verify it.
+    // A blocked host on a port nothing answers. The tab is an enforceable http target by its
+    // address, and its error document can host no content script: Chrome refuses to put one in it.
     const unreachable: Page = await launch.context.newPage();
     await unreachable.goto(UNREACHABLE_URL, { waitUntil: 'commit' }).catch((): null => null);
     await expect
@@ -283,23 +283,20 @@ test('a session whose documents cannot be reached ends as a tab enforcement fail
 
     const restarted: FreshInstallLaunch = await freshInstallExtension.restartWorker();
 
-    // Recovery cannot verify that tab, so it ends the session, and the closure it leaves cannot
-    // clear a document no content script inhabits. The person sees the session end and the worker
-    // says it is still cleaning up.
-    await waitForLifecycle(restarted.extPage, 'cleanup', 30_000);
+    // A page the browser will not let the extension into cannot show a blocked site either, so it
+    // is recorded as excluded and the session carries on. Ending someone's focus session because
+    // one tab failed to load is the behaviour this replaced.
+    await waitForLifecycle(restarted.extPage, 'active', 30_000);
+    const runtime: RuntimeStateV2 = await readRuntimeV2(restarted.worker);
+    expect(runtime.session).not.toBeNull();
+    expect(runtime.enforcementCheckpoint?.exclusions).toEqual([
+      expect.objectContaining({ url: UNREACHABLE_URL, reason: 'unscriptable' }),
+    ]);
 
-    // Leaving the address that will not load is what a person does next, and it is what the
-    // cleanup was waiting for: the error document is gone, and the tab it held a claim on is
-    // still there to be unmuted. The batch's own schedule is a minute away at its shortest and six
-    // hours at its longest, and the manual retry is only offered once that schedule is spent, so
-    // the scenario asks the browser for the alarm the journal is already waiting on rather than
-    // waiting it out.
+    // And the ordinary page beside it is still enforced: the exclusion is one document, not a
+    // session that stopped blocking.
     await unreachable.close();
-    await restarted.worker.evaluate(async (): Promise<void> => {
-      await chrome.alarms.create('closure-cleanup', { when: Date.now() });
-    });
-
-    await expectSessionClosed(restarted, 'tab-enforcement-failed');
+    await waitForLifecycle(restarted.extPage, 'active', 30_000);
   } finally {
     closeRequestWindow();
   }

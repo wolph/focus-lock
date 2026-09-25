@@ -1356,8 +1356,12 @@ export function registerTabListeners(
  * The generation the enforcement sweep reads. Every tab operation advances it, so a sweep that
  * finished under an older generation knows the target set moved under it.
  */
-/** The live enforceable targets, read from the browser rather than from any stored view. */
-export function enforcementTargetPortsV2(): EnforcementTargetPortsV2 {
+/**
+ * The live enforceable targets, read from the browser rather than from any stored view. The
+ * content script's path is passed in rather than imported: this module is loaded by the worker
+ * and by unit tests, and importing the script entry would run it in both.
+ */
+export function enforcementTargetPortsV2(contentScriptFile: string): EnforcementTargetPortsV2 {
   return {
     queryTopFrameTabs: async (): Promise<Array<{ tabId: number; url: string | null }>> => {
       const tabs: chrome.tabs.Tab[] = await chrome.tabs.query({});
@@ -1369,6 +1373,18 @@ export function enforcementTargetPortsV2(): EnforcementTargetPortsV2 {
     topFrameDocumentId: (tabId: number): Promise<string | null> => getDocumentId(tabId),
     readTargetGeneration: (): number => tabOperationSequence,
     now: (): number => Date.now(),
+    ensureDocumentScript: async (tabId: number): Promise<'ready' | 'unscriptable'> => {
+      try {
+        await chrome.scripting.executeScript({ target: { tabId }, files: [contentScriptFile] });
+        return 'ready';
+      } catch (error: unknown) {
+        // The refusals Chrome names for a frame that cannot hold a script are the ones this
+        // answers `unscriptable` for. Anything else is an injection that failed for a reason
+        // nobody has accounted for, and a page this extension cannot explain is reported as
+        // ready so the sweep keeps treating its silence as the failure it has always been.
+        return isIgnorableInjectionFailure(error) ? 'unscriptable' : 'ready';
+      }
+    },
   };
 }
 

@@ -276,12 +276,19 @@ export function validateDetachedEnforcementTargetExclusion(
     candidate !== null &&
     isNonNegativeInteger(candidate.tabId) &&
     (candidate.documentId === null || isNonBlankString(candidate.documentId)) &&
-    // The producer excludes a target only where Chrome forbids the content script, so a stored
-    // exclusion naming any other page is state no enumeration could have written.
+    // The producer excludes a target only where Chrome forbids the content script. Which pages
+    // those are is known two ways: from the address, for the pages Chrome names in its own rules,
+    // and from the attempt, for a document that refused the script when one was put into it. A
+    // stored exclusion has to match the way its reason is learned.
     isNonBlankString(candidate.url) &&
-    isKnownUnsupportedUrlV2(candidate.url) &&
-    candidate.reason === 'known-unsupported'
+    (candidate.reason === 'unscriptable'
+      ? isHttpUrl(candidate.url) && !isKnownUnsupportedUrlV2(candidate.url)
+      : candidate.reason === 'known-unsupported' && isKnownUnsupportedUrlV2(candidate.url))
   );
+}
+
+function isHttpUrl(url: string): boolean {
+  return url.startsWith('http://') || url.startsWith('https://');
 }
 
 /** Accepts only already-detached exact plain data from snapshotExactData. */

@@ -77,7 +77,12 @@ export interface EnforcementTargetExclusion {
   tabId: number;
   documentId: string | null;
   url: string;
-  reason: 'known-unsupported';
+  /**
+   * Why this target was left out. `known-unsupported` is decided by the URL alone, and
+   * `unscriptable` is an ordinary page Chrome refused to let the script into, which is learned by
+   * trying rather than by reading the address.
+   */
+  reason: 'known-unsupported' | 'unscriptable';
 }
 
 export interface EnforcementCheckpoint {

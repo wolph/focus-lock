@@ -62,7 +62,7 @@ describe('background enforcement persistence v2 contracts', (): void => {
       tabId: number;
       documentId: string | null;
       url: string;
-      reason: 'known-unsupported';
+      reason: 'known-unsupported' | 'unscriptable';
     }>();
     expectTypeOf<EnforcementCheckpoint>().toEqualTypeOf<{
       version: 1;

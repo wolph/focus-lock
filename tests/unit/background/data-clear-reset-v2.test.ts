@@ -208,6 +208,7 @@ function harness(journal: AllDataClearJournalV2 | null = browserResetJournal()):
       tabs.find((tab: FakeTargetV2): boolean => tab.tabId === tabId)?.documentId ?? null,
     readTargetGeneration: (): number => generation.value,
     now: (): number => clock.now,
+    ensureDocumentScript: (): Promise<'ready' | 'unscriptable'> => Promise.resolve('ready'),
   };
   const transport: ContentTransportPortsV2 = {
     sendToDocument: async (
