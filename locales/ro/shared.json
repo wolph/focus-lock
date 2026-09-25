@@ -653,5 +653,26 @@
         "example": "25"
       }
     }
+  },
+  "shared_category_uncheck_help": {
+    "message": "Debifează un site pentru a-l păstra disponibil în timp ce restul categoriei este blocat."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ inclus.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ păstrat disponibil.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

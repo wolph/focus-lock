@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Fokussessionen har ändrats. Öppna popup-fönstret igen."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Avmarkera en webbplats för att hålla den tillgänglig medan resten av kategorin blockeras."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ omfattas.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ hålls tillgänglig.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "সব বিভাগ বন্ধ।"
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ যুক্ত করা হয়েছে।",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ খোলা রাখা হয়েছে।",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "$CATEGORY$-এর সব সাইট যুক্ত করা হয়েছে।",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "কোনো সাইটের টিক তুলে দিন, যাতে বিভাগের বাকি অংশ ব্লক থাকলেও সেটি খোলা থাকে।"
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$-এর সাইটে একসঙ্গে কাজ",

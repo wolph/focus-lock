@@ -653,5 +653,26 @@
         "example": "25"
       }
     }
+  },
+  "shared_category_uncheck_help": {
+    "message": "Noņem atzīmi vietnei, lai tā paliktu pieejama, kamēr pārējā kategorija ir bloķēta."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ iekļauta.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ atstāta pieejama.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

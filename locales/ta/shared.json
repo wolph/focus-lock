@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "கவன அமர்வு மாறிவிட்டது. பாப்அப்பை மீண்டும் திறக்கவும்."
+  },
+  "shared_category_uncheck_help": {
+    "message": "மற்ற வகை தடுக்கப்பட்டிருக்கும்போது ஒரு தளத்தைக் கிடைக்குமாறு வைக்க அதன் தேர்வை நீக்கவும்."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ சேர்க்கப்பட்டது.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ கிடைக்குமாறு வைக்கப்பட்டது.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

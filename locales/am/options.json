@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "ሁሉም ምድቦች ጠፍተዋል።"
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ ተካቷል።",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ ተደራሽ ሆኖ ቆይቷል።",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "ሁሉም የ$CATEGORY$ ገፆች ተካትተዋል።",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "የተቀረው ምድብ ታግዶ እያለ አንድ ገፅን ተደራሽ ለማድረግ ምልክቱን ያንሱ።"
   },
   "options_category_site_bulk_actions_aria": {
     "message": "የ$CATEGORY$ ገፅ ጅምላ ተግባራት",

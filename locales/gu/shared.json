@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "ફોકસ સેશન બદલાયું છે. પોપઅપ ફરીથી ખોલો."
+  },
+  "shared_category_uncheck_help": {
+    "message": "બાકીની કેટેગરી બ્લોક હોય ત્યારે કોઈ સાઇટને ઉપલબ્ધ રાખવા માટે તેનું ચેકબોક્સ કાઢી નાખો."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ સામેલ.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ ઉપલબ્ધ રાખવામાં આવી.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

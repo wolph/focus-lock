@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "همه دسته‌ها خاموش شدند."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ افزوده شد.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ در دسترس نگه داشته شد.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "همه سایت‌های $CATEGORY$ افزوده شدند.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "تیک یک سایت را بردارید تا در دسترس بماند در حالی که بقیه دسته مسدود است."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "کنش‌های گروهی سایت‌های $CATEGORY$",

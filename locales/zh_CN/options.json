@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "所有分类已禁用。"
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ 已包含。",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ 保持可用。",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "所有 $CATEGORY$ 网站已包含。",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "取消选中网站以在阻止该分类的其余部分时保持其可用。"
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ 网站批量操作",

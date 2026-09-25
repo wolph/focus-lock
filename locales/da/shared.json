@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Fokussessionen er ændret. Åbn popuppet igen."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Fjern fluebenet ved en site for at holde den tilgængelig, mens resten af kategorien er blokeret."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ er omfattet.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ forbliver tilgængelig.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

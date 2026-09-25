@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "అన్ని కేటగిరీలు ఆఫ్‌లో ఉన్నాయి."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ చేర్చబడింది.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ అందుబాటులో ఉంచబడింది.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "అన్ని $CATEGORY$ సైట్‌లు చేర్చబడ్డాయి.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "మిగిలిన కేటగిరీ బ్లాక్ చేయబడి ఉండగా ఒక సైట్‌ను అందుబాటులో ఉంచడానికి దాని చెక్‌ను తీసివేయండి."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ సైట్ బల్క్ చర్యలు",

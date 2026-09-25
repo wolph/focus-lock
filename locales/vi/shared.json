@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Phiên tập trung đã thay đổi. Hãy mở lại popup."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Bỏ chọn một trang web để giữ trang đó truy cập được trong khi phần còn lại của danh mục vẫn bị chặn."
+  },
+  "shared_host_included_announcement": {
+    "message": "Đã đưa $HOST$ vào chặn.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "Đã giữ $HOST$ có thể truy cập.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

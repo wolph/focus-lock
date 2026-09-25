@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Фокус сесията се промени. Отвори изскачащия прозорец отново."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Премахни отметката на сайт, за да остане достъпен, докато останалата част от категорията е блокирана."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ включен.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ остава достъпен.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "Tutte le categorie disattivate."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ incluso.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ resta disponibile.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Tutti i siti di $CATEGORY$ inclusi.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "Deseleziona un sito per lasciarlo disponibile mentre il resto della categoria resta bloccato."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "Azioni di gruppo sui siti di $CATEGORY$",

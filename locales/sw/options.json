@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "Makundi yote yamezimwa."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ katikacluded.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ kuhifadhiwa kupatikana.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Tovuti zote za $CATEGORY$ zimeongezwa.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "Ondoa alama kwenye tovuti ili kuiweka ikipatikana wakati aina iliyobaki imezuiwa."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "Vitendo vya jumla vya tovuti za $CATEGORY$",

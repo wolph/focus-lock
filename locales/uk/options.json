@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "Усі категорії вимкнено."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ включено.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ залишено доступним.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Усі сайти категорії $CATEGORY$ включено.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "Зніми позначку із сайта, щоб він лишився доступним, поки решта категорії заблокована."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "Масові дії із сайтами категорії $CATEGORY$",

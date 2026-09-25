@@ -63,8 +63,8 @@ export function Categories(props: CategoriesProps): VNode {
       : [...current, host];
     setAnnouncement(
       active
-        ? t('options_host_included_announcement', { HOST: host })
-        : t('options_host_kept_available_announcement', { HOST: host }),
+        ? t('shared_host_included_announcement', { HOST: host })
+        : t('shared_host_kept_available_announcement', { HOST: host }),
     );
     props.onChange({
       ...props.lists,
@@ -210,7 +210,7 @@ export function Categories(props: CategoriesProps): VNode {
             </p>
             {open ? (
               <div>
-                <p class="help">{t('options_category_uncheck_help')}</p>
+                <p class="help">{t('shared_category_uncheck_help')}</p>
                 <fieldset
                   class="cat-bulk-actions cat-site-actions"
                   aria-label={t('options_category_site_bulk_actions_aria', {

@@ -662,5 +662,26 @@
         "example": "25"
       }
     }
+  },
+  "shared_category_uncheck_help": {
+    "message": "Atžymėk svetainę, kad ji liktų pasiekiama, kol likusi kategorija blokuojama."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ įtraukta.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ palikta pasiekiama.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

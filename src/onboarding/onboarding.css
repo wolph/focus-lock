@@ -187,14 +187,51 @@ p {
 
 .category-domains-scroll ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 4px 18px;
   margin: 0;
-  padding-inline-start: 20px;
+  padding: 0;
+  list-style: none;
 }
 
 .category-domains-scroll li {
   overflow-wrap: anywhere;
+}
+
+.category-help {
+  margin: 10px 0 0;
+  color: var(--text-soft);
+  font-size: 0.88rem;
+}
+
+.host-choice {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.host-choice input {
+  margin-top: 4px;
+  accent-color: var(--accent);
+  flex: 0 0 auto;
+}
+
+.host-choice span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* The live region announcing a site change is for screen readers only. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .sync-choice {

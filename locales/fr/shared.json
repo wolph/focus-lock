@@ -653,5 +653,26 @@
         "example": "25"
       }
     }
+  },
+  "shared_category_uncheck_help": {
+    "message": "Décoche un site pour le garder accessible pendant que le reste de la catégorie est bloqué."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ inclus.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ reste accessible.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

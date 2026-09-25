@@ -653,5 +653,26 @@
         "example": "25"
       }
     }
+  },
+  "shared_category_uncheck_help": {
+    "message": "Desmarca un sitio para dejarlo accesible mientras el resto de la categoría queda bloqueado."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ incluido.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ sigue accesible.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

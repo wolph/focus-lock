@@ -1,7 +1,7 @@
 /** @vitest-environment jsdom */
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { cleanup, fireEvent, render } from '@testing-library/preact';
+import { cleanup, fireEvent, render, within } from '@testing-library/preact';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { ALL_CATEGORIES } from '../../../src/core/categories';
 import { HOST_PAGE_SIZE } from '../../../src/core/host-search';
@@ -13,6 +13,14 @@ import { t, tPlural } from '../../../src/shared/i18n';
 import type { CategoryList, ListsConfig, WebsiteAccessChoice } from '../../../src/shared/types';
 
 afterEach((): void => cleanup());
+
+/** The search status of the open site list, apart from the step's own announcement region. */
+function hostStatus(view: ReturnType<typeof render>, category: string): HTMLElement {
+  const region: HTMLElement = view.getByRole('region', {
+    name: t('onboarding_category_domains_label', { CATEGORY: category }),
+  });
+  return within(region.closest('.host-browser') as HTMLElement).getByRole('status');
+}
 
 describe('StartingListsStep', (): void => {
   it('lists all seven bundled categories and expands their exact domains', (): void => {
@@ -51,7 +59,7 @@ describe('StartingListsStep', (): void => {
       ),
     ).toEqual(social.hosts.slice(0, HOST_PAGE_SIZE));
     expect(domains.classList.contains('category-domains-scroll')).toBe(true);
-    expect(view.getByRole('status').textContent).toBe(
+    expect(hostStatus(view, 'Social media').textContent).toBe(
       `Showing ${HOST_PAGE_SIZE} of ${social.hosts.length} sites. Search to narrow the list.`,
     );
   });
@@ -90,7 +98,9 @@ describe('StartingListsStep', (): void => {
         (item: Element): string | null => item.textContent,
       ),
     ).toEqual([beyondFirstPage]);
-    expect(view.getByRole('status').textContent).toBe(`Showing 1 of ${social.hosts.length} sites.`);
+    expect(hostStatus(view, 'Social media').textContent).toBe(
+      `Showing 1 of ${social.hosts.length} sites.`,
+    );
   });
 
   it('says so when a search matches no site in the category', (): void => {
@@ -112,7 +122,9 @@ describe('StartingListsStep', (): void => {
       target: { value: 'no-such-site.example' },
     });
 
-    expect(view.getByRole('status').textContent).toBe('No Social media site matches your search.');
+    expect(hostStatus(view, 'Social media').textContent).toBe(
+      'No Social media site matches your search.',
+    );
     expect(
       view
         .getByRole('region', {
@@ -144,6 +156,108 @@ describe('StartingListsStep', (): void => {
       ...lists,
       categories: { ...lists.categories, social: true },
     });
+  });
+
+  it('keeps an unchecked site available and announces it', (): void => {
+    const social: CategoryList = ALL_CATEGORIES.find(
+      (category: CategoryList): boolean => category.id === 'social',
+    ) as CategoryList;
+    const host: string = social.hosts[0] as string;
+    const lists: ListsConfig = {
+      ...structuredClone(DEFAULT_LISTS),
+      custom: [{ kind: 'host', pattern: 'example.com' }],
+    };
+    const onListsChange = vi.fn<(next: ListsConfig) => void>();
+    const view = render(
+      <StartingListsStep
+        lists={lists}
+        pending={false}
+        onListsChange={onListsChange}
+        onContinue={vi.fn()}
+      />,
+    );
+
+    fireEvent.click(
+      view.getByRole('button', {
+        name: t('onboarding_show_category_sites', { CATEGORY: 'Social media' }),
+      }),
+    );
+    expect(view.getByText(t('shared_category_uncheck_help'))).toBeTruthy();
+    const checkbox: HTMLInputElement = view.getByRole('checkbox', {
+      name: host,
+    }) as HTMLInputElement;
+    expect(checkbox.checked).toBe(true);
+    fireEvent.click(checkbox);
+
+    expect(onListsChange).toHaveBeenCalledWith({
+      ...lists,
+      exclusions: { social: [host] },
+    });
+    expect(
+      view.getByText(t('shared_host_kept_available_announcement', { HOST: host })),
+    ).toBeTruthy();
+  });
+
+  it('shows an excluded site unchecked, counts it out, and puts it back when checked', (): void => {
+    const social: CategoryList = ALL_CATEGORIES.find(
+      (category: CategoryList): boolean => category.id === 'social',
+    ) as CategoryList;
+    const host: string = social.hosts[0] as string;
+    const other: string = social.hosts[1] as string;
+    const lists: ListsConfig = {
+      ...structuredClone(DEFAULT_LISTS),
+      exclusions: { social: [host, other] },
+    };
+    const onListsChange = vi.fn<(next: ListsConfig) => void>();
+    const view = render(
+      <StartingListsStep
+        lists={lists}
+        pending={false}
+        onListsChange={onListsChange}
+        onContinue={vi.fn()}
+      />,
+    );
+
+    expect(view.getByText(tPlural('onboarding_site_count', social.hosts.length - 2))).toBeTruthy();
+    fireEvent.click(
+      view.getByRole('button', {
+        name: t('onboarding_show_category_sites', { CATEGORY: 'Social media' }),
+      }),
+    );
+    const checkbox: HTMLInputElement = view.getByRole('checkbox', {
+      name: host,
+    }) as HTMLInputElement;
+    expect(checkbox.checked).toBe(false);
+    fireEvent.click(checkbox);
+
+    expect(onListsChange).toHaveBeenCalledWith({
+      ...lists,
+      exclusions: { social: [other] },
+    });
+    expect(view.getByText(t('shared_host_included_announcement', { HOST: host }))).toBeTruthy();
+  });
+
+  it('disables the site checkboxes while a change is saving', (): void => {
+    const view = render(
+      <StartingListsStep
+        lists={structuredClone(DEFAULT_LISTS)}
+        pending={true}
+        onListsChange={vi.fn()}
+        onContinue={vi.fn()}
+      />,
+    );
+
+    fireEvent.click(
+      view.getByRole('button', {
+        name: t('onboarding_show_category_sites', { CATEGORY: 'Social media' }),
+      }),
+    );
+    const region: HTMLElement = view.getByRole('region', {
+      name: t('onboarding_category_domains_label', { CATEGORY: 'Social media' }),
+    });
+    for (const box of region.querySelectorAll('input[type="checkbox"]')) {
+      expect((box as HTMLInputElement).matches(':disabled')).toBe(true);
+    }
   });
 });
 

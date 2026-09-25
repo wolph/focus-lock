@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "A fókuszmenet megváltozott. Nyisd meg újra az előugró ablakot."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Vedd ki a pipát egy oldalnál, ha elérhető maradna, míg a kategória többi része blokkolva van."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ bevéve.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ elérhető marad.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

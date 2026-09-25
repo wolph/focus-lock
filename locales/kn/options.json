@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "ಎಲ್ಲಾ ವಿಭಾಗಗಳು ಆಫ್."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ ಸೇರಿಸಲಾಗಿದೆ.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ ಲಭ್ಯವಾಗಿ ಇರಿಸಲಾಗಿದೆ.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "ಎಲ್ಲಾ $CATEGORY$ ಸೈಟ್‌ಗಳು ಸೇರಿಸಲಾಗಿದೆ.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "ಉಳಿದ ವಿಭಾಗ ಬ್ಲಾಕ್ ಆಗಿರುವಾಗ ಒಂದು ಸೈಟ್ ಅನ್ನು ಲಭ್ಯವಾಗಿ ಇಡಲು ಅದರ ಚೆಕ್‌ಬಾಕ್ಸ್ ತೆಗೆದುಹಾಕಿ."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ ಸೈಟ್ ಬಲ್ಕ್ ಕ್ರಿಯೆಗಳು",

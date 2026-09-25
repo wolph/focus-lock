@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "The focus session has changed. Reopen the popup."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Uncheck a site to keep it available while the rest of the category is blocked."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ included.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ kept available.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

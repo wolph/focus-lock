@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "ഫോക്കസ് സെഷൻ മാറിയിരിക്കുന്നു. പോപ്പപ്പ് വീണ്ടും തുറക്കുക."
+  },
+  "shared_category_uncheck_help": {
+    "message": "ബാക്കി വിഭാഗം ബ്ലോക്ക് ചെയ്തിരിക്കുമ്പോൾ ഒരു സൈറ്റ് ലഭ്യമായി നിർത്താൻ അതിന്റെ ചെക്ക്‌ബോക്സ് ഒഴിവാക്കുക."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ ഉൾപ്പെടുത്തി.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ ലഭ്യമായി നിലനിർത്തി.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

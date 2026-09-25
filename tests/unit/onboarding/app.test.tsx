@@ -597,9 +597,10 @@ describe('onboarding page state', (): void => {
 
     const view = render(<App />);
 
-    expect((await view.findByRole('status')).textContent).toBe(
+    const notice: HTMLElement = await view.findByText(
       'Your saved setup progress could not be restored. Starting again with your current defaults.',
     );
+    expect(notice.getAttribute('role')).toBe('status');
     expect(view.getByText(t('onboarding_progress', { STEP: '1', TOTAL: '3' }))).toBeTruthy();
     const draft: OnboardingDraft = await persistedDraft();
     expect(draft.step).toBe(1);

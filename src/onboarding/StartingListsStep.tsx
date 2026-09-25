@@ -29,6 +29,8 @@ function modeRule(text: string, label: string): VNode {
 export function StartingListsStep(props: StartingListsStepProps): VNode {
   const [expanded, setExpanded]: [Set<CategoryId>, Dispatch<StateUpdater<Set<CategoryId>>>] =
     useState<Set<CategoryId>>(new Set<CategoryId>());
+  const [announcement, setAnnouncement]: [string, Dispatch<StateUpdater<string>>] =
+    useState<string>('');
 
   const toggleCategory: (categoryId: CategoryId) => void = (categoryId: CategoryId): void => {
     const lists: ListsConfig = {
@@ -39,6 +41,27 @@ export function StartingListsStep(props: StartingListsStepProps): VNode {
       },
     };
     void props.onListsChange(lists);
+  };
+
+  /** An unchecked site lands in lists.exclusions, the same list the options page edits. */
+  const toggleHost: (categoryId: CategoryId, host: string, active: boolean) => void = (
+    categoryId: CategoryId,
+    host: string,
+    active: boolean,
+  ): void => {
+    const current: string[] = props.lists.exclusions[categoryId] ?? [];
+    const next: string[] = active
+      ? current.filter((excluded: string): boolean => excluded !== host)
+      : [...current, host];
+    setAnnouncement(
+      active
+        ? t('shared_host_included_announcement', { HOST: host })
+        : t('shared_host_kept_available_announcement', { HOST: host }),
+    );
+    void props.onListsChange({
+      ...props.lists,
+      exclusions: { ...props.lists.exclusions, [categoryId]: next },
+    });
   };
 
   const toggleExpanded: (categoryId: CategoryId) => void = (categoryId: CategoryId): void => {
@@ -66,11 +89,18 @@ export function StartingListsStep(props: StartingListsStepProps): VNode {
         )}
       </p>
       <p>{t('onboarding_lists_defaults_note')}</p>
+      <p class="visually-hidden" role="status" aria-live="polite" aria-atomic="true">
+        {announcement}
+      </p>
       <fieldset class="category-list" disabled={props.pending}>
         <legend>{t('onboarding_lists_legend')}</legend>
         {ALL_CATEGORIES.map((category: CategoryList): VNode => {
           const open: boolean = expanded.has(category.id);
           const regionId: string = `category-domains-${category.id}`;
+          const excluded: Set<string> = new Set<string>(props.lists.exclusions[category.id] ?? []);
+          const blockedCount: number = category.hosts.filter(
+            (host: string): boolean => !excluded.has(host),
+          ).length;
           return (
             <div class="category-card" key={category.id}>
               <div class="category-card-summary">
@@ -83,7 +113,7 @@ export function StartingListsStep(props: StartingListsStepProps): VNode {
                   <span>{category.title}</span>
                 </label>
                 <span class="category-site-count">
-                  {tPlural('onboarding_site_count', category.hosts.length)}
+                  {tPlural('onboarding_site_count', blockedCount)}
                 </span>
                 <button
                   type="button"
@@ -98,17 +128,34 @@ export function StartingListsStep(props: StartingListsStepProps): VNode {
                 </button>
               </div>
               {open ? (
-                <HostBrowser
-                  hosts={category.hosts}
-                  title={category.title}
-                  regionId={regionId}
-                  regionLabel={t('onboarding_category_domains_label', {
-                    CATEGORY: category.title,
-                  })}
-                  regionClass="category-domains-scroll"
-                  listClass="category-domains"
-                  renderHost={(host: string): VNode => <li key={host}>{host}</li>}
-                />
+                <>
+                  <p class="category-help">{t('shared_category_uncheck_help')}</p>
+                  <HostBrowser
+                    hosts={category.hosts}
+                    title={category.title}
+                    regionId={regionId}
+                    regionLabel={t('onboarding_category_domains_label', {
+                      CATEGORY: category.title,
+                    })}
+                    regionClass="category-domains-scroll"
+                    listClass="category-domains"
+                    renderHost={(host: string): VNode => {
+                      const active: boolean = !excluded.has(host);
+                      return (
+                        <li key={host}>
+                          <label class="host-choice">
+                            <input
+                              type="checkbox"
+                              checked={active}
+                              onChange={(): void => toggleHost(category.id, host, !active)}
+                            />
+                            <span>{host}</span>
+                          </label>
+                        </li>
+                      );
+                    }}
+                  />
+                </>
               ) : null}
             </div>
           );

@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Die Fokussitzung hat sich geändert. Öffnen Sie das Popup erneut."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Hake eine Seite ab, damit sie erreichbar bleibt, während der Rest der Kategorie gesperrt ist."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ einbezogen.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ bleibt erreichbar.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

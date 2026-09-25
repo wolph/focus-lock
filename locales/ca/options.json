@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "Totes les categories desactivades."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ inclòs.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ es manté disponible.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Tots els llocs de $CATEGORY$ inclosos.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "Desmarca un lloc per mantenir-lo disponible mentre la resta de la categoria queda bloquejada."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "Accions massives dels llocs de $CATEGORY$",

@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "جلسه تمرکز تغییر کرده است. پنجره را دوباره باز کنید."
+  },
+  "shared_category_uncheck_help": {
+    "message": "تیک یک سایت را بردارید تا در دسترس بماند در حالی که بقیه دسته مسدود است."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ افزوده شد.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ در دسترس نگه داشته شد.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

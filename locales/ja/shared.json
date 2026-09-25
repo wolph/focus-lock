@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "フォーカスセッションが変わりました。ポップアップを開き直してください。"
+  },
+  "shared_category_uncheck_help": {
+    "message": "サイトのチェックを外して、残りのカテゴリがブロックされている間、利用可能に保ちます。"
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$が含まれています。",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$は利用可能に保たれています。",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

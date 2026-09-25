@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "专注会话已更改。请重新打开弹出窗口。"
+  },
+  "shared_category_uncheck_help": {
+    "message": "取消选中网站以在阻止该分类的其余部分时保持其可用。"
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ 已包含。",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ 保持可用。",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

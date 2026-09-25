@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "專注工作階段已變更。請重新開啟彈出式視窗。"
+  },
+  "shared_category_uncheck_help": {
+    "message": "取消選中網站以在其餘類別被封鎖時保持其可用。"
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ 已包含。",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ 保持可用。",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

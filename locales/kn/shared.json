@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "ಫೋಕಸ್ ಸೆಷನ್ ಬದಲಾಗಿದೆ. ಪಾಪ್‌ಅಪ್ ಅನ್ನು ಮತ್ತೆ ತೆರೆಯಿರಿ."
+  },
+  "shared_category_uncheck_help": {
+    "message": "ಉಳಿದ ವಿಭಾಗ ಬ್ಲಾಕ್ ಆಗಿರುವಾಗ ಒಂದು ಸೈಟ್ ಅನ್ನು ಲಭ್ಯವಾಗಿ ಇಡಲು ಅದರ ಚೆಕ್‌ಬಾಕ್ಸ್ ತೆಗೆದುಹಾಕಿ."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ ಸೇರಿಸಲಾಗಿದೆ.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ ಲಭ್ಯವಾಗಿ ಇರಿಸಲಾಗಿದೆ.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

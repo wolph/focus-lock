@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "அனைத்து வகைகளும் முடக்கத்தில்."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ சேர்க்கப்பட்டது.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ கிடைக்குமாறு வைக்கப்பட்டது.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "அனைத்து $CATEGORY$ தளங்களும் சேர்க்கப்பட்டன.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "மற்ற வகை தடுக்கப்பட்டிருக்கும்போது ஒரு தளத்தைக் கிடைக்குமாறு வைக்க அதன் தேர்வை நீக்கவும்."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ தள மொத்த செயல்கள்",

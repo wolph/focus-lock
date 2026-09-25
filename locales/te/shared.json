@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "ఫోకస్ సెషన్ మారింది. పాప్అప్‌ను మళ్లీ తెరవండి."
+  },
+  "shared_category_uncheck_help": {
+    "message": "మిగిలిన కేటగిరీ బ్లాక్ చేయబడి ఉండగా ఒక సైట్‌ను అందుబాటులో ఉంచడానికి దాని చెక్‌ను తీసివేయండి."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ చేర్చబడింది.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ అందుబాటులో ఉంచబడింది.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

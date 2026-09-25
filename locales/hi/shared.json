@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "फोकस सेशन बदल गया है। पॉपअप फिर से खोलें।"
+  },
+  "shared_category_uncheck_help": {
+    "message": "किसी साइट का चेक हटाएँ ताकि बाकी श्रेणी ब्लॉक रहते हुए वह साइट खुली रहे।"
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ शामिल किया गया।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ खुला रखा गया।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

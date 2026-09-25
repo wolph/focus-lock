@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Fokusøkten har endret seg. Åpne popup-vinduet på nytt."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Fjern avkrysningen for et nettsted for å holde det tilgjengelig mens resten av kategorien blokkeres."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ er omfattet.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ holdes tilgjengelig.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

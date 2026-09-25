@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "เซสชันโฟกัสมีการเปลี่ยนแปลง เปิดป๊อปอัปใหม่"
+  },
+  "shared_category_uncheck_help": {
+    "message": "ยกเลิกทำเครื่องหมายเว็บไซต์เพื่อให้ใช้งานได้ ขณะที่เว็บไซต์อื่นในหมวดหมู่ยังถูกบล็อก"
+  },
+  "shared_host_included_announcement": {
+    "message": "รวม $HOST$ แล้ว",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ ยังใช้งานได้",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

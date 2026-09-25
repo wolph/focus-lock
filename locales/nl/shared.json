@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Focussessie is gewijzigd. Open het venster opnieuw."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Vink een site uit om die bereikbaar te houden terwijl de rest van de categorie geblokkeerd is."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ meegenomen.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ blijft bereikbaar.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

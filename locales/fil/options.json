@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "All categoies ngf."
   },
-  "options_host_included_announcement": {
-    "message": "Kasama ang $HOST$.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "Nanatiling magagamit ang $HOST$.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Naisama ang lahat ng $CATEGORY$ site.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "I-uncheck ang isang site upang manatili itong available habang naka-block ang ibang bahagi ng kategorya."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "Mga bulk action ng site sa $CATEGORY$",

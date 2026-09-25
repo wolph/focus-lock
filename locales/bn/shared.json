@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "ফোকাস সেশন বদলে গেছে। পপআপ আবার খুলুন।"
+  },
+  "shared_category_uncheck_help": {
+    "message": "কোনো সাইটের টিক তুলে দিন, যাতে বিভাগের বাকি অংশ ব্লক থাকলেও সেটি খোলা থাকে।"
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ যুক্ত করা হয়েছে।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ খোলা রাখা হয়েছে।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

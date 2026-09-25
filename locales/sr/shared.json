@@ -653,5 +653,26 @@
         "example": "25"
       }
     }
+  },
+  "shared_category_uncheck_help": {
+    "message": "Поништи ознаку сајта да остане доступан док је остатак категорије блокиран."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ је обухваћен.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ остаје доступан.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

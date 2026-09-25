@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "جميع الفئات معطّلة."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ مُدرج.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ أُبقي متاحًا.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "جميع مواقع $CATEGORY$ مُدرجة.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "أزل تحديد موقع لإبقائه متاحًا بينما تبقى بقية الفئة محظورة."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "إجراءات جماعية على مواقع $CATEGORY$",

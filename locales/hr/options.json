@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "Sve kategorije isključene."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ uključen.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ ostaje dostupan.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Sva mjesta kategorije $CATEGORY$ uključena.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "Odznači mjesto da ga zadržiš dostupnim dok je ostatak kategorije blokiran."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "Skupne akcije mjesta kategorije $CATEGORY$",

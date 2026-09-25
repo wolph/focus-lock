@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "Όλες οι κατηγορίες απενεργοποιήθηκαν."
   },
-  "options_host_included_announcement": {
-    "message": "Ο ιστότοπος $HOST$ συμπεριλήφθηκε.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "Ο ιστότοπος $HOST$ παραμένει διαθέσιμος.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Όλοι οι ιστότοποι της κατηγορίας $CATEGORY$ συμπεριλήφθηκαν.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "Ξεμάρκαρε έναν ιστότοπο για να μείνει διαθέσιμος ενώ η υπόλοιπη κατηγορία αποκλείεται."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "Μαζικές ενέργειες για τους ιστότοπους της κατηγορίας $CATEGORY$",

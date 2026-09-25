@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "Alle categorieën uit."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ meegenomen.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ blijft bereikbaar.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Alle $CATEGORY$-sites meegenomen.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "Vink een site uit om die bereikbaar te houden terwijl de rest van de categorie geblokkeerd is."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "Bulkacties voor $CATEGORY$-sites",

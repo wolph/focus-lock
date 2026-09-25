@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "כל הקטגוריות כבויות."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ נכלל.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ נשאר זמין.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "כל האתרים בקטגוריה $CATEGORY$ נכללים.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "בטל סימון של אתר כדי להשאיר אותו זמין בזמן ששאר הקטגוריה חסומה."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "פעולות קבוצתיות על אתרים בקטגוריה $CATEGORY$",

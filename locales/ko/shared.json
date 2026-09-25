@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "집중 세션이 변경되었습니다. 팝업을 다시 여십시오."
+  },
+  "shared_category_uncheck_help": {
+    "message": "사이트의 선택을 취소하여 나머지 카테고리가 차단되는 동안 사용 가능하게 유지합니다."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$가 포함되었습니다.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$는 사용 가능하게 유지되었습니다.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

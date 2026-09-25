@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Η συνεδρία συγκέντρωσης άλλαξε. Άνοιξε ξανά το αναδυόμενο παράθυρο."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Ξεμάρκαρε έναν ιστότοπο για να μείνει διαθέσιμος ενώ η υπόλοιπη κατηγορία αποκλείεται."
+  },
+  "shared_host_included_announcement": {
+    "message": "Ο ιστότοπος $HOST$ συμπεριλήφθηκε.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "Ο ιστότοπος $HOST$ παραμένει διαθέσιμος.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

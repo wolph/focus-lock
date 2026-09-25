@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "सभी श्रेणियाँ बंद।"
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ शामिल किया गया।",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ खुला रखा गया।",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "$CATEGORY$ की सभी साइटें शामिल की गईं।",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "किसी साइट का चेक हटाएँ ताकि बाकी श्रेणी ब्लॉक रहते हुए वह साइट खुली रहे।"
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ की साइटों पर एक साथ कार्रवाई",

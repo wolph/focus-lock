@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "Đã tắt tất cả danh mục."
   },
-  "options_host_included_announcement": {
-    "message": "Đã đưa $HOST$ vào chặn.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "Đã giữ $HOST$ có thể truy cập.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Đã đưa tất cả trang web của $CATEGORY$ vào chặn.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "Bỏ chọn một trang web để giữ trang đó truy cập được trong khi phần còn lại của danh mục vẫn bị chặn."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "Thao tác hàng loạt cho trang web của $CATEGORY$",

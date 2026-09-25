@@ -435,9 +435,11 @@ test('production onboarding states fit every viewport and theme', async ({
       await page.setViewportSize(viewport);
       await seedInvalidDraft(launch, theme.mode);
       await page.reload();
-      await expect(page.getByRole('status')).toContainText(
-        'Your saved setup progress could not be restored.',
-      );
+      await expect(
+        page.getByRole('status').filter({
+          hasText: 'Your saved setup progress could not be restored.',
+        }),
+      ).toBeVisible();
       const recovery: VisualState = {
         name: 'step-1-load-recovery',
         step: 1,

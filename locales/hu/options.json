@@ -296,24 +296,6 @@
   "options_all_categories_off_announcement": {
     "message": "Minden kategória kikapcsolva."
   },
-  "options_host_included_announcement": {
-    "message": "$HOST$ bevéve.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
-  "options_host_kept_available_announcement": {
-    "message": "$HOST$ elérhető marad.",
-    "placeholders": {
-      "HOST": {
-        "content": "$1",
-        "example": "reddit.com"
-      }
-    }
-  },
   "options_all_sites_included_announcement": {
     "message": "Minden $CATEGORY$ oldal bevéve.",
     "placeholders": {
@@ -421,9 +403,6 @@
         "example": "12"
       }
     }
-  },
-  "options_category_uncheck_help": {
-    "message": "Vedd ki a pipát egy oldalnál, ha elérhető maradna, míg a kategória többi része blokkolva van."
   },
   "options_category_site_bulk_actions_aria": {
     "message": "$CATEGORY$ oldalainak tömeges műveletei",

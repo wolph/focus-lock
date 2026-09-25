@@ -680,5 +680,26 @@
         "example": "25"
       }
     }
+  },
+  "shared_category_uncheck_help": {
+    "message": "أزل تحديد موقع لإبقائه متاحًا بينما تبقى بقية الفئة محظورة."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ مُدرج.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ أُبقي متاحًا.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

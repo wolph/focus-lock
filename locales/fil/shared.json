@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Nagbago ang sesyon ng Focus. Buksan muli ang popup."
+  },
+  "shared_category_uncheck_help": {
+    "message": "I-uncheck ang isang site upang manatili itong available habang naka-block ang ibang bahagi ng kategorya."
+  },
+  "shared_host_included_announcement": {
+    "message": "Kasama ang $HOST$.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "Nanatiling magagamit ang $HOST$.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

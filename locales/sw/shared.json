@@ -644,5 +644,26 @@
   },
   "shared_work_target_action_stale_error": {
     "message": "Kikao cha mitazamo kimebadilika. Fungua tena popup."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Ondoa alama kwenye tovuti ili kuiweka ikipatikana wakati aina iliyobaki imezuiwa."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ katikacluded.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ kuhifadhiwa kupatikana.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

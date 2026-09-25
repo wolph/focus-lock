@@ -790,5 +790,29 @@
   "shared_work_target_action_stale_error": {
     "message": "The focus session has changed. Reopen the popup.",
     "description": "Answer given when a work tab action names a session that is no longer running."
+  },
+  "shared_category_uncheck_help": {
+    "message": "Uncheck a site to keep it available while the rest of the category is blocked.",
+    "description": "Explanation shown when a bundled category is opened to show its sites."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ included.",
+    "description": "Screen reader announcement after one site is put back under its blocking category. HOST holds the site address.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ kept available.",
+    "description": "Screen reader announcement after one site is excused from its blocking category. HOST holds the site address.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }

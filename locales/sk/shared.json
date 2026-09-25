@@ -662,5 +662,26 @@
         "example": "25"
       }
     }
+  },
+  "shared_category_uncheck_help": {
+    "message": "Odškrtni web, aby zostal dostupný, kým je zvyšok kategórie blokovaný."
+  },
+  "shared_host_included_announcement": {
+    "message": "$HOST$ zahrnutý.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_host_kept_available_announcement": {
+    "message": "$HOST$ zostáva dostupný.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
   }
 }
