@@ -39,6 +39,12 @@ import { DraftSummary } from './DraftSummary';
 import { DurationControl } from './DurationControl';
 import { RadioRow } from './form-controls';
 import { RuleSummary } from './RuleSummary';
+import {
+  applyRememberedChoices,
+  loadRememberedChoices,
+  type RememberedChoices,
+  saveRememberedChoices,
+} from './remembered-choices';
 import { SessionTypeControl } from './SessionTypeControl';
 import {
   addDraftAllowHost,
@@ -132,6 +138,29 @@ export function StartForm({
   const [draft, setDraft]: [StartDraft, Dispatch<StateUpdater<StartDraft>>] = useState<StartDraft>(
     (): StartDraft => createStartDraft(settings, lists),
   );
+  // The last length and type come back from storage a moment after the form first renders. A
+  // choice made in that moment wins, and nothing is written until the stored one has been read,
+  // so the Settings defaults the form starts from never overwrite what was remembered.
+  const chose: { current: boolean } = useRef<boolean>(false);
+  const remembered: { current: boolean } = useRef<boolean>(false);
+  useEffect((): (() => void) => {
+    let alive: boolean = true;
+    void loadRememberedChoices(settings.presetsMin).then(
+      (choices: RememberedChoices | null): void => {
+        if (!alive) return;
+        if (choices !== null && !chose.current) {
+          setDraft((current: StartDraft): StartDraft => applyRememberedChoices(current, choices));
+        }
+        remembered.current = true;
+      },
+    );
+    return (): void => {
+      alive = false;
+    };
+  }, []);
+  useEffect((): void => {
+    if (remembered.current) void saveRememberedChoices(draft);
+  }, [draft.duration, draft.timedStrictness]);
   const formRef: { current: HTMLElement | null } = useRef<HTMLElement | null>(null);
   const settingsRef: { current: HTMLDetailsElement | null } = useRef<HTMLDetailsElement>(null);
   const [focusField, setFocusField]: [string | null, Dispatch<StateUpdater<string | null>>] =
@@ -252,7 +281,13 @@ export function StartForm({
         setError(message);
         return;
       }
-      setDraft(createStartDraft(settings, activeLists));
+      // A fresh draft for the next session keeps the length and type that were just used.
+      setDraft(
+        applyRememberedChoices(createStartDraft(settings, activeLists), {
+          duration: draft.duration,
+          strictness: draft.timedStrictness,
+        }),
+      );
     } catch {
       setError(START_FAILED_COPY);
     } finally {
@@ -281,7 +316,10 @@ export function StartForm({
       frictionDelayMs={draft.frictionGate.delayMs}
       requireTypedPhrase={draft.frictionGate.requireTypedPhrase}
       hardUnavailableReason={indefinite ? HARD_UNAVAILABLE_REASON : undefined}
-      onChange={(next: Strictness): void => setDraft(setTimedStrictness(draft, next))}
+      onChange={(next: Strictness): void => {
+        chose.current = true;
+        setDraft(setTimedStrictness(draft, next));
+      }}
     />
   );
 
@@ -333,9 +371,10 @@ export function StartForm({
           <DurationControl
             presets={settings.presetsMin}
             value={draft.duration}
-            onChange={(next: DraftDuration): void =>
-              setDraft((current: StartDraft): StartDraft => applyDraftDuration(current, next))
-            }
+            onChange={(next: DraftDuration): void => {
+              chose.current = true;
+              setDraft((current: StartDraft): StartDraft => applyDraftDuration(current, next));
+            }}
           />
         </div>
         <div class="field-control">

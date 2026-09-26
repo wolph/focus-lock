@@ -31,6 +31,8 @@ export const LOCAL_EVENTS: string = 'events';
  * Removed by the all-data clear.
  */
 export const LOCAL_PENDING_CHANGES: string = 'pendingChanges';
+/** The session length and type the popup last opened with, on this device. Removed by the all-data clear. */
+export const LOCAL_POPUP_CHOICES: string = 'popupChoices';
 export const LOCAL_DEVICE_ID: string = 'deviceId';
 export const LOCAL_SYNC_JOURNAL: string = 'syncJournal';
 export const LOCAL_FIRST_SYNC_PUBLICATION: string = 'firstSyncPublication';

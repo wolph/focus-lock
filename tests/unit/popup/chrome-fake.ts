@@ -21,6 +21,9 @@ export const permissionsRequestMock: Mock = vi.fn(async (): Promise<boolean> => 
 export const messageListeners: MessageListener[] = [];
 export const storageChangeListeners: StorageChangeListener[] = [];
 
+/** The popup's own local storage, which starts empty for every test. */
+export const localStore: Map<string, unknown> = new Map<string, unknown>();
+
 /** Push a worker broadcast through every captured onMessage listener. */
 export function emitMessage(msg: unknown): void {
   for (const listener of [...messageListeners]) {
@@ -50,6 +53,7 @@ export function resetChromeFake(): void {
   permissionsRequestMock.mockResolvedValue(false);
   messageListeners.length = 0;
   storageChangeListeners.length = 0;
+  localStore.clear();
 }
 
 const chromeFake = {
@@ -78,6 +82,14 @@ const chromeFake = {
     request: permissionsRequestMock,
   },
   storage: {
+    local: {
+      get: async (key: string): Promise<Record<string, unknown>> =>
+        localStore.has(key) ? { [key]: structuredClone(localStore.get(key)) } : {},
+      set: async (items: Record<string, unknown>): Promise<void> => {
+        for (const [key, value] of Object.entries(items))
+          localStore.set(key, structuredClone(value));
+      },
+    },
     onChanged: {
       addListener: (listener: StorageChangeListener): void => {
         storageChangeListeners.push(listener);

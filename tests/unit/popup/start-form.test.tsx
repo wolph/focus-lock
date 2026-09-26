@@ -20,7 +20,7 @@ import {
   untilStoppedHint,
 } from '../../../src/shared/session-copy';
 import type { ListsConfig, SettingsV2 } from '../../../src/shared/types';
-import { openOptionsPageMock, resetChromeFake, sendMessageMock } from './chrome-fake';
+import { localStore, openOptionsPageMock, resetChromeFake, sendMessageMock } from './chrome-fake';
 
 vi.mock('../../../src/core/categories', () => ({
   ALL_CATEGORIES: [
@@ -403,7 +403,7 @@ describe('StartForm start command', (): void => {
     expect(view.getByText('fresh.example')).toBeTruthy();
   });
 
-  it('resets the form to Settings defaults after a successful start', async (): Promise<void> => {
+  it('clears the intention after a successful start and keeps the length and type', async (): Promise<void> => {
     const view = render(<StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />);
 
     fireEvent.input(view.getByLabelText('Intention'), { target: { value: 'ship the release' } });
@@ -413,13 +413,20 @@ describe('StartForm start command', (): void => {
     fireEvent.click(view.getByRole('button', { name: LOCK_UNTIL_MANUAL_UNLOCK_LABEL }));
 
     await waitFor((): void => {
-      expect(view.getByRole('button', { name: TIMED_START_LABEL })).toBeTruthy();
+      expect((view.getByLabelText('Intention') as HTMLInputElement).value).toBe('');
     });
-    expect((view.getByLabelText('Intention') as HTMLInputElement).value).toBe('');
+    // The next session opens on what this one used: still Until stopped, and the Hard choice is
+    // still held behind the Friction it clamps to, so a timed length brings Hard back.
+    expect(
+      view.getByRole('button', { name: UNTIL_STOPPED_LABEL }).getAttribute('aria-pressed'),
+    ).toBe('true');
     expect(view.getByRole('button', { name: 'Friction' }).getAttribute('aria-pressed')).toBe(
       'true',
     );
-    expect((view.getByRole('checkbox') as HTMLInputElement).checked).toBe(true);
+    fireEvent.click(view.getByRole('button', { name: '25 min' }));
+    expect(view.getByRole('button', { name: 'Hard lock' }).getAttribute('aria-pressed')).toBe(
+      'true',
+    );
     expect(view.queryByRole('alert')).toBeNull();
   });
 
@@ -594,4 +601,63 @@ it('keeps invalid allowed-domain feedback outside collapsed settings', (): void 
   fireEvent.click(view.getByRole('button', { name: 'Add allowed domain' }));
   details.open = false;
   expect(view.getByRole('alert').closest('details')).toBeNull();
+});
+
+describe('StartForm remembers the last length and session type', (): void => {
+  it('opens on the length and type chosen the previous time', async (): Promise<void> => {
+    localStore.set('popupChoices', {
+      version: 1,
+      duration: { kind: 'timed', presetMin: 50, customMin: '' },
+      strictness: 'hard',
+    });
+
+    const view = render(<StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />);
+
+    await waitFor((): void =>
+      expect(view.getByRole('button', { name: '50 min' }).getAttribute('aria-pressed')).toBe(
+        'true',
+      ),
+    );
+    expect(view.getByRole('button', { name: 'Hard lock' }).getAttribute('aria-pressed')).toBe(
+      'true',
+    );
+  });
+
+  it('stores a length and type as soon as they are picked', async (): Promise<void> => {
+    const view = render(<StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />);
+    // Let the empty store be read first, which is what allows writing to begin.
+    await waitFor((): void => expect(view.getByRole('button', { name: '15 min' })).toBeTruthy());
+    await new Promise((resolve: (value: unknown) => void): void => {
+      setTimeout(resolve, 0);
+    });
+
+    fireEvent.click(view.getByRole('button', { name: '15 min' }));
+    fireEvent.click(view.getByRole('button', { name: 'Flexible' }));
+
+    await waitFor((): void =>
+      expect(localStore.get('popupChoices')).toEqual({
+        version: 1,
+        duration: { kind: 'timed', presetMin: 15, customMin: '' },
+        strictness: 'flexible',
+      }),
+    );
+  });
+
+  it('never overwrites what was remembered with the defaults it opened on', async (): Promise<void> => {
+    const stored: unknown = {
+      version: 1,
+      duration: { kind: 'until-stopped', timed: { presetMin: 50, customMin: '' } },
+      strictness: 'flexible',
+    };
+    localStore.set('popupChoices', structuredClone(stored));
+
+    const view = render(<StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />);
+    await waitFor((): void =>
+      expect(view.getByRole('button', { name: 'Flexible' }).getAttribute('aria-pressed')).toBe(
+        'true',
+      ),
+    );
+
+    expect(localStore.get('popupChoices')).toEqual(stored);
+  });
 });
