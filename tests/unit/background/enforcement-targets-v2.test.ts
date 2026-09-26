@@ -45,7 +45,7 @@ import type { Verdict } from '../../../src/shared/types';
 
 type EnforceableTarget = Extract<TargetClassificationV2, { kind: 'enforceable' }>;
 type StablePassV2 = Extract<EnforcementPassResultV2, { kind: 'stable' }>;
-type TabRow = { tabId: number; url: string | null };
+type TabRow = { tabId: number; url: string | null; discarded?: boolean };
 
 const NOW: number = 1_750_000_000_000;
 const SESSION_ID: string = '10000000-0000-4000-8000-000000000001';
@@ -757,6 +757,27 @@ describe('runEnforcementPassV2 stabilization', () => {
     expect(MAX_TARGET_RESOLVER_PASSES).toBe(3);
     // one enumeration and one reread per pass, and no fourth pass
     expect(world.queries).toBe(6);
+  });
+
+  it('leaves out a discarded tab, which has no document until it is woken', async (): Promise<void> => {
+    // Chrome restores background tabs after a restart this way: an address, no renderer, and no
+    // document until the person clicks the tab, which reloads it through a navigation the
+    // registered script covers. Waiting three passes for its document refused every start.
+    const world: FakeWorld = makeWorld({
+      tabs: [
+        { tabId: 7, url: 'https://example.com/path' },
+        { tabId: 9, url: 'https://restored.example/page', discarded: true },
+      ],
+      documentIds: { 7: 'document-7', 9: null },
+      acked: ['7:document-7'],
+    });
+
+    const stable: StablePassV2 = stableResult(
+      await runEnforcementPassV2(world.ports, world.driver),
+    );
+
+    expect(stable.documents.map((ack: DocumentEnforcementAck): number => ack.tabId)).toEqual([7]);
+    expect(world.sent.every((sent: SentMessage): boolean => sent.tabId !== 9)).toBe(true);
   });
 
   it('accepts a document ID that arrives on a later pass', async (): Promise<void> => {

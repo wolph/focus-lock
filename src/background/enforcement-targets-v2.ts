@@ -33,7 +33,12 @@ export const FINAL_FRESHNESS_TIMEOUT_MS: number = 10_000;
 const HTTP_PREFIXES: readonly string[] = ['http://', 'https://'];
 
 export interface EnforcementTargetPortsV2 {
-  queryTopFrameTabs(): Promise<Array<{ tabId: number; url: string | null }>>;
+  /**
+   * Every tab with its address. `discarded` marks a tab Chrome holds without a renderer, which is
+   * how it restores background tabs after a restart: there is no document to enforce until the
+   * tab is woken, and waking it is a navigation the registered script covers.
+   */
+  queryTopFrameTabs(): Promise<Array<{ tabId: number; url: string | null; discarded?: boolean }>>;
   topFrameDocumentId(tabId: number): Promise<string | null>;
   readTargetGeneration(): number;
   now(): number;
@@ -166,6 +171,12 @@ export async function enumerateEnforcementTargetsV2(
     const outside: TargetClassificationV2 = classifyEnforcementTargetV2(tabId, url, null);
     if (outside.kind === 'outside' || url === null) {
       targets.push(outside);
+      continue;
+    }
+    // A discarded tab shows nothing and holds no document, so asking for one only waits out the
+    // pass budget and refuses the session. It is outside the set until it wakes.
+    if (row.discarded === true) {
+      targets.push({ kind: 'outside', tabId });
       continue;
     }
     targets.push(classifyEnforcementTargetV2(tabId, url, await documentIdOf(ports, tabId)));

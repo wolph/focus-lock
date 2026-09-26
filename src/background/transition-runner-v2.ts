@@ -335,7 +335,10 @@ async function startingSweepStage(
     ports.targets,
     sweepDriver(ports, matcher, 'starting'),
   );
-  if (pass.kind === 'unreachable') return failStarting(ports, transition);
+  if (pass.kind === 'unreachable') {
+    warnUnreachable(pass.detail);
+    return failStarting(ports, transition);
+  }
   const current: PendingEnforcementTransition = durableTransition(ports);
   await writeStage(
     ports,
@@ -544,7 +547,10 @@ async function freshnessStage(
     );
     return 'continue';
   }
-  if (attempt.kind === 'unreachable') return failVerification(ports);
+  if (attempt.kind === 'unreachable') {
+    warnUnreachable(attempt.detail);
+    return failVerification(ports);
+  }
   const budget: boolean = freshnessBudgetPermitsV2(
     { verificationStartedAt, freshnessAttempts: attempts },
     ports.now(),
@@ -709,6 +715,16 @@ function durationFor(
     throw new CoreError('invalid-rule', 'a window plan needs its captured bounds');
   }
   return { kind: 'timed', minutes: (window.windowEndsAt - activationAt) / MINUTE_MS };
+}
+
+/**
+ * Names the tab that stopped a session. The popup can only show the code, so without this the
+ * person is told enforcement failed and nothing anywhere says which tab to close. A warning, not
+ * an error: the worker is behaving as designed, and this is information for the person reading
+ * the service worker console.
+ */
+function warnUnreachable(detail: string): void {
+  console.warn(`Focus Lock could not reach a tab, so the session did not start: ${detail}`);
 }
 
 /** A pre-commit enforcement failure abandons a start and restores a resume, per spec 961. */

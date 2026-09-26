@@ -1363,11 +1363,22 @@ export function registerTabListeners(
  */
 export function enforcementTargetPortsV2(contentScriptFile: string): EnforcementTargetPortsV2 {
   return {
-    queryTopFrameTabs: async (): Promise<Array<{ tabId: number; url: string | null }>> => {
+    queryTopFrameTabs: async (): Promise<
+      Array<{ tabId: number; url: string | null; discarded: boolean }>
+    > => {
       const tabs: chrome.tabs.Tab[] = await chrome.tabs.query({});
       return tabs.flatMap(
-        (tab: chrome.tabs.Tab): Array<{ tabId: number; url: string | null }> =>
-          tab.id === undefined ? [] : [{ tabId: tab.id, url: tab.url ?? null }],
+        (tab: chrome.tabs.Tab): Array<{ tabId: number; url: string | null; discarded: boolean }> =>
+          tab.id === undefined
+            ? []
+            : [
+                {
+                  tabId: tab.id,
+                  url: tab.url ?? null,
+                  // Chrome reports a restored, never-loaded tab either way depending on version.
+                  discarded: tab.discarded || (tab.status as string | undefined) === 'unloaded',
+                },
+              ],
       );
     },
     topFrameDocumentId: (tabId: number): Promise<string | null> => getDocumentId(tabId),
