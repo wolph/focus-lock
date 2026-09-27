@@ -404,12 +404,12 @@ describe('renderDocumentOverlay active view', () => {
     expect(actionCalls(sendMessage)).toEqual([{ type: 'openEndGate' }]);
   });
 
-  it('keeps the credit and the actions in a collapsed drawer with the note under them', () => {
+  it('keeps the credit and the actions in an open drawer with the note under them', () => {
     renderDocumentOverlay(activeOverlay(), BLOCKED_VERDICT);
     const details: HTMLDetailsElement | null = shadowRoot().querySelector('details.access');
     if (details === null) throw new Error('missing the access drawer');
 
-    expect(details.open).toBe(false);
+    expect(details.open).toBe(true);
     expect(text('details.access summary')).toBe('Need a break or site access?');
     expect(details.querySelector('.bank')).not.toBeNull();
     expect(details.querySelector('.buttons')).not.toBeNull();
@@ -419,19 +419,23 @@ describe('renderDocumentOverlay active view', () => {
     expect(shadowRoot().querySelector('.panel > .buttons')).toBeNull();
   });
 
-  it('opens the drawer for a gate and keeps an opened drawer across a same-session repaint', () => {
+  it('opens site access with the page and keeps a closed drawer closed only within a session', () => {
+    // Unlock this site is on screen without a click, by product rule (docs/product-rules.md).
     renderDocumentOverlay(activeOverlay(), BLOCKED_VERDICT);
-    const closed: HTMLDetailsElement = shadowRoot().querySelector(
+    const drawer: HTMLDetailsElement = shadowRoot().querySelector(
       'details.access',
     ) as HTMLDetailsElement;
-    closed.open = true;
+    expect(drawer.open).toBe(true);
+    expect(shadowRoot().querySelector('details.access [data-focus="spend-unlock"]')).not.toBeNull();
+    drawer.open = false;
 
     renderDocumentOverlay(activeOverlay({ attemptsToday: 3 }), BLOCKED_VERDICT);
-    expect((shadowRoot().querySelector('details.access') as HTMLDetailsElement).open).toBe(true);
-
-    renderDocumentOverlay(activeOverlay({ sessionId: OTHER_SESSION_ID }), BLOCKED_VERDICT);
     expect((shadowRoot().querySelector('details.access') as HTMLDetailsElement).open).toBe(false);
 
+    renderDocumentOverlay(activeOverlay({ sessionId: OTHER_SESSION_ID }), BLOCKED_VERDICT);
+    expect((shadowRoot().querySelector('details.access') as HTMLDetailsElement).open).toBe(true);
+
+    (shadowRoot().querySelector('details.access') as HTMLDetailsElement).open = false;
     renderDocumentOverlay(gatedOverlay({ sessionId: OTHER_SESSION_ID }), BLOCKED_VERDICT);
     expect((shadowRoot().querySelector('details.access') as HTMLDetailsElement).open).toBe(true);
   });
@@ -618,6 +622,9 @@ describe('renderDocumentOverlay active view', () => {
 describe('clearDocumentOverlay', () => {
   it('removes the host and stops the local tick', () => {
     renderDocumentOverlay(activeOverlay(), BLOCKED_VERDICT);
+    // jsdom delivers the open drawer's toggle event from a zero-delay task of its own. Flushing it
+    // leaves the overlay's tick as the one timer standing.
+    vi.advanceTimersByTime(0);
     expect(vi.getTimerCount()).toBe(1);
 
     clearDocumentOverlay();

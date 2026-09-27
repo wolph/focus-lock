@@ -32,11 +32,11 @@ afterEach((): void => {
 });
 
 describe('return to work overlay', (): void => {
-  it('shows a next step, collapsed site access, and no attempts', (): void => {
+  it('shows a next step, open site access, and no attempts', (): void => {
     renderDocumentOverlay(activeView(), VERDICT);
     expect(root().querySelector('.intention')?.textContent).toBe('Continue your current task');
     expect(root().querySelector('summary')?.textContent).toBe('Need a break or site access?');
-    expect(root().querySelector('details')?.open).toBe(false);
+    expect(root().querySelector('details')?.open).toBe(true);
     expect(root().querySelector('.attempts')).toBeNull();
   });
 

@@ -103,7 +103,9 @@ function carriedState(overlay: MountedOverlay, next: DocumentOverlayView): Carri
       : null;
   return {
     gate: carriedGateInput(overlay, next),
-    accessOpen: same && overlay.access?.open === true,
+    // Site access is on screen from the first paint, by product rule (docs/product-rules.md,
+    // rule 7). Only a drawer the person closed themselves stays closed, and only on this session.
+    accessOpen: same ? overlay.access?.open === true : true,
     scrollTop: overlay.container.scrollTop,
     focusKey: same ? focusKey : null,
   };
@@ -280,7 +282,7 @@ function appendStartingPage(panel: HTMLElement, view: StartingOverlayView): void
 /**
  * The next step leads the page: a small heading, the intention as the main text, the provenance
  * line under it, then the calm time line and the progress bar for this focus block, the return
- * control with its status, and the collapsed site access drawer. A timed page keeps the wall
+ * control with its status, and the open site access drawer. A timed page keeps the wall
  * clock it is locked until as the smaller half of the time line, and an until-stopped page reads
  * its still status text there. `copy.lockedUntil` is the bare wall clock behind the timed
  * sentence, so it is never rendered on its own: rendering it would drop the label the worker

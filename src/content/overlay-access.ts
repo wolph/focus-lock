@@ -22,8 +22,9 @@ const GATE_WAIT_ID: string = 'focus-lock-gate-wait';
 const PHRASE_TEXT_ID: string = 'focus-lock-gate-phrase';
 
 /**
- * The credit line, the access actions or the open gate, and the note live in one collapsed
- * drawer: the page leads with the next step, and site access is there for whoever asks.
+ * The credit line, the access actions or the open gate, and the note live in one drawer under the
+ * next step. It opens with the page, so Unlock this site is never a click away, and a person who
+ * closes it keeps it closed for the rest of the session.
  */
 export function buildAccessDrawer(
   overlay: MountedOverlay,

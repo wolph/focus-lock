@@ -281,7 +281,7 @@ test('returning abandons an open gate without spending access credit', async ({
   } finally {
     await readiness.detach();
   }
-  await clickOverlay(context, blockedPage, 'Need a break or site access?', 'DisclosureTriangle');
+  // Site access is open from the first paint (docs/product-rules.md, rule 7): End is right there.
   await clickOverlay(context, blockedPage, 'End session');
   const beforeReturn: CDPSession = await context.newCDPSession(blockedPage);
   try {
@@ -842,7 +842,6 @@ test('typed gate confirmation survives theme and work-tab status updates', async
   await selectTarget(extPage, await identity(worker, workPage));
   const page: Page = await context.newPage();
   await page.goto(siteUrl('/plain.html'), { waitUntil: 'commit' });
-  await clickOverlay(context, page, 'Need a break or site access?', 'DisclosureTriangle');
   await clickOverlay(context, page, 'End session');
   const cdp: CDPSession = await context.newCDPSession(page);
   try {
