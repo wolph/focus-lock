@@ -93,13 +93,13 @@
     "message": "Instellingen overschrijden de limiet van 8 kB voor Chrome-synchronisatie. Verwijder schema-items of maak intenties korter en probeer het dan opnieuw."
   },
   "notify_lists_sync_limit": {
-    "message": "Lijsten overschrijden de limiet van 8 kB voor Chrome-synchronisatie. Verwijder eigen of toegestane regels en probeer het dan opnieuw."
+    "message": "Lijsten overschrijden de limiet van 8 kB voor Chrome-synchronisatie. Verwijder items uit de blokkeerlijst of toelatingslijst en probeer het dan opnieuw."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "er loopt een sessie op slot: geblokkeerde sites verwijderen kan pas als die eindigt"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "er loopt een sessie op slot: nieuwe toegestane items werken pas als die eindigt"
+    "message": "er loopt een sessie op slot: nieuwe items op de toelatingslijst werken pas als die eindigt"
   },
   "notify_guard_lists_disable_category": {
     "message": "er loopt een sessie op slot: categorieën uitschakelen kan pas als die eindigt"

@@ -15,13 +15,13 @@
     "message": "બ્લોકિંગ"
   },
   "options_blocking_help": {
-    "message": "કસ્ટમ નિયમો બ્લેકલિસ્ટ સેશન દરમિયાન બ્લોક કરે છે. વ્હાઇટલિસ્ટ સેશન દરમિયાન વ્હાઇટલિસ્ટ પર રહેલી સાઇટ્સ જ પહોંચી શકાય એવી રહે છે. બંડલ કરેલી કેટેગરીઓ સામાન્ય સમય બગાડતી સાઇટ્સને બ્લોક કરે છે."
+    "message": "જ્યારે સેશન પસંદ કરેલી સાઇટ્સ બ્લોક કરે છે, ત્યારે તારી બ્લોક લિસ્ટ અને તું સક્રિય કરેલી કેટેગરીઓ બ્લોક થાય છે. જ્યારે સેશન ફક્ત પસંદ કરેલી સાઇટ્સને જ મંજૂરી આપે છે, ત્યારે તારી એલાઉ લિસ્ટ જ પહોંચી શકાય એવી રહે છે. બંડલ કરેલી કેટેગરીઓ સામાન્ય સમય બગાડતી સાઇટ્સને બ્લોક કરે છે."
   },
   "options_custom_blacklist_title": {
-    "message": "કસ્ટમ બ્લેકલિસ્ટ"
+    "message": "બ્લોક લિસ્ટ"
   },
   "options_whitelist_title": {
-    "message": "વ્હાઇટલિસ્ટ"
+    "message": "એલાઉ લિસ્ટ"
   },
   "options_bundled_categories_heading": {
     "message": "બંડલ કરેલી કેટેગરીઓ"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "ઊંડું સેશન પ્રીસેટ (મિનિટ)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "બ્લેકલિસ્ટ: યાદીમાંની સાઇટ્સ બ્લોક કરો"
-  },
-  "options_mode_whitelist_label": {
-    "message": "વ્હાઇટલિસ્ટ: ફક્ત યાદીમાંની સાઇટ્સને જ મંજૂરી આપો"
   },
   "options_strictness_flexible_label": {
     "message": "લવચીક: તું જ્યારે ઇચ્છે ત્યારે સેશન સમાપ્ત કરો"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "બ્લેકલિસ્ટ"
+    "message": "પસંદ કરેલી સાઇટ્સ બ્લોક કરો"
   },
   "options_schedule_mode_whitelist": {
-    "message": "વ્હાઇટલિસ્ટ"
+    "message": "ફક્ત પસંદ કરેલી સાઇટ્સને જ મંજૂરી આપો"
   },
   "options_schedule_strictness_flexible": {
     "message": "લવચીક"

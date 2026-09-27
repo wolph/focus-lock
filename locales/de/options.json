@@ -15,10 +15,10 @@
     "message": "Sperren"
   },
   "options_blocking_help": {
-    "message": "Eigene Regeln sperren in Sperrlisten-Sitzungen. Die Erlaubnisliste ist das, was in Erlaubnislisten-Sitzungen erreichbar bleibt. Mitgelieferte Kategorien sperren verbreitete Zeitfresser."
+    "message": "Deine Sperrliste und die aktivierten Kategorien werden gesperrt, wenn eine Sitzung ausgewählte Seiten sperrt. Erlaubt eine Sitzung nur ausgewählte Seiten, bleibt allein deine Erlaubnisliste erreichbar. Mitgelieferte Kategorien sperren verbreitete Zeitfresser."
   },
   "options_custom_blacklist_title": {
-    "message": "Eigene Sperrliste"
+    "message": "Sperrliste"
   },
   "options_whitelist_title": {
     "message": "Erlaubnisliste"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Lange Sitzung (Minuten)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Sperrliste: gelistete Seiten sperren"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Erlaubnisliste: nur gelistete Seiten erlauben"
   },
   "options_strictness_flexible_label": {
     "message": "Flexibel: beende die Sitzung, wann du willst"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "Sperrliste"
+    "message": "ausgewählte Seiten sperren"
   },
   "options_schedule_mode_whitelist": {
-    "message": "Erlaubnisliste"
+    "message": "nur ausgewählte Seiten erlauben"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexibel"

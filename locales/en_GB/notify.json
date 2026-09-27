@@ -93,13 +93,13 @@
     "message": "Settings exceed the 8 KB Chrome Sync limit. Remove schedule entries or shorten intentions, then try again."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again."
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Remove entries from the block list or allow list, then try again."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "a hard session is running: removing blocked sites unlocks when it ends"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a hard session is running: new whitelist entries unlock when it ends"
+    "message": "a hard session is running: new allow list entries unlock when it ends"
   },
   "notify_guard_lists_disable_category": {
     "message": "a hard session is running: disabling categories unlocks when it ends"

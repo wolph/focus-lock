@@ -15,13 +15,13 @@
     "message": "Pagharang"
   },
   "options_blocking_help": {
-    "message": "Ang mga custom na panuntunan ay humaharang sa mga sesyon ng itim na listahan. Ang puting listahan ang nananatiling naa-akses sa mga sesyon ng puting listahan. Hinaharangan ng mga bundled na kategorya ang mga karaniwang site na nagsasayang ng oras."
+    "message": "Ang iyong listahan ng hadlang at ang mga kategorya na pinagana mo ay haharangin kapag haharangin ng sesyon ang mga napiling site. Kapag papayagan lamang ng sesyon ang mga napiling site, ang listahan mo ng pinapayagan lang ang mananatiling naa-akses. Hinaharangan ng mga bundled na kategorya ang mga karaniwang site na nagsasayang ng oras."
   },
   "options_custom_blacklist_title": {
-    "message": "Custom na itim na listahan"
+    "message": "Listahan ng hadlang"
   },
   "options_whitelist_title": {
-    "message": "Puting listahan"
+    "message": "Listahan ng pinapayagan"
   },
   "options_bundled_categories_heading": {
     "message": "Mga bundled na kategorya"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Preset ng malalim na sesyon (minuto)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Itim na listahan: harangin ang mga nakalistang site"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Puting listahan: payagan lamang ang mga nakalistang site"
   },
   "options_strictness_flexible_label": {
     "message": "Flexible: tapusin ang sesyon anumang oras na gusto mo"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "itim na listahan"
+    "message": "harangin ang mga napiling site"
   },
   "options_schedule_mode_whitelist": {
-    "message": "puting listahan"
+    "message": "payagan lamang ang mga napiling site"
   },
   "options_schedule_strictness_flexible": {
     "message": "nababaluktot"

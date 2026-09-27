@@ -15,10 +15,10 @@
     "message": "Bloqueo"
   },
   "options_blocking_help": {
-    "message": "Las reglas personalizadas bloquean durante las sesiones con lista de bloqueo. La lista de permitidos es lo que sigue accesible durante las sesiones con lista de permitidos. Las categorías incluidas bloquean los sumideros de tiempo más comunes."
+    "message": "Tu lista de bloqueo y las categorías que activas se bloquean cuando una sesión bloquea los sitios seleccionados. Cuando una sesión permite solo los sitios seleccionados, lo único que sigue accesible es tu lista de permitidos. Las categorías incluidas bloquean los sumideros de tiempo más comunes."
   },
   "options_custom_blacklist_title": {
-    "message": "Lista de bloqueo personalizada"
+    "message": "Lista de bloqueo"
   },
   "options_whitelist_title": {
     "message": "Lista de permitidos"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Preajuste de sesión larga (minutos)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Lista de bloqueo: bloquear los sitios de la lista"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Lista de permitidos: permitir solo los sitios de la lista"
   },
   "options_strictness_flexible_label": {
     "message": "Flexible: termina la sesión cuando quieras"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "lista de bloqueo"
+    "message": "bloquear los sitios seleccionados"
   },
   "options_schedule_mode_whitelist": {
-    "message": "lista de permitidos"
+    "message": "permitir solo los sitios seleccionados"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexible"

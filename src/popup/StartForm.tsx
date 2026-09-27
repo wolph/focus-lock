@@ -37,7 +37,7 @@ import { START_FAILED_COPY, startErrorMessage, startedWithoutWorkTarget } from '
 import { DomainInput } from './DomainInput';
 import { DraftSummary } from './DraftSummary';
 import { DurationControl } from './DurationControl';
-import { RadioRow } from './form-controls';
+import { RadioChip } from './form-controls';
 import { RuleSummary } from './RuleSummary';
 import {
   applyRememberedChoices,
@@ -138,7 +138,7 @@ export function StartForm({
   const [draft, setDraft]: [StartDraft, Dispatch<StateUpdater<StartDraft>>] = useState<StartDraft>(
     (): StartDraft => createStartDraft(settings, lists),
   );
-  // The last length and type come back from storage a moment after the form first renders. A
+  // The last length, type and mode come back from storage a moment after the form first renders. A
   // choice made in that moment wins, and nothing is written until the stored one has been read,
   // so the Settings defaults the form starts from never overwrite what was remembered.
   const chose: { current: boolean } = useRef<boolean>(false);
@@ -160,7 +160,7 @@ export function StartForm({
   }, []);
   useEffect((): void => {
     if (remembered.current) void saveRememberedChoices(draft);
-  }, [draft.duration, draft.timedStrictness]);
+  }, [draft.duration, draft.timedStrictness, draft.mode]);
   const formRef: { current: HTMLElement | null } = useRef<HTMLElement | null>(null);
   const settingsRef: { current: HTMLDetailsElement | null } = useRef<HTMLDetailsElement>(null);
   const [focusField, setFocusField]: [string | null, Dispatch<StateUpdater<string | null>>] =
@@ -281,11 +281,12 @@ export function StartForm({
         setError(message);
         return;
       }
-      // A fresh draft for the next session keeps the length and type that were just used.
+      // A fresh draft for the next session keeps the length, type and mode that were just used.
       setDraft(
         applyRememberedChoices(createStartDraft(settings, activeLists), {
           duration: draft.duration,
           strictness: draft.timedStrictness,
+          mode: draft.mode,
         }),
       );
     } catch {
@@ -377,6 +378,27 @@ export function StartForm({
             }}
           />
         </div>
+        <fieldset class="mode-control" aria-label={t('popup_blocking_mode_legend')}>
+          <legend>{t('popup_blocking_mode_legend')}</legend>
+          {MODE_CHOICES.map(
+            (choice: ModeChoice): VNode => (
+              <RadioChip
+                key={choice.value}
+                name="mode"
+                label={choice.label}
+                hint={choice.hint}
+                checked={draft.mode === choice.value}
+                onSelect={(): void => {
+                  chose.current = true;
+                  setDraft({ ...draft, mode: choice.value });
+                }}
+              />
+            ),
+          )}
+        </fieldset>
+        {draft.mode === 'whitelist' ? (
+          <DomainInput onAdd={addAllowedDomain} onError={setDomainError} />
+        ) : null}
         <div class="field-control">
           <label class="field-label" for="session-intention">
             {t('popup_intention_label')}
@@ -447,26 +469,6 @@ export function StartForm({
             </label>
 
             {sessionType}
-
-            <fieldset class="mode-control" aria-label={t('popup_blocking_mode_legend')}>
-              <legend>{t('popup_blocking_mode_legend')}</legend>
-              {MODE_CHOICES.map(
-                (choice: ModeChoice): VNode => (
-                  <RadioRow
-                    key={choice.value}
-                    name="mode"
-                    label={choice.label}
-                    hint={choice.hint}
-                    checked={draft.mode === choice.value}
-                    onSelect={(): void => setDraft({ ...draft, mode: choice.value })}
-                  />
-                ),
-              )}
-            </fieldset>
-
-            {draft.mode === 'whitelist' ? (
-              <DomainInput onAdd={addAllowedDomain} onError={setDomainError} />
-            ) : null}
 
             <RuleSummary
               draft={{ mode: draft.mode, strictness, rules: draft.rules }}

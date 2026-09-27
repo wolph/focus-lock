@@ -15,10 +15,10 @@
     "message": "Blocage"
   },
   "options_blocking_help": {
-    "message": "Les règles personnalisées bloquent pendant les sessions en liste de blocage. La liste d'autorisation est ce qui reste accessible pendant les sessions en liste d'autorisation. Les catégories fournies bloquent les pièges à temps les plus courants."
+    "message": "Ta liste de blocage et les catégories que tu actives sont bloquées quand une session bloque les sites sélectionnés. Quand une session autorise uniquement les sites sélectionnés, ta liste d'autorisation est tout ce qui reste accessible. Les catégories fournies bloquent les pièges à temps les plus courants."
   },
   "options_custom_blacklist_title": {
-    "message": "Liste de blocage personnalisée"
+    "message": "Liste de blocage"
   },
   "options_whitelist_title": {
     "message": "Liste d'autorisation"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Préréglage de session longue (minutes)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Liste de blocage : bloquer les sites listés"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Liste d'autorisation : n'autoriser que les sites listés"
   },
   "options_strictness_flexible_label": {
     "message": "Souple : termine la session quand tu veux"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "liste de blocage"
+    "message": "bloquer les sites sélectionnés"
   },
   "options_schedule_mode_whitelist": {
-    "message": "liste d'autorisation"
+    "message": "autoriser uniquement les sites sélectionnés"
   },
   "options_schedule_strictness_flexible": {
     "message": "souple"

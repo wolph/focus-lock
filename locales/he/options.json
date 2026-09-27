@@ -15,13 +15,13 @@
     "message": "חסימה"
   },
   "options_blocking_help": {
-    "message": "כללים מותאמים חוסמים במפגשי רשימה שחורה. הרשימה הלבנה היא מה שנשאר נגיש במפגשי רשימה לבנה. הקטגוריות המצורפות חוסמות בזבזני זמן נפוצים."
+    "message": "רשימת החסימה שלך והקטגוריות שהפעלת נחסמות כשמפגש חוסם אתרים נבחרים. כשמפגש מתיר אתרים נבחרים בלבד, רשימת ההיתר שלך היא היחידה שנשארת נגישה. הקטגוריות המצורפות חוסמות בזבזני זמן נפוצים."
   },
   "options_custom_blacklist_title": {
-    "message": "רשימה שחורה מותאמת"
+    "message": "רשימת חסימה"
   },
   "options_whitelist_title": {
-    "message": "רשימה לבנה"
+    "message": "רשימת היתר"
   },
   "options_bundled_categories_heading": {
     "message": "קטגוריות מצורפות"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "מפגש עמוק מוגדר מראש (דקות)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "רשימה שחורה: חסום את האתרים ברשימה"
-  },
-  "options_mode_whitelist_label": {
-    "message": "רשימה לבנה: התר רק את האתרים ברשימה"
   },
   "options_strictness_flexible_label": {
     "message": "גמיש: סיים את המפגש מתי שתבחר"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "רשימה שחורה"
+    "message": "חסום אתרים נבחרים"
   },
   "options_schedule_mode_whitelist": {
-    "message": "רשימה לבנה"
+    "message": "התר אתרים נבחרים בלבד"
   },
   "options_schedule_strictness_flexible": {
     "message": "גמיש"

@@ -15,10 +15,10 @@
     "message": "Esto"
   },
   "options_blocking_help": {
-    "message": "Omat säännöt estävät estolistajaksojen aikana. Sallittujen lista on se, mikä pysyy käytettävissä sallittujen listan jaksoissa. Valmiit kategoriat estävät tavalliset ajanviejät."
+    "message": "Estolistasi ja käyttöön ottamasi kategoriat estyvät, kun jakso estää valitut sivustot. Kun jakso sallii vain valitut sivustot, ainoastaan sallittujen listasi pysyy käytettävissä. Valmiit kategoriat estävät tavalliset ajanviejät."
   },
   "options_custom_blacklist_title": {
-    "message": "Oma estolista"
+    "message": "Estolista"
   },
   "options_whitelist_title": {
     "message": "Sallittujen lista"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Syvän jakson esiasetus (minuuttia)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Estolista: estä listatut sivustot"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Sallittujen lista: salli vain listatut sivustot"
   },
   "options_strictness_flexible_label": {
     "message": "Joustava: lopeta jakso milloin haluat"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "estolista"
+    "message": "estä valitut sivustot"
   },
   "options_schedule_mode_whitelist": {
-    "message": "sallittujen lista"
+    "message": "salli vain valitut sivustot"
   },
   "options_schedule_strictness_flexible": {
     "message": "joustava"

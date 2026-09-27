@@ -30,38 +30,33 @@ export function Chip({
   );
 }
 
-/** Radio with a one-line hint under the label. */
-export function RadioRow({
+/**
+ * Radio rendered as a chip. The input keeps the radio semantics, the label carries the look, and
+ * the hint is a hover explanation: the draft summary beside Start already spells the choice out.
+ */
+export function RadioChip({
   name,
   label,
   hint,
   checked,
   onSelect,
-  disabled = false,
-  describedBy,
 }: {
   name: string;
   label: string;
   hint: string;
   checked: boolean;
   onSelect: () => void;
-  disabled?: boolean;
-  describedBy?: string;
 }): VNode {
   return (
-    <label class="radio-row">
+    <label class={checked ? 'chip chip-selected radio-chip' : 'chip radio-chip'} title={hint}>
       <input
         type="radio"
+        class="radio-chip__input"
         name={name}
         checked={checked}
-        disabled={disabled}
-        aria-describedby={describedBy}
         onChange={onSelect}
       />
-      <span class="radio-text">
-        <span class="radio-label">{label}</span>
-        <span class="radio-hint">{hint}</span>
-      </span>
+      {label}
     </label>
   );
 }

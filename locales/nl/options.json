@@ -15,10 +15,10 @@
     "message": "Blokkeren"
   },
   "options_blocking_help": {
-    "message": "Eigen regels blokkeren tijdens blokkeerlijstsessies. De toelatingslijst is wat bereikbaar blijft tijdens toelatingslijstsessies. Meegeleverde categorieën blokkeren veelvoorkomende tijdvreters."
+    "message": "Je blokkeerlijst en de categorieën die je inschakelt, worden geblokkeerd wanneer een sessie geselecteerde sites blokkeert. Wanneer een sessie alleen geselecteerde sites toestaat, is je toelatingslijst het enige dat bereikbaar blijft. Meegeleverde categorieën blokkeren veelvoorkomende tijdvreters."
   },
   "options_custom_blacklist_title": {
-    "message": "Eigen blokkeerlijst"
+    "message": "Blokkeerlijst"
   },
   "options_whitelist_title": {
     "message": "Toelatingslijst"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Lange sessie (minuten)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Blokkeerlijst: vermelde sites blokkeren"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Toelatingslijst: alleen vermelde sites toestaan"
   },
   "options_strictness_flexible_label": {
     "message": "Flexibel: stop de sessie wanneer je wilt"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blokkeerlijst"
+    "message": "geselecteerde sites blokkeren"
   },
   "options_schedule_mode_whitelist": {
-    "message": "toelatingslijst"
+    "message": "alleen geselecteerde sites toestaan"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexibel"

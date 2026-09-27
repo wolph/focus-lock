@@ -15,13 +15,13 @@
     "message": "Blokowanie"
   },
   "options_blocking_help": {
-    "message": "Własne reguły blokują w sesjach z czarną listą. Biała lista to to, co pozostaje dostępne w sesjach z białą listą. Gotowe kategorie blokują typowych pożeraczy czasu."
+    "message": "Twoja lista blokowanych i włączone kategorie są blokowane, gdy sesja blokuje wybrane strony. Gdy sesja zezwala tylko na wybrane strony, dostępna pozostaje tylko Twoja lista dozwolonych. Gotowe kategorie blokują typowych pożeraczy czasu."
   },
   "options_custom_blacklist_title": {
-    "message": "Własna czarna lista"
+    "message": "Lista blokowanych"
   },
   "options_whitelist_title": {
-    "message": "Biała lista"
+    "message": "Lista dozwolonych"
   },
   "options_bundled_categories_heading": {
     "message": "Gotowe kategorie"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Głęboka sesja (minuty)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Czarna lista: blokuj wymienione strony"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Biała lista: zezwalaj tylko na wymienione strony"
   },
   "options_strictness_flexible_label": {
     "message": "Elastyczna: kończ sesję kiedy zechcesz"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "czarna lista"
+    "message": "blokuj wybrane strony"
   },
   "options_schedule_mode_whitelist": {
-    "message": "biała lista"
+    "message": "zezwalaj tylko na wybrane strony"
   },
   "options_schedule_strictness_flexible": {
     "message": "elastyczna"

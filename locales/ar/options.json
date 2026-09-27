@@ -15,13 +15,13 @@
     "message": "الحظر"
   },
   "options_blocking_help": {
-    "message": "تحظر القواعد المخصصة أثناء جلسات القائمة السوداء. والقائمة البيضاء هي ما يبقى متاحًا أثناء جلسات القائمة البيضاء. وتحظر الفئات المرفقة أكثر مضيّعات الوقت شيوعًا."
+    "message": "قائمة الحظر لديك والفئات التي تفعّلها تُحظر عندما تحظر الجلسة المواقع المحددة. وعندما تسمح الجلسة بالمواقع المحددة فقط، تبقى قائمة السماح لديك هي كل ما يظل متاحًا. وتحظر الفئات المرفقة أكثر مضيّعات الوقت شيوعًا."
   },
   "options_custom_blacklist_title": {
-    "message": "قائمة سوداء مخصصة"
+    "message": "قائمة الحظر"
   },
   "options_whitelist_title": {
-    "message": "القائمة البيضاء"
+    "message": "قائمة السماح"
   },
   "options_bundled_categories_heading": {
     "message": "الفئات المرفقة"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "إعداد الجلسة العميقة (بالدقائق)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "قائمة سوداء: حظر المواقع المدرجة"
-  },
-  "options_mode_whitelist_label": {
-    "message": "قائمة بيضاء: السماح بالمواقع المدرجة فقط"
   },
   "options_strictness_flexible_label": {
     "message": "مرن: أنهِ الجلسة متى شئت"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "قائمة سوداء"
+    "message": "حظر المواقع المحددة"
   },
   "options_schedule_mode_whitelist": {
-    "message": "قائمة بيضاء"
+    "message": "السماح بالمواقع المحددة فقط"
   },
   "options_schedule_strictness_flexible": {
     "message": "مرن"

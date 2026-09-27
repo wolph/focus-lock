@@ -15,10 +15,10 @@
     "message": "차단"
   },
   "options_blocking_help": {
-    "message": "사용자 지정 규칙은 검은목록 세션 중에 차단합니다. 허용 목록은 허용 목록 세션 중에 도달 가능한 것입니다. 번들 카테고리는 일반적인 시간 낭비를 차단합니다."
+    "message": "차단 목록과 활성화한 카테고리는 세션이 선택한 사이트를 차단할 때 차단됩니다. 세션이 선택한 사이트만 허용할 때는 허용 목록만 계속 접근 가능합니다. 번들 카테고리는 흔한 시간 낭비 사이트를 차단합니다."
   },
   "options_custom_blacklist_title": {
-    "message": "사용자 지정 검은목록"
+    "message": "차단 목록"
   },
   "options_whitelist_title": {
     "message": "허용 목록"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "깊은 세션 프리셋(분)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "검은목록：나열된 사이트 차단"
-  },
-  "options_mode_whitelist_label": {
-    "message": "허용 목록：나열된 사이트만 허용"
   },
   "options_strictness_flexible_label": {
     "message": "유연：언제든지 세션을 종료할 수 있습니다"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "검은목록"
+    "message": "선택한 사이트 차단"
   },
   "options_schedule_mode_whitelist": {
-    "message": "허용 목록"
+    "message": "선택한 사이트만 허용"
   },
   "options_schedule_strictness_flexible": {
     "message": "유연"

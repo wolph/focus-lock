@@ -93,13 +93,13 @@
     "message": "Indstillingerne overskrider grænsen på 8 kB for Chrome-synkronisering. Fjern poster i tidsplanen, eller forkort hensigter, og prøv så igen."
   },
   "notify_lists_sync_limit": {
-    "message": "Listerne overskrider grænsen på 8 kB for Chrome-synkronisering. Fjern egne eller tilladte regler, og prøv så igen."
+    "message": "Listerne overskrider grænsen på 8 kB for Chrome-synkronisering. Fjern indtastninger fra blokeringslisten eller tilladelseslisten, og prøv så igen."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "en session med hård lås kører: blokerede sites kan først fjernes, når den slutter"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "en session med hård lås kører: nye tilladte poster virker først, når den slutter"
+    "message": "en session med hård lås kører: nye poster i tilladelseslisten låses op, når den slutter"
   },
   "notify_guard_lists_disable_category": {
     "message": "en session med hård lås kører: kategorier kan først slås fra, når den slutter"

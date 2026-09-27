@@ -15,10 +15,10 @@
     "message": "ब्लॉकिंग"
   },
   "options_blocking_help": {
-    "message": "तुमचे स्वतःचे नियम ब्लॉक यादीच्या सेशनमध्ये ब्लॉक करतात. परवानगी यादी म्हणजे परवानगी यादीच्या सेशनमध्ये उघडे राहणारे. तयार श्रेणी नेहमीच्या वेळखाऊ साइट ब्लॉक करतात."
+    "message": "सेशन निवडलेल्या साइट ब्लॉक करते तेव्हा तुमची ब्लॉक यादी आणि तुम्ही सुरू केलेल्या श्रेणी ब्लॉक होतात. सेशन फक्त निवडलेल्या साइट उघड्या ठेवते तेव्हा फक्त तुमची परवानगी यादी उघडी राहते. तयार श्रेणी नेहमीच्या वेळखाऊ साइट ब्लॉक करतात."
   },
   "options_custom_blacklist_title": {
-    "message": "स्वतःची ब्लॉक यादी"
+    "message": "ब्लॉक यादी"
   },
   "options_whitelist_title": {
     "message": "परवानगी यादी"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "सखोल सेशन प्रीसेट (मिनिटे)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "ब्लॉक यादी: यादीतील साइट ब्लॉक करा"
-  },
-  "options_mode_whitelist_label": {
-    "message": "परवानगी यादी: फक्त यादीतील साइट उघड्या ठेवा"
   },
   "options_strictness_flexible_label": {
     "message": "लवचिक: हवे तेव्हा सेशन संपवा"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "ब्लॉक यादी"
+    "message": "निवडलेल्या साइट ब्लॉक करा"
   },
   "options_schedule_mode_whitelist": {
-    "message": "परवानगी यादी"
+    "message": "फक्त निवडलेल्या साइट उघड्या ठेवा"
   },
   "options_schedule_strictness_flexible": {
     "message": "लवचिक"

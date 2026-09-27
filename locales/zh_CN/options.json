@@ -15,10 +15,10 @@
     "message": "阻止"
   },
   "options_blocking_help": {
-    "message": "自定义规则在黑名单会话期间阻止。允许列表是在允许列表会话期间保持可达的。捆绑分类阻止常见时间黑洞。"
+    "message": "当会话阻止选定网站时，您的阻止列表和您启用的分类会被阻止。当会话仅允许选定网站时，只有您的允许列表仍可访问。捆绑分类会阻止常见的时间黑洞。"
   },
   "options_custom_blacklist_title": {
-    "message": "自定义黑名单"
+    "message": "阻止列表"
   },
   "options_whitelist_title": {
     "message": "允许列表"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "深度会话预设（分钟）"
-  },
-  "options_mode_blacklist_label": {
-    "message": "黑名单：阻止列出的网站"
-  },
-  "options_mode_whitelist_label": {
-    "message": "允许列表：仅允许列出的网站"
   },
   "options_strictness_flexible_label": {
     "message": "灵活：随时结束会话"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "黑名单"
+    "message": "阻止选定网站"
   },
   "options_schedule_mode_whitelist": {
-    "message": "允许列表"
+    "message": "仅允许选定网站"
   },
   "options_schedule_strictness_flexible": {
     "message": "灵活"

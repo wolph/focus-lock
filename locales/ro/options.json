@@ -15,13 +15,13 @@
     "message": "Blocare"
   },
   "options_blocking_help": {
-    "message": "Regulile personalizate blochează în sesiunile cu listă neagră. Lista albă este ceea ce rămâne accesibil în sesiunile cu listă albă. Categoriile incluse blochează cei mai obișnuiți consumatori de timp."
+    "message": "Lista ta de blocare și categoriile pe care le activezi sunt blocate atunci când o sesiune blochează site-urile selectate. Când o sesiune permite doar site-urile selectate, lista ta de permise este tot ce rămâne accesibil. Categoriile incluse blochează cei mai obișnuiți consumatori de timp."
   },
   "options_custom_blacklist_title": {
-    "message": "Listă neagră personalizată"
+    "message": "Listă de blocare"
   },
   "options_whitelist_title": {
-    "message": "Listă albă"
+    "message": "Listă de permise"
   },
   "options_bundled_categories_heading": {
     "message": "Categorii incluse"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Presetare sesiune profundă (minute)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Listă neagră: blochează site-urile din listă"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Listă albă: permite doar site-urile din listă"
   },
   "options_strictness_flexible_label": {
     "message": "Flexibil: încheie sesiunea oricând vrei"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "listă neagră"
+    "message": "blochează site-urile selectate"
   },
   "options_schedule_mode_whitelist": {
-    "message": "listă albă"
+    "message": "permite doar site-urile selectate"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexibil"

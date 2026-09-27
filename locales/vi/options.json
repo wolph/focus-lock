@@ -15,10 +15,10 @@
     "message": "Chặn"
   },
   "options_blocking_help": {
-    "message": "Quy tắc tùy chỉnh chặn trong phiên danh sách chặn. Danh sách cho phép là những gì vẫn truy cập được trong phiên danh sách cho phép. Danh mục có sẵn chặn các trang web gây mất thời gian phổ biến."
+    "message": "Danh sách chặn của bạn và các danh mục bạn bật sẽ bị chặn khi phiên chặn các trang đã chọn. Khi phiên chỉ cho phép các trang đã chọn, danh sách cho phép của bạn là thứ duy nhất vẫn truy cập được. Danh mục có sẵn chặn các trang web gây mất thời gian phổ biến."
   },
   "options_custom_blacklist_title": {
-    "message": "Danh sách chặn tùy chỉnh"
+    "message": "Danh sách chặn"
   },
   "options_whitelist_title": {
     "message": "Danh sách cho phép"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Mốc phiên chuyên sâu (phút)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Danh sách chặn: chặn các trang trong danh sách"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Danh sách cho phép: chỉ cho phép các trang trong danh sách"
   },
   "options_strictness_flexible_label": {
     "message": "Linh hoạt: kết thúc phiên bất cứ khi nào bạn muốn"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "danh sách chặn"
+    "message": "chặn các trang đã chọn"
   },
   "options_schedule_mode_whitelist": {
-    "message": "danh sách cho phép"
+    "message": "chỉ cho phép các trang đã chọn"
   },
   "options_schedule_strictness_flexible": {
     "message": "linh hoạt"

@@ -15,13 +15,13 @@
     "message": "Blokiranje"
   },
   "options_blocking_help": {
-    "message": "Prilagođena pravila blokuju tijekom crne liste sesija. Bijela lista je ono što ostaje dostupno tijekom sesija bijele liste. Ugrađene kategorije blokuju česte vremenske provalije."
+    "message": "Tvoj popis blokiranih i kategorije koje uključiš blokiraju se kad sesija blokira odabrane web-stranice. Kad sesija dopušta samo odabrane web-stranice, tvoj popis dopuštenih je sve što ostaje dostupno. Ugrađene kategorije blokiraju česte vremenske provalije."
   },
   "options_custom_blacklist_title": {
-    "message": "Prilagođena crna lista"
+    "message": "Popis blokiranih"
   },
   "options_whitelist_title": {
-    "message": "Bijela lista"
+    "message": "Popis dopuštenih"
   },
   "options_bundled_categories_heading": {
     "message": "Ugrađene kategorije"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Duboka predloga sesije (minute)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Crna lista: blokiraj navedena mjesta"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Bijela lista: dozvoli samo navedena mjesta"
   },
   "options_strictness_flexible_label": {
     "message": "Fleksibilna: završi sesiju kada god želiš"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "crna lista"
+    "message": "blokiraj odabrane web-stranice"
   },
   "options_schedule_mode_whitelist": {
-    "message": "bijela lista"
+    "message": "dopusti samo odabrane web-stranice"
   },
   "options_schedule_strictness_flexible": {
     "message": "fleksibilna"

@@ -403,10 +403,11 @@ describe('StartForm start command', (): void => {
     expect(view.getByText('fresh.example')).toBeTruthy();
   });
 
-  it('clears the intention after a successful start and keeps the length and type', async (): Promise<void> => {
+  it('clears the intention after a successful start and keeps the length, type and mode', async (): Promise<void> => {
     const view = render(<StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />);
 
     fireEvent.input(view.getByLabelText('Intention'), { target: { value: 'ship the release' } });
+    fireEvent.click(view.getByRole('radio', { name: /Allow selected sites only/ }));
     fireEvent.click(view.getByRole('button', { name: 'Hard lock' }));
     fireEvent.click(view.getByRole('button', { name: UNTIL_STOPPED_LABEL }));
     // Hard clamps to Friction for an indefinite draft, so the button locks rather than starts.
@@ -423,6 +424,9 @@ describe('StartForm start command', (): void => {
     expect(view.getByRole('button', { name: 'Friction' }).getAttribute('aria-pressed')).toBe(
       'true',
     );
+    expect(
+      (view.getByRole('radio', { name: /Allow selected sites only/ }) as HTMLInputElement).checked,
+    ).toBe(true);
     fireEvent.click(view.getByRole('button', { name: '25 min' }));
     expect(view.getByRole('button', { name: 'Hard lock' }).getAttribute('aria-pressed')).toBe(
       'true',
@@ -558,6 +562,16 @@ describe('StartForm settings link, list rebase, and layout', (): void => {
 });
 
 describe('quiet session settings', (): void => {
+  it('keeps the blocking mode visible while the settings are collapsed', (): void => {
+    const view: ReturnType<typeof render> = render(
+      <StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />,
+    );
+    const mode: HTMLElement = view.getByRole('group', { name: 'Blocking mode' });
+    expect(mode.closest('details')).toBeNull();
+    fireEvent.click(view.getByRole('radio', { name: /Allow selected sites only/ }));
+    expect(view.getByLabelText('Add an allowed domain').closest('details')).toBeNull();
+  });
+
   it('starts collapsed and opens the chooser from Change', (): void => {
     const view: ReturnType<typeof render> = render(
       <StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />,
@@ -603,12 +617,13 @@ it('keeps invalid allowed-domain feedback outside collapsed settings', (): void 
   expect(view.getByRole('alert').closest('details')).toBeNull();
 });
 
-describe('StartForm remembers the last length and session type', (): void => {
-  it('opens on the length and type chosen the previous time', async (): Promise<void> => {
+describe('StartForm remembers the last length, session type and mode', (): void => {
+  it('opens on the length, type and mode chosen the previous time', async (): Promise<void> => {
     localStore.set('popupChoices', {
       version: 1,
       duration: { kind: 'timed', presetMin: 50, customMin: '' },
       strictness: 'hard',
+      mode: 'whitelist',
     });
 
     const view = render(<StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />);
@@ -621,9 +636,12 @@ describe('StartForm remembers the last length and session type', (): void => {
     expect(view.getByRole('button', { name: 'Hard lock' }).getAttribute('aria-pressed')).toBe(
       'true',
     );
+    expect(
+      (view.getByRole('radio', { name: /Allow selected sites only/ }) as HTMLInputElement).checked,
+    ).toBe(true);
   });
 
-  it('stores a length and type as soon as they are picked', async (): Promise<void> => {
+  it('stores a length, type and mode as soon as they are picked', async (): Promise<void> => {
     const view = render(<StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />);
     // Let the empty store be read first, which is what allows writing to begin.
     await waitFor((): void => expect(view.getByRole('button', { name: '15 min' })).toBeTruthy());
@@ -633,12 +651,14 @@ describe('StartForm remembers the last length and session type', (): void => {
 
     fireEvent.click(view.getByRole('button', { name: '15 min' }));
     fireEvent.click(view.getByRole('button', { name: 'Flexible' }));
+    fireEvent.click(view.getByRole('radio', { name: /Allow selected sites only/ }));
 
     await waitFor((): void =>
       expect(localStore.get('popupChoices')).toEqual({
         version: 1,
         duration: { kind: 'timed', presetMin: 15, customMin: '' },
         strictness: 'flexible',
+        mode: 'whitelist',
       }),
     );
   });
@@ -648,6 +668,7 @@ describe('StartForm remembers the last length and session type', (): void => {
       version: 1,
       duration: { kind: 'until-stopped', timed: { presetMin: 50, customMin: '' } },
       strictness: 'flexible',
+      mode: 'whitelist',
     };
     localStore.set('popupChoices', structuredClone(stored));
 

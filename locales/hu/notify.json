@@ -93,13 +93,13 @@
     "message": "A beállítások túllépik a Chrome Sync 8 KB-os korlátját. Törölj ütemezési bejegyzéseket, vagy rövidítsd a szándékokat, majd próbáld újra."
   },
   "notify_lists_sync_limit": {
-    "message": "A listák túllépik a Chrome Sync 8 KB-os korlátját. Törölj egyéni vagy engedélyezett szabályokat, majd próbáld újra."
+    "message": "A listák túllépik a Chrome Sync 8 KB-os korlátját. Törölj elemeket a tiltólistából vagy az engedélyezési listából, majd próbáld újra."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "teljes zárolású menet fut: az eltávolított oldalak a végén oldódnak fel"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "teljes zárolású menet fut: az új engedélyezett bejegyzések a végén lépnek életbe"
+    "message": "teljes zárolású menet fut: az engedélyezési lista új bejegyzései a végén lépnek életbe"
   },
   "notify_guard_lists_disable_category": {
     "message": "teljes zárolású menet fut: a kikapcsolt kategóriák a végén oldódnak fel"

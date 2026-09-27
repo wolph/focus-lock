@@ -15,10 +15,10 @@
     "message": "Engelleme"
   },
   "options_blocking_help": {
-    "message": "Özel kurallar, engelleme listesi seanslarında engeller. İzin listesi ise izin listesi seanslarında erişilebilir kalan şeydir. Hazır kategoriler yaygın zaman tuzaklarını engeller."
+    "message": "Bir seans seçili siteleri engellediğinde engelleme listen ve etkinleştirdiğin kategoriler engellenir. Bir seans yalnızca seçili sitelere izin verdiğinde erişilebilir kalan tek şey izin listendir. Hazır kategoriler yaygın zaman tuzaklarını engeller."
   },
   "options_custom_blacklist_title": {
-    "message": "Özel engelleme listesi"
+    "message": "Engelleme listesi"
   },
   "options_whitelist_title": {
     "message": "İzin listesi"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Derin seans hazır ayarı (dakika)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Engelleme listesi: listedeki siteleri engelle"
-  },
-  "options_mode_whitelist_label": {
-    "message": "İzin listesi: yalnızca listedeki sitelere izin ver"
   },
   "options_strictness_flexible_label": {
     "message": "Esnek: seansı istediğin an bitirirsin"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "engelleme"
+    "message": "seçili siteleri engelle"
   },
   "options_schedule_mode_whitelist": {
-    "message": "izin"
+    "message": "yalnızca seçili sitelere izin ver"
   },
   "options_schedule_strictness_flexible": {
     "message": "esnek"

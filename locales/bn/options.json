@@ -15,10 +15,10 @@
     "message": "ব্লকিং"
   },
   "options_blocking_help": {
-    "message": "আপনার নিজের নিয়ম ব্লক তালিকার সেশনে ব্লক করে। অনুমতি তালিকা সেটাই, যা অনুমতি তালিকার সেশনে খোলা থাকে। তৈরি বিভাগগুলি চেনা সময়নষ্টকারী সাইট ব্লক করে।"
+    "message": "একটি সেশন বেছে নেওয়া সাইট ব্লক করলে আপনার ব্লক তালিকা ও চালু করা বিভাগগুলি ব্লক হয়। একটি সেশন শুধু বেছে নেওয়া সাইট খুললে, তখন শুধু আপনার অনুমতি তালিকা খোলা থাকে। তৈরি বিভাগগুলি চেনা সময়নষ্টকারী সাইট ব্লক করে।"
   },
   "options_custom_blacklist_title": {
-    "message": "নিজের ব্লক তালিকা"
+    "message": "ব্লক তালিকা"
   },
   "options_whitelist_title": {
     "message": "অনুমতি তালিকা"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "গভীর সেশন প্রিসেট (মিনিট)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "ব্লক তালিকা: তালিকার সাইট ব্লক করুন"
-  },
-  "options_mode_whitelist_label": {
-    "message": "অনুমতি তালিকা: শুধু তালিকার সাইট খুলুন"
   },
   "options_strictness_flexible_label": {
     "message": "নমনীয়: যখন ইচ্ছা সেশন শেষ করুন"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "ব্লক তালিকা"
+    "message": "বেছে নেওয়া সাইট ব্লক করুন"
   },
   "options_schedule_mode_whitelist": {
-    "message": "অনুমতি তালিকা"
+    "message": "শুধু বেছে নেওয়া সাইট খুলুন"
   },
   "options_schedule_strictness_flexible": {
     "message": "নমনীয়"

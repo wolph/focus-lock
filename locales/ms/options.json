@@ -15,13 +15,13 @@
     "message": "Blokiring"
   },
   "options_blocking_help": {
-    "message": "Aturan khusus memblokir selama sesi daftar hitam. Daftar putih adalah apa yang tetap dapat diakses selama sesi daftar putih. Kategori bundel memblokir penyerap waktu umum."
+    "message": "Senarai sekatan anda dan kategori yang anda dayakan akan disekat apabila sesi menyekat tapak yang dipilih. Apabila sesi membenarkan tapak yang dipilih sahaja, senarai benaran anda sahaja yang kekal boleh diakses. Kategori terbundel menyekat pencuri masa yang biasa."
   },
   "options_custom_blacklist_title": {
-    "message": "Daftar hitam khusus"
+    "message": "Senarai sekatan"
   },
   "options_whitelist_title": {
-    "message": "Daftar putih"
+    "message": "Senarai benaran"
   },
   "options_bundled_categories_heading": {
     "message": "Kategori bundel"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Pratetap sesi mendalam (minit)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Senarai sekatan: sekat tapak yang disenaraikan"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Senarai benaran: benarkan tapak yang disenaraikan sahaja"
   },
   "options_strictness_flexible_label": {
     "message": "Fleksibel: akhiri sesi kapan saja pilihan Anda"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "daftar hitam"
+    "message": "sekat tapak yang dipilih"
   },
   "options_schedule_mode_whitelist": {
-    "message": "daftar putih"
+    "message": "benarkan tapak yang dipilih sahaja"
   },
   "options_schedule_strictness_flexible": {
     "message": "fleksibel"

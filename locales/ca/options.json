@@ -15,13 +15,13 @@
     "message": "Bloqueig"
   },
   "options_blocking_help": {
-    "message": "Les regles personalitzades bloquegen durant les sessions de llista negra. La llista blanca és el que continua accessible durant les sessions de llista blanca. Les categories incloses bloquegen els lladres de temps més habituals."
+    "message": "La teva llista de bloqueig i les categories que actives es bloquegen quan una sessió bloqueja els llocs seleccionats. Quan una sessió permet només els llocs seleccionats, la teva llista de permesos és tot el que continua accessible. Les categories incloses bloquegen els lladres de temps més habituals."
   },
   "options_custom_blacklist_title": {
-    "message": "Llista negra personalitzada"
+    "message": "Llista de bloqueig"
   },
   "options_whitelist_title": {
-    "message": "Llista blanca"
+    "message": "Llista de permesos"
   },
   "options_bundled_categories_heading": {
     "message": "Categories incloses"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Sessió profunda predefinida (minuts)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Llista negra: bloqueja els llocs de la llista"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Llista blanca: permet només els llocs de la llista"
   },
   "options_strictness_flexible_label": {
     "message": "Flexible: acaba la sessió quan vulguis"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "llista negra"
+    "message": "bloqueja els llocs seleccionats"
   },
   "options_schedule_mode_whitelist": {
-    "message": "llista blanca"
+    "message": "permet només els llocs seleccionats"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexible"

@@ -15,10 +15,10 @@
     "message": "Blockering"
   },
   "options_blocking_help": {
-    "message": "Egna regler blockerar under pass med blocklista. Tillåtlistan är det som förblir nåbart under pass med tillåtlista. Färdiga kategorier blockerar vanliga tidstjuvar."
+    "message": "Din blocklista och de kategorier du aktiverar blockeras när ett pass blockerar valda webbplatser. När ett pass bara tillåter valda webbplatser är det bara din tillåtlista som förblir nåbar. Färdiga kategorier blockerar vanliga tidstjuvar."
   },
   "options_custom_blacklist_title": {
-    "message": "Egen blocklista"
+    "message": "Blocklista"
   },
   "options_whitelist_title": {
     "message": "Tillåtlista"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Förval för djupt pass (minuter)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Blocklista: blockera listade webbplatser"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Tillåtlista: tillåt endast listade webbplatser"
   },
   "options_strictness_flexible_label": {
     "message": "Flexibel: avsluta passet när du vill"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blocklista"
+    "message": "blockera valda webbplatser"
   },
   "options_schedule_mode_whitelist": {
-    "message": "tillåtlista"
+    "message": "tillåt bara valda webbplatser"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexibel"

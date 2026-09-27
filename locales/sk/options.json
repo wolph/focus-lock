@@ -15,10 +15,10 @@
     "message": "Blokovanie"
   },
   "options_blocking_help": {
-    "message": "Vlastné pravidlá blokujú počas relácií so zoznamom blokovaných. Zoznam povolených je to, čo zostáva dostupné počas relácií so zoznamom povolených. Dodávané kategórie blokujú bežných žrútov času."
+    "message": "Tvoj zoznam blokovaných a kategórie, ktoré povolíš, sa blokujú, keď relácia blokuje vybrané stránky. Keď relácia povolí iba vybrané stránky, dostupný zostáva iba tvoj zoznam povolených. Dodávané kategórie blokujú bežných žrútov času."
   },
   "options_custom_blacklist_title": {
-    "message": "Vlastný zoznam blokovaných"
+    "message": "Zoznam blokovaných"
   },
   "options_whitelist_title": {
     "message": "Zoznam povolených"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Dlhá relácia (minúty)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Zoznam blokovaných: blokovať uvedené weby"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Zoznam povolených: povoliť len uvedené weby"
   },
   "options_strictness_flexible_label": {
     "message": "Flexibilné: ukonči reláciu, kedykoľvek budeš chcieť"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "zoznam blokovaných"
+    "message": "blokovať vybrané stránky"
   },
   "options_schedule_mode_whitelist": {
-    "message": "zoznam povolených"
+    "message": "povoliť iba vybrané stránky"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexibilné"

@@ -15,13 +15,13 @@
     "message": "Блокировка"
   },
   "options_blocking_help": {
-    "message": "Свои правила блокируют в сессиях по чёрному списку. Белый список - это то, что остаётся доступным в сессиях по белому списку. Готовые категории блокируют частые пожиратели времени."
+    "message": "Твой список блокировки и включённые категории блокируются, когда сессия блокирует выбранные сайты. Когда сессия разрешает только выбранные сайты, доступным остаётся только твой список разрешений. Готовые категории блокируют частые пожиратели времени."
   },
   "options_custom_blacklist_title": {
-    "message": "Свой чёрный список"
+    "message": "Список блокировки"
   },
   "options_whitelist_title": {
-    "message": "Белый список"
+    "message": "Список разрешений"
   },
   "options_bundled_categories_heading": {
     "message": "Готовые категории"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Глубокая сессия (минуты)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Чёрный список: блокировать перечисленные сайты"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Белый список: разрешать только перечисленные сайты"
   },
   "options_strictness_flexible_label": {
     "message": "Гибкая: завершай сессию когда захочешь"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "чёрный список"
+    "message": "блокировать выбранные сайты"
   },
   "options_schedule_mode_whitelist": {
-    "message": "белый список"
+    "message": "разрешить только выбранные сайты"
   },
   "options_schedule_strictness_flexible": {
     "message": "гибкая"

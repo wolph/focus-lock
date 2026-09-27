@@ -93,13 +93,13 @@
     "message": "Le impostazioni superano il limite di 8 KB della Sincronizzazione Chrome. Elimina voci dalla programmazione o accorcia le intenzioni, poi riprova."
   },
   "notify_lists_sync_limit": {
-    "message": "Gli elenchi superano il limite di 8 KB della Sincronizzazione Chrome. Elimina regole personalizzate o consentite, poi riprova."
+    "message": "Gli elenchi superano il limite di 8 KB della Sincronizzazione Chrome. Elimina voci dall'elenco dei bloccati o dall'elenco dei consentiti, poi riprova."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "è in corso una sessione con blocco totale: i siti rimossi si sbloccano alla fine"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "è in corso una sessione con blocco totale: le nuove voci consentite si sbloccano alla fine"
+    "message": "è in corso una sessione con blocco totale: le nuove voci dell'elenco dei consentiti si sbloccano alla fine"
   },
   "notify_guard_lists_disable_category": {
     "message": "è in corso una sessione con blocco totale: le categorie disattivate si sbloccano alla fine"

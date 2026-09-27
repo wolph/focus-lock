@@ -18,6 +18,7 @@ import {
   type StatsEvidenceRun,
 } from '../../scripts/stats-safe-output';
 import { verifyStatsEvidenceDirectory } from '../../scripts/verify-stats-evidence';
+import { LOCAL_POPUP_CHOICES } from '../../src/shared/storage-keys';
 import type {
   CategoryList,
   ListsConfig,
@@ -568,6 +569,11 @@ async function captureTask7PopupMatrix(input: {
   await input.page.setViewportSize(input.viewport);
   for (const themeCase of TASK7_THEME_CASES) {
     await test.step(`popup ${themeCase.id} ${String(input.viewport.width)} block and help states`, async () => {
+      // The popup reopens on the mode the previous case chose, and it applies that memory a moment
+      // after its reload, so the memory is cleared first and each case starts from the defaults.
+      await input.page.evaluate(async (key: string): Promise<void> => {
+        await chrome.storage.local.remove(key);
+      }, LOCAL_POPUP_CHOICES);
       await applyTask7ThemeCase(input.page, themeCase, 'popup');
       await openPopupSection(input.page, 'Session settings');
       await expect(input.page.getByRole('heading', { name: 'What will be blocked' })).toBeVisible();
@@ -1939,7 +1945,7 @@ test('hard-session Options rejects weakening and saves a stronger rule', async (
   await expect(held.getByRole('button', { name: 'Cancel this change' })).toBeVisible();
 
   // Strengthening is allowed under the same lock, and it saves without a button.
-  const customEditor = optionsPage.locator('.rules-editor').filter({ hasText: 'Custom blacklist' });
+  const customEditor = optionsPage.locator('.rules-editor').filter({ hasText: 'Block list' });
   await customEditor.getByLabel('Pattern').fill('extra.example');
   await customEditor.getByRole('button', { name: 'Add rule' }).click();
   await expect(optionsPage.locator('.autosave-status')).toHaveText('Saved');

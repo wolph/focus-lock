@@ -93,13 +93,13 @@
     "message": "Ayarlar Chrome Sync 8 KB sınırını aşıyor. Zamanlama kayıtlarını sil ya da niyetleri kısalt, sonra tekrar dene."
   },
   "notify_lists_sync_limit": {
-    "message": "Listeler Chrome Sync 8 KB sınırını aşıyor. Özel ya da izinli kuralları sil, sonra tekrar dene."
+    "message": "Listeler Chrome Sync 8 KB sınırını aşıyor. Engelleme listesinden veya izin listesinden girişleri sil, sonra tekrar dene."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "tam kilit seansı sürüyor: kaldırdığın siteler seans bitince açılır"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "tam kilit seansı sürüyor: yeni izinli kayıtlar seans bitince geçerli olur"
+    "message": "tam kilit seansı sürüyor: izin listesindeki yeni kayıtların kilidi seans bitince açılır"
   },
   "notify_guard_lists_disable_category": {
     "message": "tam kilit seansı sürüyor: kapattığın kategoriler seans bitince açılır"

@@ -15,10 +15,10 @@
     "message": "ब्लॉकिंग"
   },
   "options_blocking_help": {
-    "message": "आपके अपने नियम ब्लॉक सूची वाले सेशन में ब्लॉक करते हैं। अनुमति सूची वही है जो अनुमति सूची वाले सेशन में खुली रहती है। तैयार श्रेणियाँ आम समय बर्बाद करने वाली साइटें ब्लॉक करती हैं।"
+    "message": "जब कोई सेशन चुनी हुई साइटें ब्लॉक करता है, तो आपकी ब्लॉक सूची और आपके चालू की गई श्रेणियाँ ब्लॉक हो जाती हैं। जब कोई सेशन सिर्फ़ चुनी हुई साइटें खोलता है, तो सिर्फ़ आपकी अनुमति सूची ही पहुँच में रहती है। तैयार श्रेणियाँ आम समय बर्बाद करने वाली साइटें ब्लॉक करती हैं।"
   },
   "options_custom_blacklist_title": {
-    "message": "अपनी ब्लॉक सूची"
+    "message": "ब्लॉक सूची"
   },
   "options_whitelist_title": {
     "message": "अनुमति सूची"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "गहरा सेशन प्रीसेट (मिनट)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "ब्लॉक सूची: सूची में दी गई साइटें ब्लॉक करें"
-  },
-  "options_mode_whitelist_label": {
-    "message": "अनुमति सूची: सिर्फ़ सूची में दी गई साइटें खोलें"
   },
   "options_strictness_flexible_label": {
     "message": "लचीला: जब चाहें सेशन समाप्त करें"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "ब्लॉक सूची"
+    "message": "चुनी हुई साइटें ब्लॉक करें"
   },
   "options_schedule_mode_whitelist": {
-    "message": "अनुमति सूची"
+    "message": "सिर्फ़ चुनी हुई साइटें खोलें"
   },
   "options_schedule_strictness_flexible": {
     "message": "लचीला"

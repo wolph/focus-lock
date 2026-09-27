@@ -93,13 +93,13 @@
     "message": "Iestatījumi pārsniedz 8 KB Chrome sinhronizācijas ierobežojumu. Noņem grafika ierakstus vai saīsini nodomus un mēģini vēlreiz."
   },
   "notify_lists_sync_limit": {
-    "message": "Saraksti pārsniedz 8 KB Chrome sinhronizācijas ierobežojumu. Noņem paša vai atļauto noteikumus un mēģini vēlreiz."
+    "message": "Saraksti pārsniedz 8 KB Chrome sinhronizācijas ierobežojumu. Noņem ierakstus no bloķēšanas saraksta vai atļauto saraksta un mēģini vēlreiz."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "notiek stingra sesija: bloķētās vietnes tiks noņemtas, kad tā beigsies"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "notiek stingra sesija: jaunie atļauto ieraksti stāsies spēkā, kad tā beigsies"
+    "message": "notiek stingra sesija: jaunie atļauto saraksta ieraksti stāsies spēkā, kad tā beigsies"
   },
   "notify_guard_lists_disable_category": {
     "message": "notiek stingra sesija: kategorijas tiks izslēgtas, kad tā beigsies"

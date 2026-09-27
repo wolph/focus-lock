@@ -93,13 +93,13 @@
     "message": "Seaded ületavad Chrome'i sünkroonimise 8 KB piirmäära. Eemalda ajakava kirjeid või lühenda kavatsusi, seejärel proovi uuesti."
   },
   "notify_lists_sync_limit": {
-    "message": "Loendid ületavad Chrome'i sünkroonimise 8 KB piirmäära. Eemalda kohandatud või lubamisloendi reegleid, seejärel proovi uuesti."
+    "message": "Loendid ületavad Chrome'i sünkroonimise 8 KB piirmäära. Eemalda kirjeid blokeerimisnimekirjast või lubamisnimekirjast, seejärel proovi uuesti."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "range seanss käib: blokeeritud saitide eemaldamine vabaneb, kui see lõpeb"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "range seanss käib: uued lubamisloendi kirjed vabanevad, kui see lõpeb"
+    "message": "range seanss käib: uued lubamisnimekirja kirjed vabanevad, kui see lõpeb"
   },
   "notify_guard_lists_disable_category": {
     "message": "range seanss käib: kategooriate väljalülitamine vabaneb, kui see lõpeb"

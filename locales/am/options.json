@@ -15,10 +15,10 @@
     "message": "እገዳ"
   },
   "options_blocking_help": {
-    "message": "ብጁ ህጎች በማገጃ ዝርዝር ክፍለ ጊዜዎች ውስጥ ያግዳሉ። በፍቃድ ዝርዝር ክፍለ ጊዜዎች ውስጥ ተደራሽ የሚሆነው የፍቃድ ዝርዝሩ ነው። የተጣመሩ ምድቦች የተለመዱ ጊዜ አባካኝ ገፆችን ያግዳሉ።"
+    "message": "የማገጃ ዝርዝርዎ እና የነቀቁዋቸው ምድቦች ክፍለ ጊዜ የተመረጡ ገፆችን ሲያግድ ይታገዳሉ። ክፍለ ጊዜ የተመረጡ ገፆችን ብቻ ሲፈቅድ፣ ተደራሽ ሆኖ የሚቆየው የፍቃድ ዝርዝርዎ ብቻ ነው። የተጣመሩ ምድቦች የተለመዱ ጊዜ አባካኝ ገፆችን ያግዳሉ።"
   },
   "options_custom_blacklist_title": {
-    "message": "ብጁ የማገጃ ዝርዝር"
+    "message": "የማገጃ ዝርዝር"
   },
   "options_whitelist_title": {
     "message": "የፍቃድ ዝርዝር"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "ጥልቅ የክፍለ ጊዜ ቅንብር (ደቂቃዎች)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "የማገጃ ዝርዝር፦ የተዘረዘሩ ገፆችን አግድ"
-  },
-  "options_mode_whitelist_label": {
-    "message": "የፍቃድ ዝርዝር፦ የተዘረዘሩ ገፆችን ብቻ ፍቀድ"
   },
   "options_strictness_flexible_label": {
     "message": "ተለዋዋጭ፦ በፈለጉ ጊዜ ክፍለ ጊዜውን ያጠናቅቁ"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "የማገጃ ዝርዝር"
+    "message": "የተመረጡ ገፆችን አግድ"
   },
   "options_schedule_mode_whitelist": {
-    "message": "የፍቃድ ዝርዝር"
+    "message": "የተመረጡ ገፆችን ብቻ ፍቀድ"
   },
   "options_schedule_strictness_flexible": {
     "message": "ተለዋዋጭ"

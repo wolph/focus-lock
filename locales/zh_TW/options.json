@@ -15,10 +15,10 @@
     "message": "封鎖"
   },
   "options_blocking_help": {
-    "message": "自訂規則在黑名單工作階段期間進行封鎖。允許清單是在允許清單工作階段期間保持可達成的內容。套件類別會封鎖常見的時間浪費。"
+    "message": "當工作階段封鎖選定的網站時，您的封鎖清單和您啟用的類別都會被封鎖。當工作階段僅允許選定的網站時，只有您的允許清單會保持可存取。套件類別會封鎖常見的時間浪費網站。"
   },
   "options_custom_blacklist_title": {
-    "message": "自訂黑名單"
+    "message": "封鎖清單"
   },
   "options_whitelist_title": {
     "message": "允許清單"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "深度工作工作階段預設值（分鐘）"
-  },
-  "options_mode_blacklist_label": {
-    "message": "黑名單：封鎖列出的網站"
-  },
-  "options_mode_whitelist_label": {
-    "message": "允許清單：仅允许欄出的網站"
   },
   "options_strictness_flexible_label": {
     "message": "靈活：隨時結束工作階段"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "黑名單"
+    "message": "封鎖選定的網站"
   },
   "options_schedule_mode_whitelist": {
-    "message": "允許清單"
+    "message": "僅允許選定的網站"
   },
   "options_schedule_strictness_flexible": {
     "message": "靈活"

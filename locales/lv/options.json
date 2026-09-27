@@ -15,13 +15,13 @@
     "message": "Bloķēšana"
   },
   "options_blocking_help": {
-    "message": "Pielāgotie noteikumi bloķē bloķēšanas saraksta sesijās. Atļauju saraksts ir tas, kas paliek pieejams atļauju saraksta sesijās. Pievienotās kategorijas bloķē biežākos laika izšķērdētājus."
+    "message": "Tavs bloķēšanas saraksts un kategorijas, ko iespējo, tiek bloķētas, kad sesija bloķē atlasītās vietnes. Kad sesija atļauj tikai atlasītās vietnes, pieejams paliek vienīgi tavs atļauto saraksts. Pievienotās kategorijas bloķē biežākos laika izšķērdētājus."
   },
   "options_custom_blacklist_title": {
-    "message": "Pielāgots bloķēšanas saraksts"
+    "message": "Bloķēšanas saraksts"
   },
   "options_whitelist_title": {
-    "message": "Atļauju saraksts"
+    "message": "Atļauto saraksts"
   },
   "options_bundled_categories_heading": {
     "message": "Pievienotās kategorijas"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Padziļinātās sesijas veidne (minūtēs)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Bloķēšanas saraksts: bloķē sarakstā iekļautās vietnes"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Atļauju saraksts: atļauj tikai sarakstā iekļautās vietnes"
   },
   "options_strictness_flexible_label": {
     "message": "Elastīgs: beidz sesiju, kad vien vēlies"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "bloķēšanas saraksts"
+    "message": "bloķēt atlasītās vietnes"
   },
   "options_schedule_mode_whitelist": {
-    "message": "atļauju saraksts"
+    "message": "atļaut tikai atlasītās vietnes"
   },
   "options_schedule_strictness_flexible": {
     "message": "elastīgs"

@@ -15,10 +15,10 @@
     "message": "Blocco"
   },
   "options_blocking_help": {
-    "message": "Le regole personalizzate bloccano durante le sessioni con elenco dei bloccati. L'elenco dei consentiti è ciò che resta raggiungibile durante le sessioni con elenco dei consentiti. Le categorie incluse bloccano i tipici ammazzatempo."
+    "message": "Il tuo elenco dei bloccati e le categorie che attivi vengono bloccati quando una sessione blocca i siti selezionati. Quando una sessione consente solo i siti selezionati, resta raggiungibile solo il tuo elenco dei consentiti. Le categorie incluse bloccano i tipici ammazzatempo."
   },
   "options_custom_blacklist_title": {
-    "message": "Elenco dei bloccati personalizzato"
+    "message": "Elenco dei bloccati"
   },
   "options_whitelist_title": {
     "message": "Elenco dei consentiti"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Preset sessione profonda (minuti)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Elenco dei bloccati: blocca i siti elencati"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Elenco dei consentiti: consenti solo i siti elencati"
   },
   "options_strictness_flexible_label": {
     "message": "Flessibile: termina la sessione quando vuoi"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "bloccati"
+    "message": "blocca i siti selezionati"
   },
   "options_schedule_mode_whitelist": {
-    "message": "consentiti"
+    "message": "consenti solo i siti selezionati"
   },
   "options_schedule_strictness_flexible": {
     "message": "flessibile"

@@ -15,10 +15,10 @@
     "message": "Blokavimas"
   },
   "options_blocking_help": {
-    "message": "Tavo taisyklės blokuoja blokavimo sąrašo sesijose. Leidžiamųjų sąrašas yra tai, kas lieka pasiekiama leidžiamųjų sąrašo sesijose. Pridėtos kategorijos blokuoja dažniausius laiko vagis."
+    "message": "Tavo blokavimo sąrašas ir įjungtos kategorijos blokuojamos, kai sesija blokuoja pasirinktas svetaines. Kai sesija leidžia tik pasirinktas svetaines, pasiekiamas išlieka tik tavo leidžiamųjų sąrašas. Pridėtos kategorijos blokuoja dažniausius laiko vagis."
   },
   "options_custom_blacklist_title": {
-    "message": "Savas blokavimo sąrašas"
+    "message": "Blokavimo sąrašas"
   },
   "options_whitelist_title": {
     "message": "Leidžiamųjų sąrašas"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Ilgos sesijos šablonas (minutėmis)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Blokavimo sąrašas: blokuoti išvardytas svetaines"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Leidžiamųjų sąrašas: leisti tik išvardytas svetaines"
   },
   "options_strictness_flexible_label": {
     "message": "Lankstus: baik sesiją, kada tik nori"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blokavimo sąrašas"
+    "message": "blokuoti pasirinktas svetaines"
   },
   "options_schedule_mode_whitelist": {
-    "message": "leidžiamųjų sąrašas"
+    "message": "leisti tik pasirinktas svetaines"
   },
   "options_schedule_strictness_flexible": {
     "message": "lankstus"

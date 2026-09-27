@@ -15,10 +15,10 @@
     "message": "Bloqueio"
   },
   "options_blocking_help": {
-    "message": "As regras personalizadas bloqueiam nas sessões com lista de bloqueio. A lista de permitidos é o que continua acessível nas sessões com lista de permitidos. As categorias incluídas bloqueiam os desperdícios de tempo mais comuns."
+    "message": "A tua lista de bloqueio e as categorias que ativas são bloqueadas quando uma sessão bloqueia os sites escolhidos. Quando uma sessão permite apenas os sites escolhidos, a tua lista de permitidos é tudo o que continua acessível. As categorias incluídas bloqueiam os desperdícios de tempo mais comuns."
   },
   "options_custom_blacklist_title": {
-    "message": "Lista de bloqueio personalizada"
+    "message": "Lista de bloqueio"
   },
   "options_whitelist_title": {
     "message": "Lista de permitidos"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Predefinição de sessão intensa (minutos)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Lista de bloqueio: bloquear os sites listados"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Lista de permitidos: permitir apenas os sites listados"
   },
   "options_strictness_flexible_label": {
     "message": "Flexível: acaba a sessão quando quiseres"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "bloqueio"
+    "message": "bloquear os sites escolhidos"
   },
   "options_schedule_mode_whitelist": {
-    "message": "permitidos"
+    "message": "permitir apenas os sites escolhidos"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexível"

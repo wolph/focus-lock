@@ -12,7 +12,7 @@ describe('RulesEditor', () => {
   it('adds a valid host rule through onChange', (): void => {
     const onChange = vi.fn();
     const { getByLabelText, getByRole } = render(
-      <RulesEditor title="Custom blacklist" rules={[]} onChange={onChange} />,
+      <RulesEditor title="Block list" rules={[]} onChange={onChange} />,
     );
     fireEvent.input(getByLabelText('Pattern'), { target: { value: 'nu.nl' } });
     fireEvent.click(getByRole('button', { name: 'Add rule' }));
@@ -23,7 +23,7 @@ describe('RulesEditor', () => {
   it('shows the validation message inline for a bad regex and never calls onChange', (): void => {
     const onChange = vi.fn();
     const { getByLabelText, getByRole, getByText } = render(
-      <RulesEditor title="Custom blacklist" rules={[]} onChange={onChange} />,
+      <RulesEditor title="Block list" rules={[]} onChange={onChange} />,
     );
     fireEvent.change(getByLabelText('Rule kind'), { target: { value: 'regex' } });
     fireEvent.input(getByLabelText('Pattern'), { target: { value: '(' } });
@@ -35,7 +35,7 @@ describe('RulesEditor', () => {
   it('rejects a bare slash pair instead of adding a catch-all rule', (): void => {
     const onChange = vi.fn();
     const { getByLabelText, getByRole, getByText } = render(
-      <RulesEditor title="Custom blacklist" rules={[]} onChange={onChange} />,
+      <RulesEditor title="Block list" rules={[]} onChange={onChange} />,
     );
     fireEvent.change(getByLabelText('Rule kind'), { target: { value: 'regex' } });
     fireEvent.input(getByLabelText('Pattern'), { target: { value: '//' } });
@@ -47,7 +47,7 @@ describe('RulesEditor', () => {
   it('rejects a lone slash instead of adding a catch-all rule', (): void => {
     const onChange = vi.fn();
     const { getByLabelText, getByRole, getByText } = render(
-      <RulesEditor title="Custom blacklist" rules={[]} onChange={onChange} />,
+      <RulesEditor title="Block list" rules={[]} onChange={onChange} />,
     );
     fireEvent.change(getByLabelText('Rule kind'), { target: { value: 'regex' } });
     fireEvent.input(getByLabelText('Pattern'), { target: { value: '/' } });
@@ -59,7 +59,7 @@ describe('RulesEditor', () => {
   it('strips slash delimiters on input and stores the bare regex source', (): void => {
     const onChange = vi.fn();
     const { getByLabelText, getByRole } = render(
-      <RulesEditor title="Custom blacklist" rules={[]} onChange={onChange} />,
+      <RulesEditor title="Block list" rules={[]} onChange={onChange} />,
     );
     fireEvent.change(getByLabelText('Rule kind'), { target: { value: 'regex' } });
     fireEvent.input(getByLabelText('Pattern'), {
@@ -76,7 +76,7 @@ describe('RulesEditor', () => {
     ];
     const onChange = vi.fn();
     const { getByText, getByRole } = render(
-      <RulesEditor title="Custom blacklist" rules={rules} onChange={onChange} />,
+      <RulesEditor title="Block list" rules={rules} onChange={onChange} />,
     );
     expect(getByText('/youtube\\.com\\/shorts/')).toBeTruthy();
     fireEvent.click(getByRole('button', { name: 'Remove facebook.com' }));

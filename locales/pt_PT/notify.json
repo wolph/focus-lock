@@ -93,13 +93,13 @@
     "message": "As definições ultrapassam o limite de 8 KB da Sincronização do Chrome. Remove entradas do agendamento ou encurta as intenções e tenta novamente."
   },
   "notify_lists_sync_limit": {
-    "message": "As listas ultrapassam o limite de 8 KB da Sincronização do Chrome. Remove regras personalizadas ou permitidas e tenta novamente."
+    "message": "As listas ultrapassam o limite de 8 KB da Sincronização do Chrome. Remove entradas da lista de bloqueio ou da lista de permitidos e tenta novamente."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "está a decorrer uma sessão de bloqueio total: os sites removidos ficam livres quando ela acabar"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "está a decorrer uma sessão de bloqueio total: as novas entradas permitidas ficam livres quando ela acabar"
+    "message": "está a decorrer uma sessão de bloqueio total: as novas entradas da lista de permitidos ficam livres quando ela acabar"
   },
   "notify_guard_lists_disable_category": {
     "message": "está a decorrer uma sessão de bloqueio total: as categorias desativadas ficam livres quando ela acabar"

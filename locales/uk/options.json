@@ -15,13 +15,13 @@
     "message": "Блокування"
   },
   "options_blocking_help": {
-    "message": "Власні правила блокують у сесіях за чорним списком. Білий список - це те, що лишається доступним у сесіях за білим списком. Готові категорії блокують поширених пожирачів часу."
+    "message": "Твій список блокування та категорії, які ти вмикаєш, блокуються, коли сесія блокує вибрані сайти. Коли сесія дозволяє лише вибрані сайти, доступним лишається тільки твій список дозволів. Готові категорії блокують поширених пожирачів часу."
   },
   "options_custom_blacklist_title": {
-    "message": "Власний чорний список"
+    "message": "Список блокування"
   },
   "options_whitelist_title": {
-    "message": "Білий список"
+    "message": "Список дозволів"
   },
   "options_bundled_categories_heading": {
     "message": "Готові категорії"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Глибока сесія (хвилини)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Чорний список: блокувати перелічені сайти"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Білий список: дозволяти лише перелічені сайти"
   },
   "options_strictness_flexible_label": {
     "message": "Гнучка: завершуй сесію коли захочеш"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "чорний список"
+    "message": "блокувати вибрані сайти"
   },
   "options_schedule_mode_whitelist": {
-    "message": "білий список"
+    "message": "дозволити лише вибрані сайти"
   },
   "options_schedule_strictness_flexible": {
     "message": "гнучка"

@@ -93,13 +93,13 @@
     "message": "Les réglages dépassent la limite de 8 Ko de la synchronisation Chrome. Supprime des créneaux planifiés ou raccourcis tes intentions, puis réessaie."
   },
   "notify_lists_sync_limit": {
-    "message": "Les listes dépassent la limite de 8 Ko de la synchronisation Chrome. Supprime des règles personnalisées ou d'autorisation, puis réessaie."
+    "message": "Les listes dépassent la limite de 8 Ko de la synchronisation Chrome. Supprime des entrées de la liste de blocage ou de la liste d'autorisation, puis réessaie."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "une session stricte est en cours : retirer des sites bloqués ne prendra effet qu'à la fin"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "une session stricte est en cours : les nouvelles entrées autorisées ne prendront effet qu'à la fin"
+    "message": "une session stricte est en cours : les nouvelles entrées de la liste d'autorisation ne prendront effet qu'à la fin"
   },
   "notify_guard_lists_disable_category": {
     "message": "une session stricte est en cours : désactiver des catégories ne prendra effet qu'à la fin"

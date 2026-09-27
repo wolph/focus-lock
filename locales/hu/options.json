@@ -15,10 +15,10 @@
     "message": "Blokkolás"
   },
   "options_blocking_help": {
-    "message": "Az egyéni szabályok a tiltólistás menetek alatt blokkolnak. Az engedélyezési lista az, ami az engedélyezési listás menetek alatt elérhető marad. A beépített kategóriák a szokásos időrablókat zárják ki."
+    "message": "A tiltólistád és az általad engedélyezett kategóriák blokkolva vannak, amikor egy menet blokkolja a kiválasztott oldalakat. Amikor egy menet csak a kiválasztott oldalakat engedélyezi, az engedélyezési listád az, ami elérhető marad. A beépített kategóriák a szokásos időrablókat zárják ki."
   },
   "options_custom_blacklist_title": {
-    "message": "Egyéni tiltólista"
+    "message": "Tiltólista"
   },
   "options_whitelist_title": {
     "message": "Engedélyezési lista"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Mély menet előbeállítása (perc)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Tiltólista: a felsorolt oldalak blokkolása"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Engedélyezési lista: csak a felsorolt oldalak engedélyezése"
   },
   "options_strictness_flexible_label": {
     "message": "Rugalmas: a menetet bármikor befejezheted"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "tiltólista"
+    "message": "a kiválasztott oldalak blokkolása"
   },
   "options_schedule_mode_whitelist": {
-    "message": "engedélyezési lista"
+    "message": "csak a kiválasztott oldalak engedélyezése"
   },
   "options_schedule_strictness_flexible": {
     "message": "rugalmas"

@@ -119,7 +119,7 @@
     "description": "Error shown on the settings page when the settings are too large for Chrome Sync. It names the two fields that usually cause it."
   },
   "notify_lists_sync_limit": {
-    "message": "Lists exceed the 8 KB Chrome Sync limit. Remove custom or whitelist rules, then try again.",
+    "message": "Lists exceed the 8 KB Chrome Sync limit. Remove entries from the block list or allow list, then try again.",
     "description": "Error shown on the settings page when the block and allow lists are too large for Chrome Sync."
   },
 
@@ -128,7 +128,7 @@
     "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to remove a blocked site."
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "a hard session is running: new whitelist entries unlock when it ends",
+    "message": "a hard session is running: new allow list entries unlock when it ends",
     "description": "Reason a settings change is refused during a hard session, read inside an error line, so it starts with a lower-case letter. Here the user tried to add a site to the allow list."
   },
   "notify_guard_lists_disable_category": {

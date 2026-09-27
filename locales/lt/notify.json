@@ -93,13 +93,13 @@
     "message": "Nustatymai viršija 8 KB Chrome sinchronizavimo ribą. Pašalink tvarkaraščio įrašų arba sutrumpink ketinimus, tada bandyk dar kartą."
   },
   "notify_lists_sync_limit": {
-    "message": "Sąrašai viršija 8 KB Chrome sinchronizavimo ribą. Pašalink savų arba leidžiamųjų taisyklių, tada bandyk dar kartą."
+    "message": "Sąrašai viršija 8 KB Chrome sinchronizavimo ribą. Pašalink įrašus iš blokavimo sąrašo arba leidžiamųjų sąrašo, tada bandyk dar kartą."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "vyksta griežta sesija: blokuotos svetainės pašalinamos tik jai pasibaigus"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "vyksta griežta sesija: nauji leidžiamųjų įrašai įsigalios tik jai pasibaigus"
+    "message": "vyksta griežta sesija: nauji leidžiamųjų sąrašo įrašai įsigalios tik jai pasibaigus"
   },
   "notify_guard_lists_disable_category": {
     "message": "vyksta griežta sesija: kategorijos išjungiamos tik jai pasibaigus"

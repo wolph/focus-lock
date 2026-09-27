@@ -93,13 +93,13 @@
     "message": "Nastavení překračuje limit 8 kB pro synchronizaci Chromu. Odeber položky plánu nebo zkrať předsevzetí a pak to zkus znovu."
   },
   "notify_lists_sync_limit": {
-    "message": "Seznamy překračují limit 8 kB pro synchronizaci Chromu. Odeber vlastní nebo povolená pravidla a pak to zkus znovu."
+    "message": "Seznamy překračují limit 8 kB pro synchronizaci Chromu. Odeber položky ze seznamu blokovaných nebo seznamu povolených, a pak to zkus znovu."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "běží relace s tvrdým zámkem: blokované weby půjde odebrat až po jejím skončení"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "běží relace s tvrdým zámkem: nové povolené položky začnou platit až po jejím skončení"
+    "message": "běží relace s tvrdým zámkem: nové položky seznamu povolených začnou platit až po jejím skončení"
   },
   "notify_guard_lists_disable_category": {
     "message": "běží relace s tvrdým zámkem: kategorie půjde vypnout až po jejím skončení"

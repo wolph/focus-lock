@@ -93,13 +93,13 @@
     "message": "Nastavitve presegajo omejitev 8 kB za sinhronizacijo Chroma. Odstrani vnose urnika ali skrajšaj namere in nato poskusi znova."
   },
   "notify_lists_sync_limit": {
-    "message": "Seznami presegajo omejitev 8 kB za sinhronizacijo Chroma. Odstrani lastna ali dovoljena pravila in nato poskusi znova."
+    "message": "Seznami presegajo omejitev 8 kB za sinhronizacijo Chroma. Odstrani vnose s seznama blokiranih ali seznama dovoljenih in nato poskusi znova."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "poteka seja s trdim zaklepanjem: blokirana spletna mesta bo mogoče odstraniti šele, ko se konča"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "poteka seja s trdim zaklepanjem: novi dovoljeni vnosi bodo veljali šele, ko se konča"
+    "message": "poteka seja s trdim zaklepanjem: novi vnosi na seznamu dovoljenih bodo veljali šele, ko se konča"
   },
   "notify_guard_lists_disable_category": {
     "message": "poteka seja s trdim zaklepanjem: kategorije bo mogoče izklopiti šele, ko se konča"

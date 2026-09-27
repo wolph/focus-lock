@@ -9,6 +9,7 @@ import {
   MAX_SAFE_DAY_COUNT,
   MIN_RELATIVE_MINUTES,
 } from '../shared/numeric-validation';
+import { MODE_LABELS } from '../shared/session-copy';
 import { minToMs } from '../shared/time';
 import type { Settings } from '../shared/types';
 
@@ -140,7 +141,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               props.onChange({ ...s, defaultMode: 'blacklist' });
             }}
           />
-          {t('options_mode_blacklist_label')}
+          {MODE_LABELS.blacklist}
         </label>
         <label class="check">
           <input
@@ -151,7 +152,7 @@ export function BehaviorDefaults(props: BehaviorProps): VNode {
               props.onChange({ ...s, defaultMode: 'whitelist' });
             }}
           />
-          {t('options_mode_whitelist_label')}
+          {MODE_LABELS.whitelist}
         </label>
       </div>
       <div class="field">

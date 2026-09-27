@@ -15,10 +15,10 @@
     "message": "Blokering"
   },
   "options_blocking_help": {
-    "message": "Egne regler blokerer under sessioner med blokeringsliste. Tilladelseslisten er det, der forbliver tilgængeligt under sessioner med tilladelsesliste. Medfølgende kategorier blokerer almindelige tidsrøvere."
+    "message": "Din blokeringsliste og de kategorier, du aktiverer, blokeres, når en session blokerer valgte sites. Når en session kun tillader valgte sites, er det kun din tilladelsesliste, der forbliver tilgængeligt. Medfølgende kategorier blokerer almindelige tidsrøvere."
   },
   "options_custom_blacklist_title": {
-    "message": "Egen blokeringsliste"
+    "message": "Blokeringsliste"
   },
   "options_whitelist_title": {
     "message": "Tilladelsesliste"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Lang session (minutter)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Blokeringsliste: bloker anførte sites"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Tilladelsesliste: tillad kun anførte sites"
   },
   "options_strictness_flexible_label": {
     "message": "Fleksibel: afslut sessionen, når du vil"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blokeringsliste"
+    "message": "bloker valgte sites"
   },
   "options_schedule_mode_whitelist": {
-    "message": "tilladelsesliste"
+    "message": "tillad kun valgte sites"
   },
   "options_schedule_strictness_flexible": {
     "message": "fleksibel"

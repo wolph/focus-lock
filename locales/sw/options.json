@@ -15,13 +15,13 @@
     "message": "Zuiaing"
   },
   "options_blocking_help": {
-    "message": "Kanuni maalum huzuia wakati wa vikao vya orodha nyeusi. Orodha nyeupe ndiyo inayobaki kufikiwa wakati wa vikao vya orodha nyeupe. Aina zilizojumuishwa huzuia tovuti za kawaida zinazopoteza muda."
+    "message": "Orodha yako ya kuzuia na aina ulizowezesha huzuiwa wakati kikao kinapozuia tovuti zilizochaguliwa. Wakati kikao kinaporuhusu tovuti zilizochaguliwa pekee, orodha yako ya kuruhusu pekee ndiyo inayobaki kufikiwa. Aina zilizojumuishwa huzuia tovuti za kawaida zinazopoteza muda."
   },
   "options_custom_blacklist_title": {
-    "message": "Orodha nyeusi maalum"
+    "message": "Orodha ya kuzuia"
   },
   "options_whitelist_title": {
-    "message": "Orodha nyeupe"
+    "message": "Orodha ya kuruhusu"
   },
   "options_bundled_categories_heading": {
     "message": "Aina zilizojumuishwa"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Mpangilio wa kikao kirefu (dakika)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Orodha nyeusi: zuia tovuti zilizoorodheshwa"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Orodha nyeupe: ruhusu tovuti zilizoorodheshwa pekee"
   },
   "options_strictness_flexible_label": {
     "message": "Inayobadilika: maliza kikao wakati wowote unapotaka"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "orodha nyeusi"
+    "message": "zuia tovuti zilizochaguliwa"
   },
   "options_schedule_mode_whitelist": {
-    "message": "orodha nyeupe"
+    "message": "ruhusu tovuti zilizochaguliwa pekee"
   },
   "options_schedule_strictness_flexible": {
     "message": "legevu"

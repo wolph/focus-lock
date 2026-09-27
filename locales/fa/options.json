@@ -15,13 +15,13 @@
     "message": "مسدودسازی"
   },
   "options_blocking_help": {
-    "message": "قوانین سفارشی در جلسه‌های فهرست سیاه مسدود می‌کنند. فهرست سفید همان چیزی است که در جلسه‌های فهرست سفید در دسترس می‌ماند. دسته‌های همراه، وقت‌کش‌های رایج را مسدود می‌کنند."
+    "message": "فهرست مسدودسازی شما و دسته‌هایی که فعال می‌کنید، وقتی جلسه سایت‌های انتخابی را مسدود می‌کند، مسدود می‌شوند. وقتی جلسه فقط به سایت‌های انتخابی اجازه می‌دهد، فهرست مجاز شما تنها چیزی است که در دسترس می‌ماند. دسته‌های همراه، وقت‌کش‌های رایج را مسدود می‌کنند."
   },
   "options_custom_blacklist_title": {
-    "message": "فهرست سیاه سفارشی"
+    "message": "فهرست مسدودسازی"
   },
   "options_whitelist_title": {
-    "message": "فهرست سفید"
+    "message": "فهرست مجاز"
   },
   "options_bundled_categories_heading": {
     "message": "دسته‌های همراه"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "پیش‌تنظیم جلسه عمیق (دقیقه)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "فهرست سیاه: مسدود کردن سایت‌های فهرست‌شده"
-  },
-  "options_mode_whitelist_label": {
-    "message": "فهرست سفید: اجازه فقط به سایت‌های فهرست‌شده"
   },
   "options_strictness_flexible_label": {
     "message": "انعطاف‌پذیر: هر وقت خواستید جلسه را پایان دهید"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "فهرست سیاه"
+    "message": "مسدود کردن سایت‌های انتخابی"
   },
   "options_schedule_mode_whitelist": {
-    "message": "فهرست سفید"
+    "message": "اجازه فقط به سایت‌های انتخابی"
   },
   "options_schedule_strictness_flexible": {
     "message": "انعطاف‌پذیر"

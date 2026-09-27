@@ -93,7 +93,7 @@
     "message": "设置超过 8 KB Chrome 同步限制。请移除日程条目或缩短意图，然后重试。"
   },
   "notify_lists_sync_limit": {
-    "message": "列表超过 8 KB Chrome 同步限制。请移除自定义规则或允许列表规则，然后重试。"
+    "message": "列表超过 8 KB Chrome 同步限制。请从阻止列表或允许列表中移除条目，然后重试。"
   },
   "notify_guard_lists_remove_blocked": {
     "message": "正在运行强制锁定会话：移除已阻止网站将在会话结束时解锁"

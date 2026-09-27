@@ -20,16 +20,16 @@
     "description": "Heading of the Settings section that holds the block and allow lists."
   },
   "options_blocking_help": {
-    "message": "Custom rules block during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories block common time sinks.",
+    "message": "Your block list and the categories you enable are blocked when a session blocks selected sites. When a session allows selected sites only, your allow list is all that stays reachable. Bundled categories block common time sinks.",
     "description": "Introduction under the Blocking heading in Settings."
   },
   "options_custom_blacklist_title": {
-    "message": "Custom blacklist",
-    "description": "Heading of the rules table holding the sites the person added themselves."
+    "message": "Block list",
+    "description": "Heading of the rules table holding the sites the person added themselves to block. Matches the \"block list\" wording used across the extension."
   },
   "options_whitelist_title": {
-    "message": "Whitelist",
-    "description": "Heading of the rules table holding the sites that stay reachable in a whitelist session."
+    "message": "Allow list",
+    "description": "Heading of the rules table holding the sites that stay reachable in a session that allows selected sites only. Matches the \"allow list\" wording used across the extension."
   },
   "options_bundled_categories_heading": {
     "message": "Bundled categories",
@@ -210,14 +210,6 @@
   "options_preset_deep_label": {
     "message": "Deep session preset (minutes)",
     "description": "Label of the field holding the longest of three duration buttons on the start form."
-  },
-  "options_mode_blacklist_label": {
-    "message": "Blacklist: block listed sites",
-    "description": "Radio label for the session mode that blocks the listed sites and allows the rest."
-  },
-  "options_mode_whitelist_label": {
-    "message": "Whitelist: allow only listed sites",
-    "description": "Radio label for the session mode that allows only the listed sites and blocks the rest."
   },
   "options_strictness_flexible_label": {
     "message": "Flexible: end the session whenever you choose",
@@ -640,11 +632,11 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blacklist",
+    "message": "block selected sites",
     "description": "Mode shown on a saved schedule entry: the listed sites are blocked. Lower case, it sits in a row of short values."
   },
   "options_schedule_mode_whitelist": {
-    "message": "whitelist",
+    "message": "allow selected sites only",
     "description": "Mode shown on a saved schedule entry: only the listed sites are allowed. Lower case, it sits in a row of short values."
   },
   "options_schedule_strictness_flexible": {

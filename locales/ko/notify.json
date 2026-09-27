@@ -93,13 +93,13 @@
     "message": "설정이 8KB Chrome 동기화 제한을 초과합니다. 일정 항목을 제거하거나 의도를 단축한 후 다시 시도하십시오."
   },
   "notify_lists_sync_limit": {
-    "message": "목록이 8KB Chrome 동기화 제한을 초과합니다. 사용자 지정 또는 허용 목록 규칙을 제거한 후 다시 시도하십시오."
+    "message": "목록이 8KB Chrome 동기화 제한을 초과합니다. 차단 목록 또는 허용 목록에서 항목을 제거한 후 다시 시도하십시오."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "하드 세션이 실행 중입니다：차단된 사이트를 제거하면 세션이 끝날 때 잠금해제됩니다"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "하드 세션이 실행 중입니다：새 허용 목록 항목은 세션이 끝날 때 잠금해제됩니다"
+    "message": "하드 세션이 실행 중입니다：새 허용 목록 항목은 세션이 끝날 때 잠금 해제됩니다"
   },
   "notify_guard_lists_disable_category": {
     "message": "하드 세션이 실행 중입니다：카테고리를 비활성화하면 세션이 끝날 때 잠금해제됩니다"

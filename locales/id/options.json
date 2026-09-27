@@ -15,10 +15,10 @@
     "message": "Pemblokiran"
   },
   "options_blocking_help": {
-    "message": "Aturan khusus memblokir selama sesi daftar blokir. Daftar izin adalah yang tetap dapat diakses selama sesi daftar izin. Kategori bawaan memblokir pemboros waktu yang umum."
+    "message": "Daftar blokirmu dan kategori yang kamu aktifkan diblokir saat sesi memblokir situs yang dipilih. Saat sesi hanya mengizinkan situs yang dipilih, daftar izinmu adalah satu-satunya yang tetap dapat diakses. Kategori bawaan memblokir pemboros waktu yang umum."
   },
   "options_custom_blacklist_title": {
-    "message": "Daftar blokir khusus"
+    "message": "Daftar blokir"
   },
   "options_whitelist_title": {
     "message": "Daftar izin"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Preset sesi mendalam (menit)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Daftar blokir: blokir situs yang terdaftar"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Daftar izin: hanya izinkan situs yang terdaftar"
   },
   "options_strictness_flexible_label": {
     "message": "Fleksibel: akhiri sesi kapan pun kamu mau"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "daftar blokir"
+    "message": "blokir situs yang dipilih"
   },
   "options_schedule_mode_whitelist": {
-    "message": "daftar izin"
+    "message": "hanya izinkan situs yang dipilih"
   },
   "options_schedule_strictness_flexible": {
     "message": "fleksibel"

@@ -15,13 +15,13 @@
     "message": "Blokiranje"
   },
   "options_blocking_help": {
-    "message": "Kustomizirani pravila blokiranje med seansami črne liste. Bela lista je tisto, kar ostane dostopno med seansami bele liste. Zbrani kategorije blokirajo pogoste časovne črne luknje."
+    "message": "Tvoj seznam blokiranih in kategorije, ki jih omogočiš, se blokirajo, ko seja blokira izbrana spletna mesta. Ko seja dovoli samo izbrana spletna mesta, ostane dostopen le tvoj seznam dovoljenih. Vključene kategorije blokirajo pogoste časovne požiralce."
   },
   "options_custom_blacklist_title": {
-    "message": "Kustomizirana črna lista"
+    "message": "Seznam blokiranih"
   },
   "options_whitelist_title": {
-    "message": "Bela lista"
+    "message": "Seznam dovoljenih"
   },
   "options_bundled_categories_heading": {
     "message": "Zbrani kategorije"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Globoka seansa (minute)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Črna lista: blokiraj navedena spletna mesta"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Bela lista: dovoli samo navedena spletna mesta"
   },
   "options_strictness_flexible_label": {
     "message": "Prosta: končaj seanso, kadar koli izbereš"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "črna lista"
+    "message": "blokiraj izbrana spletna mesta"
   },
   "options_schedule_mode_whitelist": {
-    "message": "bela lista"
+    "message": "dovoli samo izbrana spletna mesta"
   },
   "options_schedule_strictness_flexible": {
     "message": "prosta"

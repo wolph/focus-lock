@@ -15,13 +15,13 @@
     "message": "Blokeerimine"
   },
   "options_blocking_help": {
-    "message": "Kohandatud reeglid blokeerivad blokeerimisloendi seansside ajal. Lubamisloend on see, mis jääb ligipääsetavaks lubamisloendi seansside ajal. Komplekteeritud kategooriad blokeerivad levinud ajaraiskajad."
+    "message": "Sinu blokeerimisnimekiri ja kategooriad, mille lubad, blokeeritakse, kui seanss blokeerib valitud saidid. Kui seanss lubab ainult valitud saidid, jääb ligipääsetavaks üksnes sinu lubamisnimekiri. Komplekteeritud kategooriad blokeerivad levinud ajaraiskajad."
   },
   "options_custom_blacklist_title": {
-    "message": "Kohandatud blokeerimisloend"
+    "message": "Blokeerimisnimekiri"
   },
   "options_whitelist_title": {
-    "message": "Lubamisloend"
+    "message": "Lubamisnimekiri"
   },
   "options_bundled_categories_heading": {
     "message": "Komplekteeritud kategooriad"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Süvaseansi eelseadistus (minutites)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Blokeerimisloend: blokeeri loetletud saidid"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Lubamisloend: luba ainult loetletud saidid"
   },
   "options_strictness_flexible_label": {
     "message": "Paindlik: lõpeta seanss millal iganes soovid"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blokeerimisloend"
+    "message": "blokeeri valitud saidid"
   },
   "options_schedule_mode_whitelist": {
-    "message": "lubamisloend"
+    "message": "luba ainult valitud saidid"
   },
   "options_schedule_strictness_flexible": {
     "message": "paindlik"

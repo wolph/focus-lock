@@ -15,10 +15,10 @@
     "message": "ブロッキング"
   },
   "options_blocking_help": {
-    "message": "カスタムルールはブラックリストセッション中にブロックします。ホワイトリストはホワイトリストセッション中に到達可能なものです。バンドルされたカテゴリは一般的な時間浪費をブロックします。"
+    "message": "ブロックリストと有効にしたカテゴリは、セッションが選択したサイトをブロックする際にブロックされます。セッションが選択したサイトのみを許可する際は、ホワイトリストだけが到達可能なままです。バンドルされたカテゴリは一般的な時間浪費をブロックします。"
   },
   "options_custom_blacklist_title": {
-    "message": "カスタムブラックリスト"
+    "message": "ブロックリスト"
   },
   "options_whitelist_title": {
     "message": "ホワイトリスト"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "ディープセッションプリセット（分）"
-  },
-  "options_mode_blacklist_label": {
-    "message": "ブラックリスト：リストされたサイトをブロック"
-  },
-  "options_mode_whitelist_label": {
-    "message": "ホワイトリスト：リストされたサイトのみを許可"
   },
   "options_strictness_flexible_label": {
     "message": "フレキシブル：いつでもセッションを終了できます"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "ブラックリスト"
+    "message": "選択したサイトをブロック"
   },
   "options_schedule_mode_whitelist": {
-    "message": "ホワイトリスト"
+    "message": "選択したサイトのみを許可"
   },
   "options_schedule_strictness_flexible": {
     "message": "フレキシブル"

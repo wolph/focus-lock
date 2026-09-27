@@ -93,13 +93,13 @@
     "message": "La configuración supera el límite de 8 KB de la sincronización de Chrome. Quita entradas del horario o acorta las intenciones e intenta de nuevo."
   },
   "notify_lists_sync_limit": {
-    "message": "Las listas superan el límite de 8 KB de la sincronización de Chrome. Quita reglas personalizadas o de permitidos e intenta de nuevo."
+    "message": "Las listas superan el límite de 8 KB de la sincronización de Chrome. Quita entradas de la lista de bloqueo o de la lista de permitidos, y vuelve a intentarlo."
   },
   "notify_guard_lists_remove_blocked": {
     "message": "hay una sesión estricta en curso: quitar sitios bloqueados no surte efecto hasta que termine"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "hay una sesión estricta en curso: las nuevas entradas permitidas no surten efecto hasta que termine"
+    "message": "hay una sesión estricta en curso: las nuevas entradas de la lista de permitidos se desbloquean cuando termine"
   },
   "notify_guard_lists_disable_category": {
     "message": "hay una sesión estricta en curso: desactivar categorías no surte efecto hasta que termine"

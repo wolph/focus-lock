@@ -93,13 +93,13 @@
     "message": "設定超過 8 KB Chrome 同步限制。移除排程項目或縮短意圖，然後再試一次。"
   },
   "notify_lists_sync_limit": {
-    "message": "清單超過 8 KB Chrome 同步限制。請移除自訂規則或允許清單規則，然後重試。"
+    "message": "清單超過 8 KB Chrome 同步限制。請從封鎖清單或允許清單中移除項目，然後重試。"
   },
   "notify_guard_lists_remove_blocked": {
     "message": "正在運行困難工作階段：移除阻止網站會在結束時解除鎖定"
   },
   "notify_guard_lists_add_whitelist": {
-    "message": "有硬性工作階段執行中：新增允許清單項目需要等到工作階段結束為止"
+    "message": "硬性工作階段執行中：新增的允許清單項目會在工作階段結束時解鎖"
   },
   "notify_guard_lists_disable_category": {
     "message": "正在運行困難工作階段：停用類別會在結束時解除鎖定"

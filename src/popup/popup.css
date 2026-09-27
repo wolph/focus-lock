@@ -272,6 +272,7 @@ body {
 
 .chip-row,
 .duration-control,
+.mode-control,
 .pill-row {
   display: flex;
   flex-wrap: wrap;
@@ -424,10 +425,28 @@ body {
   color: var(--text-soft);
 }
 
-.mode-control {
-  padding: 8px 10px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+/*
+ * A radio wearing the chip look. The invisible input covers the whole chip, so it stays the
+ * element a click lands on: a one-pixel input behind the label reads as obstructed to tools that
+ * check what a click would hit before clicking.
+ */
+.radio-chip {
+  position: relative;
+}
+
+.radio-chip__input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-chip:has(.radio-chip__input:focus-visible) {
+  outline: 2px solid var(--focus-color);
+  outline-offset: 2px;
 }
 
 .domain-input-row {
@@ -712,10 +731,6 @@ body {
   align-items: flex-start;
   padding: 4px 0;
   cursor: pointer;
-}
-
-.mode-control .radio-row {
-  padding: 3px 0;
 }
 
 .radio-text {
@@ -1374,13 +1389,11 @@ body {
   overflow: visible;
 }
 
-.session-disclosure .mode-control,
 .session-disclosure .rule-summary {
   border: 0;
   background: transparent;
 }
 
-.session-disclosure .mode-control,
 .session-disclosure .rule-summary__heading,
 .session-disclosure .rule-summary__scroll {
   padding-inline: 0;

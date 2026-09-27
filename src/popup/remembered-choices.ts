@@ -1,29 +1,33 @@
 /**
- * The session length and session type the popup opened with last time.
+ * The session length, session type and blocking mode the popup opened with last time.
  *
  * The popup is rebuilt every time it opens, so without this every start began at the middle preset
- * and the Settings default type, whatever was chosen the time before. What is kept is what the
+ * and the Settings default type and mode, whatever was chosen the time before. What is kept is what the
  * person picked, and it is kept on this device only: a choice made for this machine's work is not
  * a default another machine should inherit.
  */
 import { isRelativeMinuteDuration } from '../shared/numeric-validation';
 import { LOCAL_POPUP_CHOICES } from '../shared/storage-keys';
-import type { Strictness } from '../shared/types';
+import type { SessionMode, Strictness } from '../shared/types';
 import type { DraftDuration, StartDraft, TimedDurationDraft } from './start-draft';
 
 /** Each half is null when there is nothing usable to restore, and the Settings default stands. */
 export interface RememberedChoices {
   duration: DraftDuration | null;
   strictness: Strictness | null;
+  mode: SessionMode | null;
 }
 
+/** `mode` arrived after the first version was written, so a value without it is still read. */
 interface StoredChoicesV1 {
   version: 1;
   duration: DraftDuration;
   strictness: Strictness;
+  mode: SessionMode;
 }
 
 const STRICTNESSES: readonly Strictness[] = ['flexible', 'friction', 'hard'];
+const MODES: readonly SessionMode[] = ['blacklist', 'whitelist'];
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
@@ -75,6 +79,7 @@ export function parseRememberedChoices(
     strictness: STRICTNESSES.includes(raw.strictness as Strictness)
       ? (raw.strictness as Strictness)
       : null,
+    mode: MODES.includes(raw.mode as SessionMode) ? (raw.mode as SessionMode) : null,
   };
 }
 
@@ -84,6 +89,7 @@ export function applyRememberedChoices(draft: StartDraft, choices: RememberedCho
     ...draft,
     duration: choices.duration ?? draft.duration,
     timedStrictness: choices.strictness ?? draft.timedStrictness,
+    mode: choices.mode ?? draft.mode,
   };
 }
 
@@ -93,6 +99,7 @@ export function choicesOf(draft: StartDraft): StoredChoicesV1 {
     version: 1,
     duration: structuredClone(draft.duration),
     strictness: draft.timedStrictness,
+    mode: draft.mode,
   };
 }
 

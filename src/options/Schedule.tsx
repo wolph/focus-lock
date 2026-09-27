@@ -6,6 +6,7 @@ import { t } from '../shared/i18n';
 import {
   FORCED_CYCLES_LABEL,
   HARD_UNAVAILABLE_REASON,
+  MODE_LABELS,
   SCHEDULE_UNTIL_STOPPED_COPY,
   SCHEDULE_WINDOW_LABEL,
   UNTIL_STOPPED_DISCLOSURE,
@@ -369,7 +370,7 @@ function EntryForm(props: EntryFormProps): VNode {
               props.onDraft({ ...props.draft, entry: { ...entry, mode: 'blacklist' } });
             }}
           />
-          {t('options_mode_blacklist_label')}
+          {MODE_LABELS.blacklist}
         </label>
         <label class="check">
           <input
@@ -380,7 +381,7 @@ function EntryForm(props: EntryFormProps): VNode {
               props.onDraft({ ...props.draft, entry: { ...entry, mode: 'whitelist' } });
             }}
           />
-          {t('options_mode_whitelist_label')}
+          {MODE_LABELS.whitelist}
         </label>
       </div>
       {strictnessField}

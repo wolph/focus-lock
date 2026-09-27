@@ -15,10 +15,10 @@
     "message": "Blokkering"
   },
   "options_blocking_help": {
-    "message": "Egne regler blokkerer under økter med blokkeringsliste. Tillatelseslisten er det som forblir tilgjengelig under økter med tillatelsesliste. Ferdige kategorier blokkerer vanlige tidstyver."
+    "message": "Blokkeringslisten din og kategoriene du aktiverer blokkeres når en økt blokkerer valgte nettsteder. Når en økt bare tillater valgte nettsteder, er tillatelseslisten din det eneste som forblir tilgjengelig. Ferdige kategorier blokkerer vanlige tidstyver."
   },
   "options_custom_blacklist_title": {
-    "message": "Egen blokkeringsliste"
+    "message": "Blokkeringsliste"
   },
   "options_whitelist_title": {
     "message": "Tillatelsesliste"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Forvalg for dyp økt (minutter)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Blokkeringsliste: blokker oppførte nettsteder"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Tillatelsesliste: tillat bare oppførte nettsteder"
   },
   "options_strictness_flexible_label": {
     "message": "Fleksibel: avslutt økten når du vil"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blokkeringsliste"
+    "message": "blokker valgte nettsteder"
   },
   "options_schedule_mode_whitelist": {
-    "message": "tillatelsesliste"
+    "message": "tillat bare valgte nettsteder"
   },
   "options_schedule_strictness_flexible": {
     "message": "fleksibel"

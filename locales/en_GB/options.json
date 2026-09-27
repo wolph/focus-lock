@@ -15,13 +15,13 @@
     "message": "Blocking"
   },
   "options_blocking_help": {
-    "message": "Custom rules block during blacklist sessions. The whitelist is what stays reachable during whitelist sessions. Bundled categories block common time sinks."
+    "message": "Your block list and the categories you enable are blocked when a session blocks selected sites. When a session allows selected sites only, your allow list is all that stays reachable. Bundled categories block common time sinks."
   },
   "options_custom_blacklist_title": {
-    "message": "Custom blacklist"
+    "message": "Block list"
   },
   "options_whitelist_title": {
-    "message": "Whitelist"
+    "message": "Allow list"
   },
   "options_bundled_categories_heading": {
     "message": "Bundled categories"
@@ -166,12 +166,6 @@
   },
   "options_preset_deep_label": {
     "message": "Deep session preset (minutes)"
-  },
-  "options_mode_blacklist_label": {
-    "message": "Blacklist: block listed sites"
-  },
-  "options_mode_whitelist_label": {
-    "message": "Whitelist: allow only listed sites"
   },
   "options_strictness_flexible_label": {
     "message": "Flexible: end the session whenever you choose"
@@ -520,10 +514,10 @@
     }
   },
   "options_schedule_mode_blacklist": {
-    "message": "blacklist"
+    "message": "block selected sites"
   },
   "options_schedule_mode_whitelist": {
-    "message": "whitelist"
+    "message": "allow selected sites only"
   },
   "options_schedule_strictness_flexible": {
     "message": "flexible"
