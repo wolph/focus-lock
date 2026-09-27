@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Darbo kortelės nėra (nebūtina)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Pasirinkta kortelė nepasiekiama - pasirink kitą"
-  },
   "popup_cycles_label": {
     "message": "Ciklai: $FOCUS$ min. susikaupimo, $SHORT_BREAK$ min. pertrauka, $LONG_BREAK$ min. ilga pertrauka kas $LONG_EVERY$ kartą",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Darbo kortelė: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Keisti"
-  },
-  "popup_session_settings_summary": {
-    "message": "Sesijos nustatymai"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Pasirink darbo kortelę"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Darbo kortelė"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (dabartinė)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

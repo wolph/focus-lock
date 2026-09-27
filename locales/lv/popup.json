@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Nav darba cilnes (nav obligāti)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Izvēlētā cilne nav pieejama - izvēlies citu"
-  },
   "popup_cycles_label": {
     "message": "Cikli: $FOCUS$ min koncentrēšanās, $SHORT_BREAK$ min pārtraukums, $LONG_BREAK$ min garais pārtraukums ik pēc $LONG_EVERY$ reizes",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Darba cilne: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Mainīt"
-  },
-  "popup_session_settings_summary": {
-    "message": "Sesijas iestatījumi"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Izvēlies darba cilni"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Darba cilne"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (pašreizējā)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

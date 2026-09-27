@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Bez karty roboczej (opcjonalnie)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Wybrana karta niedostępna - wybierz inną"
-  },
   "popup_cycles_label": {
     "message": "Cykle: skupienie $FOCUS$ min, przerwa $SHORT_BREAK$ min, długa przerwa $LONG_BREAK$ min co $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Karta robocza: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Zmień"
-  },
-  "popup_session_settings_summary": {
-    "message": "Ustawienia sesji"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Wybierz kartę roboczą"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Karta robocza"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (bieżąca)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

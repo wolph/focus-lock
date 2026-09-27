@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Nessuna scheda di lavoro (facoltativo)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Scheda selezionata non disponibile - scegline un'altra"
-  },
   "popup_cycles_label": {
     "message": "Cicli: $FOCUS$ min di concentrazione, $SHORT_BREAK$ min di intervallo, $LONG_BREAK$ min di intervallo lungo ogni $LONG_EVERY$",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Scheda di lavoro: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Cambia"
-  },
-  "popup_session_settings_summary": {
-    "message": "Impostazioni della sessione"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Scegli una scheda di lavoro"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Scheda di lavoro"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (attuale)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

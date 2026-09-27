@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Без рабочей вкладки (необязательно)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Выбранная вкладка недоступна - выбери другую"
-  },
   "popup_cycles_label": {
     "message": "Циклы: фокус $FOCUS$ мин, перерыв $SHORT_BREAK$ мин, длинный перерыв $LONG_BREAK$ мин каждый $LONG_EVERY$-й",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Рабочая вкладка: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Изменить"
-  },
-  "popup_session_settings_summary": {
-    "message": "Настройки сессии"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Выбери рабочую вкладку"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Рабочая вкладка"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (текущая)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

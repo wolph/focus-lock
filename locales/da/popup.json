@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Ingen arbejdsfane (valgfrit)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Valgt fane er utilgængelig - vælg en anden"
-  },
   "popup_cycles_label": {
     "message": "Cyklusser: $FOCUS$ min fokus, $SHORT_BREAK$ min pause, $LONG_BREAK$ min lang pause hver $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Arbejdsfane: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Skift"
-  },
-  "popup_session_settings_summary": {
-    "message": "Sessionsindstillinger"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Vælg en arbejdsfane"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Arbejdsfane"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (aktuel)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

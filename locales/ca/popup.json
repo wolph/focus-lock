@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Cap pestanya de treball (opcional)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "La pestanya seleccionada no està disponible - tria'n una altra"
-  },
   "popup_cycles_label": {
     "message": "Cicles: $FOCUS$ min de concentració, $SHORT_BREAK$ min de descans, $LONG_BREAK$ min de descans llarg cada $LONG_EVERY$è",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Pestanya de treball: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Canvia"
-  },
-  "popup_session_settings_summary": {
-    "message": "Configuració de la sessió"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Tria una pestanya de treball"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Pestanya de treball"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Actual)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

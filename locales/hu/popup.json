@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Nincs munkafül (nem kötelező)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "A választott fül nem érhető el - válassz másikat"
-  },
   "popup_cycles_label": {
     "message": "Ciklusok: $FOCUS$ perc fókusz, $SHORT_BREAK$ perc pihenő, $LONG_BREAK$ perc hosszú pihenő minden $LONG_EVERY$. után",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Munkafül: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Csere"
-  },
-  "popup_session_settings_summary": {
-    "message": "A menet beállításai"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Válassz munkafület"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Munkafül"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (jelenlegi)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

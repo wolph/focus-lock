@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "بدون زبانه کار (اختیاری)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "زبانه انتخابی در دسترس نیست - دیگری را انتخاب کنید"
-  },
   "popup_cycles_label": {
     "message": "چرخه‌ها: $FOCUS$ دقیقه تمرکز، $SHORT_BREAK$ دقیقه استراحت، $LONG_BREAK$ دقیقه استراحت بلند در هر چرخه $LONG_EVERY$",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "زبانه کار: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "تغییر"
-  },
-  "popup_session_settings_summary": {
-    "message": "تنظیمات جلسه"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "یک زبانه کار انتخاب کنید"
-  },
-  "popup_work_tab_select_label": {
-    "message": "زبانه کار"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (فعلی)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

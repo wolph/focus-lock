@@ -1,12 +1,12 @@
-import type { Locator, Page } from '@playwright/test';
+import type { Page } from '@playwright/test';
 import { expect } from './fixtures';
 
 /**
  * Put a popup section in the state a person would be looking at before using its controls.
  *
- * The start form still keeps its settings behind a disclosure. The running session does not: its
- * actions are on screen from the moment the popup opens, by product rule, so asking to "open" them
- * is a check that they are already there rather than a click. See
+ * Nothing in the popup is folded away any more. The start form shows every setting, and the
+ * running session shows its actions from the moment the popup opens, by product rule, so asking
+ * to "open" a section is a check that it is already there rather than a click. See
  * docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
  */
 export async function openPopupSection(
@@ -17,11 +17,7 @@ export async function openPopupSection(
     await expect(page.locator('.session-actions .actions')).toBeVisible();
     return;
   }
-  const summary: Locator = page.locator('summary').filter({ hasText: new RegExp(`^${label}$`) });
-  await expect(summary).toBeVisible();
-  const details: Locator = summary.locator('..');
-  if ((await details.getAttribute('open')) === null) await summary.click();
-  await expect(details).toHaveAttribute('open', '');
+  await expect(page.locator('.start-form .rule-summary')).toBeVisible();
 }
 
 /** Starting and recovery states expose their permitted End action directly. */

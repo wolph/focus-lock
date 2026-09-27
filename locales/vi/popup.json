@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Không có tab công việc (không bắt buộc)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Tab đã chọn không khả dụng - hãy chọn tab khác"
-  },
   "popup_cycles_label": {
     "message": "Chu kỳ: $FOCUS$ phút tập trung, $SHORT_BREAK$ phút nghỉ, $LONG_BREAK$ phút nghỉ dài sau mỗi $LONG_EVERY$ lần",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Tab công việc: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Đổi"
-  },
-  "popup_session_settings_summary": {
-    "message": "Cài đặt phiên"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Chọn một tab công việc"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Tab công việc"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Hiện tại)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

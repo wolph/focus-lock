@@ -9,9 +9,12 @@ interface Beat {
 const BEATS: readonly Beat[] = [
   {
     id: 'start',
-    text: 'Click the Focus Lock icon, name your task, choose your draft as the work tab, and press Start. The site you are on locks.',
+    text: 'Open your Proposal draft, click the Focus Lock icon, name your task, and press Start. The draft becomes your work tab and Headlines locks.',
   },
-  { id: 'back', text: 'Press Back to work. Your draft is right where you left it.' },
+  {
+    id: 'back',
+    text: 'Open Headlines and press Back to work. Your draft is right where you left it.',
+  },
   { id: 'end', text: 'Open Focus Lock again and end the session when you are done.' },
 ];
 

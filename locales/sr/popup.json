@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Без радне картице (необавезно)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Изабрана картица није доступна - изабери другу"
-  },
   "popup_cycles_label": {
     "message": "Циклуси: $FOCUS$ мин фокуса, $SHORT_BREAK$ мин паузе, $LONG_BREAK$ мин дуге паузе сваки $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Радна картица: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Промени"
-  },
-  "popup_session_settings_summary": {
-    "message": "Подешавања сесије"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Изабери радну картицу"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Радна картица"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (тренутна)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

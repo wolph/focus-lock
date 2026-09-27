@@ -33,7 +33,6 @@ import {
   waitForActiveSession,
 } from './fixtures';
 import { type PagesServer, startPagesServer } from './pages-server';
-import { openPopupSection } from './popup-disclosures';
 import { buildStatsVisualSeed, type StatsVisualSeed } from './stats-visual-seeds';
 
 const ROOT: string = fileURLToPath(new URL('../../', import.meta.url));
@@ -264,18 +263,16 @@ async function recordSiteDemo(directory: string, frames: string): Promise<void> 
       await preparePage(page, PAGE_SIZE);
       await page.goto(server.url);
 
-      // The demo opens idle on the Headlines tab. The popup is opened with the intention typed
-      // before the loop, Start locks the page the visitor is on, and Back to work returns to the
-      // draft.
+      // The demo opens idle on the Headlines tab. The popup is opened on the draft with the
+      // intention typed before the loop, so the draft is the work tab. Start locks Headlines,
+      // which the visitor then opens, and Back to work returns to the draft.
       const draft: FrameLocator = page.frameLocator('iframe[data-tab-id="11"]');
       const headlines: FrameLocator = page.frameLocator('iframe[data-tab-id="12"]');
       await expect(headlines.locator('focus-lock-overlay')).not.toBeAttached();
+      await page.getByRole('button', { name: 'Proposal draft', exact: true }).click();
       await page.getByRole('button', { name: 'Open Focus Lock' }).click();
       const popup: Locator = page.locator('#popup');
       await popup.getByLabel('Intention').fill(INTENTION);
-      // Headlines is not an eligible work tab, so nothing is preselected: pick the draft.
-      await popup.getByRole('button', { name: 'Change' }).click();
-      await popup.getByLabel('Work tab').selectOption('11');
       await expect(popup.locator('.work-target')).toHaveText(/Proposal draft/);
 
       await page.locator('#browser').scrollIntoViewIfNeeded();
@@ -290,6 +287,7 @@ async function recordSiteDemo(directory: string, frames: string): Promise<void> 
           // Close the popup panel so the lockscreen underneath is what the frames show.
           await page.getByRole('button', { name: 'Open Focus Lock' }).click();
           await expect(page.locator('#popup-panel')).toBeHidden();
+          await page.getByRole('button', { name: 'Headlines', exact: true }).click();
           await waitForDemoLockTarget(page, 12, 'Back to work');
         }
         if (frame === 28) await capture(page, directory, 'demo-poster.png');
@@ -385,17 +383,10 @@ test.describe('README capture', (): void => {
     await work.goto(workUrl);
     await expect(work.getByRole('heading', { name: INTENTION })).toBeVisible();
     await work.bringToFront();
-    await preparePage(extPage, { width: 480, height: 600 });
+    await preparePage(extPage, { width: 600, height: 600 });
     await extPage.reload();
     await extPage.getByLabel('Intention').fill(INTENTION);
-    await openPopupSection(extPage, 'Session settings');
-    await expect(
-      extPage.getByLabel('Work tab', { exact: true }).locator('option:checked'),
-    ).toContainText(INTENTION);
-    await extPage
-      .getByLabel('Work tab', { exact: true })
-      .selectOption(await extPage.getByLabel('Work tab', { exact: true }).inputValue());
-    await extPage.getByText('Session settings', { exact: true }).click();
+    await expect(extPage.locator('.work-target')).toContainText(INTENTION);
     await expect(extPage.getByRole('button', { name: 'Start 25 min focus' })).toBeVisible();
     await capture(extPage, directory, 'focus-session.png');
     const blocked: Page = await context.newPage();

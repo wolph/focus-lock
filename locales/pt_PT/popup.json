@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Sem separador de trabalho (opcional)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Separador escolhido indisponível - escolhe outro"
-  },
   "popup_cycles_label": {
     "message": "Ciclos: $FOCUS$ min de foco, $SHORT_BREAK$ min de intervalo, $LONG_BREAK$ min de intervalo longo a cada $LONG_EVERY$",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Separador de trabalho: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Mudar"
-  },
-  "popup_session_settings_summary": {
-    "message": "Definições da sessão"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Escolhe um separador de trabalho"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Separador de trabalho"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (atual)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

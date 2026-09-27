@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "بلا علامة تبويب عمل (اختياري)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "علامة التبويب المحددة غير متاحة - اختر غيرها"
-  },
   "popup_cycles_label": {
     "message": "الدورات: $FOCUS$ دقيقة تركيز، $SHORT_BREAK$ دقيقة استراحة، $LONG_BREAK$ دقيقة استراحة طويلة كل دورة رقم $LONG_EVERY$",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "علامة تبويب العمل: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "تغيير"
-  },
-  "popup_session_settings_summary": {
-    "message": "إعدادات الجلسة"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "اختر علامة تبويب للعمل"
-  },
-  "popup_work_tab_select_label": {
-    "message": "علامة تبويب العمل"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (الحالية)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

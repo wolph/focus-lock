@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Walang tab ng trabaho (opsyonal)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Hindi magagamit ang napiling tab - pumili ng iba"
-  },
   "popup_cycles_label": {
     "message": "Siklo: $FOCUS$ min na Focus, $SHORT_BREAK$ min na pahinga, $LONG_BREAK$ min na mahabang pahinga tuwing ika-$LONG_EVERY$",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Tab ng trabaho: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Baguhin"
-  },
-  "popup_session_settings_summary": {
-    "message": "Mga setting ng sesyon"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Pumili ng tab ng trabaho"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Tab ng trabaho"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Kasalukuyan)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

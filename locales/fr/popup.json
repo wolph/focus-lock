@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Aucun onglet de travail (facultatif)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Onglet choisi indisponible - choisis-en un autre"
-  },
   "popup_cycles_label": {
     "message": "Cycles : $FOCUS$ min de concentration, $SHORT_BREAK$ min de pause, $LONG_BREAK$ min de longue pause toutes les $LONG_EVERY$ pauses",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Onglet de travail : $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Changer"
-  },
-  "popup_session_settings_summary": {
-    "message": "Réglages de la session"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Choisis un onglet de travail"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Onglet de travail"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (actuel)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

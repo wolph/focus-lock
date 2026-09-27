@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Ingen arbetsflik (valfritt)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Vald flik är inte tillgänglig - välj en annan"
-  },
   "popup_cycles_label": {
     "message": "Cykler: $FOCUS$ min fokus, $SHORT_BREAK$ min paus, $LONG_BREAK$ min lång paus var $LONG_EVERY$:e",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Arbetsflik: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Byt"
-  },
-  "popup_session_settings_summary": {
-    "message": "Passinställningar"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Välj en arbetsflik"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Arbetsflik"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Aktuell)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

@@ -561,60 +561,43 @@ describe('StartForm settings link, list rebase, and layout', (): void => {
   });
 });
 
-describe('quiet session settings', (): void => {
-  it('keeps the blocking mode visible while the settings are collapsed', (): void => {
+describe('every setting on screen', (): void => {
+  it('shows the session type, mode, rules and cycles with nothing folded away', (): void => {
     const view: ReturnType<typeof render> = render(
       <StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />,
     );
-    const mode: HTMLElement = view.getByRole('group', { name: 'Blocking mode' });
-    expect(mode.closest('details')).toBeNull();
-    fireEvent.click(view.getByRole('radio', { name: /Allow selected sites only/ }));
-    expect(view.getByLabelText('Add an allowed domain').closest('details')).toBeNull();
+    expect(view.container.querySelector('details')).toBeNull();
+    expect(view.getByRole('button', { name: 'Hard lock' })).toBeTruthy();
+    expect(view.getByRole('group', { name: 'Blocking mode' })).toBeTruthy();
+    expect(view.getByRole('heading', { name: 'What will be blocked' })).toBeTruthy();
+    expect(view.getByRole('checkbox', { name: /^Cycles:/ })).toBeTruthy();
+    expect(view.queryByRole('combobox')).toBeNull();
+    expect(view.queryByRole('button', { name: 'Change' })).toBeNull();
   });
 
-  it('starts collapsed and opens the chooser from Change', (): void => {
+  it('keeps custom minutes visible and focuses an invalid duration on start', async (): Promise<void> => {
     const view: ReturnType<typeof render> = render(
       <StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />,
     );
-    const details: HTMLDetailsElement = view.getByText('Session settings')
-      .parentElement as HTMLDetailsElement;
-    expect(details.open).toBe(false);
-    fireEvent.click(view.getByRole('button', { name: 'Change' }));
-    expect(details.open).toBe(true);
-  });
-
-  it('keeps custom minutes visible and focuses invalid duration without opening settings', async (): Promise<void> => {
-    const view: ReturnType<typeof render> = render(
-      <StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />,
-    );
-    const details: HTMLDetailsElement = view.getByText('Session settings')
-      .parentElement as HTMLDetailsElement;
-    details.open = true;
     const custom: HTMLInputElement = view.getByRole('spinbutton', {
       name: 'Custom minutes',
     }) as HTMLInputElement;
     fireEvent.input(custom, { target: { value: '0' } });
-    details.open = false;
     fireEvent.click(view.getByRole('button', { name: /^Start/ }));
-    expect(details.open).toBe(false);
     expect(custom.value).toBe('0');
     await waitFor((): void => expect(document.activeElement).toBe(custom));
-    expect(view.getByRole('alert').closest('details')).toBeNull();
+    expect(view.getByRole('alert').closest('.start-form__actions')).not.toBeNull();
   });
 });
 
-it('keeps invalid allowed-domain feedback outside collapsed settings', (): void => {
+it('keeps invalid allowed-domain feedback beside Start', (): void => {
   const view: ReturnType<typeof render> = render(
     <StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />,
   );
-  const details: HTMLDetailsElement = view.getByText('Session settings')
-    .parentElement as HTMLDetailsElement;
-  details.open = true;
   fireEvent.click(view.getByRole('radio', { name: /Allow selected sites only/ }));
   fireEvent.input(view.getByLabelText('Add an allowed domain'), { target: { value: 'http://[' } });
   fireEvent.click(view.getByRole('button', { name: 'Add allowed domain' }));
-  details.open = false;
-  expect(view.getByRole('alert').closest('details')).toBeNull();
+  expect(view.getByRole('alert').closest('.start-form__actions')).not.toBeNull();
 });
 
 describe('StartForm remembers the last length, session type and mode', (): void => {

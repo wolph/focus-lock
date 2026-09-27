@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Tanpa tab kerja (opsional)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Tab yang dipilih tidak tersedia - pilih yang lain"
-  },
   "popup_cycles_label": {
     "message": "Siklus: $FOCUS$ mnt fokus, $SHORT_BREAK$ mnt istirahat, $LONG_BREAK$ mnt istirahat panjang setiap siklus ke-$LONG_EVERY$",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Tab kerja: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Ganti"
-  },
-  "popup_session_settings_summary": {
-    "message": "Pengaturan sesi"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Pilih tab kerja"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Tab kerja"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Saat ini)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

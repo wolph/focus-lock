@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Nema radnog abulatora (neobavezno)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Odabrani tabulator nije dostupan - odaberi drugi"
-  },
   "popup_cycles_label": {
     "message": "Ciklusi: $FOCUS$ min fokusa, $SHORT_BREAK$ min pauze, $LONG_BREAK$ min dugačka pauza svakih $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Radni tabulator: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Promijeni"
-  },
-  "popup_session_settings_summary": {
-    "message": "Postavke sesije"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Odaberi radni tabulator"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Radni tabulator"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Trenutni)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

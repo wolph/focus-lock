@@ -22,9 +22,9 @@ function block(selector: string): string {
  * real popup window. This pin keeps the rule readable without a browser.
  */
 describe('popup.css sizing', (): void => {
-  it('fixes the popup at 480 by 600 with no viewport-unit maximum', (): void => {
+  it('fixes the popup at 600 by 600 with no viewport-unit maximum', (): void => {
     const body: string = block('body');
-    expect(body).toMatch(/width:\s*480px/);
+    expect(body).toMatch(/width:\s*600px/);
     expect(body).toMatch(/max-inline-size:\s*100%/);
     expect(body).toMatch(/block-size:\s*600px/);
     expect(body).not.toMatch(/100vw|100vh/);

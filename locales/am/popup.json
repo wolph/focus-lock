@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "የስራ ትር የለም (አማራጭ)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "የተመረጠው ትር አይገኝም - ሌላ ይምረጡ"
-  },
   "popup_cycles_label": {
     "message": "ዑደቶች፦ $FOCUS$ ደቂ ትኩረት፣ $SHORT_BREAK$ ደቂ እረፍት፣ በየ$LONG_EVERY$ኛው ዑደት $LONG_BREAK$ ደቂ ረጅም እረፍት",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "የስራ ትር፦ $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "ቀይር"
-  },
-  "popup_session_settings_summary": {
-    "message": "የክፍለ ጊዜ ቅንብሮች"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "የስራ ትር ይምረጡ"
-  },
-  "popup_work_tab_select_label": {
-    "message": "የስራ ትር"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (አሁኑ)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

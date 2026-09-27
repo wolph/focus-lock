@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "कोई काम का टैब नहीं (वैकल्पिक)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "चुना हुआ टैब उपलब्ध नहीं - दूसरा चुनें"
-  },
   "popup_cycles_label": {
     "message": "चक्र: $FOCUS$ मि फोकस, $SHORT_BREAK$ मि ब्रेक, हर $LONG_EVERY$-वें पर $LONG_BREAK$ मि लंबा ब्रेक",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "काम का टैब: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "बदलें"
-  },
-  "popup_session_settings_summary": {
-    "message": "सेशन की सेटिंग्स"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "काम का टैब चुनें"
-  },
-  "popup_work_tab_select_label": {
-    "message": "काम का टैब"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (मौजूदा)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

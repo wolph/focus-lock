@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Çalışma sekmesi yok (isteğe bağlı)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Seçilen sekme kullanılamıyor - başka birini seç"
-  },
   "popup_cycles_label": {
     "message": "Döngüler: $FOCUS$ dk odak, $SHORT_BREAK$ dk mola, her $LONG_EVERY$. döngüde $LONG_BREAK$ dk uzun mola",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Çalışma sekmesi: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Değiştir"
-  },
-  "popup_session_settings_summary": {
-    "message": "Seans ayarları"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Bir çalışma sekmesi seç"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Çalışma sekmesi"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (şu anki)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

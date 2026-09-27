@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Χωρίς καρτέλα εργασίας (προαιρετικό)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Η επιλεγμένη καρτέλα δεν είναι διαθέσιμη - διάλεξε άλλη"
-  },
   "popup_cycles_label": {
     "message": "Κύκλοι: $FOCUS$ λεπτά εστίαση, $SHORT_BREAK$ λεπτά διάλειμμα, $LONG_BREAK$ λεπτά μεγάλο διάλειμμα κάθε $LONG_EVERY$ο",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Καρτέλα εργασίας: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Αλλαγή"
-  },
-  "popup_session_settings_summary": {
-    "message": "Ρυθμίσεις συνεδρίας"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Διάλεξε καρτέλα εργασίας"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Καρτέλα εργασίας"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (τρέχουσα)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "பணி தாவல் இல்லை (விருப்பத்தேர்வு)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "தேர்ந்தெடுக்கப்பட்ட தாவல் கிடைக்கவில்லை - வேறொன்றைத் தேர்வுசெய்"
-  },
   "popup_cycles_label": {
     "message": "சுழற்சிகள்: $FOCUS$ நிமிட கவனம், $SHORT_BREAK$ நிமிட இடைவேளை, ஒவ்வொரு $LONG_EVERY$வது சுழற்சியிலும் $LONG_BREAK$ நிமிட நீண்ட இடைவேளை",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "பணி தாவல்: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "மாற்று"
-  },
-  "popup_session_settings_summary": {
-    "message": "அமர்வு அமைப்புகள்"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "ஒரு பணி தாவலைத் தேர்வுசெய்யவும்"
-  },
-  "popup_work_tab_select_label": {
-    "message": "பணி தாவல்"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (தற்போதையது)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

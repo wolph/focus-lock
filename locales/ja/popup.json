@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "ワークタブなし（オプション）"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "選択されたタブは利用できません。別のものを選択してください"
-  },
   "popup_cycles_label": {
     "message": "サイクル：$FOCUS$分フォーカス、$SHORT_BREAK$分休憩、$LONG_EVERY$番目ごとに$LONG_BREAK$分長い休憩",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "ワークタブ：$TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "変更"
-  },
-  "popup_session_settings_summary": {
-    "message": "セッション設定"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "ワークタブを選択"
-  },
-  "popup_work_tab_select_label": {
-    "message": "ワークタブ"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$（現在）",
     "placeholders": {
       "TITLE": {
         "content": "$1",

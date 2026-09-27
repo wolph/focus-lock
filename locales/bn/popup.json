@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "কোনো কাজের ট্যাব নয় (ঐচ্ছিক)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "বেছে নেওয়া ট্যাব নেই - অন্যটি বাছুন"
-  },
   "popup_cycles_label": {
     "message": "চক্র: $FOCUS$ মি ফোকাস, $SHORT_BREAK$ মি বিরতি, প্রতি $LONG_EVERY$তম বারে $LONG_BREAK$ মি লম্বা বিরতি",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "কাজের ট্যাব: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "বদলান"
-  },
-  "popup_session_settings_summary": {
-    "message": "সেশনের সেটিংস"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "কাজের ট্যাব বেছে নিন"
-  },
-  "popup_work_tab_select_label": {
-    "message": "কাজের ট্যাব"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (বর্তমান)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

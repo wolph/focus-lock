@@ -2,7 +2,6 @@ import type { Page, Worker } from '@playwright/test';
 import type { ListsConfig, SessionSnapshotV2 } from '../../src/shared/types';
 import type { WorkTargetResult } from '../../src/shared/work-target';
 import { expect, sendExtensionRequest, test, waitForLifecycle } from './fixtures';
-import { openPopupSection } from './popup-disclosures';
 
 interface TabIdentity {
   tabId: number;
@@ -40,7 +39,7 @@ async function openWorkPage(page: Page, url: string, title: string): Promise<voi
   }, title);
 }
 
-test('the popup defaults to the current work tab and can replace a closed target', async ({
+test('the popup takes the current tab as the work tab and can replace a closed target', async ({
   context,
   extPage,
   worker,
@@ -54,18 +53,11 @@ test('the popup defaults to the current work tab and can replace a closed target
   await workPage.bringToFront();
   await extPage.reload();
 
-  await openPopupSection(extPage, 'Session settings');
-  const workTab = extPage.getByLabel('Work tab', { exact: true });
-  await expect(workTab).toHaveValue(String(work.tabId));
-  await workTab.selectOption('');
+  // The tab the popup opened on is the work tab. There is nothing to choose before the start.
+  await expect(extPage.locator('.work-target')).toHaveText('Work tab: Write the generator example');
   await expect(
     extPage.getByRole('button', { name: 'Make this my work tab', exact: true }),
   ).toHaveCount(0);
-  await expect(workTab.locator('option').first()).toHaveText(
-    'Write the generator example (Current)',
-  );
-  await workTab.selectOption(String(work.tabId));
-  await expect(workTab).toHaveValue(String(work.tabId));
   await extPage.getByLabel('Intention').fill('Write the first assertion');
   await extPage.getByRole('button', { name: /^Start 25 min focus$/ }).click();
 

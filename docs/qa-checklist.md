@@ -181,7 +181,7 @@ since the grep was written. Both mistakes were present when this section was fir
 
 ### popup-work-tab.spec.ts (1)
 
-- the popup defaults to the current work tab and can replace a closed target
+- the popup takes the current tab as the work tab and can replace a closed target
 
 ### probe-check.spec.ts (1)
 
@@ -201,8 +201,8 @@ since the grep was written. Both mistakes were present when this section was fir
 ### quiet-popup.spec.ts (3)
 
 - a gate opened elsewhere is visible alongside the session actions
-- an invalid custom duration reveals and focuses its field
-- the compact start form preserves edited settings and submits the visible plan
+- an invalid custom duration focuses its field
+- the start form shows every setting and submits the visible plan
 
 ### readme-media.spec.ts (2)
 

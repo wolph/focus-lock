@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Töö vahekaart puudub (valikuline)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Valitud vahekaart pole saadaval - vali mõni teine"
-  },
   "popup_cycles_label": {
     "message": "Tsüklid: $FOCUS$ min keskendumist, $SHORT_BREAK$ min vaheaega, $LONG_BREAK$ min pikk vaheaeg iga $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Töö vahekaart: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Muuda"
-  },
-  "popup_session_settings_summary": {
-    "message": "Seansi seaded"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Vali töö vahekaart"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Töö vahekaart"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (praegune)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "작업 탭 없음(선택 사항)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "선택된 탭을 사용할 수 없음 - 다른 탭을 선택하십시오"
-  },
   "popup_cycles_label": {
     "message": "사이클：$FOCUS$분 포커스, $SHORT_BREAK$분 휴식, $LONG_EVERY$번째마다 $LONG_BREAK$분 긴 휴식",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "작업 탭：$TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "변경"
-  },
-  "popup_session_settings_summary": {
-    "message": "세션 설정"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "작업 탭 선택"
-  },
-  "popup_work_tab_select_label": {
-    "message": "작업 탭"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$(현재)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

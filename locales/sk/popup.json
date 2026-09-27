@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Žiadna pracovná karta (voliteľné)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Vybraná karta nie je dostupná - vyber inú"
-  },
   "popup_cycles_label": {
     "message": "Cykly: $FOCUS$ min sústredenia, $SHORT_BREAK$ min prestávka, $LONG_BREAK$ min dlhá prestávka každý $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Pracovná karta: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Zmeniť"
-  },
-  "popup_session_settings_summary": {
-    "message": "Nastavenia relácie"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Vyber pracovnú kartu"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Pracovná karta"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (aktuálna)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

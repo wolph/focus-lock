@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Nicio filă de lucru (opțional)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Fila selectată este indisponibilă - alege alta"
-  },
   "popup_cycles_label": {
     "message": "Cicluri: $FOCUS$ min concentrare, $SHORT_BREAK$ min pauză, $LONG_BREAK$ min pauză lungă la fiecare al $LONG_EVERY$-lea",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Filă de lucru: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Schimbă"
-  },
-  "popup_session_settings_summary": {
-    "message": "Setările sesiunii"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Alege o filă de lucru"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Filă de lucru"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Curentă)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

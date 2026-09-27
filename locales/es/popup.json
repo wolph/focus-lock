@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Sin pestaña de trabajo (opcional)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Pestaña elegida no disponible - elige otra"
-  },
   "popup_cycles_label": {
     "message": "Ciclos: $FOCUS$ min de concentración, $SHORT_BREAK$ min de descanso, $LONG_BREAK$ min de descanso largo cada $LONG_EVERY$ descansos",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Pestaña de trabajo: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Cambiar"
-  },
-  "popup_session_settings_summary": {
-    "message": "Ajustes de la sesión"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Elige una pestaña de trabajo"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Pestaña de trabajo"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (actual)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

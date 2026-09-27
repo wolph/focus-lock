@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "ไม่มีแท็บงาน (ไม่บังคับ)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "แท็บที่เลือกใช้งานไม่ได้ - เลือกแท็บอื่น"
-  },
   "popup_cycles_label": {
     "message": "รอบ: โฟกัส $FOCUS$ นาที พัก $SHORT_BREAK$ นาที พักยาว $LONG_BREAK$ นาทีทุกรอบที่ $LONG_EVERY$",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "แท็บงาน: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "เปลี่ยน"
-  },
-  "popup_session_settings_summary": {
-    "message": "การตั้งค่าเซสชัน"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "เลือกแท็บงาน"
-  },
-  "popup_work_tab_select_label": {
-    "message": "แท็บงาน"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (ปัจจุบัน)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

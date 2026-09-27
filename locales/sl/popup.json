@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Brez delovnega zavihka (izbirno)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Izbrani zavihek ni na voljo - izberi drugega"
-  },
   "popup_cycles_label": {
     "message": "Cikli: $FOCUS$ min osredotočenosti, $SHORT_BREAK$ min odmora, $LONG_BREAK$ min dolgega odmora vsak $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Delovni zavihek: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Zamenjaj"
-  },
-  "popup_session_settings_summary": {
-    "message": "Nastavitve seje"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Izberi delovni zavihek"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Delovni zavihek"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (trenutni)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

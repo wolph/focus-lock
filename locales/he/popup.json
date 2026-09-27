@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "ללא לשונית עבודה (אופציונלי)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "הלשונית שנבחרה אינה זמינה - בחר אחרת"
-  },
   "popup_cycles_label": {
     "message": "מחזורים: $FOCUS$ דק' ריכוז, $SHORT_BREAK$ דק' הפסקה, $LONG_BREAK$ דק' הפסקה ארוכה בכל מחזור $LONG_EVERY$",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "לשונית עבודה: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "שנה"
-  },
-  "popup_session_settings_summary": {
-    "message": "הגדרות המפגש"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "בחר לשונית עבודה"
-  },
-  "popup_work_tab_select_label": {
-    "message": "לשונית עבודה"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (הנוכחית)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

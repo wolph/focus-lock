@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Ei työvälilehteä (valinnainen)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Valittu välilehti ei käytettävissä - valitse toinen"
-  },
   "popup_cycles_label": {
     "message": "Syklit: $FOCUS$ min keskittymistä, $SHORT_BREAK$ min taukoa, $LONG_BREAK$ min pitkä tauko joka $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Työvälilehti: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Vaihda"
-  },
-  "popup_session_settings_summary": {
-    "message": "Jakson asetukset"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Valitse työvälilehti"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Työvälilehti"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (nykyinen)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

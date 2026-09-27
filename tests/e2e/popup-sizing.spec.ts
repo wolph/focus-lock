@@ -6,7 +6,7 @@ import { expect, startTestSession, test } from './fixtures';
  * scenarios read the real popup window through `chrome.extension.getViews`, without emulating a
  * viewport, so the regression is measured where it happens.
  */
-const POPUP_WIDTH: number = 480;
+const POPUP_WIDTH: number = 600;
 const POPUP_HEIGHT: number = 600;
 
 test('the toolbar popup opens at its intended size without viewport emulation', async ({

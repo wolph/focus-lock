@@ -613,11 +613,7 @@
   },
   "popup_no_work_tab_option": {
     "message": "No work tab (optional)",
-    "description": "Option in the work tab picker meaning the session runs without a work tab."
-  },
-  "popup_work_tab_unavailable_option": {
-    "message": "Selected tab unavailable - choose another",
-    "description": "Option in the work tab picker standing for a chosen tab that has since closed or become ineligible."
+    "description": "Stand-in named in the Work tab line when the tab the popup opened on cannot be the work tab, so the session runs without one."
   },
   "popup_cycles_label": {
     "message": "Cycles: $FOCUS$ min focus, $SHORT_BREAK$ min break, $LONG_BREAK$ min long break every $LONG_EVERY$th",
@@ -652,32 +648,6 @@
   "popup_work_tab_named": {
     "message": "Work tab: $TITLE$",
     "description": "Names the tab the session returns to. TITLE is that tab's own title, or a stand-in such as No work tab (optional).",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Change",
-    "description": "Text button beside the chosen work tab in the start form. It opens the work tab picker."
-  },
-  "popup_session_settings_summary": {
-    "message": "Session settings",
-    "description": "Label of the collapsed disclosure in the start form holding every setting for this session."
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Choose a work tab",
-    "description": "Label above the work tab dropdown in the start form."
-  },
-  "popup_work_tab_select_label": {
-    "message": "Work tab",
-    "description": "Accessible name of the dropdown listing the tabs that can be the work tab."
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Current)",
-    "description": "Option for the tab the user is on right now. TITLE is that tab's own title, and the parenthesis marks it as the current one.",
     "placeholders": {
       "TITLE": {
         "content": "$1",

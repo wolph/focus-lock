@@ -56,7 +56,7 @@ test('a Friction manual lock survives browser restart and unlocks only through i
   await useOneSecondGate(original.extPage, 'hard');
   await seedBlockedList(original.extPage);
   await original.extPage.reload();
-  await expect(original.extPage.locator('body')).toHaveCSS('width', '480px');
+  await expect(original.extPage.locator('body')).toHaveCSS('width', '600px');
 
   await original.extPage.getByRole('button', { name: UNTIL_STOPPED_LABEL, exact: true }).click();
   await openPopupSection(original.extPage, 'Session settings');

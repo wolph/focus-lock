@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "No kazi tab (chaguoal)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Kichupo kilichochaguliwa hakipatikani - chagua kingine"
-  },
   "popup_cycles_label": {
     "message": "Mizunguko: umakini dakika $FOCUS$, mapumziko dakika $SHORT_BREAK$, mapumziko marefu dakika $LONG_BREAK$ kila mzunguko wa $LONG_EVERY$",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Kazi tab: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Badilisha"
-  },
-  "popup_session_settings_summary": {
-    "message": "Mipangilio ya kikao"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Chagua kichupo cha kazi"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Kazi tab"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (Sasa)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

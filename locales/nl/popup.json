@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Geen werktabblad (optioneel)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Gekozen tabblad niet beschikbaar - kies een ander"
-  },
   "popup_cycles_label": {
     "message": "Cycli: $FOCUS$ min focus, $SHORT_BREAK$ min pauze, $LONG_BREAK$ min lange pauze elke $LONG_EVERY$e",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Werktabblad: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Wijzig"
-  },
-  "popup_session_settings_summary": {
-    "message": "Sessie-instellingen"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Kies een werktabblad"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Werktabblad"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (huidig)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

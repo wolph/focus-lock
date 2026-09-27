@@ -84,7 +84,7 @@ input[type="checkbox"] {
 
 body {
   margin: 0;
-  width: 480px;
+  width: 600px;
   /* A percentage, not 100vw: Chrome measures the toolbar popup before its first layout, and a
      viewport unit read at that moment clamps the popup to a fraction of this width. */
   max-inline-size: 100%;
@@ -1294,49 +1294,6 @@ body {
   font-weight: 700;
 }
 
-/* The main choice stays visible while optional controls share one native disclosure. */
-.session-disclosure {
-  width: 100%;
-  min-width: 0;
-  color: var(--text);
-}
-
-.session-disclosure > summary {
-  padding: 10px 0;
-  color: var(--text-soft);
-  cursor: pointer;
-  font-size: 13px;
-}
-
-.session-disclosure__content {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  padding: 8px 0 12px;
-  min-width: 0;
-}
-
-/* Explicitly preserve native closed behaviour even with the flex content wrapper. */
-.session-disclosure:not([open]) > .session-disclosure__content {
-  display: none;
-}
-
-.selected-work-tab {
-  display: flex;
-  gap: 12px;
-  align-items: baseline;
-  justify-content: space-between;
-  min-width: 0;
-}
-
-.selected-work-tab .work-target {
-  min-width: 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-}
-
 .text-button {
   flex: none;
   padding: 4px 0;
@@ -1387,26 +1344,6 @@ body {
   min-width: 0;
   flex: 0 0 auto;
   overflow: visible;
-}
-
-.session-disclosure .rule-summary {
-  border: 0;
-  background: transparent;
-}
-
-.session-disclosure .rule-summary__heading,
-.session-disclosure .rule-summary__scroll {
-  padding-inline: 0;
-}
-
-.session-disclosure .rule-summary__heading {
-  background: transparent;
-  border: 0;
-}
-
-.start-form .session-disclosure .this-tab-button {
-  background: var(--surface);
-  color: var(--text);
 }
 
 .active-core > .text-button {

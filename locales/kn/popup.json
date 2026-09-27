@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಇಲ್ಲ (ಐಚ್ಛಿಕ)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "ಆಯ್ಕೆ ಮಾಡಿದ ಟ್ಯಾಬ್ ಲಭ್ಯವಿಲ್ಲ - ಬೇರೊಂದನ್ನು ಆರಿಸಿ"
-  },
   "popup_cycles_label": {
     "message": "ಚಕ್ರಗಳು: $FOCUS$ ನಿಮಿಷ ಫೋಕಸ್, $SHORT_BREAK$ ನಿಮಿಷ ವಿರತಿ, ಪ್ರತಿ $LONG_EVERY$ ನೇ ಚಕ್ರಕ್ಕೆ $LONG_BREAK$ ನಿಮಿಷ ದೀರ್ಘ ವಿರತಿ",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "ಕೆಲಸದ ಟ್ಯಾಬ್: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "ಬದಲಾಯಿಸಿ"
-  },
-  "popup_session_settings_summary": {
-    "message": "ಸೆಷನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್ ಆರಿಸಿ"
-  },
-  "popup_work_tab_select_label": {
-    "message": "ಕೆಲಸದ ಟ್ಯಾಬ್"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (ಪ್ರಸ್ತುತ)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

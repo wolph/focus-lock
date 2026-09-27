@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "કોઈ વર્ક ટૅબ નથી (વૈકલ્પિક)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "પસંદ કરેલી ટૅબ ઉપલબ્ધ નથી - બીજી પસંદ કરો"
-  },
   "popup_cycles_label": {
     "message": "ચક્ર: $FOCUS$ મિનિટ ફોકસ, $SHORT_BREAK$ મિનિટ બ્રેક, દર $LONG_EVERY$મા ચક્રે $LONG_BREAK$ મિનિટનો લાંબો બ્રેક",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "વર્ક ટૅબ: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "બદલો"
-  },
-  "popup_session_settings_summary": {
-    "message": "સેશન સેટિંગ્સ"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "એક વર્ક ટૅબ પસંદ કરો"
-  },
-  "popup_work_tab_select_label": {
-    "message": "વર્ક ટૅબ"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (વર્તમાન)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

@@ -154,9 +154,16 @@ function requestsOf<T extends Request['type']>(type: T): Extract<Request, { type
     .filter((request: Request): request is Extract<Request, { type: T }> => request.type === type);
 }
 
-function workTabSelect(view: ReturnType<typeof render>): HTMLSelectElement {
-  return view.getByLabelText('Work tab') as HTMLSelectElement;
+/** The line naming the tab the session will return to, or the stand-in for none. */
+function workTarget(view: ReturnType<typeof render>): HTMLElement {
+  return view.container.querySelector('.start-form .work-target') as HTMLElement;
 }
+
+async function expectWorkTarget(view: ReturnType<typeof render>, text: string): Promise<void> {
+  await waitFor((): void => expect(workTarget(view).textContent).toBe(text));
+}
+
+const NO_WORK_TAB: string = 'Work tab: No work tab (optional)';
 
 beforeEach((): void => {
   resetChromeFake();
@@ -171,21 +178,17 @@ afterEach((): void => {
 });
 
 describe('StartForm work tab', (): void => {
-  it('defaults to the suitable active tab and sends the tab, window, and draft rules', async (): Promise<void> => {
+  it('takes the suitable active tab and sends the tab, window, and draft rules', async (): Promise<void> => {
     const view = render(h(StartForm, { settings: SETTINGS, lists: DEFAULT_LISTS }));
 
-    await waitFor((): void => expect(workTabSelect(view).value).toBe('12'));
+    await expectWorkTarget(view, 'Work tab: Report');
     expect(requestsOf('getWorkTabs')[0]).toEqual({
       type: 'getWorkTabs',
       mode: 'blacklist',
       windowId: 3,
       rules: rulesFromLists(DEFAULT_LISTS),
     });
-
-    fireEvent.change(workTabSelect(view), { target: { value: '14' } });
-    emitMessage({ type: 'workTargetChanged' });
-    await waitFor((): void => expect(requestsOf('getWorkTabs').length).toBeGreaterThan(1));
-    expect(workTabSelect(view).value).toBe('14');
+    expect(view.queryByRole('combobox')).toBeNull();
 
     fireEvent.click(view.getByRole('button', { name: START_BUTTON }));
 
@@ -194,18 +197,17 @@ describe('StartForm work tab', (): void => {
     expect(request).toEqual({
       type: 'startSession',
       config: expect.objectContaining({ duration: { kind: 'timed', minutes: 25 } }),
-      workTabId: 14,
+      workTabId: 12,
       windowId: 3,
     });
     expect(parseSessionStartRequestV2(request)).toEqual(request);
   });
 
-  it('starts with the two-key request when no work tab is chosen', async (): Promise<void> => {
+  it('starts with the two-key request when no tab is eligible', async (): Promise<void> => {
     answerWith({ getWorkTabs: (): unknown => ({ ok: true, tabs: [] }) });
     const view = render(h(StartForm, { settings: SETTINGS, lists: DEFAULT_LISTS }));
 
-    await waitFor((): void => expect(workTabSelect(view).disabled).toBe(false));
-    expect(workTabSelect(view).value).toBe('');
+    await expectWorkTarget(view, NO_WORK_TAB);
     fireEvent.click(view.getByRole('button', { name: START_BUTTON }));
 
     await waitFor((): void => expect(requestsOf('startSession')).toHaveLength(1));
@@ -214,7 +216,7 @@ describe('StartForm work tab', (): void => {
 
   it('lists eligible tabs again when the draft changes its blocking mode', async (): Promise<void> => {
     const view = render(h(StartForm, { settings: SETTINGS, lists: DEFAULT_LISTS }));
-    await waitFor((): void => expect(workTabSelect(view).value).toBe('12'));
+    await expectWorkTarget(view, 'Work tab: Report');
 
     fireEvent.click(view.getByRole('radio', { name: /Allow selected sites only/ }));
 
@@ -225,42 +227,27 @@ describe('StartForm work tab', (): void => {
     });
   });
 
-  it('puts the current tab first and preserves an explicit alternative after refresh', async (): Promise<void> => {
+  it('names whichever tab the popup opened on', async (): Promise<void> => {
     tabsQueryMock.mockResolvedValue([{ id: 14, windowId: 3 }]);
     const view: ReturnType<typeof render> = render(
       h(StartForm, { settings: SETTINGS, lists: DEFAULT_LISTS }),
     );
-    await waitFor((): void => expect(workTabSelect(view).value).toBe('14'));
-    expect(workTabSelect(view).options[0]?.textContent).toBe('Notes (Current)');
+    await expectWorkTarget(view, 'Work tab: Notes');
     expect(view.queryByRole('button', { name: 'Make this my work tab' })).toBeNull();
-    fireEvent.change(workTabSelect(view), { target: { value: '12' } });
-    emitMessage({ type: 'workTargetChanged' });
-    await waitFor((): void => expect(workTabSelect(view).disabled).toBe(false));
-    expect(workTabSelect(view).value).toBe('12');
-    expect(workTabSelect(view).options[0]?.textContent).toBe('Notes (Current)');
   });
 
-  it('omits an ineligible current tab while retaining eligible alternatives', async (): Promise<void> => {
+  it('starts without a work tab when the current tab is ineligible, whatever else is open', async (): Promise<void> => {
     answerWith({
       getWorkTabs: (): unknown => ({ ok: true, tabs: [{ tabId: 14, title: 'Notes' }] }),
     });
     const view = render(h(StartForm, { settings: SETTINGS, lists: DEFAULT_LISTS }));
 
-    await waitFor((): void => expect(view.getByText('Notes')).toBeDefined());
-    expect(workTabSelect(view).value).toBe('');
-    expect(
-      Array.from(workTabSelect(view).options).some(
-        (option: HTMLOptionElement): boolean => option.textContent?.includes('(Current)') === true,
-      ),
-    ).toBe(false);
+    await waitFor((): void => expect(requestsOf('getWorkTabs')).toHaveLength(1));
+    await expectWorkTarget(view, NO_WORK_TAB);
 
-    fireEvent.change(workTabSelect(view), { target: { value: '14' } });
     fireEvent.click(view.getByRole('button', { name: START_BUTTON }));
-    await waitFor((): void =>
-      expect(requestsOf('startSession')[0]).toEqual(
-        expect.objectContaining({ type: 'startSession', workTabId: 14, windowId: 3 }),
-      ),
-    );
+    await waitFor((): void => expect(requestsOf('startSession')).toHaveLength(1));
+    expect(Object.keys(requestsOf('startSession')[0] ?? {})).toEqual(['type', 'config']);
   });
 
   it('hands a work-target-not-saved answer to the caller and keeps the form quiet', async (): Promise<void> => {
@@ -281,7 +268,7 @@ describe('StartForm work tab', (): void => {
         },
       }),
     );
-    await waitFor((): void => expect(workTabSelect(view).value).toBe('12'));
+    await expectWorkTarget(view, 'Work tab: Report');
 
     fireEvent.click(view.getByRole('button', { name: START_BUTTON }));
 
@@ -298,7 +285,7 @@ describe('StartForm work tab', (): void => {
       }),
     });
     const view = render(h(StartForm, { settings: SETTINGS, lists: DEFAULT_LISTS }));
-    await waitFor((): void => expect(workTabSelect(view).value).toBe('12'));
+    await expectWorkTarget(view, 'Work tab: Report');
 
     fireEvent.click(view.getByRole('button', { name: START_BUTTON }));
 
@@ -503,33 +490,7 @@ describe('App partial start', (): void => {
   });
 });
 
-describe('quiet work tab disclosures', (): void => {
-  it('opens and focuses the idle chooser while retaining the selected tab and draft', async (): Promise<void> => {
-    const view: ReturnType<typeof render> = render(
-      <StartForm settings={SETTINGS} lists={DEFAULT_LISTS} />,
-    );
-    await waitFor((): void => expect(workTabSelect(view).disabled).toBe(false));
-    const details: HTMLDetailsElement = view.getByText('Session settings')
-      .parentElement as HTMLDetailsElement;
-    expect(details.open).toBe(false);
-    fireEvent.click(view.getByRole('button', { name: 'Change' }));
-    expect(details.open).toBe(true);
-    expect(document.activeElement).toBe(workTabSelect(view));
-    fireEvent.change(workTabSelect(view), { target: { value: '14' } });
-    fireEvent.input(view.getByLabelText('Custom minutes'), { target: { value: '37' } });
-    fireEvent.click(view.getByRole('button', { name: 'Flexible' }));
-    fireEvent.input(view.getByLabelText('Intention'), { target: { value: 'Finish notes' } });
-    details.open = false;
-    fireEvent.click(view.getByRole('button', { name: 'Change' }));
-    expect(workTabSelect(view).value).toBe('14');
-    expect((view.getByLabelText('Custom minutes') as HTMLInputElement).value).toBe('37');
-    expect(view.getByRole('button', { name: 'Flexible' }).getAttribute('aria-pressed')).toBe(
-      'true',
-    );
-    expect((view.getByLabelText('Intention') as HTMLInputElement).value).toBe('Finish notes');
-    expect(view.getByRole('button', { name: 'Start 37 min focus' })).toBeTruthy();
-  });
-
+describe('session actions on screen', (): void => {
   it('keeps the actions on screen across ticks and across a new session', async (): Promise<void> => {
     answerWith({ getWorkTarget: readyTarget });
     const snapshot: SessionSnapshotV2 = activeSnap();

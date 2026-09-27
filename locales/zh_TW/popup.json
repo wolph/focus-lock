@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "無工作索引標籤（可選）"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "選定的索引標籤無法使用 - 選擇另一個"
-  },
   "popup_cycles_label": {
     "message": "循環：$FOCUS$ 分鐘專注、$SHORT_BREAK$ 分鐘休息、每第 $LONG_EVERY$ 個 $LONG_BREAK$ 分鐘長休息",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "工作頁籤：$TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "更改"
-  },
-  "popup_session_settings_summary": {
-    "message": "工作階段設定"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "選擇工作頁籤"
-  },
-  "popup_work_tab_select_label": {
-    "message": "工作頁籤"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$（目前）",
     "placeholders": {
       "TITLE": {
         "content": "$1",

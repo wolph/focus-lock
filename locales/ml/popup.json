@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "വർക്ക് ടാബ് ഇല്ലാ (ഐച്ഛികം)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "തിരഞ്ഞെടുത്ത ടാബ് ലഭ്യമല്ല - മറ്റൊന്ന് തിരഞ്ഞെടുക്കുക"
-  },
   "popup_cycles_label": {
     "message": "സൈക്കിളുകൾ: $FOCUS$ മിനിറ്റ് ഫോക്കസ്, $SHORT_BREAK$ മിനിറ്റ് ഇടവേള, ഓരോ $LONG_EVERY$-ാം തവണയും $LONG_BREAK$ മിനിറ്റ് ദീർഘ ഇടവേള",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "വർക്ക് ടാബ്: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "മാറ്റുക"
-  },
-  "popup_session_settings_summary": {
-    "message": "സെഷൻ സെറ്റിംഗുകൾ"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "വർക്ക് ടാബ് തിരഞ്ഞെടുക്കുക"
-  },
-  "popup_work_tab_select_label": {
-    "message": "വർക്ക് ടാബ്"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (നിലവിലെ)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

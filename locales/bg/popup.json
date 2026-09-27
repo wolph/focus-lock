@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Без работен раздел (по избор)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Избраният раздел не е наличен - избери друг"
-  },
   "popup_cycles_label": {
     "message": "Цикли: $FOCUS$ мин фокус, $SHORT_BREAK$ мин почивка, $LONG_BREAK$ мин дълга почивка на всеки $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Работен раздел: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Смени"
-  },
-  "popup_session_settings_summary": {
-    "message": "Настройки на сесията"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Избери работен раздел"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Работен раздел"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (текущ)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "Kein Arbeits-Tab (optional)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "Gewählter Tab nicht verfügbar - wähle einen anderen"
-  },
   "popup_cycles_label": {
     "message": "Zyklen: $FOCUS$ Min. Fokus, $SHORT_BREAK$ Min. Pause, $LONG_BREAK$ Min. lange Pause jede $LONG_EVERY$.",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "Arbeits-Tab: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "Ändern"
-  },
-  "popup_session_settings_summary": {
-    "message": "Sitzungseinstellungen"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "Arbeits-Tab wählen"
-  },
-  "popup_work_tab_select_label": {
-    "message": "Arbeits-Tab"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (aktuell)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

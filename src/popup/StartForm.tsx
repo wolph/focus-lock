@@ -95,13 +95,6 @@ const STALE_LISTS_UNAVAILABLE_COPY: string = t('popup_stale_lists_unavailable');
 export type StartFeedback = (message: string | null) => void;
 
 const NO_WORK_TAB_OPTION: string = t('popup_no_work_tab_option');
-const WORK_TAB_UNAVAILABLE_OPTION: string = t('popup_work_tab_unavailable_option');
-const WORK_TAB_SELECT_LABEL: string = t('popup_work_tab_select_label');
-/**
- * The work tab picker is revealed by its accessible name, which is translated, so the selector
- * is built from the same message and its quotes are escaped for the attribute matcher.
- */
-const WORK_TAB_SELECTOR: string = `[aria-label="${WORK_TAB_SELECT_LABEL.replace(/["\\]/g, '\\$&')}"]`;
 
 export interface StartFormProps {
   settings: SettingsV2;
@@ -162,16 +155,9 @@ export function StartForm({
     if (remembered.current) void saveRememberedChoices(draft);
   }, [draft.duration, draft.timedStrictness, draft.mode]);
   const formRef: { current: HTMLElement | null } = useRef<HTMLElement | null>(null);
-  const settingsRef: { current: HTMLDetailsElement | null } = useRef<HTMLDetailsElement>(null);
   const [focusField, setFocusField]: [string | null, Dispatch<StateUpdater<string | null>>] =
     useState<string | null>(null);
-  const revealField: (selector: string) => void = (selector: string): void => {
-    const disclosure: HTMLDetailsElement | null =
-      formRef.current?.querySelector(selector)?.closest('details') ?? null;
-    if (disclosure !== null) disclosure.open = true;
-    setFocusField(selector);
-  };
-  /** Listed under the draft's rules, so the proposal matches what the start will capture. */
+  /** Listed under the draft's rules, so the work tab matches what the start will capture. */
   const work: WorkTabsState = useWorkTabs(draft.mode, draft.rules);
   useLayoutEffect((): void => {
     if (focusField === null) return;
@@ -182,18 +168,14 @@ export function StartForm({
     field?.scrollIntoView?.({ block: 'nearest' });
     setFocusField(null);
   }, [focusField, work.loading]);
-  const [workTabId, setWorkTabId]: [string, Dispatch<StateUpdater<string>>] = useState<string>('');
-  /** Once the user has chosen, a refreshed listing no longer re-proposes the active tab. */
-  const explicitChoice: { current: boolean } = useRef<boolean>(false);
-  useEffect((): void => {
-    if (explicitChoice.current) return;
-    const activeTabId: number | null = work.context?.activeTabId ?? null;
-    setWorkTabId(
-      work.tabs.some((tab: WorkTab): boolean => tab.tabId === activeTabId)
-        ? String(activeTabId)
-        : '',
-    );
-  }, [work]);
+  /**
+   * The tab the popup opened on is the work tab when the draft's rules leave it eligible. There
+   * is no chooser: a session started from a blocked tab, or from a page nothing can return to,
+   * has no work tab, and the running session offers to make another tab the work tab later.
+   */
+  const currentTab: WorkTab | undefined = work.tabs.find(
+    (tab: WorkTab): boolean => tab.tabId === work.context?.activeTabId,
+  );
   /** The lists the draft is rebased onto, which a stale start refreshes from the worker. */
   const [activeLists, setActiveLists]: [ListsConfig, Dispatch<StateUpdater<ListsConfig>>] =
     useState<ListsConfig>(lists);
@@ -248,7 +230,7 @@ export function StartForm({
     const config: SessionConfigV2 | null = toSessionConfigV2(draft);
     if (config === null) {
       setError(INVALID_DURATION_ERROR);
-      revealField('.custom-min');
+      setFocusField('.custom-min');
       return;
     }
 
@@ -259,11 +241,11 @@ export function StartForm({
       // The chosen tab travels beside the config, never inside it: the worker saves it for the
       // session the start mints, in the privacy context of this popup's window.
       const response: StartSessionResponseV2 = await sendRequest(
-        workTabId !== '' && work.context !== null
+        currentTab !== undefined && work.context !== null
           ? {
               type: 'startSession',
               config,
-              workTabId: Number(workTabId),
+              workTabId: currentTab.tabId,
               windowId: work.context.windowId,
             }
           : { type: 'startSession', config },
@@ -338,10 +320,6 @@ export function StartForm({
     </label>
   );
 
-  const currentTab: WorkTab | undefined = work.tabs.find(
-    (tab: WorkTab): boolean => tab.tabId === work.context?.activeTabId,
-  );
-
   return (
     <section class="view start-form" ref={formRef}>
       <div class="start-form__actions">
@@ -378,6 +356,7 @@ export function StartForm({
             }}
           />
         </div>
+        {sessionType}
         <fieldset class="mode-control" aria-label={t('popup_blocking_mode_legend')}>
           <legend>{t('popup_blocking_mode_legend')}</legend>
           {MODE_CHOICES.map(
@@ -415,80 +394,27 @@ export function StartForm({
           />
         </div>
 
-        <div class="selected-work-tab">
-          <p class="work-target">
-            {t('popup_work_tab_named', {
-              TITLE:
-                work.tabs.find((tab: WorkTab): boolean => String(tab.tabId) === workTabId)?.title ??
-                (workTabId === '' ? NO_WORK_TAB_OPTION : WORK_TAB_UNAVAILABLE_OPTION),
-            })}
-          </p>
-          <button
-            type="button"
-            class="text-button"
-            disabled={starting}
-            onClick={(): void => revealField(WORK_TAB_SELECTOR)}
-          >
-            {t('popup_change_button')}
-          </button>
-        </div>
-        <details class="session-disclosure" ref={settingsRef}>
-          <summary>{t('popup_session_settings_summary')}</summary>
-          <div class="session-disclosure__content">
-            <label class="work-tab-label">
-              {t('popup_choose_work_tab_label')}
-              <select
-                aria-label={WORK_TAB_SELECT_LABEL}
-                value={workTabId}
-                disabled={work.context === null || starting || work.loading}
-                onChange={(event: Event): void => {
-                  explicitChoice.current = true;
-                  setWorkTabId((event.currentTarget as HTMLSelectElement).value);
-                }}
-              >
-                {currentTab !== undefined ? (
-                  <option value={currentTab.tabId}>
-                    {t('popup_work_tab_current_option', { TITLE: currentTab.title })}
-                  </option>
-                ) : null}
-                <option value="">{NO_WORK_TAB_OPTION}</option>
-                {workTabId !== '' &&
-                !work.tabs.some((tab: WorkTab): boolean => String(tab.tabId) === workTabId) ? (
-                  <option value={workTabId}>{WORK_TAB_UNAVAILABLE_OPTION}</option>
-                ) : null}
-                {work.tabs
-                  .filter((tab: WorkTab): boolean => tab.tabId !== currentTab?.tabId)
-                  .map(
-                    (tab: WorkTab): VNode => (
-                      <option key={tab.tabId} value={tab.tabId}>
-                        {tab.title}
-                      </option>
-                    ),
-                  )}
-              </select>
-            </label>
+        <p class="work-target">
+          {t('popup_work_tab_named', { TITLE: currentTab?.title ?? NO_WORK_TAB_OPTION })}
+        </p>
 
-            {sessionType}
+        <RuleSummary
+          draft={{ mode: draft.mode, strictness, rules: draft.rules }}
+          lists={activeLists}
+          categoriesEditable={categoriesEditable}
+          onCategoryToggle={(id: CategoryId): void => {
+            if (categoriesEditable) setDraft(toggleDraftCategory(draft, id));
+          }}
+          onOpenSettings={(): void => void openPermanentSettings()}
+        />
 
-            <RuleSummary
-              draft={{ mode: draft.mode, strictness, rules: draft.rules }}
-              lists={activeLists}
-              categoriesEditable={categoriesEditable}
-              onCategoryToggle={(id: CategoryId): void => {
-                if (categoriesEditable) setDraft(toggleDraftCategory(draft, id));
-              }}
-              onOpenSettings={(): void => void openPermanentSettings()}
-            />
-
-            {indefinite ? (
-              <ForcedControl label={FORCED_CYCLES_LABEL} explanation={UNTIL_STOPPED_DISCLOSURE}>
-                {cycleRow}
-              </ForcedControl>
-            ) : (
-              cycleRow
-            )}
-          </div>
-        </details>
+        {indefinite ? (
+          <ForcedControl label={FORCED_CYCLES_LABEL} explanation={UNTIL_STOPPED_DISCLOSURE}>
+            {cycleRow}
+          </ForcedControl>
+        ) : (
+          cycleRow
+        )}
       </div>
     </section>
   );

@@ -11,7 +11,6 @@ import { t } from '../shared/i18n';
 import { sendRequest } from '../shared/messages';
 import { ackError } from '../shared/runtime-validation';
 import type { SessionMode, SessionSnapshotV2 } from '../shared/types';
-import type { WorkTab } from '../shared/work-target';
 import { ThisTabButton } from './ThisTabButton';
 import { useWorkTabs, type WorkTabsState, type WorkTargetState } from './use-work-tabs';
 

@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "无工作标签页（可选）"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "选定的标签页不可用 - 选择另一个"
-  },
   "popup_cycles_label": {
     "message": "周期：$FOCUS$ 分钟专注，$SHORT_BREAK$ 分钟休息，每 $LONG_EVERY$ 个周期有 $LONG_BREAK$ 分钟长休息",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "工作标签页：$TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "更改"
-  },
-  "popup_session_settings_summary": {
-    "message": "会话设置"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "选择工作标签页"
-  },
-  "popup_work_tab_select_label": {
-    "message": "工作标签页"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$（当前）",
     "placeholders": {
       "TITLE": {
         "content": "$1",

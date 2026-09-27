@@ -507,9 +507,6 @@
   "popup_no_work_tab_option": {
     "message": "పని ట్యాబ్ లేదు (ఐచ్ఛికం)"
   },
-  "popup_work_tab_unavailable_option": {
-    "message": "ఎంచుకున్న ట్యాబ్ అందుబాటులో లేదు - మరొకటి ఎంచుకోండి"
-  },
   "popup_cycles_label": {
     "message": "చక్రాలు: $FOCUS$ నిమి ఫోకస్, $SHORT_BREAK$ నిమి విరామం, ప్రతి $LONG_EVERY$వ చక్రానికి $LONG_BREAK$ నిమి దీర్ఘ విరామం",
     "placeholders": {
@@ -539,27 +536,6 @@
   },
   "popup_work_tab_named": {
     "message": "పని ట్యాబ్: $TITLE$",
-    "placeholders": {
-      "TITLE": {
-        "content": "$1",
-        "example": "Quarterly report"
-      }
-    }
-  },
-  "popup_change_button": {
-    "message": "మార్చు"
-  },
-  "popup_session_settings_summary": {
-    "message": "సెషన్ సెట్టింగ్‌లు"
-  },
-  "popup_choose_work_tab_label": {
-    "message": "ఒక పని ట్యాబ్‌ను ఎంచుకోండి"
-  },
-  "popup_work_tab_select_label": {
-    "message": "పని ట్యాబ్"
-  },
-  "popup_work_tab_current_option": {
-    "message": "$TITLE$ (ప్రస్తుతం)",
     "placeholders": {
       "TITLE": {
         "content": "$1",

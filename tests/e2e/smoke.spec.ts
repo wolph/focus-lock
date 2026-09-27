@@ -129,9 +129,9 @@ test('popup keeps its preferred height and fits controls into shorter hosts', as
 }) => {
   await expect(extPage.locator('.start-form')).toBeVisible();
   const viewports: ReadonlyArray<{ width: number; height: number }> = [
-    { width: 480, height: 760 },
-    { width: 480, height: 600 },
-    { width: 480, height: 400 },
+    { width: 600, height: 760 },
+    { width: 600, height: 600 },
+    { width: 600, height: 400 },
     { width: 340, height: 760 },
     { width: 340, height: 600 },
     { width: 375, height: 400 },
@@ -142,11 +142,11 @@ test('popup keeps its preferred height and fits controls into shorter hosts', as
     const bodyWidth: number = await extPage
       .locator('body')
       .evaluate((element: HTMLElement): number => element.getBoundingClientRect().width);
-    expect(bodyWidth).toBe(Math.min(480, viewport.width));
+    expect(bodyWidth).toBe(Math.min(600, viewport.width));
     const appWidth: number = await extPage
       .locator('.app')
       .evaluate((element: HTMLElement): number => element.getBoundingClientRect().width);
-    expect(appWidth).toBe(Math.min(480, viewport.width));
+    expect(appWidth).toBe(Math.min(600, viewport.width));
     const bodyHeight: number = await extPage
       .locator('body')
       .evaluate((element: HTMLElement): number => element.getBoundingClientRect().height);
@@ -180,7 +180,7 @@ test('popup keeps its preferred height and fits controls into shorter hosts', as
         return popup?.document.querySelector('.start-button') ? popup.innerWidth : undefined;
       });
     })
-    .toBe(480);
+    .toBe(600);
 });
 
 test('Stats navigation round-trips through an Options section', async ({

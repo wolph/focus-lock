@@ -120,20 +120,22 @@ test('a visitor locks the site they are on, returns to the draft, and ends the s
   await expect(headlines.locator('focus-lock-overlay')).not.toBeAttached();
   await expect(page.locator('[data-beat="start"]')).toHaveClass(/guide-current/);
 
-  // Beat 1: start from the real popup. The site the visitor is on locks at once.
+  // Beat 1: start from the real popup on the draft. The tab the popup opens on is the work tab,
+  // there is nothing to choose, and Headlines locks at once.
+  await page.getByRole('button', { name: 'Proposal draft', exact: true }).click();
+  await expect(page.locator('button.tab-active')).toHaveText('Proposal draft');
   await icon.click();
   const popup: Locator = page.locator('#popup');
   await popup.getByLabel('Intention').fill('Finish the proposal');
-  // Headlines is not an eligible work tab, so nothing is preselected: pick the draft.
-  await popup.getByRole('button', { name: 'Change' }).click();
-  await popup.getByLabel('Work tab').selectOption('11');
   await expect(popup.locator('.work-target')).toHaveText(/Proposal draft/);
   await popup.getByRole('button', { name: /^Start/ }).click();
   await expect(icon).toHaveAttribute('data-locked', 'true');
   await expect(headlines.locator('focus-lock-overlay')).toBeAttached();
   await expect(page.locator('[data-beat="start"]')).toHaveClass(/guide-done/);
 
-  // Beat 2: the lockscreen's own Back to work returns to the draft.
+  // Beat 2: Headlines is locked, and the lockscreen's own Back to work returns to the draft.
+  await page.getByRole('button', { name: 'Headlines', exact: true }).click();
+  await expect(page.locator('button.tab-active')).toHaveText('Headlines');
   await clickLockscreenButton(page.context(), page, 12, 'Back to work');
   await expect(page.locator('button.tab-active')).toHaveText('Proposal draft');
   await expect(page.locator('[data-beat="back"]')).toHaveClass(/guide-done/);
