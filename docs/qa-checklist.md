@@ -60,13 +60,13 @@ since the grep was written. Both mistakes were present when this section was fir
 - Flexible session ending immediately removes an active block
 - a hard session refuses Exclude this site in place
 - a newly blocked domain replaces an unlock gate and rejects the old confirmation
+- a pause gate costs credit and confirms without a wait
 - abandoning a gate records a resisted temptation
 - friction cancellation with typing requires the configured phrase after its delay
 - friction cancellation without typing uses the configured delay
 - hard sessions reject cancellation gates
 - hard sessions reject weakening list changes
 - overlay unlock isolates another site and reblocks after expiry
-- pause gate rejects an early confirmation and unblocks after its delay
 - pause gate supports keep focusing, taking a pause, and resuming now
 - paused UI leaves when the session wall clock ends
 - zero delay removes the wait but still honors the typing setting

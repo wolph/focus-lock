@@ -406,12 +406,16 @@ export class SessionControllerV2 {
         this.ports.now(),
         previous === null ? 0 : previous.openedAt + 1,
       );
+      // A spend already costs credit, so its gate is ready at once: the wait is for the gates
+      // that cost nothing, the exclusion here and the end gate elsewhere (docs/product-rules.md,
+      // rule 8). The typed phrase, when Settings ask for one, still applies.
+      const delayMs: number = gate === 'excludeSite' ? this.ports.gateSettings().delayMs : 0;
       await this.commitLiveGate(
         {
           kind: gate,
           host: unlockHost,
           openedAt,
-          readyAt: openedAt + this.ports.gateSettings().delayMs,
+          readyAt: openedAt + delayMs,
           requiredPhrase: this.gatePhrase(gate, unlockHost),
           forceEndAvailable: false,
         },

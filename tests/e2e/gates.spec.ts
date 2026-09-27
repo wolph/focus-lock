@@ -153,7 +153,7 @@ async function openOverlayUnlock(
     .toBe(host);
 }
 
-test('pause gate rejects an early confirmation and unblocks after its delay', async ({
+test('a pause gate costs credit and confirms without a wait', async ({
   context,
   extPage,
   siteUrl,
@@ -176,12 +176,9 @@ test('pause gate rejects an early confirmation and unblocks after its delay', as
   expect(
     await sendExtensionRequest(extPage, { type: 'openGate', gate: 'pause', host: null }),
   ).toEqual({ ok: true, code: 'ok' });
-  const early = await sendExtensionRequest(extPage, {
-    type: 'confirmGate',
-    expectedGate: await captureGate(extPage),
-    typedPhrase: null,
-  });
-  expect(early.ok).toBe(false);
+  // The credit is the price, so the gate is ready as it opens (docs/product-rules.md, rule 8).
+  const opened: GateState = await captureGate(extPage);
+  expect(opened.readyAt).toBe(opened.openedAt);
 
   await expect
     .poll(async (): Promise<boolean> => {
@@ -516,7 +513,8 @@ test('a newly blocked domain replaces an unlock gate and rejects the old confirm
   await openOverlayUnlock(context, second, extPage, 'other.example');
   const replacement: GateState = await captureGate(extPage);
   expect(replacement.openedAt).toBeGreaterThan(original.openedAt);
-  expect(replacement.readyAt - replacement.openedAt).toBe(gateDelayMs);
+  // A spend waits for nothing (docs/product-rules.md, rule 8): the gate is ready as it opens.
+  expect(replacement.readyAt).toBe(replacement.openedAt);
   expect((await sendExtensionRequest(extPage, { type: 'getSnapshot' })).activeUnlocks).toEqual([]);
   await expect
     .poll(
@@ -584,9 +582,11 @@ test('overlay unlock isolates another site and reblocks after expiry', async ({
   await expect
     .poll(async (): Promise<string | null> => {
       await openAccessDrawer(context, page);
+      // The spend names its clock, the gate's confirm does not, and the confirm is on screen as
+      // soon as the gate opens: the trailing space keeps this click on the spend.
       const names: string[] = await closedShadowButtonNames(context, page);
-      if (names.some((name: string): boolean => name.startsWith('Unlock this site'))) {
-        await clickClosedShadowButton(context, page, 'Unlock this site');
+      if (names.some((name: string): boolean => name.startsWith('Unlock this site '))) {
+        await clickClosedShadowButton(context, page, 'Unlock this site ');
       }
       const opened: SessionSnapshot = await sendExtensionRequest(extPage, {
         type: 'getSnapshot',

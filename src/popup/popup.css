@@ -1369,13 +1369,18 @@ body {
 }
 
 /*
- * Each action takes the height its own text needs. Equalising them to the tallest looked tidy and
- * cost the popup twenty-odd pixels it does not have, and the tallest is whichever action currently
- * carries a cooldown line. See docs/superpowers/specs/2026-09-17-popup-visibility-rules.md.
+ * The spends share one row, as many across as the width allows, and End takes a row of its own.
+ * Three stacked spends cost the running session the height it does not have (docs/product-rules.md,
+ * rule 1), and side by side each still carries its own cost or reason line.
  */
 .session-actions .actions {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 4px;
+}
+
+.session-actions .actions > .end-session-button {
+  grid-column: 1 / -1;
 }
 
 /* Keep input focus visible inside the scrolling settings area. */

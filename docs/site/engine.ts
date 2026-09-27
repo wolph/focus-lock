@@ -398,11 +398,14 @@ export function createDemoEngine(now: () => number): DemoEngine {
 
   const openGate = (kind: GateState['kind'], host: string | null): void => {
     const at: number = now();
+    // A spend costs credit and waits for nothing. The end and exclude gates keep the wait.
+    const delayMs: number =
+      kind === 'pause' || kind === 'unlockSite' ? 0 : state.settings.gate.delayMs;
     state.gate = {
       kind,
       host,
       openedAt: at,
-      readyAt: at + state.settings.gate.delayMs,
+      readyAt: at + delayMs,
       requiredPhrase: state.settings.gate.requireTypedPhrase ? 'end session' : null,
       forceEndAvailable: kind === 'cancel' && state.settings.gate.allowForceEnd,
     };

@@ -19,6 +19,7 @@ file first, with the owner's agreement recorded here, and the tests second.
 | 2026-09-27 | "when starting the session I want to be able to go from blacklist to whitelist mode as well" | 5, 6 |
 | 2026-09-27 | "I don't want the option to choose the work tab in the popup before locking, it's not needed. Simply use the current tab as the work tab or none at all if it's not applicable. I do want the session type always visible. In fact, everything should be expanded and visible by default (after scrolling). make the popup wider too so the session type is easier to read." | 3, 6 |
 | 2026-09-27 | "I don't see a button to exclude/unblock a website on the block page. We had that at some point..." | 7 |
+| 2026-09-27 | "de unblock knoppen die credits kosten hebben geen wachttijd nodig" | 8 |
 
 ## Rule 1. The running-session popup needs no scrollbar
 
@@ -96,3 +97,12 @@ the current session alone is not touched, so such a site stays blocked until the
 Tests: `tests/unit/core/exclude-host.test.ts`, `tests/unit/background/session-controller-v2.test.ts`,
 `tests/unit/content/overlay-v2.test.ts`, `tests/unit/popup/active-view.test.tsx`,
 `tests/e2e/gates.spec.ts`.
+
+## Rule 8. A spend that costs credit waits for nothing
+
+Unlock this site and Unlock all sites already cost site access credit, so their gate is ready the
+moment it opens: a confirm and a way back, no countdown. When Settings ask for a typed phrase, the
+phrase still applies. The wait in Settings is for the gates that cost nothing: ending a Friction
+session, and Exclude this site.
+
+Tests: `tests/e2e/gates.spec.ts`, `tests/unit/background/session-controller-v2.test.ts`.
