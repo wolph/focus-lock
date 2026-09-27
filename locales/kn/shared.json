@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ಹೊರಗಿಡಿ"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ ಅನ್ನು ಶಾಶ್ವತವಾಗಿ ಬ್ಲಾಕ್ ಮಾಡುವುದನ್ನು ನಿಲ್ಲಿಸುತ್ತದೆ. ಕ್ರೆಡಿಟ್ ಅಗತ್ಯವಿಲ್ಲ.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "ಕಠಿಣ ಸೆಷನ್ ಸಮಯದಲ್ಲಿ ಅಲ್ಲ"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ ಅನ್ನು ಬ್ಲಾಕಿಂಗ್‌ನಿಂದ ಹೊರಗಿಡಿ",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ ಅನ್‌ಲಾಕ್ ಮಾಡಿ $CLOCK$",
     "placeholders": {

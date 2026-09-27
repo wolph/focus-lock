@@ -301,7 +301,7 @@ export type SessionRequestV2 =
   | { type: 'openEndGate' }
   | { type: 'abandonGate'; expectedGate: GateState }
   | { type: 'confirmGate'; typedPhrase: string | null; expectedGate: GateState }
-  | { type: 'openGate'; gate: 'pause' | 'unlockSite'; host: string | null }
+  | { type: 'openGate'; gate: 'pause' | 'unlockSite' | 'excludeSite'; host: string | null }
   /** Ends a Friction session from its open cancel gate at once, when the worker minted the flag. */
   | { type: 'forceEndGate' }
   | { type: 'resumeFromPause' }

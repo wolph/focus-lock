@@ -232,6 +232,7 @@ export function validateDetachedGateState(value: unknown): value is GateState {
     candidate === null ||
     (candidate.kind !== 'pause' &&
       candidate.kind !== 'unlockSite' &&
+      candidate.kind !== 'excludeSite' &&
       candidate.kind !== 'cancel') ||
     !isNullableString(candidate.host) ||
     !isSafeTimestamp(candidate.openedAt) ||
@@ -242,7 +243,7 @@ export function validateDetachedGateState(value: unknown): value is GateState {
   ) {
     return false;
   }
-  return candidate.kind === 'unlockSite'
+  return candidate.kind === 'unlockSite' || candidate.kind === 'excludeSite'
     ? isNonBlankString(candidate.host)
     : candidate.host === null;
 }

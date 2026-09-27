@@ -246,11 +246,11 @@ export interface ScheduleEntryV2 {
 
 export type SettingsV2 = Settings;
 
-export type GateKind = 'pause' | 'unlockSite' | 'cancel';
+export type GateKind = 'pause' | 'unlockSite' | 'excludeSite' | 'cancel';
 
 export interface GateState {
   kind: GateKind;
-  /** registrable domain being unlocked when kind is unlockSite */
+  /** registrable domain being unlocked or excluded when kind is unlockSite or excludeSite */
   host: string | null;
   openedAt: number;
   readyAt: number;

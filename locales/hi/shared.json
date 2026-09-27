@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "इस साइट को बाहर रखें"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ को हमेशा के लिए ब्लॉक करना बंद कर देता है। क्रेडिट की ज़रूरत नहीं।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "सख्त सेशन के दौरान नहीं"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ को ब्लॉकिंग से बाहर रखें",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ को $CLOCK$ के लिए अनलॉक करें",
     "placeholders": {

@@ -225,6 +225,36 @@ describe('ActiveView', (): void => {
     expect(unlockView.queryByRole('alert')).toBeNull();
   });
 
+  it('offers Exclude this site beside the spends, and refuses it on a hard session', async (): Promise<void> => {
+    // Rule 7 in docs/product-rules.md: the exclusion is on screen with the unlocks, costs nothing,
+    // and a Hard session says why it cannot be used rather than hiding it.
+    const view = render(h(ActiveView, { snapshot: focusSnap(), now: NOW }));
+    // The host arrives a moment after the first paint, and the button names it once it has.
+    const exclude: HTMLButtonElement = (await view.findByRole('button', {
+      name: /Exclude this site Stops blocking youtube.com for good. No credit needed./,
+    })) as HTMLButtonElement;
+    await waitFor((): void => expect(exclude.disabled).toBe(false));
+    fireEvent.click(exclude);
+    await waitFor((): void => {
+      expect(sessionRequests()).toEqual([
+        { type: 'openGate', gate: 'excludeSite', host: 'youtube.com' },
+      ]);
+    });
+    await settled(exclude);
+    view.unmount();
+    sendMessageMock.mockClear();
+
+    const hard: SessionSnapshotV2 = {
+      ...focusSnap(),
+      config: { ...TIMED_CONFIG, strictness: 'hard' },
+    };
+    const hardView = render(h(ActiveView, { snapshot: hard, now: NOW }));
+    const refused: HTMLButtonElement = (await hardView.findByRole('button', {
+      name: /Exclude this site .*Not during a hard session/,
+    })) as HTMLButtonElement;
+    expect(refused.disabled).toBe(true);
+  });
+
   it('ends immediately from focus through requestSessionEnd', async (): Promise<void> => {
     const { getByRole, queryByRole } = render(
       h(ActiveView, { snapshot: focusSnap(IMMEDIATE), now: NOW }),

@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "排除此网站"
+  },
+  "shared_exclude_site_hint": {
+    "message": "永久停止阻止 $HOST$。无需额度。",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "强制锁定会话期间不可用"
+  },
+  "shared_exclude_host_title": {
+    "message": "从阻止中排除 $HOST$",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "解锁 $HOST$ $CLOCK$",
     "placeholders": {

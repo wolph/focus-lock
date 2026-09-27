@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "ഈ സൈറ്റ് ഒഴിവാക്കുക"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ ബ്ലോക്ക് ചെയ്യുന്നത് എന്നേക്കുമായി നിർത്തുന്നു. ക്രെഡിറ്റ് ആവശ്യമില്ല.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "ഹാർഡ് സെഷനിൽ ലഭ്യമല്ല"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ ബ്ലോക്കിൽ നിന്ന് ഒഴിവാക്കുക",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ $CLOCK$ അണ്‍ലോക്ക് ചെയ്യുക",
     "placeholders": {

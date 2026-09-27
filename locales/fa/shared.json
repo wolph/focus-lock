@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "مستثنا کردن این سایت"
+  },
+  "shared_exclude_site_hint": {
+    "message": "مسدود کردن $HOST$ را برای همیشه متوقف می‌کند. اعتباری لازم نیست.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "در جلسه سخت‌گیرانه امکان ندارد"
+  },
+  "shared_exclude_host_title": {
+    "message": "مستثنا کردن $HOST$ از مسدودسازی",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "بازگشایی $HOST$ $CLOCK$",
     "placeholders": {

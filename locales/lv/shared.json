@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Izslēgt šo vietni"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Pilnībā aptur $HOST$ bloķēšanu. Kredīts nav nepieciešams.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "nav pieejams stingras sesijas laikā"
+  },
+  "shared_exclude_host_title": {
+    "message": "Izslēgt $HOST$ no bloķēšanas",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Atbloķēt $HOST$ $CLOCK$",
     "placeholders": {

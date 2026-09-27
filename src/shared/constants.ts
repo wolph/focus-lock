@@ -219,6 +219,10 @@ export function unlockSitePhrase(host: string): string {
   return `I am allowing this site: ${host}`;
 }
 
+export function excludeSitePhrase(host: string): string {
+  return `I am no longer blocking this site: ${host}`;
+}
+
 /** The idle read model every consumer starts from. One shape, which is the v2 one. */
 export function emptySnapshot(at: number): SessionSnapshot {
   return emptySnapshotV2(at);

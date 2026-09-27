@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "החרג את האתר הזה"
+  },
+  "shared_exclude_site_hint": {
+    "message": "מפסיק לחסום את $HOST$ לתמיד. לא דורש קרדיט.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "לא במהלך מפגש קשיח"
+  },
+  "shared_exclude_host_title": {
+    "message": "החרג את $HOST$ מחסימה",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "שחרר את $HOST$ $CLOCK$",
     "placeholders": {

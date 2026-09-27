@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Bu siteyi ayrı tut"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ sitesini engellemeyi kalıcı olarak durdurur. Kredi gerekmez.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "tam kilit seansında değil"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ sitesini engellemeden ayrı tut",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ sitesini $CLOCK$ süreyle aç",
     "placeholders": {

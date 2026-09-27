@@ -45,6 +45,7 @@ export type GateCommandErrorMapper = (response: unknown, fallback: string) => st
 const CONFIRM_LABELS: Record<GateKind, string> = {
   pause: t('popup_unlock_all_sites'),
   unlockSite: t('popup_unlock_this_site'),
+  excludeSite: t('shared_exclude_site_action'),
   cancel: t('shared_end_the_session'),
 };
 

@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Undtag dette site"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Stopper blokering af $HOST$ for altid. Kræver ikke kredit.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "ikke under en session med hård lås"
+  },
+  "shared_exclude_host_title": {
+    "message": "Undtag $HOST$ fra blokering",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Lås $HOST$ op $CLOCK$",
     "placeholders": {

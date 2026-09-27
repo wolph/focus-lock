@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Tenga tovuti hii"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Huacha kuzuia $HOST$ kabisa. Haihitaji salio.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "si wakati wa kipindi cha kufuli kikali"
+  },
+  "shared_exclude_host_title": {
+    "message": "Tenga $HOST$ kutoka kuzuiwa",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Fungua $HOST$ $CLOCK$",
     "placeholders": {

@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Loại trừ trang này"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Ngừng chặn $HOST$ vĩnh viễn. Không cần tín dụng.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "không phải trong phiên khóa cứng"
+  },
+  "shared_exclude_host_title": {
+    "message": "Loại trừ $HOST$ khỏi việc chặn",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Mở khóa $HOST$ $CLOCK$",
     "placeholders": {

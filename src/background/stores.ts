@@ -32,6 +32,7 @@ import type {
   BankState,
   CycleConfig,
   DailyAgg,
+  GateKind,
   GateState,
   LegacyEventRecord,
   ListsConfig,
@@ -898,7 +899,7 @@ function validSessionTiming(session: ParsedSessionState): boolean {
 function parseGate(value: unknown): GateState | null {
   if (!isRecord(value)) return null;
   if (
-    (value.kind !== 'pause' && value.kind !== 'unlockSite' && value.kind !== 'cancel') ||
+    !isGateKind(value.kind) ||
     !isNullableString(value.host) ||
     !isNonNegativeNumber(value.openedAt) ||
     !isNonNegativeNumber(value.readyAt) ||
@@ -908,8 +909,8 @@ function parseGate(value: unknown): GateState | null {
     return null;
   }
   if (
-    (value.kind === 'unlockSite' && (value.host === null || value.host === '')) ||
-    (value.kind !== 'unlockSite' && value.host !== null)
+    (isHostGateKind(value.kind) && (value.host === null || value.host === '')) ||
+    (!isHostGateKind(value.kind) && value.host !== null)
   ) {
     return null;
   }
@@ -968,8 +969,15 @@ function isPhase(value: unknown): value is 'idle' | 'focus' | 'break' | 'paused'
   return value === 'idle' || value === 'focus' || value === 'break' || value === 'paused';
 }
 
-function isGateKind(value: unknown): value is 'pause' | 'unlockSite' | 'cancel' {
-  return value === 'pause' || value === 'unlockSite' || value === 'cancel';
+function isGateKind(value: unknown): value is GateKind {
+  return (
+    value === 'pause' || value === 'unlockSite' || value === 'excludeSite' || value === 'cancel'
+  );
+}
+
+/** The gates that name the site they act on. */
+function isHostGateKind(value: GateKind): boolean {
+  return value === 'unlockSite' || value === 'excludeSite';
 }
 
 function parseEventRecord(value: unknown): LegacyEventRecord | null {

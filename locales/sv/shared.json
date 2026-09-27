@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Undanta den här webbplatsen"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Slutar blockera $HOST$ permanent. Ingen kredit behövs.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "inte under ett pass med hårt lås"
+  },
+  "shared_exclude_host_title": {
+    "message": "Undanta $HOST$ från blockering",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Lås upp $HOST$ $CLOCK$",
     "placeholders": {

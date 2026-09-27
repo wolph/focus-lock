@@ -18,7 +18,13 @@ import {
   beginPauseV2,
   type SessionAdvanceResultV2,
 } from '../core/session-v2';
-import { cancelPhrase, GATE_EXPIRY_MS, pausePhrase, unlockSitePhrase } from '../shared/constants';
+import {
+  cancelPhrase,
+  excludeSitePhrase,
+  GATE_EXPIRY_MS,
+  pausePhrase,
+  unlockSitePhrase,
+} from '../shared/constants';
 import type { DocumentContentCommand } from '../shared/enforcement-v2';
 import { CoreError } from '../shared/errors';
 import { exactDataEqual } from '../shared/exact-data';
@@ -354,8 +360,14 @@ export class SessionControllerV2 {
     });
   }
 
-  /** Opens a pause or unlock gate, which the confirmation then spends the bank on. */
-  async openGate(gate: 'pause' | 'unlockSite', host: string | null): Promise<CommandResultV2> {
+  /**
+   * Opens a pause, unlock or exclude gate. The confirmation spends the bank on the first two and
+   * edits the saved lists for the third, which costs nothing and is refused on a Hard session.
+   */
+  async openGate(
+    gate: 'pause' | 'unlockSite' | 'excludeSite',
+    host: string | null,
+  ): Promise<CommandResultV2> {
     return this.command(async (): Promise<CommandResultV2> => {
       // The affordability rule reads the durable balance, so the focus earned since the last
       // settle is credited first. Otherwise a gate the user has earned is refused until the tick.
@@ -369,19 +381,25 @@ export class SessionControllerV2 {
       if (this.ports.runtime().pendingEnforcementTransition !== null) {
         return failure('end-not-allowed');
       }
-      const unlockHost: string | null = gate === 'unlockSite' ? canonicalUnlockHost(host) : null;
-      if (gate === 'unlockSite' && unlockHost === null) {
+      const hostGate: boolean = gate === 'unlockSite' || gate === 'excludeSite';
+      const unlockHost: string | null = hostGate ? canonicalUnlockHost(host) : null;
+      if (hostGate && unlockHost === null) {
+        return failure('end-not-allowed');
+      }
+      // A Hard session refuses every edit that weakens it, and an exclusion is one for good.
+      if (gate === 'excludeSite' && session.config.strictness === 'hard') {
         return failure('end-not-allowed');
       }
       // A gate the user cannot afford is not opened at all, which is what the v1 economy did: the
-      // deliberation exists to spend a balance that is already there.
+      // deliberation exists to spend a balance that is already there. An exclusion costs nothing.
       const economy: PauseEconomy = this.ports.economy();
-      const cost: number = gate === 'pause' ? economy.pauseMs : economy.unlockMs;
+      const cost: number =
+        gate === 'pause' ? economy.pauseMs : gate === 'unlockSite' ? economy.unlockMs : 0;
       if (this.ports.bank().balanceMs < cost) return failure('end-not-allowed');
       const previous: GateState | null = this.ports.runtime().gate;
       if (previous !== null) {
-        if (previous.kind !== 'unlockSite' || gate !== 'unlockSite')
-          return failure('end-not-allowed');
+        // Only a host gate of the same kind is replaced, by one for another site.
+        if (!hostGate || previous.kind !== gate) return failure('end-not-allowed');
         if (canonicalUnlockHost(previous.host) === unlockHost) return OK;
       }
       const openedAt: number = Math.max(
@@ -424,10 +442,14 @@ export class SessionControllerV2 {
   }
 
   /** The phrase a gate demands, or null when the settings do not ask for one. */
-  private gatePhrase(gate: 'pause' | 'unlockSite', host: string | null): string | null {
+  private gatePhrase(
+    gate: 'pause' | 'unlockSite' | 'excludeSite',
+    host: string | null,
+  ): string | null {
     if (!this.ports.gateSettings().requireTypedPhrase) return null;
     if (gate === 'pause') return pausePhrase();
-    return host === null ? null : unlockSitePhrase(host);
+    if (host === null) return null;
+    return gate === 'excludeSite' ? excludeSitePhrase(host) : unlockSitePhrase(host);
   }
 
   /** Spends a ready gate. The cancel gate closes the session, the others buy their relief. */
@@ -459,6 +481,7 @@ export class SessionControllerV2 {
         await this.closeActiveSession(session, this.ports.now());
         return OK;
       }
+      if (gate.kind === 'excludeSite') return this.applyExclusion(gate, session);
       return this.spendGate(gate, session);
     });
   }
@@ -983,6 +1006,20 @@ export class SessionControllerV2 {
       stoppedPage: runtime.tabStates[previous.tabId]?.stoppedDocumentId === previous.documentId,
       verdict: structuredClone(verdict),
     });
+  }
+
+  /**
+   * A ready exclude gate closes and spends nothing. The list edit itself is the Engine's, applied
+   * once this command has published, because that edit refreshes the live views through this
+   * controller's own queue. A Hard session never reaches here, since the gate was refused at open,
+   * and is checked again because the session type can change under an open gate.
+   */
+  private async applyExclusion(gate: GateState, session: SessionStateV2): Promise<CommandResultV2> {
+    if (gate.host === null || session.config.strictness === 'hard') {
+      return failure('end-not-allowed');
+    }
+    await this.commitLiveGate(null, []);
+    return OK;
   }
 
   /**

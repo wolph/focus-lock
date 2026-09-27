@@ -510,7 +510,7 @@ describe('buildActiveOverlayView gate rows', () => {
             requiredPhrase: 'I am allowing this site: example.com',
           }),
         }),
-    ).toThrow('an unlock gate names the host it unlocks');
+    ).toThrow('a site gate names the host it acts on');
     expect(unlock.copy.gateConfirm).toBe('Unlock this site');
     expect(cancel.copy.gateTitle).toBe('End this session');
     expect(cancel.copy.gateConfirm).toBe('End the session');

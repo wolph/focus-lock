@@ -1233,7 +1233,12 @@ function isEventRecordValue(value: unknown): value is EventRecord {
       );
     case 'gateOpened':
     case 'gateResisted':
-      return value.gate === 'pause' || value.gate === 'unlockSite' || value.gate === 'cancel';
+      return (
+        value.gate === 'pause' ||
+        value.gate === 'unlockSite' ||
+        value.gate === 'excludeSite' ||
+        value.gate === 'cancel'
+      );
     case 'budgetEarned':
     case 'pauseTaken':
       return isNonNegativeNumber(value.ms);

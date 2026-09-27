@@ -138,10 +138,10 @@ export async function routeMessage(
   targetService?: WorkTargetService,
 ): Promise<unknown> {
   const unlockHost: string | null =
-    msg.type === 'openGate' && msg.gate === 'unlockSite'
+    msg.type === 'openGate' && (msg.gate === 'unlockSite' || msg.gate === 'excludeSite')
       ? msg.host
       : (msg.type === 'confirmGate' || msg.type === 'abandonGate') &&
-          msg.expectedGate.kind === 'unlockSite'
+          (msg.expectedGate.kind === 'unlockSite' || msg.expectedGate.kind === 'excludeSite')
         ? msg.expectedGate.host
         : null;
   const extensionPage: boolean = sender.url?.startsWith('chrome-extension://') === true;

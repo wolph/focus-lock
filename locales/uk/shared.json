@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Виключити цей сайт"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Назавжди припиняє блокувати $HOST$. Кредит не потрібен.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "не під час жорсткої сесії"
+  },
+  "shared_exclude_host_title": {
+    "message": "Виключити $HOST$ із блокування",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Розблокувати $HOST$ на $CLOCK$",
     "placeholders": {

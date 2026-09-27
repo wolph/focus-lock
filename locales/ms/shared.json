@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Kecualikan tapak ini"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Menghentikan sekatan $HOST$ untuk selama-lamanya. Tidak memerlukan kredit.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "tidak semasa sesi kunci keras"
+  },
+  "shared_exclude_host_title": {
+    "message": "Kecualikan $HOST$ daripada sekatan",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Buka kunci $HOST$ $CLOCK$",
     "placeholders": {

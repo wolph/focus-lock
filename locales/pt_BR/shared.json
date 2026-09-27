@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Excluir este site"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Para de bloquear $HOST$ definitivamente. Não precisa de crédito.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "não durante uma sessão de bloqueio total"
+  },
+  "shared_exclude_host_title": {
+    "message": "Excluir $HOST$ do bloqueio",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Desbloquear $HOST$ por $CLOCK$",
     "placeholders": {

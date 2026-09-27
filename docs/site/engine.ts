@@ -9,6 +9,7 @@ import { endAuthorityV2 } from '../../src/background/lifecycle-projection-v2';
 import { buildActiveOverlayView } from '../../src/background/overlay-view-v2';
 import { accrue, msUntilAffordable, spend } from '../../src/core/budget';
 import { ALL_CATEGORIES } from '../../src/core/categories';
+import { excludedLists } from '../../src/core/exclude-host';
 import {
   type CompiledMatcher,
   compileMatcher,
@@ -540,7 +541,9 @@ export function createDemoEngine(now: () => number): DemoEngine {
         // sent this request is always the active tab, so the demo trusts that instead of the
         // client-supplied host.
         const host: string | null =
-          request.gate === 'unlockSite' ? hostnameOf(activeTab(state.strip)) : null;
+          request.gate === 'unlockSite' || request.gate === 'excludeSite'
+            ? hostnameOf(activeTab(state.strip))
+            : null;
         openGate(request.gate, host);
         return { ok: true, code: 'ok' };
       }
@@ -563,6 +566,28 @@ export function createDemoEngine(now: () => number): DemoEngine {
           return { ok: false, code: 'confirmation-mismatch', error: 'Type the phrase exactly.' };
         if (gate.kind === 'cancel') {
           endSession();
+          return { ok: true, code: 'ok' };
+        }
+        if (gate.kind === 'excludeSite') {
+          // The demo's exclusion is the real edit on the demo's own lists, mirrored from the
+          // worker: the block rule goes, or the category records the host.
+          if (gate.host !== null) {
+            state.lists = excludedLists(
+              state.lists,
+              gate.host,
+              session.config.mode,
+              (candidate: ListsConfig): Verdict =>
+                evaluateUrl(
+                  compileMatcher(candidate, ALL_CATEGORIES, session.config.mode),
+                  `https://${gate.host}/`,
+                  [],
+                  now(),
+                ),
+            );
+          }
+          state.gate = null;
+          publish();
+          broadcast({ type: 'reevaluate' });
           return { ok: true, code: 'ok' };
         }
         const cost: number =

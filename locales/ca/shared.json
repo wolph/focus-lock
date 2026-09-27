@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Exclou aquest lloc"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Deixa de bloquejar $HOST$ per sempre. No cal crèdit.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "no durant una sessió estricta"
+  },
+  "shared_exclude_host_title": {
+    "message": "Exclou $HOST$ del bloqueig",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Desbloqueja $HOST$ $CLOCK$",
     "placeholders": {

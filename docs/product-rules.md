@@ -81,10 +81,18 @@ wide so the three session types read as cards.
 Tests: `tests/e2e/quiet-popup.spec.ts`, `tests/e2e/smoke.spec.ts`,
 `tests/unit/popup/start-form.test.tsx`.
 
-## Rule 7. The blocked page offers site access without a click
+## Rule 7. The blocked page offers site access and exclusion without a click
 
-The blocked page shows the site access credit, Unlock this site, Unlock all sites and End as soon
-as it renders. The 2026-09-11 request for an extra button that excludes the site from the blocking
-for good, behind the same deliberation gate, is recorded here and not yet built.
+The blocked page shows the site access credit, Unlock this site, Unlock all sites, Exclude this
+site and End as soon as it renders. The popup's session actions carry the same Exclude this site.
 
-Tests: `tests/unit/content/overlay-v2.test.ts`, `tests/e2e/gates.spec.ts`.
+Exclude this site stops blocking the current site for good: it opens the same deliberation gate as
+an unlock (the same wait and, when Settings ask for it, a typed phrase), costs no credit, and on
+confirmation edits the saved lists the way a Settings edit would. In block mode the block rule the
+site matched goes, or the category that brought it records an exclusion. In allow mode the site
+joins the allow list. A Hard session refuses it, and the button says so in place. A rule added for
+the current session alone is not touched, so such a site stays blocked until the session ends.
+
+Tests: `tests/unit/core/exclude-host.test.ts`, `tests/unit/background/session-controller-v2.test.ts`,
+`tests/unit/content/overlay-v2.test.ts`, `tests/unit/popup/active-view.test.tsx`,
+`tests/e2e/gates.spec.ts`.

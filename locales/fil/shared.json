@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "I-exclude ang site na ito"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Itinitigil nang tuluyan ang pag-block sa $HOST$. Hindi kailangan ng kredito.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "Hindi habang mahigpit na sesyon"
+  },
+  "shared_exclude_host_title": {
+    "message": "I-exclude ang $HOST$ sa pag-block",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Buksan ang $HOST$ $CLOCK$",
     "placeholders": {

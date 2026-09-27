@@ -739,6 +739,34 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Exclude this site",
+    "description": "Button on the blocked page and in the popup that stops blocking the current site for good, after the same wait as an unlock. Also the confirm of its gate."
+  },
+  "shared_exclude_site_hint": {
+    "message": "Stops blocking $HOST$ for good. No credit needed.",
+    "description": "Under the Exclude this site button in the popup. HOST is the domain of the current tab.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "Not during a hard session",
+    "description": "Under the disabled Exclude this site button while a hard session runs, which refuses every edit that weakens it."
+  },
+  "shared_exclude_host_title": {
+    "message": "Exclude $HOST$ from blocking",
+    "description": "Gate heading for excluding one site for good. HOST is a domain.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Unlock $HOST$ $CLOCK$",
     "description": "Gate heading for unlocking one site. HOST is a domain, CLOCK is how long the unlock lasts.",

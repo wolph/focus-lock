@@ -358,7 +358,7 @@ describe('renderDocumentOverlay active view', () => {
     );
 
     expect(shadowRoot().textContent).not.toContain('End session');
-    expect(buttons()).toHaveLength(2);
+    expect(buttons()).toHaveLength(3);
   });
 
   it('renders the until-stopped page with a still time line and no wall clock, End included', () => {
@@ -369,11 +369,37 @@ describe('renderDocumentOverlay active view', () => {
     expect(shadowRoot().textContent).not.toContain('Locked until');
     expect(meterWidth()).toBe(0);
     expect(shadowRoot().textContent).toContain('End session');
-    expect(buttons()).toHaveLength(3);
+    expect(buttons()).toHaveLength(4);
 
     vi.advanceTimersByTime(90_000);
 
     expect(text('.clock .remaining')).toBe(UNTIL_STOPPED_TEXT);
+  });
+
+  it('offers Exclude this site beside the spends and sends its own gate', async (): Promise<void> => {
+    // Rule 7 in docs/product-rules.md: the exclusion sits with the unlocks, costs no credit and
+    // never counts down, and its words are the catalogue's because there is no cost to compose.
+    const sendMessage: Mock<(request: unknown) => Promise<unknown>> = stubWorker({ ok: true });
+    renderDocumentOverlay(activeOverlay(), BLOCKED_VERDICT);
+    const exclude: HTMLButtonElement = buttonStartingWith('Exclude this site');
+
+    expect(exclude.disabled).toBe(false);
+    expect(exclude.textContent).toBe('Exclude this site');
+    exclude.click();
+
+    await vi.waitFor((): void => {
+      expect(actionCalls(sendMessage)).toEqual([
+        { type: 'openGate', gate: 'excludeSite', host: window.location.hostname },
+      ]);
+    });
+  });
+
+  it('refuses Exclude this site on a hard session and says so in place', (): void => {
+    renderDocumentOverlay(activeOverlay({ strictness: 'hard' }), BLOCKED_VERDICT);
+    const exclude: HTMLButtonElement = buttonStartingWith('Exclude this site');
+
+    expect(exclude.disabled).toBe(true);
+    expect(exclude.textContent).toBe('Exclude this siteNot during a hard session');
   });
 
   it('renders the Unlock control a Friction until-stopped view carries', async (): Promise<void> => {

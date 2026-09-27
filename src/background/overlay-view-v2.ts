@@ -109,12 +109,14 @@ const FIXED_ACTIVE_COPY: Readonly<
   transportError: 'Focus Lock could not update this action. Try again.',
 };
 
-/** The two spend actions, and the confirm each one's gate ends with. */
+/** The two spend actions and the exclusion, and the confirm each one's gate ends with. */
 const PAUSE_ACTION_LABEL: string = t('shared_overlay_pause_action');
 const UNLOCK_SITE_ACTION_LABEL: string = t('shared_overlay_unlock_site_action');
+const EXCLUDE_SITE_ACTION_LABEL: string = t('shared_exclude_site_action');
 const GATE_CONFIRM_COPY: Readonly<Record<Exclude<GateKind, 'cancel'>, string>> = {
   pause: PAUSE_ACTION_LABEL,
   unlockSite: UNLOCK_SITE_ACTION_LABEL,
+  excludeSite: EXCLUDE_SITE_ACTION_LABEL,
 };
 
 export interface StartingViewInputV2 {
@@ -196,11 +198,13 @@ export function buildActiveOverlayView(input: ActiveViewInputV2): DocumentOverla
     invalidView(`an active overlay view needs a focus phase, not ${session.phase}`);
   }
   const duration: SessionDuration = session.config.duration;
-  if (input.gate?.kind === 'unlockSite' && !isNonBlankString(input.gate.host)) {
-    invalidView('an unlock gate names the host it unlocks');
+  const hostGate: boolean = input.gate?.kind === 'unlockSite' || input.gate?.kind === 'excludeSite';
+  if (hostGate && !isNonBlankString(input.gate?.host ?? null)) {
+    invalidView('a site gate names the host it acts on');
   }
+  // A gate for another site is not this page's gate: the page shows its actions instead.
   const gate: GateState | null =
-    input.gate?.kind === 'unlockSite' && !unlockHostMatchesUrl(input.gate.host, input.targetUrl)
+    hostGate && !unlockHostMatchesUrl(input.gate?.host ?? null, input.targetUrl)
       ? null
       : input.gate;
   return validatedView({
@@ -397,11 +401,12 @@ function gateTitleCopy(
   endAction: EndActionLabelV2,
 ): string {
   if (gate.kind === 'pause') return spendActionCopy(PAUSE_ACTION_LABEL, economy.pauseCostMs);
-  if (gate.kind === 'unlockSite') {
-    // The gate contract already binds a non-blank host to this kind, in `isGate` and in the
+  if (gate.kind === 'unlockSite' || gate.kind === 'excludeSite') {
+    // The gate contract already binds a non-blank host to these kinds, in `isGate` and in the
     // detached predicate the runtime uses, so borrowing "this site" would paper over a gate no
     // validator produced. This module raises for an unrenderable input rather than inventing copy.
-    if (!isNonBlankString(gate.host)) invalidView('an unlock gate names the host it unlocks');
+    if (!isNonBlankString(gate.host)) invalidView('a site gate names the host it acts on');
+    if (gate.kind === 'excludeSite') return t('shared_exclude_host_title', { HOST: gate.host });
     return t('shared_overlay_unlock_host', {
       HOST: gate.host,
       CLOCK: formatClock(economy.unlockCostMs),

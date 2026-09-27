@@ -1,4 +1,5 @@
 import { ALL_CATEGORIES } from '../core/categories';
+import { excludedLists } from '../core/exclude-host';
 import {
   buildMatcherCache,
   type CompiledMatcher,
@@ -1022,7 +1023,7 @@ export class Engine {
   }
 
   async openGate(
-    gate: 'pause' | 'unlockSite',
+    gate: 'pause' | 'unlockSite' | 'excludeSite',
     host: string | null,
   ): Promise<CommandResponseV2<SessionCommandResultCodeV2>> {
     return this.enqueuePolicyMutation(
@@ -1037,9 +1038,19 @@ export class Engine {
   ): Promise<CommandResponseV2<SessionCommandResultCodeV2>> {
     return this.enqueuePolicyMutation(
       async (): Promise<CommandResponseV2<SessionCommandResultCodeV2>> => {
+        // The gate is read before the controller closes it: an exclude gate's confirmation is
+        // the saved-list edit below, which is this Engine's to make once the gate has published.
+        const open: GateState | null = this.runtime.gate;
+        const excluding: string | null =
+          open?.kind === 'excludeSite' && open.host !== null ? open.host : null;
         const response: CommandResponseV2<SessionCommandResultCodeV2> =
           await this.controller.confirmGate(typedPhrase, expectedGate);
-        if (response.ok) await this.sweepAfterPhaseChange();
+        if (!response.ok) return response;
+        if (excluding !== null) {
+          const edit: Ack = await this.excludeHost(excluding);
+          if (!edit.ok) return { ok: false, code: 'end-not-allowed', error: edit.error };
+        }
+        await this.sweepAfterPhaseChange();
         return response;
       },
     );
@@ -1639,6 +1650,46 @@ export class Engine {
       }
       return this.updateListsNow(l, null, true, false);
     });
+  }
+
+  /**
+   * Stops blocking `host` for good, from the blocked page's own gate. Block mode removes the block
+   * rule the host matched or, when a category brought it, records a category exclusion, and looks
+   * again until the host is no longer blocked, so layered rules all go. Allow mode adds the host to
+   * the allow list. The edit travels the path a Settings edit does, so the guard, the sync quota
+   * and the live views all see it. The session's own rules stay: a host blocked by a rule added
+   * for this session alone stays blocked until the session ends, and the exclusion still holds
+   * for every session after it.
+   */
+  private async excludeHost(host: string): Promise<Ack> {
+    const session: SessionState | null = this.runtime.session;
+    if (session === null) return { ok: false, error: 'no-active-session' };
+    const next: ListsConfig = excludedLists(
+      this.lists,
+      host,
+      session.config.mode,
+      (lists: ListsConfig): Verdict =>
+        evaluateUrl(
+          this.compileSessionPolicy(
+            composeSessionRules(lists, session.config.rules),
+            ALL_CATEGORIES,
+            session.config.mode,
+          ),
+          `https://${host}/`,
+          [],
+          this.ports.now(),
+        ),
+    );
+    if (exactDataEqual(next, this.lists)) return { ok: true };
+    if (this.ports.savePolicy === undefined) {
+      try {
+        await encodeListsForSync(next);
+      } catch (error: unknown) {
+        if (!(error instanceof SyncQuotaError)) throw error;
+        return { ok: false, error: t('notify_lists_sync_limit') };
+      }
+    }
+    return this.updateListsNow(next, null, true, false);
   }
 
   private async updateListsNow(

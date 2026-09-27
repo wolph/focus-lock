@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Deze site uitsluiten"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Stopt het blokkeren van $HOST$ voor altijd. Geen tegoed nodig.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "niet tijdens een sessie op slot"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ uitsluiten van blokkering",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ ontgrendelen $CLOCK$",
     "placeholders": {

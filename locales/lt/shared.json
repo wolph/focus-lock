@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Išbraukti šią svetainę"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Visam laikui nutraukia $HOST$ blokavimą. Kredito nereikia.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "ne griežtos sesijos metu"
+  },
+  "shared_exclude_host_title": {
+    "message": "Išbraukti $HOST$ iš blokavimo",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Atrakinti $HOST$ $CLOCK$",
     "placeholders": {

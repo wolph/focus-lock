@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Jäta see sait välja"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Lõpetab $HOST$ blokeerimise jäädavalt. Krediiti ei vaja.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "mitte range seansi ajal"
+  },
+  "shared_exclude_host_title": {
+    "message": "Jäta $HOST$ blokeerimisest välja",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Ava $HOST$ $CLOCK$",
     "placeholders": {

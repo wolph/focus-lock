@@ -178,6 +178,11 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
   const unlockDisabledReason: string | null =
     pendingReason ?? activeSiteReason ?? unlockAvailability;
   const pauseDisabledReason: string | null = pendingReason ?? pauseAvailability;
+  // The exclusion costs nothing, so the only reasons are the ones every action shares and Hard.
+  const excludeDisabledReason: string | null =
+    pendingReason ??
+    activeSiteReason ??
+    (snapshot.config?.strictness === 'hard' ? t('shared_exclude_hard_reason') : null);
   const breakEarlyVisible: boolean =
     snapshot.phase === 'break' &&
     snapshot.phaseStartedAt !== null &&
@@ -250,6 +255,17 @@ export function ActiveView({ snapshot, now }: ActiveViewProps): VNode {
           disabledReason={pauseDisabledReason}
           onClick={(): void =>
             void command.run({ type: 'openGate', gate: 'pause', host: null }, ACTION_FAILED_COPY)
+          }
+        />
+        <SpendButton
+          label={t('shared_exclude_site_action')}
+          sub={activeHost === null ? null : t('shared_exclude_site_hint', { HOST: activeHost })}
+          disabledReason={excludeDisabledReason}
+          onClick={(): void =>
+            void command.run(
+              { type: 'openGate', gate: 'excludeSite', host: activeHost },
+              ACTION_FAILED_COPY,
+            )
           }
         />
       </>

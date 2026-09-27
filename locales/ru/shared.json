@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Исключить этот сайт"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Навсегда прекращает блокировку $HOST$. Кредит не требуется.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "не во время жёсткой сессии"
+  },
+  "shared_exclude_host_title": {
+    "message": "Исключить $HOST$ из блокировки",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Разблокировать $HOST$ на $CLOCK$",
     "placeholders": {

@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Diese Seite ausnehmen"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Stoppt das Blockieren von $HOST$ dauerhaft. Kein Guthaben nötig.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "nicht während einer Sitzung mit harter Sperre"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ vom Blockieren ausnehmen",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ entsperren $CLOCK$",
     "placeholders": {

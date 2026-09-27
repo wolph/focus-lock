@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "このサイトを除外"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ のブロックを永久に停止します。クレジットは不要です。",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "ハードセッション中は不可"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ をブロックから除外",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ $CLOCK$のロック解除",
     "placeholders": {

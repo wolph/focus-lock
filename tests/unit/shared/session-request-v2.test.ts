@@ -160,7 +160,7 @@ describe('v2 session request channel', (): void => {
     }>();
     expectTypeOf<Extract<SessionRequestV2, { type: 'openGate' }>>().toEqualTypeOf<{
       type: 'openGate';
-      gate: 'pause' | 'unlockSite';
+      gate: 'pause' | 'unlockSite' | 'excludeSite';
       host: string | null;
     }>();
     expectTypeOf<Extract<SessionRequestV2, { type: 'forceEndGate' }>>().toEqualTypeOf<{

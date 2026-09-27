@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "ही साइट वगळा"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ चे ब्लॉकिंग कायमचे थांबवते. क्रेडिटची गरज नाही.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "कडक सेशन दरम्यान उपलब्ध नाही"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ ला ब्लॉकिंगमधून वगळा",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ $CLOCK$ साठी अनलॉक करा",
     "placeholders": {

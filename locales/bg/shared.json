@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Изключи този сайт"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Спира завинаги блокирането на $HOST$. Не изисква кредит.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "не по време на сесия с твърдо заключване"
+  },
+  "shared_exclude_host_title": {
+    "message": "Изключи $HOST$ от блокирането",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Отключи $HOST$ за $CLOCK$",
     "placeholders": {

@@ -97,12 +97,37 @@ function buildButtons(
     },
   );
   overlay.spends = [unlock, pause];
-  row.append(unlock.button, pause.button);
+  row.append(unlock.button, pause.button, excludeButton(view, act));
   if (view.actions.end !== 'hidden') {
     row.appendChild(endButton(endActionLabel(view.copy.endAction), view.actions.end, act));
   }
   for (const control of overlay.spends) updateSpend(control, view, now);
   return row;
+}
+
+/**
+ * The exclusion: no credit, no countdown, the same gate. A Hard session refuses it, and the
+ * button says so in place rather than disappearing. Its words are the catalogue's own, like the
+ * gate's Keep focusing: there is no cost clock for the worker to compose.
+ */
+function excludeButton(view: ActiveOverlayView, act: ActionSender): HTMLButtonElement {
+  const button: HTMLButtonElement = document.createElement('button');
+  button.className = 'pill';
+  button.type = 'button';
+  button.dataset.focus = 'exclude-site';
+  const text: HTMLSpanElement = document.createElement('span');
+  text.textContent = t('shared_exclude_site_action');
+  const reason: HTMLSpanElement = document.createElement('span');
+  reason.className = 'ready';
+  const hard: boolean = view.strictness === 'hard';
+  reason.hidden = !hard;
+  reason.textContent = hard ? t('shared_exclude_hard_reason') : '';
+  button.disabled = hard;
+  button.append(text, reason);
+  button.addEventListener('click', (): void => {
+    act({ type: 'openGate', gate: 'excludeSite', host: window.location.hostname });
+  });
+  return button;
 }
 
 function spendButton(

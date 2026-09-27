@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "ይህን ገፅ አግልል"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ን ለዘላለም ማገድ ያቆማል። ክሬዲት አያስፈልግም።",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "ጠንካራ ቁልፍ ክፍለ ጊዜ ላይ አይደለም"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ን ከማገድ አግልል",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ን ለ$CLOCK$ ክፈት",
     "placeholders": {

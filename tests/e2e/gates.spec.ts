@@ -644,3 +644,117 @@ test('overlay unlock isolates another site and reblocks after expiry', async ({
   await expect(page.locator('focus-lock-overlay')).toBeAttached();
   await expect(otherPage.locator('focus-lock-overlay')).toBeAttached();
 });
+
+/** Whether the first button whose name starts with `accessibleName` is disabled, or null if absent. */
+async function closedShadowButtonDisabled(
+  context: BrowserContext,
+  page: Page,
+  accessibleName: string,
+): Promise<boolean | null> {
+  const session: CDPSession = await context.newCDPSession(page);
+  try {
+    const tree = await session.send('Accessibility.getFullAXTree');
+    const node = tree.nodes.find(
+      (candidate): boolean =>
+        candidate.role?.value === 'button' &&
+        String(candidate.name?.value ?? '').startsWith(accessibleName),
+    );
+    if (node === undefined) return null;
+    return (
+      node.properties?.some(
+        (property): boolean => property.name === 'disabled' && property.value.value === true,
+      ) ?? false
+    );
+  } finally {
+    await session.detach();
+  }
+}
+
+test('Exclude this site stops blocking the site for good from the blocked page', async ({
+  context,
+  extPage,
+  siteUrl,
+}) => {
+  // Rule 7 in docs/product-rules.md: the exclusion is on screen with the unlocks, opens the same
+  // gate, costs no credit, and its confirmation edits the saved lists the way Settings would.
+  const gateDelayMs: number = 500;
+  await configureFastEconomy(extPage, { gateDelayMs });
+  await startTestSession(extPage, { strictness: 'friction' });
+  const page: Page = await context.newPage();
+  await page.goto(siteUrl('/plain.html'));
+  await expect(page.locator('focus-lock-overlay')).toBeAttached();
+  const before: SessionSnapshot = await sendExtensionRequest(extPage, { type: 'getSnapshot' });
+
+  await expect
+    .poll(async (): Promise<string[]> => closedShadowButtonNames(context, page))
+    .toContain('Exclude this site');
+  await clickClosedShadowButton(context, page, 'Exclude this site');
+  await expect
+    .poll(async (): Promise<string | null> => {
+      const snapshot: SessionSnapshot = await sendExtensionRequest(extPage, {
+        type: 'getSnapshot',
+      });
+      return snapshot.gate === null ? null : `${snapshot.gate.kind}:${String(snapshot.gate.host)}`;
+    })
+    .toBe('excludeSite:blocked.example');
+  const gate: GateState = await captureGate(extPage);
+  expect(gate.readyAt - gate.openedAt).toBe(gateDelayMs);
+  await expect
+    .poll(async (): Promise<string[]> => closedShadowButtonNames(context, page))
+    .toContain('Keep focusing');
+
+  // The gate's own confirm carries the action's name and is refused until the delay has passed.
+  const early = await sendExtensionRequest(extPage, {
+    type: 'confirmGate',
+    expectedGate: gate,
+    typedPhrase: null,
+  });
+  expect(early).toMatchObject({ ok: false, code: 'gate-not-ready' });
+  await expect
+    .poll(
+      async (): Promise<boolean | null> =>
+        closedShadowButtonDisabled(context, page, 'Exclude this site'),
+    )
+    .toBe(false);
+  await clickClosedShadowButton(context, page, 'Exclude this site');
+
+  await expect(page.locator('focus-lock-overlay')).toHaveCount(0);
+  await expect(page.locator('#marker')).toHaveText('plain page');
+  const lists = await sendExtensionRequest(extPage, { type: 'getLists' });
+  expect(lists.custom).toEqual([]);
+  const after: SessionSnapshot = await sendExtensionRequest(extPage, { type: 'getSnapshot' });
+  expect(after.gate).toBeNull();
+  expect(after.activeUnlocks).toEqual([]);
+  expect(after.bankMs).toBeGreaterThanOrEqual(before.bankMs);
+
+  // The exclusion outlives this page: a fresh visit is not blocked either.
+  const again: Page = await context.newPage();
+  await again.goto(siteUrl('/plain.html'));
+  await expect(again.locator('#marker')).toHaveText('plain page');
+  await expect(again.locator('focus-lock-overlay')).toHaveCount(0);
+});
+
+test('a hard session refuses Exclude this site in place', async ({ context, extPage, siteUrl }) => {
+  await startTestSession(extPage, { strictness: 'hard' });
+  const page: Page = await context.newPage();
+  await page.goto(siteUrl('/plain.html'));
+  await expect(page.locator('focus-lock-overlay')).toBeAttached();
+
+  await expect
+    .poll(
+      async (): Promise<boolean | null> =>
+        closedShadowButtonDisabled(context, page, 'Exclude this site'),
+    )
+    .toBe(true);
+  await expect
+    .poll(async (): Promise<string[]> => closedShadowButtonNames(context, page))
+    .toContainEqual(expect.stringContaining('Not during a hard session'));
+  expect(
+    await sendExtensionRequest(extPage, {
+      type: 'openGate',
+      gate: 'excludeSite',
+      host: 'blocked.example',
+    }),
+  ).toMatchObject({ ok: false });
+  expect((await sendExtensionRequest(extPage, { type: 'getLists' })).custom).toHaveLength(1);
+});

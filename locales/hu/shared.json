@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Ennek az oldalnak a kivétele"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Véglegesen leállítja a $HOST$ blokkolását. Nincs szükség kreditre.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "Nem teljes zárolású menet közben"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ kivétele a blokkolásból",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ feloldása ennyi időre: $CLOCK$",
     "placeholders": {

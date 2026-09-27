@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Εξαίρεση αυτού του ιστότοπου"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Σταματά μόνιμα τον αποκλεισμό του $HOST$. Δεν απαιτεί πίστωση.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "όχι κατά τη διάρκεια συνεδρίας πλήρους κλειδώματος"
+  },
+  "shared_exclude_host_title": {
+    "message": "Εξαίρεση του $HOST$ από τον αποκλεισμό",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Ξεκλείδωμα του $HOST$ για $CLOCK$",
     "placeholders": {

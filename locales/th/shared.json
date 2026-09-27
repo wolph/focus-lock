@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "ยกเว้นเว็บไซต์นี้"
+  },
+  "shared_exclude_site_hint": {
+    "message": "หยุดบล็อก $HOST$ อย่างถาวร ไม่ต้องใช้เครดิต",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "ไม่ใช่ระหว่างเซสชันแบบเข้มงวด"
+  },
+  "shared_exclude_host_title": {
+    "message": "ยกเว้น $HOST$ จากการบล็อก",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "ปลดล็อก $HOST$ $CLOCK$",
     "placeholders": {

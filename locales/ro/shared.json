@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Exclude acest site"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Oprește definitiv blocarea pentru $HOST$. Nu necesită credit.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "nu în timpul unei sesiuni stricte"
+  },
+  "shared_exclude_host_title": {
+    "message": "Exclude $HOST$ din blocare",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Deblochează $HOST$ $CLOCK$",
     "placeholders": {

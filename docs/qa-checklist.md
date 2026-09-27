@@ -25,12 +25,12 @@ Derived by `node scripts/qa-checklist.mjs`, guarded by
 is asked of the runner, or of the glob the runner is configured with, so a stale one fails a
 test rather than misleading a reader.
 
-Unit suite: **188 files** matching `tests/unit/**/*.test.{ts,tsx}`, the pattern
+Unit suite: **189 files** matching `tests/unit/**/*.test.{ts,tsx}`, the pattern
 `vitest.config.ts` declares. The number of individual test cases is deliberately not recorded:
 deriving it means collecting every file, which is the expensive half of a run, and a number
 that needs a run to verify is exactly the kind that went stale here four times.
 
-End-to-end suite: **140 scenarios in 33 spec files**, as Playwright itself
+End-to-end suite: **142 scenarios in 33 spec files**, as Playwright itself
 lists them. Asking the runner rather than counting `test(` in the sources is not pedantry: a
 grep undercounts `test.skip`, which is listed and reported, and misses a spec file added
 since the grep was written. Both mistakes were present when this section was first drafted.
@@ -54,9 +54,11 @@ since the grep was written. Both mistakes were present when this section was fir
 - a session whose phase alarm cannot be held ends as an alarm failure
 - a start whose registration cannot be audited fails as a registration failure
 
-### gates.spec.ts (12)
+### gates.spec.ts (14)
 
+- Exclude this site stops blocking the site for good from the blocked page
 - Flexible session ending immediately removes an active block
+- a hard session refuses Exclude this site in place
 - a newly blocked domain replaces an unlock gate and rejects the old confirmation
 - abandoning a gate records a resisted temptation
 - friction cancellation with typing requires the configured phrase after its delay

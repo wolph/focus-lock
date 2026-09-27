@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Kecualikan situs ini"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Menghentikan pemblokiran $HOST$ untuk selamanya. Tidak perlu kredit.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "Tidak saat sesi kunci Keras"
+  },
+  "shared_exclude_host_title": {
+    "message": "Kecualikan $HOST$ dari pemblokiran",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Buka $HOST$ $CLOCK$",
     "placeholders": {

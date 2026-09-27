@@ -779,6 +779,42 @@ describe('the v2 engine work target seam', (): void => {
     expect(engine.snapshot().activeUnlocks).toHaveLength(1);
     expect(engine.workTargetAllowed(`https://${BLOCKED_HOST}/feed`, session)).toBe(false);
   });
+  it('excludes a site for good from its gate, through the saved lists', async (): Promise<void> => {
+    // Rule 7 in docs/product-rules.md: the exclusion is the edit Settings would make, so the
+    // saved block rule goes, the running session follows it, and nothing was spent.
+    const harness: EngineHarness = await realEngine({ bankMs: 0 });
+    const { engine }: EngineHarness = harness;
+    expect(await engine.startSession(engineConfig())).toEqual({ ok: true, code: 'ok' });
+    const session: WorkSession = engine.workTargetSession() as WorkSession;
+    expect(engine.workTargetAllowed(`https://${BLOCKED_HOST}/feed`, session)).toBe(false);
+
+    expect(await engine.openGate('excludeSite', BLOCKED_HOST)).toEqual({ ok: true, code: 'ok' });
+    expect(engine.snapshot().gate).toMatchObject({ kind: 'excludeSite', host: BLOCKED_HOST });
+    harness.setNow(harness.now() + DEFAULT_SETTINGS.gate.delayMs + 1_000);
+    expect(await engine.confirmGate(null)).toEqual({ ok: true, code: 'ok' });
+
+    expect(engine.snapshot().gate).toBeNull();
+    expect(engine.snapshot().activeUnlocks).toEqual([]);
+    expect(engine.getLists().custom).toEqual([]);
+    // The captured session policy is a snapshot by design. The saved lists no longer block it.
+    expect(
+      engine.workTargetAllowed(
+        `https://${BLOCKED_HOST}/feed`,
+        engine.workTargetDraftPolicy('blacklist'),
+      ),
+    ).toBe(true);
+  });
+  it('refuses the exclude gate on a hard session', async (): Promise<void> => {
+    const { engine }: EngineHarness = await realEngine();
+    expect(await engine.startSession({ ...engineConfig(), strictness: 'hard' })).toEqual({
+      ok: true,
+      code: 'ok',
+    });
+
+    expect((await engine.openGate('excludeSite', BLOCKED_HOST)).ok).toBe(false);
+    expect(engine.snapshot().gate).toBeNull();
+    expect(engine.getLists().custom).toEqual([{ kind: 'host', pattern: BLOCKED_HOST }]);
+  });
   it('builds the pre-start policy from the supplied rules or the saved lists', async (): Promise<void> => {
     const { engine }: EngineHarness = await realEngine();
     const saved: WorkTargetPolicy = engine.workTargetDraftPolicy('blacklist');

@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "இந்தத் தளத்தை விலக்கு"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ ஐ நிரந்தரமாகத் தடுப்பதை நிறுத்தும். கடன் தேவையில்லை.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "கடும் அமர்வின்போது இல்லை"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ ஐத் தடுப்பிலிருந்து விலக்கு",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ ஐ $CLOCK$ க்குத் திற",
     "placeholders": {

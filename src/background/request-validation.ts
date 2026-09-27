@@ -686,11 +686,11 @@ function parseRecord(value: Record<string, unknown>): Request | null {
     case 'openGate':
       if (
         !hasExactKeys(value, ['type', 'gate', 'host']) ||
-        (value.gate !== 'pause' && value.gate !== 'unlockSite')
+        (value.gate !== 'pause' && value.gate !== 'unlockSite' && value.gate !== 'excludeSite')
       ) {
         return null;
       }
-      return value.gate === 'unlockSite'
+      return value.gate === 'unlockSite' || value.gate === 'excludeSite'
         ? isBrowserHostname(value.host)
           ? (value as Request)
           : null

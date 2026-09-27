@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "এই সাইট বাদ দিন"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ চিরতরে ব্লক করা বন্ধ করে। ক্রেডিট লাগে না।",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "কঠোর সেশন চলাকালীন নয়"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$কে ব্লক থেকে বাদ দিন",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ $CLOCK$-এর জন্য আনলক করুন",
     "placeholders": {

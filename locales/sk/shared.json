@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Vylúčiť túto stránku"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Navždy prestane blokovať $HOST$. Nepotrebuje kredit.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "nie počas relácie s tvrdým zámkom"
+  },
+  "shared_exclude_host_title": {
+    "message": "Vylúčiť $HOST$ z blokovania",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Odomknúť $HOST$ $CLOCK$",
     "placeholders": {

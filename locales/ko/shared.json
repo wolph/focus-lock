@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "이 사이트 제외"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ 차단을 영구적으로 중지합니다. 크레딧이 필요 없습니다.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "하드 세션 중에는 사용할 수 없음"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ 차단에서 제외",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ $CLOCK$ 잠금해제",
     "placeholders": {

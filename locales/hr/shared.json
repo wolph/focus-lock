@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Izuzmi ovu web-stranicu"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Zauvijek prestaje blokirati $HOST$. Kredit nije potreban.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "Ne tijekom sesije s čvrstim zaključavanjem"
+  },
+  "shared_exclude_host_title": {
+    "message": "Izuzmi $HOST$ iz blokiranja",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Otključaj $HOST$ na $CLOCK$",
     "placeholders": {

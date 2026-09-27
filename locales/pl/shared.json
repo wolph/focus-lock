@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Wyklucz tę stronę"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Trwale zatrzymuje blokowanie $HOST$. Kredyt nie jest potrzebny.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "niedostępne podczas twardej sesji"
+  },
+  "shared_exclude_host_title": {
+    "message": "Wyklucz $HOST$ z blokowania",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Odblokuj $HOST$ na $CLOCK$",
     "placeholders": {

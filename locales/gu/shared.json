@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "આ સાઇટને બાકાત કરો"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ને કાયમ માટે બ્લોક કરવાનું બંધ કરે છે. ક્રેડિટની જરૂર નથી.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "સખત સેશન દરમિયાન નહીં"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ને બ્લોકિંગમાંથી બાકાત કરો",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ અનલૉક કરો $CLOCK$",
     "placeholders": {

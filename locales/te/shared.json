@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "ఈ సైట్‌ను మినహాయించు"
+  },
+  "shared_exclude_site_hint": {
+    "message": "$HOST$ను శాశ్వతంగా బ్లాక్ చేయడం ఆపేస్తుంది. క్రెడిట్ అవసరం లేదు.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "కఠిన సెషన్ సమయంలో కాదు"
+  },
+  "shared_exclude_host_title": {
+    "message": "$HOST$ను బ్లాకింగ్ నుండి మినహాయించు",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "$HOST$ను $CLOCK$కు అన్‌లాక్ చేయి",
     "placeholders": {

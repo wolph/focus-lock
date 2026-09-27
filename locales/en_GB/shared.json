@@ -602,6 +602,30 @@
       }
     }
   },
+  "shared_exclude_site_action": {
+    "message": "Exclude this site"
+  },
+  "shared_exclude_site_hint": {
+    "message": "Stops blocking $HOST$ for good. No credit needed.",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
+  "shared_exclude_hard_reason": {
+    "message": "Not during a hard session"
+  },
+  "shared_exclude_host_title": {
+    "message": "Exclude $HOST$ from blocking",
+    "placeholders": {
+      "HOST": {
+        "content": "$1",
+        "example": "reddit.com"
+      }
+    }
+  },
   "shared_overlay_unlock_host": {
     "message": "Unlock $HOST$ $CLOCK$",
     "placeholders": {
