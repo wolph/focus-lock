@@ -1,35 +1,35 @@
 {
-  "capturedAt": "2026-09-16T15:42:39.892Z",
-  "sourceCommit": "a7bc980895deb811c14f67647661147589f6738e",
-  "distSha256": "a25a6050c7181c081b424954332ffcde798628219088da393a629df42f48d00c",
-  "packageLockSha256": "8af5957ccc846d292c27f40b42b464c5b6b19a2ca783a399534109c804de8aea",
-  "captureScriptSha256": "e4f4bcb7771a581835c3a5ed54c7d963fcc9e34793df670bfecd29b96122bb89",
-  "version": "0.1.1",
+  "capturedAt": "2026-09-30T12:48:24.942Z",
+  "sourceCommit": "973aeddacad661f93ec66a320487d46a2c236ccc",
+  "distSha256": "e1b44d6e3a986d0ec49e45694a52220294e47056a63afe4082059a7924a9ce27",
+  "packageLockSha256": "9963b9d70d04b89644f506e8c07054c3f0cd9412aa606d024e6e1eeb1a3b19a8",
+  "captureScriptSha256": "1017498491fab182db9e1762e4c1d84f191b9b24889214cd12f343525eda4c56",
+  "version": "0.2.0",
   "toolchain": {
-    "node": "24.18.0",
+    "node": "24.21.0",
     "chromium": "151.0.7922.34",
     "ffmpeg": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers"
   },
   "files": {
     "focus-session.png": {
-      "bytes": 29355,
-      "sha256": "420ec8ee73018a938253d5c3fbc15c7ea765f2cfbff83040bd27bcc3b1d328f3"
+      "bytes": 56497,
+      "sha256": "24ee2e54089a13b57530b914aff3f142563bd65bd8011dac1d9d7f9f7b4f9b1f"
     },
     "blocked-page.png": {
-      "bytes": 45081,
-      "sha256": "062b01d78ad47a5c4bbebb6707333a1c7d464d93252fa088b11b9d0f1e2f8dc4"
+      "bytes": 65777,
+      "sha256": "f28857484690421463b726527ff495322e4a194642b369cafbd3366632fabe7e"
     },
     "progress.png": {
-      "bytes": 68790,
-      "sha256": "1a8773ff26d5660a8f812c54c049f52e66b75be774a80d254ca8239799cb5da7"
+      "bytes": 68270,
+      "sha256": "27f9e1a31b55956ea46fd04312615d5c10639a6dc20aa9a68e4184d302f65b10"
     },
     "demo-poster.png": {
-      "bytes": 95835,
-      "sha256": "7753a08d9210e6de9f126696b0e57fdf126973749b78e8e794622660e21f43bb"
+      "bytes": 104332,
+      "sha256": "394068876175421c46b24c07b1f4405896810a075e17302d806bda4beb9e4133"
     },
     "demo.gif": {
-      "bytes": 221914,
-      "sha256": "2ea4f168a27721a4198ae7ac12f1c415414b62467d6094608e1306be7cb4c844"
+      "bytes": 239128,
+      "sha256": "b5148c8742043a361050c5b580a22d5bfc64bb312825028de33dfcafd743615f"
     }
   },
   "demonstration": [
@@ -39,7 +39,7 @@
     "Progress: seeded one-hour completed session and one blocked attempt yesterday. The current session is real.",
     "demo-poster.png and demo.gif are recorded from the interactive demo page at https://wolph.github.io/focus-lock/, which renders that same popup directly on the page and mounts that same lockscreen inside each fake browser tab's own iframe, none of them real Chrome tabs.",
     "GIF: 80 screenshots at 8 fps, 10 seconds. The popup open on the idle Headlines tab for 2 seconds, Start locking that tab and the lockscreen for 4, the returned work document for 4.",
-    "Native Chrome browser chrome is outside every capture. The demo captures do include the fake tab strip and toolbar drawn by the demo page itself, since that is ordinary page content, not real browser chrome. Popup viewport 480x600. Block and demo 960x640. Stats overview 1280x1028.",
+    "Native Chrome browser chrome is outside every capture. The demo captures do include the fake tab strip and toolbar drawn by the demo page itself, since that is ordinary page content, not real browser chrome. Popup viewport 600x600. Block and demo 960x640. Stats overview 1280x1028.",
     "In blocked-page.png the blocking overlay applies to an already loaded local blocked.example page, and pressing Back to work there activates that page's original Chrome tab. In demo.gif, pressing Back to work switches the fake tab strip on the demo page to the work tab, a state change inside one Chrome tab rather than a switch between Chrome tabs."
   ],
   "reproductionInstructions": [

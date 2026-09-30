@@ -378,6 +378,15 @@ test.describe('README capture', (): void => {
     await context.route(workUrl, async (route: Route): Promise<void> => {
       await route.fulfill({ contentType: 'text/html', body: WORK_PAGE });
     });
+    // The blocked page loads first. The start form takes the tab it opened on as the work tab and
+    // Start confirms it, so the work page has to stay the active tab from the popup to the click.
+    const blocked: Page = await context.newPage();
+    const blockedUrl: string = siteUrl('/reading.html');
+    await context.route(blockedUrl, async (route: Route): Promise<void> => {
+      await route.fulfill({ contentType: 'text/html', body: READING_PAGE });
+    });
+    await preparePage(blocked, PAGE_SIZE);
+    await blocked.goto(blockedUrl);
     const work: Page = await context.newPage();
     await preparePage(work, PAGE_SIZE);
     await work.goto(workUrl);
@@ -389,13 +398,6 @@ test.describe('README capture', (): void => {
     await expect(extPage.locator('.work-target')).toContainText(INTENTION);
     await expect(extPage.getByRole('button', { name: 'Start 25 min focus' })).toBeVisible();
     await capture(extPage, directory, 'focus-session.png');
-    const blocked: Page = await context.newPage();
-    const blockedUrl: string = siteUrl('/reading.html');
-    await context.route(blockedUrl, async (route: Route): Promise<void> => {
-      await route.fulfill({ contentType: 'text/html', body: READING_PAGE });
-    });
-    await preparePage(blocked, PAGE_SIZE);
-    await blocked.goto(blockedUrl);
     await extPage.getByRole('button', { name: 'Start 25 min focus' }).click();
     await waitForActiveSession(extPage);
     await expect(blocked.locator('focus-lock-overlay')).toBeAttached();
@@ -458,7 +460,7 @@ test.describe('README capture', (): void => {
         'Progress: seeded one-hour completed session and one blocked attempt yesterday. The current session is real.',
         "demo-poster.png and demo.gif are recorded from the interactive demo page at https://wolph.github.io/focus-lock/, which renders that same popup directly on the page and mounts that same lockscreen inside each fake browser tab's own iframe, none of them real Chrome tabs.",
         'GIF: 80 screenshots at 8 fps, 10 seconds. The popup open on the idle Headlines tab for 2 seconds, Start locking that tab and the lockscreen for 4, the returned work document for 4.',
-        `Native Chrome browser chrome is outside every capture. The demo captures do include the fake tab strip and toolbar drawn by the demo page itself, since that is ordinary page content, not real browser chrome. Popup viewport 480x600. Block and demo 960x640. Stats overview 1280x${statsHeight}.`,
+        `Native Chrome browser chrome is outside every capture. The demo captures do include the fake tab strip and toolbar drawn by the demo page itself, since that is ordinary page content, not real browser chrome. Popup viewport 600x600. Block and demo 960x640. Stats overview 1280x${statsHeight}.`,
         "In blocked-page.png the blocking overlay applies to an already loaded local blocked.example page, and pressing Back to work there activates that page's original Chrome tab. In demo.gif, pressing Back to work switches the fake tab strip on the demo page to the work tab, a state change inside one Chrome tab rather than a switch between Chrome tabs.",
       ],
       reproductionInstructions: [

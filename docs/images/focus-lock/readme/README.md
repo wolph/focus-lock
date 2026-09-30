@@ -4,7 +4,7 @@ The README uses fresh captures from two sources. `focus-session.png`, `blocked-p
 
 | File | Capture |
 | --- | --- |
-| `focus-session.png` | The complete 480 by 600 popup, ready to start a 25-minute session with the work tab selected. |
+| `focus-session.png` | The first 600 pixels of the 600-pixel-wide start form, ready to start a 25-minute session. The work tab line is further down the form. |
 | `blocked-page.png` | The real blocking overlay on a locally served distracting page. |
 | `progress.png` | The Stats overview with one completed hour yesterday and the live demonstration session. |
 | `demo-poster.png` | A readable still of the lockscreen on the demo page's blocked Headlines tab. |

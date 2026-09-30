@@ -32,7 +32,7 @@ Name the task you want to finish, choose a duration, and select the sites to put
 Block distracting categories and individual sites, or allow only the sites you need. Choose a Flexible session, add Friction before ending early, or commit to a timed Hard lock.
 
 <p align="center">
-  <img src="https://github.com/wolph/focus-lock/raw/refs/heads/master/docs/images/focus-lock/readme/focus-session.png" width="480" alt="Focus Lock session controls with the task Finish the proposal, a focus duration and a chosen work tab.">
+  <img src="https://github.com/wolph/focus-lock/raw/refs/heads/master/docs/images/focus-lock/readme/focus-session.png" width="600" alt="Focus Lock start form with the task Finish the proposal, a 25-minute length, the three session types and the blocking mode.">
 </p>
 
 ### Catch the detour and return to work
