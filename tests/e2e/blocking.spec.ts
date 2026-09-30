@@ -28,6 +28,7 @@ interface DomNodeSnapshot {
 }
 
 interface OverlayDomState {
+  backdropBackendNodeId: number;
   backendNodeIds: ReadonlySet<number>;
   panelBackendNodeId: number;
 }
@@ -77,7 +78,12 @@ async function overlayDomState(session: CDPSession): Promise<OverlayDomState> {
     hasClass(node, 'panel'),
   );
   if (panel === undefined) throw new Error('overlay panel was not found');
+  const backdrop: DomNodeSnapshot | undefined = overlayNodes.find(
+    (node: DomNodeSnapshot): boolean => hasClass(node, 'backdrop'),
+  );
+  if (backdrop === undefined) throw new Error('overlay backdrop was not found');
   return {
+    backdropBackendNodeId: backdrop.backendNodeId,
     backendNodeIds: new Set<number>(
       overlayNodes.map((node: DomNodeSnapshot): number => node.backendNodeId),
     ),
@@ -118,6 +124,21 @@ async function panelBounds(session: CDPSession): Promise<ElementBounds> {
   return boxBounds(box.model.border);
 }
 
+/** How far the overlay's backdrop, the one scroll container on the blocked page, can scroll. */
+async function backdropScrollRange(session: CDPSession): Promise<number> {
+  const overlay: OverlayDomState = await overlayDomState(session);
+  const resolved = await session.send('DOM.resolveNode', {
+    backendNodeId: overlay.backdropBackendNodeId,
+  });
+  if (resolved.object.objectId === undefined) throw new Error('overlay backdrop has no object');
+  const range = await session.send('Runtime.callFunctionOn', {
+    objectId: resolved.object.objectId,
+    functionDeclaration: 'function () { return this.scrollHeight - this.clientHeight; }',
+    returnByValue: true,
+  });
+  return Number(range.result.value);
+}
+
 async function assertAndCaptureOverlay(
   context: BrowserContext,
   page: Page,
@@ -143,7 +164,10 @@ async function assertAndCaptureOverlay(
       expect(panel.left).toBeGreaterThanOrEqual(0);
       expect(panel.top).toBeGreaterThanOrEqual(0);
       expect(panel.right).toBeLessThanOrEqual(viewport.width);
-      expect(panel.bottom).toBeLessThanOrEqual(viewport.height);
+      // Site access is open from the first paint (docs/product-rules.md, rule 7), so on a short
+      // phone screen the panel runs past the fold. What is below it has to be one scroll away.
+      const overflow: number = Math.max(0, panel.bottom - viewport.height);
+      expect(await backdropScrollRange(session)).toBeGreaterThanOrEqual(Math.floor(overflow));
       const widths: { clientWidth: number; scrollWidth: number } = await page.evaluate(
         (): { clientWidth: number; scrollWidth: number } => ({
           clientWidth: document.documentElement.clientWidth,

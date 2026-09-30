@@ -278,10 +278,11 @@ test('quota-backed first sync checkpoint survives worker and browser restart, th
       name: 'Choose where your settings are stored',
     }),
   ).toBeVisible();
+  // Nothing publishes the outbox before setup finishes, so the relaunch keeps the failure it had.
   expect(await currentSetup(launch)).toMatchObject({
     completed: false,
     storageMode: null,
-    syncWriteStatus: 'pending',
+    syncWriteStatus: 'error',
     storageError: 'sync-publish-failed',
   });
   expect(await freshInstallExtension.localItems()).toMatchObject({

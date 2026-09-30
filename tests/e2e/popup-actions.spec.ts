@@ -51,9 +51,19 @@ test('popup shows an unlock confirmation and a red End session control', async (
             };
           }),
         );
-      expect(actionStyles).toHaveLength(3);
-      expect(actionStyles[2]).toEqual(actionStyles[0]);
-      expect(actionStyles[2]).toEqual(actionStyles[1]);
+      // Unlock this site, Unlock all sites and Exclude this site wrap as cards, and End session takes
+      // a row of its own below them. The four read as one set: the same type, padding and corners.
+      expect(actionStyles).toHaveLength(4);
+      const look: (action: Record<string, string | number> | undefined) => unknown[] = (
+        action: Record<string, string | number> | undefined,
+      ): unknown[] => [action?.padding, action?.radius, action?.fontSize, action?.fontWeight];
+      for (const action of actionStyles.slice(0, 3)) {
+        expect(look(actionStyles[3])).toEqual(look(action));
+      }
+      const rowWidth: number = await extPage
+        .locator('.actions')
+        .evaluate((row: Element): number => row.getBoundingClientRect().width);
+      expect(actionStyles[3]?.width).toBeCloseTo(rowWidth, 0);
       await extPage.screenshot({
         path: testInfo.outputPath(`end-${theme}-${width}-full.png`),
         fullPage: true,
