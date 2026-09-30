@@ -866,6 +866,10 @@ export function createPolicyStorage(
     const hasBlocked: boolean = !blockedAggregatePublicationsEmpty(blocked);
     const cleanupReadPending: boolean = (await loadScheduleCleanupRead()) !== null;
     const empty: boolean = journalEmpty(journal);
+    // Outside Sync mode nothing publishes the outbox, so persisting it again says nothing about a
+    // failure already recorded. Only a new attempt, which writes its own pending status, clears it.
+    const unpublishedFailure: boolean =
+      mode !== 'sync' && !empty && setup.syncWriteStatus === 'error';
     await verifiedWrite(
       {
         ...additionalItems,
@@ -873,7 +877,12 @@ export function createPolicyStorage(
         ...(empty && mode === 'sync' ? { [LOCAL_AGGREGATE_TOMBSTONES]: [] } : {}),
         [LOCAL_SETUP]: {
           ...setup,
-          syncWriteStatus: hasBlocked || cleanupReadPending ? 'error' : empty ? 'idle' : 'pending',
+          syncWriteStatus:
+            hasBlocked || cleanupReadPending || unpublishedFailure
+              ? 'error'
+              : empty
+                ? 'idle'
+                : 'pending',
           storageError:
             hasBlocked || cleanupReadPending
               ? 'sync-publish-failed'

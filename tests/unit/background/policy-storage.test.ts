@@ -2833,6 +2833,26 @@ describe('PolicyStorage', (): void => {
     });
   });
 
+  it('keeps a failed first publish in error when the idle outbox is made durable', async (): Promise<void> => {
+    const setup: SetupState = { ...DEFAULT_SETUP, completed: true, storageMode: 'local' };
+    const local: FakeStorage = fakeStorage(localPolicy(setup));
+    const sync: FakeStorage = fakeStorage();
+    sync.state.failSet = new Error('sync unavailable');
+    const storage: PolicyStorage = policyStorage(local, sync);
+    await storage.initialize();
+    await expect(storage.enableSync()).rejects.toThrow('sync unavailable');
+
+    // The engine makes the journal durable after every aggregate save. In local mode nothing
+    // publishes that outbox, so "still saving" would be a claim nobody is working on.
+    await storage.remoteJournalDurable();
+
+    expect(await setupState(local)).toMatchObject({
+      storageMode: 'local',
+      syncWriteStatus: 'error',
+      storageError: 'sync-publish-failed',
+    });
+  });
+
   it('fails closed when the first aggregate checkpoint cannot be loaded', async (): Promise<void> => {
     const setup: SetupState = { ...DEFAULT_SETUP, completed: true, storageMode: 'local' };
     const local: FakeStorage = fakeStorage(localPolicy(setup));
