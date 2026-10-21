@@ -8,7 +8,7 @@ export default defineManifest(
   ({ mode }: ConfigEnv): Manifest => ({
     manifest_version: 3,
     name: '__MSG_app_name__',
-    version: '0.2.0',
+    version: '0.2.1',
     description: '__MSG_app_description__',
     default_locale: 'en',
     ...(mode === 'store' ? {} : { key: MANIFEST_KEY }),
