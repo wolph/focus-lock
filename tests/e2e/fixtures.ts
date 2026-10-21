@@ -189,6 +189,9 @@ async function extensionLaunch(
     const extensionId: string = new URL(worker.url()).host;
     const extPage: Page = await context.newPage();
     await extPage.goto(`chrome-extension://${extensionId}/src/popup/popup.html`);
+    // The fixture restarts a booted worker. Stopping during its verified setup write can create
+    // a rollback error from the interruption before the scenario has started.
+    await sendExtensionRequest(extPage, { type: 'getSetupState' });
     return await restartMonitoredWorker({
       context,
       diagnostics,

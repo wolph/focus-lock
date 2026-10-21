@@ -29,10 +29,18 @@ async function node(cdp: CDPSession, name: string, role: string = 'button'): Pro
   return found?.backendDOMNodeId as number;
 }
 
+async function isPickerOpen(cdp: CDPSession): Promise<boolean> {
+  const tree: { nodes: AXNode[] } = await cdp.send('Accessibility.getFullAXTree');
+  return tree.nodes.some(
+    (entry: AXNode): boolean =>
+      entry.role?.value === 'searchbox' && entry.name?.value === 'Search work tabs',
+  );
+}
+
 async function click(cdp: CDPSession, page: Page, name: string): Promise<void> {
-  // A live-view repaint can replace the control between the lookup and the scroll, which CDP
-  // reports as a detached node. The lookup is repeated on the fresh tree rather than failed.
-  for (let attempt: number = 0; ; attempt += 1) {
+  // A live-view repaint can replace the control between lookup and measurement. CDP may report
+  // a detached node or an unavailable box model, so retry the lookup against the fresh tree.
+  for (let attempt: number = 0; attempt < 5; attempt += 1) {
     const id: number = await node(cdp, name);
     try {
       await cdp.send('DOM.scrollIntoViewIfNeeded', { backendNodeId: id });
@@ -45,13 +53,26 @@ async function click(cdp: CDPSession, page: Page, name: string): Promise<void> {
       );
       return;
     } catch (error: unknown) {
-      const detached: boolean =
+      const unavailable: boolean =
         error instanceof Error &&
-        /detached from document|No node with given id/u.test(error.message);
-      if (!detached || attempt >= 4) throw error;
-      await page.waitForTimeout(100);
+        /detached from document|No node with given id|Could not compute box model/u.test(
+          error.message,
+        );
+      if (!unavailable || attempt >= 4) throw error;
     }
+    await page.waitForTimeout(100);
   }
+}
+
+async function openPicker(cdp: CDPSession, page: Page): Promise<void> {
+  // A repaint can move the control after measurement. Confirm the chooser opened before
+  // continuing, including when a mouse click lands on the old coordinates.
+  for (let attempt: number = 0; attempt < 5; attempt += 1) {
+    if (await isPickerOpen(cdp)) return;
+    await click(cdp, page, 'Choose a work tab');
+    await page.waitForTimeout(100);
+  }
+  await node(cdp, 'Search work tabs', 'searchbox');
 }
 
 async function pickerValue<T>(cdp: CDPSession, expression: string): Promise<T> {
@@ -124,7 +145,7 @@ test('ten thousand tab records keep DOM bounded and support search and offscreen
   await expect(blocked.locator('focus-lock-overlay')).toBeAttached();
   const cdp: CDPSession = await context.newCDPSession(blocked);
   try {
-    await click(cdp, blocked, 'Choose a work tab');
+    await openPicker(cdp, blocked);
     await node(cdp, 'Reference 00001');
     const rendered: () => Promise<number> = (): Promise<number> =>
       pickerValue(cdp, 'picker.querySelectorAll(".work-tab-option").length');
@@ -213,7 +234,7 @@ test('the picker shows cached favicons, recent tabs and labelled return destinat
   await expect(blocked.locator('focus-lock-overlay')).toBeAttached();
   const cdp: CDPSession = await context.newCDPSession(blocked);
   try {
-    await click(cdp, blocked, 'Choose a work tab');
+    await openPicker(cdp, blocked);
     await node(cdp, 'Most recent reference');
     expect(
       await pickerValue<string[]>(

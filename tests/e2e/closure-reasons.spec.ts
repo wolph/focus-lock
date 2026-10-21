@@ -98,6 +98,12 @@ test('a migrated session with no valid v2 form ends as an invalid active state',
   // migration must close it rather than carry it forward or drop it.
   await launch.worker.evaluate(
     async ({ runtimeKey, schemaKey, sessionId, entryId, at, lists }): Promise<void> => {
+      const started: Date = new Date(at);
+      const localDate: string = [
+        String(started.getFullYear()).padStart(4, '0'),
+        String(started.getMonth() + 1).padStart(2, '0'),
+        String(started.getDate()).padStart(2, '0'),
+      ].join('-');
       // The v1 rule snapshot the normalizer accepts. A session whose snapshot it refuses is
       // dropped before the migration ever sees it, which looks exactly like a session that was
       // closed, so the seed carries the whole shape.
@@ -132,7 +138,7 @@ test('a migrated session with no valid v2 form ends as an invalid active state',
             phaseEndsAt: at + 50 * 60_000,
             cycleIndex: 0,
             pausedFrom: null,
-            focusedMs: 10 * 60_000,
+            focusedMs: 0,
           },
           gate: null,
           unlocks: [],
@@ -143,7 +149,7 @@ test('a migrated session with no valid v2 form ends as an invalid active state',
           removedTabTombstones: {},
           scheduleActiveEntryId: entryId,
           scheduleUnavailableNoticeToken: null,
-          date: new Date(at).toISOString().slice(0, 10),
+          date: localDate,
           todayAgg: null,
           lastPruneDate: null,
           commitCheckpoint: null,
