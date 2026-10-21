@@ -72,10 +72,10 @@ const PAGE_CAPTURE: CaptureGeometry = {
   },
 };
 const DETAIL_CAPTURE: CaptureGeometry = {
-  deviceScaleFactor: 4 / 3,
+  deviceScaleFactor: 1,
   viewport: {
-    height: 600,
-    width: 960,
+    height: 800,
+    width: 1280,
   },
 };
 const TALL_CAPTURE: CaptureGeometry = {
@@ -1038,7 +1038,7 @@ test('captures five truthful release states with category membership in the popu
   test.info().annotations.push({
     type: 'capture-geometry',
     description:
-      'Popup and block use 960x600 CSS at DPR 4/3. Onboarding uses 800x500 CSS at DPR 1.6. Privacy uses 1088x680 CSS at DPR 20/17. Stats uses 1472x920 CSS at DPR 20/23. Every PNG is 1280x800.',
+      'Popup uses 960x600 CSS at DPR 4/3. Block uses 1280x800 CSS at DPR 1. Onboarding uses 800x500 CSS at DPR 1.6. Privacy uses 1088x680 CSS at DPR 20/17. Stats uses 1472x920 CSS at DPR 20/23. Every PNG is 1280x800.',
   });
   await mkdir(captureDirectory, { recursive: true });
   await assertScreenshotInventory(SCREENSHOT_DIRECTORY);
@@ -1099,10 +1099,12 @@ test('captures five truthful release states with category membership in the popu
         const scroll: HTMLElement | null = document.querySelector('.start-form__scroll');
         const summary: HTMLElement | null = document.querySelector('.rule-summary');
         const friction: HTMLElement | null = document.querySelector('.session-type-control');
-        if (scroll === null || summary === null || friction === null) {
+        const mode: HTMLElement | null = document.querySelector('.mode-control');
+        if (scroll === null || summary === null || friction === null || mode === null) {
           throw new Error('popup store geometry is unavailable');
         }
-        scroll.scrollTop = 190;
+        scroll.scrollTop +=
+          mode.getBoundingClientRect().top - scroll.getBoundingClientRect().top - 12;
         const rules: HTMLElement | null = document.querySelector('.rule-summary__scroll');
         if (rules !== null) rules.scrollTop = 30;
         return {
