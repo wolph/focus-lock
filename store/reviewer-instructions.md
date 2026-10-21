@@ -12,7 +12,7 @@ No account, payment, external service, or test credential is required. The exten
 ## Start a short Flexible session and trigger a block
 
 5. Click the Focus Lock toolbar icon. Enter `2` in the minutes field beside the session length presets. In Intention, enter `Chrome Web Store review`.
-6. Expand Session settings. Choose Flexible under Session type. Keep Block selected sites as the blocking mode. Confirm Social media is selected under What will be blocked.
+6. Choose Flexible under Session type. Keep Block selected sites as the blocking mode. Confirm Social media is selected under What will be blocked.
 7. Choose Start 2 min focus.
 8. After the session starts, open a new normal top-level tab and navigate to `https://x.com/`.
 9. Confirm the blocking surface shows the intention, countdown, and rule text `Blocked by Social media: x.com`. The rule text identifies the source and matched domain. x.com is an unaffiliated example from the bundled Social media list. If the review environment cannot reach it or rewrites the URL, navigate to another domain shown in that list and substitute the final registrable host in the expected rule text.
