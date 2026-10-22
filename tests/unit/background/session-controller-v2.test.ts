@@ -457,6 +457,34 @@ describe('SessionControllerV2 document pull under a journal', (): void => {
     expect(ports.current().documentCommands[key]).toEqual(added);
   });
 
+  it('records no stopped page for a navigation pull a retained-session cleanup answers', async (): Promise<void> => {
+    // The answer is a clear, so the page is not stopped. A claim taken here differs from the
+    // journal's saved claim and every later cleanup attempt failed on the contradiction.
+    const runtime: RuntimeStateV2 = transitionRuntime(
+      cleanupTransition('start', 'alarm-ready', 'manual-end', {
+        postCleanupClosure: transitionPostCleanupClosure(),
+      }),
+      { session: timedFocusSession() },
+    );
+    expect(runtime.session?.phase).toBe('focus');
+    const { controller, effects } = harness(runtime, {
+      tabs: [{ tabId: 77, url: BLOCKED_URL, documentId: 'document-77' }],
+    });
+
+    const commands: DocumentContentCommand[] = await controller.documentCommandsFor(
+      { tabId: 77, documentId: 'document-77', url: BLOCKED_URL },
+      'navigation',
+      'deliver',
+    );
+
+    expect(
+      commands.some(
+        (c: DocumentContentCommand): boolean => 'presentation' in c && c.presentation === 'clear',
+      ),
+    ).toBe(true);
+    expect(effects.stopped).toHaveLength(0);
+  });
+
   it('leaves a sweep read out of the frozen batch', async (): Promise<void> => {
     // A sweep reports what a target already holds and its URL came from a tab query that may be
     // behind the navigation it is racing, so it does not get to write a durable clear command for a
@@ -1600,6 +1628,59 @@ describe('SessionControllerV2 alarms and ticks', (): void => {
     );
     await controller.tick();
     expect(ports.sends.length).toBeGreaterThan(0);
+  });
+
+  it('leaves a cleanup batch whose retry time has not arrived to its own alarm', async (): Promise<void> => {
+    const transition: PendingEnforcementTransition = cleanupTransition(
+      'start',
+      'prepared',
+      'start-abandon',
+    );
+    const progress = transition.cleanupProgress;
+    if (progress === null || progress === undefined)
+      throw new Error('cleanup transition fixture has no progress');
+    const { controller, ports } = harness(
+      transitionRuntime({
+        ...transition,
+        cleanupProgress: {
+          ...progress,
+          retry: { ...progress.retry, nextAttemptAt: Number.MAX_SAFE_INTEGER },
+        },
+      }),
+    );
+    const before: RuntimeStateV2 = ports.current();
+    await controller.tick();
+    expect(ports.sends).toHaveLength(0);
+    expect(ports.current().pendingEnforcementTransition).toEqual(
+      before.pendingEnforcementTransition,
+    );
+  });
+
+  it('never runs or throws on a tick for a spent cleanup batch', async (): Promise<void> => {
+    const transition: PendingEnforcementTransition = cleanupTransition(
+      'start',
+      'prepared',
+      'start-abandon',
+    );
+    const progress = transition.cleanupProgress;
+    if (progress === null || progress === undefined)
+      throw new Error('cleanup transition fixture has no progress');
+    const { controller, ports } = harness(
+      transitionRuntime({
+        ...transition,
+        cleanupProgress: {
+          ...progress,
+          retry: {
+            ...progress.retry,
+            automaticAttempt: 12,
+            nextAttemptAt: null,
+            lastError: 'spent',
+          },
+        },
+      }),
+    );
+    await expect(controller.tick()).resolves.toBeUndefined();
+    expect(ports.sends).toHaveLength(0);
   });
 });
 

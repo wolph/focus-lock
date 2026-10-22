@@ -93,7 +93,13 @@ import {
 import { recoverRuntimeV2 } from './recovery-v2';
 import { carryCommitCheckpointProjectionV2, projectRuntimeDomainV2 } from './runtime-checkpoint-v2';
 import type { RuntimePortsV2 } from './runtime-ports-v2';
-import type { RuntimeStateV2, SessionStartCandidate } from './runtime-v2-types';
+import type {
+  CleanupProgress,
+  PendingClosure,
+  PendingEnforcementTransition,
+  RuntimeStateV2,
+  SessionStartCandidate,
+} from './runtime-v2-types';
 import { parseRuntimeStateV2 } from './runtime-v2-validation';
 import {
   nextScheduleInfoV2,
@@ -1390,9 +1396,27 @@ export class SessionControllerV2 {
     }
   }
 
+  /**
+   * The tick retries only a batch whose retry time has arrived, the rule recovery applies. A spent
+   * batch has no retry time and waits for the manual retry instead of throwing on every tick.
+   */
   private async runDueCleanup(): Promise<void> {
-    await this.runTransitionCleanupIfOwned();
-    await this.runClosureCleanupIfOwned();
+    const transition: PendingEnforcementTransition | null =
+      this.ports.runtime().pendingEnforcementTransition;
+    if (
+      transition?.stage === 'cleanup' &&
+      transition.cleanupProgress != null &&
+      cleanupAttemptIsDue(transition.cleanupProgress, this.ports.now())
+    ) {
+      await this.runTransitionCleanupIfOwned();
+    }
+    const closure: PendingClosure | null = this.ports.runtime().pendingClosure;
+    if (
+      closure?.stage === 'cleanup' &&
+      cleanupAttemptIsDue(closure.cleanupProgress, this.ports.now())
+    ) {
+      await this.runClosureCleanupIfOwned();
+    }
   }
 
   private async runTransitionCleanupIfOwned(): Promise<void> {
@@ -1796,6 +1820,9 @@ export class SessionControllerV2 {
     url: string;
   }): Promise<void> {
     const runtime: RuntimeStateV2 = this.ports.runtime();
+    // A cleanup journal owns the views and answers this pull with a clear, so the page is not
+    // stopped. A claim taken here would contradict the journal's saved claim on its next attempt.
+    if (cleanupOwnsViewsV2(runtime)) return;
     const evaluated: Verdict | null = evaluatedVerdictOf(
       this.ports,
       runtime,
@@ -1926,6 +1953,12 @@ function evaluatedVerdictOf(
  * refreeze and the closure through the validator, so every caller asks this first rather than
  * discovering it as a thrown runtime.
  */
+/** A batch whose retry time has arrived runs now. An exhausted batch never runs by itself. */
+function cleanupAttemptIsDue(progress: CleanupProgress, now: number): boolean {
+  const nextAttemptAt: number | null = progress.retry.nextAttemptAt;
+  return nextAttemptAt !== null && nextAttemptAt <= now;
+}
+
 function cleanupOwnsViewsV2(runtime: RuntimeStateV2): boolean {
   return (
     runtime.pendingEnforcementTransition?.stage === 'cleanup' || runtime.pendingClosure !== null

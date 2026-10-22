@@ -450,6 +450,46 @@ describe('runClosureCleanupAttemptV2', (): void => {
     expect(fake.alarmCalls).toContainEqual({ kind: 'create', name: CLOSURE_CLEANUP_ALARM });
   });
 
+  it('still clears every later document when an earlier one finds no receiver', async (): Promise<void> => {
+    // One page that never answers holds the journal for itself and must not strand the documents
+    // after it in the batch with their overlays still up.
+    const fake: RuntimePortsFakeV2 = fakeFor(
+      closingRuntime({ tabStates: { 11: runtimeTabState(), 12: runtimeTabState() } }),
+      {
+        tabs: [
+          { tabId: 11, url: 'https://facebook.com/feed', documentId: DOC_ONE },
+          { tabId: 12, url: 'https://facebook.com/other', documentId: 'document-2' },
+        ],
+      },
+    );
+    await inCleanup(fake);
+    fake.respondForDocument(11, DOC_ONE, noReceiverResponder());
+
+    const next: RuntimeStateV2 = await runClosureCleanupAttemptV2(fake, effectsFake());
+
+    expect(
+      fake.sends.some(
+        (send: FakeSendV2): boolean =>
+          send.documentId === 'document-2' && send.message.command === 'apply-enforcement',
+      ),
+    ).toBe(true);
+    expect(next.pendingClosure?.stage).toBe('cleanup');
+    expect(cleanupProgressOf(next).retry.lastError).toContain(DOC_ONE);
+  });
+
+  it('finishes when a listed tab with no receiver is one Chrome will not script', async (): Promise<void> => {
+    const fake: RuntimePortsFakeV2 = fakeFor(closingRuntime());
+    await inCleanup(fake);
+    fake.respondForDocument(11, DOC_ONE, noReceiverResponder());
+    fake.targets.ensureDocumentScript = async (): Promise<'ready' | 'unscriptable'> =>
+      'unscriptable';
+
+    const next: RuntimeStateV2 = await runClosureCleanupAttemptV2(fake, effectsFake());
+
+    expect(fake.sends.some((send: FakeSendV2): boolean => send.documentId === DOC_ONE)).toBe(true);
+    expect(next.pendingClosure).toBeNull();
+  });
+
   it('finishes when the tab behind a no-receiver answer is gone from the browser', async (): Promise<void> => {
     // A tab the person closed answers no-receiver rather than naming itself closed, because the
     // runtime reports a missing listener before it reports a missing tab. Treated as a refusal,

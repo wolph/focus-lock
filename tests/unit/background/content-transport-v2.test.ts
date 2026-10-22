@@ -377,7 +377,7 @@ describe('v2 content transport send', (): void => {
         documentCommand(),
       );
       await vi.advanceTimersByTimeAsync(2_000);
-      expect((await outcome).kind).toBe('mismatch');
+      expect((await outcome).kind).toBe('unresponsive');
       reject(new Error('late transport failure'));
       await vi.advanceTimersByTimeAsync(0);
       expect(vi.getTimerCount()).toBe(0);
@@ -402,7 +402,10 @@ describe('v2 content transport send', (): void => {
         outcomes.push(outcome);
       });
       await vi.advanceTimersByTimeAsync(2_000);
-      expect(outcomes.map((outcome): string => outcome.kind)).toEqual(['mismatch', 'mismatch']);
+      expect(outcomes.map((outcome): string => outcome.kind)).toEqual([
+        'unresponsive',
+        'unresponsive',
+      ]);
       resolve(appliedFor(documentCommand()));
       await vi.advanceTimersByTimeAsync(0);
       expect(outcomes).toHaveLength(2);

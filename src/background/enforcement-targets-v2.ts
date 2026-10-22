@@ -341,7 +341,10 @@ async function applyToTargetV2(
     outcome = await sendDocumentEnforcementCommand(driver.transport, replacement);
   }
   if (outcome.kind === 'applied') return { kind: 'acknowledged', ack: outcome.ack };
-  if (outcome.kind === 'closed' || outcome.kind === 'changed') return { kind: 'skipped' };
+  // An unresponsive document is asked again on the next pass, like a changed one.
+  if (outcome.kind === 'closed' || outcome.kind === 'changed' || outcome.kind === 'unresponsive') {
+    return { kind: 'skipped' };
+  }
   return unreachableTarget(target, commandFailureDetail(outcome), outcome.kind === 'no-receiver');
 }
 
@@ -356,7 +359,7 @@ async function runEpochHandshakeV2(
     await driver.recordEpochAck(outcome.ack);
     return null;
   }
-  if (outcome.kind === 'closed') return { kind: 'skipped' };
+  if (outcome.kind === 'closed' || outcome.kind === 'unresponsive') return { kind: 'skipped' };
   return unreachableTarget(target, resetFailureDetail(outcome), outcome.kind === 'no-receiver');
 }
 

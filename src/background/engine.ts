@@ -1188,7 +1188,8 @@ export class Engine {
   ): Promise<void> {
     this.assertRuntimeMutationAllowed(lease);
     const now: number = this.ports.now();
-    const key: string = `${tabId}:${url}`;
+    const recordedUrl: string = attemptUrlOf(url);
+    const key: string = attemptDebounceKey(tabId, url);
     const last: number | undefined = this.runtime.attemptDebounce[key];
     const persistenceFailed: boolean = this.failedAttemptPersistence.delete(key);
     const retryFailedPersistence: boolean =
@@ -1208,7 +1209,7 @@ export class Engine {
       this.recordEvent({
         t: 'attempt',
         at: now,
-        url,
+        url: recordedUrl,
         host: hostOf(url),
         tabId,
         kind,
@@ -2569,11 +2570,12 @@ export class Engine {
         claim.kind === 'navigation' && claim.documentId !== undefined ? 'stopped' : null;
       if (nextStage === null) delete this.runtime.deferredBlockClaims[key];
       else this.runtime.deferredBlockClaims[key] = { ...claim, stage: nextStage };
-      this.runtime.attemptDebounce[`${claim.tabId}:${claim.url}`] = claim.attemptAt;
+      const claimUrl: string = attemptUrlOf(claim.url);
+      this.runtime.attemptDebounce[attemptDebounceKey(claim.tabId, claim.url)] = claim.attemptAt;
       this.recordEvent({
         t: 'attempt',
         at: claim.attemptAt,
-        url: claim.url,
+        url: claimUrl,
         host: hostOf(claim.url),
         tabId: claim.tabId,
         kind: claim.kind,
@@ -2706,6 +2708,23 @@ function attemptsTodayOf(todayAgg: DailyAgg | null): number {
     (total: number, count: number): number => total + count,
     0,
   );
+}
+
+/** The longest URL an attempt record or its debounce key carries. */
+const MAX_ATTEMPT_URL_LENGTH: number = 2048;
+
+/** The URL an attempt record stores, capped so one huge URL cannot inflate the event log. */
+function attemptUrlOf(url: string): string {
+  return url.length > MAX_ATTEMPT_URL_LENGTH ? url.slice(0, MAX_ATTEMPT_URL_LENGTH) : url;
+}
+
+/**
+ * The debounce key for one attempt: its tab and registrable host. A page that rewrites its own URL
+ * with pushState, or a run of navigations across one blocked site, cannot mint one record per
+ * distinct URL inside the debounce window.
+ */
+function attemptDebounceKey(tabId: number, url: string): string {
+  return `${tabId}:${hostOf(url)}`;
 }
 
 function hostOf(url: string): string {

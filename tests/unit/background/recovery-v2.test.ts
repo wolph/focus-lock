@@ -754,8 +754,10 @@ describe('recovery failure paths', (): void => {
     // The first document's epoch reset, its enforcement command, and the one retry it gets once
     // the script has been put into it. Chrome allowed the script here, so silence the second time
     // is a page this session cannot enforce: the sweep stops there and the session closes rather
-    // than running over a document nobody is covering.
-    expect(test.ports.sends).toHaveLength(3);
+    // than running over a document nobody is covering. The closure clear batch then still reaches
+    // the second document, because one silent document no longer ends the batch for the rest.
+    expect(test.ports.sends).toHaveLength(4);
+    expect(test.ports.sends[3]?.tabId).toBe(12);
   });
 
   it('closes a session whose rules cannot compile', async (): Promise<void> => {

@@ -347,6 +347,9 @@ async function reissueClearCommands(
   ports: RuntimePortsV2,
   progress: CleanupProgress,
 ): Promise<string | null> {
+  // Every document gets its reset and clear on each attempt. The first failure is reported after
+  // the loop, so one page that never answers holds the journal for itself and not for the rest.
+  let first: string | null = null;
   for (const [key, command] of Object.entries(progress.clearCommands)) {
     const failure: string | null = await resetAndClearDocumentV2(
       ports,
@@ -355,9 +358,9 @@ async function reissueClearCommands(
       command,
       'closure',
     );
-    if (failure !== null) return failure;
+    if (failure !== null && first === null) first = failure;
   }
-  return null;
+  return first;
 }
 
 /**

@@ -3291,6 +3291,38 @@ describe('Engine', () => {
     expect(h.engine.snapshot().attemptsToday).toBe(2);
   });
 
+  it('caps the URL an attempt record and its debounce key carry', async (): Promise<void> => {
+    const h: Harness = makeEngine();
+    const url: string = `https://facebook.com/${'a'.repeat(1024 * 1024)}`;
+
+    await h.engine.recordAttempt(url, 7, 'navigation');
+
+    const attempts: EventRecord[] = h
+      .loggedEvents()
+      .filter((event: EventRecord): boolean => event.t === 'attempt');
+    expect(attempts).toHaveLength(1);
+    const recorded: EventRecord | undefined = attempts[0];
+    expect(recorded?.t === 'attempt' ? recorded.url.length : -1).toBe(2048);
+    expect(recorded?.t === 'attempt' ? recorded.host : '').toBe('facebook.com');
+    for (const key of Object.keys(lastSavedRuntime(h).attemptDebounce)) {
+      expect(key.length).toBeLessThanOrEqual(2048 + 8);
+    }
+  });
+
+  it('records one existing-tab attempt for many pushState URLs inside the window', async (): Promise<void> => {
+    const h: Harness = makeEngine();
+
+    for (let index: number = 0; index < 100; index += 1) {
+      h.setNow(T0 + index * 100);
+      await h.engine.recordAttempt(`https://facebook.com/feed?page=${index}`, 7, 'existing');
+    }
+
+    expect(
+      h.loggedEvents().filter((event: EventRecord): boolean => event.t === 'attempt'),
+    ).toHaveLength(1);
+    expect(h.engine.snapshot().attemptsToday).toBe(1);
+  });
+
   it('prunes absent tab records while preserving live restore state', async () => {
     const h: Harness = makeEngine();
     await h.engine.claimMute(7, 'https://kept.example', true);

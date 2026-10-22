@@ -45,6 +45,7 @@ import {
   LOCAL_LISTS,
   LOCAL_LISTS_SNAPSHOT,
   LOCAL_ONBOARDING_DRAFT,
+  LOCAL_PENDING_CHANGES,
   LOCAL_POLICY_COMMIT,
   LOCAL_RUNTIME,
   LOCAL_RUNTIME_MIGRATION,
@@ -2294,6 +2295,104 @@ describe('background pending lists tracking', () => {
 });
 
 describe('background boot state convergence', () => {
+  it('keeps the local lists for a migrated Hard session and queues the weaker synced lists', async (): Promise<void> => {
+    const now: number = Date.now();
+    const localLists: ListsConfig = {
+      ...DEFAULT_LISTS,
+      custom: [{ kind: 'host', pattern: 'example-distraction.com' }],
+    };
+    mocks.localState[LOCAL_LISTS_SNAPSHOT] = localLists;
+    mocks.scenario.storedSync = {
+      [SYNC_SETTINGS]: DEFAULT_SETTINGS,
+      [SYNC_LISTS]: { ...DEFAULT_LISTS, custom: [] },
+      [SYNC_BANK]: { balanceMs: 0 },
+    };
+    mocks.scenario.runtime = {
+      ...emptyRuntime(now),
+      session: {
+        config: {
+          mode: 'blacklist',
+          strictness: 'hard',
+          durationMin: 60,
+          cycling: null,
+          intention: 'protected work',
+          source: 'manual',
+          scheduleEntryId: null,
+          rules: rulesFromLists(localLists),
+        },
+        startedAt: now - 5 * 60_000,
+        sessionEndsAt: now + 55 * 60_000,
+        phase: 'focus',
+        phaseStartedAt: now - 5 * 60_000,
+        phaseEndsAt: now + 55 * 60_000,
+        cycleIndex: 0,
+        pausedFrom: null,
+        focusedMs: 0,
+      },
+    };
+
+    await finishBoot();
+
+    // The synced lists drop a blocked site, which the Hard guard refuses, so the session keeps
+    // the local lists and the removal waits for the end of the session.
+    expect(engineLists().custom).toEqual(localLists.custom);
+    expect(mocks.localState[LOCAL_PENDING_CHANGES]).toEqual([
+      expect.objectContaining({
+        path: 'lists',
+        reasonKey: 'notify_guard_lists_remove_blocked',
+        intent: expect.objectContaining({
+          kind: 'lists-delta',
+          removeCustom: ['host:example-distraction.com'],
+        }),
+      }),
+    ]);
+  });
+
+  it('imports the synced lists for a migrated Hard session when they do not weaken it', async (): Promise<void> => {
+    const now: number = Date.now();
+    const syncedLists: ListsConfig = {
+      ...DEFAULT_LISTS,
+      custom: [
+        { kind: 'host', pattern: 'example-distraction.com' },
+        { kind: 'host', pattern: 'added-elsewhere.example' },
+      ],
+    };
+    mocks.localState[LOCAL_LISTS_SNAPSHOT] = { ...DEFAULT_LISTS, custom: [syncedLists.custom[0]] };
+    mocks.scenario.storedSync = {
+      [SYNC_SETTINGS]: DEFAULT_SETTINGS,
+      [SYNC_LISTS]: syncedLists,
+      [SYNC_BANK]: { balanceMs: 0 },
+    };
+    mocks.scenario.runtime = {
+      ...emptyRuntime(now),
+      session: {
+        config: {
+          mode: 'blacklist',
+          strictness: 'hard',
+          durationMin: 60,
+          cycling: null,
+          intention: 'protected work',
+          source: 'manual',
+          scheduleEntryId: null,
+          rules: rulesFromLists(syncedLists),
+        },
+        startedAt: now - 5 * 60_000,
+        sessionEndsAt: now + 55 * 60_000,
+        phase: 'focus',
+        phaseStartedAt: now - 5 * 60_000,
+        phaseEndsAt: now + 55 * 60_000,
+        cycleIndex: 0,
+        pausedFrom: null,
+        focusedMs: 0,
+      },
+    };
+
+    await finishBoot();
+
+    expect(engineLists().custom).toEqual(syncedLists.custom);
+    expect(mocks.localState[LOCAL_PENDING_CHANGES]).toBeUndefined();
+  });
+
   it('degrades an invalid remote split-list authority to the local snapshot and records the drop', async () => {
     const consoleError = vi.spyOn(console, 'error').mockImplementation((): void => undefined);
     const localLists: ListsConfig = {

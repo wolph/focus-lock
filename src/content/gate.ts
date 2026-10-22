@@ -27,15 +27,26 @@ export function installPersistedPageShow(target: Window, reevaluate: () => void)
 }
 
 /**
- * A stopped document wears this title, which is how a restored one recognizes itself. The
- * comparison is between two documents of the same browser, so reading it once in the browser's
- * UI language is enough for a restore to match.
+ * A stopped document wears this title. The title only labels the tab: whether this document was
+ * stopped is the content script's own memory, because the page can set the title and plant a
+ * `focus-lock-overlay` element of its own.
  */
 export const STOPPED_DOCUMENT_TITLE: string = t('overlay_stopped_title');
 
-export function recoverRestoredOverlay(document: Document): boolean {
-  const staleHosts: Element[] = Array.from(document.querySelectorAll('focus-lock-overlay'));
-  const wasStopped: boolean = staleHosts.length > 0 && document.title === STOPPED_DOCUMENT_TITLE;
-  for (const host of staleHosts) host.remove();
-  return wasStopped;
+const DOCUMENT_STOPPED_KEY: string = '__focusLockDocumentStopped';
+
+export function markDocumentStopped(scope: Record<string, unknown>): void {
+  scope[DOCUMENT_STOPPED_KEY] = true;
+}
+
+/**
+ * Removes every leftover overlay host, which this content script never mounted, and reports
+ * whether this scope already stopped the document. Page elements and the title never decide it.
+ */
+export function recoverRestoredOverlay(
+  document: Document,
+  scope: Record<string, unknown>,
+): boolean {
+  for (const host of Array.from(document.querySelectorAll('focus-lock-overlay'))) host.remove();
+  return scope[DOCUMENT_STOPPED_KEY] === true;
 }

@@ -4,6 +4,7 @@ import {
   claimContentLifecycle,
   docStateFor,
   installPersistedPageShow,
+  markDocumentStopped,
   recoverRestoredOverlay,
   shouldStop,
 } from '../../../src/content/gate';
@@ -47,14 +48,21 @@ describe('installPersistedPageShow', () => {
 });
 
 describe('recoverRestoredOverlay', () => {
-  it('removes stale hosts and preserves the stopped-document marker', () => {
+  it('removes stale hosts and does not trust a page-set title', () => {
     document.title = 'Locked - Focus Lock';
     document.documentElement.append(
       document.createElement('focus-lock-overlay'),
       document.createElement('focus-lock-overlay'),
     );
 
-    expect(recoverRestoredOverlay(document)).toBe(true);
+    expect(recoverRestoredOverlay(document, {})).toBe(false);
     expect(document.querySelectorAll('focus-lock-overlay')).toHaveLength(0);
+  });
+
+  it('reports the stopped state this scope recorded', () => {
+    const scope: Record<string, unknown> = {};
+    markDocumentStopped(scope);
+
+    expect(recoverRestoredOverlay(document, scope)).toBe(true);
   });
 });

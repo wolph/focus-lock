@@ -267,7 +267,12 @@ async function toleratedNoReceiverV2(
   if (policy.tolerateNoReceiver) return true;
   const open: Array<{ tabId: number; url: string | null }> =
     await ports.targets.queryTopFrameTabs();
-  return !open.some((tab: { tabId: number }): boolean => tab.tabId === command.tabId);
+  if (!open.some((tab: { tabId: number }): boolean => tab.tabId === command.tabId)) return true;
+  // A listed tab with no listener is either a page the script has not reached or one Chrome
+  // refuses to script, and only trying tells them apart, as the start sweep does. A document
+  // Chrome will not script was never overlaid, so there is nothing to clear and it is resolved.
+  const state: 'ready' | 'unscriptable' = await ports.targets.ensureDocumentScript(command.tabId);
+  return state === 'unscriptable';
 }
 
 /**

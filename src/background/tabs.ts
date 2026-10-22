@@ -959,10 +959,10 @@ async function applyMute(
 
   const newClaim: boolean = !facts.wasMutedByUs;
   if (newClaim) {
-    if (
-      !shouldContinue() ||
-      !(await claimMuteWithLease(engine, tabId, url, liveMute.muted, lease))
-    ) {
+    // A mute Chrome attributes to this extension is Focus Lock's own effect,
+    // so the tab was unmuted before it and that is the state to restore
+    const priorMuted: boolean = liveMute.muted && !liveMute.owned;
+    if (!shouldContinue() || !(await claimMuteWithLease(engine, tabId, url, priorMuted, lease))) {
       return;
     }
     if (!shouldContinue()) {

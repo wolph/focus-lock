@@ -32,7 +32,12 @@ function addedAny(current: Rule[], incoming: Rule[]): boolean {
   return removedAny(incoming, current);
 }
 
-function isHard(session: SessionState | null): boolean {
+/** What the lists guard reads from a session. A v2 session fits it, and so does a v1 session. */
+export interface ListsGuardSession {
+  config: { strictness: Strictness };
+}
+
+function isHard(session: ListsGuardSession | null): boolean {
   return session !== null && session.config.strictness === 'hard';
 }
 
@@ -47,7 +52,7 @@ function strictnessWeakened(current: Strictness, incoming: Strictness): boolean 
 }
 
 export function listsChangeAllowed(
-  session: SessionState | null,
+  session: ListsGuardSession | null,
   mode: SessionMode | null,
   current: ListsConfig,
   incoming: ListsConfig,

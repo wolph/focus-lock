@@ -119,6 +119,36 @@ describe('regex rules', () => {
     expect(evaluateUrl(m, 'https://www.youtube.com/shorts/abc', NONE, NOW).blocked).toBe(true);
     expect(evaluateUrl(m, 'https://www.youtube.com/watch?v=abc', NONE, NOW).blocked).toBe(false);
   });
+
+  it('skips nested repetition and finishes a catastrophic probe quickly', () => {
+    const bad = compileMatcher(
+      lists({
+        custom: [
+          { kind: 'regex', pattern: '(.*\\.)*reddit\\.com' },
+          { kind: 'regex', pattern: '(www\\.)?reddit\\.com/r/(all|popular)' },
+        ],
+      }),
+      [],
+      'blacklist',
+    );
+    expect(bad.regexes.map((r) => r.source)).toEqual(['(www\\.)?reddit\\.com/r/(all|popular)']);
+    const url: string = `https://${'a.'.repeat(24)}example.org/`;
+    const start: number = performance.now();
+    expect(evaluateUrl(bad, url, NONE, NOW).blocked).toBe(false);
+    expect(performance.now() - start).toBeLessThan(50);
+    expect(evaluateUrl(bad, 'https://www.reddit.com/r/all', NONE, NOW).blocked).toBe(true);
+  });
+
+  it('tests regexes against at most the first 256 characters of the URL', () => {
+    const slow = compileMatcher(
+      lists({ custom: [{ kind: 'regex', pattern: 'a.*a.*b' }] }),
+      [],
+      'blacklist',
+    );
+    const start: number = performance.now();
+    evaluateUrl(slow, `https://example.org/${'a'.repeat(4000)}`, NONE, NOW);
+    expect(performance.now() - start).toBeLessThan(50);
+  });
 });
 
 describe('categories and exclusions', () => {

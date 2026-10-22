@@ -51,6 +51,26 @@ export interface OverlayHostHooks {
 }
 
 const SVG_NS: 'http://www.w3.org/2000/svg' = 'http://www.w3.org/2000/svg';
+/**
+ * The shell is built in the XHTML namespace so it is an HTML element with an inline style and a
+ * shadow root in XML and SVG documents too, where `createElement` answers a null-namespace element.
+ */
+const XHTML_NS: 'http://www.w3.org/1999/xhtml' = 'http://www.w3.org/1999/xhtml';
+
+/**
+ * Keys and text typed into the overlay stop at the shadow root, so the blocked page's bubble
+ * listeners (hotkeys, loggers) never see them. Only propagation stops: the text still lands.
+ */
+const ISOLATED_EVENTS: readonly string[] = [
+  'keydown',
+  'keyup',
+  'keypress',
+  'beforeinput',
+  'input',
+  'compositionstart',
+  'compositionupdate',
+  'compositionend',
+];
 
 const PADLOCK_PATH: string =
   'M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 ' +
@@ -73,12 +93,12 @@ export function padlockSvg(): SVGSVGElement {
 /** The shared closed-shadow host: overlay styles, dialog backdrop, and interaction trap. */
 export function mountOverlayHost(hooks: OverlayHostHooks = {}): OverlayHostElements {
   const direction: 'ltr' | 'rtl' = bidiDir();
-  const host: HTMLElement = document.createElement('focus-lock-overlay');
+  const host: HTMLElement = document.createElementNS(XHTML_NS, 'focus-lock-overlay') as HTMLElement;
   applyHostStyle(host, direction);
   const root: ShadowRoot = host.attachShadow({ mode: 'closed' });
-  const style: HTMLStyleElement = document.createElement('style');
+  const style: HTMLStyleElement = document.createElementNS(XHTML_NS, 'style') as HTMLStyleElement;
   style.textContent = OVERLAY_STYLES;
-  const container: HTMLElement = document.createElement('div');
+  const container: HTMLElement = document.createElementNS(XHTML_NS, 'div') as HTMLElement;
   container.className = 'backdrop';
   container.setAttribute('role', 'dialog');
   container.setAttribute('aria-modal', 'true');
@@ -153,6 +173,12 @@ function trapInteraction(root: ShadowRoot, hooks: OverlayHostHooks): void {
     }
     cycleFocus(root, ev);
   });
+  // Registered after the keydown handler above, so the overlay's own handling runs first.
+  for (const type of ISOLATED_EVENTS) {
+    root.addEventListener(type, (event: Event): void => {
+      event.stopPropagation();
+    });
+  }
 }
 
 /** Scroll keys move the picker list when one is open, otherwise the backdrop itself. */

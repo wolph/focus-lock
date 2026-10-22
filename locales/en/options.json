@@ -794,7 +794,7 @@
     "description": "Announcement after the copies in Chrome Sync were deleted."
   },
   "options_privacy_confirm_synced_policy_body": {
-    "message": "This permanently deletes remote settings, block and allow lists, site access credit, streaks, and domain-level blocked-attempt aggregates from Chrome Sync. Local settings and statistics stay on this device.",
+    "message": "This permanently deletes remote settings, block and allow lists, site access credit, streaks, and domain-level blocked-attempt aggregates from Chrome Sync. Local settings and statistics stay on this device. Every other device still in Sync mode keeps its own copy and writes it back to Chrome Sync, so switch each of those devices to local storage first.",
     "description": "Body of the dialog confirming deletion of the copies left in Chrome Sync."
   },
   "options_privacy_confirm_all_title": {
@@ -810,7 +810,7 @@
     "description": "Announcement after every piece of extension data was deleted."
   },
   "options_privacy_all_body_intro": {
-    "message": "This permanently deletes every piece of Focus Lock data on this device and any Focus Lock copies left in Chrome Sync:",
+    "message": "Every other device still in Sync mode keeps its own copy and writes it back to Chrome Sync, so switch each of those devices to local storage first. This permanently deletes every piece of Focus Lock data on this device and any Focus Lock copies left in Chrome Sync:",
     "description": "First paragraph of the delete-everything dialog, introducing the list of what goes."
   },
   "options_privacy_all_body_outro": {

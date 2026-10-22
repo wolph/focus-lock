@@ -20,10 +20,12 @@ import {
   claimContentLifecycle,
   docStateFor,
   installPersistedPageShow,
+  markDocumentStopped,
   recoverRestoredOverlay,
   STOPPED_DOCUMENT_TITLE,
   shouldStop,
 } from './gate';
+import { type MountedOverlay, mountedOverlay } from './overlay-state';
 import { clearDocumentOverlay, refreshWorkTarget, renderDocumentOverlay } from './overlay-v2';
 
 type DocState = 'fresh' | 'loaded';
@@ -57,7 +59,7 @@ export function installDocumentEnforcement(host: DocumentEnforcementHostV2): voi
   const loop: DocumentLoop = {
     host,
     state: createContentEnforcementState(),
-    stopped: recoverRestoredOverlay(host.document),
+    stopped: recoverRestoredOverlay(host.document, host.scope),
   };
   host.addMessageListener(
     (
@@ -156,36 +158,49 @@ function applyRender(
   const verdict: Verdict | null = loop.state.verdict;
   if (view === null || verdict === null) return;
   if (shouldStop(verdict.blocked, docState)) stopDocument(loop);
+  reattachOwnHost(loop.host.document);
   renderDocumentOverlay(view, verdict);
+}
+
+/** The page can detach the host, so a repaint puts this content script's own host back first. */
+function reattachOwnHost(doc: Document): void {
+  const own: MountedOverlay | null = mountedOverlay();
+  if (own !== null && !own.host.isConnected) doc.documentElement.append(own.host);
 }
 
 /**
  * Stops a blocked fresh navigation before it paints. What is left is an empty document plus the
- * overlay host, and an observer removes whatever the parser appends after the stop. The host is
- * never detached, because detaching it would drop the focus a person may already hold inside it.
+ * overlay host, and an observer removes whatever the parser appends after the stop. The head and
+ * the host are kept by reference, never by tag name, because the page can create elements with
+ * either name, and an XML document reports lower-case tag names. The host is never detached,
+ * because detaching it would drop the focus a person may already hold inside it.
  */
 function stopDocument(loop: DocumentLoop): void {
   if (loop.stopped) return;
   loop.stopped = true;
+  markDocumentStopped(loop.host.scope);
   const doc: Document = loop.host.document;
   loop.host.window.stop();
-  const head: HTMLHeadElement = doc.createElement('head');
-  const overlay: Element | null = doc.querySelector('focus-lock-overlay');
+  const head: Element = doc.createElement('head');
+  const own: Element | null = mountedOverlay()?.host ?? null;
   for (const child of Array.from(doc.documentElement.childNodes)) {
-    if (child !== overlay) child.remove();
+    if (child !== own) child.remove();
   }
   doc.documentElement.prepend(head);
   const observer: MutationObserver = new MutationObserver((): void => {
-    removeStoppedPageContent(doc);
+    removeStoppedPageContent(doc, head);
   });
   observer.observe(doc.documentElement, { childList: true });
   doc.title = STOPPED_DOCUMENT_TITLE;
 }
 
-function removeStoppedPageContent(doc: Document): void {
+/** Keeps only the head the stop created and the host this content script mounted. */
+function removeStoppedPageContent(doc: Document, head: Element): void {
+  const own: Element | null = mountedOverlay()?.host ?? null;
   for (const child of Array.from(doc.documentElement.children)) {
-    if (child.tagName !== 'HEAD' && child.tagName !== 'FOCUS-LOCK-OVERLAY') child.remove();
+    if (child !== head && child !== own) child.remove();
   }
+  if (own !== null && !own.isConnected) doc.documentElement.append(own);
 }
 
 function observedUrl(loop: DocumentLoop): string {

@@ -1418,10 +1418,47 @@ describe('applyToTab', () => {
     expect(reportError).toHaveBeenCalledTimes(1);
     expect(reportError).toHaveBeenCalledWith(restoreError);
     expect(releaseMuteClaim).toHaveBeenCalledWith(7, oldUrl);
-    expect(claimMute).toHaveBeenCalledWith(7, newUrl, true);
+    expect(claimMute).toHaveBeenCalledWith(7, newUrl, false);
     expect(claimUrl).toBe(newUrl);
     expect(muted).toBe(true);
     expect(update).toHaveBeenCalledTimes(1);
+  });
+
+  it('records an unclaimed extension-owned mute as an unmuted prior state', async () => {
+    const url = 'https://facebook.com/reclaimed-own-mute';
+    let claimUrl: string | null = null;
+    const claimMute = vi.fn(async (_tabId: number, claimedUrl: string): Promise<boolean> => {
+      claimUrl = claimedUrl;
+      return true;
+    });
+    const engine: Engine = withCommandSeam({
+      verdictFor: vi.fn((): Verdict => blocked),
+      snapshot: vi.fn(() => emptySnapshot(0)),
+      tabFacts: vi.fn((_tabId: number, factUrl: string) => ({
+        wasMutedByUs: claimUrl === factUrl,
+        priorMuted: false,
+        wasStopped: false,
+      })),
+      recordAttempt: vi.fn().mockResolvedValue(undefined),
+      claimMute,
+      releaseMuteClaim: vi.fn().mockResolvedValue(undefined),
+      transferMuteClaim: vi.fn().mockResolvedValue(undefined),
+      settleMuteClaim: vi.fn().mockResolvedValue(undefined),
+      rebindTab: vi.fn(),
+      reportError: vi.fn(),
+      noteMuteRestored: vi.fn(),
+      noteReloaded: vi.fn(),
+    } as unknown as Engine);
+    get.mockImplementation(
+      async (): Promise<MutableTabState> => ({
+        url,
+        mutedInfo: { muted: true, extensionId: 'focus-lock' },
+      }),
+    );
+
+    await applyToTab(engine, 7, url, true, 'navigation', true, LIVE_DOCUMENT_ID);
+
+    expect(claimMute).toHaveBeenCalledWith(7, url, false);
   });
 
   it('releases stale mute ownership when the old mute rejects', async () => {

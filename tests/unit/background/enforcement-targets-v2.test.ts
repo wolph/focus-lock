@@ -828,6 +828,31 @@ describe('runEnforcementPassV2 transport classification rows', () => {
     expect(world.queries).toBe(2);
   });
 
+  it('asks a document that missed the deadline again on the next pass', async (): Promise<void> => {
+    let slow: boolean = true;
+    const world: FakeWorld = makeWorld({
+      acked: ['7:document-7'],
+      answer: async (
+        message: DocumentContentCommand,
+        tabId: number,
+        documentId: string,
+        state: FakeWorld,
+      ): Promise<unknown> => {
+        if (isEnforcementMessage(message) && slow) {
+          slow = false;
+          throw new Error('document acknowledgement deadline exceeded');
+        }
+        return defaultAnswer(message, tabId, documentId, state);
+      },
+    });
+
+    const stable: StablePassV2 = stableResult(
+      await runEnforcementPassV2(world.ports, world.driver),
+    );
+
+    expect(stable.documents.map((ack: DocumentEnforcementAck): number => ack.tabId)).toEqual([7]);
+  });
+
   it('reevaluates a document that answers for another URL', async (): Promise<void> => {
     let navigated: boolean = false;
     const world: FakeWorld = makeWorld({

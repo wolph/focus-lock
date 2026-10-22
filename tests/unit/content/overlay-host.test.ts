@@ -351,18 +351,22 @@ describe('overlay host keyboard scrolling', (): void => {
     'ArrowDown',
     'ArrowLeft',
     'ArrowRight',
-  ])('prevents %s background scrolling without stopping propagation', (key: string): void => {
-    const { container }: OverlayHostElements = mountOverlayHost();
-    const observed: Mock<(event: KeyboardEvent) => void> = vi.fn<(event: KeyboardEvent) => void>();
-    document.addEventListener('keydown', observed);
-    const event: KeyboardEvent = keydown(key);
+  ])(
+    'prevents %s background scrolling and keeps the key from page listeners',
+    (key: string): void => {
+      const { container }: OverlayHostElements = mountOverlayHost();
+      const observed: Mock<(event: KeyboardEvent) => void> =
+        vi.fn<(event: KeyboardEvent) => void>();
+      document.addEventListener('keydown', observed);
+      const event: KeyboardEvent = keydown(key);
 
-    container.dispatchEvent(event);
+      container.dispatchEvent(event);
 
-    expect(event.defaultPrevented).toBe(true);
-    expect(observed).toHaveBeenCalledOnce();
-    document.removeEventListener('keydown', observed);
-  });
+      expect(event.defaultPrevented).toBe(true);
+      expect(observed).not.toHaveBeenCalled();
+      document.removeEventListener('keydown', observed);
+    },
+  );
 
   it.each([
     ['input', 'ArrowLeft'],
@@ -557,5 +561,66 @@ describe('OVERLAY_STYLES', (): void => {
     expect(cx + r).toBeLessThanOrEqual((minX as number) + (width as number));
     expect(cy + r).toBeLessThanOrEqual((minY as number) + (height as number));
     expect(Number(ring.ringFill.getAttribute('stroke-dasharray'))).toBeCloseTo(2 * Math.PI * r, 10);
+  });
+
+  it('mounts a styled shadow host in an XML document, where createElement has no namespace', (): void => {
+    const xml: XMLDocument = new DOMParser().parseFromString('<feed/>', 'application/xml');
+    vi.stubGlobal('document', xml);
+    try {
+      const mounted: OverlayHostElements = mountOverlayHost();
+
+      expect(mounted.host.namespaceURI).toBe('http://www.w3.org/1999/xhtml');
+      expect(mounted.host.style.getPropertyValue('z-index')).toBe('2147483647');
+      expect(mounted.root.querySelector('style')?.textContent).toBe(OVERLAY_STYLES);
+      expect(xml.documentElement.lastElementChild).toBe(mounted.host);
+      unmountOverlayHost(mounted.host);
+    } finally {
+      vi.unstubAllGlobals();
+    }
+  });
+
+  it('keeps keys and text typed into the overlay from reaching page listeners', (): void => {
+    const onEscape: Mock<() => boolean> = vi.fn((): boolean => true);
+    const mounted: OverlayHostElements = mountOverlayHost({ onEscape });
+    const input: HTMLInputElement = document.createElement('input');
+    mounted.container.append(input);
+    const ownInput: Mock<() => void> = vi.fn();
+    input.addEventListener('input', ownInput);
+    const seen: string[] = [];
+    const types: string[] = [
+      'keydown',
+      'keyup',
+      'keypress',
+      'beforeinput',
+      'input',
+      'compositionstart',
+      'compositionupdate',
+      'compositionend',
+    ];
+    const pageListener: (event: Event) => void = (event: Event): void => {
+      seen.push(event.type);
+    };
+    for (const type of types) document.addEventListener(type, pageListener);
+    try {
+      for (const type of types) {
+        const init: EventInit = { bubbles: true, cancelable: true, composed: true };
+        const event: Event = type.startsWith('key')
+          ? new KeyboardEvent(type, { ...init, key: 'a' })
+          : type.startsWith('composition')
+            ? new CompositionEvent(type, init)
+            : new InputEvent(type, init);
+        input.dispatchEvent(event);
+      }
+      const escapeKey: KeyboardEvent = keydown('Escape');
+      input.dispatchEvent(escapeKey);
+
+      expect(seen).toEqual([]);
+      expect(ownInput).toHaveBeenCalledTimes(1);
+      expect(onEscape).toHaveBeenCalledTimes(1);
+      expect(escapeKey.defaultPrevented).toBe(true);
+    } finally {
+      for (const type of types) document.removeEventListener(type, pageListener);
+      unmountOverlayHost(mounted.host);
+    }
   });
 });

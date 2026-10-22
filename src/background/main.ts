@@ -98,6 +98,7 @@ import {
 } from './data-clear-reset-v2';
 import { type BrowserResetEngineSeamV2, Engine, type EnginePorts } from './engine';
 import { appendEventsV2 } from './event-log-v2';
+import { type GuardReasonKey, listsChangeAllowed } from './guard';
 import { updateIcon } from './icon';
 import {
   appendOrApplyInstallLifecycle,
@@ -113,7 +114,13 @@ import {
   type ListsSyncEncoding,
 } from './list-sync-codec';
 import { createOnboardingService, type OnboardingService } from './onboarding';
-import { type PendingPolicyChange, parsePendingChanges } from './pending-policy-changes';
+import {
+  capturePendingChange,
+  LISTS_PATH,
+  type PendingPolicyChange,
+  parsePendingChanges,
+  pendingListsDelta,
+} from './pending-policy-changes';
 import {
   createPolicyStorage,
   type PolicySnapshot,
@@ -950,6 +957,14 @@ function effectiveLegacyValue(
  * boot, and only a read that proves the journal is gone lets classification, the legacy import,
  * and the rest of the boot run. Nothing classifies or publishes over a profile being erased.
  */
+/** The local v1 lists snapshot a legacy session ran under, or null when the profile has none. */
+async function legacyLocalListsSnapshot(): Promise<ListsConfig | null> {
+  const stored: Record<string, unknown> = await chrome.storage.local.get(LOCAL_LISTS_SNAPSHOT);
+  return Object.hasOwn(stored, LOCAL_LISTS_SNAPSHOT)
+    ? mergeLists(stored[LOCAL_LISTS_SNAPSHOT])
+    : null;
+}
+
 async function preparePolicyStorage(lease: AllDataClearLease): Promise<PolicyStorage> {
   const storage: PolicyStorage = createPolicyStorage(
     chrome.storage.local,
@@ -1102,9 +1117,43 @@ async function preparePolicyStorage(lease: AllDataClearLease): Promise<PolicySto
       if (listsWereMissing) replacePendingLists(journal, await encodeListsForSync(lists));
     }
     const loadedRuntime: ParsedRuntimeState = await loadRuntime(now);
-    const runtime: LegacyRuntimeStateV1 = migrateRuntimeRules(loadedRuntime, lists);
-    const snapshot: PolicySnapshot = { settings, lists, bank, streak: persistedStreak };
+    const localLists: ListsConfig | null =
+      loadedRuntime.session !== null && loadedRuntime.session.config.strictness === 'hard'
+        ? await legacyLocalListsSnapshot()
+        : null;
+    // A Hard session ran under the local lists, so it migrates against them and the guard
+    // judges the synced lists against them as the onChanged road would.
+    const runtime: LegacyRuntimeStateV1 = migrateRuntimeRules(loadedRuntime, localLists ?? lists);
+    const listsReason: GuardReasonKey | null =
+      localLists === null || runtime.session === null
+        ? null
+        : listsChangeAllowed(runtime.session, runtime.session.config.mode, localLists, lists);
+    const importedLists: ListsConfig = listsReason === null ? lists : (localLists ?? lists);
+    if (listsReason !== null && hasPendingLists(journal)) {
+      // The outbox publishes what the snapshot holds, not the refused value.
+      replacePendingLists(journal, await encodeListsForSync(importedLists));
+    }
+    const snapshot: PolicySnapshot = {
+      settings,
+      lists: importedLists,
+      bank,
+      streak: persistedStreak,
+    };
     assertValidResolvedLegacyPolicy(snapshot);
+    if (listsReason !== null && localLists !== null) {
+      // Queued before the commit. A failed import re-arms and queues the same path again, and
+      // capturePendingChange keeps one entry per path.
+      const stored: unknown = (await chrome.storage.local.get(LOCAL_PENDING_CHANGES))[
+        LOCAL_PENDING_CHANGES
+      ];
+      const queued: PendingPolicyChange[] = capturePendingChange(parsePendingChanges(stored), {
+        path: LISTS_PATH,
+        intent: pendingListsDelta(localLists, lists),
+        reasonKey: listsReason,
+        at: now,
+      });
+      await chrome.storage.local.set({ [LOCAL_PENDING_CHANGES]: queued });
+    }
     await storage.importLegacy(snapshot, runtime, journal, storedSync);
     if (refusedRemoteKeys.length > 0) {
       // A real import outcome, so it is persisted, unlike the boot-failure overlays. Settings

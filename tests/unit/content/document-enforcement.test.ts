@@ -347,6 +347,74 @@ describe('installDocumentEnforcement fresh navigation', () => {
     expect(harness.requestVerdict).toHaveBeenCalledOnce();
     expect(harness.listeners).toHaveLength(1);
   });
+
+  it('stops a fresh blocked document whose page planted a host and the stopped title', async (): Promise<void> => {
+    setReadyState('loading');
+    document.title = STOPPED_TITLE;
+    document.documentElement.append(document.createElement('focus-lock-overlay'));
+    const harness: Harness = newHarness();
+    harness.requestVerdict.mockResolvedValue({
+      commands: [resetCommand(), startingCommand()],
+    });
+
+    await install(harness);
+
+    expect(stopSpy).toHaveBeenCalledOnce();
+    expect(document.querySelector('body')).toBeNull();
+    expect(overlayText()).toContain('Focus Lock is starting');
+  });
+
+  it('prunes a page-created host from a stopped document and keeps its own', async (): Promise<void> => {
+    setReadyState('loading');
+    const harness: Harness = newHarness();
+    harness.requestVerdict.mockResolvedValue({
+      commands: [resetCommand(), startingCommand()],
+    });
+    await install(harness);
+    const own: Element | null = document.querySelector('focus-lock-overlay');
+
+    const planted: HTMLElement = document.createElement('focus-lock-overlay');
+    document.documentElement.append(planted);
+    await vi.advanceTimersByTimeAsync(0);
+
+    expect(planted.isConnected).toBe(false);
+    expect(own?.isConnected).toBe(true);
+    expect(document.querySelectorAll('focus-lock-overlay')).toHaveLength(1);
+    expect(document.head?.isConnected).toBe(true);
+  });
+
+  it('re-appends its own host when the page detaches it', async (): Promise<void> => {
+    setReadyState('loading');
+    const harness: Harness = newHarness();
+    harness.requestVerdict.mockResolvedValue({
+      commands: [resetCommand(), startingCommand()],
+    });
+    await install(harness);
+    const own: Element | null = document.querySelector('focus-lock-overlay');
+    if (own === null) throw new Error('Focus Lock host was not mounted');
+
+    own.remove();
+    await vi.advanceTimersByTimeAsync(0);
+
+    expect(own.isConnected).toBe(true);
+  });
+
+  it('re-appends a detached host before repainting a loaded document', async (): Promise<void> => {
+    setReadyState('complete');
+    const harness: Harness = newHarness();
+    harness.requestVerdict.mockResolvedValue({
+      commands: [resetCommand(), startingCommand()],
+    });
+    await install(harness);
+    const own: Element | null = document.querySelector('focus-lock-overlay');
+    if (own === null) throw new Error('Focus Lock host was not mounted');
+
+    own.remove();
+    deliver(harness, enforcementCommand());
+
+    expect(own.isConnected).toBe(true);
+    expect(overlayText()).toContain(UNTIL_STOPPED_TEXT);
+  });
 });
 
 describe('installDocumentEnforcement command loop', () => {

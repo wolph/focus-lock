@@ -64,6 +64,8 @@ export type DocumentCommandOutcomeV2 =
   | { kind: 'changed'; observedUrl: string }
   | { kind: 'closed' }
   | { kind: 'no-receiver' }
+  /** The document did not answer within the deadline, so it is asked again on the next pass. */
+  | { kind: 'unresponsive' }
   | { kind: 'mismatch'; detail: string; field: string | null };
 
 export type EpochResetOutcomeV2 =
@@ -71,13 +73,15 @@ export type EpochResetOutcomeV2 =
   | { kind: 'rejected'; currentEpoch: string }
   | { kind: 'closed' }
   | { kind: 'no-receiver' }
+  | { kind: 'unresponsive' }
   /** `field` names the one echoed field that differed, when exactly one did. */
   | { kind: 'mismatch'; detail: string; field: string | null };
 
-/** A send failure classifies the target itself, so both senders share these three answers. */
+/** A send failure classifies the target itself, so both senders share these four answers. */
 type SendFailureOutcomeV2 =
   | { kind: 'closed' }
   | { kind: 'no-receiver' }
+  | { kind: 'unresponsive' }
   | { kind: 'mismatch'; detail: string; field: string | null };
 
 /** The runtime's answer when a document has no listener at all. */
@@ -99,6 +103,7 @@ const REJECTED_DETAIL: string = 'the document rejected the command and answered 
 const UNPARSABLE_DETAIL: string = 'the answer is not an exact content enforcement response';
 // Leave room for reset and apply within the transition runner's ten-second freshness budget.
 const DOCUMENT_ACK_TIMEOUT_MS: number = 2_000;
+const DEADLINE_MESSAGE: string = 'document acknowledgement deadline exceeded';
 
 /** A late settlement is consumed but cannot become an acknowledgement after the deadline. */
 async function boundedSend(
@@ -112,7 +117,7 @@ async function boundedSend(
     return await Promise.race([
       new Promise<never>((_resolve, reject): void => {
         timer = setTimeout((): void => {
-          reject(new Error('document acknowledgement deadline exceeded'));
+          reject(new Error(DEADLINE_MESSAGE));
         }, DOCUMENT_ACK_TIMEOUT_MS);
       }),
       ports.sendToDocument(tabId, documentId, message),
@@ -370,11 +375,13 @@ function ackContractDetail(disposition: string): string {
 }
 
 /**
- * Classifies a rejected send. A missing listener and a vanished tab are different target rows, so
- * neither is reported as a mismatch: only an error this module cannot name is fatal.
+ * Classifies a rejected send. A missing listener, a vanished tab and a document too busy to answer
+ * before the deadline are different target rows, so none is reported as a mismatch: only an error
+ * this module cannot name is fatal. A slow page is not a broken one.
  */
 function sendFailureOutcome(error: unknown): SendFailureOutcomeV2 {
   const message: string = errorText(error);
+  if (message === DEADLINE_MESSAGE) return { kind: 'unresponsive' };
   if (hasAnyFragment(message, NO_RECEIVER_MESSAGES)) return { kind: 'no-receiver' };
   if (hasAnyFragment(message, CLOSED_TARGET_MESSAGES)) return { kind: 'closed' };
   return { kind: 'mismatch', field: null, detail: message };

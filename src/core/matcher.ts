@@ -95,6 +95,63 @@ function hasUnsafeHostCharacter(value: string): boolean {
   return false;
 }
 
+/** Regexes are tested against at most this many leading characters of the URL. */
+export const MAX_REGEX_INPUT_LENGTH: number = 256;
+
+/** Marks the innermost open group as holding a quantifier or an alternation. */
+function markTopRisky(open: Array<{ risky: boolean }>): void {
+  const top: { risky: boolean } | undefined = open[open.length - 1];
+  if (top !== undefined) top.risky = true;
+}
+
+/**
+ * Reports whether a pattern repeats a group that itself holds a quantifier or an alternation,
+ * as in (.*\.)* or (a|a)+. Such shapes backtrack exponentially, so compileMatcher skips them.
+ */
+export function hasNestedRepetition(pattern: string): boolean {
+  const open: Array<{ risky: boolean }> = [];
+  let lastGroupRisky: boolean = false;
+  for (let i: number = 0; i < pattern.length; i++) {
+    const c: string = pattern.charAt(i);
+    const brace: RegExpExecArray | null =
+      c === '{' ? /^\{(\d+)(,(\d*))?\}/.exec(pattern.slice(i)) : null;
+    if (c === '*' || c === '+' || c === '?' || brace !== null) {
+      const repeats: boolean =
+        c === '*' ||
+        c === '+' ||
+        (brace !== null && (brace[2] !== undefined || Number(brace[1]) > 1));
+      if (repeats && lastGroupRisky) return true;
+      markTopRisky(open);
+      lastGroupRisky = false;
+      if (brace !== null) i += brace[0].length - 1;
+      if (pattern.charAt(i + 1) === '?') i++;
+      continue;
+    }
+    lastGroupRisky = false;
+    if (c === '\\') {
+      i++;
+    } else if (c === '[') {
+      for (i++; i < pattern.length && pattern.charAt(i) !== ']'; i++) {
+        if (pattern.charAt(i) === '\\') i++;
+      }
+    } else if (c === '(') {
+      open.push({ risky: false });
+      const prefix: RegExpExecArray | null = /^\?(?::|=|!|<=|<!|<[A-Za-z_$][\w$]*>)/.exec(
+        pattern.slice(i + 1),
+      );
+      if (prefix !== null) i += prefix[0].length;
+    } else if (c === '|') {
+      markTopRisky(open);
+    } else if (c === ')') {
+      const group: { risky: boolean } | undefined = open.pop();
+      if (group === undefined) return false;
+      if (group.risky) markTopRisky(open);
+      lastGroupRisky = group.risky;
+    }
+  }
+  return false;
+}
+
 /** Returns an error message for an invalid rule, null when valid. */
 export function validateRule(rule: Rule): string | null {
   if (!isRecord(rule) || typeof rule.pattern !== 'string') return 'not a valid rule';
@@ -412,6 +469,7 @@ export function compileMatcher(
         const host: string | null = normalizeHost(rule.pattern);
         if (host !== null && (via === 'custom' || !hosts.has(host))) hosts.set(host, via);
       } else if (rule.kind === 'regex') {
+        if (hasNestedRepetition(rule.pattern)) continue;
         regexes.push({ source: rule.pattern, re: new RegExp(rule.pattern, 'i'), via });
       }
     }
@@ -656,11 +714,12 @@ export function evaluateUrl(
   for (const u of unlocks) {
     if (u.until > now && (u.host === domain || u.host === host)) return allow('unlock');
   }
+  const regexInput: string = url.slice(0, MAX_REGEX_INPUT_LENGTH);
   if (matcher.mode === 'whitelist') {
     const hit: string | null = hostInSet(host, matcher.hosts);
     if (hit !== null) return allow('whitelist', hit);
     for (const r of matcher.regexes) {
-      if (r.re.test(url)) return allow('whitelist', r.source);
+      if (r.re.test(regexInput)) return allow('whitelist', r.source);
     }
     return { blocked: true, reason: 'whitelist-miss', categoryId: null, matchedPattern: null };
   }
@@ -674,7 +733,7 @@ export function evaluateUrl(
     };
   }
   for (const r of matcher.regexes) {
-    if (r.re.test(url)) {
+    if (r.re.test(regexInput)) {
       return { blocked: true, reason: 'custom', categoryId: null, matchedPattern: r.source };
     }
   }
